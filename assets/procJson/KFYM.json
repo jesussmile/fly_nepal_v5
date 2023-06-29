@@ -1,0 +1,138 @@
+{
+    "fixes": [
+        {
+            "name": "CF02",
+            "lat": 34.88845833333333,
+            "lon": 86.60972221666667
+        },
+        {
+            "name": "DOZVA",
+            "lat": 34.857047216666665,
+            "lon": 86.52033333333333
+        },
+        {
+            "name": "EZBUV",
+            "lat": 34.877025,
+            "lon": 86.61866388333334
+        },
+        {
+            "name": "JOYER",
+            "lat": 34.970005566666664,
+            "lon": 86.58810556666667
+        },
+        {
+            "name": "NIVLE",
+            "lat": 35.23239443333333,
+            "lon": 86.51211943333334
+        },
+        {
+            "name": "ONDOW",
+            "lat": 35.13183888333333,
+            "lon": 86.54236111666667
+        },
+        {
+            "name": "OXOYO",
+            "lat": 34.97750833333333,
+            "lon": 86.58863056666667
+        },
+        {
+            "name": "RQZ",
+            "lat": 34.797238883333335,
+            "lon": 86.63384721666667
+        },
+        {
+            "name": "UGIME",
+            "lat": 35.25237778333333,
+            "lon": 86.6109
+        },
+        {
+            "name": "UZVIL",
+            "lat": 34.896925,
+            "lon": 86.71704166666666
+        },
+        {
+            "name": "ZUTGY",
+            "lat": 35.212330566666665,
+            "lon": 86.41338888333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD02",
+            "fixes": {
+                "CF02": "CF02 AT OR ABOVE 3000",
+                "JOYER": "JOYER 2600 RNW 02 TRK 010 UNTIL 2000 TURN LEFT DIRECT JOYER AT OR ABOVE 3000 HOLD AT JOYER RIGHT TURN INBOUNDCOURSE 010 LEGTIME 1 FAF JOYER MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "RQZ",
+                    "fixes": {
+                        "RQZ": "RQZ AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "EZBUV": "EZBUV AT OR ABOVE 3000",
+                "OXOYO": "OXOYO 2500 RNW 02",
+                "NIVLE": "OVERFLY NIVLE AT OR ABOVE 3000 HOLD AT NIVLE RIGHT TURN INBOUNDCOURSE 195 LEGDIST 4 FAF OXOYO MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "DOZVA",
+                    "fixes": {
+                        "DOZVA": "DOZVA AT OR ABOVE 4200"
+                    }
+                },
+                {
+                    "name": "EZBUV",
+                    "fixes": {
+                        "EZBUV": "EZBUV LEFT TURN INBOUNDCOURSE 015 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UZVIL",
+                    "fixes": {
+                        "UZVIL": "UZVIL AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "NIVLE": "NIVLE AT OR ABOVE 3000",
+                "ONDOW": "ONDOW 2300 RNW 20",
+                "EZBUV": "OVERFLY EZBUV AT OR ABOVE 3000 HOLD AT EZBUV LEFT TURN INBOUNDCOURSE 015 LEGDIST 4 FAF ONDOW MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "NIVLE",
+                    "fixes": {
+                        "NIVLE": "NIVLE RIGHT TURN INBOUNDCOURSE 195 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UGIME",
+                    "fixes": {
+                        "UGIME": "UGIME AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "ZUTGY",
+                    "fixes": {
+                        "ZUTGY": "ZUTGY AT OR ABOVE 4700"
+                    }
+                }
+            ]
+        }
+    ]
+}

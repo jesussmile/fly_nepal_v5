@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "FF26",
+            "lat": 53.29720556666667,
+            "lon": 109.93181111666667
+        },
+        {
+            "name": "ITROS",
+            "lat": 53.309147216666666,
+            "lon": 110.20370278333333
+        },
+        {
+            "name": "KEKSI",
+            "lat": 53.30917221666667,
+            "lon": 109.94709166666667
+        },
+        {
+            "name": "KETNO",
+            "lat": 53.30883333333333,
+            "lon": 110.37040556666666
+        },
+        {
+            "name": "KIXAV",
+            "lat": 53.308894433333336,
+            "lon": 109.78038888333333
+        },
+        {
+            "name": "PI001",
+            "lat": 53.30503971666667,
+            "lon": 109.98559381666666
+        },
+        {
+            "name": "PI002",
+            "lat": 53.24778241666667,
+            "lon": 109.9135128
+        },
+        {
+            "name": "PI003",
+            "lat": 53.28968283333333,
+            "lon": 109.80616235
+        },
+        {
+            "name": "VIGMO",
+            "lat": 53.225630566666666,
+            "lon": 110.36980833333334
+        },
+        {
+            "name": "VIMDU",
+            "lat": 53.39209721666667,
+            "lon": 109.77983888333333
+        },
+        {
+            "name": "VOGAL",
+            "lat": 53.39203611666667,
+            "lon": 110.37100278333334
+        },
+        {
+            "name": "XOSPI",
+            "lat": 53.22569166666667,
+            "lon": 109.78093611666667
+        },
+        {
+            "name": "XOVIN",
+            "lat": 53.30917221666667,
+            "lon": 109.94639721666667
+        },
+        {
+            "name": "XULRA",
+            "lat": 53.30915278333333,
+            "lon": 110.19872778333334
+        },
+        {
+            "name": "YLLNB",
+            "lat": 53.313197216666666,
+            "lon": 110.08226388333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 13",
+        "RNW 26",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FF26": "FF26 3700 RNW 26",
+                "YLLNB": "OVERFLY YLLNB AT OR ABOVE 2600 TRK 265 UNTIL 3900 TURN LEFT DIRECT YLLNB 3900 HOLD AT YLLNB LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF FF26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "YLL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "KETNO": "KETNO AT OR ABOVE 3700",
+                "ITROS": "ITROS 3600 RNW 08",
+                "XOVIN": "OVERFLY XOVIN 3900 HOLD AT XOVIN RIGHT TURN INBOUNDCOURSE 077 SPEED 230 LEGTIME 1 FAF ITROS MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "VIGMO",
+                    "fixes": {
+                        "VIGMO": "VIGMO SPEED 210"
+                    }
+                },
+                {
+                    "name": "VOGAL",
+                    "fixes": {
+                        "VOGAL": "VOGAL SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "KIXAV": "KIXAV AT OR ABOVE 3500",
+                "KEKSI": "KEKSI 3500 RNW 26",
+                "XULRA": "OVERFLY XULRA 3900 HOLD AT XULRA RIGHT TURN INBOUNDCOURSE 257 SPEED 230 LEGTIME 1 FAF KEKSI MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "VIMDU",
+                    "fixes": {
+                        "VIMDU": "VIMDU SPEED 210"
+                    }
+                },
+                {
+                    "name": "XOSPI",
+                    "fixes": {
+                        "XOSPI": "XOSPI SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

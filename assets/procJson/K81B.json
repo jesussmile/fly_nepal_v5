@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "BERVE",
+            "lat": 44.22651666666667,
+            "lon": 70.58995278333333
+        },
+        {
+            "name": "BUKRE",
+            "lat": 44.08796388333333,
+            "lon": 70.37246111666667
+        },
+        {
+            "name": "EKICA",
+            "lat": 44.255183333333335,
+            "lon": 70.63515833333334
+        },
+        {
+            "name": "IBUNY",
+            "lat": 44.19548056666667,
+            "lon": 70.54108333333333
+        },
+        {
+            "name": "JEXEN",
+            "lat": 44.281627783333334,
+            "lon": 70.67692778333333
+        },
+        {
+            "name": "LABEL",
+            "lat": 43.78440833333333,
+            "lon": 70.76440278333334
+        },
+        {
+            "name": "NOLLI",
+            "lat": 44.12818888333334,
+            "lon": 70.14693333333334
+        },
+        {
+            "name": "SPDWY",
+            "lat": 44.04004166666667,
+            "lon": 70.29762221666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "EKICA": "EKICA AT OR ABOVE 3100",
+                "BERVE": "BERVE 2300",
+                "IBUNY": "IBUNY AT OR ABOVE 1400 RNW 15 TRK 148 UNTIL 745",
+                "SPDWY": "OVERFLY SPDWY AT OR ABOVE 3600 HOLD AT SPDWY RIGHT TURN INBOUNDCOURSE 329 LEGDIST 4 FAF BERVE MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "LABEL",
+                    "fixes": {
+                        "LABEL": "LABEL",
+                        "JEXEN": "OVERFLY JEXEN AT OR ABOVE 4100 HOLD AT JEXEN RIGHT TURN INBOUNDCOURSE 148 ALT 3700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NOLLI",
+                    "fixes": {
+                        "NOLLI": "NOLLI",
+                        "JEXEN": "OVERFLY JEXEN AT OR ABOVE 3700 HOLD AT JEXEN RIGHT TURN INBOUNDCOURSE 148 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "SPDWY": "SPDWY AT OR ABOVE 3600",
+                "BUKRE": "BUKRE 2300 RNW 33 TRK 329 UNTIL 745",
+                "JEXEN": "OVERFLY JEXEN AT OR ABOVE 3700 HOLD AT JEXEN RIGHT TURN INBOUNDCOURSE 148 LEGDIST 4 FAF BUKRE MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "LABEL",
+                    "fixes": {
+                        "LABEL": "LABEL",
+                        "SPDWY": "OVERFLY SPDWY AT OR ABOVE 3600 HOLD AT SPDWY RIGHT TURN INBOUNDCOURSE 329 ALT 3600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NOLLI",
+                    "fixes": {
+                        "NOLLI": "NOLLI"
+                    }
+                }
+            ]
+        }
+    ]
+}

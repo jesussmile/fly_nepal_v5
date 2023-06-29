@@ -1,0 +1,156 @@
+{
+    "fixes": [
+        {
+            "name": "EPLAM",
+            "lat": 53.465666666666664,
+            "lon": 103.78598056666667
+        },
+        {
+            "name": "FF029",
+            "lat": 53.267811116666664,
+            "lon": 104.09604166666666
+        },
+        {
+            "name": "IPTAM",
+            "lat": 53.24090833333333,
+            "lon": 104.160725
+        },
+        {
+            "name": "KETLU",
+            "lat": 53.39490833333333,
+            "lon": 103.66803333333333
+        },
+        {
+            "name": "L4NB",
+            "lat": 53.33472221666667,
+            "lon": 104.00888888333333
+        },
+        {
+            "name": "LODVA",
+            "lat": 53.269030566666665,
+            "lon": 104.34856666666667
+        },
+        {
+            "name": "MESNU",
+            "lat": 53.39510833333333,
+            "lon": 103.90426388333333
+        },
+        {
+            "name": "MIRUK",
+            "lat": 53.412044433333335,
+            "lon": 103.875925
+        },
+        {
+            "name": "NAKMU",
+            "lat": 53.198827783333336,
+            "lon": 104.23023333333333
+        },
+        {
+            "name": "ONDOD",
+            "lat": 53.53630556666667,
+            "lon": 103.90432221666667
+        },
+        {
+            "name": "PI001",
+            "lat": 53.28873983333333,
+            "lon": 104.06896688333333
+        },
+        {
+            "name": "PI002",
+            "lat": 53.217606466666666,
+            "lon": 104.05438056666667
+        },
+        {
+            "name": "PI003",
+            "lat": 53.203264116666666,
+            "lon": 104.18019778333333
+        },
+        {
+            "name": "SEKAG",
+            "lat": 53.30013056666667,
+            "lon": 104.06255556666666
+        },
+        {
+            "name": "TIDOX",
+            "lat": 53.26971111666667,
+            "lon": 104.11303056666667
+        },
+        {
+            "name": "VITOK",
+            "lat": 53.12850556666667,
+            "lon": 104.11228611666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 12",
+        "RNW 21",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA03",
+            "fixes": {
+                "FF029": "FF029 2800 RNW 03",
+                "L4NB": "OVERFLY L4NB TRK 029 UNTIL 2800 TURN RIGHT DIRECT L4NB 2800 HOLD AT L4NB RIGHT TURN INBOUNDCOURSE 029 LEGTIME 1 FAF FF029 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "L4",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "NAKMU": "NAKMU AT OR ABOVE 2900 SPEED 200",
+                "TIDOX": "TIDOX 2900",
+                "SEKAG": "SEKAG AT OR ABOVE 2060 RNW 03",
+                "MIRUK": "OVERFLY MIRUK 2900 HOLD AT MIRUK RIGHT TURN INBOUNDCOURSE 036 LEGTIME 1 FAF TIDOX MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "LODVA",
+                    "fixes": {
+                        "LODVA": "LODVA SPEED 200"
+                    }
+                },
+                {
+                    "name": "VITOK",
+                    "fixes": {
+                        "VITOK": "VITOK SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "EPLAM": "EPLAM AT OR ABOVE 2900 SPEED 200",
+                "MESNU": "MESNU 2900 RNW 21",
+                "IPTAM": "OVERFLY IPTAM 2900 HOLD AT IPTAM RIGHT TURN INBOUNDCOURSE 216 LEGTIME 1 FAF MESNU MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "KETLU",
+                    "fixes": {
+                        "KETLU": "KETLU SPEED 200"
+                    }
+                },
+                {
+                    "name": "ONDOD",
+                    "fixes": {
+                        "ONDOD": "ONDOD SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

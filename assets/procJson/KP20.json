@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "APHIS",
+            "lat": 34.05246111666667,
+            "lon": 114.325475
+        },
+        {
+            "name": "BAKSE",
+            "lat": 33.974480566666664,
+            "lon": 114.37288888333333
+        },
+        {
+            "name": "COAPT",
+            "lat": 34.04975278333333,
+            "lon": 114.55506943333333
+        },
+        {
+            "name": "DINBE",
+            "lat": 33.94287778333333,
+            "lon": 114.47806666666666
+        },
+        {
+            "name": "JEBEL",
+            "lat": 34.13741388333333,
+            "lon": 114.38398333333333
+        },
+        {
+            "name": "KARGE",
+            "lat": 34.12330278333334,
+            "lon": 114.50344166666666
+        },
+        {
+            "name": "MACIS",
+            "lat": 34.15035833333334,
+            "lon": 114.27349443333334
+        },
+        {
+            "name": "PKE",
+            "lat": 34.10197221666667,
+            "lon": 114.68206666666667
+        },
+        {
+            "name": "ROGBE",
+            "lat": 33.87019443333333,
+            "lon": 114.71844721666666
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA01",
+            "fixes": {
+                "KARGE": "KARGE AT OR ABOVE 4600",
+                "JEBEL": "JEBEL 2700",
+                "MACIS": "OVERFLY MACIS 1900 RNW 01 TURN LEFT DIRECT",
+                "PKE": "PKE AT OR ABOVE 5000 HOLD AT PKE LEFT TURN INBOUNDCOURSE 054 LEGTIME 1 FAF JEBEL MAP MACIS"
+            },
+            "transitions": [
+                {
+                    "name": "PKE",
+                    "fixes": {
+                        "PKE": "PKE AT OR ABOVE 5400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA19",
+            "fixes": {
+                "KARGE": "KARGE AT OR ABOVE 4600",
+                "JEBEL": "JEBEL 2700",
+                "MACIS": "OVERFLY MACIS 1900 RNW 19 TURN LEFT DIRECT",
+                "PKE": "PKE AT OR ABOVE 5000 HOLD AT PKE LEFT TURN INBOUNDCOURSE 054 LEGTIME 1 FAF JEBEL MAP MACIS"
+            },
+            "transitions": [
+                {
+                    "name": "PKE",
+                    "fixes": {
+                        "PKE": "PKE AT OR ABOVE 5400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "BAKSE": "BAKSE AT OR ABOVE 3700",
+                "APHIS": "APHIS 2400 RNW 01 TRK 012 UNTIL 1100 TURN LEFT DIRECT",
+                "PKE": "OVERFLY PKE AT OR ABOVE 5500 HOLD AT PKE LEFT TURN INBOUNDCOURSE 054 LEGDIST 5 FAF APHIS MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "PKE",
+                    "fixes": {
+                        "PKE": "PKE",
+                        "COAPT": "COAPT AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "ROGBE",
+                    "fixes": {
+                        "ROGBE": "ROGBE",
+                        "DINBE": "DINBE AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

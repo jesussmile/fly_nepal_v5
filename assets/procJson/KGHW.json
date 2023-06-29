@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 45.49131213333333,
+            "lon": 94.97703291666667
+        },
+        {
+            "name": "AF002",
+            "lat": 45.4620827,
+            "lon": 95.14575906666667
+        },
+        {
+            "name": "AX141",
+            "lat": 45.5338,
+            "lon": 94.85568611666666
+        },
+        {
+            "name": "AX183",
+            "lat": 45.46599166666667,
+            "lon": 95.35598056666667
+        },
+        {
+            "name": "AXN",
+            "lat": 45.958388883333335,
+            "lon": 95.23263611666667
+        },
+        {
+            "name": "HUVGO",
+            "lat": 45.673525,
+            "lon": 95.33460833333334
+        },
+        {
+            "name": "ITVOY",
+            "lat": 45.436194433333334,
+            "lon": 95.22598888333333
+        },
+        {
+            "name": "JUVCA",
+            "lat": 45.61261111666666,
+            "lon": 95.30663333333334
+        },
+        {
+            "name": "KODMY",
+            "lat": 45.55779166666667,
+            "lon": 95.28151666666666
+        },
+        {
+            "name": "MA33",
+            "lat": 45.635877783333335,
+            "lon": 95.31366666666666
+        },
+        {
+            "name": "MONKE",
+            "lat": 45.548066666666664,
+            "lon": 95.33556943333333
+        },
+        {
+            "name": "MOX",
+            "lat": 45.56541943333333,
+            "lon": 95.96933333333334
+        },
+        {
+            "name": "WIVTA",
+            "lat": 45.72603888333333,
+            "lon": 95.35878056666667
+        },
+        {
+            "name": "ZALGU",
+            "lat": 45.84826666666667,
+            "lon": 95.41522778333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 15",
+        "RNW 23",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "ZALGU": "ZALGU AT OR ABOVE 3000",
+                "WIVTA": "WIVTA 3000",
+                "HUVGO": "HUVGO AT OR ABOVE 1940 RNW 15 TRK 158 UNTIL 1641",
+                "ITVOY": "OVERFLY ITVOY AT OR ABOVE 3000 HOLD AT ITVOY RIGHT TURN INBOUNDCOURSE 338 LEGDIST 4 FAF WIVTA MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "ZALGU",
+                    "fixes": {
+                        "ZALGU": "ZALGU RIGHT TURN INBOUNDCOURSE 158 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ITVOY": "ITVOY AT OR ABOVE 3000",
+                "KODMY": "KODMY 3000",
+                "JUVCA": "JUVCA AT OR ABOVE 1880 RNW 33 TRK 338 UNTIL 1627",
+                "ZALGU": "OVERFLY ZALGU AT OR ABOVE 3000 HOLD AT ZALGU RIGHT TURN INBOUNDCOURSE 158 LEGDIST 4 FAF KODMY MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "ITVOY",
+                    "fixes": {
+                        "ITVOY": "ITVOY RIGHT TURN INBOUNDCOURSE 338 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR33",
+            "fixes": {
+                "MONKE": "MONKE 3000 MONKE AT OR ABOVE 3000 HOLD AT MONKE RIGHT TURN INBOUNDCOURSE 003 LEGTIME 1 FAF MONKE MAP MA33",
+                "MA33": "MA33 1426 RNW 33 TRK 003 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AX141",
+                    "fixes": {
+                        "AX141": "AX141",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AX183": "AX183 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "AXN",
+                    "fixes": {
+                        "AXN": "AXN",
+                        "MONKE": "MONKE AT OR ABOVE 3000 HOLD AT MONKE RIGHT TURN INBOUNDCOURSE 003 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MOX",
+                    "fixes": {
+                        "MOX": "MOX",
+                        "MONKE": "MONKE AT OR ABOVE 3000 HOLD AT MONKE RIGHT TURN INBOUNDCOURSE 003 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

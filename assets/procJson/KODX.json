@@ -1,0 +1,164 @@
+{
+    "fixes": [
+        {
+            "name": "AMENY",
+            "lat": 41.66146388333333,
+            "lon": 99.00038888333333
+        },
+        {
+            "name": "BROWD",
+            "lat": 41.83337221666667,
+            "lon": 99.06770833333333
+        },
+        {
+            "name": "FF13",
+            "lat": 41.686658333333334,
+            "lon": 99.05173056666666
+        },
+        {
+            "name": "GOZGI",
+            "lat": 41.47309166666667,
+            "lon": 98.75830556666666
+        },
+        {
+            "name": "HONUK",
+            "lat": 41.77533056666667,
+            "lon": 99.14769443333333
+        },
+        {
+            "name": "JUDEV",
+            "lat": 41.59024443333333,
+            "lon": 98.90862778333333
+        },
+        {
+            "name": "JURIN",
+            "lat": 41.717230566666665,
+            "lon": 99.22753611666667
+        },
+        {
+            "name": "LOWLL",
+            "lat": 41.41525,
+            "lon": 98.83811388333334
+        },
+        {
+            "name": "ODXNB",
+            "lat": 41.623744433333336,
+            "lon": 98.94800556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 41.66043885,
+            "lon": 99.00868508333333
+        },
+        {
+            "name": "PI002",
+            "lat": 41.65290821666667,
+            "lon": 99.10407526666667
+        },
+        {
+            "name": "PI003",
+            "lat": 41.72850078333333,
+            "lon": 99.12155921666667
+        },
+        {
+            "name": "TIRUE",
+            "lat": 41.688780566666665,
+            "lon": 99.03565833333333
+        },
+        {
+            "name": "TOENY",
+            "lat": 41.530875,
+            "lon": 98.67835556666667
+        },
+        {
+            "name": "YATOJ",
+            "lat": 41.55618056666667,
+            "lon": 98.86483888333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 17",
+        "RNW 31",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB13",
+            "fixes": {
+                "FF13": "FF13 4200 RNW 13",
+                "ODXNB": "ODXNB TRK 124 UNTIL 4200 TURN LEFT DIRECT ODXNB HOLD AT ODXNB RIGHT TURN INBOUNDCOURSE 124 LEGTIME 1 FAF FF13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "ODX",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 4200 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4200 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4200 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "HONUK": "HONUK AT OR ABOVE 6000",
+                "TIRUE": "TIRUE 3700",
+                "AMENY": "AMENY AT OR ABOVE 2960 RNW 13 TRK 131 UNTIL 2376",
+                "GOZGI": "OVERFLY GOZGI AT OR ABOVE 6000 HOLD AT GOZGI RIGHT TURN INBOUNDCOURSE 311 ALT 6000 LEGDIST 5 FAF TIRUE MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "BROWD",
+                    "fixes": {
+                        "BROWD": "BROWD"
+                    }
+                },
+                {
+                    "name": "HONUK",
+                    "fixes": {
+                        "HONUK": "HONUK RIGHT TURN INBOUNDCOURSE 131 ALT 6000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "JURIN",
+                    "fixes": {
+                        "JURIN": "JURIN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "GOZGI": "GOZGI AT OR ABOVE 6000",
+                "YATOJ": "YATOJ 3800",
+                "JUDEV": "JUDEV AT OR ABOVE 2880 RNW 31 TRK 311 UNTIL 2314",
+                "HONUK": "OVERFLY HONUK AT OR ABOVE 6000 HOLD AT HONUK RIGHT TURN INBOUNDCOURSE 131 ALT 6000 LEGDIST 5 FAF YATOJ MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "GOZGI",
+                    "fixes": {
+                        "GOZGI": "GOZGI RIGHT TURN INBOUNDCOURSE 311 ALT 6000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "LOWLL",
+                    "fixes": {
+                        "LOWLL": "LOWLL"
+                    }
+                },
+                {
+                    "name": "TOENY",
+                    "fixes": {
+                        "TOENY": "TOENY"
+                    }
+                }
+            ]
+        }
+    ]
+}

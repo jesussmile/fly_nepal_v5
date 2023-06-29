@@ -1,0 +1,197 @@
+{
+    "fixes": [
+        {
+            "name": "50VOR",
+            "lat": 26.892702783333334,
+            "lon": 64.20170833333333
+        },
+        {
+            "name": "ANOTA",
+            "lat": 26.847222216666665,
+            "lon": 64.4275
+        },
+        {
+            "name": "BOKUP",
+            "lat": 27.161111116666667,
+            "lon": 63.98611111666666
+        },
+        {
+            "name": "FN31",
+            "lat": 26.907075,
+            "lon": 64.2294
+        },
+        {
+            "name": "FS13",
+            "lat": 27.036936116666666,
+            "lon": 64.02091388333334
+        },
+        {
+            "name": "FS31",
+            "lat": 26.856608333333334,
+            "lon": 64.24052221666666
+        },
+        {
+            "name": "MS13",
+            "lat": 26.968611116666665,
+            "lon": 64.11521388333334
+        },
+        {
+            "name": "PG",
+            "lat": 26.952836116666667,
+            "lon": 64.13696111666667
+        },
+        {
+            "name": "PG361",
+            "lat": 27.046294433333333,
+            "lon": 64.01809166666666
+        },
+        {
+            "name": "PG362",
+            "lat": 27.089305566666667,
+            "lon": 63.93805556666667
+        },
+        {
+            "name": "PG365",
+            "lat": 27.118888883333334,
+            "lon": 64.15944443333333
+        },
+        {
+            "name": "PG371",
+            "lat": 26.863719433333333,
+            "lon": 64.24549166666667
+        },
+        {
+            "name": "PG372",
+            "lat": 26.819055566666666,
+            "lon": 64.30094443333333
+        },
+        {
+            "name": "PG375",
+            "lat": 26.784722216666665,
+            "lon": 64.02694443333333
+        },
+        {
+            "name": "PGNB",
+            "lat": 26.956175,
+            "lon": 64.13831111666667
+        },
+        {
+            "name": "PONAT",
+            "lat": 26.706944433333334,
+            "lon": 64.25305556666666
+        },
+        {
+            "name": "RULUX",
+            "lat": 27.017777783333333,
+            "lon": 63.89
+        },
+        {
+            "name": "SD31",
+            "lat": 26.894202783333334,
+            "lon": 64.20760556666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD13",
+            "fixes": {
+                "FS13": "FS13 5700",
+                "MS13": "MS13 3577 RNW 13",
+                "PG": "PG TRK 127 UNTIL 4.0 FROM PG TURN LEFT DIRECT PG FAF FS13 MAP MS13"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PG": "PG AT OR ABOVE 7500 TRK 294 UNTIL 10.0 FROM PG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD31",
+            "fixes": {
+                "FS31": "FS31 5800",
+                "50VOR": "50VOR AT OR ABOVE 4800 RNW 31",
+                "PG": "OVERFLY PG TRK 314 UNTIL 5.0 FROM PG TURN LEFT DIRECT PG 7500 FAF FS31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PG": "PG AT OR ABOVE 7500 TRK 144 UNTIL 10.0 FROM PG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB31",
+            "fixes": {
+                "FN31": "FN31 5100",
+                "PGNB": "PGNB 4100 RNW 31 TRK 300 UNTIL 5100 TURN LEFT DIRECT PGNB 7500 FAF FN31 MAP PG"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PGNB": "PGNB AT OR ABOVE 7500 TRK 150 UNTIL 7.0 FROM PGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "PG361": "PG361 5800 RNW 13 TRK 130 UNTIL 4200 TURN LEFT DIRECT",
+                "PG365": "PG365",
+                "BOKUP": "BOKUP 7500 FAF PG361 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "BOKUP",
+                    "fixes": {
+                        "BOKUP": "BOKUP 7500",
+                        "PG362": "PG362 AT OR ABOVE 6500"
+                    }
+                },
+                {
+                    "name": "RULUX",
+                    "fixes": {
+                        "RULUX": "RULUX 7500",
+                        "PG362": "PG362 AT OR ABOVE 6500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "PG372": "PG372 AT OR ABOVE 5800",
+                "PG371": "PG371 5800",
+                "SD31": "SD31 4930 RNW 31 TRK 310 UNTIL 4200 TURN LEFT DIRECT",
+                "PG375": "PG375",
+                "PONAT": "PONAT 7500 FAF PG371 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ANOTA",
+                    "fixes": {
+                        "ANOTA": "ANOTA 7500"
+                    }
+                },
+                {
+                    "name": "PONAT",
+                    "fixes": {
+                        "PONAT": "PONAT 7500"
+                    }
+                }
+            ]
+        }
+    ]
+}

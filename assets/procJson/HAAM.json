@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "AM",
+            "lat": 6.057691666666667,
+            "lon": 37.60235
+        },
+        {
+            "name": "AM211",
+            "lat": 5.791361116666667,
+            "lon": 37.588
+        },
+        {
+            "name": "AM212",
+            "lat": 5.745972216666667,
+            "lon": 37.40477778333333
+        },
+        {
+            "name": "AM213",
+            "lat": 5.842111116666667,
+            "lon": 37.46572221666667
+        },
+        {
+            "name": "AM214",
+            "lat": 5.9015,
+            "lon": 37.50333333333333
+        },
+        {
+            "name": "AM215",
+            "lat": 5.929777783333334,
+            "lon": 37.52127778333333
+        },
+        {
+            "name": "AM216",
+            "lat": 5.958055566666666,
+            "lon": 37.539194433333336
+        },
+        {
+            "name": "FN21",
+            "lat": 6.171525,
+            "lon": 37.733211116666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FN21": "FN21 7400",
+                "AM": "AM 4102 RNW 21 TRK 227 UNTIL 11000 TURN LEFT DIRECT AM 11000 HOLD AT AM RIGHT TURN INBOUNDCOURSE 039 ALT 11000 LEGTIME 1 FAF FN21 MAP AM"
+            },
+            "transitions": [
+                {
+                    "name": "AM",
+                    "fixes": {
+                        "AM": "AM AT OR ABOVE 11000 TRK 039 UNTIL 13.5 FROM AM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "AM214": "AM214 AT OR ABOVE 6000 SPEED 185",
+                "AM215": "AM215 AT OR ABOVE 5530",
+                "AM216": "AM216 5530 RNW 03 TRK 046 UNTIL 7100 TURN RIGHT DIRECT",
+                "AM211": "AM211 AT OR ABOVE 9000 FAF AM216 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "AM211",
+                    "fixes": {
+                        "AM211": "AM211 AT OR ABOVE 9000"
+                    }
+                },
+                {
+                    "name": "AM212",
+                    "fixes": {
+                        "AM212": "AM212 AT OR ABOVE 11000",
+                        "AM213": "AM213 AT OR ABOVE 7700"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,169 @@
+{
+    "fixes": [
+        {
+            "name": "ACT",
+            "lat": 31.66223056666667,
+            "lon": 97.26901388333333
+        },
+        {
+            "name": "AUGUR",
+            "lat": 31.208205566666667,
+            "lon": 97.42973056666666
+        },
+        {
+            "name": "BARBA",
+            "lat": 31.101136116666666,
+            "lon": 97.18894721666666
+        },
+        {
+            "name": "CONRA",
+            "lat": 31.001275,
+            "lon": 97.40419166666666
+        },
+        {
+            "name": "CUMIX",
+            "lat": 31.187088883333335,
+            "lon": 97.42203333333333
+        },
+        {
+            "name": "DARTE",
+            "lat": 30.766133333333332,
+            "lon": 97.45183333333334
+        },
+        {
+            "name": "ESWUL",
+            "lat": 30.918983333333333,
+            "lon": 97.32465278333333
+        },
+        {
+            "name": "FADXY",
+            "lat": 31.062480566666668,
+            "lon": 97.3767
+        },
+        {
+            "name": "FBURG",
+            "lat": 30.874072216666665,
+            "lon": 97.49103056666667
+        },
+        {
+            "name": "HUHIF",
+            "lat": 30.963680566666667,
+            "lon": 97.15811943333334
+        },
+        {
+            "name": "IFDOH",
+            "lat": 31.243713883333335,
+            "lon": 97.44268056666667
+        },
+        {
+            "name": "IHSAZ",
+            "lat": 31.338505566666665,
+            "lon": 97.47730556666667
+        },
+        {
+            "name": "IYUJY",
+            "lat": 31.114525,
+            "lon": 97.39561666666667
+        },
+        {
+            "name": "MOODY",
+            "lat": 31.378563883333335,
+            "lon": 97.49197778333334
+        },
+        {
+            "name": "SLIMM",
+            "lat": 30.80996388333333,
+            "lon": 98.220575
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 16",
+        "RNW 21",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS16",
+            "fixes": {
+                "MOODY": "MOODY AT OR ABOVE 2400",
+                "AUGUR": "AUGUR 1673 RNW 16 TRK 160 UNTIL 1100 HDG 160 INTERCEPT RADIAL 181 TO",
+                "CONRA": "CONRA CONRA AT OR ABOVE 3600 HOLD AT CONRA RIGHT TURN INBOUNDCOURSE 181 ALT 3600 LEGTIME 1 FAF AUGUR MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "ACT",
+                    "fixes": {
+                        "ACT": "ACT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "IHSAZ": "IHSAZ AT OR ABOVE 3000",
+                "IFDOH": "IFDOH 2400",
+                "CUMIX": "CUMIX AT OR ABOVE 1260 RNW 16 TRK 160 UNTIL 882",
+                "FADXY": "FADXY",
+                "BARBA": "OVERFLY BARBA AT OR ABOVE 3600 HOLD AT BARBA RIGHT TURN INBOUNDCOURSE 074 ALT 3600 LEGDIST 4 FAF IFDOH MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "ACT",
+                    "fixes": {
+                        "ACT": "ACT"
+                    }
+                },
+                {
+                    "name": "BARBA",
+                    "fixes": {
+                        "BARBA": "BARBA",
+                        "IHSAZ": "OVERFLY IHSAZ AT OR ABOVE 3000 HOLD AT IHSAZ LEFT TURN INBOUNDCOURSE 160 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CONRA",
+                    "fixes": {
+                        "CONRA": "CONRA",
+                        "IHSAZ": "OVERFLY IHSAZ AT OR ABOVE 3000 HOLD AT IHSAZ LEFT TURN INBOUNDCOURSE 160 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "ESWUL": "ESWUL AT OR ABOVE 3000",
+                "FADXY": "FADXY 2300",
+                "IYUJY": "IYUJY AT OR ABOVE 1260 RNW 34 TRK 340 UNTIL 874",
+                "IHSAZ": "OVERFLY IHSAZ AT OR ABOVE 3000 HOLD AT IHSAZ LEFT TURN INBOUNDCOURSE 160 LEGDIST 4 FAF FADXY MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "BARBA",
+                    "fixes": {
+                        "BARBA": "BARBA",
+                        "HUHIF": "HUHIF AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "DARTE",
+                    "fixes": {
+                        "DARTE": "DARTE",
+                        "FBURG": "FBURG AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "SLIMM",
+                    "fixes": {
+                        "SLIMM": "SLIMM",
+                        "FBURG": "FBURG AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        }
+    ]
+}

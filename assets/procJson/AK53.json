@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "COBON",
+            "lat": 61.016272216666664,
+            "lon": 154.09752221666668
+        },
+        {
+            "name": "FAMEK",
+            "lat": 61.131588883333336,
+            "lon": 154.49713888333332
+        },
+        {
+            "name": "HOTIM",
+            "lat": 61.07881666666667,
+            "lon": 153.965725
+        },
+        {
+            "name": "JUDBU",
+            "lat": 61.0036,
+            "lon": 154.48452221666668
+        },
+        {
+            "name": "WOGAP",
+            "lat": 60.94764721666667,
+            "lon": 154.24121943333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "FAMEK1",
+            "rnw": "03",
+            "fixes": {
+                "HOTIM": "HOTIM AT OR ABOVE 2500",
+                "WOGAP": "WOGAP",
+                "JUDBU": "JUDBU",
+                "FAMEK": "FAMEK AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA03",
+            "fixes": {
+                "WOGAP": "WOGAP AT OR ABOVE 4800 WOGAP",
+                "COBON": "COBON 3200",
+                "HOTIM": "OVERFLY HOTIM 2500 RNW 03 TRK 032 UNTIL 2500 TURN RIGHT DIRECT",
+                "JUDBU": "OVERFLY JUDBU AT OR ABOVE 6000 HOLD AT JUDBU RIGHT TURN INBOUNDCOURSE 101 SPEED 175 LEGDIST 5 FAF COBON MAP HOTIM"
+            },
+            "transitions": [
+                {
+                    "name": "FAMEK",
+                    "fixes": {
+                        "FAMEK": "FAMEK",
+                        "JUDBU": "JUDBU AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA21",
+            "fixes": {
+                "WOGAP": "WOGAP AT OR ABOVE 4800 WOGAP",
+                "COBON": "COBON 3200",
+                "HOTIM": "OVERFLY HOTIM 2500 RNW 21 TRK 032 UNTIL 2500 TURN RIGHT DIRECT",
+                "JUDBU": "OVERFLY JUDBU AT OR ABOVE 6000 HOLD AT JUDBU RIGHT TURN INBOUNDCOURSE 101 SPEED 175 LEGDIST 5 FAF COBON MAP HOTIM"
+            },
+            "transitions": [
+                {
+                    "name": "FAMEK",
+                    "fixes": {
+                        "FAMEK": "FAMEK",
+                        "JUDBU": "JUDBU AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

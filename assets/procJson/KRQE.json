@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "CONPO",
+            "lat": 35.564222216666664,
+            "lon": 109.14002221666667
+        },
+        {
+            "name": "DERTY",
+            "lat": 35.81235556666667,
+            "lon": 108.67080556666667
+        },
+        {
+            "name": "FORAN",
+            "lat": 35.372830566666664,
+            "lon": 109.36661666666667
+        },
+        {
+            "name": "GUP",
+            "lat": 35.476,
+            "lon": 108.87261111666666
+        },
+        {
+            "name": "HABON",
+            "lat": 35.48498333333333,
+            "lon": 109.20538056666666
+        },
+        {
+            "name": "HUNVI",
+            "lat": 35.995147216666666,
+            "lon": 109.32914443333334
+        },
+        {
+            "name": "JELIX",
+            "lat": 35.84241943333333,
+            "lon": 108.76116111666667
+        },
+        {
+            "name": "POMBE",
+            "lat": 35.59195556666667,
+            "lon": 109.11710833333333
+        },
+        {
+            "name": "RANOY",
+            "lat": 35.58931388333333,
+            "lon": 108.993275
+        },
+        {
+            "name": "ROCLO",
+            "lat": 35.75493611666667,
+            "lon": 109.05253611666667
+        },
+        {
+            "name": "WUDID",
+            "lat": 35.855,
+            "lon": 109.04383333333334
+        },
+        {
+            "name": "ZUBOD",
+            "lat": 35.653072216666665,
+            "lon": 109.06137778333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "HABON": "HABON AT OR ABOVE 8900",
+                "CONPO": "CONPO 8700",
+                "POMBE": "POMBE AT OR ABOVE 8000 RNW 03 TRK 025 UNTIL 7142 TURN LEFT DIRECT",
+                "FORAN": "OVERFLY FORAN AT OR ABOVE 9600 HOLD AT FORAN RIGHT TURN INBOUNDCOURSE 041 LEGDIST 7 FAF CONPO MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "FORAN",
+                    "fixes": {
+                        "FORAN": "FORAN AT OR ABOVE 9000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB21",
+            "fixes": {
+                "WUDID": "WUDID AT OR ABOVE 10100",
+                "ROCLO": "ROCLO 9100 RNW 21 TRK 175 UNTIL 8080",
+                "FORAN": "OVERFLY FORAN AT OR ABOVE 9600 HOLD AT FORAN RIGHT TURN INBOUNDCOURSE 041 LEGDIST 7 FAF ROCLO MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "DERTY",
+                    "fixes": {
+                        "DERTY": "DERTY",
+                        "JELIX": "JELIX AT OR ABOVE 10100"
+                    }
+                },
+                {
+                    "name": "HUNVI",
+                    "fixes": {
+                        "HUNVI": "HUNVI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA03",
+            "fixes": {
+                "GUP": "GUP AT OR ABOVE 9800 GUP AT OR ABOVE 9800 HOLD AT GUP LEFT TURN INBOUNDCOURSE 305 LEGTIME 1 FAF RANOY MAP ZUBOD",
+                "RANOY": "RANOY 8400",
+                "ZUBOD": "OVERFLY ZUBOD 7740 RNW 03 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GUP",
+                    "fixes": {
+                        "GUP": "GUP LEFT TURN INBOUNDCOURSE 305 ALT 9800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA21",
+            "fixes": {
+                "GUP": "GUP AT OR ABOVE 9800 GUP AT OR ABOVE 9800 HOLD AT GUP LEFT TURN INBOUNDCOURSE 305 LEGTIME 1 FAF RANOY MAP ZUBOD",
+                "RANOY": "RANOY 8400",
+                "ZUBOD": "OVERFLY ZUBOD 7740 RNW 21 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GUP",
+                    "fixes": {
+                        "GUP": "GUP LEFT TURN INBOUNDCOURSE 305 ALT 9800 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,214 @@
+{
+    "fixes": [
+        {
+            "name": "ARBES",
+            "lat": 33.475,
+            "lon": 9.832194433333333
+        },
+        {
+            "name": "BATLO",
+            "lat": 33.79966666666667,
+            "lon": 9.636972216666667
+        },
+        {
+            "name": "D057E",
+            "lat": 33.77390556666667,
+            "lon": 10.006769433333334
+        },
+        {
+            "name": "D242F",
+            "lat": 33.689805566666664,
+            "lon": 9.811575
+        },
+        {
+            "name": "FD06Z",
+            "lat": 33.68768333333333,
+            "lon": 9.806147216666666
+        },
+        {
+            "name": "FD24Z",
+            "lat": 33.778075,
+            "lon": 10.015430566666666
+        },
+        {
+            "name": "FS06Y",
+            "lat": 33.68781943333333,
+            "lon": 9.806497216666667
+        },
+        {
+            "name": "FS24Y",
+            "lat": 33.77485,
+            "lon": 10.008730566666667
+        },
+        {
+            "name": "GAB",
+            "lat": 33.73219443333333,
+            "lon": 9.920194433333334
+        },
+        {
+            "name": "GINEN",
+            "lat": 34.01677778333333,
+            "lon": 9.920194433333334
+        },
+        {
+            "name": "MAZRA",
+            "lat": 33.89083333333333,
+            "lon": 10.271388883333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "ARBE1A",
+            "rnw": "24",
+            "fixes": {
+                "ARBES": "ARBES"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ARBE1B",
+            "rnw": "06",
+            "fixes": {
+                "ARBES": "ARBES"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BATL1A",
+            "rnw": "24",
+            "fixes": {
+                "BATLO": "BATLO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BATL1B",
+            "rnw": "06",
+            "fixes": {
+                "BATLO": "BATLO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GINE1A",
+            "rnw": "24",
+            "fixes": {
+                "GINEN": "GINEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GINE1B",
+            "rnw": "06",
+            "fixes": {
+                "GINEN": "GINEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MAZR1D",
+            "rnw": "06",
+            "fixes": {
+                "MAZRA": "MAZRA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MAZR1E",
+            "rnw": "24",
+            "fixes": {
+                "MAZRA": "MAZRA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ06",
+            "fixes": {
+                "FD06Z": "FD06Z 2200 RNW 06",
+                "GAB": "OVERFLY GAB TRK 062 UNTIL 5.0 FROM GAB TURN RIGHT DIRECT GAB 3000 SPEED 220 FAF FD06Z MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "GAB",
+                    "fixes": {
+                        "GAB": "GAB AT OR ABOVE 3000",
+                        "D242F": "D242F TRK 197 UNTIL 4.4 FROM D242F"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ24",
+            "fixes": {
+                "FD24Z": "FD24Z 1900 RNW 24",
+                "GAB": "OVERFLY GAB TRK 237 UNTIL 5.0 FROM GAB TURN RIGHT DIRECT GAB 3000 SPEED 220 FAF FD24Z MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "GAB",
+                    "fixes": {
+                        "GAB": "GAB AT OR ABOVE 3000",
+                        "D057E": "D057E TRK 012 UNTIL 4.4 FROM D057E"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY06",
+            "fixes": {
+                "FS06Y": "FS06Y 2200 RNW 06",
+                "GAB": "OVERFLY GAB TRK 062 UNTIL 2000 TURN RIGHT DIRECT GAB 3000 SPEED 220 FAF FS06Y MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "GAB1",
+                    "fixes": {
+                        "GAB": "GAB AT OR ABOVE 3000 TRK 264 UNTIL 7.0 FROM GAB"
+                    }
+                },
+                {
+                    "name": "GAB2",
+                    "fixes": {
+                        "GAB": "GAB AT OR ABOVE 3000 TRK 254 UNTIL 7.0 FROM GAB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY24",
+            "fixes": {
+                "FS24Y": "FS24Y 1800 RNW 24",
+                "GAB": "OVERFLY GAB TRK 237 UNTIL 1500 TURN RIGHT DIRECT GAB 3000 SPEED 220 FAF FS24Y MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "GAB1",
+                    "fixes": {
+                        "GAB": "GAB AT OR ABOVE 3000 TRK 035 UNTIL 7.0 FROM GAB"
+                    }
+                },
+                {
+                    "name": "GAB2",
+                    "fixes": {
+                        "GAB": "GAB AT OR ABOVE 3000 TRK 042 UNTIL 5.8 FROM GAB"
+                    }
+                }
+            ]
+        }
+    ]
+}

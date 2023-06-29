@@ -1,0 +1,191 @@
+{
+    "fixes": [
+        {
+            "name": "BOBGE",
+            "lat": 19.864727783333333,
+            "lon": 75.32086388333333
+        },
+        {
+            "name": "BYGON",
+            "lat": 20.505555566666665,
+            "lon": 73.8325
+        },
+        {
+            "name": "CAPTN",
+            "lat": 19.745,
+            "lon": 75.31666666666666
+        },
+        {
+            "name": "CUBMA",
+            "lat": 19.789744433333333,
+            "lon": 75.31880833333334
+        },
+        {
+            "name": "DANYL",
+            "lat": 19.705,
+            "lon": 75.06666666666666
+        },
+        {
+            "name": "DESME",
+            "lat": 19.758588883333335,
+            "lon": 75.10488333333333
+        },
+        {
+            "name": "EASTP",
+            "lat": 19.905,
+            "lon": 73.94833333333334
+        },
+        {
+            "name": "EKANE",
+            "lat": 19.87034166666667,
+            "lon": 75.08860833333334
+        },
+        {
+            "name": "ERICC",
+            "lat": 18.85333333333333,
+            "lon": 76.08333333333333
+        },
+        {
+            "name": "GABUN",
+            "lat": 18.8,
+            "lon": 74.06979443333333
+        },
+        {
+            "name": "HAPOL",
+            "lat": 19.90005,
+            "lon": 75.13209166666667
+        },
+        {
+            "name": "LODMA",
+            "lat": 19.31,
+            "lon": 73.51666666666667
+        },
+        {
+            "name": "PADLE",
+            "lat": 19.888958333333335,
+            "lon": 75.29420556666666
+        },
+        {
+            "name": "SOUTP",
+            "lat": 19.586666666666666,
+            "lon": 75.12666666666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "ERICC5",
+            "rnw": "15",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 10",
+                    "fixes": {
+                        "RNW 10": "RNW 10 HDG 099 UNTIL 561 TURN RIGHT DIRECT",
+                        "CAPTN": "CAPTN AT OR ABOVE 2000",
+                        "ERICC": "ERICC"
+                    }
+                },
+                {
+                    "rwy": "RNW 28",
+                    "fixes": {
+                        "RNW 28": "RNW 28 HDG 279 UNTIL 561",
+                        "CAPTN": "CAPTN AT OR ABOVE 2000",
+                        "ERICC": "ERICC"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "GTMOD6",
+            "rnw": "15",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 10",
+                    "fixes": {
+                        "RNW 10": "RNW 10 HDG 099 UNTIL 460",
+                        "DANYL": "DANYL AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "rwy": "RNW 28",
+                    "fixes": {
+                        "RNW 28": "RNW 28 HDG 279 UNTIL 460 TURN LEFT DIRECT",
+                        "DANYL": "DANYL AT OR ABOVE 2000"
+                    }
+                }
+            ],
+            "transitions": [
+                {
+                    "name": "BYGON",
+                    "fixes": [
+                        "EASTP",
+                        "BYGON"
+                    ]
+                },
+                {
+                    "name": "GABUN",
+                    "fixes": [
+                        "GABUN"
+                    ]
+                },
+                {
+                    "name": "LODMA",
+                    "fixes": [
+                        "LODMA"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [
+        {
+            "name": "SOUTP6",
+            "runway": "RNW 10 RNW 28",
+            "fixes": {
+                "SOUTP": "SOUTP"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "CUBMA": "CUBMA AT OR ABOVE 2600",
+                "BOBGE": "BOBGE AT OR ABOVE 1900",
+                "PADLE": "PADLE 1600 RNW 10 TRK 084 UNTIL 461 TURN RIGHT DIRECT",
+                "SOUTP": "OVERFLY SOUTP AT OR ABOVE 3000 HOLD AT SOUTP RIGHT TURN INBOUNDCOURSE 353 ALT 12000 SPEED 230 LEGDIST 5 FAF PADLE MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "SOUTP",
+                    "fixes": {
+                        "SOUTP": "SOUTP AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "DESME": "DESME AT OR ABOVE 2600",
+                "EKANE": "EKANE AT OR ABOVE 1900",
+                "HAPOL": "HAPOL 1400 RNW 28 TRK 284 UNTIL 800 TURN LEFT DIRECT",
+                "SOUTP": "OVERFLY SOUTP AT OR ABOVE 3000 HOLD AT SOUTP RIGHT TURN INBOUNDCOURSE 353 ALT 12000 SPEED 230 LEGDIST 5 FAF HAPOL MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "SOUTP",
+                    "fixes": {
+                        "SOUTP": "SOUTP AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

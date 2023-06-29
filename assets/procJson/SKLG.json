@@ -1,0 +1,85 @@
+{
+    "fixes": [
+        {
+            "name": "BUVMU",
+            "lat": 0.26184166666666664,
+            "lon": 74.61825833333333
+        },
+        {
+            "name": "ITAMU",
+            "lat": 0.18748888333333333,
+            "lon": 74.57998333333333
+        },
+        {
+            "name": "LG901",
+            "lat": 0.16436388333333335,
+            "lon": 74.80509721666667
+        },
+        {
+            "name": "MOXUB",
+            "lat": 0.22330833333333333,
+            "lon": 74.69211388333333
+        },
+        {
+            "name": "UTMER",
+            "lat": 0.300375,
+            "lon": 74.54440278333334
+        },
+        {
+            "name": "VAKIM",
+            "lat": 0.28111111666666666,
+            "lon": 74.87638888333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "VAKI1A",
+            "rnw": "30",
+            "fixes": {
+                "LG901": "OVERFLY LG901 AT OR ABOVE 1200",
+                "VAKIM": "VAKIM AT OR ABOVE 10000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "VAKI1B",
+            "runway": "RNW 30",
+            "fixes": {
+                "VAKIM": "VAKIM AT OR ABOVE 10000",
+                "ITAMU": "ITAMU AT OR ABOVE 6000",
+                "BUVMU": "BUVMU AT OR ABOVE 4000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "BUVMU": "BUVMU AT OR ABOVE 4000",
+                "MOXUB": "MOXUB 2250 RNW 30 TURN RIGHT DIRECT",
+                "ITAMU": "ITAMU AT OR ABOVE 6000 SPEED 160 HOLD AT ITAMU LEFT TURN INBOUNDCOURSE 213 ALT 6000 SPEED 230 LEGTIME 1 FAF MOXUB MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "ITAMU",
+                    "fixes": {
+                        "ITAMU": "ITAMU AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "UTMER",
+                    "fixes": {
+                        "UTMER": "UTMER AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

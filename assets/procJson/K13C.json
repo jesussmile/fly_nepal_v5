@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "AWOYU",
+            "lat": 43.448483333333336,
+            "lon": 85.49996111666667
+        },
+        {
+            "name": "FILAG",
+            "lat": 43.451447216666665,
+            "lon": 85.31696388333333
+        },
+        {
+            "name": "HIXEM",
+            "lat": 43.453077783333335,
+            "lon": 85.20771111666667
+        },
+        {
+            "name": "ILJAZ",
+            "lat": 43.453975,
+            "lon": 85.14429443333333
+        },
+        {
+            "name": "KAWDO",
+            "lat": 43.45048333333333,
+            "lon": 85.37848611666666
+        },
+        {
+            "name": "MOP",
+            "lat": 43.622825,
+            "lon": 84.73726666666667
+        },
+        {
+            "name": "OXIWE",
+            "lat": 43.454963883333335,
+            "lon": 85.07140833333334
+        },
+        {
+            "name": "TRUFA",
+            "lat": 43.29532221666667,
+            "lon": 85.37978888333333
+        },
+        {
+            "name": "VANNY",
+            "lat": 43.363194433333334,
+            "lon": 85.01493888333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "AWOYU": "AWOYU AT OR ABOVE 3000",
+                "KAWDO": "KAWDO 2500",
+                "FILAG": "FILAG AT OR ABOVE 1640 RNW 10 TRK 094 UNTIL 1800 TURN RIGHT DIRECT",
+                "TRUFA": "OVERFLY TRUFA AT OR ABOVE 3000 HOLD AT TRUFA RIGHT TURN INBOUNDCOURSE 084 LEGDIST 4 FAF KAWDO MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "TRUFA",
+                    "fixes": {
+                        "TRUFA": "TRUFA",
+                        "AWOYU": "OVERFLY AWOYU AT OR ABOVE 3000 HOLD AT AWOYU RIGHT TURN INBOUNDCOURSE 094 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "OXIWE": "OXIWE AT OR ABOVE 3000",
+                "ILJAZ": "ILJAZ 2600",
+                "HIXEM": "HIXEM AT OR ABOVE 1700 RNW 28 TRK 274 UNTIL 1800",
+                "TRUFA": "OVERFLY TRUFA AT OR ABOVE 3000 HOLD AT TRUFA RIGHT TURN INBOUNDCOURSE 084 LEGDIST 4 FAF ILJAZ MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "MOP",
+                    "fixes": {
+                        "MOP": "MOP"
+                    }
+                },
+                {
+                    "name": "TRUFA",
+                    "fixes": {
+                        "TRUFA": "TRUFA",
+                        "OXIWE": "OVERFLY OXIWE AT OR ABOVE 3000 HOLD AT OXIWE RIGHT TURN INBOUNDCOURSE 274 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VANNY",
+                    "fixes": {
+                        "VANNY": "VANNY"
+                    }
+                }
+            ]
+        }
+    ]
+}

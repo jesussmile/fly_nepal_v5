@@ -1,0 +1,87 @@
+{
+    "fixes": [
+        {
+            "name": "ETG",
+            "lat": 41.21495,
+            "lon": 78.14275556666666
+        },
+        {
+            "name": "JEKUR",
+            "lat": 41.04578888333333,
+            "lon": 78.18083611666667
+        },
+        {
+            "name": "PI001",
+            "lat": 40.94088991666667,
+            "lon": 77.92272866666667
+        },
+        {
+            "name": "PI002",
+            "lat": 41.00822998333334,
+            "lon": 77.89024663333333
+        },
+        {
+            "name": "PI003",
+            "lat": 40.98652186666666,
+            "lon": 77.79261253333334
+        },
+        {
+            "name": "PSB",
+            "lat": 40.91625833333333,
+            "lon": 77.99271666666667
+        },
+        {
+            "name": "WIDIP",
+            "lat": 40.94126111666667,
+            "lon": 78.11950556666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 16",
+        "RNW 24",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "JEKUR": "JEKUR AT OR ABOVE 4400 OVERFLY JEKUR AT OR ABOVE 4400 HOLD AT JEKUR RIGHT TURN INBOUNDCOURSE 167 LEGDIST 5 FAF WIDIP MAP RNW 16",
+                "WIDIP": "WIDIP 3000 RNW 16 TRK 167 UNTIL 2800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ETG",
+                    "fixes": {
+                        "ETG": "ETG"
+                    }
+                },
+                {
+                    "name": "PSB",
+                    "fixes": {
+                        "PSB": "PSB",
+                        "JEKUR": "OVERFLY JEKUR AT OR ABOVE 4400 HOLD AT JEKUR RIGHT TURN INBOUNDCOURSE 167 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR24",
+            "fixes": {
+                "PSB": "PSB 3500 RNW 24 TRK 256 UNTIL 2350 TURN RIGHT DIRECT PSB AT OR ABOVE 4000 HOLD AT PSB RIGHT TURN INBOUNDCOURSE 256 LEGTIME 1 FAF PSB MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "PSB",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 4000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

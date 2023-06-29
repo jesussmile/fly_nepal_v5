@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "BIB",
+            "lat": 38.920344433333334,
+            "lon": 88.48180556666667
+        },
+        {
+            "name": "FEBKU",
+            "lat": 38.635075,
+            "lon": 88.47391666666667
+        },
+        {
+            "name": "FIPEN",
+            "lat": 38.841975,
+            "lon": 88.32340833333333
+        },
+        {
+            "name": "HANEL",
+            "lat": 38.74683056666667,
+            "lon": 88.39274443333333
+        },
+        {
+            "name": "JETON",
+            "lat": 38.44933056666667,
+            "lon": 88.69615833333333
+        },
+        {
+            "name": "JISID",
+            "lat": 38.49436111666667,
+            "lon": 88.57572221666666
+        },
+        {
+            "name": "JOVAR",
+            "lat": 38.99656111666667,
+            "lon": 88.21029443333333
+        },
+        {
+            "name": "LASDE",
+            "lat": 38.81517221666667,
+            "lon": 88.34296388333334
+        },
+        {
+            "name": "NEDGE",
+            "lat": 38.74270833333333,
+            "lon": 88.39574443333333
+        },
+        {
+            "name": "POWLS",
+            "lat": 38.58142778333333,
+            "lon": 88.51278611666666
+        },
+        {
+            "name": "ZIMUN",
+            "lat": 38.36674166666667,
+            "lon": 88.39956943333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 15",
+        "RNW 21",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC21",
+            "fixes": {
+                "LASDE": "LASDE AT OR ABOVE 2200",
+                "NEDGE": "NEDGE 2100 RNW 21 TRK 211 UNTIL 1200 TURN RIGHT DIRECT",
+                "BIB": "BIB AT OR ABOVE 2300 HOLD AT BIB LEFT TURN INBOUNDCOURSE 341 LEGTIME 1 FAF NEDGE MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "BIB",
+                    "fixes": {
+                        "BIB": "BIB"
+                    }
+                },
+                {
+                    "name": "LASDE",
+                    "fixes": {
+                        "LASDE": "LASDE RIGHT TURN INBOUNDCOURSE 211 ALT 2200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "JISID": "JISID AT OR ABOVE 2200",
+                "POWLS": "POWLS 2200",
+                "FEBKU": "FEBKU AT OR ABOVE 1020 RNW 03 TRK 031 UNTIL 783",
+                "FIPEN": "OVERFLY FIPEN AT OR ABOVE 2200 HOLD AT FIPEN RIGHT TURN INBOUNDCOURSE 211 LEGDIST 4 FAF POWLS MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "JETON",
+                    "fixes": {
+                        "JETON": "JETON"
+                    }
+                },
+                {
+                    "name": "JISID",
+                    "fixes": {
+                        "JISID": "JISID RIGHT TURN INBOUNDCOURSE 031 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZIMUN",
+                    "fixes": {
+                        "ZIMUN": "ZIMUN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "FIPEN": "FIPEN AT OR ABOVE 2200",
+                "HANEL": "HANEL 2200 RNW 21 TRK 211 UNTIL 746",
+                "JISID": "OVERFLY JISID AT OR ABOVE 2200 HOLD AT JISID RIGHT TURN INBOUNDCOURSE 031 LEGDIST 4 FAF HANEL MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "BIB",
+                    "fixes": {
+                        "BIB": "BIB"
+                    }
+                },
+                {
+                    "name": "FIPEN",
+                    "fixes": {
+                        "FIPEN": "FIPEN RIGHT TURN INBOUNDCOURSE 211 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JOVAR",
+                    "fixes": {
+                        "JOVAR": "JOVAR"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "fixes": [
+        {
+            "name": "BOVUX",
+            "lat": 53.47052778333333,
+            "lon": 113.24357221666666
+        },
+        {
+            "name": "KIRAK",
+            "lat": 53.593386116666665,
+            "lon": 113.32005278333334
+        },
+        {
+            "name": "KIXEX",
+            "lat": 53.334775,
+            "lon": 112.84171111666667
+        },
+        {
+            "name": "LIBAT",
+            "lat": 53.38406388333333,
+            "lon": 112.98685833333333
+        },
+        {
+            "name": "OTVUX",
+            "lat": 53.519325,
+            "lon": 113.38964443333333
+        },
+        {
+            "name": "PENPU",
+            "lat": 53.36808056666667,
+            "lon": 112.93969443333333
+        },
+        {
+            "name": "RIGIS",
+            "lat": 53.413158333333335,
+            "lon": 113.07293888333334
+        },
+        {
+            "name": "SAVID",
+            "lat": 53.408516666666664,
+            "lon": 112.77147221666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "OTVUX": "OTVUX AT OR ABOVE 4100",
+                "BOVUX": "BOVUX 4080 RNW 10",
+                "RIGIS": "RIGIS",
+                "PENPU": "OVERFLY PENPU 4400 HOLD AT PENPU RIGHT TURN INBOUNDCOURSE 105 SPEED 175 LEGTIME 1 FAF BOVUX MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "KIRAK",
+                    "fixes": {
+                        "KIRAK": "KIRAK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "KIXEX": "KIXEX AT OR ABOVE 4100",
+                "LIBAT": "LIBAT 4100 RNW 28 TRK 285 UNTIL 3300 TURN RIGHT DIRECT",
+                "SAVID": "SAVID 4400 HOLD AT SAVID RIGHT TURN INBOUNDCOURSE 195 SPEED 175 LEGTIME 1 FAF LIBAT MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "SAVID",
+                    "fixes": {
+                        "SAVID": "SAVID"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "ECAYA",
+            "lat": 37.54058333333333,
+            "lon": 83.43051111666666
+        },
+        {
+            "name": "JEMOG",
+            "lat": 37.23255278333333,
+            "lon": 83.09348333333334
+        },
+        {
+            "name": "LETCO",
+            "lat": 37.453580566666666,
+            "lon": 83.33494721666666
+        },
+        {
+            "name": "PI001",
+            "lat": 37.497595483333335,
+            "lon": 83.38318408333333
+        },
+        {
+            "name": "PI002",
+            "lat": 37.50256048333333,
+            "lon": 83.47330098333333
+        },
+        {
+            "name": "PI003",
+            "lat": 37.57928535,
+            "lon": 83.47291783333333
+        },
+        {
+            "name": "WAKAX",
+            "lat": 37.415616666666665,
+            "lon": 83.29334166666666
+        },
+        {
+            "name": "WEISH",
+            "lat": 37.337608333333336,
+            "lon": 83.20802221666666
+        },
+        {
+            "name": "WORSU",
+            "lat": 37.311830566666664,
+            "lon": 83.17988056666667
+        },
+        {
+            "name": "ZORPO",
+            "lat": 37.53269443333333,
+            "lon": 83.42182778333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 14",
+        "RNW 24",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC14",
+            "fixes": {
+                "ECAYA": "ECAYA AT OR ABOVE 4000",
+                "LETCO": "LETCO 3000 LETCO AT OR ABOVE 4000 HOLD AT LETCO RIGHT TURN INBOUNDCOURSE 145 ALT 4000 LEGTIME 1 FAF LETCO MAP RNW 14",
+                "WAKAX": "WAKAX AT OR ABOVE 1960 RNW 14 TRK 145 UNTIL 2500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LETCO",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 4000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ZORPO": "ZORPO AT OR ABOVE 4000",
+                "LETCO": "LETCO 3000 RNW 14 TRK 145 UNTIL 1443",
+                "JEMOG": "OVERFLY JEMOG AT OR ABOVE 4000 HOLD AT JEMOG RIGHT TURN INBOUNDCOURSE 325 LEGDIST 4 FAF LETCO MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ZORPO",
+                    "fixes": {
+                        "ZORPO": "ZORPO RIGHT TURN INBOUNDCOURSE 145 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "JEMOG": "JEMOG AT OR ABOVE 4000",
+                "WORSU": "WORSU 3000",
+                "WEISH": "WEISH AT OR ABOVE 2340 RNW 32 TRK 325 UNTIL 1656",
+                "ZORPO": "OVERFLY ZORPO AT OR ABOVE 4000 HOLD AT ZORPO RIGHT TURN INBOUNDCOURSE 145 LEGDIST 4 FAF WORSU MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "JEMOG",
+                    "fixes": {
+                        "JEMOG": "JEMOG RIGHT TURN INBOUNDCOURSE 325 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

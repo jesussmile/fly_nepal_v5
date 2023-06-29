@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "RAPGE",
+            "lat": 38.815252783333335,
+            "lon": 81.07108611666666
+        },
+        {
+            "name": "WIKON",
+            "lat": 38.82739721666667,
+            "lon": 81.47274166666666
+        },
+        {
+            "name": "WILHI",
+            "lat": 38.83148611666667,
+            "lon": 81.61938888333333
+        },
+        {
+            "name": "WUNES",
+            "lat": 38.819861116666665,
+            "lon": 81.21823056666666
+        },
+        {
+            "name": "ZODSA",
+            "lat": 38.82203333333333,
+            "lon": 81.28970833333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "WILHI": "WILHI AT OR ABOVE 3500",
+                "WIKON": "WIKON 2700 RNW 10 TRK 100 UNTIL 1178",
+                "RAPGE": "OVERFLY RAPGE AT OR ABOVE 3200 HOLD AT RAPGE RIGHT TURN INBOUNDCOURSE 280 LEGDIST 4 FAF WIKON MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "WILHI",
+                    "fixes": {
+                        "WILHI": "WILHI RIGHT TURN INBOUNDCOURSE 100 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "RAPGE": "RAPGE AT OR ABOVE 3200",
+                "WUNES": "WUNES 2800",
+                "ZODSA": "ZODSA AT OR ABOVE 1720 RNW 28 TRK 280 UNTIL 1328",
+                "WILHI": "OVERFLY WILHI AT OR ABOVE 3500 HOLD AT WILHI RIGHT TURN INBOUNDCOURSE 100 LEGDIST 4 FAF WUNES MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "RAPGE",
+                    "fixes": {
+                        "RAPGE": "RAPGE RIGHT TURN INBOUNDCOURSE 280 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

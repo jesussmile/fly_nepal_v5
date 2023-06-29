@@ -1,0 +1,257 @@
+{
+    "fixes": [
+        {
+            "name": "CQ29",
+            "lat": 30.20208888333333,
+            "lon": 56.20918888333333
+        },
+        {
+            "name": "D107J",
+            "lat": 30.245455566666667,
+            "lon": 56.2364
+        },
+        {
+            "name": "D114J",
+            "lat": 30.226763883333334,
+            "lon": 56.22699721666667
+        },
+        {
+            "name": "D202J",
+            "lat": 30.151144433333332,
+            "lon": 55.974811116666665
+        },
+        {
+            "name": "D280H",
+            "lat": 30.3327,
+            "lon": 55.905458333333335
+        },
+        {
+            "name": "D280J",
+            "lat": 30.340166666666665,
+            "lon": 55.86791111666667
+        },
+        {
+            "name": "D314M",
+            "lat": 30.459911116666667,
+            "lon": 55.882733333333334
+        },
+        {
+            "name": "DAPOX",
+            "lat": 30.545833333333334,
+            "lon": 55.79111111666667
+        },
+        {
+            "name": "FF295",
+            "lat": 30.25405,
+            "lon": 56.160927783333335
+        },
+        {
+            "name": "FQ11",
+            "lat": 30.321477783333332,
+            "lon": 55.96176388333333
+        },
+        {
+            "name": "FQ29",
+            "lat": 30.252427783333335,
+            "lon": 56.132425
+        },
+        {
+            "name": "KER",
+            "lat": 30.282805566666667,
+            "lon": 56.94230556666667
+        },
+        {
+            "name": "MQ11",
+            "lat": 30.310230566666668,
+            "lon": 56.018058333333336
+        },
+        {
+            "name": "MQ29",
+            "lat": 30.292666666666666,
+            "lon": 56.07095556666667
+        },
+        {
+            "name": "RAFNB",
+            "lat": 30.30275,
+            "lon": 56.05563888333333
+        },
+        {
+            "name": "SRJ",
+            "lat": 29.55625,
+            "lon": 55.660277783333335
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "DAPO1A",
+            "rnw": "29",
+            "fixes": {
+                "DAPOX": "DAPOX AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DAPO1B",
+            "rnw": "11",
+            "fixes": {
+                "DAPOX": "DAPOX AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KER3A",
+            "rnw": "29",
+            "fixes": {
+                "KER": "KER"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KER3B",
+            "rnw": "11",
+            "fixes": {
+                "KER": "KER"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SRJ2A",
+            "rnw": "29",
+            "fixes": {
+                "SRJ": "SRJ"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SRJ2B",
+            "rnw": "11",
+            "fixes": {
+                "SRJ": "SRJ"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "DAPO1N",
+            "runway": "RNW 11 RNW 29",
+            "fixes": {
+                "DAPOX": "DAPOX",
+                "D314M": "D314M"
+            }
+        },
+        {
+            "name": "DAPO1T",
+            "runway": "RNW 11 RNW 29",
+            "fixes": {
+                "DAPOX": "DAPOX",
+                "RAFNB": "RAFNB"
+            }
+        },
+        {
+            "name": "SRJ2T",
+            "runway": "RNW 11 RNW 29",
+            "fixes": {
+                "SRJ": "SRJ",
+                "D202J": "D202J",
+                "RAFNB": "RAFNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDBD11",
+            "fixes": {
+                "FQ11": "FQ11 6800",
+                "MQ11": "MQ11 5691 RNW 11 TRK 100 UNTIL 5700",
+                "RAFNB": "RAFNB HDG 100 VECTORS FAF FQ11 MAP MQ11"
+            },
+            "transitions": [
+                {
+                    "name": "D280J",
+                    "fixes": {
+                        "D280J": "D280J AT OR ABOVE 8000",
+                        "D280H": "D280H AT OR ABOVE 7400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB11",
+            "fixes": {
+                "FF295": "FF295 7300",
+                "RAFNB": "RAFNB 6300 RNW 11 TRK 295 UNTIL 7800 TURN RIGHT DIRECT RAFNB 9500 HOLD AT RAFNB LEFT TURN INBOUNDCOURSE 092 ALT 9500 LEGTIME 1 FAF FF295 MAP RAF"
+            },
+            "transitions": [
+                {
+                    "name": "RAF1",
+                    "fixes": {
+                        "RAFNB": "RAFNB AT OR ABOVE 9500 TRK 092 UNTIL 6.2 FROM RAFNB"
+                    }
+                },
+                {
+                    "name": "RAF2",
+                    "fixes": {
+                        "RAFNB": "RAFNB AT OR ABOVE 9500 TRK 103 UNTIL 7.0 FROM RAFNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD29",
+            "fixes": {
+                "CQ29": "CQ29 7800",
+                "FQ29": "FQ29 6700",
+                "MQ29": "MQ29 5411 RNW 29 TRK 304 UNTIL 7800 TURN RIGHT DIRECT",
+                "RAFNB": "RAFNB 9500 HOLD AT RAFNB LEFT TURN INBOUNDCOURSE 107 SPEED 210 LEGTIME 1 FAF FQ29 MAP MQ29"
+            },
+            "transitions": [
+                {
+                    "name": "RAF1",
+                    "fixes": {
+                        "RAFNB": "RAFNB AT OR ABOVE 9500 SPEED 185",
+                        "D107J": "OVERFLY D107J 7800"
+                    }
+                },
+                {
+                    "name": "RAF2",
+                    "fixes": {
+                        "RAFNB": "RAFNB AT OR ABOVE 9500",
+                        "D114J": "OVERFLY D114J 7800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB29",
+            "fixes": {
+                "FF295": "FF295 7300",
+                "RAFNB": "RAFNB 6300 RNW 29 TRK 295 UNTIL 7800 TURN RIGHT DIRECT RAFNB 9500 HOLD AT RAFNB LEFT TURN INBOUNDCOURSE 092 ALT 9500 LEGTIME 1 FAF FF295 MAP RAF"
+            },
+            "transitions": [
+                {
+                    "name": "RAF1",
+                    "fixes": {
+                        "RAFNB": "RAFNB AT OR ABOVE 9500 TRK 092 UNTIL 6.2 FROM RAFNB"
+                    }
+                },
+                {
+                    "name": "RAF2",
+                    "fixes": {
+                        "RAFNB": "RAFNB AT OR ABOVE 9500 TRK 103 UNTIL 7.0 FROM RAFNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

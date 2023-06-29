@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "CEDVA",
+            "lat": 36.16929721666666,
+            "lon": 89.94395278333333
+        },
+        {
+            "name": "GENRE",
+            "lat": 35.85946388333333,
+            "lon": 89.94395556666667
+        },
+        {
+            "name": "GURLY",
+            "lat": 36.06915278333334,
+            "lon": 89.94395278333333
+        },
+        {
+            "name": "HABSI",
+            "lat": 35.75931666666666,
+            "lon": 89.94395556666667
+        },
+        {
+            "name": "HUFVE",
+            "lat": 36.003644433333335,
+            "lon": 89.94395278333333
+        },
+        {
+            "name": "OLVEE",
+            "lat": 36.19385,
+            "lon": 89.94395556666667
+        },
+        {
+            "name": "TETOE",
+            "lat": 35.925041666666665,
+            "lon": 89.94395556666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "OLVEE": "OLVEE AT OR ABOVE 2500",
+                "GURLY": "GURLY 2000 RNW 18 TRK 181 UNTIL 1900 TURN LEFT DIRECT GURLY AT OR ABOVE 2500 HOLD AT GURLY RIGHT TURN INBOUNDCOURSE 181 LEGTIME 1 FAF GURLY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "GURLY",
+                    "fixes": {
+                        "GURLY": "GURLY RIGHT TURN INBOUNDCOURSE 181 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "CEDVA": "CEDVA AT OR ABOVE 2500",
+                "GURLY": "GURLY 2000",
+                "HUFVE": "HUFVE AT OR ABOVE 740 RNW 18 TRK 181 UNTIL 450",
+                "HABSI": "OVERFLY HABSI AT OR ABOVE 2500 HOLD AT HABSI RIGHT TURN INBOUNDCOURSE 001 LEGDIST 6 FAF GURLY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "CEDVA",
+                    "fixes": {
+                        "CEDVA": "CEDVA RIGHT TURN INBOUNDCOURSE 181 ALT 2500 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HABSI": "HABSI AT OR ABOVE 2500",
+                "GENRE": "GENRE 2000",
+                "TETOE": "TETOE AT OR ABOVE 740 RNW 36 TRK 001 UNTIL 454",
+                "CEDVA": "OVERFLY CEDVA AT OR ABOVE 2500 HOLD AT CEDVA RIGHT TURN INBOUNDCOURSE 181 LEGDIST 6 FAF GENRE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HABSI",
+                    "fixes": {
+                        "HABSI": "HABSI RIGHT TURN INBOUNDCOURSE 001 ALT 2500 LEGDIST 6"
+                    }
+                }
+            ]
+        }
+    ]
+}

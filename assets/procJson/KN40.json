@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "EVITT",
+            "lat": 40.55191666666666,
+            "lon": 75.07765
+        },
+        {
+            "name": "GETPE",
+            "lat": 40.60803333333333,
+            "lon": 74.90247221666667
+        },
+        {
+            "name": "JILUB",
+            "lat": 40.47912778333333,
+            "lon": 75.13688888333333
+        },
+        {
+            "name": "LIZZI",
+            "lat": 40.66566111666667,
+            "lon": 75.14879443333334
+        },
+        {
+            "name": "MACKE",
+            "lat": 40.56016666666667,
+            "lon": 74.98971943333333
+        },
+        {
+            "name": "PI001",
+            "lat": 40.54176256666667,
+            "lon": 75.15324505
+        },
+        {
+            "name": "PI002",
+            "lat": 40.582843116666666,
+            "lon": 75.23054395
+        },
+        {
+            "name": "PI003",
+            "lat": 40.537395716666666,
+            "lon": 75.1856359
+        },
+        {
+            "name": "SBJ",
+            "lat": 40.583044433333335,
+            "lon": 74.74179166666667
+        },
+        {
+            "name": "ZIBEK",
+            "lat": 40.656672216666664,
+            "lon": 74.81356388333333
+        },
+        {
+            "name": "ZOPDU",
+            "lat": 40.52644166666666,
+            "lon": 75.05104443333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "JILUB": "JILUB AT OR ABOVE 2500",
+                "ZOPDU": "ZOPDU 1800 RNW 07 TRK 067 UNTIL 1100 TURN LEFT DIRECT",
+                "LIZZI": "OVERFLY LIZZI AT OR ABOVE 3000 HOLD AT LIZZI RIGHT TURN INBOUNDCOURSE 118 LEGDIST 4 FAF ZOPDU MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "JILUB",
+                    "fixes": {
+                        "JILUB": "JILUB RIGHT TURN INBOUNDCOURSE 067 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "ZIBEK": "ZIBEK AT OR ABOVE 2500",
+                "GETPE": "GETPE 1900 RNW 25 TRK 247 UNTIL 1200 TURN RIGHT DIRECT",
+                "LIZZI": "OVERFLY LIZZI AT OR ABOVE 3000 HOLD AT LIZZI RIGHT TURN INBOUNDCOURSE 118 LEGDIST 4 FAF GETPE MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "ZIBEK",
+                    "fixes": {
+                        "ZIBEK": "ZIBEK RIGHT TURN INBOUNDCOURSE 247 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR07",
+            "fixes": {
+                "EVITT": "EVITT 1800 EVITT AT OR ABOVE 2500 HOLD AT EVITT LEFT TURN INBOUNDCOURSE 093 LEGTIME 1 FAF EVITT MAP MACKE",
+                "MACKE": "MACKE 1080 RNW 07 TRK 093 UNTIL 1080 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SBJ",
+                    "fixes": {
+                        "SBJ": "SBJ",
+                        "EVITT": "EVITT AT OR ABOVE 2500",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

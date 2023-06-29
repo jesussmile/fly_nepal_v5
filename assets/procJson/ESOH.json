@@ -1,0 +1,208 @@
+{
+    "fixes": [
+        {
+            "name": "27DME",
+            "lat": 59.979019433333335,
+            "lon": 13.582841666666667
+        },
+        {
+            "name": "ABNB",
+            "lat": 59.95041666666667,
+            "lon": 13.585833333333333
+        },
+        {
+            "name": "ADKAT",
+            "lat": 59.8535,
+            "lon": 13.763555566666666
+        },
+        {
+            "name": "ATGIG",
+            "lat": 60.10969443333333,
+            "lon": 13.5685
+        },
+        {
+            "name": "BEKAP",
+            "lat": 60.30622221666667,
+            "lon": 13.5455
+        },
+        {
+            "name": "CF18",
+            "lat": 60.17321388333333,
+            "lon": 13.560961116666666
+        },
+        {
+            "name": "FF18",
+            "lat": 60.140025,
+            "lon": 13.564866666666667
+        },
+        {
+            "name": "FQ36",
+            "lat": 59.91593056666667,
+            "lon": 13.589430566666667
+        },
+        {
+            "name": "HTNB",
+            "lat": 60.10963888333333,
+            "lon": 13.5675
+        },
+        {
+            "name": "NIDPO",
+            "lat": 60.218305566666665,
+            "lon": 13.388472216666667
+        },
+        {
+            "name": "ODSIM",
+            "lat": 60.227972216666664,
+            "lon": 13.722055566666667
+        },
+        {
+            "name": "OGELO",
+            "lat": 59.79902778333334,
+            "lon": 13.604305566666667
+        },
+        {
+            "name": "OH550",
+            "lat": 59.84883333333333,
+            "lon": 13.598611116666667
+        },
+        {
+            "name": "OH551",
+            "lat": 59.91522221666666,
+            "lon": 13.591
+        },
+        {
+            "name": "OH555",
+            "lat": 59.973722216666665,
+            "lon": 13.58425
+        },
+        {
+            "name": "OH850",
+            "lat": 60.084611116666665,
+            "lon": 13.571416666666666
+        },
+        {
+            "name": "OH851",
+            "lat": 60.22325,
+            "lon": 13.55525
+        },
+        {
+            "name": "OH854",
+            "lat": 60.14027778333333,
+            "lon": 13.564944433333334
+        },
+        {
+            "name": "VAXOX",
+            "lat": 59.95044443333333,
+            "lon": 13.586944433333333
+        },
+        {
+            "name": "XUMBI",
+            "lat": 59.843944433333334,
+            "lon": 13.433694433333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "CF18": "CF18 AT OR ABOVE 2700",
+                "FF18": "FF18 2700 RNW 18 TRK 172 UNTIL 2000 TURN RIGHT DIRECT",
+                "HTNB": "HTNB 2700 SPEED 195 FAF FF18 MAP RNW 18"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB18",
+            "fixes": {
+                "HTNB": "HTNB 2120 RNW 18 TRK 171 UNTIL 2000 TURN RIGHT DIRECT HTNB 2700 FAF HTNB MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "HT1",
+                    "fixes": {
+                        "HTNB": "HTNB RIGHT TURN INBOUNDCOURSE 171 ALT 2700 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "HT2",
+                    "fixes": {
+                        "HTNB": "HTNB RIGHT TURN INBOUNDCOURSE 171 ALT 2700 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD36",
+            "fixes": {
+                "FQ36": "FQ36 2400",
+                "27DME": "27DME AT OR ABOVE 1180 RNW 36 TRK 352 UNTIL 1900 TURN RIGHT DIRECT",
+                "ABNB": "ABNB 2400 FAF FQ36 MAP RNW 36"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "OH851": "OH851 AT OR ABOVE 2700",
+                "OH854": "OH854 2700 RNW 18",
+                "OH555": "OVERFLY OH555 SPEED 195 TURN RIGHT DIRECT",
+                "ATGIG": "OVERFLY ATGIG AT OR ABOVE 2700 HOLD AT ATGIG RIGHT TURN INBOUNDCOURSE 172 ALT 2700 SPEED 220 LEGTIME 1 FAF OH854 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "BEKAP",
+                    "fixes": {
+                        "BEKAP": "BEKAP AT OR ABOVE 3400"
+                    }
+                },
+                {
+                    "name": "NIDPO",
+                    "fixes": {
+                        "NIDPO": "NIDPO AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "ODSIM",
+                    "fixes": {
+                        "ODSIM": "ODSIM AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "OH550": "OH550 AT OR ABOVE 2400",
+                "OH551": "OH551 2400 RNW 36",
+                "OH850": "OVERFLY OH850 SPEED 180 TURN RIGHT DIRECT",
+                "VAXOX": "OVERFLY VAXOX AT OR ABOVE 2400 HOLD AT VAXOX LEFT TURN INBOUNDCOURSE 352 ALT 2400 SPEED 220 LEGTIME 1 FAF OH551 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ADKAT",
+                    "fixes": {
+                        "ADKAT": "ADKAT AT OR ABOVE 3400"
+                    }
+                },
+                {
+                    "name": "OGELO",
+                    "fixes": {
+                        "OGELO": "OGELO AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "XUMBI",
+                    "fixes": {
+                        "XUMBI": "XUMBI AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        }
+    ]
+}

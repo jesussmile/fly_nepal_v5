@@ -1,0 +1,229 @@
+{
+    "fixes": [
+        {
+            "name": "79VOR",
+            "lat": 0.024125,
+            "lon": 34.83617221666667
+        },
+        {
+            "name": "AVOBA",
+            "lat": 0.07592778333333333,
+            "lon": 34.747430566666665
+        },
+        {
+            "name": "AXURA",
+            "lat": 0.22913056666666665,
+            "lon": 34.461719433333336
+        },
+        {
+            "name": "CD24",
+            "lat": 0.03676388333333334,
+            "lon": 34.93763333333333
+        },
+        {
+            "name": "D117O",
+            "lat": 0.20593333333333333,
+            "lon": 34.945630566666665
+        },
+        {
+            "name": "EXALI",
+            "lat": 0.14255833333333331,
+            "lon": 34.62326388333334
+        },
+        {
+            "name": "FD06",
+            "lat": 0.14978333333333332,
+            "lon": 34.594088883333335
+        },
+        {
+            "name": "FD24",
+            "lat": 0.010402783333333334,
+            "lon": 34.859036116666665
+        },
+        {
+            "name": "IBSUL",
+            "lat": 0.4346194333333333,
+            "lon": 34.892675
+        },
+        {
+            "name": "KIV",
+            "lat": 0.09187778333333334,
+            "lon": 34.72327778333333
+        },
+        {
+            "name": "MD06",
+            "lat": 0.10209443333333333,
+            "lon": 34.70047778333333
+        },
+        {
+            "name": "MD24",
+            "lat": 0.07729721666666665,
+            "lon": 34.74757221666667
+        },
+        {
+            "name": "NEVON",
+            "lat": 0.43278611666666666,
+            "lon": 35.23278056666667
+        },
+        {
+            "name": "NEXES",
+            "lat": 0.09998333333333333,
+            "lon": 34.489947216666664
+        },
+        {
+            "name": "OKBEL",
+            "lat": 0.060788883333333335,
+            "lon": 34.81225833333333
+        },
+        {
+            "name": "TEXAV",
+            "lat": 0.12756388333333332,
+            "lon": 35.0358
+        },
+        {
+            "name": "UTAKO",
+            "lat": 0.18195,
+            "lon": 34.54985833333333
+        },
+        {
+            "name": "UTETU",
+            "lat": 0.08950833333333333,
+            "lon": 34.90818611666667
+        },
+        {
+            "name": "UTOLO",
+            "lat": 0.10223611666666667,
+            "lon": 34.698402783333336
+        },
+        {
+            "name": "XABUL",
+            "lat": 0.2766083333333333,
+            "lon": 34.58520278333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "IBSU1A",
+            "rnw": "06",
+            "fixes": {
+                "IBSUL": "IBSUL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "IBSU1B",
+            "rnw": "24",
+            "fixes": {
+                "IBSUL": "IBSUL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "NEVO1A",
+            "runway": "RNW 06",
+            "fixes": {
+                "NEVON": "NEVON AT OR ABOVE 11000",
+                "XABUL": "XABUL AT OR ABOVE 9000"
+            }
+        },
+        {
+            "name": "NEVO1B",
+            "runway": "RNW 24",
+            "fixes": {
+                "NEVON": "NEVON AT OR ABOVE 11000",
+                "TEXAV": "TEXAV AT OR ABOVE 9000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD06",
+            "fixes": {
+                "FD06": "FD06 6300",
+                "MD06": "MD06 4068 RNW 06 TRK 065 UNTIL 2.5 FROM",
+                "KIV": "KIV TURN RIGHT DIRECT KIV 9000 HOLD AT KIV LEFT TURN INBOUNDCOURSE 245 LEGTIME 1 FAF FD06 MAP MD06"
+            },
+            "transitions": [
+                {
+                    "name": "KIV",
+                    "fixes": {
+                        "KIV": "KIV AT OR ABOVE 9000",
+                        "FD06": "FD06 AT OR ABOVE 6300 TRK 200 UNTIL 4.3 FROM FD06"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD24",
+            "fixes": {
+                "CD24": "CD24 AT OR ABOVE 8000",
+                "FD24": "FD24 7000",
+                "79VOR": "79VOR AT OR ABOVE 6400",
+                "MD24": "MD24 4132 RNW 24 TRK 238 UNTIL 6000 TURN LEFT DIRECT",
+                "D117O": "D117O 9000 HOLD AT D117O LEFT TURN INBOUNDCOURSE 297 ALT 9000 SPEED 200 LEGTIME 1 FAF FD24 MAP MD24"
+            },
+            "transitions": [
+                {
+                    "name": "D117O",
+                    "fixes": {
+                        "D117O": "D117O AT OR ABOVE 9000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "UTAKO": "UTAKO AT OR ABOVE 7000",
+                "EXALI": "EXALI 5800",
+                "UTOLO": "OVERFLY UTOLO 4117 RNW 06 TURN RIGHT DIRECT",
+                "XABUL": "OVERFLY XABUL 9000 HOLD AT XABUL RIGHT TURN INBOUNDCOURSE 340 ALT 9000 SPEED 230 LEGTIME 1 FAF EXALI MAP UTOLO"
+            },
+            "transitions": [
+                {
+                    "name": "AXURA",
+                    "fixes": {
+                        "AXURA": "AXURA AT OR ABOVE 9000"
+                    }
+                },
+                {
+                    "name": "NEXES",
+                    "fixes": {
+                        "NEXES": "NEXES AT OR ABOVE 9000"
+                    }
+                },
+                {
+                    "name": "XABUL",
+                    "fixes": {
+                        "XABUL": "XABUL AT OR ABOVE 9000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "OKBEL": "OKBEL 5400",
+                "AVOBA": "OVERFLY AVOBA 4099 RNW 24 TRK 256 UNTIL 5000 TURN LEFT DIRECT",
+                "TEXAV": "OVERFLY TEXAV 9000 HOLD AT TEXAV LEFT TURN INBOUNDCOURSE 286 ALT 9000 SPEED 230 LEGTIME 1 FAF OKBEL MAP AVOBA"
+            },
+            "transitions": [
+                {
+                    "name": "TEXAV",
+                    "fixes": {
+                        "TEXAV": "TEXAV AT OR ABOVE 9000",
+                        "UTETU": "UTETU AT OR ABOVE 6700"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "fixes": [
+        {
+            "name": "AKLEN",
+            "lat": 9.246422216666666,
+            "lon": 157.90809443333333
+        },
+        {
+            "name": "FF14",
+            "lat": 8.936747216666667,
+            "lon": 158.07853333333333
+        },
+        {
+            "name": "PY405",
+            "lat": 9.098580566666667,
+            "lon": 157.98721388333334
+        },
+        {
+            "name": "PYNB",
+            "lat": 8.994163883333334,
+            "lon": 158.04384166666668
+        },
+        {
+            "name": "RIKSA",
+            "lat": 9.160838883333334,
+            "lon": 157.86422778333332
+        },
+        {
+            "name": "TAMEV",
+            "lat": 9.172502783333334,
+            "lon": 157.94765833333332
+        },
+        {
+            "name": "VIRUS",
+            "lat": 9.234716666666667,
+            "lon": 158.00404443333332
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB14",
+            "fixes": {
+                "FF14": "FF14 1100",
+                "PYNB": "PYNB 332 RNW 14 TRK 138 UNTIL 520 TURN RIGHT DIRECT PYNB AT OR ABOVE 1500 HOLD AT PYNB RIGHT TURN INBOUNDCOURSE 346 ALT 1500 LEGTIME 1 FAF FF14 MAP PY"
+            },
+            "transitions": [
+                {
+                    "name": "PY",
+                    "fixes": {
+                        "PYNB": "PYNB AT OR ABOVE 1500 TRK 336 UNTIL 6.0 FROM PYNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "TAMEV": "TAMEV AT OR ABOVE 2500",
+                "PY405": "PY405 1600 RNW 32 TRK 322 UNTIL 1000 TURN LEFT DIRECT",
+                "VIRUS": "VIRUS AT OR ABOVE 2500 FAF PY405 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "AKLEN",
+                    "fixes": {
+                        "AKLEN": "AKLEN"
+                    }
+                },
+                {
+                    "name": "RIKSA",
+                    "fixes": {
+                        "RIKSA": "RIKSA"
+                    }
+                },
+                {
+                    "name": "VIRUS",
+                    "fixes": {
+                        "VIRUS": "VIRUS"
+                    }
+                }
+            ]
+        }
+    ]
+}

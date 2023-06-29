@@ -1,0 +1,92 @@
+{
+    "fixes": [
+        {
+            "name": "BLARE",
+            "lat": 39.41291666666667,
+            "lon": 75.55280556666666
+        },
+        {
+            "name": "CENAM",
+            "lat": 39.77577221666667,
+            "lon": 75.29687778333333
+        },
+        {
+            "name": "FOMSO",
+            "lat": 39.649802783333335,
+            "lon": 75.61181111666667
+        },
+        {
+            "name": "JIKMA",
+            "lat": 39.695788883333336,
+            "lon": 75.49720278333334
+        },
+        {
+            "name": "MXE",
+            "lat": 39.91805,
+            "lon": 75.67082221666666
+        },
+        {
+            "name": "POVAE",
+            "lat": 39.821080566666666,
+            "lon": 75.18284443333333
+        },
+        {
+            "name": "RUUTH",
+            "lat": 39.85034443333333,
+            "lon": 74.99976943333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "FOMSO": "FOMSO AT OR ABOVE 2600 FOMSO AT OR ABOVE 2600 HOLD AT FOMSO RIGHT TURN INBOUNDCOURSE 074 LEGDIST 4 FAF JIKMA MAP RNW 07",
+                "JIKMA": "JIKMA 1700 RNW 07 TRK 074 UNTIL 540 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BLARE",
+                    "fixes": {
+                        "BLARE": "BLARE"
+                    }
+                },
+                {
+                    "name": "MXE",
+                    "fixes": {
+                        "MXE": "MXE",
+                        "FOMSO": "FOMSO AT OR ABOVE 2600 HOLD AT FOMSO RIGHT TURN INBOUNDCOURSE 074 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "POVAE": "POVAE AT OR ABOVE 2600",
+                "CENAM": "CENAM 1700 RNW 25 TRK 254 UNTIL 440",
+                "FOMSO": "OVERFLY FOMSO AT OR ABOVE 2600 HOLD AT FOMSO RIGHT TURN INBOUNDCOURSE 074 LEGDIST 4 FAF CENAM MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "MXE",
+                    "fixes": {
+                        "MXE": "MXE",
+                        "POVAE": "POVAE AT OR ABOVE 3500 HOLD AT POVAE RIGHT TURN INBOUNDCOURSE 254 ALT 2600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RUUTH",
+                    "fixes": {
+                        "RUUTH": "RUUTH"
+                    }
+                }
+            ]
+        }
+    ]
+}

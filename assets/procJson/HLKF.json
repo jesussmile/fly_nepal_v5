@@ -1,0 +1,85 @@
+{
+    "fixes": [
+        {
+            "name": "10VOR",
+            "lat": 24.137747216666668,
+            "lon": 23.3031
+        },
+        {
+            "name": "30VOR",
+            "lat": 24.105444433333332,
+            "lon": 23.293669433333335
+        },
+        {
+            "name": "50VOR",
+            "lat": 24.234652783333335,
+            "lon": 23.331413883333333
+        },
+        {
+            "name": "FD02",
+            "lat": 24.073141666666668,
+            "lon": 23.284247216666667
+        },
+        {
+            "name": "FD20",
+            "lat": 24.266952783333334,
+            "lon": 23.340861116666666
+        },
+        {
+            "name": "KFR",
+            "lat": 24.1539,
+            "lon": 23.307816666666668
+        },
+        {
+            "name": "MD20",
+            "lat": 24.20235,
+            "lon": 23.321969433333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 02L",
+        "RNW 20",
+        "RNW 20R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD02",
+            "fixes": {
+                "FD02": "FD02 3000",
+                "30VOR": "30VOR AT OR ABOVE 2500",
+                "10VOR": "10VOR AT OR ABOVE 2000",
+                "KFR": "KFR 1577 RNW 02 TRK 012 UNTIL 3000 TURN LEFT DIRECT KFR 3000 HOLD AT KFR RIGHT TURN INBOUNDCOURSE 192 LEGTIME 1 FAF FD02 MAP KFR"
+            },
+            "transitions": [
+                {
+                    "name": "KFR",
+                    "fixes": {
+                        "KFR": "KFR AT OR ABOVE 3000 SPEED 210",
+                        "FD02": "FD02 AT OR ABOVE 3000 TRK 237 UNTIL 4.3 FROM FD02"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD20",
+            "fixes": {
+                "FD20": "FD20 3000",
+                "50VOR": "50VOR AT OR ABOVE 2500",
+                "MD20": "MD20 1627 RNW 20",
+                "KFR": "KFR AT OR ABOVE 1770 TRK 192 UNTIL 3000 TURN RIGHT DIRECT KFR 3000 HOLD AT KFR LEFT TURN INBOUNDCOURSE 012 LEGTIME 1 FAF FD20 MAP MD20"
+            },
+            "transitions": [
+                {
+                    "name": "KFR",
+                    "fixes": {
+                        "KFR": "KFR AT OR ABOVE 3000 SPEED 210",
+                        "FD20": "FD20 AT OR ABOVE 3000 TRK 327 UNTIL 4.3 FROM FD20"
+                    }
+                }
+            ]
+        }
+    ]
+}

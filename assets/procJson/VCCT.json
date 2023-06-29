@@ -1,0 +1,80 @@
+{
+    "fixes": [
+        {
+            "name": "CHBNB",
+            "lat": 8.533333333333333,
+            "lon": 81.18333333333334
+        },
+        {
+            "name": "CN24",
+            "lat": 8.601747216666666,
+            "lon": 81.27456943333334
+        },
+        {
+            "name": "D246C",
+            "lat": 8.508077783333333,
+            "lon": 81.131325
+        },
+        {
+            "name": "FN06",
+            "lat": 8.492655566666667,
+            "lon": 81.09957778333333
+        },
+        {
+            "name": "FN24",
+            "lat": 8.575552783333332,
+            "lon": 81.23963056666666
+        },
+        {
+            "name": "MN06",
+            "lat": 8.503669433333334,
+            "lon": 81.12225278333334
+        },
+        {
+            "name": "MN24",
+            "lat": 8.559430566666666,
+            "lon": 81.21813056666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FN06": "FN06 1200",
+                "MN06": "MN06 1176 RNW 06 TRK 066 UNTIL 1500 FAF FN06 MAP MN06"
+            },
+            "transitions": [
+                {
+                    "name": "CHB",
+                    "fixes": {
+                        "CHBNB": "CHBNB RIGHT TURN INBOUNDCOURSE 246 ALT 2000 LEGTIME 1",
+                        "D246C": "D246C AT OR ABOVE 1200 TRK 201 UNTIL 4.4 FROM D246C"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB24",
+            "fixes": {
+                "CN24": "CN24 AT OR ABOVE 1000",
+                "FN24": "FN24 1000",
+                "MN24": "MN24 674 RNW 24 HDG 179 VECTORS FAF FN24 MAP MN24"
+            },
+            "transitions": [
+                {
+                    "name": "CHB",
+                    "fixes": {
+                        "CHBNB": "CHBNB AT OR ABOVE 2500",
+                        "CN24": "CN24 AT OR ABOVE 1000 TRK 010 UNTIL 4.4 FROM CN24"
+                    }
+                }
+            ]
+        }
+    ]
+}

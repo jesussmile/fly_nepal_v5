@@ -1,0 +1,161 @@
+{
+    "fixes": [
+        {
+            "name": "BP2NA",
+            "lat": 28.885805566666665,
+            "lon": 134.81294443333334
+        },
+        {
+            "name": "BP2NC",
+            "lat": 28.904305566666668,
+            "lon": 134.8975
+        },
+        {
+            "name": "BP2ND",
+            "lat": 28.980555566666666,
+            "lon": 134.90669443333334
+        },
+        {
+            "name": "BP2NF",
+            "lat": 28.992055566666668,
+            "lon": 134.78283333333334
+        },
+        {
+            "name": "BP2NH",
+            "lat": 28.930777783333333,
+            "lon": 134.65111111666667
+        },
+        {
+            "name": "BP2NI",
+            "lat": 28.948194433333335,
+            "lon": 134.84019443333332
+        },
+        {
+            "name": "BP2SE",
+            "lat": 29.176833333333335,
+            "lon": 134.64961111666668
+        },
+        {
+            "name": "BP2SF",
+            "lat": 29.077194433333332,
+            "lon": 134.67127778333332
+        },
+        {
+            "name": "BP2SG",
+            "lat": 29.158166666666666,
+            "lon": 134.56486111666666
+        },
+        {
+            "name": "BP2SH",
+            "lat": 29.011472216666668,
+            "lon": 134.75741666666667
+        },
+        {
+            "name": "BP2SI",
+            "lat": 29.114416666666667,
+            "lon": 134.62241666666668
+        },
+        {
+            "name": "BP2SJ",
+            "lat": 29.063888883333334,
+            "lon": 134.57258333333334
+        },
+        {
+            "name": "CBPNB",
+            "lat": 29.031805566666666,
+            "lon": 134.72376666666668
+        },
+        {
+            "name": "FF22",
+            "lat": 28.993238883333333,
+            "lon": 134.78638888333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 14",
+        "RNW 22",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FF22": "FF22 2100",
+                "CBPNB": "CBPNB 822 RNW 22 TRK 320 UNTIL 2200 FAF FF22 MAP CBP"
+            },
+            "transitions": [
+                {
+                    "name": "CBP1",
+                    "fixes": {
+                        "CBPNB": "CBPNB AT OR ABOVE 2200 SPEED 210 TRK 082 UNTIL 5.3 FROM CBPNB"
+                    }
+                },
+                {
+                    "name": "CBP2",
+                    "fixes": {
+                        "CBPNB": "CBPNB AT OR ABOVE 2200 SPEED 210 TRK 068 UNTIL 6.0 FROM CBPNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "BP2SI": "BP2SI AT OR ABOVE 2200",
+                "BP2SF": "BP2SF 1740 RNW 04",
+                "BP2SH": "BP2SH TRK 044 UNTIL 2200 FAF BP2SF MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "BP2SE",
+                    "fixes": {
+                        "BP2SE": "BP2SE AT OR ABOVE 2200 SPEED 180"
+                    }
+                },
+                {
+                    "name": "BP2SG",
+                    "fixes": {
+                        "BP2SG": "BP2SG AT OR ABOVE 2200 SPEED 180"
+                    }
+                },
+                {
+                    "name": "BP2SJ",
+                    "fixes": {
+                        "BP2SJ": "BP2SJ AT OR ABOVE 2200 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "BP2NI": "BP2NI AT OR ABOVE 2200",
+                "BP2NF": "BP2NF 2070 RNW 22 TRK 223 UNTIL 1100 TURN RIGHT DIRECT",
+                "BP2NH": "BP2NH HDG 028 VECTORS FAF BP2NF MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "BP2NA",
+                    "fixes": {
+                        "BP2NA": "BP2NA AT OR ABOVE 2200 SPEED 210"
+                    }
+                },
+                {
+                    "name": "BP2NC",
+                    "fixes": {
+                        "BP2NC": "BP2NC AT OR ABOVE 2200 SPEED 210"
+                    }
+                },
+                {
+                    "name": "BP2ND",
+                    "fixes": {
+                        "BP2ND": "BP2ND AT OR ABOVE 2200 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

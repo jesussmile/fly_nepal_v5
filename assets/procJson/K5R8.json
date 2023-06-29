@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "CIXET",
+            "lat": 30.403913883333335,
+            "lon": 93.45567221666667
+        },
+        {
+            "name": "DEQHU",
+            "lat": 30.52375,
+            "lon": 93.51353333333333
+        },
+        {
+            "name": "FEPRO",
+            "lat": 30.616933333333332,
+            "lon": 93.55861666666667
+        },
+        {
+            "name": "HATGU",
+            "lat": 30.265172216666667,
+            "lon": 93.38887778333333
+        },
+        {
+            "name": "LCH",
+            "lat": 30.14151388333333,
+            "lon": 93.10556943333333
+        },
+        {
+            "name": "QUNKE",
+            "lat": 30.358780566666667,
+            "lon": 93.43393056666666
+        },
+        {
+            "name": "STRUT",
+            "lat": 30.155491666666666,
+            "lon": 93.49731666666666
+        },
+        {
+            "name": "ZEVSA",
+            "lat": 30.4804,
+            "lon": 93.49258888333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "FEPRO": "FEPRO AT OR ABOVE 1700",
+                "DEQHU": "DEQHU 1700",
+                "ZEVSA": "ZEVSA AT OR ABOVE 800 RNW 16 TRK 155 UNTIL 365",
+                "QUNKE": "QUNKE",
+                "STRUT": "OVERFLY STRUT AT OR ABOVE 2000 HOLD AT STRUT LEFT TURN INBOUNDCOURSE 085 LEGDIST 5 FAF DEQHU MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "LCH",
+                    "fixes": {
+                        "LCH": "LCH",
+                        "FEPRO": "OVERFLY FEPRO AT OR ABOVE 1700 HOLD AT FEPRO RIGHT TURN INBOUNDCOURSE 155 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "STRUT",
+                    "fixes": {
+                        "STRUT": "STRUT",
+                        "FEPRO": "OVERFLY FEPRO AT OR ABOVE 1700 HOLD AT FEPRO RIGHT TURN INBOUNDCOURSE 155 ALT 1700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "HATGU": "HATGU AT OR ABOVE 1700",
+                "QUNKE": "QUNKE 1700",
+                "CIXET": "CIXET AT OR ABOVE 760 RNW 34 TRK 335 UNTIL 333",
+                "FEPRO": "OVERFLY FEPRO AT OR ABOVE 1700 HOLD AT FEPRO RIGHT TURN INBOUNDCOURSE 155 LEGDIST 4 FAF QUNKE MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "LCH",
+                    "fixes": {
+                        "LCH": "LCH"
+                    }
+                },
+                {
+                    "name": "STRUT",
+                    "fixes": {
+                        "STRUT": "STRUT"
+                    }
+                }
+            ]
+        }
+    ]
+}

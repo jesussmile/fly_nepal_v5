@@ -1,0 +1,153 @@
+{
+    "fixes": [
+        {
+            "name": "AGN",
+            "lat": 43.888027783333335,
+            "lon": 0.8728611166666667
+        },
+        {
+            "name": "BA306",
+            "lat": 44.17522221666667,
+            "lon": 0.86375
+        },
+        {
+            "name": "BA308",
+            "lat": 44.03647221666667,
+            "lon": 0.7846388833333333
+        },
+        {
+            "name": "BA310",
+            "lat": 44.20186111666667,
+            "lon": 0.4978888833333333
+        },
+        {
+            "name": "BA312",
+            "lat": 44.22655556666667,
+            "lon": 0.6449166666666667
+        },
+        {
+            "name": "BA501",
+            "lat": 44.08958333333333,
+            "lon": 0.6144722166666666
+        },
+        {
+            "name": "BA505",
+            "lat": 44.30055556666667,
+            "lon": 0.6138888833333334
+        },
+        {
+            "name": "BA507",
+            "lat": 44.347222216666665,
+            "lon": 0.8186111166666666
+        },
+        {
+            "name": "FBA29",
+            "lat": 44.131194433333334,
+            "lon": 0.7385277833333334
+        },
+        {
+            "name": "IBA29",
+            "lat": 44.10586111666667,
+            "lon": 0.8241388833333333
+        },
+        {
+            "name": "LACOU",
+            "lat": 44.29677778333333,
+            "lon": 0.9043888833333333
+        },
+        {
+            "name": "PERIG",
+            "lat": 45.11722221666667,
+            "lon": 0.9694444333333333
+        },
+        {
+            "name": "RARAK",
+            "lat": 44.02888888333333,
+            "lon": 0.6925
+        },
+        {
+            "name": "RUMEL",
+            "lat": 44.5,
+            "lon": 0.9205
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "AGN3W",
+            "rnw": "29",
+            "fixes": {
+                "BA501": "BA501",
+                "RARAK": "RARAK",
+                "AGN": "AGN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PERI3W",
+            "rnw": "29",
+            "fixes": {
+                "BA505": "BA505",
+                "BA507": "BA507",
+                "RUMEL": "RUMEL",
+                "PERIG": "PERIG"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "AGN1V",
+            "runway": "RNW 29",
+            "fixes": {
+                "AGN": "AGN",
+                "IBA29": "IBA29 AT OR ABOVE 2500 SPEED 200"
+            }
+        },
+        {
+            "name": "LACO1V",
+            "runway": "RNW 29",
+            "fixes": {
+                "LACOU": "LACOU",
+                "BA306": "BA306 AT OR ABOVE 2500 SPEED 200"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "IBA29": "IBA29 AT OR ABOVE 2500 SPEED 200",
+                "FBA29": "FBA29 2500 RNW 29",
+                "BA310": "OVERFLY BA310 SPEED 200 TURN RIGHT DIRECT",
+                "BA312": "BA312",
+                "BA306": "BA306 AT OR ABOVE 3500 SPEED 200 FAF FBA29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "BA306",
+                    "fixes": {
+                        "BA306": "BA306 AT OR ABOVE 2500 SPEED 200"
+                    }
+                },
+                {
+                    "name": "BA308",
+                    "fixes": {
+                        "BA308": "BA308 AT OR ABOVE 2500 SPEED 200"
+                    }
+                },
+                {
+                    "name": "IBA29",
+                    "fixes": {
+                        "IBA29": "IBA29 LEFT TURN INBOUNDCOURSE 292 ALT 2500 SPEED 200 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

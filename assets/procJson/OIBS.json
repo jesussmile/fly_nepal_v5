@@ -1,0 +1,194 @@
+{
+    "fixes": [
+        {
+            "name": "CD12",
+            "lat": 26.011577783333333,
+            "lon": 54.38446943333334
+        },
+        {
+            "name": "D318L",
+            "lat": 26.068180566666665,
+            "lon": 54.39231388333334
+        },
+        {
+            "name": "EN30",
+            "lat": 25.899663883333332,
+            "lon": 54.54761943333333
+        },
+        {
+            "name": "FD12",
+            "lat": 25.9631,
+            "lon": 54.45980556666667
+        },
+        {
+            "name": "FD30",
+            "lat": 25.852802783333335,
+            "lon": 54.62243611666667
+        },
+        {
+            "name": "FN30",
+            "lat": 25.866891666666668,
+            "lon": 54.623508333333334
+        },
+        {
+            "name": "KIS",
+            "lat": 26.525166666666667,
+            "lon": 53.96241666666667
+        },
+        {
+            "name": "MD12",
+            "lat": 25.928172216666667,
+            "lon": 54.514011116666666
+        },
+        {
+            "name": "MD30",
+            "lat": 25.89605278333333,
+            "lon": 54.56129721666667
+        },
+        {
+            "name": "RW12",
+            "lat": 25.916205566666665,
+            "lon": 54.52934166666667
+        },
+        {
+            "name": "RW30",
+            "lat": 25.902930566666665,
+            "lon": 54.54934443333333
+        },
+        {
+            "name": "SIR",
+            "lat": 25.914583333333333,
+            "lon": 54.53508333333333
+        },
+        {
+            "name": "SIRNB",
+            "lat": 25.90275,
+            "lon": 54.540472216666664
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "KIS1A",
+            "rnw": "30",
+            "fixes": {
+                "KIS": "KIS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KIS1B",
+            "rnw": "12",
+            "fixes": {
+                "KIS": "KIS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KIS1C",
+            "rnw": "30",
+            "fixes": {
+                "KIS": "KIS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KIS1D",
+            "rnw": "12",
+            "fixes": {
+                "KIS": "KIS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "KIS1R",
+            "runway": "RNW 12 RNW 30",
+            "fixes": {
+                "KIS": "KIS",
+                "SIR": "SIR"
+            }
+        },
+        {
+            "name": "KIS1S",
+            "runway": "RNW 12 RNW 30",
+            "fixes": {
+                "KIS": "KIS",
+                "D318L": "D318L"
+            }
+        },
+        {
+            "name": "KIS1T",
+            "runway": "RNW 12 RNW 30",
+            "fixes": {
+                "KIS": "KIS",
+                "SIRNB": "SIRNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD12",
+            "fixes": {
+                "CD12": "CD12 AT OR ABOVE 1600",
+                "FD12": "FD12 1600",
+                "MD12": "MD12 434 RNW 12 TRK 124 UNTIL 434 TURN LEFT HDG 288 INTERCEPT RADIAL 318 TO",
+                "D318L": "D318L D318L 3000 HOLD AT D318L LEFT TURN INBOUNDCOURSE 138 LEGTIME 1 FAF FD12 MAP MD12"
+            },
+            "transitions": [
+                {
+                    "name": "D318L",
+                    "fixes": {
+                        "D318L": "D318L AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD30",
+            "fixes": {
+                "FD30": "FD30 1500",
+                "MD30": "MD30 295 RNW 30 TRK 306 UNTIL 430 TRK 280 UNTIL 2100 TURN RIGHT DIRECT",
+                "SIR": "SIR 3000 HOLD AT SIR LEFT TURN INBOUNDCOURSE 108 ALT 3000 SPEED 230 LEGTIME 1 FAF FD30 MAP MD30"
+            },
+            "transitions": [
+                {
+                    "name": "SIR1",
+                    "fixes": {
+                        "SIR": "SIR AT OR ABOVE 3000 SPEED 220 TRK 103 UNTIL 6.0 FROM SIR"
+                    }
+                },
+                {
+                    "name": "SIR2",
+                    "fixes": {
+                        "SIR": "SIR AT OR ABOVE 3000 TRK 111 UNTIL 6.0 FROM SIR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 1500",
+                "EN30": "OVERFLY EN30 51",
+                "SIRNB": "SIRNB AT OR ABOVE 430 RNW 30 TRK 294 UNTIL 1500 TURN LEFT DIRECT SIRNB 3000 HOLD AT SIRNB LEFT TURN INBOUNDCOURSE 093 LEGTIME 1 FAF FN30 MAP SIR"
+            },
+            "transitions": [
+                {
+                    "name": "SIR",
+                    "fixes": {
+                        "SIRNB": "SIRNB AT OR ABOVE 3000 TRK 093 UNTIL 7.0 FROM SIRNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "ELUTY",
+            "lat": 43.482402783333335,
+            "lon": 92.33834443333333
+        },
+        {
+            "name": "FOGFI",
+            "lat": 43.443927783333336,
+            "lon": 92.18538888333333
+        },
+        {
+            "name": "FOYDE",
+            "lat": 43.184255566666664,
+            "lon": 92.49928333333334
+        },
+        {
+            "name": "GAWTU",
+            "lat": 43.55529443333333,
+            "lon": 92.13234166666666
+        },
+        {
+            "name": "HOBIT",
+            "lat": 43.51889443333334,
+            "lon": 92.23540556666667
+        },
+        {
+            "name": "IVOSE",
+            "lat": 43.24782221666667,
+            "lon": 91.92858611666666
+        },
+        {
+            "name": "JEJAW",
+            "lat": 43.28664166666667,
+            "lon": 92.08089443333333
+        },
+        {
+            "name": "KANTE",
+            "lat": 43.21160556666667,
+            "lon": 92.03125
+        },
+        {
+            "name": "LEFTY",
+            "lat": 43.64870556666666,
+            "lon": 91.88874166666666
+        },
+        {
+            "name": "MIZAB",
+            "lat": 43.175297216666664,
+            "lon": 92.13379443333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS15",
+            "fixes": {
+                "HOBIT": "HOBIT AT OR ABOVE 3000 HOBIT AT OR ABOVE 3000 HOLD AT HOBIT LEFT TURN INBOUNDCOURSE 152 LEGTIME 1 FAF FOGFI MAP RNW 15",
+                "FOGFI": "FOGFI 2900 RNW 15 TRK 152 UNTIL 2400 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FOYDE",
+                    "fixes": {
+                        "FOYDE": "FOYDE",
+                        "ELUTY": "ELUTY AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "LEFTY",
+                    "fixes": {
+                        "LEFTY": "LEFTY",
+                        "GAWTU": "GAWTU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS33",
+            "fixes": {
+                "KANTE": "KANTE AT OR ABOVE 3000 KANTE AT OR ABOVE 3000 HOLD AT KANTE RIGHT TURN INBOUNDCOURSE 332 LEGTIME 1 FAF JEJAW MAP RNW 33",
+                "JEJAW": "JEJAW 2900 RNW 33 TRK 332 UNTIL 2400 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FOYDE",
+                    "fixes": {
+                        "FOYDE": "FOYDE",
+                        "MIZAB": "MIZAB AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "IVOSE",
+                    "fixes": {
+                        "IVOSE": "IVOSE"
+                    }
+                }
+            ]
+        }
+    ]
+}

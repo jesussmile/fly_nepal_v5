@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "JUPAR",
+            "lat": 36.403019433333334,
+            "lon": 101.18476943333333
+        },
+        {
+            "name": "LAYIL",
+            "lat": 36.157863883333334,
+            "lon": 101.48704721666667
+        },
+        {
+            "name": "WELNI",
+            "lat": 36.31037778333334,
+            "lon": 101.37661943333333
+        },
+        {
+            "name": "WEMEB",
+            "lat": 36.06425278333333,
+            "lon": 101.55456943333333
+        },
+        {
+            "name": "YOVSU",
+            "lat": 36.403905566666666,
+            "lon": 101.30864166666667
+        },
+        {
+            "name": "ZANOG",
+            "lat": 36.491019433333335,
+            "lon": 101.36976666666666
+        },
+        {
+            "name": "ZETIB",
+            "lat": 35.9287,
+            "lon": 101.87255
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "WEMEB": "WEMEB AT OR ABOVE 6000",
+                "LAYIL": "LAYIL 4800 RNW 02 TRK 025 UNTIL 3605",
+                "YOVSU": "OVERFLY YOVSU AT OR ABOVE 6000 HOLD AT YOVSU RIGHT TURN INBOUNDCOURSE 205 LEGDIST 5 FAF LAYIL MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "WEMEB",
+                    "fixes": {
+                        "WEMEB": "WEMEB RIGHT TURN INBOUNDCOURSE 025 ALT 6000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "ZETIB",
+                    "fixes": {
+                        "ZETIB": "ZETIB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "YOVSU": "YOVSU AT OR ABOVE 6000",
+                "WELNI": "WELNI 4800 RNW 20 TRK 205 UNTIL 3605",
+                "WEMEB": "OVERFLY WEMEB AT OR ABOVE 6000 HOLD AT WEMEB RIGHT TURN INBOUNDCOURSE 025 LEGDIST 5 FAF WELNI MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "JUPAR",
+                    "fixes": {
+                        "JUPAR": "JUPAR"
+                    }
+                },
+                {
+                    "name": "YOVSU",
+                    "fixes": {
+                        "YOVSU": "YOVSU RIGHT TURN INBOUNDCOURSE 205 ALT 6000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "ZANOG",
+                    "fixes": {
+                        "ZANOG": "ZANOG"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+{
+    "fixes": [
+        {
+            "name": "EROVE",
+            "lat": 35.080430566666664,
+            "lon": 86.55315278333333
+        },
+        {
+            "name": "FALOL",
+            "lat": 34.959372216666665,
+            "lon": 86.55554166666667
+        },
+        {
+            "name": "HUTUN",
+            "lat": 34.83046111666667,
+            "lon": 86.59368888333333
+        },
+        {
+            "name": "JEKBA",
+            "lat": 35.11897221666667,
+            "lon": 86.55238056666667
+        },
+        {
+            "name": "KUCPE",
+            "lat": 34.55871388333333,
+            "lon": 86.56341943333334
+        },
+        {
+            "name": "LACPI",
+            "lat": 34.89999443333333,
+            "lon": 86.55671388333333
+        },
+        {
+            "name": "MISUE",
+            "lat": 34.855302783333336,
+            "lon": 86.56363056666666
+        },
+        {
+            "name": "OMUME",
+            "lat": 34.80035,
+            "lon": 86.55867778333334
+        },
+        {
+            "name": "PI001",
+            "lat": 34.773495366666666,
+            "lon": 86.69872341666667
+        },
+        {
+            "name": "PI002",
+            "lat": 34.79915126666667,
+            "lon": 86.7802018
+        },
+        {
+            "name": "PI003",
+            "lat": 34.72930905,
+            "lon": 86.81910866666666
+        },
+        {
+            "name": "PRONE",
+            "lat": 34.834130566666666,
+            "lon": 86.31512221666667
+        },
+        {
+            "name": "RQZ",
+            "lat": 34.797238883333335,
+            "lon": 86.63384721666667
+        },
+        {
+            "name": "ZUPIM",
+            "lat": 34.72506666666666,
+            "lon": 86.56015556666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "EROVE": "EROVE AT OR ABOVE 3400",
+                "FALOL": "FALOL 2500 RNW 18 TRK 185 UNTIL 1200 HDG 120 INTERCEPT RADIAL 080 TO",
+                "PRONE": "PRONE PRONE AT OR ABOVE 4000 HOLD AT PRONE RIGHT TURN INBOUNDCOURSE 260 ALT 4000 LEGTIME 1 FAF FALOL MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "JEKBA",
+                    "fixes": {
+                        "JEKBA": "JEKBA"
+                    }
+                },
+                {
+                    "name": "RQZ",
+                    "fixes": {
+                        "RQZ": "RQZ",
+                        "EROVE": "EROVE AT OR ABOVE 3400 HOLD AT EROVE RIGHT TURN INBOUNDCOURSE 185 ALT 3400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "EROVE": "EROVE AT OR ABOVE 3400 OVERFLY EROVE AT OR ABOVE 3400 HOLD AT EROVE RIGHT TURN INBOUNDCOURSE 185 LEGDIST 4 FAF FALOL MAP RNW 18",
+                "FALOL": "FALOL 2500",
+                "LACPI": "LACPI AT OR ABOVE 1360 RNW 18 TRK 185 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EROVE",
+                    "fixes": {
+                        "EROVE": "EROVE RIGHT TURN INBOUNDCOURSE 185 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "KUCPE": "KUCPE AT OR ABOVE 3900",
+                "ZUPIM": "ZUPIM 3200",
+                "OMUME": "OMUME AT OR ABOVE 1760 RNW 36 TRK 005 UNTIL 964",
+                "EROVE": "OVERFLY EROVE AT OR ABOVE 3400 HOLD AT EROVE RIGHT TURN INBOUNDCOURSE 185 LEGDIST 4 FAF ZUPIM MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "KUCPE",
+                    "fixes": {
+                        "KUCPE": "KUCPE RIGHT TURN INBOUNDCOURSE 005 ALT 3900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB18",
+            "fixes": {
+                "RQZ": "RQZ 2900 RQZ AT OR ABOVE 3000 HOLD AT RQZ RIGHT TURN INBOUNDCOURSE 223 LEGTIME 1 FAF RQZ MAP MISUE",
+                "HUTUN": "HUTUN AT OR ABOVE 2020",
+                "MISUE": "OVERFLY MISUE 2000 RNW 18 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "RQZ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB36",
+            "fixes": {
+                "RQZ": "RQZ 2900 RQZ AT OR ABOVE 3000 HOLD AT RQZ RIGHT TURN INBOUNDCOURSE 223 LEGTIME 1 FAF RQZ MAP MISUE",
+                "HUTUN": "HUTUN AT OR ABOVE 2020",
+                "MISUE": "OVERFLY MISUE 2000 RNW 36 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "RQZ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

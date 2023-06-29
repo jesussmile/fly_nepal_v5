@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "CAGTA",
+            "lat": 48.445802783333335,
+            "lon": 103.00281388333333
+        },
+        {
+            "name": "CAKDU",
+            "lat": 48.51980278333333,
+            "lon": 103.12166666666667
+        },
+        {
+            "name": "CALUL",
+            "lat": 48.41066111666667,
+            "lon": 102.94655833333333
+        },
+        {
+            "name": "CETBO",
+            "lat": 48.344025,
+            "lon": 102.84022221666666
+        },
+        {
+            "name": "ERUVE",
+            "lat": 48.2635,
+            "lon": 102.51929443333333
+        },
+        {
+            "name": "FONIA",
+            "lat": 48.25974166666666,
+            "lon": 103.17709443333334
+        },
+        {
+            "name": "GAZUH",
+            "lat": 48.32144721666667,
+            "lon": 102.80429166666667
+        },
+        {
+            "name": "RENLY",
+            "lat": 48.252575,
+            "lon": 102.69498888333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 12",
+        "RNW 21",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "CAKDU": "CAKDU AT OR ABOVE 4100",
+                "CAGTA": "CAGTA 4000",
+                "CALUL": "CALUL AT OR ABOVE 3000 RNW 12 TRK 125 UNTIL 2720",
+                "ERUVE": "OVERFLY ERUVE AT OR ABOVE 5000 HOLD AT ERUVE RIGHT TURN INBOUNDCOURSE 261 LEGDIST 5 FAF CAGTA MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "ERUVE",
+                    "fixes": {
+                        "ERUVE": "ERUVE",
+                        "CAKDU": "OVERFLY CAKDU AT OR ABOVE 4200 HOLD AT CAKDU RIGHT TURN INBOUNDCOURSE 125 ALT 4100 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "FONIA",
+                    "fixes": {
+                        "FONIA": "FONIA",
+                        "CAKDU": "OVERFLY CAKDU AT OR ABOVE 4100 HOLD AT CAKDU RIGHT TURN INBOUNDCOURSE 125 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "RENLY": "RENLY AT OR ABOVE 4500 OVERFLY RENLY AT OR ABOVE 4500 HOLD AT RENLY RIGHT TURN INBOUNDCOURSE 305 LEGDIST 6 FAF GAZUH MAP RNW 30",
+                "GAZUH": "GAZUH 3800",
+                "CETBO": "CETBO AT OR ABOVE 3160 RNW 30 TRK 305 UNTIL 3200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ERUVE",
+                    "fixes": {
+                        "ERUVE": "ERUVE"
+                    }
+                },
+                {
+                    "name": "FONIA",
+                    "fixes": {
+                        "FONIA": "FONIA",
+                        "RENLY": "OVERFLY RENLY AT OR ABOVE 4500 HOLD AT RENLY RIGHT TURN INBOUNDCOURSE 305 ALT 4500 LEGDIST 6"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "FF12",
+            "lat": 15.793086116666666,
+            "lon": 88.68078611666667
+        },
+        {
+            "name": "IOS",
+            "lat": 15.736763883333333,
+            "lon": 88.58874166666666
+        },
+        {
+            "name": "MA12",
+            "lat": 15.7466,
+            "lon": 88.60480833333334
+        },
+        {
+            "name": "PB361",
+            "lat": 15.800369433333334,
+            "lon": 88.67699721666666
+        },
+        {
+            "name": "PB362",
+            "lat": 15.860777783333333,
+            "lon": 88.75810278333333
+        },
+        {
+            "name": "PB363",
+            "lat": 15.940366666666666,
+            "lon": 88.69483056666667
+        },
+        {
+            "name": "PB364",
+            "lat": 15.781708333333333,
+            "lon": 88.84739443333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDY12",
+            "fixes": {
+                "FF12": "FF12 2000",
+                "MA12": "MA12 326 RNW 12",
+                "IOS": "IOS TRK 122 UNTIL 2000 TURN LEFT DIRECT IOS 4000 SPEED 210 HOLD AT IOS RIGHT TURN INBOUNDCOURSE 316 ALT 4000 SPEED 210 LEGTIME 1 FAF FF12 MAP MA12"
+            },
+            "transitions": [
+                {
+                    "name": "IOS",
+                    "fixes": {
+                        "IOS": "IOS AT OR ABOVE 4000 SPEED 210 TRK 316 UNTIL 7.0 FROM IOS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ12",
+            "fixes": {
+                "FF12": "FF12 2000",
+                "MA12": "MA12 326 RNW 12",
+                "IOS": "IOS TRK 122 UNTIL 2000 TURN LEFT DIRECT IOS 4000 SPEED 210 HOLD AT IOS RIGHT TURN INBOUNDCOURSE 316 ALT 4000 SPEED 210 LEGTIME 1 FAF FF12 MAP MA12"
+            },
+            "transitions": [
+                {
+                    "name": "IOS",
+                    "fixes": {
+                        "IOS": "IOS AT OR ABOVE 4000 SPEED 210 TRK 327 UNTIL 8.0 FROM IOS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "PB362": "PB362 AT OR ABOVE 3000 SPEED 210",
+                "PB361": "PB361 2000 SPEED 160 RNW 12 TRK 128 UNTIL 1000 TURN LEFT DIRECT",
+                "PB363": "PB363 AT OR ABOVE 4000 SPEED 210 HOLD AT PB363 RIGHT TURN INBOUNDCOURSE 218 ALT 4000 SPEED 210 LEGTIME 1 FAF PB361 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "PB363",
+                    "fixes": {
+                        "PB363": "PB363 AT OR ABOVE 4000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "PB364",
+                    "fixes": {
+                        "PB364": "PB364 AT OR ABOVE 4000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

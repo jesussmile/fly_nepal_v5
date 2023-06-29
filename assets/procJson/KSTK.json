@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "AKO",
+            "lat": 40.15555556666666,
+            "lon": 103.17971388333333
+        },
+        {
+            "name": "ANUCE",
+            "lat": 40.41381388333333,
+            "lon": 103.18252221666667
+        },
+        {
+            "name": "DENCO",
+            "lat": 40.52161388333333,
+            "lon": 103.2263
+        },
+        {
+            "name": "HINGA",
+            "lat": 40.76732221666666,
+            "lon": 103.05249721666667
+        },
+        {
+            "name": "JORAL",
+            "lat": 40.66318888333333,
+            "lon": 103.28395833333333
+        },
+        {
+            "name": "JUDNI",
+            "lat": 40.7077,
+            "lon": 103.30214443333334
+        },
+        {
+            "name": "KUBRE",
+            "lat": 40.87741388333333,
+            "lon": 103.18368056666667
+        },
+        {
+            "name": "SNY",
+            "lat": 41.09668333333333,
+            "lon": 102.98299166666666
+        },
+        {
+            "name": "TUMBL",
+            "lat": 40.430922216666666,
+            "lon": 103.58740556666666
+        },
+        {
+            "name": "WOSIK",
+            "lat": 40.57629166666667,
+            "lon": 103.24854443333334
+        },
+        {
+            "name": "ZETAX",
+            "lat": 40.827136116666665,
+            "lon": 103.351
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 15",
+        "RNW 22",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "ZETAX": "ZETAX AT OR ABOVE 7500",
+                "JUDNI": "JUDNI 5800",
+                "JORAL": "JORAL AT OR ABOVE 4900 RNW 15 TRK 155 UNTIL 4288",
+                "ANUCE": "OVERFLY ANUCE AT OR ABOVE 6400 HOLD AT ANUCE RIGHT TURN INBOUNDCOURSE 335 LEGDIST 7 FAF JUDNI MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "SNY",
+                    "fixes": {
+                        "SNY": "SNY",
+                        "KUBRE": "KUBRE AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "name": "TUMBL",
+                    "fixes": {
+                        "TUMBL": "TUMBL",
+                        "ZETAX": "OVERFLY ZETAX AT OR ABOVE 7500 HOLD AT ZETAX RIGHT TURN INBOUNDCOURSE 155 ALT 7500 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ANUCE": "ANUCE AT OR ABOVE 6400",
+                "DENCO": "DENCO 5800",
+                "WOSIK": "WOSIK AT OR ABOVE 4700 RNW 33 TRK 335 UNTIL 4278",
+                "ZETAX": "OVERFLY ZETAX AT OR ABOVE 7500 HOLD AT ZETAX RIGHT TURN INBOUNDCOURSE 155 ALT 7500 LEGDIST 7 FAF DENCO MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "AKO",
+                    "fixes": {
+                        "AKO": "AKO"
+                    }
+                },
+                {
+                    "name": "HINGA",
+                    "fixes": {
+                        "HINGA": "HINGA",
+                        "ANUCE": "OVERFLY ANUCE AT OR ABOVE 6400 HOLD AT ANUCE RIGHT TURN INBOUNDCOURSE 335 ALT 6400 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "fixes": [
+        {
+            "name": "AXNB",
+            "lat": 47.92016666666667,
+            "lon": 3.502138883333333
+        },
+        {
+            "name": "CN18",
+            "lat": 47.97010556666667,
+            "lon": 3.5047333333333333
+        },
+        {
+            "name": "FLA18",
+            "lat": 47.98488888333333,
+            "lon": 3.516361116666667
+        },
+        {
+            "name": "FLA36",
+            "lat": 47.738694433333336,
+            "lon": 3.4812777833333333
+        },
+        {
+            "name": "ILA36",
+            "lat": 47.686444433333335,
+            "lon": 3.473861116666667
+        },
+        {
+            "name": "INSEB",
+            "lat": 48.051194433333336,
+            "lon": 3.5258888833333333
+        },
+        {
+            "name": "LA430",
+            "lat": 47.76655556666667,
+            "lon": 3.4852222166666667
+        },
+        {
+            "name": "LA450",
+            "lat": 47.93066666666667,
+            "lon": 3.3368333333333333
+        },
+        {
+            "name": "LA511",
+            "lat": 47.63997221666666,
+            "lon": 3.3683611166666667
+        },
+        {
+            "name": "LA530",
+            "lat": 47.92694443333333,
+            "lon": 3.5080833333333334
+        },
+        {
+            "name": "OSBIB",
+            "lat": 47.6335,
+            "lon": 3.4663888833333334
+        },
+        {
+            "name": "OVBEN",
+            "lat": 48.05736111666667,
+            "lon": 3.4269444333333334
+        },
+        {
+            "name": "TUBDI",
+            "lat": 47.729694433333336,
+            "lon": 3.3809722166666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB18",
+            "fixes": {
+                "CN18": "CN18 AT OR ABOVE 2500",
+                "AXNB": "AXNB 1740 RNW 18 TRK 181 UNTIL 2000 TURN RIGHT DIRECT AXNB 2500 SPEED 200 FAF AXNB MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AX",
+                    "fixes": {
+                        "AXNB": "AXNB LEFT TURN INBOUNDCOURSE 181 ALT 2500 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "INSEB": "INSEB AT OR ABOVE 3000 SPEED 200",
+                "FLA18": "FLA18 3000 SPEED 160 RNW 18",
+                "LA430": "OVERFLY LA430 SPEED 200 TURN RIGHT DIRECT",
+                "LA450": "LA450 AT OR BELOW 5000 AT OR ABOVE 3200 SPEED 200",
+                "OVBEN": "OVBEN AT OR BELOW 5000 AT OR ABOVE 3200 SPEED 200 FAF FLA18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AX",
+                    "fixes": {
+                        "AXNB": "AXNB AT OR BELOW 5000 AT OR ABOVE 3200 SPEED 210",
+                        "LA450": "LA450 AT OR BELOW 5000 AT OR ABOVE 3200 SPEED 200 TURN RIGHT DIRECT",
+                        "OVBEN": "OVBEN AT OR BELOW 5000 AT OR ABOVE 3200 SPEED 200"
+                    }
+                },
+                {
+                    "name": "OVBEN",
+                    "fixes": {
+                        "OVBEN": "OVBEN AT OR BELOW 5000 AT OR ABOVE 3200 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ILA36": "ILA36 3000 SPEED 170",
+                "FLA36": "FLA36 3000 RNW 36",
+                "LA530": "OVERFLY LA530 SPEED 170 TURN LEFT DIRECT",
+                "TUBDI": "TUBDI 3000 SPEED 170 FAF FLA36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "OSBIB",
+                    "fixes": {
+                        "OSBIB": "OSBIB 3000 SPEED 170"
+                    }
+                },
+                {
+                    "name": "TUBDI",
+                    "fixes": {
+                        "TUBDI": "TUBDI 3000 SPEED 170",
+                        "LA511": "LA511 3000 SPEED 170",
+                        "OSBIB": "OSBIB 3000 SPEED 170"
+                    }
+                }
+            ]
+        }
+    ]
+}

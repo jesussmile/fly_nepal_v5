@@ -1,0 +1,199 @@
+{
+    "fixes": [
+        {
+            "name": "ATECI",
+            "lat": 38.749875,
+            "lon": 92.59632778333334
+        },
+        {
+            "name": "COU",
+            "lat": 38.810822216666665,
+            "lon": 92.218275
+        },
+        {
+            "name": "DROLL",
+            "lat": 39.036569433333334,
+            "lon": 92.385475
+        },
+        {
+            "name": "EZZAZ",
+            "lat": 38.763427783333334,
+            "lon": 92.80868611666666
+        },
+        {
+            "name": "FRANC",
+            "lat": 39.00835,
+            "lon": 92.85031943333334
+        },
+        {
+            "name": "GESJI",
+            "lat": 38.7567,
+            "lon": 92.70249721666667
+        },
+        {
+            "name": "GOJLU",
+            "lat": 39.03715,
+            "lon": 92.6732
+        },
+        {
+            "name": "HLV",
+            "lat": 39.11354166666667,
+            "lon": 92.12823333333333
+        },
+        {
+            "name": "KOSVE",
+            "lat": 38.91631666666667,
+            "lon": 92.68585
+        },
+        {
+            "name": "MAHFE",
+            "lat": 38.94759166666667,
+            "lon": 92.6798
+        },
+        {
+            "name": "PI001",
+            "lat": 39.024444083333336,
+            "lon": 92.43940368333334
+        },
+        {
+            "name": "PI002",
+            "lat": 39.09178446666667,
+            "lon": 92.40782235
+        },
+        {
+            "name": "PI003",
+            "lat": 39.070086016666664,
+            "lon": 92.31289588333334
+        },
+        {
+            "name": "SENCO",
+            "lat": 38.99981111666666,
+            "lon": 92.50745556666666
+        },
+        {
+            "name": "YEXIF",
+            "lat": 38.85646666666667,
+            "lon": 92.6921
+        },
+        {
+            "name": "YOJCO",
+            "lat": 39.15343611666667,
+            "lon": 92.66098611666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "YOJCO": "YOJCO AT OR ABOVE 2400",
+                "GOJLU": "GOJLU 2400 RNW 18",
+                "GESJI": "OVERFLY GESJI AT OR ABOVE 2400 HOLD AT GESJI RIGHT TURN INBOUNDCOURSE 003 LEGDIST 5 FAF GOJLU MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "COU",
+                    "fixes": {
+                        "COU": "COU",
+                        "YOJCO": "YOJCO AT OR ABOVE 2700 HOLD AT YOJCO RIGHT TURN INBOUNDCOURSE 183 ALT 2400 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "FRANC",
+                    "fixes": {
+                        "FRANC": "FRANC",
+                        "YOJCO": "YOJCO AT OR ABOVE 2400 HOLD AT YOJCO RIGHT TURN INBOUNDCOURSE 183 ALT 2400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "GESJI": "GESJI AT OR ABOVE 2400",
+                "YEXIF": "YEXIF 2400",
+                "KOSVE": "KOSVE AT OR ABOVE 1220 RNW 36 TRK 003 UNTIL 1115",
+                "YOJCO": "OVERFLY YOJCO AT OR ABOVE 2400 HOLD AT YOJCO RIGHT TURN INBOUNDCOURSE 183 LEGDIST 5 FAF YEXIF MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "COU",
+                    "fixes": {
+                        "COU": "COU",
+                        "ATECI": "ATECI AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "FRANC",
+                    "fixes": {
+                        "FRANC": "FRANC",
+                        "EZZAZ": "EZZAZ AT OR ABOVE 2400"
+                    }
+                },
+                {
+                    "name": "GESJI",
+                    "fixes": {
+                        "GESJI": "GESJI RIGHT TURN INBOUNDCOURSE 003 ALT 2400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "SENCO": "SENCO 2500 SENCO AT OR ABOVE 2900 HOLD AT SENCO RIGHT TURN INBOUNDCOURSE 243 LEGTIME 1 FAF SENCO MAP MAHFE",
+                "MAHFE": "MAHFE 1900 RNW 18 TRK 243 UNTIL 1900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "COU",
+                    "fixes": {
+                        "COU": "COU",
+                        "SENCO": "SENCO AT OR ABOVE 2900",
+                        "PI001": "PI001 AT OR ABOVE 2900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2900 SPEED 210"
+                    }
+                },
+                {
+                    "name": "HLV",
+                    "fixes": {
+                        "HLV": "HLV",
+                        "DROLL": "DROLL AT OR ABOVE 2900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "SENCO": "SENCO 2500 SENCO AT OR ABOVE 2900 HOLD AT SENCO RIGHT TURN INBOUNDCOURSE 243 LEGTIME 1 FAF SENCO MAP MAHFE",
+                "MAHFE": "MAHFE 1900 RNW 36 TRK 243 UNTIL 1900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "COU",
+                    "fixes": {
+                        "COU": "COU",
+                        "SENCO": "SENCO AT OR ABOVE 2900",
+                        "PI001": "PI001 AT OR ABOVE 2900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2900 SPEED 210"
+                    }
+                },
+                {
+                    "name": "HLV",
+                    "fixes": {
+                        "HLV": "HLV",
+                        "DROLL": "DROLL AT OR ABOVE 2900"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "DUSRE",
+            "lat": 44.634169433333334,
+            "lon": 100.019725
+        },
+        {
+            "name": "VUJTE",
+            "lat": 44.661552783333335,
+            "lon": 100.05293888333334
+        },
+        {
+            "name": "WUKVA",
+            "lat": 44.84331666666667,
+            "lon": 100.27446666666667
+        },
+        {
+            "name": "XUSDY",
+            "lat": 44.558563883333335,
+            "lon": 99.92824721666666
+        },
+        {
+            "name": "ZENEV",
+            "lat": 44.767875,
+            "lon": 100.18229443333334
+        },
+        {
+            "name": "ZIMAP",
+            "lat": 44.736161116666665,
+            "lon": 100.14364443333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 13",
+        "RNW 26",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "WUKVA": "WUKVA AT OR ABOVE 4100",
+                "ZENEV": "ZENEV 3500",
+                "ZIMAP": "ZIMAP AT OR ABOVE 2680 RNW 13 TRK 133 UNTIL 2140",
+                "XUSDY": "OVERFLY XUSDY AT OR ABOVE 4200 HOLD AT XUSDY RIGHT TURN INBOUNDCOURSE 313 LEGDIST 4 FAF ZENEV MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "WUKVA",
+                    "fixes": {
+                        "WUKVA": "WUKVA RIGHT TURN INBOUNDCOURSE 133 ALT 4100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "XUSDY": "XUSDY AT OR ABOVE 4200",
+                "DUSRE": "DUSRE 3500",
+                "VUJTE": "VUJTE AT OR ABOVE 2800 RNW 31 TRK 313 UNTIL 2220",
+                "WUKVA": "OVERFLY WUKVA AT OR ABOVE 4100 HOLD AT WUKVA RIGHT TURN INBOUNDCOURSE 133 LEGDIST 4 FAF DUSRE MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "XUSDY",
+                    "fixes": {
+                        "XUSDY": "XUSDY RIGHT TURN INBOUNDCOURSE 313 ALT 4200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "fixes": [
+        {
+            "name": "CD08",
+            "lat": 20.598169433333332,
+            "lon": 97.59718056666667
+        },
+        {
+            "name": "CD26",
+            "lat": 20.605175,
+            "lon": 97.31303056666667
+        },
+        {
+            "name": "FD08",
+            "lat": 20.599080566666668,
+            "lon": 97.54389166666667
+        },
+        {
+            "name": "FD26",
+            "lat": 20.603458333333332,
+            "lon": 97.36629721666667
+        },
+        {
+            "name": "FF08",
+            "lat": 20.598497216666665,
+            "lon": 97.5781
+        },
+        {
+            "name": "FF26",
+            "lat": 20.604255566666666,
+            "lon": 97.34165556666666
+        },
+        {
+            "name": "PAZ",
+            "lat": 20.600563883333333,
+            "lon": 97.45507778333334
+        },
+        {
+            "name": "PI001",
+            "lat": 20.599534666666667,
+            "lon": 97.51738606666666
+        },
+        {
+            "name": "PI002",
+            "lat": 20.649309783333333,
+            "lon": 97.57247806666666
+        },
+        {
+            "name": "PI003",
+            "lat": 20.597564066666667,
+            "lon": 97.63309921666666
+        },
+        {
+            "name": "PI004",
+            "lat": 20.60258855,
+            "lon": 97.39279671666667
+        },
+        {
+            "name": "PI005",
+            "lat": 20.553703,
+            "lon": 97.33681973333333
+        },
+        {
+            "name": "PI006",
+            "lat": 20.60628945,
+            "lon": 97.27712751666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "PAZ3A",
+            "rnw": "08",
+            "fixes": {
+                "PAZ": "PAZ"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PAZ3B",
+            "rnw": "26",
+            "fixes": {
+                "PAZ": "PAZ"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD08",
+            "fixes": {
+                "CD08": "CD08 AT OR ABOVE 2500",
+                "FD08": "FD08 1700 RNW 08",
+                "PAZ": "PAZ TRK 083 UNTIL 7.0 FROM PAZ TURN RIGHT DIRECT PAZ AT OR ABOVE 3000 FAF FD08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "PAZ",
+                    "fixes": {
+                        "PAZ": "PAZ AT OR ABOVE 3000 TRK 284 UNTIL 8.0 FROM PAZ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD26",
+            "fixes": {
+                "CD26": "CD26 AT OR ABOVE 2500",
+                "FD26": "FD26 1800 RNW 26",
+                "PAZ": "PAZ TRK 264 UNTIL 7.0 FROM PAZ TURN RIGHT DIRECT PAZ AT OR ABOVE 3000 FAF FD26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "PAZ",
+                    "fixes": {
+                        "PAZ": "PAZ AT OR ABOVE 3000 TRK 103 UNTIL 8.0 FROM PAZ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR08",
+            "fixes": {
+                "FF08": "FF08 2500 RNW 08",
+                "PAZ": "PAZ TRK 083 UNTIL 7.0 FROM PAZ TURN RIGHT DIRECT PAZ AT OR ABOVE 3000 FAF FF08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "PAZ",
+                    "fixes": {
+                        "PAZ": "PAZ AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26",
+            "fixes": {
+                "FF26": "FF26 2500 RNW 26",
+                "PAZ": "PAZ TRK 264 UNTIL 7.0 FROM PAZ TURN RIGHT DIRECT PAZ AT OR ABOVE 3000 FAF FF26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "PAZ",
+                    "fixes": {
+                        "PAZ": "PAZ AT OR ABOVE 3000",
+                        "PI004": "PI004 AT OR ABOVE 2500 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2500 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

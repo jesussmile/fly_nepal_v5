@@ -1,0 +1,237 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 23.742975783333332,
+            "lon": 92.40692835
+        },
+        {
+            "name": "AF002",
+            "lat": 23.787018916666668,
+            "lon": 92.39155573333333
+        },
+        {
+            "name": "AF003",
+            "lat": 23.83304405,
+            "lon": 92.38673861666666
+        },
+        {
+            "name": "AF004",
+            "lat": 24.003360816666667,
+            "lon": 92.76632005
+        },
+        {
+            "name": "AF005",
+            "lat": 24.029803866666665,
+            "lon": 92.7162748
+        },
+        {
+            "name": "AF006",
+            "lat": 23.955316033333332,
+            "lon": 92.42996673333333
+        },
+        {
+            "name": "AF007",
+            "lat": 24.011008816666667,
+            "lon": 92.49266876666667
+        },
+        {
+            "name": "AF008",
+            "lat": 24.042114116666667,
+            "lon": 92.57324451666666
+        },
+        {
+            "name": "CI17",
+            "lat": 24.012869433333332,
+            "lon": 92.58916943333334
+        },
+        {
+            "name": "D010M",
+            "lat": 24.045083333333334,
+            "lon": 92.66061943333334
+        },
+        {
+            "name": "D161O",
+            "lat": 23.594991666666665,
+            "lon": 92.71653333333333
+        },
+        {
+            "name": "D285M",
+            "lat": 23.878230566666666,
+            "lon": 92.39303333333334
+        },
+        {
+            "name": "D352A",
+            "lat": 23.832961116666667,
+            "lon": 92.62093888333334
+        },
+        {
+            "name": "DOPAT",
+            "lat": 23.885166666666667,
+            "lon": 92.35947221666666
+        },
+        {
+            "name": "FE190",
+            "lat": 23.962508333333332,
+            "lon": 92.64636111666667
+        },
+        {
+            "name": "FI17",
+            "lat": 23.979858333333333,
+            "lon": 92.59500556666667
+        },
+        {
+            "name": "IIM",
+            "lat": 24.758294433333333,
+            "lon": 93.89771943333334
+        },
+        {
+            "name": "KADIM",
+            "lat": 23.986444433333332,
+            "lon": 92.83719443333334
+        },
+        {
+            "name": "LLP",
+            "lat": 23.830388883333335,
+            "lon": 92.62358333333333
+        },
+        {
+            "name": "ME190",
+            "lat": 23.8469,
+            "lon": 92.62643333333334
+        },
+        {
+            "name": "MEPAR",
+            "lat": 24.000833333333333,
+            "lon": 91.86361111666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS17",
+            "fixes": {
+                "CI17": "CI17 AT OR ABOVE 4300",
+                "FI17": "FI17 4300 RNW 17",
+                "D352A": "D352A",
+                "D161O": "OVERFLY D161O AT OR ABOVE 5500 TURN RIGHT DIRECT",
+                "LLP": "LLP 7500 SPEED 160 HOLD AT LLP LEFT TURN INBOUNDCOURSE 001 ALT 7500 SPEED 210 LEGTIME 1 FAF FI17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "LLP1",
+                    "fixes": {
+                        "LLP": "LLP AT OR ABOVE 7500 SPEED 170 TRK 001 UNTIL 14.0 FROM LLP"
+                    }
+                },
+                {
+                    "name": "LLP2",
+                    "fixes": {
+                        "LLP": "LLP AT OR ABOVE 7500 SPEED 140 TRK 001 UNTIL 11.0 FROM LLP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVR17",
+            "fixes": {
+                "FE190": "FE190 5300",
+                "ME190": "ME190 3240 RNW 17 TRK 190 UNTIL 2.0 FROM",
+                "LLP": "LLP HDG 265 INTERCEPT RADIAL 235 FROM LLP TRK 235 UNTIL 11.0 FROM LLP SPEED 160",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "AF003": "AF003",
+                "D285M": "D285M 6300",
+                "DOPAT": "DOPAT HOLD AT DOPAT LEFT TURN INBOUNDCOURSE 105 SPEED 210 LEGTIME 1 FAF FE190 MAP ME190"
+            },
+            "transitions": [
+                {
+                    "name": "IIM",
+                    "fixes": {
+                        "IIM": "IIM",
+                        "KADIM": "KADIM",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "D010M": "D010M AT OR ABOVE 6300"
+                    }
+                },
+                {
+                    "name": "LLP1",
+                    "fixes": {
+                        "LLP": "LLP AT OR ABOVE 7500 SPEED 170 TRK 024 UNTIL 9.0 FROM LLP"
+                    }
+                },
+                {
+                    "name": "LLP2",
+                    "fixes": {
+                        "LLP": "LLP AT OR ABOVE 7500 SPEED 170 TRK 021 UNTIL 9.0 FROM LLP"
+                    }
+                },
+                {
+                    "name": "MEPAR",
+                    "fixes": {
+                        "MEPAR": "MEPAR",
+                        "DOPAT": "DOPAT",
+                        "AF006": "AF006",
+                        "AF007": "AF007",
+                        "AF008": "AF008",
+                        "D010M": "D010M AT OR ABOVE 6300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVR35",
+            "fixes": {
+                "FE190": "FE190 5300",
+                "ME190": "ME190 3240 RNW 35 TRK 190 UNTIL 2.0 FROM",
+                "LLP": "LLP HDG 265 INTERCEPT RADIAL 235 FROM LLP TRK 235 UNTIL 11.0 FROM LLP SPEED 160",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "AF003": "AF003",
+                "D285M": "D285M 6300",
+                "DOPAT": "DOPAT HOLD AT DOPAT LEFT TURN INBOUNDCOURSE 105 SPEED 210 LEGTIME 1 FAF FE190 MAP ME190"
+            },
+            "transitions": [
+                {
+                    "name": "IIM",
+                    "fixes": {
+                        "IIM": "IIM",
+                        "KADIM": "KADIM",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "D010M": "D010M AT OR ABOVE 6300"
+                    }
+                },
+                {
+                    "name": "LLP1",
+                    "fixes": {
+                        "LLP": "LLP AT OR ABOVE 7500 SPEED 170 TRK 024 UNTIL 9.0 FROM LLP"
+                    }
+                },
+                {
+                    "name": "LLP2",
+                    "fixes": {
+                        "LLP": "LLP AT OR ABOVE 7500 SPEED 170 TRK 021 UNTIL 9.0 FROM LLP"
+                    }
+                },
+                {
+                    "name": "MEPAR",
+                    "fixes": {
+                        "MEPAR": "MEPAR",
+                        "DOPAT": "DOPAT",
+                        "AF006": "AF006",
+                        "AF007": "AF007",
+                        "AF008": "AF008",
+                        "D010M": "D010M AT OR ABOVE 6300"
+                    }
+                }
+            ]
+        }
+    ]
+}

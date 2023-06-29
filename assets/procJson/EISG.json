@@ -1,0 +1,261 @@
+{
+    "fixes": [
+        {
+            "name": "ATFOR",
+            "lat": 54.26,
+            "lon": 8.27875
+        },
+        {
+            "name": "BAFBI",
+            "lat": 54.29744443333333,
+            "lon": 8.760611116666666
+        },
+        {
+            "name": "FN10Z",
+            "lat": 54.31084166666667,
+            "lon": 8.806222216666667
+        },
+        {
+            "name": "FURCA",
+            "lat": 54.310583333333334,
+            "lon": 8.801333333333334
+        },
+        {
+            "name": "LAZBE",
+            "lat": 54.31011111666667,
+            "lon": 8.879111116666667
+        },
+        {
+            "name": "OFCER",
+            "lat": 54.248388883333334,
+            "lon": 8.304277783333333
+        },
+        {
+            "name": "OFMOF",
+            "lat": 54.268341666666664,
+            "lon": 8.420216666666667
+        },
+        {
+            "name": "OGDUM",
+            "lat": 54.26283333333333,
+            "lon": 8.437916666666666
+        },
+        {
+            "name": "SG201",
+            "lat": 54.22827778333333,
+            "lon": 8.90475
+        },
+        {
+            "name": "SG202",
+            "lat": 54.32505556666667,
+            "lon": 9.019083333333333
+        },
+        {
+            "name": "SG203",
+            "lat": 54.39191666666667,
+            "lon": 8.853388883333333
+        },
+        {
+            "name": "SG205",
+            "lat": 54.285277783333335,
+            "lon": 8.646416666666667
+        },
+        {
+            "name": "SG206",
+            "lat": 54.330027783333335,
+            "lon": 8.278388883333333
+        },
+        {
+            "name": "SG207",
+            "lat": 54.233277783333335,
+            "lon": 8.164611116666666
+        },
+        {
+            "name": "SG208",
+            "lat": 54.166333333333334,
+            "lon": 8.327583333333333
+        },
+        {
+            "name": "SG209",
+            "lat": 54.29438888333333,
+            "lon": 8.730444433333334
+        },
+        {
+            "name": "SG210",
+            "lat": 54.28066666666667,
+            "lon": 8.603555566666667
+        },
+        {
+            "name": "SG302",
+            "lat": 54.25147221666667,
+            "lon": 8.137361116666666
+        },
+        {
+            "name": "SG304",
+            "lat": 54.265025,
+            "lon": 8.363622216666666
+        },
+        {
+            "name": "SG305",
+            "lat": 54.273280566666664,
+            "lon": 8.505108333333334
+        },
+        {
+            "name": "SG307",
+            "lat": 54.288,
+            "lon": 8.658416666666668
+        },
+        {
+            "name": "SLGNB",
+            "lat": 54.278722216666665,
+            "lon": 8.600083333333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBZ10",
+            "fixes": {
+                "FN10Z": "FN10Z 1900 SPEED 130 RNW 10",
+                "SLGNB": "SLGNB TRK 338 UNTIL 2500 TURN LEFT DIRECT SLGNB 3500 HOLD AT SLGNB LEFT TURN INBOUNDCOURSE 305 ALT 3500 SPEED 180 LEGTIME 1 FAF FN10Z MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "SLG",
+                    "fixes": {
+                        "SLGNB": "SLGNB AT OR ABOVE 3500 TRK 303 UNTIL 7.5 FROM SLGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDY10",
+            "fixes": {
+                "FURCA": "FURCA 1800 SPEED 130",
+                "SG307": "SG307 521 RNW 10 TRK 338 UNTIL 2500 TURN LEFT DIRECT",
+                "SLGNB": "SLGNB 3500 HOLD AT SLGNB LEFT TURN INBOUNDCOURSE 305 ALT 3500 SPEED 180 LEGTIME 1 FAF FURCA MAP SG307"
+            },
+            "transitions": [
+                {
+                    "name": "SLG",
+                    "fixes": {
+                        "SLGNB": "SLGNB AT OR ABOVE 3500 TRK 301 UNTIL 7.0 FROM SLGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD28",
+            "fixes": {
+                "SG304": "SG304 AT OR ABOVE 2500",
+                "OFMOF": "OFMOF 1900",
+                "SG305": "SG305 988 RNW 28 TRK 326 UNTIL 2500 TURN LEFT DIRECT",
+                "SLGNB": "SLGNB 3000 FAF OFMOF MAP SG305"
+            },
+            "transitions": [
+                {
+                    "name": "SG302",
+                    "fixes": {
+                        "SG302": "SG302 AT OR ABOVE 3000",
+                        "ATFOR": "ATFOR AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SLG",
+                    "fixes": {
+                        "SLGNB": "SLGNB AT OR ABOVE 3000 TRK 110 UNTIL 8.5 FROM SLGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY10",
+            "fixes": {
+                "LAZBE": "LAZBE AT OR ABOVE 3000 LAZBE AT OR ABOVE 3000 SPEED 130 HOLD AT LAZBE LEFT TURN INBOUNDCOURSE 104 ALT 3000 SPEED 180 LEGTIME 1 FAF BAFBI MAP SG210",
+                "BAFBI": "BAFBI 1830",
+                "SG210": "OVERFLY SG210 61 RNW 10 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SG201",
+                    "fixes": {
+                        "SG201": "SG201 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SG202",
+                    "fixes": {
+                        "SG202": "SG202 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SG203",
+                    "fixes": {
+                        "SG203": "SG203 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ10",
+            "fixes": {
+                "LAZBE": "LAZBE AT OR ABOVE 3000 LAZBE AT OR ABOVE 3000 SPEED 130 HOLD AT LAZBE LEFT TURN INBOUNDCOURSE 104 ALT 3000 SPEED 180 LEGTIME 1 FAF BAFBI MAP SG205",
+                "BAFBI": "BAFBI 1800",
+                "SG205": "OVERFLY SG205 506 RNW 10 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SG201",
+                    "fixes": {
+                        "SG201": "SG201 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SG202",
+                    "fixes": {
+                        "SG202": "SG202 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SG203",
+                    "fixes": {
+                        "SG203": "SG203 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "OFCER": "OFCER AT OR ABOVE 3000 OFCER AT OR ABOVE 3000 HOLD AT OFCER LEFT TURN INBOUNDCOURSE 284 ALT 3000 SPEED 180 LEGTIME 1 FAF OGDUM MAP RNW 28",
+                "OGDUM": "OGDUM 1800 RNW 28",
+                "SG209": "OVERFLY SG209 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SG206",
+                    "fixes": {
+                        "SG206": "SG206 AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "SG207",
+                    "fixes": {
+                        "SG207": "SG207 AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "SG208",
+                    "fixes": {
+                        "SG208": "SG208 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

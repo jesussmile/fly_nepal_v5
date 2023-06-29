@@ -1,0 +1,191 @@
+{
+    "fixes": [
+        {
+            "name": "20TH2",
+            "lat": 5.015788883333333,
+            "lon": 8.367430566666666
+        },
+        {
+            "name": "ARLAP",
+            "lat": 4.8093861166666665,
+            "lon": 8.262894433333333
+        },
+        {
+            "name": "BOSBU",
+            "lat": 5.217358333333333,
+            "lon": 8.469561116666666
+        },
+        {
+            "name": "BUKDU",
+            "lat": 5.142702783333333,
+            "lon": 8.431730566666667
+        },
+        {
+            "name": "CA400",
+            "lat": 5.068047216666667,
+            "lon": 8.393905566666668
+        },
+        {
+            "name": "CA444",
+            "lat": 4.942622216666667,
+            "lon": 8.330369433333333
+        },
+        {
+            "name": "CA900",
+            "lat": 4.884044433333333,
+            "lon": 8.3007
+        },
+        {
+            "name": "CAL",
+            "lat": 4.921861116666666,
+            "lon": 8.320055566666667
+        },
+        {
+            "name": "CI21",
+            "lat": 5.090613883333333,
+            "lon": 8.405288883333334
+        },
+        {
+            "name": "FD03",
+            "lat": 4.891430566666667,
+            "lon": 8.304586116666666
+        },
+        {
+            "name": "FF21",
+            "lat": 5.060747216666667,
+            "lon": 8.390169433333334
+        },
+        {
+            "name": "ILKIB",
+            "lat": 5.1047722166666665,
+            "lon": 8.506186116666667
+        },
+        {
+            "name": "IPENU",
+            "lat": 4.847311116666667,
+            "lon": 8.188469433333333
+        },
+        {
+            "name": "ODMUD",
+            "lat": 4.771452783333333,
+            "lon": 8.337311116666667
+        },
+        {
+            "name": "POTUT",
+            "lat": 5.180627783333334,
+            "lon": 8.357266666666666
+        },
+        {
+            "name": "VITNO",
+            "lat": 4.7347222166666665,
+            "lon": 8.225097216666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD03",
+            "fixes": {
+                "FD03": "FD03 1840 RNW 03 TRK 028 UNTIL 1000 TURN RIGHT DIRECT",
+                "CAL": "CAL 3500 HOLD AT CAL RIGHT TURN INBOUNDCOURSE 028 ALT 3500 LEGTIME 1 FAF FD03 MAP RNW 03"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD21",
+            "fixes": {
+                "FF21": "FF21 1850",
+                "20TH2": "20TH2 AT OR ABOVE 920 RNW 21",
+                "CAL": "CAL 3500 HOLD AT CAL RIGHT TURN INBOUNDCOURSE 028 ALT 3500 LEGTIME 1 FAF FF21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "CAL",
+                    "fixes": {
+                        "CAL": "CAL AT OR ABOVE 3500",
+                        "FF21": "FF21 AT OR ABOVE 1850 TRK 343 UNTIL 4.4 FROM FF21"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS21",
+            "fixes": {
+                "CI21": "CI21 AT OR ABOVE 1850",
+                "FF21": "FF21 1850 RNW 21 TRK 208 UNTIL 610",
+                "CAL": "CAL 3500 HOLD AT CAL RIGHT TURN INBOUNDCOURSE 028 ALT 3500 LEGTIME 1 FAF FF21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "CAL",
+                    "fixes": {
+                        "CAL": "CAL AT OR ABOVE 3500",
+                        "FF21": "FF21 AT OR ABOVE 1850 TRK 343 UNTIL 4.4 FROM FF21"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "ARLAP": "ARLAP 2500 ARLAP AT OR ABOVE 2500 HOLD AT ARLAP RIGHT TURN INBOUNDCOURSE 028 ALT 2500 SPEED 230 LEGTIME 1 FAF CA900 MAP RNW 03",
+                "CA900": "CA900 2000 RNW 03 TRK 028 UNTIL 610 TURN RIGHT DIRECT",
+                "ODMUD": "ODMUD TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IPENU",
+                    "fixes": {
+                        "IPENU": "IPENU"
+                    }
+                },
+                {
+                    "name": "ODMUD",
+                    "fixes": {
+                        "ODMUD": "ODMUD"
+                    }
+                },
+                {
+                    "name": "VITNO",
+                    "fixes": {
+                        "VITNO": "VITNO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "BUKDU": "BUKDU 2500 BUKDU AT OR ABOVE 2500 SPEED 230 HOLD AT BUKDU LEFT TURN INBOUNDCOURSE 208 ALT 2500 SPEED 230 LEGTIME 1 FAF CA400 MAP RNW 21",
+                "CA400": "CA400 2000 RNW 21",
+                "CA444": "OVERFLY CA444 TURN LEFT DIRECT",
+                "ILKIB": "ILKIB TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BOSBU",
+                    "fixes": {
+                        "BOSBU": "BOSBU"
+                    }
+                },
+                {
+                    "name": "ILKIB",
+                    "fixes": {
+                        "ILKIB": "ILKIB"
+                    }
+                },
+                {
+                    "name": "POTUT",
+                    "fixes": {
+                        "POTUT": "POTUT"
+                    }
+                }
+            ]
+        }
+    ]
+}

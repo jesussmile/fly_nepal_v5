@@ -1,0 +1,142 @@
+{
+    "fixes": [
+        {
+            "name": "ALFAS",
+            "lat": 50.86847221666667,
+            "lon": 3.356333333333333
+        },
+        {
+            "name": "GIGAD",
+            "lat": 50.861638883333335,
+            "lon": 2.9585833333333333
+        },
+        {
+            "name": "IKIFE",
+            "lat": 50.78055556666666,
+            "lon": 2.988388883333333
+        },
+        {
+            "name": "KT401",
+            "lat": 50.790388883333335,
+            "lon": 3.1249722166666665
+        },
+        {
+            "name": "KT402",
+            "lat": 50.84047221666667,
+            "lon": 3.0370277833333335
+        },
+        {
+            "name": "KT403",
+            "lat": 50.910861116666666,
+            "lon": 3.0775555666666667
+        },
+        {
+            "name": "KT404",
+            "lat": 50.993194433333336,
+            "lon": 3.4311944333333333
+        },
+        {
+            "name": "MAKNB",
+            "lat": 50.964444433333334,
+            "lon": 3.496388883333333
+        },
+        {
+            "name": "MAP06",
+            "lat": 50.80886111666667,
+            "lon": 3.1796111166666665
+        },
+        {
+            "name": "MINLU",
+            "lat": 50.79569443333333,
+            "lon": 3.0906944333333333
+        },
+        {
+            "name": "MIRZO",
+            "lat": 50.907638883333334,
+            "lon": 3.4724722166666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "MAK1A",
+            "rnw": "24",
+            "fixes": {
+                "KT401": "KT401 SPEED 160",
+                "KT402": "KT402 SPEED 185",
+                "KT403": "KT403 SPEED 200",
+                "MAKNB": "MAKNB 3000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MAK1B",
+            "rnw": "24",
+            "fixes": {
+                "KT401": "KT401 SPEED 185",
+                "KT402": "KT402 SPEED 200",
+                "KT403": "KT403",
+                "MAKNB": "MAKNB 3000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MAK1C",
+            "rnw": "06",
+            "fixes": {
+                "MIRZO": "MIRZO",
+                "MAKNB": "MAKNB 3000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "MINLU": "MINLU 1500",
+                "MAP06": "OVERFLY MAP06 348 RNW 06",
+                "MIRZO": "MIRZO",
+                "MAKNB": "MAKNB 3000 SPEED 185 HOLD AT MAKNB RIGHT TURN INBOUNDCOURSE 194 ALT 3000 SPEED 185 LEGTIME 1 FAF MINLU MAP MAP06"
+            },
+            "transitions": [
+                {
+                    "name": "MAK",
+                    "fixes": {
+                        "MAKNB": "MAKNB",
+                        "KT403": "KT403",
+                        "GIGAD": "GIGAD AT OR ABOVE 3000",
+                        "IKIFE": "IKIFE SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "MIRZO": "MIRZO AT OR ABOVE 2000",
+                "ALFAS": "ALFAS 2000 RNW 24",
+                "KT401": "KT401 SPEED 160",
+                "KT402": "KT402",
+                "KT403": "KT403",
+                "KT404": "KT404",
+                "MAKNB": "MAKNB 3000 SPEED 185 HOLD AT MAKNB RIGHT TURN INBOUNDCOURSE 194 ALT 3000 SPEED 185 LEGTIME 1 FAF ALFAS MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "MAK",
+                    "fixes": {
+                        "MAKNB": "MAKNB AT OR ABOVE 3000 SPEED 185"
+                    }
+                }
+            ]
+        }
+    ]
+}

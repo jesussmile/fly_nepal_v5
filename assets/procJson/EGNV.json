@@ -1,0 +1,212 @@
+{
+    "fixes": [
+        {
+            "name": "CI05",
+            "lat": 54.42900556666667,
+            "lon": 1.5790277833333333
+        },
+        {
+            "name": "CI23",
+            "lat": 54.6069,
+            "lon": 1.2488083333333333
+        },
+        {
+            "name": "D228C",
+            "lat": 54.46799443333333,
+            "lon": 1.5049638833333332
+        },
+        {
+            "name": "D228J",
+            "lat": 54.38951111666667,
+            "lon": 1.6523861166666667
+        },
+        {
+            "name": "D228O",
+            "lat": 54.33301111666667,
+            "lon": 1.7569416666666666
+        },
+        {
+            "name": "FI05",
+            "lat": 54.448175,
+            "lon": 1.5433444333333333
+        },
+        {
+            "name": "FI23",
+            "lat": 54.57860556666667,
+            "lon": 1.3013138833333333
+        },
+        {
+            "name": "FN23",
+            "lat": 54.57776388333333,
+            "lon": 1.3018
+        },
+        {
+            "name": "ML05",
+            "lat": 54.496608333333334,
+            "lon": 1.4529388833333332
+        },
+        {
+            "name": "ML23",
+            "lat": 54.52192778333333,
+            "lon": 1.4061472166666666
+        },
+        {
+            "name": "TDNB",
+            "lat": 54.56052221666667,
+            "lon": 1.3336388833333332
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS05",
+            "fixes": {
+                "CI05": "CI05 AT OR ABOVE 1700",
+                "FI05": "FI05 1700 RNW 05",
+                "TDNB": "TDNB AT OR ABOVE 2500 HOLD AT TDNB RIGHT TURN INBOUNDCOURSE 228 ALT 2500 SPEED 210 LEGTIME 1 FAF FI05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "D228O",
+                    "fixes": {
+                        "D228O": "D228O",
+                        "D228J": "D228J AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "TD1",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 2500 TRK 240 UNTIL 11.4 FROM TDNB"
+                    }
+                },
+                {
+                    "name": "TD2",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 2500 TRK 235 UNTIL 11.6 FROM TDNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS23",
+            "fixes": {
+                "CI23": "CI23 AT OR ABOVE 1900",
+                "FI23": "FI23 1900 RNW 23",
+                "D228C": "OVERFLY D228C TRK 228 UNTIL 1000 TURN RIGHT DIRECT",
+                "TDNB": "TDNB 2500 HOLD AT TDNB RIGHT TURN INBOUNDCOURSE 228 SPEED 210 LEGTIME 1 FAF FI23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "TD1",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 1900 SPEED 210 TRK 007 UNTIL 4.5 FROM TDNB"
+                    }
+                },
+                {
+                    "name": "TD2",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 1900 SPEED 210 TRK 026 UNTIL 4.5 FROM TDNB"
+                    }
+                },
+                {
+                    "name": "TD3",
+                    "fixes": {
+                        "TDNB": "TDNB RIGHT TURN INBOUNDCOURSE 228 ALT 1900 SPEED 210 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC05",
+            "fixes": {
+                "CI05": "CI05 AT OR ABOVE 1700",
+                "FI05": "FI05 1700",
+                "ML05": "ML05 326 RNW 05",
+                "TDNB": "TDNB AT OR ABOVE 2500 HOLD AT TDNB RIGHT TURN INBOUNDCOURSE 228 ALT 2500 SPEED 210 LEGTIME 1 FAF FI05 MAP ML05"
+            },
+            "transitions": [
+                {
+                    "name": "D228O",
+                    "fixes": {
+                        "D228O": "D228O",
+                        "D228J": "D228J AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "TD1",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 2500 TRK 240 UNTIL 11.4 FROM TDNB"
+                    }
+                },
+                {
+                    "name": "TD2",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 2500 TRK 235 UNTIL 11.6 FROM TDNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC23",
+            "fixes": {
+                "CI23": "CI23 AT OR ABOVE 1900",
+                "FI23": "FI23 1900",
+                "ML23": "ML23 325 RNW 23",
+                "D228C": "OVERFLY D228C TRK 228 UNTIL 1000 TURN RIGHT DIRECT",
+                "TDNB": "TDNB 2500 HOLD AT TDNB RIGHT TURN INBOUNDCOURSE 228 SPEED 210 LEGTIME 1 FAF FI23 MAP ML23"
+            },
+            "transitions": [
+                {
+                    "name": "TD1",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 1900 SPEED 210 TRK 007 UNTIL 4.5 FROM TDNB"
+                    }
+                },
+                {
+                    "name": "TD2",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 1900 SPEED 210 TRK 026 UNTIL 4.5 FROM TDNB"
+                    }
+                },
+                {
+                    "name": "TD3",
+                    "fixes": {
+                        "TDNB": "TDNB RIGHT TURN INBOUNDCOURSE 228 ALT 1900 SPEED 210 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB23",
+            "fixes": {
+                "FN23": "FN23 1900",
+                "TDNB": "TDNB AT OR ABOVE 720 RNW 23 TRK 228 UNTIL 2000 TURN RIGHT DIRECT TDNB 2500 HOLD AT TDNB RIGHT TURN INBOUNDCOURSE 228 SPEED 210 LEGTIME 1 FAF FN23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "TD1",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 1900 SPEED 210 TRK 007 UNTIL 5.3 FROM TDNB"
+                    }
+                },
+                {
+                    "name": "TD2",
+                    "fixes": {
+                        "TDNB": "TDNB AT OR ABOVE 1900 SPEED 210 TRK 026 UNTIL 7.0 FROM TDNB"
+                    }
+                },
+                {
+                    "name": "TD3",
+                    "fixes": {
+                        "TDNB": "TDNB RIGHT TURN INBOUNDCOURSE 228 ALT 1900 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

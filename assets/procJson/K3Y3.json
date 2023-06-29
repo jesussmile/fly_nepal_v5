@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "HUDOX",
+            "lat": 41.29426943333333,
+            "lon": 93.95201111666667
+        },
+        {
+            "name": "JOLUX",
+            "lat": 41.43003611666666,
+            "lon": 94.08926666666666
+        },
+        {
+            "name": "JUNUG",
+            "lat": 41.226522216666666,
+            "lon": 93.88380278333334
+        },
+        {
+            "name": "ZIKUP",
+            "lat": 41.50955,
+            "lon": 94.17000556666666
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ZIKUP": "ZIKUP AT OR ABOVE 3000",
+                "JOLUX": "JOLUX 2700 RNW 14 TRK 141 UNTIL 1516",
+                "JUNUG": "OVERFLY JUNUG AT OR ABOVE 3000 HOLD AT JUNUG RIGHT TURN INBOUNDCOURSE 321 LEGDIST 4 FAF JOLUX MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ZIKUP",
+                    "fixes": {
+                        "ZIKUP": "ZIKUP RIGHT TURN INBOUNDCOURSE 141 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "JUNUG": "JUNUG AT OR ABOVE 3000",
+                "HUDOX": "HUDOX 2700 RNW 32 TRK 321 UNTIL 1516",
+                "ZIKUP": "OVERFLY ZIKUP AT OR ABOVE 3000 HOLD AT ZIKUP RIGHT TURN INBOUNDCOURSE 141 LEGDIST 4 FAF HUDOX MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "JUNUG",
+                    "fixes": {
+                        "JUNUG": "JUNUG RIGHT TURN INBOUNDCOURSE 321 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

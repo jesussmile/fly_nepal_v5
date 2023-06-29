@@ -1,0 +1,227 @@
+{
+    "fixes": [
+        {
+            "name": "CM001",
+            "lat": 28.748166666666666,
+            "lon": 49.524166666666666
+        },
+        {
+            "name": "CM002",
+            "lat": 28.703666666666667,
+            "lon": 49.32566666666666
+        },
+        {
+            "name": "CM005",
+            "lat": 28.66255,
+            "lon": 49.242838883333334
+        },
+        {
+            "name": "CM009",
+            "lat": 28.593127783333333,
+            "lon": 49.19014443333333
+        },
+        {
+            "name": "CM012",
+            "lat": 28.747819433333333,
+            "lon": 49.523161116666664
+        },
+        {
+            "name": "CM020",
+            "lat": 28.768316666666667,
+            "lon": 49.615077783333334
+        },
+        {
+            "name": "CM021",
+            "lat": 28.849283333333332,
+            "lon": 49.59168056666667
+        },
+        {
+            "name": "CM023",
+            "lat": 28.714230566666668,
+            "lon": 49.373213883333335
+        },
+        {
+            "name": "DOGPO",
+            "lat": 26.798916666666667,
+            "lon": 50.14884443333333
+        },
+        {
+            "name": "DONRO",
+            "lat": 28.087322216666667,
+            "lon": 49.348255566666666
+        },
+        {
+            "name": "EGBIP",
+            "lat": 28.278,
+            "lon": 49.035
+        },
+        {
+            "name": "GESDA",
+            "lat": 26.842333333333332,
+            "lon": 48.78616666666667
+        },
+        {
+            "name": "ITBEB",
+            "lat": 29.5255,
+            "lon": 50.565666666666665
+        },
+        {
+            "name": "JUICE",
+            "lat": 29.481166666666667,
+            "lon": 50.553333333333335
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "DOGP1A",
+            "rnw": "09",
+            "fixes": {
+                "CM002": "OVERFLY CM002 TURN LEFT DIRECT",
+                "DOGPO": "DOGPO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DOGP1B",
+            "rnw": "27",
+            "fixes": {
+                "DOGPO": "DOGPO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DONR1A",
+            "rnw": "09",
+            "fixes": {
+                "CM002": "OVERFLY CM002",
+                "DONRO": "DONRO"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "GESDA",
+                    "fixes": [
+                        "GESDA"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "DONR1B",
+            "rnw": "27",
+            "fixes": {
+                "DONRO": "DONRO"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "GESDA",
+                    "fixes": [
+                        "GESDA"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "EGBI1A",
+            "rnw": "09",
+            "fixes": {
+                "CM002": "OVERFLY CM002",
+                "EGBIP": "EGBIP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "EGBI1B",
+            "rnw": "27",
+            "fixes": {
+                "EGBIP": "EGBIP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ITBE1A",
+            "rnw": "09",
+            "fixes": {
+                "CM002": "OVERFLY CM002 TURN LEFT DIRECT",
+                "CM001": "CM001",
+                "ITBEB": "ITBEB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ITBE1B",
+            "rnw": "27",
+            "fixes": {
+                "ITBEB": "ITBEB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "JUIC2A",
+            "rnw": "09",
+            "fixes": {
+                "CM002": "OVERFLY CM002 TURN LEFT DIRECT",
+                "CM001": "CM001",
+                "JUICE": "JUICE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "JUIC2B",
+            "rnw": "27",
+            "fixes": {
+                "JUICE": "JUICE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "CM020": "CM020 AT OR ABOVE 2500",
+                "CM012": "CM012 1700 RNW 09 HDG 094 UNTIL 600 TURN RIGHT DIRECT",
+                "CM021": "OVERFLY CM021 AT OR ABOVE 3000 SPEED 180 HOLD AT CM021 LEFT TURN INBOUNDCOURSE 004 LEGTIME 1 FAF CM012 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "CM021",
+                    "fixes": {
+                        "CM021": "CM021 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "CM005": "CM005 AT OR ABOVE 2500",
+                "CM002": "CM002 1700",
+                "CM023": "CM023 AT OR ABOVE 650 RNW 27 HDG 274 UNTIL 600 TURN RIGHT DIRECT",
+                "CM009": "OVERFLY CM009 AT OR ABOVE 3000 HOLD AT CM009 RIGHT TURN INBOUNDCOURSE 232 LEGTIME 1 FAF CM002 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "CM009",
+                    "fixes": {
+                        "CM009": "CM009 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

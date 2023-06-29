@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "CUGTI",
+            "lat": 40.01703333333333,
+            "lon": 120.43438333333333
+        },
+        {
+            "name": "FIMUV",
+            "lat": 39.81810556666667,
+            "lon": 120.18795833333333
+        },
+        {
+            "name": "FITUN",
+            "lat": 39.81811943333334,
+            "lon": 119.87350556666667
+        },
+        {
+            "name": "GONPE",
+            "lat": 39.6415,
+            "lon": 119.96450556666667
+        },
+        {
+            "name": "HALLE",
+            "lat": 39.91978056666667,
+            "lon": 119.95108333333333
+        },
+        {
+            "name": "NAPBI",
+            "lat": 39.66919443333333,
+            "lon": 119.99331943333334
+        },
+        {
+            "name": "NECIN",
+            "lat": 39.79055278333333,
+            "lon": 120.14239721666667
+        },
+        {
+            "name": "PAYRI",
+            "lat": 39.81761111666667,
+            "lon": 120.05793611666667
+        },
+        {
+            "name": "POLIC",
+            "lat": 39.81848611666667,
+            "lon": 120.33385556666667
+        },
+        {
+            "name": "RAROC",
+            "lat": 39.94921943333333,
+            "lon": 119.97358888333333
+        },
+        {
+            "name": "SIDOY",
+            "lat": 39.81867221666667,
+            "lon": 120.46912778333333
+        },
+        {
+            "name": "TAYUS",
+            "lat": 39.77648333333333,
+            "lon": 120.04683333333334
+        },
+        {
+            "name": "VERDI",
+            "lat": 39.483291666666666,
+            "lon": 119.91697221666666
+        },
+        {
+            "name": "VINUY",
+            "lat": 39.795225,
+            "lon": 120.17426111666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVY26",
+            "fixes": {
+                "NECIN": "NECIN AT OR ABOVE 7900",
+                "VINUY": "VINUY 7500",
+                "POLIC": "OVERFLY POLIC 5103 RNW 26 TRK 267 UNTIL 5300 TURN LEFT DIRECT",
+                "FITUN": "OVERFLY FITUN AT OR ABOVE 10000 HOLD AT FITUN RIGHT TURN INBOUNDCOURSE 136 LEGDIST 7 FAF VINUY MAP POLIC"
+            },
+            "transitions": [
+                {
+                    "name": "RAROC",
+                    "fixes": {
+                        "RAROC": "RAROC",
+                        "TAYUS": "TAYUS AT OR ABOVE 8700"
+                    }
+                },
+                {
+                    "name": "VERDI",
+                    "fixes": {
+                        "VERDI": "VERDI",
+                        "GONPE": "GONPE AT OR ABOVE 11000",
+                        "TAYUS": "TAYUS AT OR ABOVE 8700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ26",
+            "fixes": {
+                "PAYRI": "PAYRI AT OR ABOVE 8600",
+                "FIMUV": "FIMUV 7300 RNW 26 TRK 256 UNTIL 5300",
+                "SIDOY": "SIDOY TURN RIGHT DIRECT",
+                "CUGTI": "CUGTI TURN RIGHT DIRECT",
+                "HALLE": "OVERFLY HALLE AT OR ABOVE 10000 HOLD AT HALLE RIGHT TURN INBOUNDCOURSE 316 LEGDIST 7 FAF FIMUV MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "HALLE",
+                    "fixes": {
+                        "HALLE": "HALLE"
+                    }
+                },
+                {
+                    "name": "VERDI",
+                    "fixes": {
+                        "VERDI": "VERDI",
+                        "NAPBI": "NAPBI AT OR ABOVE 11100"
+                    }
+                }
+            ]
+        }
+    ]
+}

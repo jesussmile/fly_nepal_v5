@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "COVUT",
+            "lat": 40.284269433333336,
+            "lon": 95.754175
+        },
+        {
+            "name": "KOSHO",
+            "lat": 40.1586,
+            "lon": 95.654875
+        },
+        {
+            "name": "ODIVE",
+            "lat": 40.12059166666667,
+            "lon": 95.62490556666667
+        },
+        {
+            "name": "TAYUG",
+            "lat": 39.99875,
+            "lon": 95.5291
+        },
+        {
+            "name": "USACE",
+            "lat": 39.903044433333335,
+            "lon": 95.45412778333333
+        },
+        {
+            "name": "ZIGNI",
+            "lat": 40.05124443333333,
+            "lon": 95.57033056666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "COVUT": "COVUT AT OR ABOVE 3000",
+                "KOSHO": "KOSHO 2700",
+                "ODIVE": "ODIVE AT OR ABOVE 1840 RNW 15 TRK 146 UNTIL 1234",
+                "USACE": "OVERFLY USACE AT OR ABOVE 3000 HOLD AT USACE RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4 FAF KOSHO MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "COVUT",
+                    "fixes": {
+                        "COVUT": "COVUT RIGHT TURN INBOUNDCOURSE 146 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "USACE": "USACE AT OR ABOVE 3000",
+                "TAYUG": "TAYUG 2700",
+                "ZIGNI": "ZIGNI AT OR ABOVE 1520 RNW 33 TRK 326 UNTIL 1234",
+                "COVUT": "OVERFLY COVUT AT OR ABOVE 3000 HOLD AT COVUT RIGHT TURN INBOUNDCOURSE 146 LEGDIST 4 FAF TAYUG MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "USACE",
+                    "fixes": {
+                        "USACE": "USACE RIGHT TURN INBOUNDCOURSE 326 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "fixes": [
+        {
+            "name": "DASWY",
+            "lat": 34.517302783333335,
+            "lon": 88.5888
+        },
+        {
+            "name": "DELEE",
+            "lat": 34.50832221666667,
+            "lon": 88.680475
+        },
+        {
+            "name": "GANTT",
+            "lat": 34.44507221666667,
+            "lon": 88.649275
+        },
+        {
+            "name": "HOGAB",
+            "lat": 34.62955556666667,
+            "lon": 88.67871388333333
+        },
+        {
+            "name": "JETEB",
+            "lat": 34.555525,
+            "lon": 88.61938056666666
+        },
+        {
+            "name": "JIGOG",
+            "lat": 34.58727221666667,
+            "lon": 88.64788888333334
+        },
+        {
+            "name": "JOLIB",
+            "lat": 34.749075,
+            "lon": 88.77478333333333
+        },
+        {
+            "name": "JUNFU",
+            "lat": 34.66545,
+            "lon": 88.70753056666666
+        },
+        {
+            "name": "KIKDE",
+            "lat": 34.41351111666667,
+            "lon": 88.71952221666666
+        },
+        {
+            "name": "MANIL",
+            "lat": 34.434111116666664,
+            "lon": 88.52236111666667
+        },
+        {
+            "name": "OTB",
+            "lat": 34.22383056666666,
+            "lon": 88.79735833333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "JOLIB": "JOLIB AT OR ABOVE 2500",
+                "JUNFU": "JUNFU 2000",
+                "HOGAB": "HOGAB AT OR ABOVE 1160 RNW 15 TRK 147 UNTIL 777",
+                "MANIL": "OVERFLY MANIL AT OR ABOVE 2500 HOLD AT MANIL RIGHT TURN INBOUNDCOURSE 328 LEGDIST 4 FAF JUNFU MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "JOLIB",
+                    "fixes": {
+                        "JOLIB": "JOLIB RIGHT TURN INBOUNDCOURSE 147 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "MANIL": "MANIL AT OR ABOVE 2500",
+                "DASWY": "DASWY 2000",
+                "JETEB": "JETEB AT OR ABOVE 1120 RNW 33 TRK 328 UNTIL 679",
+                "JOLIB": "OVERFLY JOLIB AT OR ABOVE 2500 HOLD AT JOLIB RIGHT TURN INBOUNDCOURSE 147 LEGDIST 4 FAF DASWY MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "MANIL",
+                    "fixes": {
+                        "MANIL": "MANIL RIGHT TURN INBOUNDCOURSE 328 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA15",
+            "fixes": {
+                "KIKDE": "KIKDE AT OR ABOVE 2300",
+                "DELEE": "DELEE 2300 DELEE AT OR ABOVE 2300 HOLD AT DELEE LEFT TURN INBOUNDCOURSE 015 LEGTIME 1 FAF DELEE MAP JIGOG",
+                "JIGOG": "JIGOG 1340 RNW 15 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GANTT",
+                    "fixes": {
+                        "GANTT": "GANTT",
+                        "OTB": "OTB AT OR ABOVE 2300 HOLD AT OTB LEFT TURN INBOUNDCOURSE 015 ALT 2300 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA33",
+            "fixes": {
+                "KIKDE": "KIKDE AT OR ABOVE 2300",
+                "DELEE": "DELEE 2300 DELEE AT OR ABOVE 2300 HOLD AT DELEE LEFT TURN INBOUNDCOURSE 015 LEGTIME 1 FAF DELEE MAP JIGOG",
+                "JIGOG": "JIGOG 1340 RNW 33 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GANTT",
+                    "fixes": {
+                        "GANTT": "GANTT",
+                        "OTB": "OTB AT OR ABOVE 2300 HOLD AT OTB LEFT TURN INBOUNDCOURSE 015 ALT 2300 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

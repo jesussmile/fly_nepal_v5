@@ -1,0 +1,272 @@
+{
+    "fixes": [
+        {
+            "name": "FF15",
+            "lat": 35.171563883333334,
+            "lon": 173.88526388333332
+        },
+        {
+            "name": "FF33",
+            "lat": 35.34365,
+            "lon": 173.93904721666667
+        },
+        {
+            "name": "FN15",
+            "lat": 35.17636388333333,
+            "lon": 173.89457778333335
+        },
+        {
+            "name": "FN33",
+            "lat": 35.336030566666665,
+            "lon": 173.94044721666666
+        },
+        {
+            "name": "FQ15",
+            "lat": 35.180033333333334,
+            "lon": 173.89528611666665
+        },
+        {
+            "name": "FQ33",
+            "lat": 35.341408333333334,
+            "lon": 173.94258056666666
+        },
+        {
+            "name": "KAROA",
+            "lat": 35.159630566666664,
+            "lon": 173.61603056666667
+        },
+        {
+            "name": "KK",
+            "lat": 35.262472216666666,
+            "lon": 173.91119443333332
+        },
+        {
+            "name": "KKNB",
+            "lat": 35.262033333333335,
+            "lon": 173.91110556666666
+        },
+        {
+            "name": "KOPPA",
+            "lat": 36.48045556666667,
+            "lon": 174.53735556666666
+        },
+        {
+            "name": "MA15",
+            "lat": 35.24433333333333,
+            "lon": 173.90797778333334
+        },
+        {
+            "name": "MA33",
+            "lat": 35.27088611666667,
+            "lon": 173.91627778333333
+        },
+        {
+            "name": "MQ15",
+            "lat": 35.245983333333335,
+            "lon": 173.90800556666667
+        },
+        {
+            "name": "OPARE",
+            "lat": 35.42448888333333,
+            "lon": 173.96439443333333
+        },
+        {
+            "name": "OTAHA",
+            "lat": 35.090702783333334,
+            "lon": 173.860075
+        },
+        {
+            "name": "SFNB",
+            "lat": 35.885475,
+            "lon": 174.35733611666666
+        },
+        {
+            "name": "UKAPA",
+            "lat": 36.29553611666667,
+            "lon": 174.23877221666666
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 15",
+        "RNW 20",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "LAKE2",
+            "rnw": "15",
+            "fixes": {
+                "KAROA": "KAROA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MOERE2",
+            "rnw": "15",
+            "fixes": {
+                "KKNB": "KKNB",
+                "SFNB": "SFNB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PAKAR2",
+            "rnw": "15",
+            "fixes": {
+                "KKNB": "KKNB",
+                "KOPPA": "KOPPA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UKAP1B",
+            "rnw": "33",
+            "fixes": {
+                "UKAPA": "UKAPA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UKAP2A",
+            "rnw": "15",
+            "fixes": {
+                "UKAPA": "UKAPA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "WAIHU2",
+            "rnw": "33",
+            "fixes": {
+                "KAROA": "KAROA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB15",
+            "fixes": {
+                "FN15": "FN15 2000 RNW 15",
+                "KKNB": "OVERFLY KKNB TRK 152 UNTIL 2500 TURN LEFT DIRECT KKNB 3000 FAF FN15 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "KK1",
+                    "fixes": {
+                        "KKNB": "KKNB AT OR ABOVE 3000 TRK 355 UNTIL 8.8 FROM KKNB"
+                    }
+                },
+                {
+                    "name": "KK2",
+                    "fixes": {
+                        "KKNB": "KKNB AT OR ABOVE 3000 TRK 350 UNTIL 6.0 FROM KKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB33",
+            "fixes": {
+                "FN33": "FN33 2000",
+                "KKNB": "KKNB 517 RNW 33 TRK 323 UNTIL 2500 TURN RIGHT DIRECT KKNB 3000 FAF FN33 MAP KK"
+            },
+            "transitions": [
+                {
+                    "name": "KK",
+                    "fixes": {
+                        "KKNB": "KKNB AT OR ABOVE 3000 TRK 105 UNTIL 5.3 FROM KKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD15",
+            "fixes": {
+                "FQ15": "FQ15 1850",
+                "MQ15": "MQ15 652 RNW 15 TRK 152 UNTIL 2500 TURN LEFT DIRECT",
+                "KKNB": "KKNB 3000 FAF FQ15 MAP MQ15"
+            },
+            "transitions": [
+                {
+                    "name": "KK1",
+                    "fixes": {
+                        "KKNB": "KKNB AT OR ABOVE 3000 TRK 355 UNTIL 7.2 FROM",
+                        "KK": "KK"
+                    }
+                },
+                {
+                    "name": "KK2",
+                    "fixes": {
+                        "KKNB": "KKNB AT OR ABOVE 3000 TRK 350 UNTIL 6.0 FROM",
+                        "KK": "KK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD33",
+            "fixes": {
+                "FQ33": "FQ33 2000",
+                "KKNB": "KKNB 518 RNW 33 TRK 323 UNTIL 2500 TURN RIGHT DIRECT KKNB 3000 FAF FQ33 MAP KK"
+            },
+            "transitions": [
+                {
+                    "name": "KK1",
+                    "fixes": {
+                        "KKNB": "KKNB AT OR ABOVE 3000 TRK 105 UNTIL 7.0 FROM",
+                        "KK": "KK"
+                    }
+                },
+                {
+                    "name": "KK2",
+                    "fixes": {
+                        "KKNB": "KKNB AT OR ABOVE 3000 TRK 131 UNTIL 7.0 FROM KKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "OTAHA": "OTAHA AT OR ABOVE 3720",
+                "FF15": "FF15 2120",
+                "MA15": "OVERFLY MA15 688 RNW 15",
+                "OPARE": "OPARE 3400 FAF FF15 MAP MA15"
+            },
+            "transitions": [
+                {
+                    "name": "OTAHA",
+                    "fixes": {
+                        "OTAHA": "OTAHA RIGHT TURN INBOUNDCOURSE 147 ALT 3720 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "OPARE": "OPARE AT OR ABOVE 3550",
+                "FF33": "FF33 2050",
+                "MA33": "OVERFLY MA33 696 RNW 33",
+                "OTAHA": "OTAHA 2600 FAF FF33 MAP MA33"
+            },
+            "transitions": [
+                {
+                    "name": "OPARE",
+                    "fixes": {
+                        "OPARE": "OPARE RIGHT TURN INBOUNDCOURSE 327 ALT 3550 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

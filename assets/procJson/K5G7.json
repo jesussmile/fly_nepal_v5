@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "ALPEW",
+            "lat": 40.93415556666667,
+            "lon": 83.78718056666666
+        },
+        {
+            "name": "CUDOD",
+            "lat": 40.99828888333333,
+            "lon": 83.6796
+        },
+        {
+            "name": "FBC",
+            "lat": 40.955333333333336,
+            "lon": 83.756025
+        },
+        {
+            "name": "PI001",
+            "lat": 40.9943517,
+            "lon": 83.69859046666667
+        },
+        {
+            "name": "PI002",
+            "lat": 41.065920033333335,
+            "lon": 83.6936157
+        },
+        {
+            "name": "PI003",
+            "lat": 41.06673861666667,
+            "lon": 83.5917458
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "CUDOD": "CUDOD AT OR ABOVE 2400",
+                "ALPEW": "ALPEW 2300 RNW 23 TRK 237 UNTIL 1251 TURN RIGHT DIRECT",
+                "FBC": "OVERFLY FBC AT OR ABOVE 2500 HOLD AT FBC RIGHT TURN INBOUNDCOURSE 236 LEGDIST 4 FAF ALPEW MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "FBC",
+                    "fixes": {
+                        "FBC": "FBC",
+                        "CUDOD": "OVERFLY CUDOD AT OR ABOVE 2400 HOLD AT CUDOD RIGHT TURN INBOUNDCOURSE 237 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR23",
+            "fixes": {
+                "FBC": "FBC 2500 RNW 23 TRK 233 UNTIL 2500 TURN RIGHT DIRECT FBC HOLD AT FBC RIGHT TURN INBOUNDCOURSE 233 LEGTIME 1 FAF FBC MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "FBC",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

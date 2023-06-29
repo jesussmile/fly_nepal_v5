@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "BETHR",
+            "lat": 39.48188888333333,
+            "lon": 103.71494443333333
+        },
+        {
+            "name": "DBLAA",
+            "lat": 39.36294721666667,
+            "lon": 103.686725
+        },
+        {
+            "name": "HAALI",
+            "lat": 39.56514443333333,
+            "lon": 103.52830278333333
+        },
+        {
+            "name": "LOOKA",
+            "lat": 39.116802783333334,
+            "lon": 103.41097778333334
+        },
+        {
+            "name": "LWLAM",
+            "lat": 39.38345556666667,
+            "lon": 103.69158333333333
+        },
+        {
+            "name": "RARAY",
+            "lat": 39.086933333333334,
+            "lon": 103.62161943333334
+        },
+        {
+            "name": "WIETT",
+            "lat": 39.05668611666667,
+            "lon": 103.83208056666666
+        },
+        {
+            "name": "ZEAKO",
+            "lat": 39.18538611666666,
+            "lon": 103.64478333333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "BETHR": "BETHR AT OR ABOVE 7500",
+                "LWLAM": "LWLAM 7400",
+                "DBLAA": "DBLAA AT OR ABOVE 7000 RNW 16 TRK 163 UNTIL 5624",
+                "RARAY": "OVERFLY RARAY AT OR ABOVE 7500 HOLD AT RARAY LEFT TURN INBOUNDCOURSE 350 LEGDIST 7 FAF LWLAM MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "BETHR",
+                    "fixes": {
+                        "BETHR": "BETHR LEFT TURN INBOUNDCOURSE 163 ALT 7500 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "HAALI",
+                    "fixes": {
+                        "HAALI": "HAALI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "RARAY": "RARAY AT OR ABOVE 7400 OVERFLY RARAY AT OR ABOVE 7400 HOLD AT RARAY LEFT TURN INBOUNDCOURSE 350 LEGDIST 7 FAF ZEAKO MAP RNW 34",
+                "ZEAKO": "ZEAKO 7000 RNW 34 TRK 343 UNTIL 5615 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LOOKA",
+                    "fixes": {
+                        "LOOKA": "LOOKA"
+                    }
+                },
+                {
+                    "name": "RARAY",
+                    "fixes": {
+                        "RARAY": "RARAY LEFT TURN INBOUNDCOURSE 350 ALT 7400 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "WIETT",
+                    "fixes": {
+                        "WIETT": "WIETT"
+                    }
+                }
+            ]
+        }
+    ]
+}

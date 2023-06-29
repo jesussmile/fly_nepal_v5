@@ -1,0 +1,80 @@
+{
+    "fixes": [
+        {
+            "name": "ACIVE",
+            "lat": 60.566555566666665,
+            "lon": 161.94298333333333
+        },
+        {
+            "name": "BESAY",
+            "lat": 60.84620278333333,
+            "lon": 161.60348888333334
+        },
+        {
+            "name": "CACAR",
+            "lat": 60.63808611666666,
+            "lon": 161.85680833333333
+        },
+        {
+            "name": "FEDMA",
+            "lat": 60.774822216666664,
+            "lon": 161.69081111666668
+        },
+        {
+            "name": "SAHKU",
+            "lat": 60.51535833333333,
+            "lon": 161.58643056666668
+        },
+        {
+            "name": "URICA",
+            "lat": 60.523997216666665,
+            "lon": 161.79805278333333
+        },
+        {
+            "name": "WEEKE",
+            "lat": 60.814225,
+            "lon": 161.42062778333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "ACIVE": "ACIVE AT OR ABOVE 2000",
+                "CACAR": "CACAR 1500 RNW 02 TRK 016 UNTIL 420 TURN RIGHT DIRECT",
+                "SAHKU": "SAHKU AT OR ABOVE 2500 HOLD AT SAHKU LEFT TURN INBOUNDCOURSE 317 LEGDIST 4 FAF CACAR MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "SAHKU",
+                    "fixes": {
+                        "SAHKU": "SAHKU",
+                        "URICA": "URICA AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "BESAY": "BESAY AT OR ABOVE 2000",
+                "FEDMA": "FEDMA 1600 RNW 20 TRK 196 UNTIL 420 TURN LEFT DIRECT",
+                "WEEKE": "WEEKE AT OR ABOVE 2000 HOLD AT WEEKE LEFT TURN INBOUNDCOURSE 242 LEGDIST 4 FAF FEDMA MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "WEEKE",
+                    "fixes": {
+                        "WEEKE": "WEEKE"
+                    }
+                }
+            ]
+        }
+    ]
+}

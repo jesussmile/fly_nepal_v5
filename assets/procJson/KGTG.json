@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "OSVEC",
+            "lat": 45.754866666666665,
+            "lon": 92.56056388333333
+        },
+        {
+            "name": "VITUY",
+            "lat": 45.78149166666667,
+            "lon": 92.62448888333333
+        },
+        {
+            "name": "WOVUR",
+            "lat": 45.84115833333333,
+            "lon": 92.76825
+        },
+        {
+            "name": "WUGAX",
+            "lat": 45.695125,
+            "lon": 92.41765833333334
+        },
+        {
+            "name": "YIDUK",
+            "lat": 45.90048888333333,
+            "lon": 92.91193611666667
+        },
+        {
+            "name": "ZELPU",
+            "lat": 45.812925,
+            "lon": 92.70013611666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 12",
+        "RNW 23",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "YIDUK": "YIDUK AT OR ABOVE 3400",
+                "WOVUR": "WOVUR 2500",
+                "ZELPU": "ZELPU AT OR ABOVE 1440 RNW 12 TRK 121 UNTIL 1300",
+                "WUGAX": "OVERFLY WUGAX AT OR ABOVE 3400 HOLD AT WUGAX RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4 FAF WOVUR MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "YIDUK",
+                    "fixes": {
+                        "YIDUK": "YIDUK RIGHT TURN INBOUNDCOURSE 121 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "WUGAX": "WUGAX AT OR ABOVE 3400",
+                "OSVEC": "OSVEC 2500",
+                "VITUY": "VITUY AT OR ABOVE 1500 RNW 30 TRK 301 UNTIL 1320",
+                "YIDUK": "OVERFLY YIDUK AT OR ABOVE 3400 HOLD AT YIDUK RIGHT TURN INBOUNDCOURSE 121 LEGDIST 4 FAF OSVEC MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "WUGAX",
+                    "fixes": {
+                        "WUGAX": "WUGAX RIGHT TURN INBOUNDCOURSE 301 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

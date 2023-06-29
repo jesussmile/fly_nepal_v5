@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "APODS",
+            "lat": 48.06470556666667,
+            "lon": 117.39057778333333
+        },
+        {
+            "name": "BADKE",
+            "lat": 47.985138883333335,
+            "lon": 117.43125
+        },
+        {
+            "name": "CABGO",
+            "lat": 48.136941666666665,
+            "lon": 117.30501666666666
+        },
+        {
+            "name": "DIANN",
+            "lat": 48.16428056666667,
+            "lon": 117.17764166666667
+        },
+        {
+            "name": "FANGI",
+            "lat": 48.10676943333333,
+            "lon": 117.34478056666667
+        },
+        {
+            "name": "GEG",
+            "lat": 47.56494721666667,
+            "lon": 117.62688611666667
+        },
+        {
+            "name": "HOKAS",
+            "lat": 47.87895278333333,
+            "lon": 117.4307
+        },
+        {
+            "name": "JURSY",
+            "lat": 47.68267221666667,
+            "lon": 117.045925
+        },
+        {
+            "name": "KECCE",
+            "lat": 47.77235,
+            "lon": 117.43014721666667
+        },
+        {
+            "name": "WUSED",
+            "lat": 48.03015,
+            "lon": 117.43148611666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 16",
+        "RNW 23",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "CABGO": "CABGO AT OR ABOVE 5700 OVERFLY CABGO AT OR ABOVE 5700 HOLD AT CABGO LEFT TURN INBOUNDCOURSE 205 LEGDIST 5 FAF APODS MAP BADKE",
+                "FANGI": "FANGI AT OR ABOVE 5000",
+                "APODS": "APODS 4300",
+                "BADKE": "OVERFLY BADKE 2432 RNW 16 TRK 183 UNTIL 3500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DIANN",
+                    "fixes": {
+                        "DIANN": "DIANN"
+                    }
+                },
+                {
+                    "name": "GEG",
+                    "fixes": {
+                        "GEG": "GEG",
+                        "CABGO": "OVERFLY CABGO AT OR ABOVE 5700 HOLD AT CABGO LEFT TURN INBOUNDCOURSE 205 ALT 5700 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "KECCE": "KECCE AT OR ABOVE 5400",
+                "HOKAS": "HOKAS 3800 RNW 34",
+                "WUSED": "WUSED",
+                "DIANN": "OVERFLY DIANN AT OR ABOVE 8100 HOLD AT DIANN RIGHT TURN INBOUNDCOURSE 105 LEGDIST 7 FAF HOKAS MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "DIANN",
+                    "fixes": {
+                        "DIANN": "DIANN",
+                        "JURSY": "JURSY AT OR ABOVE 8100"
+                    }
+                },
+                {
+                    "name": "GEG",
+                    "fixes": {
+                        "GEG": "GEG"
+                    }
+                }
+            ]
+        }
+    ]
+}

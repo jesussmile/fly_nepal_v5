@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "BLDSO",
+            "lat": 42.36644166666667,
+            "lon": 93.80066666666667
+        },
+        {
+            "name": "DOVVA",
+            "lat": 42.411380566666665,
+            "lon": 93.8447
+        },
+        {
+            "name": "HOGOD",
+            "lat": 42.605475,
+            "lon": 94.03581943333333
+        },
+        {
+            "name": "OLTOE",
+            "lat": 42.28494166666667,
+            "lon": 93.72101666666667
+        },
+        {
+            "name": "WANPO",
+            "lat": 42.505941666666665,
+            "lon": 93.93761943333334
+        },
+        {
+            "name": "ZOKOV",
+            "lat": 42.46172778333333,
+            "lon": 93.894125
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 14",
+        "RNW 23",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "HOGOD": "HOGOD AT OR ABOVE 3000",
+                "WANPO": "WANPO 2700",
+                "ZOKOV": "ZOKOV AT OR ABOVE 1640 RNW 14 TRK 141 UNTIL 1367",
+                "OLTOE": "OVERFLY OLTOE AT OR ABOVE 3000 HOLD AT OLTOE RIGHT TURN INBOUNDCOURSE 321 LEGDIST 4 FAF WANPO MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "HOGOD",
+                    "fixes": {
+                        "HOGOD": "HOGOD RIGHT TURN INBOUNDCOURSE 141 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "OLTOE": "OLTOE AT OR ABOVE 3000",
+                "BLDSO": "BLDSO 2700",
+                "DOVVA": "DOVVA AT OR ABOVE 1620 RNW 32 TRK 321 UNTIL 1372",
+                "HOGOD": "OVERFLY HOGOD AT OR ABOVE 3000 HOLD AT HOGOD RIGHT TURN INBOUNDCOURSE 141 LEGDIST 4 FAF BLDSO MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "OLTOE",
+                    "fixes": {
+                        "OLTOE": "OLTOE RIGHT TURN INBOUNDCOURSE 321 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

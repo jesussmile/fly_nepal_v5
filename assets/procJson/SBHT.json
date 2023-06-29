@@ -1,0 +1,253 @@
+{
+    "fixes": [
+        {
+            "name": "ATM",
+            "lat": 3.2493694333333334,
+            "lon": 52.247644433333335
+        },
+        {
+            "name": "ATM01",
+            "lat": 3.2114333333333334,
+            "lon": 52.200858333333336
+        },
+        {
+            "name": "ATM02",
+            "lat": 3.2916333333333334,
+            "lon": 52.30300556666667
+        },
+        {
+            "name": "ATMNB",
+            "lat": 3.2565,
+            "lon": 52.25083333333333
+        },
+        {
+            "name": "EN07",
+            "lat": 3.261,
+            "lon": 52.259619433333334
+        },
+        {
+            "name": "EN25",
+            "lat": 3.2491027833333335,
+            "lon": 52.244872216666664
+        },
+        {
+            "name": "FF07",
+            "lat": 3.312322216666667,
+            "lon": 52.33077221666667
+        },
+        {
+            "name": "FF25",
+            "lat": 3.19555,
+            "lon": 52.18818056666667
+        },
+        {
+            "name": "FN07",
+            "lat": 3.3011583333333334,
+            "lon": 52.338047216666666
+        },
+        {
+            "name": "FN25",
+            "lat": 3.1880333333333333,
+            "lon": 52.195675
+        },
+        {
+            "name": "HT001",
+            "lat": 3.064761116666667,
+            "lon": 52.141272216666664
+        },
+        {
+            "name": "HT002",
+            "lat": 3.0928361166666667,
+            "lon": 52.049880566666666
+        },
+        {
+            "name": "HT003",
+            "lat": 3.1887666666666665,
+            "lon": 52.044863883333335
+        },
+        {
+            "name": "HT004",
+            "lat": 3.1444,
+            "lon": 52.11551943333333
+        },
+        {
+            "name": "HT006",
+            "lat": 3.1959611166666666,
+            "lon": 52.18116666666667
+        },
+        {
+            "name": "HT007",
+            "lat": 3.4414166666666666,
+            "lon": 52.366613883333336
+        },
+        {
+            "name": "HT008",
+            "lat": 3.4133111166666668,
+            "lon": 52.45802221666667
+        },
+        {
+            "name": "HT009",
+            "lat": 3.317375,
+            "lon": 52.463
+        },
+        {
+            "name": "HT011",
+            "lat": 3.3617694333333334,
+            "lon": 52.392347216666664
+        },
+        {
+            "name": "HT012",
+            "lat": 3.310222216666667,
+            "lon": 52.32668056666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "21",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 07",
+                    "fixes": {
+                        "RNW 07": "RNW 07 HDG 072 UNTIL 2200 HDG 072 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 25",
+                    "fixes": {
+                        "RNW 25": "RNW 25 HDG 252 UNTIL 2200 HDG 252 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB07",
+            "fixes": {
+                "FN07": "FN07 2100",
+                "EN07": "OVERFLY EN07 418",
+                "ATMNB": "OVERFLY ATMNB AT OR ABOVE 770 RNW 07 TRK 083 UNTIL 2500 TURN RIGHT DIRECT ATMNB AT OR ABOVE 3000 HOLD AT ATMNB RIGHT TURN INBOUNDCOURSE 284 ALT 3000 LEGTIME 1 FAF FN07 MAP ATM"
+            },
+            "transitions": [
+                {
+                    "name": "ATM",
+                    "fixes": {
+                        "ATMNB": "ATMNB AT OR ABOVE 3000 TRK 284 UNTIL 9.6 FROM ATMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FN25": "FN25 1900",
+                "EN25": "OVERFLY EN25 406",
+                "ATMNB": "OVERFLY ATMNB AT OR ABOVE 770 RNW 25 TRK 239 UNTIL 2500 TURN RIGHT DIRECT ATMNB AT OR ABOVE 3000 HOLD AT ATMNB LEFT TURN INBOUNDCOURSE 081 ALT 3000 LEGTIME 1 FAF FN25 MAP ATM"
+            },
+            "transitions": [
+                {
+                    "name": "ATM",
+                    "fixes": {
+                        "ATMNB": "ATMNB AT OR ABOVE 3000 TRK 081 UNTIL 8.8 FROM ATMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "HT011": "HT011 AT OR ABOVE 2200",
+                "HT012": "HT012 2010",
+                "ATM02": "ATM02 AT OR ABOVE 1437 RNW 07 TRK 072 UNTIL 2500 TURN RIGHT DIRECT",
+                "HT007": "OVERFLY HT007 AT OR ABOVE 4000 HOLD AT HT007 RIGHT TURN INBOUNDCOURSE 001 ALT 4000 LEGTIME 1 FAF HT012 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "HT007",
+                    "fixes": {
+                        "HT007": "HT007 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "HT008",
+                    "fixes": {
+                        "HT008": "HT008 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "HT009",
+                    "fixes": {
+                        "HT009": "HT009 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "HT004": "HT004 AT OR ABOVE 2200",
+                "HT006": "HT006 2000",
+                "ATM01": "ATM01 AT OR ABOVE 1521 RNW 25 TRK 252 UNTIL 2500 TURN LEFT DIRECT",
+                "HT003": "OVERFLY HT003 AT OR ABOVE 4000 HOLD AT HT003 LEFT TURN INBOUNDCOURSE 322 ALT 4000 LEGTIME 1 FAF HT006 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "HT001",
+                    "fixes": {
+                        "HT001": "HT001 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "HT002",
+                    "fixes": {
+                        "HT002": "HT002 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "HT003",
+                    "fixes": {
+                        "HT003": "HT003 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR07",
+            "fixes": {
+                "FF07": "FF07 2100 RNW 07",
+                "ATM": "OVERFLY ATM TRK 073 UNTIL 2500 TURN RIGHT DIRECT ATM AT OR ABOVE 3000 HOLD AT ATM RIGHT TURN INBOUNDCOURSE 275 ALT 3000 LEGTIME 1 FAF FF07 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "ATM",
+                    "fixes": {
+                        "ATM": "ATM AT OR ABOVE 3000 TRK 275 UNTIL 8.8 FROM ATM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR25",
+            "fixes": {
+                "FF25": "FF25 1900",
+                "ATM": "ATM 371 RNW 25 TRK 248 UNTIL 2500 TURN RIGHT DIRECT ATM AT OR ABOVE 3000 HOLD AT ATM LEFT TURN INBOUNDCOURSE 090 ALT 3000 LEGTIME 1 FAF FF25 MAP ATM"
+            },
+            "transitions": [
+                {
+                    "name": "ATM",
+                    "fixes": {
+                        "ATM": "ATM AT OR ABOVE 3000 TRK 090 UNTIL 8.8 FROM ATM"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,293 @@
+{
+    "fixes": [
+        {
+            "name": "ATR",
+            "lat": 38.809811116666665,
+            "lon": 75.21132221666667
+        },
+        {
+            "name": "BECAP",
+            "lat": 38.230105566666666,
+            "lon": 75.16299443333334
+        },
+        {
+            "name": "BENDR",
+            "lat": 38.28240556666667,
+            "lon": 75.08418611666667
+        },
+        {
+            "name": "CBEAV",
+            "lat": 38.37194721666667,
+            "lon": 75.26477221666667
+        },
+        {
+            "name": "CIRAN",
+            "lat": 38.14522778333333,
+            "lon": 75.23024443333334
+        },
+        {
+            "name": "CODNI",
+            "lat": 38.31997221666666,
+            "lon": 75.22911943333334
+        },
+        {
+            "name": "ELUCO",
+            "lat": 38.25508056666666,
+            "lon": 75.04722778333333
+        },
+        {
+            "name": "FEMOD",
+            "lat": 38.18545556666667,
+            "lon": 74.95325278333334
+        },
+        {
+            "name": "GOBYO",
+            "lat": 38.12465,
+            "lon": 75.02558611666667
+        },
+        {
+            "name": "KEYEL",
+            "lat": 38.31078888333333,
+            "lon": 75.12755556666667
+        },
+        {
+            "name": "LANDY",
+            "lat": 38.364688883333336,
+            "lon": 75.19556111666667
+        },
+        {
+            "name": "LEWES",
+            "lat": 38.331291666666665,
+            "lon": 75.35538056666667
+        },
+        {
+            "name": "PFAIR",
+            "lat": 38.42794721666667,
+            "lon": 75.28179721666666
+        },
+        {
+            "name": "SBY",
+            "lat": 38.345005566666664,
+            "lon": 75.510575
+        },
+        {
+            "name": "SWL",
+            "lat": 38.05659443333333,
+            "lon": 75.4639
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 14",
+        "RNW 20",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC32",
+            "fixes": {
+                "FEMOD": "FEMOD AT OR ABOVE 2000",
+                "ELUCO": "ELUCO 1500",
+                "BENDR": "BENDR AT OR ABOVE 720 RNW 32 TRK 325 UNTIL 2000",
+                "ATR": "ATR HOLD AT ATR RIGHT TURN INBOUNDCOURSE 213 LEGTIME 1 FAF ELUCO MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "ATR",
+                    "fixes": {
+                        "ATR": "ATR",
+                        "FEMOD": "FEMOD AT OR ABOVE 2000 HOLD AT FEMOD RIGHT TURN INBOUNDCOURSE 325 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "CIRAN": "CIRAN AT OR ABOVE 2000 OVERFLY CIRAN AT OR ABOVE 2000 HOLD AT CIRAN LEFT TURN INBOUNDCOURSE 044 LEGDIST 4 FAF BECAP MAP RNW 02",
+                "BECAP": "BECAP 1600 RNW 02 TRK 032 UNTIL 420 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SBY",
+                    "fixes": {
+                        "SBY": "SBY",
+                        "CIRAN": "CIRAN AT OR ABOVE 2000 HOLD AT CIRAN LEFT TURN INBOUNDCOURSE 044 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SWL",
+                    "fixes": {
+                        "SWL": "SWL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "PFAIR": "PFAIR AT OR ABOVE 2000 PFAIR AT OR ABOVE 2000 HOLD AT PFAIR RIGHT TURN INBOUNDCOURSE 145 LEGDIST 4 FAF LANDY MAP RNW 14",
+                "LANDY": "LANDY 1500 RNW 14 TRK 145 UNTIL 411 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ATR",
+                    "fixes": {
+                        "ATR": "ATR",
+                        "PFAIR": "PFAIR AT OR ABOVE 2000 HOLD AT PFAIR RIGHT TURN INBOUNDCOURSE 145 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SBY",
+                    "fixes": {
+                        "SBY": "SBY",
+                        "PFAIR": "PFAIR AT OR ABOVE 2000 HOLD AT PFAIR RIGHT TURN INBOUNDCOURSE 145 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "FEMOD": "FEMOD AT OR ABOVE 2000",
+                "ELUCO": "ELUCO 1500 RNW 32",
+                "PFAIR": "OVERFLY PFAIR AT OR ABOVE 2000 HOLD AT PFAIR RIGHT TURN INBOUNDCOURSE 145 LEGDIST 4 FAF ELUCO MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "SWL",
+                    "fixes": {
+                        "SWL": "SWL",
+                        "GOBYO": "GOBYO AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA02",
+            "fixes": {
+                "CODNI": "CODNI 1500",
+                "KEYEL": "KEYEL 860 RNW 02 TRK 108 UNTIL 860 TURN LEFT HDG 304 INTERCEPT RADIAL 274 TO",
+                "CBEAV": "CBEAV CBEAV AT OR ABOVE 2000 HOLD AT CBEAV RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1 FAF CODNI MAP KEYEL"
+            },
+            "transitions": [
+                {
+                    "name": "ATR",
+                    "fixes": {
+                        "ATR": "ATR",
+                        "CODNI": "CODNI AT OR ABOVE 2000 HOLD AT CODNI RIGHT TURN INBOUNDCOURSE 108 ALT 1800 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SBY",
+                    "fixes": {
+                        "SBY": "SBY",
+                        "LEWES": "LEWES AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "SWL",
+                    "fixes": {
+                        "SWL": "SWL",
+                        "LEWES": "LEWES AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA14",
+            "fixes": {
+                "CODNI": "CODNI 1500",
+                "KEYEL": "KEYEL 860 RNW 14 TRK 108 UNTIL 860 TURN LEFT HDG 304 INTERCEPT RADIAL 274 TO",
+                "CBEAV": "CBEAV CBEAV AT OR ABOVE 2000 HOLD AT CBEAV RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1 FAF CODNI MAP KEYEL"
+            },
+            "transitions": [
+                {
+                    "name": "ATR",
+                    "fixes": {
+                        "ATR": "ATR",
+                        "CODNI": "CODNI AT OR ABOVE 2000 HOLD AT CODNI RIGHT TURN INBOUNDCOURSE 108 ALT 1800 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SBY",
+                    "fixes": {
+                        "SBY": "SBY",
+                        "LEWES": "LEWES AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "SWL",
+                    "fixes": {
+                        "SWL": "SWL",
+                        "LEWES": "LEWES AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA20",
+            "fixes": {
+                "CODNI": "CODNI 1500",
+                "KEYEL": "KEYEL 860 RNW 20 TRK 108 UNTIL 860 TURN LEFT HDG 304 INTERCEPT RADIAL 274 TO",
+                "CBEAV": "CBEAV CBEAV AT OR ABOVE 2000 HOLD AT CBEAV RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1 FAF CODNI MAP KEYEL"
+            },
+            "transitions": [
+                {
+                    "name": "ATR",
+                    "fixes": {
+                        "ATR": "ATR",
+                        "CODNI": "CODNI AT OR ABOVE 2000 HOLD AT CODNI RIGHT TURN INBOUNDCOURSE 108 ALT 1800 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SBY",
+                    "fixes": {
+                        "SBY": "SBY",
+                        "LEWES": "LEWES AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "SWL",
+                    "fixes": {
+                        "SWL": "SWL",
+                        "LEWES": "LEWES AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA32",
+            "fixes": {
+                "CODNI": "CODNI 1500",
+                "KEYEL": "KEYEL 860 RNW 32 TRK 108 UNTIL 860 TURN LEFT HDG 304 INTERCEPT RADIAL 274 TO",
+                "CBEAV": "CBEAV CBEAV AT OR ABOVE 2000 HOLD AT CBEAV RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1 FAF CODNI MAP KEYEL"
+            },
+            "transitions": [
+                {
+                    "name": "ATR",
+                    "fixes": {
+                        "ATR": "ATR",
+                        "CODNI": "CODNI AT OR ABOVE 2000 HOLD AT CODNI RIGHT TURN INBOUNDCOURSE 108 ALT 1800 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SBY",
+                    "fixes": {
+                        "SBY": "SBY",
+                        "LEWES": "LEWES AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "SWL",
+                    "fixes": {
+                        "SWL": "SWL",
+                        "LEWES": "LEWES AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

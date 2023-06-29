@@ -1,0 +1,67 @@
+{
+    "fixes": [
+        {
+            "name": "CD701",
+            "lat": 6.662194433333333,
+            "lon": 108.62
+        },
+        {
+            "name": "CD702",
+            "lat": 6.695277783333333,
+            "lon": 108.59169443333333
+        },
+        {
+            "name": "CD703",
+            "lat": 6.737277783333333,
+            "lon": 108.55572221666667
+        },
+        {
+            "name": "FN22",
+            "lat": 6.695858333333334,
+            "lon": 108.59638056666667
+        },
+        {
+            "name": "PALBU",
+            "lat": 6.6215,
+            "lon": 108.65480556666667
+        },
+        {
+            "name": "PGNB",
+            "lat": 6.755416666666667,
+            "lon": 108.53886111666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FN22": "FN22 1600 RNW 22",
+                "PGNB": "OVERFLY PGNB TURN RIGHT HDG 040 INTERCEPT RADIAL 010 TO PGNB TRK 010 UNTIL 2000 TURN RIGHT DIRECT PGNB AT OR ABOVE 3000 FAF FN22 MAP RNW 22"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "CD701": "CD701 AT OR ABOVE 2000",
+                "CD702": "CD702 1500",
+                "CD703": "OVERFLY CD703 485 RNW 22 TURN RIGHT DIRECT",
+                "PALBU": "PALBU AT OR ABOVE 3000 HOLD AT PALBU LEFT TURN INBOUNDCOURSE 220 ALT 3000 LEGTIME 1 FAF CD702 MAP CD703"
+            },
+            "transitions": [
+                {
+                    "name": "PALBU",
+                    "fixes": {
+                        "PALBU": "PALBU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

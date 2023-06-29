@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "COSSA",
+            "lat": 32.45126388333333,
+            "lon": 83.51520833333333
+        },
+        {
+            "name": "INXUF",
+            "lat": 32.392836116666665,
+            "lon": 83.23893056666667
+        },
+        {
+            "name": "JATAV",
+            "lat": 32.411630566666666,
+            "lon": 83.32746666666667
+        },
+        {
+            "name": "POSEC",
+            "lat": 32.352475,
+            "lon": 83.04984721666666
+        },
+        {
+            "name": "TIZRA",
+            "lat": 32.38069443333333,
+            "lon": 83.18189166666667
+        },
+        {
+            "name": "WEKED",
+            "lat": 32.42264721666667,
+            "lon": 83.37950556666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 11",
+        "RNW 23",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "COSSA": "COSSA AT OR ABOVE 2600",
+                "WEKED": "WEKED 2100",
+                "JATAV": "JATAV AT OR ABOVE 1160 RNW 11 TRK 107 UNTIL 678 TURN RIGHT DIRECT",
+                "POSEC": "OVERFLY POSEC AT OR ABOVE 2600 HOLD AT POSEC RIGHT TURN INBOUNDCOURSE 287 LEGDIST 4 FAF WEKED MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "COSSA",
+                    "fixes": {
+                        "COSSA": "COSSA LEFT TURN INBOUNDCOURSE 107 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "POSEC": "POSEC AT OR ABOVE 2600",
+                "TIZRA": "TIZRA 2000",
+                "INXUF": "INXUF AT OR ABOVE 980 RNW 29 TRK 287 UNTIL 608",
+                "COSSA": "OVERFLY COSSA AT OR ABOVE 2600 HOLD AT COSSA LEFT TURN INBOUNDCOURSE 107 LEGDIST 4 FAF TIZRA MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "POSEC",
+                    "fixes": {
+                        "POSEC": "POSEC RIGHT TURN INBOUNDCOURSE 287 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

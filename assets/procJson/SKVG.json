@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "LITOL",
+            "lat": 0.8124055666666667,
+            "lon": 76.56128888333333
+        },
+        {
+            "name": "LUVDO",
+            "lat": 0.9096666666666666,
+            "lon": 76.30340556666667
+        },
+        {
+            "name": "NISBO",
+            "lat": 0.8935777833333333,
+            "lon": 76.58175556666667
+        },
+        {
+            "name": "OPTAM",
+            "lat": 0.8371,
+            "lon": 76.464525
+        },
+        {
+            "name": "SOVDI",
+            "lat": 0.7150027833333333,
+            "lon": 76.53673333333333
+        },
+        {
+            "name": "TISLU",
+            "lat": 1.1352777833333334,
+            "lon": 76.19361111666667
+        },
+        {
+            "name": "VG901",
+            "lat": 0.893575,
+            "lon": 76.58176111666667
+        },
+        {
+            "name": "VUDAK",
+            "lat": 0.7876833333333334,
+            "lon": 76.65805278333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "TISL2D",
+            "rnw": "17",
+            "fixes": {
+                "VG901": "OVERFLY VG901 AT OR ABOVE 2700",
+                "LUVDO": "LUVDO AT OR ABOVE 7000",
+                "TISLU": "TISLU AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "TISL2E",
+            "runway": "RNW 35",
+            "fixes": {
+                "TISLU": "TISLU AT OR ABOVE 12000",
+                "OPTAM": "OPTAM AT OR ABOVE 6000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAVZ35",
+            "fixes": {
+                "LITOL": "LITOL AT OR ABOVE 4000",
+                "NISBO": "NISBO 2850 RNW 35 TURN RIGHT DIRECT",
+                "OPTAM": "OPTAM AT OR ABOVE 6000 SPEED 150 HOLD AT OPTAM LEFT TURN INBOUNDCOURSE 261 ALT 6000 SPEED 180 LEGTIME 1 FAF NISBO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "OPTAM",
+                    "fixes": {
+                        "OPTAM": "OPTAM AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "SOVDI",
+                    "fixes": {
+                        "SOVDI": "SOVDI AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "VUDAK",
+                    "fixes": {
+                        "VUDAK": "VUDAK AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

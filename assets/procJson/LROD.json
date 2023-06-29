@@ -1,0 +1,87 @@
+{
+    "fixes": [
+        {
+            "name": "CF19",
+            "lat": 47.177655566666665,
+            "lon": 21.946433333333335
+        },
+        {
+            "name": "D007E",
+            "lat": 47.187027783333335,
+            "lon": 21.94885
+        },
+        {
+            "name": "D056I",
+            "lat": 47.14752778333333,
+            "lon": 22.042444433333333
+        },
+        {
+            "name": "FF19",
+            "lat": 47.1615,
+            "lon": 21.941833333333335
+        },
+        {
+            "name": "O",
+            "lat": 47.045194433333336,
+            "lon": 21.908138883333333
+        },
+        {
+            "name": "ORANB",
+            "lat": 47.10036111666667,
+            "lon": 21.924138883333335
+        },
+        {
+            "name": "RW19",
+            "lat": 47.03325278333333,
+            "lon": 21.9047
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS19",
+            "fixes": {
+                "CF19": "CF19 AT OR ABOVE 3000",
+                "FF19": "FF19 3000 RNW 19 TRK 187 UNTIL 1500 TURN RIGHT DIRECT",
+                "ORANB": "ORANB 4000 HOLD AT ORANB RIGHT TURN INBOUNDCOURSE 056 LEGTIME 1 FAF FF19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "ORA",
+                    "fixes": {
+                        "ORANB": "ORANB AT OR ABOVE 4000",
+                        "D056I": "OVERFLY D056I AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB19",
+            "fixes": {
+                "ORANB": "ORANB 1800 ORANB 4000 SPEED 185 HOLD AT ORANB RIGHT TURN INBOUNDCOURSE 007 LEGTIME 1 FAF ORANB MAP O",
+                "O": "O 735 RNW 19 TRK 187 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ORA1",
+                    "fixes": {
+                        "ORANB": "ORANB AT OR ABOVE 4000 TRK 040 UNTIL 5.3 FROM ORANB TURN LEFT DIRECT",
+                        "D007E": "D007E AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "ORA2",
+                    "fixes": {
+                        "ORANB": "ORANB AT OR ABOVE 4000 TRK 025 UNTIL 6.0 FROM ORANB TURN LEFT DIRECT",
+                        "D007E": "D007E AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "APGEM",
+            "lat": 4.205911116666667,
+            "lon": 34.323511116666666
+        },
+        {
+            "name": "AXODU",
+            "lat": 3.9844444333333335,
+            "lon": 34.20319166666667
+        },
+        {
+            "name": "AXOPO",
+            "lat": 4.148047216666667,
+            "lon": 34.548525
+        },
+        {
+            "name": "EGMUX",
+            "lat": 4.200958333333333,
+            "lon": 34.37275278333333
+        },
+        {
+            "name": "EGNUL",
+            "lat": 4.2588138833333335,
+            "lon": 34.14770278333334
+        },
+        {
+            "name": "EPSUT",
+            "lat": 4.119172216666667,
+            "lon": 34.64438333333333
+        },
+        {
+            "name": "ESRAD",
+            "lat": 4.28285,
+            "lon": 34.06778333333333
+        },
+        {
+            "name": "TEVEN",
+            "lat": 4.176911116666667,
+            "lon": 34.452652783333335
+        },
+        {
+            "name": "TEXIN",
+            "lat": 4.1673583333333335,
+            "lon": 34.120416666666664
+        },
+        {
+            "name": "USUKA",
+            "lat": 4.4660222166666665,
+            "lon": 33.98527778333333
+        },
+        {
+            "name": "XALAS",
+            "lat": 4.229961116666667,
+            "lon": 34.24360278333333
+        },
+        {
+            "name": "XOVAN",
+            "lat": 4.126763883333333,
+            "lon": 34.586269433333335
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "EGNUL": "EGNUL AT OR ABOVE 4300",
+                "XALAS": "XALAS 4100",
+                "APGEM": "OVERFLY APGEM 2485 RNW 09",
+                "XOVAN": "OVERFLY XOVAN AT OR ABOVE 6500 HOLD AT XOVAN RIGHT TURN INBOUNDCOURSE 285 ALT 6500 SPEED 230 LEGTIME 1 FAF XALAS MAP APGEM"
+            },
+            "transitions": [
+                {
+                    "name": "AXODU",
+                    "fixes": {
+                        "AXODU": "AXODU AT OR ABOVE 10000",
+                        "TEXIN": "TEXIN AT OR ABOVE 6500"
+                    }
+                },
+                {
+                    "name": "USUKA",
+                    "fixes": {
+                        "USUKA": "USUKA AT OR ABOVE 10000",
+                        "ESRAD": "ESRAD AT OR ABOVE 6500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "AXOPO": "AXOPO AT OR ABOVE 4100",
+                "TEVEN": "TEVEN 4100",
+                "EGMUX": "OVERFLY EGMUX 2630 RNW 27 TRK 285 UNTIL 3500 TURN LEFT DIRECT",
+                "EPSUT": "OVERFLY EPSUT AT OR ABOVE 5600 HOLD AT EPSUT RIGHT TURN INBOUNDCOURSE 285 ALT 5600 SPEED 230 LEGTIME 1 FAF TEVEN MAP EGMUX"
+            },
+            "transitions": [
+                {
+                    "name": "EPSUT",
+                    "fixes": {
+                        "EPSUT": "EPSUT AT OR ABOVE 5600"
+                    }
+                }
+            ]
+        }
+    ]
+}

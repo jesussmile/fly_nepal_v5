@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "AUSTS",
+            "lat": 28.228027783333335,
+            "lon": 97.14816943333334
+        },
+        {
+            "name": "CRP",
+            "lat": 27.903766666666666,
+            "lon": 97.44488056666667
+        },
+        {
+            "name": "EKIFO",
+            "lat": 27.711669433333334,
+            "lon": 97.00710833333333
+        },
+        {
+            "name": "EVUZI",
+            "lat": 28.0209,
+            "lon": 97.03490833333333
+        },
+        {
+            "name": "ISEDY",
+            "lat": 28.110188883333333,
+            "lon": 97.09329443333333
+        },
+        {
+            "name": "OGUHO",
+            "lat": 27.778641666666665,
+            "lon": 96.87704443333334
+        },
+        {
+            "name": "RSDMG",
+            "lat": 27.902469433333334,
+            "lon": 96.95763333333333
+        },
+        {
+            "name": "WHADE",
+            "lat": 27.868166666666667,
+            "lon": 96.93528611666666
+        },
+        {
+            "name": "WORRY",
+            "lat": 28.111436116666667,
+            "lon": 97.2551
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ISEDY": "ISEDY AT OR ABOVE 1800 OVERFLY ISEDY AT OR ABOVE 1800 HOLD AT ISEDY RIGHT TURN INBOUNDCOURSE 144 LEGDIST 4 FAF EVUZI MAP RNW 14",
+                "EVUZI": "EVUZI 1600 RNW 14 TRK 144 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AUSTS",
+                    "fixes": {
+                        "AUSTS": "AUSTS"
+                    }
+                },
+                {
+                    "name": "ISEDY",
+                    "fixes": {
+                        "ISEDY": "ISEDY RIGHT TURN INBOUNDCOURSE 144 ALT 1800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WORRY",
+                    "fixes": {
+                        "WORRY": "WORRY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "OGUHO": "OGUHO AT OR ABOVE 1800",
+                "WHADE": "WHADE 1600",
+                "RSDMG": "RSDMG AT OR ABOVE 840 RNW 32 TRK 324 UNTIL 340",
+                "ISEDY": "OVERFLY ISEDY AT OR ABOVE 1800 HOLD AT ISEDY RIGHT TURN INBOUNDCOURSE 144 LEGDIST 4 FAF WHADE MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP",
+                        "EKIFO": "EKIFO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "GNSHP",
+            "lat": 36.88470278333333,
+            "lon": 87.32499166666666
+        },
+        {
+            "name": "LANKY",
+            "lat": 36.48715833333333,
+            "lon": 88.21453888333333
+        },
+        {
+            "name": "RELSE",
+            "lat": 36.834344433333335,
+            "lon": 87.58481666666667
+        },
+        {
+            "name": "UYURI",
+            "lat": 36.9005,
+            "lon": 87.20296943333334
+        },
+        {
+            "name": "WASMO",
+            "lat": 37.0835,
+            "lon": 87.30060833333333
+        },
+        {
+            "name": "YANUS",
+            "lat": 37.242586116666665,
+            "lon": 87.86441388333333
+        },
+        {
+            "name": "YAYUP",
+            "lat": 36.879525,
+            "lon": 87.32497221666667
+        },
+        {
+            "name": "ZIRAS",
+            "lat": 36.81291388333333,
+            "lon": 87.70688056666667
+        },
+        {
+            "name": "ZITVI",
+            "lat": 36.866325,
+            "lon": 87.40122221666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "ZIRAS": "ZIRAS AT OR ABOVE 2500",
+                "RELSE": "RELSE 2500 RNW 08",
+                "UYURI": "UYURI TURN LEFT DIRECT",
+                "WASMO": "OVERFLY WASMO AT OR ABOVE 3000 HOLD AT WASMO RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4 FAF RELSE MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "GNSHP",
+                    "fixes": {
+                        "GNSHP": "GNSHP",
+                        "ZIRAS": "OVERFLY ZIRAS AT OR ABOVE 2500 HOLD AT ZIRAS LEFT TURN INBOUNDCOURSE 079 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LANKY",
+                    "fixes": {
+                        "LANKY": "LANKY"
+                    }
+                },
+                {
+                    "name": "YANUS",
+                    "fixes": {
+                        "YANUS": "YANUS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "UYURI": "UYURI AT OR ABOVE 2500",
+                "YAYUP": "YAYUP 2500",
+                "ZITVI": "ZITVI AT OR ABOVE 1300 RNW 26 TRK 259 UNTIL 1100 TURN RIGHT DIRECT",
+                "WASMO": "OVERFLY WASMO AT OR ABOVE 3000 HOLD AT WASMO RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4 FAF YAYUP MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "GNSHP",
+                    "fixes": {
+                        "GNSHP": "GNSHP",
+                        "UYURI": "OVERFLY UYURI AT OR ABOVE 2500 HOLD AT UYURI RIGHT TURN INBOUNDCOURSE 259 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WASMO",
+                    "fixes": {
+                        "WASMO": "WASMO",
+                        "UYURI": "OVERFLY UYURI AT OR ABOVE 2500 HOLD AT UYURI RIGHT TURN INBOUNDCOURSE 259 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

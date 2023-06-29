@@ -1,0 +1,149 @@
+{
+    "fixes": [
+        {
+            "name": "AE016",
+            "lat": 40.15037778333333,
+            "lon": 32.62554166666666
+        },
+        {
+            "name": "AE141",
+            "lat": 40.01291943333333,
+            "lon": 32.51039721666667
+        },
+        {
+            "name": "AF001",
+            "lat": 39.94162038333333,
+            "lon": 32.232782883333336
+        },
+        {
+            "name": "AF002",
+            "lat": 39.88239106666666,
+            "lon": 32.28868551666667
+        },
+        {
+            "name": "CF03",
+            "lat": 39.919730566666665,
+            "lon": 32.43259166666667
+        },
+        {
+            "name": "D207N",
+            "lat": 39.877608333333335,
+            "lon": 32.39751666666667
+        },
+        {
+            "name": "D207Q",
+            "lat": 39.83547778333333,
+            "lon": 32.362486116666666
+        },
+        {
+            "name": "D250R",
+            "lat": 40.009391666666666,
+            "lon": 32.198341666666664
+        },
+        {
+            "name": "D325K",
+            "lat": 40.22882778333334,
+            "lon": 32.69020278333333
+        },
+        {
+            "name": "EKLOM",
+            "lat": 39.83511943333333,
+            "lon": 32.36226943333333
+        },
+        {
+            "name": "ERTUG",
+            "lat": 40.022333333333336,
+            "lon": 32.26116666666667
+        },
+        {
+            "name": "FF03",
+            "lat": 39.944997216666664,
+            "lon": 32.45365556666667
+        },
+        {
+            "name": "RAVSO",
+            "lat": 39.94493333333333,
+            "lon": 32.45365
+        },
+        {
+            "name": "TUSAV",
+            "lat": 40.27650833333333,
+            "lon": 32.73170833333333
+        },
+        {
+            "name": "ULKAR",
+            "lat": 39.78816666666667,
+            "lon": 32.27333333333333
+        },
+        {
+            "name": "ZIR",
+            "lat": 40.08619443333333,
+            "lon": 32.576
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY03",
+            "fixes": {
+                "CF03": "CF03 AT OR ABOVE 5600",
+                "FF03": "FF03 5600 RNW 03",
+                "D325K": "OVERFLY D325K TURN LEFT DIRECT",
+                "EKLOM": "EKLOM AT OR ABOVE 7400 FAF FF03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "ULKAR",
+                    "fixes": {
+                        "ULKAR": "ULKAR",
+                        "EKLOM": "EKLOM AT OR ABOVE 7400",
+                        "D207N": "D207N AT OR ABOVE 6500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ03",
+            "fixes": {
+                "CF03": "CF03 AT OR ABOVE 5600",
+                "FF03": "FF03 5600 RNW 03 HDG 027 UNTIL 10.0 FROM",
+                "ZIR": "ZIR TURN LEFT DIRECT",
+                "D250R": "D250R AT OR ABOVE 10000 FAF FF03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "ERTUG",
+                    "fixes": {
+                        "ERTUG": "ERTUG",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D207Q": "D207Q AT OR ABOVE 7400",
+                        "D207N": "D207N AT OR ABOVE 6500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "RAVSO": "RAVSO 5600",
+                "AE141": "AE141 AT OR ABOVE 4020 RNW 03",
+                "AE016": "AE016",
+                "TUSAV": "OVERFLY TUSAV AT OR ABOVE 7000 SPEED 230 HOLD AT TUSAV RIGHT TURN INBOUNDCOURSE 027 SPEED 230 LEGDIST 6 FAF RAVSO MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "EKLOM",
+                    "fixes": {
+                        "EKLOM": "EKLOM 7000"
+                    }
+                }
+            ]
+        }
+    ]
+}

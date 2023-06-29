@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "UMEMY",
+            "lat": 36.62246111666666,
+            "lon": 90.03192221666667
+        },
+        {
+            "name": "WEPKI",
+            "lat": 36.36616943333333,
+            "lon": 89.84845
+        },
+        {
+            "name": "WUTIV",
+            "lat": 36.52138611666667,
+            "lon": 89.95939166666666
+        },
+        {
+            "name": "ZESBO",
+            "lat": 36.409483333333334,
+            "lon": 89.87935278333333
+        },
+        {
+            "name": "ZOXUM",
+            "lat": 36.26488056666667,
+            "lon": 89.77634166666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "UMEMY": "UMEMY AT OR ABOVE 2400",
+                "WUTIV": "WUTIV 1900 RNW 15 TRK 152 UNTIL 669",
+                "ZOXUM": "OVERFLY ZOXUM AT OR ABOVE 2400 HOLD AT ZOXUM RIGHT TURN INBOUNDCOURSE 332 LEGDIST 4 FAF WUTIV MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "UMEMY",
+                    "fixes": {
+                        "UMEMY": "UMEMY RIGHT TURN INBOUNDCOURSE 152 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ZOXUM": "ZOXUM AT OR ABOVE 2400",
+                "WEPKI": "WEPKI 1900",
+                "ZESBO": "ZESBO AT OR ABOVE 940 RNW 33 TRK 332 UNTIL 669",
+                "UMEMY": "OVERFLY UMEMY AT OR ABOVE 2400 HOLD AT UMEMY RIGHT TURN INBOUNDCOURSE 152 LEGDIST 4 FAF WEPKI MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "ZOXUM",
+                    "fixes": {
+                        "ZOXUM": "ZOXUM RIGHT TURN INBOUNDCOURSE 332 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

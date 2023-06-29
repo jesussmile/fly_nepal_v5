@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "FLUBS",
+            "lat": 38.01529166666667,
+            "lon": 106.13442778333334
+        },
+        {
+            "name": "HOMME",
+            "lat": 37.520475,
+            "lon": 105.89813333333333
+        },
+        {
+            "name": "ICORY",
+            "lat": 37.80850278333333,
+            "lon": 106.03787221666667
+        },
+        {
+            "name": "LUISS",
+            "lat": 38.219575,
+            "lon": 106.23940833333333
+        },
+        {
+            "name": "SHERN",
+            "lat": 37.72295833333333,
+            "lon": 105.99600833333334
+        },
+        {
+            "name": "ZINGS",
+            "lat": 37.74620278333333,
+            "lon": 106.24811943333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 06",
+        "RNW 21",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "HOMME1",
+            "rnw": "17R",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 06",
+                    "fixes": {
+                        "RNW 06": "RNW 06 HDG 059 UNTIL 8500",
+                        "SHERN": "SHERN 10000 SPEED 150",
+                        "HOMME": "HOMME"
+                    }
+                },
+                {
+                    "rwy": "RNW 24",
+                    "fixes": {
+                        "RNW 24": "RNW 24 HDG 239 UNTIL 8500 TURN LEFT DIRECT",
+                        "SHERN": "SHERN 10000 SPEED 150",
+                        "HOMME": "HOMME"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "ICORY": "ICORY AT OR ABOVE 11100",
+                "ZINGS": "ZINGS 9500 RNW 24 TRK 240 UNTIL 8600 TURN LEFT DIRECT",
+                "SHERN": "SHERN",
+                "HOMME": "OVERFLY HOMME AT OR ABOVE 11100 HOLD AT HOMME RIGHT TURN INBOUNDCOURSE 151 LEGDIST 7 FAF ZINGS MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "HOMME",
+                    "fixes": {
+                        "HOMME": "HOMME"
+                    }
+                },
+                {
+                    "name": "ICORY",
+                    "fixes": {
+                        "ICORY": "ICORY RIGHT TURN INBOUNDCOURSE 242 ALT 11100 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "LUISS",
+                    "fixes": {
+                        "LUISS": "LUISS",
+                        "FLUBS": "FLUBS AT OR ABOVE 13400"
+                    }
+                }
+            ]
+        }
+    ]
+}

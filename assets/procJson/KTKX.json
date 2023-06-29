@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "COSAD",
+            "lat": 36.04038056666667,
+            "lon": 90.11071666666666
+        },
+        {
+            "name": "HESLU",
+            "lat": 36.13731943333333,
+            "lon": 90.07230278333333
+        },
+        {
+            "name": "OGVIE",
+            "lat": 36.407063883333336,
+            "lon": 89.96485
+        },
+        {
+            "name": "SOYOT",
+            "lat": 36.31017778333333,
+            "lon": 90.00353888333333
+        },
+        {
+            "name": "YEMQA",
+            "lat": 36.26205556666667,
+            "lon": 90.02271943333334
+        },
+        {
+            "name": "ZISGO",
+            "lat": 36.18544166666667,
+            "lon": 90.05319443333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 18",
+        "RNW 20",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "COSAD": "COSAD AT OR ABOVE 2500",
+                "HESLU": "HESLU 1900",
+                "ZISGO": "ZISGO AT OR ABOVE 920 RNW 02 TRK 018 UNTIL 509",
+                "OGVIE": "OVERFLY OGVIE AT OR ABOVE 2500 HOLD AT OGVIE RIGHT TURN INBOUNDCOURSE 198 LEGDIST 4 FAF HESLU MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "COSAD",
+                    "fixes": {
+                        "COSAD": "COSAD LEFT TURN INBOUNDCOURSE 018 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "OGVIE": "OGVIE AT OR ABOVE 2500",
+                "SOYOT": "SOYOT 1900",
+                "YEMQA": "YEMQA AT OR ABOVE 920 RNW 20 TRK 198 UNTIL 550",
+                "COSAD": "OVERFLY COSAD AT OR ABOVE 2500 HOLD AT COSAD LEFT TURN INBOUNDCOURSE 018 LEGDIST 4 FAF SOYOT MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "OGVIE",
+                    "fixes": {
+                        "OGVIE": "OGVIE RIGHT TURN INBOUNDCOURSE 198 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

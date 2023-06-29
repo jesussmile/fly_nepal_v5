@@ -1,0 +1,153 @@
+{
+    "fixes": [
+        {
+            "name": "ATAYI",
+            "lat": 65.23311943333333,
+            "lon": 167.08536111666666
+        },
+        {
+            "name": "DAVIZ",
+            "lat": 65.34192778333333,
+            "lon": 168.27213888333333
+        },
+        {
+            "name": "DEBOT",
+            "lat": 65.54540833333333,
+            "lon": 167.917375
+        },
+        {
+            "name": "GLNCO",
+            "lat": 65.54108888333333,
+            "lon": 167.917325
+        },
+        {
+            "name": "HOMAM",
+            "lat": 65.47361388333333,
+            "lon": 167.90210278333333
+        },
+        {
+            "name": "HONPO",
+            "lat": 65.46666943333334,
+            "lon": 167.90053888333333
+        },
+        {
+            "name": "JAGMA",
+            "lat": 65.28811111666667,
+            "lon": 167.51551666666666
+        },
+        {
+            "name": "JASOB",
+            "lat": 65.35784721666667,
+            "lon": 167.87618056666668
+        },
+        {
+            "name": "JEKLI",
+            "lat": 65.77518333333333,
+            "lon": 167.35638333333333
+        },
+        {
+            "name": "JIPAK",
+            "lat": 65.10898888333334,
+            "lon": 166.77776666666668
+        },
+        {
+            "name": "SHHNB",
+            "lat": 66.25808611666666,
+            "lon": 166.05238888333332
+        },
+        {
+            "name": "TNCNB",
+            "lat": 65.56173056666667,
+            "lon": 167.92480278333332
+        },
+        {
+            "name": "UBARE",
+            "lat": 65.46428056666667,
+            "lon": 167.8806
+        },
+        {
+            "name": "WNGCO",
+            "lat": 65.36583888333334,
+            "lon": 167.83628611666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "HONPO2",
+            "rnw": "16",
+            "fixes": {
+                "HONPO": "HONPO AT OR ABOVE 7000",
+                "JIPAK": "JIPAK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "JEKLI1",
+            "rnw": "34",
+            "fixes": {
+                "JEKLI": "JEKLI AT OR ABOVE 4000",
+                "SHHNB": "SHHNB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TNC4",
+            "rnw": "16",
+            "fixes": {
+                "ATAYI": "ATAYI",
+                "JIPAK": "JIPAK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD34",
+            "fixes": {
+                "WNGCO": "WNGCO AT OR ABOVE 3500 WNGCO 3500 HOLD AT WNGCO RIGHT TURN INBOUNDCOURSE 339 SPEED 310 LEGTIME 1 FAF UBARE MAP DEBO",
+                "UBARE": "UBARE 2100",
+                "DEBOT": "DEBOT 518 RNW 34 TRK 339 UNTIL 680 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TNC",
+                    "fixes": {
+                        "TNCNB": "TNCNB AT OR ABOVE 3500",
+                        "WNGCO": "WNGCO AT OR ABOVE 3500 HOLD AT WNGCO RIGHT TURN INBOUNDCOURSE 339 ALT 3500 SPEED 310 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "JASOB": "JASOB AT OR ABOVE 3000",
+                "HOMAM": "HOMAM 1900",
+                "GLNCO": "OVERFLY GLNCO 601 RNW 34 TRK 345 UNTIL 1500 TURN RIGHT DIRECT",
+                "JAGMA": "OVERFLY JAGMA AT OR ABOVE 4000 HOLD AT JAGMA LEFT TURN INBOUNDCOURSE 285 ALT 8000 LEGDIST 2 FAF HOMAM MAP GLNCO"
+            },
+            "transitions": [
+                {
+                    "name": "DAVIZ",
+                    "fixes": {
+                        "DAVIZ": "DAVIZ AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "JAGMA",
+                    "fixes": {
+                        "JAGMA": "JAGMA AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

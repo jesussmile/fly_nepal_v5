@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "HALOS",
+            "lat": 42.11038333333333,
+            "lon": 77.89243056666666
+        },
+        {
+            "name": "IYRIH",
+            "lat": 42.110033333333334,
+            "lon": 77.93320833333334
+        },
+        {
+            "name": "JILKU",
+            "lat": 42.10852778333334,
+            "lon": 78.09295278333333
+        },
+        {
+            "name": "NEVGE",
+            "lat": 42.107072216666666,
+            "lon": 78.22753888333334
+        },
+        {
+            "name": "PAYIV",
+            "lat": 42.11143056666667,
+            "lon": 77.75675278333334
+        },
+        {
+            "name": "UTVIW",
+            "lat": 42.108877783333334,
+            "lon": 78.05780278333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "NEVGE": "NEVGE AT OR ABOVE 4300",
+                "JILKU": "JILKU 3500",
+                "UTVIW": "UTVIW AT OR ABOVE 3000 RNW 10 TRK 097 UNTIL 2375",
+                "PAYIV": "OVERFLY PAYIV AT OR ABOVE 4300 HOLD AT PAYIV RIGHT TURN INBOUNDCOURSE 277 LEGDIST 5 FAF JILKU MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "NEVGE",
+                    "fixes": {
+                        "NEVGE": "NEVGE RIGHT TURN INBOUNDCOURSE 097 ALT 4300 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "PAYIV": "PAYIV AT OR ABOVE 4300",
+                "HALOS": "HALOS 3400",
+                "IYRIH": "IYRIH AT OR ABOVE 2820 RNW 28 TRK 277 UNTIL 2311",
+                "NEVGE": "OVERFLY NEVGE AT OR ABOVE 4300 HOLD AT NEVGE RIGHT TURN INBOUNDCOURSE 097 LEGDIST 5 FAF HALOS MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "PAYIV",
+                    "fixes": {
+                        "PAYIV": "PAYIV RIGHT TURN INBOUNDCOURSE 277 ALT 4300 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

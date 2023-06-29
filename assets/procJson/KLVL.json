@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "APOYU",
+            "lat": 36.92549721666666,
+            "lon": 77.81855278333333
+        },
+        {
+            "name": "BINAC",
+            "lat": 36.84271388333333,
+            "lon": 77.80494721666666
+        },
+        {
+            "name": "FITIK",
+            "lat": 36.590825,
+            "lon": 77.76373333333333
+        },
+        {
+            "name": "GEPKE",
+            "lat": 36.77217221666667,
+            "lon": 77.50225556666666
+        },
+        {
+            "name": "MANGE",
+            "lat": 37.02437221666667,
+            "lon": 77.72863333333333
+        },
+        {
+            "name": "WEMBU",
+            "lat": 36.690055566666665,
+            "lon": 77.77993888333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 18",
+        "RNW 24",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA18",
+            "fixes": {
+                "APOYU": "APOYU AT OR ABOVE 2000",
+                "BINAC": "BINAC 1600 RNW 18 TRK 180 UNTIL 729 TURN LEFT DIRECT",
+                "GEPKE": "OVERFLY GEPKE AT OR ABOVE 4000 HOLD AT GEPKE RIGHT TURN INBOUNDCOURSE 037 LEGDIST 4 FAF BINAC MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "MANGE",
+                    "fixes": {
+                        "MANGE": "MANGE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB36",
+            "fixes": {
+                "FITIK": "FITIK AT OR ABOVE 2800 OVERFLY FITIK AT OR ABOVE 3000 HOLD AT FITIK RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF WEMBU MAP RNW 36",
+                "WEMBU": "WEMBU 1900 RNW 36 TRK 001 UNTIL 729 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FITIK",
+                    "fixes": {
+                        "FITIK": "FITIK RIGHT TURN INBOUNDCOURSE 001 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "fixes": [
+        {
+            "name": "G180P",
+            "lat": 14.835,
+            "lon": 13.776666666666667
+        },
+        {
+            "name": "G270F",
+            "lat": 14.92,
+            "lon": 13.695
+        },
+        {
+            "name": "G270L",
+            "lat": 14.916666666666666,
+            "lon": 13.78
+        },
+        {
+            "name": "G270P",
+            "lat": 14.915,
+            "lon": 13.866666666666667
+        },
+        {
+            "name": "G360P",
+            "lat": 15.001666666666667,
+            "lon": 13.783333333333333
+        },
+        {
+            "name": "MR28",
+            "lat": 14.923333333333334,
+            "lon": 13.605
+        },
+        {
+            "name": "UB090",
+            "lat": 14.843333333333334,
+            "lon": 13.518333333333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "G270L": "G270L AT OR ABOVE 7600",
+                "G270F": "G270F 7600",
+                "MR28": "OVERFLY MR28 6016 RNW 28 TRK 275 UNTIL 6180 TURN RIGHT DIRECT",
+                "G180P": "G180P 9000 FAF G270F MAP MR28"
+            },
+            "transitions": [
+                {
+                    "name": "G180P",
+                    "fixes": {
+                        "G180P": "G180P AT OR ABOVE 9000"
+                    }
+                },
+                {
+                    "name": "G270P",
+                    "fixes": {
+                        "G270P": "G270P AT OR ABOVE 9000"
+                    }
+                },
+                {
+                    "name": "G360P",
+                    "fixes": {
+                        "G360P": "G360P AT OR ABOVE 9000"
+                    }
+                },
+                {
+                    "name": "UB090",
+                    "fixes": {
+                        "UB090": "UB090 AT OR ABOVE 10000",
+                        "G180P": "G180P AT OR ABOVE 9000"
+                    }
+                }
+            ]
+        }
+    ]
+}

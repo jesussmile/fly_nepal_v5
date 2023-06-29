@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "EVOQU",
+            "lat": 31.352302783333332,
+            "lon": 103.48645
+        },
+        {
+            "name": "FST",
+            "lat": 30.952108333333335,
+            "lon": 102.97571111666667
+        },
+        {
+            "name": "HUGPA",
+            "lat": 31.20425,
+            "lon": 103.37126666666667
+        },
+        {
+            "name": "INK",
+            "lat": 31.874763883333333,
+            "lon": 103.24377778333333
+        },
+        {
+            "name": "LEYIS",
+            "lat": 31.296875,
+            "lon": 103.20946943333334
+        },
+        {
+            "name": "NUBIY",
+            "lat": 31.104983333333333,
+            "lon": 103.21505278333333
+        },
+        {
+            "name": "ONCAQ",
+            "lat": 31.304963883333333,
+            "lon": 103.44957221666667
+        },
+        {
+            "name": "RISDY",
+            "lat": 31.463525,
+            "lon": 103.57325556666666
+        },
+        {
+            "name": "WALOM",
+            "lat": 31.564152783333334,
+            "lon": 103.65200833333333
+        },
+        {
+            "name": "WIRVA",
+            "lat": 31.416522216666667,
+            "lon": 103.53654166666666
+        },
+        {
+            "name": "ZEKPI",
+            "lat": 31.657111116666666,
+            "lon": 103.48985556666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 14",
+        "RNW 27",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "WALOM": "WALOM AT OR ABOVE 4600",
+                "RISDY": "RISDY 4300",
+                "WIRVA": "WIRVA AT OR ABOVE 3220 RNW 14 TRK 137 UNTIL 2808",
+                "HUGPA": "OVERFLY HUGPA AT OR ABOVE 4500 HOLD AT HUGPA LEFT TURN INBOUNDCOURSE 317 LEGDIST 5 FAF RISDY MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "FST",
+                    "fixes": {
+                        "FST": "FST",
+                        "WALOM": "OVERFLY WALOM AT OR ABOVE 5100 HOLD AT WALOM RIGHT TURN INBOUNDCOURSE 137 ALT 4600 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "INK",
+                    "fixes": {
+                        "INK": "INK",
+                        "ZEKPI": "ZEKPI AT OR ABOVE 4600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "HUGPA": "HUGPA AT OR ABOVE 4500",
+                "ONCAQ": "ONCAQ 4300",
+                "EVOQU": "EVOQU AT OR ABOVE 3200 RNW 32 TRK 317 UNTIL 2805",
+                "WALOM": "OVERFLY WALOM AT OR ABOVE 4600 HOLD AT WALOM RIGHT TURN INBOUNDCOURSE 137 LEGDIST 5 FAF ONCAQ MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "FST",
+                    "fixes": {
+                        "FST": "FST",
+                        "NUBIY": "NUBIY AT OR ABOVE 5100"
+                    }
+                },
+                {
+                    "name": "HUGPA",
+                    "fixes": {
+                        "HUGPA": "HUGPA LEFT TURN INBOUNDCOURSE 317 ALT 4500 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "INK",
+                    "fixes": {
+                        "INK": "INK",
+                        "LEYIS": "LEYIS AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        }
+    ]
+}

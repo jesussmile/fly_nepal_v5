@@ -1,0 +1,93 @@
+{
+    "fixes": [
+        {
+            "name": "CORBN",
+            "lat": 28.547480566666668,
+            "lon": 100.10875
+        },
+        {
+            "name": "COT",
+            "lat": 28.462016666666667,
+            "lon": 99.11854443333333
+        },
+        {
+            "name": "DANYE",
+            "lat": 28.706933333333332,
+            "lon": 100.21399166666667
+        },
+        {
+            "name": "DBRAA",
+            "lat": 28.793522216666666,
+            "lon": 100.27131111666667
+        },
+        {
+            "name": "RYINN",
+            "lat": 28.46080278333333,
+            "lon": 100.0517
+        },
+        {
+            "name": "SUZEE",
+            "lat": 28.502755566666668,
+            "lon": 99.96991943333333
+        },
+        {
+            "name": "SVANA",
+            "lat": 28.835613883333334,
+            "lon": 100.18936111666666
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "DBRAA": "DBRAA AT OR ABOVE 2400",
+                "DANYE": "DANYE 2400 RNW 15",
+                "RYINN": "OVERFLY RYINN AT OR ABOVE 2400 HOLD AT RYINN RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4 FAF DANYE MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "COT",
+                    "fixes": {
+                        "COT": "COT",
+                        "SVANA": "SVANA AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "DBRAA",
+                    "fixes": {
+                        "DBRAA": "DBRAA RIGHT TURN INBOUNDCOURSE 143 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "RYINN": "RYINN AT OR ABOVE 2400",
+                "CORBN": "CORBN 2400 RNW 33",
+                "DBRAA": "OVERFLY DBRAA AT OR ABOVE 2400 HOLD AT DBRAA RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4 FAF CORBN MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "COT",
+                    "fixes": {
+                        "COT": "COT",
+                        "SUZEE": "SUZEE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "RYINN",
+                    "fixes": {
+                        "RYINN": "RYINN RIGHT TURN INBOUNDCOURSE 323 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

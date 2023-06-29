@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "ALCOR",
+            "lat": 36.39637221666667,
+            "lon": 97.32634721666666
+        },
+        {
+            "name": "CUDMU",
+            "lat": 36.834158333333335,
+            "lon": 97.34989443333333
+        },
+        {
+            "name": "EKUKS",
+            "lat": 36.74478333333333,
+            "lon": 97.349475
+        },
+        {
+            "name": "EWAIT",
+            "lat": 36.935955566666664,
+            "lon": 97.35025
+        },
+        {
+            "name": "GUSSI",
+            "lat": 36.78329721666667,
+            "lon": 97.34971943333333
+        },
+        {
+            "name": "IOLLA",
+            "lat": 36.558308333333336,
+            "lon": 97.34893888333333
+        },
+        {
+            "name": "KIZMA",
+            "lat": 36.66011111666667,
+            "lon": 97.34929166666667
+        },
+        {
+            "name": "PER",
+            "lat": 36.746530566666664,
+            "lon": 97.16015556666666
+        },
+        {
+            "name": "SIKAE",
+            "lat": 36.745297216666664,
+            "lon": 97.29701388333334
+        },
+        {
+            "name": "WINBI",
+            "lat": 36.706927783333335,
+            "lon": 97.34945278333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "EWAIT": "EWAIT AT OR ABOVE 2800",
+                "CUDMU": "CUDMU 2700",
+                "GUSSI": "GUSSI AT OR ABOVE 1700 RNW 17",
+                "IOLLA": "OVERFLY IOLLA AT OR ABOVE 2800 HOLD AT IOLLA RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF CUDMU MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PER": "PER",
+                        "EWAIT": "OVERFLY EWAIT AT OR ABOVE 2800 HOLD AT EWAIT RIGHT TURN INBOUNDCOURSE 174 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "IOLLA": "IOLLA AT OR ABOVE 2800",
+                "KIZMA": "KIZMA 2600",
+                "WINBI": "WINBI AT OR ABOVE 1680 RNW 35",
+                "EWAIT": "OVERFLY EWAIT AT OR ABOVE 2800 HOLD AT EWAIT RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF KIZMA MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "ALCOR",
+                    "fixes": {
+                        "ALCOR": "ALCOR"
+                    }
+                },
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PER": "PER",
+                        "IOLLA": "OVERFLY IOLLA AT OR ABOVE 2800 HOLD AT IOLLA RIGHT TURN INBOUNDCOURSE 354 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA17",
+            "fixes": {
+                "PER": "PER 2800 PER HOLD AT PER RIGHT TURN INBOUNDCOURSE 263 LEGTIME 1 FAF PER MAP EKUKS",
+                "SIKAE": "SIKAE AT OR ABOVE 1640",
+                "EKUKS": "EKUKS 1620 RNW 17 TRK 263 UNTIL 2800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PER": "PER RIGHT TURN INBOUNDCOURSE 263 ALT 2800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA35",
+            "fixes": {
+                "PER": "PER 2800 PER HOLD AT PER RIGHT TURN INBOUNDCOURSE 263 LEGTIME 1 FAF PER MAP EKUKS",
+                "SIKAE": "SIKAE AT OR ABOVE 1640",
+                "EKUKS": "EKUKS 1620 RNW 35 TRK 263 UNTIL 2800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PER": "PER RIGHT TURN INBOUNDCOURSE 263 ALT 2800 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,321 @@
+{
+    "fixes": [
+        {
+            "name": "CF03",
+            "lat": 9.645591666666666,
+            "lon": 1.0391333333333332
+        },
+        {
+            "name": "D025H",
+            "lat": 9.866008333333333,
+            "lon": 1.1334944333333334
+        },
+        {
+            "name": "D039R",
+            "lat": 9.987986116666667,
+            "lon": 1.2656694333333334
+        },
+        {
+            "name": "D220Q",
+            "lat": 9.522975,
+            "lon": 0.90615
+        },
+        {
+            "name": "DENIT",
+            "lat": 9.562388883333334,
+            "lon": 1.0035277833333334
+        },
+        {
+            "name": "DILSO",
+            "lat": 9.595422216666666,
+            "lon": 0.9260166666666667
+        },
+        {
+            "name": "EDDER",
+            "lat": 9.947666666666667,
+            "lon": 1.1685555666666667
+        },
+        {
+            "name": "FD21",
+            "lat": 9.862927783333333,
+            "lon": 1.132175
+        },
+        {
+            "name": "FF03",
+            "lat": 9.676416666666666,
+            "lon": 1.0523277833333333
+        },
+        {
+            "name": "GAPIN",
+            "lat": 9.562708333333333,
+            "lon": 1.0036638833333333
+        },
+        {
+            "name": "MD21",
+            "lat": 9.793572216666666,
+            "lon": 1.1024805666666666
+        },
+        {
+            "name": "MORAR",
+            "lat": 9.92985,
+            "lon": 1.2526722166666666
+        },
+        {
+            "name": "NG501",
+            "lat": 9.64285,
+            "lon": 1.0379555666666667
+        },
+        {
+            "name": "NG502",
+            "lat": 9.833944433333333,
+            "lon": 1.1197972166666668
+        },
+        {
+            "name": "NG503",
+            "lat": 9.885575,
+            "lon": 1.1419277833333332
+        },
+        {
+            "name": "NG504",
+            "lat": 9.70065,
+            "lon": 1.0627
+        },
+        {
+            "name": "NT",
+            "lat": 9.747333333333334,
+            "lon": 1.0826944333333333
+        },
+        {
+            "name": "POPOL",
+            "lat": 9.995369433333334,
+            "lon": 1.0972416666666667
+        },
+        {
+            "name": "RW03",
+            "lat": 9.756894433333333,
+            "lon": 1.0867861166666666
+        },
+        {
+            "name": "RW21",
+            "lat": 9.777705566666667,
+            "lon": 1.0957
+        },
+        {
+            "name": "TASUB",
+            "lat": 9.529977783333333,
+            "lon": 1.0812944333333334
+        },
+        {
+            "name": "VABOR",
+            "lat": 9.962619433333334,
+            "lon": 1.1749638833333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDY03",
+            "fixes": {
+                "FF03": "FF03 3200",
+                "NT": "NT 1747 RNW 03 TRK 025 UNTIL 2600 TURN RIGHT DIRECT NT 4200 FAF FF03 MAP N"
+            },
+            "transitions": [
+                {
+                    "name": "NT1",
+                    "fixes": {
+                        "NT": "NT AT OR ABOVE 4200 TRK 232 UNTIL 7.0 FROM NT"
+                    }
+                },
+                {
+                    "name": "NT2",
+                    "fixes": {
+                        "NT": "NT AT OR ABOVE 4200 TRK 220 UNTIL 5.8 FROM NT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ03",
+            "fixes": {
+                "CF03": "CF03 AT OR ABOVE 3200",
+                "FF03": "FF03 3200",
+                "NT": "NT 1747 RNW 03 TRK 025 UNTIL 2600 TURN LEFT HDG 189 INTERCEPT RADIAL 220 TO",
+                "D220Q": "D220Q OVERFLY D220Q 4200 TURN LEFT DIRECT",
+                "DENIT": "DENIT HOLD AT DENIT LEFT TURN INBOUNDCOURSE 025 SPEED 230 LEGDIST 5 FAF FF03 MAP N"
+            },
+            "transitions": [
+                {
+                    "name": "DENIT",
+                    "fixes": {
+                        "DENIT": "DENIT AT OR ABOVE 4200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDY21",
+            "fixes": {
+                "FD21": "FD21 3300",
+                "MD21": "MD21 1893 RNW 21",
+                "NT": "NT TRK 205 UNTIL 2600 TURN LEFT DIRECT NT 4200 FAF FD21 MAP MD21"
+            },
+            "transitions": [
+                {
+                    "name": "NT",
+                    "fixes": {
+                        "NT": "NT AT OR ABOVE 4200",
+                        "D025H": "D025H AT OR ABOVE 3300 TRK 070 UNTIL 4.3 FROM D025H"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ21",
+            "fixes": {
+                "FD21": "FD21 3300",
+                "MD21": "MD21 1893 RNW 21 TRK 205 UNTIL 2600 TURN LEFT HDG 008 INTERCEPT RADIAL 039 TO",
+                "D039R": "D039R OVERFLY D039R 4200 TURN LEFT DIRECT",
+                "EDDER": "EDDER HOLD AT EDDER LEFT TURN INBOUNDCOURSE 205 SPEED 230 LEGDIST 5 FAF FD21 MAP MD21"
+            },
+            "transitions": [
+                {
+                    "name": "EDDER",
+                    "fixes": {
+                        "EDDER": "EDDER AT OR ABOVE 4200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSX03",
+            "fixes": {
+                "GAPIN": "GAPIN AT OR ABOVE 3900 SPEED 230",
+                "NG501": "NG501 3900 SPEED 230 RNW 03 TRK 025 UNTIL 1920",
+                "NG502": "OVERFLY NG502 SPEED 230 TURN LEFT DIRECT",
+                "DILSO": "DILSO AT OR ABOVE 3900 SPEED 230 FAF NG501 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "DILSO",
+                    "fixes": {
+                        "DILSO": "DILSO AT OR ABOVE 3900 SPEED 230"
+                    }
+                },
+                {
+                    "name": "GAPIN",
+                    "fixes": {
+                        "GAPIN": "GAPIN LEFT TURN INBOUNDCOURSE 025 ALT 3900 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TASUB",
+                    "fixes": {
+                        "TASUB": "TASUB AT OR ABOVE 3900 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY03",
+            "fixes": {
+                "CF03": "CF03 AT OR ABOVE 3200",
+                "FF03": "FF03 3200 RNW 03 TRK 025 UNTIL 2600 TURN RIGHT DIRECT",
+                "NT": "NT 4200 FAF FF03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "NT1",
+                    "fixes": {
+                        "NT": "NT AT OR ABOVE 4200 TRK 232 UNTIL 7.0 FROM NT"
+                    }
+                },
+                {
+                    "name": "NT2",
+                    "fixes": {
+                        "NT": "NT AT OR ABOVE 4200 TRK 220 UNTIL 5.8 FROM NT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ03",
+            "fixes": {
+                "CF03": "CF03 AT OR ABOVE 3200",
+                "FF03": "FF03 3200 RNW 03 TRK 025 UNTIL 2600 TURN LEFT HDG 189 INTERCEPT RADIAL 220 TO",
+                "D220Q": "D220Q OVERFLY D220Q 4200 TURN LEFT DIRECT",
+                "DENIT": "DENIT HOLD AT DENIT LEFT TURN INBOUNDCOURSE 025 SPEED 230 LEGDIST 5 FAF FF03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "DENIT",
+                    "fixes": {
+                        "DENIT": "DENIT AT OR ABOVE 4200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "GAPIN": "GAPIN AT OR ABOVE 3900 SPEED 230",
+                "NG501": "NG501 3900 SPEED 230 RNW 03 TRK 025 UNTIL 1920",
+                "NG502": "OVERFLY NG502 SPEED 230 TURN LEFT DIRECT",
+                "DILSO": "DILSO AT OR ABOVE 3900 SPEED 230 FAF NG501 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "DILSO",
+                    "fixes": {
+                        "DILSO": "DILSO AT OR ABOVE 3900 SPEED 230"
+                    }
+                },
+                {
+                    "name": "GAPIN",
+                    "fixes": {
+                        "GAPIN": "GAPIN LEFT TURN INBOUNDCOURSE 025 ALT 3900 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TASUB",
+                    "fixes": {
+                        "TASUB": "TASUB AT OR ABOVE 3900 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "VABOR": "VABOR AT OR ABOVE 3800",
+                "NG503": "NG503 3800 RNW 21 TRK 205 UNTIL 1920",
+                "NG504": "OVERFLY NG504 SPEED 230 TURN RIGHT DIRECT",
+                "POPOL": "POPOL AT OR ABOVE 3800 SPEED 230 FAF NG503 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "MORAR",
+                    "fixes": {
+                        "MORAR": "MORAR AT OR ABOVE 3800 SPEED 230"
+                    }
+                },
+                {
+                    "name": "POPOL",
+                    "fixes": {
+                        "POPOL": "POPOL AT OR ABOVE 3800 SPEED 230"
+                    }
+                },
+                {
+                    "name": "VABOR",
+                    "fixes": {
+                        "VABOR": "VABOR LEFT TURN INBOUNDCOURSE 205 ALT 3800 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

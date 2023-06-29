@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "AFLUC",
+            "lat": 31.38408056666667,
+            "lon": 85.52881943333334
+        },
+        {
+            "name": "RRS",
+            "lat": 31.284586116666667,
+            "lon": 85.43120833333333
+        },
+        {
+            "name": "SKIPO",
+            "lat": 31.549380566666667,
+            "lon": 85.58887778333333
+        },
+        {
+            "name": "WADLO",
+            "lat": 31.479133333333333,
+            "lon": 85.71168611666667
+        },
+        {
+            "name": "WUKBU",
+            "lat": 31.3255,
+            "lon": 85.41656111666667
+        },
+        {
+            "name": "YALSU",
+            "lat": 31.409963883333333,
+            "lon": 85.59036388333334
+        },
+        {
+            "name": "YAPPY",
+            "lat": 31.372716666666665,
+            "lon": 85.54299721666666
+        },
+        {
+            "name": "YASUG",
+            "lat": 31.548238883333333,
+            "lon": 85.84518611666667
+        },
+        {
+            "name": "YEDUY",
+            "lat": 31.591730566666666,
+            "lon": 85.6099
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "YASUG": "YASUG AT OR ABOVE 2500",
+                "WADLO": "WADLO 2000 RNW 13 TRK 125 UNTIL 1600 TURN LEFT DIRECT",
+                "YEDUY": "OVERFLY YEDUY AT OR ABOVE 2000 HOLD AT YEDUY RIGHT TURN INBOUNDCOURSE 339 LEGDIST 4 FAF WADLO MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "YASUG",
+                    "fixes": {
+                        "YASUG": "YASUG RIGHT TURN INBOUNDCOURSE 125 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "WUKBU": "WUKBU AT OR ABOVE 2500",
+                "AFLUC": "AFLUC 2000 RNW 31 TRK 305 UNTIL 900 TURN RIGHT DIRECT",
+                "YEDUY": "OVERFLY YEDUY AT OR ABOVE 2000 HOLD AT YEDUY RIGHT TURN INBOUNDCOURSE 339 LEGDIST 4 FAF AFLUC MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "WUKBU",
+                    "fixes": {
+                        "WUKBU": "WUKBU RIGHT TURN INBOUNDCOURSE 305 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR31",
+            "fixes": {
+                "RRS": "RRS AT OR ABOVE 2100",
+                "YAPPY": "YAPPY 2000",
+                "YALSU": "YALSU AT OR ABOVE 880 RNW 31 TRK 311 INTERCEPT RADIAL 026 TO",
+                "SKIPO": "SKIPO SKIPO AT OR ABOVE 2000 HOLD AT SKIPO LEFT TURN INBOUNDCOURSE 151 LEGTIME 1 FAF YAPPY MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "RRS",
+                    "fixes": {
+                        "RRS": "RRS RIGHT TURN INBOUNDCOURSE 330 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

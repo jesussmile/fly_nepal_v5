@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "ARHIY",
+            "lat": 48.715225,
+            "lon": 116.30800556666667
+        },
+        {
+            "name": "CLASS",
+            "lat": 47.85795278333333,
+            "lon": 116.14745833333333
+        },
+        {
+            "name": "HEROX",
+            "lat": 48.556530566666666,
+            "lon": 116.4036
+        },
+        {
+            "name": "HITOT",
+            "lat": 48.26261111666667,
+            "lon": 116.57639166666667
+        },
+        {
+            "name": "HITRU",
+            "lat": 48.325025,
+            "lon": 116.42916111666666
+        },
+        {
+            "name": "JATLI",
+            "lat": 48.58784721666667,
+            "lon": 116.39416666666666
+        },
+        {
+            "name": "KARPS",
+            "lat": 47.74077221666667,
+            "lon": 116.75275
+        },
+        {
+            "name": "ODXEW",
+            "lat": 48.6207,
+            "lon": 116.37198056666666
+        },
+        {
+            "name": "WEBDA",
+            "lat": 48.496330566666664,
+            "lon": 116.45575
+        },
+        {
+            "name": "ZAKNI",
+            "lat": 48.68248333333333,
+            "lon": 116.34711388333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "KARPS2",
+            "rnw": "20",
+            "fixes": {
+                "ZAKNI": "ZAKNI",
+                "HEROX": "HEROX",
+                "HITOT": "HITOT",
+                "KARPS": "KARPS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "WEBDA": "WEBDA AT OR ABOVE 5800 WEBDA",
+                "JATLI": "JATLI 5200",
+                "ODXEW": "ODXEW AT OR ABOVE 4540",
+                "ARHIY": "OVERFLY ARHIY 2516 RNW 02 TRK 008 UNTIL 2740 TURN LEFT DIRECT",
+                "HITRU": "OVERFLY HITRU AT OR ABOVE 8600 HOLD AT HITRU LEFT TURN INBOUNDCOURSE 338 LEGDIST 7 FAF JATLI MAP ARHIY"
+            },
+            "transitions": [
+                {
+                    "name": "CLASS",
+                    "fixes": {
+                        "CLASS": "CLASS",
+                        "HITRU": "HITRU AT OR ABOVE 8600"
+                    }
+                },
+                {
+                    "name": "KARPS",
+                    "fixes": {
+                        "KARPS": "KARPS",
+                        "HITRU": "HITRU AT OR ABOVE 8600"
+                    }
+                }
+            ]
+        }
+    ]
+}

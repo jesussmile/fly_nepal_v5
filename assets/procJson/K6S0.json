@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "JUREP",
+            "lat": 45.83619443333333,
+            "lon": 109.83090278333333
+        },
+        {
+            "name": "JUTIM",
+            "lat": 45.781058333333334,
+            "lon": 110.10705
+        },
+        {
+            "name": "LVM",
+            "lat": 45.702480566666665,
+            "lon": 110.44245278333334
+        },
+        {
+            "name": "ONROW",
+            "lat": 45.79772221666666,
+            "lon": 110.02401943333334
+        },
+        {
+            "name": "REEPO",
+            "lat": 45.75955833333333,
+            "lon": 109.52687778333333
+        },
+        {
+            "name": "SUBKY",
+            "lat": 45.7335,
+            "lon": 109.96035278333333
+        },
+        {
+            "name": "WETIG",
+            "lat": 45.858863883333335,
+            "lon": 109.71618888333333
+        },
+        {
+            "name": "ZELTI",
+            "lat": 45.777175,
+            "lon": 110.26496666666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 18",
+        "RNW 24",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "ZELTI": "ZELTI AT OR ABOVE 7900",
+                "JUTIM": "JUTIM 6200",
+                "ONROW": "ONROW AT OR ABOVE 5020 RNW 06 TRK 063 UNTIL 4740",
+                "WETIG": "OVERFLY WETIG AT OR ABOVE 9500 HOLD AT WETIG RIGHT TURN INBOUNDCOURSE 243 LEGDIST 7 FAF JUTIM MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "LVM",
+                    "fixes": {
+                        "LVM": "LVM"
+                    }
+                },
+                {
+                    "name": "SUBKY",
+                    "fixes": {
+                        "SUBKY": "SUBKY",
+                        "ZELTI": "OVERFLY ZELTI AT OR ABOVE 7900 HOLD AT ZELTI RIGHT TURN INBOUNDCOURSE 083 ALT 7900 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "WETIG": "WETIG AT OR ABOVE 7000 OVERFLY WETIG AT OR ABOVE 9500 HOLD AT WETIG RIGHT TURN INBOUNDCOURSE 243 LEGDIST 7 FAF JUREP MAP RNW 24",
+                "JUREP": "JUREP 6400 RNW 24 TRK 243 UNTIL 4900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "REEPO",
+                    "fixes": {
+                        "REEPO": "REEPO"
+                    }
+                },
+                {
+                    "name": "SUBKY",
+                    "fixes": {
+                        "SUBKY": "SUBKY",
+                        "WETIG": "OVERFLY WETIG AT OR ABOVE 7000 HOLD AT WETIG RIGHT TURN INBOUNDCOURSE 243 ALT 7000 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

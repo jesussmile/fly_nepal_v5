@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "CARAV",
+            "lat": 47.99171666666667,
+            "lon": 105.31052778333333
+        },
+        {
+            "name": "DORIA",
+            "lat": 48.086072216666665,
+            "lon": 105.57271943333333
+        },
+        {
+            "name": "FAXIS",
+            "lat": 48.041927783333335,
+            "lon": 105.43941943333333
+        },
+        {
+            "name": "GETKE",
+            "lat": 48.06685278333333,
+            "lon": 105.503625
+        },
+        {
+            "name": "GGW",
+            "lat": 48.215305566666665,
+            "lon": 106.62541943333333
+        },
+        {
+            "name": "RILMY",
+            "lat": 48.154291666666666,
+            "lon": 104.86866388333334
+        },
+        {
+            "name": "RULIE",
+            "lat": 48.18880278333334,
+            "lon": 105.82011111666667
+        },
+        {
+            "name": "WOLIV",
+            "lat": 48.13905833333333,
+            "lon": 105.69054721666667
+        },
+        {
+            "name": "ZIGAB",
+            "lat": 48.122113883333334,
+            "lon": 105.64656388333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "RULIE": "RULIE AT OR ABOVE 4500",
+                "WOLIV": "WOLIV 3600",
+                "ZIGAB": "ZIGAB AT OR ABOVE 2940 RNW 11 TRK 111 UNTIL 2187",
+                "CARAV": "OVERFLY CARAV AT OR ABOVE 4800 HOLD AT CARAV RIGHT TURN INBOUNDCOURSE 291 LEGDIST 4 FAF WOLIV MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "DORIA",
+                    "fixes": {
+                        "DORIA": "DORIA",
+                        "RULIE": "OVERFLY RULIE AT OR ABOVE 4500 HOLD AT RULIE RIGHT TURN INBOUNDCOURSE 111 ALT 4500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GGW",
+                    "fixes": {
+                        "GGW": "GGW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "CARAV": "CARAV AT OR ABOVE 4800",
+                "FAXIS": "FAXIS 3900",
+                "GETKE": "GETKE AT OR ABOVE 2940 RNW 29 TRK 291 UNTIL 2185",
+                "RULIE": "OVERFLY RULIE AT OR ABOVE 4500 HOLD AT RULIE RIGHT TURN INBOUNDCOURSE 111 LEGDIST 4 FAF FAXIS MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "DORIA",
+                    "fixes": {
+                        "DORIA": "DORIA",
+                        "CARAV": "OVERFLY CARAV AT OR ABOVE 4800 HOLD AT CARAV RIGHT TURN INBOUNDCOURSE 291 ALT 4800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RILMY",
+                    "fixes": {
+                        "RILMY": "RILMY"
+                    }
+                }
+            ]
+        }
+    ]
+}

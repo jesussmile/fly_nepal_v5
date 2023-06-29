@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "BUYDA",
+            "lat": 32.709344433333335,
+            "lon": 81.51111943333333
+        },
+        {
+            "name": "CESOR",
+            "lat": 32.604855566666664,
+            "lon": 81.64586111666667
+        },
+        {
+            "name": "HOBOB",
+            "lat": 32.788238883333335,
+            "lon": 81.40904443333334
+        },
+        {
+            "name": "LIPSE",
+            "lat": 32.580027783333335,
+            "lon": 81.67780278333333
+        },
+        {
+            "name": "THOLN",
+            "lat": 32.67746666666667,
+            "lon": 81.55227778333334
+        },
+        {
+            "name": "TIKIE",
+            "lat": 32.500911116666664,
+            "lon": 81.77940278333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 15",
+        "RNW 23",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "TIKIE": "TIKIE AT OR ABOVE 2500",
+                "LIPSE": "LIPSE 1900",
+                "CESOR": "CESOR AT OR ABOVE 1200 RNW 05 TRK 054 UNTIL 428",
+                "HOBOB": "OVERFLY HOBOB AT OR ABOVE 2000 HOLD AT HOBOB RIGHT TURN INBOUNDCOURSE 235 LEGDIST 4 FAF LIPSE MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "TIKIE",
+                    "fixes": {
+                        "TIKIE": "TIKIE RIGHT TURN INBOUNDCOURSE 054 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "HOBOB": "HOBOB AT OR ABOVE 2000",
+                "BUYDA": "BUYDA 1900",
+                "THOLN": "THOLN AT OR ABOVE 800 RNW 23 TRK 235 UNTIL 494",
+                "TIKIE": "OVERFLY TIKIE AT OR ABOVE 2500 HOLD AT TIKIE RIGHT TURN INBOUNDCOURSE 054 LEGDIST 4 FAF BUYDA MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "HOBOB",
+                    "fixes": {
+                        "HOBOB": "HOBOB RIGHT TURN INBOUNDCOURSE 235 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

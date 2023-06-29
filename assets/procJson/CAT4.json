@@ -1,0 +1,172 @@
+{
+    "fixes": [
+        {
+            "name": "ARMAC",
+            "lat": 49.19431111666667,
+            "lon": 123.82658056666666
+        },
+        {
+            "name": "AXONA",
+            "lat": 49.329566666666665,
+            "lon": 124.37873333333333
+        },
+        {
+            "name": "BODMI",
+            "lat": 49.25545,
+            "lon": 124.16543888333334
+        },
+        {
+            "name": "BONUG",
+            "lat": 49.51033888333333,
+            "lon": 124.48492778333333
+        },
+        {
+            "name": "ETBEN",
+            "lat": 49.40501943333334,
+            "lon": 124.03929166666667
+        },
+        {
+            "name": "FOCHE",
+            "lat": 49.06405,
+            "lon": 124.79648333333333
+        },
+        {
+            "name": "GADEG",
+            "lat": 49.275019433333334,
+            "lon": 124.22158611666667
+        },
+        {
+            "name": "IKNOS",
+            "lat": 49.443925,
+            "lon": 124.52640556666667
+        },
+        {
+            "name": "ITMAV",
+            "lat": 49.475858333333335,
+            "lon": 124.17861111666667
+        },
+        {
+            "name": "KEKPA",
+            "lat": 49.43148611666667,
+            "lon": 124.579075
+        },
+        {
+            "name": "MIPIX",
+            "lat": 49.29456388333333,
+            "lon": 124.27777778333333
+        },
+        {
+            "name": "NOSEB",
+            "lat": 49.37229443333333,
+            "lon": 124.64948611666667
+        },
+        {
+            "name": "OMROP",
+            "lat": 49.310025,
+            "lon": 124.32232221666666
+        },
+        {
+            "name": "PIKLO",
+            "lat": 49.29315,
+            "lon": 124.30751666666667
+        },
+        {
+            "name": "PIKVU",
+            "lat": 49.278816666666664,
+            "lon": 124.76023888333333
+        },
+        {
+            "name": "SENRI",
+            "lat": 49.317222216666664,
+            "lon": 124.01888888333333
+        },
+        {
+            "name": "VODOR",
+            "lat": 49.380355566666665,
+            "lon": 124.47837778333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "SENR4",
+            "rnw": "28",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 11",
+                    "fixes": {
+                        "RNW 11": "RNW 11",
+                        "PIKLO": "PIKLO",
+                        "SENRI": "OVERFLY SENRI 3000 SPEED 200"
+                    }
+                },
+                {
+                    "rwy": "RNW 29",
+                    "fixes": {
+                        "RNW 29": "RNW 29 HDG 291 UNTIL 1000 TURN RIGHT DIRECT",
+                        "SENRI": "OVERFLY SENRI SPEED 200"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "KEKPA": "KEKPA AT OR ABOVE 2500 SPEED 200",
+                "VODOR": "VODOR 1500 RNW 11 TRK 111 UNTIL 590 TURN LEFT DIRECT",
+                "BONUG": "OVERFLY BONUG 3000 SPEED 200 HOLD AT BONUG LEFT TURN INBOUNDCOURSE 263 SPEED 200 LEGTIME 1 FAF VODOR MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "ARMAC",
+                    "fixes": {
+                        "ARMAC": "ARMAC",
+                        "ITMAV": "ITMAV AT OR ABOVE 3500",
+                        "BONUG": "BONUG AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "FOCHE",
+                    "fixes": {
+                        "FOCHE": "FOCHE",
+                        "PIKVU": "PIKVU AT OR ABOVE 5500",
+                        "NOSEB": "NOSEB AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "BODMI": "BODMI AT OR ABOVE 3000",
+                "GADEG": "GADEG AT OR ABOVE 2500",
+                "MIPIX": "MIPIX 1900",
+                "OMROP": "OMROP AT OR ABOVE 1200",
+                "AXONA": "OVERFLY AXONA 376 RNW 29",
+                "IKNOS": "OVERFLY IKNOS 4000 HOLD AT IKNOS LEFT TURN INBOUNDCOURSE 288 SPEED 200 LEGTIME 1 FAF MIPIX MAP AXONA"
+            },
+            "transitions": [
+                {
+                    "name": "ARMAC",
+                    "fixes": {
+                        "ARMAC": "ARMAC"
+                    }
+                },
+                {
+                    "name": "ETBEN",
+                    "fixes": {
+                        "ETBEN": "ETBEN SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

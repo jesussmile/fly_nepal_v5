@@ -1,0 +1,135 @@
+{
+    "fixes": [
+        {
+            "name": "BAARN",
+            "lat": 40.29148611666667,
+            "lon": 76.61132778333334
+        },
+        {
+            "name": "EZIMO",
+            "lat": 40.413494433333334,
+            "lon": 76.41191666666667
+        },
+        {
+            "name": "JONOB",
+            "lat": 40.49041666666667,
+            "lon": 76.34778611666667
+        },
+        {
+            "name": "JUKUL",
+            "lat": 40.26701666666666,
+            "lon": 76.31851666666667
+        },
+        {
+            "name": "JUPAS",
+            "lat": 40.61947778333333,
+            "lon": 76.25457221666667
+        },
+        {
+            "name": "KUPPS",
+            "lat": 40.287311116666665,
+            "lon": 76.45194721666667
+        },
+        {
+            "name": "MAFHU",
+            "lat": 40.354419433333334,
+            "lon": 76.33310278333333
+        },
+        {
+            "name": "PEGDE",
+            "lat": 40.46054721666667,
+            "lon": 76.34386111666667
+        },
+        {
+            "name": "RAV",
+            "lat": 40.55339166666667,
+            "lon": 76.59938056666667
+        },
+        {
+            "name": "VOR15",
+            "lat": 40.377313883333336,
+            "lon": 76.36362778333333
+        },
+        {
+            "name": "WASUR",
+            "lat": 40.56090278333333,
+            "lon": 76.35706388333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA01",
+            "fixes": {
+                "RAV": "RAV AT OR ABOVE 3500",
+                "EZIMO": "EZIMO 2500",
+                "VOR15": "VOR15 AT OR ABOVE 1800",
+                "MAFHU": "MAFHU 1160 RNW 01 TURN RIGHT DIRECT",
+                "KUPPS": "KUPPS AT OR ABOVE 3000 HOLD AT KUPPS LEFT TURN INBOUNDCOURSE 168 LEGTIME 1 FAF EZIMO MAP MAFHU"
+            },
+            "transitions": [
+                {
+                    "name": "RAV",
+                    "fixes": {
+                        "RAV": "RAV LEFT TURN INBOUNDCOURSE 145 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA19",
+            "fixes": {
+                "RAV": "RAV AT OR ABOVE 3500",
+                "EZIMO": "EZIMO 2500",
+                "VOR15": "VOR15 AT OR ABOVE 1800",
+                "MAFHU": "MAFHU 1160 RNW 19 TURN RIGHT DIRECT",
+                "KUPPS": "KUPPS AT OR ABOVE 3000 HOLD AT KUPPS LEFT TURN INBOUNDCOURSE 168 LEGTIME 1 FAF EZIMO MAP MAFHU"
+            },
+            "transitions": [
+                {
+                    "name": "RAV",
+                    "fixes": {
+                        "RAV": "RAV LEFT TURN INBOUNDCOURSE 145 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "JONOB": "JONOB AT OR ABOVE 2800",
+                "PEGDE": "PEGDE 2600 RNW 19 TRK 183 UNTIL 837",
+                "JUKUL": "JUKUL TURN RIGHT DIRECT",
+                "BAARN": "OVERFLY BAARN AT OR ABOVE 4000 HOLD AT BAARN RIGHT TURN INBOUNDCOURSE 314 LEGDIST 4 FAF PEGDE MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "BAARN",
+                    "fixes": {
+                        "BAARN": "BAARN",
+                        "WASUR": "WASUR AT OR ABOVE 3300 HOLD AT WASUR RIGHT TURN INBOUNDCOURSE 183 ALT 3300 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "JUPAS",
+                    "fixes": {
+                        "JUPAS": "JUPAS",
+                        "WASUR": "WASUR AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "RAV",
+                    "fixes": {
+                        "RAV": "RAV",
+                        "WASUR": "WASUR AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        }
+    ]
+}

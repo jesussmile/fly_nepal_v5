@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "BETTI",
+            "lat": 29.965269433333333,
+            "lon": 98.05666111666666
+        },
+        {
+            "name": "CRAYS",
+            "lat": 29.918452783333333,
+            "lon": 97.43318333333333
+        },
+        {
+            "name": "CWK",
+            "lat": 30.37855,
+            "lon": 97.52984721666667
+        },
+        {
+            "name": "EDIVE",
+            "lat": 29.738944433333334,
+            "lon": 97.67675833333334
+        },
+        {
+            "name": "GIPAW",
+            "lat": 30.013316666666668,
+            "lon": 97.44823888333333
+        },
+        {
+            "name": "HIPAR",
+            "lat": 29.764291666666665,
+            "lon": 97.67576943333333
+        },
+        {
+            "name": "JOREN",
+            "lat": 29.818113883333332,
+            "lon": 97.67367221666666
+        },
+        {
+            "name": "KENEH",
+            "lat": 29.647461116666666,
+            "lon": 97.68031943333334
+        },
+        {
+            "name": "MIRIN",
+            "lat": 29.651922216666666,
+            "lon": 97.83325556666667
+        },
+        {
+            "name": "PAMER",
+            "lat": 30.021308333333334,
+            "lon": 97.639175
+        },
+        {
+            "name": "SEEDS",
+            "lat": 29.658872216666666,
+            "lon": 97.24962778333334
+        },
+        {
+            "name": "SHENN",
+            "lat": 29.935972216666666,
+            "lon": 97.66906388333334
+        },
+        {
+            "name": "SINAR",
+            "lat": 29.642825,
+            "lon": 97.52739721666667
+        },
+        {
+            "name": "SUFLE",
+            "lat": 30.100377783333332,
+            "lon": 97.538
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "PAMER": "PAMER AT OR ABOVE 3000",
+                "SHENN": "SHENN 2100 RNW 18 TRK 175 UNTIL 815",
+                "EDIVE": "EDIVE",
+                "SEEDS": "OVERFLY SEEDS AT OR ABOVE 4000 HOLD AT SEEDS RIGHT TURN INBOUNDCOURSE 263 LEGDIST 4 FAF SHENN MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "CWK",
+                    "fixes": {
+                        "CWK": "CWK",
+                        "SUFLE": "SUFLE AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "SEEDS",
+                    "fixes": {
+                        "SEEDS": "SEEDS",
+                        "GIPAW": "GIPAW AT OR ABOVE 4000",
+                        "SUFLE": "SUFLE AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "KENEH": "KENEH AT OR ABOVE 3000",
+                "HIPAR": "HIPAR 2100",
+                "JOREN": "JOREN AT OR ABOVE 1060 RNW 36 TRK 355 UNTIL 1000",
+                "CRAYS": "OVERFLY CRAYS AT OR ABOVE 3000 HOLD AT CRAYS RIGHT TURN INBOUNDCOURSE 058 LEGDIST 4 FAF HIPAR MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "BETTI",
+                    "fixes": {
+                        "BETTI": "BETTI",
+                        "MIRIN": "MIRIN AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "SEEDS",
+                    "fixes": {
+                        "SEEDS": "SEEDS",
+                        "SINAR": "SINAR AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

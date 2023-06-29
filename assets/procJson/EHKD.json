@@ -1,0 +1,181 @@
+{
+    "fixes": [
+        {
+            "name": "ASTUW",
+            "lat": 52.7745,
+            "lon": 4.855833333333333
+        },
+        {
+            "name": "EDFOS",
+            "lat": 52.772666666666666,
+            "lon": 4.724
+        },
+        {
+            "name": "FAFLO",
+            "lat": 53.080666666666666,
+            "lon": 4.956333333333333
+        },
+        {
+            "name": "FF21",
+            "lat": 53.01096943333334,
+            "lon": 4.878155566666667
+        },
+        {
+            "name": "HDR",
+            "lat": 52.90683333333333,
+            "lon": 4.76575
+        },
+        {
+            "name": "JOPFI",
+            "lat": 53.01133333333333,
+            "lon": 4.9785
+        },
+        {
+            "name": "KD440",
+            "lat": 52.85766666666667,
+            "lon": 4.862333333333334
+        },
+        {
+            "name": "KD441",
+            "lat": 52.766666666666666,
+            "lon": 4.7780000000000005
+        },
+        {
+            "name": "KD442",
+            "lat": 52.82183333333333,
+            "lon": 4.739333333333334
+        },
+        {
+            "name": "KD444",
+            "lat": 52.9385,
+            "lon": 4.829666666666666
+        },
+        {
+            "name": "KD451",
+            "lat": 53.067166666666665,
+            "lon": 4.841166666666666
+        },
+        {
+            "name": "KD452",
+            "lat": 52.99783333333333,
+            "lon": 4.8635
+        },
+        {
+            "name": "KD453",
+            "lat": 52.857,
+            "lon": 4.764833333333334
+        },
+        {
+            "name": "NIXCO",
+            "lat": 52.757333333333335,
+            "lon": 4.645833333333333
+        },
+        {
+            "name": "PUFLA",
+            "lat": 53.109,
+            "lon": 4.7379999999999995
+        },
+        {
+            "name": "RW21",
+            "lat": 52.92641388333333,
+            "lon": 4.783883333333334
+        },
+        {
+            "name": "YOJUP",
+            "lat": 52.9695,
+            "lon": 4.931666666666667
+        },
+        {
+            "name": "ZOJIK",
+            "lat": 53.03933333333333,
+            "lon": 4.909833333333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS21",
+            "fixes": {
+                "ZOJIK": "ZOJIK AT OR ABOVE 2000",
+                "FF21": "FF21 2000 RNW 21 TRK 212 UNTIL 500 HDG 170 VECTORS FAF FF21 MAP RNW 21"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAVZ03",
+            "fixes": {
+                "EDFOS": "EDFOS AT OR ABOVE 2000",
+                "KD442": "KD442 2000",
+                "HDR": "OVERFLY HDR 322 RNW 03 TRK 009 UNTIL 1000 TURN RIGHT DIRECT HDR 2000 HOLD AT HDR RIGHT TURN INBOUNDCOURSE 009 ALT 2000 SPEED 140 LEGTIME 1 FAF KD442 MAP HDR",
+                "KD444": "OVERFLY KD444 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ASTUW",
+                    "fixes": {
+                        "ASTUW": "ASTUW AT OR ABOVE 2000",
+                        "KD441": "KD441 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "HDR",
+                    "fixes": {
+                        "HDR": "HDR AT OR ABOVE 2000",
+                        "KD440": "KD440 AT OR ABOVE 2000",
+                        "ASTUW": "ASTUW AT OR ABOVE 2000",
+                        "KD441": "KD441 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "NIXCO",
+                    "fixes": {
+                        "NIXCO": "NIXCO AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ21",
+            "fixes": {
+                "ZOJIK": "ZOJIK AT OR ABOVE 1700",
+                "KD452": "KD452 1700 RNW 21 TRK 212 UNTIL 500 TURN LEFT DIRECT",
+                "KD453": "OVERFLY KD453 TURN RIGHT DIRECT",
+                "HDR": "HDR 2000 SPEED 120 HOLD AT HDR RIGHT TURN INBOUNDCOURSE 009 ALT 2000 SPEED 140 LEGTIME 1 FAF KD452 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "FAFLO",
+                    "fixes": {
+                        "FAFLO": "FAFLO AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "HDR",
+                    "fixes": {
+                        "HDR": "HDR AT OR ABOVE 2000",
+                        "YOJUP": "YOJUP AT OR ABOVE 2000",
+                        "JOPFI": "JOPFI AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "JOPFI",
+                    "fixes": {
+                        "JOPFI": "JOPFI AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "PUFLA",
+                    "fixes": {
+                        "PUFLA": "PUFLA AT OR ABOVE 2000",
+                        "KD451": "KD451 AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "COYRO",
+            "lat": 37.43828333333333,
+            "lon": 77.55706111666667
+        },
+        {
+            "name": "DOCEV",
+            "lat": 37.58114166666667,
+            "lon": 77.702075
+        },
+        {
+            "name": "FAK",
+            "lat": 37.528508333333335,
+            "lon": 77.82821943333333
+        },
+        {
+            "name": "JUNKI",
+            "lat": 37.19975278333333,
+            "lon": 77.31665
+        },
+        {
+            "name": "MATOX",
+            "lat": 37.27798333333333,
+            "lon": 77.51279166666667
+        },
+        {
+            "name": "PUBBS",
+            "lat": 37.33020556666666,
+            "lon": 77.44785278333333
+        },
+        {
+            "name": "RIC",
+            "lat": 37.502347216666664,
+            "lon": 77.320275
+        },
+        {
+            "name": "SALPE",
+            "lat": 37.25200278333333,
+            "lon": 77.36908888333333
+        },
+        {
+            "name": "SECOV",
+            "lat": 37.48935278333333,
+            "lon": 77.60881666666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS33",
+            "fixes": {
+                "JUNKI": "JUNKI AT OR ABOVE 2000",
+                "PUBBS": "PUBBS 2000 RNW 33 TRK 331 UNTIL 800 TURN LEFT HDG 148 INTERCEPT RADIAL 223 TO",
+                "MATOX": "MATOX MATOX AT OR ABOVE 2000 HOLD AT MATOX RIGHT TURN INBOUNDCOURSE 043 LEGTIME 1 FAF PUBBS MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "RIC",
+                    "fixes": {
+                        "RIC": "RIC",
+                        "PUBBS": "PUBBS AT OR ABOVE 2000 HOLD AT PUBBS LEFT TURN INBOUNDCOURSE 331 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "DOCEV": "DOCEV AT OR ABOVE 2600",
+                "SECOV": "SECOV 2200",
+                "COYRO": "COYRO AT OR ABOVE 900 RNW 15 TRK 151 UNTIL 486",
+                "PUBBS": "OVERFLY PUBBS AT OR ABOVE 2000 HOLD AT PUBBS LEFT TURN INBOUNDCOURSE 331 LEGDIST 4 FAF SECOV MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "FAK",
+                    "fixes": {
+                        "FAK": "FAK"
+                    }
+                },
+                {
+                    "name": "RIC",
+                    "fixes": {
+                        "RIC": "RIC",
+                        "DOCEV": "OVERFLY DOCEV AT OR ABOVE 2600 HOLD AT DOCEV RIGHT TURN INBOUNDCOURSE 151 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "SALPE": "SALPE AT OR ABOVE 2000",
+                "PUBBS": "PUBBS 2000 RNW 33 TRK 331 UNTIL 492",
+                "DOCEV": "OVERFLY DOCEV AT OR ABOVE 3000 HOLD AT DOCEV RIGHT TURN INBOUNDCOURSE 151 LEGDIST 4 FAF PUBBS MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "JUNKI",
+                    "fixes": {
+                        "JUNKI": "JUNKI"
+                    }
+                },
+                {
+                    "name": "RIC",
+                    "fixes": {
+                        "RIC": "RIC",
+                        "SALPE": "OVERFLY SALPE AT OR ABOVE 2000 HOLD AT SALPE LEFT TURN INBOUNDCOURSE 331 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "ANSYN",
+            "lat": 44.74612221666667,
+            "lon": 70.00250833333334
+        },
+        {
+            "name": "ANUDE",
+            "lat": 45.12751943333333,
+            "lon": 69.38629443333333
+        },
+        {
+            "name": "ATVUW",
+            "lat": 44.86858611666667,
+            "lon": 69.07201111666667
+        },
+        {
+            "name": "AUG",
+            "lat": 44.320019433333336,
+            "lon": 69.79656388333333
+        },
+        {
+            "name": "BGR",
+            "lat": 44.841794433333334,
+            "lon": 68.87396666666666
+        },
+        {
+            "name": "DEEBA",
+            "lat": 45.24385556666667,
+            "lon": 69.37417221666666
+        },
+        {
+            "name": "FERIM",
+            "lat": 45.06521111666667,
+            "lon": 69.31031666666667
+        },
+        {
+            "name": "IKMOW",
+            "lat": 44.94494721666667,
+            "lon": 69.1643
+        },
+        {
+            "name": "RAZZR",
+            "lat": 44.221252783333334,
+            "lon": 69.58673611666667
+        },
+        {
+            "name": "WRAPT",
+            "lat": 45.526930566666664,
+            "lon": 69.350025
+        },
+        {
+            "name": "WUGES",
+            "lat": 44.731208333333335,
+            "lon": 69.07201111666667
+        },
+        {
+            "name": "ZEVAT",
+            "lat": 45.088794433333334,
+            "lon": 69.51646943333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 16",
+        "RNW 25",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "ANUDE": "ANUDE AT OR ABOVE 3000",
+                "FERIM": "FERIM 2000 RNW 16 TRK 157 UNTIL 933",
+                "ATVUW": "OVERFLY ATVUW AT OR ABOVE 3000 HOLD AT ATVUW LEFT TURN INBOUNDCOURSE 337 LEGDIST 4 FAF FERIM MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "ANSYN",
+                    "fixes": {
+                        "ANSYN": "ANSYN",
+                        "ZEVAT": "ZEVAT AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "AUG",
+                    "fixes": {
+                        "AUG": "AUG",
+                        "ZEVAT": "ZEVAT AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WRAPT",
+                    "fixes": {
+                        "WRAPT": "WRAPT",
+                        "DEEBA": "DEEBA AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "ATVUW": "ATVUW AT OR ABOVE 3000 OVERFLY ATVUW AT OR ABOVE 3000 HOLD AT ATVUW LEFT TURN INBOUNDCOURSE 337 LEGDIST 4 FAF IKMOW MAP RNW 34",
+                "IKMOW": "IKMOW 2000 RNW 34 TRK 337 UNTIL 933 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ATVUW",
+                    "fixes": {
+                        "ATVUW": "ATVUW LEFT TURN INBOUNDCOURSE 337 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "BGR",
+                    "fixes": {
+                        "BGR": "BGR"
+                    }
+                },
+                {
+                    "name": "RAZZR",
+                    "fixes": {
+                        "RAZZR": "RAZZR",
+                        "WUGES": "WUGES AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "AWAMY",
+            "lat": 67.83891111666667,
+            "lon": 163.32101111666665
+        },
+        {
+            "name": "EGGEN",
+            "lat": 67.94976111666666,
+            "lon": 163.08053611666668
+        },
+        {
+            "name": "IBELE",
+            "lat": 68.05017221666667,
+            "lon": 163.25416111666667
+        },
+        {
+            "name": "MACOB",
+            "lat": 68.12888333333333,
+            "lon": 162.808175
+        },
+        {
+            "name": "OLMIE",
+            "lat": 68.18006111666666,
+            "lon": 163.03941388333334
+        },
+        {
+            "name": "PALLZ",
+            "lat": 67.66211111666667,
+            "lon": 163.05061943333334
+        },
+        {
+            "name": "RIKEY",
+            "lat": 67.89532221666667,
+            "lon": 163.21499721666666
+        },
+        {
+            "name": "SHELD",
+            "lat": 67.958125,
+            "lon": 163.07063611666666
+        },
+        {
+            "name": "SHOKK",
+            "lat": 67.5032,
+            "lon": 161.90908611666666
+        },
+        {
+            "name": "SICOV",
+            "lat": 67.34567221666667,
+            "lon": 162.83295
+        },
+        {
+            "name": "ZIHCE",
+            "lat": 68.01506388333334,
+            "lon": 162.93743611666667
+        },
+        {
+            "name": "ZOXOL",
+            "lat": 67.60470278333334,
+            "lon": 163.09763056666668
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "SICOV1",
+            "rnw": "21",
+            "fixes": {
+                "AWAMY": "AWAMY",
+                "SICOV": "SICOV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "AWAMY": "AWAMY AT OR ABOVE 3800 OVERFLY AWAMY AT OR ABOVE 3800 HOLD AT AWAMY RIGHT TURN INBOUNDCOURSE 028 LEGDIST 4 FAF EGGEN MAP ZIHCE",
+                "EGGEN": "EGGEN 3100",
+                "ZIHCE": "OVERFLY ZIHCE 1319 RNW 03 TRK 028 UNTIL 2400 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AWAMY",
+                    "fixes": {
+                        "AWAMY": "AWAMY RIGHT TURN INBOUNDCOURSE 028 ALT 3800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SICOV",
+                    "fixes": {
+                        "SICOV": "SICOV",
+                        "ZOXOL": "ZOXOL AT OR ABOVE 3800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVP03",
+            "fixes": {
+                "RIKEY": "RIKEY AT OR ABOVE 3800",
+                "SHELD": "SHELD 2800 RNW 03 TRK 030 UNTIL 1400",
+                "MACOB": "MACOB SPEED 185",
+                "OLMIE": "OLMIE SPEED 210",
+                "IBELE": "IBELE",
+                "PALLZ": "OVERFLY PALLZ AT OR ABOVE 4400 HOLD AT PALLZ RIGHT TURN INBOUNDCOURSE 334 LEGDIST 4 FAF SHELD MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "SHOKK",
+                    "fixes": {
+                        "SHOKK": "SHOKK",
+                        "PALLZ": "PALLZ AT OR ABOVE 4400"
+                    }
+                },
+                {
+                    "name": "SICOV",
+                    "fixes": {
+                        "SICOV": "SICOV",
+                        "PALLZ": "PALLZ AT OR ABOVE 4400"
+                    }
+                }
+            ]
+        }
+    ]
+}

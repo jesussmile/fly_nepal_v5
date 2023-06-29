@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "CD262",
+            "lat": 35.31033333333333,
+            "lon": 2.696138883333333
+        },
+        {
+            "name": "FD262",
+            "lat": 35.29888888333333,
+            "lon": 2.7969722166666666
+        },
+        {
+            "name": "FN262",
+            "lat": 35.32857778333333,
+            "lon": 2.7739861166666664
+        },
+        {
+            "name": "IXIRI",
+            "lat": 35.49763888333333,
+            "lon": 2.8232222166666667
+        },
+        {
+            "name": "MD262",
+            "lat": 35.28969443333333,
+            "lon": 2.8776388833333333
+        },
+        {
+            "name": "MIANB",
+            "lat": 35.307805566666666,
+            "lon": 2.9555277833333333
+        },
+        {
+            "name": "MN262",
+            "lat": 35.31475833333333,
+            "lon": 2.895022216666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBDB15",
+            "fixes": {
+                "FN262": "FN262 2700",
+                "MN262": "MN262 1150 RNW 15 TURN RIGHT TRK 127 INTERCEPT RADIAL 082 TO",
+                "MIANB": "MIANB SPEED 130 TRK 082 UNTIL 3500 TURN LEFT DIRECT MIANB 3500 FAF FN262 MAP MN262"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDBDB33",
+            "fixes": {
+                "FN262": "FN262 2700",
+                "MN262": "MN262 1150 RNW 33 TURN RIGHT TRK 127 INTERCEPT RADIAL 082 TO",
+                "MIANB": "MIANB SPEED 130 TRK 082 UNTIL 3500 TURN LEFT DIRECT MIANB 3500 FAF FN262 MAP MN262"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORA15",
+            "fixes": {
+                "CD262": "CD262 AT OR ABOVE 2000",
+                "FD262": "FD262 2000",
+                "MD262": "MD262 1150 RNW 15 TURN RIGHT TRK 359 INTERCEPT RADIAL 027 TO",
+                "IXIRI": "IXIRI SPEED 130 IXIRI 2500 HOLD AT IXIRI RIGHT TURN INBOUNDCOURSE 207 ALT 2500 LEGTIME 1 FAF FD262 MAP MD262"
+            },
+            "transitions": [
+                {
+                    "name": "IXIRI",
+                    "fixes": {
+                        "IXIRI": "IXIRI AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA33",
+            "fixes": {
+                "CD262": "CD262 AT OR ABOVE 2000",
+                "FD262": "FD262 2000",
+                "MD262": "MD262 1150 RNW 33 TURN RIGHT TRK 359 INTERCEPT RADIAL 027 TO",
+                "IXIRI": "IXIRI SPEED 130 IXIRI 2500 HOLD AT IXIRI RIGHT TURN INBOUNDCOURSE 207 ALT 2500 LEGTIME 1 FAF FD262 MAP MD262"
+            },
+            "transitions": [
+                {
+                    "name": "IXIRI",
+                    "fixes": {
+                        "IXIRI": "IXIRI AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

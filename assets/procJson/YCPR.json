@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "CPRED",
+            "lat": 21.006736116666666,
+            "lon": 116.49175833333334
+        },
+        {
+            "name": "CPREF",
+            "lat": 20.962902783333334,
+            "lon": 116.3686
+        },
+        {
+            "name": "CPREH",
+            "lat": 20.988386116666668,
+            "lon": 116.210625
+        },
+        {
+            "name": "CPREI",
+            "lat": 20.948683333333335,
+            "lon": 116.45634166666666
+        },
+        {
+            "name": "CPREM",
+            "lat": 20.977077783333332,
+            "lon": 116.28084443333333
+        },
+        {
+            "name": "CPRWA",
+            "lat": 21.090613883333333,
+            "lon": 116.07033333333334
+        },
+        {
+            "name": "CPRWB",
+            "lat": 21.022361116666666,
+            "lon": 115.99849721666666
+        },
+        {
+            "name": "CPRWC",
+            "lat": 20.935655566666668,
+            "lon": 116.04223611666667
+        },
+        {
+            "name": "CPRWF",
+            "lat": 20.994255566666666,
+            "lon": 116.17410278333334
+        },
+        {
+            "name": "CPRWH",
+            "lat": 21.122297216666666,
+            "lon": 116.25930833333334
+        },
+        {
+            "name": "CPRWI",
+            "lat": 21.008330566666668,
+            "lon": 116.08630833333333
+        },
+        {
+            "name": "CPRWM",
+            "lat": 20.980136116666667,
+            "lon": 116.26188056666666
+        },
+        {
+            "name": "GUPOM",
+            "lat": 21.169036116666668,
+            "lon": 116.38046943333333
+        },
+        {
+            "name": "IDMIK",
+            "lat": 21.350130566666667,
+            "lon": 116.54944443333333
+        },
+        {
+            "name": "ISRAK",
+            "lat": 21.079294433333335,
+            "lon": 116.53606943333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "IDMIK1",
+            "rnw": "32",
+            "fixes": {
+                "GUPOM": "GUPOM",
+                "IDMIK": "IDMIK AT OR BELOW 6500"
+            },
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 08",
+                    "fixes": {
+                        "RNW 08": "RNW 08 TRK 079 UNTIL 600"
+                    }
+                },
+                {
+                    "rwy": "RNW 26",
+                    "fixes": {
+                        "RNW 26": "RNW 26 TRK 259 UNTIL 700"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "CPRWI": "CPRWI AT OR ABOVE 2500",
+                "CPRWF": "CPRWF 1720",
+                "CPRWM": "OVERFLY CPRWM 125 RNW 08 TRK 079 UNTIL 580 TURN RIGHT DIRECT",
+                "CPRWH": "CPRWH SPEED 210 HDG 220 VECTORS FAF CPRWF MAP CPRWM"
+            },
+            "transitions": [
+                {
+                    "name": "CPRWA",
+                    "fixes": {
+                        "CPRWA": "CPRWA AT OR ABOVE 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "CPRWB",
+                    "fixes": {
+                        "CPRWB": "CPRWB AT OR ABOVE 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "CPRWC",
+                    "fixes": {
+                        "CPRWC": "CPRWC AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "CPREI": "CPREI 2000",
+                "CPREF": "CPREF 1720",
+                "CPREM": "OVERFLY CPREM 127 RNW 26",
+                "CPREH": "CPREH TRK 259 UNTIL 2500 FAF CPREF MAP CPREM"
+            },
+            "transitions": [
+                {
+                    "name": "ISRAK",
+                    "fixes": {
+                        "ISRAK": "ISRAK AT OR ABOVE 2500 SPEED 210",
+                        "CPRED": "CPRED AT OR BELOW 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,196 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 40.50866791666667,
+            "lon": 117.17313241666666
+        },
+        {
+            "name": "AF002",
+            "lat": 40.4718905,
+            "lon": 117.15219958333333
+        },
+        {
+            "name": "AF003",
+            "lat": 40.43901863333333,
+            "lon": 117.12207403333333
+        },
+        {
+            "name": "BAM",
+            "lat": 40.56908056666666,
+            "lon": 116.92225556666666
+        },
+        {
+            "name": "DIYLA",
+            "lat": 40.43674166666667,
+            "lon": 117.08426943333333
+        },
+        {
+            "name": "EBREQ",
+            "lat": 40.52903611666667,
+            "lon": 116.98288611666666
+        },
+        {
+            "name": "FESUD",
+            "lat": 40.385983333333336,
+            "lon": 117.14539166666667
+        },
+        {
+            "name": "GRAIG",
+            "lat": 40.411341666666665,
+            "lon": 117.08346666666667
+        },
+        {
+            "name": "HEPOR",
+            "lat": 40.74256388333333,
+            "lon": 116.63866943333333
+        },
+        {
+            "name": "HUGVU",
+            "lat": 40.586094433333336,
+            "lon": 116.89664443333334
+        },
+        {
+            "name": "JOKNA",
+            "lat": 40.665444433333334,
+            "lon": 116.34497221666666
+        },
+        {
+            "name": "OQSUL",
+            "lat": 40.490325,
+            "lon": 117.04120278333333
+        },
+        {
+            "name": "RAJKO",
+            "lat": 40.46938333333333,
+            "lon": 117.30394721666667
+        },
+        {
+            "name": "RITYO",
+            "lat": 40.62000556666667,
+            "lon": 116.84552778333334
+        },
+        {
+            "name": "SIHEJ",
+            "lat": 40.586188883333335,
+            "lon": 116.89654443333333
+        },
+        {
+            "name": "UHYUV",
+            "lat": 40.826461116666664,
+            "lon": 116.46376388333333
+        },
+        {
+            "name": "WIKLO",
+            "lat": 40.547866666666664,
+            "lon": 117.18318056666666
+        },
+        {
+            "name": "WOGID",
+            "lat": 40.68636111666667,
+            "lon": 116.74463056666667
+        },
+        {
+            "name": "ZEPAT",
+            "lat": 40.516561116666665,
+            "lon": 116.97604721666667
+        },
+        {
+            "name": "ZOLPI",
+            "lat": 40.56761111666667,
+            "lon": 116.92463611666666
+        },
+        {
+            "name": "ZOWIE",
+            "lat": 40.63534443333333,
+            "lon": 116.82209443333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 13",
+        "RNW 22",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD04",
+            "fixes": {
+                "BAM": "BAM 5400 BAM BAM AT OR ABOVE 10000 HOLD AT BAM LEFT TURN INBOUNDCOURSE 025 LEGTIME 1 FAF BAM MAP HUGVU",
+                "HUGVU": "HUGVU 4843 RNW 04",
+                "RITYO": "OVERFLY RITYO TURN LEFT DIRECT",
+                "FESUD": "OVERFLY FESUD TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WIKLO",
+                    "fixes": {
+                        "WIKLO": "WIKLO",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "GRAIG": "GRAIG AT OR ABOVE 8300",
+                        "ZEPAT": "ZEPAT AT OR ABOVE 6300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "DIYLA": "DIYLA AT OR ABOVE 8900 OVERFLY DIYLA AT OR ABOVE 8900 SPEED 175 HOLD AT DIYLA LEFT TURN INBOUNDCOURSE 049 ALT 8900 SPEED 230 LEGDIST 4 FAF EBREQ MAP SIHEJ",
+                "EBREQ": "EBREQ 6600",
+                "ZOLPI": "ZOLPI AT OR ABOVE 5400",
+                "SIHEJ": "OVERFLY SIHEJ 4824 RNW 04 TRK 036 UNTIL 5500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BAM",
+                    "fixes": {
+                        "BAM": "BAM",
+                        "DIYLA": "OVERFLY DIYLA AT OR ABOVE 8900 HOLD AT DIYLA LEFT TURN INBOUNDCOURSE 049 ALT 8900 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "RAJKO",
+                    "fixes": {
+                        "RAJKO": "RAJKO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "HEPOR": "HEPOR AT OR ABOVE 8500",
+                "WOGID": "WOGID 6900",
+                "ZOWIE": "ZOWIE AT OR ABOVE 5400 RNW 22 TRK 216 UNTIL 4753",
+                "OQSUL": "OQSUL",
+                "RAJKO": "OVERFLY RAJKO AT OR ABOVE 11900 HOLD AT RAJKO RIGHT TURN INBOUNDCOURSE 255 ALT 11900 LEGDIST 7 FAF WOGID MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "BAM",
+                    "fixes": {
+                        "BAM": "BAM",
+                        "HEPOR": "OVERFLY HEPOR AT OR ABOVE 8500 HOLD AT HEPOR RIGHT TURN INBOUNDCOURSE 222 ALT 8500 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "JOKNA",
+                    "fixes": {
+                        "JOKNA": "JOKNA"
+                    }
+                },
+                {
+                    "name": "UHYUV",
+                    "fixes": {
+                        "UHYUV": "UHYUV"
+                    }
+                }
+            ]
+        }
+    ]
+}

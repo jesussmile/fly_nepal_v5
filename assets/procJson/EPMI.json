@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "CF30",
+            "lat": 53.30678056666667,
+            "lon": 16.29427778333333
+        },
+        {
+            "name": "FF30",
+            "lat": 53.34519443333333,
+            "lon": 16.202388883333334
+        },
+        {
+            "name": "FN30",
+            "lat": 53.32998611666667,
+            "lon": 16.238047216666665
+        },
+        {
+            "name": "FT12",
+            "lat": 53.452944433333336,
+            "lon": 15.928222216666667
+        },
+        {
+            "name": "FT30",
+            "lat": 53.331277783333334,
+            "lon": 16.22683333333333
+        },
+        {
+            "name": "NA",
+            "lat": 53.383916666666664,
+            "lon": 16.109555566666668
+        },
+        {
+            "name": "RW12",
+            "lat": 53.40141388333333,
+            "lon": 16.067397216666667
+        },
+        {
+            "name": "RW30",
+            "lat": 53.388655566666664,
+            "lon": 16.098127783333332
+        },
+        {
+            "name": "TMI",
+            "lat": 53.401638883333334,
+            "lon": 16.071611116666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS30",
+            "fixes": {
+                "CF30": "CF30 AT OR ABOVE 2000",
+                "FF30": "FF30 2000 RNW 30 TRK 300 UNTIL 1500 TURN RIGHT DIRECT",
+                "NA": "NA 3000 SPEED 230 FAF FF30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "NA1",
+                    "fixes": {
+                        "NA": "NA LEFT TURN INBOUNDCOURSE 300 ALT 2000 LEGTIME 2"
+                    }
+                },
+                {
+                    "name": "NA2",
+                    "fixes": {
+                        "NA": "NA LEFT TURN INBOUNDCOURSE 300 ALT 2000 LEGTIME 3"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 2500",
+                "NA": "NA 706 RNW 30 TRK 300 UNTIL 2000 TURN RIGHT DIRECT NA 3000 SPEED 230 FAF FN30 MAP NA"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VOR12",
+            "fixes": {
+                "FT12": "FT12 2400 RNW 12 TRK 116 UNTIL 2000 TURN RIGHT DIRECT",
+                "TMI": "TMI 3000 FAF FT12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "TMI1",
+                    "fixes": {
+                        "TMI": "TMI AT OR ABOVE 3000 TRK 322 UNTIL 8.0 FROM TMI"
+                    }
+                },
+                {
+                    "name": "TMI2",
+                    "fixes": {
+                        "TMI": "TMI AT OR ABOVE 3000 TRK 312 UNTIL 8.0 FROM TMI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR30",
+            "fixes": {
+                "FT30": "FT30 2400 RNW 30 TRK 302 UNTIL 1500 TURN RIGHT DIRECT",
+                "TMI": "TMI 3000 SPEED 230 FAF FT30 MAP RNW 30"
+            },
+            "transitions": []
+        }
+    ]
+}

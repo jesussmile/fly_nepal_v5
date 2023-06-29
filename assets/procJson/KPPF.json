@@ -1,0 +1,151 @@
+{
+    "fixes": [
+        {
+            "name": "CEBIX",
+            "lat": 37.52124166666667,
+            "lon": 95.50771666666667
+        },
+        {
+            "name": "CEGAS",
+            "lat": 37.13851388333333,
+            "lon": 95.50462221666666
+        },
+        {
+            "name": "CNU",
+            "lat": 37.626158333333336,
+            "lon": 95.59346943333334
+        },
+        {
+            "name": "DUSLE",
+            "lat": 37.52065556666667,
+            "lon": 95.61246388333333
+        },
+        {
+            "name": "DUTRE",
+            "lat": 37.13900556666667,
+            "lon": 95.40040278333333
+        },
+        {
+            "name": "EKILE",
+            "lat": 37.13793056666667,
+            "lon": 95.60883888333333
+        },
+        {
+            "name": "ERONE",
+            "lat": 37.52173333333333,
+            "lon": 95.40296666666667
+        },
+        {
+            "name": "FARAR",
+            "lat": 37.24175,
+            "lon": 95.50545556666667
+        },
+        {
+            "name": "FASKO",
+            "lat": 37.41806666666667,
+            "lon": 95.50688056666667
+        },
+        {
+            "name": "JUROB",
+            "lat": 37.28223056666667,
+            "lon": 95.50578333333333
+        },
+        {
+            "name": "NUCIK",
+            "lat": 37.41671388333334,
+            "lon": 95.53003611666666
+        },
+        {
+            "name": "PETCI",
+            "lat": 37.5147,
+            "lon": 95.55966111666666
+        },
+        {
+            "name": "YIKCU",
+            "lat": 37.38106388333333,
+            "lon": 95.50658056666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "PETCI": "PETCI AT OR ABOVE 3000",
+                "NUCIK": "NUCIK 2500 RNW 17 TRK 161 UNTIL 1600 TURN LEFT DIRECT",
+                "CNU": "CNU AT OR ABOVE 3000 HOLD AT CNU LEFT TURN INBOUNDCOURSE 161 LEGTIME 1 FAF NUCIK MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CNU",
+                    "fixes": {
+                        "CNU": "CNU LEFT TURN INBOUNDCOURSE 161 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "CEBIX": "CEBIX AT OR ABOVE 3000",
+                "FASKO": "FASKO 2500",
+                "YIKCU": "YIKCU AT OR ABOVE 1780 RNW 17 TRK 174 UNTIL 1194",
+                "CEGAS": "OVERFLY CEGAS AT OR ABOVE 3000 HOLD AT CEGAS RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF FASKO MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CEBIX",
+                    "fixes": {
+                        "CEBIX": "CEBIX RIGHT TURN INBOUNDCOURSE 174 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DUSLE",
+                    "fixes": {
+                        "DUSLE": "DUSLE"
+                    }
+                },
+                {
+                    "name": "ERONE",
+                    "fixes": {
+                        "ERONE": "ERONE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "CEGAS": "CEGAS AT OR ABOVE 3000",
+                "FARAR": "FARAR 2500",
+                "JUROB": "JUROB AT OR ABOVE 1700 RNW 35 TRK 354 UNTIL 1130",
+                "CEBIX": "OVERFLY CEBIX AT OR ABOVE 3000 HOLD AT CEBIX RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF FARAR MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CEGAS",
+                    "fixes": {
+                        "CEGAS": "CEGAS RIGHT TURN INBOUNDCOURSE 354 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DUTRE",
+                    "fixes": {
+                        "DUTRE": "DUTRE"
+                    }
+                },
+                {
+                    "name": "EKILE",
+                    "fixes": {
+                        "EKILE": "EKILE"
+                    }
+                }
+            ]
+        }
+    ]
+}

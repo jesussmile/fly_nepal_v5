@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "CEDAC",
+            "lat": 42.724769433333336,
+            "lon": 86.24192221666667
+        },
+        {
+            "name": "FENAB",
+            "lat": 42.761741666666666,
+            "lon": 85.96528611666666
+        },
+        {
+            "name": "HOXON",
+            "lat": 42.706594433333336,
+            "lon": 86.37570556666667
+        },
+        {
+            "name": "JAVPO",
+            "lat": 42.77973333333333,
+            "lon": 85.82865
+        },
+        {
+            "name": "LOPIC",
+            "lat": 42.894625,
+            "lon": 85.85645556666667
+        },
+        {
+            "name": "PMM",
+            "lat": 42.466033333333336,
+            "lon": 86.10480833333334
+        },
+        {
+            "name": "TOLVE",
+            "lat": 42.664833333333334,
+            "lon": 85.80094721666667
+        },
+        {
+            "name": "WIKDO",
+            "lat": 42.70396111666667,
+            "lon": 86.39534443333334
+        },
+        {
+            "name": "ZABUN",
+            "lat": 42.73564721666666,
+            "lon": 86.16109721666666
+        },
+        {
+            "name": "ZEELE",
+            "lat": 42.869875,
+            "lon": 86.06724443333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS26",
+            "fixes": {
+                "JAVPO": "JAVPO AT OR ABOVE 2700",
+                "FENAB": "FENAB 2600 RNW 26 TRK 264 UNTIL 1500 TURN RIGHT HDG 020 INTERCEPT RADIAL 105 TO",
+                "ZEELE": "ZEELE ZEELE AT OR ABOVE 2600 HOLD AT ZEELE RIGHT TURN INBOUNDCOURSE 285 LEGTIME 1 FAF FENAB MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "PMM",
+                    "fixes": {
+                        "PMM": "PMM",
+                        "JAVPO": "JAVPO AT OR ABOVE 2700 HOLD AT JAVPO RIGHT TURN INBOUNDCOURSE 264 ALT 2700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "WIKDO": "WIKDO AT OR ABOVE 2700",
+                "CEDAC": "CEDAC 2500",
+                "ZABUN": "ZABUN AT OR ABOVE 1340 RNW 08 TRK 084 UNTIL 948",
+                "JAVPO": "OVERFLY JAVPO AT OR ABOVE 3000 HOLD AT JAVPO RIGHT TURN INBOUNDCOURSE 264 LEGDIST 4 FAF CEDAC MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "WIKDO",
+                    "fixes": {
+                        "WIKDO": "WIKDO RIGHT TURN INBOUNDCOURSE 084 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "JAVPO": "JAVPO AT OR ABOVE 3000",
+                "FENAB": "FENAB 2600 RNW 26 TRK 264 UNTIL 886",
+                "HOXON": "OVERFLY HOXON AT OR ABOVE 2700 HOLD AT HOXON RIGHT TURN INBOUNDCOURSE 084 LEGDIST 4 FAF FENAB MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "JAVPO",
+                    "fixes": {
+                        "JAVPO": "JAVPO RIGHT TURN INBOUNDCOURSE 264 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LOPIC",
+                    "fixes": {
+                        "LOPIC": "LOPIC"
+                    }
+                },
+                {
+                    "name": "TOLVE",
+                    "fixes": {
+                        "TOLVE": "TOLVE"
+                    }
+                }
+            ]
+        }
+    ]
+}

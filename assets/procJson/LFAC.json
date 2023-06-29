@@ -1,0 +1,171 @@
+{
+    "fixes": [
+        {
+            "name": "AC510",
+            "lat": 50.93155556666667,
+            "lon": 1.8675
+        },
+        {
+            "name": "D036C",
+            "lat": 51.03171666666667,
+            "lon": 2.0968583333333335
+        },
+        {
+            "name": "DIPKA",
+            "lat": 51.04172221666666,
+            "lon": 2.1835833333333334
+        },
+        {
+            "name": "FAC24",
+            "lat": 51.01444443333333,
+            "lon": 2.1049444333333334
+        },
+        {
+            "name": "FN24",
+            "lat": 51.01353888333333,
+            "lon": 2.103894433333333
+        },
+        {
+            "name": "KOK",
+            "lat": 51.09472221666667,
+            "lon": 2.651666666666667
+        },
+        {
+            "name": "MKNB",
+            "lat": 50.99627778333333,
+            "lon": 2.0545
+        },
+        {
+            "name": "NUMLO",
+            "lat": 51.085472216666666,
+            "lon": 2.145388883333333
+        },
+        {
+            "name": "RW24",
+            "lat": 50.965436116666666,
+            "lon": 1.9643138833333333
+        },
+        {
+            "name": "SUDOD",
+            "lat": 50.992055566666664,
+            "lon": 2.2538888833333335
+        },
+        {
+            "name": "TRACA",
+            "lat": 50.85166666666667,
+            "lon": 1.9683333333333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "KOK2G",
+            "rnw": "24",
+            "fixes": {
+                "MKNB": "MKNB",
+                "D036C": "D036C",
+                "KOK": "KOK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KOK2J",
+            "rnw": "06",
+            "fixes": {
+                "MKNB": "MKNB",
+                "D036C": "D036C",
+                "KOK": "KOK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TRAC2G",
+            "rnw": "24",
+            "fixes": {
+                "TRACA": "TRACA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TRAC2J",
+            "rnw": "06",
+            "fixes": {
+                "TRACA": "TRACA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "KOK3K",
+            "runway": "RNW 06 RNW 24",
+            "fixes": {
+                "KOK": "KOK",
+                "DIPKA": "DIPKA",
+                "MKNB": "MKNB"
+            }
+        },
+        {
+            "name": "TRAC3K",
+            "runway": "RNW 06 RNW 24",
+            "fixes": {
+                "TRACA": "TRACA",
+                "MKNB": "MKNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FN24": "FN24 2000",
+                "MKNB": "MKNB AT OR ABOVE 1310 RNW 24 TRK 240 UNTIL 800 TURN LEFT DIRECT MKNB 2000 SPEED 170 FAF FN24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "MK",
+                    "fixes": {
+                        "MKNB": "MKNB RIGHT TURN INBOUNDCOURSE 240 ALT 2000 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "DIPKA": "DIPKA AT OR ABOVE 2000 SPEED 170",
+                "FAC24": "FAC24 2000 RNW 24",
+                "AC510": "AC510 TURN LEFT DIRECT",
+                "TRACA": "TRACA 2000 SPEED 170 HOLD AT TRACA LEFT TURN INBOUNDCOURSE 098 ALT 2000 SPEED 170 LEGTIME 1 FAF FAC24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "NUMLO",
+                    "fixes": {
+                        "NUMLO": "NUMLO AT OR ABOVE 2000 SPEED 170"
+                    }
+                },
+                {
+                    "name": "SUDOD",
+                    "fixes": {
+                        "SUDOD": "SUDOD AT OR ABOVE 2000 SPEED 170"
+                    }
+                },
+                {
+                    "name": "TRACA",
+                    "fixes": {
+                        "TRACA": "TRACA AT OR ABOVE 2000 SPEED 170",
+                        "SUDOD": "SUDOD AT OR ABOVE 2000 SPEED 170"
+                    }
+                }
+            ]
+        }
+    ]
+}

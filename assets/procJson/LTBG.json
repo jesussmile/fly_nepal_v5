@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 40.004765033333335,
+            "lon": 27.828500583333334
+        },
+        {
+            "name": "AF002",
+            "lat": 39.98988495,
+            "lon": 27.896585033333334
+        },
+        {
+            "name": "ALGAN",
+            "lat": 40.129,
+            "lon": 27.840666666666667
+        },
+        {
+            "name": "BDM",
+            "lat": 40.31675,
+            "lon": 27.982083333333332
+        },
+        {
+            "name": "CF36",
+            "lat": 40.127130566666665,
+            "lon": 27.973083333333335
+        },
+        {
+            "name": "D177O",
+            "lat": 40.06004721666667,
+            "lon": 27.970416666666665
+        },
+        {
+            "name": "D177T",
+            "lat": 39.98336666666667,
+            "lon": 27.966947216666668
+        },
+        {
+            "name": "D205T",
+            "lat": 40.02765278333333,
+            "lon": 27.765116666666668
+        },
+        {
+            "name": "EKNEL",
+            "lat": 40.057172216666665,
+            "lon": 27.970233333333333
+        },
+        {
+            "name": "FF36",
+            "lat": 40.16048333333333,
+            "lon": 27.9739
+        },
+        {
+            "name": "IBDM",
+            "lat": 40.30730556666666,
+            "lon": 27.975972216666666
+        },
+        {
+            "name": "LAVSU",
+            "lat": 39.97379443333333,
+            "lon": 27.96785
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY36",
+            "fixes": {
+                "CF36": "CF36 AT OR ABOVE 3000",
+                "FF36": "FF36 3000 RNW 36 TRK 356 UNTIL 4.0 FROM",
+                "IBDM": "IBDM TURN RIGHT DIRECT",
+                "EKNEL": "EKNEL AT OR ABOVE 4300 FAF FF36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "LAVSU",
+                    "fixes": {
+                        "LAVSU": "LAVSU AT OR BELOW 5800 AT OR ABOVE 4300",
+                        "EKNEL": "OVERFLY EKNEL 4300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ36",
+            "fixes": {
+                "CF36": "CF36 AT OR ABOVE 3000",
+                "FF36": "FF36 3000 RNW 36 TRK 356 UNTIL 570 TRK 353 UNTIL 4.0 FROM",
+                "BDM": "BDM TURN RIGHT DIRECT",
+                "D205T": "D205T AT OR ABOVE 5500 FAF FF36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ALGAN",
+                    "fixes": {
+                        "ALGAN": "ALGAN",
+                        "D205T": "D205T",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D177T": "D177T AT OR ABOVE 5500",
+                        "D177O": "D177O AT OR ABOVE 4200"
+                    }
+                }
+            ]
+        }
+    ]
+}

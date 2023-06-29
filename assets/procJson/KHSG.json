@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "ALVIL",
+            "lat": 44.13235556666667,
+            "lon": 108.20726943333334
+        },
+        {
+            "name": "BOY",
+            "lat": 43.463152783333335,
+            "lon": 108.29971111666667
+        },
+        {
+            "name": "CARGU",
+            "lat": 43.816105566666664,
+            "lon": 108.17332778333333
+        },
+        {
+            "name": "CASPI",
+            "lat": 43.69898611666667,
+            "lon": 108.71495
+        },
+        {
+            "name": "DIMSE",
+            "lat": 44.01585,
+            "lon": 108.60661666666667
+        },
+        {
+            "name": "ELEDE",
+            "lat": 43.70203888333333,
+            "lon": 108.414
+        },
+        {
+            "name": "FODEN",
+            "lat": 43.76620556666666,
+            "lon": 108.27886111666666
+        },
+        {
+            "name": "HEDRA",
+            "lat": 43.62449443333333,
+            "lon": 108.24213056666666
+        },
+        {
+            "name": "KARST",
+            "lat": 43.69507221666667,
+            "lon": 108.454225
+        },
+        {
+            "name": "OWEVU",
+            "lat": 43.724322216666664,
+            "lon": 108.28463333333333
+        },
+        {
+            "name": "RANKK",
+            "lat": 43.86822778333333,
+            "lon": 107.76225278333334
+        },
+        {
+            "name": "RLY",
+            "lat": 43.964138883333334,
+            "lon": 107.95083888333333
+        },
+        {
+            "name": "SHOTE",
+            "lat": 43.687319433333336,
+            "lon": 108.49890833333333
+        },
+        {
+            "name": "WIBTI",
+            "lat": 43.67296388333333,
+            "lon": 108.58131666666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "CASPI": "CASPI AT OR ABOVE 8000",
+                "WIBTI": "WIBTI 8000",
+                "SHOTE": "SHOTE AT OR ABOVE 6620",
+                "KARST": "KARST AT OR ABOVE 5860",
+                "ELEDE": "OVERFLY ELEDE 5186 RNW 05 TRK 066 UNTIL 5240",
+                "OWEVU": "OWEVU",
+                "RLY": "OVERFLY RLY AT OR ABOVE 8200 HOLD AT RLY RIGHT TURN INBOUNDCOURSE 159 LEGDIST 7 FAF WIBTI MAP ELEDE"
+            },
+            "transitions": [
+                {
+                    "name": "RLY",
+                    "fixes": {
+                        "RLY": "RLY",
+                        "DIMSE": "DIMSE AT OR ABOVE 8200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "CARGU": "CARGU AT OR ABOVE 7400",
+                "FODEN": "FODEN 6600 RNW 23 TRK 227 UNTIL 5292 TURN LEFT DIRECT",
+                "RLY": "OVERFLY RLY AT OR ABOVE 8400 HOLD AT RLY RIGHT TURN INBOUNDCOURSE 159 LEGDIST 7 FAF FODEN MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "ALVIL",
+                    "fixes": {
+                        "ALVIL": "ALVIL"
+                    }
+                },
+                {
+                    "name": "BOY",
+                    "fixes": {
+                        "BOY": "BOY",
+                        "HEDRA": "HEDRA AT OR ABOVE 9800",
+                        "CARGU": "OVERFLY CARGU AT OR ABOVE 7900 HOLD AT CARGU RIGHT TURN INBOUNDCOURSE 227 ALT 7400 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "RANKK",
+                    "fixes": {
+                        "RANKK": "RANKK"
+                    }
+                },
+                {
+                    "name": "RLY",
+                    "fixes": {
+                        "RLY": "RLY"
+                    }
+                }
+            ]
+        }
+    ]
+}

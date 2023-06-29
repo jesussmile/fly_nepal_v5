@@ -1,0 +1,215 @@
+{
+    "fixes": [
+        {
+            "name": "CECGA",
+            "lat": 41.309119433333336,
+            "lon": 84.81174166666666
+        },
+        {
+            "name": "DOVQU",
+            "lat": 41.304633333333335,
+            "lon": 85.31491943333333
+        },
+        {
+            "name": "FWA",
+            "lat": 40.97906388333333,
+            "lon": 85.18805833333333
+        },
+        {
+            "name": "GUMUQ",
+            "lat": 41.221263883333336,
+            "lon": 85.31328056666666
+        },
+        {
+            "name": "HIFBA",
+            "lat": 41.30815833333333,
+            "lon": 84.94741666666667
+        },
+        {
+            "name": "JUGIG",
+            "lat": 41.309147216666666,
+            "lon": 84.81442778333333
+        },
+        {
+            "name": "JUPAV",
+            "lat": 41.283580566666664,
+            "lon": 85.07228056666666
+        },
+        {
+            "name": "KIZFU",
+            "lat": 41.306041666666665,
+            "lon": 85.182125
+        },
+        {
+            "name": "KUJBI",
+            "lat": 41.22577221666667,
+            "lon": 84.813425
+        },
+        {
+            "name": "LAWNS",
+            "lat": 41.219483333333336,
+            "lon": 85.09674443333333
+        },
+        {
+            "name": "MABHA",
+            "lat": 41.299602783333334,
+            "lon": 85.06615833333333
+        },
+        {
+            "name": "NABJI",
+            "lat": 41.39252221666667,
+            "lon": 84.81543333333333
+        },
+        {
+            "name": "OLK",
+            "lat": 41.24690833333333,
+            "lon": 85.49739721666667
+        },
+        {
+            "name": "PUZRU",
+            "lat": 41.388002783333334,
+            "lon": 85.31656111666666
+        },
+        {
+            "name": "SHENK",
+            "lat": 41.30818333333333,
+            "lon": 84.94419721666667
+        },
+        {
+            "name": "TAZCE",
+            "lat": 41.395302783333335,
+            "lon": 85.027325
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS27",
+            "fixes": {
+                "CECGA": "CECGA AT OR ABOVE 2600",
+                "SHENK": "SHENK 2546 RNW 27 TRK 274 UNTIL 1400",
+                "OLK": "OLK AT OR ABOVE 3000 HOLD AT OLK RIGHT TURN INBOUNDCOURSE 279 LEGTIME 1 FAF SHENK MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "FWA",
+                    "fixes": {
+                        "FWA": "FWA",
+                        "CECGA": "CECGA AT OR ABOVE 2600 HOLD AT CECGA RIGHT TURN INBOUNDCOURSE 274 ALT 2600 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "DOVQU": "DOVQU AT OR ABOVE 3000",
+                "KIZFU": "KIZFU 2500 RNW 09 TRK 094 UNTIL 1182",
+                "JUGIG": "OVERFLY JUGIG AT OR ABOVE 3000 HOLD AT JUGIG RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4 FAF KIZFU MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DOVQU",
+                    "fixes": {
+                        "DOVQU": "DOVQU RIGHT TURN INBOUNDCOURSE 094 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FWA",
+                    "fixes": {
+                        "FWA": "FWA",
+                        "GUMUQ": "GUMUQ AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "TAZCE",
+                    "fixes": {
+                        "TAZCE": "TAZCE",
+                        "PUZRU": "PUZRU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "JUGIG": "JUGIG AT OR ABOVE 3000",
+                "HIFBA": "HIFBA 2500 RNW 27 TRK 274 UNTIL 1130",
+                "DOVQU": "OVERFLY DOVQU AT OR ABOVE 3000 HOLD AT DOVQU RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4 FAF HIFBA MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "FWA",
+                    "fixes": {
+                        "FWA": "FWA",
+                        "KUJBI": "KUJBI AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "JUGIG",
+                    "fixes": {
+                        "JUGIG": "JUGIG RIGHT TURN INBOUNDCOURSE 274 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TAZCE",
+                    "fixes": {
+                        "TAZCE": "TAZCE",
+                        "NABJI": "NABJI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA09",
+            "fixes": {
+                "LAWNS": "LAWNS 2700 LAWNS AT OR ABOVE 2700 HOLD AT LAWNS RIGHT TURN INBOUNDCOURSE 022 LEGTIME 1 FAF LAWNS MAP MABHA",
+                "JUPAV": "JUPAV AT OR ABOVE 1500",
+                "MABHA": "MABHA 1360 RNW 09 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FWA",
+                    "fixes": {
+                        "FWA": "FWA"
+                    }
+                },
+                {
+                    "name": "OLK",
+                    "fixes": {
+                        "OLK": "OLK",
+                        "LAWNS": "LAWNS AT OR ABOVE 2700 HOLD AT LAWNS RIGHT TURN INBOUNDCOURSE 022 ALT 2700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA27",
+            "fixes": {
+                "LAWNS": "LAWNS 2700 LAWNS AT OR ABOVE 2700 HOLD AT LAWNS RIGHT TURN INBOUNDCOURSE 022 LEGTIME 1 FAF LAWNS MAP MABHA",
+                "JUPAV": "JUPAV AT OR ABOVE 1500",
+                "MABHA": "MABHA 1360 RNW 27 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FWA",
+                    "fixes": {
+                        "FWA": "FWA"
+                    }
+                },
+                {
+                    "name": "OLK",
+                    "fixes": {
+                        "OLK": "OLK",
+                        "LAWNS": "LAWNS AT OR ABOVE 2700 HOLD AT LAWNS RIGHT TURN INBOUNDCOURSE 022 ALT 2700 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

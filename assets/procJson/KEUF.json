@@ -1,0 +1,182 @@
+{
+    "fixes": [
+        {
+            "name": "ADZUY",
+            "lat": 31.883475,
+            "lon": 85.12780833333333
+        },
+        {
+            "name": "AFENY",
+            "lat": 32.016225,
+            "lon": 85.118275
+        },
+        {
+            "name": "AXOSE",
+            "lat": 31.887033333333335,
+            "lon": 84.94928611666667
+        },
+        {
+            "name": "AYUSO",
+            "lat": 31.856388883333334,
+            "lon": 85.13596388333333
+        },
+        {
+            "name": "CASDO",
+            "lat": 32.04595556666666,
+            "lon": 85.1219
+        },
+        {
+            "name": "CEDLO",
+            "lat": 31.783322216666665,
+            "lon": 85.12371666666667
+        },
+        {
+            "name": "EPICU",
+            "lat": 32.16186388333333,
+            "lon": 85.11326943333333
+        },
+        {
+            "name": "EUF",
+            "lat": 31.95025,
+            "lon": 85.13048056666666
+        },
+        {
+            "name": "FF18",
+            "lat": 32.04461666666667,
+            "lon": 85.11299166666667
+        },
+        {
+            "name": "IKAGE",
+            "lat": 31.7446,
+            "lon": 85.14423333333333
+        },
+        {
+            "name": "IVUWE",
+            "lat": 31.915399999999998,
+            "lon": 85.32208333333334
+        },
+        {
+            "name": "MAJYO",
+            "lat": 31.936886116666667,
+            "lon": 85.12999443333334
+        },
+        {
+            "name": "PI001",
+            "lat": 32.00850333333333,
+            "lon": 85.12688028333334
+        },
+        {
+            "name": "PI002",
+            "lat": 32.06174948333334,
+            "lon": 85.18346516666666
+        },
+        {
+            "name": "PI003",
+            "lat": 32.11668783333333,
+            "lon": 85.12018188333333
+        },
+        {
+            "name": "PI004",
+            "lat": 31.892484,
+            "lon": 85.12091868333333
+        },
+        {
+            "name": "PI005",
+            "lat": 31.84933615,
+            "lon": 85.05353825
+        },
+        {
+            "name": "PI006",
+            "lat": 31.7852024,
+            "lon": 85.10319268333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "FF18": "FF18 2000",
+                "AFENY": "AFENY AT OR ABOVE 1040 RNW 18",
+                "EUF": "EUF AT OR ABOVE 685 TRK 187 UNTIL 1500 TURN RIGHT DIRECT EUF AT OR ABOVE 2000 HOLD AT EUF RIGHT TURN INBOUNDCOURSE 075 LEGTIME 1 FAF FF18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "EUF",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD36",
+            "fixes": {
+                "CEDLO": "CEDLO AT OR ABOVE 2000",
+                "ADZUY": "ADZUY 1500",
+                "MAJYO": "MAJYO 463 RNW 36 TRK 356 UNTIL 1500 TURN RIGHT DIRECT",
+                "EUF": "EUF AT OR ABOVE 2000 HOLD AT EUF RIGHT TURN INBOUNDCOURSE 075 LEGTIME 1 FAF ADZUY MAP MAJYO"
+            },
+            "transitions": [
+                {
+                    "name": "AXOSE",
+                    "fixes": {
+                        "AXOSE": "AXOSE"
+                    }
+                },
+                {
+                    "name": "EUF",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "IVUWE",
+                    "fixes": {
+                        "IVUWE": "IVUWE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "EPICU": "EPICU AT OR ABOVE 2200 OVERFLY EPICU AT OR ABOVE 2200 HOLD AT EPICU RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF CASDO MAP RNW 18",
+                "CASDO": "CASDO 2000 RNW 18 TRK 188 UNTIL 1300 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EPICU",
+                    "fixes": {
+                        "EPICU": "EPICU RIGHT TURN INBOUNDCOURSE 188 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "IKAGE": "IKAGE AT OR ABOVE 2500",
+                "AYUSO": "AYUSO 2000 RNW 36 TRK 008 UNTIL 592",
+                "EPICU": "OVERFLY EPICU AT OR ABOVE 2200 HOLD AT EPICU RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF AYUSO MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "IKAGE",
+                    "fixes": {
+                        "IKAGE": "IKAGE RIGHT TURN INBOUNDCOURSE 008 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

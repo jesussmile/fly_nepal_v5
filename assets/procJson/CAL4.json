@@ -1,0 +1,153 @@
+{
+    "fixes": [
+        {
+            "name": "ANTOB",
+            "lat": 57.09084721666667,
+            "lon": 111.2507
+        },
+        {
+            "name": "EMKIX",
+            "lat": 57.26121943333333,
+            "lon": 111.46629721666666
+        },
+        {
+            "name": "IGSAD",
+            "lat": 56.97080833333333,
+            "lon": 111.35591666666667
+        },
+        {
+            "name": "IKDUD",
+            "lat": 57.332008333333334,
+            "lon": 111.55660556666666
+        },
+        {
+            "name": "LENAV",
+            "lat": 57.405830566666666,
+            "lon": 111.65124443333333
+        },
+        {
+            "name": "NOXIG",
+            "lat": 57.524,
+            "lon": 111.3985
+        },
+        {
+            "name": "NUDOK",
+            "lat": 57.289594433333335,
+            "lon": 111.50244721666667
+        },
+        {
+            "name": "PEKPA",
+            "lat": 57.358375,
+            "lon": 111.77766388333333
+        },
+        {
+            "name": "SEKIK",
+            "lat": 56.925,
+            "lon": 111.92
+        },
+        {
+            "name": "SELEL",
+            "lat": 57.453158333333334,
+            "lon": 111.5245
+        },
+        {
+            "name": "TAGIT",
+            "lat": 57.138333333333335,
+            "lon": 112.08111111666666
+        },
+        {
+            "name": "TAPMI",
+            "lat": 57.42790556666667,
+            "lon": 111.32477221666667
+        },
+        {
+            "name": "TIDIM",
+            "lat": 56.981008333333335,
+            "lon": 111.11299443333333
+        },
+        {
+            "name": "VETMI",
+            "lat": 57.15942221666667,
+            "lon": 111.33718333333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "ALBIA1",
+            "rnw": "26",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 13",
+                    "fixes": {
+                        "RNW 13": "RNW 13 HDG 131 UNTIL 1500 TURN RIGHT DIRECT",
+                        "TAGIT": "TAGIT 5000 SPEED 210"
+                    }
+                },
+                {
+                    "rwy": "RNW 31",
+                    "fixes": {
+                        "RNW 31": "RNW 31 HDG 311 UNTIL 1600 TURN LEFT DIRECT",
+                        "TAGIT": "TAGIT 5000 SPEED 210"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "LENAV": "LENAV AT OR ABOVE 3400 SPEED 180",
+                "IKDUD": "IKDUD AT OR ABOVE 3400",
+                "NUDOK": "NUDOK 2400",
+                "EMKIX": "EMKIX AT OR ABOVE 1740 RNW 13 TRK 131 UNTIL 1800 TURN LEFT DIRECT",
+                "TAPMI": "OVERFLY TAPMI 2900 HOLD AT TAPMI RIGHT TURN INBOUNDCOURSE 156 SPEED 200 LEGDIST 4 FAF NUDOK MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "SEKIK",
+                    "fixes": {
+                        "SEKIK": "SEKIK",
+                        "PEKPA": "PEKPA AT OR ABOVE 3400 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SELEL",
+                    "fixes": {
+                        "SELEL": "SELEL SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ANTOB": "ANTOB AT OR ABOVE 3400 SPEED 180",
+                "VETMI": "VETMI 2400 RNW 31 TRK 311 UNTIL 2000",
+                "NOXIG": "OVERFLY NOXIG 2500 HOLD AT NOXIG RIGHT TURN INBOUNDCOURSE 345 SPEED 200 LEGTIME 1 FAF VETMI MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "SEKIK",
+                    "fixes": {
+                        "SEKIK": "SEKIK",
+                        "IGSAD": "IGSAD AT OR ABOVE 3400 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TIDIM",
+                    "fixes": {
+                        "TIDIM": "TIDIM SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

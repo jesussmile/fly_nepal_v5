@@ -1,0 +1,172 @@
+{
+    "fixes": [
+        {
+            "name": "AGGID",
+            "lat": 35.028697216666664,
+            "lon": 114.53305556666666
+        },
+        {
+            "name": "BEPME",
+            "lat": 35.12883888333333,
+            "lon": 114.55524443333333
+        },
+        {
+            "name": "BORYU",
+            "lat": 34.930191666666666,
+            "lon": 114.51073056666667
+        },
+        {
+            "name": "BULAC",
+            "lat": 35.04664721666666,
+            "lon": 114.55120833333334
+        },
+        {
+            "name": "CALRA",
+            "lat": 34.94842778333334,
+            "lon": 114.54383888333334
+        },
+        {
+            "name": "CUTAD",
+            "lat": 35.49005833333333,
+            "lon": 114.70195
+        },
+        {
+            "name": "EED",
+            "lat": 34.766002783333334,
+            "lon": 114.47410278333334
+        },
+        {
+            "name": "GFS",
+            "lat": 35.13114443333333,
+            "lon": 115.17644166666666
+        },
+        {
+            "name": "GORSY",
+            "lat": 34.85550833333333,
+            "lon": 114.64495833333334
+        },
+        {
+            "name": "IGM",
+            "lat": 35.26051388333333,
+            "lon": 113.93408056666667
+        },
+        {
+            "name": "LAKIY",
+            "lat": 35.481566666666666,
+            "lon": 114.64122221666666
+        },
+        {
+            "name": "LYNSY",
+            "lat": 35.66054166666667,
+            "lon": 114.75615278333333
+        },
+        {
+            "name": "MEBDE",
+            "lat": 35.303613883333334,
+            "lon": 114.57057778333333
+        },
+        {
+            "name": "UFKUN",
+            "lat": 35.236652783333334,
+            "lon": 114.56551943333334
+        },
+        {
+            "name": "ZUMOD",
+            "lat": 35.31764166666667,
+            "lon": 114.57163333333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD34",
+            "fixes": {
+                "BORYU": "BORYU AT OR ABOVE 5000",
+                "AGGID": "AGGID 3100",
+                "BEPME": "BEPME 1043 RNW 34 TRK 335 UNTIL 1110 TURN RIGHT HDG 120 INTERCEPT RADIAL 164 TO",
+                "EED": "EED EED AT OR ABOVE 6000 HOLD AT EED RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF AGGID MAP BEPME"
+            },
+            "transitions": [
+                {
+                    "name": "EED",
+                    "fixes": {
+                        "EED": "EED RIGHT TURN INBOUNDCOURSE 335 ALT 6000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "LAKIY": "LAKIY AT OR ABOVE 6600",
+                "MEBDE": "MEBDE 3300",
+                "UFKUN": "UFKUN AT OR ABOVE 2020 RNW 16 TRK 164 UNTIL 1048",
+                "CALRA": "OVERFLY CALRA AT OR ABOVE 6300 HOLD AT CALRA LEFT TURN INBOUNDCOURSE 344 ALT 6300 LEGDIST 7 FAF MEBDE MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "EED",
+                    "fixes": {
+                        "EED": "EED",
+                        "LAKIY": "OVERFLY LAKIY AT OR ABOVE 8000 HOLD AT LAKIY RIGHT TURN INBOUNDCOURSE 150 ALT 6600 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "GFS",
+                    "fixes": {
+                        "GFS": "GFS",
+                        "LAKIY": "OVERFLY LAKIY AT OR ABOVE 8000 HOLD AT LAKIY RIGHT TURN INBOUNDCOURSE 150 ALT 6600 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "IGM",
+                    "fixes": {
+                        "IGM": "IGM",
+                        "LAKIY": "OVERFLY LAKIY AT OR ABOVE 8200 HOLD AT LAKIY RIGHT TURN INBOUNDCOURSE 150 ALT 6600 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "LYNSY",
+                    "fixes": {
+                        "LYNSY": "LYNSY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "CALRA": "CALRA AT OR ABOVE 4300",
+                "BULAC": "BULAC 2600 RNW 34 TRK 344 UNTIL 1107",
+                "ZUMOD": "ZUMOD AT OR ABOVE 7600",
+                "CUTAD": "OVERFLY CUTAD AT OR ABOVE 7600 HOLD AT CUTAD RIGHT TURN INBOUNDCOURSE 334 LEGDIST 7 FAF BULAC MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "CUTAD",
+                    "fixes": {
+                        "CUTAD": "CUTAD",
+                        "CALRA": "OVERFLY CALRA AT OR ABOVE 5700 HOLD AT CALRA LEFT TURN INBOUNDCOURSE 344 ALT 4300 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "EED",
+                    "fixes": {
+                        "EED": "EED"
+                    }
+                },
+                {
+                    "name": "GORSY",
+                    "fixes": {
+                        "GORSY": "GORSY"
+                    }
+                }
+            ]
+        }
+    ]
+}

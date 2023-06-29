@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "BASBY",
+            "lat": 44.75829721666667,
+            "lon": 88.46164721666666
+        },
+        {
+            "name": "GUHMU",
+            "lat": 44.801491666666664,
+            "lon": 88.60783611666666
+        },
+        {
+            "name": "HISAV",
+            "lat": 44.714044433333335,
+            "lon": 88.31273888333334
+        },
+        {
+            "name": "WIRIX",
+            "lat": 44.816277783333334,
+            "lon": 88.65806943333334
+        },
+        {
+            "name": "ZASRU",
+            "lat": 44.860072216666666,
+            "lon": 88.80745833333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 17",
+        "RNW 30",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "ZASRU": "ZASRU AT OR ABOVE 2700",
+                "WIRIX": "WIRIX 2200",
+                "GUHMU": "GUHMU AT OR ABOVE 1460 RNW 12 TRK 114 UNTIL 1082",
+                "HISAV": "OVERFLY HISAV AT OR ABOVE 2500 HOLD AT HISAV RIGHT TURN INBOUNDCOURSE 295 LEGDIST 4 FAF WIRIX MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "ZASRU",
+                    "fixes": {
+                        "ZASRU": "ZASRU RIGHT TURN INBOUNDCOURSE 114 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "HISAV": "HISAV AT OR ABOVE 2500",
+                "BASBY": "BASBY 2200 RNW 30 TRK 295 UNTIL 1097",
+                "ZASRU": "OVERFLY ZASRU AT OR ABOVE 2700 HOLD AT ZASRU RIGHT TURN INBOUNDCOURSE 114 LEGDIST 4 FAF BASBY MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "HISAV",
+                    "fixes": {
+                        "HISAV": "HISAV RIGHT TURN INBOUNDCOURSE 295 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

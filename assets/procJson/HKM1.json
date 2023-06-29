@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "FEFEE",
+            "lat": 2.3192277833333335,
+            "lon": 40.94179166666667
+        },
+        {
+            "name": "FLOKK",
+            "lat": 2.100202783333333,
+            "lon": 40.87530833333334
+        },
+        {
+            "name": "FOLVA",
+            "lat": 1.9375388833333334,
+            "lon": 40.86488056666666
+        },
+        {
+            "name": "GEAGA",
+            "lat": 2.0201111166666665,
+            "lon": 40.851002783333335
+        },
+        {
+            "name": "GIGLS",
+            "lat": 2.255152783333333,
+            "lon": 40.92233888333333
+        },
+        {
+            "name": "GIRTE",
+            "lat": 2.3688611166666664,
+            "lon": 41.02865833333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "GEAGA": "GEAGA AT OR ABOVE 2000",
+                "FLOKK": "FLOKK 1300 RNW 16 TRK 163 UNTIL 600 TURN LEFT DIRECT",
+                "FOLVA": "OVERFLY FOLVA 3300 HOLD AT FOLVA LEFT TURN INBOUNDCOURSE 190 ALT 3300 SPEED 230 LEGDIST 4 FAF FLOKK MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "FOLVA",
+                    "fixes": {
+                        "FOLVA": "FOLVA AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "FEFEE": "FEFEE AT OR ABOVE 3000",
+                "GIGLS": "GIGLS 1900 RNW 34 TRK 343 UNTIL 600 TURN RIGHT DIRECT",
+                "GIRTE": "OVERFLY GIRTE 4000 HOLD AT GIRTE RIGHT TURN INBOUNDCOURSE 300 ALT 4000 SPEED 230 LEGDIST 4 FAF GIGLS MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GIRTE",
+                    "fixes": {
+                        "GIRTE": "GIRTE AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

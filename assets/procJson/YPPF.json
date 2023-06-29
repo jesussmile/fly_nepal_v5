@@ -1,0 +1,323 @@
+{
+    "fixes": [
+        {
+            "name": "AD",
+            "lat": 34.946972216666666,
+            "lon": 138.52452778333333
+        },
+        {
+            "name": "CQ21R",
+            "lat": 34.67671111666667,
+            "lon": 138.72593333333333
+        },
+        {
+            "name": "D202D",
+            "lat": 34.99757221666667,
+            "lon": 138.48902778333334
+        },
+        {
+            "name": "D205U",
+            "lat": 34.64868056666667,
+            "lon": 138.74791111666667
+        },
+        {
+            "name": "D205W",
+            "lat": 34.62065,
+            "lon": 138.769875
+        },
+        {
+            "name": "DME14",
+            "lat": 34.75378333333333,
+            "lon": 138.66540278333332
+        },
+        {
+            "name": "DME15",
+            "lat": 34.739769433333336,
+            "lon": 138.67641666666665
+        },
+        {
+            "name": "EN21R",
+            "lat": 34.79163333333333,
+            "lon": 138.63500278333333
+        },
+        {
+            "name": "FN21R",
+            "lat": 34.699494433333335,
+            "lon": 138.70805278333333
+        },
+        {
+            "name": "FQ21R",
+            "lat": 34.690725,
+            "lon": 138.71493611666668
+        },
+        {
+            "name": "MA022",
+            "lat": 34.900708333333334,
+            "lon": 138.55695
+        },
+        {
+            "name": "PFNB",
+            "lat": 34.796472216666665,
+            "lon": 138.63116666666667
+        },
+        {
+            "name": "PPFNA",
+            "lat": 34.583722216666665,
+            "lon": 138.66588888333334
+        },
+        {
+            "name": "PPFND",
+            "lat": 34.65777778333333,
+            "lon": 138.83319443333335
+        },
+        {
+            "name": "PPFNF",
+            "lat": 34.7195,
+            "lon": 138.68544443333334
+        },
+        {
+            "name": "PPFNH",
+            "lat": 34.778972216666666,
+            "lon": 138.51741666666666
+        },
+        {
+            "name": "PPFNI",
+            "lat": 34.645944433333334,
+            "lon": 138.73319443333332
+        },
+        {
+            "name": "RW21R",
+            "lat": 34.80377778333333,
+            "lon": 138.63064443333334
+        }
+    ],
+    "rnws": [
+        "RNW 03L",
+        "RNW 03R",
+        "RNW 08L",
+        "RNW 08R",
+        "RNW 21L",
+        "RNW 21R",
+        "RNW 26L",
+        "RNW 26R"
+    ],
+    "sids": [
+        {
+            "name": "PF1",
+            "rnw": "04",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 03L",
+                    "fixes": {
+                        "RNW 03L": "RNW 03L TRK 020 UNTIL 3000 HDG 020 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 21R",
+                    "fixes": {
+                        "RNW 21R": "RNW 21R",
+                        "RW21R": "OVERFLY RW21R TRK 215 UNTIL 800 TRK 240 UNTIL 1600 HDG 240 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB21RY",
+            "fixes": {
+                "FN21R": "FN21R 2200",
+                "EN21R": "OVERFLY EN21R 99",
+                "PFNB": "OVERFLY PFNB AT OR ABOVE 560 RNW 21R TRK 270 UNTIL 3000 FAF FN21R MAP PF"
+            },
+            "transitions": [
+                {
+                    "name": "PF",
+                    "fixes": {
+                        "PFNB": "PFNB AT OR ABOVE 4000 SPEED 140 TRK 036 UNTIL 8.2 FROM PFNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD21RZ",
+            "fixes": {
+                "CQ21R": "CQ21R AT OR ABOVE 2810",
+                "FQ21R": "FQ21R 2480",
+                "DME15": "DME15 AT OR ABOVE 1320",
+                "DME14": "DME14 AT OR ABOVE 990",
+                "EN21R": "OVERFLY EN21R 99",
+                "PFNB": "OVERFLY PFNB AT OR ABOVE 560 RNW 21R TRK 270 UNTIL 3000 FAF FQ21R MAP PF"
+            },
+            "transitions": [
+                {
+                    "name": "D205W",
+                    "fixes": {
+                        "D205W": "D205W AT OR ABOVE 4000 SPEED 140",
+                        "D205U": "D205U AT OR ABOVE 3460"
+                    }
+                },
+                {
+                    "name": "PF",
+                    "fixes": {
+                        "PFNB": "PFNB AT OR ABOVE 4000 SPEED 140 TRK 036 UNTIL 19.0 FROM",
+                        "AD": "AD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21R",
+            "fixes": {
+                "PPFNI": "PPFNI AT OR ABOVE 3000",
+                "PPFNF": "PPFNF 1690 RNW 21R TRK 200 UNTIL 500 TURN RIGHT DIRECT",
+                "PPFNH": "PPFNH TRK 270 VECTORS FAF PPFNF MAP RNW 21R"
+            },
+            "transitions": [
+                {
+                    "name": "PPFNA",
+                    "fixes": {
+                        "PPFNA": "PPFNA AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "PPFND",
+                    "fixes": {
+                        "PPFND": "PPFND AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR03LA",
+            "fixes": {
+                "AD": "AD 1500",
+                "MA022": "OVERFLY MA022 1020 RNW 03L TRK 270 UNTIL 3000 FAF AD MAP MA022"
+            },
+            "transitions": [
+                {
+                    "name": "AD",
+                    "fixes": {
+                        "AD": "AD AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 3.5 FROM AD TURN LEFT DIRECT",
+                        "D202D": "D202D AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR03RA",
+            "fixes": {
+                "AD": "AD 1500",
+                "MA022": "OVERFLY MA022 1020 RNW 03R TRK 270 UNTIL 3000 FAF AD MAP MA022"
+            },
+            "transitions": [
+                {
+                    "name": "AD",
+                    "fixes": {
+                        "AD": "AD AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 3.5 FROM AD TURN LEFT DIRECT",
+                        "D202D": "D202D AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR08LA",
+            "fixes": {
+                "AD": "AD 1500",
+                "MA022": "OVERFLY MA022 1020 RNW 08L TRK 270 UNTIL 3000 FAF AD MAP MA022"
+            },
+            "transitions": [
+                {
+                    "name": "AD",
+                    "fixes": {
+                        "AD": "AD AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 3.5 FROM AD TURN LEFT DIRECT",
+                        "D202D": "D202D AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR08RA",
+            "fixes": {
+                "AD": "AD 1500",
+                "MA022": "OVERFLY MA022 1020 RNW 08R TRK 270 UNTIL 3000 FAF AD MAP MA022"
+            },
+            "transitions": [
+                {
+                    "name": "AD",
+                    "fixes": {
+                        "AD": "AD AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 3.5 FROM AD TURN LEFT DIRECT",
+                        "D202D": "D202D AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR21LA",
+            "fixes": {
+                "AD": "AD 1500",
+                "MA022": "OVERFLY MA022 1020 RNW 21L TRK 270 UNTIL 3000 FAF AD MAP MA022"
+            },
+            "transitions": [
+                {
+                    "name": "AD",
+                    "fixes": {
+                        "AD": "AD AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 3.5 FROM AD TURN LEFT DIRECT",
+                        "D202D": "D202D AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR21RA",
+            "fixes": {
+                "AD": "AD 1500",
+                "MA022": "OVERFLY MA022 1020 RNW 21R TRK 270 UNTIL 3000 FAF AD MAP MA022"
+            },
+            "transitions": [
+                {
+                    "name": "AD",
+                    "fixes": {
+                        "AD": "AD AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 3.5 FROM AD TURN LEFT DIRECT",
+                        "D202D": "D202D AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26LA",
+            "fixes": {
+                "AD": "AD 1500",
+                "MA022": "OVERFLY MA022 1020 RNW 26L TRK 270 UNTIL 3000 FAF AD MAP MA022"
+            },
+            "transitions": [
+                {
+                    "name": "AD",
+                    "fixes": {
+                        "AD": "AD AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 3.5 FROM AD TURN LEFT DIRECT",
+                        "D202D": "D202D AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26RA",
+            "fixes": {
+                "AD": "AD 1500",
+                "MA022": "OVERFLY MA022 1020 RNW 26R TRK 270 UNTIL 3000 FAF AD MAP MA022"
+            },
+            "transitions": [
+                {
+                    "name": "AD",
+                    "fixes": {
+                        "AD": "AD AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 3.5 FROM AD TURN LEFT DIRECT",
+                        "D202D": "D202D AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        }
+    ]
+}

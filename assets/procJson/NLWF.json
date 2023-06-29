@@ -1,0 +1,151 @@
+{
+    "fixes": [
+        {
+            "name": "FF25",
+            "lat": 14.3045,
+            "lon": 177.989225
+        },
+        {
+            "name": "FNNB",
+            "lat": 14.311361116666667,
+            "lon": 178.06947221666667
+        },
+        {
+            "name": "FWF07",
+            "lat": 14.325472216666666,
+            "lon": 178.17544443333333
+        },
+        {
+            "name": "FWF25",
+            "lat": 14.29975,
+            "lon": 177.97347221666666
+        },
+        {
+            "name": "IWF07",
+            "lat": 14.334638883333334,
+            "lon": 178.24777778333333
+        },
+        {
+            "name": "IWF25",
+            "lat": 14.292027783333333,
+            "lon": 177.91322221666667
+        },
+        {
+            "name": "MWF25",
+            "lat": 14.306833333333334,
+            "lon": 178.02902778333333
+        },
+        {
+            "name": "WF410",
+            "lat": 14.304277783333333,
+            "lon": 178.00886111666668
+        },
+        {
+            "name": "WF412",
+            "lat": 14.405972216666667,
+            "lon": 178.00925
+        },
+        {
+            "name": "WF414",
+            "lat": 14.401027783333333,
+            "lon": 178.23891666666665
+        },
+        {
+            "name": "WF416",
+            "lat": 14.268222216666667,
+            "lon": 178.25661111666668
+        },
+        {
+            "name": "WF502",
+            "lat": 14.351416666666667,
+            "lon": 177.88152778333333
+        },
+        {
+            "name": "WF504",
+            "lat": 14.226666666666667,
+            "lon": 177.89833333333334
+        },
+        {
+            "name": "WF512",
+            "lat": 14.317666666666666,
+            "lon": 178.11413888333334
+        },
+        {
+            "name": "WF514",
+            "lat": 14.397416666666667,
+            "lon": 178.055
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FF25": "FF25 1400 RNW 25",
+                "FNNB": "OVERFLY FNNB TRK 195 UNTIL 1400 TURN LEFT DIRECT FNNB AT OR ABOVE 2800 HOLD AT FNNB LEFT TURN INBOUNDCOURSE 060 LEGTIME 1 FAF FF25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "FN",
+                    "fixes": {
+                        "FNNB": "FNNB TRK 060 UNTIL 9.0 FROM FNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "IWF07": "IWF07 AT OR ABOVE 2000",
+                "FWF07": "FWF07 2000 RNW 07",
+                "WF410": "OVERFLY WF410 TURN RIGHT DIRECT",
+                "WF412": "WF412",
+                "WF414": "WF414 AT OR ABOVE 2800 FAF FWF07 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "WF414",
+                    "fixes": {
+                        "WF414": "WF414 AT OR ABOVE 2800"
+                    }
+                },
+                {
+                    "name": "WF416",
+                    "fixes": {
+                        "WF416": "WF416 AT OR ABOVE 2800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "IWF25": "IWF25 AT OR ABOVE 1700",
+                "FWF25": "FWF25 1700",
+                "MWF25": "OVERFLY MWF25 661 RNW 25",
+                "WF512": "OVERFLY WF512 TURN LEFT DIRECT",
+                "WF514": "WF514",
+                "WF502": "WF502 AT OR ABOVE 2800 FAF FWF25 MAP MWF25"
+            },
+            "transitions": [
+                {
+                    "name": "WF502",
+                    "fixes": {
+                        "WF502": "WF502 AT OR ABOVE 2800"
+                    }
+                },
+                {
+                    "name": "WF504",
+                    "fixes": {
+                        "WF504": "WF504 AT OR ABOVE 2800"
+                    }
+                }
+            ]
+        }
+    ]
+}

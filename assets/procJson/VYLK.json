@@ -1,0 +1,49 @@
+{
+    "fixes": [
+        {
+            "name": "FF19",
+            "lat": 19.782752783333333,
+            "lon": 97.22871666666667
+        },
+        {
+            "name": "LKNB",
+            "lat": 19.690455566666667,
+            "lon": 97.213275
+        },
+        {
+            "name": "MA19",
+            "lat": 19.717375,
+            "lon": 97.217775
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB19",
+            "fixes": {
+                "FF19": "FF19 4800",
+                "MA19": "MA19 3380 RNW 19 HDG 180 UNTIL 4500 TURN LEFT DIRECT",
+                "LKNB": "LKNB 6000 HOLD AT LKNB RIGHT TURN INBOUNDCOURSE 030 LEGTIME 1 FAF FF19 MAP MA19"
+            },
+            "transitions": [
+                {
+                    "name": "LK1",
+                    "fixes": {
+                        "LKNB": "LKNB AT OR ABOVE 6000 TRK 030 UNTIL 5.3 FROM LKNB"
+                    }
+                },
+                {
+                    "name": "LK2",
+                    "fixes": {
+                        "LKNB": "LKNB AT OR ABOVE 6000 TRK 030 UNTIL 6.0 FROM LKNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

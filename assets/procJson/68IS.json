@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "DPA",
+            "lat": 41.89037221666667,
+            "lon": 88.35017778333334
+        },
+        {
+            "name": "GRIFT",
+            "lat": 42.29115,
+            "lon": 88.89483888333334
+        },
+        {
+            "name": "HOPIR",
+            "lat": 42.14855,
+            "lon": 88.67251111666667
+        },
+        {
+            "name": "KIYTE",
+            "lat": 42.14835,
+            "lon": 88.80694721666667
+        },
+        {
+            "name": "MA327",
+            "lat": 42.14786111666667,
+            "lon": 88.55824721666667
+        },
+        {
+            "name": "PALID",
+            "lat": 42.0288,
+            "lon": 88.46177778333333
+        },
+        {
+            "name": "SIMMN",
+            "lat": 41.98068611666667,
+            "lon": 88.87844443333333
+        },
+        {
+            "name": "WARTS",
+            "lat": 42.101044433333335,
+            "lon": 88.52025
+        },
+        {
+            "name": "YEARN",
+            "lat": 42.07553611666667,
+            "lon": 88.55745833333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "KIYTE": "KIYTE AT OR ABOVE 2600",
+                "HOPIR": "HOPIR 2400 RNW 09 TRK 092 UNTIL 1260 TURN RIGHT DIRECT",
+                "SIMMN": "OVERFLY SIMMN AT OR ABOVE 2600 HOLD AT SIMMN RIGHT TURN INBOUNDCOURSE 305 LEGDIST 4 FAF HOPIR MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "GRIFT",
+                    "fixes": {
+                        "GRIFT": "GRIFT"
+                    }
+                },
+                {
+                    "name": "SIMMN",
+                    "fixes": {
+                        "SIMMN": "SIMMN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA09",
+            "fixes": {
+                "PALID": "PALID AT OR ABOVE 2600",
+                "WARTS": "WARTS 2100",
+                "MA327": "MA327 1500 RNW 09 TRK 327 UNTIL 1500 TURN LEFT DIRECT",
+                "YEARN": "YEARN AT OR ABOVE 2800 HOLD AT YEARN LEFT TURN INBOUNDCOURSE 318 LEGTIME 1 FAF WARTS MAP MA327"
+            },
+            "transitions": [
+                {
+                    "name": "DPA",
+                    "fixes": {
+                        "DPA": "DPA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA27",
+            "fixes": {
+                "PALID": "PALID AT OR ABOVE 2600",
+                "WARTS": "WARTS 2100",
+                "MA327": "MA327 1500 RNW 27 TRK 327 UNTIL 1500 TURN LEFT DIRECT",
+                "YEARN": "YEARN AT OR ABOVE 2800 HOLD AT YEARN LEFT TURN INBOUNDCOURSE 318 LEGTIME 1 FAF WARTS MAP MA327"
+            },
+            "transitions": [
+                {
+                    "name": "DPA",
+                    "fixes": {
+                        "DPA": "DPA"
+                    }
+                }
+            ]
+        }
+    ]
+}

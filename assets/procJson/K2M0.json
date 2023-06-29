@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "IXBER",
+            "lat": 37.01011943333334,
+            "lon": 87.99809721666666
+        },
+        {
+            "name": "JOROV",
+            "lat": 37.145063883333336,
+            "lon": 87.81678611666666
+        },
+        {
+            "name": "NONRE",
+            "lat": 37.22228333333333,
+            "lon": 87.71258888333334
+        },
+        {
+            "name": "WOBGU",
+            "lat": 37.055577783333334,
+            "lon": 87.93713056666667
+        },
+        {
+            "name": "ZITKU",
+            "lat": 37.17693611666667,
+            "lon": 87.77381943333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "IXBER": "IXBER AT OR ABOVE 2700",
+                "WOBGU": "WOBGU 2200 RNW 05 TRK 050 UNTIL 909",
+                "NONRE": "OVERFLY NONRE AT OR ABOVE 2700 HOLD AT NONRE RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4 FAF WOBGU MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "IXBER",
+                    "fixes": {
+                        "IXBER": "IXBER RIGHT TURN INBOUNDCOURSE 050 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "NONRE": "NONRE AT OR ABOVE 2700",
+                "ZITKU": "ZITKU 2200",
+                "JOROV": "JOROV AT OR ABOVE 1300 RNW 23 TRK 230 UNTIL 866",
+                "IXBER": "OVERFLY IXBER AT OR ABOVE 2700 HOLD AT IXBER RIGHT TURN INBOUNDCOURSE 050 LEGDIST 4 FAF ZITKU MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "NONRE",
+                    "fixes": {
+                        "NONRE": "NONRE RIGHT TURN INBOUNDCOURSE 230 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

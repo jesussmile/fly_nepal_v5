@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "GANTS",
+            "lat": 35.45317778333333,
+            "lon": 80.10445556666667
+        },
+        {
+            "name": "GIPPR",
+            "lat": 35.20969443333333,
+            "lon": 79.98552778333334
+        },
+        {
+            "name": "JEGUD",
+            "lat": 35.559475,
+            "lon": 79.70624166666667
+        },
+        {
+            "name": "LIB",
+            "lat": 35.81162221666666,
+            "lon": 79.61259166666666
+        },
+        {
+            "name": "PEKNN",
+            "lat": 35.21148888333333,
+            "lon": 79.87267221666667
+        },
+        {
+            "name": "RELPY",
+            "lat": 35.21269443333333,
+            "lon": 79.79132221666667
+        },
+        {
+            "name": "WAVMA",
+            "lat": 35.41966943333333,
+            "lon": 79.77346666666666
+        },
+        {
+            "name": "ZEDOM",
+            "lat": 35.34846111666667,
+            "lon": 79.80761388333333
+        },
+        {
+            "name": "ZIVOS",
+            "lat": 35.31337778333334,
+            "lon": 79.82441388333334
+        },
+        {
+            "name": "ZOGMI",
+            "lat": 35.468822216666666,
+            "lon": 79.74986111666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "PEKNN": "PEKNN AT OR ABOVE 3000",
+                "ZIVOS": "ZIVOS 2200",
+                "ZEDOM": "ZEDOM AT OR ABOVE 1360 RNW 03 TRK 027 UNTIL 1032",
+                "JEGUD": "OVERFLY JEGUD AT OR ABOVE 3000 HOLD AT JEGUD RIGHT TURN INBOUNDCOURSE 207 LEGDIST 4 FAF ZIVOS MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "GIPPR",
+                    "fixes": {
+                        "GIPPR": "GIPPR"
+                    }
+                },
+                {
+                    "name": "RELPY",
+                    "fixes": {
+                        "RELPY": "RELPY",
+                        "PEKNN": "OVERFLY PEKNN AT OR ABOVE 3000 HOLD AT PEKNN RIGHT TURN INBOUNDCOURSE 027 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "JEGUD": "JEGUD AT OR ABOVE 3000",
+                "ZOGMI": "ZOGMI 2300",
+                "WAVMA": "WAVMA AT OR ABOVE 1280 RNW 21 TRK 207 UNTIL 1032",
+                "ZIVOS": "ZIVOS",
+                "PEKNN": "OVERFLY PEKNN AT OR ABOVE 3000 HOLD AT PEKNN RIGHT TURN INBOUNDCOURSE 027 LEGDIST 4 FAF ZOGMI MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "GANTS",
+                    "fixes": {
+                        "GANTS": "GANTS",
+                        "JEGUD": "OVERFLY JEGUD AT OR ABOVE 3000 HOLD AT JEGUD RIGHT TURN INBOUNDCOURSE 207 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LIB",
+                    "fixes": {
+                        "LIB": "LIB"
+                    }
+                }
+            ]
+        }
+    ]
+}

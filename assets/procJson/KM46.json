@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "35THR",
+            "lat": 45.8354,
+            "lon": 106.799325
+        },
+        {
+            "name": "BIL",
+            "lat": 45.80855833333333,
+            "lon": 108.62464721666667
+        },
+        {
+            "name": "CHOCO",
+            "lat": 46.19119443333334,
+            "lon": 106.87402221666666
+        },
+        {
+            "name": "CISPU",
+            "lat": 45.734394433333335,
+            "lon": 105.819725
+        },
+        {
+            "name": "COLOK",
+            "lat": 45.86358333333333,
+            "lon": 106.65365278333333
+        },
+        {
+            "name": "CONUK",
+            "lat": 46.15372778333333,
+            "lon": 107.05930833333333
+        },
+        {
+            "name": "JAILR",
+            "lat": 45.792819433333335,
+            "lon": 107.01735
+        },
+        {
+            "name": "LAMYU",
+            "lat": 45.85567221666667,
+            "lon": 106.26830833333334
+        },
+        {
+            "name": "LAWTN",
+            "lat": 45.82423611666667,
+            "lon": 106.85673333333334
+        },
+        {
+            "name": "MLS",
+            "lat": 46.382227783333335,
+            "lon": 105.95353333333334
+        },
+        {
+            "name": "RIXRI",
+            "lat": 46.01190278333333,
+            "lon": 106.33584443333334
+        },
+        {
+            "name": "SACTI",
+            "lat": 45.87685,
+            "lon": 106.58466111666667
+        },
+        {
+            "name": "SHERY",
+            "lat": 45.752091666666665,
+            "lon": 107.22359166666666
+        },
+        {
+            "name": "SITOY",
+            "lat": 45.84208888333333,
+            "lon": 106.76486943333333
+        },
+        {
+            "name": "UBANE",
+            "lat": 45.90326111666667,
+            "lon": 106.44658333333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "CISPU1",
+            "rnw": "06",
+            "fixes": {
+                "COLOK": "COLOK",
+                "CISPU": "CISPU"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "CONUK1",
+            "rnw": "24",
+            "fixes": {
+                "SITOY": "SITOY",
+                "CONUK": "CONUK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS06",
+            "fixes": {
+                "JAILR": "JAILR AT OR ABOVE 6000",
+                "LAWTN": "LAWTN 5800",
+                "35THR": "35THR AT OR ABOVE 4800 RNW 06 TRK 061 UNTIL 4500 TURN LEFT DIRECT",
+                "CHOCO": "CHOCO AT OR ABOVE 6000 HOLD AT CHOCO RIGHT TURN INBOUNDCOURSE 349 LEGDIST 5 FAF LAWTN MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "BIL",
+                    "fixes": {
+                        "BIL": "BIL",
+                        "SHERY": "SHERY AT OR ABOVE 7000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS24",
+            "fixes": {
+                "UBANE": "UBANE AT OR ABOVE 5500",
+                "SACTI": "SACTI 5300 RNW 24 TRK 242 UNTIL 4500 TURN RIGHT DIRECT",
+                "CHOCO": "OVERFLY CHOCO AT OR ABOVE 6000 HOLD AT CHOCO RIGHT TURN INBOUNDCOURSE 349 LEGDIST 5 FAF SACTI MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "CISPU",
+                    "fixes": {
+                        "CISPU": "CISPU",
+                        "LAMYU": "LAMYU AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "MLS",
+                    "fixes": {
+                        "MLS": "MLS",
+                        "RIXRI": "RIXRI AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,210 @@
+{
+    "fixes": [
+        {
+            "name": "CF18",
+            "lat": 35.827386116666666,
+            "lon": 95.94794721666666
+        },
+        {
+            "name": "CODNA",
+            "lat": 35.667236116666665,
+            "lon": 95.94456111666666
+        },
+        {
+            "name": "CONKI",
+            "lat": 35.57379721666667,
+            "lon": 95.94887778333333
+        },
+        {
+            "name": "CUTYA",
+            "lat": 35.591511116666666,
+            "lon": 95.85581111666667
+        },
+        {
+            "name": "HOFFE",
+            "lat": 35.44545278333333,
+            "lon": 95.84125
+        },
+        {
+            "name": "JEPGO",
+            "lat": 35.723136116666666,
+            "lon": 96.17601388333334
+        },
+        {
+            "name": "JOSAF",
+            "lat": 35.76058056666667,
+            "lon": 95.94818888333333
+        },
+        {
+            "name": "KOSEC",
+            "lat": 35.86047778333333,
+            "lon": 95.94791388333333
+        },
+        {
+            "name": "NALIY",
+            "lat": 35.759325,
+            "lon": 95.94823888333333
+        },
+        {
+            "name": "OKM",
+            "lat": 35.693075,
+            "lon": 95.86595556666667
+        },
+        {
+            "name": "PHARA",
+            "lat": 35.46440556666667,
+            "lon": 96.07097221666666
+        },
+        {
+            "name": "PI001",
+            "lat": 35.718629416666666,
+            "lon": 95.80137856666667
+        },
+        {
+            "name": "PI002",
+            "lat": 35.69526823333333,
+            "lon": 95.71794116666666
+        },
+        {
+            "name": "PI003",
+            "lat": 35.765995966666665,
+            "lon": 95.68134001666667
+        },
+        {
+            "name": "VIDDU",
+            "lat": 35.59174443333333,
+            "lon": 95.948775
+        },
+        {
+            "name": "WOTNA",
+            "lat": 35.860675,
+            "lon": 96.06838611666667
+        },
+        {
+            "name": "ZATAL",
+            "lat": 35.49033611666667,
+            "lon": 95.94918611666667
+        },
+        {
+            "name": "ZORLA",
+            "lat": 35.860202783333335,
+            "lon": 95.840225
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "CF18": "CF18 AT OR ABOVE 2400",
+                "JOSAF": "JOSAF 2400 RNW 18 TRK 176 UNTIL 2100 TURN LEFT DIRECT",
+                "OKM": "OKM AT OR ABOVE 2600 HOLD AT OKM LEFT TURN INBOUNDCOURSE 240 ALT 2600 LEGTIME 1 FAF JOSAF MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "OKM",
+                    "fixes": {
+                        "OKM": "OKM",
+                        "JOSAF": "JOSAF AT OR ABOVE 2400 HOLD AT JOSAF RIGHT TURN INBOUNDCOURSE 176 ALT 2400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "KOSEC": "KOSEC AT OR ABOVE 3000",
+                "NALIY": "NALIY 2400 RNW 18",
+                "VIDDU": "VIDDU AT OR ABOVE 3000 TURN LEFT DIRECT",
+                "CUTYA": "OVERFLY CUTYA HOLD AT CUTYA LEFT TURN INBOUNDCOURSE 086 LEGDIST 5 FAF NALIY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "KOSEC",
+                    "fixes": {
+                        "KOSEC": "KOSEC RIGHT TURN INBOUNDCOURSE 176 ALT 3000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "WOTNA",
+                    "fixes": {
+                        "WOTNA": "WOTNA"
+                    }
+                },
+                {
+                    "name": "ZORLA",
+                    "fixes": {
+                        "ZORLA": "ZORLA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ZATAL": "ZATAL AT OR ABOVE 3000",
+                "CONKI": "CONKI 2400 RNW 36 TRK 356 UNTIL 1200",
+                "JEPGO": "OVERFLY JEPGO AT OR ABOVE 3000 HOLD AT JEPGO RIGHT TURN INBOUNDCOURSE 278 LEGDIST 4 FAF CONKI MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HOFFE",
+                    "fixes": {
+                        "HOFFE": "HOFFE"
+                    }
+                },
+                {
+                    "name": "PHARA",
+                    "fixes": {
+                        "PHARA": "PHARA"
+                    }
+                },
+                {
+                    "name": "ZATAL",
+                    "fixes": {
+                        "ZATAL": "ZATAL RIGHT TURN INBOUNDCOURSE 356 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "OKM": "OKM 2400 OKM HOLD AT OKM LEFT TURN INBOUNDCOURSE 240 LEGTIME 1 FAF OKM MAP CODNA",
+                "CODNA": "CODNA 1340 RNW 18 TRK 240 UNTIL 2600 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "OKM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "OKM": "OKM 2400 OKM HOLD AT OKM LEFT TURN INBOUNDCOURSE 240 LEGTIME 1 FAF OKM MAP CODNA",
+                "CODNA": "CODNA 1340 RNW 36 TRK 240 UNTIL 2600 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "OKM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "fixes": [
+        {
+            "name": "AN500",
+            "lat": 6.313741666666667,
+            "lon": 6.9607833333333335
+        },
+        {
+            "name": "AN600",
+            "lat": 6.220444433333333,
+            "lon": 6.782483333333333
+        },
+        {
+            "name": "CI24",
+            "lat": 6.329969433333333,
+            "lon": 6.989611116666667
+        },
+        {
+            "name": "D109B",
+            "lat": 6.186241666666667,
+            "lon": 6.720030566666667
+        },
+        {
+            "name": "EBNIB",
+            "lat": 6.181644433333333,
+            "lon": 6.708338883333333
+        },
+        {
+            "name": "FD06",
+            "lat": 6.219955566666667,
+            "lon": 6.7828388833333335
+        },
+        {
+            "name": "IVBAR",
+            "lat": 6.314213883333333,
+            "lon": 6.96005
+        },
+        {
+            "name": "ODVIT",
+            "lat": 6.092594433333334,
+            "lon": 6.754847216666667
+        },
+        {
+            "name": "OGBAN",
+            "lat": 6.135083333333333,
+            "lon": 6.6193694333333335
+        },
+        {
+            "name": "OGBOP",
+            "lat": 6.270688883333333,
+            "lon": 6.661816666666667
+        },
+        {
+            "name": "RATUR",
+            "lat": 6.263480566666667,
+            "lon": 7.081477783333334
+        },
+        {
+            "name": "SAB",
+            "lat": 6.196077783333333,
+            "lon": 6.689794433333334
+        },
+        {
+            "name": "SAKDO",
+            "lat": 6.441575,
+            "lon": 6.988416666666667
+        },
+        {
+            "name": "XUKUR",
+            "lat": 6.399075,
+            "lon": 7.123966666666667
+        },
+        {
+            "name": "XUMAR",
+            "lat": 6.352530566666666,
+            "lon": 7.0349555666666665
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD06",
+            "fixes": {
+                "FD06": "FD06 1780 RNW 06 TRK 063 UNTIL 1000 TURN LEFT DIRECT",
+                "SAB": "SAB 5000 HOLD AT SAB LEFT TURN INBOUNDCOURSE 289 ALT 5000 LEGTIME 1 FAF FD06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "SAB",
+                    "fixes": {
+                        "SAB": "SAB AT OR ABOVE 2500 TRK 289 INTERCEPT RADIAL 063 TO",
+                        "D109B": "D109B TURN LEFT DIRECT D109B AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD24",
+            "fixes": {
+                "IVBAR": "IVBAR 1840 RNW 24 TRK 243 UNTIL 1000 TURN RIGHT DIRECT IVBAR 2500 HOLD AT IVBAR LEFT TURN INBOUNDCOURSE 243 ALT 2500 LEGTIME 1 FAF IVBAR MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "IVBAR",
+                    "fixes": {
+                        "IVBAR": "IVBAR LEFT TURN INBOUNDCOURSE 243 ALT 1840 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS24",
+            "fixes": {
+                "CI24": "CI24 AT OR ABOVE 1840",
+                "IVBAR": "IVBAR 1840 RNW 24 TRK 243 UNTIL 1000 TURN RIGHT DIRECT IVBAR 2500 HOLD AT IVBAR LEFT TURN INBOUNDCOURSE 243 ALT 2500 LEGTIME 1 FAF IVBAR MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "IVBAR",
+                    "fixes": {
+                        "IVBAR": "IVBAR LEFT TURN INBOUNDCOURSE 243 ALT 1840 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "EBNIB": "EBNIB 2500",
+                "AN600": "AN600 1780 SPEED 200 RNW 06 TRK 063 UNTIL 1000 TURN LEFT DIRECT",
+                "OGBOP": "OGBOP AT OR ABOVE 5000 HOLD AT OGBOP LEFT TURN INBOUNDCOURSE 153 ALT 5000 SPEED 230 LEGTIME 1 FAF AN600 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ODVIT",
+                    "fixes": {
+                        "ODVIT": "ODVIT 2500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "OGBAN",
+                    "fixes": {
+                        "OGBAN": "OGBAN 2500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "OGBOP",
+                    "fixes": {
+                        "OGBOP": "OGBOP AT OR ABOVE 5000 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "XUMAR": "XUMAR 2500",
+                "AN500": "AN500 1840 SPEED 200 RNW 24 TRK 243 UNTIL 1000 TURN RIGHT DIRECT",
+                "SAKDO": "SAKDO AT OR ABOVE 2500 HOLD AT SAKDO LEFT TURN INBOUNDCOURSE 153 ALT 2500 SPEED 230 LEGTIME 1 FAF AN500 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "RATUR",
+                    "fixes": {
+                        "RATUR": "RATUR 2500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "SAKDO",
+                    "fixes": {
+                        "SAKDO": "SAKDO AT OR ABOVE 2500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "XUKUR",
+                    "fixes": {
+                        "XUKUR": "XUKUR 2500 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

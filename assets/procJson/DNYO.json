@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "CI17",
+            "lat": 9.408116666666666,
+            "lon": 12.405033333333334
+        },
+        {
+            "name": "D171E",
+            "lat": 9.18775,
+            "lon": 12.441702783333334
+        },
+        {
+            "name": "EBTUG",
+            "lat": 9.476886116666666,
+            "lon": 12.393438883333333
+        },
+        {
+            "name": "FD17",
+            "lat": 9.369797216666667,
+            "lon": 12.412258333333334
+        },
+        {
+            "name": "FI17",
+            "lat": 9.370133333333333,
+            "lon": 12.411444433333333
+        },
+        {
+            "name": "MD17",
+            "lat": 9.275527783333333,
+            "lon": 12.427291666666667
+        },
+        {
+            "name": "OPGIB",
+            "lat": 9.559455566666667,
+            "lon": 12.379502783333333
+        },
+        {
+            "name": "RILUV",
+            "lat": 9.490708333333334,
+            "lon": 12.476611116666668
+        },
+        {
+            "name": "SEPIX",
+            "lat": 9.463044433333334,
+            "lon": 12.310275
+        },
+        {
+            "name": "XUVPI",
+            "lat": 9.009355566666667,
+            "lon": 12.472277783333332
+        },
+        {
+            "name": "YO400",
+            "lat": 9.091927783333333,
+            "lon": 12.458361116666667
+        },
+        {
+            "name": "YO500",
+            "lat": 9.394313883333334,
+            "lon": 12.407372216666667
+        },
+        {
+            "name": "YO700",
+            "lat": 9.380472216666666,
+            "lon": 12.324202783333334
+        },
+        {
+            "name": "YOL",
+            "lat": 9.292055566666667,
+            "lon": 12.424666666666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "FD17": "FD17 2520",
+                "MD17": "MD17 711 RNW 17 TRK 171 UNTIL 6.0 FROM",
+                "YOL": "YOL TURN LEFT DIRECT YOL 4100 FAF FD17 MAP MD17"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILS17",
+            "fixes": {
+                "CI17": "CI17 AT OR ABOVE 2520",
+                "FI17": "FI17 2520 RNW 17",
+                "D171E": "OVERFLY D171E TURN LEFT DIRECT",
+                "YOL": "YOL 4100 HOLD AT YOL RIGHT TURN INBOUNDCOURSE 171 ALT 4100 LEGTIME 1 FAF FI17 MAP RNW 17"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "EBTUG": "EBTUG AT OR ABOVE 3500 SPEED 200 EBTUG HOLD AT EBTUG RIGHT TURN INBOUNDCOURSE 171 ALT 3500 SPEED 230 LEGTIME 1 FAF YO500 MAP RNW 17",
+                "YO500": "YO500 3000 RNW 17 TURN RIGHT DIRECT",
+                "YO700": "YO700",
+                "SEPIX": "SEPIX"
+            },
+            "transitions": [
+                {
+                    "name": "OPGIB",
+                    "fixes": {
+                        "OPGIB": "OPGIB"
+                    }
+                },
+                {
+                    "name": "RILUV",
+                    "fixes": {
+                        "RILUV": "RILUV"
+                    }
+                },
+                {
+                    "name": "SEPIX",
+                    "fixes": {
+                        "SEPIX": "SEPIX"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "XUVPI": "XUVPI AT OR ABOVE 4900 SPEED 200",
+                "YO400": "YO400 3900 RNW 35",
+                "EBTUG": "EBTUG HOLD AT EBTUG RIGHT TURN INBOUNDCOURSE 171 ALT 3500 SPEED 230 LEGTIME 1 FAF YO400 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "XUVPI",
+                    "fixes": {
+                        "XUVPI": "XUVPI LEFT TURN INBOUNDCOURSE 351 ALT 4900 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

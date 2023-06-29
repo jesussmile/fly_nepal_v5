@@ -1,0 +1,137 @@
+{
+    "fixes": [
+        {
+            "name": "ARIVE",
+            "lat": 32.94991111666667,
+            "lon": 84.98056111666666
+        },
+        {
+            "name": "HIPUN",
+            "lat": 32.974769433333336,
+            "lon": 85.02005
+        },
+        {
+            "name": "HUNOG",
+            "lat": 32.96966943333334,
+            "lon": 85.09543888333333
+        },
+        {
+            "name": "JEPNU",
+            "lat": 33.033236116666664,
+            "lon": 85.11309166666666
+        },
+        {
+            "name": "LGC",
+            "lat": 33.04911943333333,
+            "lon": 85.20622221666666
+        },
+        {
+            "name": "OSDOW",
+            "lat": 33.06577778333333,
+            "lon": 85.164975
+        },
+        {
+            "name": "SUMDE",
+            "lat": 32.82418611666667,
+            "lon": 85.17351666666667
+        },
+        {
+            "name": "TOGBE",
+            "lat": 32.92481943333333,
+            "lon": 85.11953888333333
+        },
+        {
+            "name": "WAGUS",
+            "lat": 32.87774721666667,
+            "lon": 84.86616943333334
+        },
+        {
+            "name": "WERTU",
+            "lat": 33.13313333333333,
+            "lon": 85.27266388333334
+        },
+        {
+            "name": "WIBUB",
+            "lat": 32.789408333333334,
+            "lon": 84.95720278333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 13",
+        "RNW 21",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS31",
+            "fixes": {
+                "WAGUS": "WAGUS AT OR ABOVE 3000",
+                "ARIVE": "ARIVE 2400 RNW 31 TRK 311 UNTIL 1200",
+                "LGC": "LGC AT OR ABOVE 2400 HOLD AT LGC RIGHT TURN INBOUNDCOURSE 108 LEGTIME 1 FAF ARIVE MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "LGC",
+                    "fixes": {
+                        "LGC": "LGC",
+                        "WIBUB": "WIBUB AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "SUMDE": "SUMDE AT OR ABOVE 3000",
+                "TOGBE": "TOGBE 2400",
+                "HUNOG": "HUNOG AT OR ABOVE 1460 RNW 03 TRK 028 UNTIL 1300 TURN LEFT DIRECT",
+                "WERTU": "OVERFLY WERTU AT OR ABOVE 3500 HOLD AT WERTU RIGHT TURN INBOUNDCOURSE 131 ALT 3500 LEGDIST 4 FAF TOGBE MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "SUMDE",
+                    "fixes": {
+                        "SUMDE": "SUMDE RIGHT TURN INBOUNDCOURSE 028 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "WERTU": "WERTU AT OR ABOVE 3500",
+                "OSDOW": "OSDOW 2400",
+                "JEPNU": "JEPNU AT OR ABOVE 1360 RNW 13 TRK 131 UNTIL 1094",
+                "WAGUS": "OVERFLY WAGUS AT OR ABOVE 3000 HOLD AT WAGUS LEFT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF OSDOW MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "WERTU",
+                    "fixes": {
+                        "WERTU": "WERTU RIGHT TURN INBOUNDCOURSE 131 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "WAGUS": "WAGUS AT OR ABOVE 3000",
+                "ARIVE": "ARIVE 2400",
+                "HIPUN": "HIPUN AT OR ABOVE 1600 RNW 31 TRK 311 UNTIL 881",
+                "WERTU": "OVERFLY WERTU AT OR ABOVE 3500 HOLD AT WERTU RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4 FAF ARIVE MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "WAGUS",
+                    "fixes": {
+                        "WAGUS": "WAGUS LEFT TURN INBOUNDCOURSE 311 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,195 @@
+{
+    "fixes": [
+        {
+            "name": "COSJE",
+            "lat": 49.71753056666667,
+            "lon": 9.947
+        },
+        {
+            "name": "GIPAV",
+            "lat": 49.61385,
+            "lon": 9.720286116666667
+        },
+        {
+            "name": "QG001",
+            "lat": 49.66446666666667,
+            "lon": 10.085319433333334
+        },
+        {
+            "name": "QG002",
+            "lat": 49.6667,
+            "lon": 10.101644433333334
+        },
+        {
+            "name": "QG003",
+            "lat": 49.63924166666666,
+            "lon": 10.1774
+        },
+        {
+            "name": "QG021",
+            "lat": 49.63123888333333,
+            "lon": 9.844627783333333
+        },
+        {
+            "name": "QG025",
+            "lat": 49.701925,
+            "lon": 9.794980566666666
+        },
+        {
+            "name": "QG028",
+            "lat": 49.62885,
+            "lon": 9.827475
+        },
+        {
+            "name": "QG029",
+            "lat": 49.58360556666667,
+            "lon": 9.803338883333334
+        },
+        {
+            "name": "QG030",
+            "lat": 49.657466666666664,
+            "lon": 9.749194433333333
+        },
+        {
+            "name": "QG080",
+            "lat": 49.69521388333333,
+            "lon": 9.693222216666667
+        },
+        {
+            "name": "QG081",
+            "lat": 49.681072216666664,
+            "lon": 9.592891666666667
+        },
+        {
+            "name": "QG082",
+            "lat": 49.59974166666667,
+            "lon": 9.620166666666666
+        },
+        {
+            "name": "QG083",
+            "lat": 49.673797216666664,
+            "lon": 10.153658333333333
+        },
+        {
+            "name": "QG260",
+            "lat": 49.763227783333335,
+            "lon": 10.185866666666668
+        },
+        {
+            "name": "QG261",
+            "lat": 49.77514443333333,
+            "lon": 10.273975
+        },
+        {
+            "name": "QG262",
+            "lat": 49.69363333333333,
+            "lon": 10.300130566666667
+        },
+        {
+            "name": "QG263",
+            "lat": 49.6249,
+            "lon": 9.799183333333334
+        },
+        {
+            "name": "SODGU",
+            "lat": 49.681747216666665,
+            "lon": 10.212166666666667
+        },
+        {
+            "name": "TAKUT",
+            "lat": 49.37602221666667,
+            "lon": 10.120919433333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "COSJ1E",
+            "rnw": "08",
+            "fixes": {
+                "QG001": "OVERFLY QG001 SPEED 200 TURN LEFT DIRECT",
+                "COSJE": "COSJE AT OR ABOVE 5000 SPEED 200"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "COSJ1W",
+            "rnw": "26",
+            "fixes": {
+                "QG021": "QG021 SPEED 190",
+                "QG030": "QG030 SPEED 190 TURN RIGHT DIRECT",
+                "QG025": "QG025 SPEED 190",
+                "COSJE": "COSJE AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TAKU2E",
+            "rnw": "08",
+            "fixes": {
+                "QG002": "QG002 SPEED 200",
+                "QG003": "QG003 SPEED 200",
+                "TAKUT": "TAKUT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TAKU2W",
+            "rnw": "26",
+            "fixes": {
+                "QG028": "QG028 SPEED 200",
+                "QG029": "QG029 SPEED 200",
+                "TAKUT": "TAKUT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "QG082": "QG082 AT OR ABOVE 4400",
+                "GIPAV": "GIPAV 4000 RNW 08",
+                "QG083": "OVERFLY QG083 TRK 076 UNTIL 2500 TURN LEFT DIRECT",
+                "COSJE": "COSJE 5000 FAF GIPAV MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "COSJE",
+                    "fixes": {
+                        "COSJE": "COSJE AT OR ABOVE 5000",
+                        "QG080": "QG080",
+                        "QG081": "QG081 AT OR ABOVE 5000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "QG262": "QG262 AT OR ABOVE 4600",
+                "SODGU": "SODGU 4000 RNW 26",
+                "QG263": "OVERFLY QG263 TRK 256 UNTIL 2500 TURN RIGHT DIRECT",
+                "COSJE": "COSJE 5000 FAF SODGU MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "COSJE",
+                    "fixes": {
+                        "COSJE": "COSJE AT OR ABOVE 5000",
+                        "QG260": "QG260",
+                        "QG261": "QG261 AT OR ABOVE 5000 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

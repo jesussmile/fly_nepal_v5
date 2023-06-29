@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CAREV",
+            "lat": 47.454875,
+            "lon": 102.87061388333333
+        },
+        {
+            "name": "HETON",
+            "lat": 47.32548333333333,
+            "lon": 102.66978611666667
+        },
+        {
+            "name": "HIDUD",
+            "lat": 47.425094433333335,
+            "lon": 102.82426111666666
+        },
+        {
+            "name": "JURMI",
+            "lat": 47.55038888333333,
+            "lon": 103.01982221666667
+        },
+        {
+            "name": "WENEK",
+            "lat": 47.256738883333334,
+            "lon": 102.56363056666666
+        },
+        {
+            "name": "ZASLU",
+            "lat": 47.48218611666667,
+            "lon": 102.91319166666666
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "JURMI": "JURMI AT OR ABOVE 4800",
+                "ZASLU": "ZASLU 4700",
+                "CAREV": "CAREV AT OR ABOVE 3940",
+                "HIDUD": "HIDUD AT OR ABOVE 3100 RNW 13 TRK 126 UNTIL 2649",
+                "WENEK": "OVERFLY WENEK AT OR ABOVE 4800 HOLD AT WENEK RIGHT TURN INBOUNDCOURSE 307 LEGDIST 5 FAF ZASLU MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "JURMI",
+                    "fixes": {
+                        "JURMI": "JURMI RIGHT TURN INBOUNDCOURSE 126 ALT 4800 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "WENEK": "WENEK AT OR ABOVE 4800",
+                "HETON": "HETON 4000 RNW 31 TRK 307 UNTIL 2649",
+                "JURMI": "OVERFLY JURMI AT OR ABOVE 4800 HOLD AT JURMI RIGHT TURN INBOUNDCOURSE 126 LEGDIST 5 FAF HETON MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "WENEK",
+                    "fixes": {
+                        "WENEK": "WENEK RIGHT TURN INBOUNDCOURSE 307 ALT 4800 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

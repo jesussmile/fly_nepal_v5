@@ -1,0 +1,59 @@
+{
+    "fixes": [
+        {
+            "name": "CLASS",
+            "lat": 47.85795278333333,
+            "lon": 116.14745833333333
+        },
+        {
+            "name": "EYESE",
+            "lat": 48.00134166666667,
+            "lon": 115.37933888333333
+        },
+        {
+            "name": "PACCE",
+            "lat": 48.45151943333333,
+            "lon": 115.55658888333333
+        },
+        {
+            "name": "RELXU",
+            "lat": 48.37100278333333,
+            "lon": 115.52466666666666
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "EYESE2",
+            "rnw": "15",
+            "fixes": {
+                "EYESE": "EYESE RIGHT TURN INBOUNDCOURSE 328 ALT 13000 LEGDIST 10"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPSA15",
+            "fixes": {
+                "PACCE": "PACCE AT OR ABOVE 7900",
+                "RELXU": "RELXU 6500 RNW 15",
+                "EYESE": "EYESE AT OR ABOVE 9600 HOLD AT EYESE RIGHT TURN INBOUNDCOURSE 328 LEGDIST 10 FAF RELXU MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "CLASS",
+                    "fixes": {
+                        "CLASS": "CLASS",
+                        "PACCE": "PACCE AT OR ABOVE 10800 HOLD AT PACCE LEFT TURN INBOUNDCOURSE 148 ALT 7900 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

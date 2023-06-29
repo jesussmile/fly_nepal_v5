@@ -1,0 +1,129 @@
+{
+    "fixes": [
+        {
+            "name": "AGMIV",
+            "lat": 61.75613056666667,
+            "lon": 166.09060833333334
+        },
+        {
+            "name": "CFKPJ",
+            "lat": 61.75158056666667,
+            "lon": 166.07404166666666
+        },
+        {
+            "name": "HAGEL",
+            "lat": 61.62198333333333,
+            "lon": 166.54343333333333
+        },
+        {
+            "name": "HIPUD",
+            "lat": 61.67451943333333,
+            "lon": 166.16391666666667
+        },
+        {
+            "name": "HPB",
+            "lat": 61.514347216666664,
+            "lon": 166.13448056666667
+        },
+        {
+            "name": "HUDEM",
+            "lat": 61.55809166666667,
+            "lon": 166.29875
+        },
+        {
+            "name": "HUGVA",
+            "lat": 61.49356111666667,
+            "lon": 166.05530833333333
+        },
+        {
+            "name": "MOTRS",
+            "lat": 61.66824166666667,
+            "lon": 166.39708888333334
+        },
+        {
+            "name": "TAJAN",
+            "lat": 61.71993056666667,
+            "lon": 166.21734443333332
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "CZF4",
+            "rnw": "20",
+            "fixes": {
+                "HPB": "HPB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD02",
+            "fixes": {
+                "MOTRS": "MOTRS AT OR ABOVE 3600 MOTRS AT OR ABOVE 3600 HOLD AT MOTRS RIGHT TURN INBOUNDCOURSE 048 ALT 8000 SPEED 310 LEGDIST 8 FAF TAJAN MAP AGMIV",
+                "TAJAN": "TAJAN 2300",
+                "AGMIV": "AGMIV 973 RNW 02 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MOTRS",
+                    "fixes": {
+                        "MOTRS": "MOTRS RIGHT TURN INBOUNDCOURSE 048 ALT 3600 SPEED 310 LEGDIST 8"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA02",
+            "fixes": {
+                "HUDEM": "HUDEM AT OR ABOVE 3000",
+                "HIPUD": "HIPUD 2100",
+                "CFKPJ": "OVERFLY CFKPJ 1780 RNW 02 TRK 018 UNTIL 1780 TURN LEFT DIRECT",
+                "HAGEL": "OVERFLY HAGEL AT OR ABOVE 3000 HOLD AT HAGEL RIGHT TURN INBOUNDCOURSE 108 ALT 8000 LEGDIST 2 FAF HIPUD MAP CFKPJ"
+            },
+            "transitions": [
+                {
+                    "name": "HAGEL",
+                    "fixes": {
+                        "HAGEL": "HAGEL AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HUGVA",
+                    "fixes": {
+                        "HUGVA": "HUGVA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA20",
+            "fixes": {
+                "HUDEM": "HUDEM AT OR ABOVE 3000",
+                "HIPUD": "HIPUD 2100",
+                "CFKPJ": "OVERFLY CFKPJ 1780 RNW 20 TRK 018 UNTIL 1780 TURN LEFT DIRECT",
+                "HAGEL": "OVERFLY HAGEL AT OR ABOVE 3000 HOLD AT HAGEL RIGHT TURN INBOUNDCOURSE 108 ALT 8000 LEGDIST 2 FAF HIPUD MAP CFKPJ"
+            },
+            "transitions": [
+                {
+                    "name": "HAGEL",
+                    "fixes": {
+                        "HAGEL": "HAGEL AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HUGVA",
+                    "fixes": {
+                        "HUGVA": "HUGVA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

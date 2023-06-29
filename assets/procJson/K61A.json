@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "BIPDE",
+            "lat": 32.02741111666667,
+            "lon": 87.33988888333333
+        },
+        {
+            "name": "CAKLI",
+            "lat": 31.889,
+            "lon": 87.33765
+        },
+        {
+            "name": "JOLUM",
+            "lat": 31.754419433333332,
+            "lon": 87.33548056666666
+        },
+        {
+            "name": "TUGIE",
+            "lat": 32.070475,
+            "lon": 87.34058611666667
+        },
+        {
+            "name": "WRATH",
+            "lat": 32.221608333333336,
+            "lon": 87.34303888333334
+        },
+        {
+            "name": "ZIVKI",
+            "lat": 31.930413883333333,
+            "lon": 87.33831943333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "WRATH": "WRATH AT OR ABOVE 3000",
+                "TUGIE": "TUGIE 1800",
+                "BIPDE": "BIPDE AT OR ABOVE 980 RNW 18 TRK 182 UNTIL 543",
+                "JOLUM": "OVERFLY JOLUM AT OR ABOVE 3500 HOLD AT JOLUM RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF TUGIE MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "WRATH",
+                    "fixes": {
+                        "WRATH": "WRATH RIGHT TURN INBOUNDCOURSE 182 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "JOLUM": "JOLUM AT OR ABOVE 3000 OVERFLY JOLUM AT OR ABOVE 3500 HOLD AT JOLUM RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF CAKLI MAP RNW 36",
+                "CAKLI": "CAKLI 1800",
+                "ZIVKI": "ZIVKI AT OR ABOVE 1000 RNW 36 TRK 002 UNTIL 900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JOLUM",
+                    "fixes": {
+                        "JOLUM": "JOLUM RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

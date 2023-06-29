@@ -1,0 +1,261 @@
+{
+    "fixes": [
+        {
+            "name": "COF35",
+            "lat": 70.62930278333333,
+            "lon": 22.507166666666667
+        },
+        {
+            "name": "COF51",
+            "lat": 70.84592221666666,
+            "lon": 22.572922216666665
+        },
+        {
+            "name": "COI35",
+            "lat": 70.52191666666667,
+            "lon": 22.373472216666666
+        },
+        {
+            "name": "COI50",
+            "lat": 70.92875278333334,
+            "lon": 22.555633333333333
+        },
+        {
+            "name": "COM35",
+            "lat": 70.68813611666667,
+            "lon": 22.581072216666666
+        },
+        {
+            "name": "COM42",
+            "lat": 70.741125,
+            "lon": 22.599236116666667
+        },
+        {
+            "name": "COM52",
+            "lat": 70.74155,
+            "lon": 22.594511116666666
+        },
+        {
+            "name": "CPNB",
+            "lat": 70.73997221666667,
+            "lon": 22.610527783333332
+        },
+        {
+            "name": "FEBOT",
+            "lat": 71.02814721666667,
+            "lon": 22.534697216666668
+        },
+        {
+            "name": "FF353",
+            "lat": 70.66761388333333,
+            "lon": 22.522308333333335
+        },
+        {
+            "name": "FF355",
+            "lat": 70.64947221666667,
+            "lon": 22.511222216666667
+        },
+        {
+            "name": "GAKBA",
+            "lat": 70.45454443333334,
+            "lon": 22.593080566666668
+        },
+        {
+            "name": "LUPUP",
+            "lat": 70.52591943333333,
+            "lon": 22.07510278333333
+        },
+        {
+            "name": "RETNI",
+            "lat": 70.44515,
+            "lon": 22.278844433333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA17",
+            "fixes": {
+                "FF353": "FF353 3200",
+                "CPNB": "CPNB 1890 RNW 17 TRK 033 UNTIL 4100 TURN LEFT DIRECT CPNB 4100 HOLD AT CPNB LEFT TURN INBOUNDCOURSE 155 LEGTIME 1 FAF FF353 MAP CP"
+            },
+            "transitions": [
+                {
+                    "name": "CP",
+                    "fixes": {
+                        "CPNB": "CPNB AT OR ABOVE 4100 TRK 155 UNTIL 4.7 FROM CPNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBB17",
+            "fixes": {
+                "FF355": "FF355 3000",
+                "CPNB": "CPNB 1420 RNW 17 TRK 033 UNTIL 4100 TURN LEFT DIRECT CPNB 4100 HOLD AT CPNB LEFT TURN INBOUNDCOURSE 155 LEGTIME 1 FAF FF355 MAP CP"
+            },
+            "transitions": [
+                {
+                    "name": "CP",
+                    "fixes": {
+                        "CPNB": "CPNB AT OR ABOVE 4100 TRK 161 UNTIL 5.8 FROM CPNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA35",
+            "fixes": {
+                "FF353": "FF353 3200",
+                "CPNB": "CPNB 1890 RNW 35 TRK 033 UNTIL 4100 TURN LEFT DIRECT CPNB 4100 HOLD AT CPNB LEFT TURN INBOUNDCOURSE 155 LEGTIME 1 FAF FF353 MAP CP"
+            },
+            "transitions": [
+                {
+                    "name": "CP",
+                    "fixes": {
+                        "CPNB": "CPNB AT OR ABOVE 4100 TRK 155 UNTIL 4.7 FROM CPNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBB35",
+            "fixes": {
+                "FF355": "FF355 3000",
+                "CPNB": "CPNB 1420 RNW 35 TRK 033 UNTIL 4100 TURN LEFT DIRECT CPNB 4100 HOLD AT CPNB LEFT TURN INBOUNDCOURSE 155 LEGTIME 1 FAF FF355 MAP CP"
+            },
+            "transitions": [
+                {
+                    "name": "CP",
+                    "fixes": {
+                        "CPNB": "CPNB AT OR ABOVE 4100 TRK 161 UNTIL 5.8 FROM CPNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA17",
+            "fixes": {
+                "COI35": "COI35 AT OR ABOVE 3500",
+                "COF35": "COF35 2600 COF35 SPEED 130",
+                "COM42": "OVERFLY COM42 730 RNW 17 TURN RIGHT DIRECT",
+                "GAKBA": "GAKBA HOLD AT GAKBA RIGHT TURN INBOUNDCOURSE 062 ALT 3500 LEGTIME 1 FAF COF35 MAP COM42"
+            },
+            "transitions": [
+                {
+                    "name": "GAKBA",
+                    "fixes": {
+                        "GAKBA": "GAKBA AT OR ABOVE 4600"
+                    }
+                },
+                {
+                    "name": "LUPUP",
+                    "fixes": {
+                        "LUPUP": "LUPUP AT OR ABOVE 6100"
+                    }
+                },
+                {
+                    "name": "RETNI",
+                    "fixes": {
+                        "RETNI": "RETNI AT OR ABOVE 5400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB17",
+            "fixes": {
+                "COI50": "COI50 AT OR ABOVE 3600",
+                "COF51": "COF51 2400",
+                "COM52": "OVERFLY COM52 730 RNW 17",
+                "COF35": "COF35",
+                "GAKBA": "GAKBA AT OR ABOVE 3000 HOLD AT GAKBA RIGHT TURN INBOUNDCOURSE 062 ALT 3500 LEGTIME 1 FAF COF51 MAP COM52"
+            },
+            "transitions": [
+                {
+                    "name": "FEBOT",
+                    "fixes": {}
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "COI35": "COI35 AT OR ABOVE 3500",
+                "COF35": "COF35 2300 COF35 SPEED 130",
+                "COM35": "OVERFLY COM35 1079 RNW 35 TURN RIGHT DIRECT",
+                "GAKBA": "GAKBA HOLD AT GAKBA RIGHT TURN INBOUNDCOURSE 062 ALT 3500 LEGTIME 1 FAF COF35 MAP COM35"
+            },
+            "transitions": [
+                {
+                    "name": "GAKBA",
+                    "fixes": {
+                        "GAKBA": "GAKBA AT OR ABOVE 4600"
+                    }
+                },
+                {
+                    "name": "LUPUP",
+                    "fixes": {
+                        "LUPUP": "LUPUP AT OR ABOVE 6100"
+                    }
+                },
+                {
+                    "name": "RETNI",
+                    "fixes": {
+                        "RETNI": "RETNI AT OR ABOVE 5400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA35",
+            "fixes": {
+                "COI35": "COI35 AT OR ABOVE 3500",
+                "COF35": "COF35 2600 COF35 SPEED 130",
+                "COM42": "OVERFLY COM42 730 RNW 35 TURN RIGHT DIRECT",
+                "GAKBA": "GAKBA HOLD AT GAKBA RIGHT TURN INBOUNDCOURSE 062 ALT 3500 LEGTIME 1 FAF COF35 MAP COM42"
+            },
+            "transitions": [
+                {
+                    "name": "GAKBA",
+                    "fixes": {
+                        "GAKBA": "GAKBA AT OR ABOVE 4600"
+                    }
+                },
+                {
+                    "name": "LUPUP",
+                    "fixes": {
+                        "LUPUP": "LUPUP AT OR ABOVE 6100"
+                    }
+                },
+                {
+                    "name": "RETNI",
+                    "fixes": {
+                        "RETNI": "RETNI AT OR ABOVE 5400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB35",
+            "fixes": {
+                "COI50": "COI50 AT OR ABOVE 3600",
+                "COF51": "COF51 2400",
+                "COM52": "OVERFLY COM52 730 RNW 35",
+                "COF35": "COF35",
+                "GAKBA": "GAKBA AT OR ABOVE 3000 HOLD AT GAKBA RIGHT TURN INBOUNDCOURSE 062 ALT 3500 LEGTIME 1 FAF COF51 MAP COM52"
+            },
+            "transitions": [
+                {
+                    "name": "FEBOT",
+                    "fixes": {}
+                }
+            ]
+        }
+    ]
+}

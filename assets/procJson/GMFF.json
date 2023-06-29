@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "CF27",
+            "lat": 33.92620278333333,
+            "lon": 4.787541666666667
+        },
+        {
+            "name": "FD09",
+            "lat": 33.927816666666665,
+            "lon": 5.147763883333333
+        },
+        {
+            "name": "FD27",
+            "lat": 33.92655833333333,
+            "lon": 4.827166666666667
+        },
+        {
+            "name": "FES",
+            "lat": 33.927416666666666,
+            "lon": 5.013583333333333
+        },
+        {
+            "name": "FEZ",
+            "lat": 33.926875,
+            "lon": 4.890919433333333
+        },
+        {
+            "name": "FF27",
+            "lat": 33.92645278333333,
+            "lon": 4.827625
+        },
+        {
+            "name": "MA27",
+            "lat": 33.927083333333336,
+            "lon": 4.941494433333333
+        },
+        {
+            "name": "MD27",
+            "lat": 33.92710833333334,
+            "lon": 4.939480566666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "FD09": "FD09 4320",
+                "FES": "FES 2199 RNW 09 TRK 092 UNTIL 4320 TURN LEFT DIRECT FES FAF FD09 MAP FES"
+            },
+            "transitions": [
+                {
+                    "name": "FES",
+                    "fixes": {
+                        "FES": "FES AT OR ABOVE 6300 TRK 298 UNTIL 8.0 FROM FES SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD27",
+            "fixes": {
+                "FD27": "FD27 4100",
+                "MD27": "MD27 2314 RNW 27 TRK 272 UNTIL 2550 HDG 092 VECTORS FAF FD27 MAP MD27"
+            },
+            "transitions": [
+                {
+                    "name": "FES",
+                    "fixes": {
+                        "FES": "FES AT OR ABOVE 6300 TRK 072 UNTIL 10.0 FROM FES SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS27",
+            "fixes": {
+                "CF27": "CF27 AT OR ABOVE 4100",
+                "FF27": "FF27 4100 RNW 27 TRK 272 UNTIL 2550 HDG 092 VECTORS FAF FF27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "FES",
+                    "fixes": {
+                        "FES": "FES AT OR ABOVE 6300 TRK 074 UNTIL 12.0 FROM FES SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD27",
+            "fixes": {
+                "FEZ": "FEZ 3090 FEZ 4100 SPEED 200 FAF FEZ MAP MA27",
+                "MA27": "MA27 2285 RNW 27 TRK 272 UNTIL 2600 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FEZ1",
+                    "fixes": {
+                        "FEZ": "FEZ AT OR ABOVE 4100 SPEED 210 TRK 059 UNTIL 5.3 FROM FEZ"
+                    }
+                },
+                {
+                    "name": "FEZ2",
+                    "fixes": {
+                        "FEZ": "FEZ AT OR ABOVE 4100 SPEED 140 TRK 074 UNTIL 4.7 FROM FEZ"
+                    }
+                }
+            ]
+        }
+    ]
+}

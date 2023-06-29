@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "AWALI",
+            "lat": 37.62869443333334,
+            "lon": 120.55271111666667
+        },
+        {
+            "name": "LIN",
+            "lat": 38.07458056666667,
+            "lon": 121.00385833333333
+        },
+        {
+            "name": "MOD",
+            "lat": 37.627375,
+            "lon": 120.95786943333333
+        },
+        {
+            "name": "MOTER",
+            "lat": 37.80016666666667,
+            "lon": 121.00850833333334
+        },
+        {
+            "name": "NOMAE",
+            "lat": 37.725858333333335,
+            "lon": 120.70263333333334
+        },
+        {
+            "name": "RECOT",
+            "lat": 37.69920833333333,
+            "lon": 120.87015
+        },
+        {
+            "name": "WRAPS",
+            "lat": 37.85794443333333,
+            "lon": 120.78374443333334
+        },
+        {
+            "name": "WUBRO",
+            "lat": 37.755197216666666,
+            "lon": 120.80161111666666
+        },
+        {
+            "name": "WUMTA",
+            "lat": 37.69858333333333,
+            "lon": 120.64979721666667
+        },
+        {
+            "name": "ZOSON",
+            "lat": 37.785319433333335,
+            "lon": 120.89328611666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "MOTER": "MOTER AT OR ABOVE 2000",
+                "ZOSON": "ZOSON 1700 RNW 10 TRK 096 UNTIL 554",
+                "NOMAE": "NOMAE",
+                "AWALI": "OVERFLY AWALI AT OR ABOVE 4000 HOLD AT AWALI RIGHT TURN INBOUNDCOURSE 126 ALT 4000 LEGDIST 4 FAF ZOSON MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "MOD",
+                    "fixes": {
+                        "MOD": "MOD",
+                        "MOTER": "OVERFLY MOTER AT OR ABOVE 2000 HOLD AT MOTER RIGHT TURN INBOUNDCOURSE 084 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "WUMTA": "WUMTA AT OR ABOVE 2000",
+                "NOMAE": "NOMAE 1800 RNW 28 TRK 277 UNTIL 547",
+                "ZOSON": "ZOSON",
+                "LIN": "OVERFLY LIN AT OR ABOVE 7000 HOLD AT LIN LEFT TURN INBOUNDCOURSE 285 ALT 7000 LEGDIST 4 FAF NOMAE MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "AWALI",
+                    "fixes": {
+                        "AWALI": "AWALI"
+                    }
+                },
+                {
+                    "name": "MOD",
+                    "fixes": {
+                        "MOD": "MOD",
+                        "WUMTA": "OVERFLY WUMTA AT OR ABOVE 2000 HOLD AT WUMTA RIGHT TURN INBOUNDCOURSE 288 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA10",
+            "fixes": {
+                "MOD": "MOD AT OR ABOVE 3000",
+                "RECOT": "RECOT 2200",
+                "WUBRO": "WUBRO 920 RNW 10 HDG 027 INTERCEPT RADIAL 304 TO",
+                "WRAPS": "WRAPS WRAPS AT OR ABOVE 3000 HOLD AT WRAPS RIGHT TURN INBOUNDCOURSE 124 LEGTIME 1 FAF RECOT MAP WUBRO"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORA28",
+            "fixes": {
+                "MOD": "MOD AT OR ABOVE 3000",
+                "RECOT": "RECOT 2200",
+                "WUBRO": "WUBRO 920 RNW 28 HDG 027 INTERCEPT RADIAL 304 TO",
+                "WRAPS": "WRAPS WRAPS AT OR ABOVE 3000 HOLD AT WRAPS RIGHT TURN INBOUNDCOURSE 124 LEGTIME 1 FAF RECOT MAP WUBRO"
+            },
+            "transitions": []
+        }
+    ]
+}

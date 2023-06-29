@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "APDAT",
+            "lat": 64.27786943333334,
+            "lon": 76.66826388333334
+        },
+        {
+            "name": "DERGI",
+            "lat": 64.27734166666667,
+            "lon": 76.66666388333333
+        },
+        {
+            "name": "FF31",
+            "lat": 64.17933888333333,
+            "lon": 76.32481943333333
+        },
+        {
+            "name": "IKMOM",
+            "lat": 64.189925,
+            "lon": 76.09261111666666
+        },
+        {
+            "name": "KEBDA",
+            "lat": 64.338175,
+            "lon": 76.85109443333333
+        },
+        {
+            "name": "LENET",
+            "lat": 64.05852221666666,
+            "lon": 76.32522778333333
+        },
+        {
+            "name": "MURKO",
+            "lat": 64.18514721666666,
+            "lon": 76.39001388333334
+        },
+        {
+            "name": "PI001",
+            "lat": 64.27751528333333,
+            "lon": 76.45485351666666
+        },
+        {
+            "name": "PI002",
+            "lat": 64.34750581666667,
+            "lon": 76.49040201666666
+        },
+        {
+            "name": "PI003",
+            "lat": 64.36823978333334,
+            "lon": 76.31821673333333
+        },
+        {
+            "name": "PIKNO",
+            "lat": 64.12426943333334,
+            "lon": 76.20919443333334
+        },
+        {
+            "name": "SEDIN",
+            "lat": 64.27191943333334,
+            "lon": 76.96649166666667
+        },
+        {
+            "name": "TABAD",
+            "lat": 64.182975,
+            "lon": 76.38353888333333
+        },
+        {
+            "name": "USBIT",
+            "lat": 64.40433611666667,
+            "lon": 76.73514166666666
+        },
+        {
+            "name": "YTENB",
+            "lat": 64.22861111666667,
+            "lon": 76.52805556666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB31",
+            "fixes": {
+                "FF31": "FF31 2000 RNW 31",
+                "YTENB": "OVERFLY YTENB TRK 032 UNTIL 2400 TURN RIGHT DIRECT YTENB 2400 HOLD AT YTENB RIGHT TURN INBOUNDCOURSE 032 LEGTIME 1 FAF FF31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "YTE",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "KEBDA": "KEBDA AT OR ABOVE 2200",
+                "APDAT": "APDAT 1600 RNW 13",
+                "TABAD": "OVERFLY TABAD 2400 HOLD AT TABAD RIGHT TURN INBOUNDCOURSE 015 LEGTIME 1 FAF APDAT MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "SEDIN",
+                    "fixes": {
+                        "SEDIN": "SEDIN SPEED 210"
+                    }
+                },
+                {
+                    "name": "USBIT",
+                    "fixes": {
+                        "USBIT": "USBIT SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "PIKNO": "PIKNO AT OR ABOVE 1500",
+                "MURKO": "MURKO 1500 RNW 31",
+                "DERGI": "OVERFLY DERGI 2400 HOLD AT DERGI RIGHT TURN INBOUNDCOURSE 033 LEGTIME 1 FAF MURKO MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "IKMOM",
+                    "fixes": {
+                        "IKMOM": "IKMOM SPEED 210"
+                    }
+                },
+                {
+                    "name": "LENET",
+                    "fixes": {
+                        "LENET": "LENET SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

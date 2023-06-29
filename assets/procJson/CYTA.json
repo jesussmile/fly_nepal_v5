@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "AGNEX",
+            "lat": 45.55961943333333,
+            "lon": 77.0864
+        },
+        {
+            "name": "BONDE",
+            "lat": 45.7319,
+            "lon": 77.05223333333333
+        },
+        {
+            "name": "ELOLO",
+            "lat": 45.672694433333334,
+            "lon": 77.274525
+        },
+        {
+            "name": "KASAM",
+            "lat": 45.79334166666666,
+            "lon": 77.21276943333334
+        },
+        {
+            "name": "OVDUG",
+            "lat": 45.81916111666666,
+            "lon": 77.2268
+        },
+        {
+            "name": "PI001",
+            "lat": 45.74873443333333,
+            "lon": 77.18826711666667
+        },
+        {
+            "name": "PI002",
+            "lat": 45.71954661666667,
+            "lon": 77.09449243333333
+        },
+        {
+            "name": "PI003",
+            "lat": 45.64756858333333,
+            "lon": 77.13278586666667
+        },
+        {
+            "name": "VIXIB",
+            "lat": 45.70232778333333,
+            "lon": 77.163425
+        },
+        {
+            "name": "YTANB",
+            "lat": 45.80319721666667,
+            "lon": 77.218225
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "AGNEX3",
+            "rnw": "30",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 17",
+                    "fixes": {
+                        "RNW 17": "RNW 17 HDG 172 UNTIL 1100",
+                        "AGNEX": "AGNEX"
+                    }
+                },
+                {
+                    "rwy": "RNW 35",
+                    "fixes": {
+                        "RNW 35": "RNW 35 HDG 352 UNTIL 1100 TURN RIGHT DIRECT",
+                        "AGNEX": "AGNEX SPEED 210"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB35",
+            "fixes": {
+                "YTANB": "YTANB 1600 RNW 35 TRK 352 UNTIL 940 TURN RIGHT DIRECT YTANB 2500 HOLD AT YTANB RIGHT TURN INBOUNDCOURSE 352 SPEED 250 LEGTIME 1 FAF YTANB MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "YTA",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "VIXIB": "VIXIB AT OR ABOVE 2000",
+                "KASAM": "KASAM 1910",
+                "OVDUG": "OVDUG AT OR ABOVE 1380 RNW 35 TURN RIGHT DIRECT",
+                "BONDE": "OVERFLY BONDE 2500 SPEED 185 HOLD AT BONDE RIGHT TURN INBOUNDCOURSE 250 SPEED 230 LEGTIME 1 FAF KASAM MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BONDE",
+                    "fixes": {
+                        "BONDE": "BONDE SPEED 210"
+                    }
+                },
+                {
+                    "name": "ELOLO",
+                    "fixes": {
+                        "ELOLO": "ELOLO SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

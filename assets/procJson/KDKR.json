@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "ARTEE",
+            "lat": 31.543991666666667,
+            "lon": 95.47297778333333
+        },
+        {
+            "name": "BRWER",
+            "lat": 31.491958333333333,
+            "lon": 95.31877778333333
+        },
+        {
+            "name": "CRCKT",
+            "lat": 31.120758333333335,
+            "lon": 95.48908056666667
+        },
+        {
+            "name": "CUNHM",
+            "lat": 31.455116666666665,
+            "lon": 95.21003333333333
+        },
+        {
+            "name": "DAVYE",
+            "lat": 31.124069433333332,
+            "lon": 95.64436666666667
+        },
+        {
+            "name": "LFK",
+            "lat": 31.162441666666666,
+            "lon": 94.71683333333333
+        },
+        {
+            "name": "LOA",
+            "lat": 31.124016666666666,
+            "lon": 95.96795556666666
+        },
+        {
+            "name": "MCCAL",
+            "lat": 31.033336116666668,
+            "lon": 95.37423333333334
+        },
+        {
+            "name": "PATRK",
+            "lat": 31.390961116666666,
+            "lon": 95.36525833333333
+        },
+        {
+            "name": "PIENE",
+            "lat": 31.221875,
+            "lon": 95.44283056666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "CRCKT": "CRCKT AT OR ABOVE 3000",
+                "PIENE": "PIENE 2000 RNW 02 TRK 016 UNTIL 1000 TURN LEFT DIRECT",
+                "LOA": "OVERFLY LOA AT OR ABOVE 4000 HOLD AT LOA RIGHT TURN INBOUNDCOURSE 237 LEGDIST 4 FAF PIENE MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "LFK",
+                    "fixes": {
+                        "LFK": "LFK",
+                        "MCCAL": "MCCAL AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "LOA",
+                    "fixes": {
+                        "LOA": "LOA",
+                        "DAVYE": "DAVYE AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "BRWER": "BRWER AT OR ABOVE 3000",
+                "PATRK": "PATRK 2000 RNW 20 TRK 197 UNTIL 748",
+                "LOA": "OVERFLY LOA AT OR ABOVE 4000 HOLD AT LOA RIGHT TURN INBOUNDCOURSE 237 LEGDIST 4 FAF PATRK MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "LFK",
+                    "fixes": {
+                        "LFK": "LFK",
+                        "CUNHM": "CUNHM AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "LOA",
+                    "fixes": {
+                        "LOA": "LOA",
+                        "ARTEE": "ARTEE AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

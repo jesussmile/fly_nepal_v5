@@ -1,0 +1,190 @@
+{
+    "fixes": [
+        {
+            "name": "GARBA",
+            "lat": 0.5768222166666667,
+            "lon": 38.462122216666664
+        },
+        {
+            "name": "GIAKI",
+            "lat": 0.03491943333333333,
+            "lon": 37.812702783333336
+        },
+        {
+            "name": "IS001",
+            "lat": 0.44583611666666667,
+            "lon": 37.52758333333333
+        },
+        {
+            "name": "IS002",
+            "lat": 0.5443861166666667,
+            "lon": 37.46921666666667
+        },
+        {
+            "name": "IS005",
+            "lat": 0.12116388333333333,
+            "lon": 37.71986388333333
+        },
+        {
+            "name": "IS006",
+            "lat": 0.22479166666666667,
+            "lon": 37.658486116666666
+        },
+        {
+            "name": "RIVER",
+            "lat": 0.7069444333333333,
+            "lon": 36.97361111666667
+        },
+        {
+            "name": "TETEK",
+            "lat": 0.033269433333333334,
+            "lon": 37.671469433333336
+        },
+        {
+            "name": "UTUTO",
+            "lat": 0.12256666666666667,
+            "lon": 37.819675
+        },
+        {
+            "name": "UVOPO",
+            "lat": 0.6338722166666667,
+            "lon": 37.416216666666664
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "GARB1Y",
+            "rnw": "15",
+            "fixes": {
+                "GARBA": "GARBA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GARB1Z",
+            "rnw": "33",
+            "fixes": {
+                "UTUTO": "UTUTO",
+                "GARBA": "GARBA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GIAK1Y",
+            "rnw": "15",
+            "fixes": {
+                "GIAKI": "GIAKI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GIAK1Z",
+            "rnw": "33",
+            "fixes": {
+                "GIAKI": "GIAKI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UVOP1Y",
+            "rnw": "15",
+            "fixes": {
+                "UVOPO": "UVOPO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UVOP1Z",
+            "rnw": "33",
+            "fixes": {
+                "UVOPO": "UVOPO",
+                "RIVER": "RIVER"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "GARB1A",
+            "runway": "RNW 33",
+            "fixes": {
+                "GARBA": "GARBA AT OR ABOVE 15000",
+                "UTUTO": "UTUTO AT OR ABOVE 10000"
+            }
+        },
+        {
+            "name": "GIAK1A",
+            "runway": "RNW 33",
+            "fixes": {
+                "GIAKI": "GIAKI AT OR ABOVE 15000",
+                "TETEK": "TETEK AT OR ABOVE 10000"
+            }
+        },
+        {
+            "name": "GIAK1B",
+            "runway": "RNW 33",
+            "fixes": {
+                "GIAKI": "GIAKI AT OR ABOVE 15000",
+                "UTUTO": "UTUTO AT OR ABOVE 10000"
+            }
+        },
+        {
+            "name": "RIVE1A",
+            "runway": "RNW 15",
+            "fixes": {
+                "RIVER": "RIVER AT OR ABOVE 15000",
+                "UVOPO": "UVOPO AT OR ABOVE 10000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "IS002": "IS002 AT OR ABOVE 7700",
+                "IS001": "IS001 6000 RNW 15 TRK 149 UNTIL 6500",
+                "UTUTO": "OVERFLY UTUTO AT OR ABOVE 10000 HOLD AT UTUTO LEFT TURN INBOUNDCOURSE 269 ALT 10000 SPEED 230 LEGTIME 1 FAF IS001 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "UVOPO",
+                    "fixes": {
+                        "UVOPO": "UVOPO AT OR ABOVE 10000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "IS005": "IS005 AT OR ABOVE 8000",
+                "IS006": "IS006 6200 RNW 33 TURN RIGHT DIRECT",
+                "UTUTO": "OVERFLY UTUTO AT OR ABOVE 10000 HOLD AT UTUTO LEFT TURN INBOUNDCOURSE 269 ALT 10000 SPEED 230 LEGTIME 1 FAF IS006 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "TETEK",
+                    "fixes": {
+                        "TETEK": "TETEK AT OR ABOVE 10000"
+                    }
+                },
+                {
+                    "name": "UTUTO",
+                    "fixes": {
+                        "UTUTO": "UTUTO AT OR ABOVE 10000"
+                    }
+                }
+            ]
+        }
+    ]
+}

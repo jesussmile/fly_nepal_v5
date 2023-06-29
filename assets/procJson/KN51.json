@@ -1,0 +1,188 @@
+{
+    "fixes": [
+        {
+            "name": "APEGE",
+            "lat": 40.516825,
+            "lon": 74.75067778333333
+        },
+        {
+            "name": "CAVZA",
+            "lat": 40.656125,
+            "lon": 74.67946666666667
+        },
+        {
+            "name": "DIRPE",
+            "lat": 40.47303888333333,
+            "lon": 74.99361943333334
+        },
+        {
+            "name": "DMACK",
+            "lat": 41.785758333333334,
+            "lon": 77.55192221666667
+        },
+        {
+            "name": "DODLY",
+            "lat": 40.72938333333333,
+            "lon": 74.62483056666667
+        },
+        {
+            "name": "EP04",
+            "lat": 40.57750278333334,
+            "lon": 74.74255556666667
+        },
+        {
+            "name": "FS04",
+            "lat": 40.485563883333334,
+            "lon": 74.75521111666667
+        },
+        {
+            "name": "HARTY",
+            "lat": 41.071188883333335,
+            "lon": 75.08989443333333
+        },
+        {
+            "name": "HOXIE",
+            "lat": 41.865011116666665,
+            "lon": 77.85260556666667
+        },
+        {
+            "name": "JHW",
+            "lat": 42.188608333333335,
+            "lon": 79.12130833333333
+        },
+        {
+            "name": "LVZ",
+            "lat": 41.2728,
+            "lon": 75.68946666666666
+        },
+        {
+            "name": "MOSSE",
+            "lat": 40.431947216666664,
+            "lon": 74.84568611666667
+        },
+        {
+            "name": "MUGZY",
+            "lat": 41.030127783333334,
+            "lon": 74.96936111666666
+        },
+        {
+            "name": "PAGED",
+            "lat": 40.504558333333335,
+            "lon": 74.79199443333333
+        },
+        {
+            "name": "PI001",
+            "lat": 40.524932883333335,
+            "lon": 74.74848016666667
+        },
+        {
+            "name": "PI002",
+            "lat": 40.47001723333333,
+            "lon": 74.68792585
+        },
+        {
+            "name": "PI003",
+            "lat": 40.41701041666666,
+            "lon": 74.76087096666667
+        },
+        {
+            "name": "PIYIN",
+            "lat": 40.776597216666666,
+            "lon": 74.49898333333333
+        },
+        {
+            "name": "SBJ",
+            "lat": 40.583044433333335,
+            "lon": 74.74179166666667
+        },
+        {
+            "name": "STENT",
+            "lat": 41.67904721666667,
+            "lon": 77.15275556666667
+        },
+        {
+            "name": "STW",
+            "lat": 40.99581943333333,
+            "lon": 74.86903056666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 10",
+        "RNW 13",
+        "RNW 22",
+        "RNW 28",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "LVZ4",
+            "runway": "RNW 04 RNW 10 RNW 13 RNW 22 RNW 28 RNW 31",
+            "fixes": {
+                "LVZ": "LVZ",
+                "HARTY": "HARTY",
+                "MUGZY": "MUGZY",
+                "STW": "STW"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "MOSSE": "MOSSE AT OR ABOVE 2600 OVERFLY MOSSE AT OR ABOVE 2600 HOLD AT MOSSE RIGHT TURN INBOUNDCOURSE 039 LEGDIST 4 FAF PAGED MAP RNW 04",
+                "PAGED": "PAGED 1800 RNW 04 TRK 039 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DIRPE",
+                    "fixes": {
+                        "DIRPE": "DIRPE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "DODLY": "DODLY AT OR ABOVE 3000",
+                "CAVZA": "CAVZA 1800 RNW 22",
+                "MOSSE": "OVERFLY MOSSE AT OR ABOVE 2600 HOLD AT MOSSE RIGHT TURN INBOUNDCOURSE 039 LEGDIST 4 FAF CAVZA MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "DODLY",
+                    "fixes": {
+                        "DODLY": "DODLY RIGHT TURN INBOUNDCOURSE 220 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PIYIN",
+                    "fixes": {
+                        "PIYIN": "PIYIN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR04",
+            "fixes": {
+                "FS04": "FS04 2000",
+                "APEGE": "APEGE AT OR ABOVE 1140",
+                "EP04": "OVERFLY EP04 233",
+                "SBJ": "SBJ AT OR ABOVE 595 RNW 04 HOLD AT SBJ RIGHT TURN INBOUNDCOURSE 016 ALT 2000 LEGTIME 1 FAF FS04 MAP SBJ"
+            },
+            "transitions": [
+                {
+                    "name": "SBJ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

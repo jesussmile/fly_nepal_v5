@@ -1,0 +1,195 @@
+{
+    "fixes": [
+        {
+            "name": "CFDRP",
+            "lat": 32.392319433333334,
+            "lon": 85.13688056666666
+        },
+        {
+            "name": "COMOD",
+            "lat": 32.45933333333333,
+            "lon": 85.02892778333333
+        },
+        {
+            "name": "CS",
+            "lat": 32.451938883333334,
+            "lon": 85.04197221666666
+        },
+        {
+            "name": "DOCEG",
+            "lat": 32.391786116666665,
+            "lon": 85.13760833333333
+        },
+        {
+            "name": "DODTA",
+            "lat": 32.732377783333334,
+            "lon": 84.81479721666666
+        },
+        {
+            "name": "FENIX",
+            "lat": 32.45195278333333,
+            "lon": 85.04195
+        },
+        {
+            "name": "FODUN",
+            "lat": 32.483330566666666,
+            "lon": 85.21685833333333
+        },
+        {
+            "name": "GEMMY",
+            "lat": 32.62361943333333,
+            "lon": 84.82054166666667
+        },
+        {
+            "name": "HAVUP",
+            "lat": 32.570852783333336,
+            "lon": 85.03055
+        },
+        {
+            "name": "HODOE",
+            "lat": 32.57264721666667,
+            "lon": 84.84590556666667
+        },
+        {
+            "name": "ICECA",
+            "lat": 32.639172216666665,
+            "lon": 85.13798056666667
+        },
+        {
+            "name": "LGC",
+            "lat": 33.04911943333333,
+            "lon": 85.20622221666666
+        },
+        {
+            "name": "PI001",
+            "lat": 32.417652966666665,
+            "lon": 85.09785468333334
+        },
+        {
+            "name": "PI002",
+            "lat": 32.42883631666667,
+            "lon": 85.18171661666666
+        },
+        {
+            "name": "PI003",
+            "lat": 32.353887883333336,
+            "lon": 85.20156495
+        },
+        {
+            "name": "SHEER",
+            "lat": 32.64058333333333,
+            "lon": 84.73573888333334
+        },
+        {
+            "name": "WESUV",
+            "lat": 32.312613883333334,
+            "lon": 85.06923888333333
+        },
+        {
+            "name": "WUDKU",
+            "lat": 32.72997221666667,
+            "lon": 85.05733611666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 13",
+        "RNW 24",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS06",
+            "fixes": {
+                "CFDRP": "CFDRP AT OR ABOVE 2500",
+                "FENIX": "FENIX 2101 RNW 06 TRK 056 UNTIL 1000 TURN LEFT DIRECT",
+                "CS": "CS AT OR ABOVE 2700 HOLD AT CS LEFT TURN INBOUNDCOURSE 056 ALT 2700 LEGTIME 1 FAF FENIX MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "LGC",
+                    "fixes": {
+                        "LGC": "LGC",
+                        "FENIX": "FENIX AT OR ABOVE 2500",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "DOCEG": "DOCEG AT OR ABOVE 2500",
+                "COMOD": "COMOD 2100 RNW 06 TRK 056 UNTIL 900",
+                "GEMMY": "OVERFLY GEMMY AT OR ABOVE 2500 HOLD AT GEMMY RIGHT TURN INBOUNDCOURSE 266 LEGDIST 4 FAF COMOD MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "DOCEG",
+                    "fixes": {
+                        "DOCEG": "DOCEG RIGHT TURN INBOUNDCOURSE 056 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FODUN",
+                    "fixes": {
+                        "FODUN": "FODUN"
+                    }
+                },
+                {
+                    "name": "WESUV",
+                    "fixes": {
+                        "WESUV": "WESUV SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "ICECA": "ICECA AT OR ABOVE 2600 OVERFLY ICECA AT OR ABOVE 2600 HOLD AT ICECA RIGHT TURN INBOUNDCOURSE 129 LEGDIST 4 FAF HAVUP MAP RNW 13",
+                "HAVUP": "HAVUP 2100 RNW 13 TRK 129 UNTIL 798 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ICECA",
+                    "fixes": {
+                        "ICECA": "ICECA RIGHT TURN INBOUNDCOURSE 129 ALT 2600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WUDKU",
+                    "fixes": {
+                        "WUDKU": "WUDKU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "SHEER": "SHEER AT OR ABOVE 3000",
+                "HODOE": "HODOE 2300 RNW 24 TRK 236 UNTIL 729",
+                "DOCEG": "OVERFLY DOCEG AT OR ABOVE 2500 HOLD AT DOCEG RIGHT TURN INBOUNDCOURSE 056 LEGDIST 4 FAF HODOE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "DODTA",
+                    "fixes": {
+                        "DODTA": "DODTA"
+                    }
+                },
+                {
+                    "name": "SHEER",
+                    "fixes": {
+                        "SHEER": "SHEER RIGHT TURN INBOUNDCOURSE 236 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

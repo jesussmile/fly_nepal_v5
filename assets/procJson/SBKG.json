@@ -1,0 +1,220 @@
+{
+    "fixes": [
+        {
+            "name": "CL15",
+            "lat": 7.187597216666667,
+            "lon": 36.01313056666667
+        },
+        {
+            "name": "CPG01",
+            "lat": 7.262925,
+            "lon": 35.90045
+        },
+        {
+            "name": "CPGNB",
+            "lat": 7.266,
+            "lon": 35.89266666666666
+        },
+        {
+            "name": "FF15",
+            "lat": 7.226569433333333,
+            "lon": 35.99036666666667
+        },
+        {
+            "name": "IKG01",
+            "lat": 7.227069433333333,
+            "lon": 35.956775
+        },
+        {
+            "name": "IKG02",
+            "lat": 7.25585,
+            "lon": 35.915630566666664
+        },
+        {
+            "name": "KG002",
+            "lat": 7.111666666666666,
+            "lon": 36.1215
+        },
+        {
+            "name": "KG004",
+            "lat": 7.169333333333333,
+            "lon": 36.03916666666667
+        },
+        {
+            "name": "KG006",
+            "lat": 7.2175,
+            "lon": 35.9705
+        },
+        {
+            "name": "KG007",
+            "lat": 7.37,
+            "lon": 35.75266666666667
+        },
+        {
+            "name": "KG009",
+            "lat": 7.427555566666666,
+            "lon": 35.67013888333334
+        },
+        {
+            "name": "KG010",
+            "lat": 7.22985,
+            "lon": 35.95296943333334
+        },
+        {
+            "name": "KG012",
+            "lat": 7.321888883333333,
+            "lon": 35.821305566666666
+        },
+        {
+            "name": "KG013",
+            "lat": 7.287758333333334,
+            "lon": 35.69485278333333
+        },
+        {
+            "name": "KG014",
+            "lat": 7.452233333333333,
+            "lon": 35.810502783333334
+        },
+        {
+            "name": "KG016",
+            "lat": 7.087111116666667,
+            "lon": 35.98135
+        },
+        {
+            "name": "KG017",
+            "lat": 7.251547216666666,
+            "lon": 36.09700556666667
+        },
+        {
+            "name": "KG018",
+            "lat": 7.294972216666666,
+            "lon": 35.85977221666667
+        },
+        {
+            "name": "OPREL",
+            "lat": 7.206833333333333,
+            "lon": 35.98566666666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "30",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 15",
+                    "fixes": {
+                        "RNW 15": "RNW 15 TRK 147 UNTIL 3000 HDG 147 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 33",
+                    "fixes": {
+                        "RNW 33": "RNW 33 TRK 327 UNTIL 3000 HDG 327 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOCZ15",
+            "fixes": {
+                "CL15": "CL15 AT OR ABOVE 3600",
+                "OPREL": "OPREL 3600",
+                "IKG01": "IKG01 AT OR ABOVE 2940",
+                "IKG02": "IKG02 1979 RNW 15 HDG 147 UNTIL 2600 TURN LEFT DIRECT",
+                "CPGNB": "CPGNB AT OR ABOVE 5000 SPEED 210 HOLD AT CPGNB RIGHT TURN INBOUNDCOURSE 349 ALT 5000 LEGTIME 1 FAF OPREL MAP IKG02"
+            },
+            "transitions": [
+                {
+                    "name": "CPG",
+                    "fixes": {
+                        "CPGNB": "CPGNB AT OR ABOVE 5000 TRK 349 UNTIL 8.8 FROM CPGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB15",
+            "fixes": {
+                "FF15": "FF15 3500",
+                "CPG01": "OVERFLY CPG01 1658",
+                "CPGNB": "OVERFLY CPGNB AT OR ABOVE 2050 RNW 15 HDG 133 UNTIL 3000 TURN LEFT DIRECT CPGNB AT OR ABOVE 4000 HOLD AT CPGNB RIGHT TURN INBOUNDCOURSE 332 ALT 4000 LEGTIME 1 FAF FF15 MAP CPG"
+            },
+            "transitions": [
+                {
+                    "name": "CPG",
+                    "fixes": {
+                        "CPGNB": "CPGNB AT OR ABOVE 4000 TRK 332 UNTIL 8.8 FROM CPGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "KG004": "KG004 AT OR ABOVE 3700",
+                "KG006": "KG006 3300",
+                "KG010": "KG010 AT OR ABOVE 2882 RNW 15",
+                "KG007": "OVERFLY KG007 AT OR ABOVE 5000 HOLD AT KG007 LEFT TURN INBOUNDCOURSE 147 ALT 5000 LEGTIME 1 FAF KG006 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "KG002",
+                    "fixes": {
+                        "KG002": "KG002 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "KG016",
+                    "fixes": {
+                        "KG016": "KG016 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "KG017",
+                    "fixes": {
+                        "KG017": "KG017 AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "KG007": "KG007 AT OR ABOVE 3500",
+                "KG012": "KG012 3290",
+                "KG018": "KG018 AT OR ABOVE 2397 RNW 33",
+                "KG004": "OVERFLY KG004 AT OR ABOVE 5000 HOLD AT KG004 RIGHT TURN INBOUNDCOURSE 147 ALT 5000 LEGTIME 1 FAF KG012 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "KG009",
+                    "fixes": {
+                        "KG009": "KG009 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "KG013",
+                    "fixes": {
+                        "KG013": "KG013 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "KG014",
+                    "fixes": {
+                        "KG014": "KG014 AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

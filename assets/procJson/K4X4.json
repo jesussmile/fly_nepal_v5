@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "IHGEJ",
+            "lat": 44.09905833333333,
+            "lon": 98.59141666666666
+        },
+        {
+            "name": "UYEVE",
+            "lat": 44.12063611666667,
+            "lon": 98.62585833333333
+        },
+        {
+            "name": "YUBUV",
+            "lat": 44.18670556666667,
+            "lon": 98.73156666666667
+        },
+        {
+            "name": "ZAMIB",
+            "lat": 44.002544433333334,
+            "lon": 98.43789443333333
+        },
+        {
+            "name": "ZIGRU",
+            "lat": 43.936711116666665,
+            "lon": 98.33365556666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "YUBUV": "YUBUV AT OR ABOVE 4000",
+                "UYEVE": "UYEVE 3200",
+                "IHGEJ": "IHGEJ AT OR ABOVE 2580 RNW 12 TRK 127 UNTIL 1945",
+                "ZIGRU": "OVERFLY ZIGRU AT OR ABOVE 4000 HOLD AT ZIGRU RIGHT TURN INBOUNDCOURSE 307 LEGDIST 4 FAF UYEVE MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "YUBUV",
+                    "fixes": {
+                        "YUBUV": "YUBUV RIGHT TURN INBOUNDCOURSE 127 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "ZIGRU": "ZIGRU AT OR ABOVE 4000",
+                "ZAMIB": "ZAMIB 3200 RNW 30 TRK 307 UNTIL 1880",
+                "YUBUV": "OVERFLY YUBUV AT OR ABOVE 4000 HOLD AT YUBUV RIGHT TURN INBOUNDCOURSE 127 LEGDIST 4 FAF ZAMIB MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "ZIGRU",
+                    "fixes": {
+                        "ZIGRU": "ZIGRU RIGHT TURN INBOUNDCOURSE 307 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

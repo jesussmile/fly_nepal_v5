@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "FF340",
+            "lat": 32.117441666666664,
+            "lon": 150.84468888333333
+        },
+        {
+            "name": "SCOEA",
+            "lat": 32.143897216666666,
+            "lon": 151.11795278333332
+        },
+        {
+            "name": "SCOEB",
+            "lat": 32.239052783333335,
+            "lon": 151.10507221666666
+        },
+        {
+            "name": "SCOEC",
+            "lat": 32.26125833333333,
+            "lon": 150.99545
+        },
+        {
+            "name": "SCOEF",
+            "lat": 32.11708888333333,
+            "lon": 150.94357221666667
+        },
+        {
+            "name": "SCOEH",
+            "lat": 32.166877783333334,
+            "lon": 150.84269443333332
+        },
+        {
+            "name": "SCOEI",
+            "lat": 32.183644433333335,
+            "lon": 151.03161943333333
+        },
+        {
+            "name": "SCOEM",
+            "lat": 32.050475,
+            "lon": 150.85565556666666
+        },
+        {
+            "name": "SCONB",
+            "lat": 32.034747216666666,
+            "lon": 150.83103333333332
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA11",
+            "fixes": {
+                "FF340": "FF340 3300",
+                "SCONB": "SCONB 2430 RNW 11 TRK 355 UNTIL 2600 TURN LEFT DIRECT SCONB AT OR ABOVE 4400 FAF FF340 MAP SCO"
+            },
+            "transitions": [
+                {
+                    "name": "SCO1",
+                    "fixes": {
+                        "SCONB": "SCONB AT OR ABOVE 4600 SPEED 200 TRK 191 UNTIL 5.0 FROM SCONB"
+                    }
+                },
+                {
+                    "name": "SCO2",
+                    "fixes": {
+                        "SCONB": "SCONB AT OR ABOVE 4600 TRK 173 UNTIL 5.8 FROM SCONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA29",
+            "fixes": {
+                "FF340": "FF340 3300",
+                "SCONB": "SCONB 2430 RNW 29 TRK 355 UNTIL 2600 TURN LEFT DIRECT SCONB AT OR ABOVE 4400 FAF FF340 MAP SCO"
+            },
+            "transitions": [
+                {
+                    "name": "SCO1",
+                    "fixes": {
+                        "SCONB": "SCONB AT OR ABOVE 4600 SPEED 200 TRK 191 UNTIL 5.0 FROM SCONB"
+                    }
+                },
+                {
+                    "name": "SCO2",
+                    "fixes": {
+                        "SCONB": "SCONB AT OR ABOVE 4600 TRK 173 UNTIL 5.8 FROM SCONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "SCOEI": "SCOEI AT OR ABOVE 4400",
+                "SCOEF": "SCOEF 3000",
+                "SCOEM": "OVERFLY SCOEM 1084 RNW 29 TRK 300 UNTIL 3000 TURN LEFT DIRECT",
+                "SCOEH": "SCOEH SPEED 200 HDG 141 VECTORS FAF SCOEF MAP SCOEM"
+            },
+            "transitions": [
+                {
+                    "name": "SCOEA",
+                    "fixes": {
+                        "SCOEA": "SCOEA AT OR ABOVE 6300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SCOEB",
+                    "fixes": {
+                        "SCOEB": "SCOEB AT OR ABOVE 6300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SCOEC",
+                    "fixes": {
+                        "SCOEC": "SCOEC AT OR ABOVE 4400 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

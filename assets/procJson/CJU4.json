@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "APGES",
+            "lat": 52.188572216666664,
+            "lon": 104.79104721666667
+        },
+        {
+            "name": "BOPOX",
+            "lat": 52.13969721666667,
+            "lon": 105.00651666666667
+        },
+        {
+            "name": "BOPUK",
+            "lat": 52.211202783333334,
+            "lon": 105.26092221666667
+        },
+        {
+            "name": "DUPID",
+            "lat": 52.161475,
+            "lon": 105.47598056666666
+        },
+        {
+            "name": "EBGIK",
+            "lat": 52.097925,
+            "lon": 104.85916388333334
+        },
+        {
+            "name": "IGVUL",
+            "lat": 52.15331666666667,
+            "lon": 105.05475278333333
+        },
+        {
+            "name": "MEDNU",
+            "lat": 52.12839721666667,
+            "lon": 104.96655833333334
+        },
+        {
+            "name": "MUREM",
+            "lat": 52.22242778333333,
+            "lon": 105.30110556666666
+        },
+        {
+            "name": "OBTOS",
+            "lat": 52.007238883333336,
+            "lon": 104.92700278333334
+        },
+        {
+            "name": "RIDED",
+            "lat": 52.34343333333333,
+            "lon": 105.34179443333333
+        },
+        {
+            "name": "VIBKU",
+            "lat": 52.25247221666667,
+            "lon": 105.409025
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 17",
+        "RNW 28",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "VIBKU": "VIBKU AT OR ABOVE 3500 SPEED 180",
+                "BOPUK": "BOPUK 3500 RNW 10",
+                "MEDNU": "OVERFLY MEDNU 3300 HOLD AT MEDNU RIGHT TURN INBOUNDCOURSE 105 SPEED 230 LEGTIME 1 FAF BOPUK MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "DUPID",
+                    "fixes": {
+                        "DUPID": "DUPID SPEED 200"
+                    }
+                },
+                {
+                    "name": "RIDED",
+                    "fixes": {
+                        "RIDED": "RIDED SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "EBGIK": "EBGIK AT OR ABOVE 3500 SPEED 180",
+                "BOPOX": "BOPOX 3500",
+                "IGVUL": "IGVUL AT OR ABOVE 2850 RNW 28",
+                "MUREM": "OVERFLY MUREM 3500 HOLD AT MUREM RIGHT TURN INBOUNDCOURSE 285 SPEED 230 LEGTIME 1 FAF BOPOX MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "APGES",
+                    "fixes": {
+                        "APGES": "APGES SPEED 200"
+                    }
+                },
+                {
+                    "name": "OBTOS",
+                    "fixes": {
+                        "OBTOS": "OBTOS SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

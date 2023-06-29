@@ -1,0 +1,87 @@
+{
+    "fixes": [
+        {
+            "name": "ARSIS",
+            "lat": 11.214036116666666,
+            "lon": 68.81566666666667
+        },
+        {
+            "name": "ATENU",
+            "lat": 11.131730566666667,
+            "lon": 68.80018056666667
+        },
+        {
+            "name": "CIJ",
+            "lat": 11.055277783333333,
+            "lon": 68.78583333333333
+        },
+        {
+            "name": "KIMAM",
+            "lat": 11.179708333333334,
+            "lon": 69.00295
+        },
+        {
+            "name": "NENIN",
+            "lat": 11.296336116666666,
+            "lon": 68.83118611666667
+        },
+        {
+            "name": "ORUMA",
+            "lat": 11.229319433333334,
+            "lon": 68.73229721666667
+        },
+        {
+            "name": "SIPEK",
+            "lat": 11.016505566666666,
+            "lon": 68.7785
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ02",
+            "fixes": {
+                "NENIN": "NENIN AT OR ABOVE 4000",
+                "ARSIS": "ARSIS 4000",
+                "CIJ": "CIJ 969 RNW 02 TRK 020 UNTIL 1.5 FROM CIJ TURN LEFT HDG 219 INTERCEPT RADIAL 249 TO",
+                "KIMAM": "KIMAM KIMAM AT OR ABOVE 3000 HOLD AT KIMAM LEFT TURN INBOUNDCOURSE 069 ALT 3000 LEGTIME 1 FAF ARSIS MAP CIJ"
+            },
+            "transitions": [
+                {
+                    "name": "NENIN",
+                    "fixes": {
+                        "NENIN": "NENIN RIGHT TURN INBOUNDCOURSE 020 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY02",
+            "fixes": {
+                "ARSIS": "ARSIS AT OR ABOVE 4000",
+                "ATENU": "ATENU 2450 RNW 02",
+                "SIPEK": "SIPEK AT OR ABOVE 1200 TURN LEFT DIRECT",
+                "KIMAM": "OVERFLY KIMAM AT OR ABOVE 3000 HOLD AT KIMAM LEFT TURN INBOUNDCOURSE 069 ALT 3000 LEGTIME 1 FAF ATENU MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "NENIN",
+                    "fixes": {
+                        "NENIN": "NENIN AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "ORUMA",
+                    "fixes": {
+                        "ORUMA": "ORUMA AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

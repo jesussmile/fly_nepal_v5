@@ -1,0 +1,154 @@
+{
+    "fixes": [
+        {
+            "name": "ALGUL",
+            "lat": 72.04961943333333,
+            "lon": 125.92716666666666
+        },
+        {
+            "name": "AXIMO",
+            "lat": 71.89274721666666,
+            "lon": 125.77896388333333
+        },
+        {
+            "name": "DUVOD",
+            "lat": 71.97523888333333,
+            "lon": 125.80808611666667
+        },
+        {
+            "name": "ETKAT",
+            "lat": 71.98584443333333,
+            "lon": 125.48820278333334
+        },
+        {
+            "name": "FF08",
+            "lat": 71.98671666666667,
+            "lon": 125.458375
+        },
+        {
+            "name": "ITKOG",
+            "lat": 72.09265833333333,
+            "lon": 124.71278056666667
+        },
+        {
+            "name": "KEVNU",
+            "lat": 71.92736943333334,
+            "lon": 124.6641
+        },
+        {
+            "name": "MIVOM",
+            "lat": 72.00123333333333,
+            "lon": 124.99199721666666
+        },
+        {
+            "name": "MOBOX",
+            "lat": 72.01001666666667,
+            "lon": 124.68833333333333
+        },
+        {
+            "name": "ODGIV",
+            "lat": 72.000725,
+            "lon": 125.00906943333334
+        },
+        {
+            "name": "PI001",
+            "lat": 71.99644896666666,
+            "lon": 125.12633326666666
+        },
+        {
+            "name": "PI002",
+            "lat": 72.05137221666666,
+            "lon": 124.97715758333334
+        },
+        {
+            "name": "PI003",
+            "lat": 72.00524093333334,
+            "lon": 124.77689928333334
+        },
+        {
+            "name": "PIDMU",
+            "lat": 71.98576388333333,
+            "lon": 125.49071388333333
+        },
+        {
+            "name": "UDBIX",
+            "lat": 71.99633611666667,
+            "lon": 125.15445833333334
+        },
+        {
+            "name": "YSYNB",
+            "lat": 71.99145556666667,
+            "lon": 125.31435
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FF08": "FF08 1500",
+                "YSYNB": "YSYNB 664 RNW 08 TRK 006 UNTIL 2000 TURN RIGHT DIRECT YSYNB 2000 HOLD AT YSYNB RIGHT TURN INBOUNDCOURSE 006 LEGTIME 1 FAF FF08 MAP YSY"
+            },
+            "transitions": [
+                {
+                    "name": "YSY",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "DUVOD": "DUVOD AT OR ABOVE 1700",
+                "ETKAT": "ETKAT 1700 RNW 08",
+                "MIVOM": "OVERFLY MIVOM 1800 HOLD AT MIVOM RIGHT TURN INBOUNDCOURSE 006 SPEED 230 LEGTIME 1 FAF ETKAT MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "ALGUL",
+                    "fixes": {
+                        "ALGUL": "ALGUL SPEED 210"
+                    }
+                },
+                {
+                    "name": "AXIMO",
+                    "fixes": {
+                        "AXIMO": "AXIMO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "MOBOX": "MOBOX AT OR ABOVE 1800",
+                "ODGIV": "ODGIV 1600",
+                "UDBIX": "UDBIX AT OR ABOVE 730 RNW 26",
+                "PIDMU": "OVERFLY PIDMU 1800 HOLD AT PIDMU RIGHT TURN INBOUNDCOURSE 024 SPEED 230 LEGTIME 1 FAF ODGIV MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "ITKOG",
+                    "fixes": {
+                        "ITKOG": "ITKOG SPEED 210"
+                    }
+                },
+                {
+                    "name": "KEVNU",
+                    "fixes": {
+                        "KEVNU": "KEVNU SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

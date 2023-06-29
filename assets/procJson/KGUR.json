@@ -1,0 +1,135 @@
+{
+    "fixes": [
+        {
+            "name": "FN32",
+            "lat": 42.14660833333333,
+            "lon": 104.647625
+        },
+        {
+            "name": "GYZNB",
+            "lat": 42.23992221666666,
+            "lon": 104.71428333333333
+        },
+        {
+            "name": "HOCXU",
+            "lat": 41.98797221666667,
+            "lon": 104.73654443333334
+        },
+        {
+            "name": "JEZZY",
+            "lat": 42.145516666666666,
+            "lon": 104.84758056666666
+        },
+        {
+            "name": "KACTI",
+            "lat": 42.34194443333333,
+            "lon": 104.28801943333333
+        },
+        {
+            "name": "KEDPE",
+            "lat": 42.312613883333334,
+            "lon": 104.76578888333333
+        },
+        {
+            "name": "MULLI",
+            "lat": 42.174,
+            "lon": 104.6677
+        },
+        {
+            "name": "PI001",
+            "lat": 42.18841101666667,
+            "lon": 104.67732241666667
+        },
+        {
+            "name": "PI002",
+            "lat": 42.167420566666664,
+            "lon": 104.58485553333334
+        },
+        {
+            "name": "PI003",
+            "lat": 42.09271593333333,
+            "lon": 104.60884026666666
+        },
+        {
+            "name": "POLDE",
+            "lat": 42.528827783333334,
+            "lon": 105.12040278333333
+        },
+        {
+            "name": "UBODE",
+            "lat": 42.083975,
+            "lon": 104.60425833333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB32",
+            "fixes": {
+                "FN32": "FN32 6700",
+                "GYZNB": "GYZNB 4683 RNW 32 HOLD AT GYZNB RIGHT TURN INBOUNDCOURSE 321 ALT 7000 LEGTIME 1 FAF FN32 MAP GYZ"
+            },
+            "transitions": [
+                {
+                    "name": "GYZ",
+                    "fixes": {
+                        "GYZNB": "GYZNB AT OR ABOVE 6900",
+                        "PI001": "PI001 AT OR ABOVE 6700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "JEZZY",
+                    "fixes": {
+                        "JEZZY": "JEZZY",
+                        "GYZNB": "GYZNB AT OR ABOVE 7500",
+                        "PI001": "PI001 AT OR ABOVE 6700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "KACTI",
+                    "fixes": {
+                        "KACTI": "KACTI",
+                        "GYZNB": "GYZNB AT OR ABOVE 7700",
+                        "PI001": "PI001 AT OR ABOVE 6700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "UBODE": "UBODE AT OR ABOVE 6900",
+                "MULLI": "MULLI 6100 RNW 32 TRK 321 UNTIL 4802",
+                "KEDPE": "KEDPE",
+                "POLDE": "OVERFLY POLDE AT OR ABOVE 9000 HOLD AT POLDE RIGHT TURN INBOUNDCOURSE 141 LEGDIST 7 FAF MULLI MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "HOCXU",
+                    "fixes": {
+                        "HOCXU": "HOCXU",
+                        "UBODE": "OVERFLY UBODE AT OR ABOVE 7600 HOLD AT UBODE RIGHT TURN INBOUNDCOURSE 321 ALT 6900 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "KACTI",
+                    "fixes": {
+                        "KACTI": "KACTI",
+                        "UBODE": "OVERFLY UBODE AT OR ABOVE 8100 HOLD AT UBODE RIGHT TURN INBOUNDCOURSE 321 ALT 6900 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,191 @@
+{
+    "fixes": [
+        {
+            "name": "ARIAL",
+            "lat": 31.106861116666668,
+            "lon": 82.72395833333333
+        },
+        {
+            "name": "AYS",
+            "lat": 31.269425,
+            "lon": 82.55644443333334
+        },
+        {
+            "name": "DEXBU",
+            "lat": 31.205533333333335,
+            "lon": 82.94603888333333
+        },
+        {
+            "name": "EDUVE",
+            "lat": 31.12796111666667,
+            "lon": 82.85682221666667
+        },
+        {
+            "name": "FF14",
+            "lat": 31.118811116666667,
+            "lon": 82.85375556666666
+        },
+        {
+            "name": "HOENB",
+            "lat": 31.055458333333334,
+            "lon": 82.77193611666667
+        },
+        {
+            "name": "JOPXU",
+            "lat": 31.1525,
+            "lon": 82.5559
+        },
+        {
+            "name": "LADAW",
+            "lat": 31.081686116666667,
+            "lon": 82.80370278333334
+        },
+        {
+            "name": "MAGYI",
+            "lat": 31.057202783333334,
+            "lon": 82.77496666666667
+        },
+        {
+            "name": "MUZLR",
+            "lat": 31.083544433333334,
+            "lon": 82.80801943333333
+        },
+        {
+            "name": "PI001",
+            "lat": 31.094481066666667,
+            "lon": 82.82256003333333
+        },
+        {
+            "name": "PI002",
+            "lat": 31.090703366666666,
+            "lon": 82.90613378333333
+        },
+        {
+            "name": "PI003",
+            "lat": 31.1668993,
+            "lon": 82.91668628333333
+        },
+        {
+            "name": "SHERS",
+            "lat": 31.181927783333332,
+            "lon": 82.64670556666667
+        },
+        {
+            "name": "SOSRE",
+            "lat": 30.98633888333333,
+            "lon": 82.69450833333333
+        },
+        {
+            "name": "ZUGSU",
+            "lat": 30.907997216666665,
+            "lon": 82.60503333333334
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA14",
+            "fixes": {
+                "SHERS": "SHERS AT OR ABOVE 2300",
+                "ARIAL": "ARIAL 1700",
+                "MAGYI": "MAGYI 940 RNW 14 TURN RIGHT HDG 071 INTERCEPT RADIAL 042 TO",
+                "AYS": "AYS AYS AT OR ABOVE 2300 HOLD AT AYS LEFT TURN INBOUNDCOURSE 116 LEGTIME 1 FAF ARIAL MAP MAGYI"
+            },
+            "transitions": [
+                {
+                    "name": "AYS",
+                    "fixes": {
+                        "AYS": "AYS"
+                    }
+                },
+                {
+                    "name": "JOPXU",
+                    "fixes": {
+                        "JOPXU": "JOPXU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA32",
+            "fixes": {
+                "SHERS": "SHERS AT OR ABOVE 2300",
+                "ARIAL": "ARIAL 1700",
+                "MAGYI": "MAGYI 940 RNW 32 TURN RIGHT HDG 071 INTERCEPT RADIAL 042 TO",
+                "AYS": "AYS AYS AT OR ABOVE 2300 HOLD AT AYS LEFT TURN INBOUNDCOURSE 116 LEGTIME 1 FAF ARIAL MAP MAGYI"
+            },
+            "transitions": [
+                {
+                    "name": "AYS",
+                    "fixes": {
+                        "AYS": "AYS"
+                    }
+                },
+                {
+                    "name": "JOPXU",
+                    "fixes": {
+                        "JOPXU": "JOPXU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB14",
+            "fixes": {
+                "FF14": "FF14 1800",
+                "MUZLR": "MUZLR AT OR ABOVE 820 RNW 14",
+                "HOENB": "OVERFLY HOENB HOLD AT HOENB RIGHT TURN INBOUNDCOURSE 138 ALT 1800 LEGTIME 1 FAF FF14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "AYS",
+                    "fixes": {
+                        "AYS": "AYS",
+                        "HOENB": "HOENB AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "DEXBU": "DEXBU AT OR ABOVE 2000",
+                "EDUVE": "EDUVE 2000",
+                "LADAW": "LADAW AT OR ABOVE 760 RNW 14 TRK 141 UNTIL 437",
+                "ZUGSU": "OVERFLY ZUGSU AT OR ABOVE 2000 HOLD AT ZUGSU RIGHT TURN INBOUNDCOURSE 321 LEGDIST 4 FAF EDUVE MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "DEXBU",
+                    "fixes": {
+                        "DEXBU": "DEXBU RIGHT TURN INBOUNDCOURSE 141 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "ZUGSU": "ZUGSU AT OR ABOVE 2000",
+                "SOSRE": "SOSRE 2000 RNW 32 TRK 321 UNTIL 491",
+                "DEXBU": "OVERFLY DEXBU AT OR ABOVE 2000 HOLD AT DEXBU RIGHT TURN INBOUNDCOURSE 141 LEGDIST 4 FAF SOSRE MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "ZUGSU",
+                    "fixes": {
+                        "ZUGSU": "ZUGSU RIGHT TURN INBOUNDCOURSE 321 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

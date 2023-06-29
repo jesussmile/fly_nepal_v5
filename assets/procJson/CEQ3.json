@@ -1,0 +1,170 @@
+{
+    "fixes": [
+        {
+            "name": "2KNB",
+            "lat": 53.03222221666667,
+            "lon": 112.81333333333333
+        },
+        {
+            "name": "AGBUX",
+            "lat": 53.120494433333334,
+            "lon": 112.88243888333334
+        },
+        {
+            "name": "DATAT",
+            "lat": 53.209969433333335,
+            "lon": 112.95618056666666
+        },
+        {
+            "name": "FF14",
+            "lat": 53.109625,
+            "lon": 112.864025
+        },
+        {
+            "name": "IKLOX",
+            "lat": 53.25423611666667,
+            "lon": 112.80702221666667
+        },
+        {
+            "name": "KATNU",
+            "lat": 52.94038056666667,
+            "lon": 112.73504166666666
+        },
+        {
+            "name": "NOVUG",
+            "lat": 52.958525,
+            "lon": 112.74982778333333
+        },
+        {
+            "name": "ONDOV",
+            "lat": 53.16551388333333,
+            "lon": 113.10503056666667
+        },
+        {
+            "name": "OTENI",
+            "lat": 52.86891943333333,
+            "lon": 112.67694166666666
+        },
+        {
+            "name": "PI001",
+            "lat": 53.086676,
+            "lon": 112.84813948333333
+        },
+        {
+            "name": "PI002",
+            "lat": 53.152136866666666,
+            "lon": 112.79953213333333
+        },
+        {
+            "name": "PI003",
+            "lat": 53.18777741666667,
+            "lon": 112.91301373333333
+        },
+        {
+            "name": "PIKNI",
+            "lat": 52.824811116666666,
+            "lon": 112.82490833333334
+        },
+        {
+            "name": "TIKUN",
+            "lat": 53.13871111666667,
+            "lon": 112.897425
+        },
+        {
+            "name": "TULOX",
+            "lat": 52.912841666666665,
+            "lon": 112.528675
+        },
+        {
+            "name": "YEG",
+            "lat": 53.185580566666665,
+            "lon": 113.86684166666667
+        },
+        {
+            "name": "YQFNB",
+            "lat": 52.12831666666667,
+            "lon": 113.8994
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB14",
+            "fixes": {
+                "FF14": "FF14 3810 RNW 14",
+                "2KNB": "OVERFLY 2KNB TRK 144 UNTIL 4700 TURN LEFT DIRECT 2KNB 4700 HOLD AT 2KNB LEFT TURN INBOUNDCOURSE 144 SPEED 230 LEGTIME 1 FAF FF14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "YEG",
+                    "fixes": {
+                        "YEG": "YEG",
+                        "2KNB": "2KNB AT OR ABOVE 5100",
+                        "PI001": "PI001 AT OR ABOVE 4100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "YQF",
+                    "fixes": {
+                        "YQFNB": "YQFNB",
+                        "2KNB": "2KNB AT OR ABOVE 6000",
+                        "PI001": "PI001 AT OR ABOVE 4100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "DATAT": "DATAT AT OR ABOVE 4100 SPEED 180",
+                "AGBUX": "AGBUX 4100 RNW 14",
+                "KATNU": "OVERFLY KATNU 4700 HOLD AT KATNU RIGHT TURN INBOUNDCOURSE 139 LEGTIME 1 FAF AGBUX MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "IKLOX",
+                    "fixes": {
+                        "IKLOX": "IKLOX SPEED 210"
+                    }
+                },
+                {
+                    "name": "ONDOV",
+                    "fixes": {
+                        "ONDOV": "ONDOV SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "OTENI": "OTENI AT OR ABOVE 4100 SPEED 180",
+                "NOVUG": "NOVUG 4100 RNW 32",
+                "TIKUN": "OVERFLY TIKUN 4700 HOLD AT TIKUN RIGHT TURN INBOUNDCOURSE 319 LEGTIME 1 FAF NOVUG MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "PIKNI",
+                    "fixes": {
+                        "PIKNI": "PIKNI SPEED 210"
+                    }
+                },
+                {
+                    "name": "TULOX",
+                    "fixes": {
+                        "TULOX": "TULOX SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

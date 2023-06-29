@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "BINDE",
+            "lat": 47.80202778333334,
+            "lon": 91.7722
+        },
+        {
+            "name": "HABSA",
+            "lat": 47.77365833333333,
+            "lon": 91.69866943333334
+        },
+        {
+            "name": "HEGAM",
+            "lat": 47.845975,
+            "lon": 91.88648611666666
+        },
+        {
+            "name": "ODASE",
+            "lat": 47.72387221666666,
+            "lon": 91.570125
+        },
+        {
+            "name": "PUXIE",
+            "lat": 47.92423888333333,
+            "lon": 92.091225
+        },
+        {
+            "name": "WALIB",
+            "lat": 47.87486388333333,
+            "lon": 91.96188056666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "PUXIE": "PUXIE AT OR ABOVE 4100",
+                "WALIB": "WALIB 3300",
+                "HEGAM": "HEGAM AT OR ABOVE 2160 RNW 12 TRK 120 UNTIL 1643",
+                "ODASE": "OVERFLY ODASE AT OR ABOVE 4100 HOLD AT ODASE RIGHT TURN INBOUNDCOURSE 300 LEGDIST 5 FAF WALIB MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "PUXIE",
+                    "fixes": {
+                        "PUXIE": "PUXIE RIGHT TURN INBOUNDCOURSE 120 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "ODASE": "ODASE AT OR ABOVE 4100",
+                "HABSA": "HABSA 3300",
+                "BINDE": "BINDE AT OR ABOVE 2200 RNW 30 TRK 300 UNTIL 1706",
+                "PUXIE": "PUXIE AT OR ABOVE 4100 HOLD AT PUXIE RIGHT TURN INBOUNDCOURSE 120 LEGDIST 5 FAF HABSA MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "ODASE",
+                    "fixes": {
+                        "ODASE": "ODASE RIGHT TURN INBOUNDCOURSE 300 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

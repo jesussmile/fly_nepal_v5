@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "COCTA",
+            "lat": 35.462066666666665,
+            "lon": 88.24527221666666
+        },
+        {
+            "name": "DEGYE",
+            "lat": 35.750202783333336,
+            "lon": 88.17115833333334
+        },
+        {
+            "name": "EYODI",
+            "lat": 35.84818333333333,
+            "lon": 88.14583333333333
+        },
+        {
+            "name": "HIKBO",
+            "lat": 35.56036111666667,
+            "lon": 88.22005
+        },
+        {
+            "name": "XISGY",
+            "lat": 35.70853056666667,
+            "lon": 88.18190833333334
+        },
+        {
+            "name": "XITVE",
+            "lat": 35.607458333333334,
+            "lon": 88.20794166666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "COCTA": "COCTA AT OR ABOVE 3000",
+                "HIKBO": "HIKBO 2200",
+                "XITVE": "XITVE AT OR ABOVE 1280 RNW 01 TRK 013 UNTIL 717",
+                "EYODI": "OVERFLY EYODI AT OR ABOVE 3000 HOLD AT EYODI RIGHT TURN INBOUNDCOURSE 193 LEGDIST 4 FAF HIKBO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "COCTA",
+                    "fixes": {
+                        "COCTA": "COCTA LEFT TURN INBOUNDCOURSE 013 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "EYODI": "EYODI AT OR ABOVE 3000",
+                "DEGYE": "DEGYE 2200",
+                "XISGY": "XISGY AT OR ABOVE 1380 RNW 19 TRK 193 UNTIL 738",
+                "COCTA": "OVERFLY COCTA AT OR ABOVE 3000 HOLD AT COCTA LEFT TURN INBOUNDCOURSE 013 LEGDIST 4 FAF DEGYE MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "EYODI",
+                    "fixes": {
+                        "EYODI": "EYODI RIGHT TURN INBOUNDCOURSE 193 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

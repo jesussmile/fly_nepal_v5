@@ -1,0 +1,141 @@
+{
+    "fixes": [
+        {
+            "name": "BOTMA",
+            "lat": 1.7591111166666666,
+            "lon": 73.38172221666666
+        },
+        {
+            "name": "FN03",
+            "lat": 1.7984527833333335,
+            "lon": 73.48327221666666
+        },
+        {
+            "name": "FN21",
+            "lat": 1.9276416666666667,
+            "lon": 73.54728333333334
+        },
+        {
+            "name": "KDNB",
+            "lat": 1.8544444333333332,
+            "lon": 73.52080556666667
+        },
+        {
+            "name": "MK411",
+            "lat": 1.7233333333333332,
+            "lon": 73.457
+        },
+        {
+            "name": "MK412",
+            "lat": 1.7763333333333333,
+            "lon": 73.48186111666666
+        },
+        {
+            "name": "MK413",
+            "lat": 1.9968333333333335,
+            "lon": 73.58536111666666
+        },
+        {
+            "name": "MK414",
+            "lat": 1.9438333333333335,
+            "lon": 73.56047221666667
+        },
+        {
+            "name": "POMIL",
+            "lat": 1.6875833333333334,
+            "lon": 73.53225
+        },
+        {
+            "name": "SULRA",
+            "lat": 1.9610555666666667,
+            "lon": 73.66061111666667
+        },
+        {
+            "name": "TAVES",
+            "lat": 2.032583333333333,
+            "lon": 73.51008333333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FN03": "FN03 1000",
+                "KDNB": "KDNB 390 RNW 03 TRK 038 UNTIL 1500 TURN LEFT DIRECT KDNB 2000 SPEED 140 FAF FN03 MAP KD"
+            },
+            "transitions": [
+                {
+                    "name": "KD",
+                    "fixes": {
+                        "KDNB": "KDNB SPEED 140 TRK 200 UNTIL 4.7 FROM KDNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FN21": "FN21 1000 RNW 21",
+                "KDNB": "OVERFLY KDNB TRK 204 UNTIL 1500 TURN RIGHT DIRECT KDNB 2000 FAF FN21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "KD",
+                    "fixes": {
+                        "KDNB": "KDNB SPEED 140 TRK 042 UNTIL 4.7 FROM KDNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MK411": "MK411 AT OR ABOVE 1700",
+                "MK412": "MK412 1700 RNW 03 TRK 029 UNTIL 1000 TURN RIGHT DIRECT",
+                "POMIL": "POMIL HOLD AT POMIL RIGHT TURN INBOUNDCOURSE 299 ALT 3000 LEGTIME 1 FAF MK412 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "BOTMA",
+                    "fixes": {
+                        "BOTMA": "BOTMA"
+                    }
+                },
+                {
+                    "name": "POMIL",
+                    "fixes": {
+                        "POMIL": "POMIL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "MK413": "MK413 AT OR ABOVE 1700",
+                "MK414": "MK414 1700 RNW 21 TRK 209 UNTIL 1000 TURN LEFT DIRECT",
+                "SULRA": "SULRA HOLD AT SULRA RIGHT TURN INBOUNDCOURSE 299 ALT 3000 LEGTIME 1 FAF MK414 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "SULRA",
+                    "fixes": {
+                        "SULRA": "SULRA"
+                    }
+                },
+                {
+                    "name": "TAVES",
+                    "fixes": {
+                        "TAVES": "TAVES"
+                    }
+                }
+            ]
+        }
+    ]
+}

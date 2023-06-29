@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "ALNEK",
+            "lat": 50.44608888333333,
+            "lon": 95.84115556666667
+        },
+        {
+            "name": "ALRAV",
+            "lat": 50.1539,
+            "lon": 96.03273611666667
+        },
+        {
+            "name": "BORAB",
+            "lat": 50.46507221666667,
+            "lon": 96.126475
+        },
+        {
+            "name": "DUKNU",
+            "lat": 50.14438056666667,
+            "lon": 95.89099443333333
+        },
+        {
+            "name": "ERBUP",
+            "lat": 50.16324443333333,
+            "lon": 96.17453333333333
+        },
+        {
+            "name": "MARUR",
+            "lat": 50.37261388333334,
+            "lon": 95.99732221666666
+        },
+        {
+            "name": "OMRIV",
+            "lat": 50.236702783333335,
+            "lon": 96.01936666666667
+        },
+        {
+            "name": "OVBUM",
+            "lat": 50.455669433333334,
+            "lon": 95.98378611666666
+        },
+        {
+            "name": "UKRIX",
+            "lat": 50.35631111666667,
+            "lon": 95.99997221666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "OVBUM": "OVBUM AT OR ABOVE 2100 SPEED 180",
+                "UKRIX": "UKRIX 1990 RNW 18 TURN LEFT DIRECT",
+                "ALNEK": "ALNEK 2500 SPEED 165 HOLD AT ALNEK RIGHT TURN INBOUNDCOURSE 274 SPEED 250 LEGTIME 1 FAF UKRIX MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ALNEK",
+                    "fixes": {
+                        "ALNEK": "ALNEK SPEED 210"
+                    }
+                },
+                {
+                    "name": "BORAB",
+                    "fixes": {
+                        "BORAB": "BORAB SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ALRAV": "ALRAV AT OR ABOVE 2100 SPEED 180",
+                "OMRIV": "OMRIV 2100 RNW 36",
+                "MARUR": "OVERFLY MARUR 2400 HOLD AT MARUR RIGHT TURN INBOUNDCOURSE 004 SPEED 250 LEGTIME 1 FAF OMRIV MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "DUKNU",
+                    "fixes": {
+                        "DUKNU": "DUKNU SPEED 210"
+                    }
+                },
+                {
+                    "name": "ERBUP",
+                    "fixes": {
+                        "ERBUP": "ERBUP SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

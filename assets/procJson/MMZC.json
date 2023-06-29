@@ -1,0 +1,170 @@
+{
+    "fixes": [
+        {
+            "name": "30VOR",
+            "lat": 22.84313888333333,
+            "lon": 102.71867221666666
+        },
+        {
+            "name": "CD02",
+            "lat": 22.769297216666665,
+            "lon": 102.76099166666667
+        },
+        {
+            "name": "CF20",
+            "lat": 23.005552783333332,
+            "lon": 102.62541111666667
+        },
+        {
+            "name": "FD02",
+            "lat": 22.813602783333334,
+            "lon": 102.73560556666666
+        },
+        {
+            "name": "FD20",
+            "lat": 22.961263883333334,
+            "lon": 102.65086666666667
+        },
+        {
+            "name": "FF02",
+            "lat": 22.771813883333333,
+            "lon": 102.71300833333333
+        },
+        {
+            "name": "FF20",
+            "lat": 22.987697216666668,
+            "lon": 102.63567778333334
+        },
+        {
+            "name": "PI001",
+            "lat": 22.829826216666667,
+            "lon": 102.70316208333334
+        },
+        {
+            "name": "PI002",
+            "lat": 22.787689266666668,
+            "lon": 102.76605028333333
+        },
+        {
+            "name": "PI003",
+            "lat": 22.72282445,
+            "lon": 102.72152738333334
+        },
+        {
+            "name": "PI004",
+            "lat": 22.938944183333334,
+            "lon": 102.66352366666666
+        },
+        {
+            "name": "PI005",
+            "lat": 23.00747773333333,
+            "lon": 102.68628776666667
+        },
+        {
+            "name": "PI006",
+            "lat": 23.034576983333334,
+            "lon": 102.60823685
+        },
+        {
+            "name": "ZCL",
+            "lat": 22.887441666666668,
+            "lon": 102.69326111666666
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "ZCL2A",
+            "rnw": "02",
+            "fixes": {
+                "ZCL": "ZCL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ZCL2B",
+            "rnw": "20",
+            "fixes": {
+                "ZCL": "ZCL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD02",
+            "fixes": {
+                "CD02": "CD02 AT OR ABOVE 9300",
+                "FD02": "FD02 8600",
+                "30VOR": "30VOR AT OR ABOVE 8000 RNW 02",
+                "ZCL": "OVERFLY ZCL TRK 020 UNTIL 7.0 FROM ZCL TURN LEFT DIRECT ZCL AT OR ABOVE 10000 FAF FD02 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "ZCL",
+                    "fixes": {
+                        "ZCL": "ZCL AT OR ABOVE 10000 TRK 226 UNTIL 8.0 FROM ZCL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD20",
+            "fixes": {
+                "CF20": "CF20 AT OR ABOVE 8900",
+                "FD20": "FD20 8300 RNW 20",
+                "ZCL": "ZCL TRK 200 UNTIL 7.0 FROM ZCL TURN RIGHT DIRECT ZCL AT OR ABOVE 10000 FAF FD20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "ZCL",
+                    "fixes": {
+                        "ZCL": "ZCL AT OR ABOVE 10000 TRK 354 UNTIL 8.0 FROM ZCL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR02",
+            "fixes": {
+                "FF02": "FF02 9400 RNW 02",
+                "ZCL": "OVERFLY ZCL TRK 020 UNTIL 7.0 FROM ZCL TURN LEFT DIRECT ZCL AT OR ABOVE 10000 FAF FF02 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "ZCL",
+                    "fixes": {
+                        "ZCL": "ZCL AT OR ABOVE 10000",
+                        "PI001": "PI001 AT OR ABOVE 9400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 9400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 9400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR20",
+            "fixes": {
+                "FF20": "FF20 8900 RNW 20",
+                "ZCL": "ZCL TRK 200 UNTIL 7.0 FROM ZCL TURN RIGHT DIRECT ZCL AT OR ABOVE 10000 FAF FF20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "ZCL",
+                    "fixes": {
+                        "ZCL": "ZCL AT OR ABOVE 10000",
+                        "PI004": "PI004 AT OR ABOVE 8900 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 8900 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 8900 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

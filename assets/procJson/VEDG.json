@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "CI16",
+            "lat": 23.758152783333333,
+            "lon": 87.18420556666666
+        },
+        {
+            "name": "D339D",
+            "lat": 23.700666666666667,
+            "lon": 87.20935
+        },
+        {
+            "name": "DGP",
+            "lat": 23.638222216666666,
+            "lon": 87.23538888333333
+        },
+        {
+            "name": "EGIPA",
+            "lat": 23.700327783333332,
+            "lon": 87.20840833333334
+        },
+        {
+            "name": "FD16",
+            "lat": 23.730325,
+            "lon": 87.19697778333334
+        },
+        {
+            "name": "FD34",
+            "lat": 23.530497216666667,
+            "lon": 87.28022778333333
+        },
+        {
+            "name": "FI16",
+            "lat": 23.727094433333335,
+            "lon": 87.197675
+        },
+        {
+            "name": "MD16",
+            "lat": 23.653836116666668,
+            "lon": 87.22887778333333
+        },
+        {
+            "name": "MD34",
+            "lat": 23.591388883333334,
+            "lon": 87.25488888333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD16",
+            "fixes": {
+                "FD16": "FD16 2300",
+                "MD16": "MD16 800 RNW 16 TRK 174 UNTIL 2300 TURN RIGHT DIRECT",
+                "D339D": "D339D 3200 HOLD AT D339D RIGHT TURN INBOUNDCOURSE 159 ALT 3200 LEGTIME 1 FAF FD16 MAP MD16"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD34",
+            "fixes": {
+                "FD34": "FD34 2000",
+                "MD34": "MD34 721 RNW 34 TRK 339 UNTIL 2300 TURN LEFT DIRECT",
+                "DGP": "DGP 3200 SPEED 185 HOLD AT DGP RIGHT TURN INBOUNDCOURSE 181 LEGTIME 1 FAF FD34 MAP MD34"
+            },
+            "transitions": [
+                {
+                    "name": "DGP1",
+                    "fixes": {
+                        "DGP": "DGP AT OR ABOVE 3200 SPEED 185 TRK 181 UNTIL 8.0 FROM DGP"
+                    }
+                },
+                {
+                    "name": "DGP2",
+                    "fixes": {
+                        "DGP": "DGP AT OR ABOVE 3200 SPEED 185 TRK 171 UNTIL 8.0 FROM DGP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS16",
+            "fixes": {
+                "CI16": "CI16 AT OR ABOVE 2300",
+                "FI16": "FI16 2300 RNW 16 TRK 159 UNTIL 1500 TURN RIGHT DIRECT",
+                "DGP": "DGP",
+                "EGIPA": "EGIPA 3200 HOLD AT EGIPA RIGHT TURN INBOUNDCOURSE 159 ALT 3200 LEGTIME 1 FAF FI16 MAP RNW 16"
+            },
+            "transitions": []
+        }
+    ]
+}

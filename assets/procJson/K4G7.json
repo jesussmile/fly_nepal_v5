@@ -1,0 +1,66 @@
+{
+    "fixes": [
+        {
+            "name": "BICKE",
+            "lat": 39.51838888333333,
+            "lon": 80.09785833333333
+        },
+        {
+            "name": "LEFSO",
+            "lat": 39.68126388333334,
+            "lon": 80.09663333333333
+        },
+        {
+            "name": "MGW",
+            "lat": 39.55671388333333,
+            "lon": 79.86041111666667
+        },
+        {
+            "name": "NOPPO",
+            "lat": 39.54355833333334,
+            "lon": 80.073025
+        },
+        {
+            "name": "RUBIC",
+            "lat": 39.599211116666666,
+            "lon": 80.01803611666666
+        },
+        {
+            "name": "TEDDS",
+            "lat": 39.63854443333334,
+            "lon": 80.27613333333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "RUBIC": "RUBIC AT OR ABOVE 3900",
+                "NOPPO": "NOPPO AT OR ABOVE 3000",
+                "BICKE": "BICKE 2700 RNW 23 TRK 226 UNTIL 1432 TURN RIGHT DIRECT",
+                "TEDDS": "OVERFLY TEDDS AT OR ABOVE 4000 HOLD AT TEDDS LEFT TURN INBOUNDCOURSE 113 LEGDIST 4 FAF BICKE MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "MGW",
+                    "fixes": {
+                        "MGW": "MGW"
+                    }
+                },
+                {
+                    "name": "TEDDS",
+                    "fixes": {
+                        "TEDDS": "TEDDS",
+                        "LEFSO": "LEFSO AT OR ABOVE 4200"
+                    }
+                }
+            ]
+        }
+    ]
+}

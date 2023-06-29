@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "ESUYO",
+            "lat": 30.143541666666668,
+            "lon": 96.29383333333334
+        },
+        {
+            "name": "HOXID",
+            "lat": 30.547902783333335,
+            "lon": 96.12233333333333
+        },
+        {
+            "name": "JIXET",
+            "lat": 30.316872216666667,
+            "lon": 96.11035833333334
+        },
+        {
+            "name": "JOVPA",
+            "lat": 30.464447216666667,
+            "lon": 96.118
+        },
+        {
+            "name": "MAJLO",
+            "lat": 30.361986116666667,
+            "lon": 96.10931111666666
+        },
+        {
+            "name": "OLNAJ",
+            "lat": 30.415727783333335,
+            "lon": 96.115475
+        },
+        {
+            "name": "PI001",
+            "lat": 30.241329133333334,
+            "lon": 96.01855026666667
+        },
+        {
+            "name": "PI002",
+            "lat": 30.230092516666666,
+            "lon": 95.93662493333333
+        },
+        {
+            "name": "PI003",
+            "lat": 30.153642833333333,
+            "lon": 95.94494383333333
+        },
+        {
+            "name": "TNV",
+            "lat": 30.288527783333333,
+            "lon": 96.05823888333333
+        },
+        {
+            "name": "WAMIV",
+            "lat": 30.268011116666667,
+            "lon": 96.10783333333333
+        },
+        {
+            "name": "YIKUG",
+            "lat": 30.158466666666666,
+            "lon": 95.90974443333333
+        },
+        {
+            "name": "ZUGUK",
+            "lat": 30.151144433333332,
+            "lon": 96.10180278333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "HOXID": "HOXID AT OR ABOVE 2000",
+                "JOVPA": "JOVPA 2000",
+                "OLNAJ": "OLNAJ AT OR ABOVE 1060 RNW 17 TRK 174 UNTIL 529",
+                "ZUGUK": "OVERFLY ZUGUK AT OR ABOVE 3000 HOLD AT ZUGUK RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF JOVPA MAP RNW 17"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ZUGUK": "ZUGUK AT OR ABOVE 3000",
+                "WAMIV": "WAMIV 2000",
+                "JIXET": "JIXET AT OR ABOVE 1060 RNW 35 TRK 354 UNTIL 504",
+                "HOXID": "OVERFLY HOXID AT OR ABOVE 3000 HOLD AT HOXID RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF WAMIV MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "ESUYO",
+                    "fixes": {
+                        "ESUYO": "ESUYO"
+                    }
+                },
+                {
+                    "name": "YIKUG",
+                    "fixes": {
+                        "YIKUG": "YIKUG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA17",
+            "fixes": {
+                "TNV": "TNV 2000 TNV HOLD AT TNV RIGHT TURN INBOUNDCOURSE 118 LEGTIME 1 FAF TNV MAP MAJLO",
+                "MAJLO": "MAJLO 1100 RNW 17 TRK 321 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TNV",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA35",
+            "fixes": {
+                "TNV": "TNV 2000 TNV HOLD AT TNV RIGHT TURN INBOUNDCOURSE 118 LEGTIME 1 FAF TNV MAP MAJLO",
+                "MAJLO": "MAJLO 1100 RNW 35 TRK 321 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TNV",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

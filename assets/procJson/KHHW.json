@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "AGISM",
+            "lat": 34.12246111666666,
+            "lon": 95.54230833333334
+        },
+        {
+            "name": "CABSO",
+            "lat": 33.94504166666667,
+            "lon": 95.54181388333333
+        },
+        {
+            "name": "HUKIT",
+            "lat": 34.085897216666666,
+            "lon": 95.54220833333333
+        },
+        {
+            "name": "JASGU",
+            "lat": 34.22263611666666,
+            "lon": 95.54258888333334
+        },
+        {
+            "name": "PRX",
+            "lat": 33.542377783333336,
+            "lon": 95.44829166666666
+        },
+        {
+            "name": "ROTAE",
+            "lat": 33.786425,
+            "lon": 95.541375
+        },
+        {
+            "name": "WUNIN",
+            "lat": 34.322811116666664,
+            "lon": 95.54286943333334
+        },
+        {
+            "name": "ZERAL",
+            "lat": 33.88660556666667,
+            "lon": 95.54165278333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "JASGU": "JASGU AT OR ABOVE 4000",
+                "AGISM": "AGISM 2200",
+                "HUKIT": "HUKIT AT OR ABOVE 1500 RNW 17 TRK 178 UNTIL 820",
+                "ZERAL": "OVERFLY ZERAL AT OR ABOVE 2500 HOLD AT ZERAL RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF AGISM MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "PRX",
+                    "fixes": {
+                        "PRX": "PRX",
+                        "JASGU": "OVERFLY JASGU AT OR ABOVE 4000 HOLD AT JASGU RIGHT TURN INBOUNDCOURSE 178 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WUNIN",
+                    "fixes": {
+                        "WUNIN": "WUNIN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ZERAL": "ZERAL AT OR ABOVE 2500",
+                "CABSO": "CABSO 2200 RNW 35 TRK 358 UNTIL 822",
+                "JASGU": "OVERFLY JASGU AT OR ABOVE 4000 HOLD AT JASGU RIGHT TURN INBOUNDCOURSE 178 ALT 4000 LEGDIST 4 FAF CABSO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "PRX",
+                    "fixes": {
+                        "PRX": "PRX",
+                        "ROTAE": "ROTAE AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "ZERAL",
+                    "fixes": {
+                        "ZERAL": "ZERAL RIGHT TURN INBOUNDCOURSE 358 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

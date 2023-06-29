@@ -1,0 +1,63 @@
+{
+    "fixes": [
+        {
+            "name": "LETBE",
+            "lat": 34.511288883333336,
+            "lon": 85.36605556666666
+        },
+        {
+            "name": "OKTEE",
+            "lat": 34.86898888333333,
+            "lon": 85.21280278333333
+        },
+        {
+            "name": "PIKIE",
+            "lat": 34.59536666666666,
+            "lon": 85.33016388333333
+        },
+        {
+            "name": "WESOR",
+            "lat": 34.784025,
+            "lon": 85.24933611666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "LETBE": "LETBE AT OR ABOVE 3700 OVERFLY LETBE AT OR ABOVE 3700 HOLD AT LETBE RIGHT TURN INBOUNDCOURSE 022 ALT 3700 LEGDIST 4 FAF PIKIE MAP RNW 02",
+                "PIKIE": "PIKIE 3000 RNW 02 TRK 022 UNTIL 1176 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LETBE",
+                    "fixes": {
+                        "LETBE": "LETBE RIGHT TURN INBOUNDCOURSE 022 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "OKTEE": "OKTEE AT OR ABOVE 4000",
+                "WESOR": "WESOR 3100 RNW 20 TRK 203 UNTIL 1176",
+                "LETBE": "OVERFLY LETBE AT OR ABOVE 3700 HOLD AT LETBE RIGHT TURN INBOUNDCOURSE 022 LEGDIST 4 FAF WESOR MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "OKTEE",
+                    "fixes": {
+                        "OKTEE": "OKTEE RIGHT TURN INBOUNDCOURSE 203 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

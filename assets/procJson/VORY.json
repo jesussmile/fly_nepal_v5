@@ -1,0 +1,235 @@
+{
+    "fixes": [
+        {
+            "name": "30THR",
+            "lat": 17.144408333333335,
+            "lon": 81.866975
+        },
+        {
+            "name": "40VOR",
+            "lat": 17.146280566666668,
+            "lon": 81.87358333333333
+        },
+        {
+            "name": "FD05",
+            "lat": 17.028055566666666,
+            "lon": 81.71392221666666
+        },
+        {
+            "name": "FD23",
+            "lat": 17.172694433333334,
+            "lon": 81.91593056666666
+        },
+        {
+            "name": "MD05",
+            "lat": 17.088316666666667,
+            "lon": 81.78853333333333
+        },
+        {
+            "name": "MD23",
+            "lat": 17.118944433333333,
+            "lon": 81.82978888333334
+        },
+        {
+            "name": "RJM",
+            "lat": 17.10985,
+            "lon": 81.81520556666666
+        },
+        {
+            "name": "RY022",
+            "lat": 17.032386116666668,
+            "lon": 81.71110833333333
+        },
+        {
+            "name": "RY024",
+            "lat": 17.176988883333333,
+            "lon": 81.91248888333334
+        },
+        {
+            "name": "RY403",
+            "lat": 17.14530278333333,
+            "lon": 82.07201111666667
+        },
+        {
+            "name": "RY404",
+            "lat": 17.269225,
+            "lon": 82.04109166666667
+        },
+        {
+            "name": "RY405",
+            "lat": 17.333161116666666,
+            "lon": 81.92634166666667
+        },
+        {
+            "name": "RY408",
+            "lat": 16.98851111666667,
+            "lon": 81.85333611666667
+        },
+        {
+            "name": "RY409",
+            "lat": 17.212408333333332,
+            "lon": 82.02001943333333
+        },
+        {
+            "name": "RY410",
+            "lat": 17.266083333333334,
+            "lon": 81.9784
+        },
+        {
+            "name": "RY411",
+            "lat": 17.209244433333332,
+            "lon": 81.95732778333333
+        },
+        {
+            "name": "RY503",
+            "lat": 17.054508333333334,
+            "lon": 81.53838888333334
+        },
+        {
+            "name": "RY504",
+            "lat": 16.940019433333333,
+            "lon": 81.58259443333333
+        },
+        {
+            "name": "RY505",
+            "lat": 16.866922216666666,
+            "lon": 81.68423056666667
+        },
+        {
+            "name": "RY508",
+            "lat": 17.000166666666665,
+            "lon": 81.66613611666666
+        },
+        {
+            "name": "RY509",
+            "lat": 16.930288883333333,
+            "lon": 81.63500556666666
+        },
+        {
+            "name": "RY510",
+            "lat": 16.991163883333332,
+            "lon": 81.58767778333333
+        },
+        {
+            "name": "RY511",
+            "lat": 17.020525,
+            "lon": 81.89793056666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "FD05": "FD05 2200",
+                "MD05": "MD05 425 RNW 05 TRK 051 UNTIL 2200 TURN RIGHT DIRECT",
+                "RJM": "RJM 3500 HOLD AT RJM RIGHT TURN INBOUNDCOURSE 254 ALT 3500 LEGTIME 1 FAF FD05 MAP MD05"
+            },
+            "transitions": [
+                {
+                    "name": "RJM1",
+                    "fixes": {
+                        "RJM": "RJM AT OR ABOVE 3500 TRK 254 UNTIL 9.0 FROM RJM"
+                    }
+                },
+                {
+                    "name": "RJM2",
+                    "fixes": {
+                        "RJM": "RJM AT OR ABOVE 3500 TRK 243 UNTIL 9.0 FROM RJM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FD23": "FD23 2200",
+                "40VOR": "40VOR AT OR ABOVE 1280",
+                "MD23": "MD23 325 RNW 23 TRK 238 UNTIL 2200 TURN RIGHT DIRECT",
+                "RJM": "RJM 3500 HOLD AT RJM LEFT TURN INBOUNDCOURSE 081 ALT 3500 LEGTIME 1 FAF FD23 MAP MD23"
+            },
+            "transitions": [
+                {
+                    "name": "RJM1",
+                    "fixes": {
+                        "RJM": "RJM AT OR ABOVE 3500 TRK 081 UNTIL 9.0 FROM RJM"
+                    }
+                },
+                {
+                    "name": "RJM2",
+                    "fixes": {
+                        "RJM": "RJM AT OR ABOVE 3500 TRK 070 UNTIL 9.0 FROM RJM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "RY508": "RY508 AT OR ABOVE 2200",
+                "RY022": "RY022 2200 RNW 05 TRK 054 UNTIL 1400 TURN RIGHT DIRECT",
+                "RY511": "RY511 SPEED 210",
+                "RY505": "RY505 SPEED 210 HOLD AT RY505 RIGHT TURN INBOUNDCOURSE 324 ALT 4600 SPEED 230 LEGTIME 1 FAF RY022 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "RY503",
+                    "fixes": {
+                        "RY503": "RY503 AT OR ABOVE 4600 SPEED 185",
+                        "RY510": "RY510 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "RY504",
+                    "fixes": {
+                        "RY504": "RY504 AT OR ABOVE 4600 SPEED 185"
+                    }
+                },
+                {
+                    "name": "RY505",
+                    "fixes": {
+                        "RY505": "RY505 AT OR ABOVE 4600 SPEED 185",
+                        "RY509": "RY509 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "RY411": "RY411 AT OR ABOVE 2200",
+                "RY024": "RY024 2200",
+                "30THR": "30THR AT OR ABOVE 1170 RNW 23 TRK 234 UNTIL 1400 TURN LEFT DIRECT",
+                "RY408": "RY408 SPEED 210",
+                "RY403": "RY403 SPEED 210 HOLD AT RY403 RIGHT TURN INBOUNDCOURSE 325 ALT 4600 SPEED 230 LEGTIME 1 FAF RY024 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "RY403",
+                    "fixes": {
+                        "RY403": "RY403 AT OR ABOVE 4600 SPEED 185",
+                        "RY409": "RY409 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "RY404",
+                    "fixes": {
+                        "RY404": "RY404 AT OR ABOVE 4600 SPEED 185"
+                    }
+                },
+                {
+                    "name": "RY405",
+                    "fixes": {
+                        "RY405": "RY405 AT OR ABOVE 4600 SPEED 185",
+                        "RY410": "RY410 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

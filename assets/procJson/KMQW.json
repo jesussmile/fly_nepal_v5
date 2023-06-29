@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "CENVA",
+            "lat": 32.00894443333333,
+            "lon": 83.19568611666666
+        },
+        {
+            "name": "DBN",
+            "lat": 32.563461116666666,
+            "lon": 82.83004443333333
+        },
+        {
+            "name": "FINAN",
+            "lat": 32.28085278333333,
+            "lon": 82.78851666666667
+        },
+        {
+            "name": "IYONU",
+            "lat": 32.289222216666666,
+            "lon": 82.74327778333333
+        },
+        {
+            "name": "JOKVU",
+            "lat": 31.904680566666666,
+            "lon": 82.97416943333333
+        },
+        {
+            "name": "KOGPE",
+            "lat": 32.01133888333333,
+            "lon": 82.92166943333334
+        },
+        {
+            "name": "NIYIB",
+            "lat": 31.74635,
+            "lon": 82.81191666666666
+        },
+        {
+            "name": "OTUVE",
+            "lat": 32.18546666666667,
+            "lon": 82.83572221666667
+        },
+        {
+            "name": "SEYBO",
+            "lat": 31.956761116666666,
+            "lon": 83.11918056666667
+        },
+        {
+            "name": "ZEXUB",
+            "lat": 31.872286116666668,
+            "lon": 82.88395556666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "JOKVU": "JOKVU AT OR ABOVE 3000",
+                "KOGPE": "KOGPE 1900 RNW 03",
+                "OTUVE": "OTUVE",
+                "IYONU": "OVERFLY IYONU AT OR ABOVE 3000 HOLD AT IYONU RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4 FAF KOGPE MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "NIYIB",
+                    "fixes": {
+                        "NIYIB": "NIYIB",
+                        "ZEXUB": "ZEXUB AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SEYBO",
+                    "fixes": {
+                        "SEYBO": "SEYBO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "FINAN": "FINAN AT OR ABOVE 3000 OVERFLY FINAN AT OR ABOVE 3000 HOLD AT FINAN RIGHT TURN INBOUNDCOURSE 206 LEGDIST 4 FAF OTUVE MAP RNW 21",
+                "OTUVE": "OTUVE 2000 RNW 21 TRK 206 UNTIL 603 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CENVA",
+                    "fixes": {
+                        "CENVA": "CENVA",
+                        "FINAN": "OVERFLY FINAN AT OR ABOVE 3000 HOLD AT FINAN RIGHT TURN INBOUNDCOURSE 206 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DBN",
+                    "fixes": {
+                        "DBN": "DBN"
+                    }
+                }
+            ]
+        }
+    ]
+}

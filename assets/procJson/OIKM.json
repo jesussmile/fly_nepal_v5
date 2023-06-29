@@ -1,0 +1,180 @@
+{
+    "fixes": [
+        {
+            "name": "BAM",
+            "lat": 29.077472216666667,
+            "lon": 58.458333333333336
+        },
+        {
+            "name": "BAMNB",
+            "lat": 29.077944433333332,
+            "lon": 58.45441666666667
+        },
+        {
+            "name": "CD30",
+            "lat": 29.00448056666667,
+            "lon": 58.60795278333333
+        },
+        {
+            "name": "D333K",
+            "lat": 29.244333333333334,
+            "lon": 58.369641666666666
+        },
+        {
+            "name": "FD30",
+            "lat": 29.04505,
+            "lon": 58.524855566666666
+        },
+        {
+            "name": "FF30",
+            "lat": 29.038627783333332,
+            "lon": 58.538025
+        },
+        {
+            "name": "FN30",
+            "lat": 29.045277783333333,
+            "lon": 58.541913883333336
+        },
+        {
+            "name": "ORDAD",
+            "lat": 30.102222216666668,
+            "lon": 57.915
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "ORDA1A",
+            "rnw": "30",
+            "fixes": {
+                "BAM": "BAM TRK 303 INTERCEPT RADIAL 333 TO",
+                "ORDAD": "ORDAD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ORDA1B",
+            "rnw": "30",
+            "fixes": {
+                "ORDAD": "ORDAD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ORDA1C",
+            "rnw": "12",
+            "fixes": {
+                "BAM": "BAM TURN LEFT TRK 303 INTERCEPT RADIAL 333 TO",
+                "ORDAD": "ORDAD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ORDA1D",
+            "rnw": "30",
+            "fixes": {
+                "BAMNB": "BAMNB TRK 345 UNTIL 7400 TRK 304 INTERCEPT RADIAL 334 TO",
+                "ORDAD": "ORDAD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ORDA1E",
+            "rnw": "30",
+            "fixes": {
+                "ORDAD": "ORDAD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ORDA1F",
+            "rnw": "12",
+            "fixes": {
+                "ORDAD": "ORDAD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ORDA1N",
+            "runway": "RNW 12 RNW 30",
+            "fixes": {
+                "ORDAD": "ORDAD",
+                "D333K": "D333K",
+                "BAM": "BAM"
+            }
+        },
+        {
+            "name": "ORDA1T",
+            "runway": "RNW 12 RNW 30",
+            "fixes": {
+                "ORDAD": "ORDAD",
+                "BAMNB": "BAMNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD30",
+            "fixes": {
+                "CD30": "CD30 AT OR ABOVE 4600",
+                "FD30": "FD30 4300 RNW 30",
+                "BAM": "BAM AT OR ABOVE 3640 TRK 310 UNTIL 5500 TURN LEFT DIRECT BAM 7000 HOLD AT BAM RIGHT TURN INBOUNDCOURSE 141 SPEED 230 LEGTIME 1 FAF FD30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "BAM",
+                    "fixes": {
+                        "BAM": "BAM AT OR ABOVE 7000 SPEED 220 TRK 141 UNTIL 9.0 FROM BAM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 4600 RNW 30",
+                "BAMNB": "BAMNB AT OR ABOVE 3640 TRK 310 UNTIL 5500 TURN LEFT DIRECT BAMNB 7000 HOLD AT BAMNB RIGHT TURN INBOUNDCOURSE 134 SPEED 230 LEGTIME 1 FAF FN30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "BAM",
+                    "fixes": {
+                        "BAMNB": "BAMNB AT OR ABOVE 7000 SPEED 220 TRK 134 UNTIL 7.3 FROM BAMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR30",
+            "fixes": {
+                "FF30": "FF30 4600 RNW 30",
+                "BAM": "OVERFLY BAM TRK 310 UNTIL 5500 TURN LEFT DIRECT BAM 7000 HOLD AT BAM RIGHT TURN INBOUNDCOURSE 141 ALT 7000 SPEED 230 LEGTIME 1 FAF FF30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "BAM1",
+                    "fixes": {
+                        "BAM": "BAM AT OR ABOVE 7000 SPEED 220 TRK 143 UNTIL 7.3 FROM BAM"
+                    }
+                },
+                {
+                    "name": "BAM2",
+                    "fixes": {
+                        "BAM": "BAM AT OR ABOVE 7000 TRK 128 UNTIL 7.3 FROM BAM"
+                    }
+                }
+            ]
+        }
+    ]
+}

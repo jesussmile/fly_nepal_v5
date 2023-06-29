@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "ATMUM",
+            "lat": 56.361361116666664,
+            "lon": 7.1365138833333335
+        },
+        {
+            "name": "BESNU",
+            "lat": 56.570458333333335,
+            "lon": 6.584383333333333
+        },
+        {
+            "name": "GIVGI",
+            "lat": 56.427497216666666,
+            "lon": 7.153211116666666
+        },
+        {
+            "name": "LIVPO",
+            "lat": 56.636608333333335,
+            "lon": 6.60085
+        },
+        {
+            "name": "MOLAL",
+            "lat": 56.650641666666665,
+            "lon": 6.71935
+        },
+        {
+            "name": "PU05F",
+            "lat": 56.440663883333336,
+            "lon": 6.982788883333333
+        },
+        {
+            "name": "PU05I",
+            "lat": 56.401013883333334,
+            "lon": 7.059691666666667
+        },
+        {
+            "name": "PU23F",
+            "lat": 56.55742778333333,
+            "lon": 6.755558333333333
+        },
+        {
+            "name": "PU23I",
+            "lat": 56.597022216666666,
+            "lon": 6.678247216666667
+        },
+        {
+            "name": "PUM01",
+            "lat": 56.53431388333333,
+            "lon": 6.800697216666666
+        },
+        {
+            "name": "PUM02",
+            "lat": 56.576936116666666,
+            "lon": 6.872491666666667
+        },
+        {
+            "name": "PUM03",
+            "lat": 56.458108333333335,
+            "lon": 6.9489888833333335
+        },
+        {
+            "name": "PUM04",
+            "lat": 56.506816666666666,
+            "lon": 7.030888883333334
+        },
+        {
+            "name": "RIMEV",
+            "lat": 56.347380566666665,
+            "lon": 7.018897216666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 11",
+        "RNW 23",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "PU05I": "PU05I AT OR ABOVE 1600",
+                "PU05F": "PU05F 1600 RNW 05",
+                "PUM01": "PUM01",
+                "PUM02": "PUM02",
+                "GIVGI": "OVERFLY GIVGI 2000 HOLD AT GIVGI RIGHT TURN INBOUNDCOURSE 121 ALT 2000 LEGTIME 1 FAF PU05F MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "ATMUM",
+                    "fixes": {
+                        "ATMUM": "ATMUM AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "GIVGI",
+                    "fixes": {
+                        "GIVGI": "GIVGI AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "RIMEV",
+                    "fixes": {
+                        "RIMEV": "RIMEV AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "PU23I": "PU23I AT OR ABOVE 1600",
+                "PU23F": "PU23F 1600 RNW 23",
+                "PUM03": "PUM03",
+                "PUM04": "PUM04",
+                "MOLAL": "OVERFLY MOLAL 2000 HOLD AT MOLAL RIGHT TURN INBOUNDCOURSE 160 ALT 2000 LEGTIME 1 FAF PU23F MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "BESNU",
+                    "fixes": {
+                        "BESNU": "BESNU AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "LIVPO",
+                    "fixes": {
+                        "LIVPO": "LIVPO AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "MOLAL",
+                    "fixes": {
+                        "MOLAL": "MOLAL AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

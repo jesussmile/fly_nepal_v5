@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "ARG",
+            "lat": 36.110019433333335,
+            "lon": 90.95369443333334
+        },
+        {
+            "name": "HILLE",
+            "lat": 35.105052783333335,
+            "lon": 91.10383333333333
+        },
+        {
+            "name": "JOHRU",
+            "lat": 35.544994433333336,
+            "lon": 91.17751388333333
+        },
+        {
+            "name": "JORIG",
+            "lat": 35.876783333333336,
+            "lon": 91.06577221666667
+        },
+        {
+            "name": "NEKLY",
+            "lat": 35.86131388333333,
+            "lon": 91.17060556666667
+        },
+        {
+            "name": "RUPPS",
+            "lat": 35.73105278333333,
+            "lon": 91.13546111666666
+        },
+        {
+            "name": "SEDBY",
+            "lat": 35.72591666666667,
+            "lon": 91.17356943333333
+        },
+        {
+            "name": "VURHU",
+            "lat": 35.383330566666665,
+            "lon": 91.18102778333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 18",
+        "RNW 22",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "JORIG": "JORIG AT OR ABOVE 2200",
+                "RUPPS": "RUPPS 2000 RNW 18 TRK 197 UNTIL 2000 TURN LEFT DIRECT RUPPS HOLD AT RUPPS RIGHT TURN INBOUNDCOURSE 197 LEGTIME 1 FAF RUPPS MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ARG",
+                    "fixes": {
+                        "ARG": "ARG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "NEKLY": "NEKLY AT OR ABOVE 3000",
+                "SEDBY": "SEDBY 1800 RNW 18",
+                "VURHU": "OVERFLY VURHU AT OR ABOVE 3000 HOLD AT VURHU RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF SEDBY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "NEKLY",
+                    "fixes": {
+                        "NEKLY": "NEKLY RIGHT TURN INBOUNDCOURSE 181 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "VURHU": "VURHU AT OR ABOVE 3000",
+                "JOHRU": "JOHRU 2000 RNW 36",
+                "NEKLY": "OVERFLY NEKLY AT OR ABOVE 3000 HOLD AT NEKLY RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF JOHRU MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HILLE",
+                    "fixes": {
+                        "HILLE": "HILLE"
+                    }
+                },
+                {
+                    "name": "VURHU",
+                    "fixes": {
+                        "VURHU": "VURHU RIGHT TURN INBOUNDCOURSE 001 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

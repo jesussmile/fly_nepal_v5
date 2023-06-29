@@ -1,0 +1,198 @@
+{
+    "fixes": [
+        {
+            "name": "DI",
+            "lat": 31.912638883333333,
+            "lon": 70.88567221666666
+        },
+        {
+            "name": "DI410",
+            "lat": 31.952055566666665,
+            "lon": 70.80580556666666
+        },
+        {
+            "name": "DI411",
+            "lat": 31.980194433333335,
+            "lon": 70.74569443333333
+        },
+        {
+            "name": "DI430",
+            "lat": 31.866638883333334,
+            "lon": 70.98761111666667
+        },
+        {
+            "name": "DI431",
+            "lat": 31.83836111666667,
+            "lon": 71.04755556666667
+        },
+        {
+            "name": "DI432",
+            "lat": 31.89666666666667,
+            "lon": 71.08527778333334
+        },
+        {
+            "name": "DINB",
+            "lat": 31.908711116666666,
+            "lon": 70.88848888333334
+        },
+        {
+            "name": "DORDA",
+            "lat": 32.21666666666667,
+            "lon": 70.73333333333333
+        },
+        {
+            "name": "DOXOX",
+            "lat": 32.002777783333336,
+            "lon": 70.88583333333334
+        },
+        {
+            "name": "EN12",
+            "lat": 31.910013883333335,
+            "lon": 70.88679166666667
+        },
+        {
+            "name": "ENGEM",
+            "lat": 31.921666666666667,
+            "lon": 70.70777778333333
+        },
+        {
+            "name": "FN12",
+            "lat": 31.960547216666665,
+            "lon": 70.82093333333333
+        },
+        {
+            "name": "FN30",
+            "lat": 31.874608333333335,
+            "lon": 70.99246111666666
+        },
+        {
+            "name": "FV12",
+            "lat": 31.959758333333333,
+            "lon": 70.81229166666667
+        },
+        {
+            "name": "FV30",
+            "lat": 31.869397216666666,
+            "lon": 70.98945833333333
+        },
+        {
+            "name": "IDUKU",
+            "lat": 31.779722216666666,
+            "lon": 71.00972221666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FN12": "FN12 2200",
+                "EN12": "OVERFLY EN12 644",
+                "DINB": "OVERFLY DINB AT OR ABOVE 1000 RNW 12 TRK 130 UNTIL 1500 TURN RIGHT DIRECT DINB 2500 FAF FN12 MAP DI"
+            },
+            "transitions": [
+                {
+                    "name": "DI",
+                    "fixes": {
+                        "DINB": "DINB AT OR ABOVE 3000 TRK 295 UNTIL 7.5 FROM DINB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 2200 RNW 30",
+                "DINB": "DINB TRK 289 UNTIL 1500 TURN LEFT DIRECT DINB 2500 FAF FN30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "DI",
+                    "fixes": {
+                        "DINB": "DINB AT OR ABOVE 3000 TRK 095 UNTIL 9.0 FROM DINB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "DI411": "DI411 AT OR ABOVE 2200",
+                "DI410": "DI410 2200 SPEED 130 RNW 12 TRK 117 UNTIL 1500 TURN RIGHT DIRECT",
+                "ENGEM": "OVERFLY ENGEM 2500 SPEED 170 FAF DI410 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "DORDA",
+                    "fixes": {
+                        "DORDA": "DORDA AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "ENGEM",
+                    "fixes": {
+                        "ENGEM": "ENGEM AT OR ABOVE 3000 SPEED 170"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "DI431": "DI431 AT OR ABOVE 2200",
+                "DI430": "DI430 2200 SPEED 130 RNW 30 TRK 297 UNTIL 1500 TURN LEFT DIRECT",
+                "IDUKU": "OVERFLY IDUKU 2500 SPEED 170 FAF DI430 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "DOXOX",
+                    "fixes": {
+                        "DOXOX": "DOXOX AT OR ABOVE 6000",
+                        "DI432": "DI432 AT OR ABOVE 3000 SPEED 170"
+                    }
+                },
+                {
+                    "name": "IDUKU",
+                    "fixes": {
+                        "IDUKU": "IDUKU AT OR ABOVE 3000 SPEED 170"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR12",
+            "fixes": {
+                "FV12": "FV12 2200",
+                "DI": "DI 708 RNW 12 TRK 125 UNTIL 1500 TURN RIGHT DIRECT DI 2500 FAF FV12 MAP DI"
+            },
+            "transitions": [
+                {
+                    "name": "DI",
+                    "fixes": {
+                        "DI": "DI AT OR ABOVE 3000 TRK 290 UNTIL 7.5 FROM DI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR30",
+            "fixes": {
+                "FV30": "FV30 2200 RNW 30",
+                "DI": "OVERFLY DI TRK 294 UNTIL 1500 TURN LEFT DIRECT DI 2500 FAF FV30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "DI",
+                    "fixes": {
+                        "DI": "DI AT OR ABOVE 3000 TRK 100 UNTIL 9.0 FROM DI"
+                    }
+                }
+            ]
+        }
+    ]
+}

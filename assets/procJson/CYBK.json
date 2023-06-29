@@ -1,0 +1,190 @@
+{
+    "fixes": [
+        {
+            "name": "DENPO",
+            "lat": 64.10949166666667,
+            "lon": 96.13359443333333
+        },
+        {
+            "name": "DURIR",
+            "lat": 64.22544166666667,
+            "lon": 96.02149166666666
+        },
+        {
+            "name": "EPSIP",
+            "lat": 64.43526666666666,
+            "lon": 96.3858
+        },
+        {
+            "name": "ETKUT",
+            "lat": 64.16171388333333,
+            "lon": 95.77254443333334
+        },
+        {
+            "name": "ETKUV",
+            "lat": 64.29150833333334,
+            "lon": 96.07139721666667
+        },
+        {
+            "name": "ILIVA",
+            "lat": 64.48810833333333,
+            "lon": 96.02093888333333
+        },
+        {
+            "name": "IRGUX",
+            "lat": 64.13571666666667,
+            "lon": 95.95323888333333
+        },
+        {
+            "name": "LOPRU",
+            "lat": 64.4618,
+            "lon": 96.20354443333333
+        },
+        {
+            "name": "NABUV",
+            "lat": 64.22714166666667,
+            "lon": 96.02279166666666
+        },
+        {
+            "name": "NOVOL",
+            "lat": 64.36798888333334,
+            "lon": 96.13089166666667
+        },
+        {
+            "name": "OVBAB",
+            "lat": 64.37216111666666,
+            "lon": 96.13411388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 64.28166933333333,
+            "lon": 95.91430733333334
+        },
+        {
+            "name": "PI002",
+            "lat": 64.3526014,
+            "lon": 95.89069136666667
+        },
+        {
+            "name": "PI003",
+            "lat": 64.34658353333333,
+            "lon": 95.71420656666666
+        },
+        {
+            "name": "PI004",
+            "lat": 64.34036955,
+            "lon": 95.97726933333334
+        },
+        {
+            "name": "PI005",
+            "lat": 64.40471008333333,
+            "lon": 95.90428756666667
+        },
+        {
+            "name": "PI006",
+            "lat": 64.37524301666667,
+            "lon": 95.7402573
+        },
+        {
+            "name": "RW16",
+            "lat": 64.30425556666667,
+            "lon": 96.08183056666667
+        },
+        {
+            "name": "TERAH",
+            "lat": 64.24660278333333,
+            "lon": 96.02166388333333
+        },
+        {
+            "name": "YBK",
+            "lat": 64.32143333333333,
+            "lon": 96.10464166666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD34",
+            "fixes": {
+                "TERAH": "TERAH 1060",
+                "ETKUV": "ETKUV 101 RNW 34 TRK 034 UNTIL 1900 TURN LEFT DIRECT",
+                "YBK": "YBK 1900 HOLD AT YBK RIGHT TURN INBOUNDCOURSE 034 LEGTIME 1 FAF TERAH MAP ETKUV"
+            },
+            "transitions": [
+                {
+                    "name": "TERAH",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "LOPRU": "LOPRU AT OR ABOVE 1600",
+                "NOVOL": "NOVOL 1400 RNW 16",
+                "DURIR": "OVERFLY DURIR 1500 HOLD AT DURIR RIGHT TURN INBOUNDCOURSE 017 SPEED 230 LEGTIME 1 FAF NOVOL MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "EPSIP",
+                    "fixes": {
+                        "EPSIP": "EPSIP SPEED 210"
+                    }
+                },
+                {
+                    "name": "ILIVA",
+                    "fixes": {
+                        "ILIVA": "ILIVA SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVT16",
+            "fixes": {
+                "YBK": "YBK 1000 RNW 16 TRK 016 UNTIL 1900 TURN RIGHT DIRECT YBK 1900 HOLD AT YBK RIGHT TURN INBOUNDCOURSE 016 LEGTIME 1 FAF YBK MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "YBK",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 1800 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1800 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "IRGUX": "IRGUX AT OR ABOVE 1400",
+                "NABUV": "NABUV 1400 RNW 34",
+                "OVBAB": "OVERFLY OVBAB 1600 HOLD AT OVBAB RIGHT TURN INBOUNDCOURSE 035 SPEED 230 LEGTIME 1 FAF NABUV MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "DENPO",
+                    "fixes": {
+                        "DENPO": "DENPO SPEED 210"
+                    }
+                },
+                {
+                    "name": "ETKUT",
+                    "fixes": {
+                        "ETKUT": "ETKUT SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

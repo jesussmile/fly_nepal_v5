@@ -1,0 +1,231 @@
+{
+    "fixes": [
+        {
+            "name": "15NM",
+            "lat": 6.000333333333334,
+            "lon": 142.86224166666668
+        },
+        {
+            "name": "21NM",
+            "lat": 5.900816666666667,
+            "lon": 142.83922778333334
+        },
+        {
+            "name": "35VOR",
+            "lat": 5.997769433333334,
+            "lon": 142.86262221666667
+        },
+        {
+            "name": "3NM",
+            "lat": 5.975858333333333,
+            "lon": 142.85658888333333
+        },
+        {
+            "name": "55VOR",
+            "lat": 5.964783333333333,
+            "lon": 142.85681388333333
+        },
+        {
+            "name": "CF16",
+            "lat": 5.810233333333334,
+            "lon": 142.81833333333333
+        },
+        {
+            "name": "CS16",
+            "lat": 5.874072216666667,
+            "lon": 142.84084443333333
+        },
+        {
+            "name": "D311O",
+            "lat": 5.874761116666667,
+            "lon": 142.698525
+        },
+        {
+            "name": "D324O",
+            "lat": 5.8401499999999995,
+            "lon": 142.74359443333333
+        },
+        {
+            "name": "D334O",
+            "lat": 5.8209638833333335,
+            "lon": 142.78289721666667
+        },
+        {
+            "name": "D337O",
+            "lat": 5.816575,
+            "lon": 142.79527778333335
+        },
+        {
+            "name": "D345N",
+            "lat": 5.832838883333333,
+            "lon": 142.83358611666668
+        },
+        {
+            "name": "FF16",
+            "lat": 5.876644433333333,
+            "lon": 142.83366666666666
+        },
+        {
+            "name": "FS16",
+            "lat": 5.9070583333333335,
+            "lon": 142.84665
+        },
+        {
+            "name": "MORNB",
+            "lat": 6.362866666666666,
+            "lon": 143.25418333333334
+        },
+        {
+            "name": "MS16",
+            "lat": 6.022508333333334,
+            "lon": 142.86698056666665
+        },
+        {
+            "name": "XM401",
+            "lat": 5.886491666666666,
+            "lon": 142.67575556666668
+        },
+        {
+            "name": "YXM",
+            "lat": 6.055497216666667,
+            "lon": 142.87279166666667
+        },
+        {
+            "name": "YXMNA",
+            "lat": 5.829291666666666,
+            "lon": 142.73681666666667
+        },
+        {
+            "name": "YXMNF",
+            "lat": 5.935077783333333,
+            "lon": 142.84717221666668
+        },
+        {
+            "name": "YXMNI",
+            "lat": 5.8103194333333334,
+            "lon": 142.81825556666666
+        },
+        {
+            "name": "YXMNM",
+            "lat": 6.0248083333333335,
+            "lon": 142.86789721666668
+        },
+        {
+            "name": "YXMNT",
+            "lat": 6.122683333333334,
+            "lon": 142.89055278333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "MORO1",
+            "rnw": "34",
+            "fixes": {
+                "MORNB": "MORNB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "KOMO1",
+            "runway": "RNW 16",
+            "fixes": {
+                "YXM": "YXM",
+                "D311O": "D311O"
+            }
+        },
+        {
+            "name": "MORO1",
+            "runway": "RNW 16",
+            "fixes": {
+                "MORNB": "MORNB",
+                "YXM": "YXM AT OR ABOVE 11500",
+                "XM401": "XM401 SPEED 200",
+                "YXMNA": "YXMNA"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD16",
+            "fixes": {
+                "CS16": "CS16 AT OR ABOVE 8500",
+                "FS16": "FS16 7860",
+                "55VOR": "55VOR AT OR ABOVE 6740",
+                "35VOR": "35VOR AT OR ABOVE 6100",
+                "MS16": "MS16 5620 RNW 16",
+                "YXM": "YXM TRK 165 UNTIL 4.0 FROM YXM HDG 235 INTERCEPT RADIAL 205 TO YXM TRK 205 UNTIL 10000 TURN RIGHT DIRECT YXM SPEED 220 FAF FS16 MAP MS16"
+            },
+            "transitions": [
+                {
+                    "name": "D311O",
+                    "fixes": {
+                        "D311O": "D311O",
+                        "D324O": "D324O AT OR ABOVE 10200",
+                        "D337O": "D337O AT OR ABOVE 9400",
+                        "D345N": "D345N AT OR ABOVE 8800"
+                    }
+                },
+                {
+                    "name": "YXM1",
+                    "fixes": {
+                        "YXM": "YXM TRK 005 UNTIL 13.5 FROM YXM SPEED 230 TURN LEFT DIRECT",
+                        "D345N": "D345N AT OR ABOVE 9300"
+                    }
+                },
+                {
+                    "name": "YXM2",
+                    "fixes": {
+                        "YXM": "YXM TRK 353 UNTIL 13.5 FROM YXM SPEED 230 TURN LEFT DIRECT",
+                        "D345N": "D345N AT OR ABOVE 9300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS16",
+            "fixes": {
+                "CF16": "CF16 AT OR ABOVE 8800",
+                "FF16": "FF16 8800 RNW 16 TRK 162 UNTIL 10.0 FROM",
+                "YXM": "YXM TRK 162 UNTIL 9000 TURN RIGHT HDG 350 INTERCEPT RADIAL 020 TO YXM YXM AT OR ABOVE 10500 SPEED 220 FAF FF16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "D311O",
+                    "fixes": {
+                        "D311O": "D311O",
+                        "D324O": "D324O AT OR ABOVE 10200",
+                        "D334O": "D334O AT OR ABOVE 9400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "YXMNI": "YXMNI AT OR ABOVE 8800",
+                "21NM": "21NM AT OR ABOVE 8000",
+                "YXMNF": "YXMNF 7330",
+                "3NM": "3NM AT OR ABOVE 6530",
+                "15NM": "15NM AT OR ABOVE 6050",
+                "YXMNM": "OVERFLY YXMNM 5575 RNW 16",
+                "YXMNT": "OVERFLY YXMNT TRK 235 UNTIL 11000 TURN RIGHT DIRECT",
+                "YXM": "YXM SPEED 220 FAF YXMNF MAP YXMNM"
+            },
+            "transitions": [
+                {
+                    "name": "YXMNA",
+                    "fixes": {
+                        "YXMNA": "YXMNA SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

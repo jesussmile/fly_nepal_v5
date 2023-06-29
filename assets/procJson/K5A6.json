@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "FEDIX",
+            "lat": 33.54827778333333,
+            "lon": 89.67577778333333
+        },
+        {
+            "name": "GUCEY",
+            "lat": 33.297586116666665,
+            "lon": 89.83924166666667
+        },
+        {
+            "name": "GUNKE",
+            "lat": 33.636125,
+            "lon": 89.61822778333334
+        },
+        {
+            "name": "RASME",
+            "lat": 33.385519433333336,
+            "lon": 89.78203333333333
+        },
+        {
+            "name": "YANUV",
+            "lat": 33.50203333333333,
+            "lon": 89.70601943333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "GUCEY": "GUCEY AT OR ABOVE 2500",
+                "RASME": "RASME 2000 RNW 03 TRK 030 UNTIL 764",
+                "GUNKE": "OVERFLY GUNKE AT OR ABOVE 2400 HOLD AT GUNKE RIGHT TURN INBOUNDCOURSE 210 LEGDIST 4 FAF RASME MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "GUCEY",
+                    "fixes": {
+                        "GUCEY": "GUCEY RIGHT TURN INBOUNDCOURSE 030 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "GUNKE": "GUNKE AT OR ABOVE 2400",
+                "FEDIX": "FEDIX 2100",
+                "YANUV": "YANUV AT OR ABOVE 1080 RNW 21 TRK 210 UNTIL 764",
+                "GUCEY": "OVERFLY GUCEY AT OR ABOVE 2500 HOLD AT GUCEY RIGHT TURN INBOUNDCOURSE 030 LEGDIST 4 FAF FEDIX MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "GUNKE",
+                    "fixes": {
+                        "GUNKE": "GUNKE RIGHT TURN INBOUNDCOURSE 210 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

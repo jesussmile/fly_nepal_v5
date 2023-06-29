@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "FATYO",
+            "lat": 33.090183333333336,
+            "lon": 102.24071666666667
+        },
+        {
+            "name": "LEBDE",
+            "lat": 33.343825,
+            "lon": 102.09353888333334
+        },
+        {
+            "name": "SLOBS",
+            "lat": 33.12975,
+            "lon": 102.21781666666666
+        },
+        {
+            "name": "SWEAR",
+            "lat": 33.223630566666664,
+            "lon": 102.16340556666667
+        },
+        {
+            "name": "WOGFE",
+            "lat": 33.000086116666665,
+            "lon": 102.29276111666667
+        },
+        {
+            "name": "ZAGDO",
+            "lat": 33.25379721666667,
+            "lon": 102.14589443333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 13",
+        "RNW 20",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "WOGFE": "WOGFE AT OR ABOVE 5000",
+                "FATYO": "FATYO 4900",
+                "SLOBS": "SLOBS AT OR ABOVE 4060 RNW 02 TRK 017 UNTIL 3589",
+                "LEBDE": "OVERFLY LEBDE AT OR ABOVE 5200 HOLD AT LEBDE RIGHT TURN INBOUNDCOURSE 197 LEGDIST 5 FAF FATYO MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "WOGFE",
+                    "fixes": {
+                        "WOGFE": "WOGFE RIGHT TURN INBOUNDCOURSE 017 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "LEBDE": "LEBDE AT OR ABOVE 5200",
+                "ZAGDO": "ZAGDO 4900",
+                "SWEAR": "SWEAR AT OR ABOVE 4260 RNW 20 TRK 197 UNTIL 3598",
+                "WOGFE": "OVERFLY WOGFE AT OR ABOVE 5200 HOLD AT WOGFE RIGHT TURN INBOUNDCOURSE 017 LEGDIST 5 FAF ZAGDO MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "LEBDE",
+                    "fixes": {
+                        "LEBDE": "LEBDE RIGHT TURN INBOUNDCOURSE 197 ALT 5200 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "fixes": [
+        {
+            "name": "AXAME",
+            "lat": 36.729427783333335,
+            "lon": 121.85444166666667
+        },
+        {
+            "name": "COVAR",
+            "lat": 36.58621111666667,
+            "lon": 121.52983056666666
+        },
+        {
+            "name": "FOGON",
+            "lat": 36.62458888333333,
+            "lon": 121.65166666666667
+        },
+        {
+            "name": "FOMET",
+            "lat": 36.778894433333335,
+            "lon": 121.95052778333333
+        },
+        {
+            "name": "HAGRO",
+            "lat": 36.52960278333333,
+            "lon": 121.46909166666667
+        },
+        {
+            "name": "ICULU",
+            "lat": 36.659722216666665,
+            "lon": 121.71950278333334
+        },
+        {
+            "name": "MOVER",
+            "lat": 36.856575,
+            "lon": 121.88952778333334
+        },
+        {
+            "name": "PENNI",
+            "lat": 36.71250833333333,
+            "lon": 122.10634166666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "FOMET": "FOMET AT OR ABOVE 2700 OVERFLY FOMET AT OR ABOVE 2700 HOLD AT FOMET RIGHT TURN INBOUNDCOURSE 108 ALT 2700 LEGDIST 4 FAF AXAME MAP RNW 11",
+                "AXAME": "AXAME 1800 RNW 11 TRK 108 UNTIL 600 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MOVER",
+                    "fixes": {
+                        "MOVER": "MOVER"
+                    }
+                },
+                {
+                    "name": "PENNI",
+                    "fixes": {
+                        "PENNI": "PENNI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "COVAR": "COVAR AT OR ABOVE 4000",
+                "FOGON": "FOGON 2100",
+                "ICULU": "ICULU AT OR ABOVE 880 RNW 29 TRK 288 UNTIL 537",
+                "FOMET": "OVERFLY FOMET AT OR ABOVE 2700 HOLD AT FOMET RIGHT TURN INBOUNDCOURSE 108 ALT 2700 LEGDIST 4 FAF FOGON MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "HAGRO",
+                    "fixes": {
+                        "HAGRO": "HAGRO"
+                    }
+                }
+            ]
+        }
+    ]
+}

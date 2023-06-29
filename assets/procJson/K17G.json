@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "BUD",
+            "lat": 40.61659721666667,
+            "lon": 83.06382778333334
+        },
+        {
+            "name": "FEMLO",
+            "lat": 40.71141943333333,
+            "lon": 83.04091943333333
+        },
+        {
+            "name": "IWWEY",
+            "lat": 40.85205833333333,
+            "lon": 82.9077
+        },
+        {
+            "name": "JIDXI",
+            "lat": 40.811469433333336,
+            "lon": 82.946225
+        },
+        {
+            "name": "LIANG",
+            "lat": 40.64369166666667,
+            "lon": 83.10481666666666
+        },
+        {
+            "name": "MEEKS",
+            "lat": 40.60931111666667,
+            "lon": 83.24806111666666
+        },
+        {
+            "name": "MFD",
+            "lat": 40.86861111666666,
+            "lon": 82.59096111666666
+        },
+        {
+            "name": "SONDE",
+            "lat": 40.85526943333333,
+            "lon": 82.93216943333333
+        },
+        {
+            "name": "TUMMY",
+            "lat": 40.75468611666667,
+            "lon": 83.00001388333334
+        },
+        {
+            "name": "VIZXO",
+            "lat": 40.979058333333334,
+            "lon": 82.786775
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 09",
+        "RNW 22",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "LIANG": "LIANG AT OR ABOVE 3000",
+                "FEMLO": "FEMLO 2600",
+                "TUMMY": "TUMMY AT OR ABOVE 1580 RNW 04 TRK 043 UNTIL 1380",
+                "VIZXO": "OVERFLY VIZXO AT OR ABOVE 3000 HOLD AT VIZXO RIGHT TURN INBOUNDCOURSE 223 LEGDIST 4 FAF FEMLO MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "LIANG",
+                    "fixes": {
+                        "LIANG": "LIANG RIGHT TURN INBOUNDCOURSE 043 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MEEKS",
+                    "fixes": {
+                        "MEEKS": "MEEKS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "VIZXO": "VIZXO AT OR ABOVE 3000",
+                "IWWEY": "IWWEY 2600",
+                "JIDXI": "JIDXI AT OR ABOVE 1640 RNW 22 TRK 223 UNTIL 1380",
+                "LIANG": "OVERFLY LIANG AT OR ABOVE 3000 HOLD AT LIANG RIGHT TURN INBOUNDCOURSE 043 LEGDIST 4 FAF IWWEY MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "MEEKS",
+                    "fixes": {
+                        "MEEKS": "MEEKS",
+                        "VIZXO": "OVERFLY VIZXO AT OR ABOVE 3000 HOLD AT VIZXO RIGHT TURN INBOUNDCOURSE 223 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR22",
+            "fixes": {
+                "SONDE": "SONDE 2600 RNW 22 TRK 208 UNTIL 1410 TURN RIGHT HDG 090 INTERCEPT RADIAL 028 TO SONDE SONDE AT OR ABOVE 2600 HOLD AT SONDE RIGHT TURN INBOUNDCOURSE 208 LEGTIME 1 FAF SONDE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "BUD",
+                    "fixes": {
+                        "BUD": "BUD",
+                        "SONDE": "SONDE AT OR ABOVE 2600 HOLD AT SONDE RIGHT TURN INBOUNDCOURSE 208 ALT 2600 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MFD",
+                    "fixes": {
+                        "MFD": "MFD",
+                        "SONDE": "SONDE AT OR ABOVE 2800 HOLD AT SONDE RIGHT TURN INBOUNDCOURSE 208 ALT 2600 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

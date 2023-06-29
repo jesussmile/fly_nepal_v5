@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "CAVPU",
+            "lat": 34.57625,
+            "lon": 86.66178888333333
+        },
+        {
+            "name": "DEANY",
+            "lat": 34.486533333333334,
+            "lon": 86.75141943333334
+        },
+        {
+            "name": "FASOV",
+            "lat": 34.47181666666667,
+            "lon": 86.6384
+        },
+        {
+            "name": "FEWER",
+            "lat": 34.310955566666664,
+            "lon": 86.72149721666666
+        },
+        {
+            "name": "HISIP",
+            "lat": 34.668775,
+            "lon": 86.68248888333333
+        },
+        {
+            "name": "IPUDE",
+            "lat": 34.885469433333334,
+            "lon": 86.73138611666667
+        },
+        {
+            "name": "ITIYU",
+            "lat": 34.63268333333333,
+            "lon": 86.67445278333334
+        },
+        {
+            "name": "KEVON",
+            "lat": 34.589958333333335,
+            "lon": 86.71238611666666
+        },
+        {
+            "name": "NICGI",
+            "lat": 34.72955,
+            "lon": 86.69622778333333
+        },
+        {
+            "name": "OYOVA",
+            "lat": 34.78482221666667,
+            "lon": 86.708675
+        },
+        {
+            "name": "RQZ",
+            "lat": 34.797238883333335,
+            "lon": 86.63384721666667
+        },
+        {
+            "name": "TANNE",
+            "lat": 34.760744433333336,
+            "lon": 86.98736943333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD35",
+            "fixes": {
+                "DEANY": "DEANY AT OR ABOVE 2900 SPEED 230",
+                "KEVON": "KEVON 2300",
+                "HISIP": "HISIP 704 RNW 35",
+                "RQZ": "RQZ AT OR ABOVE 3000 HOLD AT RQZ RIGHT TURN INBOUNDCOURSE 190 SPEED 230 LEGTIME 1 FAF KEVON MAP HISIP"
+            },
+            "transitions": [
+                {
+                    "name": "RQZ",
+                    "fixes": {
+                        "RQZ": "RQZ",
+                        "DEANY": "DEANY AT OR ABOVE 2900 SPEED 230 HOLD AT DEANY RIGHT TURN INBOUNDCOURSE 015 ALT 2900 SPEED 230 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "IPUDE": "IPUDE AT OR ABOVE 3000",
+                "OYOVA": "OYOVA 2600",
+                "NICGI": "NICGI AT OR ABOVE 1520 RNW 17",
+                "FASOV": "OVERFLY FASOV AT OR ABOVE 3000 HOLD AT FASOV RIGHT TURN INBOUNDCOURSE 354 ALT 6000 SPEED 230 LEGDIST 6 FAF OYOVA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "RQZ",
+                    "fixes": {
+                        "RQZ": "RQZ",
+                        "IPUDE": "OVERFLY IPUDE AT OR ABOVE 3000 HOLD AT IPUDE LEFT TURN INBOUNDCOURSE 173 ALT 3000 SPEED 230 LEGDIST 6"
+                    }
+                },
+                {
+                    "name": "TANNE",
+                    "fixes": {
+                        "TANNE": "TANNE",
+                        "IPUDE": "OVERFLY IPUDE AT OR ABOVE 3000 HOLD AT IPUDE LEFT TURN INBOUNDCOURSE 173 ALT 3000 SPEED 230 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FASOV": "FASOV AT OR ABOVE 3000",
+                "CAVPU": "CAVPU 2500",
+                "ITIYU": "ITIYU AT OR ABOVE 1400 RNW 35",
+                "IPUDE": "OVERFLY IPUDE AT OR ABOVE 3000 HOLD AT IPUDE LEFT TURN INBOUNDCOURSE 173 ALT 6000 SPEED 230 LEGDIST 6 FAF CAVPU MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "FEWER",
+                    "fixes": {
+                        "FEWER": "FEWER"
+                    }
+                },
+                {
+                    "name": "RQZ",
+                    "fixes": {
+                        "RQZ": "RQZ",
+                        "FASOV": "OVERFLY FASOV AT OR ABOVE 3000 HOLD AT FASOV RIGHT TURN INBOUNDCOURSE 354 ALT 3000 SPEED 230 LEGDIST 6"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CIKDA",
+            "lat": 28.779588883333332,
+            "lon": 97.85584166666666
+        },
+        {
+            "name": "FORLU",
+            "lat": 28.667927783333333,
+            "lon": 97.83195278333334
+        },
+        {
+            "name": "JISUT",
+            "lat": 28.915508333333335,
+            "lon": 97.88498888333334
+        },
+        {
+            "name": "JOPGU",
+            "lat": 28.733613883333334,
+            "lon": 97.84599721666666
+        },
+        {
+            "name": "WONIX",
+            "lat": 28.981211116666667,
+            "lon": 97.89910556666666
+        },
+        {
+            "name": "ZAVEB",
+            "lat": 28.878591666666665,
+            "lon": 97.87706388333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "WONIX": "WONIX AT OR ABOVE 2000",
+                "JISUT": "JISUT 2000",
+                "ZAVEB": "ZAVEB AT OR ABOVE 1260 RNW 16 TRK 164 UNTIL 689",
+                "FORLU": "OVERFLY FORLU AT OR ABOVE 2000 HOLD AT FORLU RIGHT TURN INBOUNDCOURSE 344 LEGDIST 4 FAF JISUT MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "WONIX",
+                    "fixes": {
+                        "WONIX": "WONIX RIGHT TURN INBOUNDCOURSE 164 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "FORLU": "FORLU AT OR ABOVE 2000",
+                "JOPGU": "JOPGU 2000",
+                "CIKDA": "CIKDA AT OR ABOVE 1100 RNW 34 TRK 344 UNTIL 689",
+                "WONIX": "OVERFLY WONIX AT OR ABOVE 2000 HOLD AT WONIX RIGHT TURN INBOUNDCOURSE 164 LEGDIST 4 FAF JOPGU MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "FORLU",
+                    "fixes": {
+                        "FORLU": "FORLU RIGHT TURN INBOUNDCOURSE 344 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

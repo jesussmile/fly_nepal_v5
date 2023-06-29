@@ -1,0 +1,137 @@
+{
+    "fixes": [
+        {
+            "name": "FF179",
+            "lat": 34.126583333333336,
+            "lon": 106.87473333333334
+        },
+        {
+            "name": "HETUD",
+            "lat": 33.80973611666667,
+            "lon": 106.90766666666667
+        },
+        {
+            "name": "MA179",
+            "lat": 34.044916666666666,
+            "lon": 106.89553333333333
+        },
+        {
+            "name": "OBNAE",
+            "lat": 33.972036116666665,
+            "lon": 106.88663333333334
+        },
+        {
+            "name": "ONM",
+            "lat": 34.3389,
+            "lon": 106.82046943333333
+        },
+        {
+            "name": "WOLKI",
+            "lat": 33.68031388333333,
+            "lon": 107.02738333333333
+        },
+        {
+            "name": "ZOBTU",
+            "lat": 33.90660833333333,
+            "lon": 106.86996388333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 15",
+        "RNW 24",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA06",
+            "fixes": {
+                "ONM": "ONM AT OR ABOVE 8000 ONM AT OR ABOVE 8000 HOLD AT ONM RIGHT TURN INBOUNDCOURSE 182 LEGTIME 1 FAF FF179 MAP MA179",
+                "FF179": "FF179 8000",
+                "MA179": "MA179 6540 RNW 06 TRK 179 UNTIL 6540 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ONM",
+                    "fixes": {
+                        "ONM": "ONM RIGHT TURN INBOUNDCOURSE 182 ALT 8000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA15",
+            "fixes": {
+                "ONM": "ONM AT OR ABOVE 8000 ONM AT OR ABOVE 8000 HOLD AT ONM RIGHT TURN INBOUNDCOURSE 182 LEGTIME 1 FAF FF179 MAP MA179",
+                "FF179": "FF179 8000",
+                "MA179": "MA179 6540 RNW 15 TRK 179 UNTIL 6540 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ONM",
+                    "fixes": {
+                        "ONM": "ONM RIGHT TURN INBOUNDCOURSE 182 ALT 8000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA24",
+            "fixes": {
+                "ONM": "ONM AT OR ABOVE 8000 ONM AT OR ABOVE 8000 HOLD AT ONM RIGHT TURN INBOUNDCOURSE 182 LEGTIME 1 FAF FF179 MAP MA179",
+                "FF179": "FF179 8000",
+                "MA179": "MA179 6540 RNW 24 TRK 179 UNTIL 6540 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ONM",
+                    "fixes": {
+                        "ONM": "ONM RIGHT TURN INBOUNDCOURSE 182 ALT 8000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA33",
+            "fixes": {
+                "ONM": "ONM AT OR ABOVE 8000 ONM AT OR ABOVE 8000 HOLD AT ONM RIGHT TURN INBOUNDCOURSE 182 LEGTIME 1 FAF FF179 MAP MA179",
+                "FF179": "FF179 8000",
+                "MA179": "MA179 6540 RNW 33 TRK 179 UNTIL 6540 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ONM",
+                    "fixes": {
+                        "ONM": "ONM RIGHT TURN INBOUNDCOURSE 182 ALT 8000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "HETUD": "HETUD AT OR ABOVE 7800",
+                "ZOBTU": "ZOBTU 6900",
+                "OBNAE": "OBNAE AT OR ABOVE 5620 RNW 33 TRK 339 UNTIL 5080 TURN RIGHT DIRECT",
+                "ONM": "OVERFLY ONM AT OR ABOVE 8000 HOLD AT ONM RIGHT TURN INBOUNDCOURSE 186 LEGDIST 7 FAF ZOBTU MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "ONM",
+                    "fixes": {
+                        "ONM": "ONM",
+                        "HETUD": "OVERFLY HETUD AT OR ABOVE 9000 HOLD AT HETUD LEFT TURN INBOUNDCOURSE 009 ALT 7800 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "WOLKI",
+                    "fixes": {
+                        "WOLKI": "WOLKI"
+                    }
+                }
+            ]
+        }
+    ]
+}

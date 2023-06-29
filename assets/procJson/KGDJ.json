@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "DATGE",
+            "lat": 32.40196388333333,
+            "lon": 97.838925
+        },
+        {
+            "name": "IDOPY",
+            "lat": 32.53808611666667,
+            "lon": 97.78982778333334
+        },
+        {
+            "name": "INOXE",
+            "lat": 32.257747216666665,
+            "lon": 97.89076666666666
+        },
+        {
+            "name": "NUWMN",
+            "lat": 32.62112221666667,
+            "lon": 97.7598
+        },
+        {
+            "name": "RIKDE",
+            "lat": 32.3488,
+            "lon": 97.85805556666666
+        },
+        {
+            "name": "SUEZN",
+            "lat": 32.478913883333334,
+            "lon": 97.81118888333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "INOXE": "INOXE AT OR ABOVE 3600",
+                "RIKDE": "RIKDE 2600",
+                "DATGE": "DATGE AT OR ABOVE 1540 RNW 01 TRK 014 UNTIL 1139",
+                "NUWMN": "OVERFLY NUWMN AT OR ABOVE 3600 HOLD AT NUWMN RIGHT TURN INBOUNDCOURSE 194 ALT 3600 LEGDIST 4 FAF RIKDE MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "INOXE",
+                    "fixes": {
+                        "INOXE": "INOXE RIGHT TURN INBOUNDCOURSE 014 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "NUWMN": "NUWMN AT OR ABOVE 3600",
+                "IDOPY": "IDOPY 2600",
+                "SUEZN": "SUEZN AT OR ABOVE 1420 RNW 19 TRK 194 UNTIL 1013",
+                "INOXE": "OVERFLY INOXE AT OR ABOVE 3600 HOLD AT INOXE RIGHT TURN INBOUNDCOURSE 014 ALT 3600 LEGDIST 4 FAF IDOPY MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "NUWMN",
+                    "fixes": {
+                        "NUWMN": "NUWMN RIGHT TURN INBOUNDCOURSE 194 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

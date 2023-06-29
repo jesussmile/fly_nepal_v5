@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "GUCVE",
+            "lat": 39.378469433333336,
+            "lon": 99.30379721666667
+        },
+        {
+            "name": "OYOGO",
+            "lat": 39.43520278333333,
+            "lon": 99.30227778333334
+        },
+        {
+            "name": "UTUVE",
+            "lat": 39.169275,
+            "lon": 99.30938333333333
+        },
+        {
+            "name": "WAJHU",
+            "lat": 39.30470833333333,
+            "lon": 99.30576943333334
+        },
+        {
+            "name": "ZAVOV",
+            "lat": 39.523902783333334,
+            "lon": 99.29989443333334
+        },
+        {
+            "name": "ZOMOR",
+            "lat": 39.25797778333333,
+            "lon": 99.30701666666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ZAVOV": "ZAVOV AT OR ABOVE 4000",
+                "OYOGO": "OYOGO 3600",
+                "GUCVE": "GUCVE AT OR ABOVE 2500 RNW 18 TRK 176 UNTIL 2290",
+                "UTUVE": "OVERFLY UTUVE AT OR ABOVE 6000 HOLD AT UTUVE RIGHT TURN INBOUNDCOURSE 356 LEGDIST 5 FAF OYOGO MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ZAVOV",
+                    "fixes": {
+                        "ZAVOV": "ZAVOV RIGHT TURN INBOUNDCOURSE 176 ALT 4000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "UTUVE": "UTUVE AT OR ABOVE 4000",
+                "ZOMOR": "ZOMOR 3600",
+                "WAJHU": "WAJHU AT OR ABOVE 2680 RNW 36 TRK 356 UNTIL 2290",
+                "ZAVOV": "OVERFLY ZAVOV AT OR ABOVE 6000 HOLD AT ZAVOV RIGHT TURN INBOUNDCOURSE 176 LEGDIST 5 FAF ZOMOR MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "UTUVE",
+                    "fixes": {
+                        "UTUVE": "UTUVE RIGHT TURN INBOUNDCOURSE 356 ALT 4000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

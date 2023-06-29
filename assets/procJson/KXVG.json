@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "BABDE",
+            "lat": 46.923575,
+            "lon": 94.11727778333334
+        },
+        {
+            "name": "ELUPE",
+            "lat": 46.861238883333336,
+            "lon": 94.0364
+        },
+        {
+            "name": "FIBDO",
+            "lat": 46.80587778333334,
+            "lon": 94.12708888333333
+        },
+        {
+            "name": "GPZ",
+            "lat": 47.16344443333333,
+            "lon": 93.48893333333334
+        },
+        {
+            "name": "HUUTA",
+            "lat": 46.713075,
+            "lon": 94.31727778333334
+        },
+        {
+            "name": "POTOE",
+            "lat": 47.040475,
+            "lon": 94.26955833333334
+        },
+        {
+            "name": "SAGAE",
+            "lat": 47.10259443333333,
+            "lon": 94.35077778333333
+        },
+        {
+            "name": "WALUR",
+            "lat": 46.916527783333336,
+            "lon": 93.945525
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "SAGAE": "SAGAE AT OR ABOVE 3400",
+                "POTOE": "POTOE 3000 RNW 13 TRK 135 UNTIL 1737",
+                "ELUPE": "OVERFLY ELUPE AT OR ABOVE 3100 HOLD AT ELUPE RIGHT TURN INBOUNDCOURSE 315 LEGDIST 4 FAF POTOE MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "SAGAE",
+                    "fixes": {
+                        "SAGAE": "SAGAE RIGHT TURN INBOUNDCOURSE 135 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ELUPE": "ELUPE AT OR ABOVE 3100 OVERFLY ELUPE AT OR ABOVE 3100 HOLD AT ELUPE RIGHT TURN INBOUNDCOURSE 315 LEGDIST 4 FAF BABDE MAP RNW 31",
+                "BABDE": "BABDE 3000 RNW 31 TRK 315 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ELUPE",
+                    "fixes": {
+                        "ELUPE": "ELUPE RIGHT TURN INBOUNDCOURSE 315 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GPZ",
+                    "fixes": {
+                        "GPZ": "GPZ",
+                        "WALUR": "WALUR AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "HUUTA",
+                    "fixes": {
+                        "HUUTA": "HUUTA",
+                        "FIBDO": "FIBDO AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        }
+    ]
+}

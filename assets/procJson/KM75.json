@@ -1,0 +1,94 @@
+{
+    "fixes": [
+        {
+            "name": "AKEKE",
+            "lat": 48.36905,
+            "lon": 107.58516388333334
+        },
+        {
+            "name": "BOWDN",
+            "lat": 48.313233333333336,
+            "lon": 107.48614443333334
+        },
+        {
+            "name": "BUMDE",
+            "lat": 48.36558888333333,
+            "lon": 108.07818611666667
+        },
+        {
+            "name": "CAGAT",
+            "lat": 48.39781943333333,
+            "lon": 108.28265278333333
+        },
+        {
+            "name": "CUGIR",
+            "lat": 48.366388883333336,
+            "lon": 107.98715833333333
+        },
+        {
+            "name": "DOMRE",
+            "lat": 48.36791388333334,
+            "lon": 107.78396943333334
+        },
+        {
+            "name": "INATE",
+            "lat": 48.36823056666667,
+            "lon": 107.73388333333334
+        },
+        {
+            "name": "OCERA",
+            "lat": 48.367358333333335,
+            "lon": 107.86401666666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "CAGAT": "CAGAT AT OR ABOVE 6500",
+                "BUMDE": "BUMDE 4200",
+                "CUGIR": "CUGIR AT OR ABOVE 3040 RNW 08 TRK 077 UNTIL 2654",
+                "BOWDN": "OVERFLY BOWDN AT OR ABOVE 6500 HOLD AT BOWDN RIGHT TURN INBOUNDCOURSE 268 ALT 6500 LEGDIST 7 FAF BUMDE MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "CAGAT",
+                    "fixes": {
+                        "CAGAT": "CAGAT RIGHT TURN INBOUNDCOURSE 091 ALT 6500 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "AKEKE": "AKEKE AT OR ABOVE 5500",
+                "INATE": "INATE AT OR ABOVE 4100",
+                "DOMRE": "DOMRE 3900",
+                "OCERA": "OCERA AT OR ABOVE 2880 RNW 26 TRK 257 UNTIL 2700",
+                "CAGAT": "OVERFLY CAGAT AT OR ABOVE 6500 HOLD AT CAGAT RIGHT TURN INBOUNDCOURSE 091 ALT 6500 LEGDIST 7 FAF DOMRE MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BOWDN",
+                    "fixes": {
+                        "BOWDN": "BOWDN"
+                    }
+                },
+                {
+                    "name": "CAGAT",
+                    "fixes": {
+                        "CAGAT": "CAGAT",
+                        "AKEKE": "OVERFLY AKEKE AT OR ABOVE 5500 HOLD AT AKEKE RIGHT TURN INBOUNDCOURSE 258 ALT 5500 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

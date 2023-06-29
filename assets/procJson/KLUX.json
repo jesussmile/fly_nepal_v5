@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "AMFAB",
+            "lat": 34.48241111666667,
+            "lon": 82.04080833333333
+        },
+        {
+            "name": "EECEE",
+            "lat": 34.444777783333336,
+            "lon": 81.64963056666667
+        },
+        {
+            "name": "EGADE",
+            "lat": 34.532016666666664,
+            "lon": 81.85195833333333
+        },
+        {
+            "name": "JOEEM",
+            "lat": 34.57219166666667,
+            "lon": 81.69801111666666
+        },
+        {
+            "name": "REINR",
+            "lat": 34.4418,
+            "lon": 82.194425
+        },
+        {
+            "name": "SPIIN",
+            "lat": 34.56899443333333,
+            "lon": 82.24363611666666
+        },
+        {
+            "name": "SRCLE",
+            "lat": 34.31458333333333,
+            "lon": 82.14536388333333
+        },
+        {
+            "name": "TEEAR",
+            "lat": 34.69958333333334,
+            "lon": 81.74653611666666
+        },
+        {
+            "name": "WIBOM",
+            "lat": 34.49784721666666,
+            "lon": 81.98218611666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "REINR": "REINR AT OR ABOVE 3000",
+                "AMFAB": "AMFAB 2200",
+                "WIBOM": "WIBOM AT OR ABOVE 1220 RNW 08 TRK 079 UNTIL 948",
+                "JOEEM": "OVERFLY JOEEM AT OR ABOVE 3000 HOLD AT JOEEM RIGHT TURN INBOUNDCOURSE 260 LEGDIST 4 FAF AMFAB MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "REINR",
+                    "fixes": {
+                        "REINR": "REINR RIGHT TURN INBOUNDCOURSE 079 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SPIIN",
+                    "fixes": {
+                        "SPIIN": "SPIIN"
+                    }
+                },
+                {
+                    "name": "SRCLE",
+                    "fixes": {
+                        "SRCLE": "SRCLE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "JOEEM": "JOEEM AT OR ABOVE 3000",
+                "EGADE": "EGADE 2200 RNW 26 TRK 259 UNTIL 1098",
+                "REINR": "OVERFLY REINR AT OR ABOVE 3000 HOLD AT REINR RIGHT TURN INBOUNDCOURSE 079 LEGDIST 4 FAF EGADE MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "EECEE",
+                    "fixes": {
+                        "EECEE": "EECEE"
+                    }
+                },
+                {
+                    "name": "JOEEM",
+                    "fixes": {
+                        "JOEEM": "JOEEM RIGHT TURN INBOUNDCOURSE 260 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TEEAR",
+                    "fixes": {
+                        "TEEAR": "TEEAR"
+                    }
+                }
+            ]
+        }
+    ]
+}

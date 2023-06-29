@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "CD16Z",
+            "lat": 3.1452,
+            "lon": 116.11408611666667
+        },
+        {
+            "name": "FD16Z",
+            "lat": 3.210511116666667,
+            "lon": 116.13519443333334
+        },
+        {
+            "name": "MD16Z",
+            "lat": 3.2678555666666664,
+            "lon": 116.15373056666667
+        },
+        {
+            "name": "OK401",
+            "lat": 3.14725,
+            "lon": 116.10630556666666
+        },
+        {
+            "name": "OK402",
+            "lat": 3.2098611166666666,
+            "lon": 116.13072221666667
+        },
+        {
+            "name": "OK403",
+            "lat": 3.267305566666667,
+            "lon": 116.15313888333333
+        },
+        {
+            "name": "TATOL",
+            "lat": 3.07925,
+            "lon": 116.09233333333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ16",
+            "fixes": {
+                "CD16Z": "CD16Z AT OR ABOVE 2200",
+                "FD16Z": "FD16Z 1600",
+                "MD16Z": "MD16Z 458 RNW 16 TRK 161 UNTIL 520 TURN RIGHT TRK 011 INTERCEPT RADIAL 341 TO",
+                "TATOL": "TATOL TATOL AT OR ABOVE 3500 SPEED 210 HOLD AT TATOL LEFT TURN INBOUNDCOURSE 161 ALT 3500 LEGTIME 1 FAF FD16Z MAP MD16Z"
+            },
+            "transitions": [
+                {
+                    "name": "TATOL",
+                    "fixes": {
+                        "TATOL": "TATOL AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "OK401": "OK401 AT OR ABOVE 2200",
+                "OK402": "OK402 1600",
+                "OK403": "OVERFLY OK403 461 RNW 16 TURN RIGHT DIRECT",
+                "TATOL": "TATOL AT OR ABOVE 3500 SPEED 210 HOLD AT TATOL LEFT TURN INBOUNDCOURSE 161 ALT 3500 LEGTIME 1 FAF OK402 MAP OK403"
+            },
+            "transitions": [
+                {
+                    "name": "TATOL",
+                    "fixes": {
+                        "TATOL": "TATOL AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

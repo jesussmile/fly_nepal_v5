@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "AMABE",
+            "lat": 42.202275,
+            "lon": 94.98708611666666
+        },
+        {
+            "name": "COHGI",
+            "lat": 41.8887,
+            "lon": 94.58994443333333
+        },
+        {
+            "name": "DOXNO",
+            "lat": 41.973733333333335,
+            "lon": 94.69709721666666
+        },
+        {
+            "name": "FOFEP",
+            "lat": 42.117494433333334,
+            "lon": 94.87916943333333
+        },
+        {
+            "name": "YUGVU",
+            "lat": 42.01640833333333,
+            "lon": 94.75102778333333
+        },
+        {
+            "name": "ZIDRI",
+            "lat": 42.07609721666667,
+            "lon": 94.82662221666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 13",
+        "RNW 21",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "AMABE": "AMABE AT OR ABOVE 3000",
+                "FOFEP": "FOFEP 3000",
+                "ZIDRI": "ZIDRI AT OR ABOVE 1900 RNW 13 TRK 135 UNTIL 1453",
+                "COHGI": "OVERFLY COHGI AT OR ABOVE 3000 HOLD AT COHGI LEFT TURN INBOUNDCOURSE 315 LEGDIST 4 FAF FOFEP MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "AMABE",
+                    "fixes": {
+                        "AMABE": "AMABE RIGHT TURN INBOUNDCOURSE 135 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "COHGI": "COHGI AT OR ABOVE 3000",
+                "DOXNO": "DOXNO 3000",
+                "YUGVU": "YUGVU AT OR ABOVE 1860 RNW 31 TRK 315 UNTIL 1453",
+                "AMABE": "OVERFLY AMABE AT OR ABOVE 3000 HOLD AT AMABE RIGHT TURN INBOUNDCOURSE 135 LEGDIST 4 FAF DOXNO MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "COHGI",
+                    "fixes": {
+                        "COHGI": "COHGI LEFT TURN INBOUNDCOURSE 315 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

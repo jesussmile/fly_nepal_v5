@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "CARNU",
+            "lat": 25.138369433333335,
+            "lon": 81.32558888333334
+        },
+        {
+            "name": "JANKA",
+            "lat": 24.645305566666668,
+            "lon": 81.26235278333333
+        },
+        {
+            "name": "LOGEY",
+            "lat": 24.7969,
+            "lon": 80.86598888333333
+        },
+        {
+            "name": "MTHNB",
+            "lat": 24.711883333333333,
+            "lon": 81.09531388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 24.692879633333334,
+            "lon": 81.15602011666667
+        },
+        {
+            "name": "PI002",
+            "lat": 24.724279583333335,
+            "lon": 81.22693431666667
+        },
+        {
+            "name": "PI003",
+            "lat": 24.65752235,
+            "lon": 81.26871108333333
+        },
+        {
+            "name": "SEGLE",
+            "lat": 24.686458333333334,
+            "lon": 81.15513056666667
+        },
+        {
+            "name": "TWNNS",
+            "lat": 24.816275,
+            "lon": 80.55843056666667
+        },
+        {
+            "name": "WATUR",
+            "lat": 24.75794721666667,
+            "lon": 80.96820278333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA07",
+            "fixes": {
+                "MTHNB": "MTHNB 1000 RNW 07 TRK 075 UNTIL 1000 TURN LEFT DIRECT MTHNB AT OR ABOVE 2100 HOLD AT MTHNB LEFT TURN INBOUNDCOURSE 075 LEGTIME 1 FAF MTHNB MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "MTH",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "JANKA": "JANKA AT OR ABOVE 3100",
+                "SEGLE": "SEGLE 1900 RNW 07 TRK 071 UNTIL 389",
+                "LOGEY": "OVERFLY LOGEY AT OR ABOVE 2000 HOLD AT LOGEY RIGHT TURN INBOUNDCOURSE 251 LEGDIST 4 FAF SEGLE MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "CARNU",
+                    "fixes": {
+                        "CARNU": "CARNU",
+                        "JANKA": "OVERFLY JANKA AT OR ABOVE 3100 HOLD AT JANKA RIGHT TURN INBOUNDCOURSE 071 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "LOGEY": "LOGEY AT OR ABOVE 2000",
+                "WATUR": "WATUR 1500 RNW 25",
+                "JANKA": "OVERFLY JANKA AT OR ABOVE 3100 HOLD AT JANKA RIGHT TURN INBOUNDCOURSE 071 LEGDIST 4 FAF WATUR MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "TWNNS",
+                    "fixes": {
+                        "TWNNS": "TWNNS"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+{
+    "fixes": [
+        {
+            "name": "ADBAW",
+            "lat": 39.596569433333336,
+            "lon": 123.43288888333333
+        },
+        {
+            "name": "ENI",
+            "lat": 39.053216666666664,
+            "lon": 123.27432778333333
+        },
+        {
+            "name": "FLUEN",
+            "lat": 39.546644433333334,
+            "lon": 123.561875
+        },
+        {
+            "name": "GRAIE",
+            "lat": 39.46323888333333,
+            "lon": 123.37360556666667
+        },
+        {
+            "name": "HERMT",
+            "lat": 39.23607221666666,
+            "lon": 123.34928611666666
+        },
+        {
+            "name": "IGAYO",
+            "lat": 39.246975,
+            "lon": 123.17824166666666
+        },
+        {
+            "name": "JENBU",
+            "lat": 39.36767221666667,
+            "lon": 123.36338333333333
+        },
+        {
+            "name": "LEFOR",
+            "lat": 39.549366666666664,
+            "lon": 123.41189721666667
+        },
+        {
+            "name": "NEAPO",
+            "lat": 39.660438883333335,
+            "lon": 123.46135
+        },
+        {
+            "name": "NIKBY",
+            "lat": 39.22491943333333,
+            "lon": 123.52027778333333
+        },
+        {
+            "name": "OOLEY",
+            "lat": 39.56791943333333,
+            "lon": 123.45571943333333
+        },
+        {
+            "name": "TREAS",
+            "lat": 39.352016666666664,
+            "lon": 123.36171388333334
+        },
+        {
+            "name": "VICOR",
+            "lat": 39.413952783333336,
+            "lon": 123.36828333333334
+        },
+        {
+            "name": "XUGME",
+            "lat": 39.70316388333333,
+            "lon": 123.300475
+        },
+        {
+            "name": "ZONOJ",
+            "lat": 39.619566666666664,
+            "lon": 123.61428333333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "ENI1",
+            "rnw": "16",
+            "fixes": {
+                "VICOR": "VICOR",
+                "ENI": "ENI AT OR ABOVE 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "FLUEN2",
+            "rnw": "34",
+            "fixes": {
+                "OOLEY": "OOLEY",
+                "FLUEN": "FLUEN AT OR ABOVE 6700"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "NEAPO": "NEAPO AT OR ABOVE 6000",
+                "ADBAW": "ADBAW AT OR ABOVE 4800",
+                "LEFOR": "LEFOR 4000",
+                "GRAIE": "OVERFLY GRAIE 2260 RNW 16 TRK 145 UNTIL 2466",
+                "HERMT": "OVERFLY HERMT AT OR ABOVE 6000 HOLD AT HERMT RIGHT TURN INBOUNDCOURSE 339 LEGDIST 5 FAF LEFOR MAP GRAIE"
+            },
+            "transitions": [
+                {
+                    "name": "NEAPO",
+                    "fixes": {
+                        "NEAPO": "NEAPO RIGHT TURN INBOUNDCOURSE 145 ALT 6000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "XUGME",
+                    "fixes": {
+                        "XUGME": "XUGME"
+                    }
+                },
+                {
+                    "name": "ZONOJ",
+                    "fixes": {
+                        "ZONOJ": "ZONOJ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "HERMT": "HERMT AT OR ABOVE 6000",
+                "TREAS": "TREAS 3900",
+                "JENBU": "JENBU AT OR ABOVE 3600 RNW 34 TRK 339 UNTIL 2466",
+                "NEAPO": "OVERFLY NEAPO AT OR ABOVE 6100 HOLD AT NEAPO RIGHT TURN INBOUNDCOURSE 145 ALT 6100 LEGDIST 5 FAF TREAS MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "HERMT",
+                    "fixes": {
+                        "HERMT": "HERMT RIGHT TURN INBOUNDCOURSE 339 ALT 6000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "IGAYO",
+                    "fixes": {
+                        "IGAYO": "IGAYO"
+                    }
+                },
+                {
+                    "name": "NIKBY",
+                    "fixes": {
+                        "NIKBY": "NIKBY"
+                    }
+                }
+            ]
+        }
+    ]
+}

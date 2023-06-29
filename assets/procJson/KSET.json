@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "BYRNS",
+            "lat": 39.00665,
+            "lon": 90.37893611666667
+        },
+        {
+            "name": "COLOS",
+            "lat": 38.966875,
+            "lon": 90.43031111666667
+        },
+        {
+            "name": "FASHE",
+            "lat": 39.13366943333333,
+            "lon": 90.26071388333334
+        },
+        {
+            "name": "LEHMN",
+            "lat": 39.02752221666667,
+            "lon": 90.42937221666666
+        },
+        {
+            "name": "LUNGY",
+            "lat": 39.12868056666667,
+            "lon": 90.42780833333333
+        },
+        {
+            "name": "NUPDE",
+            "lat": 38.958494433333335,
+            "lon": 90.41311666666667
+        },
+        {
+            "name": "PI001",
+            "lat": 39.05766381666667,
+            "lon": 90.34251613333333
+        },
+        {
+            "name": "PI002",
+            "lat": 39.12655146666667,
+            "lon": 90.36798038333333
+        },
+        {
+            "name": "PI003",
+            "lat": 39.15237366666667,
+            "lon": 90.2747392
+        },
+        {
+            "name": "STL",
+            "lat": 38.860722216666666,
+            "lon": 90.48235
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "LUNGY": "LUNGY AT OR ABOVE 2300",
+                "LEHMN": "LEHMN 2300",
+                "COLOS": "COLOS AT OR ABOVE 1260 RNW 18 TRK 180 UNTIL 837 TURN LEFT DIRECT",
+                "FASHE": "OVERFLY FASHE AT OR ABOVE 2700 HOLD AT FASHE RIGHT TURN INBOUNDCOURSE 210 LEGDIST 5 FAF LEHMN MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "FASHE",
+                    "fixes": {
+                        "FASHE": "FASHE"
+                    }
+                },
+                {
+                    "name": "LUNGY",
+                    "fixes": {
+                        "LUNGY": "LUNGY RIGHT TURN INBOUNDCOURSE 180 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR18",
+            "fixes": {
+                "BYRNS": "BYRNS 2300",
+                "NUPDE": "NUPDE AT OR ABOVE 1160 RNW 18 TRK 208 UNTIL 1000 TURN LEFT HDG 000 INTERCEPT RADIAL 031 TO",
+                "FASHE": "FASHE FASHE AT OR ABOVE 2700 HOLD AT FASHE RIGHT TURN INBOUNDCOURSE 211 LEGTIME 1 FAF BYRNS MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "STL",
+                    "fixes": {
+                        "STL": "STL",
+                        "BYRNS": "BYRNS AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

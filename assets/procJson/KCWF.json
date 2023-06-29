@@ -1,0 +1,188 @@
+{
+    "fixes": [
+        {
+            "name": "CEVKU",
+            "lat": 30.399538883333335,
+            "lon": 93.24748888333333
+        },
+        {
+            "name": "CIPDA",
+            "lat": 29.9056,
+            "lon": 93.17335
+        },
+        {
+            "name": "DAYAG",
+            "lat": 30.310452783333332,
+            "lon": 93.19828056666667
+        },
+        {
+            "name": "DUREC",
+            "lat": 30.355355566666667,
+            "lon": 93.36198888333334
+        },
+        {
+            "name": "EPOYO",
+            "lat": 30.449194433333332,
+            "lon": 93.13604166666667
+        },
+        {
+            "name": "FERDU",
+            "lat": 30.03075,
+            "lon": 93.04434166666667
+        },
+        {
+            "name": "GOGNE",
+            "lat": 30.121208333333332,
+            "lon": 93.09399166666667
+        },
+        {
+            "name": "GUSTI",
+            "lat": 29.970927783333334,
+            "lon": 92.90980278333333
+        },
+        {
+            "name": "HATHA",
+            "lat": 30.311641666666667,
+            "lon": 92.70261943333334
+        },
+        {
+            "name": "LCH",
+            "lat": 30.14151388333333,
+            "lon": 93.10556943333333
+        },
+        {
+            "name": "MOSSY",
+            "lat": 30.306644433333332,
+            "lon": 93.19617778333334
+        },
+        {
+            "name": "PI001",
+            "lat": 30.35907075,
+            "lon": 93.22581318333333
+        },
+        {
+            "name": "PI002",
+            "lat": 30.426830133333333,
+            "lon": 93.19875413333334
+        },
+        {
+            "name": "PI003",
+            "lat": 30.456416133333335,
+            "lon": 93.28093475
+        },
+        {
+            "name": "PLRMO",
+            "lat": 30.2906,
+            "lon": 92.75268888333333
+        },
+        {
+            "name": "ROCCE",
+            "lat": 30.449022216666666,
+            "lon": 93.27488056666667
+        },
+        {
+            "name": "STRUT",
+            "lat": 30.155491666666666,
+            "lon": 93.49731666666666
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS15",
+            "fixes": {
+                "ROCCE": "ROCCE AT OR ABOVE 2000",
+                "MOSSY": "MOSSY 1820 RNW 15 TRK 154 UNTIL 420",
+                "LCH": "LCH AT OR ABOVE 2000 HOLD AT LCH RIGHT TURN INBOUNDCOURSE 328 ALT 2000 LEGTIME 1 FAF MOSSY MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "LCH",
+                    "fixes": {
+                        "LCH": "LCH",
+                        "MOSSY": "MOSSY AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "PLRMO",
+                    "fixes": {
+                        "PLRMO": "PLRMO"
+                    }
+                },
+                {
+                    "name": "STRUT",
+                    "fixes": {
+                        "STRUT": "STRUT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "CEVKU": "CEVKU AT OR ABOVE 2000",
+                "DAYAG": "DAYAG 1900 RNW 15 TRK 154 UNTIL 216",
+                "FERDU": "OVERFLY FERDU AT OR ABOVE 2000 HOLD AT FERDU RIGHT TURN INBOUNDCOURSE 334 LEGDIST 4 FAF DAYAG MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "HATHA",
+                    "fixes": {
+                        "HATHA": "HATHA",
+                        "EPOYO": "EPOYO AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "LCH",
+                    "fixes": {
+                        "LCH": "LCH",
+                        "CEVKU": "OVERFLY CEVKU AT OR ABOVE 2000 HOLD AT CEVKU RIGHT TURN INBOUNDCOURSE 154 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "STRUT",
+                    "fixes": {
+                        "STRUT": "STRUT",
+                        "DUREC": "DUREC AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "FERDU": "FERDU AT OR ABOVE 2000",
+                "GOGNE": "GOGNE 1700 RNW 33 TRK 334 UNTIL 217",
+                "CEVKU": "OVERFLY CEVKU AT OR ABOVE 2000 HOLD AT CEVKU RIGHT TURN INBOUNDCOURSE 154 LEGDIST 4 FAF GOGNE MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "CIPDA",
+                    "fixes": {
+                        "CIPDA": "CIPDA"
+                    }
+                },
+                {
+                    "name": "FERDU",
+                    "fixes": {
+                        "FERDU": "FERDU RIGHT TURN INBOUNDCOURSE 334 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GUSTI",
+                    "fixes": {
+                        "GUSTI": "GUSTI"
+                    }
+                }
+            ]
+        }
+    ]
+}

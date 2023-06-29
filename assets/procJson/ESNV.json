@@ -1,0 +1,217 @@
+{
+    "fixes": [
+        {
+            "name": "CI28",
+            "lat": 64.54273056666666,
+            "lon": 17.191197216666666
+        },
+        {
+            "name": "D097L",
+            "lat": 64.53497778333333,
+            "lon": 17.26625556666667
+        },
+        {
+            "name": "DINVO",
+            "lat": 64.59030556666667,
+            "lon": 16.721666666666668
+        },
+        {
+            "name": "DK",
+            "lat": 64.59116666666667,
+            "lon": 16.722027783333335
+        },
+        {
+            "name": "FI28",
+            "lat": 64.54914443333334,
+            "lon": 17.12877221666667
+        },
+        {
+            "name": "FQ10",
+            "lat": 64.59605556666666,
+            "lon": 16.673463883333334
+        },
+        {
+            "name": "MORBY",
+            "lat": 64.55902778333333,
+            "lon": 17.031666666666666
+        },
+        {
+            "name": "NV",
+            "lat": 64.56013888333334,
+            "lon": 17.03230556666667
+        },
+        {
+            "name": "NV500",
+            "lat": 64.61044443333333,
+            "lon": 17.361777783333334
+        },
+        {
+            "name": "NV550",
+            "lat": 64.54911111666667,
+            "lon": 17.128666666666668
+        },
+        {
+            "name": "NV551",
+            "lat": 64.52969443333333,
+            "lon": 17.316305566666667
+        },
+        {
+            "name": "NV552",
+            "lat": 64.51991666666666,
+            "lon": 17.41
+        },
+        {
+            "name": "NV553",
+            "lat": 64.44897221666666,
+            "lon": 17.271083333333333
+        },
+        {
+            "name": "NV700",
+            "lat": 64.53694443333333,
+            "lon": 16.398611116666668
+        },
+        {
+            "name": "NV850",
+            "lat": 64.59941666666667,
+            "lon": 16.63
+        },
+        {
+            "name": "NV851",
+            "lat": 64.61794443333334,
+            "lon": 16.441416666666665
+        },
+        {
+            "name": "NV852",
+            "lat": 64.63625,
+            "lon": 16.252583333333334
+        },
+        {
+            "name": "NV853",
+            "lat": 64.69894443333334,
+            "lon": 16.484472216666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS28",
+            "fixes": {
+                "CI28": "CI28 3600",
+                "FI28": "FI28 3600 RNW 28 TRK 277 UNTIL 2500 TURN RIGHT DIRECT",
+                "NV": "NV 3600 FAF FI28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "D097L",
+                    "fixes": {
+                        "D097L": "D097L AT OR ABOVE 3600 SPEED 200"
+                    }
+                },
+                {
+                    "name": "NV",
+                    "fixes": {
+                        "NV": "NV RIGHT TURN INBOUNDCOURSE 277 ALT 3600 SPEED 200 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB28",
+            "fixes": {
+                "NV": "NV 2780 RNW 28 TRK 277 UNTIL 2500 TURN RIGHT DIRECT NV 3600 FAF NV MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "NV1",
+                    "fixes": {
+                        "NV": "NV RIGHT TURN INBOUNDCOURSE 277 ALT 3600 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "NV2",
+                    "fixes": {
+                        "NV": "NV RIGHT TURN INBOUNDCOURSE 277 ALT 3600 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD10",
+            "fixes": {
+                "FQ10": "FQ10 2400 RNW 10 TRK 098 UNTIL 2500 TURN RIGHT DIRECT",
+                "DK": "DK 3300 FAF FQ10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "DK",
+                    "fixes": {
+                        "DK": "DK RIGHT TURN INBOUNDCOURSE 098 ALT 2800 SPEED 200 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "NV851": "NV851 AT OR ABOVE 3100",
+                "NV850": "NV850 2780 RNW 10",
+                "NV550": "OVERFLY NV550 TURN RIGHT DIRECT",
+                "DINVO": "OVERFLY DINVO 3500 HOLD AT DINVO RIGHT TURN INBOUNDCOURSE 096 ALT 3500 LEGTIME 1 FAF NV850 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "NV700",
+                    "fixes": {
+                        "NV700": "NV700 AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "NV852",
+                    "fixes": {
+                        "NV852": "NV852 AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "NV853",
+                    "fixes": {
+                        "NV853": "NV853 AT OR ABOVE 3900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "NV551": "NV551 AT OR ABOVE 3600",
+                "NV550": "NV550 3600 RNW 28",
+                "NV850": "OVERFLY NV850 TURN RIGHT DIRECT",
+                "MORBY": "OVERFLY MORBY 3600 HOLD AT MORBY RIGHT TURN INBOUNDCOURSE 276 ALT 3600 SPEED 210 LEGTIME 1 FAF NV550 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "NV500",
+                    "fixes": {
+                        "NV500": "NV500 AT OR ABOVE 3900"
+                    }
+                },
+                {
+                    "name": "NV552",
+                    "fixes": {
+                        "NV552": "NV552 AT OR ABOVE 3600 SPEED 230"
+                    }
+                },
+                {
+                    "name": "NV553",
+                    "fixes": {
+                        "NV553": "NV553 AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        }
+    ]
+}

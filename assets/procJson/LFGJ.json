@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "CI05",
+            "lat": 46.92762221666667,
+            "lon": 5.200844433333334
+        },
+        {
+            "name": "CN05",
+            "lat": 46.960019433333336,
+            "lon": 5.265794433333333
+        },
+        {
+            "name": "DONB",
+            "lat": 46.97961111666667,
+            "lon": 5.305166666666667
+        },
+        {
+            "name": "FI05",
+            "lat": 46.96386111666666,
+            "lon": 5.274611116666667
+        },
+        {
+            "name": "FJ05Y",
+            "lat": 46.9625,
+            "lon": 5.271833333333333
+        },
+        {
+            "name": "FJ05Z",
+            "lat": 46.96386111666666,
+            "lon": 5.274638883333333
+        },
+        {
+            "name": "GJ401",
+            "lat": 46.965305566666665,
+            "lon": 5.102972216666666
+        },
+        {
+            "name": "GJ402",
+            "lat": 46.84619443333333,
+            "lon": 5.227666666666667
+        },
+        {
+            "name": "GJ501",
+            "lat": 47.06027778333333,
+            "lon": 5.470805566666667
+        },
+        {
+            "name": "GJ502",
+            "lat": 46.92475,
+            "lon": 5.528777783333333
+        },
+        {
+            "name": "IGJ05",
+            "lat": 46.90847221666667,
+            "lon": 5.162555566666667
+        },
+        {
+            "name": "MN05",
+            "lat": 47.03097221666667,
+            "lon": 5.40865
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS05",
+            "fixes": {
+                "CI05": "CI05 AT OR ABOVE 3000",
+                "FI05": "FI05 3000 RNW 05 TRK 052 UNTIL 1200 TURN RIGHT DIRECT",
+                "DONB": "DONB 3000 SPEED 210 HOLD AT DONB RIGHT TURN INBOUNDCOURSE 052 LEGTIME 1 FAF FI05 MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB05",
+            "fixes": {
+                "CN05": "CN05 AT OR ABOVE 3000",
+                "DONB": "DONB 2500 DONB 3000 SPEED 205 HOLD AT DONB RIGHT TURN INBOUNDCOURSE 052 SPEED 220 LEGTIME 1 FAF DONB MAP MN05",
+                "MN05": "MN05 787 RNW 05 TRK 052 UNTIL 1400 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DO",
+                    "fixes": {
+                        "DONB": "DONB RIGHT TURN INBOUNDCOURSE 052 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY05",
+            "fixes": {
+                "IGJ05": "IGJ05 AT OR ABOVE 3000 SPEED 220",
+                "FJ05Y": "FJ05Y 3000 RNW 05 TURN RIGHT DIRECT",
+                "GJ502": "GJ502 SPEED 210",
+                "GJ402": "GJ402 AT OR ABOVE 3000 SPEED 220 FAF FJ05Y MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "GJ401",
+                    "fixes": {
+                        "GJ401": "GJ401 AT OR ABOVE 4000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "GJ402",
+                    "fixes": {
+                        "GJ402": "GJ402 AT OR ABOVE 4000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ05",
+            "fixes": {
+                "IGJ05": "IGJ05 AT OR ABOVE 3000 SPEED 220",
+                "FJ05Z": "FJ05Z 3000 RNW 05",
+                "GJ501": "OVERFLY GJ501 TURN RIGHT DIRECT",
+                "GJ502": "GJ502 SPEED 210",
+                "GJ402": "GJ402 AT OR ABOVE 3000 SPEED 220 FAF FJ05Z MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "GJ401",
+                    "fixes": {
+                        "GJ401": "GJ401 AT OR ABOVE 4000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "GJ402",
+                    "fixes": {
+                        "GJ402": "GJ402 AT OR ABOVE 4000 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

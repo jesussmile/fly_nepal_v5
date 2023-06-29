@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "ATHEN",
+            "lat": 34.462888883333335,
+            "lon": 86.949875
+        },
+        {
+            "name": "ATUYO",
+            "lat": 34.744486116666664,
+            "lon": 86.94322221666667
+        },
+        {
+            "name": "BEKPE",
+            "lat": 34.59892778333333,
+            "lon": 86.94666666666667
+        },
+        {
+            "name": "ETEVY",
+            "lat": 34.861322216666665,
+            "lon": 86.94044721666667
+        },
+        {
+            "name": "JUVLO",
+            "lat": 34.501413883333335,
+            "lon": 87.08989166666667
+        },
+        {
+            "name": "RQZ",
+            "lat": 34.797238883333335,
+            "lon": 86.63384721666667
+        },
+        {
+            "name": "SICJE",
+            "lat": 34.56354721666666,
+            "lon": 86.94750278333333
+        },
+        {
+            "name": "ZADVI",
+            "lat": 34.692483333333335,
+            "lon": 86.94445278333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "ETEVY": "ETEVY AT OR ABOVE 3000",
+                "ATUYO": "ATUYO 2200 RNW 18 TRK 185 UNTIL 1700",
+                "JUVLO": "JUVLO AT OR ABOVE 3000 HOLD AT JUVLO RIGHT TURN INBOUNDCOURSE 230 LEGTIME 1 FAF ATUYO MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "RQZ",
+                    "fixes": {
+                        "RQZ": "RQZ",
+                        "ETEVY": "ETEVY AT OR ABOVE 3000 HOLD AT ETEVY RIGHT TURN INBOUNDCOURSE 185 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ETEVY": "ETEVY AT OR ABOVE 3000",
+                "ATUYO": "ATUYO 2200",
+                "ZADVI": "ZADVI AT OR ABOVE 1180 RNW 18 TRK 185 UNTIL 792",
+                "ATHEN": "OVERFLY ATHEN AT OR ABOVE 3000 HOLD AT ATHEN LEFT TURN INBOUNDCOURSE 005 LEGDIST 4 FAF ATUYO MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ETEVY",
+                    "fixes": {
+                        "ETEVY": "ETEVY RIGHT TURN INBOUNDCOURSE 185 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ATHEN": "ATHEN AT OR ABOVE 2900",
+                "SICJE": "SICJE 2200",
+                "BEKPE": "BEKPE AT OR ABOVE 1500 RNW 36 TRK 005 UNTIL 900",
+                "ETEVY": "OVERFLY ETEVY AT OR ABOVE 3000 HOLD AT ETEVY RIGHT TURN INBOUNDCOURSE 185 LEGDIST 4 FAF SICJE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ATHEN",
+                    "fixes": {
+                        "ATHEN": "ATHEN LEFT TURN INBOUNDCOURSE 005 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

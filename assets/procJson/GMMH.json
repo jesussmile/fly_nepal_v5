@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "CI03Z",
+            "lat": 23.582386116666665,
+            "lon": 15.994033333333334
+        },
+        {
+            "name": "DKH",
+            "lat": 23.744844433333334,
+            "lon": 15.919838883333334
+        },
+        {
+            "name": "FD03",
+            "lat": 23.613833333333332,
+            "lon": 15.979691666666668
+        },
+        {
+            "name": "FI03Z",
+            "lat": 23.613222216666667,
+            "lon": 15.979969433333334
+        },
+        {
+            "name": "LARMO",
+            "lat": 23.580794433333335,
+            "lon": 16.132511116666667
+        },
+        {
+            "name": "MH031",
+            "lat": 23.612497216666668,
+            "lon": 15.980305566666667
+        },
+        {
+            "name": "MH033",
+            "lat": 23.535422216666667,
+            "lon": 16.015461116666668
+        },
+        {
+            "name": "MH212",
+            "lat": 23.824766666666665,
+            "lon": 15.88325
+        },
+        {
+            "name": "MH214",
+            "lat": 23.901808333333335,
+            "lon": 15.847938883333333
+        },
+        {
+            "name": "RW03",
+            "lat": 23.7059,
+            "lon": 15.937641666666666
+        },
+        {
+            "name": "RW21",
+            "lat": 23.7309,
+            "lon": 15.926211116666666
+        },
+        {
+            "name": "TAKAG",
+            "lat": 23.947122216666667,
+            "lon": 15.965344433333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD03",
+            "fixes": {
+                "FD03": "FD03 2000 RNW 03 TRK 028 UNTIL 5.0 FROM",
+                "DKH": "DKH TURN RIGHT DIRECT DKH 3000 FAF FD03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "DKH1",
+                    "fixes": {
+                        "DKH": "DKH AT OR BELOW 3000 AT OR ABOVE 2000 SPEED 220 TRK 225 UNTIL 11.5 FROM DKH SPEED 220"
+                    }
+                },
+                {
+                    "name": "DKH2",
+                    "fixes": {
+                        "DKH": "DKH AT OR BELOW 3000 AT OR ABOVE 2000 SPEED 140 TRK 217 UNTIL 10.5 FROM DKH SPEED 140"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ03",
+            "fixes": {
+                "CI03Z": "CI03Z AT OR ABOVE 2000",
+                "FI03Z": "FI03Z 2000 RNW 03 TRK 028 UNTIL 5.0 FROM",
+                "DKH": "DKH TURN RIGHT DIRECT DKH 3000 FAF FI03Z MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "DKH1",
+                    "fixes": {
+                        "DKH": "DKH AT OR BELOW 3000 AT OR ABOVE 2000 SPEED 220 TRK 225 UNTIL 11.5 FROM DKH SPEED 220"
+                    }
+                },
+                {
+                    "name": "DKH2",
+                    "fixes": {
+                        "DKH": "DKH AT OR BELOW 3000 AT OR ABOVE 2000 SPEED 140 TRK 217 UNTIL 10.5 FROM DKH SPEED 140"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MH033": "MH033 AT OR ABOVE 2000",
+                "MH031": "MH031 2000 SPEED 185 RNW 03 TRK 028 UNTIL 1000 TURN LEFT DIRECT",
+                "LARMO": "OVERFLY LARMO AT OR ABOVE 3000 HOLD AT LARMO RIGHT TURN INBOUNDCOURSE 118 ALT 3000 SPEED 220 LEGTIME 1 FAF MH031 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "LARMO",
+                    "fixes": {
+                        "LARMO": "LARMO AT OR ABOVE 3000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "MH214": "MH214 AT OR ABOVE 2000",
+                "MH212": "MH212 2000 SPEED 185 RNW 21 TRK 208 UNTIL 1000 TURN RIGHT DIRECT",
+                "TAKAG": "TAKAG AT OR ABOVE 3000 HOLD AT TAKAG LEFT TURN INBOUNDCOURSE 118 ALT 3000 SPEED 220 LEGTIME 1 FAF MH212 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "TAKAG",
+                    "fixes": {
+                        "TAKAG": "TAKAG AT OR ABOVE 3000 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

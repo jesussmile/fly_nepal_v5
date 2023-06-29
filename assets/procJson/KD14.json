@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "ADOMY",
+            "lat": 47.703661116666666,
+            "lon": 96.45576943333333
+        },
+        {
+            "name": "BICLA",
+            "lat": 47.619816666666665,
+            "lon": 96.36525278333333
+        },
+        {
+            "name": "CALTU",
+            "lat": 47.40545278333333,
+            "lon": 96.13574166666666
+        },
+        {
+            "name": "DAGPE",
+            "lat": 47.48942221666667,
+            "lon": 96.22522221666667
+        },
+        {
+            "name": "SPOOR",
+            "lat": 47.52647221666667,
+            "lon": 96.26491388333334
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ADOMY": "ADOMY AT OR ABOVE 3200",
+                "BICLA": "BICLA 2800 RNW 14 TRK 139 UNTIL 1537",
+                "CALTU": "OVERFLY CALTU AT OR ABOVE 3200 HOLD AT CALTU LEFT TURN INBOUNDCOURSE 319 LEGDIST 4 FAF BICLA MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ADOMY",
+                    "fixes": {
+                        "ADOMY": "ADOMY RIGHT TURN INBOUNDCOURSE 139 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "CALTU": "CALTU AT OR ABOVE 3200",
+                "DAGPE": "DAGPE 2900",
+                "SPOOR": "SPOOR AT OR ABOVE 1820 RNW 32 TRK 319 UNTIL 1537",
+                "ADOMY": "OVERFLY ADOMY AT OR ABOVE 3200 HOLD AT ADOMY RIGHT TURN INBOUNDCOURSE 139 LEGDIST 4 FAF DAGPE MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "CALTU",
+                    "fixes": {
+                        "CALTU": "CALTU LEFT TURN INBOUNDCOURSE 319 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

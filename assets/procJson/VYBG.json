@@ -1,0 +1,247 @@
+{
+    "fixes": [
+        {
+            "name": "20THR",
+            "lat": 21.133797216666668,
+            "lon": 94.92996943333333
+        },
+        {
+            "name": "23VOR",
+            "lat": 21.131061116666668,
+            "lon": 94.92815278333333
+        },
+        {
+            "name": "40VOR",
+            "lat": 21.102625,
+            "lon": 94.92815278333333
+        },
+        {
+            "name": "BAGAN",
+            "lat": 21.169533333333334,
+            "lon": 94.92815278333333
+        },
+        {
+            "name": "BG901",
+            "lat": 21.359011116666668,
+            "lon": 94.93189166666667
+        },
+        {
+            "name": "BG902",
+            "lat": 21.073594433333334,
+            "lon": 94.92945278333333
+        },
+        {
+            "name": "BG903",
+            "lat": 20.996641666666665,
+            "lon": 94.92879721666667
+        },
+        {
+            "name": "BG904",
+            "lat": 21.284336116666665,
+            "lon": 94.93125278333333
+        },
+        {
+            "name": "BGN",
+            "lat": 21.169536116666666,
+            "lon": 94.92815278333333
+        },
+        {
+            "name": "BGNNB",
+            "lat": 21.176527783333334,
+            "lon": 94.92869443333333
+        },
+        {
+            "name": "FF18",
+            "lat": 21.276441666666667,
+            "lon": 94.93412778333334
+        },
+        {
+            "name": "FF36",
+            "lat": 21.055788883333335,
+            "lon": 94.92815278333333
+        },
+        {
+            "name": "FN18",
+            "lat": 21.265166666666666,
+            "lon": 94.92704166666667
+        },
+        {
+            "name": "FN36",
+            "lat": 21.087886116666667,
+            "lon": 94.93034166666666
+        },
+        {
+            "name": "KABAR",
+            "lat": 21.275380566666666,
+            "lon": 94.931175
+        },
+        {
+            "name": "LAMIN",
+            "lat": 20.913005566666666,
+            "lon": 94.92808611666666
+        },
+        {
+            "name": "LAWKA",
+            "lat": 21.35725,
+            "lon": 95.02115556666666
+        },
+        {
+            "name": "MAHAR",
+            "lat": 21.1257,
+            "lon": 95.13454721666666
+        },
+        {
+            "name": "NANDA",
+            "lat": 20.995947216666668,
+            "lon": 95.01785556666667
+        },
+        {
+            "name": "SELFE",
+            "lat": 21.275877783333332,
+            "lon": 95.02046388333333
+        },
+        {
+            "name": "YADAR",
+            "lat": 21.084747216666667,
+            "lon": 94.92955
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "FF18": "FF18 2000 RNW 18 TRK 184 UNTIL 2000 TURN RIGHT DIRECT",
+                "BGN": "BGN 3000 HOLD AT BGN RIGHT TURN INBOUNDCOURSE 034 ALT 3000 LEGTIME 1 FAF FF18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "BGN1",
+                    "fixes": {
+                        "BGN": "BGN AT OR ABOVE 3000 TRK 034 UNTIL 6.4 FROM BGN"
+                    }
+                },
+                {
+                    "name": "BGN2",
+                    "fixes": {
+                        "BGN": "BGN AT OR ABOVE 3000 TRK 019 UNTIL 6.4 FROM BGN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD36",
+            "fixes": {
+                "FF36": "FF36 2500",
+                "40VOR": "40VOR AT OR ABOVE 1640",
+                "23VOR": "23VOR AT OR ABOVE 1100",
+                "BGN": "BGN 409 RNW 36 TRK 001 UNTIL 2000 TURN RIGHT DIRECT BGN 3000 HOLD AT BGN RIGHT TURN INBOUNDCOURSE 210 ALT 3000 LEGTIME 1 FAF FF36 MAP BGN"
+            },
+            "transitions": [
+                {
+                    "name": "BGN1",
+                    "fixes": {
+                        "BGN": "BGN AT OR ABOVE 3000 TRK 210 UNTIL 6.8 FROM BGN"
+                    }
+                },
+                {
+                    "name": "BGN2",
+                    "fixes": {
+                        "BGN": "BGN AT OR ABOVE 3000 TRK 196 UNTIL 6.8 FROM BGN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB18",
+            "fixes": {
+                "FN18": "FN18 1960 RNW 18",
+                "BGNNB": "OVERFLY BGNNB HDG 200 UNTIL 2000 TURN RIGHT DIRECT BGNNB 3000 HOLD AT BGNNB RIGHT TURN INBOUNDCOURSE 030 ALT 3000 LEGTIME 1 FAF FN18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "BG1",
+                    "fixes": {
+                        "BGNNB": "BGNNB AT OR ABOVE 3000 TRK 030 UNTIL 5.3 FROM BGNNB"
+                    }
+                },
+                {
+                    "name": "BG2",
+                    "fixes": {
+                        "BGNNB": "BGNNB AT OR ABOVE 3000 TRK 015 UNTIL 6.0 FROM BGNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB36",
+            "fixes": {
+                "FN36": "FN36 2000 RNW 36",
+                "BGNNB": "OVERFLY BGNNB HDG 000 UNTIL 2000 TURN RIGHT DIRECT BGNNB 3000 HOLD AT BGNNB RIGHT TURN INBOUNDCOURSE 210 ALT 3000 LEGTIME 1 FAF FN36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "BG1",
+                    "fixes": {
+                        "BGNNB": "BGNNB AT OR ABOVE 3000 TRK 210 UNTIL 5.3 FROM BGNNB"
+                    }
+                },
+                {
+                    "name": "BG2",
+                    "fixes": {
+                        "BGNNB": "BGNNB AT OR ABOVE 3000 TRK 195 UNTIL 6.0 FROM BGNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "BG901": "BG901 AT OR ABOVE 2000 SPEED 210",
+                "KABAR": "KABAR 2000 RNW 18",
+                "BG902": "OVERFLY BG902 SPEED 210 TURN RIGHT DIRECT",
+                "BAGAN": "BAGAN SPEED 210",
+                "SELFE": "SELFE SPEED 210",
+                "LAWKA": "LAWKA AT OR ABOVE 3000 SPEED 210 HOLD AT LAWKA RIGHT TURN INBOUNDCOURSE 272 ALT 3000 SPEED 210 LEGTIME 1 FAF KABAR MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "LAWKA",
+                    "fixes": {
+                        "LAWKA": "LAWKA AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "BG903": "BG903 AT OR ABOVE 2500 SPEED 210",
+                "YADAR": "YADAR 2000",
+                "20THR": "20THR AT OR ABOVE 1050 RNW 36",
+                "BG904": "OVERFLY BG904 SPEED 230 TURN RIGHT DIRECT",
+                "MAHAR": "MAHAR AT OR ABOVE 5000 SPEED 230 HOLD AT MAHAR LEFT TURN INBOUNDCOURSE 221 ALT 5000 SPEED 230 LEGTIME 1 FAF YADAR MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "LAMIN",
+                    "fixes": {
+                        "LAMIN": "LAMIN AT OR ABOVE 4000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MAHAR",
+                    "fixes": {
+                        "MAHAR": "MAHAR AT OR ABOVE 5000 SPEED 230",
+                        "NANDA": "NANDA AT OR ABOVE 4000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

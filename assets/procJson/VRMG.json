@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "DOVEN",
+            "lat": 0.6347222166666667,
+            "lon": 73.32538888333333
+        },
+        {
+            "name": "LEBAM",
+            "lat": 0.5849722166666667,
+            "lon": 73.00305556666666
+        },
+        {
+            "name": "MAMKU",
+            "lat": 0.8002777833333333,
+            "lon": 73.30016666666667
+        },
+        {
+            "name": "MG720",
+            "lat": 0.6784166666666667,
+            "lon": 73.05952778333334
+        },
+        {
+            "name": "MG721",
+            "lat": 0.66775,
+            "lon": 72.99047221666666
+        },
+        {
+            "name": "MG722",
+            "lat": 0.7068333333333333,
+            "lon": 73.24369443333333
+        },
+        {
+            "name": "MG723",
+            "lat": 0.7174999999999999,
+            "lon": 73.31277778333333
+        },
+        {
+            "name": "NONUD",
+            "lat": 0.8921944333333334,
+            "lon": 73.12083333333334
+        },
+        {
+            "name": "PASRI",
+            "lat": 0.7505277833333334,
+            "lon": 72.97786111666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "MG721": "MG721 AT OR ABOVE 1600",
+                "MG720": "MG720 1600 RNW 10 TRK 103 UNTIL 1000 TURN RIGHT DIRECT",
+                "NONUD": "OVERFLY NONUD HOLD AT NONUD RIGHT TURN INBOUNDCOURSE 014 ALT 3000 LEGTIME 1 FAF MG720 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "LEBAM",
+                    "fixes": {
+                        "LEBAM": "LEBAM SPEED 210"
+                    }
+                },
+                {
+                    "name": "PASRI",
+                    "fixes": {
+                        "PASRI": "PASRI SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "MG723": "MG723 AT OR ABOVE 1600",
+                "MG722": "MG722 1600 RNW 28 TRK 283 UNTIL 1000 TURN LEFT DIRECT",
+                "NONUD": "OVERFLY NONUD HOLD AT NONUD RIGHT TURN INBOUNDCOURSE 014 ALT 3000 LEGTIME 1 FAF MG722 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "DOVEN",
+                    "fixes": {
+                        "DOVEN": "DOVEN SPEED 210"
+                    }
+                },
+                {
+                    "name": "MAMKU",
+                    "fixes": {
+                        "MAMKU": "MAMKU SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

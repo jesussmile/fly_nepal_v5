@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "AMEVA",
+            "lat": 58.93811111666667,
+            "lon": 22.895027783333333
+        },
+        {
+            "name": "AMSID",
+            "lat": 58.88938888333333,
+            "lon": 23.146472216666666
+        },
+        {
+            "name": "BILVA",
+            "lat": 59.183388883333336,
+            "lon": 22.783
+        },
+        {
+            "name": "ERKUL",
+            "lat": 59.093361116666664,
+            "lon": 22.510972216666666
+        },
+        {
+            "name": "KA016",
+            "lat": 59.06852778333333,
+            "lon": 22.734194433333332
+        },
+        {
+            "name": "KA032",
+            "lat": 58.91491666666667,
+            "lon": 22.924694433333332
+        },
+        {
+            "name": "LEBLU",
+            "lat": 58.844833333333334,
+            "lon": 23.010972216666666
+        },
+        {
+            "name": "TUKTI",
+            "lat": 59.13844443333333,
+            "lon": 22.646805566666668
+        },
+        {
+            "name": "UNSAG",
+            "lat": 58.80011111666666,
+            "lon": 22.875833333333333
+        },
+        {
+            "name": "XERMO",
+            "lat": 59.041055566666664,
+            "lon": 22.767916666666668
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "TUKTI": "TUKTI AT OR ABOVE 1700",
+                "KA016": "KA016 1700 RNW 14",
+                "AMEVA": "AMEVA",
+                "UNSAG": "OVERFLY UNSAG 1700 SPEED 190 HOLD AT UNSAG LEFT TURN INBOUNDCOURSE 050 ALT 1700 SPEED 190 LEGTIME 1 FAF KA016 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "BILVA",
+                    "fixes": {
+                        "BILVA": "BILVA AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "ERKUL",
+                    "fixes": {
+                        "ERKUL": "ERKUL AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "LEBLU": "LEBLU AT OR ABOVE 1700",
+                "KA032": "KA032 1700 RNW 32",
+                "XERMO": "XERMO",
+                "ERKUL": "OVERFLY ERKUL 1700 SPEED 190 HOLD AT ERKUL RIGHT TURN INBOUNDCOURSE 049 ALT 1700 SPEED 190 LEGTIME 1 FAF KA032 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "AMSID",
+                    "fixes": {
+                        "AMSID": "AMSID AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "UNSAG",
+                    "fixes": {
+                        "UNSAG": "UNSAG AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        }
+    ]
+}

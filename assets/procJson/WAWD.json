@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "EKIPO",
+            "lat": 5.091194433333333,
+            "lon": 123.47147221666667
+        },
+        {
+            "name": "MANIR",
+            "lat": 5.493222216666667,
+            "lon": 123.80113888333334
+        },
+        {
+            "name": "WD402",
+            "lat": 5.154888883333333,
+            "lon": 123.52541666666667
+        },
+        {
+            "name": "WD403",
+            "lat": 5.218666666666667,
+            "lon": 123.57691666666666
+        },
+        {
+            "name": "WD602",
+            "lat": 5.428833333333333,
+            "lon": 123.74669443333333
+        },
+        {
+            "name": "WD603",
+            "lat": 5.366361116666667,
+            "lon": 123.69622221666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "WD402": "WD402 AT OR ABOVE 2700",
+                "WD403": "WD403 1700 RNW 14 TURN LEFT DIRECT",
+                "EKIPO": "EKIPO AT OR ABOVE 4000 HOLD AT EKIPO RIGHT TURN INBOUNDCOURSE 139 ALT 4000 LEGTIME 1 FAF WD403 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "EKIPO",
+                    "fixes": {
+                        "EKIPO": "EKIPO AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "WD602": "WD602 AT OR ABOVE 2700",
+                "WD603": "WD603 1700 RNW 32 TURN RIGHT DIRECT",
+                "MANIR": "MANIR AT OR ABOVE 4000 HOLD AT MANIR RIGHT TURN INBOUNDCOURSE 319 ALT 4000 LEGTIME 1 FAF WD603 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "MANIR",
+                    "fixes": {
+                        "MANIR": "MANIR AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

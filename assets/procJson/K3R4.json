@@ -1,0 +1,134 @@
+{
+    "fixes": [
+        {
+            "name": "COVEX",
+            "lat": 31.903305566666667,
+            "lon": 93.73874443333334
+        },
+        {
+            "name": "HEKET",
+            "lat": 31.642602783333334,
+            "lon": 93.675475
+        },
+        {
+            "name": "JATOV",
+            "lat": 31.514230566666665,
+            "lon": 93.37743888333333
+        },
+        {
+            "name": "KENCY",
+            "lat": 31.528119433333334,
+            "lon": 93.43384721666666
+        },
+        {
+            "name": "MARTA",
+            "lat": 31.793008333333333,
+            "lon": 93.52441943333334
+        },
+        {
+            "name": "MOFCO",
+            "lat": 31.53688611666667,
+            "lon": 93.46949721666667
+        },
+        {
+            "name": "NOKSY",
+            "lat": 31.50865556666667,
+            "lon": 93.41470556666667
+        },
+        {
+            "name": "NUBOY",
+            "lat": 31.5112,
+            "lon": 92.98324443333334
+        },
+        {
+            "name": "OXIDE",
+            "lat": 31.486277783333332,
+            "lon": 93.26434443333333
+        },
+        {
+            "name": "PEXTU",
+            "lat": 31.557563883333334,
+            "lon": 93.55383888333333
+        },
+        {
+            "name": "RIKKS",
+            "lat": 31.728588883333334,
+            "lon": 93.61527778333334
+        },
+        {
+            "name": "SOMCA",
+            "lat": 31.601661116666666,
+            "lon": 93.34929721666667
+        },
+        {
+            "name": "TILRR",
+            "lat": 31.590791666666668,
+            "lon": 93.57438333333333
+        },
+        {
+            "name": "TOBOC",
+            "lat": 31.58255,
+            "lon": 93.23184166666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "HEKET": "HEKET AT OR ABOVE 2500",
+                "TILRR": "TILRR 2000 RNW 12",
+                "NOKSY": "NOKSY TURN LEFT DIRECT",
+                "SOMCA": "SOMCA",
+                "MARTA": "OVERFLY MARTA AT OR ABOVE 4500 HOLD AT MARTA RIGHT TURN INBOUNDCOURSE 299 LEGDIST 5 FAF TILRR MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "COVEX",
+                    "fixes": {
+                        "COVEX": "COVEX",
+                        "RIKKS": "RIKKS AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MARTA",
+                    "fixes": {
+                        "MARTA": "MARTA",
+                        "RIKKS": "RIKKS AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "OXIDE": "OXIDE AT OR ABOVE 2500",
+                "JATOV": "JATOV 2400",
+                "KENCY": "KENCY AT OR ABOVE 1260",
+                "MOFCO": "OVERFLY MOFCO 543 RNW 30",
+                "PEXTU": "PEXTU",
+                "MARTA": "OVERFLY MARTA AT OR ABOVE 4500 HOLD AT MARTA RIGHT TURN INBOUNDCOURSE 119 LEGDIST 5 FAF JATOV MAP MOFCO"
+            },
+            "transitions": [
+                {
+                    "name": "MARTA",
+                    "fixes": {
+                        "MARTA": "MARTA",
+                        "TOBOC": "TOBOC AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "NUBOY",
+                    "fixes": {
+                        "NUBOY": "NUBOY"
+                    }
+                }
+            ]
+        }
+    ]
+}

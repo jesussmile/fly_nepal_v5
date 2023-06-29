@@ -1,0 +1,213 @@
+{
+    "fixes": [
+        {
+            "name": "HUGEP",
+            "lat": 37.937613883333334,
+            "lon": 92.66978056666666
+        },
+        {
+            "name": "MAGYU",
+            "lat": 37.97514721666667,
+            "lon": 92.68964443333333
+        },
+        {
+            "name": "OTEEN",
+            "lat": 37.80549443333334,
+            "lon": 92.59214721666666
+        },
+        {
+            "name": "PI001",
+            "lat": 38.080387466666664,
+            "lon": 92.54821241666667
+        },
+        {
+            "name": "PI002",
+            "lat": 38.07785126666667,
+            "lon": 92.45722481666667
+        },
+        {
+            "name": "PI003",
+            "lat": 38.15418136666667,
+            "lon": 92.44740115
+        },
+        {
+            "name": "ROACH",
+            "lat": 38.206525,
+            "lon": 92.758875
+        },
+        {
+            "name": "SGF",
+            "lat": 37.355947216666664,
+            "lon": 93.33404166666666
+        },
+        {
+            "name": "SHY",
+            "lat": 38.040616666666665,
+            "lon": 92.60241111666667
+        },
+        {
+            "name": "TBN",
+            "lat": 37.74243056666667,
+            "lon": 92.13899443333334
+        },
+        {
+            "name": "UNNAS",
+            "lat": 37.89487221666667,
+            "lon": 92.64463888333333
+        },
+        {
+            "name": "VIH",
+            "lat": 38.15407221666667,
+            "lon": 91.70677221666666
+        },
+        {
+            "name": "WEVEM",
+            "lat": 38.141163883333334,
+            "lon": 92.790025
+        },
+        {
+            "name": "YAVUG",
+            "lat": 38.05040556666667,
+            "lon": 92.73628611666666
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "WEVEM": "WEVEM AT OR ABOVE 3000",
+                "YAVUG": "YAVUG 2600 RNW 15 TRK 155 UNTIL 1312",
+                "OTEEN": "OVERFLY OTEEN AT OR ABOVE 3000 HOLD AT OTEEN RIGHT TURN INBOUNDCOURSE 335 LEGDIST 4 FAF YAVUG MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "WEVEM",
+                    "fixes": {
+                        "WEVEM": "WEVEM RIGHT TURN INBOUNDCOURSE 155 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "OTEEN": "OTEEN AT OR ABOVE 3000",
+                "UNNAS": "UNNAS 2600",
+                "HUGEP": "HUGEP AT OR ABOVE 1700 RNW 33 TRK 335 UNTIL 1312",
+                "WEVEM": "OVERFLY WEVEM AT OR ABOVE 3000 HOLD AT WEVEM RIGHT TURN INBOUNDCOURSE 155 LEGDIST 4 FAF UNNAS MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "OTEEN",
+                    "fixes": {
+                        "OTEEN": "OTEEN RIGHT TURN INBOUNDCOURSE 335 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA15",
+            "fixes": {
+                "SHY": "SHY 2800 SHY HOLD AT SHY LEFT TURN INBOUNDCOURSE 227 LEGTIME 1 FAF SHY MAP MAGYU",
+                "MAGYU": "MAGYU 1700 RNW 15 TRK 227 UNTIL 3100 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ROACH",
+                    "fixes": {
+                        "ROACH": "ROACH",
+                        "SHY": "SHY AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SGF",
+                    "fixes": {
+                        "SGF": "SGF",
+                        "SHY": "SHY AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TBN",
+                    "fixes": {
+                        "TBN": "TBN",
+                        "SHY": "SHY AT OR ABOVE 2800",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "VIH",
+                    "fixes": {
+                        "VIH": "VIH",
+                        "SHY": "SHY AT OR ABOVE 2800",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA33",
+            "fixes": {
+                "SHY": "SHY 2800 SHY HOLD AT SHY LEFT TURN INBOUNDCOURSE 227 LEGTIME 1 FAF SHY MAP MAGYU",
+                "MAGYU": "MAGYU 1700 RNW 33 TRK 227 UNTIL 3100 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ROACH",
+                    "fixes": {
+                        "ROACH": "ROACH",
+                        "SHY": "SHY AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SGF",
+                    "fixes": {
+                        "SGF": "SGF",
+                        "SHY": "SHY AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TBN",
+                    "fixes": {
+                        "TBN": "TBN",
+                        "SHY": "SHY AT OR ABOVE 2800",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "VIH",
+                    "fixes": {
+                        "VIH": "VIH",
+                        "SHY": "SHY AT OR ABOVE 2800",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

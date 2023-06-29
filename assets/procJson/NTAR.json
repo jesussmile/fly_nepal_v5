@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "AR401",
+            "lat": 22.405388883333334,
+            "lon": 151.45436111666666
+        },
+        {
+            "name": "AR402",
+            "lat": 22.465111116666666,
+            "lon": 151.25558333333333
+        },
+        {
+            "name": "AR403",
+            "lat": 22.423419433333333,
+            "lon": 151.39445556666666
+        },
+        {
+            "name": "AR404",
+            "lat": 22.447947216666666,
+            "lon": 151.31280833333332
+        },
+        {
+            "name": "AR405",
+            "lat": 22.342444433333334,
+            "lon": 151.40563888333332
+        },
+        {
+            "name": "AR406",
+            "lat": 22.382194433333332,
+            "lon": 151.27869443333333
+        },
+        {
+            "name": "AR408",
+            "lat": 22.411138883333333,
+            "lon": 151.14238888333333
+        },
+        {
+            "name": "FF09",
+            "lat": 22.39324166666667,
+            "lon": 151.473675
+        },
+        {
+            "name": "RAXON",
+            "lat": 22.300055566666668,
+            "lon": 151.51216666666667
+        },
+        {
+            "name": "REKEK",
+            "lat": 22.379611116666666,
+            "lon": 151.53988888333333
+        },
+        {
+            "name": "RISKI",
+            "lat": 22.49075,
+            "lon": 151.16994443333334
+        },
+        {
+            "name": "RTNB",
+            "lat": 22.432666666666666,
+            "lon": 151.36883333333333
+        },
+        {
+            "name": "RUXAR",
+            "lat": 22.431638883333335,
+            "lon": 151.36713888333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FF09": "FF09 2100",
+                "RTNB": "RTNB 99 RNW 09 TRK 098 UNTIL 2500 TURN RIGHT DIRECT RTNB FAF FF09 MAP R"
+            },
+            "transitions": [
+                {
+                    "name": "RT",
+                    "fixes": {
+                        "RTNB": "RTNB AT OR ABOVE 2500 TRK 266 UNTIL 10.5 FROM RTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "REKEK": "REKEK AT OR ABOVE 1700",
+                "AR401": "AR401 1700",
+                "AR403": "OVERFLY AR403 585 RNW 09 TURN LEFT DIRECT",
+                "AR405": "AR405",
+                "RAXON": "RAXON AT OR ABOVE 1700 FAF AR401 MAP AR403"
+            },
+            "transitions": [
+                {
+                    "name": "RAXON",
+                    "fixes": {
+                        "RAXON": "RAXON AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "REKEK",
+                    "fixes": {
+                        "REKEK": "REKEK RIGHT TURN INBOUNDCOURSE 094 ALT 1700 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "RUXAR",
+                    "fixes": {
+                        "RUXAR": "RUXAR AT OR ABOVE 3000",
+                        "AR405": "AR405 AT OR ABOVE 2500",
+                        "RAXON": "RAXON AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "RISKI": "RISKI AT OR ABOVE 1900 RISKI AT OR ABOVE 1900 FAF AR402 MAP AR404",
+                "AR402": "AR402 1900",
+                "AR404": "OVERFLY AR404 836 RNW 27 TURN RIGHT DIRECT",
+                "AR406": "AR406",
+                "AR408": "AR408 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "RISKI",
+                    "fixes": {
+                        "RISKI": "RISKI LEFT TURN INBOUNDCOURSE 273 ALT 1900 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "RUXAR",
+                    "fixes": {
+                        "RUXAR": "RUXAR AT OR ABOVE 3000",
+                        "AR406": "AR406 AT OR ABOVE 2500",
+                        "AR408": "AR408"
+                    }
+                }
+            ]
+        }
+    ]
+}

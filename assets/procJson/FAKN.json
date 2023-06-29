@@ -1,0 +1,179 @@
+{
+    "fixes": [
+        {
+            "name": "CD05",
+            "lat": 25.541033333333335,
+            "lon": 30.963061116666665
+        },
+        {
+            "name": "CD23",
+            "lat": 25.196166666666667,
+            "lon": 31.210202783333333
+        },
+        {
+            "name": "CI05Y",
+            "lat": 25.583,
+            "lon": 30.95595
+        },
+        {
+            "name": "CI05Z",
+            "lat": 25.544297216666667,
+            "lon": 30.984975
+        },
+        {
+            "name": "D234R",
+            "lat": 25.641044433333334,
+            "lon": 30.912375
+        },
+        {
+            "name": "FD05",
+            "lat": 25.512883333333335,
+            "lon": 30.98915
+        },
+        {
+            "name": "FD23",
+            "lat": 25.235247216666668,
+            "lon": 31.189283333333332
+        },
+        {
+            "name": "FI05",
+            "lat": 25.520794433333332,
+            "lon": 31.002588883333335
+        },
+        {
+            "name": "KN1F1",
+            "lat": 25.444788883333334,
+            "lon": 31.059480566666668
+        },
+        {
+            "name": "KN1M1",
+            "lat": 25.253241666666668,
+            "lon": 31.202555566666668
+        },
+        {
+            "name": "KN1M2",
+            "lat": 25.515008333333334,
+            "lon": 31.173430566666667
+        },
+        {
+            "name": "KN1MP",
+            "lat": 25.391583333333333,
+            "lon": 31.099275
+        },
+        {
+            "name": "KN1T1",
+            "lat": 25.513916666666667,
+            "lon": 31.007708333333333
+        },
+        {
+            "name": "MASHO",
+            "lat": 25.596844433333334,
+            "lon": 30.945502783333332
+        },
+        {
+            "name": "OKNIR",
+            "lat": 25.455597216666668,
+            "lon": 30.913302783333332
+        },
+        {
+            "name": "PKV",
+            "lat": 25.381025,
+            "lon": 31.111125
+        },
+        {
+            "name": "RW05",
+            "lat": 25.391597216666668,
+            "lon": 31.099266666666665
+        },
+        {
+            "name": "TILIR",
+            "lat": 25.781186116666667,
+            "lon": 30.777880566666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "TILI1A",
+            "runway": "RNW 05",
+            "fixes": {
+                "TILIR": "TILIR 12000 SPEED 220",
+                "MASHO": "MASHO AT OR ABOVE 8000 SPEED 210"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "CD05": "CD05 AT OR ABOVE 5800",
+                "FD05": "FD05 5800 RNW 05",
+                "PKV": "PKV TRK 059 UNTIL 5.0 FROM PKV TURN RIGHT DIRECT PKV SPEED 210 HOLD AT PKV RIGHT TURN INBOUNDCOURSE 059 LEGTIME 1 FAF FD05 MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "CD23": "CD23 AT OR ABOVE 5800",
+                "FD23": "FD23 5800 RNW 23",
+                "PKV": "PKV TRK 225 UNTIL 5.0 FROM PKV TURN LEFT DIRECT PKV SPEED 210 HOLD AT PKV LEFT TURN INBOUNDCOURSE 225 LEGTIME 1 FAF FD23 MAP RNW 23"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILSY05",
+            "fixes": {
+                "CI05Y": "CI05Y AT OR ABOVE 7200",
+                "FI05": "FI05 5800 RNW 05 TRK 054 UNTIL 3230 TRK 054 UNTIL 5.0 FROM",
+                "PKV": "PKV TURN RIGHT DIRECT PKV SPEED 210 HOLD AT PKV RIGHT TURN INBOUNDCOURSE 054 LEGTIME 1 FAF FI05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "D234R",
+                    "fixes": {
+                        "D234R": "D234R AT OR ABOVE 8500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ05",
+            "fixes": {
+                "CI05Z": "CI05Z AT OR ABOVE 5800",
+                "FI05": "FI05 5800 RNW 05 TRK 054 UNTIL 3230 TRK 054 UNTIL 5.0 FROM",
+                "PKV": "PKV TURN RIGHT DIRECT PKV SPEED 210 HOLD AT PKV RIGHT TURN INBOUNDCOURSE 054 LEGTIME 1 FAF FI05 MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "KN1T1": "KN1T1 AT OR ABOVE 5600 SPEED 210",
+                "KN1F1": "KN1F1 4100",
+                "KN1MP": "OVERFLY KN1MP 2875 RNW 05",
+                "KN1M1": "OVERFLY KN1M1 SPEED 230 TURN RIGHT DIRECT",
+                "KN1M2": "KN1M2 SPEED 230",
+                "MASHO": "MASHO AT OR ABOVE 8000 HOLD AT MASHO LEFT TURN INBOUNDCOURSE 053 ALT 10000 SPEED 210 LEGTIME 1 FAF KN1F1 MAP KN1MP"
+            },
+            "transitions": [
+                {
+                    "name": "MASHO",
+                    "fixes": {
+                        "MASHO": "MASHO AT OR ABOVE 8000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "OKNIR",
+                    "fixes": {
+                        "OKNIR": "OKNIR AT OR ABOVE 8000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

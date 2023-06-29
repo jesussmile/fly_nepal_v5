@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "BILLP",
+            "lat": 32.81071943333333,
+            "lon": 85.95763056666667
+        },
+        {
+            "name": "JOPIB",
+            "lat": 33.11383333333333,
+            "lon": 85.97319721666666
+        },
+        {
+            "name": "JUBKI",
+            "lat": 32.86892778333333,
+            "lon": 85.96060278333333
+        },
+        {
+            "name": "KUCEG",
+            "lat": 33.023580566666666,
+            "lon": 85.96854721666666
+        },
+        {
+            "name": "TATME",
+            "lat": 32.71065278333333,
+            "lon": 85.95249721666667
+        },
+        {
+            "name": "WALNI",
+            "lat": 32.95551388333333,
+            "lon": 85.96504721666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "JOPIB": "JOPIB AT OR ABOVE 3600",
+                "KUCEG": "KUCEG 2700",
+                "WALNI": "WALNI AT OR ABOVE 1400 RNW 18 TRK 182 UNTIL 1061",
+                "TATME": "OVERFLY TATME AT OR ABOVE 3000 HOLD AT TATME RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF KUCEG MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "JOPIB",
+                    "fixes": {
+                        "JOPIB": "JOPIB RIGHT TURN INBOUNDCOURSE 182 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "TATME": "TATME AT OR ABOVE 3000 OVERFLY TATME AT OR ABOVE 3000 HOLD AT TATME RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF BILLP MAP RNW 36",
+                "BILLP": "BILLP 2500",
+                "JUBKI": "JUBKI AT OR ABOVE 1380 RNW 36 TRK 002 UNTIL 1100 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TATME",
+                    "fixes": {
+                        "TATME": "TATME RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

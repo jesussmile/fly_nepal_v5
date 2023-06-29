@@ -1,0 +1,95 @@
+{
+    "fixes": [
+        {
+            "name": "ASAYO",
+            "lat": 36.488947216666666,
+            "lon": 85.24884166666666
+        },
+        {
+            "name": "CENPI",
+            "lat": 36.338169433333334,
+            "lon": 85.37184721666667
+        },
+        {
+            "name": "INDEP",
+            "lat": 36.47411388333333,
+            "lon": 85.25966388333333
+        },
+        {
+            "name": "KAGGO",
+            "lat": 36.58558333333333,
+            "lon": 85.16971943333333
+        },
+        {
+            "name": "LAZMU",
+            "lat": 36.240575,
+            "lon": 85.451175
+        },
+        {
+            "name": "LVT",
+            "lat": 36.58450833333333,
+            "lon": 85.16662221666667
+        },
+        {
+            "name": "MAGOW",
+            "lat": 36.43269443333333,
+            "lon": 85.29448611666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD21",
+            "fixes": {
+                "LVT": "LVT AT OR ABOVE 3300 LVT AT OR ABOVE 4000 HOLD AT LVT RIGHT TURN INBOUNDCOURSE 145 LEGTIME 1 FAF INDEP MAP MAGOW",
+                "INDEP": "INDEP 2700",
+                "MAGOW": "OVERFLY MAGOW 1723 RNW 21 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LVT",
+                    "fixes": {
+                        "LVT": "LVT RIGHT TURN INBOUNDCOURSE 145 ALT 3300 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "LAZMU": "LAZMU AT OR ABOVE 4100",
+                "CENPI": "CENPI 3000 RNW 03 TRK 037 UNTIL 1700",
+                "KAGGO": "OVERFLY KAGGO AT OR ABOVE 4000 HOLD AT KAGGO RIGHT TURN INBOUNDCOURSE 217 LEGDIST 4 FAF CENPI MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "LAZMU",
+                    "fixes": {
+                        "LAZMU": "LAZMU RIGHT TURN INBOUNDCOURSE 037 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "KAGGO": "KAGGO AT OR ABOVE 4000",
+                "ASAYO": "ASAYO 3000 RNW 21 TRK 217 UNTIL 1680",
+                "LAZMU": "OVERFLY LAZMU AT OR ABOVE 4100 HOLD AT LAZMU RIGHT TURN INBOUNDCOURSE 037 LEGDIST 5 FAF ASAYO MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "KAGGO",
+                    "fixes": {
+                        "KAGGO": "KAGGO RIGHT TURN INBOUNDCOURSE 217 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

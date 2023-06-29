@@ -1,0 +1,189 @@
+{
+    "fixes": [
+        {
+            "name": "20LOC",
+            "lat": 53.76817221666667,
+            "lon": 2.9587194333333335
+        },
+        {
+            "name": "50LOC",
+            "lat": 53.76404721666667,
+            "lon": 2.8747527833333333
+        },
+        {
+            "name": "BPLNB",
+            "lat": 53.77315278333333,
+            "lon": 3.0279416666666665
+        },
+        {
+            "name": "CF28",
+            "lat": 53.75985,
+            "lon": 2.7905222166666666
+        },
+        {
+            "name": "D095J",
+            "lat": 53.757027783333335,
+            "lon": 2.7345638833333332
+        },
+        {
+            "name": "FF28",
+            "lat": 53.762647216666664,
+            "lon": 2.8464861166666666
+        },
+        {
+            "name": "FN10",
+            "lat": 53.77432221666667,
+            "lon": 3.1767055666666666
+        },
+        {
+            "name": "MIFKO",
+            "lat": 53.74840833333333,
+            "lon": 2.5668083333333334
+        },
+        {
+            "name": "ML28",
+            "lat": 53.769669433333334,
+            "lon": 2.989511116666667
+        },
+        {
+            "name": "NH28F",
+            "lat": 53.76263888333333,
+            "lon": 2.846669433333333
+        },
+        {
+            "name": "NH28I",
+            "lat": 53.75561388333333,
+            "lon": 2.7067138833333333
+        },
+        {
+            "name": "POL",
+            "lat": 53.743766666666666,
+            "lon": 2.1033277833333335
+        },
+        {
+            "name": "ROBLU",
+            "lat": 53.67268611666667,
+            "lon": 2.7187111166666664
+        },
+        {
+            "name": "RW28",
+            "lat": 53.77087778333333,
+            "lon": 3.0144388833333333
+        },
+        {
+            "name": "TOVEL",
+            "lat": 53.83855833333333,
+            "lon": 2.6948388833333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 13",
+        "RNW 28",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS28",
+            "fixes": {
+                "CF28": "CF28 AT OR ABOVE 2000",
+                "FF28": "FF28 2000 RNW 28 TRK 275 UNTIL 2000 TURN LEFT DIRECT",
+                "BPLNB": "BPLNB 2000 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "BPL",
+                    "fixes": {
+                        "BPLNB": "BPLNB AT OR ABOVE 3000 SPEED 210",
+                        "FF28": "FF28 AT OR ABOVE 2000 TRK 050 UNTIL 4.3 FROM FF28"
+                    }
+                },
+                {
+                    "name": "POL",
+                    "fixes": {
+                        "POL": "POL",
+                        "D095J": "D095J AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC28",
+            "fixes": {
+                "CF28": "CF28 AT OR ABOVE 2000",
+                "FF28": "FF28 2000",
+                "50LOC": "50LOC AT OR ABOVE 1680",
+                "20LOC": "20LOC AT OR ABOVE 720",
+                "ML28": "ML28 370 RNW 28 TRK 275 UNTIL 2000 TURN LEFT DIRECT",
+                "BPLNB": "BPLNB 2000 FAF FF28 MAP ML28"
+            },
+            "transitions": [
+                {
+                    "name": "BPL",
+                    "fixes": {
+                        "BPLNB": "BPLNB AT OR ABOVE 3000 SPEED 210",
+                        "FF28": "FF28 AT OR ABOVE 2000 TRK 050 UNTIL 4.3 FROM FF28"
+                    }
+                },
+                {
+                    "name": "POL",
+                    "fixes": {
+                        "POL": "POL",
+                        "D095J": "D095J AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB10",
+            "fixes": {
+                "FN10": "FN10 1600 RNW 10",
+                "BPLNB": "OVERFLY BPLNB AT OR ABOVE 440 TRK 092 UNTIL 2000 TURN LEFT DIRECT BPLNB 2000 SPEED 210 FAF FN10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "BPL1",
+                    "fixes": {
+                        "BPLNB": "BPLNB AT OR ABOVE 3000 SPEED 210 TRK 253 UNTIL 8.8 FROM BPLNB"
+                    }
+                },
+                {
+                    "name": "BPL2",
+                    "fixes": {
+                        "BPLNB": "BPLNB AT OR ABOVE 3000 SPEED 210 TRK 262 UNTIL 9.0 FROM BPLNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "NH28I": "NH28I AT OR ABOVE 2600 SPEED 210",
+                "NH28F": "NH28F 2000 SPEED 210 RNW 28 TRK 275 UNTIL 2000 TURN LEFT DIRECT",
+                "BPLNB": "BPLNB 2000 FAF NH28F MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "MIFKO",
+                    "fixes": {
+                        "MIFKO": "MIFKO AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "ROBLU",
+                    "fixes": {
+                        "ROBLU": "ROBLU AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "TOVEL",
+                    "fixes": {
+                        "TOVEL": "TOVEL AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

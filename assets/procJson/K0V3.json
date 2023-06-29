@@ -1,0 +1,129 @@
+{
+    "fixes": [
+        {
+            "name": "CIBSA",
+            "lat": 40.6842,
+            "lon": 98.99961111666667
+        },
+        {
+            "name": "FINVO",
+            "lat": 40.58528333333334,
+            "lon": 98.96823888333333
+        },
+        {
+            "name": "HENBA",
+            "lat": 40.703744433333334,
+            "lon": 98.89310833333333
+        },
+        {
+            "name": "HSI",
+            "lat": 40.604536116666665,
+            "lon": 98.42961666666666
+        },
+        {
+            "name": "LUDMA",
+            "lat": 40.433486116666664,
+            "lon": 98.920275
+        },
+        {
+            "name": "MEDOC",
+            "lat": 40.33461388333333,
+            "lon": 98.88915
+        },
+        {
+            "name": "MORGS",
+            "lat": 40.672758333333334,
+            "lon": 98.752025
+        },
+        {
+            "name": "ONLEY",
+            "lat": 40.315069433333335,
+            "lon": 98.99507221666667
+        },
+        {
+            "name": "SMOLA",
+            "lat": 40.354061116666664,
+            "lon": 98.78316666666667
+        },
+        {
+            "name": "SPRIT",
+            "lat": 40.46292221666667,
+            "lon": 99.530475
+        },
+        {
+            "name": "SUFBA",
+            "lat": 40.66455833333333,
+            "lon": 99.10605278333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 16",
+        "RNW 23",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "CIBSA": "CIBSA AT OR ABOVE 4300",
+                "FINVO": "FINVO 3500 RNW 16",
+                "MEDOC": "OVERFLY MEDOC AT OR ABOVE 3700 HOLD AT MEDOC RIGHT TURN INBOUNDCOURSE 339 LEGDIST 4 FAF FINVO MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CIBSA",
+                    "fixes": {
+                        "CIBSA": "CIBSA RIGHT TURN INBOUNDCOURSE 159 ALT 4300 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "MORGS",
+                    "fixes": {
+                        "MORGS": "MORGS",
+                        "HENBA": "HENBA AT OR ABOVE 4300"
+                    }
+                },
+                {
+                    "name": "SPRIT",
+                    "fixes": {
+                        "SPRIT": "SPRIT",
+                        "SUFBA": "SUFBA AT OR ABOVE 4300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "MEDOC": "MEDOC AT OR ABOVE 3700",
+                "LUDMA": "LUDMA 3700 RNW 34",
+                "CIBSA": "OVERFLY CIBSA AT OR ABOVE 4300 HOLD AT CIBSA RIGHT TURN INBOUNDCOURSE 159 LEGDIST 5 FAF LUDMA MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "HSI",
+                    "fixes": {
+                        "HSI": "HSI",
+                        "SMOLA": "SMOLA AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "MEDOC",
+                    "fixes": {
+                        "MEDOC": "MEDOC RIGHT TURN INBOUNDCOURSE 339 ALT 3700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SPRIT",
+                    "fixes": {
+                        "SPRIT": "SPRIT",
+                        "ONLEY": "ONLEY AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        }
+    ]
+}

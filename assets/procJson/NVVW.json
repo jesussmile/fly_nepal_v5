@@ -1,0 +1,169 @@
+{
+    "fixes": [
+        {
+            "name": "DUKON",
+            "lat": 19.219372216666667,
+            "lon": 169.26613611666667
+        },
+        {
+            "name": "FF15",
+            "lat": 19.334308333333333,
+            "lon": 169.17859166666668
+        },
+        {
+            "name": "FF33",
+            "lat": 19.58770833333333,
+            "lon": 169.28128056666668
+        },
+        {
+            "name": "IKETI",
+            "lat": 19.6392,
+            "lon": 169.36763056666666
+        },
+        {
+            "name": "KAMTI",
+            "lat": 19.257752783333334,
+            "lon": 169.18788611666668
+        },
+        {
+            "name": "LENKU",
+            "lat": 19.239344433333333,
+            "lon": 169.10197221666667
+        },
+        {
+            "name": "MEKUL",
+            "lat": 19.62738888333333,
+            "lon": 169.28022778333334
+        },
+        {
+            "name": "TASUL",
+            "lat": 19.671536116666665,
+            "lon": 169.20523333333333
+        },
+        {
+            "name": "TOKAS",
+            "lat": 19.70925,
+            "lon": 169.29839166666667
+        },
+        {
+            "name": "VW473",
+            "lat": 19.545527783333334,
+            "lon": 169.26208056666667
+        },
+        {
+            "name": "VW525",
+            "lat": 19.467866666666666,
+            "lon": 169.22929721666668
+        },
+        {
+            "name": "VW729",
+            "lat": 19.423702783333333,
+            "lon": 169.21021943333332
+        },
+        {
+            "name": "VW837",
+            "lat": 19.34072778333333,
+            "lon": 169.19904721666666
+        },
+        {
+            "name": "WGNB",
+            "lat": 19.4612,
+            "lon": 169.22461943333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB15",
+            "fixes": {
+                "FF15": "FF15 2400 RNW 15",
+                "WGNB": "OVERFLY WGNB TRK 149 UNTIL 530 TURN RIGHT DIRECT WGNB 4200 FAF FF15 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "WG",
+                    "fixes": {
+                        "WGNB": "WGNB AT OR ABOVE 4200 TRK 314 UNTIL 9.3 FROM WGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB33",
+            "fixes": {
+                "FF33": "FF33 2700",
+                "WGNB": "WGNB 108 RNW 33 TRK 325 UNTIL 530 TURN LEFT DIRECT WGNB 3000 FAF FF33 MAP WG"
+            },
+            "transitions": [
+                {
+                    "name": "WG",
+                    "fixes": {
+                        "WGNB": "WGNB AT OR ABOVE 3000 TRK 159 UNTIL 9.3 FROM WGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "KAMTI": "KAMTI AT OR ABOVE 3000 KAMTI 3000 FAF VW837 MAP VW729",
+                "VW837": "VW837 2100",
+                "VW729": "OVERFLY VW729 579 RNW 15 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DUKON",
+                    "fixes": {
+                        "DUKON": "DUKON"
+                    }
+                },
+                {
+                    "name": "KAMTI",
+                    "fixes": {
+                        "KAMTI": "KAMTI RIGHT TURN INBOUNDCOURSE 161 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LENKU",
+                    "fixes": {
+                        "LENKU": "LENKU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "MEKUL": "MEKUL AT OR ABOVE 3000",
+                "VW473": "VW473 1750",
+                "VW525": "OVERFLY VW525 230 RNW 33 TURN LEFT DIRECT",
+                "TASUL": "TASUL 3000 FAF VW473 MAP VW525"
+            },
+            "transitions": [
+                {
+                    "name": "IKETI",
+                    "fixes": {
+                        "IKETI": "IKETI"
+                    }
+                },
+                {
+                    "name": "TASUL",
+                    "fixes": {
+                        "TASUL": "TASUL"
+                    }
+                },
+                {
+                    "name": "TOKAS",
+                    "fixes": {
+                        "TOKAS": "TOKAS"
+                    }
+                }
+            ]
+        }
+    ]
+}

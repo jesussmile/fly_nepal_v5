@@ -1,0 +1,130 @@
+{
+    "fixes": [
+        {
+            "name": "CINOP",
+            "lat": 46.089919433333336,
+            "lon": 88.86432221666666
+        },
+        {
+            "name": "COTMO",
+            "lat": 46.50390556666667,
+            "lon": 89.59832221666667
+        },
+        {
+            "name": "DINER",
+            "lat": 46.202561116666665,
+            "lon": 89.18008333333333
+        },
+        {
+            "name": "HURSO",
+            "lat": 46.260161116666666,
+            "lon": 89.47954166666666
+        },
+        {
+            "name": "JAYME",
+            "lat": 45.84780833333333,
+            "lon": 89.32531111666667
+        },
+        {
+            "name": "JELAR",
+            "lat": 46.21284166666667,
+            "lon": 89.27620556666666
+        },
+        {
+            "name": "JOLNA",
+            "lat": 46.07753056666667,
+            "lon": 89.12799166666667
+        },
+        {
+            "name": "POZWU",
+            "lat": 46.17605,
+            "lon": 89.23581111666667
+        },
+        {
+            "name": "TECOL",
+            "lat": 46.292288883333335,
+            "lon": 89.36366943333333
+        },
+        {
+            "name": "TOLOY",
+            "lat": 45.99922778333333,
+            "lon": 89.04265
+        },
+        {
+            "name": "WATOL",
+            "lat": 46.125005566666665,
+            "lon": 89.17988611666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 14",
+        "RNW 23",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "TECOL": "TECOL AT OR ABOVE 3500",
+                "JELAR": "JELAR 3500",
+                "POZWU": "POZWU AT OR ABOVE 2320 RNW 14 TRK 145 UNTIL 2106",
+                "TOLOY": "OVERFLY TOLOY AT OR ABOVE 3500 HOLD AT TOLOY RIGHT TURN INBOUNDCOURSE 325 LEGDIST 4 FAF JELAR MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "COTMO",
+                    "fixes": {
+                        "COTMO": "COTMO"
+                    }
+                },
+                {
+                    "name": "DINER",
+                    "fixes": {
+                        "DINER": "DINER",
+                        "TECOL": "OVERFLY TECOL AT OR ABOVE 3500 HOLD AT TECOL RIGHT TURN INBOUNDCOURSE 145 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JAYME",
+                    "fixes": {
+                        "JAYME": "JAYME",
+                        "HURSO": "HURSO AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "TOLOY": "TOLOY AT OR ABOVE 3500",
+                "JOLNA": "JOLNA 3500",
+                "WATOL": "WATOL AT OR ABOVE 2360 RNW 32 TRK 325 UNTIL 1955",
+                "TECOL": "OVERFLY TECOL AT OR ABOVE 3500 HOLD AT TECOL RIGHT TURN INBOUNDCOURSE 145 LEGDIST 4 FAF JOLNA MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "CINOP",
+                    "fixes": {
+                        "CINOP": "CINOP"
+                    }
+                },
+                {
+                    "name": "DINER",
+                    "fixes": {
+                        "DINER": "DINER",
+                        "TOLOY": "OVERFLY TOLOY AT OR ABOVE 3500 HOLD AT TOLOY RIGHT TURN INBOUNDCOURSE 325 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JAYME",
+                    "fixes": {
+                        "JAYME": "JAYME"
+                    }
+                }
+            ]
+        }
+    ]
+}

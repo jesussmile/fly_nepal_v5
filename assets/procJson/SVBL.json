@@ -1,0 +1,138 @@
+{
+    "fixes": [
+        {
+            "name": "40VOR",
+            "lat": 10.175080566666667,
+            "lon": 67.6156
+        },
+        {
+            "name": "BAL",
+            "lat": 10.18325,
+            "lon": 67.5485
+        },
+        {
+            "name": "FF09",
+            "lat": 10.168944433333333,
+            "lon": 67.66592221666667
+        },
+        {
+            "name": "MA09",
+            "lat": 10.179575,
+            "lon": 67.57869443333334
+        },
+        {
+            "name": "MASPU",
+            "lat": 9.959166666666667,
+            "lon": 67.15083333333334
+        },
+        {
+            "name": "ORODI",
+            "lat": 10.439722216666667,
+            "lon": 67.15888888333333
+        },
+        {
+            "name": "VAL",
+            "lat": 10.147861116666666,
+            "lon": 67.92275
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "MASPU1",
+            "rnw": "28",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 09",
+                    "fixes": {
+                        "RNW 09": "RNW 09 HDG 094 UNTIL 3.0 FROM",
+                        "BAL": "BAL HDG 162 INTERCEPT RADIAL 132 TO",
+                        "MASPU": "MASPU MASPU 8000"
+                    }
+                },
+                {
+                    "rwy": "RNW 27",
+                    "fixes": {
+                        "RNW 27": "RNW 27 HDG 274 UNTIL 3.0 FROM",
+                        "BAL": "BAL TURN LEFT HDG 096 INTERCEPT RADIAL 132 TO",
+                        "MASPU": "MASPU MASPU 8000"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "ORODI1",
+            "rnw": "28",
+            "fixes": {
+                "BAL": "BAL",
+                "ORODI": "ORODI AT OR ABOVE 11000"
+            },
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 09",
+                    "fixes": {
+                        "RNW 09": "RNW 09 TRK 094 UNTIL 1830 HDG 101 UNTIL 5.0 FROM",
+                        "BAL": "BAL"
+                    }
+                },
+                {
+                    "rwy": "RNW 27",
+                    "fixes": {
+                        "RNW 27": "RNW 27 HDG 274 UNTIL 5.0 FROM",
+                        "BAL": "BAL"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "VAL1",
+            "rnw": "28",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 09",
+                    "fixes": {
+                        "RNW 09": "RNW 09 HDG 094 UNTIL 3.0 FROM",
+                        "BAL": "BAL TURN RIGHT DIRECT",
+                        "VAL": "VAL AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "rwy": "RNW 27",
+                    "fixes": {
+                        "RNW 27": "RNW 27 TRK 274 UNTIL 1830",
+                        "VAL": "VAL AT OR ABOVE 8000"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "FF09": "FF09 3400",
+                "40VOR": "40VOR AT OR ABOVE 2370",
+                "MA09": "MA09 1607 RNW 09 TRK 095 UNTIL 3500 TURN RIGHT DIRECT",
+                "BAL": "BAL AT OR ABOVE 5000 HOLD AT BAL LEFT TURN INBOUNDCOURSE 275 ALT 6000 LEGTIME 1 FAF FF09 MAP MA09"
+            },
+            "transitions": [
+                {
+                    "name": "BAL",
+                    "fixes": {
+                        "BAL": "BAL AT OR ABOVE 6000",
+                        "FF09": "FF09 AT OR ABOVE 6000 TRK 320 UNTIL 4.4 FROM FF09 TURN LEFT HDG 140 INTERCEPT RADIAL 095 TO FF09"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "ATKIS",
+            "lat": 5.181861116666667,
+            "lon": 96.72386111666667
+        },
+        {
+            "name": "AVGES",
+            "lat": 5.364333333333334,
+            "lon": 97.20777778333333
+        },
+        {
+            "name": "MA501",
+            "lat": 5.162944433333333,
+            "lon": 96.83080556666667
+        },
+        {
+            "name": "MA502",
+            "lat": 5.187583333333333,
+            "lon": 96.87694443333334
+        },
+        {
+            "name": "MA701",
+            "lat": 5.302972216666666,
+            "lon": 97.09327778333333
+        },
+        {
+            "name": "MA702",
+            "lat": 5.2652222166666665,
+            "lon": 97.02247221666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "MA501": "MA501 AT OR ABOVE 2000 SPEED 220",
+                "MA502": "MA502 1500 RNW 06 TRK 063 UNTIL 1000 TURN LEFT DIRECT",
+                "ATKIS": "ATKIS AT OR ABOVE 4000 HOLD AT ATKIS LEFT TURN INBOUNDCOURSE 101 ALT 4000 LEGTIME 1 FAF MA502 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ATKIS",
+                    "fixes": {
+                        "ATKIS": "ATKIS AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "MA701": "MA701 AT OR ABOVE 2500",
+                "MA702": "MA702 1500 RNW 24 TRK 243 UNTIL 1000 TURN RIGHT DIRECT",
+                "AVGES": "AVGES AT OR ABOVE 4000 HOLD AT AVGES RIGHT TURN INBOUNDCOURSE 243 ALT 4000 SPEED 185 LEGTIME 1 FAF MA702 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "AVGES",
+                    "fixes": {
+                        "AVGES": "AVGES AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

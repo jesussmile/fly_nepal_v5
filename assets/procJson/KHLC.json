@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "FIMEV",
+            "lat": 39.18404721666667,
+            "lon": 99.83665
+        },
+        {
+            "name": "GECEV",
+            "lat": 39.573686116666664,
+            "lon": 99.82631111666667
+        },
+        {
+            "name": "HAKIP",
+            "lat": 39.471997216666665,
+            "lon": 99.82901943333333
+        },
+        {
+            "name": "HAVRI",
+            "lat": 39.285769433333336,
+            "lon": 99.83396111666667
+        },
+        {
+            "name": "IGEFO",
+            "lat": 39.32497778333333,
+            "lon": 99.832925
+        },
+        {
+            "name": "WITUB",
+            "lat": 39.425425,
+            "lon": 99.83025833333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "GECEV": "GECEV AT OR ABOVE 4200",
+                "HAKIP": "HAKIP 3900",
+                "WITUB": "WITUB AT OR ABOVE 3000 RNW 18 TRK 176 UNTIL 2488",
+                "FIMEV": "OVERFLY FIMEV AT OR ABOVE 4200 HOLD AT FIMEV RIGHT TURN INBOUNDCOURSE 356 LEGDIST 5 FAF HAKIP MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "GECEV",
+                    "fixes": {
+                        "GECEV": "GECEV RIGHT TURN INBOUNDCOURSE 176 ALT 4200 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "FIMEV": "FIMEV AT OR ABOVE 4200",
+                "HAVRI": "HAVRI 3900",
+                "IGEFO": "IGEFO AT OR ABOVE 3140 RNW 36 TRK 356 UNTIL 2600",
+                "GECEV": "OVERFLY GECEV AT OR ABOVE 4200 HOLD AT GECEV RIGHT TURN INBOUNDCOURSE 176 LEGDIST 5 FAF HAVRI MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "FIMEV",
+                    "fixes": {
+                        "FIMEV": "FIMEV RIGHT TURN INBOUNDCOURSE 356 ALT 4200 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

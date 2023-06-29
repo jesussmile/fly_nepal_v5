@@ -1,0 +1,130 @@
+{
+    "fixes": [
+        {
+            "name": "CFGBF",
+            "lat": 36.19258611666667,
+            "lon": 89.01147221666666
+        },
+        {
+            "name": "CNG",
+            "lat": 37.008608333333335,
+            "lon": 88.83691388333334
+        },
+        {
+            "name": "GIYEY",
+            "lat": 36.19250556666667,
+            "lon": 89.01149443333334
+        },
+        {
+            "name": "LOYIG",
+            "lat": 36.57355,
+            "lon": 88.95884166666667
+        },
+        {
+            "name": "OBION",
+            "lat": 36.297797216666666,
+            "lon": 88.99700833333333
+        },
+        {
+            "name": "OLELE",
+            "lat": 36.29211111666667,
+            "lon": 88.99780556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 36.2397832,
+            "lon": 89.0045683
+        },
+        {
+            "name": "PI002",
+            "lat": 36.194662083333334,
+            "lon": 89.07358243333333
+        },
+        {
+            "name": "PI003",
+            "lat": 36.13204163333333,
+            "lon": 89.01857851666666
+        },
+        {
+            "name": "POTYI",
+            "lat": 36.43174166666667,
+            "lon": 88.97851943333333
+        },
+        {
+            "name": "UKIKE",
+            "lat": 36.474586116666664,
+            "lon": 88.972575
+        },
+        {
+            "name": "YOGOV",
+            "lat": 36.342666666666666,
+            "lon": 88.99082221666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS01",
+            "fixes": {
+                "CFGBF": "CFGBF AT OR ABOVE 2000",
+                "OBION": "OBION 1807 RNW 01 TRK 006 UNTIL 1300 TURN RIGHT DIRECT OBION AT OR ABOVE 2500 HOLD AT OBION LEFT TURN INBOUNDCOURSE 006 LEGTIME 1 FAF OBION MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "OBION",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "GIYEY": "GIYEY AT OR ABOVE 2000",
+                "OLELE": "OLELE 1900",
+                "YOGOV": "YOGOV AT OR ABOVE 920 RNW 01 TRK 006 UNTIL 546",
+                "LOYIG": "OVERFLY LOYIG AT OR ABOVE 2900 HOLD AT LOYIG RIGHT TURN INBOUNDCOURSE 186 LEGDIST 4 FAF OLELE MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "CNG",
+                    "fixes": {
+                        "CNG": "CNG",
+                        "GIYEY": "OVERFLY GIYEY AT OR ABOVE 2000 HOLD AT GIYEY RIGHT TURN INBOUNDCOURSE 006 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "LOYIG": "LOYIG AT OR ABOVE 2900",
+                "UKIKE": "UKIKE 2000",
+                "POTYI": "POTYI AT OR ABOVE 1160 RNW 19 TRK 186 UNTIL 570",
+                "GIYEY": "OVERFLY GIYEY AT OR ABOVE 2300 HOLD AT GIYEY RIGHT TURN INBOUNDCOURSE 006 LEGDIST 4 FAF UKIKE MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "CNG",
+                    "fixes": {
+                        "CNG": "CNG"
+                    }
+                },
+                {
+                    "name": "LOYIG",
+                    "fixes": {
+                        "LOYIG": "LOYIG RIGHT TURN INBOUNDCOURSE 186 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

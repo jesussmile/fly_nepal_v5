@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "CAVDA",
+            "lat": 42.81180556666666,
+            "lon": 78.992825
+        },
+        {
+            "name": "GOGSE",
+            "lat": 42.799841666666666,
+            "lon": 78.80925833333333
+        },
+        {
+            "name": "JALWE",
+            "lat": 42.886886116666666,
+            "lon": 78.67936666666667
+        },
+        {
+            "name": "KIVRE",
+            "lat": 42.664141666666666,
+            "lon": 78.80971388333333
+        },
+        {
+            "name": "PECIB",
+            "lat": 42.92392221666667,
+            "lon": 78.62389721666666
+        },
+        {
+            "name": "SAGNE",
+            "lat": 42.991841666666666,
+            "lon": 78.5219
+        },
+        {
+            "name": "TOVAE",
+            "lat": 42.917658333333335,
+            "lon": 78.43055278333334
+        },
+        {
+            "name": "UPUCO",
+            "lat": 43.06595,
+            "lon": 78.61346666666667
+        },
+        {
+            "name": "YUDUD",
+            "lat": 42.73801111666667,
+            "lon": 78.90116111666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "YUDUD": "YUDUD AT OR ABOVE 3900",
+                "GOGSE": "GOGSE 2400 RNW 06 TRK 059 UNTIL 1070 TURN RIGHT DIRECT",
+                "KIVRE": "OVERFLY KIVRE AT OR ABOVE 3900 HOLD AT KIVRE RIGHT TURN INBOUNDCOURSE 329 LEGDIST 4 FAF GOGSE MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "CAVDA",
+                    "fixes": {
+                        "CAVDA": "CAVDA"
+                    }
+                },
+                {
+                    "name": "KIVRE",
+                    "fixes": {
+                        "KIVRE": "KIVRE"
+                    }
+                },
+                {
+                    "name": "YUDUD",
+                    "fixes": {
+                        "YUDUD": "YUDUD RIGHT TURN INBOUNDCOURSE 059 ALT 3900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "SAGNE": "SAGNE AT OR ABOVE 3900",
+                "PECIB": "PECIB 2400",
+                "JALWE": "JALWE AT OR ABOVE 1340 RNW 24 TRK 239 UNTIL 1070 TURN LEFT DIRECT",
+                "TOVAE": "OVERFLY TOVAE AT OR ABOVE 3900 HOLD AT TOVAE RIGHT TURN INBOUNDCOURSE 329 LEGDIST 4 FAF PECIB MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "SAGNE",
+                    "fixes": {
+                        "SAGNE": "SAGNE RIGHT TURN INBOUNDCOURSE 239 ALT 3900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TOVAE",
+                    "fixes": {
+                        "TOVAE": "TOVAE"
+                    }
+                },
+                {
+                    "name": "UPUCO",
+                    "fixes": {
+                        "UPUCO": "UPUCO"
+                    }
+                }
+            ]
+        }
+    ]
+}

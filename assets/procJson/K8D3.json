@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "BUNKI",
+            "lat": 45.83648611666667,
+            "lon": 97.04720278333333
+        },
+        {
+            "name": "WENUN",
+            "lat": 45.582675,
+            "lon": 96.96649443333334
+        },
+        {
+            "name": "WITVU",
+            "lat": 45.755172216666665,
+            "lon": 97.02126666666666
+        },
+        {
+            "name": "ZIPUD",
+            "lat": 45.50134166666667,
+            "lon": 96.94078888333334
+        },
+        {
+            "name": "ZUXOD",
+            "lat": 45.623502783333336,
+            "lon": 96.97942778333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 16",
+        "RNW 22",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "BUNKI": "BUNKI AT OR ABOVE 4000",
+                "WITVU": "WITVU 2800 RNW 16 TRK 164 UNTIL 1478",
+                "ZIPUD": "OVERFLY ZIPUD AT OR ABOVE 4000 HOLD AT ZIPUD RIGHT TURN INBOUNDCOURSE 344 LEGDIST 4 FAF WITVU MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "BUNKI",
+                    "fixes": {
+                        "BUNKI": "BUNKI RIGHT TURN INBOUNDCOURSE 164 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "ZIPUD": "ZIPUD AT OR ABOVE 4000",
+                "WENUN": "WENUN 2800",
+                "ZUXOD": "ZUXOD AT OR ABOVE 2000 RNW 34 TRK 344 UNTIL 1478",
+                "BUNKI": "OVERFLY BUNKI AT OR ABOVE 4000 HOLD AT BUNKI RIGHT TURN INBOUNDCOURSE 164 LEGDIST 4 FAF WENUN MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "ZIPUD",
+                    "fixes": {
+                        "ZIPUD": "ZIPUD RIGHT TURN INBOUNDCOURSE 344 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

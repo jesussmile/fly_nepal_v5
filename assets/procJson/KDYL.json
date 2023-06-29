@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "AWISA",
+            "lat": 40.176077783333334,
+            "lon": 75.28054721666666
+        },
+        {
+            "name": "DIRPE",
+            "lat": 40.47303888333333,
+            "lon": 74.99361943333334
+        },
+        {
+            "name": "FLING",
+            "lat": 40.4899,
+            "lon": 74.88475278333334
+        },
+        {
+            "name": "GROOM",
+            "lat": 40.38973611666667,
+            "lon": 75.03774721666667
+        },
+        {
+            "name": "SBJ",
+            "lat": 40.583044433333335,
+            "lon": 74.74179166666667
+        },
+        {
+            "name": "WOKUS",
+            "lat": 40.26538611666667,
+            "lon": 75.18993611666667
+        },
+        {
+            "name": "ZURDA",
+            "lat": 40.40062221666667,
+            "lon": 75.05468333333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "AWISA": "AWISA AT OR ABOVE 3000 OVERFLY AWISA AT OR ABOVE 3000 HOLD AT AWISA LEFT TURN INBOUNDCOURSE 050 LEGDIST 4 FAF WOKUS MAP RNW 05",
+                "WOKUS": "WOKUS 2000 RNW 05 TRK 049 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AWISA",
+                    "fixes": {
+                        "AWISA": "AWISA LEFT TURN INBOUNDCOURSE 050 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "DIRPE": "DIRPE AT OR ABOVE 3000",
+                "ZURDA": "ZURDA 2000 RNW 23",
+                "WOKUS": "WOKUS",
+                "AWISA": "OVERFLY AWISA AT OR ABOVE 3000 HOLD AT AWISA LEFT TURN INBOUNDCOURSE 050 LEGDIST 4 FAF ZURDA MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "DIRPE",
+                    "fixes": {
+                        "DIRPE": "DIRPE RIGHT TURN INBOUNDCOURSE 225 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA23",
+            "fixes": {
+                "FLING": "FLING AT OR ABOVE 2400",
+                "GROOM": "GROOM 2200 RNW 23 TRK 240 UNTIL 800 TURN RIGHT DIRECT GROOM AT OR ABOVE 2200 HOLD AT GROOM RIGHT TURN INBOUNDCOURSE 240 LEGTIME 1 FAF GROOM MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "GROOM",
+                    "fixes": {
+                        "GROOM": "GROOM RIGHT TURN INBOUNDCOURSE 240 ALT 2200 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SBJ",
+                    "fixes": {
+                        "SBJ": "SBJ"
+                    }
+                }
+            ]
+        }
+    ]
+}

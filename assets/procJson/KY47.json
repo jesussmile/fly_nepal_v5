@@ -1,0 +1,71 @@
+{
+    "fixes": [
+        {
+            "name": "MAJUW",
+            "lat": 42.50146388333334,
+            "lon": 83.62307778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 42.35180205,
+            "lon": 83.5761467
+        },
+        {
+            "name": "PI002",
+            "lat": 42.29101381666667,
+            "lon": 83.62748596666667
+        },
+        {
+            "name": "PI003",
+            "lat": 42.2462355,
+            "lon": 83.54325615
+        },
+        {
+            "name": "SVM",
+            "lat": 42.40864166666667,
+            "lon": 83.59390278333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORA08",
+            "fixes": {
+                "SVM": "SVM 2700 SVM AT OR ABOVE 3000 HOLD AT SVM RIGHT TURN INBOUNDCOURSE 350 LEGTIME 1 FAF SVM MAP MAJUW",
+                "MAJUW": "MAJUW 1600 RNW 08 TRK 350 UNTIL 1600 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SVM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA26",
+            "fixes": {
+                "SVM": "SVM 2700 SVM AT OR ABOVE 3000 HOLD AT SVM RIGHT TURN INBOUNDCOURSE 350 LEGTIME 1 FAF SVM MAP MAJUW",
+                "MAJUW": "MAJUW 1600 RNW 26 TRK 350 UNTIL 1600 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SVM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

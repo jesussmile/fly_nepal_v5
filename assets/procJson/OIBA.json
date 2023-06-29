@@ -1,0 +1,259 @@
+{
+    "fixes": [
+        {
+            "name": "ABM",
+            "lat": 25.877916666666668,
+            "lon": 55.02305556666666
+        },
+        {
+            "name": "ABMNB",
+            "lat": 25.878,
+            "lon": 55.02280556666667
+        },
+        {
+            "name": "CQ26",
+            "lat": 25.886686116666667,
+            "lon": 55.20749721666667
+        },
+        {
+            "name": "EN08",
+            "lat": 25.877416666666665,
+            "lon": 55.020013883333334
+        },
+        {
+            "name": "FN08",
+            "lat": 25.854475,
+            "lon": 54.91039443333333
+        },
+        {
+            "name": "FN26",
+            "lat": 25.879619433333332,
+            "lon": 55.12791943333333
+        },
+        {
+            "name": "FN267",
+            "lat": 25.880527783333335,
+            "lon": 55.18909721666667
+        },
+        {
+            "name": "FQ08",
+            "lat": 25.853669433333334,
+            "lon": 54.89643888333333
+        },
+        {
+            "name": "FQ26",
+            "lat": 25.8824,
+            "lon": 55.11521666666667
+        },
+        {
+            "name": "KHMNB",
+            "lat": 26.763083333333334,
+            "lon": 55.907666666666664
+        },
+        {
+            "name": "LEN",
+            "lat": 26.536138883333333,
+            "lon": 54.851166666666664
+        },
+        {
+            "name": "MQ08",
+            "lat": 25.874577783333333,
+            "lon": 55.004866666666665
+        },
+        {
+            "name": "SIR",
+            "lat": 25.914583333333333,
+            "lon": 54.53508333333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "KHM1H",
+            "rnw": "26",
+            "fixes": {
+                "KHMNB": "KHMNB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KHM1J",
+            "rnw": "08",
+            "fixes": {
+                "KHMNB": "KHMNB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LEN1H",
+            "rnw": "26",
+            "fixes": {
+                "LEN": "LEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LEN1J",
+            "rnw": "08",
+            "fixes": {
+                "LEN": "LEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SIR1H",
+            "rnw": "26",
+            "fixes": {
+                "SIR": "SIR"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SIR1J",
+            "rnw": "08",
+            "fixes": {
+                "ABMNB": "OVERFLY ABMNB TURN RIGHT DIRECT",
+                "SIR": "SIR"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "KHM1T",
+            "runway": "RNW 08 RNW 26",
+            "fixes": {
+                "KHMNB": "KHMNB",
+                "ABMNB": "ABMNB"
+            }
+        },
+        {
+            "name": "LEN1T",
+            "runway": "RNW 08 RNW 26",
+            "fixes": {
+                "LEN": "LEN",
+                "ABMNB": "ABMNB"
+            }
+        },
+        {
+            "name": "SIR1T",
+            "runway": "RNW 08 RNW 26",
+            "fixes": {
+                "SIR": "SIR",
+                "ABMNB": "ABMNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FN08": "FN08 2000",
+                "EN08": "OVERFLY EN08 61",
+                "ABMNB": "OVERFLY ABMNB AT OR ABOVE 420 RNW 08 TRK 075 UNTIL 1400 TURN LEFT DIRECT ABMNB 4000 HOLD AT ABMNB RIGHT TURN INBOUNDCOURSE 280 LEGTIME 1 FAF FN08 MAP ABM"
+            },
+            "transitions": [
+                {
+                    "name": "ABM1",
+                    "fixes": {
+                        "ABMNB": "ABMNB AT OR ABOVE 4000 TRK 280 UNTIL 7.0 FROM ABMNB"
+                    }
+                },
+                {
+                    "name": "ABM2",
+                    "fixes": {
+                        "ABMNB": "ABMNB AT OR ABOVE 4000 TRK 267 UNTIL 7.0 FROM ABMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FN26": "FN26 1500 RNW 26",
+                "ABMNB": "OVERFLY ABMNB TRK 267 UNTIL 1400 TURN RIGHT DIRECT ABMNB 4000 HOLD AT ABMNB LEFT TURN INBOUNDCOURSE 067 LEGTIME 1 FAF FN26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "ABM",
+                    "fixes": {
+                        "ABMNB": "ABMNB AT OR ABOVE 4000 TRK 067 UNTIL 8.8 FROM ABMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD08",
+            "fixes": {
+                "FQ08": "FQ08 2300",
+                "MQ08": "MQ08 337 RNW 08 TRK 076 UNTIL 2000 TURN LEFT DIRECT",
+                "ABMNB": "ABMNB 4000 HOLD AT ABMNB RIGHT TURN INBOUNDCOURSE 287 SPEED 230 LEGTIME 1 FAF FQ08 MAP MQ08"
+            },
+            "transitions": [
+                {
+                    "name": "ABM",
+                    "fixes": {
+                        "ABMNB": "ABMNB AT OR ABOVE 4000 TRK 287 UNTIL 7.0 FROM",
+                        "ABM": "ABM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB08",
+            "fixes": {
+                "FN267": "FN267 1500",
+                "ABMNB": "ABMNB 840 RNW 08 TRK 267 UNTIL 1400 TURN RIGHT DIRECT ABMNB 4000 HOLD AT ABMNB LEFT TURN INBOUNDCOURSE 067 ALT 4000 LEGTIME 1 FAF FN267 MAP ABM"
+            },
+            "transitions": [
+                {
+                    "name": "ABM",
+                    "fixes": {
+                        "ABMNB": "ABMNB AT OR ABOVE 4000 TRK 075 UNTIL 9.0 FROM ABMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD26",
+            "fixes": {
+                "CQ26": "CQ26 AT OR ABOVE 1600",
+                "FQ26": "FQ26 1200 RNW 26",
+                "ABMNB": "OVERFLY ABMNB TRK 265 UNTIL 2000 TURN RIGHT DIRECT ABMNB 4000 HOLD AT ABMNB LEFT TURN INBOUNDCOURSE 063 SPEED 230 LEGTIME 1 FAF FQ26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "ABM",
+                    "fixes": {
+                        "ABMNB": "ABMNB AT OR ABOVE 4000 TRK 063 UNTIL 10.0 FROM",
+                        "ABM": "ABM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB26",
+            "fixes": {
+                "FN267": "FN267 1500",
+                "ABMNB": "ABMNB 840 RNW 26 TRK 267 UNTIL 1400 TURN RIGHT DIRECT ABMNB 4000 HOLD AT ABMNB LEFT TURN INBOUNDCOURSE 067 ALT 4000 LEGTIME 1 FAF FN267 MAP ABM"
+            },
+            "transitions": [
+                {
+                    "name": "ABM",
+                    "fixes": {
+                        "ABMNB": "ABMNB AT OR ABOVE 4000 TRK 075 UNTIL 9.0 FROM ABMNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

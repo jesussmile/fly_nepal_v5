@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "20THR",
+            "lat": 66.18017221666666,
+            "lon": 15.346633333333333
+        },
+        {
+            "name": "ASTEM",
+            "lat": 66.02784721666667,
+            "lon": 15.603547216666668
+        },
+        {
+            "name": "D030F",
+            "lat": 66.31442221666667,
+            "lon": 15.246472216666668
+        },
+        {
+            "name": "EBESA",
+            "lat": 66.36860833333333,
+            "lon": 15.108783333333333
+        },
+        {
+            "name": "FN20",
+            "lat": 66.30129443333334,
+            "lon": 15.327727783333334
+        },
+        {
+            "name": "NODRU",
+            "lat": 65.96429443333334,
+            "lon": 15.419727783333334
+        },
+        {
+            "name": "NOHEL",
+            "lat": 66.372925,
+            "lon": 15.315413883333333
+        },
+        {
+            "name": "TNF01",
+            "lat": 66.13287778333333,
+            "lon": 15.362752783333333
+        },
+        {
+            "name": "TNF19",
+            "lat": 66.30643611666666,
+            "lon": 15.32375
+        },
+        {
+            "name": "TNI01",
+            "lat": 66.04656111666667,
+            "lon": 15.392019433333333
+        },
+        {
+            "name": "TNNB",
+            "lat": 66.22080556666667,
+            "lon": 15.331222216666667
+        },
+        {
+            "name": "VESEM",
+            "lat": 66.00536666666666,
+            "lon": 15.200797216666667
+        },
+        {
+            "name": "WAKES",
+            "lat": 66.37697221666667,
+            "lon": 15.522111116666666
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB19",
+            "fixes": {
+                "FN20": "FN20 1600 RNW 19",
+                "TNNB": "OVERFLY TNNB TRK 191 UNTIL 1000 TURN RIGHT DIRECT TNNB 3000 HOLD AT TNNB LEFT TURN INBOUNDCOURSE 030 LEGTIME 1 FAF FN20 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "TN",
+                    "fixes": {
+                        "TNNB": "TNNB AT OR ABOVE 3000",
+                        "D030F": "OVERFLY D030F AT OR ABOVE 1600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "TNI01": "TNI01 AT OR ABOVE 3100",
+                "TNF01": "TNF01 1900",
+                "20THR": "20THR AT OR ABOVE 840 RNW 01 TRK 018 UNTIL 1600 TURN LEFT DIRECT",
+                "ASTEM": "ASTEM 3800 HOLD AT ASTEM RIGHT TURN INBOUNDCOURSE 088 ALT 3800 LEGTIME 1 FAF TNF01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ASTEM",
+                    "fixes": {
+                        "ASTEM": "ASTEM AT OR ABOVE 3800"
+                    }
+                },
+                {
+                    "name": "NODRU",
+                    "fixes": {
+                        "NODRU": "NODRU AT OR ABOVE 4200"
+                    }
+                },
+                {
+                    "name": "VESEM",
+                    "fixes": {
+                        "VESEM": "VESEM AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "NOHEL": "NOHEL AT OR ABOVE 2300",
+                "TNF19": "TNF19 1700 RNW 19 TRK 193 UNTIL 1000 TURN RIGHT DIRECT",
+                "WAKES": "WAKES HOLD AT WAKES RIGHT TURN INBOUNDCOURSE 103 ALT 2300 LEGTIME 1 FAF TNF19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "EBESA",
+                    "fixes": {
+                        "EBESA": "EBESA AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "WAKES",
+                    "fixes": {
+                        "WAKES": "WAKES AT OR ABOVE 3800"
+                    }
+                }
+            ]
+        }
+    ]
+}

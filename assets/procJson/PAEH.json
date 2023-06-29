@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "CABNN",
+            "lat": 58.77303611666667,
+            "lon": 162.13382221666666
+        },
+        {
+            "name": "CFKMW",
+            "lat": 58.690013883333336,
+            "lon": 162.067525
+        },
+        {
+            "name": "CILAS",
+            "lat": 58.68832221666667,
+            "lon": 162.05856388333333
+        },
+        {
+            "name": "ELPEE",
+            "lat": 58.882072216666664,
+            "lon": 161.96688611666667
+        },
+        {
+            "name": "IVUXE",
+            "lat": 58.88081111666666,
+            "lon": 162.04368333333332
+        },
+        {
+            "name": "JADSA",
+            "lat": 58.89206111666667,
+            "lon": 161.91269166666666
+        },
+        {
+            "name": "KRSSS",
+            "lat": 58.764675,
+            "lon": 162.05822778333334
+        },
+        {
+            "name": "ROGOC",
+            "lat": 58.803266666666666,
+            "lon": 160.66953056666668
+        },
+        {
+            "name": "RRLND",
+            "lat": 58.87195,
+            "lon": 161.78739443333333
+        },
+        {
+            "name": "TRUKE",
+            "lat": 58.75242778333333,
+            "lon": 162.02834721666667
+        },
+        {
+            "name": "WAGEN",
+            "lat": 58.889372216666665,
+            "lon": 162.300075
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "CABNN2",
+            "rnw": "33",
+            "fixes": {
+                "CABNN": "CABNN",
+                "JADSA": "JADSA",
+                "ROGOC": "ROGOC"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD15",
+            "fixes": {
+                "ELPEE": "ELPEE AT OR ABOVE 4500 ELPEE AT OR ABOVE 4500 HOLD AT ELPEE RIGHT TURN INBOUNDCOURSE 182 ALT 5000 SPEED 310 LEGTIME 1 FAF TRUKE MAP CILAS",
+                "TRUKE": "TRUKE 2200",
+                "CILAS": "CILAS 940 RNW 15 TRK 182 UNTIL 940 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ELPEE",
+                    "fixes": {
+                        "ELPEE": "ELPEE RIGHT TURN INBOUNDCOURSE 182 ALT 4500 SPEED 310 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "IVUXE": "IVUXE AT OR ABOVE 3000",
+                "KRSSS": "KRSSS 2400",
+                "CFKMW": "OVERFLY CFKMW 969 RNW 15 TRK 172 UNTIL 969 TURN RIGHT DIRECT",
+                "WAGEN": "OVERFLY WAGEN AT OR ABOVE 3500 HOLD AT WAGEN RIGHT TURN INBOUNDCOURSE 082 ALT 8000 LEGDIST 2 FAF KRSSS MAP CFKMW"
+            },
+            "transitions": [
+                {
+                    "name": "RRLND",
+                    "fixes": {
+                        "RRLND": "RRLND AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "WAGEN",
+                    "fixes": {
+                        "WAGEN": "WAGEN AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,149 @@
+{
+    "fixes": [
+        {
+            "name": "CLL",
+            "lat": 30.605002783333333,
+            "lon": 96.42068056666666
+        },
+        {
+            "name": "CUMUL",
+            "lat": 30.272363883333334,
+            "lon": 96.73121111666667
+        },
+        {
+            "name": "GOPLY",
+            "lat": 30.544997216666665,
+            "lon": 96.62134721666666
+        },
+        {
+            "name": "HUNOV",
+            "lat": 30.396161116666665,
+            "lon": 96.45810278333333
+        },
+        {
+            "name": "JORSI",
+            "lat": 30.758138883333334,
+            "lon": 96.67658611666667
+        },
+        {
+            "name": "KOKEC",
+            "lat": 30.334333333333333,
+            "lon": 96.59474443333333
+        },
+        {
+            "name": "LUVHI",
+            "lat": 30.592541666666666,
+            "lon": 96.75075833333334
+        },
+        {
+            "name": "MAHFI",
+            "lat": 30.520369433333332,
+            "lon": 96.70339721666667
+        },
+        {
+            "name": "NUPSY",
+            "lat": 30.696088883333335,
+            "lon": 96.81359721666666
+        },
+        {
+            "name": "ORUDE",
+            "lat": 30.43796388333333,
+            "lon": 96.65724443333333
+        },
+        {
+            "name": "ROCOG",
+            "lat": 30.63389443333333,
+            "lon": 96.95043333333334
+        },
+        {
+            "name": "WENAB",
+            "lat": 30.489902783333335,
+            "lon": 96.688625
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA15",
+            "fixes": {
+                "CLL": "CLL AT OR ABOVE 2100 CLL AT OR ABOVE 2100 HOLD AT CLL RIGHT TURN INBOUNDCOURSE 243 LEGTIME 1 FAF GOPLY MAP MAHFI",
+                "GOPLY": "GOPLY 2000",
+                "MAHFI": "MAHFI 1220 RNW 15 TRK 243 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CLL",
+                    "fixes": {
+                        "CLL": "CLL RIGHT TURN INBOUNDCOURSE 243 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA33",
+            "fixes": {
+                "CLL": "CLL AT OR ABOVE 2100 CLL AT OR ABOVE 2100 HOLD AT CLL RIGHT TURN INBOUNDCOURSE 243 LEGTIME 1 FAF GOPLY MAP MAHFI",
+                "GOPLY": "GOPLY 2000",
+                "MAHFI": "MAHFI 1220 RNW 33 TRK 243 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CLL",
+                    "fixes": {
+                        "CLL": "CLL RIGHT TURN INBOUNDCOURSE 243 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "NUPSY": "NUPSY AT OR ABOVE 2500",
+                "LUVHI": "LUVHI 2000 RNW 15 TRK 146 UNTIL 791",
+                "KOKEC": "OVERFLY KOKEC AT OR ABOVE 2000 HOLD AT KOKEC RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4 FAF LUVHI MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "JORSI",
+                    "fixes": {
+                        "JORSI": "JORSI"
+                    }
+                },
+                {
+                    "name": "ROCOG",
+                    "fixes": {
+                        "ROCOG": "ROCOG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "KOKEC": "KOKEC AT OR ABOVE 2000",
+                "ORUDE": "ORUDE 2000",
+                "WENAB": "WENAB AT OR ABOVE 920 RNW 33 TRK 326 UNTIL 760",
+                "NUPSY": "OVERFLY NUPSY AT OR ABOVE 2500 HOLD AT NUPSY RIGHT TURN INBOUNDCOURSE 146 LEGDIST 4 FAF ORUDE MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "CUMUL",
+                    "fixes": {
+                        "CUMUL": "CUMUL"
+                    }
+                },
+                {
+                    "name": "HUNOV",
+                    "fixes": {
+                        "HUNOV": "HUNOV"
+                    }
+                }
+            ]
+        }
+    ]
+}

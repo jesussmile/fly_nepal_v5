@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "CEXUK",
+            "lat": 31.575572216666668,
+            "lon": 87.87693611666667
+        },
+        {
+            "name": "ETIBY",
+            "lat": 31.683683333333335,
+            "lon": 87.85736388333333
+        },
+        {
+            "name": "FOVID",
+            "lat": 31.367088883333334,
+            "lon": 87.91455
+        },
+        {
+            "name": "INYAG",
+            "lat": 31.271766666666668,
+            "lon": 88.03007221666667
+        },
+        {
+            "name": "ITCIB",
+            "lat": 31.535127783333333,
+            "lon": 87.88424443333334
+        },
+        {
+            "name": "JIBEL",
+            "lat": 31.696436116666668,
+            "lon": 87.95388888333333
+        },
+        {
+            "name": "JIBIK",
+            "lat": 31.2463,
+            "lon": 87.8379
+        },
+        {
+            "name": "MVC",
+            "lat": 31.459325,
+            "lon": 87.35253888333334
+        },
+        {
+            "name": "NENRE",
+            "lat": 31.670855566666667,
+            "lon": 87.76086666666667
+        },
+        {
+            "name": "PUVNE",
+            "lat": 31.486891666666665,
+            "lon": 87.68906666666666
+        },
+        {
+            "name": "WAKVA",
+            "lat": 31.259069433333334,
+            "lon": 87.93397221666666
+        },
+        {
+            "name": "YARBO",
+            "lat": 31.441833333333335,
+            "lon": 88.41768611666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "WAKVA": "WAKVA AT OR ABOVE 2000 OVERFLY WAKVA AT OR ABOVE 2000 HOLD AT WAKVA RIGHT TURN INBOUNDCOURSE 011 LEGDIST 4 FAF FOVID MAP RNW 01",
+                "FOVID": "FOVID 2000 RNW 01",
+                "CEXUK": "CEXUK TURN RIGHT DIRECT",
+                "PUVNE": "PUVNE"
+            },
+            "transitions": [
+                {
+                    "name": "MVC",
+                    "fixes": {
+                        "MVC": "MVC",
+                        "JIBIK": "JIBIK AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "WAKVA",
+                    "fixes": {
+                        "WAKVA": "WAKVA RIGHT TURN INBOUNDCOURSE 011 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "YARBO",
+                    "fixes": {
+                        "YARBO": "YARBO",
+                        "INYAG": "INYAG AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "ETIBY": "ETIBY AT OR ABOVE 2000",
+                "CEXUK": "CEXUK 2000",
+                "ITCIB": "ITCIB AT OR ABOVE 1320 RNW 19",
+                "WAKVA": "OVERFLY WAKVA AT OR ABOVE 2000 HOLD AT WAKVA RIGHT TURN INBOUNDCOURSE 011 LEGDIST 4 FAF CEXUK MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "MVC",
+                    "fixes": {
+                        "MVC": "MVC",
+                        "NENRE": "NENRE AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "YARBO",
+                    "fixes": {
+                        "YARBO": "YARBO",
+                        "JIBEL": "JIBEL AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

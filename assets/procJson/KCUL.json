@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "BCASY",
+            "lat": 38.182575,
+            "lon": 88.12251943333334
+        },
+        {
+            "name": "HGOOD",
+            "lat": 38.28435,
+            "lon": 88.12193333333333
+        },
+        {
+            "name": "HORAV",
+            "lat": 37.859355566666665,
+            "lon": 88.269425
+        },
+        {
+            "name": "LRLEI",
+            "lat": 37.99613888333333,
+            "lon": 88.12359166666667
+        },
+        {
+            "name": "PRINC",
+            "lat": 38.329202783333336,
+            "lon": 87.61643611666666
+        },
+        {
+            "name": "UXZOR",
+            "lat": 37.87934443333333,
+            "lon": 88.12426111666667
+        },
+        {
+            "name": "WESON",
+            "lat": 37.79087221666666,
+            "lon": 87.92541111666667
+        },
+        {
+            "name": "ZIMUN",
+            "lat": 38.36674166666667,
+            "lon": 88.39956943333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "HGOOD": "HGOOD AT OR ABOVE 2500",
+                "BCASY": "BCASY 2100 RNW 18 TRK 181 UNTIL 638",
+                "UXZOR": "OVERFLY UXZOR AT OR ABOVE 2500 HOLD AT UXZOR RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF BCASY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "HGOOD",
+                    "fixes": {
+                        "HGOOD": "HGOOD RIGHT TURN INBOUNDCOURSE 181 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PRINC",
+                    "fixes": {
+                        "PRINC": "PRINC"
+                    }
+                },
+                {
+                    "name": "ZIMUN",
+                    "fixes": {
+                        "ZIMUN": "ZIMUN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "UXZOR": "UXZOR AT OR ABOVE 2500 OVERFLY UXZOR AT OR ABOVE 2500 HOLD AT UXZOR RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF LRLEI MAP RNW 36",
+                "LRLEI": "LRLEI 2100 RNW 36 TRK 001 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HORAV",
+                    "fixes": {
+                        "HORAV": "HORAV"
+                    }
+                },
+                {
+                    "name": "UXZOR",
+                    "fixes": {
+                        "UXZOR": "UXZOR RIGHT TURN INBOUNDCOURSE 001 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WESON",
+                    "fixes": {
+                        "WESON": "WESON"
+                    }
+                }
+            ]
+        }
+    ]
+}

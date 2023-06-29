@@ -1,0 +1,211 @@
+{
+    "fixes": [
+        {
+            "name": "BQPNB",
+            "lat": 32.75468333333333,
+            "lon": 91.88343333333333
+        },
+        {
+            "name": "CEPED",
+            "lat": 32.67751943333333,
+            "lon": 91.93071943333334
+        },
+        {
+            "name": "DOBYE",
+            "lat": 32.60451943333333,
+            "lon": 91.97863056666667
+        },
+        {
+            "name": "EMUPE",
+            "lat": 32.75217778333333,
+            "lon": 91.88162778333333
+        },
+        {
+            "name": "FAREX",
+            "lat": 32.937133333333335,
+            "lon": 91.94355278333333
+        },
+        {
+            "name": "FEKOV",
+            "lat": 32.57516388333333,
+            "lon": 91.81788056666667
+        },
+        {
+            "name": "FF34",
+            "lat": 32.666677783333334,
+            "lon": 91.82948888333334
+        },
+        {
+            "name": "GALIO",
+            "lat": 32.71355,
+            "lon": 91.83292221666666
+        },
+        {
+            "name": "GETGE",
+            "lat": 32.960644433333336,
+            "lon": 91.84853056666667
+        },
+        {
+            "name": "GUCES",
+            "lat": 32.671988883333334,
+            "lon": 91.85139443333334
+        },
+        {
+            "name": "HALAN",
+            "lat": 32.840347216666665,
+            "lon": 91.90984721666666
+        },
+        {
+            "name": "HOBAK",
+            "lat": 32.598591666666664,
+            "lon": 91.72321111666666
+        },
+        {
+            "name": "MLU",
+            "lat": 32.516880566666664,
+            "lon": 92.03601388333334
+        },
+        {
+            "name": "PI001",
+            "lat": 32.702704016666665,
+            "lon": 91.85196186666667
+        },
+        {
+            "name": "PI002",
+            "lat": 32.680531783333336,
+            "lon": 91.77098346666666
+        },
+        {
+            "name": "PI003",
+            "lat": 32.6061502,
+            "lon": 91.79361198333334
+        },
+        {
+            "name": "POSOE",
+            "lat": 32.91355,
+            "lon": 92.038525
+        },
+        {
+            "name": "TIVEE",
+            "lat": 32.55166388333333,
+            "lon": 91.9125
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA16",
+            "fixes": {
+                "DOBYE": "DOBYE AT OR ABOVE 2000",
+                "CEPED": "CEPED 2000",
+                "EMUPE": "EMUPE 820 RNW 16 TRK 026 UNTIL 2000 TURN RIGHT HDG 188 INTERCEPT RADIAL 218 TO",
+                "GALIO": "GALIO GALIO AT OR ABOVE 3000 HOLD AT GALIO RIGHT TURN INBOUNDCOURSE 218 LEGTIME 1 FAF CEPED MAP EMUPE"
+            },
+            "transitions": [
+                {
+                    "name": "MLU",
+                    "fixes": {
+                        "MLU": "MLU AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA34",
+            "fixes": {
+                "DOBYE": "DOBYE AT OR ABOVE 2000",
+                "CEPED": "CEPED 2000",
+                "EMUPE": "EMUPE 820 RNW 34 TRK 026 UNTIL 2000 TURN RIGHT HDG 188 INTERCEPT RADIAL 218 TO",
+                "GALIO": "GALIO GALIO AT OR ABOVE 3000 HOLD AT GALIO RIGHT TURN INBOUNDCOURSE 218 LEGTIME 1 FAF CEPED MAP EMUPE"
+            },
+            "transitions": [
+                {
+                    "name": "MLU",
+                    "fixes": {
+                        "MLU": "MLU AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB34",
+            "fixes": {
+                "FF34": "FF34 2000 RNW 34",
+                "BQPNB": "BQPNB AT OR ABOVE 568 TRK 330 UNTIL 1000 TURN RIGHT DIRECT BQPNB AT OR ABOVE 2000 HOLD AT BQPNB RIGHT TURN INBOUNDCOURSE 330 LEGTIME 1 FAF FF34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "MLU",
+                    "fixes": {
+                        "MLU": "MLU",
+                        "BQPNB": "BQPNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "FAREX": "FAREX AT OR ABOVE 1800",
+                "HALAN": "HALAN 1800 RNW 16",
+                "FEKOV": "OVERFLY FEKOV AT OR ABOVE 1800 HOLD AT FEKOV RIGHT TURN INBOUNDCOURSE 341 LEGDIST 4 FAF HALAN MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "FAREX",
+                    "fixes": {
+                        "FAREX": "FAREX RIGHT TURN INBOUNDCOURSE 161 ALT 1800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GETGE",
+                    "fixes": {
+                        "GETGE": "GETGE AT OR ABOVE 1800"
+                    }
+                },
+                {
+                    "name": "POSOE",
+                    "fixes": {
+                        "POSOE": "POSOE AT OR ABOVE 2200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "FEKOV": "FEKOV AT OR ABOVE 1900",
+                "GUCES": "GUCES 1800 RNW 34",
+                "FAREX": "OVERFLY FAREX AT OR ABOVE 1800 HOLD AT FAREX RIGHT TURN INBOUNDCOURSE 161 LEGDIST 4 FAF GUCES MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "FEKOV",
+                    "fixes": {
+                        "FEKOV": "FEKOV RIGHT TURN INBOUNDCOURSE 341 ALT 1900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HOBAK",
+                    "fixes": {
+                        "HOBAK": "HOBAK AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "TIVEE",
+                    "fixes": {
+                        "TIVEE": "TIVEE AT OR ABOVE 2200"
+                    }
+                }
+            ]
+        }
+    ]
+}

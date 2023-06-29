@@ -1,0 +1,143 @@
+{
+    "fixes": [
+        {
+            "name": "CADUH",
+            "lat": 34.10736943333333,
+            "lon": 101.80676943333333
+        },
+        {
+            "name": "CUBKY",
+            "lat": 34.224772216666665,
+            "lon": 101.63406111666667
+        },
+        {
+            "name": "FLOYD",
+            "lat": 33.976163883333335,
+            "lon": 101.26001666666667
+        },
+        {
+            "name": "HURIK",
+            "lat": 34.19348611666667,
+            "lon": 102.06233888333334
+        },
+        {
+            "name": "JEKUT",
+            "lat": 34.04282778333334,
+            "lon": 101.90135556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 34.03726326666666,
+            "lon": 101.82852521666666
+        },
+        {
+            "name": "PI002",
+            "lat": 33.967161383333334,
+            "lon": 101.8105591
+        },
+        {
+            "name": "PI003",
+            "lat": 33.946364716666665,
+            "lon": 101.89960921666666
+        },
+        {
+            "name": "PIBCI",
+            "lat": 33.92505,
+            "lon": 101.84266388333333
+        },
+        {
+            "name": "PVW",
+            "lat": 34.086191666666664,
+            "lon": 101.79018611666666
+        },
+        {
+            "name": "RITAE",
+            "lat": 34.223363883333334,
+            "lon": 101.47708611666667
+        },
+        {
+            "name": "UCEPE",
+            "lat": 34.28808888333333,
+            "lon": 101.540575
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 13",
+        "RNW 22",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "JEKUT": "JEKUT AT OR ABOVE 5100",
+                "CADUH": "CADUH 5100 RNW 04 TRK 042 UNTIL 3624",
+                "UCEPE": "OVERFLY UCEPE AT OR ABOVE 5000 HOLD AT UCEPE RIGHT TURN INBOUNDCOURSE 222 LEGDIST 5 FAF CADUH MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "HURIK",
+                    "fixes": {
+                        "HURIK": "HURIK"
+                    }
+                },
+                {
+                    "name": "PIBCI",
+                    "fixes": {
+                        "PIBCI": "PIBCI"
+                    }
+                },
+                {
+                    "name": "PVW",
+                    "fixes": {
+                        "PVW": "PVW",
+                        "JEKUT": "JEKUT AT OR ABOVE 5100 HOLD AT JEKUT RIGHT TURN INBOUNDCOURSE 042 ALT 5100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "UCEPE": "UCEPE AT OR ABOVE 5000",
+                "CUBKY": "CUBKY 5000 RNW 22 TRK 222 UNTIL 3774",
+                "JEKUT": "OVERFLY JEKUT AT OR ABOVE 5100 HOLD AT JEKUT RIGHT TURN INBOUNDCOURSE 042 LEGDIST 5 FAF CUBKY MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "FLOYD",
+                    "fixes": {
+                        "FLOYD": "FLOYD",
+                        "RITAE": "RITAE AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "PVW",
+                    "fixes": {
+                        "PVW": "PVW",
+                        "UCEPE": "UCEPE AT OR ABOVE 5000 HOLD AT UCEPE RIGHT TURN INBOUNDCOURSE 222 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR04",
+            "fixes": {
+                "PVW": "PVW 5200 RNW 04 TRK 024 UNTIL 4500 TURN RIGHT DIRECT PVW AT OR ABOVE 5200 HOLD AT PVW RIGHT TURN INBOUNDCOURSE 024 LEGTIME 1 FAF PVW MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "PVW",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 5200 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5200 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5200 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

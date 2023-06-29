@@ -1,0 +1,162 @@
+{
+    "fixes": [
+        {
+            "name": "AUSTS",
+            "lat": 28.228027783333335,
+            "lon": 97.14816943333334
+        },
+        {
+            "name": "BOMSE",
+            "lat": 28.078163883333332,
+            "lon": 97.57221111666667
+        },
+        {
+            "name": "CFDXU",
+            "lat": 28.199286116666666,
+            "lon": 97.65821388333333
+        },
+        {
+            "name": "CRP",
+            "lat": 27.903766666666666,
+            "lon": 97.44488056666667
+        },
+        {
+            "name": "ELFIY",
+            "lat": 28.112733333333335,
+            "lon": 97.59866943333333
+        },
+        {
+            "name": "ENFUD",
+            "lat": 28.18185,
+            "lon": 97.65163888333333
+        },
+        {
+            "name": "FIGNU",
+            "lat": 28.134922216666666,
+            "lon": 97.72964721666666
+        },
+        {
+            "name": "HUGUE",
+            "lat": 28.275694433333335,
+            "lon": 97.49551388333333
+        },
+        {
+            "name": "JBVSG",
+            "lat": 28.043480566666666,
+            "lon": 97.54596388333333
+        },
+        {
+            "name": "NEEHO",
+            "lat": 27.979911116666667,
+            "lon": 97.49709443333333
+        },
+        {
+            "name": "PANTH",
+            "lat": 28.114652783333334,
+            "lon": 97.59757778333334
+        },
+        {
+            "name": "PI001",
+            "lat": 28.16183995,
+            "lon": 97.63646931666666
+        },
+        {
+            "name": "PI002",
+            "lat": 28.232623683333333,
+            "lon": 97.62374433333333
+        },
+        {
+            "name": "PI003",
+            "lat": 28.249444083333334,
+            "lon": 97.70878751666666
+        },
+        {
+            "name": "SINTO",
+            "lat": 28.089519433333333,
+            "lon": 97.661575
+        },
+        {
+            "name": "THX",
+            "lat": 28.504997216666666,
+            "lon": 98.15046666666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 14",
+        "RNW 21",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD14",
+            "fixes": {
+                "CFDXU": "CFDXU AT OR ABOVE 1700",
+                "PANTH": "PANTH 1700",
+                "JBVSG": "JBVSG 87 RNW 14 TRK 138 UNTIL 450 TURN RIGHT DIRECT",
+                "SINTO": "SINTO AT OR ABOVE 1800 FAF PANTH MAP JBVSG"
+            },
+            "transitions": [
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP",
+                        "PANTH": "PANTH AT OR ABOVE 1700",
+                        "PI001": "PI001 AT OR ABOVE 1700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ENFUD": "ENFUD AT OR ABOVE 2100",
+                "ELFIY": "ELFIY 1700",
+                "BOMSE": "BOMSE AT OR ABOVE 1040 RNW 14 TRK 140 UNTIL 448 TURN LEFT DIRECT",
+                "HUGUE": "OVERFLY HUGUE AT OR ABOVE 2100 HOLD AT HUGUE RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4 FAF ELFIY MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "AUSTS",
+                    "fixes": {
+                        "AUSTS": "AUSTS",
+                        "HUGUE": "HUGUE AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP",
+                        "HUGUE": "HUGUE AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "THX",
+                    "fixes": {
+                        "THX": "THX",
+                        "FIGNU": "FIGNU AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "CRP": "CRP AT OR ABOVE 2000 OVERFLY CRP AT OR ABOVE 2000 HOLD AT CRP RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4 FAF NEEHO MAP RNW 32",
+                "NEEHO": "NEEHO 1400 RNW 32 TRK 320 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP RIGHT TURN INBOUNDCOURSE 323 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

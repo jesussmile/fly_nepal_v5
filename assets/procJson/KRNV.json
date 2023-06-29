@@ -1,0 +1,140 @@
+{
+    "fixes": [
+        {
+            "name": "EWOPO",
+            "lat": 33.542075,
+            "lon": 90.74805278333334
+        },
+        {
+            "name": "GLH",
+            "lat": 33.523530566666665,
+            "lon": 90.98293888333333
+        },
+        {
+            "name": "HITAV",
+            "lat": 33.70559443333333,
+            "lon": 90.75538056666667
+        },
+        {
+            "name": "JOMEM",
+            "lat": 33.98020556666667,
+            "lon": 90.76774721666666
+        },
+        {
+            "name": "MS035",
+            "lat": 33.75556666666667,
+            "lon": 90.75770556666667
+        },
+        {
+            "name": "SKENE",
+            "lat": 33.692086116666665,
+            "lon": 90.81948888333334
+        },
+        {
+            "name": "SQS",
+            "lat": 33.46385,
+            "lon": 90.27735
+        },
+        {
+            "name": "WAMVI",
+            "lat": 33.81944721666667,
+            "lon": 90.76051111666666
+        },
+        {
+            "name": "ZALZA",
+            "lat": 33.655741666666664,
+            "lon": 90.75314166666666
+        },
+        {
+            "name": "ZEMAK",
+            "lat": 33.869894433333336,
+            "lon": 90.76279443333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "JOMEM": "JOMEM AT OR ABOVE 2100",
+                "ZEMAK": "ZEMAK 2100",
+                "WAMVI": "WAMVI AT OR ABOVE 1120 RNW 18 TRK 178 UNTIL 390",
+                "EWOPO": "OVERFLY EWOPO AT OR ABOVE 2100 HOLD AT EWOPO LEFT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF ZEMAK MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "JOMEM",
+                    "fixes": {
+                        "JOMEM": "JOMEM RIGHT TURN INBOUNDCOURSE 178 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "EWOPO": "EWOPO AT OR ABOVE 2100",
+                "ZALZA": "ZALZA 2100",
+                "HITAV": "HITAV AT OR ABOVE 1140 RNW 36 TRK 358 UNTIL 390",
+                "JOMEM": "OVERFLY JOMEM AT OR ABOVE 2100 HOLD AT JOMEM RIGHT TURN INBOUNDCOURSE 178 LEGDIST 4 FAF ZALZA MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "EWOPO",
+                    "fixes": {
+                        "EWOPO": "EWOPO LEFT TURN INBOUNDCOURSE 358 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "SKENE": "SKENE 1700 SKENE AT OR ABOVE 1700 HOLD AT SKENE LEFT TURN INBOUNDCOURSE 035 LEGTIME 1 FAF SKENE MAP MS035",
+                "MS035": "MS035 900 RNW 18 TRK 035 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GLH",
+                    "fixes": {
+                        "GLH": "GLH"
+                    }
+                },
+                {
+                    "name": "SQS",
+                    "fixes": {
+                        "SQS": "SQS",
+                        "SKENE": "SKENE AT OR ABOVE 2200 HOLD AT SKENE LEFT TURN INBOUNDCOURSE 035 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "SKENE": "SKENE 1700 SKENE AT OR ABOVE 1700 HOLD AT SKENE LEFT TURN INBOUNDCOURSE 035 LEGTIME 1 FAF SKENE MAP MS035",
+                "MS035": "MS035 900 RNW 36 TRK 035 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GLH",
+                    "fixes": {
+                        "GLH": "GLH"
+                    }
+                },
+                {
+                    "name": "SQS",
+                    "fixes": {
+                        "SQS": "SQS",
+                        "SKENE": "SKENE AT OR ABOVE 2200 HOLD AT SKENE LEFT TURN INBOUNDCOURSE 035 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

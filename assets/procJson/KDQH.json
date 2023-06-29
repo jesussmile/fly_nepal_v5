@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "AYS",
+            "lat": 31.269425,
+            "lon": 82.55644443333334
+        },
+        {
+            "name": "BOLSE",
+            "lat": 31.523180566666667,
+            "lon": 82.819325
+        },
+        {
+            "name": "CFCJZ",
+            "lat": 31.378408333333333,
+            "lon": 82.94770556666667
+        },
+        {
+            "name": "EMDIH",
+            "lat": 31.407555566666666,
+            "lon": 82.9219
+        },
+        {
+            "name": "IPWEF",
+            "lat": 31.550255566666667,
+            "lon": 82.79525556666667
+        },
+        {
+            "name": "OLHUP",
+            "lat": 31.314419433333335,
+            "lon": 83.00427778333334
+        },
+        {
+            "name": "OWCNB",
+            "lat": 31.404838883333333,
+            "lon": 82.92375556666667
+        },
+        {
+            "name": "PAJTO",
+            "lat": 31.641255566666665,
+            "lon": 82.71423056666667
+        },
+        {
+            "name": "UNSEH",
+            "lat": 31.4489,
+            "lon": 82.88526111666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS04",
+            "fixes": {
+                "CFCJZ": "CFCJZ AT OR ABOVE 2000",
+                "OWCNB": "OWCNB 1882 RNW 04 TRK 043 UNTIL 900 TURN RIGHT DIRECT OWCNB AT OR ABOVE 2000 HOLD AT OWCNB RIGHT TURN INBOUNDCOURSE 043 LEGTIME 1 FAF OWCNB MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "AYS",
+                    "fixes": {
+                        "AYS": "AYS",
+                        "OWCNB": "OWCNB AT OR ABOVE 2300 HOLD AT OWCNB RIGHT TURN INBOUNDCOURSE 043 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "OLHUP": "OLHUP AT OR ABOVE 2000 OVERFLY OLHUP AT OR ABOVE 2000 HOLD AT OLHUP RIGHT TURN INBOUNDCOURSE 043 LEGDIST 4 FAF EMDIH MAP RNW 04",
+                "EMDIH": "EMDIH 1800",
+                "UNSEH": "UNSEH AT OR ABOVE 800 RNW 04 TRK 043 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "OLHUP",
+                    "fixes": {
+                        "OLHUP": "OLHUP RIGHT TURN INBOUNDCOURSE 043 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "PAJTO": "PAJTO AT OR ABOVE 2000 OVERFLY PAJTO AT OR ABOVE 2000 HOLD AT PAJTO RIGHT TURN INBOUNDCOURSE 223 LEGDIST 4 FAF IPWEF MAP RNW 22",
+                "IPWEF": "IPWEF 1900",
+                "BOLSE": "BOLSE AT OR ABOVE 1240 RNW 22 TRK 223 UNTIL 1200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PAJTO",
+                    "fixes": {
+                        "PAJTO": "PAJTO RIGHT TURN INBOUNDCOURSE 223 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

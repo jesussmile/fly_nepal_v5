@@ -1,0 +1,240 @@
+{
+    "fixes": [
+        {
+            "name": "AFERO",
+            "lat": 45.632775,
+            "lon": 88.26906943333333
+        },
+        {
+            "name": "BECKI",
+            "lat": 46.03049721666667,
+            "lon": 88.1933
+        },
+        {
+            "name": "CFVPH",
+            "lat": 45.621925,
+            "lon": 88.15133333333333
+        },
+        {
+            "name": "DAMPY",
+            "lat": 46.01939721666667,
+            "lon": 88.07477221666667
+        },
+        {
+            "name": "EMQIF",
+            "lat": 46.07796388333333,
+            "lon": 88.18284721666667
+        },
+        {
+            "name": "FS31",
+            "lat": 45.73555556666667,
+            "lon": 88.01910278333334
+        },
+        {
+            "name": "HANDS",
+            "lat": 45.91891388333333,
+            "lon": 88.09422778333334
+        },
+        {
+            "name": "IMT",
+            "lat": 45.816038883333334,
+            "lon": 88.11213611666666
+        },
+        {
+            "name": "IRENE",
+            "lat": 46.008172216666665,
+            "lon": 87.95629166666667
+        },
+        {
+            "name": "IZLAR",
+            "lat": 45.99785,
+            "lon": 88.07898056666667
+        },
+        {
+            "name": "JUNEM",
+            "lat": 45.72288056666667,
+            "lon": 88.13198888333334
+        },
+        {
+            "name": "LOOMS",
+            "lat": 45.767580566666666,
+            "lon": 88.1234
+        },
+        {
+            "name": "MA19",
+            "lat": 45.84061666666667,
+            "lon": 88.10927221666667
+        },
+        {
+            "name": "NOODL",
+            "lat": 45.915286116666664,
+            "lon": 88.09493333333333
+        },
+        {
+            "name": "OJOSO",
+            "lat": 45.61062221666667,
+            "lon": 88.03371111666667
+        },
+        {
+            "name": "OMOLE",
+            "lat": 45.72099443333333,
+            "lon": 88.13235
+        },
+        {
+            "name": "PI001",
+            "lat": 45.66322821666667,
+            "lon": 88.14396643333333
+        },
+        {
+            "name": "PI002",
+            "lat": 45.62006891666667,
+            "lon": 88.22580011666666
+        },
+        {
+            "name": "PI003",
+            "lat": 45.555944966666665,
+            "lon": 88.16547635
+        },
+        {
+            "name": "PI004",
+            "lat": 45.77069328333333,
+            "lon": 88.05950716666666
+        },
+        {
+            "name": "PI005",
+            "lat": 45.69941871666666,
+            "lon": 88.07023306666666
+        },
+        {
+            "name": "PI006",
+            "lat": 45.686416083333334,
+            "lon": 87.96199445
+        },
+        {
+            "name": "SEYOC",
+            "lat": 45.62175833333333,
+            "lon": 88.15136666666666
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 13",
+        "RNW 19",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOCB19",
+            "fixes": {
+                "IZLAR": "IZLAR AT OR ABOVE 3400",
+                "NOODL": "NOODL 2900",
+                "MA19": "MA19 1466 RNW 19 TRK 190 UNTIL 3100 TURN LEFT DIRECT",
+                "IMT": "IMT HOLD AT IMT RIGHT TURN INBOUNDCOURSE 191 LEGTIME 1 FAF NOODL MAP MA19"
+            },
+            "transitions": [
+                {
+                    "name": "EMQIF",
+                    "fixes": {
+                        "EMQIF": "EMQIF AT OR ABOVE 3400 TRK 100 UNTIL 4.9 FROM EMQIF"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS01",
+            "fixes": {
+                "CFVPH": "CFVPH AT OR ABOVE 3100",
+                "OMOLE": "OMOLE 2900 RNW 01 TRK 010 UNTIL 2200 TURN LEFT DIRECT",
+                "IMT": "IMT AT OR ABOVE 3100 HOLD AT IMT RIGHT TURN INBOUNDCOURSE 191 LEGTIME 1 FAF OMOLE MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "IMT",
+                    "fixes": {
+                        "IMT": "IMT",
+                        "OMOLE": "OMOLE AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 3100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "SEYOC": "SEYOC AT OR ABOVE 3400",
+                "JUNEM": "JUNEM 2900",
+                "LOOMS": "LOOMS AT OR ABOVE 2000 RNW 01 TRK 010 UNTIL 1383",
+                "DAMPY": "OVERFLY DAMPY AT OR ABOVE 3400 HOLD AT DAMPY RIGHT TURN INBOUNDCOURSE 190 LEGDIST 4 FAF JUNEM MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "AFERO",
+                    "fixes": {
+                        "AFERO": "AFERO"
+                    }
+                },
+                {
+                    "name": "OJOSO",
+                    "fixes": {
+                        "OJOSO": "OJOSO"
+                    }
+                },
+                {
+                    "name": "SEYOC",
+                    "fixes": {
+                        "SEYOC": "SEYOC RIGHT TURN INBOUNDCOURSE 010 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "DAMPY": "DAMPY AT OR ABOVE 3400",
+                "HANDS": "HANDS 3000 RNW 19 TRK 190 UNTIL 1582",
+                "SEYOC": "OVERFLY SEYOC AT OR ABOVE 3400 HOLD AT SEYOC RIGHT TURN INBOUNDCOURSE 010 LEGDIST 4 FAF HANDS MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "BECKI",
+                    "fixes": {
+                        "BECKI": "BECKI"
+                    }
+                },
+                {
+                    "name": "DAMPY",
+                    "fixes": {
+                        "DAMPY": "DAMPY RIGHT TURN INBOUNDCOURSE 190 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "IRENE",
+                    "fixes": {
+                        "IRENE": "IRENE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR31",
+            "fixes": {
+                "FS31": "FS31 3100 RNW 31",
+                "IMT": "IMT AT OR ABOVE 1590 TRK 323 UNTIL 3100 TURN LEFT DIRECT IMT HOLD AT IMT RIGHT TURN INBOUNDCOURSE 191 LEGTIME 1 FAF FS31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "IMT",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3100 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3100 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

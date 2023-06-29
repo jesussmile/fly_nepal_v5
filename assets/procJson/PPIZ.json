@@ -1,0 +1,162 @@
+{
+    "fixes": [
+        {
+            "name": "BACIZ",
+            "lat": 69.66228056666667,
+            "lon": 163.51922778333332
+        },
+        {
+            "name": "CEKGO",
+            "lat": 69.69916666666667,
+            "lon": 163.25250556666666
+        },
+        {
+            "name": "DUHIV",
+            "lat": 69.80061666666667,
+            "lon": 162.49837221666667
+        },
+        {
+            "name": "FEPUX",
+            "lat": 69.72303611666666,
+            "lon": 162.41311388333332
+        },
+        {
+            "name": "FF05",
+            "lat": 69.69092778333334,
+            "lon": 163.28923333333333
+        },
+        {
+            "name": "FIRDA",
+            "lat": 69.72761388333333,
+            "lon": 163.04415
+        },
+        {
+            "name": "GOBNE",
+            "lat": 69.58520278333333,
+            "lon": 163.43081111666666
+        },
+        {
+            "name": "HIKPU",
+            "lat": 69.87815556666666,
+            "lon": 162.58425833333334
+        },
+        {
+            "name": "HIRAN",
+            "lat": 69.73813056666667,
+            "lon": 162.96651388333333
+        },
+        {
+            "name": "ODGAW",
+            "lat": 69.76486666666666,
+            "lon": 162.76768611666665
+        },
+        {
+            "name": "PI001",
+            "lat": 69.71268443333334,
+            "lon": 163.14998898333334
+        },
+        {
+            "name": "PI002",
+            "lat": 69.64576231666666,
+            "lon": 163.22382831666667
+        },
+        {
+            "name": "PI003",
+            "lat": 69.6681422,
+            "lon": 163.43450351666667
+        },
+        {
+            "name": "PIZNB",
+            "lat": 69.73647778333333,
+            "lon": 162.99629443333333
+        },
+        {
+            "name": "RABSE",
+            "lat": 69.73931111666667,
+            "lon": 163.60828888333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB05",
+            "fixes": {
+                "FF05": "FF05 2000 RNW 05",
+                "PIZNB": "PIZNB TRK 051 UNTIL 1000 TURN LEFT DIRECT PIZNB AT OR ABOVE 2000 HOLD AT PIZNB RIGHT TURN INBOUNDCOURSE 231 LEGTIME 1 FAF FF05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "PIZ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "BACIZ": "BACIZ AT OR ABOVE 1700",
+                "CEKGO": "CEKGO 1700",
+                "FIRDA": "OVERFLY FIRDA 223 RNW 05",
+                "DUHIV": "OVERFLY DUHIV AT OR ABOVE 2000 HOLD AT DUHIV RIGHT TURN INBOUNDCOURSE 234 LEGDIST 4 FAF CEKGO MAP FIRDA"
+            },
+            "transitions": [
+                {
+                    "name": "BACIZ",
+                    "fixes": {
+                        "BACIZ": "BACIZ RIGHT TURN INBOUNDCOURSE 053 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GOBNE",
+                    "fixes": {
+                        "GOBNE": "GOBNE AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "RABSE",
+                    "fixes": {
+                        "RABSE": "RABSE AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "DUHIV": "DUHIV AT OR ABOVE 2000",
+                "ODGAW": "ODGAW 1600",
+                "HIRAN": "OVERFLY HIRAN 210 RNW 23",
+                "BACIZ": "OVERFLY BACIZ AT OR ABOVE 2000 HOLD AT BACIZ RIGHT TURN INBOUNDCOURSE 053 LEGDIST 4 FAF ODGAW MAP HIRAN"
+            },
+            "transitions": [
+                {
+                    "name": "DUHIV",
+                    "fixes": {
+                        "DUHIV": "DUHIV RIGHT TURN INBOUNDCOURSE 234 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FEPUX",
+                    "fixes": {
+                        "FEPUX": "FEPUX AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "HIKPU",
+                    "fixes": {
+                        "HIKPU": "HIKPU AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

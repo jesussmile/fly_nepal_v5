@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "CRP",
+            "lat": 27.903766666666666,
+            "lon": 97.44488056666667
+        },
+        {
+            "name": "DUYSE",
+            "lat": 26.734361116666665,
+            "lon": 98.42545556666667
+        },
+        {
+            "name": "FEPRU",
+            "lat": 27.068741666666668,
+            "lon": 98.43111388333334
+        },
+        {
+            "name": "HEBIM",
+            "lat": 26.64168056666667,
+            "lon": 98.36384443333333
+        },
+        {
+            "name": "HEKAG",
+            "lat": 26.895394433333333,
+            "lon": 98.53278333333333
+        },
+        {
+            "name": "LIPBI",
+            "lat": 26.982922216666665,
+            "lon": 98.59126666666667
+        },
+        {
+            "name": "RIKYO",
+            "lat": 26.727252783333334,
+            "lon": 98.20400556666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "LIPBI": "LIPBI AT OR ABOVE 2700",
+                "HEKAG": "HEKAG 2000 RNW 14 TRK 142 UNTIL 563",
+                "HEBIM": "OVERFLY HEBIM AT OR ABOVE 2700 HOLD AT HEBIM RIGHT TURN INBOUNDCOURSE 322 LEGDIST 4 FAF HEKAG MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP",
+                        "FEPRU": "FEPRU AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "HEBIM": "HEBIM AT OR ABOVE 2700",
+                "DUYSE": "DUYSE 2000 RNW 32 TRK 322 UNTIL 604",
+                "LIPBI": "OVERFLY LIPBI AT OR ABOVE 2700 HOLD AT LIPBI RIGHT TURN INBOUNDCOURSE 142 LEGDIST 4 FAF DUYSE MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP",
+                        "RIKYO": "RIKYO AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

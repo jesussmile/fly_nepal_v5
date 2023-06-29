@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "CUSTO",
+            "lat": 38.67689166666667,
+            "lon": 81.79468888333334
+        },
+        {
+            "name": "ERFAM",
+            "lat": 38.865222216666666,
+            "lon": 81.86636388333334
+        },
+        {
+            "name": "FARLN",
+            "lat": 39.377063883333335,
+            "lon": 81.84849166666666
+        },
+        {
+            "name": "GEMEH",
+            "lat": 39.08663333333333,
+            "lon": 81.70515278333333
+        },
+        {
+            "name": "MORAN",
+            "lat": 39.094397216666664,
+            "lon": 81.50170278333333
+        },
+        {
+            "name": "NOCPO",
+            "lat": 38.99383888333333,
+            "lon": 81.77286111666666
+        },
+        {
+            "name": "VUNJU",
+            "lat": 38.77276388333333,
+            "lon": 81.93333611666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "VUNJU": "VUNJU AT OR ABOVE 2600",
+                "ERFAM": "ERFAM 2100 RNW 04 TRK 037 UNTIL 1158",
+                "GEMEH": "OVERFLY GEMEH AT OR ABOVE 2700 HOLD AT GEMEH RIGHT TURN INBOUNDCOURSE 217 LEGDIST 4 FAF ERFAM MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "CUSTO",
+                    "fixes": {
+                        "CUSTO": "CUSTO"
+                    }
+                },
+                {
+                    "name": "MORAN",
+                    "fixes": {
+                        "MORAN": "MORAN",
+                        "VUNJU": "OVERFLY VUNJU AT OR ABOVE 2700 HOLD AT VUNJU RIGHT TURN INBOUNDCOURSE 037 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "GEMEH": "GEMEH AT OR ABOVE 2700",
+                "NOCPO": "NOCPO 2100 RNW 22 TRK 217 UNTIL 1158",
+                "VUNJU": "OVERFLY VUNJU AT OR ABOVE 2600 HOLD AT VUNJU RIGHT TURN INBOUNDCOURSE 037 LEGDIST 4 FAF NOCPO MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "FARLN",
+                    "fixes": {
+                        "FARLN": "FARLN"
+                    }
+                },
+                {
+                    "name": "GEMEH",
+                    "fixes": {
+                        "GEMEH": "GEMEH RIGHT TURN INBOUNDCOURSE 217 ALT 2700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MORAN",
+                    "fixes": {
+                        "MORAN": "MORAN"
+                    }
+                }
+            ]
+        }
+    ]
+}

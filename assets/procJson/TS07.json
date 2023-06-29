@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "CIXEM",
+            "lat": 29.796575,
+            "lon": 95.67993888333334
+        },
+        {
+            "name": "DAUGG",
+            "lat": 30.183569433333332,
+            "lon": 95.69109166666667
+        },
+        {
+            "name": "KREEC",
+            "lat": 30.074308333333335,
+            "lon": 95.68806111666666
+        },
+        {
+            "name": "MGNOL",
+            "lat": 30.181522216666668,
+            "lon": 95.78721111666667
+        },
+        {
+            "name": "WEXUV",
+            "lat": 29.913716666666666,
+            "lon": 95.68361111666667
+        },
+        {
+            "name": "WOTPU",
+            "lat": 30.025069433333332,
+            "lon": 95.68669721666667
+        },
+        {
+            "name": "ZIBUK",
+            "lat": 29.793427783333332,
+            "lon": 95.77421943333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "DAUGG": "DAUGG AT OR ABOVE 2000 OVERFLY DAUGG AT OR ABOVE 2000 HOLD AT DAUGG RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF KREEC MAP RNW 18",
+                "KREEC": "KREEC 1800",
+                "WOTPU": "WOTPU AT OR ABOVE 860 RNW 18 TRK 175 UNTIL 800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DAUGG",
+                    "fixes": {
+                        "DAUGG": "DAUGG RIGHT TURN INBOUNDCOURSE 175 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MGNOL",
+                    "fixes": {
+                        "MGNOL": "MGNOL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "CIXEM": "CIXEM AT OR ABOVE 2000",
+                "WEXUV": "WEXUV 1800 RNW 36 TRK 355 UNTIL 552",
+                "DAUGG": "OVERFLY DAUGG AT OR ABOVE 2000 HOLD AT DAUGG RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF WEXUV MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "CIXEM",
+                    "fixes": {
+                        "CIXEM": "CIXEM RIGHT TURN INBOUNDCOURSE 354 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZIBUK",
+                    "fixes": {
+                        "ZIBUK": "ZIBUK"
+                    }
+                }
+            ]
+        }
+    ]
+}

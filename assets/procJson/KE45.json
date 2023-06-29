@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "25THR",
+            "lat": 37.83570278333333,
+            "lon": 120.12984166666666
+        },
+        {
+            "name": "BAGBY",
+            "lat": 37.61753611666666,
+            "lon": 120.15765
+        },
+        {
+            "name": "COCPE",
+            "lat": 37.747047216666665,
+            "lon": 120.02025278333333
+        },
+        {
+            "name": "HOFED",
+            "lat": 37.77557778333333,
+            "lon": 120.44780556666667
+        },
+        {
+            "name": "HONEZ",
+            "lat": 37.788463883333336,
+            "lon": 120.71351943333333
+        },
+        {
+            "name": "IJOBA",
+            "lat": 37.811469433333336,
+            "lon": 120.08704166666666
+        },
+        {
+            "name": "JEYCU",
+            "lat": 37.79858888333333,
+            "lon": 120.073675
+        },
+        {
+            "name": "JISAV",
+            "lat": 37.87119166666667,
+            "lon": 120.21075278333333
+        },
+        {
+            "name": "PIYHE",
+            "lat": 37.89168888333333,
+            "lon": 120.28017221666667
+        },
+        {
+            "name": "UPCIM",
+            "lat": 37.921591666666664,
+            "lon": 120.38176388333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS27",
+            "fixes": {
+                "JEYCU": "JEYCU AT OR ABOVE 5000",
+                "IJOBA": "IJOBA 4700",
+                "25THR": "25THR AT OR ABOVE 3700 RNW 27 TRK 291 UNTIL 3330",
+                "UPCIM": "OVERFLY UPCIM AT OR ABOVE 4500 HOLD AT UPCIM RIGHT TURN INBOUNDCOURSE 095 LEGTIME 1 FAF IJOBA MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "BAGBY",
+                    "fixes": {
+                        "BAGBY": "BAGBY",
+                        "COCPE": "COCPE AT OR ABOVE 5300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "UPCIM": "UPCIM AT OR ABOVE 4500",
+                "PIYHE": "PIYHE 4500",
+                "JISAV": "OVERFLY JISAV 3366 RNW 09 TRK 095 UNTIL 3366 TURN RIGHT DIRECT",
+                "HOFED": "OVERFLY HOFED AT OR ABOVE 7000 HOLD AT HOFED RIGHT TURN INBOUNDCOURSE 005 ALT 7000 LEGDIST 7 FAF PIYHE MAP JISAV"
+            },
+            "transitions": [
+                {
+                    "name": "HOFED",
+                    "fixes": {
+                        "HOFED": "HOFED"
+                    }
+                },
+                {
+                    "name": "HONEZ",
+                    "fixes": {
+                        "HONEZ": "HONEZ"
+                    }
+                }
+            ]
+        }
+    ]
+}

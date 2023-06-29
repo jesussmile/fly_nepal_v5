@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "BURLL",
+            "lat": 41.59949721666667,
+            "lon": 74.5597
+        },
+        {
+            "name": "CRANK",
+            "lat": 41.416608333333336,
+            "lon": 74.38886943333333
+        },
+        {
+            "name": "ECZID",
+            "lat": 41.99615,
+            "lon": 74.14725278333333
+        },
+        {
+            "name": "FEBRA",
+            "lat": 41.71381111666667,
+            "lon": 74.38995556666667
+        },
+        {
+            "name": "IGN",
+            "lat": 41.665452783333336,
+            "lon": 73.82223888333333
+        },
+        {
+            "name": "LOBOS",
+            "lat": 41.65630278333333,
+            "lon": 74.47836111666666
+        },
+        {
+            "name": "MAILS",
+            "lat": 41.80240833333333,
+            "lon": 74.31268611666667
+        },
+        {
+            "name": "RAGER",
+            "lat": 41.56831111666666,
+            "lon": 74.91282221666667
+        },
+        {
+            "name": "STELR",
+            "lat": 41.874119433333334,
+            "lon": 74.2194
+        },
+        {
+            "name": "TALCO",
+            "lat": 42.06276943333334,
+            "lon": 74.10773611666667
+        },
+        {
+            "name": "YARNN",
+            "lat": 41.7395,
+            "lon": 74.367575
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "BURLL": "BURLL AT OR ABOVE 3500",
+                "LOBOS": "LOBOS 2600",
+                "FEBRA": "OVERFLY FEBRA 611 RNW 04 TRK 063 UNTIL 692",
+                "MAILS": "OVERFLY MAILS AT OR ABOVE 6000 HOLD AT MAILS RIGHT TURN INBOUNDCOURSE 047 ALT 6000 LEGDIST 5 FAF LOBOS MAP FEBRA"
+            },
+            "transitions": [
+                {
+                    "name": "CRANK",
+                    "fixes": {
+                        "CRANK": "CRANK"
+                    }
+                },
+                {
+                    "name": "RAGER",
+                    "fixes": {
+                        "RAGER": "RAGER"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "STELR": "STELR AT OR ABOVE 3300",
+                "MAILS": "MAILS 2200",
+                "YARNN": "OVERFLY YARNN 509 RNW 22 TRK 227 UNTIL 692",
+                "LOBOS": "OVERFLY LOBOS AT OR ABOVE 4000 HOLD AT LOBOS RIGHT TURN INBOUNDCOURSE 059 ALT 4000 LEGDIST 4 FAF MAILS MAP YARNN"
+            },
+            "transitions": [
+                {
+                    "name": "IGN",
+                    "fixes": {
+                        "IGN": "IGN"
+                    }
+                },
+                {
+                    "name": "TALCO",
+                    "fixes": {
+                        "TALCO": "TALCO",
+                        "ECZID": "ECZID AT OR ABOVE 4300"
+                    }
+                }
+            ]
+        }
+    ]
+}

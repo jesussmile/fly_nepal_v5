@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "FD05",
+            "lat": 22.774244433333333,
+            "lon": 69.65988611666667
+        },
+        {
+            "name": "FD23",
+            "lat": 22.909619433333333,
+            "lon": 69.86014166666666
+        },
+        {
+            "name": "MD05",
+            "lat": 22.820794433333333,
+            "lon": 69.74335278333334
+        },
+        {
+            "name": "MD23",
+            "lat": 22.849213883333334,
+            "lon": 69.78769166666666
+        },
+        {
+            "name": "MND",
+            "lat": 22.838025000000002,
+            "lon": 69.77428333333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "FD05": "FD05 2100",
+                "MD05": "MD05 376 RNW 05 TRK 058 UNTIL 2100 TURN RIGHT DIRECT",
+                "MND": "MND 2100 HOLD AT MND RIGHT TURN INBOUNDCOURSE 218 ALT 2100 LEGTIME 1 FAF FD05 MAP MD05"
+            },
+            "transitions": [
+                {
+                    "name": "MND1",
+                    "fixes": {
+                        "MND": "MND AT OR ABOVE 2100 TRK 218 UNTIL 9.0 FROM MND"
+                    }
+                },
+                {
+                    "name": "MND2",
+                    "fixes": {
+                        "MND": "MND AT OR ABOVE 2100 TRK 228 UNTIL 9.0 FROM MND"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FD23": "FD23 2100",
+                "MD23": "MD23 382 RNW 23 TRK 227 UNTIL 2100 TURN LEFT DIRECT",
+                "MND": "MND 2100 HOLD AT MND RIGHT TURN INBOUNDCOURSE 024 ALT 2100 LEGTIME 1 FAF FD23 MAP MD23"
+            },
+            "transitions": [
+                {
+                    "name": "MND1",
+                    "fixes": {
+                        "MND": "MND AT OR ABOVE 2100 TRK 024 UNTIL 8.0 FROM MND"
+                    }
+                },
+                {
+                    "name": "MND2",
+                    "fixes": {
+                        "MND": "MND AT OR ABOVE 2100 TRK 035 UNTIL 8.0 FROM MND"
+                    }
+                }
+            ]
+        }
+    ]
+}

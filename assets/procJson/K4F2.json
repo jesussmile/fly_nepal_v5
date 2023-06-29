@@ -1,0 +1,157 @@
+{
+    "fixes": [
+        {
+            "name": "CARTH",
+            "lat": 32.12740556666667,
+            "lon": 94.17720833333334
+        },
+        {
+            "name": "EXITE",
+            "lat": 32.012205566666665,
+            "lon": 93.95116666666667
+        },
+        {
+            "name": "FF35",
+            "lat": 32.08137778333333,
+            "lon": 94.30251388333333
+        },
+        {
+            "name": "GGG",
+            "lat": 32.41775556666666,
+            "lon": 94.75319443333333
+        },
+        {
+            "name": "JIPRI",
+            "lat": 31.931736116666666,
+            "lon": 94.28771111666667
+        },
+        {
+            "name": "PI001",
+            "lat": 32.12199378333333,
+            "lon": 94.30003253333334
+        },
+        {
+            "name": "PI002",
+            "lat": 32.06872248333333,
+            "lon": 94.24344333333333
+        },
+        {
+            "name": "PI003",
+            "lat": 32.01380855,
+            "lon": 94.30671488333333
+        },
+        {
+            "name": "POYLI",
+            "lat": 32.27018888333333,
+            "lon": 94.30310833333333
+        },
+        {
+            "name": "PUCIN",
+            "lat": 32.082175,
+            "lon": 94.29453888333333
+        },
+        {
+            "name": "RPFNB",
+            "lat": 32.180247216666665,
+            "lon": 94.29642778333333
+        },
+        {
+            "name": "SPOUT",
+            "lat": 32.299655566666665,
+            "lon": 94.51781388333333
+        },
+        {
+            "name": "TUYPO",
+            "lat": 32.41237778333333,
+            "lon": 94.30961111666667
+        },
+        {
+            "name": "WENED",
+            "lat": 31.928477783333335,
+            "lon": 94.38555833333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB35",
+            "fixes": {
+                "FF35": "FF35 2000 RNW 35",
+                "RPFNB": "RPFNB AT OR ABOVE 648 HOLD AT RPFNB RIGHT TURN INBOUNDCOURSE 359 ALT 2000 LEGTIME 1 FAF FF35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CARTH",
+                    "fixes": {
+                        "CARTH": "CARTH",
+                        "RPFNB": "RPFNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SPOUT",
+                    "fixes": {
+                        "SPOUT": "SPOUT",
+                        "RPFNB": "RPFNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "TUYPO": "TUYPO AT OR ABOVE 2000",
+                "POYLI": "POYLI 2000 RNW 17 TRK 174 UNTIL 648",
+                "JIPRI": "OVERFLY JIPRI AT OR ABOVE 3800 HOLD AT JIPRI RIGHT TURN INBOUNDCOURSE 354 ALT 3800 LEGDIST 4 FAF POYLI MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "TUYPO",
+                    "fixes": {
+                        "TUYPO": "TUYPO RIGHT TURN INBOUNDCOURSE 174 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "JIPRI": "JIPRI AT OR ABOVE 3800",
+                "PUCIN": "PUCIN 2000 RNW 35 TRK 354 UNTIL 648",
+                "TUYPO": "OVERFLY TUYPO AT OR ABOVE 2000 HOLD AT TUYPO RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF PUCIN MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "EXITE",
+                    "fixes": {
+                        "EXITE": "EXITE",
+                        "JIPRI": "JIPRI AT OR ABOVE 3800 HOLD AT JIPRI RIGHT TURN INBOUNDCOURSE 354 ALT 3800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GGG",
+                    "fixes": {
+                        "GGG": "GGG",
+                        "WENED": "WENED AT OR ABOVE 3800"
+                    }
+                },
+                {
+                    "name": "JIPRI",
+                    "fixes": {
+                        "JIPRI": "JIPRI RIGHT TURN INBOUNDCOURSE 354 ALT 3800 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

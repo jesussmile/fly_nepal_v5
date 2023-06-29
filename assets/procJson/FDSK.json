@@ -1,0 +1,141 @@
+{
+    "fixes": [
+        {
+            "name": "CD02",
+            "lat": 26.554902783333333,
+            "lon": 31.720669433333335
+        },
+        {
+            "name": "ELAND",
+            "lat": 26.162136116666666,
+            "lon": 31.717025
+        },
+        {
+            "name": "FD02",
+            "lat": 26.471338883333335,
+            "lon": 31.719044433333334
+        },
+        {
+            "name": "FF20",
+            "lat": 26.245455566666667,
+            "lon": 31.716436116666667
+        },
+        {
+            "name": "MD20",
+            "lat": 26.337630566666668,
+            "lon": 31.716452783333335
+        },
+        {
+            "name": "TETAK",
+            "lat": 26.663536116666666,
+            "lon": 31.722783333333332
+        },
+        {
+            "name": "UVOTA",
+            "lat": 25.934825,
+            "lon": 31.708680566666665
+        },
+        {
+            "name": "VSK",
+            "lat": 26.379416666666668,
+            "lon": 31.717263883333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD02",
+            "fixes": {
+                "CD02": "CD02 AT OR ABOVE 4000",
+                "FD02": "FD02 3000",
+                "VSK": "VSK 1233 RNW 02",
+                "ELAND": "ELAND 4000 HOLD AT ELAND LEFT TURN INBOUNDCOURSE 199 LEGTIME 1 FAF FD02 MAP VSK"
+            },
+            "transitions": [
+                {
+                    "name": "TETAK",
+                    "fixes": {
+                        "TETAK": "TETAK"
+                    }
+                },
+                {
+                    "name": "VSK1",
+                    "fixes": {
+                        "VSK": "VSK AT OR ABOVE 7000 TRK 174 UNTIL 10.5 FROM VSK"
+                    }
+                },
+                {
+                    "name": "VSK2",
+                    "fixes": {
+                        "VSK": "VSK AT OR ABOVE 7000 TRK 191 UNTIL 10.5 FROM VSK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD20",
+            "fixes": {
+                "ELAND": "ELAND AT OR ABOVE 4000",
+                "FF20": "FF20 3000",
+                "MD20": "MD20 1230 RNW 20",
+                "VSK": "VSK AT OR ABOVE 1500",
+                "TETAK": "TETAK 4500 HOLD AT TETAK RIGHT TURN INBOUNDCOURSE 019 LEGTIME 1 FAF FF20 MAP MD20"
+            },
+            "transitions": [
+                {
+                    "name": "UVOTA",
+                    "fixes": {
+                        "UVOTA": "UVOTA AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "VSK1",
+                    "fixes": {
+                        "VSK": "VSK AT OR ABOVE 7000 TRK 040 UNTIL 13.0 FROM VSK"
+                    }
+                },
+                {
+                    "name": "VSK2",
+                    "fixes": {
+                        "VSK": "VSK AT OR ABOVE 7000 TRK 026 UNTIL 13.0 FROM VSK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS20",
+            "fixes": {
+                "ELAND": "ELAND AT OR ABOVE 4000",
+                "FF20": "FF20 3000 RNW 20",
+                "VSK": "VSK AT OR ABOVE 1500",
+                "TETAK": "TETAK 4500 HOLD AT TETAK RIGHT TURN INBOUNDCOURSE 019 LEGTIME 1 FAF FF20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "UVOTA",
+                    "fixes": {
+                        "UVOTA": "UVOTA AT OR ABOVE 4000 TRK 199 UNTIL 17.0 FROM",
+                        "VSK": "VSK"
+                    }
+                },
+                {
+                    "name": "VSK1",
+                    "fixes": {
+                        "VSK": "VSK AT OR ABOVE 7000 TRK 040 UNTIL 13.0 FROM VSK"
+                    }
+                },
+                {
+                    "name": "VSK2",
+                    "fixes": {
+                        "VSK": "VSK AT OR ABOVE 7000 TRK 026 UNTIL 13.0 FROM VSK"
+                    }
+                }
+            ]
+        }
+    ]
+}

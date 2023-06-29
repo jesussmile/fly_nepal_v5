@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "CKCNB",
+            "lat": 47.840052783333334,
+            "lon": 90.38557221666667
+        },
+        {
+            "name": "CUMAM",
+            "lat": 47.85389443333333,
+            "lon": 90.67097221666667
+        },
+        {
+            "name": "FF28",
+            "lat": 47.817,
+            "lon": 90.24878333333334
+        },
+        {
+            "name": "JIDSI",
+            "lat": 47.842644433333334,
+            "lon": 90.46130556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 47.8259098,
+            "lon": 90.30126806666667
+        },
+        {
+            "name": "PI002",
+            "lat": 47.76446636666667,
+            "lon": 90.24635558333334
+        },
+        {
+            "name": "PI003",
+            "lat": 47.79948066666667,
+            "lon": 90.14482541666666
+        },
+        {
+            "name": "TUMDE",
+            "lat": 47.83109721666667,
+            "lon": 90.25318888333334
+        },
+        {
+            "name": "WIHFY",
+            "lat": 47.82253611666667,
+            "lon": 90.10328611666667
+        },
+        {
+            "name": "YQT",
+            "lat": 48.25388888333333,
+            "lon": 89.43722221666667
+        },
+        {
+            "name": "ZEMKA",
+            "lat": 47.84599443333333,
+            "lon": 90.52296388333333
+        },
+        {
+            "name": "ZUPLU",
+            "lat": 47.83483056666667,
+            "lon": 90.31975833333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB28",
+            "fixes": {
+                "FF28": "FF28 3500 RNW 28",
+                "CKCNB": "OVERFLY CKCNB TRK 285 UNTIL 3000 TURN LEFT DIRECT CKCNB AT OR ABOVE 3500 HOLD AT CKCNB LEFT TURN INBOUNDCOURSE 285 LEGTIME 1 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "YQT",
+                    "fixes": {
+                        "YQT": "YQT",
+                        "CKCNB": "CKCNB AT OR ABOVE 4000",
+                        "PI001": "PI001 AT OR ABOVE 3500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "CUMAM": "CUMAM AT OR ABOVE 5000",
+                "ZEMKA": "ZEMKA 3500",
+                "JIDSI": "JIDSI AT OR ABOVE 2700 RNW 10 TRK 096 UNTIL 2200",
+                "WIHFY": "OVERFLY WIHFY AT OR ABOVE 7000 HOLD AT WIHFY RIGHT TURN INBOUNDCOURSE 276 LEGDIST 5 FAF ZEMKA MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "CUMAM",
+                    "fixes": {
+                        "CUMAM": "CUMAM RIGHT TURN INBOUNDCOURSE 095 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "WIHFY": "WIHFY AT OR ABOVE 5000",
+                "TUMDE": "TUMDE 3400",
+                "ZUPLU": "ZUPLU AT OR ABOVE 2540 RNW 28 TRK 276 UNTIL 2047",
+                "CUMAM": "OVERFLY CUMAM AT OR ABOVE 7000 HOLD AT CUMAM RIGHT TURN INBOUNDCOURSE 095 ALT 7000 LEGDIST 5 FAF TUMDE MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "WIHFY",
+                    "fixes": {
+                        "WIHFY": "WIHFY RIGHT TURN INBOUNDCOURSE 276 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

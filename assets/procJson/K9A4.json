@@ -1,0 +1,71 @@
+{
+    "fixes": [
+        {
+            "name": "AARTA",
+            "lat": 34.605913883333336,
+            "lon": 87.27354166666667
+        },
+        {
+            "name": "CABAS",
+            "lat": 34.625875,
+            "lon": 87.30231388333333
+        },
+        {
+            "name": "DABIE",
+            "lat": 34.53180556666667,
+            "lon": 87.16691666666667
+        },
+        {
+            "name": "DAZNI",
+            "lat": 34.70790556666667,
+            "lon": 87.42079166666667
+        },
+        {
+            "name": "GOCCI",
+            "lat": 34.780725,
+            "lon": 87.52629721666666
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 18",
+        "RNW 31",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "GOCCI": "GOCCI AT OR ABOVE 2700",
+                "DAZNI": "DAZNI 2000 RNW 13 TRK 133 UNTIL 782",
+                "DABIE": "OVERFLY DABIE AT OR ABOVE 2700 HOLD AT DABIE RIGHT TURN INBOUNDCOURSE 313 LEGDIST 4 FAF DAZNI MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "GOCCI",
+                    "fixes": {
+                        "GOCCI": "GOCCI RIGHT TURN INBOUNDCOURSE 133 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "DABIE": "DABIE AT OR ABOVE 2700 OVERFLY DABIE AT OR ABOVE 2700 HOLD AT DABIE RIGHT TURN INBOUNDCOURSE 313 LEGDIST 4 FAF AARTA MAP RNW 31",
+                "AARTA": "AARTA 2000",
+                "CABAS": "CABAS AT OR ABOVE 1400 RNW 31 TRK 313 UNTIL 1200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DABIE",
+                    "fixes": {
+                        "DABIE": "DABIE RIGHT TURN INBOUNDCOURSE 313 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

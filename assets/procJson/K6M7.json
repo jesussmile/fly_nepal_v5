@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CIXIR",
+            "lat": 34.69189721666667,
+            "lon": 90.81180556666666
+        },
+        {
+            "name": "COPUN",
+            "lat": 34.82165833333333,
+            "lon": 90.80917221666667
+        },
+        {
+            "name": "FOVIS",
+            "lat": 34.97383056666666,
+            "lon": 90.80607221666666
+        },
+        {
+            "name": "HEMBU",
+            "lat": 34.59174443333333,
+            "lon": 90.81383333333333
+        },
+        {
+            "name": "JERSA",
+            "lat": 34.873680566666664,
+            "lon": 90.80811388333333
+        },
+        {
+            "name": "WOGPI",
+            "lat": 34.743847216666666,
+            "lon": 90.81075278333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "FOVIS": "FOVIS AT OR ABOVE 1900",
+                "JERSA": "JERSA 1900",
+                "COPUN": "COPUN AT OR ABOVE 900 RNW 18 TRK 181 UNTIL 531",
+                "HEMBU": "OVERFLY HEMBU AT OR ABOVE 1900 HOLD AT HEMBU RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF JERSA MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "FOVIS",
+                    "fixes": {
+                        "FOVIS": "FOVIS RIGHT TURN INBOUNDCOURSE 181 ALT 1900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HEMBU": "HEMBU AT OR ABOVE 1900",
+                "CIXIR": "CIXIR 1900",
+                "WOGPI": "WOGPI AT OR ABOVE 900 RNW 36 TRK 001 UNTIL 527",
+                "FOVIS": "OVERFLY FOVIS AT OR ABOVE 1900 HOLD AT FOVIS RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF CIXIR MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HEMBU",
+                    "fixes": {
+                        "HEMBU": "HEMBU RIGHT TURN INBOUNDCOURSE 001 ALT 1900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

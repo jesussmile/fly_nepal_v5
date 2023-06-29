@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "DEZLY",
+            "lat": 34.35723611666667,
+            "lon": 86.08203611666667
+        },
+        {
+            "name": "FOYGU",
+            "lat": 34.16928611666667,
+            "lon": 86.33656943333334
+        },
+        {
+            "name": "MITNE",
+            "lat": 34.291333333333334,
+            "lon": 86.17149721666667
+        },
+        {
+            "name": "OCOQY",
+            "lat": 34.11240278333333,
+            "lon": 86.41323056666667
+        },
+        {
+            "name": "YAKUB",
+            "lat": 34.255105566666664,
+            "lon": 86.22057778333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "OCOQY": "OCOQY AT OR ABOVE 3200",
+                "FOYGU": "FOYGU 2600 RNW 05 TRK 050 UNTIL 1265",
+                "DEZLY": "OVERFLY DEZLY AT OR ABOVE 3300 HOLD AT DEZLY RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4 FAF FOYGU MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "OCOQY",
+                    "fixes": {
+                        "OCOQY": "OCOQY LEFT TURN INBOUNDCOURSE 050 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "DEZLY": "DEZLY AT OR ABOVE 3300",
+                "MITNE": "MITNE 2700",
+                "YAKUB": "YAKUB AT OR ABOVE 1660 RNW 23 TRK 230 UNTIL 1282",
+                "OCOQY": "OVERFLY OCOQY AT OR ABOVE 3200 HOLD AT OCOQY LEFT TURN INBOUNDCOURSE 050 LEGDIST 4 FAF MITNE MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "DEZLY",
+                    "fixes": {
+                        "DEZLY": "DEZLY RIGHT TURN INBOUNDCOURSE 230 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

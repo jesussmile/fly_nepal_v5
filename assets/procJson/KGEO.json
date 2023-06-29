@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "BIKAY",
+            "lat": 38.696336116666664,
+            "lon": 83.84175278333333
+        },
+        {
+            "name": "FELAK",
+            "lat": 38.682105566666664,
+            "lon": 83.946625
+        },
+        {
+            "name": "FLM",
+            "lat": 38.64944166666667,
+            "lon": 84.31060278333334
+        },
+        {
+            "name": "IYBOX",
+            "lat": 38.74478611666667,
+            "lon": 84.13589443333333
+        },
+        {
+            "name": "LIFDI",
+            "lat": 38.794983333333334,
+            "lon": 83.86350833333333
+        },
+        {
+            "name": "MACFA",
+            "lat": 38.88078611666667,
+            "lon": 83.884875
+        },
+        {
+            "name": "SHLDA",
+            "lat": 38.83982221666667,
+            "lon": 83.96069166666666
+        },
+        {
+            "name": "WAGOM",
+            "lat": 38.710475,
+            "lon": 83.73683888333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA18",
+            "fixes": {
+                "IYBOX": "IYBOX AT OR ABOVE 2800",
+                "SHLDA": "SHLDA 2800 SHLDA HOLD AT SHLDA RIGHT TURN INBOUNDCOURSE 059 LEGTIME 1 FAF SHLDA MAP MACFA",
+                "MACFA": "MACFA 1700 RNW 18 TRK 059 UNTIL 2800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FLM",
+                    "fixes": {
+                        "FLM": "FLM"
+                    }
+                },
+                {
+                    "name": "SHLDA",
+                    "fixes": {
+                        "SHLDA": "SHLDA RIGHT TURN INBOUNDCOURSE 059 ALT 2800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA36",
+            "fixes": {
+                "IYBOX": "IYBOX AT OR ABOVE 2800",
+                "SHLDA": "SHLDA 2800 SHLDA HOLD AT SHLDA RIGHT TURN INBOUNDCOURSE 059 LEGTIME 1 FAF SHLDA MAP MACFA",
+                "MACFA": "MACFA 1700 RNW 36 TRK 059 UNTIL 2800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FLM",
+                    "fixes": {
+                        "FLM": "FLM"
+                    }
+                },
+                {
+                    "name": "SHLDA",
+                    "fixes": {
+                        "SHLDA": "SHLDA RIGHT TURN INBOUNDCOURSE 059 ALT 2800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "BIKAY": "BIKAY AT OR ABOVE 3000 BIKAY AT OR ABOVE 3000 HOLD AT BIKAY RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF LIFDI MAP RNW 36",
+                "LIFDI": "LIFDI 2600 RNW 36 TRK 355 UNTIL 1420 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BIKAY",
+                    "fixes": {
+                        "BIKAY": "BIKAY RIGHT TURN INBOUNDCOURSE 355 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FELAK",
+                    "fixes": {
+                        "FELAK": "FELAK AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WAGOM",
+                    "fixes": {
+                        "WAGOM": "WAGOM AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

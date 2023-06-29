@@ -1,0 +1,131 @@
+{
+    "fixes": [
+        {
+            "name": "BONGO",
+            "lat": 40.12530833333334,
+            "lon": 109.35627221666667
+        },
+        {
+            "name": "ENSEN",
+            "lat": 40.229419433333334,
+            "lon": 109.41238056666667
+        },
+        {
+            "name": "OHAPE",
+            "lat": 40.12896666666666,
+            "lon": 109.46491111666667
+        },
+        {
+            "name": "PI001",
+            "lat": 40.327372483333335,
+            "lon": 109.45736085
+        },
+        {
+            "name": "PI002",
+            "lat": 40.3063844,
+            "lon": 109.36748998333333
+        },
+        {
+            "name": "PI003",
+            "lat": 40.231680116666666,
+            "lon": 109.3907929
+        },
+        {
+            "name": "RIYAJ",
+            "lat": 40.331941666666665,
+            "lon": 109.50911943333334
+        },
+        {
+            "name": "VEL",
+            "lat": 40.378883333333334,
+            "lon": 109.49328333333334
+        },
+        {
+            "name": "WAGUG",
+            "lat": 40.36977778333333,
+            "lon": 109.50995556666666
+        },
+        {
+            "name": "ZIKOS",
+            "lat": 39.962836116666665,
+            "lon": 109.26911111666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVY35",
+            "fixes": {
+                "OHAPE": "OHAPE AT OR ABOVE 10000 OVERFLY OHAPE AT OR ABOVE 10000 HOLD AT OHAPE LEFT TURN INBOUNDCOURSE 341 LEGDIST 7 FAF RIYAJ MAP RNW 35",
+                "RIYAJ": "RIYAJ 7200",
+                "WAGUG": "WAGUG AT OR ABOVE 6440 RNW 35 TRK 349 UNTIL 7000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "VEL",
+                    "fixes": {
+                        "VEL": "VEL",
+                        "OHAPE": "OVERFLY OHAPE AT OR ABOVE 10000 HOLD AT OHAPE LEFT TURN INBOUNDCOURSE 341 ALT 10000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "ZIKOS",
+                    "fixes": {
+                        "ZIKOS": "ZIKOS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ35",
+            "fixes": {
+                "OHAPE": "OHAPE AT OR ABOVE 10000 OVERFLY OHAPE AT OR ABOVE 10000 HOLD AT OHAPE LEFT TURN INBOUNDCOURSE 341 LEGDIST 7 FAF RIYAJ MAP RNW 35",
+                "RIYAJ": "RIYAJ 7200 RNW 35 TRK 349 UNTIL 7000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "VEL",
+                    "fixes": {
+                        "VEL": "VEL",
+                        "OHAPE": "OVERFLY OHAPE AT OR ABOVE 10000 HOLD AT OHAPE LEFT TURN INBOUNDCOURSE 341 ALT 10000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "ZIKOS",
+                    "fixes": {
+                        "ZIKOS": "ZIKOS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR35",
+            "fixes": {
+                "VEL": "VEL 6400 RNW 35 TRK 329 UNTIL 6200 TURN RIGHT DIRECT VEL",
+                "ENSEN": "ENSEN AT OR ABOVE 8000 HOLD AT ENSEN RIGHT TURN INBOUNDCOURSE 322 LEGTIME 1 FAF VEL MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BONGO",
+                    "fixes": {
+                        "BONGO": "BONGO",
+                        "ENSEN": "ENSEN AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "name": "VEL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 8000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 8000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 8000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

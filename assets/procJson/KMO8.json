@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "COROS",
+            "lat": 39.98385278333333,
+            "lon": 93.00794721666666
+        },
+        {
+            "name": "CUKIT",
+            "lat": 39.55789166666667,
+            "lon": 93.01758056666667
+        },
+        {
+            "name": "DSNEY",
+            "lat": 39.65795833333333,
+            "lon": 93.01532778333333
+        },
+        {
+            "name": "TRULL",
+            "lat": 39.88378888333333,
+            "lon": 93.01021943333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "COROS": "COROS AT OR ABOVE 3000",
+                "TRULL": "TRULL 2900 RNW 18 TRK 181 UNTIL 1095",
+                "CUKIT": "OVERFLY CUKIT AT OR ABOVE 3000 HOLD AT CUKIT RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF TRULL MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "COROS",
+                    "fixes": {
+                        "COROS": "COROS RIGHT TURN INBOUNDCOURSE 181 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "CUKIT": "CUKIT AT OR ABOVE 3000",
+                "DSNEY": "DSNEY 2900 RNW 36 TRK 001 UNTIL 1085",
+                "COROS": "OVERFLY COROS AT OR ABOVE 3000 HOLD AT COROS RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF DSNEY MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "CUKIT",
+                    "fixes": {
+                        "CUKIT": "CUKIT RIGHT TURN INBOUNDCOURSE 001 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "BIK",
+            "lat": 12.490916666666667,
+            "lon": 4.390111116666667
+        },
+        {
+            "name": "BUDKA",
+            "lat": 12.612541666666667,
+            "lon": 4.602633333333333
+        },
+        {
+            "name": "CI06",
+            "lat": 12.412919433333334,
+            "lon": 4.252116666666667
+        },
+        {
+            "name": "DIDBI",
+            "lat": 12.642786116666667,
+            "lon": 4.486097216666667
+        },
+        {
+            "name": "EBRAN",
+            "lat": 12.388736116666667,
+            "lon": 4.209338883333333
+        },
+        {
+            "name": "ETSAG",
+            "lat": 12.346969433333333,
+            "lon": 4.13555
+        },
+        {
+            "name": "FD06",
+            "lat": 12.428961116666667,
+            "lon": 4.280958333333333
+        },
+        {
+            "name": "FD24",
+            "lat": 12.533672216666666,
+            "lon": 4.465330566666666
+        },
+        {
+            "name": "FI06",
+            "lat": 12.429619433333333,
+            "lon": 4.281641666666666
+        },
+        {
+            "name": "KB100",
+            "lat": 12.430475,
+            "lon": 4.283158333333334
+        },
+        {
+            "name": "KB200",
+            "lat": 12.52835,
+            "lon": 4.455327783333333
+        },
+        {
+            "name": "NUNIP",
+            "lat": 12.4613,
+            "lon": 4.166880566666666
+        },
+        {
+            "name": "ONEDO",
+            "lat": 12.4981,
+            "lon": 4.5718250000000005
+        },
+        {
+            "name": "SENUS",
+            "lat": 12.570447216666667,
+            "lon": 4.528975
+        },
+        {
+            "name": "VOMRA",
+            "lat": 12.316169433333334,
+            "lon": 4.251775
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD06",
+            "fixes": {
+                "FD06": "FD06 2400 RNW 06",
+                "BIK": "BIK TRK 061 UNTIL 2000 TURN RIGHT DIRECT BIK 3500 HOLD AT BIK RIGHT TURN INBOUNDCOURSE 061 LEGTIME 1 FAF FD06 MAP RNW 06"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD24",
+            "fixes": {
+                "FD24": "FD24 2400",
+                "BIK": "BIK 1003 RNW 24 TRK 241 UNTIL 2000 TURN LEFT DIRECT BIK 3500 HOLD AT BIK LEFT TURN INBOUNDCOURSE 241 LEGTIME 1 FAF FD24 MAP BIK"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILS06",
+            "fixes": {
+                "CI06": "CI06 AT OR ABOVE 2400",
+                "FI06": "FI06 2400 RNW 06 TRK 061 UNTIL 2000 TURN RIGHT DIRECT",
+                "BIK": "BIK 3500 HOLD AT BIK RIGHT TURN INBOUNDCOURSE 061 LEGTIME 1 FAF FI06 MAP RNW 06"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "EBRAN": "EBRAN AT OR ABOVE 3000",
+                "KB100": "KB100 2400 SPEED 200 RNW 06 TURN RIGHT DIRECT",
+                "VOMRA": "VOMRA AT OR ABOVE 4000 HOLD AT VOMRA RIGHT TURN INBOUNDCOURSE 331 ALT 4000 SPEED 250 LEGTIME 1 FAF KB100 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ETSAG",
+                    "fixes": {
+                        "ETSAG": "ETSAG AT OR ABOVE 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "NUNIP",
+                    "fixes": {
+                        "NUNIP": "NUNIP AT OR ABOVE 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "VOMRA",
+                    "fixes": {
+                        "VOMRA": "VOMRA AT OR ABOVE 3000 SPEED 250"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "SENUS": "SENUS AT OR ABOVE 3000",
+                "KB200": "KB200 2400 SPEED 200 RNW 24 TURN LEFT DIRECT",
+                "ONEDO": "ONEDO AT OR ABOVE 4000 HOLD AT ONEDO RIGHT TURN INBOUNDCOURSE 331 ALT 4000 SPEED 230 LEGTIME 1 FAF KB200 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "BUDKA",
+                    "fixes": {
+                        "BUDKA": "BUDKA AT OR ABOVE 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "DIDBI",
+                    "fixes": {
+                        "DIDBI": "DIDBI AT OR ABOVE 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "ONEDO",
+                    "fixes": {
+                        "ONEDO": "ONEDO AT OR ABOVE 3000 SPEED 250"
+                    }
+                }
+            ]
+        }
+    ]
+}

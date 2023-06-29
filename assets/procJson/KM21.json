@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "HUKDA",
+            "lat": 37.25759443333333,
+            "lon": 87.09861943333334
+        },
+        {
+            "name": "IMOGY",
+            "lat": 37.341819433333335,
+            "lon": 86.94296666666666
+        },
+        {
+            "name": "JEPAX",
+            "lat": 37.11267778333333,
+            "lon": 87.36473888333333
+        },
+        {
+            "name": "JIBMI",
+            "lat": 37.17092778333333,
+            "lon": 87.25801943333333
+        },
+        {
+            "name": "XEJLI",
+            "lat": 37.19891666666667,
+            "lon": 87.206625
+        },
+        {
+            "name": "ZOKOB",
+            "lat": 37.27758611666667,
+            "lon": 87.06173888333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "JEPAX": "JEPAX AT OR ABOVE 3000 OVERFLY JEPAX AT OR ABOVE 3000 HOLD AT JEPAX RIGHT TURN INBOUNDCOURSE 059 LEGDIST 4 FAF JIBMI MAP RNW 06",
+                "JIBMI": "JIBMI 2200",
+                "XEJLI": "XEJLI AT OR ABOVE 1240 RNW 06 TRK 059 UNTIL 828 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JEPAX",
+                    "fixes": {
+                        "JEPAX": "JEPAX RIGHT TURN INBOUNDCOURSE 059 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "IMOGY": "IMOGY AT OR ABOVE 3000",
+                "ZOKOB": "ZOKOB 2100",
+                "HUKDA": "HUKDA AT OR ABOVE 1420 RNW 24 TRK 239 UNTIL 828",
+                "JEPAX": "OVERFLY JEPAX AT OR ABOVE 3000 HOLD AT JEPAX RIGHT TURN INBOUNDCOURSE 059 LEGDIST 4 FAF ZOKOB MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "IMOGY",
+                    "fixes": {
+                        "IMOGY": "IMOGY RIGHT TURN INBOUNDCOURSE 239 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

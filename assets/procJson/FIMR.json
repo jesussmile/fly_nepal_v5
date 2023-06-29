@@ -1,0 +1,193 @@
+{
+    "fixes": [
+        {
+            "name": "CN12",
+            "lat": 19.724647216666668,
+            "lon": 63.24579443333333
+        },
+        {
+            "name": "D131L",
+            "lat": 19.838277783333332,
+            "lon": 63.555680566666666
+        },
+        {
+            "name": "D294G",
+            "lat": 19.747658333333334,
+            "lon": 63.237377783333336
+        },
+        {
+            "name": "EPSIT",
+            "lat": 19.806908333333332,
+            "lon": 63.010241666666666
+        },
+        {
+            "name": "FN12",
+            "lat": 19.735005566666665,
+            "lon": 63.27939443333333
+        },
+        {
+            "name": "FN30",
+            "lat": 19.783644433333333,
+            "lon": 63.46092778333333
+        },
+        {
+            "name": "IMR01",
+            "lat": 19.687938883333334,
+            "lon": 63.101325
+        },
+        {
+            "name": "IMR02",
+            "lat": 19.627466666666667,
+            "lon": 63.17858888333333
+        },
+        {
+            "name": "IMR03",
+            "lat": 19.710797216666666,
+            "lon": 63.186283333333336
+        },
+        {
+            "name": "IMR04",
+            "lat": 19.733616666666666,
+            "lon": 63.27126666666667
+        },
+        {
+            "name": "IMR05",
+            "lat": 19.821033333333332,
+            "lon": 63.337975
+        },
+        {
+            "name": "IMR06",
+            "lat": 19.885280566666665,
+            "lon": 63.51346111666667
+        },
+        {
+            "name": "IMR07",
+            "lat": 19.827133333333332,
+            "lon": 63.62143056666667
+        },
+        {
+            "name": "IMR08",
+            "lat": 19.723683333333334,
+            "lon": 63.55920833333333
+        },
+        {
+            "name": "IMR09",
+            "lat": 19.804483333333334,
+            "lon": 63.53634443333333
+        },
+        {
+            "name": "IMR10",
+            "lat": 19.78179443333333,
+            "lon": 63.451286116666665
+        },
+        {
+            "name": "IMR11",
+            "lat": 19.823702783333335,
+            "lon": 63.34794721666667
+        },
+        {
+            "name": "RSNB",
+            "lat": 19.759944433333335,
+            "lon": 63.360388883333336
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "CN12": "CN12 AT OR ABOVE 1550",
+                "FN12": "FN12 1550 RNW 12",
+                "RSNB": "OVERFLY RSNB TRK 126 UNTIL 2500 TURN LEFT DIRECT RSNB 2500 FAF FN12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "RS",
+                    "fixes": {
+                        "RSNB": "RSNB AT OR ABOVE 2500",
+                        "D294G": "OVERFLY D294G AT OR ABOVE 1550"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 1900 RNW 30",
+                "RSNB": "OVERFLY RSNB TRK 302 UNTIL 2500 TURN RIGHT DIRECT RSNB FAF FN30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "RS",
+                    "fixes": {
+                        "RSNB": "RSNB AT OR ABOVE 2500",
+                        "D131L": "OVERFLY D131L AT OR ABOVE 1900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "IMR03": "IMR03 2500",
+                "IMR04": "IMR04 1711 RNW 12 TRK 125 UNTIL 500 TURN RIGHT DIRECT",
+                "IMR05": "OVERFLY IMR05",
+                "EPSIT": "EPSIT 2500 FAF IMR04 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "EPSIT",
+                    "fixes": {
+                        "EPSIT": "EPSIT 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "IMR01",
+                    "fixes": {
+                        "IMR01": "IMR01 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "IMR02",
+                    "fixes": {
+                        "IMR02": "IMR02 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IMR09": "IMR09 2500 SPEED 210",
+                "IMR10": "IMR10 1723 RNW 30 TRK 304 UNTIL 500 TURN LEFT DIRECT",
+                "IMR11": "IMR11",
+                "IMR06": "IMR06 2500 FAF IMR10 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "IMR06",
+                    "fixes": {
+                        "IMR06": "IMR06 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "IMR07",
+                    "fixes": {
+                        "IMR07": "IMR07 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "IMR08",
+                    "fixes": {
+                        "IMR08": "IMR08 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

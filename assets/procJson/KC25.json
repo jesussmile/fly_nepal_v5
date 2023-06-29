@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "ALO",
+            "lat": 42.55649721666666,
+            "lon": 92.398925
+        },
+        {
+            "name": "AREDA",
+            "lat": 42.87044721666667,
+            "lon": 92.93835278333333
+        },
+        {
+            "name": "ARTYS",
+            "lat": 42.579591666666666,
+            "lon": 93.07628888333333
+        },
+        {
+            "name": "BAGGG",
+            "lat": 42.767172216666665,
+            "lon": 92.61910833333333
+        },
+        {
+            "name": "DEWAR",
+            "lat": 42.535969433333335,
+            "lon": 92.15801666666667
+        },
+        {
+            "name": "GRANO",
+            "lat": 42.716116666666665,
+            "lon": 92.39456111666667
+        },
+        {
+            "name": "JABOD",
+            "lat": 42.68615,
+            "lon": 92.26398611666667
+        },
+        {
+            "name": "TAGBE",
+            "lat": 42.79674721666667,
+            "lon": 92.75096388333333
+        },
+        {
+            "name": "ZEZDU",
+            "lat": 42.82472778333333,
+            "lon": 92.08279166666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "TAGBE": "TAGBE AT OR ABOVE 3000",
+                "BAGGG": "BAGGG 2600 RNW 11 TRK 107 UNTIL 1287",
+                "JABOD": "OVERFLY JABOD AT OR ABOVE 3300 HOLD AT JABOD RIGHT TURN INBOUNDCOURSE 287 LEGDIST 4 FAF BAGGG MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "ALO",
+                    "fixes": {
+                        "ALO": "ALO",
+                        "TAGBE": "OVERFLY TAGBE AT OR ABOVE 3000 HOLD AT TAGBE RIGHT TURN INBOUNDCOURSE 107 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "AREDA",
+                    "fixes": {
+                        "AREDA": "AREDA"
+                    }
+                },
+                {
+                    "name": "ARTYS",
+                    "fixes": {
+                        "ARTYS": "ARTYS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "JABOD": "JABOD AT OR ABOVE 3300",
+                "GRANO": "GRANO 2600 RNW 29 TRK 287 UNTIL 1287",
+                "TAGBE": "OVERFLY TAGBE AT OR ABOVE 3000 HOLD AT TAGBE RIGHT TURN INBOUNDCOURSE 107 LEGDIST 4 FAF GRANO MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "ALO",
+                    "fixes": {
+                        "ALO": "ALO",
+                        "JABOD": "OVERFLY JABOD AT OR ABOVE 3300 HOLD AT JABOD RIGHT TURN INBOUNDCOURSE 287 ALT 3300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DEWAR",
+                    "fixes": {
+                        "DEWAR": "DEWAR"
+                    }
+                },
+                {
+                    "name": "ZEZDU",
+                    "fixes": {
+                        "ZEZDU": "ZEZDU"
+                    }
+                }
+            ]
+        }
+    ]
+}

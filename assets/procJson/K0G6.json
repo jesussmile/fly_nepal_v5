@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "LARCH",
+            "lat": 41.43333056666667,
+            "lon": 84.61955833333333
+        },
+        {
+            "name": "POKLY",
+            "lat": 41.39089166666667,
+            "lon": 84.75981666666667
+        },
+        {
+            "name": "ROYYS",
+            "lat": 41.54275556666666,
+            "lon": 84.25425556666667
+        },
+        {
+            "name": "TUPOZ",
+            "lat": 41.50078333333333,
+            "lon": 84.39500556666667
+        },
+        {
+            "name": "UGEYE",
+            "lat": 41.452775,
+            "lon": 84.55505
+        },
+        {
+            "name": "YOLUN",
+            "lat": 41.47897221666667,
+            "lon": 84.46784721666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "POKLY": "POKLY AT OR ABOVE 3000",
+                "LARCH": "LARCH 2400",
+                "UGEYE": "UGEYE AT OR ABOVE 1400 RNW 07 TRK 073 UNTIL 1003",
+                "ROYYS": "OVERFLY ROYYS AT OR ABOVE 3000 HOLD AT ROYYS RIGHT TURN INBOUNDCOURSE 253 LEGDIST 4 FAF LARCH MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "POKLY",
+                    "fixes": {
+                        "POKLY": "POKLY RIGHT TURN INBOUNDCOURSE 073 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "ROYYS": "ROYYS AT OR ABOVE 3000",
+                "TUPOZ": "TUPOZ 2400",
+                "YOLUN": "YOLUN AT OR ABOVE 1260 RNW 25 TRK 253 UNTIL 1120",
+                "POKLY": "OVERFLY POKLY AT OR ABOVE 3000 HOLD AT POKLY RIGHT TURN INBOUNDCOURSE 073 LEGDIST 4 FAF TUPOZ MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "ROYYS",
+                    "fixes": {
+                        "ROYYS": "ROYYS RIGHT TURN INBOUNDCOURSE 253 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

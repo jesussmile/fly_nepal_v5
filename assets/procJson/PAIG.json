@@ -1,0 +1,85 @@
+{
+    "fixes": [
+        {
+            "name": "CEKIT",
+            "lat": 59.382519433333336,
+            "lon": 155.54644721666668
+        },
+        {
+            "name": "CEMOT",
+            "lat": 59.297677783333334,
+            "lon": 156.05961943333332
+        },
+        {
+            "name": "FABMU",
+            "lat": 59.094325,
+            "lon": 156.10473888333334
+        },
+        {
+            "name": "GAGTE",
+            "lat": 59.21645556666667,
+            "lon": 155.428275
+        },
+        {
+            "name": "HABIB",
+            "lat": 59.26645833333333,
+            "lon": 156.24475833333332
+        },
+        {
+            "name": "JADAM",
+            "lat": 59.352041666666665,
+            "lon": 155.73252221666667
+        },
+        {
+            "name": "NUTUW",
+            "lat": 59.55489443333333,
+            "lon": 155.26695556666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "HABIB": "HABIB AT OR ABOVE 2500",
+                "CEMOT": "CEMOT 1700 RNW 05 TRK 053 UNTIL 460 TURN RIGHT DIRECT",
+                "FABMU": "FABMU AT OR ABOVE 3000 HOLD AT FABMU RIGHT TURN INBOUNDCOURSE 023 LEGDIST 4 FAF CEMOT MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "FABMU",
+                    "fixes": {
+                        "FABMU": "FABMU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "CEKIT": "CEKIT AT OR ABOVE 2700",
+                "JADAM": "JADAM 1800 RNW 23 TRK 233 UNTIL 440 TURN LEFT DIRECT",
+                "GAGTE": "GAGTE AT OR ABOVE 4000 HOLD AT GAGTE RIGHT TURN INBOUNDCOURSE 035 LEGDIST 4 FAF JADAM MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "GAGTE",
+                    "fixes": {
+                        "GAGTE": "GAGTE"
+                    }
+                },
+                {
+                    "name": "NUTUW",
+                    "fixes": {
+                        "NUTUW": "NUTUW"
+                    }
+                }
+            ]
+        }
+    ]
+}

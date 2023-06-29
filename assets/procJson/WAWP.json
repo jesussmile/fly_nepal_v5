@@ -1,0 +1,80 @@
+{
+    "fixes": [
+        {
+            "name": "BAVIG",
+            "lat": 4.157777783333334,
+            "lon": 121.46713888333333
+        },
+        {
+            "name": "NIBAN",
+            "lat": 4.580333333333334,
+            "lon": 121.51211111666667
+        },
+        {
+            "name": "WP401",
+            "lat": 4.172638883333334,
+            "lon": 121.53219443333333
+        },
+        {
+            "name": "WP402",
+            "lat": 4.236194433333333,
+            "lon": 121.52905556666667
+        },
+        {
+            "name": "WP403",
+            "lat": 4.285111116666667,
+            "lon": 121.52666666666667
+        },
+        {
+            "name": "WP601",
+            "lat": 4.500055566666667,
+            "lon": 121.51605556666667
+        },
+        {
+            "name": "WP602",
+            "lat": 4.449861116666667,
+            "lon": 121.51852778333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "WP401": "WP401 AT OR ABOVE 2500",
+                "WP402": "WP402 1800",
+                "WP403": "WP403 AT OR ABOVE 900 RNW 18 TRK 182 UNTIL 1500 TURN RIGHT DIRECT",
+                "BAVIG": "BAVIG AT OR ABOVE 3500 HOLD AT BAVIG RIGHT TURN INBOUNDCOURSE 102 ALT 3500 LEGTIME 1 FAF WP402 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "BAVIG",
+                    "fixes": {
+                        "BAVIG": "BAVIG AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "WP601": "WP601 AT OR ABOVE 2000",
+                "WP602": "WP602 2000 RNW 36 TRK 002 UNTIL 1500 TURN LEFT DIRECT",
+                "NIBAN": "NIBAN AT OR ABOVE 3500 HOLD AT NIBAN LEFT TURN INBOUNDCOURSE 002 ALT 3500 LEGTIME 1 FAF WP602 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "NIBAN",
+                    "fixes": {
+                        "NIBAN": "NIBAN AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,195 @@
+{
+    "fixes": [
+        {
+            "name": "ALSIP",
+            "lat": 45.44719443333334,
+            "lon": 75.87449166666667
+        },
+        {
+            "name": "APKOP",
+            "lat": 45.54054443333333,
+            "lon": 75.46019443333333
+        },
+        {
+            "name": "AVRUR",
+            "lat": 45.568902783333336,
+            "lon": 75.30354721666667
+        },
+        {
+            "name": "AXOBA",
+            "lat": 45.53339166666667,
+            "lon": 75.49950556666667
+        },
+        {
+            "name": "BIPRA",
+            "lat": 45.50143611666667,
+            "lon": 75.65054166666667
+        },
+        {
+            "name": "DEDAR",
+            "lat": 45.46085278333334,
+            "lon": 75.8934
+        },
+        {
+            "name": "DUVIL",
+            "lat": 45.490077783333334,
+            "lon": 75.73571943333333
+        },
+        {
+            "name": "EPSUX",
+            "lat": 45.56267221666667,
+            "lon": 75.80905833333334
+        },
+        {
+            "name": "ESTEV",
+            "lat": 45.58955556666667,
+            "lon": 75.18860556666667
+        },
+        {
+            "name": "ETKER",
+            "lat": 45.47979443333333,
+            "lon": 75.740175
+        },
+        {
+            "name": "GOTIN",
+            "lat": 45.50953333333333,
+            "lon": 75.62998056666666
+        },
+        {
+            "name": "GOVEX",
+            "lat": 45.54396666666667,
+            "lon": 75.44136388333334
+        },
+        {
+            "name": "IRKIN",
+            "lat": 45.503230566666666,
+            "lon": 75.66430556666667
+        },
+        {
+            "name": "NUDAX",
+            "lat": 45.6496,
+            "lon": 75.333075
+        },
+        {
+            "name": "PI001",
+            "lat": 45.482417633333334,
+            "lon": 75.72920811666667
+        },
+        {
+            "name": "PI002",
+            "lat": 45.51379738333333,
+            "lon": 75.82113068333334
+        },
+        {
+            "name": "PI003",
+            "lat": 45.446954483333336,
+            "lon": 75.87516183333334
+        },
+        {
+            "name": "SPUZM",
+            "lat": 45.4821,
+            "lon": 75.77889721666666
+        },
+        {
+            "name": "YOW",
+            "lat": 45.441744433333334,
+            "lon": 75.89686388333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "CYND3",
+            "rnw": "12",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 09",
+                    "fixes": {
+                        "RNW 09": "RNW 09 HDG 089 UNTIL 620 HDG 089 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 27",
+                    "fixes": {
+                        "RNW 27": "RNW 27 HDG 269 UNTIL 620 HDG 269 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "ALSIP": "ALSIP AT OR ABOVE 3000",
+                "ETKER": "ETKER AT OR ABOVE 2610",
+                "BIPRA": "BIPRA 1330 RNW 09 TRK 085 UNTIL 3000 TURN LEFT DIRECT",
+                "YOW": "YOW 3000 HOLD AT YOW LEFT TURN INBOUNDCOURSE 185 SPEED 230 LEGTIME 1 FAF BIPRA MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "YOW",
+                    "fixes": {
+                        "YOW": "YOW",
+                        "BIPRA": "BIPRA AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "SPUZM": "SPUZM AT OR ABOVE 2900",
+                "IRKIN": "IRKIN 1500",
+                "GOTIN": "GOTIN AT OR ABOVE 1020 RNW 09",
+                "APKOP": "OVERFLY APKOP 3000 HOLD AT APKOP RIGHT TURN INBOUNDCOURSE 089 LEGTIME 1 FAF IRKIN MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DEDAR",
+                    "fixes": {
+                        "DEDAR": "DEDAR"
+                    }
+                },
+                {
+                    "name": "EPSUX",
+                    "fixes": {
+                        "EPSUX": "EPSUX SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "AVRUR": "AVRUR AT OR ABOVE 1900",
+                "GOVEX": "GOVEX 1800",
+                "AXOBA": "AXOBA AT OR ABOVE 990 RNW 27",
+                "DUVIL": "OVERFLY DUVIL 3000 HOLD AT DUVIL RIGHT TURN INBOUNDCOURSE 269 LEGTIME 1 FAF GOVEX MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "ESTEV",
+                    "fixes": {
+                        "ESTEV": "ESTEV"
+                    }
+                },
+                {
+                    "name": "NUDAX",
+                    "fixes": {
+                        "NUDAX": "NUDAX SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

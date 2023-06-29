@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "BORES",
+            "lat": 38.47472221666666,
+            "lon": 45.36027778333333
+        },
+        {
+            "name": "CD15",
+            "lat": 38.64415,
+            "lon": 44.89945556666667
+        },
+        {
+            "name": "CD33",
+            "lat": 38.220269433333335,
+            "lon": 45.086788883333334
+        },
+        {
+            "name": "D150S",
+            "lat": 38.144005566666664,
+            "lon": 45.12963056666667
+        },
+        {
+            "name": "D340O",
+            "lat": 38.67651943333333,
+            "lon": 44.889127783333336
+        },
+        {
+            "name": "D340R",
+            "lat": 38.72507221666667,
+            "lon": 44.87361943333333
+        },
+        {
+            "name": "FD15",
+            "lat": 38.56321943333333,
+            "lon": 44.92523333333333
+        },
+        {
+            "name": "FD33",
+            "lat": 38.29651666666667,
+            "lon": 45.04386111666667
+        },
+        {
+            "name": "KHY",
+            "lat": 38.42969443333333,
+            "lon": 44.96911111666667
+        },
+        {
+            "name": "MD15",
+            "lat": 38.44990833333333,
+            "lon": 44.961227783333335
+        },
+        {
+            "name": "MD33",
+            "lat": 38.41085833333333,
+            "lon": 44.979297216666666
+        },
+        {
+            "name": "TBZ",
+            "lat": 38.14819443333333,
+            "lon": 46.21269443333333
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "TBZ1C",
+            "rnw": "33",
+            "fixes": {
+                "KHY": "OVERFLY KHY AT OR ABOVE 10000 TURN LEFT DIRECT",
+                "TBZ": "TBZ"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TBZ1D",
+            "rnw": "15",
+            "fixes": {
+                "KHY": "OVERFLY KHY AT OR ABOVE 10000",
+                "TBZ": "TBZ"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "BORE2Q",
+            "runway": "RNW 15 RNW 33",
+            "fixes": {
+                "BORES": "BORES",
+                "KHY": "KHY"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD15",
+            "fixes": {
+                "CD15": "CD15 AT OR ABOVE 7900",
+                "FD15": "FD15 6700",
+                "MD15": "MD15 4136 RNW 15 TRK 160 UNTIL 6500 TURN RIGHT DIRECT",
+                "KHY": "KHY",
+                "D340R": "D340R 6500 HOLD AT D340R RIGHT TURN INBOUNDCOURSE 160 SPEED 210 LEGTIME 1 FAF FD15 MAP MD15"
+            },
+            "transitions": [
+                {
+                    "name": "D340R",
+                    "fixes": {
+                        "D340R": "D340R",
+                        "D340O": "D340O AT OR ABOVE 8700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD33",
+            "fixes": {
+                "CD33": "CD33 AT OR ABOVE 8000",
+                "FD33": "FD33 6900",
+                "MD33": "MD33 4126 RNW 33",
+                "KHY": "KHY AT OR ABOVE 4370 TRK 343 UNTIL 6700 TURN LEFT DIRECT KHY",
+                "D150S": "D150S 6700 HOLD AT D150S RIGHT TURN INBOUNDCOURSE 330 SPEED 210 LEGTIME 1 FAF FD33 MAP MD33"
+            },
+            "transitions": [
+                {
+                    "name": "D150S",
+                    "fixes": {
+                        "D150S": "D150S"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "INAHI",
+            "lat": 28.500408333333333,
+            "lon": 97.81606111666666
+        },
+        {
+            "name": "WEDBU",
+            "lat": 28.223977783333332,
+            "lon": 97.50783056666667
+        },
+        {
+            "name": "WIVUD",
+            "lat": 28.295669433333334,
+            "lon": 97.58753888333334
+        },
+        {
+            "name": "ZEVUT",
+            "lat": 28.428858333333334,
+            "lon": 97.73604166666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "INAHI": "INAHI AT OR ABOVE 3000",
+                "ZEVUT": "ZEVUT 1800 RNW 13 TRK 131 UNTIL 434",
+                "WEDBU": "OVERFLY WEDBU AT OR ABOVE 3000 HOLD AT WEDBU RIGHT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF ZEVUT MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "INAHI",
+                    "fixes": {
+                        "INAHI": "INAHI RIGHT TURN INBOUNDCOURSE 131 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "WEDBU": "WEDBU AT OR ABOVE 3000",
+                "WIVUD": "WIVUD 1800 RNW 31 TRK 311 UNTIL 432",
+                "INAHI": "OVERFLY INAHI AT OR ABOVE 3000 HOLD AT INAHI RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4 FAF WIVUD MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "WEDBU",
+                    "fixes": {
+                        "WEDBU": "WEDBU RIGHT TURN INBOUNDCOURSE 311 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

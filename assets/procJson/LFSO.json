@@ -1,0 +1,258 @@
+{
+    "fixes": [
+        {
+            "name": "27TAC",
+            "lat": 48.540005566666665,
+            "lon": 5.93545
+        },
+        {
+            "name": "CI20",
+            "lat": 48.74004166666667,
+            "lon": 6.038488883333334
+        },
+        {
+            "name": "CT02",
+            "lat": 48.446277783333336,
+            "lon": 5.900361116666667
+        },
+        {
+            "name": "CT20",
+            "lat": 48.73908333333333,
+            "lon": 6.042066666666667
+        },
+        {
+            "name": "D184M",
+            "lat": 48.36993056666667,
+            "lon": 5.918122216666667
+        },
+        {
+            "name": "D186M",
+            "lat": 48.373808333333336,
+            "lon": 5.907572216666667
+        },
+        {
+            "name": "EMTNB",
+            "lat": 48.332444433333336,
+            "lon": 6.193638883333334
+        },
+        {
+            "name": "EPL",
+            "lat": 48.31783333333333,
+            "lon": 6.0594166666666665
+        },
+        {
+            "name": "FI20",
+            "lat": 48.682194433333336,
+            "lon": 6.007472216666667
+        },
+        {
+            "name": "FSO02",
+            "lat": 48.486944433333335,
+            "lon": 5.90325
+        },
+        {
+            "name": "FSO20",
+            "lat": 48.681361116666665,
+            "lon": 6.006972216666667
+        },
+        {
+            "name": "FT02",
+            "lat": 48.48505556666667,
+            "lon": 5.914861116666667
+        },
+        {
+            "name": "FT20",
+            "lat": 48.68002778333334,
+            "lon": 6.007722216666667
+        },
+        {
+            "name": "ISO02",
+            "lat": 48.43983333333333,
+            "lon": 5.878166666666667
+        },
+        {
+            "name": "ISO20",
+            "lat": 48.781694433333335,
+            "lon": 6.0609166666666665
+        },
+        {
+            "name": "MT02",
+            "lat": 48.56747778333333,
+            "lon": 5.945761116666667
+        },
+        {
+            "name": "MT20",
+            "lat": 48.599186116666665,
+            "lon": 5.960830566666667
+        },
+        {
+            "name": "NAY",
+            "lat": 48.583638883333336,
+            "lon": 5.951833333333333
+        },
+        {
+            "name": "RW20",
+            "lat": 48.59336388333333,
+            "lon": 5.959961116666666
+        },
+        {
+            "name": "SO400",
+            "lat": 48.74161111666667,
+            "lon": 5.811277783333333
+        },
+        {
+            "name": "SO401",
+            "lat": 48.53544443333333,
+            "lon": 5.660166666666667
+        },
+        {
+            "name": "SO402",
+            "lat": 48.82125,
+            "lon": 5.93225
+        },
+        {
+            "name": "SO403",
+            "lat": 48.42011111666667,
+            "lon": 5.760472216666667
+        },
+        {
+            "name": "SO408",
+            "lat": 48.54625,
+            "lon": 5.934833333333334
+        },
+        {
+            "name": "SO410",
+            "lat": 48.650638883333336,
+            "lon": 5.765722216666667
+        },
+        {
+            "name": "SO411",
+            "lat": 48.69858333333333,
+            "lon": 6.016277783333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS20",
+            "fixes": {
+                "CI20": "CI20 2900",
+                "FI20": "FI20 2900 RNW 20 TRK 197 UNTIL 5.5 FROM",
+                "NAY": "NAY TURN RIGHT DIRECT NAY 2900 SPEED 185 FAF FI20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "EMT",
+                    "fixes": {
+                        "EMTNB": "EMTNB AT OR ABOVE 4000",
+                        "EPL": "EPL AT OR ABOVE 4000",
+                        "D184M": "OVERFLY D184M 4000",
+                        "NAY": "NAY 4000 TRK 034 UNTIL 10.0 FROM NAY SPEED 185"
+                    }
+                },
+                {
+                    "name": "NAY",
+                    "fixes": {
+                        "NAY": "NAY 4000 TRK 034 UNTIL 10.0 FROM NAY SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "ISO02": "ISO02 2900 SPEED 220",
+                "FSO02": "FSO02 2900 RNW 02",
+                "SO411": "SO411 AT OR BELOW 5000 SPEED 220 TURN LEFT DIRECT",
+                "SO400": "SO400 AT OR BELOW 5000 SPEED 220",
+                "SO401": "SO401 AT OR BELOW 7000 AT OR ABOVE 5000 SPEED 220 FAF FSO02 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "EPL",
+                    "fixes": {
+                        "EPL": "EPL AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "SO401",
+                    "fixes": {
+                        "SO401": "SO401 AT OR BELOW 7000 AT OR ABOVE 5000 SPEED 220",
+                        "SO403": "SO403 AT OR ABOVE 5000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "ISO20": "ISO20 2900 SPEED 185",
+                "FSO20": "FSO20 2900 RNW 20",
+                "SO408": "OVERFLY SO408 AT OR BELOW 4000 SPEED 160 TURN RIGHT DIRECT",
+                "SO410": "SO410 AT OR BELOW 4000 SPEED 160",
+                "SO400": "SO400 AT OR ABOVE 7000 FAF FSO20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "SO400",
+                    "fixes": {
+                        "SO400": "SO400 AT OR ABOVE 7000 SPEED 220",
+                        "SO402": "SO402 SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR02",
+            "fixes": {
+                "CT02": "CT02 AT OR ABOVE 2900",
+                "FT02": "FT02 2900",
+                "27TAC": "27TAC AT OR ABOVE 1810",
+                "MT02": "MT02 1268 RNW 02 TRK 012 UNTIL 1.5 FROM",
+                "NAY": "NAY TURN LEFT DIRECT",
+                "EMTNB": "EMTNB 4000 SPEED 185 FAF FT02 MAP MT02"
+            },
+            "transitions": [
+                {
+                    "name": "EMT",
+                    "fixes": {
+                        "EMTNB": "EMTNB 4000",
+                        "EPL": "EPL 4000",
+                        "D186M": "OVERFLY D186M 4000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR20",
+            "fixes": {
+                "CT20": "CT20 AT OR ABOVE 2900",
+                "FT20": "FT20 2900",
+                "MT20": "MT20 1229 RNW 20 TRK 199 UNTIL 5.5 FROM",
+                "NAY": "NAY TURN RIGHT DIRECT NAY 2900 SPEED 185 FAF FT20 MAP MT20"
+            },
+            "transitions": [
+                {
+                    "name": "EMT",
+                    "fixes": {
+                        "EMTNB": "EMTNB 4000",
+                        "EPL": "EPL 4000",
+                        "D184M": "OVERFLY D184M 4000",
+                        "NAY": "NAY 4000 TRK 034 UNTIL 10.0 FROM NAY"
+                    }
+                },
+                {
+                    "name": "NAY",
+                    "fixes": {
+                        "NAY": "NAY 4000 TRK 034 UNTIL 10.0 FROM NAY"
+                    }
+                }
+            ]
+        }
+    ]
+}

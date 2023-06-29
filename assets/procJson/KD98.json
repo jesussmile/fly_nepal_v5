@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "UFSIW",
+            "lat": 42.75753888333333,
+            "lon": 82.97204443333334
+        },
+        {
+            "name": "UTEBE",
+            "lat": 42.99339166666667,
+            "lon": 82.98549166666666
+        },
+        {
+            "name": "VOCUV",
+            "lat": 42.84384166666667,
+            "lon": 82.97695556666666
+        },
+        {
+            "name": "WELAS",
+            "lat": 42.60582778333333,
+            "lon": 82.96343333333333
+        },
+        {
+            "name": "YALUG",
+            "lat": 42.885125,
+            "lon": 82.97931111666666
+        },
+        {
+            "name": "ZADBO",
+            "lat": 42.70576943333333,
+            "lon": 82.96910278333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "UTEBE": "UTEBE AT OR ABOVE 2900",
+                "YALUG": "YALUG 2400",
+                "VOCUV": "VOCUV AT OR ABOVE 1600 RNW 18 TRK 184 UNTIL 1139",
+                "WELAS": "OVERFLY WELAS AT OR ABOVE 2900 HOLD AT WELAS RIGHT TURN INBOUNDCOURSE 004 LEGDIST 4 FAF YALUG MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "UTEBE",
+                    "fixes": {
+                        "UTEBE": "UTEBE RIGHT TURN INBOUNDCOURSE 184 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "WELAS": "WELAS AT OR ABOVE 2900",
+                "ZADBO": "ZADBO 2400",
+                "UFSIW": "UFSIW AT OR ABOVE 1400 RNW 36 TRK 004 UNTIL 1139",
+                "UTEBE": "OVERFLY UTEBE AT OR ABOVE 2900 HOLD AT UTEBE RIGHT TURN INBOUNDCOURSE 184 LEGDIST 4 FAF ZADBO MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "WELAS",
+                    "fixes": {
+                        "WELAS": "WELAS RIGHT TURN INBOUNDCOURSE 004 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

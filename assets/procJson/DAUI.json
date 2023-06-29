@@ -1,0 +1,87 @@
+{
+    "fixes": [
+        {
+            "name": "D227H",
+            "lat": 27.155502783333333,
+            "lon": 2.3932416666666665
+        },
+        {
+            "name": "D227I",
+            "lat": 27.144094433333333,
+            "lon": 2.379588883333333
+        },
+        {
+            "name": "FD05",
+            "lat": 27.17489721666667,
+            "lon": 2.4164583333333334
+        },
+        {
+            "name": "FS05",
+            "lat": 27.197961116666665,
+            "lon": 2.4440833333333334
+        },
+        {
+            "name": "MD05",
+            "lat": 27.231916666666667,
+            "lon": 2.4847888833333336
+        },
+        {
+            "name": "NSL",
+            "lat": 27.246738883333332,
+            "lon": 2.5025666666666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "FD05": "FD05 2960",
+                "MD05": "MD05 1288 RNW 05",
+                "NSL": "NSL TRK 047 UNTIL 1970 TURN RIGHT DIRECT NSL 3290 FAF FD05 MAP MD05"
+            },
+            "transitions": [
+                {
+                    "name": "NSL1",
+                    "fixes": {
+                        "NSL": "NSL AT OR ABOVE 3290 TRK 254 UNTIL 9.0 FROM NSL TURN LEFT DIRECT",
+                        "D227I": "D227I AT OR ABOVE 2960"
+                    }
+                },
+                {
+                    "name": "NSL2",
+                    "fixes": {
+                        "NSL": "NSL AT OR ABOVE 3290 TRK 243 UNTIL 8.0 FROM NSL TURN LEFT DIRECT",
+                        "D227H": "D227H AT OR ABOVE 2960"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR05",
+            "fixes": {
+                "FS05": "FS05 2140 RNW 05",
+                "NSL": "OVERFLY NSL TRK 047 UNTIL 1970 TURN RIGHT DIRECT NSL 3290 FAF FS05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "NSL1",
+                    "fixes": {
+                        "NSL": "NSL AT OR ABOVE 3290 TRK 254 UNTIL 7.0 FROM NSL"
+                    }
+                },
+                {
+                    "name": "NSL2",
+                    "fixes": {
+                        "NSL": "NSL AT OR ABOVE 3290 TRK 243 UNTIL 7.0 FROM NSL"
+                    }
+                }
+            ]
+        }
+    ]
+}

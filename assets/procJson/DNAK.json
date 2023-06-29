@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "AK800",
+            "lat": 7.346644433333333,
+            "lon": 5.345983333333334
+        },
+        {
+            "name": "AK900",
+            "lat": 7.1447611166666665,
+            "lon": 5.255061116666667
+        },
+        {
+            "name": "AK901",
+            "lat": 7.068391666666667,
+            "lon": 5.220691666666666
+        },
+        {
+            "name": "EDBAM",
+            "lat": 7.388652783333334,
+            "lon": 5.456888883333334
+        },
+        {
+            "name": "EDGEP",
+            "lat": 6.992019433333334,
+            "lon": 5.186330566666666
+        },
+        {
+            "name": "GEBVI",
+            "lat": 7.102727783333333,
+            "lon": 5.144244433333333
+        },
+        {
+            "name": "GUGOK",
+            "lat": 7.457338883333334,
+            "lon": 5.303886116666667
+        },
+        {
+            "name": "IVLIM",
+            "lat": 7.423002783333334,
+            "lon": 5.380394433333334
+        },
+        {
+            "name": "USNEP",
+            "lat": 7.499361116666667,
+            "lon": 5.414819433333333
+        },
+        {
+            "name": "XUTUK",
+            "lat": 7.034041666666667,
+            "lon": 5.297127783333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "AK901": "AK901 AT OR ABOVE 3500",
+                "AK900": "AK900 3000 RNW 03 TURN RIGHT DIRECT",
+                "XUTUK": "XUTUK HOLD AT XUTUK RIGHT TURN INBOUNDCOURSE 296 ALT 3500 SPEED 230 LEGTIME 1 FAF AK900 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "EDGEP",
+                    "fixes": {
+                        "EDGEP": "EDGEP"
+                    }
+                },
+                {
+                    "name": "GEBVI",
+                    "fixes": {
+                        "GEBVI": "GEBVI"
+                    }
+                },
+                {
+                    "name": "XUTUK",
+                    "fixes": {
+                        "XUTUK": "XUTUK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "IVLIM": "IVLIM AT OR ABOVE 3500 IVLIM HOLD AT IVLIM LEFT TURN INBOUNDCOURSE 206 ALT 3500 SPEED 230 LEGTIME 1 FAF AK800 MAP RNW 21",
+                "AK800": "AK800 3000 RNW 21 TURN LEFT DIRECT",
+                "EDBAM": "EDBAM TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EDBAM",
+                    "fixes": {
+                        "EDBAM": "EDBAM"
+                    }
+                },
+                {
+                    "name": "GUGOK",
+                    "fixes": {
+                        "GUGOK": "GUGOK"
+                    }
+                },
+                {
+                    "name": "USNEP",
+                    "fixes": {
+                        "USNEP": "USNEP"
+                    }
+                }
+            ]
+        }
+    ]
+}

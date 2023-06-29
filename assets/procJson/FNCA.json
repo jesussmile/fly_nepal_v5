@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "EXINA",
+            "lat": 5.925,
+            "lon": 12.183333333333334
+        },
+        {
+            "name": "G089P",
+            "lat": 5.403,
+            "lon": 12.101166666666666
+        },
+        {
+            "name": "G092P",
+            "lat": 5.789833333333333,
+            "lon": 12.103833333333334
+        },
+        {
+            "name": "G179F",
+            "lat": 5.485166666666666,
+            "lon": 12.186166666666667
+        },
+        {
+            "name": "G179L",
+            "lat": 5.4015,
+            "lon": 12.184666666666667
+        },
+        {
+            "name": "G359F",
+            "lat": 5.708333333333333,
+            "lon": 12.190333333333333
+        },
+        {
+            "name": "G359L",
+            "lat": 5.7925,
+            "lon": 12.1875
+        },
+        {
+            "name": "G360E",
+            "lat": 5.486666666666666,
+            "lon": 12.1025
+        },
+        {
+            "name": "G360R",
+            "lat": 5.710333333333333,
+            "lon": 12.1065
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "G179L": "G179L AT OR ABOVE 2000",
+                "G179F": "G179F 2000 RNW 18 TRK 183 UNTIL 1500 TURN RIGHT DIRECT",
+                "G089P": "G089P 3000 FAF G179F MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "EXINA",
+                    "fixes": {
+                        "EXINA": "EXINA",
+                        "G360R": "G360R",
+                        "G360E": "G360E AT OR ABOVE 3000",
+                        "G089P": "G089P AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "G359L": "G359L AT OR ABOVE 2000",
+                "G359F": "G359F 2000 RNW 36 TRK 003 UNTIL 2000 TURN LEFT DIRECT",
+                "G092P": "G092P 3000 FAF G359F MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "EXINA",
+                    "fixes": {
+                        "EXINA": "EXINA AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "G092P",
+                    "fixes": {
+                        "G092P": "G092P AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

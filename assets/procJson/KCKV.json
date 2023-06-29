@@ -1,0 +1,187 @@
+{
+    "fixes": [
+        {
+            "name": "CFVGN",
+            "lat": 36.42993333333333,
+            "lon": 87.35666943333334
+        },
+        {
+            "name": "CKV",
+            "lat": 36.62198611666667,
+            "lon": 87.41265278333333
+        },
+        {
+            "name": "FF35",
+            "lat": 36.52442778333333,
+            "lon": 87.40419443333333
+        },
+        {
+            "name": "GICEB",
+            "lat": 36.681652783333334,
+            "lon": 87.21925833333333
+        },
+        {
+            "name": "GNSHP",
+            "lat": 36.88470278333333,
+            "lon": 87.32499166666666
+        },
+        {
+            "name": "HITUD",
+            "lat": 36.814177783333335,
+            "lon": 87.47422778333333
+        },
+        {
+            "name": "HIVNA",
+            "lat": 36.42968056666667,
+            "lon": 87.35657778333334
+        },
+        {
+            "name": "JIKOB",
+            "lat": 36.71627221666667,
+            "lon": 87.44419166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 36.47058701666667,
+            "lon": 87.36876505
+        },
+        {
+            "name": "PI002",
+            "lat": 36.433651633333334,
+            "lon": 87.29241093333333
+        },
+        {
+            "name": "PI003",
+            "lat": 36.36546246666666,
+            "lon": 87.33624223333334
+        },
+        {
+            "name": "PI004",
+            "lat": 36.56379476666667,
+            "lon": 87.4075866
+        },
+        {
+            "name": "PI005",
+            "lat": 36.51675828333333,
+            "lon": 87.34028701666666
+        },
+        {
+            "name": "PI006",
+            "lat": 36.45572456666667,
+            "lon": 87.39819818333334
+        },
+        {
+            "name": "SNUFF",
+            "lat": 36.52718888333333,
+            "lon": 87.38631388333333
+        },
+        {
+            "name": "VALER",
+            "lat": 36.27485,
+            "lon": 87.39900556666667
+        },
+        {
+            "name": "YORUK",
+            "lat": 36.57296111666667,
+            "lon": 87.40029721666667
+        },
+        {
+            "name": "ZEPLI",
+            "lat": 36.526913883333336,
+            "lon": 87.38622778333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 17",
+        "RNW 23",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC35",
+            "fixes": {
+                "CFVGN": "CFVGN AT OR ABOVE 2700",
+                "SNUFF": "SNUFF 2300",
+                "YORUK": "YORUK AT OR ABOVE 1080 RNW 35 TRK 347 UNTIL 1800 TURN RIGHT DIRECT",
+                "CKV": "CKV AT OR ABOVE 2200 HOLD AT CKV RIGHT TURN INBOUNDCOURSE 357 LEGTIME 1 FAF SNUFF MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CKV",
+                    "fixes": {
+                        "CKV": "CKV",
+                        "SNUFF": "SNUFF AT OR ABOVE 2700",
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "HITUD": "HITUD AT OR ABOVE 2600",
+                "JIKOB": "JIKOB 2300 RNW 17 TRK 167 UNTIL 823",
+                "VALER": "OVERFLY VALER AT OR ABOVE 3000 HOLD AT VALER RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4 FAF JIKOB MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "GNSHP",
+                    "fixes": {
+                        "GNSHP": "GNSHP"
+                    }
+                },
+                {
+                    "name": "HITUD",
+                    "fixes": {
+                        "HITUD": "HITUD LEFT TURN INBOUNDCOURSE 167 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "HIVNA": "HIVNA AT OR ABOVE 3800",
+                "ZEPLI": "ZEPLI 2300",
+                "YORUK": "YORUK AT OR ABOVE 1380 RNW 35 TRK 347 UNTIL 1000 TURN RIGHT DIRECT",
+                "GICEB": "OVERFLY GICEB AT OR ABOVE 3000 HOLD AT GICEB RIGHT TURN INBOUNDCOURSE 280 LEGDIST 4 FAF ZEPLI MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "HIVNA",
+                    "fixes": {
+                        "HIVNA": "HIVNA RIGHT TURN INBOUNDCOURSE 347 ALT 3800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VALER",
+                    "fixes": {
+                        "VALER": "VALER"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR35",
+            "fixes": {
+                "FF35": "FF35 2300 RNW 35",
+                "CKV": "CKV AT OR ABOVE 950 TRK 357 UNTIL 1500 TURN RIGHT DIRECT CKV AT OR ABOVE 2200 HOLD AT CKV RIGHT TURN INBOUNDCOURSE 357 LEGTIME 1 FAF FF35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CKV",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2300 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2300 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "fixes": [
+        {
+            "name": "GEVAD",
+            "lat": 17.672705566666668,
+            "lon": 36.937002783333334
+        },
+        {
+            "name": "IBKOX",
+            "lat": 17.764430566666668,
+            "lon": 36.859011116666665
+        },
+        {
+            "name": "NEVOR",
+            "lat": 17.689644433333335,
+            "lon": 36.76333888333333
+        },
+        {
+            "name": "QL600",
+            "lat": 17.9309,
+            "lon": 36.87669721666666
+        },
+        {
+            "name": "QL601",
+            "lat": 17.922411116666666,
+            "lon": 36.963647216666665
+        },
+        {
+            "name": "TEXAX",
+            "lat": 17.68119443333333,
+            "lon": 36.850175
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "IBKOX": "IBKOX 1600 RNW 18",
+                "QL600": "QL600",
+                "QL601": "QL601",
+                "GEVAD": "GEVAD AT OR ABOVE 2600 HOLD AT GEVAD RIGHT TURN INBOUNDCOURSE 274 ALT 2600 LEGTIME 1 FAF IBKOX MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "GEVAD",
+                    "fixes": {
+                        "GEVAD": "GEVAD SPEED 200",
+                        "TEXAX": "TEXAX AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "NEVOR",
+                    "fixes": {
+                        "NEVOR": "NEVOR SPEED 200",
+                        "TEXAX": "TEXAX AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "TEXAX",
+                    "fixes": {
+                        "TEXAX": "TEXAX AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        }
+    ]
+}

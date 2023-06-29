@@ -1,0 +1,43 @@
+{
+    "fixes": [
+        {
+            "name": "FF12",
+            "lat": 20.565680566666668,
+            "lon": 99.16390278333333
+        },
+        {
+            "name": "MA12",
+            "lat": 20.529613883333333,
+            "lon": 99.23303888333334
+        },
+        {
+            "name": "MSNB",
+            "lat": 20.51704721666667,
+            "lon": 99.25711388333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FF12": "FF12 4000",
+                "MA12": "MA12 2370 RNW 12 HDG 120 UNTIL 3500 TURN RIGHT DIRECT",
+                "MSNB": "MSNB 6000 HOLD AT MSNB RIGHT TURN INBOUNDCOURSE 330 LEGTIME 1 FAF FF12 MAP MA12"
+            },
+            "transitions": [
+                {
+                    "name": "MS",
+                    "fixes": {
+                        "MSNB": "MSNB AT OR ABOVE 4000 TRK 315 UNTIL 6.0 FROM MSNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "FF06",
+            "lat": 25.615175,
+            "lon": 57.721586116666664
+        },
+        {
+            "name": "FF248",
+            "lat": 25.704694433333334,
+            "lon": 57.944702783333334
+        },
+        {
+            "name": "JSKNB",
+            "lat": 25.65161111666667,
+            "lon": 57.78347221666667
+        },
+        {
+            "name": "MELMI",
+            "lat": 26.773611116666668,
+            "lon": 57.38333333333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "MELM1J",
+            "rnw": "24",
+            "fixes": {
+                "MELMI": "MELMI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MELM1K",
+            "rnw": "06",
+            "fixes": {
+                "JSKNB": "OVERFLY JSKNB AT OR ABOVE 3000",
+                "MELMI": "MELMI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "MELM1Z",
+            "runway": "RNW 06 RNW 24",
+            "fixes": {
+                "MELMI": "MELMI",
+                "JSKNB": "JSKNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FF06": "FF06 1200",
+                "JSKNB": "JSKNB 222 RNW 06 TRK 055 UNTIL 440 TRK 075 UNTIL 1500 TURN RIGHT DIRECT JSKNB 3500 HOLD AT JSKNB RIGHT TURN INBOUNDCOURSE 208 ALT 3500 SPEED 200 LEGTIME 1 FAF FF06 MAP JSK"
+            },
+            "transitions": [
+                {
+                    "name": "JSK1",
+                    "fixes": {
+                        "JSKNB": "JSKNB AT OR ABOVE 3500 TRK 208 UNTIL 10.5 FROM JSKNB"
+                    }
+                },
+                {
+                    "name": "JSK2",
+                    "fixes": {
+                        "JSKNB": "JSKNB AT OR ABOVE 3500 TRK 223 UNTIL 7.0 FROM JSKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB06",
+            "fixes": {
+                "FF248": "FF248 3500",
+                "JSKNB": "JSKNB 840 RNW 06 TRK 248 UNTIL 2400 TURN RIGHT DIRECT JSKNB 3500 HOLD AT JSKNB RIGHT TURN INBOUNDCOURSE 086 SPEED 200 LEGTIME 1 FAF FF248 MAP JSK"
+            },
+            "transitions": [
+                {
+                    "name": "JSK1",
+                    "fixes": {
+                        "JSKNB": "JSKNB AT OR ABOVE 3500 TRK 086 UNTIL 10.5 FROM JSKNB"
+                    }
+                },
+                {
+                    "name": "JSK2",
+                    "fixes": {
+                        "JSKNB": "JSKNB AT OR ABOVE 3500 TRK 077 UNTIL 9.3 FROM JSKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB24",
+            "fixes": {
+                "FF248": "FF248 3500",
+                "JSKNB": "JSKNB 840 RNW 24 TRK 248 UNTIL 2400 TURN RIGHT DIRECT JSKNB 3500 HOLD AT JSKNB RIGHT TURN INBOUNDCOURSE 086 SPEED 200 LEGTIME 1 FAF FF248 MAP JSK"
+            },
+            "transitions": [
+                {
+                    "name": "JSK1",
+                    "fixes": {
+                        "JSKNB": "JSKNB AT OR ABOVE 3500 TRK 086 UNTIL 10.5 FROM JSKNB"
+                    }
+                },
+                {
+                    "name": "JSK2",
+                    "fixes": {
+                        "JSKNB": "JSKNB AT OR ABOVE 3500 TRK 077 UNTIL 9.3 FROM JSKNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

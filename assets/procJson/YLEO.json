@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "FF04",
+            "lat": 28.941138883333334,
+            "lon": 121.25188056666667
+        },
+        {
+            "name": "LEONA",
+            "lat": 28.667155566666665,
+            "lon": 121.38301111666667
+        },
+        {
+            "name": "LEONB",
+            "lat": 28.878847216666667,
+            "lon": 121.32028611666667
+        },
+        {
+            "name": "LEONC",
+            "lat": 28.670022216666666,
+            "lon": 121.49165556666667
+        },
+        {
+            "name": "LEOND",
+            "lat": 28.760994433333334,
+            "lon": 121.525825
+        },
+        {
+            "name": "LEONF",
+            "lat": 28.803977783333334,
+            "lon": 121.37831943333333
+        },
+        {
+            "name": "LEONH",
+            "lat": 28.911075,
+            "lon": 121.28744443333333
+        },
+        {
+            "name": "LEONI",
+            "lat": 28.737013883333333,
+            "lon": 121.43502221666667
+        },
+        {
+            "name": "LEONM",
+            "lat": 28.870919433333334,
+            "lon": 121.32154166666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 12",
+        "RNW 22",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB04",
+            "fixes": {
+                "FF04": "FF04 2600 RNW 04",
+                "LEONB": "OVERFLY LEONB TRK 043 UNTIL 3100 FAF FF04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "LEO1",
+                    "fixes": {
+                        "LEONB": "LEONB AT OR ABOVE 3100 SPEED 210 TRK 256 UNTIL 5.3 FROM LEONB"
+                    }
+                },
+                {
+                    "name": "LEO2",
+                    "fixes": {
+                        "LEONB": "LEONB AT OR ABOVE 3100 SPEED 210 TRK 238 UNTIL 7.5 FROM LEONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "LEONI": "LEONI AT OR ABOVE 3100",
+                "LEONF": "LEONF 2950",
+                "LEONM": "OVERFLY LEONM 1356 RNW 22",
+                "LEONH": "LEONH TRK 216 UNTIL 3100 FAF LEONF MAP LEONM"
+            },
+            "transitions": [
+                {
+                    "name": "LEONA",
+                    "fixes": {
+                        "LEONA": "LEONA AT OR ABOVE 3100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "LEONC",
+                    "fixes": {
+                        "LEONC": "LEONC AT OR ABOVE 3100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "LEOND",
+                    "fixes": {
+                        "LEOND": "LEOND AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "fixes": [
+        {
+            "name": "CHURP",
+            "lat": 44.71522778333333,
+            "lon": 88.94685833333334
+        },
+        {
+            "name": "CILSU",
+            "lat": 44.90300833333333,
+            "lon": 89.58178888333333
+        },
+        {
+            "name": "FALET",
+            "lat": 45.04735,
+            "lon": 89.88345556666667
+        },
+        {
+            "name": "HAKMO",
+            "lat": 44.982255566666666,
+            "lon": 89.74701388333334
+        },
+        {
+            "name": "HUXIS",
+            "lat": 44.80531388333333,
+            "lon": 89.37938888333333
+        },
+        {
+            "name": "JALER",
+            "lat": 44.95018888333333,
+            "lon": 89.68004166666667
+        },
+        {
+            "name": "ZEDNI",
+            "lat": 44.870813883333334,
+            "lon": 89.51493056666666
+        },
+        {
+            "name": "ZUPIG",
+            "lat": 45.16135833333333,
+            "lon": 89.53554443333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 13",
+        "RNW 23",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "FALET": "FALET AT OR ABOVE 3600",
+                "HAKMO": "HAKMO 3000",
+                "JALER": "JALER AT OR ABOVE 1900 RNW 13 TRK 127 UNTIL 1800 TURN LEFT DIRECT",
+                "ZUPIG": "OVERFLY ZUPIG AT OR ABOVE 4000 HOLD AT ZUPIG RIGHT TURN INBOUNDCOURSE 010 LEGDIST 4 FAF HAKMO MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "FALET",
+                    "fixes": {
+                        "FALET": "FALET RIGHT TURN INBOUNDCOURSE 127 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "HUXIS": "HUXIS AT OR ABOVE 3600",
+                "ZEDNI": "ZEDNI 3000",
+                "CILSU": "CILSU AT OR ABOVE 1900 RNW 31 TRK 307 UNTIL 1700",
+                "ZUPIG": "OVERFLY ZUPIG AT OR ABOVE 4000 HOLD AT ZUPIG RIGHT TURN INBOUNDCOURSE 010 LEGDIST 4 FAF ZEDNI MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "CHURP",
+                    "fixes": {
+                        "CHURP": "CHURP"
+                    }
+                },
+                {
+                    "name": "HUXIS",
+                    "fixes": {
+                        "HUXIS": "HUXIS RIGHT TURN INBOUNDCOURSE 307 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "fixes": [
+        {
+            "name": "AZNEL",
+            "lat": 30.287172216666665,
+            "lon": 82.76804443333333
+        },
+        {
+            "name": "DREBL",
+            "lat": 30.204252783333335,
+            "lon": 82.779675
+        },
+        {
+            "name": "FF28",
+            "lat": 30.16,
+            "lon": 82.46196943333334
+        },
+        {
+            "name": "GNV",
+            "lat": 29.692113883333334,
+            "lon": 82.27297221666667
+        },
+        {
+            "name": "JITUX",
+            "lat": 30.206413883333333,
+            "lon": 82.80010556666667
+        },
+        {
+            "name": "LCQNB",
+            "lat": 30.185319433333333,
+            "lon": 82.57859166666667
+        },
+        {
+            "name": "OPPEY",
+            "lat": 30.171491666666668,
+            "lon": 82.47342778333334
+        },
+        {
+            "name": "OREHO",
+            "lat": 30.15884721666667,
+            "lon": 82.35701943333333
+        },
+        {
+            "name": "PI001",
+            "lat": 30.171191066666665,
+            "lon": 82.51312171666666
+        },
+        {
+            "name": "PI002",
+            "lat": 30.109753833333333,
+            "lon": 82.47045323333333
+        },
+        {
+            "name": "PI003",
+            "lat": 30.144866483333335,
+            "lon": 82.39158451666667
+        },
+        {
+            "name": "TAY",
+            "lat": 30.50463888333333,
+            "lon": 82.55290278333334
+        },
+        {
+            "name": "TAZAN",
+            "lat": 30.194119433333334,
+            "lon": 82.68422221666667
+        },
+        {
+            "name": "TOKUC",
+            "lat": 30.075963883333333,
+            "lon": 82.368975
+        },
+        {
+            "name": "YESUN",
+            "lat": 30.18855556666667,
+            "lon": 82.63211111666666
+        },
+        {
+            "name": "ZELZY",
+            "lat": 30.24172778333333,
+            "lon": 82.34504443333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 10",
+        "RNW 23",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB28",
+            "fixes": {
+                "FF28": "FF28 2000 RNW 28",
+                "LCQNB": "LCQNB AT OR ABOVE 610 TRK 287 UNTIL 1000 TURN LEFT DIRECT LCQNB AT OR ABOVE 2000 HOLD AT LCQNB RIGHT TURN INBOUNDCOURSE 107 LEGTIME 1 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "GNV",
+                    "fixes": {
+                        "GNV": "GNV",
+                        "LCQNB": "LCQNB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "DREBL": "DREBL AT OR ABOVE 2000 OVERFLY DREBL AT OR ABOVE 2000 HOLD AT DREBL RIGHT TURN INBOUNDCOURSE 100 LEGDIST 4 FAF TAZAN MAP RNW 10",
+                "TAZAN": "TAZAN 1800",
+                "YESUN": "YESUN AT OR ABOVE 940 RNW 10 TRK 100 UNTIL 800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DREBL",
+                    "fixes": {
+                        "DREBL": "DREBL RIGHT TURN INBOUNDCOURSE 100 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TAY",
+                    "fixes": {
+                        "TAY": "TAY",
+                        "AZNEL": "AZNEL AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "OREHO": "OREHO AT OR ABOVE 2000",
+                "OPPEY": "OPPEY 1800 RNW 28 TRK 280 UNTIL 540",
+                "JITUX": "OVERFLY JITUX AT OR ABOVE 2000 HOLD AT JITUX RIGHT TURN INBOUNDCOURSE 100 LEGDIST 4 FAF OPPEY MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "OREHO",
+                    "fixes": {
+                        "OREHO": "OREHO RIGHT TURN INBOUNDCOURSE 280 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TOKUC",
+                    "fixes": {
+                        "TOKUC": "TOKUC AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "ZELZY",
+                    "fixes": {
+                        "ZELZY": "ZELZY AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

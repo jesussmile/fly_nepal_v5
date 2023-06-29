@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "ALUTE",
+            "lat": 25.405886116666668,
+            "lon": 74.53127221666666
+        },
+        {
+            "name": "ANNAD",
+            "lat": 24.500225,
+            "lon": 74.56265833333333
+        },
+        {
+            "name": "BENIE",
+            "lat": 23.574305566666666,
+            "lon": 73.57286111666667
+        },
+        {
+            "name": "BRRGO",
+            "lat": 24.416666666666668,
+            "lon": 74.56552778333334
+        },
+        {
+            "name": "BUBEB",
+            "lat": 23.980277783333335,
+            "lon": 74.74638888333334
+        },
+        {
+            "name": "COKPO",
+            "lat": 24.08,
+            "lon": 74.73694443333333
+        },
+        {
+            "name": "COREG",
+            "lat": 25.288916666666665,
+            "lon": 74.53531666666666
+        },
+        {
+            "name": "EMGOR",
+            "lat": 24.18,
+            "lon": 74.7275
+        },
+        {
+            "name": "FN10",
+            "lat": 24.079641666666667,
+            "lon": 74.62761111666667
+        },
+        {
+            "name": "JEPIR",
+            "lat": 24.071388883333334,
+            "lon": 74.6275
+        },
+        {
+            "name": "MICAS",
+            "lat": 22.1315,
+            "lon": 72.44525
+        },
+        {
+            "name": "MILLE",
+            "lat": 25.927325,
+            "lon": 73.72449166666667
+        },
+        {
+            "name": "MLSAP",
+            "lat": 25.636677783333333,
+            "lon": 74.17591111666667
+        },
+        {
+            "name": "MUVOD",
+            "lat": 24.656661116666665,
+            "lon": 75.66685
+        },
+        {
+            "name": "OREDE",
+            "lat": 22.604136116666666,
+            "lon": 72.44525556666666
+        },
+        {
+            "name": "PI001",
+            "lat": 24.07367105,
+            "lon": 74.59729981666666
+        },
+        {
+            "name": "PI002",
+            "lat": 24.034624516666668,
+            "lon": 74.66311033333334
+        },
+        {
+            "name": "PI003",
+            "lat": 24.096103866666667,
+            "lon": 74.71339186666667
+        },
+        {
+            "name": "SYRIL",
+            "lat": 24.056352783333335,
+            "lon": 74.43912221666666
+        },
+        {
+            "name": "ZSJNB",
+            "lat": 24.061555566666666,
+            "lon": 74.53480556666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "SYRIL2",
+            "rnw": "10",
+            "fixes": {
+                "SYRIL": "OVERFLY SYRIL AT OR ABOVE 850",
+                "BENIE": "BENIE AT OR ABOVE 6000",
+                "OREDE": "OREDE",
+                "MICAS": "MICAS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "BRRGO3",
+            "runway": "RNW 10",
+            "fixes": {
+                "MILLE": "MILLE",
+                "MLSAP": "MLSAP",
+                "ALUTE": "ALUTE",
+                "COREG": "COREG",
+                "ANNAD": "ANNAD",
+                "BRRGO": "BRRGO",
+                "EMGOR": "EMGOR"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB10",
+            "fixes": {
+                "FN10": "FN10 1700 RNW 10 TRK 111 UNTIL 1000 TURN LEFT DIRECT",
+                "ZSJNB": "ZSJNB AT OR ABOVE 1700 HOLD AT ZSJNB RIGHT TURN INBOUNDCOURSE 111 LEGDIST 4 FAF FN10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "ZSJ",
+                    "fixes": {
+                        "ZSJNB": "ZSJNB",
+                        "PI001": "PI001 AT OR ABOVE 1700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "COKPO": "COKPO AT OR ABOVE 2500 OVERFLY COKPO AT OR ABOVE 2500 HOLD AT COKPO RIGHT TURN INBOUNDCOURSE 104 LEGDIST 4 FAF JEPIR MAP RNW 10",
+                "JEPIR": "JEPIR 1700 RNW 10 TRK 104 UNTIL 430 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BRRGO",
+                    "fixes": {
+                        "BRRGO": "BRRGO",
+                        "EMGOR": "EMGOR AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "BUBEB",
+                    "fixes": {
+                        "BUBEB": "BUBEB"
+                    }
+                },
+                {
+                    "name": "MUVOD",
+                    "fixes": {
+                        "MUVOD": "MUVOD"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "GNSHP",
+            "lat": 36.88470278333333,
+            "lon": 87.32499166666666
+        },
+        {
+            "name": "NIXAE",
+            "lat": 36.73131943333333,
+            "lon": 87.28744443333333
+        },
+        {
+            "name": "OJLUW",
+            "lat": 36.430286116666664,
+            "lon": 87.64336388333334
+        },
+        {
+            "name": "QUWRE",
+            "lat": 36.532475,
+            "lon": 87.52301666666666
+        },
+        {
+            "name": "VUSNY",
+            "lat": 36.503486116666664,
+            "lon": 87.55720556666667
+        },
+        {
+            "name": "WARUX",
+            "lat": 36.63259166666667,
+            "lon": 87.40460833333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVX05",
+            "fixes": {
+                "OJLUW": "OJLUW AT OR ABOVE 2500",
+                "VUSNY": "VUSNY 2200",
+                "QUWRE": "QUWRE AT OR ABOVE 1440 RNW 05 TRK 047 UNTIL 995",
+                "NIXAE": "OVERFLY NIXAE AT OR ABOVE 2400 HOLD AT NIXAE RIGHT TURN INBOUNDCOURSE 227 LEGDIST 6 FAF VUSNY MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "GNSHP",
+                    "fixes": {
+                        "GNSHP": "GNSHP",
+                        "OJLUW": "OVERFLY OJLUW AT OR ABOVE 2500 HOLD AT OJLUW RIGHT TURN INBOUNDCOURSE 047 ALT 2500 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVX23",
+            "fixes": {
+                "NIXAE": "NIXAE AT OR ABOVE 2400 OVERFLY NIXAE AT OR ABOVE 2400 HOLD AT NIXAE RIGHT TURN INBOUNDCOURSE 227 ALT 6000 LEGDIST 6 FAF WARUX MAP RNW 23",
+                "WARUX": "WARUX 2200 RNW 23 TRK 227 UNTIL 995 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GNSHP",
+                    "fixes": {
+                        "GNSHP": "GNSHP"
+                    }
+                },
+                {
+                    "name": "NIXAE",
+                    "fixes": {
+                        "NIXAE": "NIXAE RIGHT TURN INBOUNDCOURSE 227 ALT 2400 LEGDIST 6"
+                    }
+                }
+            ]
+        }
+    ]
+}

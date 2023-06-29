@@ -1,0 +1,184 @@
+{
+    "fixes": [
+        {
+            "name": "BOLLU",
+            "lat": 35.40188333333333,
+            "lon": 91.68510833333333
+        },
+        {
+            "name": "CARIP",
+            "lat": 35.259377783333335,
+            "lon": 91.72419443333334
+        },
+        {
+            "name": "CERCY",
+            "lat": 35.122511116666665,
+            "lon": 91.76160556666666
+        },
+        {
+            "name": "CF01",
+            "lat": 35.02474443333333,
+            "lon": 91.78817221666667
+        },
+        {
+            "name": "DINGE",
+            "lat": 35.304066666666664,
+            "lon": 91.71195278333333
+        },
+        {
+            "name": "DS",
+            "lat": 35.122511116666665,
+            "lon": 91.76160556666666
+        },
+        {
+            "name": "HOGGA",
+            "lat": 35.02305,
+            "lon": 91.78871388333333
+        },
+        {
+            "name": "LIT",
+            "lat": 34.677672216666664,
+            "lon": 92.18052778333333
+        },
+        {
+            "name": "LYONN",
+            "lat": 35.38352221666667,
+            "lon": 91.58567778333334
+        },
+        {
+            "name": "PI001",
+            "lat": 35.0656718,
+            "lon": 91.77763761666667
+        },
+        {
+            "name": "PI002",
+            "lat": 35.0048862,
+            "lon": 91.73127283333334
+        },
+        {
+            "name": "PI003",
+            "lat": 34.9601075,
+            "lon": 91.8073523
+        },
+        {
+            "name": "SETLE",
+            "lat": 35.12136111666667,
+            "lon": 91.76191666666666
+        },
+        {
+            "name": "TAFTE",
+            "lat": 34.859411116666664,
+            "lon": 91.72699443333333
+        },
+        {
+            "name": "VITLS",
+            "lat": 35.42016388333333,
+            "lon": 91.78458333333333
+        },
+        {
+            "name": "WEBTO",
+            "lat": 35.004772216666666,
+            "lon": 91.68972221666667
+        },
+        {
+            "name": "ZABIN",
+            "lat": 35.04124721666667,
+            "lon": 91.88775
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS01",
+            "fixes": {
+                "CF01": "CF01 AT OR ABOVE 2300",
+                "CERCY": "CERCY 1877 RNW 01 TRK 011 UNTIL 800 TURN RIGHT DIRECT",
+                "DS": "DS AT OR ABOVE 2300 HOLD AT DS RIGHT TURN INBOUNDCOURSE 011 LEGTIME 1 FAF CERCY MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "LIT",
+                    "fixes": {
+                        "LIT": "LIT",
+                        "DS": "DS AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TAFTE",
+                    "fixes": {
+                        "TAFTE": "TAFTE",
+                        "DS": "DS AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "HOGGA": "HOGGA AT OR ABOVE 2300",
+                "SETLE": "SETLE 1900 RNW 01 TRK 011 UNTIL 573",
+                "BOLLU": "OVERFLY BOLLU AT OR ABOVE 2900 HOLD AT BOLLU RIGHT TURN INBOUNDCOURSE 191 LEGDIST 4 FAF SETLE MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "HOGGA",
+                    "fixes": {
+                        "HOGGA": "HOGGA RIGHT TURN INBOUNDCOURSE 011 ALT 2300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WEBTO",
+                    "fixes": {
+                        "WEBTO": "WEBTO AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "ZABIN",
+                    "fixes": {
+                        "ZABIN": "ZABIN AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "BOLLU": "BOLLU AT OR ABOVE 2900",
+                "DINGE": "DINGE 2000",
+                "CARIP": "CARIP AT OR ABOVE 1100 RNW 19 TRK 191 UNTIL 514",
+                "HOGGA": "OVERFLY HOGGA AT OR ABOVE 2300 HOLD AT HOGGA RIGHT TURN INBOUNDCOURSE 011 LEGDIST 4 FAF DINGE MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "BOLLU",
+                    "fixes": {
+                        "BOLLU": "BOLLU RIGHT TURN INBOUNDCOURSE 191 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LYONN",
+                    "fixes": {
+                        "LYONN": "LYONN AT OR ABOVE 2900"
+                    }
+                },
+                {
+                    "name": "VITLS",
+                    "fixes": {
+                        "VITLS": "VITLS AT OR ABOVE 2900"
+                    }
+                }
+            ]
+        }
+    ]
+}

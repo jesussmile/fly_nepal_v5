@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "DEEJY",
+            "lat": 46.842205566666664,
+            "lon": 96.51122221666667
+        },
+        {
+            "name": "FAR",
+            "lat": 46.75333611666667,
+            "lon": 96.85131943333333
+        },
+        {
+            "name": "FEKKY",
+            "lat": 46.722711116666666,
+            "lon": 96.27156111666666
+        },
+        {
+            "name": "MUGUH",
+            "lat": 46.69620833333333,
+            "lon": 96.38636666666666
+        },
+        {
+            "name": "NITVY",
+            "lat": 46.74909721666667,
+            "lon": 96.15664443333333
+        },
+        {
+            "name": "NOCIK",
+            "lat": 46.963086116666666,
+            "lon": 96.38916388333334
+        },
+        {
+            "name": "ORENY",
+            "lat": 46.81756111666667,
+            "lon": 96.31783333333334
+        },
+        {
+            "name": "STARR",
+            "lat": 46.5036,
+            "lon": 95.87411388333334
+        },
+        {
+            "name": "TUYUK",
+            "lat": 46.883744433333334,
+            "lon": 96.35047221666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA16",
+            "fixes": {
+                "FAR": "FAR AT OR ABOVE 2700",
+                "DEEJY": "DEEJY 2700 DEEJY AT OR ABOVE 2700 HOLD AT DEEJY RIGHT TURN INBOUNDCOURSE 060 LEGTIME 1 FAF DEEJY MAP TUYUK",
+                "TUYUK": "TUYUK 1980 RNW 16 TRK 060 UNTIL 1980 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FAR",
+                    "fixes": {
+                        "FAR": "FAR RIGHT TURN INBOUNDCOURSE 060 ALT 2700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA34",
+            "fixes": {
+                "FAR": "FAR AT OR ABOVE 2700",
+                "DEEJY": "DEEJY 2700 DEEJY AT OR ABOVE 2700 HOLD AT DEEJY RIGHT TURN INBOUNDCOURSE 060 LEGTIME 1 FAF DEEJY MAP TUYUK",
+                "TUYUK": "TUYUK 1980 RNW 34 TRK 060 UNTIL 1980 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FAR",
+                    "fixes": {
+                        "FAR": "FAR RIGHT TURN INBOUNDCOURSE 060 ALT 2700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "FEKKY": "FEKKY AT OR ABOVE 3100",
+                "ORENY": "ORENY 2500 RNW 34 TRK 336 UNTIL 1610",
+                "NOCIK": "NOCIK TURN LEFT DIRECT",
+                "FAR": "OVERFLY FAR AT OR ABOVE 2700 HOLD AT FAR RIGHT TURN INBOUNDCOURSE 060 LEGDIST 4 FAF ORENY MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "FAR",
+                    "fixes": {
+                        "FAR": "FAR",
+                        "MUGUH": "MUGUH AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "STARR",
+                    "fixes": {
+                        "STARR": "STARR",
+                        "NITVY": "NITVY AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        }
+    ]
+}

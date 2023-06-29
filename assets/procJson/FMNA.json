@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "D286G",
+            "lat": 12.332025,
+            "lon": 49.171141666666664
+        },
+        {
+            "name": "D296F",
+            "lat": 12.317925,
+            "lon": 49.195005566666666
+        },
+        {
+            "name": "DONB",
+            "lat": 12.346333333333334,
+            "lon": 49.28944443333334
+        },
+        {
+            "name": "DURBO",
+            "lat": 12.138572216666667,
+            "lon": 49.15436388333333
+        },
+        {
+            "name": "ETUDO",
+            "lat": 12.222055566666667,
+            "lon": 49.09769166666667
+        },
+        {
+            "name": "FN13",
+            "lat": 12.294863883333333,
+            "lon": 49.20570278333334
+        },
+        {
+            "name": "NA502",
+            "lat": 12.268547216666667,
+            "lon": 49.16846666666667
+        },
+        {
+            "name": "NA504",
+            "lat": 12.373494433333333,
+            "lon": 49.32842778333333
+        },
+        {
+            "name": "NETUS",
+            "lat": 12.305708333333333,
+            "lon": 49.041041666666665
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB13",
+            "fixes": {
+                "FN13": "FN13 2300 RNW 13",
+                "DONB": "OVERFLY DONB TRK 131 UNTIL 780 TURN LEFT DIRECT DONB 3000 FAF FN13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "DO1",
+                    "fixes": {
+                        "DONB": "DONB AT OR ABOVE 3000",
+                        "D286G": "OVERFLY D286G AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "DO2",
+                    "fixes": {
+                        "DONB": "DONB AT OR ABOVE 3000",
+                        "D296F": "OVERFLY D296F AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "ETUDO": "ETUDO AT OR ABOVE 4000 SPEED 230",
+                "NA502": "NA502 3000 SPEED 230 RNW 13",
+                "NA504": "OVERFLY NA504 TURN LEFT DIRECT",
+                "DURBO": "DURBO AT OR ABOVE 4000 SPEED 230 FAF NA502 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "DURBO",
+                    "fixes": {
+                        "DURBO": "DURBO AT OR ABOVE 4000 SPEED 230"
+                    }
+                },
+                {
+                    "name": "ETUDO",
+                    "fixes": {
+                        "ETUDO": "ETUDO RIGHT TURN INBOUNDCOURSE 133 ALT 4000 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "NETUS",
+                    "fixes": {
+                        "NETUS": "NETUS AT OR ABOVE 6000 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

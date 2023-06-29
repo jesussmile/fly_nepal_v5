@@ -1,0 +1,117 @@
+{
+    "fixes": [
+        {
+            "name": "DGD",
+            "lat": 37.02346943333333,
+            "lon": 92.87692221666667
+        },
+        {
+            "name": "GAHSU",
+            "lat": 36.84321666666666,
+            "lon": 92.53454443333334
+        },
+        {
+            "name": "GOTPY",
+            "lat": 37.11048888333333,
+            "lon": 92.84143888333334
+        },
+        {
+            "name": "JOBAX",
+            "lat": 36.99105556666667,
+            "lon": 92.75418611666667
+        },
+        {
+            "name": "UYUJA",
+            "lat": 36.97358333333333,
+            "lon": 92.68697221666666
+        },
+        {
+            "name": "YIRPU",
+            "lat": 36.904638883333334,
+            "lon": 92.60484443333333
+        },
+        {
+            "name": "YOZKY",
+            "lat": 37.048113883333336,
+            "lon": 92.76955833333334
+        },
+        {
+            "name": "ZOPTI",
+            "lat": 37.00993056666667,
+            "lon": 92.72563333333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "GOTPY": "GOTPY AT OR ABOVE 4600",
+                "YOZKY": "YOZKY 3200",
+                "ZOPTI": "ZOPTI AT OR ABOVE 2200 RNW 13 TRK 135 UNTIL 1711",
+                "GAHSU": "OVERFLY GAHSU AT OR ABOVE 3500 HOLD AT GAHSU RIGHT TURN INBOUNDCOURSE 315 LEGDIST 5 FAF YOZKY MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "GOTPY",
+                    "fixes": {
+                        "GOTPY": "GOTPY RIGHT TURN INBOUNDCOURSE 135 ALT 4600 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "GAHSU": "GAHSU AT OR ABOVE 3500",
+                "YIRPU": "YIRPU 3000 RNW 31",
+                "GOTPY": "OVERFLY GOTPY AT OR ABOVE 4600 HOLD AT GOTPY RIGHT TURN INBOUNDCOURSE 135 LEGDIST 5 FAF YIRPU MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "GAHSU",
+                    "fixes": {
+                        "GAHSU": "GAHSU RIGHT TURN INBOUNDCOURSE 315 ALT 3500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA13",
+            "fixes": {
+                "DGD": "DGD 3500 DGD HOLD AT DGD RIGHT TURN INBOUNDCOURSE 106 LEGTIME 1 FAF DGD MAP UYUJA",
+                "JOBAX": "JOBAX AT OR ABOVE 2500",
+                "UYUJA": "UYUJA 2020 RNW 13 TRK 107 UNTIL 3500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DGD",
+                    "fixes": {
+                        "DGD": "DGD RIGHT TURN INBOUNDCOURSE 106 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA31",
+            "fixes": {
+                "DGD": "DGD 3500 DGD HOLD AT DGD RIGHT TURN INBOUNDCOURSE 106 LEGTIME 1 FAF DGD MAP UYUJA",
+                "JOBAX": "JOBAX AT OR ABOVE 2500",
+                "UYUJA": "UYUJA 2020 RNW 31 TRK 107 UNTIL 3500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DGD",
+                    "fixes": {
+                        "DGD": "DGD RIGHT TURN INBOUNDCOURSE 106 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

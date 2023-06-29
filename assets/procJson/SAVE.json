@@ -1,0 +1,217 @@
+{
+    "fixes": [
+        {
+            "name": "16VOR",
+            "lat": 42.87216111666667,
+            "lon": 71.07021111666667
+        },
+        {
+            "name": "27LOC",
+            "lat": 42.87319443333333,
+            "lon": 71.07116111666667
+        },
+        {
+            "name": "60VOR",
+            "lat": 42.831091666666666,
+            "lon": 70.98760556666667
+        },
+        {
+            "name": "ANSOT",
+            "lat": 42.649513883333334,
+            "lon": 70.95771666666667
+        },
+        {
+            "name": "BOKOL",
+            "lat": 42.751111116666664,
+            "lon": 70.81527778333333
+        },
+        {
+            "name": "CI23",
+            "lat": 42.793630566666664,
+            "lon": 70.90449721666667
+        },
+        {
+            "name": "D049N",
+            "lat": 42.77090556666667,
+            "lon": 70.85706388333334
+        },
+        {
+            "name": "ESQ",
+            "lat": 42.88708333333334,
+            "lon": 71.10027778333334
+        },
+        {
+            "name": "FD23",
+            "lat": 42.79370278333333,
+            "lon": 70.91260556666667
+        },
+        {
+            "name": "FI23",
+            "lat": 42.843558333333334,
+            "lon": 71.00896943333333
+        },
+        {
+            "name": "GEBUS",
+            "lat": 42.70597778333333,
+            "lon": 70.72223611666666
+        },
+        {
+            "name": "GIMBI",
+            "lat": 42.824280566666665,
+            "lon": 70.96869443333334
+        },
+        {
+            "name": "MM22",
+            "lat": 42.89277778333334,
+            "lon": 71.1125
+        },
+        {
+            "name": "NIRKA",
+            "lat": 43.11244166666667,
+            "lon": 71.06165278333333
+        },
+        {
+            "name": "OPLAS",
+            "lat": 42.56611111666667,
+            "lon": 70.57805556666666
+        },
+        {
+            "name": "TEPUB",
+            "lat": 42.77884443333333,
+            "lon": 70.87379166666666
+        },
+        {
+            "name": "VE070",
+            "lat": 42.879252783333335,
+            "lon": 71.08391388333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 08",
+        "RNW 23",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "LAS1A",
+            "runway": "RNW 23",
+            "fixes": {
+                "OPLAS": "OPLAS AT OR ABOVE 12000",
+                "BOKOL": "BOKOL AT OR ABOVE 7000"
+            }
+        },
+        {
+            "name": "LAS1B",
+            "runway": "RNW 23",
+            "fixes": {
+                "OPLAS": "OPLAS AT OR ABOVE 12000 TRK 222 UNTIL 20.0 FROM",
+                "ESQ": "ESQ",
+                "BOKOL": "BOKOL AT OR ABOVE 7000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FD23": "FD23 6300",
+                "60VOR": "60VOR AT OR ABOVE 4950",
+                "16VOR": "16VOR AT OR ABOVE 3450",
+                "ESQ": "ESQ 3007 RNW 23 TRK 229 UNTIL 3030 TRK 164 VECTORS FAF FD23 MAP ESQ"
+            },
+            "transitions": [
+                {
+                    "name": "ESQ",
+                    "fixes": {
+                        "ESQ": "ESQ TRK 066 UNTIL 10.0 FROM ESQ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOCY23",
+            "fixes": {
+                "CI23": "CI23 AT OR ABOVE 6300",
+                "FI23": "FI23 4530",
+                "27LOC": "27LOC AT OR ABOVE 3500",
+                "ESQ": "ESQ AT OR ABOVE 3000",
+                "MM22": "MM22 2793 RNW 23 TRK 229 UNTIL 3030 TRK 164 VECTORS FAF FI23 MAP MM22"
+            },
+            "transitions": [
+                {
+                    "name": "ESQ",
+                    "fixes": {
+                        "ESQ": "ESQ TRK 060 UNTIL 12.7 FROM ESQ TURN LEFT DIRECT",
+                        "D049N": "D049N AT OR ABOVE 6300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOCZ23",
+            "fixes": {
+                "CI23": "CI23 AT OR ABOVE 6300",
+                "FI23": "FI23 4530",
+                "27LOC": "27LOC AT OR ABOVE 3500",
+                "ESQ": "ESQ AT OR ABOVE 3000",
+                "MM22": "MM22 2793 RNW 23 TRK 229 UNTIL 3030 TRK 164 VECTORS FAF FI23 MAP MM22"
+            },
+            "transitions": [
+                {
+                    "name": "BOKOL",
+                    "fixes": {
+                        "BOKOL": "BOKOL AT OR ABOVE 7000",
+                        "D049N": "D049N AT OR ABOVE 6300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY23",
+            "fixes": {
+                "TEPUB": "TEPUB AT OR ABOVE 5700 SPEED 185",
+                "GIMBI": "GIMBI 5200",
+                "VE070": "OVERFLY VE070 3270 RNW 23 HOLD AT",
+                "NIRKA": "NIRKA RIGHT TURN INBOUNDCOURSE 345 ALT 8300 SPEED 220 LEGDIST 4 FAF GIMBI MAP VE070"
+            },
+            "transitions": [
+                {
+                    "name": "ANSOT",
+                    "fixes": {
+                        "ANSOT": "ANSOT AT OR ABOVE 8300 SPEED 220"
+                    }
+                },
+                {
+                    "name": "GEBUS",
+                    "fixes": {
+                        "GEBUS": "GEBUS AT OR ABOVE 8300 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ23",
+            "fixes": {
+                "TEPUB": "TEPUB AT OR ABOVE 5700 SPEED 185",
+                "GIMBI": "GIMBI 5200 RNW 23",
+                "NIRKA": "OVERFLY NIRKA AT OR ABOVE 7200 SPEED 185 HOLD AT NIRKA RIGHT TURN INBOUNDCOURSE 345 ALT 8300 SPEED 220 LEGDIST 4 FAF GIMBI MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "ANSOT",
+                    "fixes": {
+                        "ANSOT": "ANSOT AT OR ABOVE 8300 SPEED 220"
+                    }
+                },
+                {
+                    "name": "GEBUS",
+                    "fixes": {
+                        "GEBUS": "GEBUS AT OR ABOVE 8300 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

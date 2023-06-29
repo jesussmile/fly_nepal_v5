@@ -1,0 +1,151 @@
+{
+    "fixes": [
+        {
+            "name": "CARRO",
+            "lat": 47.293897216666664,
+            "lon": 122.85773888333334
+        },
+        {
+            "name": "CEBOD",
+            "lat": 47.41293056666667,
+            "lon": 122.83812221666666
+        },
+        {
+            "name": "CFFWM",
+            "lat": 47.669438883333335,
+            "lon": 122.59388888333334
+        },
+        {
+            "name": "GITRE",
+            "lat": 47.667952783333334,
+            "lon": 122.59531111666666
+        },
+        {
+            "name": "LOFAL",
+            "lat": 47.85155278333333,
+            "lon": 122.68051666666666
+        },
+        {
+            "name": "OLM",
+            "lat": 46.971638883333334,
+            "lon": 122.90183333333333
+        },
+        {
+            "name": "PI001",
+            "lat": 47.63442113333333,
+            "lon": 122.62697493333333
+        },
+        {
+            "name": "PI002",
+            "lat": 47.70451958333334,
+            "lon": 122.64911661666666
+        },
+        {
+            "name": "PI003",
+            "lat": 47.72520778333333,
+            "lon": 122.53918111666667
+        },
+        {
+            "name": "SANDR",
+            "lat": 47.163105566666665,
+            "lon": 123.35316943333333
+        },
+        {
+            "name": "SEA",
+            "lat": 47.435372216666664,
+            "lon": 122.30961666666667
+        },
+        {
+            "name": "WUMOX",
+            "lat": 47.58550833333334,
+            "lon": 122.67412221666666
+        },
+        {
+            "name": "ZOLGI",
+            "lat": 47.27298056666667,
+            "lon": 122.937675
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS20",
+            "fixes": {
+                "CFFWM": "CFFWM AT OR ABOVE 3000",
+                "WUMOX": "WUMOX 2500 RNW 20 HDG 197 INTERCEPT RADIAL 166 TO",
+                "CARRO": "CARRO CARRO AT OR ABOVE 4000 HOLD AT CARRO RIGHT TURN INBOUNDCOURSE 166 ALT 4000 LEGTIME 1 FAF WUMOX MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "OLM",
+                    "fixes": {
+                        "OLM": "OLM",
+                        "WUMOX": "WUMOX AT OR ABOVE 3500",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SEA",
+                    "fixes": {
+                        "SEA": "SEA",
+                        "WUMOX": "WUMOX AT OR ABOVE 3500",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "ZOLGI": "ZOLGI AT OR ABOVE 4000 OVERFLY ZOLGI AT OR ABOVE 4000 HOLD AT ZOLGI RIGHT TURN INBOUNDCOURSE 053 ALT 4000 LEGDIST 4 FAF CEBOD MAP RNW 02",
+                "CEBOD": "CEBOD 2100 RNW 02 TRK 017 UNTIL 1200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "OLM",
+                    "fixes": {
+                        "OLM": "OLM"
+                    }
+                },
+                {
+                    "name": "SANDR",
+                    "fixes": {
+                        "SANDR": "SANDR"
+                    }
+                },
+                {
+                    "name": "ZOLGI",
+                    "fixes": {
+                        "ZOLGI": "ZOLGI RIGHT TURN INBOUNDCOURSE 053 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "GITRE": "GITRE AT OR ABOVE 3400",
+                "WUMOX": "WUMOX 2500 RNW 20 TRK 197 UNTIL 642",
+                "CEBOD": "CEBOD",
+                "CARRO": "OVERFLY CARRO AT OR ABOVE 4000 HOLD AT CARRO RIGHT TURN INBOUNDCOURSE 047 ALT 4000 LEGDIST 4 FAF WUMOX MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "LOFAL",
+                    "fixes": {
+                        "LOFAL": "LOFAL"
+                    }
+                }
+            ]
+        }
+    ]
+}

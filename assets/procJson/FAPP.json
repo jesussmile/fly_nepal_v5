@@ -1,0 +1,201 @@
+{
+    "fixes": [
+        {
+            "name": "CI05",
+            "lat": 23.986127783333334,
+            "lon": 29.339205566666667
+        },
+        {
+            "name": "D253K",
+            "lat": 23.941113883333333,
+            "lon": 29.293683333333334
+        },
+        {
+            "name": "D261H",
+            "lat": 23.896297216666667,
+            "lon": 29.328702783333334
+        },
+        {
+            "name": "EPRUP",
+            "lat": 23.926488883333334,
+            "lon": 29.251369433333334
+        },
+        {
+            "name": "FD05",
+            "lat": 23.927466666666668,
+            "lon": 29.393788883333333
+        },
+        {
+            "name": "FI05",
+            "lat": 23.945094433333335,
+            "lon": 29.373677783333335
+        },
+        {
+            "name": "IMGAK",
+            "lat": 24.067308333333333,
+            "lon": 29.270230566666665
+        },
+        {
+            "name": "MD05",
+            "lat": 23.889125,
+            "lon": 29.423013883333333
+        },
+        {
+            "name": "PI001",
+            "lat": 23.887598983333334,
+            "lon": 29.423973533333335
+        },
+        {
+            "name": "PI002",
+            "lat": 23.900024516666665,
+            "lon": 29.346776266666666
+        },
+        {
+            "name": "PI003",
+            "lat": 23.976309433333334,
+            "lon": 29.355943083333333
+        },
+        {
+            "name": "PI004",
+            "lat": 23.885781766666668,
+            "lon": 29.42128913333333
+        },
+        {
+            "name": "PI005",
+            "lat": 23.894496166666666,
+            "lon": 29.3434886
+        },
+        {
+            "name": "PI006",
+            "lat": 23.997362933333335,
+            "lon": 29.3257845
+        },
+        {
+            "name": "PP1F1",
+            "lat": 23.918288883333332,
+            "lon": 29.396752783333334
+        },
+        {
+            "name": "PP1M1",
+            "lat": 23.78896943333333,
+            "lon": 29.506277783333335
+        },
+        {
+            "name": "PP1M2",
+            "lat": 23.701588883333333,
+            "lon": 29.384383333333332
+        },
+        {
+            "name": "PP1MP",
+            "lat": 23.864191666666667,
+            "lon": 29.442586116666668
+        },
+        {
+            "name": "PP1T1",
+            "lat": 23.988213883333334,
+            "lon": 29.337430566666665
+        },
+        {
+            "name": "PP1T2",
+            "lat": 23.942019433333332,
+            "lon": 29.376627783333333
+        },
+        {
+            "name": "PPV",
+            "lat": 23.839819433333332,
+            "lon": 29.460566666666665
+        },
+        {
+            "name": "RW05",
+            "lat": 23.858808333333332,
+            "lon": 29.44714443333333
+        },
+        {
+            "name": "UDBIM",
+            "lat": 24.049894433333332,
+            "lon": 29.423575
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 05",
+        "RNW 19",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "FD05": "FD05 5700",
+                "MD05": "MD05 4780 RNW 05",
+                "PPV": "PPV TRK 051 UNTIL 5500 TURN LEFT DIRECT PPV 8000 FAF FD05 MAP MD05",
+                "D261H": "OVERFLY D261H 8000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PPV",
+                    "fixes": {
+                        "PPV": "PPV AT OR ABOVE 8000",
+                        "PI001": "PI001 AT OR ABOVE 5700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS05",
+            "fixes": {
+                "CI05": "CI05 AT OR ABOVE 6700",
+                "FI05": "FI05 6200 RNW 05 TRK 054 UNTIL 2.0 FROM",
+                "PPV": "PPV TURN LEFT DIRECT PPV SPEED 230 FAF FI05 MAP RNW 05",
+                "D253K": "OVERFLY D253K 6700 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PPV",
+                    "fixes": {
+                        "PPV": "PPV AT OR ABOVE 7000",
+                        "PI004": "PI004 AT OR ABOVE 6700 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 6700 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 6700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "PP1T1": "PP1T1 AT OR ABOVE 7000 SPEED 220",
+                "PP1T2": "PP1T2 AT OR ABOVE 6000 SPEED 220",
+                "PP1F1": "PP1F1 5500 SPEED 185",
+                "PP1MP": "OVERFLY PP1MP 4194 RNW 05",
+                "PP1M1": "PP1M1 SPEED 220",
+                "PP1M2": "PP1M2 AT OR ABOVE 7600 SPEED 220 TURN LEFT DIRECT",
+                "EPRUP": "EPRUP AT OR ABOVE 8800 SPEED 220 HOLD AT EPRUP RIGHT TURN INBOUNDCOURSE 144 ALT 8800 SPEED 220 LEGTIME 1 FAF PP1F1 MAP PP1MP"
+            },
+            "transitions": [
+                {
+                    "name": "EPRUP",
+                    "fixes": {
+                        "EPRUP": "EPRUP AT OR ABOVE 8800 SPEED 220"
+                    }
+                },
+                {
+                    "name": "IMGAK",
+                    "fixes": {
+                        "IMGAK": "IMGAK AT OR ABOVE 8800 SPEED 220"
+                    }
+                },
+                {
+                    "name": "UDBIM",
+                    "fixes": {
+                        "UDBIM": "UDBIM AT OR ABOVE 8000 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

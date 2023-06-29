@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "COVLA",
+            "lat": 44.363269433333336,
+            "lon": 84.52626111666666
+        },
+        {
+            "name": "FISTU",
+            "lat": 44.35675556666666,
+            "lon": 84.96009443333334
+        },
+        {
+            "name": "HESER",
+            "lat": 44.36526943333333,
+            "lon": 84.36505278333334
+        },
+        {
+            "name": "HILOT",
+            "lat": 44.36226943333333,
+            "lon": 84.60057778333334
+        },
+        {
+            "name": "IBEME",
+            "lat": 44.359369433333335,
+            "lon": 84.79883056666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "FISTU": "FISTU AT OR ABOVE 3300",
+                "IBEME": "IBEME 2900 RNW 09 TRK 094 UNTIL 1520",
+                "HESER": "OVERFLY HESER AT OR ABOVE 3300 HOLD AT HESER RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4 FAF IBEME MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "FISTU",
+                    "fixes": {
+                        "FISTU": "FISTU RIGHT TURN INBOUNDCOURSE 094 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "HESER": "HESER AT OR ABOVE 3300",
+                "COVLA": "COVLA 3000",
+                "HILOT": "HILOT AT OR ABOVE 1980 RNW 27 TRK 274 UNTIL 1540",
+                "FISTU": "OVERFLY FISTU AT OR ABOVE 3300 HOLD AT FISTU RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4 FAF COVLA MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "HESER",
+                    "fixes": {
+                        "HESER": "HESER RIGHT TURN INBOUNDCOURSE 274 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

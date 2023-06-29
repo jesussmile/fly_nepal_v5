@@ -1,0 +1,143 @@
+{
+    "fixes": [
+        {
+            "name": "30VOR",
+            "lat": 29.087461116666667,
+            "lon": 30.623755566666667
+        },
+        {
+            "name": "55VOR",
+            "lat": 29.056402783333333,
+            "lon": 30.655555566666667
+        },
+        {
+            "name": "ETMUP",
+            "lat": 29.046622216666666,
+            "lon": 30.789430566666667
+        },
+        {
+            "name": "FD24",
+            "lat": 29.006697216666666,
+            "lon": 30.706397216666666
+        },
+        {
+            "name": "GY2F1",
+            "lat": 29.053986116666668,
+            "lon": 30.655225
+        },
+        {
+            "name": "GY2F2",
+            "lat": 29.087963883333334,
+            "lon": 30.621044433333335
+        },
+        {
+            "name": "GY2MP",
+            "lat": 29.110322216666667,
+            "lon": 30.598536116666665
+        },
+        {
+            "name": "GY2T1",
+            "lat": 28.991358333333334,
+            "lon": 30.718144433333332
+        },
+        {
+            "name": "GY2T2",
+            "lat": 29.023088883333333,
+            "lon": 30.686277783333335
+        },
+        {
+            "name": "GYV",
+            "lat": 29.124719433333333,
+            "lon": 30.585569433333333
+        },
+        {
+            "name": "IBLUX",
+            "lat": 28.928705566666668,
+            "lon": 30.78098333333333
+        },
+        {
+            "name": "MD24",
+            "lat": 29.10485,
+            "lon": 30.605938883333334
+        },
+        {
+            "name": "PI001",
+            "lat": 29.081361916666665,
+            "lon": 30.630232733333333
+        },
+        {
+            "name": "PI002",
+            "lat": 29.077586316666668,
+            "lon": 30.712122366666666
+        },
+        {
+            "name": "PI003",
+            "lat": 28.9946026,
+            "lon": 30.719446666666666
+        },
+        {
+            "name": "UDGOM",
+            "lat": 28.93605833333333,
+            "lon": 30.64693056666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD24",
+            "fixes": {
+                "FD24": "FD24 6300",
+                "55VOR": "55VOR AT OR ABOVE 5090 55VOR 55VOR 6300 HOLD AT 55VOR LEFT TURN INBOUNDCOURSE 246 SPEED 200 LEGDIST 4 FAF FD24 MAP MD24",
+                "30VOR": "30VOR AT OR ABOVE 4290",
+                "MD24": "MD24 3842 RNW 24",
+                "GYV": "OVERFLY GYV TURN LEFT HDG 357 INTERCEPT RADIAL 066 TO"
+            },
+            "transitions": [
+                {
+                    "name": "GYV",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 6300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "GY2T1": "GY2T1 AT OR ABOVE 6500 SPEED 200",
+                "GY2T2": "GY2T2 AT OR ABOVE 5500",
+                "GY2F1": "GY2F1 5100",
+                "GY2F2": "GY2F2 AT OR ABOVE 4250",
+                "GY2MP": "OVERFLY GY2MP 3681 RNW 24 TRK 246 UNTIL 4500 TURN LEFT DIRECT",
+                "ETMUP": "ETMUP SPEED 200 HOLD AT ETMUP LEFT TURN INBOUNDCOURSE 336 ALT 7000 SPEED 200 LEGTIME 1 FAF GY2F1 MAP GY2MP"
+            },
+            "transitions": [
+                {
+                    "name": "ETMUP",
+                    "fixes": {
+                        "ETMUP": "ETMUP AT OR ABOVE 8100 SPEED 200"
+                    }
+                },
+                {
+                    "name": "IBLUX",
+                    "fixes": {
+                        "IBLUX": "IBLUX AT OR ABOVE 8100 SPEED 200"
+                    }
+                },
+                {
+                    "name": "UDGOM",
+                    "fixes": {
+                        "UDGOM": "UDGOM AT OR ABOVE 8100 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

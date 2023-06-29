@@ -1,0 +1,182 @@
+{
+    "fixes": [
+        {
+            "name": "ALMON",
+            "lat": 32.38355,
+            "lon": 111.49475833333334
+        },
+        {
+            "name": "CITUT",
+            "lat": 32.64032221666667,
+            "lon": 111.26181943333333
+        },
+        {
+            "name": "COXOT",
+            "lat": 32.268647216666665,
+            "lon": 111.38403056666667
+        },
+        {
+            "name": "DUYED",
+            "lat": 32.452983333333336,
+            "lon": 111.18166111666666
+        },
+        {
+            "name": "FIMTU",
+            "lat": 32.50422221666667,
+            "lon": 111.145875
+        },
+        {
+            "name": "HIPEM",
+            "lat": 32.34472778333333,
+            "lon": 111.29316111666667
+        },
+        {
+            "name": "KULRE",
+            "lat": 32.44821388333333,
+            "lon": 111.32743888333333
+        },
+        {
+            "name": "NABPI",
+            "lat": 32.649897216666666,
+            "lon": 111.13763333333333
+        },
+        {
+            "name": "PAPBI",
+            "lat": 32.46886666666666,
+            "lon": 111.26333888333333
+        },
+        {
+            "name": "PICLI",
+            "lat": 32.66322778333333,
+            "lon": 111.47831943333334
+        },
+        {
+            "name": "SECBO",
+            "lat": 32.50338333333333,
+            "lon": 111.26303333333334
+        },
+        {
+            "name": "TACYU",
+            "lat": 32.22480556666667,
+            "lon": 110.96045278333334
+        },
+        {
+            "name": "TOSYU",
+            "lat": 32.36330556666667,
+            "lon": 111.10263333333333
+        },
+        {
+            "name": "TUPBO",
+            "lat": 32.298938883333335,
+            "lon": 111.28899443333333
+        },
+        {
+            "name": "TUS",
+            "lat": 32.095202783333335,
+            "lon": 110.91485556666666
+        },
+        {
+            "name": "WOTBI",
+            "lat": 32.321416666666664,
+            "lon": 111.32102778333334
+        },
+        {
+            "name": "WULOV",
+            "lat": 32.32239166666667,
+            "lon": 110.99488333333333
+        },
+        {
+            "name": "ZIBAR",
+            "lat": 32.42354721666667,
+            "lon": 111.23302778333333
+        },
+        {
+            "name": "ZOMAP",
+            "lat": 32.41672221666666,
+            "lon": 111.20695833333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 12",
+        "RNW 21",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "COXOT": "COXOT AT OR ABOVE 5400",
+                "WOTBI": "WOTBI AT OR ABOVE 4300",
+                "HIPEM": "HIPEM 3700 RNW 03 TRK 033 UNTIL 2432 TURN LEFT DIRECT",
+                "ALMON": "OVERFLY ALMON AT OR ABOVE 6000 HOLD AT ALMON LEFT TURN INBOUNDCOURSE 111 ALT 6000 LEGDIST 6 FAF HIPEM MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "ALMON",
+                    "fixes": {
+                        "ALMON": "ALMON"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "SECBO": "SECBO AT OR ABOVE 3700",
+                "PAPBI": "PAPBI 3200",
+                "ZIBAR": "OVERFLY ZIBAR 2212 RNW 12 TRK 138 UNTIL 2420 TURN RIGHT DIRECT",
+                "PICLI": "OVERFLY PICLI AT OR ABOVE 6500 HOLD AT PICLI RIGHT TURN INBOUNDCOURSE 128 LEGDIST 6 FAF PAPBI MAP ZIBAR"
+            },
+            "transitions": [
+                {
+                    "name": "PICLI",
+                    "fixes": {
+                        "PICLI": "PICLI",
+                        "CITUT": "CITUT AT OR ABOVE 4900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "NABPI": "NABPI AT OR ABOVE 4900",
+                "FIMTU": "FIMTU 4400",
+                "DUYED": "DUYED AT OR ABOVE 3120",
+                "ZOMAP": "OVERFLY ZOMAP 2240 RNW 21 TRK 199 UNTIL 2340",
+                "TUPBO": "TUPBO",
+                "ALMON": "OVERFLY ALMON AT OR ABOVE 6700 HOLD AT ALMON LEFT TURN INBOUNDCOURSE 111 LEGDIST 6 FAF FIMTU MAP ZOMAP"
+            },
+            "transitions": [
+                {
+                    "name": "ALMON",
+                    "fixes": {
+                        "ALMON": "ALMON",
+                        "PICLI": "PICLI AT OR ABOVE 6600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVE30",
+            "fixes": {
+                "WULOV": "WULOV AT OR ABOVE 6700",
+                "TOSYU": "TOSYU 4900 RNW 30 TRK 282 UNTIL 2820",
+                "KULRE": "KULRE",
+                "ALMON": "OVERFLY ALMON AT OR ABOVE 6000 HOLD AT ALMON LEFT TURN INBOUNDCOURSE 111 LEGDIST 6 FAF TOSYU MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "TUS",
+                    "fixes": {
+                        "TUS": "TUS",
+                        "TACYU": "TACYU AT OR ABOVE 8200"
+                    }
+                }
+            ]
+        }
+    ]
+}

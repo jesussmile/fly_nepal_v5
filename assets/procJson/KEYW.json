@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "ATNAW",
+            "lat": 24.553927783333332,
+            "lon": 81.96783888333333
+        },
+        {
+            "name": "BURPY",
+            "lat": 24.55801943333333,
+            "lon": 81.55124721666667
+        },
+        {
+            "name": "BUSBY",
+            "lat": 24.555208333333333,
+            "lon": 81.84965833333334
+        },
+        {
+            "name": "CARNU",
+            "lat": 25.138369433333335,
+            "lon": 81.32558888333334
+        },
+        {
+            "name": "CHETS",
+            "lat": 24.637519433333335,
+            "lon": 81.96895556666666
+        },
+        {
+            "name": "EYW",
+            "lat": 24.585877783333334,
+            "lon": 81.800475
+        },
+        {
+            "name": "FISNB",
+            "lat": 24.548341666666666,
+            "lon": 81.78638888333333
+        },
+        {
+            "name": "GUCEL",
+            "lat": 24.647947216666665,
+            "lon": 81.23758333333333
+        },
+        {
+            "name": "KEYCY",
+            "lat": 24.556972216666665,
+            "lon": 81.67004443333333
+        },
+        {
+            "name": "MA071",
+            "lat": 24.555983333333334,
+            "lon": 81.7667
+        },
+        {
+            "name": "PI001",
+            "lat": 24.525537533333335,
+            "lon": 81.84541011666667
+        },
+        {
+            "name": "PI002",
+            "lat": 24.55236675,
+            "lon": 81.91846366666667
+        },
+        {
+            "name": "PI003",
+            "lat": 24.483126133333332,
+            "lon": 81.95496408333334
+        },
+        {
+            "name": "STING",
+            "lat": 24.881588883333333,
+            "lon": 81.79629166666666
+        },
+        {
+            "name": "STRAP",
+            "lat": 24.831955566666668,
+            "lon": 81.58968056666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA09",
+            "fixes": {
+                "FISNB": "FISNB 900 FISNB HOLD AT FISNB RIGHT TURN INBOUNDCOURSE 071 LEGTIME 1 FAF FISNB MAP MA071",
+                "MA071": "MA071 620 RNW 09 HDG 000 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EYW",
+                    "fixes": {
+                        "EYW": "EYW",
+                        "FISNB": "FISNB AT OR ABOVE 1500",
+                        "PI001": "PI001 AT OR ABOVE 1500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA27",
+            "fixes": {
+                "FISNB": "FISNB 900 FISNB HOLD AT FISNB RIGHT TURN INBOUNDCOURSE 071 LEGTIME 1 FAF FISNB MAP MA071",
+                "MA071": "MA071 620 RNW 27 HDG 000 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EYW",
+                    "fixes": {
+                        "EYW": "EYW",
+                        "FISNB": "FISNB AT OR ABOVE 1500",
+                        "PI001": "PI001 AT OR ABOVE 1500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "ATNAW": "ATNAW AT OR ABOVE 1500",
+                "BUSBY": "BUSBY 1500 RNW 09",
+                "BURPY": "BURPY",
+                "GUCEL": "OVERFLY GUCEL AT OR ABOVE 3000 HOLD AT GUCEL LEFT TURN INBOUNDCOURSE 267 LEGDIST 5 FAF BUSBY MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "STING",
+                    "fixes": {
+                        "STING": "STING",
+                        "CHETS": "CHETS AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "STRAP",
+                    "fixes": {
+                        "STRAP": "STRAP",
+                        "CHETS": "CHETS AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "BURPY": "BURPY AT OR ABOVE 1500",
+                "KEYCY": "KEYCY 1500 RNW 27 TRK 273 UNTIL 403",
+                "ATNAW": "ATNAW AT OR ABOVE 2400",
+                "CHETS": "OVERFLY CHETS HOLD AT CHETS RIGHT TURN INBOUNDCOURSE 003 LEGDIST 5 FAF KEYCY MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "CARNU",
+                    "fixes": {
+                        "CARNU": "CARNU",
+                        "GUCEL": "GUCEL AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

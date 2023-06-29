@@ -1,0 +1,200 @@
+{
+    "fixes": [
+        {
+            "name": "CULAK",
+            "lat": 43.433366666666664,
+            "lon": 84.12320556666667
+        },
+        {
+            "name": "EHEMU",
+            "lat": 43.43395,
+            "lon": 83.74109166666666
+        },
+        {
+            "name": "FNT",
+            "lat": 42.96677221666667,
+            "lon": 83.74696666666667
+        },
+        {
+            "name": "HAZEN",
+            "lat": 43.469686116666665,
+            "lon": 83.941475
+        },
+        {
+            "name": "IVODY",
+            "lat": 43.4338,
+            "lon": 83.58098888333333
+        },
+        {
+            "name": "KURYE",
+            "lat": 43.43375,
+            "lon": 83.983675
+        },
+        {
+            "name": "MANBP",
+            "lat": 43.436711116666665,
+            "lon": 83.86945278333333
+        },
+        {
+            "name": "MBS",
+            "lat": 43.53164721666667,
+            "lon": 84.07730278333334
+        },
+        {
+            "name": "SEGOY",
+            "lat": 43.33335,
+            "lon": 84.12258333333334
+        },
+        {
+            "name": "XADDY",
+            "lat": 43.333783333333336,
+            "lon": 83.58103611666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 10",
+        "RNW 23",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA05",
+            "fixes": {
+                "MBS": "MBS AT OR ABOVE 3000 MBS AT OR ABOVE 3000 HOLD AT MBS RIGHT TURN INBOUNDCOURSE 125 LEGTIME 1 FAF HAZEN MAP MANBP",
+                "HAZEN": "HAZEN 1800",
+                "MANBP": "MANBP 1460 RNW 05 TRK 125 UNTIL 1900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MBS",
+                    "fixes": {
+                        "MBS": "MBS RIGHT TURN INBOUNDCOURSE 125 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA10",
+            "fixes": {
+                "MBS": "MBS AT OR ABOVE 3000 MBS AT OR ABOVE 3000 HOLD AT MBS RIGHT TURN INBOUNDCOURSE 125 LEGTIME 1 FAF HAZEN MAP MANBP",
+                "HAZEN": "HAZEN 1800",
+                "MANBP": "MANBP 1460 RNW 10 TRK 125 UNTIL 1900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MBS",
+                    "fixes": {
+                        "MBS": "MBS RIGHT TURN INBOUNDCOURSE 125 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA23",
+            "fixes": {
+                "MBS": "MBS AT OR ABOVE 3000 MBS AT OR ABOVE 3000 HOLD AT MBS RIGHT TURN INBOUNDCOURSE 125 LEGTIME 1 FAF HAZEN MAP MANBP",
+                "HAZEN": "HAZEN 1800",
+                "MANBP": "MANBP 1460 RNW 23 TRK 125 UNTIL 1900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MBS",
+                    "fixes": {
+                        "MBS": "MBS RIGHT TURN INBOUNDCOURSE 125 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA28",
+            "fixes": {
+                "MBS": "MBS AT OR ABOVE 3000 MBS AT OR ABOVE 3000 HOLD AT MBS RIGHT TURN INBOUNDCOURSE 125 LEGTIME 1 FAF HAZEN MAP MANBP",
+                "HAZEN": "HAZEN 1800",
+                "MANBP": "MANBP 1460 RNW 28 TRK 125 UNTIL 1900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MBS",
+                    "fixes": {
+                        "MBS": "MBS RIGHT TURN INBOUNDCOURSE 125 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS28",
+            "fixes": {
+                "IVODY": "IVODY AT OR ABOVE 3100",
+                "EHEMU": "EHEMU 2200 RNW 28 TRK 277 UNTIL 1200",
+                "MBS": "MBS AT OR ABOVE 4000 HOLD AT MBS RIGHT TURN INBOUNDCOURSE 125 LEGTIME 1 FAF EHEMU MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "FNT",
+                    "fixes": {
+                        "FNT": "FNT",
+                        "IVODY": "IVODY AT OR ABOVE 3100 HOLD AT IVODY LEFT TURN INBOUNDCOURSE 277 ALT 3100 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MBS",
+                    "fixes": {
+                        "MBS": "MBS",
+                        "IVODY": "IVODY AT OR ABOVE 3100 HOLD AT IVODY LEFT TURN INBOUNDCOURSE 277 ALT 3100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "CULAK": "CULAK AT OR ABOVE 2800 SPEED 225",
+                "KURYE": "KURYE 2200 RNW 10 TRK 097 UNTIL 800",
+                "IVODY": "OVERFLY IVODY AT OR ABOVE 2700 HOLD AT IVODY LEFT TURN INBOUNDCOURSE 277 LEGDIST 4 FAF KURYE MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "FNT",
+                    "fixes": {
+                        "FNT": "FNT",
+                        "SEGOY": "SEGOY AT OR ABOVE 2900"
+                    }
+                },
+                {
+                    "name": "MBS",
+                    "fixes": {
+                        "MBS": "MBS",
+                        "CULAK": "CULAK AT OR ABOVE 2800 SPEED 225 HOLD AT CULAK RIGHT TURN INBOUNDCOURSE 097 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "IVODY": "IVODY AT OR ABOVE 2700 SPEED 225",
+                "EHEMU": "EHEMU 2200 RNW 28 TRK 277 UNTIL 804",
+                "CULAK": "OVERFLY CULAK AT OR ABOVE 2800 HOLD AT CULAK RIGHT TURN INBOUNDCOURSE 097 LEGDIST 4 FAF EHEMU MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "FNT",
+                    "fixes": {
+                        "FNT": "FNT",
+                        "XADDY": "XADDY AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "MBS",
+                    "fixes": {
+                        "MBS": "MBS",
+                        "IVODY": "IVODY AT OR ABOVE 2700 SPEED 225 HOLD AT IVODY LEFT TURN INBOUNDCOURSE 277 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

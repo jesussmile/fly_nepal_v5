@@ -1,0 +1,162 @@
+{
+    "fixes": [
+        {
+            "name": "BUTYN",
+            "lat": 40.438686116666666,
+            "lon": 84.28944721666667
+        },
+        {
+            "name": "CADAY",
+            "lat": 40.39534166666667,
+            "lon": 83.75519166666666
+        },
+        {
+            "name": "CUPMO",
+            "lat": 40.35983888333333,
+            "lon": 83.86230556666666
+        },
+        {
+            "name": "DANEI",
+            "lat": 40.202677783333336,
+            "lon": 83.63931666666667
+        },
+        {
+            "name": "DUVEC",
+            "lat": 40.411155566666665,
+            "lon": 83.71260556666667
+        },
+        {
+            "name": "FEDIS",
+            "lat": 40.39118611666667,
+            "lon": 83.75370278333334
+        },
+        {
+            "name": "GIRSE",
+            "lat": 40.374725,
+            "lon": 83.81061388333333
+        },
+        {
+            "name": "JEDRI",
+            "lat": 40.331369433333336,
+            "lon": 83.92885278333333
+        },
+        {
+            "name": "JOLIS",
+            "lat": 40.341033333333336,
+            "lon": 83.92723333333333
+        },
+        {
+            "name": "NEPPI",
+            "lat": 40.40680833333333,
+            "lon": 83.69941666666666
+        },
+        {
+            "name": "PURBE",
+            "lat": 40.369897216666665,
+            "lon": 83.82741666666666
+        },
+        {
+            "name": "ROD",
+            "lat": 40.2878,
+            "lon": 84.04309721666667
+        },
+        {
+            "name": "ZEDIN",
+            "lat": 40.4688,
+            "lon": 83.55686388333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD07",
+            "fixes": {
+                "ROD": "ROD AT OR ABOVE 3000 ROD AT OR ABOVE 3000 HOLD AT ROD RIGHT TURN INBOUNDCOURSE 068 LEGTIME 1 FAF JEDRI MAP PURBE",
+                "JEDRI": "JEDRI 2800",
+                "PURBE": "PURBE 1145 RNW 07 TRK 068 UNTIL 1530 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BUTYN",
+                    "fixes": {
+                        "BUTYN": "BUTYN"
+                    }
+                },
+                {
+                    "name": "DANEI",
+                    "fixes": {
+                        "DANEI": "DANEI",
+                        "ROD": "ROD AT OR ABOVE 3000 HOLD AT ROD RIGHT TURN INBOUNDCOURSE 068 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD25",
+            "fixes": {
+                "ZEDIN": "ZEDIN AT OR ABOVE 4000",
+                "DUVEC": "DUVEC 3000",
+                "CADAY": "CADAY AT OR ABOVE 2100",
+                "GIRSE": "GIRSE 1167 RNW 25",
+                "ROD": "ROD AT OR ABOVE 3000 HOLD AT ROD RIGHT TURN INBOUNDCOURSE 068 LEGTIME 1 FAF DUVEC MAP GIRSE"
+            },
+            "transitions": [
+                {
+                    "name": "ROD",
+                    "fixes": {
+                        "ROD": "ROD",
+                        "ZEDIN": "ZEDIN AT OR ABOVE 4000 HOLD AT ZEDIN RIGHT TURN INBOUNDCOURSE 249 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "ROD": "ROD AT OR ABOVE 3000",
+                "JOLIS": "JOLIS 2700",
+                "CUPMO": "CUPMO AT OR ABOVE 1680 RNW 07 TRK 074 UNTIL 1600 TURN LEFT DIRECT",
+                "BUTYN": "OVERFLY BUTYN AT OR ABOVE 3000 HOLD AT BUTYN RIGHT TURN INBOUNDCOURSE 134 LEGDIST 4 FAF JOLIS MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "DANEI",
+                    "fixes": {
+                        "DANEI": "DANEI",
+                        "ROD": "OVERFLY ROD AT OR ABOVE 3000 HOLD AT ROD RIGHT TURN INBOUNDCOURSE 064 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "ZEDIN": "ZEDIN AT OR ABOVE 4000",
+                "NEPPI": "NEPPI 2900",
+                "FEDIS": "FEDIS AT OR ABOVE 2040 RNW 25 TRK 254 UNTIL 1900",
+                "ROD": "OVERFLY ROD AT OR ABOVE 3000 HOLD AT ROD RIGHT TURN INBOUNDCOURSE 064 LEGDIST 4 FAF NEPPI MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "DANEI",
+                    "fixes": {
+                        "DANEI": "DANEI",
+                        "ZEDIN": "OVERFLY ZEDIN AT OR ABOVE 4000 HOLD AT ZEDIN RIGHT TURN INBOUNDCOURSE 245 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ROD",
+                    "fixes": {
+                        "ROD": "ROD",
+                        "ZEDIN": "OVERFLY ZEDIN AT OR ABOVE 4000 HOLD AT ZEDIN RIGHT TURN INBOUNDCOURSE 245 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

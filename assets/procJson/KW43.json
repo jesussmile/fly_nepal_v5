@@ -1,0 +1,212 @@
+{
+    "fixes": [
+        {
+            "name": "ALVAA",
+            "lat": 44.499541666666666,
+            "lon": 104.69704721666666
+        },
+        {
+            "name": "CAMUK",
+            "lat": 44.71950278333333,
+            "lon": 104.94093333333333
+        },
+        {
+            "name": "FANRO",
+            "lat": 44.81803333333333,
+            "lon": 104.73764721666667
+        },
+        {
+            "name": "GCC",
+            "lat": 44.34777221666667,
+            "lon": 105.54348611666667
+        },
+        {
+            "name": "IMUNE",
+            "lat": 44.50340833333333,
+            "lon": 105.38176388333333
+        },
+        {
+            "name": "JITKI",
+            "lat": 44.55128333333333,
+            "lon": 104.62822221666667
+        },
+        {
+            "name": "KARAS",
+            "lat": 44.27302221666667,
+            "lon": 104.31378888333333
+        },
+        {
+            "name": "KOCYE",
+            "lat": 44.364027783333334,
+            "lon": 104.72901111666667
+        },
+        {
+            "name": "LLADN",
+            "lat": 44.54231943333333,
+            "lon": 104.60367778333334
+        },
+        {
+            "name": "NUCIR",
+            "lat": 44.65923611666667,
+            "lon": 104.5698
+        },
+        {
+            "name": "OCEGA",
+            "lat": 44.60949721666667,
+            "lon": 104.59674721666667
+        },
+        {
+            "name": "PEPRS",
+            "lat": 44.43514166666667,
+            "lon": 105.06042778333334
+        },
+        {
+            "name": "TUTTY",
+            "lat": 44.74579166666667,
+            "lon": 104.65843333333333
+        },
+        {
+            "name": "WOMIV",
+            "lat": 44.39986388333333,
+            "lon": 104.85918888333333
+        },
+        {
+            "name": "ZIXUN",
+            "lat": 44.328041666666664,
+            "lon": 104.59899166666666
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "LLADN1",
+            "rnw": "35",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 13",
+                    "fixes": {
+                        "RNW 13": "RNW 13 HDG 132 UNTIL 4780",
+                        "LLADN": "LLADN SPEED 230"
+                    }
+                },
+                {
+                    "rwy": "RNW 31",
+                    "fixes": {
+                        "RNW 31": "RNW 31 HDG 312 UNTIL 4780 TURN LEFT DIRECT",
+                        "LLADN": "LLADN SPEED 230"
+                    }
+                }
+            ],
+            "transitions": [
+                {
+                    "name": "GCC",
+                    "fixes": [
+                        "ALVAA",
+                        "PEPRS",
+                        "GCC"
+                    ]
+                },
+                {
+                    "name": "KARAS",
+                    "fixes": [
+                        "KARAS"
+                    ]
+                },
+                {
+                    "name": "KOCYE",
+                    "fixes": [
+                        "KOCYE"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "FANRO": "FANRO AT OR ABOVE 7000",
+                "TUTTY": "TUTTY 6100 RNW 13 TRK 132 UNTIL 4700 TURN RIGHT DIRECT",
+                "KOCYE": "OVERFLY KOCYE AT OR ABOVE 7600 HOLD AT KOCYE RIGHT TURN INBOUNDCOURSE 011 LEGDIST 7 FAF TUTTY MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "IMUNE",
+                    "fixes": {
+                        "IMUNE": "IMUNE"
+                    }
+                },
+                {
+                    "name": "KOCYE",
+                    "fixes": {
+                        "KOCYE": "KOCYE",
+                        "CAMUK": "CAMUK AT OR ABOVE 7000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA13",
+            "fixes": {
+                "KOCYE": "KOCYE AT OR ABOVE 7600 OVERFLY KOCYE AT OR ABOVE 15000 HOLD AT KOCYE RIGHT TURN INBOUNDCOURSE 011 LEGDIST 7 FAF JITKI MAP NUCIR",
+                "JITKI": "JITKI 6600",
+                "OCEGA": "OCEGA AT OR ABOVE 5340",
+                "NUCIR": "OVERFLY NUCIR 5020 RNW 13 TRK 011 UNTIL 5020 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KOCYE",
+                    "fixes": {
+                        "KOCYE": "KOCYE RIGHT TURN INBOUNDCOURSE 011 ALT 7600 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "WOMIV",
+                    "fixes": {
+                        "WOMIV": "WOMIV"
+                    }
+                },
+                {
+                    "name": "ZIXUN",
+                    "fixes": {
+                        "ZIXUN": "ZIXUN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA31",
+            "fixes": {
+                "KOCYE": "KOCYE AT OR ABOVE 7600 OVERFLY KOCYE AT OR ABOVE 15000 HOLD AT KOCYE RIGHT TURN INBOUNDCOURSE 011 LEGDIST 7 FAF JITKI MAP NUCIR",
+                "JITKI": "JITKI 6600",
+                "OCEGA": "OCEGA AT OR ABOVE 5340",
+                "NUCIR": "OVERFLY NUCIR 5020 RNW 31 TRK 011 UNTIL 5020 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KOCYE",
+                    "fixes": {
+                        "KOCYE": "KOCYE RIGHT TURN INBOUNDCOURSE 011 ALT 7600 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "WOMIV",
+                    "fixes": {
+                        "WOMIV": "WOMIV"
+                    }
+                },
+                {
+                    "name": "ZIXUN",
+                    "fixes": {
+                        "ZIXUN": "ZIXUN"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "BUNYA",
+            "lat": 34.41496943333333,
+            "lon": 92.32810556666666
+        },
+        {
+            "name": "ECROS",
+            "lat": 34.239688883333336,
+            "lon": 92.37459721666667
+        },
+        {
+            "name": "JOVES",
+            "lat": 34.52909721666666,
+            "lon": 92.29773056666667
+        },
+        {
+            "name": "NEONS",
+            "lat": 34.158152783333335,
+            "lon": 92.39615556666666
+        },
+        {
+            "name": "PYINS",
+            "lat": 34.3628,
+            "lon": 92.34196388333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "NEONS": "NEONS AT OR ABOVE 1900",
+                "ECROS": "ECROS 1900 RNW 01 TRK 012 UNTIL 636",
+                "JOVES": "OVERFLY JOVES AT OR ABOVE 2100 HOLD AT JOVES RIGHT TURN INBOUNDCOURSE 192 LEGDIST 4 FAF ECROS MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "NEONS",
+                    "fixes": {
+                        "NEONS": "NEONS RIGHT TURN INBOUNDCOURSE 012 ALT 1900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "JOVES": "JOVES AT OR ABOVE 2100",
+                "BUNYA": "BUNYA 1900",
+                "PYINS": "PYINS AT OR ABOVE 880 RNW 19 TRK 192 UNTIL 590",
+                "NEONS": "OVERFLY NEONS AT OR ABOVE 1900 HOLD AT NEONS RIGHT TURN INBOUNDCOURSE 012 LEGDIST 4 FAF BUNYA MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "JOVES",
+                    "fixes": {
+                        "JOVES": "JOVES RIGHT TURN INBOUNDCOURSE 192 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

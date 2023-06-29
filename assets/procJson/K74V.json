@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "CHAND",
+            "lat": 40.28961666666667,
+            "lon": 109.92847221666666
+        },
+        {
+            "name": "FOSLA",
+            "lat": 40.22869443333333,
+            "lon": 110.08050278333333
+        },
+        {
+            "name": "IGEHU",
+            "lat": 40.02887221666667,
+            "lon": 109.97722221666666
+        },
+        {
+            "name": "JEFUB",
+            "lat": 40.139555566666665,
+            "lon": 109.72956388333333
+        },
+        {
+            "name": "MARPK",
+            "lat": 40.27789443333333,
+            "lon": 110.05227778333334
+        },
+        {
+            "name": "MTU",
+            "lat": 40.14909443333333,
+            "lon": 110.12702778333333
+        },
+        {
+            "name": "URUDE",
+            "lat": 40.305230566666665,
+            "lon": 109.754675
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "URUDE": "URUDE AT OR ABOVE 9000",
+                "CHAND": "CHAND 6800 RNW 25 TRK 253 UNTIL 5700 TURN LEFT DIRECT",
+                "IGEHU": "OVERFLY IGEHU AT OR ABOVE 10500 HOLD AT IGEHU RIGHT TURN INBOUNDCOURSE 148 LEGDIST 7 FAF CHAND MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "JEFUB",
+                    "fixes": {
+                        "JEFUB": "JEFUB"
+                    }
+                },
+                {
+                    "name": "URUDE",
+                    "fixes": {
+                        "URUDE": "URUDE RIGHT TURN INBOUNDCOURSE 253 ALT 9000 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA07",
+            "fixes": {
+                "MTU": "MTU 8500 MTU AT OR ABOVE 9000 HOLD AT MTU RIGHT TURN INBOUNDCOURSE 340 LEGTIME 1 FAF MTU MAP MARPK",
+                "FOSLA": "FOSLA AT OR ABOVE 6340",
+                "MARPK": "MARPK 6340 RNW 07 TRK 010 UNTIL 6340 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MTU",
+                    "fixes": {
+                        "MTU": "MTU RIGHT TURN INBOUNDCOURSE 340 ALT 8500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA25",
+            "fixes": {
+                "MTU": "MTU 8500 MTU AT OR ABOVE 9000 HOLD AT MTU RIGHT TURN INBOUNDCOURSE 340 LEGTIME 1 FAF MTU MAP MARPK",
+                "FOSLA": "FOSLA AT OR ABOVE 6340",
+                "MARPK": "MARPK 6340 RNW 25 TRK 010 UNTIL 6340 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MTU",
+                    "fixes": {
+                        "MTU": "MTU RIGHT TURN INBOUNDCOURSE 340 ALT 8500 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

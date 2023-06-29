@@ -1,0 +1,73 @@
+{
+    "fixes": [
+        {
+            "name": "EPTUV",
+            "lat": 16.175080566666665,
+            "lon": 33.552058333333335
+        },
+        {
+            "name": "NETEP",
+            "lat": 15.928111116666667,
+            "lon": 33.73118611666666
+        },
+        {
+            "name": "OKSUR",
+            "lat": 15.924111116666667,
+            "lon": 33.55826943333334
+        },
+        {
+            "name": "TT500",
+            "lat": 16.009786116666668,
+            "lon": 33.642661116666666
+        },
+        {
+            "name": "TT600",
+            "lat": 16.177097216666667,
+            "lon": 33.638522216666665
+        },
+        {
+            "name": "TT601",
+            "lat": 16.179080566666666,
+            "lon": 33.725088883333335
+        },
+        {
+            "name": "UVIXA",
+            "lat": 15.926127783333333,
+            "lon": 33.64472778333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "TT500": "TT500 2100 RNW 19",
+                "TT600": "TT600",
+                "TT601": "TT601",
+                "NETEP": "NETEP AT OR ABOVE 4000 HOLD AT NETEP LEFT TURN INBOUNDCOURSE 278 LEGTIME 1 FAF TT500 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "EPTUV",
+                    "fixes": {
+                        "EPTUV": "EPTUV",
+                        "OKSUR": "OKSUR AT OR ABOVE 4000 SPEED 200",
+                        "UVIXA": "UVIXA"
+                    }
+                },
+                {
+                    "name": "NETEP",
+                    "fixes": {
+                        "NETEP": "NETEP AT OR ABOVE 4000 SPEED 200",
+                        "UVIXA": "UVIXA"
+                    }
+                }
+            ]
+        }
+    ]
+}

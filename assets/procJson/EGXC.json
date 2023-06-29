@@ -1,0 +1,152 @@
+{
+    "fixes": [
+        {
+            "name": "40TAC",
+            "lat": 53.113761116666666,
+            "lon": 0.06498333333333334
+        },
+        {
+            "name": "CGY",
+            "lat": 53.09104166666667,
+            "lon": 0.16894721666666665
+        },
+        {
+            "name": "CI25",
+            "lat": 53.139125,
+            "lon": 0.06915556666666665
+        },
+        {
+            "name": "D070M",
+            "lat": 53.164552783333335,
+            "lon": 0.169325
+        },
+        {
+            "name": "D070T",
+            "lat": 53.20373888333334,
+            "lon": 0.35195000000000004
+        },
+        {
+            "name": "FI25",
+            "lat": 53.12888611666666,
+            "lon": 0.016497216666666665
+        },
+        {
+            "name": "FT07",
+            "lat": 53.06161388333334,
+            "lon": 0.3503944333333333
+        },
+        {
+            "name": "FT25",
+            "lat": 53.13130833333334,
+            "lon": 0.015658333333333333
+        },
+        {
+            "name": "MT07",
+            "lat": 53.084572216666665,
+            "lon": 0.20899166666666666
+        },
+        {
+            "name": "MT25",
+            "lat": 53.102413883333334,
+            "lon": 0.11697778333333334
+        },
+        {
+            "name": "RW25",
+            "lat": 53.09699166666667,
+            "lon": 0.14664721666666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "MID07E",
+            "rnw": "07",
+            "fixes": {
+                "CGY": "CGY TRK 072 UNTIL 1630 HDG 067 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MID07N",
+            "rnw": "07",
+            "fixes": {
+                "CGY": "CGY TRK 072 UNTIL 1630 HDG 007 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MID25E",
+            "rnw": "25",
+            "fixes": {
+                "CGY": "CGY TRK 252 UNTIL 1630 HDG 067 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MID25N",
+            "rnw": "25",
+            "fixes": {
+                "CGY": "CGY TRK 252 UNTIL 1630 HDG 007 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS25",
+            "fixes": {
+                "CI25": "CI25 2030",
+                "FI25": "FI25 2030 RNW 25 TRK 252 UNTIL 2730 HDG 067 VECTORS FAF FI25 MAP RNW 25"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VOR07",
+            "fixes": {
+                "FT07": "FT07 2030",
+                "MT07": "MT07 353 RNW 07 TRK 072 UNTIL 2730 HDG 069 VECTORS FAF FT07 MAP MT07"
+            },
+            "transitions": [
+                {
+                    "name": "D70T1",
+                    "fixes": {
+                        "D070T": "D070T AT OR ABOVE 5000",
+                        "CGY": "CGY AT OR ABOVE 4030 TRK 282 UNTIL 10.0 FROM CGY"
+                    }
+                },
+                {
+                    "name": "D70T2",
+                    "fixes": {
+                        "D070T": "D070T AT OR ABOVE 5000",
+                        "CGY": "CGY AT OR ABOVE 4030 TRK 266 UNTIL 10.0 FROM CGY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR25",
+            "fixes": {
+                "FT25": "FT25 2030",
+                "40TAC": "40TAC AT OR ABOVE 1070",
+                "MT25": "MT25 431 RNW 25 TRK 252 UNTIL 2730 HDG 067 VECTORS FAF FT25 MAP MT25"
+            },
+            "transitions": [
+                {
+                    "name": "D070T",
+                    "fixes": {
+                        "D070T": "D070T AT OR ABOVE 5000",
+                        "D070M": "D070M AT OR ABOVE 2030"
+                    }
+                }
+            ]
+        }
+    ]
+}

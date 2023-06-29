@@ -1,0 +1,149 @@
+{
+    "fixes": [
+        {
+            "name": "DONBE",
+            "lat": 30.122477783333334,
+            "lon": 91.02870556666667
+        },
+        {
+            "name": "FANAG",
+            "lat": 29.614752783333333,
+            "lon": 91.52311943333333
+        },
+        {
+            "name": "GRICE",
+            "lat": 29.81092221666667,
+            "lon": 91.14760278333333
+        },
+        {
+            "name": "HADUG",
+            "lat": 29.666430566666666,
+            "lon": 91.42456388333333
+        },
+        {
+            "name": "HONAX",
+            "lat": 29.816130566666665,
+            "lon": 91.13758333333334
+        },
+        {
+            "name": "JISPA",
+            "lat": 29.72835278333333,
+            "lon": 91.30613333333334
+        },
+        {
+            "name": "ORICH",
+            "lat": 29.666016666666668,
+            "lon": 91.59872778333333
+        },
+        {
+            "name": "PANPE",
+            "lat": 29.543136116666666,
+            "lon": 91.47391388333334
+        },
+        {
+            "name": "TBD",
+            "lat": 29.664322216666665,
+            "lon": 90.82909443333334
+        },
+        {
+            "name": "UHAUL",
+            "lat": 29.758811116666667,
+            "lon": 91.247725
+        },
+        {
+            "name": "WOVON",
+            "lat": 30.145377783333334,
+            "lon": 91.32808888333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 06",
+        "RNW 22",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS24",
+            "fixes": {
+                "GRICE": "GRICE AT OR ABOVE 1700",
+                "UHAUL": "UHAUL 1700 RNW 24 HDG 238 INTERCEPT RADIAL 268 TO",
+                "ORICH": "ORICH ORICH AT OR ABOVE 2000 HOLD AT ORICH RIGHT TURN INBOUNDCOURSE 268 LEGTIME 1 FAF UHAUL MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "GRICE",
+                    "fixes": {
+                        "GRICE": "GRICE RIGHT TURN INBOUNDCOURSE 238 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "FANAG": "FANAG AT OR ABOVE 1600",
+                "HADUG": "HADUG 1600 RNW 06 TRK 058 UNTIL 409",
+                "GRICE": "OVERFLY GRICE AT OR ABOVE 1700 HOLD AT GRICE RIGHT TURN INBOUNDCOURSE 238 LEGDIST 4 FAF HADUG MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "FANAG",
+                    "fixes": {
+                        "FANAG": "FANAG RIGHT TURN INBOUNDCOURSE 058 ALT 1600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ORICH",
+                    "fixes": {
+                        "ORICH": "ORICH"
+                    }
+                },
+                {
+                    "name": "TBD",
+                    "fixes": {
+                        "TBD": "TBD",
+                        "PANPE": "PANPE AT OR ABOVE 1600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "HONAX": "HONAX AT OR ABOVE 1700",
+                "UHAUL": "UHAUL 1700",
+                "JISPA": "JISPA AT OR ABOVE 560 RNW 24 TRK 238 UNTIL 208",
+                "FANAG": "OVERFLY FANAG AT OR ABOVE 2000 HOLD AT FANAG RIGHT TURN INBOUNDCOURSE 058 LEGDIST 4 FAF UHAUL MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "DONBE",
+                    "fixes": {
+                        "DONBE": "DONBE"
+                    }
+                },
+                {
+                    "name": "HONAX",
+                    "fixes": {
+                        "HONAX": "HONAX RIGHT TURN INBOUNDCOURSE 238 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TBD",
+                    "fixes": {
+                        "TBD": "TBD"
+                    }
+                },
+                {
+                    "name": "WOVON",
+                    "fixes": {
+                        "WOVON": "WOVON"
+                    }
+                }
+            ]
+        }
+    ]
+}

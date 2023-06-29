@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 6.10590585,
+            "lon": 62.94136425
+        },
+        {
+            "name": "AF002",
+            "lat": 6.091738066666666,
+            "lon": 62.9093508
+        },
+        {
+            "name": "AF003",
+            "lat": 6.0844960666666665,
+            "lon": 62.87507563333333
+        },
+        {
+            "name": "ASOSU",
+            "lat": 6.310836116666667,
+            "lon": 62.86398333333333
+        },
+        {
+            "name": "CMA",
+            "lat": 6.25025,
+            "lon": 62.85755556666667
+        },
+        {
+            "name": "D188J",
+            "lat": 6.083694433333333,
+            "lon": 62.840066666666665
+        },
+        {
+            "name": "DALNI",
+            "lat": 6.371494433333333,
+            "lon": 62.871
+        },
+        {
+            "name": "EKEBI",
+            "lat": 6.438011116666667,
+            "lon": 62.82015833333333
+        },
+        {
+            "name": "ERIVO",
+            "lat": 6.424638883333333,
+            "lon": 62.93568333333333
+        },
+        {
+            "name": "FF36",
+            "lat": 6.133661116666667,
+            "lon": 62.845311116666664
+        },
+        {
+            "name": "GAVOP",
+            "lat": 6.742916666666667,
+            "lon": 62.82766111666667
+        },
+        {
+            "name": "ILRUT",
+            "lat": 6.711761116666667,
+            "lon": 63.032383333333335
+        },
+        {
+            "name": "KALAV",
+            "lat": 6.222575,
+            "lon": 62.85376111666667
+        },
+        {
+            "name": "SELVA",
+            "lat": 6.1258333333333335,
+            "lon": 62.96972221666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD36",
+            "fixes": {
+                "FF36": "FF36 3600 RNW 36",
+                "CMA": "OVERFLY CMA TURN LEFT DIRECT",
+                "SELVA": "SELVA AT OR ABOVE 3600 FAF FF36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "CMA",
+                    "fixes": {
+                        "CMA": "CMA AT OR ABOVE 5500 TRK 208 UNTIL 7.0 FROM CMA SPEED 160"
+                    }
+                },
+                {
+                    "name": "SELVA",
+                    "fixes": {
+                        "SELVA": "SELVA AT OR ABOVE 3600",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D188J": "D188J"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "DALNI": "DALNI AT OR ABOVE 3900",
+                "ASOSU": "ASOSU 2700 RNW 18",
+                "KALAV": "OVERFLY KALAV AT OR ABOVE 1740 TURN RIGHT DIRECT",
+                "ERIVO": "OVERFLY ERIVO AT OR ABOVE 4900 HOLD AT ERIVO RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4 FAF ASOSU MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "GAVOP",
+                    "fixes": {
+                        "GAVOP": "GAVOP",
+                        "EKEBI": "EKEBI AT OR ABOVE 3900"
+                    }
+                },
+                {
+                    "name": "ILRUT",
+                    "fixes": {
+                        "ILRUT": "ILRUT",
+                        "ERIVO": "ERIVO AT OR ABOVE 3900"
+                    }
+                }
+            ]
+        }
+    ]
+}

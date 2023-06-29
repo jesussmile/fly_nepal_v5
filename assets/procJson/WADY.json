@@ -1,0 +1,93 @@
+{
+    "fixes": [
+        {
+            "name": "DUKAM",
+            "lat": 8.368611116666667,
+            "lon": 114.51336111666667
+        },
+        {
+            "name": "DY401",
+            "lat": 8.33375,
+            "lon": 114.18352778333333
+        },
+        {
+            "name": "DY402",
+            "lat": 8.323472216666667,
+            "lon": 114.25169443333333
+        },
+        {
+            "name": "DY403",
+            "lat": 8.318333333333333,
+            "lon": 114.28569443333333
+        },
+        {
+            "name": "DY602",
+            "lat": 8.299583333333333,
+            "lon": 114.40997221666667
+        },
+        {
+            "name": "DY603",
+            "lat": 8.292527783333334,
+            "lon": 114.45652778333333
+        },
+        {
+            "name": "NITAB",
+            "lat": 8.326833333333333,
+            "lon": 114.22936111666667
+        },
+        {
+            "name": "SRONO",
+            "lat": 8.442777783333334,
+            "lon": 114.40125
+        },
+        {
+            "name": "TUPRU",
+            "lat": 8.418166666666666,
+            "lon": 114.18527778333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "DY401": "DY401 AT OR ABOVE 2800",
+                "DY402": "DY402 1600",
+                "DY403": "DY403 AT OR ABOVE 970 RNW 08 TRK 080 UNTIL 1500 TURN RIGHT DIRECT",
+                "SRONO": "SRONO AT OR ABOVE 6000 FAF DY402 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "SRONO",
+                    "fixes": {
+                        "SRONO": "SRONO AT OR ABOVE 6000",
+                        "TUPRU": "TUPRU AT OR ABOVE 4200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "DY603": "DY603 AT OR ABOVE 2000",
+                "DY602": "DY602 1200 RNW 26",
+                "NITAB": "OVERFLY NITAB AT OR ABOVE 1500 TURN LEFT DIRECT",
+                "SRONO": "SRONO AT OR ABOVE 6000 FAF DY602 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "SRONO",
+                    "fixes": {
+                        "SRONO": "SRONO AT OR ABOVE 6000",
+                        "DUKAM": "DUKAM AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        }
+    ]
+}

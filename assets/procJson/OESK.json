@@ -1,0 +1,234 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 29.942386283333335,
+            "lon": 40.29981441666666
+        },
+        {
+            "name": "AF002",
+            "lat": 29.892942016666666,
+            "lon": 40.3340951
+        },
+        {
+            "name": "AF003",
+            "lat": 29.837999716666666,
+            "lon": 40.354362716666664
+        },
+        {
+            "name": "AF004",
+            "lat": 29.542598083333335,
+            "lon": 40.116647283333336
+        },
+        {
+            "name": "AF005",
+            "lat": 29.572943716666668,
+            "lon": 40.215417216666665
+        },
+        {
+            "name": "AF006",
+            "lat": 29.632009716666666,
+            "lon": 40.2952128
+        },
+        {
+            "name": "AJF",
+            "lat": 29.789527783333334,
+            "lon": 40.071694433333334
+        },
+        {
+            "name": "CD10",
+            "lat": 29.835888883333332,
+            "lon": 39.78927778333333
+        },
+        {
+            "name": "CF28",
+            "lat": 29.745694433333334,
+            "lon": 40.35455556666667
+        },
+        {
+            "name": "D035O",
+            "lat": 29.982944433333333,
+            "lon": 40.254638883333335
+        },
+        {
+            "name": "D088O",
+            "lat": 29.780469433333334,
+            "lon": 40.358808333333336
+        },
+        {
+            "name": "D096I",
+            "lat": 29.763305566666666,
+            "lon": 40.241419433333334
+        },
+        {
+            "name": "D104O",
+            "lat": 29.7118,
+            "lon": 40.34473611666667
+        },
+        {
+            "name": "D188O",
+            "lat": 29.544361116666668,
+            "lon": 40.012
+        },
+        {
+            "name": "D276I",
+            "lat": 29.815527783333334,
+            "lon": 39.90187778333333
+        },
+        {
+            "name": "FD10",
+            "lat": 29.8055,
+            "lon": 39.97480556666667
+        },
+        {
+            "name": "FF28",
+            "lat": 29.764861116666665,
+            "lon": 40.23147221666667
+        },
+        {
+            "name": "RW28",
+            "lat": 29.782294433333334,
+            "lon": 40.11868056666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "CD10": "CD10 AT OR ABOVE 5000",
+                "FD10": "FD10 4100",
+                "AJF": "AJF 2475 RNW 10 TRK 096 UNTIL 4000 TURN RIGHT DIRECT AJF 5000 HOLD AT AJF RIGHT TURN INBOUNDCOURSE 276 ALT 7000 SPEED 230 LEGTIME 1 FAF FD10 MAP AJF"
+            },
+            "transitions": [
+                {
+                    "name": "AJF",
+                    "fixes": {
+                        "AJF": "AJF",
+                        "D276I": "D276I AT OR ABOVE 5000 TRK 231 UNTIL 6.0 FROM D276I"
+                    }
+                },
+                {
+                    "name": "D035O",
+                    "fixes": {
+                        "D035O": "D035O"
+                    }
+                },
+                {
+                    "name": "D188O",
+                    "fixes": {
+                        "D188O": "D188O"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD28",
+            "fixes": {
+                "CF28": "CF28 AT OR ABOVE 5000",
+                "FF28": "FF28 4200 RNW 28 TRK 276 UNTIL 4000 TURN RIGHT DIRECT",
+                "AJF": "AJF 5000 HOLD AT AJF RIGHT TURN INBOUNDCOURSE 096 ALT 7000 SPEED 230 LEGTIME 1 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "AJF",
+                    "fixes": {
+                        "AJF": "AJF",
+                        "D096I": "D096I AT OR ABOVE 5000 TRK 051 UNTIL 6.0 FROM D096I"
+                    }
+                },
+                {
+                    "name": "D035O",
+                    "fixes": {
+                        "D035O": "D035O"
+                    }
+                },
+                {
+                    "name": "D188O",
+                    "fixes": {
+                        "D188O": "D188O"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY28",
+            "fixes": {
+                "CF28": "CF28 AT OR ABOVE 5000 CF28 5000 HOLD AT CF28 RIGHT TURN INBOUNDCOURSE 276 LEGTIME 1 FAF FF28 MAP RNW 28",
+                "FF28": "FF28 4200 RNW 28 TRK 276 UNTIL 4000 TURN RIGHT DIRECT",
+                "AJF": "AJF"
+            },
+            "transitions": [
+                {
+                    "name": "AJF",
+                    "fixes": {
+                        "AJF": "AJF",
+                        "D096I": "D096I AT OR ABOVE 5000 TRK 051 UNTIL 6.0 FROM D096I"
+                    }
+                },
+                {
+                    "name": "D035O",
+                    "fixes": {
+                        "D035O": "D035O",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D088O": "D088O AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "D188O",
+                    "fixes": {
+                        "D188O": "D188O",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "AF006": "AF006",
+                        "D104O": "D104O AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ28",
+            "fixes": {
+                "CF28": "CF28 AT OR ABOVE 5000",
+                "FF28": "FF28 4200 RNW 28",
+                "AJF": "AJF TRK 276 UNTIL 4000 TURN RIGHT DIRECT AJF 5000 HOLD AT AJF RIGHT TURN INBOUNDCOURSE 096 ALT 7000 SPEED 230 LEGTIME 1 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "AJF",
+                    "fixes": {
+                        "AJF": "AJF",
+                        "D096I": "D096I AT OR ABOVE 5000 TRK 051 UNTIL 6.0 FROM D096I"
+                    }
+                },
+                {
+                    "name": "D035O",
+                    "fixes": {
+                        "D035O": "D035O",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D088O": "D088O AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "D188O",
+                    "fixes": {
+                        "D188O": "D188O",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "AF006": "AF006",
+                        "D104O": "D104O AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "FGV01",
+            "lat": 14.949444433333333,
+            "lon": 148.73880556666666
+        },
+        {
+            "name": "FGV19",
+            "lat": 14.795277783333333,
+            "lon": 148.68883333333332
+        },
+        {
+            "name": "GV410",
+            "lat": 14.979638883333333,
+            "lon": 148.66080556666665
+        },
+        {
+            "name": "GV610",
+            "lat": 14.813388883333333,
+            "lon": 148.60694443333333
+        },
+        {
+            "name": "MADMU",
+            "lat": 15.004083333333334,
+            "lon": 148.84683333333334
+        },
+        {
+            "name": "MALNA",
+            "lat": 14.690277783333332,
+            "lon": 148.74497221666667
+        },
+        {
+            "name": "MIDIG",
+            "lat": 15.029277783333333,
+            "lon": 148.76472221666666
+        },
+        {
+            "name": "MIKUN",
+            "lat": 14.715444433333333,
+            "lon": 148.66297221666667
+        },
+        {
+            "name": "MOMSU",
+            "lat": 15.054416666666667,
+            "lon": 148.68258333333333
+        },
+        {
+            "name": "MOXIR",
+            "lat": 14.740583333333333,
+            "lon": 148.58097221666668
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "MIDIG": "MIDIG AT OR ABOVE 1500",
+                "FGV01": "FGV01 1500 RNW 01 TRK 005 UNTIL 1000 TURN RIGHT DIRECT",
+                "GV410": "GV410",
+                "MOMSU": "MOMSU AT OR ABOVE 1500 FAF FGV01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "MADMU",
+                    "fixes": {
+                        "MADMU": "MADMU AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "MIDIG",
+                    "fixes": {
+                        "MIDIG": "MIDIG LEFT TURN INBOUNDCOURSE 005 ALT 1500 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MOMSU",
+                    "fixes": {
+                        "MOMSU": "MOMSU AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "MIKUN": "MIKUN AT OR ABOVE 1500",
+                "FGV19": "FGV19 1500 RNW 19 TRK 185 UNTIL 1000 TURN LEFT DIRECT",
+                "GV610": "GV610",
+                "MOXIR": "MOXIR AT OR ABOVE 1500 FAF FGV19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "MALNA",
+                    "fixes": {
+                        "MALNA": "MALNA AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "MIKUN",
+                    "fixes": {
+                        "MIKUN": "MIKUN RIGHT TURN INBOUNDCOURSE 185 ALT 1500 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MOXIR",
+                    "fixes": {
+                        "MOXIR": "MOXIR AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        }
+    ]
+}

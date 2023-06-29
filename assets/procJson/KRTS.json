@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "ARPAW",
+            "lat": 39.37914721666667,
+            "lon": 119.87756943333333
+        },
+        {
+            "name": "AYALU",
+            "lat": 39.51232221666667,
+            "lon": 119.77191111666667
+        },
+        {
+            "name": "CEVAP",
+            "lat": 39.451775,
+            "lon": 119.73323611666666
+        },
+        {
+            "name": "HALLE",
+            "lat": 39.91978056666667,
+            "lon": 119.95108333333333
+        },
+        {
+            "name": "HZN",
+            "lat": 39.5164,
+            "lon": 118.99768611666667
+        },
+        {
+            "name": "JEBMI",
+            "lat": 39.57581666666667,
+            "lon": 119.81255278333333
+        },
+        {
+            "name": "SWR",
+            "lat": 39.18032221666667,
+            "lon": 120.26961388333334
+        },
+        {
+            "name": "WIPOM",
+            "lat": 39.70906943333333,
+            "lon": 119.89810833333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 14",
+        "RNW 26",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS32",
+            "fixes": {
+                "AYALU": "AYALU AT OR ABOVE 8200",
+                "JEBMI": "JEBMI 7000 RNW 32 TRK 318 UNTIL 6740 HDG 356 INTERCEPT RADIAL 314 TO",
+                "HALLE": "HALLE HALLE AT OR ABOVE 14000 HOLD AT HALLE RIGHT TURN INBOUNDCOURSE 314 ALT 14000 LEGTIME 1 FAF JEBMI MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "HZN",
+                    "fixes": {
+                        "HZN": "HZN",
+                        "CEVAP": "CEVAP AT OR ABOVE 9500 HOLD AT CEVAP RIGHT TURN INBOUNDCOURSE 318 ALT 9400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SWR",
+                    "fixes": {
+                        "SWR": "SWR",
+                        "ARPAW": "ARPAW AT OR ABOVE 13000",
+                        "CEVAP": "CEVAP AT OR ABOVE 11700 HOLD AT CEVAP RIGHT TURN INBOUNDCOURSE 318 ALT 9400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "CEVAP": "CEVAP AT OR ABOVE 9400",
+                "AYALU": "AYALU AT OR ABOVE 8200",
+                "JEBMI": "JEBMI 7000 RNW 32 TRK 318 UNTIL 5450",
+                "WIPOM": "WIPOM",
+                "HALLE": "OVERFLY HALLE AT OR ABOVE 14000 HOLD AT HALLE RIGHT TURN INBOUNDCOURSE 314 LEGDIST 8 FAF JEBMI MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "HZN",
+                    "fixes": {
+                        "HZN": "HZN",
+                        "CEVAP": "OVERFLY CEVAP AT OR ABOVE 9500 HOLD AT CEVAP RIGHT TURN INBOUNDCOURSE 318 ALT 9400 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "SWR",
+                    "fixes": {
+                        "SWR": "SWR",
+                        "CEVAP": "OVERFLY CEVAP AT OR ABOVE 13000 HOLD AT CEVAP RIGHT TURN INBOUNDCOURSE 318 ALT 9400 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

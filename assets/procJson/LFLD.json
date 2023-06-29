@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "BRGNB",
+            "lat": 47.017861116666666,
+            "lon": 2.2815555666666665
+        },
+        {
+            "name": "CN06",
+            "lat": 46.997802783333334,
+            "lon": 2.2426611166666666
+        },
+        {
+            "name": "DEXEV",
+            "lat": 46.98069443333333,
+            "lon": 2.1770555666666667
+        },
+        {
+            "name": "FLD06",
+            "lat": 47.01530556666667,
+            "lon": 2.2603055666666667
+        },
+        {
+            "name": "LD409",
+            "lat": 47.06430556666667,
+            "lon": 2.3785833333333333
+        },
+        {
+            "name": "MN06",
+            "lat": 47.04721943333333,
+            "lon": 2.3407055666666667
+        },
+        {
+            "name": "NAPSU",
+            "lat": 47.03777778333333,
+            "lon": 2.126944433333333
+        },
+        {
+            "name": "SITSA",
+            "lat": 46.91405556666667,
+            "lon": 2.1770555666666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB06",
+            "fixes": {
+                "CN06": "CN06 AT OR ABOVE 2100",
+                "BRGNB": "BRGNB 1800 BRGNB 2100 SPEED 160 FAF BRGNB MAP MN06",
+                "MN06": "MN06 872 RNW 06 TRK 053 UNTIL 930 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BRG",
+                    "fixes": {
+                        "BRGNB": "BRGNB LEFT TURN INBOUNDCOURSE 052 ALT 2100 SPEED 200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY06",
+            "fixes": {
+                "DEXEV": "DEXEV AT OR ABOVE 2100 DEXEV FAF FLD06 MAP RNW 06",
+                "FLD06": "FLD06 2100 RNW 06 TURN LEFT DIRECT",
+                "NAPSU": "NAPSU 2100"
+            },
+            "transitions": [
+                {
+                    "name": "DEXEV",
+                    "fixes": {
+                        "DEXEV": "DEXEV LEFT TURN INBOUNDCOURSE 359 ALT 2100 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "NAPSU",
+                    "fixes": {
+                        "NAPSU": "NAPSU AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "SITSA",
+                    "fixes": {
+                        "SITSA": "SITSA AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ06",
+            "fixes": {
+                "DEXEV": "DEXEV AT OR ABOVE 2100 DEXEV FAF FLD06 MAP RNW 06",
+                "FLD06": "FLD06 2100 RNW 06",
+                "LD409": "OVERFLY LD409 SPEED 140 TURN LEFT DIRECT",
+                "NAPSU": "NAPSU 2100"
+            },
+            "transitions": [
+                {
+                    "name": "DEXEV",
+                    "fixes": {
+                        "DEXEV": "DEXEV LEFT TURN INBOUNDCOURSE 359 ALT 2100 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "NAPSU",
+                    "fixes": {
+                        "NAPSU": "NAPSU AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "SITSA",
+                    "fixes": {
+                        "SITSA": "SITSA AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        }
+    ]
+}

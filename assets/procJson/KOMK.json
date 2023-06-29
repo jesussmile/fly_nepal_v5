@@ -1,0 +1,77 @@
+{
+    "fixes": [
+        {
+            "name": "ENUVE",
+            "lat": 48.34214166666667,
+            "lon": 119.50164166666667
+        },
+        {
+            "name": "EPH",
+            "lat": 47.37791943333333,
+            "lon": 119.42400278333334
+        },
+        {
+            "name": "ETORY",
+            "lat": 48.275869433333334,
+            "lon": 119.49143888333333
+        },
+        {
+            "name": "GETNG",
+            "lat": 48.425158333333336,
+            "lon": 119.52749443333333
+        },
+        {
+            "name": "HVARD",
+            "lat": 48.29243056666667,
+            "lon": 119.50446943333333
+        },
+        {
+            "name": "PAWYO",
+            "lat": 48.1678,
+            "lon": 119.49166666666666
+        },
+        {
+            "name": "WAYWE",
+            "lat": 48.35870833333333,
+            "lon": 119.50419443333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "EPH1",
+            "rnw": "17",
+            "fixes": {
+                "GETNG": "GETNG AT OR ABOVE 1900 SPEED 210",
+                "HVARD": "HVARD",
+                "EPH": "EPH AT OR ABOVE 4200"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS35",
+            "fixes": {
+                "ENUVE": "ENUVE AT OR ABOVE 3900",
+                "WAYWE": "WAYWE 3600 RNW 35 TRK 335 UNTIL 1705 TURN LEFT DIRECT",
+                "PAWYO": "PAWYO AT OR ABOVE 5000 HOLD AT PAWYO RIGHT TURN INBOUNDCOURSE 158 LEGDIST 5 FAF WAYWE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "EPH",
+                    "fixes": {
+                        "EPH": "EPH",
+                        "PAWYO": "PAWYO AT OR ABOVE 6000",
+                        "ETORY": "ETORY AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

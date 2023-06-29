@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "CF21",
+            "lat": 68.45913888333334,
+            "lon": 23.606341666666665
+        },
+        {
+            "name": "ET361",
+            "lat": 68.28798611666667,
+            "lon": 23.284991666666667
+        },
+        {
+            "name": "ET362",
+            "lat": 68.24267778333333,
+            "lon": 23.549266666666668
+        },
+        {
+            "name": "IBOTI",
+            "lat": 68.46432778333333,
+            "lon": 23.892008333333333
+        },
+        {
+            "name": "KUXIT",
+            "lat": 68.51198888333333,
+            "lon": 23.706805566666667
+        },
+        {
+            "name": "LIMRO",
+            "lat": 68.20638888333333,
+            "lon": 23.803611116666666
+        },
+        {
+            "name": "MIVDA",
+            "lat": 68.44489443333333,
+            "lon": 23.579375
+        },
+        {
+            "name": "NOTVA",
+            "lat": 68.55944443333334,
+            "lon": 23.520822216666666
+        },
+        {
+            "name": "PETOB",
+            "lat": 68.29723333333334,
+            "lon": 23.302197216666666
+        },
+        {
+            "name": "RUMUT",
+            "lat": 68.20071111666667,
+            "lon": 23.2626
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 3100",
+                "MIVDA": "MIVDA 3100 RNW 21 TRK 203 UNTIL 1500",
+                "ET361": "ET361 SPEED 190",
+                "ET362": "ET362 SPEED 190",
+                "KUXIT": "KUXIT 3800 FAF MIVDA MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "IBOTI",
+                    "fixes": {
+                        "IBOTI": "IBOTI AT OR ABOVE 3800 SPEED 240",
+                        "KUXIT": "KUXIT AT OR ABOVE 3800"
+                    }
+                },
+                {
+                    "name": "NOTVA",
+                    "fixes": {
+                        "NOTVA": "NOTVA AT OR ABOVE 3800 SPEED 240",
+                        "KUXIT": "KUXIT AT OR ABOVE 3800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "PETOB": "PETOB 2400 RNW 03",
+                "KUXIT": "KUXIT 3800 FAF PETOB MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "LIMRO",
+                    "fixes": {
+                        "LIMRO": "LIMRO AT OR ABOVE 3800",
+                        "RUMUT": "RUMUT AT OR ABOVE 3800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "RUMUT",
+                    "fixes": {
+                        "RUMUT": "RUMUT AT OR ABOVE 3800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "KUXIT": "KUXIT AT OR ABOVE 3800 KUXIT 3800 FAF MIVDA MAP RNW 21",
+                "MIVDA": "MIVDA 3100 RNW 21",
+                "ET361": "ET361 SPEED 190",
+                "ET362": "ET362 SPEED 190"
+            },
+            "transitions": [
+                {
+                    "name": "IBOTI",
+                    "fixes": {
+                        "IBOTI": "IBOTI AT OR ABOVE 3800 SPEED 240"
+                    }
+                },
+                {
+                    "name": "KUXIT",
+                    "fixes": {
+                        "KUXIT": "KUXIT RIGHT TURN INBOUNDCOURSE 203 ALT 3800 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "NOTVA",
+                    "fixes": {
+                        "NOTVA": "NOTVA AT OR ABOVE 3800 SPEED 240"
+                    }
+                }
+            ]
+        }
+    ]
+}

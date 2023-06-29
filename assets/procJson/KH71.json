@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "BUTCH",
+            "lat": 35.67797778333333,
+            "lon": 94.80754166666667
+        },
+        {
+            "name": "COPOB",
+            "lat": 36.333855566666664,
+            "lon": 95.33001111666667
+        },
+        {
+            "name": "CRAMP",
+            "lat": 36.11598333333333,
+            "lon": 95.33010278333333
+        },
+        {
+            "name": "FODAD",
+            "lat": 35.95039166666667,
+            "lon": 95.24308611666666
+        },
+        {
+            "name": "IRIXE",
+            "lat": 36.168391666666665,
+            "lon": 95.33008056666667
+        },
+        {
+            "name": "JONAG",
+            "lat": 35.949388883333334,
+            "lon": 95.41590556666667
+        },
+        {
+            "name": "KREWE",
+            "lat": 36.287333333333336,
+            "lon": 95.33003333333333
+        },
+        {
+            "name": "NOBME",
+            "lat": 36.032527783333336,
+            "lon": 95.33013888333333
+        },
+        {
+            "name": "OKM",
+            "lat": 35.693075,
+            "lon": 95.86595556666667
+        },
+        {
+            "name": "ROBDE",
+            "lat": 36.41812221666667,
+            "lon": 95.32997221666666
+        },
+        {
+            "name": "TUL",
+            "lat": 36.196252783333335,
+            "lon": 95.78809166666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ROBDE": "ROBDE AT OR ABOVE 2600",
+                "COPOB": "COPOB 2600",
+                "KREWE": "KREWE AT OR ABOVE 1700 RNW 18 TRK 178 UNTIL 943",
+                "NOBME": "OVERFLY NOBME AT OR ABOVE 2600 HOLD AT NOBME RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF COPOB MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ROBDE",
+                    "fixes": {
+                        "ROBDE": "ROBDE LEFT TURN INBOUNDCOURSE 178 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "NOBME": "NOBME AT OR ABOVE 2600",
+                "CRAMP": "CRAMP 2600",
+                "IRIXE": "IRIXE AT OR ABOVE 1600 RNW 36 TRK 358 UNTIL 938",
+                "ROBDE": "OVERFLY ROBDE AT OR ABOVE 3800 HOLD AT ROBDE LEFT TURN INBOUNDCOURSE 178 ALT 3800 LEGDIST 4 FAF CRAMP MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "BUTCH",
+                    "fixes": {
+                        "BUTCH": "BUTCH",
+                        "FODAD": "FODAD AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "OKM",
+                    "fixes": {
+                        "OKM": "OKM",
+                        "JONAG": "JONAG AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "TUL",
+                    "fixes": {
+                        "TUL": "TUL",
+                        "NOBME": "OVERFLY NOBME AT OR ABOVE 2600 HOLD AT NOBME RIGHT TURN INBOUNDCOURSE 358 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

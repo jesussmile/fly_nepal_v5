@@ -1,0 +1,151 @@
+{
+    "fixes": [
+        {
+            "name": "DAMAR",
+            "lat": 27.25585,
+            "lon": 85.66289166666667
+        },
+        {
+            "name": "DHABA",
+            "lat": 26.707047216666666,
+            "lon": 86.09591666666667
+        },
+        {
+            "name": "JP961",
+            "lat": 26.709419433333334,
+            "lon": 85.85574721666667
+        },
+        {
+            "name": "JP962",
+            "lat": 26.710038883333333,
+            "lon": 85.78502778333333
+        },
+        {
+            "name": "JP963",
+            "lat": 26.793613883333332,
+            "lon": 85.78460556666667
+        },
+        {
+            "name": "JP964",
+            "lat": 26.708163883333334,
+            "lon": 85.98798056666666
+        },
+        {
+            "name": "JP965",
+            "lat": 26.707730566666665,
+            "lon": 86.03078333333333
+        },
+        {
+            "name": "LALBA",
+            "lat": 26.947222216666667,
+            "lon": 85.80638888333333
+        },
+        {
+            "name": "MEGHA",
+            "lat": 26.882486116666666,
+            "lon": 85.83640278333333
+        },
+        {
+            "name": "RW27",
+            "lat": 26.708780566666668,
+            "lon": 85.92844721666667
+        },
+        {
+            "name": "THILA",
+            "lat": 26.790619433333333,
+            "lon": 86.09549443333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "DAMA1A",
+            "rnw": "27",
+            "fixes": {
+                "LALBA": "LALBA AT OR ABOVE 7500",
+                "DAMAR": "DAMAR AT OR ABOVE 12500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DAMA1B",
+            "rnw": "09",
+            "fixes": {
+                "LALBA": "LALBA AT OR ABOVE 7500",
+                "DAMAR": "DAMAR AT OR ABOVE 12500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "THIL1A",
+            "rnw": "09",
+            "fixes": {
+                "THILA": "THILA RIGHT TURN INBOUNDCOURSE 301 ALT 7000 SPEED 180 LEGTIME 1",
+                "LALBA": "LALBA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "DAMA1C",
+            "runway": "RNW 09",
+            "fixes": {
+                "DAMAR": "DAMAR AT OR ABOVE 13500",
+                "LALBA": "LALBA AT OR ABOVE 7500",
+                "MEGHA": "MEGHA AT OR ABOVE 6000"
+            }
+        },
+        {
+            "name": "DAMA1D",
+            "runway": "RNW 27",
+            "fixes": {
+                "DAMAR": "DAMAR AT OR ABOVE 13500",
+                "LALBA": "LALBA AT OR ABOVE 7500 SPEED 180",
+                "THILA": "THILA AT OR ABOVE 3000 SPEED 180",
+                "DHABA": "DHABA AT OR ABOVE 3000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "JP962": "JP962 2200",
+                "JP961": "JP961 1300 RNW 09",
+                "DHABA": "DHABA AT OR ABOVE 3000 HOLD AT DHABA RIGHT TURN INBOUNDCOURSE 266 ALT 3000 SPEED 160 LEGTIME 1 FAF JP961 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "MEGHA",
+                    "fixes": {
+                        "MEGHA": "MEGHA AT OR ABOVE 6000",
+                        "JP963": "JP963 3800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "JP965": "JP965 1800",
+                "JP964": "JP964 1300 RNW 27 TRK 271 UNTIL 1000 TURN RIGHT DIRECT",
+                "DHABA": "DHABA AT OR ABOVE 3000 HOLD AT DHABA RIGHT TURN INBOUNDCOURSE 266 ALT 3000 SPEED 160 LEGTIME 1 FAF JP964 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "DHABA",
+                    "fixes": {
+                        "DHABA": "DHABA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

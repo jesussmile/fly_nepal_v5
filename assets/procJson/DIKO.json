@@ -1,0 +1,234 @@
+{
+    "fixes": [
+        {
+            "name": "ANOMO",
+            "lat": 9.351277783333334,
+            "lon": 5.758666666666667
+        },
+        {
+            "name": "BOVLI",
+            "lat": 9.339555566666666,
+            "lon": 5.344972216666667
+        },
+        {
+            "name": "D084L",
+            "lat": 9.407313883333334,
+            "lon": 5.445025
+        },
+        {
+            "name": "DIMKA",
+            "lat": 9.504416666666666,
+            "lon": 5.3745
+        },
+        {
+            "name": "FD08",
+            "lat": 9.369280566666667,
+            "lon": 5.662563883333333
+        },
+        {
+            "name": "FD26",
+            "lat": 9.406155566666667,
+            "lon": 5.4516694333333335
+        },
+        {
+            "name": "GADUT",
+            "lat": 9.268861116666667,
+            "lon": 5.7438055666666665
+        },
+        {
+            "name": "KO501",
+            "lat": 9.368416666666667,
+            "lon": 5.66225
+        },
+        {
+            "name": "KO502",
+            "lat": 9.400166666666667,
+            "lon": 5.483138883333333
+        },
+        {
+            "name": "KO503",
+            "lat": 9.405833333333334,
+            "lon": 5.451027783333333
+        },
+        {
+            "name": "KO504",
+            "lat": 9.374083333333333,
+            "lon": 5.630305566666666
+        },
+        {
+            "name": "KONOR",
+            "lat": 9.421972216666667,
+            "lon": 5.3597222166666665
+        },
+        {
+            "name": "KRG",
+            "lat": 9.372480566666667,
+            "lon": 5.6443
+        },
+        {
+            "name": "LOVSO",
+            "lat": 9.447805566666666,
+            "lon": 5.7347222166666665
+        },
+        {
+            "name": "MEMAR",
+            "lat": 9.433694433333333,
+            "lon": 5.773527783333334
+        },
+        {
+            "name": "PIVLA",
+            "lat": 9.353111116666666,
+            "lon": 5.760694433333334
+        },
+        {
+            "name": "RANOS",
+            "lat": 9.255944433333333,
+            "lon": 5.63175
+        },
+        {
+            "name": "RW08",
+            "lat": 9.385458333333334,
+            "lon": 5.566141666666667
+        },
+        {
+            "name": "TAPIX",
+            "lat": 9.230888883333334,
+            "lon": 5.376444433333333
+        },
+        {
+            "name": "USDOT",
+            "lat": 9.422111116666667,
+            "lon": 5.344944433333334
+        },
+        {
+            "name": "VISTI",
+            "lat": 9.574083333333334,
+            "lon": 5.418638883333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDY08",
+            "fixes": {
+                "FD08": "FD08 3100",
+                "KRG": "KRG AT OR ABOVE 2760 RNW 08 TRK 084 UNTIL 10.0 FROM KRG TURN RIGHT DIRECT KRG AT OR ABOVE 3100 SPEED 190 FAF FD08 MAP RNW 08"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORDZ08",
+            "fixes": {
+                "PIVLA": "PIVLA AT OR ABOVE 3100",
+                "FD08": "FD08 3100",
+                "KRG": "KRG AT OR ABOVE 2760 RNW 08 TRK 084 UNTIL 10.0 FROM KRG TURN RIGHT TRK 260 INTERCEPT RADIAL 178 TO",
+                "RANOS": "RANOS RANOS AT OR ABOVE 3100 SPEED 190 FAF FD08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "LOVSO",
+                    "fixes": {
+                        "LOVSO": "LOVSO AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "RANOS",
+                    "fixes": {
+                        "RANOS": "RANOS AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDY26",
+            "fixes": {
+                "FD26": "FD26 3100 RNW 26",
+                "KRG": "OVERFLY KRG TURN LEFT TRK 092 INTERCEPT RADIAL 122 TO",
+                "TAPIX": "TAPIX TAPIX AT OR ABOVE 3100 SPEED 190 FAF FD26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "KRG",
+                    "fixes": {
+                        "KRG": "KRG AT OR ABOVE 3100 SPEED 200",
+                        "D084L": "D084L TRK 129 UNTIL 3.3 FROM D084L"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ26",
+            "fixes": {
+                "USDOT": "USDOT AT OR ABOVE 3100",
+                "FD26": "FD26 3100 RNW 26",
+                "KRG": "OVERFLY KRG TURN LEFT TRK 092 INTERCEPT RADIAL 122 TO",
+                "TAPIX": "TAPIX TAPIX AT OR ABOVE 3100 SPEED 190 FAF FD26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "TAPIX",
+                    "fixes": {
+                        "TAPIX": "TAPIX AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "VISTI",
+                    "fixes": {
+                        "VISTI": "VISTI AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "ANOMO": "ANOMO AT OR ABOVE 3100",
+                "KO501": "KO501 3100 RNW 08",
+                "KO502": "OVERFLY KO502 SPEED 230 TURN RIGHT DIRECT",
+                "GADUT": "GADUT AT OR ABOVE 3100 SPEED 230 FAF KO501 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "GADUT",
+                    "fixes": {
+                        "GADUT": "GADUT AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "MEMAR",
+                    "fixes": {
+                        "MEMAR": "MEMAR AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "KONOR": "KONOR AT OR ABOVE 3100",
+                "KO503": "KO503 3100 RNW 26",
+                "KO504": "OVERFLY KO504 SPEED 230 TURN LEFT DIRECT",
+                "BOVLI": "BOVLI AT OR ABOVE 3100 SPEED 230 FAF KO503 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BOVLI",
+                    "fixes": {
+                        "BOVLI": "BOVLI AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "DIMKA",
+                    "fixes": {
+                        "DIMKA": "DIMKA AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        }
+    ]
+}

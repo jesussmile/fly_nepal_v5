@@ -1,0 +1,134 @@
+{
+    "fixes": [
+        {
+            "name": "CF28",
+            "lat": 49.61485833333333,
+            "lon": 1.1877361166666667
+        },
+        {
+            "name": "CN28",
+            "lat": 49.625244433333336,
+            "lon": 1.2716555666666667
+        },
+        {
+            "name": "D101L",
+            "lat": 49.61,
+            "lon": 1.1499166666666667
+        },
+        {
+            "name": "DIKRO",
+            "lat": 49.58472221666667,
+            "lon": 1.1108333333333333
+        },
+        {
+            "name": "ETUSA",
+            "lat": 49.50936111666667,
+            "lon": 1.1577222166666667
+        },
+        {
+            "name": "FF28",
+            "lat": 49.623277783333336,
+            "lon": 1.2542222166666668
+        },
+        {
+            "name": "FRC28",
+            "lat": 49.623277783333336,
+            "lon": 1.2541666666666667
+        },
+        {
+            "name": "MN28",
+            "lat": 49.64665278333333,
+            "lon": 1.4410361166666668
+        },
+        {
+            "name": "MPNB",
+            "lat": 49.638,
+            "lon": 1.3723055666666666
+        },
+        {
+            "name": "NOSDU",
+            "lat": 49.7055,
+            "lon": 1.0989166666666668
+        },
+        {
+            "name": "RC410",
+            "lat": 49.654944433333334,
+            "lon": 1.5090833333333333
+        },
+        {
+            "name": "RC412",
+            "lat": 49.73711111666667,
+            "lon": 1.3510833333333334
+        },
+        {
+            "name": "UVRAN",
+            "lat": 49.607416666666666,
+            "lon": 1.1283888833333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS28",
+            "fixes": {
+                "CF28": "CF28 AT OR ABOVE 3000",
+                "FF28": "FF28 3000 RNW 28 TRK 281 UNTIL 800 TURN RIGHT DIRECT",
+                "MPNB": "MPNB 3000 SPEED 185 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "DIKRO",
+                    "fixes": {
+                        "DIKRO": "DIKRO",
+                        "D101L": "D101L AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB28",
+            "fixes": {
+                "CN28": "CN28 AT OR ABOVE 3000",
+                "MPNB": "MPNB 1510 MPNB 3000 SPEED 185 FAF MPNB MAP MN28",
+                "MN28": "MN28 638 RNW 28 TRK 281 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MP",
+                    "fixes": {
+                        "MPNB": "MPNB RIGHT TURN INBOUNDCOURSE 281 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "UVRAN": "UVRAN AT OR ABOVE 3000",
+                "FRC28": "FRC28 3000 RNW 28",
+                "RC410": "OVERFLY RC410 SPEED 185 TURN RIGHT DIRECT",
+                "RC412": "RC412 SPEED 185",
+                "NOSDU": "NOSDU 3000 SPEED 230 HOLD AT NOSDU LEFT TURN INBOUNDCOURSE 191 ALT 3000 SPEED 230 LEGTIME 1 FAF FRC28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "ETUSA",
+                    "fixes": {
+                        "ETUSA": "ETUSA"
+                    }
+                },
+                {
+                    "name": "NOSDU",
+                    "fixes": {
+                        "NOSDU": "NOSDU"
+                    }
+                }
+            ]
+        }
+    ]
+}

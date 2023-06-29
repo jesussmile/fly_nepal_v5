@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "AVUBE",
+            "lat": 43.794836116666666,
+            "lon": 111.81123056666667
+        },
+        {
+            "name": "CASUK",
+            "lat": 43.729869433333334,
+            "lon": 111.88836111666667
+        },
+        {
+            "name": "DBS",
+            "lat": 44.08885278333333,
+            "lon": 112.20934443333333
+        },
+        {
+            "name": "IDA",
+            "lat": 43.519005566666664,
+            "lon": 112.06391666666667
+        },
+        {
+            "name": "JOGUN",
+            "lat": 43.73451943333333,
+            "lon": 111.82065833333333
+        },
+        {
+            "name": "LUDIC",
+            "lat": 43.55875556666667,
+            "lon": 111.56886666666666
+        },
+        {
+            "name": "OKAVE",
+            "lat": 43.596075,
+            "lon": 111.83917778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 43.679860483333336,
+            "lon": 111.92990351666667
+        },
+        {
+            "name": "PI002",
+            "lat": 43.66248246666667,
+            "lon": 112.0260274
+        },
+        {
+            "name": "PI003",
+            "lat": 43.58694691666667,
+            "lon": 112.00687028333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "OKAVE": "OKAVE AT OR ABOVE 8600 OVERFLY OKAVE AT OR ABOVE 8600 HOLD AT OKAVE LEFT TURN INBOUNDCOURSE 351 LEGDIST 7 FAF JOGUN MAP RNW 35",
+                "JOGUN": "JOGUN 6700",
+                "AVUBE": "AVUBE AT OR ABOVE 5540 RNW 35 TRK 351 UNTIL 5900 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IDA",
+                    "fixes": {
+                        "IDA": "IDA"
+                    }
+                },
+                {
+                    "name": "LUDIC",
+                    "fixes": {
+                        "LUDIC": "LUDIC"
+                    }
+                },
+                {
+                    "name": "OKAVE",
+                    "fixes": {
+                        "OKAVE": "OKAVE LEFT TURN INBOUNDCOURSE 351 ALT 8600 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR35",
+            "fixes": {
+                "IDA": "IDA AT OR ABOVE 7100",
+                "CASUK": "CASUK 7100 RNW 35 TRK 016 UNTIL 6200 TURN LEFT DIRECT CASUK AT OR ABOVE 7100 HOLD AT CASUK LEFT TURN INBOUNDCOURSE 016 LEGTIME 1 FAF CASUK MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "DBS",
+                    "fixes": {
+                        "DBS": "DBS",
+                        "CASUK": "CASUK AT OR ABOVE 7800",
+                        "PI001": "PI001 AT OR ABOVE 7100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 7100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 7100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

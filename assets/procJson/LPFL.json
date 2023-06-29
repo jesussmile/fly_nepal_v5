@@ -1,0 +1,83 @@
+{
+    "fixes": [
+        {
+            "name": "D181M",
+            "lat": 39.23755833333333,
+            "lon": 31.067766666666667
+        },
+        {
+            "name": "FQ001",
+            "lat": 39.31915278333334,
+            "lon": 31.090022216666668
+        },
+        {
+            "name": "MQ001",
+            "lat": 39.40074166666667,
+            "lon": 31.112330566666667
+        },
+        {
+            "name": "OBUDA",
+            "lat": 39.11361111666667,
+            "lon": 31.032777783333334
+        },
+        {
+            "name": "SCNB",
+            "lat": 39.45752778333333,
+            "lon": 31.127888883333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBDA18",
+            "fixes": {
+                "FQ001": "FQ001 2700",
+                "MQ001": "MQ001 1126 RNW 18 TRK 140 UNTIL 4500 TURN RIGHT DIRECT",
+                "OBUDA": "OBUDA 4500 HOLD AT OBUDA RIGHT TURN INBOUNDCOURSE 350 LEGDIST 4 FAF FQ001 MAP MQ001"
+            },
+            "transitions": [
+                {
+                    "name": "OBUDA",
+                    "fixes": {
+                        "OBUDA": "OBUDA AT OR ABOVE 4500",
+                        "D181M": "D181M AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "SC",
+                    "fixes": {
+                        "SCNB": "SCNB AT OR ABOVE 5000 TRK 169 UNTIL 10.0 FROM SCNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDA36",
+            "fixes": {
+                "FQ001": "FQ001 2700",
+                "MQ001": "MQ001 1126 RNW 36 TRK 140 UNTIL 4500 TURN RIGHT DIRECT",
+                "OBUDA": "OBUDA 4500 HOLD AT OBUDA RIGHT TURN INBOUNDCOURSE 350 LEGDIST 4 FAF FQ001 MAP MQ001"
+            },
+            "transitions": [
+                {
+                    "name": "OBUDA",
+                    "fixes": {
+                        "OBUDA": "OBUDA AT OR ABOVE 4500",
+                        "D181M": "D181M AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "SC",
+                    "fixes": {
+                        "SCNB": "SCNB AT OR ABOVE 5000 TRK 169 UNTIL 10.0 FROM SCNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

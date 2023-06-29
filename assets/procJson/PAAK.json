@@ -1,0 +1,137 @@
+{
+    "fixes": [
+        {
+            "name": "BILNE",
+            "lat": 52.26628888333333,
+            "lon": 174.51871388333333
+        },
+        {
+            "name": "CEVNO",
+            "lat": 52.457058333333336,
+            "lon": 173.84358611666667
+        },
+        {
+            "name": "DER16",
+            "lat": 52.214627783333334,
+            "lon": 174.20361388333333
+        },
+        {
+            "name": "DIATI",
+            "lat": 52.186708333333335,
+            "lon": 174.05804166666667
+        },
+        {
+            "name": "GANEF",
+            "lat": 52.177894433333336,
+            "lon": 173.89621666666667
+        },
+        {
+            "name": "HIMKI",
+            "lat": 52.79443611666667,
+            "lon": 173.77871111666667
+        },
+        {
+            "name": "INOTY",
+            "lat": 52.58829166666666,
+            "lon": 174.62941388333334
+        },
+        {
+            "name": "MACSU",
+            "lat": 52.21387778333333,
+            "lon": 174.17905278333333
+        },
+        {
+            "name": "WOKAT",
+            "lat": 52.24448888333333,
+            "lon": 174.31620278333332
+        },
+        {
+            "name": "ZIKEF",
+            "lat": 52.23832778333333,
+            "lon": 174.21383611666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "HIMKI1",
+            "rnw": "16",
+            "fixes": {
+                "DER16": "DER16",
+                "GANEF": "GANEF",
+                "HIMKI": "HIMKI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "INOTY1",
+            "rnw": "34",
+            "fixes": {
+                "ZIKEF": "OVERFLY ZIKEF",
+                "BILNE": "OVERFLY BILNE",
+                "INOTY": "INOTY"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA16",
+            "fixes": {
+                "GANEF": "GANEF AT OR ABOVE 2900",
+                "DIATI": "DIATI 2000",
+                "MACSU": "OVERFLY MACSU 1880 RNW 16 TRK 282 UNTIL 1880",
+                "WOKAT": "WOKAT",
+                "INOTY": "OVERFLY INOTY AT OR ABOVE 7500 HOLD AT INOTY RIGHT TURN INBOUNDCOURSE 060 ALT 7500 LEGDIST 7 FAF DIATI MAP MACSU"
+            },
+            "transitions": [
+                {
+                    "name": "HIMKI",
+                    "fixes": {
+                        "HIMKI": "HIMKI",
+                        "CEVNO": "CEVNO AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "INOTY",
+                    "fixes": {
+                        "INOTY": "INOTY",
+                        "CEVNO": "CEVNO AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA34",
+            "fixes": {
+                "GANEF": "GANEF AT OR ABOVE 2900",
+                "DIATI": "DIATI 2000",
+                "MACSU": "OVERFLY MACSU 1880 RNW 34 TRK 282 UNTIL 1880",
+                "WOKAT": "WOKAT",
+                "INOTY": "OVERFLY INOTY AT OR ABOVE 7500 HOLD AT INOTY RIGHT TURN INBOUNDCOURSE 060 ALT 7500 LEGDIST 7 FAF DIATI MAP MACSU"
+            },
+            "transitions": [
+                {
+                    "name": "HIMKI",
+                    "fixes": {
+                        "HIMKI": "HIMKI",
+                        "CEVNO": "CEVNO AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "INOTY",
+                    "fixes": {
+                        "INOTY": "INOTY",
+                        "CEVNO": "CEVNO AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

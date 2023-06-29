@@ -1,0 +1,82 @@
+{
+    "fixes": [
+        {
+            "name": "CAPIS",
+            "lat": 36.408844433333336,
+            "lon": 90.95256388333334
+        },
+        {
+            "name": "HAVUK",
+            "lat": 36.018,
+            "lon": 90.958875
+        },
+        {
+            "name": "IDRUW",
+            "lat": 36.19867778333333,
+            "lon": 90.95596388333334
+        },
+        {
+            "name": "JAPUD",
+            "lat": 36.339472216666664,
+            "lon": 90.95368611666666
+        },
+        {
+            "name": "KADEY",
+            "lat": 36.15151388333334,
+            "lon": 90.956725
+        },
+        {
+            "name": "MUCIN",
+            "lat": 36.29230833333333,
+            "lon": 90.95445
+        },
+        {
+            "name": "TACHS",
+            "lat": 36.472977783333334,
+            "lon": 90.95152221666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "TACHS": "TACHS AT OR ABOVE 3100",
+                "CAPIS": "CAPIS AT OR ABOVE 2100",
+                "JAPUD": "JAPUD 2000",
+                "MUCIN": "MUCIN AT OR ABOVE 1100 RNW 18 TRK 182 UNTIL 571",
+                "HAVUK": "OVERFLY HAVUK AT OR ABOVE 3100 HOLD AT HAVUK RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF JAPUD MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "TACHS",
+                    "fixes": {
+                        "TACHS": "TACHS RIGHT TURN INBOUNDCOURSE 182 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HAVUK": "HAVUK AT OR ABOVE 3100",
+                "KADEY": "KADEY 2000",
+                "IDRUW": "IDRUW AT OR ABOVE 1100 RNW 36 TRK 002 UNTIL 541",
+                "TACHS": "OVERFLY TACHS AT OR ABOVE 3100 HOLD AT TACHS RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4 FAF KADEY MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HAVUK",
+                    "fixes": {
+                        "HAVUK": "HAVUK RIGHT TURN INBOUNDCOURSE 002 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

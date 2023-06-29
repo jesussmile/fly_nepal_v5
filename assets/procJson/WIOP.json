@@ -1,0 +1,126 @@
+{
+    "fixes": [
+        {
+            "name": "FF10",
+            "lat": 0.8671666666666666,
+            "lon": 112.84166666666667
+        },
+        {
+            "name": "FF28",
+            "lat": 0.8096666666666666,
+            "lon": 113.04138888333334
+        },
+        {
+            "name": "IVTIR",
+            "lat": 0.8922777833333334,
+            "lon": 112.76755556666667
+        },
+        {
+            "name": "MA10",
+            "lat": 0.8443444333333333,
+            "lon": 112.90810556666666
+        },
+        {
+            "name": "MA28",
+            "lat": 0.8249527833333333,
+            "lon": 112.97518333333333
+        },
+        {
+            "name": "OP501",
+            "lat": 0.8723055666666667,
+            "lon": 112.81363888333334
+        },
+        {
+            "name": "OP502",
+            "lat": 0.8575833333333333,
+            "lon": 112.86311111666667
+        },
+        {
+            "name": "OP701",
+            "lat": 0.7968611166666667,
+            "lon": 113.06722221666666
+        },
+        {
+            "name": "OP702",
+            "lat": 0.8115555666666666,
+            "lon": 113.01777778333333
+        },
+        {
+            "name": "REMUP",
+            "lat": 0.785,
+            "lon": 113.14672221666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "FF10": "FF10 2000",
+                "MA10": "MA10 650 RNW 10 TRK 108 UNTIL 1000 TURN LEFT DIRECT",
+                "IVTIR": "IVTIR AT OR ABOVE 3000 HOLD AT IVTIR RIGHT TURN INBOUNDCOURSE 108 ALT 3000 LEGTIME 1 FAF FF10 MAP MA10"
+            },
+            "transitions": [
+                {
+                    "name": "IVTIR",
+                    "fixes": {
+                        "IVTIR": "IVTIR AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD28",
+            "fixes": {
+                "FF28": "FF28 2000",
+                "MA28": "MA28 694 RNW 28 TRK 283 UNTIL 1000 TURN RIGHT DIRECT",
+                "REMUP": "REMUP AT OR ABOVE 4000 HOLD AT REMUP RIGHT TURN INBOUNDCOURSE 283 ALT 4000 SPEED 200 LEGTIME 1 FAF FF28 MAP MA28"
+            },
+            "transitions": [
+                {
+                    "name": "REMUP",
+                    "fixes": {
+                        "REMUP": "REMUP AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "OP501": "OP501 AT OR ABOVE 2000",
+                "OP502": "OP502 1500 RNW 10 TRK 106 UNTIL 1000 TURN LEFT DIRECT",
+                "IVTIR": "IVTIR AT OR ABOVE 3000 HOLD AT IVTIR RIGHT TURN INBOUNDCOURSE 108 ALT 3000 LEGTIME 1 FAF OP502 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "IVTIR",
+                    "fixes": {
+                        "IVTIR": "IVTIR AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "OP701": "OP701 AT OR ABOVE 2000",
+                "OP702": "OP702 1500 RNW 28 TRK 286 UNTIL 1000 TURN RIGHT DIRECT",
+                "REMUP": "REMUP AT OR ABOVE 4000 HOLD AT REMUP RIGHT TURN INBOUNDCOURSE 283 ALT 4000 SPEED 200 LEGTIME 1 FAF OP702 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "REMUP",
+                    "fixes": {
+                        "REMUP": "REMUP AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

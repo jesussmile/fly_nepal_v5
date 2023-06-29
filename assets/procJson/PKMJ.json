@@ -1,0 +1,215 @@
+{
+    "fixes": [
+        {
+            "name": "EFAHU",
+            "lat": 7.3109055666666665,
+            "lon": 171.72206943333333
+        },
+        {
+            "name": "FF07",
+            "lat": 7.042163883333333,
+            "lon": 171.19735833333334
+        },
+        {
+            "name": "FF25",
+            "lat": 7.0807722166666665,
+            "lon": 171.34836666666666
+        },
+        {
+            "name": "IMUFO",
+            "lat": 7.088125,
+            "lon": 171.36645833333333
+        },
+        {
+            "name": "KUHEK",
+            "lat": 7.103152783333333,
+            "lon": 171.07621388333334
+        },
+        {
+            "name": "MAJNB",
+            "lat": 7.065288883333333,
+            "lon": 171.26857778333334
+        },
+        {
+            "name": "NOFKE",
+            "lat": 7.080061116666666,
+            "lon": 171.03598611666666
+        },
+        {
+            "name": "NUGWO",
+            "lat": 7.157916666666667,
+            "lon": 171.51521943333333
+        },
+        {
+            "name": "OGEVE",
+            "lat": 7.0224416666666665,
+            "lon": 171.09866388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 7.047259566666667,
+            "lon": 171.21267716666668
+        },
+        {
+            "name": "PI002",
+            "lat": 6.983402966666667,
+            "lon": 171.17989801666667
+        },
+        {
+            "name": "PI003",
+            "lat": 7.01375895,
+            "lon": 171.10887328333334
+        },
+        {
+            "name": "PI004",
+            "lat": 7.076415866666666,
+            "lon": 171.32627888333334
+        },
+        {
+            "name": "PI005",
+            "lat": 7.135828483333333,
+            "lon": 171.3666672
+        },
+        {
+            "name": "PI006",
+            "lat": 7.097061383333333,
+            "lon": 171.43344548333334
+        },
+        {
+            "name": "TIVIE",
+            "lat": 7.073541666666666,
+            "lon": 171.31137221666665
+        },
+        {
+            "name": "TOZTU",
+            "lat": 7.107469433333334,
+            "lon": 171.445425
+        },
+        {
+            "name": "UFUZO",
+            "lat": 7.042422216666667,
+            "lon": 171.18005278333334
+        },
+        {
+            "name": "WOZTI",
+            "lat": 7.282625,
+            "lon": 170.82621388333334
+        },
+        {
+            "name": "ZADES",
+            "lat": 7.053966666666667,
+            "lon": 171.23341111666667
+        },
+        {
+            "name": "ZIVZU",
+            "lat": 7.189386116666666,
+            "lon": 171.42791388333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB07",
+            "fixes": {
+                "FF07": "FF07 1300",
+                "ZADES": "ZADES AT OR ABOVE 600 RNW 07",
+                "MAJNB": "OVERFLY MAJNB TRK 062 UNTIL 1000 TURN RIGHT DIRECT MAJNB AT OR ABOVE 1300 HOLD AT MAJNB RIGHT TURN INBOUNDCOURSE 062 LEGTIME 1 FAF FF07 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "MAJ",
+                    "fixes": {
+                        "MAJNB": "MAJNB",
+                        "PI001": "PI001 AT OR ABOVE 1300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FF25": "FF25 1300",
+                "TIVIE": "TIVIE AT OR ABOVE 600 RNW 25",
+                "MAJNB": "OVERFLY MAJNB TRK 249 UNTIL 1000 TURN RIGHT DIRECT MAJNB AT OR ABOVE 1300 HOLD AT MAJNB RIGHT TURN INBOUNDCOURSE 249 LEGTIME 1 FAF FF25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "MAJ",
+                    "fixes": {
+                        "MAJNB": "MAJNB",
+                        "PI004": "PI004 AT OR ABOVE 1300 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1300 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "OGEVE": "OGEVE AT OR ABOVE 1700",
+                "UFUZO": "UFUZO 1700 RNW 07 TRK 066 UNTIL 407",
+                "TOZTU": "OVERFLY TOZTU AT OR ABOVE 1700 HOLD AT TOZTU LEFT TURN INBOUNDCOURSE 246 LEGDIST 4 FAF UFUZO MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "EFAHU",
+                    "fixes": {
+                        "EFAHU": "EFAHU",
+                        "KUHEK": "KUHEK AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "OGEVE",
+                    "fixes": {
+                        "OGEVE": "OGEVE RIGHT TURN INBOUNDCOURSE 066 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WOZTI",
+                    "fixes": {
+                        "WOZTI": "WOZTI",
+                        "NOFKE": "NOFKE AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "TOZTU": "TOZTU AT OR ABOVE 1700",
+                "IMUFO": "IMUFO 1700 RNW 25 TRK 246 UNTIL 407",
+                "OGEVE": "OVERFLY OGEVE AT OR ABOVE 1700 HOLD AT OGEVE RIGHT TURN INBOUNDCOURSE 066 LEGDIST 4 FAF IMUFO MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "EFAHU",
+                    "fixes": {
+                        "EFAHU": "EFAHU",
+                        "NUGWO": "NUGWO AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "TOZTU",
+                    "fixes": {
+                        "TOZTU": "TOZTU LEFT TURN INBOUNDCOURSE 246 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WOZTI",
+                    "fixes": {
+                        "WOZTI": "WOZTI",
+                        "ZIVZU": "ZIVZU AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

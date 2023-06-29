@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "BOMGA",
+            "lat": 44.77065556666667,
+            "lon": 80.8793
+        },
+        {
+            "name": "DUDPA",
+            "lat": 44.41874166666667,
+            "lon": 80.79925833333333
+        },
+        {
+            "name": "DUVBU",
+            "lat": 44.757188883333335,
+            "lon": 80.994725
+        },
+        {
+            "name": "ELOGI",
+            "lat": 44.51745278333333,
+            "lon": 80.82161111666667
+        },
+        {
+            "name": "IKNUM",
+            "lat": 44.432011116666665,
+            "lon": 80.68445556666667
+        },
+        {
+            "name": "KEKTI",
+            "lat": 44.40535833333333,
+            "lon": 80.91400833333333
+        },
+        {
+            "name": "NAKBA",
+            "lat": 44.784002783333335,
+            "lon": 80.76381943333334
+        },
+        {
+            "name": "TIFAM",
+            "lat": 44.66538056666667,
+            "lon": 80.85525278333333
+        },
+        {
+            "name": "VOBEG",
+            "lat": 44.46090556666667,
+            "lon": 80.80879443333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "BOMGA": "BOMGA AT OR ABOVE 2600",
+                "TIFAM": "TIFAM 2400 RNW 18",
+                "VOBEG": "OVERFLY VOBEG 2700 HOLD AT VOBEG RIGHT TURN INBOUNDCOURSE 181 SPEED 265 LEGTIME 1 FAF TIFAM MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "DUVBU",
+                    "fixes": {
+                        "DUVBU": "DUVBU SPEED 210"
+                    }
+                },
+                {
+                    "name": "NAKBA",
+                    "fixes": {
+                        "NAKBA": "NAKBA SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DUDPA": "DUDPA AT OR ABOVE 2600",
+                "ELOGI": "ELOGI 2500 RNW 36 HDG 001 UNTIL 1800 TURN LEFT DIRECT",
+                "KEKTI": "OVERFLY KEKTI 2900 HOLD AT KEKTI RIGHT TURN INBOUNDCOURSE 091 LEGTIME 1 FAF ELOGI MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "IKNUM",
+                    "fixes": {
+                        "IKNUM": "IKNUM SPEED 210"
+                    }
+                },
+                {
+                    "name": "KEKTI",
+                    "fixes": {
+                        "KEKTI": "KEKTI SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

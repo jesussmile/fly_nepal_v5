@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "AFTIN",
+            "lat": 38.224786116666664,
+            "lon": 122.50949721666667
+        },
+        {
+            "name": "CROIT",
+            "lat": 38.05622221666667,
+            "lon": 122.194375
+        },
+        {
+            "name": "HABAP",
+            "lat": 38.29473888333333,
+            "lon": 122.52595
+        },
+        {
+            "name": "HIRUV",
+            "lat": 38.187077783333336,
+            "lon": 122.88759166666667
+        },
+        {
+            "name": "JIVLI",
+            "lat": 38.14921666666667,
+            "lon": 122.41267778333334
+        },
+        {
+            "name": "PYE",
+            "lat": 38.07975556666667,
+            "lon": 122.86782778333334
+        },
+        {
+            "name": "REBAS",
+            "lat": 37.94068333333333,
+            "lon": 122.38366666666667
+        },
+        {
+            "name": "SGD",
+            "lat": 38.17936111666667,
+            "lon": 122.37315278333334
+        },
+        {
+            "name": "WUDKO",
+            "lat": 38.226827783333334,
+            "lon": 122.55026943333333
+        },
+        {
+            "name": "XIKIY",
+            "lat": 38.30721666666667,
+            "lon": 122.69329166666667
+        },
+        {
+            "name": "ZESEP",
+            "lat": 38.19806666666667,
+            "lon": 122.49921388333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD29",
+            "fixes": {
+                "SGD": "SGD AT OR ABOVE 3000",
+                "AFTIN": "AFTIN 1900 RNW 29 TRK 276 UNTIL 2000",
+                "PYE": "PYE AT OR ABOVE 3500 FAF AFTIN MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "SGD",
+                    "fixes": {
+                        "SGD": "SGD LEFT TURN INBOUNDCOURSE 276 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "JIVLI": "JIVLI AT OR ABOVE 2500",
+                "ZESEP": "ZESEP 2000",
+                "WUDKO": "WUDKO AT OR ABOVE 1040 RNW 29 TRK 290 UNTIL 347",
+                "XIKIY": "XIKIY",
+                "HIRUV": "OVERFLY HIRUV AT OR ABOVE 3500 FAF ZESEP MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "CROIT",
+                    "fixes": {
+                        "CROIT": "CROIT"
+                    }
+                },
+                {
+                    "name": "HABAP",
+                    "fixes": {
+                        "HABAP": "HABAP",
+                        "JIVLI": "OVERFLY JIVLI AT OR ABOVE 4000 HOLD AT JIVLI RIGHT TURN INBOUNDCOURSE 290 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "REBAS",
+                    "fixes": {
+                        "REBAS": "REBAS"
+                    }
+                }
+            ]
+        }
+    ]
+}

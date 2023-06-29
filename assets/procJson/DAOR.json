@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "BCR",
+            "lat": 31.684591666666666,
+            "lon": 2.261275
+        },
+        {
+            "name": "BCRNB",
+            "lat": 31.666666666666668,
+            "lon": 2.2416666666666667
+        },
+        {
+            "name": "CI18",
+            "lat": 31.801436116666668,
+            "lon": 2.2624916666666666
+        },
+        {
+            "name": "D180I",
+            "lat": 31.534263883333335,
+            "lon": 2.2609833333333333
+        },
+        {
+            "name": "D360G",
+            "lat": 31.801508333333334,
+            "lon": 2.261275
+        },
+        {
+            "name": "D360H",
+            "lat": 31.818211116666667,
+            "lon": 2.261275
+        },
+        {
+            "name": "FD18",
+            "lat": 31.776455566666666,
+            "lon": 2.261275
+        },
+        {
+            "name": "FI18",
+            "lat": 31.778052783333333,
+            "lon": 2.2622861166666666
+        },
+        {
+            "name": "FN24",
+            "lat": 31.705569433333334,
+            "lon": 2.1627972166666667
+        },
+        {
+            "name": "FS18",
+            "lat": 31.778975,
+            "lon": 2.261275
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 18",
+        "RNW 24",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "FD18": "FD18 4990",
+                "BCR": "BCR 3193 RNW 18 TRK 180 UNTIL 6.0 FROM BCR TURN RIGHT DIRECT BCR 5710 FAF FD18 MAP BCR"
+            },
+            "transitions": [
+                {
+                    "name": "BCR1",
+                    "fixes": {
+                        "BCR": "BCR AT OR ABOVE 5710 TRK 340 UNTIL 8.0 FROM BCR TURN RIGHT DIRECT",
+                        "D360H": "D360H AT OR ABOVE 4990 SPEED 185"
+                    }
+                },
+                {
+                    "name": "BCR2",
+                    "fixes": {
+                        "BCR": "BCR AT OR ABOVE 5710 TRK 340 UNTIL 7.0 FROM BCR TURN RIGHT DIRECT",
+                        "D360G": "D360G AT OR ABOVE 4990"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS18",
+            "fixes": {
+                "CI18": "CI18 AT OR ABOVE 4980",
+                "FI18": "FI18 4980 RNW 18",
+                "D180I": "OVERFLY D180I TURN RIGHT DIRECT",
+                "BCR": "BCR 5710 FAF FI18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "BCR1",
+                    "fixes": {
+                        "BCR": "BCR AT OR ABOVE 5710 TRK 340 UNTIL 8.0 FROM BCR"
+                    }
+                },
+                {
+                    "name": "BCR2",
+                    "fixes": {
+                        "BCR": "BCR AT OR ABOVE 5710 TRK 343 UNTIL 7.0 FROM BCR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FN24": "FN24 4660",
+                "BCRNB": "BCRNB 3176 RNW 24 TRK 240 UNTIL 4310 TURN RIGHT DIRECT BCRNB 5250 FAF FN24 MAP BCR"
+            },
+            "transitions": [
+                {
+                    "name": "BCR",
+                    "fixes": {
+                        "BCRNB": "BCRNB AT OR ABOVE 5250 TRK 038 UNTIL 7.0 FROM BCRNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR18",
+            "fixes": {
+                "FS18": "FS18 4990",
+                "BCR": "BCR 3192 RNW 18 TRK 180 UNTIL 5120 TURN RIGHT DIRECT BCR 5710 FAF FS18 MAP BCR"
+            },
+            "transitions": [
+                {
+                    "name": "BCR1",
+                    "fixes": {
+                        "BCR": "BCR AT OR ABOVE 5710 TRK 340 UNTIL 7.0 FROM BCR"
+                    }
+                },
+                {
+                    "name": "BCR2",
+                    "fixes": {
+                        "BCR": "BCR AT OR ABOVE 5710 TRK 340 UNTIL 7.0 FROM BCR"
+                    }
+                }
+            ]
+        }
+    ]
+}

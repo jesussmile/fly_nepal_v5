@@ -1,0 +1,152 @@
+{
+    "fixes": [
+        {
+            "name": "AKARI",
+            "lat": 16.492388883333334,
+            "lon": 143.80225
+        },
+        {
+            "name": "AKUSA",
+            "lat": 16.562222216666665,
+            "lon": 143.85
+        },
+        {
+            "name": "EGOVA",
+            "lat": 16.604666666666667,
+            "lon": 143.46752778333334
+        },
+        {
+            "name": "FN11",
+            "lat": 16.538369433333333,
+            "lon": 143.718525
+        },
+        {
+            "name": "FN29",
+            "lat": 16.620866666666668,
+            "lon": 143.59336943333332
+        },
+        {
+            "name": "GM401",
+            "lat": 16.538416666666667,
+            "lon": 143.72983333333335
+        },
+        {
+            "name": "GM402",
+            "lat": 16.628611116666665,
+            "lon": 143.58772221666666
+        },
+        {
+            "name": "GM403",
+            "lat": 16.603277783333333,
+            "lon": 143.78116666666668
+        },
+        {
+            "name": "GM404",
+            "lat": 16.563222216666666,
+            "lon": 143.53727778333334
+        },
+        {
+            "name": "IBUKI",
+            "lat": 16.674583333333334,
+            "lon": 143.51519443333333
+        },
+        {
+            "name": "MAKOM",
+            "lat": 16.586722216666665,
+            "lon": 143.65377778333334
+        },
+        {
+            "name": "MKNB",
+            "lat": 16.587805566666667,
+            "lon": 143.65525
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FN11": "FN11 1200 RNW 11",
+                "MKNB": "OVERFLY MKNB TRK 116 UNTIL 1500 FAF FN11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "MK",
+                    "fixes": {
+                        "MKNB": "MKNB AT OR ABOVE 1500 TRK 312 UNTIL 7.5 FROM MKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FN29": "FN29 1200",
+                "MKNB": "MKNB 35 RNW 29 TRK 286 UNTIL 1500 FAF FN29 MAP MK"
+            },
+            "transitions": [
+                {
+                    "name": "MK",
+                    "fixes": {
+                        "MKNB": "MKNB AT OR ABOVE 1500 TRK 122 UNTIL 7.5 FROM MKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "AKARI": "AKARI AT OR ABOVE 1500",
+                "GM401": "GM401 1500 RNW 11 TRK 111 UNTIL 800 TURN RIGHT DIRECT",
+                "GM403": "GM403 AT OR ABOVE 1500",
+                "AKUSA": "AKUSA AT OR ABOVE 1500 FAF GM401 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "AKUSA",
+                    "fixes": {
+                        "AKUSA": "AKUSA AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "MAKOM",
+                    "fixes": {
+                        "MAKOM": "MAKOM AT OR ABOVE 1500",
+                        "GM403": "GM403 AT OR ABOVE 1500",
+                        "AKUSA": "AKUSA AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "IBUKI": "IBUKI AT OR ABOVE 1500",
+                "GM402": "GM402 1500 RNW 29 TRK 291 UNTIL 800 TURN RIGHT DIRECT",
+                "GM404": "GM404 AT OR ABOVE 1500",
+                "EGOVA": "EGOVA AT OR ABOVE 1500 FAF GM402 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "EGOVA",
+                    "fixes": {
+                        "EGOVA": "EGOVA AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "MAKOM",
+                    "fixes": {
+                        "MAKOM": "MAKOM AT OR ABOVE 1500",
+                        "GM404": "GM404 AT OR ABOVE 1500",
+                        "EGOVA": "EGOVA AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        }
+    ]
+}

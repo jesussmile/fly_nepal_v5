@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "CF21",
+            "lat": 31.566908333333334,
+            "lon": 60.739916666666666
+        },
+        {
+            "name": "D048J",
+            "lat": 31.585791666666665,
+            "lon": 60.683061116666664
+        },
+        {
+            "name": "EN03",
+            "lat": 31.721736116666666,
+            "lon": 60.813619433333336
+        },
+        {
+            "name": "EN21",
+            "lat": 31.702186116666667,
+            "lon": 60.80286666666667
+        },
+        {
+            "name": "FF03",
+            "lat": 31.820197216666667,
+            "lon": 60.882933333333334
+        },
+        {
+            "name": "FF21",
+            "lat": 31.597669433333333,
+            "lon": 60.755144433333335
+        },
+        {
+            "name": "FN21",
+            "lat": 31.583041666666666,
+            "lon": 60.757652783333334
+        },
+        {
+            "name": "SVONB",
+            "lat": 31.711444433333334,
+            "lon": 60.806386116666665
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 2500",
+                "FF21": "FF21 2300 RNW 21 HDG 211 UNTIL 3000 FAF FF21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "SVO",
+                    "fixes": {
+                        "SVONB": "SVONB",
+                        "D048J": "OVERFLY D048J"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FF03": "FF03 2300",
+                "EN03": "OVERFLY EN03 109",
+                "SVONB": "OVERFLY SVONB AT OR ABOVE 460 RNW 03 HDG 039 UNTIL 3000 FAF FF03 MAP SVO"
+            },
+            "transitions": [
+                {
+                    "name": "SVO",
+                    "fixes": {
+                        "SVONB": "SVONB SPEED 210 TRK 238 UNTIL 8.8 FROM SVONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FN21": "FN21 2500",
+                "EN21": "OVERFLY EN21 111",
+                "SVONB": "OVERFLY SVONB AT OR ABOVE 460 RNW 21 HDG 206 UNTIL 3000 FAF FN21 MAP SVO"
+            },
+            "transitions": [
+                {
+                    "name": "SVO",
+                    "fixes": {
+                        "SVONB": "SVONB SPEED 210 TRK 046 UNTIL 8.8 FROM SVONB"
+                    }
+                }
+            ]
+        }
+    ]
+}

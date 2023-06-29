@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "ESNAD",
+            "lat": 15.878305566666667,
+            "lon": 142.40708333333333
+        },
+        {
+            "name": "FITYO",
+            "lat": 15.886444433333333,
+            "lon": 142.49313888333333
+        },
+        {
+            "name": "FKO16",
+            "lat": 15.96975,
+            "lon": 142.48472221666665
+        },
+        {
+            "name": "FKO34",
+            "lat": 16.131166666666665,
+            "lon": 142.46844443333333
+        },
+        {
+            "name": "GUSED",
+            "lat": 16.206277783333334,
+            "lon": 142.37383333333332
+        },
+        {
+            "name": "IKONU",
+            "lat": 16.214444433333334,
+            "lon": 142.46002778333335
+        },
+        {
+            "name": "KO410",
+            "lat": 15.955944433333332,
+            "lon": 142.40136111666666
+        },
+        {
+            "name": "KO420",
+            "lat": 16.118083333333335,
+            "lon": 142.38525
+        },
+        {
+            "name": "RAXIP",
+            "lat": 16.045111116666668,
+            "lon": 142.47711111666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA16",
+            "fixes": {
+                "FITYO": "FITYO AT OR ABOVE 1500",
+                "FKO16": "FKO16 1500 RNW 16 TRK 162 UNTIL 1000 TURN LEFT DIRECT",
+                "KO410": "KO410",
+                "ESNAD": "ESNAD AT OR ABOVE 1500 FAF FKO16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "ESNAD",
+                    "fixes": {
+                        "ESNAD": "ESNAD AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "RAXIP",
+                    "fixes": {
+                        "RAXIP": "RAXIP AT OR ABOVE 1500",
+                        "KO410": "KO410",
+                        "ESNAD": "ESNAD AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB34",
+            "fixes": {
+                "IKONU": "IKONU AT OR ABOVE 1500",
+                "FKO34": "FKO34 1500 RNW 34 TRK 342 UNTIL 1000 TURN RIGHT DIRECT",
+                "KO420": "KO420",
+                "GUSED": "GUSED AT OR ABOVE 1500 FAF FKO34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GUSED",
+                    "fixes": {
+                        "GUSED": "GUSED AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "RAXIP",
+                    "fixes": {
+                        "RAXIP": "RAXIP AT OR ABOVE 1500",
+                        "KO420": "KO420",
+                        "GUSED": "GUSED AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        }
+    ]
+}

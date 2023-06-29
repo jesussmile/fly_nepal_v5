@@ -1,0 +1,187 @@
+{
+    "fixes": [
+        {
+            "name": "APE",
+            "lat": 40.151063883333336,
+            "lon": 82.5883
+        },
+        {
+            "name": "BOHEA",
+            "lat": 40.02755556666666,
+            "lon": 82.46468611666667
+        },
+        {
+            "name": "BUMLE",
+            "lat": 40.027633333333334,
+            "lon": 82.38853056666666
+        },
+        {
+            "name": "CFFBX",
+            "lat": 40.01448056666667,
+            "lon": 82.71940556666667
+        },
+        {
+            "name": "COGIT",
+            "lat": 40.07173611666666,
+            "lon": 82.50883888333334
+        },
+        {
+            "name": "HIBOR",
+            "lat": 40.02251388333333,
+            "lon": 82.51396666666666
+        },
+        {
+            "name": "PI001",
+            "lat": 40.01664998333333,
+            "lon": 82.66549351666667
+        },
+        {
+            "name": "PI002",
+            "lat": 40.064583533333334,
+            "lon": 82.7350837
+        },
+        {
+            "name": "PI003",
+            "lat": 40.010802166666664,
+            "lon": 82.80673486666667
+        },
+        {
+            "name": "PI004",
+            "lat": 40.19702168333333,
+            "lon": 82.6353178
+        },
+        {
+            "name": "PI005",
+            "lat": 40.26815358333333,
+            "lon": 82.62387133333333
+        },
+        {
+            "name": "PI006",
+            "lat": 40.28232128333333,
+            "lon": 82.72280586666666
+        },
+        {
+            "name": "PIRIC",
+            "lat": 40.01972778333333,
+            "lon": 82.58943056666666
+        },
+        {
+            "name": "PULPE",
+            "lat": 40.014238883333334,
+            "lon": 82.70996943333333
+        },
+        {
+            "name": "TAZHU",
+            "lat": 40.034652783333335,
+            "lon": 82.21078611666667
+        },
+        {
+            "name": "USEPE",
+            "lat": 40.029544433333335,
+            "lon": 82.34080556666666
+        },
+        {
+            "name": "VROWS",
+            "lat": 40.01976388333333,
+            "lon": 82.58001111666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC09",
+            "fixes": {
+                "CFFBX": "CFFBX AT OR ABOVE 2900",
+                "PIRIC": "PIRIC 2700 RNW 09 TRK 093 UNTIL 1290 TURN LEFT DIRECT",
+                "APE": "APE AT OR ABOVE 2900 HOLD AT APE LEFT TURN INBOUNDCOURSE 148 LEGTIME 1 FAF PIRIC MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "APE",
+                    "fixes": {
+                        "APE": "APE",
+                        "PIRIC": "PIRIC AT OR ABOVE 2900",
+                        "PI001": "PI001 AT OR ABOVE 2900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2900 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "PULPE": "PULPE AT OR ABOVE 3000",
+                "VROWS": "VROWS 2700",
+                "HIBOR": "HIBOR AT OR ABOVE 1640 RNW 09 TRK 093 UNTIL 1280",
+                "TAZHU": "OVERFLY TAZHU AT OR ABOVE 3000 HOLD AT TAZHU RIGHT TURN INBOUNDCOURSE 273 LEGDIST 4 FAF VROWS MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "PULPE",
+                    "fixes": {
+                        "PULPE": "PULPE RIGHT TURN INBOUNDCOURSE 093 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "TAZHU": "TAZHU AT OR ABOVE 3000",
+                "USEPE": "USEPE 2700",
+                "BUMLE": "BUMLE AT OR ABOVE 1940 RNW 27 TRK 273 UNTIL 2000",
+                "APE": "OVERFLY APE AT OR ABOVE 3000 HOLD AT APE LEFT TURN INBOUNDCOURSE 148 LEGDIST 4 FAF USEPE MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "TAZHU",
+                    "fixes": {
+                        "TAZHU": "TAZHU RIGHT TURN INBOUNDCOURSE 273 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA09",
+            "fixes": {
+                "APE": "APE 3000 APE HOLD AT APE LEFT TURN INBOUNDCOURSE 148 LEGTIME 1 FAF APE MAP BOHEA",
+                "COGIT": "COGIT AT OR ABOVE 1980",
+                "BOHEA": "BOHEA 1760 RNW 09 TRK 148 UNTIL 3000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "APE",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA27",
+            "fixes": {
+                "APE": "APE 3000 APE HOLD AT APE LEFT TURN INBOUNDCOURSE 148 LEGTIME 1 FAF APE MAP BOHEA",
+                "COGIT": "COGIT AT OR ABOVE 1980",
+                "BOHEA": "BOHEA 1760 RNW 27 TRK 148 UNTIL 3000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "APE",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

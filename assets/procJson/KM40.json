@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "BECER",
+            "lat": 33.985708333333335,
+            "lon": 88.48212221666667
+        },
+        {
+            "name": "CUBRO",
+            "lat": 33.78171388333333,
+            "lon": 88.50163056666666
+        },
+        {
+            "name": "GUGLE",
+            "lat": 33.68195,
+            "lon": 88.51456111666667
+        },
+        {
+            "name": "IGB",
+            "lat": 33.485486116666664,
+            "lon": 88.51358888333333
+        },
+        {
+            "name": "OTB",
+            "lat": 34.22383056666666,
+            "lon": 88.79735833333334
+        },
+        {
+            "name": "PI001",
+            "lat": 34.04396166666667,
+            "lon": 88.48580663333334
+        },
+        {
+            "name": "PI002",
+            "lat": 34.0972068,
+            "lon": 88.42789686666667
+        },
+        {
+            "name": "PI003",
+            "lat": 34.15214613333333,
+            "lon": 88.49266255
+        },
+        {
+            "name": "PIYIG",
+            "lat": 33.965925,
+            "lon": 88.47767778333333
+        },
+        {
+            "name": "VEPPU",
+            "lat": 34.06499443333333,
+            "lon": 88.46475556666667
+        },
+        {
+            "name": "YOYVO",
+            "lat": 33.91380278333333,
+            "lon": 88.48446666666666
+        },
+        {
+            "name": "ZILAK",
+            "lat": 33.83696943333333,
+            "lon": 88.49445833333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "VEPPU": "VEPPU AT OR ABOVE 2000 OVERFLY VEPPU AT OR ABOVE 2000 HOLD AT VEPPU RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF PIYIG MAP RNW 18",
+                "PIYIG": "PIYIG 1900",
+                "YOYVO": "YOYVO AT OR ABOVE 900 RNW 18 TRK 188 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "VEPPU",
+                    "fixes": {
+                        "VEPPU": "VEPPU RIGHT TURN INBOUNDCOURSE 188 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "GUGLE": "GUGLE AT OR ABOVE 2000",
+                "CUBRO": "CUBRO 1900",
+                "ZILAK": "ZILAK AT OR ABOVE 840 RNW 36 TRK 008 UNTIL 506",
+                "VEPPU": "OVERFLY VEPPU AT OR ABOVE 2000 HOLD AT VEPPU RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF CUBRO MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "GUGLE",
+                    "fixes": {
+                        "GUGLE": "GUGLE LEFT TURN INBOUNDCOURSE 008 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR18",
+            "fixes": {
+                "BECER": "BECER 2300 RNW 18 TRK 179 UNTIL 630 TURN LEFT DIRECT BECER AT OR ABOVE 2300 HOLD AT BECER LEFT TURN INBOUNDCOURSE 179 LEGTIME 1 FAF BECER MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "IGB": "IGB",
+                        "BECER": "BECER AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "OTB",
+                    "fixes": {
+                        "OTB": "OTB",
+                        "BECER": "BECER AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

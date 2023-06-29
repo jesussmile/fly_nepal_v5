@@ -1,0 +1,248 @@
+{
+    "fixes": [
+        {
+            "name": "BRL",
+            "lat": 40.723455566666665,
+            "lon": 90.92588888333333
+        },
+        {
+            "name": "CIMOD",
+            "lat": 40.307952783333334,
+            "lon": 91.277025
+        },
+        {
+            "name": "COBUK",
+            "lat": 40.453038883333335,
+            "lon": 91.54993611666667
+        },
+        {
+            "name": "CUMBU",
+            "lat": 40.463430566666666,
+            "lon": 91.36922221666667
+        },
+        {
+            "name": "EBSER",
+            "lat": 40.482511116666664,
+            "lon": 91.02232778333334
+        },
+        {
+            "name": "HAVLU",
+            "lat": 40.610711116666664,
+            "lon": 91.58765278333334
+        },
+        {
+            "name": "JANLI",
+            "lat": 40.66223611666667,
+            "lon": 91.50158611666667
+        },
+        {
+            "name": "JOBEM",
+            "lat": 40.39130556666667,
+            "lon": 91.16371666666667
+        },
+        {
+            "name": "JOLAB",
+            "lat": 40.53203056666667,
+            "lon": 91.50656943333334
+        },
+        {
+            "name": "LOAMY",
+            "lat": 40.42453056666667,
+            "lon": 91.7844
+        },
+        {
+            "name": "OCALU",
+            "lat": 40.559122216666665,
+            "lon": 91.67358611666667
+        },
+        {
+            "name": "PI001",
+            "lat": 40.471335583333335,
+            "lon": 91.2243478
+        },
+        {
+            "name": "PI002",
+            "lat": 40.52540663333333,
+            "lon": 91.16249218333333
+        },
+        {
+            "name": "PI003",
+            "lat": 40.47871191666667,
+            "lon": 91.08226353333333
+        },
+        {
+            "name": "RITOY",
+            "lat": 40.44535,
+            "lon": 91.68053888333333
+        },
+        {
+            "name": "SACOV",
+            "lat": 40.386797216666665,
+            "lon": 91.35756388333333
+        },
+        {
+            "name": "SLAPS",
+            "lat": 40.46729166666667,
+            "lon": 91.30084166666667
+        },
+        {
+            "name": "UIN",
+            "lat": 39.847875,
+            "lon": 91.278925
+        },
+        {
+            "name": "WAREV",
+            "lat": 40.362208333333335,
+            "lon": 91.67208056666666
+        },
+        {
+            "name": "ZAKMI",
+            "lat": 40.474463883333335,
+            "lon": 91.17185556666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 14",
+        "RNW 26",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS26",
+            "fixes": {
+                "EBSER": "EBSER AT OR ABOVE 2400",
+                "SLAPS": "SLAPS 2400 RNW 26 TRK 264 UNTIL 2600 TURN RIGHT DIRECT",
+                "BRL": "BRL HOLD AT BRL RIGHT TURN INBOUNDCOURSE 129 LEGTIME 1 FAF SLAPS MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "SLAPS",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "RITOY": "RITOY AT OR ABOVE 2700",
+                "COBUK": "COBUK 2400 RNW 08 TRK 084 UNTIL 921",
+                "ZAKMI": "OVERFLY ZAKMI AT OR ABOVE 2700 HOLD AT ZAKMI RIGHT TURN INBOUNDCOURSE 264 LEGDIST 5 FAF COBUK MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "LOAMY",
+                    "fixes": {
+                        "LOAMY": "LOAMY"
+                    }
+                },
+                {
+                    "name": "RITOY",
+                    "fixes": {
+                        "RITOY": "RITOY RIGHT TURN INBOUNDCOURSE 084 ALT 2700 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "UIN",
+                    "fixes": {
+                        "UIN": "UIN",
+                        "WAREV": "WAREV AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "HAVLU": "HAVLU AT OR ABOVE 2400",
+                "JOLAB": "JOLAB 2400 RNW 14 TRK 140 UNTIL 949",
+                "CIMOD": "OVERFLY CIMOD AT OR ABOVE 2700 HOLD AT CIMOD RIGHT TURN INBOUNDCOURSE 320 LEGDIST 5 FAF JOLAB MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "BRL",
+                    "fixes": {
+                        "BRL": "BRL",
+                        "JANLI": "JANLI AT OR ABOVE 2400"
+                    }
+                },
+                {
+                    "name": "HAVLU",
+                    "fixes": {
+                        "HAVLU": "HAVLU RIGHT TURN INBOUNDCOURSE 140 ALT 2400 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "LOAMY",
+                    "fixes": {
+                        "LOAMY": "LOAMY",
+                        "OCALU": "OCALU AT OR ABOVE 2400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "ZAKMI": "ZAKMI AT OR ABOVE 2700",
+                "SLAPS": "SLAPS 2400",
+                "CUMBU": "CUMBU AT OR ABOVE 1400 RNW 26 TRK 264 UNTIL 871",
+                "RITOY": "OVERFLY RITOY AT OR ABOVE 2700 HOLD AT RITOY RIGHT TURN INBOUNDCOURSE 084 LEGDIST 4 FAF SLAPS MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "EBSER",
+                    "fixes": {
+                        "EBSER": "EBSER"
+                    }
+                },
+                {
+                    "name": "JOBEM",
+                    "fixes": {
+                        "JOBEM": "JOBEM SPEED 210"
+                    }
+                },
+                {
+                    "name": "ZAKMI",
+                    "fixes": {
+                        "ZAKMI": "ZAKMI RIGHT TURN INBOUNDCOURSE 264 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "CIMOD": "CIMOD AT OR ABOVE 2700",
+                "SACOV": "SACOV 2400 RNW 32 TRK 320 UNTIL 921",
+                "HAVLU": "OVERFLY HAVLU AT OR ABOVE 2400 HOLD AT HAVLU RIGHT TURN INBOUNDCOURSE 140 LEGDIST 5 FAF SACOV MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "CIMOD",
+                    "fixes": {
+                        "CIMOD": "CIMOD RIGHT TURN INBOUNDCOURSE 320 ALT 2700 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "EBSER",
+                    "fixes": {
+                        "EBSER": "EBSER"
+                    }
+                },
+                {
+                    "name": "UIN",
+                    "fixes": {
+                        "UIN": "UIN"
+                    }
+                }
+            ]
+        }
+    ]
+}

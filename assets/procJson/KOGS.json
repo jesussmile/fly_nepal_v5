@@ -1,0 +1,134 @@
+{
+    "fixes": [
+        {
+            "name": "CFCGN",
+            "lat": 44.717230566666665,
+            "lon": 75.26220556666667
+        },
+        {
+            "name": "HOKVU",
+            "lat": 44.79343611666667,
+            "lon": 75.79722221666667
+        },
+        {
+            "name": "KOCET",
+            "lat": 44.733066666666666,
+            "lon": 75.17516388333334
+        },
+        {
+            "name": "LETUS",
+            "lat": 44.622872216666664,
+            "lon": 75.45317778333333
+        },
+        {
+            "name": "MIMDE",
+            "lat": 44.671652783333336,
+            "lon": 75.52278888333333
+        },
+        {
+            "name": "OGIVE",
+            "lat": 44.701775,
+            "lon": 75.35303888333334
+        },
+        {
+            "name": "POTIC",
+            "lat": 44.70394721666667,
+            "lon": 75.34069721666667
+        },
+        {
+            "name": "SSENA",
+            "lat": 44.914286116666666,
+            "lon": 74.72258611666666
+        },
+        {
+            "name": "WILRD",
+            "lat": 44.262113883333335,
+            "lon": 75.7842
+        },
+        {
+            "name": "WOROS",
+            "lat": 44.69521666666667,
+            "lon": 75.39010278333333
+        },
+        {
+            "name": "YUSUB",
+            "lat": 44.632677783333335,
+            "lon": 75.740175
+        },
+        {
+            "name": "ZODPO",
+            "lat": 44.66021943333333,
+            "lon": 75.58684166666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC27",
+            "fixes": {
+                "CFCGN": "CFCGN AT OR ABOVE 1900",
+                "OGIVE": "OGIVE 1900 RNW 27 TRK 269 UNTIL 710 TURN LEFT DIRECT OGIVE AT OR ABOVE 2000 HOLD AT OGIVE LEFT TURN INBOUNDCOURSE 269 LEGTIME 1 FAF OGIVE MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "LETUS",
+                    "fixes": {
+                        "LETUS": "LETUS",
+                        "OGIVE": "OGIVE AT OR ABOVE 2000 HOLD AT OGIVE LEFT TURN INBOUNDCOURSE 269 ALT 1900 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "YUSUB": "YUSUB AT OR ABOVE 3100",
+                "ZODPO": "ZODPO 1900",
+                "MIMDE": "MIMDE AT OR ABOVE 1000 RNW 09 TRK 089 UNTIL 543",
+                "KOCET": "OVERFLY KOCET AT OR ABOVE 2000 HOLD AT KOCET LEFT TURN INBOUNDCOURSE 269 LEGDIST 4 FAF ZODPO MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "HOKVU",
+                    "fixes": {
+                        "HOKVU": "HOKVU"
+                    }
+                },
+                {
+                    "name": "WILRD",
+                    "fixes": {
+                        "WILRD": "WILRD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "KOCET": "KOCET AT OR ABOVE 2000 OVERFLY KOCET AT OR ABOVE 2000 HOLD AT KOCET LEFT TURN INBOUNDCOURSE 269 LEGDIST 4 FAF POTIC MAP RNW 27",
+                "POTIC": "POTIC 1900",
+                "WOROS": "WOROS AT OR ABOVE 1200 RNW 27 TRK 269 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LETUS",
+                    "fixes": {
+                        "LETUS": "LETUS",
+                        "KOCET": "OVERFLY KOCET AT OR ABOVE 2000 HOLD AT KOCET LEFT TURN INBOUNDCOURSE 269 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SSENA",
+                    "fixes": {
+                        "SSENA": "SSENA"
+                    }
+                }
+            ]
+        }
+    ]
+}

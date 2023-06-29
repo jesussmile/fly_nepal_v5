@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "ANPAF",
+            "lat": 70.17845278333333,
+            "lon": 151.25466943333333
+        },
+        {
+            "name": "BIQFI",
+            "lat": 70.14285556666667,
+            "lon": 151.53205
+        },
+        {
+            "name": "CEDUN",
+            "lat": 70.42656388333333,
+            "lon": 152.03835
+        },
+        {
+            "name": "ETFAF",
+            "lat": 70.241,
+            "lon": 150.75641943333332
+        },
+        {
+            "name": "EVUBY",
+            "lat": 70.19492778333333,
+            "lon": 151.12480833333333
+        },
+        {
+            "name": "FIKOR",
+            "lat": 70.22351111666667,
+            "lon": 150.89718056666666
+        },
+        {
+            "name": "IQUQU",
+            "lat": 70.27524166666667,
+            "lon": 150.47750833333333
+        },
+        {
+            "name": "ZADRO",
+            "lat": 70.21938056666667,
+            "lon": 150.20105
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "BIQFI": "BIQFI AT OR ABOVE 1700",
+                "ANPAF": "ANPAF 1700",
+                "EVUBY": "EVUBY AT OR ABOVE 780 RNW 05 TRK 048 UNTIL 294",
+                "IQUQU": "OVERFLY IQUQU AT OR ABOVE 1700 HOLD AT IQUQU RIGHT TURN INBOUNDCOURSE 229 LEGDIST 4 FAF ANPAF MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "CEDUN",
+                    "fixes": {
+                        "CEDUN": "CEDUN"
+                    }
+                },
+                {
+                    "name": "ZADRO",
+                    "fixes": {
+                        "ZADRO": "ZADRO",
+                        "BIQFI": "OVERFLY BIQFI AT OR ABOVE 1700 HOLD AT BIQFI RIGHT TURN INBOUNDCOURSE 048 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "IQUQU": "IQUQU AT OR ABOVE 1700",
+                "ETFAF": "ETFAF 1700",
+                "FIKOR": "FIKOR AT OR ABOVE 720 RNW 23 TRK 229 UNTIL 288",
+                "BIQFI": "OVERFLY BIQFI AT OR ABOVE 1700 HOLD AT BIQFI RIGHT TURN INBOUNDCOURSE 048 LEGDIST 4 FAF ETFAF MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "CEDUN",
+                    "fixes": {
+                        "CEDUN": "CEDUN",
+                        "IQUQU": "OVERFLY IQUQU AT OR ABOVE 1700 HOLD AT IQUQU RIGHT TURN INBOUNDCOURSE 229 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZADRO",
+                    "fixes": {
+                        "ZADRO": "ZADRO"
+                    }
+                }
+            ]
+        }
+    ]
+}

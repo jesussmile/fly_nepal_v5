@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "CAAHL",
+            "lat": 42.39563888333333,
+            "lon": 72.91463333333333
+        },
+        {
+            "name": "CEKLU",
+            "lat": 42.38062778333333,
+            "lon": 72.70341666666667
+        },
+        {
+            "name": "CTR",
+            "lat": 42.291319433333335,
+            "lon": 72.94939443333334
+        },
+        {
+            "name": "EXBEB",
+            "lat": 42.410105566666665,
+            "lon": 72.75518333333333
+        },
+        {
+            "name": "GRABB",
+            "lat": 42.40340556666666,
+            "lon": 72.56346111666667
+        },
+        {
+            "name": "HHEPP",
+            "lat": 42.52798056666666,
+            "lon": 72.77768333333333
+        },
+        {
+            "name": "MA219",
+            "lat": 42.343063883333336,
+            "lon": 72.60175556666667
+        },
+        {
+            "name": "SMUTZ",
+            "lat": 42.46183056666667,
+            "lon": 72.84623056666666
+        },
+        {
+            "name": "TEDEE",
+            "lat": 42.47881666666667,
+            "lon": 72.51548888333333
+        },
+        {
+            "name": "WARIC",
+            "lat": 42.62833333333333,
+            "lon": 72.51047778333333
+        },
+        {
+            "name": "ZALON",
+            "lat": 42.36335,
+            "lon": 72.67311666666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDB14",
+            "fixes": {
+                "TEDEE": "TEDEE AT OR ABOVE 3000",
+                "GRABB": "GRABB 2500",
+                "MA219": "MA219 1400 RNW 14",
+                "CTR": "CTR AT OR ABOVE 4000 HOLD AT CTR RIGHT TURN INBOUNDCOURSE 275 LEGTIME 1 FAF GRABB MAP MA219"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORDB32",
+            "fixes": {
+                "TEDEE": "TEDEE AT OR ABOVE 3000",
+                "GRABB": "GRABB 2500",
+                "MA219": "MA219 1400 RNW 32",
+                "CTR": "CTR AT OR ABOVE 4000 HOLD AT CTR RIGHT TURN INBOUNDCOURSE 275 LEGTIME 1 FAF GRABB MAP MA219"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "SMUTZ": "SMUTZ AT OR ABOVE 3500",
+                "EXBEB": "EXBEB 2700",
+                "CEKLU": "CEKLU AT OR ABOVE 1740",
+                "ZALON": "ZALON AT OR ABOVE 1180 RNW 14 TRK 143 UNTIL 521 TURN LEFT DIRECT",
+                "GRABB": "OVERFLY GRABB AT OR ABOVE 3000 HOLD AT GRABB RIGHT TURN INBOUNDCOURSE 264 LEGDIST 4 FAF EXBEB MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "CTR",
+                    "fixes": {
+                        "CTR": "CTR",
+                        "CAAHL": "CAAHL AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "WARIC",
+                    "fixes": {
+                        "WARIC": "WARIC",
+                        "HHEPP": "HHEPP AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

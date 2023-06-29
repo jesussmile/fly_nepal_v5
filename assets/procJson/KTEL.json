@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "APALO",
+            "lat": 38.00571943333333,
+            "lon": 86.85979721666666
+        },
+        {
+            "name": "FOMUV",
+            "lat": 37.87783056666667,
+            "lon": 86.50725
+        },
+        {
+            "name": "GADGE",
+            "lat": 38.07930833333333,
+            "lon": 86.77214443333334
+        },
+        {
+            "name": "HOLAN",
+            "lat": 38.12672778333334,
+            "lon": 87.14053611666667
+        },
+        {
+            "name": "JISNI",
+            "lat": 37.95656666666667,
+            "lon": 86.61049721666667
+        },
+        {
+            "name": "LOONE",
+            "lat": 37.737341666666666,
+            "lon": 86.75500556666667
+        },
+        {
+            "name": "MEALY",
+            "lat": 38.14855,
+            "lon": 86.86365833333333
+        },
+        {
+            "name": "MYS",
+            "lat": 37.89406666666667,
+            "lon": 86.24452778333334
+        },
+        {
+            "name": "RIBIW",
+            "lat": 37.81051943333333,
+            "lon": 86.588975
+        },
+        {
+            "name": "SACKO",
+            "lat": 38.257266666666666,
+            "lon": 86.72384166666667
+        },
+        {
+            "name": "UCUCU",
+            "lat": 37.990394433333336,
+            "lon": 86.65496111666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "MEALY": "MEALY AT OR ABOVE 2500",
+                "GADGE": "GADGE 2200 RNW 13 TRK 136 UNTIL 1000",
+                "FOMUV": "OVERFLY FOMUV AT OR ABOVE 2500 HOLD AT FOMUV RIGHT TURN INBOUNDCOURSE 316 LEGDIST 4 FAF GADGE MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "HOLAN",
+                    "fixes": {
+                        "HOLAN": "HOLAN"
+                    }
+                },
+                {
+                    "name": "SACKO",
+                    "fixes": {
+                        "SACKO": "SACKO",
+                        "MEALY": "OVERFLY MEALY AT OR ABOVE 2500 HOLD AT MEALY RIGHT TURN INBOUNDCOURSE 136 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "FOMUV": "FOMUV AT OR ABOVE 2500",
+                "JISNI": "JISNI 2300",
+                "UCUCU": "UCUCU AT OR ABOVE 1360 RNW 31 TRK 316 UNTIL 1020",
+                "MEALY": "OVERFLY MEALY AT OR ABOVE 2500 HOLD AT MEALY RIGHT TURN INBOUNDCOURSE 136 LEGDIST 4 FAF JISNI MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "APALO",
+                    "fixes": {
+                        "APALO": "APALO",
+                        "FOMUV": "OVERFLY FOMUV AT OR ABOVE 2500 HOLD AT FOMUV RIGHT TURN INBOUNDCOURSE 316 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LOONE",
+                    "fixes": {
+                        "LOONE": "LOONE",
+                        "RIBIW": "RIBIW AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "MYS",
+                    "fixes": {
+                        "MYS": "MYS"
+                    }
+                }
+            ]
+        }
+    ]
+}

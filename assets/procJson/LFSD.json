@@ -1,0 +1,171 @@
+{
+    "fixes": [
+        {
+            "name": "25VOR",
+            "lat": 47.311908333333335,
+            "lon": 5.08775
+        },
+        {
+            "name": "39VOR",
+            "lat": 47.20584721666667,
+            "lon": 5.1006583333333335
+        },
+        {
+            "name": "50VOR",
+            "lat": 47.35304166666667,
+            "lon": 5.0781583333333336
+        },
+        {
+            "name": "DJL",
+            "lat": 47.27077778333334,
+            "lon": 5.097333333333333
+        },
+        {
+            "name": "FD17",
+            "lat": 47.38758333333333,
+            "lon": 5.070083333333334
+        },
+        {
+            "name": "FF35",
+            "lat": 47.18088888333333,
+            "lon": 5.101944433333333
+        },
+        {
+            "name": "FSD35",
+            "lat": 47.169611116666665,
+            "lon": 5.107333333333333
+        },
+        {
+            "name": "ISD35",
+            "lat": 47.08661111666667,
+            "lon": 5.117972216666667
+        },
+        {
+            "name": "MD17",
+            "lat": 47.287230566666665,
+            "lon": 5.093502783333333
+        },
+        {
+            "name": "SD403",
+            "lat": 47.34466666666667,
+            "lon": 5.084833333333333
+        },
+        {
+            "name": "SD406",
+            "lat": 47.103527783333334,
+            "lon": 5.237777783333334
+        },
+        {
+            "name": "SD411",
+            "lat": 47.08180556666667,
+            "lon": 4.996166666666666
+        },
+        {
+            "name": "SD412",
+            "lat": 47.172305566666665,
+            "lon": 4.984555566666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 17",
+        "RNW 19",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "FD17": "FD17 2900",
+                "50VOR": "50VOR AT OR ABOVE 2240",
+                "25VOR": "25VOR AT OR ABOVE 1450",
+                "MD17": "MD17 978 RNW 17 TRK 169 UNTIL 4.5 FROM",
+                "DJL": "DJL TURN LEFT DIRECT DJL 3000 SPEED 220 FAF FD17 MAP MD17"
+            },
+            "transitions": [
+                {
+                    "name": "DJL1",
+                    "fixes": {
+                        "DJL": "DJL TRK 009 UNTIL 10.0 FROM DJL"
+                    }
+                },
+                {
+                    "name": "DJL2",
+                    "fixes": {
+                        "DJL": "DJL TRK 001 UNTIL 10.0 FROM DJL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ35",
+            "fixes": {
+                "FF35": "FF35 2200",
+                "39VOR": "39VOR AT OR ABOVE 1720 RNW 35",
+                "DJL": "DJL TRK 356 UNTIL 4.5 FROM DJL TURN RIGHT DIRECT DJL 3000 SPEED 200 FAF FF35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "DJL1",
+                    "fixes": {
+                        "DJL": "DJL TRK 196 UNTIL 10.0 FROM DJL"
+                    }
+                },
+                {
+                    "name": "DJL2",
+                    "fixes": {
+                        "DJL": "DJL TRK 191 UNTIL 8.0 FROM DJL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ISD35": "ISD35 AT OR ABOVE 2400 SPEED 220 ISD35 2400 SPEED 220 FAF FSD35 MAP RNW 35",
+                "FSD35": "FSD35 2400 RNW 35",
+                "SD403": "OVERFLY SD403 SPEED 230 TURN RIGHT DIRECT",
+                "SD406": "SD406 AT OR BELOW 2500 SPEED 200"
+            },
+            "transitions": [
+                {
+                    "name": "DJL",
+                    "fixes": {
+                        "DJL": "DJL AT OR ABOVE 3500",
+                        "SD412": "SD412 AT OR BELOW 3000",
+                        "SD411": "SD411"
+                    }
+                },
+                {
+                    "name": "SD411",
+                    "fixes": {
+                        "SD411": "SD411"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY35",
+            "fixes": {
+                "FF35": "FF35 2200 RNW 35",
+                "DJL": "OVERFLY DJL TRK 356 UNTIL 1700 TURN RIGHT DIRECT DJL 3000 SPEED 220 FAF FF35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "DJL1",
+                    "fixes": {
+                        "DJL": "DJL TRK 197 UNTIL 8.8 FROM DJL"
+                    }
+                },
+                {
+                    "name": "DJL2",
+                    "fixes": {
+                        "DJL": "DJL TRK 190 UNTIL 7.0 FROM DJL"
+                    }
+                }
+            ]
+        }
+    ]
+}

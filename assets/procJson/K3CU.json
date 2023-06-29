@@ -1,0 +1,73 @@
+{
+    "fixes": [
+        {
+            "name": "ARAFE",
+            "lat": 46.0998,
+            "lon": 91.20957221666667
+        },
+        {
+            "name": "CYETT",
+            "lat": 46.02851388333333,
+            "lon": 91.1819
+        },
+        {
+            "name": "GRASS",
+            "lat": 46.352811116666665,
+            "lon": 91.11468888333333
+        },
+        {
+            "name": "ONAVE",
+            "lat": 46.00018333333333,
+            "lon": 91.33193056666667
+        },
+        {
+            "name": "POYSI",
+            "lat": 46.05664721666667,
+            "lon": 91.03171666666667
+        },
+        {
+            "name": "QESCA",
+            "lat": 45.59181388333333,
+            "lon": 91.73655
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 17",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "CYETT": "CYETT AT OR ABOVE 3200 OVERFLY CYETT AT OR ABOVE 3200 HOLD AT CYETT RIGHT TURN INBOUNDCOURSE 347 LEGDIST 4 FAF ARAFE MAP RNW 35",
+                "ARAFE": "ARAFE 3200 RNW 35 TRK 347 UNTIL 3200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CYETT",
+                    "fixes": {
+                        "CYETT": "CYETT RIGHT TURN INBOUNDCOURSE 347 ALT 3200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GRASS",
+                    "fixes": {
+                        "GRASS": "GRASS",
+                        "POYSI": "POYSI AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "QESCA",
+                    "fixes": {
+                        "QESCA": "QESCA",
+                        "ONAVE": "ONAVE AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        }
+    ]
+}

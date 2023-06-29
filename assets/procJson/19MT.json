@@ -1,0 +1,251 @@
+{
+    "fixes": [
+        {
+            "name": "BGSPR",
+            "lat": 46.719197216666664,
+            "lon": 108.93038056666667
+        },
+        {
+            "name": "BIL",
+            "lat": 45.80855833333333,
+            "lon": 108.62464721666667
+        },
+        {
+            "name": "BLLDY",
+            "lat": 46.818477783333336,
+            "lon": 109.01668611666666
+        },
+        {
+            "name": "BNNDR",
+            "lat": 46.87738611666666,
+            "lon": 108.57706388333334
+        },
+        {
+            "name": "ENNBR",
+            "lat": 46.87574443333333,
+            "lon": 108.78249166666667
+        },
+        {
+            "name": "ESTRO",
+            "lat": 46.952616666666664,
+            "lon": 109.01045833333333
+        },
+        {
+            "name": "GAPPP",
+            "lat": 46.79591943333333,
+            "lon": 109.10828056666666
+        },
+        {
+            "name": "GRANG",
+            "lat": 47.01033056666667,
+            "lon": 108.72313611666667
+        },
+        {
+            "name": "GROEV",
+            "lat": 46.98367221666667,
+            "lon": 109.19260833333334
+        },
+        {
+            "name": "HEETH",
+            "lat": 46.994311116666665,
+            "lon": 109.25556111666667
+        },
+        {
+            "name": "KRYEK",
+            "lat": 46.89347778333333,
+            "lon": 109.22784721666666
+        },
+        {
+            "name": "LWT",
+            "lat": 47.05296943333333,
+            "lon": 109.60616943333333
+        },
+        {
+            "name": "MLS",
+            "lat": 46.382227783333335,
+            "lon": 105.95353333333334
+        },
+        {
+            "name": "MTANA",
+            "lat": 46.903522216666666,
+            "lon": 108.66799721666666
+        },
+        {
+            "name": "RDHIL",
+            "lat": 46.806705566666665,
+            "lon": 109.20404443333334
+        },
+        {
+            "name": "RNNCH",
+            "lat": 46.85984166666667,
+            "lon": 108.84777221666667
+        },
+        {
+            "name": "SFORK",
+            "lat": 46.590547216666664,
+            "lon": 108.886625
+        },
+        {
+            "name": "SHELA",
+            "lat": 46.12331111666666,
+            "lon": 108.72918333333334
+        },
+        {
+            "name": "SNOEZ",
+            "lat": 46.847913883333334,
+            "lon": 109.24244166666666
+        },
+        {
+            "name": "WLCOM",
+            "lat": 46.79668888333333,
+            "lon": 108.613075
+        },
+        {
+            "name": "WLLLO",
+            "lat": 46.846941666666666,
+            "lon": 108.40429721666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "BNNDR1",
+            "rnw": "06",
+            "fixes": {
+                "BNNDR": "BNNDR",
+                "MLS": "MLS 9000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SFORK1",
+            "rnw": "06",
+            "fixes": {
+                "SFORK": "SFORK",
+                "SHELA": "SHELA",
+                "BIL": "BIL 8000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SNOEZ1",
+            "rnw": "24",
+            "fixes": {
+                "SNOEZ": "SNOEZ AT OR ABOVE 8600 SPEED 210"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ESTRO",
+                    "fixes": [
+                        "GROEV",
+                        "ESTRO"
+                    ]
+                },
+                {
+                    "name": "LWT",
+                    "fixes": [
+                        "HEETH",
+                        "LWT"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "RDHIL": "RDHIL AT OR ABOVE 8000",
+                "GAPPP": "GAPPP 7800",
+                "BLLDY": "BLLDY AT OR ABOVE 5900 RNW 06 TRK 059 UNTIL 6500",
+                "WLCOM": "OVERFLY WLCOM AT OR ABOVE 8000 HOLD AT WLCOM LEFT TURN INBOUNDCOURSE 330 LEGDIST 7 FAF GAPPP MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "GROEV",
+                    "fixes": {
+                        "GROEV": "GROEV SPEED 210",
+                        "KRYEK": "KRYEK AT OR ABOVE 8300"
+                    }
+                },
+                {
+                    "name": "HEETH",
+                    "fixes": {
+                        "HEETH": "HEETH SPEED 210",
+                        "KRYEK": "KRYEK AT OR ABOVE 8300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVM24",
+            "fixes": {
+                "MTANA": "MTANA AT OR ABOVE 6400",
+                "ENNBR": "ENNBR 6400",
+                "RNNCH": "RNNCH AT OR ABOVE 5480 RNW 24 TRK 239 UNTIL 6700 TURN LEFT DIRECT",
+                "WLCOM": "OVERFLY WLCOM AT OR ABOVE 8000 HOLD AT WLCOM LEFT TURN INBOUNDCOURSE 330 LEGDIST 7 FAF ENNBR MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "BGSPR",
+                    "fixes": {
+                        "BGSPR": "BGSPR SPEED 210",
+                        "WLCOM": "WLCOM AT OR ABOVE 7200"
+                    }
+                },
+                {
+                    "name": "ESTRO",
+                    "fixes": {
+                        "ESTRO": "ESTRO SPEED 210",
+                        "GRANG": "GRANG AT OR ABOVE 7300"
+                    }
+                },
+                {
+                    "name": "WLLLO",
+                    "fixes": {
+                        "WLLLO": "WLLLO SPEED 210",
+                        "WLCOM": "WLCOM AT OR ABOVE 7200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVP24",
+            "fixes": {
+                "MTANA": "MTANA AT OR ABOVE 6400",
+                "ENNBR": "ENNBR 6400 RNW 24 TRK 239 UNTIL 6700 TURN LEFT DIRECT",
+                "WLCOM": "OVERFLY WLCOM AT OR ABOVE 8000 HOLD AT WLCOM LEFT TURN INBOUNDCOURSE 330 LEGDIST 7 FAF ENNBR MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "BGSPR",
+                    "fixes": {
+                        "BGSPR": "BGSPR SPEED 210",
+                        "WLCOM": "WLCOM AT OR ABOVE 7200"
+                    }
+                },
+                {
+                    "name": "ESTRO",
+                    "fixes": {
+                        "ESTRO": "ESTRO SPEED 210",
+                        "GRANG": "GRANG AT OR ABOVE 7300"
+                    }
+                },
+                {
+                    "name": "WLLLO",
+                    "fixes": {
+                        "WLLLO": "WLLLO SPEED 210",
+                        "WLCOM": "WLCOM AT OR ABOVE 7200"
+                    }
+                }
+            ]
+        }
+    ]
+}

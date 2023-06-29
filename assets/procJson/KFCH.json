@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "EMEVE",
+            "lat": 36.71173056666667,
+            "lon": 119.78505278333333
+        },
+        {
+            "name": "EWNEL",
+            "lat": 36.78265833333333,
+            "lon": 119.90791666666667
+        },
+        {
+            "name": "FRAME",
+            "lat": 36.61298333333333,
+            "lon": 119.67375833333334
+        },
+        {
+            "name": "NAHNT",
+            "lat": 36.93419443333333,
+            "lon": 119.92868056666667
+        },
+        {
+            "name": "NIVEE",
+            "lat": 37.03572221666667,
+            "lon": 119.73829721666667
+        },
+        {
+            "name": "PHYLA",
+            "lat": 36.74954721666667,
+            "lon": 120.09288333333333
+        },
+        {
+            "name": "SEMAH",
+            "lat": 36.6787,
+            "lon": 119.72798888333334
+        },
+        {
+            "name": "SIPZY",
+            "lat": 36.8419,
+            "lon": 120.01088056666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "SIPZY": "SIPZY AT OR ABOVE 3000",
+                "EWNEL": "EWNEL 1900 RNW 12 TRK 111 UNTIL 800",
+                "FRAME": "OVERFLY FRAME AT OR ABOVE 2000 HOLD AT FRAME LEFT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF EWNEL MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "NIVEE",
+                    "fixes": {
+                        "NIVEE": "NIVEE",
+                        "NAHNT": "NAHNT AT OR ABOVE 3300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "PHYLA",
+                    "fixes": {
+                        "PHYLA": "PHYLA SPEED 210"
+                    }
+                },
+                {
+                    "name": "SIPZY",
+                    "fixes": {
+                        "SIPZY": "SIPZY RIGHT TURN INBOUNDCOURSE 111 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "FRAME": "FRAME AT OR ABOVE 2000 OVERFLY FRAME AT OR ABOVE 2000 HOLD AT FRAME LEFT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF SEMAH MAP RNW 30",
+                "SEMAH": "SEMAH 2000",
+                "EMEVE": "EMEVE AT OR ABOVE 920 RNW 30 TRK 291 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FRAME",
+                    "fixes": {
+                        "FRAME": "FRAME LEFT TURN INBOUNDCOURSE 311 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

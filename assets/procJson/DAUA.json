@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "ADR",
+            "lat": 27.820333333333334,
+            "lon": 0.20275833333333332
+        },
+        {
+            "name": "CI04",
+            "lat": 27.723580566666666,
+            "lon": 0.29227221666666664
+        },
+        {
+            "name": "D041B",
+            "lat": 27.871655566666668,
+            "lon": 0.15448888333333333
+        },
+        {
+            "name": "D221H",
+            "lat": 27.717877783333332,
+            "lon": 0.2993305666666667
+        },
+        {
+            "name": "D221I",
+            "lat": 27.705066666666667,
+            "lon": 0.31138888333333337
+        },
+        {
+            "name": "FF04",
+            "lat": 27.75630556666667,
+            "lon": 0.26313611666666664
+        },
+        {
+            "name": "FI04",
+            "lat": 27.76225833333333,
+            "lon": 0.2564138833333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD04",
+            "fixes": {
+                "FF04": "FF04 2960",
+                "ADR": "ADR 1160 RNW 04 TRK 041 UNTIL 2010 TURN RIGHT DIRECT ADR 3880 FAF FF04 MAP ADR"
+            },
+            "transitions": [
+                {
+                    "name": "ADR1",
+                    "fixes": {
+                        "ADR": "ADR AT OR ABOVE 3880 TRK 193 UNTIL 9.0 FROM ADR TURN RIGHT DIRECT",
+                        "D221I": "D221I AT OR ABOVE 2960"
+                    }
+                },
+                {
+                    "name": "ADR2",
+                    "fixes": {
+                        "ADR": "ADR AT OR ABOVE 3880 TRK 205 UNTIL 8.0 FROM ADR TURN RIGHT DIRECT",
+                        "D221H": "D221H AT OR ABOVE 2960"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS04",
+            "fixes": {
+                "CI04": "CI04 AT OR ABOVE 2560",
+                "FI04": "FI04 2560 RNW 04",
+                "D041B": "OVERFLY D041B AT OR ABOVE 1320 TURN RIGHT DIRECT",
+                "ADR": "ADR 2960 FAF FI04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "ADR",
+                    "fixes": {
+                        "ADR": "ADR AT OR ABOVE 2960 TRK 193 UNTIL 7.5 FROM ADR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR04",
+            "fixes": {
+                "FF04": "FF04 2960",
+                "ADR": "ADR 1160 RNW 04 TRK 041 UNTIL 2010 TURN RIGHT DIRECT ADR AT OR ABOVE 3880 FAF FF04 MAP ADR"
+            },
+            "transitions": [
+                {
+                    "name": "ADR1",
+                    "fixes": {
+                        "ADR": "ADR AT OR ABOVE 3880 TRK 193 UNTIL 7.0 FROM ADR"
+                    }
+                },
+                {
+                    "name": "ADR2",
+                    "fixes": {
+                        "ADR": "ADR AT OR ABOVE 3880 TRK 205 UNTIL 5.8 FROM ADR"
+                    }
+                }
+            ]
+        }
+    ]
+}

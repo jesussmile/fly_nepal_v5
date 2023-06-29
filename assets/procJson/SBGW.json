@@ -1,0 +1,298 @@
+{
+    "fixes": [
+        {
+            "name": "FF075",
+            "lat": 22.873475,
+            "lon": 45.3378
+        },
+        {
+            "name": "GGTNB",
+            "lat": 22.787975,
+            "lon": 45.21528611666667
+        },
+        {
+            "name": "GW001",
+            "lat": 22.888030566666668,
+            "lon": 45.359952783333334
+        },
+        {
+            "name": "GW002",
+            "lat": 22.888416666666668,
+            "lon": 45.071052783333336
+        },
+        {
+            "name": "GW018",
+            "lat": 22.646480566666668,
+            "lon": 45.06848611666667
+        },
+        {
+            "name": "GW019",
+            "lat": 22.68832778333333,
+            "lon": 45.14649443333333
+        },
+        {
+            "name": "GW021",
+            "lat": 22.726147216666668,
+            "lon": 45.18202778333333
+        },
+        {
+            "name": "GW022",
+            "lat": 22.751136116666668,
+            "lon": 45.205522216666665
+        },
+        {
+            "name": "GW023",
+            "lat": 22.787975,
+            "lon": 45.21528611666667
+        },
+        {
+            "name": "IMDAB",
+            "lat": 23.197405566666667,
+            "lon": 44.62482778333333
+        },
+        {
+            "name": "OPTOD",
+            "lat": 22.693447216666666,
+            "lon": 44.99375
+        },
+        {
+            "name": "SCP",
+            "lat": 23.233166666666666,
+            "lon": 45.86
+        },
+        {
+            "name": "VUDPI",
+            "lat": 23.062997216666666,
+            "lon": 44.8194
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "GGT3B",
+            "rnw": "02",
+            "fixes": {
+                "GGTNB": "GGTNB SPEED 180"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "IMDAB",
+                    "fixes": [
+                        "IMDAB"
+                    ]
+                },
+                {
+                    "name": "SCP",
+                    "fixes": [
+                        "GW001",
+                        "SCP"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "IMDA1A",
+            "rnw": "02",
+            "fixes": {
+                "GW002": "GW002 AT OR BELOW 6000",
+                "VUDPI": "VUDPI",
+                "IMDAB": "IMDAB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "IMDA1B",
+            "rnw": "20",
+            "fixes": {
+                "GW002": "GW002 AT OR BELOW 6000",
+                "VUDPI": "VUDPI",
+                "IMDAB": "IMDAB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "IMDA1C",
+            "rnw": "20",
+            "fixes": {
+                "GW002": "GW002 SPEED 190",
+                "IMDAB": "IMDAB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OMNI",
+            "rnw": "20",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 02",
+                    "fixes": {
+                        "RNW 02": "RNW 02 TRK 021 UNTIL 8000 HDG 021 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 20",
+                    "fixes": {
+                        "RNW 20": "RNW 20 TRK 201 UNTIL 6000 HDG 201 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "SCP1A",
+            "rnw": "20",
+            "fixes": {
+                "GW023": "OVERFLY GW023",
+                "GW001": "GW001 AT OR BELOW 6000",
+                "SCP": "SCP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SCP1B",
+            "rnw": "02",
+            "fixes": {
+                "GW001": "GW001 AT OR BELOW 6000",
+                "SCP": "SCP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SCP1C",
+            "rnw": "20",
+            "fixes": {
+                "GGTNB": "OVERFLY GGTNB SPEED 190",
+                "GW001": "GW001 AT OR BELOW 6000",
+                "SCP": "SCP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA02",
+            "fixes": {
+                "FF075": "FF075 4600 SPEED 170",
+                "GGTNB": "OVERFLY GGTNB 3100 SPEED 170 RNW 02 TRK 077 UNTIL 4000 TURN LEFT DIRECT OVERFLY GGTNB AT OR ABOVE 7000 SPEED 170 HOLD AT GGTNB LEFT TURN INBOUNDCOURSE 257 SPEED 170 LEGTIME 1 FAF FF075 MAP GG"
+            },
+            "transitions": [
+                {
+                    "name": "GGT",
+                    "fixes": {
+                        "GGTNB": "GGTNB AT OR ABOVE 7000 SPEED 170 TRK 242 UNTIL 8.5 FROM GGTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBB02",
+            "fixes": {
+                "FF075": "FF075 4600 SPEED 170",
+                "GGTNB": "OVERFLY GGTNB 3020 SPEED 170 RNW 02 TRK 077 UNTIL 4000 TURN LEFT DIRECT OVERFLY GGTNB AT OR ABOVE 7000 SPEED 170 HOLD AT GGTNB LEFT TURN INBOUNDCOURSE 257 SPEED 170 LEGTIME 1 FAF FF075 MAP GG"
+            },
+            "transitions": [
+                {
+                    "name": "GGT",
+                    "fixes": {
+                        "GGTNB": "GGTNB AT OR ABOVE 7000 SPEED 170 TRK 242 UNTIL 8.5 FROM GGTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA20",
+            "fixes": {
+                "FF075": "FF075 4600 SPEED 170",
+                "GGTNB": "OVERFLY GGTNB 3100 SPEED 170 RNW 20 TRK 077 UNTIL 4000 TURN LEFT DIRECT OVERFLY GGTNB AT OR ABOVE 7000 SPEED 170 HOLD AT GGTNB LEFT TURN INBOUNDCOURSE 257 SPEED 170 LEGTIME 1 FAF FF075 MAP GG"
+            },
+            "transitions": [
+                {
+                    "name": "GGT",
+                    "fixes": {
+                        "GGTNB": "GGTNB AT OR ABOVE 7000 SPEED 170 TRK 242 UNTIL 8.5 FROM GGTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBB20",
+            "fixes": {
+                "FF075": "FF075 4600 SPEED 170",
+                "GGTNB": "OVERFLY GGTNB 3020 SPEED 170 RNW 20 TRK 077 UNTIL 4000 TURN LEFT DIRECT OVERFLY GGTNB AT OR ABOVE 7000 SPEED 170 HOLD AT GGTNB LEFT TURN INBOUNDCOURSE 257 SPEED 170 LEGTIME 1 FAF FF075 MAP GG"
+            },
+            "transitions": [
+                {
+                    "name": "GGT",
+                    "fixes": {
+                        "GGTNB": "GGTNB AT OR ABOVE 7000 SPEED 170 TRK 242 UNTIL 8.5 FROM GGTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB02",
+            "fixes": {
+                "GW018": "GW018 AT OR ABOVE 4700",
+                "GW019": "GW019 3890 SPEED 140",
+                "GW021": "GW021 AT OR ABOVE 3036 SPEED 140",
+                "GW022": "OVERFLY GW022 2400 SPEED 140 RNW 02 TRK 243 UNTIL 4000 TURN RIGHT DIRECT",
+                "OPTOD": "OVERFLY OPTOD AT OR ABOVE 7000 SPEED 180 HOLD AT OPTOD LEFT TURN INBOUNDCOURSE 071 ALT 7000 SPEED 200 LEGTIME 1 FAF GW019 MAP GW022"
+            },
+            "transitions": [
+                {
+                    "name": "OPTOD",
+                    "fixes": {
+                        "OPTOD": "OPTOD AT OR ABOVE 7000 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA20",
+            "fixes": {
+                "GW018": "GW018 AT OR ABOVE 4700 SPEED 200",
+                "GW019": "GW019 3260 SPEED 140",
+                "GW021": "OVERFLY GW021 2400 SPEED 140 RNW 20 TRK 243 UNTIL 4000 TURN RIGHT DIRECT",
+                "OPTOD": "OVERFLY OPTOD AT OR ABOVE 7000 SPEED 180 HOLD AT OPTOD LEFT TURN INBOUNDCOURSE 071 ALT 7000 SPEED 200 LEGTIME 1 FAF GW019 MAP GW021"
+            },
+            "transitions": [
+                {
+                    "name": "OPTOD",
+                    "fixes": {
+                        "OPTOD": "OPTOD AT OR ABOVE 7000 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB20",
+            "fixes": {
+                "GW018": "GW018 AT OR ABOVE 4700",
+                "GW019": "GW019 3890 SPEED 140",
+                "GW021": "GW021 AT OR ABOVE 3036 SPEED 140",
+                "GW022": "OVERFLY GW022 2400 SPEED 140 RNW 20 TRK 243 UNTIL 4000 TURN RIGHT DIRECT",
+                "OPTOD": "OVERFLY OPTOD AT OR ABOVE 7000 SPEED 180 HOLD AT OPTOD LEFT TURN INBOUNDCOURSE 071 ALT 7000 SPEED 200 LEGTIME 1 FAF GW019 MAP GW022"
+            },
+            "transitions": [
+                {
+                    "name": "OPTOD",
+                    "fixes": {
+                        "OPTOD": "OPTOD AT OR ABOVE 7000 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+{
+    "fixes": [
+        {
+            "name": "APTUW",
+            "lat": 32.12405833333333,
+            "lon": 83.15853611666667
+        },
+        {
+            "name": "APULE",
+            "lat": 32.21589721666667,
+            "lon": 83.20259166666666
+        },
+        {
+            "name": "CENVA",
+            "lat": 32.00894443333333,
+            "lon": 83.19568611666666
+        },
+        {
+            "name": "CIDKO",
+            "lat": 32.21467221666666,
+            "lon": 83.35974721666666
+        },
+        {
+            "name": "DBN",
+            "lat": 32.563461116666666,
+            "lon": 82.83004443333333
+        },
+        {
+            "name": "ESMUY",
+            "lat": 32.271708333333336,
+            "lon": 83.11073611666667
+        },
+        {
+            "name": "JEKIP",
+            "lat": 32.162683333333334,
+            "lon": 83.14605
+        },
+        {
+            "name": "LAPTE",
+            "lat": 32.308791666666664,
+            "lon": 83.0987
+        },
+        {
+            "name": "MACUD",
+            "lat": 32.21638611666667,
+            "lon": 83.13153888333333
+        },
+        {
+            "name": "UCALA",
+            "lat": 32.44667221666667,
+            "lon": 83.05390278333333
+        },
+        {
+            "name": "VNA",
+            "lat": 32.21344166666667,
+            "lon": 83.49725556666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA02",
+            "fixes": {
+                "CIDKO": "CIDKO AT OR ABOVE 2100",
+                "APULE": "APULE 2000",
+                "MACUD": "OVERFLY MACUD 900 RNW 02 TRK 088 UNTIL 900 TURN LEFT DIRECT",
+                "VNA": "VNA AT OR ABOVE 2100 HOLD AT VNA RIGHT TURN INBOUNDCOURSE 089 LEGTIME 1 FAF APULE MAP MACUD"
+            },
+            "transitions": [
+                {
+                    "name": "VNA1",
+                    "fixes": {
+                        "VNA": "VNA AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "VNA2",
+                    "fixes": {
+                        "VNA": "VNA RIGHT TURN INBOUNDCOURSE 089 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA20",
+            "fixes": {
+                "CIDKO": "CIDKO AT OR ABOVE 2100",
+                "APULE": "APULE 2000",
+                "MACUD": "OVERFLY MACUD 900 RNW 20 TRK 088 UNTIL 900 TURN LEFT DIRECT",
+                "VNA": "VNA AT OR ABOVE 2100 HOLD AT VNA RIGHT TURN INBOUNDCOURSE 089 LEGTIME 1 FAF APULE MAP MACUD"
+            },
+            "transitions": [
+                {
+                    "name": "VNA1",
+                    "fixes": {
+                        "VNA": "VNA AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "VNA2",
+                    "fixes": {
+                        "VNA": "VNA RIGHT TURN INBOUNDCOURSE 089 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS02",
+            "fixes": {
+                "CENVA": "CENVA AT OR ABOVE 2000 CENVA CENVA AT OR ABOVE 2000 HOLD AT CENVA RIGHT TURN INBOUNDCOURSE 019 LEGTIME 1 FAF APTUW MAP RNW 02",
+                "APTUW": "APTUW 2000 RNW 02 TRK 019 UNTIL 800 TURN RIGHT HDG 180 INTERCEPT RADIAL 214 TO"
+            },
+            "transitions": [
+                {
+                    "name": "DBN",
+                    "fixes": {
+                        "DBN": "DBN",
+                        "CENVA": "CENVA AT OR ABOVE 2000 HOLD AT CENVA RIGHT TURN INBOUNDCOURSE 019 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "CENVA": "CENVA AT OR ABOVE 2000",
+                "APTUW": "APTUW 2000",
+                "JEKIP": "JEKIP AT OR ABOVE 1220 RNW 02 TRK 019 UNTIL 500",
+                "UCALA": "OVERFLY UCALA AT OR ABOVE 2100 HOLD AT UCALA RIGHT TURN INBOUNDCOURSE 199 LEGDIST 4 FAF APTUW MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "CENVA",
+                    "fixes": {
+                        "CENVA": "CENVA RIGHT TURN INBOUNDCOURSE 019 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "UCALA": "UCALA AT OR ABOVE 2100",
+                "LAPTE": "LAPTE 2000",
+                "ESMUY": "ESMUY AT OR ABOVE 1260 RNW 20 TRK 199 UNTIL 597",
+                "CENVA": "OVERFLY CENVA AT OR ABOVE 2000 HOLD AT CENVA RIGHT TURN INBOUNDCOURSE 019 LEGDIST 4 FAF LAPTE MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "UCALA",
+                    "fixes": {
+                        "UCALA": "UCALA RIGHT TURN INBOUNDCOURSE 199 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

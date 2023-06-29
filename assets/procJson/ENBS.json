@@ -1,0 +1,274 @@
+{
+    "fixes": [
+        {
+            "name": "30DME",
+            "lat": 70.63764443333334,
+            "lon": 29.801555566666668
+        },
+        {
+            "name": "34LOC",
+            "lat": 70.64243611666667,
+            "lon": 29.815722216666668
+        },
+        {
+            "name": "40DME",
+            "lat": 70.55404166666666,
+            "lon": 29.558983333333334
+        },
+        {
+            "name": "BITBO",
+            "lat": 70.37387221666667,
+            "lon": 29.364475
+        },
+        {
+            "name": "BS410",
+            "lat": 70.496525,
+            "lon": 29.393313883333335
+        },
+        {
+            "name": "BS420",
+            "lat": 70.68994166666667,
+            "lon": 29.955175
+        },
+        {
+            "name": "BS501",
+            "lat": 70.67377221666666,
+            "lon": 29.907586116666668
+        },
+        {
+            "name": "BS502",
+            "lat": 70.52576943333334,
+            "lon": 29.47725
+        },
+        {
+            "name": "BT",
+            "lat": 70.60136666666666,
+            "lon": 29.698941666666666
+        },
+        {
+            "name": "BXNB",
+            "lat": 70.60721943333333,
+            "lon": 29.71293611666667
+        },
+        {
+            "name": "CF21",
+            "lat": 70.685275,
+            "lon": 29.941463883333334
+        },
+        {
+            "name": "CQ03",
+            "lat": 70.4821,
+            "lon": 29.352591666666665
+        },
+        {
+            "name": "ERNIX",
+            "lat": 70.48211943333334,
+            "lon": 29.029455566666666
+        },
+        {
+            "name": "FF21",
+            "lat": 70.66148611666667,
+            "lon": 29.871541666666666
+        },
+        {
+            "name": "FQ03",
+            "lat": 70.54206666666667,
+            "lon": 29.524483333333333
+        },
+        {
+            "name": "GODIT",
+            "lat": 70.67436666666667,
+            "lon": 29.909333333333333
+        },
+        {
+            "name": "LUNUX",
+            "lat": 70.78042778333334,
+            "lon": 29.871152783333333
+        },
+        {
+            "name": "MA21",
+            "lat": 70.61383056666666,
+            "lon": 29.732191666666665
+        },
+        {
+            "name": "MIKDU",
+            "lat": 70.44850278333334,
+            "lon": 29.256230566666666
+        },
+        {
+            "name": "MQ03",
+            "lat": 70.57796943333334,
+            "lon": 29.628113883333334
+        },
+        {
+            "name": "NAMAP",
+            "lat": 70.72248333333333,
+            "lon": 30.051269433333335
+        },
+        {
+            "name": "OLADU",
+            "lat": 70.66436388333334,
+            "lon": 30.230344433333332
+        },
+        {
+            "name": "TULSU",
+            "lat": 70.49856388333333,
+            "lon": 29.399155566666668
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS03",
+            "fixes": {
+                "MIKDU": "MIKDU AT OR ABOVE 4000 MIKDU HOLD AT MIKDU RIGHT TURN INBOUNDCOURSE 028 ALT 4000 LEGTIME 1 FAF TULSU MAP RNW 03",
+                "TULSU": "TULSU 4000 RNW 03 TRK 028 UNTIL 1700 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BITBO",
+                    "fixes": {
+                        "BITBO": "BITBO AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "ERNIX",
+                    "fixes": {
+                        "ERNIX": "ERNIX AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS21",
+            "fixes": {
+                "NAMAP": "NAMAP AT OR ABOVE 3000",
+                "BS501": "BS501 3000 RNW 21 TRK 208 UNTIL 2000 TURN RIGHT DIRECT",
+                "LUNUX": "LUNUX HOLD AT LUNUX LEFT TURN INBOUNDCOURSE 118 ALT 4000 LEGTIME 1 FAF BS501 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "LUNUX",
+                    "fixes": {
+                        "LUNUX": "LUNUX AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "OLADU",
+                    "fixes": {
+                        "OLADU": "OLADU AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 2560",
+                "FF21": "FF21 2560",
+                "34LOC": "34LOC AT OR ABOVE 1900",
+                "MA21": "MA21 899 RNW 21 TRK 208 UNTIL 3.0 FROM",
+                "BT": "BT TURN LEFT DIRECT",
+                "BXNB": "BXNB 4000 HOLD AT BXNB RIGHT TURN INBOUNDCOURSE 208 LEGTIME 1 FAF FF21 MAP MA21"
+            },
+            "transitions": [
+                {
+                    "name": "BX1",
+                    "fixes": {
+                        "BXNB": "BXNB AT OR ABOVE 4000 TRK 018 UNTIL 10.0 FROM",
+                        "BT": "BT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD03",
+            "fixes": {
+                "CQ03": "CQ03 AT OR ABOVE 4000",
+                "FQ03": "FQ03 2480",
+                "40DME": "40DME AT OR ABOVE 2070",
+                "MQ03": "MQ03 1214 RNW 03",
+                "BXNB": "BXNB TRK 028 UNTIL 2500 TURN LEFT DIRECT BXNB 4000 HOLD AT BXNB RIGHT TURN INBOUNDCOURSE 208 LEGTIME 1 FAF FQ03 MAP MQ03"
+            },
+            "transitions": [
+                {
+                    "name": "BX1",
+                    "fixes": {
+                        "BXNB": "BXNB AT OR ABOVE 4000 TRK 199 UNTIL 10.0 FROM",
+                        "BT": "BT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 2560",
+                "FF21": "FF21 2560",
+                "30DME": "30DME AT OR ABOVE 1730",
+                "MA21": "MA21 898 RNW 21 TRK 208 UNTIL 3.0 FROM",
+                "BT": "BT TURN LEFT DIRECT",
+                "BXNB": "BXNB 4000 HOLD AT BXNB RIGHT TURN INBOUNDCOURSE 208 LEGTIME 1 FAF FF21 MAP MA21"
+            },
+            "transitions": [
+                {
+                    "name": "BX1",
+                    "fixes": {
+                        "BXNB": "BXNB AT OR ABOVE 4000 TRK 018 UNTIL 10.0 FROM",
+                        "BT": "BT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MIKDU": "MIKDU AT OR ABOVE 4000 MIKDU HOLD AT MIKDU RIGHT TURN INBOUNDCOURSE 028 ALT 4000 LEGTIME 1 FAF BS410 MAP RNW 03",
+                "BS410": "BS410 4000 RNW 03",
+                "BS420": "OVERFLY BS420 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BITBO",
+                    "fixes": {
+                        "BITBO": "BITBO AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "ERNIX",
+                    "fixes": {
+                        "ERNIX": "ERNIX AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "NAMAP": "NAMAP AT OR ABOVE 3000",
+                "GODIT": "GODIT 3000 RNW 21",
+                "BS502": "OVERFLY BS502 TURN RIGHT DIRECT",
+                "LUNUX": "LUNUX HOLD AT LUNUX LEFT TURN INBOUNDCOURSE 118 ALT 4000 LEGTIME 1 FAF GODIT MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "LUNUX",
+                    "fixes": {
+                        "LUNUX": "LUNUX AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "OLADU",
+                    "fixes": {
+                        "OLADU": "OLADU AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

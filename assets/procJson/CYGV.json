@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "AGMUN",
+            "lat": 50.288975,
+            "lon": 63.3014
+        },
+        {
+            "name": "EMBEP",
+            "lat": 50.24500556666667,
+            "lon": 63.72448611666667
+        },
+        {
+            "name": "ITPEV",
+            "lat": 50.43755,
+            "lon": 63.418852783333335
+        },
+        {
+            "name": "KAVLI",
+            "lat": 50.12556111666667,
+            "lon": 63.803747216666665
+        },
+        {
+            "name": "MIDGI",
+            "lat": 50.318413883333335,
+            "lon": 63.49890833333333
+        },
+        {
+            "name": "MIRUX",
+            "lat": 50.27387778333333,
+            "lon": 63.92160556666666
+        },
+        {
+            "name": "OTSAB",
+            "lat": 50.363216666666666,
+            "lon": 63.36022221666666
+        },
+        {
+            "name": "SIBSO",
+            "lat": 50.316797216666664,
+            "lon": 63.5039
+        },
+        {
+            "name": "UKMOR",
+            "lat": 50.24698611666667,
+            "lon": 63.71842221666667
+        },
+        {
+            "name": "VOGAV",
+            "lat": 50.19979721666667,
+            "lon": 63.862397216666665
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "VOGAV": "VOGAV AT OR ABOVE 1600",
+                "EMBEP": "EMBEP 1600 RNW 08",
+                "SIBSO": "OVERFLY SIBSO 1700 HOLD AT SIBSO RIGHT TURN INBOUNDCOURSE 083 SPEED 230 LEGTIME 1 FAF EMBEP MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "KAVLI",
+                    "fixes": {
+                        "KAVLI": "KAVLI SPEED 210"
+                    }
+                },
+                {
+                    "name": "MIRUX",
+                    "fixes": {
+                        "MIRUX": "MIRUX SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "OTSAB": "OTSAB AT OR ABOVE 1800",
+                "MIDGI": "MIDGI 1600 RNW 26",
+                "UKMOR": "OVERFLY UKMOR 1700 HOLD AT UKMOR LEFT TURN INBOUNDCOURSE 263 SPEED 230 LEGTIME 1 FAF MIDGI MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "AGMUN",
+                    "fixes": {
+                        "AGMUN": "AGMUN SPEED 210"
+                    }
+                },
+                {
+                    "name": "ITPEV",
+                    "fixes": {
+                        "ITPEV": "ITPEV SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

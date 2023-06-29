@@ -1,0 +1,250 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 2.2292102833333334,
+            "lon": 77.94572736666667
+        },
+        {
+            "name": "AF002",
+            "lat": 2.1703544833333335,
+            "lon": 77.96790246666667
+        },
+        {
+            "name": "AF003",
+            "lat": 2.1238987833333334,
+            "lon": 78.01032188333333
+        },
+        {
+            "name": "CF20",
+            "lat": 2.0957166666666667,
+            "lon": 78.06691111666666
+        },
+        {
+            "name": "CS20",
+            "lat": 2.128072216666667,
+            "lon": 78.07552778333333
+        },
+        {
+            "name": "D008L",
+            "lat": 2.057330566666667,
+            "lon": 78.09200556666667
+        },
+        {
+            "name": "D008Z",
+            "lat": 1.8236833333333333,
+            "lon": 78.07228056666666
+        },
+        {
+            "name": "D018J",
+            "lat": 2.0957166666666667,
+            "lon": 78.06691111666666
+        },
+        {
+            "name": "D018V",
+            "lat": 1.9015749999999998,
+            "lon": 78.01521666666666
+        },
+        {
+            "name": "D018X",
+            "lat": 1.8692194333333334,
+            "lon": 78.00660278333334
+        },
+        {
+            "name": "D018Z",
+            "lat": 1.8368611166666666,
+            "lon": 77.99798611666667
+        },
+        {
+            "name": "D081E",
+            "lat": 2.240086116666667,
+            "lon": 78.02856943333333
+        },
+        {
+            "name": "D105L",
+            "lat": 2.2992722166666666,
+            "lon": 77.91456111666666
+        },
+        {
+            "name": "FF20",
+            "lat": 2.1729138833333335,
+            "lon": 78.090925
+        },
+        {
+            "name": "FF20V",
+            "lat": 2.128072216666667,
+            "lon": 78.07552778333333
+        },
+        {
+            "name": "FS20",
+            "lat": 2.1927861166666665,
+            "lon": 78.09276111666667
+        },
+        {
+            "name": "KOKTI",
+            "lat": 2.2933333333333334,
+            "lon": 77.94722221666666
+        },
+        {
+            "name": "MA20",
+            "lat": 2.2708305666666666,
+            "lon": 78.11339721666667
+        },
+        {
+            "name": "MAS07",
+            "lat": 2.231147216666667,
+            "lon": 78.02899166666667
+        },
+        {
+            "name": "MASNB",
+            "lat": 2.3034722166666666,
+            "lon": 78.12088888333334
+        },
+        {
+            "name": "MSV",
+            "lat": 2.2574444333333332,
+            "lon": 78.11011111666667
+        },
+        {
+            "name": "PAV",
+            "lat": 1.5159722166666667,
+            "lon": 78.04336111666667
+        },
+        {
+            "name": "TSHNB",
+            "lat": 2.3916861166666665,
+            "lon": 77.502325
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "MAS1",
+            "rnw": "02",
+            "fixes": {
+                "MASNB": "MASNB AT OR ABOVE 8000",
+                "MAS07": "MAS07 AT OR ABOVE 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MSV1",
+            "rnw": "02",
+            "fixes": {
+                "MSV": "MSV AT OR ABOVE 7000",
+                "D081E": "D081E AT OR ABOVE 5800"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MSV1A",
+            "rnw": "02",
+            "fixes": {
+                "MSV": "MSV",
+                "D008L": "D008L AT OR ABOVE 6500",
+                "PAV": "PAV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDW20",
+            "fixes": {
+                "CS20": "CS20 AT OR ABOVE 6600",
+                "FS20": "FS20 5400",
+                "MSV": "MSV 4107 RNW 20 TRK 193 UNTIL 5.0 FROM MSV TURN LEFT DIRECT MSV AT OR ABOVE 7000 HOLD AT MSV LEFT TURN INBOUNDCOURSE 198 ALT 7000 LEGTIME 1 FAF FS20 MAP MSV"
+            },
+            "transitions": [
+                {
+                    "name": "TSH",
+                    "fixes": {
+                        "TSHNB": "TSHNB",
+                        "D105L": "D105L AT OR ABOVE 10000",
+                        "KOKTI": "KOKTI",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D018J": "D018J"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDX20",
+            "fixes": {
+                "CF20": "CF20 AT OR ABOVE 6950",
+                "FS20": "FS20 5400",
+                "MSV": "MSV 4107 RNW 20 TRK 193 UNTIL 5.0 FROM MSV TURN LEFT DIRECT MSV AT OR ABOVE 7000 HOLD AT MSV LEFT TURN INBOUNDCOURSE 198 ALT 7000 LEGTIME 1 FAF FS20 MAP MSV"
+            },
+            "transitions": [
+                {
+                    "name": "PAV",
+                    "fixes": {
+                        "PAV": "PAV",
+                        "D018Z": "D018Z AT OR ABOVE 10000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDY20",
+            "fixes": {
+                "CF20": "CF20 AT OR ABOVE 6950",
+                "FS20": "FS20 5400",
+                "MSV": "MSV 4107 RNW 20 TRK 193 UNTIL 5.0 FROM MSV TURN LEFT DIRECT MSV AT OR ABOVE 7000 HOLD AT MSV LEFT TURN INBOUNDCOURSE 198 ALT 7000 LEGTIME 1 FAF FS20 MAP MSV"
+            },
+            "transitions": [
+                {
+                    "name": "PAV",
+                    "fixes": {
+                        "PAV": "PAV",
+                        "D008Z": "D008Z AT OR ABOVE 10000",
+                        "D018X": "D018X",
+                        "D018V": "D018V AT OR ABOVE 10000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ20",
+            "fixes": {
+                "CS20": "CS20 AT OR ABOVE 6600",
+                "FS20": "FS20 5400",
+                "MSV": "MSV 4107 RNW 20 TRK 193 UNTIL 5.0 FROM MSV TURN LEFT DIRECT MSV AT OR ABOVE 7000 HOLD AT MSV LEFT TURN INBOUNDCOURSE 198 ALT 7000 LEGTIME 1 FAF FS20 MAP MSV"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB20",
+            "fixes": {
+                "FF20": "FF20 6400",
+                "MA20": "MA20 4500 RNW 20 TRK 180 UNTIL 5.0 FROM",
+                "MASNB": "MASNB TURN LEFT DIRECT MASNB AT OR ABOVE 7000 HOLD AT MASNB LEFT TURN INBOUNDCOURSE 196 ALT 7000 LEGTIME 1 FAF FF20 MAP MA20"
+            },
+            "transitions": [
+                {
+                    "name": "MAS",
+                    "fixes": {
+                        "MASNB": "MASNB LEFT TURN INBOUNDCOURSE 196 ALT 6400 LEGDIST 9"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORV20",
+            "fixes": {
+                "FF20V": "FF20V 6600",
+                "MSV": "MSV 4107 RNW 20 TRK 193 UNTIL 5.0 FROM MSV TURN LEFT DIRECT MSV AT OR ABOVE 7000 HOLD AT MSV LEFT TURN INBOUNDCOURSE 198 ALT 7000 LEGTIME 1 FAF FF20V MAP MSV"
+            },
+            "transitions": []
+        }
+    ]
+}

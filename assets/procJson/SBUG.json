@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "FF27",
+            "lat": 29.763766666666665,
+            "lon": 56.953288883333336
+        },
+        {
+            "name": "UG001",
+            "lat": 29.77385,
+            "lon": 56.93406388333333
+        },
+        {
+            "name": "UG002",
+            "lat": 29.787152783333333,
+            "lon": 57.102727783333336
+        },
+        {
+            "name": "UG003",
+            "lat": 29.766233333333332,
+            "lon": 56.838711116666666
+        },
+        {
+            "name": "UG004",
+            "lat": 29.856886116666665,
+            "lon": 56.789644433333336
+        },
+        {
+            "name": "UG006",
+            "lat": 29.669283333333333,
+            "lon": 56.809494433333334
+        },
+        {
+            "name": "UG007",
+            "lat": 29.757002783333334,
+            "lon": 56.724305566666665
+        },
+        {
+            "name": "UG009",
+            "lat": 29.895052783333334,
+            "lon": 57.03060833333333
+        },
+        {
+            "name": "UG011",
+            "lat": 29.784072216666665,
+            "lon": 57.02945278333333
+        },
+        {
+            "name": "UG012",
+            "lat": 29.779013883333334,
+            "lon": 56.99920556666667
+        },
+        {
+            "name": "UG091",
+            "lat": 29.78864443333333,
+            "lon": 57.121805566666666
+        },
+        {
+            "name": "UG092",
+            "lat": 29.827072216666668,
+            "lon": 57.184502783333336
+        },
+        {
+            "name": "UG093",
+            "lat": 29.891597216666668,
+            "lon": 57.164541666666665
+        },
+        {
+            "name": "UG094",
+            "lat": 29.896008333333334,
+            "lon": 56.97286943333334
+        },
+        {
+            "name": "URGNB",
+            "lat": 29.786013883333332,
+            "lon": 57.03658611666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "27",
+            "fixes": {},
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FF27": "FF27 1600",
+                "UG011": "OVERFLY UG011 280",
+                "URGNB": "OVERFLY URGNB AT OR ABOVE 660 RNW 27 TRK 221 UNTIL 1500 TURN LEFT DIRECT URGNB AT OR ABOVE 2000 HOLD AT URGNB RIGHT TURN INBOUNDCOURSE 060 ALT 2000 LEGTIME 1 FAF FF27 MAP URG"
+            },
+            "transitions": [
+                {
+                    "name": "URG",
+                    "fixes": {
+                        "URGNB": "URGNB AT OR ABOVE 2000 TRK 060 UNTIL 7.9 FROM URGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "UG092": "UG092 AT OR ABOVE 1600",
+                "UG091": "UG091 1580 RNW 09 TRK 098 UNTIL 1400 TURN RIGHT DIRECT",
+                "UG094": "OVERFLY UG094 AT OR ABOVE 3000 HOLD AT UG094 RIGHT TURN INBOUNDCOURSE 285 ALT 3000 LEGTIME 1 FAF UG091 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "UG094",
+                    "fixes": {
+                        "UG094": "UG094 AT OR ABOVE 3000",
+                        "UG093": "UG093 AT OR ABOVE 1800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ27",
+            "fixes": {
+                "UG003": "UG003 AT OR ABOVE 2000",
+                "UG001": "UG001 1890",
+                "UG012": "UG012 AT OR ABOVE 800 RNW 27",
+                "UG002": "OVERFLY UG002 TURN LEFT DIRECT",
+                "UG009": "OVERFLY UG009 AT OR ABOVE 3000 HOLD AT UG009 RIGHT TURN INBOUNDCOURSE 098 ALT 3000 LEGTIME 1 FAF UG001 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "UG004",
+                    "fixes": {
+                        "UG004": "UG004 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "UG006",
+                    "fixes": {
+                        "UG006": "UG006 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "UG007",
+                    "fixes": {
+                        "UG007": "UG007 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

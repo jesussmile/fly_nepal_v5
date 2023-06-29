@@ -1,0 +1,88 @@
+{
+    "fixes": [
+        {
+            "name": "CI27",
+            "lat": 1.0604027833333334,
+            "lon": 77.43891666666667
+        },
+        {
+            "name": "CS27",
+            "lat": 1.0601888833333333,
+            "lon": 77.43263056666666
+        },
+        {
+            "name": "FI27",
+            "lat": 1.0603444333333334,
+            "lon": 77.47785278333333
+        },
+        {
+            "name": "FS27",
+            "lat": 1.0601916666666666,
+            "lon": 77.47705833333333
+        },
+        {
+            "name": "JUV",
+            "lat": 1.0601944333333333,
+            "lon": 77.56575
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "JUV2",
+            "rnw": "27",
+            "fixes": {
+                "JUV": "JUV AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "JUV2A",
+            "rnw": "09",
+            "fixes": {
+                "JUV": "JUV AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ27",
+            "fixes": {
+                "CS27": "CS27 AT OR ABOVE 3000",
+                "FS27": "FS27 3000",
+                "JUV": "JUV 1317 RNW 27 TRK 275 UNTIL 5.0 FROM JUV TURN LEFT DIRECT JUV AT OR ABOVE 5000 HOLD AT JUV LEFT TURN INBOUNDCOURSE 066 ALT 5000 LEGTIME 1 FAF FS27 MAP JUV"
+            },
+            "transitions": [
+                {
+                    "name": "JUV",
+                    "fixes": {
+                        "JUV": "JUV AT OR ABOVE 5000 SPEED 210 TRK 066 UNTIL 8.0 FROM JUV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ27",
+            "fixes": {
+                "CI27": "CI27 AT OR ABOVE 3000",
+                "FI27": "FI27 3000 RNW 27 TRK 275 UNTIL 5.0 FROM",
+                "JUV": "JUV TURN LEFT DIRECT JUV AT OR ABOVE 5000 HOLD AT JUV LEFT TURN INBOUNDCOURSE 066 ALT 5000 LEGTIME 1 FAF FI27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "JUV",
+                    "fixes": {
+                        "JUV": "JUV AT OR ABOVE 5000 SPEED 210 TRK 066 UNTIL 8.0 FROM JUV"
+                    }
+                }
+            ]
+        }
+    ]
+}

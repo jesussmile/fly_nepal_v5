@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "CFPTN",
+            "lat": 39.8802,
+            "lon": 85.12861666666667
+        },
+        {
+            "name": "JIVLO",
+            "lat": 39.764355566666666,
+            "lon": 85.13000833333334
+        },
+        {
+            "name": "JULKO",
+            "lat": 39.647880566666664,
+            "lon": 85.13140556666667
+        },
+        {
+            "name": "LOTAC",
+            "lat": 39.79583611666666,
+            "lon": 85.12963056666666
+        },
+        {
+            "name": "PI001",
+            "lat": 39.83543555,
+            "lon": 85.1285631
+        },
+        {
+            "name": "PI002",
+            "lat": 39.885200033333334,
+            "lon": 85.06137866666667
+        },
+        {
+            "name": "PI003",
+            "lat": 39.943752333333336,
+            "lon": 85.12609493333333
+        },
+        {
+            "name": "PNTHR",
+            "lat": 39.77711111666667,
+            "lon": 85.12988888333334
+        },
+        {
+            "name": "RULSE",
+            "lat": 39.895833333333336,
+            "lon": 85.12842778333334
+        },
+        {
+            "name": "SHB",
+            "lat": 39.63254166666667,
+            "lon": 85.82431666666666
+        },
+        {
+            "name": "WALAG",
+            "lat": 39.50059721666667,
+            "lon": 85.13316111666667
+        },
+        {
+            "name": "YOSKU",
+            "lat": 39.60090833333334,
+            "lon": 85.13196666666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 18",
+        "RNW 22",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "CFPTN": "CFPTN AT OR ABOVE 2800",
+                "PNTHR": "PNTHR 2255 RNW 18 TRK 185 UNTIL 2800 TURN LEFT DIRECT PNTHR HOLD AT PNTHR LEFT TURN INBOUNDCOURSE 185 LEGTIME 1 FAF PNTHR MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "SHB",
+                    "fixes": {
+                        "SHB": "SHB",
+                        "PNTHR": "PNTHR AT OR ABOVE 2800",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "RULSE": "RULSE AT OR ABOVE 2800",
+                "LOTAC": "LOTAC 2600",
+                "JIVLO": "JIVLO AT OR ABOVE 2000 RNW 18 TRK 185 UNTIL 1116",
+                "WALAG": "OVERFLY WALAG AT OR ABOVE 2800 HOLD AT WALAG RIGHT TURN INBOUNDCOURSE 005 LEGDIST 4 FAF LOTAC MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "RULSE",
+                    "fixes": {
+                        "RULSE": "RULSE RIGHT TURN INBOUNDCOURSE 185 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "WALAG": "WALAG AT OR ABOVE 2800",
+                "YOSKU": "YOSKU 2600",
+                "JULKO": "JULKO AT OR ABOVE 1700 RNW 36 TRK 005 UNTIL 1132",
+                "RULSE": "OVERFLY RULSE AT OR ABOVE 2800 HOLD AT RULSE RIGHT TURN INBOUNDCOURSE 185 LEGDIST 4 FAF YOSKU MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "WALAG",
+                    "fixes": {
+                        "WALAG": "WALAG RIGHT TURN INBOUNDCOURSE 005 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "AGRAS",
+            "lat": 35.35412778333333,
+            "lon": 96.69955556666666
+        },
+        {
+            "name": "CIDNU",
+            "lat": 35.45211943333333,
+            "lon": 96.73046666666667
+        },
+        {
+            "name": "FANAD",
+            "lat": 35.10746111666667,
+            "lon": 96.62205556666666
+        },
+        {
+            "name": "FF16",
+            "lat": 35.360875,
+            "lon": 96.69791111666666
+        },
+        {
+            "name": "HOLLE",
+            "lat": 35.01483056666667,
+            "lon": 96.46973056666667
+        },
+        {
+            "name": "PI001",
+            "lat": 35.32891326666667,
+            "lon": 96.68967966666666
+        },
+        {
+            "name": "PI002",
+            "lat": 35.38900855,
+            "lon": 96.64180111666667
+        },
+        {
+            "name": "PI003",
+            "lat": 35.43487271666667,
+            "lon": 96.7173433
+        },
+        {
+            "name": "SRENB",
+            "lat": 35.271855566666666,
+            "lon": 96.67481388333333
+        },
+        {
+            "name": "YOPUL",
+            "lat": 35.47296111666667,
+            "lon": 96.63168611666667
+        },
+        {
+            "name": "ZINOL",
+            "lat": 35.43119721666667,
+            "lon": 96.8292
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 16",
+        "RNW 23",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FF16": "FF16 2600 RNW 16",
+                "SRENB": "SRENB AT OR ABOVE 1424 TRK 162 UNTIL 2000 TURN LEFT DIRECT SRENB AT OR ABOVE 2600 HOLD AT SRENB LEFT TURN INBOUNDCOURSE 162 LEGTIME 1 FAF FF16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "HOLLE",
+                    "fixes": {
+                        "HOLLE": "HOLLE",
+                        "SRENB": "SRENB AT OR ABOVE 2600",
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "CIDNU": "CIDNU AT OR ABOVE 3000",
+                "AGRAS": "AGRAS 2500 RNW 16 TRK 160 UNTIL 1424",
+                "FANAD": "OVERFLY FANAD AT OR ABOVE 3000 HOLD AT FANAD RIGHT TURN INBOUNDCOURSE 340 LEGDIST 5 FAF AGRAS MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CIDNU",
+                    "fixes": {
+                        "CIDNU": "CIDNU RIGHT TURN INBOUNDCOURSE 160 ALT 3000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "YOPUL",
+                    "fixes": {
+                        "YOPUL": "YOPUL AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "ZINOL",
+                    "fixes": {
+                        "ZINOL": "ZINOL AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

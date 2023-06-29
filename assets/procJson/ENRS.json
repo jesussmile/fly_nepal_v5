@@ -1,0 +1,212 @@
+{
+    "fixes": [
+        {
+            "name": "DIVOL",
+            "lat": 67.34978611666666,
+            "lon": 12.097152783333334
+        },
+        {
+            "name": "FN018",
+            "lat": 67.43799721666667,
+            "lon": 11.997244433333334
+        },
+        {
+            "name": "FN20",
+            "lat": 67.60456388333333,
+            "lon": 12.265813883333333
+        },
+        {
+            "name": "LOLNO",
+            "lat": 67.61740278333333,
+            "lon": 12.480216666666667
+        },
+        {
+            "name": "RS403",
+            "lat": 67.45436388333333,
+            "lon": 11.999269433333334
+        },
+        {
+            "name": "RS404",
+            "lat": 67.38938888333334,
+            "lon": 11.907688883333334
+        },
+        {
+            "name": "RS405",
+            "lat": 67.46144443333333,
+            "lon": 12.009602783333333
+        },
+        {
+            "name": "RS406",
+            "lat": 67.42876943333333,
+            "lon": 11.7176
+        },
+        {
+            "name": "RS501",
+            "lat": 67.59861943333334,
+            "lon": 12.20465
+        },
+        {
+            "name": "RS502",
+            "lat": 67.65745278333333,
+            "lon": 12.289247216666666
+        },
+        {
+            "name": "RS503",
+            "lat": 67.73020833333334,
+            "lon": 12.394536116666666
+        },
+        {
+            "name": "RS505",
+            "lat": 67.59148056666666,
+            "lon": 12.194419433333334
+        },
+        {
+            "name": "RSTNB",
+            "lat": 67.52756666666667,
+            "lon": 12.096205566666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS02",
+            "fixes": {
+                "RS404": "RS404 AT OR ABOVE 2000",
+                "RS403": "RS403 2000 RNW 02 TRK 023 UNTIL 410 TRK 024 UNTIL 1000 TURN RIGHT DIRECT",
+                "DIVOL": "DIVOL HOLD AT DIVOL RIGHT TURN INBOUNDCOURSE 204 ALT 4000 LEGTIME 1 FAF RS403 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "DIVOL",
+                    "fixes": {
+                        "DIVOL": "DIVOL AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "RS406",
+                    "fixes": {
+                        "RS406": "RS406 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS20",
+            "fixes": {
+                "RS502": "RS502 AT OR ABOVE 2000",
+                "RS501": "RS501 2000 RNW 20 TRK 204 UNTIL 900 TURN LEFT DIRECT",
+                "LOLNO": "LOLNO HOLD AT LOLNO LEFT TURN INBOUNDCOURSE 294 ALT 5000 LEGTIME 1 FAF RS501 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "LOLNO",
+                    "fixes": {
+                        "LOLNO": "LOLNO AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "RS503",
+                    "fixes": {
+                        "RS503": "RS503 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA02",
+            "fixes": {
+                "FN018": "FN018 1900",
+                "RSTNB": "RSTNB 1020 RNW 02 TRK 018 UNTIL 1300 TURN RIGHT DIRECT RSTNB HOLD AT RSTNB RIGHT TURN INBOUNDCOURSE 207 ALT 2000 LEGTIME 1 FAF FN018 MAP RS"
+            },
+            "transitions": [
+                {
+                    "name": "RST",
+                    "fixes": {
+                        "RSTNB": "RSTNB AT OR ABOVE 2000 TRK 180 UNTIL 7.0 FROM RSTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB20",
+            "fixes": {
+                "FN20": "FN20 1900 RNW 20",
+                "RSTNB": "OVERFLY RSTNB TRK 215 UNTIL 900 TURN RIGHT DIRECT RSTNB HOLD AT RSTNB RIGHT TURN INBOUNDCOURSE 207 ALT 2000 LEGTIME 1 FAF FN20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "RST",
+                    "fixes": {
+                        "RSTNB": "RSTNB RIGHT TURN INBOUNDCOURSE 215 ALT 1900 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA20",
+            "fixes": {
+                "FN018": "FN018 1900",
+                "RSTNB": "RSTNB 1020 RNW 20 TRK 018 UNTIL 1300 TURN RIGHT DIRECT RSTNB HOLD AT RSTNB RIGHT TURN INBOUNDCOURSE 207 ALT 2000 LEGTIME 1 FAF FN018 MAP RS"
+            },
+            "transitions": [
+                {
+                    "name": "RST",
+                    "fixes": {
+                        "RSTNB": "RSTNB AT OR ABOVE 2000 TRK 180 UNTIL 7.0 FROM RSTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "RS404": "RS404 AT OR ABOVE 2000",
+                "RS405": "RS405 1800 RNW 02",
+                "RS501": "OVERFLY RS501 TURN RIGHT DIRECT",
+                "DIVOL": "DIVOL HOLD AT DIVOL RIGHT TURN INBOUNDCOURSE 204 ALT 4000 LEGTIME 1 FAF RS405 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "DIVOL",
+                    "fixes": {
+                        "DIVOL": "DIVOL AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "RS406",
+                    "fixes": {
+                        "RS406": "RS406 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "RS502": "RS502 AT OR ABOVE 2000",
+                "RS505": "RS505 1800 RNW 20",
+                "RS403": "OVERFLY RS403 TURN LEFT DIRECT",
+                "LOLNO": "LOLNO HOLD AT LOLNO LEFT TURN INBOUNDCOURSE 294 ALT 5000 LEGTIME 1 FAF RS505 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "LOLNO",
+                    "fixes": {
+                        "LOLNO": "LOLNO AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "RS503",
+                    "fixes": {
+                        "RS503": "RS503 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

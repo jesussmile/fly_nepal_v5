@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "COKAL",
+            "lat": 36.72036943333333,
+            "lon": 87.00769443333333
+        },
+        {
+            "name": "UTIBE",
+            "lat": 36.75775278333333,
+            "lon": 86.91500556666666
+        },
+        {
+            "name": "WITIP",
+            "lat": 36.840569433333336,
+            "lon": 86.7087
+        },
+        {
+            "name": "YIGUL",
+            "lat": 36.82248056666667,
+            "lon": 86.75387221666666
+        },
+        {
+            "name": "ZULEB",
+            "lat": 36.87935,
+            "lon": 86.611625
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "COKAL": "COKAL AT OR ABOVE 3100",
+                "UTIBE": "UTIBE 2400 RNW 07 TRK 067 UNTIL 982",
+                "ZULEB": "OVERFLY ZULEB AT OR ABOVE 3100 HOLD AT ZULEB RIGHT TURN INBOUNDCOURSE 248 LEGDIST 4 FAF UTIBE MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "COKAL",
+                    "fixes": {
+                        "COKAL": "COKAL RIGHT TURN INBOUNDCOURSE 067 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "ZULEB": "ZULEB AT OR ABOVE 3100",
+                "WITIP": "WITIP 2400",
+                "YIGUL": "YIGUL AT OR ABOVE 1600 RNW 25 TRK 248 UNTIL 985",
+                "COKAL": "OVERFLY COKAL AT OR ABOVE 3100 HOLD AT COKAL RIGHT TURN INBOUNDCOURSE 067 LEGDIST 4 FAF WITIP MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "ZULEB",
+                    "fixes": {
+                        "ZULEB": "ZULEB RIGHT TURN INBOUNDCOURSE 248 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

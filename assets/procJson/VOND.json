@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "FD10",
+            "lat": 19.195972216666668,
+            "lon": 77.23209443333333
+        },
+        {
+            "name": "FD28",
+            "lat": 19.17455,
+            "lon": 77.420575
+        },
+        {
+            "name": "NDD",
+            "lat": 19.178861116666667,
+            "lon": 77.33441666666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "FD10": "FD10 2800 RNW 10",
+                "NDD": "OVERFLY NDD TRK 100 UNTIL 2600 TURN RIGHT DIRECT NDD 3300 HOLD AT NDD LEFT TURN INBOUNDCOURSE 304 ALT 3300 LEGTIME 1 FAF FD10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "NDD1",
+                    "fixes": {
+                        "NDD": "NDD AT OR ABOVE 2800 TRK 304 UNTIL 8.0 FROM NDD"
+                    }
+                },
+                {
+                    "name": "NDD2",
+                    "fixes": {
+                        "NDD": "NDD AT OR ABOVE 2800 TRK 292 UNTIL 8.0 FROM NDD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD28",
+            "fixes": {
+                "FD28": "FD28 2800",
+                "NDD": "NDD 1256 RNW 28 TRK 273 UNTIL 2600 TURN LEFT DIRECT NDD 3300 HOLD AT NDD RIGHT TURN INBOUNDCOURSE 066 ALT 3300 LEGTIME 1 FAF FD28 MAP NDD"
+            },
+            "transitions": [
+                {
+                    "name": "NDD1",
+                    "fixes": {
+                        "NDD": "NDD AT OR ABOVE 2800 TRK 066 UNTIL 7.0 FROM NDD"
+                    }
+                },
+                {
+                    "name": "NDD2",
+                    "fixes": {
+                        "NDD": "NDD AT OR ABOVE 2800 TRK 080 UNTIL 7.0 FROM NDD"
+                    }
+                }
+            ]
+        }
+    ]
+}

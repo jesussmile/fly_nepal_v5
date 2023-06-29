@@ -1,0 +1,206 @@
+{
+    "fixes": [
+        {
+            "name": "AMROB",
+            "lat": 10.366366666666666,
+            "lon": 11.129416666666666
+        },
+        {
+            "name": "CF05",
+            "lat": 10.21615,
+            "lon": 10.790186116666666
+        },
+        {
+            "name": "DEMUV",
+            "lat": 10.433011116666666,
+            "lon": 11.078238883333333
+        },
+        {
+            "name": "EDKEG",
+            "lat": 10.094052783333334,
+            "lon": 10.767713883333334
+        },
+        {
+            "name": "FD05",
+            "lat": 10.236894433333333,
+            "lon": 10.817197216666667
+        },
+        {
+            "name": "FD23",
+            "lat": 10.349744433333333,
+            "lon": 10.968433333333333
+        },
+        {
+            "name": "FF05",
+            "lat": 10.236425,
+            "lon": 10.817094433333333
+        },
+        {
+            "name": "GME",
+            "lat": 10.280222216666667,
+            "lon": 10.87525
+        },
+        {
+            "name": "GO400",
+            "lat": 10.211377783333333,
+            "lon": 10.78385
+        },
+        {
+            "name": "GO500",
+            "lat": 10.382347216666666,
+            "lon": 11.010916666666667
+        },
+        {
+            "name": "GO600",
+            "lat": 10.278008333333334,
+            "lon": 10.732722216666666
+        },
+        {
+            "name": "GO700",
+            "lat": 10.448969433333334,
+            "lon": 10.959713883333333
+        },
+        {
+            "name": "NENKA",
+            "lat": 10.499647216666666,
+            "lon": 11.027038883333333
+        },
+        {
+            "name": "PODMI",
+            "lat": 10.160702783333333,
+            "lon": 10.716583333333332
+        },
+        {
+            "name": "RW05",
+            "lat": 10.289086116666667,
+            "lon": 10.887013883333333
+        },
+        {
+            "name": "VOPIM",
+            "lat": 10.483675,
+            "lon": 11.145572216666666
+        },
+        {
+            "name": "VOTON",
+            "lat": 10.227344433333334,
+            "lon": 10.665433333333333
+        },
+        {
+            "name": "VOVUT",
+            "lat": 10.110027783333333,
+            "lon": 10.649325
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "FD05": "FD05 3500",
+                "GME": "GME 1885 RNW 05 TRK 054 UNTIL 2000 TURN LEFT DIRECT GME 6000 HOLD AT GME LEFT TURN INBOUNDCOURSE 054 LEGTIME 1 FAF FD05 MAP GME"
+            },
+            "transitions": [
+                {
+                    "name": "GME",
+                    "fixes": {
+                        "GME": "GME LEFT TURN INBOUNDCOURSE 054 ALT 3500 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FD23": "FD23 3000 RNW 23 TRK 234 UNTIL 2000",
+                "GME": "GME 6000 HOLD AT GME RIGHT TURN INBOUNDCOURSE 234 LEGTIME 1 FAF FD23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "GME",
+                    "fixes": {
+                        "GME": "GME RIGHT TURN INBOUNDCOURSE 234 ALT 3000 LEGDIST 9"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS05",
+            "fixes": {
+                "CF05": "CF05 AT OR ABOVE 3200",
+                "FF05": "FF05 3200 RNW 05 TRK 054 UNTIL 2000 TURN LEFT DIRECT",
+                "GME": "GME 6000 HOLD AT GME LEFT TURN INBOUNDCOURSE 054 LEGTIME 1 FAF FF05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "GME",
+                    "fixes": {
+                        "GME": "GME LEFT TURN INBOUNDCOURSE 054 ALT 3200 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "PODMI": "PODMI AT OR ABOVE 4000 SPEED 200 PODMI HOLD AT PODMI LEFT TURN INBOUNDCOURSE 054 ALT 4000 SPEED 230 LEGTIME 1 FAF GO400 MAP RNW 05",
+                "GO400": "GO400 4000 RNW 05 TURN LEFT DIRECT",
+                "GO600": "GO600",
+                "VOTON": "VOTON SPEED 200"
+            },
+            "transitions": [
+                {
+                    "name": "EDKEG",
+                    "fixes": {
+                        "EDKEG": "EDKEG"
+                    }
+                },
+                {
+                    "name": "VOTON",
+                    "fixes": {
+                        "VOTON": "VOTON"
+                    }
+                },
+                {
+                    "name": "VOVUT",
+                    "fixes": {
+                        "VOVUT": "VOVUT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "DEMUV": "DEMUV AT OR ABOVE 4000 SPEED 200 DEMUV HOLD AT DEMUV RIGHT TURN INBOUNDCOURSE 234 ALT 4000 SPEED 230 LEGTIME 1 FAF GO500 MAP RNW 23",
+                "GO500": "GO500 4000 RNW 23 TURN RIGHT DIRECT",
+                "GO700": "GO700",
+                "NENKA": "NENKA SPEED 200"
+            },
+            "transitions": [
+                {
+                    "name": "AMROB",
+                    "fixes": {
+                        "AMROB": "AMROB"
+                    }
+                },
+                {
+                    "name": "NENKA",
+                    "fixes": {
+                        "NENKA": "NENKA"
+                    }
+                },
+                {
+                    "name": "VOPIM",
+                    "fixes": {
+                        "VOPIM": "VOPIM"
+                    }
+                }
+            ]
+        }
+    ]
+}

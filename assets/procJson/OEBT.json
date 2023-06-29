@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "BAT",
+            "lat": 24.215833333333332,
+            "lon": 51.45197221666667
+        },
+        {
+            "name": "CI32",
+            "lat": 24.129897216666667,
+            "lon": 51.524236116666664
+        },
+        {
+            "name": "DATEL",
+            "lat": 24.155888883333333,
+            "lon": 51.501333333333335
+        },
+        {
+            "name": "FS14",
+            "lat": 24.264752783333332,
+            "lon": 51.39474443333334
+        },
+        {
+            "name": "FS32",
+            "lat": 24.154563883333335,
+            "lon": 51.488986116666666
+        },
+        {
+            "name": "PI001",
+            "lat": 24.255609416666665,
+            "lon": 51.405179116666666
+        },
+        {
+            "name": "PI002",
+            "lat": 24.253088116666667,
+            "lon": 51.3266227
+        },
+        {
+            "name": "PI003",
+            "lat": 24.329441266666667,
+            "lon": 51.318199916666664
+        },
+        {
+            "name": "PI004",
+            "lat": 24.16481071666667,
+            "lon": 51.48296896666667
+        },
+        {
+            "name": "PI005",
+            "lat": 24.095918766666667,
+            "lon": 51.46132936666667
+        },
+        {
+            "name": "PI006",
+            "lat": 24.070037833333334,
+            "lon": 51.540468733333334
+        },
+        {
+            "name": "RW32",
+            "lat": 24.209244433333332,
+            "lon": 51.454447216666665
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS32",
+            "fixes": {
+                "CI32": "CI32 AT OR ABOVE 1524",
+                "DATEL": "DATEL 1524 RNW 32 TRK 319 UNTIL 1000 TURN LEFT DIRECT",
+                "BAT": "BAT 1524 HOLD AT BAT RIGHT TURN INBOUNDCOURSE 149 LEGTIME 1 FAF DATEL MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "BAT",
+                    "fixes": {
+                        "BAT": "BAT",
+                        "DATEL": "DATEL AT OR ABOVE 1524 HOLD AT DATEL LEFT TURN INBOUNDCOURSE 319 ALT 1524 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR14",
+            "fixes": {
+                "FS14": "FS14 1500 RNW 14",
+                "BAT": "BAT AT OR ABOVE 660 TRK 131 UNTIL 1000 TURN LEFT DIRECT BAT 1500 HOLD AT BAT RIGHT TURN INBOUNDCOURSE 311 LEGTIME 1 FAF FS14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "BAT",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR32",
+            "fixes": {
+                "FS32": "FS32 1500 RNW 32",
+                "BAT": "BAT AT OR ABOVE 660 TRK 329 UNTIL 1000 TURN LEFT DIRECT BAT 1500 HOLD AT BAT RIGHT TURN INBOUNDCOURSE 149 LEGTIME 1 FAF FS32 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "BAT",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 1500 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1500 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

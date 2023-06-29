@@ -1,0 +1,240 @@
+{
+    "fixes": [
+        {
+            "name": "75TAC",
+            "lat": 57.088525,
+            "lon": 9.765408333333333
+        },
+        {
+            "name": "AAL",
+            "lat": 57.10371943333333,
+            "lon": 9.995577783333333
+        },
+        {
+            "name": "BAKIT",
+            "lat": 57.116111116666666,
+            "lon": 10.193055566666667
+        },
+        {
+            "name": "CF26R",
+            "lat": 57.11209721666667,
+            "lon": 10.123647216666667
+        },
+        {
+            "name": "D260G",
+            "lat": 57.091369433333334,
+            "lon": 9.7829
+        },
+        {
+            "name": "FD26R",
+            "lat": 57.108727783333336,
+            "lon": 10.083725
+        },
+        {
+            "name": "FF08L",
+            "lat": 57.080163883333334,
+            "lon": 9.626211116666667
+        },
+        {
+            "name": "FF26R",
+            "lat": 57.108305566666665,
+            "lon": 10.062916666666666
+        },
+        {
+            "name": "FT08L",
+            "lat": 57.08035,
+            "lon": 9.647236116666667
+        },
+        {
+            "name": "GIPUG",
+            "lat": 57.07222221666667,
+            "lon": 9.5075
+        },
+        {
+            "name": "KUDEV",
+            "lat": 56.989755566666666,
+            "lon": 9.526244433333334
+        },
+        {
+            "name": "MD26R",
+            "lat": 57.09758888333333,
+            "lon": 9.889219433333333
+        },
+        {
+            "name": "MT08L",
+            "lat": 57.092675,
+            "lon": 9.826030566666667
+        },
+        {
+            "name": "OKPOT",
+            "lat": 57.19875,
+            "lon": 10.176069433333334
+        },
+        {
+            "name": "RW26R",
+            "lat": 57.09650833333333,
+            "lon": 9.876841666666667
+        },
+        {
+            "name": "TOSVO",
+            "lat": 57.154666666666664,
+            "lon": 9.488669433333333
+        },
+        {
+            "name": "VABUT",
+            "lat": 57.03346943333333,
+            "lon": 10.209966666666666
+        },
+        {
+            "name": "YT",
+            "lat": 57.09729721666667,
+            "lon": 9.871519433333333
+        },
+        {
+            "name": "YT081",
+            "lat": 57.081633333333336,
+            "lon": 9.648366666666666
+        },
+        {
+            "name": "YT083",
+            "lat": 57.10371943333333,
+            "lon": 9.995577783333333
+        },
+        {
+            "name": "YT261",
+            "lat": 57.10823333333333,
+            "lon": 10.061752783333333
+        },
+        {
+            "name": "YT263",
+            "lat": 57.090436116666666,
+            "lon": 9.782791666666666
+        }
+    ],
+    "rnws": [
+        "RNW 08L",
+        "RNW 08R",
+        "RNW 26L",
+        "RNW 26R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD26R",
+            "fixes": {
+                "FD26R": "FD26R 2000",
+                "AAL": "AAL AT OR ABOVE 1170 AAL 3000 HOLD AT AAL RIGHT TURN INBOUNDCOURSE 260 LEGTIME 1 FAF FD26R MAP MD26R",
+                "MD26R": "MD26R 180 RNW 26R",
+                "D260G": "OVERFLY D260G TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BAKIT",
+                    "fixes": {
+                        "BAKIT": "BAKIT AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS08L",
+            "fixes": {
+                "GIPUG": "GIPUG AT OR ABOVE 2300",
+                "FF08L": "FF08L 2300 RNW 08L",
+                "AAL": "AAL 2000 HOLD AT AAL RIGHT TURN INBOUNDCOURSE 260 ALT 2000 LEGTIME 1 FAF FF08L MAP RNW 08L"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILS26R",
+            "fixes": {
+                "CF26R": "CF26R AT OR ABOVE 2000",
+                "FF26R": "FF26R 2000 RNW 26R TRK 260 UNTIL 3.0 FROM",
+                "YT": "YT TURN RIGHT DIRECT",
+                "AAL": "AAL 3000 HOLD AT AAL RIGHT TURN INBOUNDCOURSE 260 LEGTIME 1 FAF FF26R MAP RNW 26R"
+            },
+            "transitions": [
+                {
+                    "name": "BAKIT",
+                    "fixes": {
+                        "BAKIT": "BAKIT AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08L",
+            "fixes": {
+                "GIPUG": "GIPUG AT OR ABOVE 2000",
+                "YT081": "YT081 2000 RNW 08L",
+                "YT083": "OVERFLY YT083 HOLD AT YT083 RIGHT TURN INBOUNDCOURSE 260 ALT 2000 LEGTIME 1 FAF YT081 MAP RNW 08L"
+            },
+            "transitions": [
+                {
+                    "name": "GIPUG",
+                    "fixes": {
+                        "GIPUG": "GIPUG RIGHT TURN INBOUNDCOURSE 080 ALT 2300 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "KUDEV",
+                    "fixes": {
+                        "KUDEV": "KUDEV AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "TOSVO",
+                    "fixes": {
+                        "TOSVO": "TOSVO AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26R",
+            "fixes": {
+                "BAKIT": "BAKIT AT OR ABOVE 2000 OVERFLY BAKIT 3000 SPEED 230 HOLD AT BAKIT RIGHT TURN INBOUNDCOURSE 260 ALT 3000 LEGTIME 1 FAF YT261 MAP RNW 26R",
+                "YT261": "YT261 2000 RNW 26R",
+                "YT263": "OVERFLY YT263 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BAKIT",
+                    "fixes": {
+                        "BAKIT": "BAKIT RIGHT TURN INBOUNDCOURSE 260 ALT 2300 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "OKPOT",
+                    "fixes": {
+                        "OKPOT": "OKPOT AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "VABUT",
+                    "fixes": {
+                        "VABUT": "VABUT AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR08L",
+            "fixes": {
+                "FT08L": "FT08L 2000",
+                "75TAC": "75TAC AT OR ABOVE 750",
+                "MT08L": "MT08L 136 RNW 08L",
+                "AAL": "AAL 2000 HOLD AT AAL RIGHT TURN INBOUNDCOURSE 259 ALT 2000 LEGTIME 1 FAF FT08L MAP MT08L"
+            },
+            "transitions": [
+                {
+                    "name": "GIPUG",
+                    "fixes": {
+                        "GIPUG": "GIPUG AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        }
+    ]
+}

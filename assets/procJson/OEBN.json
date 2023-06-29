@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "FS17",
+            "lat": 19.922119433333332,
+            "lon": 54.01814721666667
+        },
+        {
+            "name": "MD17",
+            "lat": 19.84785,
+            "lon": 54.01951666666667
+        },
+        {
+            "name": "PI001",
+            "lat": 19.97307445,
+            "lon": 54.01711123333333
+        },
+        {
+            "name": "PI002",
+            "lat": 20.022849866666668,
+            "lon": 53.96224203333333
+        },
+        {
+            "name": "PI003",
+            "lat": 20.081391266666667,
+            "lon": 54.01509743333333
+        },
+        {
+            "name": "PI004",
+            "lat": 19.88946333333333,
+            "lon": 54.01875068333333
+        },
+        {
+            "name": "PI005",
+            "lat": 19.939238783333334,
+            "lon": 53.963910616666666
+        },
+        {
+            "name": "PI006",
+            "lat": 19.99778015,
+            "lon": 54.01673796666667
+        },
+        {
+            "name": "RADVI",
+            "lat": 19.91475,
+            "lon": 54.018194433333335
+        },
+        {
+            "name": "THA",
+            "lat": 19.831138883333335,
+            "lon": 54.01983333333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "RADVI": "RADVI 1900 RADVI HOLD AT RADVI RIGHT TURN INBOUNDCOURSE 178 LEGTIME 1 FAF RADVI MAP MD17",
+                "MD17": "MD17 591 RNW 17 TRK 178 UNTIL 1500 TURN LEFT DIRECT",
+                "THA": "THA 2500"
+            },
+            "transitions": [
+                {
+                    "name": "THA",
+                    "fixes": {
+                        "THA": "THA",
+                        "RADVI": "RADVI AT OR ABOVE 2500",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR17",
+            "fixes": {
+                "FS17": "FS17 2000 RNW 17",
+                "THA": "THA AT OR ABOVE 810 TRK 178 UNTIL 2000 TURN LEFT DIRECT THA 2500 HOLD AT THA RIGHT TURN INBOUNDCOURSE 178 LEGTIME 1 FAF FS17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "THA",
+                    "fixes": {
+                        "THA": "THA",
+                        "PI004": "PI004 AT OR ABOVE 2000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

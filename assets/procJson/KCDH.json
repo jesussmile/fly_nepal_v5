@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "ARIPE",
+            "lat": 33.52946111666667,
+            "lon": 92.78118611666666
+        },
+        {
+            "name": "BUSGE",
+            "lat": 33.812986116666664,
+            "lon": 92.727025
+        },
+        {
+            "name": "HULOD",
+            "lat": 33.715891666666664,
+            "lon": 92.74561388333333
+        },
+        {
+            "name": "JAVAB",
+            "lat": 33.57110278333333,
+            "lon": 92.77325278333333
+        },
+        {
+            "name": "URAME",
+            "lat": 33.432594433333335,
+            "lon": 92.79961111666667
+        },
+        {
+            "name": "XICEL",
+            "lat": 33.67448888333333,
+            "lon": 92.753525
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "URAME": "URAME AT OR ABOVE 2700",
+                "ARIPE": "ARIPE 1800",
+                "JAVAB": "JAVAB AT OR ABOVE 980 RNW 01 TRK 007 UNTIL 421",
+                "BUSGE": "OVERFLY BUSGE AT OR ABOVE 2700 HOLD AT BUSGE RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4 FAF ARIPE MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "URAME",
+                    "fixes": {
+                        "URAME": "URAME RIGHT TURN INBOUNDCOURSE 007 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "BUSGE": "BUSGE AT OR ABOVE 2700",
+                "HULOD": "HULOD 1800",
+                "XICEL": "XICEL AT OR ABOVE 1000 RNW 19 TRK 187 UNTIL 426",
+                "URAME": "OVERFLY URAME AT OR ABOVE 2700 HOLD AT URAME RIGHT TURN INBOUNDCOURSE 007 LEGDIST 4 FAF HULOD MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "BUSGE",
+                    "fixes": {
+                        "BUSGE": "BUSGE RIGHT TURN INBOUNDCOURSE 187 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

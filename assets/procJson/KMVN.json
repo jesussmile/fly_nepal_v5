@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "AYAZE",
+            "lat": 38.25569443333333,
+            "lon": 89.12238333333333
+        },
+        {
+            "name": "BIB",
+            "lat": 38.920344433333334,
+            "lon": 88.48180556666667
+        },
+        {
+            "name": "CRATS",
+            "lat": 38.574558333333336,
+            "lon": 88.70610833333333
+        },
+        {
+            "name": "CUGOX",
+            "lat": 38.36459166666667,
+            "lon": 88.79576388333334
+        },
+        {
+            "name": "ENL",
+            "lat": 38.42,
+            "lon": 89.15899721666666
+        },
+        {
+            "name": "EWING",
+            "lat": 38.070575,
+            "lon": 88.9339
+        },
+        {
+            "name": "FAMTA",
+            "lat": 38.39244721666667,
+            "lon": 88.75341666666667
+        },
+        {
+            "name": "GEJTO",
+            "lat": 38.201219433333335,
+            "lon": 89.04300556666666
+        },
+        {
+            "name": "HESUR",
+            "lat": 38.29239166666667,
+            "lon": 88.90526111666667
+        },
+        {
+            "name": "OFEND",
+            "lat": 38.49781943333333,
+            "lon": 88.59261388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 38.42992935,
+            "lon": 88.6963734
+        },
+        {
+            "name": "PI002",
+            "lat": 38.4236479,
+            "lon": 88.60524423333334
+        },
+        {
+            "name": "PI003",
+            "lat": 38.49946551666667,
+            "lon": 88.59027868333334
+        },
+        {
+            "name": "YOPZU",
+            "lat": 38.2668,
+            "lon": 88.94398611666666
+        },
+        {
+            "name": "YUCBI",
+            "lat": 38.391444433333334,
+            "lon": 88.75494166666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 15",
+        "RNW 23",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS23",
+            "fixes": {
+                "OFEND": "OFEND AT OR ABOVE 2400 OFEND OFEND AT OR ABOVE 2400 HOLD AT OFEND RIGHT TURN INBOUNDCOURSE 189 LEGTIME 1 FAF FAMTA MAP RNW 23",
+                "FAMTA": "FAMTA 2400 RNW 23 TRK 231 UNTIL 2300 TURN LEFT HDG 060 INTERCEPT RADIAL 009 TO"
+            },
+            "transitions": [
+                {
+                    "name": "BIB",
+                    "fixes": {
+                        "BIB": "BIB"
+                    }
+                },
+                {
+                    "name": "ENL",
+                    "fixes": {
+                        "ENL": "ENL",
+                        "FAMTA": "FAMTA AT OR ABOVE 2400",
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "GEJTO": "GEJTO AT OR ABOVE 3000",
+                "YOPZU": "YOPZU 2100",
+                "HESUR": "HESUR AT OR ABOVE 1320 RNW 05",
+                "OFEND": "OVERFLY OFEND AT OR ABOVE 2400 HOLD AT OFEND RIGHT TURN INBOUNDCOURSE 231 LEGDIST 4 FAF YOPZU MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "AYAZE",
+                    "fixes": {
+                        "AYAZE": "AYAZE"
+                    }
+                },
+                {
+                    "name": "CRATS",
+                    "fixes": {
+                        "CRATS": "CRATS",
+                        "GEJTO": "OVERFLY GEJTO AT OR ABOVE 3000 HOLD AT GEJTO RIGHT TURN INBOUNDCOURSE 051 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "EWING",
+                    "fixes": {
+                        "EWING": "EWING"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "OFEND": "OFEND AT OR ABOVE 2400",
+                "YUCBI": "YUCBI 2400",
+                "CUGOX": "CUGOX AT OR ABOVE 1580 RNW 23",
+                "GEJTO": "OVERFLY GEJTO AT OR ABOVE 3000 HOLD AT GEJTO RIGHT TURN INBOUNDCOURSE 051 LEGDIST 4 FAF YUCBI MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "CRATS",
+                    "fixes": {
+                        "CRATS": "CRATS"
+                    }
+                },
+                {
+                    "name": "ENL",
+                    "fixes": {
+                        "ENL": "ENL",
+                        "OFEND": "OVERFLY OFEND AT OR ABOVE 2400 HOLD AT OFEND RIGHT TURN INBOUNDCOURSE 231 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

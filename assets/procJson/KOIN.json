@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "FF35",
+            "lat": 39.74499443333333,
+            "lon": 100.56502221666666
+        },
+        {
+            "name": "HLC",
+            "lat": 39.25874721666667,
+            "lon": 100.22585
+        },
+        {
+            "name": "IBEDE",
+            "lat": 39.61787221666667,
+            "lon": 100.54245833333333
+        },
+        {
+            "name": "INARM",
+            "lat": 40.052469433333336,
+            "lon": 100.53783611666667
+        },
+        {
+            "name": "MCK",
+            "lat": 40.203797216666665,
+            "lon": 100.594225
+        },
+        {
+            "name": "OINNB",
+            "lat": 39.82953333333333,
+            "lon": 100.53771666666667
+        },
+        {
+            "name": "PABNE",
+            "lat": 39.74291388333333,
+            "lon": 100.54112778333334
+        },
+        {
+            "name": "PACEY",
+            "lat": 39.92731666666667,
+            "lon": 100.53918056666667
+        },
+        {
+            "name": "PI001",
+            "lat": 39.77374676666667,
+            "lon": 100.55990705
+        },
+        {
+            "name": "PI002",
+            "lat": 39.71046065,
+            "lon": 100.51617091666667
+        },
+        {
+            "name": "PI003",
+            "lat": 39.670131983333334,
+            "lon": 100.60102251666666
+        },
+        {
+            "name": "STIPE",
+            "lat": 39.8739,
+            "lon": 100.53974721666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 17",
+        "RNW 30",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB35",
+            "fixes": {
+                "FF35": "FF35 4600",
+                "OINNB": "OINNB 3420 RNW 35 HOLD AT OINNB RIGHT TURN INBOUNDCOURSE 011 ALT 4600 LEGTIME 1 FAF FF35 MAP OIN"
+            },
+            "transitions": [
+                {
+                    "name": "HLC",
+                    "fixes": {
+                        "HLC": "HLC",
+                        "OINNB": "OINNB AT OR ABOVE 4600",
+                        "PI001": "PI001 AT OR ABOVE 4600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4600 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MCK",
+                    "fixes": {
+                        "MCK": "MCK",
+                        "OINNB": "OINNB AT OR ABOVE 4600",
+                        "PI001": "PI001 AT OR ABOVE 4600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "INARM": "INARM AT OR ABOVE 6500",
+                "PACEY": "PACEY 4400",
+                "STIPE": "STIPE AT OR ABOVE 3380 RNW 17 TRK 174 UNTIL 2957",
+                "IBEDE": "OVERFLY IBEDE AT OR ABOVE 6500 HOLD AT IBEDE LEFT TURN INBOUNDCOURSE 354 ALT 6500 LEGDIST 7 FAF PACEY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "INARM",
+                    "fixes": {
+                        "INARM": "INARM LEFT TURN INBOUNDCOURSE 174 ALT 6500 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "IBEDE": "IBEDE AT OR ABOVE 6500",
+                "PABNE": "PABNE 4400 RNW 35 TRK 354 UNTIL 2902",
+                "INARM": "OVERFLY INARM AT OR ABOVE 6500 HOLD AT INARM LEFT TURN INBOUNDCOURSE 174 ALT 6500 LEGDIST 7 FAF PABNE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "IBEDE",
+                    "fixes": {
+                        "IBEDE": "IBEDE LEFT TURN INBOUNDCOURSE 354 ALT 6500 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

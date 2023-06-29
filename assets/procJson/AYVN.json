@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "D107O",
+            "lat": 2.7685583333333335,
+            "lon": 141.53648056666665
+        },
+        {
+            "name": "FN287",
+            "lat": 2.7205583333333334,
+            "lon": 141.41207778333333
+        },
+        {
+            "name": "FQ287",
+            "lat": 2.738561116666667,
+            "lon": 141.45872778333333
+        },
+        {
+            "name": "MQ287",
+            "lat": 2.690552783333333,
+            "lon": 141.33433056666667
+        },
+        {
+            "name": "VNO",
+            "lat": 2.67855,
+            "lon": 141.30323333333334
+        },
+        {
+            "name": "VNONB",
+            "lat": 2.67855,
+            "lon": 141.30323333333334
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBDB12",
+            "fixes": {
+                "FN287": "FN287 2500",
+                "VNONB": "VNONB 1300 RNW 12 TRK 005 UNTIL 3500 FAF FN287 MAP VNO"
+            },
+            "transitions": [
+                {
+                    "name": "VNO",
+                    "fixes": {
+                        "VNONB": "VNONB AT OR ABOVE 4500 TRK 086 UNTIL 7.0 FROM VNONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDM12",
+            "fixes": {
+                "FQ287": "FQ287 2300",
+                "MQ287": "MQ287 770 RNW 12 TRK 005 UNTIL 3500 FAF FQ287 MAP MQ287"
+            },
+            "transitions": [
+                {
+                    "name": "D107O",
+                    "fixes": {
+                        "D107O": "D107O AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "VNO",
+                    "fixes": {
+                        "VNONB": "VNONB AT OR ABOVE 4500 TRK 086 UNTIL 10.0 FROM",
+                        "VNO": "VNO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB30",
+            "fixes": {
+                "FN287": "FN287 2500",
+                "VNONB": "VNONB 1300 RNW 30 TRK 005 UNTIL 3500 FAF FN287 MAP VNO"
+            },
+            "transitions": [
+                {
+                    "name": "VNO",
+                    "fixes": {
+                        "VNONB": "VNONB AT OR ABOVE 4500 TRK 086 UNTIL 7.0 FROM VNONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDM30",
+            "fixes": {
+                "FQ287": "FQ287 2300",
+                "MQ287": "MQ287 770 RNW 30 TRK 005 UNTIL 3500 FAF FQ287 MAP MQ287"
+            },
+            "transitions": [
+                {
+                    "name": "D107O",
+                    "fixes": {
+                        "D107O": "D107O AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "VNO",
+                    "fixes": {
+                        "VNONB": "VNONB AT OR ABOVE 4500 TRK 086 UNTIL 10.0 FROM",
+                        "VNO": "VNO"
+                    }
+                }
+            ]
+        }
+    ]
+}

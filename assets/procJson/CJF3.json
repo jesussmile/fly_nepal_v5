@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "ALPEM",
+            "lat": 55.34034166666667,
+            "lon": 107.82518333333333
+        },
+        {
+            "name": "IMUGI",
+            "lat": 55.64206111666667,
+            "lon": 108.03932221666666
+        },
+        {
+            "name": "KETGO",
+            "lat": 55.63900833333334,
+            "lon": 108.03713611666667
+        },
+        {
+            "name": "NADIP",
+            "lat": 55.37135,
+            "lon": 107.67398888333334
+        },
+        {
+            "name": "ONDUV",
+            "lat": 55.56495278333333,
+            "lon": 107.98425833333333
+        },
+        {
+            "name": "OTSIK",
+            "lat": 55.33737778333333,
+            "lon": 107.82309721666667
+        },
+        {
+            "name": "PIBGA",
+            "lat": 55.41456388333334,
+            "lon": 107.87753056666666
+        },
+        {
+            "name": "UKRUR",
+            "lat": 55.303225,
+            "lon": 107.97195
+        },
+        {
+            "name": "UKTEM",
+            "lat": 55.4539,
+            "lon": 107.90536111666667
+        },
+        {
+            "name": "VIXET",
+            "lat": 55.607644433333334,
+            "lon": 108.18913888333333
+        },
+        {
+            "name": "VODOB",
+            "lat": 55.67629443333333,
+            "lon": 107.88924443333333
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "IMUGI": "IMUGI AT OR ABOVE 2900 SPEED 180",
+                "ONDUV": "ONDUV 2900 RNW 15",
+                "ALPEM": "OVERFLY ALPEM 2900 HOLD AT ALPEM RIGHT TURN INBOUNDCOURSE 145 LEGTIME 1 FAF ONDUV MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "VIXET",
+                    "fixes": {
+                        "VIXET": "VIXET SPEED 210"
+                    }
+                },
+                {
+                    "name": "VODOB",
+                    "fixes": {
+                        "VODOB": "VODOB SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "OTSIK": "OTSIK AT OR ABOVE 2900 SPEED 180",
+                "PIBGA": "PIBGA 2900",
+                "UKTEM": "UKTEM AT OR ABOVE 2070 RNW 33",
+                "KETGO": "OVERFLY KETGO 2900 HOLD AT KETGO RIGHT TURN INBOUNDCOURSE 325 LEGTIME 1 FAF PIBGA MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "NADIP",
+                    "fixes": {
+                        "NADIP": "NADIP SPEED 210"
+                    }
+                },
+                {
+                    "name": "UKRUR",
+                    "fixes": {
+                        "UKRUR": "UKRUR SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

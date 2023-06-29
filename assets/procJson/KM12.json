@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "BOYOS",
+            "lat": 36.006202783333336,
+            "lon": 89.859375
+        },
+        {
+            "name": "EQUID",
+            "lat": 36.18509721666667,
+            "lon": 89.85956666666667
+        },
+        {
+            "name": "HERSO",
+            "lat": 36.12445,
+            "lon": 89.8595
+        },
+        {
+            "name": "PIGOE",
+            "lat": 35.90438888333333,
+            "lon": 89.85926388333333
+        },
+        {
+            "name": "UBIGE",
+            "lat": 36.286908333333336,
+            "lon": 89.859675
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "UBIGE": "UBIGE AT OR ABOVE 2500",
+                "EQUID": "EQUID 1900",
+                "HERSO": "HERSO AT OR ABOVE 740 RNW 18 TRK 181 UNTIL 531",
+                "PIGOE": "OVERFLY PIGOE AT OR ABOVE 2500 HOLD AT PIGOE RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF EQUID MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "UBIGE",
+                    "fixes": {
+                        "UBIGE": "UBIGE RIGHT TURN INBOUNDCOURSE 181 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "PIGOE": "PIGOE AT OR ABOVE 2500",
+                "BOYOS": "BOYOS 1900 RNW 36 TRK 001 UNTIL 532",
+                "UBIGE": "OVERFLY UBIGE AT OR ABOVE 2500 HOLD AT UBIGE RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF BOYOS MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "PIGOE",
+                    "fixes": {
+                        "PIGOE": "PIGOE RIGHT TURN INBOUNDCOURSE 001 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

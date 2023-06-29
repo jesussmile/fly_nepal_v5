@@ -1,0 +1,104 @@
+{
+    "fixes": [
+        {
+            "name": "BOVAY",
+            "lat": 40.92265,
+            "lon": 76.77766388333333
+        },
+        {
+            "name": "HEPOP",
+            "lat": 40.973722216666665,
+            "lon": 76.51098333333333
+        },
+        {
+            "name": "MIP",
+            "lat": 41.02339166666667,
+            "lon": 76.66528888333333
+        },
+        {
+            "name": "WOXAV",
+            "lat": 40.99919443333334,
+            "lon": 76.37657778333333
+        },
+        {
+            "name": "ZEBMU",
+            "lat": 40.89791388333333,
+            "lon": 76.90553611666667
+        },
+        {
+            "name": "ZUSLI",
+            "lat": 40.94849721666667,
+            "lon": 76.64394443333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "ZEBMU": "ZEBMU AT OR ABOVE 4400",
+                "BOVAY": "BOVAY 2500 RNW 09 TRK 088 UNTIL 959",
+                "WOXAV": "OVERFLY WOXAV AT OR ABOVE 4400 HOLD AT WOXAV RIGHT TURN INBOUNDCOURSE 268 ALT 4400 LEGDIST 4 FAF BOVAY MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "ZEBMU",
+                    "fixes": {
+                        "ZEBMU": "ZEBMU RIGHT TURN INBOUNDCOURSE 088 ALT 4400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "WOXAV": "WOXAV AT OR ABOVE 4400",
+                "HEPOP": "HEPOP 2500 RNW 27 TRK 268 UNTIL 959",
+                "ZEBMU": "OVERFLY ZEBMU AT OR ABOVE 4400 HOLD AT ZEBMU RIGHT TURN INBOUNDCOURSE 088 LEGDIST 4 FAF HEPOP MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "WOXAV",
+                    "fixes": {
+                        "WOXAV": "WOXAV RIGHT TURN INBOUNDCOURSE 268 ALT 4400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA09",
+            "fixes": {
+                "MIP": "MIP 3000 MIP AT OR ABOVE 3000 HOLD AT MIP RIGHT TURN INBOUNDCOURSE 177 LEGTIME 1 FAF MIP MAP ZUSLI",
+                "ZUSLI": "OVERFLY ZUSLI 1760 RNW 09 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MIP",
+                    "fixes": {
+                        "MIP": "MIP RIGHT TURN INBOUNDCOURSE 177 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA27",
+            "fixes": {
+                "MIP": "MIP 3000 MIP AT OR ABOVE 3000 HOLD AT MIP RIGHT TURN INBOUNDCOURSE 177 LEGTIME 1 FAF MIP MAP ZUSLI",
+                "ZUSLI": "OVERFLY ZUSLI 1760 RNW 27 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MIP",
+                    "fixes": {
+                        "MIP": "MIP RIGHT TURN INBOUNDCOURSE 177 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

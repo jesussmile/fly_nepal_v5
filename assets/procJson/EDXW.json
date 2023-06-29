@@ -1,0 +1,169 @@
+{
+    "fixes": [
+        {
+            "name": "EDANI",
+            "lat": 54.979561116666666,
+            "lon": 8.258063883333334
+        },
+        {
+            "name": "OLDIP",
+            "lat": 54.61745833333333,
+            "lon": 8.703825
+        },
+        {
+            "name": "SYLTA",
+            "lat": 54.77965833333333,
+            "lon": 8.505386116666667
+        },
+        {
+            "name": "XW001",
+            "lat": 54.83569721666667,
+            "lon": 8.436363883333334
+        },
+        {
+            "name": "XW007",
+            "lat": 54.711894433333335,
+            "lon": 8.588505566666667
+        },
+        {
+            "name": "XW010",
+            "lat": 54.992838883333334,
+            "lon": 8.241522216666667
+        },
+        {
+            "name": "XW011",
+            "lat": 54.93719721666667,
+            "lon": 8.1068
+        },
+        {
+            "name": "XW012",
+            "lat": 54.82515,
+            "lon": 8.266066666666667
+        },
+        {
+            "name": "XW013",
+            "lat": 54.68451666666667,
+            "lon": 8.419494433333334
+        },
+        {
+            "name": "XW141",
+            "lat": 55.03225833333333,
+            "lon": 8.192358333333333
+        },
+        {
+            "name": "XW142",
+            "lat": 54.983716666666666,
+            "lon": 8.074819433333333
+        },
+        {
+            "name": "XW143",
+            "lat": 54.73375278333334,
+            "lon": 8.252655566666666
+        },
+        {
+            "name": "XW144",
+            "lat": 54.79877221666667,
+            "lon": 8.304802783333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 14",
+        "RNW 24",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "OLDI1A",
+            "rnw": "14",
+            "fixes": {
+                "XW001": "XW001",
+                "OLDIP": "OLDIP SPEED 250"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OLDI1B",
+            "rnw": "32",
+            "fixes": {
+                "XW010": "XW010",
+                "XW011": "XW011 SPEED 205",
+                "XW012": "XW012",
+                "XW013": "XW013",
+                "OLDIP": "OLDIP SPEED 250"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS32",
+            "fixes": {
+                "XW007": "XW007 AT OR ABOVE 3000",
+                "SYLTA": "SYLTA 3000 RNW 32",
+                "XW010": "XW010",
+                "XW011": "XW011 SPEED 200",
+                "XW012": "XW012",
+                "XW013": "XW013",
+                "OLDIP": "OLDIP 3000 SPEED 250 FAF SYLTA MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "OLDIP",
+                    "fixes": {
+                        "OLDIP": "OLDIP AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "XW141": "XW141 AT OR ABOVE 1500 SPEED 210",
+                "EDANI": "EDANI 1500 RNW 14",
+                "OLDIP": "OLDIP 3000 HOLD AT OLDIP RIGHT TURN INBOUNDCOURSE 321 ALT 3000 SPEED 230 LEGTIME 1 FAF EDANI MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "OLDI1",
+                    "fixes": {
+                        "OLDIP": "OLDIP AT OR ABOVE 3000",
+                        "XW143": "XW143 AT OR ABOVE 3000",
+                        "XW142": "XW142 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "OLDI2",
+                    "fixes": {
+                        "OLDIP": "OLDIP AT OR ABOVE 3000",
+                        "XW144": "XW144 AT OR ABOVE 3000",
+                        "XW142": "XW142 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "XW007": "XW007 AT OR ABOVE 3000",
+                "SYLTA": "SYLTA 3000 RNW 32",
+                "XW010": "XW010",
+                "XW011": "XW011 SPEED 200",
+                "XW012": "XW012",
+                "XW013": "XW013",
+                "OLDIP": "OLDIP 3000 SPEED 250 FAF SYLTA MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "OLDIP",
+                    "fixes": {
+                        "OLDIP": "OLDIP AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

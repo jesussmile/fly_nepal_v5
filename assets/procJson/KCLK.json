@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "BFV",
+            "lat": 35.236944433333335,
+            "lon": 99.20616666666666
+        },
+        {
+            "name": "GUVEC",
+            "lat": 35.753497216666666,
+            "lon": 98.77214721666667
+        },
+        {
+            "name": "HUVIV",
+            "lat": 35.320588883333336,
+            "lon": 99.070825
+        },
+        {
+            "name": "JENUM",
+            "lat": 35.75165,
+            "lon": 98.93594443333333
+        },
+        {
+            "name": "KEKEC",
+            "lat": 35.749580566666666,
+            "lon": 99.09973333333333
+        },
+        {
+            "name": "LIONS",
+            "lat": 35.31713333333333,
+            "lon": 98.18595556666666
+        },
+        {
+            "name": "ODINS",
+            "lat": 35.70121111666667,
+            "lon": 98.38153888333333
+        },
+        {
+            "name": "OSUCU",
+            "lat": 35.32236666666667,
+            "lon": 98.92826943333333
+        },
+        {
+            "name": "ROLLS",
+            "lat": 35.72274443333333,
+            "lon": 99.47069721666666
+        },
+        {
+            "name": "RONCY",
+            "lat": 35.449216666666665,
+            "lon": 98.93051111666666
+        },
+        {
+            "name": "VODUC",
+            "lat": 35.576405566666665,
+            "lon": 98.93279166666667
+        },
+        {
+            "name": "YATUN",
+            "lat": 35.323975,
+            "lon": 98.78570833333333
+        },
+        {
+            "name": "ZEPRO",
+            "lat": 35.62436111666667,
+            "lon": 98.93365278333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 17",
+        "RNW 31",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "JENUM": "JENUM AT OR ABOVE 4000",
+                "ZEPRO": "ZEPRO 3200",
+                "VODUC": "VODUC AT OR ABOVE 2280 RNW 17 TRK 172 UNTIL 1866",
+                "OSUCU": "OVERFLY OSUCU AT OR ABOVE 4000 HOLD AT OSUCU RIGHT TURN INBOUNDCOURSE 352 LEGDIST 4 FAF ZEPRO MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ODINS",
+                    "fixes": {
+                        "ODINS": "ODINS",
+                        "GUVEC": "GUVEC AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "ROLLS",
+                    "fixes": {
+                        "ROLLS": "ROLLS",
+                        "KEKEC": "KEKEC AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "OSUCU": "OSUCU AT OR ABOVE 4000 OVERFLY OSUCU AT OR ABOVE 4000 HOLD AT OSUCU RIGHT TURN INBOUNDCOURSE 352 LEGDIST 4 FAF RONCY MAP RNW 35",
+                "RONCY": "RONCY 3200 RNW 35 TRK 352 UNTIL 2400 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BFV",
+                    "fixes": {
+                        "BFV": "BFV",
+                        "HUVIV": "HUVIV AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "LIONS",
+                    "fixes": {
+                        "LIONS": "LIONS",
+                        "YATUN": "YATUN AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

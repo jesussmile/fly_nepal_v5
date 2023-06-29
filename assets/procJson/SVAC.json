@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "AGV",
+            "lat": 9.552083333333334,
+            "lon": 69.23791666666666
+        },
+        {
+            "name": "ASETI",
+            "lat": 9.398691666666666,
+            "lon": 69.12279721666667
+        },
+        {
+            "name": "FF035",
+            "lat": 9.469733333333334,
+            "lon": 69.27659166666666
+        },
+        {
+            "name": "ICION",
+            "lat": 9.383083333333333,
+            "lon": 69.41036111666666
+        },
+        {
+            "name": "MUKUM",
+            "lat": 9.564311116666667,
+            "lon": 69.27791111666667
+        },
+        {
+            "name": "OGNER",
+            "lat": 9.442819433333334,
+            "lon": 69.05111388333333
+        },
+        {
+            "name": "OSIPI",
+            "lat": 9.514758333333333,
+            "lon": 69.09430278333333
+        },
+        {
+            "name": "PALUR",
+            "lat": 9.555097216666667,
+            "lon": 69.02036666666666
+        },
+        {
+            "name": "PI001",
+            "lat": 9.499214483333333,
+            "lon": 69.26291213333333
+        },
+        {
+            "name": "PI002",
+            "lat": 9.431868983333333,
+            "lon": 69.23806478333333
+        },
+        {
+            "name": "PI003",
+            "lat": 9.401024783333334,
+            "lon": 69.30931186666666
+        },
+        {
+            "name": "RENIR",
+            "lat": 9.533433333333333,
+            "lon": 69.163475
+        },
+        {
+            "name": "TOMAX",
+            "lat": 9.640833333333333,
+            "lon": 69.04861111666666
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "OSIPI": "OSIPI AT OR ABOVE 3500",
+                "RENIR": "RENIR 2100 RNW 29",
+                "MUKUM": "OVERFLY MUKUM TURN RIGHT DIRECT",
+                "PALUR": "OVERFLY PALUR 4500 HOLD AT PALUR RIGHT TURN INBOUNDCOURSE 252 LEGDIST 4 FAF RENIR MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "ICION",
+                    "fixes": {
+                        "ICION": "ICION",
+                        "ASETI": "ASETI AT OR ABOVE 3500",
+                        "OGNER": "OGNER AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "TOMAX",
+                    "fixes": {
+                        "TOMAX": "TOMAX",
+                        "PALUR": "PALUR AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA11",
+            "fixes": {
+                "FF035": "FF035 2500",
+                "AGV": "AGV 1300 RNW 11 TRK 036 UNTIL 1300 TURN LEFT DIRECT AGV AT OR ABOVE 4000 HOLD AT AGV LEFT TURN INBOUNDCOURSE 216 LEGTIME 1 FAF FF035 MAP AGV"
+            },
+            "transitions": [
+                {
+                    "name": "AGV",
+                    "fixes": {
+                        "AGV": "AGV AT OR ABOVE 4000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA29",
+            "fixes": {
+                "FF035": "FF035 2500",
+                "AGV": "AGV 1300 RNW 29 TRK 036 UNTIL 1300 TURN LEFT DIRECT AGV AT OR ABOVE 4000 HOLD AT AGV LEFT TURN INBOUNDCOURSE 216 LEGTIME 1 FAF FF035 MAP AGV"
+            },
+            "transitions": [
+                {
+                    "name": "AGV",
+                    "fixes": {
+                        "AGV": "AGV AT OR ABOVE 4000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

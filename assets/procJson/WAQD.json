@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "QD401",
+            "lat": 2.7239722166666667,
+            "lon": 117.38844443333333
+        },
+        {
+            "name": "QD402",
+            "lat": 2.6651944333333333,
+            "lon": 117.35647221666666
+        },
+        {
+            "name": "QD403",
+            "lat": 2.6973611166666664,
+            "lon": 117.29805556666666
+        },
+        {
+            "name": "QD404",
+            "lat": 2.7515277833333336,
+            "lon": 117.3275
+        },
+        {
+            "name": "QD405",
+            "lat": 2.7906944333333334,
+            "lon": 117.34880556666667
+        },
+        {
+            "name": "QD601",
+            "lat": 2.8669444333333334,
+            "lon": 117.46622221666667
+        },
+        {
+            "name": "QD602",
+            "lat": 2.9257222166666668,
+            "lon": 117.49819443333334
+        },
+        {
+            "name": "QD603",
+            "lat": 2.957861116666667,
+            "lon": 117.43972221666667
+        },
+        {
+            "name": "QD604",
+            "lat": 2.905694433333333,
+            "lon": 117.41136111666667
+        },
+        {
+            "name": "UNROT",
+            "lat": 2.8377499999999998,
+            "lon": 117.37338888333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "QD403": "QD403 AT OR ABOVE 2300 SPEED 210",
+                "QD404": "QD404 1800",
+                "QD405": "QD405 AT OR ABOVE 950 RNW 03 TRK 029 UNTIL 1500 TURN RIGHT DIRECT",
+                "UNROT": "UNROT AT OR ABOVE 3000 HOLD AT UNROT LEFT TURN INBOUNDCOURSE 170 ALT 3000 SPEED 210 LEGTIME 1 FAF QD404 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "UNROT",
+                    "fixes": {
+                        "UNROT": "UNROT AT OR ABOVE 3000",
+                        "QD401": "QD401 AT OR ABOVE 2700",
+                        "QD402": "QD402 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "QD603": "QD603 AT OR ABOVE 2100 SPEED 220",
+                "QD604": "QD604 1400 RNW 21 TRK 209 UNTIL 1500 TURN LEFT DIRECT",
+                "UNROT": "UNROT AT OR ABOVE 3000 HOLD AT UNROT LEFT TURN INBOUNDCOURSE 073 ALT 3000 SPEED 220 LEGTIME 1 FAF QD604 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "UNROT",
+                    "fixes": {
+                        "UNROT": "UNROT AT OR ABOVE 3000",
+                        "QD601": "QD601",
+                        "QD602": "QD602 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

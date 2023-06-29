@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "DONAW",
+            "lat": 31.986669433333333,
+            "lon": 99.98552778333334
+        },
+        {
+            "name": "FILEP",
+            "lat": 31.786130566666667,
+            "lon": 99.98716666666667
+        },
+        {
+            "name": "GEREC",
+            "lat": 32.02472778333333,
+            "lon": 99.98521388333333
+        },
+        {
+            "name": "OWENN",
+            "lat": 31.69440833333333,
+            "lon": 100.28576111666666
+        },
+        {
+            "name": "PADYI",
+            "lat": 31.91773888333333,
+            "lon": 99.98609166666667
+        },
+        {
+            "name": "ROXAE",
+            "lat": 32.108255566666664,
+            "lon": 99.98452778333333
+        },
+        {
+            "name": "SAVHE",
+            "lat": 31.86995,
+            "lon": 99.98648333333334
+        },
+        {
+            "name": "SHEPP",
+            "lat": 32.219458333333336,
+            "lon": 100.00490278333334
+        },
+        {
+            "name": "TQA",
+            "lat": 32.23574166666667,
+            "lon": 99.81678333333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "ROXAE": "ROXAE AT OR ABOVE 4000",
+                "GEREC": "GEREC 3300",
+                "DONAW": "DONAW AT OR ABOVE 2560 RNW 17 TRK 172 UNTIL 2271",
+                "FILEP": "OVERFLY FILEP AT OR ABOVE 3400 HOLD AT FILEP RIGHT TURN INBOUNDCOURSE 352 LEGDIST 4 FAF GEREC MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ROXAE",
+                    "fixes": {
+                        "ROXAE": "ROXAE RIGHT TURN INBOUNDCOURSE 172 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SHEPP",
+                    "fixes": {
+                        "SHEPP": "SHEPP"
+                    }
+                },
+                {
+                    "name": "TQA",
+                    "fixes": {
+                        "TQA": "TQA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FILEP": "FILEP AT OR ABOVE 4000",
+                "SAVHE": "SAVHE 3300",
+                "PADYI": "PADYI AT OR ABOVE 2380 RNW 35 TRK 352 UNTIL 2240",
+                "ROXAE": "OVERFLY ROXAE AT OR ABOVE 4000 HOLD AT ROXAE RIGHT TURN INBOUNDCOURSE 172 LEGDIST 4 FAF SAVHE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "OWENN",
+                    "fixes": {
+                        "OWENN": "OWENN"
+                    }
+                },
+                {
+                    "name": "TQA",
+                    "fixes": {
+                        "TQA": "TQA",
+                        "FILEP": "OVERFLY FILEP AT OR ABOVE 4000 HOLD AT FILEP RIGHT TURN INBOUNDCOURSE 352 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

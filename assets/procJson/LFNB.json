@@ -1,0 +1,60 @@
+{
+    "fixes": [
+        {
+            "name": "FNB12",
+            "lat": 44.58627778333334,
+            "lon": 3.3663055666666666
+        },
+        {
+            "name": "INB12",
+            "lat": 44.648305566666664,
+            "lon": 3.2439722166666667
+        },
+        {
+            "name": "MEN",
+            "lat": 44.608361116666664,
+            "lon": 3.1624166666666667
+        },
+        {
+            "name": "NB502",
+            "lat": 44.71630556666667,
+            "lon": 3.270444433333333
+        },
+        {
+            "name": "NB510",
+            "lat": 44.48625,
+            "lon": 3.5625
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "INB12": "INB12 7000",
+                "FNB12": "FNB12 7000 RNW 12",
+                "NB510": "OVERFLY NB510 AT OR BELOW 7000 SPEED 130 TURN RIGHT DIRECT",
+                "MEN": "MEN 7000 SPEED 130 HOLD AT MEN LEFT TURN INBOUNDCOURSE 054 ALT 7000 SPEED 170 LEGTIME 1 FAF FNB12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "MEN",
+                    "fixes": {
+                        "MEN": "MEN AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "NB502",
+                    "fixes": {
+                        "NB502": "NB502 AT OR ABOVE 7400"
+                    }
+                }
+            ]
+        }
+    ]
+}

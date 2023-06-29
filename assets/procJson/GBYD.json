@@ -1,0 +1,302 @@
+{
+    "fixes": [
+        {
+            "name": "25THR",
+            "lat": 13.375316666666667,
+            "lon": 16.697683333333334
+        },
+        {
+            "name": "AMTOL",
+            "lat": 13.167277783333333,
+            "lon": 16.450361116666667
+        },
+        {
+            "name": "BJ",
+            "lat": 13.338133333333333,
+            "lon": 16.6555
+        },
+        {
+            "name": "CD14",
+            "lat": 13.454591666666667,
+            "lon": 16.787686116666666
+        },
+        {
+            "name": "CD32",
+            "lat": 13.225369433333332,
+            "lon": 16.513411116666667
+        },
+        {
+            "name": "CI32",
+            "lat": 13.222927783333333,
+            "lon": 16.515447216666665
+        },
+        {
+            "name": "DENOS",
+            "lat": 13.507444433333333,
+            "lon": 16.854444433333335
+        },
+        {
+            "name": "FF14",
+            "lat": 13.398833333333334,
+            "lon": 16.724372216666666
+        },
+        {
+            "name": "FF32",
+            "lat": 13.278072216666667,
+            "lon": 16.579791666666665
+        },
+        {
+            "name": "FI32",
+            "lat": 13.277411116666666,
+            "lon": 16.580311116666667
+        },
+        {
+            "name": "MA32",
+            "lat": 13.3204,
+            "lon": 16.633138883333334
+        },
+        {
+            "name": "RW14",
+            "lat": 13.348455566666667,
+            "lon": 16.664833333333334
+        },
+        {
+            "name": "RW32",
+            "lat": 13.327297216666667,
+            "lon": 16.639686116666667
+        },
+        {
+            "name": "YD001",
+            "lat": 13.54675,
+            "lon": 16.752694433333332
+        },
+        {
+            "name": "YD002",
+            "lat": 13.404277783333333,
+            "lon": 16.879194433333332
+        },
+        {
+            "name": "YD003",
+            "lat": 13.453,
+            "lon": 16.789472216666667
+        },
+        {
+            "name": "YD004",
+            "lat": 13.398527783333334,
+            "lon": 16.724555566666666
+        },
+        {
+            "name": "YD006",
+            "lat": 13.310277783333333,
+            "lon": 16.619416666666666
+        },
+        {
+            "name": "YD007",
+            "lat": 13.529055566666667,
+            "lon": 16.533583333333333
+        },
+        {
+            "name": "YD008",
+            "lat": 13.128888883333333,
+            "lon": 16.551888883333334
+        },
+        {
+            "name": "YD009",
+            "lat": 13.271333333333333,
+            "lon": 16.425472216666666
+        },
+        {
+            "name": "YD010",
+            "lat": 13.222638883333333,
+            "lon": 16.515166666666666
+        },
+        {
+            "name": "YD011",
+            "lat": 13.277166666666666,
+            "lon": 16.58
+        },
+        {
+            "name": "YD013",
+            "lat": 13.365444433333334,
+            "lon": 16.68511111666667
+        },
+        {
+            "name": "YD014",
+            "lat": 13.146638883333333,
+            "lon": 16.770805566666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD14",
+            "fixes": {
+                "CD14": "CD14 AT OR ABOVE 1600",
+                "FF14": "FF14 1600",
+                "25THR": "25THR AT OR ABOVE 940 RNW 14 TRK 142 UNTIL 1600 TURN RIGHT DIRECT",
+                "DENOS": "DENOS 2500 HOLD AT DENOS RIGHT TURN INBOUNDCOURSE 141 LEGTIME 1 FAF FF14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "DENOS",
+                    "fixes": {
+                        "DENOS": "DENOS AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD32",
+            "fixes": {
+                "CD32": "CD32 AT OR ABOVE 1600",
+                "FF32": "FF32 1600",
+                "MA32": "MA32 306 RNW 32 TRK 319 UNTIL 1600 TURN RIGHT DIRECT",
+                "AMTOL": "AMTOL 2500 HOLD AT AMTOL RIGHT TURN INBOUNDCOURSE 320 LEGDIST 5 FAF FF32 MAP MA32"
+            },
+            "transitions": [
+                {
+                    "name": "AMTOL",
+                    "fixes": {
+                        "AMTOL": "AMTOL AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS32",
+            "fixes": {
+                "CI32": "CI32 AT OR ABOVE 1600",
+                "FI32": "FI32 1600 RNW 32 TRK 321 UNTIL 1600 TURN RIGHT DIRECT",
+                "AMTOL": "AMTOL 2500 HOLD AT AMTOL RIGHT TURN INBOUNDCOURSE 320 LEGDIST 5 FAF FI32 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "AMTOL",
+                    "fixes": {
+                        "AMTOL": "AMTOL AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "YD003": "YD003 AT OR ABOVE 1600",
+                "YD004": "YD004 1600 RNW 14",
+                "YD006": "OVERFLY YD006 TURN LEFT HDG 359 INTERCEPT RADIAL 029 TO",
+                "YD007": "YD007 YD007 AT OR ABOVE 2500 FAF YD004 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "DENOS",
+                    "fixes": {
+                        "DENOS": "DENOS AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "YD001",
+                    "fixes": {
+                        "YD001": "YD001 AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "YD002",
+                    "fixes": {
+                        "YD002": "YD002 AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "YD007",
+                    "fixes": {
+                        "YD007": "YD007 AT OR ABOVE 2500",
+                        "YD001": "YD001 AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "YD010": "YD010 AT OR ABOVE 1600",
+                "YD011": "YD011 1600 RNW 32",
+                "YD013": "OVERFLY YD013 TURN LEFT HDG 179 INTERCEPT RADIAL 209 TO",
+                "YD014": "YD014 YD014 AT OR ABOVE 2500 FAF YD011 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "AMTOL",
+                    "fixes": {
+                        "AMTOL": "AMTOL AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "YD008",
+                    "fixes": {
+                        "YD008": "YD008 AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "YD009",
+                    "fixes": {
+                        "YD009": "YD009 AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "YD014",
+                    "fixes": {
+                        "YD014": "YD014 AT OR ABOVE 2500",
+                        "YD008": "YD008 AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR14",
+            "fixes": {
+                "FF14": "FF14 1600 RNW 14",
+                "BJ": "BJ AT OR ABOVE 500 TRK 142 UNTIL 1600 TURN RIGHT DIRECT BJ 2500 HOLD AT BJ RIGHT TURN INBOUNDCOURSE 343 SPEED 230 LEGTIME 1 FAF FF14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "BJ1",
+                    "fixes": {
+                        "BJ": "BJ AT OR ABOVE 2500 TRK 343 UNTIL 8.8 FROM BJ"
+                    }
+                },
+                {
+                    "name": "BJ2",
+                    "fixes": {
+                        "BJ": "BJ AT OR ABOVE 2500 TRK 334 UNTIL 7.0 FROM BJ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR32",
+            "fixes": {
+                "FF32": "FF32 1600",
+                "MA32": "MA32 306 RNW 32",
+                "BJ": "BJ AT OR ABOVE 500 TRK 319 UNTIL 1600 TURN RIGHT DIRECT BJ 2500 HOLD AT BJ RIGHT TURN INBOUNDCOURSE 319 LEGTIME 1 FAF FF32 MAP MA32"
+            },
+            "transitions": [
+                {
+                    "name": "BJ1",
+                    "fixes": {
+                        "BJ": "BJ RIGHT TURN INBOUNDCOURSE 319 ALT 1600 LEGTIME 2"
+                    }
+                },
+                {
+                    "name": "BJ2",
+                    "fixes": {
+                        "BJ": "BJ RIGHT TURN INBOUNDCOURSE 319 ALT 1600 LEGTIME 3"
+                    }
+                }
+            ]
+        }
+    ]
+}

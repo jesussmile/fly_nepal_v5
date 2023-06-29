@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "BARRL",
+            "lat": 37.77067778333333,
+            "lon": 85.52131943333333
+        },
+        {
+            "name": "DSTIL",
+            "lat": 37.602411116666666,
+            "lon": 85.48061666666666
+        },
+        {
+            "name": "ESSEV",
+            "lat": 37.96735556666667,
+            "lon": 85.29878333333333
+        },
+        {
+            "name": "EWO",
+            "lat": 37.63181111666667,
+            "lon": 85.67587778333333
+        },
+        {
+            "name": "FAMRU",
+            "lat": 38.034816666666664,
+            "lon": 85.51449166666667
+        },
+        {
+            "name": "MAARK",
+            "lat": 37.740066666666664,
+            "lon": 85.53648611666667
+        },
+        {
+            "name": "MAASH",
+            "lat": 37.669544433333336,
+            "lon": 85.69543056666667
+        },
+        {
+            "name": "MAKRZ",
+            "lat": 37.63602778333333,
+            "lon": 85.587975
+        },
+        {
+            "name": "MARNY",
+            "lat": 37.743383333333334,
+            "lon": 85.56637221666666
+        },
+        {
+            "name": "OXVOR",
+            "lat": 38.001136116666665,
+            "lon": 85.40658888333333
+        },
+        {
+            "name": "UNDOZ",
+            "lat": 37.908022216666666,
+            "lon": 85.45303056666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD03",
+            "fixes": {
+                "EWO": "EWO AT OR ABOVE 2500 EWO AT OR ABOVE 2500 HOLD AT EWO RIGHT TURN INBOUNDCOURSE 037 LEGTIME 1 FAF MARNY MAP RNW 03",
+                "MARNY": "MARNY 2500 RNW 03 TRK 037 UNTIL 1070 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EWO",
+                    "fixes": {
+                        "EWO": "EWO RIGHT TURN INBOUNDCOURSE 037 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MAKRZ": "MAKRZ AT OR ABOVE 3100 SPEED 180",
+                "MAARK": "MAARK 2300",
+                "BARRL": "BARRL AT OR ABOVE 1560 RNW 03 TRK 026 UNTIL 1000",
+                "OXVOR": "OVERFLY OXVOR AT OR ABOVE 3000 HOLD AT OXVOR RIGHT TURN INBOUNDCOURSE 207 LEGDIST 4 FAF MAARK MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "DSTIL",
+                    "fixes": {
+                        "DSTIL": "DSTIL"
+                    }
+                },
+                {
+                    "name": "MAASH",
+                    "fixes": {
+                        "MAASH": "MAASH"
+                    }
+                },
+                {
+                    "name": "MAKRZ",
+                    "fixes": {
+                        "MAKRZ": "MAKRZ RIGHT TURN INBOUNDCOURSE 026 ALT 3100 SPEED 180 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "OXVOR": "OXVOR AT OR ABOVE 3000 SPEED 180",
+                "UNDOZ": "UNDOZ 2500 RNW 21 TRK 207 UNTIL 919",
+                "MAKRZ": "OVERFLY MAKRZ AT OR ABOVE 3100 HOLD AT MAKRZ RIGHT TURN INBOUNDCOURSE 026 LEGDIST 4 FAF UNDOZ MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "ESSEV",
+                    "fixes": {
+                        "ESSEV": "ESSEV"
+                    }
+                },
+                {
+                    "name": "FAMRU",
+                    "fixes": {
+                        "FAMRU": "FAMRU"
+                    }
+                },
+                {
+                    "name": "OXVOR",
+                    "fixes": {
+                        "OXVOR": "OXVOR RIGHT TURN INBOUNDCOURSE 207 ALT 3000 SPEED 180 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

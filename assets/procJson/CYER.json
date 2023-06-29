@@ -1,0 +1,167 @@
+{
+    "fixes": [
+        {
+            "name": "ALKUS",
+            "lat": 56.07669166666667,
+            "lon": 87.75553888333333
+        },
+        {
+            "name": "EBNAX",
+            "lat": 56.155711116666666,
+            "lon": 87.86465
+        },
+        {
+            "name": "GUDOV",
+            "lat": 55.956811116666664,
+            "lon": 87.59111388333334
+        },
+        {
+            "name": "ITKAT",
+            "lat": 55.96115556666667,
+            "lon": 87.59705278333334
+        },
+        {
+            "name": "MA330",
+            "lat": 56.014861116666665,
+            "lon": 87.67003056666667
+        },
+        {
+            "name": "MUVOT",
+            "lat": 56.206502783333335,
+            "lon": 87.74657778333334
+        },
+        {
+            "name": "ODGIB",
+            "lat": 55.8819,
+            "lon": 87.48903888333334
+        },
+        {
+            "name": "PI001",
+            "lat": 55.946599383333336,
+            "lon": 87.5748174
+        },
+        {
+            "name": "PI002",
+            "lat": 55.9378001,
+            "lon": 87.44781605
+        },
+        {
+            "name": "PI003",
+            "lat": 55.86111255,
+            "lon": 87.45611223333333
+        },
+        {
+            "name": "RABUB",
+            "lat": 56.08107221666667,
+            "lon": 87.76157221666666
+        },
+        {
+            "name": "TANRO",
+            "lat": 56.10480556666667,
+            "lon": 87.98240833333334
+        },
+        {
+            "name": "UMEPA",
+            "lat": 55.93233611666667,
+            "lon": 87.37131111666666
+        },
+        {
+            "name": "VIVOR",
+            "lat": 55.83135,
+            "lon": 87.60646111666667
+        },
+        {
+            "name": "YERNB",
+            "lat": 55.992583333333336,
+            "lon": 87.63895278333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA15",
+            "fixes": {
+                "YERNB": "YERNB 800 YERNB 1500 FAF YERNB MAP MA330",
+                "MA330": "MA330 660 RNW 15 TRK 329 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "YER",
+                    "fixes": {
+                        "YERNB": "YERNB",
+                        "PI001": "PI001 AT OR ABOVE 1300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA33",
+            "fixes": {
+                "YERNB": "YERNB 800 YERNB 1500 FAF YERNB MAP MA330",
+                "MA330": "MA330 660 RNW 33 TRK 329 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "YER",
+                    "fixes": {
+                        "YERNB": "YERNB",
+                        "PI001": "PI001 AT OR ABOVE 1300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "EBNAX": "EBNAX AT OR ABOVE 1400",
+                "ALKUS": "ALKUS 1400 RNW 15",
+                "GUDOV": "OVERFLY GUDOV 1500 HOLD AT GUDOV RIGHT TURN INBOUNDCOURSE 150 LEGTIME 1 FAF ALKUS MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "MUVOT",
+                    "fixes": {
+                        "MUVOT": "MUVOT SPEED 210"
+                    }
+                },
+                {
+                    "name": "TANRO",
+                    "fixes": {
+                        "TANRO": "TANRO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ODGIB": "ODGIB AT OR ABOVE 1400",
+                "ITKAT": "ITKAT 1400 RNW 33",
+                "RABUB": "OVERFLY RABUB 1500 HOLD AT RABUB RIGHT TURN INBOUNDCOURSE 330 LEGTIME 1 FAF ITKAT MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "UMEPA",
+                    "fixes": {
+                        "UMEPA": "UMEPA SPEED 210"
+                    }
+                },
+                {
+                    "name": "VIVOR",
+                    "fixes": {
+                        "VIVOR": "VIVOR SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

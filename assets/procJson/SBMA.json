@@ -1,0 +1,235 @@
+{
+    "fixes": [
+        {
+            "name": "ALDIG",
+            "lat": 5.406333333333333,
+            "lon": 49.18366666666667
+        },
+        {
+            "name": "ESNER",
+            "lat": 6.314,
+            "lon": 48.41266666666667
+        },
+        {
+            "name": "KOTLO",
+            "lat": 4.362,
+            "lon": 48.96366666666667
+        },
+        {
+            "name": "MA001",
+            "lat": 5.5445,
+            "lon": 49.351333333333336
+        },
+        {
+            "name": "MA002",
+            "lat": 5.575666666666667,
+            "lon": 49.2405
+        },
+        {
+            "name": "MA003",
+            "lat": 5.429833333333334,
+            "lon": 49.36033333333334
+        },
+        {
+            "name": "MA004",
+            "lat": 5.480833333333333,
+            "lon": 49.274
+        },
+        {
+            "name": "MA006",
+            "lat": 5.427666666666667,
+            "lon": 49.2095
+        },
+        {
+            "name": "MA007",
+            "lat": 5.1925,
+            "lon": 48.92483333333333
+        },
+        {
+            "name": "MA008",
+            "lat": 5.161666666666667,
+            "lon": 49.035666666666664
+        },
+        {
+            "name": "MA009",
+            "lat": 5.3075,
+            "lon": 48.91583333333333
+        },
+        {
+            "name": "MA011",
+            "lat": 5.256333333333333,
+            "lon": 49.00216666666667
+        },
+        {
+            "name": "MA012",
+            "lat": 5.309666666666667,
+            "lon": 49.06666666666667
+        },
+        {
+            "name": "MA017",
+            "lat": 5.5411222166666665,
+            "lon": 49.07020833333333
+        },
+        {
+            "name": "MA018",
+            "lat": 5.2103,
+            "lon": 49.16191943333333
+        },
+        {
+            "name": "NUXOD",
+            "lat": 5.740166666666667,
+            "lon": 49.178666666666665
+        },
+        {
+            "name": "SAVKA",
+            "lat": 5.331,
+            "lon": 49.092333333333336
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "ALDI1B",
+            "rnw": "25",
+            "fixes": {
+                "ALDIG": "OVERFLY ALDIG SPEED 190"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ESNER",
+                    "fixes": [
+                        "MA017",
+                        "ESNER"
+                    ]
+                },
+                {
+                    "name": "KOTLO",
+                    "fixes": [
+                        "MA018",
+                        "KOTLO"
+                    ]
+                },
+                {
+                    "name": "NUXOD",
+                    "fixes": [
+                        "MA017",
+                        "NUXOD"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OMNI",
+            "rnw": "25",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 07",
+                    "fixes": {
+                        "RNW 07": "RNW 07 TRK 071 UNTIL 2000 HDG 071 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 25",
+                    "fixes": {
+                        "RNW 25": "RNW 25 TRK 251 UNTIL 2000 HDG 251 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "SAVK1A",
+            "rnw": "07",
+            "fixes": {
+                "SAVKA": "OVERFLY SAVKA SPEED 190"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ESNER",
+                    "fixes": [
+                        "MA017",
+                        "ESNER"
+                    ]
+                },
+                {
+                    "name": "KOTLO",
+                    "fixes": [
+                        "KOTLO"
+                    ]
+                },
+                {
+                    "name": "NUXOD",
+                    "fixes": [
+                        "MA017",
+                        "NUXOD"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "MA004": "MA004 AT OR ABOVE 2500",
+                "MA006": "MA006 2000 RNW 07",
+                "MA007": "OVERFLY MA007 AT OR ABOVE 4000 HOLD AT MA007 RIGHT TURN INBOUNDCOURSE 251 ALT 4000 LEGTIME 1 FAF MA006 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "MA001",
+                    "fixes": {
+                        "MA001": "MA001 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "MA002",
+                    "fixes": {
+                        "MA002": "MA002 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "MA003",
+                    "fixes": {
+                        "MA003": "MA003 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "MA011": "MA011 AT OR ABOVE 2500",
+                "MA012": "MA012 1980 RNW 25",
+                "MA001": "OVERFLY MA001 AT OR ABOVE 4000 HOLD AT MA001 RIGHT TURN INBOUNDCOURSE 071 ALT 4000 LEGTIME 1 FAF MA012 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "MA007",
+                    "fixes": {
+                        "MA007": "MA007 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "MA008",
+                    "fixes": {
+                        "MA008": "MA008 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "MA009",
+                    "fixes": {
+                        "MA009": "MA009 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

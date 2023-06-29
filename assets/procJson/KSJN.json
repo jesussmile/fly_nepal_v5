@@ -1,0 +1,249 @@
+{
+    "fixes": [
+        {
+            "name": "CAPEP",
+            "lat": 34.67889721666667,
+            "lon": 109.49671388333333
+        },
+        {
+            "name": "CUVOV",
+            "lat": 34.43091943333334,
+            "lon": 109.31183333333334
+        },
+        {
+            "name": "DEHOG",
+            "lat": 34.390261116666665,
+            "lon": 110.01253888333333
+        },
+        {
+            "name": "DIGAY",
+            "lat": 34.59424443333333,
+            "lon": 109.43346943333333
+        },
+        {
+            "name": "GUVCE",
+            "lat": 34.34618056666667,
+            "lon": 109.24898056666666
+        },
+        {
+            "name": "HOXOK",
+            "lat": 34.39168888333333,
+            "lon": 109.28273056666667
+        },
+        {
+            "name": "HUGOV",
+            "lat": 34.48394166666667,
+            "lon": 109.35126943333333
+        },
+        {
+            "name": "IRECU",
+            "lat": 34.64578888333333,
+            "lon": 109.70861111666666
+        },
+        {
+            "name": "PAFEL",
+            "lat": 34.47337221666667,
+            "lon": 109.27142778333334
+        },
+        {
+            "name": "PERRL",
+            "lat": 34.45054721666666,
+            "lon": 109.04799166666666
+        },
+        {
+            "name": "PI001",
+            "lat": 34.39937223333333,
+            "lon": 109.07945748333333
+        },
+        {
+            "name": "PI002",
+            "lat": 34.423856566666664,
+            "lon": 108.99781556666667
+        },
+        {
+            "name": "PI003",
+            "lat": 34.35346903333333,
+            "lon": 108.96056488333333
+        },
+        {
+            "name": "RABOY",
+            "lat": 34.49446111666666,
+            "lon": 109.32628056666667
+        },
+        {
+            "name": "SAKOY",
+            "lat": 34.512855566666666,
+            "lon": 109.37415833333333
+        },
+        {
+            "name": "SJN",
+            "lat": 34.42404166666667,
+            "lon": 109.14353056666667
+        },
+        {
+            "name": "ZERIG",
+            "lat": 34.487802783333336,
+            "lon": 109.35414721666666
+        },
+        {
+            "name": "ZOVEK",
+            "lat": 34.5634,
+            "lon": 109.41046111666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 14",
+        "RNW 21",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "CAPEP": "CAPEP AT OR ABOVE 8300",
+                "DIGAY": "DIGAY 7300 RNW 14 TRK 136 UNTIL 6137",
+                "ZERIG": "ZERIG",
+                "SJN": "OVERFLY SJN AT OR ABOVE 9000 HOLD AT SJN RIGHT TURN INBOUNDCOURSE 239 LEGDIST 7 FAF DIGAY MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "DEHOG",
+                    "fixes": {
+                        "DEHOG": "DEHOG",
+                        "IRECU": "IRECU AT OR ABOVE 8900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "GUVCE": "GUVCE AT OR ABOVE 9400",
+                "HOXOK": "HOXOK AT OR ABOVE 8500",
+                "CUVOV": "CUVOV 7700",
+                "HUGOV": "HUGOV AT OR ABOVE 6480 RNW 32 TRK 316 UNTIL 5987",
+                "ZOVEK": "ZOVEK",
+                "IRECU": "OVERFLY IRECU AT OR ABOVE 9400 HOLD AT IRECU RIGHT TURN INBOUNDCOURSE 099 LEGDIST 7 FAF CUVOV MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "IRECU",
+                    "fixes": {
+                        "IRECU": "IRECU",
+                        "GUVCE": "OVERFLY GUVCE AT OR ABOVE 9400 HOLD AT GUVCE LEFT TURN INBOUNDCOURSE 316 ALT 9400 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "SJN",
+                    "fixes": {
+                        "SJN": "SJN",
+                        "GUVCE": "OVERFLY GUVCE AT OR ABOVE 9400 HOLD AT GUVCE LEFT TURN INBOUNDCOURSE 316 ALT 9400 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA03",
+            "fixes": {
+                "SJN": "SJN AT OR ABOVE 9100 SJN AT OR ABOVE 9100 HOLD AT SJN RIGHT TURN INBOUNDCOURSE 239 ALT 9100 LEGTIME 1 FAF PAFEL MAP SAKOY",
+                "PAFEL": "PAFEL 8000",
+                "RABOY": "RABOY AT OR ABOVE 6960",
+                "SAKOY": "SAKOY 6280 RNW 03 TRK 283 UNTIL 6280 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PERRL",
+                    "fixes": {
+                        "PERRL": "PERRL"
+                    }
+                },
+                {
+                    "name": "SJN",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 9100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 9100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 9100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA14",
+            "fixes": {
+                "SJN": "SJN AT OR ABOVE 9100 SJN AT OR ABOVE 9100 HOLD AT SJN RIGHT TURN INBOUNDCOURSE 239 ALT 9100 LEGTIME 1 FAF PAFEL MAP SAKOY",
+                "PAFEL": "PAFEL 8000",
+                "RABOY": "RABOY AT OR ABOVE 6960",
+                "SAKOY": "SAKOY 6280 RNW 14 TRK 283 UNTIL 6280 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PERRL",
+                    "fixes": {
+                        "PERRL": "PERRL"
+                    }
+                },
+                {
+                    "name": "SJN",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 9100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 9100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 9100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA21",
+            "fixes": {
+                "SJN": "SJN AT OR ABOVE 9100 SJN AT OR ABOVE 9100 HOLD AT SJN RIGHT TURN INBOUNDCOURSE 239 ALT 9100 LEGTIME 1 FAF PAFEL MAP SAKOY",
+                "PAFEL": "PAFEL 8000",
+                "RABOY": "RABOY AT OR ABOVE 6960",
+                "SAKOY": "SAKOY 6280 RNW 21 TRK 283 UNTIL 6280 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PERRL",
+                    "fixes": {
+                        "PERRL": "PERRL"
+                    }
+                },
+                {
+                    "name": "SJN",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 9100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 9100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 9100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA32",
+            "fixes": {
+                "SJN": "SJN AT OR ABOVE 9100 SJN AT OR ABOVE 9100 HOLD AT SJN RIGHT TURN INBOUNDCOURSE 239 ALT 9100 LEGTIME 1 FAF PAFEL MAP SAKOY",
+                "PAFEL": "PAFEL 8000",
+                "RABOY": "RABOY AT OR ABOVE 6960",
+                "SAKOY": "SAKOY 6280 RNW 32 TRK 283 UNTIL 6280 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PERRL",
+                    "fixes": {
+                        "PERRL": "PERRL"
+                    }
+                },
+                {
+                    "name": "SJN",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 9100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 9100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 9100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

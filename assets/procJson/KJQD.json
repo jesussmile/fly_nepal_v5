@@ -1,0 +1,77 @@
+{
+    "fixes": [
+        {
+            "name": "CCT",
+            "lat": 37.38242221666667,
+            "lon": 87.26370278333333
+        },
+        {
+            "name": "DOZBO",
+            "lat": 37.53069443333333,
+            "lon": 86.80815833333334
+        },
+        {
+            "name": "EPPOW",
+            "lat": 37.27791388333333,
+            "lon": 86.95373056666666
+        },
+        {
+            "name": "HUTVU",
+            "lat": 37.496625,
+            "lon": 86.82784443333334
+        },
+        {
+            "name": "VUSWO",
+            "lat": 37.379475,
+            "lon": 86.89537778333333
+        },
+        {
+            "name": "ZUTJO",
+            "lat": 37.628630566666665,
+            "lon": 86.75145278333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "EPPOW": "EPPOW AT OR ABOVE 2500",
+                "VUSWO": "VUSWO 2100 RNW 03 TRK 027 UNTIL 780",
+                "ZUTJO": "OVERFLY ZUTJO AT OR ABOVE 2500 HOLD AT ZUTJO RIGHT TURN INBOUNDCOURSE 207 LEGDIST 4 FAF VUSWO MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "CCT",
+                    "fixes": {
+                        "CCT": "CCT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "ZUTJO": "ZUTJO AT OR ABOVE 2500",
+                "DOZBO": "DOZBO 2200",
+                "HUTVU": "HUTVU AT OR ABOVE 1360 RNW 21 TRK 207 UNTIL 787",
+                "VUSWO": "VUSWO",
+                "CCT": "OVERFLY CCT AT OR ABOVE 3000 HOLD AT CCT RIGHT TURN INBOUNDCOURSE 153 LEGDIST 4 FAF DOZBO MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "CCT",
+                    "fixes": {
+                        "CCT": "CCT",
+                        "ZUTJO": "OVERFLY ZUTJO AT OR ABOVE 2500 HOLD AT ZUTJO RIGHT TURN INBOUNDCOURSE 207 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

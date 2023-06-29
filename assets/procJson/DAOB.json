@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "D080G",
+            "lat": 35.36595,
+            "lon": 1.6558111166666667
+        },
+        {
+            "name": "D080H",
+            "lat": 35.368538883333336,
+            "lon": 1.6759444333333333
+        },
+        {
+            "name": "FF26",
+            "lat": 35.35817221666667,
+            "lon": 1.5954194333333334
+        },
+        {
+            "name": "TRB",
+            "lat": 35.34775556666666,
+            "lon": 1.5149166666666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD26",
+            "fixes": {
+                "FF26": "FF26 5090",
+                "TRB": "TRB 3818 RNW 26 TRK 260 UNTIL 4270 TURN LEFT DIRECT TRB 6210 FAF FF26 MAP TRB"
+            },
+            "transitions": [
+                {
+                    "name": "TRB1",
+                    "fixes": {
+                        "TRB": "TRB AT OR ABOVE 6210 TRK 053 UNTIL 8.0 FROM TRB TURN RIGHT DIRECT",
+                        "D080H": "D080H AT OR ABOVE 5090"
+                    }
+                },
+                {
+                    "name": "TRB2",
+                    "fixes": {
+                        "TRB": "TRB AT OR ABOVE 6210 TRK 066 UNTIL 7.0 FROM TRB TURN RIGHT DIRECT",
+                        "D080G": "D080G AT OR ABOVE 5090"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26",
+            "fixes": {
+                "FF26": "FF26 5090",
+                "TRB": "TRB 3818 RNW 26 TRK 260 UNTIL 4270 TURN LEFT DIRECT TRB 6210 FAF FF26 MAP TRB"
+            },
+            "transitions": [
+                {
+                    "name": "TRB1",
+                    "fixes": {
+                        "TRB": "TRB AT OR ABOVE 6210 TRK 053 UNTIL 7.0 FROM TRB"
+                    }
+                },
+                {
+                    "name": "TRB2",
+                    "fixes": {
+                        "TRB": "TRB AT OR ABOVE 6210 TRK 066 UNTIL 6.0 FROM TRB"
+                    }
+                }
+            ]
+        }
+    ]
+}

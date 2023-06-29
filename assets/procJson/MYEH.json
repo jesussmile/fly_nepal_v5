@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "CHOIE",
+            "lat": 25.45395278333333,
+            "lon": 76.74113888333333
+        },
+        {
+            "name": "FEGIG",
+            "lat": 25.347858333333335,
+            "lon": 77.29891111666667
+        },
+        {
+            "name": "HEKOP",
+            "lat": 25.237486116666666,
+            "lon": 77.551425
+        },
+        {
+            "name": "HODOD",
+            "lat": 25.205991666666666,
+            "lon": 76.94518611666666
+        },
+        {
+            "name": "JATEX",
+            "lat": 25.534536116666665,
+            "lon": 76.91568611666666
+        },
+        {
+            "name": "JEDIK",
+            "lat": 25.40444443333333,
+            "lon": 76.87805556666666
+        },
+        {
+            "name": "LENKY",
+            "lat": 25.497302783333332,
+            "lon": 76.62157221666666
+        },
+        {
+            "name": "LOBNE",
+            "lat": 25.442777783333334,
+            "lon": 76.77222221666666
+        },
+        {
+            "name": "MAPRE",
+            "lat": 25.326944433333335,
+            "lon": 76.84305556666666
+        },
+        {
+            "name": "ZOLGO",
+            "lat": 25.481666666666666,
+            "lon": 76.91277778333334
+        },
+        {
+            "name": "ZUTUN",
+            "lat": 24.963311116666667,
+            "lon": 77.24717221666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "CHOIE2",
+            "rnw": "25",
+            "fixes": {
+                "CHOIE": "OVERFLY CHOIE AT OR ABOVE 631"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "HEKOP",
+                    "fixes": [
+                        "FEGIG",
+                        "HEKOP"
+                    ]
+                },
+                {
+                    "name": "ZUTUN",
+                    "fixes": [
+                        "HODOD",
+                        "ZUTUN"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "LENKY2",
+            "rnw": "07",
+            "fixes": {
+                "LENKY": "OVERFLY LENKY AT OR ABOVE 645"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "HEKOP",
+                    "fixes": [
+                        "JATEX",
+                        "FEGIG",
+                        "HEKOP"
+                    ]
+                },
+                {
+                    "name": "ZUTUN",
+                    "fixes": [
+                        "HODOD",
+                        "ZUTUN"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "JEDIK": "JEDIK AT OR ABOVE 2300",
+                "LOBNE": "LOBNE 1600 RNW 07 TRK 076 UNTIL 430 TURN LEFT DIRECT",
+                "ZOLGO": "OVERFLY ZOLGO AT OR ABOVE 2300 HOLD AT ZOLGO RIGHT TURN INBOUNDCOURSE 166 LEGTIME 1 FAF LOBNE MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "MAPRE",
+                    "fixes": {
+                        "MAPRE": "MAPRE"
+                    }
+                },
+                {
+                    "name": "ZOLGO",
+                    "fixes": {
+                        "ZOLGO": "ZOLGO"
+                    }
+                }
+            ]
+        }
+    ]
+}

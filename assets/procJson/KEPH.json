@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "CIGUM",
+            "lat": 47.37709721666667,
+            "lon": 119.42504443333333
+        },
+        {
+            "name": "DOFDO",
+            "lat": 47.112883333333336,
+            "lon": 119.92634443333333
+        },
+        {
+            "name": "ELN",
+            "lat": 47.024375,
+            "lon": 120.45841388333334
+        },
+        {
+            "name": "EPH",
+            "lat": 47.37791943333333,
+            "lon": 119.42400278333334
+        },
+        {
+            "name": "MWH",
+            "lat": 47.21086388333333,
+            "lon": 119.31681666666667
+        },
+        {
+            "name": "PI001",
+            "lat": 47.423874483333336,
+            "lon": 119.37092086666667
+        },
+        {
+            "name": "PI002",
+            "lat": 47.495006233333335,
+            "lon": 119.38384755
+        },
+        {
+            "name": "PI003",
+            "lat": 47.5091544,
+            "lon": 119.27209395
+        },
+        {
+            "name": "PLUSS",
+            "lat": 47.173763883333336,
+            "lon": 119.55025833333333
+        },
+        {
+            "name": "TICYU",
+            "lat": 47.45141666666667,
+            "lon": 119.32359721666667
+        },
+        {
+            "name": "UDECU",
+            "lat": 47.142863883333334,
+            "lon": 119.74215
+        },
+        {
+            "name": "WAGOB",
+            "lat": 47.53657221666667,
+            "lon": 119.20524721666666
+        },
+        {
+            "name": "WIGEB",
+            "lat": 47.286275,
+            "lon": 119.54847221666667
+        },
+        {
+            "name": "WIMBU",
+            "lat": 47.234763883333336,
+            "lon": 119.61821111666667
+        },
+        {
+            "name": "WIPES",
+            "lat": 47.41293056666667,
+            "lon": 119.10817221666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 04",
+        "RNW 11",
+        "RNW 21",
+        "RNW 22",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "UDECU": "UDECU AT OR ABOVE 4500",
+                "WIMBU": "WIMBU 3200",
+                "WIGEB": "WIGEB AT OR ABOVE 1820 RNW 03 TRK 027 UNTIL 1519",
+                "TICYU": "OVERFLY TICYU AT OR ABOVE 3800 HOLD AT TICYU RIGHT TURN INBOUNDCOURSE 207 LEGDIST 4 FAF WIMBU MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "ELN",
+                    "fixes": {
+                        "ELN": "ELN",
+                        "DOFDO": "DOFDO AT OR ABOVE 6700"
+                    }
+                },
+                {
+                    "name": "MWH",
+                    "fixes": {
+                        "MWH": "MWH",
+                        "UDECU": "OVERFLY UDECU AT OR ABOVE 4500 HOLD AT UDECU RIGHT TURN INBOUNDCOURSE 027 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "TICYU": "TICYU AT OR ABOVE 3800",
+                "CIGUM": "CIGUM 2900 RNW 21",
+                "UDECU": "OVERFLY UDECU AT OR ABOVE 4500 HOLD AT UDECU RIGHT TURN INBOUNDCOURSE 027 LEGDIST 5 FAF CIGUM MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "MWH",
+                    "fixes": {
+                        "MWH": "MWH",
+                        "TICYU": "OVERFLY TICYU AT OR ABOVE 4000 HOLD AT TICYU RIGHT TURN INBOUNDCOURSE 207 ALT 3800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WIPES",
+                    "fixes": {
+                        "WIPES": "WIPES"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR21",
+            "fixes": {
+                "WAGOB": "WAGOB AT OR ABOVE 3500",
+                "EPH": "EPH 3000 RNW 21 TRK 202 UNTIL 1680 HDG 152 INTERCEPT RADIAL 182 TO",
+                "PLUSS": "PLUSS PLUSS AT OR ABOVE 4000 HOLD AT PLUSS LEFT TURN INBOUNDCOURSE 059 LEGTIME 1 FAF EPH MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "WIPE1",
+                    "fixes": {
+                        "WIPES": "WIPES",
+                        "EPH": "EPH AT OR ABOVE 4000",
+                        "PI001": "PI001 AT OR ABOVE 4000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "WIPES",
+                    "fixes": {
+                        "WIPES": "WIPES"
+                    }
+                }
+            ]
+        }
+    ]
+}

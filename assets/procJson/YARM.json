@@ -1,0 +1,217 @@
+{
+    "fixes": [
+        {
+            "name": "50NDB",
+            "lat": 30.491925,
+            "lon": 151.70254166666666
+        },
+        {
+            "name": "ARM",
+            "lat": 30.527722216666668,
+            "lon": 151.61538888333334
+        },
+        {
+            "name": "ARMEA",
+            "lat": 30.352838883333334,
+            "lon": 151.77346666666668
+        },
+        {
+            "name": "ARMEB",
+            "lat": 30.390669433333333,
+            "lon": 151.87502778333334
+        },
+        {
+            "name": "ARMEC",
+            "lat": 30.486361116666668,
+            "lon": 151.86880833333333
+        },
+        {
+            "name": "ARMEF",
+            "lat": 30.478563883333333,
+            "lon": 151.71102778333332
+        },
+        {
+            "name": "ARMEI",
+            "lat": 30.434644433333332,
+            "lon": 151.79306388333333
+        },
+        {
+            "name": "ARMEM",
+            "lat": 30.522413883333332,
+            "lon": 151.62896111666666
+        },
+        {
+            "name": "ARMET",
+            "lat": 30.558827783333335,
+            "lon": 151.58916388333333
+        },
+        {
+            "name": "ARMNB",
+            "lat": 30.527305566666666,
+            "lon": 151.61502778333335
+        },
+        {
+            "name": "ARMWD",
+            "lat": 30.70445,
+            "lon": 151.45941388333333
+        },
+        {
+            "name": "ARMWE",
+            "lat": 30.666186116666665,
+            "lon": 151.35765
+        },
+        {
+            "name": "ARMWF",
+            "lat": 30.57899443333333,
+            "lon": 151.52241111666666
+        },
+        {
+            "name": "ARMWG",
+            "lat": 30.57065,
+            "lon": 151.36447221666666
+        },
+        {
+            "name": "ARMWH",
+            "lat": 30.48964721666667,
+            "lon": 151.65701111666667
+        },
+        {
+            "name": "ARMWI",
+            "lat": 30.622616666666666,
+            "lon": 151.44006666666667
+        },
+        {
+            "name": "ARMWM",
+            "lat": 30.535319433333335,
+            "lon": 151.60468333333333
+        },
+        {
+            "name": "FN05",
+            "lat": 30.595986116666666,
+            "lon": 151.50566111666666
+        },
+        {
+            "name": "FQ23",
+            "lat": 30.477777783333334,
+            "lon": 151.73749166666667
+        },
+        {
+            "name": "MQ23",
+            "lat": 30.514544433333334,
+            "lon": 151.6466
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 09",
+        "RNW 23",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB05",
+            "fixes": {
+                "FN05": "FN05 5000 RNW 05",
+                "ARMNB": "OVERFLY ARMNB TRK 042 UNTIL 6100 FAF FN05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "ARM1",
+                    "fixes": {
+                        "ARMNB": "ARMNB AT OR ABOVE 6000 SPEED 210 TRK 247 UNTIL 7.0 FROM ARMNB"
+                    }
+                },
+                {
+                    "name": "ARM2",
+                    "fixes": {
+                        "ARMNB": "ARMNB AT OR ABOVE 6000 SPEED 210 TRK 236 UNTIL 7.5 FROM ARMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD23",
+            "fixes": {
+                "FQ23": "FQ23 5660",
+                "50NDB": "50NDB AT OR ABOVE 5030",
+                "MQ23": "MQ23 4018 RNW 23 TRK 233 UNTIL 6100 FAF FQ23 MAP MQ23"
+            },
+            "transitions": [
+                {
+                    "name": "ARM1",
+                    "fixes": {
+                        "ARMNB": "ARMNB AT OR ABOVE 6000 SPEED 210 TRK 081 UNTIL 7.0 FROM",
+                        "ARM": "ARM"
+                    }
+                },
+                {
+                    "name": "ARM2",
+                    "fixes": {
+                        "ARMNB": "ARMNB AT OR ABOVE 6000 SPEED 210 TRK 066 UNTIL 7.0 FROM",
+                        "ARM": "ARM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "ARMWI": "ARMWI AT OR ABOVE 6100",
+                "ARMWF": "ARMWF 5260",
+                "ARMWM": "OVERFLY ARMWM 3667 RNW 05",
+                "ARMWH": "OVERFLY ARMWH TRK 027 UNTIL 6100 FAF ARMWF MAP ARMWM"
+            },
+            "transitions": [
+                {
+                    "name": "ARMWD",
+                    "fixes": {
+                        "ARMWD": "ARMWD AT OR ABOVE 6100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "ARMWE",
+                    "fixes": {
+                        "ARMWE": "ARMWE AT OR ABOVE 6100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "ARMWG",
+                    "fixes": {
+                        "ARMWG": "ARMWG AT OR ABOVE 6100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "ARMEI": "ARMEI AT OR ABOVE 6100",
+                "ARMEF": "ARMEF 5280",
+                "ARMEM": "OVERFLY ARMEM 3690 RNW 23",
+                "ARMET": "OVERFLY ARMET TRK 199 UNTIL 6100 FAF ARMEF MAP ARMEM"
+            },
+            "transitions": [
+                {
+                    "name": "ARMEA",
+                    "fixes": {
+                        "ARMEA": "ARMEA AT OR ABOVE 6100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "ARMEB",
+                    "fixes": {
+                        "ARMEB": "ARMEB AT OR ABOVE 6100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "ARMEC",
+                    "fixes": {
+                        "ARMEC": "ARMEC AT OR ABOVE 6100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

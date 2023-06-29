@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "CI27",
+            "lat": 52.677269433333336,
+            "lon": 1.4826694333333332
+        },
+        {
+            "name": "D086J",
+            "lat": 52.667741666666664,
+            "lon": 0.9955916666666667
+        },
+        {
+            "name": "D100I",
+            "lat": 52.648772216666664,
+            "lon": 1.5327722166666666
+        },
+        {
+            "name": "D110I",
+            "lat": 52.62365556666666,
+            "lon": 1.5212138833333333
+        },
+        {
+            "name": "D271J",
+            "lat": 52.67130278333333,
+            "lon": 1.5699388833333334
+        },
+        {
+            "name": "FI27",
+            "lat": 52.67710556666667,
+            "lon": 1.4552888833333333
+        },
+        {
+            "name": "FN09",
+            "lat": 52.671722216666666,
+            "lon": 1.1131305666666667
+        },
+        {
+            "name": "FN27",
+            "lat": 52.67395556666666,
+            "lon": 1.4550277833333334
+        },
+        {
+            "name": "ML27",
+            "lat": 52.67613333333333,
+            "lon": 1.3099027833333334
+        },
+        {
+            "name": "NWINB",
+            "lat": 52.67754166666667,
+            "lon": 1.2915027833333332
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS27",
+            "fixes": {
+                "CI27": "CI27 AT OR ABOVE 2000",
+                "FI27": "FI27 2000 RNW 27 TRK 268 UNTIL 1600 TURN RIGHT DIRECT",
+                "NWINB": "NWINB 2000 SPEED 210 HOLD AT NWINB RIGHT TURN INBOUNDCOURSE 268 LEGTIME 1 FAF FI27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "NWI1",
+                    "fixes": {
+                        "NWINB": "NWINB AT OR ABOVE 2000 SPEED 210",
+                        "D110I": "OVERFLY D110I"
+                    }
+                },
+                {
+                    "name": "NWI2",
+                    "fixes": {
+                        "NWINB": "NWINB AT OR ABOVE 2000 SPEED 210",
+                        "D100I": "OVERFLY D100I"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC27",
+            "fixes": {
+                "CI27": "CI27 AT OR ABOVE 2000",
+                "FI27": "FI27 2000",
+                "ML27": "ML27 315 RNW 27 TRK 268 UNTIL 1600 TURN RIGHT DIRECT",
+                "NWINB": "NWINB 2000 SPEED 210 HOLD AT NWINB RIGHT TURN INBOUNDCOURSE 268 LEGTIME 1 FAF FI27 MAP ML27"
+            },
+            "transitions": [
+                {
+                    "name": "NWI1",
+                    "fixes": {
+                        "NWINB": "NWINB AT OR ABOVE 2000 SPEED 210",
+                        "D110I": "OVERFLY D110I"
+                    }
+                },
+                {
+                    "name": "NWI2",
+                    "fixes": {
+                        "NWINB": "NWINB AT OR ABOVE 2000 SPEED 210",
+                        "D100I": "OVERFLY D100I"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FN09": "FN09 2000 RNW 09",
+                "NWINB": "OVERFLY NWINB TRK 086 UNTIL 1600 TURN LEFT DIRECT NWINB 2000 HOLD AT NWINB RIGHT TURN INBOUNDCOURSE 268 ALT 2000 LEGTIME 1 FAF FN09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "D086J",
+                    "fixes": {
+                        "D086J": "D086J AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "NWI1",
+                    "fixes": {
+                        "NWINB": "NWINB AT OR ABOVE 2000 SPEED 210 TRK 284 UNTIL 9.6 FROM NWINB"
+                    }
+                },
+                {
+                    "name": "NWI2",
+                    "fixes": {
+                        "NWINB": "NWINB AT OR ABOVE 2000 SPEED 210 TRK 275 UNTIL 9.6 FROM NWINB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FN27": "FN27 2000 RNW 27",
+                "NWINB": "OVERFLY NWINB TRK 271 UNTIL 1600 TURN RIGHT DIRECT NWINB 2000 HOLD AT NWINB RIGHT TURN INBOUNDCOURSE 268 ALT 2000 LEGTIME 1 FAF FN27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "D271J",
+                    "fixes": {
+                        "D271J": "D271J AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "NWI1",
+                    "fixes": {
+                        "NWINB": "NWINB AT OR ABOVE 2000 SPEED 210 TRK 111 UNTIL 9.0 FROM NWINB"
+                    }
+                },
+                {
+                    "name": "NWI2",
+                    "fixes": {
+                        "NWINB": "NWINB AT OR ABOVE 2000 SPEED 210 TRK 101 UNTIL 9.0 FROM NWINB"
+                    }
+                }
+            ]
+        }
+    ]
+}

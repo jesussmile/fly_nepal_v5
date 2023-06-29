@@ -1,0 +1,215 @@
+{
+    "fixes": [
+        {
+            "name": "FF12",
+            "lat": 18.015569433333333,
+            "lon": 141.005125
+        },
+        {
+            "name": "FF30",
+            "lat": 18.136725,
+            "lon": 140.87679443333334
+        },
+        {
+            "name": "FN12",
+            "lat": 18.009369433333333,
+            "lon": 141.01116111666667
+        },
+        {
+            "name": "FN30",
+            "lat": 18.131055566666667,
+            "lon": 140.88338333333334
+        },
+        {
+            "name": "HAONB",
+            "lat": 18.081944433333334,
+            "lon": 140.94044443333334
+        },
+        {
+            "name": "OBLEK",
+            "lat": 18.005694433333332,
+            "lon": 141.14283333333333
+        },
+        {
+            "name": "ODODO",
+            "lat": 17.887361116666668,
+            "lon": 141.14319443333332
+        },
+        {
+            "name": "OKATA",
+            "lat": 18.26275,
+            "lon": 140.87202778333332
+        },
+        {
+            "name": "OLDIS",
+            "lat": 18.143861116666667,
+            "lon": 140.74880556666668
+        },
+        {
+            "name": "OREVA",
+            "lat": 17.886972216666667,
+            "lon": 141.01961111666665
+        },
+        {
+            "name": "OSRAN",
+            "lat": 18.262194433333335,
+            "lon": 140.74816666666666
+        },
+        {
+            "name": "TO401",
+            "lat": 18.005302783333335,
+            "lon": 141.01916666666668
+        },
+        {
+            "name": "TO402",
+            "lat": 18.144427783333335,
+            "lon": 140.87255278333333
+        },
+        {
+            "name": "TO403",
+            "lat": 17.946344433333334,
+            "lon": 141.08119443333334
+        },
+        {
+            "name": "TO404",
+            "lat": 18.203316666666666,
+            "lon": 140.81038611666668
+        },
+        {
+            "name": "TO411",
+            "lat": 18.132605566666665,
+            "lon": 141.09111111666667
+        },
+        {
+            "name": "TO412",
+            "lat": 18.21621388333333,
+            "lon": 141.00632778333335
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBW12",
+            "fixes": {
+                "FN12": "FN12 1500 RNW 12",
+                "HAONB": "OVERFLY HAONB TRK 124 UNTIL 1500 FAF FN12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "HAO",
+                    "fixes": {
+                        "HAONB": "HAONB AT OR ABOVE 1500 TRK 324 UNTIL 8.8 FROM HAONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBY12",
+            "fixes": {
+                "FF12": "FF12 1200 RNW 12",
+                "HAONB": "OVERFLY HAONB TRK 124 UNTIL 1500 FAF FF12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "HAO",
+                    "fixes": {
+                        "HAONB": "HAONB AT OR ABOVE 1500 TRK 317 UNTIL 9.0 FROM HAONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBW30",
+            "fixes": {
+                "FF30": "FF30 1500 RNW 30",
+                "HAONB": "OVERFLY HAONB TRK 299 UNTIL 1500 FAF FF30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "HAO",
+                    "fixes": {
+                        "HAONB": "HAONB TRK 144 UNTIL 7.0 FROM HAONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBY30",
+            "fixes": {
+                "FN30": "FN30 1200 RNW 30",
+                "HAONB": "OVERFLY HAONB TRK 299 UNTIL 1500 FAF FN30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "HAO",
+                    "fixes": {
+                        "HAONB": "HAONB AT OR ABOVE 1500 TRK 135 UNTIL 7.5 FROM HAONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "TO403": "TO403 AT OR ABOVE 1660",
+                "TO401": "TO401 1660 RNW 12 TRK 122 UNTIL 800 TURN RIGHT DIRECT",
+                "TO411": "TO411 SPEED 240",
+                "OBLEK": "OBLEK AT OR ABOVE 1660 SPEED 220 FAF TO401 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "OBLEK",
+                    "fixes": {
+                        "OBLEK": "OBLEK AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "ODODO",
+                    "fixes": {
+                        "ODODO": "ODODO AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "OREVA",
+                    "fixes": {
+                        "OREVA": "OREVA AT OR ABOVE 3000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "TO404": "TO404 AT OR ABOVE 1660",
+                "TO402": "TO402 1660 RNW 30 TRK 302 UNTIL 800 TURN LEFT DIRECT",
+                "TO412": "TO412 SPEED 240",
+                "OKATA": "OKATA AT OR ABOVE 1660 SPEED 220 FAF TO402 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "OKATA",
+                    "fixes": {
+                        "OKATA": "OKATA AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "OLDIS",
+                    "fixes": {
+                        "OLDIS": "OLDIS AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "OSRAN",
+                    "fixes": {
+                        "OSRAN": "OSRAN AT OR ABOVE 3000 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

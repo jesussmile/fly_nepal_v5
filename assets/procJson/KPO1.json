@@ -1,0 +1,119 @@
+{
+    "fixes": [
+        {
+            "name": "CURVU",
+            "lat": 48.14193888333333,
+            "lon": 105.21705
+        },
+        {
+            "name": "DAXIQ",
+            "lat": 48.082047216666666,
+            "lon": 104.87256111666667
+        },
+        {
+            "name": "DORIA",
+            "lat": 48.086072216666665,
+            "lon": 105.57271943333333
+        },
+        {
+            "name": "DUCBA",
+            "lat": 48.1777,
+            "lon": 104.61552778333333
+        },
+        {
+            "name": "FOKBU",
+            "lat": 48.122697216666666,
+            "lon": 105.10563611666667
+        },
+        {
+            "name": "LITVE",
+            "lat": 48.103088883333335,
+            "lon": 104.99283611666667
+        },
+        {
+            "name": "ORMOW",
+            "lat": 48.145983333333334,
+            "lon": 105.24056388333334
+        },
+        {
+            "name": "QUMGY",
+            "lat": 48.11147221666667,
+            "lon": 105.04097221666666
+        },
+        {
+            "name": "RILMY",
+            "lat": 48.154291666666666,
+            "lon": 104.86866388333334
+        },
+        {
+            "name": "WAXIV",
+            "lat": 48.15444166666666,
+            "lon": 105.28980833333334
+        },
+        {
+            "name": "ZIKIK",
+            "lat": 48.179152783333336,
+            "lon": 105.43455556666666
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 09",
+        "RNW 20",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "ZIKIK": "ZIKIK AT OR ABOVE 4500",
+                "WAXIV": "WAXIV 3600",
+                "CURVU": "CURVU AT OR ABOVE 2620 RNW 09 TRK 095 UNTIL 2226",
+                "DAXIQ": "OVERFLY DAXIQ AT OR ABOVE 4500 HOLD AT DAXIQ RIGHT TURN INBOUNDCOURSE 276 LEGDIST 5 FAF WAXIV MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DORIA",
+                    "fixes": {
+                        "DORIA": "DORIA"
+                    }
+                },
+                {
+                    "name": "RILMY",
+                    "fixes": {
+                        "RILMY": "RILMY",
+                        "ZIKIK": "OVERFLY ZIKIK AT OR ABOVE 6000 HOLD AT ZIKIK RIGHT TURN INBOUNDCOURSE 095 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "DAXIQ": "DAXIQ AT OR ABOVE 4500",
+                "LITVE": "LITVE AT OR ABOVE 3900",
+                "QUMGY": "QUMGY 3600",
+                "FOKBU": "FOKBU AT OR ABOVE 2740 RNW 27 TRK 276 UNTIL 2286",
+                "ORMOW": "ORMOW",
+                "DORIA": "OVERFLY DORIA AT OR ABOVE 6000 HOLD AT DORIA RIGHT TURN INBOUNDCOURSE 072 LEGDIST 6 FAF QUMGY MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "DORIA",
+                    "fixes": {
+                        "DORIA": "DORIA",
+                        "DAXIQ": "OVERFLY DAXIQ AT OR ABOVE 4500 HOLD AT DAXIQ RIGHT TURN INBOUNDCOURSE 276 ALT 4500 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "DUCBA",
+                    "fixes": {
+                        "DUCBA": "DUCBA"
+                    }
+                }
+            ]
+        }
+    ]
+}

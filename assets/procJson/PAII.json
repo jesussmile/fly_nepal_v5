@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "AWXAV",
+            "lat": 58.093330566666666,
+            "lon": 157.02385833333332
+        },
+        {
+            "name": "CAMUL",
+            "lat": 58.263013883333336,
+            "lon": 157.70871388333333
+        },
+        {
+            "name": "EDGUC",
+            "lat": 58.37986111666667,
+            "lon": 157.48293611666668
+        },
+        {
+            "name": "IANNN",
+            "lat": 58.244416666666666,
+            "lon": 157.47112778333334
+        },
+        {
+            "name": "JIYOU",
+            "lat": 58.32156943333333,
+            "lon": 157.59586111666667
+        },
+        {
+            "name": "LICUG",
+            "lat": 58.11613611666667,
+            "lon": 157.265375
+        },
+        {
+            "name": "OVKUY",
+            "lat": 58.039858333333335,
+            "lon": 157.14399166666666
+        },
+        {
+            "name": "SELBE",
+            "lat": 57.98627221666667,
+            "lon": 157.26376388333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 12",
+        "RNW 21",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "JIYOU": "JIYOU AT OR ABOVE 2500",
+                "IANNN": "IANNN 1600 RNW 12 TRK 127 UNTIL 492 TURN LEFT DIRECT",
+                "EDGUC": "OVERFLY EDGUC AT OR ABOVE 2500 HOLD AT EDGUC RIGHT TURN INBOUNDCOURSE 213 LEGDIST 4 FAF IANNN MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "CAMUL",
+                    "fixes": {
+                        "CAMUL": "CAMUL"
+                    }
+                },
+                {
+                    "name": "EDGUC",
+                    "fixes": {
+                        "EDGUC": "EDGUC"
+                    }
+                },
+                {
+                    "name": "JIYOU",
+                    "fixes": {
+                        "JIYOU": "JIYOU RIGHT TURN INBOUNDCOURSE 127 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "OVKUY": "OVKUY AT OR ABOVE 2500",
+                "LICUG": "LICUG 1800 RNW 30 TRK 307 UNTIL 492",
+                "JIYOU": "OVERFLY JIYOU AT OR ABOVE 2500 HOLD AT JIYOU RIGHT TURN INBOUNDCOURSE 127 LEGDIST 4 FAF LICUG MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "AWXAV",
+                    "fixes": {
+                        "AWXAV": "AWXAV"
+                    }
+                },
+                {
+                    "name": "OVKUY",
+                    "fixes": {
+                        "OVKUY": "OVKUY RIGHT TURN INBOUNDCOURSE 307 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SELBE",
+                    "fixes": {
+                        "SELBE": "SELBE"
+                    }
+                }
+            ]
+        }
+    ]
+}

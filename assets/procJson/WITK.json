@@ -1,0 +1,160 @@
+{
+    "fixes": [
+        {
+            "name": "DONSO",
+            "lat": 4.721694433333333,
+            "lon": 97.092
+        },
+        {
+            "name": "EKOKI",
+            "lat": 4.443611116666666,
+            "lon": 97.02638888333334
+        },
+        {
+            "name": "GUSBI",
+            "lat": 4.7205555666666665,
+            "lon": 96.74722221666667
+        },
+        {
+            "name": "IRPAB",
+            "lat": 4.621166666666666,
+            "lon": 96.85363888333333
+        },
+        {
+            "name": "JILAT",
+            "lat": 4.408888883333334,
+            "lon": 97.18972221666667
+        },
+        {
+            "name": "KIKID",
+            "lat": 4.4783333333333335,
+            "lon": 96.86305556666667
+        },
+        {
+            "name": "MDN",
+            "lat": 3.50455,
+            "lon": 98.60775
+        },
+        {
+            "name": "MIDOV",
+            "lat": 4.619444433333333,
+            "lon": 96.56861111666667
+        },
+        {
+            "name": "RULGO",
+            "lat": 4.719833333333334,
+            "lon": 96.56813888333333
+        },
+        {
+            "name": "TK501",
+            "lat": 4.720305566666667,
+            "lon": 96.66497221666667
+        },
+        {
+            "name": "TK502",
+            "lat": 4.720666666666666,
+            "lon": 96.74841666666667
+        },
+        {
+            "name": "TK701",
+            "lat": 4.7218333333333335,
+            "lon": 97.01455556666667
+        },
+        {
+            "name": "TK702",
+            "lat": 4.721555566666667,
+            "lon": 96.94613888333333
+        },
+        {
+            "name": "TONAD",
+            "lat": 4.601944433333333,
+            "lon": 96.71166666666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "JILA1A",
+            "rnw": "09",
+            "fixes": {
+                "DONSO": "DONSO 7500",
+                "JILAT": "JILAT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MDN1E",
+            "rnw": "27",
+            "fixes": {
+                "GUSBI": "GUSBI",
+                "TONAD": "TONAD",
+                "KIKID": "KIKID AT OR BELOW 11000",
+                "EKOKI": "EKOKI AT OR ABOVE 14000",
+                "JILAT": "JILAT",
+                "MDN": "MDN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "JILA1B",
+            "runway": "RNW 27",
+            "fixes": {
+                "JILAT": "JILAT",
+                "DONSO": "DONSO AT OR ABOVE 8500"
+            }
+        },
+        {
+            "name": "MDN1F",
+            "runway": "RNW 09",
+            "fixes": {
+                "MDN": "MDN",
+                "JILAT": "JILAT",
+                "IRPAB": "IRPAB AT OR ABOVE 14500",
+                "MIDOV": "MIDOV AT OR ABOVE 10500",
+                "RULGO": "RULGO AT OR ABOVE 9500"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "TK501": "TK501 AT OR ABOVE 7400",
+                "TK502": "TK502 6300 RNW 09 TRK 099 UNTIL 6500 TURN RIGHT DIRECT",
+                "IRPAB": "IRPAB SPEED 200",
+                "RULGO": "RULGO AT OR ABOVE 9500 HOLD AT RULGO RIGHT TURN INBOUNDCOURSE 090 ALT 9500 LEGTIME 1 FAF TK502 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "RULGO",
+                    "fixes": {
+                        "RULGO": "RULGO AT OR ABOVE 9500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "TK701": "TK701 AT OR ABOVE 7100",
+                "TK702": "TK702 6300 RNW 27 TRK 261 UNTIL 6000 TURN LEFT DIRECT",
+                "DONSO": "DONSO AT OR ABOVE 8500 HOLD AT DONSO RIGHT TURN INBOUNDCOURSE 271 ALT 8500 LEGTIME 1 FAF TK702 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "DONSO",
+                    "fixes": {
+                        "DONSO": "DONSO AT OR ABOVE 8500"
+                    }
+                }
+            ]
+        }
+    ]
+}

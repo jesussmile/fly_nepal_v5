@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "ALARE",
+            "lat": 47.21027221666667,
+            "lon": 123.23162221666666
+        },
+        {
+            "name": "CARRO",
+            "lat": 47.293897216666664,
+            "lon": 122.85773888333334
+        },
+        {
+            "name": "HOOME",
+            "lat": 47.30769166666666,
+            "lon": 122.80491943333334
+        },
+        {
+            "name": "IMINE",
+            "lat": 47.19743056666667,
+            "lon": 123.27786111666667
+        },
+        {
+            "name": "JUVGA",
+            "lat": 47.411172216666664,
+            "lon": 122.84153888333333
+        },
+        {
+            "name": "OLM",
+            "lat": 46.971638883333334,
+            "lon": 122.90183333333333
+        },
+        {
+            "name": "OTOTE",
+            "lat": 46.982047216666665,
+            "lon": 123.36333056666666
+        },
+        {
+            "name": "OYRED",
+            "lat": 47.29858333333333,
+            "lon": 122.91134443333334
+        },
+        {
+            "name": "PORSY",
+            "lat": 47.26889166666667,
+            "lon": 123.019425
+        },
+        {
+            "name": "RINDS",
+            "lat": 46.760761116666664,
+            "lon": 123.16042778333333
+        },
+        {
+            "name": "ULESS",
+            "lat": 47.131827783333335,
+            "lon": 123.47004166666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "ULESS": "ULESS AT OR ABOVE 3200",
+                "IMINE": "IMINE 2000",
+                "ALARE": "ALARE AT OR ABOVE 1340 RNW 05 TRK 053 UNTIL 673",
+                "CARRO": "OVERFLY CARRO AT OR ABOVE 3000 HOLD AT CARRO RIGHT TURN INBOUNDCOURSE 047 LEGDIST 4 FAF IMINE MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "CARRO",
+                    "fixes": {
+                        "CARRO": "CARRO",
+                        "ULESS": "OVERFLY ULESS AT OR ABOVE 3600 HOLD AT ULESS RIGHT TURN INBOUNDCOURSE 048 ALT 3200 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "RINDS",
+                    "fixes": {
+                        "RINDS": "RINDS",
+                        "OTOTE": "OTOTE AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "OYRED": "OYRED AT OR ABOVE 2900",
+                "PORSY": "PORSY 2000 RNW 23 TRK 233 UNTIL 523",
+                "ULESS": "OVERFLY ULESS AT OR ABOVE 3200 HOLD AT ULESS RIGHT TURN INBOUNDCOURSE 048 LEGDIST 5 FAF PORSY MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "HOOME",
+                    "fixes": {
+                        "HOOME": "HOOME"
+                    }
+                },
+                {
+                    "name": "JUVGA",
+                    "fixes": {
+                        "JUVGA": "JUVGA"
+                    }
+                },
+                {
+                    "name": "OLM",
+                    "fixes": {
+                        "OLM": "OLM",
+                        "OYRED": "OVERFLY OYRED AT OR ABOVE 2900 HOLD AT OYRED RIGHT TURN INBOUNDCOURSE 233 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

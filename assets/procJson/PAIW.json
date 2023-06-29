@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "ATAYI",
+            "lat": 65.23311943333333,
+            "lon": 167.08536111666666
+        },
+        {
+            "name": "COGNU",
+            "lat": 65.80811943333333,
+            "lon": 167.83505
+        },
+        {
+            "name": "COLEG",
+            "lat": 65.70582221666666,
+            "lon": 168.00409166666665
+        },
+        {
+            "name": "DIDGE",
+            "lat": 65.64201666666666,
+            "lon": 168.08792778333333
+        },
+        {
+            "name": "FOROD",
+            "lat": 65.52302221666666,
+            "lon": 168.18964721666666
+        },
+        {
+            "name": "HOSLO",
+            "lat": 65.4153,
+            "lon": 168.18309166666666
+        },
+        {
+            "name": "SADLY",
+            "lat": 65.67356666666667,
+            "lon": 168.04653333333334
+        },
+        {
+            "name": "TNCNB",
+            "lat": 65.56173056666667,
+            "lon": 167.92480278333332
+        },
+        {
+            "name": "ZUKES",
+            "lat": 65.60905278333334,
+            "lon": 168.09984166666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "COGNU": "COGNU AT OR ABOVE 2600 OVERFLY COGNU AT OR ABOVE 2600 HOLD AT COGNU RIGHT TURN INBOUNDCOURSE 206 LEGDIST 4 FAF COLEG MAP DIDGE",
+                "COLEG": "COLEG 1700",
+                "SADLY": "SADLY AT OR ABOVE 1000",
+                "DIDGE": "OVERFLY DIDGE 313 RNW 18 TRK 200 UNTIL 500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "COGNU",
+                    "fixes": {
+                        "COGNU": "COGNU RIGHT TURN INBOUNDCOURSE 206 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HOSLO": "HOSLO AT OR ABOVE 2900",
+                "FOROD": "FOROD 2000",
+                "ZUKES": "OVERFLY ZUKES 204 RNW 36 TRK 015 UNTIL 426",
+                "COGNU": "OVERFLY COGNU AT OR ABOVE 3000 HOLD AT COGNU RIGHT TURN INBOUNDCOURSE 197 LEGDIST 4 FAF FOROD MAP ZUKES"
+            },
+            "transitions": [
+                {
+                    "name": "ATAYI",
+                    "fixes": {
+                        "ATAYI": "ATAYI"
+                    }
+                },
+                {
+                    "name": "TNC",
+                    "fixes": {
+                        "TNCNB": "TNCNB",
+                        "HOSLO": "OVERFLY HOSLO AT OR ABOVE 3200 HOLD AT HOSLO RIGHT TURN INBOUNDCOURSE 351 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

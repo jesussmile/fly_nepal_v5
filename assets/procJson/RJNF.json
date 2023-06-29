@@ -1,0 +1,83 @@
+{
+    "fixes": [
+        {
+            "name": "AWARA",
+            "lat": 36.29981943333333,
+            "lon": 136.09644166666666
+        },
+        {
+            "name": "GOZEN",
+            "lat": 36.418033333333334,
+            "lon": 136.19904721666666
+        },
+        {
+            "name": "KAGAR",
+            "lat": 36.30643611666667,
+            "lon": 136.20944721666666
+        },
+        {
+            "name": "NF181",
+            "lat": 36.223177783333334,
+            "lon": 136.21682221666666
+        },
+        {
+            "name": "NF182",
+            "lat": 36.09596388333333,
+            "lon": 136.22806388333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "AWARA1",
+            "rnw": "03",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 18",
+                    "fixes": {
+                        "RNW 18": "RNW 18 HDG 184 UNTIL 800 TURN RIGHT DIRECT",
+                        "AWARA": "AWARA"
+                    }
+                },
+                {
+                    "rwy": "RNW 36",
+                    "fixes": {
+                        "RNW 36": "RNW 36 HDG 004 UNTIL 500",
+                        "AWARA": "AWARA"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "KAGAR": "KAGAR AT OR ABOVE 1500",
+                "NF181": "NF181 1500 RNW 18",
+                "NF182": "OVERFLY NF182 TURN RIGHT DIRECT",
+                "AWARA": "AWARA 3000 HOLD AT AWARA LEFT TURN INBOUNDCOURSE 077 ALT 3000 SPEED 170 LEGDIST 4 FAF NF181 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AWARA",
+                    "fixes": {
+                        "AWARA": "AWARA AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "GOZEN",
+                    "fixes": {
+                        "GOZEN": "GOZEN AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

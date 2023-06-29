@@ -1,0 +1,83 @@
+{
+    "fixes": [
+        {
+            "name": "BFV",
+            "lat": 35.236944433333335,
+            "lon": 99.20616666666666
+        },
+        {
+            "name": "CIVIG",
+            "lat": 34.838433333333334,
+            "lon": 99.52831388333334
+        },
+        {
+            "name": "CUROX",
+            "lat": 34.80212778333333,
+            "lon": 99.52838333333334
+        },
+        {
+            "name": "HALIV",
+            "lat": 35.05830556666667,
+            "lon": 99.52789443333333
+        },
+        {
+            "name": "JASUB",
+            "lat": 34.958075,
+            "lon": 99.52808611666667
+        },
+        {
+            "name": "JUMEK",
+            "lat": 34.67994721666667,
+            "lon": 99.52853056666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "HALIV": "HALIV AT OR ABOVE 3600",
+                "JASUB": "JASUB 2800 RNW 17 TRK 175 UNTIL 1952",
+                "JUMEK": "OVERFLY JUMEK AT OR ABOVE 3700 HOLD AT JUMEK RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF JASUB MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BFV",
+                    "fixes": {
+                        "BFV": "BFV"
+                    }
+                },
+                {
+                    "name": "JUMEK",
+                    "fixes": {
+                        "JUMEK": "JUMEK",
+                        "HALIV": "OVERFLY HALIV AT OR ABOVE 3600 HOLD AT HALIV RIGHT TURN INBOUNDCOURSE 175 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "JUMEK": "JUMEK AT OR ABOVE 3700",
+                "CUROX": "CUROX 3300",
+                "CIVIG": "CIVIG AT OR ABOVE 2600 RNW 35 TRK 355 UNTIL 2020",
+                "HALIV": "OVERFLY HALIV AT OR ABOVE 3600 HOLD AT HALIV RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF CUROX MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BFV",
+                    "fixes": {
+                        "BFV": "BFV",
+                        "JUMEK": "OVERFLY JUMEK AT OR ABOVE 3700 HOLD AT JUMEK RIGHT TURN INBOUNDCOURSE 355 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

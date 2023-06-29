@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "ANXEG",
+            "lat": 40.75786111666667,
+            "lon": 78.06828611666667
+        },
+        {
+            "name": "BAIER",
+            "lat": 40.89539443333334,
+            "lon": 77.87273333333333
+        },
+        {
+            "name": "HEVNO",
+            "lat": 40.857813883333336,
+            "lon": 77.87109166666667
+        },
+        {
+            "name": "MADIW",
+            "lat": 40.886291666666665,
+            "lon": 77.82063611666666
+        },
+        {
+            "name": "PSB",
+            "lat": 40.91625833333333,
+            "lon": 77.99271666666667
+        },
+        {
+            "name": "UZIHE",
+            "lat": 40.94335,
+            "lon": 77.70132221666667
+        },
+        {
+            "name": "WOMKO",
+            "lat": 41.00799443333333,
+            "lon": 77.57237778333334
+        },
+        {
+            "name": "YUDUC",
+            "lat": 40.90948611666666,
+            "lon": 77.76865
+        },
+        {
+            "name": "YUNCU",
+            "lat": 40.827880566666664,
+            "lon": 77.93027778333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "ANXEG": "ANXEG AT OR ABOVE 4800",
+                "YUNCU": "YUNCU 3000",
+                "HEVNO": "HEVNO AT OR ABOVE 1960 RNW 07 TRK 066 UNTIL 1472",
+                "WOMKO": "OVERFLY WOMKO AT OR ABOVE 4600 HOLD AT WOMKO RIGHT TURN INBOUNDCOURSE 247 LEGDIST 5 FAF YUNCU MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "ANXEG",
+                    "fixes": {
+                        "ANXEG": "ANXEG LEFT TURN INBOUNDCOURSE 066 ALT 4800 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "WOMKO": "WOMKO AT OR ABOVE 4600",
+                "UZIHE": "UZIHE 3000",
+                "YUDUC": "YUDUC AT OR ABOVE 1820 RNW 25 TRK 246 UNTIL 1352",
+                "ANXEG": "OVERFLY ANXEG AT OR ABOVE 4800 HOLD AT ANXEG LEFT TURN INBOUNDCOURSE 066 LEGDIST 5 FAF UZIHE MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "WOMKO",
+                    "fixes": {
+                        "WOMKO": "WOMKO RIGHT TURN INBOUNDCOURSE 247 ALT 4600 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA07",
+            "fixes": {
+                "PSB": "PSB 4000 PSB AT OR ABOVE 4000 HOLD AT PSB LEFT TURN INBOUNDCOURSE 113 LEGTIME 1 FAF PSB MAP MADIW",
+                "BAIER": "BAIER AT OR ABOVE 2920",
+                "MADIW": "OVERFLY MADIW 2380 RNW 07 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PSB",
+                    "fixes": {
+                        "PSB": "PSB LEFT TURN INBOUNDCOURSE 113 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA25",
+            "fixes": {
+                "PSB": "PSB 4000 PSB AT OR ABOVE 4000 HOLD AT PSB LEFT TURN INBOUNDCOURSE 113 LEGTIME 1 FAF PSB MAP MADIW",
+                "BAIER": "BAIER AT OR ABOVE 2920",
+                "MADIW": "OVERFLY MADIW 2380 RNW 25 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PSB",
+                    "fixes": {
+                        "PSB": "PSB LEFT TURN INBOUNDCOURSE 113 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

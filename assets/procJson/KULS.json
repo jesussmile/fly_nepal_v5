@@ -1,0 +1,239 @@
+{
+    "fixes": [
+        {
+            "name": "AQXOT",
+            "lat": 37.79890833333333,
+            "lon": 101.37552778333334
+        },
+        {
+            "name": "ARXEK",
+            "lat": 37.41765,
+            "lon": 101.26740278333334
+        },
+        {
+            "name": "EXUXY",
+            "lat": 37.41285,
+            "lon": 101.25598888333333
+        },
+        {
+            "name": "FECVY",
+            "lat": 37.799472216666665,
+            "lon": 101.27038888333334
+        },
+        {
+            "name": "FF12",
+            "lat": 37.66092221666667,
+            "lon": 101.48023056666666
+        },
+        {
+            "name": "GCK",
+            "lat": 37.91900278333333,
+            "lon": 100.72500833333334
+        },
+        {
+            "name": "IHIJA",
+            "lat": 37.54207221666667,
+            "lon": 101.28733333333334
+        },
+        {
+            "name": "IKEGY",
+            "lat": 37.41708333333333,
+            "lon": 101.37200556666667
+        },
+        {
+            "name": "JEKDU",
+            "lat": 37.63268611666667,
+            "lon": 101.42464166666667
+        },
+        {
+            "name": "ODKUW",
+            "lat": 37.541105566666666,
+            "lon": 101.12204721666667
+        },
+        {
+            "name": "OFQUB",
+            "lat": 37.416425,
+            "lon": 101.47660833333333
+        },
+        {
+            "name": "PI001",
+            "lat": 37.631386383333336,
+            "lon": 101.42760671666667
+        },
+        {
+            "name": "PI002",
+            "lat": 37.702169866666665,
+            "lon": 101.4417765
+        },
+        {
+            "name": "PI003",
+            "lat": 37.69495568333333,
+            "lon": 101.53841983333334
+        },
+        {
+            "name": "UFWOB",
+            "lat": 37.79825,
+            "lon": 101.48066666666666
+        },
+        {
+            "name": "ULSNB",
+            "lat": 37.597113883333336,
+            "lon": 101.36801666666666
+        },
+        {
+            "name": "VUVKY",
+            "lat": 37.47699721666667,
+            "lon": 101.189075
+        },
+        {
+            "name": "WACJU",
+            "lat": 37.659325,
+            "lon": 101.46510833333333
+        },
+        {
+            "name": "YEVMY",
+            "lat": 37.72339721666667,
+            "lon": 101.56264443333333
+        },
+        {
+            "name": "YOSDU",
+            "lat": 37.52492221666667,
+            "lon": 101.37299721666666
+        },
+        {
+            "name": "ZAMYU",
+            "lat": 37.698566666666665,
+            "lon": 101.3746
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 17",
+        "RNW 30",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FF12": "FF12 5000 RNW 12",
+                "ULSNB": "ULSNB TRK 120 UNTIL 5100 TURN LEFT DIRECT ULSNB HOLD AT ULSNB RIGHT TURN INBOUNDCOURSE 120 LEGTIME 1 FAF FF12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "GCK",
+                    "fixes": {
+                        "GCK": "GCK",
+                        "ULSNB": "ULSNB AT OR ABOVE 5000",
+                        "PI001": "PI001 AT OR ABOVE 5000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "YEVMY": "YEVMY AT OR ABOVE 5400",
+                "WACJU": "WACJU 4800",
+                "JEKDU": "JEKDU AT OR ABOVE 4000 RNW 12 TRK 124 UNTIL 3321",
+                "VUVKY": "OVERFLY VUVKY AT OR ABOVE 5400 HOLD AT VUVKY RIGHT TURN INBOUNDCOURSE 304 LEGDIST 5 FAF WACJU MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "YEVMY",
+                    "fixes": {
+                        "YEVMY": "YEVMY RIGHT TURN INBOUNDCOURSE 124 ALT 5400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "AQXOT": "AQXOT AT OR ABOVE 5300",
+                "ZAMYU": "ZAMYU 4700 RNW 17 TRK 174 UNTIL 3460",
+                "IKEGY": "OVERFLY IKEGY AT OR ABOVE 5300 HOLD AT IKEGY RIGHT TURN INBOUNDCOURSE 354 LEGDIST 5 FAF ZAMYU MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "AQXOT",
+                    "fixes": {
+                        "AQXOT": "AQXOT RIGHT TURN INBOUNDCOURSE 174 ALT 5300 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "FECVY",
+                    "fixes": {
+                        "FECVY": "FECVY"
+                    }
+                },
+                {
+                    "name": "UFWOB",
+                    "fixes": {
+                        "UFWOB": "UFWOB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "VUVKY": "VUVKY AT OR ABOVE 5400",
+                "IHIJA": "IHIJA 4700 RNW 30 TRK 304 UNTIL 3471",
+                "YEVMY": "OVERFLY YEVMY AT OR ABOVE 5400 HOLD AT YEVMY RIGHT TURN INBOUNDCOURSE 124 LEGDIST 5 FAF IHIJA MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "EXUXY",
+                    "fixes": {
+                        "EXUXY": "EXUXY"
+                    }
+                },
+                {
+                    "name": "ODKUW",
+                    "fixes": {
+                        "ODKUW": "ODKUW"
+                    }
+                },
+                {
+                    "name": "VUVKY",
+                    "fixes": {
+                        "VUVKY": "VUVKY RIGHT TURN INBOUNDCOURSE 304 ALT 5400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "IKEGY": "IKEGY AT OR ABOVE 5300",
+                "YOSDU": "YOSDU 4700 RNW 35 TRK 354 UNTIL 3375",
+                "AQXOT": "OVERFLY AQXOT AT OR ABOVE 5300 HOLD AT AQXOT RIGHT TURN INBOUNDCOURSE 174 LEGDIST 5 FAF YOSDU MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "ARXEK",
+                    "fixes": {
+                        "ARXEK": "ARXEK"
+                    }
+                },
+                {
+                    "name": "IKEGY",
+                    "fixes": {
+                        "IKEGY": "IKEGY RIGHT TURN INBOUNDCOURSE 354 ALT 5300 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "OFQUB",
+                    "fixes": {
+                        "OFQUB": "OFQUB"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "EN36",
+            "lat": 16.041958333333334,
+            "lon": 16.456752783333332
+        },
+        {
+            "name": "FN18",
+            "lat": 16.132152783333332,
+            "lon": 16.481780566666668
+        },
+        {
+            "name": "FN36",
+            "lat": 15.966183333333333,
+            "lon": 16.452647216666666
+        },
+        {
+            "name": "SLONB",
+            "lat": 16.049083333333332,
+            "lon": 16.457138883333332
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB18",
+            "fixes": {
+                "FN18": "FN18 1500 RNW 18",
+                "SLONB": "OVERFLY SLONB TRK 171 UNTIL 1500 TURN RIGHT DIRECT SLONB 1500 FAF FN18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "SLO1",
+                    "fixes": {
+                        "SLONB": "SLONB AT OR ABOVE 2500 TRK 025 UNTIL 5.3 FROM SLONB"
+                    }
+                },
+                {
+                    "name": "SLO2",
+                    "fixes": {
+                        "SLONB": "SLONB AT OR ABOVE 2500 TRK 009 UNTIL 6.0 FROM SLONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB36",
+            "fixes": {
+                "FN36": "FN36 1500",
+                "EN36": "OVERFLY EN36 57",
+                "SLONB": "OVERFLY SLONB AT OR ABOVE 410 RNW 36 TRK 004 UNTIL 1500 TURN RIGHT DIRECT SLONB 1500 FAF FN36 MAP SLO"
+            },
+            "transitions": [
+                {
+                    "name": "SLO1",
+                    "fixes": {
+                        "SLONB": "SLONB AT OR ABOVE 2500 TRK 218 UNTIL 5.3 FROM SLONB"
+                    }
+                },
+                {
+                    "name": "SLO2",
+                    "fixes": {
+                        "SLONB": "SLONB AT OR ABOVE 2500 TRK 202 UNTIL 6.0 FROM SLONB"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "DUVNU",
+            "lat": 70.49825833333334,
+            "lon": 68.50495
+        },
+        {
+            "name": "EPLIV",
+            "lat": 70.67970556666667,
+            "lon": 68.44820278333333
+        },
+        {
+            "name": "FF20",
+            "lat": 70.56131943333334,
+            "lon": 68.39486943333333
+        },
+        {
+            "name": "ITLAV",
+            "lat": 70.57782221666666,
+            "lon": 68.3255
+        },
+        {
+            "name": "KEVDO",
+            "lat": 70.58875,
+            "lon": 68.02975833333333
+        },
+        {
+            "name": "LIVGU",
+            "lat": 70.63434721666667,
+            "lon": 68.23850833333333
+        },
+        {
+            "name": "NOTAN",
+            "lat": 70.387925,
+            "lon": 68.69412778333333
+        },
+        {
+            "name": "NUDAG",
+            "lat": 70.55095833333333,
+            "lon": 68.40228888333333
+        },
+        {
+            "name": "OMTIG",
+            "lat": 70.34881666666666,
+            "lon": 69.06176943333334
+        },
+        {
+            "name": "PI001",
+            "lat": 70.52340006666667,
+            "lon": 68.39491356666667
+        },
+        {
+            "name": "PI002",
+            "lat": 70.59490018333334,
+            "lon": 68.38024238333334
+        },
+        {
+            "name": "PI003",
+            "lat": 70.59412918333334,
+            "lon": 68.14837423333333
+        },
+        {
+            "name": "PIGTU",
+            "lat": 70.36001388333334,
+            "lon": 68.74761111666666
+        },
+        {
+            "name": "RADES",
+            "lat": 70.30414443333333,
+            "lon": 68.85414166666666
+        },
+        {
+            "name": "TIKOS",
+            "lat": 70.44283333333334,
+            "lon": 68.58839443333333
+        },
+        {
+            "name": "UDGEX",
+            "lat": 70.47356943333334,
+            "lon": 68.52890556666667
+        },
+        {
+            "name": "XUKEK",
+            "lat": 70.25923333333333,
+            "lon": 68.64741943333334
+        },
+        {
+            "name": "YCYNB",
+            "lat": 70.48517778333333,
+            "lon": 68.52695278333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB20",
+            "fixes": {
+                "FF20": "FF20 1700 RNW 20",
+                "YCYNB": "OVERFLY YCYNB TRK 024 UNTIL 490 HDG 006 UNTIL 3500 TURN RIGHT DIRECT YCYNB 3500 HOLD AT YCYNB RIGHT TURN INBOUNDCOURSE 024 SPEED 230 LEGTIME 1 FAF FF20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "YCY",
+                    "fixes": {
+                        "YCYNB": "YCYNB AT OR ABOVE 2600",
+                        "PI001": "PI001 AT OR ABOVE 1700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ02",
+            "fixes": {
+                "RADES": "RADES AT OR ABOVE 4300",
+                "PIGTU": "PIGTU AT OR ABOVE 3340",
+                "NOTAN": "NOTAN 2600",
+                "TIKOS": "TIKOS AT OR ABOVE 1140",
+                "UDGEX": "OVERFLY UDGEX 312 RNW 02",
+                "ITLAV": "OVERFLY ITLAV 4000 HOLD AT ITLAV RIGHT TURN INBOUNDCOURSE 007 SPEED 230 LEGTIME 1 FAF NOTAN MAP UDGEX"
+            },
+            "transitions": [
+                {
+                    "name": "OMTIG",
+                    "fixes": {
+                        "OMTIG": "OMTIG SPEED 210"
+                    }
+                },
+                {
+                    "name": "XUKEK",
+                    "fixes": {
+                        "XUKEK": "XUKEK SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ20",
+            "fixes": {
+                "LIVGU": "LIVGU AT OR ABOVE 1500",
+                "NUDAG": "NUDAG 1500",
+                "DUVNU": "OVERFLY DUVNU 291 RNW 20 TRK 025 UNTIL 490 TURN RIGHT DIRECT",
+                "EPLIV": "OVERFLY EPLIV 2600 HOLD AT EPLIV RIGHT TURN INBOUNDCOURSE 016 SPEED 230 LEGTIME 1 FAF NUDAG MAP DUVNU"
+            },
+            "transitions": [
+                {
+                    "name": "EPLIV",
+                    "fixes": {
+                        "EPLIV": "EPLIV SPEED 210"
+                    }
+                },
+                {
+                    "name": "KEVDO",
+                    "fixes": {
+                        "KEVDO": "KEVDO SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,198 @@
+{
+    "fixes": [
+        {
+            "name": "20DME",
+            "lat": 15.481811116666666,
+            "lon": 167.193925
+        },
+        {
+            "name": "ARAGI",
+            "lat": 15.695066666666667,
+            "lon": 167.332475
+        },
+        {
+            "name": "BIGIB",
+            "lat": 15.616038883333333,
+            "lon": 167.36088333333333
+        },
+        {
+            "name": "ESBAN",
+            "lat": 15.407669433333334,
+            "lon": 167.22896943333333
+        },
+        {
+            "name": "FN30",
+            "lat": 15.549219433333333,
+            "lon": 167.29045
+        },
+        {
+            "name": "FQ12",
+            "lat": 15.444488883333333,
+            "lon": 167.15928888333335
+        },
+        {
+            "name": "FQ30",
+            "lat": 15.549622216666666,
+            "lon": 167.29114721666667
+        },
+        {
+            "name": "MALOK",
+            "lat": 15.573177783333334,
+            "lon": 167.43504166666668
+        },
+        {
+            "name": "MQ30",
+            "lat": 15.515155566666667,
+            "lon": 167.23194721666667
+        },
+        {
+            "name": "SON",
+            "lat": 15.506619433333332,
+            "lon": 167.21711943333332
+        },
+        {
+            "name": "SONNB",
+            "lat": 15.506191666666666,
+            "lon": 167.21656111666667
+        },
+        {
+            "name": "SS443",
+            "lat": 15.563158333333334,
+            "lon": 167.29396666666668
+        },
+        {
+            "name": "SS912",
+            "lat": 15.353375,
+            "lon": 167.18859166666667
+        },
+        {
+            "name": "SS934",
+            "lat": 15.402241666666667,
+            "lon": 167.11875278333332
+        },
+        {
+            "name": "SS956",
+            "lat": 15.456547216666667,
+            "lon": 167.15911666666668
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 1500 RNW 30",
+                "SONNB": "OVERFLY SONNB TRK 020 UNTIL 2000 TURN LEFT DIRECT SONNB 2500 FAF FN30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "SON1",
+                    "fixes": {
+                        "SONNB": "SONNB AT OR ABOVE 2500 TRK 138 UNTIL 7.0 FROM SONNB"
+                    }
+                },
+                {
+                    "name": "SON2",
+                    "fixes": {
+                        "SONNB": "SONNB AT OR ABOVE 2500 TRK 122 UNTIL 7.0 FROM SONNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD12",
+            "fixes": {
+                "FQ12": "FQ12 1860",
+                "20DME": "20DME AT OR ABOVE 780 RNW 12",
+                "SONNB": "OVERFLY SONNB TRK 127 UNTIL 1000 TURN LEFT DIRECT SONNB 2500 FAF FQ12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "SON1",
+                    "fixes": {
+                        "SONNB": "SONNB AT OR ABOVE 2500 TRK 325 UNTIL 8.0 FROM",
+                        "SON": "SON SPEED 185"
+                    }
+                },
+                {
+                    "name": "SON2",
+                    "fixes": {
+                        "SONNB": "SONNB AT OR ABOVE 2500 TRK 322 UNTIL 6.0 FROM",
+                        "SON": "SON"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD30",
+            "fixes": {
+                "FQ30": "FQ30 1500",
+                "MQ30": "MQ30 283 RNW 30",
+                "SONNB": "SONNB TRK 020 UNTIL 2000 TURN LEFT DIRECT SONNB 2500 FAF FQ30 MAP MQ30"
+            },
+            "transitions": [
+                {
+                    "name": "SON1",
+                    "fixes": {
+                        "SONNB": "SONNB AT OR ABOVE 2500 TRK 138 UNTIL 7.0 FROM SONNB"
+                    }
+                },
+                {
+                    "name": "SON2",
+                    "fixes": {
+                        "SONNB": "SONNB AT OR ABOVE 2500 TRK 122 UNTIL 7.0 FROM SONNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "SS934": "SS934 AT OR ABOVE 2500",
+                "SS956": "SS956 1450 RNW 12 TRK 118 UNTIL 1000 TURN LEFT DIRECT",
+                "ESBAN": "ESBAN 2500 FAF SS956 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "ESBAN",
+                    "fixes": {
+                        "ESBAN": "ESBAN",
+                        "SS912": "SS912 AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "BIGIB": "BIGIB AT OR ABOVE 2500 BIGIB 2500 FAF SS443 MAP RNW 30",
+                "SS443": "SS443 1650 RNW 30 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ARAGI",
+                    "fixes": {
+                        "ARAGI": "ARAGI"
+                    }
+                },
+                {
+                    "name": "BIGIB",
+                    "fixes": {
+                        "BIGIB": "BIGIB RIGHT TURN INBOUNDCOURSE 298 ALT 2500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MALOK",
+                    "fixes": {
+                        "MALOK": "MALOK"
+                    }
+                }
+            ]
+        }
+    ]
+}

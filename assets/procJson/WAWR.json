@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "SARVA",
+            "lat": 4.722444433333333,
+            "lon": 122.80127778333333
+        },
+        {
+            "name": "URDAK",
+            "lat": 4.807305566666667,
+            "lon": 122.31261111666667
+        },
+        {
+            "name": "WR401",
+            "lat": 4.795888883333333,
+            "lon": 122.37841666666667
+        },
+        {
+            "name": "WR402",
+            "lat": 4.781638883333334,
+            "lon": 122.46066666666667
+        },
+        {
+            "name": "WR601",
+            "lat": 4.733888883333333,
+            "lon": 122.7355
+        },
+        {
+            "name": "WR602",
+            "lat": 4.745333333333333,
+            "lon": 122.66969443333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "WR401": "WR401 AT OR ABOVE 2500",
+                "WR402": "WR402 2000 RNW 08 TRK 080 UNTIL 1000 TURN LEFT DIRECT",
+                "URDAK": "URDAK AT OR ABOVE 3000 HOLD AT URDAK RIGHT TURN INBOUNDCOURSE 080 ALT 3000 LEGTIME 1 FAF WR402 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "URDAK",
+                    "fixes": {
+                        "URDAK": "URDAK AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "WR601": "WR601 AT OR ABOVE 3000",
+                "WR602": "WR602 2000 RNW 26 TRK 260 UNTIL 1000 TURN RIGHT DIRECT",
+                "SARVA": "SARVA AT OR ABOVE 4000 HOLD AT SARVA RIGHT TURN INBOUNDCOURSE 260 ALT 4000 LEGTIME 1 FAF WR602 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "SARVA",
+                    "fixes": {
+                        "SARVA": "SARVA AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

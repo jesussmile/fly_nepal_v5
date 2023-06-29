@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "GEVCE",
+            "lat": 33.57791111666667,
+            "lon": 79.67366666666666
+        },
+        {
+            "name": "JERIN",
+            "lat": 33.856291666666664,
+            "lon": 80.04091943333333
+        },
+        {
+            "name": "JODKI",
+            "lat": 33.65655278333333,
+            "lon": 79.77701943333334
+        },
+        {
+            "name": "UTOGY",
+            "lat": 33.77787778333333,
+            "lon": 79.93708333333333
+        },
+        {
+            "name": "ZAMGA",
+            "lat": 33.747602783333335,
+            "lon": 79.897075
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "JERIN": "JERIN AT OR ABOVE 3000",
+                "UTOGY": "UTOGY 1700",
+                "ZAMGA": "ZAMGA AT OR ABOVE 840 RNW 14 TRK 140 UNTIL 334",
+                "GEVCE": "OVERFLY GEVCE AT OR ABOVE 3000 HOLD AT GEVCE RIGHT TURN INBOUNDCOURSE 320 LEGDIST 4 FAF UTOGY MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "JERIN",
+                    "fixes": {
+                        "JERIN": "JERIN RIGHT TURN INBOUNDCOURSE 140 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "GEVCE": "GEVCE AT OR ABOVE 3000",
+                "JODKI": "JODKI 1700 RNW 32 TRK 320 UNTIL 317",
+                "JERIN": "OVERFLY JERIN AT OR ABOVE 3000 HOLD AT JERIN RIGHT TURN INBOUNDCOURSE 140 LEGDIST 4 FAF JODKI MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "GEVCE",
+                    "fixes": {
+                        "GEVCE": "GEVCE RIGHT TURN INBOUNDCOURSE 320 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

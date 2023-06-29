@@ -1,0 +1,191 @@
+{
+    "fixes": [
+        {
+            "name": "EBDAV",
+            "lat": 46.955519433333336,
+            "lon": 65.66775556666667
+        },
+        {
+            "name": "EP09",
+            "lat": 47.003458333333334,
+            "lon": 65.47849721666667
+        },
+        {
+            "name": "F9NB",
+            "lat": 47.01,
+            "lon": 65.4675
+        },
+        {
+            "name": "FF09",
+            "lat": 46.95093611666667,
+            "lon": 65.56664721666667
+        },
+        {
+            "name": "FF27",
+            "lat": 47.020525,
+            "lon": 65.31971666666666
+        },
+        {
+            "name": "KAPAM",
+            "lat": 46.85403888333333,
+            "lon": 65.686125
+        },
+        {
+            "name": "LETUP",
+            "lat": 47.02696666666667,
+            "lon": 65.77466111666666
+        },
+        {
+            "name": "OBNOG",
+            "lat": 46.97350556666667,
+            "lon": 65.59251943333334
+        },
+        {
+            "name": "PI001",
+            "lat": 46.971711766666665,
+            "lon": 65.53201838333334
+        },
+        {
+            "name": "PI002",
+            "lat": 46.90021943333333,
+            "lon": 65.53933498333333
+        },
+        {
+            "name": "PI003",
+            "lat": 46.9005091,
+            "lon": 65.65159336666666
+        },
+        {
+            "name": "PI004",
+            "lat": 47.016065983333334,
+            "lon": 65.38241
+        },
+        {
+            "name": "PI005",
+            "lat": 46.97093566666667,
+            "lon": 65.30078928333333
+        },
+        {
+            "name": "PI006",
+            "lat": 47.0271641,
+            "lon": 65.22433483333333
+        },
+        {
+            "name": "PIGDI",
+            "lat": 47.055683333333334,
+            "lon": 65.24546666666667
+        },
+        {
+            "name": "REVEG",
+            "lat": 47.03833888333333,
+            "lon": 65.31918056666666
+        },
+        {
+            "name": "SASOV",
+            "lat": 47.07083333333333,
+            "lon": 65.18087221666667
+        },
+        {
+            "name": "SEKIP",
+            "lat": 46.94051388333333,
+            "lon": 65.73032221666666
+        },
+        {
+            "name": "TIGAV",
+            "lat": 47.15749721666667,
+            "lon": 65.22443056666667
+        },
+        {
+            "name": "UBTOM",
+            "lat": 46.984152783333336,
+            "lon": 65.13745556666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FF09": "FF09 1700",
+                "EP09": "OVERFLY EP09 160",
+                "F9NB": "OVERFLY F9NB AT OR ABOVE 510 RNW 09 TRK 067 UNTIL 2500 TURN RIGHT DIRECT F9NB 2500 HOLD AT F9NB RIGHT TURN INBOUNDCOURSE 067 LEGTIME 1 FAF FF09 MAP F9"
+            },
+            "transitions": [
+                {
+                    "name": "F9",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FF27": "FF27 1700 RNW 27",
+                "F9NB": "OVERFLY F9NB TRK 282 UNTIL 2500 TURN LEFT DIRECT F9NB 2500 HOLD AT F9NB LEFT TURN INBOUNDCOURSE 282 LEGTIME 1 FAF FF27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "F9",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 1700 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1700 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "SEKIP": "SEKIP AT OR ABOVE 1800 SPEED 180",
+                "OBNOG": "OBNOG 1800 RNW 09",
+                "PIGDI": "OVERFLY PIGDI 1700 HOLD AT PIGDI RIGHT TURN INBOUNDCOURSE 089 LEGTIME 1 FAF OBNOG MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "KAPAM",
+                    "fixes": {
+                        "KAPAM": "KAPAM SPEED 210"
+                    }
+                },
+                {
+                    "name": "LETUP",
+                    "fixes": {
+                        "LETUP": "LETUP SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "SASOV": "SASOV AT OR ABOVE 1800 SPEED 180",
+                "REVEG": "REVEG 1800 RNW 27",
+                "EBDAV": "OVERFLY EBDAV 1800 HOLD AT EBDAV RIGHT TURN INBOUNDCOURSE 269 LEGTIME 1 FAF REVEG MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "TIGAV",
+                    "fixes": {
+                        "TIGAV": "TIGAV SPEED 210"
+                    }
+                },
+                {
+                    "name": "UBTOM",
+                    "fixes": {
+                        "UBTOM": "UBTOM SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

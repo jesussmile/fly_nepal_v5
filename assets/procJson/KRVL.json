@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "CEHOG",
+            "lat": 40.608969433333336,
+            "lon": 77.95753611666666
+        },
+        {
+            "name": "CELDU",
+            "lat": 40.74668333333334,
+            "lon": 77.29703056666666
+        },
+        {
+            "name": "COFAX",
+            "lat": 40.31298056666667,
+            "lon": 77.96693888333333
+        },
+        {
+            "name": "COMOL",
+            "lat": 40.73738611666667,
+            "lon": 77.53681666666667
+        },
+        {
+            "name": "EZUCE",
+            "lat": 40.76634443333333,
+            "lon": 77.493275
+        },
+        {
+            "name": "HERDA",
+            "lat": 40.63105,
+            "lon": 77.24776666666666
+        },
+        {
+            "name": "LUCKS",
+            "lat": 40.522758333333336,
+            "lon": 77.85758333333334
+        },
+        {
+            "name": "OCPUC",
+            "lat": 40.831752783333336,
+            "lon": 77.3947
+        },
+        {
+            "name": "OJDOH",
+            "lat": 40.59004721666667,
+            "lon": 77.75738333333334
+        },
+        {
+            "name": "OTUCA",
+            "lat": 40.58997778333333,
+            "lon": 77.75748888333334
+        },
+        {
+            "name": "PI001",
+            "lat": 40.551693183333335,
+            "lon": 77.8154299
+        },
+        {
+            "name": "PI002",
+            "lat": 40.48020091666667,
+            "lon": 77.82200236666667
+        },
+        {
+            "name": "PI003",
+            "lat": 40.48051658333333,
+            "lon": 77.92285898333333
+        },
+        {
+            "name": "POMAJ",
+            "lat": 40.918575,
+            "lon": 77.49452778333334
+        },
+        {
+            "name": "PSB",
+            "lat": 40.91625833333333,
+            "lon": 77.99271666666667
+        },
+        {
+            "name": "SEG",
+            "lat": 40.79085833333333,
+            "lon": 76.88404166666666
+        },
+        {
+            "name": "STROH",
+            "lat": 40.62084443333333,
+            "lon": 77.71141388333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC06",
+            "fixes": {
+                "LUCKS": "LUCKS AT OR ABOVE 4000",
+                "OTUCA": "OTUCA 3300 RNW 06 TRK 059 UNTIL 3000 HDG 147 INTERCEPT RADIAL 110 TO",
+                "HERDA": "HERDA HERDA AT OR ABOVE 4000 HOLD AT HERDA RIGHT TURN INBOUNDCOURSE 110 LEGTIME 1 FAF OTUCA MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "COFAX",
+                    "fixes": {
+                        "COFAX": "COFAX HDG 014 INTERCEPT RADIAL 059 TO",
+                        "LUCKS": "LUCKS"
+                    }
+                },
+                {
+                    "name": "PSB",
+                    "fixes": {
+                        "PSB": "PSB",
+                        "OTUCA": "OTUCA AT OR ABOVE 5000",
+                        "PI001": "PI001 AT OR ABOVE 4000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "LUCKS": "LUCKS AT OR ABOVE 4000",
+                "OJDOH": "OJDOH 3500",
+                "STROH": "STROH AT OR ABOVE 2520 RNW 06 TRK 059 UNTIL 1219",
+                "OCPUC": "OVERFLY OCPUC AT OR ABOVE 4000 HOLD AT OCPUC RIGHT TURN INBOUNDCOURSE 239 LEGDIST 4 FAF OJDOH MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "COFAX",
+                    "fixes": {
+                        "COFAX": "COFAX"
+                    }
+                },
+                {
+                    "name": "LUCKS",
+                    "fixes": {
+                        "LUCKS": "LUCKS RIGHT TURN INBOUNDCOURSE 059 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PSB",
+                    "fixes": {
+                        "PSB": "PSB",
+                        "CEHOG": "CEHOG AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "OCPUC": "OCPUC AT OR ABOVE 4000",
+                "EZUCE": "EZUCE 3300",
+                "COMOL": "COMOL AT OR ABOVE 2460 RNW 24 TRK 239 UNTIL 1219",
+                "LUCKS": "OVERFLY LUCKS AT OR ABOVE 4000 HOLD AT LUCKS RIGHT TURN INBOUNDCOURSE 059 LEGDIST 4 FAF EZUCE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "OCPUC",
+                    "fixes": {
+                        "OCPUC": "OCPUC RIGHT TURN INBOUNDCOURSE 239 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PSB",
+                    "fixes": {
+                        "PSB": "PSB",
+                        "POMAJ": "POMAJ AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "SEG",
+                    "fixes": {
+                        "SEG": "SEG",
+                        "CELDU": "CELDU AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

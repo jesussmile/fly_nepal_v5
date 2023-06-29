@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "AX212",
+            "lat": 30.938888883333334,
+            "lon": 30.061388883333333
+        },
+        {
+            "name": "AX214",
+            "lat": 31.054444433333334,
+            "lon": 29.798055566666665
+        },
+        {
+            "name": "AX215",
+            "lat": 31.113333333333333,
+            "lon": 29.866666666666667
+        },
+        {
+            "name": "AX216",
+            "lat": 31.174722216666666,
+            "lon": 29.938055566666666
+        },
+        {
+            "name": "AX217",
+            "lat": 30.957222216666665,
+            "lon": 29.910555566666666
+        },
+        {
+            "name": "AX233",
+            "lat": 31.438333333333333,
+            "lon": 30.246666666666666
+        },
+        {
+            "name": "AX234",
+            "lat": 31.308888883333335,
+            "lon": 30.095
+        },
+        {
+            "name": "AX235",
+            "lat": 31.25,
+            "lon": 30.026111116666666
+        },
+        {
+            "name": "AX236",
+            "lat": 31.188611116666667,
+            "lon": 29.954444433333332
+        },
+        {
+            "name": "CD04",
+            "lat": 31.074125,
+            "lon": 29.836130566666668
+        },
+        {
+            "name": "FD04",
+            "lat": 31.099358333333335,
+            "lon": 29.861572216666666
+        },
+        {
+            "name": "NOZ",
+            "lat": 31.1875,
+            "lon": 29.950833333333332
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD04",
+            "fixes": {
+                "CD04": "CD04 AT OR ABOVE 1700",
+                "FD04": "FD04 1700 RNW 04",
+                "NOZ": "NOZ AT OR ABOVE 400 TRK 047 UNTIL 8.0 FROM NOZ TURN RIGHT DIRECT NOZ 2000 HOLD AT NOZ LEFT TURN INBOUNDCOURSE 196 LEGTIME 1 FAF FD04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "NOZ1",
+                    "fixes": {
+                        "NOZ": "NOZ AT OR ABOVE 3000 TRK 194 UNTIL 9.0 FROM NOZ"
+                    }
+                },
+                {
+                    "name": "NOZ2",
+                    "fixes": {
+                        "NOZ": "NOZ AT OR ABOVE 3000 TRK 205 UNTIL 9.0 FROM NOZ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "AX214": "AX214 2000",
+                "AX215": "AX215 1700",
+                "AX216": "OVERFLY AX216 42 RNW 04 TRK 041 UNTIL 1500 HDG 041 VECTORS FAF AX215 MAP AX216"
+            },
+            "transitions": [
+                {
+                    "name": "AX212",
+                    "fixes": {
+                        "AX212": "AX212 6000",
+                        "AX217": "AX217 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "AX234": "AX234 2500",
+                "AX235": "AX235 1700",
+                "AX236": "OVERFLY AX236 41 RNW 22 TRK 221 UNTIL 1000 HDG 221 VECTORS FAF AX235 MAP AX236"
+            },
+            "transitions": [
+                {
+                    "name": "AX233",
+                    "fixes": {
+                        "AX233": "AX233 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

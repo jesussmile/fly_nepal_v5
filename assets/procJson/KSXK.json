@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "HADKU",
+            "lat": 43.08975,
+            "lon": 96.17501388333334
+        },
+        {
+            "name": "HALGA",
+            "lat": 43.22249721666667,
+            "lon": 96.19247221666667
+        },
+        {
+            "name": "HAMUP",
+            "lat": 43.032475,
+            "lon": 96.16750556666666
+        },
+        {
+            "name": "SIPEE",
+            "lat": 42.88190278333333,
+            "lon": 96.14783056666667
+        },
+        {
+            "name": "SKYLE",
+            "lat": 42.76573333333333,
+            "lon": 96.13271943333334
+        },
+        {
+            "name": "SNARK",
+            "lat": 42.94438888333333,
+            "lon": 96.15598333333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "HALGA": "HALGA AT OR ABOVE 4500",
+                "HADKU": "HADKU 3300",
+                "HAMUP": "HAMUP AT OR ABOVE 2200 RNW 17 TRK 173 UNTIL 1609",
+                "SKYLE": "OVERFLY SKYLE AT OR ABOVE 4500 HOLD AT SKYLE RIGHT TURN INBOUNDCOURSE 353 LEGDIST 5 FAF HADKU MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "HALGA",
+                    "fixes": {
+                        "HALGA": "HALGA RIGHT TURN INBOUNDCOURSE 172 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "SKYLE": "SKYLE AT OR ABOVE 4500",
+                "SIPEE": "SIPEE 3300",
+                "SNARK": "SNARK AT OR ABOVE 2100 RNW 35 TRK 353 UNTIL 1609",
+                "HALGA": "OVERFLY HALGA AT OR ABOVE 4500 HOLD AT HALGA RIGHT TURN INBOUNDCOURSE 172 LEGDIST 5 FAF SIPEE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "SKYLE",
+                    "fixes": {
+                        "SKYLE": "SKYLE RIGHT TURN INBOUNDCOURSE 353 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

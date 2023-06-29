@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "EOPNB",
+            "lat": 39.16723056666667,
+            "lon": 82.93161388333333
+        },
+        {
+            "name": "FF25",
+            "lat": 39.211097216666666,
+            "lon": 82.79685
+        },
+        {
+            "name": "FIMOJ",
+            "lat": 39.170113883333336,
+            "lon": 83.20849443333333
+        },
+        {
+            "name": "GIJWE",
+            "lat": 38.984555566666664,
+            "lon": 83.08180833333333
+        },
+        {
+            "name": "HINAB",
+            "lat": 39.19039443333333,
+            "lon": 82.87143056666666
+        },
+        {
+            "name": "IGMIY",
+            "lat": 39.256311116666666,
+            "lon": 82.71075556666666
+        },
+        {
+            "name": "PI001",
+            "lat": 39.1900027,
+            "lon": 82.86233346666667
+        },
+        {
+            "name": "PI002",
+            "lat": 39.1631245,
+            "lon": 82.7766327
+        },
+        {
+            "name": "PI003",
+            "lat": 39.232184866666664,
+            "lon": 82.73355078333333
+        },
+        {
+            "name": "SHIRT",
+            "lat": 39.63297778333333,
+            "lon": 83.57115
+        },
+        {
+            "name": "TARTO",
+            "lat": 39.53474166666667,
+            "lon": 82.63001388333333
+        },
+        {
+            "name": "TUKIW",
+            "lat": 39.07737778333333,
+            "lon": 83.14497221666667
+        },
+        {
+            "name": "UBDOW",
+            "lat": 39.124461116666666,
+            "lon": 83.03130833333333
+        },
+        {
+            "name": "UKESY",
+            "lat": 39.209266666666664,
+            "lon": 82.82551666666667
+        },
+        {
+            "name": "WETBI",
+            "lat": 39.144297216666665,
+            "lon": 82.98329443333333
+        },
+        {
+            "name": "YRK",
+            "lat": 38.644133333333336,
+            "lon": 82.97833888333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FF25": "FF25 2700 RNW 25",
+                "EOPNB": "EOPNB AT OR ABOVE 1060 HOLD AT EOPNB LEFT TURN INBOUNDCOURSE 253 ALT 2700 LEGTIME 1 FAF FF25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "YRK",
+                    "fixes": {
+                        "YRK": "YRK",
+                        "EOPNB": "EOPNB AT OR ABOVE 3300",
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "TUKIW": "TUKIW AT OR ABOVE 3000",
+                "UBDOW": "UBDOW 2300",
+                "WETBI": "WETBI AT OR ABOVE 1480 RNW 07 TRK 068 UNTIL 1061",
+                "IGMIY": "OVERFLY IGMIY AT OR ABOVE 3000 HOLD AT IGMIY LEFT TURN INBOUNDCOURSE 248 LEGDIST 4 FAF UBDOW MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "SHIRT",
+                    "fixes": {
+                        "SHIRT": "SHIRT",
+                        "FIMOJ": "FIMOJ AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "YRK",
+                    "fixes": {
+                        "YRK": "YRK",
+                        "GIJWE": "GIJWE AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "IGMIY": "IGMIY AT OR ABOVE 3000 OVERFLY IGMIY AT OR ABOVE 3000 HOLD AT IGMIY LEFT TURN INBOUNDCOURSE 248 LEGDIST 4 FAF UKESY MAP RNW 25",
+                "UKESY": "UKESY 2300",
+                "HINAB": "HINAB AT OR ABOVE 1520 RNW 25 TRK 248 UNTIL 1120 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IGMIY",
+                    "fixes": {
+                        "IGMIY": "IGMIY LEFT TURN INBOUNDCOURSE 248 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TARTO",
+                    "fixes": {
+                        "TARTO": "TARTO"
+                    }
+                }
+            ]
+        }
+    ]
+}

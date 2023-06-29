@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "ES200",
+            "lat": 5.563988883333334,
+            "lon": 5.263452783333333
+        },
+        {
+            "name": "ES300",
+            "lat": 5.668758333333333,
+            "lon": 5.114644433333333
+        },
+        {
+            "name": "MR13",
+            "lat": 5.628769433333334,
+            "lon": 5.171455566666666
+        },
+        {
+            "name": "OPDIG",
+            "lat": 5.584344433333333,
+            "lon": 5.3798805666666665
+        },
+        {
+            "name": "OPDIK",
+            "lat": 5.785411116666666,
+            "lon": 5.094325
+        },
+        {
+            "name": "UGNON",
+            "lat": 5.7650500000000005,
+            "lon": 4.97785
+        },
+        {
+            "name": "ULKOR",
+            "lat": 5.447325,
+            "lon": 5.283777783333333
+        },
+        {
+            "name": "ULMIR",
+            "lat": 5.716905566666666,
+            "lon": 5.04625
+        },
+        {
+            "name": "ULMOP",
+            "lat": 5.648394433333333,
+            "lon": 4.998186116666667
+        },
+        {
+            "name": "ULSUR",
+            "lat": 5.4676833333333335,
+            "lon": 5.400188883333334
+        },
+        {
+            "name": "USPIR",
+            "lat": 5.515836116666667,
+            "lon": 5.331825
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "ULMIR": "ULMIR 2500 SPEED 250",
+                "ES300": "ES300 1370 SPEED 200",
+                "MR13": "OVERFLY MR13 327 RNW 13 TRK 126 UNTIL 1000 TURN LEFT DIRECT",
+                "OPDIK": "OPDIK HOLD AT OPDIK RIGHT TURN INBOUNDCOURSE 216 ALT 2500 SPEED 230 LEGTIME 1 FAF ES300 MAP MR13"
+            },
+            "transitions": [
+                {
+                    "name": "OPDIK",
+                    "fixes": {
+                        "OPDIK": "OPDIK 2500 SPEED 250"
+                    }
+                },
+                {
+                    "name": "UGNON",
+                    "fixes": {
+                        "UGNON": "UGNON 2500 SPEED 250"
+                    }
+                },
+                {
+                    "name": "ULMOP",
+                    "fixes": {
+                        "ULMOP": "ULMOP 2500 SPEED 250"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "USPIR": "USPIR 2500 SPEED 250",
+                "ES200": "ES200 1640 SPEED 200 RNW 31 TRK 306 UNTIL 1000 TURN RIGHT DIRECT",
+                "OPDIG": "OPDIG HOLD AT OPDIG LEFT TURN INBOUNDCOURSE 216 ALT 2500 SPEED 230 LEGTIME 1 FAF ES200 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "OPDIG",
+                    "fixes": {
+                        "OPDIG": "OPDIG 2500 SPEED 250"
+                    }
+                },
+                {
+                    "name": "ULKOR",
+                    "fixes": {
+                        "ULKOR": "ULKOR 2500 SPEED 250"
+                    }
+                },
+                {
+                    "name": "ULSUR",
+                    "fixes": {
+                        "ULSUR": "ULSUR 2500 SPEED 250"
+                    }
+                }
+            ]
+        }
+    ]
+}

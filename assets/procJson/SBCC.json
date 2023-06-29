@@ -1,0 +1,274 @@
+{
+    "fixes": [
+        {
+            "name": "ARPOP",
+            "lat": 9.297305566666667,
+            "lon": 55.14192778333334
+        },
+        {
+            "name": "CBO",
+            "lat": 9.331327783333334,
+            "lon": 54.965038883333335
+        },
+        {
+            "name": "CBO02",
+            "lat": 9.314330566666667,
+            "lon": 55.05940278333333
+        },
+        {
+            "name": "CBO13",
+            "lat": 9.3436,
+            "lon": 54.91738611666667
+        },
+        {
+            "name": "CBO14",
+            "lat": 9.323866666666667,
+            "lon": 55.01318611666667
+        },
+        {
+            "name": "CBO16",
+            "lat": 9.321386116666666,
+            "lon": 55.06056388333333
+        },
+        {
+            "name": "CBO17",
+            "lat": 9.330119433333333,
+            "lon": 54.976680566666666
+        },
+        {
+            "name": "CBO18",
+            "lat": 9.359772216666666,
+            "lon": 54.87288888333333
+        },
+        {
+            "name": "CBO19",
+            "lat": 9.334925,
+            "lon": 54.95338888333333
+        },
+        {
+            "name": "CC001",
+            "lat": 9.280261116666667,
+            "lon": 55.22444443333333
+        },
+        {
+            "name": "CC002",
+            "lat": 9.214452783333334,
+            "lon": 55.15403333333333
+        },
+        {
+            "name": "CC003",
+            "lat": 9.368505566666666,
+            "lon": 55.186275
+        },
+        {
+            "name": "CC004",
+            "lat": 9.387027783333334,
+            "lon": 54.706052783333334
+        },
+        {
+            "name": "CC006",
+            "lat": 9.370077783333333,
+            "lon": 54.788611116666665
+        },
+        {
+            "name": "CC007",
+            "lat": 9.298836116666667,
+            "lon": 54.74433333333333
+        },
+        {
+            "name": "CC008",
+            "lat": 9.452922216666666,
+            "lon": 54.776425
+        },
+        {
+            "name": "CC009",
+            "lat": 9.353111116666666,
+            "lon": 54.87116111666667
+        },
+        {
+            "name": "CF12",
+            "lat": 9.315541666666666,
+            "lon": 55.11592778333333
+        },
+        {
+            "name": "CF30",
+            "lat": 9.380247216666667,
+            "lon": 54.80379443333333
+        },
+        {
+            "name": "CI12",
+            "lat": 9.303041666666667,
+            "lon": 55.11411388333333
+        },
+        {
+            "name": "SIBUS",
+            "lat": 9.314338883333333,
+            "lon": 55.05940278333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "02",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 12",
+                    "fixes": {
+                        "RNW 12": "RNW 12 TRK 120 UNTIL 3300 HDG 120 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 30",
+                    "fixes": {
+                        "RNW 30": "RNW 30 TRK 300 UNTIL 3300 HDG 300 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD12",
+            "fixes": {
+                "CF12": "CF12 AT OR ABOVE 3500",
+                "CBO16": "CBO16 3410",
+                "CBO17": "CBO17 1816 RNW 12 TRK 115 UNTIL 4000 TURN LEFT DIRECT",
+                "CBO": "CBO AT OR ABOVE 4000 HOLD AT CBO RIGHT TURN INBOUNDCOURSE 325 ALT 4000 LEGTIME 1 FAF CBO16 MAP CBO17"
+            },
+            "transitions": [
+                {
+                    "name": "CBO",
+                    "fixes": {
+                        "CBO": "CBO AT OR ABOVE 4000 TRK 325 UNTIL 9.0 FROM CBO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD30",
+            "fixes": {
+                "CF30": "CF30 AT OR ABOVE 3400",
+                "CBO18": "CBO18 3400",
+                "CBO19": "CBO19 1814 RNW 30 TRK 306 UNTIL 4000 TURN LEFT DIRECT",
+                "CBO": "CBO AT OR ABOVE 4000 HOLD AT CBO RIGHT TURN INBOUNDCOURSE 100 ALT 4000 LEGTIME 1 FAF CBO18 MAP CBO19"
+            },
+            "transitions": [
+                {
+                    "name": "CBO",
+                    "fixes": {
+                        "CBO": "CBO AT OR ABOVE 4000 TRK 100 UNTIL 10.0 FROM CBO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSW12",
+            "fixes": {
+                "ARPOP": "ARPOP AT OR ABOVE 4000",
+                "SIBUS": "SIBUS 3410 RNW 12 TRK 120 UNTIL 2500 TURN LEFT DIRECT",
+                "CC002": "CC002 AT OR ABOVE 4000 HOLD AT CC002 RIGHT TURN INBOUNDCOURSE 190 ALT 4000 LEGTIME 1 FAF SIBUS MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "CC001",
+                    "fixes": {
+                        "CC001": "CC001 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "CC002",
+                    "fixes": {
+                        "CC002": "CC002 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "CC003",
+                    "fixes": {
+                        "CC003": "CC003 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ12",
+            "fixes": {
+                "CI12": "CI12 AT OR ABOVE 3500",
+                "CBO02": "CBO02 3410 RNW 12 HDG 120 UNTIL 4000 TURN LEFT DIRECT",
+                "CBO": "OVERFLY CBO AT OR ABOVE 4000 HOLD AT CBO RIGHT TURN INBOUNDCOURSE 328 ALT 4000 LEGTIME 1 FAF CBO02 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "CBO",
+                    "fixes": {
+                        "CBO": "CBO AT OR ABOVE 4000 TRK 328 UNTIL 9.0 FROM CBO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY12",
+            "fixes": {
+                "ARPOP": "ARPOP AT OR ABOVE 4000",
+                "SIBUS": "SIBUS 3410",
+                "CBO14": "CBO14 AT OR ABOVE 2511 RNW 12 TRK 120 UNTIL 2500 TURN LEFT DIRECT",
+                "CC002": "OVERFLY CC002 AT OR ABOVE 4000 HOLD AT CC002 RIGHT TURN INBOUNDCOURSE 190 ALT 4000 LEGTIME 1 FAF SIBUS MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "CC001",
+                    "fixes": {
+                        "CC001": "CC001 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "CC002",
+                    "fixes": {
+                        "CC002": "CC002 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "CC003",
+                    "fixes": {
+                        "CC003": "CC003 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ30",
+            "fixes": {
+                "CC006": "CC006 AT OR ABOVE 4000",
+                "CC009": "CC009 3410",
+                "CBO13": "CBO13 AT OR ABOVE 2514 RNW 30 TRK 300 UNTIL 2500 TURN LEFT DIRECT",
+                "CC008": "OVERFLY CC008 AT OR ABOVE 4000 HOLD AT CC008 LEFT TURN INBOUNDCOURSE 010 ALT 4000 LEGTIME 1 FAF CC009 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "CC004",
+                    "fixes": {
+                        "CC004": "CC004 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "CC007",
+                    "fixes": {
+                        "CC007": "CC007 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "CC008",
+                    "fixes": {
+                        "CC008": "CC008 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

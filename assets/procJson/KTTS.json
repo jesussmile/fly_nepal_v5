@@ -1,0 +1,141 @@
+{
+    "fixes": [
+        {
+            "name": "BITHO",
+            "lat": 28.630941666666665,
+            "lon": 81.05940833333334
+        },
+        {
+            "name": "BLKHL",
+            "lat": 28.718425,
+            "lon": 80.58177221666666
+        },
+        {
+            "name": "COMET",
+            "lat": 28.616666666666667,
+            "lon": 80.43333333333334
+        },
+        {
+            "name": "COZMO",
+            "lat": 28.799105566666668,
+            "lon": 81.07267221666666
+        },
+        {
+            "name": "EARTH",
+            "lat": 28.843802783333334,
+            "lon": 80.71350833333334
+        },
+        {
+            "name": "INDIA",
+            "lat": 28.434497216666667,
+            "lon": 80.76534721666667
+        },
+        {
+            "name": "JESUP",
+            "lat": 28.888430566666667,
+            "lon": 81.07973333333334
+        },
+        {
+            "name": "LAMMA",
+            "lat": 29.014419433333334,
+            "lon": 81.08971388333333
+        },
+        {
+            "name": "LEUNA",
+            "lat": 28.589886116666666,
+            "lon": 80.67800833333334
+        },
+        {
+            "name": "MISSL",
+            "lat": 28.686263883333332,
+            "lon": 80.70932778333334
+        },
+        {
+            "name": "MOONS",
+            "lat": 28.376452783333335,
+            "lon": 80.35340556666667
+        },
+        {
+            "name": "OMN",
+            "lat": 29.30325,
+            "lon": 81.11269721666666
+        },
+        {
+            "name": "ORRBT",
+            "lat": 28.316777783333333,
+            "lon": 80.58951943333334
+        },
+        {
+            "name": "ROCIT",
+            "lat": 28.786241666666665,
+            "lon": 80.80671666666667
+        },
+        {
+            "name": "SPACS",
+            "lat": 28.525469433333335,
+            "lon": 80.65709166666667
+        },
+        {
+            "name": "STARS",
+            "lat": 28.698027783333334,
+            "lon": 80.748825
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "BITHO7",
+            "runway": "RNW 15 RNW 33",
+            "fixes": {
+                "OMN": "OMN",
+                "LAMMA": "LAMMA",
+                "JESUP": "JESUP",
+                "COZMO": "COZMO",
+                "BITHO": "BITHO"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "ROCIT": "ROCIT AT OR ABOVE 2500",
+                "STARS": "STARS 1500 RNW 15 TRK 155 UNTIL 800 TURN LEFT DIRECT",
+                "EARTH": "OVERFLY EARTH AT OR ABOVE 2500 HOLD AT EARTH RIGHT TURN INBOUNDCOURSE 240 LEGDIST 9 FAF STARS MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "EARTH",
+                    "fixes": {
+                        "EARTH": "EARTH SPEED 250"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ORRBT": "ORRBT AT OR ABOVE 4800",
+                "SPACS": "SPACS 1500",
+                "LEUNA": "OVERFLY LEUNA 220 RNW 33 TRK 349 UNTIL 410",
+                "MISSL": "MISSL TURN RIGHT DIRECT",
+                "BLKHL": "BLKHL",
+                "COMET": "OVERFLY COMET AT OR ABOVE 8000 HOLD AT COMET RIGHT TURN INBOUNDCOURSE 270 LEGDIST 7 FAF SPACS MAP LEUNA"
+            },
+            "transitions": [
+                {
+                    "name": "INDIA",
+                    "fixes": {
+                        "INDIA": "INDIA",
+                        "COMET": "COMET AT OR ABOVE 14000",
+                        "MOONS": "MOONS AT OR ABOVE 8000"
+                    }
+                }
+            ]
+        }
+    ]
+}

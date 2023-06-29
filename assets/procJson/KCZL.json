@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "DUMBB",
+            "lat": 34.555222216666664,
+            "lon": 85.13598056666666
+        },
+        {
+            "name": "GECYE",
+            "lat": 34.270211116666665,
+            "lon": 84.89238888333334
+        },
+        {
+            "name": "HOGUK",
+            "lat": 34.28670278333333,
+            "lon": 84.79376111666667
+        },
+        {
+            "name": "ICUSI",
+            "lat": 34.22890278333333,
+            "lon": 84.97965278333334
+        },
+        {
+            "name": "JOTKI",
+            "lat": 34.653047216666664,
+            "lon": 84.98929166666667
+        },
+        {
+            "name": "KEYEY",
+            "lat": 34.36586666666667,
+            "lon": 84.91651666666667
+        },
+        {
+            "name": "LEYLI",
+            "lat": 34.55791943333333,
+            "lon": 84.96513056666667
+        },
+        {
+            "name": "NELLO",
+            "lat": 34.49956388333333,
+            "lon": 84.41673333333334
+        },
+        {
+            "name": "RMG",
+            "lat": 34.162563883333334,
+            "lon": 85.11940833333334
+        },
+        {
+            "name": "SOYOY",
+            "lat": 34.60893333333333,
+            "lon": 84.97808056666666
+        },
+        {
+            "name": "UVNIH",
+            "lat": 34.402575,
+            "lon": 84.92579166666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "JOTKI": "JOTKI AT OR ABOVE 3500 SPEED 200",
+                "SOYOY": "SOYOY AT OR ABOVE 2800",
+                "LEYLI": "LEYLI 2600 RNW 17 TRK 173 UNTIL 930",
+                "GECYE": "OVERFLY GECYE AT OR ABOVE 2800 HOLD AT GECYE RIGHT TURN INBOUNDCOURSE 353 LEGDIST 4 FAF LEYLI MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "JOTKI",
+                    "fixes": {
+                        "JOTKI": "JOTKI RIGHT TURN INBOUNDCOURSE 173 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "GECYE": "GECYE AT OR ABOVE 2800",
+                "KEYEY": "KEYEY 2300",
+                "UVNIH": "UVNIH AT OR ABOVE 1580 RNW 35 TRK 353 UNTIL 1056",
+                "JOTKI": "OVERFLY JOTKI AT OR ABOVE 3500 HOLD AT JOTKI RIGHT TURN INBOUNDCOURSE 173 LEGDIST 4 FAF KEYEY MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "DUMBB",
+                    "fixes": {
+                        "DUMBB": "DUMBB",
+                        "GECYE": "OVERFLY GECYE AT OR ABOVE 4000 HOLD AT GECYE RIGHT TURN INBOUNDCOURSE 353 ALT 2800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NELLO",
+                    "fixes": {
+                        "NELLO": "NELLO",
+                        "HOGUK": "HOGUK AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "RMG",
+                    "fixes": {
+                        "RMG": "RMG",
+                        "ICUSI": "ICUSI AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

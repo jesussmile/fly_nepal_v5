@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "CUNUN",
+            "lat": 42.72504443333333,
+            "lon": 94.60875
+        },
+        {
+            "name": "EVIFI",
+            "lat": 42.84815278333333,
+            "lon": 94.88268333333333
+        },
+        {
+            "name": "HUMIB",
+            "lat": 42.76136388333333,
+            "lon": 94.6893
+        },
+        {
+            "name": "OYIBU",
+            "lat": 42.78745,
+            "lon": 94.74729721666667
+        },
+        {
+            "name": "WOVLA",
+            "lat": 42.6368,
+            "lon": 94.41393333333333
+        },
+        {
+            "name": "ZASUG",
+            "lat": 42.69789166666666,
+            "lon": 94.54867221666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 18",
+        "RNW 30",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "EVIFI": "EVIFI AT OR ABOVE 3000",
+                "OYIBU": "OYIBU 2800",
+                "HUMIB": "HUMIB AT OR ABOVE 1840 RNW 12 TRK 119 UNTIL 1626",
+                "WOVLA": "OVERFLY WOVLA AT OR ABOVE 3000 HOLD AT WOVLA RIGHT TURN INBOUNDCOURSE 300 LEGDIST 4 FAF OYIBU MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "EVIFI",
+                    "fixes": {
+                        "EVIFI": "EVIFI RIGHT TURN INBOUNDCOURSE 119 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "WOVLA": "WOVLA AT OR ABOVE 3000",
+                "ZASUG": "ZASUG 2800",
+                "CUNUN": "CUNUN AT OR ABOVE 1800 RNW 30 TRK 300 UNTIL 1534",
+                "EVIFI": "OVERFLY EVIFI AT OR ABOVE 3000 HOLD AT EVIFI RIGHT TURN INBOUNDCOURSE 119 LEGDIST 4 FAF ZASUG MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "WOVLA",
+                    "fixes": {
+                        "WOVLA": "WOVLA RIGHT TURN INBOUNDCOURSE 300 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

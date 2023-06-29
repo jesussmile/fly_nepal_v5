@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "ASESE",
+            "lat": 33.03746111666667,
+            "lon": 87.32043611666667
+        },
+        {
+            "name": "BEKDE",
+            "lat": 32.95426666666667,
+            "lon": 87.32883333333334
+        },
+        {
+            "name": "BOVRE",
+            "lat": 32.92826111666667,
+            "lon": 86.97337221666666
+        },
+        {
+            "name": "BUSAY",
+            "lat": 32.87106943333333,
+            "lon": 87.33721666666666
+        },
+        {
+            "name": "CAMUV",
+            "lat": 32.91924443333333,
+            "lon": 86.85314166666667
+        },
+        {
+            "name": "EBEYA",
+            "lat": 32.932941666666665,
+            "lon": 87.036375
+        },
+        {
+            "name": "FAMAM",
+            "lat": 33.002408333333335,
+            "lon": 86.84431666666667
+        },
+        {
+            "name": "KORNR",
+            "lat": 32.811627783333336,
+            "lon": 86.84651943333333
+        },
+        {
+            "name": "OKW",
+            "lat": 33.23786388333333,
+            "lon": 87.24986666666666
+        },
+        {
+            "name": "TASYU",
+            "lat": 33.11139721666667,
+            "lon": 86.865
+        },
+        {
+            "name": "YOYNU",
+            "lat": 32.94557221666667,
+            "lon": 87.20848888333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "BEKDE": "BEKDE AT OR ABOVE 3000",
+                "YOYNU": "YOYNU 2100 RNW 10 TRK 097 UNTIL 651",
+                "CAMUV": "OVERFLY CAMUV AT OR ABOVE 3000 HOLD AT CAMUV RIGHT TURN INBOUNDCOURSE 277 LEGDIST 4 FAF YOYNU MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "KORNR",
+                    "fixes": {
+                        "KORNR": "KORNR",
+                        "BUSAY": "BUSAY AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "OKW",
+                    "fixes": {
+                        "OKW": "OKW",
+                        "ASESE": "ASESE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "CAMUV": "CAMUV AT OR ABOVE 3000 OVERFLY CAMUV AT OR ABOVE 3000 HOLD AT CAMUV RIGHT TURN INBOUNDCOURSE 277 LEGDIST 4 FAF BOVRE MAP RNW 28",
+                "BOVRE": "BOVRE 2100",
+                "EBEYA": "EBEYA AT OR ABOVE 1060 RNW 28 TRK 277 UNTIL 651 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KORNR",
+                    "fixes": {
+                        "KORNR": "KORNR"
+                    }
+                },
+                {
+                    "name": "TASYU",
+                    "fixes": {
+                        "TASYU": "TASYU",
+                        "FAMAM": "FAMAM AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

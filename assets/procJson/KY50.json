@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "HUZVU",
+            "lat": 43.98266388333333,
+            "lon": 89.21307221666666
+        },
+        {
+            "name": "LOYIT",
+            "lat": 44.17243611666667,
+            "lon": 89.50836943333333
+        },
+        {
+            "name": "WOSMU",
+            "lat": 44.100422216666665,
+            "lon": 89.39594443333333
+        },
+        {
+            "name": "YIYUT",
+            "lat": 44.017516666666666,
+            "lon": 89.26706943333333
+        },
+        {
+            "name": "ZIBTI",
+            "lat": 44.071272216666664,
+            "lon": 89.35056111666667
+        },
+        {
+            "name": "ZOSMI",
+            "lat": 43.91033611666667,
+            "lon": 89.10133888333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 13",
+        "RNW 26",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "LOYIT": "LOYIT AT OR ABOVE 3300",
+                "WOSMU": "WOSMU 2500",
+                "ZIBTI": "ZIBTI AT OR ABOVE 1660 RNW 13 TRK 134 UNTIL 1240",
+                "ZOSMI": "OVERFLY ZOSMI AT OR ABOVE 3300 HOLD AT ZOSMI RIGHT TURN INBOUNDCOURSE 314 LEGDIST 4 FAF WOSMU MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "LOYIT",
+                    "fixes": {
+                        "LOYIT": "LOYIT RIGHT TURN INBOUNDCOURSE 134 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ZOSMI": "ZOSMI AT OR ABOVE 3300",
+                "HUZVU": "HUZVU 2500",
+                "YIYUT": "YIYUT AT OR ABOVE 1500 RNW 31 TRK 314 UNTIL 1240",
+                "LOYIT": "OVERFLY LOYIT AT OR ABOVE 3300 HOLD AT LOYIT RIGHT TURN INBOUNDCOURSE 134 LEGDIST 4 FAF HUZVU MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ZOSMI",
+                    "fixes": {
+                        "ZOSMI": "ZOSMI RIGHT TURN INBOUNDCOURSE 314 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

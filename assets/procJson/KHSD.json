@@ -1,0 +1,152 @@
+{
+    "fixes": [
+        {
+            "name": "BVO",
+            "lat": 36.83433611666667,
+            "lon": 96.01843056666667
+        },
+        {
+            "name": "GULLI",
+            "lat": 36.01195,
+            "lon": 97.14434166666666
+        },
+        {
+            "name": "IKAZE",
+            "lat": 35.51287778333333,
+            "lon": 97.7023
+        },
+        {
+            "name": "ILWIM",
+            "lat": 35.692875,
+            "lon": 97.71011388333334
+        },
+        {
+            "name": "IRW",
+            "lat": 35.358597216666666,
+            "lon": 97.60922778333334
+        },
+        {
+            "name": "KHSD",
+            "lat": 35.60183333333333,
+            "lon": 97.70616666666666
+        },
+        {
+            "name": "NUFAD",
+            "lat": 35.39610556666667,
+            "lon": 97.69724443333334
+        },
+        {
+            "name": "PER",
+            "lat": 36.746530566666664,
+            "lon": 97.16015556666666
+        },
+        {
+            "name": "PI001",
+            "lat": 35.74263945,
+            "lon": 97.76324206666666
+        },
+        {
+            "name": "PI002",
+            "lat": 35.771761966666666,
+            "lon": 97.84393546666666
+        },
+        {
+            "name": "PI003",
+            "lat": 35.84375763333333,
+            "lon": 97.81116818333334
+        },
+        {
+            "name": "PULTZ",
+            "lat": 35.688183333333335,
+            "lon": 97.73748611666667
+        },
+        {
+            "name": "SEGLR",
+            "lat": 36.16672221666666,
+            "lon": 97.03289443333334
+        },
+        {
+            "name": "TUL",
+            "lat": 36.196252783333335,
+            "lon": 95.78809166666667
+        },
+        {
+            "name": "WAROP",
+            "lat": 35.63705278333333,
+            "lon": 97.70768611666666
+        },
+        {
+            "name": "YAVOR",
+            "lat": 35.811311116666666,
+            "lon": 97.71526666666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "GULLI3",
+            "runway": "RNW 18 RNW 36",
+            "fixes": {
+                "GULLI": "GULLI HDG 230 VECTORS"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "PULTZ": "PULTZ 2800 RNW 18",
+                "IRW": "IRW AT OR ABOVE 3000 FAF PULTZ MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "IRW",
+                    "fixes": {
+                        "IRW": "IRW",
+                        "PULTZ": "PULTZ AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 3100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "YAVOR": "YAVOR AT OR ABOVE 3600",
+                "ILWIM": "ILWIM 2800",
+                "WAROP": "WAROP AT OR ABOVE 1720 RNW 18 TRK 174 UNTIL 1427",
+                "NUFAD": "OVERFLY NUFAD AT OR ABOVE 3200 HOLD AT NUFAD LEFT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF ILWIM MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "YAVOR",
+                    "fixes": {
+                        "YAVOR": "YAVOR RIGHT TURN INBOUNDCOURSE 174 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "NUFAD": "NUFAD AT OR ABOVE 3200",
+                "IKAZE": "IKAZE 2800 RNW 36 TRK 354 UNTIL 1593",
+                "YAVOR": "OVERFLY YAVOR AT OR ABOVE 3600 HOLD AT YAVOR RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF IKAZE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "NUFAD",
+                    "fixes": {
+                        "NUFAD": "NUFAD LEFT TURN INBOUNDCOURSE 354 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

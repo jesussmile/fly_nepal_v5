@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "EP21",
+            "lat": 22.6327,
+            "lon": 55.830925
+        },
+        {
+            "name": "FF03",
+            "lat": 22.715838883333333,
+            "lon": 55.83922221666667
+        },
+        {
+            "name": "FF21",
+            "lat": 22.568397216666668,
+            "lon": 55.81105556666667
+        },
+        {
+            "name": "PJ225",
+            "lat": 22.552708333333335,
+            "lon": 55.80463888333333
+        },
+        {
+            "name": "PJ226",
+            "lat": 22.471863883333334,
+            "lon": 55.78156943333333
+        },
+        {
+            "name": "PJ227",
+            "lat": 22.391013883333333,
+            "lon": 55.758525
+        },
+        {
+            "name": "PJ228",
+            "lat": 22.450411116666668,
+            "lon": 55.86854721666667
+        },
+        {
+            "name": "PJ335",
+            "lat": 22.7301,
+            "lon": 55.855347216666665
+        },
+        {
+            "name": "PJ336",
+            "lat": 22.810936116666667,
+            "lon": 55.878497216666666
+        },
+        {
+            "name": "PJ337",
+            "lat": 22.891769433333334,
+            "lon": 55.90166943333333
+        },
+        {
+            "name": "PJ338",
+            "lat": 22.789441666666665,
+            "lon": 55.965677783333334
+        },
+        {
+            "name": "PJCNB",
+            "lat": 22.641388883333335,
+            "lon": 55.83361111666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FF03": "FF03 3000 RNW 03",
+                "PJCNB": "OVERFLY PJCNB TRK 020 UNTIL 4000 TURN LEFT DIRECT PJCNB HOLD AT PJCNB LEFT TURN INBOUNDCOURSE 189 LEGTIME 1 FAF FF03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "PJC",
+                    "fixes": {
+                        "PJCNB": "PJCNB AT OR ABOVE 4000 TRK 189 UNTIL 7.6 FROM PJCNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FF21": "FF21 3000",
+                "EP21": "OVERFLY EP21 1895",
+                "PJCNB": "OVERFLY PJCNB AT OR ABOVE 2260 RNW 21 TRK 212 UNTIL 4000 TURN LEFT DIRECT PJCNB HOLD AT PJCNB RIGHT TURN INBOUNDCOURSE 007 LEGTIME 1 FAF FF21 MAP PJC"
+            },
+            "transitions": [
+                {
+                    "name": "PJC",
+                    "fixes": {
+                        "PJCNB": "PJCNB AT OR ABOVE 4000 TRK 007 UNTIL 8.2 FROM PJCNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ03",
+            "fixes": {
+                "PJ336": "PJ336 AT OR ABOVE 3600",
+                "PJ335": "PJ335 3490 RNW 03 TRK 031 UNTIL 3000 TURN LEFT DIRECT",
+                "PJ338": "PJ338 4000 HOLD AT PJ338 LEFT TURN INBOUNDCOURSE 121 ALT 4000 LEGTIME 1 FAF PJ335 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "PJ337",
+                    "fixes": {
+                        "PJ337": "PJ337 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "PJ338",
+                    "fixes": {
+                        "PJ338": "PJ338 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ21",
+            "fixes": {
+                "PJ226": "PJ226 AT OR ABOVE 3600",
+                "PJ225": "PJ225 3490 RNW 21 TRK 211 UNTIL 3000 TURN RIGHT DIRECT",
+                "PJ228": "PJ228 4000 HOLD AT PJ228 RIGHT TURN INBOUNDCOURSE 121 ALT 4000 LEGTIME 1 FAF PJ225 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "PJ227",
+                    "fixes": {
+                        "PJ227": "PJ227 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "PJ228",
+                    "fixes": {
+                        "PJ228": "PJ228 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

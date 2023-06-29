@@ -1,0 +1,294 @@
+{
+    "fixes": [
+        {
+            "name": "30VOR",
+            "lat": 33.62568888333333,
+            "lon": 71.56790833333334
+        },
+        {
+            "name": "ASBIB",
+            "lat": 33.74201111666667,
+            "lon": 71.76893056666667
+        },
+        {
+            "name": "ASBOX",
+            "lat": 33.61014721666667,
+            "lon": 71.53247221666666
+        },
+        {
+            "name": "CF23",
+            "lat": 33.591113883333335,
+            "lon": 71.49922221666667
+        },
+        {
+            "name": "D049G",
+            "lat": 33.583616666666664,
+            "lon": 71.50591388333333
+        },
+        {
+            "name": "D049H",
+            "lat": 33.57309443333333,
+            "lon": 71.490425
+        },
+        {
+            "name": "D049J",
+            "lat": 33.55204166666667,
+            "lon": 71.45945833333333
+        },
+        {
+            "name": "D237F",
+            "lat": 33.70877778333333,
+            "lon": 71.71719443333333
+        },
+        {
+            "name": "D237I",
+            "lat": 33.73452221666667,
+            "lon": 71.76861666666667
+        },
+        {
+            "name": "DGO",
+            "lat": 33.65722221666667,
+            "lon": 71.61444443333333
+        },
+        {
+            "name": "DODMO",
+            "lat": 33.69574166666666,
+            "lon": 71.68577221666666
+        },
+        {
+            "name": "EDNOD",
+            "lat": 33.50822778333333,
+            "lon": 71.49397221666666
+        },
+        {
+            "name": "ESOKI",
+            "lat": 34.28277778333333,
+            "lon": 71.89555556666667
+        },
+        {
+            "name": "FF05Y",
+            "lat": 33.703025,
+            "lon": 71.70571388333333
+        },
+        {
+            "name": "FF05Z",
+            "lat": 33.6916,
+            "lon": 71.68293056666667
+        },
+        {
+            "name": "FF23",
+            "lat": 33.605280566666664,
+            "lon": 71.52435556666667
+        },
+        {
+            "name": "FS23",
+            "lat": 33.604655566666665,
+            "lon": 71.53690278333333
+        },
+        {
+            "name": "GELAX",
+            "lat": 33.56371111666667,
+            "lon": 71.44957221666667
+        },
+        {
+            "name": "ISROL",
+            "lat": 33.619177783333335,
+            "lon": 71.40511666666667
+        },
+        {
+            "name": "KODVO",
+            "lat": 33.68111111666666,
+            "lon": 71.3375
+        },
+        {
+            "name": "MA05",
+            "lat": 33.66581943333333,
+            "lon": 71.63156111666666
+        },
+        {
+            "name": "MOLTU",
+            "lat": 34.27944443333333,
+            "lon": 71.42694443333333
+        },
+        {
+            "name": "MS23",
+            "lat": 33.646711116666665,
+            "lon": 71.59892778333334
+        },
+        {
+            "name": "SN028",
+            "lat": 33.628708333333336,
+            "lon": 71.56565556666666
+        },
+        {
+            "name": "SN068",
+            "lat": 33.591580566666664,
+            "lon": 71.49930278333333
+        },
+        {
+            "name": "TELAG",
+            "lat": 33.68333333333333,
+            "lon": 70.93333333333334
+        },
+        {
+            "name": "UTLOR",
+            "lat": 33.797613883333334,
+            "lon": 71.724625
+        },
+        {
+            "name": "VTN",
+            "lat": 32.73861111666667,
+            "lon": 71.49611111666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "ESOK1J",
+            "rnw": "23",
+            "fixes": {
+                "ESOKI": "ESOKI AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MOLT1J",
+            "rnw": "23",
+            "fixes": {
+                "MOLTU": "MOLTU AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TELA1J",
+            "rnw": "23",
+            "fixes": {
+                "KODVO": "KODVO AT OR ABOVE 5000",
+                "TELAG": "TELAG AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VTN1J",
+            "rnw": "23",
+            "fixes": {
+                "VTN": "VTN AT OR ABOVE 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ05",
+            "fixes": {
+                "FF05Z": "FF05Z 1600",
+                "MA05": "MA05 554 RNW 05 TRK 057 UNTIL 2.0 FROM",
+                "DGO": "DGO TURN LEFT DIRECT",
+                "D237F": "D237F AT OR ABOVE 3000 HOLD AT D237F LEFT TURN INBOUNDCOURSE 057 LEGDIST 3 FAF FF05Z MAP MA05"
+            },
+            "transitions": [
+                {
+                    "name": "D237I",
+                    "fixes": {
+                        "D237I": "D237I AT OR ABOVE 3000",
+                        "D237F": "D237F"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FS23": "FS23 1900",
+                "30VOR": "30VOR AT OR ABOVE 1000",
+                "MS23": "MS23 573 RNW 23 TRK 229 UNTIL 1500 FAF FS23 MAP MS23"
+            },
+            "transitions": [
+                {
+                    "name": "D049J",
+                    "fixes": {
+                        "D049J": "D049J AT OR ABOVE 3500",
+                        "D049H": "D049H AT OR ABOVE 2700",
+                        "D049G": "D049G"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS23",
+            "fixes": {
+                "CF23": "CF23 AT OR ABOVE 2000",
+                "FF23": "FF23 1990 RNW 23 HDG 234 UNTIL 1000 FAF FF23 MAP RNW 23"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "ASBIB": "ASBIB AT OR ABOVE 3000 OVERFLY ASBIB AT OR ABOVE 3000 HOLD AT ASBIB LEFT TURN INBOUNDCOURSE 054 ALT 3000 LEGDIST 3 FAF DODMO MAP RNW 05",
+                "DODMO": "DODMO 1600 RNW 05 TRK 054 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ASBIB",
+                    "fixes": {
+                        "ASBIB": "ASBIB LEFT TURN INBOUNDCOURSE 054 ALT 3000 LEGDIST 3"
+                    }
+                },
+                {
+                    "name": "UTLOR",
+                    "fixes": {
+                        "UTLOR": "UTLOR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "GELAX": "GELAX AT OR ABOVE 3500",
+                "SN068": "SN068 AT OR ABOVE 2500",
+                "ASBOX": "ASBOX 1900",
+                "SN028": "SN028 AT OR ABOVE 1000 RNW 23 TRK 234 UNTIL 1500 TURN RIGHT DIRECT",
+                "EDNOD": "OVERFLY EDNOD AT OR ABOVE 3500 HOLD AT EDNOD RIGHT TURN INBOUNDCOURSE 144 ALT 3500 SPEED 175 LEGDIST 3 FAF ASBOX MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "EDNOD",
+                    "fixes": {
+                        "EDNOD": "EDNOD"
+                    }
+                },
+                {
+                    "name": "ISROL",
+                    "fixes": {
+                        "ISROL": "ISROL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY05",
+            "fixes": {
+                "FF05Y": "FF05Y 1900 RNW 05",
+                "DGO": "OVERFLY DGO TRK 057 UNTIL 1000 TURN LEFT DIRECT DGO AT OR ABOVE 3500 HOLD AT DGO LEFT TURN INBOUNDCOURSE 255 LEGTIME 1 FAF FF05Y MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "DGO",
+                    "fixes": {
+                        "DGO": "DGO AT OR ABOVE 3500 TRK 255 UNTIL 7.0 FROM DGO"
+                    }
+                }
+            ]
+        }
+    ]
+}

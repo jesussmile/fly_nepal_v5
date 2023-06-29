@@ -1,0 +1,132 @@
+{
+    "fixes": [
+        {
+            "name": "BGQ",
+            "lat": 61.569433333333336,
+            "lon": 149.96715833333334
+        },
+        {
+            "name": "COVEV",
+            "lat": 61.84013611666666,
+            "lon": 150.14148333333333
+        },
+        {
+            "name": "FODVU",
+            "lat": 61.979338883333334,
+            "lon": 150.288525
+        },
+        {
+            "name": "JABUV",
+            "lat": 61.665508333333335,
+            "lon": 149.95913333333334
+        },
+        {
+            "name": "KOTRE",
+            "lat": 61.76631666666667,
+            "lon": 150.06411388333333
+        },
+        {
+            "name": "NAYBI",
+            "lat": 61.57505833333333,
+            "lon": 149.86558611666666
+        },
+        {
+            "name": "NIYTI",
+            "lat": 61.71920278333333,
+            "lon": 150.01495556666666
+        },
+        {
+            "name": "PEDTI",
+            "lat": 61.74155,
+            "lon": 150.03825
+        },
+        {
+            "name": "TADYU",
+            "lat": 61.538322216666664,
+            "lon": 150.02183333333332
+        },
+        {
+            "name": "ZUSRA",
+            "lat": 61.94212221666667,
+            "lon": 150.44632778333334
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "BGQ2",
+            "rnw": "15",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 13",
+                    "fixes": {
+                        "RNW 13": "RNW 13",
+                        "NIYTI": "OVERFLY NIYTI",
+                        "BGQ": "OVERFLY BGQ"
+                    }
+                },
+                {
+                    "rwy": "RNW 31",
+                    "fixes": {
+                        "RNW 31": "RNW 31 HDG 313 UNTIL 800 TURN LEFT DIRECT",
+                        "BGQ": "OVERFLY BGQ"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "FODVU": "FODVU AT OR ABOVE 3100",
+                "COVEV": "COVEV 2000",
+                "KOTRE": "OVERFLY KOTRE 390 RNW 13 TRK 133 UNTIL 615 TURN RIGHT DIRECT",
+                "ZUSRA": "OVERFLY ZUSRA AT OR ABOVE 3100 HOLD AT ZUSRA RIGHT TURN INBOUNDCOURSE 042 LEGDIST 5 FAF COVEV MAP KOTRE"
+            },
+            "transitions": [
+                {
+                    "name": "FODVU",
+                    "fixes": {
+                        "FODVU": "FODVU RIGHT TURN INBOUNDCOURSE 132 ALT 3100 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "ZUSRA",
+                    "fixes": {
+                        "ZUSRA": "ZUSRA AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "NAYBI": "NAYBI AT OR ABOVE 3200",
+                "JABUV": "JABUV 2100",
+                "PEDTI": "OVERFLY PEDTI 448 RNW 31 TRK 313 UNTIL 615 TURN LEFT DIRECT",
+                "TADYU": "OVERFLY TADYU AT OR ABOVE 3200 HOLD AT TADYU RIGHT TURN INBOUNDCOURSE 043 LEGDIST 5 FAF JABUV MAP PEDTI"
+            },
+            "transitions": [
+                {
+                    "name": "NAYBI",
+                    "fixes": {
+                        "NAYBI": "NAYBI RIGHT TURN INBOUNDCOURSE 313 ALT 3200 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "TADYU",
+                    "fixes": {
+                        "TADYU": "TADYU AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "CONVA",
+            "lat": 37.66161666666667,
+            "lon": 98.74691111666667
+        },
+        {
+            "name": "HOVNO",
+            "lat": 37.79325,
+            "lon": 98.74722778333333
+        },
+        {
+            "name": "KODLE",
+            "lat": 37.509563883333335,
+            "lon": 98.85127778333333
+        },
+        {
+            "name": "LEYDE",
+            "lat": 37.61151111666667,
+            "lon": 98.74678888333334
+        },
+        {
+            "name": "NAKME",
+            "lat": 37.509883333333335,
+            "lon": 98.64181111666667
+        },
+        {
+            "name": "ORLIE",
+            "lat": 37.89363611666667,
+            "lon": 98.74747221666667
+        },
+        {
+            "name": "PONPE",
+            "lat": 37.89375,
+            "lon": 98.64219721666667
+        },
+        {
+            "name": "WUTAB",
+            "lat": 37.89342778333334,
+            "lon": 98.85274721666667
+        },
+        {
+            "name": "ZUSKI",
+            "lat": 37.50976943333333,
+            "lon": 98.74654443333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "ORLIE": "ORLIE AT OR ABOVE 4300",
+                "HOVNO": "HOVNO 3600 RNW 17",
+                "ZUSKI": "OVERFLY ZUSKI AT OR ABOVE 4300 HOLD AT ZUSKI RIGHT TURN INBOUNDCOURSE 353 LEGDIST 5 FAF HOVNO MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ORLIE",
+                    "fixes": {
+                        "ORLIE": "ORLIE RIGHT TURN INBOUNDCOURSE 173 ALT 4300 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "PONPE",
+                    "fixes": {
+                        "PONPE": "PONPE AT OR ABOVE 4300"
+                    }
+                },
+                {
+                    "name": "WUTAB",
+                    "fixes": {
+                        "WUTAB": "WUTAB AT OR ABOVE 4300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ZUSKI": "ZUSKI AT OR ABOVE 4300",
+                "LEYDE": "LEYDE 3600",
+                "CONVA": "CONVA AT OR ABOVE 2620 RNW 35",
+                "ORLIE": "OVERFLY ORLIE AT OR ABOVE 4300 HOLD AT ORLIE RIGHT TURN INBOUNDCOURSE 173 LEGDIST 5 FAF LEYDE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "KODLE",
+                    "fixes": {
+                        "KODLE": "KODLE AT OR ABOVE 4300"
+                    }
+                },
+                {
+                    "name": "NAKME",
+                    "fixes": {
+                        "NAKME": "NAKME AT OR ABOVE 4300"
+                    }
+                },
+                {
+                    "name": "ZUSKI",
+                    "fixes": {
+                        "ZUSKI": "ZUSKI RIGHT TURN INBOUNDCOURSE 353 ALT 4300 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "FESNI",
+            "lat": 48.881961116666666,
+            "lon": 97.10823333333333
+        },
+        {
+            "name": "HOGEB",
+            "lat": 48.584861116666666,
+            "lon": 96.73006666666667
+        },
+        {
+            "name": "HUTLU",
+            "lat": 48.81836943333333,
+            "lon": 97.026775
+        },
+        {
+            "name": "JUXIV",
+            "lat": 48.77600556666667,
+            "lon": 96.97266388333334
+        },
+        {
+            "name": "OKIFO",
+            "lat": 48.686922216666666,
+            "lon": 96.85928888333333
+        },
+        {
+            "name": "WIKBU",
+            "lat": 48.72434166666667,
+            "lon": 96.90684443333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "FESNI": "FESNI AT OR ABOVE 3300",
+                "HUTLU": "HUTLU 2400",
+                "JUXIV": "JUXIV AT OR ABOVE 1340 RNW 13 TRK 135 UNTIL 1020",
+                "HOGEB": "OVERFLY HOGEB AT OR ABOVE 2800 HOLD AT HOGEB RIGHT TURN INBOUNDCOURSE 315 LEGDIST 4 FAF HUTLU MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "FESNI",
+                    "fixes": {
+                        "FESNI": "FESNI RIGHT TURN INBOUNDCOURSE 135 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "HOGEB": "HOGEB AT OR ABOVE 2600",
+                "OKIFO": "OKIFO 2400",
+                "WIKBU": "WIKBU AT OR ABOVE 1460 RNW 31 TRK 315 UNTIL 1020",
+                "FESNI": "OVERFLY FESNI AT OR ABOVE 3300 HOLD AT FESNI RIGHT TURN INBOUNDCOURSE 135 ALT 3300 LEGDIST 4 FAF OKIFO MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "HOGEB",
+                    "fixes": {
+                        "HOGEB": "HOGEB RIGHT TURN INBOUNDCOURSE 315 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

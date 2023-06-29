@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "PERGE",
+            "lat": 31.859533333333335,
+            "lon": 85.24927221666667
+        },
+        {
+            "name": "ULWEG",
+            "lat": 31.888102783333334,
+            "lon": 85.53318056666667
+        },
+        {
+            "name": "UNACO",
+            "lat": 31.871933333333335,
+            "lon": 85.37170833333333
+        },
+        {
+            "name": "YARCU",
+            "lat": 31.907969433333335,
+            "lon": 85.73460278333333
+        },
+        {
+            "name": "ZOTPE",
+            "lat": 31.894575,
+            "lon": 85.59845556666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "YARCU": "YARCU AT OR ABOVE 2200",
+                "ZOTPE": "ZOTPE 2200",
+                "ULWEG": "ULWEG AT OR ABOVE 1120 RNW 09 TRK 101 UNTIL 725",
+                "PERGE": "OVERFLY PERGE AT OR ABOVE 2200 HOLD AT PERGE LEFT TURN INBOUNDCOURSE 281 LEGDIST 4 FAF ZOTPE MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "YARCU",
+                    "fixes": {
+                        "YARCU": "YARCU RIGHT TURN INBOUNDCOURSE 101 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "PERGE": "PERGE AT OR ABOVE 2200",
+                "UNACO": "UNACO 2200 RNW 27 TRK 281 UNTIL 835",
+                "YARCU": "OVERFLY YARCU AT OR ABOVE 2200 HOLD AT YARCU RIGHT TURN INBOUNDCOURSE 101 LEGDIST 4 FAF UNACO MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "PERGE",
+                    "fixes": {
+                        "PERGE": "PERGE LEFT TURN INBOUNDCOURSE 281 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

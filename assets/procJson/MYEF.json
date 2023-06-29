@@ -1,0 +1,176 @@
+{
+    "fixes": [
+        {
+            "name": "ATADE",
+            "lat": 24.951036116666668,
+            "lon": 77.68281666666667
+        },
+        {
+            "name": "CUDLI",
+            "lat": 24.903947216666666,
+            "lon": 77.31171943333334
+        },
+        {
+            "name": "EXIGE",
+            "lat": 23.64508611666667,
+            "lon": 76.05016666666667
+        },
+        {
+            "name": "FERGE",
+            "lat": 23.526733333333333,
+            "lon": 75.80318333333334
+        },
+        {
+            "name": "GASKE",
+            "lat": 23.363544433333335,
+            "lon": 75.89518333333334
+        },
+        {
+            "name": "HASUK",
+            "lat": 24.516669433333334,
+            "lon": 77.208925
+        },
+        {
+            "name": "HERSA",
+            "lat": 23.606566666666666,
+            "lon": 75.96962778333334
+        },
+        {
+            "name": "JIPOK",
+            "lat": 23.471933333333332,
+            "lon": 75.68923611666666
+        },
+        {
+            "name": "MIXIT",
+            "lat": 23.953308333333332,
+            "lon": 76.62455
+        },
+        {
+            "name": "OTORE",
+            "lat": 23.545988883333333,
+            "lon": 75.647275
+        },
+        {
+            "name": "PECAY",
+            "lat": 23.59778611666667,
+            "lon": 75.95125
+        },
+        {
+            "name": "REKRE",
+            "lat": 23.480841666666667,
+            "lon": 76.14001111666667
+        },
+        {
+            "name": "WUNUT",
+            "lat": 23.397661116666665,
+            "lon": 75.73098056666667
+        },
+        {
+            "name": "WUPUB",
+            "lat": 23.719275,
+            "lon": 76.00830556666666
+        },
+        {
+            "name": "ZUNDI",
+            "lat": 23.518244433333333,
+            "lon": 75.78574166666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "FERGE2",
+            "rnw": "12",
+            "fixes": {
+                "FERGE": "OVERFLY FERGE AT OR ABOVE 800",
+                "GASKE": "GASKE SPEED 200",
+                "REKRE": "REKRE",
+                "MIXIT": "MIXIT",
+                "HASUK": "HASUK"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ATADE",
+                    "fixes": [
+                        "ATADE"
+                    ]
+                },
+                {
+                    "name": "CUDLI",
+                    "fixes": [
+                        "CUDLI"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PECAY2",
+            "rnw": "30",
+            "fixes": {
+                "PECAY": "OVERFLY PECAY AT OR ABOVE 800 SPEED 200",
+                "REKRE": "REKRE",
+                "MIXIT": "MIXIT",
+                "HASUK": "HASUK"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ATADE",
+                    "fixes": [
+                        "ATADE"
+                    ]
+                },
+                {
+                    "name": "CUDLI",
+                    "fixes": [
+                        "CUDLI"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "EXIGE": "EXIGE AT OR ABOVE 2300 OVERFLY EXIGE AT OR ABOVE 2300 SPEED 200 HOLD AT EXIGE LEFT TURN INBOUNDCOURSE 124 LEGDIST 4 FAF HERSA MAP RNW 12",
+                "HERSA": "HERSA 1700 RNW 12 TRK 124 UNTIL 410 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WUPUB",
+                    "fixes": {
+                        "WUPUB": "WUPUB SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "JIPOK": "JIPOK AT OR ABOVE 2300",
+                "ZUNDI": "ZUNDI 1700 RNW 30 TRK 305 UNTIL 410 TURN RIGHT DIRECT",
+                "OTORE": "OVERFLY OTORE AT OR ABOVE 2300 HOLD AT OTORE RIGHT TURN INBOUNDCOURSE 215 LEGDIST 4 FAF ZUNDI MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "OTORE",
+                    "fixes": {
+                        "OTORE": "OTORE SPEED 200"
+                    }
+                },
+                {
+                    "name": "WUNUT",
+                    "fixes": {
+                        "WUNUT": "WUNUT SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

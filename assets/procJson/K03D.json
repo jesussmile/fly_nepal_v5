@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "IDIXE",
+            "lat": 40.55251666666667,
+            "lon": 92.44846943333333
+        },
+        {
+            "name": "JOKAS",
+            "lat": 40.39893333333333,
+            "lon": 92.12580278333333
+        },
+        {
+            "name": "MEPME",
+            "lat": 40.49804721666667,
+            "lon": 92.33364443333333
+        },
+        {
+            "name": "OPATE",
+            "lat": 40.34312778333334,
+            "lon": 92.0094
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "IDIXE": "IDIXE AT OR ABOVE 4500",
+                "MEPME": "MEPME 2600 RNW 12 TRK 119 UNTIL 1144",
+                "OPATE": "OVERFLY OPATE AT OR ABOVE 4500 HOLD AT OPATE RIGHT TURN INBOUNDCOURSE 299 ALT 4500 LEGDIST 5 FAF MEPME MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "IDIXE",
+                    "fixes": {
+                        "IDIXE": "IDIXE RIGHT TURN INBOUNDCOURSE 119 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "OPATE": "OPATE AT OR ABOVE 4500",
+                "JOKAS": "JOKAS 2500 RNW 30 TRK 299 UNTIL 1144",
+                "IDIXE": "OVERFLY IDIXE AT OR ABOVE 4500 HOLD AT IDIXE RIGHT TURN INBOUNDCOURSE 119 ALT 4500 LEGDIST 5 FAF JOKAS MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "OPATE",
+                    "fixes": {
+                        "OPATE": "OPATE RIGHT TURN INBOUNDCOURSE 299 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

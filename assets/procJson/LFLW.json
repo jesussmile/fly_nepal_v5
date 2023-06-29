@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "ARNB",
+            "lat": 44.955638883333336,
+            "lon": 2.367916666666667
+        },
+        {
+            "name": "CN15",
+            "lat": 45.025902783333336,
+            "lon": 2.3083694333333336
+        },
+        {
+            "name": "FLW15",
+            "lat": 44.98163888333333,
+            "lon": 2.3478888833333333
+        },
+        {
+            "name": "ILW15",
+            "lat": 45.068055566666665,
+            "lon": 2.2769166666666667
+        },
+        {
+            "name": "LW402",
+            "lat": 45.134894433333336,
+            "lon": 2.439797216666667
+        },
+        {
+            "name": "LW404",
+            "lat": 45.02602778333333,
+            "lon": 2.1754166666666666
+        },
+        {
+            "name": "LW410",
+            "lat": 44.861694433333334,
+            "lon": 2.4460277833333333
+        },
+        {
+            "name": "LW412",
+            "lat": 44.943,
+            "lon": 2.186305566666667
+        },
+        {
+            "name": "MN15",
+            "lat": 44.91206388333333,
+            "lon": 2.4047555666666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB15",
+            "fixes": {
+                "CN15": "CN15 AT OR ABOVE 4000",
+                "ARNB": "ARNB 3440 ARNB 4200 SPEED 170 FAF ARNB MAP MN15",
+                "MN15": "MN15 2464 RNW 15 TRK 148 UNTIL 2800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AR1",
+                    "fixes": {
+                        "ARNB": "ARNB RIGHT TURN INBOUNDCOURSE 148 ALT 4000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "AR2",
+                    "fixes": {
+                        "ARNB": "ARNB RIGHT TURN INBOUNDCOURSE 148 ALT 4000 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "ILW15": "ILW15 AT OR ABOVE 5000 SPEED 170 ILW15 AT OR ABOVE 5000 SPEED 170 FAF FLW15 MAP RNW 15",
+                "FLW15": "FLW15 4000 RNW 15",
+                "LW410": "OVERFLY LW410 SPEED 200 TURN RIGHT DIRECT",
+                "LW412": "LW412",
+                "LW404": "LW404 AT OR ABOVE 5000 SPEED 200"
+            },
+            "transitions": [
+                {
+                    "name": "ILW15",
+                    "fixes": {
+                        "ILW15": "ILW15 RIGHT TURN INBOUNDCOURSE 149 ALT 5000 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LW402",
+                    "fixes": {
+                        "LW402": "LW402 SPEED 200"
+                    }
+                },
+                {
+                    "name": "LW404",
+                    "fixes": {
+                        "LW404": "LW404 AT OR ABOVE 5000 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

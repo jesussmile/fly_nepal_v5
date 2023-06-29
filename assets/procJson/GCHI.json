@@ -1,0 +1,206 @@
+{
+    "fixes": [
+        {
+            "name": "ARACO",
+            "lat": 28.432527783333335,
+            "lon": 17.452333333333332
+        },
+        {
+            "name": "D166E",
+            "lat": 27.736994433333333,
+            "lon": 17.85575
+        },
+        {
+            "name": "D166I",
+            "lat": 27.673777783333332,
+            "lon": 17.831322216666667
+        },
+        {
+            "name": "D348I",
+            "lat": 27.959836116666665,
+            "lon": 17.935858333333332
+        },
+        {
+            "name": "FQ158",
+            "lat": 27.935194433333333,
+            "lon": 17.954694433333334
+        },
+        {
+            "name": "FQ336",
+            "lat": 27.684527783333333,
+            "lon": 17.80441666666667
+        },
+        {
+            "name": "HIENB",
+            "lat": 27.816166666666668,
+            "lon": 17.886388883333332
+        },
+        {
+            "name": "HR",
+            "lat": 27.816055566666666,
+            "lon": 17.886444433333335
+        },
+        {
+            "name": "LPC",
+            "lat": 27.82852778333333,
+            "lon": 15.43225
+        },
+        {
+            "name": "MOROD",
+            "lat": 28.454611116666666,
+            "lon": 17.210972216666665
+        },
+        {
+            "name": "MQ158",
+            "lat": 27.875666666666667,
+            "lon": 17.9205
+        },
+        {
+            "name": "MQ336",
+            "lat": 27.77225,
+            "lon": 17.859
+        },
+        {
+            "name": "TESEL",
+            "lat": 28.488277783333334,
+            "lon": 16.83325
+        },
+        {
+            "name": "TFN",
+            "lat": 28.536833333333334,
+            "lon": 16.268777783333334
+        },
+        {
+            "name": "TFS",
+            "lat": 28.002444433333334,
+            "lon": 16.687916666666666
+        },
+        {
+            "name": "TOMOS",
+            "lat": 27.5475,
+            "lon": 15.55325
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "ARAC1X",
+            "rnw": "16",
+            "fixes": {
+                "HR": "HR SPEED 210 TURN LEFT HDG 350 INTERCEPT RADIAL 036 TO",
+                "ARACO": "ARACO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LPC2X",
+            "rnw": "16",
+            "fixes": {
+                "HR": "HR HDG 071 INTERCEPT RADIAL 102 TO",
+                "TOMOS": "TOMOS",
+                "LPC": "LPC"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TFN2X",
+            "rnw": "16",
+            "fixes": {
+                "HR": "HR SPEED 210 TURN LEFT HDG 350 INTERCEPT RADIAL 047 TO",
+                "MOROD": "MOROD",
+                "TESEL": "TESEL",
+                "TFN": "TFN AT OR ABOVE 10000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TFS1X",
+            "rnw": "16",
+            "fixes": {
+                "HR": "HR TURN LEFT HDG 054 INTERCEPT RADIAL 084 TO",
+                "TFS": "TFS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBDA16",
+            "fixes": {
+                "FQ336": "FQ336 2800",
+                "MQ336": "MQ336 978 RNW 16 TRK 041 UNTIL 5200 TURN LEFT DIRECT",
+                "HIENB": "HIENB 6000 HOLD AT HIENB LEFT TURN INBOUNDCOURSE 166 ALT 6000 LEGTIME 1 FAF FQ336 MAP MQ336"
+            },
+            "transitions": [
+                {
+                    "name": "HIE",
+                    "fixes": {
+                        "HIENB": "HIENB AT OR ABOVE 6000 SPEED 140",
+                        "D166E": "D166E AT OR ABOVE 4700",
+                        "D166I": "OVERFLY D166I AT OR ABOVE 2800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB16",
+            "fixes": {
+                "FQ158": "FQ158 2700",
+                "MQ158": "MQ158 1358 RNW 16 TURN LEFT TRK 077 INTERCEPT RADIAL 047 TO",
+                "HIENB": "HIENB SPEED 130 TRK 047 UNTIL 4000 TURN RIGHT DIRECT HIENB 6000 HOLD AT HIENB RIGHT TURN INBOUNDCOURSE 346 ALT 6000 LEGTIME 1 FAF FQ158 MAP MQ158"
+            },
+            "transitions": [
+                {
+                    "name": "HIE",
+                    "fixes": {
+                        "HIENB": "HIENB AT OR ABOVE 6000 SPEED 140 TRK 348 UNTIL 3.0 FROM HIENB",
+                        "D348I": "OVERFLY D348I"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDA34",
+            "fixes": {
+                "FQ336": "FQ336 2800",
+                "MQ336": "MQ336 978 RNW 34 TRK 041 UNTIL 5200 TURN LEFT DIRECT",
+                "HIENB": "HIENB 6000 HOLD AT HIENB LEFT TURN INBOUNDCOURSE 166 ALT 6000 LEGTIME 1 FAF FQ336 MAP MQ336"
+            },
+            "transitions": [
+                {
+                    "name": "HIE",
+                    "fixes": {
+                        "HIENB": "HIENB AT OR ABOVE 6000 SPEED 140",
+                        "D166E": "D166E AT OR ABOVE 4700",
+                        "D166I": "OVERFLY D166I AT OR ABOVE 2800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB34",
+            "fixes": {
+                "FQ158": "FQ158 2700",
+                "MQ158": "MQ158 1358 RNW 34 TURN LEFT TRK 077 INTERCEPT RADIAL 047 TO",
+                "HIENB": "HIENB SPEED 130 TRK 047 UNTIL 4000 TURN RIGHT DIRECT HIENB 6000 HOLD AT HIENB RIGHT TURN INBOUNDCOURSE 346 ALT 6000 LEGTIME 1 FAF FQ158 MAP MQ158"
+            },
+            "transitions": [
+                {
+                    "name": "HIE",
+                    "fixes": {
+                        "HIENB": "HIENB AT OR ABOVE 6000 SPEED 140 TRK 348 UNTIL 3.0 FROM HIENB",
+                        "D348I": "OVERFLY D348I"
+                    }
+                }
+            ]
+        }
+    ]
+}

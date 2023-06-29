@@ -1,0 +1,269 @@
+{
+    "fixes": [
+        {
+            "name": "AVAME",
+            "lat": 43.581436116666666,
+            "lon": 98.03190278333334
+        },
+        {
+            "name": "BEGSE",
+            "lat": 43.68144721666667,
+            "lon": 98.03295833333334
+        },
+        {
+            "name": "CESOT",
+            "lat": 43.722630566666666,
+            "lon": 98.03339443333333
+        },
+        {
+            "name": "CFVBM",
+            "lat": 43.632216666666665,
+            "lon": 97.84274166666667
+        },
+        {
+            "name": "CUDGA",
+            "lat": 43.84785278333333,
+            "lon": 98.14593888333333
+        },
+        {
+            "name": "FF13",
+            "lat": 43.82475556666667,
+            "lon": 98.14648611666667
+        },
+        {
+            "name": "GEBEL",
+            "lat": 43.79601666666667,
+            "lon": 98.08086388333334
+        },
+        {
+            "name": "JUTUB",
+            "lat": 43.631422216666664,
+            "lon": 97.84162221666666
+        },
+        {
+            "name": "KAATS",
+            "lat": 43.9459,
+            "lon": 98.60117778333333
+        },
+        {
+            "name": "LINDO",
+            "lat": 43.70234166666667,
+            "lon": 97.94098056666667
+        },
+        {
+            "name": "MHE",
+            "lat": 43.777022216666666,
+            "lon": 98.03756666666666
+        },
+        {
+            "name": "NUSCI",
+            "lat": 43.91783888333333,
+            "lon": 98.24505833333333
+        },
+        {
+            "name": "PI001",
+            "lat": 43.66180526666667,
+            "lon": 97.88297683333333
+        },
+        {
+            "name": "PI002",
+            "lat": 43.66301325,
+            "lon": 97.78392446666666
+        },
+        {
+            "name": "PI003",
+            "lat": 43.58644571666667,
+            "lon": 97.77546326666666
+        },
+        {
+            "name": "PI004",
+            "lat": 43.80704518333334,
+            "lon": 98.1068519
+        },
+        {
+            "name": "PI005",
+            "lat": 43.87658053333333,
+            "lon": 98.13090421666666
+        },
+        {
+            "name": "PI006",
+            "lat": 43.862690916666665,
+            "lon": 98.23570926666666
+        },
+        {
+            "name": "TECUD",
+            "lat": 43.54846666666667,
+            "lon": 97.86173056666667
+        },
+        {
+            "name": "WELEK",
+            "lat": 43.99997221666667,
+            "lon": 98.12883056666666
+        },
+        {
+            "name": "WUMGA",
+            "lat": 43.70175556666667,
+            "lon": 97.94015278333333
+        },
+        {
+            "name": "WUNTI",
+            "lat": 43.96976111666667,
+            "lon": 98.03601943333334
+        },
+        {
+            "name": "XESCU",
+            "lat": 43.86975556666667,
+            "lon": 98.03495278333334
+        },
+        {
+            "name": "YOXED",
+            "lat": 43.827925,
+            "lon": 98.03450833333333
+        },
+        {
+            "name": "YUGUL",
+            "lat": 43.74321943333333,
+            "lon": 97.69033888333334
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 18",
+        "RNW 31",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS31",
+            "fixes": {
+                "CFVBM": "CFVBM AT OR ABOVE 3200",
+                "LINDO": "LINDO 3182 RNW 31 TRK 310 UNTIL 3200 TURN RIGHT DIRECT",
+                "MHE": "MHE HOLD AT MHE RIGHT TURN INBOUNDCOURSE 310 LEGTIME 1 FAF LINDO MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "MHE",
+                    "fixes": {
+                        "MHE": "MHE",
+                        "LINDO": "LINDO AT OR ABOVE 3200",
+                        "PI001": "PI001 AT OR ABOVE 3200 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3200 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3200 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "NUSCI": "NUSCI AT OR ABOVE 3500",
+                "CUDGA": "CUDGA 3200 RNW 13 TRK 130 UNTIL 1575",
+                "JUTUB": "OVERFLY JUTUB AT OR ABOVE 3200 HOLD AT JUTUB RIGHT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF CUDGA MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "KAATS",
+                    "fixes": {
+                        "KAATS": "KAATS"
+                    }
+                },
+                {
+                    "name": "MHE",
+                    "fixes": {
+                        "MHE": "MHE",
+                        "NUSCI": "OVERFLY NUSCI AT OR ABOVE 3500 HOLD AT NUSCI RIGHT TURN INBOUNDCOURSE 130 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WELEK",
+                    "fixes": {
+                        "WELEK": "WELEK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "WUNTI": "WUNTI AT OR ABOVE 3500",
+                "XESCU": "XESCU 3000",
+                "YOXED": "YOXED AT OR ABOVE 2200 RNW 18 TRK 176 UNTIL 1548",
+                "AVAME": "OVERFLY AVAME AT OR ABOVE 3500 HOLD AT AVAME RIGHT TURN INBOUNDCOURSE 356 LEGDIST 4 FAF XESCU MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "WUNTI",
+                    "fixes": {
+                        "WUNTI": "WUNTI RIGHT TURN INBOUNDCOURSE 176 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "JUTUB": "JUTUB AT OR ABOVE 3200",
+                "WUMGA": "WUMGA 3200 RNW 31 TRK 310 UNTIL 1554",
+                "NUSCI": "OVERFLY NUSCI AT OR ABOVE 3500 HOLD AT NUSCI RIGHT TURN INBOUNDCOURSE 130 LEGDIST 4 FAF WUMGA MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "MHE",
+                    "fixes": {
+                        "MHE": "MHE",
+                        "JUTUB": "OVERFLY JUTUB AT OR ABOVE 3200 HOLD AT JUTUB RIGHT TURN INBOUNDCOURSE 311 ALT 3200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TECUD",
+                    "fixes": {
+                        "TECUD": "TECUD"
+                    }
+                },
+                {
+                    "name": "YUGUL",
+                    "fixes": {
+                        "YUGUL": "YUGUL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "AVAME": "AVAME AT OR ABOVE 3500",
+                "BEGSE": "BEGSE 3000",
+                "CESOT": "CESOT AT OR ABOVE 2200 RNW 36 TRK 356 UNTIL 1554",
+                "WUNTI": "OVERFLY WUNTI AT OR ABOVE 3500 HOLD AT WUNTI RIGHT TURN INBOUNDCOURSE 176 LEGDIST 4 FAF BEGSE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "AVAME",
+                    "fixes": {
+                        "AVAME": "AVAME RIGHT TURN INBOUNDCOURSE 356 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR13",
+            "fixes": {
+                "FF13": "FF13 2900",
+                "GEBEL": "GEBEL AT OR ABOVE 1740 RNW 13",
+                "MHE": "MHE TRK 117 UNTIL 2900 TURN LEFT DIRECT MHE AT OR ABOVE 3000 HOLD AT MHE RIGHT TURN INBOUNDCOURSE 117 LEGTIME 1 FAF FF13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "MHE",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2900 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2900 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2900 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "CIVIM",
+            "lat": 41.11179166666667,
+            "lon": 94.39625833333334
+        },
+        {
+            "name": "FOVOB",
+            "lat": 40.835633333333334,
+            "lon": 94.297675
+        },
+        {
+            "name": "HIBAV",
+            "lat": 40.93077221666667,
+            "lon": 94.33154443333333
+        },
+        {
+            "name": "LARIY",
+            "lat": 40.97922221666666,
+            "lon": 94.34883056666666
+        },
+        {
+            "name": "LYMAN",
+            "lat": 41.2898,
+            "lon": 94.82831943333333
+        },
+        {
+            "name": "NOCSI",
+            "lat": 41.20710556666667,
+            "lon": 94.43048056666666
+        },
+        {
+            "name": "RILGE",
+            "lat": 40.726602783333334,
+            "lon": 94.36028056666666
+        },
+        {
+            "name": "SICON",
+            "lat": 41.250113883333334,
+            "lon": 94.63647778333333
+        },
+        {
+            "name": "UKIPE",
+            "lat": 41.33722778333333,
+            "lon": 94.45791943333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 16",
+        "RNW 22",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "NOCSI": "NOCSI AT OR ABOVE 3000",
+                "CIVIM": "CIVIM 3000 RNW 16 TRK 161 UNTIL 1539",
+                "FOVOB": "OVERFLY FOVOB AT OR ABOVE 3000 HOLD AT FOVOB RIGHT TURN INBOUNDCOURSE 341 LEGDIST 5 FAF CIVIM MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "LYMAN",
+                    "fixes": {
+                        "LYMAN": "LYMAN",
+                        "SICON": "SICON AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "NOCSI",
+                    "fixes": {
+                        "NOCSI": "NOCSI RIGHT TURN INBOUNDCOURSE 161 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UKIPE",
+                    "fixes": {
+                        "UKIPE": "UKIPE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "FOVOB": "FOVOB AT OR ABOVE 3000",
+                "HIBAV": "HIBAV 3000",
+                "LARIY": "LARIY AT OR ABOVE 2040 RNW 34 TRK 341 UNTIL 1700",
+                "NOCSI": "OVERFLY NOCSI AT OR ABOVE 3000 HOLD AT NOCSI RIGHT TURN INBOUNDCOURSE 161 LEGDIST 4 FAF HIBAV MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "FOVOB",
+                    "fixes": {
+                        "FOVOB": "FOVOB RIGHT TURN INBOUNDCOURSE 341 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RILGE",
+                    "fixes": {
+                        "RILGE": "RILGE"
+                    }
+                }
+            ]
+        }
+    ]
+}

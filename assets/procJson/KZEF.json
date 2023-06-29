@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CUVTI",
+            "lat": 36.368797216666664,
+            "lon": 80.53286943333333
+        },
+        {
+            "name": "IVUKE",
+            "lat": 36.29553333333333,
+            "lon": 80.74195278333333
+        },
+        {
+            "name": "UBUYI",
+            "lat": 36.26384721666667,
+            "lon": 80.83193056666667
+        },
+        {
+            "name": "WISTU",
+            "lat": 36.24248888333333,
+            "lon": 80.89243333333333
+        },
+        {
+            "name": "YECCU",
+            "lat": 36.318030566666664,
+            "lon": 80.67790278333334
+        },
+        {
+            "name": "ZOVMI",
+            "lat": 36.1957,
+            "lon": 81.02455
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "ZOVMI": "ZOVMI AT OR ABOVE 4900",
+                "WISTU": "WISTU 2800",
+                "UBUYI": "UBUYI AT OR ABOVE 1780 RNW 07 TRK 074 UNTIL 1460",
+                "CUVTI": "OVERFLY CUVTI AT OR ABOVE 5100 HOLD AT CUVTI RIGHT TURN INBOUNDCOURSE 255 ALT 5100 LEGDIST 5 FAF WISTU MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "ZOVMI",
+                    "fixes": {
+                        "ZOVMI": "ZOVMI RIGHT TURN INBOUNDCOURSE 074 ALT 4900 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "CUVTI": "CUVTI AT OR ABOVE 5100",
+                "YECCU": "YECCU 2800",
+                "IVUKE": "IVUKE AT OR ABOVE 1720 RNW 25 TRK 255 UNTIL 1440",
+                "ZOVMI": "OVERFLY ZOVMI AT OR ABOVE 4900 HOLD AT ZOVMI RIGHT TURN INBOUNDCOURSE 074 LEGDIST 5 FAF YECCU MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "CUVTI",
+                    "fixes": {
+                        "CUVTI": "CUVTI RIGHT TURN INBOUNDCOURSE 255 ALT 5100 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

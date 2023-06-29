@@ -1,0 +1,157 @@
+{
+    "fixes": [
+        {
+            "name": "ECG",
+            "lat": 36.25757221666667,
+            "lon": 76.17559721666667
+        },
+        {
+            "name": "EDORY",
+            "lat": 36.31040278333333,
+            "lon": 76.09286943333333
+        },
+        {
+            "name": "FEVBI",
+            "lat": 36.61940833333333,
+            "lon": 75.951175
+        },
+        {
+            "name": "HABKI",
+            "lat": 36.571469433333334,
+            "lon": 75.86647221666666
+        },
+        {
+            "name": "HAKDY",
+            "lat": 36.24081388333333,
+            "lon": 76.15287778333334
+        },
+        {
+            "name": "JEDSO",
+            "lat": 36.33171111666667,
+            "lon": 76.09154721666667
+        },
+        {
+            "name": "LEMMS",
+            "lat": 36.28389166666667,
+            "lon": 76.14580556666667
+        },
+        {
+            "name": "OCSIP",
+            "lat": 36.137486116666665,
+            "lon": 76.00429166666666
+        },
+        {
+            "name": "OTETY",
+            "lat": 36.488222216666664,
+            "lon": 75.93886943333334
+        },
+        {
+            "name": "SUNNS",
+            "lat": 36.44020556666667,
+            "lon": 76.50783611666667
+        },
+        {
+            "name": "TACLO",
+            "lat": 36.324216666666665,
+            "lon": 76.08092778333334
+        },
+        {
+            "name": "WEMTU",
+            "lat": 36.39384166666667,
+            "lon": 76.02090833333334
+        },
+        {
+            "name": "WINAL",
+            "lat": 36.153294433333336,
+            "lon": 76.42733333333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA05",
+            "fixes": {
+                "LEMMS": "LEMMS AT OR ABOVE 3600",
+                "JEDSO": "JEDSO 2500",
+                "WEMTU": "WEMTU 760 RNW 05 TRK 050 UNTIL 1500 TURN LEFT DIRECT",
+                "ECG": "ECG AT OR ABOVE 4100 HOLD AT ECG LEFT TURN INBOUNDCOURSE 050 LEGTIME 1 FAF JEDSO MAP WEMTU"
+            },
+            "transitions": [
+                {
+                    "name": "ECG",
+                    "fixes": {
+                        "ECG": "ECG LEFT TURN INBOUNDCOURSE 050 ALT 4100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA23",
+            "fixes": {
+                "LEMMS": "LEMMS AT OR ABOVE 3600",
+                "JEDSO": "JEDSO 2500",
+                "WEMTU": "WEMTU 760 RNW 23 TRK 050 UNTIL 1500 TURN LEFT DIRECT",
+                "ECG": "ECG AT OR ABOVE 4100 HOLD AT ECG LEFT TURN INBOUNDCOURSE 050 LEGTIME 1 FAF JEDSO MAP WEMTU"
+            },
+            "transitions": [
+                {
+                    "name": "ECG",
+                    "fixes": {
+                        "ECG": "ECG LEFT TURN INBOUNDCOURSE 050 ALT 4100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "HAKDY": "HAKDY AT OR ABOVE 2700",
+                "TACLO": "TACLO 1700 RNW 05",
+                "HABKI": "OVERFLY HABKI AT OR ABOVE 2000 HOLD AT HABKI RIGHT TURN INBOUNDCOURSE 225 LEGDIST 4 FAF TACLO MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "OCSIP",
+                    "fixes": {
+                        "OCSIP": "OCSIP"
+                    }
+                },
+                {
+                    "name": "WINAL",
+                    "fixes": {
+                        "WINAL": "WINAL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "HABKI": "HABKI AT OR ABOVE 2000",
+                "OTETY": "OTETY 2000 RNW 23 TRK 225 UNTIL 384",
+                "EDORY": "EDORY",
+                "SUNNS": "OVERFLY SUNNS AT OR ABOVE 2000 HOLD AT SUNNS RIGHT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF OTETY MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "HABKI",
+                    "fixes": {
+                        "HABKI": "HABKI RIGHT TURN INBOUNDCOURSE 225 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SUNNS",
+                    "fixes": {
+                        "SUNNS": "SUNNS",
+                        "FEVBI": "FEVBI AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "CAMAG",
+            "lat": 46.530472216666666,
+            "lon": 97.79702221666666
+        },
+        {
+            "name": "CUKOB",
+            "lat": 46.25395278333333,
+            "lon": 97.56684721666667
+        },
+        {
+            "name": "HAUTE",
+            "lat": 46.41209443333333,
+            "lon": 97.69814166666667
+        },
+        {
+            "name": "JETGO",
+            "lat": 46.37401388333333,
+            "lon": 97.66644721666667
+        },
+        {
+            "name": "WEBOB",
+            "lat": 46.6458,
+            "lon": 97.89385
+        },
+        {
+            "name": "WERIR",
+            "lat": 46.4779,
+            "lon": 97.75304721666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 14",
+        "RNW 21",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "WEBOB": "WEBOB AT OR ABOVE 3600",
+                "CAMAG": "CAMAG 3000",
+                "WERIR": "WERIR AT OR ABOVE 1840 RNW 14 TRK 146 UNTIL 1540",
+                "CUKOB": "OVERFLY CUKOB AT OR ABOVE 3600 HOLD AT CUKOB RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4 FAF CAMAG MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "WEBOB",
+                    "fixes": {
+                        "WEBOB": "WEBOB RIGHT TURN INBOUNDCOURSE 146 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "CUKOB": "CUKOB AT OR ABOVE 3600",
+                "JETGO": "JETGO 2800",
+                "HAUTE": "HAUTE AT OR ABOVE 1960 RNW 32 TRK 326 UNTIL 1519",
+                "WEBOB": "OVERFLY WEBOB AT OR ABOVE 3600 HOLD AT WEBOB RIGHT TURN INBOUNDCOURSE 146 LEGDIST 4 FAF JETGO MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "CUKOB",
+                    "fixes": {
+                        "CUKOB": "CUKOB RIGHT TURN INBOUNDCOURSE 326 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

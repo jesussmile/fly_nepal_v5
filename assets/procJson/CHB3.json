@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "BOSUG",
+            "lat": 68.39164721666667,
+            "lon": 106.70979443333333
+        },
+        {
+            "name": "DUVOP",
+            "lat": 68.07006111666666,
+            "lon": 106.66285278333334
+        },
+        {
+            "name": "ELETU",
+            "lat": 68.08639166666667,
+            "lon": 106.65440556666667
+        },
+        {
+            "name": "IMEPO",
+            "lat": 68.20375556666667,
+            "lon": 106.59332221666666
+        },
+        {
+            "name": "KINOR",
+            "lat": 67.95895,
+            "lon": 106.93145278333333
+        },
+        {
+            "name": "OMVIB",
+            "lat": 68.25113333333333,
+            "lon": 106.56848333333333
+        },
+        {
+            "name": "PIGTO",
+            "lat": 68.235975,
+            "lon": 106.57644166666667
+        },
+        {
+            "name": "SATET",
+            "lat": 67.92950278333333,
+            "lon": 106.52378333333333
+        },
+        {
+            "name": "SUVIR",
+            "lat": 68.34890833333333,
+            "lon": 106.51688611666667
+        },
+        {
+            "name": "TAKSA",
+            "lat": 67.97223611666666,
+            "lon": 106.71321111666667
+        },
+        {
+            "name": "ULBIP",
+            "lat": 68.36164166666667,
+            "lon": 106.29467778333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "TAKSA": "TAKSA AT OR ABOVE 2500 SPEED 200",
+                "DUVOP": "DUVOP 2200 RNW 01",
+                "PIGTO": "OVERFLY PIGTO 2500 HOLD AT PIGTO RIGHT TURN INBOUNDCOURSE 000 SPEED 200 LEGTIME 1 FAF DUVOP MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "KINOR",
+                    "fixes": {
+                        "KINOR": "KINOR SPEED 200"
+                    }
+                },
+                {
+                    "name": "SATET",
+                    "fixes": {
+                        "SATET": "SATET SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "SUVIR": "SUVIR AT OR ABOVE 2500 SPEED 200",
+                "OMVIB": "OMVIB 1800",
+                "IMEPO": "IMEPO AT OR ABOVE 850 RNW 19",
+                "ELETU": "OVERFLY ELETU 2500 HOLD AT ELETU RIGHT TURN INBOUNDCOURSE 018 SPEED 175 LEGTIME 1 FAF OMVIB MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "BOSUG",
+                    "fixes": {
+                        "BOSUG": "BOSUG SPEED 200"
+                    }
+                },
+                {
+                    "name": "ULBIP",
+                    "fixes": {
+                        "ULBIP": "ULBIP SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

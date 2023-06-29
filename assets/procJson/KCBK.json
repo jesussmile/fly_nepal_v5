@@ -1,0 +1,161 @@
+{
+    "fixes": [
+        {
+            "name": "EYVAG",
+            "lat": 39.23685556666667,
+            "lon": 101.22163611666667
+        },
+        {
+            "name": "HLC",
+            "lat": 39.25874721666667,
+            "lon": 100.22585
+        },
+        {
+            "name": "IKBUW",
+            "lat": 39.236075,
+            "lon": 101.05003333333333
+        },
+        {
+            "name": "ILQUP",
+            "lat": 39.62146666666666,
+            "lon": 100.93880278333333
+        },
+        {
+            "name": "JDMNB",
+            "lat": 39.509855566666666,
+            "lon": 101.04765
+        },
+        {
+            "name": "KEKXU",
+            "lat": 39.23504166666667,
+            "lon": 100.87843333333333
+        },
+        {
+            "name": "LOGIY",
+            "lat": 39.37426943333333,
+            "lon": 101.048825
+        },
+        {
+            "name": "OFVEX",
+            "lat": 39.6226,
+            "lon": 101.15449166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 39.568188883333335,
+            "lon": 101.04765
+        },
+        {
+            "name": "PI002",
+            "lat": 39.61884633333333,
+            "lon": 101.11343703333333
+        },
+        {
+            "name": "PI003",
+            "lat": 39.67652223333333,
+            "lon": 101.04765
+        },
+        {
+            "name": "UKDAW",
+            "lat": 39.51654443333334,
+            "lon": 101.04757778333334
+        },
+        {
+            "name": "VOFWE",
+            "lat": 39.337608333333336,
+            "lon": 101.04914721666667
+        },
+        {
+            "name": "YEBVI",
+            "lat": 39.622083333333336,
+            "lon": 101.04664721666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 12",
+        "RNW 17",
+        "RNW 22",
+        "RNW 30",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB17",
+            "fixes": {
+                "JDMNB": "JDMNB 4700 RNW 17 TRK 172 UNTIL 3590 TURN RIGHT DIRECT JDMNB AT OR ABOVE 4800 HOLD AT JDMNB RIGHT TURN INBOUNDCOURSE 172 ALT 4800 LEGTIME 1 FAF JDMNB MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "HLC",
+                    "fixes": {
+                        "HLC": "HLC",
+                        "JDMNB": "JDMNB AT OR ABOVE 4800",
+                        "PI001": "PI001 AT OR ABOVE 4800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "YEBVI": "YEBVI AT OR ABOVE 5100",
+                "UKDAW": "UKDAW 4800 RNW 17 TRK 172 UNTIL 3587",
+                "IKBUW": "OVERFLY IKBUW AT OR ABOVE 5200 HOLD AT IKBUW RIGHT TURN INBOUNDCOURSE 352 LEGDIST 5 FAF UKDAW MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ILQUP",
+                    "fixes": {
+                        "ILQUP": "ILQUP"
+                    }
+                },
+                {
+                    "name": "OFVEX",
+                    "fixes": {
+                        "OFVEX": "OFVEX"
+                    }
+                },
+                {
+                    "name": "YEBVI",
+                    "fixes": {
+                        "YEBVI": "YEBVI RIGHT TURN INBOUNDCOURSE 172 ALT 5100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "IKBUW": "IKBUW AT OR ABOVE 5200",
+                "VOFWE": "VOFWE 4800",
+                "LOGIY": "LOGIY AT OR ABOVE 4100 RNW 35 TRK 352 UNTIL 3376",
+                "YEBVI": "OVERFLY YEBVI AT OR ABOVE 5100 HOLD AT YEBVI RIGHT TURN INBOUNDCOURSE 172 LEGDIST 5 FAF VOFWE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "EYVAG",
+                    "fixes": {
+                        "EYVAG": "EYVAG"
+                    }
+                },
+                {
+                    "name": "IKBUW",
+                    "fixes": {
+                        "IKBUW": "IKBUW RIGHT TURN INBOUNDCOURSE 352 ALT 5200 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "KEKXU",
+                    "fixes": {
+                        "KEKXU": "KEKXU"
+                    }
+                }
+            ]
+        }
+    ]
+}

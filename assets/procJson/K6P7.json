@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "DUCTS",
+            "lat": 40.662525,
+            "lon": 79.50261943333334
+        },
+        {
+            "name": "FIDSO",
+            "lat": 40.806336116666664,
+            "lon": 79.68865278333334
+        },
+        {
+            "name": "HUBIT",
+            "lat": 40.59855,
+            "lon": 79.42024166666667
+        },
+        {
+            "name": "JIDAS",
+            "lat": 40.893819433333334,
+            "lon": 79.80241111666666
+        },
+        {
+            "name": "JUVAR",
+            "lat": 40.505091666666665,
+            "lon": 79.54507778333334
+        },
+        {
+            "name": "KURBE",
+            "lat": 40.69187221666667,
+            "lon": 79.29505833333333
+        },
+        {
+            "name": "NERDY",
+            "lat": 40.98755,
+            "lon": 79.67720833333334
+        },
+        {
+            "name": "SKIED",
+            "lat": 40.79995,
+            "lon": 79.92726111666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "JIDAS": "JIDAS AT OR ABOVE 3600",
+                "FIDSO": "FIDSO 3000 RNW 14 TRK 145 UNTIL 1505",
+                "HUBIT": "OVERFLY HUBIT AT OR ABOVE 4000 HOLD AT HUBIT RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4 FAF FIDSO MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "JIDAS",
+                    "fixes": {
+                        "JIDAS": "JIDAS RIGHT TURN INBOUNDCOURSE 145 ALT 3600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NERDY",
+                    "fixes": {
+                        "NERDY": "NERDY"
+                    }
+                },
+                {
+                    "name": "SKIED",
+                    "fixes": {
+                        "SKIED": "SKIED"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "HUBIT": "HUBIT AT OR ABOVE 3800 OVERFLY HUBIT AT OR ABOVE 4000 HOLD AT HUBIT RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4 FAF DUCTS MAP RNW 32",
+                "DUCTS": "DUCTS 3000 RNW 32 TRK 326 UNTIL 2200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HUBIT",
+                    "fixes": {
+                        "HUBIT": "HUBIT RIGHT TURN INBOUNDCOURSE 326 ALT 3800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JUVAR",
+                    "fixes": {
+                        "JUVAR": "JUVAR"
+                    }
+                },
+                {
+                    "name": "KURBE",
+                    "fixes": {
+                        "KURBE": "KURBE"
+                    }
+                }
+            ]
+        }
+    ]
+}

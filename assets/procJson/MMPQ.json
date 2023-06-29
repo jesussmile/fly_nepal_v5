@@ -1,0 +1,88 @@
+{
+    "fixes": [
+        {
+            "name": "CF10",
+            "lat": 17.57173888333333,
+            "lon": 92.16637221666667
+        },
+        {
+            "name": "CF28",
+            "lat": 17.4981,
+            "lon": 91.87995833333333
+        },
+        {
+            "name": "FF10",
+            "lat": 17.559205566666666,
+            "lon": 92.11749721666666
+        },
+        {
+            "name": "FF28",
+            "lat": 17.511125,
+            "lon": 91.93048611666667
+        },
+        {
+            "name": "PQE",
+            "lat": 17.537138883333334,
+            "lon": 92.03156111666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "PQE2A",
+            "rnw": "10",
+            "fixes": {
+                "PQE": "PQE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PQE2B",
+            "rnw": "28",
+            "fixes": {
+                "PQE": "PQE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "CF10": "CF10 AT OR ABOVE 2800",
+                "FF10": "FF10 1900",
+                "PQE": "PQE 267 RNW 10 TRK 103 UNTIL 7.0 FROM PQE TURN LEFT DIRECT PQE AT OR ABOVE 5000 FAF FF10 MAP PQE"
+            },
+            "transitions": [
+                {
+                    "name": "PQE",
+                    "fixes": {
+                        "PQE": "PQE AT OR ABOVE 5000 TRK 305 UNTIL 8.0 FROM PQE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD28",
+            "fixes": {
+                "CF28": "CF28 AT OR ABOVE 2500",
+                "FF28": "FF28 1600 RNW 28",
+                "PQE": "OVERFLY PQE TRK 283 UNTIL 7.0 FROM PQE TURN RIGHT DIRECT PQE AT OR ABOVE 5000 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "PQE",
+                    "fixes": {
+                        "PQE": "PQE AT OR ABOVE 5000 TRK 082 UNTIL 9.0 FROM PQE"
+                    }
+                }
+            ]
+        }
+    ]
+}

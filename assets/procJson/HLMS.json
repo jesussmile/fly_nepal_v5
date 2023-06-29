@@ -1,0 +1,65 @@
+{
+    "fixes": [
+        {
+            "name": "FD15",
+            "lat": 32.39929443333333,
+            "lon": 15.015102783333333
+        },
+        {
+            "name": "FD33",
+            "lat": 32.24350556666667,
+            "lon": 15.129761116666666
+        },
+        {
+            "name": "MD33",
+            "lat": 32.30725,
+            "lon": 15.082902783333333
+        },
+        {
+            "name": "MIS",
+            "lat": 32.31433333333333,
+            "lon": 15.077694433333333
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD15",
+            "fixes": {
+                "FD15": "FD15 1500 RNW 15",
+                "MIS": "MIS AT OR ABOVE 440 TRK 146 UNTIL 1500 TURN RIGHT DIRECT MIS 2000 HOLD AT MIS LEFT TURN INBOUNDCOURSE 326 LEGTIME 1 FAF FD15 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "MIS",
+                    "fixes": {
+                        "MIS": "MIS AT OR ABOVE 2000 SPEED 210",
+                        "FD15": "FD15 AT OR ABOVE 1500 TRK 281 UNTIL 4.3 FROM FD15"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD33",
+            "fixes": {
+                "FD33": "FD33 1500",
+                "MD33": "MD33 270 RNW 33",
+                "MIS": "MIS AT OR ABOVE 440 TRK 326 UNTIL 1500 TURN LEFT DIRECT MIS 2000 HOLD AT MIS RIGHT TURN INBOUNDCOURSE 146 LEGTIME 1 FAF FD33 MAP MD33"
+            },
+            "transitions": [
+                {
+                    "name": "MIS",
+                    "fixes": {
+                        "MIS": "MIS AT OR ABOVE 2000 SPEED 210",
+                        "FD33": "FD33 AT OR ABOVE 1500 TRK 191 UNTIL 4.3 FROM FD33"
+                    }
+                }
+            ]
+        }
+    ]
+}

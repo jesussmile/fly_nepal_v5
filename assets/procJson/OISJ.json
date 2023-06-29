@@ -1,0 +1,228 @@
+{
+    "fixes": [
+        {
+            "name": "30DME",
+            "lat": 28.594636116666667,
+            "lon": 53.63995
+        },
+        {
+            "name": "50NDB",
+            "lat": 28.576316666666667,
+            "lon": 53.490061116666666
+        },
+        {
+            "name": "CF082",
+            "lat": 28.560372216666668,
+            "lon": 53.32066111666666
+        },
+        {
+            "name": "CQ26",
+            "lat": 28.629472216666667,
+            "lon": 53.84447778333333
+        },
+        {
+            "name": "D087N",
+            "lat": 28.588905566666668,
+            "lon": 53.84920833333334
+        },
+        {
+            "name": "D100N",
+            "lat": 28.536194433333332,
+            "lon": 53.843327783333336
+        },
+        {
+            "name": "D242N",
+            "lat": 28.482316666666666,
+            "lon": 53.34620278333333
+        },
+        {
+            "name": "D253N",
+            "lat": 28.524288883333334,
+            "lon": 53.328325
+        },
+        {
+            "name": "FF082",
+            "lat": 28.567483333333332,
+            "lon": 53.395941666666666
+        },
+        {
+            "name": "FQ082",
+            "lat": 28.569255566666666,
+            "lon": 53.414763883333336
+        },
+        {
+            "name": "FQ26",
+            "lat": 28.613675,
+            "lon": 53.751494433333335
+        },
+        {
+            "name": "JRMNB",
+            "lat": 28.585083333333333,
+            "lon": 53.58419443333333
+        },
+        {
+            "name": "KASOL",
+            "lat": 28.529722216666666,
+            "lon": 53.259166666666665
+        },
+        {
+            "name": "MA082",
+            "lat": 28.583333333333332,
+            "lon": 53.56536388333333
+        },
+        {
+            "name": "MQ26",
+            "lat": 28.588269433333334,
+            "lon": 53.60277778333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "KASO1A",
+            "rnw": "26",
+            "fixes": {
+                "KASOL": "KASOL AT OR ABOVE 13000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KASO1B",
+            "rnw": "26",
+            "fixes": {
+                "JRMNB": "OVERFLY JRMNB AT OR ABOVE 10500 TURN RIGHT DIRECT",
+                "KASOL": "KASOL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KASO1C",
+            "rnw": "08",
+            "fixes": {
+                "JRMNB": "JRMNB AT OR ABOVE 10500",
+                "KASOL": "KASOL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "KASO1N",
+            "runway": "RNW 08 RNW 26",
+            "fixes": {
+                "KASOL": "KASOL",
+                "JRMNB": "JRMNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDBDA08",
+            "fixes": {
+                "CF082": "CF082 8500",
+                "FF082": "FF082 7300",
+                "50NDB": "50NDB AT OR ABOVE 5500",
+                "MA082": "MA082 4630 RNW 08 TRK 082 UNTIL 7500 TURN LEFT DIRECT",
+                "JRMNB": "JRMNB 10500 HOLD AT JRMNB RIGHT TURN INBOUNDCOURSE 242 ALT 10500 SPEED 210 LEGTIME 1 FAF FF082 MAP MA082"
+            },
+            "transitions": [
+                {
+                    "name": "JRM",
+                    "fixes": {
+                        "JRMNB": "JRMNB AT OR ABOVE 10500",
+                        "D253N": "D253N 8500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB08",
+            "fixes": {
+                "CF082": "CF082 8500",
+                "FQ082": "FQ082 7300",
+                "50NDB": "50NDB AT OR ABOVE 5600",
+                "MA082": "MA082 4970 RNW 08 TRK 082 UNTIL 7500 TURN LEFT DIRECT",
+                "JRMNB": "JRMNB 10500 HOLD AT JRMNB RIGHT TURN INBOUNDCOURSE 242 ALT 10500 SPEED 210 LEGTIME 1 FAF FQ082 MAP MA082"
+            },
+            "transitions": [
+                {
+                    "name": "JRM",
+                    "fixes": {
+                        "JRMNB": "JRMNB AT OR ABOVE 10500",
+                        "D242N": "D242N 8500 SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD26",
+            "fixes": {
+                "CQ26": "CQ26 7500",
+                "FQ26": "FQ26 6400",
+                "30DME": "30DME AT OR ABOVE 4400",
+                "MQ26": "MQ26 3661 RNW 26 TRK 257 UNTIL 3780 TRK 216 UNTIL 6400 TURN RIGHT DIRECT",
+                "JRMNB": "JRMNB 10500 HOLD AT JRMNB LEFT TURN INBOUNDCOURSE 100 ALT 10500 SPEED 210 LEGTIME 1 FAF FQ26 MAP MQ26"
+            },
+            "transitions": [
+                {
+                    "name": "JRM1",
+                    "fixes": {
+                        "JRMNB": "JRMNB AT OR ABOVE 10500",
+                        "D100N": "OVERFLY D100N 7500"
+                    }
+                },
+                {
+                    "name": "JRM2",
+                    "fixes": {
+                        "JRMNB": "JRMNB AT OR ABOVE 10500",
+                        "D087N": "OVERFLY D087N 7500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDA26",
+            "fixes": {
+                "CF082": "CF082 8500",
+                "FF082": "FF082 7300",
+                "50NDB": "50NDB AT OR ABOVE 5500",
+                "MA082": "MA082 4630 RNW 26 TRK 082 UNTIL 7500 TURN LEFT DIRECT",
+                "JRMNB": "JRMNB 10500 HOLD AT JRMNB RIGHT TURN INBOUNDCOURSE 242 ALT 10500 SPEED 210 LEGTIME 1 FAF FF082 MAP MA082"
+            },
+            "transitions": [
+                {
+                    "name": "JRM",
+                    "fixes": {
+                        "JRMNB": "JRMNB AT OR ABOVE 10500",
+                        "D253N": "D253N 8500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB26",
+            "fixes": {
+                "CF082": "CF082 8500",
+                "FQ082": "FQ082 7300",
+                "50NDB": "50NDB AT OR ABOVE 5600",
+                "MA082": "MA082 4970 RNW 26 TRK 082 UNTIL 7500 TURN LEFT DIRECT",
+                "JRMNB": "JRMNB 10500 HOLD AT JRMNB RIGHT TURN INBOUNDCOURSE 242 ALT 10500 SPEED 210 LEGTIME 1 FAF FQ082 MAP MA082"
+            },
+            "transitions": [
+                {
+                    "name": "JRM",
+                    "fixes": {
+                        "JRMNB": "JRMNB AT OR ABOVE 10500",
+                        "D242N": "D242N 8500 SPEED 185"
+                    }
+                }
+            ]
+        }
+    ]
+}

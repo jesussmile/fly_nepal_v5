@@ -1,0 +1,134 @@
+{
+    "fixes": [
+        {
+            "name": "APDAM",
+            "lat": 13.411861116666667,
+            "lon": 35.122019433333335
+        },
+        {
+            "name": "EVOGA",
+            "lat": 13.253802783333333,
+            "lon": 35.06571666666667
+        },
+        {
+            "name": "GESER",
+            "lat": 13.136022216666667,
+            "lon": 35.41053611666667
+        },
+        {
+            "name": "IMROL",
+            "lat": 13.215058333333333,
+            "lon": 35.43865
+        },
+        {
+            "name": "ITMEG",
+            "lat": 13.332833333333333,
+            "lon": 35.09385833333333
+        },
+        {
+            "name": "LC500",
+            "lat": 13.305277783333333,
+            "lon": 35.174561116666666
+        },
+        {
+            "name": "LC600",
+            "lat": 13.250155566666667,
+            "lon": 35.335936116666666
+        },
+        {
+            "name": "LC601",
+            "lat": 13.171119433333333,
+            "lon": 35.30781666666667
+        },
+        {
+            "name": "LC700",
+            "lat": 13.242625,
+            "lon": 35.35798056666667
+        },
+        {
+            "name": "LC800",
+            "lat": 13.297747216666666,
+            "lon": 35.196611116666666
+        },
+        {
+            "name": "LC801",
+            "lat": 13.218716666666667,
+            "lon": 35.168472216666665
+        },
+        {
+            "name": "OKDER",
+            "lat": 13.294091666666667,
+            "lon": 35.46678333333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "LC500": "LC500 6000 RNW 08",
+                "LC600": "LC600 TURN LEFT DIRECT",
+                "LC601": "LC601",
+                "EVOGA": "EVOGA AT OR ABOVE 7500 HOLD AT EVOGA LEFT TURN INBOUNDCOURSE 166 LEGTIME 1 FAF LC500 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "APDAM",
+                    "fixes": {
+                        "APDAM": "APDAM AT OR ABOVE 7500 SPEED 200 TURN RIGHT DIRECT",
+                        "ITMEG": "ITMEG"
+                    }
+                },
+                {
+                    "name": "EVOGA",
+                    "fixes": {
+                        "EVOGA": "EVOGA AT OR ABOVE 7500 SPEED 200 TURN LEFT DIRECT",
+                        "ITMEG": "ITMEG"
+                    }
+                },
+                {
+                    "name": "ITMEG",
+                    "fixes": {
+                        "ITMEG": "ITMEG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "LC700": "LC700 6000 RNW 26",
+                "LC800": "LC800 TURN RIGHT DIRECT",
+                "LC801": "LC801",
+                "GESER": "GESER AT OR ABOVE 7500 HOLD AT GESER LEFT TURN INBOUNDCOURSE 166 LEGTIME 1 FAF LC700 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "GESER",
+                    "fixes": {
+                        "GESER": "GESER AT OR ABOVE 7500 SPEED 200 TURN RIGHT DIRECT",
+                        "IMROL": "IMROL"
+                    }
+                },
+                {
+                    "name": "IMROL",
+                    "fixes": {
+                        "IMROL": "IMROL"
+                    }
+                },
+                {
+                    "name": "OKDER",
+                    "fixes": {
+                        "OKDER": "OKDER AT OR ABOVE 7500 SPEED 200 TURN LEFT DIRECT",
+                        "IMROL": "IMROL"
+                    }
+                }
+            ]
+        }
+    ]
+}

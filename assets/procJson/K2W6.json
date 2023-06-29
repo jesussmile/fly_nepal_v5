@@ -1,0 +1,92 @@
+{
+    "fixes": [
+        {
+            "name": "ASIZE",
+            "lat": 38.29423611666667,
+            "lon": 76.42772778333334
+        },
+        {
+            "name": "COLIN",
+            "lat": 38.099786116666664,
+            "lon": 76.664125
+        },
+        {
+            "name": "DUYEV",
+            "lat": 38.328291666666665,
+            "lon": 76.62546943333334
+        },
+        {
+            "name": "FABAV",
+            "lat": 38.14522778333333,
+            "lon": 76.35669721666666
+        },
+        {
+            "name": "GOFER",
+            "lat": 38.418844433333334,
+            "lon": 76.27925
+        },
+        {
+            "name": "JAGUX",
+            "lat": 38.27556943333333,
+            "lon": 76.32023611666666
+        },
+        {
+            "name": "LEKVE",
+            "lat": 38.352027783333334,
+            "lon": 76.76458611666666
+        },
+        {
+            "name": "ONAFE",
+            "lat": 38.33462778333333,
+            "lon": 76.66251111666666
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "LEKVE": "LEKVE AT OR ABOVE 2000",
+                "ONAFE": "ONAFE 1800",
+                "DUYEV": "DUYEV AT OR ABOVE 1220 RNW 11 TRK 112 UNTIL 620",
+                "GOFER": "OVERFLY GOFER AT OR ABOVE 2000 HOLD AT GOFER RIGHT TURN INBOUNDCOURSE 226 LEGDIST 4 FAF ONAFE MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "LEKVE",
+                    "fixes": {
+                        "LEKVE": "LEKVE RIGHT TURN INBOUNDCOURSE 148 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "JAGUX": "JAGUX AT OR ABOVE 2000",
+                "ASIZE": "ASIZE 2000 RNW 29 TRK 292 UNTIL 700 TURN LEFT DIRECT",
+                "COLIN": "OVERFLY COLIN AT OR ABOVE 5000 HOLD AT COLIN RIGHT TURN INBOUNDCOURSE 081 ALT 5000 LEGDIST 5 FAF ASIZE MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "COLIN",
+                    "fixes": {
+                        "COLIN": "COLIN",
+                        "FABAV": "FABAV AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "GOFER",
+                    "fixes": {
+                        "GOFER": "GOFER"
+                    }
+                }
+            ]
+        }
+    ]
+}

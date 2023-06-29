@@ -1,0 +1,88 @@
+{
+    "fixes": [
+        {
+            "name": "HURDI",
+            "lat": 34.11564166666667,
+            "lon": 115.73588056666667
+        },
+        {
+            "name": "JEHLI",
+            "lat": 34.111055566666664,
+            "lon": 115.56918611666667
+        },
+        {
+            "name": "JUXIX",
+            "lat": 34.134486116666665,
+            "lon": 115.92525278333333
+        },
+        {
+            "name": "TNP",
+            "lat": 34.112233333333336,
+            "lon": 115.76990556666667
+        },
+        {
+            "name": "WISIR",
+            "lat": 34.10359166666667,
+            "lon": 115.61632221666666
+        },
+        {
+            "name": "ZEDAB",
+            "lat": 34.123611116666666,
+            "lon": 115.81560556666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 17",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "WISIR": "WISIR AT OR ABOVE 6000 OVERFLY WISIR AT OR ABOVE 6000 HOLD AT WISIR LEFT TURN INBOUNDCOURSE 265 LEGDIST 5 FAF ZEDAB MAP JUXIX",
+                "HURDI": "HURDI AT OR ABOVE 4800",
+                "ZEDAB": "ZEDAB 3800",
+                "JUXIX": "OVERFLY JUXIX 1988 RNW 26 TRK 265 UNTIL 2288 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JEHLI",
+                    "fixes": {
+                        "JEHLI": "JEHLI"
+                    }
+                },
+                {
+                    "name": "TNP",
+                    "fixes": {
+                        "TNP": "TNP",
+                        "WISIR": "OVERFLY WISIR AT OR ABOVE 6000 HOLD AT WISIR LEFT TURN INBOUNDCOURSE 265 ALT 6000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26",
+            "fixes": {
+                "TNP": "TNP 4600 RNW 26 TRK 264 UNTIL 2290 TURN RIGHT DIRECT TNP AT OR ABOVE 5900 HOLD AT TNP LEFT TURN INBOUNDCOURSE 255 LEGTIME 1 FAF TNP MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "JEHLI",
+                    "fixes": {
+                        "JEHLI": "JEHLI"
+                    }
+                },
+                {
+                    "name": "TNP",
+                    "fixes": {
+                        "TNP": "TNP LEFT TURN INBOUNDCOURSE 255 ALT 4900 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

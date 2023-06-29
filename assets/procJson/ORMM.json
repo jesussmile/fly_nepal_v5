@@ -1,0 +1,192 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 30.502444716666666,
+            "lon": 47.39775603333333
+        },
+        {
+            "name": "AF002",
+            "lat": 30.579441916666667,
+            "lon": 47.403192016666665
+        },
+        {
+            "name": "AF003",
+            "lat": 30.651341783333333,
+            "lon": 47.435662816666664
+        },
+        {
+            "name": "AF004",
+            "lat": 30.363644283333333,
+            "lon": 47.4658261
+        },
+        {
+            "name": "AF005",
+            "lat": 30.314309583333333,
+            "lon": 47.53180568333333
+        },
+        {
+            "name": "AF006",
+            "lat": 30.284135983333332,
+            "lon": 47.61176458333333
+        },
+        {
+            "name": "AF007",
+            "lat": 30.275845633333333,
+            "lon": 47.69848016666667
+        },
+        {
+            "name": "AF008",
+            "lat": 30.290186016666667,
+            "lon": 47.784133233333336
+        },
+        {
+            "name": "AF009",
+            "lat": 30.365310716666666,
+            "lon": 47.46419421666667
+        },
+        {
+            "name": "AF010",
+            "lat": 30.316670233333333,
+            "lon": 47.527554916666666
+        },
+        {
+            "name": "AF011",
+            "lat": 30.285908133333333,
+            "lon": 47.604468583333336
+        },
+        {
+            "name": "AF012",
+            "lat": 30.275643116666668,
+            "lon": 47.688378566666664
+        },
+        {
+            "name": "AF013",
+            "lat": 30.28674845,
+            "lon": 47.77214528333333
+        },
+        {
+            "name": "BSR",
+            "lat": 30.525638883333333,
+            "lon": 47.68669443333334
+        },
+        {
+            "name": "CEPKI",
+            "lat": 30.633611116666668,
+            "lon": 47.57416666666667
+        },
+        {
+            "name": "CEPOK",
+            "lat": 30.458925,
+            "lon": 47.74471943333333
+        },
+        {
+            "name": "CIKER",
+            "lat": 30.465277783333335,
+            "lon": 47.75
+        },
+        {
+            "name": "D143O",
+            "lat": 30.317797216666666,
+            "lon": 47.84821111666667
+        },
+        {
+            "name": "HOKEM",
+            "lat": 30.711666666666666,
+            "lon": 47.49277778333333
+        },
+        {
+            "name": "JOKOM",
+            "lat": 30.340277783333335,
+            "lon": 47.881111116666666
+        },
+        {
+            "name": "METNE",
+            "lat": 30.3254,
+            "lon": 47.860536116666665
+        },
+        {
+            "name": "WOGET",
+            "lat": 30.4275,
+            "lon": 47.420555566666664
+        },
+        {
+            "name": "ZEGIP",
+            "lat": 30.566666666666666,
+            "lon": 47.64416666666666
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD14",
+            "fixes": {
+                "CEPKI": "CEPKI 1900",
+                "ZEGIP": "ZEGIP 175 RNW 14 TRK 135 UNTIL 420",
+                "BSR": "BSR TURN RIGHT DIRECT",
+                "WOGET": "WOGET 3000 HOLD AT WOGET RIGHT TURN INBOUNDCOURSE 064 LEGTIME 1 FAF CEPKI MAP ZEGIP"
+            },
+            "transitions": [
+                {
+                    "name": "WOGET",
+                    "fixes": {
+                        "WOGET": "WOGET",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "HOKEM": "HOKEM AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD32",
+            "fixes": {
+                "CEPOK": "CEPOK 1800",
+                "BSR": "BSR 305 RNW 32 TRK 320 UNTIL 420 TURN LEFT TRK 214 INTERCEPT RADIAL 244 TO",
+                "WOGET": "WOGET WOGET 3000 HOLD AT WOGET RIGHT TURN INBOUNDCOURSE 064 LEGTIME 1 FAF CEPOK MAP BSR"
+            },
+            "transitions": [
+                {
+                    "name": "WOGET",
+                    "fixes": {
+                        "WOGET": "WOGET",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "AF006": "AF006",
+                        "AF007": "AF007",
+                        "AF008": "AF008",
+                        "METNE": "METNE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS32",
+            "fixes": {
+                "JOKOM": "JOKOM AT OR ABOVE 3000",
+                "CIKER": "CIKER 1900 RNW 32 TRK 315 UNTIL 500 TURN LEFT TRK 214 INTERCEPT RADIAL 244 TO",
+                "WOGET": "WOGET WOGET 3000 HOLD AT WOGET RIGHT TURN INBOUNDCOURSE 064 LEGTIME 1 FAF CIKER MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "WOGET",
+                    "fixes": {
+                        "WOGET": "WOGET",
+                        "AF009": "AF009",
+                        "AF010": "AF010",
+                        "AF011": "AF011",
+                        "AF012": "AF012",
+                        "AF013": "AF013",
+                        "D143O": "D143O AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

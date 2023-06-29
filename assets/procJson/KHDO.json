@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "CSI",
+            "lat": 29.922355566666667,
+            "lon": 99.21448611666666
+        },
+        {
+            "name": "CULRA",
+            "lat": 29.417569433333334,
+            "lon": 99.17205
+        },
+        {
+            "name": "HIXUV",
+            "lat": 29.565311116666667,
+            "lon": 99.07762778333333
+        },
+        {
+            "name": "HOHME",
+            "lat": 29.265919433333334,
+            "lon": 99.17196111666667
+        },
+        {
+            "name": "JENDE",
+            "lat": 29.552966666666666,
+            "lon": 99.17213056666667
+        },
+        {
+            "name": "KUXUJ",
+            "lat": 29.164008333333335,
+            "lon": 99.07671388333333
+        },
+        {
+            "name": "MUNJO",
+            "lat": 29.163997216666665,
+            "lon": 99.17189721666666
+        },
+        {
+            "name": "ORUNY",
+            "lat": 29.451558333333335,
+            "lon": 99.17206943333333
+        },
+        {
+            "name": "SAT",
+            "lat": 29.644030566666668,
+            "lon": 98.46131666666666
+        },
+        {
+            "name": "ZOMSU",
+            "lat": 29.322533333333332,
+            "lon": 99.17199443333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 13",
+        "RNW 17L",
+        "RNW 17R",
+        "RNW 26",
+        "RNW 31",
+        "RNW 35L",
+        "RNW 35R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17L",
+            "fixes": {
+                "JENDE": "JENDE AT OR ABOVE 3700",
+                "ORUNY": "ORUNY 2600",
+                "CULRA": "CULRA AT OR ABOVE 1920 RNW 17L TRK 172 UNTIL 1179",
+                "MUNJO": "OVERFLY MUNJO AT OR ABOVE 4000 HOLD AT MUNJO RIGHT TURN INBOUNDCOURSE 352 ALT 4000 LEGDIST 4 FAF ORUNY MAP RNW 17L"
+            },
+            "transitions": [
+                {
+                    "name": "CSI",
+                    "fixes": {
+                        "CSI": "CSI"
+                    }
+                },
+                {
+                    "name": "JENDE",
+                    "fixes": {
+                        "JENDE": "JENDE RIGHT TURN INBOUNDCOURSE 172 ALT 3700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SAT",
+                    "fixes": {
+                        "SAT": "SAT",
+                        "HIXUV": "HIXUV AT OR ABOVE 4100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35R",
+            "fixes": {
+                "MUNJO": "MUNJO AT OR ABOVE 3500",
+                "HOHME": "HOHME 2600",
+                "ZOMSU": "ZOMSU AT OR ABOVE 1500 RNW 35R TRK 352 UNTIL 1170",
+                "JENDE": "OVERFLY JENDE AT OR ABOVE 3700 HOLD AT JENDE RIGHT TURN INBOUNDCOURSE 172 LEGDIST 4 FAF HOHME MAP RNW 35R"
+            },
+            "transitions": [
+                {
+                    "name": "MUNJO",
+                    "fixes": {
+                        "MUNJO": "MUNJO RIGHT TURN INBOUNDCOURSE 352 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SAT",
+                    "fixes": {
+                        "SAT": "SAT",
+                        "KUXUJ": "KUXUJ AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

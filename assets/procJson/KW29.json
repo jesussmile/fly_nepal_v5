@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "AGARD",
+            "lat": 39.04358056666667,
+            "lon": 76.06976111666667
+        },
+        {
+            "name": "AZLOM",
+            "lat": 38.95755,
+            "lon": 76.22423333333333
+        },
+        {
+            "name": "GEEMO",
+            "lat": 39.04973888333333,
+            "lon": 76.50981388333334
+        },
+        {
+            "name": "HIPMA",
+            "lat": 38.992786116666664,
+            "lon": 76.42180833333333
+        },
+        {
+            "name": "MYTHY",
+            "lat": 39.003922216666666,
+            "lon": 76.48469721666666
+        },
+        {
+            "name": "XITPY",
+            "lat": 38.967444433333334,
+            "lon": 76.27948611666666
+        },
+        {
+            "name": "XONIQ",
+            "lat": 38.985075,
+            "lon": 76.37838056666666
+        },
+        {
+            "name": "ZAKLY",
+            "lat": 38.93831111666667,
+            "lon": 76.11706666666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "MYTHY": "MYTHY AT OR ABOVE 2000",
+                "HIPMA": "HIPMA 1600",
+                "XONIQ": "XONIQ AT OR ABOVE 820 RNW 11 TRK 114 UNTIL 265",
+                "ZAKLY": "OVERFLY ZAKLY AT OR ABOVE 2100 HOLD AT ZAKLY RIGHT TURN INBOUNDCOURSE 294 LEGDIST 4 FAF HIPMA MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "GEEMO",
+                    "fixes": {
+                        "GEEMO": "GEEMO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "ZAKLY": "ZAKLY AT OR ABOVE 2100 OVERFLY ZAKLY AT OR ABOVE 2100 HOLD AT ZAKLY RIGHT TURN INBOUNDCOURSE 294 LEGDIST 4 FAF AZLOM MAP RNW 29",
+                "AZLOM": "AZLOM 1600",
+                "XITPY": "XITPY AT OR ABOVE 740 RNW 29 TRK 294 UNTIL 415 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AGARD",
+                    "fixes": {
+                        "AGARD": "AGARD"
+                    }
+                },
+                {
+                    "name": "ZAKLY",
+                    "fixes": {
+                        "ZAKLY": "ZAKLY RIGHT TURN INBOUNDCOURSE 294 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "BUBUP",
+            "lat": 51.053108333333334,
+            "lon": 93.91220833333334
+        },
+        {
+            "name": "EBMER",
+            "lat": 51.03480278333333,
+            "lon": 94.06651666666667
+        },
+        {
+            "name": "FF26",
+            "lat": 51.08721666666667,
+            "lon": 93.66201111666666
+        },
+        {
+            "name": "IKDAV",
+            "lat": 51.180363883333335,
+            "lon": 93.545225
+        },
+        {
+            "name": "IMIKO",
+            "lat": 51.080958333333335,
+            "lon": 93.67380833333333
+        },
+        {
+            "name": "KAVIR",
+            "lat": 51.11658611666667,
+            "lon": 94.09110833333334
+        },
+        {
+            "name": "MIRIM",
+            "lat": 51.080522216666665,
+            "lon": 93.67758056666666
+        },
+        {
+            "name": "NOTAG",
+            "lat": 51.05327221666667,
+            "lon": 93.91080278333334
+        },
+        {
+            "name": "OMROK",
+            "lat": 51.098472216666664,
+            "lon": 93.52156388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 51.08563026666667,
+            "lon": 93.67193046666667
+        },
+        {
+            "name": "PI002",
+            "lat": 51.14704583333334,
+            "lon": 93.61309155000001
+        },
+        {
+            "name": "PI003",
+            "lat": 51.11159025,
+            "lon": 93.50444638333333
+        },
+        {
+            "name": "XIKUS",
+            "lat": 50.953013883333334,
+            "lon": 94.04201388333334
+        },
+        {
+            "name": "XORUP",
+            "lat": 51.01657221666667,
+            "lon": 93.49798611666667
+        },
+        {
+            "name": "YRL",
+            "lat": 51.07155278333333,
+            "lon": 93.76203611666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "EBMER": "EBMER AT OR ABOVE 2600",
+                "NOTAG": "NOTAG 2600 RNW 08",
+                "IMIKO": "OVERFLY IMIKO 3000 HOLD AT IMIKO RIGHT TURN INBOUNDCOURSE 080 LEGTIME 1 FAF NOTAG MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "KAVIR",
+                    "fixes": {
+                        "KAVIR": "KAVIR SPEED 210"
+                    }
+                },
+                {
+                    "name": "XIKUS",
+                    "fixes": {
+                        "XIKUS": "XIKUS SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "OMROK": "OMROK AT OR ABOVE 2800",
+                "MIRIM": "MIRIM 2600 RNW 26",
+                "BUBUP": "OVERFLY BUBUP 3000 HOLD AT BUBUP RIGHT TURN INBOUNDCOURSE 259 LEGTIME 1 FAF MIRIM MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "IKDAV",
+                    "fixes": {
+                        "IKDAV": "IKDAV SPEED 210"
+                    }
+                },
+                {
+                    "name": "XORUP",
+                    "fixes": {
+                        "XORUP": "XORUP SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26",
+            "fixes": {
+                "FF26": "FF26 2800",
+                "YRL": "YRL 1568 RNW 26 TRK 256 UNTIL 3000 TURN RIGHT DIRECT YRL 3000 HOLD AT YRL RIGHT TURN INBOUNDCOURSE 256 LEGTIME 1 FAF FF26 MAP YRL"
+            },
+            "transitions": [
+                {
+                    "name": "YRL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

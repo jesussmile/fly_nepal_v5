@@ -1,0 +1,194 @@
+{
+    "fixes": [
+        {
+            "name": "BERTT",
+            "lat": 31.167255566666668,
+            "lon": 81.69833056666667
+        },
+        {
+            "name": "BROUN",
+            "lat": 31.460086116666666,
+            "lon": 81.32387221666667
+        },
+        {
+            "name": "DMAIP",
+            "lat": 31.205266666666667,
+            "lon": 81.46171111666666
+        },
+        {
+            "name": "DOMPI",
+            "lat": 31.177361116666667,
+            "lon": 81.67296111666667
+        },
+        {
+            "name": "EKIWO",
+            "lat": 31.253202783333332,
+            "lon": 81.71366111666667
+        },
+        {
+            "name": "GRZLY",
+            "lat": 31.101505566666667,
+            "lon": 81.632325
+        },
+        {
+            "name": "HUDES",
+            "lat": 31.166994433333333,
+            "lon": 81.45781111666666
+        },
+        {
+            "name": "MAJXE",
+            "lat": 31.255019433333334,
+            "lon": 81.46678611666667
+        },
+        {
+            "name": "REGRE",
+            "lat": 31.34063056666667,
+            "lon": 81.25868056666667
+        },
+        {
+            "name": "SSI",
+            "lat": 31.050513883333334,
+            "lon": 81.44596388333333
+        },
+        {
+            "name": "STARY",
+            "lat": 31.201305566666665,
+            "lon": 81.14457778333333
+        },
+        {
+            "name": "TAWKE",
+            "lat": 31.26465,
+            "lon": 81.2183
+        },
+        {
+            "name": "WORGO",
+            "lat": 31.298822216666668,
+            "lon": 81.36521666666667
+        },
+        {
+            "name": "YOKHO",
+            "lat": 31.219402783333333,
+            "lon": 81.56674166666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDB07",
+            "fixes": {
+                "SSI": "SSI AT OR ABOVE 1700",
+                "HUDES": "HUDES 1700 HUDES AT OR ABOVE 1700 HOLD AT HUDES LEFT TURN INBOUNDCOURSE 359 LEGTIME 1 FAF HUDES MAP MAJXE",
+                "DMAIP": "DMAIP AT OR ABOVE 1000",
+                "MAJXE": "MAJXE 580 RNW 07 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HUDES",
+                    "fixes": {
+                        "HUDES": "HUDES LEFT TURN INBOUNDCOURSE 359 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDB25",
+            "fixes": {
+                "SSI": "SSI AT OR ABOVE 1700",
+                "HUDES": "HUDES 1700 HUDES AT OR ABOVE 1700 HOLD AT HUDES LEFT TURN INBOUNDCOURSE 359 LEGTIME 1 FAF HUDES MAP MAJXE",
+                "DMAIP": "DMAIP AT OR ABOVE 1000",
+                "MAJXE": "MAJXE 580 RNW 25 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HUDES",
+                    "fixes": {
+                        "HUDES": "HUDES LEFT TURN INBOUNDCOURSE 359 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS07",
+            "fixes": {
+                "BERTT": "BERTT AT OR ABOVE 1700",
+                "YOKHO": "YOKHO 1700 RNW 07 HDG 069 INTERCEPT RADIAL 018 TO",
+                "BROUN": "BROUN BROUN AT OR ABOVE 3000 HOLD AT BROUN RIGHT TURN INBOUNDCOURSE 018 LEGTIME 1 FAF YOKHO MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "SSI",
+                    "fixes": {
+                        "SSI": "SSI",
+                        "YOKHO": "YOKHO AT OR ABOVE 1700 HOLD AT YOKHO LEFT TURN INBOUNDCOURSE 069 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "DOMPI": "DOMPI AT OR ABOVE 1700",
+                "YOKHO": "YOKHO 1700 RNW 07",
+                "WORGO": "WORGO",
+                "BROUN": "OVERFLY BROUN AT OR ABOVE 3000 HOLD AT BROUN RIGHT TURN INBOUNDCOURSE 196 LEGDIST 4 FAF YOKHO MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "BROUN",
+                    "fixes": {
+                        "BROUN": "BROUN",
+                        "EKIWO": "EKIWO AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "SSI",
+                    "fixes": {
+                        "SSI": "SSI",
+                        "GRZLY": "GRZLY AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "STARY",
+                    "fixes": {
+                        "STARY": "STARY",
+                        "GRZLY": "GRZLY AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "REGRE": "REGRE AT OR ABOVE 1700",
+                "WORGO": "WORGO 1700 RNW 25 TRK 249 UNTIL 226",
+                "BERTT": "OVERFLY BERTT AT OR ABOVE 3000 HOLD AT BERTT RIGHT TURN INBOUNDCOURSE 069 LEGDIST 4 FAF WORGO MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "BROUN",
+                    "fixes": {
+                        "BROUN": "BROUN"
+                    }
+                },
+                {
+                    "name": "SSI",
+                    "fixes": {
+                        "SSI": "SSI",
+                        "TAWKE": "TAWKE AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "STARY",
+                    "fixes": {
+                        "STARY": "STARY"
+                    }
+                }
+            ]
+        }
+    ]
+}

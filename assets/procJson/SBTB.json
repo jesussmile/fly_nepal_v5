@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "TB001",
+            "lat": 1.5168833333333334,
+            "lon": 56.483075
+        },
+        {
+            "name": "TB002",
+            "lat": 1.5419083333333332,
+            "lon": 56.56248611666667
+        },
+        {
+            "name": "TB003",
+            "lat": 1.6378083333333335,
+            "lon": 56.53264166666666
+        },
+        {
+            "name": "TB004",
+            "lat": 1.4460083333333333,
+            "lon": 56.59233056666667
+        },
+        {
+            "name": "TB006",
+            "lat": 1.5669305666666666,
+            "lon": 56.6419
+        },
+        {
+            "name": "TB007",
+            "lat": 1.4624944333333334,
+            "lon": 56.31051943333333
+        },
+        {
+            "name": "TB008",
+            "lat": 1.4374583333333333,
+            "lon": 56.231113883333336
+        },
+        {
+            "name": "TB009",
+            "lat": 1.5333555666666667,
+            "lon": 56.201258333333335
+        },
+        {
+            "name": "TB011",
+            "lat": 1.3415638833333334,
+            "lon": 56.26096943333334
+        },
+        {
+            "name": "TB012",
+            "lat": 1.4124222166666667,
+            "lon": 56.15171111666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "13",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 09",
+                    "fixes": {
+                        "RNW 09": "RNW 09 HDG 090 UNTIL 1500 HDG 090 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 27",
+                    "fixes": {
+                        "RNW 27": "RNW 27 HDG 270 UNTIL 1500 HDG 270 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "TB002": "TB002 AT OR ABOVE 1900",
+                "TB001": "TB001 1820 RNW 09 TRK 091 UNTIL 2000 TURN RIGHT DIRECT",
+                "TB003": "OVERFLY TB003 AT OR ABOVE 3300 HOLD AT TB003 RIGHT TURN INBOUNDCOURSE 001 ALT 3300 LEGTIME 1 FAF TB001 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "TB003",
+                    "fixes": {
+                        "TB003": "TB003 AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "TB004",
+                    "fixes": {
+                        "TB004": "TB004 AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "TB006",
+                    "fixes": {
+                        "TB006": "TB006 AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "TB008": "TB008 AT OR ABOVE 1800",
+                "TB007": "TB007 1790 RNW 27 TRK 271 UNTIL 2000 TURN LEFT DIRECT",
+                "TB009": "OVERFLY TB009 AT OR ABOVE 3300 HOLD AT TB009 LEFT TURN INBOUNDCOURSE 001 ALT 3300 LEGTIME 1 FAF TB007 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "TB009",
+                    "fixes": {
+                        "TB009": "TB009 AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "TB011",
+                    "fixes": {
+                        "TB011": "TB011 AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "TB012",
+                    "fixes": {
+                        "TB012": "TB012 AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        }
+    ]
+}

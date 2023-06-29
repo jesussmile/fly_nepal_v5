@@ -1,0 +1,154 @@
+{
+    "fixes": [
+        {
+            "name": "ALKIG",
+            "lat": 62.639625,
+            "lon": 140.6368
+        },
+        {
+            "name": "AVORA",
+            "lat": 62.49101666666667,
+            "lon": 140.92607221666665
+        },
+        {
+            "name": "BEXEM",
+            "lat": 62.24248333333333,
+            "lon": 140.61971943333333
+        },
+        {
+            "name": "DUSIR",
+            "lat": 62.115491666666664,
+            "lon": 140.85485278333334
+        },
+        {
+            "name": "EBDON",
+            "lat": 62.30502778333334,
+            "lon": 140.41868333333332
+        },
+        {
+            "name": "GOXEG",
+            "lat": 62.228380566666665,
+            "lon": 140.67326111666668
+        },
+        {
+            "name": "IMOGI",
+            "lat": 62.32589721666667,
+            "lon": 140.80938333333333
+        },
+        {
+            "name": "KEKDO",
+            "lat": 62.038125,
+            "lon": 140.19486388333334
+        },
+        {
+            "name": "LERAX",
+            "lat": 62.64813611666667,
+            "lon": 140.73806111666667
+        },
+        {
+            "name": "NOTUD",
+            "lat": 62.77310833333333,
+            "lon": 140.928225
+        },
+        {
+            "name": "ONBIN",
+            "lat": 62.63203611666667,
+            "lon": 140.9432
+        },
+        {
+            "name": "PESBU",
+            "lat": 62.30361943333333,
+            "lon": 140.77819166666666
+        },
+        {
+            "name": "PIDBU",
+            "lat": 62.21309443333333,
+            "lon": 140.43626943333334
+        },
+        {
+            "name": "SEGIT",
+            "lat": 62.32026666666667,
+            "lon": 140.80542778333333
+        },
+        {
+            "name": "SERSU",
+            "lat": 62.30615556666667,
+            "lon": 140.79552221666665
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "KEKDO1",
+            "rnw": "32",
+            "fixes": {
+                "KEKDO": "KEKDO AT OR ABOVE 8500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PIDBU1",
+            "rnw": "14",
+            "fixes": {
+                "SERSU": "SERSU",
+                "PIDBU": "PIDBU",
+                "KEKDO": "KEKDO AT OR ABOVE 8500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ONBIN": "ONBIN AT OR ABOVE 5600",
+                "AVORA": "AVORA 3700 RNW 14",
+                "SEGIT": "SEGIT",
+                "BEXEM": "OVERFLY BEXEM 6700 HOLD AT BEXEM LEFT TURN INBOUNDCOURSE 161 LEGTIME 1 FAF AVORA MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ALKIG",
+                    "fixes": {
+                        "ALKIG": "ALKIG"
+                    }
+                },
+                {
+                    "name": "NOTUD",
+                    "fixes": {
+                        "NOTUD": "NOTUD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "GOXEG": "GOXEG AT OR ABOVE 5600",
+                "PESBU": "PESBU AT OR ABOVE 4310",
+                "IMOGI": "IMOGI 3800 RNW 32 HDG 323 UNTIL 3000",
+                "LERAX": "OVERFLY LERAX 7600 HOLD AT LERAX RIGHT TURN INBOUNDCOURSE 341 SPEED 230 LEGTIME 1 FAF IMOGI MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "DUSIR",
+                    "fixes": {
+                        "DUSIR": "DUSIR"
+                    }
+                },
+                {
+                    "name": "EBDON",
+                    "fixes": {
+                        "EBDON": "EBDON"
+                    }
+                }
+            ]
+        }
+    ]
+}

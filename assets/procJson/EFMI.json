@@ -1,0 +1,218 @@
+{
+    "fixes": [
+        {
+            "name": "CI11Y",
+            "lat": 61.73838611666667,
+            "lon": 26.938816666666668
+        },
+        {
+            "name": "D075G",
+            "lat": 61.682105566666664,
+            "lon": 27.510419433333333
+        },
+        {
+            "name": "D090I",
+            "lat": 61.64532221666666,
+            "lon": 27.574827783333333
+        },
+        {
+            "name": "EBESU",
+            "lat": 61.54333056666667,
+            "lon": 27.46935
+        },
+        {
+            "name": "ERGIM",
+            "lat": 61.653283333333334,
+            "lon": 27.370247216666666
+        },
+        {
+            "name": "FN29",
+            "lat": 61.647086116666664,
+            "lon": 27.400175
+        },
+        {
+            "name": "GIKER",
+            "lat": 61.619897216666665,
+            "lon": 27.537077783333334
+        },
+        {
+            "name": "IBUMI",
+            "lat": 61.669705566666664,
+            "lon": 26.830286116666667
+        },
+        {
+            "name": "KUGAB",
+            "lat": 61.69643056666666,
+            "lon": 27.60514166666667
+        },
+        {
+            "name": "MINB",
+            "lat": 61.71306943333333,
+            "lon": 27.068530566666666
+        },
+        {
+            "name": "OM11",
+            "lat": 61.71285278333333,
+            "lon": 27.068494433333335
+        },
+        {
+            "name": "PINIG",
+            "lat": 61.71517778333333,
+            "lon": 27.057405566666667
+        },
+        {
+            "name": "S",
+            "lat": 61.67421111666667,
+            "lon": 27.26615
+        },
+        {
+            "name": "VAMKI",
+            "lat": 61.74658611666667,
+            "lon": 26.896702783333332
+        },
+        {
+            "name": "XELRO",
+            "lat": 61.823433333333334,
+            "lon": 26.963452783333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY11",
+            "fixes": {
+                "CI11Y": "CI11Y AT OR ABOVE 1900",
+                "OM11": "OM11 1790 RNW 11 TRK 102 UNTIL 1900 TURN RIGHT DIRECT",
+                "MINB": "MINB 2200 FAF OM11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "MI1",
+                    "fixes": {
+                        "MINB": "MINB LEFT TURN INBOUNDCOURSE 102 ALT 1900 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MI2",
+                    "fixes": {
+                        "MINB": "MINB LEFT TURN INBOUNDCOURSE 102 ALT 1900 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ11",
+            "fixes": {
+                "VAMKI": "VAMKI AT OR ABOVE 2200",
+                "PINIG": "PINIG 1900 RNW 11 TRK 102 UNTIL 900",
+                "GIKER": "OVERFLY GIKER 2200 FAF PINIG MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "IBUMI",
+                    "fixes": {
+                        "IBUMI": "IBUMI AT OR ABOVE 2200 SPEED 240"
+                    }
+                },
+                {
+                    "name": "XELRO",
+                    "fixes": {
+                        "XELRO": "XELRO AT OR ABOVE 2200 SPEED 240"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB11",
+            "fixes": {
+                "MINB": "MINB 1780 RNW 11 TRK 102 UNTIL 1900 TURN RIGHT DIRECT MINB 2200 FAF MINB MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "MI1",
+                    "fixes": {
+                        "MINB": "MINB LEFT TURN INBOUNDCOURSE 102 ALT 1900 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MI2",
+                    "fixes": {
+                        "MINB": "MINB LEFT TURN INBOUNDCOURSE 102 ALT 1900 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FN29": "FN29 2200",
+                "S": "S 871 RNW 29 TRK 282 UNTIL 2200 TURN LEFT DIRECT S 2200 FAF FN29 MAP S"
+            },
+            "transitions": [
+                {
+                    "name": "S1",
+                    "fixes": {
+                        "S": "S AT OR ABOVE 2200",
+                        "D075G": "OVERFLY D075G AT OR ABOVE 2200"
+                    }
+                },
+                {
+                    "name": "S2",
+                    "fixes": {
+                        "S": "S AT OR ABOVE 2200",
+                        "D090I": "OVERFLY D090I AT OR ABOVE 2200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "VAMKI": "VAMKI AT OR ABOVE 2200",
+                "PINIG": "PINIG 1900 RNW 11",
+                "GIKER": "OVERFLY GIKER 2200 FAF PINIG MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "IBUMI",
+                    "fixes": {
+                        "IBUMI": "IBUMI AT OR ABOVE 2200 SPEED 240"
+                    }
+                },
+                {
+                    "name": "XELRO",
+                    "fixes": {
+                        "XELRO": "XELRO AT OR ABOVE 2200 SPEED 240"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "GIKER": "GIKER AT OR ABOVE 2200",
+                "ERGIM": "ERGIM 2160 RNW 29",
+                "VAMKI": "OVERFLY VAMKI 2200 FAF ERGIM MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "EBESU",
+                    "fixes": {
+                        "EBESU": "EBESU AT OR ABOVE 2200 SPEED 240"
+                    }
+                },
+                {
+                    "name": "KUGAB",
+                    "fixes": {
+                        "KUGAB": "KUGAB AT OR ABOVE 2200 SPEED 240"
+                    }
+                }
+            ]
+        }
+    ]
+}

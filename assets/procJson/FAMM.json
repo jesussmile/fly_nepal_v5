@@ -1,0 +1,61 @@
+{
+    "fixes": [
+        {
+            "name": "FD04",
+            "lat": 25.902833333333334,
+            "lon": 25.49894443333333
+        },
+        {
+            "name": "MMV",
+            "lat": 25.825897216666668,
+            "lon": 25.535055566666667
+        },
+        {
+            "name": "PI001",
+            "lat": 25.879591133333335,
+            "lon": 25.509722333333333
+        },
+        {
+            "name": "PI002",
+            "lat": 25.906419233333335,
+            "lon": 25.435850716666668
+        },
+        {
+            "name": "PI003",
+            "lat": 25.93328066666667,
+            "lon": 25.48436605
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA04",
+            "fixes": {
+                "FD04": "FD04 5800",
+                "MMV": "MMV 4386 RNW 04 TRK 040 UNTIL 5550 TURN RIGHT DIRECT MMV 6700 FAF FD04 MAP MMV"
+            },
+            "transitions": [
+                {
+                    "name": "MMV1",
+                    "fixes": {
+                        "MMV": "MMV AT OR ABOVE 6700",
+                        "PI001": "PI001 AT OR ABOVE 5800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MMV2",
+                    "fixes": {
+                        "MMV": "MMV LEFT TURN INBOUNDCOURSE 040 ALT 5800 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "fixes": [
+        {
+            "name": "BOGDE",
+            "lat": 34.337586116666664,
+            "lon": 78.6294
+        },
+        {
+            "name": "CPCNB",
+            "lat": 34.27322778333333,
+            "lon": 78.71197221666667
+        },
+        {
+            "name": "CRE",
+            "lat": 33.81384166666667,
+            "lon": 78.72452221666667
+        },
+        {
+            "name": "DOWSE",
+            "lat": 34.42744166666667,
+            "lon": 78.51021388333334
+        },
+        {
+            "name": "FF06",
+            "lat": 34.20712221666667,
+            "lon": 78.81374166666667
+        },
+        {
+            "name": "JAYDB",
+            "lat": 34.321694433333334,
+            "lon": 78.36316943333334
+        },
+        {
+            "name": "LAVIE",
+            "lat": 34.275880566666665,
+            "lon": 79.05613056666667
+        },
+        {
+            "name": "PI001",
+            "lat": 34.23730163333333,
+            "lon": 78.7675746
+        },
+        {
+            "name": "PI002",
+            "lat": 34.16616871666667,
+            "lon": 78.77813036666667
+        },
+        {
+            "name": "PI003",
+            "lat": 34.17051516666667,
+            "lon": 78.87071033333334
+        },
+        {
+            "name": "SODOC",
+            "lat": 34.203038883333335,
+            "lon": 78.80709721666666
+        },
+        {
+            "name": "WADED",
+            "lat": 34.13431943333333,
+            "lon": 78.89749721666666
+        },
+        {
+            "name": "WIPOL",
+            "lat": 34.304952783333334,
+            "lon": 78.67258056666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FF06": "FF06 2000 RNW 06",
+                "CPCNB": "OVERFLY CPCNB AT OR ABOVE 500 TRK 059 UNTIL 1100 TURN RIGHT DIRECT CPCNB AT OR ABOVE 2000 HOLD AT CPCNB RIGHT TURN INBOUNDCOURSE 059 ALT 2000 LEGTIME 1 FAF FF06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "CRE",
+                    "fixes": {
+                        "CRE": "CRE",
+                        "CPCNB": "CPCNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "JAYDB",
+                    "fixes": {
+                        "JAYDB": "JAYDB",
+                        "CPCNB": "CPCNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "WADED": "WADED AT OR ABOVE 2000 OVERFLY WADED AT OR ABOVE 2000 HOLD AT WADED RIGHT TURN INBOUNDCOURSE 055 LEGDIST 4 FAF SODOC MAP RNW 06",
+                "SODOC": "SODOC 2000 RNW 06 TRK 055 UNTIL 499 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CRE",
+                    "fixes": {
+                        "CRE": "CRE"
+                    }
+                },
+                {
+                    "name": "JAYDB",
+                    "fixes": {
+                        "JAYDB": "JAYDB",
+                        "WADED": "OVERFLY WADED AT OR ABOVE 2000 HOLD AT WADED RIGHT TURN INBOUNDCOURSE 055 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LAVIE",
+                    "fixes": {
+                        "LAVIE": "LAVIE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "DOWSE": "DOWSE AT OR ABOVE 2000",
+                "BOGDE": "BOGDE 1800",
+                "WIPOL": "WIPOL AT OR ABOVE 860 RNW 24 TRK 235 UNTIL 374",
+                "WADED": "OVERFLY WADED AT OR ABOVE 2000 HOLD AT WADED RIGHT TURN INBOUNDCOURSE 055 LEGDIST 4 FAF BOGDE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "DOWSE",
+                    "fixes": {
+                        "DOWSE": "DOWSE RIGHT TURN INBOUNDCOURSE 235 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

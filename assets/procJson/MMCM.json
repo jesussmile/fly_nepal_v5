@@ -1,0 +1,162 @@
+{
+    "fixes": [
+        {
+            "name": "CF10",
+            "lat": 18.539358333333332,
+            "lon": 88.47038888333333
+        },
+        {
+            "name": "CF28",
+            "lat": 18.463466666666665,
+            "lon": 88.20183888333334
+        },
+        {
+            "name": "CTM",
+            "lat": 18.509297216666667,
+            "lon": 88.33365278333333
+        },
+        {
+            "name": "FF10",
+            "lat": 18.528097216666666,
+            "lon": 88.41910556666667
+        },
+        {
+            "name": "FF28",
+            "lat": 18.48066388333333,
+            "lon": 88.25126111666667
+        },
+        {
+            "name": "FS10",
+            "lat": 18.532402783333332,
+            "lon": 88.43871111666667
+        },
+        {
+            "name": "FS28",
+            "lat": 18.469483333333333,
+            "lon": 88.21911943333333
+        },
+        {
+            "name": "PI001",
+            "lat": 18.522409916666668,
+            "lon": 88.39359613333333
+        },
+        {
+            "name": "PI002",
+            "lat": 18.583182483333335,
+            "lon": 88.43366266666666
+        },
+        {
+            "name": "PI003",
+            "lat": 18.54671195,
+            "lon": 88.50494386666666
+        },
+        {
+            "name": "PI004",
+            "lat": 18.489337266666666,
+            "lon": 88.27585396666667
+        },
+        {
+            "name": "PI005",
+            "lat": 18.519612583333334,
+            "lon": 88.20735466666666
+        },
+        {
+            "name": "PI006",
+            "lat": 18.4522223,
+            "lon": 88.16854901666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "CTM3A",
+            "rnw": "10",
+            "fixes": {
+                "CTM": "CTM AT OR ABOVE 2000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "CTM3B",
+            "rnw": "28",
+            "fixes": {
+                "CTM": "CTM AT OR ABOVE 2000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "CF10": "CF10 AT OR ABOVE 2000",
+                "FF10": "FF10 1600 RNW 10",
+                "CTM": "OVERFLY CTM TRK 111 UNTIL 7.0 FROM CTM TURN RIGHT DIRECT CTM AT OR ABOVE 2000 FAF FF10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "CTM",
+                    "fixes": {
+                        "CTM": "CTM AT OR ABOVE 2000 TRK 304 UNTIL 8.0 FROM CTM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD28",
+            "fixes": {
+                "CF28": "CF28 AT OR ABOVE 2000",
+                "FF28": "FF28 1400 RNW 28",
+                "CTM": "CTM TRK 284 UNTIL 7.0 FROM CTM TURN LEFT DIRECT CTM AT OR ABOVE 2000 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "CTM",
+                    "fixes": {
+                        "CTM": "CTM AT OR ABOVE 2000 TRK 091 UNTIL 8.0 FROM CTM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR10",
+            "fixes": {
+                "FS10": "FS10 2000 RNW 10",
+                "CTM": "OVERFLY CTM TRK 111 UNTIL 7.0 FROM CTM TURN RIGHT DIRECT CTM AT OR ABOVE 2000 FAF FS10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "CTM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR28",
+            "fixes": {
+                "FS28": "FS28 2000 RNW 28",
+                "CTM": "OVERFLY CTM TRK 284 UNTIL 7.0 FROM CTM TURN LEFT DIRECT CTM AT OR ABOVE 2000 FAF FS28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "CTM",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

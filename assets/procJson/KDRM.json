@@ -1,0 +1,89 @@
+{
+    "fixes": [
+        {
+            "name": "EFVEV",
+            "lat": 45.97779166666667,
+            "lon": 83.49323888333333
+        },
+        {
+            "name": "JIYIB",
+            "lat": 45.978802783333336,
+            "lon": 83.87865833333333
+        },
+        {
+            "name": "JUNBU",
+            "lat": 46.026122216666664,
+            "lon": 83.668575
+        },
+        {
+            "name": "OKBIW",
+            "lat": 45.94778888333333,
+            "lon": 84.0152
+        },
+        {
+            "name": "REEFY",
+            "lat": 45.789569433333334,
+            "lon": 83.95514443333333
+        },
+        {
+            "name": "VUNPY",
+            "lat": 46.05715,
+            "lon": 83.52962778333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 08",
+        "RNW 19",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "OKBIW": "OKBIW AT OR ABOVE 3000",
+                "JIYIB": "JIYIB 2500 RNW 08 TRK 079 UNTIL 1068",
+                "VUNPY": "OVERFLY VUNPY AT OR ABOVE 2500 HOLD AT VUNPY RIGHT TURN INBOUNDCOURSE 259 LEGDIST 4 FAF JIYIB MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "OKBIW",
+                    "fixes": {
+                        "OKBIW": "OKBIW RIGHT TURN INBOUNDCOURSE 079 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "REEFY",
+                    "fixes": {
+                        "REEFY": "REEFY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "VUNPY": "VUNPY AT OR ABOVE 2500",
+                "JUNBU": "JUNBU 1700 RNW 26 TRK 259 UNTIL 1068",
+                "OKBIW": "OVERFLY OKBIW AT OR ABOVE 3000 HOLD AT OKBIW RIGHT TURN INBOUNDCOURSE 079 LEGDIST 4 FAF JUNBU MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "REEFY",
+                    "fixes": {
+                        "REEFY": "REEFY",
+                        "EFVEV": "EFVEV AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "VUNPY",
+                    "fixes": {
+                        "VUNPY": "VUNPY RIGHT TURN INBOUNDCOURSE 259 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

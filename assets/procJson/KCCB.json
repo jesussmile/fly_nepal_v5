@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "ADAMM",
+            "lat": 34.01704721666667,
+            "lon": 117.81681666666667
+        },
+        {
+            "name": "ELMOO",
+            "lat": 34.0985,
+            "lon": 118.08125833333334
+        },
+        {
+            "name": "HOPUN",
+            "lat": 34.07649166666667,
+            "lon": 117.91236388333333
+        },
+        {
+            "name": "MA053",
+            "lat": 34.109925,
+            "lon": 117.69308611666666
+        },
+        {
+            "name": "PDZ",
+            "lat": 33.918336116666666,
+            "lon": 117.52999721666667
+        },
+        {
+            "name": "POM",
+            "lat": 34.07838888333333,
+            "lon": 117.787075
+        },
+        {
+            "name": "TOVQU",
+            "lat": 34.107325,
+            "lon": 117.70046666666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "HOPUN": "HOPUN AT OR ABOVE 4500",
+                "POM": "POM 3100",
+                "TOVQU": "OVERFLY TOVQU 1566 RNW 06 TRK 054 UNTIL 1900 TURN RIGHT DIRECT",
+                "ADAMM": "OVERFLY ADAMM AT OR ABOVE 5500 HOLD AT ADAMM LEFT TURN INBOUNDCOURSE 276 LEGDIST 5 FAF POM MAP TOVQU"
+            },
+            "transitions": [
+                {
+                    "name": "ELMOO",
+                    "fixes": {
+                        "ELMOO": "ELMOO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA06",
+            "fixes": {
+                "POM": "POM 3700",
+                "MA053": "OVERFLY MA053 1433 RNW 06 HDG 105 INTERCEPT RADIAL 135 TO",
+                "PDZ": "PDZ PDZ AT OR ABOVE 4000 HOLD AT PDZ RIGHT TURN INBOUNDCOURSE 258 LEGTIME 1 FAF POM MAP MA053"
+            },
+            "transitions": [
+                {
+                    "name": "HOPUN",
+                    "fixes": {
+                        "HOPUN": "HOPUN"
+                    }
+                },
+                {
+                    "name": "POM",
+                    "fixes": {
+                        "POM": "POM RIGHT TURN INBOUNDCOURSE 053 ALT 3700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA24",
+            "fixes": {
+                "POM": "POM 3700",
+                "MA053": "OVERFLY MA053 1433 RNW 24 HDG 105 INTERCEPT RADIAL 135 TO",
+                "PDZ": "PDZ PDZ AT OR ABOVE 4000 HOLD AT PDZ RIGHT TURN INBOUNDCOURSE 258 LEGTIME 1 FAF POM MAP MA053"
+            },
+            "transitions": [
+                {
+                    "name": "HOPUN",
+                    "fixes": {
+                        "HOPUN": "HOPUN"
+                    }
+                },
+                {
+                    "name": "POM",
+                    "fixes": {
+                        "POM": "POM RIGHT TURN INBOUNDCOURSE 053 ALT 3700 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

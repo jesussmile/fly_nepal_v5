@@ -1,0 +1,212 @@
+{
+    "fixes": [
+        {
+            "name": "AMDIS",
+            "lat": 4.702183333333333,
+            "lon": 1.7893555666666665
+        },
+        {
+            "name": "BIGIN",
+            "lat": 4.7438666666666665,
+            "lon": 1.8617444333333335
+        },
+        {
+            "name": "D011G",
+            "lat": 5.029683333333334,
+            "lon": 1.7526833333333334
+        },
+        {
+            "name": "D023G",
+            "lat": 5.024586116666667,
+            "lon": 1.7287777833333333
+        },
+        {
+            "name": "D191G",
+            "lat": 4.796497216666666,
+            "lon": 1.7771194333333333
+        },
+        {
+            "name": "D202G",
+            "lat": 4.800977783333334,
+            "lon": 1.7990722166666666
+        },
+        {
+            "name": "FN03",
+            "lat": 4.811558333333333,
+            "lon": 1.8233388833333333
+        },
+        {
+            "name": "FN21",
+            "lat": 5.014616666666667,
+            "lon": 1.7064527833333334
+        },
+        {
+            "name": "GAPSO",
+            "lat": 5.124955566666666,
+            "lon": 1.7177888833333332
+        },
+        {
+            "name": "IKSAS",
+            "lat": 5.060719433333333,
+            "lon": 1.6062305666666667
+        },
+        {
+            "name": "KEDOV",
+            "lat": 5.046525,
+            "lon": 1.6885305666666666
+        },
+        {
+            "name": "MEKEV",
+            "lat": 5.109636116666667,
+            "lon": 1.3220777833333335
+        },
+        {
+            "name": "NAKOB",
+            "lat": 4.998491666666666,
+            "lon": 1.2848972166666668
+        },
+        {
+            "name": "TINB",
+            "lat": 4.913091666666666,
+            "lon": 1.7649055666666666
+        },
+        {
+            "name": "TK400",
+            "lat": 4.814538883333333,
+            "lon": 1.8213138833333333
+        },
+        {
+            "name": "TK500",
+            "lat": 4.975758333333333,
+            "lon": 1.7290472166666666
+        },
+        {
+            "name": "TK600",
+            "lat": 4.824044433333333,
+            "lon": 1.8158750000000001
+        },
+        {
+            "name": "VOPIT",
+            "lat": 4.785541666666667,
+            "lon": 1.9341444333333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "NAKO1D",
+            "rnw": "21",
+            "fixes": {
+                "TK600": "OVERFLY TK600 AT OR ABOVE 930 TURN LEFT HDG 031 INTERCEPT RADIAL 076 TO",
+                "NAKOB": "NAKOB AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "MEKE1B",
+            "runway": "RNW 21",
+            "fixes": {
+                "MEKEV": "MEKEV",
+                "IKSAS": "IKSAS AT OR ABOVE 3300"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FN03": "FN03 1900 RNW 03",
+                "TINB": "OVERFLY TINB TRK 035 UNTIL 2000 TURN RIGHT DIRECT TINB 3000 SPEED 210 HOLD AT TINB LEFT TURN INBOUNDCOURSE 215 ALT 3000 SPEED 230 LEGTIME 1 FAF FN03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "TI1",
+                    "fixes": {
+                        "TINB": "TINB AT OR ABOVE 3000 SPEED 210",
+                        "D191G": "OVERFLY D191G AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "TI2",
+                    "fixes": {
+                        "TINB": "TINB AT OR ABOVE 3000 SPEED 140",
+                        "D202G": "OVERFLY D202G AT OR ABOVE 1900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FN21": "FN21 2700",
+                "TINB": "TINB 340 RNW 21 TRK 215 UNTIL 2000 TURN LEFT DIRECT TINB 3000 SPEED 210 HOLD AT TINB RIGHT TURN INBOUNDCOURSE 035 ALT 3000 SPEED 210 LEGTIME 1 FAF FN21 MAP TI"
+            },
+            "transitions": [
+                {
+                    "name": "TI1",
+                    "fixes": {
+                        "TINB": "TINB AT OR ABOVE 3000 SPEED 210",
+                        "D011G": "OVERFLY D011G AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "TI2",
+                    "fixes": {
+                        "TINB": "TINB AT OR ABOVE 3000 SPEED 140",
+                        "D023G": "OVERFLY D023G AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "BIGIN": "BIGIN AT OR ABOVE 1700",
+                "TK400": "TK400 1700 RNW 03 TRK 035 UNTIL 1000 TURN LEFT DIRECT",
+                "VOPIT": "VOPIT AT OR ABOVE 3300 HOLD AT VOPIT LEFT TURN INBOUNDCOURSE 034 ALT 3300 LEGTIME 1 FAF TK400 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "AMDIS",
+                    "fixes": {
+                        "AMDIS": "AMDIS AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "VOPIT",
+                    "fixes": {
+                        "VOPIT": "VOPIT AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "KEDOV": "KEDOV AT OR ABOVE 1800",
+                "TK500": "TK500 1700 RNW 21 TRK 215 UNTIL 1200 TURN RIGHT DIRECT",
+                "GAPSO": "GAPSO AT OR ABOVE 3300 HOLD AT GAPSO RIGHT TURN INBOUNDCOURSE 214 ALT 3300 LEGTIME 1 FAF TK500 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "GAPSO",
+                    "fixes": {
+                        "GAPSO": "GAPSO AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "IKSAS",
+                    "fixes": {
+                        "IKSAS": "IKSAS AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        }
+    ]
+}

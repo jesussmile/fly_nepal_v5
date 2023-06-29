@@ -1,0 +1,67 @@
+{
+    "fixes": [
+        {
+            "name": "DOGNE",
+            "lat": 48.85775833333334,
+            "lon": 105.51814721666666
+        },
+        {
+            "name": "GEMPE",
+            "lat": 48.915452783333336,
+            "lon": 105.60918888333333
+        },
+        {
+            "name": "GGW",
+            "lat": 48.215305566666665,
+            "lon": 106.62541943333333
+        },
+        {
+            "name": "ISN",
+            "lat": 48.25341388333333,
+            "lon": 103.75066111666666
+        },
+        {
+            "name": "NIJBU",
+            "lat": 48.85534166666667,
+            "lon": 105.69655833333333
+        },
+        {
+            "name": "ROGUU",
+            "lat": 48.739888883333336,
+            "lon": 105.51488611666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "GEMPE": "GEMPE AT OR ABOVE 4500",
+                "DOGNE": "DOGNE 3700 RNW 12 TRK 122 UNTIL 3600 TURN RIGHT DIRECT",
+                "NIJBU": "OVERFLY NIJBU AT OR ABOVE 6000 HOLD AT NIJBU RIGHT TURN INBOUNDCOURSE 032 LEGDIST 4 FAF DOGNE MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "GGW",
+                    "fixes": {
+                        "GGW": "GGW",
+                        "NIJBU": "NIJBU AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "ISN",
+                    "fixes": {
+                        "ISN": "ISN",
+                        "ROGUU": "ROGUU AT OR ABOVE 6000",
+                        "NIJBU": "NIJBU AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

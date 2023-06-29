@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "CIPUL",
+            "lat": 38.03885,
+            "lon": 83.666875
+        },
+        {
+            "name": "IDABE",
+            "lat": 38.39196666666667,
+            "lon": 83.50758611666667
+        },
+        {
+            "name": "NIYIK",
+            "lat": 38.117463883333336,
+            "lon": 83.63154721666666
+        },
+        {
+            "name": "SOVSE",
+            "lat": 38.31339166666667,
+            "lon": 83.54316943333333
+        },
+        {
+            "name": "UNICI",
+            "lat": 38.26926111666667,
+            "lon": 83.56311943333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "CIPUL": "CIPUL AT OR ABOVE 3600",
+                "NIYIK": "NIYIK 2900 RNW 02 TRK 026 UNTIL 1228",
+                "IDABE": "OVERFLY IDABE AT OR ABOVE 3600 HOLD AT IDABE RIGHT TURN INBOUNDCOURSE 206 LEGDIST 4 FAF NIYIK MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "CIPUL",
+                    "fixes": {
+                        "CIPUL": "CIPUL RIGHT TURN INBOUNDCOURSE 026 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "IDABE": "IDABE AT OR ABOVE 3600",
+                "SOVSE": "SOVSE 2900",
+                "UNICI": "UNICI AT OR ABOVE 2000 RNW 20 TRK 206 UNTIL 1270",
+                "CIPUL": "OVERFLY CIPUL AT OR ABOVE 3600 HOLD AT CIPUL RIGHT TURN INBOUNDCOURSE 026 LEGDIST 4 FAF SOVSE MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "IDABE",
+                    "fixes": {
+                        "IDABE": "IDABE RIGHT TURN INBOUNDCOURSE 206 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

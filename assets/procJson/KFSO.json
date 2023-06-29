@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "BTV",
+            "lat": 44.39710556666667,
+            "lon": 73.18263611666667
+        },
+        {
+            "name": "DUCED",
+            "lat": 45.000402783333335,
+            "lon": 73.11321666666667
+        },
+        {
+            "name": "IRAME",
+            "lat": 44.751077783333336,
+            "lon": 73.04810556666666
+        },
+        {
+            "name": "JUTEK",
+            "lat": 44.732044433333336,
+            "lon": 73.19083333333333
+        },
+        {
+            "name": "UPEDE",
+            "lat": 45.103777783333335,
+            "lon": 73.14039166666667
+        },
+        {
+            "name": "UXSEZ",
+            "lat": 44.844858333333335,
+            "lon": 73.07252778333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "IRAME": "IRAME AT OR ABOVE 3000",
+                "UXSEZ": "UXSEZ 2300 RNW 01 TRK 005 UNTIL 1100 TURN LEFT DIRECT",
+                "JUTEK": "OVERFLY JUTEK AT OR ABOVE 3000 HOLD AT JUTEK RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4 FAF UXSEZ MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "BTV",
+                    "fixes": {
+                        "BTV": "BTV"
+                    }
+                },
+                {
+                    "name": "IRAME",
+                    "fixes": {
+                        "IRAME": "IRAME LEFT TURN INBOUNDCOURSE 006 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JUTEK",
+                    "fixes": {
+                        "JUTEK": "JUTEK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "UPEDE": "UPEDE AT OR ABOVE 1800",
+                "DUCED": "DUCED 1800 RNW 19 TRK 185 UNTIL 700",
+                "JUTEK": "OVERFLY JUTEK AT OR ABOVE 3000 HOLD AT JUTEK RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4 FAF DUCED MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "UPEDE",
+                    "fixes": {
+                        "UPEDE": "UPEDE RIGHT TURN INBOUNDCOURSE 185 ALT 1800 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

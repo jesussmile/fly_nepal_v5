@@ -1,0 +1,119 @@
+{
+    "fixes": [
+        {
+            "name": "FN03",
+            "lat": 25.48389166666667,
+            "lon": 54.64889443333333
+        },
+        {
+            "name": "FN21",
+            "lat": 25.331252783333333,
+            "lon": 54.587555566666666
+        },
+        {
+            "name": "IB225",
+            "lat": 25.322430566666668,
+            "lon": 54.58674443333334
+        },
+        {
+            "name": "IB226",
+            "lat": 25.243505566666666,
+            "lon": 54.55655278333333
+        },
+        {
+            "name": "IB227",
+            "lat": 25.190702783333332,
+            "lon": 54.62775
+        },
+        {
+            "name": "IB335",
+            "lat": 25.493225,
+            "lon": 54.652208333333334
+        },
+        {
+            "name": "IB336",
+            "lat": 25.572136116666666,
+            "lon": 54.682513883333336
+        },
+        {
+            "name": "IB337",
+            "lat": 25.573252783333334,
+            "lon": 54.77464166666667
+        },
+        {
+            "name": "ITUNB",
+            "lat": 25.408611116666666,
+            "lon": 54.62194443333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FN03": "FN03 2200 RNW 03",
+                "ITUNB": "OVERFLY ITUNB HDG 032 UNTIL 3000 TURN LEFT DIRECT ITUNB HOLD AT ITUNB RIGHT TURN INBOUNDCOURSE 190 LEGTIME 1 FAF FN03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "ITU",
+                    "fixes": {
+                        "ITUNB": "ITUNB AT OR ABOVE 3000 TRK 190 UNTIL 6.0 FROM ITUNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FN21": "FN21 2200 RNW 21",
+                "ITUNB": "OVERFLY ITUNB HDG 216 UNTIL 3000 TURN LEFT DIRECT ITUNB HOLD AT ITUNB LEFT TURN INBOUNDCOURSE 016 LEGTIME 1 FAF FN21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "ITU",
+                    "fixes": {
+                        "ITUNB": "ITUNB AT OR ABOVE 3000 TRK 016 UNTIL 6.5 FROM ITUNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ03",
+            "fixes": {
+                "IB336": "IB336 AT OR ABOVE 2390",
+                "IB335": "IB335 2390 RNW 03 TRK 036 UNTIL 2000 TURN LEFT DIRECT",
+                "IB337": "IB337 3000 HOLD AT IB337 LEFT TURN INBOUNDCOURSE 106 ALT 3000 LEGTIME 1 FAF IB335 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "IB337",
+                    "fixes": {
+                        "IB337": "IB337 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ21",
+            "fixes": {
+                "IB226": "IB226 AT OR ABOVE 2500",
+                "IB225": "IB225 2370 RNW 21 TRK 216 UNTIL 2000 TURN RIGHT DIRECT",
+                "IB227": "IB227 3000 HOLD AT IB227 RIGHT TURN INBOUNDCOURSE 146 ALT 3000 LEGTIME 1 FAF IB225 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "IB227",
+                    "fixes": {
+                        "IB227": "IB227 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

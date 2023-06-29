@@ -1,0 +1,60 @@
+{
+    "fixes": [
+        {
+            "name": "5NM",
+            "lat": 12.296952783333333,
+            "lon": 13.606802783333332
+        },
+        {
+            "name": "G100P",
+            "lat": 12.268333333333333,
+            "lon": 13.438333333333333
+        },
+        {
+            "name": "G190F",
+            "lat": 12.365,
+            "lon": 13.508333333333333
+        },
+        {
+            "name": "G190J",
+            "lat": 12.283333333333333,
+            "lon": 13.523333333333333
+        },
+        {
+            "name": "G280V",
+            "lat": 12.311666666666667,
+            "lon": 13.69
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "G190J": "G190J AT OR ABOVE 2000",
+                "G190F": "G190F 2000 RNW 20 TRK 196 UNTIL 420 TURN RIGHT DIRECT",
+                "G100P": "G100P 3000 FAF G190F MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "G100P",
+                    "fixes": {
+                        "G100P": "G100P"
+                    }
+                },
+                {
+                    "name": "G280V",
+                    "fixes": {
+                        "G280V": "G280V",
+                        "5NM": "5NM AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

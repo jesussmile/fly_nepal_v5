@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "CENAB",
+            "lat": 42.836244433333334,
+            "lon": 102.37366388333334
+        },
+        {
+            "name": "IROVE",
+            "lat": 42.90124721666667,
+            "lon": 102.302725
+        },
+        {
+            "name": "JITOG",
+            "lat": 42.966205566666666,
+            "lon": 102.23163611666666
+        },
+        {
+            "name": "JUVSI",
+            "lat": 43.07310278333333,
+            "lon": 102.59511111666667
+        },
+        {
+            "name": "JUZAN",
+            "lat": 42.964477783333336,
+            "lon": 102.40995556666667
+        },
+        {
+            "name": "KEMJO",
+            "lat": 42.97948888333333,
+            "lon": 102.43546943333334
+        },
+        {
+            "name": "WAXER",
+            "lat": 42.964275,
+            "lon": 103.22780278333333
+        },
+        {
+            "name": "ZUNON",
+            "lat": 43.141958333333335,
+            "lon": 102.71311111666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "ZUNON": "ZUNON AT OR ABOVE 6200",
+                "JUVSI": "JUVSI 5000 RNW 12 TRK 122 UNTIL 3589",
+                "IROVE": "OVERFLY IROVE AT OR ABOVE 5700 HOLD AT IROVE RIGHT TURN INBOUNDCOURSE 302 LEGDIST 5 FAF JUVSI MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "ZUNON",
+                    "fixes": {
+                        "ZUNON": "ZUNON RIGHT TURN INBOUNDCOURSE 121 ALT 6200 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IROVE": "IROVE AT OR ABOVE 5700 OVERFLY IROVE AT OR ABOVE 5700 HOLD AT IROVE RIGHT TURN INBOUNDCOURSE 302 LEGDIST 5 FAF JUZAN MAP RNW 30",
+                "JUZAN": "JUZAN 5000",
+                "KEMJO": "KEMJO AT OR ABOVE 4540 RNW 30 TRK 302 UNTIL 3733 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IROVE",
+                    "fixes": {
+                        "IROVE": "IROVE RIGHT TURN INBOUNDCOURSE 302 ALT 5700 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "JITOG",
+                    "fixes": {
+                        "JITOG": "JITOG"
+                    }
+                },
+                {
+                    "name": "WAXER",
+                    "fixes": {
+                        "WAXER": "WAXER",
+                        "CENAB": "CENAB AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

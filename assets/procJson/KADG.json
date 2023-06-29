@@ -1,0 +1,94 @@
+{
+    "fixes": [
+        {
+            "name": "EZHAF",
+            "lat": 41.99529166666667,
+            "lon": 83.89070278333334
+        },
+        {
+            "name": "HAGVI",
+            "lat": 41.842363883333334,
+            "lon": 84.11255556666667
+        },
+        {
+            "name": "JEKHU",
+            "lat": 41.93392778333333,
+            "lon": 83.81508611666666
+        },
+        {
+            "name": "KICEC",
+            "lat": 41.890166666666666,
+            "lon": 84.04338611666667
+        },
+        {
+            "name": "KUZJO",
+            "lat": 41.925463883333336,
+            "lon": 83.99220556666667
+        },
+        {
+            "name": "OBIHI",
+            "lat": 41.736944433333335,
+            "lon": 84.26451943333333
+        },
+        {
+            "name": "SECRU",
+            "lat": 41.806891666666665,
+            "lon": 84.16377778333333
+        },
+        {
+            "name": "VEFRE",
+            "lat": 42.05660278333333,
+            "lon": 83.96646666666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 11",
+        "RNW 23",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "OBIHI": "OBIHI AT OR ABOVE 3000",
+                "SECRU": "SECRU 2400",
+                "HAGVI": "HAGVI AT OR ABOVE 1380 RNW 05 TRK 053 UNTIL 1048",
+                "EZHAF": "OVERFLY EZHAF AT OR ABOVE 3000 HOLD AT EZHAF RIGHT TURN INBOUNDCOURSE 233 LEGDIST 4 FAF SECRU MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "OBIHI",
+                    "fixes": {
+                        "OBIHI": "OBIHI RIGHT TURN INBOUNDCOURSE 053 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "EZHAF": "EZHAF AT OR ABOVE 3000",
+                "KUZJO": "KUZJO 2400",
+                "KICEC": "KICEC AT OR ABOVE 1380 RNW 23 TRK 233 UNTIL 1198",
+                "OBIHI": "OVERFLY OBIHI AT OR ABOVE 3000 HOLD AT OBIHI RIGHT TURN INBOUNDCOURSE 053 LEGDIST 5 FAF KUZJO MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "JEKHU",
+                    "fixes": {
+                        "JEKHU": "JEKHU"
+                    }
+                },
+                {
+                    "name": "VEFRE",
+                    "fixes": {
+                        "VEFRE": "VEFRE"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "CVG",
+            "lat": 39.01598056666667,
+            "lon": 84.70334721666667
+        },
+        {
+            "name": "DAYVI",
+            "lat": 39.359341666666666,
+            "lon": 84.77367778333333
+        },
+        {
+            "name": "HOMOR",
+            "lat": 39.46053056666667,
+            "lon": 84.64307221666667
+        },
+        {
+            "name": "IRECA",
+            "lat": 39.29926111666666,
+            "lon": 84.78465
+        },
+        {
+            "name": "JBERT",
+            "lat": 39.461525,
+            "lon": 84.90710833333333
+        },
+        {
+            "name": "KIRKS",
+            "lat": 39.461094433333336,
+            "lon": 84.77303611666666
+        },
+        {
+            "name": "MILAN",
+            "lat": 39.35610556666666,
+            "lon": 85.31684166666666
+        },
+        {
+            "name": "MIZZA",
+            "lat": 39.497058333333335,
+            "lon": 84.45674166666667
+        },
+        {
+            "name": "NESRY",
+            "lat": 39.34155833333333,
+            "lon": 84.79687778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 39.398157483333335,
+            "lon": 84.81513988333333
+        },
+        {
+            "name": "PI002",
+            "lat": 39.435041483333336,
+            "lon": 84.89467726666666
+        },
+        {
+            "name": "PI003",
+            "lat": 39.50326261666667,
+            "lon": 84.84913396666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "KIRKS": "KIRKS AT OR ABOVE 3000 OVERFLY KIRKS AT OR ABOVE 3000 HOLD AT KIRKS RIGHT TURN INBOUNDCOURSE 185 LEGDIST 4 FAF DAYVI MAP RNW 19",
+                "DAYVI": "DAYVI 2500 RNW 19 TRK 185 UNTIL 990 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KIRKS",
+                    "fixes": {
+                        "KIRKS": "KIRKS RIGHT TURN INBOUNDCOURSE 185 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MILAN",
+                    "fixes": {
+                        "MILAN": "MILAN",
+                        "JBERT": "JBERT AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MIZZA",
+                    "fixes": {
+                        "MIZZA": "MIZZA",
+                        "HOMOR": "HOMOR AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR19",
+            "fixes": {
+                "NESRY": "NESRY 2400 NESRY AT OR ABOVE 2600 HOLD AT NESRY RIGHT TURN INBOUNDCOURSE 171 LEGTIME 1 FAF NESRY MAP RNW 19",
+                "IRECA": "IRECA AT OR ABOVE 1440 RNW 19 TRK 171 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CVG",
+                    "fixes": {
+                        "CVG": "CVG",
+                        "NESRY": "NESRY AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

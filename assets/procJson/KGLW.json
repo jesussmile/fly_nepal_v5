@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "FIKSO",
+            "lat": 37.046075,
+            "lon": 85.90074721666667
+        },
+        {
+            "name": "GIRME",
+            "lat": 36.96511111666667,
+            "lon": 86.19947778333334
+        },
+        {
+            "name": "HENTO",
+            "lat": 37.001694433333334,
+            "lon": 86.06491943333333
+        },
+        {
+            "name": "JILUT",
+            "lat": 37.01772221666667,
+            "lon": 86.00575
+        },
+        {
+            "name": "PAULL",
+            "lat": 37.06129721666667,
+            "lon": 85.84421111666667
+        },
+        {
+            "name": "ZERAX",
+            "lat": 37.097436116666664,
+            "lon": 85.70947778333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "GIRME": "GIRME AT OR ABOVE 3000",
+                "HENTO": "HENTO 2400",
+                "JILUT": "JILUT AT OR ABOVE 1440 RNW 08 TRK 075 UNTIL 971",
+                "ZERAX": "OVERFLY ZERAX AT OR ABOVE 3000 HOLD AT ZERAX RIGHT TURN INBOUNDCOURSE 256 LEGDIST 6 FAF HENTO MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "GIRME",
+                    "fixes": {
+                        "GIRME": "GIRME RIGHT TURN INBOUNDCOURSE 075 ALT 3000 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "ZERAX": "ZERAX AT OR ABOVE 3000",
+                "PAULL": "PAULL 2400",
+                "FIKSO": "FIKSO AT OR ABOVE 1480 RNW 26 TRK 255 UNTIL 1116",
+                "GIRME": "OVERFLY GIRME AT OR ABOVE 3000 HOLD AT GIRME RIGHT TURN INBOUNDCOURSE 075 LEGDIST 6 FAF PAULL MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "ZERAX",
+                    "fixes": {
+                        "ZERAX": "ZERAX RIGHT TURN INBOUNDCOURSE 256 ALT 3000 LEGDIST 6"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "AGSEQ",
+            "lat": 37.579622216666664,
+            "lon": 97.08633056666666
+        },
+        {
+            "name": "GOLUW",
+            "lat": 37.7208,
+            "lon": 97.07335
+        },
+        {
+            "name": "ICT",
+            "lat": 37.74525833333333,
+            "lon": 97.58382778333333
+        },
+        {
+            "name": "INDIC",
+            "lat": 37.926883333333336,
+            "lon": 97.11034166666667
+        },
+        {
+            "name": "JETBU",
+            "lat": 37.46626388333333,
+            "lon": 97.25256943333333
+        },
+        {
+            "name": "MALNC",
+            "lat": 37.67154443333333,
+            "lon": 97.07706666666667
+        },
+        {
+            "name": "TEYNO",
+            "lat": 37.63925278333333,
+            "lon": 97.08083333333333
+        },
+        {
+            "name": "WAKOP",
+            "lat": 37.343411116666665,
+            "lon": 97.10783611666666
+        },
+        {
+            "name": "WANDY",
+            "lat": 37.66093888333333,
+            "lon": 97.00545
+        },
+        {
+            "name": "ZELOB",
+            "lat": 37.46284443333333,
+            "lon": 97.09696388333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA18",
+            "fixes": {
+                "WANDY": "WANDY 3000 WANDY AT OR ABOVE 3000 HOLD AT WANDY LEFT TURN INBOUNDCOURSE 273 LEGTIME 1 FAF WANDY MAP MALNC",
+                "MALNC": "MALNC 1840 RNW 18 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ICT",
+                    "fixes": {
+                        "ICT": "ICT",
+                        "WANDY": "WANDY AT OR ABOVE 3600 HOLD AT WANDY LEFT TURN INBOUNDCOURSE 273 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA36",
+            "fixes": {
+                "WANDY": "WANDY 3000 WANDY AT OR ABOVE 3000 HOLD AT WANDY LEFT TURN INBOUNDCOURSE 273 LEGTIME 1 FAF WANDY MAP MALNC",
+                "MALNC": "MALNC 1840 RNW 36 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ICT",
+                    "fixes": {
+                        "ICT": "ICT",
+                        "WANDY": "WANDY AT OR ABOVE 3600 HOLD AT WANDY LEFT TURN INBOUNDCOURSE 273 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ZELOB": "ZELOB AT OR ABOVE 3000",
+                "AGSEQ": "AGSEQ 3000",
+                "TEYNO": "TEYNO AT OR ABOVE 1840 RNW 36 TRK 000 UNTIL 1620",
+                "GOLUW": "GOLUW",
+                "INDIC": "OVERFLY INDIC AT OR ABOVE 4500 HOLD AT INDIC RIGHT TURN INBOUNDCOURSE 244 LEGDIST 4 FAF AGSEQ MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "JETBU",
+                    "fixes": {
+                        "JETBU": "JETBU"
+                    }
+                },
+                {
+                    "name": "WAKOP",
+                    "fixes": {
+                        "WAKOP": "WAKOP"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "BOWSK",
+            "lat": 28.713855566666666,
+            "lon": 82.32859166666667
+        },
+        {
+            "name": "DADES",
+            "lat": 28.362672216666667,
+            "lon": 82.25216666666667
+        },
+        {
+            "name": "FRINC",
+            "lat": 28.977852783333333,
+            "lon": 82.29811943333333
+        },
+        {
+            "name": "GIOVA",
+            "lat": 28.894680566666665,
+            "lon": 82.30773611666666
+        },
+        {
+            "name": "OCF",
+            "lat": 29.177477783333334,
+            "lon": 82.22633333333333
+        },
+        {
+            "name": "REBEC",
+            "lat": 28.554483333333334,
+            "lon": 82.29936388333333
+        },
+        {
+            "name": "TOCOP",
+            "lat": 28.753555566666666,
+            "lon": 82.32401943333333
+        },
+        {
+            "name": "VANNI",
+            "lat": 29.05385,
+            "lon": 82.12882778333334
+        },
+        {
+            "name": "WESAS",
+            "lat": 28.63069721666667,
+            "lon": 82.33815556666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "WESAS": "WESAS AT OR ABOVE 2000",
+                "BOWSK": "BOWSK 1700",
+                "TOCOP": "TOCOP AT OR ABOVE 940 RNW 01 TRK 011 UNTIL 465",
+                "GIOVA": "GIOVA",
+                "VANNI": "OVERFLY VANNI AT OR ABOVE 2000 HOLD AT VANNI RIGHT TURN INBOUNDCOURSE 248 LEGDIST 4 FAF BOWSK MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "DADES",
+                    "fixes": {
+                        "DADES": "DADES",
+                        "REBEC": "REBEC AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "FRINC": "FRINC AT OR ABOVE 2000",
+                "GIOVA": "GIOVA 1700 RNW 19 TRK 191 UNTIL 465",
+                "BOWSK": "BOWSK",
+                "REBEC": "OVERFLY REBEC AT OR ABOVE 2000 HOLD AT REBEC RIGHT TURN INBOUNDCOURSE 341 LEGDIST 4 FAF GIOVA MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "OCF",
+                    "fixes": {
+                        "OCF": "OCF"
+                    }
+                },
+                {
+                    "name": "VANNI",
+                    "fixes": {
+                        "VANNI": "VANNI"
+                    }
+                }
+            ]
+        }
+    ]
+}

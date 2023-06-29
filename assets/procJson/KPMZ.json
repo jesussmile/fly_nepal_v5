@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "FATVO",
+            "lat": 36.001133333333335,
+            "lon": 76.68495833333333
+        },
+        {
+            "name": "FOPCE",
+            "lat": 35.60923056666667,
+            "lon": 76.83569721666667
+        },
+        {
+            "name": "LARME",
+            "lat": 35.76215833333333,
+            "lon": 76.77705556666666
+        },
+        {
+            "name": "MAXIF",
+            "lat": 35.658380566666665,
+            "lon": 77.02895556666667
+        },
+        {
+            "name": "PEARS",
+            "lat": 35.786766666666665,
+            "lon": 76.95054721666666
+        },
+        {
+            "name": "UZJOX",
+            "lat": 35.72234721666667,
+            "lon": 76.79233611666666
+        },
+        {
+            "name": "WESBU",
+            "lat": 36.05000278333333,
+            "lon": 76.87712221666666
+        },
+        {
+            "name": "ZUHAX",
+            "lat": 35.89426388333333,
+            "lon": 76.72621943333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "FOPCE": "FOPCE AT OR ABOVE 1700",
+                "UZJOX": "UZJOX 1700",
+                "LARME": "LARME AT OR ABOVE 900 RNW 03 TRK 027 UNTIL 436 TURN LEFT DIRECT",
+                "MAXIF": "OVERFLY MAXIF AT OR ABOVE 2000 HOLD AT MAXIF RIGHT TURN INBOUNDCOURSE 117 LEGDIST 4 FAF UZJOX MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "MAXIF",
+                    "fixes": {
+                        "MAXIF": "MAXIF"
+                    }
+                },
+                {
+                    "name": "PEARS",
+                    "fixes": {
+                        "PEARS": "PEARS",
+                        "FOPCE": "OVERFLY FOPCE AT OR ABOVE 1700 HOLD AT FOPCE LEFT TURN INBOUNDCOURSE 027 ALT 1700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "FATVO": "FATVO AT OR ABOVE 2000",
+                "ZUHAX": "ZUHAX 1600 RNW 21 TRK 207 UNTIL 436 TURN RIGHT DIRECT",
+                "WESBU": "OVERFLY WESBU AT OR ABOVE 2000 HOLD AT WESBU RIGHT TURN INBOUNDCOURSE 117 LEGDIST 4 FAF ZUHAX MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "PEARS",
+                    "fixes": {
+                        "PEARS": "PEARS",
+                        "FATVO": "OVERFLY FATVO AT OR ABOVE 2000 HOLD AT FATVO RIGHT TURN INBOUNDCOURSE 207 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WESBU",
+                    "fixes": {
+                        "WESBU": "WESBU"
+                    }
+                }
+            ]
+        }
+    ]
+}

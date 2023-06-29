@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "CD16",
+            "lat": 8.367727783333333,
+            "lon": 140.37384721666666
+        },
+        {
+            "name": "CD34",
+            "lat": 8.673133333333332,
+            "lon": 140.48278333333334
+        },
+        {
+            "name": "FD16",
+            "lat": 8.430638883333334,
+            "lon": 140.39141666666666
+        },
+        {
+            "name": "FD34",
+            "lat": 8.611694433333334,
+            "lon": 140.45597221666668
+        },
+        {
+            "name": "FS16",
+            "lat": 8.440041666666666,
+            "lon": 140.39333333333335
+        },
+        {
+            "name": "KK402",
+            "lat": 8.38625,
+            "lon": 140.37033333333332
+        },
+        {
+            "name": "KK403",
+            "lat": 8.433555566666668,
+            "lon": 140.38730556666667
+        },
+        {
+            "name": "KK602",
+            "lat": 8.660166666666667,
+            "lon": 140.46872221666666
+        },
+        {
+            "name": "KK603",
+            "lat": 8.612861116666666,
+            "lon": 140.45172221666667
+        },
+        {
+            "name": "MKE",
+            "lat": 8.522611116666667,
+            "lon": 140.41711111666666
+        },
+        {
+            "name": "RAUKE",
+            "lat": 8.550472216666666,
+            "lon": 140.34208333333333
+        },
+        {
+            "name": "TUTKO",
+            "lat": 8.718583333333333,
+            "lon": 140.50263888333333
+        },
+        {
+            "name": "VELRO",
+            "lat": 8.319138883333334,
+            "lon": 140.36030556666665
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDY16",
+            "fixes": {
+                "CD16": "CD16 AT OR ABOVE 2200",
+                "FD16": "FD16 1600 RNW 16 TRK 161 UNTIL 1500 TURN RIGHT DIRECT",
+                "VELRO": "VELRO AT OR ABOVE 3000 FAF FD16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "VELRO",
+                    "fixes": {
+                        "VELRO": "VELRO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD34",
+            "fixes": {
+                "CD34": "CD34 AT OR ABOVE 2200",
+                "FD34": "FD34 1600 RNW 34 TRK 333 UNTIL 1500 TURN LEFT DIRECT",
+                "TUTKO": "TUTKO AT OR ABOVE 3000 FAF FD34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "TUTKO",
+                    "fixes": {
+                        "TUTKO": "TUTKO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "KK402": "KK402 AT OR ABOVE 2000",
+                "KK403": "KK403 1600 RNW 16 TRK 156 UNTIL 1500 TURN RIGHT DIRECT",
+                "RAUKE": "RAUKE",
+                "VELRO": "VELRO AT OR ABOVE 3000 FAF KK403 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "VELRO",
+                    "fixes": {
+                        "VELRO": "VELRO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "KK602": "KK602 AT OR ABOVE 2000",
+                "KK603": "KK603 1600 RNW 34 TRK 336 UNTIL 1500 TURN LEFT DIRECT",
+                "RAUKE": "RAUKE",
+                "TUTKO": "TUTKO AT OR ABOVE 3000 FAF KK603 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "TUTKO",
+                    "fixes": {
+                        "TUTKO": "TUTKO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORZ16",
+            "fixes": {
+                "FS16": "FS16 1500 RNW 16",
+                "MKE": "OVERFLY MKE TRK 160 UNTIL 1500 TURN RIGHT DIRECT MKE AT OR ABOVE 2500 FAF FS16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "MKE",
+                    "fixes": {
+                        "MKE": "MKE AT OR ABOVE 2500 TRK 325 UNTIL 9.0 FROM MKE"
+                    }
+                }
+            ]
+        }
+    ]
+}

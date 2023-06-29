@@ -1,0 +1,173 @@
+{
+    "fixes": [
+        {
+            "name": "ANIML",
+            "lat": 44.955333333333336,
+            "lon": 94.33041388333334
+        },
+        {
+            "name": "ARMUW",
+            "lat": 45.44344721666667,
+            "lon": 95.19598333333333
+        },
+        {
+            "name": "COMOS",
+            "lat": 44.62068333333333,
+            "lon": 94.74098888333333
+        },
+        {
+            "name": "DWN",
+            "lat": 45.087463883333335,
+            "lon": 94.45385
+        },
+        {
+            "name": "EBVOF",
+            "lat": 45.030397216666664,
+            "lon": 94.423875
+        },
+        {
+            "name": "FITAS",
+            "lat": 45.065,
+            "lon": 95.16948611666666
+        },
+        {
+            "name": "JEGRU",
+            "lat": 45.163825,
+            "lon": 94.59083611666667
+        },
+        {
+            "name": "MAHVE",
+            "lat": 45.09600556666667,
+            "lon": 94.50104166666667
+        },
+        {
+            "name": "MAYER",
+            "lat": 44.917991666666666,
+            "lon": 93.97474443333333
+        },
+        {
+            "name": "PI001",
+            "lat": 45.0783095,
+            "lon": 94.37225826666666
+        },
+        {
+            "name": "PI002",
+            "lat": 45.120404666666666,
+            "lon": 94.29008993333333
+        },
+        {
+            "name": "PI003",
+            "lat": 45.061154433333336,
+            "lon": 94.22080043333334
+        },
+        {
+            "name": "UNIYI",
+            "lat": 45.23866666666667,
+            "lon": 94.68495556666667
+        },
+        {
+            "name": "ZODBA",
+            "lat": 45.07306666666667,
+            "lon": 94.47716111666666
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "UNIYI": "UNIYI AT OR ABOVE 2900",
+                "JEGRU": "JEGRU 2800 RNW 13",
+                "ANIML": "OVERFLY ANIML AT OR ABOVE 2800 HOLD AT ANIML RIGHT TURN INBOUNDCOURSE 317 LEGDIST 4 FAF JEGRU MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "ARMUW",
+                    "fixes": {
+                        "ARMUW": "ARMUW"
+                    }
+                },
+                {
+                    "name": "FITAS",
+                    "fixes": {
+                        "FITAS": "FITAS"
+                    }
+                },
+                {
+                    "name": "UNIYI",
+                    "fixes": {
+                        "UNIYI": "UNIYI RIGHT TURN INBOUNDCOURSE 136 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ANIML": "ANIML AT OR ABOVE 2800",
+                "EBVOF": "EBVOF 2800",
+                "ZODBA": "ZODBA AT OR ABOVE 1680 RNW 31",
+                "UNIYI": "OVERFLY UNIYI AT OR ABOVE 2900 HOLD AT UNIYI RIGHT TURN INBOUNDCOURSE 136 LEGDIST 4 FAF EBVOF MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ANIML",
+                    "fixes": {
+                        "ANIML": "ANIML RIGHT TURN INBOUNDCOURSE 317 ALT 2800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "COMOS",
+                    "fixes": {
+                        "COMOS": "COMOS"
+                    }
+                },
+                {
+                    "name": "MAYER",
+                    "fixes": {
+                        "MAYER": "MAYER"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA13",
+            "fixes": {
+                "DWN": "DWN 2300 DWN AT OR ABOVE 2800 HOLD AT DWN RIGHT TURN INBOUNDCOURSE 277 LEGTIME 1 FAF DWN MAP MAHVE",
+                "MAHVE": "OVERFLY MAHVE 2080 RNW 13 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DWN",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA31",
+            "fixes": {
+                "DWN": "DWN 2300 DWN AT OR ABOVE 2800 HOLD AT DWN RIGHT TURN INBOUNDCOURSE 277 LEGTIME 1 FAF DWN MAP MAHVE",
+                "MAHVE": "OVERFLY MAHVE 2080 RNW 31 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DWN",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

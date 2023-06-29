@@ -1,0 +1,202 @@
+{
+    "fixes": [
+        {
+            "name": "20DME",
+            "lat": 46.016336116666665,
+            "lon": 18.226683333333334
+        },
+        {
+            "name": "CI34",
+            "lat": 45.857644433333334,
+            "lon": 18.319819433333333
+        },
+        {
+            "name": "D155G",
+            "lat": 45.900452783333336,
+            "lon": 18.293747216666667
+        },
+        {
+            "name": "D220D",
+            "lat": 45.95706943333333,
+            "lon": 18.167605566666666
+        },
+        {
+            "name": "D335C",
+            "lat": 46.039380566666665,
+            "lon": 18.212294433333334
+        },
+        {
+            "name": "FI34",
+            "lat": 45.910027783333334,
+            "lon": 18.288933333333333
+        },
+        {
+            "name": "FQ16",
+            "lat": 46.075036116666666,
+            "lon": 18.192597216666666
+        },
+        {
+            "name": "PCS",
+            "lat": 45.985111116666666,
+            "lon": 18.243027783333332
+        },
+        {
+            "name": "PP001",
+            "lat": 46.005833333333335,
+            "lon": 18.232777783333333
+        },
+        {
+            "name": "PP002",
+            "lat": 46.092,
+            "lon": 18.310583333333334
+        },
+        {
+            "name": "PP003",
+            "lat": 46.169,
+            "lon": 18.264861116666665
+        },
+        {
+            "name": "PP004",
+            "lat": 46.137138883333336,
+            "lon": 18.154111116666666
+        },
+        {
+            "name": "PP005",
+            "lat": 46.08172221666667,
+            "lon": 18.187138883333333
+        },
+        {
+            "name": "PP006",
+            "lat": 45.898277783333334,
+            "lon": 18.295972216666666
+        },
+        {
+            "name": "PP007",
+            "lat": 45.958083333333335,
+            "lon": 18.157611116666665
+        },
+        {
+            "name": "PP010",
+            "lat": 45.88625,
+            "lon": 18.43211111666667
+        },
+        {
+            "name": "PP011",
+            "lat": 45.85452778333333,
+            "lon": 18.321833333333334
+        },
+        {
+            "name": "PP012",
+            "lat": 45.90997221666667,
+            "lon": 18.289055566666665
+        },
+        {
+            "name": "PP013",
+            "lat": 46.02916666666667,
+            "lon": 18.218388883333333
+        },
+        {
+            "name": "PP014",
+            "lat": 45.878111116666666,
+            "lon": 18.178833333333333
+        },
+        {
+            "name": "PP020",
+            "lat": 45.82269443333333,
+            "lon": 18.211666666666666
+        },
+        {
+            "name": "PPNB",
+            "lat": 46.005833333333335,
+            "lon": 18.232777783333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS34",
+            "fixes": {
+                "CI34": "CI34 AT OR ABOVE 2500",
+                "FI34": "FI34 2200 RNW 34",
+                "D335C": "OVERFLY D335C TURN LEFT DIRECT",
+                "D220D": "OVERFLY D220D SPEED 185 TURN LEFT DIRECT",
+                "PPNB": "PPNB 4000 SPEED 185 HOLD AT PPNB LEFT TURN INBOUNDCOURSE 335 ALT 4000 LEGTIME 1 FAF FI34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "PP1",
+                    "fixes": {
+                        "PPNB": "PPNB AT OR ABOVE 4000 SPEED 185 TRK 169 UNTIL 8.3 FROM",
+                        "PCS": "PCS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FQ16": "FQ16 2700",
+                "20DME": "20DME AT OR ABOVE 1220",
+                "PPNB": "PPNB 965 RNW 16 TURN RIGHT DIRECT PPNB 4000 SPEED 185 HOLD AT PPNB LEFT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF FQ16 MAP PP"
+            },
+            "transitions": [
+                {
+                    "name": "PP",
+                    "fixes": {
+                        "PPNB": "PPNB AT OR ABOVE 4000 SPEED 185 TRK 315 UNTIL 8.4 FROM",
+                        "PCS": "PCS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "PP004": "PP004 AT OR ABOVE 3300 SPEED 185",
+                "PP005": "PP005 2700 RNW 16",
+                "PP006": "OVERFLY PP006 AT OR ABOVE 1500 SPEED 185 TURN RIGHT DIRECT",
+                "PP007": "PP007 AT OR ABOVE 3400 SPEED 185",
+                "PP001": "PP001 4000 HOLD AT PP001 LEFT TURN INBOUNDCOURSE 335 ALT 4000 SPEED 230 LEGTIME 1 FAF PP005 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "PP001",
+                    "fixes": {
+                        "PP001": "PP001 AT OR ABOVE 4000 SPEED 250",
+                        "PP002": "PP002 AT OR ABOVE 4000",
+                        "PP003": "PP003 AT OR ABOVE 4000 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "PP011": "PP011 AT OR ABOVE 2800 SPEED 185",
+                "PP012": "PP012 2200 RNW 34",
+                "PP013": "OVERFLY PP013 AT OR ABOVE 1100 SPEED 185 TURN LEFT DIRECT",
+                "PP014": "PP014 AT OR ABOVE 3000 SPEED 185",
+                "PP020": "PP020 AT OR ABOVE 3500 FAF PP012 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "PP010",
+                    "fixes": {
+                        "PP010": "PP010 AT OR ABOVE 3500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "PP020",
+                    "fixes": {
+                        "PP020": "PP020 AT OR ABOVE 3500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

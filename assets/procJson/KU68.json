@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "COD",
+            "lat": 44.620452783333334,
+            "lon": 108.96491666666667
+        },
+        {
+            "name": "FF09",
+            "lat": 44.915922216666665,
+            "lon": 108.60733888333333
+        },
+        {
+            "name": "HCYNB",
+            "lat": 44.91400556666667,
+            "lon": 108.44318333333334
+        },
+        {
+            "name": "HIMIG",
+            "lat": 44.92713056666667,
+            "lon": 108.51892778333334
+        },
+        {
+            "name": "KODTE",
+            "lat": 44.96734721666667,
+            "lon": 108.72117778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 44.91499401666667,
+            "lon": 108.52554446666667
+        },
+        {
+            "name": "PI002",
+            "lat": 44.865187066666664,
+            "lon": 108.59828003333334
+        },
+        {
+            "name": "PI003",
+            "lat": 44.91667266666666,
+            "lon": 108.67850803333333
+        },
+        {
+            "name": "SEZJI",
+            "lat": 44.803277783333336,
+            "lon": 108.91351111666667
+        },
+        {
+            "name": "SOLME",
+            "lat": 45.30362778333333,
+            "lon": 108.77103611666666
+        },
+        {
+            "name": "YODUS",
+            "lat": 44.9404,
+            "lon": 108.58543888333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 16",
+        "RNW 27",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FF09": "FF09 6400 RNW 09",
+                "HCYNB": "OVERFLY HCYNB TRK 080 UNTIL 5700 TURN RIGHT DIRECT HCYNB AT OR ABOVE 6400 HOLD AT HCYNB RIGHT TURN INBOUNDCOURSE 080 LEGTIME 1 FAF FF09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "COD",
+                    "fixes": {
+                        "COD": "COD",
+                        "HCYNB": "HCYNB AT OR ABOVE 8300",
+                        "PI001": "PI001 AT OR ABOVE 6400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "KODTE": "KODTE AT OR ABOVE 6900",
+                "YODUS": "YODUS 6000",
+                "HIMIG": "HIMIG AT OR ABOVE 5060 RNW 09 TRK 095 UNTIL 4600 TURN RIGHT DIRECT",
+                "SEZJI": "OVERFLY SEZJI AT OR ABOVE 8500 HOLD AT SEZJI RIGHT TURN INBOUNDCOURSE 000 LEGDIST 7 FAF YODUS MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "SEZJI",
+                    "fixes": {
+                        "SEZJI": "SEZJI"
+                    }
+                },
+                {
+                    "name": "SOLME",
+                    "fixes": {
+                        "SOLME": "SOLME"
+                    }
+                }
+            ]
+        }
+    ]
+}

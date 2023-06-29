@@ -1,0 +1,190 @@
+{
+    "fixes": [
+        {
+            "name": "BEULA",
+            "lat": 34.934691666666666,
+            "lon": 77.69458611666667
+        },
+        {
+            "name": "CF04",
+            "lat": 34.96428888333333,
+            "lon": 77.12119166666666
+        },
+        {
+            "name": "EKBAW",
+            "lat": 35.145502783333335,
+            "lon": 76.99038333333333
+        },
+        {
+            "name": "EWN",
+            "lat": 35.073141666666665,
+            "lon": 77.04506666666667
+        },
+        {
+            "name": "FF22",
+            "lat": 35.143366666666665,
+            "lon": 76.97825
+        },
+        {
+            "name": "ISO",
+            "lat": 35.370947216666664,
+            "lon": 77.55831388333333
+        },
+        {
+            "name": "JIDOM",
+            "lat": 35.23743888333333,
+            "lon": 76.92373888333333
+        },
+        {
+            "name": "JIKIR",
+            "lat": 35.09944721666667,
+            "lon": 77.02005278333333
+        },
+        {
+            "name": "KATFI",
+            "lat": 35.02158888333334,
+            "lon": 77.07948333333333
+        },
+        {
+            "name": "KROVE",
+            "lat": 35.02854721666667,
+            "lon": 77.25623333333333
+        },
+        {
+            "name": "KUYEN",
+            "lat": 34.9118,
+            "lon": 77.15898888333334
+        },
+        {
+            "name": "LUYNI",
+            "lat": 34.958044433333335,
+            "lon": 77.12571388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 35.11910105,
+            "lon": 77.00116028333333
+        },
+        {
+            "name": "PI002",
+            "lat": 35.190233066666664,
+            "lon": 77.01184738333333
+        },
+        {
+            "name": "PI003",
+            "lat": 35.20441211666667,
+            "lon": 76.91948826666666
+        },
+        {
+            "name": "SOYOC",
+            "lat": 35.10436943333333,
+            "lon": 77.02014443333333
+        },
+        {
+            "name": "ZOSRU",
+            "lat": 35.01871666666667,
+            "lon": 77.08201111666666
+        },
+        {
+            "name": "ZUPER",
+            "lat": 34.993686116666666,
+            "lon": 77.100125
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 14",
+        "RNW 22",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS04",
+            "fixes": {
+                "CF04": "CF04 AT OR ABOVE 1400",
+                "KATFI": "KATFI 1056 RNW 04 TRK 039 UNTIL 1800 TURN LEFT DIRECT",
+                "EWN": "EWN HOLD AT EWN LEFT TURN INBOUNDCOURSE 038 LEGTIME 1 FAF KATFI MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "EWN",
+                    "fixes": {
+                        "EWN": "EWN",
+                        "KATFI": "KATFI AT OR ABOVE 2000 HOLD AT KATFI LEFT TURN INBOUNDCOURSE 039 ALT 1400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "ISO",
+                    "fixes": {
+                        "ISO": "ISO",
+                        "KATFI": "KATFI AT OR ABOVE 2600 HOLD AT KATFI LEFT TURN INBOUNDCOURSE 039 ALT 1400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "KROVE",
+                    "fixes": {
+                        "KROVE": "KROVE",
+                        "KATFI": "KATFI AT OR ABOVE 2000 HOLD AT KATFI LEFT TURN INBOUNDCOURSE 039 ALT 1400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "KUYEN": "KUYEN AT OR ABOVE 2000",
+                "LUYNI": "LUYNI AT OR ABOVE 2000",
+                "ZOSRU": "ZOSRU 1100 RNW 04 TRK 039 UNTIL 217",
+                "JIDOM": "OVERFLY JIDOM AT OR ABOVE 2000 HOLD AT JIDOM RIGHT TURN INBOUNDCOURSE 219 LEGDIST 4 FAF ZOSRU MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "BEULA",
+                    "fixes": {
+                        "BEULA": "BEULA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "JIDOM": "JIDOM AT OR ABOVE 2000",
+                "EKBAW": "EKBAW 1500",
+                "SOYOC": "SOYOC AT OR ABOVE 580 RNW 22 TRK 219 UNTIL 266",
+                "ZUPER": "ZUPER",
+                "BEULA": "OVERFLY BEULA AT OR ABOVE 3000 HOLD AT BEULA RIGHT TURN INBOUNDCOURSE 022 LEGDIST 4 FAF EKBAW MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "EWN",
+                    "fixes": {
+                        "EWN": "EWN",
+                        "JIDOM": "OVERFLY JIDOM AT OR ABOVE 2000 HOLD AT JIDOM RIGHT TURN INBOUNDCOURSE 219 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR22",
+            "fixes": {
+                "FF22": "FF22 1800",
+                "JIKIR": "JIKIR AT OR ABOVE 600 RNW 22",
+                "EWN": "EWN AT OR ABOVE 420 TRK 226 UNTIL 1000 TURN RIGHT DIRECT EWN AT OR ABOVE 2000 HOLD AT EWN LEFT TURN INBOUNDCOURSE 038 LEGTIME 1 FAF FF22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "EWN",
+                    "fixes": {
+                        "EWN": "EWN AT OR BELOW 6000",
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

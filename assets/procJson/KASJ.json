@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "EWIVO",
+            "lat": 36.21735278333333,
+            "lon": 77.168175
+        },
+        {
+            "name": "HALVA",
+            "lat": 36.26631666666667,
+            "lon": 77.16981111666666
+        },
+        {
+            "name": "ILTOJ",
+            "lat": 36.11724721666667,
+            "lon": 77.16483888333333
+        },
+        {
+            "name": "OMNUD",
+            "lat": 36.38215278333333,
+            "lon": 77.17368888333333
+        },
+        {
+            "name": "UFEMI",
+            "lat": 36.48225278333334,
+            "lon": 77.17704443333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "ILTOJ": "ILTOJ AT OR ABOVE 3000",
+                "EWIVO": "EWIVO 1600",
+                "HALVA": "HALVA AT OR ABOVE 600 RNW 01 TRK 008 UNTIL 322",
+                "UFEMI": "OVERFLY UFEMI AT OR ABOVE 3000 HOLD AT UFEMI RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF EWIVO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ILTOJ",
+                    "fixes": {
+                        "ILTOJ": "ILTOJ RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "UFEMI": "UFEMI AT OR ABOVE 3000",
+                "OMNUD": "OMNUD 1600 RNW 19 TRK 188 UNTIL 353",
+                "ILTOJ": "OVERFLY ILTOJ AT OR ABOVE 3000 HOLD AT ILTOJ RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4 FAF OMNUD MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "UFEMI",
+                    "fixes": {
+                        "UFEMI": "UFEMI RIGHT TURN INBOUNDCOURSE 188 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

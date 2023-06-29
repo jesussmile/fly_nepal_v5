@@ -1,0 +1,226 @@
+{
+    "fixes": [
+        {
+            "name": "ASM",
+            "lat": 15.284447216666667,
+            "lon": 38.90081111666667
+        },
+        {
+            "name": "ASNB",
+            "lat": 15.281591666666667,
+            "lon": 38.88507778333334
+        },
+        {
+            "name": "CD07",
+            "lat": 15.250727783333334,
+            "lon": 38.73193056666667
+        },
+        {
+            "name": "CI07",
+            "lat": 15.229747216666667,
+            "lon": 38.69535556666666
+        },
+        {
+            "name": "DIGSA",
+            "lat": 15.200797216666667,
+            "lon": 39.199094433333336
+        },
+        {
+            "name": "DIRFO",
+            "lat": 15.336783333333333,
+            "lon": 39.087797216666665
+        },
+        {
+            "name": "DOGOL",
+            "lat": 15.507825,
+            "lon": 39.10876388333333
+        },
+        {
+            "name": "FD07",
+            "lat": 15.260855566666667,
+            "lon": 38.78258888333333
+        },
+        {
+            "name": "FI07",
+            "lat": 15.252441666666666,
+            "lon": 38.778322216666666
+        },
+        {
+            "name": "FN07",
+            "lat": 15.251008333333333,
+            "lon": 38.77531666666667
+        },
+        {
+            "name": "HH101",
+            "lat": 15.220719433333333,
+            "lon": 38.66205278333333
+        },
+        {
+            "name": "HH102",
+            "lat": 15.253169433333333,
+            "lon": 38.601736116666665
+        },
+        {
+            "name": "HH104",
+            "lat": 15.162161116666667,
+            "lon": 38.62863333333333
+        },
+        {
+            "name": "HH110",
+            "lat": 14.952538883333334,
+            "lon": 38.94878333333333
+        },
+        {
+            "name": "HH201",
+            "lat": 15.354683333333334,
+            "lon": 39.15354721666667
+        },
+        {
+            "name": "HH202",
+            "lat": 15.410666666666666,
+            "lon": 39.187575
+        },
+        {
+            "name": "HH204",
+            "lat": 15.318408333333334,
+            "lon": 39.209502783333335
+        },
+        {
+            "name": "LEZAN",
+            "lat": 15.366877783333333,
+            "lon": 38.6024
+        },
+        {
+            "name": "MD07",
+            "lat": 15.279397216666666,
+            "lon": 38.875475
+        },
+        {
+            "name": "NEFHI",
+            "lat": 15.238647216666667,
+            "lon": 38.727755566666666
+        },
+        {
+            "name": "SKETI",
+            "lat": 15.062336116666666,
+            "lon": 38.69551943333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD07",
+            "fixes": {
+                "CD07": "CD07 AT OR ABOVE 10000",
+                "FD07": "FD07 9680",
+                "MD07": "MD07 8075 RNW 07",
+                "ASM": "OVERFLY ASM AT OR ABOVE 8075 TRK 170 VECTORS FAF FD07 MAP MD07"
+            },
+            "transitions": [
+                {
+                    "name": "ASM1",
+                    "fixes": {
+                        "ASM": "ASM AT OR ABOVE 11500 SPEED 210 TRK 280 UNTIL 10.0 FROM ASM"
+                    }
+                },
+                {
+                    "name": "ASM2",
+                    "fixes": {
+                        "ASM": "ASM AT OR ABOVE 11500 TRK 267 UNTIL 10.0 FROM ASM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS07",
+            "fixes": {
+                "CI07": "CI07 9800",
+                "FI07": "FI07 9800 RNW 07 TRK 072 UNTIL 8070 TRK 170 VECTORS FAF FI07 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "ASM1",
+                    "fixes": {
+                        "ASM": "ASM AT OR ABOVE 11500 TRK 279 UNTIL 12.0 FROM ASM"
+                    }
+                },
+                {
+                    "name": "ASM2",
+                    "fixes": {
+                        "ASM": "ASM AT OR ABOVE 11500 TRK 263 UNTIL 12.0 FROM ASM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB07",
+            "fixes": {
+                "FN07": "FN07 10000",
+                "ASNB": "ASNB 7893 RNW 07 TRK 072 UNTIL 8070 TRK 170 UNTIL 11500 HDG 170 VECTORS FAF FN07 MAP AS"
+            },
+            "transitions": [
+                {
+                    "name": "AS",
+                    "fixes": {
+                        "ASNB": "ASNB AT OR ABOVE 11500 TRK 285 UNTIL 7.0 FROM ASNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "NEFHI": "NEFHI 10900 RNW 07 TRK 072 UNTIL 8200 TURN RIGHT HDG 215 INTERCEPT RADIAL 170 TO",
+                "HH110": "HH110 HH110 11500 HOLD AT HH110 RIGHT TURN INBOUNDCOURSE 170 LEGDIST 5 FAF NEFHI MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "LEZAN",
+                    "fixes": {
+                        "LEZAN": "LEZAN AT OR ABOVE 13500",
+                        "HH102": "HH102 AT OR ABOVE 11500",
+                        "HH101": "HH101 AT OR ABOVE 10900"
+                    }
+                },
+                {
+                    "name": "SKETI",
+                    "fixes": {
+                        "SKETI": "SKETI AT OR ABOVE 13500",
+                        "HH104": "HH104 AT OR ABOVE 11500",
+                        "HH101": "HH101 AT OR ABOVE 10900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "DIRFO": "DIRFO 10900 RNW 25 TRK 252 UNTIL 8200 TURN LEFT HDG 125 INTERCEPT RADIAL 170 TO",
+                "HH110": "HH110 HH110 11500 HOLD AT HH110 RIGHT TURN INBOUNDCOURSE 170 LEGDIST 5 FAF DIRFO MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "DIGSA",
+                    "fixes": {
+                        "DIGSA": "DIGSA AT OR ABOVE 13500",
+                        "HH204": "HH204 AT OR ABOVE 11500",
+                        "HH201": "HH201 AT OR ABOVE 10900"
+                    }
+                },
+                {
+                    "name": "DOGOL",
+                    "fixes": {
+                        "DOGOL": "DOGOL AT OR ABOVE 13500",
+                        "HH202": "HH202 AT OR ABOVE 11500",
+                        "HH201": "HH201 AT OR ABOVE 10900"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "ACHLE",
+            "lat": 38.542102783333334,
+            "lon": 82.62855278333333
+        },
+        {
+            "name": "JUDSS",
+            "lat": 38.52581111666667,
+            "lon": 82.48613888333334
+        },
+        {
+            "name": "NYOME",
+            "lat": 38.58270278333333,
+            "lon": 82.99049443333334
+        },
+        {
+            "name": "UKICU",
+            "lat": 38.56221943333333,
+            "lon": 82.80659443333333
+        },
+        {
+            "name": "VASUY",
+            "lat": 38.546508333333335,
+            "lon": 82.66733333333333
+        },
+        {
+            "name": "YNONA",
+            "lat": 38.566772216666664,
+            "lon": 82.84723056666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "NYOME": "NYOME AT OR ABOVE 3300",
+                "YNONA": "YNONA 2100",
+                "UKICU": "UKICU AT OR ABOVE 1480 RNW 10 TRK 103 UNTIL 799",
+                "JUDSS": "OVERFLY JUDSS AT OR ABOVE 3300 HOLD AT JUDSS RIGHT TURN INBOUNDCOURSE 283 ALT 3300 LEGDIST 4 FAF YNONA MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "NYOME",
+                    "fixes": {
+                        "NYOME": "NYOME RIGHT TURN INBOUNDCOURSE 103 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "JUDSS": "JUDSS AT OR ABOVE 3300",
+                "ACHLE": "ACHLE 2100",
+                "VASUY": "VASUY AT OR ABOVE 1500 RNW 28 TRK 283 UNTIL 1340",
+                "NYOME": "OVERFLY NYOME AT OR ABOVE 3300 HOLD AT NYOME RIGHT TURN INBOUNDCOURSE 103 LEGDIST 4 FAF ACHLE MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "JUDSS",
+                    "fixes": {
+                        "JUDSS": "JUDSS RIGHT TURN INBOUNDCOURSE 283 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "fixes": [
+        {
+            "name": "A",
+            "lat": 47.10541666666666,
+            "lon": 20.225666666666665
+        },
+        {
+            "name": "ABLUG",
+            "lat": 46.937111116666664,
+            "lon": 20.312916666666666
+        },
+        {
+            "name": "AO",
+            "lat": 47.081,
+            "lon": 20.211805566666666
+        },
+        {
+            "name": "FEPLA",
+            "lat": 47.22680556666667,
+            "lon": 20.111305566666665
+        },
+        {
+            "name": "FURGA",
+            "lat": 47.096527783333336,
+            "lon": 20.370277783333332
+        },
+        {
+            "name": "O",
+            "lat": 47.13763888333333,
+            "lon": 20.244027783333333
+        },
+        {
+            "name": "OA",
+            "lat": 47.16325,
+            "lon": 20.258611116666668
+        },
+        {
+            "name": "SN014",
+            "lat": 47.14911111666667,
+            "lon": 20.06725
+        },
+        {
+            "name": "SN015",
+            "lat": 46.99736111666667,
+            "lon": 20.086027783333332
+        },
+        {
+            "name": "SN016",
+            "lat": 46.97933333333334,
+            "lon": 20.154166666666665
+        },
+        {
+            "name": "SN017",
+            "lat": 47.03369443333333,
+            "lon": 20.18494443333333
+        },
+        {
+            "name": "SN018",
+            "lat": 47.16611111666667,
+            "lon": 20.26025
+        },
+        {
+            "name": "SN019",
+            "lat": 47.308472216666665,
+            "lon": 20.157722216666667
+        },
+        {
+            "name": "SN020",
+            "lat": 47.26625,
+            "lon": 20.317472216666665
+        },
+        {
+            "name": "SN021",
+            "lat": 47.21205556666666,
+            "lon": 20.286472216666667
+        },
+        {
+            "name": "SN022",
+            "lat": 47.07952778333333,
+            "lon": 20.210972216666665
+        },
+        {
+            "name": "VICOL",
+            "lat": 47.22380556666667,
+            "lon": 20.476944433333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB02",
+            "fixes": {
+                "AO": "AO 1050",
+                "A": "A 536 RNW 02 TRK 016 VECTORS FAF AO MAP A"
+            },
+            "transitions": [
+                {
+                    "name": "AO",
+                    "fixes": {
+                        "AO": "AO RIGHT TURN INBOUNDCOURSE 016 ALT 1500 SPEED 210 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB20",
+            "fixes": {
+                "OA": "OA 1000",
+                "O": "O 477 RNW 20 TRK 196 VECTORS FAF OA MAP O"
+            },
+            "transitions": [
+                {
+                    "name": "OA",
+                    "fixes": {
+                        "OA": "OA LEFT TURN INBOUNDCOURSE 196 ALT 1500 SPEED 210 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "SN016": "SN016 AT OR ABOVE 2500 SPEED 185",
+                "SN017": "SN017 2000 RNW 02",
+                "SN018": "OVERFLY SN018 SPEED 220 TURN RIGHT DIRECT",
+                "FURGA": "FURGA AT OR ABOVE 3000 SPEED 220 HOLD AT FURGA LEFT TURN INBOUNDCOURSE 280 ALT 3000 SPEED 230 LEGTIME 1 FAF SN017 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "ABLUG",
+                    "fixes": {
+                        "ABLUG": "ABLUG AT OR ABOVE 4000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "FEPLA",
+                    "fixes": {
+                        "FEPLA": "FEPLA AT OR ABOVE 4000 SPEED 210",
+                        "SN014": "SN014 AT OR ABOVE 4000 SPEED 210",
+                        "SN015": "SN015 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "SN020": "SN020 AT OR ABOVE 2500 SPEED 185",
+                "SN021": "SN021 2000 RNW 20",
+                "SN022": "OVERFLY SN022 SPEED 220 TURN LEFT DIRECT",
+                "FURGA": "FURGA AT OR ABOVE 3000 SPEED 220 HOLD AT FURGA LEFT TURN INBOUNDCOURSE 280 ALT 3000 SPEED 230 LEGTIME 1 FAF SN021 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "FEPLA",
+                    "fixes": {
+                        "FEPLA": "FEPLA AT OR ABOVE 4000 SPEED 210",
+                        "SN019": "SN019 AT OR ABOVE 4000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "VICOL",
+                    "fixes": {
+                        "VICOL": "VICOL AT OR ABOVE 4000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

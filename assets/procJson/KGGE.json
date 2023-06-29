@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "BEVOE",
+            "lat": 33.281219433333334,
+            "lon": 79.356025
+        },
+        {
+            "name": "CEGAC",
+            "lat": 33.18506111666667,
+            "lon": 79.45671388333334
+        },
+        {
+            "name": "CUBBY",
+            "lat": 33.15379166666666,
+            "lon": 79.67201943333333
+        },
+        {
+            "name": "JUKLI",
+            "lat": 33.24775,
+            "lon": 79.39110556666667
+        },
+        {
+            "name": "LEYIV",
+            "lat": 33.380238883333334,
+            "lon": 79.25201111666667
+        },
+        {
+            "name": "OSIYO",
+            "lat": 33.34620833333334,
+            "lon": 79.28779443333333
+        },
+        {
+            "name": "OTVOE",
+            "lat": 33.442813883333336,
+            "lon": 79.18610833333334
+        },
+        {
+            "name": "PLANN",
+            "lat": 33.558447216666664,
+            "lon": 79.09406666666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 11",
+        "RNW 23",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "CEGAC": "CEGAC AT OR ABOVE 2000",
+                "JUKLI": "JUKLI 1600",
+                "BEVOE": "BEVOE AT OR ABOVE 740 RNW 05 TRK 049 UNTIL 290",
+                "OTVOE": "OVERFLY OTVOE AT OR ABOVE 2000 HOLD AT OTVOE RIGHT TURN INBOUNDCOURSE 229 LEGDIST 4 FAF JUKLI MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "CUBBY",
+                    "fixes": {
+                        "CUBBY": "CUBBY"
+                    }
+                },
+                {
+                    "name": "PLANN",
+                    "fixes": {
+                        "PLANN": "PLANN",
+                        "CEGAC": "OVERFLY CEGAC AT OR ABOVE 2000 HOLD AT CEGAC RIGHT TURN INBOUNDCOURSE 049 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "OTVOE": "OTVOE AT OR ABOVE 2000",
+                "LEYIV": "LEYIV 1600",
+                "OSIYO": "OSIYO AT OR ABOVE 720 RNW 23 TRK 229 UNTIL 320",
+                "CEGAC": "OVERFLY CEGAC AT OR ABOVE 2000 HOLD AT CEGAC RIGHT TURN INBOUNDCOURSE 049 LEGDIST 4 FAF LEYIV MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "CUBBY",
+                    "fixes": {
+                        "CUBBY": "CUBBY",
+                        "OTVOE": "OVERFLY OTVOE AT OR ABOVE 2000 HOLD AT OTVOE RIGHT TURN INBOUNDCOURSE 229 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PLANN",
+                    "fixes": {
+                        "PLANN": "PLANN"
+                    }
+                }
+            ]
+        }
+    ]
+}

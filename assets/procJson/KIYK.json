@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "ASUYU",
+            "lat": 35.275441666666666,
+            "lon": 118.104925
+        },
+        {
+            "name": "BACRA",
+            "lat": 35.41891111666666,
+            "lon": 118.000775
+        },
+        {
+            "name": "BISAC",
+            "lat": 35.576619433333335,
+            "lon": 117.88578611666667
+        },
+        {
+            "name": "CETEG",
+            "lat": 35.203675,
+            "lon": 118.15686111666666
+        },
+        {
+            "name": "DIVAC",
+            "lat": 35.51743333333334,
+            "lon": 117.92900556666666
+        },
+        {
+            "name": "JAGEG",
+            "lat": 35.605280566666664,
+            "lon": 117.86483056666667
+        },
+        {
+            "name": "KOLEE",
+            "lat": 35.46240556666667,
+            "lon": 118.026075
+        },
+        {
+            "name": "LHS",
+            "lat": 34.68297221666667,
+            "lon": 118.57693888333333
+        },
+        {
+            "name": "MIGPE",
+            "lat": 35.480955566666665,
+            "lon": 117.95460278333333
+        },
+        {
+            "name": "MOVIA",
+            "lat": 35.002597216666665,
+            "lon": 118.30179721666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 10",
+        "RNW 15",
+        "RNW 20",
+        "RNW 28",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "IYK2",
+            "rnw": "20",
+            "fixes": {
+                "KOLEE": "KOLEE",
+                "LHS": "LHS AT OR ABOVE 10000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LHS2",
+            "rnw": "20",
+            "fixes": {
+                "JAGEG": "JAGEG",
+                "MOVIA": "MOVIA AT OR ABOVE 8000",
+                "LHS": "LHS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "BACRA": "BACRA AT OR ABOVE 7000",
+                "DIVAC": "DIVAC 5700",
+                "BISAC": "OVERFLY BISAC 4246 RNW 02 TRK 017 UNTIL 4246 TURN RIGHT DIRECT",
+                "MIGPE": "MIGPE",
+                "ASUYU": "OVERFLY ASUYU AT OR ABOVE 8600 HOLD AT ASUYU RIGHT TURN INBOUNDCOURSE 017 LEGDIST 6 FAF DIVAC MAP BISAC"
+            },
+            "transitions": [
+                {
+                    "name": "LHS",
+                    "fixes": {
+                        "LHS": "LHS",
+                        "MOVIA": "MOVIA AT OR ABOVE 11000",
+                        "CETEG": "CETEG AT OR ABOVE 10000",
+                        "ASUYU": "ASUYU AT OR ABOVE 8600"
+                    }
+                }
+            ]
+        }
+    ]
+}

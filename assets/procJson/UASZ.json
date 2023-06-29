@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "FF09",
+            "lat": 47.49455833333333,
+            "lon": 84.67991943333334
+        },
+        {
+            "name": "LATRI",
+            "lat": 47.87138888333333,
+            "lon": 84.54138888333334
+        },
+        {
+            "name": "ZSNNB",
+            "lat": 47.48497221666667,
+            "lon": 84.88561111666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "LATR1A",
+            "rnw": "09",
+            "fixes": {
+                "LATRI": "LATRI AT OR BELOW 14000 AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LATR1B",
+            "rnw": "27",
+            "fixes": {
+                "LATRI": "LATRI AT OR BELOW 14000 AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "LATR1C",
+            "runway": "RNW 09",
+            "fixes": {
+                "LATRI": "LATRI AT OR BELOW 14000 AT OR ABOVE 12000",
+                "ZSNNB": "ZSNNB 6000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FF09": "FF09 4500 RNW 09",
+                "ZSNNB": "OVERFLY ZSNNB TRK 089 UNTIL 5.5 FROM ZSNNB TURN LEFT DIRECT ZSNNB 4500 FAF FF09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "ZSN",
+                    "fixes": {
+                        "ZSNNB": "ZSNNB AT OR ABOVE 6000 SPEED 140 TRK 279 UNTIL 8.6 FROM ZSNNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

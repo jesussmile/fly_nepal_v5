@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "ADOFO",
+            "lat": 35.07755556666667,
+            "lon": 88.23159443333333
+        },
+        {
+            "name": "AMLAZ",
+            "lat": 35.25963333333333,
+            "lon": 88.20236111666667
+        },
+        {
+            "name": "EPVIC",
+            "lat": 34.988419433333334,
+            "lon": 88.34814721666666
+        },
+        {
+            "name": "ESPAC",
+            "lat": 35.370494433333334,
+            "lon": 88.28727778333334
+        },
+        {
+            "name": "FABTO",
+            "lat": 35.218436116666666,
+            "lon": 88.20898611666667
+        },
+        {
+            "name": "OBREY",
+            "lat": 35.34861943333333,
+            "lon": 88.08526666666667
+        },
+        {
+            "name": "VIDDO",
+            "lat": 34.97758056666667,
+            "lon": 88.24758888333334
+        },
+        {
+            "name": "YOSUB",
+            "lat": 35.3596,
+            "lon": 88.18625833333333
+        },
+        {
+            "name": "YUZZY",
+            "lat": 34.966658333333335,
+            "lon": 88.14705833333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "VIDDO": "VIDDO AT OR ABOVE 3000",
+                "ADOFO": "ADOFO 2200 RNW 01",
+                "YOSUB": "OVERFLY YOSUB AT OR ABOVE 3000 HOLD AT YOSUB RIGHT TURN INBOUNDCOURSE 189 LEGDIST 4 FAF ADOFO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "EPVIC",
+                    "fixes": {
+                        "EPVIC": "EPVIC AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "VIDDO",
+                    "fixes": {
+                        "VIDDO": "VIDDO RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "YUZZY",
+                    "fixes": {
+                        "YUZZY": "YUZZY AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "YOSUB": "YOSUB AT OR ABOVE 3000",
+                "AMLAZ": "AMLAZ 2100",
+                "FABTO": "FABTO AT OR ABOVE 1280 RNW 19",
+                "VIDDO": "OVERFLY VIDDO AT OR ABOVE 3000 HOLD AT VIDDO RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4 FAF AMLAZ MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "ESPAC",
+                    "fixes": {
+                        "ESPAC": "ESPAC AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "OBREY",
+                    "fixes": {
+                        "OBREY": "OBREY AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "YOSUB",
+                    "fixes": {
+                        "YOSUB": "YOSUB RIGHT TURN INBOUNDCOURSE 189 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

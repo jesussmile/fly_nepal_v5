@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "HAUWK",
+            "lat": 30.468952783333332,
+            "lon": 92.07371666666667
+        },
+        {
+            "name": "HUPIG",
+            "lat": 30.655913883333334,
+            "lon": 92.09858888333333
+        },
+        {
+            "name": "JUGBO",
+            "lat": 30.769427783333335,
+            "lon": 92.09821943333333
+        },
+        {
+            "name": "LFT",
+            "lat": 30.193813883333334,
+            "lon": 91.99257221666667
+        },
+        {
+            "name": "PI001",
+            "lat": 30.412877866666665,
+            "lon": 92.05507236666666
+        },
+        {
+            "name": "PI002",
+            "lat": 30.3501906,
+            "lon": 92.0953349
+        },
+        {
+            "name": "PI003",
+            "lat": 30.3087317,
+            "lon": 92.02050398333333
+        },
+        {
+            "name": "POYIS",
+            "lat": 30.355675,
+            "lon": 92.04025
+        },
+        {
+            "name": "PUZKO",
+            "lat": 30.465541666666667,
+            "lon": 92.09920556666667
+        },
+        {
+            "name": "YOLUG",
+            "lat": 30.351911116666667,
+            "lon": 92.09956943333333
+        },
+        {
+            "name": "ZOXEB",
+            "lat": 30.593022216666668,
+            "lon": 92.09879166666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 18",
+        "RNW 24",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD36",
+            "fixes": {
+                "POYIS": "POYIS AT OR ABOVE 2100",
+                "HAUWK": "HAUWK 1800 RNW 36 TRK 343 UNTIL 1000 TURN LEFT HDG 120 INTERCEPT RADIAL 163 TO HAUWK HAUWK AT OR ABOVE 2100 HOLD AT HAUWK RIGHT TURN INBOUNDCOURSE 343 LEGTIME 1 FAF HAUWK MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HAUWK",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "LFT",
+                    "fixes": {
+                        "LFT": "LFT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "JUGBO": "JUGBO AT OR ABOVE 2000",
+                "HUPIG": "HUPIG 1800",
+                "ZOXEB": "ZOXEB AT OR ABOVE 600 RNW 18 TRK 179 UNTIL 321",
+                "YOLUG": "OVERFLY YOLUG AT OR ABOVE 2300 HOLD AT YOLUG RIGHT TURN INBOUNDCOURSE 359 LEGDIST 4 FAF HUPIG MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "JUGBO",
+                    "fixes": {
+                        "JUGBO": "JUGBO RIGHT TURN INBOUNDCOURSE 179 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "YOLUG": "YOLUG AT OR ABOVE 2300",
+                "PUZKO": "PUZKO 1800 RNW 36 TRK 359 UNTIL 350",
+                "JUGBO": "OVERFLY JUGBO AT OR ABOVE 2000 HOLD AT JUGBO RIGHT TURN INBOUNDCOURSE 179 LEGDIST 4 FAF PUZKO MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "YOLUG",
+                    "fixes": {
+                        "YOLUG": "YOLUG RIGHT TURN INBOUNDCOURSE 359 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

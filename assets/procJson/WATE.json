@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "LIPDA",
+            "lat": 9.092583333333334,
+            "lon": 121.85738888333333
+        },
+        {
+            "name": "MENAG",
+            "lat": 8.978944433333334,
+            "lon": 121.90394443333334
+        },
+        {
+            "name": "NOPAB",
+            "lat": 8.976027783333333,
+            "lon": 121.56991666666667
+        },
+        {
+            "name": "TE601",
+            "lat": 8.954583333333334,
+            "lon": 121.85975
+        },
+        {
+            "name": "TE602",
+            "lat": 8.923722216666667,
+            "lon": 121.80383333333333
+        },
+        {
+            "name": "TE603",
+            "lat": 8.870111116666667,
+            "lon": 121.70666666666666
+        },
+        {
+            "name": "TENUN",
+            "lat": 8.843583333333333,
+            "lon": 121.61186111666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "TE601": "TE601 AT OR ABOVE 3000",
+                "TE602": "TE602 3000",
+                "TE603": "OVERFLY TE603 898 RNW 27",
+                "NOPAB": "NOPAB AT OR ABOVE 5000 HOLD AT NOPAB RIGHT TURN INBOUNDCOURSE 111 ALT 5000 SPEED 170 LEGTIME 1 FAF TE602 MAP TE603"
+            },
+            "transitions": [
+                {
+                    "name": "MENAG",
+                    "fixes": {
+                        "MENAG": "MENAG AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "NOPAB",
+                    "fixes": {
+                        "NOPAB": "NOPAB AT OR ABOVE 5000",
+                        "LIPDA": "LIPDA",
+                        "MENAG": "MENAG AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "ADLIW",
+            "lat": 28.952983333333332,
+            "lon": 99.01308888333334
+        },
+        {
+            "name": "CIKEB",
+            "lat": 28.962619433333334,
+            "lon": 98.91872778333334
+        },
+        {
+            "name": "FF35",
+            "lat": 29.047375,
+            "lon": 98.94468333333333
+        },
+        {
+            "name": "FISAS",
+            "lat": 28.972188883333335,
+            "lon": 98.82435
+        },
+        {
+            "name": "HHHNB",
+            "lat": 29.138325,
+            "lon": 98.93926111666667
+        },
+        {
+            "name": "JIVEP",
+            "lat": 29.063813883333335,
+            "lon": 98.93205278333333
+        },
+        {
+            "name": "PI001",
+            "lat": 29.080071566666668,
+            "lon": 98.9427544
+        },
+        {
+            "name": "PI002",
+            "lat": 29.026801716666668,
+            "lon": 98.88791136666667
+        },
+        {
+            "name": "PI003",
+            "lat": 28.971886383333334,
+            "lon": 98.94923146666666
+        },
+        {
+            "name": "SOMER",
+            "lat": 29.162430566666668,
+            "lon": 98.639575
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB35",
+            "fixes": {
+                "FF35": "FF35 2400 RNW 35",
+                "HHHNB": "HHHNB HOLD AT HHHNB LEFT TURN INBOUNDCOURSE 356 ALT 2400 LEGTIME 1 FAF FF35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "SOMER",
+                    "fixes": {
+                        "SOMER": "SOMER",
+                        "HHHNB": "HHHNB AT OR ABOVE 2400",
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "CIKEB": "CIKEB AT OR ABOVE 2600 OVERFLY CIKEB AT OR ABOVE 2600 HOLD AT CIKEB RIGHT TURN INBOUNDCOURSE 346 LEGDIST 4 FAF JIVEP MAP RNW 35",
+                "JIVEP": "JIVEP 2100 RNW 35 TRK 346 UNTIL 1110 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ADLIW",
+                    "fixes": {
+                        "ADLIW": "ADLIW AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "CIKEB",
+                    "fixes": {
+                        "CIKEB": "CIKEB RIGHT TURN INBOUNDCOURSE 346 ALT 2600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FISAS",
+                    "fixes": {
+                        "FISAS": "FISAS AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        }
+    ]
+}

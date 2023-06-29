@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "CD27",
+            "lat": 12.961086116666667,
+            "lon": 28.635841666666668
+        },
+        {
+            "name": "D060L",
+            "lat": 12.852480566666667,
+            "lon": 28.660761116666666
+        },
+        {
+            "name": "D093F",
+            "lat": 12.961927783333334,
+            "lon": 28.596586116666668
+        },
+        {
+            "name": "D273E",
+            "lat": 12.961936116666667,
+            "lon": 28.408827783333333
+        },
+        {
+            "name": "D273G",
+            "lat": 12.961916666666667,
+            "lon": 28.362738883333332
+        },
+        {
+            "name": "D273I",
+            "lat": 12.961905566666667,
+            "lon": 28.338844433333332
+        },
+        {
+            "name": "FD09",
+            "lat": 12.961936116666667,
+            "lon": 28.408827783333333
+        },
+        {
+            "name": "FD27",
+            "lat": 12.961166666666667,
+            "lon": 28.622833333333332
+        },
+        {
+            "name": "VCD",
+            "lat": 12.96195,
+            "lon": 28.489052783333335
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDY09",
+            "fixes": {
+                "FD09": "FD09 6000",
+                "VCD": "VCD 4524 RNW 09",
+                "D093F": "OVERFLY D093F HDG 003 INTERCEPT RADIAL 060 TO",
+                "D060L": "D060L D060L 6000 HOLD AT D060L LEFT TURN INBOUNDCOURSE 060 ALT 6000 LEGTIME 1 FAF FD09 MAP VCD"
+            },
+            "transitions": [
+                {
+                    "name": "VCD1",
+                    "fixes": {
+                        "VCD": "VCD AT OR ABOVE 7000 TRK 292 UNTIL 8.8 FROM VCD SPEED 185 TURN LEFT DIRECT",
+                        "D273I": "D273I AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "VCD2",
+                    "fixes": {
+                        "VCD": "VCD AT OR ABOVE 7000 TRK 288 UNTIL 7.4 FROM VCD SPEED 140 TURN LEFT DIRECT",
+                        "D273G": "D273G AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD27",
+            "fixes": {
+                "CD27": "CD27 AT OR ABOVE 6000",
+                "FD27": "FD27 6000 RNW 27",
+                "D273E": "D273E AT OR ABOVE 6000 HOLD AT D273E RIGHT TURN INBOUNDCOURSE 093 ALT 6000 LEGTIME 1 FAF FD27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "VCD1",
+                    "fixes": {
+                        "VCD": "VCD AT OR ABOVE 7000",
+                        "CD27": "CD27 AT OR ABOVE 6000 TRK 048 UNTIL 2.7 FROM CD27"
+                    }
+                },
+                {
+                    "name": "VCD2",
+                    "fixes": {
+                        "VCD": "VCD AT OR ABOVE 7000",
+                        "CD27": "CD27 AT OR ABOVE 6000 TRK 048 UNTIL 2.0 FROM CD27"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,201 @@
+{
+    "fixes": [
+        {
+            "name": "AMGIR",
+            "lat": 14.650136116666667,
+            "lon": 3.9262916666666667
+        },
+        {
+            "name": "D063G",
+            "lat": 14.584616666666667,
+            "lon": 3.960527783333333
+        },
+        {
+            "name": "D073I",
+            "lat": 14.576388883333333,
+            "lon": 3.9226
+        },
+        {
+            "name": "D243G",
+            "lat": 14.467447216666667,
+            "lon": 4.1688583333333336
+        },
+        {
+            "name": "D252I",
+            "lat": 14.473225,
+            "lon": 4.2058527833333335
+        },
+        {
+            "name": "FV05",
+            "lat": 14.450908333333333,
+            "lon": 4.150347216666667
+        },
+        {
+            "name": "FV23",
+            "lat": 14.582063883333333,
+            "lon": 4.0008388833333335
+        },
+        {
+            "name": "GALOL",
+            "lat": 14.317375,
+            "lon": 4.170388883333334
+        },
+        {
+            "name": "LIRUR",
+            "lat": 14.711652783333333,
+            "lon": 3.9846166666666667
+        },
+        {
+            "name": "LISED",
+            "lat": 14.378977783333333,
+            "lon": 4.228513883333333
+        },
+        {
+            "name": "MB501",
+            "lat": 14.435705566666666,
+            "lon": 4.165383333333334
+        },
+        {
+            "name": "MB502",
+            "lat": 14.561666666666667,
+            "lon": 4.025025
+        },
+        {
+            "name": "MB503",
+            "lat": 14.593472216666667,
+            "lon": 3.989544433333333
+        },
+        {
+            "name": "MB504",
+            "lat": 14.463825,
+            "lon": 4.134072216666667
+        },
+        {
+            "name": "MTI",
+            "lat": 14.526055566666667,
+            "lon": 4.0647222166666666
+        },
+        {
+            "name": "RIMEN",
+            "lat": 14.440488883333334,
+            "lon": 4.286727783333333
+        },
+        {
+            "name": "VITSO",
+            "lat": 14.588544433333333,
+            "lon": 3.868136116666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "LISED": "LISED AT OR ABOVE 2900 SPEED 230",
+                "MB501": "MB501 2900 RNW 05",
+                "MB502": "OVERFLY MB502 TURN RIGHT DIRECT",
+                "GALOL": "GALOL AT OR ABOVE 2900 SPEED 230 FAF MB501 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "GALOL",
+                    "fixes": {
+                        "GALOL": "GALOL AT OR ABOVE 2900 SPEED 230"
+                    }
+                },
+                {
+                    "name": "LISED",
+                    "fixes": {
+                        "LISED": "LISED RIGHT TURN INBOUNDCOURSE 051 ALT 2900 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "RIMEN",
+                    "fixes": {
+                        "RIMEN": "RIMEN AT OR ABOVE 2900 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "AMGIR": "AMGIR AT OR ABOVE 3000 SPEED 230",
+                "MB503": "MB503 3000 SPEED 230 RNW 23",
+                "MB504": "OVERFLY MB504 TURN LEFT DIRECT",
+                "VITSO": "VITSO AT OR ABOVE 3000 SPEED 230 FAF MB503 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "AMGIR",
+                    "fixes": {
+                        "AMGIR": "AMGIR LEFT TURN INBOUNDCOURSE 231 ALT 3000 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LIRUR",
+                    "fixes": {
+                        "LIRUR": "LIRUR AT OR ABOVE 3000 SPEED 230"
+                    }
+                },
+                {
+                    "name": "VITSO",
+                    "fixes": {
+                        "VITSO": "VITSO AT OR ABOVE 3000 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR05",
+            "fixes": {
+                "FV05": "FV05 2500 RNW 05",
+                "MTI": "OVERFLY MTI TRK 051 UNTIL 2500 TURN RIGHT DIRECT MTI FAF FV05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "MTI1",
+                    "fixes": {
+                        "MTI": "MTI AT OR ABOVE 2500",
+                        "D252I": "OVERFLY D252I AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "MTI2",
+                    "fixes": {
+                        "MTI": "MTI AT OR ABOVE 2500",
+                        "D243G": "OVERFLY D243G AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR23",
+            "fixes": {
+                "FV23": "FV23 2700",
+                "MTI": "MTI 1108 RNW 23 TRK 231 UNTIL 2500 TURN LEFT DIRECT MTI 2700 FAF FV23 MAP MTI"
+            },
+            "transitions": [
+                {
+                    "name": "MTI1",
+                    "fixes": {
+                        "MTI": "MTI AT OR ABOVE 2700",
+                        "D073I": "OVERFLY D073I AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "MTI2",
+                    "fixes": {
+                        "MTI": "MTI AT OR ABOVE 2700",
+                        "D063G": "OVERFLY D063G AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        }
+    ]
+}

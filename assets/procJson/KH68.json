@@ -1,0 +1,63 @@
+{
+    "fixes": [
+        {
+            "name": "COGES",
+            "lat": 35.773386116666664,
+            "lon": 95.340275
+        },
+        {
+            "name": "FEBSI",
+            "lat": 35.873694433333334,
+            "lon": 95.34107221666666
+        },
+        {
+            "name": "TUSOC",
+            "lat": 36.21191666666667,
+            "lon": 95.34376111666667
+        },
+        {
+            "name": "WAGUR",
+            "lat": 36.067233333333334,
+            "lon": 95.34260556666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "TUSOC": "TUSOC AT OR ABOVE 2500 OVERFLY TUSOC AT OR ABOVE 2500 HOLD AT TUSOC RIGHT TURN INBOUNDCOURSE 176 LEGDIST 4 FAF WAGUR MAP RNW 18",
+                "WAGUR": "WAGUR 2500 RNW 18 TRK 176 UNTIL 998 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TUSOC",
+                    "fixes": {
+                        "TUSOC": "TUSOC RIGHT TURN INBOUNDCOURSE 176 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "COGES": "COGES AT OR ABOVE 2600",
+                "FEBSI": "FEBSI 2300 RNW 36 TRK 356 UNTIL 999",
+                "TUSOC": "OVERFLY TUSOC AT OR ABOVE 2500 HOLD AT TUSOC RIGHT TURN INBOUNDCOURSE 176 LEGDIST 4 FAF FEBSI MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "COGES",
+                    "fixes": {
+                        "COGES": "COGES RIGHT TURN INBOUNDCOURSE 356 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

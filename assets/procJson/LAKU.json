@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "3NM",
+            "lat": 42.12195833333333,
+            "lon": 20.491758333333333
+        },
+        {
+            "name": "KU501",
+            "lat": 42.302669433333335,
+            "lon": 20.578458333333334
+        },
+        {
+            "name": "KU502",
+            "lat": 42.24332221666667,
+            "lon": 20.657288883333333
+        },
+        {
+            "name": "KU503",
+            "lat": 42.18483056666667,
+            "lon": 20.577380566666665
+        },
+        {
+            "name": "KU504",
+            "lat": 42.08684721666667,
+            "lon": 20.443916666666667
+        },
+        {
+            "name": "KU505",
+            "lat": 42.09348056666666,
+            "lon": 20.315813883333334
+        },
+        {
+            "name": "KU701",
+            "lat": 42.11043333333333,
+            "lon": 20.280719433333335
+        },
+        {
+            "name": "KU702",
+            "lat": 42.15123056666667,
+            "lon": 20.188119433333334
+        },
+        {
+            "name": "RINAV",
+            "lat": 41.983611116666665,
+            "lon": 19.788333333333334
+        },
+        {
+            "name": "SINNE",
+            "lat": 42.246544433333334,
+            "lon": 20.167244433333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [
+        {
+            "name": "RINA1L",
+            "rnw": "01",
+            "fixes": {
+                "KU701": "KU701 SPEED 180",
+                "KU702": "KU702",
+                "RINAV": "RINAV AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "RINA1P",
+            "runway": "RNW 19",
+            "fixes": {
+                "RINAV": "RINAV AT OR ABOVE 13000",
+                "SINNE": "SINNE AT OR ABOVE 10000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "KU502": "KU502 AT OR ABOVE 5400 SPEED 185",
+                "KU503": "KU503 5400",
+                "3NM": "3NM AT OR ABOVE 3400",
+                "KU504": "OVERFLY KU504 2290 RNW 19 TURN RIGHT DIRECT",
+                "KU505": "KU505 SPEED 185",
+                "SINNE": "SINNE AT OR ABOVE 10000 HOLD AT SINNE RIGHT TURN INBOUNDCOURSE 075 ALT 10000 SPEED 230 LEGTIME 1 FAF KU503 MAP KU504"
+            },
+            "transitions": [
+                {
+                    "name": "SINNE",
+                    "fixes": {
+                        "SINNE": "SINNE AT OR ABOVE 10000",
+                        "KU501": "KU501 AT OR ABOVE 6500"
+                    }
+                }
+            ]
+        }
+    ]
+}

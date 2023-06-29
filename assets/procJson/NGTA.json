@@ -1,0 +1,153 @@
+{
+    "fixes": [
+        {
+            "name": "BONB",
+            "lat": 1.3797222166666667,
+            "lon": 173.14583333333334
+        },
+        {
+            "name": "DECOR",
+            "lat": 1.2764722166666667,
+            "lon": 173.30989443333334
+        },
+        {
+            "name": "EASLI",
+            "lat": 1.3595166666666667,
+            "lon": 173.32035
+        },
+        {
+            "name": "FF09",
+            "lat": 1.3932777833333334,
+            "lon": 173.05556388333332
+        },
+        {
+            "name": "FF27",
+            "lat": 1.3700416666666666,
+            "lon": 173.23783611666667
+        },
+        {
+            "name": "FN09",
+            "lat": 1.3875611166666666,
+            "lon": 173.07169443333333
+        },
+        {
+            "name": "FN27",
+            "lat": 1.3757166666666667,
+            "lon": 173.22170556666666
+        },
+        {
+            "name": "MATER",
+            "lat": 1.4425611166666668,
+            "lon": 173.33080833333332
+        },
+        {
+            "name": "NADAN",
+            "lat": 1.4868611166666668,
+            "lon": 172.98348611666665
+        },
+        {
+            "name": "SABBA",
+            "lat": 1.3207305666666667,
+            "lon": 172.96258611666667
+        },
+        {
+            "name": "WESLI",
+            "lat": 1.4037972166666668,
+            "lon": 172.97303333333332
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FN09": "FN09 1200 RNW 09",
+                "BONB": "OVERFLY BONB TRK 087 UNTIL 1200 TURN RIGHT DIRECT BONB 1200 HOLD AT BONB LEFT TURN INBOUNDCOURSE 287 ALT 1200 LEGTIME 1 FAF FN09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "BO",
+                    "fixes": {
+                        "BONB": "BONB AT OR ABOVE 1200 TRK 287 UNTIL 7.0 FROM BONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FN27": "FN27 1200 RNW 27",
+                "BONB": "OVERFLY BONB TRK 264 UNTIL 1200 TURN RIGHT DIRECT BONB 1200 HOLD AT BONB LEFT TURN INBOUNDCOURSE 104 ALT 1200 LEGTIME 1 FAF FN27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "BO",
+                    "fixes": {
+                        "BONB": "BONB AT OR ABOVE 1200 TRK 104 UNTIL 7.0 FROM BONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "WESLI": "WESLI AT OR ABOVE 2500",
+                "FF09": "FF09 1650 RNW 09",
+                "EASLI": "EASLI AT OR ABOVE 2500 FAF FF09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "NADAN",
+                    "fixes": {
+                        "NADAN": "NADAN SPEED 220"
+                    }
+                },
+                {
+                    "name": "SABBA",
+                    "fixes": {
+                        "SABBA": "SABBA SPEED 220"
+                    }
+                },
+                {
+                    "name": "WESLI",
+                    "fixes": {
+                        "WESLI": "WESLI RIGHT TURN INBOUNDCOURSE 088 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "EASLI": "EASLI AT OR ABOVE 2500",
+                "FF27": "FF27 1650 RNW 27",
+                "WESLI": "WESLI AT OR ABOVE 2500 FAF FF27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "DECOR",
+                    "fixes": {
+                        "DECOR": "DECOR SPEED 220"
+                    }
+                },
+                {
+                    "name": "EASLI",
+                    "fixes": {
+                        "EASLI": "EASLI RIGHT TURN INBOUNDCOURSE 268 ALT 2500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MATER",
+                    "fixes": {
+                        "MATER": "MATER SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

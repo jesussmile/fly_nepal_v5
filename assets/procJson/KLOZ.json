@@ -1,0 +1,251 @@
+{
+    "fixes": [
+        {
+            "name": "ADUPY",
+            "lat": 37.02731111666667,
+            "lon": 84.17349443333333
+        },
+        {
+            "name": "AF001",
+            "lat": 36.93013555,
+            "lon": 84.24656523333333
+        },
+        {
+            "name": "AF002",
+            "lat": 36.90778221666667,
+            "lon": 84.21315901666667
+        },
+        {
+            "name": "AF003",
+            "lat": 36.950620416666666,
+            "lon": 83.95325516666666
+        },
+        {
+            "name": "AF004",
+            "lat": 36.92045353333334,
+            "lon": 83.98616075
+        },
+        {
+            "name": "AF005",
+            "lat": 36.89830251666667,
+            "lon": 84.02784988333333
+        },
+        {
+            "name": "AF006",
+            "lat": 36.88573683333333,
+            "lon": 84.07536253333333
+        },
+        {
+            "name": "AF007",
+            "lat": 36.883646283333334,
+            "lon": 84.12533248333334
+        },
+        {
+            "name": "AXSUR",
+            "lat": 37.14454166666667,
+            "lon": 83.98410556666667
+        },
+        {
+            "name": "ESONE",
+            "lat": 36.96395278333333,
+            "lon": 84.27531111666667
+        },
+        {
+            "name": "FELIT",
+            "lat": 36.89480556666667,
+            "lon": 84.18077778333334
+        },
+        {
+            "name": "HERAP",
+            "lat": 37.02983888333333,
+            "lon": 84.33914166666666
+        },
+        {
+            "name": "JARAM",
+            "lat": 36.9821,
+            "lon": 83.93483333333333
+        },
+        {
+            "name": "LOZ",
+            "lat": 37.03315,
+            "lon": 84.110075
+        },
+        {
+            "name": "ODUBE",
+            "lat": 37.20757221666667,
+            "lon": 83.88178611666666
+        },
+        {
+            "name": "OKPEW",
+            "lat": 36.89803056666667,
+            "lon": 84.21159166666666
+        },
+        {
+            "name": "OTAPE",
+            "lat": 36.97139443333333,
+            "lon": 84.14166943333333
+        },
+        {
+            "name": "PI001",
+            "lat": 36.991383633333335,
+            "lon": 84.23104521666667
+        },
+        {
+            "name": "PI002",
+            "lat": 37.000084333333334,
+            "lon": 84.32011283333334
+        },
+        {
+            "name": "PI003",
+            "lat": 36.924587566666666,
+            "lon": 84.33778103333333
+        },
+        {
+            "name": "PI004",
+            "lat": 36.978331983333334,
+            "lon": 84.13504946666667
+        },
+        {
+            "name": "PI005",
+            "lat": 36.9133739,
+            "lon": 84.09716835
+        },
+        {
+            "name": "PI006",
+            "lat": 36.876513233333334,
+            "lon": 84.18133528333334
+        },
+        {
+            "name": "UMODE",
+            "lat": 37.141413883333335,
+            "lon": 83.81825278333334
+        },
+        {
+            "name": "UPZIS",
+            "lat": 37.27369721666667,
+            "lon": 83.94543056666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS06",
+            "fixes": {
+                "ESONE": "ESONE AT OR ABOVE 3000",
+                "ADUPY": "ADUPY 3000 RNW 06 TRK 057 UNTIL 2000 TURN RIGHT DIRECT",
+                "LOZ": "LOZ AT OR ABOVE 4000 HOLD AT LOZ RIGHT TURN INBOUNDCOURSE 246 LEGTIME 1 FAF ADUPY MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "LOZ",
+                    "fixes": {
+                        "LOZ": "LOZ",
+                        "ADUPY": "ADUPY AT OR ABOVE 4000",
+                        "PI001": "PI001 AT OR ABOVE 3500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "ESONE": "ESONE AT OR ABOVE 3900",
+                "ADUPY": "ADUPY 3000 RNW 06 TRK 057 UNTIL 1462",
+                "ODUBE": "OVERFLY ODUBE AT OR ABOVE 3900 HOLD AT ODUBE RIGHT TURN INBOUNDCOURSE 237 LEGDIST 5 FAF ADUPY MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ESONE",
+                    "fixes": {
+                        "ESONE": "ESONE RIGHT TURN INBOUNDCOURSE 057 ALT 3900 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "HERAP",
+                    "fixes": {
+                        "HERAP": "HERAP AT OR ABOVE 3900"
+                    }
+                },
+                {
+                    "name": "OKPEW",
+                    "fixes": {
+                        "OKPEW": "OKPEW AT OR ABOVE 3900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "ODUBE": "ODUBE AT OR ABOVE 3900",
+                "AXSUR": "AXSUR 3200 RNW 24",
+                "ESONE": "OVERFLY ESONE AT OR ABOVE 3900 HOLD AT ESONE RIGHT TURN INBOUNDCOURSE 057 LEGDIST 5 FAF AXSUR MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "ODUBE",
+                    "fixes": {
+                        "ODUBE": "ODUBE RIGHT TURN INBOUNDCOURSE 237 ALT 3900 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "UMODE",
+                    "fixes": {
+                        "UMODE": "UMODE AT OR ABOVE 3900"
+                    }
+                },
+                {
+                    "name": "UPZIS",
+                    "fixes": {
+                        "UPZIS": "UPZIS AT OR ABOVE 3900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR06",
+            "fixes": {
+                "OTAPE": "OTAPE AT OR ABOVE 3200",
+                "LOZ": "LOZ 2300 RNW 06 TRK 025 UNTIL 1612 TURN LEFT DIRECT LOZ AT OR ABOVE 4000 HOLD AT LOZ RIGHT TURN INBOUNDCOURSE 025 LEGDIST 4 FAF LOZ MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ESONE",
+                    "fixes": {
+                        "ESONE": "ESONE",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "FELIT": "FELIT AT OR ABOVE 3900"
+                    }
+                },
+                {
+                    "name": "JARAM",
+                    "fixes": {
+                        "JARAM": "JARAM",
+                        "AF003": "AF003",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "AF006": "AF006",
+                        "AF007": "AF007",
+                        "FELIT": "FELIT AT OR ABOVE 3900"
+                    }
+                },
+                {
+                    "name": "LOZ",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3900 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3900 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3900 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,204 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 17.29504635,
+            "lon": 104.49362011666666
+        },
+        {
+            "name": "AF002",
+            "lat": 17.266369733333335,
+            "lon": 104.51930571666666
+        },
+        {
+            "name": "AF003",
+            "lat": 17.243940733333332,
+            "lon": 104.55108085
+        },
+        {
+            "name": "AF004",
+            "lat": 17.374420483333335,
+            "lon": 104.46430128333333
+        },
+        {
+            "name": "AF005",
+            "lat": 17.421452266666666,
+            "lon": 104.46716333333333
+        },
+        {
+            "name": "AF006",
+            "lat": 17.465840083333333,
+            "lon": 104.48370928333334
+        },
+        {
+            "name": "CHUCA",
+            "lat": 17.228725,
+            "lon": 104.58842221666667
+        },
+        {
+            "name": "D315J",
+            "lat": 17.5045,
+            "lon": 104.51288611666666
+        },
+        {
+            "name": "FF15",
+            "lat": 17.45185,
+            "lon": 104.59304166666666
+        },
+        {
+            "name": "FS15",
+            "lat": 17.450783333333334,
+            "lon": 104.59273888333334
+        },
+        {
+            "name": "FS33",
+            "lat": 17.313425,
+            "lon": 104.69407221666667
+        },
+        {
+            "name": "OPAAR",
+            "lat": 17.320186116666665,
+            "lon": 104.44163056666666
+        },
+        {
+            "name": "PRITY",
+            "lat": 17.252797216666668,
+            "lon": 104.73911111666666
+        },
+        {
+            "name": "UW151",
+            "lat": 17.393041666666665,
+            "lon": 104.63623333333334
+        },
+        {
+            "name": "UW152",
+            "lat": 17.45185,
+            "lon": 104.59304166666666
+        },
+        {
+            "name": "UW331",
+            "lat": 17.374547216666667,
+            "lon": 104.64981111666667
+        },
+        {
+            "name": "UW332",
+            "lat": 17.314361116666667,
+            "lon": 104.693975
+        },
+        {
+            "name": "XASSY",
+            "lat": 17.458119433333334,
+            "lon": 104.43904166666667
+        },
+        {
+            "name": "XICLE",
+            "lat": 17.185327783333335,
+            "lon": 104.63946943333333
+        },
+        {
+            "name": "YACOB",
+            "lat": 17.525683333333333,
+            "lon": 104.53875278333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD15",
+            "fixes": {
+                "YACOB": "YACOB AT OR ABOVE 2500",
+                "FS15": "FS15 2000 RNW 15 TRK 146 UNTIL 2400 TURN RIGHT HDG 295 INTERCEPT RADIAL 250 TO",
+                "OPAAR": "OPAAR SPEED 230 OPAAR 3000 HOLD AT OPAAR RIGHT TURN INBOUNDCOURSE 070 ALT 3000 SPEED 230 LEGTIME 1 FAF FS15 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "OPAAR",
+                    "fixes": {
+                        "OPAAR": "OPAAR AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD33",
+            "fixes": {
+                "PRITY": "PRITY AT OR ABOVE 2500",
+                "FS33": "FS33 2000 RNW 33 TRK 325 UNTIL 2400 TURN LEFT HDG 205 INTERCEPT RADIAL 250 TO",
+                "OPAAR": "OPAAR SPEED 230 OPAAR 3000 HOLD AT OPAAR RIGHT TURN INBOUNDCOURSE 070 ALT 3000 SPEED 230 LEGTIME 1 FAF FS33 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "OPAAR",
+                    "fixes": {
+                        "OPAAR": "OPAAR AT OR ABOVE 3000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "CHUCA": "CHUCA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS15",
+            "fixes": {
+                "YACOB": "YACOB AT OR ABOVE 2500",
+                "FF15": "FF15 2000 RNW 15 TRK 146 UNTIL 2400 TURN RIGHT HDG 295 INTERCEPT RADIAL 250 TO",
+                "OPAAR": "OPAAR SPEED 230 OPAAR 3000 HOLD AT OPAAR RIGHT TURN INBOUNDCOURSE 070 ALT 3000 SPEED 230 LEGTIME 1 FAF FF15 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "OPAAR",
+                    "fixes": {
+                        "OPAAR": "OPAAR AT OR ABOVE 3000",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "AF006": "AF006",
+                        "D315J": "D315J AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "YACOB": "YACOB 2500",
+                "UW152": "UW152 2000",
+                "UW151": "OVERFLY UW151 637 RNW 15 TRK 146 UNTIL 2400 TURN RIGHT DIRECT",
+                "OPAAR": "OPAAR 3000 SPEED 230 HOLD AT OPAAR RIGHT TURN INBOUNDCOURSE 070 ALT 3000 SPEED 230 LEGTIME 1 FAF UW152 MAP UW151"
+            },
+            "transitions": [
+                {
+                    "name": "OPAAR",
+                    "fixes": {
+                        "OPAAR": "OPAAR 3000",
+                        "XASSY": "XASSY 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "PRITY": "PRITY 2500 SPEED 230",
+                "UW332": "UW332 2000",
+                "UW331": "OVERFLY UW331 605 RNW 33 TRK 326 UNTIL 2400 TURN LEFT DIRECT",
+                "OPAAR": "OPAAR 3000 SPEED 230 HOLD AT OPAAR RIGHT TURN INBOUNDCOURSE 070 ALT 3000 SPEED 230 LEGTIME 1 FAF UW332 MAP UW331"
+            },
+            "transitions": [
+                {
+                    "name": "OPAAR",
+                    "fixes": {
+                        "OPAAR": "OPAAR 3000",
+                        "XICLE": "XICLE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

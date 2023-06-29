@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "ACIRI",
+            "lat": 67.81201388333334,
+            "lon": 164.75033333333334
+        },
+        {
+            "name": "BAYAR",
+            "lat": 67.67006666666667,
+            "lon": 164.40218056666666
+        },
+        {
+            "name": "CALGA",
+            "lat": 67.88467778333333,
+            "lon": 164.93093333333334
+        },
+        {
+            "name": "COKRA",
+            "lat": 67.8163,
+            "lon": 165.12294166666666
+        },
+        {
+            "name": "DINEC",
+            "lat": 67.59681666666667,
+            "lon": 164.22487778333334
+        },
+        {
+            "name": "JOKOD",
+            "lat": 67.95282778333333,
+            "lon": 164.73779721666668
+        },
+        {
+            "name": "PIBIY",
+            "lat": 67.74401666666667,
+            "lon": 164.58278333333334
+        },
+        {
+            "name": "WOTKO",
+            "lat": 67.72828333333334,
+            "lon": 164.54421943333332
+        },
+        {
+            "name": "WULSI",
+            "lat": 67.52927778333333,
+            "lon": 164.41660278333333
+        },
+        {
+            "name": "ZADUS",
+            "lat": 67.66412778333333,
+            "lon": 164.03205556666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "CALGA": "CALGA AT OR ABOVE 3000",
+                "ACIRI": "ACIRI 2000",
+                "PIBIY": "OVERFLY PIBIY 181 RNW 12",
+                "DINEC": "OVERFLY DINEC AT OR ABOVE 3000 HOLD AT DINEC RIGHT TURN INBOUNDCOURSE 302 LEGDIST 4 FAF ACIRI MAP PIBIY"
+            },
+            "transitions": [
+                {
+                    "name": "CALGA",
+                    "fixes": {
+                        "CALGA": "CALGA RIGHT TURN INBOUNDCOURSE 122 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "COKRA",
+                    "fixes": {
+                        "COKRA": "COKRA AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "JOKOD",
+                    "fixes": {
+                        "JOKOD": "JOKOD AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "DINEC": "DINEC AT OR ABOVE 3000",
+                "BAYAR": "BAYAR 1700",
+                "WOTKO": "OVERFLY WOTKO 186 RNW 30 TRK 302 UNTIL 380",
+                "CALGA": "OVERFLY CALGA AT OR ABOVE 3000 HOLD AT CALGA RIGHT TURN INBOUNDCOURSE 122 ALT 3000 LEGDIST 4 FAF BAYAR MAP WOTKO"
+            },
+            "transitions": [
+                {
+                    "name": "DINEC",
+                    "fixes": {
+                        "DINEC": "DINEC RIGHT TURN INBOUNDCOURSE 302 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WULSI",
+                    "fixes": {
+                        "WULSI": "WULSI"
+                    }
+                },
+                {
+                    "name": "ZADUS",
+                    "fixes": {
+                        "ZADUS": "ZADUS"
+                    }
+                }
+            ]
+        }
+    ]
+}

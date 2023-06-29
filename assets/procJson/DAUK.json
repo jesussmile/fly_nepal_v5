@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "CI01",
+            "lat": 32.92416111666667,
+            "lon": 6.06305
+        },
+        {
+            "name": "D197G",
+            "lat": 32.94665833333333,
+            "lon": 6.043661116666667
+        },
+        {
+            "name": "D197H",
+            "lat": 32.93086666666667,
+            "lon": 6.037222216666667
+        },
+        {
+            "name": "FD01",
+            "lat": 32.97824166666667,
+            "lon": 6.056547216666667
+        },
+        {
+            "name": "FI01",
+            "lat": 32.973705566666666,
+            "lon": 6.071855566666667
+        },
+        {
+            "name": "FS01",
+            "lat": 32.969633333333334,
+            "lon": 6.0530333333333335
+        },
+        {
+            "name": "RW01",
+            "lat": 33.060144433333335,
+            "lon": 6.087244433333334
+        },
+        {
+            "name": "TGU",
+            "lat": 33.057194433333336,
+            "lon": 6.0888
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD01",
+            "fixes": {
+                "FD01": "FD01 2140",
+                "TGU": "TGU 380 RNW 01 TRK 017 UNTIL 1480 TURN RIGHT DIRECT TGU 3250 FAF FD01 MAP TGU"
+            },
+            "transitions": [
+                {
+                    "name": "TGU1",
+                    "fixes": {
+                        "TGU": "TGU AT OR ABOVE 3250 TRK 170 UNTIL 8.0 FROM TGU TURN RIGHT DIRECT",
+                        "D197H": "D197H AT OR ABOVE 2140"
+                    }
+                },
+                {
+                    "name": "TGU2",
+                    "fixes": {
+                        "TGU": "TGU AT OR ABOVE 3250 TRK 183 UNTIL 7.0 FROM TGU TURN RIGHT DIRECT",
+                        "D197G": "D197G AT OR ABOVE 2140"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS01",
+            "fixes": {
+                "CI01": "CI01 AT OR ABOVE 2000",
+                "FI01": "FI01 2000 RNW 01 TRK 007 UNTIL 1480 TURN RIGHT DIRECT",
+                "TGU": "TGU 3250 FAF FI01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "TGU",
+                    "fixes": {
+                        "TGU": "TGU AT OR ABOVE 3250 TRK 162 UNTIL 8.1 FROM TGU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR01",
+            "fixes": {
+                "FS01": "FS01 2140",
+                "TGU": "TGU 375 RNW 01 TRK 017 UNTIL 1480 TURN RIGHT DIRECT TGU 3250 FAF FS01 MAP TGU"
+            },
+            "transitions": [
+                {
+                    "name": "TGU1",
+                    "fixes": {
+                        "TGU": "TGU AT OR ABOVE 3250 TRK 170 UNTIL 7.0 FROM TGU"
+                    }
+                },
+                {
+                    "name": "TGU2",
+                    "fixes": {
+                        "TGU": "TGU AT OR ABOVE 3250 TRK 183 UNTIL 5.8 FROM TGU"
+                    }
+                }
+            ]
+        }
+    ]
+}

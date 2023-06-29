@@ -1,0 +1,137 @@
+{
+    "fixes": [
+        {
+            "name": "DESTI",
+            "lat": 53.20799721666667,
+            "lon": 93.55110278333333
+        },
+        {
+            "name": "ELISU",
+            "lat": 53.033127783333335,
+            "lon": 93.22490833333333
+        },
+        {
+            "name": "FF29",
+            "lat": 53.02116388333334,
+            "lon": 93.24429721666667
+        },
+        {
+            "name": "GABON",
+            "lat": 53.05513056666667,
+            "lon": 93.66045278333333
+        },
+        {
+            "name": "HOLST",
+            "lat": 53.09511388333333,
+            "lon": 93.46402221666666
+        },
+        {
+            "name": "IKDAD",
+            "lat": 53.029316666666666,
+            "lon": 93.21028333333334
+        },
+        {
+            "name": "IKMOV",
+            "lat": 53.131577783333334,
+            "lon": 93.605875
+        },
+        {
+            "name": "LEPUM",
+            "lat": 52.99621388333333,
+            "lon": 93.08370278333334
+        },
+        {
+            "name": "NAGIS",
+            "lat": 52.919772216666665,
+            "lon": 93.13813611666667
+        },
+        {
+            "name": "PI001",
+            "lat": 53.03239801666667,
+            "lon": 93.26790318333333
+        },
+        {
+            "name": "PI002",
+            "lat": 53.04107331666667,
+            "lon": 93.14959398333333
+        },
+        {
+            "name": "PI003",
+            "lat": 52.96552618333333,
+            "lon": 93.1262838
+        },
+        {
+            "name": "UDNAS",
+            "lat": 53.098897216666664,
+            "lon": 93.47869166666666
+        },
+        {
+            "name": "ZSJNB",
+            "lat": 53.068336116666664,
+            "lon": 93.34434166666666
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FF29": "FF29 2300 RNW 29",
+                "ZSJNB": "OVERFLY ZSJNB TRK 309 UNTIL 2300 TURN RIGHT DIRECT ZSJNB 2300 HOLD AT ZSJNB RIGHT TURN INBOUNDCOURSE 309 SPEED 265 LEGTIME 1 FAF FF29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "ZSJ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "IKMOV": "IKMOV AT OR ABOVE 2600",
+                "UDNAS": "UDNAS 2600 RNW 11",
+                "ELISU": "OVERFLY ELISU 2500 HOLD AT ELISU RIGHT TURN INBOUNDCOURSE 114 LEGTIME 1 FAF UDNAS MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "DESTI",
+                    "fixes": {
+                        "DESTI": "DESTI"
+                    }
+                },
+                {
+                    "name": "GABON",
+                    "fixes": {
+                        "GABON": "GABON"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "LEPUM": "LEPUM AT OR ABOVE 2600",
+                "IKDAD": "IKDAD 2580 RNW 29",
+                "HOLST": "OVERFLY HOLST 2500 HOLD AT HOLST RIGHT TURN INBOUNDCOURSE 294 SPEED 250 LEGTIME 1 FAF IKDAD MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "NAGIS",
+                    "fixes": {
+                        "NAGIS": "NAGIS"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "CUSET",
+            "lat": 43.13871388333333,
+            "lon": 94.36624721666666
+        },
+        {
+            "name": "EWHIF",
+            "lat": 43.085458333333335,
+            "lon": 93.9428
+        },
+        {
+            "name": "HIGMU",
+            "lat": 43.194,
+            "lon": 94.45146388333333
+        },
+        {
+            "name": "IFOLA",
+            "lat": 42.96120556666666,
+            "lon": 94.09427778333334
+        },
+        {
+            "name": "JAPKA",
+            "lat": 43.06908611666667,
+            "lon": 94.60218888333333
+        },
+        {
+            "name": "JOPOR",
+            "lat": 43.31871111666667,
+            "lon": 94.30012221666667
+        },
+        {
+            "name": "LULUS",
+            "lat": 43.016697216666664,
+            "lon": 94.17903333333334
+        },
+        {
+            "name": "UKLIQ",
+            "lat": 42.83675,
+            "lon": 94.24514721666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 18",
+        "RNW 30",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "HIGMU": "HIGMU AT OR ABOVE 3000",
+                "CUSET": "CUSET 2900 RNW 12 TRK 129 UNTIL 1619",
+                "IFOLA": "OVERFLY IFOLA AT OR ABOVE 3000 HOLD AT IFOLA RIGHT TURN INBOUNDCOURSE 309 LEGDIST 4 FAF CUSET MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "HIGMU",
+                    "fixes": {
+                        "HIGMU": "HIGMU RIGHT TURN INBOUNDCOURSE 129 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JAPKA",
+                    "fixes": {
+                        "JAPKA": "JAPKA AT OR ABOVE 3400"
+                    }
+                },
+                {
+                    "name": "JOPOR",
+                    "fixes": {
+                        "JOPOR": "JOPOR AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IFOLA": "IFOLA AT OR ABOVE 3000",
+                "LULUS": "LULUS 2900 RNW 30 TRK 309 UNTIL 1600",
+                "HIGMU": "OVERFLY HIGMU AT OR ABOVE 3000 HOLD AT HIGMU RIGHT TURN INBOUNDCOURSE 129 LEGDIST 4 FAF LULUS MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "EWHIF",
+                    "fixes": {
+                        "EWHIF": "EWHIF"
+                    }
+                },
+                {
+                    "name": "IFOLA",
+                    "fixes": {
+                        "IFOLA": "IFOLA RIGHT TURN INBOUNDCOURSE 309 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UKLIQ",
+                    "fixes": {
+                        "UKLIQ": "UKLIQ"
+                    }
+                }
+            ]
+        }
+    ]
+}

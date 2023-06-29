@@ -1,0 +1,85 @@
+{
+    "fixes": [
+        {
+            "name": "AYOTE",
+            "lat": 34.711825,
+            "lon": 87.61765
+        },
+        {
+            "name": "BACAL",
+            "lat": 34.35545833333333,
+            "lon": 87.71884443333333
+        },
+        {
+            "name": "DALEC",
+            "lat": 34.25330833333334,
+            "lon": 87.72144166666666
+        },
+        {
+            "name": "DONSE",
+            "lat": 34.53251111666667,
+            "lon": 87.68089166666667
+        },
+        {
+            "name": "FOGUM",
+            "lat": 34.107033333333334,
+            "lon": 87.82337778333333
+        },
+        {
+            "name": "KENCE",
+            "lat": 34.429966666666665,
+            "lon": 87.716925
+        },
+        {
+            "name": "LANER",
+            "lat": 34.48406666666666,
+            "lon": 87.36296666666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "DALEC": "DALEC AT OR ABOVE 2700 OVERFLY DALEC AT OR ABOVE 2700 HOLD AT DALEC RIGHT TURN INBOUNDCOURSE 003 LEGDIST 5 FAF BACAL MAP KENCE",
+                "BACAL": "BACAL 2300",
+                "KENCE": "OVERFLY KENCE 879 RNW 02 TRK 003 UNTIL 1118 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FOGUM",
+                    "fixes": {
+                        "FOGUM": "FOGUM"
+                    }
+                },
+                {
+                    "name": "LANER",
+                    "fixes": {
+                        "LANER": "LANER",
+                        "DALEC": "OVERFLY DALEC AT OR ABOVE 2700 HOLD AT DALEC RIGHT TURN INBOUNDCOURSE 003 ALT 2700 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "AYOTE": "AYOTE AT OR ABOVE 3000 OVERFLY AYOTE AT OR ABOVE 3000 HOLD AT AYOTE RIGHT TURN INBOUNDCOURSE 198 LEGDIST 5 FAF DONSE MAP RNW 20",
+                "DONSE": "DONSE 2400 RNW 20 TRK 198 UNTIL 1123 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AYOTE",
+                    "fixes": {
+                        "AYOTE": "AYOTE RIGHT TURN INBOUNDCOURSE 198 ALT 3000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

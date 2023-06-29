@@ -1,0 +1,57 @@
+{
+    "fixes": [
+        {
+            "name": "FF11",
+            "lat": 18.418930566666667,
+            "lon": 136.4963
+        },
+        {
+            "name": "FF29",
+            "lat": 18.507433333333335,
+            "lon": 136.37624443333334
+        },
+        {
+            "name": "RENB",
+            "lat": 18.463722216666667,
+            "lon": 136.44419443333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FF11": "FF11 1200",
+                "RENB": "RENB 71 RNW 11 TRK 119 UNTIL 1500 TURN RIGHT DIRECT RENB FAF FF11 MAP RE"
+            },
+            "transitions": [
+                {
+                    "name": "RE",
+                    "fixes": {
+                        "RENB": "RENB AT OR ABOVE 1500 TRK 280 UNTIL 6.0 FROM RENB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FF29": "FF29 1200 RNW 29",
+                "RENB": "OVERFLY RENB TRK 291 UNTIL 1500 TURN RIGHT DIRECT RENB FAF FF29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "RE",
+                    "fixes": {
+                        "RENB": "RENB AT OR ABOVE 1500 TRK 127 UNTIL 7.5 FROM RENB"
+                    }
+                }
+            ]
+        }
+    ]
+}

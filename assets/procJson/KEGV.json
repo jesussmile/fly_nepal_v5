@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "CINOP",
+            "lat": 46.089919433333336,
+            "lon": 88.86432221666666
+        },
+        {
+            "name": "CUSAS",
+            "lat": 46.01615,
+            "lon": 89.2214
+        },
+        {
+            "name": "DINER",
+            "lat": 46.202561116666665,
+            "lon": 89.18008333333333
+        },
+        {
+            "name": "HOVKI",
+            "lat": 45.95624443333333,
+            "lon": 89.23355833333333
+        },
+        {
+            "name": "IMT",
+            "lat": 45.816038883333334,
+            "lon": 88.11213611666666
+        },
+        {
+            "name": "IWD",
+            "lat": 46.53225556666667,
+            "lon": 90.12585
+        },
+        {
+            "name": "JAYME",
+            "lat": 45.84780833333333,
+            "lon": 89.32531111666667
+        },
+        {
+            "name": "KAVPE",
+            "lat": 46.07491388333333,
+            "lon": 89.06051666666667
+        },
+        {
+            "name": "NOLYI",
+            "lat": 46.002491666666664,
+            "lon": 89.16625556666666
+        },
+        {
+            "name": "POTNY",
+            "lat": 45.8194,
+            "lon": 89.43171111666666
+        },
+        {
+            "name": "RHI",
+            "lat": 45.63378888333333,
+            "lon": 89.45778056666667
+        },
+        {
+            "name": "ZODOM",
+            "lat": 45.88984166666667,
+            "lon": 89.32989443333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 13",
+        "RNW 22",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD04",
+            "fixes": {
+                "RHI": "RHI AT OR ABOVE 3500",
+                "JAYME": "JAYME 3500 RNW 04 TRK 021 UNTIL 3500 TURN LEFT DIRECT JAYME HOLD AT JAYME LEFT TURN INBOUNDCOURSE 021 LEGTIME 1 FAF JAYME MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "RHI",
+                    "fixes": {
+                        "RHI": "RHI LEFT TURN INBOUNDCOURSE 021 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC04",
+            "fixes": {
+                "POTNY": "POTNY AT OR ABOVE 3400",
+                "ZODOM": "ZODOM 2700 RNW 04 TRK 047 UNTIL 2100 HDG 015 INTERCEPT RADIAL 021 TO",
+                "CUSAS": "CUSAS CUSAS AT OR ABOVE 3500 HOLD AT CUSAS RIGHT TURN INBOUNDCOURSE 021 LEGTIME 1 FAF ZODOM MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "RHI",
+                    "fixes": {
+                        "RHI": "RHI AT OR ABOVE 3400 TRK 004 UNTIL 7.2 FROM RHI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "POTNY": "POTNY AT OR ABOVE 3400",
+                "ZODOM": "ZODOM 2700 RNW 04 TRK 047 UNTIL 1970",
+                "HOVKI": "HOVKI",
+                "CUSAS": "OVERFLY CUSAS AT OR ABOVE 3500 HOLD AT CUSAS RIGHT TURN INBOUNDCOURSE 021 LEGDIST 5 FAF ZODOM MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "RHI",
+                    "fixes": {
+                        "RHI": "RHI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "KAVPE": "KAVPE AT OR ABOVE 3500",
+                "NOLYI": "NOLYI 3500 RNW 22 TRK 227 UNTIL 2012",
+                "ZODOM": "ZODOM",
+                "RHI": "OVERFLY RHI AT OR ABOVE 3500 HOLD AT RHI RIGHT TURN INBOUNDCOURSE 025 LEGDIST 4 FAF NOLYI MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "IMT",
+                    "fixes": {
+                        "IMT": "IMT",
+                        "CINOP": "CINOP AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "IWD",
+                    "fixes": {
+                        "IWD": "IWD",
+                        "DINER": "DINER AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

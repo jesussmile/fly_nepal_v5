@@ -1,0 +1,159 @@
+{
+    "fixes": [
+        {
+            "name": "CAGUB",
+            "lat": 42.62569443333334,
+            "lon": 102.45261666666667
+        },
+        {
+            "name": "DANVE",
+            "lat": 42.869152783333334,
+            "lon": 102.07710278333333
+        },
+        {
+            "name": "EKIVE",
+            "lat": 42.68163333333333,
+            "lon": 102.36676943333333
+        },
+        {
+            "name": "EVENN",
+            "lat": 42.14390278333333,
+            "lon": 102.34948056666667
+        },
+        {
+            "name": "FF22",
+            "lat": 42.873758333333335,
+            "lon": 102.08052221666667
+        },
+        {
+            "name": "FIPUR",
+            "lat": 42.74792778333333,
+            "lon": 102.26468888333333
+        },
+        {
+            "name": "GRNNB",
+            "lat": 42.80108333333333,
+            "lon": 102.17939443333333
+        },
+        {
+            "name": "MARZH",
+            "lat": 42.93615833333333,
+            "lon": 101.97289443333334
+        },
+        {
+            "name": "OQTUM",
+            "lat": 42.998841666666664,
+            "lon": 102.04771111666666
+        },
+        {
+            "name": "PI001",
+            "lat": 42.842317466666664,
+            "lon": 102.12313921666667
+        },
+        {
+            "name": "PI002",
+            "lat": 42.842275883333336,
+            "lon": 102.02539793333334
+        },
+        {
+            "name": "PI003",
+            "lat": 42.918821916666666,
+            "lon": 102.01846583333334
+        },
+        {
+            "name": "RALFF",
+            "lat": 42.873425,
+            "lon": 101.89823056666667
+        },
+        {
+            "name": "TST",
+            "lat": 42.55877221666667,
+            "lon": 103.31214721666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 11",
+        "RNW 22",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FF22": "FF22 5300 RNW 22",
+                "GRNNB": "GRNNB TRK 216 UNTIL 5400 TURN RIGHT DIRECT GRNNB HOLD AT GRNNB RIGHT TURN INBOUNDCOURSE 216 LEGTIME 1 FAF FF22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "EVENN",
+                    "fixes": {
+                        "EVENN": "EVENN",
+                        "GRNNB": "GRNNB AT OR ABOVE 6000",
+                        "PI001": "PI001 AT OR ABOVE 5300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TST",
+                    "fixes": {
+                        "TST": "TST",
+                        "GRNNB": "GRNNB AT OR ABOVE 6200",
+                        "PI001": "PI001 AT OR ABOVE 5300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "EKIVE": "EKIVE AT OR ABOVE 6100",
+                "FIPUR": "FIPUR 5200 RNW 04 TRK 040 UNTIL 3936",
+                "MARZH": "OVERFLY MARZH AT OR ABOVE 5600 HOLD AT MARZH RIGHT TURN INBOUNDCOURSE 220 LEGDIST 5 FAF FIPUR MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "EVENN",
+                    "fixes": {
+                        "EVENN": "EVENN",
+                        "CAGUB": "CAGUB AT OR ABOVE 7500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "MARZH": "MARZH AT OR ABOVE 5600",
+                "DANVE": "DANVE 5300 RNW 22 TRK 220 UNTIL 3890",
+                "EKIVE": "OVERFLY EKIVE AT OR ABOVE 6100 HOLD AT EKIVE RIGHT TURN INBOUNDCOURSE 040 LEGDIST 7 FAF DANVE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "EVENN",
+                    "fixes": {
+                        "EVENN": "EVENN",
+                        "RALFF": "RALFF AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "MARZH",
+                    "fixes": {
+                        "MARZH": "MARZH RIGHT TURN INBOUNDCOURSE 220 ALT 5600 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "OQTUM",
+                    "fixes": {
+                        "OQTUM": "OQTUM"
+                    }
+                }
+            ]
+        }
+    ]
+}

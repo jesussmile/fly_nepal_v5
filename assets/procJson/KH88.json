@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "CF01",
+            "lat": 37.43011943333333,
+            "lon": 90.41719443333334
+        },
+        {
+            "name": "CUCOO",
+            "lat": 37.51603333333333,
+            "lon": 90.35268333333333
+        },
+        {
+            "name": "D129Q",
+            "lat": 37.49078611666667,
+            "lon": 89.96131666666666
+        },
+        {
+            "name": "D266Q",
+            "lat": 37.65805833333334,
+            "lon": 90.59035556666667
+        },
+        {
+            "name": "FAM",
+            "lat": 37.673461116666665,
+            "lon": 90.23405833333334
+        },
+        {
+            "name": "GIFYO",
+            "lat": 37.772922216666664,
+            "lon": 90.23274443333334
+        },
+        {
+            "name": "GUCFY",
+            "lat": 37.438144433333335,
+            "lon": 90.342
+        },
+        {
+            "name": "MA01",
+            "lat": 37.600338883333336,
+            "lon": 90.28923333333333
+        },
+        {
+            "name": "PI001",
+            "lat": 37.465509483333335,
+            "lon": 90.38943013333333
+        },
+        {
+            "name": "PI002",
+            "lat": 37.446928766666666,
+            "lon": 90.47662401666666
+        },
+        {
+            "name": "PI003",
+            "lat": 37.37164936666667,
+            "lon": 90.45754263333333
+        },
+        {
+            "name": "PI004",
+            "lat": 37.722924133333336,
+            "lon": 90.19497768333333
+        },
+        {
+            "name": "PI005",
+            "lat": 37.739012716666664,
+            "lon": 90.10667565
+        },
+        {
+            "name": "PI006",
+            "lat": 37.814749733333336,
+            "lon": 90.12226071666667
+        },
+        {
+            "name": "WEPIG",
+            "lat": 37.656166666666664,
+            "lon": 90.270975
+        },
+        {
+            "name": "YONVY",
+            "lat": 37.696283333333334,
+            "lon": 90.25785278333333
+        },
+        {
+            "name": "YUXTI",
+            "lat": 37.514836116666665,
+            "lon": 90.31706943333333
+        },
+        {
+            "name": "ZIKTO",
+            "lat": 37.566397216666665,
+            "lon": 90.300275
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD01",
+            "fixes": {
+                "CF01": "CF01 AT OR ABOVE 3500",
+                "CUCOO": "CUCOO 2900",
+                "MA01": "MA01 1178 RNW 01",
+                "FAM": "FAM AT OR ABOVE 3500 HOLD AT FAM RIGHT TURN INBOUNDCOURSE 212 LEGTIME 1 FAF CUCOO MAP MA01"
+            },
+            "transitions": [
+                {
+                    "name": "D129Q",
+                    "fixes": {
+                        "D129Q": "D129Q"
+                    }
+                },
+                {
+                    "name": "D266Q",
+                    "fixes": {
+                        "D266Q": "D266Q"
+                    }
+                },
+                {
+                    "name": "FAM",
+                    "fixes": {
+                        "FAM": "FAM",
+                        "CUCOO": "CUCOO AT OR ABOVE 3500",
+                        "PI001": "PI001 AT OR ABOVE 3500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "GUCFY": "GUCFY AT OR ABOVE 3300",
+                "YUXTI": "YUXTI 2600",
+                "ZIKTO": "ZIKTO AT OR ABOVE 1580 RNW 01 TRK 015 UNTIL 1161",
+                "GIFYO": "OVERFLY GIFYO AT OR ABOVE 3300 HOLD AT GIFYO RIGHT TURN INBOUNDCOURSE 195 LEGDIST 4 FAF YUXTI MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "GUCFY",
+                    "fixes": {
+                        "GUCFY": "GUCFY RIGHT TURN INBOUNDCOURSE 015 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "GIFYO": "GIFYO AT OR ABOVE 3300",
+                "YONVY": "YONVY 2600",
+                "WEPIG": "WEPIG AT OR ABOVE 1800 RNW 19 TRK 195 UNTIL 1161",
+                "GUCFY": "OVERFLY GUCFY AT OR ABOVE 3300 HOLD AT GUCFY RIGHT TURN INBOUNDCOURSE 015 LEGDIST 4 FAF YONVY MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "GIFYO",
+                    "fixes": {
+                        "GIFYO": "GIFYO RIGHT TURN INBOUNDCOURSE 195 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR19",
+            "fixes": {
+                "FAM": "FAM 2300 RNW 19 TRK 212 UNTIL 2000 TURN LEFT DIRECT FAM AT OR ABOVE 3000 HOLD AT FAM RIGHT TURN INBOUNDCOURSE 212 LEGTIME 1 FAF FAM MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "FAM",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2900 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2900 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2900 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

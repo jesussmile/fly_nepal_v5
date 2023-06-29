@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "BEVAY",
+            "lat": 34.32058056666666,
+            "lon": 87.59900556666666
+        },
+        {
+            "name": "CICBY",
+            "lat": 34.19179166666667,
+            "lon": 87.60355556666667
+        },
+        {
+            "name": "FIRSA",
+            "lat": 34.231725,
+            "lon": 87.60214443333334
+        },
+        {
+            "name": "HOREK",
+            "lat": 34.366908333333335,
+            "lon": 87.59736666666667
+        },
+        {
+            "name": "UKUPE",
+            "lat": 34.080525,
+            "lon": 87.60747221666666
+        },
+        {
+            "name": "ZONUN",
+            "lat": 34.47678056666667,
+            "lon": 87.59347221666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ZONUN": "ZONUN AT OR ABOVE 3000",
+                "HOREK": "HOREK 2500",
+                "BEVAY": "BEVAY AT OR ABOVE 1600 RNW 18 TRK 183 UNTIL 1180",
+                "UKUPE": "OVERFLY UKUPE AT OR ABOVE 3000 HOLD AT UKUPE RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4 FAF HOREK MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ZONUN",
+                    "fixes": {
+                        "ZONUN": "ZONUN LEFT TURN INBOUNDCOURSE 183 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "UKUPE": "UKUPE AT OR ABOVE 3000",
+                "CICBY": "CICBY 2500",
+                "FIRSA": "FIRSA AT OR ABOVE 1720 RNW 36 TRK 003 UNTIL 1330",
+                "ZONUN": "OVERFLY ZONUN AT OR ABOVE 3000 HOLD AT ZONUN LEFT TURN INBOUNDCOURSE 183 LEGDIST 4 FAF CICBY MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "UKUPE",
+                    "fixes": {
+                        "UKUPE": "UKUPE RIGHT TURN INBOUNDCOURSE 003 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

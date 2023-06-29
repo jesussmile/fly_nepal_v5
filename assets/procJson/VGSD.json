@@ -1,0 +1,181 @@
+{
+    "fixes": [
+        {
+            "name": "FN16",
+            "lat": 25.825638883333333,
+            "lon": 88.87068056666666
+        },
+        {
+            "name": "FN34",
+            "lat": 25.689325,
+            "lon": 88.93988611666667
+        },
+        {
+            "name": "FS34X",
+            "lat": 25.684788883333333,
+            "lon": 88.93463333333334
+        },
+        {
+            "name": "FV16W",
+            "lat": 25.83115,
+            "lon": 88.87659443333334
+        },
+        {
+            "name": "SD160",
+            "lat": 25.851419433333334,
+            "lon": 88.87096666666666
+        },
+        {
+            "name": "SD161",
+            "lat": 25.906238883333334,
+            "lon": 88.84835556666667
+        },
+        {
+            "name": "SD162",
+            "lat": 25.984541666666665,
+            "lon": 88.81601943333334
+        },
+        {
+            "name": "SD340",
+            "lat": 25.666705566666668,
+            "lon": 88.94698888333333
+        },
+        {
+            "name": "SD341",
+            "lat": 25.611869433333332,
+            "lon": 88.96951111666667
+        },
+        {
+            "name": "SD342",
+            "lat": 25.533527783333334,
+            "lon": 89.00164443333334
+        },
+        {
+            "name": "SDMHP",
+            "lat": 25.790463883333334,
+            "lon": 89.07308888333333
+        },
+        {
+            "name": "SDNB",
+            "lat": 25.764519433333334,
+            "lon": 88.90968333333333
+        },
+        {
+            "name": "SDP",
+            "lat": 25.764433333333333,
+            "lon": 88.90943056666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FN16": "FN16 1200 RNW 16",
+                "SDNB": "OVERFLY SDNB TRK 150 UNTIL 2000 HDG 150 VECTORS FAF FN16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "SD",
+                    "fixes": {
+                        "SDNB": "SDNB AT OR ABOVE 2000 SPEED 150 TRK 342 UNTIL 7.5 FROM SDNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB34",
+            "fixes": {
+                "FN34": "FN34 1200 RNW 34",
+                "SDNB": "OVERFLY SDNB TRK 340 UNTIL 2000 HDG 340 VECTORS FAF FN34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "SD",
+                    "fixes": {
+                        "SDNB": "SDNB AT OR ABOVE 2000 TRK 145 UNTIL 8.8 FROM SDNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "SD161": "SD161 AT OR ABOVE 1900 SPEED 200",
+                "SD160": "SD160 1900 RNW 16 TRK 160 UNTIL 1200 TURN LEFT DIRECT",
+                "SDMHP": "OVERFLY SDMHP 3000 SPEED 230 HOLD AT SDMHP RIGHT TURN INBOUNDCOURSE 340 ALT 3000 SPEED 230 LEGTIME 1 FAF SD160 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "SD162",
+                    "fixes": {
+                        "SD162": "SD162 AT OR ABOVE 3100 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "SD341": "SD341 AT OR ABOVE 1900 SPEED 200",
+                "SD340": "SD340 1900 RNW 34 TRK 340 UNTIL 1200 TURN RIGHT DIRECT",
+                "SDMHP": "OVERFLY SDMHP 3000 SPEED 230 HOLD AT SDMHP RIGHT TURN INBOUNDCOURSE 160 ALT 3000 SPEED 230 LEGTIME 1 FAF SD340 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "SD342",
+                    "fixes": {
+                        "SD342": "SD342 AT OR ABOVE 3100 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORW16",
+            "fixes": {
+                "FV16W": "FV16W 1500 RNW 16",
+                "SDP": "OVERFLY SDP TRK 156 UNTIL 1500 TURN LEFT DIRECT SDP 3000 HOLD AT SDP RIGHT TURN INBOUNDCOURSE 356 ALT 3000 LEGTIME 1 FAF FV16W MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "SDP1",
+                    "fixes": {
+                        "SDP": "SDP AT OR ABOVE 3000 SPEED 220 TRK 356 UNTIL 9.2 FROM SDP"
+                    }
+                },
+                {
+                    "name": "SDP2",
+                    "fixes": {
+                        "SDP": "SDP AT OR ABOVE 3000 SPEED 140 TRK 348 UNTIL 7.0 FROM SDP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORX34",
+            "fixes": {
+                "FS34X": "FS34X 1500 RNW 34",
+                "SDP": "OVERFLY SDP TRK 344 UNTIL 1500 TURN LEFT DIRECT SDP 3000 HOLD AT SDP RIGHT TURN INBOUNDCOURSE 144 ALT 3000 LEGTIME 1 FAF FS34X MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "SDP1",
+                    "fixes": {
+                        "SDP": "SDP AT OR ABOVE 3000 SPEED 220 TRK 144 UNTIL 9.2 FROM SDP"
+                    }
+                },
+                {
+                    "name": "SDP2",
+                    "fixes": {
+                        "SDP": "SDP AT OR ABOVE 3000 SPEED 140 TRK 152 UNTIL 7.0 FROM SDP"
+                    }
+                }
+            ]
+        }
+    ]
+}

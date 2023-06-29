@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "DIEGG",
+            "lat": 64.414575,
+            "lon": 161.26521111666668
+        },
+        {
+            "name": "FANUB",
+            "lat": 64.17566943333334,
+            "lon": 161.04028333333332
+        },
+        {
+            "name": "HEBDU",
+            "lat": 64.23166943333334,
+            "lon": 160.72212221666666
+        },
+        {
+            "name": "ISOTE",
+            "lat": 64.52855,
+            "lon": 161.750075
+        },
+        {
+            "name": "JITUR",
+            "lat": 64.64288333333333,
+            "lon": 161.107075
+        },
+        {
+            "name": "MEALT",
+            "lat": 64.58606666666667,
+            "lon": 161.42925
+        },
+        {
+            "name": "PARZY",
+            "lat": 64.27258611666667,
+            "lon": 161.13102778333334
+        },
+        {
+            "name": "SEBKY",
+            "lat": 64.49394166666667,
+            "lon": 161.34085
+        },
+        {
+            "name": "WOLIG",
+            "lat": 64.11898056666666,
+            "lon": 161.35715556666668
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "MEALT": "MEALT AT OR ABOVE 3000",
+                "SEBKY": "SEBKY 2500",
+                "DIEGG": "DIEGG AT OR ABOVE 840 RNW 15 TRK 147 UNTIL 271",
+                "FANUB": "OVERFLY FANUB AT OR ABOVE 3500 HOLD AT FANUB RIGHT TURN INBOUNDCOURSE 327 ALT 3500 LEGDIST 4 FAF SEBKY MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "ISOTE",
+                    "fixes": {
+                        "ISOTE": "ISOTE"
+                    }
+                },
+                {
+                    "name": "JITUR",
+                    "fixes": {
+                        "JITUR": "JITUR"
+                    }
+                },
+                {
+                    "name": "MEALT",
+                    "fixes": {
+                        "MEALT": "MEALT RIGHT TURN INBOUNDCOURSE 147 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "FANUB": "FANUB AT OR ABOVE 3500",
+                "PARZY": "PARZY 2000 RNW 33 TRK 327 UNTIL 424",
+                "MEALT": "OVERFLY MEALT AT OR ABOVE 3000 HOLD AT MEALT RIGHT TURN INBOUNDCOURSE 147 LEGDIST 4 FAF PARZY MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "FANUB",
+                    "fixes": {
+                        "FANUB": "FANUB RIGHT TURN INBOUNDCOURSE 327 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HEBDU",
+                    "fixes": {
+                        "HEBDU": "HEBDU"
+                    }
+                },
+                {
+                    "name": "WOLIG",
+                    "fixes": {
+                        "WOLIG": "WOLIG"
+                    }
+                }
+            ]
+        }
+    ]
+}

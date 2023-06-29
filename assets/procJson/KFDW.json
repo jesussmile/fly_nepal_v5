@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "KICKY",
+            "lat": 34.468147216666665,
+            "lon": 80.96340556666667
+        },
+        {
+            "name": "STUPE",
+            "lat": 34.37905833333333,
+            "lon": 81.048325
+        },
+        {
+            "name": "TEPID",
+            "lat": 34.249102783333335,
+            "lon": 81.17179166666666
+        },
+        {
+            "name": "WIBSU",
+            "lat": 34.159747216666666,
+            "lon": 81.25641111666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "WIBSU": "WIBSU AT OR ABOVE 2300",
+                "TEPID": "TEPID 2100 RNW 04 TRK 045 UNTIL 828",
+                "KICKY": "OVERFLY KICKY AT OR ABOVE 2300 HOLD AT KICKY RIGHT TURN INBOUNDCOURSE 225 LEGDIST 4 FAF TEPID MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "WIBSU",
+                    "fixes": {
+                        "WIBSU": "WIBSU RIGHT TURN INBOUNDCOURSE 045 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "KICKY": "KICKY AT OR ABOVE 2300",
+                "STUPE": "STUPE 2000 RNW 22 TRK 225 UNTIL 824",
+                "WIBSU": "OVERFLY WIBSU AT OR ABOVE 2300 HOLD AT WIBSU RIGHT TURN INBOUNDCOURSE 045 LEGDIST 4 FAF STUPE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "KICKY",
+                    "fixes": {
+                        "KICKY": "KICKY RIGHT TURN INBOUNDCOURSE 225 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

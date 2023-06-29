@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "ANDIA",
+            "lat": 30.398205566666668,
+            "lon": 100.33174443333333
+        },
+        {
+            "name": "ASLYA",
+            "lat": 30.537402783333334,
+            "lon": 100.42369443333334
+        },
+        {
+            "name": "JACHR",
+            "lat": 30.736969433333332,
+            "lon": 100.55608611666666
+        },
+        {
+            "name": "JEFSW",
+            "lat": 30.487730566666666,
+            "lon": 100.39085
+        },
+        {
+            "name": "JLBAR",
+            "lat": 30.648219433333335,
+            "lon": 100.49712778333334
+        },
+        {
+            "name": "LOISA",
+            "lat": 30.599327783333333,
+            "lon": 100.46470278333334
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "JACHR": "JACHR AT OR ABOVE 4000",
+                "JLBAR": "JLBAR 4000",
+                "LOISA": "LOISA AT OR ABOVE 2920 RNW 14 TRK 145 UNTIL 2680",
+                "ANDIA": "OVERFLY ANDIA AT OR ABOVE 4000 HOLD AT ANDIA RIGHT TURN INBOUNDCOURSE 325 LEGDIST 4 FAF JLBAR MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "JACHR",
+                    "fixes": {
+                        "JACHR": "JACHR RIGHT TURN INBOUNDCOURSE 145 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "ANDIA": "ANDIA AT OR ABOVE 4000",
+                "JEFSW": "JEFSW 4000",
+                "ASLYA": "ASLYA AT OR ABOVE 2900 RNW 32 TRK 325 UNTIL 2620",
+                "JACHR": "OVERFLY JACHR AT OR ABOVE 4000 HOLD AT JACHR RIGHT TURN INBOUNDCOURSE 145 LEGDIST 4 FAF JEFSW MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "ANDIA",
+                    "fixes": {
+                        "ANDIA": "ANDIA RIGHT TURN INBOUNDCOURSE 325 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

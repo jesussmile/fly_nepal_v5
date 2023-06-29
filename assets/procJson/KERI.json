@@ -1,0 +1,154 @@
+{
+    "fixes": [
+        {
+            "name": "CABSA",
+            "lat": 42.016816666666664,
+            "lon": 80.29669166666666
+        },
+        {
+            "name": "DEFJO",
+            "lat": 42.13933888333333,
+            "lon": 80.06629443333334
+        },
+        {
+            "name": "DUMBY",
+            "lat": 42.107055566666666,
+            "lon": 79.85643611666667
+        },
+        {
+            "name": "EMMAJ",
+            "lat": 41.86242778333333,
+            "lon": 80.31698056666667
+        },
+        {
+            "name": "JONLI",
+            "lat": 42.20230278333333,
+            "lon": 79.94708888333334
+        },
+        {
+            "name": "JUNOG",
+            "lat": 42.058736116666665,
+            "lon": 80.21806388333333
+        },
+        {
+            "name": "LADVE",
+            "lat": 41.957275,
+            "lon": 80.40802778333334
+        },
+        {
+            "name": "RACOY",
+            "lat": 42.297475,
+            "lon": 80.03801388333333
+        },
+        {
+            "name": "TACUN",
+            "lat": 42.05205556666667,
+            "lon": 80.49934721666666
+        },
+        {
+            "name": "YUYXI",
+            "lat": 42.115225,
+            "lon": 80.11178056666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 06",
+        "RNW 20",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS06",
+            "fixes": {
+                "LADVE": "LADVE AT OR ABOVE 3000",
+                "CABSA": "CABSA 2800 RNW 06 TRK 064 UNTIL 1140",
+                "JONLI": "JONLI AT OR ABOVE 3200 HOLD AT JONLI RIGHT TURN INBOUNDCOURSE 245 LEGDIST 4 FAF CABSA MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "LADVE",
+                    "fixes": {
+                        "LADVE": "LADVE RIGHT TURN INBOUNDCOURSE 064 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS24",
+            "fixes": {
+                "JONLI": "JONLI AT OR ABOVE 3200",
+                "DEFJO": "DEFJO 2400 RNW 24 TRK 244 UNTIL 1140",
+                "LADVE": "LADVE AT OR ABOVE 3000 HOLD AT LADVE RIGHT TURN INBOUNDCOURSE 064 LEGDIST 4 FAF DEFJO MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "JONLI",
+                    "fixes": {
+                        "JONLI": "JONLI RIGHT TURN INBOUNDCOURSE 244 ALT 3200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "LADVE": "LADVE AT OR ABOVE 3000",
+                "CABSA": "CABSA 2800",
+                "JUNOG": "JUNOG AT OR ABOVE 1420 RNW 06 TRK 064 UNTIL 982",
+                "JONLI": "OVERFLY JONLI AT OR ABOVE 3200 HOLD AT JONLI RIGHT TURN INBOUNDCOURSE 245 LEGDIST 4 FAF CABSA MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "EMMAJ",
+                    "fixes": {
+                        "EMMAJ": "EMMAJ"
+                    }
+                },
+                {
+                    "name": "LADVE",
+                    "fixes": {
+                        "LADVE": "LADVE RIGHT TURN INBOUNDCOURSE 064 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TACUN",
+                    "fixes": {
+                        "TACUN": "TACUN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "JONLI": "JONLI AT OR ABOVE 3200",
+                "DEFJO": "DEFJO 2400",
+                "YUYXI": "YUYXI AT OR ABOVE 1600 RNW 24 TRK 245 UNTIL 942",
+                "LADVE": "OVERFLY LADVE AT OR ABOVE 3000 HOLD AT LADVE RIGHT TURN INBOUNDCOURSE 064 LEGDIST 4 FAF DEFJO MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "DUMBY",
+                    "fixes": {
+                        "DUMBY": "DUMBY"
+                    }
+                },
+                {
+                    "name": "JONLI",
+                    "fixes": {
+                        "JONLI": "JONLI RIGHT TURN INBOUNDCOURSE 245 ALT 3200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RACOY",
+                    "fixes": {
+                        "RACOY": "RACOY"
+                    }
+                }
+            ]
+        }
+    ]
+}

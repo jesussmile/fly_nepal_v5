@@ -1,0 +1,77 @@
+{
+    "fixes": [
+        {
+            "name": "FJY23",
+            "lat": 49.087666666666664,
+            "lon": 5.990694433333333
+        },
+        {
+            "name": "IJY23",
+            "lat": 49.13002778333333,
+            "lon": 6.069
+        },
+        {
+            "name": "JY400",
+            "lat": 49.215305566666665,
+            "lon": 5.673388883333334
+        },
+        {
+            "name": "JY402",
+            "lat": 49.20708333333334,
+            "lon": 5.833333333333333
+        },
+        {
+            "name": "JY404",
+            "lat": 49.19552778333333,
+            "lon": 6.051388883333333
+        },
+        {
+            "name": "JY420",
+            "lat": 49.00491666666667,
+            "lon": 5.838333333333333
+        },
+        {
+            "name": "MTZNB",
+            "lat": 49.27613888333333,
+            "lon": 6.208611116666667
+        }
+    ],
+    "rnws": [
+        "RNW 05C",
+        "RNW 05L",
+        "RNW 05R",
+        "RNW 23C",
+        "RNW 23L",
+        "RNW 23R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV23LA",
+            "fixes": {
+                "IJY23": "IJY23 AT OR ABOVE 2600 SPEED 220",
+                "FJY23": "FJY23 2600 SPEED 160 RNW 23L",
+                "JY420": "OVERFLY JY420 TURN RIGHT DIRECT",
+                "JY400": "JY400 AT OR ABOVE 2600 FAF FJY23 MAP RNW 23L"
+            },
+            "transitions": [
+                {
+                    "name": "JY400",
+                    "fixes": {
+                        "JY400": "JY400 AT OR ABOVE 2600",
+                        "JY402": "JY402 AT OR BELOW 5500",
+                        "JY404": "JY404 AT OR BELOW 3000 AT OR ABOVE 2600 SPEED 220"
+                    }
+                },
+                {
+                    "name": "MTZ",
+                    "fixes": {
+                        "MTZNB": "MTZNB AT OR ABOVE 5000",
+                        "JY404": "JY404 AT OR BELOW 3000 AT OR ABOVE 2600 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

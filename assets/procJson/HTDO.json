@@ -1,0 +1,135 @@
+{
+    "fixes": [
+        {
+            "name": "DO701",
+            "lat": 6.1753694333333335,
+            "lon": 35.95588333333333
+        },
+        {
+            "name": "DO702",
+            "lat": 6.173363883333334,
+            "lon": 35.87224166666667
+        },
+        {
+            "name": "DO901",
+            "lat": 6.166075,
+            "lon": 35.57257778333334
+        },
+        {
+            "name": "DO902",
+            "lat": 6.168125,
+            "lon": 35.656216666666666
+        },
+        {
+            "name": "DO903",
+            "lat": 6.1726833333333335,
+            "lon": 35.84398888333333
+        },
+        {
+            "name": "DO904",
+            "lat": 6.072230566666667,
+            "lon": 35.846424999999996
+        },
+        {
+            "name": "DUSNO",
+            "lat": 6.065622216666666,
+            "lon": 35.57502778333333
+        },
+        {
+            "name": "EGPOS",
+            "lat": 6.163611116666667,
+            "lon": 35.472211116666664
+        },
+        {
+            "name": "EPTUR",
+            "lat": 6.074913883333333,
+            "lon": 35.958294433333336
+        },
+        {
+            "name": "IMKUR",
+            "lat": 6.177372216666667,
+            "lon": 36.039525
+        },
+        {
+            "name": "IXAGO",
+            "lat": 6.275822216666667,
+            "lon": 35.95347221666667
+        },
+        {
+            "name": "XABLI",
+            "lat": 6.266525,
+            "lon": 35.570125
+        },
+        {
+            "name": "XOVEK",
+            "lat": 5.982725,
+            "lon": 35.675
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "DO901": "DO901 AT OR ABOVE 5400 SPEED 220",
+                "DO902": "DO902 5400 RNW 09",
+                "DO903": "DO903 SPEED 220",
+                "DO904": "DO904 SPEED 220",
+                "DUSNO": "DUSNO SPEED 220 HOLD AT DUSNO RIGHT TURN INBOUNDCOURSE 182 ALT 6200 SPEED 220 LEGTIME 1 FAF DO902 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DUSNO",
+                    "fixes": {
+                        "DUSNO": "DUSNO AT OR ABOVE 6200 SPEED 220"
+                    }
+                },
+                {
+                    "name": "EGPOS",
+                    "fixes": {
+                        "EGPOS": "EGPOS AT OR ABOVE 5500 SPEED 220"
+                    }
+                },
+                {
+                    "name": "XABLI",
+                    "fixes": {
+                        "XABLI": "XABLI AT OR ABOVE 6200 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "DO701": "DO701 AT OR ABOVE 5700 SPEED 220",
+                "DO702": "DO702 5700 RNW 27 TRK 272 UNTIL 5500 TURN RIGHT DIRECT",
+                "XOVEK": "OVERFLY XOVEK SPEED 220 HOLD AT XOVEK LEFT TURN INBOUNDCOURSE 100 ALT 7000 SPEED 220 LEGTIME 1 FAF DO702 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "EPTUR",
+                    "fixes": {
+                        "EPTUR": "EPTUR AT OR ABOVE 7300 SPEED 220"
+                    }
+                },
+                {
+                    "name": "IMKUR",
+                    "fixes": {
+                        "IMKUR": "IMKUR AT OR ABOVE 6600 SPEED 220"
+                    }
+                },
+                {
+                    "name": "IXAGO",
+                    "fixes": {
+                        "IXAGO": "IXAGO AT OR ABOVE 6500 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

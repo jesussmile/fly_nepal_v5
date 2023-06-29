@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "DG2EC",
+            "lat": 25.476091666666665,
+            "lon": 119.52959166666666
+        },
+        {
+            "name": "DG2ED",
+            "lat": 25.63316388333333,
+            "lon": 119.53259166666666
+        },
+        {
+            "name": "DG2EF",
+            "lat": 25.556736116666666,
+            "lon": 119.39131111666667
+        },
+        {
+            "name": "DG2EI",
+            "lat": 25.555119433333335,
+            "lon": 119.49957778333334
+        },
+        {
+            "name": "DG2WA",
+            "lat": 25.640794433333333,
+            "lon": 119.04521666666666
+        },
+        {
+            "name": "DG2WB",
+            "lat": 25.483730566666665,
+            "lon": 119.04225833333334
+        },
+        {
+            "name": "DG2WF",
+            "lat": 25.559988883333332,
+            "lon": 119.18301943333333
+        },
+        {
+            "name": "DG2WI",
+            "lat": 25.561558333333334,
+            "lon": 119.07525833333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "DEP09",
+            "rnw": "09",
+            "fixes": {
+                "DG2EI": "OVERFLY DG2EI AT OR ABOVE 3400"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DEP27",
+            "rnw": "27",
+            "fixes": {
+                "DG2WI": "OVERFLY DG2WI AT OR ABOVE 3400"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "DG2WI": "DG2WI AT OR ABOVE 3700",
+                "DG2WF": "DG2WF 3500 RNW 09 TURN RIGHT DIRECT",
+                "DG2WA": "DG2WA AT OR ABOVE 3700 SPEED 210 FAF DG2WF MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DG2WA",
+                    "fixes": {
+                        "DG2WA": "DG2WA AT OR ABOVE 3700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "DG2WB",
+                    "fixes": {
+                        "DG2WB": "DG2WB AT OR ABOVE 3700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "DG2EI": "DG2EI AT OR ABOVE 3700",
+                "DG2EF": "DG2EF 3500 RNW 27 TURN LEFT DIRECT",
+                "DG2ED": "DG2ED AT OR ABOVE 3700 SPEED 210 FAF DG2EF MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "DG2EC",
+                    "fixes": {
+                        "DG2EC": "DG2EC AT OR ABOVE 3700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "DG2ED",
+                    "fixes": {
+                        "DG2ED": "DG2ED AT OR ABOVE 3700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

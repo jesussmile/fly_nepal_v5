@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "AYAGI",
+            "lat": 62.787083333333335,
+            "lon": 155.98741388333335
+        },
+        {
+            "name": "BRYCI",
+            "lat": 62.66384443333333,
+            "lon": 155.63639166666667
+        },
+        {
+            "name": "CFDFX",
+            "lat": 62.88553888333333,
+            "lon": 155.97885556666665
+        },
+        {
+            "name": "CFRCQ",
+            "lat": 62.91227778333333,
+            "lon": 155.95324166666666
+        },
+        {
+            "name": "CURTS",
+            "lat": 62.98581111666667,
+            "lon": 155.47742221666667
+        },
+        {
+            "name": "GLIBB",
+            "lat": 62.670861116666664,
+            "lon": 155.99744443333333
+        },
+        {
+            "name": "JOSUA",
+            "lat": 62.63656111666667,
+            "lon": 156.28379166666667
+        },
+        {
+            "name": "MCG",
+            "lat": 62.951033333333335,
+            "lon": 155.61138056666667
+        },
+        {
+            "name": "PALBE",
+            "lat": 62.97687221666666,
+            "lon": 155.821975
+        },
+        {
+            "name": "PHOMM",
+            "lat": 63.13499443333333,
+            "lon": 155.83943056666666
+        },
+        {
+            "name": "SUANT",
+            "lat": 63.049883333333334,
+            "lon": 155.67258611666668
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "TLJ2",
+            "rnw": "17",
+            "fixes": {
+                "MCG": "MCG AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA17",
+            "fixes": {
+                "SUANT": "SUANT AT OR ABOVE 4000",
+                "PALBE": "PALBE 3900",
+                "CFRCQ": "OVERFLY CFRCQ 2880 RNW 17 TURN LEFT DIRECT",
+                "CURTS": "OVERFLY CURTS 4000 HOLD AT CURTS RIGHT TURN INBOUNDCOURSE 290 SPEED 310 LEGDIST 2 FAF PALBE MAP CFRCQ"
+            },
+            "transitions": [
+                {
+                    "name": "CURTS",
+                    "fixes": {
+                        "CURTS": "CURTS AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "PHOMM",
+                    "fixes": {
+                        "PHOMM": "PHOMM AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "GLIBB": "GLIBB AT OR ABOVE 4000",
+                "AYAGI": "AYAGI 2900",
+                "CFDFX": "OVERFLY CFDFX 1640 RNW 35 TURN RIGHT DIRECT",
+                "BRYCI": "OVERFLY BRYCI 5000 HOLD AT BRYCI RIGHT TURN INBOUNDCOURSE 257 SPEED 310 LEGDIST 2 FAF AYAGI MAP CFDFX"
+            },
+            "transitions": [
+                {
+                    "name": "BRYCI",
+                    "fixes": {
+                        "BRYCI": "BRYCI AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "JOSUA",
+                    "fixes": {
+                        "JOSUA": "JOSUA AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA35",
+            "fixes": {
+                "SUANT": "SUANT AT OR ABOVE 4000",
+                "PALBE": "PALBE 3900",
+                "CFRCQ": "OVERFLY CFRCQ 2880 RNW 35 TURN LEFT DIRECT",
+                "CURTS": "OVERFLY CURTS 4000 HOLD AT CURTS RIGHT TURN INBOUNDCOURSE 290 SPEED 310 LEGDIST 2 FAF PALBE MAP CFRCQ"
+            },
+            "transitions": [
+                {
+                    "name": "CURTS",
+                    "fixes": {
+                        "CURTS": "CURTS AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "PHOMM",
+                    "fixes": {
+                        "PHOMM": "PHOMM AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

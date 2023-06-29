@@ -1,0 +1,197 @@
+{
+    "fixes": [
+        {
+            "name": "AIRBE",
+            "lat": 36.736866666666664,
+            "lon": 87.4137
+        },
+        {
+            "name": "BNA",
+            "lat": 36.13696111666667,
+            "lon": 86.68477221666667
+        },
+        {
+            "name": "CFVGF",
+            "lat": 36.81528333333333,
+            "lon": 87.31865833333333
+        },
+        {
+            "name": "CHNUK",
+            "lat": 36.827255566666665,
+            "lon": 87.30411666666667
+        },
+        {
+            "name": "FK",
+            "lat": 36.73700278333333,
+            "lon": 87.41385278333334
+        },
+        {
+            "name": "HOLIK",
+            "lat": 36.715558333333334,
+            "lon": 87.49703333333333
+        },
+        {
+            "name": "HUPTO",
+            "lat": 36.76068333333333,
+            "lon": 87.49780556666667
+        },
+        {
+            "name": "HUXEP",
+            "lat": 36.718011116666666,
+            "lon": 87.43651943333333
+        },
+        {
+            "name": "HXW",
+            "lat": 36.65930278333333,
+            "lon": 87.51113611666666
+        },
+        {
+            "name": "JOSAL",
+            "lat": 36.743569433333334,
+            "lon": 87.40559443333333
+        },
+        {
+            "name": "PI001",
+            "lat": 36.77881745,
+            "lon": 87.36310808333333
+        },
+        {
+            "name": "PI002",
+            "lat": 36.850473183333335,
+            "lon": 87.36467113333333
+        },
+        {
+            "name": "PI003",
+            "lat": 36.856669116666666,
+            "lon": 87.26900461666666
+        },
+        {
+            "name": "PI004",
+            "lat": 36.778953566666665,
+            "lon": 87.36326076666667
+        },
+        {
+            "name": "PI005",
+            "lat": 36.8506093,
+            "lon": 87.36482381666667
+        },
+        {
+            "name": "PI006",
+            "lat": 36.856805216666665,
+            "lon": 87.26915713333334
+        },
+        {
+            "name": "SHRMN",
+            "lat": 36.877422216666666,
+            "lon": 87.49981111666666
+        },
+        {
+            "name": "VAYUY",
+            "lat": 36.68471388333333,
+            "lon": 87.47721943333333
+        },
+        {
+            "name": "WOWED",
+            "lat": 36.75045278333333,
+            "lon": 87.3901
+        },
+        {
+            "name": "ZIKIG",
+            "lat": 36.81881666666666,
+            "lon": 87.29901943333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 18",
+        "RNW 23",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS23",
+            "fixes": {
+                "CFVGF": "CFVGF AT OR ABOVE 2500",
+                "AIRBE": "AIRBE 2200 RNW 23 TRK 225 UNTIL 1200 TURN RIGHT DIRECT AIRBE AT OR ABOVE 2500 HOLD AT AIRBE RIGHT TURN INBOUNDCOURSE 225 LEGTIME 1 FAF AIRBE MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "AIRBE",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB23",
+            "fixes": {
+                "FK": "FK 2100 RNW 23 TRK 225 UNTIL 1200 TURN RIGHT DIRECT FK AT OR ABOVE 2500 HOLD AT FK RIGHT TURN INBOUNDCOURSE 225 LEGTIME 1 FAF FK MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "FK",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2500 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2500 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "SHRMN": "SHRMN AT OR ABOVE 3000 OVERFLY SHRMN AT OR ABOVE 3000 HOLD AT SHRMN RIGHT TURN INBOUNDCOURSE 180 LEGDIST 6 FAF HUPTO MAP RNW 18",
+                "HUPTO": "HUPTO 2200",
+                "HOLIK": "HOLIK AT OR ABOVE 1340 RNW 18 TRK 180 UNTIL 971 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SHRMN",
+                    "fixes": {
+                        "SHRMN": "SHRMN RIGHT TURN INBOUNDCOURSE 180 ALT 3000 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "CHNUK": "CHNUK AT OR ABOVE 3000 OVERFLY CHNUK AT OR ABOVE 3000 HOLD AT CHNUK RIGHT TURN INBOUNDCOURSE 225 ALT 6000 LEGDIST 6 FAF JOSAL MAP RNW 23",
+                "JOSAL": "JOSAL 2200",
+                "HUXEP": "HUXEP AT OR ABOVE 1500 RNW 23 TRK 225 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CHNUK",
+                    "fixes": {
+                        "CHNUK": "CHNUK RIGHT TURN INBOUNDCOURSE 225 ALT 3000 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR23",
+            "fixes": {
+                "ZIKIG": "ZIKIG AT OR ABOVE 2500 ZIKIG ZIKIG AT OR ABOVE 2500 HOLD AT ZIKIG RIGHT TURN INBOUNDCOURSE 228 ALT 6000 SPEED 230 LEGTIME 1 FAF WOWED MAP VAYUY",
+                "WOWED": "WOWED 2500",
+                "VAYUY": "VAYUY 626 RNW 23 TRK 228 UNTIL 1200 TURN RIGHT HDG 078 INTERCEPT RADIAL 048 TO"
+            },
+            "transitions": [
+                {
+                    "name": "BNA",
+                    "fixes": {
+                        "BNA": "BNA AT OR ABOVE 3100",
+                        "HXW": "HXW AT OR ABOVE 3100 TURN RIGHT DIRECT",
+                        "ZIKIG": "ZIKIG AT OR ABOVE 2500 HOLD AT ZIKIG RIGHT TURN INBOUNDCOURSE 228 ALT 2500 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

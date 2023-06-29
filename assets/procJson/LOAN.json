@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "AN800",
+            "lat": 47.83710833333333,
+            "lon": 16.397291666666668
+        },
+        {
+            "name": "AN802",
+            "lat": 47.84156111666667,
+            "lon": 16.295363883333334
+        },
+        {
+            "name": "AN803",
+            "lat": 47.84089721666667,
+            "lon": 16.310672216666667
+        },
+        {
+            "name": "GESGI",
+            "lat": 47.83542778333333,
+            "lon": 16.435158333333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "GESG1A",
+            "rnw": "09",
+            "fixes": {
+                "AN803": "AN803 AT OR ABOVE 1400",
+                "GESGI": "OVERFLY GESGI AT OR ABOVE 3000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA09",
+            "fixes": {
+                "AN800": "AN800 3000",
+                "AN802": "OVERFLY AN802 1480 RNW 09 TURN RIGHT DIRECT",
+                "GESGI": "GESGI 3000 SPEED 130 HOLD AT GESGI LEFT TURN INBOUNDCOURSE 320 ALT 3000 SPEED 140 LEGTIME 1 FAF AN800 MAP AN802"
+            },
+            "transitions": [
+                {
+                    "name": "GESGI",
+                    "fixes": {
+                        "GESGI": "GESGI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA27",
+            "fixes": {
+                "AN800": "AN800 3000",
+                "AN802": "OVERFLY AN802 1480 RNW 27 TURN RIGHT DIRECT",
+                "GESGI": "GESGI 3000 SPEED 130 HOLD AT GESGI LEFT TURN INBOUNDCOURSE 320 ALT 3000 SPEED 140 LEGTIME 1 FAF AN800 MAP AN802"
+            },
+            "transitions": [
+                {
+                    "name": "GESGI",
+                    "fixes": {
+                        "GESGI": "GESGI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

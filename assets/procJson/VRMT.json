@@ -1,0 +1,155 @@
+{
+    "fixes": [
+        {
+            "name": "D185E",
+            "lat": 0.41705556666666665,
+            "lon": 72.99525833333334
+        },
+        {
+            "name": "D346E",
+            "lat": 0.5702083333333333,
+            "lon": 72.96979721666666
+        },
+        {
+            "name": "DULAL",
+            "lat": 0.38322221666666667,
+            "lon": 73.132
+        },
+        {
+            "name": "EMRIS",
+            "lat": 0.6601944333333333,
+            "lon": 73.01136111666666
+        },
+        {
+            "name": "FN16",
+            "lat": 0.5492805666666667,
+            "lon": 72.95520556666666
+        },
+        {
+            "name": "FN34",
+            "lat": 0.41980833333333334,
+            "lon": 73.019775
+        },
+        {
+            "name": "KANB",
+            "lat": 0.49577778333333333,
+            "lon": 72.99525833333334
+        },
+        {
+            "name": "MESUB",
+            "lat": 0.5929166666666668,
+            "lon": 72.859
+        },
+        {
+            "name": "MT410",
+            "lat": 0.5728611166666667,
+            "lon": 72.95855556666666
+        },
+        {
+            "name": "MT411",
+            "lat": 0.6265555666666667,
+            "lon": 72.93519443333334
+        },
+        {
+            "name": "MT412",
+            "lat": 0.40325,
+            "lon": 73.03244443333334
+        },
+        {
+            "name": "MT413",
+            "lat": 0.3495555666666667,
+            "lon": 73.05583333333334
+        },
+        {
+            "name": "OGAKA",
+            "lat": 0.31588888333333337,
+            "lon": 72.97966666666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FN16": "FN16 1000",
+                "KANB": "KANB 116 RNW 16 TRK 148 UNTIL 1500 TURN RIGHT DIRECT KANB 2000 SPEED 140 FAF FN16 MAP KA"
+            },
+            "transitions": [
+                {
+                    "name": "KA",
+                    "fixes": {
+                        "KANB": "KANB SPEED 140",
+                        "D346E": "OVERFLY D346E AT OR ABOVE 1000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB34",
+            "fixes": {
+                "FN34": "FN34 1000 RNW 34",
+                "KANB": "OVERFLY KANB TRK 347 UNTIL 1500 TURN RIGHT DIRECT KANB 2000 SPEED 140 FAF FN34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "KA",
+                    "fixes": {
+                        "KANB": "KANB SPEED 140",
+                        "D185E": "OVERFLY D185E AT OR ABOVE 1000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "MT410": "MT410 1700 RNW 16 TRK 160 UNTIL 1000 TURN RIGHT DIRECT",
+                "MESUB": "MESUB 3000 HOLD AT MESUB RIGHT TURN INBOUNDCOURSE 070 ALT 3000 LEGTIME 1 FAF MT410 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "EMRIS",
+                    "fixes": {
+                        "EMRIS": "EMRIS",
+                        "MT411": "MT411"
+                    }
+                },
+                {
+                    "name": "MESUB",
+                    "fixes": {
+                        "MESUB": "MESUB",
+                        "MT411": "MT411"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "MT412": "MT412 1700 RNW 34 TRK 340 UNTIL 1000 TURN RIGHT DIRECT",
+                "DULAL": "DULAL 3000 HOLD AT DULAL RIGHT TURN INBOUNDCOURSE 250 ALT 3000 LEGTIME 1 FAF MT412 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "DULAL",
+                    "fixes": {
+                        "DULAL": "DULAL",
+                        "MT413": "MT413"
+                    }
+                },
+                {
+                    "name": "OGAKA",
+                    "fixes": {
+                        "OGAKA": "OGAKA",
+                        "MT413": "MT413"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "AMOPO",
+            "lat": 48.773861116666666,
+            "lon": 3.2323333333333335
+        },
+        {
+            "name": "FRO29",
+            "lat": 48.71041666666667,
+            "lon": 3.263
+        },
+        {
+            "name": "IRO29",
+            "lat": 48.690083333333334,
+            "lon": 3.1671666666666667
+        },
+        {
+            "name": "RO404",
+            "lat": 48.75352778333333,
+            "lon": 3.1363611166666665
+        },
+        {
+            "name": "RO405",
+            "lat": 48.61080556666667,
+            "lon": 3.2055277833333333
+        },
+        {
+            "name": "RO410",
+            "lat": 48.76233333333333,
+            "lon": 3.510055566666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "IRO29": "IRO29 AT OR ABOVE 3000 SPEED 195",
+                "FRO29": "FRO29 3000 RNW 29",
+                "RO410": "OVERFLY RO410 TURN RIGHT DIRECT",
+                "AMOPO": "AMOPO AT OR ABOVE 3000 SPEED 185 FAF FRO29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "AMOPO",
+                    "fixes": {
+                        "AMOPO": "AMOPO AT OR ABOVE 3000 SPEED 195",
+                        "RO404": "RO404 AT OR ABOVE 3000 SPEED 195"
+                    }
+                },
+                {
+                    "name": "RO404",
+                    "fixes": {
+                        "RO404": "RO404 AT OR ABOVE 3000 SPEED 195"
+                    }
+                },
+                {
+                    "name": "RO405",
+                    "fixes": {
+                        "RO405": "RO405 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

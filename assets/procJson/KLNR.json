@@ -1,0 +1,179 @@
+{
+    "fixes": [
+        {
+            "name": "BOCAY",
+            "lat": 43.212955566666665,
+            "lon": 90.10996666666666
+        },
+        {
+            "name": "CABIG",
+            "lat": 43.21370278333333,
+            "lon": 89.89902221666667
+        },
+        {
+            "name": "CEBLU",
+            "lat": 43.31090556666667,
+            "lon": 90.45793333333333
+        },
+        {
+            "name": "CEKDO",
+            "lat": 43.212997216666665,
+            "lon": 90.10004166666667
+        },
+        {
+            "name": "CF27",
+            "lat": 43.213711116666666,
+            "lon": 89.89380556666667
+        },
+        {
+            "name": "DALEY",
+            "lat": 42.90502778333333,
+            "lon": 89.7884
+        },
+        {
+            "name": "DIYAS",
+            "lat": 43.21325278333333,
+            "lon": 90.03813888333333
+        },
+        {
+            "name": "DLL",
+            "lat": 43.55083333333333,
+            "lon": 89.76362221666666
+        },
+        {
+            "name": "ESEVE",
+            "lat": 43.21184443333333,
+            "lon": 90.31752778333333
+        },
+        {
+            "name": "FINKO",
+            "lat": 43.21089166666667,
+            "lon": 90.45654721666666
+        },
+        {
+            "name": "GESLE",
+            "lat": 43.110875,
+            "lon": 90.45516388333333
+        },
+        {
+            "name": "LENRE",
+            "lat": 43.3443,
+            "lon": 90.06160833333334
+        },
+        {
+            "name": "MSN",
+            "lat": 43.14483611666667,
+            "lon": 89.33969721666666
+        },
+        {
+            "name": "PI001",
+            "lat": 43.21324988333333,
+            "lon": 89.95117198333334
+        },
+        {
+            "name": "PI002",
+            "lat": 43.26390478333333,
+            "lon": 89.88158166666666
+        },
+        {
+            "name": "PI003",
+            "lat": 43.21305003333333,
+            "lon": 89.80252838333334
+        },
+        {
+            "name": "PUDEE",
+            "lat": 43.21327778333333,
+            "lon": 90.03121111666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC27",
+            "fixes": {
+                "CF27": "CF27 AT OR ABOVE 2700",
+                "PUDEE": "PUDEE 2700",
+                "BOCAY": "BOCAY AT OR ABOVE 1580 RNW 27 TRK 270 UNTIL 2200 TURN RIGHT HDG 070 INTERCEPT RADIAL 044 TO",
+                "LENRE": "LENRE LENRE AT OR ABOVE 3300 HOLD AT LENRE RIGHT TURN INBOUNDCOURSE 224 LEGTIME 1 FAF PUDEE MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "PUDEE",
+                    "fixes": {
+                        "PUDEE": "PUDEE AT OR BELOW 6000",
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "FINKO": "FINKO AT OR ABOVE 3000",
+                "ESEVE": "ESEVE 2600 RNW 09 TRK 090 UNTIL 994",
+                "CABIG": "OVERFLY CABIG AT OR ABOVE 3000 HOLD AT CABIG RIGHT TURN INBOUNDCOURSE 270 LEGDIST 4 FAF ESEVE MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DALEY",
+                    "fixes": {
+                        "DALEY": "DALEY",
+                        "GESLE": "GESLE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "DLL",
+                    "fixes": {
+                        "DLL": "DLL",
+                        "CEBLU": "CEBLU AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "FINKO",
+                    "fixes": {
+                        "FINKO": "FINKO RIGHT TURN INBOUNDCOURSE 089 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "CABIG": "CABIG AT OR ABOVE 3000",
+                "DIYAS": "DIYAS 2600",
+                "CEKDO": "CEKDO AT OR ABOVE 1680 RNW 27 TRK 270 UNTIL 1117",
+                "FINKO": "OVERFLY FINKO AT OR ABOVE 3000 HOLD AT FINKO RIGHT TURN INBOUNDCOURSE 089 LEGDIST 4 FAF DIYAS MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "DALEY",
+                    "fixes": {
+                        "DALEY": "DALEY",
+                        "CABIG": "OVERFLY CABIG AT OR ABOVE 3200 HOLD AT CABIG RIGHT TURN INBOUNDCOURSE 270 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DLL",
+                    "fixes": {
+                        "DLL": "DLL"
+                    }
+                },
+                {
+                    "name": "MSN",
+                    "fixes": {
+                        "MSN": "MSN"
+                    }
+                }
+            ]
+        }
+    ]
+}

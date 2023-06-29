@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "EKDUL",
+            "lat": 44.90023888333333,
+            "lon": 66.73733056666667
+        },
+        {
+            "name": "EMGAM",
+            "lat": 44.781958333333336,
+            "lon": 66.71860556666667
+        },
+        {
+            "name": "ETGOK",
+            "lat": 44.53114721666667,
+            "lon": 66.85073888333334
+        },
+        {
+            "name": "IKDET",
+            "lat": 44.65192221666667,
+            "lon": 66.86679721666667
+        },
+        {
+            "name": "IPVEL",
+            "lat": 44.77486388333333,
+            "lon": 66.72671388333333
+        },
+        {
+            "name": "NAKEG",
+            "lat": 44.846558333333334,
+            "lon": 66.64465833333334
+        },
+        {
+            "name": "OLUDA",
+            "lat": 44.649408333333334,
+            "lon": 66.86965278333334
+        },
+        {
+            "name": "OMPAB",
+            "lat": 44.792802783333336,
+            "lon": 66.55215833333334
+        },
+        {
+            "name": "OTAXI",
+            "lat": 44.63810278333333,
+            "lon": 67.03562778333334
+        },
+        {
+            "name": "UDMEM",
+            "lat": 44.584663883333334,
+            "lon": 66.9431
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "UDMEM": "UDMEM AT OR ABOVE 1800 SPEED 180",
+                "OLUDA": "OLUDA 1800 RNW 06",
+                "IPVEL": "OVERFLY IPVEL 1600 HOLD AT IPVEL RIGHT TURN INBOUNDCOURSE 056 LEGTIME 1 FAF OLUDA MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ETGOK",
+                    "fixes": {
+                        "ETGOK": "ETGOK SPEED 200"
+                    }
+                },
+                {
+                    "name": "OTAXI",
+                    "fixes": {
+                        "OTAXI": "OTAXI SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "NAKEG": "NAKEG AT OR ABOVE 1900 SPEED 180",
+                "EMGAM": "EMGAM 1900 RNW 24",
+                "IKDET": "OVERFLY IKDET 1600 HOLD AT IKDET RIGHT TURN INBOUNDCOURSE 236 LEGTIME 1 FAF EMGAM MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "EKDUL",
+                    "fixes": {
+                        "EKDUL": "EKDUL SPEED 200"
+                    }
+                },
+                {
+                    "name": "OMPAB",
+                    "fixes": {
+                        "OMPAB": "OMPAB SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

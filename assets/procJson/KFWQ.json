@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "AGC",
+            "lat": 40.27864443333333,
+            "lon": 80.04085556666666
+        },
+        {
+            "name": "AKSAR",
+            "lat": 40.15927778333333,
+            "lon": 80.28744721666666
+        },
+        {
+            "name": "DECSA",
+            "lat": 40.179822216666665,
+            "lon": 79.92526111666666
+        },
+        {
+            "name": "EROCU",
+            "lat": 40.13447778333333,
+            "lon": 80.06685833333333
+        },
+        {
+            "name": "EYOPO",
+            "lat": 40.17300556666667,
+            "lon": 79.94659166666666
+        },
+        {
+            "name": "FURIX",
+            "lat": 40.2953,
+            "lon": 79.56125833333333
+        },
+        {
+            "name": "HOMEE",
+            "lat": 40.510188883333335,
+            "lon": 79.403525
+        },
+        {
+            "name": "MILWO",
+            "lat": 40.300891666666665,
+            "lon": 79.38580278333333
+        },
+        {
+            "name": "OSSAR",
+            "lat": 40.245927783333336,
+            "lon": 79.71748333333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "EROCU": "EROCU AT OR ABOVE 3000",
+                "EYOPO": "EYOPO 3000 RNW 08 TRK 076 UNTIL 1628",
+                "FURIX": "OVERFLY FURIX AT OR ABOVE 3700 HOLD AT FURIX LEFT TURN INBOUNDCOURSE 076 LEGDIST 4 FAF EYOPO MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "AKSAR",
+                    "fixes": {
+                        "AKSAR": "AKSAR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "FURIX": "FURIX AT OR ABOVE 3700",
+                "OSSAR": "OSSAR 3000 RNW 26",
+                "DECSA": "DECSA",
+                "AGC": "OVERFLY AGC AT OR ABOVE 3000 HOLD AT AGC RIGHT TURN INBOUNDCOURSE 327 LEGDIST 4 FAF OSSAR MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "HOMEE",
+                    "fixes": {
+                        "HOMEE": "HOMEE"
+                    }
+                },
+                {
+                    "name": "MILWO",
+                    "fixes": {
+                        "MILWO": "MILWO"
+                    }
+                }
+            ]
+        }
+    ]
+}

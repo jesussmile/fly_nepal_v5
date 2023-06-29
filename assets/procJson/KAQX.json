@@ -1,0 +1,173 @@
+{
+    "fixes": [
+        {
+            "name": "ALD",
+            "lat": 33.01249443333333,
+            "lon": 81.29223333333333
+        },
+        {
+            "name": "APTIF",
+            "lat": 33.160572216666665,
+            "lon": 81.333625
+        },
+        {
+            "name": "AXNUP",
+            "lat": 32.79889443333333,
+            "lon": 81.32001666666666
+        },
+        {
+            "name": "CFFJN",
+            "lat": 32.998186116666666,
+            "lon": 81.27746943333334
+        },
+        {
+            "name": "EPAZE",
+            "lat": 32.86025278333334,
+            "lon": 81.09406111666667
+        },
+        {
+            "name": "HETIN",
+            "lat": 32.90883611666667,
+            "lon": 81.23728056666667
+        },
+        {
+            "name": "IMUXY",
+            "lat": 33.19128056666667,
+            "lon": 81.22021943333333
+        },
+        {
+            "name": "IXTIN",
+            "lat": 33.129758333333335,
+            "lon": 81.44695
+        },
+        {
+            "name": "KITHA",
+            "lat": 33.08148056666667,
+            "lon": 81.30331388333333
+        },
+        {
+            "name": "LUCNE",
+            "lat": 32.829625,
+            "lon": 81.20707778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 33.05300618333333,
+            "lon": 81.34229676666666
+        },
+        {
+            "name": "PI002",
+            "lat": 33.124661933333336,
+            "lon": 81.34379023333334
+        },
+        {
+            "name": "PI003",
+            "lat": 33.12818915,
+            "lon": 81.43539403333334
+        },
+        {
+            "name": "UTOYI",
+            "lat": 33.03184721666667,
+            "lon": 81.28429721666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "APTIF": "APTIF AT OR ABOVE 2100",
+                "KITHA": "KITHA 1800",
+                "UTOYI": "UTOYI AT OR ABOVE 800 RNW 17 TRK 168 UNTIL 1000 TURN RIGHT DIRECT",
+                "IXTIN": "OVERFLY IXTIN AT OR ABOVE 2100 HOLD AT IXTIN RIGHT TURN INBOUNDCOURSE 078 LEGDIST 4 FAF KITHA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "APTIF",
+                    "fixes": {
+                        "APTIF": "APTIF RIGHT TURN INBOUNDCOURSE 168 ALT 2100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "IMUXY",
+                    "fixes": {
+                        "IMUXY": "IMUXY AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "IXTIN",
+                    "fixes": {
+                        "IXTIN": "IXTIN AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "LUCNE": "LUCNE AT OR ABOVE 2100",
+                "HETIN": "HETIN 1800 RNW 35 TRK 348 UNTIL 406",
+                "APTIF": "OVERFLY APTIF AT OR ABOVE 2100 HOLD AT APTIF RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4 FAF HETIN MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "AXNUP",
+                    "fixes": {
+                        "AXNUP": "AXNUP AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "EPAZE",
+                    "fixes": {
+                        "EPAZE": "EPAZE AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "LUCNE",
+                    "fixes": {
+                        "LUCNE": "LUCNE RIGHT TURN INBOUNDCOURSE 348 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA17",
+            "fixes": {
+                "ALD": "ALD 1300 ALD AT OR ABOVE 2000 HOLD AT ALD LEFT TURN INBOUNDCOURSE 140 LEGTIME 1 FAF ALD MAP CFFJN",
+                "CFFJN": "CFFJN 860 RNW 17 TRK 140 UNTIL 1300 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ALD",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA35",
+            "fixes": {
+                "ALD": "ALD 1300 ALD AT OR ABOVE 2000 HOLD AT ALD LEFT TURN INBOUNDCOURSE 140 LEGTIME 1 FAF ALD MAP CFFJN",
+                "CFFJN": "CFFJN 860 RNW 35 TRK 140 UNTIL 1300 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ALD",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

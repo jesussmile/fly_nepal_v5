@@ -1,0 +1,156 @@
+{
+    "fixes": [
+        {
+            "name": "EC401",
+            "lat": 48.50180556666667,
+            "lon": 5.1113333333333335
+        },
+        {
+            "name": "EC404",
+            "lat": 48.5815,
+            "lon": 4.961888883333334
+        },
+        {
+            "name": "EC410",
+            "lat": 48.43336111666667,
+            "lon": 5.119361116666667
+        },
+        {
+            "name": "EC504",
+            "lat": 48.421416666666666,
+            "lon": 5.2613611166666665
+        },
+        {
+            "name": "EC510",
+            "lat": 48.492333333333335,
+            "lon": 5.0090555666666665
+        },
+        {
+            "name": "FEC05",
+            "lat": 48.418027783333336,
+            "lon": 5.147972216666667
+        },
+        {
+            "name": "FEC23",
+            "lat": 48.507111116666664,
+            "lon": 4.981361116666667
+        },
+        {
+            "name": "FN23",
+            "lat": 48.49624721666667,
+            "lon": 4.996786116666667
+        },
+        {
+            "name": "IEC05",
+            "lat": 48.3825,
+            "lon": 5.214166666666666
+        },
+        {
+            "name": "IEC23",
+            "lat": 48.5425,
+            "lon": 4.914833333333333
+        },
+        {
+            "name": "MATER",
+            "lat": 48.44833333333333,
+            "lon": 4.783333333333333
+        },
+        {
+            "name": "OSANB",
+            "lat": 48.46522221666667,
+            "lon": 5.0635
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB23",
+            "fixes": {
+                "FN23": "FN23 1200",
+                "OSANB": "OSANB 167 RNW 23 TRK 236 UNTIL 1400 TURN RIGHT DIRECT OSANB 2100 SPEED 150 FAF FN23 MAP OSA"
+            },
+            "transitions": [
+                {
+                    "name": "OSA",
+                    "fixes": {
+                        "OSANB": "OSANB AT OR ABOVE 2100 TRK 082 UNTIL 4.5 FROM OSANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "FEC05": "FEC05 1700 RNW 05",
+                "EC510": "OVERFLY EC510 TURN LEFT DIRECT",
+                "EC401": "EC401 AT OR ABOVE 1700 SPEED 150 FAF FEC05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "EC401",
+                    "fixes": {
+                        "EC401": "EC401 AT OR ABOVE 2700",
+                        "EC504": "EC504 AT OR ABOVE 2700 SPEED 150 TURN LEFT DIRECT",
+                        "IEC05": "IEC05 1700"
+                    }
+                },
+                {
+                    "name": "EC504",
+                    "fixes": {
+                        "EC504": "EC504 AT OR ABOVE 2700 SPEED 150",
+                        "IEC05": "IEC05 1700"
+                    }
+                },
+                {
+                    "name": "IEC05",
+                    "fixes": {
+                        "IEC05": "IEC05 1700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "FEC23": "FEC23 1700 RNW 23",
+                "EC410": "OVERFLY EC410 TURN RIGHT DIRECT",
+                "EC401": "EC401 AT OR ABOVE 1700 SPEED 150 FAF FEC23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "EC401",
+                    "fixes": {
+                        "EC401": "EC401 AT OR ABOVE 2700",
+                        "EC404": "EC404 AT OR ABOVE 2700 SPEED 150",
+                        "IEC23": "IEC23 1700"
+                    }
+                },
+                {
+                    "name": "EC404",
+                    "fixes": {
+                        "EC404": "EC404 AT OR ABOVE 2700",
+                        "IEC23": "IEC23 1700"
+                    }
+                },
+                {
+                    "name": "IEC23",
+                    "fixes": {
+                        "IEC23": "IEC23 1700"
+                    }
+                },
+                {
+                    "name": "MATER",
+                    "fixes": {
+                        "MATER": "MATER",
+                        "IEC23": "IEC23 1700"
+                    }
+                }
+            ]
+        }
+    ]
+}

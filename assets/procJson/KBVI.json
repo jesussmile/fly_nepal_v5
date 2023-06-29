@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "EWC",
+            "lat": 40.824933333333334,
+            "lon": 80.21154443333333
+        },
+        {
+            "name": "GRACE",
+            "lat": 40.85685,
+            "lon": 79.80058888333333
+        },
+        {
+            "name": "JEDUV",
+            "lat": 40.75805,
+            "lon": 80.11635833333334
+        },
+        {
+            "name": "JOKUB",
+            "lat": 40.778944433333336,
+            "lon": 80.51918888333333
+        },
+        {
+            "name": "JOTMI",
+            "lat": 40.78616388333333,
+            "lon": 80.66593611666667
+        },
+        {
+            "name": "NAMTH",
+            "lat": 40.776544433333335,
+            "lon": 80.52297221666667
+        },
+        {
+            "name": "WOBUX",
+            "lat": 40.786555566666664,
+            "lon": 80.67310556666666
+        },
+        {
+            "name": "WUBMA",
+            "lat": 40.76923611666667,
+            "lon": 80.32861111666666
+        },
+        {
+            "name": "ZILET",
+            "lat": 40.766244433333334,
+            "lon": 80.27112221666667
+        },
+        {
+            "name": "ZUDLO",
+            "lat": 40.79679721666667,
+            "lon": 80.30311111666667
+        },
+        {
+            "name": "ZUTIV",
+            "lat": 40.92312221666667,
+            "lon": 80.75540556666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC10",
+            "fixes": {
+                "JOTMI": "JOTMI AT OR ABOVE 3000",
+                "NAMTH": "NAMTH 3000 RNW 10 TRK 101 UNTIL 2000 TURN LEFT DIRECT",
+                "EWC": "EWC AT OR ABOVE 3000 HOLD AT EWC RIGHT TURN INBOUNDCOURSE 256 LEGTIME 1 FAF NAMTH MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "EWC",
+                    "fixes": {
+                        "EWC": "EWC",
+                        "JOTMI": "JOTMI AT OR ABOVE 3000 HOLD AT JOTMI LEFT TURN INBOUNDCOURSE 101 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "WOBUX": "WOBUX AT OR ABOVE 3000",
+                "JOKUB": "JOKUB 3000 RNW 10 TRK 101 UNTIL 1480",
+                "JEDUV": "OVERFLY JEDUV AT OR ABOVE 3000 HOLD AT JEDUV RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4 FAF JOKUB MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "WOBUX",
+                    "fixes": {
+                        "WOBUX": "WOBUX LEFT TURN INBOUNDCOURSE 101 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZUTIV",
+                    "fixes": {
+                        "ZUTIV": "ZUTIV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "JEDUV": "JEDUV AT OR ABOVE 3000",
+                "ZILET": "ZILET 3000",
+                "WUBMA": "WUBMA AT OR ABOVE 2100 RNW 28 TRK 281 UNTIL 1512",
+                "WOBUX": "OVERFLY WOBUX AT OR ABOVE 3000 HOLD AT WOBUX LEFT TURN INBOUNDCOURSE 101 LEGDIST 4 FAF ZILET MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "GRACE",
+                    "fixes": {
+                        "GRACE": "GRACE"
+                    }
+                },
+                {
+                    "name": "JEDUV",
+                    "fixes": {
+                        "JEDUV": "JEDUV RIGHT TURN INBOUNDCOURSE 281 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR28",
+            "fixes": {
+                "EWC": "EWC 3000 EWC HOLD AT EWC RIGHT TURN INBOUNDCOURSE 256 LEGTIME 1 FAF EWC MAP RNW 28",
+                "ZUDLO": "ZUDLO AT OR ABOVE 2060 RNW 28 TRK 256 UNTIL 3000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EWC",
+                    "fixes": {
+                        "EWC": "EWC RIGHT TURN INBOUNDCOURSE 256 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "AMIDS",
+            "lat": 28.935297216666665,
+            "lon": 80.91928333333334
+        },
+        {
+            "name": "APEAK",
+            "lat": 28.898394433333333,
+            "lon": 80.91464166666667
+        },
+        {
+            "name": "BIKEZ",
+            "lat": 29.52195,
+            "lon": 81.16669721666666
+        },
+        {
+            "name": "GIESR",
+            "lat": 29.059091666666667,
+            "lon": 80.93492778333334
+        },
+        {
+            "name": "JAGGZ",
+            "lat": 30.273230566666665,
+            "lon": 81.26430278333333
+        },
+        {
+            "name": "KYLEG",
+            "lat": 30.826225,
+            "lon": 81.64608888333333
+        },
+        {
+            "name": "LPERD",
+            "lat": 30.60255,
+            "lon": 81.28115556666667
+        },
+        {
+            "name": "MCGYR",
+            "lat": 29.192372216666666,
+            "lon": 80.95180278333333
+        },
+        {
+            "name": "PEKIY",
+            "lat": 28.748397216666667,
+            "lon": 80.89580278333334
+        },
+        {
+            "name": "TTHOR",
+            "lat": 29.664777783333335,
+            "lon": 81.23334166666666
+        },
+        {
+            "name": "WEEEK",
+            "lat": 29.921891666666667,
+            "lon": 81.24271388333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "TTHOR3",
+            "runway": "RNW 18 RNW 36",
+            "fixes": {
+                "TTHOR": "TTHOR 12000",
+                "BIKEZ": "OVERFLY BIKEZ 12000 TRK 165 VECTORS"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAVA18",
+            "fixes": {
+                "MCGYR": "MCGYR AT OR ABOVE 2000",
+                "GIESR": "GIESR 1500 RNW 18 TRK 181 UNTIL 411",
+                "PEKIY": "OVERFLY PEKIY AT OR ABOVE 2000 HOLD AT PEKIY RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF GIESR MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "MCGYR",
+                    "fixes": {
+                        "MCGYR": "MCGYR LEFT TURN INBOUNDCOURSE 181 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB36",
+            "fixes": {
+                "PEKIY": "PEKIY AT OR ABOVE 2000",
+                "APEAK": "APEAK 1500",
+                "AMIDS": "AMIDS AT OR ABOVE 780 RNW 36 TRK 001 UNTIL 411",
+                "MCGYR": "OVERFLY MCGYR AT OR ABOVE 2000 HOLD AT MCGYR LEFT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF APEAK MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "PEKIY",
+                    "fixes": {
+                        "PEKIY": "PEKIY RIGHT TURN INBOUNDCOURSE 001 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "fixes": [
+        {
+            "name": "FD03",
+            "lat": 28.353961116666667,
+            "lon": 11.215936116666667
+        },
+        {
+            "name": "FF03",
+            "lat": 28.377105566666668,
+            "lon": 11.202611116666667
+        },
+        {
+            "name": "TNANB",
+            "lat": 28.431222216666665,
+            "lon": 11.171416666666667
+        },
+        {
+            "name": "TNN",
+            "lat": 28.428416666666667,
+            "lon": 11.173055566666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD03",
+            "fixes": {
+                "FD03": "FD03 2500",
+                "TNN": "TNN 905 RNW 03 TRK 030 UNTIL 2000 TURN RIGHT DIRECT TNN 3000 FAF FD03 MAP TNN"
+            },
+            "transitions": [
+                {
+                    "name": "TNN1",
+                    "fixes": {
+                        "TNN": "TNN AT OR ABOVE 3000 SPEED 220 TRK 239 UNTIL 6.5 FROM TNN"
+                    }
+                },
+                {
+                    "name": "TNN2",
+                    "fixes": {
+                        "TNN": "TNN AT OR ABOVE 3000 SPEED 140 TRK 222 UNTIL 6.5 FROM TNN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FF03": "FF03 2000",
+                "TNANB": "TNANB 843 RNW 03 TRK 030 UNTIL 2000 TURN RIGHT DIRECT TNANB 3000 FAF FF03 MAP TNA"
+            },
+            "transitions": [
+                {
+                    "name": "TNA1",
+                    "fixes": {
+                        "TNANB": "TNANB AT OR ABOVE 3000 SPEED 220 TRK 243 UNTIL 5.5 FROM TNANB"
+                    }
+                },
+                {
+                    "name": "TNA2",
+                    "fixes": {
+                        "TNANB": "TNANB AT OR ABOVE 3000 SPEED 140 TRK 223 UNTIL 5.8 FROM TNANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR03",
+            "fixes": {
+                "FF03": "FF03 2000",
+                "TNN": "TNN 903 RNW 03 TRK 030 UNTIL 2000 TURN RIGHT DIRECT TNN 3000 FAF FF03 MAP TNN"
+            },
+            "transitions": [
+                {
+                    "name": "TNN1",
+                    "fixes": {
+                        "TNN": "TNN AT OR ABOVE 3000 SPEED 220 TRK 243 UNTIL 5.5 FROM TNN"
+                    }
+                },
+                {
+                    "name": "TNN2",
+                    "fixes": {
+                        "TNN": "TNN AT OR ABOVE 3000 SPEED 140 TRK 223 UNTIL 5.8 FROM TNN"
+                    }
+                }
+            ]
+        }
+    ]
+}

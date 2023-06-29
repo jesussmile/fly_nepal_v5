@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "CUKNI",
+            "lat": 37.08923333333333,
+            "lon": 92.56308333333334
+        },
+        {
+            "name": "JUTAT",
+            "lat": 37.15178888333333,
+            "lon": 92.05848333333333
+        },
+        {
+            "name": "WIKMI",
+            "lat": 37.12733611666667,
+            "lon": 92.25778611666667
+        },
+        {
+            "name": "WOMEL",
+            "lat": 37.10731388333333,
+            "lon": 92.41900833333334
+        },
+        {
+            "name": "ZULDU",
+            "lat": 37.134127783333334,
+            "lon": 92.20272221666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "CUKNI": "CUKNI AT OR ABOVE 3300",
+                "WOMEL": "WOMEL 3100 RNW 08 TRK 080 UNTIL 1880",
+                "JUTAT": "OVERFLY JUTAT AT OR ABOVE 3300 HOLD AT JUTAT RIGHT TURN INBOUNDCOURSE 260 LEGDIST 4 FAF WOMEL MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "CUKNI",
+                    "fixes": {
+                        "CUKNI": "CUKNI RIGHT TURN INBOUNDCOURSE 080 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "JUTAT": "JUTAT AT OR ABOVE 3300",
+                "ZULDU": "ZULDU 3100",
+                "WIKMI": "WIKMI AT OR ABOVE 2240 RNW 26 TRK 260 UNTIL 1880",
+                "CUKNI": "OVERFLY CUKNI AT OR ABOVE 3300 HOLD AT CUKNI RIGHT TURN INBOUNDCOURSE 080 LEGDIST 4 FAF ZULDU MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "JUTAT",
+                    "fixes": {
+                        "JUTAT": "JUTAT RIGHT TURN INBOUNDCOURSE 260 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

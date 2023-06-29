@@ -1,0 +1,200 @@
+{
+    "fixes": [
+        {
+            "name": "APORU",
+            "lat": 8.6275,
+            "lon": 121.735
+        },
+        {
+            "name": "ATPAS",
+            "lat": 8.304972216666666,
+            "lon": 122.31752778333333
+        },
+        {
+            "name": "CD23",
+            "lat": 8.433016666666667,
+            "lon": 122.47247221666667
+        },
+        {
+            "name": "FD23",
+            "lat": 8.539305566666666,
+            "lon": 122.35358333333333
+        },
+        {
+            "name": "MD23",
+            "lat": 8.614241666666667,
+            "lon": 122.26969443333333
+        },
+        {
+            "name": "MOF",
+            "lat": 8.641083333333333,
+            "lon": 122.23963888333333
+        },
+        {
+            "name": "NUVPI",
+            "lat": 9.008611116666666,
+            "lon": 122.58416666666666
+        },
+        {
+            "name": "RURSU",
+            "lat": 8.240833333333333,
+            "lon": 121.93472221666667
+        },
+        {
+            "name": "RUTVA",
+            "lat": 8.701777783333334,
+            "lon": 122.60091666666666
+        },
+        {
+            "name": "SUSKA",
+            "lat": 8.396944433333333,
+            "lon": 122.05388888333333
+        },
+        {
+            "name": "TC601",
+            "lat": 8.505472216666666,
+            "lon": 122.53458333333333
+        },
+        {
+            "name": "TC602",
+            "lat": 8.440777783333333,
+            "lon": 122.48122221666667
+        },
+        {
+            "name": "TC603",
+            "lat": 8.508805566666666,
+            "lon": 122.39802778333333
+        },
+        {
+            "name": "TC604",
+            "lat": 8.532166666666667,
+            "lon": 122.36944443333333
+        },
+        {
+            "name": "TC605",
+            "lat": 8.617111116666667,
+            "lon": 122.26555556666666
+        },
+        {
+            "name": "VOR12",
+            "lat": 8.504625,
+            "lon": 122.39238611666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "APOR1A",
+            "rnw": "05",
+            "fixes": {
+                "SUSKA": "OVERFLY SUSKA AT OR ABOVE 5000",
+                "APORU": "APORU"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NUVP1A",
+            "rnw": "05",
+            "fixes": {
+                "MOF": "OVERFLY MOF AT OR ABOVE 6000 SPEED 230",
+                "NUVPI": "NUVPI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RURS1A",
+            "rnw": "05",
+            "fixes": {
+                "SUSKA": "OVERFLY SUSKA AT OR ABOVE 5000",
+                "RURSU": "RURSU"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "APOR1B",
+            "runway": "RNW 23",
+            "fixes": {
+                "APORU": "APORU",
+                "ATPAS": "ATPAS AT OR ABOVE 5000"
+            }
+        },
+        {
+            "name": "NUVP1B",
+            "runway": "RNW 23",
+            "fixes": {
+                "NUVPI": "NUVPI",
+                "RUTVA": "RUTVA AT OR ABOVE 7000"
+            }
+        },
+        {
+            "name": "NUVP1C",
+            "runway": "RNW 23",
+            "fixes": {
+                "NUVPI": "NUVPI",
+                "MOF": "MOF",
+                "ATPAS": "ATPAS AT OR ABOVE 5000"
+            }
+        },
+        {
+            "name": "RURS1B",
+            "runway": "RNW 23",
+            "fixes": {
+                "RURSU": "RURSU",
+                "ATPAS": "ATPAS AT OR ABOVE 5000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD23",
+            "fixes": {
+                "CD23": "CD23 AT OR ABOVE 5000",
+                "VOR12": "VOR12 AT OR ABOVE 3500",
+                "FD23": "FD23 2700",
+                "MD23": "MD23 652 RNW 23 TURN RIGHT TRK 042 INTERCEPT RADIAL 012 TO",
+                "ATPAS": "ATPAS ATPAS AT OR ABOVE 5000 SPEED 180 FAF FD23 MAP MD23"
+            },
+            "transitions": [
+                {
+                    "name": "ATPAS",
+                    "fixes": {
+                        "ATPAS": "ATPAS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "TC602": "TC602 AT OR ABOVE 5000",
+                "TC603": "TC603 AT OR ABOVE 3500",
+                "TC604": "TC604 3000",
+                "TC605": "OVERFLY TC605 541 SPEED 180 RNW 23 TURN RIGHT DIRECT",
+                "ATPAS": "ATPAS AT OR ABOVE 5000 SPEED 180 FAF TC604 MAP TC605"
+            },
+            "transitions": [
+                {
+                    "name": "ATPAS",
+                    "fixes": {
+                        "ATPAS": "ATPAS AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "RUTVA",
+                    "fixes": {
+                        "RUTVA": "RUTVA AT OR ABOVE 7000",
+                        "TC601": "TC601 AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

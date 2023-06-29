@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "ALGID",
+            "lat": 6.906361116666667,
+            "lon": 113.72397221666667
+        },
+        {
+            "name": "CF12",
+            "lat": 6.935519433333333,
+            "lon": 113.76453056666666
+        },
+        {
+            "name": "FF12",
+            "lat": 6.9687777833333335,
+            "lon": 113.81077778333334
+        },
+        {
+            "name": "FF30",
+            "lat": 7.0705277833333335,
+            "lon": 113.95430556666666
+        },
+        {
+            "name": "IKOLI",
+            "lat": 7.131555566666667,
+            "lon": 114.04186111666667
+        },
+        {
+            "name": "RT401",
+            "lat": 6.935444433333333,
+            "lon": 113.76497221666666
+        },
+        {
+            "name": "RT402",
+            "lat": 6.968388883333334,
+            "lon": 113.81144443333334
+        },
+        {
+            "name": "RT403",
+            "lat": 6.995777783333334,
+            "lon": 113.85008333333333
+        },
+        {
+            "name": "RT601",
+            "lat": 7.070555566666667,
+            "lon": 113.95569443333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD12",
+            "fixes": {
+                "CF12": "CF12 AT OR ABOVE 2300",
+                "FF12": "FF12 1700 RNW 12 TRK 125 UNTIL 1000 TURN LEFT DIRECT",
+                "ALGID": "ALGID AT OR ABOVE 3000 FAF FF12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "ALGID",
+                    "fixes": {
+                        "ALGID": "ALGID AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD30",
+            "fixes": {
+                "IKOLI": "IKOLI AT OR ABOVE 3000 IKOLI AT OR ABOVE 3000 FAF FF30 MAP RNW 30",
+                "FF30": "FF30 1500 RNW 30 TRK 304 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IKOLI",
+                    "fixes": {
+                        "IKOLI": "IKOLI RIGHT TURN INBOUNDCOURSE 304 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "RT401": "RT401 AT OR ABOVE 2300",
+                "RT402": "RT402 1700",
+                "RT403": "RT403 AT OR ABOVE 800 RNW 12 TRK 125 UNTIL 1000 TURN LEFT DIRECT",
+                "ALGID": "ALGID AT OR ABOVE 3000 HOLD AT ALGID LEFT TURN INBOUNDCOURSE 125 ALT 3000 LEGTIME 1 FAF RT402 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "ALGID",
+                    "fixes": {
+                        "ALGID": "ALGID AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IKOLI": "IKOLI AT OR ABOVE 3000 IKOLI AT OR ABOVE 3000 HOLD AT IKOLI RIGHT TURN INBOUNDCOURSE 305 ALT 3000 LEGTIME 1 FAF RT601 MAP RNW 30",
+                "RT601": "RT601 1500 RNW 30 TRK 305 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IKOLI",
+                    "fixes": {
+                        "IKOLI": "IKOLI RIGHT TURN INBOUNDCOURSE 305 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

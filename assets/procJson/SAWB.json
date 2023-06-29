@@ -1,0 +1,83 @@
+{
+    "fixes": [
+        {
+            "name": "20VOR",
+            "lat": 64.22225833333333,
+            "lon": 56.54925
+        },
+        {
+            "name": "60VOR",
+            "lat": 64.19722778333333,
+            "lon": 56.407944433333334
+        },
+        {
+            "name": "CF23",
+            "lat": 64.17836388333333,
+            "lon": 56.30213333333333
+        },
+        {
+            "name": "D316I",
+            "lat": 64.10920556666666,
+            "lon": 56.806252783333335
+        },
+        {
+            "name": "D316J",
+            "lat": 64.09524443333333,
+            "lon": 56.826844433333335
+        },
+        {
+            "name": "FF23",
+            "lat": 64.18466111666666,
+            "lon": 56.337386116666664
+        },
+        {
+            "name": "MBI",
+            "lat": 64.23472221666667,
+            "lon": 56.62
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDY23",
+            "fixes": {
+                "CF23": "CF23",
+                "FF23": "FF23 3400",
+                "60VOR": "60VOR AT OR ABOVE 2800",
+                "20VOR": "20VOR AT OR ABOVE 1550",
+                "MBI": "MBI 739 RNW 23 TRK 237 UNTIL 2500 FAF FF23 MAP MBI"
+            },
+            "transitions": [
+                {
+                    "name": "D316J",
+                    "fixes": {
+                        "D316J": "D316J",
+                        "D316I": "D316I"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ23",
+            "fixes": {
+                "FF23": "FF23 3400",
+                "60VOR": "60VOR AT OR ABOVE 2800",
+                "20VOR": "20VOR AT OR ABOVE 1550",
+                "MBI": "MBI 739 RNW 23 TRK 237 UNTIL 4000 FAF FF23 MAP MBI"
+            },
+            "transitions": [
+                {
+                    "name": "MBI",
+                    "fixes": {
+                        "MBI": "MBI TRK 077 UNTIL 8.0 FROM MBI"
+                    }
+                }
+            ]
+        }
+    ]
+}

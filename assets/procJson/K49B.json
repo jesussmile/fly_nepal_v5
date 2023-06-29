@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "ADESE",
+            "lat": 44.444125,
+            "lon": 103.43276666666667
+        },
+        {
+            "name": "FEPDI",
+            "lat": 44.52172221666667,
+            "lon": 103.60385833333333
+        },
+        {
+            "name": "JORNO",
+            "lat": 44.475236116666665,
+            "lon": 102.97275
+        },
+        {
+            "name": "MOBNE",
+            "lat": 44.37702221666667,
+            "lon": 103.28563611666667
+        },
+        {
+            "name": "NIFER",
+            "lat": 44.31107778333333,
+            "lon": 103.14177778333334
+        },
+        {
+            "name": "NOMLE",
+            "lat": 44.275213883333336,
+            "lon": 103.06382221666667
+        },
+        {
+            "name": "OQWIK",
+            "lat": 44.368105566666664,
+            "lon": 103.26613611666667
+        },
+        {
+            "name": "RAP",
+            "lat": 43.97603888333333,
+            "lon": 103.01232778333333
+        },
+        {
+            "name": "REAGN",
+            "lat": 44.466825,
+            "lon": 103.48271111666666
+        },
+        {
+            "name": "RIBOY",
+            "lat": 44.48466943333333,
+            "lon": 103.52203333333334
+        },
+        {
+            "name": "ROCNO",
+            "lat": 44.179,
+            "lon": 103.89327221666667
+        },
+        {
+            "name": "ZAVLI",
+            "lat": 44.35016111666667,
+            "lon": 102.57945833333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 11",
+        "RNW 23",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "FEPDI": "FEPDI AT OR ABOVE 6600",
+                "RIBOY": "RIBOY AT OR ABOVE 5300",
+                "REAGN": "REAGN 4900",
+                "ADESE": "ADESE AT OR ABOVE 4080 RNW 11 TRK 111 UNTIL 3644",
+                "MOBNE": "MOBNE",
+                "JORNO": "OVERFLY JORNO AT OR ABOVE 7000 HOLD AT JORNO RIGHT TURN INBOUNDCOURSE 172 LEGDIST 7 FAF REAGN MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "RAP",
+                    "fixes": {
+                        "RAP": "RAP",
+                        "FEPDI": "OVERFLY FEPDI AT OR ABOVE 7000 HOLD AT FEPDI RIGHT TURN INBOUNDCOURSE 111 ALT 6600 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "ROCNO",
+                    "fixes": {
+                        "ROCNO": "ROCNO",
+                        "FEPDI": "OVERFLY FEPDI AT OR ABOVE 9100 HOLD AT FEPDI RIGHT TURN INBOUNDCOURSE 111 ALT 6600 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "NIFER": "NIFER AT OR ABOVE 6000",
+                "OQWIK": "OQWIK 4900 RNW 29 TRK 292 UNTIL 3700 TURN RIGHT DIRECT",
+                "ZAVLI": "OVERFLY ZAVLI AT OR ABOVE 7000 HOLD AT ZAVLI RIGHT TURN INBOUNDCOURSE 209 LEGDIST 7 FAF OQWIK MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "RAP",
+                    "fixes": {
+                        "RAP": "RAP",
+                        "NOMLE": "NOMLE AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "ZAVLI",
+                    "fixes": {
+                        "ZAVLI": "ZAVLI",
+                        "NOMLE": "NOMLE AT OR ABOVE 7000"
+                    }
+                }
+            ]
+        }
+    ]
+}

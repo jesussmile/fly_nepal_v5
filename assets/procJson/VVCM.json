@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "FF09",
+            "lat": 9.18155,
+            "lon": 105.09584721666667
+        },
+        {
+            "name": "FF27",
+            "lat": 9.176475,
+            "lon": 105.25208888333333
+        },
+        {
+            "name": "NICKY",
+            "lat": 9.411111116666667,
+            "lon": 105.31333333333333
+        },
+        {
+            "name": "QLNB",
+            "lat": 9.176222216666666,
+            "lon": 105.17672221666666
+        },
+        {
+            "name": "TRN",
+            "lat": 10.083361116666667,
+            "lon": 105.70548056666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "TRN1A",
+            "rnw": "09",
+            "fixes": {
+                "NICKY": "NICKY AT OR ABOVE 3000",
+                "TRN": "TRN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TRN1B",
+            "rnw": "27",
+            "fixes": {
+                "NICKY": "NICKY AT OR ABOVE 3000",
+                "TRN": "TRN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "TRN1C",
+            "runway": "RNW 09 RNW 27",
+            "fixes": {
+                "TRN": "TRN",
+                "NICKY": "NICKY",
+                "QLNB": "QLNB AT OR ABOVE 1800"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FF09": "FF09 1480 RNW 09",
+                "QLNB": "OVERFLY QLNB HDG 094 UNTIL 1300 TURN LEFT DIRECT QLNB 1800 HOLD AT QLNB LEFT TURN INBOUNDCOURSE 239 ALT 1800 LEGTIME 1 FAF FF09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "QL",
+                    "fixes": {
+                        "QLNB": "QLNB AT OR ABOVE 1800 TRK 239 UNTIL 5.3 FROM QLNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FF27": "FF27 1320 RNW 27",
+                "QLNB": "OVERFLY QLNB HDG 270 UNTIL 1300 TURN RIGHT DIRECT QLNB 1800 HOLD AT QLNB RIGHT TURN INBOUNDCOURSE 125 ALT 1800 LEGTIME 1 FAF FF27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "QL",
+                    "fixes": {
+                        "QLNB": "QLNB AT OR ABOVE 1800 TRK 125 UNTIL 5.3 FROM QLNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

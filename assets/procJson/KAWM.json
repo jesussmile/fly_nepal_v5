@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "DANNZ",
+            "lat": 35.23434721666667,
+            "lon": 90.23328611666666
+        },
+        {
+            "name": "GQE",
+            "lat": 35.34703056666667,
+            "lon": 90.47815833333334
+        },
+        {
+            "name": "HEDIM",
+            "lat": 35.23300833333333,
+            "lon": 90.2333
+        },
+        {
+            "name": "IMUDE",
+            "lat": 35.33376388333333,
+            "lon": 90.23211943333334
+        },
+        {
+            "name": "ITOXE",
+            "lat": 35.04674443333333,
+            "lon": 90.23547778333334
+        },
+        {
+            "name": "JUSON",
+            "lat": 35.33452221666667,
+            "lon": 90.33396943333334
+        },
+        {
+            "name": "KIDHU",
+            "lat": 35.33291943333333,
+            "lon": 90.13027221666667
+        },
+        {
+            "name": "LOGNE",
+            "lat": 34.94712221666666,
+            "lon": 90.33801388333333
+        },
+        {
+            "name": "NEGNE",
+            "lat": 34.94551943333333,
+            "lon": 90.13528333333333
+        },
+        {
+            "name": "PALYN",
+            "lat": 35.3345,
+            "lon": 90.23211388333333
+        },
+        {
+            "name": "USUPE",
+            "lat": 34.94636388333333,
+            "lon": 90.23664721666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS17",
+            "fixes": {
+                "PALYN": "PALYN AT OR ABOVE 2000",
+                "DANNZ": "DANNZ 2000 RNW 17 TRK 180 UNTIL 1000 TURN RIGHT DIRECT",
+                "GQE": "GQE AT OR ABOVE 2000 HOLD AT GQE RIGHT TURN INBOUNDCOURSE 122 LEGTIME 1 FAF DANNZ MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "GQE",
+                    "fixes": {
+                        "GQE": "GQE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "IMUDE": "IMUDE AT OR ABOVE 2500",
+                "HEDIM": "HEDIM 2000 RNW 17",
+                "USUPE": "OVERFLY USUPE AT OR ABOVE 2100 HOLD AT USUPE RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF HEDIM MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "IMUDE",
+                    "fixes": {
+                        "IMUDE": "IMUDE RIGHT TURN INBOUNDCOURSE 180 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JUSON",
+                    "fixes": {
+                        "JUSON": "JUSON AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "KIDHU",
+                    "fixes": {
+                        "KIDHU": "KIDHU AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "USUPE": "USUPE AT OR ABOVE 2100",
+                "ITOXE": "ITOXE 1800 RNW 35",
+                "IMUDE": "OVERFLY IMUDE AT OR ABOVE 2500 HOLD AT IMUDE RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF ITOXE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "LOGNE",
+                    "fixes": {
+                        "LOGNE": "LOGNE AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "NEGNE",
+                    "fixes": {
+                        "NEGNE": "NEGNE AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "USUPE",
+                    "fixes": {
+                        "USUPE": "USUPE RIGHT TURN INBOUNDCOURSE 000 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

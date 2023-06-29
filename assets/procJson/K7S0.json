@@ -1,0 +1,176 @@
+{
+    "fixes": [
+        {
+            "name": "ANGIL",
+            "lat": 47.96455556666667,
+            "lon": 114.15791388333334
+        },
+        {
+            "name": "ARLEE",
+            "lat": 47.14095,
+            "lon": 114.09975278333333
+        },
+        {
+            "name": "CHARL",
+            "lat": 47.472394433333335,
+            "lon": 114.12290556666666
+        },
+        {
+            "name": "CIMRI",
+            "lat": 47.60706666666667,
+            "lon": 114.10110278333333
+        },
+        {
+            "name": "DMESR",
+            "lat": 47.815266666666666,
+            "lon": 114.24963888333333
+        },
+        {
+            "name": "EGOCY",
+            "lat": 47.815413883333335,
+            "lon": 114.10126388333333
+        },
+        {
+            "name": "FATMI",
+            "lat": 47.703144433333335,
+            "lon": 114.10117778333333
+        },
+        {
+            "name": "GEDKE",
+            "lat": 47.640380566666664,
+            "lon": 114.10113056666667
+        },
+        {
+            "name": "HANIM",
+            "lat": 47.47035278333333,
+            "lon": 114.516275
+        },
+        {
+            "name": "IBBOR",
+            "lat": 47.472461116666665,
+            "lon": 114.101
+        },
+        {
+            "name": "JAKBA",
+            "lat": 47.420394433333335,
+            "lon": 114.10095833333334
+        },
+        {
+            "name": "KANAF",
+            "lat": 47.52727778333333,
+            "lon": 114.10104166666666
+        },
+        {
+            "name": "LAVBE",
+            "lat": 47.294069433333334,
+            "lon": 114.10086111666666
+        },
+        {
+            "name": "NALSE",
+            "lat": 47.293961116666665,
+            "lon": 114.22328611666667
+        },
+        {
+            "name": "OBTOW",
+            "lat": 47.51895,
+            "lon": 114.10103333333333
+        },
+        {
+            "name": "PEKBE",
+            "lat": 47.64388056666667,
+            "lon": 114.10113056666667
+        },
+        {
+            "name": "QATQI",
+            "lat": 47.64375,
+            "lon": 114.27366666666667
+        },
+        {
+            "name": "TEPSE",
+            "lat": 47.777341666666665,
+            "lon": 114.14454166666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "HANIM2",
+            "rnw": "16",
+            "fixes": {
+                "KANAF": "KANAF",
+                "CHARL": "CHARL",
+                "HANIM": "HANIM RIGHT TURN INBOUNDCOURSE 254 ALT 13000 LEGDIST 7"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RONAN3",
+            "rnw": "34",
+            "fixes": {
+                "CIMRI": "CIMRI",
+                "TEPSE": "TEPSE",
+                "ANGIL": "ANGIL LEFT TURN INBOUNDCOURSE 340 ALT 10000 LEGDIST 7"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "EGOCY": "EGOCY AT OR ABOVE 6700",
+                "FATMI": "FATMI 5600",
+                "GEDKE": "GEDKE AT OR ABOVE 4400 RNW 16 TRK 165 UNTIL 3443",
+                "IBBOR": "IBBOR TURN RIGHT DIRECT",
+                "HANIM": "OVERFLY HANIM AT OR ABOVE 13000 HOLD AT HANIM RIGHT TURN INBOUNDCOURSE 254 ALT 13000 LEGDIST 7 FAF FATMI MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "ANGIL",
+                    "fixes": {
+                        "ANGIL": "ANGIL"
+                    }
+                },
+                {
+                    "name": "HANIM",
+                    "fixes": {
+                        "HANIM": "HANIM",
+                        "DMESR": "DMESR AT OR ABOVE 7900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "LAVBE": "LAVBE AT OR ABOVE 7200",
+                "JAKBA": "JAKBA 5800",
+                "OBTOW": "OBTOW AT OR ABOVE 3900 RNW 34 TRK 345 UNTIL 3438",
+                "PEKBE": "PEKBE TURN LEFT DIRECT",
+                "QATQI": "QATQI",
+                "HANIM": "OVERFLY HANIM AT OR ABOVE 13000 HOLD AT HANIM RIGHT TURN INBOUNDCOURSE 254 ALT 13000 LEGDIST 7 FAF JAKBA MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "ARLEE",
+                    "fixes": {
+                        "ARLEE": "ARLEE"
+                    }
+                },
+                {
+                    "name": "HANIM",
+                    "fixes": {
+                        "HANIM": "HANIM",
+                        "NALSE": "NALSE AT OR ABOVE 7900"
+                    }
+                }
+            ]
+        }
+    ]
+}

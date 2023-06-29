@@ -1,0 +1,132 @@
+{
+    "fixes": [
+        {
+            "name": "FF25",
+            "lat": 40.08830556666667,
+            "lon": 78.91882221666667
+        },
+        {
+            "name": "IZYUR",
+            "lat": 40.144336116666665,
+            "lon": 78.809475
+        },
+        {
+            "name": "JST",
+            "lat": 40.316725,
+            "lon": 78.83416666666666
+        },
+        {
+            "name": "KANFY",
+            "lat": 40.087636116666665,
+            "lon": 78.92013333333334
+        },
+        {
+            "name": "KAVGY",
+            "lat": 39.939283333333336,
+            "lon": 79.20783333333334
+        },
+        {
+            "name": "PENVE",
+            "lat": 40.062175,
+            "lon": 78.96969721666666
+        },
+        {
+            "name": "PI001",
+            "lat": 40.11829683333333,
+            "lon": 78.85331011666666
+        },
+        {
+            "name": "PI002",
+            "lat": 40.18864541666667,
+            "lon": 78.83540958333333
+        },
+        {
+            "name": "PI003",
+            "lat": 40.17875275,
+            "lon": 78.7357037
+        },
+        {
+            "name": "SATKE",
+            "lat": 39.995108333333334,
+            "lon": 79.09988611666667
+        },
+        {
+            "name": "SOMRE",
+            "lat": 40.016477783333336,
+            "lon": 79.05846111666666
+        },
+        {
+            "name": "SYSNB",
+            "lat": 40.08569443333333,
+            "lon": 78.91655
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 14",
+        "RNW 25",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC25",
+            "fixes": {
+                "IZYUR": "IZYUR AT OR ABOVE 4500",
+                "FF25": "FF25 3800 RNW 25 TRK 246 UNTIL 4500 TURN RIGHT DIRECT",
+                "SYSNB": "SYSNB HOLD AT SYSNB RIGHT TURN INBOUNDCOURSE 246 LEGTIME 1 FAF FF25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "JST",
+                    "fixes": {
+                        "JST": "JST AT OR ABOVE 4500 TRK 180 UNTIL 6.4 FROM JST"
+                    }
+                },
+                {
+                    "name": "SYS",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 4500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "KAVGY": "KAVGY AT OR ABOVE 5600",
+                "SATKE": "SATKE 3700",
+                "SOMRE": "SOMRE AT OR ABOVE 2960 RNW 07 TRK 066 UNTIL 2525",
+                "IZYUR": "OVERFLY IZYUR AT OR ABOVE 5200 HOLD AT IZYUR RIGHT TURN INBOUNDCOURSE 246 LEGDIST 5 FAF SATKE MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "KAVGY",
+                    "fixes": {
+                        "KAVGY": "KAVGY RIGHT TURN INBOUNDCOURSE 066 ALT 5600 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "IZYUR": "IZYUR AT OR ABOVE 5200",
+                "KANFY": "KANFY 3800",
+                "PENVE": "PENVE AT OR ABOVE 2920 RNW 25 TRK 246 UNTIL 2490",
+                "KAVGY": "OVERFLY KAVGY AT OR ABOVE 5600 HOLD AT KAVGY RIGHT TURN INBOUNDCOURSE 066 LEGDIST 5 FAF KANFY MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "IZYUR",
+                    "fixes": {
+                        "IZYUR": "IZYUR RIGHT TURN INBOUNDCOURSE 246 ALT 5200 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

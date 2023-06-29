@@ -1,0 +1,84 @@
+{
+    "fixes": [
+        {
+            "name": "ADRID",
+            "lat": 50.60718333333333,
+            "lon": 105.45129166666666
+        },
+        {
+            "name": "DAMUS",
+            "lat": 50.391775,
+            "lon": 105.11504443333334
+        },
+        {
+            "name": "DANAX",
+            "lat": 50.476508333333335,
+            "lon": 105.45312221666667
+        },
+        {
+            "name": "GOPAL",
+            "lat": 50.54120833333333,
+            "lon": 105.55473888333333
+        },
+        {
+            "name": "KEGBI",
+            "lat": 50.32609443333333,
+            "lon": 105.21848611666667
+        },
+        {
+            "name": "LETUM",
+            "lat": 50.391,
+            "lon": 105.31946111666667
+        },
+        {
+            "name": "MEBAD",
+            "lat": 50.54748888333334,
+            "lon": 105.564625
+        },
+        {
+            "name": "RESET",
+            "lat": 50.52048056666667,
+            "lon": 105.1659
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "GOPAL": "GOPAL AT OR ABOVE 3200 SPEED 180",
+                "DANAX": "DANAX 3000 RNW 13 HDG 125 UNTIL 2500 TURN LEFT DIRECT",
+                "RESET": "OVERFLY RESET 3900 SPEED 200 HOLD AT RESET RIGHT TURN INBOUNDCOURSE 215 LEGDIST 9 FAF DANAX MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "ADRID",
+                    "fixes": {
+                        "ADRID": "ADRID SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "KEGBI": "KEGBI AT OR ABOVE 3200 SPEED 180",
+                "LETUM": "LETUM 3000 RNW 31",
+                "MEBAD": "OVERFLY MEBAD 3700 HOLD AT MEBAD RIGHT TURN INBOUNDCOURSE 305 LEGDIST 9 FAF LETUM MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "DAMUS",
+                    "fixes": {
+                        "DAMUS": "DAMUS AT OR BELOW 5500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

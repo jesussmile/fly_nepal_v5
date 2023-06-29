@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "BOCDA",
+            "lat": 45.203702783333334,
+            "lon": 85.53286388333333
+        },
+        {
+            "name": "CESYA",
+            "lat": 45.36955556666667,
+            "lon": 85.55581943333334
+        },
+        {
+            "name": "COKOS",
+            "lat": 45.326152783333335,
+            "lon": 84.94828611666667
+        },
+        {
+            "name": "DUNAC",
+            "lat": 45.29641111666667,
+            "lon": 85.40131111666666
+        },
+        {
+            "name": "GLR",
+            "lat": 45.012486116666665,
+            "lon": 84.70427778333334
+        },
+        {
+            "name": "HISUM",
+            "lat": 45.314483333333335,
+            "lon": 85.12942778333333
+        },
+        {
+            "name": "HOMVO",
+            "lat": 45.30830556666667,
+            "lon": 85.22353333333334
+        },
+        {
+            "name": "IROTO",
+            "lat": 45.18898888333333,
+            "lon": 85.07511111666666
+        },
+        {
+            "name": "JALPI",
+            "lat": 45.286630566666666,
+            "lon": 85.544325
+        },
+        {
+            "name": "PLN",
+            "lat": 45.63064721666667,
+            "lon": 84.66410833333333
+        },
+        {
+            "name": "TVC",
+            "lat": 44.66791666666667,
+            "lon": 85.55001111666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 09",
+        "RNW 22",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "JALPI": "JALPI AT OR ABOVE 2700",
+                "DUNAC": "DUNAC 2300 RNW 09 TRK 090 UNTIL 919",
+                "COKOS": "OVERFLY COKOS AT OR ABOVE 3000 HOLD AT COKOS RIGHT TURN INBOUNDCOURSE 270 LEGDIST 4 FAF DUNAC MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "CESYA",
+                    "fixes": {
+                        "CESYA": "CESYA"
+                    }
+                },
+                {
+                    "name": "TVC",
+                    "fixes": {
+                        "TVC": "TVC",
+                        "BOCDA": "BOCDA AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "COKOS": "COKOS AT OR ABOVE 3000 OVERFLY COKOS AT OR ABOVE 3000 HOLD AT COKOS RIGHT TURN INBOUNDCOURSE 270 LEGDIST 4 FAF HISUM MAP RNW 27",
+                "HISUM": "HISUM 2600",
+                "HOMVO": "HOMVO AT OR ABOVE 1300 RNW 27 TRK 270 UNTIL 1069 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GLR",
+                    "fixes": {
+                        "GLR": "GLR"
+                    }
+                },
+                {
+                    "name": "IROTO",
+                    "fixes": {
+                        "IROTO": "IROTO",
+                        "COKOS": "OVERFLY COKOS AT OR ABOVE 3000 HOLD AT COKOS RIGHT TURN INBOUNDCOURSE 270 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PLN": "PLN"
+                    }
+                }
+            ]
+        }
+    ]
+}

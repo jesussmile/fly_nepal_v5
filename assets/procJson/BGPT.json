@@ -1,0 +1,119 @@
+{
+    "fixes": [
+        {
+            "name": "2NM",
+            "lat": 61.88673611666667,
+            "lon": 49.37476388333333
+        },
+        {
+            "name": "BAMUG",
+            "lat": 61.81626111666667,
+            "lon": 49.570625
+        },
+        {
+            "name": "DOPOK",
+            "lat": 62.11138888333333,
+            "lon": 50.053611116666666
+        },
+        {
+            "name": "GENSA",
+            "lat": 61.80045,
+            "lon": 49.32453888333333
+        },
+        {
+            "name": "KUVIG",
+            "lat": 62.1625,
+            "lon": 49.913333333333334
+        },
+        {
+            "name": "LOBKA",
+            "lat": 62.21305556666667,
+            "lon": 49.77277778333333
+        },
+        {
+            "name": "NANOK",
+            "lat": 61.91686111666667,
+            "lon": 49.29054721666667
+        },
+        {
+            "name": "NOVGO",
+            "lat": 62.096666666666664,
+            "lon": 49.805
+        },
+        {
+            "name": "PT351",
+            "lat": 61.866627783333335,
+            "lon": 49.43081943333333
+        },
+        {
+            "name": "PT352",
+            "lat": 61.92214443333334,
+            "lon": 49.52045833333333
+        },
+        {
+            "name": "ROPKI",
+            "lat": 62.0175,
+            "lon": 49.67555556666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "KUVIG": "KUVIG AT OR ABOVE 3500",
+                "NOVGO": "NOVGO 2700",
+                "ROPKI": "OVERFLY ROPKI 167 RNW 17 TRK 168 UNTIL 1600 TURN RIGHT DIRECT",
+                "DOPOK": "DOPOK 3500 FAF NOVGO MAP ROPKI"
+            },
+            "transitions": [
+                {
+                    "name": "DOPOK",
+                    "fixes": {
+                        "DOPOK": "DOPOK"
+                    }
+                },
+                {
+                    "name": "LOBKA",
+                    "fixes": {
+                        "LOBKA": "LOBKA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA35",
+            "fixes": {
+                "PT351": "PT351 3200",
+                "PT352": "PT352 2900 RNW 35 TRK 348 UNTIL 1500 TURN LEFT DIRECT",
+                "BAMUG": "BAMUG 3200 HOLD AT BAMUG RIGHT TURN INBOUNDCOURSE 078 ALT 3200 LEGTIME 1 FAF PT352 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BAMUG",
+                    "fixes": {
+                        "BAMUG": "BAMUG AT OR ABOVE 3800"
+                    }
+                },
+                {
+                    "name": "GENSA",
+                    "fixes": {
+                        "GENSA": "GENSA AT OR ABOVE 4500"
+                    }
+                },
+                {
+                    "name": "NANOK",
+                    "fixes": {
+                        "NANOK": "NANOK AT OR ABOVE 4800",
+                        "2NM": "2NM AT OR ABOVE 3800"
+                    }
+                }
+            ]
+        }
+    ]
+}

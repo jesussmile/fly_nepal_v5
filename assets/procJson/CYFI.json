@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "1L",
+            "lat": 57.280661116666664,
+            "lon": 110.97223333333334
+        },
+        {
+            "name": "APGAG",
+            "lat": 57.47662221666667,
+            "lon": 110.97653888333333
+        },
+        {
+            "name": "AXOVA",
+            "lat": 57.17815,
+            "lon": 110.97674166666667
+        },
+        {
+            "name": "DAVLI",
+            "lat": 57.07836666666667,
+            "lon": 110.97680833333334
+        },
+        {
+            "name": "DUVET",
+            "lat": 57.22638056666667,
+            "lon": 110.97670833333333
+        },
+        {
+            "name": "IGTIP",
+            "lat": 57.476497216666665,
+            "lon": 110.82218888333334
+        },
+        {
+            "name": "KITIN",
+            "lat": 57.078302783333335,
+            "lon": 111.12950278333334
+        },
+        {
+            "name": "LEXOB",
+            "lat": 57.17966666666667,
+            "lon": 110.97673888333334
+        },
+        {
+            "name": "LIBEP",
+            "lat": 57.47655833333334,
+            "lon": 111.13088888333333
+        },
+        {
+            "name": "MUVEL",
+            "lat": 57.202,
+            "lon": 110.976725
+        },
+        {
+            "name": "PI001",
+            "lat": 57.12133333333333,
+            "lon": 110.97673888333334
+        },
+        {
+            "name": "PI002",
+            "lat": 57.07062273333333,
+            "lon": 111.069961
+        },
+        {
+            "name": "PI003",
+            "lat": 57.013,
+            "lon": 110.97673888333334
+        },
+        {
+            "name": "PIGVA",
+            "lat": 57.37684443333333,
+            "lon": 110.97660556666666
+        },
+        {
+            "name": "ROTKI",
+            "lat": 57.013361116666665,
+            "lon": 110.97685278333333
+        },
+        {
+            "name": "SEBUR",
+            "lat": 57.366072216666666,
+            "lon": 110.97661388333333
+        },
+        {
+            "name": "SEKIK",
+            "lat": 56.925,
+            "lon": 111.92
+        },
+        {
+            "name": "TULAG",
+            "lat": 56.69847778333333,
+            "lon": 107.89066388333333
+        },
+        {
+            "name": "UBTUR",
+            "lat": 57.07824443333333,
+            "lon": 110.82411388333334
+        },
+        {
+            "name": "YMM",
+            "lat": 56.64767221666666,
+            "lon": 111.12246666666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS35",
+            "fixes": {
+                "ROTKI": "ROTKI AT OR ABOVE 3500",
+                "LEXOB": "LEXOB 3490 RNW 35 HDG 345 UNTIL 3500 TURN RIGHT DIRECT",
+                "1L": "1L 3500 HOLD AT 1L LEFT TURN INBOUNDCOURSE 345 SPEED 200 LEGTIME 1 FAF LEXOB MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "LEXOB",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "YMM",
+                    "fixes": {
+                        "YMM": "YMM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "APGAG": "APGAG AT OR ABOVE 3500 SPEED 180",
+                "PIGVA": "PIGVA 3500 RNW 17",
+                "MUVEL": "OVERFLY MUVEL 3500 HOLD AT MUVEL LEFT TURN INBOUNDCOURSE 165 LEGTIME 1 FAF PIGVA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "SEKIK",
+                    "fixes": {
+                        "SEKIK": "SEKIK",
+                        "LIBEP": "LIBEP AT OR ABOVE 4000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TULAG",
+                    "fixes": {
+                        "TULAG": "TULAG",
+                        "IGTIP": "IGTIP AT OR ABOVE 4000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "DAVLI": "DAVLI AT OR ABOVE 3500 SPEED 180",
+                "AXOVA": "AXOVA 3500",
+                "DUVET": "DUVET AT OR ABOVE 2580 RNW 35",
+                "SEBUR": "OVERFLY SEBUR 3500 HOLD AT SEBUR RIGHT TURN INBOUNDCOURSE 345 LEGTIME 1 FAF AXOVA MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "SEKIK",
+                    "fixes": {
+                        "SEKIK": "SEKIK",
+                        "KITIN": "KITIN AT OR ABOVE 4000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TULAG",
+                    "fixes": {
+                        "TULAG": "TULAG",
+                        "UBTUR": "UBTUR AT OR ABOVE 4000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "CD07",
+            "lat": 36.297411116666666,
+            "lon": 54.820908333333335
+        },
+        {
+            "name": "D235U",
+            "lat": 36.24705278333333,
+            "lon": 54.71401388333334
+        },
+        {
+            "name": "FD07",
+            "lat": 36.35604166666667,
+            "lon": 54.94579443333333
+        },
+        {
+            "name": "ITMEL",
+            "lat": 36.12472221666667,
+            "lon": 54.47
+        },
+        {
+            "name": "MD07",
+            "lat": 36.41871388333333,
+            "lon": 55.079805566666664
+        },
+        {
+            "name": "SHR",
+            "lat": 36.42286111666667,
+            "lon": 55.08875
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "ITME1A",
+            "rnw": "07",
+            "fixes": {
+                "SHR": "SHR AT OR ABOVE 9000",
+                "ITMEL": "ITMEL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ITME1B",
+            "rnw": "25",
+            "fixes": {
+                "SHR": "SHR AT OR ABOVE 9000 TURN LEFT DIRECT",
+                "ITMEL": "ITMEL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ITME1C",
+            "rnw": "25",
+            "fixes": {
+                "ITMEL": "ITMEL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ITME1N",
+            "runway": "RNW 25",
+            "fixes": {
+                "ITMEL": "ITMEL",
+                "SHR": "SHR"
+            }
+        },
+        {
+            "name": "ITME1P",
+            "runway": "RNW 07",
+            "fixes": {
+                "ITMEL": "ITMEL",
+                "D235U": "D235U"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD07",
+            "fixes": {
+                "CD07": "CD07 AT OR ABOVE 9100",
+                "FD07": "FD07 7100",
+                "MD07": "MD07 4397 RNW 07",
+                "SHR": "SHR TRK 051 UNTIL 7000 TURN RIGHT DIRECT SHR",
+                "D235U": "D235U 12000 HOLD AT D235U RIGHT TURN INBOUNDCOURSE 055 ALT 12000 SPEED 220 LEGTIME 1 FAF FD07 MAP MD07"
+            },
+            "transitions": [
+                {
+                    "name": "D235U",
+                    "fixes": {
+                        "D235U": "D235U AT OR ABOVE 12000"
+                    }
+                }
+            ]
+        }
+    ]
+}

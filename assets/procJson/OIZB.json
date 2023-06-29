@@ -1,0 +1,221 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 31.239929166666666,
+            "lon": 61.40987628333333
+        },
+        {
+            "name": "AF002",
+            "lat": 31.257362383333334,
+            "lon": 61.44120436666667
+        },
+        {
+            "name": "CD34",
+            "lat": 30.920752783333334,
+            "lon": 61.60775
+        },
+        {
+            "name": "D200L",
+            "lat": 30.909638883333333,
+            "lon": 61.45479721666667
+        },
+        {
+            "name": "D310L",
+            "lat": 31.229536116666665,
+            "lon": 61.368538883333336
+        },
+        {
+            "name": "D340K",
+            "lat": 31.270261116666667,
+            "lon": 61.47578333333333
+        },
+        {
+            "name": "ELOKA",
+            "lat": 31.39027778333333,
+            "lon": 59.98944443333333
+        },
+        {
+            "name": "FD16",
+            "lat": 31.194775,
+            "lon": 61.52566111666667
+        },
+        {
+            "name": "FD34",
+            "lat": 31.0002,
+            "lon": 61.577841666666664
+        },
+        {
+            "name": "FN34",
+            "lat": 31.022763883333333,
+            "lon": 61.57155278333333
+        },
+        {
+            "name": "MD16",
+            "lat": 31.120338883333332,
+            "lon": 61.53783333333333
+        },
+        {
+            "name": "MD34",
+            "lat": 31.071697216666667,
+            "lon": 61.55088333333333
+        },
+        {
+            "name": "ZA35A",
+            "lat": 31.102966666666667,
+            "lon": 60.862575
+        },
+        {
+            "name": "ZA35B",
+            "lat": 31.281241666666666,
+            "lon": 60.897191666666664
+        },
+        {
+            "name": "ZAL",
+            "lat": 31.095527783333335,
+            "lon": 61.541888883333336
+        },
+        {
+            "name": "ZAL35",
+            "lat": 31.223972216666667,
+            "lon": 60.87864166666667
+        },
+        {
+            "name": "ZALNB",
+            "lat": 31.097694433333334,
+            "lon": 61.53988888333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "ELOK2A",
+            "rnw": "34",
+            "fixes": {
+                "ELOKA": "ELOKA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ELOK2B",
+            "rnw": "16",
+            "fixes": {
+                "ELOKA": "ELOKA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ELOK2C",
+            "rnw": "34",
+            "fixes": {
+                "ELOKA": "ELOKA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ELOK2D",
+            "rnw": "16",
+            "fixes": {
+                "ELOKA": "ELOKA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ELOK1N",
+            "runway": "RNW 16 RNW 34",
+            "fixes": {
+                "ELOKA": "ELOKA",
+                "ZAL35": "ZAL35",
+                "ZAL": "ZAL"
+            }
+        },
+        {
+            "name": "ELOK1P",
+            "runway": "RNW 34",
+            "fixes": {
+                "ELOKA": "ELOKA",
+                "ZA35A": "ZA35A",
+                "D200L": "D200L"
+            }
+        },
+        {
+            "name": "ELOK1Q",
+            "runway": "RNW 16",
+            "fixes": {
+                "ELOKA": "ELOKA",
+                "ZA35B": "ZA35B",
+                "D310L": "D310L"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD16",
+            "fixes": {
+                "FD16": "FD16 2900",
+                "MD16": "MD16 1815 RNW 16",
+                "ZAL": "ZAL AT OR ABOVE 1980 TURN RIGHT HDG 340 INTERCEPT RADIAL 310 TO",
+                "D310L": "D310L D310L 4000 HOLD AT D310L RIGHT TURN INBOUNDCOURSE 130 SPEED 210 LEGTIME 1 FAF FD16 MAP MD16"
+            },
+            "transitions": [
+                {
+                    "name": "D310L",
+                    "fixes": {
+                        "D310L": "D310L AT OR ABOVE 4000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D340K": "D340K AT OR ABOVE 2900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD34",
+            "fixes": {
+                "CD34": "CD34 AT OR ABOVE 2900",
+                "FD34": "FD34 2900",
+                "MD34": "MD34 1905 RNW 34",
+                "ZAL": "ZAL TURN LEFT HDG 170 INTERCEPT RADIAL 200 TO",
+                "D200L": "D200L D200L 4000 HOLD AT D200L RIGHT TURN INBOUNDCOURSE 020 SPEED 210 LEGTIME 1 FAF FD34 MAP MD34"
+            },
+            "transitions": [
+                {
+                    "name": "D200L",
+                    "fixes": {
+                        "D200L": "D200L"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB34",
+            "fixes": {
+                "FN34": "FN34 2500 RNW 34",
+                "ZALNB": "OVERFLY ZALNB TRK 338 UNTIL 2800 TURN LEFT DIRECT ZALNB 3500 HOLD AT ZALNB RIGHT TURN INBOUNDCOURSE 130 SPEED 230 LEGTIME 1 FAF FN34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "ZAL1",
+                    "fixes": {
+                        "ZALNB": "ZALNB AT OR ABOVE 3500 TRK 130 UNTIL 4.6 FROM ZALNB"
+                    }
+                },
+                {
+                    "name": "ZAL2",
+                    "fixes": {
+                        "ZALNB": "ZALNB AT OR ABOVE 3500 TRK 140 UNTIL 4.7 FROM ZALNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

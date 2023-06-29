@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "BRIGM",
+            "lat": 39.291466666666665,
+            "lon": 111.66479721666667
+        },
+        {
+            "name": "DTA",
+            "lat": 39.302261116666664,
+            "lon": 112.50555833333334
+        },
+        {
+            "name": "OOLIT",
+            "lat": 39.24620278333333,
+            "lon": 111.72381111666667
+        },
+        {
+            "name": "PUC",
+            "lat": 39.60319166666667,
+            "lon": 110.75352778333334
+        },
+        {
+            "name": "RPEEN",
+            "lat": 39.16410833333333,
+            "lon": 111.83055
+        },
+        {
+            "name": "SANPT",
+            "lat": 39.631230566666666,
+            "lon": 111.54329721666667
+        },
+        {
+            "name": "TMPLE",
+            "lat": 39.268036116666664,
+            "lon": 111.69535833333333
+        },
+        {
+            "name": "WKARA",
+            "lat": 39.09331111666667,
+            "lon": 111.92229721666666
+        },
+        {
+            "name": "WUXOT",
+            "lat": 39.16604721666667,
+            "lon": 111.72343056666666
+        },
+        {
+            "name": "YMONT",
+            "lat": 40.029941666666666,
+            "lon": 111.50251111666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "WUXOT1",
+            "rnw": "21",
+            "fixes": {
+                "WUXOT": "WUXOT",
+                "DTA": "DTA 10300"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "YMONT1",
+            "rnw": "03",
+            "fixes": {
+                "SANPT": "SANPT",
+                "YMONT": "YMONT 13000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "WKARA": "WKARA AT OR ABOVE 11800",
+                "RPEEN": "RPEEN AT OR ABOVE 9900",
+                "OOLIT": "OOLIT 7700",
+                "TMPLE": "TMPLE AT OR ABOVE 7100",
+                "BRIGM": "BRIGM AT OR ABOVE 6460 RNW 03 TRK 034 UNTIL 6000",
+                "SANPT": "SANPT",
+                "YMONT": "OVERFLY YMONT AT OR ABOVE 13000 HOLD AT YMONT RIGHT TURN INBOUNDCOURSE 296 LEGDIST 8 FAF OOLIT MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "DTA",
+                    "fixes": {
+                        "DTA": "DTA"
+                    }
+                },
+                {
+                    "name": "PUC",
+                    "fixes": {
+                        "PUC": "PUC",
+                        "WKARA": "OVERFLY WKARA AT OR ABOVE 13200 HOLD AT WKARA RIGHT TURN INBOUNDCOURSE 034 ALT 11800 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

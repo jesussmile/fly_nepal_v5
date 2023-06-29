@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "BRIMS",
+            "lat": 24.89397221666667,
+            "lon": 76.11197221666667
+        },
+        {
+            "name": "CARSN",
+            "lat": 24.968333333333334,
+            "lon": 76.37555556666666
+        },
+        {
+            "name": "HEKOP",
+            "lat": 25.237486116666666,
+            "lon": 77.551425
+        },
+        {
+            "name": "IBASE",
+            "lat": 24.801341666666666,
+            "lon": 76.36843611666667
+        },
+        {
+            "name": "INURE",
+            "lat": 25.063786116666666,
+            "lon": 76.92318888333334
+        },
+        {
+            "name": "JAPEL",
+            "lat": 24.895277783333334,
+            "lon": 76.07527778333333
+        },
+        {
+            "name": "KONGE",
+            "lat": 24.888055566666665,
+            "lon": 76.28027778333333
+        },
+        {
+            "name": "MANGL",
+            "lat": 24.898888883333335,
+            "lon": 75.96527778333333
+        },
+        {
+            "name": "SITAE",
+            "lat": 24.815555566666667,
+            "lon": 75.96194443333333
+        },
+        {
+            "name": "TIPME",
+            "lat": 24.885,
+            "lon": 76.37194443333334
+        },
+        {
+            "name": "UZUMU",
+            "lat": 24.9825,
+            "lon": 75.96861111666666
+        },
+        {
+            "name": "ZARAR",
+            "lat": 25.227569433333333,
+            "lon": 77.28438888333334
+        },
+        {
+            "name": "ZUTUN",
+            "lat": 24.963311116666667,
+            "lon": 77.24717221666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "INURE1",
+            "rnw": "09",
+            "fixes": {
+                "BRIMS": "OVERFLY BRIMS AT OR ABOVE 630 TURN RIGHT DIRECT",
+                "IBASE": "IBASE AT OR ABOVE 3300 SPEED 210",
+                "INURE": "INURE"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "HEKOP",
+                    "fixes": [
+                        "ZARAR",
+                        "HEKOP"
+                    ]
+                },
+                {
+                    "name": "ZUTUN",
+                    "fixes": [
+                        "ZUTUN"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "TIPME": "TIPME AT OR ABOVE 2300 SPEED 210",
+                "KONGE": "KONGE 1700 RNW 09 TRK 096 UNTIL 420 TURN RIGHT DIRECT",
+                "IBASE": "IBASE AT OR ABOVE 2300 SPEED 210 HOLD AT IBASE RIGHT TURN INBOUNDCOURSE 006 LEGTIME 1 FAF KONGE MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "CARSN",
+                    "fixes": {
+                        "CARSN": "CARSN SPEED 210"
+                    }
+                },
+                {
+                    "name": "IBASE",
+                    "fixes": {
+                        "IBASE": "IBASE SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "MANGL": "MANGL AT OR ABOVE 2300 SPEED 210",
+                "JAPEL": "JAPEL 1700 RNW 27 TRK 276 UNTIL 420 TURN LEFT DIRECT",
+                "SITAE": "SITAE AT OR ABOVE 2300 SPEED 210 HOLD AT SITAE RIGHT TURN INBOUNDCOURSE 006 LEGTIME 1 FAF JAPEL MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "SITAE",
+                    "fixes": {
+                        "SITAE": "SITAE SPEED 210"
+                    }
+                },
+                {
+                    "name": "UZUMU",
+                    "fixes": {
+                        "UZUMU": "UZUMU SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

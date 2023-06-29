@@ -1,0 +1,195 @@
+{
+    "fixes": [
+        {
+            "name": "13THR",
+            "lat": 12.981072216666666,
+            "lon": 7.633705566666666
+        },
+        {
+            "name": "20THR",
+            "lat": 12.972783333333334,
+            "lon": 7.625258333333333
+        },
+        {
+            "name": "AMKEB",
+            "lat": 12.852919433333334,
+            "lon": 7.503238883333333
+        },
+        {
+            "name": "CF05",
+            "lat": 12.913497216666666,
+            "lon": 7.564941666666667
+        },
+        {
+            "name": "ERTAL",
+            "lat": 12.912077783333332,
+            "lon": 7.4428833333333335
+        },
+        {
+            "name": "FD23",
+            "lat": 13.055255566666666,
+            "lon": 7.709341666666667
+        },
+        {
+            "name": "FF05",
+            "lat": 12.937188883333333,
+            "lon": 7.589058333333333
+        },
+        {
+            "name": "GAVRO",
+            "lat": 12.793705566666667,
+            "lon": 7.442952783333333
+        },
+        {
+            "name": "IRPUP",
+            "lat": 13.223258333333334,
+            "lon": 7.880638883333333
+        },
+        {
+            "name": "IVMEX",
+            "lat": 13.16405,
+            "lon": 7.820258333333333
+        },
+        {
+            "name": "KAT",
+            "lat": 13.031611116666667,
+            "lon": 7.68525
+        },
+        {
+            "name": "KT400",
+            "lat": 12.912133333333333,
+            "lon": 7.563538883333333
+        },
+        {
+            "name": "KT500",
+            "lat": 13.104841666666667,
+            "lon": 7.759894433333333
+        },
+        {
+            "name": "KT600",
+            "lat": 12.971277783333333,
+            "lon": 7.503211116666667
+        },
+        {
+            "name": "KT700",
+            "lat": 13.163975,
+            "lon": 7.699452783333333
+        },
+        {
+            "name": "POGTA",
+            "lat": 13.104888883333333,
+            "lon": 7.8806722166666665
+        },
+        {
+            "name": "TAVUV",
+            "lat": 13.223197216666666,
+            "lon": 7.759816666666667
+        },
+        {
+            "name": "XUNAL",
+            "lat": 12.793747216666667,
+            "lon": 7.5635666666666665
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "CF05": "CF05 AT OR ABOVE 3310",
+                "FF05": "FF05 3310",
+                "20THR": "20THR AT OR ABOVE 2240",
+                "13THR": "13THR AT OR ABOVE 2100 RNW 05",
+                "KAT": "OVERFLY KAT TURN LEFT DIRECT KAT 3500 HOLD AT KAT LEFT TURN INBOUNDCOURSE 046 ALT 3500 LEGTIME 1 FAF FF05 MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FD23": "FD23 2800",
+                "KAT": "KAT 2079 RNW 23 TRK 226 UNTIL 3.0 FROM KAT TURN RIGHT DIRECT KAT 3500 HOLD AT KAT RIGHT TURN INBOUNDCOURSE 226 ALT 3500 LEGTIME 1 FAF FD23 MAP KA"
+            },
+            "transitions": [
+                {
+                    "name": "KAT",
+                    "fixes": {
+                        "KAT": "KAT RIGHT TURN INBOUNDCOURSE 226 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS05",
+            "fixes": {
+                "CF05": "CF05 AT OR ABOVE 3310",
+                "FF05": "FF05 3310 RNW 05",
+                "KAT": "OVERFLY KAT TURN LEFT DIRECT KAT 3500 HOLD AT KAT LEFT TURN INBOUNDCOURSE 046 ALT 3500 LEGTIME 1 FAF FF05 MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "AMKEB": "AMKEB AT OR ABOVE 4000 SPEED 200 AMKEB HOLD AT AMKEB LEFT TURN INBOUNDCOURSE 046 ALT 4000 SPEED 230 LEGTIME 1 FAF KT400 MAP RNW 05",
+                "KT400": "KT400 4000 RNW 05 TURN LEFT DIRECT",
+                "KT600": "KT600",
+                "ERTAL": "ERTAL SPEED 200"
+            },
+            "transitions": [
+                {
+                    "name": "ERTAL",
+                    "fixes": {
+                        "ERTAL": "ERTAL"
+                    }
+                },
+                {
+                    "name": "GAVRO",
+                    "fixes": {
+                        "GAVRO": "GAVRO"
+                    }
+                },
+                {
+                    "name": "XUNAL",
+                    "fixes": {
+                        "XUNAL": "XUNAL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "IVMEX": "IVMEX AT OR ABOVE 4000 SPEED 200 IVMEX",
+                "KT500": "KT500 4000 RNW 23 TURN RIGHT DIRECT KT500 HOLD AT KT500 LEFT TURN INBOUNDCOURSE 226 ALT 4000 SPEED 230 LEGTIME 1 FAF KT500 MAP RNW 23",
+                "KT700": "KT700",
+                "TAVUV": "TAVUV"
+            },
+            "transitions": [
+                {
+                    "name": "IRPUP",
+                    "fixes": {
+                        "IRPUP": "IRPUP"
+                    }
+                },
+                {
+                    "name": "POGTA",
+                    "fixes": {
+                        "POGTA": "POGTA"
+                    }
+                },
+                {
+                    "name": "TAVUV",
+                    "fixes": {
+                        "TAVUV": "TAVUV"
+                    }
+                }
+            ]
+        }
+    ]
+}

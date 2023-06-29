@@ -1,0 +1,227 @@
+{
+    "fixes": [
+        {
+            "name": "AYUYI",
+            "lat": 41.72096388333333,
+            "lon": 85.77851666666666
+        },
+        {
+            "name": "CIVPU",
+            "lat": 41.91395,
+            "lon": 86.29596111666666
+        },
+        {
+            "name": "ELX",
+            "lat": 42.14441111666667,
+            "lon": 86.12270556666667
+        },
+        {
+            "name": "FEVAX",
+            "lat": 41.670633333333335,
+            "lon": 86.07628333333334
+        },
+        {
+            "name": "GIJ",
+            "lat": 41.76861111666667,
+            "lon": 86.31845278333333
+        },
+        {
+            "name": "HEGUD",
+            "lat": 41.75666111666666,
+            "lon": 86.153725
+        },
+        {
+            "name": "IBEBY",
+            "lat": 42.00361111666667,
+            "lon": 86.37741943333333
+        },
+        {
+            "name": "JJANN",
+            "lat": 41.97473611666667,
+            "lon": 85.98413888333333
+        },
+        {
+            "name": "LINGS",
+            "lat": 41.85295,
+            "lon": 85.88513611666667
+        },
+        {
+            "name": "MABTE",
+            "lat": 41.833030566666665,
+            "lon": 86.22944443333333
+        },
+        {
+            "name": "MAPER",
+            "lat": 42.028825,
+            "lon": 86.73556388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 41.72457498333333,
+            "lon": 86.36972893333333
+        },
+        {
+            "name": "PI002",
+            "lat": 41.6530827,
+            "lon": 86.36303818333333
+        },
+        {
+            "name": "PI003",
+            "lat": 41.64273325,
+            "lon": 86.46476983333334
+        },
+        {
+            "name": "ZIVDO",
+            "lat": 42.12419166666667,
+            "lon": 86.23136388333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 15",
+        "RNW 22",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "IBEBY": "IBEBY AT OR ABOVE 2500",
+                "CIVPU": "CIVPU 2500 RNW 15 TRK 151 UNTIL 1150 TURN LEFT DIRECT",
+                "JJANN": "OVERFLY JJANN AT OR ABOVE 3000 HOLD AT JJANN RIGHT TURN INBOUNDCOURSE 050 LEGDIST 4 FAF CIVPU MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "GIJ",
+                    "fixes": {
+                        "GIJ": "GIJ",
+                        "IBEBY": "OVERFLY IBEBY AT OR ABOVE 2500 HOLD AT IBEBY RIGHT TURN INBOUNDCOURSE 151 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LINGS",
+                    "fixes": {
+                        "LINGS": "LINGS",
+                        "IBEBY": "OVERFLY IBEBY AT OR ABOVE 2500 HOLD AT IBEBY RIGHT TURN INBOUNDCOURSE 151 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MAPER",
+                    "fixes": {
+                        "MAPER": "MAPER"
+                    }
+                },
+                {
+                    "name": "ZIVDO",
+                    "fixes": {
+                        "ZIVDO": "ZIVDO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "FEVAX": "FEVAX AT OR ABOVE 3500",
+                "HEGUD": "HEGUD 2500 RNW 33 TRK 331 UNTIL 1150 TURN RIGHT DIRECT",
+                "JJANN": "OVERFLY JJANN AT OR ABOVE 3000 HOLD AT JJANN RIGHT TURN INBOUNDCOURSE 050 LEGDIST 4 FAF HEGUD MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "AYUYI",
+                    "fixes": {
+                        "AYUYI": "AYUYI"
+                    }
+                },
+                {
+                    "name": "GIJ",
+                    "fixes": {
+                        "GIJ": "GIJ",
+                        "FEVAX": "OVERFLY FEVAX AT OR ABOVE 3500 HOLD AT FEVAX RIGHT TURN INBOUNDCOURSE 331 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JJANN",
+                    "fixes": {
+                        "JJANN": "JJANN",
+                        "FEVAX": "OVERFLY FEVAX AT OR ABOVE 3500 HOLD AT FEVAX RIGHT TURN INBOUNDCOURSE 331 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA04",
+            "fixes": {
+                "GIJ": "GIJ 2500",
+                "MABTE": "MABTE 833 RNW 04 TRK 046 UNTIL 2500",
+                "ELX": "ELX HOLD AT ELX LEFT TURN INBOUNDCOURSE 021 LEGTIME 1 FAF GIJ MAP MABTE"
+            },
+            "transitions": [
+                {
+                    "name": "GIJ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA15",
+            "fixes": {
+                "GIJ": "GIJ 2500",
+                "MABTE": "MABTE 833 RNW 15 TRK 046 UNTIL 2500",
+                "ELX": "ELX HOLD AT ELX LEFT TURN INBOUNDCOURSE 021 LEGTIME 1 FAF GIJ MAP MABTE"
+            },
+            "transitions": [
+                {
+                    "name": "GIJ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA22",
+            "fixes": {
+                "GIJ": "GIJ 2500",
+                "MABTE": "MABTE 833 RNW 22 TRK 046 UNTIL 2500",
+                "ELX": "ELX HOLD AT ELX LEFT TURN INBOUNDCOURSE 021 LEGTIME 1 FAF GIJ MAP MABTE"
+            },
+            "transitions": [
+                {
+                    "name": "GIJ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA33",
+            "fixes": {
+                "GIJ": "GIJ 2500",
+                "MABTE": "MABTE 833 RNW 33 TRK 046 UNTIL 2500",
+                "ELX": "ELX HOLD AT ELX LEFT TURN INBOUNDCOURSE 021 LEGTIME 1 FAF GIJ MAP MABTE"
+            },
+            "transitions": [
+                {
+                    "name": "GIJ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

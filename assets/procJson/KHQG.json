@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "BRAKR",
+            "lat": 36.72764443333333,
+            "lon": 101.50235556666667
+        },
+        {
+            "name": "OVAME",
+            "lat": 36.9735,
+            "lon": 101.47864166666666
+        },
+        {
+            "name": "POYIL",
+            "lat": 37.384825,
+            "lon": 101.35776111666667
+        },
+        {
+            "name": "UBICI",
+            "lat": 36.938741666666665,
+            "lon": 101.38412221666667
+        },
+        {
+            "name": "UPIRE",
+            "lat": 37.43476666666667,
+            "lon": 101.542325
+        },
+        {
+            "name": "WAGIX",
+            "lat": 37.34998611666666,
+            "lon": 101.262775
+        },
+        {
+            "name": "WATRI",
+            "lat": 37.07018333333333,
+            "lon": 101.42342778333334
+        },
+        {
+            "name": "YAPUS",
+            "lat": 37.25355,
+            "lon": 101.31828888333334
+        },
+        {
+            "name": "ZATUX",
+            "lat": 37.315069433333335,
+            "lon": 101.167875
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 13",
+        "RNW 20",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "OVAME": "OVAME AT OR ABOVE 5000",
+                "WATRI": "WATRI 5000 RNW 02 TRK 020 UNTIL 3384",
+                "WAGIX": "OVERFLY WAGIX AT OR ABOVE 5000 HOLD AT WAGIX RIGHT TURN INBOUNDCOURSE 200 LEGDIST 5 FAF WATRI MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "BRAKR",
+                    "fixes": {
+                        "BRAKR": "BRAKR"
+                    }
+                },
+                {
+                    "name": "OVAME",
+                    "fixes": {
+                        "OVAME": "OVAME RIGHT TURN INBOUNDCOURSE 020 ALT 5000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "UBICI",
+                    "fixes": {
+                        "UBICI": "UBICI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "WAGIX": "WAGIX AT OR ABOVE 5000",
+                "YAPUS": "YAPUS 5000 RNW 20 TRK 200 UNTIL 3382",
+                "OVAME": "OVERFLY OVAME AT OR ABOVE 5000 HOLD AT OVAME RIGHT TURN INBOUNDCOURSE 020 LEGDIST 5 FAF YAPUS MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "UPIRE",
+                    "fixes": {
+                        "UPIRE": "UPIRE",
+                        "POYIL": "POYIL AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "WAGIX",
+                    "fixes": {
+                        "WAGIX": "WAGIX RIGHT TURN INBOUNDCOURSE 200 ALT 5000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "ZATUX",
+                    "fixes": {
+                        "ZATUX": "ZATUX"
+                    }
+                }
+            ]
+        }
+    ]
+}

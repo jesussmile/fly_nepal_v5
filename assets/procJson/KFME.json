@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "BEVGE",
+            "lat": 39.07781943333333,
+            "lon": 76.62178888333334
+        },
+        {
+            "name": "CUTOP",
+            "lat": 39.16810278333333,
+            "lon": 76.97124166666667
+        },
+        {
+            "name": "FATEN",
+            "lat": 39.08279443333333,
+            "lon": 76.71370278333333
+        },
+        {
+            "name": "FATIR",
+            "lat": 39.10254166666667,
+            "lon": 76.85836388333334
+        },
+        {
+            "name": "GEEMO",
+            "lat": 39.04973888333333,
+            "lon": 76.50981388333334
+        },
+        {
+            "name": "HORTU",
+            "lat": 39.077880566666664,
+            "lon": 76.733875
+        },
+        {
+            "name": "PALEO",
+            "lat": 39.02799443333333,
+            "lon": 76.372725
+        },
+        {
+            "name": "POGKI",
+            "lat": 39.086094433333336,
+            "lon": 76.77536388333333
+        },
+        {
+            "name": "WOOLY",
+            "lat": 39.338661116666664,
+            "lon": 77.03643611666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "CUTOP": "CUTOP AT OR ABOVE 2100",
+                "FATIR": "FATIR 1600",
+                "POGKI": "OVERFLY POGKI 312 RNW 10 TRK 114 UNTIL 550",
+                "HORTU": "HORTU",
+                "GEEMO": "OVERFLY GEEMO AT OR ABOVE 2200 HOLD AT GEEMO LEFT TURN INBOUNDCOURSE 298 LEGDIST 4 FAF FATIR MAP POGKI"
+            },
+            "transitions": [
+                {
+                    "name": "WOOLY",
+                    "fixes": {
+                        "WOOLY": "WOOLY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "GEEMO": "GEEMO AT OR ABOVE 2200 OVERFLY GEEMO AT OR ABOVE 2200 HOLD AT GEEMO LEFT TURN INBOUNDCOURSE 298 LEGDIST 4 FAF BEVGE MAP RNW 28",
+                "BEVGE": "BEVGE 2200",
+                "FATEN": "FATEN AT OR ABOVE 800 RNW 28 TRK 284 UNTIL 550 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GEEMO",
+                    "fixes": {
+                        "GEEMO": "GEEMO LEFT TURN INBOUNDCOURSE 298 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PALEO",
+                    "fixes": {
+                        "PALEO": "PALEO"
+                    }
+                }
+            ]
+        }
+    ]
+}

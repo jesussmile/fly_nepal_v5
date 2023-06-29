@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "COMTA",
+            "lat": 31.501311116666667,
+            "lon": 82.10781111666667
+        },
+        {
+            "name": "EGOXY",
+            "lat": 31.537283333333335,
+            "lon": 81.76618888333333
+        },
+        {
+            "name": "FEJYY",
+            "lat": 31.370019433333333,
+            "lon": 81.895025
+        },
+        {
+            "name": "HABLE",
+            "lat": 31.352688883333332,
+            "lon": 82.10276666666667
+        },
+        {
+            "name": "HESUB",
+            "lat": 31.52245,
+            "lon": 81.66340556666667
+        },
+        {
+            "name": "JATAS",
+            "lat": 31.567075,
+            "lon": 81.97450278333334
+        },
+        {
+            "name": "JEMUX",
+            "lat": 31.539172216666667,
+            "lon": 81.77933056666667
+        },
+        {
+            "name": "KOGSE",
+            "lat": 31.583713883333335,
+            "lon": 82.09195833333334
+        },
+        {
+            "name": "OCADA",
+            "lat": 31.4401,
+            "lon": 81.67963333333333
+        },
+        {
+            "name": "WABIT",
+            "lat": 31.671625,
+            "lon": 82.00711666666666
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "KOGSE": "KOGSE AT OR ABOVE 2700 OVERFLY KOGSE AT OR ABOVE 2700 HOLD AT KOGSE RIGHT TURN INBOUNDCOURSE 103 LEGDIST 4 FAF JATAS MAP RNW 11",
+                "JATAS": "JATAS 1700 RNW 11",
+                "EGOXY": "EGOXY TURN RIGHT DIRECT",
+                "FEJYY": "FEJYY"
+            },
+            "transitions": [
+                {
+                    "name": "HABLE",
+                    "fixes": {
+                        "HABLE": "HABLE",
+                        "COMTA": "COMTA AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "WABIT",
+                    "fixes": {
+                        "WABIT": "WABIT",
+                        "KOGSE": "KOGSE AT OR ABOVE 2700 HOLD AT KOGSE RIGHT TURN INBOUNDCOURSE 103 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "HESUB": "HESUB AT OR ABOVE 2700",
+                "JEMUX": "JEMUX 1700 RNW 29 TRK 284 UNTIL 364",
+                "KOGSE": "OVERFLY KOGSE AT OR ABOVE 2700 HOLD AT KOGSE RIGHT TURN INBOUNDCOURSE 103 LEGDIST 4 FAF JEMUX MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "HABLE",
+                    "fixes": {
+                        "HABLE": "HABLE",
+                        "OCADA": "OCADA AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "HESUB",
+                    "fixes": {
+                        "HESUB": "HESUB RIGHT TURN INBOUNDCOURSE 284 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

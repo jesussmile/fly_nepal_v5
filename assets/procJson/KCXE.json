@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "DOCMO",
+            "lat": 36.85043056666667,
+            "lon": 78.38918611666666
+        },
+        {
+            "name": "FILOV",
+            "lat": 36.60090278333333,
+            "lon": 78.47965556666666
+        },
+        {
+            "name": "GELYE",
+            "lat": 36.70181388333334,
+            "lon": 78.49142778333334
+        },
+        {
+            "name": "JASUX",
+            "lat": 36.59303333333333,
+            "lon": 78.58268333333334
+        },
+        {
+            "name": "NASAE",
+            "lat": 36.977727783333336,
+            "lon": 78.52377778333333
+        },
+        {
+            "name": "OCAPI",
+            "lat": 36.873944433333335,
+            "lon": 78.51158333333333
+        },
+        {
+            "name": "SBV",
+            "lat": 36.675038883333336,
+            "lon": 79.0145
+        },
+        {
+            "name": "TEROC",
+            "lat": 36.969858333333335,
+            "lon": 78.62731111666666
+        },
+        {
+            "name": "YUDUG",
+            "lat": 36.996977783333335,
+            "lon": 78.36548333333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "NASAE": "NASAE AT OR ABOVE 3000",
+                "OCAPI": "OCAPI 2100 RNW 18 TRK 184 UNTIL 903 TURN LEFT DIRECT",
+                "DOCMO": "OVERFLY DOCMO AT OR ABOVE 3000 HOLD AT DOCMO LEFT TURN INBOUNDCOURSE 043 ALT 3000 LEGDIST 4 FAF OCAPI MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "SBV",
+                    "fixes": {
+                        "SBV": "SBV",
+                        "TEROC": "TEROC AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "YUDUG",
+                    "fixes": {
+                        "YUDUG": "YUDUG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "FILOV": "FILOV AT OR ABOVE 3000 OVERFLY FILOV AT OR ABOVE 3000 HOLD AT FILOV RIGHT TURN INBOUNDCOURSE 004 LEGDIST 4 FAF GELYE MAP RNW 36",
+                "GELYE": "GELYE 2100 RNW 36 TRK 004 UNTIL 903 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FILOV",
+                    "fixes": {
+                        "FILOV": "FILOV RIGHT TURN INBOUNDCOURSE 004 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SBV",
+                    "fixes": {
+                        "SBV": "SBV",
+                        "JASUX": "JASUX AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

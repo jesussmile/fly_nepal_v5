@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "CF06R",
+            "lat": 26.916330566666666,
+            "lon": 101.61368333333333
+        },
+        {
+            "name": "CF24L",
+            "lat": 26.994522216666667,
+            "lon": 101.32829443333334
+        },
+        {
+            "name": "FF06R",
+            "lat": 26.931036116666668,
+            "lon": 101.56020278333334
+        },
+        {
+            "name": "FF24L",
+            "lat": 26.980880566666666,
+            "lon": 101.37826388333333
+        },
+        {
+            "name": "FS24L",
+            "lat": 26.986583333333332,
+            "lon": 101.35737778333333
+        },
+        {
+            "name": "MOV",
+            "lat": 26.9555,
+            "lon": 101.47103888333334
+        },
+        {
+            "name": "PI001",
+            "lat": 26.9725412,
+            "lon": 101.40844581666667
+        },
+        {
+            "name": "PI002",
+            "lat": 27.03581408333333,
+            "lon": 101.3706726
+        },
+        {
+            "name": "PI003",
+            "lat": 27.004115766666665,
+            "lon": 101.29215131666666
+        }
+    ],
+    "rnws": [
+        "RNW 06L",
+        "RNW 06R",
+        "RNW 24L",
+        "RNW 24R"
+    ],
+    "sids": [
+        {
+            "name": "MOV4A",
+            "rnw": "06R",
+            "fixes": {
+                "MOV": "MOV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MOV4B",
+            "rnw": "24L",
+            "fixes": {
+                "MOV": "MOV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD06R",
+            "fixes": {
+                "CF06R": "CF06R AT OR ABOVE 4500",
+                "FF06R": "FF06R 3600 RNW 06R",
+                "MOV": "OVERFLY MOV TRK 067 UNTIL 7.0 FROM MOV TURN LEFT DIRECT MOV AT OR ABOVE 6000 FAF FF06R MAP RNW 06R"
+            },
+            "transitions": [
+                {
+                    "name": "MOV",
+                    "fixes": {
+                        "MOV": "MOV AT OR ABOVE 6000 TRK 225 UNTIL 8.0 FROM MOV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD24L",
+            "fixes": {
+                "CF24L": "CF24L AT OR ABOVE 4200",
+                "FF24L": "FF24L 3400 RNW 24L",
+                "MOV": "OVERFLY MOV TRK 247 UNTIL 7.0 FROM MOV TURN RIGHT DIRECT MOV AT OR ABOVE 6000 FAF FF24L MAP RNW 24L"
+            },
+            "transitions": [
+                {
+                    "name": "MOV",
+                    "fixes": {
+                        "MOV": "MOV AT OR ABOVE 6000 TRK 045 UNTIL 8.0 FROM MOV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR24L",
+            "fixes": {
+                "FS24L": "FS24L 3800 RNW 24L",
+                "MOV": "OVERFLY MOV TRK 247 UNTIL 7.0 FROM MOV TURN RIGHT DIRECT MOV AT OR ABOVE 6000 FAF FS24L MAP RNW 24L"
+            },
+            "transitions": [
+                {
+                    "name": "MOV",
+                    "fixes": {
+                        "MOV": "MOV AT OR ABOVE 6000",
+                        "PI001": "PI001 AT OR ABOVE 3800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

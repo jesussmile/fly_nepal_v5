@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "BENDI",
+            "lat": 39.511797216666665,
+            "lon": 76.87186666666666
+        },
+        {
+            "name": "EMI",
+            "lat": 39.49500833333333,
+            "lon": 76.97857221666666
+        },
+        {
+            "name": "GATHR",
+            "lat": 39.65300833333333,
+            "lon": 77.16825278333333
+        },
+        {
+            "name": "HAMPR",
+            "lat": 39.51537221666667,
+            "lon": 77.10815833333334
+        },
+        {
+            "name": "JHONY",
+            "lat": 39.56225833333333,
+            "lon": 77.19558333333333
+        },
+        {
+            "name": "MA235",
+            "lat": 39.467413883333336,
+            "lon": 77.01688888333334
+        },
+        {
+            "name": "PI001",
+            "lat": 39.536958,
+            "lon": 76.92602943333333
+        },
+        {
+            "name": "PI002",
+            "lat": 39.608613733333335,
+            "lon": 76.92765291666667
+        },
+        {
+            "name": "PI003",
+            "lat": 39.554929183333336,
+            "lon": 76.90349166666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "JHONY": "JHONY AT OR ABOVE 3000",
+                "HAMPR": "HAMPR 2400 RNW 14 TRK 135 UNTIL 1500",
+                "BENDI": "OVERFLY BENDI AT OR ABOVE 3000 HOLD AT BENDI RIGHT TURN INBOUNDCOURSE 231 LEGDIST 4 FAF HAMPR MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "GATHR",
+                    "fixes": {
+                        "GATHR": "GATHR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA14",
+            "fixes": {
+                "EMI": "EMI 1900 EMI AT OR ABOVE 2600 HOLD AT EMI LEFT TURN INBOUNDCOURSE 359 LEGTIME 1 FAF EMI MAP MA235",
+                "MA235": "MA235 1320 RNW 14 TRK 235 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EMI",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA32",
+            "fixes": {
+                "EMI": "EMI 1900 EMI AT OR ABOVE 2600 HOLD AT EMI LEFT TURN INBOUNDCOURSE 359 LEGTIME 1 FAF EMI MAP MA235",
+                "MA235": "MA235 1320 RNW 32 TRK 235 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EMI",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

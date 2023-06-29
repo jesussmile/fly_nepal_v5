@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "MOVNA",
+            "lat": 21.869452783333333,
+            "lon": 147.96054166666667
+        },
+        {
+            "name": "MOVNC",
+            "lat": 21.803294433333335,
+            "lon": 148.03495278333332
+        },
+        {
+            "name": "MOVND",
+            "lat": 21.845905566666666,
+            "lon": 148.12700833333332
+        },
+        {
+            "name": "MOVNF",
+            "lat": 21.968663883333335,
+            "lon": 148.06180833333335
+        },
+        {
+            "name": "MOVNH",
+            "lat": 22.100952783333334,
+            "lon": 148.08333888333334
+        },
+        {
+            "name": "MOVNI",
+            "lat": 21.885980566666667,
+            "lon": 148.04837221666668
+        },
+        {
+            "name": "MOVSE",
+            "lat": 22.246786116666666,
+            "lon": 148.19250556666665
+        },
+        {
+            "name": "MOVSF",
+            "lat": 22.147658333333332,
+            "lon": 148.09094721666668
+        },
+        {
+            "name": "MOVSG",
+            "lat": 22.313011116666665,
+            "lon": 148.11793333333333
+        },
+        {
+            "name": "MOVSH",
+            "lat": 22.015369433333333,
+            "lon": 148.06940556666666
+        },
+        {
+            "name": "MOVSI",
+            "lat": 22.230336116666667,
+            "lon": 148.10443333333333
+        },
+        {
+            "name": "MOVSJ",
+            "lat": 22.270397216666666,
+            "lon": 148.02557778333335
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "MOVNI": "MOVNI AT OR ABOVE 3500",
+                "MOVNF": "MOVNF 2370 RNW 16",
+                "MOVNH": "MOVNH TRK 163 UNTIL 3500 FAF MOVNF MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "MOVNA",
+                    "fixes": {
+                        "MOVNA": "MOVNA AT OR ABOVE 3500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MOVNC",
+                    "fixes": {
+                        "MOVNC": "MOVNC AT OR ABOVE 3500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MOVND",
+                    "fixes": {
+                        "MOVND": "MOVND AT OR ABOVE 3500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "MOVSI": "MOVSI AT OR ABOVE 3500",
+                "MOVSF": "MOVSF 2410 RNW 34",
+                "MOVSH": "MOVSH TRK 343 UNTIL 3500 FAF MOVSF MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "MOVSE",
+                    "fixes": {
+                        "MOVSE": "MOVSE AT OR ABOVE 3500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MOVSG",
+                    "fixes": {
+                        "MOVSG": "MOVSG AT OR ABOVE 3500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MOVSJ",
+                    "fixes": {
+                        "MOVSJ": "MOVSJ AT OR ABOVE 3500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

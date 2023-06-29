@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "ACUDI",
+            "lat": 34.665247216666664,
+            "lon": 98.06376943333333
+        },
+        {
+            "name": "ACUGI",
+            "lat": 34.27810278333333,
+            "lon": 97.95702221666667
+        },
+        {
+            "name": "ADM",
+            "lat": 34.211586116666666,
+            "lon": 97.16822778333334
+        },
+        {
+            "name": "BECAR",
+            "lat": 34.667286116666666,
+            "lon": 97.86172778333334
+        },
+        {
+            "name": "BICAL",
+            "lat": 34.27704166666667,
+            "lon": 98.057575
+        },
+        {
+            "name": "CALSA",
+            "lat": 34.27908333333333,
+            "lon": 97.85646666666666
+        },
+        {
+            "name": "CEPAC",
+            "lat": 34.66630833333333,
+            "lon": 97.96275
+        },
+        {
+            "name": "DOCTA",
+            "lat": 34.565613883333334,
+            "lon": 97.96126111666666
+        },
+        {
+            "name": "GYROE",
+            "lat": 34.38028333333333,
+            "lon": 97.958525
+        },
+        {
+            "name": "LAW",
+            "lat": 34.496180566666666,
+            "lon": 98.41309443333333
+        },
+        {
+            "name": "TEPCO",
+            "lat": 34.52508056666667,
+            "lon": 97.96066111666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "CEPAC": "CEPAC AT OR ABOVE 3000 SPEED 180",
+                "DOCTA": "DOCTA 2800",
+                "TEPCO": "TEPCO AT OR ABOVE 2020 RNW 17 TRK 175 UNTIL 1314",
+                "ACUGI": "OVERFLY ACUGI AT OR ABOVE 3000 HOLD AT ACUGI RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF DOCTA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "ADM": "ADM",
+                        "BECAR": "BECAR AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "CEPAC",
+                    "fixes": {
+                        "CEPAC": "CEPAC RIGHT TURN INBOUNDCOURSE 175 ALT 3000 SPEED 180 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LAW",
+                    "fixes": {
+                        "LAW": "LAW",
+                        "ACUDI": "ACUDI AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ACUGI": "ACUGI AT OR ABOVE 3000 SPEED 180",
+                "GYROE": "GYROE 2700 RNW 35 TRK 355 UNTIL 1294",
+                "CEPAC": "OVERFLY CEPAC AT OR ABOVE 3000 HOLD AT CEPAC RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF GYROE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "ACUGI",
+                    "fixes": {
+                        "ACUGI": "ACUGI RIGHT TURN INBOUNDCOURSE 355 ALT 3000 SPEED 180 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "ADM": "ADM",
+                        "CALSA": "CALSA AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "LAW",
+                    "fixes": {
+                        "LAW": "LAW",
+                        "BICAL": "BICAL AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

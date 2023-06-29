@@ -1,0 +1,205 @@
+{
+    "fixes": [
+        {
+            "name": "CIRKO",
+            "lat": 35.41100556666667,
+            "lon": 78.70065833333334
+        },
+        {
+            "name": "ECLEJ",
+            "lat": 35.17777778333333,
+            "lon": 78.80609443333333
+        },
+        {
+            "name": "EZUWI",
+            "lat": 35.47436388333333,
+            "lon": 78.50241943333333
+        },
+        {
+            "name": "FAY",
+            "lat": 34.98555,
+            "lon": 78.87506388333334
+        },
+        {
+            "name": "HQTNB",
+            "lat": 35.43300833333333,
+            "lon": 78.674775
+        },
+        {
+            "name": "IBUWE",
+            "lat": 35.45109443333333,
+            "lon": 78.65958056666666
+        },
+        {
+            "name": "IJADE",
+            "lat": 35.308430566666665,
+            "lon": 78.80551111666666
+        },
+        {
+            "name": "IRWOX",
+            "lat": 35.23129721666667,
+            "lon": 78.88412778333333
+        },
+        {
+            "name": "LANHO",
+            "lat": 35.520519433333334,
+            "lon": 78.81998888333334
+        },
+        {
+            "name": "OMFOH",
+            "lat": 35.28476666666667,
+            "lon": 78.96226388333334
+        },
+        {
+            "name": "PI001",
+            "lat": 35.47634898333333,
+            "lon": 78.6268443
+        },
+        {
+            "name": "PI002",
+            "lat": 35.54791733333333,
+            "lon": 78.63145418333333
+        },
+        {
+            "name": "PI003",
+            "lat": 35.556788383333334,
+            "lon": 78.53769288333334
+        },
+        {
+            "name": "RDU",
+            "lat": 35.87252221666667,
+            "lon": 78.78334166666667
+        },
+        {
+            "name": "UWOGI",
+            "lat": 35.581569433333335,
+            "lon": 78.65893333333334
+        },
+        {
+            "name": "WENDI",
+            "lat": 35.71988056666667,
+            "lon": 78.40563056666667
+        },
+        {
+            "name": "WUKGY",
+            "lat": 35.527991666666665,
+            "lon": 78.580625
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC05",
+            "fixes": {
+                "IRWOX": "IRWOX AT OR ABOVE 2500",
+                "IJADE": "IJADE 1900 RNW 05 TRK 048 UNTIL 700 TURN LEFT HDG 290 INTERCEPT RADIAL 014 TO",
+                "LANHO": "LANHO LANHO AT OR ABOVE 2000 HOLD AT LANHO RIGHT TURN INBOUNDCOURSE 014 LEGTIME 1 FAF IJADE MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "FAY",
+                    "fixes": {
+                        "FAY": "FAY"
+                    }
+                },
+                {
+                    "name": "RDU",
+                    "fixes": {
+                        "RDU": "RDU",
+                        "IRWOX": "IRWOX AT OR ABOVE 3100 HOLD AT IRWOX RIGHT TURN INBOUNDCOURSE 048 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB23",
+            "fixes": {
+                "HQTNB": "HQTNB 1500 RNW 23 TRK 230 UNTIL 1200 TURN RIGHT DIRECT HQTNB AT OR ABOVE 3400 HOLD AT HQTNB RIGHT TURN INBOUNDCOURSE 230 LEGTIME 1 FAF HQTNB MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "FAY",
+                    "fixes": {
+                        "FAY": "FAY",
+                        "HQTNB": "HQTNB AT OR ABOVE 3400",
+                        "PI001": "PI001 AT OR ABOVE 3400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3400 SPEED 210"
+                    }
+                },
+                {
+                    "name": "WENDI",
+                    "fixes": {
+                        "WENDI": "WENDI",
+                        "HQTNB": "HQTNB AT OR ABOVE 3400",
+                        "PI001": "PI001 AT OR ABOVE 3400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "IRWOX": "IRWOX AT OR ABOVE 2500",
+                "IJADE": "IJADE 1900 RNW 05 TRK 048 UNTIL 475",
+                "WUKGY": "OVERFLY WUKGY AT OR ABOVE 3400 HOLD AT WUKGY RIGHT TURN INBOUNDCOURSE 228 ALT 3400 LEGDIST 4 FAF IJADE MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "ECLEJ",
+                    "fixes": {
+                        "ECLEJ": "ECLEJ"
+                    }
+                },
+                {
+                    "name": "IRWOX",
+                    "fixes": {
+                        "IRWOX": "IRWOX RIGHT TURN INBOUNDCOURSE 048 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "OMFOH",
+                    "fixes": {
+                        "OMFOH": "OMFOH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "WUKGY": "WUKGY AT OR ABOVE 3400",
+                "IBUWE": "IBUWE 1900",
+                "CIRKO": "CIRKO AT OR ABOVE 860 RNW 23 TRK 228 UNTIL 551",
+                "IRWOX": "OVERFLY IRWOX AT OR ABOVE 2500 HOLD AT IRWOX RIGHT TURN INBOUNDCOURSE 048 LEGDIST 4 FAF IBUWE MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "EZUWI",
+                    "fixes": {
+                        "EZUWI": "EZUWI"
+                    }
+                },
+                {
+                    "name": "UWOGI",
+                    "fixes": {
+                        "UWOGI": "UWOGI"
+                    }
+                },
+                {
+                    "name": "WUKGY",
+                    "fixes": {
+                        "WUKGY": "WUKGY RIGHT TURN INBOUNDCOURSE 228 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

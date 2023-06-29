@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "CN28",
+            "lat": 45.60951943333333,
+            "lon": 0.8201638833333333
+        },
+        {
+            "name": "CY281",
+            "lat": 45.66444443333334,
+            "lon": 0.7295277833333333
+        },
+        {
+            "name": "CY282",
+            "lat": 45.533805566666665,
+            "lon": 0.7671944333333334
+        },
+        {
+            "name": "CY284",
+            "lat": 45.53916666666667,
+            "lon": 0.8476388833333334
+        },
+        {
+            "name": "FCY28",
+            "lat": 45.61066666666667,
+            "lon": 0.8297222166666667
+        },
+        {
+            "name": "ICY28",
+            "lat": 45.59913888333333,
+            "lon": 0.7483888833333334
+        },
+        {
+            "name": "MN28",
+            "lat": 45.62761943333334,
+            "lon": 0.9530361166666667
+        },
+        {
+            "name": "RYNB",
+            "lat": 45.615888883333334,
+            "lon": 0.8667777833333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB28",
+            "fixes": {
+                "CN28": "CN28 AT OR ABOVE 2000",
+                "RYNB": "RYNB 1480 RYNB 2000 FAF RYNB MAP MN28",
+                "MN28": "MN28 317 RNW 28 TRK 282 UNTIL 600 TURN RIGHT DIRECT"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "ICY28": "ICY28 2000",
+                "FCY28": "FCY28 2000 RNW 28 TURN RIGHT DIRECT",
+                "RYNB": "OVERFLY RYNB AT OR BELOW 2000 HOLD AT RYNB LEFT TURN INBOUNDCOURSE 282 ALT 2000 SPEED 170 LEGTIME 1 FAF FCY28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "CY281",
+                    "fixes": {
+                        "CY281": "CY281 AT OR BELOW 2500 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "CY282",
+                    "fixes": {
+                        "CY282": "CY282 AT OR BELOW 2500 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "RY",
+                    "fixes": {
+                        "RYNB": "RYNB AT OR BELOW 5000 AT OR ABOVE 2000 TURN LEFT DIRECT",
+                        "CY284": "CY284 AT OR ABOVE 2000",
+                        "CY282": "CY282 AT OR BELOW 2500 AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

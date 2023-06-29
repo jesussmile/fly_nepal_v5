@@ -1,0 +1,171 @@
+{
+    "fixes": [
+        {
+            "name": "FF11",
+            "lat": 28.022705566666666,
+            "lon": 148.51721388333334
+        },
+        {
+            "name": "SGEEA",
+            "lat": 28.087994433333332,
+            "lon": 148.84168056666667
+        },
+        {
+            "name": "SGEEB",
+            "lat": 28.183461116666667,
+            "lon": 148.85016111666667
+        },
+        {
+            "name": "SGEEC",
+            "lat": 28.223216666666666,
+            "lon": 148.75159443333334
+        },
+        {
+            "name": "SGEEF",
+            "lat": 28.098652783333332,
+            "lon": 148.68771111666666
+        },
+        {
+            "name": "SGEEH",
+            "lat": 28.030669433333333,
+            "lon": 148.55793333333332
+        },
+        {
+            "name": "SGEEI",
+            "lat": 28.141080566666666,
+            "lon": 148.76890278333335
+        },
+        {
+            "name": "SGEEM",
+            "lat": 28.056177783333332,
+            "lon": 148.60658056666668
+        },
+        {
+            "name": "SGENB",
+            "lat": 28.04716111666667,
+            "lon": 148.59717221666668
+        },
+        {
+            "name": "SGEWD",
+            "lat": 28.012527783333333,
+            "lon": 148.34971111666667
+        },
+        {
+            "name": "SGEWE",
+            "lat": 27.916858333333334,
+            "lon": 148.34151943333333
+        },
+        {
+            "name": "SGEWF",
+            "lat": 28.002063883333335,
+            "lon": 148.50343056666668
+        },
+        {
+            "name": "SGEWG",
+            "lat": 27.877344433333334,
+            "lon": 148.43970833333333
+        },
+        {
+            "name": "SGEWH",
+            "lat": 28.070094433333335,
+            "lon": 148.63314443333334
+        },
+        {
+            "name": "SGEWI",
+            "lat": 27.959486116666667,
+            "lon": 148.42244443333334
+        },
+        {
+            "name": "SGEWM",
+            "lat": 28.044597216666666,
+            "lon": 148.58448333333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FF11": "FF11 2000 RNW 11",
+                "SGENB": "OVERFLY SGENB TRK 100 UNTIL 2400 FAF FF11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "SGE1",
+                    "fixes": {
+                        "SGENB": "SGENB AT OR ABOVE 2400 SPEED 210 TRK 312 UNTIL 5.3 FROM SGENB"
+                    }
+                },
+                {
+                    "name": "SGE2",
+                    "fixes": {
+                        "SGENB": "SGENB AT OR ABOVE 2400 SPEED 210 TRK 299 UNTIL 4.7 FROM SGENB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "SGEWI": "SGEWI AT OR ABOVE 2400",
+                "SGEWF": "SGEWF 2380",
+                "SGEWM": "OVERFLY SGEWM 793 RNW 11",
+                "SGEWH": "OVERFLY SGEWH HDG 277 VECTORS FAF SGEWF MAP SGEWM"
+            },
+            "transitions": [
+                {
+                    "name": "SGEWD",
+                    "fixes": {
+                        "SGEWD": "SGEWD AT OR ABOVE 2400 SPEED 230"
+                    }
+                },
+                {
+                    "name": "SGEWE",
+                    "fixes": {
+                        "SGEWE": "SGEWE AT OR ABOVE 2400 SPEED 230"
+                    }
+                },
+                {
+                    "name": "SGEWG",
+                    "fixes": {
+                        "SGEWG": "SGEWG AT OR ABOVE 2400 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "SGEEI": "SGEEI AT OR ABOVE 2400",
+                "SGEEF": "SGEEF 2400",
+                "SGEEM": "OVERFLY SGEEM 794 RNW 29",
+                "SGEEH": "OVERFLY SGEEH HDG 126 VECTORS FAF SGEEF MAP SGEEM"
+            },
+            "transitions": [
+                {
+                    "name": "SGEEA",
+                    "fixes": {
+                        "SGEEA": "SGEEA AT OR ABOVE 2400 SPEED 230"
+                    }
+                },
+                {
+                    "name": "SGEEB",
+                    "fixes": {
+                        "SGEEB": "SGEEB AT OR ABOVE 2400 SPEED 230"
+                    }
+                },
+                {
+                    "name": "SGEEC",
+                    "fixes": {
+                        "SGEEC": "SGEEC AT OR ABOVE 2400 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,161 @@
+{
+    "fixes": [
+        {
+            "name": "AV410",
+            "lat": 50.344138883333336,
+            "lon": 3.3858333333333333
+        },
+        {
+            "name": "AV412",
+            "lat": 50.40177778333333,
+            "lon": 3.4200277833333335
+        },
+        {
+            "name": "AV414",
+            "lat": 50.42672221666667,
+            "lon": 3.5424444333333334
+        },
+        {
+            "name": "AV416",
+            "lat": 50.3845,
+            "lon": 3.5841666666666665
+        },
+        {
+            "name": "AV510",
+            "lat": 50.310222216666666,
+            "lon": 3.5252222166666667
+        },
+        {
+            "name": "BOBMA",
+            "lat": 50.31252778333333,
+            "lon": 3.148083333333333
+        },
+        {
+            "name": "CN11",
+            "lat": 50.36406111666667,
+            "lon": 3.3053166666666667
+        },
+        {
+            "name": "ERLED",
+            "lat": 50.29711111666667,
+            "lon": 3.8804722166666665
+        },
+        {
+            "name": "EXEKO",
+            "lat": 50.161833333333334,
+            "lon": 3.8025277833333333
+        },
+        {
+            "name": "FAV11",
+            "lat": 50.36111111666666,
+            "lon": 3.3156388833333335
+        },
+        {
+            "name": "FAV29",
+            "lat": 50.27136111666667,
+            "lon": 3.683888883333333
+        },
+        {
+            "name": "MN11",
+            "lat": 50.332419433333335,
+            "lon": 3.434052783333333
+        },
+        {
+            "name": "NAVAN",
+            "lat": 50.46838888333333,
+            "lon": 3.239722216666667
+        },
+        {
+            "name": "VADEP",
+            "lat": 50.24155556666667,
+            "lon": 3.8048611166666664
+        },
+        {
+            "name": "VAMOP",
+            "lat": 50.390472216666666,
+            "lon": 3.1938333333333335
+        },
+        {
+            "name": "VSNB",
+            "lat": 50.35213888333333,
+            "lon": 3.3539166666666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 11",
+        "RNW 11L",
+        "RNW 24",
+        "RNW 29",
+        "RNW 29R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB11",
+            "fixes": {
+                "CN11": "CN11 AT OR ABOVE 2000",
+                "VSNB": "VSNB 1500 VSNB 2000 SPEED 160 FAF VSNB MAP MN11",
+                "MN11": "MN11 451 RNW 11 TRK 097 UNTIL 1100 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "VS",
+                    "fixes": {
+                        "VSNB": "VSNB LEFT TURN INBOUNDCOURSE 110 ALT 2000 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "VAMOP": "VAMOP AT OR ABOVE 2000 SPEED 185",
+                "FAV11": "FAV11 2000 RNW 11",
+                "AV510": "OVERFLY AV510 SPEED 160 TURN RIGHT DIRECT",
+                "BOBMA": "BOBMA 2000 SPEED 185 HOLD AT BOBMA RIGHT TURN INBOUNDCOURSE 039 SPEED 230 LEGTIME 1 FAF FAV11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "BOBMA",
+                    "fixes": {
+                        "BOBMA": "BOBMA AT OR ABOVE 2000 SPEED 185"
+                    }
+                },
+                {
+                    "name": "NAVAN",
+                    "fixes": {
+                        "NAVAN": "NAVAN AT OR ABOVE 2000 SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "VADEP": "VADEP AT OR ABOVE 3000 SPEED 210",
+                "FAV29": "FAV29 3000 RNW 29",
+                "AV410": "AV410 SPEED 160",
+                "AV412": "AV412",
+                "AV414": "AV414",
+                "AV416": "AV416 AT OR BELOW 2000 SPEED 210",
+                "EXEKO": "EXEKO 3000 SPEED 220 HOLD AT EXEKO RIGHT TURN INBOUNDCOURSE 000 SPEED 220 LEGTIME 1 FAF FAV29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "ERLED",
+                    "fixes": {
+                        "ERLED": "ERLED AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "EXEKO",
+                    "fixes": {
+                        "EXEKO": "EXEKO AT OR ABOVE 3000 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

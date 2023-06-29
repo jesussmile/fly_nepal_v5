@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "AKOPO",
+            "lat": 20.606944433333332,
+            "lon": 138.61888888333334
+        },
+        {
+            "name": "ATOPU",
+            "lat": 20.963416666666667,
+            "lon": 138.51725
+        },
+        {
+            "name": "DUMEK",
+            "lat": 20.62425,
+            "lon": 138.53197221666667
+        },
+        {
+            "name": "FGY18",
+            "lat": 20.706083333333332,
+            "lon": 138.55036111666666
+        },
+        {
+            "name": "FGY36",
+            "lat": 20.864277783333332,
+            "lon": 138.58594443333334
+        },
+        {
+            "name": "GY410",
+            "lat": 20.683416666666666,
+            "lon": 138.63383333333334
+        },
+        {
+            "name": "GY420",
+            "lat": 20.876416666666668,
+            "lon": 138.50027778333333
+        },
+        {
+            "name": "MAGIX",
+            "lat": 20.946111116666668,
+            "lon": 138.60436111666667
+        },
+        {
+            "name": "TURVA",
+            "lat": 20.780083333333334,
+            "lon": 138.567
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA18",
+            "fixes": {
+                "DUMEK": "DUMEK AT OR ABOVE 1500",
+                "FGY18": "FGY18 1500 RNW 18 TRK 178 UNTIL 1000 TURN RIGHT DIRECT",
+                "GY410": "GY410",
+                "AKOPO": "AKOPO AT OR ABOVE 1500 FAF FGY18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AKOPO",
+                    "fixes": {
+                        "AKOPO": "AKOPO AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "TURVA",
+                    "fixes": {
+                        "TURVA": "TURVA AT OR ABOVE 1500",
+                        "GY410": "GY410",
+                        "AKOPO": "AKOPO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB36",
+            "fixes": {
+                "MAGIX": "MAGIX AT OR ABOVE 1500",
+                "FGY36": "FGY36 1500 RNW 36 TRK 358 UNTIL 1000 TURN RIGHT DIRECT",
+                "GY420": "GY420",
+                "ATOPU": "ATOPU AT OR ABOVE 1500 FAF FGY36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ATOPU",
+                    "fixes": {
+                        "ATOPU": "ATOPU AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "TURVA",
+                    "fixes": {
+                        "TURVA": "TURVA AT OR ABOVE 1500",
+                        "GY420": "GY420",
+                        "ATOPU": "ATOPU"
+                    }
+                }
+            ]
+        }
+    ]
+}

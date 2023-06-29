@@ -1,0 +1,177 @@
+{
+    "fixes": [
+        {
+            "name": "AMPIO",
+            "lat": 6.773808333333333,
+            "lon": 100.98009166666667
+        },
+        {
+            "name": "BOODU",
+            "lat": 6.854891666666667,
+            "lon": 100.80208056666666
+        },
+        {
+            "name": "DATOE",
+            "lat": 6.914011116666667,
+            "lon": 101.31925556666667
+        },
+        {
+            "name": "EP08",
+            "lat": 6.787975,
+            "lon": 101.14634166666667
+        },
+        {
+            "name": "FF08",
+            "lat": 6.762369433333333,
+            "lon": 101.063775
+        },
+        {
+            "name": "FF26",
+            "lat": 6.786730566666667,
+            "lon": 101.24627778333333
+        },
+        {
+            "name": "MAYOU",
+            "lat": 6.797044433333333,
+            "lon": 101.32705833333333
+        },
+        {
+            "name": "PAN08",
+            "lat": 6.785033333333333,
+            "lon": 101.14724443333333
+        },
+        {
+            "name": "PAN26",
+            "lat": 6.785880566666666,
+            "lon": 101.15989443333333
+        },
+        {
+            "name": "PANAN",
+            "lat": 6.915805566666666,
+            "lon": 101.15168611666667
+        },
+        {
+            "name": "PANEF",
+            "lat": 6.790241666666667,
+            "lon": 101.22508611666666
+        },
+        {
+            "name": "PANWF",
+            "lat": 6.780663883333333,
+            "lon": 101.08205278333334
+        },
+        {
+            "name": "PATAA",
+            "lat": 6.890766666666667,
+            "lon": 100.97220556666667
+        },
+        {
+            "name": "PTNB",
+            "lat": 6.788458333333333,
+            "lon": 101.14791943333333
+        },
+        {
+            "name": "TARNY",
+            "lat": 6.606722216666666,
+            "lon": 100.99134721666667
+        },
+        {
+            "name": "ZIMMY",
+            "lat": 6.695141666666666,
+            "lon": 101.36156943333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FF08": "FF08 1700",
+                "EP08": "OVERFLY EP08 57",
+                "PTNB": "OVERFLY PTNB AT OR ABOVE 508 RNW 08 TRK 073 UNTIL 2000 TURN LEFT DIRECT PTNB 4000 HOLD AT PTNB RIGHT TURN INBOUNDCOURSE 265 ALT 4000 SPEED 230 LEGTIME 1 FAF FF08 MAP P"
+            },
+            "transitions": [
+                {
+                    "name": "PT",
+                    "fixes": {
+                        "PTNB": "PTNB AT OR ABOVE 4000 TRK 265 UNTIL 9.0 FROM PTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FF26": "FF26 1700 RNW 26",
+                "PTNB": "OVERFLY PTNB TRK 271 UNTIL 2000 TURN RIGHT DIRECT PTNB 4000 HOLD AT PTNB LEFT TURN INBOUNDCOURSE 079 ALT 4000 SPEED 230 LEGTIME 1 FAF FF26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "PT",
+                    "fixes": {
+                        "PTNB": "PTNB AT OR ABOVE 4000 TRK 079 UNTIL 9.0 FROM PTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "AMPIO": "AMPIO 2700",
+                "PANWF": "PANWF 1400",
+                "PAN08": "OVERFLY PAN08 57 RNW 08 TRK 086 UNTIL 2000 TURN LEFT DIRECT",
+                "PATAA": "PATAA AT OR ABOVE 3500 HOLD AT PATAA LEFT TURN INBOUNDCOURSE 176 ALT 3500 SPEED 230 LEGTIME 1 FAF PANWF MAP PAN08"
+            },
+            "transitions": [
+                {
+                    "name": "BOODU",
+                    "fixes": {
+                        "BOODU": "BOODU 5000"
+                    }
+                },
+                {
+                    "name": "PATAA",
+                    "fixes": {
+                        "PATAA": "PATAA 3500"
+                    }
+                },
+                {
+                    "name": "TARNY",
+                    "fixes": {
+                        "TARNY": "TARNY 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "MAYOU": "MAYOU 2700",
+                "PANEF": "PANEF 1400",
+                "PAN26": "OVERFLY PAN26 58 RNW 26 TRK 266 UNTIL 2000 TURN RIGHT DIRECT",
+                "DATOE": "DATOE AT OR ABOVE 3500 HOLD AT DATOE LEFT TURN INBOUNDCOURSE 091 ALT 3500 SPEED 230 LEGTIME 1 FAF PANEF MAP PAN26"
+            },
+            "transitions": [
+                {
+                    "name": "BOODU",
+                    "fixes": {
+                        "BOODU": "BOODU 5000",
+                        "PANAN": "PANAN 5000",
+                        "DATOE": "DATOE 3500"
+                    }
+                },
+                {
+                    "name": "ZIMMY",
+                    "fixes": {
+                        "ZIMMY": "ZIMMY 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

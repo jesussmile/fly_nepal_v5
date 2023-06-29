@@ -1,0 +1,177 @@
+{
+    "fixes": [
+        {
+            "name": "AVIGA",
+            "lat": 17.286841666666668,
+            "lon": 49.83854443333333
+        },
+        {
+            "name": "D019H",
+            "lat": 16.96605,
+            "lon": 49.826058333333336
+        },
+        {
+            "name": "D203H",
+            "lat": 17.215044433333333,
+            "lon": 49.794263883333336
+        },
+        {
+            "name": "DUNKO",
+            "lat": 17.275622216666665,
+            "lon": 49.94239721666667
+        },
+        {
+            "name": "FN01",
+            "lat": 17.178302783333333,
+            "lon": 49.82263056666667
+        },
+        {
+            "name": "FN19",
+            "lat": 17.004086116666667,
+            "lon": 49.800372216666666
+        },
+        {
+            "name": "GEVER",
+            "lat": 17.298052783333333,
+            "lon": 49.73468056666667
+        },
+        {
+            "name": "MS501",
+            "lat": 17.203697216666665,
+            "lon": 49.828797216666665
+        },
+        {
+            "name": "MS502",
+            "lat": 17.019155566666665,
+            "lon": 49.807194433333336
+        },
+        {
+            "name": "MS503",
+            "lat": 16.988166666666668,
+            "lon": 49.803572216666666
+        },
+        {
+            "name": "MS504",
+            "lat": 17.172727783333332,
+            "lon": 49.825169433333336
+        },
+        {
+            "name": "NESIG",
+            "lat": 16.893766666666668,
+            "lon": 49.897494433333335
+        },
+        {
+            "name": "OKRES",
+            "lat": 16.90501666666667,
+            "lon": 49.793855566666664
+        },
+        {
+            "name": "SMNB",
+            "lat": 17.091083333333334,
+            "lon": 49.81469443333334
+        },
+        {
+            "name": "TEXAT",
+            "lat": 16.916213883333334,
+            "lon": 49.69020278333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB01",
+            "fixes": {
+                "FN01": "FN01 1500 RNW 01",
+                "SMNB": "OVERFLY SMNB TRK 009 UNTIL 1000 TURN RIGHT DIRECT SMNB 3200 FAF FN01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "SM",
+                    "fixes": {
+                        "SMNB": "SMNB AT OR ABOVE 2900",
+                        "D203H": "OVERFLY D203H AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB19",
+            "fixes": {
+                "FN19": "FN19 1700 RNW 19",
+                "SMNB": "OVERFLY SMNB TRK 185 UNTIL 1000 TURN RIGHT DIRECT SMNB 3200 FAF FN19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "SM",
+                    "fixes": {
+                        "SMNB": "SMNB AT OR ABOVE 2900",
+                        "D019H": "OVERFLY D019H AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "AVIGA": "AVIGA AT OR ABOVE 2000 SPEED 170",
+                "MS501": "MS501 2000 SPEED 170 RNW 01",
+                "MS502": "OVERFLY MS502 TURN RIGHT DIRECT",
+                "DUNKO": "DUNKO AT OR ABOVE 2000 SPEED 170 FAF MS501 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "AVIGA",
+                    "fixes": {
+                        "AVIGA": "AVIGA LEFT TURN INBOUNDCOURSE 008 ALT 2000 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "DUNKO",
+                    "fixes": {
+                        "DUNKO": "DUNKO AT OR ABOVE 2000 SPEED 170"
+                    }
+                },
+                {
+                    "name": "GEVER",
+                    "fixes": {
+                        "GEVER": "GEVER AT OR ABOVE 2000 SPEED 170"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "OKRES": "OKRES AT OR ABOVE 3000 SPEED 170",
+                "MS503": "MS503 2000 SPEED 170 RNW 19",
+                "MS504": "OVERFLY MS504 TURN LEFT DIRECT",
+                "NESIG": "NESIG AT OR ABOVE 3000 SPEED 170 FAF MS503 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "NESIG",
+                    "fixes": {
+                        "NESIG": "NESIG AT OR ABOVE 3000 SPEED 170"
+                    }
+                },
+                {
+                    "name": "OKRES",
+                    "fixes": {
+                        "OKRES": "OKRES RIGHT TURN INBOUNDCOURSE 188 ALT 3000 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TEXAT",
+                    "fixes": {
+                        "TEXAT": "TEXAT AT OR ABOVE 3000 SPEED 170"
+                    }
+                }
+            ]
+        }
+    ]
+}

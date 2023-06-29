@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "BROKE",
+            "lat": 35.69793611666667,
+            "lon": 100.95125833333333
+        },
+        {
+            "name": "HENUV",
+            "lat": 35.406125,
+            "lon": 101.36513611666666
+        },
+        {
+            "name": "JADAP",
+            "lat": 35.27685278333333,
+            "lon": 101.36496943333333
+        },
+        {
+            "name": "JASMI",
+            "lat": 35.580058333333334,
+            "lon": 101.36535833333333
+        },
+        {
+            "name": "KELGE",
+            "lat": 35.44656388333333,
+            "lon": 101.36518611666666
+        },
+        {
+            "name": "PNH",
+            "lat": 35.235061116666664,
+            "lon": 101.69903056666666
+        },
+        {
+            "name": "REPGE",
+            "lat": 35.580047216666664,
+            "lon": 101.14326943333333
+        },
+        {
+            "name": "UMHOB",
+            "lat": 35.143325,
+            "lon": 101.17681388333334
+        },
+        {
+            "name": "WUXEL",
+            "lat": 35.14330833333333,
+            "lon": 101.3648
+        },
+        {
+            "name": "YUNUN",
+            "lat": 35.579711116666665,
+            "lon": 101.56968333333333
+        },
+        {
+            "name": "ZEBUP",
+            "lat": 35.14301666666667,
+            "lon": 101.54646943333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "JASMI": "JASMI AT OR ABOVE 5500",
+                "KELGE": "KELGE 5000",
+                "HENUV": "HENUV AT OR ABOVE 4220 RNW 17 TRK 172 UNTIL 3854",
+                "WUXEL": "OVERFLY WUXEL AT OR ABOVE 5500 HOLD AT WUXEL RIGHT TURN INBOUNDCOURSE 352 LEGDIST 5 FAF KELGE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BROKE",
+                    "fixes": {
+                        "BROKE": "BROKE",
+                        "REPGE": "REPGE AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "PNH",
+                    "fixes": {
+                        "PNH": "PNH",
+                        "YUNUN": "YUNUN AT OR ABOVE 5500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "WUXEL": "WUXEL AT OR ABOVE 5500",
+                "JADAP": "JADAP 5000 RNW 35 TRK 352 UNTIL 3854",
+                "JASMI": "OVERFLY JASMI AT OR ABOVE 5500 HOLD AT JASMI RIGHT TURN INBOUNDCOURSE 172 LEGDIST 5 FAF JADAP MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "PNH",
+                    "fixes": {
+                        "PNH": "PNH",
+                        "ZEBUP": "ZEBUP AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "UMHOB",
+                    "fixes": {
+                        "UMHOB": "UMHOB"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "FKU14",
+            "lat": 20.62680556666667,
+            "lon": 143.08163888333334
+        },
+        {
+            "name": "FKU32",
+            "lat": 20.773416666666666,
+            "lon": 143.00980556666667
+        },
+        {
+            "name": "KASDA",
+            "lat": 20.81430556666667,
+            "lon": 142.89177778333334
+        },
+        {
+            "name": "KU410",
+            "lat": 20.592722216666665,
+            "lon": 143.00313888333332
+        },
+        {
+            "name": "KU420",
+            "lat": 20.739333333333335,
+            "lon": 142.93122221666667
+        },
+        {
+            "name": "KULIA",
+            "lat": 20.884388883333333,
+            "lon": 143.05336111666668
+        },
+        {
+            "name": "LIBKU",
+            "lat": 20.550861116666667,
+            "lon": 143.11877778333334
+        },
+        {
+            "name": "PIPIL",
+            "lat": 20.585805566666668,
+            "lon": 143.19947221666666
+        },
+        {
+            "name": "ROBMU",
+            "lat": 20.849361116666667,
+            "lon": 142.97255556666667
+        },
+        {
+            "name": "SOVGO",
+            "lat": 20.515861116666667,
+            "lon": 143.03813888333335
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA14",
+            "fixes": {
+                "LIBKU": "LIBKU AT OR ABOVE 1500",
+                "FKU14": "FKU14 1500 RNW 14 TRK 141 UNTIL 1000 TURN LEFT DIRECT",
+                "KU410": "KU410",
+                "SOVGO": "SOVGO AT OR ABOVE 1500 FAF FKU14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "LIBKU",
+                    "fixes": {
+                        "LIBKU": "LIBKU RIGHT TURN INBOUNDCOURSE 141 ALT 1500 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "PIPIL",
+                    "fixes": {
+                        "PIPIL": "PIPIL AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "SOVGO",
+                    "fixes": {
+                        "SOVGO": "SOVGO AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB32",
+            "fixes": {
+                "ROBMU": "ROBMU AT OR ABOVE 1500",
+                "FKU32": "FKU32 1500 RNW 32 TRK 321 UNTIL 1000 TURN RIGHT DIRECT",
+                "KU420": "KU420",
+                "KASDA": "KASDA AT OR ABOVE 1500 FAF FKU32 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "KASDA",
+                    "fixes": {
+                        "KASDA": "KASDA AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "KULIA",
+                    "fixes": {
+                        "KULIA": "KULIA AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "ROBMU",
+                    "fixes": {
+                        "ROBMU": "ROBMU LEFT TURN INBOUNDCOURSE 321 ALT 1500 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "AKENE",
+            "lat": 41.961,
+            "lon": 93.77652221666666
+        },
+        {
+            "name": "CALUM",
+            "lat": 41.872061116666664,
+            "lon": 93.70595
+        },
+        {
+            "name": "DETRO",
+            "lat": 42.127008333333336,
+            "lon": 93.90882778333334
+        },
+        {
+            "name": "EPHIZ",
+            "lat": 42.00143056666667,
+            "lon": 93.80867778333334
+        },
+        {
+            "name": "HOPWO",
+            "lat": 42.215825,
+            "lon": 93.97993056666667
+        },
+        {
+            "name": "LOCEC",
+            "lat": 42.08985,
+            "lon": 93.87915278333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 15",
+        "RNW 20",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "HOPWO": "HOPWO AT OR ABOVE 3000",
+                "DETRO": "DETRO 2800",
+                "LOCEC": "LOCEC AT OR ABOVE 1960 RNW 15 TRK 146 UNTIL 1388",
+                "CALUM": "OVERFLY CALUM AT OR ABOVE 4000 HOLD AT CALUM RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4 FAF DETRO MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "HOPWO",
+                    "fixes": {
+                        "HOPWO": "HOPWO RIGHT TURN INBOUNDCOURSE 146 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "CALUM": "CALUM AT OR ABOVE 4000",
+                "AKENE": "AKENE 3000",
+                "EPHIZ": "EPHIZ AT OR ABOVE 2100 RNW 33 TRK 326 UNTIL 1389",
+                "HOPWO": "OVERFLY HOPWO AT OR ABOVE 3000 HOLD AT HOPWO RIGHT TURN INBOUNDCOURSE 146 LEGDIST 4 FAF AKENE MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "CALUM",
+                    "fixes": {
+                        "CALUM": "CALUM RIGHT TURN INBOUNDCOURSE 326 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

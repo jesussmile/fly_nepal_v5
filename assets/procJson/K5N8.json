@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "FAR",
+            "lat": 46.75333611666667,
+            "lon": 96.85131943333333
+        },
+        {
+            "name": "HUXIV",
+            "lat": 46.77235,
+            "lon": 96.91392221666666
+        },
+        {
+            "name": "IYISA",
+            "lat": 46.65364721666667,
+            "lon": 97.08386943333333
+        },
+        {
+            "name": "JINPU",
+            "lat": 46.71303056666667,
+            "lon": 96.99898888333334
+        },
+        {
+            "name": "KIKEC",
+            "lat": 46.78411943333333,
+            "lon": 97.10415833333333
+        },
+        {
+            "name": "TRONA",
+            "lat": 46.815547216666666,
+            "lon": 97.07633333333334
+        },
+        {
+            "name": "VAYUN",
+            "lat": 46.923475,
+            "lon": 97.31155833333334
+        },
+        {
+            "name": "WUSCO",
+            "lat": 46.994455566666666,
+            "lon": 97.41783056666667
+        },
+        {
+            "name": "YOTSU",
+            "lat": 47.054088883333336,
+            "lon": 97.33278611666667
+        },
+        {
+            "name": "ZUNBI",
+            "lat": 46.934758333333335,
+            "lon": 97.50268611666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD31",
+            "fixes": {
+                "FAR": "FAR AT OR ABOVE 2800 FAR AT OR ABOVE 2800 HOLD AT FAR LEFT TURN INBOUNDCOURSE 283 LEGTIME 1 FAF TRONA MAP RNW 31",
+                "TRONA": "TRONA 2800 RNW 31 TRK 283 UNTIL 1340 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FAR",
+                    "fixes": {
+                        "FAR": "FAR LEFT TURN INBOUNDCOURSE 283 ALT 2800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "WUSCO": "WUSCO AT OR ABOVE 3000",
+                "VAYUN": "VAYUN 2800 RNW 13 TRK 128 UNTIL 1333",
+                "JINPU": "OVERFLY JINPU AT OR ABOVE 3000 HOLD AT JINPU RIGHT TURN INBOUNDCOURSE 309 LEGDIST 4 FAF VAYUN MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "WUSCO",
+                    "fixes": {
+                        "WUSCO": "WUSCO RIGHT TURN INBOUNDCOURSE 128 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "YOTSU",
+                    "fixes": {
+                        "YOTSU": "YOTSU"
+                    }
+                },
+                {
+                    "name": "ZUNBI",
+                    "fixes": {
+                        "ZUNBI": "ZUNBI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "JINPU": "JINPU AT OR ABOVE 3000",
+                "KIKEC": "KIKEC 2800 RNW 31",
+                "WUSCO": "OVERFLY WUSCO AT OR ABOVE 3000 HOLD AT WUSCO RIGHT TURN INBOUNDCOURSE 128 LEGDIST 4 FAF KIKEC MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "HUXIV",
+                    "fixes": {
+                        "HUXIV": "HUXIV AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "IYISA",
+                    "fixes": {
+                        "IYISA": "IYISA AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "JINPU",
+                    "fixes": {
+                        "JINPU": "JINPU RIGHT TURN INBOUNDCOURSE 309 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

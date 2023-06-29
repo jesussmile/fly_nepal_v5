@@ -1,0 +1,251 @@
+{
+    "fixes": [
+        {
+            "name": "ALMUD",
+            "lat": 33.299444433333335,
+            "lon": 56.32805556666667
+        },
+        {
+            "name": "CD136",
+            "lat": 33.80039443333333,
+            "lon": 56.763358333333336
+        },
+        {
+            "name": "CD33",
+            "lat": 33.521194433333335,
+            "lon": 56.976166666666664
+        },
+        {
+            "name": "D038J",
+            "lat": 33.797302783333336,
+            "lon": 57.024752783333334
+        },
+        {
+            "name": "FD136",
+            "lat": 33.736491666666666,
+            "lon": 56.82768333333333
+        },
+        {
+            "name": "FD33",
+            "lat": 33.59688056666667,
+            "lon": 56.934077783333336
+        },
+        {
+            "name": "FN33",
+            "lat": 33.553055566666664,
+            "lon": 56.947861116666665
+        },
+        {
+            "name": "MD136",
+            "lat": 33.685344433333334,
+            "lon": 56.87907778333334
+        },
+        {
+            "name": "MD33",
+            "lat": 33.64985278333333,
+            "lon": 56.904572216666665
+        },
+        {
+            "name": "PATEN",
+            "lat": 34.14027778333333,
+            "lon": 57.39277778333334
+        },
+        {
+            "name": "TBS",
+            "lat": 33.67255556666667,
+            "lon": 56.89191666666667
+        },
+        {
+            "name": "TBSNB",
+            "lat": 33.664,
+            "lon": 56.89963888333333
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "ALMU1A",
+            "rnw": "33",
+            "fixes": {
+                "ALMUD": "ALMUD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ALMU1B",
+            "rnw": "15",
+            "fixes": {
+                "ALMUD": "ALMUD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ALMU1C",
+            "rnw": "33",
+            "fixes": {
+                "ALMUD": "ALMUD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ALMU1D",
+            "rnw": "15",
+            "fixes": {
+                "ALMUD": "ALMUD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PATE1A",
+            "rnw": "33",
+            "fixes": {
+                "TBS": "TBS AT OR ABOVE 7000",
+                "PATEN": "PATEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PATE1B",
+            "rnw": "15",
+            "fixes": {
+                "TBS": "TBS AT OR ABOVE 7000",
+                "PATEN": "PATEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PATE1C",
+            "rnw": "33",
+            "fixes": {
+                "TBSNB": "TBSNB AT OR ABOVE 7000",
+                "PATEN": "PATEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PATE1D",
+            "rnw": "15",
+            "fixes": {
+                "TBSNB": "TBSNB AT OR ABOVE 7000",
+                "PATEN": "PATEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ALMU1N",
+            "runway": "RNW 15 RNW 33",
+            "fixes": {
+                "ALMUD": "ALMUD",
+                "TBS": "TBS"
+            }
+        },
+        {
+            "name": "PATE1N",
+            "runway": "RNW 15 RNW 33",
+            "fixes": {
+                "PATEN": "PATEN",
+                "D038J": "D038J",
+                "TBS": "TBS"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD33",
+            "fixes": {
+                "CD33": "CD33 AT OR ABOVE 4400",
+                "FD33": "FD33 3600",
+                "MD33": "MD33 2441 RNW 33",
+                "TBS": "TBS TRK 322 UNTIL 5300 TURN LEFT DIRECT TBS 8000 HOLD AT TBS RIGHT TURN INBOUNDCOURSE 174 SPEED 210 LEGTIME 1 FAF FD33 MAP MD33"
+            },
+            "transitions": [
+                {
+                    "name": "TBS1",
+                    "fixes": {
+                        "TBS": "TBS AT OR ABOVE 8000 TRK 174 UNTIL 10.0 FROM TBS"
+                    }
+                },
+                {
+                    "name": "TBS2",
+                    "fixes": {
+                        "TBS": "TBS AT OR ABOVE 8000 TRK 161 UNTIL 10.0 FROM TBS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB33",
+            "fixes": {
+                "FN33": "FN33 4400 RNW 33",
+                "TBSNB": "OVERFLY TBSNB AT OR ABOVE 2660 TRK 270 UNTIL 5500 TURN LEFT DIRECT TBSNB 8000 HOLD AT TBSNB RIGHT TURN INBOUNDCOURSE 173 SPEED 230 LEGTIME 1 FAF FN33 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "TBS",
+                    "fixes": {
+                        "TBSNB": "TBSNB AT OR ABOVE 8000 TRK 173 UNTIL 9.3 FROM TBSNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM15",
+            "fixes": {
+                "CD136": "CD136 AT OR ABOVE 6000",
+                "FD136": "FD136 4000",
+                "MD136": "MD136 2472 RNW 15 TRK 150 INTERCEPT RADIAL 180 TO",
+                "TBS": "TBS TRK 180 UNTIL 6500 TURN RIGHT DIRECT TBS AT OR ABOVE 10000 HOLD AT TBS LEFT TURN INBOUNDCOURSE 292 SPEED 210 LEGTIME 1 FAF FD136 MAP MD136"
+            },
+            "transitions": [
+                {
+                    "name": "TBS1",
+                    "fixes": {
+                        "TBS": "TBS AT OR ABOVE 10000 TRK 292 UNTIL 10.0 FROM TBS"
+                    }
+                },
+                {
+                    "name": "TBS2",
+                    "fixes": {
+                        "TBS": "TBS AT OR ABOVE 10000 TRK 307 UNTIL 10.0 FROM TBS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM33",
+            "fixes": {
+                "CD136": "CD136 AT OR ABOVE 6000",
+                "FD136": "FD136 4000",
+                "MD136": "MD136 2472 RNW 33 TRK 150 INTERCEPT RADIAL 180 TO",
+                "TBS": "TBS TRK 180 UNTIL 6500 TURN RIGHT DIRECT TBS AT OR ABOVE 10000 HOLD AT TBS LEFT TURN INBOUNDCOURSE 292 SPEED 210 LEGTIME 1 FAF FD136 MAP MD136"
+            },
+            "transitions": [
+                {
+                    "name": "TBS1",
+                    "fixes": {
+                        "TBS": "TBS AT OR ABOVE 10000 TRK 292 UNTIL 10.0 FROM TBS"
+                    }
+                },
+                {
+                    "name": "TBS2",
+                    "fixes": {
+                        "TBS": "TBS AT OR ABOVE 10000 TRK 307 UNTIL 10.0 FROM TBS"
+                    }
+                }
+            ]
+        }
+    ]
+}

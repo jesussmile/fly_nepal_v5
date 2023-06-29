@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "AJOXO",
+            "lat": 31.752891666666667,
+            "lon": 86.39060833333333
+        },
+        {
+            "name": "DEPEN",
+            "lat": 31.991819433333333,
+            "lon": 86.75636666666666
+        },
+        {
+            "name": "ISOPY",
+            "lat": 32.04592221666667,
+            "lon": 86.6817
+        },
+        {
+            "name": "ISRAW",
+            "lat": 31.780013883333332,
+            "lon": 86.54549166666666
+        },
+        {
+            "name": "OWABE",
+            "lat": 31.91485,
+            "lon": 86.67958056666667
+        },
+        {
+            "name": "TAZMA",
+            "lat": 31.698977783333333,
+            "lon": 86.465225
+        },
+        {
+            "name": "UGMUF",
+            "lat": 31.645019433333335,
+            "lon": 86.53975556666667
+        },
+        {
+            "name": "ULASY",
+            "lat": 31.937675,
+            "lon": 86.83094443333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "DEPEN": "DEPEN AT OR ABOVE 3000 DEPEN AT OR ABOVE 3000 HOLD AT DEPEN RIGHT TURN INBOUNDCOURSE 142 LEGDIST 4 FAF OWABE MAP RNW 14",
+                "OWABE": "OWABE 2100 RNW 14 TRK 142 UNTIL 851 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DEPEN",
+                    "fixes": {
+                        "DEPEN": "DEPEN RIGHT TURN INBOUNDCOURSE 142 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ISOPY",
+                    "fixes": {
+                        "ISOPY": "ISOPY AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "ULASY",
+                    "fixes": {
+                        "ULASY": "ULASY AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "TAZMA": "TAZMA AT OR ABOVE 3000",
+                "ISRAW": "ISRAW 2000 RNW 32 TRK 322 UNTIL 780",
+                "DEPEN": "DEPEN AT OR ABOVE 3000 HOLD AT DEPEN RIGHT TURN INBOUNDCOURSE 142 LEGDIST 4 FAF ISRAW MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "AJOXO",
+                    "fixes": {
+                        "AJOXO": "AJOXO AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "TAZMA",
+                    "fixes": {
+                        "TAZMA": "TAZMA RIGHT TURN INBOUNDCOURSE 322 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UGMUF",
+                    "fixes": {
+                        "UGMUF": "UGMUF AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

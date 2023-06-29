@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "AIR",
+            "lat": 40.017025,
+            "lon": 80.81722778333334
+        },
+        {
+            "name": "AVACA",
+            "lat": 40.01389721666666,
+            "lon": 80.94958333333334
+        },
+        {
+            "name": "BAFEL",
+            "lat": 40.007052783333336,
+            "lon": 81.07722778333333
+        },
+        {
+            "name": "KESEC",
+            "lat": 40.00495278333333,
+            "lon": 81.13923611666667
+        },
+        {
+            "name": "KRABB",
+            "lat": 40.00780278333333,
+            "lon": 81.07949166666667
+        },
+        {
+            "name": "LORES",
+            "lat": 39.973919433333336,
+            "lon": 81.44326666666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD27",
+            "fixes": {
+                "AIR": "AIR AT OR ABOVE 3000",
+                "BAFEL": "BAFEL 3000 RNW 27 TRK 274 UNTIL 3000 TURN LEFT DIRECT BAFEL HOLD AT BAFEL RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1 FAF BAFEL MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "BAFEL",
+                    "fixes": {
+                        "BAFEL": "BAFEL RIGHT TURN INBOUNDCOURSE 274 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "AVACA": "AVACA AT OR ABOVE 3400",
+                "KRABB": "KRABB 2900",
+                "KESEC": "KESEC AT OR ABOVE 2020 RNW 27 TRK 274 UNTIL 1712",
+                "LORES": "LORES 3000 HOLD AT LORES RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4 FAF KRABB MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "AVACA",
+                    "fixes": {
+                        "AVACA": "AVACA RIGHT TURN INBOUNDCOURSE 275 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

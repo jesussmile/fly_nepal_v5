@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "BIPGE",
+            "lat": 35.19918056666667,
+            "lon": 99.0534
+        },
+        {
+            "name": "CAPUX",
+            "lat": 34.901161116666664,
+            "lon": 99.05485833333333
+        },
+        {
+            "name": "DOMLE",
+            "lat": 34.783408333333334,
+            "lon": 99.05543056666667
+        },
+        {
+            "name": "FAPRA",
+            "lat": 34.956558333333334,
+            "lon": 99.05652778333334
+        },
+        {
+            "name": "FOMOK",
+            "lat": 35.03391666666667,
+            "lon": 99.05420833333334
+        },
+        {
+            "name": "HBR",
+            "lat": 34.86655556666667,
+            "lon": 99.06338611666666
+        },
+        {
+            "name": "IGIPY",
+            "lat": 35.082844433333335,
+            "lon": 99.05396943333334
+        },
+        {
+            "name": "JIGAR",
+            "lat": 34.942002783333336,
+            "lon": 99.05465833333334
+        },
+        {
+            "name": "PI001",
+            "lat": 34.8082311,
+            "lon": 99.06462603333334
+        },
+        {
+            "name": "PI002",
+            "lat": 34.75666338333333,
+            "lon": 99.00403083333333
+        },
+        {
+            "name": "PI003",
+            "lat": 34.69991423333333,
+            "lon": 99.06692408333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 17",
+        "RNW 21",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "BIPGE": "BIPGE AT OR ABOVE 3400",
+                "IGIPY": "IGIPY 3200",
+                "FOMOK": "FOMOK AT OR ABOVE 2240 RNW 17",
+                "DOMLE": "OVERFLY DOMLE AT OR ABOVE 4000 HOLD AT DOMLE RIGHT TURN INBOUNDCOURSE 353 LEGDIST 4 FAF IGIPY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BIPGE",
+                    "fixes": {
+                        "BIPGE": "BIPGE RIGHT TURN INBOUNDCOURSE 173 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "DOMLE": "DOMLE AT OR ABOVE 4000",
+                "CAPUX": "CAPUX 3200",
+                "JIGAR": "JIGAR AT OR ABOVE 2400 RNW 35",
+                "BIPGE": "OVERFLY BIPGE AT OR ABOVE 3400 HOLD AT BIPGE RIGHT TURN INBOUNDCOURSE 173 LEGDIST 4 FAF CAPUX MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "DOMLE",
+                    "fixes": {
+                        "DOMLE": "DOMLE RIGHT TURN INBOUNDCOURSE 353 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR35",
+            "fixes": {
+                "HBR": "HBR 3800 HBR AT OR ABOVE 3800 HOLD AT HBR RIGHT TURN INBOUNDCOURSE 354 LEGTIME 1 FAF HBR MAP RNW 35",
+                "FAPRA": "FAPRA AT OR ABOVE 2060 RNW 35 TRK 354 UNTIL 2100 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HBR",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "CUVIT",
+            "lat": 36.00105,
+            "lon": 94.51189721666667
+        },
+        {
+            "name": "DIBAY",
+            "lat": 36.10411943333333,
+            "lon": 94.500075
+        },
+        {
+            "name": "DOYAL",
+            "lat": 36.370280566666665,
+            "lon": 94.33425556666667
+        },
+        {
+            "name": "FATAS",
+            "lat": 36.280355566666664,
+            "lon": 94.47979166666667
+        },
+        {
+            "name": "HUBAX",
+            "lat": 36.008744433333334,
+            "lon": 94.61416943333333
+        },
+        {
+            "name": "LALIC",
+            "lat": 36.38048333333333,
+            "lon": 94.46822778333333
+        },
+        {
+            "name": "POBIE",
+            "lat": 36.39051943333333,
+            "lon": 94.60202778333333
+        },
+        {
+            "name": "PRYOR",
+            "lat": 36.2159,
+            "lon": 95.22324166666667
+        },
+        {
+            "name": "RZC",
+            "lat": 36.24642778333333,
+            "lon": 94.12139166666667
+        },
+        {
+            "name": "SODDO",
+            "lat": 35.99326943333333,
+            "lon": 94.40964721666667
+        },
+        {
+            "name": "SWALL",
+            "lat": 35.778002783333335,
+            "lon": 94.68788888333333
+        },
+        {
+            "name": "TADME",
+            "lat": 36.24687778333333,
+            "lon": 94.48365278333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "LALIC": "LALIC AT OR ABOVE 3100",
+                "FATAS": "FATAS 2800",
+                "TADME": "TADME AT OR ABOVE 2140 RNW 18 TRK 181 UNTIL 1513",
+                "CUVIT": "OVERFLY CUVIT AT OR ABOVE 3200 HOLD AT CUVIT RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF FATAS MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "LALIC",
+                    "fixes": {
+                        "LALIC": "LALIC RIGHT TURN INBOUNDCOURSE 181 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PRYOR",
+                    "fixes": {
+                        "PRYOR": "PRYOR",
+                        "POBIE": "POBIE AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "RZC",
+                    "fixes": {
+                        "RZC": "RZC",
+                        "DOYAL": "DOYAL AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "CUVIT": "CUVIT AT OR ABOVE 3200",
+                "DIBAY": "DIBAY 2800 RNW 36",
+                "LALIC": "OVERFLY LALIC AT OR ABOVE 3100 HOLD AT LALIC RIGHT TURN INBOUNDCOURSE 181 LEGDIST 5 FAF DIBAY MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "CUVIT",
+                    "fixes": {
+                        "CUVIT": "CUVIT RIGHT TURN INBOUNDCOURSE 001 ALT 3200 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "RZC",
+                    "fixes": {
+                        "RZC": "RZC",
+                        "SODDO": "SODDO AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "SWALL",
+                    "fixes": {
+                        "SWALL": "SWALL",
+                        "HUBAX": "HUBAX AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "AYZEL",
+            "lat": 41.519641666666665,
+            "lon": 82.80217221666666
+        },
+        {
+            "name": "CAGSA",
+            "lat": 41.5087,
+            "lon": 82.95646388333333
+        },
+        {
+            "name": "FASTI",
+            "lat": 41.505380566666666,
+            "lon": 82.9902
+        },
+        {
+            "name": "FF27",
+            "lat": 41.52063888333333,
+            "lon": 82.73253611666667
+        },
+        {
+            "name": "HOZDE",
+            "lat": 41.52514443333333,
+            "lon": 82.78789166666667
+        },
+        {
+            "name": "KUKAF",
+            "lat": 41.538069433333334,
+            "lon": 82.65386111666666
+        },
+        {
+            "name": "PCWNB",
+            "lat": 41.518725,
+            "lon": 82.86879443333333
+        },
+        {
+            "name": "PI001",
+            "lat": 41.51971678333334,
+            "lon": 82.79089635
+        },
+        {
+            "name": "PI002",
+            "lat": 41.5712503,
+            "lon": 82.72435206666667
+        },
+        {
+            "name": "PI003",
+            "lat": 41.521419183333336,
+            "lon": 82.64622238333334
+        },
+        {
+            "name": "SALFE",
+            "lat": 41.49138333333333,
+            "lon": 83.13127778333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FF27": "FF27 2300",
+                "AYZEL": "AYZEL AT OR ABOVE 1400 RNW 27",
+                "PCWNB": "PCWNB HOLD AT PCWNB RIGHT TURN INBOUNDCOURSE 276 ALT 2500 LEGTIME 1 FAF FF27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "PCW",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "SALFE": "SALFE AT OR ABOVE 3000",
+                "FASTI": "FASTI 2200",
+                "CAGSA": "CAGSA AT OR ABOVE 1720 RNW 09 TRK 090 UNTIL 990",
+                "KUKAF": "OVERFLY KUKAF AT OR ABOVE 2500 HOLD AT KUKAF RIGHT TURN INBOUNDCOURSE 270 LEGDIST 4 FAF FASTI MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "SALFE",
+                    "fixes": {
+                        "SALFE": "SALFE RIGHT TURN INBOUNDCOURSE 089 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "KUKAF": "KUKAF AT OR ABOVE 2500",
+                "HOZDE": "HOZDE 1700 RNW 27 TRK 270 UNTIL 842",
+                "SALFE": "OVERFLY SALFE AT OR ABOVE 3000 HOLD AT SALFE RIGHT TURN INBOUNDCOURSE 089 LEGDIST 4 FAF HOZDE MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "KUKAF",
+                    "fixes": {
+                        "KUKAF": "KUKAF RIGHT TURN INBOUNDCOURSE 270 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

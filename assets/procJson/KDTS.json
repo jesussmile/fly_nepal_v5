@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "AJLIP",
+            "lat": 30.256077783333332,
+            "lon": 86.34259443333333
+        },
+        {
+            "name": "CEW",
+            "lat": 30.826175,
+            "lon": 86.67914443333333
+        },
+        {
+            "name": "ILOPE",
+            "lat": 30.537305566666667,
+            "lon": 86.59481388333333
+        },
+        {
+            "name": "MEMSE",
+            "lat": 30.316072216666665,
+            "lon": 86.27444443333333
+        },
+        {
+            "name": "NOZEC",
+            "lat": 30.469058333333333,
+            "lon": 86.53342778333334
+        },
+        {
+            "name": "UFEBA",
+            "lat": 30.330927783333333,
+            "lon": 86.40953056666666
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ILOPE": "ILOPE AT OR ABOVE 2000",
+                "NOZEC": "NOZEC 1600 RNW 14 TRK 143 UNTIL 272",
+                "AJLIP": "OVERFLY AJLIP AT OR ABOVE 2000 HOLD AT AJLIP RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4 FAF NOZEC MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "CEW",
+                    "fixes": {
+                        "CEW": "CEW"
+                    }
+                },
+                {
+                    "name": "ILOPE",
+                    "fixes": {
+                        "ILOPE": "ILOPE RIGHT TURN INBOUNDCOURSE 143 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "AJLIP": "AJLIP AT OR ABOVE 2000 OVERFLY AJLIP AT OR ABOVE 2000 HOLD AT AJLIP RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4 FAF UFEBA MAP RNW 32",
+                "UFEBA": "UFEBA 1600 RNW 32 TRK 323 UNTIL 422 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AJLIP",
+                    "fixes": {
+                        "AJLIP": "AJLIP RIGHT TURN INBOUNDCOURSE 323 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CEW",
+                    "fixes": {
+                        "CEW": "CEW",
+                        "MEMSE": "MEMSE AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

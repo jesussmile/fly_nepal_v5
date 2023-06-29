@@ -1,0 +1,143 @@
+{
+    "fixes": [
+        {
+            "name": "AI511",
+            "lat": 18.818266666666666,
+            "lon": 159.77058888333335
+        },
+        {
+            "name": "AI615",
+            "lat": 18.937994433333333,
+            "lon": 159.73467778333332
+        },
+        {
+            "name": "AI751",
+            "lat": 18.755052783333333,
+            "lon": 159.82816111666668
+        },
+        {
+            "name": "AI804",
+            "lat": 18.855836116666666,
+            "lon": 159.75138611666668
+        },
+        {
+            "name": "AINB",
+            "lat": 18.8248,
+            "lon": 159.77343333333334
+        },
+        {
+            "name": "AROKO",
+            "lat": 18.691819433333333,
+            "lon": 159.88568888333333
+        },
+        {
+            "name": "FF14",
+            "lat": 18.758052783333333,
+            "lon": 159.80317221666667
+        },
+        {
+            "name": "IKIPO",
+            "lat": 19.020152783333334,
+            "lon": 159.71795556666666
+        },
+        {
+            "name": "MANET",
+            "lat": 19.033277783333332,
+            "lon": 159.63105278333333
+        },
+        {
+            "name": "MORKA",
+            "lat": 18.721669433333332,
+            "lon": 159.96773056666666
+        },
+        {
+            "name": "TEREN",
+            "lat": 18.618686116666666,
+            "lon": 159.84301666666667
+        },
+        {
+            "name": "TORIX",
+            "lat": 19.063188883333332,
+            "lon": 159.79342221666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB14",
+            "fixes": {
+                "FF14": "FF14 1600",
+                "AINB": "AINB 224 RNW 14 TRK 144 UNTIL 1000 TURN LEFT DIRECT AINB 1600 FAF FF14 MAP AI"
+            },
+            "transitions": [
+                {
+                    "name": "AI",
+                    "fixes": {
+                        "AINB": "AINB AT OR ABOVE 1600 SPEED 185 TRK 345 UNTIL 6.2 FROM AINB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "AROKO": "AROKO AT OR ABOVE 2500 AROKO 2500 FAF AI751 MAP AI511",
+                "AI751": "AI751 1800",
+                "AI511": "OVERFLY AI511 298 RNW 14 TRK 126 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AROKO",
+                    "fixes": {
+                        "AROKO": "AROKO RIGHT TURN INBOUNDCOURSE 126 ALT 2500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MORKA",
+                    "fixes": {
+                        "MORKA": "MORKA"
+                    }
+                },
+                {
+                    "name": "TEREN",
+                    "fixes": {
+                        "TEREN": "TEREN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "IKIPO": "IKIPO AT OR ABOVE 2500 IKIPO 2500 FAF AI615 MAP AI804",
+                "AI615": "AI615 1800",
+                "AI804": "OVERFLY AI804 293 RNW 32 TRK 336 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IKIPO",
+                    "fixes": {
+                        "IKIPO": "IKIPO RIGHT TURN INBOUNDCOURSE 336 ALT 2500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MANET",
+                    "fixes": {
+                        "MANET": "MANET"
+                    }
+                },
+                {
+                    "name": "TORIX",
+                    "fixes": {
+                        "TORIX": "TORIX"
+                    }
+                }
+            ]
+        }
+    ]
+}

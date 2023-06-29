@@ -1,0 +1,170 @@
+{
+    "fixes": [
+        {
+            "name": "FF06",
+            "lat": 8.831758333333333,
+            "lon": 140.34294166666666
+        },
+        {
+            "name": "FF24",
+            "lat": 8.733563883333334,
+            "lon": 140.10010833333334
+        },
+        {
+            "name": "FMD06",
+            "lat": 8.841777783333333,
+            "lon": 140.34497221666666
+        },
+        {
+            "name": "FMD24",
+            "lat": 8.748638883333333,
+            "lon": 140.11069443333332
+        },
+        {
+            "name": "MD403",
+            "lat": 8.748694433333334,
+            "lon": 140.3285
+        },
+        {
+            "name": "MD404",
+            "lat": 8.688138883333334,
+            "lon": 140.17808333333332
+        },
+        {
+            "name": "MD405",
+            "lat": 8.795055566666667,
+            "lon": 140.45436111666666
+        },
+        {
+            "name": "MD406",
+            "lat": 8.639805566666666,
+            "lon": 140.06383333333332
+        },
+        {
+            "name": "MD420",
+            "lat": 8.950583333333332,
+            "lon": 140.39194443333332
+        },
+        {
+            "name": "NHNB",
+            "lat": 8.794444433333334,
+            "lon": 140.22016666666667
+        },
+        {
+            "name": "NISAK",
+            "lat": 8.717527783333333,
+            "lon": 140.03258333333332
+        },
+        {
+            "name": "NITOR",
+            "lat": 8.886333333333333,
+            "lon": 139.86902778333334
+        },
+        {
+            "name": "NODIL",
+            "lat": 8.872833333333332,
+            "lon": 140.42316666666667
+        },
+        {
+            "name": "NOGES",
+            "lat": 9.085833333333333,
+            "lon": 140.52161111666666
+        },
+        {
+            "name": "NUBSI",
+            "lat": 9.036583333333333,
+            "lon": 140.24744443333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FF06": "FF06 2400 RNW 06",
+                "NHNB": "OVERFLY NHNB TRK 062 UNTIL 3800 TURN LEFT DIRECT NHNB AT OR ABOVE 5800 FAF FF06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "NH",
+                    "fixes": {
+                        "NHNB": "NHNB AT OR ABOVE 5800 TRK 233 UNTIL 13.5 FROM NHNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FF24": "FF24 2800",
+                "NHNB": "NHNB 251 RNW 24 TRK 232 UNTIL 3600 TURN RIGHT DIRECT NHNB AT OR ABOVE 5800 FAF FF24 MAP NH"
+            },
+            "transitions": [
+                {
+                    "name": "NH",
+                    "fixes": {
+                        "NHNB": "NHNB AT OR ABOVE 5800 TRK 063 UNTIL 12.0 FROM NHNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "NODIL": "NODIL AT OR ABOVE 2500",
+                "FMD06": "FMD06 2500 RNW 06 TRK 058 UNTIL 1500 TURN LEFT DIRECT",
+                "MD403": "MD403",
+                "MD405": "MD405 AT OR ABOVE 2500 FAF FMD06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "MD405",
+                    "fixes": {
+                        "MD405": "MD405 AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "NOGES",
+                    "fixes": {
+                        "NOGES": "NOGES AT OR ABOVE 5800"
+                    }
+                },
+                {
+                    "name": "NUBSI",
+                    "fixes": {
+                        "NUBSI": "NUBSI AT OR ABOVE 5800",
+                        "MD420": "MD420"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "NISAK": "NISAK AT OR ABOVE 2500",
+                "FMD24": "FMD24 2500 RNW 24 TRK 238 UNTIL 1500 TURN RIGHT DIRECT",
+                "MD404": "MD404",
+                "MD406": "MD406 AT OR ABOVE 2500 FAF FMD24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "MD406",
+                    "fixes": {
+                        "MD406": "MD406 AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "NITOR",
+                    "fixes": {
+                        "NITOR": "NITOR AT OR ABOVE 5800"
+                    }
+                }
+            ]
+        }
+    ]
+}

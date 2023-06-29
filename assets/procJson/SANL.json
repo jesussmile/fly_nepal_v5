@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "CF21",
+            "lat": 29.176311116666668,
+            "lon": 66.67423333333333
+        },
+        {
+            "name": "D043L",
+            "lat": 29.23826388333333,
+            "lon": 66.65984721666666
+        },
+        {
+            "name": "FF21",
+            "lat": 29.235555566666665,
+            "lon": 66.70944443333333
+        },
+        {
+            "name": "FV21",
+            "lat": 29.25315833333333,
+            "lon": 66.71800833333333
+        },
+        {
+            "name": "LAR",
+            "lat": 29.388613883333335,
+            "lon": 66.80354721666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 4330",
+                "FF21": "FF21 4330 RNW 21 HDG 211 UNTIL 1840",
+                "LAR": "LAR TRK 160 UNTIL 7000 FAF FF21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "LAR",
+                    "fixes": {
+                        "LAR": "LAR SPEED 180",
+                        "D043L": "OVERFLY D043L AT OR ABOVE 4330"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR21",
+            "fixes": {
+                "FV21": "FV21 3950 RNW 21",
+                "LAR": "OVERFLY LAR AT OR ABOVE 1850 HDG 160 VECTORS FAF FV21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "LAR",
+                    "fixes": {
+                        "LAR": "LAR SPEED 180 TRK 045 UNTIL 10.5 FROM LAR"
+                    }
+                }
+            ]
+        }
+    ]
+}

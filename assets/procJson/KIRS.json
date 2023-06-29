@@ -1,0 +1,201 @@
+{
+    "fixes": [
+        {
+            "name": "EP19",
+            "lat": 41.82111666666667,
+            "lon": 85.43745556666667
+        },
+        {
+            "name": "EYEZI",
+            "lat": 41.62460278333333,
+            "lon": 85.32817778333333
+        },
+        {
+            "name": "FF19",
+            "lat": 41.89790833333333,
+            "lon": 85.47285278333334
+        },
+        {
+            "name": "FF24",
+            "lat": 41.864575,
+            "lon": 85.34565833333333
+        },
+        {
+            "name": "HERLU",
+            "lat": 41.6237,
+            "lon": 85.55085
+        },
+        {
+            "name": "IRSNB",
+            "lat": 41.813144433333335,
+            "lon": 85.43378611666667
+        },
+        {
+            "name": "JETKI",
+            "lat": 41.62420556666667,
+            "lon": 85.43951388333333
+        },
+        {
+            "name": "NUHTO",
+            "lat": 41.72596943333333,
+            "lon": 85.44024721666666
+        },
+        {
+            "name": "NUPGE",
+            "lat": 42.00455556666667,
+            "lon": 85.08160833333334
+        },
+        {
+            "name": "PI001",
+            "lat": 41.867599883333334,
+            "lon": 85.46185795
+        },
+        {
+            "name": "PI002",
+            "lat": 41.933063983333334,
+            "lon": 85.42267468333333
+        },
+        {
+            "name": "PI003",
+            "lat": 41.96871323333333,
+            "lon": 85.51411848333333
+        },
+        {
+            "name": "PI004",
+            "lat": 41.85062478333333,
+            "lon": 85.37379588333333
+        },
+        {
+            "name": "PI005",
+            "lat": 41.922018433333335,
+            "lon": 85.36540111666666
+        },
+        {
+            "name": "PI006",
+            "lat": 41.920148166666664,
+            "lon": 85.26219883333333
+        },
+        {
+            "name": "RESGY",
+            "lat": 42.113925,
+            "lon": 85.58528056666667
+        },
+        {
+            "name": "UKANE",
+            "lat": 42.00363888333333,
+            "lon": 85.44226388333334
+        },
+        {
+            "name": "WIREP",
+            "lat": 42.04567221666667,
+            "lon": 85.34570556666667
+        },
+        {
+            "name": "ZUGDA",
+            "lat": 41.901475,
+            "lon": 85.44151666666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 06",
+        "RNW 19",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB19",
+            "fixes": {
+                "FF19": "FF19 2500",
+                "EP19": "OVERFLY EP19 948",
+                "IRSNB": "OVERFLY IRSNB AT OR ABOVE 1325 RNW 19 TRK 165 UNTIL 2500 TURN LEFT DIRECT IRSNB HOLD AT IRSNB LEFT TURN INBOUNDCOURSE 165 LEGTIME 1 FAF FF19 MAP IRS"
+            },
+            "transitions": [
+                {
+                    "name": "IRS",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FF24": "FF24 2500 RNW 24",
+                "IRSNB": "OVERFLY IRSNB TRK 236 UNTIL 2500 TURN RIGHT DIRECT IRSNB HOLD AT IRSNB RIGHT TURN INBOUNDCOURSE 236 LEGTIME 1 FAF FF24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "IRS",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2500 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2500 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "JETKI": "JETKI AT OR ABOVE 3000",
+                "NUHTO": "NUHTO 2500 RNW 01 TRK 006 UNTIL 1178",
+                "UKANE": "OVERFLY UKANE AT OR ABOVE 2500 HOLD AT UKANE RIGHT TURN INBOUNDCOURSE 186 LEGDIST 4 FAF NUHTO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "EYEZI",
+                    "fixes": {
+                        "EYEZI": "EYEZI"
+                    }
+                },
+                {
+                    "name": "HERLU",
+                    "fixes": {
+                        "HERLU": "HERLU"
+                    }
+                },
+                {
+                    "name": "JETKI",
+                    "fixes": {
+                        "JETKI": "JETKI RIGHT TURN INBOUNDCOURSE 006 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "UKANE": "UKANE AT OR ABOVE 2500",
+                "ZUGDA": "ZUGDA 2500 RNW 19 TRK 186 UNTIL 1229",
+                "JETKI": "OVERFLY JETKI AT OR ABOVE 3000 HOLD AT JETKI RIGHT TURN INBOUNDCOURSE 006 LEGDIST 4 FAF ZUGDA MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "NUPGE",
+                    "fixes": {
+                        "NUPGE": "NUPGE",
+                        "WIREP": "WIREP AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "RESGY",
+                    "fixes": {
+                        "RESGY": "RESGY"
+                    }
+                },
+                {
+                    "name": "UKANE",
+                    "fixes": {
+                        "UKANE": "UKANE RIGHT TURN INBOUNDCOURSE 186 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

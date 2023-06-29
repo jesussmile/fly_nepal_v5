@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "JALET",
+            "lat": 45.82598888333333,
+            "lon": 96.56159166666667
+        },
+        {
+            "name": "KILTY",
+            "lat": 45.86697221666667,
+            "lon": 96.57839443333333
+        },
+        {
+            "name": "LEPRE",
+            "lat": 45.97910556666667,
+            "lon": 96.6245
+        },
+        {
+            "name": "MAGZO",
+            "lat": 45.733994433333336,
+            "lon": 96.52396388333334
+        },
+        {
+            "name": "NEVVI",
+            "lat": 45.693280566666665,
+            "lon": 96.50735278333333
+        },
+        {
+            "name": "OGPIE",
+            "lat": 45.58273333333333,
+            "lon": 96.46230278333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 16",
+        "RNW 24",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "LEPRE": "LEPRE AT OR ABOVE 3500",
+                "KILTY": "KILTY 2700",
+                "JALET": "JALET AT OR ABOVE 1880 RNW 16 TRK 159 UNTIL 1340",
+                "OGPIE": "OVERFLY OGPIE AT OR ABOVE 3500 HOLD AT OGPIE RIGHT TURN INBOUNDCOURSE 339 LEGDIST 4 FAF KILTY MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "LEPRE",
+                    "fixes": {
+                        "LEPRE": "LEPRE RIGHT TURN INBOUNDCOURSE 159 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "OGPIE": "OGPIE AT OR ABOVE 3500",
+                "NEVVI": "NEVVI 2700",
+                "MAGZO": "MAGZO AT OR ABOVE 1880 RNW 34 TRK 339 UNTIL 1400",
+                "LEPRE": "OVERFLY LEPRE AT OR ABOVE 3500 HOLD AT LEPRE RIGHT TURN INBOUNDCOURSE 159 LEGDIST 4 FAF NEVVI MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "OGPIE",
+                    "fixes": {
+                        "OGPIE": "OGPIE RIGHT TURN INBOUNDCOURSE 339 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

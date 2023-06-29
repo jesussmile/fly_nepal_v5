@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "CIRTO",
+            "lat": 40.72086111666667,
+            "lon": 124.18891388333333
+        },
+        {
+            "name": "FOT",
+            "lat": 40.671272216666665,
+            "lon": 124.23453611666666
+        },
+        {
+            "name": "MABFI",
+            "lat": 40.80278333333333,
+            "lon": 124.11334443333334
+        },
+        {
+            "name": "SCUPY",
+            "lat": 40.923316666666665,
+            "lon": 124.30273611666667
+        },
+        {
+            "name": "SHUKS",
+            "lat": 40.76182778333333,
+            "lon": 124.15115278333333
+        },
+        {
+            "name": "TRIAL",
+            "lat": 41.062925,
+            "lon": 124.23674443333333
+        },
+        {
+            "name": "TUNGS",
+            "lat": 40.61075,
+            "lon": 124.1977
+        },
+        {
+            "name": "WAVLI",
+            "lat": 40.85951943333333,
+            "lon": 124.20115556666667
+        },
+        {
+            "name": "XUNXO",
+            "lat": 40.81480833333333,
+            "lon": 124.13016388333334
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "SCUPY": "SCUPY AT OR ABOVE 3000 OVERFLY SCUPY AT OR ABOVE 3000 HOLD AT SCUPY RIGHT TURN INBOUNDCOURSE 115 LEGDIST 4 FAF WAVLI MAP XUNXO",
+                "WAVLI": "WAVLI 1600",
+                "XUNXO": "OVERFLY XUNXO 291 RNW 12 TRK 115 UNTIL 411 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FOT",
+                    "fixes": {
+                        "FOT": "FOT",
+                        "SCUPY": "OVERFLY SCUPY AT OR ABOVE 3400 HOLD AT SCUPY RIGHT TURN INBOUNDCOURSE 115 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TRIAL",
+                    "fixes": {
+                        "TRIAL": "TRIAL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB12",
+            "fixes": {
+                "CIRTO": "CIRTO AT OR ABOVE 2300",
+                "SHUKS": "SHUKS 1700",
+                "MABFI": "OVERFLY MABFI 1640 RNW 12 TRK 020 UNTIL 1640 TURN LEFT DIRECT",
+                "FOT": "OVERFLY FOT AT OR ABOVE 3000 HOLD AT FOT LEFT TURN INBOUNDCOURSE 020 LEGDIST 4 FAF SHUKS MAP MABFI"
+            },
+            "transitions": [
+                {
+                    "name": "FOT",
+                    "fixes": {
+                        "FOT": "FOT LEFT TURN INBOUNDCOURSE 020 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TUNGS",
+                    "fixes": {
+                        "TUNGS": "TUNGS",
+                        "FOT": "FOT AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB30",
+            "fixes": {
+                "CIRTO": "CIRTO AT OR ABOVE 2300",
+                "SHUKS": "SHUKS 1700",
+                "MABFI": "OVERFLY MABFI 1640 RNW 30 TRK 020 UNTIL 1640 TURN LEFT DIRECT",
+                "FOT": "OVERFLY FOT AT OR ABOVE 3000 HOLD AT FOT LEFT TURN INBOUNDCOURSE 020 LEGDIST 4 FAF SHUKS MAP MABFI"
+            },
+            "transitions": [
+                {
+                    "name": "FOT",
+                    "fixes": {
+                        "FOT": "FOT LEFT TURN INBOUNDCOURSE 020 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TUNGS",
+                    "fixes": {
+                        "TUNGS": "TUNGS",
+                        "FOT": "FOT AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

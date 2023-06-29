@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "BGS",
+            "lat": 32.385588883333334,
+            "lon": 101.48368333333333
+        },
+        {
+            "name": "HIPKO",
+            "lat": 32.839786116666666,
+            "lon": 101.94284999999999
+        },
+        {
+            "name": "MERGE",
+            "lat": 32.28506111666667,
+            "lon": 102.14625
+        },
+        {
+            "name": "TUDOY",
+            "lat": 32.527847216666665,
+            "lon": 101.74059166666666
+        },
+        {
+            "name": "WUVUR",
+            "lat": 32.66756388333334,
+            "lon": 101.88956943333334
+        },
+        {
+            "name": "YOTUD",
+            "lat": 33.23003333333333,
+            "lon": 101.75753611666667
+        },
+        {
+            "name": "YUPUC",
+            "lat": 32.554458333333336,
+            "lon": 101.85463888333334
+        },
+        {
+            "name": "ZIKEK",
+            "lat": 32.484036116666665,
+            "lon": 101.93877221666666
+        },
+        {
+            "name": "ZOPNI",
+            "lat": 33.07908056666667,
+            "lon": 102.01729721666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 16",
+        "RNW 25",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "ZOPNI": "ZOPNI AT OR ABOVE 5500",
+                "HIPKO": "HIPKO 4600 RNW 16 TRK 159 UNTIL 3245",
+                "YUPUC": "OVERFLY YUPUC AT OR ABOVE 5500 HOLD AT YUPUC RIGHT TURN INBOUNDCOURSE 339 LEGDIST 5 FAF HIPKO MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "YOTUD",
+                    "fixes": {
+                        "YOTUD": "YOTUD"
+                    }
+                },
+                {
+                    "name": "ZOPNI",
+                    "fixes": {
+                        "ZOPNI": "ZOPNI RIGHT TURN INBOUNDCOURSE 159 ALT 5500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "YUPUC": "YUPUC AT OR ABOVE 5500",
+                "WUVUR": "WUVUR 4600 RNW 34 TRK 339 UNTIL 3194",
+                "ZOPNI": "OVERFLY ZOPNI AT OR ABOVE 5500 HOLD AT ZOPNI RIGHT TURN INBOUNDCOURSE 159 LEGDIST 5 FAF WUVUR MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "BGS",
+                    "fixes": {
+                        "BGS": "BGS",
+                        "TUDOY": "TUDOY AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "MERGE",
+                    "fixes": {
+                        "MERGE": "MERGE",
+                        "ZIKEK": "ZIKEK AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "YUPUC",
+                    "fixes": {
+                        "YUPUC": "YUPUC RIGHT TURN INBOUNDCOURSE 339 ALT 5500 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

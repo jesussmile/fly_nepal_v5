@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "D139I",
+            "lat": 14.369266666666666,
+            "lon": 50.29629166666667
+        },
+        {
+            "name": "D360G",
+            "lat": 14.171558333333333,
+            "lon": 50.15585
+        },
+        {
+            "name": "FN16",
+            "lat": 14.181872216666667,
+            "lon": 50.11518888333333
+        },
+        {
+            "name": "FN34",
+            "lat": 14.380844433333333,
+            "lon": 50.221677783333334
+        },
+        {
+            "name": "FQ16",
+            "lat": 14.185988883333334,
+            "lon": 50.117825
+        },
+        {
+            "name": "FQ34",
+            "lat": 14.372216666666667,
+            "lon": 50.21791666666667
+        },
+        {
+            "name": "MQ34",
+            "lat": 14.312127783333333,
+            "lon": 50.19174721666667
+        },
+        {
+            "name": "SANB",
+            "lat": 14.278694433333333,
+            "lon": 50.177194433333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FN16": "FN16 2100 RNW 16",
+                "SANB": "OVERFLY SANB TRK 159 UNTIL 1300 TURN LEFT DIRECT SANB 2200 FAF FN16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "SA1",
+                    "fixes": {
+                        "SANB": "SANB AT OR ABOVE 2200 TRK 000 UNTIL 7.0 FROM SANB"
+                    }
+                },
+                {
+                    "name": "SA2",
+                    "fixes": {
+                        "SANB": "SANB AT OR ABOVE 2200 TRK 351 UNTIL 9.0 FROM SANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB34",
+            "fixes": {
+                "FN34": "FN34 2000 RNW 34",
+                "SANB": "OVERFLY SANB TRK 348 UNTIL 1100 TURN RIGHT DIRECT SANB 3300 FAF FN34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "SA",
+                    "fixes": {
+                        "SANB": "SANB AT OR ABOVE 3300 TRK 139 UNTIL 7.0 FROM SANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD16",
+            "fixes": {
+                "FQ16": "FQ16 2100 RNW 16 TRK 159 UNTIL 1300 TURN LEFT DIRECT",
+                "SANB": "SANB 2200 FAF FQ16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "SA",
+                    "fixes": {
+                        "SANB": "SANB AT OR ABOVE 2200",
+                        "D360G": "OVERFLY D360G AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD34",
+            "fixes": {
+                "FQ34": "FQ34 2000",
+                "MQ34": "MQ34 635 RNW 34",
+                "SANB": "OVERFLY SANB TURN RIGHT DIRECT SANB 3300 FAF FQ34 MAP MQ34"
+            },
+            "transitions": [
+                {
+                    "name": "SA",
+                    "fixes": {
+                        "SANB": "SANB AT OR ABOVE 3300",
+                        "D139I": "OVERFLY D139I AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

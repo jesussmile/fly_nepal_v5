@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "AWOYO",
+            "lat": 46.084491666666665,
+            "lon": 116.49049721666667
+        },
+        {
+            "name": "FERDI",
+            "lat": 46.14663611666667,
+            "lon": 116.36836666666666
+        },
+        {
+            "name": "FIDIT",
+            "lat": 45.943241666666665,
+            "lon": 116.20469443333333
+        },
+        {
+            "name": "GEGYE",
+            "lat": 46.00880278333333,
+            "lon": 116.34205556666667
+        },
+        {
+            "name": "IDAGY",
+            "lat": 45.9438,
+            "lon": 116.29305833333333
+        },
+        {
+            "name": "MELLR",
+            "lat": 46.141675,
+            "lon": 116.76840278333333
+        },
+        {
+            "name": "OXLEY",
+            "lat": 45.90169721666667,
+            "lon": 116.66818056666666
+        },
+        {
+            "name": "RAIRE",
+            "lat": 46.04658056666667,
+            "lon": 115.82488888333333
+        },
+        {
+            "name": "RIDIH",
+            "lat": 45.94456111666667,
+            "lon": 116.43714721666667
+        },
+        {
+            "name": "UYINA",
+            "lat": 45.942461116666664,
+            "lon": 116.09531111666666
+        },
+        {
+            "name": "VEZAM",
+            "lat": 45.97260833333333,
+            "lon": 115.93208611666667
+        },
+        {
+            "name": "WEDMU",
+            "lat": 45.92126388333333,
+            "lon": 116.20909721666666
+        },
+        {
+            "name": "ZATIP",
+            "lat": 46.22152221666666,
+            "lon": 116.52710278333333
+        },
+        {
+            "name": "ZILRA",
+            "lat": 46.17976388333334,
+            "lon": 116.00270278333333
+        },
+        {
+            "name": "ZOSNO",
+            "lat": 45.81025278333333,
+            "lon": 116.63025556666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "MELLR1",
+            "rnw": "26",
+            "fixes": {
+                "FIDIT": "FIDIT",
+                "RIDIH": "RIDIH",
+                "MELLR": "MELLR"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "RIDIH": "RIDIH AT OR ABOVE 7400",
+                "IDAGY": "IDAGY 5800 RNW 08 TRK 076 UNTIL 3713 TURN LEFT DIRECT",
+                "ZATIP": "OVERFLY ZATIP AT OR ABOVE 7300 HOLD AT ZATIP LEFT TURN INBOUNDCOURSE 110 LEGDIST 7 FAF IDAGY MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "OXLEY",
+                    "fixes": {
+                        "OXLEY": "OXLEY"
+                    }
+                },
+                {
+                    "name": "ZATIP",
+                    "fixes": {
+                        "ZATIP": "ZATIP",
+                        "AWOYO": "AWOYO AT OR ABOVE 9500"
+                    }
+                },
+                {
+                    "name": "ZOSNO",
+                    "fixes": {
+                        "ZOSNO": "ZOSNO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "RAIRE": "RAIRE AT OR ABOVE 6200",
+                "VEZAM": "VEZAM 6200",
+                "UYINA": "OVERFLY UYINA 3631 RNW 26 TRK 241 UNTIL 3713",
+                "WEDMU": "OVERFLY WEDMU",
+                "GEGYE": "GEGYE",
+                "FERDI": "OVERFLY FERDI AT OR ABOVE 7300 HOLD AT FERDI LEFT TURN INBOUNDCOURSE 110 LEGDIST 7 FAF VEZAM MAP UYINA"
+            },
+            "transitions": [
+                {
+                    "name": "FERDI",
+                    "fixes": {
+                        "FERDI": "FERDI",
+                        "ZILRA": "ZILRA AT OR ABOVE 8500"
+                    }
+                }
+            ]
+        }
+    ]
+}

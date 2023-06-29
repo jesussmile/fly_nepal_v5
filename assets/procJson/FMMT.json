@@ -1,0 +1,255 @@
+{
+    "fixes": [
+        {
+            "name": "APELU",
+            "lat": 18.307222216666666,
+            "lon": 49.415138883333334
+        },
+        {
+            "name": "CF19",
+            "lat": 18.001102783333334,
+            "lon": 49.38072221666667
+        },
+        {
+            "name": "CI19Z",
+            "lat": 17.964847216666666,
+            "lon": 49.376186116666666
+        },
+        {
+            "name": "D189E",
+            "lat": 18.207452783333334,
+            "lon": 49.4034
+        },
+        {
+            "name": "DENEV",
+            "lat": 18.316277783333334,
+            "lon": 49.328052783333334
+        },
+        {
+            "name": "FF01",
+            "lat": 18.199452783333335,
+            "lon": 49.40251943333333
+        },
+        {
+            "name": "FI19Z",
+            "lat": 17.998119433333333,
+            "lon": 49.37995278333333
+        },
+        {
+            "name": "GAGOL",
+            "lat": 17.908005566666667,
+            "lon": 49.369652783333336
+        },
+        {
+            "name": "LOVNI",
+            "lat": 17.917036116666665,
+            "lon": 49.282769433333335
+        },
+        {
+            "name": "MEVAN",
+            "lat": 17.89893611666667,
+            "lon": 49.456527783333335
+        },
+        {
+            "name": "MT",
+            "lat": 18.12425,
+            "lon": 49.39425
+        },
+        {
+            "name": "MT511",
+            "lat": 18.22025,
+            "lon": 49.405194433333335
+        },
+        {
+            "name": "MT512",
+            "lat": 18.036275,
+            "lon": 49.38424166666667
+        },
+        {
+            "name": "MT513",
+            "lat": 17.998861116666667,
+            "lon": 49.379972216666665
+        },
+        {
+            "name": "MT514",
+            "lat": 18.182838883333332,
+            "lon": 49.40093888333333
+        },
+        {
+            "name": "MV",
+            "lat": 18.091388883333334,
+            "lon": 49.39052778333333
+        },
+        {
+            "name": "TEBOL",
+            "lat": 18.298138883333333,
+            "lon": 49.5022
+        },
+        {
+            "name": "TO",
+            "lat": 18.040694433333332,
+            "lon": 49.38497221666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY19",
+            "fixes": {
+                "GAGOL": "GAGOL AT OR ABOVE 2200",
+                "MT513": "MT513 2000 RNW 19",
+                "MT514": "OVERFLY MT514 TURN LEFT DIRECT",
+                "MEVAN": "MEVAN 2200 FAF MT513 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "LOVNI",
+                    "fixes": {
+                        "LOVNI": "LOVNI AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "MEVAN",
+                    "fixes": {
+                        "MEVAN": "MEVAN AT OR ABOVE 2200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ19",
+            "fixes": {
+                "CI19Z": "CI19Z AT OR ABOVE 2000",
+                "FI19Z": "FI19Z 2000 RNW 19 TRK 189 UNTIL 2000 TURN LEFT DIRECT",
+                "TO": "TO 2000 FAF FI19Z MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "MT",
+                    "fixes": {
+                        "MT": "MT AT OR ABOVE 3000",
+                        "MV": "MV AT OR ABOVE 3000",
+                        "FI19Z": "FI19Z AT OR ABOVE 2000 TRK 054 UNTIL 4.4 FROM FI19Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB01",
+            "fixes": {
+                "FF01": "FF01 1600 RNW 01",
+                "MV": "OVERFLY MV TRK 009 UNTIL 1600 TURN RIGHT DIRECT MV FAF FF01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "MV",
+                    "fixes": {
+                        "MV": "MV AT OR ABOVE 3000",
+                        "D189E": "D189E AT OR ABOVE 1600 TRK 144 UNTIL 4.4 FROM D189E"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB19",
+            "fixes": {
+                "CF19": "CF19 AT OR ABOVE 2000",
+                "TO": "TO 1200 TO FAF TO MAP MV",
+                "MV": "MV 231 RNW 19 TRK 189 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MV",
+                    "fixes": {
+                        "MV": "MV AT OR ABOVE 3000",
+                        "CF19": "CF19 AT OR ABOVE 2000 TRK 054 UNTIL 4.4 FROM CF19"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "APELU": "APELU AT OR ABOVE 2000",
+                "MT511": "MT511 2000 RNW 01",
+                "MT512": "OVERFLY MT512 TURN RIGHT DIRECT",
+                "TEBOL": "TEBOL 2200 FAF MT511 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "DENEV",
+                    "fixes": {
+                        "DENEV": "DENEV AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "TEBOL",
+                    "fixes": {
+                        "TEBOL": "TEBOL AT OR ABOVE 2200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "GAGOL": "GAGOL AT OR ABOVE 2200",
+                "MT513": "MT513 2000 RNW 19",
+                "MT514": "OVERFLY MT514 TURN LEFT DIRECT",
+                "MEVAN": "MEVAN 2200 FAF MT513 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "LOVNI",
+                    "fixes": {
+                        "LOVNI": "LOVNI AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "MEVAN",
+                    "fixes": {
+                        "MEVAN": "MEVAN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR01",
+            "fixes": {
+                "FF01": "FF01 1600",
+                "MT": "MT 161 RNW 01 TRK 009 UNTIL 1600 TURN RIGHT DIRECT MT FAF FF01 MAP M"
+            },
+            "transitions": [
+                {
+                    "name": "MT",
+                    "fixes": {
+                        "MT": "MT AT OR ABOVE 3000",
+                        "D189E": "D189E AT OR ABOVE 1600 TRK 144 UNTIL 4.4 FROM D189E"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR19",
+            "fixes": {
+                "CF19": "CF19 AT OR ABOVE 2000",
+                "TO": "TO 1200 RNW 19 TO FAF TO MAP RNW 19",
+                "MT": "OVERFLY MT TRK 189 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MT",
+                    "fixes": {
+                        "MT": "MT AT OR ABOVE 3000",
+                        "CF19": "CF19 AT OR ABOVE 2000 TRK 054 UNTIL 4.4 FROM CF19"
+                    }
+                }
+            ]
+        }
+    ]
+}

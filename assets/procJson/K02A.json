@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "BWANA",
+            "lat": 32.859675,
+            "lon": 86.55853333333333
+        },
+        {
+            "name": "CABKI",
+            "lat": 32.80696111666666,
+            "lon": 86.86005833333333
+        },
+        {
+            "name": "HONIS",
+            "lat": 32.86681943333333,
+            "lon": 86.51730833333333
+        },
+        {
+            "name": "IVIJI",
+            "lat": 32.83505278333333,
+            "lon": 86.69993611666666
+        },
+        {
+            "name": "RIRIE",
+            "lat": 32.893566666666665,
+            "lon": 86.36218888333333
+        },
+        {
+            "name": "WECIJ",
+            "lat": 32.84228611666666,
+            "lon": 86.65850833333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "CABKI": "CABKI AT OR ABOVE 3000",
+                "IVIJI": "IVIJI 2200",
+                "WECIJ": "WECIJ AT OR ABOVE 1400 RNW 08 TRK 082 UNTIL 1220",
+                "RIRIE": "OVERFLY RIRIE AT OR ABOVE 3300 HOLD AT RIRIE RIGHT TURN INBOUNDCOURSE 262 LEGDIST 4 FAF IVIJI MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "CABKI",
+                    "fixes": {
+                        "CABKI": "CABKI RIGHT TURN INBOUNDCOURSE 082 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "RIRIE": "RIRIE AT OR ABOVE 3300",
+                "HONIS": "HONIS 2300",
+                "BWANA": "BWANA AT OR ABOVE 1500 RNW 26 TRK 262 UNTIL 1120",
+                "CABKI": "OVERFLY CABKI AT OR ABOVE 3000 HOLD AT CABKI RIGHT TURN INBOUNDCOURSE 082 LEGDIST 4 FAF HONIS MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "RIRIE",
+                    "fixes": {
+                        "RIRIE": "RIRIE RIGHT TURN INBOUNDCOURSE 262 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

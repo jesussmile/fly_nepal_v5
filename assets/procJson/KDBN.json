@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "DBN",
+            "lat": 32.563461116666666,
+            "lon": 82.83004443333333
+        },
+        {
+            "name": "EKTEC",
+            "lat": 32.478405566666666,
+            "lon": 83.01214721666666
+        },
+        {
+            "name": "MIGVE",
+            "lat": 32.53004443333333,
+            "lon": 82.99432778333333
+        },
+        {
+            "name": "POVGY",
+            "lat": 32.651638883333334,
+            "lon": 82.95228888333334
+        },
+        {
+            "name": "RATOC",
+            "lat": 32.381472216666666,
+            "lon": 83.0455
+        },
+        {
+            "name": "TUFTY",
+            "lat": 32.6004,
+            "lon": 82.97001666666667
+        },
+        {
+            "name": "VNA",
+            "lat": 32.21344166666667,
+            "lon": 83.49725556666667
+        },
+        {
+            "name": "VOLVY",
+            "lat": 32.77984443333333,
+            "lon": 82.90783611666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 14",
+        "RNW 20",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS02",
+            "fixes": {
+                "RATOC": "RATOC AT OR ABOVE 2000",
+                "EKTEC": "EKTEC 1900 RNW 02 TRK 020 UNTIL 1000 TURN RIGHT DIRECT",
+                "DBN": "DBN AT OR ABOVE 2000 HOLD AT DBN RIGHT TURN INBOUNDCOURSE 277 LEGTIME 1 FAF EKTEC MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "DBN",
+                    "fixes": {
+                        "DBN": "DBN",
+                        "RATOC": "RATOC AT OR ABOVE 2000 HOLD AT RATOC RIGHT TURN INBOUNDCOURSE 020 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "VNA",
+                    "fixes": {
+                        "VNA": "VNA",
+                        "RATOC": "RATOC AT OR ABOVE 2100 HOLD AT RATOC RIGHT TURN INBOUNDCOURSE 020 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "RATOC": "RATOC AT OR ABOVE 2000",
+                "EKTEC": "EKTEC 1900",
+                "MIGVE": "MIGVE AT OR ABOVE 860 RNW 02 TRK 020 UNTIL 499",
+                "VOLVY": "OVERFLY VOLVY AT OR ABOVE 2000 HOLD AT VOLVY RIGHT TURN INBOUNDCOURSE 200 LEGDIST 4 FAF EKTEC MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "RATOC",
+                    "fixes": {
+                        "RATOC": "RATOC RIGHT TURN INBOUNDCOURSE 020 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "VOLVY": "VOLVY AT OR ABOVE 2000",
+                "POVGY": "POVGY 1900",
+                "TUFTY": "TUFTY AT OR ABOVE 880 RNW 20 TRK 200 UNTIL 587",
+                "RATOC": "OVERFLY RATOC AT OR ABOVE 2000 HOLD AT RATOC RIGHT TURN INBOUNDCOURSE 020 LEGDIST 4 FAF POVGY MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "VOLVY",
+                    "fixes": {
+                        "VOLVY": "VOLVY RIGHT TURN INBOUNDCOURSE 200 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

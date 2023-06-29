@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CAVTO",
+            "lat": 35.663505566666664,
+            "lon": 89.04122778333333
+        },
+        {
+            "name": "FASKA",
+            "lat": 35.93966388333333,
+            "lon": 88.70920278333334
+        },
+        {
+            "name": "FELIV",
+            "lat": 35.736333333333334,
+            "lon": 88.95400278333334
+        },
+        {
+            "name": "WOKMU",
+            "lat": 35.86703611666667,
+            "lon": 88.79686111666666
+        },
+        {
+            "name": "XEFVI",
+            "lat": 35.76605,
+            "lon": 88.91834721666666
+        },
+        {
+            "name": "XITRY",
+            "lat": 35.837105566666665,
+            "lon": 88.83291388333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "CAVTO": "CAVTO AT OR ABOVE 3000",
+                "FELIV": "FELIV 2100",
+                "XEFVI": "XEFVI AT OR ABOVE 1300 RNW 04 TRK 046 UNTIL 780",
+                "FASKA": "OVERFLY FASKA AT OR ABOVE 3000 HOLD AT FASKA RIGHT TURN INBOUNDCOURSE 227 LEGDIST 4 FAF FELIV MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "CAVTO",
+                    "fixes": {
+                        "CAVTO": "CAVTO RIGHT TURN INBOUNDCOURSE 046 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "FASKA": "FASKA AT OR ABOVE 3000",
+                "WOKMU": "WOKMU 2100",
+                "XITRY": "XITRY AT OR ABOVE 1300 RNW 22 TRK 226 UNTIL 701",
+                "CAVTO": "OVERFLY CAVTO AT OR ABOVE 3000 HOLD AT CAVTO RIGHT TURN INBOUNDCOURSE 046 LEGDIST 4 FAF WOKMU MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "FASKA",
+                    "fixes": {
+                        "FASKA": "FASKA RIGHT TURN INBOUNDCOURSE 227 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

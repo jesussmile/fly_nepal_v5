@@ -1,0 +1,67 @@
+{
+    "fixes": [
+        {
+            "name": "FF250",
+            "lat": 54.91323611666667,
+            "lon": 67.42098611666667
+        },
+        {
+            "name": "PWL",
+            "lat": 54.92961111666666,
+            "lon": 67.62116666666667
+        },
+        {
+            "name": "SUNLI",
+            "lat": 54.96305556666667,
+            "lon": 68.73666666666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "DUMAS2",
+            "rnw": "26",
+            "fixes": {
+                "SUNLI": "SUNLI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORA08",
+            "fixes": {
+                "FF250": "FF250 3200",
+                "PWL": "PWL 1140 RNW 08 TRK 270 UNTIL 6000 TURN LEFT DIRECT PWL HOLD AT PWL LEFT TURN INBOUNDCOURSE 052 LEGTIME 1 FAF FF250 MAP PWL"
+            },
+            "transitions": [
+                {
+                    "name": "PWL",
+                    "fixes": {
+                        "PWL": "PWL AT OR ABOVE 6000 TRK 052 UNTIL 7.0 FROM PWL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA26",
+            "fixes": {
+                "FF250": "FF250 3200",
+                "PWL": "PWL 1140 RNW 26 TRK 270 UNTIL 6000 TURN LEFT DIRECT PWL HOLD AT PWL LEFT TURN INBOUNDCOURSE 052 LEGTIME 1 FAF FF250 MAP PWL"
+            },
+            "transitions": [
+                {
+                    "name": "PWL",
+                    "fixes": {
+                        "PWL": "PWL AT OR ABOVE 6000 TRK 052 UNTIL 7.0 FROM PWL"
+                    }
+                }
+            ]
+        }
+    ]
+}

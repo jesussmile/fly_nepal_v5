@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "COMUL",
+            "lat": 45.52319166666667,
+            "lon": 91.03090278333333
+        },
+        {
+            "name": "EKASE",
+            "lat": 45.67345,
+            "lon": 91.20786111666666
+        },
+        {
+            "name": "FIMOG",
+            "lat": 45.318691666666666,
+            "lon": 90.79211388333333
+        },
+        {
+            "name": "WUVRA",
+            "lat": 45.42304166666667,
+            "lon": 90.91366943333334
+        },
+        {
+            "name": "ZEBEM",
+            "lat": 45.570697216666666,
+            "lon": 91.08671388333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 14",
+        "RNW 19",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "EKASE": "EKASE AT OR ABOVE 5000",
+                "ZEBEM": "ZEBEM 3000",
+                "COMUL": "COMUL AT OR ABOVE 1820 RNW 14 TRK 140 UNTIL 1640",
+                "FIMOG": "OVERFLY FIMOG AT OR ABOVE 5000 HOLD AT FIMOG RIGHT TURN INBOUNDCOURSE 321 ALT 5000 LEGDIST 5 FAF ZEBEM MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "EKASE",
+                    "fixes": {
+                        "EKASE": "EKASE RIGHT TURN INBOUNDCOURSE 140 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "FIMOG": "FIMOG AT OR ABOVE 5000",
+                "WUVRA": "WUVRA 3000 RNW 32 TRK 321 UNTIL 1477",
+                "EKASE": "OVERFLY EKASE AT OR ABOVE 5000 HOLD AT EKASE RIGHT TURN INBOUNDCOURSE 140 LEGDIST 5 FAF WUVRA MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "FIMOG",
+                    "fixes": {
+                        "FIMOG": "FIMOG RIGHT TURN INBOUNDCOURSE 321 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

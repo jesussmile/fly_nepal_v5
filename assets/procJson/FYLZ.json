@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "APNAV",
+            "lat": 26.872552783333333,
+            "lon": 15.277533333333333
+        },
+        {
+            "name": "ETOPA",
+            "lat": 26.823961116666666,
+            "lon": 15.099238883333333
+        },
+        {
+            "name": "HERSH",
+            "lat": 26.437583333333333,
+            "lon": 15.3272
+        },
+        {
+            "name": "LZ04F",
+            "lat": 26.768322216666668,
+            "lon": 15.215452783333333
+        },
+        {
+            "name": "LZ04I",
+            "lat": 26.848286116666667,
+            "lon": 15.188366666666667
+        },
+        {
+            "name": "LZ22F",
+            "lat": 26.59752221666667,
+            "lon": 15.273205566666666
+        },
+        {
+            "name": "LZ22I",
+            "lat": 26.517552783333333,
+            "lon": 15.300213883333333
+        },
+        {
+            "name": "LZM01",
+            "lat": 26.64360556666667,
+            "lon": 15.25765
+        },
+        {
+            "name": "LZM02",
+            "lat": 26.723761116666665,
+            "lon": 15.230538883333333
+        },
+        {
+            "name": "NIKAN",
+            "lat": 26.493230566666668,
+            "lon": 15.211341666666666
+        },
+        {
+            "name": "TESUM",
+            "lat": 26.928247216666666,
+            "lon": 15.161263883333334
+        },
+        {
+            "name": "UNDUN",
+            "lat": 26.541822216666667,
+            "lon": 15.389122216666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 12",
+        "RNW 22",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "LZ04F": "LZ04F 2100 RNW 04",
+                "LZM01": "OVERFLY LZM01 TURN LEFT DIRECT",
+                "ETOPA": "ETOPA HOLD AT ETOPA RIGHT TURN INBOUNDCOURSE 124 ALT 4000 SPEED 240 LEGTIME 1 FAF LZ04F MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "APNAV",
+                    "fixes": {
+                        "APNAV": "APNAV AT OR ABOVE 4000",
+                        "LZ04I": "LZ04I"
+                    }
+                },
+                {
+                    "name": "ETOPA",
+                    "fixes": {
+                        "ETOPA": "ETOPA AT OR ABOVE 4000",
+                        "LZ04I": "LZ04I"
+                    }
+                },
+                {
+                    "name": "TESUM",
+                    "fixes": {
+                        "TESUM": "TESUM AT OR ABOVE 4000",
+                        "LZ04I": "LZ04I"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "LZ22F": "LZ22F 2000 RNW 22",
+                "LZM02": "OVERFLY LZM02 TURN RIGHT DIRECT",
+                "NIKAN": "NIKAN HOLD AT NIKAN LEFT TURN INBOUNDCOURSE 124 ALT 4000 SPEED 240 LEGTIME 1 FAF LZ22F MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "HERSH",
+                    "fixes": {
+                        "HERSH": "HERSH AT OR ABOVE 4500",
+                        "LZ22I": "LZ22I"
+                    }
+                },
+                {
+                    "name": "NIKAN",
+                    "fixes": {
+                        "NIKAN": "NIKAN AT OR ABOVE 4000",
+                        "LZ22I": "LZ22I"
+                    }
+                },
+                {
+                    "name": "UNDUN",
+                    "fixes": {
+                        "UNDUN": "UNDUN AT OR ABOVE 4500",
+                        "LZ22I": "LZ22I"
+                    }
+                }
+            ]
+        }
+    ]
+}

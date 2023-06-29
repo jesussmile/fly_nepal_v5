@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "FF35",
+            "lat": 32.60329443333333,
+            "lon": 100.95891943333334
+        },
+        {
+            "name": "KITME",
+            "lat": 32.50231111666667,
+            "lon": 100.95020278333334
+        },
+        {
+            "name": "LORAN",
+            "lat": 32.43731388333333,
+            "lon": 100.65335833333333
+        },
+        {
+            "name": "PI001",
+            "lat": 32.643388783333336,
+            "lon": 100.95336908333333
+        },
+        {
+            "name": "PI002",
+            "lat": 32.598270166666666,
+            "lon": 101.01947891666667
+        },
+        {
+            "name": "PI003",
+            "lat": 32.53564743333333,
+            "lon": 100.96679231666667
+        },
+        {
+            "name": "SDRNB",
+            "lat": 32.701402783333336,
+            "lon": 100.94612778333334
+        },
+        {
+            "name": "VARVY",
+            "lat": 32.803575,
+            "lon": 100.94809166666667
+        },
+        {
+            "name": "WABVI",
+            "lat": 33.02557778333333,
+            "lon": 100.76150833333334
+        },
+        {
+            "name": "WEEPE",
+            "lat": 32.413172216666666,
+            "lon": 101.05183056666667
+        },
+        {
+            "name": "ZANBA",
+            "lat": 32.60258888333333,
+            "lon": 100.94950278333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 17",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB35",
+            "fixes": {
+                "FF35": "FF35 4100 RNW 35",
+                "SDRNB": "SDRNB AT OR ABOVE 2830 HOLD AT SDRNB LEFT TURN INBOUNDCOURSE 358 ALT 4100 LEGTIME 1 FAF FF35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "LORAN",
+                    "fixes": {
+                        "LORAN": "LORAN",
+                        "SDRNB": "SDRNB AT OR ABOVE 4100",
+                        "PI001": "PI001 AT OR ABOVE 4100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "WEEPE",
+                    "fixes": {
+                        "WEEPE": "WEEPE",
+                        "SDRNB": "SDRNB AT OR ABOVE 4100",
+                        "PI001": "PI001 AT OR ABOVE 4100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "KITME": "KITME AT OR ABOVE 4600",
+                "ZANBA": "ZANBA 4100 RNW 35 TRK 352 UNTIL 2626",
+                "VARVY": "VARVY",
+                "WABVI": "OVERFLY WABVI AT OR ABOVE 5000 HOLD AT WABVI RIGHT TURN INBOUNDCOURSE 117 LEGDIST 5 FAF ZANBA MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "LORAN",
+                    "fixes": {
+                        "LORAN": "LORAN"
+                    }
+                },
+                {
+                    "name": "WABVI",
+                    "fixes": {
+                        "WABVI": "WABVI",
+                        "KITME": "OVERFLY KITME AT OR ABOVE 4600 HOLD AT KITME RIGHT TURN INBOUNDCOURSE 352 ALT 4600 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "WEEPE",
+                    "fixes": {
+                        "WEEPE": "WEEPE"
+                    }
+                }
+            ]
+        }
+    ]
+}

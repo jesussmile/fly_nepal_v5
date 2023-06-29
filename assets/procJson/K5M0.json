@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "JUPES",
+            "lat": 34.61349166666667,
+            "lon": 86.92995278333333
+        },
+        {
+            "name": "KIYET",
+            "lat": 34.503933333333336,
+            "lon": 86.93155278333333
+        },
+        {
+            "name": "QECKE",
+            "lat": 34.30012778333333,
+            "lon": 86.93451388333334
+        },
+        {
+            "name": "TERYO",
+            "lat": 34.353194433333336,
+            "lon": 86.93374443333333
+        },
+        {
+            "name": "ZIVEP",
+            "lat": 34.451563883333336,
+            "lon": 86.93231388333334
+        },
+        {
+            "name": "ZOVOR",
+            "lat": 34.194597216666665,
+            "lon": 86.93604166666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "JUPES": "JUPES AT OR ABOVE 3000",
+                "KIYET": "KIYET 2400",
+                "ZIVEP": "ZIVEP AT OR ABOVE 1400 RNW 18 TRK 184 UNTIL 1028",
+                "ZOVOR": "OVERFLY ZOVOR AT OR ABOVE 3100 HOLD AT ZOVOR RIGHT TURN INBOUNDCOURSE 004 LEGDIST 4 FAF KIYET MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "JUPES",
+                    "fixes": {
+                        "JUPES": "JUPES RIGHT TURN INBOUNDCOURSE 184 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ZOVOR": "ZOVOR AT OR ABOVE 3100",
+                "QECKE": "QECKE 2600",
+                "TERYO": "TERYO AT OR ABOVE 1580 RNW 36 TRK 004 UNTIL 1020",
+                "JUPES": "OVERFLY JUPES AT OR ABOVE 3000 HOLD AT JUPES RIGHT TURN INBOUNDCOURSE 184 LEGDIST 4 FAF QECKE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ZOVOR",
+                    "fixes": {
+                        "ZOVOR": "ZOVOR RIGHT TURN INBOUNDCOURSE 004 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

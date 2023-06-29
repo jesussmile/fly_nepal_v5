@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "AGEYU",
+            "lat": 42.707025,
+            "lon": 85.43918611666666
+        },
+        {
+            "name": "BLBBY",
+            "lat": 42.75914443333333,
+            "lon": 85.54981111666666
+        },
+        {
+            "name": "BOHRR",
+            "lat": 42.587925,
+            "lon": 85.43496388333334
+        },
+        {
+            "name": "CADIM",
+            "lat": 42.61765556666667,
+            "lon": 85.25040556666667
+        },
+        {
+            "name": "DERRE",
+            "lat": 42.55276666666666,
+            "lon": 85.11416943333333
+        },
+        {
+            "name": "ECAVU",
+            "lat": 42.64013611666667,
+            "lon": 85.29778333333333
+        },
+        {
+            "name": "EDOGE",
+            "lat": 42.68281111666667,
+            "lon": 85.38791666666667
+        },
+        {
+            "name": "JAKES",
+            "lat": 42.84464166666667,
+            "lon": 85.82299721666666
+        },
+        {
+            "name": "JCUBS",
+            "lat": 42.694375,
+            "lon": 85.3861
+        },
+        {
+            "name": "POSIE",
+            "lat": 42.44120556666667,
+            "lon": 84.72634166666667
+        },
+        {
+            "name": "UNSUN",
+            "lat": 42.75131111666666,
+            "lon": 85.08047221666666
+        },
+        {
+            "name": "VIO",
+            "lat": 42.78671666666666,
+            "lon": 85.49707221666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 12",
+        "RNW 18",
+        "RNW 27",
+        "RNW 30",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "BLBBY": "BLBBY AT OR ABOVE 3000",
+                "AGEYU": "AGEYU 2300",
+                "EDOGE": "EDOGE AT OR ABOVE 1440 RNW 12 TRK 129 UNTIL 1087",
+                "DERRE": "OVERFLY DERRE AT OR ABOVE 3000 HOLD AT DERRE RIGHT TURN INBOUNDCOURSE 309 LEGDIST 4 FAF AGEYU MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "BOHRR",
+                    "fixes": {
+                        "BOHRR": "BOHRR",
+                        "BLBBY": "OVERFLY BLBBY AT OR ABOVE 3000 HOLD AT BLBBY RIGHT TURN INBOUNDCOURSE 129 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JAKES",
+                    "fixes": {
+                        "JAKES": "JAKES"
+                    }
+                },
+                {
+                    "name": "UNSUN",
+                    "fixes": {
+                        "UNSUN": "UNSUN",
+                        "BLBBY": "OVERFLY BLBBY AT OR ABOVE 3000 HOLD AT BLBBY RIGHT TURN INBOUNDCOURSE 129 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "DERRE": "DERRE AT OR ABOVE 3000",
+                "CADIM": "CADIM 2300",
+                "ECAVU": "ECAVU AT OR ABOVE 1500 RNW 30 TRK 309 UNTIL 1400 TURN RIGHT DIRECT",
+                "UNSUN": "OVERFLY UNSUN AT OR ABOVE 3000 HOLD AT UNSUN RIGHT TURN INBOUNDCOURSE 100 LEGDIST 4 FAF CADIM MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "BOHRR",
+                    "fixes": {
+                        "BOHRR": "BOHRR",
+                        "DERRE": "OVERFLY DERRE AT OR ABOVE 3000 HOLD AT DERRE RIGHT TURN INBOUNDCOURSE 309 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "POSIE",
+                    "fixes": {
+                        "POSIE": "POSIE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR12",
+            "fixes": {
+                "VIO": "VIO 3000 VIO AT OR ABOVE 3000 HOLD AT VIO LEFT TURN INBOUNDCOURSE 142 LEGTIME 1 FAF VIO MAP RNW 12",
+                "JCUBS": "JCUBS AT OR ABOVE 1660 RNW 12 TRK 142 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "VIO",
+                    "fixes": {
+                        "VIO": "VIO LEFT TURN INBOUNDCOURSE 142 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

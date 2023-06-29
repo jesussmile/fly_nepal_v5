@@ -1,0 +1,234 @@
+{
+    "fixes": [
+        {
+            "name": "40DME",
+            "lat": 55.86259166666667,
+            "lon": 14.077088883333333
+        },
+        {
+            "name": "CF19",
+            "lat": 56.08233611666667,
+            "lon": 14.121566666666666
+        },
+        {
+            "name": "CQ01",
+            "lat": 55.746433333333336,
+            "lon": 14.062691666666666
+        },
+        {
+            "name": "D002M",
+            "lat": 56.143425,
+            "lon": 14.134658333333334
+        },
+        {
+            "name": "D179N",
+            "lat": 55.696652783333334,
+            "lon": 14.056547216666667
+        },
+        {
+            "name": "FF19",
+            "lat": 56.031175,
+            "lon": 14.110058333333333
+        },
+        {
+            "name": "FQ01",
+            "lat": 55.802852783333336,
+            "lon": 14.069675
+        },
+        {
+            "name": "KDNB",
+            "lat": 55.87125,
+            "lon": 14.078166666666666
+        },
+        {
+            "name": "MK500",
+            "lat": 56.03088888333333,
+            "lon": 14.11
+        },
+        {
+            "name": "MK510",
+            "lat": 56.113416666666666,
+            "lon": 14.128555566666666
+        },
+        {
+            "name": "MK520",
+            "lat": 56.19591666666667,
+            "lon": 14.147222216666666
+        },
+        {
+            "name": "MK530",
+            "lat": 56.102916666666665,
+            "lon": 14.276194433333334
+        },
+        {
+            "name": "MK560",
+            "lat": 55.711361116666666,
+            "lon": 14.187277783333334
+        },
+        {
+            "name": "MK700",
+            "lat": 55.80430556666666,
+            "lon": 14.059388883333334
+        },
+        {
+            "name": "MK710",
+            "lat": 55.72177778333333,
+            "lon": 14.041111116666666
+        },
+        {
+            "name": "MK720",
+            "lat": 55.63925,
+            "lon": 14.022916666666667
+        },
+        {
+            "name": "MK730",
+            "lat": 55.732055566666666,
+            "lon": 13.894861116666666
+        },
+        {
+            "name": "MK840",
+            "lat": 56.123722216666664,
+            "lon": 13.980833333333333
+        },
+        {
+            "name": "OEMNB",
+            "lat": 55.98975,
+            "lon": 14.100861116666668
+        },
+        {
+            "name": "RW01",
+            "lat": 55.911802783333336,
+            "lon": 14.083325
+        },
+        {
+            "name": "RW19",
+            "lat": 55.93155556666667,
+            "lon": 14.087738883333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS19",
+            "fixes": {
+                "CF19": "CF19 AT OR ABOVE 2500",
+                "FF19": "FF19 2200 RNW 19 TRK 182 UNTIL 2500 TURN RIGHT DIRECT",
+                "OEMNB": "OEMNB 2500 SPEED 205 HOLD AT OEMNB RIGHT TURN INBOUNDCOURSE 182 LEGTIME 1 FAF FF19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "D002M",
+                    "fixes": {
+                        "D002M": "D002M AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB19",
+            "fixes": {
+                "OEMNB": "OEMNB 1350 RNW 19 TRK 182 UNTIL 2500 TURN RIGHT DIRECT OEMNB 2500 SPEED 205 HOLD AT OEMNB RIGHT TURN INBOUNDCOURSE 182 LEGTIME 1 FAF OEMNB MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "OEM1",
+                    "fixes": {
+                        "OEMNB": "OEMNB RIGHT TURN INBOUNDCOURSE 182 ALT 2500 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "OEM2",
+                    "fixes": {
+                        "OEMNB": "OEMNB RIGHT TURN INBOUNDCOURSE 182 ALT 2500 SPEED 230 LEGTIME 2"
+                    }
+                },
+                {
+                    "name": "OEM3",
+                    "fixes": {
+                        "OEMNB": "OEMNB RIGHT TURN INBOUNDCOURSE 182 ALT 2500 SPEED 230 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD01",
+            "fixes": {
+                "CQ01": "CQ01 AT OR ABOVE 2500",
+                "FQ01": "FQ01 2200",
+                "40DME": "40DME AT OR ABOVE 1070 RNW 01 TRK 359 UNTIL 2500 TURN LEFT DIRECT",
+                "KDNB": "KDNB 2500 SPEED 205 HOLD AT KDNB LEFT TURN INBOUNDCOURSE 359 SPEED 230 LEGTIME 1 FAF FQ01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "D179N",
+                    "fixes": {
+                        "D179N": "D179N AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "MK710": "MK710 AT OR ABOVE 2200",
+                "MK700": "MK700 2200 RNW 01",
+                "MK500": "OVERFLY MK500 SPEED 220 TURN LEFT DIRECT",
+                "KDNB": "KDNB AT OR ABOVE 2500 SPEED 220 HOLD AT KDNB LEFT TURN INBOUNDCOURSE 000 ALT 2500 SPEED 230 LEGTIME 1 FAF MK700 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "MK560",
+                    "fixes": {
+                        "MK560": "MK560 AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "MK720",
+                    "fixes": {
+                        "MK720": "MK720 AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "MK730",
+                    "fixes": {
+                        "MK730": "MK730 AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "MK510": "MK510 AT OR ABOVE 2200",
+                "MK500": "MK500 2200 RNW 19",
+                "MK700": "OVERFLY MK700 SPEED 220 TURN RIGHT DIRECT",
+                "OEMNB": "OEMNB AT OR ABOVE 2500 SPEED 220 HOLD AT OEMNB RIGHT TURN INBOUNDCOURSE 183 ALT 2500 SPEED 230 LEGTIME 1 FAF MK500 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "MK520",
+                    "fixes": {
+                        "MK520": "MK520 AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "MK530",
+                    "fixes": {
+                        "MK530": "MK530 AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "MK840",
+                    "fixes": {
+                        "MK840": "MK840 AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,142 @@
+{
+    "fixes": [
+        {
+            "name": "AZ102",
+            "lat": 52.20495556666667,
+            "lon": 13.249769433333334
+        },
+        {
+            "name": "AZ103",
+            "lat": 52.17029721666667,
+            "lon": 13.272291666666666
+        },
+        {
+            "name": "AZ104",
+            "lat": 52.076019433333336,
+            "lon": 13.208161116666666
+        },
+        {
+            "name": "AZ106",
+            "lat": 52.18544443333333,
+            "lon": 13.100625
+        },
+        {
+            "name": "AZ107",
+            "lat": 52.147930566666666,
+            "lon": 13.080572216666667
+        },
+        {
+            "name": "AZ108",
+            "lat": 52.08031388333333,
+            "lon": 13.105872216666667
+        },
+        {
+            "name": "AZ111",
+            "lat": 52.006394433333334,
+            "lon": 13.155630566666666
+        },
+        {
+            "name": "AZ250",
+            "lat": 52.236252783333335,
+            "lon": 13.368205566666667
+        },
+        {
+            "name": "AZ253",
+            "lat": 52.17499166666666,
+            "lon": 13.393788883333333
+        },
+        {
+            "name": "AZ254",
+            "lat": 52.139805566666666,
+            "lon": 13.2755
+        },
+        {
+            "name": "AZ255",
+            "lat": 52.041130566666666,
+            "lon": 13.181916666666666
+        },
+        {
+            "name": "AZ259",
+            "lat": 52.19478888333333,
+            "lon": 13.1016
+        },
+        {
+            "name": "AZ260",
+            "lat": 52.07249443333333,
+            "lon": 13.078347216666666
+        },
+        {
+            "name": "BOLBO",
+            "lat": 51.79472221666666,
+            "lon": 13.151111116666666
+        },
+        {
+            "name": "MOSEX",
+            "lat": 51.91916388333333,
+            "lon": 12.970733333333333
+        },
+        {
+            "name": "TRIBY",
+            "lat": 52.221544433333335,
+            "lon": 13.273611116666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 12",
+        "RNW 25",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "BOLB1A",
+            "rnw": "25",
+            "fixes": {
+                "AZ106": "AZ106 AT OR ABOVE 750",
+                "AZ107": "AZ107 SPEED 170",
+                "AZ108": "AZ108 AT OR BELOW 2000 SPEED 190",
+                "AZ111": "AZ111",
+                "BOLBO": "BOLBO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BOLB1N",
+            "rnw": "07",
+            "fixes": {
+                "AZ102": "AZ102 AT OR ABOVE 900 SPEED 170",
+                "AZ103": "AZ103 SPEED 170",
+                "AZ104": "AZ104 AT OR BELOW 2000 SPEED 210",
+                "AZ111": "AZ111",
+                "BOLBO": "BOLBO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "AZ250": "AZ250 AT OR ABOVE 1700 SPEED 210",
+                "TRIBY": "TRIBY 1700 SPEED 210 RNW 25",
+                "AZ259": "OVERFLY AZ259 SPEED 210 TURN LEFT DIRECT",
+                "AZ260": "AZ260 AT OR BELOW 2000 SPEED 210",
+                "MOSEX": "MOSEX 3000 FAF TRIBY MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "MOSEX",
+                    "fixes": {
+                        "MOSEX": "MOSEX AT OR ABOVE 3000",
+                        "AZ255": "AZ255 AT OR ABOVE 3000",
+                        "AZ254": "AZ254 AT OR ABOVE 2000",
+                        "AZ253": "AZ253 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

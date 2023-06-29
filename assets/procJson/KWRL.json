@@ -1,0 +1,164 @@
+{
+    "fixes": [
+        {
+            "name": "COVGO",
+            "lat": 44.154183333333336,
+            "lon": 107.97580833333333
+        },
+        {
+            "name": "CRANY",
+            "lat": 44.26267778333333,
+            "lon": 108.40763056666667
+        },
+        {
+            "name": "HOLUT",
+            "lat": 43.758119433333334,
+            "lon": 107.92813333333334
+        },
+        {
+            "name": "IKAME",
+            "lat": 43.91421666666667,
+            "lon": 107.94685
+        },
+        {
+            "name": "IKETY",
+            "lat": 44.01334166666667,
+            "lon": 107.96313333333333
+        },
+        {
+            "name": "JITIP",
+            "lat": 43.66582221666667,
+            "lon": 107.368175
+        },
+        {
+            "name": "JUNIV",
+            "lat": 43.82670556666667,
+            "lon": 107.93634443333333
+        },
+        {
+            "name": "PEYIP",
+            "lat": 44.05343611666667,
+            "lon": 107.96362221666666
+        },
+        {
+            "name": "PI001",
+            "lat": 44.02158513333333,
+            "lon": 107.96492563333334
+        },
+        {
+            "name": "PI002",
+            "lat": 44.062662366666665,
+            "lon": 108.04662278333333
+        },
+        {
+            "name": "PI003",
+            "lat": 44.12826643333333,
+            "lon": 107.99115933333333
+        },
+        {
+            "name": "PITOY",
+            "lat": 44.01470833333333,
+            "lon": 107.95895
+        },
+        {
+            "name": "RLY",
+            "lat": 43.964138883333334,
+            "lon": 107.95083888333333
+        },
+        {
+            "name": "WAPSU",
+            "lat": 43.86334166666666,
+            "lon": 107.94073888333334
+        },
+        {
+            "name": "WUKUX",
+            "lat": 43.70884721666667,
+            "lon": 107.6925
+        },
+        {
+            "name": "ZURNA",
+            "lat": 43.68158056666667,
+            "lon": 108.14841388333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 10",
+        "RNW 16",
+        "RNW 22",
+        "RNW 28",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "COVGO": "COVGO AT OR ABOVE 7500",
+                "PEYIP": "PEYIP 5800",
+                "PITOY": "PITOY AT OR ABOVE 5040 RNW 16 TRK 162 UNTIL 4424",
+                "WAPSU": "WAPSU",
+                "ZURNA": "OVERFLY ZURNA AT OR ABOVE 9600 HOLD AT ZURNA RIGHT TURN INBOUNDCOURSE 194 LEGDIST 7 FAF PEYIP MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CRANY",
+                    "fixes": {
+                        "CRANY": "CRANY"
+                    }
+                },
+                {
+                    "name": "RLY",
+                    "fixes": {
+                        "RLY": "RLY",
+                        "COVGO": "OVERFLY COVGO AT OR ABOVE 7500 HOLD AT COVGO RIGHT TURN INBOUNDCOURSE 162 ALT 7500 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "HOLUT": "HOLUT AT OR ABOVE 7000",
+                "JUNIV": "JUNIV AT OR ABOVE 6700",
+                "WAPSU": "WAPSU 6000",
+                "IKAME": "IKAME AT OR ABOVE 5000 RNW 34 TRK 342 UNTIL 4652",
+                "PEYIP": "PEYIP",
+                "CRANY": "OVERFLY CRANY AT OR ABOVE 8500 HOLD AT CRANY RIGHT TURN INBOUNDCOURSE 298 LEGDIST 7 FAF WAPSU MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "JITIP",
+                    "fixes": {
+                        "JITIP": "JITIP",
+                        "WUKUX": "WUKUX AT OR ABOVE 9600"
+                    }
+                },
+                {
+                    "name": "ZURNA",
+                    "fixes": {
+                        "ZURNA": "ZURNA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR16",
+            "fixes": {
+                "IKETY": "IKETY 5040 RNW 16",
+                "RLY": "RLY HOLD AT RLY RIGHT TURN INBOUNDCOURSE 159 ALT 7000 LEGTIME 1 FAF IKETY MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "RLY",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 6000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

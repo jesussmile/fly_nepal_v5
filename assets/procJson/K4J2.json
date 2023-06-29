@@ -1,0 +1,63 @@
+{
+    "fixes": [
+        {
+            "name": "BIDRY",
+            "lat": 31.217366666666667,
+            "lon": 83.32597778333333
+        },
+        {
+            "name": "JUTSU",
+            "lat": 31.203191666666665,
+            "lon": 83.034525
+        },
+        {
+            "name": "SKIMS",
+            "lat": 31.207983333333335,
+            "lon": 83.13153333333334
+        },
+        {
+            "name": "WALPI",
+            "lat": 31.221922216666666,
+            "lon": 83.42184443333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "WALPI": "WALPI AT OR ABOVE 2200 OVERFLY WALPI AT OR ABOVE 2200 HOLD AT WALPI LEFT TURN INBOUNDCOURSE 096 LEGDIST 4 FAF BIDRY MAP RNW 10",
+                "BIDRY": "BIDRY 1800 RNW 10 TRK 096 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WALPI",
+                    "fixes": {
+                        "WALPI": "WALPI LEFT TURN INBOUNDCOURSE 096 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "JUTSU": "JUTSU AT OR ABOVE 2000",
+                "SKIMS": "SKIMS 1700 RNW 28 TRK 276 UNTIL 537",
+                "WALPI": "OVERFLY WALPI AT OR ABOVE 2200 HOLD AT WALPI LEFT TURN INBOUNDCOURSE 096 LEGDIST 4 FAF SKIMS MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "JUTSU",
+                    "fixes": {
+                        "JUTSU": "JUTSU RIGHT TURN INBOUNDCOURSE 276 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

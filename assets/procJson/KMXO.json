@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "ILETY",
+            "lat": 42.30784443333334,
+            "lon": 91.22169166666667
+        },
+        {
+            "name": "OREVY",
+            "lat": 42.41099166666667,
+            "lon": 91.29037778333333
+        },
+        {
+            "name": "PBURG",
+            "lat": 42.03068888333333,
+            "lon": 91.03839443333334
+        },
+        {
+            "name": "TUNUC",
+            "lat": 42.25644166666667,
+            "lon": 91.18756388333334
+        },
+        {
+            "name": "YIXIR",
+            "lat": 42.184280566666665,
+            "lon": 91.13975278333334
+        },
+        {
+            "name": "YOMNG",
+            "lat": 42.133952783333335,
+            "lon": 91.106475
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 15",
+        "RNW 27",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "OREVY": "OREVY AT OR ABOVE 3000",
+                "ILETY": "ILETY 2600",
+                "TUNUC": "TUNUC AT OR ABOVE 1500 RNW 15 TRK 153 UNTIL 1232",
+                "PBURG": "OVERFLY PBURG AT OR ABOVE 3000 HOLD AT PBURG RIGHT TURN INBOUNDCOURSE 333 LEGDIST 4 FAF ILETY MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "OREVY",
+                    "fixes": {
+                        "OREVY": "OREVY RIGHT TURN INBOUNDCOURSE 153 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "PBURG": "PBURG AT OR ABOVE 3000",
+                "YOMNG": "YOMNG 2600",
+                "YIXIR": "YIXIR AT OR ABOVE 1520 RNW 33 TRK 333 UNTIL 1220",
+                "OREVY": "OVERFLY OREVY AT OR ABOVE 3000 HOLD AT OREVY RIGHT TURN INBOUNDCOURSE 153 LEGDIST 4 FAF YOMNG MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "PBURG",
+                    "fixes": {
+                        "PBURG": "PBURG RIGHT TURN INBOUNDCOURSE 333 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,240 @@
+{
+    "fixes": [
+        {
+            "name": "30TAC",
+            "lat": 44.50106111666667,
+            "lon": 1.1918222166666665
+        },
+        {
+            "name": "BC402",
+            "lat": 44.63902778333333,
+            "lon": 1.1141111166666666
+        },
+        {
+            "name": "BC403",
+            "lat": 44.69416666666667,
+            "lon": 0.99725
+        },
+        {
+            "name": "BC406",
+            "lat": 44.457166666666666,
+            "lon": 1.2875277833333334
+        },
+        {
+            "name": "BC407",
+            "lat": 44.558138883333335,
+            "lon": 1.2846944333333332
+        },
+        {
+            "name": "BC408",
+            "lat": 44.50305556666667,
+            "lon": 1.4013611166666666
+        },
+        {
+            "name": "BC411",
+            "lat": 44.601472216666664,
+            "lon": 0.9822500000000001
+        },
+        {
+            "name": "CAA",
+            "lat": 44.531166666666664,
+            "lon": 1.1360277833333332
+        },
+        {
+            "name": "CAANB",
+            "lat": 44.55130556666667,
+            "lon": 1.1199722166666666
+        },
+        {
+            "name": "CI24",
+            "lat": 44.612194433333336,
+            "lon": 0.9594166666666666
+        },
+        {
+            "name": "CT06",
+            "lat": 44.44883333333333,
+            "lon": 1.2883888833333332
+        },
+        {
+            "name": "D041I",
+            "lat": 44.65980556666667,
+            "lon": 0.9877277833333333
+        },
+        {
+            "name": "D046H",
+            "lat": 44.639875,
+            "lon": 0.9914055666666666
+        },
+        {
+            "name": "FC06Z",
+            "lat": 44.47963888333334,
+            "lon": 1.2402222166666665
+        },
+        {
+            "name": "FC24Z",
+            "lat": 44.58802778333333,
+            "lon": 1.0108333333333333
+        },
+        {
+            "name": "FI24",
+            "lat": 44.582194433333335,
+            "lon": 1.0232222166666667
+        },
+        {
+            "name": "FT06",
+            "lat": 44.48294443333333,
+            "lon": 1.2253888833333333
+        },
+        {
+            "name": "IC06Z",
+            "lat": 44.43355556666667,
+            "lon": 1.3371666666666666
+        },
+        {
+            "name": "IC24Z",
+            "lat": 44.62466666666667,
+            "lon": 0.9328611166666666
+        },
+        {
+            "name": "MT06",
+            "lat": 44.52113611666667,
+            "lon": 1.1546305666666667
+        },
+        {
+            "name": "RW24",
+            "lat": 44.539966666666665,
+            "lon": 1.1127555666666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY24",
+            "fixes": {
+                "CI24": "CI24 AT OR ABOVE 1600",
+                "FI24": "FI24 1600 RNW 24 TRK 237 UNTIL 9.2 FROM",
+                "RW24": "RW24 TURN RIGHT DIRECT",
+                "CAA": "CAA 2600 SPEED 220 FAF FI24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "CAA1",
+                    "fixes": {
+                        "CAA": "CAA AT OR ABOVE 2600 TRK 037 UNTIL 10.0 FROM CAA"
+                    }
+                },
+                {
+                    "name": "CAA2",
+                    "fixes": {
+                        "CAA": "CAA AT OR ABOVE 2600 TRK 043 UNTIL 9.0 FROM CAA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ24",
+            "fixes": {
+                "CI24": "CI24 AT OR ABOVE 1600",
+                "FI24": "FI24 1600 RNW 24 TRK 237 UNTIL 9.2 FROM",
+                "RW24": "RW24 TURN RIGHT DIRECT",
+                "CAANB": "CAANB 2600 SPEED 220 FAF FI24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "CAA1",
+                    "fixes": {
+                        "CAANB": "CAANB AT OR ABOVE 2600",
+                        "D041I": "OVERFLY D041I AT OR ABOVE 1600"
+                    }
+                },
+                {
+                    "name": "CAA2",
+                    "fixes": {
+                        "CAANB": "CAANB AT OR ABOVE 2600",
+                        "D046H": "OVERFLY D046H AT OR ABOVE 1600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ06",
+            "fixes": {
+                "IC06Z": "IC06Z 1800",
+                "FC06Z": "FC06Z 1800 RNW 06",
+                "BC411": "OVERFLY BC411 AT OR BELOW 2600 SPEED 185 TURN LEFT DIRECT",
+                "CAA": "CAA 2600 SPEED 220 FAF FC06Z MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "CAA",
+                    "fixes": {
+                        "CAA": "CAA 2600 SPEED 220",
+                        "BC407": "BC407",
+                        "BC408": "BC408 2600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ24",
+            "fixes": {
+                "FC24Z": "FC24Z 1800 RNW 24",
+                "BC406": "OVERFLY BC406 AT OR BELOW 2600 SPEED 185 TURN RIGHT DIRECT",
+                "CAA": "CAA 2600 SPEED 220 FAF FC24Z MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "BC403",
+                    "fixes": {
+                        "BC403": "BC403 2600 SPEED 220",
+                        "IC24Z": "IC24Z 1800 SPEED 185"
+                    }
+                },
+                {
+                    "name": "CAA",
+                    "fixes": {
+                        "CAA": "CAA 2600 SPEED 220",
+                        "BC402": "BC402",
+                        "BC403": "BC403 2600",
+                        "IC24Z": "IC24Z 1800 SPEED 185"
+                    }
+                },
+                {
+                    "name": "IC24Z",
+                    "fixes": {
+                        "IC24Z": "IC24Z 1800 SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR06",
+            "fixes": {
+                "CT06": "CT06 1600",
+                "FT06": "FT06 1600",
+                "30TAC": "30TAC AT OR ABOVE 1020",
+                "MT06": "MT06 386 RNW 06 TRK 053 UNTIL 8.0 FROM",
+                "CAA": "CAA TURN LEFT DIRECT CAA 2600 SPEED 220 FAF FT06 MAP MT06"
+            },
+            "transitions": [
+                {
+                    "name": "CAA1",
+                    "fixes": {
+                        "CAA": "CAA AT OR ABOVE 2600 TRK 257 UNTIL 9.0 FROM CAA"
+                    }
+                },
+                {
+                    "name": "CAA2",
+                    "fixes": {
+                        "CAA": "CAA AT OR ABOVE 2600 TRK 247 UNTIL 9.0 FROM CAA"
+                    }
+                }
+            ]
+        }
+    ]
+}

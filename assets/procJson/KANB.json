@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "BOGGA",
+            "lat": 33.534069433333336,
+            "lon": 85.93098611666667
+        },
+        {
+            "name": "CAMKU",
+            "lat": 33.44944443333333,
+            "lon": 85.58099443333333
+        },
+        {
+            "name": "CANUG",
+            "lat": 33.22344721666666,
+            "lon": 85.711175
+        },
+        {
+            "name": "COLOB",
+            "lat": 33.520355566666666,
+            "lon": 85.94943611666666
+        },
+        {
+            "name": "HILAG",
+            "lat": 33.683988883333335,
+            "lon": 85.72867221666667
+        },
+        {
+            "name": "LINTZ",
+            "lat": 33.38983056666667,
+            "lon": 86.12455
+        },
+        {
+            "name": "NOWOP",
+            "lat": 33.66107778333333,
+            "lon": 85.75966388333333
+        },
+        {
+            "name": "ODOVY",
+            "lat": 33.749513883333336,
+            "lon": 85.63988611666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY05",
+            "fixes": {
+                "LINTZ": "LINTZ AT OR ABOVE 3500 LINTZ HOLD AT LINTZ LEFT TURN INBOUNDCOURSE 052 LEGTIME 1 FAF COLOB MAP RNW 05",
+                "COLOB": "COLOB 2400 RNW 05 TRK 052 UNTIL 1600 TURN RIGHT DIRECT",
+                "CAMKU": "CAMKU AT OR ABOVE 3500",
+                "CANUG": "CANUG"
+            },
+            "transitions": [
+                {
+                    "name": "LINTZ",
+                    "fixes": {
+                        "LINTZ": "LINTZ LEFT TURN INBOUNDCOURSE 052 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ05",
+            "fixes": {
+                "LINTZ": "LINTZ AT OR ABOVE 3400",
+                "COLOB": "COLOB 2400 RNW 05 TRK 052 UNTIL 1600 HDG 110 INTERCEPT RADIAL 260 TO",
+                "BOGGA": "BOGGA TURN RIGHT DIRECT BOGGA AT OR ABOVE 4000 HOLD AT BOGGA LEFT TURN INBOUNDCOURSE 052 LEGTIME 1 FAF COLOB MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "BOGGA",
+                    "fixes": {
+                        "BOGGA": "BOGGA",
+                        "LINTZ": "LINTZ AT OR ABOVE 3500 HOLD AT LINTZ LEFT TURN INBOUNDCOURSE 052 ALT 3400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOCZ05",
+            "fixes": {
+                "LINTZ": "LINTZ AT OR ABOVE 3400",
+                "BOGGA": "BOGGA 2300 RNW 05 TRK 052 UNTIL 1600 HDG 110 INTERCEPT RADIAL 260 TO BOGGA TURN RIGHT DIRECT BOGGA AT OR ABOVE 4000 HOLD AT BOGGA LEFT TURN INBOUNDCOURSE 052 LEGTIME 1 FAF BOGGA MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "BOGGA",
+                    "fixes": {
+                        "BOGGA": "BOGGA",
+                        "LINTZ": "LINTZ AT OR ABOVE 3500 HOLD AT LINTZ LEFT TURN INBOUNDCOURSE 052 ALT 3400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "LINTZ": "LINTZ AT OR ABOVE 3500 OVERFLY LINTZ AT OR ABOVE 3500 HOLD AT LINTZ LEFT TURN INBOUNDCOURSE 052 LEGDIST 4 FAF COLOB MAP RNW 05",
+                "COLOB": "COLOB 2400 RNW 05 TRK 052 UNTIL 1600",
+                "CAMKU": "CAMKU",
+                "CANUG": "CANUG"
+            },
+            "transitions": [
+                {
+                    "name": "LINTZ",
+                    "fixes": {
+                        "LINTZ": "LINTZ LEFT TURN INBOUNDCOURSE 052 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "ODOVY": "ODOVY AT OR ABOVE 3700",
+                "HILAG": "HILAG AT OR ABOVE 3100",
+                "NOWOP": "NOWOP 2800 RNW 23 TRK 233 UNTIL 952",
+                "LINTZ": "OVERFLY LINTZ AT OR ABOVE 3400 HOLD AT LINTZ LEFT TURN INBOUNDCOURSE 052 LEGDIST 4 FAF NOWOP MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "ODOVY",
+                    "fixes": {
+                        "ODOVY": "ODOVY RIGHT TURN INBOUNDCOURSE 233 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

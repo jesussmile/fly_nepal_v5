@@ -1,0 +1,288 @@
+{
+    "fixes": [
+        {
+            "name": "AGREV",
+            "lat": 45.064166666666665,
+            "lon": 4.3174166666666665
+        },
+        {
+            "name": "BANUS",
+            "lat": 45.32961111666667,
+            "lon": 4.47725
+        },
+        {
+            "name": "BELEP",
+            "lat": 45.791666666666664,
+            "lon": 4.131666666666667
+        },
+        {
+            "name": "CN17",
+            "lat": 45.689402783333335,
+            "lon": 4.2771027833333335
+        },
+        {
+            "name": "EBNB",
+            "lat": 45.63794443333333,
+            "lon": 4.283527783333334
+        },
+        {
+            "name": "FH17X",
+            "lat": 45.684083333333334,
+            "lon": 4.27825
+        },
+        {
+            "name": "FH17Y",
+            "lat": 45.68716666666667,
+            "lon": 4.277861116666666
+        },
+        {
+            "name": "FH17Z",
+            "lat": 45.684083333333334,
+            "lon": 4.27825
+        },
+        {
+            "name": "FMH35",
+            "lat": 45.403138883333334,
+            "lon": 4.313861116666667
+        },
+        {
+            "name": "IMH17",
+            "lat": 45.77013888333333,
+            "lon": 4.267277783333333
+        },
+        {
+            "name": "IMH35",
+            "lat": 45.320166666666665,
+            "lon": 4.324305566666666
+        },
+        {
+            "name": "LERGA",
+            "lat": 45.257277783333336,
+            "lon": 3.750166666666667
+        },
+        {
+            "name": "MALAT",
+            "lat": 45.23716666666667,
+            "lon": 4.334722216666667
+        },
+        {
+            "name": "MH17Y",
+            "lat": 45.55846388333333,
+            "lon": 4.294219433333334
+        },
+        {
+            "name": "MH405",
+            "lat": 45.324694433333335,
+            "lon": 4.39725
+        },
+        {
+            "name": "MH509",
+            "lat": 45.52925,
+            "lon": 4.297916666666667
+        },
+        {
+            "name": "MH511",
+            "lat": 45.66158333333333,
+            "lon": 4.135833333333333
+        },
+        {
+            "name": "MH600",
+            "lat": 45.48075,
+            "lon": 4.304055566666666
+        },
+        {
+            "name": "MH700",
+            "lat": 45.601,
+            "lon": 4.28875
+        },
+        {
+            "name": "MN17",
+            "lat": 45.57154443333334,
+            "lon": 4.291797216666667
+        },
+        {
+            "name": "NAKET",
+            "lat": 45.31275,
+            "lon": 4.206666666666667
+        },
+        {
+            "name": "NARIV",
+            "lat": 45.82822221666667,
+            "lon": 4.259888883333334
+        },
+        {
+            "name": "PIMAK",
+            "lat": 45.391666666666666,
+            "lon": 4.014722216666667
+        },
+        {
+            "name": "TIS",
+            "lat": 45.88183333333333,
+            "lon": 3.5535833333333335
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "LERG4N",
+            "rnw": "35",
+            "fixes": {
+                "MH700": "OVERFLY MH700 TURN LEFT DIRECT",
+                "PIMAK": "PIMAK",
+                "LERGA": "LERGA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LERG4S",
+            "rnw": "17",
+            "fixes": {
+                "MH600": "OVERFLY MH600",
+                "PIMAK": "PIMAK",
+                "LERGA": "LERGA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "AGRE7E",
+            "runway": "RNW 17 RNW 35",
+            "fixes": {
+                "AGREV": "AGREV SPEED 225",
+                "MALAT": "MALAT AT OR ABOVE 5700 SPEED 220"
+            }
+        },
+        {
+            "name": "TIS7F",
+            "runway": "RNW 17 RNW 35",
+            "fixes": {
+                "TIS": "TIS",
+                "BELEP": "BELEP AT OR ABOVE 5000 SPEED 220"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB17",
+            "fixes": {
+                "CN17": "CN17 AT OR ABOVE 3200",
+                "EBNB": "EBNB 3000 EBNB 4000 SPEED 170 FAF EBNB MAP MN17",
+                "MN17": "MN17 1783 RNW 17 TRK 174 UNTIL 1783 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EB",
+                    "fixes": {
+                        "EBNB": "EBNB RIGHT TURN INBOUNDCOURSE 174 ALT 3200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVX17",
+            "fixes": {
+                "IMH17": "IMH17 AT OR ABOVE 4000 SPEED 185",
+                "FH17X": "FH17X 4000 RNW 17 TRK 174 UNTIL 1700 TURN RIGHT DIRECT",
+                "MH511": "MH511 AT OR ABOVE 1700 SPEED 170",
+                "BELEP": "BELEP AT OR BELOW 5000 SPEED 220 HOLD AT BELEP LEFT TURN INBOUNDCOURSE 102 ALT 8000 SPEED 170 LEGTIME 1 FAF FH17X MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BELEP",
+                    "fixes": {
+                        "BELEP": "BELEP AT OR ABOVE 4000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "NARIV",
+                    "fixes": {
+                        "NARIV": "NARIV AT OR ABOVE 4000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY17",
+            "fixes": {
+                "IMH17": "IMH17 AT OR ABOVE 4000 SPEED 185",
+                "FH17Y": "FH17Y 4000",
+                "MH17Y": "OVERFLY MH17Y 1532 SPEED 170 RNW 17 TURN RIGHT DIRECT",
+                "MH511": "MH511 SPEED 170",
+                "BELEP": "BELEP AT OR BELOW 5000 SPEED 220 HOLD AT BELEP LEFT TURN INBOUNDCOURSE 102 ALT 8000 SPEED 170 LEGTIME 1 FAF FH17Y MAP MH17Y"
+            },
+            "transitions": [
+                {
+                    "name": "BELEP",
+                    "fixes": {
+                        "BELEP": "BELEP AT OR ABOVE 4000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "NARIV",
+                    "fixes": {
+                        "NARIV": "NARIV AT OR ABOVE 4000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ17",
+            "fixes": {
+                "IMH17": "IMH17 AT OR ABOVE 4000 SPEED 185",
+                "FH17Z": "FH17Z 4000 RNW 17",
+                "MH509": "OVERFLY MH509 SPEED 170 TURN RIGHT DIRECT",
+                "MH511": "MH511 SPEED 170",
+                "BELEP": "BELEP AT OR BELOW 5000 SPEED 220 HOLD AT BELEP LEFT TURN INBOUNDCOURSE 102 ALT 8000 SPEED 170 LEGTIME 1 FAF FH17Z MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BELEP",
+                    "fixes": {
+                        "BELEP": "BELEP AT OR ABOVE 4000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "NARIV",
+                    "fixes": {
+                        "NARIV": "NARIV AT OR ABOVE 4000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "IMH35": "IMH35 AT OR ABOVE 4800 SPEED 200",
+                "FMH35": "FMH35 4500 RNW 35 TURN LEFT DIRECT",
+                "NAKET": "NAKET AT OR BELOW 5600 SPEED 220 HOLD AT NAKET LEFT TURN INBOUNDCOURSE 084 ALT 5600 SPEED 220 LEGTIME 1 FAF FMH35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BANUS",
+                    "fixes": {
+                        "BANUS": "BANUS SPEED 220",
+                        "MH405": "MH405 AT OR ABOVE 5900"
+                    }
+                },
+                {
+                    "name": "MALAT",
+                    "fixes": {
+                        "MALAT": "MALAT SPEED 220"
+                    }
+                },
+                {
+                    "name": "NAKET",
+                    "fixes": {
+                        "NAKET": "NAKET SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

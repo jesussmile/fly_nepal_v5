@@ -1,0 +1,77 @@
+{
+    "fixes": [
+        {
+            "name": "PLN",
+            "lat": 45.63064721666667,
+            "lon": 84.66410833333333
+        },
+        {
+            "name": "UQLIZ",
+            "lat": 45.76091111666667,
+            "lon": 84.42591943333333
+        },
+        {
+            "name": "WETMA",
+            "lat": 45.784363883333334,
+            "lon": 84.77100278333333
+        },
+        {
+            "name": "WEVNU",
+            "lat": 45.74758333333333,
+            "lon": 84.23645
+        },
+        {
+            "name": "YANUN",
+            "lat": 45.774869433333336,
+            "lon": 84.6294
+        },
+        {
+            "name": "ZEPSU",
+            "lat": 45.75747221666666,
+            "lon": 84.3766
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "WETMA": "WETMA AT OR ABOVE 2300",
+                "YANUN": "YANUN 2300 RNW 10 TRK 102 UNTIL 1060",
+                "WEVNU": "OVERFLY WEVNU AT OR ABOVE 4000 HOLD AT WEVNU RIGHT TURN INBOUNDCOURSE 282 LEGDIST 4 FAF YANUN MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PLN": "PLN",
+                        "WETMA": "OVERFLY WETMA AT OR ABOVE 2400 HOLD AT WETMA RIGHT TURN INBOUNDCOURSE 101 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "WEVNU": "WEVNU AT OR ABOVE 2300",
+                "ZEPSU": "ZEPSU 2300",
+                "UQLIZ": "UQLIZ AT OR ABOVE 1620 RNW 28 TRK 282 UNTIL 1040",
+                "PLN": "OVERFLY PLN AT OR ABOVE 3000 HOLD AT PLN RIGHT TURN INBOUNDCOURSE 075 LEGDIST 4 FAF ZEPSU MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PLN": "PLN",
+                        "WEVNU": "OVERFLY WEVNU AT OR ABOVE 2400 HOLD AT WEVNU RIGHT TURN INBOUNDCOURSE 282 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

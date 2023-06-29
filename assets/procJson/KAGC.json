@@ -1,0 +1,186 @@
+{
+    "fixes": [
+        {
+            "name": "AGC",
+            "lat": 40.27864443333333,
+            "lon": 80.04085556666666
+        },
+        {
+            "name": "GUGTE",
+            "lat": 40.34876388333333,
+            "lon": 79.69771388333334
+        },
+        {
+            "name": "HOMEE",
+            "lat": 40.510188883333335,
+            "lon": 79.403525
+        },
+        {
+            "name": "HULDO",
+            "lat": 40.35244721666667,
+            "lon": 79.83573333333334
+        },
+        {
+            "name": "HYETO",
+            "lat": 40.35365,
+            "lon": 80.19943611666666
+        },
+        {
+            "name": "KATKE",
+            "lat": 40.354177783333334,
+            "lon": 79.57986388333333
+        },
+        {
+            "name": "LENLE",
+            "lat": 40.354377783333334,
+            "lon": 79.80324443333333
+        },
+        {
+            "name": "MESIE",
+            "lat": 40.35414443333333,
+            "lon": 80.02678056666667
+        },
+        {
+            "name": "MILKE",
+            "lat": 40.35431388333333,
+            "lon": 79.67243888333333
+        },
+        {
+            "name": "MILWO",
+            "lat": 40.300891666666665,
+            "lon": 79.38580278333333
+        },
+        {
+            "name": "NESTO",
+            "lat": 40.19445833333333,
+            "lon": 79.71374721666666
+        },
+        {
+            "name": "SHANS",
+            "lat": 40.354069433333336,
+            "lon": 80.05768611666667
+        },
+        {
+            "name": "WISKE",
+            "lat": 40.129136116666665,
+            "lon": 80.67609443333333
+        },
+        {
+            "name": "WOLES",
+            "lat": 40.35419721666667,
+            "lon": 79.99570833333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 13",
+        "RNW 28",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "AGC9",
+            "rnw": "15",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 10",
+                    "fixes": {
+                        "RNW 10": "RNW 10 HDG 099 UNTIL 1700 HDG 099 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 13",
+                    "fixes": {
+                        "RNW 13": "RNW 13 HDG 129 UNTIL 1700 HDG 129 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 28",
+                    "fixes": {
+                        "RNW 28": "RNW 28 HDG 279 UNTIL 1700 HDG 279 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 31",
+                    "fixes": {
+                        "RNW 31": "RNW 31 HDG 309 UNTIL 1700 HDG 309 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS10",
+            "fixes": {
+                "HYETO": "HYETO AT OR ABOVE 3000",
+                "SHANS": "SHANS 3000 RNW 10 TRK 099 UNTIL 2000 TURN RIGHT DIRECT",
+                "AGC": "AGC AT OR ABOVE 3000 HOLD AT AGC RIGHT TURN INBOUNDCOURSE 057 ALT 3000 LEGTIME 1 FAF SHANS MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "AGC",
+                    "fixes": {
+                        "AGC": "AGC",
+                        "HYETO": "HYETO AT OR ABOVE 3000 HOLD AT HYETO RIGHT TURN INBOUNDCOURSE 099 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS28",
+            "fixes": {
+                "GUGTE": "GUGTE AT OR ABOVE 3000",
+                "HULDO": "HULDO 2500 RNW 28 TRK 281 UNTIL 2000",
+                "AGC": "AGC AT OR ABOVE 3000 HOLD AT AGC RIGHT TURN INBOUNDCOURSE 056 ALT 3000 LEGTIME 1 FAF HULDO MAP RNW 28"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "HYETO": "HYETO AT OR ABOVE 3000",
+                "SHANS": "SHANS 3000",
+                "WOLES": "WOLES AT OR ABOVE 2080 RNW 10 TRK 099 UNTIL 1451",
+                "LENLE": "LENLE",
+                "NESTO": "OVERFLY NESTO AT OR ABOVE 3100 HOLD AT NESTO RIGHT TURN INBOUNDCOURSE 318 LEGDIST 4 FAF SHANS MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "WISKE",
+                    "fixes": {
+                        "WISKE": "WISKE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "MILKE": "MILKE AT OR ABOVE 3000",
+                "LENLE": "LENLE 3000 RNW 28 TRK 279 UNTIL 1563",
+                "MESIE": "MESIE",
+                "AGC": "OVERFLY AGC AT OR ABOVE 3000 HOLD AT AGC RIGHT TURN INBOUNDCOURSE 327 ALT 3000 LEGDIST 6 FAF LENLE MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "HOMEE",
+                    "fixes": {
+                        "HOMEE": "HOMEE",
+                        "KATKE": "KATKE AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "MILWO",
+                    "fixes": {
+                        "MILWO": "MILWO",
+                        "KATKE": "KATKE AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

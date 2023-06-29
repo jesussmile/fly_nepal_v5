@@ -1,0 +1,93 @@
+{
+    "fixes": [
+        {
+            "name": "CHAZY",
+            "lat": 65.89865,
+            "lon": 153.14808611666666
+        },
+        {
+            "name": "CLYDD",
+            "lat": 65.95230278333334,
+            "lon": 153.09883611666666
+        },
+        {
+            "name": "DARTN",
+            "lat": 66.00886943333333,
+            "lon": 153.48773888333332
+        },
+        {
+            "name": "ELCON",
+            "lat": 65.33388333333333,
+            "lon": 153.30632221666667
+        },
+        {
+            "name": "FATUR",
+            "lat": 66.02936943333333,
+            "lon": 153.20648056666667
+        },
+        {
+            "name": "FF24",
+            "lat": 65.99751943333334,
+            "lon": 153.28596943333332
+        },
+        {
+            "name": "FODUV",
+            "lat": 66.16025,
+            "lon": 153.26293611666668
+        },
+        {
+            "name": "UTONB",
+            "lat": 65.99516111666667,
+            "lon": 153.69375833333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "CLYDD3",
+            "rnw": "06",
+            "fixes": {
+                "CLYDD": "CLYDD",
+                "ELCON": "ELCON"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FF24": "FF24 5100",
+                "UTONB": "UTONB 965 RNW 24 TRK 252 UNTIL 5000 TURN LEFT DIRECT UTONB AT OR ABOVE 6600 HOLD AT UTONB RIGHT TURN INBOUNDCOURSE 252 ALT 8000 SPEED 310 LEGTIME 1 FAF FF24 MAP UTO"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "FATUR": "FATUR AT OR ABOVE 4500",
+                "DARTN": "DARTN 2800 RNW 24 TRK 243 UNTIL 1661 TURN LEFT DIRECT",
+                "CHAZY": "OVERFLY CHAZY 7000 HOLD AT CHAZY RIGHT TURN INBOUNDCOURSE 095 ALT 7000 LEGDIST 4 FAF DARTN MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "CHAZY",
+                    "fixes": {
+                        "CHAZY": "CHAZY AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "FODUV",
+                    "fixes": {
+                        "FODUV": "FODUV AT OR ABOVE 7000"
+                    }
+                }
+            ]
+        }
+    ]
+}

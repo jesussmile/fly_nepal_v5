@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "UHIHI",
+            "lat": 35.32586666666667,
+            "lon": 90.82348056666666
+        },
+        {
+            "name": "USUDY",
+            "lat": 34.91371388333334,
+            "lon": 90.829475
+        },
+        {
+            "name": "WUGAB",
+            "lat": 35.17366666666667,
+            "lon": 90.82571388333334
+        },
+        {
+            "name": "YAGUK",
+            "lat": 35.222377783333336,
+            "lon": 90.825
+        },
+        {
+            "name": "ZIKJE",
+            "lat": 35.017208333333336,
+            "lon": 90.82798333333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "UHIHI": "UHIHI AT OR ABOVE 3000",
+                "YAGUK": "YAGUK 2100",
+                "WUGAB": "WUGAB AT OR ABOVE 1160 RNW 18 TRK 182 UNTIL 560",
+                "USUDY": "OVERFLY USUDY AT OR ABOVE 3000 HOLD AT USUDY RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF YAGUK MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "UHIHI",
+                    "fixes": {
+                        "UHIHI": "UHIHI RIGHT TURN INBOUNDCOURSE 182 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "USUDY": "USUDY AT OR ABOVE 3000",
+                "ZIKJE": "ZIKJE 2100 RNW 36 TRK 002 UNTIL 550",
+                "UHIHI": "OVERFLY UHIHI AT OR ABOVE 3000 HOLD AT UHIHI RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4 FAF ZIKJE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "USUDY",
+                    "fixes": {
+                        "USUDY": "USUDY RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

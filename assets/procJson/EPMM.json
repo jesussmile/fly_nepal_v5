@@ -1,0 +1,154 @@
+{
+    "fixes": [
+        {
+            "name": "CI26",
+            "lat": 52.19465278333333,
+            "lon": 21.885430566666667
+        },
+        {
+            "name": "CT26",
+            "lat": 52.20363888333333,
+            "lon": 21.963111116666667
+        },
+        {
+            "name": "D008M",
+            "lat": 52.404355566666666,
+            "lon": 21.750969433333335
+        },
+        {
+            "name": "D008T",
+            "lat": 52.51827778333333,
+            "lon": 21.791277783333335
+        },
+        {
+            "name": "D084O",
+            "lat": 52.1935,
+            "lon": 22.071638883333332
+        },
+        {
+            "name": "FI26",
+            "lat": 52.194888883333334,
+            "lon": 21.831388883333332
+        },
+        {
+            "name": "FN26",
+            "lat": 52.19536111666667,
+            "lon": 21.831188883333333
+        },
+        {
+            "name": "FT08",
+            "lat": 52.19833333333333,
+            "lon": 21.475833333333334
+        },
+        {
+            "name": "FT26",
+            "lat": 52.2,
+            "lon": 21.838611116666666
+        },
+        {
+            "name": "MT08",
+            "lat": 52.19552778333333,
+            "lon": 21.614027783333334
+        },
+        {
+            "name": "MT26",
+            "lat": 52.19527778333333,
+            "lon": 21.692527783333333
+        },
+        {
+            "name": "NF",
+            "lat": 52.19541666666667,
+            "lon": 21.691833333333335
+        },
+        {
+            "name": "RW26",
+            "lat": 52.195508333333336,
+            "lon": 21.674174999999998
+        },
+        {
+            "name": "TMM",
+            "lat": 52.19444443333333,
+            "lon": 21.66552778333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY26",
+            "fixes": {
+                "CI26": "CI26 AT OR ABOVE 2500",
+                "FI26": "FI26 2500 RNW 26 TRK 264 UNTIL 1500 TURN RIGHT DIRECT",
+                "D084O": "D084O 4000 SPEED 240 FAF FI26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "D084O",
+                    "fixes": {
+                        "D084O": "D084O AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ26",
+            "fixes": {
+                "CI26": "CI26 AT OR ABOVE 2500",
+                "FI26": "FI26 2500 RNW 26 TRK 264 UNTIL 1500 TURN RIGHT DIRECT",
+                "NF": "NF 4000 SPEED 240 FAF FI26 MAP RNW 26"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FN26": "FN26 2500",
+                "NF": "NF 861 RNW 26 TRK 264 UNTIL 1500 TURN RIGHT DIRECT NF 4000 SPEED 240 FAF FN26 MAP NF"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VOR08",
+            "fixes": {
+                "FT08": "FT08 2500",
+                "MT08": "MT08 889 RNW 08",
+                "TMM": "OVERFLY TMM TRK 086 UNTIL 1500 TURN LEFT DIRECT TMM 4000 FAF FT08 MAP MT08"
+            },
+            "transitions": [
+                {
+                    "name": "TMM1",
+                    "fixes": {
+                        "TMM": "TMM AT OR ABOVE 4000 TRK 290 UNTIL 8.0 FROM TMM"
+                    }
+                },
+                {
+                    "name": "TMM2",
+                    "fixes": {
+                        "TMM": "TMM AT OR ABOVE 4000 TRK 281 UNTIL 8.0 FROM TMM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26",
+            "fixes": {
+                "CT26": "CT26 AT OR ABOVE 2600",
+                "FT26": "FT26 2600",
+                "MT26": "MT26 870 RNW 26 TRK 261 UNTIL 1500 HDG 081 VECTORS FAF FT26 MAP MT26"
+            },
+            "transitions": [
+                {
+                    "name": "D008T",
+                    "fixes": {
+                        "D008T": "D008T",
+                        "D008M": "OVERFLY D008M"
+                    }
+                }
+            ]
+        }
+    ]
+}

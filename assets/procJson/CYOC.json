@@ -1,0 +1,155 @@
+{
+    "fixes": [
+        {
+            "name": "APKUL",
+            "lat": 67.65467778333333,
+            "lon": 139.42107778333335
+        },
+        {
+            "name": "APLAD",
+            "lat": 67.53423888333333,
+            "lon": 140.01494443333334
+        },
+        {
+            "name": "BESOX",
+            "lat": 67.47899721666667,
+            "lon": 140.28201111666667
+        },
+        {
+            "name": "ENAMI",
+            "lat": 67.63029166666666,
+            "lon": 139.54236388333334
+        },
+        {
+            "name": "FF22",
+            "lat": 67.61483888333333,
+            "lon": 139.51123611666668
+        },
+        {
+            "name": "OBMUV",
+            "lat": 67.58115278333334,
+            "lon": 139.31989166666668
+        },
+        {
+            "name": "PI001",
+            "lat": 67.59127926666666,
+            "lon": 139.70106541666667
+        },
+        {
+            "name": "PI002",
+            "lat": 67.56090246666666,
+            "lon": 139.53090053333332
+        },
+        {
+            "name": "PI003",
+            "lat": 67.62787511666667,
+            "lon": 139.43338141666666
+        },
+        {
+            "name": "PIDGU",
+            "lat": 67.55193333333334,
+            "lon": 140.38565278333334
+        },
+        {
+            "name": "PUXAB",
+            "lat": 67.60816111666666,
+            "lon": 139.65236666666667
+        },
+        {
+            "name": "SUVBO",
+            "lat": 67.72813888333333,
+            "lon": 139.52289443333333
+        },
+        {
+            "name": "TUGUD",
+            "lat": 67.47059721666666,
+            "lon": 140.32186111666667
+        },
+        {
+            "name": "UDKEK",
+            "lat": 67.40599721666666,
+            "lon": 140.17900278333335
+        },
+        {
+            "name": "VIRNO",
+            "lat": 67.55156943333333,
+            "lon": 139.93045556666667
+        },
+        {
+            "name": "YOCNB",
+            "lat": 67.57139166666667,
+            "lon": 139.84485833333332
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FF22": "FF22 3300 RNW 22",
+                "YOCNB": "OVERFLY YOCNB TRK 231 UNTIL 1220 HDG 151 UNTIL 4400 TURN LEFT DIRECT YOCNB 4400 HOLD AT YOCNB LEFT TURN INBOUNDCOURSE 231 SPEED 200 LEGTIME 1 FAF FF22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "YOC",
+                    "fixes": {
+                        "YOCNB": "YOCNB AT OR ABOVE 3800",
+                        "PI001": "PI001 AT OR ABOVE 3300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "BESOX": "BESOX AT OR ABOVE 3200",
+                "APLAD": "APLAD 2200",
+                "VIRNO": "VIRNO AT OR ABOVE 1500 RNW 04",
+                "ENAMI": "OVERFLY ENAMI 5500 HOLD AT ENAMI RIGHT TURN INBOUNDCOURSE 043 LEGTIME 1 FAF APLAD MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "PIDGU",
+                    "fixes": {
+                        "PIDGU": "PIDGU SPEED 210"
+                    }
+                },
+                {
+                    "name": "UDKEK",
+                    "fixes": {
+                        "UDKEK": "UDKEK SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "APKUL": "APKUL AT OR ABOVE 3300",
+                "PUXAB": "PUXAB 2300 RNW 22",
+                "TUGUD": "OVERFLY TUGUD 5500 HOLD AT TUGUD LEFT TURN INBOUNDCOURSE 223 LEGTIME 1 FAF PUXAB MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "OBMUV",
+                    "fixes": {
+                        "OBMUV": "OBMUV SPEED 210"
+                    }
+                },
+                {
+                    "name": "SUVBO",
+                    "fixes": {
+                        "SUVBO": "SUVBO SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

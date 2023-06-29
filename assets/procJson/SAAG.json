@@ -1,0 +1,57 @@
+{
+    "fixes": [
+        {
+            "name": "FF01",
+            "lat": 33.134963883333334,
+            "lon": 58.61416666666667
+        },
+        {
+            "name": "FF19",
+            "lat": 32.876308333333334,
+            "lon": 58.60588056666667
+        },
+        {
+            "name": "GUA",
+            "lat": 33.00972221666667,
+            "lon": 58.61416666666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD01",
+            "fixes": {
+                "FF01": "FF01 2500",
+                "GUA": "GUA 90 RNW 01 TRK 009 UNTIL 3000 FAF FF01 MAP GUA"
+            },
+            "transitions": [
+                {
+                    "name": "GUA",
+                    "fixes": {
+                        "GUA": "GUA TRK 173 UNTIL 7.5 FROM GUA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD19",
+            "fixes": {
+                "FF19": "FF19 2500 RNW 19",
+                "GUA": "OVERFLY GUA TRK 192 UNTIL 3000 FAF FF19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "GUA",
+                    "fixes": {
+                        "GUA": "GUA TRK 028 UNTIL 8.0 FROM GUA"
+                    }
+                }
+            ]
+        }
+    ]
+}

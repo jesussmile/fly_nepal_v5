@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "FEPAP",
+            "lat": 43.300688883333336,
+            "lon": 97.93758888333333
+        },
+        {
+            "name": "FIROX",
+            "lat": 43.45414443333333,
+            "lon": 98.042
+        },
+        {
+            "name": "ICABI",
+            "lat": 43.253497216666666,
+            "lon": 97.90560278333334
+        },
+        {
+            "name": "IVULE",
+            "lat": 43.501252783333335,
+            "lon": 98.074175
+        },
+        {
+            "name": "SOVHE",
+            "lat": 43.346105566666665,
+            "lon": 97.968425
+        },
+        {
+            "name": "SUSOJ",
+            "lat": 43.40870833333334,
+            "lon": 98.01101943333333
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "IVULE": "IVULE AT OR ABOVE 3300",
+                "FIROX": "FIROX 3000",
+                "SUSOJ": "SUSOJ AT OR ABOVE 2020 RNW 15 TRK 150 UNTIL 1818",
+                "ICABI": "OVERFLY ICABI AT OR ABOVE 3300 HOLD AT ICABI RIGHT TURN INBOUNDCOURSE 330 LEGDIST 4 FAF FIROX MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "IVULE",
+                    "fixes": {
+                        "IVULE": "IVULE RIGHT TURN INBOUNDCOURSE 150 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ICABI": "ICABI AT OR ABOVE 3300",
+                "FEPAP": "FEPAP 3000",
+                "SOVHE": "SOVHE AT OR ABOVE 2020 RNW 33 TRK 330 UNTIL 1740",
+                "IVULE": "OVERFLY IVULE AT OR ABOVE 3300 HOLD AT IVULE RIGHT TURN INBOUNDCOURSE 150 LEGDIST 4 FAF FEPAP MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "ICABI",
+                    "fixes": {
+                        "ICABI": "ICABI RIGHT TURN INBOUNDCOURSE 330 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

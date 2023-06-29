@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "D233F",
+            "lat": 46.901730566666664,
+            "lon": 3.0817916666666667
+        },
+        {
+            "name": "FQG30",
+            "lat": 46.96569443333333,
+            "lon": 3.19975
+        },
+        {
+            "name": "IQG30",
+            "lat": 46.92197221666667,
+            "lon": 3.301694433333333
+        },
+        {
+            "name": "MN30",
+            "lat": 46.994497216666666,
+            "lon": 3.1331277833333333
+        },
+        {
+            "name": "NVNB",
+            "lat": 46.955638883333336,
+            "lon": 3.1899444333333333
+        },
+        {
+            "name": "QG403",
+            "lat": 46.85130556666667,
+            "lon": 3.2373333333333334
+        },
+        {
+            "name": "QG411",
+            "lat": 47.01825,
+            "lon": 3.076777783333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB30",
+            "fixes": {
+                "NVNB": "NVNB 2100 NVNB FAF NVNB MAP MN30",
+                "MN30": "MN30 887 RNW 30 TRK 314 UNTIL 1010 TURN LEFT DIRECT",
+                "D233F": "OVERFLY D233F 2100 SPEED 190 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NV",
+                    "fixes": {
+                        "NVNB": "NVNB LEFT TURN INBOUNDCOURSE 314 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "FQG30": "FQG30 2100 RNW 30",
+                "QG411": "OVERFLY QG411 SPEED 150 TURN LEFT DIRECT",
+                "QG403": "QG403 2700 FAF FQG30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "IQG30",
+                    "fixes": {
+                        "IQG30": "IQG30 AT OR ABOVE 2700 SPEED 220"
+                    }
+                },
+                {
+                    "name": "QG403",
+                    "fixes": {
+                        "QG403": "QG403 AT OR ABOVE 2700 SPEED 220",
+                        "IQG30": "IQG30 AT OR ABOVE 2700 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

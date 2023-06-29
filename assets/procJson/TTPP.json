@@ -1,0 +1,155 @@
+{
+    "fixes": [
+        {
+            "name": "015AT",
+            "lat": 10.6461,
+            "lon": 61.15353056666667
+        },
+        {
+            "name": "3NM",
+            "lat": 10.644991666666666,
+            "lon": 61.522736116666664
+        },
+        {
+            "name": "ANELU",
+            "lat": 10.594380566666667,
+            "lon": 61.624119433333334
+        },
+        {
+            "name": "BOSAT",
+            "lat": 10.595869433333334,
+            "lon": 61.15337778333333
+        },
+        {
+            "name": "CURRY",
+            "lat": 10.632222216666667,
+            "lon": 61.685833333333335
+        },
+        {
+            "name": "DANON",
+            "lat": 10.595652783333334,
+            "lon": 61.237994433333334
+        },
+        {
+            "name": "IMIRA",
+            "lat": 10.494302783333334,
+            "lon": 61.522269433333335
+        },
+        {
+            "name": "KIVIP",
+            "lat": 10.696327783333333,
+            "lon": 61.153680566666665
+        },
+        {
+            "name": "LEXOR",
+            "lat": 10.594761116666668,
+            "lon": 61.52258056666667
+        },
+        {
+            "name": "MUTAM",
+            "lat": 10.495411116666666,
+            "lon": 61.153075
+        },
+        {
+            "name": "NAPKO",
+            "lat": 10.695219433333333,
+            "lon": 61.522894433333335
+        },
+        {
+            "name": "POS",
+            "lat": 10.466388883333334,
+            "lon": 61.39236111666666
+        },
+        {
+            "name": "SHARK",
+            "lat": 10.590555566666668,
+            "lon": 61.6125
+        },
+        {
+            "name": "TALUS",
+            "lat": 10.595052783333333,
+            "lon": 61.43796388333333
+        },
+        {
+            "name": "TRINB",
+            "lat": 10.595125,
+            "lon": 61.42231388333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS10",
+            "fixes": {
+                "SHARK": "SHARK AT OR ABOVE 4100",
+                "TRINB": "TRINB 1400 RNW 10 TRK 105 UNTIL 2200 TURN RIGHT DIRECT",
+                "POS": "POS AT OR ABOVE 4100 HOLD AT POS LEFT TURN INBOUNDCOURSE 292 ALT 4100 LEGTIME 1 FAF TRINB MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "CURRY",
+                    "fixes": {
+                        "CURRY": "CURRY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "LEXOR": "LEXOR AT OR ABOVE 2500",
+                "TALUS": "TALUS 1700 RNW 10 TRK 105 UNTIL 1500 TURN RIGHT DIRECT",
+                "IMIRA": "IMIRA AT OR ABOVE 4100 HOLD AT IMIRA LEFT TURN INBOUNDCOURSE 015 ALT 4100 LEGTIME 1 FAF TALUS MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "ANELU",
+                    "fixes": {
+                        "ANELU": "ANELU AT OR ABOVE 4100"
+                    }
+                },
+                {
+                    "name": "IMIRA",
+                    "fixes": {
+                        "IMIRA": "IMIRA AT OR ABOVE 4100"
+                    }
+                },
+                {
+                    "name": "NAPKO",
+                    "fixes": {
+                        "NAPKO": "NAPKO AT OR ABOVE 4100",
+                        "3NM": "3NM AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "BOSAT": "BOSAT AT OR ABOVE 2500",
+                "DANON": "DANON 1700 RNW 28 TRK 285 UNTIL 1000 TURN LEFT DIRECT",
+                "MUTAM": "MUTAM AT OR ABOVE 4100 HOLD AT MUTAM RIGHT TURN INBOUNDCOURSE 015 ALT 4100 LEGTIME 1 FAF DANON MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "KIVIP",
+                    "fixes": {
+                        "KIVIP": "KIVIP AT OR ABOVE 4100",
+                        "015AT": "015AT AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "MUTAM",
+                    "fixes": {
+                        "MUTAM": "MUTAM AT OR ABOVE 4100"
+                    }
+                }
+            ]
+        }
+    ]
+}

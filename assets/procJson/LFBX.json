@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "BX290",
+            "lat": 45.21791666666667,
+            "lon": 0.7490555666666666
+        },
+        {
+            "name": "BX291",
+            "lat": 45.18025,
+            "lon": 1.0910833333333334
+        },
+        {
+            "name": "BX292",
+            "lat": 45.078611116666664,
+            "lon": 1.1163611166666667
+        },
+        {
+            "name": "BX293",
+            "lat": 45.22625,
+            "lon": 1.0228611166666666
+        },
+        {
+            "name": "CN29",
+            "lat": 45.152738883333335,
+            "lon": 0.9558083333333334
+        },
+        {
+            "name": "FBX29",
+            "lat": 45.158861116666664,
+            "lon": 0.9398333333333333
+        },
+        {
+            "name": "IBX29",
+            "lat": 45.132027783333335,
+            "lon": 1.0260555666666666
+        },
+        {
+            "name": "MN29",
+            "lat": 45.18533333333333,
+            "lon": 0.8522833333333334
+        },
+        {
+            "name": "PXNB",
+            "lat": 45.166305566666665,
+            "lon": 0.9127777833333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB29",
+            "fixes": {
+                "CN29": "CN29 AT OR ABOVE 2300",
+                "PXNB": "PXNB 1850 PXNB 2300 SPEED 220 FAF PXNB MAP MN29",
+                "MN29": "MN29 841 RNW 29 TRK 294 UNTIL 1300 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PX",
+                    "fixes": {
+                        "PXNB": "PXNB RIGHT TURN INBOUNDCOURSE 294 ALT 2300 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "IBX29": "IBX29 2300 SPEED 185",
+                "FBX29": "FBX29 2300 RNW 29",
+                "BX290": "OVERFLY BX290 AT OR BELOW 2300 SPEED 185 TURN RIGHT DIRECT",
+                "BX293": "BX293 2300 SPEED 185",
+                "BX291": "BX291 2300 SPEED 185 FAF FBX29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "BX291",
+                    "fixes": {
+                        "BX291": "BX291 AT OR BELOW 3500 SPEED 185"
+                    }
+                },
+                {
+                    "name": "BX292",
+                    "fixes": {
+                        "BX292": "BX292 AT OR BELOW 4000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "PX",
+                    "fixes": {
+                        "PXNB": "PXNB AT OR BELOW 5000 SPEED 220 TURN RIGHT DIRECT",
+                        "BX293": "BX293 2300 SPEED 220",
+                        "BX291": "BX291 2300 SPEED 185"
+                    }
+                }
+            ]
+        }
+    ]
+}

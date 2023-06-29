@@ -1,0 +1,285 @@
+{
+    "fixes": [
+        {
+            "name": "CD11",
+            "lat": 37.097630566666666,
+            "lon": 79.69704443333333
+        },
+        {
+            "name": "CD29",
+            "lat": 36.99651943333333,
+            "lon": 80.04232778333333
+        },
+        {
+            "name": "CI29",
+            "lat": 36.98653611666667,
+            "lon": 80.039425
+        },
+        {
+            "name": "CQ29Y",
+            "lat": 36.985827783333335,
+            "lon": 80.04353056666666
+        },
+        {
+            "name": "CQ29Z",
+            "lat": 36.987261116666666,
+            "lon": 80.03864721666666
+        },
+        {
+            "name": "D073P",
+            "lat": 37.09388333333333,
+            "lon": 80.20138333333334
+        },
+        {
+            "name": "D074P",
+            "lat": 37.108055566666664,
+            "lon": 80.18941943333333
+        },
+        {
+            "name": "FD11",
+            "lat": 37.071919433333335,
+            "lon": 79.7694
+        },
+        {
+            "name": "FD29",
+            "lat": 37.015008333333334,
+            "lon": 79.96235278333333
+        },
+        {
+            "name": "FI29",
+            "lat": 36.99873611666666,
+            "lon": 79.99824721666667
+        },
+        {
+            "name": "FQ29Y",
+            "lat": 37.009872216666665,
+            "lon": 79.96145
+        },
+        {
+            "name": "FQ29Z",
+            "lat": 37.01015833333334,
+            "lon": 79.96047221666667
+        },
+        {
+            "name": "HTN",
+            "lat": 37.03666666666667,
+            "lon": 79.86833333333334
+        },
+        {
+            "name": "HTN28",
+            "lat": 37.158861116666664,
+            "lon": 80.43136111666666
+        },
+        {
+            "name": "IRB",
+            "lat": 37.033433333333335,
+            "lon": 79.87684443333333
+        },
+        {
+            "name": "IRB30",
+            "lat": 37.156666666666666,
+            "lon": 80.485
+        },
+        {
+            "name": "MD11",
+            "lat": 37.05159166666667,
+            "lon": 79.82648611666667
+        },
+        {
+            "name": "MD29",
+            "lat": 37.03114166666667,
+            "lon": 79.89234166666667
+        },
+        {
+            "name": "R",
+            "lat": 37.028841666666665,
+            "lon": 79.89653056666667
+        },
+        {
+            "name": "TEPUT",
+            "lat": 38.01555556666667,
+            "lon": 84.86277778333333
+        },
+        {
+            "name": "TN632",
+            "lat": 37.15777778333333,
+            "lon": 80.43222221666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "TEP01D",
+            "rnw": "11",
+            "fixes": {
+                "TEPUT": "TEPUT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TEP09D",
+            "rnw": "11",
+            "fixes": {
+                "TN632": "TN632 AT OR ABOVE 9850",
+                "TEPUT": "TEPUT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TEP11D",
+            "rnw": "29",
+            "fixes": {
+                "HTN": "HTN",
+                "TEPUT": "TEPUT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TEP12D",
+            "rnw": "29",
+            "fixes": {
+                "R": "R",
+                "IRB30": "IRB30",
+                "TEPUT": "TEPUT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TEP19D",
+            "rnw": "29",
+            "fixes": {
+                "TN632": "TN632 AT OR ABOVE 9850",
+                "TEPUT": "TEPUT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "TEP01A",
+            "runway": "RNW 11",
+            "fixes": {
+                "TEPUT": "TEPUT",
+                "D074P": "D074P AT OR ABOVE 11570",
+                "HTN": "HTN AT OR ABOVE 7570 SPEED 205"
+            }
+        },
+        {
+            "name": "TEP11A",
+            "runway": "RNW 29",
+            "fixes": {
+                "TEPUT": "TEPUT",
+                "HTN28": "HTN28 AT OR ABOVE 11570",
+                "D074P": "D074P AT OR ABOVE 8610 SPEED 205"
+            }
+        },
+        {
+            "name": "TEP12A",
+            "runway": "RNW 29",
+            "fixes": {
+                "TEPUT": "TEPUT",
+                "IRB30": "IRB30 AT OR ABOVE 11570",
+                "D073P": "D073P AT OR ABOVE 8610 SPEED 205"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD11",
+            "fixes": {
+                "CD11": "CD11 AT OR ABOVE 6590",
+                "FD11": "FD11 5930",
+                "MD11": "MD11 5013 RNW 11",
+                "HTN": "OVERFLY HTN AT OR ABOVE 5600 TURN LEFT DIRECT HTN 7570 FAF FD11 MAP MD11"
+            },
+            "transitions": [
+                {
+                    "name": "HTN1",
+                    "fixes": {
+                        "HTN": "HTN AT OR ABOVE 7570 SPEED 205 TRK 317 UNTIL 9.0 FROM HTN"
+                    }
+                },
+                {
+                    "name": "HTN2",
+                    "fixes": {
+                        "HTN": "HTN AT OR ABOVE 7570 SPEED 205 TRK 304 UNTIL 9.0 FROM HTN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD29",
+            "fixes": {
+                "CD29": "CD29 AT OR ABOVE 6640",
+                "FD29": "FD29 5990",
+                "MD29": "MD29 4896 RNW 29",
+                "HTN": "OVERFLY HTN AT OR ABOVE 5660 TURN RIGHT DIRECT HTN 7630 FAF FD29 MAP MD29"
+            },
+            "transitions": [
+                {
+                    "name": "D074P",
+                    "fixes": {
+                        "D074P": "D074P AT OR ABOVE 8610 SPEED 205"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS29",
+            "fixes": {
+                "CI29": "CI29 AT OR ABOVE 6640",
+                "FI29": "FI29 6640 RNW 29 TRK 288 UNTIL 5660 TURN RIGHT DIRECT",
+                "HTN": "HTN 7630 FAF FI29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "D074P",
+                    "fixes": {
+                        "D074P": "D074P AT OR ABOVE 8610 SPEED 205 TRK 225 UNTIL 8.0 FROM D074P"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDY29",
+            "fixes": {
+                "CQ29Y": "CQ29Y AT OR ABOVE 6640",
+                "FQ29Y": "FQ29Y 5990",
+                "R": "R 4978 RNW 29 TRK 288 UNTIL 3.0 FROM R AT OR ABOVE 7630 FAF FQ29Y MAP R",
+                "IRB": "IRB TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "D073P",
+                    "fixes": {
+                        "D073P": "D073P AT OR ABOVE 8610 SPEED 205"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDZ29",
+            "fixes": {
+                "CQ29Z": "CQ29Z AT OR ABOVE 6640",
+                "FQ29Z": "FQ29Z 5990",
+                "R": "R 4973 RNW 29 TRK 288 UNTIL 5660 TURN RIGHT DIRECT R 7630 FAF FQ29Z MAP R"
+            },
+            "transitions": [
+                {
+                    "name": "D074P",
+                    "fixes": {
+                        "D074P": "D074P AT OR ABOVE 8610 SPEED 205"
+                    }
+                }
+            ]
+        }
+    ]
+}

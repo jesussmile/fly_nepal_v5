@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "CI01L",
+            "lat": 29.828277783333334,
+            "lon": 31.757055566666665
+        },
+        {
+            "name": "CP712",
+            "lat": 29.740388883333335,
+            "lon": 31.581416666666666
+        },
+        {
+            "name": "CP713",
+            "lat": 29.828277783333334,
+            "lon": 31.757055566666665
+        },
+        {
+            "name": "CP714",
+            "lat": 29.973416666666665,
+            "lon": 31.802305566666668
+        },
+        {
+            "name": "CP715",
+            "lat": 30.169027783333334,
+            "lon": 31.8635
+        },
+        {
+            "name": "CVO",
+            "lat": 30.092305566666667,
+            "lon": 31.388416666666668
+        },
+        {
+            "name": "D149W",
+            "lat": 29.740388883333335,
+            "lon": 31.581416666666666
+        },
+        {
+            "name": "FI01L",
+            "lat": 29.973416666666665,
+            "lon": 31.802305566666668
+        },
+        {
+            "name": "RW01L",
+            "lat": 30.056472216666666,
+            "lon": 31.828266666666668
+        }
+    ],
+    "rnws": [
+        "RNW 01L",
+        "RNW 01R",
+        "RNW 02",
+        "RNW 19L",
+        "RNW 19R",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS01L",
+            "fixes": {
+                "CI01L": "CI01L AT OR ABOVE 3300",
+                "FI01L": "FI01L 2500 RNW 01L TRK 010 UNTIL 1900 TURN LEFT DIRECT",
+                "CVO": "CVO 6000 HOLD AT CVO RIGHT TURN INBOUNDCOURSE 012 ALT 6000 LEGTIME 1 FAF FI01L MAP RNW 01L"
+            },
+            "transitions": [
+                {
+                    "name": "CVO",
+                    "fixes": {
+                        "CVO": "CVO",
+                        "D149W": "D149W AT OR ABOVE 3300 TRK 055 UNTIL 6.6 FROM D149W"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01L",
+            "fixes": {
+                "CP713": "CP713 3300",
+                "CP714": "CP714 2500 RNW 01L",
+                "CP715": "CP715 AT OR ABOVE 2400 TURN LEFT DIRECT",
+                "CVO": "CVO AT OR ABOVE 6000 HOLD AT CVO RIGHT TURN INBOUNDCOURSE 047 ALT 6000 LEGTIME 1 FAF CP714 MAP RNW 01L"
+            },
+            "transitions": [
+                {
+                    "name": "CP712",
+                    "fixes": {
+                        "CP712": "CP712 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "CVO",
+                    "fixes": {
+                        "CVO": "CVO AT OR ABOVE 6000",
+                        "CP712": "CP712 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

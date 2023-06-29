@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "AXEZI",
+            "lat": 31.340619433333334,
+            "lon": 84.97251666666666
+        },
+        {
+            "name": "EARLY",
+            "lat": 31.454711116666665,
+            "lon": 84.81647778333334
+        },
+        {
+            "name": "ENUCI",
+            "lat": 31.267805566666667,
+            "lon": 85.07175278333334
+        },
+        {
+            "name": "IHORA",
+            "lat": 31.142433333333333,
+            "lon": 84.94714443333334
+        },
+        {
+            "name": "LUXWO",
+            "lat": 31.393052783333335,
+            "lon": 85.19669166666667
+        },
+        {
+            "name": "NINVE",
+            "lat": 31.429475,
+            "lon": 84.85105
+        },
+        {
+            "name": "PARGE",
+            "lat": 31.527311116666667,
+            "lon": 84.71683333333333
+        },
+        {
+            "name": "STRKE",
+            "lat": 31.401583333333335,
+            "lon": 84.59236111666667
+        },
+        {
+            "name": "VIPRR",
+            "lat": 31.652916666666666,
+            "lon": 84.84164166666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "ENUCI": "ENUCI AT OR ABOVE 2000",
+                "AXEZI": "AXEZI 1800 RNW 05 TRK 053 UNTIL 505",
+                "PARGE": "OVERFLY PARGE AT OR ABOVE 3000 HOLD AT PARGE RIGHT TURN INBOUNDCOURSE 233 LEGDIST 4 FAF AXEZI MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "ENUCI",
+                    "fixes": {
+                        "ENUCI": "ENUCI RIGHT TURN INBOUNDCOURSE 052 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "IHORA",
+                    "fixes": {
+                        "IHORA": "IHORA"
+                    }
+                },
+                {
+                    "name": "LUXWO",
+                    "fixes": {
+                        "LUXWO": "LUXWO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "PARGE": "PARGE AT OR ABOVE 3000",
+                "EARLY": "EARLY 1800",
+                "NINVE": "NINVE AT OR ABOVE 1040 RNW 23 TRK 233 UNTIL 501",
+                "ENUCI": "OVERFLY ENUCI AT OR ABOVE 2000 HOLD AT ENUCI RIGHT TURN INBOUNDCOURSE 052 LEGDIST 4 FAF EARLY MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "PARGE",
+                    "fixes": {
+                        "PARGE": "PARGE RIGHT TURN INBOUNDCOURSE 233 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "STRKE",
+                    "fixes": {
+                        "STRKE": "STRKE"
+                    }
+                },
+                {
+                    "name": "VIPRR",
+                    "fixes": {
+                        "VIPRR": "VIPRR"
+                    }
+                }
+            ]
+        }
+    ]
+}

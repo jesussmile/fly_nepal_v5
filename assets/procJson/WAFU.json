@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "FU401",
+            "lat": 0.7758333333333333,
+            "lon": 121.477
+        },
+        {
+            "name": "FU402",
+            "lat": 0.80975,
+            "lon": 121.53438888333334
+        },
+        {
+            "name": "FU403",
+            "lat": 0.9233333333333333,
+            "lon": 121.72663888333334
+        },
+        {
+            "name": "FU601",
+            "lat": 0.9021944333333334,
+            "lon": 121.805
+        },
+        {
+            "name": "FU602",
+            "lat": 0.9017777833333334,
+            "lon": 121.73819443333333
+        },
+        {
+            "name": "FU603",
+            "lat": 0.8766666666666667,
+            "lon": 121.64766666666667
+        },
+        {
+            "name": "FU604",
+            "lat": 0.8585277833333333,
+            "lon": 121.54947221666667
+        },
+        {
+            "name": "FU605",
+            "lat": 0.7300277833333334,
+            "lon": 121.55583333333334
+        },
+        {
+            "name": "FU606",
+            "lat": 0.7915277833333333,
+            "lon": 121.87391666666667
+        },
+        {
+            "name": "LURVI",
+            "lat": 0.7419166666666667,
+            "lon": 121.41961111666667
+        },
+        {
+            "name": "OKIDA",
+            "lat": 0.8711388833333333,
+            "lon": 121.89966666666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "FU401": "FU401 AT OR ABOVE 2500",
+                "FU402": "FU402 2000 RNW 12",
+                "FU403": "OVERFLY FU403 TURN LEFT DIRECT",
+                "LURVI": "LURVI AT OR ABOVE 3000 HOLD AT LURVI RIGHT TURN INBOUNDCOURSE 120 ALT 3000 LEGTIME 1 FAF FU402 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "LURVI",
+                    "fixes": {
+                        "LURVI": "LURVI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "FU601": "FU601 AT OR ABOVE 2900",
+                "FU602": "FU602 2200",
+                "FU603": "OVERFLY FU603 387 RNW 30 TURN RIGHT DIRECT",
+                "FU605": "FU605",
+                "FU606": "FU606",
+                "OKIDA": "OKIDA AT OR ABOVE 4000 HOLD AT OKIDA RIGHT TURN INBOUNDCOURSE 252 ALT 4000 SPEED 160 LEGTIME 1 FAF FU602 MAP FU603"
+            },
+            "transitions": [
+                {
+                    "name": "OKIDA",
+                    "fixes": {
+                        "OKIDA": "OKIDA AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

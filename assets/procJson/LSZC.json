@@ -1,0 +1,130 @@
+{
+    "fixes": [
+        {
+            "name": "ASGED",
+            "lat": 47.23577778333333,
+            "lon": 8.5705
+        },
+        {
+            "name": "KUSIX",
+            "lat": 47.11856111666667,
+            "lon": 8.479711116666667
+        },
+        {
+            "name": "RONIX",
+            "lat": 47.22625,
+            "lon": 8.457
+        },
+        {
+            "name": "WIL",
+            "lat": 47.178305566666666,
+            "lon": 7.905916666666666
+        },
+        {
+            "name": "ZC601",
+            "lat": 46.87294443333333,
+            "lon": 8.067944433333333
+        },
+        {
+            "name": "ZC700",
+            "lat": 47.18738056666667,
+            "lon": 8.523141666666668
+        },
+        {
+            "name": "ZC701",
+            "lat": 47.15460556666667,
+            "lon": 8.520744433333334
+        },
+        {
+            "name": "ZC752",
+            "lat": 47.137025,
+            "lon": 8.1434
+        },
+        {
+            "name": "ZC753",
+            "lat": 47.20905833333333,
+            "lon": 8.231805566666667
+        },
+        {
+            "name": "ZC760",
+            "lat": 47.04484443333333,
+            "lon": 8.396016666666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "WIL3A",
+            "rnw": "24",
+            "fixes": {
+                "ZC601": "OVERFLY ZC601 AT OR ABOVE 10000 TURN RIGHT DIRECT",
+                "WIL": "WIL SPEED 230"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ASGE1F",
+            "runway": "RNW 06 RNW 24",
+            "fixes": {
+                "ASGED": "ASGED SPEED 200",
+                "RONIX": "RONIX AT OR ABOVE 6000 SPEED 180"
+            }
+        },
+        {
+            "name": "WIL2F",
+            "runway": "RNW 06 RNW 24",
+            "fixes": {
+                "WIL": "WIL",
+                "RONIX": "RONIX AT OR ABOVE 6000 SPEED 180"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAVA06",
+            "fixes": {
+                "KUSIX": "KUSIX 4500",
+                "ZC760": "OVERFLY ZC760 2280 RNW 06 TURN RIGHT DIRECT",
+                "ZC752": "ZC752 SPEED 150",
+                "ZC753": "ZC753",
+                "RONIX": "RONIX AT OR ABOVE 6000 HOLD AT RONIX LEFT TURN INBOUNDCOURSE 216 ALT 9000 SPEED 180 LEGTIME 1 FAF KUSIX MAP ZC760"
+            },
+            "transitions": [
+                {
+                    "name": "RONIX",
+                    "fixes": {
+                        "RONIX": "RONIX AT OR ABOVE 6000 SPEED 180",
+                        "ZC700": "ZC700 SPEED 150",
+                        "ZC701": "ZC701 AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA24",
+            "fixes": {
+                "KUSIX": "KUSIX 4500",
+                "ZC760": "OVERFLY ZC760 2280 RNW 24 TURN RIGHT DIRECT",
+                "ZC752": "ZC752 SPEED 150",
+                "ZC753": "ZC753",
+                "RONIX": "RONIX AT OR ABOVE 6000 HOLD AT RONIX LEFT TURN INBOUNDCOURSE 216 ALT 9000 SPEED 180 LEGTIME 1 FAF KUSIX MAP ZC760"
+            },
+            "transitions": [
+                {
+                    "name": "RONIX",
+                    "fixes": {
+                        "RONIX": "RONIX AT OR ABOVE 6000 SPEED 180",
+                        "ZC700": "ZC700 SPEED 150",
+                        "ZC701": "ZC701 AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        }
+    ]
+}

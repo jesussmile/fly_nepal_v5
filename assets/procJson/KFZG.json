@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "AFUFI",
+            "lat": 31.771686116666668,
+            "lon": 83.25117778333333
+        },
+        {
+            "name": "CFBXH",
+            "lat": 31.514844433333334,
+            "lon": 83.31436666666667
+        },
+        {
+            "name": "DUMMY",
+            "lat": 31.948652783333333,
+            "lon": 83.23071111666667
+        },
+        {
+            "name": "PI001",
+            "lat": 31.555907266666665,
+            "lon": 83.30494388333334
+        },
+        {
+            "name": "PI002",
+            "lat": 31.516855466666666,
+            "lon": 83.37544908333334
+        },
+        {
+            "name": "PI003",
+            "lat": 31.449935633333332,
+            "lon": 83.33133008333333
+        },
+        {
+            "name": "POTYO",
+            "lat": 31.609561116666665,
+            "lon": 83.29110556666667
+        },
+        {
+            "name": "REKLE",
+            "lat": 31.645463883333335,
+            "lon": 83.28227778333333
+        },
+        {
+            "name": "SURNB",
+            "lat": 31.612966666666665,
+            "lon": 83.29071111666667
+        },
+        {
+            "name": "VNA",
+            "lat": 32.21344166666667,
+            "lon": 83.49725556666667
+        },
+        {
+            "name": "WODAM",
+            "lat": 31.495141666666665,
+            "lon": 83.31919721666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 15",
+        "RNW 20",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC02",
+            "fixes": {
+                "CFBXH": "CFBXH AT OR ABOVE 2000",
+                "SURNB": "SURNB 1700 RNW 02 TRK 017 UNTIL 900 TURN RIGHT DIRECT SURNB AT OR ABOVE 2000 HOLD AT SURNB LEFT TURN INBOUNDCOURSE 017 LEGTIME 1 FAF SURNB MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "VNA",
+                    "fixes": {
+                        "VNA": "VNA",
+                        "SURNB": "SURNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB02",
+            "fixes": {
+                "SURNB": "SURNB 1700 RNW 02 TRK 017 UNTIL 770 TURN RIGHT DIRECT SURNB AT OR ABOVE 2000 HOLD AT SURNB LEFT TURN INBOUNDCOURSE 017 ALT 2000 LEGTIME 1 FAF SURNB MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "VNA",
+                    "fixes": {
+                        "VNA": "VNA",
+                        "SURNB": "SURNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "WODAM": "WODAM AT OR ABOVE 1900",
+                "POTYO": "POTYO 1700",
+                "REKLE": "REKLE AT OR ABOVE 1000 RNW 02 TRK 017 UNTIL 611",
+                "AFUFI": "AFUFI",
+                "DUMMY": "OVERFLY DUMMY AT OR ABOVE 2300 HOLD AT DUMMY RIGHT TURN INBOUNDCOURSE 144 LEGDIST 4 FAF POTYO MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "WODAM",
+                    "fixes": {
+                        "WODAM": "WODAM RIGHT TURN INBOUNDCOURSE 017 ALT 1900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

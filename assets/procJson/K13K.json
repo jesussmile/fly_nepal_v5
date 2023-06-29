@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "AGEXY",
+            "lat": 38.191036116666666,
+            "lon": 96.40843888333333
+        },
+        {
+            "name": "CNU",
+            "lat": 37.626158333333336,
+            "lon": 95.59346943333334
+        },
+        {
+            "name": "DELYE",
+            "lat": 38.098177783333334,
+            "lon": 96.20576388333333
+        },
+        {
+            "name": "EMP",
+            "lat": 38.29114166666667,
+            "lon": 96.13811666666666
+        },
+        {
+            "name": "ERURE",
+            "lat": 37.94938056666667,
+            "lon": 96.26821388333333
+        },
+        {
+            "name": "EUREK",
+            "lat": 37.93735556666667,
+            "lon": 96.26186111666667
+        },
+        {
+            "name": "FOWNE",
+            "lat": 38.025469433333335,
+            "lon": 95.91905556666667
+        },
+        {
+            "name": "KANEY",
+            "lat": 37.67430556666667,
+            "lon": 96.33275
+        },
+        {
+            "name": "REKSE",
+            "lat": 38.0478,
+            "lon": 96.24500556666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 18",
+        "RNW 26",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "EUREK": "EUREK 3000 RNW 18 TRK 187 UNTIL 1606 TURN LEFT DIRECT EUREK AT OR ABOVE 3000 HOLD AT EUREK RIGHT TURN INBOUNDCOURSE 187 LEGTIME 1 FAF EUREK MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "CNU",
+                    "fixes": {
+                        "CNU": "CNU",
+                        "EUREK": "EUREK AT OR ABOVE 3000 HOLD AT EUREK RIGHT TURN INBOUNDCOURSE 187 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "EMP",
+                    "fixes": {
+                        "EMP": "EMP",
+                        "DELYE": "DELYE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "REKSE": "REKSE AT OR ABOVE 3200",
+                "ERURE": "ERURE 3100 RNW 18 TRK 185 UNTIL 1606",
+                "KANEY": "KANEY AT OR ABOVE 3200 HOLD AT KANEY RIGHT TURN INBOUNDCOURSE 005 LEGDIST 4 FAF ERURE MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AGEXY",
+                    "fixes": {
+                        "AGEXY": "AGEXY"
+                    }
+                },
+                {
+                    "name": "EMP",
+                    "fixes": {
+                        "EMP": "EMP"
+                    }
+                },
+                {
+                    "name": "FOWNE",
+                    "fixes": {
+                        "FOWNE": "FOWNE"
+                    }
+                },
+                {
+                    "name": "REKSE",
+                    "fixes": {
+                        "REKSE": "REKSE RIGHT TURN INBOUNDCOURSE 185 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

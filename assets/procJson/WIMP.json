@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "EPKAG",
+            "lat": 2.6018888833333333,
+            "lon": 98.96377778333333
+        },
+        {
+            "name": "IRTEX",
+            "lat": 2.7708611166666666,
+            "lon": 98.8015
+        },
+        {
+            "name": "MP501",
+            "lat": 2.7132777833333335,
+            "lon": 98.86977778333333
+        },
+        {
+            "name": "MP502",
+            "lat": 2.6683333333333334,
+            "lon": 98.90722221666667
+        },
+        {
+            "name": "MP701",
+            "lat": 2.4894722166666665,
+            "lon": 98.94761111666666
+        },
+        {
+            "name": "MP702",
+            "lat": 2.4253055666666667,
+            "lon": 99.00108333333333
+        },
+        {
+            "name": "MP703",
+            "lat": 2.4790833333333335,
+            "lon": 99.06491666666666
+        },
+        {
+            "name": "MP704",
+            "lat": 2.5406944333333334,
+            "lon": 99.01358333333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVZ14",
+            "fixes": {
+                "MP501": "MP501 AT OR ABOVE 6300",
+                "MP502": "MP502 5700 RNW 14 TRK 140 UNTIL 6000 TURN RIGHT DIRECT",
+                "IRTEX": "IRTEX AT OR ABOVE 8500 HOLD AT IRTEX LEFT TURN INBOUNDCOURSE 130 ALT 8500 LEGTIME 1 FAF MP502 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "IRTEX",
+                    "fixes": {
+                        "IRTEX": "IRTEX AT OR ABOVE 8500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ32",
+            "fixes": {
+                "MP703": "MP703 AT OR ABOVE 6700",
+                "MP704": "MP704 5700 RNW 32 TRK 320 UNTIL 7000 TURN LEFT DIRECT",
+                "EPKAG": "EPKAG AT OR ABOVE 9500 HOLD AT EPKAG RIGHT TURN INBOUNDCOURSE 189 ALT 9500 LEGTIME 1 FAF MP704 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "EPKAG",
+                    "fixes": {
+                        "EPKAG": "EPKAG AT OR ABOVE 9500",
+                        "MP701": "MP701",
+                        "MP702": "MP702 SPEED 180"
+                    }
+                }
+            ]
+        }
+    ]
+}

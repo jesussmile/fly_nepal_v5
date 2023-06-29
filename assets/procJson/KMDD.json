@@ -1,0 +1,233 @@
+{
+    "fixes": [
+        {
+            "name": "BAVNE",
+            "lat": 32.02791943333333,
+            "lon": 102.15003611666667
+        },
+        {
+            "name": "CEXOM",
+            "lat": 31.986044433333333,
+            "lon": 102.08607221666666
+        },
+        {
+            "name": "CIRIT",
+            "lat": 32.094713883333334,
+            "lon": 101.85694721666667
+        },
+        {
+            "name": "HIBMA",
+            "lat": 31.943744433333332,
+            "lon": 102.07272221666666
+        },
+        {
+            "name": "JIBEM",
+            "lat": 32.04958056666667,
+            "lon": 102.05535556666666
+        },
+        {
+            "name": "JOJOS",
+            "lat": 31.988391666666665,
+            "lon": 102.32601943333333
+        },
+        {
+            "name": "MAF",
+            "lat": 32.00934443333333,
+            "lon": 102.19038888333333
+        },
+        {
+            "name": "MAPDD",
+            "lat": 32.032027783333334,
+            "lon": 102.10834443333333
+        },
+        {
+            "name": "MERGE",
+            "lat": 32.28506111666667,
+            "lon": 102.14625
+        },
+        {
+            "name": "OXATE",
+            "lat": 31.834186116666668,
+            "lon": 101.92838056666666
+        },
+        {
+            "name": "PI001",
+            "lat": 31.987476433333335,
+            "lon": 102.2541569
+        },
+        {
+            "name": "PI002",
+            "lat": 32.0154551,
+            "lon": 102.33195985
+        },
+        {
+            "name": "PI003",
+            "lat": 31.946779916666667,
+            "lon": 102.37250251666667
+        },
+        {
+            "name": "ROGNY",
+            "lat": 32.108038883333336,
+            "lon": 101.87777778333333
+        },
+        {
+            "name": "SKRDA",
+            "lat": 32.073261116666664,
+            "lon": 101.98829443333334
+        },
+        {
+            "name": "UMCEJ",
+            "lat": 31.830841666666668,
+            "lon": 102.03713888333333
+        },
+        {
+            "name": "WAVOK",
+            "lat": 32.063502783333334,
+            "lon": 101.99432221666666
+        },
+        {
+            "name": "ZEBIB",
+            "lat": 32.244180566666664,
+            "lon": 102.16780278333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 16",
+        "RNW 25",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD25",
+            "fixes": {
+                "ROGNY": "ROGNY AT OR ABOVE 4500",
+                "SKRDA": "SKRDA 4500 RNW 25 TRK 239 UNTIL 3210 HDG 327 INTERCEPT RADIAL 357 TO",
+                "MERGE": "MERGE MERGE AT OR ABOVE 4500 HOLD AT MERGE LEFT TURN INBOUNDCOURSE 177 LEGTIME 1 FAF SKRDA MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "MERGE",
+                    "fixes": {
+                        "MERGE": "MERGE"
+                    }
+                },
+                {
+                    "name": "OXATE",
+                    "fixes": {
+                        "OXATE": "OXATE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "CIRIT": "CIRIT AT OR ABOVE 4500",
+                "WAVOK": "WAVOK 4500",
+                "JIBEM": "JIBEM AT OR ABOVE 3460 RNW 25 TRK 248 UNTIL 3071",
+                "BAVNE": "BAVNE",
+                "JOJOS": "OVERFLY JOJOS AT OR ABOVE 5000 HOLD AT JOJOS RIGHT TURN INBOUNDCOURSE 107 LEGDIST 5 FAF WAVOK MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "CIRIT",
+                    "fixes": {
+                        "CIRIT": "CIRIT RIGHT TURN INBOUNDCOURSE 248 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "UMCEJ": "UMCEJ AT OR ABOVE 4700",
+                "HIBMA": "HIBMA 4500",
+                "CEXOM": "CEXOM AT OR ABOVE 3660 RNW 34 TRK 338 UNTIL 3051",
+                "ZEBIB": "OVERFLY ZEBIB AT OR ABOVE 4500 HOLD AT ZEBIB RIGHT TURN INBOUNDCOURSE 158 LEGDIST 5 FAF HIBMA MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "UMCEJ",
+                    "fixes": {
+                        "UMCEJ": "UMCEJ RIGHT TURN INBOUNDCOURSE 338 ALT 4700 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA07",
+            "fixes": {
+                "MAF": "MAF 4800",
+                "MAPDD": "MAPDD 3700 RNW 07 TRK 061 UNTIL 3700 TURN LEFT HDG 327 INTERCEPT RADIAL 357 TO",
+                "MERGE": "MERGE MERGE AT OR ABOVE 4500 HOLD AT MERGE LEFT TURN INBOUNDCOURSE 177 LEGTIME 1 FAF MAF MAP MAPDD"
+            },
+            "transitions": [
+                {
+                    "name": "MAF",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 5100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA16",
+            "fixes": {
+                "MAF": "MAF 4800",
+                "MAPDD": "MAPDD 3700 RNW 16 TRK 061 UNTIL 3700 TURN LEFT HDG 327 INTERCEPT RADIAL 357 TO",
+                "MERGE": "MERGE MERGE AT OR ABOVE 4500 HOLD AT MERGE LEFT TURN INBOUNDCOURSE 177 LEGTIME 1 FAF MAF MAP MAPDD"
+            },
+            "transitions": [
+                {
+                    "name": "MAF",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 5100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA25",
+            "fixes": {
+                "MAF": "MAF 4800",
+                "MAPDD": "MAPDD 3700 RNW 25 TRK 061 UNTIL 3700 TURN LEFT HDG 327 INTERCEPT RADIAL 357 TO",
+                "MERGE": "MERGE MERGE AT OR ABOVE 4500 HOLD AT MERGE LEFT TURN INBOUNDCOURSE 177 LEGTIME 1 FAF MAF MAP MAPDD"
+            },
+            "transitions": [
+                {
+                    "name": "MAF",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 5100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA34",
+            "fixes": {
+                "MAF": "MAF 4800",
+                "MAPDD": "MAPDD 3700 RNW 34 TRK 061 UNTIL 3700 TURN LEFT HDG 327 INTERCEPT RADIAL 357 TO",
+                "MERGE": "MERGE MERGE AT OR ABOVE 4500 HOLD AT MERGE LEFT TURN INBOUNDCOURSE 177 LEGTIME 1 FAF MAF MAP MAPDD"
+            },
+            "transitions": [
+                {
+                    "name": "MAF",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 5100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

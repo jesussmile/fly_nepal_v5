@@ -1,0 +1,214 @@
+{
+    "fixes": [
+        {
+            "name": "17VOR",
+            "lat": 17.886719433333333,
+            "lon": 31.139177783333334
+        },
+        {
+            "name": "BZNB",
+            "lat": 18.067311116666666,
+            "lon": 31.339286116666667
+        },
+        {
+            "name": "CD05",
+            "lat": 18.027511116666666,
+            "lon": 30.99703888333333
+        },
+        {
+            "name": "CS05",
+            "lat": 18.033525,
+            "lon": 30.990961116666668
+        },
+        {
+            "name": "D176D",
+            "lat": 18.051555566666668,
+            "lon": 31.040294433333333
+        },
+        {
+            "name": "D187C",
+            "lat": 18.076044433333333,
+            "lon": 30.990230566666668
+        },
+        {
+            "name": "D198C",
+            "lat": 18.043708333333335,
+            "lon": 31.018452783333334
+        },
+        {
+            "name": "FD23",
+            "lat": 17.834947216666666,
+            "lon": 31.191358333333334
+        },
+        {
+            "name": "FF05",
+            "lat": 17.995622216666668,
+            "lon": 31.029261116666667
+        },
+        {
+            "name": "FI05",
+            "lat": 18.031425,
+            "lon": 30.9887
+        },
+        {
+            "name": "HYDRO",
+            "lat": 18.049163883333332,
+            "lon": 30.970138883333334
+        },
+        {
+            "name": "KUNB",
+            "lat": 17.524527783333333,
+            "lon": 31.257847216666665
+        },
+        {
+            "name": "NZNB",
+            "lat": 17.912133333333333,
+            "lon": 30.684855566666666
+        },
+        {
+            "name": "OL",
+            "lat": 17.994272216666666,
+            "lon": 31.027566666666665
+        },
+        {
+            "name": "SI",
+            "lat": 17.953766666666667,
+            "lon": 31.069891666666667
+        },
+        {
+            "name": "VHA",
+            "lat": 17.907183333333332,
+            "lon": 31.118538883333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "CD05": "CD05 AT OR ABOVE 6000",
+                "FF05": "FF05 6000 RNW 05",
+                "VHA": "VHA TRK 052 UNTIL 7000 TURN RIGHT DIRECT VHA 7000 FAF FF05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "VHA1",
+                    "fixes": {
+                        "VHA": "VHA AT OR ABOVE 7000 TRK 212 UNTIL 10.0 FROM VHA"
+                    }
+                },
+                {
+                    "name": "VHA2",
+                    "fixes": {
+                        "VHA": "VHA AT OR ABOVE 7000 TRK 221 UNTIL 10.0 FROM VHA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FD23": "FD23 7000",
+                "17VOR": "17VOR AT OR ABOVE 5700",
+                "VHA": "VHA 5181 RNW 23 TRK 232 UNTIL 7000 TURN LEFT DIRECT VHA 7000 FAF FD23 MAP VHA"
+            },
+            "transitions": [
+                {
+                    "name": "VHA1",
+                    "fixes": {
+                        "VHA": "VHA AT OR ABOVE 7000 TRK 093 UNTIL 6.0 FROM VHA"
+                    }
+                },
+                {
+                    "name": "VHA2",
+                    "fixes": {
+                        "VHA": "VHA AT OR ABOVE 7000 TRK 068 UNTIL 6.0 FROM VHA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS05",
+            "fixes": {
+                "HYDRO": "HYDRO AT OR ABOVE 7000",
+                "FI05": "FI05 7000 RNW 05 TRK 052 UNTIL 7000 TURN RIGHT DIRECT",
+                "OL": "OL HOLD AT OL RIGHT TURN INBOUNDCOURSE 052 ALT 7000 LEGTIME 1 FAF FI05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "BZ",
+                    "fixes": {
+                        "BZNB": "BZNB",
+                        "OL": "OL AT OR ABOVE 7000",
+                        "FI05": "FI05 AT OR ABOVE 7000",
+                        "D187C": "OVERFLY D187C AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "KU",
+                    "fixes": {
+                        "KUNB": "KUNB",
+                        "OL": "OL AT OR ABOVE 7000",
+                        "FI05": "FI05 AT OR ABOVE 7000",
+                        "D187C": "OVERFLY D187C AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "NZ",
+                    "fixes": {
+                        "NZNB": "NZNB",
+                        "OL": "OL AT OR ABOVE 7000 TURN RIGHT DIRECT",
+                        "FI05": "FI05 AT OR ABOVE 7000",
+                        "D187C": "OVERFLY D187C AT OR ABOVE 7000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB05",
+            "fixes": {
+                "OL": "OL 6000 OL 7000 FAF OL MAP SI",
+                "SI": "SI 5027 RNW 05 TRK 052 UNTIL 7000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SI1",
+                    "fixes": {
+                        "SI": "SI AT OR ABOVE 7000",
+                        "OL": "OL AT OR ABOVE 7000",
+                        "D176D": "OVERFLY D176D"
+                    }
+                },
+                {
+                    "name": "SI2",
+                    "fixes": {
+                        "SI": "SI AT OR ABOVE 7000",
+                        "OL": "OL AT OR ABOVE 7000",
+                        "D198C": "OVERFLY D198C"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR05",
+            "fixes": {
+                "CS05": "CS05 AT OR ABOVE 6000",
+                "FF05": "FF05 6000 RNW 05",
+                "VHA": "OVERFLY VHA TRK 052 UNTIL 7000 TURN RIGHT DIRECT VHA 7000 FAF FF05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "VHA",
+                    "fixes": {
+                        "VHA": "VHA AT OR ABOVE 7000 TRK 212 UNTIL 10.5 FROM VHA"
+                    }
+                }
+            ]
+        }
+    ]
+}

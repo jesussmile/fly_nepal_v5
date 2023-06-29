@@ -1,0 +1,135 @@
+{
+    "fixes": [
+        {
+            "name": "APALY",
+            "lat": 30.89031943333333,
+            "lon": 89.86068611666667
+        },
+        {
+            "name": "BAPAY",
+            "lat": 30.852266666666665,
+            "lon": 89.86280833333333
+        },
+        {
+            "name": "CFBXG",
+            "lat": 30.981744433333333,
+            "lon": 89.85558611666667
+        },
+        {
+            "name": "FLOID",
+            "lat": 30.7197,
+            "lon": 89.87018056666666
+        },
+        {
+            "name": "GVBNB",
+            "lat": 30.881613883333333,
+            "lon": 89.86211666666667
+        },
+        {
+            "name": "LOCHS",
+            "lat": 30.607069433333333,
+            "lon": 89.87643611666667
+        },
+        {
+            "name": "MCB",
+            "lat": 31.304452783333332,
+            "lon": 90.25820278333333
+        },
+        {
+            "name": "OSTOE",
+            "lat": 31.00144166666667,
+            "lon": 89.85448888333333
+        },
+        {
+            "name": "PCU",
+            "lat": 30.561166666666665,
+            "lon": 89.73048888333334
+        },
+        {
+            "name": "PI001",
+            "lat": 30.939867233333334,
+            "lon": 89.85855726666666
+        },
+        {
+            "name": "PI002",
+            "lat": 30.9931139,
+            "lon": 89.91449836666666
+        },
+        {
+            "name": "PI003",
+            "lat": 31.04805175,
+            "lon": 89.8519354
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC18",
+            "fixes": {
+                "CFBXG": "CFBXG AT OR ABOVE 2000",
+                "GVBNB": "GVBNB 1500 RNW 18 TRK 183 UNTIL 520",
+                "PCU": "PCU AT OR ABOVE 2000 HOLD AT PCU RIGHT TURN INBOUNDCOURSE 356 LEGTIME 1 FAF GVBNB MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "MCB",
+                    "fixes": {
+                        "MCB": "MCB",
+                        "GVBNB": "GVBNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "PCU",
+                    "fixes": {
+                        "PCU": "PCU",
+                        "GVBNB": "GVBNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "OSTOE": "OSTOE AT OR ABOVE 2000",
+                "APALY": "APALY 1500",
+                "BAPAY": "BAPAY AT OR ABOVE 760 RNW 18 TRK 183 UNTIL 387",
+                "LOCHS": "OVERFLY LOCHS AT OR ABOVE 2000 HOLD AT LOCHS RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4 FAF APALY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "OSTOE",
+                    "fixes": {
+                        "OSTOE": "OSTOE RIGHT TURN INBOUNDCOURSE 183 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "LOCHS": "LOCHS AT OR ABOVE 2000",
+                "FLOID": "FLOID 2000 RNW 36 TRK 003 UNTIL 421",
+                "OSTOE": "OVERFLY OSTOE AT OR ABOVE 2000 HOLD AT OSTOE RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4 FAF FLOID MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "LOCHS",
+                    "fixes": {
+                        "LOCHS": "LOCHS RIGHT TURN INBOUNDCOURSE 003 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

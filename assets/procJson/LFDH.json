@@ -1,0 +1,149 @@
+{
+    "fixes": [
+        {
+            "name": "AUCHE",
+            "lat": 43.65138888333333,
+            "lon": 0.5583333333333333
+        },
+        {
+            "name": "DH182",
+            "lat": 43.935527783333335,
+            "lon": 0.6096388833333334
+        },
+        {
+            "name": "DH184",
+            "lat": 43.84819443333333,
+            "lon": 0.6833333333333333
+        },
+        {
+            "name": "DH190",
+            "lat": 43.62558333333333,
+            "lon": 0.5947777833333333
+        },
+        {
+            "name": "DH192",
+            "lat": 43.786833333333334,
+            "lon": 0.7193611166666667
+        },
+        {
+            "name": "DH362",
+            "lat": 43.60958333333333,
+            "lon": 0.6877222166666667
+        },
+        {
+            "name": "DH364",
+            "lat": 43.52291666666667,
+            "lon": 0.67825
+        },
+        {
+            "name": "FDH18",
+            "lat": 43.78522221666667,
+            "lon": 0.6085277833333333
+        },
+        {
+            "name": "FDH36",
+            "lat": 43.5965,
+            "lon": 0.5922777833333334
+        },
+        {
+            "name": "FN18",
+            "lat": 43.799308333333336,
+            "lon": 0.6108694333333333
+        },
+        {
+            "name": "IDH18",
+            "lat": 43.85175,
+            "lon": 0.6143055666666667
+        },
+        {
+            "name": "IDH36",
+            "lat": 43.526861116666666,
+            "lon": 0.5863055666666667
+        },
+        {
+            "name": "LMTNB",
+            "lat": 43.7175,
+            "lon": 0.6029722166666667
+        },
+        {
+            "name": "RW18",
+            "lat": 43.692141666666664,
+            "lon": 0.6005055666666668
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB18",
+            "fixes": {
+                "FN18": "FN18 2500 RNW 18 TRK 183 UNTIL 1500 TURN RIGHT DIRECT",
+                "LMTNB": "LMTNB FAF FN18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AUCHE",
+                    "fixes": {
+                        "AUCHE": "AUCHE",
+                        "LMTNB": "LMTNB HOLD AT LMTNB LEFT TURN INBOUNDCOURSE 184 ALT 2500 SPEED 220 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LMT",
+                    "fixes": {
+                        "LMTNB": "LMTNB LEFT TURN INBOUNDCOURSE 184 ALT 2500 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "IDH18": "IDH18 2500 SPEED 185",
+                "FDH18": "FDH18 2500 RNW 18",
+                "DH190": "OVERFLY DH190 AT OR BELOW 2500 SPEED 220 TURN RIGHT DIRECT",
+                "LMTNB": "LMTNB",
+                "DH192": "DH192 2500 SPEED 220 FAF FDH18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "DH182",
+                    "fixes": {
+                        "DH182": "DH182 AT OR BELOW 5000 AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "LMT",
+                    "fixes": {
+                        "LMTNB": "LMTNB AT OR BELOW 5000 AT OR ABOVE 2500 SPEED 220 TURN LEFT DIRECT",
+                        "DH192": "DH192 2500 SPEED 220",
+                        "DH184": "DH184 2500 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "IDH36": "IDH36 2500 SPEED 185",
+                "FDH36": "FDH36 2000 RNW 36",
+                "LMTNB": "OVERFLY LMTNB AT OR BELOW 2500 SPEED 185 TURN RIGHT DIRECT",
+                "DH362": "DH362 2500 SPEED 185 FAF FDH36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "LMT",
+                    "fixes": {
+                        "LMTNB": "LMTNB AT OR BELOW 5000 AT OR ABOVE 2500 SPEED 220",
+                        "DH362": "DH362 2500 SPEED 220",
+                        "DH364": "DH364 2500 SPEED 185"
+                    }
+                }
+            ]
+        }
+    ]
+}

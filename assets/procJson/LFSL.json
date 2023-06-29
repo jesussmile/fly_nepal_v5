@@ -1,0 +1,237 @@
+{
+    "fixes": [
+        {
+            "name": "19DME",
+            "lat": 45.024088883333334,
+            "lon": 1.5334944333333334
+        },
+        {
+            "name": "ARMAX",
+            "lat": 45.02858333333333,
+            "lon": 1.7450277833333332
+        },
+        {
+            "name": "BSCNB",
+            "lat": 44.99516666666667,
+            "lon": 1.6220555666666667
+        },
+        {
+            "name": "CF29",
+            "lat": 44.98174443333333,
+            "lon": 1.6637472166666667
+        },
+        {
+            "name": "FSL11",
+            "lat": 45.086,
+            "lon": 1.3423055666666666
+        },
+        {
+            "name": "FSL29",
+            "lat": 44.99516666666667,
+            "lon": 1.6225833333333333
+        },
+        {
+            "name": "ISL11",
+            "lat": 45.11086111666667,
+            "lon": 1.2650555666666667
+        },
+        {
+            "name": "ISL29",
+            "lat": 44.96794443333334,
+            "lon": 1.7059166666666665
+        },
+        {
+            "name": "LAVRA",
+            "lat": 44.65416666666667,
+            "lon": 1.5302777833333332
+        },
+        {
+            "name": "MA29",
+            "lat": 45.03341388333333,
+            "lon": 1.5046083333333333
+        },
+        {
+            "name": "MAKOX",
+            "lat": 45.332777783333334,
+            "lon": 1.2380555666666666
+        },
+        {
+            "name": "OSDAG",
+            "lat": 44.940055566666665,
+            "lon": 1.7911666666666668
+        },
+        {
+            "name": "RATRA",
+            "lat": 44.78027778333333,
+            "lon": 1.4775
+        },
+        {
+            "name": "SL409",
+            "lat": 45.07311111666667,
+            "lon": 1.3822222166666667
+        },
+        {
+            "name": "SL410",
+            "lat": 45.08386111666667,
+            "lon": 1.5739722166666668
+        },
+        {
+            "name": "SL504",
+            "lat": 45.13105556666667,
+            "lon": 1.4298611166666666
+        },
+        {
+            "name": "SL505",
+            "lat": 45.17152778333333,
+            "lon": 1.3041111166666666
+        },
+        {
+            "name": "UVRAK",
+            "lat": 44.907333333333334,
+            "lon": 1.6669166666666668
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "LAVR2B",
+            "rnw": "11",
+            "fixes": {
+                "RATRA": "RATRA",
+                "LAVRA": "LAVRA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LAVR2C",
+            "rnw": "29",
+            "fixes": {
+                "RATRA": "RATRA",
+                "LAVRA": "LAVRA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MAKO2B",
+            "rnw": "11",
+            "fixes": {
+                "MAKOX": "MAKOX"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MAKO2C",
+            "rnw": "29",
+            "fixes": {
+                "MAKOX": "MAKOX"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "MAKO1R",
+            "runway": "RNW 11 RNW 29",
+            "fixes": {
+                "MAKOX": "MAKOX AT OR ABOVE 7000 SPEED 220",
+                "ISL11": "ISL11 AT OR ABOVE 3000 SPEED 190"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "ILS29",
+            "fixes": {
+                "CF29": "CF29 AT OR ABOVE 3000",
+                "BSCNB": "BSCNB 3000 RNW 29 TRK 294 UNTIL 2000 TURN RIGHT DIRECT BSCNB 3000 FAF BSCNB MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "BSC",
+                    "fixes": {
+                        "BSCNB": "BSCNB LEFT TURN INBOUNDCOURSE 294 ALT 3000 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD29",
+            "fixes": {
+                "BSCNB": "BSCNB 3000 BSCNB 3000 FAF BSCNB MAP MA29",
+                "19DME": "19DME AT OR ABOVE 1610",
+                "MA29": "MA29 1153 RNW 29 TRK 294 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BSC",
+                    "fixes": {
+                        "BSCNB": "BSCNB LEFT TURN INBOUNDCOURSE 294 ALT 3000 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "ISL11": "ISL11 AT OR ABOVE 3000 SPEED 190",
+                "FSL11": "FSL11 3000 RNW 11",
+                "BSCNB": "OVERFLY BSCNB TURN LEFT DIRECT",
+                "SL504": "SL504 3000 SPEED 220 FAF FSL11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "BSC",
+                    "fixes": {
+                        "BSCNB": "BSCNB AT OR BELOW 6000 SPEED 230",
+                        "SL504": "SL504 AT OR ABOVE 3000 SPEED 220",
+                        "SL505": "SL505 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SL504",
+                    "fixes": {
+                        "SL504": "SL504 AT OR ABOVE 3000 SPEED 220",
+                        "SL505": "SL505 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "ISL29": "ISL29 AT OR ABOVE 3000 SPEED 175",
+                "FSL29": "FSL29 3000 RNW 29",
+                "SL409": "OVERFLY SL409 SPEED 210 TURN RIGHT DIRECT",
+                "SL410": "SL410",
+                "ARMAX": "ARMAX AT OR ABOVE 3000 SPEED 210 FAF FSL29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "ARMAX",
+                    "fixes": {
+                        "ARMAX": "ARMAX AT OR ABOVE 3300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "OSDAG",
+                    "fixes": {
+                        "OSDAG": "OSDAG AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "UVRAK",
+                    "fixes": {
+                        "UVRAK": "UVRAK AT OR ABOVE 3300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

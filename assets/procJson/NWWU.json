@@ -1,0 +1,145 @@
+{
+    "fixes": [
+        {
+            "name": "FF144",
+            "lat": 20.667116666666665,
+            "lon": 165.19735278333334
+        },
+        {
+            "name": "FWU13",
+            "lat": 20.713444433333333,
+            "lon": 165.20383333333334
+        },
+        {
+            "name": "FWU31",
+            "lat": 20.866333333333333,
+            "lon": 165.31505556666667
+        },
+        {
+            "name": "IWU13",
+            "lat": 20.651277783333335,
+            "lon": 165.15869443333332
+        },
+        {
+            "name": "IWU31",
+            "lat": 20.91013888333333,
+            "lon": 165.38019443333334
+        },
+        {
+            "name": "THNB",
+            "lat": 20.790277783333334,
+            "lon": 165.25561111666667
+        },
+        {
+            "name": "WU190",
+            "lat": 20.904361116666667,
+            "lon": 165.49402778333334
+        },
+        {
+            "name": "WU191",
+            "lat": 20.719666666666665,
+            "lon": 165.35913888333334
+        },
+        {
+            "name": "WU192",
+            "lat": 21.026833333333332,
+            "lon": 165.40080556666666
+        },
+        {
+            "name": "WU193",
+            "lat": 20.585194433333335,
+            "lon": 165.26136111666668
+        },
+        {
+            "name": "WU194",
+            "lat": 20.958805566666665,
+            "lon": 165.45261111666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA13",
+            "fixes": {
+                "FF144": "FF144 2600 SPEED 130",
+                "THNB": "THNB 1670 RNW 13 TRK 144 UNTIL 1670 TRK 050 UNTIL 6400 FAF FF144 MAP TH"
+            },
+            "transitions": [
+                {
+                    "name": "TH",
+                    "fixes": {
+                        "THNB": "THNB AT OR ABOVE 3800 TRK 311 UNTIL 9.0 FROM THNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA31",
+            "fixes": {
+                "FF144": "FF144 2600 SPEED 130",
+                "THNB": "THNB 1670 RNW 31 TRK 144 UNTIL 1670 TRK 050 UNTIL 6400 FAF FF144 MAP TH"
+            },
+            "transitions": [
+                {
+                    "name": "TH",
+                    "fixes": {
+                        "THNB": "THNB AT OR ABOVE 3800 TRK 311 UNTIL 9.0 FROM THNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "IWU13": "IWU13 AT OR ABOVE 2000",
+                "FWU13": "FWU13 2000 RNW 13 TRK 134 UNTIL 1200 TURN LEFT DIRECT",
+                "WU191": "WU191",
+                "WU193": "WU193 AT OR ABOVE 2000 FAF FWU13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "WU191",
+                    "fixes": {
+                        "WU191": "WU191 AT OR ABOVE 2000",
+                        "WU193": "WU193 AT OR ABOVE 2000 SPEED 170"
+                    }
+                },
+                {
+                    "name": "WU193",
+                    "fixes": {
+                        "WU193": "WU193 AT OR ABOVE 2000 SPEED 170"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "IWU31": "IWU31 AT OR ABOVE 2000",
+                "FWU31": "FWU31 2000 RNW 31 TRK 314 UNTIL 1200 TURN RIGHT DIRECT",
+                "WU190": "WU190 AT OR ABOVE 3300",
+                "WU194": "WU194 AT OR ABOVE 3300 FAF FWU31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "WU192",
+                    "fixes": {
+                        "WU192": "WU192 AT OR ABOVE 4600",
+                        "WU194": "WU194 AT OR ABOVE 3300 SPEED 170"
+                    }
+                },
+                {
+                    "name": "WU194",
+                    "fixes": {
+                        "WU194": "WU194 AT OR ABOVE 3300 SPEED 170"
+                    }
+                }
+            ]
+        }
+    ]
+}

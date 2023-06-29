@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "ALLOT",
+            "lat": 44.976725,
+            "lon": 99.15560556666667
+        },
+        {
+            "name": "CULIV",
+            "lat": 44.474302783333336,
+            "lon": 99.35744721666667
+        },
+        {
+            "name": "ELREE",
+            "lat": 44.16241943333333,
+            "lon": 99.34261943333334
+        },
+        {
+            "name": "ITIXE",
+            "lat": 44.43316943333333,
+            "lon": 99.29970278333333
+        },
+        {
+            "name": "OMCEW",
+            "lat": 44.64130556666667,
+            "lon": 99.59312221666667
+        },
+        {
+            "name": "PIR",
+            "lat": 44.39455556666667,
+            "lon": 100.16280833333333
+        },
+        {
+            "name": "UJBIC",
+            "lat": 44.600288883333334,
+            "lon": 99.53505278333333
+        },
+        {
+            "name": "VAYLA",
+            "lat": 44.42765,
+            "lon": 98.954125
+        },
+        {
+            "name": "WUVAM",
+            "lat": 44.5725,
+            "lon": 99.49578333333334
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "OMCEW": "OMCEW AT OR ABOVE 4000",
+                "UJBIC": "UJBIC 3400",
+                "WUVAM": "WUVAM AT OR ABOVE 2640 RNW 13 TRK 130 UNTIL 2192",
+                "ITIXE": "OVERFLY ITIXE AT OR ABOVE 4000 HOLD AT ITIXE RIGHT TURN INBOUNDCOURSE 310 LEGDIST 4 FAF UJBIC MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "ALLOT",
+                    "fixes": {
+                        "ALLOT": "ALLOT"
+                    }
+                },
+                {
+                    "name": "ELREE",
+                    "fixes": {
+                        "ELREE": "ELREE",
+                        "OMCEW": "OVERFLY OMCEW AT OR ABOVE 4000 HOLD AT OMCEW RIGHT TURN INBOUNDCOURSE 130 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PIR",
+                    "fixes": {
+                        "PIR": "PIR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ITIXE": "ITIXE AT OR ABOVE 4000",
+                "CULIV": "CULIV 3600 RNW 31 TRK 310 UNTIL 2205",
+                "OMCEW": "OVERFLY OMCEW AT OR ABOVE 4000 HOLD AT OMCEW RIGHT TURN INBOUNDCOURSE 130 LEGDIST 4 FAF CULIV MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ELREE",
+                    "fixes": {
+                        "ELREE": "ELREE"
+                    }
+                },
+                {
+                    "name": "PIR",
+                    "fixes": {
+                        "PIR": "PIR",
+                        "ITIXE": "OVERFLY ITIXE AT OR ABOVE 4000 HOLD AT ITIXE RIGHT TURN INBOUNDCOURSE 310 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VAYLA",
+                    "fixes": {
+                        "VAYLA": "VAYLA"
+                    }
+                }
+            ]
+        }
+    ]
+}

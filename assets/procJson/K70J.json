@@ -1,0 +1,194 @@
+{
+    "fixes": [
+        {
+            "name": "CEYAV",
+            "lat": 30.933241666666667,
+            "lon": 84.243575
+        },
+        {
+            "name": "CYRNB",
+            "lat": 30.888169433333335,
+            "lon": 84.15933056666667
+        },
+        {
+            "name": "ELMOE",
+            "lat": 31.285388883333333,
+            "lon": 84.32048056666666
+        },
+        {
+            "name": "FF13",
+            "lat": 30.946691666666666,
+            "lon": 84.23208611666666
+        },
+        {
+            "name": "GEF",
+            "lat": 30.551341666666666,
+            "lon": 83.78313333333334
+        },
+        {
+            "name": "GUCEC",
+            "lat": 30.781533333333332,
+            "lon": 83.946575
+        },
+        {
+            "name": "HARKE",
+            "lat": 31.075488883333332,
+            "lon": 84.02367221666667
+        },
+        {
+            "name": "ILAYI",
+            "lat": 30.839519433333333,
+            "lon": 84.05983056666666
+        },
+        {
+            "name": "LLOYD",
+            "lat": 30.554297216666665,
+            "lon": 84.10159166666666
+        },
+        {
+            "name": "OCAPE",
+            "lat": 30.897394433333332,
+            "lon": 84.42106666666666
+        },
+        {
+            "name": "PI001",
+            "lat": 30.927943166666665,
+            "lon": 84.20906428333333
+        },
+        {
+            "name": "PI002",
+            "lat": 30.925415216666668,
+            "lon": 84.29255685
+        },
+        {
+            "name": "PI003",
+            "lat": 31.001758083333332,
+            "lon": 84.30153673333334
+        },
+        {
+            "name": "RENOE",
+            "lat": 30.812636116666667,
+            "lon": 84.35526666666667
+        },
+        {
+            "name": "SZW",
+            "lat": 30.556227783333334,
+            "lon": 84.37394166666667
+        },
+        {
+            "name": "WOMKA",
+            "lat": 30.847380566666665,
+            "lon": 84.07523056666666
+        },
+        {
+            "name": "WOPAX",
+            "lat": 30.900725,
+            "lon": 83.86448611666667
+        },
+        {
+            "name": "YALUC",
+            "lat": 30.990963883333333,
+            "lon": 84.35716111666666
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB13",
+            "fixes": {
+                "FF13": "FF13 1900 RNW 13",
+                "CYRNB": "CYRNB TRK 137 UNTIL 1500 TURN RIGHT DIRECT CYRNB AT OR ABOVE 3000 HOLD AT CYRNB RIGHT TURN INBOUNDCOURSE 137 LEGTIME 1 FAF FF13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "GEF",
+                    "fixes": {
+                        "GEF": "GEF",
+                        "CYRNB": "CYRNB AT OR ABOVE 3300",
+                        "PI001": "PI001 AT OR ABOVE 1900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1900 SPEED 210"
+                    }
+                },
+                {
+                    "name": "RENOE",
+                    "fixes": {
+                        "RENOE": "RENOE",
+                        "CYRNB": "CYRNB AT OR ABOVE 2100",
+                        "PI001": "PI001 AT OR ABOVE 1900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1900 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SZW",
+                    "fixes": {
+                        "SZW": "SZW",
+                        "CYRNB": "CYRNB AT OR ABOVE 2200",
+                        "PI001": "PI001 AT OR ABOVE 1900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1900 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "YALUC": "YALUC AT OR ABOVE 3000",
+                "CEYAV": "CEYAV 1900 RNW 13 TRK 125 UNTIL 664",
+                "WOMKA": "WOMKA",
+                "LLOYD": "OVERFLY LLOYD AT OR ABOVE 3000 HOLD AT LLOYD RIGHT TURN INBOUNDCOURSE 268 LEGDIST 4 FAF CEYAV MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "ELMOE",
+                    "fixes": {
+                        "ELMOE": "ELMOE"
+                    }
+                },
+                {
+                    "name": "SZW",
+                    "fixes": {
+                        "SZW": "SZW",
+                        "OCAPE": "OCAPE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "YALUC",
+                    "fixes": {
+                        "YALUC": "YALUC RIGHT TURN INBOUNDCOURSE 125 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "GUCEC": "GUCEC AT OR ABOVE 3000",
+                "ILAYI": "ILAYI 2000 RNW 31 TRK 305 UNTIL 540",
+                "YALUC": "OVERFLY YALUC AT OR ABOVE 3000 HOLD AT YALUC RIGHT TURN INBOUNDCOURSE 125 LEGDIST 4 FAF ILAYI MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "GEF",
+                    "fixes": {
+                        "GEF": "GEF"
+                    }
+                },
+                {
+                    "name": "HARKE",
+                    "fixes": {
+                        "HARKE": "HARKE",
+                        "WOPAX": "WOPAX AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

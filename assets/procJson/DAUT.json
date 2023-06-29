@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "D236H",
+            "lat": 29.151269433333333,
+            "lon": 0.13185
+        },
+        {
+            "name": "D236I",
+            "lat": 29.141911116666666,
+            "lon": 0.11608056666666666
+        },
+        {
+            "name": "FD06",
+            "lat": 29.169983333333334,
+            "lon": 0.16339166666666666
+        },
+        {
+            "name": "FS06",
+            "lat": 29.168902783333333,
+            "lon": 0.16156943333333332
+        },
+        {
+            "name": "TIO",
+            "lat": 29.226080566666667,
+            "lon": 0.2580944333333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD06",
+            "fixes": {
+                "FD06": "FD06 3120",
+                "TIO": "TIO 1176 RNW 06 TRK 056 UNTIL 2790 TURN LEFT DIRECT TIO 5420 FAF FD06 MAP TIO"
+            },
+            "transitions": [
+                {
+                    "name": "TIO1",
+                    "fixes": {
+                        "TIO": "TIO AT OR ABOVE 5420 TRK 208 UNTIL 9.0 FROM TIO TURN RIGHT DIRECT",
+                        "D236I": "D236I AT OR ABOVE 3120"
+                    }
+                },
+                {
+                    "name": "TIO2",
+                    "fixes": {
+                        "TIO": "TIO AT OR ABOVE 5420 TRK 220 UNTIL 8.0 FROM TIO TURN RIGHT DIRECT",
+                        "D236H": "D236H AT OR ABOVE 3120"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR06",
+            "fixes": {
+                "FS06": "FS06 3120",
+                "TIO": "TIO 1175 RNW 06 TRK 056 UNTIL 2790 TURN LEFT DIRECT TIO 5420 FAF FS06 MAP TIO"
+            },
+            "transitions": [
+                {
+                    "name": "TIO1",
+                    "fixes": {
+                        "TIO": "TIO AT OR ABOVE 5420 TRK 208 UNTIL 7.0 FROM TIO"
+                    }
+                },
+                {
+                    "name": "TIO2",
+                    "fixes": {
+                        "TIO": "TIO AT OR ABOVE 5420 TRK 222 UNTIL 7.0 FROM TIO"
+                    }
+                }
+            ]
+        }
+    ]
+}

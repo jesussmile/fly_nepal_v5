@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "FF05",
+            "lat": 66.208925,
+            "lon": 166.28054721666666
+        },
+        {
+            "name": "PI001",
+            "lat": 66.23337798333333,
+            "lon": 166.183571
+        },
+        {
+            "name": "PI002",
+            "lat": 66.25779945,
+            "lon": 166.35083633333332
+        },
+        {
+            "name": "PI003",
+            "lat": 66.18719838333334,
+            "lon": 166.42651215
+        },
+        {
+            "name": "ROSOC",
+            "lat": 66.21095,
+            "lon": 166.28051943333332
+        },
+        {
+            "name": "SHHNB",
+            "lat": 66.25808611666666,
+            "lon": 166.05238888333332
+        },
+        {
+            "name": "SIPOC",
+            "lat": 66.33196388333333,
+            "lon": 165.67544721666667
+        },
+        {
+            "name": "TITOC",
+            "lat": 66.16599166666667,
+            "lon": 166.50089443333334
+        },
+        {
+            "name": "UGIPE",
+            "lat": 66.09189443333334,
+            "lon": 166.40835278333333
+        },
+        {
+            "name": "VIGGU",
+            "lat": 66.24003333333333,
+            "lon": 166.59397778333334
+        },
+        {
+            "name": "WOPIG",
+            "lat": 66.28791111666666,
+            "lon": 165.89775833333334
+        },
+        {
+            "name": "YOTUK",
+            "lat": 66.25738333333334,
+            "lon": 165.58471388333334
+        },
+        {
+            "name": "ZIROD",
+            "lat": 66.40648888333334,
+            "lon": 165.76672221666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB05",
+            "fixes": {
+                "FF05": "FF05 1600 RNW 05",
+                "SHHNB": "OVERFLY SHHNB HOLD AT SHHNB RIGHT TURN INBOUNDCOURSE 051 ALT 2000 LEGTIME 1 FAF FF05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "SHH",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "TITOC": "TITOC AT OR ABOVE 2500",
+                "ROSOC": "ROSOC 1600 RNW 05 TRK 049 UNTIL 300",
+                "SIPOC": "OVERFLY SIPOC AT OR ABOVE 2500 HOLD AT SIPOC RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4 FAF ROSOC MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "TITOC",
+                    "fixes": {
+                        "TITOC": "TITOC RIGHT TURN INBOUNDCOURSE 049 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UGIPE",
+                    "fixes": {
+                        "UGIPE": "UGIPE AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "VIGGU",
+                    "fixes": {
+                        "VIGGU": "VIGGU AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "SIPOC": "SIPOC AT OR ABOVE 2500",
+                "WOPIG": "WOPIG 1600 RNW 23 TRK 230 UNTIL 380",
+                "TITOC": "OVERFLY TITOC AT OR ABOVE 2500 HOLD AT TITOC RIGHT TURN INBOUNDCOURSE 049 LEGDIST 4 FAF WOPIG MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "SIPOC",
+                    "fixes": {
+                        "SIPOC": "SIPOC RIGHT TURN INBOUNDCOURSE 230 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "YOTUK",
+                    "fixes": {
+                        "YOTUK": "YOTUK AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "ZIROD",
+                    "fixes": {
+                        "ZIROD": "ZIROD AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

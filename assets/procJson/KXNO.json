@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "ADAVE",
+            "lat": 33.80728056666667,
+            "lon": 81.05809166666667
+        },
+        {
+            "name": "BLOYD",
+            "lat": 33.669975,
+            "lon": 80.98493333333333
+        },
+        {
+            "name": "CEDIL",
+            "lat": 33.59753611666667,
+            "lon": 81.10253611666667
+        },
+        {
+            "name": "GOTEY",
+            "lat": 33.493394433333336,
+            "lon": 81.27097778333334
+        },
+        {
+            "name": "HAYNY",
+            "lat": 33.55293056666667,
+            "lon": 81.174775
+        },
+        {
+            "name": "JARYY",
+            "lat": 33.72929443333334,
+            "lon": 80.88834443333333
+        },
+        {
+            "name": "JEDDI",
+            "lat": 33.66345556666667,
+            "lon": 80.73045556666666
+        },
+        {
+            "name": "JIBUD",
+            "lat": 33.707341666666665,
+            "lon": 81.06644721666666
+        },
+        {
+            "name": "KAMRE",
+            "lat": 33.619061116666664,
+            "lon": 81.07381388333333
+        },
+        {
+            "name": "ZIMEK",
+            "lat": 33.44083056666667,
+            "lon": 81.08863888333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA06",
+            "fixes": {
+                "ADAVE": "ADAVE AT OR ABOVE 2000",
+                "JIBUD": "JIBUD 2000",
+                "KAMRE": "KAMRE 1400 RNW 06",
+                "ZIMEK": "ZIMEK 2000 HOLD AT ZIMEK RIGHT TURN INBOUNDCOURSE 006 SPEED 230 LEGDIST 4 FAF JIBUD MAP KAMRE"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORDA24",
+            "fixes": {
+                "ADAVE": "ADAVE AT OR ABOVE 2000",
+                "JIBUD": "JIBUD 2000",
+                "KAMRE": "KAMRE 1400 RNW 24",
+                "ZIMEK": "ZIMEK 2000 HOLD AT ZIMEK RIGHT TURN INBOUNDCOURSE 006 SPEED 230 LEGDIST 4 FAF JIBUD MAP KAMRE"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "GOTEY": "GOTEY AT OR ABOVE 2000",
+                "HAYNY": "HAYNY 2000",
+                "CEDIL": "OVERFLY CEDIL 489 RNW 06",
+                "BLOYD": "OVERFLY BLOYD AT OR ABOVE 2000 HOLD AT BLOYD RIGHT TURN INBOUNDCOURSE 061 ALT 10000 SPEED 230 LEGDIST 5 FAF HAYNY MAP CEDIL"
+            },
+            "transitions": [
+                {
+                    "name": "GOTEY",
+                    "fixes": {
+                        "GOTEY": "GOTEY RIGHT TURN INBOUNDCOURSE 061 ALT 2000 SPEED 230 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "JARYY": "JARYY AT OR ABOVE 3000",
+                "BLOYD": "BLOYD 2000 RNW 24",
+                "GOTEY": "OVERFLY GOTEY AT OR ABOVE 2000 HOLD AT GOTEY RIGHT TURN INBOUNDCOURSE 241 ALT 10000 SPEED 230 LEGDIST 5 FAF BLOYD MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "JEDDI",
+                    "fixes": {
+                        "JEDDI": "JEDDI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

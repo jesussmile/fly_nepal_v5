@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "DUVEM",
+            "lat": 67.65584721666667,
+            "lon": 114.86413056666666
+        },
+        {
+            "name": "LIBOP",
+            "lat": 67.85565,
+            "lon": 115.31651111666666
+        },
+        {
+            "name": "MA240",
+            "lat": 67.81432778333334,
+            "lon": 115.129125
+        },
+        {
+            "name": "NUGEB",
+            "lat": 67.83495278333334,
+            "lon": 115.65568056666666
+        },
+        {
+            "name": "OTPIG",
+            "lat": 67.77779443333333,
+            "lon": 114.972825
+        },
+        {
+            "name": "PI001",
+            "lat": 67.81405533333333,
+            "lon": 114.94459743333333
+        },
+        {
+            "name": "PI002",
+            "lat": 67.85820803333333,
+            "lon": 114.79496341666666
+        },
+        {
+            "name": "PI003",
+            "lat": 67.8003393,
+            "lon": 114.66010001666666
+        },
+        {
+            "name": "PITUV",
+            "lat": 67.906475,
+            "lon": 115.54386943333333
+        },
+        {
+            "name": "ROPLU",
+            "lat": 67.97792221666667,
+            "lon": 115.43136943333333
+        },
+        {
+            "name": "ROVGO",
+            "lat": 67.797725,
+            "lon": 114.636725
+        },
+        {
+            "name": "SAXIK",
+            "lat": 67.72682778333333,
+            "lon": 114.75076943333333
+        },
+        {
+            "name": "TEVUR",
+            "lat": 67.77843611666667,
+            "lon": 114.97564443333333
+        },
+        {
+            "name": "UDKAR",
+            "lat": 67.85543333333334,
+            "lon": 115.31555
+        },
+        {
+            "name": "YCONB",
+            "lat": 67.82123611666667,
+            "lon": 115.097925
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "PITUV": "PITUV AT OR ABOVE 1900",
+                "LIBOP": "LIBOP 1400 RNW 12",
+                "OTPIG": "OVERFLY OTPIG 3000 HOLD AT OTPIG RIGHT TURN INBOUNDCOURSE 011 SPEED 230 LEGTIME 1 FAF LIBOP MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "NUGEB",
+                    "fixes": {
+                        "NUGEB": "NUGEB SPEED 210"
+                    }
+                },
+                {
+                    "name": "ROPLU",
+                    "fixes": {
+                        "ROPLU": "ROPLU SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVT12",
+            "fixes": {
+                "YCONB": "YCONB 900 YCONB 1600 HOLD AT YCONB RIGHT TURN INBOUNDCOURSE 022 SPEED 230 LEGTIME 1 FAF YCONB MAP MA240",
+                "MA240": "MA240 700 RNW 12 TRK 022 UNTIL 1600 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "YCO",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "SAXIK": "SAXIK AT OR ABOVE 2000",
+                "TEVUR": "TEVUR 1400 RNW 30",
+                "UDKAR": "OVERFLY UDKAR 2900 HOLD AT UDKAR RIGHT TURN INBOUNDCOURSE 029 SPEED 230 LEGTIME 1 FAF TEVUR MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "DUVEM",
+                    "fixes": {
+                        "DUVEM": "DUVEM SPEED 210"
+                    }
+                },
+                {
+                    "name": "ROVGO",
+                    "fixes": {
+                        "ROVGO": "ROVGO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVT30",
+            "fixes": {
+                "YCONB": "YCONB 900 YCONB 1600 HOLD AT YCONB RIGHT TURN INBOUNDCOURSE 022 SPEED 230 LEGTIME 1 FAF YCONB MAP MA240",
+                "MA240": "MA240 700 RNW 30 TRK 022 UNTIL 1600 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "YCO",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1400 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

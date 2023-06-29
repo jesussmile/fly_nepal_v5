@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "CN501",
+            "lat": 7.693944433333334,
+            "lon": 108.40444443333334
+        },
+        {
+            "name": "CN502",
+            "lat": 7.712666666666666,
+            "lon": 108.34525
+        },
+        {
+            "name": "CN503",
+            "lat": 7.760222216666667,
+            "lon": 108.36147221666667
+        },
+        {
+            "name": "CN504",
+            "lat": 7.7405,
+            "lon": 108.42388888333333
+        },
+        {
+            "name": "CN701",
+            "lat": 7.746138883333334,
+            "lon": 108.57258333333333
+        },
+        {
+            "name": "CN702",
+            "lat": 7.727388883333333,
+            "lon": 108.63177778333333
+        },
+        {
+            "name": "CN703",
+            "lat": 7.6795,
+            "lon": 108.61652778333334
+        },
+        {
+            "name": "CN704",
+            "lat": 7.699277783333334,
+            "lon": 108.55413888333334
+        },
+        {
+            "name": "EN25",
+            "lat": 7.721036116666666,
+            "lon": 108.49591666666667
+        },
+        {
+            "name": "FN07",
+            "lat": 7.737061116666666,
+            "lon": 108.39811111666667
+        },
+        {
+            "name": "FN25",
+            "lat": 7.69585,
+            "lon": 108.57847221666667
+        },
+        {
+            "name": "NW",
+            "lat": 7.72225,
+            "lon": 108.49194443333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB07",
+            "fixes": {
+                "FN07": "FN07 1700 RNW 07",
+                "NW": "OVERFLY NW TRK 080 UNTIL 1500 TURN LEFT DIRECT NW AT OR ABOVE 3000 HOLD AT NW LEFT TURN INBOUNDCOURSE 276 ALT 3000 LEGTIME 1 FAF FN07 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "NW",
+                    "fixes": {
+                        "NW": "NW AT OR ABOVE 3000 TRK 276 UNTIL 7.5 FROM NW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FN25": "FN25 1700",
+                "EN25": "OVERFLY EN25 63",
+                "NW": "OVERFLY NW AT OR ABOVE 420 RNW 25 TRK 252 UNTIL 1000 TURN RIGHT DIRECT NW AT OR ABOVE 3000 HOLD AT NW LEFT TURN INBOUNDCOURSE 080 ALT 3000 LEGTIME 1 FAF FN25 MAP NW"
+            },
+            "transitions": [
+                {
+                    "name": "NW",
+                    "fixes": {
+                        "NW": "NW AT OR ABOVE 3000 TRK 080 UNTIL 5.4 FROM NW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "CN503": "CN503 AT OR ABOVE 2000",
+                "CN504": "CN504 1200 RNW 07 TRK 072 UNTIL 1500 TURN LEFT DIRECT",
+                "NW": "NW AT OR ABOVE 3000 HOLD AT NW LEFT TURN INBOUNDCOURSE 287 ALT 3000 LEGTIME 1 FAF CN504 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "NW",
+                    "fixes": {
+                        "NW": "NW AT OR ABOVE 3000",
+                        "CN501": "CN501 AT OR ABOVE 3000",
+                        "CN502": "CN502 AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "CN703": "CN703 AT OR ABOVE 2000",
+                "CN704": "CN704 1200 RNW 25 TRK 252 UNTIL 1500 TURN RIGHT DIRECT",
+                "NW": "NW AT OR ABOVE 3000 HOLD AT NW LEFT TURN INBOUNDCOURSE 106 ALT 3000 LEGTIME 1 FAF CN704 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "NW",
+                    "fixes": {
+                        "NW": "NW AT OR ABOVE 3000",
+                        "CN701": "CN701 AT OR ABOVE 3000",
+                        "CN702": "CN702 AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

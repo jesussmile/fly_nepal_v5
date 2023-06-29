@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "CI34L",
+            "lat": 29.923000000000002,
+            "lon": 30.949572216666667
+        },
+        {
+            "name": "CVO",
+            "lat": 30.092305566666667,
+            "lon": 31.388416666666668
+        },
+        {
+            "name": "CVO28",
+            "lat": 30.210111116666667,
+            "lon": 30.865972216666666
+        },
+        {
+            "name": "D228V",
+            "lat": 29.86991666666667,
+            "lon": 31.051616666666668
+        },
+        {
+            "name": "D292T",
+            "lat": 30.248,
+            "lon": 31.03858333333333
+        },
+        {
+            "name": "D310P",
+            "lat": 30.278083333333335,
+            "lon": 31.176305566666667
+        },
+        {
+            "name": "FI34L",
+            "lat": 30.020169433333333,
+            "lon": 30.921347216666668
+        },
+        {
+            "name": "SX601",
+            "lat": 29.869888883333335,
+            "lon": 31.051611116666667
+        },
+        {
+            "name": "SX602",
+            "lat": 29.923000000000002,
+            "lon": 30.949583333333333
+        },
+        {
+            "name": "SX603",
+            "lat": 30.020166666666668,
+            "lon": 30.921333333333333
+        },
+        {
+            "name": "SX604",
+            "lat": 30.210111116666667,
+            "lon": 30.865972216666666
+        },
+        {
+            "name": "SX605",
+            "lat": 30.248,
+            "lon": 31.03858333333333
+        },
+        {
+            "name": "SX606",
+            "lat": 30.278083333333335,
+            "lon": 31.176305566666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 16L",
+        "RNW 16R",
+        "RNW 28",
+        "RNW 34L",
+        "RNW 34R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS34L",
+            "fixes": {
+                "CI34L": "CI34L AT OR ABOVE 2500",
+                "FI34L": "FI34L 2000 RNW 34L",
+                "CVO28": "CVO28 AT OR ABOVE 1800",
+                "D292T": "D292T AT OR ABOVE 3200",
+                "D310P": "D310P",
+                "CVO": "CVO 6000 HOLD AT CVO LEFT TURN INBOUNDCOURSE 279 ALT 6000 LEGTIME 1 FAF FI34L MAP RNW 34L"
+            },
+            "transitions": [
+                {
+                    "name": "CVO",
+                    "fixes": {
+                        "CVO": "CVO AT OR ABOVE 6000",
+                        "D228V": "D228V AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "D228V",
+                    "fixes": {
+                        "D228V": "D228V AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34L",
+            "fixes": {
+                "SX602": "SX602 AT OR ABOVE 2500",
+                "SX603": "SX603 2000 RNW 34L",
+                "SX604": "SX604 AT OR ABOVE 1800",
+                "SX605": "SX605 AT OR ABOVE 3200",
+                "SX606": "SX606 AT OR ABOVE 4400",
+                "CVO": "CVO AT OR ABOVE 6000 HOLD AT CVO LEFT TURN INBOUNDCOURSE 228 ALT 6000 LEGTIME 1 FAF SX603 MAP RNW 34L"
+            },
+            "transitions": [
+                {
+                    "name": "CVO",
+                    "fixes": {
+                        "CVO": "CVO AT OR ABOVE 6000",
+                        "SX601": "SX601 AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "fixes": [
+        {
+            "name": "BOLIM",
+            "lat": 2.9413888833333335,
+            "lon": 76.00111111666666
+        },
+        {
+            "name": "EGAKO",
+            "lat": 2.751111116666667,
+            "lon": 76.5475
+        },
+        {
+            "name": "FN12",
+            "lat": 2.7527138833333336,
+            "lon": 76.53201388333333
+        },
+        {
+            "name": "IQT",
+            "lat": 3.7925,
+            "lon": 73.31777778333333
+        },
+        {
+            "name": "MASPO",
+            "lat": 3.0797222166666667,
+            "lon": 76.06944443333333
+        },
+        {
+            "name": "OAS",
+            "lat": 2.7894444333333333,
+            "lon": 76.4775
+        },
+        {
+            "name": "OASNB",
+            "lat": 2.8069444333333333,
+            "lon": 76.455
+        },
+        {
+            "name": "OSUBU",
+            "lat": 3.328888883333333,
+            "lon": 76.05194443333333
+        },
+        {
+            "name": "PABAM",
+            "lat": 3.4036111166666667,
+            "lon": 75.61361111666666
+        },
+        {
+            "name": "PUNUD",
+            "lat": 4.163055566666666,
+            "lon": 76.12666666666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "BOLIM1",
+            "rnw": "30",
+            "fixes": {
+                "BOLIM": "BOLIM AT OR ABOVE 8000",
+                "IQT": "IQT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MASPO1",
+            "rnw": "30",
+            "fixes": {
+                "MASPO": "MASPO AT OR ABOVE 8000",
+                "PABAM": "PABAM"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PUNUD1",
+            "rnw": "30",
+            "fixes": {
+                "OSUBU": "OSUBU AT OR ABOVE 8000",
+                "PUNUD": "PUNUD AT OR ABOVE 13000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "BOLIM1",
+            "runway": "RNW 12",
+            "fixes": {
+                "IQT": "IQT",
+                "BOLIM": "BOLIM AT OR ABOVE 8000",
+                "OAS": "OAS"
+            }
+        },
+        {
+            "name": "MASPO1",
+            "runway": "RNW 12",
+            "fixes": {
+                "PABAM": "PABAM",
+                "MASPO": "MASPO AT OR ABOVE 8000",
+                "OAS": "OAS"
+            }
+        },
+        {
+            "name": "PUNUD1",
+            "runway": "RNW 12",
+            "fixes": {
+                "PUNUD": "PUNUD AT OR ABOVE 13000",
+                "OSUBU": "OSUBU AT OR ABOVE 8000",
+                "OAS": "OAS"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD12",
+            "fixes": {
+                "EGAKO": "EGAKO 2400",
+                "OAS": "OAS 845 RNW 12 HDG 123 UNTIL 4000 TURN LEFT DIRECT OAS HOLD AT OAS RIGHT TURN INBOUNDCOURSE 284 LEGTIME 1 FAF EGAKO MAP OAS"
+            },
+            "transitions": [
+                {
+                    "name": "OAS",
+                    "fixes": {
+                        "OAS": "OAS AT OR ABOVE 4000 TRK 284 UNTIL 6.0 FROM OAS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FN12": "FN12 2100 RNW 12",
+                "OASNB": "OVERFLY OASNB HDG 129 UNTIL 3000 TURN RIGHT DIRECT OASNB HOLD AT OASNB LEFT TURN INBOUNDCOURSE 324 SPEED 180 LEGTIME 1 FAF FN12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "OAS",
+                    "fixes": {
+                        "OASNB": "OASNB AT OR ABOVE 3000 SPEED 150 TRK 324 UNTIL 6.3 FROM OASNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

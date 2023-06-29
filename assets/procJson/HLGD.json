@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "30VO2",
+            "lat": 31.108788883333332,
+            "lon": 16.5909
+        },
+        {
+            "name": "30VOR",
+            "lat": 31.009002783333333,
+            "lon": 16.594952783333333
+        },
+        {
+            "name": "CI36",
+            "lat": 30.976783333333334,
+            "lon": 16.593783333333334
+        },
+        {
+            "name": "FD18",
+            "lat": 31.141947216666665,
+            "lon": 16.586163883333334
+        },
+        {
+            "name": "FD36",
+            "lat": 30.975641666666668,
+            "lon": 16.592925
+        },
+        {
+            "name": "FI36",
+            "lat": 31.010194433333332,
+            "lon": 16.593783333333334
+        },
+        {
+            "name": "MD18",
+            "lat": 31.08391943333333,
+            "lon": 16.59445
+        },
+        {
+            "name": "MD36",
+            "lat": 31.034025,
+            "lon": 16.596475
+        },
+        {
+            "name": "SRT",
+            "lat": 31.05905,
+            "lon": 16.598
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "FD18": "FD18 1500",
+                "30VO2": "30VO2 AT OR ABOVE 1000",
+                "MD18": "MD18 473 RNW 18 TRK 171 UNTIL 2000 TURN RIGHT DIRECT",
+                "SRT": "SRT 2000 HOLD AT SRT LEFT TURN INBOUNDCOURSE 351 LEGTIME 1 FAF FD18 MAP MD18"
+            },
+            "transitions": [
+                {
+                    "name": "SRT",
+                    "fixes": {
+                        "SRT": "SRT AT OR ABOVE 2000 SPEED 210",
+                        "FD18": "FD18 AT OR ABOVE 1500 TRK 306 UNTIL 4.3 FROM FD18"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD36",
+            "fixes": {
+                "FD36": "FD36 1500",
+                "30VOR": "30VOR AT OR ABOVE 1000",
+                "MD36": "MD36 511 RNW 36 TRK 001 UNTIL 2000 TURN LEFT DIRECT",
+                "SRT": "SRT 2000 HOLD AT SRT RIGHT TURN INBOUNDCOURSE 181 LEGTIME 1 FAF FD36 MAP MD36"
+            },
+            "transitions": [
+                {
+                    "name": "SRT",
+                    "fixes": {
+                        "SRT": "SRT AT OR ABOVE 2000 SPEED 210",
+                        "FD36": "FD36 AT OR ABOVE 1500 TRK 136 UNTIL 4.3 FROM FD36"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS36",
+            "fixes": {
+                "CI36": "CI36 AT OR ABOVE 1500",
+                "FI36": "FI36 1000 RNW 36 TRK 358 UNTIL 2000 TURN LEFT DIRECT",
+                "SRT": "SRT 2000 HOLD AT SRT RIGHT TURN INBOUNDCOURSE 181 LEGTIME 1 FAF FI36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "SRT",
+                    "fixes": {
+                        "SRT": "SRT AT OR ABOVE 2000 SPEED 210",
+                        "CI36": "CI36 AT OR ABOVE 1500 TRK 136 UNTIL 4.3 FROM CI36"
+                    }
+                }
+            ]
+        }
+    ]
+}

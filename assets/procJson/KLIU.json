@@ -1,0 +1,68 @@
+{
+    "fixes": [
+        {
+            "name": "CATIG",
+            "lat": 33.894477783333336,
+            "lon": 102.39795556666667
+        },
+        {
+            "name": "FLATT",
+            "lat": 33.65054166666667,
+            "lon": 102.34752221666666
+        },
+        {
+            "name": "GOVTY",
+            "lat": 33.741961116666666,
+            "lon": 102.45465833333333
+        },
+        {
+            "name": "HOGIX",
+            "lat": 33.842425,
+            "lon": 102.41731943333333
+        },
+        {
+            "name": "WINNS",
+            "lat": 33.59025556666667,
+            "lon": 102.80938056666666
+        },
+        {
+            "name": "ZUBUM",
+            "lat": 33.66219443333333,
+            "lon": 102.52717778333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 13",
+        "RNW 19",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "GOVTY": "GOVTY AT OR ABOVE 6000",
+                "HOGIX": "HOGIX 5200",
+                "CATIG": "CATIG AT OR ABOVE 4160 RNW 01 TRK 010 UNTIL 3982 TURN RIGHT DIRECT",
+                "FLATT": "OVERFLY FLATT AT OR ABOVE 6000 HOLD AT FLATT RIGHT TURN INBOUNDCOURSE 255 LEGDIST 5 FAF HOGIX MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "FLATT",
+                    "fixes": {
+                        "FLATT": "FLATT"
+                    }
+                },
+                {
+                    "name": "WINNS",
+                    "fixes": {
+                        "WINNS": "WINNS",
+                        "ZUBUM": "ZUBUM AT OR ABOVE 6100"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "CLSTA",
+            "lat": 62.043830566666664,
+            "lon": 158.44149721666668
+        },
+        {
+            "name": "DONLN",
+            "lat": 62.043947216666666,
+            "lon": 158.26801111666666
+        },
+        {
+            "name": "ENRIC",
+            "lat": 62.090611116666665,
+            "lon": 158.39715278333333
+        },
+        {
+            "name": "KURDY",
+            "lat": 62.25264166666667,
+            "lon": 158.10004166666667
+        },
+        {
+            "name": "MACLL",
+            "lat": 62.13304443333333,
+            "lon": 158.515125
+        },
+        {
+            "name": "MILIE",
+            "lat": 62.070141666666665,
+            "lon": 158.34041943333332
+        },
+        {
+            "name": "UTICE",
+            "lat": 62.30982221666667,
+            "lon": 157.63243888333332
+        },
+        {
+            "name": "YKDLT",
+            "lat": 62.21799443333333,
+            "lon": 158.37644166666666
+        },
+        {
+            "name": "ZIDMU",
+            "lat": 61.80733888333334,
+            "lon": 159.10000556666665
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "UTICE1",
+            "rnw": "30",
+            "fixes": {
+                "ENRIC": "ENRIC",
+                "YKDLT": "YKDLT",
+                "UTICE": "UTICE AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVM12",
+            "fixes": {
+                "MACLL": "MACLL AT OR ABOVE 3300 MACLL",
+                "ENRIC": "ENRIC 2500",
+                "MILIE": "MILIE AT OR ABOVE 1700",
+                "DONLN": "OVERFLY DONLN 790 RNW 12 TRK 116 UNTIL 1400 TURN RIGHT DIRECT",
+                "CLSTA": "CLSTA SPEED 185",
+                "YKDLT": "YKDLT",
+                "KURDY": "OVERFLY KURDY AT OR ABOVE 5000 HOLD AT KURDY RIGHT TURN INBOUNDCOURSE 243 SPEED 230 LEGDIST 5 FAF ENRIC MAP DONLN"
+            },
+            "transitions": [
+                {
+                    "name": "UTICE",
+                    "fixes": {
+                        "UTICE": "UTICE",
+                        "KURDY": "KURDY AT OR ABOVE 4000",
+                        "YKDLT": "YKDLT AT OR ABOVE 4000 SPEED 230"
+                    }
+                },
+                {
+                    "name": "YKDLT",
+                    "fixes": {
+                        "YKDLT": "YKDLT SPEED 230"
+                    }
+                },
+                {
+                    "name": "ZIDMU",
+                    "fixes": {
+                        "ZIDMU": "ZIDMU"
+                    }
+                }
+            ]
+        }
+    ]
+}

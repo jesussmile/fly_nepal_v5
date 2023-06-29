@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "JOMVU",
+            "lat": 35.18865556666667,
+            "lon": 87.24463611666667
+        },
+        {
+            "name": "ORAVY",
+            "lat": 35.30861111666667,
+            "lon": 87.27964166666666
+        },
+        {
+            "name": "UWNED",
+            "lat": 35.02064721666667,
+            "lon": 87.19578333333334
+        },
+        {
+            "name": "WABOL",
+            "lat": 35.43847221666667,
+            "lon": 87.31765278333333
+        },
+        {
+            "name": "YITUT",
+            "lat": 35.15053888333333,
+            "lon": 87.23353333333333
+        },
+        {
+            "name": "YUNUR",
+            "lat": 35.40720278333333,
+            "lon": 87.47626388333333
+        },
+        {
+            "name": "ZALPI",
+            "lat": 35.469527783333334,
+            "lon": 87.15892221666667
+        },
+        {
+            "name": "ZIDID",
+            "lat": 35.05155,
+            "lon": 87.03781943333334
+        },
+        {
+            "name": "ZUPNA",
+            "lat": 34.98953888333333,
+            "lon": 87.35362778333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "WABOL": "WABOL AT OR ABOVE 3700",
+                "ORAVY": "ORAVY 2500 RNW 17 TRK 168 UNTIL 1225",
+                "UWNED": "OVERFLY UWNED AT OR ABOVE 3800 HOLD AT UWNED RIGHT TURN INBOUNDCOURSE 348 LEGDIST 4 FAF ORAVY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "WABOL",
+                    "fixes": {
+                        "WABOL": "WABOL RIGHT TURN INBOUNDCOURSE 168 ALT 3700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "YUNUR",
+                    "fixes": {
+                        "YUNUR": "YUNUR AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "ZALPI",
+                    "fixes": {
+                        "ZALPI": "ZALPI AT OR ABOVE 3700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "UWNED": "UWNED AT OR ABOVE 3800",
+                "YITUT": "YITUT 2600",
+                "JOMVU": "JOMVU AT OR ABOVE 1800 RNW 35 TRK 348 UNTIL 1293",
+                "WABOL": "OVERFLY WABOL AT OR ABOVE 3700 HOLD AT WABOL RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4 FAF YITUT MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "UWNED",
+                    "fixes": {
+                        "UWNED": "UWNED RIGHT TURN INBOUNDCOURSE 348 ALT 3800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZIDID",
+                    "fixes": {
+                        "ZIDID": "ZIDID AT OR ABOVE 3800"
+                    }
+                },
+                {
+                    "name": "ZUPNA",
+                    "fixes": {
+                        "ZUPNA": "ZUPNA AT OR ABOVE 3800"
+                    }
+                }
+            ]
+        }
+    ]
+}

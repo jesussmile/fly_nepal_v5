@@ -1,0 +1,90 @@
+{
+    "fixes": [
+        {
+            "name": "HEKEN",
+            "lat": 36.69141943333333,
+            "lon": 109.84391666666667
+        },
+        {
+            "name": "HUTGI",
+            "lat": 36.796630566666664,
+            "lon": 110.005275
+        },
+        {
+            "name": "JOXED",
+            "lat": 36.75524721666667,
+            "lon": 110.12066388333334
+        },
+        {
+            "name": "ROUGH",
+            "lat": 36.4465,
+            "lon": 109.68502778333334
+        },
+        {
+            "name": "WODSO",
+            "lat": 36.614175,
+            "lon": 109.88664721666666
+        },
+        {
+            "name": "YIKLO",
+            "lat": 36.40946111666667,
+            "lon": 109.87146388333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "ROUGH1",
+            "rnw": "08",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 05",
+                    "fixes": {
+                        "RNW 05": "RNW 05 HDG 053 UNTIL 6188 TURN RIGHT DIRECT",
+                        "ROUGH": "ROUGH AT OR ABOVE 12000"
+                    }
+                },
+                {
+                    "rwy": "RNW 23",
+                    "fixes": {
+                        "RNW 23": "RNW 23 HDG 233 UNTIL 6188 TURN RIGHT DIRECT",
+                        "WODSO": "WODSO",
+                        "ROUGH": "ROUGH AT OR ABOVE 12000"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "HUTGI": "HUTGI AT OR ABOVE 8200",
+                "JOXED": "JOXED 7300 RNW 23 TRK 233 UNTIL 6500 TURN RIGHT DIRECT",
+                "ROUGH": "OVERFLY ROUGH AT OR ABOVE 12000 HOLD AT ROUGH RIGHT TURN INBOUNDCOURSE 064 LEGDIST 7 FAF JOXED MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "ROUGH",
+                    "fixes": {
+                        "ROUGH": "ROUGH",
+                        "HEKEN": "HEKEN AT OR ABOVE 10000"
+                    }
+                },
+                {
+                    "name": "YIKLO",
+                    "fixes": {
+                        "YIKLO": "YIKLO",
+                        "HEKEN": "HEKEN AT OR ABOVE 10000"
+                    }
+                }
+            ]
+        }
+    ]
+}

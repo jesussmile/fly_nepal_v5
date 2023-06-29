@@ -1,0 +1,142 @@
+{
+    "fixes": [
+        {
+            "name": "FF10",
+            "lat": 22.548822216666668,
+            "lon": 167.39008333333334
+        },
+        {
+            "name": "FF28",
+            "lat": 22.610883333333334,
+            "lon": 167.52960556666667
+        },
+        {
+            "name": "FWE10",
+            "lat": 22.551333333333332,
+            "lon": 167.366
+        },
+        {
+            "name": "FWE28",
+            "lat": 22.623055566666668,
+            "lon": 167.53811111666667
+        },
+        {
+            "name": "IPNB",
+            "lat": 22.59,
+            "lon": 167.45108333333334
+        },
+        {
+            "name": "IWE10",
+            "lat": 22.52047221666667,
+            "lon": 167.29211111666666
+        },
+        {
+            "name": "IWE28",
+            "lat": 22.653833333333335,
+            "lon": 167.61208333333335
+        },
+        {
+            "name": "WE901",
+            "lat": 22.444166666666668,
+            "lon": 167.32894443333333
+        },
+        {
+            "name": "WE903",
+            "lat": 22.486111116666667,
+            "lon": 167.21005556666665
+        },
+        {
+            "name": "WE904",
+            "lat": 22.577555566666668,
+            "lon": 167.649
+        },
+        {
+            "name": "WE910",
+            "lat": 22.514722216666666,
+            "lon": 167.49302778333333
+        },
+        {
+            "name": "WE911",
+            "lat": 22.510222216666666,
+            "lon": 167.48188888333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB10",
+            "fixes": {
+                "FF10": "FF10 1500 RNW 10",
+                "IPNB": "OVERFLY IPNB TRK 113 UNTIL 2000 FAF FF10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "IP",
+                    "fixes": {
+                        "IPNB": "IPNB AT OR ABOVE 2000 TRK 279 UNTIL 7.5 FROM IPNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB28",
+            "fixes": {
+                "FF28": "FF28 1500 RNW 28",
+                "IPNB": "OVERFLY IPNB TRK 273 UNTIL 2000 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "IP",
+                    "fixes": {
+                        "IPNB": "IPNB AT OR ABOVE 2000 TRK 079 UNTIL 7.5 FROM IPNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "IWE10": "IWE10 AT OR ABOVE 2000",
+                "FWE10": "FWE10 2000 RNW 10 TRK 101 UNTIL 1200 TURN LEFT DIRECT",
+                "WE911": "WE911 AT OR ABOVE 3000",
+                "WE901": "WE901 AT OR ABOVE 3000 FAF FWE10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "WE901",
+                    "fixes": {
+                        "WE901": "WE901 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WE903",
+                    "fixes": {
+                        "WE903": "WE903 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "IWE28": "IWE28 AT OR ABOVE 2000",
+                "FWE28": "FWE28 2000 RNW 28 TRK 281 UNTIL 1200 TURN RIGHT DIRECT",
+                "WE910": "WE910",
+                "WE904": "WE904 AT OR ABOVE 3000 FAF FWE28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "WE904",
+                    "fixes": {
+                        "WE904": "WE904 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "FQA07",
+            "lat": 49.1581,
+            "lon": 3.9811138833333333
+        },
+        {
+            "name": "FQA25",
+            "lat": 49.294069433333334,
+            "lon": 4.2685
+        },
+        {
+            "name": "IQA07",
+            "lat": 49.131175,
+            "lon": 3.8882416666666666
+        },
+        {
+            "name": "IQA25",
+            "lat": 49.357244433333335,
+            "lon": 4.3395166666666665
+        },
+        {
+            "name": "MQA25",
+            "lat": 49.21553888333333,
+            "lon": 4.1803388833333335
+        },
+        {
+            "name": "MV145",
+            "lat": 49.21802778333333,
+            "lon": 4.138125
+        },
+        {
+            "name": "QA501",
+            "lat": 49.19202778333333,
+            "lon": 3.84625
+        },
+        {
+            "name": "QA503",
+            "lat": 49.069858333333336,
+            "lon": 3.92795
+        },
+        {
+            "name": "QA701",
+            "lat": 49.42647221666667,
+            "lon": 4.2682416666666665
+        },
+        {
+            "name": "QA702",
+            "lat": 49.42446666666667,
+            "lon": 4.415183333333333
+        },
+        {
+            "name": "QA714",
+            "lat": 49.170991666666666,
+            "lon": 4.130558333333333
+        },
+        {
+            "name": "REM",
+            "lat": 49.31163888333333,
+            "lon": 4.045361116666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "IQA07": "IQA07 AT OR ABOVE 2700 SPEED 180",
+                "FQA07": "FQA07 2700 SPEED 180 RNW 07 TURN RIGHT DIRECT",
+                "QA503": "QA503 2700 SPEED 130 FAF FQA07 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "QA501",
+                    "fixes": {
+                        "QA501": "QA501 AT OR ABOVE 2700 SPEED 180"
+                    }
+                },
+                {
+                    "name": "QA503",
+                    "fixes": {
+                        "QA503": "QA503 AT OR ABOVE 2700 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "IQA25": "IQA25 AT OR ABOVE 2500 SPEED 180",
+                "FQA25": "FQA25 2500 SPEED 180",
+                "MQA25": "OVERFLY MQA25 603 SPEED 130 RNW 25",
+                "QA714": "OVERFLY QA714 SPEED 140 TURN RIGHT DIRECT",
+                "QA701": "QA701 2700 SPEED 140 FAF FQA25 MAP MQA25"
+            },
+            "transitions": [
+                {
+                    "name": "QA701",
+                    "fixes": {
+                        "QA701": "QA701 AT OR ABOVE 2500 SPEED 180"
+                    }
+                },
+                {
+                    "name": "QA702",
+                    "fixes": {
+                        "QA702": "QA702 AT OR ABOVE 2500 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA07",
+            "fixes": {
+                "REM": "REM 2700 REM 2700 HOLD AT REM LEFT TURN INBOUNDCOURSE 145 SPEED 170 LEGTIME 1 FAF REM MAP MV145",
+                "MV145": "OVERFLY MV145 1390 RNW 07 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "REM",
+                    "fixes": {
+                        "REM": "REM LEFT TURN INBOUNDCOURSE 145 ALT 2700 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA25",
+            "fixes": {
+                "REM": "REM 2700 REM 2700 HOLD AT REM LEFT TURN INBOUNDCOURSE 145 SPEED 170 LEGTIME 1 FAF REM MAP MV145",
+                "MV145": "OVERFLY MV145 1390 RNW 25 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "REM",
+                    "fixes": {
+                        "REM": "REM LEFT TURN INBOUNDCOURSE 145 ALT 2700 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

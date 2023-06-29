@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "BEREW",
+            "lat": 39.808736116666665,
+            "lon": 74.54016943333333
+        },
+        {
+            "name": "CIKSO",
+            "lat": 39.58841111666667,
+            "lon": 74.78730278333333
+        },
+        {
+            "name": "CYN",
+            "lat": 39.817338883333335,
+            "lon": 74.431625
+        },
+        {
+            "name": "DORTH",
+            "lat": 39.72631388333333,
+            "lon": 74.67061666666666
+        },
+        {
+            "name": "MA240",
+            "lat": 39.67223611666667,
+            "lon": 74.75590833333334
+        },
+        {
+            "name": "MASEE",
+            "lat": 39.488855566666665,
+            "lon": 74.82443888333333
+        },
+        {
+            "name": "VCN",
+            "lat": 39.537672216666664,
+            "lon": 74.96714443333333
+        },
+        {
+            "name": "WOKES",
+            "lat": 39.63067778333333,
+            "lon": 74.77150278333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MASEE": "MASEE AT OR ABOVE 2100 OVERFLY MASEE AT OR ABOVE 2100 HOLD AT MASEE RIGHT TURN INBOUNDCOURSE 029 LEGDIST 4 FAF CIKSO MAP RNW 03",
+                "CIKSO": "CIKSO 1600",
+                "WOKES": "WOKES AT OR ABOVE 740 RNW 03 TRK 029 UNTIL 465 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "VCN",
+                    "fixes": {
+                        "VCN": "VCN",
+                        "MASEE": "OVERFLY MASEE AT OR ABOVE 2100 HOLD AT MASEE RIGHT TURN INBOUNDCOURSE 029 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB03",
+            "fixes": {
+                "BEREW": "BEREW AT OR ABOVE 2000",
+                "DORTH": "DORTH 1700",
+                "MA240": "OVERFLY MA240 680 RNW 03",
+                "VCN": "VCN AT OR ABOVE 2000 HOLD AT VCN RIGHT TURN INBOUNDCOURSE 061 LEGTIME 1 FAF DORTH MAP MA240"
+            },
+            "transitions": [
+                {
+                    "name": "CYN",
+                    "fixes": {
+                        "CYN": "CYN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB21",
+            "fixes": {
+                "BEREW": "BEREW AT OR ABOVE 2000",
+                "DORTH": "DORTH 1700",
+                "MA240": "OVERFLY MA240 680 RNW 21",
+                "VCN": "VCN AT OR ABOVE 2000 HOLD AT VCN RIGHT TURN INBOUNDCOURSE 061 LEGTIME 1 FAF DORTH MAP MA240"
+            },
+            "transitions": [
+                {
+                    "name": "CYN",
+                    "fixes": {
+                        "CYN": "CYN"
+                    }
+                }
+            ]
+        }
+    ]
+}

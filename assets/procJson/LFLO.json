@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "FLO20",
+            "lat": 46.141666666666666,
+            "lon": 4.036972216666666
+        },
+        {
+            "name": "ILO20",
+            "lat": 46.22961111666667,
+            "lon": 4.074055566666667
+        },
+        {
+            "name": "LO402",
+            "lat": 46.23805556666667,
+            "lon": 4.241916666666667
+        },
+        {
+            "name": "LO404",
+            "lat": 46.2985,
+            "lon": 3.9381111166666667
+        },
+        {
+            "name": "LO410",
+            "lat": 46.030138883333336,
+            "lon": 3.9901388833333336
+        },
+        {
+            "name": "RNNNB",
+            "lat": 46.11236111666667,
+            "lon": 4.037111116666667
+        },
+        {
+            "name": "ROA",
+            "lat": 46.05916666666667,
+            "lon": 3.9992777833333335
+        },
+        {
+            "name": "SNNB",
+            "lat": 46.294361116666664,
+            "lon": 4.121388883333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "ILO20": "ILO20 AT OR ABOVE 3700 SPEED 210",
+                "FLO20": "FLO20 2900 SPEED 160 RNW 20",
+                "LO410": "OVERFLY LO410 TURN LEFT DIRECT",
+                "SNNB": "SNNB AT OR ABOVE 3700 SPEED 160 FAF FLO20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "LO402",
+                    "fixes": {
+                        "LO402": "LO402 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "LO404",
+                    "fixes": {
+                        "LO404": "LO404 AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "SN",
+                    "fixes": {
+                        "SNNB": "SNNB AT OR BELOW 5000 AT OR ABOVE 3700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR20",
+            "fixes": {
+                "RNNNB": "RNNNB 2400 RNW 20 RNNNB 3700 SPEED 170",
+                "ROA": "OVERFLY ROA AT OR ABOVE 1510 TURN LEFT DIRECT",
+                "SNNB": "SNNB FAF RNNNB MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "SN",
+                    "fixes": {
+                        "SNNB": "SNNB LEFT TURN INBOUNDCOURSE 326 ALT 3700 SPEED 210 LEGTIME 1 SNNB TRK 326 UNTIL 0.5 FROM SNNB TURN LEFT TRK 146 INTERCEPT RADIAL 204 TO",
+                        "RNNNB": "RNNNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

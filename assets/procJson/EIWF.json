@@ -1,0 +1,79 @@
+{
+    "fixes": [
+        {
+            "name": "D053J",
+            "lat": 52.300302783333336,
+            "lon": 6.874136116666667
+        },
+        {
+            "name": "GAMDO",
+            "lat": 52.39394443333333,
+            "lon": 6.957222216666667
+        },
+        {
+            "name": "INPAT",
+            "lat": 52.324055566666665,
+            "lon": 7.001222216666667
+        },
+        {
+            "name": "TOGBO",
+            "lat": 52.277472216666666,
+            "lon": 7.030472216666666
+        },
+        {
+            "name": "WF005",
+            "lat": 52.34736111666667,
+            "lon": 6.9865555666666666
+        },
+        {
+            "name": "WF007",
+            "lat": 52.14538888333333,
+            "lon": 7.113055566666667
+        },
+        {
+            "name": "WTDNB",
+            "lat": 52.189,
+            "lon": 7.083333333333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS21",
+            "fixes": {
+                "INPAT": "INPAT 2500",
+                "TOGBO": "TOGBO 2000 RNW 21",
+                "WF007": "OVERFLY WF007 TURN RIGHT DIRECT",
+                "WTDNB": "WTDNB 3000 SPEED 240 HOLD AT WTDNB RIGHT TURN INBOUNDCOURSE 025 SPEED 190 LEGTIME 1 FAF TOGBO MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "GAMDO",
+                    "fixes": {
+                        "GAMDO": "GAMDO AT OR ABOVE 3000",
+                        "WF005": "WF005 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WF005",
+                    "fixes": {
+                        "WF005": "WF005 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WTD1",
+                    "fixes": {
+                        "WTDNB": "WTDNB AT OR ABOVE 3000 SPEED 190",
+                        "D053J": "OVERFLY D053J AT OR ABOVE 3000 TURN LEFT DIRECT",
+                        "WF005": "WF005 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

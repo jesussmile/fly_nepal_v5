@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "DEPGE",
+            "lat": 33.285452783333334,
+            "lon": 89.62095
+        },
+        {
+            "name": "EHAKE",
+            "lat": 33.1552,
+            "lon": 89.61315
+        },
+        {
+            "name": "EHEBU",
+            "lat": 33.024925,
+            "lon": 89.47058888333333
+        },
+        {
+            "name": "GUDRE",
+            "lat": 32.95116388333334,
+            "lon": 89.39012778333333
+        },
+        {
+            "name": "IGB",
+            "lat": 33.485486116666664,
+            "lon": 88.51358888333333
+        },
+        {
+            "name": "JINED",
+            "lat": 33.228822216666664,
+            "lon": 89.69397221666667
+        },
+        {
+            "name": "PULCO",
+            "lat": 33.007627783333334,
+            "lon": 89.31715
+        },
+        {
+            "name": "SQS",
+            "lat": 33.46385,
+            "lon": 90.27735
+        },
+        {
+            "name": "VELLU",
+            "lat": 33.120611116666666,
+            "lon": 89.57524443333334
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "JINED": "JINED AT OR ABOVE 2100",
+                "EHAKE": "EHAKE 2100",
+                "VELLU": "VELLU AT OR ABOVE 1180 RNW 14 TRK 137 UNTIL 894",
+                "GUDRE": "OVERFLY GUDRE AT OR ABOVE 2200 HOLD AT GUDRE RIGHT TURN INBOUNDCOURSE 317 LEGDIST 4 FAF EHAKE MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "IGB": "IGB",
+                        "DEPGE": "DEPGE AT OR ABOVE 2800"
+                    }
+                },
+                {
+                    "name": "JINED",
+                    "fixes": {
+                        "JINED": "JINED RIGHT TURN INBOUNDCOURSE 137 ALT 2100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SQS",
+                    "fixes": {
+                        "SQS": "SQS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "GUDRE": "GUDRE AT OR ABOVE 2200",
+                "EHEBU": "EHEBU 2100 RNW 32 TRK 317 UNTIL 894",
+                "JINED": "OVERFLY JINED AT OR ABOVE 2100 HOLD AT JINED RIGHT TURN INBOUNDCOURSE 137 LEGDIST 4 FAF EHEBU MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "IGB": "IGB",
+                        "PULCO": "PULCO AT OR ABOVE 2200"
+                    }
+                },
+                {
+                    "name": "SQS",
+                    "fixes": {
+                        "SQS": "SQS",
+                        "GUDRE": "OVERFLY GUDRE AT OR ABOVE 2200 HOLD AT GUDRE RIGHT TURN INBOUNDCOURSE 317 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "FUJRU",
+            "lat": 44.54870278333333,
+            "lon": 90.38030556666666
+        },
+        {
+            "name": "HUTOG",
+            "lat": 44.57525,
+            "lon": 90.75796666666666
+        },
+        {
+            "name": "KIMQE",
+            "lat": 44.54061943333333,
+            "lon": 90.26875833333334
+        },
+        {
+            "name": "PUVEE",
+            "lat": 44.567538883333334,
+            "lon": 90.64636388333334
+        },
+        {
+            "name": "YACUB",
+            "lat": 44.561366666666665,
+            "lon": 90.55817221666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "HUTOG": "HUTOG AT OR ABOVE 3000",
+                "PUVEE": "PUVEE 3000",
+                "YACUB": "YACUB AT OR ABOVE 1780 RNW 10 TRK 097 UNTIL 1498",
+                "KIMQE": "OVERFLY KIMQE AT OR ABOVE 3000 HOLD AT KIMQE RIGHT TURN INBOUNDCOURSE 277 LEGDIST 4 FAF PUVEE MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "HUTOG",
+                    "fixes": {
+                        "HUTOG": "HUTOG RIGHT TURN INBOUNDCOURSE 096 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "KIMQE": "KIMQE AT OR ABOVE 3000",
+                "FUJRU": "FUJRU 3000 RNW 28 TRK 277 UNTIL 1638",
+                "HUTOG": "OVERFLY HUTOG AT OR ABOVE 3000 HOLD AT HUTOG RIGHT TURN INBOUNDCOURSE 096 LEGDIST 4 FAF FUJRU MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "KIMQE",
+                    "fixes": {
+                        "KIMQE": "KIMQE RIGHT TURN INBOUNDCOURSE 277 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

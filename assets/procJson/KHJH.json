@@ -1,0 +1,129 @@
+{
+    "fixes": [
+        {
+            "name": "AMIFA",
+            "lat": 40.04550556666667,
+            "lon": 97.41181111666667
+        },
+        {
+            "name": "APIXY",
+            "lat": 40.097377783333336,
+            "lon": 97.49680833333333
+        },
+        {
+            "name": "FAZED",
+            "lat": 39.92407778333333,
+            "lon": 97.66830556666666
+        },
+        {
+            "name": "IDEPE",
+            "lat": 40.21226943333333,
+            "lon": 97.6858
+        },
+        {
+            "name": "IVOCU",
+            "lat": 40.32941388333333,
+            "lon": 97.70368056666666
+        },
+        {
+            "name": "LATJI",
+            "lat": 40.26396943333334,
+            "lon": 97.77118333333334
+        },
+        {
+            "name": "STEEL",
+            "lat": 40.025547216666666,
+            "lon": 97.14398333333334
+        },
+        {
+            "name": "STURE",
+            "lat": 39.98011111666667,
+            "lon": 97.47911943333334
+        },
+        {
+            "name": "SUEKI",
+            "lat": 40.45536666666667,
+            "lon": 97.57811666666667
+        },
+        {
+            "name": "VACRO",
+            "lat": 40.110761116666666,
+            "lon": 97.34421111666667
+        },
+        {
+            "name": "WUMTE",
+            "lat": 40.198486116666665,
+            "lon": 97.83855833333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 12",
+        "RNW 21",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS30",
+            "fixes": {
+                "AMIFA": "AMIFA AT OR ABOVE 3400",
+                "APIXY": "APIXY 3100 RNW 30 TRK 304 UNTIL 1870",
+                "LATJI": "LATJI AT OR ABOVE 3400 HOLD AT LATJI RIGHT TURN INBOUNDCOURSE 124 LEGDIST 4 FAF APIXY MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "AMIFA",
+                    "fixes": {
+                        "AMIFA": "AMIFA RIGHT TURN INBOUNDCOURSE 304 ALT 3400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "FAZED",
+                    "fixes": {
+                        "FAZED": "FAZED",
+                        "STURE": "STURE AT OR ABOVE 3400"
+                    }
+                },
+                {
+                    "name": "STEEL",
+                    "fixes": {
+                        "STEEL": "STEEL",
+                        "VACRO": "VACRO AT OR ABOVE 3400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "LATJI": "LATJI AT OR ABOVE 3400",
+                "IDEPE": "IDEPE 3200 RNW 12 TRK 124 UNTIL 1868",
+                "AMIFA": "OVERFLY AMIFA AT OR ABOVE 3400 HOLD AT AMIFA RIGHT TURN INBOUNDCOURSE 304 LEGDIST 4 FAF IDEPE MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "FAZED",
+                    "fixes": {
+                        "FAZED": "FAZED",
+                        "WUMTE": "WUMTE AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "LATJI",
+                    "fixes": {
+                        "LATJI": "LATJI RIGHT TURN INBOUNDCOURSE 124 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SUEKI",
+                    "fixes": {
+                        "SUEKI": "SUEKI",
+                        "IVOCU": "IVOCU AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

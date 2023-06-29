@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "APDON",
+            "lat": 48.905830566666666,
+            "lon": 122.74572221666666
+        },
+        {
+            "name": "CALBI",
+            "lat": 48.78740556666666,
+            "lon": 122.85522778333333
+        },
+        {
+            "name": "CANDL",
+            "lat": 48.71396111666667,
+            "lon": 122.62763611666666
+        },
+        {
+            "name": "CVV",
+            "lat": 48.244694433333336,
+            "lon": 122.72441666666667
+        },
+        {
+            "name": "EASTD",
+            "lat": 48.80991111666667,
+            "lon": 122.68656666666666
+        },
+        {
+            "name": "FEGBA",
+            "lat": 48.52965833333333,
+            "lon": 122.911775
+        },
+        {
+            "name": "HORLA",
+            "lat": 48.656075,
+            "lon": 122.89355
+        },
+        {
+            "name": "HUH",
+            "lat": 48.945286116666665,
+            "lon": 122.57925556666666
+        },
+        {
+            "name": "JESOR",
+            "lat": 48.69613888333333,
+            "lon": 122.91065833333333
+        },
+        {
+            "name": "NAKHU",
+            "lat": 48.631258333333335,
+            "lon": 122.91110833333333
+        },
+        {
+            "name": "OKAYA",
+            "lat": 48.55571388333333,
+            "lon": 122.85486388333334
+        },
+        {
+            "name": "ORCUS",
+            "lat": 48.344316666666664,
+            "lon": 123.12889166666666
+        },
+        {
+            "name": "TALCS",
+            "lat": 48.72464721666667,
+            "lon": 122.91050833333334
+        },
+        {
+            "name": "WIBEB",
+            "lat": 48.612516666666664,
+            "lon": 122.87498333333333
+        },
+        {
+            "name": "ZEKIS",
+            "lat": 48.74191666666667,
+            "lon": 122.89531111666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "FEGBA2",
+            "rnw": "16",
+            "fixes": {
+                "FEGBA": "FEGBA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "APDON": "APDON AT OR ABOVE 2000 OVERFLY APDON AT OR ABOVE 2000 HOLD AT APDON RIGHT TURN INBOUNDCOURSE 194 LEGDIST 4 FAF CALBI MAP TALCS",
+                "CALBI": "CALBI 1900",
+                "ZEKIS": "ZEKIS AT OR ABOVE 720",
+                "TALCS": "OVERFLY TALCS 320 RNW 16 TRK 193 UNTIL 440 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CANDL",
+                    "fixes": {
+                        "CANDL": "CANDL",
+                        "EASTD": "EASTD AT OR ABOVE 2500",
+                        "APDON": "OVERFLY APDON AT OR ABOVE 2000 HOLD AT APDON RIGHT TURN INBOUNDCOURSE 194 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HUH",
+                    "fixes": {
+                        "HUH": "HUH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "OKAYA": "OKAYA AT OR ABOVE 3000",
+                "WIBEB": "WIBEB 2300",
+                "HORLA": "HORLA AT OR ABOVE 1240",
+                "JESOR": "OVERFLY JESOR 264 RNW 34 TRK 327 UNTIL 435 TURN RIGHT DIRECT",
+                "HUH": "OVERFLY HUH AT OR ABOVE 2000 HOLD AT HUH LEFT TURN INBOUNDCOURSE 351 LEGDIST 4 FAF WIBEB MAP JESOR"
+            },
+            "transitions": [
+                {
+                    "name": "CVV",
+                    "fixes": {
+                        "CVV": "CVV AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "ORCUS",
+                    "fixes": {
+                        "ORCUS": "ORCUS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA34",
+            "fixes": {
+                "FEGBA": "FEGBA AT OR ABOVE 3000",
+                "NAKHU": "NAKHU 2200 RNW 34 TRK 343 UNTIL 435",
+                "HUH": "OVERFLY HUH AT OR ABOVE 2000 HOLD AT HUH LEFT TURN INBOUNDCOURSE 351 LEGDIST 4 FAF NAKHU MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "CVV",
+                    "fixes": {
+                        "CVV": "CVV"
+                    }
+                },
+                {
+                    "name": "ORCUS",
+                    "fixes": {
+                        "ORCUS": "ORCUS"
+                    }
+                }
+            ]
+        }
+    ]
+}

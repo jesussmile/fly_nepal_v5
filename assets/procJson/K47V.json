@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "BLUED",
+            "lat": 40.76294166666667,
+            "lon": 100.67578888333334
+        },
+        {
+            "name": "FOBOX",
+            "lat": 40.700383333333335,
+            "lon": 100.573125
+        },
+        {
+            "name": "HASEK",
+            "lat": 40.524061116666665,
+            "lon": 100.28559721666667
+        },
+        {
+            "name": "INADE",
+            "lat": 40.61832221666667,
+            "lon": 100.43896666666667
+        },
+        {
+            "name": "JESIT",
+            "lat": 40.66283056666666,
+            "lon": 100.51165833333333
+        },
+        {
+            "name": "JONEM",
+            "lat": 40.586877783333335,
+            "lon": 100.38772221666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 17",
+        "RNW 30",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "BLUED": "BLUED AT OR ABOVE 5000",
+                "FOBOX": "FOBOX 4500",
+                "JESIT": "JESIT AT OR ABOVE 3340 RNW 12 TRK 123 UNTIL 3002",
+                "HASEK": "OVERFLY HASEK AT OR ABOVE 5000 HOLD AT HASEK RIGHT TURN INBOUNDCOURSE 303 LEGDIST 5 FAF FOBOX MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "BLUED",
+                    "fixes": {
+                        "BLUED": "BLUED RIGHT TURN INBOUNDCOURSE 123 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "HASEK": "HASEK AT OR ABOVE 5000",
+                "JONEM": "JONEM 4200",
+                "INADE": "INADE AT OR ABOVE 3240 RNW 30 TRK 303 UNTIL 3002",
+                "BLUED": "OVERFLY BLUED AT OR ABOVE 5000 HOLD AT BLUED RIGHT TURN INBOUNDCOURSE 123 LEGDIST 5 FAF JONEM MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "HASEK",
+                    "fixes": {
+                        "HASEK": "HASEK RIGHT TURN INBOUNDCOURSE 303 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

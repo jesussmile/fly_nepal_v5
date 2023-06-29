@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "ACKNE",
+            "lat": 36.411125,
+            "lon": 85.00508056666666
+        },
+        {
+            "name": "BEMER",
+            "lat": 36.491175,
+            "lon": 85.07954721666667
+        },
+        {
+            "name": "JAGGY",
+            "lat": 36.267105566666665,
+            "lon": 84.94732778333334
+        },
+        {
+            "name": "JUBUN",
+            "lat": 36.392891666666664,
+            "lon": 84.9463
+        },
+        {
+            "name": "LVT",
+            "lat": 36.58450833333333,
+            "lon": 85.16662221666667
+        },
+        {
+            "name": "MAFHI",
+            "lat": 36.352122216666665,
+            "lon": 84.95031943333333
+        },
+        {
+            "name": "NOVEE",
+            "lat": 36.43160278333333,
+            "lon": 84.94598056666666
+        },
+        {
+            "name": "ZILIB",
+            "lat": 36.15713888333333,
+            "lon": 84.94822778333334
+        },
+        {
+            "name": "ZOLPU",
+            "lat": 36.554775,
+            "lon": 84.94496666666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVC01",
+            "fixes": {
+                "ZOLPU": "ZOLPU AT OR ABOVE 4000",
+                "NOVEE": "NOVEE 3500",
+                "JUBUN": "JUBUN AT OR ABOVE 2600 RNW 01 TRK 185 UNTIL 2094",
+                "ZILIB": "OVERFLY ZILIB AT OR ABOVE 4400 HOLD AT ZILIB RIGHT TURN INBOUNDCOURSE 005 LEGDIST 4 FAF NOVEE MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ZOLPU",
+                    "fixes": {
+                        "ZOLPU": "ZOLPU RIGHT TURN INBOUNDCOURSE 185 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB19",
+            "fixes": {
+                "ZILIB": "ZILIB AT OR ABOVE 4400",
+                "JAGGY": "JAGGY 3500 RNW 19 TRK 005 UNTIL 2094",
+                "ZOLPU": "OVERFLY ZOLPU AT OR ABOVE 4000 HOLD AT ZOLPU RIGHT TURN INBOUNDCOURSE 185 LEGDIST 4 FAF JAGGY MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "ZILIB",
+                    "fixes": {
+                        "ZILIB": "ZILIB RIGHT TURN INBOUNDCOURSE 005 ALT 4400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA01",
+            "fixes": {
+                "BEMER": "BEMER AT OR ABOVE 3300",
+                "ACKNE": "ACKNE 3300",
+                "MAFHI": "MAFHI 2700 RNW 01 TRK 145 UNTIL 2700 TURN LEFT DIRECT",
+                "LVT": "LVT AT OR ABOVE 4000 HOLD AT LVT RIGHT TURN INBOUNDCOURSE 145 LEGTIME 1 FAF ACKNE MAP MAFHI"
+            },
+            "transitions": [
+                {
+                    "name": "LVT",
+                    "fixes": {
+                        "LVT": "LVT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA19",
+            "fixes": {
+                "BEMER": "BEMER AT OR ABOVE 3300",
+                "ACKNE": "ACKNE 3300",
+                "MAFHI": "MAFHI 2700 RNW 19 TRK 145 UNTIL 2700 TURN LEFT DIRECT",
+                "LVT": "LVT AT OR ABOVE 4000 HOLD AT LVT RIGHT TURN INBOUNDCOURSE 145 LEGTIME 1 FAF ACKNE MAP MAFHI"
+            },
+            "transitions": [
+                {
+                    "name": "LVT",
+                    "fixes": {
+                        "LVT": "LVT"
+                    }
+                }
+            ]
+        }
+    ]
+}

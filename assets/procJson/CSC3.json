@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "ELUKI",
+            "lat": 45.78650278333333,
+            "lon": 72.46783611666666
+        },
+        {
+            "name": "EPSUN",
+            "lat": 45.90123333333333,
+            "lon": 72.32659443333333
+        },
+        {
+            "name": "FF06",
+            "lat": 45.76569166666667,
+            "lon": 72.47743611666667
+        },
+        {
+            "name": "FF24",
+            "lat": 45.905644433333336,
+            "lon": 72.29168056666667
+        },
+        {
+            "name": "IGVAL",
+            "lat": 45.764794433333336,
+            "lon": 72.65120833333333
+        },
+        {
+            "name": "IMAGO",
+            "lat": 45.65637778333333,
+            "lon": 72.47059721666666
+        },
+        {
+            "name": "KEMLO",
+            "lat": 45.710622216666664,
+            "lon": 72.56081388333334
+        },
+        {
+            "name": "KIRIB",
+            "lat": 45.976919433333336,
+            "lon": 72.23297778333334
+        },
+        {
+            "name": "LETUG",
+            "lat": 45.92241943333333,
+            "lon": 72.14265
+        },
+        {
+            "name": "LIDEP",
+            "lat": 46.03135,
+            "lon": 72.32348333333333
+        },
+        {
+            "name": "MASEM",
+            "lat": 45.78667778333333,
+            "lon": 72.46762221666667
+        },
+        {
+            "name": "NAMTO",
+            "lat": 45.900505566666666,
+            "lon": 72.32749166666666
+        },
+        {
+            "name": "PI001",
+            "lat": 45.798852133333334,
+            "lon": 72.44567681666666
+        },
+        {
+            "name": "PI002",
+            "lat": 45.728500516666664,
+            "lon": 72.4260873
+        },
+        {
+            "name": "PI003",
+            "lat": 45.70897146666667,
+            "lon": 72.53235351666666
+        },
+        {
+            "name": "PI004",
+            "lat": 45.8831168,
+            "lon": 72.33285571666667
+        },
+        {
+            "name": "PI005",
+            "lat": 45.8743373,
+            "lon": 72.23068826666666
+        },
+        {
+            "name": "PI006",
+            "lat": 45.94967705,
+            "lon": 72.2099962
+        },
+        {
+            "name": "Y8NB",
+            "lat": 45.847222216666665,
+            "lon": 72.39888888333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FF06": "FF06 2100 RNW 06",
+                "Y8NB": "OVERFLY Y8NB TRK 049 UNTIL 1900 TURN RIGHT DIRECT Y8NB 2900 HOLD AT Y8NB RIGHT TURN INBOUNDCOURSE 049 LEGTIME 1 FAF FF06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "Y8",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FF24": "FF24 2100 RNW 24",
+                "Y8NB": "OVERFLY Y8NB TRK 219 UNTIL 2900 TURN LEFT DIRECT Y8NB 2900 HOLD AT Y8NB LEFT TURN INBOUNDCOURSE 247 LEGTIME 1 FAF FF24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "Y8",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2100 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2100 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "KEMLO": "KEMLO AT OR ABOVE 1700",
+                "ELUKI": "ELUKI 1700 RNW 06",
+                "NAMTO": "OVERFLY NAMTO 2100 HOLD AT NAMTO RIGHT TURN INBOUNDCOURSE 056 LEGTIME 1 FAF ELUKI MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "IGVAL",
+                    "fixes": {
+                        "IGVAL": "IGVAL SPEED 210"
+                    }
+                },
+                {
+                    "name": "IMAGO",
+                    "fixes": {
+                        "IMAGO": "IMAGO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "KIRIB": "KIRIB AT OR ABOVE 1800",
+                "EPSUN": "EPSUN 1700 RNW 24",
+                "MASEM": "OVERFLY MASEM 2100 HOLD AT MASEM RIGHT TURN INBOUNDCOURSE 236 LEGTIME 1 FAF EPSUN MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "LETUG",
+                    "fixes": {
+                        "LETUG": "LETUG SPEED 210"
+                    }
+                },
+                {
+                    "name": "LIDEP",
+                    "fixes": {
+                        "LIDEP": "LIDEP SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

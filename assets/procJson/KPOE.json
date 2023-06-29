@@ -1,0 +1,140 @@
+{
+    "fixes": [
+        {
+            "name": "BITAY",
+            "lat": 31.129988883333333,
+            "lon": 93.22685278333333
+        },
+        {
+            "name": "BIYAL",
+            "lat": 30.956552783333333,
+            "lon": 93.15524721666667
+        },
+        {
+            "name": "CATVO",
+            "lat": 30.861427783333333,
+            "lon": 93.11608611666666
+        },
+        {
+            "name": "COCOS",
+            "lat": 31.228530566666667,
+            "lon": 93.26475278333334
+        },
+        {
+            "name": "DXBNB",
+            "lat": 30.752136116666666,
+            "lon": 93.33471943333333
+        },
+        {
+            "name": "FXU",
+            "lat": 31.111461116666668,
+            "lon": 93.219175
+        },
+        {
+            "name": "PI001",
+            "lat": 31.166274416666667,
+            "lon": 93.24249146666666
+        },
+        {
+            "name": "PI002",
+            "lat": 31.196539766666668,
+            "lon": 93.31842365
+        },
+        {
+            "name": "PI003",
+            "lat": 31.268059383333334,
+            "lon": 93.28586515
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "COCOS": "COCOS AT OR ABOVE 2000",
+                "BITAY": "BITAY 2000 RNW 16 TRK 158 UNTIL 729",
+                "CATVO": "OVERFLY CATVO AT OR ABOVE 2000 HOLD AT CATVO LEFT TURN INBOUNDCOURSE 338 LEGDIST 5 FAF BITAY MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CATVO",
+                    "fixes": {
+                        "CATVO": "CATVO",
+                        "COCOS": "OVERFLY COCOS AT OR ABOVE 2000 HOLD AT COCOS RIGHT TURN INBOUNDCOURSE 160 ALT 2000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "DXB",
+                    "fixes": {
+                        "DXBNB": "DXBNB",
+                        "COCOS": "OVERFLY COCOS AT OR ABOVE 2000 HOLD AT COCOS RIGHT TURN INBOUNDCOURSE 160 ALT 2000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "CATVO": "CATVO AT OR ABOVE 2000",
+                "BIYAL": "BIYAL 2000 RNW 34 TRK 338 UNTIL 729",
+                "BITAY": "BITAY",
+                "COCOS": "OVERFLY COCOS AT OR ABOVE 2000 HOLD AT COCOS RIGHT TURN INBOUNDCOURSE 160 LEGDIST 5 FAF BIYAL MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "COCOS",
+                    "fixes": {
+                        "COCOS": "COCOS",
+                        "CATVO": "OVERFLY CATVO AT OR ABOVE 2000 HOLD AT CATVO LEFT TURN INBOUNDCOURSE 338 ALT 2000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "DXB",
+                    "fixes": {
+                        "DXBNB": "DXBNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR16",
+            "fixes": {
+                "FXU": "FXU 1600 RNW 16 TRK 158 UNTIL 730 TURN RIGHT DIRECT",
+                "COCOS": "COCOS AT OR ABOVE 2000 HOLD AT COCOS RIGHT TURN INBOUNDCOURSE 160 LEGTIME 1 FAF FXU MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CATVO",
+                    "fixes": {
+                        "CATVO": "CATVO",
+                        "FXU": "FXU AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "COCOS",
+                    "fixes": {
+                        "COCOS": "COCOS"
+                    }
+                },
+                {
+                    "name": "DXB",
+                    "fixes": {
+                        "DXBNB": "DXBNB",
+                        "FXU": "FXU AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

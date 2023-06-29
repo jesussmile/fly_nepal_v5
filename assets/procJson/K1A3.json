@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "BSCUT",
+            "lat": 34.8618,
+            "lon": 84.39338888333333
+        },
+        {
+            "name": "HOVDO",
+            "lat": 35.23284721666667,
+            "lon": 84.28091943333334
+        },
+        {
+            "name": "OLBUE",
+            "lat": 35.32697221666667,
+            "lon": 84.11168888333333
+        },
+        {
+            "name": "OSLAE",
+            "lat": 34.7978,
+            "lon": 84.41267778333334
+        },
+        {
+            "name": "TUCKE",
+            "lat": 35.17398611666667,
+            "lon": 84.29882778333334
+        },
+        {
+            "name": "USIZI",
+            "lat": 34.70341388333333,
+            "lon": 84.50486111666666
+        },
+        {
+            "name": "WIPVI",
+            "lat": 34.92579443333333,
+            "lon": 84.37406943333333
+        },
+        {
+            "name": "YUGUC",
+            "lat": 35.295941666666664,
+            "lon": 84.359175
+        },
+        {
+            "name": "ZEGUX",
+            "lat": 35.11512221666667,
+            "lon": 84.31671388333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "OSLAE": "OSLAE AT OR ABOVE 6000",
+                "BSCUT": "BSCUT AT OR ABOVE 4700",
+                "WIPVI": "WIPVI 3500 RNW 02 TRK 019 UNTIL 2189",
+                "HOVDO": "OVERFLY HOVDO AT OR ABOVE 6000 HOLD AT HOVDO RIGHT TURN INBOUNDCOURSE 199 ALT 6000 LEGDIST 5 FAF WIPVI MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "OSLAE",
+                    "fixes": {
+                        "OSLAE": "OSLAE RIGHT TURN INBOUNDCOURSE 019 ALT 6000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "USIZI",
+                    "fixes": {
+                        "USIZI": "USIZI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "HOVDO": "HOVDO AT OR ABOVE 6000",
+                "TUCKE": "TUCKE AT OR ABOVE 4800",
+                "ZEGUX": "ZEGUX 3700 RNW 20 TRK 199 UNTIL 2189",
+                "OSLAE": "OVERFLY OSLAE AT OR ABOVE 6000 HOLD AT OSLAE RIGHT TURN INBOUNDCOURSE 019 ALT 6000 LEGDIST 5 FAF ZEGUX MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "HOVDO",
+                    "fixes": {
+                        "HOVDO": "HOVDO RIGHT TURN INBOUNDCOURSE 199 ALT 6000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "OLBUE",
+                    "fixes": {
+                        "OLBUE": "OLBUE"
+                    }
+                },
+                {
+                    "name": "YUGUC",
+                    "fixes": {
+                        "YUGUC": "YUGUC"
+                    }
+                }
+            ]
+        }
+    ]
+}

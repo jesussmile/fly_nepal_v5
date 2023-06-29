@@ -1,0 +1,187 @@
+{
+    "fixes": [
+        {
+            "name": "AHOVI",
+            "lat": 41.063369433333335,
+            "lon": 83.27365278333333
+        },
+        {
+            "name": "BAABE",
+            "lat": 41.00836388333333,
+            "lon": 83.54738056666666
+        },
+        {
+            "name": "CANAB",
+            "lat": 41.045994433333334,
+            "lon": 83.30823056666667
+        },
+        {
+            "name": "CEKUN",
+            "lat": 41.344672216666666,
+            "lon": 83.05856666666666
+        },
+        {
+            "name": "ELIJA",
+            "lat": 41.191172216666665,
+            "lon": 82.83559443333333
+        },
+        {
+            "name": "FBC",
+            "lat": 40.955333333333336,
+            "lon": 83.756025
+        },
+        {
+            "name": "FF24",
+            "lat": 41.13250278333334,
+            "lon": 83.1075
+        },
+        {
+            "name": "MAZKY",
+            "lat": 40.98951111666667,
+            "lon": 83.42036388333334
+        },
+        {
+            "name": "PI001",
+            "lat": 41.11929811666667,
+            "lon": 83.14479431666666
+        },
+        {
+            "name": "PI002",
+            "lat": 41.18663816666667,
+            "lon": 83.11222393333334
+        },
+        {
+            "name": "PI003",
+            "lat": 41.16492911666667,
+            "lon": 83.01432425
+        },
+        {
+            "name": "PI004",
+            "lat": 41.044386833333334,
+            "lon": 83.3892015
+        },
+        {
+            "name": "PI005",
+            "lat": 40.97841136666667,
+            "lon": 83.42629288333333
+        },
+        {
+            "name": "PI006",
+            "lat": 41.00364535,
+            "lon": 83.52225546666666
+        },
+        {
+            "name": "REBUT",
+            "lat": 41.06626111666667,
+            "lon": 83.31748888333334
+        },
+        {
+            "name": "TIINB",
+            "lat": 41.09466666666667,
+            "lon": 83.21497221666667
+        },
+        {
+            "name": "TIPEJ",
+            "lat": 41.14226943333333,
+            "lon": 83.11613888333333
+        },
+        {
+            "name": "VOBRY",
+            "lat": 41.20223888333334,
+            "lon": 82.99586943333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FF24": "FF24 2400 RNW 24",
+                "TIINB": "TIINB TRK 250 UNTIL 2400 TURN RIGHT DIRECT TIINB HOLD AT TIINB RIGHT TURN INBOUNDCOURSE 250 LEGTIME 1 FAF FF24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "TII",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "MAZKY": "MAZKY AT OR ABOVE 2400",
+                "CANAB": "CANAB 2400",
+                "AHOVI": "AHOVI AT OR ABOVE 1780 RNW 06 TRK 061 UNTIL 1137",
+                "VOBRY": "OVERFLY VOBRY AT OR ABOVE 2400 HOLD AT VOBRY RIGHT TURN INBOUNDCOURSE 242 LEGDIST 4 FAF CANAB MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "MAZKY",
+                    "fixes": {
+                        "MAZKY": "MAZKY RIGHT TURN INBOUNDCOURSE 061 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "VOBRY": "VOBRY AT OR ABOVE 2400",
+                "TIPEJ": "TIPEJ 2400 RNW 24 TRK 242 UNTIL 1058",
+                "MAZKY": "OVERFLY MAZKY AT OR ABOVE 2400 HOLD AT MAZKY RIGHT TURN INBOUNDCOURSE 061 LEGDIST 4 FAF TIPEJ MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "CEKUN",
+                    "fixes": {
+                        "CEKUN": "CEKUN"
+                    }
+                },
+                {
+                    "name": "ELIJA",
+                    "fixes": {
+                        "ELIJA": "ELIJA"
+                    }
+                },
+                {
+                    "name": "VOBRY",
+                    "fixes": {
+                        "VOBRY": "VOBRY RIGHT TURN INBOUNDCOURSE 242 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR06",
+            "fixes": {
+                "BAABE": "BAABE AT OR ABOVE 2600",
+                "REBUT": "REBUT 2400 RNW 06 TRK 073 UNTIL 2400 TURN LEFT DIRECT REBUT HOLD AT REBUT RIGHT TURN INBOUNDCOURSE 073 LEGTIME 1 FAF REBUT MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "FBC",
+                    "fixes": {
+                        "FBC": "FBC"
+                    }
+                },
+                {
+                    "name": "REBUT",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2400 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2400 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

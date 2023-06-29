@@ -1,0 +1,216 @@
+{
+    "fixes": [
+        {
+            "name": "EGRAM",
+            "lat": 62.78793888333333,
+            "lon": 149.89884166666667
+        },
+        {
+            "name": "EHZEG",
+            "lat": 62.95377778333334,
+            "lon": 149.92143611666665
+        },
+        {
+            "name": "EZZOL",
+            "lat": 62.242783333333335,
+            "lon": 150.17883333333333
+        },
+        {
+            "name": "FOSXI",
+            "lat": 62.408924999999996,
+            "lon": 150.12150278333334
+        },
+        {
+            "name": "HIDOP",
+            "lat": 62.65869443333333,
+            "lon": 150.01634166666668
+        },
+        {
+            "name": "HISLO",
+            "lat": 62.23475,
+            "lon": 150.13175833333332
+        },
+        {
+            "name": "IXIQE",
+            "lat": 62.16206388333333,
+            "lon": 150.126675
+        },
+        {
+            "name": "JEBOL",
+            "lat": 62.070116666666664,
+            "lon": 150.19869721666666
+        },
+        {
+            "name": "JINAG",
+            "lat": 62.528255566666665,
+            "lon": 150.13385556666665
+        },
+        {
+            "name": "JOZPO",
+            "lat": 62.153325,
+            "lon": 150.27600556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 62.17698326666667,
+            "lon": 150.14915216666665
+        },
+        {
+            "name": "PI002",
+            "lat": 62.133799116666665,
+            "lon": 150.27160518333332
+        },
+        {
+            "name": "PI003",
+            "lat": 62.06969646666667,
+            "lon": 150.18127931666666
+        },
+        {
+            "name": "PI004",
+            "lat": 62.24061105,
+            "lon": 150.12268051666666
+        },
+        {
+            "name": "PI005",
+            "lat": 62.19742673333333,
+            "lon": 150.24539136666667
+        },
+        {
+            "name": "PI006",
+            "lat": 62.133324216666665,
+            "lon": 150.15487496666665
+        },
+        {
+            "name": "POLYC",
+            "lat": 63.516666666666666,
+            "lon": 150.0
+        },
+        {
+            "name": "TKA",
+            "lat": 62.298377783333336,
+            "lon": 150.10525
+        },
+        {
+            "name": "URTOW",
+            "lat": 62.066952783333335,
+            "lon": 150.06090556666666
+        },
+        {
+            "name": "VOYUY",
+            "lat": 62.37415,
+            "lon": 150.06866388333333
+        },
+        {
+            "name": "WUVBA",
+            "lat": 62.33294166666667,
+            "lon": 150.08
+        },
+        {
+            "name": "ZENIB",
+            "lat": 62.418391666666665,
+            "lon": 150.05645833333332
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD01",
+            "fixes": {
+                "JEBOL": "JEBOL AT OR ABOVE 2500",
+                "HISLO": "HISLO 2000 RNW 01 TRK 352 UNTIL 2100 TURN LEFT DIRECT",
+                "TKA": "TKA AT OR ABOVE 3200 HOLD AT TKA LEFT TURN INBOUNDCOURSE 352 LEGTIME 1 FAF HISLO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "TKA",
+                    "fixes": {
+                        "TKA": "TKA",
+                        "HISLO": "HISLO AT OR ABOVE 4000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "URTOW",
+                    "fixes": {
+                        "URTOW": "URTOW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "JOZPO": "JOZPO AT OR ABOVE 2900 OVERFLY JOZPO AT OR ABOVE 2900 HOLD AT JOZPO RIGHT TURN INBOUNDCOURSE 011 LEGDIST 4 FAF EZZOL MAP RNW 01",
+                "EZZOL": "EZZOL 2000 RNW 01 TRK 011 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EGRAM",
+                    "fixes": {
+                        "EGRAM": "EGRAM",
+                        "FOSXI": "FOSXI AT OR ABOVE 6000",
+                        "JOZPO": "OVERFLY JOZPO AT OR ABOVE 2900 HOLD AT JOZPO RIGHT TURN INBOUNDCOURSE 011 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "URTOW",
+                    "fixes": {
+                        "URTOW": "URTOW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "JINAG": "JINAG AT OR ABOVE 4400",
+                "ZENIB": "ZENIB 2200",
+                "VOYUY": "VOYUY AT OR ABOVE 1340",
+                "WUVBA": "OVERFLY WUVBA 550 RNW 19 TRK 171 UNTIL 765",
+                "IXIQE": "IXIQE",
+                "URTOW": "OVERFLY URTOW AT OR ABOVE 3000 HOLD AT URTOW RIGHT TURN INBOUNDCOURSE 146 LEGDIST 4 FAF ZENIB MAP WUVBA"
+            },
+            "transitions": [
+                {
+                    "name": "POLYC",
+                    "fixes": {
+                        "POLYC": "POLYC",
+                        "EHZEG": "EHZEG AT OR ABOVE 11100",
+                        "EGRAM": "EGRAM AT OR ABOVE 8400",
+                        "HIDOP": "HIDOP AT OR ABOVE 4800"
+                    }
+                },
+                {
+                    "name": "URTOW",
+                    "fixes": {
+                        "URTOW": "URTOW",
+                        "JINAG": "OVERFLY JINAG AT OR ABOVE 4400 HOLD AT JINAG RIGHT TURN INBOUNDCOURSE 146 ALT 4400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA01",
+            "fixes": {
+                "TKA": "TKA 1300 RNW 01 TRK 352 UNTIL 2100 TURN LEFT DIRECT TKA AT OR ABOVE 3200 HOLD AT TKA LEFT TURN INBOUNDCOURSE 352 LEGTIME 1 FAF TKA MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "TKA",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2800 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2800 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

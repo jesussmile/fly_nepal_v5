@@ -1,0 +1,172 @@
+{
+    "fixes": [
+        {
+            "name": "CI25",
+            "lat": 11.970411116666666,
+            "lon": 75.68550278333333
+        },
+        {
+            "name": "FD07",
+            "lat": 11.867416666666667,
+            "lon": 75.43302221666667
+        },
+        {
+            "name": "FD25",
+            "lat": 11.956713883333334,
+            "lon": 75.66160833333333
+        },
+        {
+            "name": "FI25",
+            "lat": 11.960719433333333,
+            "lon": 75.65959166666667
+        },
+        {
+            "name": "KN411",
+            "lat": 11.728536116666668,
+            "lon": 75.37471111666666
+        },
+        {
+            "name": "KN412",
+            "lat": 11.838038883333333,
+            "lon": 75.33233333333334
+        },
+        {
+            "name": "KN413",
+            "lat": 11.947536116666667,
+            "lon": 75.289925
+        },
+        {
+            "name": "KN414",
+            "lat": 11.873816666666666,
+            "lon": 75.42762778333334
+        },
+        {
+            "name": "KN415",
+            "lat": 11.981966666666667,
+            "lon": 75.71637221666667
+        },
+        {
+            "name": "KN416",
+            "lat": 12.091522216666666,
+            "lon": 75.67409443333334
+        },
+        {
+            "name": "KNR",
+            "lat": 11.915861116666667,
+            "lon": 75.53386111666667
+        },
+        {
+            "name": "MD07",
+            "lat": 11.908533333333333,
+            "lon": 75.518575
+        },
+        {
+            "name": "MD25",
+            "lat": 11.931388883333334,
+            "lon": 75.58236388333333
+        },
+        {
+            "name": "RW25",
+            "lat": 11.922483333333334,
+            "lon": 75.55743611666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD07",
+            "fixes": {
+                "FD07": "FD07 2400",
+                "MD07": "MD07 643 RNW 07 TRK 066 UNTIL 2000 TURN LEFT DIRECT",
+                "KNR": "KNR 4300 SPEED 200 HOLD AT KNR LEFT TURN INBOUNDCOURSE 270 ALT 4300 SPEED 230 LEGTIME 1 FAF FD07 MAP MD07"
+            },
+            "transitions": [
+                {
+                    "name": "KNR1",
+                    "fixes": {
+                        "KNR": "KNR AT OR ABOVE 4300 SPEED 220 TRK 270 UNTIL 8.5 FROM KNR"
+                    }
+                },
+                {
+                    "name": "KNR2",
+                    "fixes": {
+                        "KNR": "KNR AT OR ABOVE 4300 SPEED 220 TRK 257 UNTIL 8.5 FROM KNR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD25",
+            "fixes": {
+                "FD25": "FD25 2400",
+                "MD25": "MD25 864 RNW 25",
+                "KNR": "KNR TRK 254 UNTIL 2000 TURN LEFT DIRECT KNR 2800 HOLD AT KNR LEFT TURN INBOUNDCOURSE 052 ALT 2800 LEGTIME 1 FAF FD25 MAP MD25"
+            },
+            "transitions": [
+                {
+                    "name": "KNR1",
+                    "fixes": {
+                        "KNR": "KNR AT OR ABOVE 2800 SPEED 220 TRK 052 UNTIL 9.0 FROM KNR"
+                    }
+                },
+                {
+                    "name": "KNR2",
+                    "fixes": {
+                        "KNR": "KNR AT OR ABOVE 2800 SPEED 220 TRK 064 UNTIL 9.0 FROM KNR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS25",
+            "fixes": {
+                "CI25": "CI25 AT OR ABOVE 2400",
+                "FI25": "FI25 2400 RNW 25 TRK 251 UNTIL 2000 TURN LEFT DIRECT",
+                "KNR": "KNR 2800 HOLD AT KNR LEFT TURN INBOUNDCOURSE 051 ALT 2800 LEGTIME 1 FAF FI25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "KNR1",
+                    "fixes": {
+                        "KNR": "KNR AT OR ABOVE 2800 SPEED 220 TRK 051 UNTIL 9.5 FROM KNR"
+                    }
+                },
+                {
+                    "name": "KNR2",
+                    "fixes": {
+                        "KNR": "KNR AT OR ABOVE 2800 SPEED 220 TRK 062 UNTIL 9.5 FROM KNR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY07",
+            "fixes": {
+                "KN412": "KN412 AT OR ABOVE 3000 SPEED 220 KN412 3000 SPEED 210 HOLD AT KN412 RIGHT TURN INBOUNDCOURSE 071 ALT 3000 SPEED 230 LEGTIME 1 FAF KN414 MAP RNW 07",
+                "KN414": "KN414 2400 RNW 07",
+                "KN415": "KN415 SPEED 210",
+                "KN416": "KN416 SPEED 210",
+                "KN413": "KN413 SPEED 210"
+            },
+            "transitions": [
+                {
+                    "name": "KN411",
+                    "fixes": {
+                        "KN411": "KN411 AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "KN413",
+                    "fixes": {
+                        "KN413": "KN413 AT OR ABOVE 3000 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

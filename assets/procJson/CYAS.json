@@ -1,0 +1,202 @@
+{
+    "fixes": [
+        {
+            "name": "AVSER",
+            "lat": 60.181905566666664,
+            "lon": 69.77752778333334
+        },
+        {
+            "name": "BEXOG",
+            "lat": 60.06478333333333,
+            "lon": 69.98651666666666
+        },
+        {
+            "name": "EPNUG",
+            "lat": 59.939736116666666,
+            "lon": 70.02859443333334
+        },
+        {
+            "name": "FF03",
+            "lat": 59.94929166666667,
+            "lon": 69.99674721666666
+        },
+        {
+            "name": "FF21",
+            "lat": 60.09323056666667,
+            "lon": 69.95813056666667
+        },
+        {
+            "name": "ITLAG",
+            "lat": 59.74790278333333,
+            "lon": 69.99240833333333
+        },
+        {
+            "name": "KERKO",
+            "lat": 60.18640833333333,
+            "lon": 69.94527778333334
+        },
+        {
+            "name": "MEPVO",
+            "lat": 59.841375,
+            "lon": 70.06146666666666
+        },
+        {
+            "name": "NANBO",
+            "lat": 60.101125,
+            "lon": 69.974225
+        },
+        {
+            "name": "PERGU",
+            "lat": 60.1959,
+            "lon": 69.94204443333334
+        },
+        {
+            "name": "PI001",
+            "lat": 59.967402033333336,
+            "lon": 69.99862793333334
+        },
+        {
+            "name": "PI002",
+            "lat": 59.919404916666664,
+            "lon": 69.89236925
+        },
+        {
+            "name": "PI003",
+            "lat": 59.85921616666667,
+            "lon": 69.98735636666666
+        },
+        {
+            "name": "PI004",
+            "lat": 60.08080533333333,
+            "lon": 69.96665178333333
+        },
+        {
+            "name": "PI005",
+            "lat": 60.11215895,
+            "lon": 69.83738603333333
+        },
+        {
+            "name": "PI006",
+            "lat": 60.1831972,
+            "lon": 69.89560023333334
+        },
+        {
+            "name": "SETVA",
+            "lat": 59.85501943333333,
+            "lon": 70.22441943333334
+        },
+        {
+            "name": "SEVDU",
+            "lat": 60.209691666666664,
+            "lon": 70.10670278333333
+        },
+        {
+            "name": "TASBO",
+            "lat": 59.868075,
+            "lon": 70.05256388333333
+        },
+        {
+            "name": "VIKSU",
+            "lat": 59.82694443333333,
+            "lon": 69.89182221666667
+        },
+        {
+            "name": "YASNB",
+            "lat": 60.025655566666664,
+            "lon": 70.00472778333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FF03": "FF03 1800 RNW 03",
+                "YASNB": "OVERFLY YASNB TRK 020 UNTIL 2200 TURN RIGHT DIRECT YASNB 2200 HOLD AT YASNB RIGHT TURN INBOUNDCOURSE 020 LEGTIME 1 FAF FF03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "YAS",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FF21": "FF21 1700 RNW 21",
+                "YASNB": "OVERFLY YASNB TRK 222 UNTIL 2200 TURN LEFT DIRECT YASNB 2200 HOLD AT YASNB LEFT TURN INBOUNDCOURSE 222 LEGTIME 1 FAF FF21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "YAS",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 1700 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1700 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MEPVO": "MEPVO AT OR ABOVE 2000",
+                "EPNUG": "EPNUG 2000 RNW 03",
+                "KERKO": "OVERFLY KERKO 2200 HOLD AT KERKO RIGHT TURN INBOUNDCOURSE 033 LEGTIME 1 FAF EPNUG MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "ITLAG",
+                    "fixes": {
+                        "ITLAG": "ITLAG"
+                    }
+                },
+                {
+                    "name": "SETVA",
+                    "fixes": {
+                        "SETVA": "SETVA SPEED 210"
+                    }
+                },
+                {
+                    "name": "VIKSU",
+                    "fixes": {
+                        "VIKSU": "VIKSU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "PERGU": "PERGU AT OR ABOVE 1900",
+                "NANBO": "NANBO 1800",
+                "BEXOG": "BEXOG AT OR ABOVE 1090 RNW 21",
+                "TASBO": "OVERFLY TASBO 2200 HOLD AT TASBO RIGHT TURN INBOUNDCOURSE 213 LEGTIME 1 FAF NANBO MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "AVSER",
+                    "fixes": {
+                        "AVSER": "AVSER SPEED 210"
+                    }
+                },
+                {
+                    "name": "SEVDU",
+                    "fixes": {
+                        "SEVDU": "SEVDU SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

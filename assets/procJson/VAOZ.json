@@ -1,0 +1,79 @@
+{
+    "fixes": [
+        {
+            "name": "CI27",
+            "lat": 20.132975,
+            "lon": 74.08040278333333
+        },
+        {
+            "name": "FI27",
+            "lat": 20.129613883333334,
+            "lon": 74.03928611666667
+        },
+        {
+            "name": "FN27",
+            "lat": 20.129019433333333,
+            "lon": 74.03919443333334
+        },
+        {
+            "name": "OJR",
+            "lat": 20.124194433333333,
+            "lon": 73.93019443333333
+        },
+        {
+            "name": "OZRNB",
+            "lat": 20.10752778333333,
+            "lon": 73.90988888333334
+        },
+        {
+            "name": "RW27",
+            "lat": 20.121033333333333,
+            "lon": 73.92771666666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS27",
+            "fixes": {
+                "CI27": "CI27 AT OR ABOVE 4000",
+                "FI27": "FI27 4000 RNW 27 TRK 265 UNTIL 3500 TURN LEFT DIRECT",
+                "OJR": "OJR 5000 HOLD AT OJR LEFT TURN INBOUNDCOURSE 058 ALT 5000 LEGTIME 1 FAF FI27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "OJR1",
+                    "fixes": {
+                        "OJR": "OJR AT OR ABOVE 5000 TRK 058 UNTIL 8.5 FROM OJR"
+                    }
+                },
+                {
+                    "name": "OJR2",
+                    "fixes": {
+                        "OJR": "OJR AT OR ABOVE 5000 TRK 072 UNTIL 8.5 FROM OJR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FN27": "FN27 4000",
+                "OZRNB": "OZRNB 2600 RNW 27 TRK 260 UNTIL 4000 TURN LEFT DIRECT OZRNB 6000 HOLD AT OZRNB RIGHT TURN INBOUNDCOURSE 095 LEGTIME 1 FAF FN27 MAP OZR"
+            },
+            "transitions": [
+                {
+                    "name": "OZR",
+                    "fixes": {
+                        "OZRNB": "OZRNB AT OR ABOVE 6000 TRK 095 UNTIL 10.5 FROM OZRNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

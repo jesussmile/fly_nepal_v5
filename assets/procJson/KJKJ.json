@@ -1,0 +1,126 @@
+{
+    "fixes": [
+        {
+            "name": "ETCIR",
+            "lat": 46.79853056666666,
+            "lon": 96.54416943333334
+        },
+        {
+            "name": "FAR",
+            "lat": 46.75333611666667,
+            "lon": 96.85131943333333
+        },
+        {
+            "name": "IRILE",
+            "lat": 47.02091111666667,
+            "lon": 96.46099166666667
+        },
+        {
+            "name": "IVEJE",
+            "lat": 46.75518888333333,
+            "lon": 96.41729443333334
+        },
+        {
+            "name": "JESGA",
+            "lat": 46.82114721666667,
+            "lon": 96.61062778333333
+        },
+        {
+            "name": "MA048",
+            "lat": 46.835088883333334,
+            "lon": 96.663975
+        },
+        {
+            "name": "PI001",
+            "lat": 46.7166067,
+            "lon": 96.91744113333333
+        },
+        {
+            "name": "PI002",
+            "lat": 46.645332116666665,
+            "lon": 96.9283531
+        },
+        {
+            "name": "PI003",
+            "lat": 46.64829411666667,
+            "lon": 97.03999988333334
+        },
+        {
+            "name": "STARR",
+            "lat": 46.5036,
+            "lon": 95.87411388333334
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IVEJE": "IVEJE AT OR ABOVE 3600 OVERFLY IVEJE AT OR ABOVE 3600 HOLD AT IVEJE RIGHT TURN INBOUNDCOURSE 293 LEGDIST 4 FAF ETCIR MAP RNW 30",
+                "ETCIR": "ETCIR 2600",
+                "JESGA": "JESGA AT OR ABOVE 1620 RNW 30 TRK 293 UNTIL 1700 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FAR",
+                    "fixes": {
+                        "FAR": "FAR",
+                        "IVEJE": "OVERFLY IVEJE AT OR ABOVE 3600 HOLD AT IVEJE RIGHT TURN INBOUNDCOURSE 293 ALT 3600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "IRILE",
+                    "fixes": {
+                        "IRILE": "IRILE",
+                        "IVEJE": "OVERFLY IVEJE AT OR ABOVE 3600 HOLD AT IVEJE RIGHT TURN INBOUNDCOURSE 293 ALT 3600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "STARR",
+                    "fixes": {
+                        "STARR": "STARR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA12",
+            "fixes": {
+                "FAR": "FAR 2700 FAR AT OR ABOVE 2700 HOLD AT FAR RIGHT TURN INBOUNDCOURSE 048 LEGTIME 1 FAF FAR MAP MA048",
+                "MA048": "MA048 1740 RNW 12 TRK 048 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FAR",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA30",
+            "fixes": {
+                "FAR": "FAR 2700 FAR AT OR ABOVE 2700 HOLD AT FAR RIGHT TURN INBOUNDCOURSE 048 LEGTIME 1 FAF FAR MAP MA048",
+                "MA048": "MA048 1740 RNW 30 TRK 048 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FAR",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

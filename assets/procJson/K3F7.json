@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CAMSA",
+            "lat": 35.99126666666667,
+            "lon": 96.42048333333334
+        },
+        {
+            "name": "DASTE",
+            "lat": 35.626944433333335,
+            "lon": 96.42176943333334
+        },
+        {
+            "name": "ITALE",
+            "lat": 35.85260278333333,
+            "lon": 96.420975
+        },
+        {
+            "name": "ONOKE",
+            "lat": 35.90447221666667,
+            "lon": 96.42079166666667
+        },
+        {
+            "name": "UNUGE",
+            "lat": 35.72316943333333,
+            "lon": 96.42143056666667
+        },
+        {
+            "name": "ZEGBA",
+            "lat": 35.759825,
+            "lon": 96.42130278333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "CAMSA": "CAMSA AT OR ABOVE 2600",
+                "ONOKE": "ONOKE 2600",
+                "ITALE": "ITALE AT OR ABOVE 1600 RNW 18 TRK 175 UNTIL 1156",
+                "DASTE": "OVERFLY DASTE AT OR ABOVE 2600 HOLD AT DASTE RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF ONOKE MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "CAMSA",
+                    "fixes": {
+                        "CAMSA": "CAMSA RIGHT TURN INBOUNDCOURSE 175 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DASTE": "DASTE AT OR ABOVE 2600",
+                "UNUGE": "UNUGE 2600",
+                "ZEGBA": "ZEGBA AT OR ABOVE 1800 RNW 36 TRK 355 UNTIL 1225",
+                "CAMSA": "OVERFLY CAMSA AT OR ABOVE 2600 HOLD AT CAMSA RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF UNUGE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "DASTE",
+                    "fixes": {
+                        "DASTE": "DASTE RIGHT TURN INBOUNDCOURSE 355 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

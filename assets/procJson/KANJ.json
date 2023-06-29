@@ -1,0 +1,171 @@
+{
+    "fixes": [
+        {
+            "name": "AJAPY",
+            "lat": 46.52108056666667,
+            "lon": 84.42722221666666
+        },
+        {
+            "name": "ALVUS",
+            "lat": 46.363883333333334,
+            "lon": 84.21671388333333
+        },
+        {
+            "name": "CAKTA",
+            "lat": 46.55370833333333,
+            "lon": 84.47316111666666
+        },
+        {
+            "name": "CUXIG",
+            "lat": 46.454075,
+            "lon": 84.33313611666667
+        },
+        {
+            "name": "HARUV",
+            "lat": 46.5791,
+            "lon": 84.67769721666667
+        },
+        {
+            "name": "HITAM",
+            "lat": 46.16413611666667,
+            "lon": 84.17050556666666
+        },
+        {
+            "name": "KUCEB",
+            "lat": 46.63726943333333,
+            "lon": 84.59117778333334
+        },
+        {
+            "name": "PI001",
+            "lat": 46.361585166666664,
+            "lon": 84.27260811666666
+        },
+        {
+            "name": "PI002",
+            "lat": 46.292357333333335,
+            "lon": 84.2994522
+        },
+        {
+            "name": "PI003",
+            "lat": 46.2677101,
+            "lon": 84.19432468333333
+        },
+        {
+            "name": "PINES",
+            "lat": 46.030447216666666,
+            "lon": 84.48673611666666
+        },
+        {
+            "name": "SSM",
+            "lat": 46.412111116666665,
+            "lon": 84.31487221666667
+        },
+        {
+            "name": "WAGGO",
+            "lat": 46.901327783333336,
+            "lon": 85.00716666666666
+        },
+        {
+            "name": "WUYFO",
+            "lat": 46.35455,
+            "lon": 84.99380278333334
+        },
+        {
+            "name": "YIRUC",
+            "lat": 46.419775,
+            "lon": 84.28510833333333
+        },
+        {
+            "name": "ZIDVI",
+            "lat": 46.34668333333333,
+            "lon": 84.18306943333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "KUCEB": "KUCEB AT OR ABOVE 2800",
+                "CAKTA": "CAKTA 2600",
+                "AJAPY": "AJAPY AT OR ABOVE 1720 RNW 14 TRK 143 UNTIL 947",
+                "YIRUC": "YIRUC",
+                "ALVUS": "OVERFLY ALVUS AT OR ABOVE 3000 HOLD AT ALVUS RIGHT TURN INBOUNDCOURSE 129 LEGDIST 4 FAF CAKTA MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "SSM",
+                    "fixes": {
+                        "SSM": "SSM",
+                        "KUCEB": "OVERFLY KUCEB AT OR ABOVE 2800 HOLD AT KUCEB RIGHT TURN INBOUNDCOURSE 143 ALT 2800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WAGGO",
+                    "fixes": {
+                        "WAGGO": "WAGGO",
+                        "KUCEB": "OVERFLY KUCEB AT OR ABOVE 2800 HOLD AT KUCEB RIGHT TURN INBOUNDCOURSE 143 ALT 2800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WUYFO",
+                    "fixes": {
+                        "WUYFO": "WUYFO",
+                        "HARUV": "HARUV AT OR ABOVE 2800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "ZIDVI": "ZIDVI AT OR ABOVE 3100",
+                "YIRUC": "YIRUC 2200",
+                "CUXIG": "CUXIG AT OR ABOVE 1280 RNW 32 TRK 323 UNTIL 1040",
+                "KUCEB": "OVERFLY KUCEB AT OR ABOVE 2800 HOLD AT KUCEB RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4 FAF YIRUC MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "HITAM",
+                    "fixes": {
+                        "HITAM": "HITAM"
+                    }
+                },
+                {
+                    "name": "PINES",
+                    "fixes": {
+                        "PINES": "PINES"
+                    }
+                },
+                {
+                    "name": "SSM",
+                    "fixes": {
+                        "SSM": "SSM",
+                        "ZIDVI": "OVERFLY ZIDVI AT OR ABOVE 3100 HOLD AT ZIDVI RIGHT TURN INBOUNDCOURSE 323 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR32",
+            "fixes": {
+                "SSM": "SSM 2000 RNW 32 TRK 337 UNTIL 1120 TURN LEFT DIRECT SSM AT OR ABOVE 2400 HOLD AT SSM RIGHT TURN INBOUNDCOURSE 337 LEGTIME 1 FAF SSM MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "SSM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

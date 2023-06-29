@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "CIRIX",
+            "lat": 30.070438883333335,
+            "lon": 98.778925
+        },
+        {
+            "name": "CUTAY",
+            "lat": 30.317519433333334,
+            "lon": 98.96536388333334
+        },
+        {
+            "name": "IBAVE",
+            "lat": 30.22755,
+            "lon": 98.81866388333333
+        },
+        {
+            "name": "MAHUW",
+            "lat": 30.2431,
+            "lon": 98.90348056666667
+        },
+        {
+            "name": "REYOS",
+            "lat": 30.168283333333335,
+            "lon": 98.85260833333334
+        },
+        {
+            "name": "STV",
+            "lat": 30.206758333333333,
+            "lon": 98.70575556666667
+        },
+        {
+            "name": "UCETI",
+            "lat": 30.415238883333334,
+            "lon": 99.03944166666666
+        },
+        {
+            "name": "WODAB",
+            "lat": 30.201169433333334,
+            "lon": 98.87741943333333
+        },
+        {
+            "name": "ZARIG",
+            "lat": 30.28530556666667,
+            "lon": 98.94098611666666
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA14",
+            "fixes": {
+                "STV": "STV AT OR ABOVE 4100 STV AT OR ABOVE 4100 HOLD AT STV RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1 FAF IBAVE MAP MAHUW",
+                "IBAVE": "IBAVE 3500",
+                "MAHUW": "MAHUW 2520 RNW 14 TRK 274 UNTIL 2520 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "STV",
+                    "fixes": {
+                        "STV": "STV RIGHT TURN INBOUNDCOURSE 274 ALT 4100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA32",
+            "fixes": {
+                "STV": "STV AT OR ABOVE 4100 STV AT OR ABOVE 4100 HOLD AT STV RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1 FAF IBAVE MAP MAHUW",
+                "IBAVE": "IBAVE 3500",
+                "MAHUW": "MAHUW 2520 RNW 32 TRK 274 UNTIL 2520 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "STV",
+                    "fixes": {
+                        "STV": "STV RIGHT TURN INBOUNDCOURSE 274 ALT 4100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "UCETI": "UCETI AT OR ABOVE 4000",
+                "CUTAY": "CUTAY 3300",
+                "ZARIG": "ZARIG AT OR ABOVE 2560 RNW 14 TRK 141 UNTIL 2060",
+                "CIRIX": "OVERFLY CIRIX AT OR ABOVE 4500 HOLD AT CIRIX RIGHT TURN INBOUNDCOURSE 321 LEGDIST 4 FAF CUTAY MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "UCETI",
+                    "fixes": {
+                        "UCETI": "UCETI RIGHT TURN INBOUNDCOURSE 141 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "CIRIX": "CIRIX AT OR ABOVE 4500",
+                "REYOS": "REYOS 3300",
+                "WODAB": "WODAB AT OR ABOVE 2540 RNW 32 TRK 321 UNTIL 1935",
+                "UCETI": "OVERFLY UCETI AT OR ABOVE 4000 HOLD AT UCETI RIGHT TURN INBOUNDCOURSE 141 LEGDIST 4 FAF REYOS MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "CIRIX",
+                    "fixes": {
+                        "CIRIX": "CIRIX RIGHT TURN INBOUNDCOURSE 321 ALT 4500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

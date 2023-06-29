@@ -1,0 +1,83 @@
+{
+    "fixes": [
+        {
+            "name": "90LOC",
+            "lat": 39.35613611666667,
+            "lon": 7.974455566666666
+        },
+        {
+            "name": "CF21",
+            "lat": 39.38657778333334,
+            "lon": 7.9568666666666665
+        },
+        {
+            "name": "D026P",
+            "lat": 39.46266943333333,
+            "lon": 7.912825
+        },
+        {
+            "name": "FF21",
+            "lat": 39.29524443333333,
+            "lon": 8.009588883333333
+        },
+        {
+            "name": "FI21",
+            "lat": 39.31655833333333,
+            "lon": 7.9973
+        },
+        {
+            "name": "ML21",
+            "lat": 39.234341666666666,
+            "lon": 8.044663883333333
+        },
+        {
+            "name": "NSA",
+            "lat": 39.56466666666667,
+            "lon": 7.914611116666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 2500",
+                "FI21": "FI21 2500 RNW 21 TRK 206 UNTIL 2000 TURN LEFT HDG 077 INTERCEPT RADIAL 001 TO",
+                "NSA": "NSA NSA 4500 HOLD AT NSA RIGHT TURN INBOUNDCOURSE 181 ALT 4500 LEGTIME 1 FAF FI21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "NSA",
+                    "fixes": {
+                        "NSA": "NSA AT OR ABOVE 4500",
+                        "D026P": "D026P AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 2500",
+                "90LOC": "90LOC AT OR ABOVE 2000",
+                "FF21": "FF21 2000",
+                "ML21": "ML21 751 RNW 21 TRK 206 UNTIL 2000 TURN LEFT HDG 077 INTERCEPT RADIAL 001 TO",
+                "NSA": "NSA NSA 4500 HOLD AT NSA RIGHT TURN INBOUNDCOURSE 181 ALT 4500 LEGTIME 1 FAF FF21 MAP ML21"
+            },
+            "transitions": [
+                {
+                    "name": "NSA",
+                    "fixes": {
+                        "NSA": "NSA AT OR ABOVE 4500",
+                        "D026P": "D026P AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

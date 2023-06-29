@@ -1,0 +1,85 @@
+{
+    "fixes": [
+        {
+            "name": "ARENA",
+            "lat": 35.507122216666666,
+            "lon": 139.61631388333333
+        },
+        {
+            "name": "DROMP",
+            "lat": 35.60445,
+            "lon": 139.58566388333332
+        },
+        {
+            "name": "KOSKA",
+            "lat": 35.255825,
+            "lon": 139.58752221666666
+        },
+        {
+            "name": "TF510",
+            "lat": 35.65841666666667,
+            "lon": 139.60113888333333
+        },
+        {
+            "name": "TF511",
+            "lat": 35.507305566666666,
+            "lon": 139.60363888333333
+        },
+        {
+            "name": "TF550",
+            "lat": 35.65601111666667,
+            "lon": 139.53367778333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "KOSKA1",
+            "rnw": "02",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 17",
+                    "fixes": {
+                        "RNW 17": "RNW 17 HDG 171 UNTIL 700",
+                        "TF511": "TF511",
+                        "KOSKA": "KOSKA"
+                    }
+                },
+                {
+                    "rwy": "RNW 35",
+                    "fixes": {
+                        "RNW 35": "RNW 35 HDG 351 UNTIL 900 TURN RIGHT DIRECT",
+                        "TF510": "TF510",
+                        "TF511": "TF511",
+                        "KOSKA": "KOSKA"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ARENA": "ARENA AT OR ABOVE 2000 ARENA",
+                "DROMP": "DROMP 1701",
+                "TF550": "OVERFLY TF550 405 RNW 35 TRK 328 UNTIL 640 TURN RIGHT DIRECT",
+                "KOSKA": "KOSKA 3000 HOLD AT KOSKA LEFT TURN INBOUNDCOURSE 033 ALT 3000 SPEED 170 LEGTIME 1 FAF DROMP MAP TF550"
+            },
+            "transitions": [
+                {
+                    "name": "KOSKA",
+                    "fixes": {
+                        "KOSKA": "KOSKA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,159 @@
+{
+    "fixes": [
+        {
+            "name": "40VOR",
+            "lat": 41.48984166666666,
+            "lon": 88.36541943333333
+        },
+        {
+            "name": "BEMSE",
+            "lat": 41.520013883333334,
+            "lon": 88.420925
+        },
+        {
+            "name": "COPTU",
+            "lat": 41.33366388333334,
+            "lon": 88.41651943333333
+        },
+        {
+            "name": "DIBBL",
+            "lat": 41.2503,
+            "lon": 88.41455278333333
+        },
+        {
+            "name": "HAMKO",
+            "lat": 41.59787778333333,
+            "lon": 88.422775
+        },
+        {
+            "name": "JOT",
+            "lat": 41.546419433333334,
+            "lon": 88.31841111666667
+        },
+        {
+            "name": "MA210",
+            "lat": 41.42935,
+            "lon": 88.41541943333333
+        },
+        {
+            "name": "MINOK",
+            "lat": 41.468863883333334,
+            "lon": 88.36328611666667
+        },
+        {
+            "name": "PI001",
+            "lat": 41.598389383333334,
+            "lon": 88.28299765
+        },
+        {
+            "name": "PI002",
+            "lat": 41.66654463333333,
+            "lon": 88.31264346666667
+        },
+        {
+            "name": "PI003",
+            "lat": 41.69487611666667,
+            "lon": 88.21707823333334
+        },
+        {
+            "name": "PIDGE",
+            "lat": 41.460633333333334,
+            "lon": 88.41951943333333
+        },
+        {
+            "name": "PLANO",
+            "lat": 41.61251943333333,
+            "lon": 88.61475556666667
+        },
+        {
+            "name": "SERCY",
+            "lat": 41.23599721666667,
+            "lon": 88.26830556666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "HAMKO": "HAMKO AT OR ABOVE 2300",
+                "BEMSE": "BEMSE 2300",
+                "PIDGE": "PIDGE AT OR ABOVE 1160 RNW 18 TRK 182 UNTIL 940",
+                "DIBBL": "OVERFLY DIBBL AT OR ABOVE 2200 HOLD AT DIBBL RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF BEMSE MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "PLANO",
+                    "fixes": {
+                        "PLANO": "PLANO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DIBBL": "DIBBL AT OR ABOVE 2200 OVERFLY DIBBL AT OR ABOVE 2200 HOLD AT DIBBL RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF COPTU MAP RNW 36",
+                "COPTU": "COPTU 2200 RNW 36 TRK 002 UNTIL 985 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MINOK",
+                    "fixes": {
+                        "MINOK": "MINOK",
+                        "DIBBL": "OVERFLY DIBBL AT OR ABOVE 2200 HOLD AT DIBBL RIGHT TURN INBOUNDCOURSE 002 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SERCY",
+                    "fixes": {
+                        "SERCY": "SERCY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "JOT": "JOT 2500",
+                "40VOR": "40VOR AT OR ABOVE 1280",
+                "MA210": "MA210 1200 RNW 18 TRK 210 UNTIL 3000 TURN LEFT DIRECT",
+                "MINOK": "MINOK HOLD AT MINOK RIGHT TURN INBOUNDCOURSE 022 LEGTIME 1 FAF JOT MAP MA210"
+            },
+            "transitions": [
+                {
+                    "name": "JOT",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "JOT": "JOT 2500",
+                "40VOR": "40VOR AT OR ABOVE 1280",
+                "MA210": "MA210 1200 RNW 36 TRK 210 UNTIL 3000 TURN LEFT DIRECT",
+                "MINOK": "MINOK HOLD AT MINOK RIGHT TURN INBOUNDCOURSE 022 LEGTIME 1 FAF JOT MAP MA210"
+            },
+            "transitions": [
+                {
+                    "name": "JOT",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

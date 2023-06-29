@@ -1,0 +1,160 @@
+{
+    "fixes": [
+        {
+            "name": "ALKAK",
+            "lat": 70.62158333333333,
+            "lon": 118.06786943333333
+        },
+        {
+            "name": "BIRVI",
+            "lat": 70.65473611666667,
+            "lon": 118.40613333333333
+        },
+        {
+            "name": "CHIFE",
+            "lat": 70.69468333333333,
+            "lon": 118.18645556666667
+        },
+        {
+            "name": "DUNUR",
+            "lat": 70.73436388333333,
+            "lon": 117.96590833333333
+        },
+        {
+            "name": "DUPOB",
+            "lat": 70.78261388333334,
+            "lon": 117.58690556666667
+        },
+        {
+            "name": "EBGIB",
+            "lat": 70.74500278333333,
+            "lon": 118.03404166666667
+        },
+        {
+            "name": "EPMOS",
+            "lat": 70.75771943333334,
+            "lon": 117.83499721666666
+        },
+        {
+            "name": "FESEN",
+            "lat": 70.82819443333334,
+            "lon": 117.43488333333333
+        },
+        {
+            "name": "FF06",
+            "lat": 70.73225556666667,
+            "lon": 118.06732778333334
+        },
+        {
+            "name": "HINB",
+            "lat": 70.76222221666667,
+            "lon": 117.79
+        },
+        {
+            "name": "OTNIL",
+            "lat": 70.88308888333333,
+            "lon": 117.40480556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 70.77025716666667,
+            "lon": 117.61461053333333
+        },
+        {
+            "name": "PI002",
+            "lat": 70.82752143333333,
+            "lon": 117.48358606666666
+        },
+        {
+            "name": "PI003",
+            "lat": 70.78473576666667,
+            "lon": 117.28851896666667
+        },
+        {
+            "name": "SAXUT",
+            "lat": 70.80267221666666,
+            "lon": 117.34228611666667
+        },
+        {
+            "name": "TIKEV",
+            "lat": 70.72223611666666,
+            "lon": 117.28026666666666
+        },
+        {
+            "name": "UDKIK",
+            "lat": 70.79067778333334,
+            "lon": 117.48911666666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FF06": "FF06 1800 RNW 06",
+                "HINB": "OVERFLY HINB TRK 006 UNTIL 2300 TURN LEFT DIRECT HINB 2300 HOLD AT HINB RIGHT TURN INBOUNDCOURSE 005 LEGTIME 1 FAF FF06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "HI",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "CHIFE": "CHIFE AT OR ABOVE 1800",
+                "DUNUR": "DUNUR 1210",
+                "EPMOS": "OVERFLY EPMOS 252 RNW 06",
+                "FESEN": "OVERFLY FESEN 2400 HOLD AT FESEN RIGHT TURN INBOUNDCOURSE 004 LEGTIME 1 FAF DUNUR MAP EPMOS"
+            },
+            "transitions": [
+                {
+                    "name": "ALKAK",
+                    "fixes": {
+                        "ALKAK": "ALKAK"
+                    }
+                },
+                {
+                    "name": "BIRVI",
+                    "fixes": {
+                        "BIRVI": "BIRVI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "SAXUT": "SAXUT AT OR ABOVE 2300",
+                "UDKIK": "UDKIK AT OR ABOVE 2140",
+                "DUPOB": "DUPOB 1500 RNW 24",
+                "EBGIB": "OVERFLY EBGIB 2400 HOLD AT EBGIB RIGHT TURN INBOUNDCOURSE 024 LEGTIME 1 FAF DUPOB MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "OTNIL",
+                    "fixes": {
+                        "OTNIL": "OTNIL"
+                    }
+                },
+                {
+                    "name": "TIKEV",
+                    "fixes": {
+                        "TIKEV": "TIKEV"
+                    }
+                }
+            ]
+        }
+    ]
+}

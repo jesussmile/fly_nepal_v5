@@ -1,0 +1,49 @@
+{
+    "fixes": [
+        {
+            "name": "FN12",
+            "lat": 21.344816666666667,
+            "lon": 99.56393333333334
+        },
+        {
+            "name": "KGNB",
+            "lat": 21.302733333333332,
+            "lon": 99.63055833333334
+        },
+        {
+            "name": "MN12",
+            "lat": 21.318441666666665,
+            "lon": 99.6057
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FN12": "FN12 4030",
+                "MN12": "OVERFLY MN12 3169 RNW 12 HDG 165 UNTIL 4500 TURN LEFT DIRECT",
+                "KGNB": "KGNB 5500 HOLD AT KGNB RIGHT TURN INBOUNDCOURSE 330 ALT 5500 LEGTIME 1 FAF FN12 MAP MN12"
+            },
+            "transitions": [
+                {
+                    "name": "KG1",
+                    "fixes": {
+                        "KGNB": "KGNB AT OR ABOVE 4030 TRK 330 UNTIL 3.5 FROM KGNB"
+                    }
+                },
+                {
+                    "name": "KG2",
+                    "fixes": {
+                        "KGNB": "KGNB AT OR ABOVE 4030 TRK 330 UNTIL 4.5 FROM KGNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

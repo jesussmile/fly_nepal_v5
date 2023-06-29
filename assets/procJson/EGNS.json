@@ -1,0 +1,228 @@
+{
+    "fixes": [
+        {
+            "name": "20VOR",
+            "lat": 54.07337221666667,
+            "lon": 4.7079861166666666
+        },
+        {
+            "name": "22DME",
+            "lat": 54.09599721666667,
+            "lon": 4.5525166666666665
+        },
+        {
+            "name": "30DME",
+            "lat": 54.075488883333335,
+            "lon": 4.718805566666667
+        },
+        {
+            "name": "CI08",
+            "lat": 54.06459721666667,
+            "lon": 4.8362
+        },
+        {
+            "name": "CI26",
+            "lat": 54.112316666666665,
+            "lon": 4.3903194333333335
+        },
+        {
+            "name": "D091H",
+            "lat": 54.08321943333333,
+            "lon": 4.383713883333333
+        },
+        {
+            "name": "D111H",
+            "lat": 54.035016666666664,
+            "lon": 4.396966666666667
+        },
+        {
+            "name": "D234I",
+            "lat": 53.992547216666665,
+            "lon": 4.814611116666667
+        },
+        {
+            "name": "D254I",
+            "lat": 54.036458333333336,
+            "lon": 4.854541666666667
+        },
+        {
+            "name": "FI08",
+            "lat": 54.069316666666666,
+            "lon": 4.7801944333333335
+        },
+        {
+            "name": "FI26",
+            "lat": 54.10547221666667,
+            "lon": 4.445741666666667
+        },
+        {
+            "name": "FQ08",
+            "lat": 54.070961116666666,
+            "lon": 4.7805694333333335
+        },
+        {
+            "name": "FQ26",
+            "lat": 54.11330556666667,
+            "lon": 4.449033333333333
+        },
+        {
+            "name": "IOM",
+            "lat": 54.06686666666667,
+            "lon": 4.763475
+        },
+        {
+            "name": "RW08",
+            "lat": 54.08193611666667,
+            "lon": 4.634580566666667
+        },
+        {
+            "name": "RW26",
+            "lat": 54.08479166666667,
+            "lon": 4.611819433333333
+        },
+        {
+            "name": "RWYNB",
+            "lat": 54.08108333333333,
+            "lon": 4.622888883333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 08",
+        "RNW 21",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD08",
+            "fixes": {
+                "IOM": "IOM 2000 IOM 3000 SPEED 210 FAF IOM MAP RNW 08",
+                "20VOR": "20VOR AT OR ABOVE 1170 RNW 08 TRK 081 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IOM1",
+                    "fixes": {
+                        "IOM": "IOM AT OR ABOVE 3000 SPEED 210 TRK 215 UNTIL 4.0 FROM IOM"
+                    }
+                },
+                {
+                    "name": "IOM2",
+                    "fixes": {
+                        "IOM": "IOM AT OR ABOVE 3000 SPEED 210 TRK 238 UNTIL 4.0 FROM IOM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS08",
+            "fixes": {
+                "CI08": "CI08 AT OR ABOVE 2000",
+                "FI08": "FI08 2000 RNW 08 TRK 084 UNTIL 2000 TURN RIGHT DIRECT",
+                "RWYNB": "RWYNB 3000 FAF FI08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "RONY1",
+                    "fixes": {
+                        "RWYNB": "RWYNB AT OR ABOVE 3000",
+                        "D234I": "OVERFLY D234I AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "RONY2",
+                    "fixes": {
+                        "RWYNB": "RWYNB AT OR ABOVE 3000",
+                        "D254I": "OVERFLY D254I AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS26",
+            "fixes": {
+                "CI26": "CI26 AT OR ABOVE 2000",
+                "FI26": "FI26 2000 RNW 26 TRK 260 UNTIL 2000 TURN LEFT DIRECT",
+                "RWYNB": "RWYNB 3000 FAF FI26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "IOM1",
+                    "fixes": {
+                        "IOM": "IOM",
+                        "RWYNB": "RWYNB AT OR ABOVE 3000",
+                        "D111H": "OVERFLY D111H AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "IOM2",
+                    "fixes": {
+                        "IOM": "IOM",
+                        "RWYNB": "RWYNB AT OR ABOVE 3000",
+                        "D091H": "OVERFLY D091H AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "RONY1",
+                    "fixes": {
+                        "RWYNB": "RWYNB AT OR ABOVE 3000",
+                        "D111H": "OVERFLY D111H AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "RONY2",
+                    "fixes": {
+                        "RWYNB": "RWYNB AT OR ABOVE 3000",
+                        "D091H": "OVERFLY D091H AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD08",
+            "fixes": {
+                "FQ08": "FQ08 2000",
+                "30DME": "30DME AT OR ABOVE 1190 RNW 08 TRK 085 UNTIL 2000 TURN RIGHT DIRECT",
+                "RWYNB": "RWYNB 3000 FAF FQ08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "RONY1",
+                    "fixes": {
+                        "RWYNB": "RWYNB AT OR ABOVE 3000 TRK 234 UNTIL 8.6 FROM RWYNB"
+                    }
+                },
+                {
+                    "name": "RONY2",
+                    "fixes": {
+                        "RWYNB": "RWYNB AT OR ABOVE 3000 TRK 254 UNTIL 8.6 FROM RWYNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD26",
+            "fixes": {
+                "FQ26": "FQ26 2000",
+                "22DME": "22DME AT OR ABOVE 790 RNW 26 TRK 256 UNTIL 2000 TURN LEFT DIRECT",
+                "RWYNB": "RWYNB 3000 FAF FQ26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "RONY1",
+                    "fixes": {
+                        "RWYNB": "RWYNB AT OR ABOVE 3000 TRK 108 UNTIL 8.4 FROM RWYNB"
+                    }
+                },
+                {
+                    "name": "RONY2",
+                    "fixes": {
+                        "RWYNB": "RWYNB AT OR ABOVE 3000 TRK 087 UNTIL 8.4 FROM RWYNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

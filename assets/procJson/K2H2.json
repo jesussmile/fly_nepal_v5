@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "BOZSA",
+            "lat": 36.899033333333335,
+            "lon": 93.69706943333334
+        },
+        {
+            "name": "EGALE",
+            "lat": 36.808022216666664,
+            "lon": 93.699575
+        },
+        {
+            "name": "HARKS",
+            "lat": 36.52263333333333,
+            "lon": 93.68436111666666
+        },
+        {
+            "name": "HELUR",
+            "lat": 37.12578333333333,
+            "lon": 93.6908
+        },
+        {
+            "name": "MEVDY",
+            "lat": 37.19241388333333,
+            "lon": 93.68894721666666
+        },
+        {
+            "name": "REBBU",
+            "lat": 37.04610278333333,
+            "lon": 93.69300556666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "HELUR": "HELUR AT OR ABOVE 3000",
+                "REBBU": "REBBU 3000 RNW 18 TRK 178 UNTIL 1834",
+                "EGALE": "OVERFLY EGALE AT OR ABOVE 3100 HOLD AT EGALE RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF REBBU MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "HELUR",
+                    "fixes": {
+                        "HELUR": "HELUR RIGHT TURN INBOUNDCOURSE 178 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MEVDY",
+                    "fixes": {
+                        "MEVDY": "MEVDY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "EGALE": "EGALE AT OR ABOVE 3100",
+                "BOZSA": "BOZSA 2600 RNW 36 TRK 358 UNTIL 1834",
+                "HELUR": "OVERFLY HELUR AT OR ABOVE 3000 HOLD AT HELUR RIGHT TURN INBOUNDCOURSE 178 LEGDIST 4 FAF BOZSA MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "EGALE",
+                    "fixes": {
+                        "EGALE": "EGALE RIGHT TURN INBOUNDCOURSE 358 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HARKS",
+                    "fixes": {
+                        "HARKS": "HARKS"
+                    }
+                }
+            ]
+        }
+    ]
+}

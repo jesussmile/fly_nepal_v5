@@ -1,0 +1,87 @@
+{
+    "fixes": [
+        {
+            "name": "BURGS",
+            "lat": 39.69851666666667,
+            "lon": 80.58638611666666
+        },
+        {
+            "name": "GALLS",
+            "lat": 39.826208333333334,
+            "lon": 80.01940556666666
+        },
+        {
+            "name": "PUNIY",
+            "lat": 39.880836116666664,
+            "lon": 80.26388333333334
+        },
+        {
+            "name": "RIPEE",
+            "lat": 39.939486116666664,
+            "lon": 79.87626943333333
+        },
+        {
+            "name": "TIKKU",
+            "lat": 39.92004721666667,
+            "lon": 80.00576943333333
+        },
+        {
+            "name": "WONAT",
+            "lat": 39.89148888333333,
+            "lon": 80.19417778333333
+        },
+        {
+            "name": "ZUNKO",
+            "lat": 39.861263883333336,
+            "lon": 80.39121111666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVZ09",
+            "fixes": {
+                "ZUNKO": "ZUNKO AT OR ABOVE 4000",
+                "PUNIY": "PUNIY 3000",
+                "WONAT": "WONAT AT OR ABOVE 1940 RNW 09 TRK 088 UNTIL 1469",
+                "RIPEE": "OVERFLY RIPEE AT OR ABOVE 4000 HOLD AT RIPEE RIGHT TURN INBOUNDCOURSE 268 ALT 4000 LEGDIST 4 FAF PUNIY MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "BURGS",
+                    "fixes": {
+                        "BURGS": "BURGS"
+                    }
+                },
+                {
+                    "name": "ZUNKO",
+                    "fixes": {
+                        "ZUNKO": "ZUNKO RIGHT TURN INBOUNDCOURSE 088 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "RIPEE": "RIPEE AT OR ABOVE 4000",
+                "TIKKU": "TIKKU 2900 RNW 27 TRK 268 UNTIL 1469",
+                "ZUNKO": "OVERFLY ZUNKO AT OR ABOVE 4000 HOLD AT ZUNKO RIGHT TURN INBOUNDCOURSE 088 LEGDIST 4 FAF TIKKU MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "GALLS",
+                    "fixes": {
+                        "GALLS": "GALLS",
+                        "RIPEE": "OVERFLY RIPEE AT OR ABOVE 4000 HOLD AT RIPEE RIGHT TURN INBOUNDCOURSE 268 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

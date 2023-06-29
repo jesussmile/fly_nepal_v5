@@ -1,0 +1,173 @@
+{
+    "fixes": [
+        {
+            "name": "43DME",
+            "lat": 35.23799721666666,
+            "lon": 33.67612221666667
+        },
+        {
+            "name": "D108G",
+            "lat": 35.19101943333333,
+            "lon": 33.89548056666667
+        },
+        {
+            "name": "D315F",
+            "lat": 35.30986943333333,
+            "lon": 33.68199443333334
+        },
+        {
+            "name": "DM07A",
+            "lat": 35.226625,
+            "lon": 33.90571943333333
+        },
+        {
+            "name": "DME07",
+            "lat": 35.239675,
+            "lon": 33.62119166666667
+        },
+        {
+            "name": "DME08",
+            "lat": 35.240291666666664,
+            "lon": 33.600844433333336
+        },
+        {
+            "name": "ECN",
+            "lat": 35.156666666666666,
+            "lon": 33.491388883333336
+        },
+        {
+            "name": "FN27",
+            "lat": 35.25169721666666,
+            "lon": 33.889661116666666
+        },
+        {
+            "name": "GIRNE",
+            "lat": 35.63972221666667,
+            "lon": 33.361666666666665
+        },
+        {
+            "name": "GKE",
+            "lat": 35.23527778333333,
+            "lon": 33.76361111666667
+        },
+        {
+            "name": "GKENB",
+            "lat": 35.23166666666667,
+            "lon": 33.74305556666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "ERCA1S",
+            "rnw": "27",
+            "fixes": {
+                "ECN": "OVERFLY ECN AT OR ABOVE 4500 TURN RIGHT DIRECT",
+                "GIRNE": "GIRNE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GIRN1C",
+            "rnw": "09",
+            "fixes": {
+                "D315F": "D315F AT OR ABOVE 3500",
+                "GIRNE": "GIRNE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GIRN1D",
+            "rnw": "27",
+            "fixes": {
+                "GKE": "OVERFLY GKE AT OR ABOVE 3500",
+                "D315F": "D315F",
+                "GIRNE": "GIRNE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ERCA1M",
+            "runway": "RNW 09 RNW 27",
+            "fixes": {
+                "ECN": "ECN",
+                "GKE": "GKE AT OR ABOVE 5000"
+            }
+        },
+        {
+            "name": "GIRN1M",
+            "runway": "RNW 09 RNW 27",
+            "fixes": {
+                "GIRNE": "GIRNE",
+                "D315F": "D315F AT OR ABOVE 6000",
+                "GKE": "GKE AT OR ABOVE 5000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "DME08": "DME08 1600",
+                "DME07": "DME07 1600",
+                "43DME": "OVERFLY 43DME 673 RNW 09",
+                "GKE": "GKE AT OR ABOVE 673 TRK 100 UNTIL 2000 TURN LEFT DIRECT GKE 5000 HOLD AT GKE LEFT TURN INBOUNDCOURSE 270 ALT 5000 LEGTIME 1 FAF DME07 MAP 43DME"
+            },
+            "transitions": [
+                {
+                    "name": "GKE",
+                    "fixes": {
+                        "GKE": "GKE AT OR ABOVE 5000",
+                        "DME07": "DME07 AT OR ABOVE 1600 TRK 223 UNTIL 4.3 FROM DME07 TURN RIGHT HDG 043 INTERCEPT RADIAL 088 TO",
+                        "DME08": "DME08"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD27",
+            "fixes": {
+                "DM07A": "DM07A 2100",
+                "GKE": "OVERFLY GKE 570 RNW 27 TRK 270 UNTIL 1000 TRK 090 UNTIL 3500 TURN LEFT DIRECT GKE AT OR ABOVE 5000 HOLD AT GKE RIGHT TURN INBOUNDCOURSE 108 ALT 5000 LEGTIME 1 FAF DM07A MAP GKE"
+            },
+            "transitions": [
+                {
+                    "name": "GKE",
+                    "fixes": {
+                        "GKE": "GKE AT OR ABOVE 5000",
+                        "D108G": "OVERFLY D108G AT OR ABOVE 2100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FN27": "FN27 2600",
+                "GKENB": "OVERFLY GKENB 281 RNW 27 TRK 256 UNTIL 1000 TURN LEFT DIRECT GKENB AT OR ABOVE 1600 TRK 076 UNTIL 3500 TURN RIGHT DIRECT GKENB 5000 HOLD AT GKENB RIGHT TURN INBOUNDCOURSE 088 ALT 5000 LEGTIME 1 FAF FN27 MAP GKE"
+            },
+            "transitions": [
+                {
+                    "name": "R086",
+                    "fixes": {
+                        "GKENB": "GKENB AT OR ABOVE 5000 TRK 086 UNTIL 9.0 FROM GKENB"
+                    }
+                },
+                {
+                    "name": "R088",
+                    "fixes": {
+                        "GKENB": "GKENB AT OR ABOVE 5000 TRK 088 UNTIL 9.0 FROM GKENB"
+                    }
+                }
+            ]
+        }
+    ]
+}

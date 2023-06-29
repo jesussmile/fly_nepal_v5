@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "ADBIS",
+            "lat": 5.567611116666667,
+            "lon": 73.12513888333334
+        },
+        {
+            "name": "AVPOT",
+            "lat": 5.867916666666667,
+            "lon": 73.09102778333333
+        },
+        {
+            "name": "EI400",
+            "lat": 5.558138883333333,
+            "lon": 73.04208333333334
+        },
+        {
+            "name": "EI401",
+            "lat": 5.616388883333333,
+            "lon": 73.03547221666666
+        },
+        {
+            "name": "EI402",
+            "lat": 5.858444433333333,
+            "lon": 73.00794443333334
+        },
+        {
+            "name": "EI403",
+            "lat": 5.800194433333333,
+            "lon": 73.01458333333333
+        },
+        {
+            "name": "PEBKA",
+            "lat": 5.848972216666667,
+            "lon": 72.92486111666666
+        },
+        {
+            "name": "PILOD",
+            "lat": 5.548666666666667,
+            "lon": 72.95902778333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "EI402": "EI402 AT OR ABOVE 1700",
+                "EI403": "EI403 1700 RNW 18 TRK 177 UNTIL 500 TURN LEFT DIRECT",
+                "AVPOT": "OVERFLY AVPOT HOLD AT AVPOT RIGHT TURN INBOUNDCOURSE 267 ALT 3000 LEGTIME 1 FAF EI403 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AVPOT",
+                    "fixes": {
+                        "AVPOT": "AVPOT"
+                    }
+                },
+                {
+                    "name": "PEBKA",
+                    "fixes": {
+                        "PEBKA": "PEBKA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "EI400": "EI400 AT OR ABOVE 1700",
+                "EI401": "EI401 1700 RNW 36 TRK 357 UNTIL 500 TURN RIGHT DIRECT",
+                "ADBIS": "OVERFLY ADBIS HOLD AT ADBIS RIGHT TURN INBOUNDCOURSE 267 ALT 3000 LEGTIME 1 FAF EI401 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ADBIS",
+                    "fixes": {
+                        "ADBIS": "ADBIS"
+                    }
+                },
+                {
+                    "name": "PILOD",
+                    "fixes": {
+                        "PILOD": "PILOD"
+                    }
+                }
+            ]
+        }
+    ]
+}

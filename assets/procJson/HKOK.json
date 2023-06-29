@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "APRAK",
+            "lat": 1.3853305666666667,
+            "lon": 35.296497216666666
+        },
+        {
+            "name": "ESTAB",
+            "lat": 1.2861472166666665,
+            "lon": 34.925161116666665
+        },
+        {
+            "name": "NESIB",
+            "lat": 1.2815,
+            "lon": 35.283675
+        },
+        {
+            "name": "NIBIT",
+            "lat": 1.4108638833333333,
+            "lon": 35.09280556666667
+        },
+        {
+            "name": "UDKOR",
+            "lat": 1.3856944333333334,
+            "lon": 34.91150278333333
+        },
+        {
+            "name": "UTINI",
+            "lat": 1.3729361166666667,
+            "lon": 35.39553888333333
+        },
+        {
+            "name": "UTODA",
+            "lat": 1.3977249999999999,
+            "lon": 35.19744721666667
+        },
+        {
+            "name": "UVOTO",
+            "lat": 1.3466388833333334,
+            "lon": 34.81950833333333
+        },
+        {
+            "name": "XALIM",
+            "lat": 1.3995194333333334,
+            "lon": 35.010386116666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "UDKOR": "UDKOR AT OR ABOVE 7800",
+                "XALIM": "XALIM 6900",
+                "NIBIT": "OVERFLY NIBIT 5283 RNW 09 TURN LEFT DIRECT",
+                "ESTAB": "OVERFLY ESTAB AT OR ABOVE 8600 HOLD AT ESTAB RIGHT TURN INBOUNDCOURSE 278 ALT 8600 LEGTIME 1 FAF XALIM MAP NIBI"
+            },
+            "transitions": [
+                {
+                    "name": "ESTAB",
+                    "fixes": {
+                        "ESTAB": "ESTAB AT OR ABOVE 8600"
+                    }
+                },
+                {
+                    "name": "UVOTO",
+                    "fixes": {
+                        "UVOTO": "UVOTO AT OR ABOVE 8600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "APRAK": "APRAK AT OR ABOVE 7100",
+                "UTODA": "UTODA 6600 RNW 27 TURN RIGHT DIRECT",
+                "NESIB": "OVERFLY NESIB AT OR ABOVE 8600 HOLD AT NESIB LEFT TURN INBOUNDCOURSE 083 ALT 8600 LEGTIME 1 FAF UTODA MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "NESIB",
+                    "fixes": {
+                        "NESIB": "NESIB AT OR ABOVE 8600"
+                    }
+                },
+                {
+                    "name": "UTINI",
+                    "fixes": {
+                        "UTINI": "UTINI AT OR ABOVE 8600"
+                    }
+                }
+            ]
+        }
+    ]
+}

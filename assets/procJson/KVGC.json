@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "ACAFO",
+            "lat": 42.76525556666667,
+            "lon": 75.51999721666667
+        },
+        {
+            "name": "CAPUM",
+            "lat": 42.79623611666667,
+            "lon": 75.53631111666667
+        },
+        {
+            "name": "KREMM",
+            "lat": 43.03186111666667,
+            "lon": 75.66098888333333
+        },
+        {
+            "name": "TRINT",
+            "lat": 42.65368611666667,
+            "lon": 75.46139443333334
+        },
+        {
+            "name": "ZOMSA",
+            "lat": 42.938663883333334,
+            "lon": 75.61155
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "KREMM": "KREMM AT OR ABOVE 3500",
+                "ZOMSA": "ZOMSA 3000 RNW 17 TRK 170 UNTIL 1447",
+                "TRINT": "OVERFLY TRINT AT OR ABOVE 3600 HOLD AT TRINT RIGHT TURN INBOUNDCOURSE 350 LEGDIST 4 FAF ZOMSA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "KREMM",
+                    "fixes": {
+                        "KREMM": "KREMM RIGHT TURN INBOUNDCOURSE 170 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "TRINT": "TRINT AT OR ABOVE 3600",
+                "ACAFO": "ACAFO 3000",
+                "CAPUM": "CAPUM AT OR ABOVE 2200 RNW 35 TRK 350 UNTIL 1537",
+                "KREMM": "OVERFLY KREMM AT OR ABOVE 3500 HOLD AT KREMM RIGHT TURN INBOUNDCOURSE 170 LEGDIST 4 FAF ACAFO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "TRINT",
+                    "fixes": {
+                        "TRINT": "TRINT RIGHT TURN INBOUNDCOURSE 350 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

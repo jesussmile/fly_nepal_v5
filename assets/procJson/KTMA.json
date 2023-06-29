@@ -1,0 +1,145 @@
+{
+    "fixes": [
+        {
+            "name": "FEBUL",
+            "lat": 31.50831111666667,
+            "lon": 83.546375
+        },
+        {
+            "name": "GAPME",
+            "lat": 31.597344433333333,
+            "lon": 83.60813888333334
+        },
+        {
+            "name": "HOPRO",
+            "lat": 31.356713883333335,
+            "lon": 83.44151943333334
+        },
+        {
+            "name": "JUNOK",
+            "lat": 31.269766666666666,
+            "lon": 83.38159443333333
+        },
+        {
+            "name": "OTK",
+            "lat": 30.780444433333333,
+            "lon": 83.27972778333333
+        },
+        {
+            "name": "PZD",
+            "lat": 31.655205566666666,
+            "lon": 84.2931
+        },
+        {
+            "name": "XATAH",
+            "lat": 31.429105566666667,
+            "lon": 83.44896666666666
+        },
+        {
+            "name": "YEPUB",
+            "lat": 31.424569433333332,
+            "lon": 83.38116943333333
+        },
+        {
+            "name": "ZOKAD",
+            "lat": 31.416613883333333,
+            "lon": 83.26410833333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 16",
+        "RNW 28",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS34",
+            "fixes": {
+                "JUNOK": "JUNOK AT OR ABOVE 2200 JUNOK JUNOK AT OR ABOVE 2200 HOLD AT JUNOK RIGHT TURN INBOUNDCOURSE 332 LEGTIME 1 FAF HOPRO MAP RNW 34",
+                "HOPRO": "HOPRO 1800 RNW 34 TRK 332 UNTIL 900 TURN RIGHT HDG 130 INTERCEPT RADIAL 172 TO"
+            },
+            "transitions": [
+                {
+                    "name": "JUNOK",
+                    "fixes": {
+                        "JUNOK": "JUNOK RIGHT TURN INBOUNDCOURSE 332 ALT 2200 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "OTK",
+                    "fixes": {
+                        "OTK": "OTK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "GAPME": "GAPME AT OR ABOVE 2200",
+                "FEBUL": "FEBUL 2000 RNW 16 TRK 152 UNTIL 621",
+                "JUNOK": "OVERFLY JUNOK AT OR ABOVE 2200 HOLD AT JUNOK RIGHT TURN INBOUNDCOURSE 332 LEGDIST 4 FAF FEBUL MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "GAPME",
+                    "fixes": {
+                        "GAPME": "GAPME RIGHT TURN INBOUNDCOURSE 152 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PZD",
+                    "fixes": {
+                        "PZD": "PZD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "ZOKAD": "ZOKAD AT OR ABOVE 2000 OVERFLY ZOKAD AT OR ABOVE 2000 HOLD AT ZOKAD RIGHT TURN INBOUNDCOURSE 278 LEGDIST 4 FAF YEPUB MAP RNW 28",
+                "YEPUB": "YEPUB 2000",
+                "XATAH": "XATAH AT OR ABOVE 880 RNW 28 TRK 277 UNTIL 800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "OTK",
+                    "fixes": {
+                        "OTK": "OTK"
+                    }
+                },
+                {
+                    "name": "ZOKAD",
+                    "fixes": {
+                        "ZOKAD": "ZOKAD RIGHT TURN INBOUNDCOURSE 278 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "JUNOK": "JUNOK AT OR ABOVE 2200 OVERFLY JUNOK AT OR ABOVE 2200 HOLD AT JUNOK RIGHT TURN INBOUNDCOURSE 332 LEGDIST 4 FAF HOPRO MAP RNW 34",
+                "HOPRO": "HOPRO 1800 RNW 34 TRK 332 UNTIL 900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JUNOK",
+                    "fixes": {
+                        "JUNOK": "JUNOK RIGHT TURN INBOUNDCOURSE 332 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "OTK",
+                    "fixes": {
+                        "OTK": "OTK"
+                    }
+                }
+            ]
+        }
+    ]
+}

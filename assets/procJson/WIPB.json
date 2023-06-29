@@ -1,0 +1,131 @@
+{
+    "fixes": [
+        {
+            "name": "ADPAT",
+            "lat": 3.0347222166666667,
+            "lon": 102.98855556666666
+        },
+        {
+            "name": "CD20X",
+            "lat": 3.1152,
+            "lon": 102.96559721666667
+        },
+        {
+            "name": "CF20",
+            "lat": 3.0926611166666667,
+            "lon": 102.972025
+        },
+        {
+            "name": "FF20",
+            "lat": 3.1956944333333333,
+            "lon": 102.94263888333333
+        },
+        {
+            "name": "MA20",
+            "lat": 3.2552694333333334,
+            "lon": 102.92564166666666
+        },
+        {
+            "name": "MD20X",
+            "lat": 3.2568805666666667,
+            "lon": 102.92518333333334
+        },
+        {
+            "name": "PB701",
+            "lat": 3.1138055666666666,
+            "lon": 102.97055556666666
+        },
+        {
+            "name": "PB702",
+            "lat": 3.1935,
+            "lon": 102.94491666666667
+        },
+        {
+            "name": "PB703",
+            "lat": 3.3418611166666667,
+            "lon": 102.89719443333334
+        },
+        {
+            "name": "SLP",
+            "lat": 3.2858611166666667,
+            "lon": 102.91691666666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDX20",
+            "fixes": {
+                "CD20X": "CD20X AT OR ABOVE 3000",
+                "FF20": "FF20 2000",
+                "MD20X": "MD20X 795 RNW 20 TRK 196 UNTIL 4.0 FROM",
+                "SLP": "SLP TURN LEFT TRK 346 INTERCEPT RADIAL 016 TO",
+                "ADPAT": "ADPAT ADPAT AT OR ABOVE 4000 HOLD AT ADPAT LEFT TURN INBOUNDCOURSE 196 ALT 4000 LEGTIME 1 FAF FF20 MAP MD20X"
+            },
+            "transitions": [
+                {
+                    "name": "ADPAT",
+                    "fixes": {
+                        "ADPAT": "ADPAT AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDY20",
+            "fixes": {
+                "CF20": "CF20 AT OR ABOVE 3500",
+                "FF20": "FF20 2000",
+                "MA20": "MA20 826 RNW 20 TRK 196 UNTIL 4.0 FROM",
+                "SLP": "SLP TURN LEFT DIRECT SLP AT OR ABOVE 7500 HOLD AT SLP RIGHT TURN INBOUNDCOURSE 024 ALT 7500 LEGTIME 1 FAF FF20 MAP MA20"
+            },
+            "transitions": [
+                {
+                    "name": "SLP",
+                    "fixes": {
+                        "SLP": "SLP AT OR ABOVE 7500 TRK 035 UNTIL 12.0 FROM SLP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ20",
+            "fixes": {
+                "CF20": "CF20 AT OR ABOVE 3500",
+                "FF20": "FF20 2000",
+                "MA20": "MA20 826 RNW 20 TRK 196 UNTIL 4.0 FROM",
+                "SLP": "SLP TURN LEFT DIRECT SLP AT OR ABOVE 7500 HOLD AT SLP RIGHT TURN INBOUNDCOURSE 024 ALT 7500 LEGTIME 1 FAF FF20 MAP MA20"
+            },
+            "transitions": [
+                {
+                    "name": "SLP",
+                    "fixes": {
+                        "SLP": "SLP AT OR ABOVE 7500 TRK 024 UNTIL 12.0 FROM SLP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "PB701": "PB701 AT OR ABOVE 3000",
+                "PB702": "PB702 2000 RNW 20",
+                "PB703": "OVERFLY PB703 TURN LEFT DIRECT",
+                "ADPAT": "ADPAT AT OR ABOVE 4000 HOLD AT ADPAT LEFT TURN INBOUNDCOURSE 196 ALT 4000 LEGTIME 1 FAF PB702 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "ADPAT",
+                    "fixes": {
+                        "ADPAT": "ADPAT AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

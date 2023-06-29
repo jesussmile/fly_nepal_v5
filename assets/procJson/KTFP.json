@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "COPAN",
+            "lat": 28.060711116666667,
+            "lon": 97.20101666666666
+        },
+        {
+            "name": "HOBIR",
+            "lat": 27.826708333333332,
+            "lon": 97.006225
+        },
+        {
+            "name": "HUDIX",
+            "lat": 28.1188,
+            "lon": 97.28453888333334
+        },
+        {
+            "name": "ISICE",
+            "lat": 27.772791666666667,
+            "lon": 97.07801666666667
+        },
+        {
+            "name": "NEGIC",
+            "lat": 27.850583333333333,
+            "lon": 97.15199721666667
+        },
+        {
+            "name": "OLIRE",
+            "lat": 28.064741666666666,
+            "lon": 97.35638611666667
+        },
+        {
+            "name": "PUCIL",
+            "lat": 27.943783333333332,
+            "lon": 97.24081388333333
+        },
+        {
+            "name": "ROYOT",
+            "lat": 27.987063883333335,
+            "lon": 97.28212778333334
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "OLIRE": "OLIRE AT OR ABOVE 2100",
+                "ROYOT": "ROYOT 1800",
+                "PUCIL": "PUCIL AT OR ABOVE 700 RNW 13",
+                "ISICE": "OVERFLY ISICE AT OR ABOVE 2000 HOLD AT ISICE RIGHT TURN INBOUNDCOURSE 313 LEGDIST 4 FAF ROYOT MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "COPAN",
+                    "fixes": {
+                        "COPAN": "COPAN",
+                        "HUDIX": "HUDIX AT OR ABOVE 2100"
+                    }
+                },
+                {
+                    "name": "OLIRE",
+                    "fixes": {
+                        "OLIRE": "OLIRE RIGHT TURN INBOUNDCOURSE 133 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ISICE": "ISICE AT OR ABOVE 2000",
+                "NEGIC": "NEGIC 1500 RNW 31",
+                "OLIRE": "OVERFLY OLIRE AT OR ABOVE 2100 HOLD AT OLIRE RIGHT TURN INBOUNDCOURSE 133 LEGDIST 4 FAF NEGIC MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "COPAN",
+                    "fixes": {
+                        "COPAN": "COPAN",
+                        "HOBIR": "HOBIR AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "ISICE",
+                    "fixes": {
+                        "ISICE": "ISICE RIGHT TURN INBOUNDCOURSE 313 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

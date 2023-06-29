@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "EN19",
+            "lat": 81.61015556666666,
+            "lon": 16.654327783333333
+        },
+        {
+            "name": "FN19",
+            "lat": 81.67671666666666,
+            "lon": 16.760586116666666
+        },
+        {
+            "name": "NOFAP",
+            "lat": 81.70783333333333,
+            "lon": 16.65575
+        },
+        {
+            "name": "NOIAE",
+            "lat": 81.81583611666667,
+            "lon": 16.08297221666667
+        },
+        {
+            "name": "NOIAW",
+            "lat": 81.82128333333333,
+            "lon": 17.177766666666667
+        },
+        {
+            "name": "NOIWP",
+            "lat": 81.79058333333333,
+            "lon": 16.636883333333333
+        },
+        {
+            "name": "NOMPT",
+            "lat": 81.62594166666666,
+            "lon": 16.674097216666667
+        },
+        {
+            "name": "NONB",
+            "lat": 81.60276666666667,
+            "lon": 16.642636116666665
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB19",
+            "fixes": {
+                "FN19": "FN19 1400",
+                "EN19": "OVERFLY EN19 88",
+                "NONB": "OVERFLY NONB AT OR ABOVE 470 RNW 19 TRK 179 UNTIL 1200 TURN RIGHT DIRECT NONB 2000 SPEED 210 FAF FN19 MAP NO"
+            },
+            "transitions": [
+                {
+                    "name": "NO",
+                    "fixes": {
+                        "NONB": "NONB AT OR ABOVE 2000 TRK 027 UNTIL 7.0 FROM NONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "NOIWP": "NOIWP AT OR ABOVE 1800",
+                "NOFAP": "NOFAP 1800",
+                "NOMPT": "OVERFLY NOMPT 375 RNW 19 TRK 194 UNTIL 1000 TURN RIGHT DIRECT",
+                "NOIAW": "NOIAW AT OR ABOVE 3000 HOLD AT NOIAW RIGHT TURN INBOUNDCOURSE 124 ALT 3000 LEGTIME 1 FAF NOFAP MAP NOMP"
+            },
+            "transitions": [
+                {
+                    "name": "NOIAE",
+                    "fixes": {
+                        "NOIAE": "NOIAE AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "NOIAW",
+                    "fixes": {
+                        "NOIAW": "NOIAW AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

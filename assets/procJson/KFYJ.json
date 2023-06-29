@@ -1,0 +1,205 @@
+{
+    "fixes": [
+        {
+            "name": "CFFHD",
+            "lat": 37.52111111666667,
+            "lon": 76.77140556666667
+        },
+        {
+            "name": "CIBAC",
+            "lat": 37.524683333333336,
+            "lon": 76.70027221666666
+        },
+        {
+            "name": "CORET",
+            "lat": 37.73023333333333,
+            "lon": 76.51532778333333
+        },
+        {
+            "name": "GORYE",
+            "lat": 37.51874443333333,
+            "lon": 76.81106111666666
+        },
+        {
+            "name": "HCM",
+            "lat": 37.44866111666666,
+            "lon": 76.71135278333334
+        },
+        {
+            "name": "HPW",
+            "lat": 37.32886943333333,
+            "lon": 77.11594443333334
+        },
+        {
+            "name": "ICACO",
+            "lat": 37.506180566666664,
+            "lon": 77.03929721666667
+        },
+        {
+            "name": "JUDLU",
+            "lat": 37.43147221666667,
+            "lon": 76.58767778333333
+        },
+        {
+            "name": "JUGPI",
+            "lat": 37.527566666666665,
+            "lon": 76.64576943333333
+        },
+        {
+            "name": "KULEY",
+            "lat": 37.515125,
+            "lon": 76.87765833333333
+        },
+        {
+            "name": "LISPE",
+            "lat": 37.49362778333333,
+            "lon": 77.05417778333333
+        },
+        {
+            "name": "MA337",
+            "lat": 37.518447216666665,
+            "lon": 76.76194443333333
+        },
+        {
+            "name": "NEZZZ",
+            "lat": 37.51229721666667,
+            "lon": 76.86286111666666
+        },
+        {
+            "name": "STEIN",
+            "lat": 37.586638883333336,
+            "lon": 76.32012221666666
+        },
+        {
+            "name": "XIPYY",
+            "lat": 37.51780556666667,
+            "lon": 76.80578611666667
+        },
+        {
+            "name": "YINDU",
+            "lat": 37.52381943333334,
+            "lon": 76.71651943333333
+        },
+        {
+            "name": "ZINAV",
+            "lat": 37.53518056666667,
+            "lon": 76.49950278333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC10",
+            "fixes": {
+                "LISPE": "LISPE AT OR ABOVE 2000",
+                "NEZZZ": "NEZZZ 1700",
+                "XIPYY": "XIPYY AT OR ABOVE 680",
+                "CFFHD": "CFFHD 70 RNW 10 TRK 094 UNTIL 500 TURN RIGHT DIRECT",
+                "HCM": "HCM AT OR ABOVE 2000 HOLD AT HCM RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF NEZZZ MAP CFFHD"
+            },
+            "transitions": [
+                {
+                    "name": "HCM",
+                    "fixes": {
+                        "HCM": "HCM",
+                        "LISPE": "LISPE AT OR ABOVE 2000 HOLD AT LISPE RIGHT TURN INBOUNDCOURSE 094 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "HPW",
+                    "fixes": {
+                        "HPW": "HPW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "ICACO": "ICACO AT OR ABOVE 2000",
+                "KULEY": "KULEY 1700",
+                "GORYE": "GORYE AT OR ABOVE 660 RNW 10 TRK 097 UNTIL 264",
+                "CIBAC": "CIBAC",
+                "JUDLU": "OVERFLY JUDLU AT OR ABOVE 2000 HOLD AT JUDLU LEFT TURN INBOUNDCOURSE 111 LEGDIST 4 FAF KULEY MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "HPW",
+                    "fixes": {
+                        "HPW": "HPW"
+                    }
+                },
+                {
+                    "name": "ICACO",
+                    "fixes": {
+                        "ICACO": "ICACO RIGHT TURN INBOUNDCOURSE 097 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB28",
+            "fixes": {
+                "ZINAV": "ZINAV AT OR ABOVE 2000",
+                "JUGPI": "JUGPI 2000",
+                "YINDU": "YINDU AT OR ABOVE 740 RNW 28 TRK 277 UNTIL 420",
+                "ICACO": "OVERFLY ICACO AT OR ABOVE 2000 HOLD AT ICACO RIGHT TURN INBOUNDCOURSE 097 LEGDIST 4 FAF JUGPI MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "CORET",
+                    "fixes": {
+                        "CORET": "CORET"
+                    }
+                },
+                {
+                    "name": "STEIN",
+                    "fixes": {
+                        "STEIN": "STEIN"
+                    }
+                },
+                {
+                    "name": "ZINAV",
+                    "fixes": {
+                        "ZINAV": "ZINAV RIGHT TURN INBOUNDCOURSE 277 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA10",
+            "fixes": {
+                "HCM": "HCM 1400 HCM AT OR ABOVE 1700 HOLD AT HCM RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF HCM MAP MA337",
+                "MA337": "MA337 620 RNW 10 TRK 337 UNTIL 620 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HCM",
+                    "fixes": {
+                        "HCM": "HCM RIGHT TURN INBOUNDCOURSE 335 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA28",
+            "fixes": {
+                "HCM": "HCM 1400 HCM AT OR ABOVE 1700 HOLD AT HCM RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF HCM MAP MA337",
+                "MA337": "MA337 620 RNW 28 TRK 337 UNTIL 620 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HCM",
+                    "fixes": {
+                        "HCM": "HCM RIGHT TURN INBOUNDCOURSE 335 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

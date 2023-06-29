@@ -1,0 +1,130 @@
+{
+    "fixes": [
+        {
+            "name": "ARNEV",
+            "lat": 47.94919443333333,
+            "lon": 0.49205556666666667
+        },
+        {
+            "name": "BIRSO",
+            "lat": 47.832444433333336,
+            "lon": 0.5148611166666667
+        },
+        {
+            "name": "FOV14",
+            "lat": 48.155222216666665,
+            "lon": 0.8860277833333333
+        },
+        {
+            "name": "FOV32",
+            "lat": 47.959666666666664,
+            "lon": 0.6604166666666667
+        },
+        {
+            "name": "IOV14",
+            "lat": 48.22230556666667,
+            "lon": 0.9639444333333334
+        },
+        {
+            "name": "IOV32",
+            "lat": 47.898972216666664,
+            "lon": 0.5908611166666666
+        },
+        {
+            "name": "LADAV",
+            "lat": 48.29261111666667,
+            "lon": 0.8973055666666667
+        },
+        {
+            "name": "LALKU",
+            "lat": 48.19652778333333,
+            "lon": 1.08225
+        },
+        {
+            "name": "LANOM",
+            "lat": 48.28783333333333,
+            "lon": 1.0402777833333334
+        },
+        {
+            "name": "OTLOV",
+            "lat": 47.84763888333333,
+            "lon": 0.6883333333333332
+        },
+        {
+            "name": "OV401",
+            "lat": 48.07986111666666,
+            "lon": 0.7988055666666667
+        },
+        {
+            "name": "OV722",
+            "lat": 47.98563888333334,
+            "lon": 0.69025
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "IOV14": "IOV14 AT OR ABOVE 3200",
+                "FOV14": "FOV14 3200 RNW 14",
+                "OV722": "OVERFLY OV722 TURN LEFT DIRECT",
+                "LADAV": "LADAV AT OR ABOVE 3500 SPEED 230 FAF FOV14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "LADAV",
+                    "fixes": {
+                        "LADAV": "LADAV AT OR ABOVE 3500 SPEED 220"
+                    }
+                },
+                {
+                    "name": "LALKU",
+                    "fixes": {
+                        "LALKU": "LALKU AT OR ABOVE 3500 SPEED 220"
+                    }
+                },
+                {
+                    "name": "LANOM",
+                    "fixes": {
+                        "LANOM": "LANOM AT OR ABOVE 3500 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "IOV32": "IOV32 AT OR ABOVE 2000",
+                "FOV32": "FOV32 2000 RNW 32",
+                "OV401": "OVERFLY OV401 TURN RIGHT DIRECT",
+                "ARNEV": "ARNEV AT OR ABOVE 2100 SPEED 195 FAF FOV32 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "ARNEV",
+                    "fixes": {
+                        "ARNEV": "ARNEV AT OR ABOVE 2100 SPEED 195"
+                    }
+                },
+                {
+                    "name": "BIRSO",
+                    "fixes": {
+                        "BIRSO": "BIRSO AT OR ABOVE 2200 SPEED 230"
+                    }
+                },
+                {
+                    "name": "OTLOV",
+                    "fixes": {
+                        "OTLOV": "OTLOV AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

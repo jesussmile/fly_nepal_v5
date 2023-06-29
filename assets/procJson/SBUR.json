@@ -1,0 +1,206 @@
+{
+    "fixes": [
+        {
+            "name": "FF17",
+            "lat": 19.703252783333333,
+            "lon": 48.022625
+        },
+        {
+            "name": "FF35",
+            "lat": 19.833841666666668,
+            "lon": 47.92998611666667
+        },
+        {
+            "name": "UR001",
+            "lat": 19.757208333333335,
+            "lon": 47.967613883333335
+        },
+        {
+            "name": "UR002",
+            "lat": 19.770327783333332,
+            "lon": 47.957116666666664
+        },
+        {
+            "name": "UR461",
+            "lat": 19.830083333333334,
+            "lon": 47.92375
+        },
+        {
+            "name": "UR462",
+            "lat": 19.686555566666666,
+            "lon": 48.01463888333333
+        },
+        {
+            "name": "UR463",
+            "lat": 19.614861116666667,
+            "lon": 48.06013888333333
+        },
+        {
+            "name": "UR464",
+            "lat": 19.634027783333334,
+            "lon": 48.16411111666667
+        },
+        {
+            "name": "UR466",
+            "lat": 19.543138883333334,
+            "lon": 48.105583333333335
+        },
+        {
+            "name": "UR467",
+            "lat": 19.536777783333335,
+            "lon": 47.993555566666664
+        },
+        {
+            "name": "UR471",
+            "lat": 19.700166666666668,
+            "lon": 48.00594443333333
+        },
+        {
+            "name": "UR472",
+            "lat": 19.843694433333333,
+            "lon": 47.915138883333334
+        },
+        {
+            "name": "UR473",
+            "lat": 19.915444433333334,
+            "lon": 47.86966666666667
+        },
+        {
+            "name": "UR474",
+            "lat": 19.896194433333335,
+            "lon": 47.7655
+        },
+        {
+            "name": "UR476",
+            "lat": 19.987166666666667,
+            "lon": 47.82416666666667
+        },
+        {
+            "name": "UR477",
+            "lat": 19.993472216666667,
+            "lon": 47.936444433333335
+        },
+        {
+            "name": "URBNB",
+            "lat": 19.7655,
+            "lon": 47.95916666666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "14",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 17",
+                    "fixes": {
+                        "RNW 17": "RNW 17 TRK 170 UNTIL 4000 HDG 170 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 35",
+                    "fixes": {
+                        "RNW 35": "RNW 35 TRK 350 UNTIL 4000 HDG 350 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB17",
+            "fixes": {
+                "FF17": "FF17 4100",
+                "UR001": "UR001 2677 RNW 17 TRK 158 UNTIL 5000 TURN LEFT DIRECT",
+                "URBNB": "URBNB AT OR ABOVE 5000 HOLD AT URBNB RIGHT TURN INBOUNDCOURSE 356 ALT 5000 LEGTIME 1 FAF FF17 MAP UR001"
+            },
+            "transitions": [
+                {
+                    "name": "URB",
+                    "fixes": {
+                        "URBNB": "URBNB AT OR ABOVE 5000 SPEED 200 TRK 356 UNTIL 8.3 FROM URBNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB35",
+            "fixes": {
+                "FF35": "FF35 4000",
+                "UR002": "OVERFLY UR002 2696",
+                "URBNB": "OVERFLY URBNB AT OR ABOVE 3060 RNW 35 TRK 000 UNTIL 5000 TURN RIGHT DIRECT URBNB AT OR ABOVE 5000 HOLD AT URBNB RIGHT TURN INBOUNDCOURSE 201 ALT 5000 LEGTIME 1 FAF FF35 MAP URB"
+            },
+            "transitions": [
+                {
+                    "name": "URB",
+                    "fixes": {
+                        "URBNB": "URBNB AT OR ABOVE 5000 SPEED 200 TRK 201 UNTIL 7.2 FROM URBNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "UR463": "UR463 AT OR ABOVE 5000",
+                "UR462": "UR462 4280 RNW 17",
+                "UR461": "OVERFLY UR461 AT OR ABOVE 5000 HOLD AT UR461 RIGHT TURN INBOUNDCOURSE 171 ALT 5000 LEGTIME 1 FAF UR462 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "UR464",
+                    "fixes": {
+                        "UR464": "UR464 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "UR466",
+                    "fixes": {
+                        "UR466": "UR466 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "UR467",
+                    "fixes": {
+                        "UR467": "UR467 AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "UR473": "UR473 AT OR ABOVE 5000",
+                "UR472": "UR472 4300 RNW 35",
+                "UR471": "OVERFLY UR471 AT OR ABOVE 5000 HOLD AT UR471 RIGHT TURN INBOUNDCOURSE 171 ALT 5000 LEGTIME 1 FAF UR472 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "UR474",
+                    "fixes": {
+                        "UR474": "UR474 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "UR476",
+                    "fixes": {
+                        "UR476": "UR476 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "UR477",
+                    "fixes": {
+                        "UR477": "UR477 AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

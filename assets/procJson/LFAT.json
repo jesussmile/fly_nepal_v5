@@ -1,0 +1,180 @@
+{
+    "fixes": [
+        {
+            "name": "AT410",
+            "lat": 50.44075,
+            "lon": 1.7498333333333334
+        },
+        {
+            "name": "AT510",
+            "lat": 50.56497221666667,
+            "lon": 1.5445277833333333
+        },
+        {
+            "name": "BNE",
+            "lat": 50.624777783333336,
+            "lon": 1.9071111166666666
+        },
+        {
+            "name": "EKLEB",
+            "lat": 50.550277783333335,
+            "lon": 1.7541666666666667
+        },
+        {
+            "name": "ELTUD",
+            "lat": 50.44347221666666,
+            "lon": 1.8965
+        },
+        {
+            "name": "ESIVI",
+            "lat": 50.395277783333334,
+            "lon": 1.8245277833333333
+        },
+        {
+            "name": "FAT13",
+            "lat": 50.59341666666667,
+            "lon": 1.4972777833333333
+        },
+        {
+            "name": "FAT31",
+            "lat": 50.44377778333333,
+            "lon": 1.7448333333333332
+        },
+        {
+            "name": "FI13",
+            "lat": 50.59313888333333,
+            "lon": 1.49775
+        },
+        {
+            "name": "OKPEM",
+            "lat": 50.64186111666667,
+            "lon": 1.5725277833333333
+        },
+        {
+            "name": "OLMAV",
+            "lat": 50.69916666666667,
+            "lon": 1.4775277833333333
+        },
+        {
+            "name": "OSDIT",
+            "lat": 50.60008333333333,
+            "lon": 1.3298055666666666
+        },
+        {
+            "name": "TUKVI",
+            "lat": 50.64963888333333,
+            "lon": 1.4036111166666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "BNE1Y",
+            "rnw": "13",
+            "fixes": {
+                "BNE": "BNE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BNE1Z",
+            "rnw": "31",
+            "fixes": {
+                "BNE": "BNE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS13",
+            "fixes": {
+                "TUKVI": "TUKVI AT OR ABOVE 2000 SPEED 200",
+                "FI13": "FI13 2000 RNW 13",
+                "AT410": "OVERFLY AT410 SPEED 220 TURN LEFT DIRECT",
+                "OKPEM": "OKPEM 2000 SPEED 220 FAF FI13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "OKPEM",
+                    "fixes": {
+                        "OKPEM": "OKPEM AT OR ABOVE 2000 SPEED 220",
+                        "OLMAV": "OLMAV SPEED 200"
+                    }
+                },
+                {
+                    "name": "OLMAV",
+                    "fixes": {
+                        "OLMAV": "OLMAV AT OR ABOVE 2000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "OSDIT",
+                    "fixes": {
+                        "OSDIT": "OSDIT AT OR ABOVE 2000 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "TUKVI": "TUKVI AT OR ABOVE 2000 SPEED 200",
+                "FAT13": "FAT13 2000 RNW 13",
+                "AT410": "OVERFLY AT410 SPEED 220 TURN LEFT DIRECT",
+                "OKPEM": "OKPEM 2000 SPEED 220 FAF FAT13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "OKPEM",
+                    "fixes": {
+                        "OKPEM": "OKPEM AT OR ABOVE 2000 SPEED 220",
+                        "OLMAV": "OLMAV AT OR ABOVE 2000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "OLMAV",
+                    "fixes": {
+                        "OLMAV": "OLMAV AT OR ABOVE 2000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "OSDIT",
+                    "fixes": {
+                        "OSDIT": "OSDIT AT OR ABOVE 2000 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ESIVI": "ESIVI AT OR ABOVE 2000 SPEED 190",
+                "FAT31": "FAT31 2000 RNW 31",
+                "AT510": "OVERFLY AT510 SPEED 220 TURN RIGHT DIRECT",
+                "EKLEB": "EKLEB 2000 SPEED 220 FAF FAT31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "EKLEB",
+                    "fixes": {
+                        "EKLEB": "EKLEB AT OR ABOVE 2000 SPEED 220",
+                        "ELTUD": "ELTUD AT OR ABOVE 2000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "ELTUD",
+                    "fixes": {
+                        "ELTUD": "ELTUD AT OR ABOVE 2000 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

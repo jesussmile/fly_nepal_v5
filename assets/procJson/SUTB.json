@@ -1,0 +1,126 @@
+{
+    "fixes": [
+        {
+            "name": "FF10",
+            "lat": 31.740977783333335,
+            "lon": 56.02403056666667
+        },
+        {
+            "name": "FF28",
+            "lat": 31.744463883333335,
+            "lon": 55.841236116666664
+        },
+        {
+            "name": "FV10",
+            "lat": 31.747233333333334,
+            "lon": 56.02451943333333
+        },
+        {
+            "name": "FV28",
+            "lat": 31.740425,
+            "lon": 55.84206388333333
+        },
+        {
+            "name": "TBONB",
+            "lat": 31.751027783333335,
+            "lon": 55.928611116666666
+        },
+        {
+            "name": "TMB",
+            "lat": 31.750277783333335,
+            "lon": 55.923861116666664
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB10",
+            "fixes": {
+                "FF10": "FF10 2000 RNW 10",
+                "TBONB": "OVERFLY TBONB HDG 106 VECTORS FAF FF10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "TBO1",
+                    "fixes": {
+                        "TBONB": "TBONB AT OR ABOVE 2000 TRK 316 UNTIL 8.8 FROM TBONB"
+                    }
+                },
+                {
+                    "name": "TBO2",
+                    "fixes": {
+                        "TBONB": "TBONB AT OR ABOVE 2000 TRK 306 UNTIL 7.5 FROM TBONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB28",
+            "fixes": {
+                "FF28": "FF28 1760 RNW 28",
+                "TBONB": "OVERFLY TBONB HDG 274 VECTORS FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "TBO1",
+                    "fixes": {
+                        "TBONB": "TBONB AT OR ABOVE 2000 TRK 064 UNTIL 8.8 FROM TBONB"
+                    }
+                },
+                {
+                    "name": "TBO2",
+                    "fixes": {
+                        "TBONB": "TBONB AT OR ABOVE 2000 TRK 074 UNTIL 7.5 FROM TBONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR10",
+            "fixes": {
+                "FV10": "FV10 2000 RNW 10",
+                "TMB": "OVERFLY TMB TRK 102 VECTORS FAF FV10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "TMB1",
+                    "fixes": {
+                        "TMB": "TMB AT OR ABOVE 2000 TRK 309 UNTIL 8.8 FROM TMB"
+                    }
+                },
+                {
+                    "name": "TMB2",
+                    "fixes": {
+                        "TMB": "TMB AT OR ABOVE 2000 TRK 300 UNTIL 7.5 FROM TMB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR28",
+            "fixes": {
+                "FV28": "FV28 1500 RNW 28",
+                "TMB": "OVERFLY TMB TRK 272 VECTORS FAF FV28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "TMB1",
+                    "fixes": {
+                        "TMB": "TMB AT OR ABOVE 2000 TRK 119 UNTIL 8.8 FROM TMB"
+                    }
+                },
+                {
+                    "name": "TMB2",
+                    "fixes": {
+                        "TMB": "TMB AT OR ABOVE 2000 TRK 110 UNTIL 7.5 FROM TMB"
+                    }
+                }
+            ]
+        }
+    ]
+}

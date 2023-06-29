@@ -1,0 +1,135 @@
+{
+    "fixes": [
+        {
+            "name": "CUVBU",
+            "lat": 54.13455556666667,
+            "lon": 165.49291111666668
+        },
+        {
+            "name": "HUVDI",
+            "lat": 54.216658333333335,
+            "lon": 165.846775
+        },
+        {
+            "name": "TESPE",
+            "lat": 54.933025,
+            "lon": 164.78218056666665
+        },
+        {
+            "name": "UGWIX",
+            "lat": 54.14678611666667,
+            "lon": 165.62831388333333
+        },
+        {
+            "name": "UVDAH",
+            "lat": 54.123466666666666,
+            "lon": 165.371675
+        },
+        {
+            "name": "WIRTU",
+            "lat": 54.14870833333333,
+            "lon": 165.64976388333332
+        },
+        {
+            "name": "WODPU",
+            "lat": 54.18427221666666,
+            "lon": 165.74526943333333
+        },
+        {
+            "name": "ZEBUV",
+            "lat": 54.3044,
+            "lon": 165.94843056666667
+        },
+        {
+            "name": "ZIVGO",
+            "lat": 54.13581666666666,
+            "lon": 165.16878333333332
+        },
+        {
+            "name": "ZOXIV",
+            "lat": 54.21388056666667,
+            "lon": 165.73976111666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "ZEBUV1",
+            "rnw": "31",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 09",
+                    "fixes": {
+                        "RNW 09": "RNW 09 HDG 089 UNTIL 2100 TURN LEFT DIRECT",
+                        "ZEBUV": "ZEBUV 6000"
+                    }
+                },
+                {
+                    "rwy": "RNW 27",
+                    "fixes": {
+                        "RNW 27": "RNW 27 HDG 269 UNTIL 630",
+                        "ZEBUV": "ZEBUV 6000"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "ZEBUV": "ZEBUV AT OR ABOVE 5000 OVERFLY ZEBUV AT OR ABOVE 9000 HOLD AT ZEBUV RIGHT TURN INBOUNDCOURSE 123 LEGDIST 5 FAF HUVDI MAP UGWIX",
+                "HUVDI": "HUVDI 3100",
+                "WODPU": "WODPU AT OR ABOVE 1800",
+                "UGWIX": "OVERFLY UGWIX 315 RNW 09 TRK 109 UNTIL 2800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ZEBUV",
+                    "fixes": {
+                        "ZEBUV": "ZEBUV RIGHT TURN INBOUNDCOURSE 123 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA09",
+            "fixes": {
+                "ZEBUV": "ZEBUV AT OR ABOVE 4900 OVERFLY ZEBUV AT OR ABOVE 4900 HOLD AT ZEBUV RIGHT TURN INBOUNDCOURSE 123 LEGDIST 5 FAF ZOXIV MAP RNW 09",
+                "ZOXIV": "ZOXIV 2120 RNW 09 TRK 123 UNTIL 2500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ZEBUV",
+                    "fixes": {
+                        "ZEBUV": "ZEBUV RIGHT TURN INBOUNDCOURSE 123 ALT 4900 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "ZIVGO": "ZIVGO AT OR ABOVE 4900",
+                "UVDAH": "UVDAH 2700",
+                "CUVBU": "CUVBU AT OR ABOVE 1320 RNW 27 TRK 269 UNTIL 530",
+                "WIRTU": "WIRTU",
+                "ZEBUV": "OVERFLY ZEBUV AT OR ABOVE 9000 HOLD AT ZEBUV RIGHT TURN INBOUNDCOURSE 123 LEGDIST 7 FAF UVDAH MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "TESPE",
+                    "fixes": {
+                        "TESPE": "TESPE"
+                    }
+                }
+            ]
+        }
+    ]
+}

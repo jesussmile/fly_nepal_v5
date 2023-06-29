@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "FARLS",
+            "lat": 69.15406388333334,
+            "lon": 105.30676666666666
+        },
+        {
+            "name": "FF13",
+            "lat": 69.16149443333333,
+            "lon": 105.33065
+        },
+        {
+            "name": "LEXUP",
+            "lat": 69.06315,
+            "lon": 104.97374721666667
+        },
+        {
+            "name": "LOBDU",
+            "lat": 69.15481666666666,
+            "lon": 105.30953888333333
+        },
+        {
+            "name": "MOBOG",
+            "lat": 69.14866111666667,
+            "lon": 105.67316111666666
+        },
+        {
+            "name": "PI001",
+            "lat": 69.12967033333334,
+            "lon": 105.01248161666666
+        },
+        {
+            "name": "PI002",
+            "lat": 69.19001186666667,
+            "lon": 104.90379828333333
+        },
+        {
+            "name": "PI003",
+            "lat": 69.15165968333334,
+            "lon": 104.71457153333333
+        },
+        {
+            "name": "RODLA",
+            "lat": 69.06161666666667,
+            "lon": 104.96817778333333
+        },
+        {
+            "name": "ROMBU",
+            "lat": 69.00226943333334,
+            "lon": 104.75359166666667
+        },
+        {
+            "name": "SEDIX",
+            "lat": 69.06782778333333,
+            "lon": 104.61138333333334
+        },
+        {
+            "name": "TEVAM",
+            "lat": 68.93659721666667,
+            "lon": 104.89495556666667
+        },
+        {
+            "name": "TIKOM",
+            "lat": 69.28116943333333,
+            "lon": 105.39153888333334
+        },
+        {
+            "name": "VOGOX",
+            "lat": 69.21497221666667,
+            "lon": 105.53277778333333
+        },
+        {
+            "name": "YCB",
+            "lat": 69.11761666666666,
+            "lon": 105.17264443333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "VOGOX": "VOGOX AT OR ABOVE 1500",
+                "LOBDU": "LOBDU 1500 RNW 13",
+                "RODLA": "OVERFLY RODLA 2000 HOLD AT RODLA RIGHT TURN INBOUNDCOURSE 012 SPEED 230 LEGTIME 1 FAF LOBDU MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "MOBOG",
+                    "fixes": {
+                        "MOBOG": "MOBOG SPEED 210"
+                    }
+                },
+                {
+                    "name": "TIKOM",
+                    "fixes": {
+                        "TIKOM": "TIKOM SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ROMBU": "ROMBU AT OR ABOVE 1500",
+                "LEXUP": "LEXUP 1400 RNW 31",
+                "FARLS": "OVERFLY FARLS 1800 HOLD AT FARLS RIGHT TURN INBOUNDCOURSE 030 SPEED 230 LEGTIME 1 FAF LEXUP MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "SEDIX",
+                    "fixes": {
+                        "SEDIX": "SEDIX SPEED 210"
+                    }
+                },
+                {
+                    "name": "TEVAM",
+                    "fixes": {
+                        "TEVAM": "TEVAM SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR13",
+            "fixes": {
+                "FF13": "FF13 1700",
+                "YCB": "YCB 324 RNW 13 TRK 012 UNTIL 1700 TURN RIGHT DIRECT YCB 1700 HOLD AT YCB RIGHT TURN INBOUNDCOURSE 012 SPEED 230 LEGTIME 1 FAF FF13 MAP YCB"
+            },
+            "transitions": [
+                {
+                    "name": "YCB",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

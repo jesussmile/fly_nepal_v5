@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "CHIEF",
+            "lat": 36.423383333333334,
+            "lon": 92.38619443333333
+        },
+        {
+            "name": "JUBVU",
+            "lat": 36.227666666666664,
+            "lon": 92.68726111666666
+        },
+        {
+            "name": "OVVIX",
+            "lat": 36.257297216666664,
+            "lon": 92.64183611666667
+        },
+        {
+            "name": "RAJFA",
+            "lat": 36.352241666666664,
+            "lon": 92.49588056666667
+        },
+        {
+            "name": "WEDUR",
+            "lat": 36.15647778333334,
+            "lon": 92.79601943333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "WEDUR": "WEDUR AT OR ABOVE 3600",
+                "JUBVU": "JUBVU 2800",
+                "OVVIX": "OVVIX AT OR ABOVE 1740 RNW 04 TRK 051 UNTIL 1100",
+                "CHIEF": "OVERFLY CHIEF AT OR ABOVE 3400 HOLD AT CHIEF RIGHT TURN INBOUNDCOURSE 231 LEGDIST 4 FAF JUBVU MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "WEDUR",
+                    "fixes": {
+                        "WEDUR": "WEDUR RIGHT TURN INBOUNDCOURSE 051 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "CHIEF": "CHIEF AT OR ABOVE 3400",
+                "RAJFA": "RAJFA 2800 RNW 22 TRK 231 UNTIL 1022",
+                "WEDUR": "OVERFLY WEDUR AT OR ABOVE 3600 HOLD AT WEDUR RIGHT TURN INBOUNDCOURSE 051 LEGDIST 4 FAF RAJFA MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "CHIEF",
+                    "fixes": {
+                        "CHIEF": "CHIEF RIGHT TURN INBOUNDCOURSE 231 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

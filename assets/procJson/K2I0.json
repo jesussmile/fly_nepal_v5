@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "CELES",
+            "lat": 37.232058333333335,
+            "lon": 87.5927
+        },
+        {
+            "name": "DEEPE",
+            "lat": 37.294994433333336,
+            "lon": 87.49403333333333
+        },
+        {
+            "name": "LOREE",
+            "lat": 37.47523056666667,
+            "lon": 87.20983611666666
+        },
+        {
+            "name": "MEDIE",
+            "lat": 37.41121388333333,
+            "lon": 87.31106111666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "CELES": "CELES AT OR ABOVE 2600",
+                "DEEPE": "DEEPE 2200 RNW 05 TRK 054 UNTIL 689",
+                "LOREE": "OVERFLY LOREE AT OR ABOVE 2600 HOLD AT LOREE RIGHT TURN INBOUNDCOURSE 235 LEGDIST 4 FAF DEEPE MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "CELES",
+                    "fixes": {
+                        "CELES": "CELES RIGHT TURN INBOUNDCOURSE 054 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "LOREE": "LOREE AT OR ABOVE 2600",
+                "MEDIE": "MEDIE 2000 RNW 23 TRK 235 UNTIL 674",
+                "CELES": "OVERFLY CELES AT OR ABOVE 2600 HOLD AT CELES RIGHT TURN INBOUNDCOURSE 054 LEGDIST 4 FAF MEDIE MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "LOREE",
+                    "fixes": {
+                        "LOREE": "LOREE RIGHT TURN INBOUNDCOURSE 235 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

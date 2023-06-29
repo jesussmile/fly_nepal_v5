@@ -1,0 +1,134 @@
+{
+    "fixes": [
+        {
+            "name": "CENOK",
+            "lat": 33.253138883333335,
+            "lon": 88.37577221666666
+        },
+        {
+            "name": "IGB",
+            "lat": 33.485486116666664,
+            "lon": 88.51358888333333
+        },
+        {
+            "name": "MACXI",
+            "lat": 33.465555566666666,
+            "lon": 88.38215833333334
+        },
+        {
+            "name": "PI001",
+            "lat": 33.49459228333333,
+            "lon": 88.58267696666667
+        },
+        {
+            "name": "PI002",
+            "lat": 33.45244828333333,
+            "lon": 88.65216816666667
+        },
+        {
+            "name": "PI003",
+            "lat": 33.511402016666665,
+            "lon": 88.7110218
+        },
+        {
+            "name": "SISYO",
+            "lat": 33.51659721666667,
+            "lon": 88.38196111666667
+        },
+        {
+            "name": "TUDFU",
+            "lat": 33.564416666666666,
+            "lon": 88.38308888333333
+        },
+        {
+            "name": "WODUD",
+            "lat": 33.763336116666665,
+            "lon": 88.38779166666667
+        },
+        {
+            "name": "YUBUY",
+            "lat": 33.37001943333333,
+            "lon": 88.37851388333333
+        },
+        {
+            "name": "ZAPKA",
+            "lat": 33.434111116666664,
+            "lon": 88.38001943333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "WODUD": "WODUD AT OR ABOVE 2500",
+                "TUDFU": "TUDFU 2000",
+                "SISYO": "SISYO AT OR ABOVE 1080 RNW 18 TRK 182 UNTIL 469",
+                "CENOK": "OVERFLY CENOK AT OR ABOVE 2500 HOLD AT CENOK RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF TUDFU MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "WODUD",
+                    "fixes": {
+                        "WODUD": "WODUD RIGHT TURN INBOUNDCOURSE 182 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "CENOK": "CENOK AT OR ABOVE 2500 OVERFLY CENOK AT OR ABOVE 2500 HOLD AT CENOK RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF YUBUY MAP RNW 36",
+                "YUBUY": "YUBUY 2000",
+                "ZAPKA": "ZAPKA AT OR ABOVE 720 RNW 36 TRK 002 UNTIL 740 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CENOK",
+                    "fixes": {
+                        "CENOK": "CENOK RIGHT TURN INBOUNDCOURSE 002 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "IGB": "IGB 2000 IGB AT OR ABOVE 2000 HOLD AT IGB RIGHT TURN INBOUNDCOURSE 096 LEGTIME 1 FAF IGB MAP MACXI",
+                "MACXI": "OVERFLY MACXI 1040 RNW 18 TRK 096 UNTIL 1040 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "IGB": "IGB 2000 IGB AT OR ABOVE 2000 HOLD AT IGB RIGHT TURN INBOUNDCOURSE 096 LEGTIME 1 FAF IGB MAP MACXI",
+                "MACXI": "OVERFLY MACXI 1040 RNW 36 TRK 096 UNTIL 1040 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

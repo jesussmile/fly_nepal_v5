@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "IVVEW",
+            "lat": 45.648597216666666,
+            "lon": 68.53608888333333
+        },
+        {
+            "name": "JEBIV",
+            "lat": 45.64757221666667,
+            "lon": 68.37430278333333
+        },
+        {
+            "name": "MLT",
+            "lat": 45.586708333333334,
+            "lon": 68.51546388333334
+        },
+        {
+            "name": "PEENK",
+            "lat": 45.650391666666664,
+            "lon": 69.10144166666667
+        },
+        {
+            "name": "TURTE",
+            "lat": 45.64988056666667,
+            "lon": 68.83067221666667
+        },
+        {
+            "name": "ULOGE",
+            "lat": 45.630775,
+            "lon": 68.62725
+        },
+        {
+            "name": "ZAKTI",
+            "lat": 45.650202783333334,
+            "lon": 68.95888888333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 16",
+        "RNW 29",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "PEENK": "PEENK AT OR ABOVE 5900",
+                "ZAKTI": "ZAKTI AT OR ABOVE 4000",
+                "TURTE": "TURTE 2300 RNW 11 TRK 107 UNTIL 808",
+                "JEBIV": "OVERFLY JEBIV AT OR ABOVE 2300 HOLD AT JEBIV RIGHT TURN INBOUNDCOURSE 288 LEGDIST 4 FAF TURTE MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "PEENK",
+                    "fixes": {
+                        "PEENK": "PEENK RIGHT TURN INBOUNDCOURSE 107 ALT 5900 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "JEBIV": "JEBIV AT OR ABOVE 2300 JEBIV AT OR ABOVE 2300 HOLD AT JEBIV RIGHT TURN INBOUNDCOURSE 288 LEGDIST 4 FAF IVVEW MAP RNW 29",
+                "IVVEW": "IVVEW 2300 RNW 29 TRK 287 UNTIL 920 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JEBIV",
+                    "fixes": {
+                        "JEBIV": "JEBIV RIGHT TURN INBOUNDCOURSE 288 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR29",
+            "fixes": {
+                "MLT": "MLT 3000 MLT AT OR ABOVE 3000 HOLD AT MLT RIGHT TURN INBOUNDCOURSE 319 LEGTIME 1 FAF MLT MAP RNW 29",
+                "ULOGE": "ULOGE AT OR ABOVE 1060 RNW 29 TRK 319 UNTIL 810 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MLT",
+                    "fixes": {
+                        "MLT": "MLT RIGHT TURN INBOUNDCOURSE 319 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

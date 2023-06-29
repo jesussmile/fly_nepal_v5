@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "ETEXY",
+            "lat": 44.59483611666667,
+            "lon": 92.63151943333334
+        },
+        {
+            "name": "FF09",
+            "lat": 44.595427783333335,
+            "lon": 92.64765278333333
+        },
+        {
+            "name": "FGT",
+            "lat": 44.630952783333335,
+            "lon": 93.18205278333333
+        },
+        {
+            "name": "GEP",
+            "lat": 45.14568611666667,
+            "lon": 93.37318056666666
+        },
+        {
+            "name": "JUGAN",
+            "lat": 44.600622216666665,
+            "lon": 92.79225833333334
+        },
+        {
+            "name": "JWLFD",
+            "lat": 44.600661116666664,
+            "lon": 92.79320278333333
+        },
+        {
+            "name": "SIFRT",
+            "lat": 44.584383333333335,
+            "lon": 92.35596666666666
+        },
+        {
+            "name": "WETUG",
+            "lat": 44.58658056666667,
+            "lon": 92.41248888333334
+        },
+        {
+            "name": "ZAMLU",
+            "lat": 44.57798056666667,
+            "lon": 92.19524721666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS09",
+            "fixes": {
+                "JWLFD": "JWLFD AT OR ABOVE 3000",
+                "FF09": "FF09 2964 RNW 09 TRK 091 UNTIL 2000 TURN RIGHT DIRECT FF09 AT OR ABOVE 3000 HOLD AT FF09 RIGHT TURN INBOUNDCOURSE 091 LEGTIME 1 FAF FF09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "FGT",
+                    "fixes": {
+                        "FGT": "FGT",
+                        "FF09": "FF09 AT OR ABOVE 3000 HOLD AT FF09 RIGHT TURN INBOUNDCOURSE 091 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "GEP",
+                    "fixes": {
+                        "GEP": "GEP",
+                        "FF09": "FF09 AT OR ABOVE 3500 HOLD AT FF09 RIGHT TURN INBOUNDCOURSE 091 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "JUGAN": "JUGAN AT OR ABOVE 3000",
+                "ETEXY": "ETEXY 2700 RNW 09 TRK 091 UNTIL 978",
+                "ZAMLU": "OVERFLY ZAMLU AT OR ABOVE 3000 HOLD AT ZAMLU RIGHT TURN INBOUNDCOURSE 271 LEGDIST 4 FAF ETEXY MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "JUGAN",
+                    "fixes": {
+                        "JUGAN": "JUGAN RIGHT TURN INBOUNDCOURSE 091 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "ZAMLU": "ZAMLU AT OR ABOVE 3000",
+                "SIFRT": "SIFRT 2700",
+                "WETUG": "WETUG AT OR ABOVE 1800 RNW 27 TRK 271 UNTIL 1178",
+                "JUGAN": "OVERFLY JUGAN AT OR ABOVE 3000 HOLD AT JUGAN RIGHT TURN INBOUNDCOURSE 091 LEGDIST 4 FAF SIFRT MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "ZAMLU",
+                    "fixes": {
+                        "ZAMLU": "ZAMLU RIGHT TURN INBOUNDCOURSE 271 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

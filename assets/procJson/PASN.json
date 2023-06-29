@@ -1,0 +1,174 @@
+{
+    "fixes": [
+        {
+            "name": "CARSU",
+            "lat": 57.35275,
+            "lon": 170.16395
+        },
+        {
+            "name": "CUNAK",
+            "lat": 56.96176943333333,
+            "lon": 170.13175556666667
+        },
+        {
+            "name": "DIGGS",
+            "lat": 57.08590556666667,
+            "lon": 170.24763888333334
+        },
+        {
+            "name": "EVANN",
+            "lat": 57.24054721666667,
+            "lon": 170.19927221666666
+        },
+        {
+            "name": "HINKL",
+            "lat": 56.975713883333334,
+            "lon": 170.28184443333333
+        },
+        {
+            "name": "HYLEE",
+            "lat": 57.317536116666666,
+            "lon": 169.91850278333334
+        },
+        {
+            "name": "KUNNA",
+            "lat": 57.340183333333336,
+            "lon": 170.16788056666667
+        },
+        {
+            "name": "MB18",
+            "lat": 57.186933333333336,
+            "lon": 170.21598888333332
+        },
+        {
+            "name": "NONIC",
+            "lat": 57.354086116666664,
+            "lon": 170.31952221666666
+        },
+        {
+            "name": "PI001",
+            "lat": 57.29799293333333,
+            "lon": 170.1805233
+        },
+        {
+            "name": "PI002",
+            "lat": 57.356675833333334,
+            "lon": 170.2567297
+        },
+        {
+            "name": "PI003",
+            "lat": 57.40467043333334,
+            "lon": 170.14554805
+        },
+        {
+            "name": "SPYNB",
+            "lat": 57.157,
+            "lon": 170.23299166666666
+        },
+        {
+            "name": "WANIB",
+            "lat": 56.992722216666664,
+            "lon": 170.46775278333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOCB18",
+            "fixes": {
+                "CARSU": "CARSU AT OR ABOVE 2300",
+                "EVANN": "EVANN 1400",
+                "MB18": "MB18 347 RNW 18 TRK 180 UNTIL 470",
+                "DIGGS": "DIGGS AT OR ABOVE 2800 HOLD AT DIGGS RIGHT TURN INBOUNDCOURSE 356 ALT 2800 LEGTIME 1 FAF EVANN MAP MB18"
+            },
+            "transitions": [
+                {
+                    "name": "SPY",
+                    "fixes": {
+                        "SPYNB": "SPYNB",
+                        "EVANN": "EVANN AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS36",
+            "fixes": {
+                "HINKL": "HINKL AT OR ABOVE 3400",
+                "DIGGS": "DIGGS 1480 RNW 36",
+                "EVANN": "EVANN AT OR ABOVE 2700 HOLD AT EVANN RIGHT TURN INBOUNDCOURSE 182 ALT 2700 LEGTIME 1 FAF DIGGS MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "SPY",
+                    "fixes": {
+                        "SPYNB": "SPYNB",
+                        "HINKL": "HINKL AT OR ABOVE 3400 HOLD AT HINKL RIGHT TURN INBOUNDCOURSE 000 ALT 3400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "KUNNA": "KUNNA AT OR ABOVE 2300 OVERFLY KUNNA AT OR ABOVE 2300 HOLD AT KUNNA RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF EVANN MAP RNW 18",
+                "EVANN": "EVANN 1400 RNW 18 TRK 180 UNTIL 470 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HYLEE",
+                    "fixes": {
+                        "HYLEE": "HYLEE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "KUNNA",
+                    "fixes": {
+                        "KUNNA": "KUNNA RIGHT TURN INBOUNDCOURSE 180 ALT 2300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NONIC",
+                    "fixes": {
+                        "NONIC": "NONIC AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HINKL": "HINKL AT OR ABOVE 2300 OVERFLY HINKL AT OR ABOVE 2300 HOLD AT HINKL RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF DIGGS MAP RNW 36",
+                "DIGGS": "DIGGS 1500 RNW 36 TRK 000 UNTIL 470 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CUNAK",
+                    "fixes": {
+                        "CUNAK": "CUNAK AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HINKL",
+                    "fixes": {
+                        "HINKL": "HINKL RIGHT TURN INBOUNDCOURSE 000 ALT 2300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WANIB",
+                    "fixes": {
+                        "WANIB": "WANIB AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

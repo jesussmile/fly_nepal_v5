@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "CUSMA",
+            "lat": 41.783875,
+            "lon": 83.71093333333333
+        },
+        {
+            "name": "DUCZZ",
+            "lat": 41.607338883333334,
+            "lon": 84.35488888333333
+        },
+        {
+            "name": "EDGEE",
+            "lat": 41.488961116666665,
+            "lon": 84.65626111666667
+        },
+        {
+            "name": "RANDL",
+            "lat": 41.76169443333333,
+            "lon": 84.20536111666667
+        },
+        {
+            "name": "WEVUM",
+            "lat": 41.61173888333333,
+            "lon": 84.00536111666666
+        },
+        {
+            "name": "XORSE",
+            "lat": 41.60886111666667,
+            "lon": 84.24293056666667
+        },
+        {
+            "name": "YECUK",
+            "lat": 41.634616666666666,
+            "lon": 83.89766111666667
+        },
+        {
+            "name": "ZOXUK",
+            "lat": 41.610852783333335,
+            "lon": 84.08289166666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "DUCZZ": "DUCZZ AT OR ABOVE 3000 OVERFLY DUCZZ AT OR ABOVE 3000 HOLD AT DUCZZ RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4 FAF XORSE MAP RNW 09",
+                "XORSE": "XORSE 2400 RNW 09 TRK 094 UNTIL 2100 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EDGEE",
+                    "fixes": {
+                        "EDGEE": "EDGEE"
+                    }
+                },
+                {
+                    "name": "RANDL",
+                    "fixes": {
+                        "RANDL": "RANDL",
+                        "DUCZZ": "OVERFLY DUCZZ AT OR ABOVE 3000 HOLD AT DUCZZ RIGHT TURN INBOUNDCOURSE 094 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "YECUK": "YECUK AT OR ABOVE 3000",
+                "WEVUM": "WEVUM 2500",
+                "ZOXUK": "ZOXUK AT OR ABOVE 1340 RNW 27 TRK 274 UNTIL 1092",
+                "DUCZZ": "OVERFLY DUCZZ AT OR ABOVE 3000 HOLD AT DUCZZ RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4 FAF WEVUM MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "CUSMA",
+                    "fixes": {
+                        "CUSMA": "CUSMA"
+                    }
+                },
+                {
+                    "name": "RANDL",
+                    "fixes": {
+                        "RANDL": "RANDL",
+                        "YECUK": "OVERFLY YECUK AT OR ABOVE 3000 HOLD AT YECUK RIGHT TURN INBOUNDCOURSE 259 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

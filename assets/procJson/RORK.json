@@ -1,0 +1,170 @@
+{
+    "fixes": [
+        {
+            "name": "20VOR",
+            "lat": 25.882519433333332,
+            "lon": 131.28391666666667
+        },
+        {
+            "name": "AF001",
+            "lat": 25.832166833333332,
+            "lon": 131.13655141666666
+        },
+        {
+            "name": "AF002",
+            "lat": 25.803293583333332,
+            "lon": 131.14731656666666
+        },
+        {
+            "name": "AF003",
+            "lat": 25.77791038333333,
+            "lon": 131.16600903333332
+        },
+        {
+            "name": "AKIBA",
+            "lat": 25.892286116666668,
+            "lon": 131.29912778333335
+        },
+        {
+            "name": "CORCO",
+            "lat": 25.874025,
+            "lon": 130.98752221666666
+        },
+        {
+            "name": "D279G",
+            "lat": 25.86366943333333,
+            "lon": 131.13485278333334
+        },
+        {
+            "name": "EZAKI",
+            "lat": 25.830424999999998,
+            "lon": 131.26655278333334
+        },
+        {
+            "name": "MA03",
+            "lat": 25.927377783333334,
+            "lon": 131.31614443333333
+        },
+        {
+            "name": "MDE",
+            "lat": 25.854483333333334,
+            "lon": 131.26378888333332
+        },
+        {
+            "name": "TUBAS",
+            "lat": 25.757188883333335,
+            "lon": 131.19201111666666
+        },
+        {
+            "name": "WHALE",
+            "lat": 25.867569433333333,
+            "lon": 131.079625
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "CORC1N",
+            "rnw": "36",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 03",
+                    "fixes": {
+                        "RNW 03": "RNW 03 HDG 030 UNTIL 500 TURN LEFT DIRECT",
+                        "CORCO": "CORCO AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "rwy": "RNW 21",
+                    "fixes": {
+                        "RNW 21": "RNW 21 HDG 210 UNTIL 500",
+                        "CORCO": "CORCO AT OR ABOVE 5000"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "SOUTH6",
+            "rnw": "36",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 03",
+                    "fixes": {
+                        "RNW 03": "RNW 03 TRK 030 UNTIL 500 TURN RIGHT DIRECT",
+                        "MDE": "MDE AT OR ABOVE 2400"
+                    }
+                },
+                {
+                    "rwy": "RNW 21",
+                    "fixes": {
+                        "RNW 21": "RNW 21 TRK 210 UNTIL 580",
+                        "MDE": "MDE AT OR ABOVE 2400"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDY03",
+            "fixes": {
+                "MDE": "MDE 2030 MDE 2000 HOLD AT MDE LEFT TURN INBOUNDCOURSE 241 ALT 2000 SPEED 210 LEGTIME 1 FAF MDE MAP MA03",
+                "20VOR": "20VOR AT OR ABOVE 1393",
+                "MA03": "MA03 373 RNW 03 TRK 038 UNTIL 500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CORCO",
+                    "fixes": {
+                        "CORCO": "CORCO AT OR ABOVE 5000",
+                        "D279G": "D279G",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "TUBAS": "TUBAS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ03",
+            "fixes": {
+                "MDE": "MDE 2030 MDE 2000 HOLD AT MDE LEFT TURN INBOUNDCOURSE 241 ALT 2000 SPEED 210 LEGTIME 1 FAF MDE MAP MA03",
+                "20VOR": "20VOR AT OR ABOVE 1393",
+                "MA03": "MA03 373 RNW 03 TRK 038 UNTIL 500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MDE",
+                    "fixes": {
+                        "MDE": "MDE TRK 241 UNTIL 8.0 FROM MDE SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "EZAKI": "EZAKI AT OR ABOVE 1300",
+                "AKIBA": "AKIBA 1100 RNW 03 TRK 031 UNTIL 580 TURN LEFT DIRECT",
+                "MDE": "MDE 2000 HOLD AT MDE LEFT TURN INBOUNDCOURSE 242 ALT 2000 SPEED 210 LEGTIME 1 FAF AKIBA MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "WHALE",
+                    "fixes": {
+                        "WHALE": "WHALE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

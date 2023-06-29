@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "DUCER",
+            "lat": 45.974225,
+            "lon": 85.87103888333333
+        },
+        {
+            "name": "EDLUC",
+            "lat": 45.974727783333336,
+            "lon": 86.03583056666666
+        },
+        {
+            "name": "HALKI",
+            "lat": 45.97492221666667,
+            "lon": 86.473325
+        },
+        {
+            "name": "NEKIY",
+            "lat": 45.97488333333333,
+            "lon": 86.11478888333333
+        },
+        {
+            "name": "WUXUL",
+            "lat": 45.97501943333333,
+            "lon": 86.23243888333333
+        },
+        {
+            "name": "ZIRET",
+            "lat": 45.97504443333333,
+            "lon": 86.308375
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 10",
+        "RNW 19",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "HALKI": "HALKI AT OR ABOVE 2600",
+                "ZIRET": "ZIRET 2400",
+                "WUXUL": "WUXUL AT OR ABOVE 1380 RNW 10 TRK 095 UNTIL 1060",
+                "DUCER": "OVERFLY DUCER AT OR ABOVE 2600 HOLD AT DUCER RIGHT TURN INBOUNDCOURSE 275 LEGDIST 4 FAF ZIRET MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "HALKI",
+                    "fixes": {
+                        "HALKI": "HALKI RIGHT TURN INBOUNDCOURSE 095 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "DUCER": "DUCER AT OR ABOVE 2600",
+                "EDLUC": "EDLUC 2400",
+                "NEKIY": "NEKIY AT OR ABOVE 1340 RNW 28 TRK 275 UNTIL 1020",
+                "HALKI": "OVERFLY HALKI AT OR ABOVE 2600 HOLD AT HALKI RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4 FAF EDLUC MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "DUCER",
+                    "fixes": {
+                        "DUCER": "DUCER RIGHT TURN INBOUNDCOURSE 275 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

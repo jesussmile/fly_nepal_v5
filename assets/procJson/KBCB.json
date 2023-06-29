@@ -1,0 +1,209 @@
+{
+    "fixes": [
+        {
+            "name": "AASTN",
+            "lat": 37.088461116666664,
+            "lon": 80.71146943333333
+        },
+        {
+            "name": "BEMAR",
+            "lat": 37.10663056666667,
+            "lon": 80.16271666666667
+        },
+        {
+            "name": "BLF",
+            "lat": 37.306441666666665,
+            "lon": 81.19426943333333
+        },
+        {
+            "name": "CABID",
+            "lat": 37.157277783333335,
+            "lon": 80.28544443333334
+        },
+        {
+            "name": "FUENT",
+            "lat": 37.127927783333334,
+            "lon": 80.21439166666667
+        },
+        {
+            "name": "HAWTO",
+            "lat": 37.3071,
+            "lon": 80.65095
+        },
+        {
+            "name": "JUBOP",
+            "lat": 37.27727221666667,
+            "lon": 80.57784721666667
+        },
+        {
+            "name": "KINIW",
+            "lat": 36.989786116666664,
+            "lon": 80.34973333333333
+        },
+        {
+            "name": "MRUNN",
+            "lat": 37.07069166666667,
+            "lon": 80.49072221666667
+        },
+        {
+            "name": "OBERS",
+            "lat": 37.366605566666664,
+            "lon": 80.97486388333333
+        },
+        {
+            "name": "OSMSS",
+            "lat": 37.137827783333336,
+            "lon": 80.23829166666667
+        },
+        {
+            "name": "SETHY",
+            "lat": 37.17002778333333,
+            "lon": 80.55706388333333
+        },
+        {
+            "name": "SUNNY",
+            "lat": 37.25505,
+            "lon": 80.52348611666666
+        },
+        {
+            "name": "TABER",
+            "lat": 37.048622216666665,
+            "lon": 80.04879443333333
+        },
+        {
+            "name": "TECNB",
+            "lat": 37.20860556666667,
+            "lon": 80.40343611666667
+        },
+        {
+            "name": "WILIZ",
+            "lat": 36.874963883333336,
+            "lon": 80.54170278333333
+        },
+        {
+            "name": "ZASNO",
+            "lat": 37.104297216666666,
+            "lon": 80.15718611666667
+        },
+        {
+            "name": "ZUPAT",
+            "lat": 37.23797221666667,
+            "lon": 80.48178333333334
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "BEMAR3",
+            "rnw": "13",
+            "fixes": {
+                "BEMAR": "OVERFLY BEMAR AT OR ABOVE 5200 HDG 130 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SETHY5",
+            "rnw": "31",
+            "fixes": {
+                "SETHY": "SETHY AT OR ABOVE 4000 SPEED 220"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "AASTN",
+                    "fixes": [
+                        "OVERFLY"
+                    ]
+                },
+                {
+                    "name": "TABER",
+                    "fixes": [
+                        "MRUNN",
+                        "FUENT",
+                        "TABER"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC13",
+            "fixes": {
+                "HAWTO": "HAWTO AT OR ABOVE 5700",
+                "JUBOP": "JUBOP AT OR ABOVE 5100",
+                "SUNNY": "SUNNY 4200",
+                "ZUPAT": "ZUPAT AT OR ABOVE 3380 RNW 13 TRK 125 UNTIL 3600 TURN RIGHT DIRECT",
+                "TECNB": "TECNB AT OR ABOVE 5700 HOLD AT TECNB RIGHT TURN INBOUNDCOURSE 071 ALT 5700 LEGTIME 1 FAF SUNNY MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "BLF",
+                    "fixes": {
+                        "BLF": "BLF"
+                    }
+                },
+                {
+                    "name": "HAWTO",
+                    "fixes": {
+                        "HAWTO": "HAWTO RIGHT TURN INBOUNDCOURSE 125 ALT 5700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "HAWTO": "HAWTO AT OR ABOVE 5700",
+                "SUNNY": "SUNNY 4200",
+                "ZUPAT": "ZUPAT AT OR ABOVE 3380 RNW 13 TRK 125 UNTIL 2389",
+                "ZASNO": "OVERFLY ZASNO AT OR ABOVE 5400 HOLD AT ZASNO RIGHT TURN INBOUNDCOURSE 305 ALT 5400 LEGDIST 5 FAF SUNNY MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "OBERS",
+                    "fixes": {
+                        "OBERS": "OBERS"
+                    }
+                },
+                {
+                    "name": "WILIZ",
+                    "fixes": {
+                        "WILIZ": "WILIZ",
+                        "HAWTO": "OVERFLY HAWTO AT OR ABOVE 5700 HOLD AT HAWTO RIGHT TURN INBOUNDCOURSE 125 ALT 5700 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ZASNO": "ZASNO AT OR ABOVE 5400",
+                "OSMSS": "OSMSS AT OR ABOVE 4900",
+                "CABID": "CABID 4200 RNW 31 TRK 305 UNTIL 2412",
+                "HAWTO": "OVERFLY HAWTO AT OR ABOVE 5900 HOLD AT HAWTO RIGHT TURN INBOUNDCOURSE 125 ALT 5900 LEGDIST 5 FAF CABID MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "TABER",
+                    "fixes": {
+                        "TABER": "TABER"
+                    }
+                },
+                {
+                    "name": "WILIZ",
+                    "fixes": {
+                        "WILIZ": "WILIZ",
+                        "KINIW": "KINIW AT OR ABOVE 5700",
+                        "ZASNO": "OVERFLY ZASNO AT OR ABOVE 5400 HOLD AT ZASNO RIGHT TURN INBOUNDCOURSE 305 ALT 5400 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

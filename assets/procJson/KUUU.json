@@ -1,0 +1,191 @@
+{
+    "fixes": [
+        {
+            "name": "ALB",
+            "lat": 42.74728056666667,
+            "lon": 73.80318333333334
+        },
+        {
+            "name": "CF22",
+            "lat": 41.69370833333333,
+            "lon": 71.18520833333334
+        },
+        {
+            "name": "DAAME",
+            "lat": 41.56438333333333,
+            "lon": 71.26141943333333
+        },
+        {
+            "name": "FEKWU",
+            "lat": 41.60882221666667,
+            "lon": 71.34065278333334
+        },
+        {
+            "name": "HAXEM",
+            "lat": 41.543205566666664,
+            "lon": 71.29170278333333
+        },
+        {
+            "name": "HINGZ",
+            "lat": 42.15883611666667,
+            "lon": 74.36224443333333
+        },
+        {
+            "name": "HNK",
+            "lat": 42.06305833333333,
+            "lon": 75.31628333333333
+        },
+        {
+            "name": "LAFAY",
+            "lat": 41.46256111666667,
+            "lon": 71.72123056666666
+        },
+        {
+            "name": "MVY",
+            "lat": 41.39621388333333,
+            "lon": 70.61271666666667
+        },
+        {
+            "name": "NELIE",
+            "lat": 41.941011116666665,
+            "lon": 72.68857778333333
+        },
+        {
+            "name": "NICOD",
+            "lat": 41.410105566666665,
+            "lon": 71.19844166666667
+        },
+        {
+            "name": "ORW",
+            "lat": 41.55640278333333,
+            "lon": 71.99935278333334
+        },
+        {
+            "name": "PONEE",
+            "lat": 42.269761116666665,
+            "lon": 73.13770556666667
+        },
+        {
+            "name": "PVD",
+            "lat": 41.72434166666667,
+            "lon": 71.42964166666667
+        },
+        {
+            "name": "RUBLE",
+            "lat": 41.47046111666667,
+            "lon": 71.23750278333333
+        },
+        {
+            "name": "SAUGY",
+            "lat": 41.489452783333334,
+            "lon": 71.80054166666666
+        },
+        {
+            "name": "SEY",
+            "lat": 41.167436116666664,
+            "lon": 71.57608611666667
+        },
+        {
+            "name": "SHIGY",
+            "lat": 42.399430566666666,
+            "lon": 73.31693888333334
+        },
+        {
+            "name": "SMARI",
+            "lat": 41.625394433333334,
+            "lon": 71.22549721666667
+        },
+        {
+            "name": "WIPOR",
+            "lat": 41.65640833333333,
+            "lon": 72.17713056666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 16",
+        "RNW 22",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "WIPOR3",
+            "runway": "RNW 04 RNW 16 RNW 22 RNW 34",
+            "fixes": {
+                "WIPOR": "WIPOR",
+                "ORW": "ORW",
+                "SAUGY": "SAUGY",
+                "LAFAY": "OVERFLY LAFAY TRK 129 VECTORS"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD16",
+            "fixes": {
+                "PVD": "PVD AT OR ABOVE 3000",
+                "FEKWU": "FEKWU 1800 RNW 16 TRK 164 UNTIL 572",
+                "NICOD": "NICOD AT OR ABOVE 2100 HOLD AT NICOD RIGHT TURN INBOUNDCOURSE 165 LEGTIME 1 FAF FEKWU MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "PVD",
+                    "fixes": {
+                        "PVD": "PVD RIGHT TURN INBOUNDCOURSE 164 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC22",
+            "fixes": {
+                "CF22": "CF22 AT OR ABOVE 2000",
+                "SMARI": "SMARI 1800",
+                "DAAME": "DAAME AT OR ABOVE 720 RNW 22 TRK 219 UNTIL 572",
+                "NICOD": "NICOD AT OR ABOVE 2100 HOLD AT NICOD RIGHT TURN INBOUNDCOURSE 165 LEGTIME 1 FAF SMARI MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "MVY",
+                    "fixes": {
+                        "MVY": "MVY",
+                        "SMARI": "SMARI AT OR ABOVE 2000 HOLD AT SMARI LEFT TURN INBOUNDCOURSE 219 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "PVD",
+                    "fixes": {
+                        "PVD": "PVD",
+                        "SMARI": "SMARI AT OR ABOVE 2000 HOLD AT SMARI LEFT TURN INBOUNDCOURSE 219 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SEY",
+                    "fixes": {
+                        "SEY": "SEY",
+                        "SMARI": "SMARI AT OR ABOVE 2000 HOLD AT SMARI LEFT TURN INBOUNDCOURSE 219 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "PVD": "PVD AT OR ABOVE 3000",
+                "FEKWU": "FEKWU 1800",
+                "HAXEM": "OVERFLY HAXEM 345 RNW 16 TRK 166 UNTIL 572",
+                "RUBLE": "RUBLE",
+                "NICOD": "OVERFLY NICOD AT OR ABOVE 2100 HOLD AT NICOD RIGHT TURN INBOUNDCOURSE 165 LEGDIST 4 FAF FEKWU MAP HAXEM"
+            },
+            "transitions": [
+                {
+                    "name": "PVD",
+                    "fixes": {
+                        "PVD": "PVD RIGHT TURN INBOUNDCOURSE 165 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

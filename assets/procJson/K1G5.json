@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "ACO",
+            "lat": 41.10790278333333,
+            "lon": 81.20151943333333
+        },
+        {
+            "name": "AVOBE",
+            "lat": 41.23335278333333,
+            "lon": 81.55616666666667
+        },
+        {
+            "name": "AXUBE",
+            "lat": 41.19566666666667,
+            "lon": 82.00377778333333
+        },
+        {
+            "name": "BSV",
+            "lat": 40.74070556666667,
+            "lon": 81.43211666666667
+        },
+        {
+            "name": "CALSU",
+            "lat": 41.14139721666667,
+            "lon": 81.65386943333333
+        },
+        {
+            "name": "COLEN",
+            "lat": 41.11981943333333,
+            "lon": 81.46565833333334
+        },
+        {
+            "name": "CXR",
+            "lat": 41.51692778333334,
+            "lon": 81.16318611666667
+        },
+        {
+            "name": "DJB",
+            "lat": 41.35806388333334,
+            "lon": 82.16196943333334
+        },
+        {
+            "name": "FEPLI",
+            "lat": 41.15046388333333,
+            "lon": 81.54421943333334
+        },
+        {
+            "name": "FESTO",
+            "lat": 41.112822216666665,
+            "lon": 81.99128056666666
+        },
+        {
+            "name": "HEDIN",
+            "lat": 41.13557221666667,
+            "lon": 81.72365833333333
+        },
+        {
+            "name": "HEGAD",
+            "lat": 41.029975,
+            "lon": 81.97881666666666
+        },
+        {
+            "name": "JETRA",
+            "lat": 41.12221111666667,
+            "lon": 81.881725
+        },
+        {
+            "name": "JEVET",
+            "lat": 41.06757221666667,
+            "lon": 81.53230278333334
+        },
+        {
+            "name": "NVRTL",
+            "lat": 41.128508333333336,
+            "lon": 81.66687778333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 09",
+        "RNW 19",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "FESTO": "FESTO AT OR ABOVE 2800",
+                "JETRA": "JETRA 2800 RNW 09 TRK 091 UNTIL 1590",
+                "FEPLI": "FEPLI AT OR ABOVE 2800 HOLD AT FEPLI RIGHT TURN INBOUNDCOURSE 271 LEGDIST 4 FAF JETRA MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DJB",
+                    "fixes": {
+                        "DJB": "DJB",
+                        "AXUBE": "AXUBE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HEGAD",
+                    "fixes": {
+                        "HEGAD": "HEGAD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "FEPLI": "FEPLI AT OR ABOVE 3100",
+                "CALSU": "CALSU 2800",
+                "HEDIN": "HEDIN AT OR ABOVE 1760 RNW 27 TRK 271 UNTIL 1590",
+                "FESTO": "OVERFLY FESTO AT OR ABOVE 2800 HOLD AT FESTO RIGHT TURN INBOUNDCOURSE 091 LEGDIST 4 FAF CALSU MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "BSV",
+                    "fixes": {
+                        "BSV": "BSV",
+                        "JEVET": "JEVET AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "CXR",
+                    "fixes": {
+                        "CXR": "CXR",
+                        "AVOBE": "AVOBE AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR27",
+            "fixes": {
+                "COLEN": "COLEN AT OR ABOVE 3000",
+                "NVRTL": "NVRTL 2800 RNW 27 TRK 278 UNTIL 2000 TURN RIGHT DIRECT NVRTL AT OR ABOVE 3100 HOLD AT NVRTL RIGHT TURN INBOUNDCOURSE 278 ALT 3100 LEGTIME 1 FAF NVRTL MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "ACO",
+                    "fixes": {
+                        "ACO": "ACO"
+                    }
+                },
+                {
+                    "name": "NVRTL",
+                    "fixes": {
+                        "NVRTL": "NVRTL RIGHT TURN INBOUNDCOURSE 278 ALT 3100 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

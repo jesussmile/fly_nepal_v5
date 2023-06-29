@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "AMUXY",
+            "lat": 34.45759721666667,
+            "lon": 86.7904
+        },
+        {
+            "name": "CUSAG",
+            "lat": 34.221441666666664,
+            "lon": 86.87491388333333
+        },
+        {
+            "name": "DOWDU",
+            "lat": 34.17536666666667,
+            "lon": 86.89134443333333
+        },
+        {
+            "name": "FISRO",
+            "lat": 34.360922216666665,
+            "lon": 86.82505556666666
+        },
+        {
+            "name": "MELYE",
+            "lat": 34.07896388333333,
+            "lon": 86.92566666666667
+        },
+        {
+            "name": "ZEDNU",
+            "lat": 34.312758333333335,
+            "lon": 86.84229166666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "MELYE": "MELYE AT OR ABOVE 3200",
+                "DOWDU": "DOWDU 2700",
+                "CUSAG": "CUSAG AT OR ABOVE 1780 RNW 02 TRK 020 UNTIL 1369",
+                "AMUXY": "OVERFLY AMUXY AT OR ABOVE 3700 HOLD AT AMUXY RIGHT TURN INBOUNDCOURSE 200 LEGDIST 4 FAF DOWDU MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "MELYE",
+                    "fixes": {
+                        "MELYE": "MELYE RIGHT TURN INBOUNDCOURSE 019 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "AMUXY": "AMUXY AT OR ABOVE 3700",
+                "FISRO": "FISRO 2700",
+                "ZEDNU": "ZEDNU AT OR ABOVE 1740 RNW 20 TRK 200 UNTIL 1219",
+                "MELYE": "OVERFLY MELYE AT OR ABOVE 3200 HOLD AT MELYE RIGHT TURN INBOUNDCOURSE 019 LEGDIST 4 FAF FISRO MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "AMUXY",
+                    "fixes": {
+                        "AMUXY": "AMUXY RIGHT TURN INBOUNDCOURSE 200 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "fixes": [
+        {
+            "name": "CD21",
+            "lat": 14.237713883333333,
+            "lon": 99.99811666666666
+        },
+        {
+            "name": "CF21",
+            "lat": 14.228377783333332,
+            "lon": 99.991125
+        },
+        {
+            "name": "D104G",
+            "lat": 14.137972216666666,
+            "lon": 100.07096666666666
+        },
+        {
+            "name": "KPS",
+            "lat": 14.165752783333334,
+            "lon": 99.95431111666667
+        },
+        {
+            "name": "KPSNB",
+            "lat": 14.170344433333334,
+            "lon": 99.95686388333333
+        },
+        {
+            "name": "MA21",
+            "lat": 14.128327783333333,
+            "lon": 99.93154166666666
+        },
+        {
+            "name": "MN21",
+            "lat": 14.128602783333333,
+            "lon": 99.93146666666667
+        },
+        {
+            "name": "OM21",
+            "lat": 14.170397216666666,
+            "lon": 99.95680556666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD21",
+            "fixes": {
+                "CD21": "CD21 AT OR ABOVE 1200",
+                "KPS": "KPS 1200 KPS AT OR ABOVE 2000 FAF KPS MAP MA21",
+                "MA21": "MA21 412 RNW 21 HDG 211 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "D104G",
+                    "fixes": {
+                        "D104G": "D104G AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS21",
+            "fixes": {
+                "CF21": "CF21 2000",
+                "OM21": "OM21 1300 RNW 21 HDG 211 UNTIL 1000 TURN RIGHT DIRECT OM21 2000 FAF OM21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "OM21",
+                    "fixes": {
+                        "OM21": "OM21 RIGHT TURN INBOUNDCOURSE 211 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "KPSNB": "KPSNB 1200 KPSNB 2000 FAF KPSNB MAP MN21",
+                "MN21": "MN21 425 RNW 21 HDG 211 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KPS",
+                    "fixes": {
+                        "KPSNB": "KPSNB RIGHT TURN INBOUNDCOURSE 211 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR21",
+            "fixes": {
+                "KPS": "KPS 1200 KPS AT OR ABOVE 2000 FAF KPS MAP MA21",
+                "MA21": "MA21 412 RNW 21 HDG 211 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KPS1",
+                    "fixes": {
+                        "KPS": "KPS RIGHT TURN INBOUNDCOURSE 211 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "KPS2",
+                    "fixes": {
+                        "KPS": "KPS RIGHT TURN INBOUNDCOURSE 211 ALT 2000 LEGTIME 2"
+                    }
+                }
+            ]
+        }
+    ]
+}

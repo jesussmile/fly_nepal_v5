@@ -1,0 +1,201 @@
+{
+    "fixes": [
+        {
+            "name": "30DME",
+            "lat": 69.20134721666666,
+            "lon": 51.148383333333335
+        },
+        {
+            "name": "50DME",
+            "lat": 69.31045,
+            "lon": 50.93556111666667
+        },
+        {
+            "name": "60DME",
+            "lat": 69.324025,
+            "lon": 50.908527783333334
+        },
+        {
+            "name": "70DME",
+            "lat": 69.33759721666667,
+            "lon": 50.881461116666664
+        },
+        {
+            "name": "80DME",
+            "lat": 69.35116666666667,
+            "lon": 50.85435833333333
+        },
+        {
+            "name": "D055I",
+            "lat": 69.37626111666667,
+            "lon": 50.885666666666665
+        },
+        {
+            "name": "D243H",
+            "lat": 69.13242221666667,
+            "lon": 51.27835278333333
+        },
+        {
+            "name": "D252F",
+            "lat": 69.16845833333333,
+            "lon": 51.263241666666666
+        },
+        {
+            "name": "D257F",
+            "lat": 69.1762,
+            "lon": 51.275575
+        },
+        {
+            "name": "FF06Y",
+            "lat": 69.15350556666667,
+            "lon": 51.187416666666664
+        },
+        {
+            "name": "FF06Z",
+            "lat": 69.16000278333334,
+            "lon": 51.22646388333333
+        },
+        {
+            "name": "FF24",
+            "lat": 69.36473056666667,
+            "lon": 50.827225
+        },
+        {
+            "name": "GOTMU",
+            "lat": 69.35475,
+            "lon": 50.52650833333333
+        },
+        {
+            "name": "JNF24",
+            "lat": 69.32665833333333,
+            "lon": 50.88607221666667
+        },
+        {
+            "name": "JNI24",
+            "lat": 69.38033611666667,
+            "lon": 50.77515556666667
+        },
+        {
+            "name": "JVNB",
+            "lat": 69.24141943333333,
+            "lon": 51.072369433333336
+        },
+        {
+            "name": "LUDOC",
+            "lat": 69.45613888333334,
+            "lon": 50.92002778333333
+        },
+        {
+            "name": "MA06",
+            "lat": 69.22214443333333,
+            "lon": 51.108975
+        },
+        {
+            "name": "MA24",
+            "lat": 69.29686943333333,
+            "lon": 50.96256111666667
+        },
+        {
+            "name": "REBKU",
+            "lat": 69.44733333333333,
+            "lon": 50.63573611666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBY06",
+            "fixes": {
+                "FF06Y": "FF06Y 2000",
+                "JVNB": "JVNB 135 RNW 06 TRK 039 UNTIL 3200 TURN LEFT DIRECT JVNB 3200 HOLD AT JVNB RIGHT TURN INBOUNDCOURSE 252 ALT 3200 LEGTIME 1 FAF FF06Y MAP JV"
+            },
+            "transitions": [
+                {
+                    "name": "JV",
+                    "fixes": {
+                        "JVNB": "JVNB AT OR ABOVE 3200",
+                        "D252F": "OVERFLY D252F AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDZ06",
+            "fixes": {
+                "FF06Z": "FF06Z 2000",
+                "30DME": "30DME AT OR ABOVE 1040",
+                "MA06": "MA06 597 RNW 06",
+                "JVNB": "OVERFLY JVNB AT OR ABOVE 600 TRK 048 UNTIL 3200 TURN LEFT DIRECT JVNB 3200 HOLD AT JVNB RIGHT TURN INBOUNDCOURSE 252 ALT 3200 LEGTIME 1 FAF FF06Z MAP MA06"
+            },
+            "transitions": [
+                {
+                    "name": "D243H",
+                    "fixes": {
+                        "D243H": "D243H AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "JV",
+                    "fixes": {
+                        "JVNB": "JVNB AT OR ABOVE 3200",
+                        "D257F": "OVERFLY D257F AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD24",
+            "fixes": {
+                "FF24": "FF24 3200",
+                "80DME": "80DME AT OR ABOVE 2800",
+                "70DME": "70DME AT OR ABOVE 2300",
+                "60DME": "60DME AT OR ABOVE 1800",
+                "50DME": "50DME AT OR ABOVE 1300",
+                "MA24": "MA24 880 RNW 24 TRK 244 UNTIL 3200 TURN RIGHT DIRECT",
+                "JVNB": "JVNB 3200 HOLD AT JVNB RIGHT TURN INBOUNDCOURSE 252 ALT 3200 LEGTIME 1 FAF FF24 MAP MA24"
+            },
+            "transitions": [
+                {
+                    "name": "JV",
+                    "fixes": {
+                        "JVNB": "JVNB",
+                        "D055I": "OVERFLY D055I AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA24",
+            "fixes": {
+                "JNI24": "JNI24 AT OR ABOVE 3600",
+                "JNF24": "JNF24 2800 RNW 24 TRK 245 UNTIL 1800 TURN RIGHT DIRECT",
+                "LUDOC": "LUDOC HOLD AT LUDOC RIGHT TURN INBOUNDCOURSE 175 ALT 3600 LEGTIME 1 FAF JNF24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "GOTMU",
+                    "fixes": {
+                        "GOTMU": "GOTMU AT OR ABOVE 4400"
+                    }
+                },
+                {
+                    "name": "LUDOC",
+                    "fixes": {
+                        "LUDOC": "LUDOC AT OR ABOVE 4800"
+                    }
+                },
+                {
+                    "name": "REBKU",
+                    "fixes": {
+                        "REBKU": "REBKU AT OR ABOVE 4200"
+                    }
+                }
+            ]
+        }
+    ]
+}

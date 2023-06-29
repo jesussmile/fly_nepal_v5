@@ -1,0 +1,141 @@
+{
+    "fixes": [
+        {
+            "name": "BOLOR",
+            "lat": 36.479075,
+            "lon": 174.73938888333333
+        },
+        {
+            "name": "DOSTU",
+            "lat": 36.244111116666666,
+            "lon": 175.46144443333333
+        },
+        {
+            "name": "FF21",
+            "lat": 36.59701943333334,
+            "lon": 174.73439166666665
+        },
+        {
+            "name": "LIBKO",
+            "lat": 36.693588883333334,
+            "lon": 174.4994
+        },
+        {
+            "name": "MA03",
+            "lat": 36.667425,
+            "lon": 174.64075556666666
+        },
+        {
+            "name": "MA21",
+            "lat": 36.653947216666666,
+            "lon": 174.6587
+        },
+        {
+            "name": "PANGO",
+            "lat": 36.61224721666667,
+            "lon": 174.47629166666667
+        },
+        {
+            "name": "RIKDI",
+            "lat": 36.68294443333333,
+            "lon": 174.58133611666668
+        },
+        {
+            "name": "SFNB",
+            "lat": 35.885475,
+            "lon": 174.35733611666666
+        },
+        {
+            "name": "SUNEL",
+            "lat": 36.45863611666667,
+            "lon": 174.99043888333333
+        },
+        {
+            "name": "UPLIN",
+            "lat": 36.54004166666667,
+            "lon": 174.80997221666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 09",
+        "RNW 21",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "DOST1A",
+            "runway": "RNW 21",
+            "fixes": {
+                "DOSTU": "DOSTU",
+                "SUNEL": "SUNEL",
+                "UPLIN": "UPLIN"
+            }
+        },
+        {
+            "name": "SF1A",
+            "runway": "RNW 21",
+            "fixes": {
+                "SFNB": "SFNB",
+                "BOLOR": "BOLOR"
+            }
+        },
+        {
+            "name": "SF1B",
+            "runway": "RNW 03",
+            "fixes": {
+                "SFNB": "SFNB",
+                "PANGO": "PANGO"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "LIBKO": "LIBKO AT OR ABOVE 2000",
+                "RIKDI": "RIKDI 1400",
+                "MA03": "OVERFLY MA03 494 RNW 03",
+                "UPLIN": "UPLIN 2100 HOLD AT UPLIN RIGHT TURN INBOUNDCOURSE 207 ALT 2100 LEGTIME 1 FAF RIKDI MAP MA03"
+            },
+            "transitions": [
+                {
+                    "name": "LIBKO",
+                    "fixes": {
+                        "LIBKO": "LIBKO LEFT TURN INBOUNDCOURSE 061 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "PANGO",
+                    "fixes": {
+                        "PANGO": "PANGO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "UPLIN": "UPLIN AT OR ABOVE 2100",
+                "FF21": "FF21 2080",
+                "MA21": "OVERFLY MA21 276 RNW 21",
+                "LIBKO": "LIBKO 2000 HOLD AT LIBKO LEFT TURN INBOUNDCOURSE 061 ALT 2000 LEGTIME 1 FAF FF21 MAP MA21"
+            },
+            "transitions": [
+                {
+                    "name": "BOLOR",
+                    "fixes": {
+                        "BOLOR": "BOLOR"
+                    }
+                },
+                {
+                    "name": "UPLIN",
+                    "fixes": {
+                        "UPLIN": "UPLIN RIGHT TURN INBOUNDCOURSE 207 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

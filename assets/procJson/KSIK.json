@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CUXID",
+            "lat": 36.709702783333334,
+            "lon": 89.6662
+        },
+        {
+            "name": "ECANU",
+            "lat": 36.984325,
+            "lon": 89.51439443333334
+        },
+        {
+            "name": "GAYEV",
+            "lat": 36.81335833333333,
+            "lon": 89.60903888333333
+        },
+        {
+            "name": "IBEFY",
+            "lat": 37.08796388333333,
+            "lon": 89.4568
+        },
+        {
+            "name": "YEKUD",
+            "lat": 36.867575,
+            "lon": 89.57907221666666
+        },
+        {
+            "name": "ZEVPO",
+            "lat": 36.930180566666664,
+            "lon": 89.54441666666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "CUXID": "CUXID AT OR ABOVE 2000",
+                "GAYEV": "GAYEV 2000",
+                "YEKUD": "YEKUD AT OR ABOVE 860 RNW 03 TRK 026 UNTIL 629",
+                "IBEFY": "OVERFLY IBEFY AT OR ABOVE 2200 HOLD AT IBEFY RIGHT TURN INBOUNDCOURSE 206 LEGDIST 4 FAF GAYEV MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "CUXID",
+                    "fixes": {
+                        "CUXID": "CUXID RIGHT TURN INBOUNDCOURSE 026 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "IBEFY": "IBEFY AT OR ABOVE 2200",
+                "ECANU": "ECANU 2000",
+                "ZEVPO": "ZEVPO AT OR ABOVE 860 RNW 21 TRK 206 UNTIL 565",
+                "CUXID": "OVERFLY CUXID AT OR ABOVE 2000 HOLD AT CUXID RIGHT TURN INBOUNDCOURSE 026 LEGDIST 4 FAF ECANU MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "IBEFY",
+                    "fixes": {
+                        "IBEFY": "IBEFY RIGHT TURN INBOUNDCOURSE 206 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

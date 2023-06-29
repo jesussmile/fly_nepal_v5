@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "FD35",
+            "lat": 28.516322216666666,
+            "lon": 21.338363883333333
+        },
+        {
+            "name": "PI001",
+            "lat": 28.451749933333332,
+            "lon": 21.294582233333333
+        },
+        {
+            "name": "PI002",
+            "lat": 28.521286383333333,
+            "lon": 21.274849766666666
+        },
+        {
+            "name": "PI003",
+            "lat": 28.544579133333333,
+            "lon": 21.358128716666666
+        },
+        {
+            "name": "UP1F1",
+            "lat": 28.496319433333333,
+            "lon": 21.317933333333333
+        },
+        {
+            "name": "UP1MP",
+            "lat": 28.419388883333333,
+            "lon": 21.274444433333333
+        },
+        {
+            "name": "UP1N1",
+            "lat": 28.663027783333334,
+            "lon": 21.315022216666666
+        },
+        {
+            "name": "UP1N2",
+            "lat": 28.52615,
+            "lon": 21.461777783333332
+        },
+        {
+            "name": "UP1T1",
+            "lat": 28.57105,
+            "lon": 21.360247216666668
+        },
+        {
+            "name": "UPV",
+            "lat": 28.401752783333333,
+            "lon": 21.260411116666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 08",
+        "RNW 17",
+        "RNW 19",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD35",
+            "fixes": {
+                "FD35": "FD35 4500 RNW 35",
+                "UPV": "OVERFLY UPV TRK 348 UNTIL 5500 TURN LEFT DIRECT UPV 5800 FAF FD35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "UPV1",
+                    "fixes": {
+                        "UPV": "UPV AT OR ABOVE 5800",
+                        "PI001": "PI001 AT OR ABOVE 4500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "UPV2",
+                    "fixes": {
+                        "UPV": "UPV LEFT TURN INBOUNDCOURSE 348 ALT 4500 LEGDIST 8"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "UP1T1": "UP1T1 AT OR ABOVE 4400 SPEED 250",
+                "UP1F1": "UP1F1 4400 SPEED 185",
+                "UP1MP": "OVERFLY UP1MP 2761 SPEED 185 RNW 35 TRK 353 UNTIL 4500 TURN LEFT DIRECT",
+                "UP1N1": "UP1N1 AT OR ABOVE 6000 SPEED 230 FAF UP1F1 MAP UP1MP"
+            },
+            "transitions": [
+                {
+                    "name": "UP1N1",
+                    "fixes": {
+                        "UP1N1": "UP1N1 AT OR ABOVE 6000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "UP1N2",
+                    "fixes": {
+                        "UP1N2": "UP1N2 AT OR ABOVE 6000 SPEED 250"
+                    }
+                }
+            ]
+        }
+    ]
+}

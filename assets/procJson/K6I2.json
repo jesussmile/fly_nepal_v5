@@ -1,0 +1,117 @@
+{
+    "fixes": [
+        {
+            "name": "EWO",
+            "lat": 37.63181111666667,
+            "lon": 85.67587778333333
+        },
+        {
+            "name": "KITCE",
+            "lat": 37.657530566666665,
+            "lon": 85.354175
+        },
+        {
+            "name": "LEFVO",
+            "lat": 37.502861116666665,
+            "lon": 85.63251111666666
+        },
+        {
+            "name": "ROCCO",
+            "lat": 37.63332221666667,
+            "lon": 85.50803888333333
+        },
+        {
+            "name": "RUTES",
+            "lat": 37.63442778333334,
+            "lon": 85.36411111666666
+        },
+        {
+            "name": "WIGRU",
+            "lat": 37.68743333333333,
+            "lon": 85.49463888333334
+        },
+        {
+            "name": "WOBIL",
+            "lat": 37.579658333333334,
+            "lon": 84.99237221666667
+        },
+        {
+            "name": "YULUN",
+            "lat": 37.61096943333333,
+            "lon": 85.13716666666667
+        },
+        {
+            "name": "ZEMOV",
+            "lat": 37.642125,
+            "lon": 85.28216943333334
+        },
+        {
+            "name": "ZERET",
+            "lat": 37.624436116666665,
+            "lon": 85.19973611666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD11",
+            "fixes": {
+                "ROCCO": "ROCCO AT OR ABOVE 2600 ROCCO AT OR ABOVE 4000 HOLD AT ROCCO RIGHT TURN INBOUNDCOURSE 088 LEGTIME 1 FAF RUTES MAP RNW 11",
+                "RUTES": "RUTES 2600 RNW 11 TRK 088 UNTIL 1280 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EWO",
+                    "fixes": {
+                        "EWO": "EWO"
+                    }
+                },
+                {
+                    "name": "LEFVO",
+                    "fixes": {
+                        "LEFVO": "LEFVO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "WIGRU": "WIGRU AT OR ABOVE 4000",
+                "KITCE": "KITCE 2500",
+                "ZEMOV": "ZEMOV AT OR ABOVE 1360 RNW 11 TRK 110 UNTIL 1104",
+                "WOBIL": "OVERFLY WOBIL AT OR ABOVE 4000 HOLD AT WOBIL RIGHT TURN INBOUNDCOURSE 290 LEGDIST 4 FAF KITCE MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "WIGRU",
+                    "fixes": {
+                        "WIGRU": "WIGRU RIGHT TURN INBOUNDCOURSE 110 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "WOBIL": "WOBIL AT OR ABOVE 4000",
+                "YULUN": "YULUN 2500",
+                "ZERET": "ZERET AT OR ABOVE 1480 RNW 29 TRK 290 UNTIL 1152",
+                "WIGRU": "OVERFLY WIGRU AT OR ABOVE 4000 HOLD AT WIGRU RIGHT TURN INBOUNDCOURSE 110 LEGDIST 4 FAF YULUN MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "WOBIL",
+                    "fixes": {
+                        "WOBIL": "WOBIL RIGHT TURN INBOUNDCOURSE 290 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

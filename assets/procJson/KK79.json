@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "GLEDS",
+            "lat": 38.01525,
+            "lon": 99.893625
+        },
+        {
+            "name": "HOGAS",
+            "lat": 38.06861943333333,
+            "lon": 99.89239721666667
+        },
+        {
+            "name": "JEMOR",
+            "lat": 37.79035833333333,
+            "lon": 99.89876943333333
+        },
+        {
+            "name": "OFAYS",
+            "lat": 38.178719433333335,
+            "lon": 99.88986388333333
+        },
+        {
+            "name": "SLIPE",
+            "lat": 37.95365833333334,
+            "lon": 99.89503333333333
+        },
+        {
+            "name": "TOXIC",
+            "lat": 37.90046666666667,
+            "lon": 99.89625278333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "OFAYS": "OFAYS AT OR ABOVE 5000",
+                "HOGAS": "HOGAS 4000",
+                "GLEDS": "GLEDS AT OR ABOVE 2980 RNW 17 TRK 173 UNTIL 2767",
+                "JEMOR": "JEMOR AT OR ABOVE 5000 HOLD AT JEMOR RIGHT TURN INBOUNDCOURSE 353 LEGDIST 5 FAF HOGAS MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "OFAYS",
+                    "fixes": {
+                        "OFAYS": "OFAYS LEFT TURN INBOUNDCOURSE 173 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "JEMOR": "JEMOR AT OR ABOVE 5000",
+                "TOXIC": "TOXIC 4000",
+                "SLIPE": "SLIPE AT OR ABOVE 2980 RNW 35 TRK 353 UNTIL 2767",
+                "OFAYS": "OFAYS AT OR ABOVE 5000 HOLD AT OFAYS LEFT TURN INBOUNDCOURSE 173 LEGDIST 5 FAF TOXIC MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "JEMOR",
+                    "fixes": {
+                        "JEMOR": "JEMOR RIGHT TURN INBOUNDCOURSE 353 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

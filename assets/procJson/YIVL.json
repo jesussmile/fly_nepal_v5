@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "EP16",
+            "lat": 29.878622216666667,
+            "lon": 151.139975
+        },
+        {
+            "name": "FN16",
+            "lat": 29.811791666666668,
+            "lon": 151.13997778333334
+        },
+        {
+            "name": "IVLNB",
+            "lat": 29.884683333333335,
+            "lon": 151.13997778333334
+        },
+        {
+            "name": "IVLSA",
+            "lat": 30.086080566666666,
+            "lon": 151.28241666666668
+        },
+        {
+            "name": "IVLSB",
+            "lat": 30.155519433333332,
+            "lon": 151.20649166666666
+        },
+        {
+            "name": "IVLSC",
+            "lat": 30.117158333333332,
+            "lon": 151.10543611666668
+        },
+        {
+            "name": "IVLSF",
+            "lat": 29.991766666666667,
+            "lon": 151.16841666666667
+        },
+        {
+            "name": "IVLSH",
+            "lat": 29.86075556666667,
+            "lon": 151.13804443333333
+        },
+        {
+            "name": "IVLSI",
+            "lat": 30.07364443333333,
+            "lon": 151.18743888333333
+        },
+        {
+            "name": "IVLSM",
+            "lat": 29.909886116666666,
+            "lon": 151.149425
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 16",
+        "RNW 22",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FN16": "FN16 3900",
+                "EP16": "OVERFLY EP16 2645",
+                "IVLNB": "OVERFLY IVLNB AT OR ABOVE 3170 RNW 16 TRK 169 UNTIL 4000 TURN RIGHT DIRECT IVLNB AT OR ABOVE 5100 FAF FN16 MAP IVL"
+            },
+            "transitions": [
+                {
+                    "name": "IVL1",
+                    "fixes": {
+                        "IVLNB": "IVLNB AT OR ABOVE 5100 SPEED 210 TRK 014 UNTIL 7.0 FROM IVLNB"
+                    }
+                },
+                {
+                    "name": "IVL2",
+                    "fixes": {
+                        "IVLNB": "IVLNB AT OR ABOVE 5100 SPEED 210 TRK 003 UNTIL 7.5 FROM IVLNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "IVLSI": "IVLSI AT OR ABOVE 6140",
+                "IVLSF": "IVLSF 4550",
+                "IVLSM": "OVERFLY IVLSM 2958 RNW 34",
+                "IVLSH": "OVERFLY IVLSH HDG 173 VECTORS FAF IVLSF MAP IVLSM"
+            },
+            "transitions": [
+                {
+                    "name": "IVLSA",
+                    "fixes": {
+                        "IVLSA": "IVLSA AT OR ABOVE 6300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "IVLSB",
+                    "fixes": {
+                        "IVLSB": "IVLSB AT OR ABOVE 6300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "IVLSC",
+                    "fixes": {
+                        "IVLSC": "IVLSC AT OR ABOVE 6300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

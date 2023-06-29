@@ -1,0 +1,49 @@
+{
+    "fixes": [
+        {
+            "name": "FN03",
+            "lat": 25.908675,
+            "lon": 95.61737778333334
+        },
+        {
+            "name": "KINB",
+            "lat": 25.990505566666666,
+            "lon": 95.67839721666667
+        },
+        {
+            "name": "MN03",
+            "lat": 25.967325,
+            "lon": 95.6611
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FN03": "FN03 2500",
+                "MN03": "OVERFLY MN03 1059 RNW 03 HDG 050 UNTIL 3500 TURN LEFT DIRECT",
+                "KINB": "KINB 6000 HOLD AT KINB LEFT TURN INBOUNDCOURSE 195 LEGTIME 1 FAF FN03 MAP MN03"
+            },
+            "transitions": [
+                {
+                    "name": "KI1",
+                    "fixes": {
+                        "KINB": "KINB AT OR ABOVE 2500 TRK 195 UNTIL 7.0 FROM KINB"
+                    }
+                },
+                {
+                    "name": "KI2",
+                    "fixes": {
+                        "KINB": "KINB AT OR ABOVE 2500 TRK 195 UNTIL 6.0 FROM KINB"
+                    }
+                }
+            ]
+        }
+    ]
+}

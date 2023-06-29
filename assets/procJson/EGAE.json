@@ -1,0 +1,202 @@
+{
+    "fixes": [
+        {
+            "name": "20LOC",
+            "lat": 55.02918056666667,
+            "lon": 7.229922216666667
+        },
+        {
+            "name": "30LOC",
+            "lat": 55.059666666666665,
+            "lon": 7.064138883333333
+        },
+        {
+            "name": "BEL",
+            "lat": 54.66118611666667,
+            "lon": 6.229905566666667
+        },
+        {
+            "name": "CI08Y",
+            "lat": 54.98850556666667,
+            "lon": 7.422883333333333
+        },
+        {
+            "name": "CI08Z",
+            "lat": 54.979872216666664,
+            "lon": 7.463597216666667
+        },
+        {
+            "name": "CI26",
+            "lat": 55.09315556666667,
+            "lon": 6.869741666666666
+        },
+        {
+            "name": "EGTNB",
+            "lat": 55.04554443333333,
+            "lon": 7.156030566666667
+        },
+        {
+            "name": "FI08Y",
+            "lat": 55.005727783333334,
+            "lon": 7.3414
+        },
+        {
+            "name": "FI08Z",
+            "lat": 54.99712221666667,
+            "lon": 7.38215
+        },
+        {
+            "name": "FI26",
+            "lat": 55.08218611666667,
+            "lon": 6.93365
+        },
+        {
+            "name": "MA08",
+            "lat": 55.03488611666667,
+            "lon": 7.202705566666666
+        },
+        {
+            "name": "MA26",
+            "lat": 55.050041666666665,
+            "lon": 7.119619433333333
+        },
+        {
+            "name": "RW08",
+            "lat": 55.040333333333336,
+            "lon": 7.175427783333333
+        },
+        {
+            "name": "RW26",
+            "lat": 55.04524166666667,
+            "lon": 7.147238883333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY08",
+            "fixes": {
+                "CI08Y": "CI08Y AT OR ABOVE 2000",
+                "FI08Y": "FI08Y 2000 RNW 08 TRK 073 UNTIL 2500 TURN LEFT DIRECT",
+                "EGTNB": "EGTNB 2500 HOLD AT EGTNB LEFT TURN INBOUNDCOURSE 256 LEGTIME 1 FAF FI08Y MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "EGT",
+                    "fixes": {
+                        "EGTNB": "EGTNB AT OR ABOVE 3500 TRK 243 UNTIL 9.8 FROM EGTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ08",
+            "fixes": {
+                "CI08Z": "CI08Z AT OR ABOVE 2500",
+                "FI08Z": "FI08Z 2500 RNW 08 TRK 073 UNTIL 2500 TURN LEFT DIRECT",
+                "EGTNB": "EGTNB 2500 SPEED 210 HOLD AT EGTNB LEFT TURN INBOUNDCOURSE 256 SPEED 210 LEGTIME 1 FAF FI08Z MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "EGT1",
+                    "fixes": {
+                        "EGTNB": "EGTNB AT OR ABOVE 3500 SPEED 210 TRK 235 UNTIL 11.3 FROM EGTNB"
+                    }
+                },
+                {
+                    "name": "EGT2",
+                    "fixes": {
+                        "EGTNB": "EGTNB AT OR ABOVE 3500 SPEED 210 TRK 245 UNTIL 11.3 FROM EGTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS26",
+            "fixes": {
+                "CI26": "CI26 AT OR ABOVE 2500",
+                "FI26": "FI26 2500 RNW 26 TRK 256 UNTIL 600 TRK 066 UNTIL 2500 TURN RIGHT DIRECT",
+                "EGTNB": "EGTNB 2500 HOLD AT EGTNB LEFT TURN INBOUNDCOURSE 256 SPEED 210 LEGTIME 1 FAF FI26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BEL",
+                    "fixes": {
+                        "BEL": "BEL AT OR ABOVE 3300 TRK 330 UNTIL 31.3 FROM BEL"
+                    }
+                },
+                {
+                    "name": "EGT",
+                    "fixes": {
+                        "EGTNB": "EGTNB LEFT TURN INBOUNDCOURSE 256 ALT 2500 LEGDIST 10"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOCY08",
+            "fixes": {
+                "CI08Y": "CI08Y AT OR ABOVE 2000",
+                "FI08Y": "FI08Y 2000",
+                "20LOC": "20LOC AT OR ABOVE 720",
+                "MA08": "MA08 399 RNW 08 TRK 073 UNTIL 2500 TURN LEFT DIRECT",
+                "EGTNB": "EGTNB 2500 HOLD AT EGTNB LEFT TURN INBOUNDCOURSE 256 LEGTIME 1 FAF FI08Y MAP MA08"
+            },
+            "transitions": [
+                {
+                    "name": "EGT",
+                    "fixes": {
+                        "EGTNB": "EGTNB AT OR ABOVE 3500 TRK 243 UNTIL 9.8 FROM EGTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOCZ08",
+            "fixes": {
+                "CI08Z": "CI08Z AT OR ABOVE 2500",
+                "FI08Z": "FI08Z 2500",
+                "20LOC": "20LOC AT OR ABOVE 720",
+                "MA08": "MA08 399 RNW 08 TRK 073 UNTIL 2500 TURN LEFT DIRECT",
+                "EGTNB": "EGTNB 2500 SPEED 210 HOLD AT EGTNB LEFT TURN INBOUNDCOURSE 256 SPEED 210 LEGTIME 1 FAF FI08Z MAP MA08"
+            },
+            "transitions": [
+                {
+                    "name": "EGT1",
+                    "fixes": {
+                        "EGTNB": "EGTNB AT OR ABOVE 3500 SPEED 210 TRK 235 UNTIL 11.3 FROM EGTNB"
+                    }
+                },
+                {
+                    "name": "EGT2",
+                    "fixes": {
+                        "EGTNB": "EGTNB AT OR ABOVE 3500 SPEED 210 TRK 245 UNTIL 11.3 FROM EGTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC26",
+            "fixes": {
+                "CI26": "CI26 AT OR ABOVE 2500",
+                "FI26": "FI26 2500",
+                "30LOC": "30LOC AT OR ABOVE 1020",
+                "MA26": "MA26 379 RNW 26 TRK 256 UNTIL 600 TRK 066 UNTIL 2500 TURN RIGHT DIRECT",
+                "EGTNB": "EGTNB 2500 HOLD AT EGTNB LEFT TURN INBOUNDCOURSE 256 SPEED 210 LEGTIME 1 FAF FI26 MAP MA26"
+            },
+            "transitions": [
+                {
+                    "name": "EGT",
+                    "fixes": {
+                        "EGTNB": "EGTNB LEFT TURN INBOUNDCOURSE 256 ALT 2500 LEGDIST 10"
+                    }
+                }
+            ]
+        }
+    ]
+}

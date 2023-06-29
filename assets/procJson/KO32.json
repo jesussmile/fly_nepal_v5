@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "CATIM",
+            "lat": 36.85945556666667,
+            "lon": 119.507675
+        },
+        {
+            "name": "DEICE",
+            "lat": 36.49353611666667,
+            "lon": 119.4043
+        },
+        {
+            "name": "EXTRA",
+            "lat": 36.32751666666667,
+            "lon": 119.21856666666666
+        },
+        {
+            "name": "FRA",
+            "lat": 37.10442221666667,
+            "lon": 119.59544721666667
+        },
+        {
+            "name": "NTELL",
+            "lat": 36.89971943333333,
+            "lon": 119.88950278333333
+        },
+        {
+            "name": "PIPRE",
+            "lat": 36.76631943333334,
+            "lon": 119.47619721666666
+        },
+        {
+            "name": "SHIFF",
+            "lat": 36.61892778333333,
+            "lon": 119.44328056666667
+        },
+        {
+            "name": "UKOTE",
+            "lat": 36.910302783333336,
+            "lon": 119.52584721666666
+        },
+        {
+            "name": "WILPU",
+            "lat": 36.581122216666664,
+            "lon": 119.42732778333334
+        },
+        {
+            "name": "ZIDIV",
+            "lat": 36.708086116666664,
+            "lon": 119.46080556666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "CATIM": "CATIM AT OR ABOVE 3900",
+                "PIPRE": "PIPRE 2200",
+                "ZIDIV": "ZIDIV AT OR ABOVE 1060 RNW 16 TRK 155 UNTIL 636",
+                "DEICE": "OVERFLY DEICE AT OR ABOVE 3100 HOLD AT DEICE RIGHT TURN INBOUNDCOURSE 335 ALT 3100 LEGDIST 4 FAF PIPRE MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CATIM",
+                    "fixes": {
+                        "CATIM": "CATIM RIGHT TURN INBOUNDCOURSE 152 ALT 3900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FRA",
+                    "fixes": {
+                        "FRA": "FRA",
+                        "UKOTE": "UKOTE AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "NTELL",
+                    "fixes": {
+                        "NTELL": "NTELL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "DEICE": "DEICE AT OR ABOVE 3100 OVERFLY DEICE AT OR ABOVE 3100 HOLD AT DEICE RIGHT TURN INBOUNDCOURSE 335 ALT 3100 LEGDIST 4 FAF WILPU MAP RNW 34",
+                "WILPU": "WILPU 2100 RNW 34 TRK 335 UNTIL 860 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EXTRA",
+                    "fixes": {
+                        "EXTRA": "EXTRA"
+                    }
+                },
+                {
+                    "name": "FRA",
+                    "fixes": {
+                        "FRA": "FRA",
+                        "SHIFF": "SHIFF AT OR ABOVE 4900",
+                        "DEICE": "OVERFLY DEICE AT OR ABOVE 3100 HOLD AT DEICE RIGHT TURN INBOUNDCOURSE 335 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NTELL",
+                    "fixes": {
+                        "NTELL": "NTELL",
+                        "DEICE": "OVERFLY DEICE AT OR ABOVE 3100 HOLD AT DEICE RIGHT TURN INBOUNDCOURSE 335 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

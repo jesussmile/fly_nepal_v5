@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "ACT",
+            "lat": 31.66223056666667,
+            "lon": 97.26901388333333
+        },
+        {
+            "name": "AGJ",
+            "lat": 31.185505566666667,
+            "lon": 98.14185833333333
+        },
+        {
+            "name": "CLL",
+            "lat": 30.605002783333333,
+            "lon": 96.42068056666666
+        },
+        {
+            "name": "CONRA",
+            "lat": 31.001275,
+            "lon": 97.40419166666666
+        },
+        {
+            "name": "LOA",
+            "lat": 31.124016666666666,
+            "lon": 95.96795556666666
+        },
+        {
+            "name": "SONET",
+            "lat": 31.71251111666667,
+            "lon": 97.60484721666667
+        },
+        {
+            "name": "STV",
+            "lat": 30.206758333333333,
+            "lon": 98.70575556666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "CONRA2",
+            "rnw": "16",
+            "fixes": {
+                "CONRA": "CONRA"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "CLL",
+                    "fixes": [
+                        "CLL"
+                    ]
+                },
+                {
+                    "name": "LOA",
+                    "fixes": [
+                        "LOA"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "LAMPS7",
+            "rnw": "16",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 16",
+                    "fixes": {
+                        "RNW 16": "RNW 16 TRK 159 UNTIL 1330 HDG 240 INTERCEPT RADIAL 278 TO",
+                        "AGJ": "AGJ AGJ"
+                    }
+                },
+                {
+                    "rwy": "RNW 34",
+                    "fixes": {
+                        "RNW 34": "RNW 34 TRK 339 UNTIL 1330 TURN RIGHT HDG 240 INTERCEPT RADIAL 278 TO",
+                        "AGJ": "AGJ AGJ"
+                    }
+                }
+            ],
+            "transitions": [
+                {
+                    "name": "ACT",
+                    "fixes": [
+                        "SONET",
+                        "ACT"
+                    ]
+                },
+                {
+                    "name": "STV",
+                    "fixes": [
+                        "STV"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": []
+}

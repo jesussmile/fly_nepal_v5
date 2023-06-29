@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "ADRAN",
+            "lat": 41.160305566666665,
+            "lon": 79.52675556666667
+        },
+        {
+            "name": "EARED",
+            "lat": 40.959041666666664,
+            "lon": 79.68010833333334
+        },
+        {
+            "name": "LOCPI",
+            "lat": 41.08906388333333,
+            "lon": 79.619725
+        },
+        {
+            "name": "PUNCO",
+            "lat": 41.363788883333335,
+            "lon": 79.25956943333334
+        },
+        {
+            "name": "WAMSO",
+            "lat": 41.29222778333333,
+            "lon": 79.35380278333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "LOCPI": "LOCPI AT OR ABOVE 3100",
+                "ADRAN": "ADRAN 3100 RNW 06 TRK 055 UNTIL 1701",
+                "PUNCO": "OVERFLY PUNCO AT OR ABOVE 3500 HOLD AT PUNCO RIGHT TURN INBOUNDCOURSE 235 LEGDIST 4 FAF ADRAN MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "EARED",
+                    "fixes": {
+                        "EARED": "EARED"
+                    }
+                },
+                {
+                    "name": "LOCPI",
+                    "fixes": {
+                        "LOCPI": "LOCPI RIGHT TURN INBOUNDCOURSE 055 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "PUNCO": "PUNCO AT OR ABOVE 3500",
+                "WAMSO": "WAMSO 3200 RNW 24 TRK 235 UNTIL 1858",
+                "LOCPI": "OVERFLY LOCPI AT OR ABOVE 3100 HOLD AT LOCPI RIGHT TURN INBOUNDCOURSE 055 LEGDIST 4 FAF WAMSO MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "PUNCO",
+                    "fixes": {
+                        "PUNCO": "PUNCO RIGHT TURN INBOUNDCOURSE 235 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

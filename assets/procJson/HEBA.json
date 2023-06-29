@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "BA211",
+            "lat": 30.976666666666667,
+            "lon": 29.663055566666667
+        },
+        {
+            "name": "BA212",
+            "lat": 31.028333333333332,
+            "lon": 29.806111116666667
+        },
+        {
+            "name": "BA613",
+            "lat": 30.761277783333334,
+            "lon": 29.830305566666667
+        },
+        {
+            "name": "BA614",
+            "lat": 30.827888883333333,
+            "lon": 29.772
+        },
+        {
+            "name": "BA711",
+            "lat": 30.973805566666666,
+            "lon": 29.77625
+        },
+        {
+            "name": "BA712",
+            "lat": 31.127666666666666,
+            "lon": 29.627333333333333
+        },
+        {
+            "name": "BA713",
+            "lat": 31.078305566666668,
+            "lon": 29.55175
+        },
+        {
+            "name": "BA714",
+            "lat": 31.025111116666668,
+            "lon": 29.598666666666666
+        },
+        {
+            "name": "BA720",
+            "lat": 30.801527783333334,
+            "lon": 29.892027783333333
+        },
+        {
+            "name": "NOZ",
+            "lat": 31.1875,
+            "lon": 29.950833333333332
+        }
+    ],
+    "rnws": [
+        "RNW 14R",
+        "RNW 32L"
+    ],
+    "sids": [
+        {
+            "name": "NOZ1B",
+            "rnw": "32L",
+            "fixes": {
+                "BA211": "BA211 AT OR ABOVE 1000",
+                "BA212": "BA212 AT OR ABOVE 3500",
+                "NOZ": "NOZ 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14R",
+            "fixes": {
+                "BA713": "BA713 AT OR ABOVE 2500 SPEED 200",
+                "BA714": "BA714 2500 RNW 14R TRK 138 UNTIL 2000 FAF BA714 MAP RNW 14R"
+            },
+            "transitions": [
+                {
+                    "name": "BA711",
+                    "fixes": {
+                        "BA711": "BA711 AT OR ABOVE 3500",
+                        "BA712": "BA712 AT OR ABOVE 2800 SPEED 200"
+                    }
+                },
+                {
+                    "name": "BA712",
+                    "fixes": {
+                        "BA712": "BA712 AT OR ABOVE 2800 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32L",
+            "fixes": {
+                "BA613": "BA613 2000 SPEED 200",
+                "BA614": "BA614 2000 RNW 32L TRK 318 UNTIL 580 TRK 008 UNTIL 2000 FAF BA614 MAP RNW 32L"
+            },
+            "transitions": [
+                {
+                    "name": "BA711",
+                    "fixes": {
+                        "BA711": "BA711 AT OR ABOVE 3500",
+                        "BA720": "BA720 AT OR ABOVE 2000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "BA720",
+                    "fixes": {
+                        "BA720": "BA720 AT OR ABOVE 2000 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

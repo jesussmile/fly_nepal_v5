@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "LIBMY",
+            "lat": 38.16006111666667,
+            "lon": 78.80805556666667
+        },
+        {
+            "name": "NAYLO",
+            "lat": 38.180511116666665,
+            "lon": 78.77441666666667
+        },
+        {
+            "name": "OBEPE",
+            "lat": 37.90639721666667,
+            "lon": 79.22251111666667
+        },
+        {
+            "name": "SOSME",
+            "lat": 37.97521388333333,
+            "lon": 79.11058888333334
+        },
+        {
+            "name": "WILIV",
+            "lat": 38.005833333333335,
+            "lon": 79.06066388333333
+        },
+        {
+            "name": "ZEDPA",
+            "lat": 38.25196388333333,
+            "lon": 78.6566
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "OBEPE": "OBEPE AT OR ABOVE 6700",
+                "SOSME": "SOSME 4700",
+                "WILIV": "WILIV AT OR ABOVE 3700 RNW 06 TRK 061 UNTIL 1836",
+                "ZEDPA": "OVERFLY ZEDPA AT OR ABOVE 6300 HOLD AT ZEDPA RIGHT TURN INBOUNDCOURSE 241 ALT 6300 LEGDIST 7 FAF SOSME MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "OBEPE",
+                    "fixes": {
+                        "OBEPE": "OBEPE RIGHT TURN INBOUNDCOURSE 061 ALT 6700 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "ZEDPA": "ZEDPA AT OR ABOVE 6300",
+                "NAYLO": "NAYLO AT OR ABOVE 4400",
+                "LIBMY": "LIBMY 4100 RNW 24 TRK 241 UNTIL 1836",
+                "OBEPE": "OVERFLY OBEPE AT OR ABOVE 6700 HOLD AT OBEPE RIGHT TURN INBOUNDCOURSE 061 ALT 6700 LEGDIST 7 FAF LIBMY MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "ZEDPA",
+                    "fixes": {
+                        "ZEDPA": "ZEDPA RIGHT TURN INBOUNDCOURSE 241 ALT 6300 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

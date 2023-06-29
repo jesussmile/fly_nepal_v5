@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "D098E",
+            "lat": 51.97188056666667,
+            "lon": 19.358977783333334
+        },
+        {
+            "name": "FT10",
+            "lat": 52.031083333333335,
+            "lon": 19.025444433333334
+        },
+        {
+            "name": "FT28",
+            "lat": 51.99522221666667,
+            "lon": 19.266361116666666
+        },
+        {
+            "name": "NW",
+            "lat": 51.999805566666666,
+            "lon": 19.178138883333332
+        },
+        {
+            "name": "NWT",
+            "lat": 51.99330556666666,
+            "lon": 19.22038888333333
+        },
+        {
+            "name": "TLY",
+            "lat": 52.001111116666664,
+            "lon": 19.144083333333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB28",
+            "fixes": {
+                "NWT": "NWT 1280 NWT 3000 FAF NWT MAP NW",
+                "NW": "NW 681 RNW 28 TRK 278 UNTIL 1800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NWT1",
+                    "fixes": {
+                        "NWT": "NWT AT OR ABOVE 3000 TRK 065 UNTIL 5.3 FROM NWT TURN RIGHT DIRECT",
+                        "D098E": "D098E AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "NWT2",
+                    "fixes": {
+                        "NWT": "NWT AT OR ABOVE 3000 TRK 078 UNTIL 6.0 FROM NWT TURN RIGHT DIRECT",
+                        "D098E": "D098E AT OR ABOVE 1900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR10",
+            "fixes": {
+                "FT10": "FT10 1700 RNW 10 TRK 106 UNTIL 1500 TURN LEFT DIRECT",
+                "TLY": "TLY AT OR ABOVE 3000 FAF FT10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "TLY1",
+                    "fixes": {
+                        "TLY": "TLY AT OR ABOVE 3000 TRK 324 UNTIL 6.1 FROM TLY"
+                    }
+                },
+                {
+                    "name": "TLY2",
+                    "fixes": {
+                        "TLY": "TLY AT OR ABOVE 3000 TRK 301 UNTIL 6.1 FROM TLY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR28",
+            "fixes": {
+                "FT28": "FT28 1700 RNW 28 TRK 268 UNTIL 1500 TURN RIGHT DIRECT",
+                "TLY": "TLY AT OR ABOVE 3000 FAF FT28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "TLY1",
+                    "fixes": {
+                        "TLY": "TLY AT OR ABOVE 3000 TRK 050 UNTIL 6.0 FROM TLY"
+                    }
+                },
+                {
+                    "name": "TLY2",
+                    "fixes": {
+                        "TLY": "TLY AT OR ABOVE 3000 TRK 073 UNTIL 6.0 FROM TLY"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,172 @@
+{
+    "fixes": [
+        {
+            "name": "AXN",
+            "lat": 45.958388883333335,
+            "lon": 95.23263611666667
+        },
+        {
+            "name": "EBYEX",
+            "lat": 45.646538883333335,
+            "lon": 96.05104721666666
+        },
+        {
+            "name": "EXJUP",
+            "lat": 45.37475833333333,
+            "lon": 95.77045
+        },
+        {
+            "name": "FF32",
+            "lat": 45.495158333333336,
+            "lon": 95.88556111666666
+        },
+        {
+            "name": "FS14",
+            "lat": 45.650444433333334,
+            "lon": 96.04221111666666
+        },
+        {
+            "name": "JEXIR",
+            "lat": 45.535952783333336,
+            "lon": 95.93428333333334
+        },
+        {
+            "name": "MOX",
+            "lat": 45.56541943333333,
+            "lon": 95.96933333333334
+        },
+        {
+            "name": "PI001",
+            "lat": 45.61377048333333,
+            "lon": 96.0159666
+        },
+        {
+            "name": "PI002",
+            "lat": 45.62740098333333,
+            "lon": 96.11656405
+        },
+        {
+            "name": "PI003",
+            "lat": 45.70351481666667,
+            "lon": 96.10278491666666
+        },
+        {
+            "name": "PI004",
+            "lat": 45.52274306666666,
+            "lon": 95.91255091666666
+        },
+        {
+            "name": "PI005",
+            "lat": 45.52019635,
+            "lon": 95.81032836666667
+        },
+        {
+            "name": "PI006",
+            "lat": 45.44341248333333,
+            "lon": 95.80732616666667
+        },
+        {
+            "name": "SISOE",
+            "lat": 45.517716666666665,
+            "lon": 95.91759166666667
+        },
+        {
+            "name": "WIVKA",
+            "lat": 45.480172216666666,
+            "lon": 95.87884443333333
+        },
+        {
+            "name": "YOPCU",
+            "lat": 45.595975,
+            "lon": 95.99857221666667
+        },
+        {
+            "name": "ZITOG",
+            "lat": 45.754055566666665,
+            "lon": 96.16299721666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 14",
+        "RNW 22",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ZITOG": "ZITOG AT OR ABOVE 3000",
+                "EBYEX": "EBYEX 3000",
+                "YOPCU": "YOPCU AT OR ABOVE 1800 RNW 14 TRK 142 UNTIL 1382",
+                "EXJUP": "OVERFLY EXJUP AT OR ABOVE 3500 HOLD AT EXJUP RIGHT TURN INBOUNDCOURSE 322 LEGDIST 4 FAF EBYEX MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ZITOG",
+                    "fixes": {
+                        "ZITOG": "ZITOG RIGHT TURN INBOUNDCOURSE 142 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "EXJUP": "EXJUP AT OR ABOVE 3500",
+                "WIVKA": "WIVKA 3000",
+                "SISOE": "SISOE AT OR ABOVE 2100 RNW 32 TRK 322 UNTIL 1330",
+                "ZITOG": "OVERFLY ZITOG AT OR ABOVE 3000 HOLD AT ZITOG RIGHT TURN INBOUNDCOURSE 142 LEGDIST 4 FAF WIVKA MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "EXJUP",
+                    "fixes": {
+                        "EXJUP": "EXJUP RIGHT TURN INBOUNDCOURSE 322 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR14",
+            "fixes": {
+                "FS14": "FS14 3000 RNW 14",
+                "MOX": "MOX AT OR ABOVE 1540 TRK 144 UNTIL 3000 TURN LEFT DIRECT MOX HOLD AT MOX RIGHT TURN INBOUNDCOURSE 144 LEGTIME 1 FAF FS14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "AXN",
+                    "fixes": {
+                        "AXN": "AXN",
+                        "MOX": "MOX AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR32",
+            "fixes": {
+                "FF32": "FF32 2800",
+                "JEXIR": "JEXIR AT OR ABOVE 1700 RNW 32",
+                "MOX": "MOX AT OR ABOVE 1540 TRK 315 UNTIL 3000 TURN LEFT DIRECT MOX HOLD AT MOX RIGHT TURN INBOUNDCOURSE 315 LEGTIME 1 FAF FF32 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "AXN",
+                    "fixes": {
+                        "AXN": "AXN",
+                        "MOX": "MOX AT OR ABOVE 3500",
+                        "PI004": "PI004 AT OR ABOVE 2800 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2800 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

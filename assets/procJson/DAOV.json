@@ -1,0 +1,73 @@
+{
+    "fixes": [
+        {
+            "name": "FN08",
+            "lat": 35.19941943333333,
+            "lon": 0.04749166666666667
+        },
+        {
+            "name": "FV08",
+            "lat": 35.19765556666667,
+            "lon": 0.047725000000000004
+        },
+        {
+            "name": "GRS",
+            "lat": 35.209372216666665,
+            "lon": 0.14891388333333333
+        },
+        {
+            "name": "GRSNB",
+            "lat": 35.21227221666667,
+            "lon": 0.15844721666666667
+        },
+        {
+            "name": "MN08",
+            "lat": 35.205075,
+            "lon": 0.09621111666666667
+        },
+        {
+            "name": "MV08",
+            "lat": 35.20404166666667,
+            "lon": 0.10279166666666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FN08": "FN08 3120",
+                "MN08": "MN08 2351 RNW 08 HDG 082 VECTORS FAF FN08 MAP MN08"
+            },
+            "transitions": [
+                {
+                    "name": "GRS",
+                    "fixes": {
+                        "GRSNB": "GRSNB AT OR ABOVE 5000 TRK 277 UNTIL 7.5 FROM GRSNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR08",
+            "fixes": {
+                "FV08": "FV08 3120",
+                "MV08": "MV08 2250 RNW 08",
+                "GRS": "GRS HDG 082 VECTORS FAF FV08 MAP MV08"
+            },
+            "transitions": [
+                {
+                    "name": "GRS",
+                    "fixes": {
+                        "GRS": "GRS AT OR ABOVE 5000 TRK 277 UNTIL 7.5 FROM GRS"
+                    }
+                }
+            ]
+        }
+    ]
+}

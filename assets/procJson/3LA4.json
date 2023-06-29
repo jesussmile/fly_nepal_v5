@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CUBED",
+            "lat": 29.891111116666668,
+            "lon": 92.96903611666667
+        },
+        {
+            "name": "FUSED",
+            "lat": 29.816944433333333,
+            "lon": 92.83473056666666
+        },
+        {
+            "name": "HEATS",
+            "lat": 29.708191666666668,
+            "lon": 92.63860556666667
+        },
+        {
+            "name": "RAYED",
+            "lat": 29.753033333333335,
+            "lon": 92.71936111666666
+        },
+        {
+            "name": "SHAWL",
+            "lat": 29.846422216666667,
+            "lon": 92.88805833333333
+        },
+        {
+            "name": "TENTH",
+            "lat": 29.782405566666668,
+            "lon": 92.77233888333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "CUBED": "CUBED AT OR ABOVE 1700",
+                "SHAWL": "SHAWL 1600",
+                "FUSED": "FUSED AT OR ABOVE 540 RNW 12 TRK 121 UNTIL 254",
+                "HEATS": "OVERFLY HEATS AT OR ABOVE 1700 HOLD AT HEATS RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4 FAF SHAWL MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "CUBED",
+                    "fixes": {
+                        "CUBED": "CUBED RIGHT TURN INBOUNDCOURSE 121 ALT 1700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "HEATS": "HEATS AT OR ABOVE 1700",
+                "RAYED": "RAYED 1600",
+                "TENTH": "TENTH AT OR ABOVE 540 RNW 30 TRK 301 UNTIL 320",
+                "CUBED": "OVERFLY CUBED AT OR ABOVE 1700 HOLD AT CUBED RIGHT TURN INBOUNDCOURSE 121 LEGDIST 4 FAF RAYED MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "HEATS",
+                    "fixes": {
+                        "HEATS": "HEATS RIGHT TURN INBOUNDCOURSE 301 ALT 1700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

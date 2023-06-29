@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "AJAPA",
+            "lat": 40.909561116666666,
+            "lon": 80.19789166666666
+        },
+        {
+            "name": "CETPU",
+            "lat": 40.559375,
+            "lon": 80.24205556666666
+        },
+        {
+            "name": "CIBAT",
+            "lat": 40.754213883333335,
+            "lon": 80.14445278333334
+        },
+        {
+            "name": "DEUSO",
+            "lat": 40.990963883333336,
+            "lon": 80.22595278333333
+        },
+        {
+            "name": "EDAPY",
+            "lat": 40.62285,
+            "lon": 80.09948333333334
+        },
+        {
+            "name": "EWC",
+            "lat": 40.824933333333334,
+            "lon": 80.21154443333333
+        },
+        {
+            "name": "HODOS",
+            "lat": 40.858691666666665,
+            "lon": 80.18036111666666
+        },
+        {
+            "name": "OTIKE",
+            "lat": 40.703811116666664,
+            "lon": 80.12717778333334
+        },
+        {
+            "name": "VOLAN",
+            "lat": 41.13430833333334,
+            "lon": 80.14453056666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "DEUSO": "DEUSO AT OR ABOVE 3000",
+                "AJAPA": "AJAPA 3000",
+                "HODOS": "HODOS AT OR ABOVE 1960 RNW 17 TRK 174 UNTIL 1298",
+                "EDAPY": "OVERFLY EDAPY AT OR ABOVE 3100 HOLD AT EDAPY RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF AJAPA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "EWC",
+                    "fixes": {
+                        "EWC": "EWC",
+                        "DEUSO": "OVERFLY DEUSO AT OR ABOVE 3000 HOLD AT DEUSO RIGHT TURN INBOUNDCOURSE 174 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VOLAN",
+                    "fixes": {
+                        "VOLAN": "VOLAN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "EDAPY": "EDAPY AT OR ABOVE 3100",
+                "OTIKE": "OTIKE 2800",
+                "CIBAT": "CIBAT AT OR ABOVE 1780 RNW 35 TRK 354 UNTIL 1298",
+                "DEUSO": "OVERFLY DEUSO AT OR ABOVE 3000 HOLD AT DEUSO RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF OTIKE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CETPU",
+                    "fixes": {
+                        "CETPU": "CETPU"
+                    }
+                },
+                {
+                    "name": "EWC",
+                    "fixes": {
+                        "EWC": "EWC",
+                        "EDAPY": "OVERFLY EDAPY AT OR ABOVE 3100 HOLD AT EDAPY RIGHT TURN INBOUNDCOURSE 354 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

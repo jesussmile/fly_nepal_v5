@@ -1,0 +1,173 @@
+{
+    "fixes": [
+        {
+            "name": "CMUED",
+            "lat": 28.092555566666668,
+            "lon": 145.81769443333334
+        },
+        {
+            "name": "CMUEE",
+            "lat": 28.168972216666667,
+            "lon": 145.81005556666668
+        },
+        {
+            "name": "CMUEF",
+            "lat": 28.082805566666668,
+            "lon": 145.69466666666668
+        },
+        {
+            "name": "CMUEG",
+            "lat": 28.188694433333332,
+            "lon": 145.72638888333333
+        },
+        {
+            "name": "CMUEH",
+            "lat": 28.007361116666665,
+            "lon": 145.59386111666666
+        },
+        {
+            "name": "CMUEI",
+            "lat": 28.12588888333333,
+            "lon": 145.75233333333333
+        },
+        {
+            "name": "CMUEM",
+            "lat": 28.039722216666668,
+            "lon": 145.63705556666667
+        },
+        {
+            "name": "CMUNB",
+            "lat": 28.034763883333333,
+            "lon": 145.62375
+        },
+        {
+            "name": "CMUWA",
+            "lat": 27.970694433333332,
+            "lon": 145.43541666666667
+        },
+        {
+            "name": "CMUWB",
+            "lat": 27.894333333333332,
+            "lon": 145.44330556666668
+        },
+        {
+            "name": "CMUWC",
+            "lat": 27.874777783333332,
+            "lon": 145.52675
+        },
+        {
+            "name": "CMUWF",
+            "lat": 27.980666666666668,
+            "lon": 145.55827778333332
+        },
+        {
+            "name": "CMUWH",
+            "lat": 28.065666666666665,
+            "lon": 145.51144443333334
+        },
+        {
+            "name": "CMUWI",
+            "lat": 27.9375,
+            "lon": 145.50075
+        },
+        {
+            "name": "CMUWM",
+            "lat": 28.023805566666667,
+            "lon": 145.61583333333334
+        },
+        {
+            "name": "FN30",
+            "lat": 28.071158333333333,
+            "lon": 145.69781388333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 12",
+        "RNW 24",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 1900 RNW 30",
+                "CMUNB": "OVERFLY CMUNB TRK 290 UNTIL 2200 FAF FN30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "CMU1",
+                    "fixes": {
+                        "CMUNB": "CMUNB AT OR ABOVE 2200 SPEED 210 TRK 142 UNTIL 5.3 FROM CMUNB"
+                    }
+                },
+                {
+                    "name": "CMU2",
+                    "fixes": {
+                        "CMUNB": "CMUNB AT OR ABOVE 2200 SPEED 210 TRK 128 UNTIL 6.0 FROM CMUNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "CMUWI": "CMUWI AT OR ABOVE 2200",
+                "CMUWF": "CMUWF 2040",
+                "CMUWM": "OVERFLY CMUWM 766 RNW 12 TURN RIGHT DIRECT",
+                "CMUWH": "CMUWH SPEED 210 HDG 270 VECTORS FAF CMUWF MAP CMUWM"
+            },
+            "transitions": [
+                {
+                    "name": "CMUWA",
+                    "fixes": {
+                        "CMUWA": "CMUWA AT OR ABOVE 2200 SPEED 210"
+                    }
+                },
+                {
+                    "name": "CMUWB",
+                    "fixes": {
+                        "CMUWB": "CMUWB AT OR ABOVE 2200 SPEED 210"
+                    }
+                },
+                {
+                    "name": "CMUWC",
+                    "fixes": {
+                        "CMUWC": "CMUWC AT OR ABOVE 2200 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "CMUEI": "CMUEI AT OR ABOVE 2200",
+                "CMUEF": "CMUEF 2030",
+                "CMUEM": "OVERFLY CMUEM 762 RNW 30",
+                "CMUEH": "OVERFLY CMUEH HDG 145 VECTORS FAF CMUEF MAP CMUEM"
+            },
+            "transitions": [
+                {
+                    "name": "CMUED",
+                    "fixes": {
+                        "CMUED": "CMUED AT OR ABOVE 2200 SPEED 210"
+                    }
+                },
+                {
+                    "name": "CMUEE",
+                    "fixes": {
+                        "CMUEE": "CMUEE AT OR ABOVE 2200 SPEED 210"
+                    }
+                },
+                {
+                    "name": "CMUEG",
+                    "fixes": {
+                        "CMUEG": "CMUEG AT OR ABOVE 2200 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

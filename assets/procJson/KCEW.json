@@ -1,0 +1,178 @@
+{
+    "fixes": [
+        {
+            "name": "CEW",
+            "lat": 30.826175,
+            "lon": 86.67914443333333
+        },
+        {
+            "name": "CF17",
+            "lat": 30.951961116666666,
+            "lon": 86.55393056666666
+        },
+        {
+            "name": "GEBKE",
+            "lat": 30.696563883333333,
+            "lon": 86.50701666666667
+        },
+        {
+            "name": "GIYAT",
+            "lat": 30.85298888333333,
+            "lon": 86.53572778333333
+        },
+        {
+            "name": "HEKLU",
+            "lat": 30.597627783333333,
+            "lon": 86.48893333333334
+        },
+        {
+            "name": "KOBRA",
+            "lat": 30.852852783333333,
+            "lon": 86.53660833333333
+        },
+        {
+            "name": "MADEW",
+            "lat": 30.780725,
+            "lon": 86.52773056666666
+        },
+        {
+            "name": "NOTME",
+            "lat": 30.786222216666665,
+            "lon": 86.546
+        },
+        {
+            "name": "PI001",
+            "lat": 30.9104675,
+            "lon": 86.54724428333333
+        },
+        {
+            "name": "PI002",
+            "lat": 30.968437766666668,
+            "lon": 86.49811656666667
+        },
+        {
+            "name": "PI003",
+            "lat": 31.01746395,
+            "lon": 86.56703081666667
+        },
+        {
+            "name": "ROMEK",
+            "lat": 31.185675,
+            "lon": 86.67184721666666
+        },
+        {
+            "name": "WEDOM",
+            "lat": 30.952233333333332,
+            "lon": 86.55397778333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS17",
+            "fixes": {
+                "CF17": "CF17 AT OR ABOVE 2000",
+                "KOBRA": "KOBRA 1498 RNW 17 TRK 175 UNTIL 1000 TURN RIGHT DIRECT KOBRA AT OR ABOVE 2000 HOLD AT KOBRA LEFT TURN INBOUNDCOURSE 175 LEGTIME 1 FAF KOBRA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CEW",
+                    "fixes": {
+                        "CEW": "CEW",
+                        "KOBRA": "KOBRA AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "ROMEK",
+                    "fixes": {
+                        "ROMEK": "ROMEK",
+                        "KOBRA": "KOBRA AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "WEDOM": "WEDOM AT OR ABOVE 2000",
+                "GIYAT": "GIYAT 1500 RNW 17 TRK 175 UNTIL 470",
+                "HEKLU": "OVERFLY HEKLU AT OR ABOVE 2000 HOLD AT HEKLU LEFT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF GIYAT MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CEW",
+                    "fixes": {
+                        "CEW": "CEW",
+                        "WEDOM": "OVERFLY WEDOM AT OR ABOVE 2000 HOLD AT WEDOM RIGHT TURN INBOUNDCOURSE 175 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ROMEK",
+                    "fixes": {
+                        "ROMEK": "ROMEK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "HEKLU": "HEKLU AT OR ABOVE 2000",
+                "GEBKE": "GEBKE 1600 RNW 35 TRK 355 UNTIL 450",
+                "WEDOM": "OVERFLY WEDOM AT OR ABOVE 2000 HOLD AT WEDOM RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF GEBKE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CEW",
+                    "fixes": {
+                        "CEW": "CEW",
+                        "HEKLU": "OVERFLY HEKLU AT OR ABOVE 2000 HOLD AT HEKLU LEFT TURN INBOUNDCOURSE 355 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA17",
+            "fixes": {
+                "CEW": "CEW 2200 CEW AT OR ABOVE 2200 HOLD AT CEW LEFT TURN INBOUNDCOURSE 106 LEGTIME 1 FAF CEW MAP MADEW",
+                "NOTME": "NOTME AT OR ABOVE 900",
+                "MADEW": "MADEW 840 RNW 17 TRK 106 UNTIL 1200 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CEW",
+                    "fixes": {
+                        "CEW": "CEW LEFT TURN INBOUNDCOURSE 106 ALT 2200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA35",
+            "fixes": {
+                "CEW": "CEW 2200 CEW AT OR ABOVE 2200 HOLD AT CEW LEFT TURN INBOUNDCOURSE 106 LEGTIME 1 FAF CEW MAP MADEW",
+                "NOTME": "NOTME AT OR ABOVE 900",
+                "MADEW": "MADEW 840 RNW 35 TRK 106 UNTIL 1200 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CEW",
+                    "fixes": {
+                        "CEW": "CEW LEFT TURN INBOUNDCOURSE 106 ALT 2200 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

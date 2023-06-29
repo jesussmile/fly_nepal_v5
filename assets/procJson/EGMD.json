@@ -1,0 +1,243 @@
+{
+    "fixes": [
+        {
+            "name": "30DME",
+            "lat": 51.0111,
+            "lon": 0.9554027833333334
+        },
+        {
+            "name": "BEGTI",
+            "lat": 51.12911666666667,
+            "lon": 1.184825
+        },
+        {
+            "name": "BEMLA",
+            "lat": 51.088633333333334,
+            "lon": 0.8210638833333334
+        },
+        {
+            "name": "CI21",
+            "lat": 51.13215,
+            "lon": 1.0839388833333334
+        },
+        {
+            "name": "CQ21",
+            "lat": 51.08463056666667,
+            "lon": 0.9781222166666667
+        },
+        {
+            "name": "DINBI",
+            "lat": 50.981825,
+            "lon": 0.7774194333333334
+        },
+        {
+            "name": "FI21",
+            "lat": 51.087688883333335,
+            "lon": 1.0477972166666667
+        },
+        {
+            "name": "FQ21",
+            "lat": 51.05195,
+            "lon": 0.9680166666666667
+        },
+        {
+            "name": "GATSU",
+            "lat": 51.077202783333334,
+            "lon": 1.0169805666666667
+        },
+        {
+            "name": "GITKI",
+            "lat": 51.127516666666665,
+            "lon": 1.1526027833333332
+        },
+        {
+            "name": "GOKAT",
+            "lat": 50.821758333333335,
+            "lon": 0.7767527833333333
+        },
+        {
+            "name": "LONRU",
+            "lat": 51.18278333333333,
+            "lon": 0.9341944333333333
+        },
+        {
+            "name": "MA03",
+            "lat": 50.94040833333333,
+            "lon": 0.9214277833333333
+        },
+        {
+            "name": "MA21",
+            "lat": 50.975605566666665,
+            "lon": 0.9589194333333333
+        },
+        {
+            "name": "MA21C",
+            "lat": 50.98260833333333,
+            "lon": 0.96605
+        },
+        {
+            "name": "MD03F",
+            "lat": 50.887697216666666,
+            "lon": 0.8570388833333333
+        },
+        {
+            "name": "MD21F",
+            "lat": 51.070202783333336,
+            "lon": 1.0098277833333333
+        },
+        {
+            "name": "MQ21",
+            "lat": 50.97825278333333,
+            "lon": 0.9452777833333333
+        },
+        {
+            "name": "NURSI",
+            "lat": 51.156016666666666,
+            "lon": 1.0595805666666667
+        },
+        {
+            "name": "PEVOL",
+            "lat": 50.770927783333335,
+            "lon": 0.8807777833333332
+        },
+        {
+            "name": "RIBGO",
+            "lat": 50.87249443333333,
+            "lon": 0.6725027833333334
+        },
+        {
+            "name": "ROMTI",
+            "lat": 51.035,
+            "lon": 0.9222722166666667
+        },
+        {
+            "name": "SORDI",
+            "lat": 51.170436116666664,
+            "lon": 0.9521222166666666
+        },
+        {
+            "name": "TUMVA",
+            "lat": 51.149019433333336,
+            "lon": 1.0524083333333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS21",
+            "fixes": {
+                "CI21": "CI21 AT OR ABOVE 3200",
+                "FI21": "FI21 3200 RNW 21 TRK 207 UNTIL 420 TURN RIGHT DIRECT",
+                "ROMTI": "ROMTI 3200 SPEED 160 HOLD AT ROMTI RIGHT TURN INBOUNDCOURSE 171 ALT 3200 SPEED 210 LEGTIME 1 FAF FI21 MAP RNW 21"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDBD21",
+            "fixes": {
+                "CQ21": "CQ21 AT OR ABOVE 2100",
+                "FQ21": "FQ21 2100",
+                "30DME": "30DME AT OR ABOVE 1170",
+                "MQ21": "MQ21 431 RNW 21 TRK 191 UNTIL 431 TURN RIGHT DIRECT",
+                "ROMTI": "ROMTI 3200 HOLD AT ROMTI RIGHT TURN INBOUNDCOURSE 171 ALT 3200 LEGTIME 1 FAF FQ21 MAP MQ21"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "GOKAT": "GOKAT AT OR ABOVE 2500 SPEED 210 GOKAT 2500 SPEED 210 HOLD AT GOKAT LEFT TURN INBOUNDCOURSE 037 ALT 2500 LEGTIME 1 FAF MD03F MAP MA03",
+                "MD03F": "MD03F 1600",
+                "MA03": "OVERFLY MA03 306 RNW 03 TURN LEFT DIRECT",
+                "DINBI": "OVERFLY DINBI TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GOKAT",
+                    "fixes": {
+                        "GOKAT": "GOKAT LEFT TURN INBOUNDCOURSE 037 ALT 2500 SPEED 210 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "PEVOL",
+                    "fixes": {
+                        "PEVOL": "PEVOL AT OR ABOVE 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "RIBGO",
+                    "fixes": {
+                        "RIBGO": "RIBGO AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY21",
+            "fixes": {
+                "MD21F": "MD21F 2700",
+                "MA21": "OVERFLY MA21 428 RNW 21 TURN RIGHT DIRECT",
+                "BEMLA": "OVERFLY BEMLA TURN RIGHT DIRECT",
+                "ROMTI": "ROMTI 3200 SPEED 210 HOLD AT ROMTI RIGHT TURN INBOUNDCOURSE 171 ALT 3200 SPEED 210 LEGTIME 1 FAF MD21F MAP MA21"
+            },
+            "transitions": [
+                {
+                    "name": "GITKI",
+                    "fixes": {
+                        "GITKI": "GITKI AT OR ABOVE 3200 SPEED 160",
+                        "TUMVA": "TUMVA AT OR ABOVE 3200 SPEED 160"
+                    }
+                },
+                {
+                    "name": "SORDI",
+                    "fixes": {
+                        "SORDI": "SORDI AT OR ABOVE 3200 SPEED 160",
+                        "TUMVA": "TUMVA AT OR ABOVE 3200 SPEED 160"
+                    }
+                },
+                {
+                    "name": "TUMVA",
+                    "fixes": {
+                        "TUMVA": "TUMVA AT OR ABOVE 3200 SPEED 160"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ21",
+            "fixes": {
+                "GATSU": "GATSU 2800",
+                "MA21C": "OVERFLY MA21C 597 SPEED 150 RNW 21 TURN RIGHT DIRECT",
+                "BEMLA": "OVERFLY BEMLA SPEED 150 TURN RIGHT DIRECT",
+                "ROMTI": "ROMTI 3200 SPEED 210 HOLD AT ROMTI RIGHT TURN INBOUNDCOURSE 171 ALT 3200 SPEED 210 LEGTIME 1 FAF GATSU MAP MA21C"
+            },
+            "transitions": [
+                {
+                    "name": "BEGTI",
+                    "fixes": {
+                        "BEGTI": "BEGTI AT OR ABOVE 3200 SPEED 180",
+                        "NURSI": "NURSI AT OR ABOVE 3200 SPEED 180"
+                    }
+                },
+                {
+                    "name": "LONRU",
+                    "fixes": {
+                        "LONRU": "LONRU AT OR ABOVE 3200 SPEED 180",
+                        "NURSI": "NURSI AT OR ABOVE 3200 SPEED 180"
+                    }
+                },
+                {
+                    "name": "NURSI",
+                    "fixes": {
+                        "NURSI": "NURSI AT OR ABOVE 3200 SPEED 180"
+                    }
+                }
+            ]
+        }
+    ]
+}

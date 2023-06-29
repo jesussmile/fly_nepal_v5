@@ -1,0 +1,214 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 36.567325266666664,
+            "lon": 94.23346558333333
+        },
+        {
+            "name": "AF002",
+            "lat": 36.57831186666667,
+            "lon": 94.1599738
+        },
+        {
+            "name": "AF003",
+            "lat": 36.50762471666667,
+            "lon": 93.86417541666667
+        },
+        {
+            "name": "AF004",
+            "lat": 36.541494883333336,
+            "lon": 93.92874783333333
+        },
+        {
+            "name": "CITGA",
+            "lat": 36.54035556666667,
+            "lon": 93.91535278333333
+        },
+        {
+            "name": "D004T",
+            "lat": 36.576975,
+            "lon": 94.0638
+        },
+        {
+            "name": "D016T",
+            "lat": 36.56002221666667,
+            "lon": 93.97988333333333
+        },
+        {
+            "name": "FIGBO",
+            "lat": 36.464586116666666,
+            "lon": 94.06729721666666
+        },
+        {
+            "name": "FISUP",
+            "lat": 36.597725,
+            "lon": 94.11944443333333
+        },
+        {
+            "name": "HEXER",
+            "lat": 36.553666666666665,
+            "lon": 94.282775
+        },
+        {
+            "name": "HONON",
+            "lat": 36.192430566666665,
+            "lon": 94.18411388333334
+        },
+        {
+            "name": "JAPKO",
+            "lat": 36.463208333333334,
+            "lon": 94.06791388333333
+        },
+        {
+            "name": "JEPRO",
+            "lat": 36.452133333333336,
+            "lon": 93.79642221666667
+        },
+        {
+            "name": "NASIC",
+            "lat": 36.57030833333334,
+            "lon": 94.02171943333333
+        },
+        {
+            "name": "PINNE",
+            "lat": 36.5185,
+            "lon": 94.26423333333334
+        },
+        {
+            "name": "ROLCO",
+            "lat": 36.33465556666667,
+            "lon": 94.12317778333333
+        },
+        {
+            "name": "TEEUP",
+            "lat": 36.375802783333334,
+            "lon": 93.91736943333333
+        },
+        {
+            "name": "WALTN",
+            "lat": 36.65208333333333,
+            "lon": 93.98635833333333
+        },
+        {
+            "name": "WETCO",
+            "lat": 36.286247216666666,
+            "lon": 94.14394443333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "ROG4",
+            "rnw": "23",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 02",
+                    "fixes": {
+                        "RNW 02": "RNW 02 HDG 018 UNTIL 3000 HDG 018 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 20",
+                    "fixes": {
+                        "RNW 20": "RNW 20 TRK 198 UNTIL 1760 HDG 183 UNTIL 3000 HDG 183 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS20",
+            "fixes": {
+                "NASIC": "NASIC AT OR ABOVE 3200",
+                "FIGBO": "FIGBO 3100 RNW 20 TRK 198 UNTIL 2100 HDG 110 INTERCEPT RADIAL 048 TO",
+                "TEEUP": "TEEUP TEEUP AT OR ABOVE 4000 HOLD AT TEEUP RIGHT TURN INBOUNDCOURSE 228 LEGTIME 1 FAF FIGBO MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "HEXER",
+                    "fixes": {
+                        "HEXER": "HEXER",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D004T": "D004T AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "JEPRO",
+                    "fixes": {
+                        "JEPRO": "JEPRO",
+                        "AF003": "AF003",
+                        "AF004": "AF004",
+                        "D016T": "D016T AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "WALTN",
+                    "fixes": {
+                        "WALTN": "WALTN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "HONON": "HONON AT OR ABOVE 3100",
+                "WETCO": "WETCO 3000",
+                "ROLCO": "ROLCO AT OR ABOVE 2020 RNW 02 TRK 018 UNTIL 1620",
+                "NASIC": "OVERFLY NASIC AT OR ABOVE 3200 HOLD AT NASIC RIGHT TURN INBOUNDCOURSE 198 LEGDIST 5 FAF WETCO MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "HONON",
+                    "fixes": {
+                        "HONON": "HONON RIGHT TURN INBOUNDCOURSE 018 ALT 3100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "NASIC": "NASIC AT OR ABOVE 3200",
+                "JAPKO": "JAPKO 3100 RNW 20 TRK 198 UNTIL 1604",
+                "HONON": "OVERFLY HONON AT OR ABOVE 3100 HOLD AT HONON RIGHT TURN INBOUNDCOURSE 018 LEGDIST 5 FAF JAPKO MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "CITGA",
+                    "fixes": {
+                        "CITGA": "CITGA"
+                    }
+                },
+                {
+                    "name": "NASIC",
+                    "fixes": {
+                        "NASIC": "NASIC RIGHT TURN INBOUNDCOURSE 198 ALT 3200 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "PINNE",
+                    "fixes": {
+                        "PINNE": "PINNE",
+                        "FISUP": "FISUP AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "WALTN",
+                    "fixes": {
+                        "WALTN": "WALTN"
+                    }
+                }
+            ]
+        }
+    ]
+}

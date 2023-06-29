@@ -1,0 +1,171 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 31.24040875,
+            "lon": 94.50151016666666
+        },
+        {
+            "name": "AF002",
+            "lat": 31.298728116666666,
+            "lon": 94.54565048333333
+        },
+        {
+            "name": "AF003",
+            "lat": 31.340599316666665,
+            "lon": 94.61052378333333
+        },
+        {
+            "name": "ARMOR",
+            "lat": 31.629908333333333,
+            "lon": 94.73031388333334
+        },
+        {
+            "name": "BODTA",
+            "lat": 31.172636116666666,
+            "lon": 94.48415278333333
+        },
+        {
+            "name": "D002L",
+            "lat": 31.361388883333333,
+            "lon": 94.68836388333334
+        },
+        {
+            "name": "DRBOB",
+            "lat": 31.751591666666666,
+            "lon": 94.71463888333334
+        },
+        {
+            "name": "LFK",
+            "lat": 31.162441666666666,
+            "lon": 94.71683333333333
+        },
+        {
+            "name": "LUJMU",
+            "lat": 31.668108333333333,
+            "lon": 94.71206666666667
+        },
+        {
+            "name": "MAFIE",
+            "lat": 31.362466666666666,
+            "lon": 94.729825
+        },
+        {
+            "name": "NADOS",
+            "lat": 31.485447216666667,
+            "lon": 94.71859166666667
+        },
+        {
+            "name": "PIPES",
+            "lat": 32.18381111666667,
+            "lon": 94.746375
+        },
+        {
+            "name": "WAJGU",
+            "lat": 31.487411116666667,
+            "lon": 94.712025
+        },
+        {
+            "name": "XOWNU",
+            "lat": 31.612547216666666,
+            "lon": 94.70693888333334
+        },
+        {
+            "name": "YIRUN",
+            "lat": 31.545941666666668,
+            "lon": 94.71305
+        },
+        {
+            "name": "ZARAD",
+            "lat": 31.480975,
+            "lon": 94.719
+        },
+        {
+            "name": "ZIVIM",
+            "lat": 31.359438883333333,
+            "lon": 94.73011111666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS36",
+            "fixes": {
+                "MAFIE": "MAFIE AT OR ABOVE 2200",
+                "NADOS": "NADOS 2100 RNW 36 TRK 359 UNTIL 1000 TURN LEFT DIRECT NADOS AT OR ABOVE 2100 HOLD AT NADOS LEFT TURN INBOUNDCOURSE 359 LEGTIME 1 FAF NADOS MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ARMOR",
+                    "fixes": {
+                        "ARMOR": "ARMOR",
+                        "NADOS": "NADOS AT OR ABOVE 2100 HOLD AT NADOS LEFT TURN INBOUNDCOURSE 359 ALT 2100 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "BODTA",
+                    "fixes": {
+                        "BODTA": "BODTA",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D002L": "D002L AT OR ABOVE 2400"
+                    }
+                },
+                {
+                    "name": "LFK",
+                    "fixes": {
+                        "LFK": "LFK AT OR ABOVE 2200 TRK 352 UNTIL 8.0 FROM LFK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "DRBOB": "DRBOB AT OR ABOVE 3000",
+                "LUJMU": "LUJMU 2000 RNW 18 TRK 173 UNTIL 755",
+                "WAJGU": "WAJGU AT OR ABOVE 2400 HOLD AT WAJGU RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF LUJMU MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "LFK",
+                    "fixes": {
+                        "LFK": "LFK",
+                        "DRBOB": "DRBOB AT OR ABOVE 3000 HOLD AT DRBOB RIGHT TURN INBOUNDCOURSE 173 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PIPES",
+                    "fixes": {
+                        "PIPES": "PIPES",
+                        "DRBOB": "DRBOB AT OR ABOVE 3000 HOLD AT DRBOB RIGHT TURN INBOUNDCOURSE 173 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ZIVIM": "ZIVIM AT OR ABOVE 2400",
+                "ZARAD": "ZARAD 2100",
+                "YIRUN": "YIRUN AT OR ABOVE 840 RNW 36 TRK 359 UNTIL 543",
+                "XOWNU": "XOWNU",
+                "DRBOB": "OVERFLY DRBOB AT OR ABOVE 2400 HOLD AT DRBOB LEFT TURN INBOUNDCOURSE 353 LEGDIST 4 FAF ZARAD MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ZIVIM",
+                    "fixes": {
+                        "ZIVIM": "ZIVIM RIGHT TURN INBOUNDCOURSE 359 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

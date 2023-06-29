@@ -1,0 +1,205 @@
+{
+    "fixes": [
+        {
+            "name": "BESMA",
+            "lat": 37.77942778333333,
+            "lon": 176.75529721666666
+        },
+        {
+            "name": "CF09",
+            "lat": 37.866875,
+            "lon": 176.79427778333334
+        },
+        {
+            "name": "ELBEV",
+            "lat": 37.856486116666666,
+            "lon": 176.71525278333334
+        },
+        {
+            "name": "FF09",
+            "lat": 37.881511116666665,
+            "lon": 176.82493056666667
+        },
+        {
+            "name": "FN09",
+            "lat": 37.866619433333334,
+            "lon": 176.79374721666667
+        },
+        {
+            "name": "KEEPA",
+            "lat": 38.22184443333333,
+            "lon": 177.33993611666668
+        },
+        {
+            "name": "KIKEK",
+            "lat": 37.910241666666664,
+            "lon": 177.15816943333334
+        },
+        {
+            "name": "LAVIS",
+            "lat": 37.933536116666666,
+            "lon": 176.67513056666667
+        },
+        {
+            "name": "MA09",
+            "lat": 37.915922216666665,
+            "lon": 176.89710556666665
+        },
+        {
+            "name": "POTOP",
+            "lat": 38.064588883333336,
+            "lon": 177.07875833333333
+        },
+        {
+            "name": "REGAT",
+            "lat": 37.98744166666667,
+            "lon": 177.11850833333332
+        },
+        {
+            "name": "WK401",
+            "lat": 37.88191388333333,
+            "lon": 176.79311943333335
+        },
+        {
+            "name": "WK402",
+            "lat": 37.955922216666664,
+            "lon": 177.02094166666666
+        },
+        {
+            "name": "WK403",
+            "lat": 38.06771388333333,
+            "lon": 177.19413333333333
+        },
+        {
+            "name": "WK404",
+            "lat": 38.12120278333333,
+            "lon": 177.24464166666667
+        },
+        {
+            "name": "WK406",
+            "lat": 38.134575,
+            "lon": 177.137225
+        },
+        {
+            "name": "WKNB",
+            "lat": 37.92465833333333,
+            "lon": 176.91545556666668
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "KEPA2A",
+            "runway": "RNW 09",
+            "fixes": {
+                "KEEPA": "KEEPA",
+                "WK406": "WK406",
+                "LAVIS": "LAVIS"
+            }
+        },
+        {
+            "name": "KEPA2B",
+            "runway": "RNW 27",
+            "fixes": {
+                "KEEPA": "KEEPA",
+                "WK404": "WK404",
+                "WK403": "WK403",
+                "REGAT": "REGAT"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FN09": "FN09 2100 RNW 09",
+                "WKNB": "OVERFLY WKNB TRK 065 UNTIL 1500 TURN RIGHT DIRECT WKNB 2500 HOLD AT WKNB RIGHT TURN INBOUNDCOURSE 294 ALT 2500 LEGTIME 1 FAF FN09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "WK",
+                    "fixes": {
+                        "WKNB": "WKNB AT OR ABOVE 2500 TRK 294 UNTIL 9.3 FROM WKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD09",
+            "fixes": {
+                "CF09": "CF09 AT OR ABOVE 2100",
+                "FF09": "FF09 1540",
+                "MA09": "MA09 276 RNW 09 TRK 100 UNTIL 520 TRK 065 UNTIL 1500 TURN RIGHT DIRECT",
+                "WKNB": "WKNB 2500 HOLD AT WKNB RIGHT TURN INBOUNDCOURSE 294 ALT 2500 LEGTIME 1 FAF FF09 MAP MA09"
+            },
+            "transitions": [
+                {
+                    "name": "WK",
+                    "fixes": {
+                        "WKNB": "WKNB AT OR ABOVE 2500 TRK 294 UNTIL 9.3 FROM WKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "ELBEV": "ELBEV AT OR ABOVE 2400",
+                "WK401": "WK401 1980 RNW 09",
+                "REGAT": "REGAT 3200 FAF WK401 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "BESMA",
+                    "fixes": {
+                        "BESMA": "BESMA"
+                    }
+                },
+                {
+                    "name": "ELBEV",
+                    "fixes": {
+                        "ELBEV": "ELBEV LEFT TURN INBOUNDCOURSE 092 ALT 2400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LAVIS",
+                    "fixes": {
+                        "LAVIS": "LAVIS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "REGAT": "REGAT AT OR ABOVE 2100",
+                "WK402": "WK402 1660 RNW 27",
+                "ELBEV": "ELBEV 2400 FAF WK402 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "KIKEK",
+                    "fixes": {
+                        "KIKEK": "KIKEK"
+                    }
+                },
+                {
+                    "name": "POTOP",
+                    "fixes": {
+                        "POTOP": "POTOP"
+                    }
+                },
+                {
+                    "name": "REGAT",
+                    "fixes": {
+                        "REGAT": "REGAT RIGHT TURN INBOUNDCOURSE 252 ALT 3200 SPEED 185 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

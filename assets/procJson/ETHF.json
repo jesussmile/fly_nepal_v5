@@ -1,0 +1,137 @@
+{
+    "fixes": [
+        {
+            "name": "DER12",
+            "lat": 51.11233333333333,
+            "lon": 9.2924
+        },
+        {
+            "name": "DER30",
+            "lat": 51.11681943333333,
+            "lon": 9.279330566666667
+        },
+        {
+            "name": "FTZNB",
+            "lat": 51.08425556666667,
+            "lon": 9.415244433333333
+        },
+        {
+            "name": "GED",
+            "lat": 50.41194721666667,
+            "lon": 9.249163883333333
+        },
+        {
+            "name": "HF401",
+            "lat": 50.95078611666667,
+            "lon": 9.512883333333333
+        },
+        {
+            "name": "HF402",
+            "lat": 51.013438883333336,
+            "lon": 9.578680566666666
+        },
+        {
+            "name": "HF403",
+            "lat": 51.05271943333333,
+            "lon": 9.465358333333333
+        },
+        {
+            "name": "KEMAD",
+            "lat": 51.123611116666666,
+            "lon": 9.675
+        },
+        {
+            "name": "RANIN",
+            "lat": 50.9325,
+            "lon": 9.277222216666667
+        },
+        {
+            "name": "RW30",
+            "lat": 51.11233333333333,
+            "lon": 9.2924
+        },
+        {
+            "name": "WRB",
+            "lat": 51.50569721666667,
+            "lon": 9.110913883333334
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "HF112",
+            "rnw": "12",
+            "fixes": {
+                "DER12": "DER12 TRK 115 UNTIL 4000 HDG 115 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HF130",
+            "rnw": "30",
+            "fixes": {
+                "DER30": "DER30 TRK 295 UNTIL 4000 HDG 295 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FTZNB": "FTZNB 2200 RNW 30 TRK 287 UNTIL 2500 TURN LEFT DIRECT FTZNB 4300 SPEED 180 FAF FTZNB MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "FTZ",
+                    "fixes": {
+                        "FTZNB": "FTZNB LEFT TURN INBOUNDCOURSE 286 ALT 3100 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "GED",
+                    "fixes": {
+                        "GED": "GED",
+                        "FTZNB": "FTZNB AT OR BELOW 6000 AT OR ABOVE 4300 HOLD AT FTZNB LEFT TURN INBOUNDCOURSE 286 ALT 3100 SPEED 180 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "WRB",
+                    "fixes": {
+                        "WRB": "WRB",
+                        "FTZNB": "FTZNB AT OR BELOW 6000 AT OR ABOVE 4300 HOLD AT FTZNB LEFT TURN INBOUNDCOURSE 286 ALT 3100 SPEED 180 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "HF402": "HF402 AT OR ABOVE 3300",
+                "HF403": "HF403 3300 RNW 30 TRK 295 UNTIL 1700 TURN LEFT DIRECT",
+                "RANIN": "RANIN AT OR ABOVE 5000 FAF HF403 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "KEMAD",
+                    "fixes": {
+                        "KEMAD": "KEMAD AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "RANIN",
+                    "fixes": {
+                        "RANIN": "RANIN AT OR ABOVE 5000",
+                        "HF401": "HF401 AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        }
+    ]
+}

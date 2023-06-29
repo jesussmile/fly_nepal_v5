@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "BLADE",
+            "lat": 45.91824166666667,
+            "lon": 95.91322778333333
+        },
+        {
+            "name": "GOBLR",
+            "lat": 46.05125278333333,
+            "lon": 96.07051388333333
+        },
+        {
+            "name": "HUFFY",
+            "lat": 46.12831943333333,
+            "lon": 96.1621
+        },
+        {
+            "name": "JORNI",
+            "lat": 46.019280566666666,
+            "lon": 96.03261943333334
+        },
+        {
+            "name": "TOWED",
+            "lat": 45.84123056666667,
+            "lon": 95.82261111666666
+        },
+        {
+            "name": "YABUT",
+            "lat": 45.9478,
+            "lon": 95.94809443333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 14",
+        "RNW 29",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "HUFFY": "HUFFY AT OR ABOVE 3300",
+                "GOBLR": "GOBLR 2800",
+                "JORNI": "JORNI AT OR ABOVE 2000 RNW 14 TRK 138 UNTIL 1453",
+                "TOWED": "OVERFLY TOWED AT OR ABOVE 3300 HOLD AT TOWED RIGHT TURN INBOUNDCOURSE 319 LEGDIST 4 FAF GOBLR MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "HUFFY",
+                    "fixes": {
+                        "HUFFY": "HUFFY RIGHT TURN INBOUNDCOURSE 138 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "TOWED": "TOWED AT OR ABOVE 3300",
+                "BLADE": "BLADE 2800",
+                "YABUT": "YABUT AT OR ABOVE 2060 RNW 32 TRK 319 UNTIL 1450",
+                "HUFFY": "OVERFLY HUFFY AT OR ABOVE 3300 HOLD AT HUFFY RIGHT TURN INBOUNDCOURSE 138 LEGDIST 4 FAF BLADE MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "TOWED",
+                    "fixes": {
+                        "TOWED": "TOWED RIGHT TURN INBOUNDCOURSE 319 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

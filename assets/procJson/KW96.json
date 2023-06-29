@@ -1,0 +1,140 @@
+{
+    "fixes": [
+        {
+            "name": "COVAP",
+            "lat": 37.49990278333333,
+            "lon": 77.08498333333333
+        },
+        {
+            "name": "DUTLE",
+            "lat": 37.50870556666667,
+            "lon": 77.18908056666666
+        },
+        {
+            "name": "HCM",
+            "lat": 37.44866111666666,
+            "lon": 76.71135278333334
+        },
+        {
+            "name": "HPW",
+            "lat": 37.32886943333333,
+            "lon": 77.11594443333334
+        },
+        {
+            "name": "KINKE",
+            "lat": 37.6237,
+            "lon": 76.99182778333333
+        },
+        {
+            "name": "QUILT",
+            "lat": 37.44556943333333,
+            "lon": 77.12236111666667
+        },
+        {
+            "name": "RIC",
+            "lat": 37.502347216666664,
+            "lon": 77.320275
+        },
+        {
+            "name": "WARAT",
+            "lat": 37.497086116666665,
+            "lon": 77.05190278333333
+        },
+        {
+            "name": "WINVO",
+            "lat": 37.486238883333336,
+            "lon": 76.92554721666667
+        },
+        {
+            "name": "ZASOM",
+            "lat": 37.502727783333334,
+            "lon": 77.12551111666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "RIC": "RIC AT OR ABOVE 2100",
+                "DUTLE": "DUTLE 1200 RNW 11 TRK 106 UNTIL 521",
+                "WINVO": "OVERFLY WINVO AT OR ABOVE 2000 HOLD AT WINVO LEFT TURN INBOUNDCOURSE 286 LEGDIST 4 FAF DUTLE MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "RIC",
+                    "fixes": {
+                        "RIC": "RIC LEFT TURN INBOUNDCOURSE 096 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "WINVO": "WINVO AT OR ABOVE 2000 OVERFLY WINVO AT OR ABOVE 2000 HOLD AT WINVO LEFT TURN INBOUNDCOURSE 286 LEGDIST 4 FAF WARAT MAP RNW 29",
+                "WARAT": "WARAT 1200",
+                "COVAP": "COVAP AT OR ABOVE 640 RNW 29 TRK 286 UNTIL 900 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HCM",
+                    "fixes": {
+                        "HCM": "HCM"
+                    }
+                },
+                {
+                    "name": "HPW",
+                    "fixes": {
+                        "HPW": "HPW",
+                        "WINVO": "OVERFLY WINVO AT OR ABOVE 2000 HOLD AT WINVO LEFT TURN INBOUNDCOURSE 286 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "KINKE",
+                    "fixes": {
+                        "KINKE": "KINKE",
+                        "WINVO": "OVERFLY WINVO AT OR ABOVE 2000 HOLD AT WINVO LEFT TURN INBOUNDCOURSE 286 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA11",
+            "fixes": {
+                "HPW": "HPW AT OR ABOVE 2000 HPW AT OR ABOVE 2000 HOLD AT HPW RIGHT TURN INBOUNDCOURSE 003 LEGTIME 1 FAF QUILT MAP ZASOM",
+                "QUILT": "QUILT 1700",
+                "ZASOM": "OVERFLY ZASOM 760 RNW 11 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HPW",
+                    "fixes": {
+                        "HPW": "HPW RIGHT TURN INBOUNDCOURSE 003 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA29",
+            "fixes": {
+                "HPW": "HPW AT OR ABOVE 2000 HPW AT OR ABOVE 2000 HOLD AT HPW RIGHT TURN INBOUNDCOURSE 003 LEGTIME 1 FAF QUILT MAP ZASOM",
+                "QUILT": "QUILT 1700",
+                "ZASOM": "OVERFLY ZASOM 760 RNW 29 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HPW",
+                    "fixes": {
+                        "HPW": "HPW RIGHT TURN INBOUNDCOURSE 003 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

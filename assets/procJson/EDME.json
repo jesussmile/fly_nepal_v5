@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "BIBAG",
+            "lat": 48.39705,
+            "lon": 12.749780566666667
+        },
+        {
+            "name": "EKLEN",
+            "lat": 48.40263888333333,
+            "lon": 12.895166666666666
+        },
+        {
+            "name": "ME010",
+            "lat": 48.3993,
+            "lon": 12.825011116666667
+        },
+        {
+            "name": "ME011",
+            "lat": 48.384230566666666,
+            "lon": 12.626655566666667
+        },
+        {
+            "name": "ME014",
+            "lat": 48.43460278333333,
+            "lon": 12.799808333333333
+        },
+        {
+            "name": "ME015",
+            "lat": 48.424447216666664,
+            "lon": 12.630666666666666
+        },
+        {
+            "name": "ME020",
+            "lat": 48.46856666666667,
+            "lon": 12.876280566666667
+        },
+        {
+            "name": "ME021",
+            "lat": 48.47230556666667,
+            "lon": 12.976180566666667
+        },
+        {
+            "name": "ME022",
+            "lat": 48.405872216666666,
+            "lon": 12.981727783333334
+        },
+        {
+            "name": "ME023",
+            "lat": 48.392833333333336,
+            "lon": 12.625508333333334
+        },
+        {
+            "name": "ME024",
+            "lat": 48.43682221666667,
+            "lon": 12.640511116666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "BIBA1L",
+            "rnw": "26",
+            "fixes": {
+                "ME011": "OVERFLY ME011 TRK 256 UNTIL 3000 TURN RIGHT DIRECT",
+                "ME015": "ME015",
+                "BIBAG": "BIBAG 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BIBA1R",
+            "rnw": "08",
+            "fixes": {
+                "ME010": "OVERFLY ME010 TRK 084 UNTIL 3500 TURN LEFT DIRECT",
+                "ME014": "ME014",
+                "BIBAG": "BIBAG 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "ME022": "ME022 AT OR ABOVE 3500",
+                "EKLEN": "EKLEN 3500 RNW 26",
+                "ME023": "OVERFLY ME023 TRK 264 UNTIL 3500 TURN RIGHT DIRECT",
+                "ME024": "ME024",
+                "BIBAG": "BIBAG 5000 FAF EKLEN MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BIBAG",
+                    "fixes": {
+                        "BIBAG": "BIBAG AT OR ABOVE 5000",
+                        "ME020": "ME020 AT OR ABOVE 4700",
+                        "ME021": "ME021 AT OR ABOVE 4700"
+                    }
+                }
+            ]
+        }
+    ]
+}

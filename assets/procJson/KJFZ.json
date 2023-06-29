@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "BLF",
+            "lat": 37.306441666666665,
+            "lon": 81.19426943333333
+        },
+        {
+            "name": "CAYBA",
+            "lat": 37.022475,
+            "lon": 81.91171111666667
+        },
+        {
+            "name": "CODSU",
+            "lat": 37.04959721666667,
+            "lon": 81.83721388333333
+        },
+        {
+            "name": "DIKTE",
+            "lat": 37.123505566666665,
+            "lon": 81.63323611666667
+        },
+        {
+            "name": "JANEX",
+            "lat": 37.07995,
+            "lon": 81.75361111666666
+        },
+        {
+            "name": "LATIC",
+            "lat": 37.104897216666664,
+            "lon": 81.68471943333333
+        },
+        {
+            "name": "NAYIC",
+            "lat": 37.17309443333333,
+            "lon": 81.49560556666667
+        },
+        {
+            "name": "STACY",
+            "lat": 37.342761116666665,
+            "lon": 81.975475
+        },
+        {
+            "name": "ZOMAD",
+            "lat": 36.97205556666667,
+            "lon": 82.04974166666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC25",
+            "fixes": {
+                "DIKTE": "DIKTE AT OR ABOVE 5300",
+                "LATIC": "LATIC 4500",
+                "JANEX": "JANEX AT OR ABOVE 3340 RNW 25 TRK 252 UNTIL 3060 HDG 324 INTERCEPT RADIAL 011 TO",
+                "STACY": "STACY STACY AT OR ABOVE 6000 HOLD AT STACY RIGHT TURN INBOUNDCOURSE 011 LEGTIME 1 FAF LATIC MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "BLF",
+                    "fixes": {
+                        "BLF": "BLF",
+                        "NAYIC": "NAYIC AT OR ABOVE 5900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "ZOMAD": "ZOMAD AT OR ABOVE 5900 OVERFLY ZOMAD AT OR ABOVE 5900 HOLD AT ZOMAD RIGHT TURN INBOUNDCOURSE 071 LEGDIST 5 FAF CAYBA MAP RNW 07",
+                "CAYBA": "CAYBA 4500",
+                "CODSU": "CODSU AT OR ABOVE 3240 RNW 07 TRK 072 UNTIL 3200 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ZOMAD",
+                    "fixes": {
+                        "ZOMAD": "ZOMAD RIGHT TURN INBOUNDCOURSE 071 ALT 5900 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "NAYIC": "NAYIC AT OR ABOVE 6400 OVERFLY NAYIC AT OR ABOVE 6400 HOLD AT NAYIC RIGHT TURN INBOUNDCOURSE 252 LEGDIST 7 FAF LATIC MAP RNW 25",
+                "DIKTE": "DIKTE AT OR ABOVE 5300",
+                "LATIC": "LATIC 4500",
+                "JANEX": "JANEX AT OR ABOVE 3340 RNW 25 TRK 252 UNTIL 3800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NAYIC",
+                    "fixes": {
+                        "NAYIC": "NAYIC RIGHT TURN INBOUNDCOURSE 252 ALT 6400 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

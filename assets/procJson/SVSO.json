@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "ANKUD",
+            "lat": 7.5411222166666665,
+            "lon": 71.80238056666667
+        },
+        {
+            "name": "BISUS",
+            "lat": 7.507475,
+            "lon": 71.87920833333334
+        },
+        {
+            "name": "CHECO",
+            "lat": 7.384722216666667,
+            "lon": 71.70361111666666
+        },
+        {
+            "name": "CTN",
+            "lat": 7.516666666666667,
+            "lon": 71.44591666666666
+        },
+        {
+            "name": "D096J",
+            "lat": 7.507230566666666,
+            "lon": 71.65784443333334
+        },
+        {
+            "name": "DORMO",
+            "lat": 7.5338555666666664,
+            "lon": 71.95061666666666
+        },
+        {
+            "name": "EGEPU",
+            "lat": 7.562069433333333,
+            "lon": 72.02703056666667
+        },
+        {
+            "name": "GELMU",
+            "lat": 7.432025,
+            "lon": 71.84283056666666
+        },
+        {
+            "name": "MA30",
+            "lat": 7.541288883333333,
+            "lon": 71.96187778333334
+        },
+        {
+            "name": "PVA",
+            "lat": 7.4996944333333335,
+            "lon": 71.82547221666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "BISUS1",
+            "rnw": "12",
+            "fixes": {
+                "BISUS": "BISUS",
+                "CTN": "CTN AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD30",
+            "fixes": {
+                "PVA": "PVA 4000",
+                "MA30": "MA30 2229 RNW 30 TURN LEFT HDG 111 INTERCEPT RADIAL 142 TO",
+                "CHECO": "CHECO CHECO AT OR ABOVE 4000 SPEED 200 HOLD AT CHECO LEFT TURN INBOUNDCOURSE 322 SPEED 230 LEGTIME 1 FAF PVA MAP MA30"
+            },
+            "transitions": [
+                {
+                    "name": "CHECO",
+                    "fixes": {
+                        "CHECO": "CHECO"
+                    }
+                },
+                {
+                    "name": "CTN",
+                    "fixes": {
+                        "CTN": "CTN",
+                        "D096J": "D096J AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY30",
+            "fixes": {
+                "BISUS": "BISUS AT OR ABOVE 4000",
+                "DORMO": "DORMO 2500 RNW 30",
+                "EGEPU": "OVERFLY EGEPU TURN LEFT DIRECT",
+                "GELMU": "OVERFLY GELMU AT OR ABOVE 6000 SPEED 175 HOLD AT GELMU RIGHT TURN INBOUNDCOURSE 320 LEGDIST 4 FAF DORMO MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "CTN",
+                    "fixes": {
+                        "CTN": "CTN",
+                        "ANKUD": "ANKUD AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "GELMU",
+                    "fixes": {
+                        "GELMU": "GELMU AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ30",
+            "fixes": {
+                "BISUS": "BISUS AT OR ABOVE 4000",
+                "DORMO": "DORMO 2500 RNW 30",
+                "EGEPU": "OVERFLY EGEPU TURN LEFT DIRECT",
+                "GELMU": "OVERFLY GELMU AT OR ABOVE 6000 SPEED 175 HOLD AT GELMU RIGHT TURN INBOUNDCOURSE 320 LEGDIST 4 FAF DORMO MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "CTN",
+                    "fixes": {
+                        "CTN": "CTN",
+                        "ANKUD": "ANKUD AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "GELMU",
+                    "fixes": {
+                        "GELMU": "GELMU AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

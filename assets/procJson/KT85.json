@@ -1,0 +1,60 @@
+{
+    "fixes": [
+        {
+            "name": "CAPVO",
+            "lat": 29.121541666666666,
+            "lon": 97.05032221666667
+        },
+        {
+            "name": "COGAL",
+            "lat": 29.181716666666667,
+            "lon": 96.9843
+        },
+        {
+            "name": "COLIR",
+            "lat": 29.25163888333333,
+            "lon": 97.06619721666667
+        },
+        {
+            "name": "FOSAL",
+            "lat": 29.240836116666667,
+            "lon": 96.91701388333334
+        },
+        {
+            "name": "VCT",
+            "lat": 28.900319433333333,
+            "lon": 96.97893333333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "COGAL": "COGAL AT OR ABOVE 2000",
+                "COLIR": "COLIR 2000 RNW 31 TRK 308 UNTIL 1000 TURN RIGHT DIRECT",
+                "FOSAL": "OVERFLY FOSAL AT OR ABOVE 2000 HOLD AT FOSAL LEFT TURN INBOUNDCOURSE 117 LEGDIST 4 FAF COLIR MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "FOSAL",
+                    "fixes": {
+                        "FOSAL": "FOSAL"
+                    }
+                },
+                {
+                    "name": "VCT",
+                    "fixes": {
+                        "VCT": "VCT",
+                        "CAPVO": "CAPVO AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

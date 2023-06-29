@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "CECAK",
+            "lat": 31.273613883333333,
+            "lon": 89.84995278333334
+        },
+        {
+            "name": "HULNA",
+            "lat": 31.195291666666666,
+            "lon": 89.974
+        },
+        {
+            "name": "NATVE",
+            "lat": 31.351430566666668,
+            "lon": 89.72626111666666
+        },
+        {
+            "name": "NERAE",
+            "lat": 31.39725,
+            "lon": 89.65330278333333
+        },
+        {
+            "name": "ZOSOG",
+            "lat": 31.25563611666667,
+            "lon": 89.87846111666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "HULNA": "HULNA AT OR ABOVE 2400",
+                "ZOSOG": "ZOSOG 1500",
+                "CECAK": "CECAK AT OR ABOVE 920 RNW 05 TRK 054 UNTIL 494",
+                "NERAE": "OVERFLY NERAE AT OR ABOVE 2400 HOLD AT NERAE RIGHT TURN INBOUNDCOURSE 234 LEGDIST 4 FAF ZOSOG MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "HULNA",
+                    "fixes": {
+                        "HULNA": "HULNA RIGHT TURN INBOUNDCOURSE 054 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "NERAE": "NERAE AT OR ABOVE 2400",
+                "NATVE": "NATVE 1900 RNW 23 TRK 234 UNTIL 588",
+                "HULNA": "OVERFLY HULNA AT OR ABOVE 2400 HOLD AT HULNA RIGHT TURN INBOUNDCOURSE 054 LEGDIST 4 FAF NATVE MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "NERAE",
+                    "fixes": {
+                        "NERAE": "NERAE RIGHT TURN INBOUNDCOURSE 234 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

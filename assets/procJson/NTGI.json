@@ -1,0 +1,152 @@
+{
+    "fixes": [
+        {
+            "name": "ARIVA",
+            "lat": 14.52675,
+            "lon": 146.20891666666665
+        },
+        {
+            "name": "FF04",
+            "lat": 14.471380566666667,
+            "lon": 146.13326943333334
+        },
+        {
+            "name": "FF22",
+            "lat": 14.391744433333333,
+            "lon": 146.00800833333332
+        },
+        {
+            "name": "GI401",
+            "lat": 14.480305566666667,
+            "lon": 146.13747221666668
+        },
+        {
+            "name": "GI402",
+            "lat": 14.390111116666667,
+            "lon": 145.99894443333332
+        },
+        {
+            "name": "GI403",
+            "lat": 14.543777783333333,
+            "lon": 146.08636111666667
+        },
+        {
+            "name": "GI404",
+            "lat": 14.320305566666667,
+            "lon": 146.04075
+        },
+        {
+            "name": "MHNB",
+            "lat": 14.432972216666666,
+            "lon": 146.06213888333335
+        },
+        {
+            "name": "MIDEM",
+            "lat": 14.437083333333334,
+            "lon": 146.07105556666667
+        },
+        {
+            "name": "MINIT",
+            "lat": 14.343583333333333,
+            "lon": 145.92758333333333
+        },
+        {
+            "name": "NISUD",
+            "lat": 14.596361116666667,
+            "lon": 146.16122221666666
+        },
+        {
+            "name": "NONAS",
+            "lat": 14.274027783333333,
+            "lon": 145.97530556666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB04",
+            "fixes": {
+                "FF04": "FF04 1200 RNW 04",
+                "MHNB": "OVERFLY MHNB TRK 049 UNTIL 1500 TURN RIGHT DIRECT MHNB FAF FF04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "MH",
+                    "fixes": {
+                        "MHNB": "MHNB AT OR ABOVE 1500 TRK 248 UNTIL 4.7 FROM MHNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FF22": "FF22 1200",
+                "MHNB": "MHNB 71 RNW 22 TRK 220 UNTIL 1500 TURN RIGHT DIRECT MHNB FAF FF22 MAP MH"
+            },
+            "transitions": [
+                {
+                    "name": "MH",
+                    "fixes": {
+                        "MHNB": "MHNB AT OR ABOVE 1500 TRK 059 UNTIL 4.7 FROM MHNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "ARIVA": "ARIVA AT OR ABOVE 1500",
+                "GI401": "GI401 1500 RNW 04 TRK 044 UNTIL 800 TURN RIGHT DIRECT",
+                "GI403": "GI403",
+                "NISUD": "NISUD AT OR ABOVE 1500 FAF GI401 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "MIDEM",
+                    "fixes": {
+                        "MIDEM": "MIDEM AT OR ABOVE 1500",
+                        "GI403": "GI403",
+                        "NISUD": "NISUD AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "NISUD",
+                    "fixes": {
+                        "NISUD": "NISUD AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "MINIT": "MINIT AT OR ABOVE 1500",
+                "GI402": "GI402 1500 RNW 22 TRK 224 UNTIL 800 TURN RIGHT DIRECT",
+                "GI404": "GI404",
+                "NONAS": "NONAS AT OR ABOVE 1500 FAF GI402 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "MIDEM",
+                    "fixes": {
+                        "MIDEM": "MIDEM AT OR ABOVE 1500",
+                        "GI404": "GI404",
+                        "NONAS": "NONAS AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "NONAS",
+                    "fixes": {
+                        "NONAS": "NONAS AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        }
+    ]
+}

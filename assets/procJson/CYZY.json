@@ -1,0 +1,132 @@
+{
+    "fixes": [
+        {
+            "name": "ALRIT",
+            "lat": 55.50585556666667,
+            "lon": 123.38097221666666
+        },
+        {
+            "name": "BISLI",
+            "lat": 55.28445,
+            "lon": 123.13615
+        },
+        {
+            "name": "DAVII",
+            "lat": 54.64305556666667,
+            "lon": 122.4775
+        },
+        {
+            "name": "DUNIL",
+            "lat": 55.201708333333336,
+            "lon": 123.12128056666667
+        },
+        {
+            "name": "EMUNO",
+            "lat": 55.38823888333334,
+            "lon": 123.38381943333333
+        },
+        {
+            "name": "FREND",
+            "lat": 55.29361111666667,
+            "lon": 122.49833333333333
+        },
+        {
+            "name": "GOTAX",
+            "lat": 55.11896111666667,
+            "lon": 123.10647221666666
+        },
+        {
+            "name": "GWELF",
+            "lat": 55.16920556666667,
+            "lon": 123.067325
+        },
+        {
+            "name": "IGVUT",
+            "lat": 55.44619443333333,
+            "lon": 123.27893888333334
+        },
+        {
+            "name": "IPSAN",
+            "lat": 55.09579166666666,
+            "lon": 122.96712778333334
+        },
+        {
+            "name": "KEGDI",
+            "lat": 55.31449166666667,
+            "lon": 123.13062221666667
+        },
+        {
+            "name": "KEGPO",
+            "lat": 55.155233333333335,
+            "lon": 122.82719721666666
+        },
+        {
+            "name": "KERSU",
+            "lat": 55.374488883333335,
+            "lon": 123.15690278333334
+        },
+        {
+            "name": "XESEM",
+            "lat": 55.337186116666665,
+            "lon": 123.14055278333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "IGVUT": "IGVUT AT OR ABOVE 5600",
+                "KERSU": "KERSU 3800",
+                "XESEM": "XESEM AT OR ABOVE 2990",
+                "KEGDI": "OVERFLY KEGDI 2481 RNW 17",
+                "GWELF": "OVERFLY GWELF 6200 HOLD AT GWELF RIGHT TURN INBOUNDCOURSE 149 SPEED 200 LEGTIME 1 FAF KERSU MAP KEGDI"
+            },
+            "transitions": [
+                {
+                    "name": "ALRIT",
+                    "fixes": {
+                        "ALRIT": "ALRIT SPEED 210"
+                    }
+                },
+                {
+                    "name": "EMUNO",
+                    "fixes": {
+                        "EMUNO": "EMUNO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "GOTAX": "GOTAX AT OR ABOVE 5400",
+                "DUNIL": "DUNIL 4100",
+                "BISLI": "OVERFLY BISLI 2471 RNW 35 TURN LEFT DIRECT",
+                "IPSAN": "OVERFLY IPSAN 7900 HOLD AT IPSAN LEFT TURN INBOUNDCOURSE 311 LEGTIME 1 FAF DUNIL MAP BISLI"
+            },
+            "transitions": [
+                {
+                    "name": "DAVII",
+                    "fixes": {
+                        "DAVII": "DAVII",
+                        "IPSAN": "IPSAN AT OR ABOVE 6400"
+                    }
+                },
+                {
+                    "name": "FREND",
+                    "fixes": {
+                        "FREND": "FREND",
+                        "KEGPO": "KEGPO AT OR ABOVE 7800",
+                        "IPSAN": "IPSAN AT OR ABOVE 6200"
+                    }
+                }
+            ]
+        }
+    ]
+}

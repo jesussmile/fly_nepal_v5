@@ -1,0 +1,135 @@
+{
+    "fixes": [
+        {
+            "name": "AFOXY",
+            "lat": 34.60868333333333,
+            "lon": 120.16213056666666
+        },
+        {
+            "name": "AGIYU",
+            "lat": 34.663016666666664,
+            "lon": 120.28813888333333
+        },
+        {
+            "name": "CIKLO",
+            "lat": 34.664658333333335,
+            "lon": 120.39924721666667
+        },
+        {
+            "name": "CORCA",
+            "lat": 34.61832221666667,
+            "lon": 120.32483056666666
+        },
+        {
+            "name": "CUBAC",
+            "lat": 34.593013883333334,
+            "lon": 120.25668333333333
+        },
+        {
+            "name": "FEMEK",
+            "lat": 34.634033333333335,
+            "lon": 120.36721666666666
+        },
+        {
+            "name": "GLJ",
+            "lat": 34.95237221666667,
+            "lon": 120.52148056666667
+        },
+        {
+            "name": "GVO",
+            "lat": 34.53131943333333,
+            "lon": 120.09108888333333
+        },
+        {
+            "name": "HALAV",
+            "lat": 34.657780566666666,
+            "lon": 120.431375
+        },
+        {
+            "name": "KINCE",
+            "lat": 34.665361116666666,
+            "lon": 120.45187778333333
+        },
+        {
+            "name": "LIVAQ",
+            "lat": 34.661794433333334,
+            "lon": 120.20975556666667
+        },
+        {
+            "name": "PILCU",
+            "lat": 34.663625,
+            "lon": 120.32854166666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA07",
+            "fixes": {
+                "CORCA": "CORCA AT OR ABOVE 3300",
+                "FEMEK": "FEMEK 2700",
+                "HALAV": "HALAV AT OR ABOVE 1440",
+                "KINCE": "KINCE 1340 RNW 07 TRK 278 UNTIL 1400",
+                "GLJ": "GLJ AT OR ABOVE 3500 HOLD AT GLJ LEFT TURN INBOUNDCOURSE 120 LEGTIME 1 FAF FEMEK MAP KINCE"
+            },
+            "transitions": [
+                {
+                    "name": "GVO",
+                    "fixes": {
+                        "GVO": "GVO",
+                        "CUBAC": "CUBAC AT OR ABOVE 4300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA25",
+            "fixes": {
+                "CORCA": "CORCA AT OR ABOVE 3300",
+                "FEMEK": "FEMEK 2700",
+                "HALAV": "HALAV AT OR ABOVE 1440",
+                "KINCE": "KINCE 1340 RNW 25 TRK 278 UNTIL 1400",
+                "GLJ": "GLJ AT OR ABOVE 3500 HOLD AT GLJ LEFT TURN INBOUNDCOURSE 120 LEGTIME 1 FAF FEMEK MAP KINCE"
+            },
+            "transitions": [
+                {
+                    "name": "GVO",
+                    "fixes": {
+                        "GVO": "GVO",
+                        "CUBAC": "CUBAC AT OR ABOVE 4300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "AGIYU": "AGIYU AT OR ABOVE 3000",
+                "PILCU": "PILCU 2700",
+                "CIKLO": "CIKLO AT OR ABOVE 1320 RNW 25 TRK 256 UNTIL 490 TURN RIGHT DIRECT",
+                "LIVAQ": "OVERFLY LIVAQ AT OR ABOVE 3300 HOLD AT LIVAQ LEFT TURN INBOUNDCOURSE 256 LEGDIST 4 FAF PILCU MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "GVO",
+                    "fixes": {
+                        "GVO": "GVO",
+                        "AFOXY": "AFOXY AT OR ABOVE 4400",
+                        "LIVAQ": "LIVAQ AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "LIVAQ",
+                    "fixes": {
+                        "LIVAQ": "LIVAQ LEFT TURN INBOUNDCOURSE 256 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,161 @@
+{
+    "fixes": [
+        {
+            "name": "AY100",
+            "lat": 52.50335,
+            "lon": 13.770736116666667
+        },
+        {
+            "name": "AY110",
+            "lat": 52.55364443333333,
+            "lon": 13.699222216666668
+        },
+        {
+            "name": "AY120",
+            "lat": 52.63073333333333,
+            "lon": 13.845372216666666
+        },
+        {
+            "name": "AY121",
+            "lat": 52.73043333333333,
+            "lon": 13.886008333333333
+        },
+        {
+            "name": "AY130",
+            "lat": 52.616275,
+            "lon": 13.984827783333333
+        },
+        {
+            "name": "AY132",
+            "lat": 52.66615,
+            "lon": 13.981113883333334
+        },
+        {
+            "name": "AY231",
+            "lat": 52.75876111666667,
+            "lon": 14.111836116666666
+        },
+        {
+            "name": "AY400",
+            "lat": 52.670941666666664,
+            "lon": 14.089133333333333
+        },
+        {
+            "name": "AY411",
+            "lat": 52.52843888333334,
+            "lon": 13.818144433333334
+        },
+        {
+            "name": "AY420",
+            "lat": 52.703825,
+            "lon": 14.097622216666666
+        },
+        {
+            "name": "AY620",
+            "lat": 52.54060833333333,
+            "lon": 13.869322216666667
+        },
+        {
+            "name": "AY631",
+            "lat": 52.57398333333333,
+            "lon": 13.737725
+        },
+        {
+            "name": "AY632",
+            "lat": 52.680613883333336,
+            "lon": 13.865677783333334
+        },
+        {
+            "name": "MERWU",
+            "lat": 52.54151388333333,
+            "lon": 13.842883333333333
+        },
+        {
+            "name": "OCHUS",
+            "lat": 52.632927783333336,
+            "lon": 14.016558333333334
+        },
+        {
+            "name": "RENKI",
+            "lat": 52.91484166666667,
+            "lon": 13.961677783333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "RENK2A",
+            "rnw": "05",
+            "fixes": {
+                "AY130": "AY130",
+                "AY132": "AY132 AT OR BELOW 2000",
+                "RENKI": "RENKI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RENK2B",
+            "rnw": "23",
+            "fixes": {
+                "AY620": "OVERFLY AY620 TURN RIGHT DIRECT",
+                "AY631": "AY631 TURN RIGHT DIRECT",
+                "AY120": "AY120 AT OR BELOW 2000",
+                "AY632": "AY632 AT OR BELOW 3000",
+                "RENKI": "RENKI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "AY100": "AY100 AT OR ABOVE 1500",
+                "MERWU": "MERWU 1500 RNW 05",
+                "AY130": "AY130",
+                "AY132": "AY132 AT OR BELOW 2000",
+                "RENKI": "RENKI 4000 FAF MERWU MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "RENKI",
+                    "fixes": {
+                        "RENKI": "RENKI AT OR ABOVE 4000",
+                        "AY121": "AY121 AT OR ABOVE 3000",
+                        "AY632": "AY632 AT OR BELOW 3000",
+                        "AY120": "AY120 2000",
+                        "AY110": "AY110 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "AY400": "AY400 2000",
+                "OCHUS": "OCHUS 2000 RNW 23",
+                "AY411": "AY411",
+                "AY631": "AY631",
+                "AY120": "AY120 AT OR BELOW 2000",
+                "AY632": "AY632 AT OR BELOW 3000",
+                "RENKI": "RENKI 4000 FAF OCHUS MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "RENKI",
+                    "fixes": {
+                        "RENKI": "RENKI AT OR ABOVE 4000",
+                        "AY231": "AY231 AT OR ABOVE 3000",
+                        "AY420": "AY420 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

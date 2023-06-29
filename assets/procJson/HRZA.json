@@ -1,0 +1,82 @@
+{
+    "fixes": [
+        {
+            "name": "APNEV",
+            "lat": 2.2792222166666667,
+            "lon": 29.149433333333334
+        },
+        {
+            "name": "EGTOG",
+            "lat": 2.4398583333333335,
+            "lon": 28.914683333333333
+        },
+        {
+            "name": "EPNUN",
+            "lat": 2.5227638833333335,
+            "lon": 28.889891666666667
+        },
+        {
+            "name": "ERBUB",
+            "lat": 2.5850972166666666,
+            "lon": 28.961352783333332
+        },
+        {
+            "name": "ESRIT",
+            "lat": 2.3783416666666666,
+            "lon": 28.933080566666668
+        },
+        {
+            "name": "IF20",
+            "lat": 2.3213777833333333,
+            "lon": 28.968113883333334
+        },
+        {
+            "name": "KAROS",
+            "lat": 2.198136116666667,
+            "lon": 29.265886116666668
+        },
+        {
+            "name": "XALNO",
+            "lat": 2.44175,
+            "lon": 29.049497216666666
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "KARO2D",
+            "rnw": "02",
+            "fixes": {
+                "KAROS": "KAROS AT OR ABOVE 11000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "ESRIT": "ESRIT 6800",
+                "EGTOG": "OVERFLY EGTOG 5579 RNW 20",
+                "EPNUN": "OVERFLY EPNUN",
+                "ERBUB": "OVERFLY ERBUB AT OR BELOW 7900",
+                "XALNO": "XALNO SPEED 180",
+                "APNEV": "APNEV 11000 FAF ESRIT MAP EGTOG"
+            },
+            "transitions": [
+                {
+                    "name": "APNEV",
+                    "fixes": {
+                        "APNEV": "APNEV AT OR ABOVE 11000 SPEED 210",
+                        "IF20": "IF20 AT OR BELOW 8000 AT OR ABOVE 6900"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "BIRRM",
+            "lat": 40.813238883333334,
+            "lon": 91.97799443333334
+        },
+        {
+            "name": "KYHOM",
+            "lat": 40.962011116666666,
+            "lon": 91.97929166666667
+        },
+        {
+            "name": "PANSE",
+            "lat": 41.019361116666666,
+            "lon": 91.97979166666667
+        },
+        {
+            "name": "RUBIO",
+            "lat": 41.30027221666667,
+            "lon": 91.98226111666666
+        },
+        {
+            "name": "UTKUW",
+            "lat": 41.15155,
+            "lon": 91.98095
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 18",
+        "RNW 26",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "RUBIO": "RUBIO AT OR ABOVE 3000",
+                "UTKUW": "UTKUW 2500 RNW 18 TRK 180 UNTIL 1001",
+                "BIRRM": "OVERFLY BIRRM AT OR ABOVE 3000 HOLD AT BIRRM RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF UTKUW MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "RUBIO",
+                    "fixes": {
+                        "RUBIO": "RUBIO RIGHT TURN INBOUNDCOURSE 180 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "BIRRM": "BIRRM AT OR ABOVE 3000",
+                "KYHOM": "KYHOM 2500",
+                "PANSE": "PANSE AT OR ABOVE 1400 RNW 36 TRK 000 UNTIL 999",
+                "RUBIO": "OVERFLY RUBIO AT OR ABOVE 3000 HOLD AT RUBIO RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF KYHOM MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "BIRRM",
+                    "fixes": {
+                        "BIRRM": "BIRRM RIGHT TURN INBOUNDCOURSE 000 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

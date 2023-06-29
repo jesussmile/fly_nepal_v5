@@ -1,0 +1,161 @@
+{
+    "fixes": [
+        {
+            "name": "ATR",
+            "lat": 38.809811116666665,
+            "lon": 75.21132221666667
+        },
+        {
+            "name": "HUVOX",
+            "lat": 38.854625,
+            "lon": 75.2236
+        },
+        {
+            "name": "OTBAE",
+            "lat": 38.72787221666667,
+            "lon": 75.3146
+        },
+        {
+            "name": "SABER",
+            "lat": 38.599913883333336,
+            "lon": 75.43424166666667
+        },
+        {
+            "name": "UNBLE",
+            "lat": 38.756711116666665,
+            "lon": 75.30479166666667
+        },
+        {
+            "name": "WEBIX",
+            "lat": 38.53935,
+            "lon": 75.5403
+        },
+        {
+            "name": "WONPA",
+            "lat": 38.61188611666667,
+            "lon": 75.45242221666666
+        },
+        {
+            "name": "ZARVI",
+            "lat": 38.50186111666667,
+            "lon": 75.51483888333334
+        },
+        {
+            "name": "ZEPTU",
+            "lat": 38.68357221666667,
+            "lon": 75.36486111666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 10",
+        "RNW 22",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "GED1",
+            "rnw": "08",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 04",
+                    "fixes": {
+                        "RNW 04": "RNW 04 HDG 045 UNTIL 460",
+                        "ATR": "ATR"
+                    }
+                },
+                {
+                    "rwy": "RNW 10",
+                    "fixes": {
+                        "RNW 10": "RNW 10 HDG 102 UNTIL 460",
+                        "ATR": "ATR"
+                    }
+                },
+                {
+                    "rwy": "RNW 22",
+                    "fixes": {
+                        "RNW 22": "RNW 22 HDG 225 UNTIL 460 TURN RIGHT DIRECT",
+                        "ATR": "ATR"
+                    }
+                },
+                {
+                    "rwy": "RNW 28",
+                    "fixes": {
+                        "RNW 28": "RNW 28 HDG 282 UNTIL 460 TURN RIGHT DIRECT",
+                        "ATR": "ATR"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD04",
+            "fixes": {
+                "WEBIX": "WEBIX AT OR ABOVE 2100",
+                "WONPA": "WONPA 2000",
+                "ZEPTU": "OVERFLY ZEPTU 94 RNW 04",
+                "ATR": "ATR AT OR ABOVE 2100 HOLD AT ATR RIGHT TURN INBOUNDCOURSE 233 LEGTIME 1 FAF WONPA MAP ZEPTU"
+            },
+            "transitions": [
+                {
+                    "name": "ATR",
+                    "fixes": {
+                        "ATR": "ATR",
+                        "WEBIX": "WEBIX AT OR ABOVE 2100 HOLD AT WEBIX LEFT TURN INBOUNDCOURSE 053 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "ZARVI": "ZARVI AT OR ABOVE 2000",
+                "SABER": "SABER 2000 RNW 04 TRK 045 UNTIL 301",
+                "HUVOX": "OVERFLY HUVOX AT OR ABOVE 2000 HOLD AT HUVOX RIGHT TURN INBOUNDCOURSE 225 LEGDIST 4 FAF SABER MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "ZARVI",
+                    "fixes": {
+                        "ZARVI": "ZARVI RIGHT TURN INBOUNDCOURSE 045 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "HUVOX": "HUVOX AT OR ABOVE 2000",
+                "UNBLE": "UNBLE 1500 RNW 22 TRK 225 UNTIL 321",
+                "ZARVI": "OVERFLY ZARVI AT OR ABOVE 2000 HOLD AT ZARVI RIGHT TURN INBOUNDCOURSE 045 LEGDIST 4 FAF UNBLE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "HUVOX",
+                    "fixes": {
+                        "HUVOX": "HUVOX RIGHT TURN INBOUNDCOURSE 225 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR22",
+            "fixes": {
+                "ATR": "ATR 3000 ATR AT OR ABOVE 3000 HOLD AT ATR RIGHT TURN INBOUNDCOURSE 213 LEGTIME 1 FAF ATR MAP RNW 22",
+                "OTBAE": "OTBAE AT OR ABOVE 680 RNW 22 TRK 234 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ATR",
+                    "fixes": {
+                        "ATR": "ATR RIGHT TURN INBOUNDCOURSE 213 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,217 @@
+{
+    "fixes": [
+        {
+            "name": "30VOR",
+            "lat": 25.327611116666667,
+            "lon": 49.474333333333334
+        },
+        {
+            "name": "AH400",
+            "lat": 25.085583333333332,
+            "lon": 49.4305
+        },
+        {
+            "name": "CD16",
+            "lat": 25.542305566666666,
+            "lon": 49.43125
+        },
+        {
+            "name": "CD34",
+            "lat": 25.122861116666666,
+            "lon": 49.55558333333333
+        },
+        {
+            "name": "CF34",
+            "lat": 25.031083333333335,
+            "lon": 49.56075
+        },
+        {
+            "name": "D088P",
+            "lat": 25.274555566666667,
+            "lon": 49.778166666666664
+        },
+        {
+            "name": "D088T",
+            "lat": 25.273416666666666,
+            "lon": 49.846611116666665
+        },
+        {
+            "name": "D155E",
+            "lat": 25.209377783333334,
+            "lon": 49.515005566666666
+        },
+        {
+            "name": "D161I",
+            "lat": 25.131277783333335,
+            "lon": 49.5306
+        },
+        {
+            "name": "D262P",
+            "lat": 25.25255556666667,
+            "lon": 49.191305566666664
+        },
+        {
+            "name": "D347J",
+            "lat": 25.443777783333335,
+            "lon": 49.452052783333336
+        },
+        {
+            "name": "FD16",
+            "lat": 25.405083333333334,
+            "lon": 49.45880556666667
+        },
+        {
+            "name": "FD34",
+            "lat": 25.200027783333333,
+            "lon": 49.520277783333334
+        },
+        {
+            "name": "FF34",
+            "lat": 25.192472216666665,
+            "lon": 49.51288888333333
+        },
+        {
+            "name": "HSA",
+            "lat": 25.279138883333335,
+            "lon": 49.48402778333333
+        },
+        {
+            "name": "KIREN",
+            "lat": 25.246277783333333,
+            "lon": 49.12322221666667
+        },
+        {
+            "name": "ML34",
+            "lat": 25.266861116666668,
+            "lon": 49.490777783333336
+        },
+        {
+            "name": "ODBAX",
+            "lat": 25.111777783333334,
+            "lon": 49.536833333333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD16",
+            "fixes": {
+                "CD16": "CD16 AT OR ABOVE 3700",
+                "FD16": "FD16 2700",
+                "30VOR": "30VOR AT OR ABOVE 1200 RNW 16",
+                "HSA": "HSA TRK 167 UNTIL 2000 TURN RIGHT DIRECT HSA 2500 HOLD AT HSA LEFT TURN INBOUNDCOURSE 347 ALT 2500 SPEED 230 LEGTIME 1 FAF FD16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "D088T",
+                    "fixes": {
+                        "D088T": "D088T TRK 268 UNTIL 18.0 FROM",
+                        "HSA": "HSA",
+                        "D088P": "D088P AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "HSA",
+                    "fixes": {
+                        "HSA": "HSA",
+                        "D347J": "D347J TRK 302 UNTIL 6.0 FROM D347J"
+                    }
+                },
+                {
+                    "name": "KIREN",
+                    "fixes": {
+                        "KIREN": "KIREN TRK 081 UNTIL 18.0 FROM",
+                        "HSA": "HSA",
+                        "D262P": "D262P AT OR ABOVE 3700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD34",
+            "fixes": {
+                "CD34": "CD34 AT OR ABOVE 2500",
+                "FD34": "FD34 2100 RNW 34",
+                "HSA": "HSA TRK 335 UNTIL 2000 TURN RIGHT DIRECT HSA 2500 HOLD AT HSA LEFT TURN INBOUNDCOURSE 155 ALT 2500 SPEED 230 LEGTIME 1 FAF FD34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "HSA",
+                    "fixes": {
+                        "HSA": "HSA",
+                        "D155E": "D155E TRK 110 UNTIL 5.6 FROM D155E"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY34",
+            "fixes": {
+                "ODBAX": "ODBAX AT OR ABOVE 2500 ODBAX AT OR ABOVE 2500 HOLD AT ODBAX RIGHT TURN INBOUNDCOURSE 342 ALT 2500 SPEED 230 LEGTIME 1 FAF FF34 MAP RNW 34",
+                "FF34": "FF34 2200 RNW 34 HDG 342 UNTIL 1600 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HSA",
+                    "fixes": {
+                        "HSA": "HSA",
+                        "ODBAX": "OVERFLY ODBAX AT OR ABOVE 2500 HOLD AT ODBAX RIGHT TURN INBOUNDCOURSE 342 ALT 2500 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "KIREN",
+                    "fixes": {
+                        "KIREN": "KIREN",
+                        "AH400": "AH400 AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "ODBAX",
+                    "fixes": {
+                        "ODBAX": "ODBAX RIGHT TURN INBOUNDCOURSE 342 ALT 2500 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ34",
+            "fixes": {
+                "CF34": "CF34 AT OR ABOVE 2500",
+                "FF34": "FF34 2200 RNW 34 HDG 342 UNTIL 1600 TURN RIGHT DIRECT",
+                "HSA": "HSA 2500 HOLD AT HSA LEFT TURN INBOUNDCOURSE 161 ALT 2500 SPEED 230 LEGTIME 1 FAF FF34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "HSA",
+                    "fixes": {
+                        "HSA": "HSA",
+                        "D161I": "D161I TRK 116 UNTIL 6.2 FROM D161I"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC34",
+            "fixes": {
+                "CF34": "CF34 AT OR ABOVE 2500",
+                "FF34": "FF34 2200",
+                "ML34": "ML34 733 RNW 34 HDG 342 UNTIL 1600 TURN RIGHT DIRECT",
+                "HSA": "HSA 2500 HOLD AT HSA LEFT TURN INBOUNDCOURSE 161 ALT 2500 SPEED 230 LEGTIME 1 FAF FF34 MAP ML34"
+            },
+            "transitions": [
+                {
+                    "name": "HSA",
+                    "fixes": {
+                        "HSA": "HSA",
+                        "D161I": "D161I TRK 116 UNTIL 6.2 FROM D161I"
+                    }
+                }
+            ]
+        }
+    ]
+}

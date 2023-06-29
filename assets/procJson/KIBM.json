@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "BICAR",
+            "lat": 41.17352221666667,
+            "lon": 103.60461388333333
+        },
+        {
+            "name": "FOVLO",
+            "lat": 41.213316666666664,
+            "lon": 103.80454721666666
+        },
+        {
+            "name": "GAMAC",
+            "lat": 41.164980566666664,
+            "lon": 103.56196666666666
+        },
+        {
+            "name": "HIMAV",
+            "lat": 41.240952783333334,
+            "lon": 103.94462221666667
+        },
+        {
+            "name": "INGIU",
+            "lat": 41.13193056666667,
+            "lon": 103.39779721666666
+        },
+        {
+            "name": "LAGOZ",
+            "lat": 41.244694433333336,
+            "lon": 103.35784721666667
+        },
+        {
+            "name": "MEILE",
+            "lat": 41.68813888333333,
+            "lon": 103.35178333333333
+        },
+        {
+            "name": "OMBIE",
+            "lat": 41.37982221666667,
+            "lon": 103.97713333333333
+        },
+        {
+            "name": "PIETY",
+            "lat": 41.16806388333333,
+            "lon": 104.04800556666666
+        },
+        {
+            "name": "SNY",
+            "lat": 41.09668333333333,
+            "lon": 102.98299166666666
+        },
+        {
+            "name": "YOGFY",
+            "lat": 41.19956943333333,
+            "lon": 103.73523611666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "HIMAV": "HIMAV AT OR ABOVE 7000",
+                "FOVLO": "FOVLO 6700",
+                "YOGFY": "YOGFY AT OR ABOVE 5660 RNW 10 TRK 095 UNTIL 5240",
+                "INGIU": "OVERFLY INGIU AT OR ABOVE 6500 HOLD AT INGIU RIGHT TURN INBOUNDCOURSE 275 LEGDIST 7 FAF FOVLO MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "MEILE",
+                    "fixes": {
+                        "MEILE": "MEILE",
+                        "HIMAV": "OVERFLY HIMAV AT OR ABOVE 7500 HOLD AT HIMAV RIGHT TURN INBOUNDCOURSE 095 ALT 7000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "OMBIE",
+                    "fixes": {
+                        "OMBIE": "OMBIE"
+                    }
+                },
+                {
+                    "name": "PIETY",
+                    "fixes": {
+                        "PIETY": "PIETY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "INGIU": "INGIU AT OR ABOVE 6500",
+                "GAMAC": "GAMAC 6500",
+                "BICAR": "BICAR AT OR ABOVE 5860 RNW 28 TRK 275 UNTIL 5158",
+                "HIMAV": "OVERFLY HIMAV AT OR ABOVE 7000 HOLD AT HIMAV RIGHT TURN INBOUNDCOURSE 095 LEGDIST 7 FAF GAMAC MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "MEILE",
+                    "fixes": {
+                        "MEILE": "MEILE",
+                        "LAGOZ": "LAGOZ AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "PIETY",
+                    "fixes": {
+                        "PIETY": "PIETY",
+                        "INGIU": "OVERFLY INGIU AT OR ABOVE 7600 HOLD AT INGIU RIGHT TURN INBOUNDCOURSE 275 ALT 6500 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "SNY",
+                    "fixes": {
+                        "SNY": "SNY"
+                    }
+                }
+            ]
+        }
+    ]
+}

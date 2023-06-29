@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "AXSIS",
+            "lat": 30.945741666666667,
+            "lon": 88.07574443333333
+        },
+        {
+            "name": "BRATT",
+            "lat": 30.769411116666667,
+            "lon": 87.67590556666667
+        },
+        {
+            "name": "GIKEY",
+            "lat": 30.894530566666667,
+            "lon": 88.30491666666667
+        },
+        {
+            "name": "LAVKE",
+            "lat": 30.876533333333334,
+            "lon": 87.70825833333333
+        },
+        {
+            "name": "NINCI",
+            "lat": 30.867644433333332,
+            "lon": 87.86855556666667
+        },
+        {
+            "name": "OTZOT",
+            "lat": 30.863938883333333,
+            "lon": 87.91891666666666
+        },
+        {
+            "name": "PENSI",
+            "lat": 30.793244433333335,
+            "lon": 87.27375556666667
+        },
+        {
+            "name": "RERME",
+            "lat": 30.883044433333332,
+            "lon": 87.5885
+        },
+        {
+            "name": "STETS",
+            "lat": 30.996727783333334,
+            "lon": 87.73910833333333
+        },
+        {
+            "name": "UMMAP",
+            "lat": 30.854761116666666,
+            "lon": 88.05997221666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "UMMAP": "UMMAP AT OR ABOVE 2000 OVERFLY UMMAP AT OR ABOVE 2000 HOLD AT UMMAP RIGHT TURN INBOUNDCOURSE 086 LEGDIST 4 FAF OTZOT MAP RNW 08",
+                "OTZOT": "OTZOT 2000 RNW 08 TRK 086 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GIKEY",
+                    "fixes": {
+                        "GIKEY": "GIKEY"
+                    }
+                },
+                {
+                    "name": "UMMAP",
+                    "fixes": {
+                        "UMMAP": "UMMAP RIGHT TURN INBOUNDCOURSE 086 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "RERME": "RERME AT OR ABOVE 3000",
+                "LAVKE": "LAVKE 2000 RNW 26 TRK 266 UNTIL 648",
+                "NINCI": "NINCI",
+                "AXSIS": "OVERFLY AXSIS AT OR ABOVE 2000 HOLD AT AXSIS RIGHT TURN INBOUNDCOURSE 228 LEGDIST 4 FAF LAVKE MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "AXSIS",
+                    "fixes": {
+                        "AXSIS": "AXSIS",
+                        "RERME": "OVERFLY RERME AT OR ABOVE 3000 HOLD AT RERME RIGHT TURN INBOUNDCOURSE 266 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "BRATT",
+                    "fixes": {
+                        "BRATT": "BRATT",
+                        "RERME": "OVERFLY RERME AT OR ABOVE 3000 HOLD AT RERME RIGHT TURN INBOUNDCOURSE 266 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PENSI",
+                    "fixes": {
+                        "PENSI": "PENSI"
+                    }
+                },
+                {
+                    "name": "STETS",
+                    "fixes": {
+                        "STETS": "STETS",
+                        "RERME": "OVERFLY RERME AT OR ABOVE 3000 HOLD AT RERME RIGHT TURN INBOUNDCOURSE 266 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

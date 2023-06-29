@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "BSO",
+            "lat": 51.61464443333333,
+            "lon": 1.0993138833333334
+        },
+        {
+            "name": "CF19",
+            "lat": 51.753405566666665,
+            "lon": 1.0652027833333333
+        },
+        {
+            "name": "CPT",
+            "lat": 51.49157221666667,
+            "lon": 1.2196916666666666
+        },
+        {
+            "name": "FF19",
+            "lat": 51.720425,
+            "lon": 1.072525
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [
+        {
+            "name": "CPT01",
+            "rnw": "01",
+            "fixes": {
+                "BSO": "BSO TRK 008 UNTIL 2210 TURN LEFT HDG 170 INTERCEPT RADIAL 200 TO",
+                "CPT": "CPT 4000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "CPT19",
+            "rnw": "19",
+            "fixes": {
+                "BSO": "BSO TRK 188 UNTIL 2210 TURN RIGHT DIRECT",
+                "CPT": "CPT 4000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VAL01",
+            "rnw": "01",
+            "fixes": {
+                "BSO": "BSO TRK 008 UNTIL 2210 HDG 258 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VAL19",
+            "rnw": "19",
+            "fixes": {
+                "BSO": "BSO TRK 188 UNTIL 2210 HDG 298 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS19",
+            "fixes": {
+                "CF19": "CF19 AT OR ABOVE 2110",
+                "FF19": "FF19 2110 RNW 19 TRK 188 UNTIL 2210 HDG 188 VECTORS FAF FF19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "FF19",
+                    "fixes": {
+                        "FF19": "FF19 AT OR ABOVE 2710 SPEED 200 TRK 053 UNTIL 4.3 FROM FF19"
+                    }
+                }
+            ]
+        }
+    ]
+}

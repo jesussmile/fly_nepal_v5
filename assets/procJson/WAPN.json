@@ -1,0 +1,92 @@
+{
+    "fixes": [
+        {
+            "name": "PN401",
+            "lat": 3.0768888833333334,
+            "lon": 126.83561111666667
+        },
+        {
+            "name": "PN402",
+            "lat": 3.114,
+            "lon": 126.891
+        },
+        {
+            "name": "PN403",
+            "lat": 3.1355,
+            "lon": 126.95411111666667
+        },
+        {
+            "name": "PN601",
+            "lat": 3.1885,
+            "lon": 127.10975
+        },
+        {
+            "name": "PN602",
+            "lat": 3.1723333333333334,
+            "lon": 127.06241666666666
+        },
+        {
+            "name": "PN603",
+            "lat": 3.06225,
+            "lon": 126.99922221666667
+        },
+        {
+            "name": "PN604",
+            "lat": 3.1306944333333333,
+            "lon": 127.19958333333334
+        },
+        {
+            "name": "TEKIM",
+            "lat": 3.209972216666667,
+            "lon": 127.17286111666667
+        },
+        {
+            "name": "TUMDO",
+            "lat": 3.0178888833333333,
+            "lon": 126.8215
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "PN401": "PN401 AT OR ABOVE 2300",
+                "PN402": "PN402 1600",
+                "PN403": "OVERFLY PN403 364 RNW 11 TURN LEFT DIRECT",
+                "TUMDO": "TUMDO AT OR ABOVE 3000 HOLD AT TUMDO LEFT TURN INBOUNDCOURSE 166 ALT 3000 LEGTIME 1 FAF PN402 MAP PN403"
+            },
+            "transitions": [
+                {
+                    "name": "TUMDO",
+                    "fixes": {
+                        "TUMDO": "TUMDO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "PN601": "PN601 AT OR ABOVE 2300",
+                "PN602": "PN602 1600 RNW 29 TURN RIGHT DIRECT",
+                "PN603": "PN603 AT OR ABOVE 1700",
+                "PN604": "PN604",
+                "TEKIM": "TEKIM AT OR ABOVE 3000 HOLD AT TEKIM RIGHT TURN INBOUNDCOURSE 288 ALT 3000 LEGTIME 1 FAF PN602 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "TEKIM",
+                    "fixes": {
+                        "TEKIM": "TEKIM AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

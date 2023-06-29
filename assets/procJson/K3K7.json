@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "CIBOT",
+            "lat": 38.35297778333333,
+            "lon": 101.35073056666667
+        },
+        {
+            "name": "FITAB",
+            "lat": 38.152763883333336,
+            "lon": 101.35046388333333
+        },
+        {
+            "name": "HEAPY",
+            "lat": 38.41787778333333,
+            "lon": 101.35081666666666
+        },
+        {
+            "name": "JESET",
+            "lat": 38.561813883333336,
+            "lon": 101.35099443333333
+        },
+        {
+            "name": "KEENA",
+            "lat": 38.1524,
+            "lon": 101.56175833333333
+        },
+        {
+            "name": "OXTER",
+            "lat": 38.76201388333333,
+            "lon": 101.35125
+        },
+        {
+            "name": "PAVLE",
+            "lat": 38.76164443333333,
+            "lon": 101.56432778333334
+        },
+        {
+            "name": "SELLE",
+            "lat": 38.761994433333335,
+            "lon": 101.13816943333333
+        },
+        {
+            "name": "YECUS",
+            "lat": 38.15275,
+            "lon": 101.13916943333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "OXTER": "OXTER AT OR ABOVE 9000",
+                "JESET": "JESET 5200 RNW 17 TRK 175 UNTIL 3583",
+                "FITAB": "OVERFLY FITAB AT OR ABOVE 9000 HOLD AT FITAB RIGHT TURN INBOUNDCOURSE 355 ALT 9000 LEGDIST 7 FAF JESET MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "OXTER",
+                    "fixes": {
+                        "OXTER": "OXTER RIGHT TURN INBOUNDCOURSE 175 ALT 9000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "PAVLE",
+                    "fixes": {
+                        "PAVLE": "PAVLE"
+                    }
+                },
+                {
+                    "name": "SELLE",
+                    "fixes": {
+                        "SELLE": "SELLE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FITAB": "FITAB AT OR ABOVE 9000",
+                "CIBOT": "CIBOT 5200",
+                "HEAPY": "HEAPY AT OR ABOVE 3960 RNW 35 TRK 355 UNTIL 3580",
+                "OXTER": "OVERFLY OXTER AT OR ABOVE 9000 HOLD AT OXTER RIGHT TURN INBOUNDCOURSE 175 ALT 9000 LEGDIST 7 FAF CIBOT MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "FITAB",
+                    "fixes": {
+                        "FITAB": "FITAB RIGHT TURN INBOUNDCOURSE 355 ALT 9000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "KEENA",
+                    "fixes": {
+                        "KEENA": "KEENA"
+                    }
+                },
+                {
+                    "name": "YECUS",
+                    "fixes": {
+                        "YECUS": "YECUS"
+                    }
+                }
+            ]
+        }
+    ]
+}

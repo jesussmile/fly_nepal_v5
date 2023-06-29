@@ -1,0 +1,189 @@
+{
+    "fixes": [
+        {
+            "name": "D074O",
+            "lat": 63.91531388333333,
+            "lon": 16.133719433333333
+        },
+        {
+            "name": "DENOK",
+            "lat": 64.12910833333333,
+            "lon": 15.140647216666666
+        },
+        {
+            "name": "ELGOS",
+            "lat": 64.634875,
+            "lon": 15.902397216666667
+        },
+        {
+            "name": "ELTEK",
+            "lat": 64.11504166666667,
+            "lon": 14.891822216666666
+        },
+        {
+            "name": "FN36",
+            "lat": 64.195425,
+            "lon": 15.174402783333333
+        },
+        {
+            "name": "HN18M",
+            "lat": 64.32043056666667,
+            "lon": 15.260805566666667
+        },
+        {
+            "name": "HN36F",
+            "lat": 64.19531388333333,
+            "lon": 15.174977783333333
+        },
+        {
+            "name": "HN36M",
+            "lat": 64.27778611666666,
+            "lon": 15.217980566666666
+        },
+        {
+            "name": "HN401",
+            "lat": 64.49568333333333,
+            "lon": 15.615802783333333
+        },
+        {
+            "name": "HN402",
+            "lat": 64.458275,
+            "lon": 15.539469433333334
+        },
+        {
+            "name": "HN501",
+            "lat": 64.06428888333333,
+            "lon": 15.107197216666666
+        },
+        {
+            "name": "HNF18",
+            "lat": 64.40968333333333,
+            "lon": 15.44075
+        },
+        {
+            "name": "HNI18",
+            "lat": 64.57251666666667,
+            "lon": 15.7735
+        },
+        {
+            "name": "HNNB",
+            "lat": 64.26908333333333,
+            "lon": 15.213416666666667
+        },
+        {
+            "name": "IDNIR",
+            "lat": 64.62752221666666,
+            "lon": 15.628575
+        },
+        {
+            "name": "ING",
+            "lat": 63.803055566666664,
+            "lon": 16.638055566666665
+        },
+        {
+            "name": "INGOG",
+            "lat": 64.09301943333334,
+            "lon": 15.311758333333334
+        },
+        {
+            "name": "TADOD",
+            "lat": 64.51736666666666,
+            "lon": 15.917838883333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB36",
+            "fixes": {
+                "FN36": "FN36 1900",
+                "HNNB": "HNNB 441 RNW 36 HDG 176 UNTIL 3800 TURN LEFT DIRECT HNNB 3800 SPEED 130 HOLD AT HNNB LEFT TURN INBOUNDCOURSE 356 LEGTIME 1 FAF FN36 MAP HN"
+            },
+            "transitions": [
+                {
+                    "name": "HN",
+                    "fixes": {
+                        "HNNB": "HNNB AT OR ABOVE 3800 TRK 191 UNTIL 7.5 FROM HNNB"
+                    }
+                },
+                {
+                    "name": "ING",
+                    "fixes": {
+                        "ING": "ING",
+                        "D074O": "D074O AT OR ABOVE 6400",
+                        "INGOG": "INGOG AT OR ABOVE 4400",
+                        "DENOK": "DENOK AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "HNI18": "HNI18 AT OR ABOVE 7100",
+                "HN401": "HN401 AT OR ABOVE 5100",
+                "HN402": "HN402 AT OR ABOVE 4000",
+                "HNF18": "HNF18 2900",
+                "HN18M": "OVERFLY HN18M 521 RNW 18",
+                "DENOK": "DENOK DENOK 2500 HOLD AT DENOK RIGHT TURN INBOUNDCOURSE 356 ALT 2500 LEGTIME 1 FAF HNF18 MAP HN18M",
+                "HN501": "OVERFLY HN501 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ELGOS",
+                    "fixes": {
+                        "ELGOS": "ELGOS"
+                    }
+                },
+                {
+                    "name": "IDNIR",
+                    "fixes": {
+                        "IDNIR": "IDNIR"
+                    }
+                },
+                {
+                    "name": "TADOD",
+                    "fixes": {
+                        "TADOD": "TADOD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HN36F": "HN36F 1900",
+                "HN36M": "OVERFLY HN36M 280 SPEED 130 RNW 36 TURN LEFT DIRECT",
+                "DENOK": "DENOK SPEED 130 DENOK 2500 HOLD AT DENOK RIGHT TURN INBOUNDCOURSE 356 ALT 2500 LEGTIME 1 FAF HN36F MAP HN36M",
+                "HN501": "OVERFLY HN501 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DENOK",
+                    "fixes": {
+                        "DENOK": "DENOK AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "ELTEK",
+                    "fixes": {
+                        "ELTEK": "ELTEK AT OR ABOVE 4900",
+                        "DENOK": "DENOK AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "INGOG",
+                    "fixes": {
+                        "INGOG": "INGOG AT OR ABOVE 4500",
+                        "DENOK": "DENOK AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

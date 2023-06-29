@@ -1,0 +1,143 @@
+{
+    "fixes": [
+        {
+            "name": "CD35",
+            "lat": 8.196044433333334,
+            "lon": 80.08530833333333
+        },
+        {
+            "name": "CF35",
+            "lat": 8.210958333333334,
+            "lon": 80.08165833333334
+        },
+        {
+            "name": "D338F",
+            "lat": 8.465833333333332,
+            "lon": 80.17110833333334
+        },
+        {
+            "name": "ETIKA",
+            "lat": 8.289611116666666,
+            "lon": 80.10397221666666
+        },
+        {
+            "name": "FS35",
+            "lat": 8.263286116666666,
+            "lon": 80.10085556666667
+        },
+        {
+            "name": "GELSA",
+            "lat": 8.060583333333334,
+            "lon": 80.24180556666667
+        },
+        {
+            "name": "MARLU",
+            "lat": 8.185472216666666,
+            "lon": 80.16197221666667
+        },
+        {
+            "name": "MD35",
+            "lat": 8.359213883333334,
+            "lon": 80.12309166666667
+        },
+        {
+            "name": "REDOR",
+            "lat": 8.2775,
+            "lon": 80.10416666666667
+        },
+        {
+            "name": "REMEM",
+            "lat": 8.231055566666667,
+            "lon": 79.99997221666666
+        },
+        {
+            "name": "RH701",
+            "lat": 8.208916666666667,
+            "lon": 80.08102778333334
+        },
+        {
+            "name": "RHT",
+            "lat": 8.375533333333333,
+            "lon": 80.12687221666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD35",
+            "fixes": {
+                "CD35": "CD35 AT OR ABOVE 2200",
+                "REDOR": "REDOR 2200",
+                "MD35": "MD35 360 RNW 35",
+                "D338F": "OVERFLY D338F AT OR ABOVE 1500 TURN LEFT DIRECT",
+                "RHT": "RHT AT OR ABOVE 4000 HOLD AT RHT RIGHT TURN INBOUNDCOURSE 120 SPEED 230 LEGTIME 1 FAF REDOR MAP MD35"
+            },
+            "transitions": [
+                {
+                    "name": "RHT",
+                    "fixes": {
+                        "RHT": "RHT AT OR ABOVE 4000 TRK 150 UNTIL 11.0 FROM RHT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS35",
+            "fixes": {
+                "CF35": "CF35 AT OR ABOVE 2200",
+                "ETIKA": "ETIKA 1700 RNW 35 TRK 348 UNTIL 500 TURN LEFT HDG 196 INTERCEPT RADIAL 203 TO",
+                "GELSA": "GELSA GELSA AT OR ABOVE 4000 HOLD AT GELSA RIGHT TURN INBOUNDCOURSE 023 ALT 4000 SPEED 230 LEGTIME 1 FAF ETIKA MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "RHT",
+                    "fixes": {
+                        "RHT": "RHT AT OR ABOVE 4000 TRK 148 UNTIL 10.2 FROM RHT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "RH701": "RH701 AT OR ABOVE 2000",
+                "ETIKA": "ETIKA 1700 RNW 35 TRK 348 UNTIL 1000 TURN LEFT DIRECT",
+                "MARLU": "MARLU AT OR ABOVE 4000 HOLD AT MARLU RIGHT TURN INBOUNDCOURSE 078 ALT 4000 SPEED 230 LEGTIME 1 FAF ETIKA MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "MARLU",
+                    "fixes": {
+                        "MARLU": "MARLU AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "REMEM",
+                    "fixes": {
+                        "REMEM": "REMEM AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR35",
+            "fixes": {
+                "FS35": "FS35 2200 RNW 35",
+                "RHT": "OVERFLY RHT TRK 338 UNTIL 1500 TURN LEFT DIRECT RHT AT OR ABOVE 4000 HOLD AT RHT RIGHT TURN INBOUNDCOURSE 120 SPEED 230 LEGTIME 1 FAF FS35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "RHT",
+                    "fixes": {
+                        "RHT": "RHT AT OR ABOVE 4000 TRK 150 UNTIL 10.0 FROM RHT"
+                    }
+                }
+            ]
+        }
+    ]
+}

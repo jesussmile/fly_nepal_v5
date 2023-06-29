@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "JITOM",
+            "lat": 40.33886111666666,
+            "lon": 100.18183056666666
+        },
+        {
+            "name": "KIPEY",
+            "lat": 40.38501111666667,
+            "lon": 100.21011666666666
+        },
+        {
+            "name": "NUVOE",
+            "lat": 40.27581111666667,
+            "lon": 100.14325278333334
+        },
+        {
+            "name": "PANGE",
+            "lat": 40.475594433333335,
+            "lon": 100.26576666666666
+        },
+        {
+            "name": "WURTC",
+            "lat": 40.22270833333334,
+            "lon": 100.11081943333333
+        },
+        {
+            "name": "YOBRO",
+            "lat": 40.13204721666666,
+            "lon": 100.055575
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "PANGE": "PANGE AT OR ABOVE 4900",
+                "KIPEY": "KIPEY 4000",
+                "JITOM": "JITOM AT OR ABOVE 3020 RNW 15 TRK 150 UNTIL 2736",
+                "YOBRO": "OVERFLY YOBRO AT OR ABOVE 4500 HOLD AT YOBRO RIGHT TURN INBOUNDCOURSE 330 LEGDIST 4 FAF KIPEY MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "PANGE",
+                    "fixes": {
+                        "PANGE": "PANGE RIGHT TURN INBOUNDCOURSE 150 ALT 4900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "YOBRO": "YOBRO AT OR ABOVE 4500",
+                "WURTC": "WURTC 4100",
+                "NUVOE": "NUVOE AT OR ABOVE 2980 RNW 33 TRK 330 UNTIL 2736",
+                "PANGE": "OVERFLY PANGE AT OR ABOVE 4900 HOLD AT PANGE RIGHT TURN INBOUNDCOURSE 150 LEGDIST 4 FAF WURTC MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "YOBRO",
+                    "fixes": {
+                        "YOBRO": "YOBRO RIGHT TURN INBOUNDCOURSE 330 ALT 4500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

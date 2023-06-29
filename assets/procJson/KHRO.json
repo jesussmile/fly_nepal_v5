@@ -1,0 +1,145 @@
+{
+    "fixes": [
+        {
+            "name": "ADOKE",
+            "lat": 36.441036116666666,
+            "lon": 93.13314443333333
+        },
+        {
+            "name": "BERGG",
+            "lat": 36.29809443333333,
+            "lon": 92.97110278333334
+        },
+        {
+            "name": "BOLTE",
+            "lat": 36.159075,
+            "lon": 93.16189721666667
+        },
+        {
+            "name": "CAVEK",
+            "lat": 36.44907778333334,
+            "lon": 93.23595
+        },
+        {
+            "name": "ERAKE",
+            "lat": 36.160794433333336,
+            "lon": 93.16680278333334
+        },
+        {
+            "name": "FATGO",
+            "lat": 36.43290833333333,
+            "lon": 93.03036111666667
+        },
+        {
+            "name": "HADEM",
+            "lat": 36.05873056666667,
+            "lon": 93.17900278333333
+        },
+        {
+            "name": "HRO",
+            "lat": 36.318308333333334,
+            "lon": 93.21327221666667
+        },
+        {
+            "name": "OFFOV",
+            "lat": 36.357813883333336,
+            "lon": 93.14316666666667
+        },
+        {
+            "name": "TELME",
+            "lat": 36.05063056666667,
+            "lon": 93.07671388333333
+        },
+        {
+            "name": "WAXON",
+            "lat": 36.066744433333334,
+            "lon": 93.28131111666667
+        },
+        {
+            "name": "ZENUN",
+            "lat": 36.059044433333334,
+            "lon": 93.16798056666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS36",
+            "fixes": {
+                "ZENUN": "ZENUN AT OR ABOVE 3700",
+                "BOLTE": "BOLTE 3200 RNW 36 TRK 359 UNTIL 1900",
+                "HRO": "HRO AT OR ABOVE 3700 HOLD AT HRO RIGHT TURN INBOUNDCOURSE 136 ALT 3700 LEGTIME 1 FAF BOLTE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HRO",
+                    "fixes": {
+                        "HRO": "HRO",
+                        "ZENUN": "ZENUN AT OR ABOVE 3700 HOLD AT ZENUN RIGHT TURN INBOUNDCOURSE 359 ALT 3700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ADOKE": "ADOKE AT OR ABOVE 3200",
+                "OFFOV": "OFFOV 3100 RNW 18 TRK 182 UNTIL 1800 TURN LEFT DIRECT",
+                "BERGG": "OVERFLY BERGG AT OR ABOVE 3200 HOLD AT BERGG RIGHT TURN INBOUNDCOURSE 272 LEGDIST 4 FAF OFFOV MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ADOKE",
+                    "fixes": {
+                        "ADOKE": "ADOKE RIGHT TURN INBOUNDCOURSE 182 ALT 3200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CAVEK",
+                    "fixes": {
+                        "CAVEK": "CAVEK"
+                    }
+                },
+                {
+                    "name": "FATGO",
+                    "fixes": {
+                        "FATGO": "FATGO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HADEM": "HADEM AT OR ABOVE 3900",
+                "ERAKE": "ERAKE 3200 RNW 36",
+                "ADOKE": "OVERFLY ADOKE AT OR ABOVE 3200 HOLD AT ADOKE RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4 FAF ERAKE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HADEM",
+                    "fixes": {
+                        "HADEM": "HADEM RIGHT TURN INBOUNDCOURSE 002 ALT 3900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TELME",
+                    "fixes": {
+                        "TELME": "TELME AT OR ABOVE 3900"
+                    }
+                },
+                {
+                    "name": "WAXON",
+                    "fixes": {
+                        "WAXON": "WAXON AT OR ABOVE 3900"
+                    }
+                }
+            ]
+        }
+    ]
+}

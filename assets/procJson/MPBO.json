@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "ARMIS",
+            "lat": 9.248277783333334,
+            "lon": 82.40741666666666
+        },
+        {
+            "name": "BT701",
+            "lat": 9.348555566666667,
+            "lon": 82.11069443333334
+        },
+        {
+            "name": "BT901",
+            "lat": 9.331888883333333,
+            "lon": 82.41216666666666
+        },
+        {
+            "name": "ESIPI",
+            "lat": 9.264944433333334,
+            "lon": 82.10602778333333
+        },
+        {
+            "name": "KIBIL",
+            "lat": 9.335638883333333,
+            "lon": 82.34483333333333
+        },
+        {
+            "name": "KOMDI",
+            "lat": 9.344833333333334,
+            "lon": 82.178
+        },
+        {
+            "name": "SIMIX",
+            "lat": 9.432138883333334,
+            "lon": 82.11533333333334
+        },
+        {
+            "name": "TOROG",
+            "lat": 9.415472216666666,
+            "lon": 82.41688888333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "BT901": "BT901 AT OR ABOVE 2500",
+                "KIBIL": "KIBIL 1700 RNW 09 TRK 089 UNTIL 700 TURN LEFT DIRECT",
+                "TOROG": "OVERFLY TOROG AT OR ABOVE 4000 HOLD AT TOROG LEFT TURN INBOUNDCOURSE 179 ALT 4000 SPEED 230 LEGTIME 1 FAF KIBIL MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "ARMIS",
+                    "fixes": {
+                        "ARMIS": "ARMIS AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "TOROG",
+                    "fixes": {
+                        "TOROG": "TOROG AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "BT701": "BT701 AT OR ABOVE 2500",
+                "KOMDI": "KOMDI 1300 RNW 27 TRK 269 UNTIL 700 TURN RIGHT DIRECT",
+                "SIMIX": "OVERFLY SIMIX AT OR ABOVE 4000 HOLD AT SIMIX RIGHT TURN INBOUNDCOURSE 179 ALT 4000 SPEED 230 LEGTIME 1 FAF KOMDI MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "ESIPI",
+                    "fixes": {
+                        "ESIPI": "ESIPI AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "SIMIX",
+                    "fixes": {
+                        "SIMIX": "SIMIX AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

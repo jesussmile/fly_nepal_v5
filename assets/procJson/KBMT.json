@@ -1,0 +1,173 @@
+{
+    "fixes": [
+        {
+            "name": "ARRCO",
+            "lat": 30.120455566666667,
+            "lon": 94.29279166666667
+        },
+        {
+            "name": "BOELO",
+            "lat": 30.021236116666667,
+            "lon": 94.13728888333333
+        },
+        {
+            "name": "BPT",
+            "lat": 29.946052783333332,
+            "lon": 94.01621943333333
+        },
+        {
+            "name": "CORNS",
+            "lat": 29.951477783333335,
+            "lon": 94.08004721666667
+        },
+        {
+            "name": "DAS",
+            "lat": 30.18971111666667,
+            "lon": 94.64498333333333
+        },
+        {
+            "name": "DEBUQ",
+            "lat": 30.12430833333333,
+            "lon": 94.28360833333333
+        },
+        {
+            "name": "FITAP",
+            "lat": 30.183044433333333,
+            "lon": 94.39251111666667
+        },
+        {
+            "name": "FOHPU",
+            "lat": 30.174925,
+            "lon": 94.34772221666667
+        },
+        {
+            "name": "KIELL",
+            "lat": 30.178155566666668,
+            "lon": 94.21764443333333
+        },
+        {
+            "name": "NIFAD",
+            "lat": 30.243988883333333,
+            "lon": 94.27794443333333
+        },
+        {
+            "name": "NUXLY",
+            "lat": 30.043044433333332,
+            "lon": 94.17247778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 30.15221405,
+            "lon": 94.34936943333334
+        },
+        {
+            "name": "PI002",
+            "lat": 30.13728881666667,
+            "lon": 94.43042698333333
+        },
+        {
+            "name": "PI003",
+            "lat": 30.211129633333332,
+            "lon": 94.45453908333333
+        },
+        {
+            "name": "SILBE",
+            "lat": 30.175383333333333,
+            "lon": 94.12336388333334
+        },
+        {
+            "name": "VOR16",
+            "lat": 30.098038883333334,
+            "lon": 94.25713333333333
+        },
+        {
+            "name": "WURAL",
+            "lat": 30.029280566666667,
+            "lon": 94.16361388333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD13",
+            "fixes": {
+                "FITAP": "FITAP AT OR ABOVE 2000",
+                "ARRCO": "ARRCO 1600",
+                "VOR16": "VOR16 AT OR ABOVE 860 RNW 13 TRK 119 UNTIL 432 TURN LEFT HDG 001 INTERCEPT RADIAL 316 TO",
+                "KIELL": "KIELL KIELL AT OR ABOVE 2300 FAF ARRCO MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "BPT",
+                    "fixes": {
+                        "BPT": "BPT",
+                        "ARRCO": "ARRCO AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "DAS",
+                    "fixes": {
+                        "DAS": "DAS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD31",
+            "fixes": {
+                "BPT": "BPT AT OR ABOVE 1600",
+                "BOELO": "BOELO 1600",
+                "NUXLY": "NUXLY AT OR ABOVE 740 RNW 31 TRK 299 UNTIL 432 HDG 001 INTERCEPT RADIAL 316 TO",
+                "KIELL": "KIELL KIELL AT OR ABOVE 2000 FAF BOELO MAP RNW 31"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "FOHPU": "FOHPU AT OR ABOVE 2000 SPEED 210",
+                "DEBUQ": "DEBUQ 1500 RNW 13 TRK 128 UNTIL 600 TURN LEFT DIRECT",
+                "SILBE": "OVERFLY SILBE AT OR ABOVE 2000 HOLD AT SILBE RIGHT TURN INBOUNDCOURSE 018 LEGDIST 4 FAF DEBUQ MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "DAS",
+                    "fixes": {
+                        "DAS": "DAS"
+                    }
+                },
+                {
+                    "name": "SILBE",
+                    "fixes": {
+                        "SILBE": "SILBE SPEED 230",
+                        "NIFAD": "NIFAD AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "CORNS": "CORNS AT OR ABOVE 1600",
+                "WURAL": "WURAL 1500 RNW 31 TRK 308 UNTIL 500",
+                "KIELL": "OVERFLY KIELL AT OR ABOVE 2000 HOLD AT KIELL RIGHT TURN INBOUNDCOURSE 353 LEGDIST 4 FAF WURAL MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "BPT",
+                    "fixes": {
+                        "BPT": "BPT"
+                    }
+                }
+            ]
+        }
+    ]
+}

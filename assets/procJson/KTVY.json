@@ -1,0 +1,141 @@
+{
+    "fixes": [
+        {
+            "name": "ANEYI",
+            "lat": 40.7035,
+            "lon": 112.31493888333333
+        },
+        {
+            "name": "EMONT",
+            "lat": 41.050558333333335,
+            "lon": 112.42467778333334
+        },
+        {
+            "name": "FOGEM",
+            "lat": 41.02107221666667,
+            "lon": 112.35908056666666
+        },
+        {
+            "name": "HOKPI",
+            "lat": 40.64055,
+            "lon": 112.45293611666666
+        },
+        {
+            "name": "JONEK",
+            "lat": 40.71368056666667,
+            "lon": 112.35281943333334
+        },
+        {
+            "name": "SALTA",
+            "lat": 40.83901111666667,
+            "lon": 112.1605
+        },
+        {
+            "name": "STACO",
+            "lat": 40.822197216666666,
+            "lon": 112.41959721666667
+        },
+        {
+            "name": "WEGET",
+            "lat": 40.82644166666667,
+            "lon": 112.35511666666666
+        },
+        {
+            "name": "ZESER",
+            "lat": 40.735947216666666,
+            "lon": 112.41952221666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "STACO2",
+            "rnw": "06",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 17",
+                    "fixes": {
+                        "RNW 17": "RNW 17 HDG 166 UNTIL 5500 TURN RIGHT DIRECT",
+                        "HOKPI": "HOKPI",
+                        "ZESER": "ZESER",
+                        "STACO": "OVERFLY STACO 9000"
+                    }
+                },
+                {
+                    "rwy": "RNW 35",
+                    "fixes": {
+                        "RNW 35": "RNW 35 HDG 346 UNTIL 4900",
+                        "ZESER": "ZESER",
+                        "STACO": "OVERFLY STACO 9000"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS17",
+            "fixes": {
+                "WEGET": "WEGET AT OR ABOVE 8100 WEGET WEGET",
+                "JONEK": "JONEK 6100 RNW 17 TRK 166 UNTIL 5400 TURN RIGHT HDG 343 INTERCEPT RADIAL 012 TO",
+                "FOGEM": "FOGEM AT OR ABOVE 8600 HOLD AT FOGEM RIGHT TURN INBOUNDCOURSE 166 LEGTIME 1 FAF JONEK MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "EMONT",
+                    "fixes": {
+                        "EMONT": "EMONT",
+                        "FOGEM": "FOGEM AT OR ABOVE 12000 TRK 166 UNTIL 7.7 FROM FOGEM"
+                    }
+                },
+                {
+                    "name": "SALTA",
+                    "fixes": {
+                        "SALTA": "SALTA AT OR ABOVE 8100 TRK 249 UNTIL 4.9 FROM SALTA"
+                    }
+                },
+                {
+                    "name": "WEGET",
+                    "fixes": {
+                        "WEGET": "WEGET RIGHT TURN INBOUNDCOURSE 166 ALT 8100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "WEGET": "WEGET AT OR ABOVE 8100 WEGET",
+                "JONEK": "JONEK 6100 RNW 17 TRK 166 UNTIL 4800 TURN RIGHT DIRECT",
+                "FOGEM": "OVERFLY FOGEM AT OR ABOVE 8600 HOLD AT FOGEM RIGHT TURN INBOUNDCOURSE 166 LEGDIST 7 FAF JONEK MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ANEYI",
+                    "fixes": {
+                        "ANEYI": "ANEYI",
+                        "WEGET": "OVERFLY WEGET AT OR ABOVE 9800 HOLD AT WEGET RIGHT TURN INBOUNDCOURSE 166 ALT 8100 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "EMONT",
+                    "fixes": {
+                        "EMONT": "EMONT"
+                    }
+                },
+                {
+                    "name": "SALTA",
+                    "fixes": {
+                        "SALTA": "SALTA"
+                    }
+                }
+            ]
+        }
+    ]
+}

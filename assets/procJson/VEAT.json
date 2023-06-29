@@ -1,0 +1,284 @@
+{
+    "fixes": [
+        {
+            "name": "AAT",
+            "lat": 23.890411116666666,
+            "lon": 91.23864721666666
+        },
+        {
+            "name": "AF001",
+            "lat": 23.980590166666666,
+            "lon": 91.41328673333334
+        },
+        {
+            "name": "AF002",
+            "lat": 24.024432016666665,
+            "lon": 91.37553881666666
+        },
+        {
+            "name": "AF003",
+            "lat": 24.055860916666667,
+            "lon": 91.32508106666667
+        },
+        {
+            "name": "AF004",
+            "lat": 23.975671833333333,
+            "lon": 91.4162159
+        },
+        {
+            "name": "AF005",
+            "lat": 24.016540916666667,
+            "lon": 91.38423638333333
+        },
+        {
+            "name": "AF006",
+            "lat": 24.047934883333333,
+            "lon": 91.34129336666666
+        },
+        {
+            "name": "ATNB",
+            "lat": 23.887530566666666,
+            "lon": 91.24348333333333
+        },
+        {
+            "name": "CD36Z",
+            "lat": 23.689872216666668,
+            "lon": 91.23104166666667
+        },
+        {
+            "name": "CI18",
+            "lat": 23.994497216666666,
+            "lon": 91.249675
+        },
+        {
+            "name": "CI18Z",
+            "lat": 24.073697216666666,
+            "lon": 91.25618611666667
+        },
+        {
+            "name": "CML",
+            "lat": 23.433341666666667,
+            "lon": 91.19025833333333
+        },
+        {
+            "name": "D008O",
+            "lat": 24.138844433333333,
+            "lon": 91.27620278333333
+        },
+        {
+            "name": "D009K",
+            "lat": 24.072552783333332,
+            "lon": 91.266525
+        },
+        {
+            "name": "D016K",
+            "lat": 24.068069433333335,
+            "lon": 91.29049166666667
+        },
+        {
+            "name": "D028M",
+            "lat": 24.082394433333334,
+            "lon": 91.34961388333333
+        },
+        {
+            "name": "D079M",
+            "lat": 23.931744433333332,
+            "lon": 91.47078611666667
+        },
+        {
+            "name": "D079N",
+            "lat": 23.934911116666665,
+            "lon": 91.48865
+        },
+        {
+            "name": "D186O",
+            "lat": 23.640769433333332,
+            "lon": 91.212175
+        },
+        {
+            "name": "FD18Z",
+            "lat": 23.976513883333332,
+            "lon": 91.25181666666667
+        },
+        {
+            "name": "FD36Z",
+            "lat": 23.7868,
+            "lon": 91.23471388333333
+        },
+        {
+            "name": "FI18",
+            "lat": 23.974486116666668,
+            "lon": 91.24803056666667
+        },
+        {
+            "name": "IAGE",
+            "lat": 23.894333333333332,
+            "lon": 91.24263888333333
+        },
+        {
+            "name": "IBAPA",
+            "lat": 25.183888883333335,
+            "lon": 91.43583333333333
+        },
+        {
+            "name": "MEPAR",
+            "lat": 24.000833333333333,
+            "lon": 91.86361111666666
+        },
+        {
+            "name": "PAPLI",
+            "lat": 24.372861116666666,
+            "lon": 91.51822778333333
+        },
+        {
+            "name": "RW18",
+            "lat": 23.897472216666667,
+            "lon": 91.24170833333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ18",
+            "fixes": {
+                "FD18Z": "FD18Z 1600 RNW 18",
+                "AAT": "OVERFLY AAT TRK 189 UNTIL 1500 TURN LEFT DIRECT AAT 2500 HOLD AT AAT RIGHT TURN INBOUNDCOURSE 005 ALT 2500 LEGTIME 1 FAF FD18Z MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AAT1",
+                    "fixes": {
+                        "AAT": "AAT AT OR ABOVE 2500 TRK 032 UNTIL 7.0 FROM AAT"
+                    }
+                },
+                {
+                    "name": "AAT2",
+                    "fixes": {
+                        "AAT": "AAT AT OR ABOVE 2500 TRK 022 UNTIL 7.0 FROM AAT"
+                    }
+                },
+                {
+                    "name": "IBAPA",
+                    "fixes": {
+                        "IBAPA": "IBAPA",
+                        "D008O": "D008O",
+                        "D009K": "D009K AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "MEPAR",
+                    "fixes": {
+                        "MEPAR": "MEPAR",
+                        "D079M": "D079M",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D009K": "D009K AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ36",
+            "fixes": {
+                "CD36Z": "CD36Z AT OR ABOVE 2500",
+                "FD36Z": "FD36Z 1800 RNW 36",
+                "AAT": "OVERFLY AAT AT OR ABOVE 460 TRK 050 UNTIL 2000 TURN RIGHT DIRECT AAT 2500 HOLD AT AAT RIGHT TURN INBOUNDCOURSE 003 ALT 2500 LEGTIME 1 FAF FD36Z MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "CML",
+                    "fixes": {
+                        "CML": "CML",
+                        "D186O": "D186O"
+                    }
+                },
+                {
+                    "name": "MEPAR",
+                    "fixes": {
+                        "MEPAR": "MEPAR",
+                        "D079N": "D079N"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY18",
+            "fixes": {
+                "CI18": "CI18 AT OR ABOVE 1600",
+                "FI18": "FI18 1600 RNW 18 TRK 185 UNTIL 1500 TURN LEFT DIRECT",
+                "ATNB": "ATNB 2500 HOLD AT ATNB RIGHT TURN INBOUNDCOURSE 005 ALT 2500 LEGTIME 1 FAF FI18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AT1",
+                    "fixes": {
+                        "ATNB": "ATNB AT OR ABOVE 2500 TRK 028 UNTIL 6.0 FROM",
+                        "IAGE": "IAGE"
+                    }
+                },
+                {
+                    "name": "AT2",
+                    "fixes": {
+                        "ATNB": "ATNB AT OR ABOVE 2500 TRK 017 UNTIL 6.0 FROM",
+                        "IAGE": "IAGE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ18",
+            "fixes": {
+                "CI18Z": "CI18Z AT OR ABOVE 2500",
+                "FI18": "FI18 1600 RNW 18 TRK 185 UNTIL 1500 TURN LEFT DIRECT",
+                "AAT": "AAT 2500 HOLD AT AAT RIGHT TURN INBOUNDCOURSE 005 ALT 2500 LEGTIME 1 FAF FI18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AAT1",
+                    "fixes": {
+                        "AAT": "AAT AT OR ABOVE 2500 TRK 032 UNTIL 6.0 FROM AAT"
+                    }
+                },
+                {
+                    "name": "AAT2",
+                    "fixes": {
+                        "AAT": "AAT AT OR ABOVE 2500 TRK 020 UNTIL 6.0 FROM AAT"
+                    }
+                },
+                {
+                    "name": "IBAPA",
+                    "fixes": {
+                        "IBAPA": "IBAPA",
+                        "D008O": "D008O HDG 215 INTERCEPT RADIAL 185 TO",
+                        "CI18Z": "CI18Z"
+                    }
+                },
+                {
+                    "name": "MEPAR",
+                    "fixes": {
+                        "MEPAR": "MEPAR",
+                        "D079M": "D079M",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "AF006": "AF006",
+                        "D016K": "D016K AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "PAPLI",
+                    "fixes": {
+                        "PAPLI": "PAPLI",
+                        "D028M": "D028M SPEED 185",
+                        "D016K": "D016K AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "AFFOM",
+            "lat": 62.957766666666664,
+            "lon": 22.888791666666666
+        },
+        {
+            "name": "AKPEQ",
+            "lat": 63.29014721666667,
+            "lon": 23.031855566666668
+        },
+        {
+            "name": "COTHA",
+            "lat": 62.96234166666667,
+            "lon": 23.071005566666667
+        },
+        {
+            "name": "ECVIL",
+            "lat": 63.21943056666667,
+            "lon": 23.040377783333334
+        },
+        {
+            "name": "KIWUC",
+            "lat": 62.966683333333336,
+            "lon": 23.253275
+        },
+        {
+            "name": "RIVHE",
+            "lat": 63.285519433333334,
+            "lon": 22.847583333333333
+        },
+        {
+            "name": "SUKWI",
+            "lat": 63.12416666666667,
+            "lon": 23.051388883333335
+        },
+        {
+            "name": "VIRFA",
+            "lat": 63.29453888333333,
+            "lon": 23.216188883333334
+        },
+        {
+            "name": "YULFO",
+            "lat": 63.033861116666664,
+            "lon": 23.062538883333332
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "AKPEQ": "AKPEQ AT OR ABOVE 2500",
+                "ECVIL": "ECVIL 2000 RNW 17 TRK 167 UNTIL 1300 TURN LEFT DIRECT",
+                "SUKWI": "OVERFLY SUKWI 2500 HOLD AT SUKWI LEFT TURN INBOUNDCOURSE 270 ALT 2500 SPEED 230 LEGTIME 1 FAF ECVIL MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "RIVHE",
+                    "fixes": {
+                        "RIVHE": "RIVHE AT OR ABOVE 2500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "VIRFA",
+                    "fixes": {
+                        "VIRFA": "VIRFA AT OR ABOVE 2500 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "COTHA": "COTHA AT OR ABOVE 2500",
+                "YULFO": "YULFO 2000 RNW 35 TRK 347 UNTIL 1100 TURN RIGHT DIRECT",
+                "SUKWI": "OVERFLY SUKWI 2500 HOLD AT SUKWI LEFT TURN INBOUNDCOURSE 270 ALT 2500 SPEED 230 LEGTIME 1 FAF YULFO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "AFFOM",
+                    "fixes": {
+                        "AFFOM": "AFFOM AT OR ABOVE 2500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "KIWUC",
+                    "fixes": {
+                        "KIWUC": "KIWUC AT OR ABOVE 2500 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

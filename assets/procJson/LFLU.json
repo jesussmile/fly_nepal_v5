@@ -1,0 +1,157 @@
+{
+    "fixes": [
+        {
+            "name": "CN01",
+            "lat": 44.77779721666667,
+            "lon": 4.941463883333333
+        },
+        {
+            "name": "FLU01",
+            "lat": 44.788527783333336,
+            "lon": 4.9444444333333335
+        },
+        {
+            "name": "FLU19",
+            "lat": 45.05597221666667,
+            "lon": 4.99575
+        },
+        {
+            "name": "ILU01",
+            "lat": 44.72083333333333,
+            "lon": 4.931527783333333
+        },
+        {
+            "name": "ILU19",
+            "lat": 45.12202778333333,
+            "lon": 5.0085
+        },
+        {
+            "name": "LARSU",
+            "lat": 44.668444433333335,
+            "lon": 4.921555566666667
+        },
+        {
+            "name": "LU405",
+            "lat": 44.73141666666667,
+            "lon": 4.825027783333333
+        },
+        {
+            "name": "LU410",
+            "lat": 45.01916666666666,
+            "lon": 4.9886388833333335
+        },
+        {
+            "name": "LU502",
+            "lat": 45.13341666666667,
+            "lon": 4.891916666666667
+        },
+        {
+            "name": "LU504",
+            "lat": 45.17155556666667,
+            "lon": 5.018083333333333
+        },
+        {
+            "name": "LU520",
+            "lat": 44.992944433333335,
+            "lon": 4.864805566666667
+        },
+        {
+            "name": "LU522",
+            "lat": 44.86377778333333,
+            "lon": 4.958805566666666
+        },
+        {
+            "name": "MN01",
+            "lat": 44.906761116666665,
+            "lon": 4.966922216666667
+        },
+        {
+            "name": "VARUX",
+            "lat": 44.882611116666666,
+            "lon": 4.853972216666667
+        },
+        {
+            "name": "VENB",
+            "lat": 44.849,
+            "lon": 4.9555
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB01",
+            "fixes": {
+                "CN01": "CN01 AT OR ABOVE 2800",
+                "VENB": "VENB 1850 VENB 5000 SPEED 170 FAF VENB MAP MN01",
+                "MN01": "MN01 724 RNW 01 TRK 006 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "VE1",
+                    "fixes": {
+                        "VENB": "VENB AT OR ABOVE 2800 SPEED 160 TRK 211 UNTIL 4.0 FROM VENB"
+                    }
+                },
+                {
+                    "name": "VE2",
+                    "fixes": {
+                        "VENB": "VENB AT OR ABOVE 2800 SPEED 130 TRK 204 UNTIL 4.3 FROM VENB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "ILU01": "ILU01 3000 SPEED 200",
+                "FLU01": "FLU01 3000 RNW 01",
+                "LU410": "OVERFLY LU410 SPEED 200 TURN LEFT DIRECT",
+                "VARUX": "VARUX AT OR ABOVE 4000 SPEED 200 FAF FLU01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "LARSU",
+                    "fixes": {
+                        "LARSU": "LARSU AT OR ABOVE 4300 SPEED 220"
+                    }
+                },
+                {
+                    "name": "VARUX",
+                    "fixes": {
+                        "VARUX": "VARUX AT OR ABOVE 4000 SPEED 200",
+                        "LU405": "LU405 AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA19",
+            "fixes": {
+                "ILU19": "ILU19 3000 SPEED 200",
+                "FLU19": "FLU19 3000 RNW 19",
+                "LU522": "OVERFLY LU522 SPEED 160 TURN RIGHT DIRECT",
+                "LU520": "LU520 AT OR ABOVE 4000 SPEED 200 FAF FLU19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "LU504",
+                    "fixes": {
+                        "LU504": "LU504 AT OR ABOVE 3900 SPEED 220"
+                    }
+                },
+                {
+                    "name": "LU520",
+                    "fixes": {
+                        "LU520": "LU520 AT OR ABOVE 4000 SPEED 200",
+                        "LU502": "LU502 AT OR ABOVE 3500 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

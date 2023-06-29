@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "CIBDA",
+            "lat": 34.45510556666667,
+            "lon": 89.873875
+        },
+        {
+            "name": "HEDAX",
+            "lat": 34.16212778333333,
+            "lon": 89.93454721666667
+        },
+        {
+            "name": "HLI",
+            "lat": 34.77024443333333,
+            "lon": 89.49651943333333
+        },
+        {
+            "name": "PENOY",
+            "lat": 34.317247216666665,
+            "lon": 89.90249443333333
+        },
+        {
+            "name": "SUBOY",
+            "lat": 34.57028056666667,
+            "lon": 89.849925
+        },
+        {
+            "name": "WABDI",
+            "lat": 34.42181943333333,
+            "lon": 89.88078333333333
+        },
+        {
+            "name": "ZUPGO",
+            "lat": 34.277313883333335,
+            "lon": 89.91073611666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC19",
+            "fixes": {
+                "SUBOY": "SUBOY AT OR ABOVE 2800 SUBOY SUBOY AT OR ABOVE 2800 HOLD AT SUBOY LEFT TURN INBOUNDCOURSE 191 LEGDIST 4 FAF CIBDA MAP RNW 19",
+                "CIBDA": "CIBDA 1900",
+                "WABDI": "WABDI AT OR ABOVE 1240 RNW 19 TRK 191 UNTIL 1100 TURN LEFT HDG 015 INTERCEPT RADIAL 345 TO"
+            },
+            "transitions": [
+                {
+                    "name": "HLI",
+                    "fixes": {
+                        "HLI": "HLI AT OR ABOVE 2800 TRK 233 UNTIL 17.2 FROM HLI"
+                    }
+                },
+                {
+                    "name": "SUBOY",
+                    "fixes": {
+                        "SUBOY": "SUBOY LEFT TURN INBOUNDCOURSE 191 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "HEDAX": "HEDAX AT OR ABOVE 2800 OVERFLY HEDAX AT OR ABOVE 2800 HOLD AT HEDAX RIGHT TURN INBOUNDCOURSE 011 LEGDIST 4 FAF ZUPGO MAP RNW 01",
+                "ZUPGO": "ZUPGO 1900",
+                "PENOY": "PENOY AT OR ABOVE 1100 RNW 01 TRK 011 UNTIL 900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HEDAX",
+                    "fixes": {
+                        "HEDAX": "HEDAX RIGHT TURN INBOUNDCOURSE 011 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "SUBOY": "SUBOY AT OR ABOVE 2800 OVERFLY SUBOY AT OR ABOVE 2800 HOLD AT SUBOY LEFT TURN INBOUNDCOURSE 191 LEGDIST 4 FAF CIBDA MAP RNW 19",
+                "CIBDA": "CIBDA 1900 RNW 19 TRK 191 UNTIL 1100 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SUBOY",
+                    "fixes": {
+                        "SUBOY": "SUBOY LEFT TURN INBOUNDCOURSE 191 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

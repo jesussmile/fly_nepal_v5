@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "BIKSI",
+            "lat": 3.4556944333333335,
+            "lon": 72.60025
+        },
+        {
+            "name": "EKARU",
+            "lat": 3.3966944333333333,
+            "lon": 72.99094443333334
+        },
+        {
+            "name": "MISAQ",
+            "lat": 3.4855833333333335,
+            "lon": 73.06883333333333
+        },
+        {
+            "name": "MV003",
+            "lat": 3.461,
+            "lon": 72.68341666666667
+        },
+        {
+            "name": "MV004",
+            "lat": 3.4802777833333334,
+            "lon": 72.98566666666666
+        },
+        {
+            "name": "MV099",
+            "lat": 3.4642777833333334,
+            "lon": 72.74266666666666
+        },
+        {
+            "name": "MV270",
+            "lat": 3.4766666666666666,
+            "lon": 72.92911111666666
+        },
+        {
+            "name": "OMBAB",
+            "lat": 3.3774166666666665,
+            "lon": 72.68869443333334
+        },
+        {
+            "name": "RIWAN",
+            "lat": 3.3870555666666666,
+            "lon": 72.83980556666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "MV099": "MV099 1700 RNW 09 TRK 089 UNTIL 500 TURN RIGHT DIRECT",
+                "RIWAN": "OVERFLY RIWAN 5000 HOLD AT RIWAN LEFT TURN INBOUNDCOURSE 000 ALT 5000 LEGTIME 1 FAF MV099 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "BIKSI",
+                    "fixes": {
+                        "BIKSI": "BIKSI SPEED 180",
+                        "MV003": "MV003"
+                    }
+                },
+                {
+                    "name": "OMBAB",
+                    "fixes": {
+                        "OMBAB": "OMBAB SPEED 180",
+                        "MV003": "MV003"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "MV270": "MV270 1700 RNW 27 TRK 269 UNTIL 500 TURN LEFT DIRECT",
+                "RIWAN": "OVERFLY RIWAN 5000 HOLD AT RIWAN LEFT TURN INBOUNDCOURSE 000 ALT 5000 LEGTIME 1 FAF MV270 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "EKARU",
+                    "fixes": {
+                        "EKARU": "EKARU SPEED 180",
+                        "MV004": "MV004"
+                    }
+                },
+                {
+                    "name": "MISAQ",
+                    "fixes": {
+                        "MISAQ": "MISAQ SPEED 180",
+                        "MV004": "MV004"
+                    }
+                }
+            ]
+        }
+    ]
+}

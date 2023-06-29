@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "FF28",
+            "lat": 23.897575,
+            "lon": 151.31270556666666
+        },
+        {
+            "name": "GLA",
+            "lat": 23.865261116666666,
+            "lon": 151.20440833333333
+        },
+        {
+            "name": "GLZED",
+            "lat": 23.865441666666666,
+            "lon": 151.46161388333334
+        },
+        {
+            "name": "GLZEE",
+            "lat": 23.958088883333332,
+            "lon": 151.48859721666668
+        },
+        {
+            "name": "GLZEF",
+            "lat": 23.900791666666667,
+            "lon": 151.3177
+        },
+        {
+            "name": "GLZEG",
+            "lat": 24.01306943333333,
+            "lon": 151.40306666666666
+        },
+        {
+            "name": "GLZEH",
+            "lat": 23.924080566666667,
+            "lon": 151.102325
+        },
+        {
+            "name": "GLZEI",
+            "lat": 23.929463883333334,
+            "lon": 151.40313056666668
+        },
+        {
+            "name": "GLZWA",
+            "lat": 23.871483333333334,
+            "lon": 150.96685833333333
+        },
+        {
+            "name": "GLZWC",
+            "lat": 23.714544433333334,
+            "lon": 151.02958333333333
+        },
+        {
+            "name": "GLZWF",
+            "lat": 23.820955566666665,
+            "lon": 151.08075556666665
+        },
+        {
+            "name": "GLZWH",
+            "lat": 23.884158333333332,
+            "lon": 151.26823056666666
+        },
+        {
+            "name": "MUDAN",
+            "lat": 23.793016666666666,
+            "lon": 150.99823888333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "MUDAN": "MUDAN AT OR ABOVE 3500",
+                "GLZWF": "GLZWF 2650 RNW 10",
+                "GLZWH": "GLZWH TRK 101 UNTIL 2900 FAF GLZWF MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "GLZWA",
+                    "fixes": {
+                        "GLZWA": "GLZWA AT OR ABOVE 4000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "GLZWC",
+                    "fixes": {
+                        "GLZWC": "GLZWC AT OR ABOVE 5000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "GLZEI": "GLZEI AT OR ABOVE 2900",
+                "GLZEF": "GLZEF 1680 RNW 28 TRK 281 UNTIL 560",
+                "GLZEH": "GLZEH HDG 205 VECTORS FAF GLZEF MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "GLZED",
+                    "fixes": {
+                        "GLZED": "GLZED AT OR ABOVE 2900 SPEED 210"
+                    }
+                },
+                {
+                    "name": "GLZEE",
+                    "fixes": {
+                        "GLZEE": "GLZEE AT OR ABOVE 2900 SPEED 210"
+                    }
+                },
+                {
+                    "name": "GLZEG",
+                    "fixes": {
+                        "GLZEG": "GLZEG AT OR ABOVE 2900 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR28",
+            "fixes": {
+                "FF28": "FF28 1600 RNW 28",
+                "GLA": "OVERFLY GLA TRK 204 UNTIL 4000 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "GLA1",
+                    "fixes": {
+                        "GLA": "GLA AT OR ABOVE 4000 SPEED 210 TRK 079 UNTIL 8.8 FROM GLA"
+                    }
+                },
+                {
+                    "name": "GLA2",
+                    "fixes": {
+                        "GLA": "GLA AT OR ABOVE 4000 TRK 086 UNTIL 9.0 FROM GLA"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "BOLTZ",
+            "lat": 43.07740556666667,
+            "lon": 75.18685278333334
+        },
+        {
+            "name": "HOTSU",
+            "lat": 43.279836116666665,
+            "lon": 75.47216111666667
+        },
+        {
+            "name": "JERDA",
+            "lat": 43.198169433333334,
+            "lon": 75.35671388333333
+        },
+        {
+            "name": "MARCY",
+            "lat": 43.15161666666667,
+            "lon": 75.29111388333334
+        },
+        {
+            "name": "MIFFE",
+            "lat": 43.310925,
+            "lon": 75.81294166666666
+        },
+        {
+            "name": "SCOUT",
+            "lat": 43.31453333333333,
+            "lon": 75.52135278333333
+        },
+        {
+            "name": "SYR",
+            "lat": 43.160519433333334,
+            "lon": 76.20455833333334
+        },
+        {
+            "name": "TURYN",
+            "lat": 43.389769433333335,
+            "lon": 75.62831943333333
+        },
+        {
+            "name": "VASTS",
+            "lat": 43.076283333333336,
+            "lon": 75.54163611666667
+        },
+        {
+            "name": "WEEPY",
+            "lat": 43.34211943333333,
+            "lon": 75.83448888333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS33",
+            "fixes": {
+                "BOLTZ": "BOLTZ AT OR ABOVE 3500",
+                "MARCY": "MARCY 2500 RNW 33 TRK 327 UNTIL 1600 HDG 305 INTERCEPT RADIAL 253 TO",
+                "MIFFE": "MIFFE MIFFE AT OR ABOVE 4000 HOLD AT MIFFE RIGHT TURN INBOUNDCOURSE 073 LEGTIME 1 FAF MARCY MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "BOLTZ",
+                    "fixes": {
+                        "BOLTZ": "BOLTZ RIGHT TURN INBOUNDCOURSE 327 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "TURYN": "TURYN AT OR ABOVE 3500",
+                "SCOUT": "SCOUT 2500",
+                "HOTSU": "HOTSU AT OR ABOVE 1500 RNW 15 TRK 147 UNTIL 704",
+                "BOLTZ": "OVERFLY BOLTZ AT OR ABOVE 3500 HOLD AT BOLTZ RIGHT TURN INBOUNDCOURSE 327 LEGDIST 4 FAF SCOUT MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "SYR",
+                    "fixes": {
+                        "SYR": "SYR",
+                        "WEEPY": "WEEPY AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "TURYN",
+                    "fixes": {
+                        "TURYN": "TURYN RIGHT TURN INBOUNDCOURSE 147 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "BOLTZ": "BOLTZ AT OR ABOVE 3500",
+                "MARCY": "MARCY 2500",
+                "JERDA": "JERDA AT OR ABOVE 1220 RNW 33 TRK 327 UNTIL 784",
+                "TURYN": "OVERFLY TURYN AT OR ABOVE 3500 HOLD AT TURYN RIGHT TURN INBOUNDCOURSE 147 LEGDIST 4 FAF MARCY MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "VASTS",
+                    "fixes": {
+                        "VASTS": "VASTS",
+                        "BOLTZ": "OVERFLY BOLTZ AT OR ABOVE 3500 HOLD AT BOLTZ RIGHT TURN INBOUNDCOURSE 327 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "AGC",
+            "lat": 40.27864443333333,
+            "lon": 80.04085556666666
+        },
+        {
+            "name": "ARNIE",
+            "lat": 40.21199721666667,
+            "lon": 79.49217221666666
+        },
+        {
+            "name": "IGOCI",
+            "lat": 40.44941111666667,
+            "lon": 79.17289443333334
+        },
+        {
+            "name": "WETAB",
+            "lat": 40.14092778333333,
+            "lon": 79.58708333333334
+        },
+        {
+            "name": "XICBU",
+            "lat": 40.314230566666666,
+            "lon": 79.35510833333333
+        },
+        {
+            "name": "ZINTA",
+            "lat": 40.378433333333334,
+            "lon": 79.26870556666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS24",
+            "fixes": {
+                "IGOCI": "IGOCI AT OR ABOVE 4200",
+                "ZINTA": "ZINTA 3900 RNW 24 TRK 236 UNTIL 2000",
+                "AGC": "AGC AT OR ABOVE 5000 HOLD AT AGC RIGHT TURN INBOUNDCOURSE 056 LEGTIME 1 FAF ZINTA MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "IGOCI",
+                    "fixes": {
+                        "IGOCI": "IGOCI RIGHT TURN INBOUNDCOURSE 236 ALT 4200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "WETAB": "WETAB AT OR ABOVE 4000",
+                "ARNIE": "ARNIE 2700 RNW 06 TRK 056 UNTIL 1449",
+                "IGOCI": "OVERFLY IGOCI AT OR ABOVE 4200 HOLD AT IGOCI RIGHT TURN INBOUNDCOURSE 236 LEGDIST 5 FAF ARNIE MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "WETAB",
+                    "fixes": {
+                        "WETAB": "WETAB RIGHT TURN INBOUNDCOURSE 056 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "IGOCI": "IGOCI AT OR ABOVE 4200",
+                "ZINTA": "ZINTA 3900",
+                "XICBU": "XICBU AT OR ABOVE 2140 RNW 24 TRK 236 UNTIL 1345",
+                "WETAB": "OVERFLY WETAB AT OR ABOVE 4200 HOLD AT WETAB RIGHT TURN INBOUNDCOURSE 056 ALT 4200 LEGDIST 4 FAF ZINTA MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "IGOCI",
+                    "fixes": {
+                        "IGOCI": "IGOCI RIGHT TURN INBOUNDCOURSE 236 ALT 4200 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

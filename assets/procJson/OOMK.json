@@ -1,0 +1,198 @@
+{
+    "fixes": [
+        {
+            "name": "GIVNO",
+            "lat": 19.836388883333335,
+            "lon": 56.516388883333335
+        },
+        {
+            "name": "MK201",
+            "lat": 19.321688883333334,
+            "lon": 56.46646943333333
+        },
+        {
+            "name": "MK202",
+            "lat": 19.249016666666666,
+            "lon": 56.53945556666667
+        },
+        {
+            "name": "MK203",
+            "lat": 19.289230566666667,
+            "lon": 56.63635
+        },
+        {
+            "name": "MK204",
+            "lat": 19.15904443333333,
+            "lon": 56.492505566666665
+        },
+        {
+            "name": "MK311",
+            "lat": 19.458077783333334,
+            "lon": 56.329236116666664
+        },
+        {
+            "name": "MK312",
+            "lat": 19.530727783333333,
+            "lon": 56.25598888333333
+        },
+        {
+            "name": "MK313",
+            "lat": 19.620755566666666,
+            "lon": 56.302908333333335
+        },
+        {
+            "name": "MK314",
+            "lat": 19.490308333333335,
+            "lon": 56.15905278333334
+        },
+        {
+            "name": "MK316",
+            "lat": 19.32524443333333,
+            "lon": 56.32545556666667
+        },
+        {
+            "name": "MK461",
+            "lat": 20.156236116666665,
+            "lon": 56.51876111666667
+        },
+        {
+            "name": "MK462",
+            "lat": 19.891769433333334,
+            "lon": 56.368169433333335
+        },
+        {
+            "name": "MK463",
+            "lat": 19.650119433333334,
+            "lon": 56.47599721666667
+        },
+        {
+            "name": "MK464",
+            "lat": 19.550830566666665,
+            "lon": 56.601016666666666
+        },
+        {
+            "name": "MK466",
+            "lat": 19.509130566666666,
+            "lon": 56.63153333333333
+        },
+        {
+            "name": "MOBAB",
+            "lat": 20.175555566666667,
+            "lon": 56.7375
+        },
+        {
+            "name": "ORSIT",
+            "lat": 20.385,
+            "lon": 56.4875
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "MOBA1A",
+            "rnw": "14",
+            "fixes": {
+                "MK201": "OVERFLY MK201 TURN LEFT DIRECT",
+                "MK466": "MK466",
+                "MOBAB": "MOBAB 15000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MOBA1B",
+            "rnw": "32",
+            "fixes": {
+                "MK311": "OVERFLY MK311 TURN RIGHT DIRECT",
+                "GIVNO": "GIVNO AT OR BELOW 10000",
+                "MOBAB": "MOBAB 15000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ORSI1A",
+            "runway": "RNW 14",
+            "fixes": {
+                "ORSIT": "ORSIT AT OR BELOW 15000",
+                "MK462": "MK462",
+                "MK313": "MK313 AT OR ABOVE 3000 SPEED 210"
+            }
+        },
+        {
+            "name": "ORSI1B",
+            "runway": "RNW 32",
+            "fixes": {
+                "ORSIT": "ORSIT AT OR BELOW 15000",
+                "MK461": "MK461 AT OR BELOW 14000",
+                "MK464": "MK464",
+                "MK203": "MK203 AT OR ABOVE 3000 SPEED 210"
+            }
+        },
+        {
+            "name": "ORSI1C",
+            "runway": "RNW 32",
+            "fixes": {
+                "ORSIT": "ORSIT AT OR BELOW 15000",
+                "MK462": "MK462",
+                "MK463": "MK463 AT OR ABOVE 10000",
+                "MK203": "MK203 AT OR ABOVE 3000 SPEED 210"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "MK312": "MK312 AT OR ABOVE 2000",
+                "MK311": "MK311 2000 RNW 14",
+                "MK201": "OVERFLY MK201 SPEED 210 TURN RIGHT DIRECT",
+                "MK316": "MK316 SPEED 210",
+                "MK314": "OVERFLY MK314 AT OR ABOVE 3000 SPEED 210 HOLD AT MK314 LEFT TURN INBOUNDCOURSE 065 ALT 3000 SPEED 210 LEGTIME 1 FAF MK311 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "MK313",
+                    "fixes": {
+                        "MK313": "MK313 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MK314",
+                    "fixes": {
+                        "MK314": "MK314 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "MK202": "MK202 AT OR ABOVE 2000",
+                "MK201": "MK201 2000 RNW 32",
+                "MK311": "OVERFLY MK311 SPEED 210 TURN LEFT DIRECT",
+                "MK316": "MK316 SPEED 210",
+                "MK204": "OVERFLY MK204 AT OR ABOVE 3000 SPEED 210 HOLD AT MK204 LEFT TURN INBOUNDCOURSE 025 ALT 3000 SPEED 210 LEGTIME 1 FAF MK201 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "MK203",
+                    "fixes": {
+                        "MK203": "MK203 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MK204",
+                    "fixes": {
+                        "MK204": "MK204 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

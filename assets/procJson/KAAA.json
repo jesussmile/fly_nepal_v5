@@ -1,0 +1,145 @@
+{
+    "fixes": [
+        {
+            "name": "GROWL",
+            "lat": 40.08334443333333,
+            "lon": 89.71078888333334
+        },
+        {
+            "name": "LATHA",
+            "lat": 39.78219166666667,
+            "lon": 89.20923333333333
+        },
+        {
+            "name": "MCLEN",
+            "lat": 40.40527221666667,
+            "lon": 89.13793056666667
+        },
+        {
+            "name": "OBACO",
+            "lat": 39.9544,
+            "lon": 89.40619166666667
+        },
+        {
+            "name": "PIMKE",
+            "lat": 40.31873888333333,
+            "lon": 89.18693611666667
+        },
+        {
+            "name": "QUOTA",
+            "lat": 40.08387221666667,
+            "lon": 89.41513888333333
+        },
+        {
+            "name": "RUCON",
+            "lat": 40.082883333333335,
+            "lon": 89.40484166666667
+        },
+        {
+            "name": "SICOT",
+            "lat": 39.99399721666666,
+            "lon": 89.51210278333333
+        },
+        {
+            "name": "SPI",
+            "lat": 39.839733333333335,
+            "lon": 89.67773611666667
+        },
+        {
+            "name": "TENCU",
+            "lat": 39.996658333333336,
+            "lon": 89.48404443333334
+        },
+        {
+            "name": "ZOPOP",
+            "lat": 40.232602783333334,
+            "lon": 89.26673333333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 14",
+        "RNW 21",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "TENCU": "TENCU AT OR ABOVE 2500",
+                "RUCON": "RUCON 2300 RNW 03 TRK 035 UNTIL 997",
+                "PIMKE": "OVERFLY PIMKE AT OR ABOVE 2700 HOLD AT PIMKE RIGHT TURN INBOUNDCOURSE 215 LEGDIST 4 FAF RUCON MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "GROWL",
+                    "fixes": {
+                        "GROWL": "GROWL"
+                    }
+                },
+                {
+                    "name": "LATHA",
+                    "fixes": {
+                        "LATHA": "LATHA"
+                    }
+                },
+                {
+                    "name": "OBACO",
+                    "fixes": {
+                        "OBACO": "OBACO"
+                    }
+                },
+                {
+                    "name": "SPI",
+                    "fixes": {
+                        "SPI": "SPI"
+                    }
+                },
+                {
+                    "name": "TENCU",
+                    "fixes": {
+                        "TENCU": "TENCU RIGHT TURN INBOUNDCOURSE 035 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "PIMKE": "PIMKE AT OR ABOVE 2700 OVERFLY PIMKE AT OR ABOVE 2700 HOLD AT PIMKE RIGHT TURN INBOUNDCOURSE 215 LEGDIST 4 FAF ZOPOP MAP RNW 21",
+                "ZOPOP": "ZOPOP 2300 RNW 21 TRK 215 UNTIL 997 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MCLEN",
+                    "fixes": {
+                        "MCLEN": "MCLEN"
+                    }
+                },
+                {
+                    "name": "PIMKE",
+                    "fixes": {
+                        "PIMKE": "PIMKE RIGHT TURN INBOUNDCOURSE 215 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR03",
+            "fixes": {
+                "QUOTA": "QUOTA 2400 RNW 03 TRK 041 UNTIL 2000 TURN RIGHT DIRECT QUOTA AT OR ABOVE 2400 HOLD AT QUOTA RIGHT TURN INBOUNDCOURSE 041 LEGDIST 4 FAF QUOTA MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "SPI",
+                    "fixes": {
+                        "SPI": "SPI AT OR ABOVE 2400",
+                        "SICOT": "SICOT AT OR ABOVE 2400"
+                    }
+                }
+            ]
+        }
+    ]
+}

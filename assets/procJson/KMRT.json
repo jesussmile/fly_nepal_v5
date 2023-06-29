@@ -1,0 +1,66 @@
+{
+    "fixes": [
+        {
+            "name": "KUTAW",
+            "lat": 40.20338888333333,
+            "lon": 83.57499166666666
+        },
+        {
+            "name": "NESWU",
+            "lat": 40.2455,
+            "lon": 83.12851111666667
+        },
+        {
+            "name": "YODTU",
+            "lat": 40.21665556666667,
+            "lon": 83.43635833333333
+        },
+        {
+            "name": "ZEVAB",
+            "lat": 40.23275556666667,
+            "lon": 83.26565
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 09",
+        "RNW 26",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "KUTAW": "KUTAW AT OR ABOVE 3000",
+                "YODTU": "YODTU 2200 RNW 09 TRK 088 UNTIL 1421",
+                "NESWU": "OVERFLY NESWU AT OR ABOVE 3000 HOLD AT NESWU RIGHT TURN INBOUNDCOURSE 268 LEGDIST 4 FAF YODTU MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "KUTAW",
+                    "fixes": {
+                        "KUTAW": "KUTAW RIGHT TURN INBOUNDCOURSE 088 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "NESWU": "NESWU AT OR ABOVE 3000",
+                "ZEVAB": "ZEVAB 2200 RNW 27 TRK 268 UNTIL 1360",
+                "KUTAW": "OVERFLY KUTAW AT OR ABOVE 3000 HOLD AT KUTAW RIGHT TURN INBOUNDCOURSE 088 LEGDIST 4 FAF ZEVAB MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "NESWU",
+                    "fixes": {
+                        "NESWU": "NESWU RIGHT TURN INBOUNDCOURSE 268 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

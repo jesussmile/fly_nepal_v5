@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "HUVLA",
+            "lat": 35.823630566666665,
+            "lon": 98.73101666666666
+        },
+        {
+            "name": "JIPYO",
+            "lat": 35.923777783333335,
+            "lon": 98.73155556666667
+        },
+        {
+            "name": "YIXGA",
+            "lat": 35.643180566666665,
+            "lon": 98.73005278333333
+        },
+        {
+            "name": "ZARMU",
+            "lat": 35.543027783333336,
+            "lon": 98.72951666666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "JIPYO": "JIPYO AT OR ABOVE 4000",
+                "HUVLA": "HUVLA 3400 RNW 17 TRK 175 UNTIL 2033",
+                "ZARMU": "OVERFLY ZARMU AT OR ABOVE 4000 HOLD AT ZARMU RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF HUVLA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "JIPYO",
+                    "fixes": {
+                        "JIPYO": "JIPYO RIGHT TURN INBOUNDCOURSE 175 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ZARMU": "ZARMU AT OR ABOVE 4000",
+                "YIXGA": "YIXGA 3400 RNW 35 TRK 355 UNTIL 2035",
+                "JIPYO": "OVERFLY JIPYO AT OR ABOVE 4000 HOLD AT JIPYO RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF YIXGA MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "ZARMU",
+                    "fixes": {
+                        "ZARMU": "ZARMU RIGHT TURN INBOUNDCOURSE 355 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

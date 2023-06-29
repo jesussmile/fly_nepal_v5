@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "WOGUT",
+            "lat": 35.64185833333333,
+            "lon": 87.52400278333333
+        },
+        {
+            "name": "WOXUS",
+            "lat": 35.926458333333336,
+            "lon": 87.40940556666666
+        },
+        {
+            "name": "ZAVOS",
+            "lat": 36.03224443333333,
+            "lon": 87.36655833333333
+        },
+        {
+            "name": "ZIDKI",
+            "lat": 35.74773056666667,
+            "lon": 87.48148611666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "WOGUT": "WOGUT AT OR ABOVE 3000",
+                "ZIDKI": "ZIDKI 2500 RNW 02 TRK 021 UNTIL 1140",
+                "ZAVOS": "OVERFLY ZAVOS AT OR ABOVE 3000 HOLD AT ZAVOS RIGHT TURN INBOUNDCOURSE 201 LEGDIST 4 FAF ZIDKI MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "WOGUT",
+                    "fixes": {
+                        "WOGUT": "WOGUT RIGHT TURN INBOUNDCOURSE 021 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "ZAVOS": "ZAVOS AT OR ABOVE 3000",
+                "WOXUS": "WOXUS 2500 RNW 20 TRK 201 UNTIL 1160",
+                "WOGUT": "OVERFLY WOGUT AT OR ABOVE 3000 HOLD AT WOGUT RIGHT TURN INBOUNDCOURSE 021 LEGDIST 4 FAF WOXUS MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "ZAVOS",
+                    "fixes": {
+                        "ZAVOS": "ZAVOS RIGHT TURN INBOUNDCOURSE 201 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

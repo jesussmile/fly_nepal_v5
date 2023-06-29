@@ -1,0 +1,251 @@
+{
+    "fixes": [
+        {
+            "name": "BINDO",
+            "lat": 29.680277783333334,
+            "lon": 71.03111111666666
+        },
+        {
+            "name": "DG181",
+            "lat": 29.947222216666667,
+            "lon": 70.52055556666667
+        },
+        {
+            "name": "DG182",
+            "lat": 29.87825,
+            "lon": 70.65213888333334
+        },
+        {
+            "name": "DG183",
+            "lat": 30.126666666666665,
+            "lon": 70.51
+        },
+        {
+            "name": "DG361",
+            "lat": 30.057,
+            "lon": 70.48752778333333
+        },
+        {
+            "name": "DG362",
+            "lat": 30.130805566666666,
+            "lon": 70.50405556666666
+        },
+        {
+            "name": "DG371",
+            "lat": 29.864027783333334,
+            "lon": 70.48363888333333
+        },
+        {
+            "name": "DG372",
+            "lat": 29.788833333333333,
+            "lon": 70.48211111666667
+        },
+        {
+            "name": "DGNB",
+            "lat": 29.962188883333333,
+            "lon": 70.49034721666666
+        },
+        {
+            "name": "EN36",
+            "lat": 29.951822216666667,
+            "lon": 70.48824721666666
+        },
+        {
+            "name": "FN18",
+            "lat": 30.07885,
+            "lon": 70.48096666666666
+        },
+        {
+            "name": "FN36",
+            "lat": 29.875311116666666,
+            "lon": 70.47276943333334
+        },
+        {
+            "name": "GURNU",
+            "lat": 29.755555566666665,
+            "lon": 70.67083333333333
+        },
+        {
+            "name": "MELUK",
+            "lat": 30.200277783333334,
+            "lon": 70.99972221666667
+        },
+        {
+            "name": "MT",
+            "lat": 30.19404443333333,
+            "lon": 71.41622778333333
+        },
+        {
+            "name": "NOBUR",
+            "lat": 30.127777783333332,
+            "lon": 70.69666666666667
+        },
+        {
+            "name": "UPVAL",
+            "lat": 30.221944433333334,
+            "lon": 70.52138888333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "BIND1A",
+            "rnw": "18",
+            "fixes": {
+                "DG182": "DG182 SPEED 210",
+                "BINDO": "BINDO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BIND1B",
+            "rnw": "36",
+            "fixes": {
+                "DG181": "DG181 SPEED 210",
+                "BINDO": "BINDO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UPVA1A",
+            "rnw": "18",
+            "fixes": {
+                "DG183": "DG183 SPEED 210",
+                "UPVAL": "UPVAL"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "MT",
+                    "fixes": [
+                        "MELUK",
+                        "MT"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "UPVA1B",
+            "rnw": "36",
+            "fixes": {
+                "DG183": "DG183 SPEED 210",
+                "UPVAL": "UPVAL"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "MT",
+                    "fixes": [
+                        "MELUK",
+                        "MT"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA18",
+            "fixes": {
+                "FN18": "FN18 2500",
+                "DGNB": "DGNB 1300 RNW 18 TRK 174 UNTIL 2000 TURN RIGHT DIRECT DGNB 4000 FAF FN18 MAP DG"
+            },
+            "transitions": [
+                {
+                    "name": "DG1",
+                    "fixes": {
+                        "DGNB": "DGNB AT OR ABOVE 4000 TRK 018 UNTIL 7.0 FROM DGNB"
+                    }
+                },
+                {
+                    "name": "DG2",
+                    "fixes": {
+                        "DGNB": "DGNB AT OR ABOVE 4000 TRK 010 UNTIL 7.5 FROM DGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB36",
+            "fixes": {
+                "FN36": "FN36 2200",
+                "EN36": "OVERFLY EN36 519",
+                "DGNB": "OVERFLY DGNB AT OR ABOVE 900 RNW 36 TRK 008 UNTIL 2000 TURN LEFT DIRECT DGNB 4000 FAF FN36 MAP DG"
+            },
+            "transitions": [
+                {
+                    "name": "DG1",
+                    "fixes": {
+                        "DGNB": "DGNB AT OR ABOVE 4000 TRK 163 UNTIL 7.0 FROM DGNB"
+                    }
+                },
+                {
+                    "name": "DG2",
+                    "fixes": {
+                        "DGNB": "DGNB AT OR ABOVE 4000 TRK 175 UNTIL 9.0 FROM DGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA36",
+            "fixes": {
+                "FN18": "FN18 2500",
+                "DGNB": "DGNB 1300 RNW 36 TRK 174 UNTIL 2000 TURN RIGHT DIRECT DGNB 4000 FAF FN18 MAP DG"
+            },
+            "transitions": [
+                {
+                    "name": "DG1",
+                    "fixes": {
+                        "DGNB": "DGNB AT OR ABOVE 4000 TRK 018 UNTIL 7.0 FROM DGNB"
+                    }
+                },
+                {
+                    "name": "DG2",
+                    "fixes": {
+                        "DGNB": "DGNB AT OR ABOVE 4000 TRK 010 UNTIL 7.5 FROM DGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "DG362": "DG362 AT OR ABOVE 3000 SPEED 210",
+                "DG361": "DG361 2200 RNW 18 TRK 179 UNTIL 2000 TURN LEFT DIRECT",
+                "GURNU": "OVERFLY GURNU 4000 SPEED 210 FAF DG361 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "NOBUR",
+                    "fixes": {
+                        "NOBUR": "NOBUR AT OR ABOVE 6000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DG372": "DG372 AT OR ABOVE 3000 SPEED 210",
+                "DG371": "DG371 2200 RNW 36",
+                "DG361": "OVERFLY DG361 TURN RIGHT DIRECT",
+                "NOBUR": "OVERFLY NOBUR 4000 SPEED 210 FAF DG371 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "GURNU",
+                    "fixes": {
+                        "GURNU": "GURNU AT OR ABOVE 6000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

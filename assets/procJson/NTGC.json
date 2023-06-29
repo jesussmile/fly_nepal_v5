@@ -1,0 +1,73 @@
+{
+    "fixes": [
+        {
+            "name": "GC401",
+            "lat": 15.14025,
+            "lon": 148.31233333333333
+        },
+        {
+            "name": "GC403",
+            "lat": 15.062833333333334,
+            "lon": 148.33591666666666
+        },
+        {
+            "name": "KABLU",
+            "lat": 15.08025,
+            "lon": 148.41733333333335
+        },
+        {
+            "name": "KEVOL",
+            "lat": 15.161277783333333,
+            "lon": 148.39572221666666
+        },
+        {
+            "name": "KILIL",
+            "lat": 15.242277783333334,
+            "lon": 148.37408333333335
+        },
+        {
+            "name": "OLKID",
+            "lat": 15.120333333333333,
+            "lon": 148.2335
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "KEVOL": "KEVOL AT OR ABOVE 1500 KEVOL AT OR ABOVE 1500 FAF GC401 MAP RNW 06",
+                "GC401": "GC401 1500 RNW 06 TRK 063 UNTIL 800 TURN LEFT DIRECT",
+                "GC403": "GC403",
+                "KABLU": "KABLU AT OR ABOVE 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KABLU",
+                    "fixes": {
+                        "KABLU": "KABLU AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "KILIL",
+                    "fixes": {
+                        "KILIL": "KILIL AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "OLKID",
+                    "fixes": {
+                        "OLKID": "OLKID AT OR ABOVE 1500",
+                        "GC403": "GC403",
+                        "KABLU": "KABLU"
+                    }
+                }
+            ]
+        }
+    ]
+}

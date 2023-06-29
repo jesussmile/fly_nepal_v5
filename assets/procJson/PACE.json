@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "BACMY",
+            "lat": 65.54043056666667,
+            "lon": 146.13343611666667
+        },
+        {
+            "name": "FAPEP",
+            "lat": 65.59909166666667,
+            "lon": 145.03726943333334
+        },
+        {
+            "name": "FINOD",
+            "lat": 65.54186943333333,
+            "lon": 144.46068333333332
+        },
+        {
+            "name": "INDEY",
+            "lat": 65.68248333333334,
+            "lon": 145.35715
+        },
+        {
+            "name": "IPELE",
+            "lat": 65.51800278333333,
+            "lon": 144.22725556666666
+        },
+        {
+            "name": "NATSE",
+            "lat": 65.69037221666666,
+            "lon": 145.59815833333334
+        },
+        {
+            "name": "ZIDAB",
+            "lat": 65.59374721666667,
+            "lon": 144.98235556666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "BACMY2",
+            "rnw": "24R",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 08",
+                    "fixes": {
+                        "RNW 08": "RNW 08 HDG 083 UNTIL 3500 TURN RIGHT DIRECT",
+                        "BACMY": "BACMY 8000"
+                    }
+                },
+                {
+                    "rwy": "RNW 26",
+                    "fixes": {
+                        "RNW 26": "RNW 26 HDG 263 UNTIL 5900",
+                        "BACMY": "BACMY 8000"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "INDEY": "INDEY AT OR ABOVE 5900",
+                "FAPEP": "FAPEP 3000",
+                "ZIDAB": "ZIDAB AT OR ABOVE 2540 RNW 08 TRK 083 UNTIL 3700 TURN RIGHT DIRECT",
+                "BACMY": "OVERFLY BACMY AT OR ABOVE 8000 HOLD AT BACMY RIGHT TURN INBOUNDCOURSE 036 LEGDIST 7 FAF FAPEP MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "BACMY",
+                    "fixes": {
+                        "BACMY": "BACMY",
+                        "NATSE": "NATSE AT OR ABOVE 8000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "IPELE": "IPELE AT OR ABOVE 5400",
+                "FINOD": "FINOD 3500 RNW 26 TRK 264 UNTIL 1337 TURN LEFT DIRECT",
+                "BACMY": "OVERFLY BACMY AT OR ABOVE 8000 HOLD AT BACMY RIGHT TURN INBOUNDCOURSE 036 LEGDIST 7 FAF FINOD MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BACMY",
+                    "fixes": {
+                        "BACMY": "BACMY",
+                        "IPELE": "OVERFLY IPELE AT OR ABOVE 7500 HOLD AT IPELE RIGHT TURN INBOUNDCOURSE 264 ALT 5400 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

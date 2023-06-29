@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "JOLOP",
+            "lat": 30.322775,
+            "lon": 98.29130833333333
+        },
+        {
+            "name": "STV",
+            "lat": 30.206758333333333,
+            "lon": 98.70575556666667
+        },
+        {
+            "name": "WITEB",
+            "lat": 30.514013883333334,
+            "lon": 98.57563888333334
+        },
+        {
+            "name": "WUDUT",
+            "lat": 30.427122216666667,
+            "lon": 98.44619166666666
+        },
+        {
+            "name": "YEYAW",
+            "lat": 30.585583333333332,
+            "lon": 98.68258056666667
+        },
+        {
+            "name": "ZUBUG",
+            "lat": 30.394558333333332,
+            "lon": 98.39779166666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "YEYAW": "YEYAW AT OR ABOVE 4100",
+                "WITEB": "WITEB 3100 RNW 12 TRK 124 UNTIL 2100 TURN RIGHT DIRECT",
+                "STV": "OVERFLY STV AT OR ABOVE 4100 HOLD AT STV RIGHT TURN INBOUNDCOURSE 165 LEGDIST 5 FAF WITEB MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "YEYAW",
+                    "fixes": {
+                        "YEYAW": "YEYAW RIGHT TURN INBOUNDCOURSE 124 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "JOLOP": "JOLOP AT OR ABOVE 4100",
+                "ZUBUG": "ZUBUG 3300",
+                "WUDUT": "WUDUT AT OR ABOVE 2240 RNW 30 TRK 304 UNTIL 2200 TURN LEFT DIRECT",
+                "STV": "OVERFLY STV AT OR ABOVE 4100 HOLD AT STV RIGHT TURN INBOUNDCOURSE 165 LEGDIST 5 FAF ZUBUG MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "JOLOP",
+                    "fixes": {
+                        "JOLOP": "JOLOP RIGHT TURN INBOUNDCOURSE 304 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

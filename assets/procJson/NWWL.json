@@ -1,0 +1,189 @@
+{
+    "fixes": [
+        {
+            "name": "FN12Y",
+            "lat": 20.722286116666666,
+            "lon": 167.18548333333334
+        },
+        {
+            "name": "FN12Z",
+            "lat": 20.724538883333334,
+            "lon": 167.18771388333334
+        },
+        {
+            "name": "FN30",
+            "lat": 20.816838883333332,
+            "lon": 167.29068333333333
+        },
+        {
+            "name": "FWL12",
+            "lat": 20.717805566666666,
+            "lon": 167.17880556666665
+        },
+        {
+            "name": "FWL30",
+            "lat": 20.825222216666667,
+            "lon": 167.29330556666667
+        },
+        {
+            "name": "IWL12",
+            "lat": 20.676444433333334,
+            "lon": 167.13477778333333
+        },
+        {
+            "name": "IWL30",
+            "lat": 20.866527783333332,
+            "lon": 167.33741666666666
+        },
+        {
+            "name": "LFU",
+            "lat": 20.774194433333335,
+            "lon": 167.24055556666667
+        },
+        {
+            "name": "LUNB",
+            "lat": 20.775305566666667,
+            "lon": 167.23802778333334
+        },
+        {
+            "name": "ONULU",
+            "lat": 20.90675,
+            "lon": 167.07897221666667
+        },
+        {
+            "name": "WL600",
+            "lat": 20.71786111666667,
+            "lon": 167.09083333333334
+        },
+        {
+            "name": "WL610",
+            "lat": 20.794055566666668,
+            "lon": 167.26008333333334
+        },
+        {
+            "name": "WL700",
+            "lat": 20.908,
+            "lon": 167.29344443333332
+        },
+        {
+            "name": "WL710",
+            "lat": 20.754777783333335,
+            "lon": 167.21819443333334
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBY12",
+            "fixes": {
+                "FN12Y": "FN12Y 1400 RNW 12",
+                "LUNB": "OVERFLY LUNB TRK 125 UNTIL 1500 FAF FN12Y MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "LU",
+                    "fixes": {
+                        "LUNB": "LUNB TRK 319 UNTIL 7.5 FROM LUNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDZ12",
+            "fixes": {
+                "FN12Z": "FN12Z 1500 RNW 12",
+                "LUNB": "OVERFLY LUNB TRK 125 UNTIL 1500 FAF FN12Z MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "LU",
+                    "fixes": {
+                        "LUNB": "LUNB TRK 326 UNTIL 6.0 FROM",
+                        "LFU": "LFU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD30",
+            "fixes": {
+                "FN30": "FN30 1500 RNW 30",
+                "LUNB": "OVERFLY LUNB TRK 298 UNTIL 1500 FAF FN30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "LU",
+                    "fixes": {
+                        "LUNB": "LUNB TRK 139 UNTIL 6.0 FROM",
+                        "LFU": "LFU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "IWL12": "IWL12 AT OR ABOVE 1700 SPEED 175 IWL12 AT OR BELOW 1700 SPEED 175 HOLD AT IWL12 LEFT TURN INBOUNDCOURSE 123 LEGTIME 1 FAF FWL12 MAP RNW 12",
+                "FWL12": "FWL12 1700 RNW 12",
+                "WL610": "OVERFLY WL610 TURN RIGHT DIRECT",
+                "WL600": "WL600 SPEED 175"
+            },
+            "transitions": [
+                {
+                    "name": "IWL12",
+                    "fixes": {
+                        "IWL12": "IWL12 LEFT TURN INBOUNDCOURSE 123 ALT 1700 SPEED 175 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "ONULU",
+                    "fixes": {
+                        "ONULU": "ONULU AT OR ABOVE 1700 SPEED 180",
+                        "WL600": "WL600 AT OR ABOVE 1700 SPEED 175"
+                    }
+                },
+                {
+                    "name": "WL600",
+                    "fixes": {
+                        "WL600": "WL600 AT OR ABOVE 1700 SPEED 175"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IWL30": "IWL30 AT OR ABOVE 1700 SPEED 175 IWL30 AT OR BELOW 1700 SPEED 175 HOLD AT IWL30 RIGHT TURN INBOUNDCOURSE 303 LEGTIME 1 FAF FWL30 MAP RNW 30",
+                "FWL30": "FWL30 1700 RNW 30",
+                "WL710": "OVERFLY WL710 TURN LEFT DIRECT",
+                "WL700": "WL700 SPEED 175"
+            },
+            "transitions": [
+                {
+                    "name": "IWL30",
+                    "fixes": {
+                        "IWL30": "IWL30 RIGHT TURN INBOUNDCOURSE 303 ALT 1700 SPEED 175 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "ONULU",
+                    "fixes": {
+                        "ONULU": "ONULU AT OR ABOVE 1700 SPEED 180",
+                        "WL700": "WL700 AT OR ABOVE 1700 SPEED 175"
+                    }
+                },
+                {
+                    "name": "WL700",
+                    "fixes": {
+                        "WL700": "WL700 AT OR ABOVE 1700 SPEED 175"
+                    }
+                }
+            ]
+        }
+    ]
+}

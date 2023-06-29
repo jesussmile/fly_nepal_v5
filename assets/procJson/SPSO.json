@@ -1,0 +1,242 @@
+{
+    "fixes": [
+        {
+            "name": "30VOR",
+            "lat": 13.6991,
+            "lon": 76.18096943333333
+        },
+        {
+            "name": "AF001",
+            "lat": 13.590300233333334,
+            "lon": 76.23622578333334
+        },
+        {
+            "name": "AF002",
+            "lat": 13.588835166666666,
+            "lon": 76.20332901666667
+        },
+        {
+            "name": "AF003",
+            "lat": 13.59418375,
+            "lon": 76.17086043333333
+        },
+        {
+            "name": "ASOXI",
+            "lat": 12.760638883333334,
+            "lon": 76.606475
+        },
+        {
+            "name": "CI22T",
+            "lat": 13.634008333333334,
+            "lon": 76.12712778333334
+        },
+        {
+            "name": "CI22U",
+            "lat": 13.672875,
+            "lon": 76.15964721666667
+        },
+        {
+            "name": "CI22V",
+            "lat": 13.621341666666666,
+            "lon": 76.11646666666667
+        },
+        {
+            "name": "CS22T",
+            "lat": 13.633333333333333,
+            "lon": 76.12802778333334
+        },
+        {
+            "name": "CS22U",
+            "lat": 13.672316666666667,
+            "lon": 76.16041666666666
+        },
+        {
+            "name": "CS22V",
+            "lat": 13.620177783333334,
+            "lon": 76.11744166666666
+        },
+        {
+            "name": "D030I",
+            "lat": 13.605522216666667,
+            "lon": 76.14043611666666
+        },
+        {
+            "name": "ESEDI",
+            "lat": 12.57725,
+            "lon": 76.95177778333333
+        },
+        {
+            "name": "GEBED",
+            "lat": 13.193597216666667,
+            "lon": 76.43258611666667
+        },
+        {
+            "name": "KOLMI",
+            "lat": 13.673055566666667,
+            "lon": 76.16
+        },
+        {
+            "name": "KOPRA",
+            "lat": 13.4063,
+            "lon": 76.70091111666666
+        },
+        {
+            "name": "MUMOP",
+            "lat": 13.567222216666666,
+            "lon": 76.28194443333334
+        },
+        {
+            "name": "SCO",
+            "lat": 13.738555566666667,
+            "lon": 76.21275
+        },
+        {
+            "name": "SILAM",
+            "lat": 13.695,
+            "lon": 76.17833333333333
+        },
+        {
+            "name": "TELOT",
+            "lat": 13.241675,
+            "lon": 76.52998611666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [
+        {
+            "name": "KOPRA1",
+            "rnw": "22",
+            "fixes": {
+                "KOPRA": "KOPRA",
+                "ESEDI": "ESEDI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TELOT1",
+            "rnw": "22",
+            "fixes": {
+                "TELOT": "TELOT",
+                "ESEDI": "ESEDI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "GEBED3",
+            "runway": "RNW 22",
+            "fixes": {
+                "ASOXI": "ASOXI AT OR ABOVE 8000",
+                "GEBED": "GEBED AT OR BELOW 7000 SPEED 240",
+                "MUMOP": "MUMOP AT OR ABOVE 4000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORDT22",
+            "fixes": {
+                "CS22T": "CS22T AT OR ABOVE 1800",
+                "KOLMI": "KOLMI 1600",
+                "30VOR": "30VOR AT OR ABOVE 960 RNW 22",
+                "SCO": "SCO TRK 250 VECTORS FAF KOLMI MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "SCO",
+                    "fixes": {
+                        "SCO": "SCO AT OR ABOVE 3000 TRK 017 UNTIL 8.0 FROM SCO SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDU22",
+            "fixes": {
+                "CS22U": "CS22U AT OR ABOVE 1600",
+                "SILAM": "SILAM 1000 RNW 22",
+                "SCO": "SCO TRK 250 VECTORS FAF SILAM MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "SCO",
+                    "fixes": {
+                        "SCO": "SCO AT OR ABOVE 3000 TRK 022 UNTIL 5.0 FROM SCO SPEED 140"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDV22",
+            "fixes": {
+                "CS22V": "CS22V AT OR ABOVE 1800",
+                "KOLMI": "KOLMI 1600",
+                "30VOR": "30VOR AT OR ABOVE 960 RNW 22",
+                "SCO": "SCO TRK 250 VECTORS FAF KOLMI MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "MUMOP",
+                    "fixes": {
+                        "MUMOP": "MUMOP AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILST22",
+            "fixes": {
+                "CI22T": "CI22T AT OR ABOVE 1800",
+                "KOLMI": "KOLMI 1600 RNW 22 TRK 222 UNTIL 440 TRK 250 VECTORS FAF KOLMI MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "SCO",
+                    "fixes": {
+                        "SCO": "SCO AT OR ABOVE 3000 TRK 017 UNTIL 8.0 FROM SCO SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSU22",
+            "fixes": {
+                "CI22U": "CI22U AT OR ABOVE 1600",
+                "SILAM": "SILAM 1000 RNW 22 TRK 222 UNTIL 440 TRK 250 VECTORS FAF SILAM MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "SCO",
+                    "fixes": {
+                        "SCO": "SCO AT OR ABOVE 3000 TRK 022 UNTIL 5.0 FROM SCO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSV22",
+            "fixes": {
+                "CI22V": "CI22V AT OR ABOVE 1800",
+                "KOLMI": "KOLMI 1600 RNW 22 TRK 222 UNTIL 440 TRK 250 VECTORS FAF KOLMI MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "MUMOP",
+                    "fixes": {
+                        "MUMOP": "MUMOP AT OR ABOVE 4000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D030I": "D030I AT OR ABOVE 1800"
+                    }
+                }
+            ]
+        }
+    ]
+}

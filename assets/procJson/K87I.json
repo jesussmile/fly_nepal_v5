@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "ARUKY",
+            "lat": 33.04958333333333,
+            "lon": 90.48419443333333
+        },
+        {
+            "name": "FEMIK",
+            "lat": 32.93185,
+            "lon": 90.46986666666666
+        },
+        {
+            "name": "TEZLU",
+            "lat": 32.79001111666667,
+            "lon": 90.45264721666666
+        },
+        {
+            "name": "UTASY",
+            "lat": 32.70694721666667,
+            "lon": 90.44258888333333
+        },
+        {
+            "name": "UTDOL",
+            "lat": 32.966525,
+            "lon": 90.47408056666667
+        },
+        {
+            "name": "ZIGEL",
+            "lat": 32.83511943333333,
+            "lon": 90.45811666666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "ARUKY": "ARUKY AT OR ABOVE 2000",
+                "UTDOL": "UTDOL 1600",
+                "FEMIK": "FEMIK AT OR ABOVE 920 RNW 17 TRK 174 UNTIL 460",
+                "UTASY": "OVERFLY UTASY AT OR ABOVE 2000 HOLD AT UTASY RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF UTDOL MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ARUKY",
+                    "fixes": {
+                        "ARUKY": "ARUKY RIGHT TURN INBOUNDCOURSE 174 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "UTASY": "UTASY AT OR ABOVE 2000",
+                "TEZLU": "TEZLU 1800",
+                "ZIGEL": "ZIGEL AT OR ABOVE 920 RNW 35 TRK 354 UNTIL 460",
+                "ARUKY": "OVERFLY ARUKY AT OR ABOVE 2000 HOLD AT ARUKY RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF TEZLU MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "UTASY",
+                    "fixes": {
+                        "UTASY": "UTASY RIGHT TURN INBOUNDCOURSE 354 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

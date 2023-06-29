@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "BOGME",
+            "lat": 32.26626666666667,
+            "lon": 86.92569443333333
+        },
+        {
+            "name": "BOTAY",
+            "lat": 32.51044443333333,
+            "lon": 87.12137778333333
+        },
+        {
+            "name": "CADIP",
+            "lat": 32.16908888333333,
+            "lon": 86.84819443333333
+        },
+        {
+            "name": "CURPA",
+            "lat": 32.426291666666664,
+            "lon": 87.05378611666667
+        },
+        {
+            "name": "MGM",
+            "lat": 32.22228056666667,
+            "lon": 86.31972778333333
+        },
+        {
+            "name": "POLLK",
+            "lat": 32.26943333333333,
+            "lon": 86.92822778333333
+        },
+        {
+            "name": "WELRU",
+            "lat": 32.375152783333334,
+            "lon": 87.01279166666667
+        },
+        {
+            "name": "ZEMUM",
+            "lat": 32.30858333333333,
+            "lon": 86.95951111666666
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY33",
+            "fixes": {
+                "CADIP": "CADIP AT OR ABOVE 3100",
+                "POLLK": "POLLK 1750 RNW 33 TRK 329 UNTIL 1000 TURN LEFT DIRECT POLLK AT OR ABOVE 3100 HOLD AT POLLK LEFT TURN INBOUNDCOURSE 329 ALT 3100 LEGTIME 1 FAF POLLK MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "CADIP",
+                    "fixes": {
+                        "CADIP": "CADIP LEFT TURN INBOUNDCOURSE 329 ALT 3100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ33",
+            "fixes": {
+                "CADIP": "CADIP AT OR ABOVE 3100",
+                "POLLK": "POLLK 1750 RNW 33 TRK 329 UNTIL 1000 TURN LEFT DIRECT POLLK AT OR ABOVE 3100 HOLD AT POLLK LEFT TURN INBOUNDCOURSE 329 ALT 3100 LEGTIME 1 FAF POLLK MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "CADIP",
+                    "fixes": {
+                        "CADIP": "CADIP LEFT TURN INBOUNDCOURSE 329 ALT 3100 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MGM",
+                    "fixes": {
+                        "MGM": "MGM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "BOTAY": "BOTAY AT OR ABOVE 2800",
+                "CURPA": "CURPA 1900",
+                "WELRU": "WELRU AT OR ABOVE 720 RNW 15 TRK 149 UNTIL 416",
+                "CADIP": "OVERFLY CADIP AT OR ABOVE 3100 HOLD AT CADIP LEFT TURN INBOUNDCOURSE 329 LEGDIST 6 FAF CURPA MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "BOTAY",
+                    "fixes": {
+                        "BOTAY": "BOTAY RIGHT TURN INBOUNDCOURSE 149 ALT 2800 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "CADIP": "CADIP AT OR ABOVE 3100",
+                "BOGME": "BOGME 1800",
+                "ZEMUM": "ZEMUM AT OR ABOVE 820 RNW 33 TRK 329 UNTIL 365",
+                "BOTAY": "OVERFLY BOTAY AT OR ABOVE 2800 HOLD AT BOTAY RIGHT TURN INBOUNDCOURSE 149 LEGDIST 6 FAF BOGME MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "CADIP",
+                    "fixes": {
+                        "CADIP": "CADIP LEFT TURN INBOUNDCOURSE 329 ALT 3100 LEGDIST 6"
+                    }
+                }
+            ]
+        }
+    ]
+}

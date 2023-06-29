@@ -1,0 +1,130 @@
+{
+    "fixes": [
+        {
+            "name": "APERE",
+            "lat": 32.302297216666666,
+            "lon": 91.77943333333333
+        },
+        {
+            "name": "CAGYA",
+            "lat": 32.485402783333335,
+            "lon": 91.77305833333334
+        },
+        {
+            "name": "CATAD",
+            "lat": 32.44725833333333,
+            "lon": 91.77383333333333
+        },
+        {
+            "name": "HIGER",
+            "lat": 32.403666666666666,
+            "lon": 91.77551943333333
+        },
+        {
+            "name": "MLU",
+            "lat": 32.516880566666664,
+            "lon": 92.03601388333334
+        },
+        {
+            "name": "OGELS",
+            "lat": 32.66911666666667,
+            "lon": 91.76526388333333
+        },
+        {
+            "name": "STUEE",
+            "lat": 32.50321388333333,
+            "lon": 91.66188056666667
+        },
+        {
+            "name": "WUMKU",
+            "lat": 32.493575,
+            "lon": 91.84085556666666
+        },
+        {
+            "name": "YIGLU",
+            "lat": 32.55451111666667,
+            "lon": 91.76969166666666
+        },
+        {
+            "name": "ZAPOR",
+            "lat": 32.51252221666667,
+            "lon": 91.77131111666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA18",
+            "fixes": {
+                "MLU": "MLU AT OR ABOVE 2000",
+                "WUMKU": "WUMKU 1500",
+                "CAGYA": "CAGYA 600 RNW 18",
+                "STUEE": "STUEE AT OR ABOVE 3000 HOLD AT STUEE RIGHT TURN INBOUNDCOURSE 269 LEGTIME 1 FAF WUMKU MAP CAGYA"
+            },
+            "transitions": [
+                {
+                    "name": "MLU",
+                    "fixes": {
+                        "MLU": "MLU LEFT TURN INBOUNDCOURSE 095 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA36",
+            "fixes": {
+                "MLU": "MLU AT OR ABOVE 2000",
+                "WUMKU": "WUMKU 1500",
+                "CAGYA": "CAGYA 600 RNW 36",
+                "STUEE": "STUEE AT OR ABOVE 3000 HOLD AT STUEE RIGHT TURN INBOUNDCOURSE 269 LEGTIME 1 FAF WUMKU MAP CAGYA"
+            },
+            "transitions": [
+                {
+                    "name": "MLU",
+                    "fixes": {
+                        "MLU": "MLU LEFT TURN INBOUNDCOURSE 095 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "OGELS": "OGELS AT OR ABOVE 1700",
+                "YIGLU": "YIGLU 1600",
+                "ZAPOR": "ZAPOR AT OR ABOVE 620 RNW 18 TRK 180 UNTIL 448",
+                "APERE": "OVERFLY APERE AT OR ABOVE 1600 HOLD AT APERE RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF YIGLU MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "OGELS",
+                    "fixes": {
+                        "OGELS": "OGELS RIGHT TURN INBOUNDCOURSE 180 ALT 1700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "APERE": "APERE AT OR ABOVE 1600",
+                "HIGER": "HIGER 1600",
+                "CATAD": "CATAD AT OR ABOVE 760 RNW 36 TRK 000 UNTIL 424",
+                "OGELS": "OVERFLY OGELS AT OR ABOVE 1700 HOLD AT OGELS RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF HIGER MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "APERE",
+                    "fixes": {
+                        "APERE": "APERE RIGHT TURN INBOUNDCOURSE 000 ALT 1600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

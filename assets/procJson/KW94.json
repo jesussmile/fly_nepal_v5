@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "CCV",
+            "lat": 37.347538883333335,
+            "lon": 75.99765278333334
+        },
+        {
+            "name": "CIBEN",
+            "lat": 37.31574166666667,
+            "lon": 76.63965556666666
+        },
+        {
+            "name": "DASYA",
+            "lat": 37.24304443333333,
+            "lon": 76.70989166666666
+        },
+        {
+            "name": "FASPU",
+            "lat": 37.38286943333333,
+            "lon": 76.56601943333334
+        },
+        {
+            "name": "GAGVE",
+            "lat": 37.16555556666667,
+            "lon": 76.78931111666667
+        },
+        {
+            "name": "HCM",
+            "lat": 37.44866111666666,
+            "lon": 76.71135278333334
+        },
+        {
+            "name": "HPW",
+            "lat": 37.32886943333333,
+            "lon": 77.11594443333334
+        },
+        {
+            "name": "ITARE",
+            "lat": 37.46021111666666,
+            "lon": 76.48612221666667
+        },
+        {
+            "name": "PI001",
+            "lat": 37.5006318,
+            "lon": 76.74473386666666
+        },
+        {
+            "name": "PI002",
+            "lat": 37.568787566666664,
+            "lon": 76.71679341666666
+        },
+        {
+            "name": "PI003",
+            "lat": 37.59712381666667,
+            "lon": 76.80685078333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "GAGVE": "GAGVE AT OR ABOVE 2000",
+                "DASYA": "DASYA 1700 RNW 05",
+                "ITARE": "OVERFLY ITARE AT OR ABOVE 2000 HOLD AT ITARE RIGHT TURN INBOUNDCOURSE 231 ALT 6000 SPEED 230 LEGDIST 5 FAF DASYA MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "HCM",
+                    "fixes": {
+                        "HCM": "HCM",
+                        "GAGVE": "OVERFLY GAGVE AT OR ABOVE 2000 HOLD AT GAGVE RIGHT TURN INBOUNDCOURSE 050 ALT 2000 SPEED 230 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "HPW",
+                    "fixes": {
+                        "HPW": "HPW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "ITARE": "ITARE AT OR ABOVE 2000",
+                "FASPU": "FASPU 1700 RNW 23",
+                "GAGVE": "OVERFLY GAGVE AT OR ABOVE 2000 HOLD AT GAGVE RIGHT TURN INBOUNDCOURSE 050 ALT 6000 SPEED 230 LEGDIST 5 FAF FASPU MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "CCV",
+                    "fixes": {
+                        "CCV": "CCV"
+                    }
+                },
+                {
+                    "name": "HCM",
+                    "fixes": {
+                        "HCM": "HCM",
+                        "ITARE": "OVERFLY ITARE AT OR ABOVE 2000 HOLD AT ITARE RIGHT TURN INBOUNDCOURSE 231 ALT 2000 SPEED 230 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA05",
+            "fixes": {
+                "HCM": "HCM 2000 HCM AT OR ABOVE 2000 HOLD AT HCM LEFT TURN INBOUNDCOURSE 104 LEGTIME 1 FAF HCM MAP CIBEN",
+                "CIBEN": "OVERFLY CIBEN 629 RNW 05 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HCM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA23",
+            "fixes": {
+                "HCM": "HCM 2000 HCM AT OR ABOVE 2000 HOLD AT HCM LEFT TURN INBOUNDCOURSE 104 LEGTIME 1 FAF HCM MAP CIBEN",
+                "CIBEN": "OVERFLY CIBEN 629 RNW 23 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HCM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

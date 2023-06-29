@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "FN02",
+            "lat": 47.853966666666665,
+            "lon": 0.14996666666666666
+        },
+        {
+            "name": "FRM02",
+            "lat": 47.854055566666666,
+            "lon": 0.14966666666666667
+        },
+        {
+            "name": "FRM20",
+            "lat": 48.06788888333333,
+            "lon": 0.26763888333333336
+        },
+        {
+            "name": "IRM20",
+            "lat": 48.145944433333334,
+            "lon": 0.31097221666666663
+        },
+        {
+            "name": "LMNB",
+            "lat": 47.89358333333333,
+            "lon": 0.17138888333333335
+        },
+        {
+            "name": "MAPEB",
+            "lat": 47.82816666666667,
+            "lon": 0.0036388833333333335
+        },
+        {
+            "name": "MATOT",
+            "lat": 47.77047221666667,
+            "lon": 0.23555556666666666
+        },
+        {
+            "name": "MAVUK",
+            "lat": 47.799388883333336,
+            "lon": 0.11966666666666666
+        },
+        {
+            "name": "MN02",
+            "lat": 47.934119433333336,
+            "lon": 0.19334443333333334
+        },
+        {
+            "name": "RM410",
+            "lat": 48.05116666666667,
+            "lon": 0.2584166666666667
+        },
+        {
+            "name": "RM502",
+            "lat": 48.11694443333333,
+            "lon": 0.4276111166666666
+        },
+        {
+            "name": "RM504",
+            "lat": 48.17480556666667,
+            "lon": 0.19422221666666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB02",
+            "fixes": {
+                "FN02": "FN02 2000",
+                "LMNB": "LMNB AT OR ABOVE 1190 LMNB 2000 SPEED 190 FAF FN02 MAP MN02",
+                "MN02": "MN02 370 RNW 02 TRK 020 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LM1",
+                    "fixes": {
+                        "LMNB": "LMNB LEFT TURN INBOUNDCOURSE 020 ALT 2000 SPEED 190 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LM2",
+                    "fixes": {
+                        "LMNB": "LMNB LEFT TURN INBOUNDCOURSE 020 ALT 2000 SPEED 190 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "MAVUK": "MAVUK AT OR ABOVE 2000 SPEED 185",
+                "FRM02": "FRM02 2000 RNW 02",
+                "RM410": "OVERFLY RM410 SPEED 220 TURN LEFT DIRECT",
+                "MAPEB": "MAPEB 3000 SPEED 220 HOLD AT MAPEB LEFT TURN INBOUNDCOURSE 110 ALT 3000 SPEED 220 LEGTIME 1 FAF FRM02 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "MAPEB",
+                    "fixes": {
+                        "MAPEB": "MAPEB AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "MATOT",
+                    "fixes": {
+                        "MATOT": "MATOT AT OR ABOVE 3000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "IRM20": "IRM20 AT OR ABOVE 3000",
+                "FRM20": "FRM20 3000 RNW 20 TRK 200 UNTIL 2000 TURN RIGHT DIRECT",
+                "MAPEB": "MAPEB AT OR ABOVE 3000 SPEED 220 FAF FRM20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "MAPEB",
+                    "fixes": {
+                        "MAPEB": "MAPEB AT OR ABOVE 3000 SPEED 220",
+                        "RM504": "RM504 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "RM502",
+                    "fixes": {
+                        "RM502": "RM502 AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "RM504",
+                    "fixes": {
+                        "RM504": "RM504 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

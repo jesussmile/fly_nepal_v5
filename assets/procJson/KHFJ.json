@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "COKPT",
+            "lat": 36.809811116666665,
+            "lon": 94.01758056666667
+        },
+        {
+            "name": "HUFYY",
+            "lat": 36.86218888333333,
+            "lon": 94.01570556666667
+        },
+        {
+            "name": "KNOXX",
+            "lat": 36.944858333333336,
+            "lon": 94.01274166666667
+        },
+        {
+            "name": "PHENM",
+            "lat": 37.09941666666667,
+            "lon": 94.00718056666666
+        },
+        {
+            "name": "SOFWR",
+            "lat": 36.999330566666664,
+            "lon": 94.01078333333334
+        },
+        {
+            "name": "STERL",
+            "lat": 36.69300556666666,
+            "lon": 94.02175556666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "PHENM": "PHENM AT OR ABOVE 3000",
+                "SOFWR": "SOFWR 3000",
+                "KNOXX": "KNOXX AT OR ABOVE 1960 RNW 18 TRK 180 UNTIL 1566",
+                "STERL": "OVERFLY STERL AT OR ABOVE 3100 HOLD AT STERL RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF SOFWR MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "PHENM",
+                    "fixes": {
+                        "PHENM": "PHENM RIGHT TURN INBOUNDCOURSE 180 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "STERL": "STERL AT OR ABOVE 3100",
+                "COKPT": "COKPT 3000",
+                "HUFYY": "HUFYY AT OR ABOVE 2000 RNW 36 TRK 000 UNTIL 1501",
+                "PHENM": "OVERFLY PHENM AT OR ABOVE 3000 HOLD AT PHENM RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF COKPT MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "STERL",
+                    "fixes": {
+                        "STERL": "STERL RIGHT TURN INBOUNDCOURSE 000 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

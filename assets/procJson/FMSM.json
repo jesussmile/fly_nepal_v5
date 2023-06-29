@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "D067G",
+            "lat": 21.129347216666666,
+            "lon": 48.44968611666667
+        },
+        {
+            "name": "D196G",
+            "lat": 21.32465,
+            "lon": 48.363483333333335
+        },
+        {
+            "name": "FN04",
+            "lat": 21.299711116666668,
+            "lon": 48.30906388333333
+        },
+        {
+            "name": "FN22",
+            "lat": 21.099783333333335,
+            "lon": 48.39654721666667
+        },
+        {
+            "name": "MJNB",
+            "lat": 21.207722216666667,
+            "lon": 48.35694443333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB04",
+            "fixes": {
+                "FN04": "FN04 2000",
+                "MJNB": "MJNB 52 RNW 04 TRK 045 UNTIL 1100 TURN RIGHT DIRECT MJNB 3200 FAF FN04 MAP MJ"
+            },
+            "transitions": [
+                {
+                    "name": "MJ",
+                    "fixes": {
+                        "MJNB": "MJNB AT OR ABOVE 3200",
+                        "D196G": "OVERFLY D196G AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FN22": "FN22 2000 RNW 22",
+                "MJNB": "OVERFLY MJNB TRK 218 UNTIL 1100 TURN LEFT DIRECT MJNB 3200 FAF FN22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "MJ",
+                    "fixes": {
+                        "MJNB": "MJNB AT OR ABOVE 3200",
+                        "D067G": "OVERFLY D067G AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

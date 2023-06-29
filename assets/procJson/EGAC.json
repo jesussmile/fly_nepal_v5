@@ -1,0 +1,170 @@
+{
+    "fixes": [
+        {
+            "name": "20LOC",
+            "lat": 54.652222216666665,
+            "lon": 5.83165
+        },
+        {
+            "name": "25LOC",
+            "lat": 54.577947216666665,
+            "lon": 5.920975
+        },
+        {
+            "name": "BLACA",
+            "lat": 54.88333333333333,
+            "lon": 5.1588666666666665
+        },
+        {
+            "name": "CF04",
+            "lat": 54.461930566666666,
+            "lon": 6.060075
+        },
+        {
+            "name": "CI22",
+            "lat": 54.760902783333336,
+            "lon": 5.699325
+        },
+        {
+            "name": "D038H",
+            "lat": 54.734155566666665,
+            "lon": 5.733244433333334
+        },
+        {
+            "name": "D218H",
+            "lat": 54.50259166666667,
+            "lon": 6.0102
+        },
+        {
+            "name": "D218N",
+            "lat": 54.42778333333333,
+            "lon": 6.100830566666667
+        },
+        {
+            "name": "FF04",
+            "lat": 54.52882221666667,
+            "lon": 5.979991666666667
+        },
+        {
+            "name": "FI22",
+            "lat": 54.707827783333336,
+            "lon": 5.763841666666667
+        },
+        {
+            "name": "HBNB",
+            "lat": 54.62113611666667,
+            "lon": 5.871908333333334
+        },
+        {
+            "name": "MA22",
+            "lat": 54.63172778333333,
+            "lon": 5.8562
+        },
+        {
+            "name": "MAGEE",
+            "lat": 54.79153611666667,
+            "lon": 5.608338883333333
+        },
+        {
+            "name": "ML04",
+            "lat": 54.598430566666664,
+            "lon": 5.896311116666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS04",
+            "fixes": {
+                "CF04": "CF04 AT OR ABOVE 2800",
+                "FF04": "FF04 2000 RNW 04 TRK 038 UNTIL 420",
+                "D038H": "OVERFLY D038H 3000 TURN RIGHT DIRECT",
+                "HBNB": "HBNB 3000 HOLD AT HBNB RIGHT TURN INBOUNDCOURSE 038 LEGTIME 1 FAF FF04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "D218N",
+                    "fixes": {
+                        "D218N": "D218N AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS22",
+            "fixes": {
+                "CI22": "CI22 AT OR ABOVE 2000",
+                "FI22": "FI22 2000 RNW 22 TRK 218 UNTIL 420",
+                "D218H": "OVERFLY D218H 3000 TURN LEFT DIRECT",
+                "HBNB": "HBNB 3000 HOLD AT HBNB RIGHT TURN INBOUNDCOURSE 038 LEGTIME 1 FAF FI22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "BLACA",
+                    "fixes": {
+                        "BLACA": "BLACA",
+                        "MAGEE": "MAGEE TRK 253 UNTIL 2.0 FROM MAGEE"
+                    }
+                },
+                {
+                    "name": "HB",
+                    "fixes": {
+                        "HBNB": "HBNB AT OR ABOVE 3000",
+                        "CI22": "CI22 AT OR ABOVE 2000 TRK 083 UNTIL 4.3 FROM CI22"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC04",
+            "fixes": {
+                "CF04": "CF04 AT OR ABOVE 2800",
+                "FF04": "FF04 2000",
+                "25LOC": "25LOC AT OR ABOVE 880",
+                "ML04": "ML04 390 RNW 04 TRK 038 UNTIL 420",
+                "D038H": "OVERFLY D038H 3000 TURN RIGHT DIRECT",
+                "HBNB": "HBNB 3000 HOLD AT HBNB RIGHT TURN INBOUNDCOURSE 038 LEGTIME 1 FAF FF04 MAP ML04"
+            },
+            "transitions": [
+                {
+                    "name": "D218N",
+                    "fixes": {
+                        "D218N": "D218N AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC22",
+            "fixes": {
+                "CI22": "CI22 AT OR ABOVE 2000",
+                "FI22": "FI22 2000",
+                "20LOC": "20LOC AT OR ABOVE 720",
+                "MA22": "MA22 227 RNW 22 TRK 218 UNTIL 420",
+                "D218H": "OVERFLY D218H 3000 TURN LEFT DIRECT",
+                "HBNB": "HBNB 3000 HOLD AT HBNB RIGHT TURN INBOUNDCOURSE 038 LEGTIME 1 FAF FI22 MAP MA22"
+            },
+            "transitions": [
+                {
+                    "name": "BLACA",
+                    "fixes": {
+                        "BLACA": "BLACA",
+                        "MAGEE": "MAGEE TRK 253 UNTIL 2.0 FROM MAGEE"
+                    }
+                },
+                {
+                    "name": "HB",
+                    "fixes": {
+                        "HBNB": "HBNB AT OR ABOVE 3000",
+                        "CI22": "CI22 AT OR ABOVE 2000 TRK 083 UNTIL 4.3 FROM CI22"
+                    }
+                }
+            ]
+        }
+    ]
+}

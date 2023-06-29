@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "HIRUG",
+            "lat": 43.530925,
+            "lon": 103.27185556666667
+        },
+        {
+            "name": "LODHY",
+            "lat": 43.32312221666667,
+            "lon": 103.41424721666667
+        },
+        {
+            "name": "MARYJ",
+            "lat": 43.14365,
+            "lon": 103.51133888333334
+        },
+        {
+            "name": "OSLUW",
+            "lat": 43.41673888333333,
+            "lon": 103.36336111666667
+        },
+        {
+            "name": "RAP",
+            "lat": 43.97603888333333,
+            "lon": 103.01232778333333
+        },
+        {
+            "name": "TST",
+            "lat": 42.55877221666667,
+            "lon": 103.31214721666667
+        },
+        {
+            "name": "WIPDO",
+            "lat": 43.473075,
+            "lon": 103.33265833333333
+        },
+        {
+            "name": "WOTEP",
+            "lat": 43.15912221666667,
+            "lon": 103.50299443333333
+        },
+        {
+            "name": "YIVSU",
+            "lat": 43.58930278333333,
+            "lon": 103.269125
+        },
+        {
+            "name": "ZEKEB",
+            "lat": 43.275325,
+            "lon": 103.44016388333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 06",
+        "RNW 19",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "HSR2",
+            "rnw": "24",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 01",
+                    "fixes": {
+                        "RNW 01": "RNW 01 TRK 012 UNTIL 3550 HDG 026 INTERCEPT RADIAL 010 TO",
+                        "HIRUG": "HIRUG HIRUG",
+                        "RAP": "RAP"
+                    }
+                },
+                {
+                    "rwy": "RNW 19",
+                    "fixes": {
+                        "RNW 19": "RNW 19 TRK 192 UNTIL 3550 TURN LEFT HDG 000 INTERCEPT RADIAL 010 TO",
+                        "HIRUG": "HIRUG HIRUG",
+                        "RAP": "RAP"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "TST2",
+            "rnw": "24",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 01",
+                    "fixes": {
+                        "RNW 01": "RNW 01 TRK 012 UNTIL 3550 HDG 026 UNTIL 3700 TURN RIGHT HDG 205 INTERCEPT RADIAL 153 TO",
+                        "MARYJ": "MARYJ MARYJ",
+                        "TST": "TST"
+                    }
+                },
+                {
+                    "rwy": "RNW 19",
+                    "fixes": {
+                        "RNW 19": "RNW 19 HDG 192 INTERCEPT RADIAL 153 TO",
+                        "MARYJ": "MARYJ MARYJ",
+                        "TST": "TST"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "WOTEP": "WOTEP AT OR ABOVE 6600 OVERFLY WOTEP AT OR ABOVE 6600 HOLD AT WOTEP RIGHT TURN INBOUNDCOURSE 012 LEGDIST 7 FAF ZEKEB MAP RNW 01",
+                "ZEKEB": "ZEKEB 5000",
+                "LODHY": "LODHY AT OR ABOVE 4000 RNW 01 TRK 012 UNTIL 3900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WOTEP",
+                    "fixes": {
+                        "WOTEP": "WOTEP RIGHT TURN INBOUNDCOURSE 012 ALT 6600 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "YIVSU": "YIVSU AT OR ABOVE 6800",
+                "WIPDO": "WIPDO 5200",
+                "OSLUW": "OSLUW AT OR ABOVE 4040 RNW 19 TRK 192 UNTIL 3550",
+                "WOTEP": "OVERFLY WOTEP AT OR ABOVE 6600 HOLD AT WOTEP RIGHT TURN INBOUNDCOURSE 012 LEGDIST 7 FAF WIPDO MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "YIVSU",
+                    "fixes": {
+                        "YIVSU": "YIVSU RIGHT TURN INBOUNDCOURSE 192 ALT 6800 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

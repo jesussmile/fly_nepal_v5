@@ -1,0 +1,155 @@
+{
+    "fixes": [
+        {
+            "name": "ADRUR",
+            "lat": 56.46038333333333,
+            "lon": 61.725577783333335
+        },
+        {
+            "name": "AGBOB",
+            "lat": 56.73710833333333,
+            "lon": 61.75001666666667
+        },
+        {
+            "name": "DEGMU",
+            "lat": 56.48059166666667,
+            "lon": 61.713686116666665
+        },
+        {
+            "name": "FF04",
+            "lat": 56.40668333333333,
+            "lon": 61.789063883333334
+        },
+        {
+            "name": "GOPOM",
+            "lat": 56.544188883333334,
+            "lon": 61.686380566666664
+        },
+        {
+            "name": "IGTEG",
+            "lat": 56.37986111666667,
+            "lon": 61.763069433333335
+        },
+        {
+            "name": "IGVOT",
+            "lat": 56.56113056666667,
+            "lon": 61.67621943333333
+        },
+        {
+            "name": "KAPUV",
+            "lat": 56.400533333333335,
+            "lon": 61.90829166666666
+        },
+        {
+            "name": "LERIN",
+            "lat": 56.716377783333336,
+            "lon": 61.603527783333334
+        },
+        {
+            "name": "NOSAG",
+            "lat": 56.35901666666667,
+            "lon": 61.61800556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 56.48092403333333,
+            "lon": 61.736421166666666
+        },
+        {
+            "name": "PI002",
+            "lat": 56.4135715,
+            "lon": 61.69211225
+        },
+        {
+            "name": "PI003",
+            "lat": 56.3826835,
+            "lon": 61.8190011
+        },
+        {
+            "name": "RETIB",
+            "lat": 56.63586111666667,
+            "lon": 61.64130556666667
+        },
+        {
+            "name": "SEDEX",
+            "lat": 56.695475,
+            "lon": 61.4572
+        },
+        {
+            "name": "YDPNB",
+            "lat": 56.5338,
+            "lon": 61.691777783333336
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB04",
+            "fixes": {
+                "FF04": "FF04 2700",
+                "YDPNB": "YDPNB 339 RNW 04 TRK 047 UNTIL 2800 TURN RIGHT DIRECT YDPNB 2800 HOLD AT YDPNB RIGHT TURN INBOUNDCOURSE 047 LEGTIME 1 FAF FF04 MAP YDP"
+            },
+            "transitions": [
+                {
+                    "name": "YDP",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "IGTEG": "IGTEG AT OR ABOVE 2300",
+                "ADRUR": "ADRUR 1800",
+                "GOPOM": "OVERFLY GOPOM 134 RNW 04 TURN RIGHT DIRECT",
+                "NOSAG": "OVERFLY NOSAG 2400 HOLD AT NOSAG RIGHT TURN INBOUNDCOURSE 306 SPEED 250 LEGTIME 1 FAF ADRUR MAP GOPOM"
+            },
+            "transitions": [
+                {
+                    "name": "KAPUV",
+                    "fixes": {
+                        "KAPUV": "KAPUV SPEED 210"
+                    }
+                },
+                {
+                    "name": "NOSAG",
+                    "fixes": {
+                        "NOSAG": "NOSAG SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "LERIN": "LERIN AT OR ABOVE 2400",
+                "RETIB": "RETIB 1700",
+                "IGVOT": "OVERFLY IGVOT 213 RNW 22",
+                "DEGMU": "OVERFLY DEGMU 3200 HOLD AT DEGMU RIGHT TURN INBOUNDCOURSE 216 SPEED 250 LEGTIME 1 FAF RETIB MAP IGVO"
+            },
+            "transitions": [
+                {
+                    "name": "AGBOB",
+                    "fixes": {
+                        "AGBOB": "AGBOB SPEED 210"
+                    }
+                },
+                {
+                    "name": "SEDEX",
+                    "fixes": {
+                        "SEDEX": "SEDEX SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "fixes": [
+        {
+            "name": "EDRAL",
+            "lat": 33.52861111666667,
+            "lon": 66.75166666666667
+        },
+        {
+            "name": "FF01",
+            "lat": 33.414658333333335,
+            "lon": 66.37
+        },
+        {
+            "name": "FRAGA",
+            "lat": 33.582777783333334,
+            "lon": 66.0175
+        },
+        {
+            "name": "GEMPI",
+            "lat": 33.12136388333333,
+            "lon": 66.38833888333333
+        },
+        {
+            "name": "ILSEN",
+            "lat": 33.489358333333335,
+            "lon": 66.29077778333334
+        },
+        {
+            "name": "ISIPO",
+            "lat": 33.01111111666667,
+            "lon": 66.01722221666667
+        },
+        {
+            "name": "KABAK",
+            "lat": 33.31611111666667,
+            "lon": 67.05083333333333
+        },
+        {
+            "name": "KOSDU",
+            "lat": 33.36606388333333,
+            "lon": 66.369075
+        },
+        {
+            "name": "MEXIL",
+            "lat": 33.45233056666667,
+            "lon": 66.38078611666667
+        },
+        {
+            "name": "MORRO",
+            "lat": 33.229722216666666,
+            "lon": 65.86194443333333
+        },
+        {
+            "name": "OPLUX",
+            "lat": 33.38594166666667,
+            "lon": 66.37176943333333
+        },
+        {
+            "name": "OSARI",
+            "lat": 33.30606111666667,
+            "lon": 66.11
+        },
+        {
+            "name": "OU469",
+            "lat": 33.228355566666664,
+            "lon": 66.35042778333333
+        },
+        {
+            "name": "ROGUB",
+            "lat": 33.472130566666664,
+            "lon": 66.47689166666666
+        },
+        {
+            "name": "UIS",
+            "lat": 33.26836111666667,
+            "lon": 66.35780556666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [
+        {
+            "name": "FRAG1G",
+            "rnw": "19",
+            "fixes": {
+                "OPLUX": "OPLUX AT OR ABOVE 3500 SPEED 220",
+                "FRAGA": "FRAGA AT OR BELOW 9000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ISIP1G",
+            "rnw": "19",
+            "fixes": {
+                "OPLUX": "OPLUX AT OR ABOVE 3500 SPEED 220 TURN LEFT DIRECT",
+                "OSARI": "OSARI AT OR ABOVE 6500",
+                "ISIPO": "ISIPO AT OR BELOW 11000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MORO1G",
+            "rnw": "19",
+            "fixes": {
+                "OPLUX": "OPLUX AT OR ABOVE 3500 SPEED 220 TURN LEFT DIRECT",
+                "OSARI": "OSARI AT OR ABOVE 6500",
+                "MORRO": "MORRO AT OR BELOW 11000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "EDRA1R",
+            "runway": "RNW 01",
+            "fixes": {
+                "EDRAL": "EDRAL AT OR ABOVE 8000",
+                "ROGUB": "ROGUB AT OR ABOVE 6000 SPEED 220"
+            }
+        },
+        {
+            "name": "FRAG1R",
+            "runway": "RNW 01",
+            "fixes": {
+                "FRAGA": "FRAGA AT OR ABOVE 10000",
+                "ILSEN": "ILSEN AT OR ABOVE 6000 SPEED 220"
+            }
+        },
+        {
+            "name": "ISIP1R",
+            "runway": "RNW 01",
+            "fixes": {
+                "ISIPO": "ISIPO AT OR ABOVE 12000",
+                "ILSEN": "ILSEN AT OR ABOVE 6000 SPEED 220"
+            }
+        },
+        {
+            "name": "KABA1R",
+            "runway": "RNW 01",
+            "fixes": {
+                "KABAK": "KABAK AT OR ABOVE 7000",
+                "ROGUB": "ROGUB AT OR ABOVE 6000 SPEED 220"
+            }
+        },
+        {
+            "name": "MORO1R",
+            "runway": "RNW 01",
+            "fixes": {
+                "MORRO": "MORRO AT OR ABOVE 12000",
+                "ILSEN": "ILSEN AT OR ABOVE 6000 SPEED 220"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "MEXIL": "MEXIL AT OR ABOVE 5300 SPEED 180",
+                "KOSDU": "KOSDU 3890 RNW 01",
+                "OU469": "OU469 AT OR ABOVE 3200",
+                "GEMPI": "OVERFLY GEMPI AT OR ABOVE 4300 HOLD AT GEMPI RIGHT TURN INBOUNDCOURSE 166 ALT 6000 SPEED 210 LEGDIST 4 FAF KOSDU MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ILSEN",
+                    "fixes": {
+                        "ILSEN": "ILSEN AT OR ABOVE 6000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "ROGUB",
+                    "fixes": {
+                        "ROGUB": "ROGUB AT OR ABOVE 6000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR01",
+            "fixes": {
+                "FF01": "FF01 4800 RNW 01",
+                "UIS": "OVERFLY UIS TRK 358 VECTORS FAF FF01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "UIS",
+                    "fixes": {
+                        "UIS": "UIS TRK 172 UNTIL 9.0 FROM UIS"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "fixes": [
+        {
+            "name": "ATODE",
+            "lat": 48.633730566666664,
+            "lon": 97.35801388333333
+        },
+        {
+            "name": "HML",
+            "lat": 48.86918611666667,
+            "lon": 97.11790278333334
+        },
+        {
+            "name": "NALCO",
+            "lat": 48.56031111666667,
+            "lon": 97.14043056666667
+        },
+        {
+            "name": "RINAE",
+            "lat": 48.699586116666666,
+            "lon": 97.60117221666667
+        },
+        {
+            "name": "WOLVA",
+            "lat": 48.600780566666664,
+            "lon": 97.56513888333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "WOLVA": "WOLVA AT OR ABOVE 2500",
+                "RINAE": "RINAE 2500 RNW 34 TRK 340 UNTIL 1500 TURN RIGHT DIRECT",
+                "HML": "OVERFLY HML AT OR ABOVE 3500 HOLD AT HML RIGHT TURN INBOUNDCOURSE 208 LEGDIST 4 FAF RINAE MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "HML",
+                    "fixes": {
+                        "HML": "HML",
+                        "ATODE": "ATODE AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "NALCO",
+                    "fixes": {
+                        "NALCO": "NALCO",
+                        "ATODE": "ATODE AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "WOLVA",
+                    "fixes": {
+                        "WOLVA": "WOLVA RIGHT TURN INBOUNDCOURSE 340 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

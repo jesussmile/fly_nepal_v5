@@ -1,0 +1,169 @@
+{
+    "fixes": [
+        {
+            "name": "BPI",
+            "lat": 42.579447216666665,
+            "lon": 110.10921388333334
+        },
+        {
+            "name": "COTDA",
+            "lat": 42.680019433333335,
+            "lon": 109.571925
+        },
+        {
+            "name": "DEDNE",
+            "lat": 42.51557221666667,
+            "lon": 109.58998056666667
+        },
+        {
+            "name": "DOYED",
+            "lat": 42.836391666666664,
+            "lon": 109.89090556666666
+        },
+        {
+            "name": "FEDPA",
+            "lat": 42.725913883333334,
+            "lon": 109.66518611666666
+        },
+        {
+            "name": "FF309",
+            "lat": 42.70256666666667,
+            "lon": 109.71054443333334
+        },
+        {
+            "name": "HONLI",
+            "lat": 42.860483333333335,
+            "lon": 109.94035278333334
+        },
+        {
+            "name": "IDECA",
+            "lat": 42.85862778333333,
+            "lon": 110.27381943333333
+        },
+        {
+            "name": "PI001",
+            "lat": 42.74677508333333,
+            "lon": 109.75713433333334
+        },
+        {
+            "name": "PI002",
+            "lat": 42.675641983333335,
+            "lon": 109.769014
+        },
+        {
+            "name": "PI003",
+            "lat": 42.66133283333333,
+            "lon": 109.66650381666666
+        },
+        {
+            "name": "PINIY",
+            "lat": 42.744988883333335,
+            "lon": 109.70403611666667
+        },
+        {
+            "name": "PNANB",
+            "lat": 42.792752783333334,
+            "lon": 109.80603888333333
+        },
+        {
+            "name": "SEYTO",
+            "lat": 42.387236116666664,
+            "lon": 109.89306388333333
+        },
+        {
+            "name": "UBUPY",
+            "lat": 42.87981666666667,
+            "lon": 109.9801
+        },
+        {
+            "name": "VACSU",
+            "lat": 42.92069443333333,
+            "lon": 110.06430833333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA11",
+            "fixes": {
+                "FF309": "FF309 9400",
+                "PNANB": "OVERFLY PNANB 8260 RNW 11 TURN LEFT DIRECT",
+                "BPI": "BPI AT OR ABOVE 10000 HOLD AT BPI RIGHT TURN INBOUNDCOURSE 298 LEGTIME 1 FAF FF309 MAP PNA"
+            },
+            "transitions": [
+                {
+                    "name": "BPI",
+                    "fixes": {
+                        "BPI": "BPI",
+                        "PNANB": "PNANB AT OR ABOVE 10000",
+                        "PI001": "PI001 AT OR ABOVE 9400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 9400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 9400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA29",
+            "fixes": {
+                "FF309": "FF309 9400",
+                "PNANB": "OVERFLY PNANB 8260 RNW 29 TURN LEFT DIRECT",
+                "BPI": "BPI AT OR ABOVE 10000 HOLD AT BPI RIGHT TURN INBOUNDCOURSE 298 LEGTIME 1 FAF FF309 MAP PNA"
+            },
+            "transitions": [
+                {
+                    "name": "BPI",
+                    "fixes": {
+                        "BPI": "BPI",
+                        "PNANB": "PNANB AT OR ABOVE 10000",
+                        "PI001": "PI001 AT OR ABOVE 9400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 9400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 9400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "VACSU": "VACSU AT OR ABOVE 10000",
+                "UBUPY": "UBUPY AT OR ABOVE 9400",
+                "HONLI": "HONLI 9100",
+                "DOYED": "DOYED AT OR ABOVE 8260 RNW 11 TRK 110 UNTIL 7346",
+                "FEDPA": "FEDPA",
+                "SEYTO": "OVERFLY SEYTO AT OR ABOVE 10000 HOLD AT SEYTO RIGHT TURN INBOUNDCOURSE 047 LEGDIST 7 FAF HONLI MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "IDECA",
+                    "fixes": {
+                        "IDECA": "IDECA AT OR ABOVE 13500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "COTDA": "COTDA AT OR ABOVE 9400",
+                "FEDPA": "FEDPA AT OR ABOVE 8900",
+                "PINIY": "PINIY 8700 RNW 29 TRK 291 UNTIL 7600",
+                "BPI": "OVERFLY BPI AT OR ABOVE 10000 HOLD AT BPI RIGHT TURN INBOUNDCOURSE 301 LEGDIST 7 FAF PINIY MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "SEYTO",
+                    "fixes": {
+                        "SEYTO": "SEYTO AT OR ABOVE 10000",
+                        "DEDNE": "DEDNE AT OR ABOVE 9600"
+                    }
+                }
+            ]
+        }
+    ]
+}

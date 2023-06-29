@@ -1,0 +1,193 @@
+{
+    "fixes": [
+        {
+            "name": "BLOKK",
+            "lat": 41.17605833333333,
+            "lon": 71.48065556666667
+        },
+        {
+            "name": "CUGDA",
+            "lat": 41.159430566666664,
+            "lon": 71.68300833333333
+        },
+        {
+            "name": "FALMA",
+            "lat": 41.37282221666667,
+            "lon": 71.17118056666666
+        },
+        {
+            "name": "FF28",
+            "lat": 41.18329166666667,
+            "lon": 71.46776111666667
+        },
+        {
+            "name": "GARRD",
+            "lat": 41.15898611666667,
+            "lon": 72.05543888333334
+        },
+        {
+            "name": "ILACI",
+            "lat": 41.16685278333333,
+            "lon": 71.59318888333334
+        },
+        {
+            "name": "JORDN",
+            "lat": 41.0547,
+            "lon": 71.91462778333333
+        },
+        {
+            "name": "NEWBE",
+            "lat": 41.206775,
+            "lon": 71.07414443333333
+        },
+        {
+            "name": "OSSER",
+            "lat": 41.037072216666665,
+            "lon": 71.20341388333334
+        },
+        {
+            "name": "PI001",
+            "lat": 41.178541616666664,
+            "lon": 71.5000073
+        },
+        {
+            "name": "PI002",
+            "lat": 41.237943683333334,
+            "lon": 71.44671391666667
+        },
+        {
+            "name": "PI003",
+            "lat": 41.19903321666666,
+            "lon": 71.35864986666667
+        },
+        {
+            "name": "RHINA",
+            "lat": 41.165561116666666,
+            "lon": 71.69279443333333
+        },
+        {
+            "name": "SEY",
+            "lat": 41.167436116666664,
+            "lon": 71.57608611666667
+        },
+        {
+            "name": "SUFOK",
+            "lat": 41.163225,
+            "lon": 71.82891666666667
+        },
+        {
+            "name": "WAVON",
+            "lat": 41.18685833333333,
+            "lon": 71.34677221666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "RHINA": "RHINA 1700 RNW 10 TRK 104 UNTIL 508 TURN RIGHT DIRECT RHINA AT OR ABOVE 1700 HOLD AT RHINA RIGHT TURN INBOUNDCOURSE 104 LEGTIME 1 FAF RHINA MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "GARRD",
+                    "fixes": {
+                        "GARRD": "GARRD"
+                    }
+                },
+                {
+                    "name": "RHINA",
+                    "fixes": {
+                        "RHINA": "RHINA RIGHT TURN INBOUNDCOURSE 104 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "SUFOK": "SUFOK AT OR ABOVE 1700 OVERFLY SUFOK AT OR ABOVE 1700 HOLD AT SUFOK RIGHT TURN INBOUNDCOURSE 104 LEGDIST 5 FAF RHINA MAP ILACI",
+                "RHINA": "RHINA 1700",
+                "ILACI": "OVERFLY ILACI 315 RNW 10 TRK 104 UNTIL 508 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GARRD",
+                    "fixes": {
+                        "GARRD": "GARRD"
+                    }
+                },
+                {
+                    "name": "JORDN",
+                    "fixes": {
+                        "JORDN": "JORDN"
+                    }
+                },
+                {
+                    "name": "SUFOK",
+                    "fixes": {
+                        "SUFOK": "SUFOK RIGHT TURN INBOUNDCOURSE 104 ALT 1700 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "WAVON": "WAVON AT OR ABOVE 2000",
+                "BLOKK": "BLOKK 1500 RNW 28 TRK 279 UNTIL 358",
+                "CUGDA": "CUGDA",
+                "SUFOK": "OVERFLY SUFOK AT OR ABOVE 1500 HOLD AT SUFOK RIGHT TURN INBOUNDCOURSE 103 LEGDIST 5 FAF BLOKK MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "FALMA",
+                    "fixes": {
+                        "FALMA": "FALMA"
+                    }
+                },
+                {
+                    "name": "NEWBE",
+                    "fixes": {
+                        "NEWBE": "NEWBE"
+                    }
+                },
+                {
+                    "name": "OSSER",
+                    "fixes": {
+                        "OSSER": "OSSER"
+                    }
+                },
+                {
+                    "name": "SUFOK",
+                    "fixes": {
+                        "SUFOK": "SUFOK",
+                        "WAVON": "WAVON AT OR ABOVE 2000 HOLD AT WAVON RIGHT TURN INBOUNDCOURSE 279 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR28",
+            "fixes": {
+                "FF28": "FF28 1700",
+                "SEY": "SEY 109 RNW 28 HOLD AT SEY RIGHT TURN INBOUNDCOURSE 274 ALT 1700 LEGTIME 1 FAF FF28 MAP SEY"
+            },
+            "transitions": [
+                {
+                    "name": "SEY",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

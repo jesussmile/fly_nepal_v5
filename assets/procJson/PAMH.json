@@ -1,0 +1,134 @@
+{
+    "fixes": [
+        {
+            "name": "BECAG",
+            "lat": 63.72440556666667,
+            "lon": 152.66526111666667
+        },
+        {
+            "name": "CALYA",
+            "lat": 63.79521388333333,
+            "lon": 152.50678056666666
+        },
+        {
+            "name": "DEPPA",
+            "lat": 63.97181943333333,
+            "lon": 152.10631388333334
+        },
+        {
+            "name": "EP03",
+            "lat": 63.883102783333335,
+            "lon": 152.31696943333333
+        },
+        {
+            "name": "FEGEL",
+            "lat": 64.05577778333334,
+            "lon": 151.91318611666668
+        },
+        {
+            "name": "FF03",
+            "lat": 63.777602783333336,
+            "lon": 152.42309443333335
+        },
+        {
+            "name": "HEMRO",
+            "lat": 64.10616111666667,
+            "lon": 151.21408056666667
+        },
+        {
+            "name": "HILPA",
+            "lat": 63.876133333333335,
+            "lon": 152.32423333333332
+        },
+        {
+            "name": "KISLE",
+            "lat": 63.89585833333334,
+            "lon": 152.2795
+        },
+        {
+            "name": "MHMNB",
+            "lat": 63.883886116666666,
+            "lon": 152.31618333333333
+        },
+        {
+            "name": "SUCOD",
+            "lat": 63.65498888333333,
+            "lon": 153.03663611666667
+        },
+        {
+            "name": "YESUP",
+            "lat": 63.93266943333333,
+            "lon": 152.19574721666666
+        },
+        {
+            "name": "ZUVOD",
+            "lat": 63.99991111666667,
+            "lon": 152.04188056666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FF03": "FF03 3100",
+                "EP03": "OVERFLY EP03 708",
+                "MHMNB": "OVERFLY MHMNB AT OR ABOVE 1090 RNW 03 TURN RIGHT DIRECT MHMNB AT OR ABOVE 2500 HOLD AT MHMNB RIGHT TURN INBOUNDCOURSE 007 LEGTIME 1 FAF FF03 MAP MHM"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "BECAG": "BECAG AT OR ABOVE 3400",
+                "CALYA": "CALYA 3100",
+                "HILPA": "OVERFLY HILPA 868 RNW 03 TRK 024 UNTIL 1078",
+                "FEGEL": "OVERFLY FEGEL AT OR ABOVE 4200 HOLD AT FEGEL RIGHT TURN INBOUNDCOURSE 204 LEGDIST 5 FAF CALYA MAP HILPA"
+            },
+            "transitions": [
+                {
+                    "name": "BECAG",
+                    "fixes": {
+                        "BECAG": "BECAG RIGHT TURN INBOUNDCOURSE 024 ALT 3400 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "SUCOD",
+                    "fixes": {
+                        "SUCOD": "SUCOD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "FEGEL": "FEGEL AT OR ABOVE 4200",
+                "ZUVOD": "ZUVOD AT OR ABOVE 3600",
+                "DEPPA": "DEPPA 3300",
+                "YESUP": "YESUP AT OR ABOVE 2060",
+                "KISLE": "OVERFLY KISLE 901 RNW 21 TRK 204 UNTIL 1078",
+                "BECAG": "OVERFLY BECAG AT OR ABOVE 3400 HOLD AT BECAG RIGHT TURN INBOUNDCOURSE 024 LEGDIST 5 FAF DEPPA MAP KISLE"
+            },
+            "transitions": [
+                {
+                    "name": "FEGEL",
+                    "fixes": {
+                        "FEGEL": "FEGEL RIGHT TURN INBOUNDCOURSE 204 ALT 4200 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "HEMRO",
+                    "fixes": {
+                        "HEMRO": "HEMRO"
+                    }
+                }
+            ]
+        }
+    ]
+}

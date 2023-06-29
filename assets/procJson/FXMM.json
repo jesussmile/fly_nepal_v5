@@ -1,0 +1,221 @@
+{
+    "fixes": [
+        {
+            "name": "CI22",
+            "lat": 29.306391666666666,
+            "lon": 27.600855566666667
+        },
+        {
+            "name": "D036J",
+            "lat": 29.257725,
+            "lon": 27.615283333333334
+        },
+        {
+            "name": "D036L",
+            "lat": 29.305958333333333,
+            "lon": 27.598772216666667
+        },
+        {
+            "name": "FD22",
+            "lat": 29.3383,
+            "lon": 27.589177783333334
+        },
+        {
+            "name": "FI22",
+            "lat": 29.341158333333333,
+            "lon": 27.590536116666666
+        },
+        {
+            "name": "FN22",
+            "lat": 29.343155566666667,
+            "lon": 27.589199999999998
+        },
+        {
+            "name": "G014L",
+            "lat": 29.266716666666667,
+            "lon": 27.607975
+        },
+        {
+            "name": "G015F",
+            "lat": 29.344941666666667,
+            "lon": 27.589086116666667
+        },
+        {
+            "name": "G015L",
+            "lat": 29.248216666666668,
+            "lon": 27.619155566666667
+        },
+        {
+            "name": "G021U",
+            "lat": 29.107419433333334,
+            "lon": 27.705388883333335
+        },
+        {
+            "name": "G052O",
+            "lat": 29.286961116666667,
+            "lon": 27.784875
+        },
+        {
+            "name": "G167P",
+            "lat": 29.722994433333334,
+            "lon": 27.615988883333333
+        },
+        {
+            "name": "G179Z",
+            "lat": 29.914269433333335,
+            "lon": 27.56065278333333
+        },
+        {
+            "name": "G194H",
+            "lat": 29.597447216666666,
+            "lon": 27.513811116666666
+        },
+        {
+            "name": "G194N",
+            "lat": 29.694702783333334,
+            "lon": 27.486
+        },
+        {
+            "name": "G221P",
+            "lat": 29.666280566666668,
+            "lon": 27.356080566666666
+        },
+        {
+            "name": "G338O",
+            "lat": 29.209269433333333,
+            "lon": 27.453572216666668
+        },
+        {
+            "name": "MD22",
+            "lat": 29.435322216666666,
+            "lon": 27.560355566666665
+        },
+        {
+            "name": "MENB",
+            "lat": 29.419897216666666,
+            "lon": 27.565733333333334
+        },
+        {
+            "name": "MZV",
+            "lat": 29.500383333333332,
+            "lon": 27.540630566666668
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 11",
+        "RNW 22",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD22",
+            "fixes": {
+                "FD22": "FD22 7600",
+                "MD22": "MD22 5524 RNW 22",
+                "MZV": "MZV TRK 216 UNTIL 8000 TURN RIGHT DIRECT MZV 10000 FAF FD22 MAP MD22"
+            },
+            "transitions": [
+                {
+                    "name": "MZV",
+                    "fixes": {
+                        "MZV": "MZV AT OR ABOVE 10000",
+                        "D036L": "D036L AT OR ABOVE 8000 TRK 351 UNTIL 4.3 FROM D036L"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS22",
+            "fixes": {
+                "CI22": "CI22 7600",
+                "FI22": "FI22 7316 RNW 22",
+                "MZV": "MZV TRK 216 UNTIL 8000 TURN RIGHT DIRECT MZV 10000 FAF FI22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "MZV",
+                    "fixes": {
+                        "MZV": "MZV AT OR ABOVE 10000",
+                        "CI22": "CI22 AT OR ABOVE 8000 TRK 351 UNTIL 4.3 FROM CI22"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FN22": "FN22 7600",
+                "MENB": "MENB 5863 RNW 22 TRK 216 UNTIL 8000 TURN RIGHT DIRECT MENB 10000 FAF FN22 MAP ME"
+            },
+            "transitions": [
+                {
+                    "name": "ME",
+                    "fixes": {
+                        "MENB": "MENB AT OR ABOVE 10000",
+                        "D036J": "D036J AT OR ABOVE 8000 TRK 351 UNTIL 4.3 FROM D036J TURN RIGHT DIRECT D036J"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "G194N": "G194N AT OR ABOVE 9100",
+                "G194H": "G194H 8000 RNW 04",
+                "G014L": "OVERFLY G014L AT OR ABOVE 7500 TURN LEFT DIRECT",
+                "MZV": "MZV 10000 FAF G194H MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "G167P",
+                    "fixes": {
+                        "G167P": "G167P AT OR ABOVE 12000"
+                    }
+                },
+                {
+                    "name": "G179Z",
+                    "fixes": {
+                        "G179Z": "G179Z AT OR ABOVE 12000"
+                    }
+                },
+                {
+                    "name": "G221P",
+                    "fixes": {
+                        "G221P": "G221P AT OR ABOVE 12000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "G015L": "G015L AT OR ABOVE 8000",
+                "G015F": "G015F 7400 RNW 22 TRK 210 UNTIL 8100 TURN RIGHT DIRECT",
+                "MZV": "MZV 10000 FAF G015F MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "G021U",
+                    "fixes": {
+                        "G021U": "G021U AT OR ABOVE 12000"
+                    }
+                },
+                {
+                    "name": "G052O",
+                    "fixes": {
+                        "G052O": "G052O AT OR ABOVE 12000"
+                    }
+                },
+                {
+                    "name": "G338O",
+                    "fixes": {
+                        "G338O": "G338O AT OR ABOVE 12000"
+                    }
+                }
+            ]
+        }
+    ]
+}

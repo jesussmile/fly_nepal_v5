@@ -1,0 +1,213 @@
+{
+    "fixes": [
+        {
+            "name": "CRACO",
+            "lat": 41.54425,
+            "lon": 70.1935
+        },
+        {
+            "name": "DUNKK",
+            "lat": 42.08170833333333,
+            "lon": 70.65634166666666
+        },
+        {
+            "name": "FABIX",
+            "lat": 42.05111111666667,
+            "lon": 70.26861388333333
+        },
+        {
+            "name": "FF25",
+            "lat": 42.12559721666667,
+            "lon": 70.12918611666667
+        },
+        {
+            "name": "JANAG",
+            "lat": 42.11551111666667,
+            "lon": 70.12271111666666
+        },
+        {
+            "name": "JOBEB",
+            "lat": 41.95899166666667,
+            "lon": 70.47606666666667
+        },
+        {
+            "name": "JUPOT",
+            "lat": 42.08617778333333,
+            "lon": 69.96919443333333
+        },
+        {
+            "name": "LFV",
+            "lat": 42.01718888333333,
+            "lon": 70.03723333333333
+        },
+        {
+            "name": "ONRAE",
+            "lat": 41.999572216666664,
+            "lon": 70.57366943333334
+        },
+        {
+            "name": "PEPDE",
+            "lat": 41.877805566666666,
+            "lon": 70.44058888333333
+        },
+        {
+            "name": "PHONY",
+            "lat": 42.017580566666666,
+            "lon": 70.34415278333333
+        },
+        {
+            "name": "PI001",
+            "lat": 42.105510833333334,
+            "lon": 70.16234076666667
+        },
+        {
+            "name": "PI002",
+            "lat": 42.17678446666667,
+            "lon": 70.15223221666666
+        },
+        {
+            "name": "PI003",
+            "lat": 42.17357095,
+            "lon": 70.04867473333333
+        },
+        {
+            "name": "PVCNB",
+            "lat": 42.06881666666666,
+            "lon": 70.22344443333333
+        },
+        {
+            "name": "SCUPP",
+            "lat": 42.60305833333334,
+            "lon": 70.230375
+        },
+        {
+            "name": "WASPO",
+            "lat": 42.23008888333333,
+            "lon": 70.08235278333333
+        },
+        {
+            "name": "WOMEK",
+            "lat": 41.94916943333333,
+            "lon": 70.49767221666667
+        },
+        {
+            "name": "WULGA",
+            "lat": 42.15790556666666,
+            "lon": 70.02626666666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS07",
+            "fixes": {
+                "WOMEK": "WOMEK AT OR ABOVE 3000",
+                "PHONY": "PHONY 2000 RNW 07 TRK 075 UNTIL 800 TURN LEFT DIRECT",
+                "PVCNB": "PVCNB AT OR ABOVE 2000 HOLD AT PVCNB LEFT TURN INBOUNDCOURSE 075 ALT 2000 LEGTIME 1 FAF PHONY MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "DUNKK",
+                    "fixes": {
+                        "DUNKK": "DUNKK TRK 154 UNTIL 6.7 FROM DUNKK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FF25": "FF25 1600 RNW 25",
+                "PVCNB": "PVCNB TRK 247 UNTIL 800 TURN RIGHT DIRECT PVCNB AT OR ABOVE 2300 HOLD AT PVCNB RIGHT TURN INBOUNDCOURSE 247 LEGTIME 1 FAF FF25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "DUNKK",
+                    "fixes": {
+                        "DUNKK": "DUNKK",
+                        "PVCNB": "PVCNB AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 1600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1600 SPEED 210"
+                    }
+                },
+                {
+                    "name": "LFV",
+                    "fixes": {
+                        "LFV": "LFV",
+                        "PVCNB": "PVCNB AT OR ABOVE 2300",
+                        "PI001": "PI001 AT OR ABOVE 1600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "WOMEK": "WOMEK AT OR ABOVE 3000",
+                "PHONY": "PHONY 2000",
+                "FABIX": "FABIX AT OR ABOVE 740 RNW 07 TRK 075 UNTIL 208",
+                "WULGA": "OVERFLY WULGA AT OR ABOVE 3000 HOLD AT WULGA RIGHT TURN INBOUNDCOURSE 255 LEGDIST 4 FAF PHONY MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "CRACO",
+                    "fixes": {
+                        "CRACO": "CRACO",
+                        "PEPDE": "PEPDE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "DUNKK",
+                    "fixes": {
+                        "DUNKK": "DUNKK",
+                        "ONRAE": "ONRAE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WOMEK",
+                    "fixes": {
+                        "WOMEK": "WOMEK RIGHT TURN INBOUNDCOURSE 075 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "WULGA": "WULGA AT OR ABOVE 3000",
+                "JANAG": "JANAG 1600 RNW 25 TRK 255 UNTIL 400",
+                "JOBEB": "OVERFLY JOBEB AT OR ABOVE 3000 HOLD AT JOBEB RIGHT TURN INBOUNDCOURSE 075 LEGDIST 4 FAF JANAG MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "CRACO",
+                    "fixes": {
+                        "CRACO": "CRACO",
+                        "JUPOT": "JUPOT AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SCUPP",
+                    "fixes": {
+                        "SCUPP": "SCUPP",
+                        "WASPO": "WASPO AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WULGA",
+                    "fixes": {
+                        "WULGA": "WULGA RIGHT TURN INBOUNDCOURSE 255 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

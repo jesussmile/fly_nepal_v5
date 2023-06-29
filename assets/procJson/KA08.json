@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "CUSCA",
+            "lat": 32.70698888333333,
+            "lon": 87.45593056666667
+        },
+        {
+            "name": "HUXEB",
+            "lat": 32.40921111666667,
+            "lon": 87.34825556666667
+        },
+        {
+            "name": "JURMU",
+            "lat": 32.45735833333333,
+            "lon": 87.36560833333333
+        },
+        {
+            "name": "UYAHE",
+            "lat": 32.28392778333333,
+            "lon": 87.30319443333333
+        },
+        {
+            "name": "WELAN",
+            "lat": 32.55403333333334,
+            "lon": 87.40051666666666
+        },
+        {
+            "name": "ZIMIS",
+            "lat": 32.61119166666667,
+            "lon": 87.42120278333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "CUSCA": "CUSCA AT OR ABOVE 4000",
+                "ZIMIS": "ZIMIS 2100",
+                "WELAN": "WELAN AT OR ABOVE 960 RNW 16 TRK 166 UNTIL 552",
+                "UYAHE": "OVERFLY UYAHE AT OR ABOVE 4000 HOLD AT UYAHE RIGHT TURN INBOUNDCOURSE 346 LEGDIST 4 FAF ZIMIS MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CUSCA",
+                    "fixes": {
+                        "CUSCA": "CUSCA RIGHT TURN INBOUNDCOURSE 166 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "UYAHE": "UYAHE AT OR ABOVE 4000 OVERFLY UYAHE AT OR ABOVE 4000 HOLD AT UYAHE RIGHT TURN INBOUNDCOURSE 346 LEGDIST 4 FAF HUXEB MAP RNW 34",
+                "HUXEB": "HUXEB 2100",
+                "JURMU": "JURMU AT OR ABOVE 1140 RNW 34 TRK 346 UNTIL 700 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "UYAHE",
+                    "fixes": {
+                        "UYAHE": "UYAHE RIGHT TURN INBOUNDCOURSE 346 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

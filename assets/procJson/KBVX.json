@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "ARG",
+            "lat": 36.110019433333335,
+            "lon": 90.95369443333334
+        },
+        {
+            "name": "BV",
+            "lat": 35.703208333333336,
+            "lon": 91.79770833333333
+        },
+        {
+            "name": "CF08",
+            "lat": 35.68547778333333,
+            "lon": 91.91844721666666
+        },
+        {
+            "name": "CISOG",
+            "lat": 35.769722216666665,
+            "lon": 91.91916111666667
+        },
+        {
+            "name": "CUCAL",
+            "lat": 35.712994433333336,
+            "lon": 91.72960833333333
+        },
+        {
+            "name": "FIKIX",
+            "lat": 35.687625,
+            "lon": 91.90074443333333
+        },
+        {
+            "name": "HAXOD",
+            "lat": 35.842947216666666,
+            "lon": 91.42006943333334
+        },
+        {
+            "name": "HEPLU",
+            "lat": 35.605525,
+            "lon": 91.88236666666667
+        },
+        {
+            "name": "HUSAG",
+            "lat": 35.731594433333335,
+            "lon": 91.60295
+        },
+        {
+            "name": "JEBEP",
+            "lat": 35.62728611666667,
+            "lon": 91.37320833333334
+        },
+        {
+            "name": "JIGER",
+            "lat": 35.74318888333333,
+            "lon": 91.52346666666666
+        },
+        {
+            "name": "LIT",
+            "lat": 34.677672216666664,
+            "lon": 92.18052778333333
+        },
+        {
+            "name": "NAPIC",
+            "lat": 35.760772216666666,
+            "lon": 91.40218333333334
+        },
+        {
+            "name": "NICIN",
+            "lat": 35.705588883333334,
+            "lon": 91.77984721666667
+        },
+        {
+            "name": "VILLO",
+            "lat": 36.174763883333334,
+            "lon": 91.60730833333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 18",
+        "RNW 26",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC08",
+            "fixes": {
+                "CF08": "CF08 AT OR ABOVE 3000",
+                "BV": "BV 2700 BV AT OR ABOVE 3000 HOLD AT BV RIGHT TURN INBOUNDCOURSE 079 LEGTIME 1 FAF BV MAP RNW 08",
+                "CUCAL": "CUCAL AT OR ABOVE 1560 RNW 08 TRK 079 UNTIL 1200 TURN RIGHT DIRECT"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "FIKIX": "FIKIX AT OR ABOVE 3000",
+                "NICIN": "NICIN 2400",
+                "CUCAL": "CUCAL AT OR ABOVE 1580 RNW 08 TRK 079 UNTIL 713",
+                "NAPIC": "OVERFLY NAPIC AT OR ABOVE 3000 HOLD AT NAPIC RIGHT TURN INBOUNDCOURSE 259 LEGDIST 4 FAF NICIN MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "FIKIX",
+                    "fixes": {
+                        "FIKIX": "FIKIX RIGHT TURN INBOUNDCOURSE 079 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LIT",
+                    "fixes": {
+                        "LIT": "LIT",
+                        "HEPLU": "HEPLU AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "VILLO",
+                    "fixes": {
+                        "VILLO": "VILLO",
+                        "CISOG": "CISOG AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "NAPIC": "NAPIC AT OR ABOVE 3000",
+                "JIGER": "JIGER 2400",
+                "HUSAG": "HUSAG AT OR ABOVE 1120 RNW 26 TRK 259 UNTIL 865",
+                "FIKIX": "OVERFLY FIKIX AT OR ABOVE 3000 HOLD AT FIKIX RIGHT TURN INBOUNDCOURSE 079 LEGDIST 4 FAF JIGER MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "ARG",
+                    "fixes": {
+                        "ARG": "ARG"
+                    }
+                },
+                {
+                    "name": "JEBEP",
+                    "fixes": {
+                        "JEBEP": "JEBEP"
+                    }
+                },
+                {
+                    "name": "NAPIC",
+                    "fixes": {
+                        "NAPIC": "NAPIC RIGHT TURN INBOUNDCOURSE 259 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VILLO",
+                    "fixes": {
+                        "VILLO": "VILLO",
+                        "HAXOD": "HAXOD AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,189 @@
+{
+    "fixes": [
+        {
+            "name": "BULLY",
+            "lat": 43.05490833333333,
+            "lon": 86.515025
+        },
+        {
+            "name": "GUTPE",
+            "lat": 43.285038883333335,
+            "lon": 85.99628611666667
+        },
+        {
+            "name": "HITPO",
+            "lat": 43.058427783333336,
+            "lon": 86.46215833333333
+        },
+        {
+            "name": "MOTAN",
+            "lat": 43.41017778333333,
+            "lon": 86.40259721666666
+        },
+        {
+            "name": "NENUE",
+            "lat": 43.31171943333333,
+            "lon": 86.4099
+        },
+        {
+            "name": "ONTUE",
+            "lat": 43.2299,
+            "lon": 86.11031666666666
+        },
+        {
+            "name": "PADBE",
+            "lat": 43.104033333333334,
+            "lon": 86.14846388333333
+        },
+        {
+            "name": "PIPKE",
+            "lat": 43.233075,
+            "lon": 86.31060278333334
+        },
+        {
+            "name": "SALES",
+            "lat": 42.621886116666666,
+            "lon": 86.43295833333333
+        },
+        {
+            "name": "SINNI",
+            "lat": 43.02745,
+            "lon": 86.05269443333333
+        },
+        {
+            "name": "WASOG",
+            "lat": 43.03335,
+            "lon": 86.60360833333333
+        },
+        {
+            "name": "WEGUN",
+            "lat": 43.114238883333336,
+            "lon": 86.34809166666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 14",
+        "RNW 24",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS24",
+            "fixes": {
+                "GUTPE": "GUTPE AT OR ABOVE 3000 GUTPE AT OR ABOVE 3000 HOLD AT GUTPE RIGHT TURN INBOUNDCOURSE 241 LEGTIME 1 FAF ONTUE MAP RNW 24",
+                "ONTUE": "ONTUE 2700 RNW 24 TRK 240 UNTIL 2500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GUTPE",
+                    "fixes": {
+                        "GUTPE": "GUTPE RIGHT TURN INBOUNDCOURSE 240 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS32",
+            "fixes": {
+                "SINNI": "SINNI AT OR ABOVE 3000 SINNI AT OR ABOVE 3000 HOLD AT SINNI RIGHT TURN INBOUNDCOURSE 321 LEGTIME 1 FAF PADBE MAP RNW 32",
+                "PADBE": "PADBE 2200 RNW 32 TRK 321 UNTIL 2500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SINNI",
+                    "fixes": {
+                        "SINNI": "SINNI RIGHT TURN INBOUNDCOURSE 321 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "HITPO": "HITPO AT OR ABOVE 3000",
+                "WEGUN": "WEGUN 2300 RNW 06 TRK 060 UNTIL 928",
+                "GUTPE": "OVERFLY GUTPE AT OR ABOVE 3000 HOLD AT GUTPE RIGHT TURN INBOUNDCOURSE 241 LEGDIST 4 FAF WEGUN MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "HITPO",
+                    "fixes": {
+                        "HITPO": "HITPO RIGHT TURN INBOUNDCOURSE 060 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SALES",
+                    "fixes": {
+                        "SALES": "SALES"
+                    }
+                },
+                {
+                    "name": "WASOG",
+                    "fixes": {
+                        "WASOG": "WASOG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "NENUE": "NENUE AT OR ABOVE 2300",
+                "PIPKE": "PIPKE 2200 RNW 14 TRK 141 UNTIL 877",
+                "SINNI": "OVERFLY SINNI AT OR ABOVE 2700 HOLD AT SINNI RIGHT TURN INBOUNDCOURSE 322 LEGDIST 4 FAF PIPKE MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "BULLY",
+                    "fixes": {
+                        "BULLY": "BULLY",
+                        "NENUE": "OVERFLY NENUE AT OR ABOVE 2300 HOLD AT NENUE RIGHT TURN INBOUNDCOURSE 141 ALT 2300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MOTAN",
+                    "fixes": {
+                        "MOTAN": "MOTAN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "GUTPE": "GUTPE AT OR ABOVE 3000",
+                "ONTUE": "ONTUE 2700 RNW 24 TRK 240 UNTIL 827",
+                "HITPO": "OVERFLY HITPO AT OR ABOVE 3000 HOLD AT HITPO RIGHT TURN INBOUNDCOURSE 060 LEGDIST 4 FAF ONTUE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "BULLY",
+                    "fixes": {
+                        "BULLY": "BULLY",
+                        "GUTPE": "OVERFLY GUTPE AT OR ABOVE 3000 HOLD AT GUTPE RIGHT TURN INBOUNDCOURSE 241 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "SINNI": "SINNI AT OR ABOVE 2700",
+                "PADBE": "PADBE 2200 RNW 32 TRK 321 UNTIL 829",
+                "NENUE": "OVERFLY NENUE AT OR ABOVE 2300 HOLD AT NENUE RIGHT TURN INBOUNDCOURSE 141 LEGDIST 4 FAF PADBE MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "BULLY",
+                    "fixes": {
+                        "BULLY": "BULLY",
+                        "SINNI": "OVERFLY SINNI AT OR ABOVE 2700 HOLD AT SINNI RIGHT TURN INBOUNDCOURSE 322 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

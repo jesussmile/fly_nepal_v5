@@ -1,0 +1,183 @@
+{
+    "fixes": [
+        {
+            "name": "CQ04",
+            "lat": 54.33931388333333,
+            "lon": 16.248188883333334
+        },
+        {
+            "name": "CQ22",
+            "lat": 54.490619433333336,
+            "lon": 16.489916666666666
+        },
+        {
+            "name": "CT04",
+            "lat": 54.339241666666666,
+            "lon": 16.229225
+        },
+        {
+            "name": "CT22",
+            "lat": 54.498969433333336,
+            "lon": 16.475780566666668
+        },
+        {
+            "name": "DAR",
+            "lat": 54.410277783333335,
+            "lon": 16.388055566666665
+        },
+        {
+            "name": "FQ04",
+            "lat": 54.35777778333333,
+            "lon": 16.2775
+        },
+        {
+            "name": "FQ22",
+            "lat": 54.43833333333333,
+            "lon": 16.405833333333334
+        },
+        {
+            "name": "FT04",
+            "lat": 54.36138888333333,
+            "lon": 16.272222216666666
+        },
+        {
+            "name": "FT22",
+            "lat": 54.43972221666667,
+            "lon": 16.401666666666667
+        },
+        {
+            "name": "MQ04",
+            "lat": 54.39486111666667,
+            "lon": 16.337472216666665
+        },
+        {
+            "name": "MT04",
+            "lat": 54.39936111666667,
+            "lon": 16.347388883333334
+        },
+        {
+            "name": "MT22",
+            "lat": 54.411555566666664,
+            "lon": 16.366555566666666
+        },
+        {
+            "name": "S",
+            "lat": 54.41463888333333,
+            "lon": 16.368638883333333
+        },
+        {
+            "name": "SA",
+            "lat": 54.43225,
+            "lon": 16.396361116666668
+        },
+        {
+            "name": "TDA",
+            "lat": 54.40480556666667,
+            "lon": 16.358166666666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD04",
+            "fixes": {
+                "CQ04": "CQ04 AT OR ABOVE 1500",
+                "FQ04": "FQ04 1230",
+                "MQ04": "MQ04 256 RNW 04 TRK 037 UNTIL 1000",
+                "SA": "OVERFLY SA TURN RIGHT DIRECT SA 2000 FAF FQ04 MAP MQ04"
+            },
+            "transitions": [
+                {
+                    "name": "SA1",
+                    "fixes": {
+                        "SA": "SA AT OR ABOVE 2000 TRK 234 UNTIL 6.5 FROM",
+                        "DAR": "DAR"
+                    }
+                },
+                {
+                    "name": "SA2",
+                    "fixes": {
+                        "SA": "SA AT OR ABOVE 2000 TRK 228 UNTIL 6.5 FROM",
+                        "DAR": "DAR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD22",
+            "fixes": {
+                "CQ22": "CQ22 AT OR ABOVE 1700",
+                "FQ22": "FQ22 1000",
+                "S": "S 287 RNW 22 TRK 217 UNTIL 1000 TURN LEFT DIRECT",
+                "SA": "SA 2000 FAF FQ22 MAP S"
+            },
+            "transitions": [
+                {
+                    "name": "SA1",
+                    "fixes": {
+                        "SA": "SA AT OR ABOVE 2000 TRK 060 UNTIL 6.0 FROM",
+                        "DAR": "DAR"
+                    }
+                },
+                {
+                    "name": "SA2",
+                    "fixes": {
+                        "SA": "SA AT OR ABOVE 2000 TRK 056 UNTIL 6.0 FROM",
+                        "DAR": "DAR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR04",
+            "fixes": {
+                "CT04": "CT04 AT OR ABOVE 1500",
+                "FT04": "FT04 1230",
+                "MT04": "MT04 116 RNW 04",
+                "TDA": "TDA TRK 043 UNTIL 1000 TURN RIGHT DIRECT TDA 2000 FAF FT04 MAP MT04"
+            },
+            "transitions": [
+                {
+                    "name": "TDA1",
+                    "fixes": {
+                        "TDA": "TDA AT OR ABOVE 2000 TRK 242 UNTIL 6.0 FROM TDA"
+                    }
+                },
+                {
+                    "name": "TDA2",
+                    "fixes": {
+                        "TDA": "TDA AT OR ABOVE 2000 TRK 235 UNTIL 6.0 FROM TDA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR22",
+            "fixes": {
+                "CT22": "CT22 AT OR ABOVE 1700",
+                "FT22": "FT22 1000",
+                "MT22": "MT22 211 RNW 22",
+                "TDA": "TDA TRK 210 UNTIL 1000 TURN LEFT DIRECT TDA 2000 FAF FT22 MAP MT22"
+            },
+            "transitions": [
+                {
+                    "name": "TDA1",
+                    "fixes": {
+                        "TDA": "TDA AT OR ABOVE 2000 TRK 047 UNTIL 7.0 FROM TDA"
+                    }
+                },
+                {
+                    "name": "TDA2",
+                    "fixes": {
+                        "TDA": "TDA AT OR ABOVE 2000 TRK 040 UNTIL 7.0 FROM TDA"
+                    }
+                }
+            ]
+        }
+    ]
+}

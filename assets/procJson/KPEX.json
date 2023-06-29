@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "HUNIR",
+            "lat": 45.39578888333333,
+            "lon": 94.86345
+        },
+        {
+            "name": "REBUE",
+            "lat": 45.427388883333336,
+            "lon": 95.02269721666667
+        },
+        {
+            "name": "UDALE",
+            "lat": 45.31606111666667,
+            "lon": 94.4673
+        },
+        {
+            "name": "WAPSA",
+            "lat": 45.348258333333334,
+            "lon": 94.62631943333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "REBUE": "REBUE AT OR ABOVE 3000",
+                "HUNIR": "HUNIR 2800 RNW 11 TRK 105 UNTIL 1383",
+                "UDALE": "OVERFLY UDALE AT OR ABOVE 3000 HOLD AT UDALE RIGHT TURN INBOUNDCOURSE 285 LEGDIST 4 FAF HUNIR MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "REBUE",
+                    "fixes": {
+                        "REBUE": "REBUE RIGHT TURN INBOUNDCOURSE 105 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "UDALE": "UDALE AT OR ABOVE 3000",
+                "WAPSA": "WAPSA 2800 RNW 29 TRK 285 UNTIL 1383",
+                "REBUE": "OVERFLY REBUE AT OR ABOVE 3000 HOLD AT REBUE RIGHT TURN INBOUNDCOURSE 105 LEGDIST 4 FAF WAPSA MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "UDALE",
+                    "fixes": {
+                        "UDALE": "UDALE RIGHT TURN INBOUNDCOURSE 285 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

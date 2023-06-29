@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "CF02",
+            "lat": 19.281011116666665,
+            "lon": 102.11368056666667
+        },
+        {
+            "name": "FF02",
+            "lat": 19.324044433333334,
+            "lon": 102.08647221666666
+        },
+        {
+            "name": "MA02",
+            "lat": 19.381413883333334,
+            "lon": 102.05016666666667
+        },
+        {
+            "name": "PI001",
+            "lat": 19.345751366666665,
+            "lon": 102.07293066666666
+        },
+        {
+            "name": "PI002",
+            "lat": 19.276212583333333,
+            "lon": 102.05456321666666
+        },
+        {
+            "name": "PI003",
+            "lat": 19.252871783333333,
+            "lon": 102.13201368333333
+        },
+        {
+            "name": "UPN",
+            "lat": 19.395755566666665,
+            "lon": 102.04108888333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "UPN3",
+            "rnw": "20",
+            "fixes": {
+                "UPN": "UPN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD02",
+            "fixes": {
+                "CF02": "CF02 AT OR ABOVE 7500",
+                "FF02": "FF02 6700",
+                "MA02": "MA02 5408 RNW 02 TRK 024 UNTIL 5660 TURN RIGHT HDG 225 INTERCEPT RADIAL 180 FROM",
+                "UPN": "UPN TRK 180 UNTIL 8.0 FROM UPN TURN RIGHT DIRECT UPN AT OR ABOVE 9000 FAF FF02 MAP MA02"
+            },
+            "transitions": [
+                {
+                    "name": "UPN",
+                    "fixes": {
+                        "UPN": "UPN AT OR ABOVE 9000 TRK 180 UNTIL 8.0 FROM UPN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA02",
+            "fixes": {
+                "FF02": "FF02 7500",
+                "UPN": "UPN 6300 RNW 02 TURN RIGHT HDG 225 INTERCEPT RADIAL 180 FROM UPN TRK 180 UNTIL 8.0 FROM UPN TURN RIGHT DIRECT UPN AT OR ABOVE 9000 FAF FF02 MAP UPN"
+            },
+            "transitions": [
+                {
+                    "name": "UPN",
+                    "fixes": {
+                        "UPN": "UPN AT OR ABOVE 9000",
+                        "PI001": "PI001 AT OR ABOVE 7500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 7500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 7500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA20",
+            "fixes": {
+                "FF02": "FF02 7500",
+                "UPN": "UPN 6300 RNW 20 TURN RIGHT HDG 225 INTERCEPT RADIAL 180 FROM UPN TRK 180 UNTIL 8.0 FROM UPN TURN RIGHT DIRECT UPN AT OR ABOVE 9000 FAF FF02 MAP UPN"
+            },
+            "transitions": [
+                {
+                    "name": "UPN",
+                    "fixes": {
+                        "UPN": "UPN AT OR ABOVE 9000",
+                        "PI001": "PI001 AT OR ABOVE 7500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 7500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 7500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,218 @@
+{
+    "fixes": [
+        {
+            "name": "FN12",
+            "lat": 47.10319166666667,
+            "lon": 56.4823
+        },
+        {
+            "name": "FN30",
+            "lat": 47.07820556666667,
+            "lon": 56.22684721666667
+        },
+        {
+            "name": "FVM12",
+            "lat": 47.110166666666665,
+            "lon": 56.53280556666667
+        },
+        {
+            "name": "FVM30",
+            "lat": 47.08061111666667,
+            "lon": 56.226388883333335
+        },
+        {
+            "name": "IVM12",
+            "lat": 47.11930556666667,
+            "lon": 56.6295
+        },
+        {
+            "name": "IVM30",
+            "lat": 47.07113888333333,
+            "lon": 56.12983333333333
+        },
+        {
+            "name": "MQNB",
+            "lat": 47.09747221666667,
+            "lon": 56.38586111666667
+        },
+        {
+            "name": "VM301",
+            "lat": 47.15358333333333,
+            "lon": 56.112527783333334
+        },
+        {
+            "name": "VM302",
+            "lat": 46.988694433333336,
+            "lon": 56.147055566666666
+        },
+        {
+            "name": "VM305",
+            "lat": 47.10422221666666,
+            "lon": 56.470361116666666
+        },
+        {
+            "name": "VM306",
+            "lat": 47.186722216666666,
+            "lon": 56.45344443333333
+        },
+        {
+            "name": "VM401",
+            "lat": 47.053305566666666,
+            "lon": 56.642833333333336
+        },
+        {
+            "name": "VM402",
+            "lat": 47.18530556666666,
+            "lon": 56.616166666666665
+        },
+        {
+            "name": "VM410",
+            "lat": 47.089055566666666,
+            "lon": 56.31286111666667
+        },
+        {
+            "name": "VP300",
+            "lat": 46.927444433333335,
+            "lon": 56.321722216666664
+        },
+        {
+            "name": "VP402",
+            "lat": 46.74394443333333,
+            "lon": 56.451472216666666
+        },
+        {
+            "name": "VP502",
+            "lat": 46.923,
+            "lon": 56.02561111666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "VP401E",
+            "rnw": "12",
+            "fixes": {
+                "VP300": "VP300",
+                "VP402": "VP402"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VP401W",
+            "rnw": "30",
+            "fixes": {
+                "VP402": "VP402"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VP501E",
+            "rnw": "12",
+            "fixes": {
+                "VP502": "VP502"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VP501W",
+            "rnw": "30",
+            "fixes": {
+                "VP300": "VP300",
+                "VP502": "VP502"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FN12": "FN12 1300",
+                "MQNB": "MQNB 66 RNW 12 TRK 113 UNTIL 1000 TURN LEFT DIRECT MQNB AT OR ABOVE 2000 FAF FN12 MAP MQ"
+            },
+            "transitions": [
+                {
+                    "name": "MQ",
+                    "fixes": {
+                        "MQNB": "MQNB AT OR ABOVE 2000 TRK 280 UNTIL 9.0 FROM MQNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 2000 RNW 30",
+                "MQNB": "OVERFLY MQNB TRK 298 UNTIL 1000 TURN LEFT DIRECT MQNB AT OR ABOVE 2000 FAF FN30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "MQ",
+                    "fixes": {
+                        "MQNB": "MQNB AT OR ABOVE 2000 TRK 131 UNTIL 9.0 FROM MQNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "IVM12": "IVM12 AT OR ABOVE 2000 IVM12 AT OR ABOVE 2000 HOLD AT IVM12 RIGHT TURN INBOUNDCOURSE 116 ALT 5000 SPEED 170 LEGTIME 1 FAF FVM12 MAP RNW 12",
+                "FVM12": "FVM12 2000 RNW 12",
+                "VM410": "OVERFLY VM410 AT OR ABOVE 1300 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IVM12",
+                    "fixes": {
+                        "IVM12": "IVM12 RIGHT TURN INBOUNDCOURSE 116 ALT 2000 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "VM401",
+                    "fixes": {
+                        "VM401": "VM401"
+                    }
+                },
+                {
+                    "name": "VM402",
+                    "fixes": {
+                        "VM402": "VM402"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IVM30": "IVM30 AT OR ABOVE 2000",
+                "FVM30": "FVM30 2000 RNW 30",
+                "VM305": "VM305 AT OR ABOVE 800",
+                "VM306": "VM306 AT OR ABOVE 2000",
+                "VM301": "VM301 AT OR BELOW 2000 HOLD AT VM301 LEFT TURN INBOUNDCOURSE 206 ALT 5000 SPEED 180 LEGTIME 1 FAF FVM30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "VM301",
+                    "fixes": {
+                        "VM301": "VM301 AT OR BELOW 2000"
+                    }
+                },
+                {
+                    "name": "VM302",
+                    "fixes": {
+                        "VM302": "VM302"
+                    }
+                }
+            ]
+        }
+    ]
+}

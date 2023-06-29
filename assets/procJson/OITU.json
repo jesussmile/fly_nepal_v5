@@ -1,0 +1,95 @@
+{
+    "fixes": [
+        {
+            "name": "CF29",
+            "lat": 39.10240833333334,
+            "lon": 45.12638056666667
+        },
+        {
+            "name": "D130O",
+            "lat": 39.00825556666667,
+            "lon": 45.165655566666665
+        },
+        {
+            "name": "FF29",
+            "lat": 39.145475,
+            "lon": 45.034677783333336
+        },
+        {
+            "name": "MAK",
+            "lat": 39.18838888333333,
+            "lon": 44.94269443333334
+        },
+        {
+            "name": "MAK30",
+            "lat": 38.82833611666667,
+            "lon": 45.388294433333336
+        },
+        {
+            "name": "RAGIN",
+            "lat": 38.69194443333333,
+            "lon": 45.55527778333333
+        },
+        {
+            "name": "TBZ",
+            "lat": 38.14819443333333,
+            "lon": 46.21269443333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "TBZ1A",
+            "rnw": "11",
+            "fixes": {
+                "TBZ": "TBZ"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "TBZ1N",
+            "runway": "RNW 11 RNW 29",
+            "fixes": {
+                "TBZ": "TBZ",
+                "RAGIN": "RAGIN",
+                "MAK30": "MAK30",
+                "D130O": "D130O"
+            }
+        },
+        {
+            "name": "TBZ1P",
+            "runway": "RNW 11 RNW 29",
+            "fixes": {
+                "TBZ": "TBZ",
+                "RAGIN": "RAGIN",
+                "MAK30": "MAK30",
+                "MAK": "MAK"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD29",
+            "fixes": {
+                "CF29": "CF29 AT OR ABOVE 6000",
+                "FF29": "FF29 4800 RNW 29",
+                "MAK": "OVERFLY MAK TRK 295 UNTIL 4600 TURN RIGHT DIRECT MAK AT OR ABOVE 5500",
+                "D130O": "D130O 8500 HOLD AT D130O LEFT TURN INBOUNDCOURSE 310 SPEED 210 LEGTIME 1 FAF FF29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "D130O",
+                    "fixes": {
+                        "D130O": "D130O AT OR ABOVE 8500"
+                    }
+                }
+            ]
+        }
+    ]
+}

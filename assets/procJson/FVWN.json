@@ -1,0 +1,58 @@
+{
+    "fixes": [
+        {
+            "name": "PONB",
+            "lat": 18.66508333333333,
+            "lon": 26.929055566666666
+        },
+        {
+            "name": "VWN",
+            "lat": 18.640416666666667,
+            "lon": 26.9935
+        },
+        {
+            "name": "WNNB",
+            "lat": 18.641277783333333,
+            "lon": 26.991305566666668
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "PONB": "PONB 4700",
+                "WNNB": "WNNB 3777 RNW 08 HDG 078 UNTIL 5000 FAF PONB MAP WN"
+            },
+            "transitions": [
+                {
+                    "name": "PO",
+                    "fixes": {
+                        "PONB": "PONB RIGHT TURN INBOUNDCOURSE 078 ALT 4700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR08",
+            "fixes": {
+                "PONB": "PONB 4700",
+                "VWN": "VWN 3734 RNW 08 TRK 078 UNTIL 5000 FAF PONB MAP VWN"
+            },
+            "transitions": [
+                {
+                    "name": "VWN",
+                    "fixes": {
+                        "VWN": "VWN AT OR ABOVE 5000",
+                        "PONB": "PONB AT OR ABOVE 5000 HOLD AT PONB RIGHT TURN INBOUNDCOURSE 078 ALT 4700 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

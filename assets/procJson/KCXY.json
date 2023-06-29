@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "BAARN",
+            "lat": 40.29148611666667,
+            "lon": 76.61132778333334
+        },
+        {
+            "name": "CFDRR",
+            "lat": 40.153188883333335,
+            "lon": 77.09635556666667
+        },
+        {
+            "name": "CURNA",
+            "lat": 40.28371943333333,
+            "lon": 76.59625833333334
+        },
+        {
+            "name": "DAPNY",
+            "lat": 40.251438883333336,
+            "lon": 76.72088888333333
+        },
+        {
+            "name": "HORVI",
+            "lat": 40.199441666666665,
+            "lon": 76.92030833333334
+        },
+        {
+            "name": "JUVUS",
+            "lat": 40.13772778333333,
+            "lon": 77.15493056666666
+        },
+        {
+            "name": "KUPPS",
+            "lat": 40.287311116666665,
+            "lon": 76.45194721666667
+        },
+        {
+            "name": "LOTCI",
+            "lat": 40.18500278333333,
+            "lon": 76.97540278333334
+        },
+        {
+            "name": "TIVNE",
+            "lat": 40.17483888333334,
+            "lon": 77.01410278333333
+        },
+        {
+            "name": "WAPKO",
+            "lat": 40.359516666666664,
+            "lon": 76.93845278333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 12",
+        "RNW 26",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS08",
+            "fixes": {
+                "CFDRR": "CFDRR AT OR ABOVE 3000",
+                "TIVNE": "TIVNE 2800 RNW 08 TRK 082 UNTIL 1100 HDG 087 INTERCEPT RADIAL 013 TO",
+                "BAARN": "BAARN BAARN AT OR ABOVE 3000 HOLD AT BAARN RIGHT TURN INBOUNDCOURSE 314 LEGTIME 1 FAF TIVNE MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "TIVNE",
+                    "fixes": {
+                        "TIVNE": "TIVNE RIGHT TURN INBOUNDCOURSE 082 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "JUVUS": "JUVUS AT OR ABOVE 3100",
+                "TIVNE": "TIVNE 2800",
+                "HORVI": "HORVI AT OR ABOVE 1340 RNW 08 TRK 082 UNTIL 747",
+                "DAPNY": "DAPNY",
+                "BAARN": "OVERFLY BAARN AT OR ABOVE 3000 HOLD AT BAARN RIGHT TURN INBOUNDCOURSE 314 LEGDIST 4 FAF TIVNE MAP RNW 08"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "CURNA": "CURNA AT OR ABOVE 3100 OVERFLY CURNA AT OR ABOVE 3100 HOLD AT CURNA RIGHT TURN INBOUNDCOURSE 262 LEGDIST 4 FAF DAPNY MAP RNW 26",
+                "DAPNY": "DAPNY 2300 RNW 26",
+                "LOTCI": "LOTCI TURN RIGHT DIRECT",
+                "WAPKO": "WAPKO"
+            },
+            "transitions": [
+                {
+                    "name": "CURNA",
+                    "fixes": {
+                        "CURNA": "CURNA RIGHT TURN INBOUNDCOURSE 262 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "KUPPS",
+                    "fixes": {
+                        "KUPPS": "KUPPS"
+                    }
+                }
+            ]
+        }
+    ]
+}

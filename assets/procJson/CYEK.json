@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "FF33",
+            "lat": 61.034613883333336,
+            "lon": 94.02311943333333
+        },
+        {
+            "name": "MUTOT",
+            "lat": 61.24273888333333,
+            "lon": 94.25791666666667
+        },
+        {
+            "name": "OLAVU",
+            "lat": 61.16041943333333,
+            "lon": 94.15456388333334
+        },
+        {
+            "name": "PEMVA",
+            "lat": 61.03030556666667,
+            "lon": 93.99249166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 61.134165966666664,
+            "lon": 93.97248183333333
+        },
+        {
+            "name": "PI002",
+            "lat": 61.2051336,
+            "lon": 93.95177478333333
+        },
+        {
+            "name": "PI003",
+            "lat": 61.1991159,
+            "lon": 93.79269585
+        },
+        {
+            "name": "PILDO",
+            "lat": 61.027461116666665,
+            "lon": 93.98896666666667
+        },
+        {
+            "name": "REROX",
+            "lat": 61.285769433333336,
+            "lon": 94.11028056666666
+        },
+        {
+            "name": "ROKPO",
+            "lat": 60.9448,
+            "lon": 93.88684443333334
+        },
+        {
+            "name": "TAKEG",
+            "lat": 60.902011116666664,
+            "lon": 94.0332
+        },
+        {
+            "name": "ULOLO",
+            "lat": 61.199547216666666,
+            "lon": 94.40515
+        },
+        {
+            "name": "VISUD",
+            "lat": 60.98743056666667,
+            "lon": 93.74009166666667
+        },
+        {
+            "name": "XUBDA",
+            "lat": 61.15744721666667,
+            "lon": 94.15084166666666
+        },
+        {
+            "name": "YEKNB",
+            "lat": 61.099094433333335,
+            "lon": 94.06898333333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB33",
+            "fixes": {
+                "FF33": "FF33 1200 RNW 33",
+                "YEKNB": "OVERFLY YEKNB AT OR ABOVE 440 TRK 035 UNTIL 1600 TURN RIGHT DIRECT YEKNB 1600 HOLD AT YEKNB RIGHT TURN INBOUNDCOURSE 035 SPEED 230 LEGTIME 1 FAF FF33 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "YEK",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1200 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1200 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1200 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "MUTOT": "MUTOT AT OR ABOVE 1400",
+                "XUBDA": "XUBDA 1400 RNW 15",
+                "PILDO": "OVERFLY PILDO 1400 HOLD AT PILDO RIGHT TURN INBOUNDCOURSE 015 SPEED 230 LEGTIME 1 FAF XUBDA MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "REROX",
+                    "fixes": {
+                        "REROX": "REROX SPEED 210"
+                    }
+                },
+                {
+                    "name": "ULOLO",
+                    "fixes": {
+                        "ULOLO": "ULOLO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ROKPO": "ROKPO AT OR ABOVE 1400",
+                "PEMVA": "PEMVA 1400 RNW 33",
+                "OLAVU": "OVERFLY OLAVU 1400 HOLD AT OLAVU RIGHT TURN INBOUNDCOURSE 033 SPEED 230 LEGTIME 1 FAF PEMVA MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "TAKEG",
+                    "fixes": {
+                        "TAKEG": "TAKEG SPEED 210"
+                    }
+                },
+                {
+                    "name": "VISUD",
+                    "fixes": {
+                        "VISUD": "VISUD SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

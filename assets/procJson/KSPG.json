@@ -1,0 +1,190 @@
+{
+    "fixes": [
+        {
+            "name": "BENWA",
+            "lat": 27.7459,
+            "lon": 82.62467221666667
+        },
+        {
+            "name": "BRDGE",
+            "lat": 27.452583333333333,
+            "lon": 82.13437221666666
+        },
+        {
+            "name": "CWBIL",
+            "lat": 27.594475,
+            "lon": 82.75859166666666
+        },
+        {
+            "name": "JRGAL",
+            "lat": 27.5868,
+            "lon": 82.60683611666667
+        },
+        {
+            "name": "JSTRM",
+            "lat": 27.691825,
+            "lon": 82.42251943333333
+        },
+        {
+            "name": "KENVE",
+            "lat": 27.831261116666667,
+            "lon": 82.63923333333334
+        },
+        {
+            "name": "LBV",
+            "lat": 26.828186116666668,
+            "lon": 81.39143888333334
+        },
+        {
+            "name": "LOYIL",
+            "lat": 27.771022216666665,
+            "lon": 82.85323888333333
+        },
+        {
+            "name": "PHIEL",
+            "lat": 27.684108333333334,
+            "lon": 82.80122778333333
+        },
+        {
+            "name": "PHK",
+            "lat": 26.782741666666666,
+            "lon": 80.69143333333334
+        },
+        {
+            "name": "PICOL",
+            "lat": 27.776230566666666,
+            "lon": 82.62489166666667
+        },
+        {
+            "name": "PIE",
+            "lat": 27.907763883333335,
+            "lon": 82.68430833333333
+        },
+        {
+            "name": "ROGAN",
+            "lat": 27.250794433333333,
+            "lon": 81.89285833333334
+        },
+        {
+            "name": "RSW",
+            "lat": 26.529886116666667,
+            "lon": 81.77576943333334
+        },
+        {
+            "name": "SRQ",
+            "lat": 27.407016666666667,
+            "lon": 82.56366111666667
+        },
+        {
+            "name": "TONYJ",
+            "lat": 27.727077783333332,
+            "lon": 82.71018888333333
+        },
+        {
+            "name": "WHITD",
+            "lat": 27.696038883333333,
+            "lon": 82.62431388333333
+        },
+        {
+            "name": "WUXUT",
+            "lat": 27.828536116666665,
+            "lon": 82.65057778333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 18",
+        "RNW 25",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "BRDGE9",
+            "runway": "RNW 07 RNW 18 RNW 25 RNW 36",
+            "fixes": {
+                "BRDGE": "BRDGE",
+                "JSTRM": "JSTRM",
+                "PIE": "PIE"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "PIE": "PIE AT OR ABOVE 2700 PIE AT OR ABOVE 2700 HOLD AT PIE RIGHT TURN INBOUNDCOURSE 164 ALT 2700 LEGTIME 1 FAF WUXUT MAP RNW 18",
+                "WUXUT": "WUXUT 1700 RNW 18 TRK 164 UNTIL 410 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PIE",
+                    "fixes": {
+                        "PIE": "PIE RIGHT TURN INBOUNDCOURSE 164 ALT 2700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "PHIEL": "PHIEL AT OR ABOVE 2000 OVERFLY PHIEL AT OR ABOVE 2000 HOLD AT PHIEL RIGHT TURN INBOUNDCOURSE 067 LEGDIST 4 FAF TONYJ MAP RNW 07",
+                "TONYJ": "TONYJ 1700 RNW 07 TRK 067 UNTIL 407 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PHIEL",
+                    "fixes": {
+                        "PHIEL": "PHIEL RIGHT TURN INBOUNDCOURSE 067 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PIE",
+                    "fixes": {
+                        "PIE": "PIE",
+                        "LOYIL": "LOYIL AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "SRQ",
+                    "fixes": {
+                        "SRQ": "SRQ",
+                        "CWBIL": "CWBIL AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "PIE": "PIE AT OR ABOVE 2000 OVERFLY PIE AT OR ABOVE 2000 HOLD AT PIE RIGHT TURN INBOUNDCOURSE 157 LEGDIST 4 FAF KENVE MAP PICOL",
+                "KENVE": "KENVE 1700",
+                "PICOL": "OVERFLY PICOL 260 RNW 18 TRK 172 UNTIL 407 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PIE",
+                    "fixes": {
+                        "PIE": "PIE RIGHT TURN INBOUNDCOURSE 157 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "JRGAL": "JRGAL AT OR ABOVE 2000 OVERFLY JRGAL AT OR ABOVE 2000 HOLD AT JRGAL RIGHT TURN INBOUNDCOURSE 357 LEGDIST 4 FAF WHITD MAP BENWA",
+                "WHITD": "WHITD 1700",
+                "BENWA": "OVERFLY BENWA 433 RNW 36 TRK 005 UNTIL 433 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JRGAL",
+                    "fixes": {
+                        "JRGAL": "JRGAL RIGHT TURN INBOUNDCOURSE 357 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

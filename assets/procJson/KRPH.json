@@ -1,0 +1,131 @@
+{
+    "fixes": [
+        {
+            "name": "CIYAL",
+            "lat": 33.03649166666667,
+            "lon": 98.80270556666666
+        },
+        {
+            "name": "FESUB",
+            "lat": 33.044052783333335,
+            "lon": 98.62021943333333
+        },
+        {
+            "name": "HIKOT",
+            "lat": 33.308444433333335,
+            "lon": 98.48883888333333
+        },
+        {
+            "name": "IROTE",
+            "lat": 33.19571666666667,
+            "lon": 98.47096943333334
+        },
+        {
+            "name": "JIPOG",
+            "lat": 33.25513611666667,
+            "lon": 98.41233333333334
+        },
+        {
+            "name": "LEBLE",
+            "lat": 32.91095833333333,
+            "lon": 98.62224721666666
+        },
+        {
+            "name": "MODNE",
+            "lat": 33.20178056666666,
+            "lon": 98.33592221666666
+        },
+        {
+            "name": "MQP",
+            "lat": 32.72618056666666,
+            "lon": 97.99744166666666
+        },
+        {
+            "name": "NOCID",
+            "lat": 32.964136116666666,
+            "lon": 98.69858333333333
+        },
+        {
+            "name": "SOMOE",
+            "lat": 33.177897216666665,
+            "lon": 98.48855556666666
+        },
+        {
+            "name": "VAYTU",
+            "lat": 33.269747216666666,
+            "lon": 98.97348611666666
+        },
+        {
+            "name": "ZEKUL",
+            "lat": 33.15487778333333,
+            "lon": 98.51123611666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 18",
+        "RNW 21",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "NOCID": "NOCID AT OR ABOVE 3200",
+                "FESUB": "FESUB 2700 RNW 03",
+                "IROTE": "IROTE TURN LEFT DIRECT",
+                "VAYTU": "OVERFLY VAYTU AT OR ABOVE 3900 HOLD AT VAYTU RIGHT TURN INBOUNDCOURSE 017 LEGDIST 4 FAF FESUB MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "MQP",
+                    "fixes": {
+                        "MQP": "MQP",
+                        "LEBLE": "LEBLE AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "NOCID",
+                    "fixes": {
+                        "NOCID": "NOCID RIGHT TURN INBOUNDCOURSE 033 ALT 3200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VAYTU",
+                    "fixes": {
+                        "VAYTU": "VAYTU",
+                        "CIYAL": "CIYAL AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "JIPOG": "JIPOG AT OR ABOVE 3200",
+                "SOMOE": "SOMOE 2700",
+                "ZEKUL": "ZEKUL AT OR ABOVE 2100 RNW 21",
+                "FESUB": "FESUB",
+                "VAYTU": "OVERFLY VAYTU AT OR ABOVE 3900 HOLD AT VAYTU RIGHT TURN INBOUNDCOURSE 017 LEGDIST 4 FAF SOMOE MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "MQP",
+                    "fixes": {
+                        "MQP": "MQP",
+                        "MODNE": "MODNE AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "VAYTU",
+                    "fixes": {
+                        "VAYTU": "VAYTU",
+                        "HIKOT": "HIKOT AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

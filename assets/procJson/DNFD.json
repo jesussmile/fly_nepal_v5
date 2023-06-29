@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "AKBAV",
+            "lat": 5.496405566666667,
+            "lon": 5.479819433333334
+        },
+        {
+            "name": "FO500",
+            "lat": 5.441016666666667,
+            "lon": 5.375366666666666
+        },
+        {
+            "name": "FO600",
+            "lat": 5.269283333333333,
+            "lon": 5.322622216666667
+        },
+        {
+            "name": "GEKBU",
+            "lat": 5.521047216666666,
+            "lon": 5.399952783333333
+        },
+        {
+            "name": "IRAPO",
+            "lat": 5.18925,
+            "lon": 5.29805
+        },
+        {
+            "name": "KIPGU",
+            "lat": 5.164608333333334,
+            "lon": 5.377875
+        },
+        {
+            "name": "LULVO",
+            "lat": 5.213880566666667,
+            "lon": 5.218219433333333
+        },
+        {
+            "name": "TETVI",
+            "lat": 5.545677783333334,
+            "lon": 5.320077783333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "IRAPO": "IRAPO AT OR ABOVE 2000 SPEED 210 IRAPO AT OR ABOVE 2000 HOLD AT IRAPO RIGHT TURN INBOUNDCOURSE 020 ALT 2000 SPEED 230 LEGTIME 1 FAF FO600 MAP RNW 02",
+                "FO600": "FO600 1700 RNW 02 TURN RIGHT DIRECT",
+                "KIPGU": "KIPGU AT OR ABOVE 2000 SPEED 210 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IRAPO",
+                    "fixes": {
+                        "IRAPO": "IRAPO RIGHT TURN INBOUNDCOURSE 020 ALT 2000 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "KIPGU",
+                    "fixes": {
+                        "KIPGU": "KIPGU AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "LULVO",
+                    "fixes": {
+                        "LULVO": "LULVO AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "GEKBU": "GEKBU AT OR ABOVE 2000 SPEED 210 GEKBU AT OR ABOVE 2000 SPEED 210 HOLD AT GEKBU RIGHT TURN INBOUNDCOURSE 200 ALT 2000 SPEED 230 LEGTIME 1 FAF FO500 MAP RNW 20",
+                "FO500": "FO500 1700 RNW 20 TURN LEFT DIRECT",
+                "AKBAV": "AKBAV AT OR ABOVE 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AKBAV",
+                    "fixes": {
+                        "AKBAV": "AKBAV AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "GEKBU",
+                    "fixes": {
+                        "GEKBU": "GEKBU RIGHT TURN INBOUNDCOURSE 200 ALT 2000 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TETVI",
+                    "fixes": {
+                        "TETVI": "TETVI AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

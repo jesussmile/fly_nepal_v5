@@ -1,0 +1,160 @@
+{
+    "fixes": [
+        {
+            "name": "ANOBE",
+            "lat": 39.749169433333336,
+            "lon": 82.53936943333333
+        },
+        {
+            "name": "APE",
+            "lat": 40.151063883333336,
+            "lon": 82.5883
+        },
+        {
+            "name": "BERAY",
+            "lat": 39.76224166666667,
+            "lon": 82.779525
+        },
+        {
+            "name": "DIPAC",
+            "lat": 39.74070833333333,
+            "lon": 82.38928611666667
+        },
+        {
+            "name": "DOCVE",
+            "lat": 39.68609443333333,
+            "lon": 82.92057221666667
+        },
+        {
+            "name": "FAIRF",
+            "lat": 39.74256666666667,
+            "lon": 82.42140278333333
+        },
+        {
+            "name": "GAGSE",
+            "lat": 39.759155566666664,
+            "lon": 82.722025
+        },
+        {
+            "name": "GLOOM",
+            "lat": 39.99049443333333,
+            "lon": 82.89623611666667
+        },
+        {
+            "name": "HASPI",
+            "lat": 39.76930556666667,
+            "lon": 82.91328611666667
+        },
+        {
+            "name": "JOGER",
+            "lat": 39.72077778333333,
+            "lon": 83.40681666666667
+        },
+        {
+            "name": "JUBBI",
+            "lat": 39.85350833333333,
+            "lon": 82.64013611666667
+        },
+        {
+            "name": "MAGCO",
+            "lat": 39.75563888333333,
+            "lon": 82.65708333333333
+        },
+        {
+            "name": "NUMDE",
+            "lat": 39.8817,
+            "lon": 82.35428888333334
+        },
+        {
+            "name": "TARTO",
+            "lat": 39.53474166666667,
+            "lon": 82.63001388333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "HASPI": "HASPI AT OR ABOVE 2700",
+                "BERAY": "BERAY 2600",
+                "GAGSE": "GAGSE AT OR ABOVE 1720 RNW 10",
+                "DIPAC": "OVERFLY DIPAC AT OR ABOVE 2800 HOLD AT DIPAC RIGHT TURN INBOUNDCOURSE 280 LEGDIST 4 FAF BERAY MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "GLOOM",
+                    "fixes": {
+                        "GLOOM": "GLOOM"
+                    }
+                },
+                {
+                    "name": "HASPI",
+                    "fixes": {
+                        "HASPI": "HASPI RIGHT TURN INBOUNDCOURSE 100 ALT 2700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JOGER",
+                    "fixes": {
+                        "JOGER": "JOGER"
+                    }
+                },
+                {
+                    "name": "TARTO",
+                    "fixes": {
+                        "TARTO": "TARTO",
+                        "DOCVE": "DOCVE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "FAIRF": "FAIRF AT OR ABOVE 3000",
+                "ANOBE": "ANOBE 2800 RNW 28 TRK 280 UNTIL 1068",
+                "HASPI": "OVERFLY HASPI AT OR ABOVE 2700 HOLD AT HASPI RIGHT TURN INBOUNDCOURSE 100 LEGDIST 4 FAF ANOBE MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "APE",
+                    "fixes": {
+                        "APE": "APE",
+                        "NUMDE": "NUMDE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "TARTO",
+                    "fixes": {
+                        "TARTO": "TARTO",
+                        "FAIRF": "OVERFLY FAIRF AT OR ABOVE 3000 HOLD AT FAIRF RIGHT TURN INBOUNDCOURSE 280 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA10",
+            "fixes": {
+                "APE": "APE AT OR ABOVE 3000 APE AT OR ABOVE 3000 HOLD AT APE RIGHT TURN INBOUNDCOURSE 014 LEGTIME 1 FAF JUBBI MAP MAGCO",
+                "JUBBI": "JUBBI 3000",
+                "MAGCO": "MAGCO 1720 RNW 10 TRK 194 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORA28",
+            "fixes": {
+                "APE": "APE AT OR ABOVE 3000 APE AT OR ABOVE 3000 HOLD AT APE RIGHT TURN INBOUNDCOURSE 014 LEGTIME 1 FAF JUBBI MAP MAGCO",
+                "JUBBI": "JUBBI 3000",
+                "MAGCO": "MAGCO 1720 RNW 28 TRK 194 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": []
+        }
+    ]
+}

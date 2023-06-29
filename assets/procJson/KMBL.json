@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "BABBE",
+            "lat": 44.216541666666664,
+            "lon": 85.61935
+        },
+        {
+            "name": "CUPSA",
+            "lat": 44.271683333333335,
+            "lon": 86.19209721666667
+        },
+        {
+            "name": "GOSDE",
+            "lat": 44.276811116666664,
+            "lon": 86.49078888333334
+        },
+        {
+            "name": "HALGI",
+            "lat": 44.26793611666667,
+            "lon": 85.99797778333334
+        },
+        {
+            "name": "HASIG",
+            "lat": 44.27065556666667,
+            "lon": 86.1371
+        },
+        {
+            "name": "IMATE",
+            "lat": 44.27451666666666,
+            "lon": 86.35163611666667
+        },
+        {
+            "name": "JANUP",
+            "lat": 44.267491666666665,
+            "lon": 85.97576111666666
+        },
+        {
+            "name": "JEPOT",
+            "lat": 44.270769433333335,
+            "lon": 86.14286388333333
+        },
+        {
+            "name": "YULNU",
+            "lat": 44.07834166666667,
+            "lon": 86.86088333333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 10",
+        "RNW 19",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS28",
+            "fixes": {
+                "JANUP": "JANUP AT OR ABOVE 2800",
+                "JEPOT": "JEPOT 1921 RNW 28 TRK 277 UNTIL 2000 TURN RIGHT DIRECT JEPOT AT OR ABOVE 2500 HOLD AT JEPOT RIGHT TURN INBOUNDCOURSE 277 LEGTIME 1 FAF JEPOT MAP RNW 28"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "GOSDE": "GOSDE AT OR ABOVE 2500",
+                "IMATE": "IMATE 2000 RNW 10 TRK 097 UNTIL 890",
+                "HALGI": "OVERFLY HALGI AT OR ABOVE 3000 HOLD AT HALGI RIGHT TURN INBOUNDCOURSE 278 LEGDIST 4 FAF IMATE MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "GOSDE",
+                    "fixes": {
+                        "GOSDE": "GOSDE RIGHT TURN INBOUNDCOURSE 097 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "YULNU",
+                    "fixes": {
+                        "YULNU": "YULNU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "HALGI": "HALGI AT OR ABOVE 3000",
+                "HASIG": "HASIG 2000",
+                "CUPSA": "CUPSA AT OR ABOVE 1240 RNW 28 TRK 278 UNTIL 821",
+                "GOSDE": "OVERFLY GOSDE AT OR ABOVE 2500 HOLD AT GOSDE RIGHT TURN INBOUNDCOURSE 097 LEGDIST 4 FAF HASIG MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "BABBE",
+                    "fixes": {
+                        "BABBE": "BABBE"
+                    }
+                },
+                {
+                    "name": "HALGI",
+                    "fixes": {
+                        "HALGI": "HALGI RIGHT TURN INBOUNDCOURSE 278 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

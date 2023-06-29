@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CADOM",
+            "lat": 46.98676666666667,
+            "lon": 104.07720556666666
+        },
+        {
+            "name": "CAXET",
+            "lat": 46.863202783333335,
+            "lon": 103.88671388333333
+        },
+        {
+            "name": "DEKRE",
+            "lat": 46.895997216666665,
+            "lon": 103.93713611666666
+        },
+        {
+            "name": "DEVGE",
+            "lat": 46.950875,
+            "lon": 104.02173056666666
+        },
+        {
+            "name": "EKENE",
+            "lat": 47.02678611666666,
+            "lon": 104.13919721666667
+        },
+        {
+            "name": "EKOYU",
+            "lat": 46.82304443333334,
+            "lon": 103.8251
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "EKENE": "EKENE AT OR ABOVE 4700",
+                "CADOM": "CADOM 4400",
+                "DEVGE": "DEVGE AT OR ABOVE 3400 RNW 12 TRK 125 UNTIL 3006",
+                "EKOYU": "OVERFLY EKOYU AT OR ABOVE 5000 HOLD AT EKOYU RIGHT TURN INBOUNDCOURSE 306 LEGDIST 5 FAF CADOM MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "EKENE",
+                    "fixes": {
+                        "EKENE": "EKENE RIGHT TURN INBOUNDCOURSE 125 ALT 4700 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "EKOYU": "EKOYU AT OR ABOVE 5000",
+                "CAXET": "CAXET 4400",
+                "DEKRE": "DEKRE AT OR ABOVE 3480 RNW 30 TRK 306 UNTIL 3004",
+                "EKENE": "OVERFLY EKENE AT OR ABOVE 4700 HOLD AT EKENE RIGHT TURN INBOUNDCOURSE 125 LEGDIST 5 FAF CAXET MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "EKOYU",
+                    "fixes": {
+                        "EKOYU": "EKOYU RIGHT TURN INBOUNDCOURSE 306 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

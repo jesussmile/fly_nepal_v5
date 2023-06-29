@@ -1,0 +1,84 @@
+{
+    "fixes": [
+        {
+            "name": "AKNUS",
+            "lat": 34.332766666666664,
+            "lon": 57.836933333333334
+        },
+        {
+            "name": "AKSET",
+            "lat": 34.480266666666665,
+            "lon": 57.931383333333336
+        },
+        {
+            "name": "EGDOK",
+            "lat": 34.537469433333335,
+            "lon": 57.585816666666666
+        },
+        {
+            "name": "EGUPI",
+            "lat": 34.42216666666667,
+            "lon": 57.848416666666665
+        },
+        {
+            "name": "GEBAR",
+            "lat": 34.406483333333334,
+            "lon": 57.88398333333333
+        },
+        {
+            "name": "KUGUG",
+            "lat": 34.49433333333333,
+            "lon": 57.684277783333336
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "GEBAR": "GEBAR 2000 OVERFLY GEBAR FAF GEBAR MAP RNW 13",
+                "EGUPI": "OVERFLY EGUPI AT OR ABOVE 1420 RNW 13 TRK 127 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AKNUS",
+                    "fixes": {
+                        "AKNUS": "AKNUS"
+                    }
+                },
+                {
+                    "name": "AKSET",
+                    "fixes": {
+                        "AKSET": "AKSET"
+                    }
+                },
+                {
+                    "name": "GEBAR",
+                    "fixes": {
+                        "GEBAR": "GEBAR LEFT TURN INBOUNDCOURSE 127 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "EGDOK": "EGDOK AT OR ABOVE 3080 EGDOK FAF KUGUG MAP RNW 31",
+                "KUGUG": "KUGUG 1520 RNW 31 TRK 307 UNTIL 470 TRK 050 UNTIL 3000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EGDOK",
+                    "fixes": {
+                        "EGDOK": "EGDOK LEFT TURN INBOUNDCOURSE 307 ALT 3080 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

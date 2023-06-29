@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "GREYY",
+            "lat": 41.59226388333333,
+            "lon": 99.05551666666666
+        },
+        {
+            "name": "IBOTY",
+            "lat": 41.72276111666667,
+            "lon": 99.12214166666666
+        },
+        {
+            "name": "KODEE",
+            "lat": 41.685725,
+            "lon": 99.10320278333333
+        },
+        {
+            "name": "RUGTE",
+            "lat": 41.963261116666665,
+            "lon": 99.24572221666666
+        },
+        {
+            "name": "SEYOT",
+            "lat": 41.869936116666665,
+            "lon": 99.19764443333334
+        },
+        {
+            "name": "TORLE",
+            "lat": 41.82926943333333,
+            "lon": 99.17674166666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "RUGTE": "RUGTE AT OR ABOVE 4100",
+                "SEYOT": "SEYOT 4000",
+                "TORLE": "TORLE AT OR ABOVE 3160 RNW 15 TRK 152 UNTIL 2468",
+                "GREYY": "OVERFLY GREYY AT OR ABOVE 4400 HOLD AT GREYY RIGHT TURN INBOUNDCOURSE 332 LEGDIST 5 FAF SEYOT MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "RUGTE",
+                    "fixes": {
+                        "RUGTE": "RUGTE RIGHT TURN INBOUNDCOURSE 152 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "GREYY": "GREYY AT OR ABOVE 4400",
+                "KODEE": "KODEE 4000",
+                "IBOTY": "IBOTY AT OR ABOVE 3240 RNW 33 TRK 332 UNTIL 2583",
+                "RUGTE": "OVERFLY RUGTE AT OR ABOVE 4100 HOLD AT RUGTE RIGHT TURN INBOUNDCOURSE 152 LEGDIST 5 FAF KODEE MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "GREYY",
+                    "fixes": {
+                        "GREYY": "GREYY RIGHT TURN INBOUNDCOURSE 332 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

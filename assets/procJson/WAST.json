@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "ONEMA",
+            "lat": 1.5733333333333333,
+            "lon": 132.17755556666665
+        },
+        {
+            "name": "PASRA",
+            "lat": 1.3163333333333334,
+            "lon": 131.86330556666667
+        },
+        {
+            "name": "ST401",
+            "lat": 1.3480277833333334,
+            "lon": 131.90205556666666
+        },
+        {
+            "name": "ST402",
+            "lat": 1.3902777833333333,
+            "lon": 131.95369443333334
+        },
+        {
+            "name": "ST403",
+            "lat": 1.4747722166666666,
+            "lon": 132.05702221666667
+        },
+        {
+            "name": "ST601",
+            "lat": 1.5416666666666665,
+            "lon": 132.13880556666666
+        },
+        {
+            "name": "ST602",
+            "lat": 1.4994166666666666,
+            "lon": 132.08713888333332
+        },
+        {
+            "name": "ST603",
+            "lat": 1.4159444333333333,
+            "lon": 131.98511111666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "ST401": "ST401 AT OR ABOVE 2500",
+                "ST402": "ST402 1780 RNW 13",
+                "ST403": "OVERFLY ST403 TURN RIGHT DIRECT",
+                "PASRA": "PASRA AT OR ABOVE 3000 HOLD AT PASRA RIGHT TURN INBOUNDCOURSE 128 ALT 3000 LEGTIME 1 FAF ST402 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "PASRA",
+                    "fixes": {
+                        "PASRA": "PASRA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ST601": "ST601 AT OR ABOVE 2500",
+                "ST602": "ST602 1750 RNW 31",
+                "ST603": "OVERFLY ST603 TURN LEFT DIRECT",
+                "ONEMA": "ONEMA AT OR ABOVE 3000 HOLD AT ONEMA LEFT TURN INBOUNDCOURSE 308 ALT 3000 LEGTIME 1 FAF ST602 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ONEMA",
+                    "fixes": {
+                        "ONEMA": "ONEMA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

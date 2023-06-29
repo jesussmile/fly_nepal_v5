@@ -1,0 +1,222 @@
+{
+    "fixes": [
+        {
+            "name": "AGVAV",
+            "lat": 5.500405566666666,
+            "lon": 6.432291666666667
+        },
+        {
+            "name": "ARAGU",
+            "lat": 5.343944433333333,
+            "lon": 6.177583333333334
+        },
+        {
+            "name": "BY400",
+            "lat": 5.005736116666666,
+            "lon": 6.287725
+        },
+        {
+            "name": "BY500",
+            "lat": 4.909577783333333,
+            "lon": 6.119033333333333
+        },
+        {
+            "name": "BY600",
+            "lat": 5.086333333333333,
+            "lon": 5.922511116666667
+        },
+        {
+            "name": "BY700",
+            "lat": 4.980919433333334,
+            "lon": 6.2442
+        },
+        {
+            "name": "BY701",
+            "lat": 5.181444433333334,
+            "lon": 6.3167944333333335
+        },
+        {
+            "name": "BY702",
+            "lat": 5.418308333333333,
+            "lon": 6.402561116666667
+        },
+        {
+            "name": "BY800",
+            "lat": 4.934338883333333,
+            "lon": 6.162519433333333
+        },
+        {
+            "name": "BY801",
+            "lat": 4.851780566666667,
+            "lon": 6.243077783333334
+        },
+        {
+            "name": "BY802",
+            "lat": 4.971955566666667,
+            "lon": 6.453283333333333
+        },
+        {
+            "name": "BY803",
+            "lat": 5.010111116666667,
+            "lon": 6.520052783333333
+        },
+        {
+            "name": "BY804",
+            "lat": 5.393841666666667,
+            "lon": 6.451397216666667
+        },
+        {
+            "name": "DEVGO",
+            "lat": 5.119902783333333,
+            "lon": 6.319080566666667
+        },
+        {
+            "name": "EBSUL",
+            "lat": 5.08845,
+            "lon": 6.432944433333334
+        },
+        {
+            "name": "EDKOL",
+            "lat": 4.974280566666667,
+            "lon": 6.401575
+        },
+        {
+            "name": "EMREP",
+            "lat": 5.047091666666667,
+            "lon": 6.360333333333333
+        },
+        {
+            "name": "GAKAD",
+            "lat": 4.7954,
+            "lon": 6.0876777833333335
+        },
+        {
+            "name": "IKSID",
+            "lat": 4.826847216666667,
+            "lon": 5.973861116666667
+        },
+        {
+            "name": "INUKI",
+            "lat": 4.941022216666667,
+            "lon": 6.005205566666667
+        },
+        {
+            "name": "KEVSA",
+            "lat": 4.8682138833333335,
+            "lon": 6.046444433333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "AGVA1K",
+            "rnw": "06",
+            "fixes": {
+                "BY700": "BY700",
+                "BY701": "BY701 AT OR BELOW 9000 SPEED 210",
+                "BY702": "BY702",
+                "AGVAV": "AGVAV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "AGVA1L",
+            "rnw": "24",
+            "fixes": {
+                "BY800": "BY800 TURN LEFT DIRECT",
+                "BY801": "BY801 AT OR ABOVE 5000 SPEED 210",
+                "BY802": "BY802 AT OR ABOVE 7000",
+                "BY803": "BY803 AT OR BELOW 10000",
+                "BY804": "BY804 SPEED 220",
+                "AGVAV": "AGVAV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ARAG1A",
+            "runway": "RNW 06",
+            "fixes": {
+                "ARAGU": "ARAGU",
+                "BY600": "BY600 AT OR ABOVE 7000",
+                "INUKI": "INUKI AT OR ABOVE 2500 SPEED 200"
+            }
+        },
+        {
+            "name": "ARAG1B",
+            "runway": "RNW 24",
+            "fixes": {
+                "ARAGU": "ARAGU",
+                "DEVGO": "DEVGO AT OR ABOVE 2500 SPEED 200"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "BY500": "BY500 1670 SPEED 200 RNW 06 TRK 061 UNTIL 1000 TURN LEFT DIRECT",
+                "INUKI": "INUKI HOLD AT INUKI LEFT TURN INBOUNDCOURSE 151 ALT 2500 SPEED 230 LEGTIME 1 FAF BY500 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "GAKAD",
+                    "fixes": {
+                        "GAKAD": "GAKAD 2500",
+                        "KEVSA": "KEVSA SPEED 230"
+                    }
+                },
+                {
+                    "name": "IKSID",
+                    "fixes": {
+                        "IKSID": "IKSID 2500",
+                        "KEVSA": "KEVSA SPEED 230"
+                    }
+                },
+                {
+                    "name": "INUKI",
+                    "fixes": {
+                        "INUKI": "INUKI 2500",
+                        "KEVSA": "KEVSA SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "BY400": "BY400 1670 SPEED 200 RNW 24 TRK 241 UNTIL 1000 TURN RIGHT DIRECT",
+                "DEVGO": "DEVGO HOLD AT DEVGO LEFT TURN INBOUNDCOURSE 151 ALT 2500 SPEED 230 LEGTIME 1 FAF BY400 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "DEVGO",
+                    "fixes": {
+                        "DEVGO": "DEVGO 2500",
+                        "EMREP": "EMREP SPEED 230"
+                    }
+                },
+                {
+                    "name": "EBSUL",
+                    "fixes": {
+                        "EBSUL": "EBSUL 2500",
+                        "EMREP": "EMREP SPEED 230"
+                    }
+                },
+                {
+                    "name": "EDKOL",
+                    "fixes": {
+                        "EDKOL": "EDKOL 2500",
+                        "EMREP": "EMREP SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

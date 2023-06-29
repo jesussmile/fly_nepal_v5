@@ -1,0 +1,55 @@
+{
+    "fixes": [
+        {
+            "name": "CALVN",
+            "lat": 37.36438056666667,
+            "lon": 78.86968888333334
+        },
+        {
+            "name": "LARNC",
+            "lat": 37.37135833333333,
+            "lon": 78.99691111666667
+        },
+        {
+            "name": "SWARM",
+            "lat": 37.47634443333333,
+            "lon": 78.92367778333333
+        },
+        {
+            "name": "VOUCH",
+            "lat": 37.346811116666665,
+            "lon": 78.77317778333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "CALVN": "CALVN AT OR ABOVE 3000",
+                "LARNC": "LARNC 2700 RNW 28 TRK 283 UNTIL 1339 TURN RIGHT DIRECT",
+                "SWARM": "OVERFLY SWARM AT OR ABOVE 3500 HOLD AT SWARM LEFT TURN INBOUNDCOURSE 237 LEGDIST 5 FAF LARNC MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "SWARM",
+                    "fixes": {
+                        "SWARM": "SWARM",
+                        "CALVN": "OVERFLY CALVN AT OR ABOVE 3000 HOLD AT CALVN RIGHT TURN INBOUNDCOURSE 283 ALT 3000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "VOUCH",
+                    "fixes": {
+                        "VOUCH": "VOUCH"
+                    }
+                }
+            ]
+        }
+    ]
+}

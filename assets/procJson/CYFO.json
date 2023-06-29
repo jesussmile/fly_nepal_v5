@@ -1,0 +1,197 @@
+{
+    "fixes": [
+        {
+            "name": "EMLAN",
+            "lat": 54.868858333333336,
+            "lon": 101.75833333333334
+        },
+        {
+            "name": "EP01",
+            "lat": 54.66850278333333,
+            "lon": 101.67755833333334
+        },
+        {
+            "name": "EP19",
+            "lat": 54.685436116666665,
+            "lon": 101.67278056666666
+        },
+        {
+            "name": "ESPOX",
+            "lat": 54.508527783333335,
+            "lon": 101.74446111666667
+        },
+        {
+            "name": "ETANG",
+            "lat": 54.60342778333333,
+            "lon": 101.70949721666666
+        },
+        {
+            "name": "FF01",
+            "lat": 54.61428333333333,
+            "lon": 101.74539166666666
+        },
+        {
+            "name": "FF19",
+            "lat": 54.755158333333334,
+            "lon": 101.69404443333333
+        },
+        {
+            "name": "FONB",
+            "lat": 54.674880566666666,
+            "lon": 101.66956943333334
+        },
+        {
+            "name": "IKUXO",
+            "lat": 54.753813883333336,
+            "lon": 101.65374721666667
+        },
+        {
+            "name": "KEPMO",
+            "lat": 54.60613888333334,
+            "lon": 101.70849721666667
+        },
+        {
+            "name": "OMOSU",
+            "lat": 54.52584443333333,
+            "lon": 101.88431943333333
+        },
+        {
+            "name": "OTMOT",
+            "lat": 54.85139443333333,
+            "lon": 101.61734721666667
+        },
+        {
+            "name": "PI001",
+            "lat": 54.62650695,
+            "lon": 101.72591658333333
+        },
+        {
+            "name": "PI002",
+            "lat": 54.55615471666667,
+            "lon": 101.70233573333333
+        },
+        {
+            "name": "PI003",
+            "lat": 54.5366011,
+            "lon": 101.83020641666667
+        },
+        {
+            "name": "PI004",
+            "lat": 54.73193736666666,
+            "lon": 101.69057416666666
+        },
+        {
+            "name": "PI005",
+            "lat": 54.79202325,
+            "lon": 101.62287365
+        },
+        {
+            "name": "PI006",
+            "lat": 54.8378903,
+            "lon": 101.7297403
+        },
+        {
+            "name": "RADEM",
+            "lat": 54.83376943333333,
+            "lon": 101.47648333333333
+        },
+        {
+            "name": "TOTOL",
+            "lat": 54.491047216666665,
+            "lon": 101.604725
+        },
+        {
+            "name": "ULABA",
+            "lat": 54.75269443333333,
+            "lon": 101.65416388333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB01",
+            "fixes": {
+                "FF01": "FF01 2300",
+                "EP01": "OVERFLY EP01 1023",
+                "FONB": "OVERFLY FONB AT OR ABOVE 1400 RNW 01 TRK 027 UNTIL 3000 TURN RIGHT DIRECT FONB 3000 HOLD AT FONB RIGHT TURN INBOUNDCOURSE 027 LEGTIME 1 FAF FF01 MAP FO"
+            },
+            "transitions": [
+                {
+                    "name": "FO",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB19",
+            "fixes": {
+                "FF19": "FF19 2400",
+                "EP19": "OVERFLY EP19 1048",
+                "FONB": "OVERFLY FONB AT OR ABOVE 1400 RNW 19 TRK 161 UNTIL 3000 TURN LEFT DIRECT FONB 3000 HOLD AT FONB LEFT TURN INBOUNDCOURSE 161 LEGTIME 1 FAF FF19 MAP FO"
+            },
+            "transitions": [
+                {
+                    "name": "FO",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2400 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2400 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "ESPOX": "ESPOX AT OR ABOVE 2300",
+                "KEPMO": "KEPMO 2300 RNW 01",
+                "ULABA": "OVERFLY ULABA 3000 HOLD AT ULABA RIGHT TURN INBOUNDCOURSE 005 LEGTIME 1 FAF KEPMO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "OMOSU",
+                    "fixes": {
+                        "OMOSU": "OMOSU SPEED 210"
+                    }
+                },
+                {
+                    "name": "TOTOL",
+                    "fixes": {
+                        "TOTOL": "TOTOL SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "OTMOT": "OTMOT AT OR ABOVE 2400",
+                "IKUXO": "IKUXO 2400 RNW 19",
+                "ETANG": "OVERFLY ETANG 3000 HOLD AT ETANG RIGHT TURN INBOUNDCOURSE 185 LEGTIME 1 FAF IKUXO MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "EMLAN",
+                    "fixes": {
+                        "EMLAN": "EMLAN SPEED 210"
+                    }
+                },
+                {
+                    "name": "RADEM",
+                    "fixes": {
+                        "RADEM": "RADEM SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

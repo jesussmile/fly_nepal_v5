@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "FESBO",
+            "lat": 33.62235278333333,
+            "lon": 88.85429166666667
+        },
+        {
+            "name": "FEXIS",
+            "lat": 33.23903056666666,
+            "lon": 88.84279721666667
+        },
+        {
+            "name": "NEEON",
+            "lat": 33.480969433333335,
+            "lon": 89.11136943333334
+        },
+        {
+            "name": "ONAZU",
+            "lat": 33.522722216666665,
+            "lon": 88.85129443333334
+        },
+        {
+            "name": "SOUER",
+            "lat": 33.33959443333333,
+            "lon": 88.84580278333334
+        },
+        {
+            "name": "UZWIR",
+            "lat": 33.38376111666667,
+            "lon": 88.847125
+        },
+        {
+            "name": "YODLY",
+            "lat": 33.47868056666667,
+            "lon": 88.84997221666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC36",
+            "fixes": {
+                "FEXIS": "FEXIS AT OR ABOVE 3000",
+                "SOUER": "SOUER 2000",
+                "UZWIR": "UZWIR AT OR ABOVE 1140 RNW 36 TRK 000 UNTIL 1000 TURN LEFT DIRECT",
+                "NEEON": "OVERFLY NEEON AT OR ABOVE 2400 HOLD AT NEEON RIGHT TURN INBOUNDCOURSE 266 LEGTIME 1 FAF SOUER MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "FEXIS",
+                    "fixes": {
+                        "FEXIS": "FEXIS LEFT TURN INBOUNDCOURSE 000 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "FESBO": "FESBO AT OR ABOVE 3400",
+                "ONAZU": "ONAZU 2000",
+                "YODLY": "YODLY AT OR ABOVE 1160 RNW 18 TRK 180 UNTIL 616",
+                "FEXIS": "OVERFLY FEXIS AT OR ABOVE 3000 HOLD AT FEXIS LEFT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF ONAZU MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "FESBO",
+                    "fixes": {
+                        "FESBO": "FESBO RIGHT TURN INBOUNDCOURSE 180 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "FEXIS": "FEXIS AT OR ABOVE 3000",
+                "SOUER": "SOUER 2000",
+                "UZWIR": "UZWIR AT OR ABOVE 1140 RNW 36 TRK 000 UNTIL 521",
+                "FESBO": "OVERFLY FESBO AT OR ABOVE 3400 HOLD AT FESBO RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF SOUER MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "FEXIS",
+                    "fixes": {
+                        "FEXIS": "FEXIS LEFT TURN INBOUNDCOURSE 000 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "ADNOY",
+            "lat": 35.924841666666666,
+            "lon": 85.19423611666667
+        },
+        {
+            "name": "ATITE",
+            "lat": 35.950077783333334,
+            "lon": 85.08424443333334
+        },
+        {
+            "name": "BUMSE",
+            "lat": 35.977983333333334,
+            "lon": 84.97422778333333
+        },
+        {
+            "name": "DAUBY",
+            "lat": 35.876213883333335,
+            "lon": 85.03796111666666
+        },
+        {
+            "name": "HCH",
+            "lat": 35.78101388333333,
+            "lon": 84.97845278333334
+        },
+        {
+            "name": "HYDER",
+            "lat": 35.977891666666665,
+            "lon": 84.97460833333334
+        },
+        {
+            "name": "PI001",
+            "lat": 35.99492696666667,
+            "lon": 84.9056594
+        },
+        {
+            "name": "PI002",
+            "lat": 36.05819768333333,
+            "lon": 84.86404058333333
+        },
+        {
+            "name": "PI003",
+            "lat": 36.02645918333333,
+            "lon": 84.77753246666667
+        },
+        {
+            "name": "SALTZ",
+            "lat": 36.015338883333335,
+            "lon": 84.81838888333333
+        },
+        {
+            "name": "SAYCO",
+            "lat": 35.996594433333335,
+            "lon": 84.89666943333333
+        },
+        {
+            "name": "WATAV",
+            "lat": 35.82029721666667,
+            "lon": 85.13013611666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA08",
+            "fixes": {
+                "HCH": "HCH AT OR ABOVE 5000 HCH AT OR ABOVE 5000 HOLD AT HCH RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF DAUBY MAP ATITE",
+                "DAUBY": "DAUBY 4000",
+                "ATITE": "ATITE 2440 RNW 08 TRK 335 UNTIL 3000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HCH",
+                    "fixes": {
+                        "HCH": "HCH RIGHT TURN INBOUNDCOURSE 335 ALT 5000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA26",
+            "fixes": {
+                "HCH": "HCH AT OR ABOVE 5000 HCH AT OR ABOVE 5000 HOLD AT HCH RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF DAUBY MAP ATITE",
+                "DAUBY": "DAUBY 4000",
+                "ATITE": "ATITE 2440 RNW 26 TRK 335 UNTIL 3000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HCH",
+                    "fixes": {
+                        "HCH": "HCH RIGHT TURN INBOUNDCOURSE 335 ALT 5000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY26",
+            "fixes": {
+                "SALTZ": "SALTZ AT OR ABOVE 6100",
+                "HYDER": "HYDER 3595 RNW 26 TRK 255 UNTIL 3000 HDG 180 INTERCEPT RADIAL 123 TO",
+                "HCH": "HCH HCH AT OR ABOVE 5000 HOLD AT HCH RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF HYDER MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "SALTZ",
+                    "fixes": {
+                        "SALTZ": "SALTZ RIGHT TURN INBOUNDCOURSE 255 ALT 6100 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ26",
+            "fixes": {
+                "SAYCO": "SAYCO AT OR ABOVE 4100",
+                "HYDER": "HYDER 3595 RNW 26 TRK 255 UNTIL 3000 HDG 180 INTERCEPT RADIAL 123 TO",
+                "HCH": "HCH HCH AT OR ABOVE 5000 HOLD AT HCH RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF HYDER MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "HCH",
+                    "fixes": {
+                        "HCH": "HCH",
+                        "HYDER": "HYDER AT OR ABOVE 4700",
+                        "PI001": "PI001 AT OR ABOVE 4300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "SAYCO": "SAYCO AT OR ABOVE 4100",
+                "BUMSE": "BUMSE 3600 RNW 26 TRK 256 UNTIL 2071",
+                "ADNOY": "ADNOY TURN LEFT DIRECT",
+                "WATAV": "WATAV",
+                "HCH": "OVERFLY HCH AT OR ABOVE 5000 HOLD AT HCH RIGHT TURN INBOUNDCOURSE 031 LEGDIST 5 FAF BUMSE MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "SALTZ",
+                    "fixes": {
+                        "SALTZ": "SALTZ RIGHT TURN INBOUNDCOURSE 256 ALT 4700 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

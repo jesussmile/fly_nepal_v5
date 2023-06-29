@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "ETKIL",
+            "lat": 53.0676,
+            "lon": 92.93203056666667
+        },
+        {
+            "name": "MIREN",
+            "lat": 52.92338888333333,
+            "lon": 92.70409721666667
+        },
+        {
+            "name": "OMPAR",
+            "lat": 52.869483333333335,
+            "lon": 92.599275
+        },
+        {
+            "name": "OTSOM",
+            "lat": 52.93297221666667,
+            "lon": 92.510325
+        },
+        {
+            "name": "PEMVI",
+            "lat": 52.931280566666665,
+            "lon": 92.77380833333333
+        },
+        {
+            "name": "SEGOS",
+            "lat": 52.9772,
+            "lon": 92.80918056666667
+        },
+        {
+            "name": "SUVKO",
+            "lat": 53.18335278333333,
+            "lon": 92.89805
+        },
+        {
+            "name": "URTUK",
+            "lat": 52.805925,
+            "lon": 92.68796666666667
+        },
+        {
+            "name": "VIMTA",
+            "lat": 52.99946666666666,
+            "lon": 92.85279443333333
+        },
+        {
+            "name": "XUBUX",
+            "lat": 53.135680566666665,
+            "lon": 93.01151388333334
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "XUBUX": "XUBUX AT OR ABOVE 2800",
+                "ETKIL": "ETKIL 2800",
+                "VIMTA": "OVERFLY VIMTA 1191 RNW 13",
+                "PEMVI": "OVERFLY PEMVI 2500 HOLD AT PEMVI LEFT TURN INBOUNDCOURSE 236 SPEED 265 LEGTIME 1 FAF ETKIL MAP VIMTA"
+            },
+            "transitions": [
+                {
+                    "name": "SUVKO",
+                    "fixes": {
+                        "SUVKO": "SUVKO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "OMPAR": "OMPAR AT OR ABOVE 3000",
+                "MIREN": "MIREN 2940",
+                "SEGOS": "OVERFLY SEGOS 1352 RNW 31 TRK 312 UNTIL 1390 TURN RIGHT DIRECT",
+                "OTSOM": "OVERFLY OTSOM 2500 HOLD AT OTSOM RIGHT TURN INBOUNDCOURSE 222 SPEED 265 LEGTIME 1 FAF MIREN MAP SEGOS"
+            },
+            "transitions": [
+                {
+                    "name": "OTSOM",
+                    "fixes": {
+                        "OTSOM": "OTSOM"
+                    }
+                },
+                {
+                    "name": "URTUK",
+                    "fixes": {
+                        "URTUK": "URTUK"
+                    }
+                }
+            ]
+        }
+    ]
+}

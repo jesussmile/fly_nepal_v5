@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "HEVUX",
+            "lat": 36.232694433333336,
+            "lon": 91.70653333333334
+        },
+        {
+            "name": "JELER",
+            "lat": 35.98940556666667,
+            "lon": 91.89224721666666
+        },
+        {
+            "name": "JUSIM",
+            "lat": 36.10548333333333,
+            "lon": 91.80381666666666
+        },
+        {
+            "name": "WABRA",
+            "lat": 36.149219433333336,
+            "lon": 91.77041388333333
+        },
+        {
+            "name": "ZEDOG",
+            "lat": 35.90518333333333,
+            "lon": 91.95629443333333
+        },
+        {
+            "name": "ZIPVA",
+            "lat": 36.037905566666666,
+            "lon": 91.85533888333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "ZEDOG": "ZEDOG AT OR ABOVE 3100",
+                "JELER": "JELER 2500",
+                "ZIPVA": "ZIPVA AT OR ABOVE 1400 RNW 03 TRK 031 UNTIL 1135",
+                "HEVUX": "OVERFLY HEVUX AT OR ABOVE 3000 HOLD AT HEVUX RIGHT TURN INBOUNDCOURSE 211 LEGDIST 4 FAF JELER MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "ZEDOG",
+                    "fixes": {
+                        "ZEDOG": "ZEDOG RIGHT TURN INBOUNDCOURSE 031 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "HEVUX": "HEVUX AT OR ABOVE 3000",
+                "WABRA": "WABRA 2400",
+                "JUSIM": "JUSIM AT OR ABOVE 1400 RNW 21 TRK 211 UNTIL 1135",
+                "ZEDOG": "OVERFLY ZEDOG AT OR ABOVE 3100 HOLD AT ZEDOG RIGHT TURN INBOUNDCOURSE 031 LEGDIST 4 FAF WABRA MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "HEVUX",
+                    "fixes": {
+                        "HEVUX": "HEVUX RIGHT TURN INBOUNDCOURSE 211 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "CUBUN",
+            "lat": 39.83851666666666,
+            "lon": 121.89324721666667
+        },
+        {
+            "name": "DIANS",
+            "lat": 39.71201666666666,
+            "lon": 121.78854721666667
+        },
+        {
+            "name": "DURHA",
+            "lat": 39.66358888333333,
+            "lon": 121.75671111666666
+        },
+        {
+            "name": "GRIDD",
+            "lat": 39.327413883333335,
+            "lon": 121.83541666666666
+        },
+        {
+            "name": "KLEMM",
+            "lat": 39.499411116666664,
+            "lon": 121.61362221666667
+        },
+        {
+            "name": "NORDE",
+            "lat": 39.909638883333336,
+            "lon": 121.95230833333333
+        },
+        {
+            "name": "RBL",
+            "lat": 40.09891111666666,
+            "lon": 122.23635
+        },
+        {
+            "name": "STARW",
+            "lat": 39.75268056666667,
+            "lon": 121.82215278333334
+        },
+        {
+            "name": "UNJED",
+            "lat": 39.627502783333334,
+            "lon": 121.71885556666666
+        },
+        {
+            "name": "ZOTWY",
+            "lat": 39.99301943333333,
+            "lon": 122.02176111666667
+        }
+    ],
+    "rnws": [
+        "RNW 13L",
+        "RNW 13R",
+        "RNW 31L",
+        "RNW 31R"
+    ],
+    "sids": [
+        {
+            "name": "CIC5",
+            "rnw": "36",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 13L",
+                    "fixes": {
+                        "RNW 13L": "RNW 13L HDG 131 UNTIL 640 HDG 131 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 13R",
+                    "fixes": {
+                        "RNW 13R": "RNW 13R HDG 131 UNTIL 640 HDG 131 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 31L",
+                    "fixes": {
+                        "RNW 31L": "RNW 31L HDG 311 UNTIL 640 HDG 311 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 31R",
+                    "fixes": {
+                        "RNW 31R": "RNW 31R HDG 311 UNTIL 640 HDG 311 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS13L",
+            "fixes": {
+                "ZOTWY": "ZOTWY AT OR ABOVE 3000",
+                "NORDE": "NORDE 2700 RNW 13L TRK 131 UNTIL 1000 HDG 155 INTERCEPT RADIAL 122 TO",
+                "DURHA": "DURHA DURHA AT OR ABOVE 6000 HOLD AT DURHA RIGHT TURN INBOUNDCOURSE 122 ALT 6000 LEGTIME 1 FAF NORDE MAP RNW 13L"
+            },
+            "transitions": [
+                {
+                    "name": "RBL",
+                    "fixes": {
+                        "RBL": "RBL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13L",
+            "fixes": {
+                "ZOTWY": "ZOTWY AT OR ABOVE 3000",
+                "NORDE": "NORDE 2700",
+                "CUBUN": "CUBUN AT OR ABOVE 1080 RNW 13L TRK 131 UNTIL 3600",
+                "UNJED": "OVERFLY UNJED AT OR ABOVE 3600 HOLD AT UNJED LEFT TURN INBOUNDCOURSE 312 ALT 3600 LEGDIST 4 FAF NORDE MAP RNW 13L"
+            },
+            "transitions": [
+                {
+                    "name": "RBL",
+                    "fixes": {
+                        "RBL": "RBL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31R",
+            "fixes": {
+                "UNJED": "UNJED AT OR ABOVE 3000",
+                "DIANS": "DIANS 2000",
+                "STARW": "STARW AT OR ABOVE 1060 RNW 31R TRK 311 UNTIL 476",
+                "ZOTWY": "OVERFLY ZOTWY AT OR ABOVE 3000 HOLD AT ZOTWY RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4 FAF DIANS MAP RNW 31R"
+            },
+            "transitions": [
+                {
+                    "name": "GRIDD",
+                    "fixes": {
+                        "GRIDD": "GRIDD",
+                        "KLEMM": "KLEMM AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

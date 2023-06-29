@@ -1,0 +1,71 @@
+{
+    "fixes": [
+        {
+            "name": "CN27Z",
+            "lat": 54.227569433333336,
+            "lon": 18.871513883333332
+        },
+        {
+            "name": "FN27X",
+            "lat": 54.23352778333334,
+            "lon": 18.812102783333334
+        },
+        {
+            "name": "NE",
+            "lat": 54.24513888333333,
+            "lon": 18.700222216666667
+        },
+        {
+            "name": "NET",
+            "lat": 54.24063888333333,
+            "lon": 18.745666666666665
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBX27",
+            "fixes": {
+                "FN27X": "FN27X 1400",
+                "NE": "NE 243 RNW 27 TRK 274 UNTIL 1000 TURN LEFT DIRECT NE 1700 FAF FN27X MAP NE"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDBY27",
+            "fixes": {
+                "NET": "NET 800 NET 1700 FAF NET MAP NE",
+                "NE": "NE 251 RNW 27 TRK 274 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NET",
+                    "fixes": {
+                        "NET": "NET LEFT TURN INBOUNDCOURSE 274 ALT 1400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBZ27",
+            "fixes": {
+                "CN27Z": "CN27Z AT OR ABOVE 1400",
+                "NET": "NET 800 NET 1700 FAF NET MAP NE",
+                "NE": "NE 251 RNW 27 TRK 274 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NET",
+                    "fixes": {
+                        "NET": "NET AT OR ABOVE 1700 TRK 117 UNTIL 4.5 FROM NET"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "QASQO",
+            "lat": 31.064719433333334,
+            "lon": 85.91393333333333
+        },
+        {
+            "name": "RURAE",
+            "lat": 31.076472216666666,
+            "lon": 85.957725
+        },
+        {
+            "name": "SOVRE",
+            "lat": 31.110433333333333,
+            "lon": 86.08461943333333
+        },
+        {
+            "name": "TIYUN",
+            "lat": 31.040019433333335,
+            "lon": 85.82211111666666
+        },
+        {
+            "name": "USPEC",
+            "lat": 31.028741666666665,
+            "lon": 85.78027221666666
+        },
+        {
+            "name": "VUTUC",
+            "lat": 30.994477783333334,
+            "lon": 85.65351943333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "SOVRE": "SOVRE AT OR ABOVE 2000",
+                "RURAE": "RURAE 1800",
+                "QASQO": "QASQO AT OR ABOVE 920 RNW 11 TRK 111 UNTIL 500",
+                "VUTUC": "OVERFLY VUTUC AT OR ABOVE 2000 HOLD AT VUTUC RIGHT TURN INBOUNDCOURSE 291 LEGDIST 4 FAF RURAE MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "SOVRE",
+                    "fixes": {
+                        "SOVRE": "SOVRE RIGHT TURN INBOUNDCOURSE 111 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "VUTUC": "VUTUC AT OR ABOVE 2000",
+                "USPEC": "USPEC 1800",
+                "TIYUN": "TIYUN AT OR ABOVE 960 RNW 29 TRK 291 UNTIL 500",
+                "SOVRE": "OVERFLY SOVRE AT OR ABOVE 2000 HOLD AT SOVRE RIGHT TURN INBOUNDCOURSE 111 LEGDIST 4 FAF USPEC MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "VUTUC",
+                    "fixes": {
+                        "VUTUC": "VUTUC RIGHT TURN INBOUNDCOURSE 291 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

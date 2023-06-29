@@ -1,0 +1,214 @@
+{
+    "fixes": [
+        {
+            "name": "CI25",
+            "lat": 49.41875278333333,
+            "lon": 10.108808333333334
+        },
+        {
+            "name": "DER07",
+            "lat": 49.393313883333335,
+            "lon": 9.966211116666667
+        },
+        {
+            "name": "DER25",
+            "lat": 49.390197216666664,
+            "lon": 9.948802783333333
+        },
+        {
+            "name": "FF25",
+            "lat": 49.404075,
+            "lon": 10.066716666666666
+        },
+        {
+            "name": "FI25",
+            "lat": 49.40999166666667,
+            "lon": 10.059561116666666
+        },
+        {
+            "name": "FQ07",
+            "lat": 49.36701943333333,
+            "lon": 9.834505566666667
+        },
+        {
+            "name": "HN401",
+            "lat": 49.438941666666665,
+            "lon": 9.661408333333334
+        },
+        {
+            "name": "HN402",
+            "lat": 49.345761116666665,
+            "lon": 9.703019433333333
+        },
+        {
+            "name": "HN403",
+            "lat": 49.411394433333335,
+            "lon": 10.067266666666667
+        },
+        {
+            "name": "HN421",
+            "lat": 49.513163883333334,
+            "lon": 10.154213883333334
+        },
+        {
+            "name": "HN422",
+            "lat": 49.432822216666665,
+            "lon": 10.187741666666666
+        },
+        {
+            "name": "HN423",
+            "lat": 49.37034166666667,
+            "lon": 9.838652783333334
+        },
+        {
+            "name": "MQ07",
+            "lat": 49.388705566666665,
+            "lon": 9.93635
+        },
+        {
+            "name": "NENVU",
+            "lat": 49.410325,
+            "lon": 10.061361116666667
+        },
+        {
+            "name": "NIBKO",
+            "lat": 49.496411116666664,
+            "lon": 9.876261116666667
+        },
+        {
+            "name": "NSNNB",
+            "lat": 49.39479443333333,
+            "lon": 9.965044433333333
+        },
+        {
+            "name": "RW25",
+            "lat": 49.39307778333333,
+            "lon": 9.964872216666667
+        },
+        {
+            "name": "TIMLO",
+            "lat": 49.50955,
+            "lon": 9.957211116666667
+        },
+        {
+            "name": "UMKAB",
+            "lat": 49.37039721666667,
+            "lon": 9.838877783333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "HN107",
+            "rnw": "07",
+            "fixes": {
+                "DER07": "DER07 AT OR ABOVE 1570 TRK 072 UNTIL 3500 HDG 072 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HN125",
+            "rnw": "25",
+            "fixes": {
+                "DER25": "DER25 AT OR ABOVE 1570 TRK 252 UNTIL 3500 HDG 252 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS25",
+            "fixes": {
+                "CI25": "CI25 AT OR ABOVE 3000",
+                "FI25": "FI25 3000 RNW 25 TRK 251 UNTIL 2500 TURN LEFT DIRECT",
+                "NSNNB": "NSNNB 4000 SPEED 160 FAF FI25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "NSN1",
+                    "fixes": {
+                        "NSNNB": "NSNNB AT OR ABOVE 4000 TRK 052 UNTIL 6.8 FROM NSNNB"
+                    }
+                },
+                {
+                    "name": "NSN2",
+                    "fixes": {
+                        "NSNNB": "NSNNB AT OR ABOVE 4000 TRK 056 UNTIL 5.8 FROM NSNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD07",
+            "fixes": {
+                "FQ07": "FQ07 3000",
+                "MQ07": "MQ07 1735 RNW 07 TRK 068 UNTIL 2500 TURN RIGHT DIRECT",
+                "NSNNB": "NSNNB 4000 SPEED 160 FAF FQ07 MAP MQ07"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDBD25",
+            "fixes": {
+                "FF25": "FF25 3000",
+                "NSNNB": "NSNNB 1594 RNW 25 TRK 258 UNTIL 2500 TURN LEFT DIRECT NSNNB 4000 SPEED 160 FAF FF25 MAP NSN"
+            },
+            "transitions": [
+                {
+                    "name": "NSN1",
+                    "fixes": {
+                        "NSNNB": "NSNNB AT OR ABOVE 4000 TRK 053 UNTIL 5.8 FROM NSNNB"
+                    }
+                },
+                {
+                    "name": "NSN2",
+                    "fixes": {
+                        "NSNNB": "NSNNB AT OR ABOVE 4000 TRK 061 UNTIL 5.8 FROM NSNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "HN402": "HN402 AT OR ABOVE 3000",
+                "UMKAB": "UMKAB 3000 RNW 07",
+                "HN403": "OVERFLY HN403 TURN LEFT DIRECT",
+                "NIBKO": "NIBKO 4000 SPEED 220 FAF UMKAB MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "NIBKO",
+                    "fixes": {
+                        "NIBKO": "NIBKO AT OR ABOVE 4000",
+                        "HN401": "HN401 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "HN422": "HN422 AT OR ABOVE 3000",
+                "NENVU": "NENVU 3000 RNW 25",
+                "HN423": "OVERFLY HN423 TURN RIGHT DIRECT",
+                "TIMLO": "TIMLO AT OR ABOVE 4000 SPEED 220 FAF NENVU MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "TIMLO",
+                    "fixes": {
+                        "TIMLO": "TIMLO AT OR ABOVE 4000",
+                        "HN421": "HN421 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

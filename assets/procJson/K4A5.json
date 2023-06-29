@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "ASUME",
+            "lat": 35.805002783333336,
+            "lon": 92.79897221666667
+        },
+        {
+            "name": "DULLS",
+            "lat": 36.02631388333333,
+            "lon": 92.46106943333334
+        },
+        {
+            "name": "HIBIT",
+            "lat": 35.85334443333333,
+            "lon": 92.72545833333334
+        },
+        {
+            "name": "JENKA",
+            "lat": 35.837463883333335,
+            "lon": 92.749625
+        },
+        {
+            "name": "MERLS",
+            "lat": 35.77347221666667,
+            "lon": 92.84684166666666
+        },
+        {
+            "name": "RUNGS",
+            "lat": 35.96256388333333,
+            "lon": 92.55875556666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "MERLS": "MERLS AT OR ABOVE 4000",
+                "ASUME": "ASUME AT OR ABOVE 3500",
+                "JENKA": "JENKA 3000",
+                "HIBIT": "HIBIT AT OR ABOVE 2440 RNW 05 TRK 051 UNTIL 1353",
+                "DULLS": "OVERFLY DULLS AT OR ABOVE 4000 HOLD AT DULLS RIGHT TURN INBOUNDCOURSE 231 LEGDIST 4 FAF JENKA MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "MERLS",
+                    "fixes": {
+                        "MERLS": "MERLS RIGHT TURN INBOUNDCOURSE 051 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "DULLS": "DULLS AT OR ABOVE 4000",
+                "RUNGS": "RUNGS 3000 RNW 23 TRK 231 UNTIL 1364",
+                "MERLS": "OVERFLY MERLS AT OR ABOVE 4000 HOLD AT MERLS RIGHT TURN INBOUNDCOURSE 051 LEGDIST 4 FAF RUNGS MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "DULLS",
+                    "fixes": {
+                        "DULLS": "DULLS RIGHT TURN INBOUNDCOURSE 231 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

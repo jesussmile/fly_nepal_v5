@@ -1,0 +1,203 @@
+{
+    "fixes": [
+        {
+            "name": "D031G",
+            "lat": 23.274077783333333,
+            "lon": 43.74430556666667
+        },
+        {
+            "name": "D033I",
+            "lat": 23.242138883333332,
+            "lon": 43.756166666666665
+        },
+        {
+            "name": "D245G",
+            "lat": 23.473538883333333,
+            "lon": 43.634152783333334
+        },
+        {
+            "name": "DUVRI",
+            "lat": 23.166161116666668,
+            "lon": 43.711972216666666
+        },
+        {
+            "name": "EN04",
+            "lat": 23.390947216666667,
+            "lon": 43.72184443333333
+        },
+        {
+            "name": "EN22",
+            "lat": 23.373922216666667,
+            "lon": 43.72975
+        },
+        {
+            "name": "EVERO",
+            "lat": 23.561436116666666,
+            "lon": 43.644558333333336
+        },
+        {
+            "name": "FN04",
+            "lat": 23.489047216666666,
+            "lon": 43.69334443333333
+        },
+        {
+            "name": "FN22",
+            "lat": 23.286888883333333,
+            "lon": 43.77168888333333
+        },
+        {
+            "name": "GADPI",
+            "lat": 23.521558333333335,
+            "lon": 43.54469721666667
+        },
+        {
+            "name": "NIDEK",
+            "lat": 23.245938883333334,
+            "lon": 43.91118888333333
+        },
+        {
+            "name": "ST501",
+            "lat": 23.484747216666666,
+            "lon": 43.680680566666666
+        },
+        {
+            "name": "ST502",
+            "lat": 23.314894433333333,
+            "lon": 43.760519433333336
+        },
+        {
+            "name": "ST503",
+            "lat": 23.282766666666667,
+            "lon": 43.77559443333333
+        },
+        {
+            "name": "ST504",
+            "lat": 23.451675,
+            "lon": 43.696241666666666
+        },
+        {
+            "name": "TILUX",
+            "lat": 23.60131111666667,
+            "lon": 43.74452221666667
+        },
+        {
+            "name": "UNKAL",
+            "lat": 23.206041666666668,
+            "lon": 43.811566666666664
+        },
+        {
+            "name": "VSQNB",
+            "lat": 23.389361116666667,
+            "lon": 43.72230556666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 11",
+        "RNW 22",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB04",
+            "fixes": {
+                "FN04": "FN04 2000",
+                "EN04": "OVERFLY EN04 66",
+                "VSQNB": "OVERFLY VSQNB AT OR ABOVE 440 RNW 04 TRK 036 UNTIL 900 TURN LEFT DIRECT VSQNB 3200 FAF FN04 MAP VSQ"
+            },
+            "transitions": [
+                {
+                    "name": "VSQ",
+                    "fixes": {
+                        "VSQNB": "VSQNB AT OR ABOVE 3200",
+                        "D245G": "OVERFLY D245G AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FN22": "FN22 1900",
+                "EN22": "OVERFLY EN22 87",
+                "VSQNB": "OVERFLY VSQNB AT OR ABOVE 440 RNW 22 TRK 225 UNTIL 1200 TURN LEFT DIRECT VSQNB 2000 FAF FN22 MAP VSQ"
+            },
+            "transitions": [
+                {
+                    "name": "VSQ1",
+                    "fixes": {
+                        "VSQNB": "VSQNB AT OR ABOVE 2000",
+                        "D031G": "OVERFLY D031G AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "VSQ2",
+                    "fixes": {
+                        "VSQNB": "VSQNB AT OR ABOVE 2000",
+                        "D033I": "OVERFLY D033I AT OR ABOVE 1900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "EVERO": "EVERO AT OR ABOVE 2000 SPEED 230",
+                "ST501": "ST501 2000 SPEED 230 RNW 04",
+                "ST502": "OVERFLY ST502 TURN LEFT DIRECT",
+                "GADPI": "GADPI AT OR ABOVE 2000 SPEED 230 FAF ST501 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "EVERO",
+                    "fixes": {
+                        "EVERO": "EVERO RIGHT TURN INBOUNDCOURSE 044 ALT 2000 SPEED 220 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "GADPI",
+                    "fixes": {
+                        "GADPI": "GADPI AT OR ABOVE 2000 SPEED 230"
+                    }
+                },
+                {
+                    "name": "TILUX",
+                    "fixes": {
+                        "TILUX": "TILUX AT OR ABOVE 2000 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "UNKAL": "UNKAL AT OR ABOVE 3000 SPEED 230",
+                "ST503": "ST503 2000 SPEED 230 RNW 22",
+                "ST504": "OVERFLY ST504 TURN RIGHT DIRECT",
+                "DUVRI": "DUVRI AT OR ABOVE 3000 SPEED 230 FAF ST503 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "DUVRI",
+                    "fixes": {
+                        "DUVRI": "DUVRI AT OR ABOVE 3000 SPEED 230"
+                    }
+                },
+                {
+                    "name": "NIDEK",
+                    "fixes": {
+                        "NIDEK": "NIDEK AT OR ABOVE 3000 SPEED 230"
+                    }
+                },
+                {
+                    "name": "UNKAL",
+                    "fixes": {
+                        "UNKAL": "UNKAL LEFT TURN INBOUNDCOURSE 224 ALT 3000 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

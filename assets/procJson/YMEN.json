@@ -1,0 +1,202 @@
+{
+    "fixes": [
+        {
+            "name": "ATIBO",
+            "lat": 37.722172216666664,
+            "lon": 145.21682778333334
+        },
+        {
+            "name": "DER08",
+            "lat": 37.7308,
+            "lon": 144.91466111666668
+        },
+        {
+            "name": "DER17",
+            "lat": 37.73396111666667,
+            "lon": 144.90141943333333
+        },
+        {
+            "name": "DER26",
+            "lat": 37.73139166666667,
+            "lon": 144.89288056666666
+        },
+        {
+            "name": "DER35",
+            "lat": 37.720425,
+            "lon": 144.90075833333333
+        },
+        {
+            "name": "MA26",
+            "lat": 37.730452783333334,
+            "lon": 144.92676388333334
+        },
+        {
+            "name": "MENEA",
+            "lat": 37.629983333333335,
+            "lon": 145.15058056666666
+        },
+        {
+            "name": "MENEC",
+            "lat": 37.80255833333333,
+            "lon": 145.1514
+        },
+        {
+            "name": "MENEF",
+            "lat": 37.727891666666665,
+            "lon": 145.01964443333333
+        },
+        {
+            "name": "MENEH",
+            "lat": 37.805205566666665,
+            "lon": 144.99611666666667
+        },
+        {
+            "name": "MENNE",
+            "lat": 37.51765278333333,
+            "lon": 144.98958056666666
+        },
+        {
+            "name": "MENNF",
+            "lat": 37.63255278333333,
+            "lon": 144.89655833333333
+        },
+        {
+            "name": "MENNG",
+            "lat": 37.46580556666667,
+            "lon": 144.88861111666668
+        },
+        {
+            "name": "MENNH",
+            "lat": 37.754722216666664,
+            "lon": 144.94037221666667
+        },
+        {
+            "name": "MENNI",
+            "lat": 37.549180566666664,
+            "lon": 144.89258056666668
+        },
+        {
+            "name": "MONTY",
+            "lat": 37.72525,
+            "lon": 145.11186111666666
+        },
+        {
+            "name": "SANEM",
+            "lat": 37.728552783333335,
+            "lon": 144.9961
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 17",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "ESSEN8",
+            "rnw": "03",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 08",
+                    "fixes": {
+                        "RNW 08": "RNW 08",
+                        "DER08": "OVERFLY DER08 TRK 077 UNTIL 1000 HDG 077 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 17",
+                    "fixes": {
+                        "RNW 17": "RNW 17",
+                        "DER17": "OVERFLY DER17 TRK 166 UNTIL 1000 HDG 166 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 26",
+                    "fixes": {
+                        "RNW 26": "RNW 26",
+                        "DER26": "OVERFLY DER26 TRK 247 UNTIL 1500 HDG 247 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 35",
+                    "fixes": {
+                        "RNW 35": "RNW 35",
+                        "DER35": "OVERFLY DER35 TRK 346 UNTIL 1000 HDG 346 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC26",
+            "fixes": {
+                "MONTY": "MONTY AT OR ABOVE 3000",
+                "SANEM": "SANEM 1200",
+                "MA26": "MA26 489 RNW 26 TRK 257 UNTIL 500 HDG 130 VECTORS FAF SANEM MAP MA26"
+            },
+            "transitions": [
+                {
+                    "name": "MONTY",
+                    "fixes": {
+                        "MONTY": "MONTY LEFT TURN INBOUNDCOURSE 257 ALT 3000 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "MENNI": "MENNI AT OR ABOVE 3000",
+                "MENNF": "MENNF 2010 RNW 17",
+                "MENNH": "MENNH HDG 130 VECTORS FAF MENNF MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "MENNE",
+                    "fixes": {
+                        "MENNE": "MENNE AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MENNG",
+                    "fixes": {
+                        "MENNG": "MENNG AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "MONTY": "MONTY AT OR ABOVE 3000",
+                "MENEF": "MENEF 1880 RNW 26 TURN LEFT DIRECT",
+                "MENEH": "MENEH SPEED 240 HDG 087 VECTORS FAF MENEF MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "ATIBO",
+                    "fixes": {
+                        "ATIBO": "ATIBO AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MENEA",
+                    "fixes": {
+                        "MENEA": "MENEA AT OR ABOVE 5000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MENEC",
+                    "fixes": {
+                        "MENEC": "MENEC AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

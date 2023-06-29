@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "CAGPA",
+            "lat": 39.55194721666667,
+            "lon": 82.97961111666666
+        },
+        {
+            "name": "EZOCY",
+            "lat": 39.62004721666667,
+            "lon": 82.97480833333333
+        },
+        {
+            "name": "FF19",
+            "lat": 39.615675,
+            "lon": 83.01972778333334
+        },
+        {
+            "name": "NEATH",
+            "lat": 39.410866666666664,
+            "lon": 82.98953056666667
+        },
+        {
+            "name": "PETLE",
+            "lat": 39.478405566666666,
+            "lon": 82.98478611666667
+        },
+        {
+            "name": "PI001",
+            "lat": 39.581695866666664,
+            "lon": 83.00382818333334
+        },
+        {
+            "name": "PI002",
+            "lat": 39.64664128333333,
+            "lon": 82.96449328333334
+        },
+        {
+            "name": "PI003",
+            "lat": 39.68347528333334,
+            "lon": 83.05201196666667
+        },
+        {
+            "name": "RAJAH",
+            "lat": 39.30592778333333,
+            "lon": 82.99688333333333
+        },
+        {
+            "name": "TARTO",
+            "lat": 39.53474166666667,
+            "lon": 82.63001388333333
+        },
+        {
+            "name": "WAVUX",
+            "lat": 39.72497778333333,
+            "lon": 82.96739166666667
+        },
+        {
+            "name": "XUB",
+            "lat": 39.52688333333333,
+            "lon": 82.97794166666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "RAJAH": "RAJAH AT OR ABOVE 3000",
+                "NEATH": "NEATH 2600",
+                "PETLE": "PETLE AT OR ABOVE 1300 RNW 01 TRK 008 UNTIL 1085",
+                "WAVUX": "OVERFLY WAVUX AT OR ABOVE 3000 HOLD AT WAVUX RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF NEATH MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "RAJAH",
+                    "fixes": {
+                        "RAJAH": "RAJAH RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "WAVUX": "WAVUX AT OR ABOVE 3000",
+                "EZOCY": "EZOCY 2600",
+                "CAGPA": "CAGPA AT OR ABOVE 1280 RNW 19 TRK 188 UNTIL 935",
+                "RAJAH": "OVERFLY RAJAH AT OR ABOVE 3000 HOLD AT RAJAH RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4 FAF EZOCY MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "WAVUX",
+                    "fixes": {
+                        "WAVUX": "WAVUX RIGHT TURN INBOUNDCOURSE 188 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR19",
+            "fixes": {
+                "FF19": "FF19 2600",
+                "XUB": "XUB 833 RNW 19 TRK 165 UNTIL 2700 TURN LEFT DIRECT XUB AT OR ABOVE 3000 HOLD AT XUB LEFT TURN INBOUNDCOURSE 165 LEGTIME 1 FAF FF19 MAP XUB"
+            },
+            "transitions": [
+                {
+                    "name": "TARTO",
+                    "fixes": {
+                        "TARTO": "TARTO",
+                        "XUB": "XUB AT OR BELOW 6000 AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

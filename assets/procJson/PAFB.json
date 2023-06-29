@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "CALOX",
+            "lat": 64.84041943333334,
+            "lon": 147.10740278333333
+        },
+        {
+            "name": "CUNNB",
+            "lat": 64.83858333333333,
+            "lon": 147.49507778333333
+        },
+        {
+            "name": "DISKE",
+            "lat": 64.95553056666667,
+            "lon": 147.10986666666668
+        },
+        {
+            "name": "FAI",
+            "lat": 64.80006943333333,
+            "lon": 148.011975
+        },
+        {
+            "name": "FIBEX",
+            "lat": 64.99547778333333,
+            "lon": 147.53197778333333
+        },
+        {
+            "name": "GINTE",
+            "lat": 64.839325,
+            "lon": 147.34288333333333
+        },
+        {
+            "name": "HOMAT",
+            "lat": 64.72530833333333,
+            "lon": 147.10495833333334
+        },
+        {
+            "name": "IMARE",
+            "lat": 64.55822221666666,
+            "lon": 147.288975
+        },
+        {
+            "name": "JAKAB",
+            "lat": 64.83843611666667,
+            "lon": 147.49331666666666
+        },
+        {
+            "name": "PI001",
+            "lat": 64.83953818333333,
+            "lon": 147.35789363333333
+        },
+        {
+            "name": "PI002",
+            "lat": 64.78970506666667,
+            "lon": 147.23686136666666
+        },
+        {
+            "name": "PI003",
+            "lat": 64.84097611666667,
+            "lon": 147.10309996666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA25",
+            "fixes": {
+                "CUNNB": "CUNNB 2000 RNW 25 TRK 252 UNTIL 1700 TURN LEFT DIRECT CUNNB AT OR ABOVE 4000 HOLD AT CUNNB LEFT TURN INBOUNDCOURSE 252 ALT 5500 SPEED 230 LEGTIME 1 FAF CUNNB MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "FAI",
+                    "fixes": {
+                        "FAI": "FAI AT OR ABOVE 4000",
+                        "CUNNB": "CUNNB AT OR ABOVE 4000",
+                        "PI001": "PI001 AT OR ABOVE 3300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "CALOX": "CALOX AT OR ABOVE 3000",
+                "GINTE": "GINTE 2500",
+                "JAKAB": "JAKAB AT OR ABOVE 1260 RNW 25 TRK 252 UNTIL 849 TURN LEFT DIRECT",
+                "IMARE": "OVERFLY IMARE AT OR ABOVE 4200 HOLD AT IMARE LEFT TURN INBOUNDCOURSE 107 ALT 10000 LEGDIST 6 FAF GINTE MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "FIBEX",
+                    "fixes": {
+                        "FIBEX": "FIBEX AT OR ABOVE 4900",
+                        "DISKE": "DISKE AT OR ABOVE 4900"
+                    }
+                },
+                {
+                    "name": "IMARE",
+                    "fixes": {
+                        "IMARE": "IMARE AT OR ABOVE 4000",
+                        "HOMAT": "HOMAT AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "APGOG",
+            "lat": 2.456013883333333,
+            "lon": 40.90356666666667
+        },
+        {
+            "name": "AXOLU",
+            "lat": 2.127313883333333,
+            "lon": 40.73826111666666
+        },
+        {
+            "name": "OKDIL",
+            "lat": 2.1696472166666667,
+            "lon": 40.871530566666664
+        },
+        {
+            "name": "OKNIS",
+            "lat": 2.413883333333333,
+            "lon": 40.99432778333333
+        },
+        {
+            "name": "OKSEG",
+            "lat": 2.0949166666666668,
+            "lon": 40.83396666666667
+        },
+        {
+            "name": "USUKU",
+            "lat": 1.9922861166666666,
+            "lon": 40.78228611666667
+        },
+        {
+            "name": "UTOXI",
+            "lat": 2.5016361166666665,
+            "lon": 41.038463883333336
+        },
+        {
+            "name": "XABOR",
+            "lat": 2.339155566666667,
+            "lon": 40.95675
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 15",
+        "RNW 26",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "OKSEG": "OKSEG AT OR ABOVE 1700",
+                "OKDIL": "OKDIL 1700 RNW 15 TRK 154 UNTIL 1000 TURN RIGHT DIRECT",
+                "AXOLU": "AXOLU 3000 HOLD AT AXOLU LEFT TURN INBOUNDCOURSE 334 ALT 3000 SPEED 230 LEGTIME 1 FAF OKDIL MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "AXOLU",
+                    "fixes": {
+                        "AXOLU": "AXOLU AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "USUKU",
+                    "fixes": {
+                        "USUKU": "USUKU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "OKNIS": "OKNIS AT OR ABOVE 1700",
+                "XABOR": "XABOR 1700 RNW 33 TRK 334 UNTIL 1000 TURN LEFT DIRECT",
+                "APGOG": "APGOG 3000 HOLD AT APGOG RIGHT TURN INBOUNDCOURSE 154 ALT 3000 SPEED 230 LEGTIME 1 FAF XABOR MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "APGOG",
+                    "fixes": {
+                        "APGOG": "APGOG AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "UTOXI",
+                    "fixes": {
+                        "UTOXI": "UTOXI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

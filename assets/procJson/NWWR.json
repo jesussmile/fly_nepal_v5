@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "25THR",
+            "lat": 21.518175,
+            "lon": 168.07185278333333
+        },
+        {
+            "name": "FF13",
+            "lat": 21.427738883333333,
+            "lon": 167.98753333333335
+        },
+        {
+            "name": "FF31",
+            "lat": 21.537358333333334,
+            "lon": 168.09335556666667
+        },
+        {
+            "name": "FWR13",
+            "lat": 21.426611116666667,
+            "lon": 167.98647221666667
+        },
+        {
+            "name": "FWR31",
+            "lat": 21.538027783333334,
+            "lon": 168.09038888333333
+        },
+        {
+            "name": "IWR13",
+            "lat": 21.3825,
+            "lon": 167.94538888333332
+        },
+        {
+            "name": "IWR31",
+            "lat": 21.582138883333332,
+            "lon": 168.13155556666666
+        },
+        {
+            "name": "MIDIN",
+            "lat": 21.495333333333335,
+            "lon": 167.83616666666666
+        },
+        {
+            "name": "MRNB",
+            "lat": 21.481611116666667,
+            "lon": 168.03580556666665
+        },
+        {
+            "name": "WR600",
+            "lat": 21.420944433333332,
+            "lon": 167.89825
+        },
+        {
+            "name": "WR610",
+            "lat": 21.503361116666667,
+            "lon": 168.05802778333333
+        },
+        {
+            "name": "WR700",
+            "lat": 21.620638883333335,
+            "lon": 168.08441666666667
+        },
+        {
+            "name": "WR710",
+            "lat": 21.461472216666667,
+            "lon": 168.01894443333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB13",
+            "fixes": {
+                "FF13": "FF13 1400 RNW 13",
+                "MRNB": "OVERFLY MRNB TRK 128 UNTIL 1400 FAF FF13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "MR",
+                    "fixes": {
+                        "MRNB": "MRNB TRK 323 UNTIL 7.5 FROM MRNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB31",
+            "fixes": {
+                "FF31": "FF31 1500 RNW 31",
+                "MRNB": "OVERFLY MRNB TRK 304 UNTIL 1500 FAF FF31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "MR",
+                    "fixes": {
+                        "MRNB": "MRNB TRK 139 UNTIL 7.5 FROM MRNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "IWR13": "IWR13 AT OR ABOVE 1700 SPEED 175 IWR13 AT OR ABOVE 1700 SPEED 175 HOLD AT IWR13 LEFT TURN INBOUNDCOURSE 126 ALT 1700 LEGTIME 1 FAF FWR13 MAP RNW 13",
+                "FWR13": "FWR13 1700 RNW 13",
+                "WR610": "OVERFLY WR610 TURN RIGHT DIRECT",
+                "WR600": "WR600 SPEED 175"
+            },
+            "transitions": [
+                {
+                    "name": "IWR13",
+                    "fixes": {
+                        "IWR13": "IWR13 LEFT TURN INBOUNDCOURSE 126 ALT 1700 SPEED 175 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MIDIN",
+                    "fixes": {
+                        "MIDIN": "MIDIN AT OR ABOVE 1700 SPEED 180",
+                        "WR600": "WR600 AT OR ABOVE 1700 SPEED 175"
+                    }
+                },
+                {
+                    "name": "WR600",
+                    "fixes": {
+                        "WR600": "WR600 AT OR ABOVE 1700 SPEED 175"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "IWR31": "IWR31 AT OR ABOVE 1700 SPEED 175 IWR31 AT OR ABOVE 1700 SPEED 175 HOLD AT IWR31 RIGHT TURN INBOUNDCOURSE 306 ALT 1700 LEGTIME 1 FAF FWR31 MAP RNW 31",
+                "FWR31": "FWR31 1700",
+                "25THR": "25THR AT OR ABOVE 1100 RNW 31",
+                "WR710": "OVERFLY WR710 TURN LEFT DIRECT",
+                "WR700": "WR700 SPEED 175"
+            },
+            "transitions": [
+                {
+                    "name": "IWR31",
+                    "fixes": {
+                        "IWR31": "IWR31 RIGHT TURN INBOUNDCOURSE 306 ALT 1700 SPEED 175 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MIDIN",
+                    "fixes": {
+                        "MIDIN": "MIDIN AT OR ABOVE 1700 SPEED 180",
+                        "WR700": "WR700 AT OR ABOVE 1700 SPEED 175"
+                    }
+                },
+                {
+                    "name": "WR700",
+                    "fixes": {
+                        "WR700": "WR700 AT OR ABOVE 1700 SPEED 175"
+                    }
+                }
+            ]
+        }
+    ]
+}

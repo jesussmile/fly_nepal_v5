@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "BZM",
+            "lat": 35.86885278333333,
+            "lon": 81.24052778333333
+        },
+        {
+            "name": "ESUGY",
+            "lat": 36.43300833333333,
+            "lon": 81.38315278333333
+        },
+        {
+            "name": "HUBVA",
+            "lat": 36.37510556666667,
+            "lon": 81.34574166666667
+        },
+        {
+            "name": "JEFFS",
+            "lat": 36.43463333333333,
+            "lon": 81.27608888333333
+        },
+        {
+            "name": "WRAYS",
+            "lat": 36.436425,
+            "lon": 81.14805
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC28",
+            "fixes": {
+                "WRAYS": "WRAYS AT OR ABOVE 6500",
+                "JEFFS": "JEFFS 5200",
+                "ESUGY": "ESUGY 3550 RNW 28 TRK 276 UNTIL 3580 TURN LEFT HDG 096 INTERCEPT RADIAL 356 TO",
+                "HUBVA": "HUBVA TURN LEFT DIRECT HUBVA AT OR ABOVE 7200 HOLD AT HUBVA LEFT TURN INBOUNDCOURSE 176 ALT 7200 LEGTIME 1 FAF JEFFS MAP ESUGY"
+            },
+            "transitions": [
+                {
+                    "name": "BZM",
+                    "fixes": {
+                        "BZM": "BZM",
+                        "WRAYS": "WRAYS AT OR ABOVE 6500 HOLD AT WRAYS RIGHT TURN INBOUNDCOURSE 276 ALT 6500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "WRAYS": "WRAYS AT OR ABOVE 6500 OVERFLY WRAYS AT OR ABOVE 6500 HOLD AT WRAYS RIGHT TURN INBOUNDCOURSE 276 ALT 6500 LEGDIST 4 FAF JEFFS MAP RNW 28",
+                "JEFFS": "JEFFS 5200 RNW 28 TRK 276 UNTIL 3578 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WRAYS",
+                    "fixes": {
+                        "WRAYS": "WRAYS RIGHT TURN INBOUNDCOURSE 276 ALT 6500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

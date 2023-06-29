@@ -1,0 +1,211 @@
+{
+    "fixes": [
+        {
+            "name": "AXOGU",
+            "lat": 52.43833888333333,
+            "lon": 128.38068333333334
+        },
+        {
+            "name": "DASAX",
+            "lat": 52.202125,
+            "lon": 128.17168056666668
+        },
+        {
+            "name": "DUBLO",
+            "lat": 51.899461116666664,
+            "lon": 128.16358611666666
+        },
+        {
+            "name": "DUPOM",
+            "lat": 52.26610278333333,
+            "lon": 128.51118888333335
+        },
+        {
+            "name": "EMKED",
+            "lat": 52.30686943333333,
+            "lon": 128.35071666666667
+        },
+        {
+            "name": "FF106",
+            "lat": 52.274830566666665,
+            "lon": 128.32253611666667
+        },
+        {
+            "name": "GOVUP",
+            "lat": 52.262791666666665,
+            "lon": 128.22514443333333
+        },
+        {
+            "name": "IGSIR",
+            "lat": 52.33596111666667,
+            "lon": 128.28980278333333
+        },
+        {
+            "name": "IMILI",
+            "lat": 52.02127221666667,
+            "lon": 128.319675
+        },
+        {
+            "name": "KISOG",
+            "lat": 52.00856666666667,
+            "lon": 128.14283333333333
+        },
+        {
+            "name": "LEXEL",
+            "lat": 52.09121666666667,
+            "lon": 128.12704443333334
+        },
+        {
+            "name": "MIVEV",
+            "lat": 52.2803,
+            "lon": 128.45678056666668
+        },
+        {
+            "name": "NUDAK",
+            "lat": 52.17333888333334,
+            "lon": 128.146475
+        },
+        {
+            "name": "OMPEN",
+            "lat": 52.25585278333333,
+            "lon": 128.24333611666665
+        },
+        {
+            "name": "PI001",
+            "lat": 52.21871071666666,
+            "lon": 128.19160663333332
+        },
+        {
+            "name": "PI002",
+            "lat": 52.20620986666667,
+            "lon": 128.30677545
+        },
+        {
+            "name": "PI003",
+            "lat": 52.280663733333334,
+            "lon": 128.33676708333334
+        },
+        {
+            "name": "SEDEK",
+            "lat": 52.26138888333333,
+            "lon": 128.72333333333333
+        },
+        {
+            "name": "YJQNB",
+            "lat": 52.18527778333333,
+            "lon": 128.11361111666668
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBB13",
+            "fixes": {
+                "FF106": "FF106 2700",
+                "YJQNB": "YJQNB 1540 RNW 13 HDG 286 UNTIL 3100 TURN RIGHT DIRECT YJQNB 3800 HOLD AT YJQNB RIGHT TURN INBOUNDCOURSE 106 LEGTIME 1 FAF FF106 MAP YJQ"
+            },
+            "transitions": [
+                {
+                    "name": "YJQ",
+                    "fixes": {
+                        "YJQNB": "YJQNB AT OR ABOVE 3300",
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBB31",
+            "fixes": {
+                "FF106": "FF106 2700",
+                "YJQNB": "YJQNB 1540 RNW 31 HDG 286 UNTIL 3100 TURN RIGHT DIRECT YJQNB 3800 HOLD AT YJQNB RIGHT TURN INBOUNDCOURSE 106 LEGTIME 1 FAF FF106 MAP YJQ"
+            },
+            "transitions": [
+                {
+                    "name": "YJQ",
+                    "fixes": {
+                        "YJQNB": "YJQNB AT OR ABOVE 3300",
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "EMKED": "EMKED AT OR ABOVE 3100",
+                "OMPEN": "OMPEN 1900",
+                "DASAX": "OVERFLY DASAX 478 RNW 13 HDG 122 UNTIL 1400 TURN LEFT DIRECT",
+                "DUPOM": "OVERFLY DUPOM 4200 SPEED 200 HOLD AT DUPOM RIGHT TURN INBOUNDCOURSE 049 SPEED 250 LEGTIME 1 FAF OMPEN MAP DASAX"
+            },
+            "transitions": [
+                {
+                    "name": "DUPOM",
+                    "fixes": {
+                        "DUPOM": "DUPOM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA13",
+            "fixes": {
+                "IGSIR": "IGSIR AT OR ABOVE 3500",
+                "GOVUP": "GOVUP 2000 RNW 13 TURN LEFT DIRECT",
+                "SEDEK": "OVERFLY SEDEK 3600 HOLD AT SEDEK RIGHT TURN INBOUNDCOURSE 256 LEGTIME 1 FAF GOVUP MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "AXOGU",
+                    "fixes": {
+                        "AXOGU": "AXOGU"
+                    }
+                },
+                {
+                    "name": "MIVEV",
+                    "fixes": {
+                        "MIVEV": "MIVEV"
+                    }
+                },
+                {
+                    "name": "SEDEK",
+                    "fixes": {
+                        "SEDEK": "SEDEK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "KISOG": "KISOG AT OR ABOVE 3000",
+                "LEXEL": "LEXEL 1900",
+                "NUDAK": "OVERFLY NUDAK 305 RNW 31 HDG 333 UNTIL 1200 TURN LEFT DIRECT",
+                "IMILI": "OVERFLY IMILI 3900 HOLD AT IMILI RIGHT TURN INBOUNDCOURSE 078 LEGTIME 1 FAF LEXEL MAP NUDAK"
+            },
+            "transitions": [
+                {
+                    "name": "DUBLO",
+                    "fixes": {
+                        "DUBLO": "DUBLO"
+                    }
+                },
+                {
+                    "name": "IMILI",
+                    "fixes": {
+                        "IMILI": "IMILI SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

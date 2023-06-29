@@ -1,0 +1,134 @@
+{
+    "fixes": [
+        {
+            "name": "BUVYA",
+            "lat": 32.66886388333333,
+            "lon": 82.45566943333333
+        },
+        {
+            "name": "DBN",
+            "lat": 32.563461116666666,
+            "lon": 82.83004443333333
+        },
+        {
+            "name": "IMASY",
+            "lat": 32.870702783333336,
+            "lon": 82.43490278333333
+        },
+        {
+            "name": "JIDIK",
+            "lat": 32.549775,
+            "lon": 82.28495
+        },
+        {
+            "name": "SADOC",
+            "lat": 32.74170278333333,
+            "lon": 82.56048056666667
+        },
+        {
+            "name": "WAPNI",
+            "lat": 32.604877783333336,
+            "lon": 82.05420833333334
+        },
+        {
+            "name": "WINSI",
+            "lat": 32.47626388333333,
+            "lon": 82.17996943333333
+        },
+        {
+            "name": "ZATOV",
+            "lat": 32.642,
+            "lon": 82.41709166666666
+        },
+        {
+            "name": "ZEMPA",
+            "lat": 32.612575,
+            "lon": 82.68569721666667
+        },
+        {
+            "name": "ZETED",
+            "lat": 32.34752221666667,
+            "lon": 82.305375
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS14",
+            "fixes": {
+                "SADOC": "SADOC AT OR ABOVE 3000",
+                "BUVYA": "BUVYA 2000 RNW 14 TRK 136 UNTIL 2000 TURN RIGHT DIRECT",
+                "DBN": "DBN AT OR ABOVE 3000 HOLD AT DBN RIGHT TURN INBOUNDCOURSE 277 LEGTIME 1 FAF BUVYA MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "SADOC",
+                    "fixes": {
+                        "SADOC": "SADOC RIGHT TURN INBOUNDCOURSE 136 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "SADOC": "SADOC AT OR ABOVE 2500",
+                "BUVYA": "BUVYA 2000",
+                "ZATOV": "ZATOV AT OR ABOVE 1180 RNW 14 TRK 135 UNTIL 630",
+                "WINSI": "OVERFLY WINSI AT OR ABOVE 2500 HOLD AT WINSI RIGHT TURN INBOUNDCOURSE 316 LEGDIST 4 FAF BUVYA MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "IMASY",
+                    "fixes": {
+                        "IMASY": "IMASY AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "SADOC",
+                    "fixes": {
+                        "SADOC": "SADOC RIGHT TURN INBOUNDCOURSE 135 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZEMPA",
+                    "fixes": {
+                        "ZEMPA": "ZEMPA AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "WINSI": "WINSI AT OR ABOVE 2500 OVERFLY WINSI AT OR ABOVE 2500 HOLD AT WINSI RIGHT TURN INBOUNDCOURSE 316 LEGDIST 4 FAF JIDIK MAP RNW 32",
+                "JIDIK": "JIDIK 2000 RNW 32 TRK 316 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WAPNI",
+                    "fixes": {
+                        "WAPNI": "WAPNI AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "WINSI",
+                    "fixes": {
+                        "WINSI": "WINSI RIGHT TURN INBOUNDCOURSE 316 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZETED",
+                    "fixes": {
+                        "ZETED": "ZETED AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "AB408",
+            "lat": 49.93725,
+            "lon": 0.9698333333333333
+        },
+        {
+            "name": "AB410",
+            "lat": 49.8515,
+            "lon": 1.1509444333333334
+        },
+        {
+            "name": "AB412",
+            "lat": 49.823805566666664,
+            "lon": 1.0217777833333332
+        },
+        {
+            "name": "ATGIV",
+            "lat": 49.97652778333333,
+            "lon": 0.8864444333333333
+        },
+        {
+            "name": "DSANB",
+            "lat": 49.88194443333333,
+            "lon": 1.0819444333333332
+        },
+        {
+            "name": "FN13",
+            "lat": 49.940508333333334,
+            "lon": 0.9737027833333334
+        },
+        {
+            "name": "NEGDI",
+            "lat": 50.03030556666667,
+            "lon": 0.9473888833333334
+        },
+        {
+            "name": "SUXOV",
+            "lat": 49.922694433333334,
+            "lon": 0.8256666666666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBB13",
+            "fixes": {
+                "FN13": "FN13 2000 RNW 13",
+                "DSANB": "DSANB AT OR ABOVE 750 TRK 129 UNTIL 1100 TURN LEFT DIRECT DSANB 2000 FAF FN13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "DSA",
+                    "fixes": {
+                        "DSANB": "DSANB RIGHT TURN INBOUNDCOURSE 129 ALT 2000 LEGTIME 3"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA13",
+            "fixes": {
+                "ATGIV": "ATGIV AT OR ABOVE 2000 ATGIV 2000 FAF AB408 MAP RNW 13",
+                "AB408": "AB408 2000 RNW 13",
+                "AB410": "OVERFLY AB410 TURN RIGHT DIRECT",
+                "AB412": "AB412",
+                "SUXOV": "SUXOV AT OR BELOW 2000"
+            },
+            "transitions": [
+                {
+                    "name": "ATGIV",
+                    "fixes": {
+                        "ATGIV": "ATGIV LEFT TURN INBOUNDCOURSE 125 ALT 2000 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "NEGDI",
+                    "fixes": {
+                        "NEGDI": "NEGDI"
+                    }
+                },
+                {
+                    "name": "SUXOV",
+                    "fixes": {
+                        "SUXOV": "SUXOV"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "fixes": [
+        {
+            "name": "ALISU",
+            "lat": 47.68694721666667,
+            "lon": 68.59595
+        },
+        {
+            "name": "ALRUK",
+            "lat": 47.38147778333333,
+            "lon": 68.25008333333334
+        },
+        {
+            "name": "DEDEL",
+            "lat": 47.55403333333334,
+            "lon": 68.57997221666666
+        },
+        {
+            "name": "EBGIR",
+            "lat": 47.559561116666664,
+            "lon": 68.7768
+        },
+        {
+            "name": "EMKOB",
+            "lat": 47.464547216666666,
+            "lon": 68.431
+        },
+        {
+            "name": "EPREL",
+            "lat": 47.678972216666665,
+            "lon": 68.77243611666667
+        },
+        {
+            "name": "IGTOG",
+            "lat": 47.62328888333333,
+            "lon": 68.68648611666667
+        },
+        {
+            "name": "KELTU",
+            "lat": 47.45451943333333,
+            "lon": 68.17701666666666
+        },
+        {
+            "name": "LEVUV",
+            "lat": 47.43751666666667,
+            "lon": 68.37199443333333
+        },
+        {
+            "name": "NOREB",
+            "lat": 47.550122216666665,
+            "lon": 68.61862778333334
+        },
+        {
+            "name": "OBNOD",
+            "lat": 47.308388883333336,
+            "lon": 68.32294721666666
+        },
+        {
+            "name": "ONDEP",
+            "lat": 47.41325556666666,
+            "lon": 68.36479443333333
+        },
+        {
+            "name": "SAXOK",
+            "lat": 47.48503888333333,
+            "lon": 68.47581111666666
+        },
+        {
+            "name": "TAGAK",
+            "lat": 47.563622216666666,
+            "lon": 68.59469443333333
+        },
+        {
+            "name": "VOBES",
+            "lat": 47.455227783333335,
+            "lon": 68.41064166666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "EPREL2",
+            "rnw": "34",
+            "fixes": {
+                "TAGAK": "TAGAK",
+                "EPREL": "EPREL AT OR ABOVE 3500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "IGTOG": "IGTOG AT OR ABOVE 2700 SPEED 180",
+                "DEDEL": "DEDEL 2200 RNW 16",
+                "ONDEP": "OVERFLY ONDEP 3500 HOLD AT ONDEP RIGHT TURN INBOUNDCOURSE 152 LEGTIME 1 FAF DEDEL MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "ALISU",
+                    "fixes": {
+                        "ALISU": "ALISU SPEED 200"
+                    }
+                },
+                {
+                    "name": "EBGIR",
+                    "fixes": {
+                        "EBGIR": "EBGIR SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "ALRUK": "ALRUK AT OR ABOVE 3000 SPEED 180",
+                "LEVUV": "LEVUV 2400",
+                "VOBES": "VOBES AT OR ABOVE 1710",
+                "EMKOB": "EMKOB AT OR ABOVE 1340",
+                "SAXOK": "OVERFLY SAXOK 545 RNW 34",
+                "NOREB": "OVERFLY NOREB 3500 HOLD AT NOREB RIGHT TURN INBOUNDCOURSE 321 LEGTIME 1 FAF LEVUV MAP SAXOK"
+            },
+            "transitions": [
+                {
+                    "name": "KELTU",
+                    "fixes": {
+                        "KELTU": "KELTU SPEED 200"
+                    }
+                },
+                {
+                    "name": "OBNOD",
+                    "fixes": {
+                        "OBNOD": "OBNOD SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

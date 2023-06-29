@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "CAKVO",
+            "lat": 41.607402783333335,
+            "lon": 88.12607221666667
+        },
+        {
+            "name": "COTRI",
+            "lat": 41.52406388333333,
+            "lon": 88.12286111666667
+        },
+        {
+            "name": "HARIE",
+            "lat": 41.63112778333333,
+            "lon": 88.2115
+        },
+        {
+            "name": "JITOK",
+            "lat": 41.69355556666667,
+            "lon": 88.13245278333333
+        },
+        {
+            "name": "JOT",
+            "lat": 41.546419433333334,
+            "lon": 88.31841111666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVB36",
+            "fixes": {
+                "COTRI": "COTRI AT OR ABOVE 2300",
+                "CAKVO": "CAKVO 2300 RNW 36 TRK 002 UNTIL 1075 TURN LEFT DIRECT",
+                "JOT": "OVERFLY JOT AT OR ABOVE 2300 HOLD AT JOT RIGHT TURN INBOUNDCOURSE 051 LEGDIST 4 FAF CAKVO MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "JOT",
+                    "fixes": {
+                        "JOT": "JOT",
+                        "COTRI": "OVERFLY COTRI AT OR ABOVE 2300 HOLD AT COTRI RIGHT TURN INBOUNDCOURSE 002 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "JOT": "JOT AT OR ABOVE 2200 JOT AT OR ABOVE 2200 HOLD AT JOT RIGHT TURN INBOUNDCOURSE 051 LEGTIME 1 FAF HARIE MAP JITOK",
+                "HARIE": "HARIE 2000",
+                "JITOK": "JITOK 1220 RNW 18 TRK 041 UNTIL 1220 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JOT",
+                    "fixes": {
+                        "JOT": "JOT RIGHT TURN INBOUNDCOURSE 051 ALT 2200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "JOT": "JOT AT OR ABOVE 2200 JOT AT OR ABOVE 2200 HOLD AT JOT RIGHT TURN INBOUNDCOURSE 051 LEGTIME 1 FAF HARIE MAP JITOK",
+                "HARIE": "HARIE 2000",
+                "JITOK": "JITOK 1220 RNW 36 TRK 041 UNTIL 1220 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JOT",
+                    "fixes": {
+                        "JOT": "JOT RIGHT TURN INBOUNDCOURSE 051 ALT 2200 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

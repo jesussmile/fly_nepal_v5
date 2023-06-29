@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "GUYTE",
+            "lat": 40.23026111666667,
+            "lon": 96.08442221666667
+        },
+        {
+            "name": "HEHFY",
+            "lat": 40.57135556666667,
+            "lon": 96.25680556666667
+        },
+        {
+            "name": "JAPID",
+            "lat": 40.476483333333334,
+            "lon": 96.20866943333333
+        },
+        {
+            "name": "WUGBI",
+            "lat": 40.363788883333335,
+            "lon": 96.15167778333333
+        },
+        {
+            "name": "ZOXUS",
+            "lat": 40.32518888333333,
+            "lon": 96.13220833333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "HEHFY": "HEHFY AT OR ABOVE 4000",
+                "JAPID": "JAPID 2800 RNW 15 TRK 156 UNTIL 1618",
+                "GUYTE": "OVERFLY GUYTE AT OR ABOVE 4000 HOLD AT GUYTE RIGHT TURN INBOUNDCOURSE 336 LEGDIST 4 FAF JAPID MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "HEHFY",
+                    "fixes": {
+                        "HEHFY": "HEHFY RIGHT TURN INBOUNDCOURSE 156 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "GUYTE": "GUYTE AT OR ABOVE 4000",
+                "ZOXUS": "ZOXUS 2800",
+                "WUGBI": "WUGBI AT OR ABOVE 2000 RNW 33 TRK 336 UNTIL 1564",
+                "HEHFY": "OVERFLY HEHFY AT OR ABOVE 4000 HOLD AT HEHFY RIGHT TURN INBOUNDCOURSE 156 LEGDIST 4 FAF ZOXUS MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "GUYTE",
+                    "fixes": {
+                        "GUYTE": "GUYTE RIGHT TURN INBOUNDCOURSE 336 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

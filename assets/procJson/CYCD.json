@@ -1,0 +1,200 @@
+{
+    "fixes": [
+        {
+            "name": "DASOG",
+            "lat": 49.04813333333333,
+            "lon": 123.70098611666667
+        },
+        {
+            "name": "EPNOD",
+            "lat": 49.021872216666665,
+            "lon": 123.50925556666667
+        },
+        {
+            "name": "GABOD",
+            "lat": 48.97292778333333,
+            "lon": 123.775075
+        },
+        {
+            "name": "HADER",
+            "lat": 49.13769166666667,
+            "lon": 123.49541388333333
+        },
+        {
+            "name": "IKMUV",
+            "lat": 49.23693611666667,
+            "lon": 123.71565833333334
+        },
+        {
+            "name": "ILATI",
+            "lat": 48.96723611666667,
+            "lon": 123.61845833333334
+        },
+        {
+            "name": "ITKOL",
+            "lat": 49.12559721666667,
+            "lon": 123.86849721666667
+        },
+        {
+            "name": "KATUB",
+            "lat": 49.12798611666667,
+            "lon": 123.78192778333333
+        },
+        {
+            "name": "NANOO",
+            "lat": 49.26416666666667,
+            "lon": 124.24416666666667
+        },
+        {
+            "name": "PESGU",
+            "lat": 49.221161116666664,
+            "lon": 123.86630833333334
+        },
+        {
+            "name": "SILGI",
+            "lat": 48.98234166666667,
+            "lon": 123.68512778333333
+        },
+        {
+            "name": "TAPGA",
+            "lat": 49.23555833333333,
+            "lon": 123.99152778333334
+        },
+        {
+            "name": "TREEL",
+            "lat": 49.35638888333333,
+            "lon": 123.86555556666667
+        },
+        {
+            "name": "TUBUV",
+            "lat": 49.227172216666666,
+            "lon": 123.86616943333334
+        },
+        {
+            "name": "UKROT",
+            "lat": 49.02743888333333,
+            "lon": 123.87073888333333
+        },
+        {
+            "name": "ULDAT",
+            "lat": 49.12984443333333,
+            "lon": 123.8684
+        },
+        {
+            "name": "VOKIN",
+            "lat": 49.08802778333333,
+            "lon": 123.86935556666667
+        },
+        {
+            "name": "VRNB",
+            "lat": 49.17286111666667,
+            "lon": 123.05717221666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "LADY2",
+            "rnw": "16",
+            "fixes": {
+                "UKROT": "OVERFLY UKROT",
+                "GABOD": "GABOD",
+                "SILGI": "SILGI"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ILATI",
+                    "fixes": [
+                        "ILATI"
+                    ]
+                },
+                {
+                    "name": "KATUB",
+                    "fixes": [
+                        "DASOG",
+                        "KATUB"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS16",
+            "fixes": {
+                "TUBUV": "TUBUV AT OR ABOVE 3000",
+                "ITKOL": "ITKOL 1320 RNW 16 HDG 164 UNTIL 700 TURN LEFT DIRECT",
+                "VRNB": "VRNB 2000 HOLD AT VRNB RIGHT TURN INBOUNDCOURSE 046 SPEED 250 LEGTIME 1 FAF ITKOL MAP RNW 16"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAVY16",
+            "fixes": {
+                "PESGU": "PESGU AT OR ABOVE 1700",
+                "ULDAT": "ULDAT 1400 RNW 16 TRK 164 UNTIL 500 TURN LEFT DIRECT",
+                "EPNOD": "EPNOD 2000 SPEED 250",
+                "VRNB": "OVERFLY VRNB HOLD AT VRNB RIGHT TURN INBOUNDCOURSE 046 SPEED 250 LEGTIME 1 FAF ULDAT MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "HADER",
+                    "fixes": {
+                        "HADER": "HADER",
+                        "IKMUV": "IKMUV AT OR ABOVE 1700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "NANOO",
+                    "fixes": {
+                        "NANOO": "NANOO",
+                        "TAPGA": "TAPGA AT OR ABOVE 3100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TREEL",
+                    "fixes": {
+                        "TREEL": "TREEL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ16",
+            "fixes": {
+                "PESGU": "PESGU AT OR ABOVE 3000",
+                "ULDAT": "ULDAT 1400",
+                "VOKIN": "OVERFLY VOKIN 600 RNW 16",
+                "EPNOD": "EPNOD 2000 SPEED 250",
+                "VRNB": "OVERFLY VRNB HOLD AT VRNB RIGHT TURN INBOUNDCOURSE 046 SPEED 250 LEGTIME 1 FAF ULDAT MAP VOKIN"
+            },
+            "transitions": [
+                {
+                    "name": "HADER",
+                    "fixes": {
+                        "HADER": "HADER",
+                        "IKMUV": "IKMUV AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "NANOO",
+                    "fixes": {
+                        "NANOO": "NANOO",
+                        "TAPGA": "TAPGA AT OR ABOVE 3100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TREEL",
+                    "fixes": {
+                        "TREEL": "TREEL"
+                    }
+                }
+            ]
+        }
+    ]
+}

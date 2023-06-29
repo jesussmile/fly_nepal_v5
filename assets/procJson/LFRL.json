@@ -1,0 +1,214 @@
+{
+    "fixes": [
+        {
+            "name": "28TAC",
+            "lat": 48.247275,
+            "lon": 4.494130566666667
+        },
+        {
+            "name": "BST",
+            "lat": 48.28452778333333,
+            "lon": 4.452111116666667
+        },
+        {
+            "name": "BSTNB",
+            "lat": 48.28361111666667,
+            "lon": 4.432222216666666
+        },
+        {
+            "name": "CT05",
+            "lat": 48.19136111666667,
+            "lon": 4.557055566666667
+        },
+        {
+            "name": "CT23",
+            "lat": 48.34488888333333,
+            "lon": 4.2740277833333336
+        },
+        {
+            "name": "FN05",
+            "lat": 48.235533333333336,
+            "lon": 4.547252783333334
+        },
+        {
+            "name": "FRL05",
+            "lat": 48.223444433333334,
+            "lon": 4.553305566666666
+        },
+        {
+            "name": "FRL23",
+            "lat": 48.333333333333336,
+            "lon": 4.329166666666667
+        },
+        {
+            "name": "FT05",
+            "lat": 48.211333333333336,
+            "lon": 4.534583333333334
+        },
+        {
+            "name": "FT23",
+            "lat": 48.32302778333333,
+            "lon": 4.338638883333333
+        },
+        {
+            "name": "IRL05",
+            "lat": 48.171055566666666,
+            "lon": 4.650138883333334
+        },
+        {
+            "name": "IRL23",
+            "lat": 48.36936111666667,
+            "lon": 4.245111116666667
+        },
+        {
+            "name": "KOCBU",
+            "lat": 48.17672221666667,
+            "lon": 4.518527783333333
+        },
+        {
+            "name": "MRL23",
+            "lat": 48.290166666666664,
+            "lon": 4.4295
+        },
+        {
+            "name": "MT05",
+            "lat": 48.27388333333333,
+            "lon": 4.4641222166666665
+        },
+        {
+            "name": "MT23",
+            "lat": 48.29208611666667,
+            "lon": 4.429872216666666
+        },
+        {
+            "name": "RL400",
+            "lat": 48.213472216666666,
+            "lon": 4.607694433333333
+        },
+        {
+            "name": "RL411",
+            "lat": 48.106222216666666,
+            "lon": 4.572
+        },
+        {
+            "name": "RL412",
+            "lat": 48.11858333333333,
+            "lon": 4.746944433333333
+        },
+        {
+            "name": "RL413",
+            "lat": 48.23586111666667,
+            "lon": 4.728277783333334
+        },
+        {
+            "name": "RL416",
+            "lat": 48.30580556666666,
+            "lon": 4.400416666666667
+        },
+        {
+            "name": "RL417",
+            "lat": 48.199638883333336,
+            "lon": 4.4013333333333335
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 13",
+        "RNW 23",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB05",
+            "fixes": {
+                "FN05": "FN05 1800 RNW 05",
+                "BSTNB": "OVERFLY BSTNB TRK 059 UNTIL 1070 TURN RIGHT DIRECT BSTNB 1800 SPEED 160 FAF FN05 MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "IRL05": "IRL05 2000 SPEED 200",
+                "FRL05": "FRL05 2000 RNW 05",
+                "RL416": "OVERFLY RL416 TURN RIGHT DIRECT",
+                "RL417": "RL417 AT OR BELOW 2000 SPEED 160",
+                "RL411": "RL411 AT OR BELOW 3000 AT OR ABOVE 2500 SPEED 220 FAF FRL05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "RL411",
+                    "fixes": {
+                        "RL411": "RL411 AT OR BELOW 3000 AT OR ABOVE 2500 SPEED 220"
+                    }
+                },
+                {
+                    "name": "RL412",
+                    "fixes": {
+                        "RL412": "RL412 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "RL413",
+                    "fixes": {
+                        "RL413": "RL413 AT OR BELOW 3000 AT OR ABOVE 2100 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "IRL23": "IRL23 AT OR ABOVE 2000 SPEED 240",
+                "FRL23": "FRL23 2000",
+                "MRL23": "OVERFLY MRL23 477 RNW 23",
+                "RL400": "RL400 AT OR ABOVE 2000 SPEED 220 HOLD AT RL400 LEFT TURN INBOUNDCOURSE 238 ALT 6000 SPEED 220 LEGTIME 1 FAF FRL23 MAP MRL23"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VOR05",
+            "fixes": {
+                "CT05": "CT05 2000",
+                "FT05": "FT05 2000",
+                "28TAC": "28TAC AT OR ABOVE 1140",
+                "MT05": "MT05 498 RNW 05 TRK 038 UNTIL 4.0 FROM",
+                "BST": "BST TURN RIGHT DIRECT BST 2000 SPEED 160 FAF FT05 MAP MT05"
+            },
+            "transitions": [
+                {
+                    "name": "BST",
+                    "fixes": {
+                        "BST": "BST AT OR BELOW 5000 AT OR ABOVE 2000 SPEED 160",
+                        "KOCBU": "OVERFLY KOCBU 2000"
+                    }
+                },
+                {
+                    "name": "KOCBU",
+                    "fixes": {
+                        "KOCBU": "KOCBU LEFT TURN INBOUNDCOURSE 203 ALT 2000 SPEED 160 LEGDIST 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR23",
+            "fixes": {
+                "CT23": "CT23 AT OR ABOVE 1800",
+                "FT23": "FT23 1800",
+                "MT23": "MT23 490 RNW 23 TRK 244 UNTIL 4.0 FROM",
+                "BST": "BST TURN LEFT DIRECT BST 1800 SPEED 160 FAF FT23 MAP MT23"
+            },
+            "transitions": [
+                {
+                    "name": "BST",
+                    "fixes": {
+                        "BST": "BST SPEED 160 TRK 077 UNTIL 8.0 FROM BST SPEED 160"
+                    }
+                }
+            ]
+        }
+    ]
+}

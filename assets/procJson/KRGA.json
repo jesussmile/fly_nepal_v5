@@ -1,0 +1,138 @@
+{
+    "fixes": [
+        {
+            "name": "ANETT",
+            "lat": 37.44376943333334,
+            "lon": 84.31026943333333
+        },
+        {
+            "name": "BRIGY",
+            "lat": 37.581502783333335,
+            "lon": 84.32651943333333
+        },
+        {
+            "name": "CICJO",
+            "lat": 37.54345,
+            "lon": 84.32202221666667
+        },
+        {
+            "name": "EBTAC",
+            "lat": 37.45458888333334,
+            "lon": 84.16438888333333
+        },
+        {
+            "name": "HAGEN",
+            "lat": 37.7292,
+            "lon": 84.37166943333334
+        },
+        {
+            "name": "HYK",
+            "lat": 37.96635,
+            "lon": 84.47251666666666
+        },
+        {
+            "name": "JUMOP",
+            "lat": 37.432766666666666,
+            "lon": 84.45610833333333
+        },
+        {
+            "name": "MA18",
+            "lat": 37.638413883333335,
+            "lon": 84.33325556666667
+        },
+        {
+            "name": "OAKUM",
+            "lat": 37.83215,
+            "lon": 84.20835
+        },
+        {
+            "name": "PACID",
+            "lat": 37.81020556666667,
+            "lon": 84.50153333333333
+        },
+        {
+            "name": "QEFFO",
+            "lat": 37.821269433333335,
+            "lon": 84.35496388333334
+        },
+        {
+            "name": "RAXEW",
+            "lat": 37.72156111666666,
+            "lon": 84.34311388333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "HYK": "HYK AT OR ABOVE 2800",
+                "HAGEN": "HAGEN 2800 HAGEN AT OR ABOVE 2800 HOLD AT HAGEN RIGHT TURN INBOUNDCOURSE 161 LEGTIME 1 FAF HAGEN MAP MA18",
+                "MA18": "MA18 1005 RNW 18 TRK 161 UNTIL 1410 TURN RIGHT DIRECT"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "QEFFO": "QEFFO AT OR ABOVE 3100",
+                "RAXEW": "RAXEW 2600 RNW 18 TRK 180 UNTIL 1228",
+                "ANETT": "OVERFLY ANETT AT OR ABOVE 3100 HOLD AT ANETT RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF RAXEW MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "OAKUM",
+                    "fixes": {
+                        "OAKUM": "OAKUM"
+                    }
+                },
+                {
+                    "name": "PACID",
+                    "fixes": {
+                        "PACID": "PACID"
+                    }
+                },
+                {
+                    "name": "QEFFO",
+                    "fixes": {
+                        "QEFFO": "QEFFO RIGHT TURN INBOUNDCOURSE 180 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ANETT": "ANETT AT OR ABOVE 3100",
+                "CICJO": "CICJO 2600",
+                "BRIGY": "BRIGY AT OR ABOVE 1860 RNW 36 TRK 000 UNTIL 1264",
+                "QEFFO": "OVERFLY QEFFO AT OR ABOVE 3100 HOLD AT QEFFO RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF CICJO MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ANETT",
+                    "fixes": {
+                        "ANETT": "ANETT RIGHT TURN INBOUNDCOURSE 000 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "EBTAC",
+                    "fixes": {
+                        "EBTAC": "EBTAC"
+                    }
+                },
+                {
+                    "name": "JUMOP",
+                    "fixes": {
+                        "JUMOP": "JUMOP"
+                    }
+                }
+            ]
+        }
+    ]
+}

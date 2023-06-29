@@ -1,0 +1,252 @@
+{
+    "fixes": [
+        {
+            "name": "25DME",
+            "lat": 53.864877783333334,
+            "lon": 14.236180566666667
+        },
+        {
+            "name": "30DME",
+            "lat": 53.89577778333334,
+            "lon": 14.053425
+        },
+        {
+            "name": "50DM2",
+            "lat": 53.85336111666667,
+            "lon": 14.3038
+        },
+        {
+            "name": "50DME",
+            "lat": 53.90488056666667,
+            "lon": 13.999225
+        },
+        {
+            "name": "CI28",
+            "lat": 53.83122778333333,
+            "lon": 14.43925
+        },
+        {
+            "name": "D087U",
+            "lat": 53.767383333333335,
+            "lon": 14.152858333333333
+        },
+        {
+            "name": "D103D",
+            "lat": 53.85626666666667,
+            "lon": 14.286763883333334
+        },
+        {
+            "name": "D113J",
+            "lat": 53.80430556666666,
+            "lon": 14.422841666666667
+        },
+        {
+            "name": "D122J",
+            "lat": 53.78242778333333,
+            "lon": 14.402544433333333
+        },
+        {
+            "name": "D283H",
+            "lat": 53.91114721666667,
+            "lon": 13.961811116666667
+        },
+        {
+            "name": "D283K",
+            "lat": 53.92563333333333,
+            "lon": 13.875013883333333
+        },
+        {
+            "name": "D290L",
+            "lat": 53.94993888333333,
+            "lon": 13.877475
+        },
+        {
+            "name": "D298L",
+            "lat": 53.973827783333334,
+            "lon": 13.899480566666666
+        },
+        {
+            "name": "FI28",
+            "lat": 53.85373333333333,
+            "lon": 14.303811116666667
+        },
+        {
+            "name": "FN10",
+            "lat": 53.92301388333333,
+            "lon": 13.89075
+        },
+        {
+            "name": "FN28",
+            "lat": 53.83485833333334,
+            "lon": 14.411911116666667
+        },
+        {
+            "name": "HCNB",
+            "lat": 53.8741,
+            "lon": 14.182069433333334
+        },
+        {
+            "name": "MASOR",
+            "lat": 53.924166666666665,
+            "lon": 13.645833333333334
+        },
+        {
+            "name": "MN10",
+            "lat": 53.88660556666667,
+            "lon": 14.107875
+        },
+        {
+            "name": "PENET",
+            "lat": 54.10027778333333,
+            "lon": 13.728888883333333
+        },
+        {
+            "name": "UDAXI",
+            "lat": 53.7625,
+            "lon": 13.704166666666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "MASO1A",
+            "rnw": "10",
+            "fixes": {
+                "D103D": "D103D TURN RIGHT HDG 237 INTERCEPT RADIAL 267 TO",
+                "D087U": "D087U",
+                "MASOR": "MASOR"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MASO1B",
+            "rnw": "28",
+            "fixes": {
+                "D283K": "D283K",
+                "MASOR": "MASOR"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PENE2A",
+            "rnw": "10",
+            "fixes": {
+                "D103D": "D103D TURN RIGHT HDG 237 INTERCEPT RADIAL 267 TO",
+                "D087U": "OVERFLY D087U",
+                "PENET": "PENET"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PENE2B",
+            "rnw": "28",
+            "fixes": {
+                "D283H": "D283H",
+                "PENET": "PENET"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "PENE2H",
+            "runway": "RNW 10 RNW 28",
+            "fixes": {
+                "PENET": "PENET",
+                "HCNB": "HCNB"
+            }
+        },
+        {
+            "name": "UDAX1H",
+            "runway": "RNW 10 RNW 28",
+            "fixes": {
+                "UDAXI": "UDAXI",
+                "HCNB": "HCNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "ILS28",
+            "fixes": {
+                "CI28": "CI28 3000",
+                "FI28": "FI28 1740 RNW 28 TRK 283 UNTIL 1500 TURN RIGHT DIRECT",
+                "HCNB": "HCNB 3000 FAF FI28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "HC1",
+                    "fixes": {
+                        "HCNB": "HCNB",
+                        "D122J": "OVERFLY D122J AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HC2",
+                    "fixes": {
+                        "HCNB": "HCNB",
+                        "D113J": "OVERFLY D113J AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB10",
+            "fixes": {
+                "FN10": "FN10 3000",
+                "50DME": "50DME AT OR ABOVE 1720",
+                "30DME": "30DME AT OR ABOVE 1090",
+                "MN10": "MN10 442 RNW 10 TRK 103 UNTIL 500",
+                "HCNB": "HCNB TRK 103 UNTIL 1500 TURN RIGHT DIRECT HCNB 3000 FAF FN10 MAP MN10"
+            },
+            "transitions": [
+                {
+                    "name": "HC1",
+                    "fixes": {
+                        "HCNB": "HCNB",
+                        "D298L": "OVERFLY D298L AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HC2",
+                    "fixes": {
+                        "HCNB": "HCNB",
+                        "D290L": "OVERFLY D290L AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB28",
+            "fixes": {
+                "FN28": "FN28 3000",
+                "50DM2": "50DM2 AT OR ABOVE 1740",
+                "25DME": "25DME AT OR ABOVE 940",
+                "HCNB": "HCNB 302 RNW 28 TRK 283 UNTIL 1500 TURN RIGHT DIRECT HCNB 3000 FAF FN28 MAP HC"
+            },
+            "transitions": [
+                {
+                    "name": "HC1",
+                    "fixes": {
+                        "HCNB": "HCNB",
+                        "D122J": "OVERFLY D122J AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HC2",
+                    "fixes": {
+                        "HCNB": "HCNB",
+                        "D113J": "OVERFLY D113J AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

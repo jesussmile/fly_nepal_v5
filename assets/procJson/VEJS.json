@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "36VOR",
+            "lat": 22.821552783333335,
+            "lon": 86.23824443333334
+        },
+        {
+            "name": "CD26",
+            "lat": 22.840972216666668,
+            "lon": 86.38834443333333
+        },
+        {
+            "name": "FD08",
+            "lat": 22.803375,
+            "lon": 86.05353056666667
+        },
+        {
+            "name": "FD26",
+            "lat": 22.82758056666667,
+            "lon": 86.2847
+        },
+        {
+            "name": "JJS",
+            "lat": 22.813194433333333,
+            "lon": 86.17394443333333
+        },
+        {
+            "name": "MD08",
+            "lat": 22.811727783333332,
+            "lon": 86.15595833333333
+        },
+        {
+            "name": "MD26",
+            "lat": 22.81435,
+            "lon": 86.18286111666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD08",
+            "fixes": {
+                "FD08": "FD08 2500",
+                "MD08": "MD08 715 RNW 08 TRK 095 UNTIL 2500 TURN RIGHT DIRECT",
+                "JJS": "JJS 4200 HOLD AT JJS LEFT TURN INBOUNDCOURSE 253 ALT 4200 LEGTIME 1 FAF FD08 MAP MD08"
+            },
+            "transitions": [
+                {
+                    "name": "JJS",
+                    "fixes": {
+                        "JJS": "JJS AT OR ABOVE 4200 TRK 253 UNTIL 8.0 FROM JJS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD26",
+            "fixes": {
+                "CD26": "CD26 AT OR ABOVE 3300",
+                "FD26": "FD26 2500",
+                "36VOR": "36VOR AT OR ABOVE 1670",
+                "MD26": "MD26 691 RNW 26 TRK 262 UNTIL 2200 TURN LEFT DIRECT",
+                "JJS": "JJS 4200 HOLD AT JJS LEFT TURN INBOUNDCOURSE 115 ALT 4200 LEGTIME 1 FAF FD26 MAP MD26"
+            },
+            "transitions": [
+                {
+                    "name": "JJS",
+                    "fixes": {
+                        "JJS": "JJS AT OR ABOVE 4200 TRK 115 UNTIL 10.0 FROM JJS"
+                    }
+                }
+            ]
+        }
+    ]
+}

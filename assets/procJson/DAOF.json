@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "CF26R",
+            "lat": 27.738802783333334,
+            "lon": 8.004933333333334
+        },
+        {
+            "name": "FF26R",
+            "lat": 27.726372216666668,
+            "lon": 8.059522216666666
+        },
+        {
+            "name": "FN26L",
+            "lat": 27.720894433333335,
+            "lon": 8.068622216666666
+        },
+        {
+            "name": "FS26R",
+            "lat": 27.723686116666666,
+            "lon": 8.069458333333333
+        },
+        {
+            "name": "TDF",
+            "lat": 27.710072216666667,
+            "lon": 8.130888883333334
+        },
+        {
+            "name": "TDFNB",
+            "lat": 27.7063,
+            "lon": 8.134477783333333
+        },
+        {
+            "name": "TINIF",
+            "lat": 27.759472216666666,
+            "lon": 7.913925
+        }
+    ],
+    "rnws": [
+        "RNW 08L",
+        "RNW 08R",
+        "RNW 26L",
+        "RNW 26R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS26R",
+            "fixes": {
+                "CF26R": "CF26R AT OR ABOVE 3120",
+                "FF26R": "FF26R 3120 RNW 26R TRK 258 UNTIL 2500 TURN RIGHT DIRECT",
+                "TDF": "TDF 4110 FAF FF26R MAP RNW 26R"
+            },
+            "transitions": [
+                {
+                    "name": "TINIF",
+                    "fixes": {
+                        "TINIF": "TINIF"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26L",
+            "fixes": {
+                "FN26L": "FN26L 2960",
+                "TDFNB": "TDFNB 1810 RNW 26L TRK 258 UNTIL 3120 TURN RIGHT DIRECT TDFNB 3450 SPEED 220 FAF FN26L MAP TDF"
+            },
+            "transitions": [
+                {
+                    "name": "TDF1",
+                    "fixes": {
+                        "TDFNB": "TDFNB AT OR ABOVE 3450 TRK 042 UNTIL 5.3 FROM TDFNB"
+                    }
+                },
+                {
+                    "name": "TDF2",
+                    "fixes": {
+                        "TDFNB": "TDFNB AT OR ABOVE 3450 TRK 058 UNTIL 6.0 FROM TDFNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26R",
+            "fixes": {
+                "FS26R": "FS26R 2960",
+                "TDF": "TDF 1887 RNW 26R TRK 258 UNTIL 2960 TURN LEFT DIRECT TDF 3450 FAF FS26R MAP TDF"
+            },
+            "transitions": [
+                {
+                    "name": "TDF1",
+                    "fixes": {
+                        "TDF": "TDF AT OR ABOVE 3450 TRK 051 UNTIL 7.0 FROM TDF"
+                    }
+                },
+                {
+                    "name": "TDF2",
+                    "fixes": {
+                        "TDF": "TDF AT OR ABOVE 3450 TRK 062 UNTIL 7.5 FROM TDF"
+                    }
+                }
+            ]
+        }
+    ]
+}

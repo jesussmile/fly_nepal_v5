@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "FN27",
+            "lat": 49.915866666666666,
+            "lon": 6.122947216666667
+        },
+        {
+            "name": "FN32",
+            "lat": 49.85528333333333,
+            "lon": 6.220066666666667
+        },
+        {
+            "name": "LANLO",
+            "lat": 49.990833333333335,
+            "lon": 5.952222216666667
+        },
+        {
+            "name": "LND",
+            "lat": 50.13628333333333,
+            "lon": 5.636933333333333
+        },
+        {
+            "name": "STMNB",
+            "lat": 49.91409443333333,
+            "lon": 6.291108333333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 14",
+        "RNW 27",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FN27": "FN27 1500",
+                "STMNB": "STMNB 123 RNW 27 TRK 271 UNTIL 1500 TURN LEFT DIRECT STMNB 1500 FAF FN27 MAP STM"
+            },
+            "transitions": [
+                {
+                    "name": "LND",
+                    "fixes": {
+                        "LND": "LND",
+                        "LANLO": "LANLO"
+                    }
+                },
+                {
+                    "name": "STM2",
+                    "fixes": {
+                        "STMNB": "STMNB 1500 TRK 105 UNTIL 7.5 FROM STMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB32",
+            "fixes": {
+                "FN32": "FN32 1500 RNW 32",
+                "STMNB": "OVERFLY STMNB TRK 324 UNTIL 1500 TURN LEFT DIRECT STMNB 1500 FAF FN32 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "STM2",
+                    "fixes": {
+                        "STMNB": "STMNB 1500 TRK 159 UNTIL 7.5 FROM STMNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "EGALY",
+            "lat": 38.80485556666667,
+            "lon": 93.16905833333334
+        },
+        {
+            "name": "KOCEV",
+            "lat": 38.67672221666667,
+            "lon": 93.17388056666667
+        },
+        {
+            "name": "KUMVE",
+            "lat": 38.74351111666667,
+            "lon": 93.17137221666667
+        },
+        {
+            "name": "LAKLE",
+            "lat": 38.905116666666665,
+            "lon": 93.16527221666666
+        },
+        {
+            "name": "OLOVE",
+            "lat": 38.615197216666665,
+            "lon": 93.17618056666667
+        },
+        {
+            "name": "ZANGA",
+            "lat": 38.51495833333333,
+            "lon": 93.17996111666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 18",
+        "RNW 23",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "LAKLE": "LAKLE AT OR ABOVE 2600",
+                "EGALY": "EGALY 2600",
+                "KUMVE": "KUMVE AT OR ABOVE 1420 RNW 18 TRK 179 UNTIL 1132",
+                "ZANGA": "OVERFLY ZANGA AT OR ABOVE 2600 HOLD AT ZANGA RIGHT TURN INBOUNDCOURSE 359 LEGDIST 4 FAF EGALY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "LAKLE",
+                    "fixes": {
+                        "LAKLE": "LAKLE RIGHT TURN INBOUNDCOURSE 179 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ZANGA": "ZANGA AT OR ABOVE 2600",
+                "OLOVE": "OLOVE 2600",
+                "KOCEV": "KOCEV AT OR ABOVE 1420 RNW 36 TRK 359 UNTIL 1152",
+                "LAKLE": "OVERFLY LAKLE AT OR ABOVE 2600 HOLD AT LAKLE RIGHT TURN INBOUNDCOURSE 179 LEGDIST 4 FAF OLOVE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ZANGA",
+                    "fixes": {
+                        "ZANGA": "ZANGA RIGHT TURN INBOUNDCOURSE 359 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

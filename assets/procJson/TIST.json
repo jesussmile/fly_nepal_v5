@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "COY48",
+            "lat": 18.323180566666668,
+            "lon": 65.29690278333334
+        },
+        {
+            "name": "JAQYY",
+            "lat": 18.332172216666667,
+            "lon": 65.09265
+        },
+        {
+            "name": "KUTHO",
+            "lat": 18.328363883333335,
+            "lon": 65.18016111666667
+        },
+        {
+            "name": "LOGVY",
+            "lat": 18.335416666666667,
+            "lon": 65.01732778333333
+        },
+        {
+            "name": "OSSEL",
+            "lat": 18.131222216666668,
+            "lon": 64.90719443333333
+        },
+        {
+            "name": "PALCO",
+            "lat": 18.291713883333333,
+            "lon": 65.23561943333333
+        },
+        {
+            "name": "STT",
+            "lat": 18.355816666666666,
+            "lon": 65.02455556666666
+        },
+        {
+            "name": "TOURO",
+            "lat": 18.480566666666668,
+            "lon": 65.46471666666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "PALCO7",
+            "rnw": "09",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 10",
+                    "fixes": {
+                        "RNW 10": "RNW 10 HDG 100 UNTIL 430 TURN RIGHT HDG 250 INTERCEPT RADIAL 293 TO",
+                        "PALCO": "PALCO PALCO"
+                    }
+                },
+                {
+                    "rwy": "RNW 28",
+                    "fixes": {
+                        "RNW 28": "RNW 28 HDG 280 UNTIL 430 HDG 250 INTERCEPT RADIAL 293 TO",
+                        "PALCO": "PALCO PALCO"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS10",
+            "fixes": {
+                "KUTHO": "KUTHO AT OR ABOVE 2800",
+                "JAQYY": "JAQYY 2100 RNW 10 TRK 100 UNTIL 620 HDG 180 UNTIL 2800 TURN RIGHT DIRECT",
+                "STT": "STT HOLD AT STT RIGHT TURN INBOUNDCOURSE 187 LEGTIME 1 FAF JAQYY MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "STT",
+                    "fixes": {
+                        "STT": "STT",
+                        "KUTHO": "KUTHO AT OR ABOVE 2800 HOLD AT KUTHO LEFT TURN INBOUNDCOURSE 100 ALT 2800 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TOURO",
+                    "fixes": {
+                        "TOURO": "TOURO",
+                        "COY48": "COY48 AT OR ABOVE 2800 TRK 100 UNTIL 3.0 FROM COY48"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "KUTHO": "KUTHO AT OR ABOVE 2800",
+                "JAQYY": "JAQYY 2100",
+                "LOGVY": "OVERFLY LOGVY 707 RNW 10 TRK 100 UNTIL 707",
+                "OSSEL": "OVERFLY OSSEL AT OR ABOVE 2800 HOLD AT OSSEL RIGHT TURN INBOUNDCOURSE 346 LEGDIST 4 FAF JAQYY MAP LOGVY"
+            },
+            "transitions": [
+                {
+                    "name": "KUTHO",
+                    "fixes": {
+                        "KUTHO": "KUTHO LEFT TURN INBOUNDCOURSE 100 ALT 2800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TOURO",
+                    "fixes": {
+                        "TOURO": "TOURO"
+                    }
+                }
+            ]
+        }
+    ]
+}

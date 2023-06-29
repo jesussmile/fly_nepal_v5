@@ -1,0 +1,169 @@
+{
+    "fixes": [
+        {
+            "name": "BUNNA",
+            "lat": 35.716063883333334,
+            "lon": 81.66721666666666
+        },
+        {
+            "name": "BZM",
+            "lat": 35.86885278333333,
+            "lon": 81.24052778333333
+        },
+        {
+            "name": "CAYAB",
+            "lat": 35.781188883333336,
+            "lon": 81.63234721666667
+        },
+        {
+            "name": "CETAM",
+            "lat": 35.66773056666667,
+            "lon": 81.69301388333334
+        },
+        {
+            "name": "CICAC",
+            "lat": 35.90808333333333,
+            "lon": 81.56421388333334
+        },
+        {
+            "name": "CIKIS",
+            "lat": 36.057941666666665,
+            "lon": 81.48340278333333
+        },
+        {
+            "name": "FIQNB",
+            "lat": 35.71021388333333,
+            "lon": 81.67135278333333
+        },
+        {
+            "name": "GENOD",
+            "lat": 35.55167778333333,
+            "lon": 81.94918056666667
+        },
+        {
+            "name": "GONGE",
+            "lat": 35.637125,
+            "lon": 81.70935278333333
+        },
+        {
+            "name": "GOWBE",
+            "lat": 35.97265278333333,
+            "lon": 81.40121943333334
+        },
+        {
+            "name": "JAGUP",
+            "lat": 35.85621388333333,
+            "lon": 81.59209443333333
+        },
+        {
+            "name": "JWLGD",
+            "lat": 35.61809443333333,
+            "lon": 81.71955278333333
+        },
+        {
+            "name": "PI001",
+            "lat": 35.65692021666667,
+            "lon": 81.70055358333333
+        },
+        {
+            "name": "PI002",
+            "lat": 35.631209166666665,
+            "lon": 81.78287145
+        },
+        {
+            "name": "PI003",
+            "lat": 35.55792758333333,
+            "lon": 81.75468041666667
+        },
+        {
+            "name": "SUG",
+            "lat": 35.40650556666667,
+            "lon": 82.26861388333333
+        },
+        {
+            "name": "ZAGOK",
+            "lat": 35.95255556666667,
+            "lon": 81.54030833333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC03",
+            "fixes": {
+                "JWLGD": "JWLGD AT OR ABOVE 5000",
+                "FIQNB": "FIQNB 4000 RNW 03 TRK 031 UNTIL 3200 TURN LEFT DIRECT FIQNB AT OR ABOVE 5000 HOLD AT FIQNB LEFT TURN INBOUNDCOURSE 031 LEGTIME 1 FAF FIQNB MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "BZM",
+                    "fixes": {
+                        "BZM": "BZM",
+                        "FIQNB": "FIQNB AT OR ABOVE 5000",
+                        "PI001": "PI001 AT OR ABOVE 5000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SUG",
+                    "fixes": {
+                        "SUG": "SUG",
+                        "FIQNB": "FIQNB AT OR ABOVE 6200",
+                        "PI001": "PI001 AT OR ABOVE 5000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "CETAM": "CETAM AT OR ABOVE 4200",
+                "BUNNA": "BUNNA 3300",
+                "CAYAB": "CAYAB AT OR ABOVE 1940 RNW 03 TRK 031 UNTIL 1430",
+                "CIKIS": "OVERFLY CIKIS AT OR ABOVE 4800 HOLD AT CIKIS LEFT TURN INBOUNDCOURSE 211 LEGDIST 5 FAF BUNNA MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "BZM",
+                    "fixes": {
+                        "BZM": "BZM",
+                        "GONGE": "OVERFLY GONGE AT OR ABOVE 4700 HOLD AT GONGE RIGHT TURN INBOUNDCOURSE 031 ALT 4700 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "GENOD",
+                    "fixes": {
+                        "GENOD": "GENOD",
+                        "GONGE": "GONGE AT OR ABOVE 4700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "ZAGOK": "ZAGOK AT OR ABOVE 3700",
+                "CICAC": "CICAC 3000",
+                "JAGUP": "JAGUP AT OR ABOVE 1920 RNW 21 TRK 211 UNTIL 2000 TURN RIGHT DIRECT",
+                "CIKIS": "OVERFLY CIKIS AT OR ABOVE 4400 HOLD AT CIKIS LEFT TURN INBOUNDCOURSE 211 LEGDIST 5 FAF CICAC MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "GOWBE",
+                    "fixes": {
+                        "GOWBE": "GOWBE",
+                        "CIKIS": "OVERFLY CIKIS AT OR ABOVE 4400 HOLD AT CIKIS LEFT TURN INBOUNDCOURSE 211 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

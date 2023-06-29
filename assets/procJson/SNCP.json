@@ -1,0 +1,221 @@
+{
+    "fixes": [
+        {
+            "name": "EGIVI",
+            "lat": 27.551777783333332,
+            "lon": 49.54455278333333
+        },
+        {
+            "name": "ILPOV",
+            "lat": 27.618805566666666,
+            "lon": 50.295175
+        },
+        {
+            "name": "KUGIK",
+            "lat": 27.440388883333334,
+            "lon": 50.4334
+        },
+        {
+            "name": "NESMI",
+            "lat": 27.4157,
+            "lon": 50.624755566666664
+        },
+        {
+            "name": "OKBAR",
+            "lat": 27.658088883333335,
+            "lon": 50.456741666666666
+        },
+        {
+            "name": "OPTIB",
+            "lat": 27.219466666666666,
+            "lon": 50.328347216666664
+        },
+        {
+            "name": "PT001",
+            "lat": 27.517516666666666,
+            "lon": 50.53588056666667
+        },
+        {
+            "name": "PT002",
+            "lat": 27.647075,
+            "lon": 50.41148056666667
+        },
+        {
+            "name": "PT004",
+            "lat": 27.680013883333334,
+            "lon": 50.54731111666667
+        },
+        {
+            "name": "PT006",
+            "lat": 27.701938883333334,
+            "lon": 50.637897216666666
+        },
+        {
+            "name": "PT007",
+            "lat": 27.611733333333333,
+            "lon": 50.601405566666664
+        },
+        {
+            "name": "PT008",
+            "lat": 27.620980566666667,
+            "lon": 50.30423056666667
+        },
+        {
+            "name": "PT009",
+            "lat": 27.609975,
+            "lon": 50.25898333333333
+        },
+        {
+            "name": "PT011",
+            "lat": 27.587983333333334,
+            "lon": 50.16849166666667
+        },
+        {
+            "name": "PT012",
+            "lat": 27.504702783333332,
+            "lon": 50.160775
+        },
+        {
+            "name": "PT013",
+            "lat": 27.565991666666665,
+            "lon": 50.07801943333333
+        },
+        {
+            "name": "VAPAP",
+            "lat": 27.4823,
+            "lon": 50.10353333333333
+        },
+        {
+            "name": "VUKMO",
+            "lat": 28.725922216666667,
+            "lon": 50.354125
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "ILPO1A",
+            "rnw": "09",
+            "fixes": {
+                "ILPOV": "OVERFLY ILPOV"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "EGIVI",
+                    "fixes": [
+                        "EGIVI"
+                    ]
+                },
+                {
+                    "name": "NESMI",
+                    "fixes": [
+                        "KUGIK",
+                        "NESMI"
+                    ]
+                },
+                {
+                    "name": "OPTIB",
+                    "fixes": [
+                        "OPTIB"
+                    ]
+                },
+                {
+                    "name": "VUKMO",
+                    "fixes": [
+                        "VUKMO"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OKBA1A",
+            "rnw": "27",
+            "fixes": {
+                "OKBAR": "OVERFLY OKBAR SPEED 220"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "EGIVI",
+                    "fixes": [
+                        "OVERFLY",
+                        "EGIVI"
+                    ]
+                },
+                {
+                    "name": "NESMI",
+                    "fixes": [
+                        "PT001",
+                        "NESMI"
+                    ]
+                },
+                {
+                    "name": "OPTIB",
+                    "fixes": [
+                        "PT001",
+                        "OPTIB"
+                    ]
+                },
+                {
+                    "name": "VUKMO",
+                    "fixes": [
+                        "VUKMO"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "PT004": "PT004 AT OR ABOVE 5000",
+                "OKBAR": "OKBAR 4530",
+                "PT002": "PT002 AT OR ABOVE 3740 RNW 09 HDG 093 UNTIL 4000 TURN LEFT DIRECT",
+                "PT007": "OVERFLY PT007 AT OR ABOVE 6000 HOLD AT PT007 LEFT TURN INBOUNDCOURSE 163 ALT 6000 LEGTIME 1 FAF OKBAR MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "PT006",
+                    "fixes": {
+                        "PT006": "PT006 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "PT007",
+                    "fixes": {
+                        "PT007": "PT007 AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "PT011": "PT011 AT OR ABOVE 5000",
+                "PT009": "PT009 4500",
+                "PT008": "PT008 AT OR ABOVE 3700 RNW 27 HDG 273 UNTIL 4000 TURN RIGHT DIRECT",
+                "PT012": "OVERFLY PT012 AT OR ABOVE 6000 HOLD AT PT012 RIGHT TURN INBOUNDCOURSE 203 ALT 6000 LEGTIME 1 FAF PT009 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "PT012",
+                    "fixes": {
+                        "PT012": "PT012 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "PT013",
+                    "fixes": {
+                        "PT013": "PT013 AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "D104G",
+            "lat": 25.64774166666667,
+            "lon": 28.348130566666665
+        },
+        {
+            "name": "DPV",
+            "lat": 25.655916666666666,
+            "lon": 28.220075
+        },
+        {
+            "name": "ETUPU",
+            "lat": 25.664291666666667,
+            "lon": 28.488952783333332
+        },
+        {
+            "name": "FD29",
+            "lat": 25.650880566666668,
+            "lon": 28.299191666666665
+        },
+        {
+            "name": "IMSOL",
+            "lat": 25.744138883333335,
+            "lon": 28.392694433333332
+        },
+        {
+            "name": "MD29",
+            "lat": 25.654047216666665,
+            "lon": 28.249513883333332
+        },
+        {
+            "name": "RW29",
+            "lat": 25.653833333333335,
+            "lon": 28.230977783333334
+        },
+        {
+            "name": "TIKUT",
+            "lat": 25.58466943333333,
+            "lon": 28.382122216666666
+        },
+        {
+            "name": "WB2F1",
+            "lat": 25.656097216666666,
+            "lon": 28.286261116666665
+        },
+        {
+            "name": "WB2M1",
+            "lat": 25.570205566666665,
+            "lon": 28.291172216666666
+        },
+        {
+            "name": "WB2T1",
+            "lat": 25.659836116666668,
+            "lon": 28.378438883333335
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 11",
+        "RNW 24",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD29",
+            "fixes": {
+                "FD29": "FD29 5300 FD29 7000 HOLD AT FD29 RIGHT TURN INBOUNDCOURSE 284 SPEED 140 LEGTIME 2 FAF FD29 MAP MD29",
+                "MD29": "MD29 4464 RNW 29 TRK 284 UNTIL 2.2 FROM",
+                "DPV": "DPV TURN RIGHT DIRECT DPV"
+            },
+            "transitions": [
+                {
+                    "name": "FD291",
+                    "fixes": {
+                        "FD29": "FD29 RIGHT TURN INBOUNDCOURSE 284 ALT 7000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "FD292",
+                    "fixes": {
+                        "FD29": "FD29 AT OR ABOVE 7000",
+                        "D104G": "D104G AT OR ABOVE 7000 TRK 059 UNTIL 2.7 FROM D104G TURN RIGHT DIRECT D104G AT OR ABOVE 7000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "WB2T1": "WB2T1 AT OR ABOVE 6600 SPEED 160",
+                "WB2F1": "WB2F1 5100 SPEED 140 RNW 29 TRK 291 UNTIL 4500 TURN RIGHT DIRECT",
+                "WB2M1": "WB2M1 AT OR ABOVE 6100",
+                "TIKUT": "TIKUT AT OR ABOVE 7000 SPEED 160 FAF WB2F1 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "ETUPU",
+                    "fixes": {
+                        "ETUPU": "ETUPU AT OR ABOVE 9000 SPEED 160"
+                    }
+                },
+                {
+                    "name": "IMSOL",
+                    "fixes": {
+                        "IMSOL": "IMSOL AT OR ABOVE 9000 SPEED 160"
+                    }
+                },
+                {
+                    "name": "TIKUT",
+                    "fixes": {
+                        "TIKUT": "TIKUT AT OR ABOVE 7000 SPEED 160"
+                    }
+                }
+            ]
+        }
+    ]
+}

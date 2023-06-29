@@ -1,0 +1,117 @@
+{
+    "fixes": [
+        {
+            "name": "JOPAV",
+            "lat": 32.993194433333336,
+            "lon": 111.63209443333334
+        },
+        {
+            "name": "PROAS",
+            "lat": 32.97657221666667,
+            "lon": 111.69680833333334
+        },
+        {
+            "name": "ROXIE",
+            "lat": 32.906247216666664,
+            "lon": 111.86629166666667
+        },
+        {
+            "name": "TFD",
+            "lat": 32.88585556666666,
+            "lon": 111.90873333333333
+        },
+        {
+            "name": "TOTEC",
+            "lat": 32.826616666666666,
+            "lon": 111.6422
+        },
+        {
+            "name": "UYABU",
+            "lat": 32.96262778333333,
+            "lon": 111.75099166666666
+        },
+        {
+            "name": "WENOR",
+            "lat": 33.051275,
+            "lon": 111.56715278333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS05",
+            "fixes": {
+                "TFD": "TFD AT OR ABOVE 3700 TFD AT OR ABOVE 5900 HOLD AT TFD RIGHT TURN INBOUNDCOURSE 048 ALT 5900 LEGTIME 1 FAF ROXIE MAP RNW 05",
+                "ROXIE": "ROXIE 3200 RNW 05 TRK 048 UNTIL 2100 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TFD",
+                    "fixes": {
+                        "TFD": "TFD RIGHT TURN INBOUNDCOURSE 048 ALT 3800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "TFD": "TFD AT OR ABOVE 3800 OVERFLY TFD AT OR ABOVE 5900 SPEED 240 HOLD AT TFD RIGHT TURN INBOUNDCOURSE 048 LEGDIST 4 FAF ROXIE MAP RNW 05",
+                "ROXIE": "ROXIE 3200 RNW 05 TRK 048 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TFD",
+                    "fixes": {
+                        "TFD": "TFD RIGHT TURN INBOUNDCOURSE 048 ALT 3800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "WENOR": "WENOR AT OR ABOVE 5000",
+                "JOPAV": "JOPAV 3800",
+                "PROAS": "PROAS AT OR ABOVE 2640",
+                "UYABU": "OVERFLY UYABU 1669 RNW 23 TRK 241 UNTIL 1864",
+                "TFD": "OVERFLY TFD AT OR ABOVE 3500 HOLD AT TFD RIGHT TURN INBOUNDCOURSE 263 LEGDIST 4 FAF JOPAV MAP UYABU"
+            },
+            "transitions": [
+                {
+                    "name": "TFD",
+                    "fixes": {
+                        "TFD": "TFD",
+                        "WENOR": "OVERFLY WENOR AT OR ABOVE 5000 HOLD AT WENOR RIGHT TURN INBOUNDCOURSE 176 ALT 5000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "TOTEC",
+                    "fixes": {
+                        "TOTEC": "TOTEC",
+                        "WENOR": "OVERFLY WENOR AT OR ABOVE 5000 HOLD AT WENOR RIGHT TURN INBOUNDCOURSE 176 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR05",
+            "fixes": {
+                "TFD": "TFD 3500 RNW 05 TRK 048 UNTIL 2200 TURN RIGHT DIRECT TFD AT OR ABOVE 3500 HOLD AT TFD RIGHT TURN INBOUNDCOURSE 048 LEGTIME 1 FAF TFD MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "TFD",
+                    "fixes": {
+                        "TFD": "TFD RIGHT TURN INBOUNDCOURSE 048 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

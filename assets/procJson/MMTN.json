@@ -1,0 +1,164 @@
+{
+    "fixes": [
+        {
+            "name": "CD16",
+            "lat": 22.171775,
+            "lon": 98.82046666666666
+        },
+        {
+            "name": "CD34",
+            "lat": 21.905186116666666,
+            "lon": 98.79545
+        },
+        {
+            "name": "FD16",
+            "lat": 22.121788883333334,
+            "lon": 98.81576943333333
+        },
+        {
+            "name": "FD34",
+            "lat": 21.955172216666668,
+            "lon": 98.80013333333333
+        },
+        {
+            "name": "FF16",
+            "lat": 22.148394433333333,
+            "lon": 98.81826943333333
+        },
+        {
+            "name": "FF34",
+            "lat": 21.927983333333334,
+            "lon": 98.79758333333334
+        },
+        {
+            "name": "PI001",
+            "lat": 22.0965946,
+            "lon": 98.81343433333333
+        },
+        {
+            "name": "PI002",
+            "lat": 22.151486916666666,
+            "lon": 98.76369676666667
+        },
+        {
+            "name": "PI003",
+            "lat": 22.204515033333333,
+            "lon": 98.82363666666667
+        },
+        {
+            "name": "PI004",
+            "lat": 21.980371883333333,
+            "lon": 98.80246461666667
+        },
+        {
+            "name": "PI005",
+            "lat": 21.934294833333333,
+            "lon": 98.74328061666667
+        },
+        {
+            "name": "PI006",
+            "lat": 21.872450133333334,
+            "lon": 98.79229453333333
+        },
+        {
+            "name": "TMN",
+            "lat": 22.038483333333332,
+            "lon": 98.80794721666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "TMN2A",
+            "rnw": "16",
+            "fixes": {
+                "TMN": "TMN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TMN2B",
+            "rnw": "34",
+            "fixes": {
+                "TMN": "TMN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD16",
+            "fixes": {
+                "CD16": "CD16 AT OR ABOVE 2200",
+                "FD16": "FD16 1700 RNW 16",
+                "TMN": "OVERFLY TMN TRK 169 UNTIL 7.0 FROM TMN TURN RIGHT DIRECT TMN AT OR ABOVE 3000 FAF FD16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "TMN",
+                    "fixes": {
+                        "TMN": "TMN AT OR ABOVE 3000 TRK 010 UNTIL 8.0 FROM TMN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD34",
+            "fixes": {
+                "CD34": "CD34 AT OR ABOVE 2200",
+                "FD34": "FD34 1700 RNW 34",
+                "TMN": "OVERFLY TMN TRK 349 UNTIL 7.0 FROM TMN TURN RIGHT DIRECT TMN AT OR ABOVE 3000 FAF FD34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "TMN",
+                    "fixes": {
+                        "TMN": "TMN AT OR ABOVE 3000 TRK 190 UNTIL 8.0 FROM TMN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR16",
+            "fixes": {
+                "FF16": "FF16 2200 RNW 16",
+                "TMN": "OVERFLY TMN TRK 169 UNTIL 7.0 FROM TMN TURN RIGHT DIRECT TMN AT OR ABOVE 3000 FAF FF16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "TMN",
+                    "fixes": {
+                        "TMN": "TMN AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2200 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2200 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2200 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR34",
+            "fixes": {
+                "FF34": "FF34 2200 RNW 34",
+                "TMN": "OVERFLY TMN TRK 349 UNTIL 7.0 FROM TMN TURN RIGHT DIRECT TMN AT OR ABOVE 3000 FAF FF34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "TMN",
+                    "fixes": {
+                        "TMN": "TMN AT OR ABOVE 3000",
+                        "PI004": "PI004 AT OR ABOVE 2200 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2200 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2200 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

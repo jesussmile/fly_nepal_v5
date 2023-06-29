@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "ADREV",
+            "lat": 52.24079166666667,
+            "lon": 88.23908611666667
+        },
+        {
+            "name": "BESOD",
+            "lat": 52.159413883333336,
+            "lon": 88.21076111666666
+        },
+        {
+            "name": "DASIM",
+            "lat": 52.078025,
+            "lon": 88.18253611666667
+        },
+        {
+            "name": "ELTAD",
+            "lat": 52.18017221666667,
+            "lon": 88.05189443333333
+        },
+        {
+            "name": "GABAK",
+            "lat": 52.31175,
+            "lon": 87.68855278333334
+        },
+        {
+            "name": "IGROG",
+            "lat": 52.230241666666664,
+            "lon": 87.66118611666667
+        },
+        {
+            "name": "KASUR",
+            "lat": 52.148725,
+            "lon": 87.63392221666666
+        },
+        {
+            "name": "NANLI",
+            "lat": 52.210525,
+            "lon": 87.81636111666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "BESOD": "BESOD AT OR ABOVE 2200",
+                "ELTAD": "ELTAD 2200 RNW 08",
+                "IGROG": "OVERFLY IGROG 2300 HOLD AT IGROG RIGHT TURN INBOUNDCOURSE 085 ALT 2300 SPEED 230 LEGTIME 1 FAF ELTAD MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "ADREV",
+                    "fixes": {
+                        "ADREV": "ADREV SPEED 210"
+                    }
+                },
+                {
+                    "name": "DASIM",
+                    "fixes": {
+                        "DASIM": "DASIM SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "IGROG": "IGROG AT OR ABOVE 2200",
+                "NANLI": "NANLI 2200 RNW 26",
+                "BESOD": "OVERFLY BESOD 2300 HOLD AT BESOD RIGHT TURN INBOUNDCOURSE 264 ALT 2300 SPEED 230 LEGTIME 1 FAF NANLI MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "GABAK",
+                    "fixes": {
+                        "GABAK": "GABAK SPEED 210"
+                    }
+                },
+                {
+                    "name": "KASUR",
+                    "fixes": {
+                        "KASUR": "KASUR SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

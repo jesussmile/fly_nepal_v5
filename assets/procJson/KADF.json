@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "COVNO",
+            "lat": 34.235522216666666,
+            "lon": 92.91769443333334
+        },
+        {
+            "name": "CUBUG",
+            "lat": 33.95233888333333,
+            "lon": 93.226625
+        },
+        {
+            "name": "FITIL",
+            "lat": 34.025775,
+            "lon": 93.14678611666666
+        },
+        {
+            "name": "ITVOW",
+            "lat": 34.125936116666665,
+            "lon": 93.03757778333333
+        },
+        {
+            "name": "WIPTI",
+            "lat": 34.05639721666667,
+            "lon": 93.11343333333333
+        },
+        {
+            "name": "ZULSO",
+            "lat": 34.173769433333334,
+            "lon": 92.98530278333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "CUBUG": "CUBUG AT OR ABOVE 2000",
+                "FITIL": "FITIL 2000",
+                "WIPTI": "WIPTI AT OR ABOVE 1200 RNW 04 TRK 040 UNTIL 429",
+                "COVNO": "OVERFLY COVNO AT OR ABOVE 2100 HOLD AT COVNO RIGHT TURN INBOUNDCOURSE 220 LEGDIST 4 FAF FITIL MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "CUBUG",
+                    "fixes": {
+                        "CUBUG": "CUBUG LEFT TURN INBOUNDCOURSE 040 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "COVNO": "COVNO AT OR ABOVE 2100",
+                "ZULSO": "ZULSO 2000",
+                "ITVOW": "ITVOW AT OR ABOVE 760 RNW 22 TRK 220 UNTIL 582",
+                "CUBUG": "OVERFLY CUBUG AT OR ABOVE 2000 HOLD AT CUBUG LEFT TURN INBOUNDCOURSE 040 LEGDIST 4 FAF ZULSO MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "COVNO",
+                    "fixes": {
+                        "COVNO": "COVNO RIGHT TURN INBOUNDCOURSE 220 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

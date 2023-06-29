@@ -1,0 +1,94 @@
+{
+    "fixes": [
+        {
+            "name": "DABAV",
+            "lat": 12.479052783333334,
+            "lon": 177.10061388333332
+        },
+        {
+            "name": "ENTAN",
+            "lat": 12.506972216666666,
+            "lon": 176.88095278333333
+        },
+        {
+            "name": "FF25",
+            "lat": 12.466763883333334,
+            "lon": 177.17878056666666
+        },
+        {
+            "name": "FRF07",
+            "lat": 12.497083333333332,
+            "lon": 176.96544166666666
+        },
+        {
+            "name": "FRM07",
+            "lat": 12.4855,
+            "lon": 177.049925
+        },
+        {
+            "name": "IGAPA",
+            "lat": 12.589991666666666,
+            "lon": 176.89185556666666
+        },
+        {
+            "name": "NODAG",
+            "lat": 12.517669433333333,
+            "lon": 176.79645556666668
+        },
+        {
+            "name": "RMNB",
+            "lat": 12.481555566666668,
+            "lon": 177.07163888333332
+        },
+        {
+            "name": "VIMIT",
+            "lat": 12.432622216666667,
+            "lon": 176.84182221666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FF25": "FF25 2000 RNW 25",
+                "RMNB": "OVERFLY RMNB TRK 251 UNTIL 2000 FAF FF25 MAP RNW 25"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "ENTAN": "ENTAN AT OR ABOVE 2000 ENTAN AT OR ABOVE 2000 FAF FRF07 MAP FRM07",
+                "FRF07": "FRF07 1960",
+                "FRM07": "OVERFLY FRM07 369 RNW 07",
+                "DABAV": "OVERFLY DABAV TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IGAPA",
+                    "fixes": {
+                        "IGAPA": "IGAPA AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "NODAG",
+                    "fixes": {
+                        "NODAG": "NODAG AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "VIMIT",
+                    "fixes": {
+                        "VIMIT": "VIMIT AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "BECRA",
+            "lat": 44.64631943333333,
+            "lon": 68.23738888333334
+        },
+        {
+            "name": "BGR",
+            "lat": 44.841794433333334,
+            "lon": 68.87396666666666
+        },
+        {
+            "name": "CARDA",
+            "lat": 44.68109166666667,
+            "lon": 68.3435
+        },
+        {
+            "name": "CDLAC",
+            "lat": 44.54943888333333,
+            "lon": 68.29968056666667
+        },
+        {
+            "name": "CUDVA",
+            "lat": 44.22565,
+            "lon": 68.378775
+        },
+        {
+            "name": "DIRNE",
+            "lat": 44.61145,
+            "lon": 68.13140556666667
+        },
+        {
+            "name": "FOMLU",
+            "lat": 44.29481943333333,
+            "lon": 68.58978056666666
+        },
+        {
+            "name": "HALBO",
+            "lat": 44.409002783333335,
+            "lon": 68.38956388333334
+        },
+        {
+            "name": "JESUL",
+            "lat": 44.488647216666664,
+            "lon": 68.33865
+        },
+        {
+            "name": "TABUU",
+            "lat": 44.35598888333333,
+            "lon": 68.42336666666667
+        },
+        {
+            "name": "WHAME",
+            "lat": 44.260283333333334,
+            "lon": 68.48421666666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 17",
+        "RNW 22",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS22",
+            "fixes": {
+                "BECRA": "BECRA AT OR ABOVE 3000",
+                "CDLAC": "CDLAC 2100 RNW 22 TRK 224 UNTIL 2000 TURN RIGHT DIRECT",
+                "BGR": "BGR AT OR ABOVE 4000 HOLD AT BGR LEFT TURN INBOUNDCOURSE 157 LEGTIME 1 FAF CDLAC MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "BGR",
+                    "fixes": {
+                        "BGR": "BGR",
+                        "BECRA": "BECRA AT OR ABOVE 4000 HOLD AT BECRA RIGHT TURN INBOUNDCOURSE 224 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "WHAME": "WHAME AT OR ABOVE 2900",
+                "TABUU": "TABUU 2000",
+                "HALBO": "HALBO AT OR ABOVE 860 RNW 04 TRK 044 UNTIL 333",
+                "BECRA": "OVERFLY BECRA AT OR ABOVE 3000 HOLD AT BECRA RIGHT TURN INBOUNDCOURSE 224 LEGDIST 4 FAF TABUU MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "CUDVA",
+                    "fixes": {
+                        "CUDVA": "CUDVA AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "FOMLU",
+                    "fixes": {
+                        "FOMLU": "FOMLU AT OR ABOVE 2900"
+                    }
+                },
+                {
+                    "name": "WHAME",
+                    "fixes": {
+                        "WHAME": "WHAME RIGHT TURN INBOUNDCOURSE 044 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "BECRA": "BECRA AT OR ABOVE 3000",
+                "CDLAC": "CDLAC 2100",
+                "JESUL": "JESUL AT OR ABOVE 780 RNW 22 TRK 224 UNTIL 283",
+                "WHAME": "OVERFLY WHAME AT OR ABOVE 2900 HOLD AT WHAME RIGHT TURN INBOUNDCOURSE 044 LEGDIST 4 FAF CDLAC MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "BECRA",
+                    "fixes": {
+                        "BECRA": "BECRA RIGHT TURN INBOUNDCOURSE 224 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CARDA",
+                    "fixes": {
+                        "CARDA": "CARDA AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "DIRNE",
+                    "fixes": {
+                        "DIRNE": "DIRNE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

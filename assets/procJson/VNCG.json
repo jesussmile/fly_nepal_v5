@@ -1,0 +1,246 @@
+{
+    "fixes": [
+        {
+            "name": "BEDET",
+            "lat": 26.779577783333334,
+            "lon": 87.586125
+        },
+        {
+            "name": "BESVO",
+            "lat": 26.50636666666667,
+            "lon": 87.53926111666667
+        },
+        {
+            "name": "CD10",
+            "lat": 26.591988883333332,
+            "lon": 87.94415833333333
+        },
+        {
+            "name": "CG101",
+            "lat": 26.744533333333333,
+            "lon": 87.67064443333334
+        },
+        {
+            "name": "CG102",
+            "lat": 26.674291666666665,
+            "lon": 87.83953056666667
+        },
+        {
+            "name": "CG103",
+            "lat": 26.537727783333334,
+            "lon": 87.81579166666667
+        },
+        {
+            "name": "CG104",
+            "lat": 26.611827783333332,
+            "lon": 87.81777221666667
+        },
+        {
+            "name": "CG481",
+            "lat": 26.580833333333334,
+            "lon": 88.01669443333333
+        },
+        {
+            "name": "CG482",
+            "lat": 26.592583333333334,
+            "lon": 87.94347221666666
+        },
+        {
+            "name": "CG483",
+            "lat": 26.734194433333332,
+            "lon": 88.05408333333334
+        },
+        {
+            "name": "CG484",
+            "lat": 26.817694433333333,
+            "lon": 87.89275
+        },
+        {
+            "name": "CG485",
+            "lat": 26.835333333333335,
+            "lon": 87.67005556666666
+        },
+        {
+            "name": "CHURE",
+            "lat": 26.863333333333333,
+            "lon": 86.65194443333333
+        },
+        {
+            "name": "DAMAK",
+            "lat": 26.687694433333334,
+            "lon": 87.66797221666667
+        },
+        {
+            "name": "DHARA",
+            "lat": 26.869722216666666,
+            "lon": 87.24891666666667
+        },
+        {
+            "name": "FD10",
+            "lat": 26.580436116666668,
+            "lon": 88.01740556666667
+        },
+        {
+            "name": "MAHES",
+            "lat": 26.607222216666667,
+            "lon": 87.85194443333333
+        },
+        {
+            "name": "RANGA",
+            "lat": 26.500944433333334,
+            "lon": 87.47144443333333
+        },
+        {
+            "name": "TAHAR",
+            "lat": 26.541083333333333,
+            "lon": 87.61472221666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "BEDE1D",
+            "rnw": "10",
+            "fixes": {
+                "BEDET": "BEDET AT OR ABOVE 10500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BESV1D",
+            "rnw": "10",
+            "fixes": {
+                "BESVO": "BESVO AT OR ABOVE 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DHAR1A",
+            "rnw": "10",
+            "fixes": {
+                "CG483": "CG483 AT OR ABOVE 4500 SPEED 160",
+                "CG484": "CG484 AT OR ABOVE 7500 SPEED 180",
+                "CG485": "CG485 AT OR ABOVE 10500",
+                "DHARA": "DHARA AT OR ABOVE 12500",
+                "CHURE": "CHURE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MAHE1A",
+            "rnw": "10",
+            "fixes": {
+                "MAHES": "MAHES AT OR ABOVE 6000 SPEED 160"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "CHURE",
+                    "fixes": [
+                        "DAMAK",
+                        "DHARA",
+                        "CHURE"
+                    ]
+                },
+                {
+                    "name": "RANGA",
+                    "fixes": [
+                        "TAHAR",
+                        "RANGA"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MAHE1D",
+            "rnw": "10",
+            "fixes": {
+                "MAHES": "MAHES AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "BEDE1A",
+            "runway": "RNW 10",
+            "fixes": {
+                "BEDET": "BEDET AT OR ABOVE 10500",
+                "CG101": "CG101 AT OR ABOVE 8000",
+                "CG102": "CG102 AT OR ABOVE 5000",
+                "CG104": "CG104",
+                "MAHES": "MAHES AT OR ABOVE 4000"
+            }
+        },
+        {
+            "name": "BESV1A",
+            "runway": "RNW 10",
+            "fixes": {
+                "BESVO": "BESVO AT OR ABOVE 6000",
+                "CG103": "CG103",
+                "CG104": "CG104",
+                "MAHES": "MAHES AT OR ABOVE 4000"
+            }
+        },
+        {
+            "name": "CHUR1R",
+            "runway": "RNW 10",
+            "fixes": {
+                "CHURE": "CHURE AT OR ABOVE 11500",
+                "DHARA": "DHARA AT OR ABOVE 9500",
+                "DAMAK": "DAMAK AT OR ABOVE 8500",
+                "MAHES": "MAHES AT OR ABOVE 4000"
+            }
+        },
+        {
+            "name": "RANG1R",
+            "runway": "RNW 10",
+            "fixes": {
+                "RANGA": "RANGA AT OR ABOVE 4000",
+                "TAHAR": "TAHAR AT OR ABOVE 4000",
+                "MAHES": "MAHES AT OR ABOVE 4000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "CD10": "CD10 AT OR ABOVE 2100",
+                "FD10": "FD10 1320 RNW 10 TRK 100 UNTIL 720 TURN LEFT HDG 235 INTERCEPT RADIAL 280 TO",
+                "MAHES": "MAHES MAHES AT OR ABOVE 4000 SPEED 160 FAF FD10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "MAHES",
+                    "fixes": {
+                        "MAHES": "MAHES AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "CG482": "CG482 2600",
+                "CG481": "CG481 1300 RNW 10 TURN LEFT DIRECT",
+                "MAHES": "MAHES AT OR ABOVE 4000 SPEED 160 HOLD AT MAHES LEFT TURN INBOUNDCOURSE 100 ALT 4000 SPEED 180 LEGTIME 1 FAF CG481 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "MAHES",
+                    "fixes": {
+                        "MAHES": "MAHES AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

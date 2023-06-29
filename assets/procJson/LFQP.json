@@ -1,0 +1,316 @@
+{
+    "fixes": [
+        {
+            "name": "30DM2",
+            "lat": 48.7407,
+            "lon": 7.148194433333333
+        },
+        {
+            "name": "30DME",
+            "lat": 48.797413883333334,
+            "lon": 7.272713883333333
+        },
+        {
+            "name": "30LOC",
+            "lat": 48.796925,
+            "lon": 7.272988883333333
+        },
+        {
+            "name": "CF24",
+            "lat": 48.83080556666667,
+            "lon": 7.348027783333333
+        },
+        {
+            "name": "CQ06Z",
+            "lat": 48.68836111666667,
+            "lon": 7.04725
+        },
+        {
+            "name": "CQ24Z",
+            "lat": 48.827333333333335,
+            "lon": 7.345416666666667
+        },
+        {
+            "name": "D069G",
+            "lat": 48.80402778333333,
+            "lon": 7.361963883333333
+        },
+        {
+            "name": "FF06",
+            "lat": 48.72022221666667,
+            "lon": 7.108638883333334
+        },
+        {
+            "name": "FF24",
+            "lat": 48.81633333333333,
+            "lon": 7.314166666666667
+        },
+        {
+            "name": "FQ24Z",
+            "lat": 48.815,
+            "lon": 7.315444433333333
+        },
+        {
+            "name": "GTQ",
+            "lat": 48.98644443333333,
+            "lon": 6.716222216666667
+        },
+        {
+            "name": "IQP24",
+            "lat": 48.84163888333333,
+            "lon": 7.37875
+        },
+        {
+            "name": "ML24",
+            "lat": 48.780741666666664,
+            "lon": 7.2348
+        },
+        {
+            "name": "MQ06Z",
+            "lat": 48.761319433333334,
+            "lon": 7.188072216666667
+        },
+        {
+            "name": "MQ24Z",
+            "lat": 48.779780566666666,
+            "lon": 7.229947216666667
+        },
+        {
+            "name": "PB",
+            "lat": 48.770916666666665,
+            "lon": 7.208527783333333
+        },
+        {
+            "name": "PHGNB",
+            "lat": 48.76716666666667,
+            "lon": 7.1993888833333335
+        },
+        {
+            "name": "QP400",
+            "lat": 48.78638888333333,
+            "lon": 7.029805566666667
+        },
+        {
+            "name": "QP401",
+            "lat": 48.879305566666666,
+            "lon": 7.108888883333333
+        },
+        {
+            "name": "QP402",
+            "lat": 48.89155556666667,
+            "lon": 7.375333333333334
+        },
+        {
+            "name": "QP403",
+            "lat": 48.74025,
+            "lon": 7.1395
+        },
+        {
+            "name": "RW24",
+            "lat": 48.771541666666664,
+            "lon": 7.2131138833333335
+        },
+        {
+            "name": "STR",
+            "lat": 48.50538888333333,
+            "lon": 7.5719722166666665
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY24",
+            "fixes": {
+                "CF24": "CF24 AT OR ABOVE 2600",
+                "FF24": "FF24 2600 RNW 24 TRK 235 UNTIL 2.5 FROM",
+                "PB": "PB TURN RIGHT DIRECT",
+                "PHGNB": "PHGNB 2900 SPEED 140 HOLD AT PHGNB LEFT TURN INBOUNDCOURSE 070 ALT 2900 SPEED 150 LEGTIME 1 FAF FF24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "GTQ",
+                    "fixes": {
+                        "GTQ": "GTQ",
+                        "PHGNB": "PHGNB AT OR ABOVE 2900 TRK 068 UNTIL 6.6 FROM",
+                        "PB": "PB"
+                    }
+                },
+                {
+                    "name": "PHG",
+                    "fixes": {
+                        "PHGNB": "PHGNB AT OR ABOVE 2900 TRK 068 UNTIL 6.6 FROM",
+                        "PB": "PB"
+                    }
+                },
+                {
+                    "name": "STR",
+                    "fixes": {
+                        "STR": "STR",
+                        "PHGNB": "PHGNB AT OR ABOVE 4000 HOLD AT PHGNB LEFT TURN INBOUNDCOURSE 070 ALT 2900 SPEED 150 LEGTIME 1 TRK 068 UNTIL 6.6 FROM",
+                        "PB": "PB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ24",
+            "fixes": {
+                "IQP24": "IQP24 2600",
+                "FF24": "FF24 2600 RNW 24",
+                "QP403": "QP403 AT OR BELOW 2900 SPEED 200",
+                "QP400": "QP400 AT OR BELOW 6000 AT OR ABOVE 2900 SPEED 200 FAF FF24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "QP400",
+                    "fixes": {
+                        "QP400": "QP400 AT OR BELOW 6000 AT OR ABOVE 2900 SPEED 200",
+                        "QP401": "QP401",
+                        "QP402": "QP402 2600 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOCY24",
+            "fixes": {
+                "CF24": "CF24 AT OR ABOVE 2600",
+                "FF24": "FF24 2600",
+                "30LOC": "30LOC AT OR ABOVE 1960",
+                "ML24": "ML24 1397 RNW 24 TRK 235 UNTIL 2.5 FROM",
+                "PB": "PB TURN RIGHT DIRECT",
+                "PHGNB": "PHGNB 2900 SPEED 140 HOLD AT PHGNB LEFT TURN INBOUNDCOURSE 070 ALT 2900 SPEED 150 LEGTIME 1 FAF FF24 MAP ML24"
+            },
+            "transitions": [
+                {
+                    "name": "GTQ",
+                    "fixes": {
+                        "GTQ": "GTQ",
+                        "PHGNB": "PHGNB AT OR ABOVE 2900 TRK 068 UNTIL 6.6 FROM",
+                        "PB": "PB"
+                    }
+                },
+                {
+                    "name": "PHG",
+                    "fixes": {
+                        "PHGNB": "PHGNB AT OR ABOVE 2900 TRK 068 UNTIL 6.6 FROM",
+                        "PB": "PB"
+                    }
+                },
+                {
+                    "name": "STR",
+                    "fixes": {
+                        "STR": "STR",
+                        "PHGNB": "PHGNB AT OR ABOVE 4000 HOLD AT PHGNB LEFT TURN INBOUNDCOURSE 070 ALT 2900 SPEED 150 LEGTIME 1 TRK 068 UNTIL 6.6 FROM",
+                        "PB": "PB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBY06",
+            "fixes": {
+                "FF06": "FF06 2500",
+                "PHGNB": "PHGNB 1043 RNW 06 TRK 050 UNTIL 2200 TURN LEFT DIRECT PHGNB 2900 FAF FF06 MAP PHG"
+            },
+            "transitions": [
+                {
+                    "name": "GTQ",
+                    "fixes": {
+                        "GTQ": "GTQ",
+                        "PHGNB": "PHGNB AT OR ABOVE 2900 TRK 215 UNTIL 6.7 FROM PHGNB"
+                    }
+                },
+                {
+                    "name": "PHG",
+                    "fixes": {
+                        "PHGNB": "PHGNB AT OR ABOVE 2900 TRK 215 UNTIL 6.7 FROM PHGNB"
+                    }
+                },
+                {
+                    "name": "STR",
+                    "fixes": {
+                        "STR": "STR",
+                        "PHGNB": "PHGNB AT OR ABOVE 4000 HOLD AT PHGNB RIGHT TURN INBOUNDCOURSE 235 ALT 2900 SPEED 150 LEGTIME 1 PHGNB AT OR ABOVE 2500 SPEED 160 TRK 215 UNTIL 6.7 FROM PHGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDZ06",
+            "fixes": {
+                "CQ06Z": "CQ06Z AT OR ABOVE 2500",
+                "FF06": "FF06 2500",
+                "30DM2": "30DM2 AT OR ABOVE 1860",
+                "MQ06Z": "MQ06Z 1226 RNW 06 TRK 050 UNTIL 2200 TURN LEFT DIRECT",
+                "PHGNB": "PHGNB 2900 FAF FF06 MAP MQ06Z"
+            },
+            "transitions": [
+                {
+                    "name": "GTQ",
+                    "fixes": {
+                        "GTQ": "GTQ",
+                        "PHGNB": "PHGNB AT OR ABOVE 2900 TRK 215 UNTIL 8.1 FROM",
+                        "PB": "PB"
+                    }
+                },
+                {
+                    "name": "PHG",
+                    "fixes": {
+                        "PHGNB": "PHGNB AT OR ABOVE 2900 TRK 215 UNTIL 8.1 FROM",
+                        "PB": "PB"
+                    }
+                },
+                {
+                    "name": "STR",
+                    "fixes": {
+                        "STR": "STR",
+                        "PHGNB": "PHGNB AT OR ABOVE 4000 HOLD AT PHGNB RIGHT TURN INBOUNDCOURSE 235 ALT 2900 SPEED 150 LEGTIME 1 TRK 215 UNTIL 8.1 FROM",
+                        "PB": "PB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDZ24",
+            "fixes": {
+                "CQ24Z": "CQ24Z AT OR ABOVE 2600",
+                "FQ24Z": "FQ24Z 2600",
+                "30DME": "30DME AT OR ABOVE 1960",
+                "MQ24Z": "MQ24Z 1336 RNW 24 TRK 236 UNTIL 2.5 FROM",
+                "PB": "PB TURN RIGHT DIRECT",
+                "PHGNB": "PHGNB 2900 SPEED 140 HOLD AT PHGNB LEFT TURN INBOUNDCOURSE 070 ALT 2900 SPEED 150 LEGTIME 1 FAF FQ24Z MAP MQ24Z"
+            },
+            "transitions": [
+                {
+                    "name": "GTQ",
+                    "fixes": {
+                        "GTQ": "GTQ",
+                        "PHGNB": "PHGNB AT OR ABOVE 2900",
+                        "D069G": "OVERFLY D069G AT OR ABOVE 2600 SPEED 140"
+                    }
+                },
+                {
+                    "name": "PHG",
+                    "fixes": {
+                        "PHGNB": "PHGNB AT OR ABOVE 2900",
+                        "D069G": "OVERFLY D069G AT OR ABOVE 2600 SPEED 140"
+                    }
+                },
+                {
+                    "name": "STR",
+                    "fixes": {
+                        "STR": "STR",
+                        "PHGNB": "PHGNB AT OR ABOVE 4000 HOLD AT PHGNB LEFT TURN INBOUNDCOURSE 070 ALT 2900 SPEED 150 LEGTIME 1",
+                        "D069G": "OVERFLY D069G AT OR ABOVE 2600 SPEED 140"
+                    }
+                }
+            ]
+        }
+    ]
+}

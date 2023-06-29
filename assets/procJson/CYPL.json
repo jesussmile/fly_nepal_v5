@@ -1,0 +1,160 @@
+{
+    "fixes": [
+        {
+            "name": "APGIP",
+            "lat": 51.52867221666666,
+            "lon": 89.93186943333333
+        },
+        {
+            "name": "BOATH",
+            "lat": 51.36221388333333,
+            "lon": 89.93396111666667
+        },
+        {
+            "name": "DUXUG",
+            "lat": 51.445444433333336,
+            "lon": 89.93291666666667
+        },
+        {
+            "name": "ELUBO",
+            "lat": 51.446122216666666,
+            "lon": 90.091325
+        },
+        {
+            "name": "EP09",
+            "lat": 51.44279721666667,
+            "lon": 90.22684443333333
+        },
+        {
+            "name": "ESRIL",
+            "lat": 51.36362221666667,
+            "lon": 90.4908
+        },
+        {
+            "name": "FF09",
+            "lat": 51.463425,
+            "lon": 90.32871666666666
+        },
+        {
+            "name": "IKMED",
+            "lat": 51.446730566666666,
+            "lon": 90.33214443333334
+        },
+        {
+            "name": "MAXOM",
+            "lat": 51.44662221666667,
+            "lon": 90.274225
+        },
+        {
+            "name": "OMIVU",
+            "lat": 51.446111116666664,
+            "lon": 90.09041666666667
+        },
+        {
+            "name": "PI001",
+            "lat": 51.45889315,
+            "lon": 90.31180018333333
+        },
+        {
+            "name": "PI002",
+            "lat": 51.42520386666666,
+            "lon": 90.41328263333334
+        },
+        {
+            "name": "PI003",
+            "lat": 51.49032236666667,
+            "lon": 90.47824831666667
+        },
+        {
+            "name": "TAKVI",
+            "lat": 51.44672778333333,
+            "lon": 90.33652221666667
+        },
+        {
+            "name": "UDGAM",
+            "lat": 51.53008333333333,
+            "lon": 90.49073611666667
+        },
+        {
+            "name": "XETAT",
+            "lat": 51.446852783333334,
+            "lon": 90.49076666666667
+        },
+        {
+            "name": "YPLNB",
+            "lat": 51.44187221666667,
+            "lon": 90.22226943333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FF09": "FF09 2600",
+                "EP09": "OVERFLY EP09 1318",
+                "YPLNB": "OVERFLY YPLNB AT OR ABOVE 1670 RNW 09 TRK 111 UNTIL 2600 TURN RIGHT DIRECT YPLNB 2600 HOLD AT YPLNB RIGHT TURN INBOUNDCOURSE 111 SPEED 230 LEGTIME 1 FAF FF09 MAP YPL"
+            },
+            "transitions": [
+                {
+                    "name": "YPL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "XETAT": "XETAT AT OR ABOVE 2600",
+                "IKMED": "IKMED 2600",
+                "MAXOM": "MAXOM AT OR ABOVE 1910 RNW 09",
+                "OMIVU": "OVERFLY OMIVU 2700 HOLD AT OMIVU RIGHT TURN INBOUNDCOURSE 094 SPEED 230 LEGTIME 1 FAF IKMED MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "ESRIL",
+                    "fixes": {
+                        "ESRIL": "ESRIL SPEED 210"
+                    }
+                },
+                {
+                    "name": "UDGAM",
+                    "fixes": {
+                        "UDGAM": "UDGAM SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "DUXUG": "DUXUG AT OR ABOVE 2600",
+                "ELUBO": "ELUBO 2600 RNW 27",
+                "TAKVI": "OVERFLY TAKVI 2700 HOLD AT TAKVI RIGHT TURN INBOUNDCOURSE 274 SPEED 230 LEGTIME 1 FAF ELUBO MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "APGIP",
+                    "fixes": {
+                        "APGIP": "APGIP SPEED 210"
+                    }
+                },
+                {
+                    "name": "BOATH",
+                    "fixes": {
+                        "BOATH": "BOATH SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

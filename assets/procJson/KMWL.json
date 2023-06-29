@@ -1,0 +1,142 @@
+{
+    "fixes": [
+        {
+            "name": "CEOLA",
+            "lat": 32.866325,
+            "lon": 97.73326943333333
+        },
+        {
+            "name": "CFVGK",
+            "lat": 32.64975556666667,
+            "lon": 97.90500556666667
+        },
+        {
+            "name": "CUTIS",
+            "lat": 32.72118888333333,
+            "lon": 97.98755833333334
+        },
+        {
+            "name": "GUNFE",
+            "lat": 32.519361116666666,
+            "lon": 97.91881388333333
+        },
+        {
+            "name": "HEAST",
+            "lat": 32.63279443333333,
+            "lon": 97.88543333333334
+        },
+        {
+            "name": "MQP",
+            "lat": 32.72618056666666,
+            "lon": 97.99744166666666
+        },
+        {
+            "name": "NABIE",
+            "lat": 32.66494721666667,
+            "lon": 97.75258333333333
+        },
+        {
+            "name": "PI001",
+            "lat": 32.68420986666667,
+            "lon": 97.94929663333333
+        },
+        {
+            "name": "PI002",
+            "lat": 32.612554116666665,
+            "lon": 97.9507815
+        },
+        {
+            "name": "PI003",
+            "lat": 32.6062156,
+            "lon": 97.86000438333333
+        },
+        {
+            "name": "PI004",
+            "lat": 32.684923133333335,
+            "lon": 97.94843346666667
+        },
+        {
+            "name": "PI005",
+            "lat": 32.61325646666667,
+            "lon": 97.94843346666667
+        },
+        {
+            "name": "PI006",
+            "lat": 32.60825173333333,
+            "lon": 97.85753828333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 17",
+        "RNW 31",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS31",
+            "fixes": {
+                "CFVGK": "CFVGK AT OR ABOVE 3000",
+                "CUTIS": "CUTIS 2500 RNW 31 TRK 310 UNTIL 1600 TURN LEFT DIRECT",
+                "MQP": "MQP AT OR ABOVE 3000 HOLD AT MQP LEFT TURN INBOUNDCOURSE 309 LEGTIME 1 FAF CUTIS MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "MQP",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "HEAST": "HEAST AT OR ABOVE 3000 OVERFLY HEAST AT OR ABOVE 4000 HOLD AT HEAST RIGHT TURN INBOUNDCOURSE 310 LEGDIST 4 FAF CUTIS MAP RNW 31",
+                "CUTIS": "CUTIS 2500 RNW 31 TRK 310 UNTIL 1600 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CEOLA",
+                    "fixes": {
+                        "CEOLA": "CEOLA",
+                        "NABIE": "NABIE AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "GUNFE",
+                    "fixes": {
+                        "GUNFE": "GUNFE"
+                    }
+                },
+                {
+                    "name": "MQP",
+                    "fixes": {
+                        "MQP": "MQP",
+                        "HEAST": "OVERFLY HEAST AT OR ABOVE 3000 HOLD AT HEAST RIGHT TURN INBOUNDCOURSE 310 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR31",
+            "fixes": {
+                "MQP": "MQP 2500 RNW 31 TRK 309 UNTIL 1374 TURN LEFT DIRECT MQP AT OR ABOVE 2800 HOLD AT MQP LEFT TURN INBOUNDCOURSE 309 LEGTIME 1 FAF MQP MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "MQP",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,229 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 61.97139886666667,
+            "lon": 59.518400883333335
+        },
+        {
+            "name": "AF002",
+            "lat": 62.01157385,
+            "lon": 59.58310766666666
+        },
+        {
+            "name": "CF11",
+            "lat": 62.12213611666667,
+            "lon": 59.30599443333333
+        },
+        {
+            "name": "CF29",
+            "lat": 62.27177221666667,
+            "lon": 58.67142221666667
+        },
+        {
+            "name": "D283T",
+            "lat": 62.05413333333333,
+            "lon": 59.62944443333333
+        },
+        {
+            "name": "FF11",
+            "lat": 62.15657778333333,
+            "lon": 59.144430566666664
+        },
+        {
+            "name": "FF29",
+            "lat": 62.231377783333336,
+            "lon": 58.82716943333333
+        },
+        {
+            "name": "FN11",
+            "lat": 62.143697216666666,
+            "lon": 59.175666666666665
+        },
+        {
+            "name": "FN29",
+            "lat": 62.234552783333335,
+            "lon": 58.791863883333335
+        },
+        {
+            "name": "FS29",
+            "lat": 62.23880556666667,
+            "lon": 58.79647778333333
+        },
+        {
+            "name": "IRJ",
+            "lat": 62.19083333333333,
+            "lon": 58.9825
+        },
+        {
+            "name": "IRJ20",
+            "lat": 61.936072216666666,
+            "lon": 59.437438883333336
+        },
+        {
+            "name": "IRJ23",
+            "lat": 61.89773056666667,
+            "lon": 59.50502778333333
+        },
+        {
+            "name": "IRJ30",
+            "lat": 61.80813333333333,
+            "lon": 59.662075
+        },
+        {
+            "name": "IRJ45",
+            "lat": 61.615538883333336,
+            "lon": 59.99553888333333
+        },
+        {
+            "name": "IRJNB",
+            "lat": 62.19944443333333,
+            "lon": 58.961388883333335
+        },
+        {
+            "name": "KRILL",
+            "lat": 61.20611111666667,
+            "lon": 60.686388883333336
+        },
+        {
+            "name": "PAMES",
+            "lat": 62.0875,
+            "lon": 59.46722221666667
+        },
+        {
+            "name": "PULAP",
+            "lat": 62.31194443333333,
+            "lon": 58.51527778333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "ALBAT1",
+            "rnw": "11",
+            "fixes": {
+                "KRILL": "KRILL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "EIKEN1",
+            "rnw": "29",
+            "fixes": {
+                "IRJ": "IRJ",
+                "KRILL": "KRILL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "PAMES1",
+            "runway": "RNW 11 RNW 29",
+            "fixes": {
+                "KRILL": "KRILL",
+                "IRJ45": "IRJ45 AT OR ABOVE 11000",
+                "IRJ23": "IRJ23",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "D283T": "D283T",
+                "PAMES": "PAMES AT OR ABOVE 3500"
+            }
+        },
+        {
+            "name": "PULAP1",
+            "runway": "RNW 11 RNW 29",
+            "fixes": {
+                "KRILL": "KRILL",
+                "IRJ30": "IRJ30 AT OR ABOVE 11000",
+                "IRJ20": "IRJ20 AT OR ABOVE 8500",
+                "IRJ": "IRJ AT OR ABOVE 3500",
+                "PULAP": "PULAP"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD11",
+            "fixes": {
+                "CF11": "CF11 AT OR ABOVE 2400",
+                "FF11": "FF11 1500 RNW 11",
+                "IRJ": "OVERFLY IRJ TRK 103 UNTIL 3500 FAF FF11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "PAMES",
+                    "fixes": {
+                        "PAMES": "PAMES RIGHT TURN INBOUNDCOURSE 103 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ29",
+            "fixes": {
+                "CF29": "CF29 AT OR ABOVE 2400",
+                "FF29": "FF29 1500 RNW 29",
+                "IRJ": "OVERFLY IRJ TRK 288 UNTIL 3500 FAF FF29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "PULAP",
+                    "fixes": {
+                        "PULAP": "PULAP RIGHT TURN INBOUNDCOURSE 288 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FN11": "FN11 2000 RNW 11",
+                "IRJNB": "IRJNB TRK 108 UNTIL 3500 TURN RIGHT DIRECT IRJNB HOLD AT IRJNB LEFT TURN INBOUNDCOURSE 306 LEGTIME 1 FAF FN11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "IRJ",
+                    "fixes": {
+                        "IRJNB": "IRJNB AT OR ABOVE 3500 TRK 306 UNTIL 7.0 FROM IRJNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FN29": "FN29 2000",
+                "IRJNB": "IRJNB 349 RNW 29 TRK 283 UNTIL 3500 TURN RIGHT DIRECT IRJNB HOLD AT IRJNB RIGHT TURN INBOUNDCOURSE 121 LEGTIME 1 FAF FN29 MAP IRJ"
+            },
+            "transitions": [
+                {
+                    "name": "IRJ",
+                    "fixes": {
+                        "IRJNB": "IRJNB AT OR ABOVE 3500 TRK 121 UNTIL 7.0 FROM IRJNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY29",
+            "fixes": {
+                "FS29": "FS29 2000 RNW 29",
+                "IRJ": "IRJ TRK 288 UNTIL 3500 TURN RIGHT DIRECT IRJ HOLD AT IRJ LEFT TURN INBOUNDCOURSE 126 LEGTIME 1 FAF FS29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "IRJ",
+                    "fixes": {
+                        "IRJ": "IRJ AT OR ABOVE 3500 TRK 126 UNTIL 7.0 FROM IRJ"
+                    }
+                }
+            ]
+        }
+    ]
+}

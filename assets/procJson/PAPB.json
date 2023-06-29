@@ -1,0 +1,210 @@
+{
+    "fixes": [
+        {
+            "name": "AJBOS",
+            "lat": 56.555841666666666,
+            "lon": 169.84911111666668
+        },
+        {
+            "name": "APOTE",
+            "lat": 56.62,
+            "lon": 169.80781666666667
+        },
+        {
+            "name": "BILBE",
+            "lat": 56.205758333333335,
+            "lon": 166.11284443333332
+        },
+        {
+            "name": "DIBWO",
+            "lat": 56.32874721666666,
+            "lon": 169.22031666666666
+        },
+        {
+            "name": "EQQUP",
+            "lat": 56.66698888333333,
+            "lon": 169.9676
+        },
+        {
+            "name": "HEKEL",
+            "lat": 56.531575,
+            "lon": 170.02433056666666
+        },
+        {
+            "name": "JEJZO",
+            "lat": 56.57387778333333,
+            "lon": 169.71756111666667
+        },
+        {
+            "name": "JIRON",
+            "lat": 56.784388883333335,
+            "lon": 169.85371388333334
+        },
+        {
+            "name": "LIJFY",
+            "lat": 56.514088883333336,
+            "lon": 169.44155556666666
+        },
+        {
+            "name": "OSUCA",
+            "lat": 56.549483333333335,
+            "lon": 170.08078056666668
+        },
+        {
+            "name": "PI001",
+            "lat": 56.647350683333336,
+            "lon": 169.90149831666668
+        },
+        {
+            "name": "PI002",
+            "lat": 56.626335133333335,
+            "lon": 170.02608583333333
+        },
+        {
+            "name": "PI003",
+            "lat": 56.69795776666667,
+            "lon": 170.07583881666667
+        },
+        {
+            "name": "SPYNB",
+            "lat": 57.157,
+            "lon": 170.23299166666666
+        },
+        {
+            "name": "SRINB",
+            "lat": 56.571905566666665,
+            "lon": 169.64756111666668
+        },
+        {
+            "name": "WIVOG",
+            "lat": 56.598683333333334,
+            "lon": 169.73568888333332
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS11",
+            "fixes": {
+                "EQQUP": "EQQUP AT OR ABOVE 3000",
+                "APOTE": "APOTE 2100 RNW 11",
+                "LIJFY": "LIJFY AT OR ABOVE 3200 HOLD AT LIJFY RIGHT TURN INBOUNDCOURSE 290 ALT 3200 LEGTIME 1 FAF APOTE MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "LIJFY",
+                    "fixes": {
+                        "LIJFY": "LIJFY",
+                        "SRINB": "SRINB AT OR ABOVE 3200",
+                        "APOTE": "APOTE AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SPY",
+                    "fixes": {
+                        "SPYNB": "SPYNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "EQQUP": "EQQUP AT OR ABOVE 3000",
+                "APOTE": "APOTE 2100",
+                "WIVOG": "WIVOG AT OR ABOVE 1060 RNW 11 TRK 111 UNTIL 600 TURN RIGHT DIRECT",
+                "OSUCA": "OVERFLY OSUCA AT OR ABOVE 3000 HOLD AT OSUCA RIGHT TURN INBOUNDCOURSE 021 LEGDIST 4 FAF APOTE MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "EQQUP",
+                    "fixes": {
+                        "EQQUP": "EQQUP RIGHT TURN INBOUNDCOURSE 111 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JIRON",
+                    "fixes": {
+                        "JIRON": "JIRON"
+                    }
+                },
+                {
+                    "name": "OSUCA",
+                    "fixes": {
+                        "OSUCA": "OSUCA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVD11",
+            "fixes": {
+                "HEKEL": "HEKEL AT OR ABOVE 2000 OVERFLY HEKEL AT OR ABOVE 2100 HOLD AT HEKEL RIGHT TURN INBOUNDCOURSE 069 LEGDIST 4 FAF AJBOS MAP JEJZO",
+                "AJBOS": "AJBOS 1600",
+                "JEJZO": "OVERFLY JEJZO 980 RNW 11 TRK 069 UNTIL 980 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BILBE",
+                    "fixes": {
+                        "BILBE": "BILBE",
+                        "HEKEL": "OVERFLY HEKEL AT OR ABOVE 2000 HOLD AT HEKEL RIGHT TURN INBOUNDCOURSE 069 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DIBWO",
+                    "fixes": {
+                        "DIBWO": "DIBWO",
+                        "HEKEL": "OVERFLY HEKEL AT OR ABOVE 2000 HOLD AT HEKEL RIGHT TURN INBOUNDCOURSE 069 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SPY",
+                    "fixes": {
+                        "SPYNB": "SPYNB",
+                        "HEKEL": "OVERFLY HEKEL AT OR ABOVE 2100 HOLD AT HEKEL RIGHT TURN INBOUNDCOURSE 069 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVD29",
+            "fixes": {
+                "HEKEL": "HEKEL AT OR ABOVE 2000 OVERFLY HEKEL AT OR ABOVE 2100 HOLD AT HEKEL RIGHT TURN INBOUNDCOURSE 069 LEGDIST 4 FAF AJBOS MAP JEJZO",
+                "AJBOS": "AJBOS 1600",
+                "JEJZO": "OVERFLY JEJZO 980 RNW 29 TRK 069 UNTIL 980 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BILBE",
+                    "fixes": {
+                        "BILBE": "BILBE",
+                        "HEKEL": "OVERFLY HEKEL AT OR ABOVE 2000 HOLD AT HEKEL RIGHT TURN INBOUNDCOURSE 069 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DIBWO",
+                    "fixes": {
+                        "DIBWO": "DIBWO",
+                        "HEKEL": "OVERFLY HEKEL AT OR ABOVE 2000 HOLD AT HEKEL RIGHT TURN INBOUNDCOURSE 069 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SPY",
+                    "fixes": {
+                        "SPYNB": "SPYNB",
+                        "HEKEL": "OVERFLY HEKEL AT OR ABOVE 2100 HOLD AT HEKEL RIGHT TURN INBOUNDCOURSE 069 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "AZ150",
+            "lat": 34.26287778333333,
+            "lon": 138.96487778333332
+        },
+        {
+            "name": "AZ151",
+            "lat": 34.196025,
+            "lon": 139.10409166666668
+        },
+        {
+            "name": "AZ152",
+            "lat": 34.152141666666665,
+            "lon": 139.196325
+        },
+        {
+            "name": "AZ950",
+            "lat": 34.18249721666667,
+            "lon": 139.32360833333334
+        },
+        {
+            "name": "AZ951",
+            "lat": 34.18285278333333,
+            "lon": 139.16287778333333
+        },
+        {
+            "name": "AZ952",
+            "lat": 34.18296111666667,
+            "lon": 139.07247221666665
+        },
+        {
+            "name": "KOUGA",
+            "lat": 34.3481,
+            "lon": 139.27125278333332
+        },
+        {
+            "name": "ONBAS",
+            "lat": 34.22111388333333,
+            "lon": 139.05191111666667
+        },
+        {
+            "name": "SENOL",
+            "lat": 34.34961943333333,
+            "lon": 139.02525
+        },
+        {
+            "name": "TAKOU",
+            "lat": 34.18274443333333,
+            "lon": 139.22315
+        },
+        {
+            "name": "TENJO",
+            "lat": 34.28268056666667,
+            "lon": 139.32402221666666
+        },
+        {
+            "name": "XAC",
+            "lat": 34.712252783333334,
+            "lon": 139.41401666666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "KOZU1",
+            "rnw": "07R",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 11",
+                    "fixes": {
+                        "RNW 11": "RNW 11 TRK 112 UNTIL 1800 TURN LEFT DIRECT",
+                        "XAC": "XAC"
+                    }
+                },
+                {
+                    "rwy": "RNW 29",
+                    "fixes": {
+                        "RNW 29": "RNW 29 TRK 292 UNTIL 1700 TURN RIGHT DIRECT",
+                        "XAC": "XAC"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "ONBAS": "ONBAS 1856",
+                "AZ151": "OVERFLY AZ151 884 RNW 11",
+                "AZ152": "OVERFLY AZ152 TURN LEFT DIRECT",
+                "KOUGA": "KOUGA 5000 HOLD AT KOUGA LEFT TURN INBOUNDCOURSE 205 ALT 5000 SPEED 170 LEGTIME 1 FAF ONBAS MAP AZ151"
+            },
+            "transitions": [
+                {
+                    "name": "KOUGA",
+                    "fixes": {
+                        "KOUGA": "KOUGA AT OR ABOVE 5000",
+                        "SENOL": "SENOL",
+                        "AZ150": "AZ150"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "TAKOU": "TAKOU 1890",
+                "AZ951": "OVERFLY AZ951 918 RNW 29",
+                "AZ952": "OVERFLY AZ952 TURN RIGHT DIRECT",
+                "KOUGA": "KOUGA 5000 HOLD AT KOUGA LEFT TURN INBOUNDCOURSE 205 ALT 5000 SPEED 170 LEGTIME 1 FAF TAKOU MAP AZ951"
+            },
+            "transitions": [
+                {
+                    "name": "KOUGA",
+                    "fixes": {
+                        "KOUGA": "KOUGA AT OR ABOVE 5000",
+                        "TENJO": "TENJO",
+                        "AZ950": "AZ950"
+                    }
+                }
+            ]
+        }
+    ]
+}

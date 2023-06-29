@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "BAMIC",
+            "lat": 33.47858888333333,
+            "lon": 105.872125
+        },
+        {
+            "name": "CNX",
+            "lat": 34.367016666666665,
+            "lon": 105.67800556666667
+        },
+        {
+            "name": "DOANN",
+            "lat": 32.88038888333333,
+            "lon": 105.94505278333334
+        },
+        {
+            "name": "GLINA",
+            "lat": 34.064075,
+            "lon": 105.96206388333333
+        },
+        {
+            "name": "HALIC",
+            "lat": 33.02601943333333,
+            "lon": 106.08193888333334
+        },
+        {
+            "name": "HEPRO",
+            "lat": 32.790483333333334,
+            "lon": 106.05028888333334
+        },
+        {
+            "name": "JASAN",
+            "lat": 32.74613333333333,
+            "lon": 106.10373888333334
+        },
+        {
+            "name": "LISSO",
+            "lat": 32.88271388333333,
+            "lon": 105.83240833333333
+        },
+        {
+            "name": "PIO",
+            "lat": 32.52920278333333,
+            "lon": 105.30524166666666
+        },
+        {
+            "name": "SAMMM",
+            "lat": 32.82126111666667,
+            "lon": 106.01315278333334
+        },
+        {
+            "name": "WILOE",
+            "lat": 33.14995278333333,
+            "lon": 105.9429
+        },
+        {
+            "name": "ZOOOM",
+            "lat": 32.99263056666667,
+            "lon": 105.96688611666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 17",
+        "RNW 22",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "CRONA1",
+            "rnw": "04",
+            "fixes": {
+                "ZOOOM": "ZOOOM",
+                "GLINA": "GLINA",
+                "CNX": "CNX"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "JASAN": "JASAN AT OR ABOVE 6000",
+                "HEPRO": "HEPRO 5300 RNW 04 TRK 038 UNTIL 4600",
+                "HALIC": "OVERFLY HALIC AT OR ABOVE 6000 HOLD AT HALIC RIGHT TURN INBOUNDCOURSE 160 LEGDIST 5 FAF HEPRO MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "CNX",
+                    "fixes": {
+                        "CNX": "CNX",
+                        "BAMIC": "BAMIC AT OR ABOVE 15000",
+                        "WILOE": "WILOE AT OR ABOVE 13700",
+                        "SAMMM": "SAMMM AT OR ABOVE 9200",
+                        "JASAN": "OVERFLY JASAN AT OR ABOVE 6000 HOLD AT JASAN RIGHT TURN INBOUNDCOURSE 038 ALT 6000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "PIO",
+                    "fixes": {
+                        "PIO": "PIO",
+                        "LISSO": "LISSO AT OR ABOVE 12000",
+                        "DOANN": "DOANN AT OR ABOVE 11300",
+                        "SAMMM": "SAMMM AT OR ABOVE 9200",
+                        "JASAN": "OVERFLY JASAN AT OR ABOVE 6000 HOLD AT JASAN RIGHT TURN INBOUNDCOURSE 038 ALT 6000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

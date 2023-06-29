@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "FGF05",
+            "lat": 16.094277783333332,
+            "lon": 145.74438888333333
+        },
+        {
+            "name": "FGF23",
+            "lat": 16.015055566666668,
+            "lon": 145.57177778333335
+        },
+        {
+            "name": "FKNB",
+            "lat": 16.053944433333335,
+            "lon": 145.65427778333333
+        },
+        {
+            "name": "FN05",
+            "lat": 16.083936116666667,
+            "lon": 145.72739166666668
+        },
+        {
+            "name": "FN23",
+            "lat": 16.021155566666668,
+            "lon": 145.59053333333333
+        },
+        {
+            "name": "GF411",
+            "lat": 16.129944433333332,
+            "lon": 145.63286111666667
+        },
+        {
+            "name": "GF412",
+            "lat": 16.121166666666667,
+            "lon": 145.61341666666667
+        },
+        {
+            "name": "VALMI",
+            "lat": 16.0545,
+            "lon": 145.85966666666667
+        },
+        {
+            "name": "VARGO",
+            "lat": 15.903555566666666,
+            "lon": 145.53077778333332
+        },
+        {
+            "name": "VELDA",
+            "lat": 16.20575,
+            "lon": 145.78552778333332
+        },
+        {
+            "name": "VEXUS",
+            "lat": 15.979138883333333,
+            "lon": 145.49363888333335
+        },
+        {
+            "name": "VIBOX",
+            "lat": 16.130111116666665,
+            "lon": 145.82261111666668
+        },
+        {
+            "name": "VISIT",
+            "lat": 16.054694433333335,
+            "lon": 145.45647221666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB05",
+            "fixes": {
+                "FN05": "FN05 1200 RNW 05",
+                "FKNB": "OVERFLY FKNB TRK 055 UNTIL 1500 TURN RIGHT DIRECT FKNB FAF FN05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "FK",
+                    "fixes": {
+                        "FKNB": "FKNB AT OR ABOVE 1500 TRK 219 UNTIL 7.5 FROM FKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB23",
+            "fixes": {
+                "FN23": "FN23 1200 RNW 23",
+                "FKNB": "OVERFLY FKNB TRK 230 UNTIL 1500 TURN RIGHT DIRECT FKNB FAF FN23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "FK",
+                    "fixes": {
+                        "FKNB": "FKNB AT OR ABOVE 1500 TRK 065 UNTIL 7.5 FROM FKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "VIBOX": "VIBOX AT OR ABOVE 1700",
+                "FGF05": "FGF05 1700 RNW 05 TRK 052 UNTIL 800 TURN RIGHT DIRECT",
+                "GF411": "GF411",
+                "VELDA": "VELDA AT OR ABOVE 1700 FAF FGF05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "VALMI",
+                    "fixes": {
+                        "VALMI": "VALMI AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "VELDA",
+                    "fixes": {
+                        "VELDA": "VELDA AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "VIBOX",
+                    "fixes": {
+                        "VIBOX": "VIBOX RIGHT TURN INBOUNDCOURSE 052 ALT 1700 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "VEXUS": "VEXUS AT OR ABOVE 1700",
+                "FGF23": "FGF23 1700 RNW 23 TRK 232 UNTIL 800 TURN LEFT DIRECT",
+                "GF412": "GF412",
+                "VISIT": "VISIT AT OR ABOVE 1700 FAF FGF23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "VARGO",
+                    "fixes": {
+                        "VARGO": "VARGO AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "VEXUS",
+                    "fixes": {
+                        "VEXUS": "VEXUS LEFT TURN INBOUNDCOURSE 232 ALT 1700 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "VISIT",
+                    "fixes": {
+                        "VISIT": "VISIT AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        }
+    ]
+}

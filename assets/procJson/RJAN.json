@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "AN150",
+            "lat": 34.487233333333336,
+            "lon": 139.08963056666667
+        },
+        {
+            "name": "AN151",
+            "lat": 34.37493333333333,
+            "lon": 139.23872221666667
+        },
+        {
+            "name": "AN152",
+            "lat": 34.28946388333333,
+            "lon": 139.35182221666668
+        },
+        {
+            "name": "AN950",
+            "lat": 34.406430566666664,
+            "lon": 139.493175
+        },
+        {
+            "name": "AN951",
+            "lat": 34.36414166666667,
+            "lon": 139.29836111666665
+        },
+        {
+            "name": "AN952",
+            "lat": 34.32365,
+            "lon": 139.11296388333332
+        },
+        {
+            "name": "AN953",
+            "lat": 34.404383333333335,
+            "lon": 139.08736666666667
+        },
+        {
+            "name": "HABSI",
+            "lat": 34.38528611666667,
+            "lon": 139.39575556666668
+        },
+        {
+            "name": "HAMAU",
+            "lat": 34.43108888333333,
+            "lon": 139.16420833333333
+        },
+        {
+            "name": "PADLE",
+            "lat": 34.532094433333334,
+            "lon": 139.44501943333333
+        },
+        {
+            "name": "VESEL",
+            "lat": 34.56871111666667,
+            "lon": 139.17835278333334
+        },
+        {
+            "name": "WAVES",
+            "lat": 34.570008333333334,
+            "lon": 139.35809443333332
+        },
+        {
+            "name": "XAC",
+            "lat": 34.712252783333334,
+            "lon": 139.41401666666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "XAC1",
+            "rnw": "29",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 11",
+                    "fixes": {
+                        "RNW 11": "RNW 11 TRK 110 UNTIL 3000 TURN LEFT DIRECT",
+                        "XAC": "XAC"
+                    }
+                },
+                {
+                    "rwy": "RNW 29",
+                    "fixes": {
+                        "RNW 29": "RNW 29 TRK 290 UNTIL 3000 TURN RIGHT HDG 080 INTERCEPT RADIAL 035 TO",
+                        "XAC": "XAC XAC"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "HAMAU": "HAMAU 2145",
+                "AN151": "OVERFLY AN151 508 RNW 11",
+                "AN152": "OVERFLY AN152 TURN LEFT DIRECT",
+                "WAVES": "WAVES 5000 HOLD AT WAVES RIGHT TURN INBOUNDCOURSE 201 ALT 5000 SPEED 170 LEGTIME 1 FAF HAMAU MAP AN151"
+            },
+            "transitions": [
+                {
+                    "name": "WAVES",
+                    "fixes": {
+                        "WAVES": "WAVES AT OR ABOVE 5000",
+                        "VESEL": "VESEL",
+                        "AN150": "AN150"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "HABSI": "HABSI 2148",
+                "AN951": "OVERFLY AN951 518 RNW 29",
+                "AN952": "AN952",
+                "AN953": "AN953",
+                "WAVES": "WAVES 5000 HOLD AT WAVES RIGHT TURN INBOUNDCOURSE 201 ALT 5000 SPEED 170 LEGTIME 1 FAF HABSI MAP AN951"
+            },
+            "transitions": [
+                {
+                    "name": "WAVES",
+                    "fixes": {
+                        "WAVES": "WAVES AT OR ABOVE 5000",
+                        "PADLE": "PADLE",
+                        "AN950": "AN950"
+                    }
+                }
+            ]
+        }
+    ]
+}

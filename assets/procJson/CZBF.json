@@ -1,0 +1,191 @@
+{
+    "fixes": [
+        {
+            "name": "1FNB",
+            "lat": 47.630583333333334,
+            "lon": 65.74459166666666
+        },
+        {
+            "name": "APLIV",
+            "lat": 47.61788056666666,
+            "lon": 65.86123056666666
+        },
+        {
+            "name": "APLUP",
+            "lat": 47.64053611666667,
+            "lon": 65.62379166666666
+        },
+        {
+            "name": "AVEBA",
+            "lat": 47.61888056666667,
+            "lon": 65.85091388333333
+        },
+        {
+            "name": "EMIKA",
+            "lat": 47.65425556666667,
+            "lon": 65.47729166666667
+        },
+        {
+            "name": "EMPOK",
+            "lat": 47.521233333333335,
+            "lon": 65.98991943333333
+        },
+        {
+            "name": "ESPUT",
+            "lat": 47.623691666666666,
+            "lon": 65.80085556666667
+        },
+        {
+            "name": "FN10",
+            "lat": 47.59854443333333,
+            "lon": 65.92062221666667
+        },
+        {
+            "name": "FN28",
+            "lat": 47.637005566666666,
+            "lon": 65.60691388333333
+        },
+        {
+            "name": "IKBUK",
+            "lat": 47.60366388333333,
+            "lon": 66.00752221666667
+        },
+        {
+            "name": "IKDEG",
+            "lat": 47.73676388333333,
+            "lon": 65.494125
+        },
+        {
+            "name": "OTETO",
+            "lat": 47.640180566666665,
+            "lon": 65.6276
+        },
+        {
+            "name": "PI001",
+            "lat": 47.616440583333336,
+            "lon": 65.82855753333334
+        },
+        {
+            "name": "PI002",
+            "lat": 47.653315516666666,
+            "lon": 65.91975256666667
+        },
+        {
+            "name": "PI003",
+            "lat": 47.59816708333334,
+            "lon": 65.93644678333334
+        },
+        {
+            "name": "PI004",
+            "lat": 47.633603783333335,
+            "lon": 65.65814551666666
+        },
+        {
+            "name": "PI005",
+            "lat": 47.686840466666666,
+            "lon": 65.58691018333333
+        },
+        {
+            "name": "PI006",
+            "lat": 47.639040916666666,
+            "lon": 65.49757658333333
+        },
+        {
+            "name": "TEVAV",
+            "lat": 47.68609166666667,
+            "lon": 66.02518056666666
+        },
+        {
+            "name": "UDNUX",
+            "lat": 47.571747216666665,
+            "lon": 65.46051111666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB10",
+            "fixes": {
+                "FN10": "FN10 2500 RNW 10",
+                "1FNB": "OVERFLY 1FNB TRK 094 UNTIL 3200 TURN RIGHT DIRECT 1FNB 3200 HOLD AT 1FNB LEFT TURN INBOUNDCOURSE 094 LEGTIME 1 FAF FN10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "1F",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB28",
+            "fixes": {
+                "FN28": "FN28 1800 RNW 28",
+                "1FNB": "OVERFLY 1FNB TRK 285 UNTIL 3200 TURN RIGHT DIRECT 1FNB 3200 HOLD AT 1FNB RIGHT TURN INBOUNDCOURSE 285 LEGTIME 1 FAF FN28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "1F",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 1800 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1800 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "IKBUK": "IKBUK AT OR ABOVE 2500",
+                "APLIV": "APLIV 1700",
+                "ESPUT": "ESPUT AT OR ABOVE 910 RNW 10",
+                "OTETO": "OVERFLY OTETO 3300 HOLD AT OTETO RIGHT TURN INBOUNDCOURSE 100 LEGTIME 1 FAF APLIV MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "EMPOK",
+                    "fixes": {
+                        "EMPOK": "EMPOK SPEED 210"
+                    }
+                },
+                {
+                    "name": "TEVAV",
+                    "fixes": {
+                        "TEVAV": "TEVAV SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "EMIKA": "EMIKA AT OR ABOVE 1600",
+                "APLUP": "APLUP 1600 RNW 28",
+                "AVEBA": "OVERFLY AVEBA 3200 HOLD AT AVEBA RIGHT TURN INBOUNDCOURSE 280 LEGTIME 1 FAF APLUP MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "IKDEG",
+                    "fixes": {
+                        "IKDEG": "IKDEG SPEED 210"
+                    }
+                },
+                {
+                    "name": "UDNUX",
+                    "fixes": {
+                        "UDNUX": "UDNUX SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

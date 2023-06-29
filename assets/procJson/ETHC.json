@@ -1,0 +1,257 @@
+{
+    "fixes": [
+        {
+            "name": "AMALI",
+            "lat": 52.479733333333336,
+            "lon": 10.406491666666668
+        },
+        {
+            "name": "AMLIM",
+            "lat": 52.607866666666666,
+            "lon": 10.191127783333334
+        },
+        {
+            "name": "CELNB",
+            "lat": 52.58959443333333,
+            "lon": 10.029461116666667
+        },
+        {
+            "name": "DEDOP",
+            "lat": 52.574275,
+            "lon": 9.8531
+        },
+        {
+            "name": "FN26",
+            "lat": 52.61046388333333,
+            "lon": 10.141886116666667
+        },
+        {
+            "name": "HC400",
+            "lat": 52.56198056666667,
+            "lon": 9.731858333333333
+        },
+        {
+            "name": "HC401",
+            "lat": 52.58338611666667,
+            "lon": 9.943775
+        },
+        {
+            "name": "HC402",
+            "lat": 52.649075,
+            "lon": 9.926030566666666
+        },
+        {
+            "name": "HC403",
+            "lat": 52.62763888333333,
+            "lon": 9.713805566666666
+        },
+        {
+            "name": "HC404",
+            "lat": 52.633797216666665,
+            "lon": 9.554
+        },
+        {
+            "name": "HC500",
+            "lat": 52.620997216666666,
+            "lon": 10.326127783333334
+        },
+        {
+            "name": "HC501",
+            "lat": 52.598961116666665,
+            "lon": 10.100516666666667
+        },
+        {
+            "name": "HC502",
+            "lat": 52.664675,
+            "lon": 10.083002783333333
+        },
+        {
+            "name": "HC503",
+            "lat": 52.68674443333333,
+            "lon": 10.308941666666666
+        },
+        {
+            "name": "NIE",
+            "lat": 52.62589166666667,
+            "lon": 9.371991666666666
+        },
+        {
+            "name": "OBATU",
+            "lat": 52.705430566666664,
+            "lon": 10.415188883333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "AMAL1C",
+            "rnw": "26",
+            "fixes": {
+                "HC401": "OVERFLY HC401 SPEED 205 TURN RIGHT DIRECT",
+                "HC502": "HC502 SPEED 205",
+                "HC503": "HC503",
+                "AMALI": "AMALI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "AMAL1D",
+            "rnw": "08",
+            "fixes": {
+                "HC501": "OVERFLY HC501 TURN RIGHT DIRECT",
+                "AMALI": "AMALI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HC108",
+            "rnw": "08",
+            "fixes": {},
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HC126",
+            "rnw": "26",
+            "fixes": {},
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NIE1C",
+            "rnw": "26",
+            "fixes": {
+                "HC401": "OVERFLY HC401 TURN RIGHT DIRECT",
+                "HC404": "HC404",
+                "NIE": "NIE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NIE1D",
+            "rnw": "08",
+            "fixes": {
+                "HC501": "OVERFLY HC501 SPEED 205 TURN LEFT DIRECT",
+                "HC402": "HC402 SPEED 205",
+                "NIE": "NIE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OBAT1C",
+            "rnw": "26",
+            "fixes": {
+                "HC401": "OVERFLY HC401 SPEED 205 TURN RIGHT DIRECT",
+                "HC502": "HC502 SPEED 205",
+                "HC503": "HC503",
+                "OBATU": "OBATU"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OBAT1D",
+            "rnw": "08",
+            "fixes": {
+                "HC500": "HC500",
+                "OBATU": "OBATU"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FN26": "FN26 1400 RNW 26",
+                "CELNB": "OVERFLY CELNB TRK 249 UNTIL 1200 TURN RIGHT DIRECT CELNB 2000 HOLD AT CELNB RIGHT TURN INBOUNDCOURSE 093 LEGTIME 1 FAF FN26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "CEL",
+                    "fixes": {
+                        "CELNB": "CELNB AT OR ABOVE 2000 SPEED 125 TRK 093 UNTIL 4.3 FROM CELNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "HC400": "HC400 AT OR ABOVE 2000",
+                "DEDOP": "DEDOP 2000 RNW 08",
+                "HC500": "HC500",
+                "OBATU": "OBATU 3000 SPEED 200 FAF DEDOP MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "AMALI",
+                    "fixes": {
+                        "AMALI": "AMALI AT OR ABOVE 3000 SPEED 200",
+                        "HC500": "HC500 AT OR ABOVE 2000",
+                        "HC402": "HC402 AT OR ABOVE 2000",
+                        "HC403": "HC403 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "NIE",
+                    "fixes": {
+                        "NIE": "NIE AT OR ABOVE 3000 SPEED 200",
+                        "HC404": "HC404 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "OBATU",
+                    "fixes": {
+                        "OBATU": "OBATU AT OR ABOVE 3000 SPEED 200",
+                        "HC503": "HC503 AT OR ABOVE 2000",
+                        "HC402": "HC402 AT OR ABOVE 2000",
+                        "HC403": "HC403 AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "HC500": "HC500 AT OR ABOVE 2000",
+                "AMLIM": "AMLIM 2000 RNW 26",
+                "HC401": "OVERFLY HC401 TURN RIGHT DIRECT",
+                "HC502": "HC502",
+                "HC503": "HC503",
+                "OBATU": "OBATU 3000 FAF AMLIM MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "AMALI",
+                    "fixes": {
+                        "AMALI": "AMALI AT OR ABOVE 3000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "NIE",
+                    "fixes": {
+                        "NIE": "NIE AT OR ABOVE 3000 SPEED 200",
+                        "HC402": "HC402 AT OR ABOVE 2000",
+                        "HC503": "HC503 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "OBATU",
+                    "fixes": {
+                        "OBATU": "OBATU AT OR ABOVE 3000 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

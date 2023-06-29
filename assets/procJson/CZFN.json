@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "ELTUM",
+            "lat": 65.00856111666667,
+            "lon": 125.17888056666666
+        },
+        {
+            "name": "ETGEM",
+            "lat": 64.76391943333333,
+            "lon": 125.85743333333333
+        },
+        {
+            "name": "IKNAK",
+            "lat": 64.84311666666666,
+            "lon": 125.14383611666666
+        },
+        {
+            "name": "OMPUB",
+            "lat": 64.91193611666667,
+            "lon": 125.58378333333333
+        },
+        {
+            "name": "OMRAS",
+            "lat": 64.91343333333333,
+            "lon": 126.02747221666667
+        },
+        {
+            "name": "OVOLU",
+            "lat": 64.88198056666667,
+            "lon": 125.73114166666667
+        },
+        {
+            "name": "OXAKO",
+            "lat": 64.91673611666667,
+            "lon": 125.39517778333334
+        },
+        {
+            "name": "UDPIP",
+            "lat": 64.83870278333333,
+            "lon": 125.94221666666667
+        },
+        {
+            "name": "UKVAR",
+            "lat": 64.9476,
+            "lon": 125.406975
+        },
+        {
+            "name": "VOKIS",
+            "lat": 64.92583888333333,
+            "lon": 125.16130278333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "UDPIP": "UDPIP AT OR ABOVE 2200",
+                "OVOLU": "OVOLU 1700",
+                "OMPUB": "OVERFLY OMPUB 370 RNW 07",
+                "UKVAR": "OVERFLY UKVAR 3600 HOLD AT UKVAR RIGHT TURN INBOUNDCOURSE 045 LEGTIME 1 FAF OVOLU MAP OMPUB"
+            },
+            "transitions": [
+                {
+                    "name": "ETGEM",
+                    "fixes": {
+                        "ETGEM": "ETGEM SPEED 210"
+                    }
+                },
+                {
+                    "name": "OMRAS",
+                    "fixes": {
+                        "OMRAS": "OMRAS SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "VOKIS": "VOKIS AT OR ABOVE 2900",
+                "OXAKO": "OXAKO 1700 RNW 25 TRK 245 UNTIL 730 TURN LEFT DIRECT",
+                "IKNAK": "OVERFLY IKNAK 2900 HOLD AT IKNAK RIGHT TURN INBOUNDCOURSE 335 SPEED 230 LEGTIME 1 FAF OXAKO MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "ELTUM",
+                    "fixes": {
+                        "ELTUM": "ELTUM SPEED 210"
+                    }
+                },
+                {
+                    "name": "IKNAK",
+                    "fixes": {
+                        "IKNAK": "IKNAK SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,239 @@
+{
+    "fixes": [
+        {
+            "name": "AKTIK",
+            "lat": 17.458886116666665,
+            "lon": 99.68332778333334
+        },
+        {
+            "name": "ATPAT",
+            "lat": 17.037113883333333,
+            "lon": 99.69245556666667
+        },
+        {
+            "name": "BEKOD",
+            "lat": 16.354777783333333,
+            "lon": 99.77677778333333
+        },
+        {
+            "name": "EP36",
+            "lat": 17.227783333333335,
+            "lon": 99.82063888333333
+        },
+        {
+            "name": "FN36",
+            "lat": 17.161861116666667,
+            "lon": 99.80855
+        },
+        {
+            "name": "GOSRU",
+            "lat": 17.032538883333334,
+            "lon": 99.93594166666666
+        },
+        {
+            "name": "IGEMU",
+            "lat": 17.453638883333333,
+            "lon": 99.96222778333333
+        },
+        {
+            "name": "KIMET",
+            "lat": 16.824333333333332,
+            "lon": 99.74147778333334
+        },
+        {
+            "name": "OPELO",
+            "lat": 17.706741666666666,
+            "lon": 100.00210278333333
+        },
+        {
+            "name": "PO101",
+            "lat": 17.119458333333334,
+            "lon": 99.81591943333333
+        },
+        {
+            "name": "PO102",
+            "lat": 17.228211116666667,
+            "lon": 99.81813056666667
+        },
+        {
+            "name": "PO201",
+            "lat": 17.355927783333332,
+            "lon": 99.82073333333334
+        },
+        {
+            "name": "PO202",
+            "lat": 17.24718611666667,
+            "lon": 99.81851666666667
+        },
+        {
+            "name": "THSNB",
+            "lat": 17.235225,
+            "lon": 99.82200833333333
+        },
+        {
+            "name": "TOPAS",
+            "lat": 17.487830566666666,
+            "lon": 99.39948888333333
+        },
+        {
+            "name": "UGEKO",
+            "lat": 17.456311116666665,
+            "lon": 99.82278056666667
+        },
+        {
+            "name": "VASBI",
+            "lat": 17.034863883333333,
+            "lon": 99.8142
+        },
+        {
+            "name": "VEGTO",
+            "lat": 17.359191666666668,
+            "lon": 99.61497778333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "KIME1A",
+            "rnw": "18",
+            "fixes": {
+                "KIMET": "KIMET",
+                "BEKOD": "BEKOD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KIME1B",
+            "rnw": "36",
+            "fixes": {
+                "KIMET": "KIMET",
+                "BEKOD": "BEKOD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TOPA1A",
+            "rnw": "18",
+            "fixes": {
+                "TOPAS": "TOPAS AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TOPA1B",
+            "rnw": "36",
+            "fixes": {
+                "TOPAS": "TOPAS AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS36",
+            "fixes": {
+                "VASBI": "VASBI AT OR ABOVE 3000",
+                "PO101": "PO101 2300 RNW 36 TRK 002 UNTIL 3700 TURN LEFT DIRECT",
+                "VEGTO": "VEGTO AT OR ABOVE 5200 SPEED 210 HOLD AT VEGTO RIGHT TURN INBOUNDCOURSE 168 ALT 5200 SPEED 230 LEGTIME 1 FAF PO101 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "IGEMU",
+                    "fixes": {
+                        "IGEMU": "IGEMU AT OR ABOVE 5200",
+                        "GOSRU": "GOSRU AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "KIMET",
+                    "fixes": {
+                        "KIMET": "KIMET AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "VEGTO",
+                    "fixes": {
+                        "VEGTO": "VEGTO AT OR ABOVE 5200",
+                        "ATPAT": "ATPAT AT OR ABOVE 5200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB36",
+            "fixes": {
+                "FN36": "FN36 1000",
+                "EP36": "OVERFLY EP36 229",
+                "THSNB": "OVERFLY THSNB AT OR ABOVE 680 RNW 36 TRK 010 UNTIL 1000 TURN RIGHT DIRECT THSNB 2000 HOLD AT THSNB RIGHT TURN INBOUNDCOURSE 010 ALT 2000 LEGTIME 1 FAF FN36 MAP THS"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "UGEKO": "UGEKO AT OR ABOVE 3500 OVERFLY UGEKO AT OR ABOVE 3500 HOLD AT UGEKO RIGHT TURN INBOUNDCOURSE 182 ALT 3500 SPEED 230 LEGTIME 1 FAF PO201 MAP PO202",
+                "PO201": "PO201 2300",
+                "PO202": "OVERFLY PO202 229 RNW 18 TRK 182 UNTIL 1700 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AKTIK",
+                    "fixes": {
+                        "AKTIK": "AKTIK AT OR ABOVE 5200"
+                    }
+                },
+                {
+                    "name": "IGEMU",
+                    "fixes": {
+                        "IGEMU": "IGEMU AT OR ABOVE 5200"
+                    }
+                },
+                {
+                    "name": "OPELO",
+                    "fixes": {
+                        "OPELO": "OPELO AT OR ABOVE 9000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "VASBI": "VASBI AT OR ABOVE 3000",
+                "PO101": "PO101 2300",
+                "PO102": "OVERFLY PO102 229 RNW 36 TRK 002 UNTIL 3700 TURN LEFT DIRECT",
+                "VEGTO": "OVERFLY VEGTO AT OR ABOVE 5200 SPEED 210 HOLD AT VEGTO RIGHT TURN INBOUNDCOURSE 168 ALT 5200 SPEED 230 LEGTIME 1 FAF PO101 MAP PO102"
+            },
+            "transitions": [
+                {
+                    "name": "IGEMU",
+                    "fixes": {
+                        "IGEMU": "IGEMU AT OR ABOVE 5200",
+                        "GOSRU": "GOSRU AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "KIMET",
+                    "fixes": {
+                        "KIMET": "KIMET AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "VEGTO",
+                    "fixes": {
+                        "VEGTO": "VEGTO AT OR ABOVE 5200",
+                        "ATPAT": "ATPAT AT OR ABOVE 5200"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "fixes": [
+        {
+            "name": "ATMAS",
+            "lat": 44.14686388333333,
+            "lon": 170.18002778333334
+        },
+        {
+            "name": "GT403",
+            "lat": 43.95767778333333,
+            "lon": 170.15167778333333
+        },
+        {
+            "name": "GT456",
+            "lat": 43.94230556666667,
+            "lon": 170.160925
+        },
+        {
+            "name": "IDPAX",
+            "lat": 44.074002783333334,
+            "lon": 170.16367221666667
+        },
+        {
+            "name": "MAMUS",
+            "lat": 44.13510278333333,
+            "lon": 170.28055278333332
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "MAMUS3",
+            "rnw": "15",
+            "fixes": {
+                "GT456": "GT456 AT OR ABOVE 2500",
+                "MAMUS": "MAMUS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA15",
+            "fixes": {
+                "ATMAS": "ATMAS AT OR ABOVE 5500",
+                "IDPAX": "IDPAX 5500",
+                "GT403": "OVERFLY GT403 3290 RNW 15 HOLD AT",
+                "MAMUS": "MAMUS LEFT TURN INBOUNDCOURSE 236 ALT 5900 LEGTIME 1 FAF IDPAX MAP GT403"
+            },
+            "transitions": [
+                {
+                    "name": "MAMUS",
+                    "fixes": {
+                        "MAMUS": "MAMUS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA33",
+            "fixes": {
+                "ATMAS": "ATMAS AT OR ABOVE 5500",
+                "IDPAX": "IDPAX 5500",
+                "GT403": "OVERFLY GT403 3290 RNW 33 HOLD AT",
+                "MAMUS": "MAMUS LEFT TURN INBOUNDCOURSE 236 ALT 5900 LEGTIME 1 FAF IDPAX MAP GT403"
+            },
+            "transitions": [
+                {
+                    "name": "MAMUS",
+                    "fixes": {
+                        "MAMUS": "MAMUS"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "30THR",
+            "lat": 44.752752783333335,
+            "lon": 94.96493333333333
+        },
+        {
+            "name": "MABBO",
+            "lat": 44.77856943333333,
+            "lon": 95.03543611666667
+        },
+        {
+            "name": "ROADS",
+            "lat": 44.69544166666667,
+            "lon": 95.06031943333333
+        },
+        {
+            "name": "RWF",
+            "lat": 44.467275,
+            "lon": 95.12823056666667
+        },
+        {
+            "name": "UYEPU",
+            "lat": 44.77176111666667,
+            "lon": 94.76726666666667
+        },
+        {
+            "name": "VOFHA",
+            "lat": 44.624941666666665,
+            "lon": 94.87782778333333
+        },
+        {
+            "name": "WOPUW",
+            "lat": 44.698366666666665,
+            "lon": 94.82261666666666
+        },
+        {
+            "name": "YUWRE",
+            "lat": 44.737752783333335,
+            "lon": 94.92560833333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA11",
+            "fixes": {
+                "RWF": "RWF AT OR ABOVE 2600",
+                "ROADS": "ROADS 2600 ROADS AT OR ABOVE 2600 HOLD AT ROADS RIGHT TURN INBOUNDCOURSE 005 LEGTIME 1 FAF ROADS MAP MABBO",
+                "MABBO": "MABBO 1680 RNW 11 TRK 005 UNTIL 1680 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "RWF",
+                    "fixes": {
+                        "RWF": "RWF RIGHT TURN INBOUNDCOURSE 016 ALT 2600 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA29",
+            "fixes": {
+                "RWF": "RWF AT OR ABOVE 2600",
+                "ROADS": "ROADS 2600 ROADS AT OR ABOVE 2600 HOLD AT ROADS RIGHT TURN INBOUNDCOURSE 005 LEGTIME 1 FAF ROADS MAP MABBO",
+                "MABBO": "MABBO 1680 RNW 29 TRK 005 UNTIL 1680 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "RWF",
+                    "fixes": {
+                        "RWF": "RWF RIGHT TURN INBOUNDCOURSE 016 ALT 2600 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "WOPUW": "WOPUW AT OR ABOVE 2700 WOPUW AT OR ABOVE 2700 HOLD AT WOPUW LEFT TURN INBOUNDCOURSE 292 LEGDIST 4 FAF YUWRE MAP RNW 29",
+                "YUWRE": "YUWRE 2700",
+                "30THR": "30THR AT OR ABOVE 2060 RNW 29 TRK 292 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "UYEPU",
+                    "fixes": {
+                        "UYEPU": "UYEPU AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "VOFHA",
+                    "fixes": {
+                        "VOFHA": "VOFHA AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "WOPUW",
+                    "fixes": {
+                        "WOPUW": "WOPUW LEFT TURN INBOUNDCOURSE 292 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

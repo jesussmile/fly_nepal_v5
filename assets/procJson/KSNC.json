@@ -1,0 +1,82 @@
+{
+    "fixes": [
+        {
+            "name": "AKIJE",
+            "lat": 41.304425,
+            "lon": 72.46923333333334
+        },
+        {
+            "name": "FLIBB",
+            "lat": 41.227038883333336,
+            "lon": 72.422275
+        },
+        {
+            "name": "HFD",
+            "lat": 41.64110556666667,
+            "lon": 72.54741666666666
+        },
+        {
+            "name": "MAPLE",
+            "lat": 41.461908333333334,
+            "lon": 72.54197221666666
+        },
+        {
+            "name": "MOMDE",
+            "lat": 41.55789443333333,
+            "lon": 72.58650833333333
+        },
+        {
+            "name": "OGTEE",
+            "lat": 41.425158333333336,
+            "lon": 72.52495556666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "MOMDE": "MOMDE AT OR ABOVE 2400",
+                "MAPLE": "MAPLE 2000",
+                "OGTEE": "OGTEE AT OR ABOVE 1240 RNW 17",
+                "AKIJE": "AKIJE",
+                "FLIBB": "OVERFLY FLIBB AT OR ABOVE 2100 HOLD AT FLIBB LEFT TURN INBOUNDCOURSE 348 LEGDIST 4 FAF MAPLE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "FLIBB",
+                    "fixes": {
+                        "FLIBB": "FLIBB",
+                        "MOMDE": "OVERFLY MOMDE AT OR ABOVE 2400 HOLD AT MOMDE LEFT TURN INBOUNDCOURSE 174 ALT 2400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HFD",
+                    "fixes": {
+                        "HFD": "HFD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FLIBB": "FLIBB AT OR ABOVE 2100 OVERFLY FLIBB AT OR ABOVE 2100 HOLD AT FLIBB LEFT TURN INBOUNDCOURSE 348 LEGDIST 4 FAF AKIJE MAP RNW 35",
+                "AKIJE": "AKIJE 2000 RNW 35 TRK 354 UNTIL 820 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FLIBB",
+                    "fixes": {
+                        "FLIBB": "FLIBB LEFT TURN INBOUNDCOURSE 348 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

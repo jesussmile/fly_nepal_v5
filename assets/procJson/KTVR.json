@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "BARNE",
+            "lat": 31.879894433333334,
+            "lon": 90.91886388333333
+        },
+        {
+            "name": "CETEC",
+            "lat": 32.44052778333333,
+            "lon": 91.02926388333333
+        },
+        {
+            "name": "CFBXL",
+            "lat": 32.14517778333333,
+            "lon": 91.02404443333333
+        },
+        {
+            "name": "DEXIW",
+            "lat": 32.556416666666664,
+            "lon": 91.03131943333334
+        },
+        {
+            "name": "HESDO",
+            "lat": 32.383527783333335,
+            "lon": 91.02825278333333
+        },
+        {
+            "name": "JANLU",
+            "lat": 32.32135278333333,
+            "lon": 91.02715278333334
+        },
+        {
+            "name": "TKHNB",
+            "lat": 32.24531666666667,
+            "lon": 91.025825
+        },
+        {
+            "name": "WEJJI",
+            "lat": 32.26266666666667,
+            "lon": 91.02611666666667
+        },
+        {
+            "name": "YAYDI",
+            "lat": 32.14677221666667,
+            "lon": 91.024075
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS36",
+            "fixes": {
+                "CFBXL": "CFBXL AT OR ABOVE 2100",
+                "TKHNB": "TKHNB 2062 RNW 36 TRK 357 UNTIL 1000 TURN LEFT DIRECT TKHNB AT OR ABOVE 2100 HOLD AT TKHNB LEFT TURN INBOUNDCOURSE 357 LEGTIME 1 FAF TKHNB MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "BARNE",
+                    "fixes": {
+                        "BARNE": "BARNE",
+                        "TKHNB": "TKHNB AT OR ABOVE 2100 HOLD AT TKHNB LEFT TURN INBOUNDCOURSE 357 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "DEXIW": "DEXIW AT OR ABOVE 2000",
+                "CETEC": "CETEC 1700",
+                "HESDO": "HESDO AT OR ABOVE 600 RNW 18 TRK 177 UNTIL 480",
+                "YAYDI": "OVERFLY YAYDI AT OR ABOVE 2000 HOLD AT YAYDI RIGHT TURN INBOUNDCOURSE 357 LEGDIST 4 FAF CETEC MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "DEXIW",
+                    "fixes": {
+                        "DEXIW": "DEXIW RIGHT TURN INBOUNDCOURSE 177 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "YAYDI": "YAYDI AT OR ABOVE 2000",
+                "WEJJI": "WEJJI 1700",
+                "JANLU": "JANLU AT OR ABOVE 580 RNW 36 TRK 357 UNTIL 286",
+                "DEXIW": "OVERFLY DEXIW AT OR ABOVE 2000 HOLD AT DEXIW RIGHT TURN INBOUNDCOURSE 177 LEGDIST 4 FAF WEJJI MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "YAYDI",
+                    "fixes": {
+                        "YAYDI": "YAYDI RIGHT TURN INBOUNDCOURSE 357 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

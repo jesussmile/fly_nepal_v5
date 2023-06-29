@@ -1,0 +1,172 @@
+{
+    "fixes": [
+        {
+            "name": "ARKUL",
+            "lat": 53.415075,
+            "lon": 7.356366666666666
+        },
+        {
+            "name": "DOKUV",
+            "lat": 53.367297216666664,
+            "lon": 7.098436116666667
+        },
+        {
+            "name": "EMPIT",
+            "lat": 53.237330566666664,
+            "lon": 7.489380566666667
+        },
+        {
+            "name": "WE121",
+            "lat": 53.352491666666666,
+            "lon": 7.489775
+        },
+        {
+            "name": "WE122",
+            "lat": 53.43203056666667,
+            "lon": 7.448763883333333
+        },
+        {
+            "name": "WE123",
+            "lat": 53.378044433333336,
+            "lon": 7.156077783333333
+        },
+        {
+            "name": "WE124",
+            "lat": 53.44096666666667,
+            "lon": 7.184794433333334
+        },
+        {
+            "name": "WE125",
+            "lat": 53.31485833333333,
+            "lon": 7.373894433333334
+        },
+        {
+            "name": "WE221",
+            "lat": 53.34984721666667,
+            "lon": 7.287166666666667
+        },
+        {
+            "name": "WE222",
+            "lat": 53.45432778333333,
+            "lon": 7.097894433333333
+        },
+        {
+            "name": "WE223",
+            "lat": 53.429525,
+            "lon": 6.964833333333333
+        },
+        {
+            "name": "WE224",
+            "lat": 53.350075,
+            "lon": 7.006313883333333
+        },
+        {
+            "name": "WE225",
+            "lat": 53.420569433333334,
+            "lon": 7.386258333333333
+        },
+        {
+            "name": "WE226",
+            "lat": 53.43963611666667,
+            "lon": 7.308905566666667
+        },
+        {
+            "name": "WE227",
+            "lat": 53.3184,
+            "lon": 7.417347216666666
+        },
+        {
+            "name": "WE303",
+            "lat": 53.37802778333333,
+            "lon": 7.1562222166666665
+        },
+        {
+            "name": "WE304",
+            "lat": 53.44130833333333,
+            "lon": 7.185158333333334
+        },
+        {
+            "name": "WE402",
+            "lat": 53.40158056666667,
+            "lon": 7.282569433333333
+        },
+        {
+            "name": "WE403",
+            "lat": 53.39111388333333,
+            "lon": 7.330047216666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "EMPI2G",
+            "rnw": "25",
+            "fixes": {
+                "WE303": "OVERFLY WE303 TRK 252 UNTIL 700 TURN RIGHT DIRECT",
+                "WE304": "WE304 SPEED 200",
+                "EMPIT": "EMPIT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "EMPI3P",
+            "rnw": "07",
+            "fixes": {
+                "WE402": "OVERFLY WE402 TURN RIGHT DIRECT",
+                "WE403": "WE403",
+                "EMPIT": "EMPIT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVZ07",
+            "fixes": {
+                "WE224": "WE224 AT OR ABOVE 1500",
+                "DOKUV": "DOKUV 1500 RNW 07",
+                "WE225": "OVERFLY WE225 AT OR ABOVE 410 TURN LEFT DIRECT",
+                "WE226": "WE226 SPEED 200",
+                "WE227": "WE227 AT OR ABOVE 3000",
+                "EMPIT": "EMPIT 4000 FAF DOKUV MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "EMPIT",
+                    "fixes": {
+                        "EMPIT": "EMPIT AT OR ABOVE 4000",
+                        "WE221": "WE221 AT OR ABOVE 3000",
+                        "WE222": "WE222 AT OR ABOVE 2000",
+                        "WE223": "WE223 AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ25",
+            "fixes": {
+                "WE122": "WE122 AT OR ABOVE 1500",
+                "ARKUL": "ARKUL 1500 RNW 25",
+                "WE123": "OVERFLY WE123 AT OR ABOVE 410 TURN RIGHT DIRECT",
+                "WE124": "WE124 SPEED 200",
+                "WE125": "WE125 AT OR ABOVE 3000",
+                "EMPIT": "EMPIT 4000 FAF ARKUL MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "EMPIT",
+                    "fixes": {
+                        "EMPIT": "EMPIT AT OR ABOVE 4000",
+                        "WE121": "WE121 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

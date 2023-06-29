@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "GM501",
+            "lat": 2.4238611166666666,
+            "lon": 100.97727778333334
+        },
+        {
+            "name": "GM502",
+            "lat": 2.4603333333333333,
+            "lon": 101.01161111666667
+        },
+        {
+            "name": "GM701",
+            "lat": 2.6578055666666667,
+            "lon": 101.19763888333334
+        },
+        {
+            "name": "GM702",
+            "lat": 2.6213333333333333,
+            "lon": 101.16327778333333
+        },
+        {
+            "name": "KABKO",
+            "lat": 2.6942500000000003,
+            "lon": 101.232
+        },
+        {
+            "name": "LUPRA",
+            "lat": 2.387361116666667,
+            "lon": 100.94294443333334
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "GM501": "GM501 AT OR ABOVE 2500",
+                "GM502": "GM502 2000 RNW 14 TRK 137 UNTIL 1000 TURN RIGHT DIRECT",
+                "LUPRA": "LUPRA AT OR ABOVE 3000 HOLD AT LUPRA RIGHT TURN INBOUNDCOURSE 137 ALT 3000 LEGTIME 1 FAF GM502 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "LUPRA",
+                    "fixes": {
+                        "LUPRA": "LUPRA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "GM701": "GM701 AT OR ABOVE 2500",
+                "GM702": "GM702 2000 RNW 32 TRK 317 UNTIL 1000 TURN LEFT DIRECT",
+                "KABKO": "KABKO AT OR ABOVE 3000 HOLD AT KABKO LEFT TURN INBOUNDCOURSE 317 ALT 3000 LEGTIME 1 FAF GM702 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "KABKO",
+                    "fixes": {
+                        "KABKO": "KABKO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

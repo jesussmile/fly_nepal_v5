@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "AHTIY",
+            "lat": 39.91440278333334,
+            "lon": 80.38478611666666
+        },
+        {
+            "name": "BEALL",
+            "lat": 39.78515278333333,
+            "lon": 81.04319721666667
+        },
+        {
+            "name": "BURGS",
+            "lat": 39.69851666666667,
+            "lon": 80.58638611666666
+        },
+        {
+            "name": "DAHPI",
+            "lat": 39.93380556666666,
+            "lon": 80.64873611666667
+        },
+        {
+            "name": "EWBUF",
+            "lat": 39.996291666666664,
+            "lon": 80.54578056666666
+        },
+        {
+            "name": "JUMSU",
+            "lat": 39.82840556666667,
+            "lon": 80.82165556666666
+        },
+        {
+            "name": "MEHIF",
+            "lat": 39.76345833333333,
+            "lon": 80.92775
+        },
+        {
+            "name": "WISKE",
+            "lat": 40.129136116666665,
+            "lon": 80.67609443333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "MEHIF": "MEHIF AT OR ABOVE 3000",
+                "JUMSU": "JUMSU 2800 RNW 06 TRK 060 UNTIL 1615",
+                "EWBUF": "OVERFLY EWBUF AT OR ABOVE 3100 HOLD AT EWBUF RIGHT TURN INBOUNDCOURSE 240 LEGDIST 4 FAF JUMSU MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "BEALL",
+                    "fixes": {
+                        "BEALL": "BEALL"
+                    }
+                },
+                {
+                    "name": "BURGS",
+                    "fixes": {
+                        "BURGS": "BURGS",
+                        "MEHIF": "OVERFLY MEHIF AT OR ABOVE 3400 HOLD AT MEHIF RIGHT TURN INBOUNDCOURSE 060 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "EWBUF": "EWBUF AT OR ABOVE 3100",
+                "DAHPI": "DAHPI 2800 RNW 24",
+                "MEHIF": "OVERFLY MEHIF AT OR ABOVE 3000 HOLD AT MEHIF RIGHT TURN INBOUNDCOURSE 060 LEGDIST 4 FAF DAHPI MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "AHTIY",
+                    "fixes": {
+                        "AHTIY": "AHTIY"
+                    }
+                },
+                {
+                    "name": "EWBUF",
+                    "fixes": {
+                        "EWBUF": "EWBUF RIGHT TURN INBOUNDCOURSE 240 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WISKE",
+                    "fixes": {
+                        "WISKE": "WISKE"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "18THR",
+            "lat": 35.71081388333333,
+            "lon": 119.21828888333333
+        },
+        {
+            "name": "COREZ",
+            "lat": 35.556666666666665,
+            "lon": 119.48388333333334
+        },
+        {
+            "name": "EHF",
+            "lat": 35.484555566666664,
+            "lon": 119.09729443333333
+        },
+        {
+            "name": "JUTTY",
+            "lat": 35.65740556666667,
+            "lon": 119.18975
+        },
+        {
+            "name": "PI001",
+            "lat": 35.60331685,
+            "lon": 119.16287393333333
+        },
+        {
+            "name": "PI002",
+            "lat": 35.537342433333336,
+            "lon": 119.19728603333333
+        },
+        {
+            "name": "PI003",
+            "lat": 35.502850583333334,
+            "lon": 119.11305746666666
+        },
+        {
+            "name": "STEBN",
+            "lat": 35.58090833333333,
+            "lon": 119.14888056666666
+        },
+        {
+            "name": "TTE",
+            "lat": 35.91305,
+            "lon": 119.02080833333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS32",
+            "fixes": {
+                "STEBN": "STEBN AT OR ABOVE 2600",
+                "JUTTY": "JUTTY 2000",
+                "18THR": "18THR AT OR ABOVE 920 RNW 32 TRK 320 UNTIL 716",
+                "TTE": "TTE AT OR ABOVE 3000 HOLD AT TTE LEFT TURN INBOUNDCOURSE 029 LEGTIME 1 FAF JUTTY MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "COREZ",
+                    "fixes": {
+                        "COREZ": "COREZ",
+                        "STEBN": "STEBN AT OR ABOVE 2600 HOLD AT STEBN LEFT TURN INBOUNDCOURSE 320 ALT 2600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "EHF",
+                    "fixes": {
+                        "EHF": "EHF"
+                    }
+                },
+                {
+                    "name": "TTE",
+                    "fixes": {
+                        "TTE": "TTE",
+                        "STEBN": "STEBN AT OR ABOVE 2800 HOLD AT STEBN LEFT TURN INBOUNDCOURSE 320 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR32",
+            "fixes": {
+                "JUTTY": "JUTTY 2000 RNW 32 TRK 322 UNTIL 716 TURN RIGHT DIRECT JUTTY AT OR ABOVE 2000 HOLD AT JUTTY LEFT TURN INBOUNDCOURSE 322 LEGTIME 1 FAF JUTTY MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "EHF",
+                    "fixes": {
+                        "EHF": "EHF"
+                    }
+                },
+                {
+                    "name": "TTE",
+                    "fixes": {
+                        "TTE": "TTE",
+                        "JUTTY": "JUTTY AT OR ABOVE 2600",
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

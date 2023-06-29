@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "CANKI",
+            "lat": 41.558180566666664,
+            "lon": 122.48639166666666
+        },
+        {
+            "name": "DIMGE",
+            "lat": 41.61298611666667,
+            "lon": 122.47695833333333
+        },
+        {
+            "name": "EHPUG",
+            "lat": 41.78326943333333,
+            "lon": 122.51841943333334
+        },
+        {
+            "name": "FOBRO",
+            "lat": 41.956925,
+            "lon": 122.61593056666666
+        },
+        {
+            "name": "GRENA",
+            "lat": 41.72536388333333,
+            "lon": 122.48603333333334
+        },
+        {
+            "name": "HIVEG",
+            "lat": 41.84116388333333,
+            "lon": 122.55086388333334
+        },
+        {
+            "name": "ISAVE",
+            "lat": 41.89652221666667,
+            "lon": 122.42513611666666
+        },
+        {
+            "name": "KLAMA",
+            "lat": 42.188327783333335,
+            "lon": 122.74676943333333
+        },
+        {
+            "name": "ZIXIB",
+            "lat": 41.497936116666665,
+            "lon": 122.46377221666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "FOBRO1",
+            "rnw": "32",
+            "fixes": {
+                "DIMGE": "DIMGE",
+                "FOBRO": "FOBRO AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "DIMGE": "DIMGE AT OR ABOVE 5100",
+                "CANKI": "CANKI 4600",
+                "ZIXIB": "OVERFLY ZIXIB 3206 RNW 14 TRK 150 UNTIL 3343 TURN LEFT DIRECT",
+                "GRENA": "GRENA AT OR ABOVE 9100 SPEED 185",
+                "ISAVE": "ISAVE",
+                "KLAMA": "OVERFLY KLAMA AT OR ABOVE 9100 HOLD AT KLAMA RIGHT TURN INBOUNDCOURSE 143 LEGDIST 7 FAF CANKI MAP ZIXIB"
+            },
+            "transitions": [
+                {
+                    "name": "KLAMA",
+                    "fixes": {
+                        "KLAMA": "KLAMA",
+                        "FOBRO": "FOBRO AT OR ABOVE 9700",
+                        "HIVEG": "HIVEG AT OR ABOVE 8000",
+                        "EHPUG": "EHPUG AT OR ABOVE 7400",
+                        "GRENA": "GRENA AT OR ABOVE 6700"
+                    }
+                }
+            ]
+        }
+    ]
+}

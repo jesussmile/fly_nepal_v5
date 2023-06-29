@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "FINOS",
+            "lat": 30.874661116666665,
+            "lon": 89.53577778333333
+        },
+        {
+            "name": "ISOPE",
+            "lat": 30.954519433333335,
+            "lon": 89.56415278333333
+        },
+        {
+            "name": "KAKME",
+            "lat": 30.698863883333335,
+            "lon": 89.47348611666666
+        },
+        {
+            "name": "RISNE",
+            "lat": 30.618983333333333,
+            "lon": 89.44525833333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA16",
+            "fixes": {
+                "ISOPE": "ISOPE AT OR ABOVE 2100",
+                "FINOS": "FINOS 2000 RNW 16 TRK 165 UNTIL 720",
+                "RISNE": "OVERFLY RISNE AT OR ABOVE 2000 HOLD AT RISNE RIGHT TURN INBOUNDCOURSE 345 LEGDIST 4 FAF FINOS MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "ISOPE",
+                    "fixes": {
+                        "ISOPE": "ISOPE RIGHT TURN INBOUNDCOURSE 165 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB34",
+            "fixes": {
+                "RISNE": "RISNE AT OR ABOVE 2000",
+                "KAKME": "KAKME 2000 RNW 34 TRK 345 UNTIL 720",
+                "ISOPE": "OVERFLY ISOPE AT OR ABOVE 2100 HOLD AT ISOPE RIGHT TURN INBOUNDCOURSE 165 LEGDIST 4 FAF KAKME MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "RISNE",
+                    "fixes": {
+                        "RISNE": "RISNE RIGHT TURN INBOUNDCOURSE 345 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

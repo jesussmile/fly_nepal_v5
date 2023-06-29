@@ -1,0 +1,166 @@
+{
+    "fixes": [
+        {
+            "name": "ALVEL",
+            "lat": 69.570875,
+            "lon": 93.61561111666667
+        },
+        {
+            "name": "AVPUM",
+            "lat": 69.47886943333333,
+            "lon": 93.469575
+        },
+        {
+            "name": "BOTUK",
+            "lat": 69.621725,
+            "lon": 93.69694443333333
+        },
+        {
+            "name": "DUMLI",
+            "lat": 69.61436666666667,
+            "lon": 93.68515
+        },
+        {
+            "name": "EMEPA",
+            "lat": 69.52241943333334,
+            "lon": 93.53851943333333
+        },
+        {
+            "name": "EN15",
+            "lat": 69.554475,
+            "lon": 93.57856388333333
+        },
+        {
+            "name": "FN15",
+            "lat": 69.60132221666667,
+            "lon": 93.77115
+        },
+        {
+            "name": "GONOM",
+            "lat": 69.70861388333333,
+            "lon": 93.836975
+        },
+        {
+            "name": "IPTIK",
+            "lat": 69.422975,
+            "lon": 93.11231666666667
+        },
+        {
+            "name": "KELRU",
+            "lat": 69.46993888333333,
+            "lon": 93.45547778333334
+        },
+        {
+            "name": "LERIB",
+            "lat": 69.74885833333333,
+            "lon": 93.62760556666667
+        },
+        {
+            "name": "ONBUR",
+            "lat": 69.38274443333333,
+            "lon": 93.31854166666666
+        },
+        {
+            "name": "PI001",
+            "lat": 69.59518948333333,
+            "lon": 93.5909211
+        },
+        {
+            "name": "PI002",
+            "lat": 69.66185318333333,
+            "lon": 93.51534876666666
+        },
+        {
+            "name": "PI003",
+            "lat": 69.69482308333333,
+            "lon": 93.71320731666667
+        },
+        {
+            "name": "PUPOR",
+            "lat": 69.66812221666666,
+            "lon": 94.04555
+        },
+        {
+            "name": "UKSEN",
+            "lat": 69.34227221666667,
+            "lon": 93.52399721666667
+        },
+        {
+            "name": "YYHNB",
+            "lat": 69.54150556666667,
+            "lon": 93.52554721666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB15",
+            "fixes": {
+                "FN15": "FN15 1700",
+                "EN15": "OVERFLY EN15 140",
+                "YYHNB": "OVERFLY YYHNB AT OR ABOVE 490 RNW 15 TRK 014 UNTIL 2000 TURN RIGHT DIRECT YYHNB 2000 HOLD AT YYHNB LEFT TURN INBOUNDCOURSE 014 LEGTIME 1 FAF FN15 MAP YYH"
+            },
+            "transitions": [
+                {
+                    "name": "YYH",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "GONOM": "GONOM AT OR ABOVE 1700",
+                "BOTUK": "BOTUK 1700 RNW 15",
+                "EMEPA": "EMEPA",
+                "AVPUM": "OVERFLY AVPUM 2100 HOLD AT AVPUM RIGHT TURN INBOUNDCOURSE 017 LEGTIME 1 FAF BOTUK MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "LERIB",
+                    "fixes": {
+                        "LERIB": "LERIB"
+                    }
+                },
+                {
+                    "name": "PUPOR",
+                    "fixes": {
+                        "PUPOR": "PUPOR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ONBUR": "ONBUR AT OR ABOVE 1700",
+                "KELRU": "KELRU 1700 RNW 33",
+                "ALVEL": "ALVEL",
+                "DUMLI": "OVERFLY DUMLI 2000 HOLD AT DUMLI RIGHT TURN INBOUNDCOURSE 035 LEGTIME 1 FAF KELRU MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "IPTIK",
+                    "fixes": {
+                        "IPTIK": "IPTIK"
+                    }
+                },
+                {
+                    "name": "UKSEN",
+                    "fixes": {
+                        "UKSEN": "UKSEN"
+                    }
+                }
+            ]
+        }
+    ]
+}

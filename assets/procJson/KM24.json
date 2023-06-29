@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "GABRY",
+            "lat": 30.718147216666665,
+            "lon": 89.18013333333333
+        },
+        {
+            "name": "KADDO",
+            "lat": 30.749458333333333,
+            "lon": 89.148425
+        },
+        {
+            "name": "MEGGY",
+            "lat": 30.933008333333333,
+            "lon": 89.1831
+        },
+        {
+            "name": "OLSSN",
+            "lat": 31.064125,
+            "lon": 89.2724
+        },
+        {
+            "name": "YAHTI",
+            "lat": 30.634908333333332,
+            "lon": 89.13244166666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "OLSSN": "OLSSN AT OR ABOVE 3000",
+                "MEGGY": "MEGGY 2000 RNW 17 TRK 170 UNTIL 673",
+                "GABRY": "OVERFLY GABRY AT OR ABOVE 3000 HOLD AT GABRY RIGHT TURN INBOUNDCOURSE 065 ALT 3000 LEGDIST 4 FAF MEGGY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "OLSSN",
+                    "fixes": {
+                        "OLSSN": "OLSSN RIGHT TURN INBOUNDCOURSE 152 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "YAHTI": "YAHTI AT OR ABOVE 2300",
+                "KADDO": "KADDO 2000 RNW 35 TRK 355 UNTIL 800 TURN LEFT DIRECT",
+                "GABRY": "OVERFLY GABRY AT OR ABOVE 3000 HOLD AT GABRY RIGHT TURN INBOUNDCOURSE 065 ALT 3000 LEGDIST 4 FAF KADDO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "YAHTI",
+                    "fixes": {
+                        "YAHTI": "YAHTI RIGHT TURN INBOUNDCOURSE 355 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

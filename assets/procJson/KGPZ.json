@@ -1,0 +1,262 @@
+{
+    "fixes": [
+        {
+            "name": "ADIER",
+            "lat": 47.027683333333336,
+            "lon": 93.44306388333334
+        },
+        {
+            "name": "AF001",
+            "lat": 47.10501516666667,
+            "lon": 93.34049383333333
+        },
+        {
+            "name": "AF002",
+            "lat": 47.08530858333334,
+            "lon": 93.36160313333333
+        },
+        {
+            "name": "AF003",
+            "lat": 47.069014966666664,
+            "lon": 93.38825321666667
+        },
+        {
+            "name": "AF004",
+            "lat": 47.04741548333333,
+            "lon": 93.50683046666667
+        },
+        {
+            "name": "AF005",
+            "lat": 47.04821101666667,
+            "lon": 93.46214856666667
+        },
+        {
+            "name": "APUNY",
+            "lat": 47.291225,
+            "lon": 93.54203888333333
+        },
+        {
+            "name": "DIKKA",
+            "lat": 47.12383333333333,
+            "lon": 93.47904443333333
+        },
+        {
+            "name": "DMMWT",
+            "lat": 46.97868056666667,
+            "lon": 93.39140278333333
+        },
+        {
+            "name": "EMIDY",
+            "lat": 47.39280556666667,
+            "lon": 93.58045
+        },
+        {
+            "name": "GPZ",
+            "lat": 47.16344443333333,
+            "lon": 93.48893333333334
+        },
+        {
+            "name": "LASNY",
+            "lat": 47.048022216666666,
+            "lon": 93.45069443333334
+        },
+        {
+            "name": "MAZPI",
+            "lat": 47.120080566666665,
+            "lon": 93.33000556666667
+        },
+        {
+            "name": "MEBGY",
+            "lat": 47.05753611666667,
+            "lon": 93.55950556666667
+        },
+        {
+            "name": "NEBBS",
+            "lat": 46.901747216666664,
+            "lon": 93.4731
+        },
+        {
+            "name": "OLMEC",
+            "lat": 47.053866666666664,
+            "lon": 93.43081388333333
+        },
+        {
+            "name": "ORTUC",
+            "lat": 47.37198888333333,
+            "lon": 93.69918888333333
+        },
+        {
+            "name": "PI001",
+            "lat": 47.06723088333333,
+            "lon": 93.45832606666667
+        },
+        {
+            "name": "PI002",
+            "lat": 47.03028445,
+            "lon": 93.36820095
+        },
+        {
+            "name": "PI003",
+            "lat": 46.96210216666667,
+            "lon": 93.41996556666666
+        },
+        {
+            "name": "PI004",
+            "lat": 47.110149,
+            "lon": 93.45407201666667
+        },
+        {
+            "name": "PI005",
+            "lat": 47.08442393333333,
+            "lon": 93.35581286666667
+        },
+        {
+            "name": "PI006",
+            "lat": 47.01114376666666,
+            "lon": 93.38951443333333
+        },
+        {
+            "name": "SQEAK",
+            "lat": 47.86971388333333,
+            "lon": 93.447375
+        },
+        {
+            "name": "YOBRI",
+            "lat": 47.275788883333334,
+            "lon": 93.89671388333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 16",
+        "RNW 23",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS34",
+            "fixes": {
+                "LASNY": "LASNY AT OR ABOVE 3100",
+                "DIKKA": "DIKKA 2900 RNW 34 TRK 344 UNTIL 3100 TURN RIGHT DIRECT",
+                "GPZ": "GPZ HOLD AT GPZ RIGHT TURN INBOUNDCOURSE 334 LEGTIME 1 FAF DIKKA MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GPZ",
+                    "fixes": {
+                        "GPZ": "GPZ",
+                        "DIKKA": "DIKKA AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "NEBBS",
+                    "fixes": {
+                        "NEBBS": "NEBBS HDG 029 INTERCEPT RADIAL 344 TO",
+                        "LASNY": "LASNY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "EMIDY": "EMIDY AT OR ABOVE 3000",
+                "APUNY": "APUNY 2900 RNW 16",
+                "ADIER": "OVERFLY ADIER AT OR ABOVE 2900 HOLD AT ADIER RIGHT TURN INBOUNDCOURSE 344 LEGDIST 4 FAF APUNY MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "GPZ",
+                    "fixes": {
+                        "GPZ": "GPZ",
+                        "EMIDY": "OVERFLY EMIDY AT OR ABOVE 3000 HOLD AT EMIDY RIGHT TURN INBOUNDCOURSE 164 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SQEAK",
+                    "fixes": {
+                        "SQEAK": "SQEAK"
+                    }
+                },
+                {
+                    "name": "YOBRI",
+                    "fixes": {
+                        "YOBRI": "YOBRI",
+                        "ORTUC": "ORTUC AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "ADIER": "ADIER AT OR ABOVE 2900",
+                "DIKKA": "DIKKA 2900 RNW 34 TRK 344 UNTIL 1556",
+                "EMIDY": "OVERFLY EMIDY AT OR ABOVE 3000 HOLD AT EMIDY RIGHT TURN INBOUNDCOURSE 164 LEGDIST 4 FAF DIKKA MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GPZ",
+                    "fixes": {
+                        "GPZ": "GPZ",
+                        "ADIER": "OVERFLY ADIER AT OR ABOVE 2900 HOLD AT ADIER RIGHT TURN INBOUNDCOURSE 344 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NEBBS",
+                    "fixes": {
+                        "NEBBS": "NEBBS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR34",
+            "fixes": {
+                "GPZ": "GPZ 2200 RNW 34 TRK 334 UNTIL 3100 TURN RIGHT DIRECT GPZ HOLD AT GPZ RIGHT TURN INBOUNDCOURSE 334 LEGTIME 1 FAF GPZ MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GPZ",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MAZPI",
+                    "fixes": {
+                        "MAZPI": "MAZPI",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "OLMEC": "OLMEC AT OR ABOVE 2900"
+                    }
+                },
+                {
+                    "name": "MEBGY",
+                    "fixes": {
+                        "MEBGY": "MEBGY",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "OLMEC": "OLMEC AT OR ABOVE 2900"
+                    }
+                },
+                {
+                    "name": "NEBBS",
+                    "fixes": {
+                        "NEBBS": "NEBBS",
+                        "DMMWT": "DMMWT AT OR ABOVE 3100",
+                        "OLMEC": "OLMEC AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        }
+    ]
+}

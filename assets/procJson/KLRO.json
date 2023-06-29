@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "CHS",
+            "lat": 32.89431943333334,
+            "lon": 80.03781388333333
+        },
+        {
+            "name": "CUBBY",
+            "lat": 33.15379166666666,
+            "lon": 79.67201943333333
+        },
+        {
+            "name": "EDNAH",
+            "lat": 32.819525,
+            "lon": 79.76143056666666
+        },
+        {
+            "name": "FESJY",
+            "lat": 32.981125,
+            "lon": 79.80569166666666
+        },
+        {
+            "name": "FETIP",
+            "lat": 32.89654443333333,
+            "lon": 79.87947778333333
+        },
+        {
+            "name": "GINNE",
+            "lat": 33.12587778333334,
+            "lon": 79.97280278333334
+        },
+        {
+            "name": "GIYEG",
+            "lat": 32.94184166666667,
+            "lon": 79.79491666666667
+        },
+        {
+            "name": "HEFKA",
+            "lat": 32.85220556666667,
+            "lon": 79.77036666666666
+        },
+        {
+            "name": "JOGLI",
+            "lat": 33.081755566666665,
+            "lon": 79.83333611666667
+        },
+        {
+            "name": "MACVI",
+            "lat": 32.897788883333334,
+            "lon": 79.78412778333333
+        },
+        {
+            "name": "UTACU",
+            "lat": 32.720402783333334,
+            "lon": 79.73436111666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA17",
+            "fixes": {
+                "CHS": "CHS AT OR ABOVE 3000 CHS AT OR ABOVE 3000 HOLD AT CHS RIGHT TURN INBOUNDCOURSE 094 LEGTIME 1 FAF FETIP MAP MACVI",
+                "FETIP": "FETIP 1600",
+                "MACVI": "OVERFLY MACVI 640 RNW 17 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CHS",
+                    "fixes": {
+                        "CHS": "CHS RIGHT TURN INBOUNDCOURSE 094 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA35",
+            "fixes": {
+                "CHS": "CHS AT OR ABOVE 3000 CHS AT OR ABOVE 3000 HOLD AT CHS RIGHT TURN INBOUNDCOURSE 094 LEGTIME 1 FAF FETIP MAP MACVI",
+                "FETIP": "FETIP 1600",
+                "MACVI": "OVERFLY MACVI 640 RNW 35 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CHS",
+                    "fixes": {
+                        "CHS": "CHS RIGHT TURN INBOUNDCOURSE 094 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "JOGLI": "JOGLI AT OR ABOVE 2000",
+                "FESJY": "FESJY 1600",
+                "GIYEG": "GIYEG AT OR ABOVE 800 RNW 17 TRK 174 UNTIL 306",
+                "UTACU": "OVERFLY UTACU AT OR ABOVE 3000 HOLD AT UTACU RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF FESJY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CUBBY",
+                    "fixes": {
+                        "CUBBY": "CUBBY"
+                    }
+                },
+                {
+                    "name": "GINNE",
+                    "fixes": {
+                        "GINNE": "GINNE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "UTACU": "UTACU AT OR ABOVE 3000",
+                "EDNAH": "EDNAH 1500",
+                "HEFKA": "HEFKA AT OR ABOVE 840 RNW 35 TRK 354 UNTIL 360",
+                "JOGLI": "OVERFLY JOGLI AT OR ABOVE 3000 HOLD AT JOGLI LEFT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF EDNAH MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CUBBY",
+                    "fixes": {
+                        "CUBBY": "CUBBY",
+                        "UTACU": "OVERFLY UTACU AT OR ABOVE 3100 HOLD AT UTACU RIGHT TURN INBOUNDCOURSE 354 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GINNE",
+                    "fixes": {
+                        "GINNE": "GINNE",
+                        "JOGLI": "JOGLI AT OR ABOVE 3000",
+                        "UTACU": "OVERFLY UTACU AT OR ABOVE 3000 HOLD AT UTACU RIGHT TURN INBOUNDCOURSE 354 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

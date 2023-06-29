@@ -1,0 +1,209 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 31.556550866666665,
+            "lon": 90.3600869
+        },
+        {
+            "name": "AF002",
+            "lat": 31.514445333333335,
+            "lon": 90.45078283333334
+        },
+        {
+            "name": "AF003",
+            "lat": 31.449423633333332,
+            "lon": 90.52035866666667
+        },
+        {
+            "name": "CEVDA",
+            "lat": 31.571161116666666,
+            "lon": 90.23833056666666
+        },
+        {
+            "name": "D285P",
+            "lat": 31.38669721666667,
+            "lon": 90.55448888333333
+        },
+        {
+            "name": "EGPEW",
+            "lat": 31.226855566666668,
+            "lon": 90.39195556666667
+        },
+        {
+            "name": "FERNI",
+            "lat": 31.254011116666668,
+            "lon": 90.51169443333333
+        },
+        {
+            "name": "GLADS",
+            "lat": 30.999427783333335,
+            "lon": 90.37778056666667
+        },
+        {
+            "name": "GOBTY",
+            "lat": 31.406205566666667,
+            "lon": 90.59214166666666
+        },
+        {
+            "name": "JOTIX",
+            "lat": 31.258494433333333,
+            "lon": 90.51405833333334
+        },
+        {
+            "name": "MAGNT",
+            "lat": 31.097577783333332,
+            "lon": 90.42931943333333
+        },
+        {
+            "name": "MAHCE",
+            "lat": 31.180513883333333,
+            "lon": 90.47161943333333
+        },
+        {
+            "name": "MCB",
+            "lat": 31.304452783333332,
+            "lon": 90.25820278333333
+        },
+        {
+            "name": "PI001",
+            "lat": 31.307298283333335,
+            "lon": 90.53946423333333
+        },
+        {
+            "name": "PI002",
+            "lat": 31.374201366666668,
+            "lon": 90.50938286666667
+        },
+        {
+            "name": "PI003",
+            "lat": 31.40624426666667,
+            "lon": 90.59112015
+        },
+        {
+            "name": "TUMMI",
+            "lat": 31.353530566666667,
+            "lon": 90.56426666666667
+        },
+        {
+            "name": "UGIYI",
+            "lat": 31.213583333333332,
+            "lon": 90.49037778333333
+        },
+        {
+            "name": "YENTA",
+            "lat": 31.146305566666665,
+            "lon": 90.45494721666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA16",
+            "fixes": {
+                "MCB": "MCB AT OR ABOVE 2000 MCB AT OR ABOVE 2000 HOLD AT MCB RIGHT TURN INBOUNDCOURSE 233 LEGTIME 1 FAF EGPEW MAP MAHCE",
+                "EGPEW": "EGPEW 1500",
+                "MAHCE": "MAHCE 1160 RNW 16 TRK 233 UNTIL 1160 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MCB",
+                    "fixes": {
+                        "MCB": "MCB RIGHT TURN INBOUNDCOURSE 233 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA34",
+            "fixes": {
+                "MCB": "MCB AT OR ABOVE 2000 MCB AT OR ABOVE 2000 HOLD AT MCB RIGHT TURN INBOUNDCOURSE 233 LEGTIME 1 FAF EGPEW MAP MAHCE",
+                "EGPEW": "EGPEW 1500",
+                "MAHCE": "MAHCE 1160 RNW 34 TRK 233 UNTIL 1160 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MCB",
+                    "fixes": {
+                        "MCB": "MCB RIGHT TURN INBOUNDCOURSE 233 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS16",
+            "fixes": {
+                "TUMMI": "TUMMI AT OR ABOVE 2300",
+                "FERNI": "FERNI 1927 RNW 16 TRK 157 UNTIL 1000 TURN LEFT DIRECT",
+                "MCB": "MCB AT OR ABOVE 2000 HOLD AT MCB RIGHT TURN INBOUNDCOURSE 232 LEGTIME 1 FAF FERNI MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CEVDA",
+                    "fixes": {
+                        "CEVDA": "CEVDA",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D285P": "D285P AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "GOBTY",
+                    "fixes": {
+                        "GOBTY": "GOBTY"
+                    }
+                },
+                {
+                    "name": "MCB",
+                    "fixes": {
+                        "MCB": "MCB",
+                        "FERNI": "FERNI AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "TUMMI": "TUMMI AT OR ABOVE 3000",
+                "JOTIX": "JOTIX 2000",
+                "UGIYI": "UGIYI AT OR ABOVE 1060 RNW 16 TRK 157 UNTIL 615",
+                "GLADS": "OVERFLY GLADS AT OR ABOVE 3000 HOLD AT GLADS RIGHT TURN INBOUNDCOURSE 337 LEGDIST 4 FAF JOTIX MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "TUMMI",
+                    "fixes": {
+                        "TUMMI": "TUMMI RIGHT TURN INBOUNDCOURSE 157 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "GLADS": "GLADS AT OR ABOVE 3000",
+                "MAGNT": "MAGNT 2000",
+                "YENTA": "YENTA AT OR ABOVE 980 RNW 34 TRK 337 UNTIL 606",
+                "TUMMI": "OVERFLY TUMMI AT OR ABOVE 3000 HOLD AT TUMMI RIGHT TURN INBOUNDCOURSE 157 LEGDIST 4 FAF MAGNT MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GLADS",
+                    "fixes": {
+                        "GLADS": "GLADS RIGHT TURN INBOUNDCOURSE 337 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

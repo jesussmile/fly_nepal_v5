@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "APIGE",
+            "lat": 43.94126943333333,
+            "lon": 90.60145
+        },
+        {
+            "name": "DOLSE",
+            "lat": 43.9569,
+            "lon": 90.54748888333333
+        },
+        {
+            "name": "FIDPA",
+            "lat": 44.007266666666666,
+            "lon": 90.37284443333333
+        },
+        {
+            "name": "FOSAT",
+            "lat": 43.910175,
+            "lon": 90.70843333333333
+        },
+        {
+            "name": "GLAKE",
+            "lat": 44.03804443333333,
+            "lon": 90.26551111666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "FOSAT": "FOSAT AT OR ABOVE 3000",
+                "APIGE": "APIGE 2700",
+                "DOLSE": "DOLSE AT OR ABOVE 1880 RNW 07 TRK 068 UNTIL 1366",
+                "GLAKE": "OVERFLY GLAKE AT OR ABOVE 3000 HOLD AT GLAKE RIGHT TURN INBOUNDCOURSE 248 LEGDIST 4 FAF APIGE MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "FOSAT",
+                    "fixes": {
+                        "FOSAT": "FOSAT RIGHT TURN INBOUNDCOURSE 068 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "GLAKE": "GLAKE AT OR ABOVE 3000",
+                "FIDPA": "FIDPA 2500 RNW 25 TRK 248 UNTIL 1366",
+                "FOSAT": "OVERFLY FOSAT AT OR ABOVE 3000 HOLD AT FOSAT RIGHT TURN INBOUNDCOURSE 068 LEGDIST 4 FAF FIDPA MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "GLAKE",
+                    "fixes": {
+                        "GLAKE": "GLAKE RIGHT TURN INBOUNDCOURSE 248 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

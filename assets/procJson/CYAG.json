@@ -1,0 +1,167 @@
+{
+    "fixes": [
+        {
+            "name": "AGNOT",
+            "lat": 48.69941111666667,
+            "lon": 93.5351
+        },
+        {
+            "name": "DEDVU",
+            "lat": 48.602119433333336,
+            "lon": 93.3311
+        },
+        {
+            "name": "DUVUG",
+            "lat": 48.824361116666665,
+            "lon": 93.58269443333333
+        },
+        {
+            "name": "IKLOB",
+            "lat": 48.609327783333335,
+            "lon": 93.34617221666667
+        },
+        {
+            "name": "IMIBO",
+            "lat": 48.68888333333334,
+            "lon": 93.72918333333334
+        },
+        {
+            "name": "INL",
+            "lat": 48.56579721666667,
+            "lon": 93.40567778333333
+        },
+        {
+            "name": "KEGBO",
+            "lat": 48.62089721666667,
+            "lon": 93.15601943333333
+        },
+        {
+            "name": "KETVA",
+            "lat": 48.756647216666664,
+            "lon": 93.65603611666667
+        },
+        {
+            "name": "MA342",
+            "lat": 48.65079721666667,
+            "lon": 93.43303611666667
+        },
+        {
+            "name": "OMERU",
+            "lat": 48.69846666666667,
+            "lon": 93.53323888333334
+        },
+        {
+            "name": "PI001",
+            "lat": 48.5100099,
+            "lon": 93.37993393333333
+        },
+        {
+            "name": "PI002",
+            "lat": 48.47632496666667,
+            "lon": 93.28448196666666
+        },
+        {
+            "name": "PI003",
+            "lat": 48.406389716666666,
+            "lon": 93.33227401666667
+        },
+        {
+            "name": "VESMO",
+            "lat": 48.614983333333335,
+            "lon": 93.42148888333334
+        },
+        {
+            "name": "XOTOK",
+            "lat": 48.553336116666664,
+            "lon": 93.22939443333334
+        },
+        {
+            "name": "XOVOX",
+            "lat": 48.674508333333335,
+            "lon": 93.48283333333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA12",
+            "fixes": {
+                "INL": "INL AT OR ABOVE 3000 INL 3000 HOLD AT INL RIGHT TURN INBOUNDCOURSE 342 LEGTIME 1 FAF VESMO MAP MA342",
+                "VESMO": "VESMO 2100",
+                "MA342": "MA342 1820 RNW 12 TRK 342 UNTIL 3000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "INL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA30",
+            "fixes": {
+                "INL": "INL AT OR ABOVE 3000 INL 3000 HOLD AT INL RIGHT TURN INBOUNDCOURSE 342 LEGTIME 1 FAF VESMO MAP MA342",
+                "VESMO": "VESMO 2100",
+                "MA342": "MA342 1820 RNW 30 TRK 342 UNTIL 3000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "INL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "KETVA": "KETVA AT OR ABOVE 2700",
+                "OMERU": "OMERU 2500",
+                "XOVOX": "XOVOX AT OR ABOVE 1710 RNW 12",
+                "IKLOB": "OVERFLY IKLOB 3000 HOLD AT IKLOB RIGHT TURN INBOUNDCOURSE 125 LEGTIME 1 FAF OMERU MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "DUVUG",
+                    "fixes": {
+                        "DUVUG": "DUVUG SPEED 210"
+                    }
+                },
+                {
+                    "name": "IMIBO",
+                    "fixes": {
+                        "IMIBO": "IMIBO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "XOTOK": "XOTOK AT OR ABOVE 2800",
+                "DEDVU": "DEDVU 2760 RNW 30",
+                "AGNOT": "OVERFLY AGNOT 3000 HOLD AT AGNOT RIGHT TURN INBOUNDCOURSE 305 SPEED 200 LEGTIME 1 FAF DEDVU MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "KEGBO",
+                    "fixes": {
+                        "KEGBO": "KEGBO"
+                    }
+                }
+            ]
+        }
+    ]
+}

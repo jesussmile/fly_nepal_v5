@@ -1,0 +1,181 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 27.330089033333334,
+            "lon": 64.77776365
+        },
+        {
+            "name": "AF002",
+            "lat": 27.304527366666665,
+            "lon": 64.82112663333334
+        },
+        {
+            "name": "AF003",
+            "lat": 27.287706383333333,
+            "lon": 64.86959045
+        },
+        {
+            "name": "CD01",
+            "lat": 27.645227783333333,
+            "lon": 64.96003333333333
+        },
+        {
+            "name": "CD19",
+            "lat": 27.34645,
+            "lon": 64.942425
+        },
+        {
+            "name": "CF01",
+            "lat": 27.647016666666666,
+            "lon": 64.94365278333333
+        },
+        {
+            "name": "D011M",
+            "lat": 27.28021388333333,
+            "lon": 64.91241666666667
+        },
+        {
+            "name": "D060M",
+            "lat": 27.368816666666667,
+            "lon": 64.73671943333333
+        },
+        {
+            "name": "FD01",
+            "lat": 27.620469433333334,
+            "lon": 64.955625
+        },
+        {
+            "name": "FD19",
+            "lat": 27.371486116666667,
+            "lon": 64.94095833333333
+        },
+        {
+            "name": "FF01",
+            "lat": 27.621972216666666,
+            "lon": 64.94236943333334
+        },
+        {
+            "name": "FS01",
+            "lat": 27.612213883333332,
+            "lon": 64.95415556666667
+        },
+        {
+            "name": "FS19",
+            "lat": 27.379830566666666,
+            "lon": 64.94046943333333
+        },
+        {
+            "name": "MD01",
+            "lat": 27.521427783333333,
+            "lon": 64.93800833333333
+        },
+        {
+            "name": "MD19",
+            "lat": 27.47163056666667,
+            "lon": 64.93508056666667
+        },
+        {
+            "name": "TRH",
+            "lat": 27.496758333333332,
+            "lon": 64.93371666666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD01",
+            "fixes": {
+                "CD01": "CD01 AT OR ABOVE 3100",
+                "FD01": "FD01 3100",
+                "MD01": "MD01 1221 RNW 01 HDG 015 UNTIL 4000 TURN RIGHT DIRECT",
+                "TRH": "TRH FAF FD01 MAP MD01"
+            },
+            "transitions": [
+                {
+                    "name": "TRH",
+                    "fixes": {
+                        "TRH": "TRH TRK 210 UNTIL 9.0 FROM TRH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD19",
+            "fixes": {
+                "CD19": "CD19 AT OR ABOVE 3100",
+                "FD19": "FD19 3100",
+                "MD19": "MD19 1232 RNW 19 HDG 183 UNTIL 4000 TURN LEFT DIRECT",
+                "TRH": "TRH FAF FD19 MAP MD19"
+            },
+            "transitions": [
+                {
+                    "name": "D060M",
+                    "fixes": {
+                        "D060M": "D060M",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D011M": "D011M AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "TRH",
+                    "fixes": {
+                        "TRH": "TRH TRK 348 UNTIL 9.0 FROM TRH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS01",
+            "fixes": {
+                "CF01": "CF01 AT OR ABOVE 3200",
+                "FF01": "FF01 3200 RNW 01 TRK 009 UNTIL 1320 HDG 010 VECTORS FAF FF01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "TRH",
+                    "fixes": {
+                        "TRH": "TRH TRK 206 UNTIL 9.0 FROM TRH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR01",
+            "fixes": {
+                "FS01": "FS01 3100 RNW 01",
+                "TRH": "OVERFLY TRH HDG 015 UNTIL 4000 TURN RIGHT DIRECT TRH FAF FS01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "TRH",
+                    "fixes": {
+                        "TRH": "TRH TRK 212 UNTIL 7.5 FROM TRH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR19",
+            "fixes": {
+                "FS19": "FS19 3100 RNW 19",
+                "TRH": "OVERFLY TRH HDG 183 UNTIL 4000 TURN LEFT DIRECT TRH FAF FS19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "TRH",
+                    "fixes": {
+                        "TRH": "TRH TRK 346 UNTIL 7.5 FROM TRH"
+                    }
+                }
+            ]
+        }
+    ]
+}

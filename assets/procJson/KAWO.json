@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "AW",
+            "lat": 48.07611943333333,
+            "lon": 122.15391111666666
+        },
+        {
+            "name": "PAE",
+            "lat": 47.91983333333334,
+            "lon": 122.2778
+        },
+        {
+            "name": "PI001",
+            "lat": 48.01779498333333,
+            "lon": 122.15238911666667
+        },
+        {
+            "name": "PI002",
+            "lat": 47.96621828333333,
+            "lon": 122.22674123333333
+        },
+        {
+            "name": "PI003",
+            "lat": 47.90947808333333,
+            "lon": 122.14957168333333
+        },
+        {
+            "name": "SAVOY",
+            "lat": 47.97553333333333,
+            "lon": 122.15199166666666
+        },
+        {
+            "name": "WATON",
+            "lat": 48.07611943333333,
+            "lon": 122.15391111666666
+        },
+        {
+            "name": "WIGIB",
+            "lat": 48.128083333333336,
+            "lon": 122.15555833333333
+        },
+        {
+            "name": "YAYKU",
+            "lat": 48.0749,
+            "lon": 122.15431111666666
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 16",
+        "RNW 29",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "ARLIN2",
+            "rnw": "20",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 16",
+                    "fixes": {
+                        "RNW 16": "RNW 16 HDG 162 UNTIL 1000 HDG 250 UNTIL 2000 HDG 250 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 34",
+                    "fixes": {
+                        "RNW 34": "RNW 34 HDG 342 UNTIL 800 HDG 250 UNTIL 2000 HDG 250 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC34",
+            "fixes": {
+                "SAVOY": "SAVOY AT OR ABOVE 2000",
+                "WATON": "WATON 1700 RNW 34 TRK 342 UNTIL 1000 TURN LEFT DIRECT WATON AT OR ABOVE 2000 HOLD AT WATON LEFT TURN INBOUNDCOURSE 342 LEGTIME 1 FAF WATON MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "AW",
+                    "fixes": {
+                        "AW": "AW AT OR BELOW 6000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "PAE",
+                    "fixes": {
+                        "PAE": "PAE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB34",
+            "fixes": {
+                "SAVOY": "SAVOY AT OR ABOVE 2000",
+                "AW": "AW 1700 RNW 34 TRK 342 UNTIL 1000 TURN LEFT DIRECT AW AT OR ABOVE 2000 HOLD AT AW LEFT TURN INBOUNDCOURSE 342 LEGTIME 1 FAF AW MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "AW",
+                    "fixes": {
+                        "AW": "AW AT OR BELOW 6000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "PAE",
+                    "fixes": {
+                        "PAE": "PAE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "SAVOY": "SAVOY AT OR ABOVE 2000 OVERFLY SAVOY AT OR ABOVE 2000 HOLD AT SAVOY LEFT TURN INBOUNDCOURSE 342 LEGDIST 4 FAF YAYKU MAP RNW 34",
+                "YAYKU": "YAYKU 1700",
+                "WIGIB": "WIGIB AT OR ABOVE 680 RNW 34 TRK 342 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PAE",
+                    "fixes": {
+                        "PAE": "PAE"
+                    }
+                },
+                {
+                    "name": "SAVOY",
+                    "fixes": {
+                        "SAVOY": "SAVOY LEFT TURN INBOUNDCOURSE 342 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

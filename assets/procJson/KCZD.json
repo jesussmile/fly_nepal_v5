@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "FF13",
+            "lat": 40.94344443333333,
+            "lon": 100.1109
+        },
+        {
+            "name": "HALAL",
+            "lat": 40.801625,
+            "lon": 99.92264721666666
+        },
+        {
+            "name": "HCT",
+            "lat": 40.454061116666665,
+            "lon": 100.92357221666667
+        },
+        {
+            "name": "LBF",
+            "lat": 41.04870556666667,
+            "lon": 100.74709721666666
+        },
+        {
+            "name": "OZB",
+            "lat": 40.870347216666666,
+            "lon": 100.00376388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 40.90782806666667,
+            "lon": 100.06289071666667
+        },
+        {
+            "name": "PI002",
+            "lat": 40.901543366666665,
+            "lon": 100.15734768333333
+        },
+        {
+            "name": "PI003",
+            "lat": 40.977355116666665,
+            "lon": 100.17287561666667
+        },
+        {
+            "name": "SOKCO",
+            "lat": 40.89951943333333,
+            "lon": 100.04106666666667
+        },
+        {
+            "name": "TOKKU",
+            "lat": 40.692430566666665,
+            "lon": 99.79113888333333
+        },
+        {
+            "name": "YESUS",
+            "lat": 41.038866666666664,
+            "lon": 100.21050833333334
+        },
+        {
+            "name": "ZADKA",
+            "lat": 40.948672216666665,
+            "lon": 100.10071943333334
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 18",
+        "RNW 31",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "YESUS": "YESUS AT OR ABOVE 5000",
+                "ZADKA": "ZADKA 4500",
+                "SOKCO": "SOKCO AT OR ABOVE 3180 RNW 13",
+                "TOKKU": "OVERFLY TOKKU AT OR ABOVE 5500 HOLD AT TOKKU RIGHT TURN INBOUNDCOURSE 311 LEGDIST 5 FAF ZADKA MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "YESUS",
+                    "fixes": {
+                        "YESUS": "YESUS RIGHT TURN INBOUNDCOURSE 130 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "TOKKU": "TOKKU AT OR ABOVE 5500",
+                "HALAL": "HALAL 4200 RNW 31 TRK 310 UNTIL 2903",
+                "YESUS": "OVERFLY YESUS AT OR ABOVE 5000 HOLD AT YESUS RIGHT TURN INBOUNDCOURSE 130 LEGDIST 5 FAF HALAL MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "TOKKU",
+                    "fixes": {
+                        "TOKKU": "TOKKU RIGHT TURN INBOUNDCOURSE 311 ALT 5500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR13",
+            "fixes": {
+                "FF13": "FF13 4500 RNW 13",
+                "OZB": "OZB AT OR ABOVE 2902 TRK 123 UNTIL 4500 TURN RIGHT DIRECT OZB HOLD AT OZB RIGHT TURN INBOUNDCOURSE 123 LEGTIME 1 FAF FF13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "HCT",
+                    "fixes": {
+                        "HCT": "HCT",
+                        "OZB": "OZB AT OR ABOVE 4600",
+                        "PI001": "PI001 AT OR ABOVE 4500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "LBF",
+                    "fixes": {
+                        "LBF": "LBF",
+                        "OZB": "OZB AT OR ABOVE 4700",
+                        "PI001": "PI001 AT OR ABOVE 4500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

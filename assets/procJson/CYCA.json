@@ -1,0 +1,173 @@
+{
+    "fixes": [
+        {
+            "name": "BITLU",
+            "lat": 53.50253888333334,
+            "lon": 57.26597221666667
+        },
+        {
+            "name": "BOMUK",
+            "lat": 53.78068888333333,
+            "lon": 56.79949443333334
+        },
+        {
+            "name": "CANB",
+            "lat": 53.70906111666667,
+            "lon": 57.021005566666666
+        },
+        {
+            "name": "GABEB",
+            "lat": 53.65509443333333,
+            "lon": 57.109541666666665
+        },
+        {
+            "name": "GOROB",
+            "lat": 53.72448333333333,
+            "lon": 56.93871943333333
+        },
+        {
+            "name": "IGTUP",
+            "lat": 53.711855566666664,
+            "lon": 56.720655566666665
+        },
+        {
+            "name": "KEBLU",
+            "lat": 53.64191111666667,
+            "lon": 57.14186943333333
+        },
+        {
+            "name": "LEPUK",
+            "lat": 53.702561116666665,
+            "lon": 56.99281943333333
+        },
+        {
+            "name": "LIDEM",
+            "lat": 53.84946943333333,
+            "lon": 56.878591666666665
+        },
+        {
+            "name": "MA225",
+            "lat": 53.68681111666667,
+            "lon": 57.03863333333334
+        },
+        {
+            "name": "NADVU",
+            "lat": 53.58530833333333,
+            "lon": 57.280180566666665
+        },
+        {
+            "name": "NAKRI",
+            "lat": 53.71195,
+            "lon": 56.96966388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 53.76192183333333,
+            "lon": 56.979301983333336
+        },
+        {
+            "name": "PI002",
+            "lat": 53.8292593,
+            "lon": 57.02083316666667
+        },
+        {
+            "name": "PI003",
+            "lat": 53.8600532,
+            "lon": 56.901573283333335
+        },
+        {
+            "name": "PIDGO",
+            "lat": 53.614558333333335,
+            "lon": 57.411125
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA08",
+            "fixes": {
+                "CANB": "CANB 1300 CANB 3600 HOLD AT CANB RIGHT TURN INBOUNDCOURSE 225 LEGTIME 1 FAF CANB MAP MA225",
+                "MA225": "MA225 840 RNW 08 TRK 225 UNTIL 2200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CA",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA26",
+            "fixes": {
+                "CANB": "CANB 1300 CANB 3600 HOLD AT CANB RIGHT TURN INBOUNDCOURSE 225 LEGTIME 1 FAF CANB MAP MA225",
+                "MA225": "MA225 840 RNW 26 TRK 225 UNTIL 2200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CA",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "NADVU": "NADVU AT OR ABOVE 1800",
+                "KEBLU": "KEBLU 1350",
+                "GABEB": "GABEB AT OR ABOVE 900 RNW 08",
+                "GOROB": "OVERFLY GOROB 2000 HOLD AT GOROB RIGHT TURN INBOUNDCOURSE 075 ALT 2000 SPEED 250 LEGTIME 1 FAF KEBLU MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "BITLU",
+                    "fixes": {
+                        "BITLU": "BITLU SPEED 210"
+                    }
+                },
+                {
+                    "name": "PIDGO",
+                    "fixes": {
+                        "PIDGO": "PIDGO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "BOMUK": "BOMUK AT OR ABOVE 1600",
+                "GOROB": "GOROB 1300",
+                "NAKRI": "NAKRI AT OR ABOVE 1200",
+                "LEPUK": "LEPUK AT OR ABOVE 800 RNW 26",
+                "KEBLU": "OVERFLY KEBLU 2000 HOLD AT KEBLU LEFT TURN INBOUNDCOURSE 256 ALT 2000 SPEED 250 LEGTIME 1 FAF GOROB MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "IGTUP",
+                    "fixes": {
+                        "IGTUP": "IGTUP SPEED 210"
+                    }
+                },
+                {
+                    "name": "LIDEM",
+                    "fixes": {
+                        "LIDEM": "LIDEM SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

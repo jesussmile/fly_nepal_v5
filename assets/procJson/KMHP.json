@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "CABUX",
+            "lat": 32.37586388333333,
+            "lon": 82.12883611666666
+        },
+        {
+            "name": "CERDO",
+            "lat": 32.378566666666664,
+            "lon": 82.19767778333333
+        },
+        {
+            "name": "CULIX",
+            "lat": 32.371997216666664,
+            "lon": 82.03206111666667
+        },
+        {
+            "name": "GAYEP",
+            "lat": 32.38299166666667,
+            "lon": 82.31778333333334
+        },
+        {
+            "name": "JAMEB",
+            "lat": 32.36979721666667,
+            "lon": 81.97784443333333
+        },
+        {
+            "name": "KLICK",
+            "lat": 32.56305556666667,
+            "lon": 82.55040833333334
+        },
+        {
+            "name": "LOTTS",
+            "lat": 32.33656666666667,
+            "lon": 81.85511666666666
+        },
+        {
+            "name": "TRUET",
+            "lat": 32.30130833333333,
+            "lon": 82.58591943333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "GAYEP": "GAYEP AT OR ABOVE 2000",
+                "CERDO": "CERDO 2000",
+                "CABUX": "CABUX AT OR ABOVE 880 RNW 10 TRK 100 UNTIL 700 TURN RIGHT DIRECT",
+                "LOTTS": "OVERFLY LOTTS AT OR ABOVE 3000 HOLD AT LOTTS RIGHT TURN INBOUNDCOURSE 291 LEGDIST 4 FAF CERDO MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "KLICK",
+                    "fixes": {
+                        "KLICK": "KLICK"
+                    }
+                },
+                {
+                    "name": "TRUET",
+                    "fixes": {
+                        "TRUET": "TRUET"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "LOTTS": "LOTTS AT OR ABOVE 3000 OVERFLY LOTTS AT OR ABOVE 3000 HOLD AT LOTTS RIGHT TURN INBOUNDCOURSE 291 LEGDIST 4 FAF JAMEB MAP RNW 28",
+                "JAMEB": "JAMEB 1800",
+                "CULIX": "CULIX AT OR ABOVE 920 RNW 28 TRK 280 UNTIL 700 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LOTTS",
+                    "fixes": {
+                        "LOTTS": "LOTTS RIGHT TURN INBOUNDCOURSE 291 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

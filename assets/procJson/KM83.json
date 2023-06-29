@@ -1,0 +1,198 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 33.5301836,
+            "lon": 88.86936728333333
+        },
+        {
+            "name": "AF002",
+            "lat": 33.59417226666667,
+            "lon": 88.84906521666667
+        },
+        {
+            "name": "CLOUT",
+            "lat": 33.48313888333333,
+            "lon": 88.87227778333333
+        },
+        {
+            "name": "EZJAF",
+            "lat": 33.764811116666664,
+            "lon": 88.76510278333333
+        },
+        {
+            "name": "IGB",
+            "lat": 33.485486116666664,
+            "lon": 88.51358888333333
+        },
+        {
+            "name": "KAPVE",
+            "lat": 33.62921111666667,
+            "lon": 88.73379721666667
+        },
+        {
+            "name": "MAKAW",
+            "lat": 33.586936116666664,
+            "lon": 88.66886388333333
+        },
+        {
+            "name": "REGOR",
+            "lat": 33.608702783333335,
+            "lon": 88.70229443333334
+        },
+        {
+            "name": "UMPOW",
+            "lat": 33.76425556666667,
+            "lon": 88.66514721666667
+        },
+        {
+            "name": "USNIF",
+            "lat": 33.68077221666667,
+            "lon": 88.66586388333333
+        },
+        {
+            "name": "UZKUP",
+            "lat": 33.40316943333333,
+            "lon": 88.56868888333334
+        },
+        {
+            "name": "VISUE",
+            "lat": 33.487291666666664,
+            "lon": 88.66751666666667
+        },
+        {
+            "name": "YOQED",
+            "lat": 33.40380556666667,
+            "lon": 88.66822778333334
+        },
+        {
+            "name": "ZONDA",
+            "lat": 33.67020278333333,
+            "lon": 88.79684721666666
+        },
+        {
+            "name": "ZURXU",
+            "lat": 33.40436388333333,
+            "lon": 88.76776943333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDB18",
+            "fixes": {
+                "REGOR": "REGOR 1700 REGOR REGOR AT OR ABOVE 1900 HOLD AT REGOR RIGHT TURN INBOUNDCOURSE 124 LEGTIME 1 FAF REGOR MAP MAKAW",
+                "MAKAW": "MAKAW 900 RNW 18 TRK 124 UNTIL 1200 TURN RIGHT HDG 352 INTERCEPT RADIAL 304 TO"
+            },
+            "transitions": [
+                {
+                    "name": "CLOUT",
+                    "fixes": {
+                        "CLOUT": "CLOUT",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "ZONDA": "ZONDA AT OR ABOVE 2000",
+                        "KAPVE": "KAPVE AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "IGB": "IGB",
+                        "REGOR": "REGOR AT OR ABOVE 1900 HOLD AT REGOR RIGHT TURN INBOUNDCOURSE 124 ALT 1900 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDB36",
+            "fixes": {
+                "REGOR": "REGOR 1700 REGOR REGOR AT OR ABOVE 1900 HOLD AT REGOR RIGHT TURN INBOUNDCOURSE 124 LEGTIME 1 FAF REGOR MAP MAKAW",
+                "MAKAW": "MAKAW 900 RNW 36 TRK 124 UNTIL 1200 TURN RIGHT HDG 352 INTERCEPT RADIAL 304 TO"
+            },
+            "transitions": [
+                {
+                    "name": "CLOUT",
+                    "fixes": {
+                        "CLOUT": "CLOUT",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "ZONDA": "ZONDA AT OR ABOVE 2000",
+                        "KAPVE": "KAPVE AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "IGB": "IGB",
+                        "REGOR": "REGOR AT OR ABOVE 1900 HOLD AT REGOR RIGHT TURN INBOUNDCOURSE 124 ALT 1900 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "UMPOW": "UMPOW AT OR ABOVE 2500",
+                "USNIF": "USNIF 2000 RNW 18 TRK 180 UNTIL 1000 TURN RIGHT DIRECT",
+                "CLOUT": "CLOUT AT OR ABOVE 2500 HOLD AT CLOUT RIGHT TURN INBOUNDCOURSE 086 ALT 2500 LEGDIST 4 FAF USNIF MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "CLOUT",
+                    "fixes": {
+                        "CLOUT": "CLOUT",
+                        "EZJAF": "EZJAF AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "IGB": "IGB"
+                    }
+                },
+                {
+                    "name": "UMPOW",
+                    "fixes": {
+                        "UMPOW": "UMPOW RIGHT TURN INBOUNDCOURSE 180 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "YOQED": "YOQED AT OR ABOVE 2500",
+                "VISUE": "VISUE 2000 RNW 36 TRK 000 UNTIL 1000 TURN LEFT DIRECT",
+                "CLOUT": "OVERFLY CLOUT AT OR ABOVE 2500 HOLD AT CLOUT RIGHT TURN INBOUNDCOURSE 086 LEGDIST 4 FAF VISUE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "CLOUT",
+                    "fixes": {
+                        "CLOUT": "CLOUT",
+                        "ZURXU": "ZURXU AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "IGB": "IGB",
+                        "UZKUP": "UZKUP AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "YOQED",
+                    "fixes": {
+                        "YOQED": "YOQED RIGHT TURN INBOUNDCOURSE 000 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

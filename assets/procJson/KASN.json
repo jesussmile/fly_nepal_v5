@@ -1,0 +1,131 @@
+{
+    "fixes": [
+        {
+            "name": "ADZIN",
+            "lat": 33.176941666666664,
+            "lon": 86.38227778333334
+        },
+        {
+            "name": "CIBOG",
+            "lat": 33.53143333333333,
+            "lon": 86.08348333333333
+        },
+        {
+            "name": "GACBU",
+            "lat": 33.44875833333333,
+            "lon": 86.15346388333333
+        },
+        {
+            "name": "JOTAV",
+            "lat": 33.605069433333334,
+            "lon": 86.30683056666666
+        },
+        {
+            "name": "KOZJE",
+            "lat": 33.65433888333333,
+            "lon": 85.97915556666666
+        },
+        {
+            "name": "LLYLE",
+            "lat": 33.292033333333336,
+            "lon": 86.28570556666666
+        },
+        {
+            "name": "OXSAP",
+            "lat": 33.488086116666665,
+            "lon": 86.12019721666667
+        },
+        {
+            "name": "SOVPE",
+            "lat": 33.617097216666664,
+            "lon": 86.01080278333333
+        },
+        {
+            "name": "ZEKNE",
+            "lat": 33.773516666666666,
+            "lon": 85.87773611666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY04",
+            "fixes": {
+                "GACBU": "GACBU AT OR ABOVE 2700",
+                "OXSAP": "OXSAP 2300 RNW 04 TRK 038 UNTIL 1300 TURN LEFT DIRECT",
+                "JOTAV": "JOTAV AT OR ABOVE 3700 HOLD AT JOTAV RIGHT TURN INBOUNDCOURSE 111 LEGTIME 1 FAF OXSAP MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "LLYLE",
+                    "fixes": {
+                        "LLYLE": "LLYLE LEFT TURN INBOUNDCOURSE 038 ALT 2800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ04",
+            "fixes": {
+                "GACBU": "GACBU AT OR ABOVE 2700",
+                "OXSAP": "OXSAP 2300 RNW 04 TRK 038 UNTIL 1300 TURN LEFT HDG 242 INTERCEPT RADIAL 275 TO",
+                "JOTAV": "JOTAV JOTAV AT OR ABOVE 3700 HOLD AT JOTAV LEFT TURN INBOUNDCOURSE 095 LEGTIME 1 FAF OXSAP MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "ADZIN",
+                    "fixes": {
+                        "ADZIN": "ADZIN",
+                        "LLYLE": "LLYLE AT OR ABOVE 2800"
+                    }
+                },
+                {
+                    "name": "LLYLE",
+                    "fixes": {
+                        "LLYLE": "LLYLE LEFT TURN INBOUNDCOURSE 038 ALT 2800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "LLYLE": "LLYLE AT OR ABOVE 2800",
+                "GACBU": "GACBU AT OR ABOVE 2700",
+                "OXSAP": "OXSAP 2300",
+                "CIBOG": "CIBOG AT OR ABOVE 1280 RNW 04 TRK 038 UNTIL 1300 TURN LEFT DIRECT",
+                "JOTAV": "OVERFLY JOTAV AT OR ABOVE 3700 HOLD AT JOTAV RIGHT TURN INBOUNDCOURSE 111 ALT 3700 LEGDIST 4 FAF OXSAP MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "LLYLE",
+                    "fixes": {
+                        "LLYLE": "LLYLE LEFT TURN INBOUNDCOURSE 038 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "ZEKNE": "ZEKNE AT OR ABOVE 3100",
+                "KOZJE": "KOZJE 2400",
+                "SOVPE": "SOVPE AT OR ABOVE 1520 RNW 22 TRK 218 UNTIL 1200 TURN RIGHT DIRECT",
+                "JOTAV": "JOTAV AT OR ABOVE 3700 HOLD AT JOTAV RIGHT TURN INBOUNDCOURSE 111 LEGDIST 4 FAF KOZJE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "ZEKNE",
+                    "fixes": {
+                        "ZEKNE": "ZEKNE RIGHT TURN INBOUNDCOURSE 218 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

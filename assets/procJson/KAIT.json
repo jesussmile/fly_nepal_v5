@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "BRNRD",
+            "lat": 46.348280566666666,
+            "lon": 94.02598333333333
+        },
+        {
+            "name": "GOLLF",
+            "lat": 45.75363611666667,
+            "lon": 93.69950278333333
+        },
+        {
+            "name": "GPZ",
+            "lat": 47.16344443333333,
+            "lon": 93.48893333333334
+        },
+        {
+            "name": "LINDR",
+            "lat": 46.16176111666667,
+            "lon": 93.43020833333334
+        },
+        {
+            "name": "MIDPE",
+            "lat": 46.36063611666667,
+            "lon": 93.59788333333333
+        },
+        {
+            "name": "NEYIY",
+            "lat": 46.516508333333334,
+            "lon": 93.66053056666667
+        },
+        {
+            "name": "RIYOR",
+            "lat": 46.64436666666667,
+            "lon": 93.71219166666667
+        },
+        {
+            "name": "WIMAG",
+            "lat": 46.588061116666665,
+            "lon": 93.68941111666666
+        },
+        {
+            "name": "YEPSU",
+            "lat": 46.192683333333335,
+            "lon": 93.93976111666667
+        },
+        {
+            "name": "YOCUV",
+            "lat": 46.456938883333336,
+            "lon": 93.63654443333333
+        },
+        {
+            "name": "ZAPUB",
+            "lat": 46.75796666666667,
+            "lon": 93.75831666666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 16",
+        "RNW 26",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "ZAPUB": "ZAPUB AT OR ABOVE 3400",
+                "RIYOR": "RIYOR 3000",
+                "WIMAG": "WIMAG AT OR ABOVE 1880 RNW 16 TRK 164 UNTIL 1518",
+                "MIDPE": "OVERFLY MIDPE AT OR ABOVE 3400 HOLD AT MIDPE RIGHT TURN INBOUNDCOURSE 344 LEGDIST 4 FAF RIYOR MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "BRNRD",
+                    "fixes": {
+                        "BRNRD": "BRNRD",
+                        "ZAPUB": "OVERFLY ZAPUB AT OR ABOVE 3400 HOLD AT ZAPUB LEFT TURN INBOUNDCOURSE 164 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GPZ",
+                    "fixes": {
+                        "GPZ": "GPZ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "MIDPE": "MIDPE AT OR ABOVE 3400",
+                "YOCUV": "YOCUV 3000",
+                "NEYIY": "NEYIY AT OR ABOVE 1800 RNW 34 TRK 344 UNTIL 1548",
+                "ZAPUB": "OVERFLY ZAPUB AT OR ABOVE 3400 HOLD AT ZAPUB LEFT TURN INBOUNDCOURSE 164 LEGDIST 4 FAF YOCUV MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GOLLF",
+                    "fixes": {
+                        "GOLLF": "GOLLF"
+                    }
+                },
+                {
+                    "name": "LINDR",
+                    "fixes": {
+                        "LINDR": "LINDR"
+                    }
+                },
+                {
+                    "name": "MIDPE",
+                    "fixes": {
+                        "MIDPE": "MIDPE RIGHT TURN INBOUNDCOURSE 344 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "YEPSU",
+                    "fixes": {
+                        "YEPSU": "YEPSU"
+                    }
+                }
+            ]
+        }
+    ]
+}

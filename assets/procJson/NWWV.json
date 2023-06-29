@@ -1,0 +1,143 @@
+{
+    "fixes": [
+        {
+            "name": "FF13",
+            "lat": 20.57985,
+            "lon": 166.53386943333334
+        },
+        {
+            "name": "FF31",
+            "lat": 20.695016666666668,
+            "lon": 166.62265833333333
+        },
+        {
+            "name": "FWV13",
+            "lat": 20.578388883333332,
+            "lon": 166.52377778333334
+        },
+        {
+            "name": "FWV31",
+            "lat": 20.703388883333332,
+            "lon": 166.62227778333335
+        },
+        {
+            "name": "IWV13",
+            "lat": 20.531333333333333,
+            "lon": 166.48677778333334
+        },
+        {
+            "name": "IWV31",
+            "lat": 20.750416666666666,
+            "lon": 166.65936111666667
+        },
+        {
+            "name": "OANB",
+            "lat": 20.642138883333335,
+            "lon": 166.57205556666668
+        },
+        {
+            "name": "WV600",
+            "lat": 20.566194433333333,
+            "lon": 166.43683333333334
+        },
+        {
+            "name": "WV610",
+            "lat": 20.661027783333335,
+            "lon": 166.58888888333334
+        },
+        {
+            "name": "WV700",
+            "lat": 20.785305566666665,
+            "lon": 166.60938888333334
+        },
+        {
+            "name": "WV710",
+            "lat": 20.620805566666668,
+            "lon": 166.55719443333334
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB13",
+            "fixes": {
+                "FF13": "FF13 1300 RNW 13",
+                "OANB": "OVERFLY OANB TRK 138 UNTIL 1500 TURN RIGHT DIRECT OANB HOLD AT OANB RIGHT TURN INBOUNDCOURSE 303 ALT 1500 SPEED 170 LEGTIME 1 FAF FF13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "OA",
+                    "fixes": {
+                        "OANB": "OANB AT OR ABOVE 1500 TRK 303 UNTIL 7.5 FROM OANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB31",
+            "fixes": {
+                "FF31": "FF31 1300 RNW 31",
+                "OANB": "OVERFLY OANB TRK 306 UNTIL 1500 TURN RIGHT DIRECT OANB HOLD AT OANB LEFT TURN INBOUNDCOURSE 141 ALT 1500 SPEED 170 LEGTIME 1 FAF FF31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "OA",
+                    "fixes": {
+                        "OANB": "OANB AT OR ABOVE 1500 TRK 141 UNTIL 7.5 FROM OANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "IWV13": "IWV13 AT OR ABOVE 1700 SPEED 175 IWV13 AT OR ABOVE 1700 SPEED 175 HOLD AT IWV13 LEFT TURN INBOUNDCOURSE 131 ALT 1700 LEGTIME 1 FAF FWV13 MAP RNW 13",
+                "FWV13": "FWV13 1700 RNW 13",
+                "WV610": "OVERFLY WV610 TURN RIGHT DIRECT",
+                "WV600": "WV600 AT OR ABOVE 1700 SPEED 175"
+            },
+            "transitions": [
+                {
+                    "name": "IWV13",
+                    "fixes": {
+                        "IWV13": "IWV13 LEFT TURN INBOUNDCOURSE 131 ALT 1700 SPEED 175 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "WV600",
+                    "fixes": {
+                        "WV600": "WV600 AT OR ABOVE 1700 SPEED 175"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "IWV31": "IWV31 AT OR ABOVE 1700 SPEED 175 IWV31 AT OR ABOVE 1700 SPEED 175 HOLD AT IWV31 LEFT TURN INBOUNDCOURSE 311 ALT 1700 LEGTIME 1 FAF FWV31 MAP RNW 31",
+                "FWV31": "FWV31 1700 RNW 31",
+                "WV710": "OVERFLY WV710 TURN LEFT DIRECT",
+                "WV700": "WV700 AT OR ABOVE 1700 SPEED 175"
+            },
+            "transitions": [
+                {
+                    "name": "IWV31",
+                    "fixes": {
+                        "IWV31": "IWV31 LEFT TURN INBOUNDCOURSE 311 ALT 1700 SPEED 175 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "WV700",
+                    "fixes": {
+                        "WV700": "WV700 AT OR ABOVE 1700 SPEED 175"
+                    }
+                }
+            ]
+        }
+    ]
+}

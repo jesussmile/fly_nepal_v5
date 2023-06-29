@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "ALDIR",
+            "lat": 0.5837222166666667,
+            "lon": 73.52325
+        },
+        {
+            "name": "KAGAT",
+            "lat": 0.89025,
+            "lon": 73.51136111666666
+        },
+        {
+            "name": "MO380",
+            "lat": 0.6390277833333333,
+            "lon": 73.43786111666667
+        },
+        {
+            "name": "MO381",
+            "lat": 0.5804444333333334,
+            "lon": 73.44013888333333
+        },
+        {
+            "name": "MO382",
+            "lat": 0.8283888833333334,
+            "lon": 73.4305
+        },
+        {
+            "name": "MO383",
+            "lat": 0.8869722166666667,
+            "lon": 73.42822221666667
+        },
+        {
+            "name": "POREX",
+            "lat": 0.5771666666666667,
+            "lon": 73.35702778333334
+        },
+        {
+            "name": "RUGDA",
+            "lat": 0.8836944333333334,
+            "lon": 73.34508333333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "MO382": "MO382 1700 RNW 18 TRK 182 UNTIL 1000 TURN LEFT DIRECT",
+                "KAGAT": "OVERFLY KAGAT AT OR ABOVE 3000 HOLD AT KAGAT RIGHT TURN INBOUNDCOURSE 272 ALT 3000 LEGTIME 1 FAF MO382 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "KAGAT",
+                    "fixes": {
+                        "KAGAT": "KAGAT AT OR ABOVE 3000 SPEED 180",
+                        "MO383": "MO383"
+                    }
+                },
+                {
+                    "name": "RUGDA",
+                    "fixes": {
+                        "RUGDA": "RUGDA AT OR ABOVE 3000 SPEED 180",
+                        "MO383": "MO383"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "MO380": "MO380 1700 RNW 36 TRK 002 UNTIL 1000 TURN RIGHT DIRECT",
+                "ALDIR": "OVERFLY ALDIR AT OR ABOVE 3000 HOLD AT ALDIR RIGHT TURN INBOUNDCOURSE 272 ALT 3000 LEGTIME 1 FAF MO380 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ALDIR",
+                    "fixes": {
+                        "ALDIR": "ALDIR AT OR ABOVE 3000 SPEED 180",
+                        "MO381": "MO381"
+                    }
+                },
+                {
+                    "name": "POREX",
+                    "fixes": {
+                        "POREX": "POREX AT OR ABOVE 3000 SPEED 180",
+                        "MO381": "MO381"
+                    }
+                }
+            ]
+        }
+    ]
+}

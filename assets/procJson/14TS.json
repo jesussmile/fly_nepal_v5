@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "JIKEG",
+            "lat": 27.459786116666667,
+            "lon": 98.62326388333334
+        },
+        {
+            "name": "LOGBE",
+            "lat": 27.392694433333332,
+            "lon": 98.59001943333334
+        },
+        {
+            "name": "OREYI",
+            "lat": 27.603752783333334,
+            "lon": 98.69473888333333
+        },
+        {
+            "name": "WEROV",
+            "lat": 27.239191666666667,
+            "lon": 98.514125
+        },
+        {
+            "name": "ZIXAD",
+            "lat": 27.331358333333334,
+            "lon": 98.55966666666667
+        },
+        {
+            "name": "ZOXEK",
+            "lat": 27.511936116666668,
+            "lon": 98.64913056666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "OREYI": "OREYI AT OR ABOVE 3000",
+                "ZOXEK": "ZOXEK 2300",
+                "JIKEG": "JIKEG AT OR ABOVE 1200 RNW 16 TRK 151 UNTIL 860",
+                "WEROV": "OVERFLY WEROV AT OR ABOVE 3000 HOLD AT WEROV RIGHT TURN INBOUNDCOURSE 331 LEGDIST 4 FAF ZOXEK MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "OREYI",
+                    "fixes": {
+                        "OREYI": "OREYI RIGHT TURN INBOUNDCOURSE 151 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "WEROV": "WEROV AT OR ABOVE 3000",
+                "ZIXAD": "ZIXAD 2300",
+                "LOGBE": "LOGBE AT OR ABOVE 1020 RNW 34 TRK 331 UNTIL 820",
+                "OREYI": "OVERFLY OREYI AT OR ABOVE 3000 HOLD AT OREYI RIGHT TURN INBOUNDCOURSE 151 LEGDIST 4 FAF ZIXAD MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "WEROV",
+                    "fixes": {
+                        "WEROV": "WEROV RIGHT TURN INBOUNDCOURSE 331 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

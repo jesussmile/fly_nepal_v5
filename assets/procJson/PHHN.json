@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "GOYEY",
+            "lat": 20.936744433333335,
+            "lon": 156.01109443333334
+        },
+        {
+            "name": "GPYLE",
+            "lat": 20.795391666666667,
+            "lon": 155.82949721666665
+        },
+        {
+            "name": "HALEU",
+            "lat": 20.661569433333334,
+            "lon": 155.82976943333333
+        },
+        {
+            "name": "IHEPA",
+            "lat": 20.795625,
+            "lon": 156.00026666666668
+        },
+        {
+            "name": "INUCU",
+            "lat": 20.795538883333332,
+            "lon": 155.92069166666667
+        },
+        {
+            "name": "LNBRG",
+            "lat": 20.638633333333335,
+            "lon": 155.93373056666667
+        },
+        {
+            "name": "OGG",
+            "lat": 20.906472216666668,
+            "lon": 156.42095
+        },
+        {
+            "name": "OPANA",
+            "lat": 20.944080566666667,
+            "lon": 156.19298611666667
+        },
+        {
+            "name": "PULPS",
+            "lat": 20.472161116666665,
+            "lon": 155.89929443333332
+        },
+        {
+            "name": "SARDS",
+            "lat": 20.539983333333332,
+            "lon": 155.70501111666667
+        },
+        {
+            "name": "SEYOL",
+            "lat": 20.929211116666668,
+            "lon": 155.82922221666666
+        },
+        {
+            "name": "SIPAE",
+            "lat": 20.795580566666665,
+            "lon": 155.95579443333332
+        },
+        {
+            "name": "UREAS",
+            "lat": 20.795652783333335,
+            "lon": 156.03289166666667
+        },
+        {
+            "name": "ZOMPU",
+            "lat": 20.841647216666665,
+            "lon": 156.11799721666668
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "LNBRG2",
+            "rnw": "08",
+            "fixes": {
+                "SIPAE": "OVERFLY SIPAE",
+                "LNBRG": "LNBRG SPEED 200"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "OPANA": "OPANA AT OR ABOVE 4800",
+                "ZOMPU": "ZOMPU 2500",
+                "UREAS": "OVERFLY UREAS 375 RNW 08 TRK 109 UNTIL 478",
+                "GPYLE": "OVERFLY GPYLE AT OR ABOVE 2500 HOLD AT GPYLE RIGHT TURN INBOUNDCOURSE 259 LEGDIST 4 FAF ZOMPU MAP UREAS"
+            },
+            "transitions": [
+                {
+                    "name": "OGG",
+                    "fixes": {
+                        "OGG": "OGG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "GPYLE": "GPYLE AT OR ABOVE 2500 OVERFLY GPYLE AT OR ABOVE 2500 HOLD AT GPYLE RIGHT TURN INBOUNDCOURSE 259 LEGDIST 4 FAF INUCU MAP IHEPA",
+                "INUCU": "INUCU 1700",
+                "IHEPA": "OVERFLY IHEPA 254 RNW 26 TRK 259 UNTIL 478 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GPYLE",
+                    "fixes": {
+                        "GPYLE": "GPYLE RIGHT TURN INBOUNDCOURSE 259 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "OPANA",
+                    "fixes": {
+                        "OPANA": "OPANA",
+                        "GOYEY": "GOYEY AT OR ABOVE 3800",
+                        "SEYOL": "SEYOL AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "PULPS",
+                    "fixes": {
+                        "PULPS": "PULPS",
+                        "HALEU": "HALEU AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SARDS",
+                    "fixes": {
+                        "SARDS": "SARDS",
+                        "HALEU": "HALEU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

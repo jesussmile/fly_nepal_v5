@@ -1,0 +1,126 @@
+{
+    "fixes": [
+        {
+            "name": "CF26",
+            "lat": 48.334833333333336,
+            "lon": 6.2350555666666665
+        },
+        {
+            "name": "EMTNB",
+            "lat": 48.332444433333336,
+            "lon": 6.193638883333334
+        },
+        {
+            "name": "FSG26",
+            "lat": 48.334527783333336,
+            "lon": 6.234472216666667
+        },
+        {
+            "name": "ISG26",
+            "lat": 48.34141666666667,
+            "lon": 6.358944433333333
+        },
+        {
+            "name": "MN26",
+            "lat": 48.326594433333334,
+            "lon": 6.094113883333334
+        },
+        {
+            "name": "OM26",
+            "lat": 48.33230556666667,
+            "lon": 6.193805566666667
+        },
+        {
+            "name": "SG402",
+            "lat": 48.2585,
+            "lon": 6.370611116666667
+        },
+        {
+            "name": "SG403",
+            "lat": 48.424444433333335,
+            "lon": 6.349222216666667
+        },
+        {
+            "name": "SG409",
+            "lat": 48.321666666666665,
+            "lon": 6.00975
+        },
+        {
+            "name": "SG411",
+            "lat": 48.41461111666667,
+            "lon": 6.182805566666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS26",
+            "fixes": {
+                "CF26": "CF26 AT OR ABOVE 3000",
+                "OM26": "OM26 2500 RNW 26 TRK 263 UNTIL 2000 TURN LEFT DIRECT",
+                "EMTNB": "EMTNB 3000 SPEED 200 HOLD AT EMTNB RIGHT TURN INBOUNDCOURSE 263 ALT 3000 SPEED 220 LEGTIME 1 FAF OM26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "EMT",
+                    "fixes": {
+                        "EMTNB": "EMTNB RIGHT TURN INBOUNDCOURSE 263 ALT 3000 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "CF26": "CF26 AT OR ABOVE 3000",
+                "EMTNB": "EMTNB 2500 EMTNB 3000 SPEED 200 HOLD AT EMTNB RIGHT TURN INBOUNDCOURSE 263 SPEED 220 LEGTIME 1 FAF EMTNB MAP MN26",
+                "MN26": "MN26 1205 RNW 26 TRK 263 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EMT",
+                    "fixes": {
+                        "EMTNB": "EMTNB RIGHT TURN INBOUNDCOURSE 263 ALT 3000 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "ISG26": "ISG26 AT OR ABOVE 3000",
+                "FSG26": "FSG26 3000 RNW 26",
+                "SG409": "OVERFLY SG409 TURN LEFT DIRECT",
+                "SG402": "SG402 AT OR ABOVE 3000 SPEED 200 FAF FSG26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "ISG26",
+                    "fixes": {
+                        "ISG26": "ISG26 AT OR ABOVE 3000",
+                        "EMTNB": "EMTNB AT OR ABOVE 3000",
+                        "SG411": "SG411 AT OR ABOVE 3000 SPEED 220",
+                        "SG403": "SG403 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SG402",
+                    "fixes": {
+                        "SG402": "SG402 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SG403",
+                    "fixes": {
+                        "SG403": "SG403 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

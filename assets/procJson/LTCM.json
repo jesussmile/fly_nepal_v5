@@ -1,0 +1,282 @@
+{
+    "fixes": [
+        {
+            "name": "33NDB",
+            "lat": 42.055402783333335,
+            "lon": 35.13576943333333
+        },
+        {
+            "name": "ATNOP",
+            "lat": 42.052222216666664,
+            "lon": 34.858333333333334
+        },
+        {
+            "name": "CF23",
+            "lat": 42.100644433333336,
+            "lon": 35.22158056666667
+        },
+        {
+            "name": "D048G",
+            "lat": 42.09247778333334,
+            "lon": 35.20195278333333
+        },
+        {
+            "name": "D049E",
+            "lat": 42.071272216666664,
+            "lon": 35.167327783333334
+        },
+        {
+            "name": "D050G",
+            "lat": 42.089177783333334,
+            "lon": 35.205161116666666
+        },
+        {
+            "name": "D229C",
+            "lat": 41.992888883333336,
+            "lon": 35.02255556666667
+        },
+        {
+            "name": "FD23",
+            "lat": 42.079633333333334,
+            "lon": 35.18680833333333
+        },
+        {
+            "name": "FF23",
+            "lat": 42.082461116666664,
+            "lon": 35.18405833333333
+        },
+        {
+            "name": "FF230",
+            "lat": 42.079633333333334,
+            "lon": 35.18680833333333
+        },
+        {
+            "name": "FI23",
+            "lat": 42.08087221666667,
+            "lon": 35.185527783333335
+        },
+        {
+            "name": "GERZE",
+            "lat": 41.832222216666665,
+            "lon": 35.16611111666667
+        },
+        {
+            "name": "MD23",
+            "lat": 42.036647216666665,
+            "lon": 35.104286116666664
+        },
+        {
+            "name": "MQ23",
+            "lat": 42.03735278333333,
+            "lon": 35.103597216666664
+        },
+        {
+            "name": "SIN",
+            "lat": 42.02230556666667,
+            "lon": 35.076805566666664
+        },
+        {
+            "name": "SINNB",
+            "lat": 42.02230556666667,
+            "lon": 35.076805566666664
+        },
+        {
+            "name": "SUNUM",
+            "lat": 42.01194443333333,
+            "lon": 34.8575
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "GERZ1T",
+            "rnw": "23",
+            "fixes": {
+                "D229C": "OVERFLY D229C TURN RIGHT DIRECT",
+                "SIN": "SIN",
+                "GERZE": "GERZE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GERZ1U",
+            "rnw": "05",
+            "fixes": {
+                "D049E": "OVERFLY D049E TURN LEFT DIRECT",
+                "SIN": "SIN",
+                "GERZE": "GERZE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SUNU1T",
+            "rnw": "23",
+            "fixes": {
+                "D229C": "OVERFLY D229C",
+                "SUNUM": "SUNUM"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SUNU1U",
+            "rnw": "05",
+            "fixes": {
+                "D049E": "OVERFLY D049E TURN RIGHT DIRECT",
+                "SIN": "SIN",
+                "SUNUM": "SUNUM"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ATNO1B",
+            "runway": "RNW 05 RNW 23",
+            "fixes": {
+                "ATNOP": "ATNOP",
+                "SIN": "SIN"
+            }
+        },
+        {
+            "name": "GERZ1B",
+            "runway": "RNW 05 RNW 23",
+            "fixes": {
+                "GERZE": "GERZE",
+                "SIN": "SIN"
+            }
+        },
+        {
+            "name": "SUNU1B",
+            "runway": "RNW 05 RNW 23",
+            "fixes": {
+                "SUNUM": "SUNUM",
+                "SIN": "SIN"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORDY23",
+            "fixes": {
+                "FD23": "FD23 1900",
+                "MD23": "MD23 471 RNW 23",
+                "SIN": "SIN TRK 244 UNTIL 2000 TURN RIGHT DIRECT SIN 3000 HOLD AT SIN LEFT TURN INBOUNDCOURSE 050 SPEED 170 LEGTIME 1 FAF FD23 MAP MD23"
+            },
+            "transitions": [
+                {
+                    "name": "SIN",
+                    "fixes": {
+                        "SIN": "SIN AT OR ABOVE 3000",
+                        "FD23": "FD23 AT OR ABOVE 1900 TRK 095 UNTIL 4.3 FROM FD23"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ23",
+            "fixes": {
+                "CF23": "CF23 AT OR ABOVE 1900",
+                "FI23": "FI23 1900 RNW 23",
+                "SIN": "SIN TRK 244 UNTIL 2000 TURN RIGHT DIRECT SIN 3000 HOLD AT SIN LEFT TURN INBOUNDCOURSE 050 ALT 3000 SPEED 170 LEGTIME 1 FAF FI23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "SIN",
+                    "fixes": {
+                        "SIN": "SIN AT OR ABOVE 3000",
+                        "FI23": "FI23 AT OR ABOVE 1900 TRK 094 UNTIL 4.3 FROM FI23"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA05",
+            "fixes": {
+                "FF23": "FF23 1900",
+                "SINNB": "SINNB 1250 RNW 05 TRK 244 UNTIL 2000 TURN RIGHT DIRECT SINNB 3000 HOLD AT SINNB LEFT TURN INBOUNDCOURSE 050 SPEED 170 LEGTIME 1 FAF FF23 MAP SIN"
+            },
+            "transitions": [
+                {
+                    "name": "SIN",
+                    "fixes": {
+                        "SINNB": "SINNB AT OR ABOVE 3000",
+                        "D048G": "D048G AT OR ABOVE 1900 TRK 093 UNTIL 4.4 FROM D048G"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA23",
+            "fixes": {
+                "FF23": "FF23 1900",
+                "SINNB": "SINNB 1250 RNW 23 TRK 244 UNTIL 2000 TURN RIGHT DIRECT SINNB 3000 HOLD AT SINNB LEFT TURN INBOUNDCOURSE 050 SPEED 170 LEGTIME 1 FAF FF23 MAP SIN"
+            },
+            "transitions": [
+                {
+                    "name": "SIN",
+                    "fixes": {
+                        "SINNB": "SINNB AT OR ABOVE 3000",
+                        "D048G": "D048G AT OR ABOVE 1900 TRK 093 UNTIL 4.4 FROM D048G"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDY23",
+            "fixes": {
+                "FF23": "FF23 1900",
+                "33NDB": "33NDB AT OR ABOVE 1050",
+                "MQ23": "MQ23 472 RNW 23",
+                "SINNB": "SINNB TRK 244 UNTIL 2000 TURN RIGHT DIRECT SINNB 3000 HOLD AT SINNB LEFT TURN INBOUNDCOURSE 050 ALT 3000 SPEED 170 LEGTIME 1 FAF FF23 MAP MQ23"
+            },
+            "transitions": [
+                {
+                    "name": "SIN",
+                    "fixes": {
+                        "SINNB": "SINNB AT OR ABOVE 3000",
+                        "FF23": "FF23 AT OR ABOVE 1900 TRK 093 UNTIL 4.3 FROM FF23"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA05",
+            "fixes": {
+                "FF230": "FF230 1900",
+                "SIN": "SIN 1250 RNW 05 TRK 244 UNTIL 2000 TURN RIGHT DIRECT SIN 3000 HOLD AT SIN LEFT TURN INBOUNDCOURSE 050 SPEED 170 LEGTIME 1 FAF FF230 MAP SIN"
+            },
+            "transitions": [
+                {
+                    "name": "SIN",
+                    "fixes": {
+                        "SIN": "SIN AT OR ABOVE 3000",
+                        "D050G": "D050G AT OR ABOVE 1900 TRK 095 UNTIL 4.4 FROM D050G"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA23",
+            "fixes": {
+                "FF230": "FF230 1900",
+                "SIN": "SIN 1250 RNW 23 TRK 244 UNTIL 2000 TURN RIGHT DIRECT SIN 3000 HOLD AT SIN LEFT TURN INBOUNDCOURSE 050 SPEED 170 LEGTIME 1 FAF FF230 MAP SIN"
+            },
+            "transitions": [
+                {
+                    "name": "SIN",
+                    "fixes": {
+                        "SIN": "SIN AT OR ABOVE 3000",
+                        "D050G": "D050G AT OR ABOVE 1900 TRK 095 UNTIL 4.4 FROM D050G"
+                    }
+                }
+            ]
+        }
+    ]
+}

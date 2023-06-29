@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "CD103",
+            "lat": 48.203688883333335,
+            "lon": 114.39706943333333
+        },
+        {
+            "name": "CD104",
+            "lat": 48.174791666666664,
+            "lon": 114.50290833333334
+        },
+        {
+            "name": "CD301",
+            "lat": 47.987797216666664,
+            "lon": 114.84868056666667
+        },
+        {
+            "name": "CD302",
+            "lat": 48.145972216666664,
+            "lon": 114.94512778333333
+        },
+        {
+            "name": "CD303",
+            "lat": 48.06689443333333,
+            "lon": 114.89683056666667
+        },
+        {
+            "name": "CD304",
+            "lat": 48.095522216666666,
+            "lon": 114.7925
+        },
+        {
+            "name": "FN12",
+            "lat": 48.181080566666665,
+            "lon": 114.47860833333333
+        },
+        {
+            "name": "FN30",
+            "lat": 48.089283333333334,
+            "lon": 114.81694721666666
+        },
+        {
+            "name": "HNNB",
+            "lat": 48.12738888333333,
+            "lon": 114.6765
+        },
+        {
+            "name": "ON",
+            "lat": 48.14366666666667,
+            "lon": 114.61738888333333
+        },
+        {
+            "name": "RW12",
+            "lat": 48.13995833333333,
+            "lon": 114.63046666666666
+        },
+        {
+            "name": "RW30",
+            "lat": 48.131116666666664,
+            "lon": 114.66276111666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FN12": "FN12 4600",
+                "ON": "ON 2685 RNW 12 HDG 121 VECTORS FAF FN12 MAP ON"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 4600",
+                "HNNB": "HNNB 2660 RNW 30 HDG 301 VECTORS FAF FN30 MAP HN"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDBX30",
+            "fixes": {
+                "FN30": "FN30 4600",
+                "HNNB": "HNNB 2660 RNW 30 HDG 301 VECTORS FAF FN30 MAP HN"
+            },
+            "transitions": [
+                {
+                    "name": "HN1",
+                    "fixes": {
+                        "HNNB": "HNNB AT OR ABOVE 4930 TRK 093 UNTIL 7.0 FROM HNNB"
+                    }
+                },
+                {
+                    "name": "HN2",
+                    "fixes": {
+                        "HNNB": "HNNB AT OR ABOVE 4930 TRK 109 UNTIL 7.0 FROM HNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "CD103": "CD103 AT OR ABOVE 4930 OVERFLY CD103 HOLD AT CD103 LEFT TURN INBOUNDCOURSE 121 ALT 4930 LEGTIME 1 FAF CD104 MAP RNW 12",
+                "CD104": "CD104 4270 RNW 12 TRK 121 UNTIL 3290 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CD103",
+                    "fixes": {
+                        "CD103": "CD103 LEFT TURN INBOUNDCOURSE 121 ALT 4930 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "CD303": "CD303 AT OR ABOVE 4270",
+                "CD304": "CD304 4270 RNW 30 TRK 301 UNTIL 3290 TURN RIGHT DIRECT",
+                "CD302": "OVERFLY CD302 HOLD AT CD302 LEFT TURN INBOUNDCOURSE 211 ALT 4930 SPEED 230 LEGTIME 1 FAF CD304 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "CD301",
+                    "fixes": {
+                        "CD301": "CD301 AT OR ABOVE 4930"
+                    }
+                },
+                {
+                    "name": "CD302",
+                    "fixes": {
+                        "CD302": "CD302 AT OR ABOVE 4930"
+                    }
+                }
+            ]
+        }
+    ]
+}

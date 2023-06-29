@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "AKYAK",
+            "lat": 47.070541666666664,
+            "lon": 68.08186943333334
+        },
+        {
+            "name": "HOXEB",
+            "lat": 46.686722216666666,
+            "lon": 67.95545
+        },
+        {
+            "name": "IKAVE",
+            "lat": 46.91794443333333,
+            "lon": 68.03131111666667
+        },
+        {
+            "name": "IPESE",
+            "lat": 47.044575,
+            "lon": 68.24822221666666
+        },
+        {
+            "name": "JEGUB",
+            "lat": 47.096266666666665,
+            "lon": 67.91535556666666
+        },
+        {
+            "name": "OKOKE",
+            "lat": 46.82598333333333,
+            "lon": 68.00105278333334
+        },
+        {
+            "name": "UKOYO",
+            "lat": 46.78424166666667,
+            "lon": 67.98735833333333
+        },
+        {
+            "name": "ULOVY",
+            "lat": 46.97296943333333,
+            "lon": 68.04946943333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 11",
+        "RNW 19",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "HOXEB": "HOXEB AT OR ABOVE 3700",
+                "UKOYO": "UKOYO 2300",
+                "OKOKE": "OKOKE AT OR ABOVE 1480 RNW 01 TRK 004 UNTIL 870",
+                "AKYAK": "OVERFLY AKYAK AT OR ABOVE 3000 HOLD AT AKYAK RIGHT TURN INBOUNDCOURSE 184 LEGDIST 4 FAF UKOYO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "HOXEB",
+                    "fixes": {
+                        "HOXEB": "HOXEB RIGHT TURN INBOUNDCOURSE 004 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "AKYAK": "AKYAK AT OR ABOVE 3000 OVERFLY AKYAK AT OR ABOVE 3000 HOLD AT AKYAK RIGHT TURN INBOUNDCOURSE 184 LEGDIST 4 FAF ULOVY MAP RNW 19",
+                "ULOVY": "ULOVY 2500",
+                "IKAVE": "IKAVE AT OR ABOVE 1420 RNW 19 TRK 184 UNTIL 1300 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AKYAK",
+                    "fixes": {
+                        "AKYAK": "AKYAK RIGHT TURN INBOUNDCOURSE 184 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "IPESE",
+                    "fixes": {
+                        "IPESE": "IPESE"
+                    }
+                },
+                {
+                    "name": "JEGUB",
+                    "fixes": {
+                        "JEGUB": "JEGUB"
+                    }
+                }
+            ]
+        }
+    ]
+}

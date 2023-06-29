@@ -1,0 +1,203 @@
+{
+    "fixes": [
+        {
+            "name": "CF09",
+            "lat": 6.5595388833333335,
+            "lon": 146.54171943333333
+        },
+        {
+            "name": "D108L",
+            "lat": 6.645280566666667,
+            "lon": 146.89460278333334
+        },
+        {
+            "name": "FF09",
+            "lat": 6.563941666666667,
+            "lon": 146.62533333333334
+        },
+        {
+            "name": "FF27",
+            "lat": 6.574191666666667,
+            "lon": 146.82099443333334
+        },
+        {
+            "name": "FS09",
+            "lat": 6.562561116666666,
+            "lon": 146.59909443333333
+        },
+        {
+            "name": "LARID",
+            "lat": 6.736666666666666,
+            "lon": 146.99833333333333
+        },
+        {
+            "name": "NZ",
+            "lat": 6.568333333333333,
+            "lon": 146.70895
+        },
+        {
+            "name": "OPIGO",
+            "lat": 7.238086116666667,
+            "lon": 147.03789443333332
+        },
+        {
+            "name": "WESFI",
+            "lat": 6.550438883333333,
+            "lon": 146.40751666666668
+        },
+        {
+            "name": "YNZEF",
+            "lat": 6.578172216666667,
+            "lon": 146.82285
+        },
+        {
+            "name": "YNZEH",
+            "lat": 6.563541666666667,
+            "lon": 146.65381943333333
+        },
+        {
+            "name": "YNZEI",
+            "lat": 6.5868111166666665,
+            "lon": 146.92295556666667
+        },
+        {
+            "name": "YNZEM",
+            "lat": 6.570769433333333,
+            "lon": 146.73723611666668
+        },
+        {
+            "name": "YNZEZ",
+            "lat": 6.583213883333333,
+            "lon": 146.88124443333334
+        },
+        {
+            "name": "YNZWA",
+            "lat": 6.696111116666667,
+            "lon": 146.53506666666667
+        },
+        {
+            "name": "YNZWF",
+            "lat": 6.561544433333333,
+            "lon": 146.63081111666668
+        },
+        {
+            "name": "YNZWH",
+            "lat": 6.576083333333333,
+            "lon": 146.79867778333335
+        },
+        {
+            "name": "YNZWI",
+            "lat": 6.5543,
+            "lon": 146.54739721666667
+        },
+        {
+            "name": "YNZWM",
+            "lat": 6.568866666666667,
+            "lon": 146.71525833333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "CF09": "CF09 AT OR ABOVE 2600",
+                "FF09": "FF09 1500",
+                "NZ": "NZ 410 RNW 09 TRK 088 UNTIL 1500 TURN RIGHT DIRECT NZ SPEED 185",
+                "WESFI": "WESFI AT OR ABOVE 6000 FAF FF09 MAP NZ"
+            },
+            "transitions": [
+                {
+                    "name": "WESFI",
+                    "fixes": {
+                        "WESFI": "WESFI AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD27",
+            "fixes": {
+                "FF27": "FF27 1700 SPEED 170 RNW 27",
+                "NZ": "OVERFLY NZ TRK 268 UNTIL 2000 TURN LEFT DIRECT NZ SPEED 185",
+                "LARID": "LARID AT OR ABOVE 6300 FAF FF27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "LARID",
+                    "fixes": {
+                        "LARID": "LARID AT OR ABOVE 6300",
+                        "D108L": "D108L AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "YNZWI": "YNZWI AT OR ABOVE 3300",
+                "YNZWF": "YNZWF 1900",
+                "YNZWM": "YNZWM 288 RNW 09",
+                "YNZWH": "YNZWH",
+                "LARID": "LARID TRK 124 UNTIL 7600 FAF YNZWF MAP YNZWM"
+            },
+            "transitions": [
+                {
+                    "name": "OPIGO",
+                    "fixes": {
+                        "OPIGO": "OPIGO",
+                        "LARID": "LARID AT OR ABOVE 7600",
+                        "YNZWA": "YNZWA AT OR ABOVE 6900 SPEED 210"
+                    }
+                },
+                {
+                    "name": "WESFI",
+                    "fixes": {
+                        "WESFI": "WESFI AT OR ABOVE 6900 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "YNZEI": "YNZEI AT OR ABOVE 3600 SPEED 210",
+                "YNZEZ": "YNZEZ AT OR ABOVE 3010",
+                "YNZEF": "YNZEF 1900",
+                "YNZEM": "OVERFLY YNZEM 269 RNW 27",
+                "YNZEH": "YNZEH TRK 270 UNTIL 2700 TURN LEFT DIRECT",
+                "LARID": "LARID AT OR ABOVE 7600 SPEED 210 FAF YNZEF MAP YNZEM"
+            },
+            "transitions": [
+                {
+                    "name": "OPIGO",
+                    "fixes": {
+                        "OPIGO": "OPIGO",
+                        "LARID": "LARID AT OR ABOVE 7600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR09",
+            "fixes": {
+                "FS09": "FS09 2500",
+                "NZ": "NZ 409 RNW 09 TRK 088 UNTIL 1500 HDG 145 INTERCEPT RADIAL 115 TO",
+                "LARID": "LARID SPEED 185 LARID AT OR ABOVE 6300 FAF FS09 MAP NZ"
+            },
+            "transitions": [
+                {
+                    "name": "NZ",
+                    "fixes": {
+                        "NZ": "NZ AT OR BELOW 8500 AT OR ABOVE 6000 SPEED 160 TRK 285 UNTIL 12.0 FROM NZ"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "AMBIE",
+            "lat": 40.820563883333335,
+            "lon": 76.66806388333333
+        },
+        {
+            "name": "DIANO",
+            "lat": 41.00055278333333,
+            "lon": 76.22605
+        },
+        {
+            "name": "JUMUX",
+            "lat": 40.851875,
+            "lon": 76.49024721666666
+        },
+        {
+            "name": "NOHUB",
+            "lat": 40.869525,
+            "lon": 76.41660278333333
+        },
+        {
+            "name": "SEG",
+            "lat": 40.79085833333333,
+            "lon": 76.88404166666666
+        },
+        {
+            "name": "USIGY",
+            "lat": 40.89455278333333,
+            "lon": 76.31180278333333
+        },
+        {
+            "name": "YANUB",
+            "lat": 40.820427783333336,
+            "lon": 76.62091943333333
+        },
+        {
+            "name": "YUTYO",
+            "lat": 40.807997216666664,
+            "lon": 76.67231666666666
+        },
+        {
+            "name": "ZENGU",
+            "lat": 40.81008056666667,
+            "lon": 76.66375556666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "SEG": "SEG AT OR ABOVE 4000 OVERFLY SEG AT OR ABOVE 4000 HOLD AT SEG RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4 FAF ZENGU MAP RNW 08",
+                "ZENGU": "ZENGU 2500",
+                "YANUB": "YANUB AT OR ABOVE 1840 RNW 08 TRK 083 UNTIL 2300 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SEG",
+                    "fixes": {
+                        "SEG": "SEG RIGHT TURN INBOUNDCOURSE 094 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "USIGY": "USIGY AT OR ABOVE 4000",
+                "NOHUB": "NOHUB 2900",
+                "JUMUX": "JUMUX AT OR ABOVE 1780 RNW 26 TRK 264 UNTIL 1281",
+                "YUTYO": "OVERFLY YUTYO AT OR ABOVE 3000 HOLD AT YUTYO RIGHT TURN INBOUNDCOURSE 083 LEGDIST 4 FAF NOHUB MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "DIANO",
+                    "fixes": {
+                        "DIANO": "DIANO"
+                    }
+                },
+                {
+                    "name": "SEG",
+                    "fixes": {
+                        "SEG": "SEG",
+                        "USIGY": "OVERFLY USIGY AT OR ABOVE 4200 HOLD AT USIGY RIGHT TURN INBOUNDCOURSE 264 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR08",
+            "fixes": {
+                "SEG": "SEG AT OR ABOVE 3500 SEG AT OR ABOVE 4000 HOLD AT SEG RIGHT TURN INBOUNDCOURSE 088 LEGTIME 1 FAF AMBIE MAP RNW 08",
+                "AMBIE": "AMBIE 2600 RNW 08 TRK 088 UNTIL 1290 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SEG",
+                    "fixes": {
+                        "SEG": "SEG RIGHT TURN INBOUNDCOURSE 088 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

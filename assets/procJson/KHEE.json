@@ -1,0 +1,126 @@
+{
+    "fixes": [
+        {
+            "name": "BAFZU",
+            "lat": 34.62318056666667,
+            "lon": 90.67725278333333
+        },
+        {
+            "name": "BILAC",
+            "lat": 34.771180566666665,
+            "lon": 90.67581111666667
+        },
+        {
+            "name": "DACED",
+            "lat": 34.386833333333335,
+            "lon": 90.67953888333334
+        },
+        {
+            "name": "ECULE",
+            "lat": 34.541069433333334,
+            "lon": 90.68484721666667
+        },
+        {
+            "name": "FA36",
+            "lat": 34.49128888333333,
+            "lon": 90.70013333333333
+        },
+        {
+            "name": "HIVDA",
+            "lat": 34.67035833333333,
+            "lon": 90.67679443333333
+        },
+        {
+            "name": "PI001",
+            "lat": 34.51844543333333,
+            "lon": 90.69153028333334
+        },
+        {
+            "name": "PI002",
+            "lat": 34.48151175,
+            "lon": 90.76605371666666
+        },
+        {
+            "name": "PI003",
+            "lat": 34.41332151666667,
+            "lon": 90.72327688333333
+        },
+        {
+            "name": "TILOC",
+            "lat": 34.53876111666667,
+            "lon": 90.67807221666666
+        },
+        {
+            "name": "UJM",
+            "lat": 34.57504721666667,
+            "lon": 90.67440278333333
+        },
+        {
+            "name": "UNLOW",
+            "lat": 34.48749721666667,
+            "lon": 90.67856943333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "BILAC": "BILAC AT OR ABOVE 1900",
+                "HIVDA": "HIVDA 1900",
+                "BAFZU": "BAFZU AT OR ABOVE 1000 RNW 18 TRK 179 UNTIL 542",
+                "DACED": "OVERFLY DACED AT OR ABOVE 1900 HOLD AT DACED RIGHT TURN INBOUNDCOURSE 359 LEGDIST 4 FAF HIVDA MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "BILAC",
+                    "fixes": {
+                        "BILAC": "BILAC RIGHT TURN INBOUNDCOURSE 179 ALT 1900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DACED": "DACED AT OR ABOVE 1900",
+                "UNLOW": "UNLOW 1900",
+                "TILOC": "TILOC AT OR ABOVE 900 RNW 36 TRK 359 UNTIL 487",
+                "BILAC": "OVERFLY BILAC AT OR ABOVE 1900 HOLD AT BILAC RIGHT TURN INBOUNDCOURSE 179 LEGDIST 4 FAF UNLOW MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "DACED",
+                    "fixes": {
+                        "DACED": "DACED RIGHT TURN INBOUNDCOURSE 359 ALT 1900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR36",
+            "fixes": {
+                "FA36": "FA36 1900",
+                "ECULE": "ECULE AT OR ABOVE 900 RNW 36",
+                "UJM": "OVERFLY UJM TRK 013 UNTIL 1900 TURN LEFT DIRECT UJM HOLD AT UJM RIGHT TURN INBOUNDCOURSE 171 LEGTIME 1 FAF FA36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "UJM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1900 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

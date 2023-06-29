@@ -1,0 +1,131 @@
+{
+    "fixes": [
+        {
+            "name": "CETPU",
+            "lat": 40.559375,
+            "lon": 80.24205556666666
+        },
+        {
+            "name": "CUTTA",
+            "lat": 40.876252783333335,
+            "lon": 80.64323611666667
+        },
+        {
+            "name": "DEFLU",
+            "lat": 40.83752221666667,
+            "lon": 79.70378056666667
+        },
+        {
+            "name": "EARED",
+            "lat": 40.959041666666664,
+            "lon": 79.68010833333334
+        },
+        {
+            "name": "EWC",
+            "lat": 40.824933333333334,
+            "lon": 80.21154443333333
+        },
+        {
+            "name": "TALLS",
+            "lat": 40.85075556666666,
+            "lon": 79.43253888333334
+        },
+        {
+            "name": "WEBVU",
+            "lat": 40.80623333333333,
+            "lon": 79.83111666666667
+        },
+        {
+            "name": "WOTID",
+            "lat": 40.714877783333336,
+            "lon": 80.19898056666666
+        },
+        {
+            "name": "XUFIB",
+            "lat": 40.787925,
+            "lon": 79.90529166666667
+        },
+        {
+            "name": "ZUGOP",
+            "lat": 40.74661388333333,
+            "lon": 80.07183611666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS08",
+            "fixes": {
+                "WOTID": "WOTID AT OR ABOVE 3000",
+                "ZUGOP": "ZUGOP 3000 RNW 08 TRK 080 UNTIL 1800 TURN LEFT DIRECT",
+                "EWC": "EWC AT OR ABOVE 3000 HOLD AT EWC RIGHT TURN INBOUNDCOURSE 100 LEGTIME 1 FAF ZUGOP MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "EWC",
+                    "fixes": {
+                        "EWC": "EWC",
+                        "WOTID": "WOTID AT OR ABOVE 3000 HOLD AT WOTID RIGHT TURN INBOUNDCOURSE 080 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "WOTID": "WOTID AT OR ABOVE 3000",
+                "ZUGOP": "ZUGOP 3000 RNW 08 TRK 080 UNTIL 1497",
+                "DEFLU": "OVERFLY DEFLU AT OR ABOVE 3100 HOLD AT DEFLU RIGHT TURN INBOUNDCOURSE 260 LEGDIST 4 FAF ZUGOP MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "CETPU",
+                    "fixes": {
+                        "CETPU": "CETPU"
+                    }
+                },
+                {
+                    "name": "CUTTA",
+                    "fixes": {
+                        "CUTTA": "CUTTA"
+                    }
+                },
+                {
+                    "name": "EWC",
+                    "fixes": {
+                        "EWC": "EWC",
+                        "WOTID": "OVERFLY WOTID AT OR ABOVE 3000 HOLD AT WOTID RIGHT TURN INBOUNDCOURSE 080 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "DEFLU": "DEFLU AT OR ABOVE 3000",
+                "WEBVU": "WEBVU 3000",
+                "XUFIB": "XUFIB AT OR ABOVE 1860 RNW 26 TRK 260 UNTIL 1648",
+                "WOTID": "OVERFLY WOTID AT OR ABOVE 3000 HOLD AT WOTID RIGHT TURN INBOUNDCOURSE 080 LEGDIST 4 FAF WEBVU MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "EARED",
+                    "fixes": {
+                        "EARED": "EARED"
+                    }
+                },
+                {
+                    "name": "TALLS",
+                    "fixes": {
+                        "TALLS": "TALLS"
+                    }
+                }
+            ]
+        }
+    ]
+}

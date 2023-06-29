@@ -1,0 +1,231 @@
+{
+    "fixes": [
+        {
+            "name": "40DME",
+            "lat": 49.154586116666664,
+            "lon": 5.644244433333333
+        },
+        {
+            "name": "CI01",
+            "lat": 49.08961111666667,
+            "lon": 5.621833333333333
+        },
+        {
+            "name": "D012D",
+            "lat": 49.29999166666666,
+            "lon": 5.699913883333333
+        },
+        {
+            "name": "D013D",
+            "lat": 49.29935278333333,
+            "lon": 5.703469433333334
+        },
+        {
+            "name": "D180I",
+            "lat": 49.0773,
+            "lon": 5.666427783333333
+        },
+        {
+            "name": "D181H",
+            "lat": 49.09554166666667,
+            "lon": 5.663852783333334
+        },
+        {
+            "name": "D181I",
+            "lat": 49.077413883333335,
+            "lon": 5.662411116666666
+        },
+        {
+            "name": "D183H",
+            "lat": 49.09752221666667,
+            "lon": 5.657008333333334
+        },
+        {
+            "name": "D193I",
+            "lat": 49.090277783333335,
+            "lon": 5.6180555666666665
+        },
+        {
+            "name": "ETNNB",
+            "lat": 49.22858333333333,
+            "lon": 5.674472216666667
+        },
+        {
+            "name": "FE19Z",
+            "lat": 49.31741666666667,
+            "lon": 5.705611116666667
+        },
+        {
+            "name": "FI01",
+            "lat": 49.13494443333333,
+            "lon": 5.6384444333333334
+        },
+        {
+            "name": "FN01",
+            "lat": 49.135305566666666,
+            "lon": 5.636388883333334
+        },
+        {
+            "name": "FQE01",
+            "lat": 49.13438888333334,
+            "lon": 5.638222216666667
+        },
+        {
+            "name": "IE19Z",
+            "lat": 49.38216666666667,
+            "lon": 5.729555566666667
+        },
+        {
+            "name": "MQ01Z",
+            "lat": 49.20284443333333,
+            "lon": 5.663947216666667
+        },
+        {
+            "name": "QE400",
+            "lat": 49.03722221666666,
+            "lon": 5.602666666666667
+        },
+        {
+            "name": "QE401",
+            "lat": 49.281166666666664,
+            "lon": 5.692222216666667
+        },
+        {
+            "name": "QE402",
+            "lat": 49.300638883333335,
+            "lon": 5.568444433333333
+        },
+        {
+            "name": "QE403",
+            "lat": 49.19538888333334,
+            "lon": 5.529944433333333
+        },
+        {
+            "name": "QE404",
+            "lat": 49.056611116666666,
+            "lon": 5.479472216666666
+        },
+        {
+            "name": "QE410",
+            "lat": 49.232,
+            "lon": 5.569472216666666
+        },
+        {
+            "name": "QE411",
+            "lat": 49.39972221666667,
+            "lon": 5.617972216666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS01",
+            "fixes": {
+                "CI01": "CI01 2400",
+                "FI01": "FI01 2400 RNW 01",
+                "D012D": "OVERFLY D012D TURN RIGHT DIRECT",
+                "ETNNB": "ETNNB 2400 FAF FI01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ETN",
+                    "fixes": {
+                        "ETNNB": "ETNNB",
+                        "D180I": "OVERFLY D180I AT OR BELOW 3000 AT OR ABOVE 2400 SPEED 160"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBY01",
+            "fixes": {
+                "FN01": "FN01 2400 RNW 01",
+                "ETNNB": "OVERFLY ETNNB TRK 013 UNTIL 2100 TURN RIGHT DIRECT ETNNB 2400 FAF FN01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ETN1",
+                    "fixes": {
+                        "ETNNB": "ETNNB",
+                        "D181H": "OVERFLY D181H SPEED 160"
+                    }
+                },
+                {
+                    "name": "ETN2",
+                    "fixes": {
+                        "ETNNB": "ETNNB",
+                        "D183H": "OVERFLY D183H SPEED 135"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDZ01",
+            "fixes": {
+                "FN01": "FN01 2400",
+                "40DME": "40DME AT OR ABOVE 2010",
+                "MQ01Z": "MQ01Z 1059 RNW 01",
+                "ETNNB": "OVERFLY ETNNB ETNNB 2400 FAF FN01 MAP MQ01Z",
+                "D013D": "OVERFLY D013D TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ETN",
+                    "fixes": {
+                        "ETNNB": "ETNNB",
+                        "D181I": "OVERFLY D181I AT OR BELOW 3000 AT OR ABOVE 2400 SPEED 160 TURN RIGHT DIRECT",
+                        "D193I": "D193I 2400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "FQE01": "FQE01 2400 RNW 01",
+                "QE401": "QE401 AT OR BELOW 3000 SPEED 180",
+                "QE402": "QE402 AT OR BELOW 3000 SPEED 180",
+                "QE403": "QE403 3000 SPEED 180",
+                "QE404": "QE404 3000 SPEED 180 TURN LEFT DIRECT",
+                "QE400": "QE400 3000 SPEED 200 FAF FQE01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "QE400",
+                    "fixes": {
+                        "QE400": "QE400 3000 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ19",
+            "fixes": {
+                "IE19Z": "IE19Z 2500 SPEED 180",
+                "FE19Z": "FE19Z 2500 RNW 19 TURN RIGHT DIRECT",
+                "QE411": "QE411 AT OR BELOW 3000 SPEED 180 FAF FE19Z MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "QE400",
+                    "fixes": {
+                        "QE400": "QE400 3000 SPEED 200",
+                        "QE410": "QE410",
+                        "QE411": "QE411 SPEED 180"
+                    }
+                },
+                {
+                    "name": "QE411",
+                    "fixes": {
+                        "QE411": "QE411 AT OR BELOW 3000 AT OR ABOVE 2500 SPEED 180"
+                    }
+                }
+            ]
+        }
+    ]
+}

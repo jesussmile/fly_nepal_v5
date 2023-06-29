@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "ARGYL",
+            "lat": 31.001019433333333,
+            "lon": 83.62413888333333
+        },
+        {
+            "name": "IBEBE",
+            "lat": 31.448586116666668,
+            "lon": 83.31291943333333
+        },
+        {
+            "name": "JUXEL",
+            "lat": 31.173980566666668,
+            "lon": 83.40625
+        },
+        {
+            "name": "TIGEE",
+            "lat": 31.097019433333333,
+            "lon": 83.50336943333333
+        },
+        {
+            "name": "UBEDY",
+            "lat": 31.06948888333333,
+            "lon": 83.53804166666667
+        },
+        {
+            "name": "WUBSU",
+            "lat": 31.082469433333333,
+            "lon": 83.77214721666667
+        },
+        {
+            "name": "WUMOM",
+            "lat": 31.269386116666666,
+            "lon": 83.28550556666667
+        },
+        {
+            "name": "ZASIT",
+            "lat": 31.20133888333333,
+            "lon": 83.37166666666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 15",
+        "RNW 23",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "ARGYL": "ARGYL AT OR ABOVE 2000",
+                "UBEDY": "UBEDY 2000 RNW 05 TRK 051 UNTIL 534",
+                "ZASIT": "ZASIT",
+                "IBEBE": "OVERFLY IBEBE AT OR ABOVE 3000 HOLD AT IBEBE RIGHT TURN INBOUNDCOURSE 196 LEGDIST 4 FAF UBEDY MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "ARGYL",
+                    "fixes": {
+                        "ARGYL": "ARGYL RIGHT TURN INBOUNDCOURSE 051 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WUBSU",
+                    "fixes": {
+                        "WUBSU": "WUBSU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "WUMOM": "WUMOM AT OR ABOVE 3000",
+                "ZASIT": "ZASIT 2000",
+                "JUXEL": "JUXEL AT OR ABOVE 1220 RNW 23 TRK 231 UNTIL 536",
+                "TIGEE": "TIGEE",
+                "WUBSU": "OVERFLY WUBSU AT OR ABOVE 3000 HOLD AT WUBSU RIGHT TURN INBOUNDCOURSE 070 LEGDIST 4 FAF ZASIT MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "IBEBE",
+                    "fixes": {
+                        "IBEBE": "IBEBE"
+                    }
+                },
+                {
+                    "name": "WUBSU",
+                    "fixes": {
+                        "WUBSU": "WUBSU",
+                        "WUMOM": "OVERFLY WUMOM AT OR ABOVE 3000 HOLD AT WUMOM RIGHT TURN INBOUNDCOURSE 231 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,153 @@
+{
+    "fixes": [
+        {
+            "name": "ATOXI",
+            "lat": 6.141997216666667,
+            "lon": 67.72080833333334
+        },
+        {
+            "name": "FS07",
+            "lat": 6.129986116666666,
+            "lon": 67.600825
+        },
+        {
+            "name": "GIKRO",
+            "lat": 6.08995,
+            "lon": 67.65960556666667
+        },
+        {
+            "name": "MOSNO",
+            "lat": 6.131375,
+            "lon": 67.58690278333333
+        },
+        {
+            "name": "MS07",
+            "lat": 6.166702783333333,
+            "lon": 67.52563333333333
+        },
+        {
+            "name": "OVTUD",
+            "lat": 5.903611116666667,
+            "lon": 68.0
+        },
+        {
+            "name": "PC901",
+            "lat": 6.164694433333334,
+            "lon": 67.52873611666666
+        },
+        {
+            "name": "PTC",
+            "lat": 6.181388883333334,
+            "lon": 67.49555556666667
+        },
+        {
+            "name": "SIDUN",
+            "lat": 5.93,
+            "lon": 68.9125
+        },
+        {
+            "name": "SIPAN",
+            "lat": 6.017205566666667,
+            "lon": 67.52853333333333
+        },
+        {
+            "name": "UDESO",
+            "lat": 6.048527783333333,
+            "lon": 67.73230278333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "OVTU1B",
+            "rnw": "25",
+            "fixes": {
+                "PC901": "OVERFLY PC901 AT OR ABOVE 600",
+                "OVTUD": "OVTUD AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SIDU1A",
+            "rnw": "25",
+            "fixes": {
+                "SIDUN": "SIDUN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SIDU1D",
+            "rnw": "25",
+            "fixes": {
+                "PC901": "OVERFLY PC901 AT OR ABOVE 600",
+                "SIDUN": "SIDUN AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "OVTU1A",
+            "runway": "RNW 07",
+            "fixes": {
+                "OVTUD": "OVTUD AT OR ABOVE 5000",
+                "UDESO": "UDESO AT OR ABOVE 4000"
+            }
+        },
+        {
+            "name": "SIDU1B",
+            "runway": "RNW 07",
+            "fixes": {
+                "SIDUN": "SIDUN AT OR ABOVE 6000",
+                "UDESO": "UDESO AT OR ABOVE 4000"
+            }
+        },
+        {
+            "name": "SIDU1C",
+            "runway": "RNW 07",
+            "fixes": {
+                "SIDUN": "SIDUN AT OR ABOVE 6000",
+                "ATOXI": "ATOXI AT OR ABOVE 4000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD07",
+            "fixes": {
+                "FS07": "FS07 2300",
+                "MS07": "MS07 784 RNW 07",
+                "PTC": "OVERFLY PTC TURN LEFT DIRECT PTC AT OR ABOVE 4000 HOLD AT PTC RIGHT TURN INBOUNDCOURSE 076 ALT 4000 LEGDIST 7 FAF FS07 MAP MS07"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "GIKRO": "GIKRO AT OR ABOVE 3100",
+                "MOSNO": "MOSNO 2100 RNW 07 TURN RIGHT DIRECT",
+                "SIPAN": "OVERFLY SIPAN AT OR ABOVE 4000 SPEED 160 HOLD AT SIPAN LEFT TURN INBOUNDCOURSE 023 ALT 4000 SPEED 200 LEGTIME 1 FAF MOSNO MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "ATOXI",
+                    "fixes": {
+                        "ATOXI": "ATOXI AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "UDESO",
+                    "fixes": {
+                        "UDESO": "UDESO AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

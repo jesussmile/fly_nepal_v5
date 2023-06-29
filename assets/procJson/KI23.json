@@ -1,0 +1,92 @@
+{
+    "fixes": [
+        {
+            "name": "AMNIO",
+            "lat": 39.72951388333333,
+            "lon": 83.28115556666667
+        },
+        {
+            "name": "BIMGY",
+            "lat": 39.64493611666666,
+            "lon": 83.35533333333333
+        },
+        {
+            "name": "CSSNB",
+            "lat": 39.60088888333333,
+            "lon": 83.39159166666667
+        },
+        {
+            "name": "JOGER",
+            "lat": 39.72077778333333,
+            "lon": 83.40681666666667
+        },
+        {
+            "name": "LIMPS",
+            "lat": 39.83006111666667,
+            "lon": 83.20083333333334
+        },
+        {
+            "name": "PI001",
+            "lat": 39.64746705,
+            "lon": 83.34599873333333
+        },
+        {
+            "name": "PI002",
+            "lat": 39.65740468333333,
+            "lon": 83.25381585
+        },
+        {
+            "name": "PI003",
+            "lat": 39.733921966666664,
+            "lon": 83.26116296666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB23",
+            "fixes": {
+                "CSSNB": "CSSNB 1700 RNW 23 TRK 223 UNTIL 2000 TURN LEFT DIRECT CSSNB AT OR ABOVE 2600 HOLD AT CSSNB LEFT TURN INBOUNDCOURSE 223 LEGTIME 1 FAF CSSNB MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "JOGER",
+                    "fixes": {
+                        "JOGER": "JOGER",
+                        "CSSNB": "CSSNB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "AMNIO": "AMNIO AT OR ABOVE 3000 OVERFLY AMNIO AT OR ABOVE 3000 HOLD AT AMNIO RIGHT TURN INBOUNDCOURSE 220 LEGDIST 4 FAF BIMGY MAP RNW 23",
+                "BIMGY": "BIMGY 2600 RNW 23 TRK 220 UNTIL 1700 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JOGER",
+                    "fixes": {
+                        "JOGER": "JOGER",
+                        "AMNIO": "OVERFLY AMNIO AT OR ABOVE 3000 HOLD AT AMNIO RIGHT TURN INBOUNDCOURSE 220 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LIMPS",
+                    "fixes": {
+                        "LIMPS": "LIMPS"
+                    }
+                }
+            ]
+        }
+    ]
+}

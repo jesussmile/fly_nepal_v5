@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "DELFA",
+            "lat": 39.713022216666666,
+            "lon": 75.925675
+        },
+        {
+            "name": "ENUKE",
+            "lat": 39.889797216666665,
+            "lon": 75.69076666666666
+        },
+        {
+            "name": "YOSGU",
+            "lat": 39.799022216666664,
+            "lon": 75.81162221666666
+        },
+        {
+            "name": "ZEYNU",
+            "lat": 39.94793333333333,
+            "lon": 75.61311111666667
+        },
+        {
+            "name": "ZIXIS",
+            "lat": 39.771316666666664,
+            "lon": 75.84841388333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "DELFA": "DELFA AT OR ABOVE 2200",
+                "ZIXIS": "ZIXIS 2000",
+                "YOSGU": "YOSGU AT OR ABOVE 1240 RNW 06 TRK 055 UNTIL 800",
+                "ZEYNU": "OVERFLY ZEYNU AT OR ABOVE 2200 HOLD AT ZEYNU RIGHT TURN INBOUNDCOURSE 235 LEGDIST 4 FAF ZIXIS MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "DELFA",
+                    "fixes": {
+                        "DELFA": "DELFA RIGHT TURN INBOUNDCOURSE 055 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "ZEYNU": "ZEYNU AT OR ABOVE 2200",
+                "ENUKE": "ENUKE 2000 RNW 24 TRK 235 UNTIL 835",
+                "DELFA": "OVERFLY DELFA AT OR ABOVE 2200 HOLD AT DELFA RIGHT TURN INBOUNDCOURSE 055 LEGDIST 4 FAF ENUKE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "ZEYNU",
+                    "fixes": {
+                        "ZEYNU": "ZEYNU RIGHT TURN INBOUNDCOURSE 235 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

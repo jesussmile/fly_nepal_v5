@@ -1,0 +1,175 @@
+{
+    "fixes": [
+        {
+            "name": "CARRO",
+            "lat": 47.293897216666664,
+            "lon": 122.85773888333334
+        },
+        {
+            "name": "CF17",
+            "lat": 47.489875,
+            "lon": 122.53790833333333
+        },
+        {
+            "name": "ECAZA",
+            "lat": 47.3686,
+            "lon": 122.55988611666666
+        },
+        {
+            "name": "FAVDU",
+            "lat": 47.46156666666667,
+            "lon": 122.54300278333334
+        },
+        {
+            "name": "FESAS",
+            "lat": 47.08717778333333,
+            "lon": 122.73350556666666
+        },
+        {
+            "name": "GANCA",
+            "lat": 47.07710556666667,
+            "lon": 122.61246111666667
+        },
+        {
+            "name": "JUYCU",
+            "lat": 47.471666666666664,
+            "lon": 122.66492221666667
+        },
+        {
+            "name": "KEFPU",
+            "lat": 47.176422216666666,
+            "lon": 122.59461111666667
+        },
+        {
+            "name": "OLM",
+            "lat": 46.971638883333334,
+            "lon": 122.90183333333333
+        },
+        {
+            "name": "PI001",
+            "lat": 47.415659166666664,
+            "lon": 122.55134693333333
+        },
+        {
+            "name": "PI002",
+            "lat": 47.47211475,
+            "lon": 122.61662168333334
+        },
+        {
+            "name": "PI003",
+            "lat": 47.523181533333336,
+            "lon": 122.53177463333333
+        },
+        {
+            "name": "SCENN",
+            "lat": 47.357761116666666,
+            "lon": 122.56185278333334
+        },
+        {
+            "name": "SEA",
+            "lat": 47.435372216666664,
+            "lon": 122.30961666666667
+        },
+        {
+            "name": "TETGE",
+            "lat": 47.359552783333335,
+            "lon": 122.56153056666666
+        },
+        {
+            "name": "WAPGI",
+            "lat": 47.168925,
+            "lon": 122.59595833333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "NARRO1",
+            "rnw": "08",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 17",
+                    "fixes": {
+                        "RNW 17": "RNW 17 HDG 167 UNTIL 1500 HDG 250 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 35",
+                    "fixes": {
+                        "RNW 35": "RNW 35 HDG 347 UNTIL 1000 HDG 250 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS17",
+            "fixes": {
+                "CF17": "CF17 AT OR ABOVE 2000",
+                "SCENN": "SCENN 1964 RNW 17 TRK 167 UNTIL 1500 TURN RIGHT HDG 290 INTERCEPT RADIAL 047 TO SCENN TURN RIGHT DIRECT SCENN AT OR ABOVE 2000 HOLD AT SCENN RIGHT TURN INBOUNDCOURSE 167 LEGTIME 1 FAF SCENN MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "SEA",
+                    "fixes": {
+                        "SEA": "SEA",
+                        "SCENN": "SCENN AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "FAVDU": "FAVDU AT OR ABOVE 2000",
+                "TETGE": "TETGE 2000 RNW 17",
+                "WAPGI": "WAPGI TURN RIGHT DIRECT",
+                "CARRO": "OVERFLY CARRO AT OR ABOVE 4000 HOLD AT CARRO RIGHT TURN INBOUNDCOURSE 047 LEGDIST 4 FAF TETGE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CARRO",
+                    "fixes": {
+                        "CARRO": "CARRO",
+                        "JUYCU": "JUYCU AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "GANCA": "GANCA AT OR ABOVE 2000",
+                "KEFPU": "KEFPU 2000 RNW 35",
+                "ECAZA": "ECAZA TURN LEFT DIRECT",
+                "CARRO": "OVERFLY CARRO AT OR ABOVE 4000 HOLD AT CARRO RIGHT TURN INBOUNDCOURSE 047 LEGDIST 4 FAF KEFPU MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CARRO",
+                    "fixes": {
+                        "CARRO": "CARRO",
+                        "FESAS": "FESAS AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "OLM",
+                    "fixes": {
+                        "OLM": "OLM",
+                        "FESAS": "FESAS AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

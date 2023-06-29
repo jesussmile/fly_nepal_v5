@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "40VOR",
+            "lat": 25.918652783333332,
+            "lon": 111.32182778333333
+        },
+        {
+            "name": "CF34",
+            "lat": 25.794633333333334,
+            "lon": 111.26651388333333
+        },
+        {
+            "name": "FF34",
+            "lat": 25.872147216666665,
+            "lon": 111.30107221666667
+        },
+        {
+            "name": "FS316",
+            "lat": 25.884777783333334,
+            "lon": 111.27532778333334
+        },
+        {
+            "name": "LTO",
+            "lat": 25.980655566666666,
+            "lon": 111.34952778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 25.932866933333333,
+            "lon": 111.31232288333334
+        },
+        {
+            "name": "PI002",
+            "lat": 25.920401016666666,
+            "lon": 111.23385088333333
+        },
+        {
+            "name": "PI003",
+            "lat": 25.844091466666665,
+            "lon": 111.24330806666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "LTO4A",
+            "rnw": "16",
+            "fixes": {
+                "LTO": "LTO AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LTO4B",
+            "rnw": "34",
+            "fixes": {
+                "LTO": "LTO AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD34",
+            "fixes": {
+                "CF34": "CF34 AT OR ABOVE 4000",
+                "FF34": "FF34 2500",
+                "40VOR": "40VOR AT OR ABOVE 1400",
+                "LTO": "LTO 34 RNW 34 TRK 329 UNTIL 440 TRK 007 UNTIL 7.0 FROM LTO TURN RIGHT DIRECT LTO AT OR ABOVE 5000 FAF FF34 MAP LTO"
+            },
+            "transitions": [
+                {
+                    "name": "LTO",
+                    "fixes": {
+                        "LTO": "LTO AT OR ABOVE 5000 TRK 134 UNTIL 12.0 FROM LTO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA16",
+            "fixes": {
+                "FS316": "FS316 2500",
+                "LTO": "LTO 780 RNW 16 TRK 007 UNTIL 7.0 FROM LTO TURN RIGHT DIRECT LTO AT OR ABOVE 5000 FAF FS316 MAP LTO"
+            },
+            "transitions": [
+                {
+                    "name": "LTO",
+                    "fixes": {
+                        "LTO": "LTO AT OR ABOVE 5000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA34",
+            "fixes": {
+                "FS316": "FS316 2500",
+                "LTO": "LTO 780 RNW 34 TRK 007 UNTIL 7.0 FROM LTO TURN RIGHT DIRECT LTO AT OR ABOVE 5000 FAF FS316 MAP LTO"
+            },
+            "transitions": [
+                {
+                    "name": "LTO",
+                    "fixes": {
+                        "LTO": "LTO AT OR ABOVE 5000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

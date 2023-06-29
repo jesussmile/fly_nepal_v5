@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "BUKVI",
+            "lat": 10.592444433333334,
+            "lon": 123.22666666666667
+        },
+        {
+            "name": "DAKON",
+            "lat": 10.843527783333334,
+            "lon": 122.89672221666666
+        },
+        {
+            "name": "TR401",
+            "lat": 10.898138883333333,
+            "lon": 122.96091666666666
+        },
+        {
+            "name": "TR402",
+            "lat": 10.834694433333333,
+            "lon": 123.01613888333333
+        },
+        {
+            "name": "TR601",
+            "lat": 10.64325,
+            "lon": 123.18255556666666
+        },
+        {
+            "name": "TR602",
+            "lat": 10.694055566666666,
+            "lon": 123.13841666666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "TR401": "TR401 AT OR ABOVE 3000",
+                "TR402": "TR402 2100 RNW 04 TRK 039 UNTIL 1000 TURN LEFT DIRECT",
+                "DAKON": "DAKON AT OR ABOVE 4000 HOLD AT DAKON RIGHT TURN INBOUNDCOURSE 129 ALT 4000 LEGTIME 1 FAF TR402 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "DAKON",
+                    "fixes": {
+                        "DAKON": "DAKON AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "TR601": "TR601 AT OR ABOVE 2800",
+                "TR602": "TR602 2100 RNW 22 TRK 219 UNTIL 1000 TURN RIGHT DIRECT",
+                "BUKVI": "BUKVI AT OR ABOVE 4000 HOLD AT BUKVI RIGHT TURN INBOUNDCOURSE 219 ALT 4000 LEGTIME 1 FAF TR602 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "BUKVI",
+                    "fixes": {
+                        "BUKVI": "BUKVI AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

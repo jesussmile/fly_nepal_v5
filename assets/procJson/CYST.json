@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "AVPUK",
+            "lat": 53.661752783333334,
+            "lon": 94.93777778333333
+        },
+        {
+            "name": "EMDUP",
+            "lat": 53.77166666666667,
+            "lon": 95.14838611666667
+        },
+        {
+            "name": "EMELI",
+            "lat": 53.78649166666667,
+            "lon": 94.93981666666667
+        },
+        {
+            "name": "IGSAV",
+            "lat": 53.71675556666667,
+            "lon": 95.04294443333333
+        },
+        {
+            "name": "IRBUB",
+            "lat": 53.973747216666666,
+            "lon": 94.66052778333334
+        },
+        {
+            "name": "MA266",
+            "lat": 53.84573888333333,
+            "lon": 94.84659721666667
+        },
+        {
+            "name": "OTRER",
+            "lat": 53.918736116666665,
+            "lon": 94.55473056666666
+        },
+        {
+            "name": "PI001",
+            "lat": 53.857928666666666,
+            "lon": 94.55474111666666
+        },
+        {
+            "name": "PI002",
+            "lat": 53.911989733333336,
+            "lon": 94.47491871666666
+        },
+        {
+            "name": "PI003",
+            "lat": 53.86519573333333,
+            "lon": 94.37145751666667
+        },
+        {
+            "name": "TIKEG",
+            "lat": 54.02866388333333,
+            "lon": 94.76660556666667
+        },
+        {
+            "name": "UDBED",
+            "lat": 53.79183333333334,
+            "lon": 94.93189721666667
+        },
+        {
+            "name": "VETPU",
+            "lat": 53.9114,
+            "lon": 94.75390278333333
+        },
+        {
+            "name": "XERUS",
+            "lat": 53.820563883333335,
+            "lon": 95.07338888333334
+        },
+        {
+            "name": "YIVNB",
+            "lat": 53.8539,
+            "lon": 94.65340556666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA04",
+            "fixes": {
+                "YIVNB": "YIVNB 3010 YIVNB 2100 HOLD AT YIVNB RIGHT TURN INBOUNDCOURSE 266 LEGTIME 1 FAF YIVNB MAP MA266",
+                "MA266": "MA266 1380 RNW 04 TRK 266 UNTIL 1380 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "YIV",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA22",
+            "fixes": {
+                "YIVNB": "YIVNB 3010 YIVNB 2100 HOLD AT YIVNB RIGHT TURN INBOUNDCOURSE 266 LEGTIME 1 FAF YIVNB MAP MA266",
+                "MA266": "MA266 1380 RNW 22 TRK 266 UNTIL 1380 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "YIV",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "IGSAV": "IGSAV AT OR ABOVE 2200",
+                "UDBED": "UDBED 2100 RNW 04 TRK 041 UNTIL 1170 TURN LEFT DIRECT",
+                "XERUS": "OVERFLY XERUS 2500 HOLD AT XERUS RIGHT TURN INBOUNDCOURSE 234 LEGTIME 1 FAF UDBED MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "AVPUK",
+                    "fixes": {
+                        "AVPUK": "AVPUK"
+                    }
+                },
+                {
+                    "name": "EMDUP",
+                    "fixes": {
+                        "EMDUP": "EMDUP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "IRBUB": "IRBUB AT OR ABOVE 2500",
+                "VETPU": "VETPU 2410 RNW 22",
+                "EMELI": "OVERFLY EMELI 2500 HOLD AT EMELI RIGHT TURN INBOUNDCOURSE 221 LEGTIME 1 FAF VETPU MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "OTRER",
+                    "fixes": {
+                        "OTRER": "OTRER"
+                    }
+                },
+                {
+                    "name": "TIKEG",
+                    "fixes": {
+                        "TIKEG": "TIKEG"
+                    }
+                }
+            ]
+        }
+    ]
+}

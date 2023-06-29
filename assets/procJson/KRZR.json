@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "AMZON",
+            "lat": 35.131444433333336,
+            "lon": 84.85426666666666
+        },
+        {
+            "name": "CULBO",
+            "lat": 35.168475,
+            "lon": 84.82906666666666
+        },
+        {
+            "name": "HUVPO",
+            "lat": 35.39495556666667,
+            "lon": 84.51240556666667
+        },
+        {
+            "name": "HWSEE",
+            "lat": 35.296813883333336,
+            "lon": 84.74155833333333
+        },
+        {
+            "name": "KAYAC",
+            "lat": 35.39341111666667,
+            "lon": 84.67548056666666
+        },
+        {
+            "name": "MMARS",
+            "lat": 35.02807778333333,
+            "lon": 84.92441666666667
+        },
+        {
+            "name": "WITIV",
+            "lat": 35.50819443333334,
+            "lon": 84.75888333333333
+        },
+        {
+            "name": "YODUL",
+            "lat": 35.02596388333333,
+            "lon": 85.08674721666667
+        },
+        {
+            "name": "ZUBEB",
+            "lat": 34.91340833333334,
+            "lon": 84.84125278333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MMARS": "MMARS AT OR ABOVE 4100 OVERFLY MMARS AT OR ABOVE 4100 HOLD AT MMARS RIGHT TURN INBOUNDCOURSE 034 ALT 4100 LEGDIST 5 FAF AMZON MAP RNW 03",
+                "AMZON": "AMZON 2700",
+                "CULBO": "CULBO AT OR ABOVE 1780 RNW 03 TRK 034 UNTIL 1800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MMARS",
+                    "fixes": {
+                        "MMARS": "MMARS RIGHT TURN INBOUNDCOURSE 034 ALT 4100 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "YODUL",
+                    "fixes": {
+                        "YODUL": "YODUL"
+                    }
+                },
+                {
+                    "name": "ZUBEB",
+                    "fixes": {
+                        "ZUBEB": "ZUBEB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "KAYAC": "KAYAC AT OR ABOVE 3700",
+                "HWSEE": "HWSEE 2600 RNW 21 TRK 214 UNTIL 1066",
+                "MMARS": "OVERFLY MMARS AT OR ABOVE 4100 HOLD AT MMARS RIGHT TURN INBOUNDCOURSE 034 LEGDIST 5 FAF HWSEE MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "HUVPO",
+                    "fixes": {
+                        "HUVPO": "HUVPO"
+                    }
+                },
+                {
+                    "name": "KAYAC",
+                    "fixes": {
+                        "KAYAC": "KAYAC RIGHT TURN INBOUNDCOURSE 214 ALT 3700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WITIV",
+                    "fixes": {
+                        "WITIV": "WITIV"
+                    }
+                }
+            ]
+        }
+    ]
+}

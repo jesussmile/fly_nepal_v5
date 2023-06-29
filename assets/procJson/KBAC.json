@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "CHAFE",
+            "lat": 46.80940833333333,
+            "lon": 97.39012778333333
+        },
+        {
+            "name": "CISGI",
+            "lat": 47.07268611666667,
+            "lon": 98.21259721666667
+        },
+        {
+            "name": "HIDGA",
+            "lat": 47.00325,
+            "lon": 98.10705278333333
+        },
+        {
+            "name": "HUHJO",
+            "lat": 46.90425,
+            "lon": 98.36546666666666
+        },
+        {
+            "name": "HUMIX",
+            "lat": 46.879336116666664,
+            "lon": 97.91974443333334
+        },
+        {
+            "name": "JEVLO",
+            "lat": 47.01247778333333,
+            "lon": 98.29714721666667
+        },
+        {
+            "name": "LECPU",
+            "lat": 46.916241666666664,
+            "lon": 97.97539166666667
+        },
+        {
+            "name": "PIBBS",
+            "lat": 46.80959443333333,
+            "lon": 97.81490833333334
+        },
+        {
+            "name": "RIPFE",
+            "lat": 46.749675,
+            "lon": 97.89948888333333
+        },
+        {
+            "name": "SEMJI",
+            "lat": 46.97053888333333,
+            "lon": 98.05747778333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 08",
+        "RNW 13",
+        "RNW 17",
+        "RNW 23",
+        "RNW 26",
+        "RNW 31",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "CISGI": "CISGI AT OR ABOVE 3000",
+                "HIDGA": "HIDGA 3000",
+                "SEMJI": "SEMJI AT OR ABOVE 2040 RNW 13",
+                "PIBBS": "OVERFLY PIBBS AT OR ABOVE 3100 HOLD AT PIBBS RIGHT TURN INBOUNDCOURSE 307 LEGDIST 4 FAF HIDGA MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "CISGI",
+                    "fixes": {
+                        "CISGI": "CISGI RIGHT TURN INBOUNDCOURSE 127 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HUHJO",
+                    "fixes": {
+                        "HUHJO": "HUHJO",
+                        "JEVLO": "JEVLO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "PIBBS": "PIBBS AT OR ABOVE 3100",
+                "HUMIX": "HUMIX 3100",
+                "LECPU": "LECPU AT OR ABOVE 2040 RNW 31",
+                "CISGI": "OVERFLY CISGI AT OR ABOVE 3000 HOLD AT CISGI RIGHT TURN INBOUNDCOURSE 127 LEGDIST 4 FAF HUMIX MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "CHAFE",
+                    "fixes": {
+                        "CHAFE": "CHAFE"
+                    }
+                },
+                {
+                    "name": "HUHJO",
+                    "fixes": {
+                        "HUHJO": "HUHJO",
+                        "RIPFE": "RIPFE AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "PIBBS",
+                    "fixes": {
+                        "PIBBS": "PIBBS RIGHT TURN INBOUNDCOURSE 307 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

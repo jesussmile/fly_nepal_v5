@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "ESLNB",
+            "lat": 38.111333333333334,
+            "lon": 147.15955556666665
+        },
+        {
+            "name": "FQ27",
+            "lat": 38.099069433333334,
+            "lon": 147.04900278333332
+        },
+        {
+            "name": "MA27",
+            "lat": 38.09269166666667,
+            "lon": 146.99218611666666
+        },
+        {
+            "name": "MQ27",
+            "lat": 38.092005566666664,
+            "lon": 146.98608333333334
+        },
+        {
+            "name": "WSLWA",
+            "lat": 38.12497221666667,
+            "lon": 146.74297221666666
+        },
+        {
+            "name": "WSLWB",
+            "lat": 38.05586111666667,
+            "lon": 146.70130556666666
+        },
+        {
+            "name": "WSLWC",
+            "lat": 38.001277783333336,
+            "lon": 146.76916666666668
+        },
+        {
+            "name": "WSLWF",
+            "lat": 38.07791666666667,
+            "lon": 146.86783333333332
+        },
+        {
+            "name": "WSLWH",
+            "lat": 38.12619443333333,
+            "lon": 147.01166666666666
+        },
+        {
+            "name": "WSLWI",
+            "lat": 38.066888883333334,
+            "lon": 146.78455556666665
+        },
+        {
+            "name": "WSLWM",
+            "lat": 38.08897221666667,
+            "lon": 146.95111111666668
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 09",
+        "RNW 14",
+        "RNW 23",
+        "RNW 27",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "WESTS2",
+            "rnw": "26",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 09",
+                    "fixes": {
+                        "RNW 09": "RNW 09 TRK 087 UNTIL 500 HDG 087 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 27",
+                    "fixes": {
+                        "RNW 27": "RNW 27 TRK 267 UNTIL 500 HDG 267 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBZ27",
+            "fixes": {
+                "ESLNB": "ESLNB 2500",
+                "MA27": "MA27 350 RNW 27 TRK 265 UNTIL 1500 HDG 160 VECTORS FAF ESLNB MAP MA27"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDBDY27",
+            "fixes": {
+                "ESLNB": "ESLNB AT OR ABOVE 2500",
+                "FQ27": "FQ27 1300",
+                "MQ27": "MQ27 262 RNW 27 TRK 265 UNTIL 1500 HDG 160 VECTORS FAF FQ27 MAP MQ27"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "WSLWI": "WSLWI AT OR ABOVE 2750",
+                "WSLWF": "WSLWF 1470",
+                "WSLWM": "OVERFLY WSLWM 198 RNW 09",
+                "WSLWH": "OVERFLY WSLWH TURN RIGHT DIRECT",
+                "WSLWA": "WSLWA AT OR ABOVE 3100 FAF WSLWF MAP WSLWM"
+            },
+            "transitions": [
+                {
+                    "name": "WSLWA",
+                    "fixes": {
+                        "WSLWA": "WSLWA 3100 SPEED 200"
+                    }
+                },
+                {
+                    "name": "WSLWB",
+                    "fixes": {
+                        "WSLWB": "WSLWB 3100 SPEED 200"
+                    }
+                },
+                {
+                    "name": "WSLWC",
+                    "fixes": {
+                        "WSLWC": "WSLWC 3100 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

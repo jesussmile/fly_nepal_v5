@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "COOMB",
+            "lat": 33.98868888333333,
+            "lon": 90.52291388333333
+        },
+        {
+            "name": "DOOME",
+            "lat": 33.56387778333333,
+            "lon": 90.52708611666667
+        },
+        {
+            "name": "DRIPT",
+            "lat": 33.855119433333336,
+            "lon": 90.52423056666666
+        },
+        {
+            "name": "LAARI",
+            "lat": 33.48273056666667,
+            "lon": 90.49535833333333
+        },
+        {
+            "name": "MAJMI",
+            "lat": 33.773519433333334,
+            "lon": 90.52268333333333
+        },
+        {
+            "name": "MINTI",
+            "lat": 33.714391666666664,
+            "lon": 90.47567221666667
+        },
+        {
+            "name": "NEDUE",
+            "lat": 33.6286,
+            "lon": 90.18037778333333
+        },
+        {
+            "name": "SODDY",
+            "lat": 33.61700556666667,
+            "lon": 90.39842221666666
+        },
+        {
+            "name": "SQS",
+            "lat": 33.46385,
+            "lon": 90.27735
+        },
+        {
+            "name": "YILUN",
+            "lat": 33.69745,
+            "lon": 90.52577778333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "COOMB": "COOMB AT OR ABOVE 2300",
+                "DRIPT": "DRIPT 1600 RNW 18 TRK 180 UNTIL 537",
+                "DOOME": "OVERFLY DOOME AT OR ABOVE 2300 HOLD AT DOOME RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF DRIPT MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "COOMB",
+                    "fixes": {
+                        "COOMB": "COOMB RIGHT TURN INBOUNDCOURSE 180 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DOOME": "DOOME AT OR ABOVE 2300",
+                "YILUN": "YILUN 1600 RNW 36 TRK 000 UNTIL 483",
+                "COOMB": "OVERFLY COOMB AT OR ABOVE 2300 HOLD AT COOMB RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF YILUN MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "DOOME",
+                    "fixes": {
+                        "DOOME": "DOOME RIGHT TURN INBOUNDCOURSE 000 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "SODDY": "SODDY AT OR ABOVE 2200",
+                "MINTI": "MINTI 1700 MINTI AT OR ABOVE 1700 HOLD AT MINTI RIGHT TURN INBOUNDCOURSE 324 LEGTIME 1 FAF MINTI MAP MAJMI",
+                "MAJMI": "MAJMI 780 RNW 18 TRK 324 UNTIL 780 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LAARI",
+                    "fixes": {
+                        "LAARI": "LAARI"
+                    }
+                },
+                {
+                    "name": "NEDUE",
+                    "fixes": {
+                        "NEDUE": "NEDUE"
+                    }
+                },
+                {
+                    "name": "SQS",
+                    "fixes": {
+                        "SQS": "SQS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "SODDY": "SODDY AT OR ABOVE 2200",
+                "MINTI": "MINTI 1700 MINTI AT OR ABOVE 1700 HOLD AT MINTI RIGHT TURN INBOUNDCOURSE 324 LEGTIME 1 FAF MINTI MAP MAJMI",
+                "MAJMI": "MAJMI 780 RNW 36 TRK 324 UNTIL 780 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LAARI",
+                    "fixes": {
+                        "LAARI": "LAARI"
+                    }
+                },
+                {
+                    "name": "NEDUE",
+                    "fixes": {
+                        "NEDUE": "NEDUE"
+                    }
+                },
+                {
+                    "name": "SQS",
+                    "fixes": {
+                        "SQS": "SQS"
+                    }
+                }
+            ]
+        }
+    ]
+}

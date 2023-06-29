@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "HESIS",
+            "lat": 45.441861116666665,
+            "lon": 68.60755278333333
+        },
+        {
+            "name": "LADNE",
+            "lat": 45.19734166666667,
+            "lon": 68.38498888333334
+        },
+        {
+            "name": "LELSE",
+            "lat": 45.527327783333334,
+            "lon": 68.68590833333333
+        },
+        {
+            "name": "MOZMO",
+            "lat": 45.48208888333333,
+            "lon": 68.78540833333334
+        },
+        {
+            "name": "RAEGN",
+            "lat": 45.28171388333333,
+            "lon": 68.46151666666667
+        },
+        {
+            "name": "UFAZY",
+            "lat": 45.57247778333333,
+            "lon": 68.58624721666666
+        },
+        {
+            "name": "UYOSI",
+            "lat": 45.12535556666667,
+            "lon": 68.54359443333334
+        },
+        {
+            "name": "WIXIV",
+            "lat": 45.26910556666667,
+            "lon": 68.22598333333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 17",
+        "RNW 24",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "LELSE": "LELSE AT OR ABOVE 2800",
+                "HESIS": "HESIS 2000 RNW 17",
+                "LADNE": "OVERFLY LADNE AT OR ABOVE 3100 HOLD AT LADNE RIGHT TURN INBOUNDCOURSE 346 LEGDIST 4 FAF HESIS MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "LELSE",
+                    "fixes": {
+                        "LELSE": "LELSE RIGHT TURN INBOUNDCOURSE 166 ALT 2800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MOZMO",
+                    "fixes": {
+                        "MOZMO": "MOZMO AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "UFAZY",
+                    "fixes": {
+                        "UFAZY": "UFAZY AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "LADNE": "LADNE AT OR ABOVE 3100",
+                "RAEGN": "RAEGN 2000 RNW 35 TRK 346 UNTIL 608",
+                "LELSE": "OVERFLY LELSE AT OR ABOVE 2800 HOLD AT LELSE RIGHT TURN INBOUNDCOURSE 166 LEGDIST 4 FAF RAEGN MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "LADNE",
+                    "fixes": {
+                        "LADNE": "LADNE RIGHT TURN INBOUNDCOURSE 346 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UYOSI",
+                    "fixes": {
+                        "UYOSI": "UYOSI"
+                    }
+                },
+                {
+                    "name": "WIXIV",
+                    "fixes": {
+                        "WIXIV": "WIXIV"
+                    }
+                }
+            ]
+        }
+    ]
+}

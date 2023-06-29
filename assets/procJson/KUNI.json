@@ -1,0 +1,189 @@
+{
+    "fixes": [
+        {
+            "name": "CF25",
+            "lat": 39.304858333333335,
+            "lon": 82.01275
+        },
+        {
+            "name": "CIMIX",
+            "lat": 39.11326111666666,
+            "lon": 82.45458333333333
+        },
+        {
+            "name": "CISBO",
+            "lat": 39.40523888333333,
+            "lon": 82.07026666666667
+        },
+        {
+            "name": "DEVAY",
+            "lat": 39.21581388333333,
+            "lon": 81.93436666666666
+        },
+        {
+            "name": "FARLN",
+            "lat": 39.377063883333335,
+            "lon": 81.84849166666666
+        },
+        {
+            "name": "FEKLO",
+            "lat": 39.16325556666666,
+            "lon": 82.34057778333333
+        },
+        {
+            "name": "HOPAX",
+            "lat": 39.31054721666667,
+            "lon": 82.002225
+        },
+        {
+            "name": "NETKE",
+            "lat": 39.20769166666667,
+            "lon": 82.52304443333334
+        },
+        {
+            "name": "PI001",
+            "lat": 39.28552031666667,
+            "lon": 82.06005281666667
+        },
+        {
+            "name": "PI002",
+            "lat": 39.35440795,
+            "lon": 82.0345057
+        },
+        {
+            "name": "PI003",
+            "lat": 39.337908133333336,
+            "lon": 81.9374951
+        },
+        {
+            "name": "SOYLO",
+            "lat": 39.018788883333336,
+            "lon": 82.38630556666666
+        },
+        {
+            "name": "TACOY",
+            "lat": 39.26145556666667,
+            "lon": 82.11540556666667
+        },
+        {
+            "name": "UGSNB",
+            "lat": 39.25725833333333,
+            "lon": 82.12596943333334
+        },
+        {
+            "name": "UXREL",
+            "lat": 39.18993888333333,
+            "lon": 82.27955833333333
+        },
+        {
+            "name": "ZEPEG",
+            "lat": 39.233325,
+            "lon": 82.18007778333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS25",
+            "fixes": {
+                "CF25": "CF25 AT OR ABOVE 2600",
+                "UGSNB": "UGSNB 2448 RNW 25 TRK 247 UNTIL 3000 TURN LEFT DIRECT UGSNB HOLD AT UGSNB RIGHT TURN INBOUNDCOURSE 247 LEGTIME 1 FAF UGSNB MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "FARLN",
+                    "fixes": {
+                        "FARLN": "FARLN AT OR ABOVE 2600 TRK 247 UNTIL 4.8 FROM FARLN"
+                    }
+                },
+                {
+                    "name": "UGS",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB25",
+            "fixes": {
+                "UGSNB": "UGSNB 2500 RNW 25 TRK 247 UNTIL 3000 TURN LEFT DIRECT UGSNB HOLD AT UGSNB RIGHT TURN INBOUNDCOURSE 247 LEGTIME 1 FAF UGSNB MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "UGS",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "CIMIX": "CIMIX AT OR ABOVE 3000",
+                "FEKLO": "FEKLO 2600",
+                "UXREL": "UXREL AT OR ABOVE 1560 RNW 07 TRK 067 UNTIL 1166",
+                "HOPAX": "OVERFLY HOPAX AT OR ABOVE 3000 HOLD AT HOPAX RIGHT TURN INBOUNDCOURSE 247 LEGDIST 4 FAF FEKLO MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "CIMIX",
+                    "fixes": {
+                        "CIMIX": "CIMIX RIGHT TURN INBOUNDCOURSE 067 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NETKE",
+                    "fixes": {
+                        "NETKE": "NETKE"
+                    }
+                },
+                {
+                    "name": "SOYLO",
+                    "fixes": {
+                        "SOYLO": "SOYLO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "HOPAX": "HOPAX AT OR ABOVE 3000",
+                "TACOY": "TACOY 2600",
+                "ZEPEG": "ZEPEG AT OR ABOVE 1500 RNW 25 TRK 247 UNTIL 965",
+                "CIMIX": "OVERFLY CIMIX AT OR ABOVE 3000 HOLD AT CIMIX RIGHT TURN INBOUNDCOURSE 067 LEGDIST 4 FAF TACOY MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "CISBO",
+                    "fixes": {
+                        "CISBO": "CISBO"
+                    }
+                },
+                {
+                    "name": "DEVAY",
+                    "fixes": {
+                        "DEVAY": "DEVAY"
+                    }
+                },
+                {
+                    "name": "HOPAX",
+                    "fixes": {
+                        "HOPAX": "HOPAX RIGHT TURN INBOUNDCOURSE 247 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,247 @@
+{
+    "fixes": [
+        {
+            "name": "DAKTA",
+            "lat": 34.98548888333333,
+            "lon": 173.20623611666667
+        },
+        {
+            "name": "EMVAN",
+            "lat": 35.11465,
+            "lon": 173.34851388333334
+        },
+        {
+            "name": "FN12",
+            "lat": 34.978175,
+            "lon": 173.18913333333333
+        },
+        {
+            "name": "FQ12",
+            "lat": 34.99076388333334,
+            "lon": 173.20241943333335
+        },
+        {
+            "name": "HOBBS",
+            "lat": 35.17815,
+            "lon": 173.55873056666667
+        },
+        {
+            "name": "KAROA",
+            "lat": 35.159630566666664,
+            "lon": 173.61603056666667
+        },
+        {
+            "name": "KT401",
+            "lat": 35.05136388333333,
+            "lon": 173.26854166666666
+        },
+        {
+            "name": "KT501",
+            "lat": 35.08446111666667,
+            "lon": 173.29989443333332
+        },
+        {
+            "name": "KTNB",
+            "lat": 35.02858333333333,
+            "lon": 173.24236111666667
+        },
+        {
+            "name": "MQ12",
+            "lat": 35.053730566666665,
+            "lon": 173.26894721666667
+        },
+        {
+            "name": "PERAS",
+            "lat": 35.45096111666667,
+            "lon": 173.57031111666666
+        },
+        {
+            "name": "PERIA",
+            "lat": 35.12898056666667,
+            "lon": 173.48966388333332
+        },
+        {
+            "name": "RUATO",
+            "lat": 35.37268888333333,
+            "lon": 173.68564166666667
+        },
+        {
+            "name": "STEED",
+            "lat": 34.91957778333333,
+            "lon": 173.14403333333334
+        },
+        {
+            "name": "WP",
+            "lat": 36.786791666666666,
+            "lon": 174.63123611666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 18",
+        "RNW 30",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "BROA2B",
+            "rnw": "12",
+            "fixes": {
+                "RUATO": "RUATO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HOBBS3",
+            "rnw": "12",
+            "fixes": {
+                "HOBBS": "HOBBS"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "PERAS",
+                    "fixes": [
+                        "PERAS",
+                        "PERAS"
+                    ]
+                },
+                {
+                    "name": "RUATO",
+                    "fixes": [
+                        "RUATO",
+                        "RUATO"
+                    ]
+                },
+                {
+                    "name": "WP",
+                    "fixes": [
+                        "WP",
+                        "WP"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "VALEY2",
+            "rnw": "12",
+            "fixes": {
+                "KAROA": "KAROA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "KAROA1",
+            "runway": "RNW 30",
+            "fixes": {
+                "KAROA": "KAROA",
+                "PERIA": "PERIA"
+            }
+        },
+        {
+            "name": "KT1",
+            "runway": "RNW 12",
+            "fixes": {
+                "KTNB": "KTNB",
+                "STEED": "STEED"
+            }
+        },
+        {
+            "name": "PERAS1",
+            "runway": "RNW 30",
+            "fixes": {
+                "PERAS": "PERAS",
+                "PERIA": "PERIA"
+            }
+        },
+        {
+            "name": "RUATO1",
+            "runway": "RNW 30",
+            "fixes": {
+                "RUATO": "RUATO",
+                "PERIA": "PERIA"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FN12": "FN12 1500",
+                "KTNB": "KTNB 1189 RNW 12 TRK 120 UNTIL 1500 TURN LEFT DIRECT KTNB AT OR ABOVE 3000 HOLD AT KTNB RIGHT TURN INBOUNDCOURSE 282 ALT 3000 SPEED 230 LEGTIME 1 FAF FN12 MAP K"
+            },
+            "transitions": [
+                {
+                    "name": "KT1",
+                    "fixes": {
+                        "KTNB": "KTNB AT OR ABOVE 3000 TRK 272 UNTIL 7.0 FROM KTNB"
+                    }
+                },
+                {
+                    "name": "KT2",
+                    "fixes": {
+                        "KTNB": "KTNB AT OR ABOVE 3000 TRK 288 UNTIL 7.0 FROM KTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD12",
+            "fixes": {
+                "FQ12": "FQ12 2140",
+                "MQ12": "MQ12 553 RNW 12 TRK 120 UNTIL 1200 TURN LEFT DIRECT",
+                "KTNB": "KTNB AT OR ABOVE 3000 SPEED 230 HOLD AT KTNB RIGHT TURN INBOUNDCOURSE 282 ALT 3000 SPEED 230 LEGTIME 1 FAF FQ12 MAP MQ12"
+            },
+            "transitions": [
+                {
+                    "name": "KT1",
+                    "fixes": {
+                        "KTNB": "KTNB AT OR ABOVE 3000 TRK 272 UNTIL 7.0 FROM KTNB"
+                    }
+                },
+                {
+                    "name": "KT2",
+                    "fixes": {
+                        "KTNB": "KTNB AT OR ABOVE 3000 TRK 288 UNTIL 7.0 FROM KTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "STEED": "STEED AT OR ABOVE 2500 STEED AT OR ABOVE 2500 HOLD AT STEED RIGHT TURN INBOUNDCOURSE 123 ALT 2500 LEGTIME 1 FAF DAKTA MAP KT401",
+                "DAKTA": "DAKTA 2180",
+                "KT401": "KT401 592 RNW 12 TRK 123 UNTIL 770 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "STEED",
+                    "fixes": {
+                        "STEED": "STEED RIGHT TURN INBOUNDCOURSE 123 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "PERIA": "PERIA AT OR ABOVE 3600 PERIA AT OR ABOVE 3600 HOLD AT PERIA RIGHT TURN INBOUNDCOURSE 258 ALT 3600 LEGTIME 1 FAF EMVAN MAP KT501",
+                "EMVAN": "EMVAN 1520",
+                "KT501": "KT501 556 RNW 30 TRK 288 UNTIL 770 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PERIA",
+                    "fixes": {
+                        "PERIA": "PERIA RIGHT TURN INBOUNDCOURSE 258 ALT 3600 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

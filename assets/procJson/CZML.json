@@ -1,0 +1,154 @@
+{
+    "fixes": [
+        {
+            "name": "ALTAG",
+            "lat": 51.88540833333333,
+            "lon": 121.73980556666666
+        },
+        {
+            "name": "BEVID",
+            "lat": 51.724755566666666,
+            "lon": 121.32786666666667
+        },
+        {
+            "name": "BOGSA",
+            "lat": 51.531272216666665,
+            "lon": 121.38372778333333
+        },
+        {
+            "name": "DANIT",
+            "lat": 51.8967,
+            "lon": 121.43748333333333
+        },
+        {
+            "name": "DEMDI",
+            "lat": 51.68083611666667,
+            "lon": 121.309125
+        },
+        {
+            "name": "ELITA",
+            "lat": 51.55256943333333,
+            "lon": 121.25469721666667
+        },
+        {
+            "name": "GABOP",
+            "lat": 51.824547216666666,
+            "lon": 121.37049166666667
+        },
+        {
+            "name": "KAREK",
+            "lat": 51.64913333333333,
+            "lon": 121.29564443333334
+        },
+        {
+            "name": "LIBAX",
+            "lat": 51.697411116666665,
+            "lon": 121.31618333333333
+        },
+        {
+            "name": "LORVO",
+            "lat": 51.49008056666667,
+            "lon": 121.74888611666667
+        },
+        {
+            "name": "MIBTI",
+            "lat": 51.443305566666666,
+            "lon": 121.2125
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "ALTAG3",
+            "rnw": "18",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 15",
+                    "fixes": {
+                        "RNW 15": "RNW 15 HDG 148 UNTIL 3700 TURN RIGHT DIRECT",
+                        "ALTAG": "ALTAG"
+                    }
+                },
+                {
+                    "rwy": "RNW 33",
+                    "fixes": {
+                        "RNW 33": "RNW 33 HDG 328 UNTIL 3600",
+                        "ALTAG": "ALTAG"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "MIBTI3",
+            "rnw": "18",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 15",
+                    "fixes": {
+                        "RNW 15": "RNW 15",
+                        "DEMDI": "DEMDI",
+                        "MIBTI": "MIBTI"
+                    }
+                },
+                {
+                    "rwy": "RNW 33",
+                    "fixes": {
+                        "RNW 33": "RNW 33 HDG 328 UNTIL 3600 TURN LEFT DIRECT",
+                        "MIBTI": "MIBTI"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "DANIT": "DANIT AT OR ABOVE 5000",
+                "GABOP": "GABOP 4900 RNW 15",
+                "MIBTI": "OVERFLY MIBTI 6700 HOLD AT MIBTI RIGHT TURN INBOUNDCOURSE 127 SPEED 265 LEGTIME 1 FAF GABOP MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "ALTAG",
+                    "fixes": {
+                        "ALTAG": "ALTAG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ELITA": "ELITA AT OR ABOVE 5300 SPEED 180",
+                "KAREK": "KAREK 4900",
+                "LIBAX": "LIBAX AT OR ABOVE 3850",
+                "BEVID": "OVERFLY BEVID 3250 RNW 33 TRK 328 UNTIL 3530",
+                "ALTAG": "OVERFLY ALTAG 6600 SPEED 200 HOLD AT ALTAG RIGHT TURN INBOUNDCOURSE 307 SPEED 265 LEGTIME 1 FAF KAREK MAP BEVID"
+            },
+            "transitions": [
+                {
+                    "name": "LORVO",
+                    "fixes": {
+                        "LORVO": "LORVO",
+                        "BOGSA": "BOGSA AT OR ABOVE 5600 SPEED 200"
+                    }
+                },
+                {
+                    "name": "MIBTI",
+                    "fixes": {
+                        "MIBTI": "MIBTI"
+                    }
+                }
+            ]
+        }
+    ]
+}

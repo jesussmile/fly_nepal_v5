@@ -1,0 +1,129 @@
+{
+    "fixes": [
+        {
+            "name": "CAE",
+            "lat": 33.85725,
+            "lon": 81.05390278333333
+        },
+        {
+            "name": "DDATA",
+            "lat": 33.9503,
+            "lon": 80.68534721666667
+        },
+        {
+            "name": "DUBCE",
+            "lat": 34.196122216666666,
+            "lon": 81.09982221666667
+        },
+        {
+            "name": "HIDEE",
+            "lat": 33.919225,
+            "lon": 80.90888611666666
+        },
+        {
+            "name": "JAADE",
+            "lat": 33.978130566666664,
+            "lon": 81.28540556666667
+        },
+        {
+            "name": "JSSTN",
+            "lat": 34.087161116666664,
+            "lon": 81.19273333333334
+        },
+        {
+            "name": "PEPHR",
+            "lat": 34.001013883333336,
+            "lon": 81.04684721666666
+        },
+        {
+            "name": "SKITR",
+            "lat": 33.841647216666665,
+            "lon": 80.77851666666666
+        },
+        {
+            "name": "TTROY",
+            "lat": 33.732922216666665,
+            "lon": 80.87145
+        },
+        {
+            "name": "ZIXIG",
+            "lat": 33.947738883333336,
+            "lon": 80.95692221666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC31",
+            "fixes": {
+                "SKITR": "SKITR AT OR ABOVE 2000",
+                "HIDEE": "HIDEE 1800",
+                "ZIXIG": "ZIXIG AT OR ABOVE 860 RNW 31 TRK 311 UNTIL 1200 TURN LEFT DIRECT",
+                "CAE": "CAE AT OR ABOVE 2000 HOLD AT CAE LEFT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF HIDEE MAP RNW 31"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "JSSTN": "JSSTN AT OR ABOVE 2700",
+                "PEPHR": "PEPHR 1400 RNW 13 TRK 131 UNTIL 593",
+                "SKITR": "OVERFLY SKITR AT OR ABOVE 2700 HOLD AT SKITR RIGHT TURN INBOUNDCOURSE 312 LEGDIST 4 FAF PEPHR MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "DUBCE",
+                    "fixes": {
+                        "DUBCE": "DUBCE"
+                    }
+                },
+                {
+                    "name": "JAADE",
+                    "fixes": {
+                        "JAADE": "JAADE"
+                    }
+                },
+                {
+                    "name": "JSSTN",
+                    "fixes": {
+                        "JSSTN": "JSSTN RIGHT TURN INBOUNDCOURSE 131 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "SKITR": "SKITR AT OR ABOVE 2700",
+                "HIDEE": "HIDEE 1800",
+                "ZIXIG": "ZIXIG AT OR ABOVE 860 RNW 31 TRK 311 UNTIL 436",
+                "JSSTN": "OVERFLY JSSTN AT OR ABOVE 2700 HOLD AT JSSTN RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4 FAF HIDEE MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "DDATA",
+                    "fixes": {
+                        "DDATA": "DDATA"
+                    }
+                },
+                {
+                    "name": "SKITR",
+                    "fixes": {
+                        "SKITR": "SKITR RIGHT TURN INBOUNDCOURSE 312 ALT 2700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TTROY",
+                    "fixes": {
+                        "TTROY": "TTROY"
+                    }
+                }
+            ]
+        }
+    ]
+}

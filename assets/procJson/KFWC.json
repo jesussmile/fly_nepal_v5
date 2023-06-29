@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "CORQE",
+            "lat": 38.37898056666667,
+            "lon": 88.64961388333333
+        },
+        {
+            "name": "DAHLL",
+            "lat": 38.20474443333333,
+            "lon": 88.5393
+        },
+        {
+            "name": "ENL",
+            "lat": 38.42,
+            "lon": 89.15899721666666
+        },
+        {
+            "name": "FF09",
+            "lat": 38.370133333333335,
+            "lon": 88.52995278333333
+        },
+        {
+            "name": "FIGEL",
+            "lat": 38.378455566666666,
+            "lon": 88.51737221666667
+        },
+        {
+            "name": "FWCNB",
+            "lat": 38.38017778333333,
+            "lon": 88.40935
+        },
+        {
+            "name": "PI001",
+            "lat": 38.37405703333334,
+            "lon": 88.48334956666666
+        },
+        {
+            "name": "PI002",
+            "lat": 38.31834753333333,
+            "lon": 88.54083436666667
+        },
+        {
+            "name": "PI003",
+            "lat": 38.362566533333336,
+            "lon": 88.62074393333333
+        },
+        {
+            "name": "PXV",
+            "lat": 37.928319433333336,
+            "lon": 87.76238056666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FF09": "FF09 2100 RNW 09",
+                "FWCNB": "OVERFLY FWCNB HOLD AT FWCNB RIGHT TURN INBOUNDCOURSE 085 ALT 2100 LEGTIME 1 FAF FF09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "ENL",
+                    "fixes": {
+                        "ENL": "ENL",
+                        "FWCNB": "FWCNB AT OR ABOVE 2100",
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "PXV",
+                    "fixes": {
+                        "PXV": "PXV",
+                        "FWCNB": "FWCNB AT OR ABOVE 2100",
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "CORQE": "CORQE AT OR ABOVE 2100",
+                "FIGEL": "FIGEL 2000 RNW 09 TRK 091 UNTIL 880 TURN RIGHT DIRECT",
+                "DAHLL": "OVERFLY DAHLL AT OR ABOVE 3000 HOLD AT DAHLL RIGHT TURN INBOUNDCOURSE 233 LEGDIST 4 FAF FIGEL MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "CORQE",
+                    "fixes": {
+                        "CORQE": "CORQE RIGHT TURN INBOUNDCOURSE 091 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

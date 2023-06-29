@@ -1,0 +1,188 @@
+{
+    "fixes": [
+        {
+            "name": "AVNIM",
+            "lat": 3.1819444333333333,
+            "lon": 117.3715
+        },
+        {
+            "name": "BAXAL",
+            "lat": 4.038888883333334,
+            "lon": 117.97611111666667
+        },
+        {
+            "name": "CD06",
+            "lat": 3.221775,
+            "lon": 117.42456111666667
+        },
+        {
+            "name": "CF06",
+            "lat": 3.2326861166666667,
+            "lon": 117.41709443333333
+        },
+        {
+            "name": "D188Y",
+            "lat": 2.9107916666666664,
+            "lon": 117.50490556666666
+        },
+        {
+            "name": "D293Y",
+            "lat": 3.4899611166666666,
+            "lon": 117.17841666666666
+        },
+        {
+            "name": "FD06",
+            "lat": 3.2621,
+            "lon": 117.47778888333333
+        },
+        {
+            "name": "FF06",
+            "lat": 3.268666666666667,
+            "lon": 117.47333333333333
+        },
+        {
+            "name": "MAMOK",
+            "lat": 4.085,
+            "lon": 115.78666666666666
+        },
+        {
+            "name": "MD06",
+            "lat": 3.3125,
+            "lon": 117.54433056666667
+        },
+        {
+            "name": "QQ401",
+            "lat": 3.2339444333333334,
+            "lon": 117.41716666666667
+        },
+        {
+            "name": "QQ402",
+            "lat": 3.2647222166666667,
+            "lon": 117.46680556666666
+        },
+        {
+            "name": "SOSVO",
+            "lat": 2.2725,
+            "lon": 117.41777778333334
+        },
+        {
+            "name": "TRK",
+            "lat": 3.325605566666667,
+            "lon": 117.56163333333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "BAXA1A",
+            "rnw": "24",
+            "fixes": {
+                "TRK": "TRK",
+                "BAXAL": "BAXAL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MAMO1A",
+            "rnw": "24",
+            "fixes": {
+                "MAMOK": "MAMOK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SOSV1A",
+            "rnw": "24",
+            "fixes": {
+                "SOSVO": "SOSVO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "BAXA1B",
+            "runway": "RNW 06",
+            "fixes": {
+                "BAXAL": "BAXAL",
+                "TRK": "TRK",
+                "AVNIM": "AVNIM"
+            }
+        },
+        {
+            "name": "MAMO1B",
+            "runway": "RNW 06",
+            "fixes": {
+                "MAMOK": "MAMOK",
+                "D293Y": "D293Y",
+                "AVNIM": "AVNIM"
+            }
+        },
+        {
+            "name": "SOSV1B",
+            "runway": "RNW 06",
+            "fixes": {
+                "SOSVO": "SOSVO",
+                "D188Y": "D188Y",
+                "AVNIM": "AVNIM"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD06",
+            "fixes": {
+                "CD06": "CD06 AT OR ABOVE 2720",
+                "FD06": "FD06 1920",
+                "MD06": "MD06 329 RNW 06 TRK 053 UNTIL 540 TURN RIGHT DIRECT",
+                "AVNIM": "AVNIM AT OR ABOVE 4000 HOLD AT AVNIM LEFT TURN INBOUNDCOURSE 053 ALT 4000 LEGTIME 1 FAF FD06 MAP MD06"
+            },
+            "transitions": [
+                {
+                    "name": "AVNIM",
+                    "fixes": {
+                        "AVNIM": "AVNIM AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS06",
+            "fixes": {
+                "CF06": "CF06 AT OR ABOVE 2720",
+                "FF06": "FF06 1920 RNW 06 TRK 058 UNTIL 540 TURN RIGHT DIRECT",
+                "AVNIM": "AVNIM AT OR ABOVE 4000 HOLD AT AVNIM LEFT TURN INBOUNDCOURSE 053 ALT 4000 LEGTIME 1 FAF FF06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "AVNIM",
+                    "fixes": {
+                        "AVNIM": "AVNIM AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "QQ401": "QQ401 AT OR ABOVE 2500",
+                "QQ402": "QQ402 2000 RNW 06 TURN RIGHT DIRECT",
+                "AVNIM": "AVNIM AT OR ABOVE 4000 HOLD AT AVNIM LEFT TURN INBOUNDCOURSE 053 ALT 4000 LEGTIME 1 FAF QQ402 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "AVNIM",
+                    "fixes": {
+                        "AVNIM": "AVNIM AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

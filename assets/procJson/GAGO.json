@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "AKLIX",
+            "lat": 16.33325,
+            "lon": 0.16339443333333334
+        },
+        {
+            "name": "AREMA",
+            "lat": 16.091736116666667,
+            "lon": 0.12931943333333332
+        },
+        {
+            "name": "BONBA",
+            "lat": 16.407497216666666,
+            "lon": 0.12342221666666667
+        },
+        {
+            "name": "DILBA",
+            "lat": 16.165933333333335,
+            "lon": 0.16934443333333335
+        },
+        {
+            "name": "GATAP",
+            "lat": 16.258991666666667,
+            "lon": 0.2033333333333333
+        },
+        {
+            "name": "GO501",
+            "lat": 16.204613883333334,
+            "lon": 0.09255556666666667
+        },
+        {
+            "name": "GO502",
+            "lat": 16.281891666666667,
+            "lon": 0.061111116666666666
+        },
+        {
+            "name": "GO503",
+            "lat": 16.294655566666666,
+            "lon": 0.08651111666666668
+        },
+        {
+            "name": "GO504",
+            "lat": 16.215061116666668,
+            "lon": 0.07177499999999999
+        },
+        {
+            "name": "TUTOL",
+            "lat": 16.240125,
+            "lon": 0.2093972166666667
+        }
+    ],
+    "rnws": [
+        "RNW 06L",
+        "RNW 06R",
+        "RNW 24L",
+        "RNW 24R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06L",
+            "fixes": {
+                "DILBA": "DILBA AT OR ABOVE 2500 SPEED 230",
+                "GO501": "GO501 2500 RNW 06L",
+                "GO502": "OVERFLY GO502 TURN RIGHT DIRECT",
+                "AREMA": "AREMA AT OR ABOVE 2500 SPEED 230 FAF GO501 MAP RNW 06L"
+            },
+            "transitions": [
+                {
+                    "name": "AREMA",
+                    "fixes": {
+                        "AREMA": "AREMA AT OR ABOVE 2500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "DILBA",
+                    "fixes": {
+                        "DILBA": "DILBA RIGHT TURN INBOUNDCOURSE 065 ALT 2500 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TUTOL",
+                    "fixes": {
+                        "TUTOL": "TUTOL AT OR ABOVE 2500 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24R",
+            "fixes": {
+                "AKLIX": "AKLIX AT OR ABOVE 2600 SPEED 230",
+                "GO503": "GO503 2600 RNW 24R",
+                "GO504": "OVERFLY GO504 TURN LEFT DIRECT",
+                "GATAP": "GATAP AT OR ABOVE 2600 SPEED 230 FAF GO503 MAP RNW 24R"
+            },
+            "transitions": [
+                {
+                    "name": "AKLIX",
+                    "fixes": {
+                        "AKLIX": "AKLIX LEFT TURN INBOUNDCOURSE 245 ALT 2600 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "BONBA",
+                    "fixes": {
+                        "BONBA": "BONBA AT OR ABOVE 2600 SPEED 230"
+                    }
+                },
+                {
+                    "name": "GATAP",
+                    "fixes": {
+                        "GATAP": "GATAP AT OR ABOVE 2600 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

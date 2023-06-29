@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "69DME",
+            "lat": 24.970197216666666,
+            "lon": 47.05581111666667
+        },
+        {
+            "name": "FDN",
+            "lat": 25.037666666666667,
+            "lon": 46.95305556666667
+        },
+        {
+            "name": "FN08",
+            "lat": 25.136002783333332,
+            "lon": 46.84941666666667
+        },
+        {
+            "name": "FN26",
+            "lat": 24.943261116666665,
+            "lon": 47.0964
+        },
+        {
+            "name": "FQ08",
+            "lat": 25.130588883333335,
+            "lon": 46.85516943333333
+        },
+        {
+            "name": "FQ26",
+            "lat": 24.942644433333335,
+            "lon": 47.097327783333334
+        },
+        {
+            "name": "MQ08",
+            "lat": 25.076497216666667,
+            "lon": 46.91259721666667
+        },
+        {
+            "name": "VSPNB",
+            "lat": 25.038138883333332,
+            "lon": 46.953277783333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FN08": "FN08 2500 RNW 08",
+                "VSPNB": "OVERFLY VSPNB TURN RIGHT DIRECT VSPNB 4500 FAF FN08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "VSP",
+                    "fixes": {
+                        "VSPNB": "VSPNB AT OR ABOVE 4500 TRK 224 UNTIL 8.8 FROM VSPNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FN26": "FN26 3000 RNW 26",
+                "VSPNB": "OVERFLY VSPNB TRK 258 UNTIL 2800 TURN LEFT DIRECT VSPNB 3300 FAF FN26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "VSP",
+                    "fixes": {
+                        "VSPNB": "VSPNB AT OR ABOVE 3300 TRK 092 UNTIL 10.5 FROM VSPNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD08",
+            "fixes": {
+                "FQ08": "FQ08 2500",
+                "MQ08": "MQ08 977 RNW 08",
+                "VSPNB": "OVERFLY VSPNB TURN RIGHT DIRECT VSPNB 4500 FAF FQ08 MAP MQ08"
+            },
+            "transitions": [
+                {
+                    "name": "VSP1",
+                    "fixes": {
+                        "VSPNB": "VSPNB AT OR ABOVE 4500 TRK 224 UNTIL 11.5 FROM",
+                        "FDN": "FDN"
+                    }
+                },
+                {
+                    "name": "VSP2",
+                    "fixes": {
+                        "VSPNB": "VSPNB AT OR ABOVE 4500 TRK 224 UNTIL 11.1 FROM",
+                        "FDN": "FDN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD26",
+            "fixes": {
+                "FQ26": "FQ26 3000",
+                "69DME": "69DME AT OR ABOVE 2130 RNW 26 TRK 256 UNTIL 2800 TURN LEFT DIRECT",
+                "VSPNB": "VSPNB 3300 FAF FQ26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "VSP",
+                    "fixes": {
+                        "VSPNB": "VSPNB AT OR ABOVE 3300 TRK 092 UNTIL 9.9 FROM",
+                        "FDN": "FDN"
+                    }
+                }
+            ]
+        }
+    ]
+}

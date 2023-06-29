@@ -1,0 +1,85 @@
+{
+    "fixes": [
+        {
+            "name": "30VOR",
+            "lat": 35.37105,
+            "lon": 4.246863883333333
+        },
+        {
+            "name": "50VOR",
+            "lat": 35.39698333333333,
+            "lon": 4.272536116666667
+        },
+        {
+            "name": "BSA",
+            "lat": 35.332138883333336,
+            "lon": 4.208388883333333
+        },
+        {
+            "name": "BSANB",
+            "lat": 35.35043056666667,
+            "lon": 4.225016666666667
+        },
+        {
+            "name": "CD22",
+            "lat": 35.44235556666667,
+            "lon": 4.3175
+        },
+        {
+            "name": "FD22",
+            "lat": 35.42291388333334,
+            "lon": 4.298225
+        },
+        {
+            "name": "FN22",
+            "lat": 35.39766111666667,
+            "lon": 4.276966666666667
+        },
+        {
+            "name": "MD22",
+            "lat": 35.35159443333333,
+            "lon": 4.227622216666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD22",
+            "fixes": {
+                "CD22": "CD22 AT OR ABOVE 3580",
+                "FD22": "FD22 3580",
+                "50VOR": "50VOR AT OR ABOVE 2960",
+                "30VOR": "30VOR AT OR ABOVE 2320",
+                "MD22": "MD22 1828 RNW 22 TRK 218 UNTIL 1910 TRK 108 VECTORS FAF FD22 MAP MD22"
+            },
+            "transitions": [
+                {
+                    "name": "BSA",
+                    "fixes": {
+                        "BSA": "BSA AT OR ABOVE 5120 TRK 066 UNTIL 8.5 FROM BSA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FN22": "FN22 2990",
+                "BSANB": "BSANB 1778 RNW 22 TRK 221 UNTIL 2330 TRK 041 UNTIL 4140 TURN LEFT DIRECT BSANB 5120 FAF FN22 MAP BSA"
+            },
+            "transitions": [
+                {
+                    "name": "BSA",
+                    "fixes": {
+                        "BSANB": "BSANB AT OR ABOVE 5120 TRK 053 UNTIL 9.0 FROM BSANB"
+                    }
+                }
+            ]
+        }
+    ]
+}

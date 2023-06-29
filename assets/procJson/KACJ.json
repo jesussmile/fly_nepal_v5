@@ -1,0 +1,188 @@
+{
+    "fixes": [
+        {
+            "name": "CANPO",
+            "lat": 32.03862778333333,
+            "lon": 84.50200278333334
+        },
+        {
+            "name": "CATLO",
+            "lat": 32.08226666666667,
+            "lon": 84.22225278333333
+        },
+        {
+            "name": "CATNA",
+            "lat": 32.37491111666667,
+            "lon": 84.09553888333333
+        },
+        {
+            "name": "FEDLO",
+            "lat": 32.17783611666667,
+            "lon": 84.106525
+        },
+        {
+            "name": "GUMKE",
+            "lat": 32.04273056666667,
+            "lon": 84.27001943333333
+        },
+        {
+            "name": "HASER",
+            "lat": 32.2438,
+            "lon": 84.02648333333333
+        },
+        {
+            "name": "JIMOP",
+            "lat": 31.976294433333333,
+            "lon": 84.35013611666666
+        },
+        {
+            "name": "LIDBE",
+            "lat": 32.268447216666665,
+            "lon": 83.99645833333334
+        },
+        {
+            "name": "LKGNB",
+            "lat": 32.17447778333333,
+            "lon": 84.10815833333334
+        },
+        {
+            "name": "OVZES",
+            "lat": 32.180852783333336,
+            "lon": 84.10286666666667
+        },
+        {
+            "name": "PZD",
+            "lat": 31.655205566666666,
+            "lon": 84.2931
+        },
+        {
+            "name": "RUMTE",
+            "lat": 31.845302783333334,
+            "lon": 84.28105
+        },
+        {
+            "name": "SAPNE",
+            "lat": 32.180925,
+            "lon": 83.87458611666666
+        },
+        {
+            "name": "VNA",
+            "lat": 32.21344166666667,
+            "lon": 83.49725556666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 10",
+        "RNW 23",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS23",
+            "fixes": {
+                "LIDBE": "LIDBE AT OR ABOVE 2500",
+                "OVZES": "OVZES 2300 RNW 23 TRK 230 UNTIL 1100 TURN LEFT DIRECT",
+                "LKGNB": "LKGNB AT OR ABOVE 2500 HOLD AT LKGNB RIGHT TURN INBOUNDCOURSE 230 LEGTIME 1 FAF OVZES MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "PZD",
+                    "fixes": {
+                        "PZD": "PZD",
+                        "LKGNB": "LKGNB AT OR ABOVE 2500 HOLD AT LKGNB RIGHT TURN INBOUNDCOURSE 230 ALT 2500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "VNA",
+                    "fixes": {
+                        "VNA": "VNA",
+                        "LKGNB": "LKGNB AT OR ABOVE 2500 HOLD AT LKGNB RIGHT TURN INBOUNDCOURSE 230 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC23",
+            "fixes": {
+                "LIDBE": "LIDBE AT OR ABOVE 2500",
+                "LKGNB": "LKGNB 2300 RNW 23 TRK 230 UNTIL 1100 TURN LEFT DIRECT LKGNB AT OR ABOVE 2500 HOLD AT LKGNB RIGHT TURN INBOUNDCOURSE 230 LEGTIME 1 FAF LKGNB MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "PZD",
+                    "fixes": {
+                        "PZD": "PZD",
+                        "LKGNB": "LKGNB AT OR ABOVE 2500 HOLD AT LKGNB RIGHT TURN INBOUNDCOURSE 230 ALT 2500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "VNA",
+                    "fixes": {
+                        "VNA": "VNA",
+                        "LKGNB": "LKGNB AT OR ABOVE 2500 HOLD AT LKGNB RIGHT TURN INBOUNDCOURSE 230 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "JIMOP": "JIMOP AT OR ABOVE 2600",
+                "GUMKE": "GUMKE 2200",
+                "CATLO": "CATLO AT OR ABOVE 1100 RNW 05 TRK 050 UNTIL 718",
+                "HASER": "OVERFLY HASER AT OR ABOVE 2600 HOLD AT HASER RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4 FAF GUMKE MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "CANPO",
+                    "fixes": {
+                        "CANPO": "CANPO AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "JIMOP",
+                    "fixes": {
+                        "JIMOP": "JIMOP RIGHT TURN INBOUNDCOURSE 050 ALT 2600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RUMTE",
+                    "fixes": {
+                        "RUMTE": "RUMTE AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "HASER": "HASER AT OR ABOVE 2600",
+                "FEDLO": "FEDLO 2200 RNW 23 TRK 230 UNTIL 755",
+                "JIMOP": "OVERFLY JIMOP AT OR ABOVE 2600 HOLD AT JIMOP RIGHT TURN INBOUNDCOURSE 050 LEGDIST 4 FAF FEDLO MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "CATNA",
+                    "fixes": {
+                        "CATNA": "CATNA AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "HASER",
+                    "fixes": {
+                        "HASER": "HASER RIGHT TURN INBOUNDCOURSE 230 ALT 2600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SAPNE",
+                    "fixes": {
+                        "SAPNE": "SAPNE AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        }
+    ]
+}

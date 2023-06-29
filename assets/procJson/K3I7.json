@@ -1,0 +1,66 @@
+{
+    "fixes": [
+        {
+            "name": "DQN",
+            "lat": 40.016444433333334,
+            "lon": 84.39689721666667
+        },
+        {
+            "name": "KURME",
+            "lat": 40.071475,
+            "lon": 84.31073611666666
+        },
+        {
+            "name": "ROD",
+            "lat": 40.2878,
+            "lon": 84.04309721666667
+        },
+        {
+            "name": "ROSSY",
+            "lat": 40.268825,
+            "lon": 84.60170556666667
+        },
+        {
+            "name": "ZILCI",
+            "lat": 39.995725,
+            "lon": 84.35373333333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA21",
+            "fixes": {
+                "KURME": "KURME AT OR ABOVE 2700",
+                "ZILCI": "ZILCI 2700 RNW 21 TRK 208 UNTIL 2700 TURN RIGHT DIRECT",
+                "DQN": "OVERFLY DQN AT OR ABOVE 2700 HOLD AT DQN RIGHT TURN INBOUNDCOURSE 193 LEGDIST 4 FAF ZILCI MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "DQN",
+                    "fixes": {
+                        "DQN": "DQN",
+                        "KURME": "OVERFLY KURME AT OR ABOVE 2700 HOLD AT KURME RIGHT TURN INBOUNDCOURSE 208 ALT 2700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ROD",
+                    "fixes": {
+                        "ROD": "ROD"
+                    }
+                },
+                {
+                    "name": "ROSSY",
+                    "fixes": {
+                        "ROSSY": "ROSSY"
+                    }
+                }
+            ]
+        }
+    ]
+}

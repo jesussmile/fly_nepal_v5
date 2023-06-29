@@ -1,0 +1,186 @@
+{
+    "fixes": [
+        {
+            "name": "EPROT",
+            "lat": 17.813305566666667,
+            "lon": 24.955805566666665
+        },
+        {
+            "name": "ESRIM",
+            "lat": 17.886283333333335,
+            "lon": 24.984530566666667
+        },
+        {
+            "name": "FD08",
+            "lat": 17.862644433333333,
+            "lon": 25.066522216666666
+        },
+        {
+            "name": "KAV",
+            "lat": 17.83316943333333,
+            "lon": 25.168563883333334
+        },
+        {
+            "name": "KE401",
+            "lat": 17.892277783333334,
+            "lon": 24.984611116666667
+        },
+        {
+            "name": "KE402",
+            "lat": 17.864722216666667,
+            "lon": 25.06713888333333
+        },
+        {
+            "name": "KE501",
+            "lat": 17.993666666666666,
+            "lon": 25.191138883333334
+        },
+        {
+            "name": "KE502",
+            "lat": 18.100416666666668,
+            "lon": 25.279666666666667
+        },
+        {
+            "name": "NEREX",
+            "lat": 18.902222216666665,
+            "lon": 24.28
+        },
+        {
+            "name": "NEVET",
+            "lat": 17.919888883333332,
+            "lon": 24.902111116666667
+        },
+        {
+            "name": "OKDOB",
+            "lat": 18.014705566666667,
+            "lon": 25.136813883333332
+        },
+        {
+            "name": "SHALA",
+            "lat": 17.971277783333335,
+            "lon": 25.013472216666667
+        },
+        {
+            "name": "UNLUV",
+            "lat": 19.505555566666665,
+            "lon": 25.308888883333335
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "NERE1C",
+            "rnw": "08",
+            "fixes": {
+                "KE501": "OVERFLY KE501",
+                "NEREX": "NEREX"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UNLU1C",
+            "rnw": "08",
+            "fixes": {
+                "KE502": "OVERFLY KE502",
+                "UNLUV": "UNLUV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "NERE1A",
+            "runway": "RNW 08",
+            "fixes": {
+                "NEREX": "NEREX",
+                "NEVET": "NEVET AT OR ABOVE 6000 SPEED 220"
+            }
+        },
+        {
+            "name": "UNLU1A",
+            "runway": "RNW 08",
+            "fixes": {
+                "UNLUV": "UNLUV",
+                "SHALA": "SHALA AT OR ABOVE 6000 SPEED 220"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORDY08",
+            "fixes": {
+                "FD08": "FD08 5000 RNW 08 TRK 080 UNTIL 3690 TURN RIGHT TRK 242 INTERCEPT RADIAL 197 TO",
+                "OKDOB": "OKDOB OKDOB AT OR ABOVE 6000 SPEED 230 HOLD AT OKDOB RIGHT TURN INBOUNDCOURSE 017 ALT 6000 SPEED 230 LEGDIST 5 FAF FD08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "KAV1",
+                    "fixes": {
+                        "KAV": "KAV AT OR ABOVE 6000 TRK 236 UNTIL 9.0 FROM KAV"
+                    }
+                },
+                {
+                    "name": "KAV2",
+                    "fixes": {
+                        "KAV": "KAV AT OR ABOVE 6000 TRK 249 UNTIL 9.0 FROM KAV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ08",
+            "fixes": {
+                "ESRIM": "ESRIM AT OR ABOVE 5000",
+                "FD08": "FD08 5000 RNW 08 TRK 080 UNTIL 3690 TURN RIGHT TRK 242 INTERCEPT RADIAL 197 TO",
+                "OKDOB": "OKDOB OKDOB AT OR ABOVE 6000 SPEED 230 HOLD AT OKDOB RIGHT TURN INBOUNDCOURSE 017 ALT 6000 SPEED 230 LEGDIST 5 FAF FD08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "ESRIM",
+                    "fixes": {
+                        "ESRIM": "ESRIM RIGHT TURN INBOUNDCOURSE 080 ALT 5000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "OKDOB",
+                    "fixes": {
+                        "OKDOB": "OKDOB AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "KE401": "KE401 AT OR ABOVE 5000",
+                "KE402": "KE402 5000 RNW 08 TURN RIGHT DIRECT",
+                "SHALA": "SHALA AT OR ABOVE 6000 SPEED 220 HOLD AT SHALA LEFT TURN INBOUNDCOURSE 348 ALT 6000 SPEED 220 LEGTIME 1 FAF KE402 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "EPROT",
+                    "fixes": {
+                        "EPROT": "EPROT AT OR ABOVE 6000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "NEVET",
+                    "fixes": {
+                        "NEVET": "NEVET AT OR ABOVE 6000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "SHALA",
+                    "fixes": {
+                        "SHALA": "SHALA AT OR ABOVE 6000 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

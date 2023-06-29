@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "ABUGI",
+            "lat": 10.168936116666666,
+            "lon": 2.4768833333333333
+        },
+        {
+            "name": "BORSU",
+            "lat": 10.221977783333333,
+            "lon": 2.3697916666666665
+        },
+        {
+            "name": "ENUMI",
+            "lat": 10.276736116666667,
+            "lon": 2.5295444333333332
+        },
+        {
+            "name": "GAGAB",
+            "lat": 10.247822216666666,
+            "lon": 2.448563883333333
+        },
+        {
+            "name": "KODGO",
+            "lat": 9.996316666666667,
+            "lon": 2.5387472166666667
+        },
+        {
+            "name": "LW200",
+            "lat": 10.090988883333333,
+            "lon": 2.5048305666666666
+        },
+        {
+            "name": "LW205",
+            "lat": 10.075438883333334,
+            "lon": 2.5104027833333333
+        },
+        {
+            "name": "SEVIB",
+            "lat": 9.945386116666667,
+            "lon": 2.6466694333333334
+        },
+        {
+            "name": "TETSU",
+            "lat": 9.917277783333333,
+            "lon": 2.5669722166666666
+        },
+        {
+            "name": "XUPAR",
+            "lat": 9.889433333333333,
+            "lon": 2.4875444333333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "TETSU": "TETSU AT OR ABOVE 2700",
+                "KODGO": "KODGO 2700",
+                "LW205": "OVERFLY LW205 1067 RNW 02 HDG 022 UNTIL 2400 TURN RIGHT DIRECT",
+                "XUPAR": "XUPAR AT OR ABOVE 3500 SPEED 210 HOLD AT XUPAR LEFT TURN INBOUNDCOURSE 293 ALT 3500 SPEED 210 LEGTIME 1 FAF KODGO MAP LW205"
+            },
+            "transitions": [
+                {
+                    "name": "SEVIB",
+                    "fixes": {
+                        "SEVIB": "SEVIB AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "XUPAR",
+                    "fixes": {
+                        "XUPAR": "XUPAR AT OR ABOVE 3500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "GAGAB": "GAGAB AT OR ABOVE 2600",
+                "ABUGI": "ABUGI 2600",
+                "LW200": "OVERFLY LW200 997 RNW 20 HDG 202 UNTIL 2200 TURN LEFT DIRECT",
+                "BORSU": "BORSU AT OR ABOVE 3500 SPEED 210 HOLD AT BORSU RIGHT TURN INBOUNDCOURSE 293 ALT 3500 SPEED 210 LEGTIME 1 FAF ABUGI MAP LW200"
+            },
+            "transitions": [
+                {
+                    "name": "BORSU",
+                    "fixes": {
+                        "BORSU": "BORSU AT OR ABOVE 3500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "ENUMI",
+                    "fixes": {
+                        "ENUMI": "ENUMI AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

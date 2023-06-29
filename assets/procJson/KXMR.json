@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "BITHO",
+            "lat": 28.630941666666665,
+            "lon": 81.05940833333334
+        },
+        {
+            "name": "COZMO",
+            "lat": 28.799105566666668,
+            "lon": 81.07267221666666
+        },
+        {
+            "name": "GIGLE",
+            "lat": 28.532152783333334,
+            "lon": 80.66128888333333
+        },
+        {
+            "name": "HODUB",
+            "lat": 28.593341666666667,
+            "lon": 80.75125556666667
+        },
+        {
+            "name": "JESUP",
+            "lat": 28.888430566666667,
+            "lon": 81.07973333333334
+        },
+        {
+            "name": "LAMMA",
+            "lat": 29.014419433333334,
+            "lon": 81.08971388333333
+        },
+        {
+            "name": "NODBE",
+            "lat": 28.407930566666668,
+            "lon": 80.47964721666666
+        },
+        {
+            "name": "OMN",
+            "lat": 29.30325,
+            "lon": 81.11269721666666
+        },
+        {
+            "name": "WESMA",
+            "lat": 28.305791666666668,
+            "lon": 80.33013056666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "BITHO7",
+            "runway": "RNW 13 RNW 31",
+            "fixes": {
+                "OMN": "OMN",
+                "LAMMA": "LAMMA",
+                "JESUP": "JESUP",
+                "COZMO": "COZMO",
+                "BITHO": "BITHO"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "HODUB": "HODUB AT OR ABOVE 3000",
+                "GIGLE": "GIGLE 1800 RNW 13 TRK 135 UNTIL 410",
+                "WESMA": "OVERFLY WESMA AT OR ABOVE 3000 HOLD AT WESMA RIGHT TURN INBOUNDCOURSE 315 ALT 8000 LEGDIST 7 FAF GIGLE MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "HODUB",
+                    "fixes": {
+                        "HODUB": "HODUB LEFT TURN INBOUNDCOURSE 135 ALT 3000 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "WESMA": "WESMA AT OR ABOVE 3000 WESMA AT OR ABOVE 3000 HOLD AT WESMA RIGHT TURN INBOUNDCOURSE 315 ALT 8000 SPEED 310 LEGDIST 7 FAF NODBE MAP RNW 31",
+                "NODBE": "NODBE 1700 RNW 31 TRK 315 UNTIL 410 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WESMA",
+                    "fixes": {
+                        "WESMA": "WESMA RIGHT TURN INBOUNDCOURSE 315 ALT 3000 SPEED 310 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

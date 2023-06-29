@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "ADROS",
+            "lat": 19.571705566666665,
+            "lon": 80.048575
+        },
+        {
+            "name": "BESAR",
+            "lat": 19.702125,
+            "lon": 79.70727221666667
+        },
+        {
+            "name": "BETAR",
+            "lat": 19.473333333333333,
+            "lon": 79.5
+        },
+        {
+            "name": "DUPEN",
+            "lat": 19.602152783333334,
+            "lon": 79.69772778333333
+        },
+        {
+            "name": "LESOM",
+            "lat": 20.0,
+            "lon": 80.12444443333334
+        },
+        {
+            "name": "LETOS",
+            "lat": 19.802094433333334,
+            "lon": 79.71682778333333
+        },
+        {
+            "name": "RAGIS",
+            "lat": 19.694558333333333,
+            "lon": 79.79523056666666
+        },
+        {
+            "name": "REVAK",
+            "lat": 19.77160556666667,
+            "lon": 80.06815278333333
+        },
+        {
+            "name": "TALES",
+            "lat": 19.671655566666665,
+            "lon": 80.05835833333333
+        },
+        {
+            "name": "TEXAM",
+            "lat": 19.48865,
+            "lon": 80.62524721666666
+        },
+        {
+            "name": "VIVIS",
+            "lat": 19.679355566666665,
+            "lon": 79.970425
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "TALES": "TALES AT OR ABOVE 1500 TALES HOLD AT TALES RIGHT TURN INBOUNDCOURSE 089 ALT 1500 SPEED 230 LEGDIST 4 FAF VIVIS MAP RNW 09",
+                "VIVIS": "VIVIS 1500 RNW 09 TRK 089 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BETAR",
+                    "fixes": {
+                        "BETAR": "BETAR",
+                        "ADROS": "ADROS AT OR ABOVE 1500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "LESOM",
+                    "fixes": {
+                        "LESOM": "LESOM",
+                        "REVAK": "REVAK AT OR ABOVE 1500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "TEXAM",
+                    "fixes": {
+                        "TEXAM": "TEXAM",
+                        "TALES": "TALES AT OR ABOVE 1500 HOLD AT TALES RIGHT TURN INBOUNDCOURSE 089 ALT 1500 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "BESAR": "BESAR AT OR ABOVE 1500 BESAR HOLD AT BESAR RIGHT TURN INBOUNDCOURSE 270 SPEED 230 LEGDIST 4 FAF RAGIS MAP RNW 27",
+                "RAGIS": "RAGIS 1500 RNW 27 TRK 270 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BETAR",
+                    "fixes": {
+                        "BETAR": "BETAR",
+                        "BESAR": "BESAR AT OR ABOVE 1500 HOLD AT BESAR RIGHT TURN INBOUNDCOURSE 270 ALT 1500 SPEED 230 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LESOM",
+                    "fixes": {
+                        "LESOM": "LESOM",
+                        "LETOS": "LETOS AT OR ABOVE 1500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "TEXAM",
+                    "fixes": {
+                        "TEXAM": "TEXAM",
+                        "DUPEN": "DUPEN AT OR ABOVE 1500 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

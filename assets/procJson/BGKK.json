@@ -1,0 +1,195 @@
+{
+    "fixes": [
+        {
+            "name": "25NM",
+            "lat": 65.56808056666667,
+            "lon": 37.626813883333334
+        },
+        {
+            "name": "BUMUD",
+            "lat": 65.61866111666667,
+            "lon": 36.61887221666667
+        },
+        {
+            "name": "D269D",
+            "lat": 65.54304443333334,
+            "lon": 37.353516666666664
+        },
+        {
+            "name": "DANB",
+            "lat": 65.57013888333333,
+            "lon": 37.20708333333334
+        },
+        {
+            "name": "ESIBA",
+            "lat": 65.45368611666666,
+            "lon": 37.50780833333334
+        },
+        {
+            "name": "FN11",
+            "lat": 65.56310833333333,
+            "lon": 37.366619433333334
+        },
+        {
+            "name": "INGUB",
+            "lat": 65.53754443333334,
+            "lon": 36.66215833333333
+        },
+        {
+            "name": "KKF11",
+            "lat": 65.56084443333333,
+            "lon": 37.413969433333335
+        },
+        {
+            "name": "KKF41",
+            "lat": 65.55530833333333,
+            "lon": 36.85796666666667
+        },
+        {
+            "name": "KKI11",
+            "lat": 65.52996943333333,
+            "lon": 37.587038883333335
+        },
+        {
+            "name": "KKM11",
+            "lat": 65.56913333333334,
+            "lon": 37.22706388333334
+        },
+        {
+            "name": "KKM41",
+            "lat": 65.57429443333334,
+            "lon": 37.0707
+        },
+        {
+            "name": "LUNAL",
+            "lat": 65.49690278333334,
+            "lon": 37.77070833333333
+        },
+        {
+            "name": "SOMEV",
+            "lat": 65.63669721666666,
+            "lon": 37.69874166666666
+        },
+        {
+            "name": "URUKU",
+            "lat": 65.45641666666667,
+            "lon": 36.70516943333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FN11": "FN11 1800",
+                "DANB": "DANB 726 RNW 11 TRK 107 UNTIL 726 TRK 241 UNTIL 3800 TURN LEFT DIRECT DANB 3800 HOLD AT DANB LEFT TURN INBOUNDCOURSE 269 LEGTIME 1 FAF FN11 MAP DA"
+            },
+            "transitions": [
+                {
+                    "name": "DA",
+                    "fixes": {
+                        "DANB": "DANB AT OR ABOVE 3800 SPEED 120",
+                        "D269D": "OVERFLY D269D AT OR ABOVE 1800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "KKF11": "KKF11 2700",
+                "KKM11": "OVERFLY KKM11 992 SPEED 130 RNW 11 TURN LEFT DIRECT",
+                "LUNAL": "LUNAL 4000 SPEED 130 HOLD AT LUNAL RIGHT TURN INBOUNDCOURSE 090 ALT 4000 LEGTIME 1 FAF KKF11 MAP KKM11"
+            },
+            "transitions": [
+                {
+                    "name": "ESIBA",
+                    "fixes": {
+                        "ESIBA": "ESIBA AT OR ABOVE 4300",
+                        "KKI11": "KKI11 AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "LUNAL",
+                    "fixes": {
+                        "LUNAL": "LUNAL AT OR ABOVE 5000",
+                        "KKI11": "KKI11 AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "SOMEV",
+                    "fixes": {
+                        "SOMEV": "SOMEV AT OR ABOVE 6000",
+                        "25NM": "25NM AT OR ABOVE 4200",
+                        "KKI11": "KKI11 AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA11",
+            "fixes": {
+                "INGUB": "INGUB AT OR ABOVE 3200",
+                "KKF41": "KKF41 2600",
+                "KKM41": "OVERFLY KKM41 2600 RNW 11",
+                "KKF11": "KKF11",
+                "LUNAL": "LUNAL 4000 HOLD AT LUNAL RIGHT TURN INBOUNDCOURSE 090 ALT 4000 LEGTIME 1 FAF KKF41 MAP KKM41"
+            },
+            "transitions": [
+                {
+                    "name": "BUMUD",
+                    "fixes": {
+                        "BUMUD": "BUMUD AT OR ABOVE 4500"
+                    }
+                },
+                {
+                    "name": "INGUB",
+                    "fixes": {
+                        "INGUB": "INGUB RIGHT TURN INBOUNDCOURSE 305 ALT 3200 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "URUKU",
+                    "fixes": {
+                        "URUKU": "URUKU AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA29",
+            "fixes": {
+                "INGUB": "INGUB AT OR ABOVE 3200",
+                "KKF41": "KKF41 2600",
+                "KKM41": "OVERFLY KKM41 2600 RNW 29",
+                "KKF11": "KKF11",
+                "LUNAL": "LUNAL 4000 HOLD AT LUNAL RIGHT TURN INBOUNDCOURSE 090 ALT 4000 LEGTIME 1 FAF KKF41 MAP KKM41"
+            },
+            "transitions": [
+                {
+                    "name": "BUMUD",
+                    "fixes": {
+                        "BUMUD": "BUMUD AT OR ABOVE 4500"
+                    }
+                },
+                {
+                    "name": "INGUB",
+                    "fixes": {
+                        "INGUB": "INGUB RIGHT TURN INBOUNDCOURSE 305 ALT 3200 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "URUKU",
+                    "fixes": {
+                        "URUKU": "URUKU AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "AFBUL",
+            "lat": 31.853111116666668,
+            "lon": 103.27555278333334
+        },
+        {
+            "name": "AFITY",
+            "lat": 31.705941666666668,
+            "lon": 103.13334721666666
+        },
+        {
+            "name": "AHASS",
+            "lat": 31.930813883333332,
+            "lon": 103.35088333333333
+        },
+        {
+            "name": "BORTY",
+            "lat": 31.628019433333332,
+            "lon": 103.05830833333333
+        },
+        {
+            "name": "CITAT",
+            "lat": 31.808786116666667,
+            "lon": 103.23265556666666
+        },
+        {
+            "name": "INK",
+            "lat": 31.874763883333333,
+            "lon": 103.24377778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 31.928847016666666,
+            "lon": 103.26952528333334
+        },
+        {
+            "name": "PI002",
+            "lat": 31.956825733333332,
+            "lon": 103.34727851666666
+        },
+        {
+            "name": "PI003",
+            "lat": 32.02927331666667,
+            "lon": 103.31742255
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 13",
+        "RNW 22",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "AHASS": "AHASS AT OR ABOVE 5000",
+                "AFBUL": "AFBUL 4600",
+                "CITAT": "CITAT AT OR ABOVE 3500 RNW 13 TRK 132 UNTIL 3072",
+                "BORTY": "OVERFLY BORTY AT OR ABOVE 5000 HOLD AT BORTY RIGHT TURN INBOUNDCOURSE 313 LEGDIST 5 FAF AFBUL MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "AHASS",
+                    "fixes": {
+                        "AHASS": "AHASS RIGHT TURN INBOUNDCOURSE 132 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "BORTY": "BORTY AT OR ABOVE 5000",
+                "AFITY": "AFITY 4500 RNW 31 TRK 313 UNTIL 3068",
+                "AHASS": "OVERFLY AHASS AT OR ABOVE 5000 HOLD AT AHASS RIGHT TURN INBOUNDCOURSE 132 LEGDIST 5 FAF AFITY MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "BORTY",
+                    "fixes": {
+                        "BORTY": "BORTY RIGHT TURN INBOUNDCOURSE 313 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR13",
+            "fixes": {
+                "INK": "INK 4700 RNW 13 TRK 150 UNTIL 3500 TURN RIGHT DIRECT INK AT OR ABOVE 5000 HOLD AT INK RIGHT TURN INBOUNDCOURSE 150 ALT 5000 LEGTIME 1 FAF INK MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "INK",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 5000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

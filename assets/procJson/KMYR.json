@@ -1,0 +1,213 @@
+{
+    "fixes": [
+        {
+            "name": "BEVET",
+            "lat": 33.770825,
+            "lon": 78.95109166666667
+        },
+        {
+            "name": "CHACA",
+            "lat": 33.490422216666666,
+            "lon": 78.88115556666666
+        },
+        {
+            "name": "CRE",
+            "lat": 33.81384166666667,
+            "lon": 78.72452221666667
+        },
+        {
+            "name": "JATBU",
+            "lat": 33.693725,
+            "lon": 78.90181388333333
+        },
+        {
+            "name": "JOKIX",
+            "lat": 33.733383333333336,
+            "lon": 78.94172221666666
+        },
+        {
+            "name": "KOOKE",
+            "lat": 33.94182778333333,
+            "lon": 79.00667221666667
+        },
+        {
+            "name": "LAMPP",
+            "lat": 33.74024721666667,
+            "lon": 78.83325833333333
+        },
+        {
+            "name": "MAKCP",
+            "lat": 33.681094433333335,
+            "lon": 78.9204
+        },
+        {
+            "name": "PLANN",
+            "lat": 33.558447216666664,
+            "lon": 79.09406666666666
+        },
+        {
+            "name": "PORKE",
+            "lat": 33.588605566666665,
+            "lon": 78.90558888333334
+        },
+        {
+            "name": "UXDEP",
+            "lat": 33.869697216666665,
+            "lon": 78.97585
+        },
+        {
+            "name": "WOPSU",
+            "lat": 33.909722216666665,
+            "lon": 79.12234721666667
+        },
+        {
+            "name": "ZEVIM",
+            "lat": 33.95536943333333,
+            "lon": 78.860875
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "UXDEP": "UXDEP AT OR ABOVE 2000",
+                "BEVET": "BEVET 1600 RNW 18 TRK 177 UNTIL 1700 TURN LEFT DIRECT",
+                "CRE": "CRE AT OR ABOVE 3000 HOLD AT CRE LEFT TURN INBOUNDCOURSE 234 LEGTIME 1 FAF BEVET MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "CRE",
+                    "fixes": {
+                        "CRE": "CRE",
+                        "UXDEP": "UXDEP AT OR ABOVE 2000 HOLD AT UXDEP RIGHT TURN INBOUNDCOURSE 177 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS36",
+            "fixes": {
+                "CHACA": "CHACA AT OR ABOVE 1600",
+                "PORKE": "PORKE 1600 RNW 36 HDG 357 VECTORS",
+                "KOOKE": "KOOKE HOLD AT KOOKE RIGHT TURN INBOUNDCOURSE 190 LEGTIME 1 FAF PORKE MAP RNW 36"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "UXDEP": "UXDEP AT OR ABOVE 2000",
+                "BEVET": "BEVET 1600",
+                "JOKIX": "JOKIX AT OR ABOVE 860 RNW 18 TRK 177 UNTIL 500 TURN RIGHT DIRECT",
+                "PLANN": "OVERFLY PLANN AT OR ABOVE 3000 HOLD AT PLANN RIGHT TURN INBOUNDCOURSE 060 ALT 3000 LEGDIST 7 FAF BEVET MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "UXDEP",
+                    "fixes": {
+                        "UXDEP": "UXDEP RIGHT TURN INBOUNDCOURSE 177 ALT 2000 LEGDIST 6"
+                    }
+                },
+                {
+                    "name": "WOPSU",
+                    "fixes": {
+                        "WOPSU": "WOPSU"
+                    }
+                },
+                {
+                    "name": "ZEVIM",
+                    "fixes": {
+                        "ZEVIM": "ZEVIM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA18",
+            "fixes": {
+                "CRE": "CRE AT OR ABOVE 2000",
+                "LAMPP": "LAMPP 1600",
+                "JATBU": "JATBU AT OR ABOVE 740",
+                "MAKCP": "OVERFLY MAKCP 740 RNW 18 TRK 240 UNTIL 740",
+                "PLANN": "OVERFLY PLANN AT OR ABOVE 3000 HOLD AT PLANN RIGHT TURN INBOUNDCOURSE 060 LEGDIST 7 FAF LAMPP MAP MAKCP"
+            },
+            "transitions": [
+                {
+                    "name": "CRE",
+                    "fixes": {
+                        "CRE": "CRE LEFT TURN INBOUNDCOURSE 240 ALT 2000 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "CHACA": "CHACA AT OR ABOVE 1600",
+                "PORKE": "PORKE 1600 RNW 36 TRK 357 UNTIL 225",
+                "UXDEP": "OVERFLY UXDEP AT OR ABOVE 2000 HOLD AT UXDEP RIGHT TURN INBOUNDCOURSE 177 LEGDIST 6 FAF PORKE MAP RNW 36"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAVA36",
+            "fixes": {
+                "CRE": "CRE AT OR ABOVE 2000",
+                "LAMPP": "LAMPP 1600",
+                "JATBU": "JATBU AT OR ABOVE 740",
+                "MAKCP": "OVERFLY MAKCP 740 RNW 36 TRK 240 UNTIL 740",
+                "PLANN": "OVERFLY PLANN AT OR ABOVE 3000 HOLD AT PLANN RIGHT TURN INBOUNDCOURSE 060 LEGDIST 7 FAF LAMPP MAP MAKCP"
+            },
+            "transitions": [
+                {
+                    "name": "CRE",
+                    "fixes": {
+                        "CRE": "CRE LEFT TURN INBOUNDCOURSE 240 ALT 2000 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "CRE": "CRE AT OR ABOVE 2000",
+                "LAMPP": "LAMPP 1600",
+                "JATBU": "JATBU AT OR ABOVE 660",
+                "MAKCP": "MAKCP 560 RNW 18",
+                "PLANN": "PLANN AT OR ABOVE 3000 HOLD AT PLANN RIGHT TURN INBOUNDCOURSE 054 ALT 3000 LEGTIME 1 FAF LAMPP MAP MAKCP"
+            },
+            "transitions": [
+                {
+                    "name": "CRE",
+                    "fixes": {
+                        "CRE": "CRE LEFT TURN INBOUNDCOURSE 234 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "CRE": "CRE AT OR ABOVE 2000",
+                "LAMPP": "LAMPP 1600",
+                "JATBU": "JATBU AT OR ABOVE 660",
+                "MAKCP": "MAKCP 560 RNW 36",
+                "PLANN": "PLANN AT OR ABOVE 3000 HOLD AT PLANN RIGHT TURN INBOUNDCOURSE 054 ALT 3000 LEGTIME 1 FAF LAMPP MAP MAKCP"
+            },
+            "transitions": [
+                {
+                    "name": "CRE",
+                    "fixes": {
+                        "CRE": "CRE LEFT TURN INBOUNDCOURSE 234 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

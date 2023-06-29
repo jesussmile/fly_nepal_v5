@@ -1,0 +1,57 @@
+{
+    "fixes": [
+        {
+            "name": "FF16",
+            "lat": 18.923325,
+            "lon": 93.649125
+        },
+        {
+            "name": "FF34",
+            "lat": 18.766702783333333,
+            "lon": 93.72066666666667
+        },
+        {
+            "name": "MNNB",
+            "lat": 18.844655566666667,
+            "lon": 93.68593333333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FF16": "FF16 1600 RNW 16",
+                "MNNB": "OVERFLY MNNB HDG 157 UNTIL 1500 TURN LEFT DIRECT MNNB 3000 HOLD AT MNNB RIGHT TURN INBOUNDCOURSE 319 ALT 3000 LEGTIME 1 FAF FF16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "MN",
+                    "fixes": {
+                        "MNNB": "MNNB AT OR ABOVE 3000 TRK 319 UNTIL 6.0 FROM MNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB34",
+            "fixes": {
+                "FF34": "FF34 1600 RNW 34",
+                "MNNB": "OVERFLY MNNB HDG 338 UNTIL 1500 TURN RIGHT DIRECT MNNB 3000 HOLD AT MNNB RIGHT TURN INBOUNDCOURSE 176 ALT 3000 LEGTIME 1 FAF FF34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "MN",
+                    "fixes": {
+                        "MNNB": "MNNB AT OR ABOVE 3000 TRK 176 UNTIL 6.0 FROM MNNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

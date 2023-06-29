@@ -1,0 +1,219 @@
+{
+    "fixes": [
+        {
+            "name": "ASMAS",
+            "lat": 34.203611116666664,
+            "lon": 8.673333333333334
+        },
+        {
+            "name": "FD05",
+            "lat": 34.35714721666667,
+            "lon": 8.733177783333334
+        },
+        {
+            "name": "FD23Z",
+            "lat": 34.49719721666666,
+            "lon": 8.916847216666667
+        },
+        {
+            "name": "FS05Y",
+            "lat": 34.360736116666665,
+            "lon": 8.738327783333334
+        },
+        {
+            "name": "FS23Y",
+            "lat": 34.500019433333335,
+            "lon": 8.920261116666667
+        },
+        {
+            "name": "GAF",
+            "lat": 34.4205,
+            "lon": 8.824166666666667
+        },
+        {
+            "name": "JEDLA",
+            "lat": 34.295,
+            "lon": 8.562777783333333
+        },
+        {
+            "name": "ORBAT",
+            "lat": 34.41583333333333,
+            "lon": 9.126388883333334
+        },
+        {
+            "name": "SOUIN",
+            "lat": 34.630555566666665,
+            "lon": 8.989166666666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "ASMA1A",
+            "rnw": "23",
+            "fixes": {
+                "ASMAS": "ASMAS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ASMA1B",
+            "rnw": "05",
+            "fixes": {
+                "GAF": "OVERFLY GAF SPEED 210",
+                "ASMAS": "ASMAS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "JEDL1A",
+            "rnw": "23",
+            "fixes": {
+                "JEDLA": "JEDLA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "JEDL1B",
+            "rnw": "05",
+            "fixes": {
+                "GAF": "OVERFLY GAF SPEED 210",
+                "JEDLA": "JEDLA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ORBA1A",
+            "rnw": "23",
+            "fixes": {
+                "GAF": "GAF",
+                "ORBAT": "ORBAT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ORBA1B",
+            "rnw": "05",
+            "fixes": {
+                "ORBAT": "ORBAT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SOUI1A",
+            "rnw": "23",
+            "fixes": {
+                "GAF": "OVERFLY GAF",
+                "SOUIN": "SOUIN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SOUI2B",
+            "rnw": "05",
+            "fixes": {
+                "GAF": "GAF",
+                "SOUIN": "SOUIN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ05",
+            "fixes": {
+                "FD05": "FD05 2700 RNW 05",
+                "GAF": "OVERFLY GAF TRK 048 UNTIL 7.0 FROM GAF TURN LEFT DIRECT GAF 5000 FAF FD05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "GAF1",
+                    "fixes": {
+                        "GAF": "GAF AT OR ABOVE 5000 TRK 260 UNTIL 8.5 FROM GAF"
+                    }
+                },
+                {
+                    "name": "GAF2",
+                    "fixes": {
+                        "GAF": "GAF AT OR ABOVE 5000 TRK 239 UNTIL 8.5 FROM GAF"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ23",
+            "fixes": {
+                "FD23Z": "FD23Z 2900 RNW 23",
+                "GAF": "OVERFLY GAF TRK 223 UNTIL 7.0 FROM GAF TURN LEFT DIRECT GAF 5000 SPEED 240 FAF FD23Z MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "GAF1",
+                    "fixes": {
+                        "GAF": "GAF AT OR ABOVE 5000 TRK 013 UNTIL 9.0 FROM GAF"
+                    }
+                },
+                {
+                    "name": "GAF2",
+                    "fixes": {
+                        "GAF": "GAF AT OR ABOVE 5000 TRK 033 UNTIL 9.0 FROM GAF"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY05",
+            "fixes": {
+                "FS05Y": "FS05Y 2600 RNW 05",
+                "GAF": "OVERFLY GAF TRK 048 UNTIL 2500 TURN LEFT DIRECT GAF 5000 FAF FS05Y MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "GAF1",
+                    "fixes": {
+                        "GAF": "GAF AT OR ABOVE 5000 TRK 246 UNTIL 8.8 FROM GAF"
+                    }
+                },
+                {
+                    "name": "GAF2",
+                    "fixes": {
+                        "GAF": "GAF AT OR ABOVE 5000 TRK 240 UNTIL 7.0 FROM GAF"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY23",
+            "fixes": {
+                "FS23Y": "FS23Y 3000 RNW 23",
+                "GAF": "OVERFLY GAF TRK 223 UNTIL 3200 TURN LEFT DIRECT GAF 5000 SPEED 230 FAF FS23Y MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "GAF1",
+                    "fixes": {
+                        "GAF": "GAF AT OR ABOVE 5000 TRK 025 UNTIL 8.8 FROM GAF"
+                    }
+                },
+                {
+                    "name": "GAF2",
+                    "fixes": {
+                        "GAF": "GAF AT OR ABOVE 5000 TRK 031 UNTIL 7.0 FROM GAF"
+                    }
+                }
+            ]
+        }
+    ]
+}

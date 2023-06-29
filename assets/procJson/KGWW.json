@@ -1,0 +1,188 @@
+{
+    "fixes": [
+        {
+            "name": "BRADE",
+            "lat": 35.649602783333336,
+            "lon": 78.23321943333333
+        },
+        {
+            "name": "COHAN",
+            "lat": 35.44051111666667,
+            "lon": 77.87329166666666
+        },
+        {
+            "name": "CRIKK",
+            "lat": 35.405822216666664,
+            "lon": 77.71575278333333
+        },
+        {
+            "name": "ESTER",
+            "lat": 35.48028888333333,
+            "lon": 77.82146943333333
+        },
+        {
+            "name": "FENUD",
+            "lat": 35.39301111666666,
+            "lon": 78.03111943333333
+        },
+        {
+            "name": "HODOR",
+            "lat": 35.528430566666664,
+            "lon": 77.89827778333333
+        },
+        {
+            "name": "ISO",
+            "lat": 35.370947216666664,
+            "lon": 77.55831388333333
+        },
+        {
+            "name": "JONVA",
+            "lat": 35.619444433333335,
+            "lon": 77.80867221666666
+        },
+        {
+            "name": "LUDEY",
+            "lat": 35.54087221666666,
+            "lon": 77.68936666666667
+        },
+        {
+            "name": "MAJAH",
+            "lat": 35.459744433333334,
+            "lon": 77.96133611666667
+        },
+        {
+            "name": "WADAP",
+            "lat": 35.32876111666667,
+            "lon": 78.13785278333333
+        },
+        {
+            "name": "WADUG",
+            "lat": 35.54654443333333,
+            "lon": 77.98201666666667
+        },
+        {
+            "name": "WOKUL",
+            "lat": 35.69789721666667,
+            "lon": 77.92821111666666
+        },
+        {
+            "name": "YONUV",
+            "lat": 35.50419443333333,
+            "lon": 77.92209443333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS23",
+            "fixes": {
+                "JONVA": "JONVA AT OR ABOVE 2000",
+                "HODOR": "HODOR 1700 RNW 23 TRK 227 UNTIL 900 TURN RIGHT HDG 040 INTERCEPT RADIAL 302 TO",
+                "WADUG": "WADUG TURN LEFT DIRECT WADUG AT OR ABOVE 2000 HOLD AT WADUG RIGHT TURN INBOUNDCOURSE 122 LEGTIME 1 FAF HODOR MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "ISO",
+                    "fixes": {
+                        "ISO": "ISO",
+                        "JONVA": "JONVA AT OR ABOVE 2000 HOLD AT JONVA RIGHT TURN INBOUNDCOURSE 227 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "WADAP": "WADAP AT OR ABOVE 2300",
+                "FENUD": "FENUD 1700 RNW 05 TRK 047 UNTIL 408",
+                "JONVA": "OVERFLY JONVA AT OR ABOVE 2000 HOLD AT JONVA RIGHT TURN INBOUNDCOURSE 227 LEGDIST 4 FAF FENUD MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "BRADE",
+                    "fixes": {
+                        "BRADE": "BRADE",
+                        "WADAP": "OVERFLY WADAP AT OR ABOVE 2300 HOLD AT WADAP RIGHT TURN INBOUNDCOURSE 062 ALT 2300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ISO",
+                    "fixes": {
+                        "ISO": "ISO",
+                        "WADAP": "OVERFLY WADAP AT OR ABOVE 2300 HOLD AT WADAP RIGHT TURN INBOUNDCOURSE 062 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "JONVA": "JONVA AT OR ABOVE 2000",
+                "HODOR": "HODOR 1700",
+                "YONUV": "YONUV AT OR ABOVE 1100 RNW 23 TRK 227 UNTIL 600 TURN RIGHT DIRECT",
+                "BRADE": "OVERFLY BRADE AT OR ABOVE 2000 HOLD AT BRADE RIGHT TURN INBOUNDCOURSE 302 LEGDIST 4 FAF HODOR MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "BRADE",
+                    "fixes": {
+                        "BRADE": "BRADE",
+                        "WOKUL": "WOKUL AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "ISO",
+                    "fixes": {
+                        "ISO": "ISO",
+                        "LUDEY": "LUDEY AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "JONVA",
+                    "fixes": {
+                        "JONVA": "JONVA RIGHT TURN INBOUNDCOURSE 227 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA05",
+            "fixes": {
+                "CRIKK": "CRIKK AT OR ABOVE 2000",
+                "COHAN": "COHAN 1600",
+                "MAJAH": "MAJAH 760 RNW 05 TURN RIGHT HDG 050 INTERCEPT RADIAL 122 TO",
+                "ESTER": "ESTER ESTER AT OR ABOVE 2000 HOLD AT ESTER LEFT TURN INBOUNDCOURSE 122 LEGTIME 1 FAF COHAN MAP MAJAH"
+            },
+            "transitions": [
+                {
+                    "name": "ISO",
+                    "fixes": {
+                        "ISO": "ISO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA23",
+            "fixes": {
+                "CRIKK": "CRIKK AT OR ABOVE 2000",
+                "COHAN": "COHAN 1600",
+                "MAJAH": "MAJAH 760 RNW 23 TURN RIGHT HDG 050 INTERCEPT RADIAL 122 TO",
+                "ESTER": "ESTER ESTER AT OR ABOVE 2000 HOLD AT ESTER LEFT TURN INBOUNDCOURSE 122 LEGTIME 1 FAF COHAN MAP MAJAH"
+            },
+            "transitions": [
+                {
+                    "name": "ISO",
+                    "fixes": {
+                        "ISO": "ISO"
+                    }
+                }
+            ]
+        }
+    ]
+}

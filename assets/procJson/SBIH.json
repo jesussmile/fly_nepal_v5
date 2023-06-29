@@ -1,0 +1,208 @@
+{
+    "fixes": [
+        {
+            "name": "FF06",
+            "lat": 4.315444433333333,
+            "lon": 56.041080566666665
+        },
+        {
+            "name": "FF24",
+            "lat": 4.181263883333333,
+            "lon": 55.94140278333333
+        },
+        {
+            "name": "IH001",
+            "lat": 4.314238883333333,
+            "lon": 56.05613056666667
+        },
+        {
+            "name": "IH002",
+            "lat": 4.380513883333333,
+            "lon": 56.10711943333333
+        },
+        {
+            "name": "IH003",
+            "lat": 4.446786116666667,
+            "lon": 56.15811943333333
+        },
+        {
+            "name": "IH004",
+            "lat": 4.4512777833333335,
+            "lon": 56.06251111666667
+        },
+        {
+            "name": "IH006",
+            "lat": 4.3550805666666665,
+            "lon": 56.186605566666664
+        },
+        {
+            "name": "IH007",
+            "lat": 4.2811,
+            "lon": 56.03063888333333
+        },
+        {
+            "name": "IH008",
+            "lat": 4.2026861166666665,
+            "lon": 55.97032778333333
+        },
+        {
+            "name": "IH009",
+            "lat": 4.1695416666666665,
+            "lon": 55.94484443333333
+        },
+        {
+            "name": "IH011",
+            "lat": 4.103255566666666,
+            "lon": 55.89388056666667
+        },
+        {
+            "name": "IH013",
+            "lat": 4.12885,
+            "lon": 55.814475
+        },
+        {
+            "name": "IH014",
+            "lat": 4.036966666666666,
+            "lon": 55.842925
+        },
+        {
+            "name": "IH016",
+            "lat": 4.032394433333334,
+            "lon": 55.938316666666665
+        },
+        {
+            "name": "YUB01",
+            "lat": 4.2340333333333335,
+            "lon": 55.99777778333333
+        },
+        {
+            "name": "YUB02",
+            "lat": 4.246463883333333,
+            "lon": 56.00755278333333
+        },
+        {
+            "name": "YUBNB",
+            "lat": 4.2405,
+            "lon": 56.004666666666665
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "05",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 06",
+                    "fixes": {
+                        "RNW 06": "RNW 06 HDG 056 UNTIL 2300 HDG 056 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 24",
+                    "fixes": {
+                        "RNW 24": "RNW 24 HDG 236 UNTIL 2300 HDG 236 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBZ06",
+            "fixes": {
+                "FF06": "FF06 1600",
+                "YUB02": "OVERFLY YUB02 145",
+                "YUBNB": "OVERFLY YUBNB AT OR ABOVE 510 RNW 06 TRK 044 UNTIL 1500 TURN RIGHT DIRECT YUBNB AT OR ABOVE 3000 SPEED 210 HOLD AT YUBNB RIGHT TURN INBOUNDCOURSE 245 ALT 3000 LEGTIME 1 FAF FF06 MAP YUB"
+            },
+            "transitions": [
+                {
+                    "name": "YUB",
+                    "fixes": {
+                        "YUBNB": "YUBNB AT OR ABOVE 3000 SPEED 210 TRK 245 UNTIL 8.2 FROM YUBNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBY24",
+            "fixes": {
+                "FF24": "FF24 1600",
+                "YUB01": "OVERFLY YUB01 132",
+                "YUBNB": "OVERFLY YUBNB AT OR ABOVE 510 RNW 24 TRK 245 UNTIL 1500 TURN LEFT DIRECT YUBNB AT OR ABOVE 3000 SPEED 210 HOLD AT YUBNB RIGHT TURN INBOUNDCOURSE 044 ALT 3000 LEGTIME 1 FAF FF24 MAP YUB"
+            },
+            "transitions": [
+                {
+                    "name": "YUB",
+                    "fixes": {
+                        "YUBNB": "YUBNB AT OR ABOVE 3000 SPEED 210 TRK 044 UNTIL 8.2 FROM YUBNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ06",
+            "fixes": {
+                "IH002": "IH002 AT OR ABOVE 1800",
+                "IH001": "IH001 1740",
+                "IH007": "IH007 AT OR ABOVE 941 RNW 06 TRK 056 UNTIL 1500 TURN RIGHT DIRECT",
+                "IH004": "OVERFLY IH004 AT OR ABOVE 3000 HOLD AT IH004 RIGHT TURN INBOUNDCOURSE 346 ALT 3000 LEGTIME 1 FAF IH001 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "IH003",
+                    "fixes": {
+                        "IH003": "IH003 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "IH004",
+                    "fixes": {
+                        "IH004": "IH004 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "IH006",
+                    "fixes": {
+                        "IH006": "IH006 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY24",
+            "fixes": {
+                "IH011": "IH011 AT OR ABOVE 1800",
+                "IH009": "IH009 1730",
+                "IH008": "IH008 AT OR ABOVE 928 RNW 24 TRK 236 UNTIL 1500 TURN LEFT DIRECT",
+                "IH013": "OVERFLY IH013 AT OR ABOVE 3000 HOLD AT IH013 RIGHT TURN INBOUNDCOURSE 306 ALT 3000 LEGTIME 1 FAF IH009 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "IH013",
+                    "fixes": {
+                        "IH013": "IH013 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "IH014",
+                    "fixes": {
+                        "IH014": "IH014 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "IH016",
+                    "fixes": {
+                        "IH016": "IH016 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

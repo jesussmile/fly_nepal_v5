@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "ANIJE",
+            "lat": 40.94900833333333,
+            "lon": 72.10097221666666
+        },
+        {
+            "name": "ARCAV",
+            "lat": 40.96605,
+            "lon": 71.79878333333333
+        },
+        {
+            "name": "COBER",
+            "lat": 41.133966666666666,
+            "lon": 71.83905278333333
+        },
+        {
+            "name": "CUTUX",
+            "lat": 41.22643611666667,
+            "lon": 71.70725833333333
+        },
+        {
+            "name": "DACBE",
+            "lat": 41.04805,
+            "lon": 71.96103056666666
+        },
+        {
+            "name": "GON",
+            "lat": 41.330402783333334,
+            "lon": 72.05198333333334
+        },
+        {
+            "name": "HTO",
+            "lat": 40.91899443333333,
+            "lon": 72.31670556666667
+        },
+        {
+            "name": "LEDEC",
+            "lat": 41.112952783333334,
+            "lon": 71.86896111666667
+        },
+        {
+            "name": "PARCH",
+            "lat": 41.09922778333333,
+            "lon": 72.12073888333333
+        },
+        {
+            "name": "SEY",
+            "lat": 41.167436116666664,
+            "lon": 71.57608611666667
+        },
+        {
+            "name": "VIZQA",
+            "lat": 41.01888056666667,
+            "lon": 72.00231388333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "ANIJE": "ANIJE AT OR ABOVE 2000",
+                "VIZQA": "VIZQA 1600",
+                "DACBE": "DACBE AT OR ABOVE 780 RNW 06 TRK 062 UNTIL 407",
+                "LEDEC": "LEDEC",
+                "SEY": "OVERFLY SEY AT OR ABOVE 2000 HOLD AT SEY LEFT TURN INBOUNDCOURSE 279 LEGDIST 4 FAF VIZQA MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ARCAV",
+                    "fixes": {
+                        "ARCAV": "ARCAV",
+                        "ANIJE": "OVERFLY ANIJE AT OR ABOVE 2000 HOLD AT ANIJE RIGHT TURN INBOUNDCOURSE 062 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HTO",
+                    "fixes": {
+                        "HTO": "HTO"
+                    }
+                },
+                {
+                    "name": "PARCH",
+                    "fixes": {
+                        "PARCH": "PARCH",
+                        "ANIJE": "OVERFLY ANIJE AT OR ABOVE 2000 HOLD AT ANIJE RIGHT TURN INBOUNDCOURSE 062 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "CUTUX": "CUTUX AT OR ABOVE 2500 OVERFLY CUTUX AT OR ABOVE 2500 HOLD AT CUTUX RIGHT TURN INBOUNDCOURSE 242 LEGDIST 4 FAF COBER MAP RNW 24",
+                "COBER": "COBER 1600 RNW 24 TRK 242 UNTIL 600 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GON",
+                    "fixes": {
+                        "GON": "GON",
+                        "CUTUX": "OVERFLY CUTUX AT OR ABOVE 2500 HOLD AT CUTUX RIGHT TURN INBOUNDCOURSE 242 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SEY",
+                    "fixes": {
+                        "SEY": "SEY"
+                    }
+                }
+            ]
+        }
+    ]
+}

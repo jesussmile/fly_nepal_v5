@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "AGMAD",
+            "lat": 52.86446111666667,
+            "lon": 104.84978333333333
+        },
+        {
+            "name": "DANLO",
+            "lat": 52.86382221666667,
+            "lon": 104.38669166666666
+        },
+        {
+            "name": "GONUN",
+            "lat": 52.86425,
+            "lon": 105.01477778333333
+        },
+        {
+            "name": "IGSEG",
+            "lat": 52.86429166666667,
+            "lon": 104.5703
+        },
+        {
+            "name": "KANAX",
+            "lat": 52.958680566666665,
+            "lon": 104.38582778333334
+        },
+        {
+            "name": "LENEN",
+            "lat": 52.86446943333333,
+            "lon": 104.83158611666667
+        },
+        {
+            "name": "MAPAM",
+            "lat": 52.769388883333335,
+            "lon": 105.01427221666667
+        },
+        {
+            "name": "NABTA",
+            "lat": 52.864255566666664,
+            "lon": 104.55168333333333
+        },
+        {
+            "name": "OBMOV",
+            "lat": 52.768963883333335,
+            "lon": 104.38755
+        },
+        {
+            "name": "RABEG",
+            "lat": 52.95910833333333,
+            "lon": 105.01528888333333
+        },
+        {
+            "name": "SASOL",
+            "lat": 52.86438056666667,
+            "lon": 104.62809166666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "GONUN": "GONUN AT OR ABOVE 3200 SPEED 180",
+                "AGMAD": "AGMAD 3200 RNW 08",
+                "IGSEG": "OVERFLY IGSEG 3200 HOLD AT IGSEG RIGHT TURN INBOUNDCOURSE 081 SPEED 200 LEGTIME 1 FAF AGMAD MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "MAPAM",
+                    "fixes": {
+                        "MAPAM": "MAPAM SPEED 210"
+                    }
+                },
+                {
+                    "name": "RABEG",
+                    "fixes": {
+                        "RABEG": "RABEG SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "DANLO": "DANLO AT OR ABOVE 3200 SPEED 180",
+                "NABTA": "NABTA 3200",
+                "SASOL": "SASOL AT OR ABOVE 2290 RNW 26",
+                "LENEN": "OVERFLY LENEN 3200 HOLD AT LENEN RIGHT TURN INBOUNDCOURSE 261 ALT 3200 SPEED 200 LEGTIME 1 FAF NABTA MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "KANAX",
+                    "fixes": {
+                        "KANAX": "KANAX SPEED 210"
+                    }
+                },
+                {
+                    "name": "OBMOV",
+                    "fixes": {
+                        "OBMOV": "OBMOV SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

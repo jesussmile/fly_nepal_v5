@@ -1,0 +1,179 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 38.648532349999996,
+            "lon": 9.7018405
+        },
+        {
+            "name": "AF002",
+            "lat": 38.569604283333334,
+            "lon": 9.643655933333333
+        },
+        {
+            "name": "AF003",
+            "lat": 38.5091276,
+            "lon": 9.556574516666666
+        },
+        {
+            "name": "BUGID",
+            "lat": 38.473055566666666,
+            "lon": 9.449444433333333
+        },
+        {
+            "name": "CAS",
+            "lat": 38.74825,
+            "lon": 9.362027783333334
+        },
+        {
+            "name": "CEFOX",
+            "lat": 38.55165278333333,
+            "lon": 9.402702783333334
+        },
+        {
+            "name": "CS460",
+            "lat": 38.71415556666667,
+            "lon": 9.522525
+        },
+        {
+            "name": "D169K",
+            "lat": 38.570166666666665,
+            "lon": 9.305472216666667
+        },
+        {
+            "name": "D237F",
+            "lat": 38.689366666666665,
+            "lon": 9.465352783333334
+        },
+        {
+            "name": "EKMAR",
+            "lat": 38.55737778333334,
+            "lon": 9.521444433333333
+        },
+        {
+            "name": "ESP",
+            "lat": 38.424138883333335,
+            "lon": 9.185666666666666
+        },
+        {
+            "name": "FD35",
+            "lat": 38.635277783333336,
+            "lon": 9.325277783333334
+        },
+        {
+            "name": "FTM",
+            "lat": 39.665694433333336,
+            "lon": 8.492638883333333
+        },
+        {
+            "name": "FTM35",
+            "lat": 39.26071111666667,
+            "lon": 9.035188883333333
+        },
+        {
+            "name": "MD35",
+            "lat": 38.71587221666667,
+            "lon": 9.351722216666667
+        },
+        {
+            "name": "OXFIN",
+            "lat": 38.57454443333334,
+            "lon": 9.300491666666666
+        },
+        {
+            "name": "ROKAP",
+            "lat": 38.73611111666666,
+            "lon": 9.723888883333334
+        },
+        {
+            "name": "ZEZZU",
+            "lat": 38.63467778333333,
+            "lon": 9.322313883333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "ESP1M",
+            "rnw": "17",
+            "fixes": {
+                "CAS": "CAS TURN LEFT DIRECT",
+                "ESP": "ESP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ESP1T",
+            "rnw": "35",
+            "fixes": {
+                "CAS": "CAS TURN LEFT HDG 135 INTERCEPT RADIAL 105 TO",
+                "ESP": "ESP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "FTM1C",
+            "runway": "RNW 35",
+            "fixes": {
+                "FTM": "FTM",
+                "FTM35": "FTM35",
+                "ROKAP": "ROKAP AT OR ABOVE 6000",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "AF003": "AF003",
+                "BUGID": "BUGID 2000 HDG 034 INTERCEPT RADIAL 349 TO",
+                "FD35": "FD35 FD35"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD35",
+            "fixes": {
+                "FD35": "FD35 2000 SPEED 130",
+                "MD35": "MD35 391 RNW 35 TRK 349 UNTIL 730 TURN LEFT DIRECT",
+                "D237F": "OVERFLY D237F SPEED 130 TRK 192 INTERCEPT RADIAL 224 TO",
+                "EKMAR": "EKMAR EKMAR 3000 SPEED 150 HOLD AT EKMAR LEFT TURN INBOUNDCOURSE 044 ALT 3000 SPEED 170 LEGDIST 5 FAF FD35 MAP MD35"
+            },
+            "transitions": [
+                {
+                    "name": "ESP",
+                    "fixes": {
+                        "ESP": "ESP AT OR ABOVE 3000 SPEED 180",
+                        "D169K": "D169K AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "FD35",
+                    "fixes": {
+                        "FD35": "FD35 LEFT TURN INBOUNDCOURSE 349 ALT 2000 SPEED 170 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "OXFIN": "OXFIN 2000",
+                "ZEZZU": "ZEZZU 2000 RNW 35 TURN LEFT DIRECT",
+                "CS460": "CS460 SPEED 130",
+                "EKMAR": "EKMAR AT OR ABOVE 3000 HOLD AT EKMAR LEFT TURN INBOUNDCOURSE 044 ALT 3000 LEGTIME 1 FAF ZEZZU MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CEFOX",
+                    "fixes": {
+                        "CEFOX": "CEFOX 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

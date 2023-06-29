@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "FS09",
+            "lat": 20.964088883333332,
+            "lon": 75.51073888333333
+        },
+        {
+            "name": "FS27",
+            "lat": 20.94708333333333,
+            "lon": 75.74793611666666
+        },
+        {
+            "name": "JLG",
+            "lat": 20.964138883333334,
+            "lon": 75.63361111666667
+        },
+        {
+            "name": "MS09",
+            "lat": 20.964130566666668,
+            "lon": 75.60690556666667
+        },
+        {
+            "name": "MS27",
+            "lat": 20.960205566666666,
+            "lon": 75.66000278333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "FS09": "FS09 2900",
+                "MS09": "MS09 1181 RNW 09 TRK 090 UNTIL 2900 TURN RIGHT DIRECT",
+                "JLG": "JLG 4700 HOLD AT JLG RIGHT TURN INBOUNDCOURSE 260 ALT 4700 LEGTIME 1 FAF FS09 MAP MS09"
+            },
+            "transitions": [
+                {
+                    "name": "JLG",
+                    "fixes": {
+                        "JLG": "JLG AT OR ABOVE 4700 TRK 260 UNTIL 9.0 FROM JLG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD27",
+            "fixes": {
+                "FS27": "FS27 2900",
+                "MS27": "MS27 1305 RNW 27 TRK 279 UNTIL 2900 TURN RIGHT DIRECT",
+                "JLG": "JLG 4700 HOLD AT JLG RIGHT TURN INBOUNDCOURSE 079 ALT 4700 LEGTIME 1 FAF FS27 MAP MS27"
+            },
+            "transitions": [
+                {
+                    "name": "JLG1",
+                    "fixes": {
+                        "JLG": "JLG AT OR ABOVE 4700 TRK 079 UNTIL 9.0 FROM JLG"
+                    }
+                },
+                {
+                    "name": "JLG2",
+                    "fixes": {
+                        "JLG": "JLG AT OR ABOVE 4700 TRK 089 UNTIL 9.0 FROM JLG"
+                    }
+                }
+            ]
+        }
+    ]
+}

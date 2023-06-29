@@ -1,0 +1,308 @@
+{
+    "fixes": [
+        {
+            "name": "CI29Y",
+            "lat": 26.678369433333334,
+            "lon": 83.61418888333333
+        },
+        {
+            "name": "CI29Z",
+            "lat": 26.679283333333334,
+            "lon": 83.61179166666666
+        },
+        {
+            "name": "D082I",
+            "lat": 26.763338883333333,
+            "lon": 83.60539443333333
+        },
+        {
+            "name": "D088I",
+            "lat": 26.742216666666668,
+            "lon": 83.62685278333333
+        },
+        {
+            "name": "D088J",
+            "lat": 26.748211116666667,
+            "lon": 83.62550833333333
+        },
+        {
+            "name": "D098I",
+            "lat": 26.721463883333332,
+            "lon": 83.60533611666666
+        },
+        {
+            "name": "D102I",
+            "lat": 26.702822216666668,
+            "lon": 83.62281111666667
+        },
+        {
+            "name": "D102J",
+            "lat": 26.707627783333333,
+            "lon": 83.62148888333333
+        },
+        {
+            "name": "D270H",
+            "lat": 26.742430566666666,
+            "lon": 83.29981666666667
+        },
+        {
+            "name": "D286H",
+            "lat": 26.776988883333335,
+            "lon": 83.30518333333333
+        },
+        {
+            "name": "EN29",
+            "lat": 26.732866666666666,
+            "lon": 83.46189166666667
+        },
+        {
+            "name": "FF11",
+            "lat": 26.783277783333332,
+            "lon": 83.35393611666667
+        },
+        {
+            "name": "FF29",
+            "lat": 26.706438883333334,
+            "lon": 83.54962221666666
+        },
+        {
+            "name": "FI29",
+            "lat": 26.703113883333334,
+            "lon": 83.54906388333333
+        },
+        {
+            "name": "FN114",
+            "lat": 26.774958333333334,
+            "lon": 83.35020833333333
+        },
+        {
+            "name": "FN29",
+            "lat": 26.711241666666666,
+            "lon": 83.55159166666667
+        },
+        {
+            "name": "GHNB",
+            "lat": 26.736666666666668,
+            "lon": 83.44611111666667
+        },
+        {
+            "name": "GKP",
+            "lat": 26.7425,
+            "lon": 83.43944443333334
+        },
+        {
+            "name": "MD11Z",
+            "lat": 26.750344433333332,
+            "lon": 83.42300278333333
+        },
+        {
+            "name": "MD29Z",
+            "lat": 26.733922216666667,
+            "lon": 83.46568333333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ11",
+            "fixes": {
+                "FF11": "FF11 1900",
+                "MD11Z": "MD11Z 569 RNW 11 TRK 118 UNTIL 1500 TURN LEFT DIRECT",
+                "GKP": "GKP 1900 HOLD AT GKP RIGHT TURN INBOUNDCOURSE 270 ALT 1900 LEGTIME 1 FAF FF11 MAP MD11Z"
+            },
+            "transitions": [
+                {
+                    "name": "GKP1",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900",
+                        "D270H": "OVERFLY D270H AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "GKP2",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900",
+                        "D286H": "OVERFLY D286H AT OR ABOVE 1900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ29",
+            "fixes": {
+                "FF29": "FF29 1900",
+                "MD29Z": "MD29Z 370 RNW 29 TRK 290 UNTIL 1500 TURN LEFT DIRECT",
+                "GKP": "GKP 1900 HOLD AT GKP RIGHT TURN INBOUNDCOURSE 082 ALT 1900 LEGTIME 1 FAF FF29 MAP MD29Z"
+            },
+            "transitions": [
+                {
+                    "name": "GKP1",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900",
+                        "D082I": "OVERFLY D082I AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "GKP2",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900",
+                        "D098I": "OVERFLY D098I AT OR ABOVE 1900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY29",
+            "fixes": {
+                "CI29Y": "CI29Y AT OR ABOVE 1900",
+                "FI29": "FI29 1900 RNW 29 TRK 293 UNTIL 1500 TURN LEFT DIRECT",
+                "GHNB": "GHNB 1900 HOLD AT GHNB RIGHT TURN INBOUNDCOURSE 088 ALT 1900 LEGTIME 1 FAF FI29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "GH1",
+                    "fixes": {
+                        "GHNB": "GHNB AT OR ABOVE 1900",
+                        "D088I": "OVERFLY D088I AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "GH2",
+                    "fixes": {
+                        "GHNB": "GHNB AT OR ABOVE 1900",
+                        "D102I": "OVERFLY D102I AT OR ABOVE 1900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ29",
+            "fixes": {
+                "CI29Z": "CI29Z AT OR ABOVE 1900",
+                "FI29": "FI29 1900 RNW 29 TRK 293 UNTIL 1500 TURN LEFT DIRECT",
+                "GKP": "GKP 1900 HOLD AT GKP RIGHT TURN INBOUNDCOURSE 088 ALT 1900 LEGTIME 1 FAF FI29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "GKP1",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900",
+                        "D088J": "OVERFLY D088J AT OR ABOVE 1900"
+                    }
+                },
+                {
+                    "name": "GKP2",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900",
+                        "D102J": "OVERFLY D102J AT OR ABOVE 1900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FN29": "FN29 1900",
+                "EN29": "OVERFLY EN29 310",
+                "GHNB": "OVERFLY GHNB AT OR ABOVE 660 RNW 29 TRK 285 UNTIL 1500 TURN LEFT DIRECT GHNB 1900 HOLD AT GHNB RIGHT TURN INBOUNDCOURSE 090 ALT 1900 LEGTIME 1 FAF FN29 MAP GH"
+            },
+            "transitions": [
+                {
+                    "name": "GH",
+                    "fixes": {
+                        "GHNB": "GHNB AT OR ABOVE 1900 SPEED 185 TRK 090 UNTIL 8.8 FROM GHNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB11",
+            "fixes": {
+                "FN114": "FN114 1900",
+                "GHNB": "GHNB 980 RNW 11 TRK 114 UNTIL 1500 TURN LEFT DIRECT GHNB 1900 HOLD AT GHNB RIGHT TURN INBOUNDCOURSE 266 ALT 1900 LEGTIME 1 FAF FN114 MAP GH"
+            },
+            "transitions": [
+                {
+                    "name": "GH1",
+                    "fixes": {
+                        "GHNB": "GHNB AT OR ABOVE 1900 TRK 266 UNTIL 7.0 FROM GHNB"
+                    }
+                },
+                {
+                    "name": "GH2",
+                    "fixes": {
+                        "GHNB": "GHNB AT OR ABOVE 1900 TRK 282 UNTIL 9.0 FROM GHNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB29",
+            "fixes": {
+                "FN114": "FN114 1900",
+                "GHNB": "GHNB 980 RNW 29 TRK 114 UNTIL 1500 TURN LEFT DIRECT GHNB 1900 HOLD AT GHNB RIGHT TURN INBOUNDCOURSE 266 ALT 1900 LEGTIME 1 FAF FN114 MAP GH"
+            },
+            "transitions": [
+                {
+                    "name": "GH1",
+                    "fixes": {
+                        "GHNB": "GHNB AT OR ABOVE 1900 TRK 266 UNTIL 7.0 FROM GHNB"
+                    }
+                },
+                {
+                    "name": "GH2",
+                    "fixes": {
+                        "GHNB": "GHNB AT OR ABOVE 1900 TRK 282 UNTIL 9.0 FROM GHNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY11",
+            "fixes": {
+                "FF11": "FF11 1900 RNW 11",
+                "GKP": "OVERFLY GKP AT OR ABOVE 660 TRK 118 UNTIL 1500 TURN LEFT DIRECT GKP 1900 HOLD AT GKP RIGHT TURN INBOUNDCOURSE 270 ALT 1900 LEGTIME 1 FAF FF11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "GKP1",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900 TRK 270 UNTIL 7.0 FROM GKP"
+                    }
+                },
+                {
+                    "name": "GKP2",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900 TRK 286 UNTIL 9.0 FROM GKP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY29",
+            "fixes": {
+                "FF29": "FF29 1900 RNW 29",
+                "GKP": "OVERFLY GKP AT OR ABOVE 660 TRK 290 UNTIL 1500 TURN LEFT DIRECT GKP 1900 HOLD AT GKP RIGHT TURN INBOUNDCOURSE 082 ALT 1900 LEGTIME 1 FAF FF29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "GKP1",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900 TRK 082 UNTIL 7.0 FROM GKP"
+                    }
+                },
+                {
+                    "name": "GKP2",
+                    "fixes": {
+                        "GKP": "GKP AT OR ABOVE 1900 TRK 098 UNTIL 9.0 FROM GKP"
+                    }
+                }
+            ]
+        }
+    ]
+}

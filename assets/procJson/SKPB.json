@@ -1,0 +1,171 @@
+{
+    "fixes": [
+        {
+            "name": "ANRED",
+            "lat": 12.1897,
+            "lon": 72.2395
+        },
+        {
+            "name": "GIKBA",
+            "lat": 11.7571,
+            "lon": 72.3025
+        },
+        {
+            "name": "IRIRI",
+            "lat": 12.067552783333333,
+            "lon": 71.98245278333333
+        },
+        {
+            "name": "NESGU",
+            "lat": 12.044383333333334,
+            "lon": 72.59421111666667
+        },
+        {
+            "name": "OPRAM",
+            "lat": 12.1188,
+            "lon": 72.1754
+        },
+        {
+            "name": "PB401",
+            "lat": 12.2103,
+            "lon": 72.0741
+        },
+        {
+            "name": "PB402",
+            "lat": 12.214247216666667,
+            "lon": 72.04252778333333
+        },
+        {
+            "name": "PB403",
+            "lat": 12.217461116666666,
+            "lon": 72.01694166666667
+        },
+        {
+            "name": "PB404",
+            "lat": 12.226,
+            "lon": 71.9487
+        },
+        {
+            "name": "PB901",
+            "lat": 12.234733333333333,
+            "lon": 71.87765278333333
+        },
+        {
+            "name": "PB903",
+            "lat": 12.135069433333333,
+            "lon": 71.86491111666666
+        },
+        {
+            "name": "PB904",
+            "lat": 12.062469433333334,
+            "lon": 72.11843611666667
+        },
+        {
+            "name": "PB905",
+            "lat": 11.973602783333334,
+            "lon": 72.07942221666667
+        },
+        {
+            "name": "TEKEB",
+            "lat": 12.2,
+            "lon": 72.1568
+        },
+        {
+            "name": "XUXOR",
+            "lat": 11.8969,
+            "lon": 72.488
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "IRIR1A",
+            "rnw": "09",
+            "fixes": {
+                "PB901": "PB901 AT OR ABOVE 1400",
+                "PB903": "PB903 AT OR ABOVE 2640",
+                "IRIRI": "IRIRI AT OR ABOVE 4500"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "GIKBA",
+                    "fixes": [
+                        "PB905",
+                        "GIKBA"
+                    ]
+                },
+                {
+                    "name": "NESGU",
+                    "fixes": [
+                        "PB904",
+                        "NESGU"
+                    ]
+                },
+                {
+                    "name": "XUXOR",
+                    "fixes": [
+                        "PB904",
+                        "XUXOR"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [
+        {
+            "name": "GIKB2A",
+            "runway": "RNW 09",
+            "fixes": {
+                "GIKBA": "GIKBA AT OR BELOW 5000 AT OR ABOVE 4000",
+                "OPRAM": "OPRAM AT OR ABOVE 4000"
+            }
+        },
+        {
+            "name": "NESG2A",
+            "runway": "RNW 09",
+            "fixes": {
+                "NESGU": "NESGU AT OR BELOW 5000 AT OR ABOVE 4000",
+                "ANRED": "ANRED AT OR ABOVE 4000"
+            }
+        },
+        {
+            "name": "XUXO2A",
+            "runway": "RNW 09",
+            "fixes": {
+                "XUXOR": "XUXOR AT OR BELOW 5000 AT OR ABOVE 4000",
+                "OPRAM": "OPRAM AT OR ABOVE 4000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "TEKEB": "TEKEB AT OR ABOVE 3200",
+                "PB401": "PB401 1700",
+                "PB402": "PB402 AT OR ABOVE 1100",
+                "PB403": "PB403 AT OR ABOVE 620 RNW 09",
+                "PB404": "OVERFLY PB404 AT OR ABOVE 700 TURN RIGHT DIRECT",
+                "OPRAM": "OPRAM AT OR ABOVE 5000 FAF PB401 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "ANRED",
+                    "fixes": {
+                        "ANRED": "ANRED AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "OPRAM",
+                    "fixes": {
+                        "OPRAM": "OPRAM AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

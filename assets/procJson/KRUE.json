@@ -1,0 +1,183 @@
+{
+    "fixes": [
+        {
+            "name": "BIBBS",
+            "lat": 34.96486388333334,
+            "lon": 92.62829166666667
+        },
+        {
+            "name": "CUKOR",
+            "lat": 35.283088883333335,
+            "lon": 92.98371943333333
+        },
+        {
+            "name": "CULEL",
+            "lat": 35.247852783333336,
+            "lon": 93.14475833333333
+        },
+        {
+            "name": "ERUYI",
+            "lat": 35.27945278333333,
+            "lon": 93.39328333333333
+        },
+        {
+            "name": "EYEBE",
+            "lat": 35.30876943333333,
+            "lon": 92.86563888333333
+        },
+        {
+            "name": "FF360",
+            "lat": 35.149644433333336,
+            "lon": 93.10145833333333
+        },
+        {
+            "name": "HAAWK",
+            "lat": 35.26737778333333,
+            "lon": 93.12416666666667
+        },
+        {
+            "name": "NACBI",
+            "lat": 35.22566388333333,
+            "lon": 93.24559443333334
+        },
+        {
+            "name": "OBVOE",
+            "lat": 35.11829443333333,
+            "lon": 93.34026943333333
+        },
+        {
+            "name": "OLLAS",
+            "lat": 35.000538883333334,
+            "lon": 93.11275833333333
+        },
+        {
+            "name": "PABPI",
+            "lat": 35.19887778333333,
+            "lon": 93.36675
+        },
+        {
+            "name": "PI001",
+            "lat": 35.19882988333333,
+            "lon": 93.0983416
+        },
+        {
+            "name": "PI002",
+            "lat": 35.14555703333333,
+            "lon": 93.03969563333334
+        },
+        {
+            "name": "PI003",
+            "lat": 35.090644616666665,
+            "lon": 93.10526576666666
+        },
+        {
+            "name": "RUENB",
+            "lat": 35.257083333333334,
+            "lon": 93.09460556666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA07",
+            "fixes": {
+                "FF360": "FF360 2500",
+                "RUENB": "RUENB 1240 RNW 07 TRK 000 UNTIL 3000 TURN RIGHT DIRECT RUENB HOLD AT RUENB RIGHT TURN INBOUNDCOURSE 000 LEGTIME 1 FAF FF360 MAP RUE"
+            },
+            "transitions": [
+                {
+                    "name": "OLLAS",
+                    "fixes": {
+                        "OLLAS": "OLLAS",
+                        "RUENB": "RUENB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA25",
+            "fixes": {
+                "FF360": "FF360 2500",
+                "RUENB": "RUENB 1240 RNW 25 TRK 000 UNTIL 3000 TURN RIGHT DIRECT RUENB HOLD AT RUENB RIGHT TURN INBOUNDCOURSE 000 LEGTIME 1 FAF FF360 MAP RUE"
+            },
+            "transitions": [
+                {
+                    "name": "OLLAS",
+                    "fixes": {
+                        "OLLAS": "OLLAS",
+                        "RUENB": "RUENB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "PABPI": "PABPI AT OR ABOVE 3500",
+                "NACBI": "NACBI 2800",
+                "CULEL": "CULEL AT OR ABOVE 1120 RNW 07",
+                "EYEBE": "OVERFLY EYEBE AT OR ABOVE 3000 HOLD AT EYEBE RIGHT TURN INBOUNDCOURSE 252 LEGDIST 5 FAF NACBI MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "ERUYI",
+                    "fixes": {
+                        "ERUYI": "ERUYI AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "OBVOE",
+                    "fixes": {
+                        "OBVOE": "OBVOE AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "PABPI",
+                    "fixes": {
+                        "PABPI": "PABPI RIGHT TURN INBOUNDCOURSE 072 ALT 3500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "EYEBE": "EYEBE AT OR ABOVE 3000 EYEBE AT OR ABOVE 3000 HOLD AT EYEBE RIGHT TURN INBOUNDCOURSE 252 LEGDIST 5 FAF CUKOR MAP RNW 25",
+                "CUKOR": "CUKOR 2100 RNW 25 TRK 252 UNTIL 803 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BIBBS",
+                    "fixes": {
+                        "BIBBS": "BIBBS"
+                    }
+                },
+                {
+                    "name": "HAAWK",
+                    "fixes": {
+                        "HAAWK": "HAAWK",
+                        "EYEBE": "EYEBE AT OR ABOVE 3000 HOLD AT EYEBE RIGHT TURN INBOUNDCOURSE 252 ALT 3000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "OLLAS",
+                    "fixes": {
+                        "OLLAS": "OLLAS",
+                        "EYEBE": "EYEBE AT OR ABOVE 3000 HOLD AT EYEBE RIGHT TURN INBOUNDCOURSE 252 ALT 3000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

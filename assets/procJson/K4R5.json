@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "CEKLO",
+            "lat": 46.70530556666667,
+            "lon": 90.86039721666667
+        },
+        {
+            "name": "DAGAC",
+            "lat": 46.627380566666666,
+            "lon": 90.95505556666667
+        },
+        {
+            "name": "FIMBU",
+            "lat": 46.68074166666667,
+            "lon": 91.04795
+        },
+        {
+            "name": "HENUP",
+            "lat": 46.57394166666667,
+            "lon": 90.86234443333333
+        },
+        {
+            "name": "IWD",
+            "lat": 46.53225556666667,
+            "lon": 90.12585
+        },
+        {
+            "name": "IYASU",
+            "lat": 46.87871388333333,
+            "lon": 90.64840278333334
+        },
+        {
+            "name": "JEBTO",
+            "lat": 46.956347216666664,
+            "lon": 90.55288611666667
+        },
+        {
+            "name": "KULME",
+            "lat": 46.902577783333335,
+            "lon": 90.46001943333333
+        },
+        {
+            "name": "MEKME",
+            "lat": 47.01003888333333,
+            "lon": 90.64593888333333
+        },
+        {
+            "name": "NOYIC",
+            "lat": 46.6863,
+            "lon": 91.27283333333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "DAGAC": "DAGAC AT OR ABOVE 2900",
+                "CEKLO": "CEKLO 2700 RNW 04 TRK 040 UNTIL 1049",
+                "JEBTO": "OVERFLY JEBTO AT OR ABOVE 4000 HOLD AT JEBTO RIGHT TURN INBOUNDCOURSE 220 LEGDIST 4 FAF CEKLO MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "DAGAC",
+                    "fixes": {
+                        "DAGAC": "DAGAC RIGHT TURN INBOUNDCOURSE 040 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "IWD",
+                    "fixes": {
+                        "IWD": "IWD",
+                        "HENUP": "HENUP AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "NOYIC",
+                    "fixes": {
+                        "NOYIC": "NOYIC",
+                        "FIMBU": "FIMBU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "JEBTO": "JEBTO AT OR ABOVE 4000",
+                "IYASU": "IYASU 2900 RNW 22 TRK 220 UNTIL 1049",
+                "DAGAC": "OVERFLY DAGAC AT OR ABOVE 2900 HOLD AT DAGAC RIGHT TURN INBOUNDCOURSE 040 LEGDIST 4 FAF IYASU MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "IWD",
+                    "fixes": {
+                        "IWD": "IWD",
+                        "KULME": "KULME AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "JEBTO",
+                    "fixes": {
+                        "JEBTO": "JEBTO RIGHT TURN INBOUNDCOURSE 220 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NOYIC",
+                    "fixes": {
+                        "NOYIC": "NOYIC",
+                        "MEKME": "MEKME AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

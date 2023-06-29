@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "HOBUG",
+            "lat": 44.832966666666664,
+            "lon": 97.62343888333334
+        },
+        {
+            "name": "IYLUG",
+            "lat": 44.955547216666666,
+            "lon": 97.797725
+        },
+        {
+            "name": "WOLTA",
+            "lat": 44.86732778333333,
+            "lon": 97.672175
+        },
+        {
+            "name": "WOPOB",
+            "lat": 45.01405556666667,
+            "lon": 97.88131666666666
+        },
+        {
+            "name": "WUNOV",
+            "lat": 44.77426666666667,
+            "lon": 97.54036943333334
+        },
+        {
+            "name": "ZEVOB",
+            "lat": 44.933058333333335,
+            "lon": 97.76566666666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 13",
+        "RNW 21",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "WOPOB": "WOPOB AT OR ABOVE 3400",
+                "IYLUG": "IYLUG 3400",
+                "ZEVOB": "ZEVOB AT OR ABOVE 2780 RNW 13 TRK 131 UNTIL 2193",
+                "WUNOV": "OVERFLY WUNOV AT OR ABOVE 3400 HOLD AT WUNOV RIGHT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF IYLUG MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "WOPOB",
+                    "fixes": {
+                        "WOPOB": "WOPOB RIGHT TURN INBOUNDCOURSE 131 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "WUNOV": "WUNOV AT OR ABOVE 3400",
+                "HOBUG": "HOBUG 3400",
+                "WOLTA": "WOLTA AT OR ABOVE 2460 RNW 31 TRK 311 UNTIL 2193",
+                "WOPOB": "OVERFLY WOPOB AT OR ABOVE 3400 HOLD AT WOPOB RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4 FAF HOBUG MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "WUNOV",
+                    "fixes": {
+                        "WUNOV": "WUNOV RIGHT TURN INBOUNDCOURSE 311 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

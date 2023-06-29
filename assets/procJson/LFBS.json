@@ -1,0 +1,209 @@
+{
+    "fixes": [
+        {
+            "name": "BRSNB",
+            "lat": 44.36544443333333,
+            "lon": 1.1288055666666668
+        },
+        {
+            "name": "BS270",
+            "lat": 44.284694433333335,
+            "lon": 1.1224166666666666
+        },
+        {
+            "name": "BS271",
+            "lat": 44.44891666666667,
+            "lon": 0.9327222166666667
+        },
+        {
+            "name": "BS272",
+            "lat": 44.282277783333335,
+            "lon": 0.9371388833333333
+        },
+        {
+            "name": "BS274",
+            "lat": 44.283166666666666,
+            "lon": 1.0067222166666667
+        },
+        {
+            "name": "BS27Z",
+            "lat": 44.36827778333333,
+            "lon": 1.1405555666666667
+        },
+        {
+            "name": "D101E",
+            "lat": 44.35044443333334,
+            "lon": 1.0216388833333334
+        },
+        {
+            "name": "EN27",
+            "lat": 44.36561111666666,
+            "lon": 1.1269055666666667
+        },
+        {
+            "name": "FBS27",
+            "lat": 44.3665,
+            "lon": 1.0046666666666666
+        },
+        {
+            "name": "FN27",
+            "lat": 44.37369721666666,
+            "lon": 1.0346472166666667
+        },
+        {
+            "name": "IBS27",
+            "lat": 44.36558333333333,
+            "lon": 0.9349722166666666
+        },
+        {
+            "name": "LAPOS",
+            "lat": 44.34,
+            "lon": 0.86
+        },
+        {
+            "name": "MBS27",
+            "lat": 44.368025,
+            "lon": 1.1203666666666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 14",
+        "RNW 27",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FN27": "FN27 1400 SPEED 120",
+                "EN27": "OVERFLY EN27 138",
+                "BRSNB": "OVERFLY BRSNB AT OR ABOVE 500 SPEED 110 RNW 27 TURN LEFT HDG 150 INTERCEPT RADIAL 180 TO BRSNB TRK 180 UNTIL 1500 TURN LEFT DIRECT BRSNB 2500 FAF FN27 MAP BRS"
+            },
+            "transitions": [
+                {
+                    "name": "BRS",
+                    "fixes": {
+                        "BRSNB": "BRSNB AT OR ABOVE 2500",
+                        "D101E": "OVERFLY D101E AT OR ABOVE 1400 SPEED 140"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVX27",
+            "fixes": {
+                "IBS27": "IBS27 2000 SPEED 140",
+                "FBS27": "FBS27 2000 SPEED 120",
+                "MBS27": "OVERFLY MBS27 244 SPEED 110 RNW 27 TURN LEFT DIRECT",
+                "BS270": "BS270 SPEED 140",
+                "BS272": "BS272 AT OR ABOVE 2000 SPEED 140 FAF FBS27 MAP MBS27"
+            },
+            "transitions": [
+                {
+                    "name": "BRS",
+                    "fixes": {
+                        "BRSNB": "BRSNB SPEED 140",
+                        "BS274": "BS274",
+                        "BS272": "BS272 AT OR ABOVE 2000 SPEED 140"
+                    }
+                },
+                {
+                    "name": "BS271",
+                    "fixes": {
+                        "BS271": "BS271 AT OR ABOVE 2000 SPEED 140"
+                    }
+                },
+                {
+                    "name": "BS272",
+                    "fixes": {
+                        "BS272": "BS272 AT OR ABOVE 2000 SPEED 140"
+                    }
+                },
+                {
+                    "name": "LAPOS",
+                    "fixes": {
+                        "LAPOS": "LAPOS SPEED 140"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY27",
+            "fixes": {
+                "IBS27": "IBS27 2000 SPEED 140",
+                "FBS27": "FBS27 2000 SPEED 120 RNW 27 TURN LEFT DIRECT",
+                "BS270": "BS270 SPEED 140",
+                "BS272": "BS272 AT OR ABOVE 2000 SPEED 140 FAF FBS27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "BRS",
+                    "fixes": {
+                        "BRSNB": "BRSNB SPEED 140",
+                        "BS274": "BS274",
+                        "BS272": "BS272 AT OR ABOVE 2000 SPEED 140"
+                    }
+                },
+                {
+                    "name": "BS271",
+                    "fixes": {
+                        "BS271": "BS271 AT OR ABOVE 2000 SPEED 140"
+                    }
+                },
+                {
+                    "name": "BS272",
+                    "fixes": {
+                        "BS272": "BS272 AT OR ABOVE 2000 SPEED 140"
+                    }
+                },
+                {
+                    "name": "LAPOS",
+                    "fixes": {
+                        "LAPOS": "LAPOS SPEED 140"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ27",
+            "fixes": {
+                "IBS27": "IBS27 2000 SPEED 140",
+                "FBS27": "FBS27 2000 SPEED 120 RNW 27",
+                "BS27Z": "OVERFLY BS27Z SPEED 120 TURN LEFT DIRECT",
+                "BS270": "BS270 SPEED 140",
+                "BS272": "BS272 AT OR ABOVE 2000 SPEED 140 FAF FBS27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "BRS",
+                    "fixes": {
+                        "BRSNB": "BRSNB SPEED 140",
+                        "BS274": "BS274",
+                        "BS272": "BS272 AT OR ABOVE 2000 SPEED 140"
+                    }
+                },
+                {
+                    "name": "BS271",
+                    "fixes": {
+                        "BS271": "BS271 AT OR ABOVE 2000 SPEED 140"
+                    }
+                },
+                {
+                    "name": "BS272",
+                    "fixes": {
+                        "BS272": "BS272 AT OR ABOVE 2000 SPEED 140"
+                    }
+                },
+                {
+                    "name": "LAPOS",
+                    "fixes": {
+                        "LAPOS": "LAPOS SPEED 140"
+                    }
+                }
+            ]
+        }
+    ]
+}

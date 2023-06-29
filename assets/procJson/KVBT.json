@@ -1,0 +1,93 @@
+{
+    "fixes": [
+        {
+            "name": "IDOMY",
+            "lat": 36.25205278333333,
+            "lon": 94.22017778333333
+        },
+        {
+            "name": "KANGE",
+            "lat": 36.15536388333334,
+            "lon": 94.22105
+        },
+        {
+            "name": "MANBE",
+            "lat": 36.3774,
+            "lon": 94.21905
+        },
+        {
+            "name": "OHGUP",
+            "lat": 36.43799443333333,
+            "lon": 94.21851388333333
+        },
+        {
+            "name": "ZATEB",
+            "lat": 36.53544721666667,
+            "lon": 94.21764721666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 18",
+        "RNW 35",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "BENTN7",
+            "rnw": "30",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 18",
+                    "fixes": {
+                        "RNW 18": "RNW 18 HDG 179 UNTIL 1700 HDG 179 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 36",
+                    "fixes": {
+                        "RNW 36": "RNW 36 HDG 359 UNTIL 1700 HDG 359 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ZATEB": "ZATEB AT OR ABOVE 3200",
+                "OHGUP": "OHGUP 3000",
+                "MANBE": "MANBE AT OR ABOVE 1900 RNW 18 TRK 179 UNTIL 1548",
+                "KANGE": "OVERFLY KANGE AT OR ABOVE 3400 HOLD AT KANGE RIGHT TURN INBOUNDCOURSE 359 LEGDIST 4 FAF OHGUP MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ZATEB",
+                    "fixes": {
+                        "ZATEB": "ZATEB RIGHT TURN INBOUNDCOURSE 179 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "KANGE": "KANGE AT OR ABOVE 3400",
+                "IDOMY": "IDOMY 3000 RNW 36 TRK 359 UNTIL 1548",
+                "ZATEB": "OVERFLY ZATEB AT OR ABOVE 3200 HOLD AT ZATEB RIGHT TURN INBOUNDCOURSE 179 LEGDIST 4 FAF IDOMY MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "KANGE",
+                    "fixes": {
+                        "KANGE": "KANGE RIGHT TURN INBOUNDCOURSE 359 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "CD23",
+            "lat": 41.83833333333333,
+            "lon": 4.679166666666667
+        },
+        {
+            "name": "CF23",
+            "lat": 41.804725,
+            "lon": 4.718177783333333
+        },
+        {
+            "name": "CI23",
+            "lat": 41.803558333333335,
+            "lon": 4.719772216666667
+        },
+        {
+            "name": "D031K",
+            "lat": 41.865555566666664,
+            "lon": 4.727113883333333
+        },
+        {
+            "name": "D254F",
+            "lat": 41.67698888333334,
+            "lon": 4.974280566666667
+        },
+        {
+            "name": "FD05",
+            "lat": 41.64,
+            "lon": 4.945833333333333
+        },
+        {
+            "name": "FD23",
+            "lat": 41.778333333333336,
+            "lon": 4.756666666666667
+        },
+        {
+            "name": "FF23",
+            "lat": 41.781111116666665,
+            "lon": 4.7508333333333335
+        },
+        {
+            "name": "FI23",
+            "lat": 41.77972221666667,
+            "lon": 4.7524999999999995
+        },
+        {
+            "name": "MD23",
+            "lat": 41.724522216666664,
+            "lon": 4.826177783333334
+        },
+        {
+            "name": "ML23",
+            "lat": 41.72521388333333,
+            "lon": 4.826463883333333
+        },
+        {
+            "name": "NUB",
+            "lat": 41.705333333333336,
+            "lon": 4.8509166666666665
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 14",
+        "RNW 23",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "FD05": "FD05 4400 RNW 05",
+                "NUB": "OVERFLY NUB TRK 048 UNTIL 4000 TURN RIGHT DIRECT NUB 5000 HOLD AT NUB LEFT TURN INBOUNDCOURSE 248 ALT 5000 LEGTIME 1 FAF FD05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "NUB",
+                    "fixes": {
+                        "NUB": "NUB AT OR ABOVE 5000 SPEED 185",
+                        "D254F": "OVERFLY D254F AT OR ABOVE 4400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "CD23": "CD23 AT OR ABOVE 4500",
+                "FD23": "FD23 4500",
+                "MD23": "MD23 3075 RNW 23",
+                "NUB": "OVERFLY NUB TRK 225 UNTIL 3500 TURN RIGHT DIRECT NUB 5000 SPEED 210 HOLD AT NUB RIGHT TURN INBOUNDCOURSE 033 ALT 5000 LEGTIME 1 FAF FD23 MAP MD23"
+            },
+            "transitions": [
+                {
+                    "name": "NUB",
+                    "fixes": {
+                        "NUB": "NUB AT OR ABOVE 5000 SPEED 185",
+                        "D031K": "OVERFLY D031K AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS23",
+            "fixes": {
+                "CI23": "CI23 AT OR ABOVE 4600",
+                "FI23": "FI23 4600 RNW 23 TRK 226 UNTIL 3500 TURN RIGHT HDG 088 INTERCEPT RADIAL 046 TO FI23 SPEED 230 FI23 4600 HOLD AT FI23 RIGHT TURN INBOUNDCOURSE 226 ALT 4600 LEGTIME 1 FAF FI23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "FI23",
+                    "fixes": {
+                        "FI23": "FI23 RIGHT TURN INBOUNDCOURSE 226 ALT 4600 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC23",
+            "fixes": {
+                "CF23": "CF23 AT OR ABOVE 4600",
+                "FF23": "FF23 4600 FF23 SPEED 210 FF23 4600 HOLD AT FF23 RIGHT TURN INBOUNDCOURSE 226 ALT 4600 LEGTIME 1 FAF FF23 MAP ML23",
+                "ML23": "ML23 3082 RNW 23 TRK 226 UNTIL 3500 TURN RIGHT HDG 088 INTERCEPT RADIAL 046 TO"
+            },
+            "transitions": [
+                {
+                    "name": "FF23",
+                    "fixes": {
+                        "FF23": "FF23 RIGHT TURN INBOUNDCOURSE 226 ALT 4600 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

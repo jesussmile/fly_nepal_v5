@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "FLUMP",
+            "lat": 38.38065556666667,
+            "lon": 99.90892778333334
+        },
+        {
+            "name": "HABAT",
+            "lat": 38.29723611666667,
+            "lon": 99.90875556666667
+        },
+        {
+            "name": "KAAYS",
+            "lat": 38.565075,
+            "lon": 99.90930833333333
+        },
+        {
+            "name": "NESBY",
+            "lat": 38.648491666666665,
+            "lon": 99.90948056666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "NESBY": "NESBY AT OR ABOVE 4400",
+                "KAAYS": "KAAYS 4000 RNW 17 TRK 172 UNTIL 2653",
+                "HABAT": "OVERFLY HABAT AT OR ABOVE 4400 HOLD AT HABAT RIGHT TURN INBOUNDCOURSE 352 LEGDIST 5 FAF KAAYS MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "NESBY",
+                    "fixes": {
+                        "NESBY": "NESBY RIGHT TURN INBOUNDCOURSE 172 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "HABAT": "HABAT AT OR ABOVE 4400",
+                "FLUMP": "FLUMP 4000 RNW 35 TRK 352 UNTIL 2696",
+                "NESBY": "OVERFLY NESBY AT OR ABOVE 4400 HOLD AT NESBY RIGHT TURN INBOUNDCOURSE 172 LEGDIST 5 FAF FLUMP MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "HABAT",
+                    "fixes": {
+                        "HABAT": "HABAT RIGHT TURN INBOUNDCOURSE 352 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

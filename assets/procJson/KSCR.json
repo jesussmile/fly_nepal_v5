@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "CAYAV",
+            "lat": 35.661316666666664,
+            "lon": 79.53628888333333
+        },
+        {
+            "name": "CEKOP",
+            "lat": 35.54003611666667,
+            "lon": 79.72976388333333
+        },
+        {
+            "name": "CERYA",
+            "lat": 35.46514166666667,
+            "lon": 79.57855833333333
+        },
+        {
+            "name": "COTEN",
+            "lat": 35.538302783333336,
+            "lon": 79.627675
+        },
+        {
+            "name": "COVKU",
+            "lat": 35.623972216666665,
+            "lon": 79.56406666666666
+        },
+        {
+            "name": "IPSIQ",
+            "lat": 35.77326111666667,
+            "lon": 79.45284443333334
+        },
+        {
+            "name": "NOCYI",
+            "lat": 35.932088883333336,
+            "lon": 79.43805556666666
+        },
+        {
+            "name": "OCEKO",
+            "lat": 35.85685,
+            "lon": 79.28636666666667
+        },
+        {
+            "name": "OPUXY",
+            "lat": 35.85886111666667,
+            "lon": 79.38885556666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "COTEN": "COTEN AT OR ABOVE 3000 SPEED 210",
+                "COVKU": "COVKU 2300",
+                "CAYAV": "CAYAV AT OR ABOVE 1460 RNW 04 TRK 040 UNTIL 1000",
+                "OPUXY": "OVERFLY OPUXY AT OR ABOVE 3000 HOLD AT OPUXY RIGHT TURN INBOUNDCOURSE 220 LEGDIST 4 FAF COVKU MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "CEKOP",
+                    "fixes": {
+                        "CEKOP": "CEKOP"
+                    }
+                },
+                {
+                    "name": "CERYA",
+                    "fixes": {
+                        "CERYA": "CERYA"
+                    }
+                },
+                {
+                    "name": "COTEN",
+                    "fixes": {
+                        "COTEN": "COTEN RIGHT TURN INBOUNDCOURSE 040 ALT 3000 SPEED 210 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "OPUXY": "OPUXY AT OR ABOVE 3000 SPEED 210",
+                "IPSIQ": "IPSIQ 2300 RNW 22 TRK 220 UNTIL 954",
+                "COTEN": "OVERFLY COTEN AT OR ABOVE 3000 HOLD AT COTEN RIGHT TURN INBOUNDCOURSE 040 LEGDIST 4 FAF IPSIQ MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "NOCYI",
+                    "fixes": {
+                        "NOCYI": "NOCYI AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "OCEKO",
+                    "fixes": {
+                        "OCEKO": "OCEKO AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "OPUXY",
+                    "fixes": {
+                        "OPUXY": "OPUXY RIGHT TURN INBOUNDCOURSE 220 ALT 3000 SPEED 210 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "fixes": [
+        {
+            "name": "CUMDI",
+            "lat": 36.43195278333334,
+            "lon": 86.07012221666666
+        },
+        {
+            "name": "FLIPU",
+            "lat": 36.815733333333334,
+            "lon": 86.01731943333333
+        },
+        {
+            "name": "HETAP",
+            "lat": 36.31639166666667,
+            "lon": 86.085875
+        },
+        {
+            "name": "KUTKE",
+            "lat": 36.478633333333335,
+            "lon": 86.06372778333333
+        },
+        {
+            "name": "OLLOW",
+            "lat": 36.556983333333335,
+            "lon": 86.052975
+        },
+        {
+            "name": "OZESI",
+            "lat": 36.70593888333333,
+            "lon": 86.03247778333333
+        },
+        {
+            "name": "QALAY",
+            "lat": 36.60474721666667,
+            "lon": 86.04641111666666
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "HETAP": "HETAP AT OR ABOVE 3000",
+                "CUMDI": "CUMDI 2600",
+                "KUTKE": "KUTKE AT OR ABOVE 1680 RNW 01",
+                "OZESI": "OVERFLY OZESI AT OR ABOVE 3000 HOLD AT OZESI RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF CUMDI MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "OZESI",
+                    "fixes": {
+                        "OZESI": "OZESI",
+                        "HETAP": "OVERFLY HETAP AT OR ABOVE 3000 HOLD AT HETAP RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "OZESI": "OZESI AT OR ABOVE 2900",
+                "QALAY": "QALAY 2500",
+                "OLLOW": "OLLOW AT OR ABOVE 1560 RNW 19",
+                "HETAP": "OVERFLY HETAP AT OR ABOVE 3000 HOLD AT HETAP RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4 FAF QALAY MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "FLIPU",
+                    "fixes": {
+                        "FLIPU": "FLIPU"
+                    }
+                },
+                {
+                    "name": "HETAP",
+                    "fixes": {
+                        "HETAP": "HETAP",
+                        "OZESI": "OVERFLY OZESI AT OR ABOVE 2900 HOLD AT OZESI RIGHT TURN INBOUNDCOURSE 188 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

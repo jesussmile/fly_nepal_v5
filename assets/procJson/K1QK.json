@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "KEERR",
+            "lat": 38.94683611666667,
+            "lon": 100.23454721666667
+        },
+        {
+            "name": "LUCLN",
+            "lat": 39.27921943333333,
+            "lon": 100.23215278333333
+        },
+        {
+            "name": "ODDIN",
+            "lat": 39.278213883333336,
+            "lon": 100.03898611666666
+        },
+        {
+            "name": "PPEGY",
+            "lat": 39.12908611666667,
+            "lon": 100.23323888333333
+        },
+        {
+            "name": "PUUGG",
+            "lat": 39.279902783333334,
+            "lon": 100.42532778333333
+        },
+        {
+            "name": "STRIT",
+            "lat": 38.796694433333336,
+            "lon": 100.23561943333333
+        },
+        {
+            "name": "STUBZ",
+            "lat": 38.7957,
+            "lon": 100.04376111666667
+        },
+        {
+            "name": "STVNN",
+            "lat": 38.797375,
+            "lon": 100.42748333333333
+        },
+        {
+            "name": "YOUME",
+            "lat": 38.99921388333333,
+            "lon": 100.23417221666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "LUCLN": "LUCLN AT OR ABOVE 5600",
+                "PPEGY": "PPEGY 4300 RNW 17 TRK 175 UNTIL 3007",
+                "STRIT": "OVERFLY STRIT AT OR ABOVE 5600 HOLD AT STRIT RIGHT TURN INBOUNDCOURSE 355 LEGDIST 5 FAF PPEGY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "LUCLN",
+                    "fixes": {
+                        "LUCLN": "LUCLN RIGHT TURN INBOUNDCOURSE 175 ALT 5600 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "ODDIN",
+                    "fixes": {
+                        "ODDIN": "ODDIN"
+                    }
+                },
+                {
+                    "name": "PUUGG",
+                    "fixes": {
+                        "PUUGG": "PUUGG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "STRIT": "STRIT AT OR ABOVE 5600",
+                "KEERR": "KEERR 4300",
+                "YOUME": "YOUME AT OR ABOVE 3300 RNW 35 TRK 355 UNTIL 3001",
+                "LUCLN": "OVERFLY LUCLN AT OR ABOVE 5600 HOLD AT LUCLN RIGHT TURN INBOUNDCOURSE 175 LEGDIST 5 FAF KEERR MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "STRIT",
+                    "fixes": {
+                        "STRIT": "STRIT RIGHT TURN INBOUNDCOURSE 355 ALT 5600 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "STUBZ",
+                    "fixes": {
+                        "STUBZ": "STUBZ"
+                    }
+                },
+                {
+                    "name": "STVNN",
+                    "fixes": {
+                        "STVNN": "STVNN"
+                    }
+                }
+            ]
+        }
+    ]
+}

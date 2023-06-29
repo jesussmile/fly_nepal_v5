@@ -1,0 +1,145 @@
+{
+    "fixes": [
+        {
+            "name": "AT403",
+            "lat": 23.319222216666667,
+            "lon": 149.58455556666667
+        },
+        {
+            "name": "AT404",
+            "lat": 23.300888883333332,
+            "lon": 149.57091666666668
+        },
+        {
+            "name": "FAT03",
+            "lat": 23.427083333333332,
+            "lon": 149.59913888333332
+        },
+        {
+            "name": "FAT21",
+            "lat": 23.300138883333332,
+            "lon": 149.44530556666666
+        },
+        {
+            "name": "FF03",
+            "lat": 23.442561116666667,
+            "lon": 149.61534166666667
+        },
+        {
+            "name": "IBAKO",
+            "lat": 23.182055566666666,
+            "lon": 149.43819443333334
+        },
+        {
+            "name": "IBELI",
+            "lat": 23.420333333333332,
+            "lon": 149.72705556666668
+        },
+        {
+            "name": "IDOPI",
+            "lat": 23.244361116666667,
+            "lon": 149.37786111666668
+        },
+        {
+            "name": "IGAMA",
+            "lat": 23.545111116666668,
+            "lon": 149.60638888333332
+        },
+        {
+            "name": "IGENO",
+            "lat": 23.306638883333335,
+            "lon": 149.31747221666666
+        },
+        {
+            "name": "IKOVA",
+            "lat": 23.48275,
+            "lon": 149.66675
+        },
+        {
+            "name": "TBNB",
+            "lat": 23.370277783333332,
+            "lon": 149.52830556666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FF03": "FF03 2100",
+                "TBNB": "TBNB 42 RNW 03 TRK 033 UNTIL 1800 TURN RIGHT DIRECT TBNB AT OR ABOVE 2600 FAF FF03 MAP TB"
+            },
+            "transitions": [
+                {
+                    "name": "TB",
+                    "fixes": {
+                        "TBNB": "TBNB AT OR ABOVE 2600 TRK 202 UNTIL 10.5 FROM TBNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "IKOVA": "IKOVA AT OR ABOVE 1700",
+                "FAT03": "FAT03 1700 RNW 03 TURN LEFT DIRECT",
+                "AT403": "AT403",
+                "IBELI": "IBELI AT OR ABOVE 1700 FAF FAT03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "IBELI",
+                    "fixes": {
+                        "IBELI": "IBELI AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "IGAMA",
+                    "fixes": {
+                        "IGAMA": "IGAMA AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "IKOVA",
+                    "fixes": {
+                        "IKOVA": "IKOVA LEFT TURN INBOUNDCOURSE 033 ALT 1700 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "IDOPI": "IDOPI AT OR ABOVE 1800",
+                "FAT21": "FAT21 1800 RNW 21 TRK 213 UNTIL 1000 TURN RIGHT DIRECT",
+                "AT404": "AT404",
+                "IBAKO": "IBAKO AT OR ABOVE 1800 FAF FAT21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "IBAKO",
+                    "fixes": {
+                        "IBAKO": "IBAKO AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "IDOPI",
+                    "fixes": {
+                        "IDOPI": "IDOPI LEFT TURN INBOUNDCOURSE 213 ALT 1800 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "IGENO",
+                    "fixes": {
+                        "IGENO": "IGENO AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "BECAC",
+            "lat": 35.239575,
+            "lon": 75.6052
+        },
+        {
+            "name": "CULAT",
+            "lat": 35.208747216666666,
+            "lon": 75.91362221666667
+        },
+        {
+            "name": "HULIP",
+            "lat": 35.12965833333333,
+            "lon": 75.80886666666666
+        },
+        {
+            "name": "IPKOH",
+            "lat": 35.401575,
+            "lon": 75.48146388333333
+        },
+        {
+            "name": "JIKON",
+            "lat": 35.184719433333335,
+            "lon": 75.70698888333334
+        },
+        {
+            "name": "ONOKY",
+            "lat": 35.301844433333336,
+            "lon": 75.53743056666667
+        },
+        {
+            "name": "OTMIE",
+            "lat": 35.54140556666667,
+            "lon": 75.48440556666667
+        },
+        {
+            "name": "PUNGO",
+            "lat": 35.61055278333333,
+            "lon": 76.45091943333334
+        },
+        {
+            "name": "ZOLMN",
+            "lat": 35.64509721666667,
+            "lon": 75.40761388333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "HULIP": "HULIP AT OR ABOVE 2000",
+                "JIKON": "JIKON 1700 RNW 07 TRK 067 UNTIL 500 TURN LEFT DIRECT",
+                "CULAT": "CULAT AT OR ABOVE 6000 HOLD AT CULAT RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4 FAF JIKON MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "PUNGO",
+                    "fixes": {
+                        "PUNGO": "PUNGO",
+                        "CULAT": "CULAT AT OR ABOVE 5200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "IPKOH": "IPKOH AT OR ABOVE 3000",
+                "ONOKY": "ONOKY 1800",
+                "BECAC": "BECAC 213 RNW 25 TRK 232 UNTIL 520 TURN RIGHT DIRECT",
+                "ZOLMN": "ZOLMN AT OR ABOVE 6000 HOLD AT ZOLMN RIGHT TURN INBOUNDCOURSE 221 LEGDIST 5 FAF ONOKY MAP BECAC"
+            },
+            "transitions": [
+                {
+                    "name": "PUNGO",
+                    "fixes": {
+                        "PUNGO": "PUNGO",
+                        "OTMIE": "OTMIE AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "ZOLMN",
+                    "fixes": {
+                        "ZOLMN": "ZOLMN",
+                        "OTMIE": "OTMIE AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

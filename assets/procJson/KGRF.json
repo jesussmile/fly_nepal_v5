@@ -1,0 +1,164 @@
+{
+    "fixes": [
+        {
+            "name": "ALDER",
+            "lat": 46.821561116666665,
+            "lon": 122.41421943333333
+        },
+        {
+            "name": "CARRO",
+            "lat": 47.293897216666664,
+            "lon": 122.85773888333334
+        },
+        {
+            "name": "CIKRI",
+            "lat": 47.249091666666665,
+            "lon": 122.6381
+        },
+        {
+            "name": "ECEKO",
+            "lat": 46.87608611666667,
+            "lon": 122.79600556666666
+        },
+        {
+            "name": "EMOFO",
+            "lat": 47.15144721666667,
+            "lon": 122.60511111666666
+        },
+        {
+            "name": "ETAHO",
+            "lat": 47.00758056666667,
+            "lon": 122.55672221666667
+        },
+        {
+            "name": "HUMUT",
+            "lat": 46.9076,
+            "lon": 122.55688056666666
+        },
+        {
+            "name": "OLM",
+            "lat": 46.971638883333334,
+            "lon": 122.90183333333333
+        },
+        {
+            "name": "SEA",
+            "lat": 47.435372216666664,
+            "lon": 122.30961666666667
+        },
+        {
+            "name": "UGVIF",
+            "lat": 47.03859166666667,
+            "lon": 122.56713056666666
+        },
+        {
+            "name": "ZAPEB",
+            "lat": 47.122225,
+            "lon": 122.59526111666666
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "GRAY3",
+            "rnw": "26",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 15",
+                    "fixes": {
+                        "RNW 15": "RNW 15 HDG 151 UNTIL 700 HDG 270 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 33",
+                    "fixes": {
+                        "RNW 33": "RNW 33 HDG 331 UNTIL 700 HDG 270 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS15",
+            "fixes": {
+                "CIKRI": "CIKRI AT OR ABOVE 2000",
+                "EMOFO": "EMOFO 1600 RNW 15 TRK 151 UNTIL 1000 TURN LEFT HDG 270 INTERCEPT RADIAL 194 TO",
+                "OLM": "OLM OLM AT OR ABOVE 4000 HOLD AT OLM LEFT TURN INBOUNDCOURSE 331 LEGTIME 1 FAF EMOFO MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "OLM",
+                    "fixes": {
+                        "OLM": "OLM",
+                        "CIKRI": "CIKRI AT OR ABOVE 2000 HOLD AT CIKRI RIGHT TURN INBOUNDCOURSE 151 ALT 2000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "SEA",
+                    "fixes": {
+                        "SEA": "SEA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "CIKRI": "CIKRI AT OR ABOVE 2000 OVERFLY CIKRI AT OR ABOVE 2000 HOLD AT CIKRI RIGHT TURN INBOUNDCOURSE 151 LEGDIST 5 FAF EMOFO MAP RNW 15",
+                "EMOFO": "EMOFO 1600",
+                "ZAPEB": "ZAPEB AT OR ABOVE 1020 RNW 15 TRK 151 UNTIL 701 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CARRO",
+                    "fixes": {
+                        "CARRO": "CARRO"
+                    }
+                },
+                {
+                    "name": "OLM",
+                    "fixes": {
+                        "OLM": "OLM",
+                        "CIKRI": "OVERFLY CIKRI AT OR ABOVE 2000 HOLD AT CIKRI RIGHT TURN INBOUNDCOURSE 151 ALT 2000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "SEA",
+                    "fixes": {
+                        "SEA": "SEA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "HUMUT": "HUMUT AT OR ABOVE 3300",
+                "ETAHO": "ETAHO 1600",
+                "UGVIF": "UGVIF AT OR ABOVE 980 RNW 33 TRK 331 UNTIL 701",
+                "CIKRI": "OVERFLY CIKRI AT OR ABOVE 2000 HOLD AT CIKRI RIGHT TURN INBOUNDCOURSE 151 LEGDIST 5 FAF ETAHO MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "ALDER",
+                    "fixes": {
+                        "ALDER": "ALDER"
+                    }
+                },
+                {
+                    "name": "OLM",
+                    "fixes": {
+                        "OLM": "OLM",
+                        "ECEKO": "ECEKO AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

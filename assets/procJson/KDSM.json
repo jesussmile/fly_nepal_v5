@@ -1,0 +1,282 @@
+{
+    "fixes": [
+        {
+            "name": "CEDIP",
+            "lat": 41.507613883333335,
+            "lon": 93.70576388333333
+        },
+        {
+            "name": "CLIVE",
+            "lat": 41.603113883333336,
+            "lon": 93.75858333333333
+        },
+        {
+            "name": "CYCLN",
+            "lat": 41.41291388333333,
+            "lon": 93.48120833333333
+        },
+        {
+            "name": "DELAY",
+            "lat": 41.408938883333335,
+            "lon": 93.88459721666666
+        },
+        {
+            "name": "DIPPO",
+            "lat": 41.58551943333333,
+            "lon": 93.54689721666666
+        },
+        {
+            "name": "DSM",
+            "lat": 41.437625,
+            "lon": 93.64855833333333
+        },
+        {
+            "name": "EXPEN",
+            "lat": 41.63741111666667,
+            "lon": 93.43291111666667
+        },
+        {
+            "name": "FOREM",
+            "lat": 41.479908333333334,
+            "lon": 93.57861943333333
+        },
+        {
+            "name": "GUMBO",
+            "lat": 41.70644166666666,
+            "lon": 93.79468333333334
+        },
+        {
+            "name": "HERKY",
+            "lat": 41.58765,
+            "lon": 93.55991666666667
+        },
+        {
+            "name": "IOWAA",
+            "lat": 41.64620278333334,
+            "lon": 93.45277778333333
+        },
+        {
+            "name": "MAARY",
+            "lat": 41.47606388333333,
+            "lon": 93.76305556666667
+        },
+        {
+            "name": "MIDLE",
+            "lat": 41.40576943333333,
+            "lon": 93.91128056666666
+        },
+        {
+            "name": "TILTH",
+            "lat": 41.56469443333334,
+            "lon": 93.70235278333334
+        },
+        {
+            "name": "TNU",
+            "lat": 41.783883333333335,
+            "lon": 93.10903333333333
+        },
+        {
+            "name": "TUPNE",
+            "lat": 41.56253888333333,
+            "lon": 93.60575556666667
+        },
+        {
+            "name": "WATTY",
+            "lat": 41.69492221666667,
+            "lon": 93.89339166666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 13",
+        "RNW 23",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "DSM1",
+            "rnw": "16L",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 05",
+                    "fixes": {
+                        "RNW 05": "RNW 05 HDG 053 UNTIL 1500 HDG 053 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 13",
+                    "fixes": {
+                        "RNW 13": "RNW 13 HDG 131 UNTIL 1360 HDG 131 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 23",
+                    "fixes": {
+                        "RNW 23": "RNW 23 HDG 233 UNTIL 1360 HDG 233 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 31",
+                    "fixes": {
+                        "RNW 31": "RNW 31 HDG 311 UNTIL 1360 HDG 311 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD23",
+            "fixes": {
+                "EXPEN": "EXPEN AT OR ABOVE 3000",
+                "DIPPO": "DIPPO 2700 RNW 23 TRK 236 UNTIL 2000 HDG 200 INTERCEPT RADIAL 254 TO",
+                "MIDLE": "MIDLE MIDLE AT OR ABOVE 3000 HOLD AT MIDLE RIGHT TURN INBOUNDCOURSE 074 LEGTIME 1 FAF DIPPO MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "TNU",
+                    "fixes": {
+                        "TNU": "TNU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS05",
+            "fixes": {
+                "DELAY": "DELAY AT OR ABOVE 3000",
+                "MAARY": "MAARY 2500 RNW 05 TRK 053 UNTIL 1600 TURN RIGHT DIRECT",
+                "DSM": "DSM AT OR ABOVE 3000",
+                "MIDLE": "MIDLE HOLD AT MIDLE RIGHT TURN INBOUNDCOURSE 074 LEGTIME 1 FAF MAARY MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "DSM",
+                    "fixes": {
+                        "DSM": "DSM",
+                        "DELAY": "DELAY AT OR ABOVE 3000 HOLD AT DELAY RIGHT TURN INBOUNDCOURSE 053 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS13",
+            "fixes": {
+                "WATTY": "WATTY AT OR ABOVE 3500",
+                "CLIVE": "CLIVE 2600 RNW 13 TRK 131 UNTIL 1600",
+                "DSM": "DSM AT OR ABOVE 3000",
+                "MIDLE": "MIDLE HOLD AT MIDLE RIGHT TURN INBOUNDCOURSE 074 LEGTIME 1 FAF CLIVE MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "DSM",
+                    "fixes": {
+                        "DSM": "DSM",
+                        "WATTY": "WATTY AT OR ABOVE 3500 HOLD AT WATTY LEFT TURN INBOUNDCOURSE 131 ALT 3500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "GUMBO",
+                    "fixes": {
+                        "GUMBO": "GUMBO",
+                        "WATTY": "WATTY AT OR ABOVE 3500 HOLD AT WATTY LEFT TURN INBOUNDCOURSE 131 ALT 3500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS31",
+            "fixes": {
+                "CYCLN": "CYCLN AT OR ABOVE 3000",
+                "FOREM": "FOREM 2400 RNW 31 TRK 311 UNTIL 1600 TURN LEFT HDG 180 INTERCEPT RADIAL 254 TO",
+                "MIDLE": "MIDLE MIDLE AT OR ABOVE 3000 HOLD AT MIDLE RIGHT TURN INBOUNDCOURSE 074 LEGTIME 1 FAF FOREM MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "DSM",
+                    "fixes": {
+                        "DSM": "DSM",
+                        "CYCLN": "CYCLN AT OR ABOVE 3000 HOLD AT CYCLN RIGHT TURN INBOUNDCOURSE 311 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TNU",
+                    "fixes": {
+                        "TNU": "TNU",
+                        "CYCLN": "CYCLN AT OR ABOVE 3000 HOLD AT CYCLN RIGHT TURN INBOUNDCOURSE 311 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "DELAY": "DELAY AT OR ABOVE 3000",
+                "MAARY": "MAARY 2500",
+                "CEDIP": "CEDIP AT OR ABOVE 1480 RNW 05 TRK 053 UNTIL 1131",
+                "IOWAA": "OVERFLY IOWAA AT OR ABOVE 3100 HOLD AT IOWAA LEFT TURN INBOUNDCOURSE 233 LEGDIST 4 FAF MAARY MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "DELAY",
+                    "fixes": {
+                        "DELAY": "DELAY RIGHT TURN INBOUNDCOURSE 053 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "WATTY": "WATTY AT OR ABOVE 3500",
+                "CLIVE": "CLIVE 2600",
+                "TILTH": "TILTH AT OR ABOVE 1500 RNW 13 TRK 131 UNTIL 1122",
+                "CYCLN": "OVERFLY CYCLN AT OR ABOVE 3000 HOLD AT CYCLN RIGHT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF CLIVE MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "WATTY",
+                    "fixes": {
+                        "WATTY": "WATTY LEFT TURN INBOUNDCOURSE 131 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "IOWAA": "IOWAA AT OR ABOVE 3100",
+                "HERKY": "HERKY 2600",
+                "TUPNE": "TUPNE AT OR ABOVE 1780 RNW 23 TRK 233 UNTIL 1242",
+                "DELAY": "DELAY AT OR ABOVE 3000 HOLD AT DELAY RIGHT TURN INBOUNDCOURSE 053 LEGDIST 4 FAF HERKY MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "IOWAA",
+                    "fixes": {
+                        "IOWAA": "IOWAA LEFT TURN INBOUNDCOURSE 233 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "CYCLN": "CYCLN AT OR ABOVE 3000",
+                "FOREM": "FOREM 2400 RNW 31 TRK 311 UNTIL 1158",
+                "WATTY": "OVERFLY WATTY AT OR ABOVE 3500 HOLD AT WATTY LEFT TURN INBOUNDCOURSE 131 LEGDIST 4 FAF FOREM MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "CYCLN",
+                    "fixes": {
+                        "CYCLN": "CYCLN RIGHT TURN INBOUNDCOURSE 311 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

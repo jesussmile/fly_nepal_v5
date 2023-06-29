@@ -1,0 +1,92 @@
+{
+    "fixes": [
+        {
+            "name": "BOUSE",
+            "lat": 45.622025,
+            "lon": 70.07209721666666
+        },
+        {
+            "name": "CAKUP",
+            "lat": 45.62793333333333,
+            "lon": 70.22986666666667
+        },
+        {
+            "name": "CAMPO",
+            "lat": 45.447208333333336,
+            "lon": 70.34853611666666
+        },
+        {
+            "name": "JARBU",
+            "lat": 45.63861943333333,
+            "lon": 70.38223611666666
+        },
+        {
+            "name": "JIMBU",
+            "lat": 45.53723611666667,
+            "lon": 69.87815278333333
+        },
+        {
+            "name": "MIBME",
+            "lat": 45.638358333333336,
+            "lon": 70.27063611666667
+        },
+        {
+            "name": "OPIPE",
+            "lat": 45.61476388333333,
+            "lon": 69.88569721666667
+        },
+        {
+            "name": "REPLY",
+            "lat": 45.638705566666665,
+            "lon": 70.43742778333333
+        },
+        {
+            "name": "TRIER",
+            "lat": 45.568863883333336,
+            "lon": 70.61339721666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "TRIER": "TRIER AT OR ABOVE 6400",
+                "REPLY": "REPLY 3700",
+                "JARBU": "JARBU AT OR ABOVE 2960",
+                "MIBME": "OVERFLY MIBME 1453 RNW 13 TRK 106 UNTIL 1578",
+                "JIMBU": "OVERFLY JIMBU AT OR ABOVE 6000 HOLD AT JIMBU RIGHT TURN INBOUNDCOURSE 127 ALT 6000 LEGDIST 5 FAF REPLY MAP MIBME"
+            },
+            "transitions": [
+                {
+                    "name": "TRIER",
+                    "fixes": {
+                        "TRIER": "TRIER RIGHT TURN INBOUNDCOURSE 061 ALT 6400 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "OPIPE": "OPIPE AT OR ABOVE 6000",
+                "BOUSE": "BOUSE 3500",
+                "CAKUP": "OVERFLY CAKUP 1376 RNW 31 TRK 289 UNTIL 1578",
+                "CAMPO": "OVERFLY CAMPO AT OR ABOVE 6400 HOLD AT CAMPO RIGHT TURN INBOUNDCOURSE 236 ALT 6400 LEGDIST 9 FAF BOUSE MAP CAKUP"
+            },
+            "transitions": [
+                {
+                    "name": "OPIPE",
+                    "fixes": {
+                        "OPIPE": "OPIPE RIGHT TURN INBOUNDCOURSE 289 ALT 6000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

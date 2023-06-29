@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "BOITE",
+            "lat": 37.773408333333336,
+            "lon": 86.32180278333334
+        },
+        {
+            "name": "ERESE",
+            "lat": 37.79582778333334,
+            "lon": 86.55800833333333
+        },
+        {
+            "name": "MCHLL",
+            "lat": 37.762127783333334,
+            "lon": 86.20483611666667
+        },
+        {
+            "name": "MOPAE",
+            "lat": 37.778591666666664,
+            "lon": 86.37595
+        },
+        {
+            "name": "RICKZ",
+            "lat": 37.80701388333333,
+            "lon": 86.67784166666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "RICKZ": "RICKZ AT OR ABOVE 4000",
+                "ERESE": "ERESE 2500 RNW 10 TRK 101 UNTIL 1036",
+                "MCHLL": "OVERFLY MCHLL AT OR ABOVE 4000 HOLD AT MCHLL RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGDIST 4 FAF ERESE MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "RICKZ",
+                    "fixes": {
+                        "RICKZ": "RICKZ RIGHT TURN INBOUNDCOURSE 101 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "MCHLL": "MCHLL AT OR ABOVE 4000",
+                "BOITE": "BOITE 2500",
+                "MOPAE": "MOPAE AT OR ABOVE 1660 RNW 28 TRK 281 UNTIL 1040",
+                "RICKZ": "OVERFLY RICKZ AT OR ABOVE 4000 HOLD AT RICKZ RIGHT TURN INBOUNDCOURSE 101 ALT 4000 LEGDIST 4 FAF BOITE MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "MCHLL",
+                    "fixes": {
+                        "MCHLL": "MCHLL RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,279 @@
+{
+    "fixes": [
+        {
+            "name": "57DME",
+            "lat": 47.15119443333333,
+            "lon": 27.646722216666667
+        },
+        {
+            "name": "72DME",
+            "lat": 47.12980556666667,
+            "lon": 27.665694433333332
+        },
+        {
+            "name": "88DME",
+            "lat": 47.10697221666667,
+            "lon": 27.685944433333333
+        },
+        {
+            "name": "ABOLO",
+            "lat": 47.00030556666667,
+            "lon": 27.33297221666667
+        },
+        {
+            "name": "ARPIG",
+            "lat": 47.33558333333333,
+            "lon": 27.302777783333333
+        },
+        {
+            "name": "BELMU",
+            "lat": 47.317222216666664,
+            "lon": 27.353055566666665
+        },
+        {
+            "name": "CF14",
+            "lat": 47.32925,
+            "lon": 27.488
+        },
+        {
+            "name": "D312K",
+            "lat": 47.362063883333335,
+            "lon": 27.404127783333333
+        },
+        {
+            "name": "FI14",
+            "lat": 47.25802778333333,
+            "lon": 27.551611116666667
+        },
+        {
+            "name": "FQ14",
+            "lat": 47.25808333333333,
+            "lon": 27.551583333333333
+        },
+        {
+            "name": "FQ32",
+            "lat": 47.07063888333333,
+            "lon": 27.71813888333333
+        },
+        {
+            "name": "IAS",
+            "lat": 47.16294443333334,
+            "lon": 27.636277783333334
+        },
+        {
+            "name": "IDRUP",
+            "lat": 46.998611116666666,
+            "lon": 27.78175
+        },
+        {
+            "name": "ISI",
+            "lat": 47.23430556666667,
+            "lon": 27.579416666666667
+        },
+        {
+            "name": "ISINB",
+            "lat": 47.23427778333333,
+            "lon": 27.579694433333334
+        },
+        {
+            "name": "MQ14",
+            "lat": 47.19686111666667,
+            "lon": 27.606138883333333
+        },
+        {
+            "name": "UNIRA",
+            "lat": 47.16833333333334,
+            "lon": 27.851666666666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "ABOL1A",
+            "rnw": "14",
+            "fixes": {
+                "IAS": "IAS TRK 144 UNTIL 1000 TURN RIGHT HDG 272 INTERCEPT RADIAL 227 TO",
+                "ABOLO": "ABOLO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ABOL1B",
+            "rnw": "32",
+            "fixes": {
+                "ABOLO": "ABOLO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ARPI1A",
+            "rnw": "14",
+            "fixes": {
+                "IAS": "IAS TRK 144 UNTIL 1000 TURN LEFT DIRECT",
+                "ISINB": "ISINB",
+                "ARPIG": "ARPIG"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ARPI1B",
+            "rnw": "32",
+            "fixes": {
+                "ISINB": "ISINB",
+                "ARPIG": "ARPIG"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UNIR1A",
+            "rnw": "14",
+            "fixes": {
+                "IAS": "IAS TRK 144 UNTIL 1000 TURN LEFT HDG 038 INTERCEPT RADIAL 083 TO",
+                "UNIRA": "UNIRA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UNIR1B",
+            "rnw": "32",
+            "fixes": {
+                "UNIRA": "UNIRA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS14",
+            "fixes": {
+                "CF14": "CF14 AT OR ABOVE 2000",
+                "FI14": "FI14 2000 RNW 14",
+                "IAS": "OVERFLY IAS TURN RIGHT DIRECT",
+                "ISINB": "ISINB 3000 SPEED 190 HOLD AT ISINB RIGHT TURN INBOUNDCOURSE 144 LEGTIME 1 FAF FI14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "BELMU",
+                    "fixes": {
+                        "BELMU": "BELMU",
+                        "D312K": "OVERFLY D312K AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD14",
+            "fixes": {
+                "CF14": "CF14 AT OR ABOVE 2000",
+                "FQ14": "FQ14 2000",
+                "MQ14": "MQ14 632 RNW 14",
+                "IAS": "OVERFLY IAS TURN RIGHT DIRECT",
+                "ISINB": "ISINB AT OR ABOVE 3000 SPEED 190 HOLD AT ISINB RIGHT TURN INBOUNDCOURSE 144 ALT 3000 LEGTIME 1 FAF FQ14 MAP MQ14"
+            },
+            "transitions": [
+                {
+                    "name": "BELMU",
+                    "fixes": {
+                        "BELMU": "BELMU",
+                        "D312K": "OVERFLY D312K AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD32",
+            "fixes": {
+                "IDRUP": "IDRUP AT OR ABOVE 3000",
+                "FQ32": "FQ32 3000",
+                "88DME": "88DME AT OR ABOVE 2060",
+                "72DME": "72DME AT OR ABOVE 1460",
+                "57DME": "57DME AT OR ABOVE 900",
+                "IAS": "IAS 594 RNW 32 TRK 324 UNTIL 820",
+                "ISINB": "ISINB TRK 324 UNTIL 5.0 FROM ISINB 3000 HOLD AT ISINB RIGHT TURN INBOUNDCOURSE 144 LEGTIME 1 FAF FQ32 MAP IAS",
+                "ISI": "ISI TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ABOL1",
+                    "fixes": {
+                        "ABOLO": "ABOLO",
+                        "ISINB": "ISINB AT OR ABOVE 3000 TURN RIGHT DIRECT",
+                        "IAS": "IAS TRK 122 UNTIL 16.2 FROM",
+                        "ISI": "ISI"
+                    }
+                },
+                {
+                    "name": "ABOL2",
+                    "fixes": {
+                        "ABOLO": "ABOLO",
+                        "ISINB": "ISINB AT OR ABOVE 3000 TURN RIGHT DIRECT",
+                        "IAS": "IAS TRK 136 UNTIL 16.4 FROM",
+                        "ISI": "ISI"
+                    }
+                },
+                {
+                    "name": "ARPI1",
+                    "fixes": {
+                        "ARPIG": "ARPIG",
+                        "ISINB": "ISINB AT OR ABOVE 3000",
+                        "IAS": "IAS TRK 122 UNTIL 16.2 FROM",
+                        "ISI": "ISI"
+                    }
+                },
+                {
+                    "name": "ARPI2",
+                    "fixes": {
+                        "ARPIG": "ARPIG",
+                        "ISINB": "ISINB AT OR ABOVE 3000",
+                        "IAS": "IAS TRK 136 UNTIL 16.4 FROM",
+                        "ISI": "ISI"
+                    }
+                },
+                {
+                    "name": "ISI1",
+                    "fixes": {
+                        "ISINB": "ISINB AT OR ABOVE 3000",
+                        "IAS": "IAS TRK 122 UNTIL 16.2 FROM",
+                        "ISI": "ISI"
+                    }
+                },
+                {
+                    "name": "ISI2",
+                    "fixes": {
+                        "ISINB": "ISINB AT OR ABOVE 3000",
+                        "IAS": "IAS TRK 136 UNTIL 16.4 FROM",
+                        "ISI": "ISI"
+                    }
+                },
+                {
+                    "name": "UNIR1",
+                    "fixes": {
+                        "UNIRA": "UNIRA",
+                        "ISINB": "ISINB AT OR ABOVE 3000 HOLD AT ISINB RIGHT TURN INBOUNDCOURSE 144 ALT 3000 LEGTIME 1",
+                        "IAS": "IAS AT OR ABOVE 3000 TRK 122 UNTIL 16.2 FROM",
+                        "ISI": "ISI"
+                    }
+                },
+                {
+                    "name": "UNIR2",
+                    "fixes": {
+                        "UNIRA": "UNIRA",
+                        "ISINB": "ISINB AT OR ABOVE 3000 HOLD AT ISINB RIGHT TURN INBOUNDCOURSE 144 ALT 3000 LEGTIME 1",
+                        "IAS": "IAS TRK 136 UNTIL 16.4 FROM",
+                        "ISI": "ISI"
+                    }
+                }
+            ]
+        }
+    ]
+}

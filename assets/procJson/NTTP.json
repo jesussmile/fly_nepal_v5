@@ -1,0 +1,204 @@
+{
+    "fixes": [
+        {
+            "name": "BAMBI",
+            "lat": 16.443583333333333,
+            "lon": 151.75244443333332
+        },
+        {
+            "name": "BOKAL",
+            "lat": 16.325722216666666,
+            "lon": 151.92991666666666
+        },
+        {
+            "name": "MANAX",
+            "lat": 16.422166666666666,
+            "lon": 152.06388888333333
+        },
+        {
+            "name": "MEKES",
+            "lat": 16.426472216666667,
+            "lon": 152.24238888333332
+        },
+        {
+            "name": "MEREV",
+            "lat": 16.49875,
+            "lon": 152.06008333333332
+        },
+        {
+            "name": "MOXUL",
+            "lat": 16.430694433333333,
+            "lon": 152.42388888333332
+        },
+        {
+            "name": "MULER",
+            "lat": 16.347027783333335,
+            "lon": 152.42594443333334
+        },
+        {
+            "name": "MUSIL",
+            "lat": 16.3385,
+            "lon": 152.06608333333332
+        },
+        {
+            "name": "REVKO",
+            "lat": 16.745166666666666,
+            "lon": 151.68130556666668
+        },
+        {
+            "name": "RULOM",
+            "lat": 16.723055566666666,
+            "lon": 151.46694443333334
+        },
+        {
+            "name": "SUDOR",
+            "lat": 16.730833333333333,
+            "lon": 151.79558333333333
+        },
+        {
+            "name": "TB504",
+            "lat": 16.593638883333334,
+            "lon": 151.81105556666665
+        },
+        {
+            "name": "TP401",
+            "lat": 16.428694433333334,
+            "lon": 152.33722221666667
+        },
+        {
+            "name": "TP402",
+            "lat": 16.424277783333334,
+            "lon": 152.15055556666667
+        },
+        {
+            "name": "TP403",
+            "lat": 16.348583333333334,
+            "lon": 152.32702778333334
+        },
+        {
+            "name": "TP404",
+            "lat": 16.425730566666665,
+            "lon": 152.21146943333332
+        },
+        {
+            "name": "TP406",
+            "lat": 16.347722216666668,
+            "lon": 152.16475
+        },
+        {
+            "name": "TP501",
+            "lat": 16.482333333333333,
+            "lon": 152.16211111666667
+        },
+        {
+            "name": "TP502",
+            "lat": 16.394972216666666,
+            "lon": 152.18722221666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "BAMB1H",
+            "rnw": "26",
+            "fixes": {
+                "TP502": "TP502",
+                "BAMBI": "BAMBI AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BOKA1G",
+            "rnw": "08",
+            "fixes": {
+                "BOKAL": "BOKAL AT OR ABOVE 2000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "REVK1G",
+            "rnw": "08",
+            "fixes": {
+                "TP501": "TP501",
+                "SUDOR": "SUDOR",
+                "REVKO": "REVKO AT OR ABOVE 2000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RULO1H",
+            "rnw": "26",
+            "fixes": {
+                "TP502": "TP502",
+                "TB504": "TB504",
+                "RULOM": "RULOM AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "MOXUL": "MOXUL AT OR ABOVE 1700",
+                "TP401": "TP401 1700 RNW 08 TRK 076 UNTIL 1000 TURN LEFT DIRECT",
+                "TP403": "TP403",
+                "MULER": "MULER AT OR ABOVE 1700 FAF TP401 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "MEKES",
+                    "fixes": {
+                        "MEKES": "MEKES AT OR ABOVE 2500",
+                        "TP403": "TP403 AT OR ABOVE 2500",
+                        "MULER": "MULER AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "MOXUL",
+                    "fixes": {
+                        "MOXUL": "MOXUL LEFT TURN INBOUNDCOURSE 076 ALT 1700 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MULER",
+                    "fixes": {
+                        "MULER": "MULER AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "MANAX": "MANAX AT OR ABOVE 1700",
+                "TP402": "TP402 1700",
+                "TP404": "OVERFLY TP404 581 RNW 26 TURN RIGHT DIRECT",
+                "TP406": "TP406",
+                "MUSIL": "MUSIL AT OR ABOVE 1700 FAF TP402 MAP TP404"
+            },
+            "transitions": [
+                {
+                    "name": "MEREV",
+                    "fixes": {
+                        "MEREV": "MEREV AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "MUSIL",
+                    "fixes": {
+                        "MUSIL": "MUSIL AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        }
+    ]
+}

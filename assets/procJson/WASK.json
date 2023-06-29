@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "CD01",
+            "lat": 3.7994583333333334,
+            "lon": 133.67201388333334
+        },
+        {
+            "name": "FD01",
+            "lat": 3.7331388833333334,
+            "lon": 133.68152778333334
+        },
+        {
+            "name": "MD01",
+            "lat": 3.6718111166666665,
+            "lon": 133.69030556666667
+        },
+        {
+            "name": "RUMGO",
+            "lat": 3.8520833333333333,
+            "lon": 133.66447221666667
+        },
+        {
+            "name": "SK402",
+            "lat": 3.8015277833333334,
+            "lon": 133.66619443333335
+        },
+        {
+            "name": "SK403",
+            "lat": 3.735666666666667,
+            "lon": 133.67833333333334
+        },
+        {
+            "name": "SK405",
+            "lat": 3.659944433333333,
+            "lon": 133.51952778333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD01",
+            "fixes": {
+                "CD01": "CD01 AT OR ABOVE 2300",
+                "FD01": "FD01 1600",
+                "MD01": "MD01 418 RNW 01 TRK 006 UNTIL 520 TURN LEFT DIRECT",
+                "RUMGO": "RUMGO AT OR ABOVE 3000 HOLD AT RUMGO RIGHT TURN INBOUNDCOURSE 006 ALT 3000 LEGTIME 1 FAF FD01 MAP MD01"
+            },
+            "transitions": [
+                {
+                    "name": "RUMGO",
+                    "fixes": {
+                        "RUMGO": "RUMGO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "SK402": "SK402 AT OR ABOVE 2300",
+                "SK403": "SK403 1600 RNW 01 TURN LEFT DIRECT",
+                "SK405": "SK405",
+                "RUMGO": "RUMGO AT OR ABOVE 3000 HOLD AT RUMGO RIGHT TURN INBOUNDCOURSE 006 ALT 3000 LEGTIME 1 FAF SK403 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "RUMGO",
+                    "fixes": {
+                        "RUMGO": "RUMGO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

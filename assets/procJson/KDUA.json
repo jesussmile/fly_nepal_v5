@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "HELRA",
+            "lat": 34.04120833333333,
+            "lon": 96.39433611666666
+        },
+        {
+            "name": "JETBI",
+            "lat": 34.14138056666667,
+            "lon": 96.39370556666667
+        },
+        {
+            "name": "PAMMI",
+            "lat": 33.89240278333333,
+            "lon": 96.39539443333334
+        },
+        {
+            "name": "WOVAM",
+            "lat": 33.83787778333333,
+            "lon": 96.39578333333333
+        },
+        {
+            "name": "ZEGRA",
+            "lat": 33.74245556666666,
+            "lon": 96.39637778333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "JETBI": "JETBI AT OR ABOVE 2500",
+                "HELRA": "HELRA 2500 RNW 17 TRK 175 UNTIL 899",
+                "ZEGRA": "OVERFLY ZEGRA AT OR ABOVE 2500 HOLD AT ZEGRA RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF HELRA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "JETBI",
+                    "fixes": {
+                        "JETBI": "JETBI RIGHT TURN INBOUNDCOURSE 175 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ZEGRA": "ZEGRA AT OR ABOVE 2500",
+                "WOVAM": "WOVAM 2500",
+                "PAMMI": "PAMMI AT OR ABOVE 1460 RNW 35 TRK 355 UNTIL 894",
+                "JETBI": "OVERFLY JETBI AT OR ABOVE 2500 HOLD AT JETBI RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF WOVAM MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "ZEGRA",
+                    "fixes": {
+                        "ZEGRA": "ZEGRA RIGHT TURN INBOUNDCOURSE 355 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

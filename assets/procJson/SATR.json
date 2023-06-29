@@ -1,0 +1,104 @@
+{
+    "fixes": [
+        {
+            "name": "CF10",
+            "lat": 29.224752783333333,
+            "lon": 59.89502778333333
+        },
+        {
+            "name": "CF28",
+            "lat": 29.225177783333333,
+            "lon": 59.464275
+        },
+        {
+            "name": "FF10",
+            "lat": 29.217586116666666,
+            "lon": 59.80014166666667
+        },
+        {
+            "name": "FF28",
+            "lat": 29.218041666666668,
+            "lon": 59.55885833333333
+        },
+        {
+            "name": "FS10",
+            "lat": 29.217661116666665,
+            "lon": 59.801116666666665
+        },
+        {
+            "name": "RTA",
+            "lat": 29.208661116666665,
+            "lon": 59.68238888333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 10",
+        "RNW 20",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ10",
+            "fixes": {
+                "CF10": "CF10 AT OR ABOVE 2000",
+                "FF10": "FF10 2000 RNW 10 TRK 096 UNTIL 570 TRK 096 VECTORS FAF FF10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "RTA",
+                    "fixes": {
+                        "RTA": "RTA SPEED 210 TRK 292 UNTIL 11.3 FROM RTA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ28",
+            "fixes": {
+                "CF28": "CF28 AT OR ABOVE 2000",
+                "FF28": "FF28 2000 RNW 28 TRK 286 UNTIL 570 TRK 286 VECTORS FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "RTA",
+                    "fixes": {
+                        "RTA": "RTA SPEED 210 TRK 090 UNTIL 11.5 FROM RTA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY10",
+            "fixes": {
+                "FS10": "FS10 2000 RNW 10",
+                "RTA": "OVERFLY RTA TRK 096 UNTIL 3000 FAF FS10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "RTA",
+                    "fixes": {
+                        "RTA": "RTA SPEED 210 TRK 295 UNTIL 8.8 FROM RTA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY28",
+            "fixes": {
+                "FF28": "FF28 2000 RNW 28",
+                "RTA": "OVERFLY RTA TRK 286 UNTIL 3000 FAF FF28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "RTA",
+                    "fixes": {
+                        "RTA": "RTA SPEED 210 TRK 086 UNTIL 8.8 FROM RTA"
+                    }
+                }
+            ]
+        }
+    ]
+}

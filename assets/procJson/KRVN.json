@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "DOKDE",
+            "lat": 36.504161116666666,
+            "lon": 82.76628056666667
+        },
+        {
+            "name": "HERTO",
+            "lat": 36.54053888333333,
+            "lon": 82.67323333333333
+        },
+        {
+            "name": "JISRA",
+            "lat": 36.37243333333333,
+            "lon": 83.10091943333333
+        },
+        {
+            "name": "OMKUQ",
+            "lat": 36.430627783333335,
+            "lon": 82.95353056666667
+        },
+        {
+            "name": "RUFFE",
+            "lat": 36.483758333333334,
+            "lon": 82.81835
+        },
+        {
+            "name": "VEMSY",
+            "lat": 36.40677778333333,
+            "lon": 83.01401666666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "JISRA": "JISRA AT OR ABOVE 4300",
+                "VEMSY": "VEMSY 3400",
+                "OMKUQ": "OMKUQ AT OR ABOVE 2360 RNW 07 TRK 071 UNTIL 1655",
+                "HERTO": "OVERFLY HERTO AT OR ABOVE 4600 HOLD AT HERTO RIGHT TURN INBOUNDCOURSE 251 LEGDIST 5 FAF VEMSY MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "JISRA",
+                    "fixes": {
+                        "JISRA": "JISRA RIGHT TURN INBOUNDCOURSE 071 ALT 4300 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "HERTO": "HERTO AT OR ABOVE 4600",
+                "DOKDE": "DOKDE 3200",
+                "RUFFE": "RUFFE AT OR ABOVE 2300 RNW 25 TRK 251 UNTIL 1655",
+                "JISRA": "OVERFLY JISRA AT OR ABOVE 4300 HOLD AT JISRA RIGHT TURN INBOUNDCOURSE 071 LEGDIST 5 FAF DOKDE MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "HERTO",
+                    "fixes": {
+                        "HERTO": "HERTO RIGHT TURN INBOUNDCOURSE 251 ALT 4600 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

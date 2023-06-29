@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "ADORY",
+            "lat": 33.45485278333334,
+            "lon": 102.37581943333333
+        },
+        {
+            "name": "FEVOL",
+            "lat": 33.501361116666665,
+            "lon": 102.37430833333333
+        },
+        {
+            "name": "HEGTA",
+            "lat": 33.34322778333333,
+            "lon": 102.37943888333334
+        },
+        {
+            "name": "JATMI",
+            "lat": 33.80310278333333,
+            "lon": 102.49961666666667
+        },
+        {
+            "name": "LBB",
+            "lat": 33.70495,
+            "lon": 101.91401111666667
+        },
+        {
+            "name": "RAWNI",
+            "lat": 33.64458056666667,
+            "lon": 102.36964721666666
+        },
+        {
+            "name": "SOMKE",
+            "lat": 33.758491666666664,
+            "lon": 102.36593056666666
+        },
+        {
+            "name": "VITVY",
+            "lat": 33.79343888333333,
+            "lon": 102.24297778333333
+        },
+        {
+            "name": "WINNS",
+            "lat": 33.59025556666667,
+            "lon": 102.80938056666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 17",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "SOMKE": "SOMKE AT OR ABOVE 5500",
+                "RAWNI": "RAWNI 5200 RNW 17 TRK 173 UNTIL 3856",
+                "HEGTA": "OVERFLY HEGTA AT OR ABOVE 5500 HOLD AT HEGTA RIGHT TURN INBOUNDCOURSE 353 LEGDIST 5 FAF RAWNI MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "LBB",
+                    "fixes": {
+                        "LBB": "LBB",
+                        "VITVY": "VITVY AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "SOMKE",
+                    "fixes": {
+                        "SOMKE": "SOMKE RIGHT TURN INBOUNDCOURSE 173 ALT 5500 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "WINNS",
+                    "fixes": {
+                        "WINNS": "WINNS",
+                        "JATMI": "JATMI AT OR ABOVE 5500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "HEGTA": "HEGTA AT OR ABOVE 5500",
+                "ADORY": "ADORY 5200",
+                "FEVOL": "FEVOL AT OR ABOVE 4300 RNW 35 TRK 353 UNTIL 3862",
+                "SOMKE": "OVERFLY SOMKE AT OR ABOVE 5500 HOLD AT SOMKE RIGHT TURN INBOUNDCOURSE 173 LEGDIST 5 FAF ADORY MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "HEGTA",
+                    "fixes": {
+                        "HEGTA": "HEGTA RIGHT TURN INBOUNDCOURSE 353 ALT 5500 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

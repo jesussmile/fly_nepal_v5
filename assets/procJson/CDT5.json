@@ -1,0 +1,95 @@
+{
+    "fixes": [
+        {
+            "name": "DUTUS",
+            "lat": 46.54945,
+            "lon": 64.50138888333333
+        },
+        {
+            "name": "DUVAR",
+            "lat": 46.46966666666667,
+            "lon": 64.46669166666666
+        },
+        {
+            "name": "EBMUK",
+            "lat": 46.525416666666665,
+            "lon": 64.61697221666667
+        },
+        {
+            "name": "ETLUK",
+            "lat": 46.492416666666664,
+            "lon": 64.77460833333333
+        },
+        {
+            "name": "ILIRO",
+            "lat": 46.62922221666667,
+            "lon": 64.53618888333334
+        },
+        {
+            "name": "OISTR",
+            "lat": 46.53148611666667,
+            "lon": 64.58784443333333
+        },
+        {
+            "name": "OMSAK",
+            "lat": 46.46811111666667,
+            "lon": 64.88994721666667
+        },
+        {
+            "name": "TIDOD",
+            "lat": 46.383302783333335,
+            "lon": 64.96647778333333
+        },
+        {
+            "name": "VIDVO",
+            "lat": 46.487144433333334,
+            "lon": 64.79968611666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "OMSAK": "OMSAK AT OR ABOVE 1400",
+                "ETLUK": "ETLUK 1200 RNW 09",
+                "OISTR": "OVERFLY OISTR 1500 HOLD AT OISTR RIGHT TURN INBOUNDCOURSE 092 SPEED 175 LEGTIME 1 FAF ETLUK MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "TIDOD",
+                    "fixes": {
+                        "TIDOD": "TIDOD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "DUTUS": "DUTUS AT OR ABOVE 1300 SPEED 180",
+                "EBMUK": "EBMUK 1000 RNW 27",
+                "VIDVO": "OVERFLY VIDVO 1500 HOLD AT VIDVO RIGHT TURN INBOUNDCOURSE 271 SPEED 175 LEGTIME 1 FAF EBMUK MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "DUVAR",
+                    "fixes": {
+                        "DUVAR": "DUVAR SPEED 200"
+                    }
+                },
+                {
+                    "name": "ILIRO",
+                    "fixes": {
+                        "ILIRO": "ILIRO SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

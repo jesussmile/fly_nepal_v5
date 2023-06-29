@@ -1,0 +1,94 @@
+{
+    "fixes": [
+        {
+            "name": "DLL",
+            "lat": 43.55083333333333,
+            "lon": 89.76362221666666
+        },
+        {
+            "name": "FAPKO",
+            "lat": 43.70939166666667,
+            "lon": 90.49357778333334
+        },
+        {
+            "name": "HOBGO",
+            "lat": 43.688580566666666,
+            "lon": 89.95847221666666
+        },
+        {
+            "name": "IGPIH",
+            "lat": 43.765458333333335,
+            "lon": 90.05007778333334
+        },
+        {
+            "name": "JESTU",
+            "lat": 43.91165,
+            "lon": 90.22518333333333
+        },
+        {
+            "name": "JOTUR",
+            "lat": 43.79588888333333,
+            "lon": 90.08643056666666
+        },
+        {
+            "name": "NOPGE",
+            "lat": 43.988405566666664,
+            "lon": 90.31760278333333
+        },
+        {
+            "name": "ZETRO",
+            "lat": 43.869030566666666,
+            "lon": 90.17400833333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "NOPGE": "NOPGE AT OR ABOVE 3600",
+                "JESTU": "JESTU 2700",
+                "ZETRO": "ZETRO AT OR ABOVE 1620 RNW 14 TRK 140 UNTIL 1500 TURN RIGHT DIRECT",
+                "FAPKO": "OVERFLY FAPKO AT OR ABOVE 4000 HOLD AT FAPKO RIGHT TURN INBOUNDCOURSE 107 LEGDIST 4 FAF JESTU MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "FAPKO",
+                    "fixes": {
+                        "FAPKO": "FAPKO",
+                        "NOPGE": "OVERFLY NOPGE AT OR ABOVE 3600 HOLD AT NOPGE RIGHT TURN INBOUNDCOURSE 140 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "HOBGO": "HOBGO AT OR ABOVE 3600",
+                "IGPIH": "IGPIH 2700",
+                "JOTUR": "JOTUR AT OR ABOVE 1920 RNW 32 TRK 320 UNTIL 1500",
+                "FAPKO": "OVERFLY FAPKO AT OR ABOVE 4000 HOLD AT FAPKO RIGHT TURN INBOUNDCOURSE 107 LEGDIST 4 FAF IGPIH MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "DLL",
+                    "fixes": {
+                        "DLL": "DLL"
+                    }
+                },
+                {
+                    "name": "FAPKO",
+                    "fixes": {
+                        "FAPKO": "FAPKO",
+                        "HOBGO": "OVERFLY HOBGO AT OR ABOVE 3600 HOLD AT HOBGO RIGHT TURN INBOUNDCOURSE 320 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "BO500",
+            "lat": 4.472355566666667,
+            "lon": 7.244722216666666
+        },
+        {
+            "name": "BO600",
+            "lat": 4.338905566666667,
+            "lon": 7.118686116666667
+        },
+        {
+            "name": "ILGAV",
+            "lat": 4.5907333333333336,
+            "lon": 7.241563883333333
+        },
+        {
+            "name": "INUGU",
+            "lat": 4.533125,
+            "lon": 7.302127783333333
+        },
+        {
+            "name": "KITSU",
+            "lat": 4.2781305666666665,
+            "lon": 7.0613
+        },
+        {
+            "name": "MOKTU",
+            "lat": 4.475511116666667,
+            "lon": 7.362680566666667
+        },
+        {
+            "name": "RW22",
+            "lat": 4.409938883333333,
+            "lon": 7.185763883333333
+        },
+        {
+            "name": "VODGI",
+            "lat": 4.220516666666667,
+            "lon": 7.121833333333333
+        },
+        {
+            "name": "VOTNA",
+            "lat": 4.335738883333334,
+            "lon": 7.000758333333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "KITSU": "KITSU AT OR ABOVE 2000 SPEED 210 KITSU AT OR ABOVE 2000 HOLD AT KITSU RIGHT TURN INBOUNDCOURSE 046 ALT 2000 SPEED 230 LEGTIME 1 FAF BO600 MAP RNW 04",
+                "BO600": "BO600 1700 RNW 04 TURN RIGHT DIRECT",
+                "VODGI": "VODGI AT OR ABOVE 2000 SPEED 185 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KITSU",
+                    "fixes": {
+                        "KITSU": "KITSU RIGHT TURN INBOUNDCOURSE 046 ALT 2000 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "VODGI",
+                    "fixes": {
+                        "VODGI": "VODGI AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "VOTNA",
+                    "fixes": {
+                        "VOTNA": "VOTNA AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "INUGU": "INUGU AT OR ABOVE 2100 SPEED 210 INUGU AT OR ABOVE 2000 HOLD AT INUGU RIGHT TURN INBOUNDCOURSE 226 ALT 2000 SPEED 230 LEGTIME 1 FAF BO500 MAP RNW 22",
+                "BO500": "BO500 1700 RNW 22 TRK 226 UNTIL 500 TURN LEFT DIRECT",
+                "MOKTU": "MOKTU AT OR ABOVE 2000 SPEED 185 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ILGAV",
+                    "fixes": {
+                        "ILGAV": "ILGAV AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "MOKTU",
+                    "fixes": {
+                        "MOKTU": "MOKTU AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "fixes": [
+        {
+            "name": "AJUBA",
+            "lat": 38.907530566666665,
+            "lon": 90.60239166666666
+        },
+        {
+            "name": "ELYIG",
+            "lat": 38.513655566666664,
+            "lon": 90.51800278333333
+        },
+        {
+            "name": "GUDRY",
+            "lat": 38.87675556666667,
+            "lon": 90.70159443333333
+        },
+        {
+            "name": "IZONU",
+            "lat": 38.638163883333334,
+            "lon": 90.46635556666666
+        },
+        {
+            "name": "ODUJY",
+            "lat": 38.54425556666666,
+            "lon": 90.41921111666667
+        },
+        {
+            "name": "YIGGO",
+            "lat": 38.81361666666667,
+            "lon": 90.55483333333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 16",
+        "RNW 25",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "AJUBA": "AJUBA AT OR ABOVE 2700",
+                "YIGGO": "YIGGO 2200 RNW 16 TRK 158 UNTIL 863",
+                "ODUJY": "OVERFLY ODUJY AT OR ABOVE 2800 HOLD AT ODUJY RIGHT TURN INBOUNDCOURSE 339 LEGDIST 4 FAF YIGGO MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "AJUBA",
+                    "fixes": {
+                        "AJUBA": "AJUBA RIGHT TURN INBOUNDCOURSE 158 ALT 2700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GUDRY",
+                    "fixes": {
+                        "GUDRY": "GUDRY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "ODUJY": "ODUJY AT OR ABOVE 2800",
+                "IZONU": "IZONU 2200 RNW 34",
+                "AJUBA": "OVERFLY AJUBA AT OR ABOVE 2700 HOLD AT AJUBA RIGHT TURN INBOUNDCOURSE 158 LEGDIST 4 FAF IZONU MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "ELYIG",
+                    "fixes": {
+                        "ELYIG": "ELYIG AT OR ABOVE 2800"
+                    }
+                },
+                {
+                    "name": "ODUJY",
+                    "fixes": {
+                        "ODUJY": "ODUJY RIGHT TURN INBOUNDCOURSE 339 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

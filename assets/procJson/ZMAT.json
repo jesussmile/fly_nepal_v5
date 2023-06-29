@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "AT101",
+            "lat": 46.42720833333333,
+            "lon": 96.55543056666667
+        },
+        {
+            "name": "AT102",
+            "lat": 46.32514166666667,
+            "lon": 96.51888056666667
+        },
+        {
+            "name": "AT103",
+            "lat": 46.35728888333333,
+            "lon": 96.33211111666667
+        },
+        {
+            "name": "BHNB",
+            "lat": 46.14388888333333,
+            "lon": 100.71638888333334
+        },
+        {
+            "name": "CD28Y",
+            "lat": 46.321986116666665,
+            "lon": 96.51769443333333
+        },
+        {
+            "name": "CD28Z",
+            "lat": 46.328541666666666,
+            "lon": 96.48288333333333
+        },
+        {
+            "name": "D077M",
+            "lat": 46.42675833333333,
+            "lon": 96.52091943333333
+        },
+        {
+            "name": "D093R",
+            "lat": 46.361930566666665,
+            "lon": 96.64831388333333
+        },
+        {
+            "name": "FD28",
+            "lat": 46.356822216666664,
+            "lon": 96.33193888333334
+        },
+        {
+            "name": "IGOMA",
+            "lat": 46.564166666666665,
+            "lon": 97.34916666666666
+        },
+        {
+            "name": "ODOKU",
+            "lat": 47.14611111666667,
+            "lon": 96.39138888333333
+        },
+        {
+            "name": "RW28",
+            "lat": 46.373880566666664,
+            "lon": 96.23543056666666
+        },
+        {
+            "name": "VGA",
+            "lat": 46.378444433333335,
+            "lon": 96.21572221666666
+        },
+        {
+            "name": "VOR11",
+            "lat": 46.33246943333333,
+            "lon": 96.46199443333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "BH1A",
+            "rnw": "28",
+            "fixes": {
+                "RW28": "OVERFLY RW28 TRK 104 UNTIL 8860 HDG 063 INTERCEPT RADIAL 093 TO",
+                "BHNB": "BHNB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "IGOM2A",
+            "rnw": "28",
+            "fixes": {
+                "RW28": "OVERFLY RW28 TRK 104 UNTIL 8860 HDG 046 INTERCEPT RADIAL 076 TO",
+                "IGOMA": "IGOMA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ODOK2A",
+            "rnw": "28",
+            "fixes": {
+                "RW28": "OVERFLY RW28 TRK 104 UNTIL 8860 TURN LEFT HDG 339 INTERCEPT RADIAL 009 TO",
+                "ODOKU": "ODOKU"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDY28",
+            "fixes": {
+                "CD28Y": "CD28Y AT OR ABOVE 10500",
+                "VOR11": "VOR11 AT OR ABOVE 9850",
+                "FD28": "FD28 8540 RNW 28",
+                "VGA": "OVERFLY VGA TRK 285 UNTIL 8210 TURN RIGHT TRK 107 INTERCEPT RADIAL 077 TO",
+                "D077M": "D077M SPEED 185 D077M AT OR ABOVE 11820 HOLD AT D077M RIGHT TURN INBOUNDCOURSE 257 ALT 11820 SPEED 230 LEGDIST 6 FAF FD28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "D077M",
+                    "fixes": {
+                        "D077M": "D077M AT OR ABOVE 11820"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ28",
+            "fixes": {
+                "CD28Z": "CD28Z AT OR ABOVE 9850",
+                "FD28": "FD28 8540 RNW 28",
+                "VGA": "OVERFLY VGA TRK 285 UNTIL 8210 TURN RIGHT TRK 123 INTERCEPT RADIAL 093 TO",
+                "D093R": "D093R D093R AT OR ABOVE 11820 HOLD AT D093R RIGHT TURN INBOUNDCOURSE 273 ALT 11820 SPEED 170 LEGDIST 4 FAF FD28 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "D093R",
+                    "fixes": {
+                        "D093R": "D093R AT OR ABOVE 11820 TRK 273 UNTIL 15.0 FROM",
+                        "VGA": "VGA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "AT102": "AT102 AT OR ABOVE 9850",
+                "AT103": "AT103 8540 RNW 28 TURN RIGHT DIRECT",
+                "AT101": "OVERFLY AT101 AT OR ABOVE 11820 SPEED 185 HOLD AT AT101 RIGHT TURN INBOUNDCOURSE 258 ALT 11820 SPEED 230 LEGTIME 1 FAF AT103 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "AT101",
+                    "fixes": {
+                        "AT101": "AT101 AT OR ABOVE 11820"
+                    }
+                }
+            ]
+        }
+    ]
+}

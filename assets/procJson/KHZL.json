@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "ECEDI",
+            "lat": 41.00227221666667,
+            "lon": 76.28486666666667
+        },
+        {
+            "name": "EUMIG",
+            "lat": 40.983344433333336,
+            "lon": 75.93224443333334
+        },
+        {
+            "name": "HOGUL",
+            "lat": 40.994113883333334,
+            "lon": 76.13059443333333
+        },
+        {
+            "name": "IWTOJ",
+            "lat": 40.99078333333333,
+            "lon": 76.06855278333333
+        },
+        {
+            "name": "JOVKU",
+            "lat": 40.97958056666667,
+            "lon": 75.86443888333334
+        },
+        {
+            "name": "WAGDU",
+            "lat": 40.980347216666665,
+            "lon": 75.8782
+        },
+        {
+            "name": "WEISS",
+            "lat": 40.97170833333333,
+            "lon": 75.72568888333333
+        },
+        {
+            "name": "YOLBU",
+            "lat": 40.97058056666667,
+            "lon": 75.70496666666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC28",
+            "fixes": {
+                "WEISS": "WEISS AT OR ABOVE 4200",
+                "WAGDU": "WAGDU 3200 RNW 28",
+                "ECEDI": "ECEDI AT OR ABOVE 4400 HOLD AT ECEDI RIGHT TURN INBOUNDCOURSE 104 LEGDIST 5 FAF WAGDU MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "WEISS",
+                    "fixes": {
+                        "WEISS": "WEISS RIGHT TURN INBOUNDCOURSE 284 ALT 4200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "ECEDI": "ECEDI AT OR ABOVE 4400",
+                "HOGUL": "HOGUL 3500",
+                "IWTOJ": "IWTOJ AT OR ABOVE 2600 RNW 10 TRK 104 UNTIL 2003",
+                "YOLBU": "OVERFLY YOLBU AT OR ABOVE 4600 HOLD AT YOLBU RIGHT TURN INBOUNDCOURSE 284 LEGDIST 4 FAF HOGUL MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "ECEDI",
+                    "fixes": {
+                        "ECEDI": "ECEDI RIGHT TURN INBOUNDCOURSE 104 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "YOLBU": "YOLBU AT OR ABOVE 4600",
+                "JOVKU": "JOVKU 3500",
+                "EUMIG": "EUMIG AT OR ABOVE 2460 RNW 28 TRK 284 UNTIL 1978",
+                "ECEDI": "OVERFLY ECEDI AT OR ABOVE 4400 HOLD AT ECEDI RIGHT TURN INBOUNDCOURSE 104 LEGDIST 5 FAF JOVKU MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "YOLBU",
+                    "fixes": {
+                        "YOLBU": "YOLBU RIGHT TURN INBOUNDCOURSE 284 ALT 4600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "BMNB",
+            "lat": 24.269327783333335,
+            "lon": 97.24849721666666
+        },
+        {
+            "name": "EP15",
+            "lat": 24.280502783333333,
+            "lon": 97.24405833333333
+        },
+        {
+            "name": "FF15",
+            "lat": 24.359727783333334,
+            "lon": 97.212575
+        },
+        {
+            "name": "FF33",
+            "lat": 24.199533333333335,
+            "lon": 97.31462778333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB15",
+            "fixes": {
+                "FF15": "FF15 2020",
+                "EP15": "OVERFLY EP15 425",
+                "BMNB": "OVERFLY BMNB AT OR ABOVE 780 RNW 15 HDG 190 UNTIL 2000 TURN RIGHT DIRECT BMNB 3000 HOLD AT BMNB LEFT TURN INBOUNDCOURSE 011 LEGTIME 1 FAF FF15 MAP BM"
+            },
+            "transitions": [
+                {
+                    "name": "BM1",
+                    "fixes": {
+                        "BMNB": "BMNB AT OR ABOVE 3000 TRK 011 UNTIL 5.3 FROM BMNB"
+                    }
+                },
+                {
+                    "name": "BM2",
+                    "fixes": {
+                        "BMNB": "BMNB AT OR ABOVE 3000 TRK 356 UNTIL 7.5 FROM BMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB33",
+            "fixes": {
+                "FF33": "FF33 2020 RNW 33",
+                "BMNB": "OVERFLY BMNB HDG 020 UNTIL 3000 TURN LEFT DIRECT BMNB HOLD AT BMNB RIGHT TURN INBOUNDCOURSE 170 LEGTIME 1 FAF FF33 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "BM1",
+                    "fixes": {
+                        "BMNB": "BMNB AT OR ABOVE 3000 TRK 170 UNTIL 5.3 FROM BMNB"
+                    }
+                },
+                {
+                    "name": "BM2",
+                    "fixes": {
+                        "BMNB": "BMNB AT OR ABOVE 3000 TRK 155 UNTIL 7.8 FROM BMNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

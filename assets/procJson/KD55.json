@@ -1,0 +1,132 @@
+{
+    "fixes": [
+        {
+            "name": "ANJEP",
+            "lat": 48.81754443333333,
+            "lon": 98.47804166666667
+        },
+        {
+            "name": "CIDVA",
+            "lat": 48.63450556666667,
+            "lon": 98.60455556666666
+        },
+        {
+            "name": "DVL",
+            "lat": 48.115222216666666,
+            "lon": 98.91251666666666
+        },
+        {
+            "name": "EHLEL",
+            "lat": 48.67597778333333,
+            "lon": 98.29669443333333
+        },
+        {
+            "name": "GAKBE",
+            "lat": 48.652394433333335,
+            "lon": 98.10228056666666
+        },
+        {
+            "name": "GFK",
+            "lat": 47.95483333333333,
+            "lon": 97.18536943333334
+        },
+        {
+            "name": "HAVIR",
+            "lat": 48.59876388333333,
+            "lon": 98.19837221666667
+        },
+        {
+            "name": "JAKTI",
+            "lat": 48.77660556666667,
+            "lon": 98.78791943333333
+        },
+        {
+            "name": "MEKSE",
+            "lat": 48.89499721666667,
+            "lon": 98.57785556666667
+        },
+        {
+            "name": "PIRNE",
+            "lat": 48.48104721666667,
+            "lon": 98.40808056666667
+        },
+        {
+            "name": "SERUW",
+            "lat": 48.54505278333333,
+            "lon": 98.29426111666666
+        },
+        {
+            "name": "TEBKY",
+            "lat": 48.84097778333334,
+            "lon": 98.67390833333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 14",
+        "RNW 26",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "MEKSE": "MEKSE AT OR ABOVE 4000",
+                "ANJEP": "ANJEP 3200 RNW 14",
+                "HAVIR": "HAVIR TURN RIGHT DIRECT",
+                "PIRNE": "PIRNE",
+                "CIDVA": "OVERFLY CIDVA AT OR ABOVE 4000 HOLD AT CIDVA RIGHT TURN INBOUNDCOURSE 140 LEGDIST 4 FAF ANJEP MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "CIDVA",
+                    "fixes": {
+                        "CIDVA": "CIDVA",
+                        "TEBKY": "TEBKY AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "DVL",
+                    "fixes": {
+                        "DVL": "DVL",
+                        "TEBKY": "TEBKY AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "HAVIR": "HAVIR AT OR ABOVE 4000",
+                "EHLEL": "EHLEL 3500 RNW 32",
+                "MEKSE": "MEKSE TURN LEFT DIRECT",
+                "JAKTI": "JAKTI",
+                "CIDVA": "OVERFLY CIDVA AT OR ABOVE 4000 HOLD AT CIDVA RIGHT TURN INBOUNDCOURSE 140 LEGDIST 4 FAF EHLEL MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "DVL",
+                    "fixes": {
+                        "DVL": "DVL AT OR ABOVE 4000",
+                        "SERUW": "SERUW AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "GFK",
+                    "fixes": {
+                        "GFK": "GFK AT OR ABOVE 4000",
+                        "GAKBE": "GAKBE AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "HAVIR",
+                    "fixes": {
+                        "HAVIR": "HAVIR RIGHT TURN INBOUNDCOURSE 313 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

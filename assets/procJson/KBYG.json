@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "CZI",
+            "lat": 43.999727783333334,
+            "lon": 106.43573056666666
+        },
+        {
+            "name": "INJUX",
+            "lat": 44.294425,
+            "lon": 106.65211388333333
+        },
+        {
+            "name": "MIZNR",
+            "lat": 44.20606111666667,
+            "lon": 106.58697221666667
+        },
+        {
+            "name": "NICIG",
+            "lat": 44.31470556666667,
+            "lon": 106.63871388333334
+        },
+        {
+            "name": "ONECI",
+            "lat": 44.2046,
+            "lon": 106.50148888333334
+        },
+        {
+            "name": "PI001",
+            "lat": 44.24339871666667,
+            "lon": 106.61263698333333
+        },
+        {
+            "name": "PI002",
+            "lat": 44.22360438333333,
+            "lon": 106.51650498333333
+        },
+        {
+            "name": "PI003",
+            "lat": 44.14859965,
+            "lon": 106.53950411666666
+        },
+        {
+            "name": "SHERZ",
+            "lat": 44.36802778333333,
+            "lon": 106.70655556666667
+        },
+        {
+            "name": "ZEDRI",
+            "lat": 44.37020278333333,
+            "lon": 106.70815278333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD31",
+            "fixes": {
+                "INJUX": "INJUX 6700",
+                "ZEDRI": "ZEDRI 5053 RNW 31 TRK 319 UNTIL 5370 TURN RIGHT HDG 160 INTERCEPT RADIAL 139 TO",
+                "MIZNR": "MIZNR MIZNR AT OR ABOVE 7600 HOLD AT MIZNR RIGHT TURN INBOUNDCOURSE 319 LEGTIME 1 FAF INJUX MAP ZEDRI"
+            },
+            "transitions": [
+                {
+                    "name": "CZI",
+                    "fixes": {
+                        "CZI": "CZI",
+                        "MIZNR": "MIZNR AT OR ABOVE 7600"
+                    }
+                },
+                {
+                    "name": "SHERZ",
+                    "fixes": {
+                        "SHERZ": "SHERZ",
+                        "INJUX": "INJUX AT OR ABOVE 8400",
+                        "PI001": "PI001 AT OR ABOVE 7600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 7600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 7600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ONECI": "ONECI AT OR ABOVE 7000 OVERFLY ONECI AT OR ABOVE 7000 HOLD AT ONECI RIGHT TURN INBOUNDCOURSE 306 LEGDIST 7 FAF NICIG MAP RNW 31",
+                "NICIG": "NICIG 6500 RNW 31 TRK 306 UNTIL 6000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CZI",
+                    "fixes": {
+                        "CZI": "CZI"
+                    }
+                },
+                {
+                    "name": "ONECI",
+                    "fixes": {
+                        "ONECI": "ONECI RIGHT TURN INBOUNDCOURSE 306 ALT 7000 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

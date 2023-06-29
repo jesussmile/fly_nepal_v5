@@ -1,0 +1,292 @@
+{
+    "fixes": [
+        {
+            "name": "AANDD",
+            "lat": 34.41194721666667,
+            "lon": 97.14493888333334
+        },
+        {
+            "name": "ADDMO",
+            "lat": 34.23301111666667,
+            "lon": 96.93228888333333
+        },
+        {
+            "name": "ADM",
+            "lat": 34.211586116666666,
+            "lon": 97.16822778333334
+        },
+        {
+            "name": "BBOBY",
+            "lat": 34.583097216666665,
+            "lon": 97.09402221666667
+        },
+        {
+            "name": "CRSWT",
+            "lat": 34.350405566666666,
+            "lon": 97.07165278333333
+        },
+        {
+            "name": "DECKK",
+            "lat": 34.87281111666667,
+            "lon": 97.28108888333334
+        },
+        {
+            "name": "FOYER",
+            "lat": 34.554661116666665,
+            "lon": 98.22851666666666
+        },
+        {
+            "name": "GLARY",
+            "lat": 34.18847221666667,
+            "lon": 96.69176943333333
+        },
+        {
+            "name": "IYWIY",
+            "lat": 34.161577783333335,
+            "lon": 96.84776666666667
+        },
+        {
+            "name": "LIBTE",
+            "lat": 34.22905278333333,
+            "lon": 96.9276
+        },
+        {
+            "name": "MA050",
+            "lat": 34.292911116666666,
+            "lon": 97.02280278333333
+        },
+        {
+            "name": "MARYV",
+            "lat": 34.38811943333333,
+            "lon": 97.11654721666666
+        },
+        {
+            "name": "MRGIE",
+            "lat": 34.37171943333333,
+            "lon": 97.35195833333333
+        },
+        {
+            "name": "NIXHE",
+            "lat": 34.13941943333333,
+            "lon": 96.82159166666666
+        },
+        {
+            "name": "PI001",
+            "lat": 34.19175311666667,
+            "lon": 96.88242208333334
+        },
+        {
+            "name": "PI002",
+            "lat": 34.191722666666664,
+            "lon": 96.79578041666667
+        },
+        {
+            "name": "PI003",
+            "lat": 34.11507771666667,
+            "lon": 96.78994166666666
+        },
+        {
+            "name": "PI004",
+            "lat": 34.17895266666667,
+            "lon": 97.22668455
+        },
+        {
+            "name": "PI005",
+            "lat": 34.19259796666667,
+            "lon": 97.31173525
+        },
+        {
+            "name": "PI006",
+            "lat": 34.11827423333333,
+            "lon": 97.33512718333333
+        },
+        {
+            "name": "RRDEE",
+            "lat": 34.477477783333335,
+            "lon": 97.22315278333333
+        },
+        {
+            "name": "SANJN",
+            "lat": 34.03242778333333,
+            "lon": 96.88293611666667
+        },
+        {
+            "name": "TEYUS",
+            "lat": 33.862938883333335,
+            "lon": 96.68207778333333
+        },
+        {
+            "name": "TIKYS",
+            "lat": 34.06664721666667,
+            "lon": 96.42598056666667
+        },
+        {
+            "name": "UMEHU",
+            "lat": 34.275722216666665,
+            "lon": 96.982925
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 17",
+        "RNW 31",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS31",
+            "fixes": {
+                "IYWIY": "IYWIY AT OR ABOVE 3000",
+                "ADDMO": "ADDMO 2520 RNW 31 TRK 309 UNTIL 2000 TURN LEFT DIRECT",
+                "ADM": "ADM AT OR ABOVE 3000 HOLD AT ADM RIGHT TURN INBOUNDCOURSE 050 LEGTIME 1 FAF ADDMO MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "ADM": "ADM",
+                        "ADDMO": "ADDMO AT OR BELOW 6000 AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "RRDEE": "RRDEE AT OR ABOVE 3600",
+                "AANDD": "AANDD AT OR ABOVE 2900",
+                "MARYV": "MARYV 2800",
+                "CRSWT": "CRSWT AT OR ABOVE 1780 RNW 13 TRK 129 UNTIL 1177",
+                "NIXHE": "OVERFLY NIXHE AT OR ABOVE 3600 HOLD AT NIXHE RIGHT TURN INBOUNDCOURSE 310 LEGDIST 4 FAF MARYV MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "ADM": "ADM",
+                        "RRDEE": "OVERFLY RRDEE AT OR ABOVE 3600 HOLD AT RRDEE RIGHT TURN INBOUNDCOURSE 129 ALT 3600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DECKK",
+                    "fixes": {
+                        "DECKK": "DECKK",
+                        "BBOBY": "BBOBY AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "FOYER",
+                    "fixes": {
+                        "FOYER": "FOYER",
+                        "MRGIE": "MRGIE AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "NIXHE": "NIXHE AT OR ABOVE 3600",
+                "LIBTE": "LIBTE 2600",
+                "UMEHU": "UMEHU AT OR ABOVE 1340 RNW 31 TRK 309 UNTIL 991",
+                "RRDEE": "OVERFLY RRDEE AT OR ABOVE 3600 HOLD AT RRDEE RIGHT TURN INBOUNDCOURSE 129 LEGDIST 4 FAF LIBTE MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "ADM": "ADM",
+                        "NIXHE": "OVERFLY NIXHE AT OR ABOVE 3600 HOLD AT NIXHE RIGHT TURN INBOUNDCOURSE 310 ALT 3600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TEYUS",
+                    "fixes": {
+                        "TEYUS": "TEYUS",
+                        "SANJN": "SANJN AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "TIKYS",
+                    "fixes": {
+                        "TIKYS": "TIKYS",
+                        "GLARY": "GLARY AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB13",
+            "fixes": {
+                "ADM": "ADM 3000 ADM AT OR ABOVE 3000 HOLD AT ADM RIGHT TURN INBOUNDCOURSE 050 LEGTIME 1 FAF ADM MAP MA050",
+                "MA050": "MA050 1700 RNW 13 TRK 050 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB17",
+            "fixes": {
+                "ADM": "ADM 3000 ADM AT OR ABOVE 3000 HOLD AT ADM RIGHT TURN INBOUNDCOURSE 050 LEGTIME 1 FAF ADM MAP MA050",
+                "MA050": "MA050 1700 RNW 17 TRK 050 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB31",
+            "fixes": {
+                "ADM": "ADM 3000 ADM AT OR ABOVE 3000 HOLD AT ADM RIGHT TURN INBOUNDCOURSE 050 LEGTIME 1 FAF ADM MAP MA050",
+                "MA050": "MA050 1700 RNW 31 TRK 050 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB35",
+            "fixes": {
+                "ADM": "ADM 3000 ADM AT OR ABOVE 3000 HOLD AT ADM RIGHT TURN INBOUNDCOURSE 050 LEGTIME 1 FAF ADM MAP MA050",
+                "MA050": "MA050 1700 RNW 35 TRK 050 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 3000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 3000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

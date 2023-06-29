@@ -1,0 +1,169 @@
+{
+    "fixes": [
+        {
+            "name": "AGUBE",
+            "lat": 40.18780556666667,
+            "lon": 84.81283056666666
+        },
+        {
+            "name": "BICEN",
+            "lat": 40.13814721666667,
+            "lon": 84.82444443333333
+        },
+        {
+            "name": "BOOKS",
+            "lat": 40.504519433333336,
+            "lon": 84.79465833333333
+        },
+        {
+            "name": "DQN",
+            "lat": 40.016444433333334,
+            "lon": 84.39689721666667
+        },
+        {
+            "name": "HURIB",
+            "lat": 40.15865278333333,
+            "lon": 84.98141111666666
+        },
+        {
+            "name": "INCUR",
+            "lat": 40.07459443333333,
+            "lon": 84.60030278333333
+        },
+        {
+            "name": "MARSP",
+            "lat": 40.166,
+            "lon": 84.9233
+        },
+        {
+            "name": "MIE",
+            "lat": 40.237291666666664,
+            "lon": 85.39403611666667
+        },
+        {
+            "name": "MOSEW",
+            "lat": 40.21564443333333,
+            "lon": 84.65037221666667
+        },
+        {
+            "name": "NOPCU",
+            "lat": 40.341,
+            "lon": 84.68681111666666
+        },
+        {
+            "name": "OYCEG",
+            "lat": 40.11894443333333,
+            "lon": 85.20855833333333
+        },
+        {
+            "name": "SOWDO",
+            "lat": 40.07578611666667,
+            "lon": 84.60984721666667
+        },
+        {
+            "name": "TOKAY",
+            "lat": 40.10295833333333,
+            "lon": 84.70009721666666
+        },
+        {
+            "name": "WUBEK",
+            "lat": 40.14742221666667,
+            "lon": 85.04599443333333
+        },
+        {
+            "name": "ZOKUV",
+            "lat": 40.17705,
+            "lon": 84.87520556666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "OYCEG": "OYCEG AT OR ABOVE 3000",
+                "WUBEK": "WUBEK 2800",
+                "HURIB": "HURIB AT OR ABOVE 1820 RNW 08 TRK 082 UNTIL 1430",
+                "MOSEW": "OVERFLY MOSEW AT OR ABOVE 3000 HOLD AT MOSEW RIGHT TURN INBOUNDCOURSE 262 LEGDIST 4 FAF WUBEK MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "OYCEG",
+                    "fixes": {
+                        "OYCEG": "OYCEG RIGHT TURN INBOUNDCOURSE 082 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "MOSEW": "MOSEW AT OR ABOVE 3000 OVERFLY MOSEW AT OR ABOVE 3000 HOLD AT MOSEW RIGHT TURN INBOUNDCOURSE 262 LEGDIST 4 FAF AGUBE MAP RNW 26",
+                "AGUBE": "AGUBE 2800",
+                "ZOKUV": "ZOKUV AT OR ABOVE 1860 RNW 26 TRK 262 UNTIL 2500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BOOKS",
+                    "fixes": {
+                        "BOOKS": "BOOKS",
+                        "NOPCU": "NOPCU AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "DQN",
+                    "fixes": {
+                        "DQN": "DQN",
+                        "SOWDO": "SOWDO AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MIE",
+                    "fixes": {
+                        "MIE": "MIE",
+                        "MOSEW": "OVERFLY MOSEW AT OR ABOVE 3000 HOLD AT MOSEW RIGHT TURN INBOUNDCOURSE 262 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA08",
+            "fixes": {
+                "TOKAY": "TOKAY AT OR ABOVE 2700",
+                "BICEN": "BICEN 2700 BICEN AT OR ABOVE 2700 HOLD AT BICEN RIGHT TURN INBOUNDCOURSE 291 LEGTIME 1 FAF BICEN MAP MARSP",
+                "MARSP": "MARSP 1820 RNW 08 TRK 291 UNTIL 1820 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DQN",
+                    "fixes": {
+                        "DQN": "DQN",
+                        "INCUR": "INCUR AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA26",
+            "fixes": {
+                "TOKAY": "TOKAY AT OR ABOVE 2700",
+                "BICEN": "BICEN 2700 BICEN AT OR ABOVE 2700 HOLD AT BICEN RIGHT TURN INBOUNDCOURSE 291 LEGTIME 1 FAF BICEN MAP MARSP",
+                "MARSP": "MARSP 1820 RNW 26 TRK 291 UNTIL 1820 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DQN",
+                    "fixes": {
+                        "DQN": "DQN",
+                        "INCUR": "INCUR AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        }
+    ]
+}

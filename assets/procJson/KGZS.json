@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "ARDER",
+            "lat": 35.001525,
+            "lon": 86.87991111666666
+        },
+        {
+            "name": "COLAP",
+            "lat": 35.14058611666667,
+            "lon": 87.04846111666667
+        },
+        {
+            "name": "HESIG",
+            "lat": 35.108188883333334,
+            "lon": 87.02851388333333
+        },
+        {
+            "name": "PASHN",
+            "lat": 35.081488883333336,
+            "lon": 86.97672778333333
+        },
+        {
+            "name": "RQZ",
+            "lat": 34.797238883333335,
+            "lon": 86.63384721666667
+        },
+        {
+            "name": "UZSAP",
+            "lat": 35.247911116666664,
+            "lon": 87.11551388333334
+        },
+        {
+            "name": "VIDJO",
+            "lat": 35.05902221666667,
+            "lon": 86.99797778333334
+        },
+        {
+            "name": "WOZYE",
+            "lat": 35.34781666666667,
+            "lon": 87.17792778333333
+        },
+        {
+            "name": "ZEWGU",
+            "lat": 34.958,
+            "lon": 86.93536111666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD34",
+            "fixes": {
+                "ARDER": "ARDER AT OR ABOVE 3000 ARDER AT OR ABOVE 3000 HOLD AT ARDER RIGHT TURN INBOUNDCOURSE 313 LEGTIME 1 FAF PASHN MAP COLAP",
+                "PASHN": "PASHN 2500",
+                "COLAP": "COLAP 853 RNW 34 TRK 313 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ARDER",
+                    "fixes": {
+                        "ARDER": "ARDER RIGHT TURN INBOUNDCOURSE 313 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "RQZ",
+                    "fixes": {
+                        "RQZ": "RQZ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "WOZYE": "WOZYE AT OR ABOVE 3000",
+                "UZSAP": "UZSAP 2600 RNW 16 TRK 155 UNTIL 1089",
+                "ZEWGU": "OVERFLY ZEWGU AT OR ABOVE 3000 HOLD AT ZEWGU RIGHT TURN INBOUNDCOURSE 335 LEGDIST 4 FAF UZSAP MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "WOZYE",
+                    "fixes": {
+                        "WOZYE": "WOZYE RIGHT TURN INBOUNDCOURSE 155 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "ZEWGU": "ZEWGU AT OR ABOVE 3000",
+                "VIDJO": "VIDJO 2600",
+                "HESIG": "HESIG AT OR ABOVE 1540 RNW 34 TRK 335 UNTIL 897",
+                "WOZYE": "OVERFLY WOZYE AT OR ABOVE 3000 HOLD AT WOZYE RIGHT TURN INBOUNDCOURSE 155 LEGDIST 4 FAF VIDJO MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "ZEWGU",
+                    "fixes": {
+                        "ZEWGU": "ZEWGU RIGHT TURN INBOUNDCOURSE 335 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

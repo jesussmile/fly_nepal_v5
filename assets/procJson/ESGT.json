@@ -1,0 +1,201 @@
+{
+    "fixes": [
+        {
+            "name": "CF33",
+            "lat": 58.202080566666666,
+            "lon": 12.491966666666666
+        },
+        {
+            "name": "CN15",
+            "lat": 58.429752783333335,
+            "lon": 12.201366666666667
+        },
+        {
+            "name": "FMNB",
+            "lat": 58.36088888333333,
+            "lon": 12.290027783333333
+        },
+        {
+            "name": "GT615",
+            "lat": 58.2345,
+            "lon": 12.450972216666667
+        },
+        {
+            "name": "GT630",
+            "lat": 58.178638883333335,
+            "lon": 12.521888883333334
+        },
+        {
+            "name": "GT633",
+            "lat": 58.233944433333335,
+            "lon": 12.451722216666667
+        },
+        {
+            "name": "GT640",
+            "lat": 58.21572221666667,
+            "lon": 12.626472216666667
+        },
+        {
+            "name": "GT650",
+            "lat": 58.14147221666666,
+            "lon": 12.417527783333334
+        },
+        {
+            "name": "GT900",
+            "lat": 58.495361116666665,
+            "lon": 12.269916666666667
+        },
+        {
+            "name": "GT905",
+            "lat": 58.42580556666667,
+            "lon": 12.072416666666667
+        },
+        {
+            "name": "GT910",
+            "lat": 58.45830556666667,
+            "lon": 12.1645
+        },
+        {
+            "name": "GT915",
+            "lat": 58.403138883333334,
+            "lon": 12.235444433333333
+        },
+        {
+            "name": "GT933",
+            "lat": 58.382027783333335,
+            "lon": 12.262583333333334
+        },
+        {
+            "name": "KONOX",
+            "lat": 58.285888883333335,
+            "lon": 12.292194433333334
+        },
+        {
+            "name": "MN15",
+            "lat": 58.34018056666667,
+            "lon": 12.316522216666666
+        },
+        {
+            "name": "OM33",
+            "lat": 58.263111116666664,
+            "lon": 12.414611116666666
+        },
+        {
+            "name": "PG",
+            "lat": 58.26325,
+            "lon": 12.4145
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS33",
+            "fixes": {
+                "CF33": "CF33 AT OR ABOVE 2000",
+                "OM33": "OM33 1330 RNW 33 TRK 323 UNTIL 2000 TURN LEFT DIRECT",
+                "PG": "PG 2000 FAF OM33 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "PG1",
+                    "fixes": {
+                        "PG": "PG RIGHT TURN INBOUNDCOURSE 323 ALT 2000 SPEED 200 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "PG2",
+                    "fixes": {
+                        "PG": "PG RIGHT TURN INBOUNDCOURSE 323 ALT 2000 SPEED 200 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB15",
+            "fixes": {
+                "CN15": "CN15 AT OR ABOVE 2000",
+                "FMNB": "FMNB 1100 FMNB 2000 FAF FMNB MAP MN15",
+                "MN15": "MN15 586 RNW 15 TRK 143 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FM1",
+                    "fixes": {
+                        "FMNB": "FMNB RIGHT TURN INBOUNDCOURSE 143 ALT 2000 SPEED 200 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "FM2",
+                    "fixes": {
+                        "FMNB": "FMNB RIGHT TURN INBOUNDCOURSE 143 ALT 2000 SPEED 200 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB33",
+            "fixes": {
+                "PG": "PG 1330 RNW 33 TRK 323 UNTIL 2000 TURN LEFT DIRECT PG 2000 FAF PG MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PG": "PG RIGHT TURN INBOUNDCOURSE 323 ALT 2000 SPEED 200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "GT910": "GT910 AT OR ABOVE 2700 SPEED 200",
+                "GT915": "GT915 2000 RNW 15",
+                "GT615": "OVERFLY GT615 SPEED 200 TURN RIGHT DIRECT",
+                "KONOX": "OVERFLY KONOX AT OR ABOVE 2600 SPEED 200 HOLD AT KONOX LEFT TURN INBOUNDCOURSE 310 SPEED 200 LEGTIME 1 FAF GT915 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "GT900",
+                    "fixes": {
+                        "GT900": "GT900 AT OR ABOVE 3000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "GT905",
+                    "fixes": {
+                        "GT905": "GT905 AT OR ABOVE 3000 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "GT630": "GT630 AT OR ABOVE 2600 SPEED 200",
+                "GT633": "GT633 2000 RNW 33",
+                "GT933": "OVERFLY GT933 SPEED 200 TURN LEFT DIRECT",
+                "KONOX": "KONOX AT OR ABOVE 2600 SPEED 200 HOLD AT KONOX LEFT TURN INBOUNDCOURSE 310 SPEED 200 LEGTIME 1 FAF GT633 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "GT640",
+                    "fixes": {
+                        "GT640": "GT640 AT OR ABOVE 3000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "GT650",
+                    "fixes": {
+                        "GT650": "GT650 AT OR ABOVE 3000 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

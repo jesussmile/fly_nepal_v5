@@ -1,0 +1,233 @@
+{
+    "fixes": [
+        {
+            "name": "BOKAM",
+            "lat": 3.4420722166666664,
+            "lon": 40.14346666666667
+        },
+        {
+            "name": "ESDAB",
+            "lat": 3.7398333333333333,
+            "lon": 40.098333333333336
+        },
+        {
+            "name": "ISUPI",
+            "lat": 3.3648333333333333,
+            "lon": 40.522333333333336
+        },
+        {
+            "name": "JE001",
+            "lat": 2.838069433333333,
+            "lon": 40.453608333333335
+        },
+        {
+            "name": "JE002",
+            "lat": 2.9481055666666665,
+            "lon": 40.44079721666667
+        },
+        {
+            "name": "JE003",
+            "lat": 2.985358333333333,
+            "lon": 40.51539721666666
+        },
+        {
+            "name": "JE006",
+            "lat": 2.9160694333333335,
+            "lon": 40.58779166666667
+        },
+        {
+            "name": "JE007",
+            "lat": 3.085219433333333,
+            "lon": 40.50423333333333
+        },
+        {
+            "name": "JE008",
+            "lat": 3.0300527833333333,
+            "lon": 40.604922216666665
+        },
+        {
+            "name": "JE011",
+            "lat": 2.8274611166666666,
+            "lon": 40.199308333333335
+        },
+        {
+            "name": "JE012",
+            "lat": 2.7827333333333333,
+            "lon": 40.10981388333333
+        },
+        {
+            "name": "JE013",
+            "lat": 2.896722216666667,
+            "lon": 40.126894433333334
+        },
+        {
+            "name": "JE017",
+            "lat": 2.8647305666666667,
+            "lon": 40.273891666666664
+        },
+        {
+            "name": "JE018",
+            "lat": 2.7276027833333334,
+            "lon": 40.2105
+        },
+        {
+            "name": "SUBVI",
+            "lat": 3.1064444333333334,
+            "lon": 41.77377778333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "BOKA1A",
+            "rnw": "08",
+            "fixes": {
+                "BOKAM": "BOKAM"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ESDAB",
+                    "fixes": [
+                        "ESDAB"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BOKA1B",
+            "rnw": "26",
+            "fixes": {
+                "BOKAM": "BOKAM"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ESDAB",
+                    "fixes": [
+                        "ESDAB"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ISUP1A",
+            "rnw": "08",
+            "fixes": {
+                "ISUPI": "ISUPI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ISUP1B",
+            "rnw": "26",
+            "fixes": {
+                "ISUPI": "ISUPI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OMNI",
+            "rnw": "26",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 08",
+                    "fixes": {
+                        "RNW 08": "RNW 08 TRK 085 UNTIL 1000 HDG 085 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 26",
+                    "fixes": {
+                        "RNW 26": "RNW 26 TRK 265 UNTIL 1000 HDG 265 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "SUBV1A",
+            "rnw": "08",
+            "fixes": {
+                "JE001": "JE001",
+                "SUBVI": "SUBVI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SUBV1B",
+            "rnw": "26",
+            "fixes": {
+                "SUBVI": "SUBVI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "JE003": "JE003 AT OR ABOVE 2500",
+                "JE002": "JE002 1730 RNW 08 TRK 085 UNTIL 1000 TURN RIGHT DIRECT",
+                "JE007": "OVERFLY JE007 AT OR ABOVE 4000 HOLD AT JE007 LEFT TURN INBOUNDCOURSE 015 ALT 4000 LEGTIME 1 FAF JE002 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "JE006",
+                    "fixes": {
+                        "JE006": "JE006 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "JE007",
+                    "fixes": {
+                        "JE007": "JE007 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "JE008",
+                    "fixes": {
+                        "JE008": "JE008 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "JE011": "JE011 AT OR ABOVE 2000",
+                "JE017": "JE017 1740 RNW 26 TRK 265 UNTIL 1000 TURN LEFT DIRECT",
+                "JE013": "OVERFLY JE013 AT OR ABOVE 4000 HOLD AT JE013 RIGHT TURN INBOUNDCOURSE 335 ALT 4000 LEGTIME 1 FAF JE017 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "JE012",
+                    "fixes": {
+                        "JE012": "JE012 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "JE013",
+                    "fixes": {
+                        "JE013": "JE013 AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "JE018",
+                    "fixes": {
+                        "JE018": "JE018 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "ADUCA",
+            "lat": 33.412733333333335,
+            "lon": 91.37087778333333
+        },
+        {
+            "name": "DAVCA",
+            "lat": 33.71058611666667,
+            "lon": 91.36218888333333
+        },
+        {
+            "name": "ICABA",
+            "lat": 33.588005566666666,
+            "lon": 91.36577221666667
+        },
+        {
+            "name": "MEGRE",
+            "lat": 33.827697216666664,
+            "lon": 91.35875556666667
+        },
+        {
+            "name": "WOPLA",
+            "lat": 33.52985,
+            "lon": 91.36746943333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "MEGRE": "MEGRE AT OR ABOVE 2000",
+                "DAVCA": "DAVCA 1800 RNW 18 TRK 180 UNTIL 541",
+                "ADUCA": "OVERFLY ADUCA AT OR ABOVE 2000 HOLD AT ADUCA RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF DAVCA MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "MEGRE",
+                    "fixes": {
+                        "MEGRE": "MEGRE RIGHT TURN INBOUNDCOURSE 180 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ADUCA": "ADUCA AT OR ABOVE 2000",
+                "WOPLA": "WOPLA 1800",
+                "ICABA": "ICABA AT OR ABOVE 680 RNW 36 TRK 000 UNTIL 541",
+                "MEGRE": "OVERFLY MEGRE AT OR ABOVE 2000 HOLD AT MEGRE RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF WOPLA MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ADUCA",
+                    "fixes": {
+                        "ADUCA": "ADUCA RIGHT TURN INBOUNDCOURSE 000 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

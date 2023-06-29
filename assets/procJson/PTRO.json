@@ -1,0 +1,163 @@
+{
+    "fixes": [
+        {
+            "name": "EBFIT",
+            "lat": 7.4465,
+            "lon": 134.74064166666668
+        },
+        {
+            "name": "EFUYE",
+            "lat": 7.6217,
+            "lon": 134.96562221666667
+        },
+        {
+            "name": "FAVGA",
+            "lat": 7.369413883333333,
+            "lon": 134.45149721666667
+        },
+        {
+            "name": "FF09",
+            "lat": 7.365125,
+            "lon": 134.44618888333332
+        },
+        {
+            "name": "ITAZU",
+            "lat": 7.362794433333334,
+            "lon": 134.73868056666666
+        },
+        {
+            "name": "JAKEF",
+            "lat": 7.371702783333333,
+            "lon": 134.34986943333334
+        },
+        {
+            "name": "KUYEB",
+            "lat": 7.420219433333333,
+            "lon": 134.28150833333333
+        },
+        {
+            "name": "LUBEY",
+            "lat": 7.455413883333334,
+            "lon": 134.35175833333332
+        },
+        {
+            "name": "OHUDA",
+            "lat": 7.3651527833333335,
+            "lon": 134.63739166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 7.366721466666666,
+            "lon": 134.49157533333334
+        },
+        {
+            "name": "PI002",
+            "lat": 7.415594916666667,
+            "lon": 134.43871956666666
+        },
+        {
+            "name": "PI003",
+            "lat": 7.362913233333333,
+            "lon": 134.38240833333333
+        },
+        {
+            "name": "RORNB",
+            "lat": 7.368761116666667,
+            "lon": 134.55035833333332
+        },
+        {
+            "name": "UVOVY",
+            "lat": 7.425819433333333,
+            "lon": 134.7939
+        },
+        {
+            "name": "WEXGY",
+            "lat": 7.569725,
+            "lon": 134.07066111666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FF09": "FF09 1900 RNW 09",
+                "RORNB": "OVERFLY RORNB TRK 090 UNTIL 1900 TURN RIGHT DIRECT RORNB HOLD AT RORNB RIGHT TURN INBOUNDCOURSE 087 LEGTIME 1 FAF FF09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "ROR",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1900 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "JAKEF": "JAKEF AT OR ABOVE 1900",
+                "FAVGA": "FAVGA 1800 RNW 09 TRK 090 UNTIL 577",
+                "ITAZU": "OVERFLY ITAZU AT OR ABOVE 1900 HOLD AT ITAZU LEFT TURN INBOUNDCOURSE 270 LEGDIST 4 FAF FAVGA MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "JAKEF",
+                    "fixes": {
+                        "JAKEF": "JAKEF RIGHT TURN INBOUNDCOURSE 090 ALT 1900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LUBEY",
+                    "fixes": {
+                        "LUBEY": "LUBEY"
+                    }
+                },
+                {
+                    "name": "WEXGY",
+                    "fixes": {
+                        "WEXGY": "WEXGY",
+                        "KUYEB": "KUYEB AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "ITAZU": "ITAZU AT OR ABOVE 1900",
+                "OHUDA": "OHUDA 1800 RNW 27 TRK 270 UNTIL 577",
+                "JAKEF": "OVERFLY JAKEF AT OR ABOVE 1900 HOLD AT JAKEF RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4 FAF OHUDA MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "EFUYE",
+                    "fixes": {
+                        "EFUYE": "EFUYE",
+                        "UVOVY": "UVOVY AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "ITAZU",
+                    "fixes": {
+                        "ITAZU": "ITAZU LEFT TURN INBOUNDCOURSE 270 ALT 1900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WEXGY",
+                    "fixes": {
+                        "WEXGY": "WEXGY",
+                        "EBFIT": "EBFIT AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

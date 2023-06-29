@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "BLITH",
+            "lat": 36.06815278333333,
+            "lon": 90.15348888333334
+        },
+        {
+            "name": "DUNLE",
+            "lat": 35.721786116666664,
+            "lon": 90.15565
+        },
+        {
+            "name": "HATOP",
+            "lat": 35.97986388333333,
+            "lon": 90.15403888333333
+        },
+        {
+            "name": "JAPAB",
+            "lat": 35.863802783333334,
+            "lon": 90.15476943333333
+        },
+        {
+            "name": "JISEP",
+            "lat": 35.80929166666667,
+            "lon": 90.15511943333334
+        },
+        {
+            "name": "JITRU",
+            "lat": 35.92691943333333,
+            "lon": 90.15436943333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "BLITH": "BLITH AT OR ABOVE 2800",
+                "HATOP": "HATOP 1800",
+                "JITRU": "JITRU AT OR ABOVE 780 RNW 18",
+                "DUNLE": "OVERFLY DUNLE AT OR ABOVE 2600 HOLD AT DUNLE RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF HATOP MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "BLITH",
+                    "fixes": {
+                        "BLITH": "BLITH RIGHT TURN INBOUNDCOURSE 181 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DUNLE": "DUNLE AT OR ABOVE 2600",
+                "JISEP": "JISEP 1800",
+                "JAPAB": "JAPAB AT OR ABOVE 760 RNW 36 TRK 001 UNTIL 531",
+                "BLITH": "OVERFLY BLITH AT OR ABOVE 2800 HOLD AT BLITH RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF JISEP MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "DUNLE",
+                    "fixes": {
+                        "DUNLE": "DUNLE RIGHT TURN INBOUNDCOURSE 001 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

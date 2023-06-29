@@ -1,0 +1,88 @@
+{
+    "fixes": [
+        {
+            "name": "CILOM",
+            "lat": 37.54975278333333,
+            "lon": 82.82100278333333
+        },
+        {
+            "name": "GYMUS",
+            "lat": 37.55551943333333,
+            "lon": 82.69054166666666
+        },
+        {
+            "name": "OBSEW",
+            "lat": 37.57236111666667,
+            "lon": 82.28991111666667
+        },
+        {
+            "name": "PEAIR",
+            "lat": 37.567116666666664,
+            "lon": 82.41811943333333
+        },
+        {
+            "name": "XUYBU",
+            "lat": 37.55830556666667,
+            "lon": 82.62621666666666
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 09",
+        "RNW 20",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS27",
+            "fixes": {
+                "OBSEW": "OBSEW AT OR ABOVE 4500",
+                "PEAIR": "PEAIR 3700 RNW 27 TRK 274 UNTIL 1870",
+                "CILOM": "CILOM AT OR ABOVE 4500 HOLD AT CILOM RIGHT TURN INBOUNDCOURSE 094 LEGDIST 5 FAF PEAIR MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "OBSEW",
+                    "fixes": {
+                        "OBSEW": "OBSEW RIGHT TURN INBOUNDCOURSE 274 ALT 4500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "CILOM": "CILOM AT OR ABOVE 4500",
+                "GYMUS": "GYMUS 3200",
+                "XUYBU": "XUYBU AT OR ABOVE 2220 RNW 09 TRK 094 UNTIL 1709",
+                "OBSEW": "OVERFLY OBSEW AT OR ABOVE 4500 HOLD AT OBSEW RIGHT TURN INBOUNDCOURSE 274 LEGDIST 5 FAF GYMUS MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "CILOM",
+                    "fixes": {
+                        "CILOM": "CILOM RIGHT TURN INBOUNDCOURSE 094 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "OBSEW": "OBSEW AT OR ABOVE 4500",
+                "PEAIR": "PEAIR 3700 RNW 27 TRK 274 UNTIL 1663",
+                "CILOM": "OVERFLY CILOM AT OR ABOVE 4500 HOLD AT CILOM RIGHT TURN INBOUNDCOURSE 094 LEGDIST 5 FAF PEAIR MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "OBSEW",
+                    "fixes": {
+                        "OBSEW": "OBSEW RIGHT TURN INBOUNDCOURSE 274 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "ADTOP",
+            "lat": 32.38775278333333,
+            "lon": 88.03696666666667
+        },
+        {
+            "name": "AFPAD",
+            "lat": 32.54023611666667,
+            "lon": 87.87055833333334
+        },
+        {
+            "name": "BATGE",
+            "lat": 32.31411943333333,
+            "lon": 88.11703333333334
+        },
+        {
+            "name": "CUBNO",
+            "lat": 32.61370278333333,
+            "lon": 87.79008611666667
+        },
+        {
+            "name": "RIPNE",
+            "lat": 32.493383333333334,
+            "lon": 87.92178056666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "BATGE": "BATGE AT OR ABOVE 3000",
+                "ADTOP": "ADTOP 2000 RNW 04 TRK 045 UNTIL 362",
+                "CUBNO": "OVERFLY CUBNO AT OR ABOVE 3000 HOLD AT CUBNO RIGHT TURN INBOUNDCOURSE 225 LEGDIST 4 FAF ADTOP MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "BATGE",
+                    "fixes": {
+                        "BATGE": "BATGE RIGHT TURN INBOUNDCOURSE 045 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "CUBNO": "CUBNO AT OR ABOVE 3000",
+                "AFPAD": "AFPAD 2000",
+                "RIPNE": "RIPNE AT OR ABOVE 780 RNW 22 TRK 225 UNTIL 369",
+                "BATGE": "OVERFLY BATGE AT OR ABOVE 3000 HOLD AT BATGE RIGHT TURN INBOUNDCOURSE 045 LEGDIST 4 FAF AFPAD MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "CUBNO",
+                    "fixes": {
+                        "CUBNO": "CUBNO RIGHT TURN INBOUNDCOURSE 225 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

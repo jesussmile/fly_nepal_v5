@@ -1,0 +1,71 @@
+{
+    "fixes": [
+        {
+            "name": "GADPA",
+            "lat": 27.441930566666667,
+            "lon": 22.98295278333333
+        },
+        {
+            "name": "SS1F1",
+            "lat": 27.562297216666668,
+            "lon": 22.951458333333335
+        },
+        {
+            "name": "SS1MP",
+            "lat": 27.636905566666666,
+            "lon": 22.99285
+        },
+        {
+            "name": "SS1T1",
+            "lat": 27.502361116666666,
+            "lon": 22.918241666666667
+        },
+        {
+            "name": "TEVUD",
+            "lat": 27.427438883333334,
+            "lon": 22.876744433333332
+        },
+        {
+            "name": "UVMAP",
+            "lat": 27.5115,
+            "lon": 22.825083333333332
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "SS1T1": "SS1T1 AT OR ABOVE 5500 SPEED 210",
+                "SS1F1": "SS1F1 5500",
+                "SS1MP": "OVERFLY SS1MP 3885 RNW 17 TRK 173 UNTIL 4160 TURN LEFT DIRECT",
+                "GADPA": "GADPA AT OR ABOVE 6700 HOLD AT GADPA RIGHT TURN INBOUNDCOURSE 243 ALT 6700 SPEED 230 LEGTIME 1 FAF SS1F1 MAP SS1MP"
+            },
+            "transitions": [
+                {
+                    "name": "GADPA",
+                    "fixes": {
+                        "GADPA": "GADPA AT OR ABOVE 6700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "TEVUD",
+                    "fixes": {
+                        "TEVUD": "TEVUD AT OR ABOVE 6700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "UVMAP",
+                    "fixes": {
+                        "UVMAP": "UVMAP AT OR ABOVE 6700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

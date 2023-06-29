@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "CD07",
+            "lat": 19.238183333333332,
+            "lon": 103.71446111666667
+        },
+        {
+            "name": "CF25",
+            "lat": 19.311969433333335,
+            "lon": 103.44348611666666
+        },
+        {
+            "name": "COL",
+            "lat": 19.275127783333332,
+            "lon": 103.57900556666667
+        },
+        {
+            "name": "D078J",
+            "lat": 19.286713883333334,
+            "lon": 103.40323611666666
+        },
+        {
+            "name": "D096J",
+            "lat": 19.234572216666667,
+            "lon": 103.40809443333333
+        },
+        {
+            "name": "FD07",
+            "lat": 19.25205,
+            "lon": 103.66367221666667
+        },
+        {
+            "name": "FF25",
+            "lat": 19.298163883333334,
+            "lon": 103.49431111666667
+        },
+        {
+            "name": "FS07",
+            "lat": 19.246380566666666,
+            "lon": 103.68444166666667
+        },
+        {
+            "name": "MD07",
+            "lat": 19.270513883333333,
+            "lon": 103.59593888333333
+        },
+        {
+            "name": "PI001",
+            "lat": 19.259039333333334,
+            "lon": 103.63840323333334
+        },
+        {
+            "name": "PI002",
+            "lat": 19.196354583333335,
+            "lon": 103.67519355
+        },
+        {
+            "name": "PI003",
+            "lat": 19.229109966666666,
+            "lon": 103.74868226666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "COL2A",
+            "rnw": "07",
+            "fixes": {
+                "COL": "COL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "COL2B",
+            "rnw": "25",
+            "fixes": {
+                "COL": "COL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD07",
+            "fixes": {
+                "CD07": "CD07 AT OR ABOVE 4300",
+                "FD07": "FD07 3400",
+                "MD07": "MD07 2636 RNW 07 TRK 071 UNTIL 6.0 FROM",
+                "COL": "COL TURN RIGHT DIRECT COL AT OR ABOVE 7000 FAF FD07 MAP MD07"
+            },
+            "transitions": [
+                {
+                    "name": "COL",
+                    "fixes": {
+                        "COL": "COL AT OR ABOVE 7000 TRK 222 UNTIL 8.0 FROM COL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD25",
+            "fixes": {
+                "CF25": "CF25 AT OR ABOVE 5000",
+                "FF25": "FF25 4100 RNW 25",
+                "COL": "OVERFLY COL TRK 246 UNTIL 7.0 FROM COL TURN RIGHT DIRECT COL AT OR ABOVE 7000 FAF FF25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "COL",
+                    "fixes": {
+                        "COL": "COL AT OR ABOVE 7000 TRK 109 UNTIL 8.0 FROM COL",
+                        "D096J": "D096J AT OR ABOVE 6700",
+                        "D078J": "D078J AT OR ABOVE 5900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR07",
+            "fixes": {
+                "FS07": "FS07 4300 RNW 07",
+                "COL": "OVERFLY COL TRK 071 UNTIL 5.0 FROM COL TURN RIGHT DIRECT COL AT OR ABOVE 7000 FAF FS07 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "COL",
+                    "fixes": {
+                        "COL": "COL AT OR ABOVE 7000",
+                        "PI001": "PI001 AT OR ABOVE 4300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

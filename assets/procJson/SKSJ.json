@@ -1,0 +1,143 @@
+{
+    "fixes": [
+        {
+            "name": "46VOR",
+            "lat": 2.609377783333333,
+            "lon": 72.63731111666667
+        },
+        {
+            "name": "ARTID",
+            "lat": 0.9994444333333333,
+            "lon": 72.52194443333333
+        },
+        {
+            "name": "DUBRA",
+            "lat": 1.3555555666666668,
+            "lon": 71.94444443333333
+        },
+        {
+            "name": "FD19",
+            "lat": 2.666747216666667,
+            "lon": 72.63554443333334
+        },
+        {
+            "name": "MD19",
+            "lat": 2.585941666666667,
+            "lon": 72.63803333333334
+        },
+        {
+            "name": "MTU",
+            "lat": 1.2419444333333334,
+            "lon": 70.23694443333333
+        },
+        {
+            "name": "OGNAS",
+            "lat": 3.2022222166666667,
+            "lon": 73.14972221666666
+        },
+        {
+            "name": "SJE",
+            "lat": 2.5324999999999998,
+            "lon": 72.63972221666667
+        },
+        {
+            "name": "SJE14",
+            "lat": 2.718577783333333,
+            "lon": 72.78139166666666
+        },
+        {
+            "name": "SJE15",
+            "lat": 2.7583194333333334,
+            "lon": 72.74890278333334
+        },
+        {
+            "name": "UBRID",
+            "lat": 3.2022222166666667,
+            "lon": 72.96361111666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [
+        {
+            "name": "OGNA2B",
+            "rnw": "01",
+            "fixes": {
+                "OGNAS": "OGNAS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SJE1A",
+            "rnw": "01",
+            "fixes": {
+                "SJE": "SJE AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ARTID",
+                    "fixes": [
+                        "ARTID"
+                    ]
+                },
+                {
+                    "name": "DUBRA",
+                    "fixes": [
+                        "DUBRA"
+                    ]
+                },
+                {
+                    "name": "MTU",
+                    "fixes": [
+                        "MTU"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "UBRI2C",
+            "rnw": "01",
+            "fixes": {
+                "UBRID": "UBRID"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "OGNA1C",
+            "runway": "RNW 19",
+            "fixes": {
+                "OGNAS": "OGNAS",
+                "SJE14": "SJE14 AT OR ABOVE 5000",
+                "FD19": "FD19 AT OR ABOVE 2200"
+            }
+        },
+        {
+            "name": "UBRI1D",
+            "runway": "RNW 19",
+            "fixes": {
+                "UBRID": "UBRID",
+                "SJE15": "SJE15 AT OR ABOVE 5000",
+                "FD19": "FD19 AT OR ABOVE 2200"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD19",
+            "fixes": {
+                "FD19": "FD19 2200",
+                "46VOR": "46VOR AT OR ABOVE 1110",
+                "MD19": "MD19 668 RNW 19",
+                "SJE": "SJE TRK 190 UNTIL 1900 TURN RIGHT DIRECT SJE HOLD AT SJE LEFT TURN INBOUNDCOURSE 190 ALT 4000 SPEED 200 LEGTIME 1 FAF FD19 MAP MD19"
+            },
+            "transitions": []
+        }
+    ]
+}

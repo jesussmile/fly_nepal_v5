@@ -1,0 +1,126 @@
+{
+    "fixes": [
+        {
+            "name": "30VOR",
+            "lat": 36.846161116666664,
+            "lon": 5.8604
+        },
+        {
+            "name": "50VOR",
+            "lat": 36.87854443333333,
+            "lon": 5.850341666666667
+        },
+        {
+            "name": "CD17",
+            "lat": 37.016163883333334,
+            "lon": 5.807502783333334
+        },
+        {
+            "name": "CI17",
+            "lat": 36.962411116666665,
+            "lon": 5.840566666666667
+        },
+        {
+            "name": "D169A",
+            "lat": 36.78931943333333,
+            "lon": 5.874641666666666
+        },
+        {
+            "name": "D169K",
+            "lat": 36.98680556666667,
+            "lon": 5.835752783333334
+        },
+        {
+            "name": "D344G",
+            "lat": 36.910927783333335,
+            "lon": 5.840277783333333
+        },
+        {
+            "name": "D344I",
+            "lat": 36.943308333333334,
+            "lon": 5.830202783333333
+        },
+        {
+            "name": "D349G",
+            "lat": 36.904719433333334,
+            "lon": 5.8543416666666666
+        },
+        {
+            "name": "FF17",
+            "lat": 36.95964721666667,
+            "lon": 5.825116666666666
+        },
+        {
+            "name": "FI17",
+            "lat": 36.93768611666667,
+            "lon": 5.845444433333333
+        },
+        {
+            "name": "JIL",
+            "lat": 36.797583333333336,
+            "lon": 5.875472216666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "CD17": "CD17 AT OR ABOVE 3090",
+                "FF17": "FF17 3090",
+                "50VOR": "50VOR AT OR ABOVE 1500",
+                "30VOR": "30VOR AT OR ABOVE 860 RNW 17 TRK 164 UNTIL 440 TURN RIGHT TRK 029 INTERCEPT RADIAL 344 FROM",
+                "JIL": "JIL SPEED 200 TRK 344 VECTORS FAF FF17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "JIL",
+                    "fixes": {
+                        "JIL": "JIL AT OR ABOVE 6400",
+                        "D344I": "D344I AT OR ABOVE 3090 TRK 299 UNTIL 4.4 FROM D344I"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS17",
+            "fixes": {
+                "CI17": "CI17 AT OR ABOVE 2620",
+                "FI17": "FI17 2620 RNW 17",
+                "D169A": "OVERFLY D169A TURN RIGHT TRK 034 INTERCEPT RADIAL 349 FROM",
+                "JIL": "JIL SPEED 185 TRK 349 VECTORS FAF FI17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "JIL",
+                    "fixes": {
+                        "JIL": "JIL AT OR ABOVE 6400",
+                        "D349G": "D349G TRK 034 UNTIL 4.4 FROM D349G TURN LEFT DIRECT",
+                        "D169K": "D169K AT OR ABOVE 3090"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR17",
+            "fixes": {
+                "FF17": "FF17 3090 RNW 17 TRK 164 UNTIL 440 TURN RIGHT TRK 029 INTERCEPT RADIAL 344 FROM",
+                "JIL": "JIL SPEED 200 TRK 344 VECTORS FAF FF17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "JIL",
+                    "fixes": {
+                        "JIL": "JIL AT OR ABOVE 6400",
+                        "D344G": "D344G AT OR ABOVE 3090 TRK 299 UNTIL 4.4 FROM D344G"
+                    }
+                }
+            ]
+        }
+    ]
+}

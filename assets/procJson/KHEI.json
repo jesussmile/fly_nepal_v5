@@ -1,0 +1,90 @@
+{
+    "fixes": [
+        {
+            "name": "DREST",
+            "lat": 46.07832221666666,
+            "lon": 102.74380556666667
+        },
+        {
+            "name": "EVICT",
+            "lat": 46.173366666666666,
+            "lon": 102.87821111666666
+        },
+        {
+            "name": "HAYNI",
+            "lat": 46.14293611666667,
+            "lon": 102.83516388333334
+        },
+        {
+            "name": "IBOXE",
+            "lat": 45.880775,
+            "lon": 102.46656943333333
+        },
+        {
+            "name": "JELRO",
+            "lat": 45.812175,
+            "lon": 102.86304443333333
+        },
+        {
+            "name": "KAKUH",
+            "lat": 45.952758333333335,
+            "lon": 102.56728888333333
+        },
+        {
+            "name": "SISAE",
+            "lat": 46.046430566666665,
+            "lon": 102.69885833333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 17",
+        "RNW 30",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "EVICT": "EVICT AT OR ABOVE 5000",
+                "DREST": "DREST 4300",
+                "SISAE": "SISAE AT OR ABOVE 3440 RNW 12 TRK 128 UNTIL 3200 TURN RIGHT DIRECT",
+                "JELRO": "OVERFLY JELRO AT OR ABOVE 9000 HOLD AT JELRO RIGHT TURN INBOUNDCOURSE 175 LEGDIST 7 FAF DREST MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "EVICT",
+                    "fixes": {
+                        "EVICT": "EVICT RIGHT TURN INBOUNDCOURSE 127 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IBOXE": "IBOXE AT OR ABOVE 5000",
+                "KAKUH": "KAKUH 4300 RNW 30 TRK 308 UNTIL 2956",
+                "HAYNI": "OVERFLY HAYNI AT OR ABOVE 6000 HOLD AT HAYNI LEFT TURN INBOUNDCOURSE 175 LEGDIST 6 FAF KAKUH MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "HAYNI",
+                    "fixes": {
+                        "HAYNI": "HAYNI",
+                        "IBOXE": "OVERFLY IBOXE AT OR ABOVE 5000 HOLD AT IBOXE RIGHT TURN INBOUNDCOURSE 308 ALT 5000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "JELRO",
+                    "fixes": {
+                        "JELRO": "JELRO",
+                        "IBOXE": "OVERFLY IBOXE AT OR ABOVE 5000 HOLD AT IBOXE RIGHT TURN INBOUNDCOURSE 308 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

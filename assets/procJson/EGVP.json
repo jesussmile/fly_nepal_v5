@@ -1,0 +1,140 @@
+{
+    "fixes": [
+        {
+            "name": "ELWAC",
+            "lat": 51.15841388333333,
+            "lon": 1.3858277833333332
+        },
+        {
+            "name": "NUFIR",
+            "lat": 51.18191388333333,
+            "lon": 1.4476583333333333
+        },
+        {
+            "name": "SUXKO",
+            "lat": 51.02554166666667,
+            "lon": 1.551525
+        },
+        {
+            "name": "VP26A",
+            "lat": 51.21263056666667,
+            "lon": 1.3243055666666668
+        },
+        {
+            "name": "VP26F",
+            "lat": 51.15603333333333,
+            "lon": 1.4214277833333333
+        },
+        {
+            "name": "VP26I",
+            "lat": 51.16294166666667,
+            "lon": 1.3161055666666668
+        },
+        {
+            "name": "VP35A",
+            "lat": 50.98744166666667,
+            "lon": 1.6507472166666666
+        },
+        {
+            "name": "VP35F",
+            "lat": 51.0479,
+            "lon": 1.5555944333333334
+        },
+        {
+            "name": "VP35I",
+            "lat": 50.99514443333333,
+            "lon": 1.5459444333333334
+        },
+        {
+            "name": "VPM01",
+            "lat": 51.16481666666667,
+            "lon": 1.5770583333333335
+        },
+        {
+            "name": "VPM03",
+            "lat": 51.20571111666667,
+            "lon": 1.4297333333333333
+        },
+        {
+            "name": "VPN00",
+            "lat": 51.17248333333333,
+            "lon": 1.5784638833333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 08",
+        "RNW 17",
+        "RNW 22",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "ELWAC",
+            "rnw": "08",
+            "fixes": {
+                "ELWAC": "ELWAC 2300"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NUFIR",
+            "rnw": "35",
+            "fixes": {
+                "VPN00": "VPN00 SPEED 100",
+                "NUFIR": "NUFIR 2300 SPEED 100"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SUXKO",
+            "rnw": "17",
+            "fixes": {
+                "SUXKO": "SUXKO 2300"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVZ26",
+            "fixes": {
+                "VP26I": "VP26I 2000 SPEED 140",
+                "VP26F": "VP26F 2000 RNW 26 TRK 264 UNTIL 1000 TURN RIGHT DIRECT",
+                "VPM03": "VPM03 SPEED 130",
+                "VP26A": "OVERFLY VP26A SPEED 150 HOLD AT VP26A LEFT TURN INBOUNDCOURSE 174 ALT 2300 SPEED 150 LEGTIME 1 FAF VP26F MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "VP26A",
+                    "fixes": {
+                        "VP26A": "VP26A AT OR ABOVE 2300 SPEED 150"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "VP35I": "VP35I 2000 SPEED 140",
+                "VP35F": "VP35F 2000 RNW 35",
+                "VPM01": "OVERFLY VPM01 AT OR ABOVE 1300 TURN RIGHT DIRECT",
+                "VPM03": "VPM03 SPEED 130",
+                "VP26A": "VP26A AT OR ABOVE 2300 SPEED 150 HOLD AT VP26A LEFT TURN INBOUNDCOURSE 174 ALT 2300 SPEED 150 LEGTIME 1 FAF VP35F MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "VP35A",
+                    "fixes": {
+                        "VP35A": "VP35A AT OR ABOVE 2300 SPEED 150"
+                    }
+                }
+            ]
+        }
+    ]
+}

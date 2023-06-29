@@ -1,0 +1,201 @@
+{
+    "fixes": [
+        {
+            "name": "MAMOR",
+            "lat": 48.88583333333333,
+            "lon": 12.222222216666667
+        },
+        {
+            "name": "MS090",
+            "lat": 48.890725,
+            "lon": 12.640697216666666
+        },
+        {
+            "name": "MS091",
+            "lat": 48.856861116666664,
+            "lon": 12.667952783333334
+        },
+        {
+            "name": "MS092",
+            "lat": 48.794561116666664,
+            "lon": 12.620008333333333
+        },
+        {
+            "name": "MS093",
+            "lat": 48.885730566666666,
+            "lon": 12.701094433333333
+        },
+        {
+            "name": "MS094",
+            "lat": 48.91855278333333,
+            "lon": 12.724505566666666
+        },
+        {
+            "name": "MS095",
+            "lat": 48.88769166666667,
+            "lon": 12.677416666666666
+        },
+        {
+            "name": "MS270",
+            "lat": 48.940958333333334,
+            "lon": 12.360452783333333
+        },
+        {
+            "name": "MS271",
+            "lat": 48.94593888333333,
+            "lon": 12.34165
+        },
+        {
+            "name": "MS272",
+            "lat": 48.9753,
+            "lon": 12.356169433333333
+        },
+        {
+            "name": "MS273",
+            "lat": 48.913322216666664,
+            "lon": 12.310955566666667
+        },
+        {
+            "name": "MS274",
+            "lat": 48.862113883333336,
+            "lon": 12.326338883333333
+        },
+        {
+            "name": "MS439",
+            "lat": 48.87395278333334,
+            "lon": 12.84185
+        },
+        {
+            "name": "MS459",
+            "lat": 48.772030566666665,
+            "lon": 12.822138883333333
+        },
+        {
+            "name": "MS491",
+            "lat": 48.911991666666665,
+            "lon": 12.378880566666666
+        },
+        {
+            "name": "MS492",
+            "lat": 48.940961116666664,
+            "lon": 12.364480566666666
+        },
+        {
+            "name": "NEGOB",
+            "lat": 48.88130278333333,
+            "lon": 12.754261116666667
+        },
+        {
+            "name": "RDG",
+            "lat": 49.040269433333336,
+            "lon": 12.526547216666666
+        },
+        {
+            "name": "STAUB",
+            "lat": 48.78573888333333,
+            "lon": 12.658047216666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "MAMO3R",
+            "rnw": "09",
+            "fixes": {
+                "MS090": "OVERFLY MS090 TURN RIGHT DIRECT",
+                "MS091": "MS091",
+                "MS092": "MS092",
+                "MAMOR": "MAMOR"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MAMO4G",
+            "rnw": "27",
+            "fixes": {
+                "MS271": "MS271",
+                "MAMOR": "MAMOR 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RDG4G",
+            "rnw": "27",
+            "fixes": {
+                "MS270": "OVERFLY MS270 TURN RIGHT DIRECT",
+                "MS272": "MS272",
+                "RDG": "RDG 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RDG4R",
+            "rnw": "09",
+            "fixes": {
+                "MS093": "OVERFLY MS093 TURN LEFT DIRECT",
+                "MS094": "MS094",
+                "RDG": "RDG 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "STAU3G",
+            "rnw": "27",
+            "fixes": {
+                "MS270": "OVERFLY MS270 TURN LEFT DIRECT",
+                "MS273": "MS273",
+                "MS274": "MS274",
+                "STAUB": "STAUB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "STAU4R",
+            "rnw": "09",
+            "fixes": {
+                "MS095": "MS095",
+                "STAUB": "STAUB 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "MS439": "MS439 AT OR ABOVE 4500",
+                "NEGOB": "NEGOB 4000 RNW 27",
+                "MS491": "OVERFLY MS491 AT OR ABOVE 1460 TRK 274 UNTIL 3500 TURN RIGHT DIRECT",
+                "MS492": "MS492",
+                "RDG": "RDG 6000 FAF NEGOB MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "RDG",
+                    "fixes": {
+                        "RDG": "RDG AT OR ABOVE 6000",
+                        "STAUB": "STAUB AT OR ABOVE 5000",
+                        "MS459": "MS459 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "STAUB",
+                    "fixes": {
+                        "STAUB": "STAUB AT OR ABOVE 5000",
+                        "MS459": "MS459 AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

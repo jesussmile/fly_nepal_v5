@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "D053E",
+            "lat": 36.79292221666667,
+            "lon": 24.606466666666666
+        },
+        {
+            "name": "FN265",
+            "lat": 36.699027783333335,
+            "lon": 24.596622216666667
+        },
+        {
+            "name": "MD202",
+            "lat": 36.70250278333334,
+            "lon": 24.492197216666668
+        },
+        {
+            "name": "MIL",
+            "lat": 36.747508333333336,
+            "lon": 24.519455566666668
+        },
+        {
+            "name": "MLO",
+            "lat": 36.697347216666664,
+            "lon": 24.472291666666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "MIL1A",
+            "rnw": "08",
+            "fixes": {
+                "MIL": "MIL AT OR ABOVE 4000 SPEED 185"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MIL1B",
+            "rnw": "26",
+            "fixes": {
+                "MIL": "MIL AT OR ABOVE 4000 SPEED 185"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBDB08",
+            "fixes": {
+                "FN265": "FN265 2400",
+                "MLO": "MLO 1500 RNW 08 TRK 288 UNTIL 2400 TURN RIGHT DIRECT MLO 4000 SPEED 150 HOLD AT MLO RIGHT TURN INBOUNDCOURSE 067 SPEED 170 LEGTIME 1 FAF FN265 MAP MLO"
+            },
+            "transitions": [
+                {
+                    "name": "MLO",
+                    "fixes": {
+                        "MLO": "MLO AT OR ABOVE 4000 TRK 067 UNTIL 6.0 FROM MLO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB26",
+            "fixes": {
+                "FN265": "FN265 2400",
+                "MLO": "MLO 1500 RNW 26 TRK 288 UNTIL 2400 TURN RIGHT DIRECT MLO 4000 SPEED 150 HOLD AT MLO RIGHT TURN INBOUNDCOURSE 067 SPEED 170 LEGTIME 1 FAF FN265 MAP MLO"
+            },
+            "transitions": [
+                {
+                    "name": "MLO",
+                    "fixes": {
+                        "MLO": "MLO AT OR ABOVE 4000 TRK 067 UNTIL 6.0 FROM MLO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM08",
+            "fixes": {
+                "MIL": "MIL 2000 MIL TURN LEFT DIRECT MIL 4000 SPEED 150 HOLD AT MIL RIGHT TURN INBOUNDCOURSE 035 LEGTIME 1 FAF MIL MAP MD202",
+                "MD202": "MD202 1500 RNW 08 TRK 202 UNTIL 8.0 FROM"
+            },
+            "transitions": [
+                {
+                    "name": "MIL",
+                    "fixes": {
+                        "MIL": "MIL AT OR ABOVE 4000 TRK 035 UNTIL 5.0 FROM MIL SPEED 140 TURN RIGHT DIRECT",
+                        "D053E": "D053E AT OR ABOVE 2800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM26",
+            "fixes": {
+                "MIL": "MIL 2000 MIL TURN LEFT DIRECT MIL 4000 SPEED 150 HOLD AT MIL RIGHT TURN INBOUNDCOURSE 035 LEGTIME 1 FAF MIL MAP MD202",
+                "MD202": "MD202 1500 RNW 26 TRK 202 UNTIL 8.0 FROM"
+            },
+            "transitions": [
+                {
+                    "name": "MIL",
+                    "fixes": {
+                        "MIL": "MIL AT OR ABOVE 4000 TRK 035 UNTIL 5.0 FROM MIL SPEED 140 TURN RIGHT DIRECT",
+                        "D053E": "D053E AT OR ABOVE 2800"
+                    }
+                }
+            ]
+        }
+    ]
+}

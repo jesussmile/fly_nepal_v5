@@ -1,0 +1,187 @@
+{
+    "fixes": [
+        {
+            "name": "BAE",
+            "lat": 43.116852783333336,
+            "lon": 88.28434443333333
+        },
+        {
+            "name": "CORIR",
+            "lat": 43.46735278333333,
+            "lon": 88.39236388333333
+        },
+        {
+            "name": "DODGE",
+            "lat": 43.443280566666665,
+            "lon": 88.57725833333333
+        },
+        {
+            "name": "DREAR",
+            "lat": 43.138108333333335,
+            "lon": 89.04991666666666
+        },
+        {
+            "name": "EGACA",
+            "lat": 43.336375,
+            "lon": 88.73801388333334
+        },
+        {
+            "name": "FIBVU",
+            "lat": 43.238447216666664,
+            "lon": 88.77941111666667
+        },
+        {
+            "name": "GOPBE",
+            "lat": 43.408577783333335,
+            "lon": 88.83962778333333
+        },
+        {
+            "name": "HOMNY",
+            "lat": 43.51728333333333,
+            "lon": 88.66115278333334
+        },
+        {
+            "name": "NUNEF",
+            "lat": 43.61445,
+            "lon": 88.61966388333333
+        },
+        {
+            "name": "OSH",
+            "lat": 43.990433333333335,
+            "lon": 88.55593333333333
+        },
+        {
+            "name": "PEBIY",
+            "lat": 43.390458333333335,
+            "lon": 88.97473611666666
+        },
+        {
+            "name": "RANDO",
+            "lat": 43.482894433333335,
+            "lon": 89.02959166666666
+        },
+        {
+            "name": "SOTTE",
+            "lat": 43.639127783333336,
+            "lon": 88.72925556666667
+        },
+        {
+            "name": "WAITS",
+            "lat": 43.127302783333334,
+            "lon": 88.63753888333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 08",
+        "RNW 20",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "FIBVU": "FIBVU AT OR ABOVE 3000",
+                "EGACA": "EGACA 2700 RNW 02",
+                "NUNEF": "OVERFLY NUNEF AT OR ABOVE 3000 HOLD AT NUNEF RIGHT TURN INBOUNDCOURSE 198 LEGDIST 4 FAF EGACA MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "DREAR",
+                    "fixes": {
+                        "DREAR": "DREAR"
+                    }
+                },
+                {
+                    "name": "FIBVU",
+                    "fixes": {
+                        "FIBVU": "FIBVU RIGHT TURN INBOUNDCOURSE 018 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WAITS",
+                    "fixes": {
+                        "WAITS": "WAITS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "PEBIY": "PEBIY AT OR ABOVE 3000",
+                "GOPBE": "GOPBE 2700 RNW 08 TRK 081 UNTIL 1334",
+                "CORIR": "OVERFLY CORIR AT OR ABOVE 3000 HOLD AT CORIR RIGHT TURN INBOUNDCOURSE 261 LEGDIST 4 FAF GOPBE MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "DREAR",
+                    "fixes": {
+                        "DREAR": "DREAR"
+                    }
+                },
+                {
+                    "name": "PEBIY",
+                    "fixes": {
+                        "PEBIY": "PEBIY RIGHT TURN INBOUNDCOURSE 081 ALT 3000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "RANDO",
+                    "fixes": {
+                        "RANDO": "RANDO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "NUNEF": "NUNEF AT OR ABOVE 3000",
+                "HOMNY": "HOMNY 2700 RNW 20",
+                "FIBVU": "OVERFLY FIBVU AT OR ABOVE 3000 HOLD AT FIBVU RIGHT TURN INBOUNDCOURSE 018 LEGDIST 4 FAF HOMNY MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "BAE",
+                    "fixes": {
+                        "BAE": "BAE",
+                        "NUNEF": "OVERFLY NUNEF AT OR ABOVE 3000 HOLD AT NUNEF RIGHT TURN INBOUNDCOURSE 198 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "OSH",
+                    "fixes": {
+                        "OSH": "OSH"
+                    }
+                },
+                {
+                    "name": "RANDO",
+                    "fixes": {
+                        "RANDO": "RANDO",
+                        "SOTTE": "SOTTE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "CORIR": "CORIR AT OR ABOVE 3000",
+                "DODGE": "DODGE 2700 RNW 26 TRK 261 UNTIL 1334",
+                "PEBIY": "OVERFLY PEBIY AT OR ABOVE 3000 HOLD AT PEBIY RIGHT TURN INBOUNDCOURSE 081 LEGDIST 5 FAF DODGE MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "RANDO",
+                    "fixes": {
+                        "RANDO": "RANDO",
+                        "CORIR": "CORIR AT OR ABOVE 3000 HOLD AT CORIR RIGHT TURN INBOUNDCOURSE 261 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

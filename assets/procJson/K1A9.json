@@ -1,0 +1,63 @@
+{
+    "fixes": [
+        {
+            "name": "ANWAF",
+            "lat": 32.435658333333336,
+            "lon": 86.75500278333334
+        },
+        {
+            "name": "EKUSY",
+            "lat": 32.43739443333333,
+            "lon": 86.62253611666667
+        },
+        {
+            "name": "JEMER",
+            "lat": 32.440255566666664,
+            "lon": 86.37674166666666
+        },
+        {
+            "name": "ZOREL",
+            "lat": 32.442116666666664,
+            "lon": 86.18890556666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "ANWAF": "ANWAF AT OR ABOVE 3100 OVERFLY ANWAF AT OR ABOVE 3100 HOLD AT ANWAF RIGHT TURN INBOUNDCOURSE 092 LEGDIST 4 FAF EKUSY MAP RNW 09",
+                "EKUSY": "EKUSY 1900 RNW 09 TRK 092 UNTIL 625 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ANWAF",
+                    "fixes": {
+                        "ANWAF": "ANWAF RIGHT TURN INBOUNDCOURSE 092 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "ZOREL": "ZOREL AT OR ABOVE 3000",
+                "JEMER": "JEMER 2300 RNW 27 TRK 272 UNTIL 496",
+                "ANWAF": "OVERFLY ANWAF AT OR ABOVE 3100 HOLD AT ANWAF RIGHT TURN INBOUNDCOURSE 092 LEGDIST 4 FAF JEMER MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "ZOREL",
+                    "fixes": {
+                        "ZOREL": "ZOREL RIGHT TURN INBOUNDCOURSE 272 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,282 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 53.844667683333334,
+            "lon": 19.08092651666667
+        },
+        {
+            "name": "AF002",
+            "lat": 53.86769038333333,
+            "lon": 18.97742106666667
+        },
+        {
+            "name": "AF003",
+            "lat": 53.910570066666665,
+            "lon": 18.8939786
+        },
+        {
+            "name": "AF004",
+            "lat": 53.86373638333333,
+            "lon": 19.28589865
+        },
+        {
+            "name": "AF005",
+            "lat": 53.899696033333335,
+            "lon": 19.365120883333333
+        },
+        {
+            "name": "AF006",
+            "lat": 53.94858346666667,
+            "lon": 19.421027966666667
+        },
+        {
+            "name": "CI25",
+            "lat": 54.049958333333336,
+            "lon": 19.343894433333332
+        },
+        {
+            "name": "CT25",
+            "lat": 54.06908333333333,
+            "lon": 19.439416666666666
+        },
+        {
+            "name": "D069R",
+            "lat": 54.09677778333333,
+            "lon": 19.631833333333333
+        },
+        {
+            "name": "D089K",
+            "lat": 54.00541388333333,
+            "lon": 19.44656111666667
+        },
+        {
+            "name": "D092G",
+            "lat": 54.01362221666667,
+            "lon": 19.346244433333332
+        },
+        {
+            "name": "D104G",
+            "lat": 53.991855566666665,
+            "lon": 19.338258333333332
+        },
+        {
+            "name": "D163K",
+            "lat": 53.84472221666667,
+            "lon": 19.19138888333333
+        },
+        {
+            "name": "D245K",
+            "lat": 53.96801943333333,
+            "lon": 18.842316666666665
+        },
+        {
+            "name": "FI25",
+            "lat": 54.043694433333336,
+            "lon": 19.288333333333334
+        },
+        {
+            "name": "FN25",
+            "lat": 54.04623611666667,
+            "lon": 19.308797216666665
+        },
+        {
+            "name": "FT07",
+            "lat": 54.01083333333333,
+            "lon": 18.969722216666668
+        },
+        {
+            "name": "FT25",
+            "lat": 54.05111111666667,
+            "lon": 19.315833333333334
+        },
+        {
+            "name": "MT07",
+            "lat": 54.02261111666667,
+            "lon": 19.109611116666667
+        },
+        {
+            "name": "MT25",
+            "lat": 54.028972216666666,
+            "lon": 19.164972216666666
+        },
+        {
+            "name": "NB",
+            "lat": 54.03030556666667,
+            "lon": 19.168805566666666
+        },
+        {
+            "name": "RW25",
+            "lat": 54.028677783333336,
+            "lon": 19.15435
+        },
+        {
+            "name": "TMB",
+            "lat": 54.02494443333333,
+            "lon": 19.137555566666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY25",
+            "fixes": {
+                "CI25": "CI25 AT OR ABOVE 1840",
+                "FI25": "FI25 1640 RNW 25 TRK 252 UNTIL 1020 TURN LEFT DIRECT",
+                "TMB": "TMB 2500 FAF FI25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "TMB1",
+                    "fixes": {
+                        "TMB": "TMB AT OR ABOVE 2500 TRK 104 UNTIL 8.0 FROM TMB"
+                    }
+                },
+                {
+                    "name": "TMB2",
+                    "fixes": {
+                        "TMB": "TMB AT OR ABOVE 2500 TRK 092 UNTIL 8.0 FROM TMB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ25",
+            "fixes": {
+                "CI25": "CI25 AT OR ABOVE 1840",
+                "FI25": "FI25 1640 RNW 25 TRK 252 UNTIL 1020 TURN LEFT DIRECT",
+                "NB": "NB 2500 FAF FI25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "NB1",
+                    "fixes": {
+                        "NB": "NB AT OR ABOVE 2500",
+                        "D104G": "OVERFLY D104G AT OR ABOVE 1840"
+                    }
+                },
+                {
+                    "name": "NB2",
+                    "fixes": {
+                        "NB": "NB AT OR ABOVE 2500",
+                        "D092G": "OVERFLY D092G AT OR ABOVE 1840"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FN25": "FN25 1840",
+                "NB": "NB 234 RNW 25 TRK 252 UNTIL 1020 TURN LEFT DIRECT NB 2500 FAF FN25 MAP NB"
+            },
+            "transitions": [
+                {
+                    "name": "NB1",
+                    "fixes": {
+                        "NB": "NB AT OR ABOVE 2500 TRK 104 UNTIL 5.3 FROM NB"
+                    }
+                },
+                {
+                    "name": "NB2",
+                    "fixes": {
+                        "NB": "NB AT OR ABOVE 2500 TRK 092 UNTIL 5.3 FROM NB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY07",
+            "fixes": {
+                "FT07": "FT07 1750",
+                "MT07": "MT07 156 RNW 07 TRK 075 UNTIL 1000 TURN RIGHT TRK 193 INTERCEPT RADIAL 163 TO",
+                "D163K": "D163K D163K 4000 FAF FT07 MAP MT07"
+            },
+            "transitions": [
+                {
+                    "name": "D163K",
+                    "fixes": {
+                        "D163K": "D163K",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D245K": "D245K AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORZ07",
+            "fixes": {
+                "FT07": "FT07 1750",
+                "MT07": "MT07 156 RNW 07 TRK 075 UNTIL 1000 TURN RIGHT DIRECT",
+                "TMB": "TMB 2500 FAF FT07 MAP MT07"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORX25",
+            "fixes": {
+                "CT25": "CT25 AT OR ABOVE 2500",
+                "FT25": "FT25 1950",
+                "MT25": "MT25 186 RNW 25 TRK 249 UNTIL 1000 TURN LEFT DIRECT",
+                "D069R": "D069R 4000 FAF FT25 MAP MT25"
+            },
+            "transitions": [
+                {
+                    "name": "D069R",
+                    "fixes": {
+                        "D069R": "D069R"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY25",
+            "fixes": {
+                "FT25": "FT25 1950",
+                "MT25": "MT25 186 RNW 25 TRK 249 UNTIL 1000 TURN LEFT TRK 133 INTERCEPT RADIAL 163 TO",
+                "D163K": "D163K D163K 4000 FAF FT25 MAP MT25"
+            },
+            "transitions": [
+                {
+                    "name": "D163K",
+                    "fixes": {
+                        "D163K": "D163K",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "AF006": "AF006",
+                        "D089K": "D089K AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORZ25",
+            "fixes": {
+                "FT25": "FT25 1950",
+                "MT25": "MT25 186 RNW 25 TRK 249 UNTIL 1000 TURN LEFT DIRECT",
+                "TMB": "TMB 2500 FAF FT25 MAP MT25"
+            },
+            "transitions": [
+                {
+                    "name": "TMB1",
+                    "fixes": {
+                        "TMB": "TMB AT OR ABOVE 2500 TRK 095 UNTIL 8.0 FROM TMB"
+                    }
+                },
+                {
+                    "name": "TMB2",
+                    "fixes": {
+                        "TMB": "TMB AT OR ABOVE 2500 TRK 084 UNTIL 8.0 FROM TMB"
+                    }
+                }
+            ]
+        }
+    ]
+}

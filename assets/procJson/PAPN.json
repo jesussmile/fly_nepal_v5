@@ -1,0 +1,129 @@
+{
+    "fixes": [
+        {
+            "name": "FEDBO",
+            "lat": 57.57997221666667,
+            "lon": 157.88989166666667
+        },
+        {
+            "name": "FILAD",
+            "lat": 57.580272216666664,
+            "lon": 157.73510278333333
+        },
+        {
+            "name": "HUBID",
+            "lat": 57.66303333333333,
+            "lon": 157.22225278333335
+        },
+        {
+            "name": "OBUKE",
+            "lat": 57.48211666666667,
+            "lon": 158.11695278333335
+        },
+        {
+            "name": "OCENO",
+            "lat": 57.57988888333333,
+            "lon": 157.22306388333334
+        },
+        {
+            "name": "RAPUE",
+            "lat": 57.48011388333333,
+            "lon": 157.22403333333332
+        },
+        {
+            "name": "TANIE",
+            "lat": 57.96973611666667,
+            "lon": 158.21280556666667
+        },
+        {
+            "name": "WOBES",
+            "lat": 57.580272216666664,
+            "lon": 157.40881111666667
+        },
+        {
+            "name": "ZILKO",
+            "lat": 57.683086116666665,
+            "lon": 157.90979721666668
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "ZILKO1",
+            "rnw": "24",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 07",
+                    "fixes": {
+                        "RNW 07": "RNW 07",
+                        "WOBES": "OVERFLY WOBES SPEED 200 TURN LEFT DIRECT",
+                        "ZILKO": "ZILKO AT OR ABOVE 3000 SPEED 200"
+                    }
+                },
+                {
+                    "rwy": "RNW 25",
+                    "fixes": {
+                        "RNW 25": "RNW 25",
+                        "FILAD": "OVERFLY FILAD",
+                        "ZILKO": "ZILKO AT OR ABOVE 3000"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "FEDBO": "FEDBO AT OR ABOVE 2000",
+                "FILAD": "FILAD 1700 RNW 07 TRK 073 UNTIL 457 TURN LEFT DIRECT",
+                "ZILKO": "OVERFLY ZILKO AT OR ABOVE 2500 HOLD AT ZILKO RIGHT TURN INBOUNDCOURSE 191 LEGDIST 4 FAF FILAD MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "OBUKE",
+                    "fixes": {
+                        "OBUKE": "OBUKE"
+                    }
+                },
+                {
+                    "name": "TANIE",
+                    "fixes": {
+                        "TANIE": "TANIE",
+                        "ZILKO": "ZILKO AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "OCENO": "OCENO AT OR ABOVE 2000",
+                "WOBES": "WOBES 1700 RNW 25 TRK 253 UNTIL 457",
+                "ZILKO": "OVERFLY ZILKO AT OR ABOVE 2500 HOLD AT ZILKO RIGHT TURN INBOUNDCOURSE 191 LEGDIST 4 FAF WOBES MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "OBUKE",
+                    "fixes": {
+                        "OBUKE": "OBUKE",
+                        "RAPUE": "RAPUE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "ZILKO",
+                    "fixes": {
+                        "ZILKO": "ZILKO",
+                        "HUBID": "HUBID AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

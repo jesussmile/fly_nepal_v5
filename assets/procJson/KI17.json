@@ -1,0 +1,200 @@
+{
+    "fixes": [
+        {
+            "name": "BONEE",
+            "lat": 40.052458333333334,
+            "lon": 83.94893056666666
+        },
+        {
+            "name": "CHOWE",
+            "lat": 40.107852783333335,
+            "lon": 84.34388611666667
+        },
+        {
+            "name": "DQN",
+            "lat": 40.016444433333334,
+            "lon": 84.39689721666667
+        },
+        {
+            "name": "IMOSE",
+            "lat": 40.21375,
+            "lon": 84.05925556666666
+        },
+        {
+            "name": "JANEE",
+            "lat": 40.208133333333336,
+            "lon": 84.20916666666666
+        },
+        {
+            "name": "MANUE",
+            "lat": 40.115102783333334,
+            "lon": 84.55724721666667
+        },
+        {
+            "name": "OKONE",
+            "lat": 39.95371111666667,
+            "lon": 84.50246943333333
+        },
+        {
+            "name": "PI001",
+            "lat": 39.96128655,
+            "lon": 84.42167478333333
+        },
+        {
+            "name": "PI002",
+            "lat": 39.92983963333333,
+            "lon": 84.5056745
+        },
+        {
+            "name": "PI003",
+            "lat": 39.85883651666666,
+            "lon": 84.46758438333333
+        },
+        {
+            "name": "ROD",
+            "lat": 40.2878,
+            "lon": 84.04309721666667
+        },
+        {
+            "name": "ROSSY",
+            "lat": 40.268825,
+            "lon": 84.60170556666667
+        },
+        {
+            "name": "TABOE",
+            "lat": 40.142752783333336,
+            "lon": 84.41888333333333
+        },
+        {
+            "name": "WOKAX",
+            "lat": 40.16432221666667,
+            "lon": 84.30011666666667
+        },
+        {
+            "name": "ZALAD",
+            "lat": 40.1866,
+            "lon": 84.19748333333334
+        },
+        {
+            "name": "ZANAP",
+            "lat": 40.162202783333335,
+            "lon": 84.31229443333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "MANUE": "MANUE AT OR ABOVE 2700",
+                "TABOE": "TABOE 2600 RNW 08 TRK 081 UNTIL 1393",
+                "IMOSE": "OVERFLY IMOSE AT OR ABOVE 2700 HOLD AT IMOSE RIGHT TURN INBOUNDCOURSE 262 LEGDIST 4 FAF TABOE MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "MANUE",
+                    "fixes": {
+                        "MANUE": "MANUE RIGHT TURN INBOUNDCOURSE 081 ALT 2700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "OKONE",
+                    "fixes": {
+                        "OKONE": "OKONE"
+                    }
+                },
+                {
+                    "name": "ROSSY",
+                    "fixes": {
+                        "ROSSY": "ROSSY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "IMOSE": "IMOSE AT OR ABOVE 2800",
+                "ZALAD": "ZALAD 2600 RNW 26 TRK 262 UNTIL 1393",
+                "MANUE": "OVERFLY MANUE AT OR ABOVE 2700 HOLD AT MANUE RIGHT TURN INBOUNDCOURSE 081 LEGDIST 4 FAF ZALAD MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BONEE",
+                    "fixes": {
+                        "BONEE": "BONEE"
+                    }
+                },
+                {
+                    "name": "IMOSE",
+                    "fixes": {
+                        "IMOSE": "IMOSE RIGHT TURN INBOUNDCOURSE 262 ALT 2800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ROD",
+                    "fixes": {
+                        "ROD": "ROD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26",
+            "fixes": {
+                "ROD": "ROD AT OR ABOVE 2800 ROD HOLD AT ROD RIGHT TURN INBOUNDCOURSE 243 LEGTIME 1 FAF JANEE MAP WOKAX",
+                "JANEE": "JANEE 2600",
+                "WOKAX": "WOKAX 1022 RNW 26 TRK 243 UNTIL 3000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ROD",
+                    "fixes": {
+                        "ROD": "ROD RIGHT TURN INBOUNDCOURSE 243 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA08",
+            "fixes": {
+                "DQN": "DQN 3000 DQN AT OR ABOVE 3000 HOLD AT DQN LEFT TURN INBOUNDCOURSE 025 LEGTIME 1 FAF DQN MAP ZANAP",
+                "CHOWE": "CHOWE AT OR ABOVE 1880",
+                "ZANAP": "OVERFLY ZANAP 1880 RNW 08 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DQN",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA26",
+            "fixes": {
+                "DQN": "DQN 3000 DQN AT OR ABOVE 3000 HOLD AT DQN LEFT TURN INBOUNDCOURSE 025 LEGTIME 1 FAF DQN MAP ZANAP",
+                "CHOWE": "CHOWE AT OR ABOVE 1880",
+                "ZANAP": "OVERFLY ZANAP 1880 RNW 26 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DQN",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

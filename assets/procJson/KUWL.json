@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "CIBSO",
+            "lat": 39.8761,
+            "lon": 85.21814166666667
+        },
+        {
+            "name": "FF10",
+            "lat": 39.86527221666667,
+            "lon": 85.43872221666666
+        },
+        {
+            "name": "HAFHU",
+            "lat": 39.87789443333333,
+            "lon": 85.59708056666666
+        },
+        {
+            "name": "KOGDE",
+            "lat": 39.87726943333333,
+            "lon": 85.43298333333334
+        },
+        {
+            "name": "PI001",
+            "lat": 39.8708199,
+            "lon": 85.39390275
+        },
+        {
+            "name": "PI002",
+            "lat": 39.81282743333333,
+            "lon": 85.44874248333333
+        },
+        {
+            "name": "PI003",
+            "lat": 39.85369956666667,
+            "lon": 85.53326405
+        },
+        {
+            "name": "SADSE",
+            "lat": 39.876975,
+            "lon": 85.37173611666667
+        },
+        {
+            "name": "TASUY",
+            "lat": 39.87493056666667,
+            "lon": 85.05253611666667
+        },
+        {
+            "name": "TEYOB",
+            "lat": 39.876469433333334,
+            "lon": 85.27883611666667
+        },
+        {
+            "name": "UWLNB",
+            "lat": 39.879969433333336,
+            "lon": 85.31883333333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB10",
+            "fixes": {
+                "FF10": "FF10 2700 RNW 10",
+                "UWLNB": "OVERFLY UWLNB TRK 087 UNTIL 2700 TURN RIGHT DIRECT UWLNB HOLD AT UWLNB RIGHT TURN INBOUNDCOURSE 087 LEGTIME 1 FAF FF10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "UWL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "HAFHU": "HAFHU AT OR ABOVE 3000",
+                "KOGDE": "KOGDE 2600",
+                "SADSE": "SADSE AT OR ABOVE 1680 RNW 10 TRK 096 UNTIL 1407",
+                "TASUY": "OVERFLY TASUY AT OR ABOVE 3000 HOLD AT TASUY RIGHT TURN INBOUNDCOURSE 277 LEGDIST 4 FAF KOGDE MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "HAFHU",
+                    "fixes": {
+                        "HAFHU": "HAFHU RIGHT TURN INBOUNDCOURSE 096 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "TASUY": "TASUY AT OR ABOVE 3000",
+                "CIBSO": "CIBSO 2600",
+                "TEYOB": "TEYOB AT OR ABOVE 1700 RNW 28 TRK 276 UNTIL 1412",
+                "HAFHU": "OVERFLY HAFHU AT OR ABOVE 3000 HOLD AT HAFHU RIGHT TURN INBOUNDCOURSE 096 LEGDIST 4 FAF CIBSO MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "TASUY",
+                    "fixes": {
+                        "TASUY": "TASUY RIGHT TURN INBOUNDCOURSE 277 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

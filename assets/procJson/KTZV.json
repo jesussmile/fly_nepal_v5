@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "AHUCA",
+            "lat": 36.65753333333333,
+            "lon": 85.713275
+        },
+        {
+            "name": "CAVAS",
+            "lat": 36.88955,
+            "lon": 85.51516943333333
+        },
+        {
+            "name": "CENUD",
+            "lat": 36.94011943333334,
+            "lon": 85.39247778333333
+        },
+        {
+            "name": "DOHEP",
+            "lat": 36.79983333333333,
+            "lon": 85.59196111666667
+        },
+        {
+            "name": "GARVY",
+            "lat": 36.64906388333333,
+            "lon": 86.25549443333334
+        },
+        {
+            "name": "HARME",
+            "lat": 36.329286116666665,
+            "lon": 86.04251111666666
+        },
+        {
+            "name": "LVT",
+            "lat": 36.58450833333333,
+            "lon": 85.16662221666667
+        },
+        {
+            "name": "UCASO",
+            "lat": 36.54878888333333,
+            "lon": 85.80573611666667
+        },
+        {
+            "name": "UNTOW",
+            "lat": 36.69975556666667,
+            "lon": 85.67733333333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "UCASO": "UCASO AT OR ABOVE 4000",
+                "AHUCA": "AHUCA 2600",
+                "UNTOW": "UNTOW AT OR ABOVE 1640 RNW 04 TRK 038 UNTIL 1436",
+                "CAVAS": "OVERFLY CAVAS AT OR ABOVE 4000 HOLD AT CAVAS RIGHT TURN INBOUNDCOURSE 219 LEGDIST 4 FAF AHUCA MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "GARVY",
+                    "fixes": {
+                        "GARVY": "GARVY"
+                    }
+                },
+                {
+                    "name": "HARME",
+                    "fixes": {
+                        "HARME": "HARME"
+                    }
+                },
+                {
+                    "name": "LVT",
+                    "fixes": {
+                        "LVT": "LVT",
+                        "UCASO": "OVERFLY UCASO AT OR ABOVE 4000 HOLD AT UCASO RIGHT TURN INBOUNDCOURSE 038 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "CAVAS": "CAVAS AT OR ABOVE 4000",
+                "DOHEP": "DOHEP 2600 RNW 22 TRK 218 UNTIL 1385",
+                "UCASO": "OVERFLY UCASO AT OR ABOVE 4000 HOLD AT UCASO RIGHT TURN INBOUNDCOURSE 038 LEGDIST 4 FAF DOHEP MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "CAVAS",
+                    "fixes": {
+                        "CAVAS": "CAVAS RIGHT TURN INBOUNDCOURSE 219 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CENUD",
+                    "fixes": {
+                        "CENUD": "CENUD"
+                    }
+                }
+            ]
+        }
+    ]
+}

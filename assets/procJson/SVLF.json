@@ -1,0 +1,55 @@
+{
+    "fixes": [
+        {
+            "name": "FF19",
+            "lat": 8.325355566666667,
+            "lon": 72.27580833333333
+        },
+        {
+            "name": "LFA",
+            "lat": 8.241833333333334,
+            "lon": 72.26994443333334
+        },
+        {
+            "name": "PI001",
+            "lat": 8.30002455,
+            "lon": 72.27405663333333
+        },
+        {
+            "name": "PI002",
+            "lat": 8.35410925,
+            "lon": 72.22653483333333
+        },
+        {
+            "name": "PI003",
+            "lat": 8.408093833333334,
+            "lon": 72.28169681666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VOR19",
+            "fixes": {
+                "FF19": "FF19 1800 RNW 19",
+                "LFA": "LFA HDG 005 UNTIL 3500 TURN RIGHT DIRECT LFA AT OR ABOVE 5500 HOLD AT LFA LEFT TURN INBOUNDCOURSE 005 LEGTIME 1 FAF FF19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "LFA",
+                    "fixes": {
+                        "LFA": "LFA AT OR ABOVE 5500",
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

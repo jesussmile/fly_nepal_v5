@@ -1,0 +1,63 @@
+{
+    "fixes": [
+        {
+            "name": "CAVIK",
+            "lat": 34.90012221666667,
+            "lon": 89.523
+        },
+        {
+            "name": "FUSEL",
+            "lat": 34.71038888333333,
+            "lon": 89.51926666666667
+        },
+        {
+            "name": "MIENS",
+            "lat": 34.57685,
+            "lon": 89.51664721666667
+        },
+        {
+            "name": "WUSAP",
+            "lat": 35.03365278333333,
+            "lon": 89.52563888333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "WUSAP": "WUSAP AT OR ABOVE 3000 OVERFLY WUSAP AT OR ABOVE 3000 HOLD AT WUSAP RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF CAVIK MAP RNW 18",
+                "CAVIK": "CAVIK 2300 RNW 18 TRK 181 UNTIL 1060 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WUSAP",
+                    "fixes": {
+                        "WUSAP": "WUSAP RIGHT TURN INBOUNDCOURSE 181 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "MIENS": "MIENS AT OR ABOVE 3000",
+                "FUSEL": "FUSEL 2300 RNW 36 TRK 001 UNTIL 861",
+                "WUSAP": "OVERFLY WUSAP AT OR ABOVE 3000 HOLD AT WUSAP RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF FUSEL MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "MIENS",
+                    "fixes": {
+                        "MIENS": "MIENS RIGHT TURN INBOUNDCOURSE 001 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

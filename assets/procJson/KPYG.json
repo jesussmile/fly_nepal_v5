@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "INSIW",
+            "lat": 34.68533333333333,
+            "lon": 80.42826943333333
+        },
+        {
+            "name": "UVEWU",
+            "lat": 34.712752783333336,
+            "lon": 80.38818611666667
+        },
+        {
+            "name": "WITHE",
+            "lat": 34.63205,
+            "lon": 80.50603056666667
+        },
+        {
+            "name": "WOVEX",
+            "lat": 34.85118333333333,
+            "lon": 80.18515
+        },
+        {
+            "name": "ZIRSI",
+            "lat": 34.79805278333333,
+            "lon": 80.26321666666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "WITHE": "WITHE AT OR ABOVE 2400",
+                "INSIW": "INSIW 2200",
+                "UVEWU": "UVEWU AT OR ABOVE 1380 RNW 06 TRK 058 UNTIL 889",
+                "WOVEX": "OVERFLY WOVEX AT OR ABOVE 2400 HOLD AT WOVEX RIGHT TURN INBOUNDCOURSE 238 LEGDIST 4 FAF INSIW MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "WITHE",
+                    "fixes": {
+                        "WITHE": "WITHE RIGHT TURN INBOUNDCOURSE 058 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "WOVEX": "WOVEX AT OR ABOVE 2400",
+                "ZIRSI": "ZIRSI 2200 RNW 24 TRK 238 UNTIL 890",
+                "WITHE": "OVERFLY WITHE AT OR ABOVE 2400 HOLD AT WITHE RIGHT TURN INBOUNDCOURSE 058 LEGDIST 4 FAF ZIRSI MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "WOVEX",
+                    "fixes": {
+                        "WOVEX": "WOVEX RIGHT TURN INBOUNDCOURSE 238 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

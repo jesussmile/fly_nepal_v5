@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "ALVUG",
+            "lat": 53.55769166666666,
+            "lon": 56.036422216666665
+        },
+        {
+            "name": "BESIX",
+            "lat": 53.62933888333333,
+            "lon": 55.965325
+        },
+        {
+            "name": "DEBSI",
+            "lat": 53.486,
+            "lon": 56.10727778333333
+        },
+        {
+            "name": "GABUD",
+            "lat": 53.48860556666666,
+            "lon": 55.840436116666666
+        },
+        {
+            "name": "GADGU",
+            "lat": 53.43341111666667,
+            "lon": 55.684958333333334
+        },
+        {
+            "name": "IGVOK",
+            "lat": 53.382188883333335,
+            "lon": 55.54153611666667
+        },
+        {
+            "name": "KAXUM",
+            "lat": 53.31078888333333,
+            "lon": 55.61293056666667
+        },
+        {
+            "name": "LETIT",
+            "lat": 53.453541666666666,
+            "lon": 55.46990278333333
+        },
+        {
+            "name": "MAPUK",
+            "lat": 53.50689166666667,
+            "lon": 55.892155566666666
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ALVUG": "ALVUG AT OR ABOVE 1500",
+                "MAPUK": "MAPUK 1400",
+                "GABUD": "GABUD AT OR ABOVE 710 RNW 14 HDG 140 UNTIL 840 TURN RIGHT DIRECT",
+                "DEBSI": "OVERFLY DEBSI 2100 HOLD AT DEBSI RIGHT TURN INBOUNDCOURSE 050 LEGTIME 1 FAF MAPUK MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "BESIX",
+                    "fixes": {
+                        "BESIX": "BESIX SPEED 210"
+                    }
+                },
+                {
+                    "name": "DEBSI",
+                    "fixes": {
+                        "DEBSI": "DEBSI SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "IGVOK": "IGVOK AT OR ABOVE 1400",
+                "GADGU": "GADGU 1400 RNW 32",
+                "MAPUK": "OVERFLY MAPUK 1500 HOLD AT MAPUK RIGHT TURN INBOUNDCOURSE 320 ALT 1500 LEGTIME 1 FAF GADGU MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "KAXUM",
+                    "fixes": {
+                        "KAXUM": "KAXUM SPEED 210"
+                    }
+                },
+                {
+                    "name": "LETIT",
+                    "fixes": {
+                        "LETIT": "LETIT SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

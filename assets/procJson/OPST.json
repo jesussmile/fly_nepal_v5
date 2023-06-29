@@ -1,0 +1,283 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 32.52709616666667,
+            "lon": 74.10641348333333
+        },
+        {
+            "name": "AF002",
+            "lat": 32.48021836666667,
+            "lon": 74.11066731666666
+        },
+        {
+            "name": "AF003",
+            "lat": 32.43547183333333,
+            "lon": 74.1277655
+        },
+        {
+            "name": "AF004",
+            "lat": 32.3212363,
+            "lon": 74.30501488333333
+        },
+        {
+            "name": "AF005",
+            "lat": 32.33143691666667,
+            "lon": 74.25986038333333
+        },
+        {
+            "name": "AF006",
+            "lat": 32.320873066666664,
+            "lon": 74.30773486666666
+        },
+        {
+            "name": "AF007",
+            "lat": 32.331030283333334,
+            "lon": 74.26115058333333
+        },
+        {
+            "name": "BINEX",
+            "lat": 32.58527778333333,
+            "lon": 74.05833333333334
+        },
+        {
+            "name": "CI04",
+            "lat": 32.408802783333336,
+            "lon": 74.22358333333334
+        },
+        {
+            "name": "D210L",
+            "lat": 32.348575,
+            "lon": 74.21828611666666
+        },
+        {
+            "name": "D230L",
+            "lat": 32.39507221666667,
+            "lon": 74.15725833333333
+        },
+        {
+            "name": "FD04",
+            "lat": 32.43168333333333,
+            "lon": 74.25115833333334
+        },
+        {
+            "name": "FI04",
+            "lat": 32.433194433333334,
+            "lon": 74.25048888333333
+        },
+        {
+            "name": "ISKAR",
+            "lat": 32.42277778333333,
+            "lon": 74.445
+        },
+        {
+            "name": "RW04",
+            "lat": 32.5239,
+            "lon": 74.350725
+        },
+        {
+            "name": "SALNA",
+            "lat": 32.26833333333333,
+            "lon": 74.35805556666666
+        },
+        {
+            "name": "SLT",
+            "lat": 32.518594433333334,
+            "lon": 74.34339721666667
+        },
+        {
+            "name": "ST400",
+            "lat": 32.43666666666667,
+            "lon": 74.25416666666666
+        },
+        {
+            "name": "ST401",
+            "lat": 32.60358333333333,
+            "lon": 74.43902778333333
+        },
+        {
+            "name": "ST402",
+            "lat": 32.648944433333334,
+            "lon": 74.48944443333333
+        },
+        {
+            "name": "ST403",
+            "lat": 32.69444443333333,
+            "lon": 74.43194443333333
+        },
+        {
+            "name": "ST411",
+            "lat": 32.60333333333333,
+            "lon": 74.54694443333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [
+        {
+            "name": "BINE1A",
+            "rnw": "04",
+            "fixes": {
+                "BINEX": "BINEX"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BINE1B",
+            "rnw": "22",
+            "fixes": {
+                "BINEX": "BINEX"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BINE1C",
+            "rnw": "22",
+            "fixes": {
+                "SLT": "OVERFLY SLT AT OR ABOVE 6000",
+                "BINEX": "BINEX"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BINE1D",
+            "rnw": "04",
+            "fixes": {
+                "SLT": "OVERFLY SLT AT OR ABOVE 6000",
+                "BINEX": "BINEX"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BINE1E",
+            "rnw": "22",
+            "fixes": {
+                "SLT": "OVERFLY SLT AT OR ABOVE 6000 SPEED 210",
+                "BINEX": "BINEX"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SALN1A",
+            "rnw": "04",
+            "fixes": {
+                "SLT": "SLT SPEED 210",
+                "SALNA": "SALNA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SALN1B",
+            "rnw": "22",
+            "fixes": {
+                "SLT": "SLT",
+                "SALNA": "SALNA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SALN1C",
+            "rnw": "22",
+            "fixes": {
+                "SLT": "SLT TURN RIGHT TRK 260 INTERCEPT RADIAL 175 TO",
+                "SALNA": "SALNA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD04",
+            "fixes": {
+                "FD04": "FD04 3200",
+                "SLT": "SLT 989 RNW 04 TRK 040 UNTIL 1300 HDG 170 VECTORS FAF FD04 MAP SL"
+            },
+            "transitions": [
+                {
+                    "name": "BINEX",
+                    "fixes": {
+                        "BINEX": "BINEX AT OR ABOVE 6000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D230L": "D230L AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "SALNA",
+                    "fixes": {
+                        "SALNA": "SALNA AT OR ABOVE 6000",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "D210L": "D210L AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS04",
+            "fixes": {
+                "CI04": "CI04 AT OR ABOVE 3200",
+                "FI04": "FI04 3200 RNW 04 TRK 041 UNTIL 1300 HDG 170 VECTORS FAF FI04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "BINEX",
+                    "fixes": {
+                        "BINEX": "BINEX AT OR ABOVE 6000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D230L": "D230L AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "SALNA",
+                    "fixes": {
+                        "SALNA": "SALNA AT OR ABOVE 6000",
+                        "AF006": "AF006",
+                        "AF007": "AF007",
+                        "D210L": "D210L AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "ST402": "ST402 AT OR ABOVE 2300 SPEED 190",
+                "ST401": "ST401 2300 RNW 22",
+                "ST400": "OVERFLY ST400 TURN LEFT DIRECT",
+                "ISKAR": "ISKAR 4000 SPEED 230 FAF ST401 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "BINEX",
+                    "fixes": {
+                        "BINEX": "BINEX AT OR ABOVE 8000 SPEED 230",
+                        "ST403": "ST403 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SALNA",
+                    "fixes": {
+                        "SALNA": "SALNA AT OR ABOVE 8000 SPEED 230",
+                        "ISKAR": "ISKAR AT OR ABOVE 6000",
+                        "ST411": "ST411 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

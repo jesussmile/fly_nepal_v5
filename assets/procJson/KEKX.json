@@ -1,0 +1,179 @@
+{
+    "fixes": [
+        {
+            "name": "CIHAD",
+            "lat": 37.61909721666667,
+            "lon": 86.01400833333334
+        },
+        {
+            "name": "EWO",
+            "lat": 37.63181111666667,
+            "lon": 85.67587778333333
+        },
+        {
+            "name": "HERMS",
+            "lat": 37.691727783333334,
+            "lon": 85.46440278333333
+        },
+        {
+            "name": "JBEAM",
+            "lat": 37.79103611666667,
+            "lon": 85.64281943333333
+        },
+        {
+            "name": "JEXUD",
+            "lat": 37.74084166666667,
+            "lon": 85.82667221666667
+        },
+        {
+            "name": "MA284",
+            "lat": 37.68488611666667,
+            "lon": 85.91981943333333
+        },
+        {
+            "name": "MAHYO",
+            "lat": 37.675891666666665,
+            "lon": 85.87829443333334
+        },
+        {
+            "name": "MYS",
+            "lat": 37.89406666666667,
+            "lon": 86.24452778333334
+        },
+        {
+            "name": "OSINE",
+            "lat": 37.53350833333333,
+            "lon": 86.3194
+        },
+        {
+            "name": "RISZO",
+            "lat": 37.55062778333333,
+            "lon": 86.10488611666666
+        },
+        {
+            "name": "SYNDI",
+            "lat": 37.662705566666666,
+            "lon": 85.81754443333334
+        },
+        {
+            "name": "WUXAX",
+            "lat": 37.697275,
+            "lon": 85.910025
+        },
+        {
+            "name": "YOYGU",
+            "lat": 37.66054166666667,
+            "lon": 85.98014166666667
+        },
+        {
+            "name": "ZIBET",
+            "lat": 37.748922216666664,
+            "lon": 85.84110833333334
+        },
+        {
+            "name": "ZOMDA",
+            "lat": 37.746625,
+            "lon": 85.70052778333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS05",
+            "fixes": {
+                "RISZO": "RISZO AT OR ABOVE 4000",
+                "CIHAD": "CIHAD 2500 RNW 05 TRK 050 UNTIL 1200 TURN LEFT HDG 290 INTERCEPT RADIAL 320 TO",
+                "MYS": "MYS MYS AT OR ABOVE 3000 HOLD AT MYS RIGHT TURN INBOUNDCOURSE 211 LEGTIME 1 FAF CIHAD MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "MYS",
+                    "fixes": {
+                        "MYS": "MYS",
+                        "RISZO": "RISZO AT OR ABOVE 4000 HOLD AT RISZO RIGHT TURN INBOUNDCOURSE 050 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "RISZO": "RISZO AT OR ABOVE 2500",
+                "CIHAD": "CIHAD 2500 RNW 05 TRK 050 UNTIL 968",
+                "ZIBET": "ZIBET",
+                "HERMS": "OVERFLY HERMS AT OR ABOVE 3000 HOLD AT HERMS RIGHT TURN INBOUNDCOURSE 104 LEGDIST 4 FAF CIHAD MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "OSINE",
+                    "fixes": {
+                        "OSINE": "OSINE"
+                    }
+                },
+                {
+                    "name": "RISZO",
+                    "fixes": {
+                        "RISZO": "RISZO RIGHT TURN INBOUNDCOURSE 050 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "ZOMDA": "ZOMDA AT OR ABOVE 2500",
+                "JEXUD": "JEXUD 2500",
+                "WUXAX": "OVERFLY WUXAX 963 RNW 23 TRK 240 UNTIL 1176",
+                "YOYGU": "YOYGU",
+                "RISZO": "OVERFLY RISZO AT OR ABOVE 3000 HOLD AT RISZO RIGHT TURN INBOUNDCOURSE 050 LEGDIST 4 FAF JEXUD MAP WUXAX"
+            },
+            "transitions": [
+                {
+                    "name": "JBEAM",
+                    "fixes": {
+                        "JBEAM": "JBEAM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA05",
+            "fixes": {
+                "EWO": "EWO AT OR ABOVE 2500 EWO AT OR ABOVE 2500 HOLD AT EWO RIGHT TURN INBOUNDCOURSE 284 LEGTIME 1 FAF SYNDI MAP MA284",
+                "SYNDI": "SYNDI 2500",
+                "MAHYO": "MAHYO AT OR ABOVE 1700",
+                "MA284": "MA284 1360 RNW 05 TRK 284 UNTIL 1360 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EWO",
+                    "fixes": {
+                        "EWO": "EWO RIGHT TURN INBOUNDCOURSE 284 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA23",
+            "fixes": {
+                "EWO": "EWO AT OR ABOVE 2500 EWO AT OR ABOVE 2500 HOLD AT EWO RIGHT TURN INBOUNDCOURSE 284 LEGTIME 1 FAF SYNDI MAP MA284",
+                "SYNDI": "SYNDI 2500",
+                "MAHYO": "MAHYO AT OR ABOVE 1700",
+                "MA284": "MA284 1360 RNW 23 TRK 284 UNTIL 1360 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EWO",
+                    "fixes": {
+                        "EWO": "EWO RIGHT TURN INBOUNDCOURSE 284 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

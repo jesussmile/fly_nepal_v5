@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "FOVMU",
+            "lat": 38.26935,
+            "lon": 92.57556666666666
+        },
+        {
+            "name": "HUPUD",
+            "lat": 38.304411116666664,
+            "lon": 92.57395278333334
+        },
+        {
+            "name": "JICDA",
+            "lat": 38.517438883333334,
+            "lon": 92.544675
+        },
+        {
+            "name": "LOJOV",
+            "lat": 38.08945,
+            "lon": 92.838875
+        },
+        {
+            "name": "LUYIR",
+            "lat": 38.184675,
+            "lon": 92.29696943333333
+        },
+        {
+            "name": "MIVPE",
+            "lat": 38.18602778333333,
+            "lon": 92.57939443333333
+        },
+        {
+            "name": "SECOC",
+            "lat": 38.150522216666666,
+            "lon": 92.67501666666666
+        },
+        {
+            "name": "WABNI",
+            "lat": 38.14420556666666,
+            "lon": 92.48796666666667
+        },
+        {
+            "name": "ZARUB",
+            "lat": 38.417091666666664,
+            "lon": 92.56875556666667
+        },
+        {
+            "name": "ZUMIL",
+            "lat": 38.453091666666666,
+            "lon": 92.56709166666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "JICDA": "JICDA AT OR ABOVE 3100",
+                "ZUMIL": "ZUMIL 2600",
+                "ZARUB": "ZARUB AT OR ABOVE 1900 RNW 18 TRK 182 UNTIL 1317",
+                "MIVPE": "OVERFLY MIVPE AT OR ABOVE 3000 HOLD AT MIVPE RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF ZUMIL MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "JICDA",
+                    "fixes": {
+                        "JICDA": "JICDA LEFT TURN INBOUNDCOURSE 195 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "MIVPE": "MIVPE AT OR ABOVE 3000",
+                "FOVMU": "FOVMU 2600",
+                "HUPUD": "HUPUD AT OR ABOVE 1920 RNW 36 TRK 002 UNTIL 1304",
+                "ZARUB": "ZARUB",
+                "JICDA": "OVERFLY JICDA AT OR ABOVE 3100 HOLD AT JICDA LEFT TURN INBOUNDCOURSE 195 LEGDIST 4 FAF FOVMU MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "LOJOV",
+                    "fixes": {
+                        "LOJOV": "LOJOV",
+                        "SECOC": "SECOC AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "LUYIR",
+                    "fixes": {
+                        "LUYIR": "LUYIR",
+                        "WABNI": "WABNI AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MIVPE",
+                    "fixes": {
+                        "MIVPE": "MIVPE RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

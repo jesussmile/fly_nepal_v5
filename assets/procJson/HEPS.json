@@ -1,0 +1,49 @@
+{
+    "fixes": [
+        {
+            "name": "CD10",
+            "lat": 31.322544433333334,
+            "lon": 32.11151666666667
+        },
+        {
+            "name": "FD10",
+            "lat": 31.310058333333334,
+            "lon": 32.14761111666667
+        },
+        {
+            "name": "PSD",
+            "lat": 31.278805566666666,
+            "lon": 32.237805566666665
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "CD10": "CD10 1400",
+                "FD10": "FD10 1400 RNW 10",
+                "PSD": "OVERFLY PSD TRK 107 UNTIL 2000 TURN LEFT DIRECT PSD 2000 HOLD AT PSD LEFT TURN INBOUNDCOURSE 315 LEGTIME 1 FAF FD10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "PSD1",
+                    "fixes": {
+                        "PSD": "PSD AT OR ABOVE 3000 TRK 315 UNTIL 7.0 FROM PSD"
+                    }
+                },
+                {
+                    "name": "PSD2",
+                    "fixes": {
+                        "PSD": "PSD AT OR ABOVE 3000 TRK 302 UNTIL 7.0 FROM PSD"
+                    }
+                }
+            ]
+        }
+    ]
+}

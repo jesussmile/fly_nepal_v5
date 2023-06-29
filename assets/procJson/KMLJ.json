@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "FETOP",
+            "lat": 33.145716666666665,
+            "lon": 82.96177221666667
+        },
+        {
+            "name": "IBUDY",
+            "lat": 33.162016666666666,
+            "lon": 83.51776666666666
+        },
+        {
+            "name": "LAXHE",
+            "lat": 33.15062221666667,
+            "lon": 83.12047221666667
+        },
+        {
+            "name": "OZBRN",
+            "lat": 33.157375,
+            "lon": 83.35053888333333
+        },
+        {
+            "name": "PI001",
+            "lat": 33.14981426666667,
+            "lon": 83.08993326666666
+        },
+        {
+            "name": "PI002",
+            "lat": 33.19867513333333,
+            "lon": 83.02729568333334
+        },
+        {
+            "name": "PI003",
+            "lat": 33.145894733333336,
+            "lon": 82.96062801666666
+        },
+        {
+            "name": "SINCA",
+            "lat": 33.08118888333333,
+            "lon": 83.60486666666667
+        },
+        {
+            "name": "UMBNB",
+            "lat": 33.15186943333333,
+            "lon": 83.15956388333333
+        },
+        {
+            "name": "WADAX",
+            "lat": 33.15249443333333,
+            "lon": 83.18280833333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB28",
+            "fixes": {
+                "UMBNB": "UMBNB 1600 RNW 28 TRK 276 UNTIL 1400 TURN LEFT DIRECT UMBNB AT OR ABOVE 2400 HOLD AT UMBNB RIGHT TURN INBOUNDCOURSE 276 ALT 2400 LEGTIME 1 FAF UMBNB MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "SINCA",
+                    "fixes": {
+                        "SINCA": "SINCA",
+                        "UMBNB": "UMBNB AT OR ABOVE 2400",
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "IBUDY": "IBUDY AT OR ABOVE 3000",
+                "OZBRN": "OZBRN 2200 RNW 10 TRK 096 UNTIL 785",
+                "FETOP": "OVERFLY FETOP AT OR ABOVE 3000 HOLD AT FETOP RIGHT TURN INBOUNDCOURSE 276 LEGDIST 4 FAF OZBRN MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "IBUDY",
+                    "fixes": {
+                        "IBUDY": "IBUDY RIGHT TURN INBOUNDCOURSE 096 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "FETOP": "FETOP AT OR ABOVE 3000",
+                "LAXHE": "LAXHE 2200",
+                "WADAX": "WADAX AT OR ABOVE 1180 RNW 28 TRK 276 UNTIL 670",
+                "IBUDY": "OVERFLY IBUDY AT OR ABOVE 3000 HOLD AT IBUDY RIGHT TURN INBOUNDCOURSE 096 LEGDIST 4 FAF LAXHE MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "FETOP",
+                    "fixes": {
+                        "FETOP": "FETOP RIGHT TURN INBOUNDCOURSE 276 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

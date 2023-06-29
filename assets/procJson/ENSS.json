@@ -1,0 +1,223 @@
+{
+    "fixes": [
+        {
+            "name": "30VOR",
+            "lat": 70.405,
+            "lon": 31.00138056666667
+        },
+        {
+            "name": "AGLOB",
+            "lat": 70.49616943333334,
+            "lon": 30.918291666666665
+        },
+        {
+            "name": "FD15",
+            "lat": 70.43656388333333,
+            "lon": 30.970697216666668
+        },
+        {
+            "name": "FD33",
+            "lat": 70.27784443333333,
+            "lon": 31.114977783333334
+        },
+        {
+            "name": "GAMKI",
+            "lat": 70.14181388333333,
+            "lon": 30.993969433333334
+        },
+        {
+            "name": "MD15",
+            "lat": 70.37343056666667,
+            "lon": 31.031975
+        },
+        {
+            "name": "MD33",
+            "lat": 70.32572778333333,
+            "lon": 31.07439443333333
+        },
+        {
+            "name": "NILIP",
+            "lat": 70.47196943333333,
+            "lon": 30.680827783333335
+        },
+        {
+            "name": "SS607",
+            "lat": 70.27675,
+            "lon": 31.114819433333334
+        },
+        {
+            "name": "SS608",
+            "lat": 70.19165,
+            "lon": 31.189866666666667
+        },
+        {
+            "name": "SS609",
+            "lat": 70.32445833333334,
+            "lon": 31.072463883333334
+        },
+        {
+            "name": "SS611",
+            "lat": 70.48578888333333,
+            "lon": 30.927711116666668
+        },
+        {
+            "name": "SS806",
+            "lat": 70.43260833333333,
+            "lon": 30.97567778333333
+        },
+        {
+            "name": "SS810",
+            "lat": 70.21636111666666,
+            "lon": 31.168113883333334
+        },
+        {
+            "name": "UPIRU",
+            "lat": 70.49689443333334,
+            "lon": 30.911766666666665
+        },
+        {
+            "name": "VRD",
+            "lat": 70.35764443333333,
+            "lon": 31.047236116666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD15",
+            "fixes": {
+                "FD15": "FD15 2000",
+                "30VOR": "30VOR AT OR ABOVE 1210",
+                "MD15": "MD15 428 RNW 15 TRK 145 UNTIL 8.0 FROM",
+                "VRD": "VRD TURN LEFT DIRECT VRD HOLD AT VRD LEFT TURN INBOUNDCOURSE 325 ALT 4000 LEGTIME 1 FAF FD15 MAP MD15"
+            },
+            "transitions": [
+                {
+                    "name": "NILIP",
+                    "fixes": {
+                        "NILIP": "NILIP",
+                        "UPIRU": "UPIRU AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "UPIRU",
+                    "fixes": {
+                        "UPIRU": "UPIRU AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "VRD",
+                    "fixes": {
+                        "VRD": "VRD AT OR ABOVE 3000 TRK 312 UNTIL 7.0 FROM VRD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD33",
+            "fixes": {
+                "FD33": "FD33 2000",
+                "MD33": "MD33 748 RNW 33 TRK 327 UNTIL 8.0 FROM",
+                "VRD": "VRD TURN RIGHT DIRECT VRD HOLD AT VRD LEFT TURN INBOUNDCOURSE 327 ALT 4000 LEGTIME 1 FAF FD33 MAP MD33"
+            },
+            "transitions": [
+                {
+                    "name": "GAMKI",
+                    "fixes": {
+                        "GAMKI": "GAMKI",
+                        "SS608": "SS608 AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS15",
+            "fixes": {
+                "AGLOB": "AGLOB AT OR ABOVE 2000",
+                "SS806": "SS806 2000 RNW 15 TRK 146 UNTIL 1500 TURN RIGHT DIRECT",
+                "NILIP": "NILIP 4000 HOLD AT NILIP LEFT TURN INBOUNDCOURSE 056 ALT 4000 LEGTIME 1 FAF SS806 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "NILIP",
+                    "fixes": {
+                        "NILIP": "NILIP AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS33",
+            "fixes": {
+                "SS608": "SS608 AT OR ABOVE 4000",
+                "SS607": "SS607 2000 RNW 33 TRK 326 UNTIL 1000 TURN LEFT DIRECT",
+                "GAMKI": "GAMKI HOLD AT GAMKI LEFT TURN INBOUNDCOURSE 036 ALT 4000 LEGTIME 1 FAF SS607 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "GAMKI",
+                    "fixes": {
+                        "GAMKI": "GAMKI AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "AGLOB": "AGLOB AT OR ABOVE 2500",
+                "SS806": "SS806 2000 RNW 15",
+                "SS810": "OVERFLY SS810 TURN LEFT DIRECT",
+                "NILIP": "NILIP HOLD AT NILIP LEFT TURN INBOUNDCOURSE 056 ALT 4000 LEGTIME 1 FAF SS806 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "NILIP",
+                    "fixes": {
+                        "NILIP": "NILIP AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY33",
+            "fixes": {
+                "SS608": "SS608 AT OR ABOVE 4000",
+                "SS607": "SS607 2000",
+                "SS609": "OVERFLY SS609 758 RNW 33",
+                "SS611": "OVERFLY SS611 TURN RIGHT DIRECT",
+                "GAMKI": "GAMKI HOLD AT GAMKI LEFT TURN INBOUNDCOURSE 036 ALT 4000 LEGTIME 1 FAF SS607 MAP SS609"
+            },
+            "transitions": [
+                {
+                    "name": "GAMKI",
+                    "fixes": {
+                        "GAMKI": "GAMKI AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ33",
+            "fixes": {
+                "SS608": "SS608 AT OR ABOVE 4000",
+                "SS607": "SS607 2000 RNW 33",
+                "SS611": "OVERFLY SS611 TURN RIGHT DIRECT",
+                "GAMKI": "GAMKI HOLD AT GAMKI LEFT TURN INBOUNDCOURSE 036 ALT 4000 LEGTIME 1 FAF SS607 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "GAMKI",
+                    "fixes": {
+                        "GAMKI": "GAMKI AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

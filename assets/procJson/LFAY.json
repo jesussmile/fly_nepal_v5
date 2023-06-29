@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "AMAXA",
+            "lat": 49.7745,
+            "lon": 2.697444433333333
+        },
+        {
+            "name": "AY411",
+            "lat": 49.87925,
+            "lon": 2.3675555666666668
+        },
+        {
+            "name": "BADGI",
+            "lat": 49.840555566666666,
+            "lon": 2.681555566666667
+        },
+        {
+            "name": "CN30",
+            "lat": 49.820219433333335,
+            "lon": 2.5536694333333334
+        },
+        {
+            "name": "FAY30",
+            "lat": 49.825833333333335,
+            "lon": 2.5360833333333335
+        },
+        {
+            "name": "GINB",
+            "lat": 49.842138883333334,
+            "lon": 2.4842777833333334
+        },
+        {
+            "name": "GIRAR",
+            "lat": 49.74783333333333,
+            "lon": 2.5770555666666666
+        },
+        {
+            "name": "IAY30",
+            "lat": 49.80016666666667,
+            "lon": 2.6166388833333336
+        },
+        {
+            "name": "MAY30",
+            "lat": 49.86623611666667,
+            "lon": 2.4086888833333333
+        },
+        {
+            "name": "MN30",
+            "lat": 49.8662,
+            "lon": 2.4078722166666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 12R",
+        "RNW 30",
+        "RNW 30L"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB30",
+            "fixes": {
+                "CN30": "CN30 AT OR ABOVE 2200",
+                "GINB": "GINB 1440 GINB 2200 FAF GINB MAP MN30",
+                "MN30": "MN30 429 RNW 30 TRK 295 UNTIL 610 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GI",
+                    "fixes": {
+                        "GINB": "GINB RIGHT TURN INBOUNDCOURSE 295 ALT 2200 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IAY30": "IAY30 AT OR ABOVE 2200",
+                "FAY30": "FAY30 2200",
+                "MAY30": "OVERFLY MAY30 447 RNW 30",
+                "AY411": "OVERFLY AY411 TURN RIGHT DIRECT",
+                "GINB": "OVERFLY GINB AT OR ABOVE 2200 HOLD AT GINB RIGHT TURN INBOUNDCOURSE 295 ALT 2200 SPEED 170 LEGTIME 1 FAF FAY30 MAP MAY30"
+            },
+            "transitions": [
+                {
+                    "name": "AMAXA",
+                    "fixes": {
+                        "AMAXA": "AMAXA"
+                    }
+                },
+                {
+                    "name": "BADGI",
+                    "fixes": {
+                        "BADGI": "BADGI"
+                    }
+                },
+                {
+                    "name": "GIRAR",
+                    "fixes": {
+                        "GIRAR": "GIRAR"
+                    }
+                }
+            ]
+        }
+    ]
+}

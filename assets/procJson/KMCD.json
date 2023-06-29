@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "AMDEE",
+            "lat": 45.79644166666667,
+            "lon": 84.64062221666667
+        },
+        {
+            "name": "COSRU",
+            "lat": 45.76877221666667,
+            "lon": 84.31526666666667
+        },
+        {
+            "name": "HUVTI",
+            "lat": 45.913930566666664,
+            "lon": 84.36913611666667
+        },
+        {
+            "name": "IRBUW",
+            "lat": 45.88364443333333,
+            "lon": 84.53539443333334
+        },
+        {
+            "name": "JUPIB",
+            "lat": 45.857388883333336,
+            "lon": 84.67832778333333
+        },
+        {
+            "name": "MABEH",
+            "lat": 45.862763883333336,
+            "lon": 84.63120278333334
+        },
+        {
+            "name": "NUBKE",
+            "lat": 45.84195556666667,
+            "lon": 84.76183056666666
+        },
+        {
+            "name": "PINES",
+            "lat": 46.030447216666666,
+            "lon": 84.48673611666666
+        },
+        {
+            "name": "PLN",
+            "lat": 45.63064721666667,
+            "lon": 84.66410833333333
+        },
+        {
+            "name": "WAKMA",
+            "lat": 45.81110833333334,
+            "lon": 84.92760278333333
+        },
+        {
+            "name": "ZIMUX",
+            "lat": 45.69036388333333,
+            "lon": 84.88156943333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA08",
+            "fixes": {
+                "PLN": "PLN AT OR ABOVE 2500",
+                "AMDEE": "AMDEE 2400 AMDEE AT OR ABOVE 2400 HOLD AT AMDEE RIGHT TURN INBOUNDCOURSE 012 LEGTIME 1 FAF AMDEE MAP MABEH",
+                "MABEH": "MABEH 1320 RNW 08 TRK 012 UNTIL 1400 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PLN": "PLN RIGHT TURN INBOUNDCOURSE 012 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA26",
+            "fixes": {
+                "PLN": "PLN AT OR ABOVE 2500",
+                "AMDEE": "AMDEE 2400 AMDEE AT OR ABOVE 2400 HOLD AT AMDEE RIGHT TURN INBOUNDCOURSE 012 LEGTIME 1 FAF AMDEE MAP MABEH",
+                "MABEH": "MABEH 1320 RNW 26 TRK 012 UNTIL 1400 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PLN": "PLN RIGHT TURN INBOUNDCOURSE 012 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "WAKMA": "WAKMA AT OR ABOVE 2500",
+                "NUBKE": "NUBKE 2400",
+                "JUPIB": "JUPIB AT OR ABOVE 1240 RNW 08 TRK 082 UNTIL 1080",
+                "HUVTI": "OVERFLY HUVTI AT OR ABOVE 2500 HOLD AT HUVTI RIGHT TURN INBOUNDCOURSE 262 LEGDIST 4 FAF NUBKE MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "PINES",
+                    "fixes": {
+                        "PINES": "PINES",
+                        "WAKMA": "OVERFLY WAKMA AT OR ABOVE 2500 HOLD AT WAKMA RIGHT TURN INBOUNDCOURSE 082 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PLN": "PLN",
+                        "ZIMUX": "ZIMUX AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "HUVTI": "HUVTI AT OR ABOVE 2500",
+                "IRBUW": "IRBUW 2400 RNW 26 TRK 262 UNTIL 1058",
+                "WAKMA": "OVERFLY WAKMA AT OR ABOVE 2500 HOLD AT WAKMA RIGHT TURN INBOUNDCOURSE 082 LEGDIST 4 FAF IRBUW MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "PINES",
+                    "fixes": {
+                        "PINES": "PINES",
+                        "HUVTI": "OVERFLY HUVTI AT OR ABOVE 2500 HOLD AT HUVTI RIGHT TURN INBOUNDCOURSE 262 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PLN": "PLN",
+                        "COSRU": "COSRU AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        }
+    ]
+}

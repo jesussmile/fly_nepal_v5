@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "BERTI",
+            "lat": 36.05190833333333,
+            "lon": 76.67023056666666
+        },
+        {
+            "name": "EGGAB",
+            "lat": 36.15488056666667,
+            "lon": 76.30279443333333
+        },
+        {
+            "name": "GIGTE",
+            "lat": 35.93898333333333,
+            "lon": 76.39185833333333
+        },
+        {
+            "name": "SUNNS",
+            "lat": 36.44020556666667,
+            "lon": 76.50783611666667
+        },
+        {
+            "name": "UDUNE",
+            "lat": 36.037069433333336,
+            "lon": 76.35146111666667
+        },
+        {
+            "name": "VAPSY",
+            "lat": 36.28463611666667,
+            "lon": 76.249
+        },
+        {
+            "name": "ZADPA",
+            "lat": 35.975011116666664,
+            "lon": 76.52856111666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "GIGTE": "GIGTE AT OR ABOVE 2000",
+                "UDUNE": "UDUNE 1100 RNW 03 TRK 029 UNTIL 210",
+                "EGGAB": "EGGAB",
+                "SUNNS": "OVERFLY SUNNS AT OR ABOVE 2000 HOLD AT SUNNS RIGHT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF UDUNE MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "BERTI",
+                    "fixes": {
+                        "BERTI": "BERTI",
+                        "ZADPA": "ZADPA AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "VAPSY": "VAPSY AT OR ABOVE 2000",
+                "EGGAB": "EGGAB 1100 RNW 21 TRK 209 UNTIL 420",
+                "BERTI": "OVERFLY BERTI AT OR ABOVE 4000 HOLD AT BERTI RIGHT TURN INBOUNDCOURSE 070 LEGDIST 4 FAF EGGAB MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "SUNNS",
+                    "fixes": {
+                        "SUNNS": "SUNNS"
+                    }
+                }
+            ]
+        }
+    ]
+}

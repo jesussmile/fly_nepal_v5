@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "FD401",
+            "lat": 2.9223333333333334,
+            "lon": 120.20344443333333
+        },
+        {
+            "name": "FD402",
+            "lat": 2.9725555666666668,
+            "lon": 120.21644443333334
+        },
+        {
+            "name": "FD403",
+            "lat": 3.0343333333333335,
+            "lon": 120.23244443333333
+        },
+        {
+            "name": "FD601",
+            "lat": 3.2385277833333332,
+            "lon": 120.28533333333333
+        },
+        {
+            "name": "FD602",
+            "lat": 3.1899444333333333,
+            "lon": 120.27272221666666
+        },
+        {
+            "name": "FD603",
+            "lat": 3.129777783333333,
+            "lon": 120.25713888333334
+        },
+        {
+            "name": "UKANU",
+            "lat": 3.2555833333333335,
+            "lon": 120.3495
+        },
+        {
+            "name": "VAPMA",
+            "lat": 2.868722216666667,
+            "lon": 120.27344443333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "FD401": "FD401 AT OR ABOVE 2500",
+                "FD402": "FD402 2000",
+                "FD403": "OVERFLY FD403 832 RNW 17 TURN LEFT DIRECT",
+                "VAPMA": "VAPMA AT OR ABOVE 3000 HOLD AT VAPMA LEFT TURN INBOUNDCOURSE 232 ALT 3000 LEGTIME 1 FAF FD402 MAP FD403"
+            },
+            "transitions": [
+                {
+                    "name": "VAPMA",
+                    "fixes": {
+                        "VAPMA": "VAPMA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FD601": "FD601 AT OR ABOVE 2500",
+                "FD602": "FD602 2000",
+                "FD603": "OVERFLY FD603 843 RNW 35 TURN RIGHT DIRECT",
+                "UKANU": "UKANU AT OR ABOVE 3000 HOLD AT UKANU RIGHT TURN INBOUNDCOURSE 284 ALT 3000 LEGTIME 1 FAF FD602 MAP FD603"
+            },
+            "transitions": [
+                {
+                    "name": "UKANU",
+                    "fixes": {
+                        "UKANU": "UKANU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

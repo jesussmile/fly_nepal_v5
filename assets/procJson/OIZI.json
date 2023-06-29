@@ -1,0 +1,299 @@
+{
+    "fixes": [
+        {
+            "name": "CBH",
+            "lat": 25.444972216666667,
+            "lon": 60.41436111666667
+        },
+        {
+            "name": "CD17",
+            "lat": 27.39845,
+            "lon": 60.686602783333335
+        },
+        {
+            "name": "CD35",
+            "lat": 27.068161116666666,
+            "lon": 60.74184721666666
+        },
+        {
+            "name": "CQ17",
+            "lat": 27.417425,
+            "lon": 60.703088883333336
+        },
+        {
+            "name": "D172P",
+            "lat": 26.968422216666667,
+            "lon": 60.75353056666667
+        },
+        {
+            "name": "D347O",
+            "lat": 27.480475,
+            "lon": 60.668697216666665
+        },
+        {
+            "name": "D354P",
+            "lat": 27.500802783333334,
+            "lon": 60.69654166666667
+        },
+        {
+            "name": "FD17",
+            "lat": 27.316419433333333,
+            "lon": 60.70448056666667
+        },
+        {
+            "name": "FD35",
+            "lat": 27.151275,
+            "lon": 60.732097216666666
+        },
+        {
+            "name": "FN333",
+            "lat": 27.163147216666665,
+            "lon": 60.753880566666666
+        },
+        {
+            "name": "FQ17",
+            "lat": 27.334016666666667,
+            "lon": 60.70963056666667
+        },
+        {
+            "name": "FQ35",
+            "lat": 27.136438883333334,
+            "lon": 60.746422216666666
+        },
+        {
+            "name": "ISR",
+            "lat": 27.234388883333335,
+            "lon": 60.72233333333333
+        },
+        {
+            "name": "ISRNB",
+            "lat": 27.232833333333332,
+            "lon": 60.71755556666667
+        },
+        {
+            "name": "LOXOL",
+            "lat": 27.765555566666666,
+            "lon": 60.76055556666667
+        },
+        {
+            "name": "MD17",
+            "lat": 27.2672,
+            "lon": 60.71519443333333
+        },
+        {
+            "name": "MD35",
+            "lat": 27.20114166666667,
+            "lon": 60.72623888333333
+        },
+        {
+            "name": "MQ17",
+            "lat": 27.267138883333335,
+            "lon": 60.714869433333334
+        },
+        {
+            "name": "MQ35",
+            "lat": 27.201216666666667,
+            "lon": 60.727027783333334
+        },
+        {
+            "name": "RW17",
+            "lat": 27.245291666666667,
+            "lon": 60.71843056666667
+        },
+        {
+            "name": "RW35",
+            "lat": 27.225694433333334,
+            "lon": 60.72193333333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "CBH1A",
+            "rnw": "35",
+            "fixes": {
+                "CBH": "CBH"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "CBH1B",
+            "rnw": "17",
+            "fixes": {
+                "ISRNB": "ISRNB",
+                "CBH": "CBH"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LOXO1A",
+            "rnw": "35",
+            "fixes": {
+                "LOXOL": "LOXOL AT OR ABOVE 13000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LOXO1B",
+            "rnw": "17",
+            "fixes": {
+                "LOXOL": "LOXOL AT OR ABOVE 13000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LOXO1C",
+            "rnw": "35",
+            "fixes": {
+                "LOXOL": "LOXOL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LOXO1D",
+            "rnw": "17",
+            "fixes": {
+                "ISR": "ISR AT OR ABOVE 4000",
+                "LOXOL": "LOXOL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "LOXO1N",
+            "runway": "RNW 35",
+            "fixes": {
+                "LOXOL": "LOXOL",
+                "D172P": "D172P"
+            }
+        },
+        {
+            "name": "LOXO1P",
+            "runway": "RNW 17",
+            "fixes": {
+                "LOXOL": "LOXOL",
+                "D347O": "D347O"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "CD17": "CD17 AT OR ABOVE 4800",
+                "FD17": "FD17 3600",
+                "MD17": "MD17 2509 RNW 17",
+                "ISR": "ISR TRK 167 UNTIL 3500 TURN RIGHT DIRECT",
+                "D347O": "D347O 7000 HOLD AT D347O RIGHT TURN INBOUNDCOURSE 167 LEGTIME 1 FAF FD17 MAP MD17"
+            },
+            "transitions": [
+                {
+                    "name": "D347O",
+                    "fixes": {
+                        "D347O": "D347O AT OR ABOVE 7000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD35",
+            "fixes": {
+                "CD35": "CD35 AT OR ABOVE 5300",
+                "FD35": "FD35 3800",
+                "MD35": "MD35 2582 RNW 35",
+                "ISR": "ISR TRK 290 UNTIL 4000 TURN LEFT DIRECT",
+                "D172P": "D172P 7500 HOLD AT D172P RIGHT TURN INBOUNDCOURSE 352 LEGTIME 1 FAF FD35 MAP MD35"
+            },
+            "transitions": [
+                {
+                    "name": "D172P",
+                    "fixes": {
+                        "D172P": "D172P AT OR ABOVE 7500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD17",
+            "fixes": {
+                "CQ17": "CQ17 AT OR ABOVE 5000",
+                "FQ17": "FQ17 3800",
+                "MQ17": "MQ17 2467 RNW 17",
+                "ISRNB": "ISRNB TRK 174 UNTIL 3500 TURN RIGHT DIRECT",
+                "D354P": "D354P 7000 HOLD AT D354P RIGHT TURN INBOUNDCOURSE 174 LEGTIME 1 FAF FQ17 MAP MQ17"
+            },
+            "transitions": [
+                {
+                    "name": "D354P",
+                    "fixes": {
+                        "D354P": "D354P AT OR ABOVE 7000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB17",
+            "fixes": {
+                "FN333": "FN333 3800",
+                "ISRNB": "ISRNB 2950 RNW 17 TRK 333 UNTIL 4200 TURN LEFT DIRECT ISRNB 5500 HOLD AT ISRNB RIGHT TURN INBOUNDCOURSE 124 LEGTIME 1 FAF FN333 MAP ISR"
+            },
+            "transitions": [
+                {
+                    "name": "ISR",
+                    "fixes": {
+                        "ISRNB": "ISRNB AT OR ABOVE 5500 TRK 124 UNTIL 4.6 FROM ISRNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD35",
+            "fixes": {
+                "FQ35": "FQ35 3900",
+                "MQ35": "MQ35 2498 RNW 35",
+                "ISRNB": "ISRNB TRK 343 UNTIL 3500 TURN LEFT DIRECT ISRNB 5000 HOLD AT ISRNB RIGHT TURN INBOUNDCOURSE 192 LEGTIME 1 FAF FQ35 MAP MQ35"
+            },
+            "transitions": [
+                {
+                    "name": "ISR1",
+                    "fixes": {
+                        "ISRNB": "ISRNB AT OR ABOVE 5000 TRK 192 UNTIL 6.0 FROM",
+                        "ISR": "ISR"
+                    }
+                },
+                {
+                    "name": "ISR2",
+                    "fixes": {
+                        "ISRNB": "ISRNB AT OR ABOVE 5000 TRK 181 UNTIL 6.0 FROM",
+                        "ISR": "ISR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB35",
+            "fixes": {
+                "FN333": "FN333 3800",
+                "ISRNB": "ISRNB 2950 RNW 35 TRK 333 UNTIL 4200 TURN LEFT DIRECT ISRNB 5500 HOLD AT ISRNB RIGHT TURN INBOUNDCOURSE 124 LEGTIME 1 FAF FN333 MAP ISR"
+            },
+            "transitions": [
+                {
+                    "name": "ISR",
+                    "fixes": {
+                        "ISRNB": "ISRNB AT OR ABOVE 5500 TRK 124 UNTIL 4.6 FROM ISRNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

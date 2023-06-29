@@ -1,0 +1,286 @@
+{
+    "fixes": [
+        {
+            "name": "ANDUB",
+            "lat": 10.697077783333333,
+            "lon": 65.30664166666666
+        },
+        {
+            "name": "ANSAG",
+            "lat": 10.875658333333334,
+            "lon": 65.26305556666667
+        },
+        {
+            "name": "EDPOR",
+            "lat": 10.4105,
+            "lon": 65.03083333333333
+        },
+        {
+            "name": "FF35",
+            "lat": 10.861438883333333,
+            "lon": 65.27707778333334
+        },
+        {
+            "name": "FN17",
+            "lat": 10.696588883333334,
+            "lon": 65.32253333333334
+        },
+        {
+            "name": "GJM01",
+            "lat": 10.777613883333334,
+            "lon": 65.28435278333333
+        },
+        {
+            "name": "GJM02",
+            "lat": 10.793947216666666,
+            "lon": 65.28062778333333
+        },
+        {
+            "name": "GJMNB",
+            "lat": 10.784333333333333,
+            "lon": 65.28116666666666
+        },
+        {
+            "name": "GM001",
+            "lat": 10.957036116666666,
+            "lon": 65.24317778333334
+        },
+        {
+            "name": "GM002",
+            "lat": 11.038411116666667,
+            "lon": 65.22328888333334
+        },
+        {
+            "name": "GM003",
+            "lat": 10.966394433333333,
+            "lon": 65.15898888333334
+        },
+        {
+            "name": "GM004",
+            "lat": 10.615694433333333,
+            "lon": 65.32648333333333
+        },
+        {
+            "name": "GM006",
+            "lat": 10.569408333333334,
+            "lon": 65.25597778333334
+        },
+        {
+            "name": "GM007",
+            "lat": 10.534311116666666,
+            "lon": 65.34631943333333
+        },
+        {
+            "name": "GM008",
+            "lat": 10.834194433333334,
+            "lon": 65.08955
+        },
+        {
+            "name": "GM009",
+            "lat": 10.787994433333333,
+            "lon": 64.82444443333333
+        },
+        {
+            "name": "GM011",
+            "lat": 11.109791666666666,
+            "lon": 64.960025
+        },
+        {
+            "name": "GM012",
+            "lat": 10.664269433333333,
+            "lon": 65.16927778333333
+        },
+        {
+            "name": "GM013",
+            "lat": 10.74265,
+            "lon": 65.29552221666667
+        },
+        {
+            "name": "GM014",
+            "lat": 10.829433333333334,
+            "lon": 65.27434443333334
+        },
+        {
+            "name": "KOGLU",
+            "lat": 11.112666666666666,
+            "lon": 63.912
+        },
+        {
+            "name": "UGAXO",
+            "lat": 11.912833333333333,
+            "lon": 63.913833333333336
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "ANDU1A",
+            "rnw": "35",
+            "fixes": {
+                "ANDUB": "OVERFLY ANDUB AT OR ABOVE 2100"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "EDPOR",
+                    "fixes": [
+                        "EDPOR"
+                    ]
+                },
+                {
+                    "name": "KOGLU",
+                    "fixes": [
+                        "OVERFLY",
+                        "GM009",
+                        "KOGLU"
+                    ]
+                },
+                {
+                    "name": "UGAXO",
+                    "fixes": [
+                        "OVERFLY",
+                        "GM008",
+                        "GM011",
+                        "UGAXO"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ANSA1A",
+            "rnw": "17",
+            "fixes": {
+                "ANSAG": "OVERFLY ANSAG AT OR ABOVE 1500"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "EDPOR",
+                    "fixes": [
+                        "OVERFLY",
+                        "EDPOR"
+                    ]
+                },
+                {
+                    "name": "KOGLU",
+                    "fixes": [
+                        "OVERFLY",
+                        "GM009",
+                        "KOGLU"
+                    ]
+                },
+                {
+                    "name": "UGAXO",
+                    "fixes": [
+                        "GM011",
+                        "UGAXO"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OMNI",
+            "rnw": "17",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 17",
+                    "fixes": {
+                        "RNW 17": "RNW 17 TRK 178 UNTIL 1500 HDG 178 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 35",
+                    "fixes": {
+                        "RNW 35": "RNW 35 TRK 358 UNTIL 1500 HDG 358 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB17",
+            "fixes": {
+                "FN17": "FN17 2200",
+                "GJM01": "OVERFLY GJM01 504",
+                "GJMNB": "OVERFLY GJMNB AT OR ABOVE 880 RNW 17 TRK 167 UNTIL 2000 TURN LEFT DIRECT GJMNB AT OR ABOVE 3000 HOLD AT GJMNB RIGHT TURN INBOUNDCOURSE 354 ALT 3000 LEGTIME 1 FAF FN17 MAP GJM"
+            },
+            "transitions": [
+                {
+                    "name": "GJM",
+                    "fixes": {
+                        "GJMNB": "GJMNB AT OR ABOVE 3000 TRK 007 UNTIL 9.9 FROM GJMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB35",
+            "fixes": {
+                "FF35": "FF35 1800",
+                "GJM02": "GJM02 518 RNW 35 TRK 009 UNTIL 2000 TURN RIGHT DIRECT",
+                "GJMNB": "GJMNB AT OR ABOVE 3000 HOLD AT GJMNB LEFT TURN INBOUNDCOURSE 190 ALT 3000 LEGTIME 1 FAF FF35 MAP GJM02"
+            },
+            "transitions": [
+                {
+                    "name": "GJM",
+                    "fixes": {
+                        "GJMNB": "GJMNB AT OR ABOVE 3000 TRK 161 UNTIL 7.0 FROM GJMNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "GM004": "GM004 AT OR ABOVE 2100",
+                "ANDUB": "ANDUB 2100",
+                "GM013": "GM013 AT OR ABOVE 1200 RNW 17 TRK 178 UNTIL 2500 TURN LEFT DIRECT",
+                "GM006": "OVERFLY GM006 AT OR ABOVE 3000 HOLD AT GM006 LEFT TURN INBOUNDCOURSE 248 ALT 3000 LEGTIME 1 FAF ANDUB MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "GM006",
+                    "fixes": {
+                        "GM006": "GM006 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "GM007",
+                    "fixes": {
+                        "GM007": "GM007 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "GM001": "GM001 AT OR ABOVE 2200",
+                "ANSAG": "ANSAG 2110",
+                "GM014": "GM014 AT OR ABOVE 1200 RNW 35 TRK 358 UNTIL 2500 TURN RIGHT DIRECT",
+                "GM003": "OVERFLY GM003 AT OR ABOVE 3000 HOLD AT GM003 RIGHT TURN INBOUNDCOURSE 288 ALT 3000 LEGTIME 1 FAF ANSAG MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "GM002",
+                    "fixes": {
+                        "GM002": "GM002 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "GM003",
+                    "fixes": {
+                        "GM003": "GM003 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

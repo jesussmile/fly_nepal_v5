@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "CBL",
+            "lat": 8.121277783333333,
+            "lon": 63.532888883333335
+        },
+        {
+            "name": "D128J",
+            "lat": 8.872094433333332,
+            "lon": 64.00430556666667
+        },
+        {
+            "name": "D157J",
+            "lat": 8.807725,
+            "lon": 64.05588333333333
+        },
+        {
+            "name": "D311N",
+            "lat": 9.049194433333334,
+            "lon": 64.36696111666667
+        },
+        {
+            "name": "D326J",
+            "lat": 9.052880566666667,
+            "lon": 64.28311388333333
+        },
+        {
+            "name": "DALUR",
+            "lat": 9.924444433333333,
+            "lon": 66.07388888333334
+        },
+        {
+            "name": "FF08",
+            "lat": 8.905036116666667,
+            "lon": 64.25206943333333
+        },
+        {
+            "name": "GEBAL",
+            "lat": 9.446388883333332,
+            "lon": 64.72527778333334
+        },
+        {
+            "name": "MA08",
+            "lat": 8.935052783333333,
+            "lon": 64.17346943333334
+        },
+        {
+            "name": "MIGED",
+            "lat": 8.608083333333333,
+            "lon": 63.41866666666667
+        },
+        {
+            "name": "PI001",
+            "lat": 8.920146683333334,
+            "lon": 64.21287558333333
+        },
+        {
+            "name": "PI002",
+            "lat": 8.949290266666667,
+            "lon": 64.27915316666666
+        },
+        {
+            "name": "PI003",
+            "lat": 8.881294416666666,
+            "lon": 64.31523491666667
+        },
+        {
+            "name": "SOM",
+            "lat": 8.941055566666666,
+            "lon": 64.15775
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "CBL",
+            "rnw": "08",
+            "fixes": {
+                "SOM": "SOM TURN RIGHT HDG 218 INTERCEPT RADIAL 157 TO",
+                "D157J": "D157J 3000",
+                "CBL": "CBL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DALUR",
+            "rnw": "08",
+            "fixes": {
+                "SOM": "SOM TURN LEFT HDG 281 INTERCEPT RADIAL 311 TO",
+                "D311N": "D311N 3000",
+                "DALUR": "DALUR"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GEBAL",
+            "rnw": "08",
+            "fixes": {
+                "SOM": "SOM TURN LEFT HDG 295 INTERCEPT RADIAL 326 TO",
+                "D326J": "D326J 3000",
+                "GEBAL": "GEBAL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MIGED",
+            "rnw": "08",
+            "fixes": {
+                "SOM": "SOM HDG 150 INTERCEPT RADIAL 128 TO",
+                "D128J": "D128J 3000",
+                "MIGED": "MIGED"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD08",
+            "fixes": {
+                "FF08": "FF08 2700",
+                "MA08": "MA08 1183 RNW 08 TRK 083 UNTIL 3.0 FROM",
+                "SOM": "SOM TURN LEFT DIRECT SOM AT OR ABOVE 3000 FAF FF08 MAP MA08"
+            },
+            "transitions": [
+                {
+                    "name": "SOM",
+                    "fixes": {
+                        "SOM": "SOM AT OR ABOVE 4000",
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "fixes": [
+        {
+            "name": "ACO",
+            "lat": 41.10790278333333,
+            "lon": 81.20151943333333
+        },
+        {
+            "name": "CFBCX",
+            "lat": 40.913413883333334,
+            "lon": 81.00144721666666
+        },
+        {
+            "name": "CHEZE",
+            "lat": 40.976391666666665,
+            "lon": 81.06606666666667
+        },
+        {
+            "name": "HARTR",
+            "lat": 40.99138333333333,
+            "lon": 81.01649721666666
+        },
+        {
+            "name": "WAANN",
+            "lat": 41.07394166666667,
+            "lon": 81.03246943333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "WAANN": "WAANN AT OR ABOVE 3000 OVERFLY WAANN AT OR ABOVE 3000 HOLD AT WAANN RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF HARTR MAP RNW 18",
+                "HARTR": "HARTR 2800 RNW 18 TRK 181 UNTIL 1700 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WAANN",
+                    "fixes": {
+                        "WAANN": "WAANN RIGHT TURN INBOUNDCOURSE 181 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR18",
+            "fixes": {
+                "ACO": "ACO AT OR ABOVE 3000 ACO AT OR ABOVE 3100 HOLD AT ACO RIGHT TURN INBOUNDCOURSE 152 LEGTIME 1 FAF CHEZE MAP CFBCX",
+                "CHEZE": "CHEZE 2700",
+                "CFBCX": "CFBCX 1283 RNW 18 TRK 146 UNTIL 3000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ACO",
+                    "fixes": {
+                        "ACO": "ACO RIGHT TURN INBOUNDCOURSE 152 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

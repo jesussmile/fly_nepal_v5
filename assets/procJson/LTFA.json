@@ -1,0 +1,169 @@
+{
+    "fixes": [
+        {
+            "name": "ADAMO",
+            "lat": 38.887166666666666,
+            "lon": 26.9395
+        },
+        {
+            "name": "AF001",
+            "lat": 38.85087708333333,
+            "lon": 26.772912116666667
+        },
+        {
+            "name": "AF002",
+            "lat": 38.87389113333333,
+            "lon": 26.849488433333335
+        },
+        {
+            "name": "CAGKU",
+            "lat": 38.815666666666665,
+            "lon": 26.94633333333333
+        },
+        {
+            "name": "CF17",
+            "lat": 38.72122221666667,
+            "lon": 26.956975
+        },
+        {
+            "name": "D320V",
+            "lat": 38.821852783333334,
+            "lon": 26.710188883333334
+        },
+        {
+            "name": "D347J",
+            "lat": 38.48265833333333,
+            "lon": 26.977680566666667
+        },
+        {
+            "name": "D349X",
+            "lat": 38.70735556666666,
+            "lon": 26.954919433333334
+        },
+        {
+            "name": "D349Y",
+            "lat": 38.73224166666667,
+            "lon": 26.951561116666667
+        },
+        {
+            "name": "D351N",
+            "lat": 38.76612778333333,
+            "lon": 26.952497216666668
+        },
+        {
+            "name": "FD17",
+            "lat": 38.632694433333334,
+            "lon": 26.96497778333333
+        },
+        {
+            "name": "FF17",
+            "lat": 38.68130278333334,
+            "lon": 26.96095
+        },
+        {
+            "name": "KLC",
+            "lat": 38.5215,
+            "lon": 26.979305566666667
+        },
+        {
+            "name": "KLC17",
+            "lat": 38.804383333333334,
+            "lon": 26.948677783333334
+        },
+        {
+            "name": "KORUK",
+            "lat": 38.815333333333335,
+            "lon": 26.941666666666666
+        },
+        {
+            "name": "MD17",
+            "lat": 38.54476111666666,
+            "lon": 26.9768
+        },
+        {
+            "name": "POKAZ",
+            "lat": 38.7535,
+            "lon": 26.771333333333335
+        },
+        {
+            "name": "VOR16",
+            "lat": 38.58292221666667,
+            "lon": 26.97167221666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "FD17": "FD17 2200",
+                "VOR16": "VOR16 AT OR ABOVE 1100",
+                "MD17": "MD17 350 RNW 17",
+                "D347J": "OVERFLY D347J TURN RIGHT DIRECT",
+                "KORUK": "KORUK AT OR ABOVE 5500 FAF FD17 MAP MD17"
+            },
+            "transitions": [
+                {
+                    "name": "KORUK",
+                    "fixes": {
+                        "KORUK": "KORUK AT OR BELOW 6500 AT OR ABOVE 5500",
+                        "D349Y": "D349Y AT OR ABOVE 3500",
+                        "D349X": "D349X AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSU17",
+            "fixes": {
+                "CF17": "CF17 AT OR ABOVE 3000",
+                "FF17": "FF17 3000 RNW 17 TRK 171 UNTIL 420",
+                "D347J": "OVERFLY D347J TURN RIGHT DIRECT",
+                "CAGKU": "CAGKU AT OR ABOVE 5500 FAF FF17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CAGKU",
+                    "fixes": {
+                        "CAGKU": "CAGKU AT OR BELOW 6500 AT OR ABOVE 5500",
+                        "D351N": "D351N AT OR ABOVE 3800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSW17",
+            "fixes": {
+                "CF17": "CF17 AT OR ABOVE 3000",
+                "FF17": "FF17 3000 RNW 17",
+                "KLC": "KLC TRK 174 UNTIL 3.0 FROM KLC TURN RIGHT TRK 350 INTERCEPT RADIAL 320 TO",
+                "D320V": "D320V D320V AT OR ABOVE 6000 FAF FF17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ADAMO",
+                    "fixes": {
+                        "ADAMO": "ADAMO AT OR BELOW 8000 AT OR ABOVE 6000",
+                        "KLC17": "KLC17 AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "POKAZ",
+                    "fixes": {
+                        "POKAZ": "POKAZ",
+                        "D320V": "D320V",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "ADAMO": "ADAMO AT OR ABOVE 6000",
+                        "KLC17": "KLC17 AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

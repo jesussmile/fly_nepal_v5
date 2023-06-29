@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "AWSON",
+            "lat": 34.480322216666664,
+            "lon": 83.98429166666666
+        },
+        {
+            "name": "CICCA",
+            "lat": 34.368883333333336,
+            "lon": 84.41734443333333
+        },
+        {
+            "name": "FOTFE",
+            "lat": 34.30581111666667,
+            "lon": 84.27973333333334
+        },
+        {
+            "name": "IPECA",
+            "lat": 34.623744433333336,
+            "lon": 84.53771943333334
+        },
+        {
+            "name": "JANEB",
+            "lat": 34.531136116666666,
+            "lon": 84.49388333333333
+        },
+        {
+            "name": "JASIV",
+            "lat": 34.24519166666666,
+            "lon": 84.46712778333334
+        },
+        {
+            "name": "NELLO",
+            "lat": 34.49956388333333,
+            "lon": 84.41673333333334
+        },
+        {
+            "name": "RMG",
+            "lat": 34.162563883333334,
+            "lon": 85.11940833333334
+        },
+        {
+            "name": "VIVIC",
+            "lat": 34.275536116666665,
+            "lon": 84.37346388333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "IPECA": "IPECA AT OR ABOVE 4400 OVERFLY IPECA AT OR ABOVE 4400 HOLD AT IPECA RIGHT TURN INBOUNDCOURSE 163 LEGDIST 5 FAF JANEB MAP RNW 16",
+                "JANEB": "JANEB 3000 RNW 16 TRK 163 UNTIL 3000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IPECA",
+                    "fixes": {
+                        "IPECA": "IPECA RIGHT TURN INBOUNDCOURSE 163 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "VIVIC": "VIVIC AT OR ABOVE 4000",
+                "CICCA": "CICCA 3200 RNW 34",
+                "IPECA": "OVERFLY IPECA AT OR ABOVE 5400 HOLD AT IPECA RIGHT TURN INBOUNDCOURSE 163 LEGDIST 5 FAF CICCA MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "AWSON",
+                    "fixes": {
+                        "AWSON": "AWSON",
+                        "FOTFE": "FOTFE AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "NELLO",
+                    "fixes": {
+                        "NELLO": "NELLO",
+                        "VIVIC": "VIVIC AT OR ABOVE 5000 HOLD AT VIVIC RIGHT TURN INBOUNDCOURSE 343 ALT 4000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "RMG",
+                    "fixes": {
+                        "RMG": "RMG",
+                        "JASIV": "JASIV AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

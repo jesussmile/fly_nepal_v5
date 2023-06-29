@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "AGNUC",
+            "lat": 35.386169433333336,
+            "lon": 95.09325556666667
+        },
+        {
+            "name": "ANIWU",
+            "lat": 35.18997778333333,
+            "lon": 95.09433056666667
+        },
+        {
+            "name": "ELKVI",
+            "lat": 35.09781388333333,
+            "lon": 95.09505556666667
+        },
+        {
+            "name": "FSM",
+            "lat": 35.38840833333333,
+            "lon": 94.271525
+        },
+        {
+            "name": "HANIG",
+            "lat": 35.54814721666666,
+            "lon": 95.09222221666667
+        },
+        {
+            "name": "JUPEB",
+            "lat": 35.057619433333336,
+            "lon": 94.94209443333334
+        },
+        {
+            "name": "OKM",
+            "lat": 35.693075,
+            "lon": 95.86595556666667
+        },
+        {
+            "name": "WASOL",
+            "lat": 35.328861116666666,
+            "lon": 95.09362221666666
+        },
+        {
+            "name": "ZUGEL",
+            "lat": 35.2422,
+            "lon": 95.09409721666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "HANIG": "HANIG AT OR ABOVE 3900",
+                "AGNUC": "AGNUC 2400",
+                "WASOL": "WASOL AT OR ABOVE 1300 RNW 17 TRK 177 UNTIL 900",
+                "ELKVI": "OVERFLY ELKVI AT OR ABOVE 3900 HOLD AT ELKVI RIGHT TURN INBOUNDCOURSE 357 ALT 3900 LEGDIST 4 FAF AGNUC MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "FSM",
+                    "fixes": {
+                        "FSM": "FSM",
+                        "HANIG": "OVERFLY HANIG AT OR ABOVE 3900 HOLD AT HANIG RIGHT TURN INBOUNDCOURSE 177 ALT 3900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "OKM",
+                    "fixes": {
+                        "OKM": "OKM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ELKVI": "ELKVI AT OR ABOVE 3900",
+                "ANIWU": "ANIWU 2400",
+                "ZUGEL": "ZUGEL AT OR ABOVE 1400 RNW 35 TRK 357 UNTIL 850",
+                "HANIG": "OVERFLY HANIG AT OR ABOVE 3900 HOLD AT HANIG RIGHT TURN INBOUNDCOURSE 177 LEGDIST 4 FAF ANIWU MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "ELKVI",
+                    "fixes": {
+                        "ELKVI": "ELKVI RIGHT TURN INBOUNDCOURSE 357 ALT 3900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FSM",
+                    "fixes": {
+                        "FSM": "FSM",
+                        "JUPEB": "JUPEB AT OR ABOVE 3900"
+                    }
+                }
+            ]
+        }
+    ]
+}

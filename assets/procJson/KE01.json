@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "EGOJO",
+            "lat": 31.628363883333332,
+            "lon": 102.98034721666667
+        },
+        {
+            "name": "FEVOM",
+            "lat": 31.860166666666668,
+            "lon": 103.47800833333334
+        },
+        {
+            "name": "GENLY",
+            "lat": 31.536713883333334,
+            "lon": 102.83725833333334
+        },
+        {
+            "name": "INK",
+            "lat": 31.874763883333333,
+            "lon": 103.24377778333333
+        },
+        {
+            "name": "JUGUD",
+            "lat": 31.956088883333333,
+            "lon": 103.02901666666666
+        },
+        {
+            "name": "LYHNE",
+            "lat": 31.647688883333334,
+            "lon": 102.98431388333333
+        },
+        {
+            "name": "OHARA",
+            "lat": 31.664438883333332,
+            "lon": 102.44894443333334
+        },
+        {
+            "name": "POMVE",
+            "lat": 31.692355566666667,
+            "lon": 103.080575
+        },
+        {
+            "name": "WUVNI",
+            "lat": 31.608994433333333,
+            "lon": 102.95005278333333
+        },
+        {
+            "name": "YOPUR",
+            "lat": 31.731408333333334,
+            "lon": 103.07975833333333
+        },
+        {
+            "name": "ZOBUL",
+            "lat": 31.466372216666667,
+            "lon": 102.72780833333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 12",
+        "RNW 19",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD12",
+            "fixes": {
+                "YOPUR": "YOPUR AT OR ABOVE 5000",
+                "LYHNE": "LYHNE 4300 RNW 12 TRK 125 UNTIL 3020 TURN RIGHT DIRECT",
+                "INK": "INK AT OR ABOVE 5000 HOLD AT INK RIGHT TURN INBOUNDCOURSE 150 LEGTIME 1 FAF LYHNE MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "FEVOM",
+                    "fixes": {
+                        "FEVOM": "FEVOM"
+                    }
+                },
+                {
+                    "name": "INK",
+                    "fixes": {
+                        "INK": "INK"
+                    }
+                },
+                {
+                    "name": "JUGUD",
+                    "fixes": {
+                        "JUGUD": "JUGUD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "POMVE": "POMVE AT OR ABOVE 5000",
+                "EGOJO": "EGOJO 4000 RNW 12 TRK 118 UNTIL 3200 TURN LEFT DIRECT",
+                "INK": "OVERFLY INK AT OR ABOVE 6000 HOLD AT INK LEFT TURN INBOUNDCOURSE 134 LEGDIST 5 FAF EGOJO MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "INK",
+                    "fixes": {
+                        "INK": "INK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "ZOBUL": "ZOBUL AT OR ABOVE 5000",
+                "GENLY": "GENLY 4000 RNW 30 TRK 298 UNTIL 3015",
+                "WUVNI": "WUVNI",
+                "INK": "OVERFLY INK AT OR ABOVE 6000 HOLD AT INK LEFT TURN INBOUNDCOURSE 134 LEGDIST 5 FAF GENLY MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "OHARA",
+                    "fixes": {
+                        "OHARA": "OHARA"
+                    }
+                },
+                {
+                    "name": "ZOBUL",
+                    "fixes": {
+                        "ZOBUL": "ZOBUL RIGHT TURN INBOUNDCOURSE 298 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

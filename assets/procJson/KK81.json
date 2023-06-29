@@ -1,0 +1,66 @@
+{
+    "fixes": [
+        {
+            "name": "COPAC",
+            "lat": 38.47813611666667,
+            "lon": 94.98235833333334
+        },
+        {
+            "name": "KUVEY",
+            "lat": 38.38621943333333,
+            "lon": 95.07370556666666
+        },
+        {
+            "name": "ROKSE",
+            "lat": 38.611575,
+            "lon": 94.84921666666666
+        },
+        {
+            "name": "SOKYO",
+            "lat": 38.70217221666667,
+            "lon": 94.75846111666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 15",
+        "RNW 21",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "KUVEY": "KUVEY AT OR ABOVE 3100",
+                "COPAC": "COPAC 2600 RNW 03 TRK 035 UNTIL 1272",
+                "SOKYO": "OVERFLY SOKYO AT OR ABOVE 3100 HOLD AT SOKYO RIGHT TURN INBOUNDCOURSE 215 LEGDIST 4 FAF COPAC MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "KUVEY",
+                    "fixes": {
+                        "KUVEY": "KUVEY RIGHT TURN INBOUNDCOURSE 035 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "SOKYO": "SOKYO AT OR ABOVE 3100",
+                "ROKSE": "ROKSE 2600 RNW 21 TRK 215 UNTIL 1252",
+                "KUVEY": "OVERFLY KUVEY AT OR ABOVE 3100 HOLD AT KUVEY RIGHT TURN INBOUNDCOURSE 035 LEGDIST 4 FAF ROKSE MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "SOKYO",
+                    "fixes": {
+                        "SOKYO": "SOKYO RIGHT TURN INBOUNDCOURSE 215 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

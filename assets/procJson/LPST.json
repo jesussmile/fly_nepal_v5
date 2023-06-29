@@ -1,0 +1,249 @@
+{
+    "fixes": [
+        {
+            "name": "ABSOK",
+            "lat": 38.810833333333335,
+            "lon": 9.266666666666667
+        },
+        {
+            "name": "AGILO",
+            "lat": 38.995277783333336,
+            "lon": 9.356388883333333
+        },
+        {
+            "name": "CF14",
+            "lat": 38.952944433333336,
+            "lon": 9.483044433333333
+        },
+        {
+            "name": "D316G",
+            "lat": 38.961986116666665,
+            "lon": 9.509677783333334
+        },
+        {
+            "name": "D316I",
+            "lat": 38.98281943333333,
+            "lon": 9.537386116666667
+        },
+        {
+            "name": "DER14",
+            "lat": 38.825291666666665,
+            "lon": 9.332419433333333
+        },
+        {
+            "name": "DER32",
+            "lat": 38.836855566666664,
+            "lon": 9.346966666666667
+        },
+        {
+            "name": "EVASA",
+            "lat": 39.016666666666666,
+            "lon": 9.552222216666667
+        },
+        {
+            "name": "FF14",
+            "lat": 38.89102221666667,
+            "lon": 9.4115
+        },
+        {
+            "name": "FS14X",
+            "lat": 38.895730566666664,
+            "lon": 9.416933333333333
+        },
+        {
+            "name": "MA14",
+            "lat": 38.84516943333333,
+            "lon": 9.358638883333333
+        },
+        {
+            "name": "MN14",
+            "lat": 38.84613888333333,
+            "lon": 9.356044433333333
+        },
+        {
+            "name": "PEKOV",
+            "lat": 39.36138888333333,
+            "lon": 9.389166666666666
+        },
+        {
+            "name": "SRA",
+            "lat": 38.82905556666667,
+            "lon": 9.340083333333334
+        },
+        {
+            "name": "STRNB",
+            "lat": 38.880916666666664,
+            "lon": 9.402083333333334
+        },
+        {
+            "name": "VANUP",
+            "lat": 38.88222221666667,
+            "lon": 9.542222216666667
+        },
+        {
+            "name": "XOBLU",
+            "lat": 38.916666666666664,
+            "lon": 9.438888883333334
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "ABSO1N",
+            "rnw": "32",
+            "fixes": {
+                "DER32": "OVERFLY DER32",
+                "XOBLU": "OVERFLY XOBLU TURN RIGHT DIRECT",
+                "SRA": "SRA SPEED 180",
+                "ABSOK": "ABSOK AT OR ABOVE 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ABSO1S",
+            "rnw": "14",
+            "fixes": {
+                "DER14": "OVERFLY DER14 TRK 137 UNTIL 1500 TURN RIGHT DIRECT",
+                "SRA": "SRA SPEED 180",
+                "XOBLU": "OVERFLY XOBLU TURN RIGHT DIRECT",
+                "ABSOK": "ABSOK AT OR ABOVE 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PEKO1N",
+            "rnw": "32",
+            "fixes": {
+                "DER32": "OVERFLY DER32",
+                "XOBLU": "OVERFLY XOBLU SPEED 180 TRK 043 INTERCEPT RADIAL 358 TO",
+                "PEKOV": "PEKOV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PEKO1S",
+            "rnw": "14",
+            "fixes": {
+                "DER14": "OVERFLY DER14 TRK 137 UNTIL 1500 TURN RIGHT DIRECT",
+                "SRA": "SRA SPEED 140",
+                "PEKOV": "PEKOV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ14",
+            "fixes": {
+                "CF14": "CF14 AT OR ABOVE 1900",
+                "FF14": "FF14 1900",
+                "MA14": "MA14 706 RNW 14",
+                "SRA": "SRA TRK 140 UNTIL 1600 TURN RIGHT DIRECT",
+                "VANUP": "VANUP 3000 SPEED 170 HOLD AT VANUP LEFT TURN INBOUNDCOURSE 290 ALT 5000 SPEED 170 LEGDIST 3 FAF FF14 MAP MA14"
+            },
+            "transitions": [
+                {
+                    "name": "AGILO",
+                    "fixes": {
+                        "AGILO": "AGILO AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "EVASA",
+                    "fixes": {
+                        "EVASA": "EVASA AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "VANUP",
+                    "fixes": {
+                        "VANUP": "VANUP AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB14",
+            "fixes": {
+                "STRNB": "STRNB 1600 STRNB 4000 SPEED 170 HOLD AT STRNB LEFT TURN INBOUNDCOURSE 316 ALT 5000 SPEED 170 LEGTIME 1 FAF STRNB MAP MN14",
+                "MN14": "MN14 688 RNW 14 TRK 136 UNTIL 1600 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "STR1",
+                    "fixes": {
+                        "STRNB": "STRNB AT OR ABOVE 4000",
+                        "D316I": "D316I AT OR ABOVE 2500 TRK 001 UNTIL 4.4 FROM D316I TURN LEFT DIRECT D316I AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "STR2",
+                    "fixes": {
+                        "STRNB": "STRNB AT OR ABOVE 4000",
+                        "D316G": "D316G AT OR ABOVE 2500 TRK 001 UNTIL 2.3 FROM D316G TURN LEFT DIRECT D316G AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORX14",
+            "fixes": {
+                "FS14X": "FS14X 2000 RNW 14",
+                "SRA": "OVERFLY SRA TRK 140 UNTIL 1600 TURN RIGHT DIRECT",
+                "STRNB": "STRNB 4000 SPEED 170 HOLD AT STRNB LEFT TURN INBOUNDCOURSE 316 ALT 5000 SPEED 170 LEGTIME 1 FAF FS14X MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "SRA1",
+                    "fixes": {
+                        "SRA": "SRA AT OR ABOVE 3000 TRK 341 UNTIL 8.8 FROM SRA"
+                    }
+                },
+                {
+                    "name": "SRA2",
+                    "fixes": {
+                        "SRA": "SRA AT OR ABOVE 3000 TRK 333 UNTIL 7.0 FROM SRA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR14",
+            "fixes": {
+                "CF14": "CF14 AT OR ABOVE 1900",
+                "FF14": "FF14 1900",
+                "MA14": "MA14 706 RNW 14",
+                "SRA": "SRA TRK 140 UNTIL 1600 TURN RIGHT DIRECT",
+                "VANUP": "VANUP 3000 SPEED 170 HOLD AT VANUP LEFT TURN INBOUNDCOURSE 290 ALT 5000 SPEED 170 LEGDIST 3 FAF FF14 MAP MA14"
+            },
+            "transitions": [
+                {
+                    "name": "AGILO",
+                    "fixes": {
+                        "AGILO": "AGILO AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "EVASA",
+                    "fixes": {
+                        "EVASA": "EVASA AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "VANUP",
+                    "fixes": {
+                        "VANUP": "VANUP AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

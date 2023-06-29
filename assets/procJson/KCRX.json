@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "CEGEM",
+            "lat": 35.023797216666665,
+            "lon": 88.61843888333334
+        },
+        {
+            "name": "CFFSP",
+            "lat": 35.08173888333334,
+            "lon": 88.62641666666667
+        },
+        {
+            "name": "FOLIT",
+            "lat": 35.12505,
+            "lon": 88.63238888333333
+        },
+        {
+            "name": "GAGPE",
+            "lat": 35.13441388333333,
+            "lon": 88.53143333333334
+        },
+        {
+            "name": "HADRO",
+            "lat": 35.11560278333334,
+            "lon": 88.73332221666666
+        },
+        {
+            "name": "KERMI",
+            "lat": 34.73149721666667,
+            "lon": 88.15467221666667
+        },
+        {
+            "name": "SEYER",
+            "lat": 35.01555,
+            "lon": 88.61569166666666
+        },
+        {
+            "name": "TATOC",
+            "lat": 34.806013883333335,
+            "lon": 88.58855
+        },
+        {
+            "name": "ULOFA",
+            "lat": 34.86794166666667,
+            "lon": 88.59703333333333
+        },
+        {
+            "name": "WEDGO",
+            "lat": 34.70636666666667,
+            "lon": 88.574925
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "CFFSP": "CFFSP AT OR ABOVE 2400",
+                "SEYER": "SEYER 2207 RNW 18 TRK 176 UNTIL 1000 TURN RIGHT DIRECT SEYER AT OR ABOVE 2400 HOLD AT SEYER RIGHT TURN INBOUNDCOURSE 176 ALT 2400 LEGTIME 1 FAF SEYER MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "KERMI",
+                    "fixes": {
+                        "KERMI": "KERMI",
+                        "SEYER": "OVERFLY SEYER AT OR ABOVE 2400 HOLD AT SEYER RIGHT TURN INBOUNDCOURSE 176 ALT 2400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "FOLIT": "FOLIT AT OR ABOVE 3000",
+                "CEGEM": "CEGEM 2400 RNW 18",
+                "WEDGO": "OVERFLY WEDGO AT OR ABOVE 3000 HOLD AT WEDGO RIGHT TURN INBOUNDCOURSE 356 LEGDIST 4 FAF CEGEM MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "FOLIT",
+                    "fixes": {
+                        "FOLIT": "FOLIT LEFT TURN INBOUNDCOURSE 176 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GAGPE",
+                    "fixes": {
+                        "GAGPE": "GAGPE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HADRO",
+                    "fixes": {
+                        "HADRO": "HADRO AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "WEDGO": "WEDGO AT OR ABOVE 3000",
+                "TATOC": "TATOC 2400",
+                "ULOFA": "ULOFA AT OR ABOVE 1200 RNW 36 TRK 356 UNTIL 696",
+                "FOLIT": "OVERFLY FOLIT AT OR ABOVE 3000 HOLD AT FOLIT LEFT TURN INBOUNDCOURSE 176 LEGDIST 4 FAF TATOC MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "WEDGO",
+                    "fixes": {
+                        "WEDGO": "WEDGO RIGHT TURN INBOUNDCOURSE 356 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "ALDUS",
+            "lat": 31.574952783333334,
+            "lon": 58.111638883333335
+        },
+        {
+            "name": "ARAPE",
+            "lat": 31.016666666666666,
+            "lon": 57.370277783333336
+        },
+        {
+            "name": "DAMPA",
+            "lat": 31.493105566666667,
+            "lon": 58.0369
+        },
+        {
+            "name": "FF05",
+            "lat": 31.5073,
+            "lon": 58.035130566666666
+        },
+        {
+            "name": "FF23",
+            "lat": 31.379311116666667,
+            "lon": 57.91965278333333
+        },
+        {
+            "name": "FN05",
+            "lat": 31.506047216666666,
+            "lon": 58.04032778333333
+        },
+        {
+            "name": "MEVIV",
+            "lat": 31.310833333333335,
+            "lon": 57.262777783333334
+        },
+        {
+            "name": "SANDU",
+            "lat": 32.20111111666667,
+            "lon": 57.556388883333334
+        },
+        {
+            "name": "STNB",
+            "lat": 31.450666666666667,
+            "lon": 57.99672221666667
+        },
+        {
+            "name": "STO",
+            "lat": 31.434722216666668,
+            "lon": 57.984222216666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 13",
+        "RNW 23",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB05",
+            "fixes": {
+                "FN05": "FN05 1600",
+                "STNB": "STNB 354 RNW 05 TRK 044 UNTIL 550 HDG 044 VECTORS FAF FN05 MAP S"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "ALDUS": "ALDUS AT OR ABOVE 3000 ALDUS HOLD AT ALDUS RIGHT TURN INBOUNDCOURSE 049 LEGTIME 1 FAF DAMPA MAP RNW 05",
+                "DAMPA": "DAMPA 1450 RNW 05 TRK 049 UNTIL 3000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ARAPE",
+                    "fixes": {
+                        "ARAPE": "ARAPE",
+                        "ALDUS": "ALDUS AT OR ABOVE 3000 HOLD AT ALDUS RIGHT TURN INBOUNDCOURSE 049 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "MEVIV",
+                    "fixes": {
+                        "MEVIV": "MEVIV",
+                        "ALDUS": "ALDUS AT OR ABOVE 3000 HOLD AT ALDUS RIGHT TURN INBOUNDCOURSE 049 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SANDU",
+                    "fixes": {
+                        "SANDU": "SANDU",
+                        "ALDUS": "ALDUS AT OR ABOVE 3000 HOLD AT ALDUS RIGHT TURN INBOUNDCOURSE 049 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR05",
+            "fixes": {
+                "FF05": "FF05 1600 RNW 05",
+                "STO": "STO TRK 041 UNTIL 2000 FAF FF05 MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VOR23",
+            "fixes": {
+                "FF23": "FF23 1600 RNW 23",
+                "STO": "STO TRK 235 UNTIL 2000 FAF FF23 MAP RNW 23"
+            },
+            "transitions": []
+        }
+    ]
+}

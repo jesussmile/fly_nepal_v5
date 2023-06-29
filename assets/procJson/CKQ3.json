@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "IPTOB",
+            "lat": 52.3078,
+            "lon": 92.82087778333333
+        },
+        {
+            "name": "NOXUM",
+            "lat": 52.54415278333333,
+            "lon": 93.08054443333333
+        },
+        {
+            "name": "OTPIX",
+            "lat": 52.539380566666665,
+            "lon": 93.07088611666667
+        },
+        {
+            "name": "OTSAT",
+            "lat": 52.44048611666667,
+            "lon": 92.87155556666667
+        },
+        {
+            "name": "SERKO",
+            "lat": 52.372405566666664,
+            "lon": 92.73523888333334
+        },
+        {
+            "name": "SUTUD",
+            "lat": 52.60694721666667,
+            "lon": 93.20798888333333
+        },
+        {
+            "name": "UDNAT",
+            "lat": 52.435575,
+            "lon": 92.86169443333333
+        },
+        {
+            "name": "URMUS",
+            "lat": 52.54233611666667,
+            "lon": 93.29406388333334
+        },
+        {
+            "name": "VILTI",
+            "lat": 52.43694721666667,
+            "lon": 92.64935
+        },
+        {
+            "name": "VINPU",
+            "lat": 52.671497216666666,
+            "lon": 93.12165833333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "SUTUD": "SUTUD AT OR ABOVE 2700",
+                "NOXUM": "NOXUM 2700 RNW 13",
+                "OTSAT": "OVERFLY OTSAT 2600 HOLD AT OTSAT RIGHT TURN INBOUNDCOURSE 130 LEGTIME 1 FAF NOXUM MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "URMUS",
+                    "fixes": {
+                        "URMUS": "URMUS"
+                    }
+                },
+                {
+                    "name": "VINPU",
+                    "fixes": {
+                        "VINPU": "VINPU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "SERKO": "SERKO AT OR ABOVE 2700",
+                "UDNAT": "UDNAT 2700 RNW 31",
+                "OTPIX": "OVERFLY OTPIX 2700 HOLD AT OTPIX RIGHT TURN INBOUNDCOURSE 310 LEGTIME 1 FAF UDNAT MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "IPTOB",
+                    "fixes": {
+                        "IPTOB": "IPTOB"
+                    }
+                },
+                {
+                    "name": "VILTI",
+                    "fixes": {
+                        "VILTI": "VILTI"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "JOCKA",
+            "lat": 44.65741943333333,
+            "lon": 95.49920278333333
+        },
+        {
+            "name": "JUNES",
+            "lat": 44.46878888333333,
+            "lon": 95.59381111666667
+        },
+        {
+            "name": "MELLL",
+            "lat": 44.67500833333333,
+            "lon": 95.50141943333334
+        },
+        {
+            "name": "MOLOW",
+            "lat": 44.548113883333336,
+            "lon": 95.43472778333333
+        },
+        {
+            "name": "MVE",
+            "lat": 44.972675,
+            "lon": 95.71219166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 44.623496583333335,
+            "lon": 95.46294203333333
+        },
+        {
+            "name": "PI002",
+            "lat": 44.60250285,
+            "lon": 95.36668411666666
+        },
+        {
+            "name": "PI003",
+            "lat": 44.52779775,
+            "lon": 95.39166481666666
+        },
+        {
+            "name": "RISLE",
+            "lat": 44.67647778333333,
+            "lon": 95.92956111666666
+        },
+        {
+            "name": "RWF",
+            "lat": 44.467275,
+            "lon": 95.12823056666667
+        },
+        {
+            "name": "SOCSI",
+            "lat": 44.600513883333335,
+            "lon": 95.44911943333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD33",
+            "fixes": {
+                "SOCSI": "SOCSI AT OR ABOVE 3000",
+                "MELLL": "MELLL 3000 RNW 33 TRK 328 UNTIL 3000 TURN LEFT DIRECT MELLL HOLD AT MELLL RIGHT TURN INBOUNDCOURSE 328 LEGTIME 1 FAF MELLL MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "MVE",
+                    "fixes": {
+                        "MVE": "MVE",
+                        "MELLL": "MELLL AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "RWF",
+                    "fixes": {
+                        "RWF": "RWF"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "MOLOW": "MOLOW AT OR ABOVE 3800 OVERFLY MOLOW AT OR ABOVE 3800 HOLD AT MOLOW RIGHT TURN INBOUNDCOURSE 333 LEGDIST 4 FAF JOCKA MAP RNW 33",
+                "JOCKA": "JOCKA 3000 RNW 33 TRK 333 UNTIL 1448 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MOLOW",
+                    "fixes": {
+                        "MOLOW": "MOLOW RIGHT TURN INBOUNDCOURSE 333 ALT 3800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RISLE",
+                    "fixes": {
+                        "RISLE": "RISLE",
+                        "JUNES": "JUNES AT OR ABOVE 3800"
+                    }
+                }
+            ]
+        }
+    ]
+}

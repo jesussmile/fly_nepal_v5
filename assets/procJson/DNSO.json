@@ -1,0 +1,163 @@
+{
+    "fixes": [
+        {
+            "name": "AMBUM",
+            "lat": 12.951366666666667,
+            "lon": 4.989130566666667
+        },
+        {
+            "name": "BOVTI",
+            "lat": 12.961738883333334,
+            "lon": 5.404622216666667
+        },
+        {
+            "name": "CI08",
+            "lat": 12.890258333333334,
+            "lon": 5.096486116666667
+        },
+        {
+            "name": "DEVDU",
+            "lat": 12.850641666666666,
+            "lon": 4.925744433333334
+        },
+        {
+            "name": "FD26",
+            "lat": 12.938030566666667,
+            "lon": 5.3041527833333335
+        },
+        {
+            "name": "FF08",
+            "lat": 12.893497216666667,
+            "lon": 5.110427783333333
+        },
+        {
+            "name": "GUMER",
+            "lat": 12.869911116666668,
+            "lon": 5.008763883333334
+        },
+        {
+            "name": "NUKOG",
+            "lat": 12.880283333333333,
+            "lon": 5.424263883333333
+        },
+        {
+            "name": "ODMEM",
+            "lat": 12.980994433333333,
+            "lon": 5.487680566666667
+        },
+        {
+            "name": "OGBEB",
+            "lat": 13.043191666666667,
+            "lon": 5.384966666666666
+        },
+        {
+            "name": "SO620",
+            "lat": 12.942483333333334,
+            "lon": 5.321569433333333
+        },
+        {
+            "name": "SO800",
+            "lat": 12.889180566666667,
+            "lon": 5.091788883333333
+        },
+        {
+            "name": "SOK",
+            "lat": 12.921083333333334,
+            "lon": 5.229333333333333
+        },
+        {
+            "name": "VOPKU",
+            "lat": 12.788452783333334,
+            "lon": 5.028383333333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD08",
+            "fixes": {
+                "FF08": "FF08 2700 RNW 08",
+                "SOK": "SOK TRK 078 UNTIL 2000 TURN RIGHT DIRECT SOK 5000 HOLD AT SOK RIGHT TURN INBOUNDCOURSE 078 LEGTIME 1 FAF FF08 MAP RNW 08"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD26",
+            "fixes": {
+                "FD26": "FD26 2700",
+                "SOK": "SOK 1238 RNW 26 TRK 258 UNTIL 2000 TURN LEFT DIRECT SOK 5000 HOLD AT SOK LEFT TURN INBOUNDCOURSE 258 LEGTIME 1 FAF FD26 MAP SOK"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILS08",
+            "fixes": {
+                "CI08": "CI08 AT OR ABOVE 2700",
+                "FF08": "FF08 2700 RNW 08",
+                "SOK": "SOK TRK 078 UNTIL 2000 TURN RIGHT DIRECT SOK 5000 HOLD AT SOK RIGHT TURN INBOUNDCOURSE 078 LEGTIME 1 FAF FF08 MAP RNW 08"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "GUMER": "GUMER AT OR ABOVE 3000 SPEED 200 GUMER HOLD AT GUMER LEFT TURN INBOUNDCOURSE 078 ALT 3000 SPEED 230 LEGTIME 1 FAF SO800 MAP RNW 08",
+                "SO800": "SO800 3000 RNW 08 TURN RIGHT DIRECT",
+                "VOPKU": "VOPKU SPEED 200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AMBUM",
+                    "fixes": {
+                        "AMBUM": "AMBUM"
+                    }
+                },
+                {
+                    "name": "DEVDU",
+                    "fixes": {
+                        "DEVDU": "DEVDU"
+                    }
+                },
+                {
+                    "name": "VOPKU",
+                    "fixes": {
+                        "VOPKU": "VOPKU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "BOVTI": "BOVTI AT OR ABOVE 3000 SPEED 200 BOVTI HOLD AT BOVTI LEFT TURN INBOUNDCOURSE 258 ALT 3000 SPEED 230 LEGTIME 1 FAF SO620 MAP RNW 26",
+                "SO620": "SO620 3000 RNW 26 TURN LEFT DIRECT",
+                "NUKOG": "NUKOG SPEED 200 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NUKOG",
+                    "fixes": {
+                        "NUKOG": "NUKOG"
+                    }
+                },
+                {
+                    "name": "ODMEM",
+                    "fixes": {
+                        "ODMEM": "ODMEM"
+                    }
+                },
+                {
+                    "name": "OGBEB",
+                    "fixes": {
+                        "OGBEB": "OGBEB"
+                    }
+                }
+            ]
+        }
+    ]
+}

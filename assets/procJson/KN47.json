@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "HYDRA",
+            "lat": 40.246925,
+            "lon": 75.6317
+        },
+        {
+            "name": "MAJEH",
+            "lat": 40.259375,
+            "lon": 75.66783333333333
+        },
+        {
+            "name": "NUGAE",
+            "lat": 40.300372216666666,
+            "lon": 75.54697778333333
+        },
+        {
+            "name": "PTW",
+            "lat": 40.22223056666667,
+            "lon": 75.56025
+        },
+        {
+            "name": "RUSDE",
+            "lat": 40.33974166666667,
+            "lon": 75.42440278333333
+        },
+        {
+            "name": "SPUDS",
+            "lat": 40.451363883333336,
+            "lon": 75.43293333333334
+        },
+        {
+            "name": "ZUVIV",
+            "lat": 40.38685556666667,
+            "lon": 75.30166111666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "RUSDE": "RUSDE AT OR ABOVE 3000 OVERFLY RUSDE AT OR ABOVE 3000 HOLD AT RUSDE RIGHT TURN INBOUNDCOURSE 259 LEGDIST 4 FAF NUGAE MAP RNW 26",
+                "NUGAE": "NUGAE 2200 RNW 26 TRK 259 UNTIL 656 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PTW",
+                    "fixes": {
+                        "PTW": "PTW",
+                        "RUSDE": "OVERFLY RUSDE AT OR ABOVE 3000 HOLD AT RUSDE RIGHT TURN INBOUNDCOURSE 259 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SPUDS",
+                    "fixes": {
+                        "SPUDS": "SPUDS"
+                    }
+                },
+                {
+                    "name": "ZUVIV",
+                    "fixes": {
+                        "ZUVIV": "ZUVIV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB08",
+            "fixes": {
+                "PTW": "PTW 2100 PTW AT OR ABOVE 2100 HOLD AT PTW RIGHT TURN INBOUNDCOURSE 303 LEGTIME 1 FAF PTW MAP MAJEH",
+                "HYDRA": "HYDRA AT OR ABOVE 1100",
+                "MAJEH": "MAJEH 1080 RNW 08 TRK 303 UNTIL 1080 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PTW",
+                    "fixes": {
+                        "PTW": "PTW RIGHT TURN INBOUNDCOURSE 303 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB26",
+            "fixes": {
+                "PTW": "PTW 2100 PTW AT OR ABOVE 2100 HOLD AT PTW RIGHT TURN INBOUNDCOURSE 303 LEGTIME 1 FAF PTW MAP MAJEH",
+                "HYDRA": "HYDRA AT OR ABOVE 1100",
+                "MAJEH": "MAJEH 1080 RNW 26 TRK 303 UNTIL 1080 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PTW",
+                    "fixes": {
+                        "PTW": "PTW RIGHT TURN INBOUNDCOURSE 303 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

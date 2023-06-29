@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "CFBXR",
+            "lat": 41.524047216666666,
+            "lon": 92.86104443333333
+        },
+        {
+            "name": "EBSUH",
+            "lat": 41.74606111666667,
+            "lon": 93.09861943333334
+        },
+        {
+            "name": "KOWDO",
+            "lat": 41.82328056666667,
+            "lon": 93.18176388333333
+        },
+        {
+            "name": "MATAG",
+            "lat": 41.60327778333333,
+            "lon": 92.94558333333333
+        },
+        {
+            "name": "NEJXU",
+            "lat": 41.72611388333333,
+            "lon": 93.06451666666666
+        },
+        {
+            "name": "PI001",
+            "lat": 41.55793383333334,
+            "lon": 92.89652403333334
+        },
+        {
+            "name": "PI002",
+            "lat": 41.550403333333335,
+            "lon": 92.80128525
+        },
+        {
+            "name": "PI003",
+            "lat": 41.47366845,
+            "lon": 92.80559631666667
+        },
+        {
+            "name": "PI004",
+            "lat": 41.8327979,
+            "lon": 93.15167303333334
+        },
+        {
+            "name": "PI005",
+            "lat": 41.84765983333333,
+            "lon": 93.24577773333333
+        },
+        {
+            "name": "PI006",
+            "lat": 41.9235973,
+            "lon": 93.23103423333333
+        },
+        {
+            "name": "TNU",
+            "lat": 41.783883333333335,
+            "lon": 93.10903333333333
+        },
+        {
+            "name": "UBHIT",
+            "lat": 41.52535,
+            "lon": 92.86243333333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS32",
+            "fixes": {
+                "CFBXR": "CFBXR AT OR ABOVE 3000",
+                "MATAG": "MATAG 2600 RNW 32 TRK 321 UNTIL 1360",
+                "TNU": "TNU AT OR ABOVE 3000 HOLD AT TNU RIGHT TURN INBOUNDCOURSE 147 LEGTIME 1 FAF MATAG MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "TNU",
+                    "fixes": {
+                        "TNU": "TNU",
+                        "MATAG": "MATAG AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "KOWDO": "KOWDO AT OR ABOVE 3100",
+                "EBSUH": "EBSUH 2600 RNW 14 TRK 141 UNTIL 1203",
+                "UBHIT": "OVERFLY UBHIT AT OR ABOVE 2700 HOLD AT UBHIT RIGHT TURN INBOUNDCOURSE 321 LEGDIST 4 FAF EBSUH MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "KOWDO",
+                    "fixes": {
+                        "KOWDO": "KOWDO RIGHT TURN INBOUNDCOURSE 141 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "UBHIT": "UBHIT AT OR ABOVE 2700",
+                "MATAG": "MATAG 2600 RNW 32 TRK 321 UNTIL 1150",
+                "KOWDO": "OVERFLY KOWDO AT OR ABOVE 3100 HOLD AT KOWDO RIGHT TURN INBOUNDCOURSE 141 LEGDIST 4 FAF MATAG MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "UBHIT",
+                    "fixes": {
+                        "UBHIT": "UBHIT RIGHT TURN INBOUNDCOURSE 321 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR14",
+            "fixes": {
+                "TNU": "TNU 2700 TNU HOLD AT TNU RIGHT TURN INBOUNDCOURSE 147 LEGTIME 1 FAF TNU MAP RNW 14",
+                "NEJXU": "NEJXU AT OR ABOVE 1460 RNW 14 TRK 147 UNTIL 2700 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TNU",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2700 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2700 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

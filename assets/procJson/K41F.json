@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "ANERY",
+            "lat": 34.190986116666664,
+            "lon": 101.33279721666666
+        },
+        {
+            "name": "ASACI",
+            "lat": 33.81188611666666,
+            "lon": 101.32771388333333
+        },
+        {
+            "name": "BIGPE",
+            "lat": 34.1896,
+            "lon": 101.47342778333334
+        },
+        {
+            "name": "CESUM",
+            "lat": 34.19221111666667,
+            "lon": 101.19216111666667
+        },
+        {
+            "name": "CINAV",
+            "lat": 33.912588883333335,
+            "lon": 101.32905833333334
+        },
+        {
+            "name": "COSAG",
+            "lat": 34.09028611666667,
+            "lon": 101.33144166666666
+        },
+        {
+            "name": "EHOVI",
+            "lat": 34.05464166666667,
+            "lon": 101.33096388333334
+        },
+        {
+            "name": "EXONE",
+            "lat": 34.20189166666667,
+            "lon": 100.70551111666667
+        },
+        {
+            "name": "FIKUR",
+            "lat": 33.8105,
+            "lon": 101.46772221666667
+        },
+        {
+            "name": "FLOYD",
+            "lat": 33.976163883333335,
+            "lon": 101.26001666666667
+        },
+        {
+            "name": "PVW",
+            "lat": 34.086191666666664,
+            "lon": 101.79018611666666
+        },
+        {
+            "name": "SHOES",
+            "lat": 33.83963611666667,
+            "lon": 101.59099721666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "ANERY": "ANERY AT OR ABOVE 5000",
+                "COSAG": "COSAG 4800",
+                "EHOVI": "EHOVI AT OR ABOVE 4120 RNW 17 TRK 172 UNTIL 3587",
+                "ASACI": "OVERFLY ASACI AT OR ABOVE 5000 HOLD AT ASACI RIGHT TURN INBOUNDCOURSE 352 LEGDIST 5 FAF COSAG MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "EXONE",
+                    "fixes": {
+                        "EXONE": "EXONE",
+                        "CESUM": "CESUM AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "PVW",
+                    "fixes": {
+                        "PVW": "PVW",
+                        "BIGPE": "BIGPE AT OR ABOVE 5300"
+                    }
+                },
+                {
+                    "name": "SHOES",
+                    "fixes": {
+                        "SHOES": "SHOES",
+                        "BIGPE": "BIGPE AT OR ABOVE 5300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ASACI": "ASACI AT OR ABOVE 5000 OVERFLY ASACI AT OR ABOVE 5000 HOLD AT ASACI RIGHT TURN INBOUNDCOURSE 352 LEGDIST 5 FAF CINAV MAP RNW 35",
+                "CINAV": "CINAV 4800 RNW 35 TRK 352 UNTIL 3587 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FLOYD",
+                    "fixes": {
+                        "FLOYD": "FLOYD",
+                        "ASACI": "OVERFLY ASACI AT OR ABOVE 5000 HOLD AT ASACI RIGHT TURN INBOUNDCOURSE 352 ALT 5000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "SHOES",
+                    "fixes": {
+                        "SHOES": "SHOES",
+                        "FIKUR": "FIKUR AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

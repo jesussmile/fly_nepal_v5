@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "CFPHR",
+            "lat": 35.379158333333336,
+            "lon": 78.47600556666667
+        },
+        {
+            "name": "CUMUT",
+            "lat": 35.57542778333333,
+            "lon": 78.372
+        },
+        {
+            "name": "HUNUL",
+            "lat": 35.71691666666667,
+            "lon": 78.29671666666667
+        },
+        {
+            "name": "JIHDI",
+            "lat": 35.471102783333336,
+            "lon": 78.42735833333333
+        },
+        {
+            "name": "JNALL",
+            "lat": 35.609752783333334,
+            "lon": 78.353775
+        },
+        {
+            "name": "JNNB",
+            "lat": 35.475,
+            "lon": 78.42528611666667
+        },
+        {
+            "name": "PI001",
+            "lat": 35.42130066666667,
+            "lon": 78.45325555
+        },
+        {
+            "name": "PI002",
+            "lat": 35.354848016666665,
+            "lon": 78.42033828333334
+        },
+        {
+            "name": "PI003",
+            "lat": 35.32155623333333,
+            "lon": 78.50510003333333
+        },
+        {
+            "name": "WENDI",
+            "lat": 35.71988056666667,
+            "lon": 78.40563056666667
+        },
+        {
+            "name": "WITIX",
+            "lat": 35.363877783333336,
+            "lon": 78.48407778333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY03",
+            "fixes": {
+                "WITIX": "WITIX AT OR ABOVE 3000",
+                "JIHDI": "JIHDI 1500 RNW 03",
+                "JNALL": "JNALL AT OR ABOVE 3400 HOLD AT JNALL LEFT TURN INBOUNDCOURSE 212 LEGDIST 4 FAF JIHDI MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "WITIX",
+                    "fixes": {
+                        "WITIX": "WITIX RIGHT TURN INBOUNDCOURSE 032 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ03",
+            "fixes": {
+                "CFPHR": "CFPHR AT OR ABOVE 1800",
+                "JIHDI": "JIHDI 1500 RNW 03 TRK 032 UNTIL 1000 TURN RIGHT DIRECT",
+                "JNNB": "JNNB AT OR ABOVE 1800 HOLD AT JNNB RIGHT TURN INBOUNDCOURSE 032 LEGTIME 1 FAF JIHDI MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "WENDI",
+                    "fixes": {
+                        "WENDI": "WENDI",
+                        "JNNB": "JNNB AT OR ABOVE 2900",
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "WITIX": "WITIX AT OR ABOVE 3000",
+                "JIHDI": "JIHDI 1500 RNW 03 TRK 032 UNTIL 397",
+                "JNALL": "OVERFLY JNALL AT OR ABOVE 3400 HOLD AT JNALL LEFT TURN INBOUNDCOURSE 212 LEGDIST 4 FAF JIHDI MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "WITIX",
+                    "fixes": {
+                        "WITIX": "WITIX RIGHT TURN INBOUNDCOURSE 032 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "HUNUL": "HUNUL AT OR ABOVE 3300",
+                "JNALL": "JNALL 1500",
+                "CUMUT": "CUMUT AT OR ABOVE 780 RNW 21 TRK 212 UNTIL 518",
+                "JIHDI": "OVERFLY JIHDI AT OR ABOVE 2700 HOLD AT JIHDI RIGHT TURN INBOUNDCOURSE 032 LEGDIST 4 FAF JNALL MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "HUNUL",
+                    "fixes": {
+                        "HUNUL": "HUNUL LEFT TURN INBOUNDCOURSE 213 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

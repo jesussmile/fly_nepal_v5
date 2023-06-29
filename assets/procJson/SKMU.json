@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "EGLEM",
+            "lat": 1.1635555666666666,
+            "lon": 70.25169166666667
+        },
+        {
+            "name": "FF20",
+            "lat": 1.3409111166666667,
+            "lon": 70.21960556666667
+        },
+        {
+            "name": "IRIDA",
+            "lat": 1.875,
+            "lon": 70.93944443333334
+        },
+        {
+            "name": "IRISA",
+            "lat": 1.097575,
+            "lon": 70.34940278333333
+        },
+        {
+            "name": "MA20",
+            "lat": 1.2749333333333333,
+            "lon": 70.23116388333334
+        },
+        {
+            "name": "MTU",
+            "lat": 1.2419444333333334,
+            "lon": 70.23694443333333
+        },
+        {
+            "name": "MU401",
+            "lat": 1.1931361166666667,
+            "lon": 70.24590278333334
+        },
+        {
+            "name": "MU402",
+            "lat": 1.2966694333333333,
+            "lon": 70.22568611666667
+        },
+        {
+            "name": "MU901",
+            "lat": 1.3024138833333332,
+            "lon": 70.22450833333333
+        },
+        {
+            "name": "NIBRO",
+            "lat": 1.6309666666666667,
+            "lon": 70.668275
+        },
+        {
+            "name": "OPMIX",
+            "lat": 1.0813916666666668,
+            "lon": 70.26777221666667
+        },
+        {
+            "name": "VURMU",
+            "lat": 1.3999861166666667,
+            "lon": 70.53017778333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "NIBR1A",
+            "rnw": "02",
+            "fixes": {
+                "MU901": "OVERFLY MU901 AT OR ABOVE 1000",
+                "NIBRO": "NIBRO AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VURM1B",
+            "rnw": "02",
+            "fixes": {
+                "MU901": "OVERFLY MU901 AT OR ABOVE 1000",
+                "VURMU": "VURMU AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "IRID1A",
+            "runway": "RNW 02",
+            "fixes": {
+                "IRIDA": "IRIDA AT OR ABOVE 5000",
+                "NIBRO": "NIBRO AT OR ABOVE 5000",
+                "VURMU": "VURMU AT OR ABOVE 5000",
+                "IRISA": "IRISA AT OR ABOVE 5000"
+            }
+        },
+        {
+            "name": "VURM1A",
+            "runway": "RNW 02",
+            "fixes": {
+                "VURMU": "VURMU AT OR ABOVE 5000",
+                "IRISA": "IRISA AT OR ABOVE 5000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD20",
+            "fixes": {
+                "FF20": "FF20 1700",
+                "MA20": "MA20 867 RNW 20 TRK 199 UNTIL 1080 HDG 240 UNTIL 2000 TURN RIGHT DIRECT",
+                "MTU": "MTU AT OR ABOVE 3000 HOLD AT MTU RIGHT TURN INBOUNDCOURSE 199 ALT 3000 LEGTIME 1 FAF FF20 MAP MA20"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "OPMIX": "OPMIX AT OR ABOVE 4000",
+                "EGLEM": "EGLEM 2380",
+                "MU401": "MU401 AT OR ABOVE 1820 RNW 02",
+                "MU402": "OVERFLY MU402 AT OR ABOVE 1500 SPEED 185 TURN LEFT DIRECT",
+                "IRISA": "OVERFLY IRISA AT OR ABOVE 5000 SPEED 230 HOLD AT IRISA RIGHT TURN INBOUNDCOURSE 111 ALT 5000 SPEED 230 LEGTIME 1 FAF EGLEM MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "IRISA",
+                    "fixes": {
+                        "IRISA": "IRISA AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

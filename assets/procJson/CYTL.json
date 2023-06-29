@@ -1,0 +1,154 @@
+{
+    "fixes": [
+        {
+            "name": "AVEMU",
+            "lat": 53.763438883333336,
+            "lon": 89.80295
+        },
+        {
+            "name": "BETAP",
+            "lat": 53.869830566666664,
+            "lon": 89.98692221666667
+        },
+        {
+            "name": "DAVOP",
+            "lat": 53.92785833333333,
+            "lon": 90.08786943333334
+        },
+        {
+            "name": "DEKNO",
+            "lat": 53.76618611666667,
+            "lon": 89.60730278333334
+        },
+        {
+            "name": "EBDAR",
+            "lat": 53.98747778333333,
+            "lon": 89.98947778333333
+        },
+        {
+            "name": "EP32",
+            "lat": 53.8106,
+            "lon": 89.893125
+        },
+        {
+            "name": "ETBUR",
+            "lat": 53.872258333333335,
+            "lon": 89.99113611666667
+        },
+        {
+            "name": "FF32",
+            "lat": 53.78191111666667,
+            "lon": 89.78456666666666
+        },
+        {
+            "name": "GOSOL",
+            "lat": 53.868158333333334,
+            "lon": 90.18598056666667
+        },
+        {
+            "name": "IRBUT",
+            "lat": 53.765141666666665,
+            "lon": 89.80588333333333
+        },
+        {
+            "name": "OTRUV",
+            "lat": 53.70687778333333,
+            "lon": 89.70571666666666
+        },
+        {
+            "name": "PI001",
+            "lat": 53.79205373333333,
+            "lon": 89.82269018333334
+        },
+        {
+            "name": "PI002",
+            "lat": 53.817683366666664,
+            "lon": 89.70935763333334
+        },
+        {
+            "name": "PI003",
+            "lat": 53.7477484,
+            "lon": 89.65542395
+        },
+        {
+            "name": "URPUM",
+            "lat": 53.64748888333333,
+            "lon": 89.80385278333333
+        },
+        {
+            "name": "YTLNB",
+            "lat": 53.815813883333334,
+            "lon": 89.91290278333334
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB32",
+            "fixes": {
+                "FF32": "FF32 2100",
+                "EP32": "OVERFLY EP32 759",
+                "YTLNB": "OVERFLY YTLNB AT OR ABOVE 1130 RNW 32 TRK 299 UNTIL 2100 TURN LEFT DIRECT YTLNB 2100 HOLD AT YTLNB RIGHT TURN INBOUNDCOURSE 299 LEGTIME 1 FAF FF32 MAP YTL"
+            },
+            "transitions": [
+                {
+                    "name": "YTL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "DAVOP": "DAVOP AT OR ABOVE 2100",
+                "BETAP": "BETAP 2100 RNW 14",
+                "AVEMU": "OVERFLY AVEMU 2400 HOLD AT AVEMU RIGHT TURN INBOUNDCOURSE 139 LEGTIME 1 FAF BETAP MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "EBDAR",
+                    "fixes": {
+                        "EBDAR": "EBDAR SPEED 210"
+                    }
+                },
+                {
+                    "name": "GOSOL",
+                    "fixes": {
+                        "GOSOL": "GOSOL SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "OTRUV": "OTRUV AT OR ABOVE 2100",
+                "IRBUT": "IRBUT 2100 RNW 32",
+                "ETBUR": "OVERFLY ETBUR 2400 HOLD AT ETBUR RIGHT TURN INBOUNDCOURSE 319 LEGTIME 1 FAF IRBUT MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "DEKNO",
+                    "fixes": {
+                        "DEKNO": "DEKNO SPEED 210"
+                    }
+                },
+                {
+                    "name": "URPUM",
+                    "fixes": {
+                        "URPUM": "URPUM SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

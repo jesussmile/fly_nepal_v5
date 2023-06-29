@@ -1,0 +1,205 @@
+{
+    "fixes": [
+        {
+            "name": "BUMBU",
+            "lat": 29.294444433333332,
+            "lon": 71.80138888333333
+        },
+        {
+            "name": "BUVIL",
+            "lat": 29.380833333333335,
+            "lon": 71.52777778333333
+        },
+        {
+            "name": "BW361",
+            "lat": 29.313,
+            "lon": 71.90752778333334
+        },
+        {
+            "name": "BW362",
+            "lat": 29.378111116666666,
+            "lon": 71.893
+        },
+        {
+            "name": "BW363",
+            "lat": 29.366305566666668,
+            "lon": 71.82372221666667
+        },
+        {
+            "name": "BW401",
+            "lat": 29.318027783333335,
+            "lon": 71.54297221666667
+        },
+        {
+            "name": "BW402",
+            "lat": 29.32997221666667,
+            "lon": 71.61216666666667
+        },
+        {
+            "name": "BW501",
+            "lat": 29.569166666666668,
+            "lon": 71.77641666666666
+        },
+        {
+            "name": "BWNB",
+            "lat": 29.349852783333333,
+            "lon": 71.70957778333333
+        },
+        {
+            "name": "FN08",
+            "lat": 29.321544433333333,
+            "lon": 71.62091943333333
+        },
+        {
+            "name": "FN26",
+            "lat": 29.35985833333333,
+            "lon": 71.81875
+        },
+        {
+            "name": "MASKI",
+            "lat": 29.443333333333335,
+            "lon": 71.87861111666666
+        },
+        {
+            "name": "MIMAL",
+            "lat": 29.870555566666667,
+            "lon": 72.16888888333334
+        },
+        {
+            "name": "MURLI",
+            "lat": 29.295277783333333,
+            "lon": 71.42305556666666
+        },
+        {
+            "name": "SALIK",
+            "lat": 29.253055566666667,
+            "lon": 71.55722221666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "MIMA1A",
+            "rnw": "08",
+            "fixes": {
+                "BW501": "BW501",
+                "MIMAL": "MIMAL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MIMA1B",
+            "rnw": "26",
+            "fixes": {
+                "BW501": "BW501",
+                "MIMAL": "MIMAL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MURL1A",
+            "rnw": "08",
+            "fixes": {
+                "MURLI": "MURLI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MURL1B",
+            "rnw": "26",
+            "fixes": {
+                "MURLI": "MURLI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FN08": "FN08 1900 RNW 08",
+                "BWNB": "OVERFLY BWNB TRK 068 UNTIL 1500 TURN LEFT DIRECT BWNB 3000 FAF FN08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "BW",
+                    "fixes": {
+                        "BWNB": "BWNB AT OR ABOVE 4000 TRK 260 UNTIL 9.0 FROM BWNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FN26": "FN26 1900 RNW 26",
+                "BWNB": "OVERFLY BWNB TRK 262 UNTIL 1500 TURN LEFT DIRECT BWNB 3000 FAF FN26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BW",
+                    "fixes": {
+                        "BWNB": "BWNB AT OR ABOVE 4000 TRK 094 UNTIL 9.0 FROM BWNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "BW401": "BW401 AT OR ABOVE 2000",
+                "BW402": "BW402 2000 RNW 08 TRK 077 UNTIL 2000 FAF BW402 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "BUVIL",
+                    "fixes": {
+                        "BUVIL": "BUVIL AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MURLI",
+                    "fixes": {
+                        "MURLI": "MURLI AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SALIK",
+                    "fixes": {
+                        "SALIK": "SALIK AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "BW362": "BW362 AT OR ABOVE 2000",
+                "BW363": "BW363 2000 RNW 26 TRK 257 UNTIL 2000 FAF BW363 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BUMBU",
+                    "fixes": {
+                        "BUMBU": "BUMBU AT OR ABOVE 4000",
+                        "BW361": "BW361 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MASKI",
+                    "fixes": {
+                        "MASKI": "MASKI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

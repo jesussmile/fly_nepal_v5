@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "BEKIM",
+            "lat": 2.7626388833333335,
+            "lon": 72.74594443333334
+        },
+        {
+            "name": "IGREB",
+            "lat": 2.736472216666667,
+            "lon": 73.04077778333334
+        },
+        {
+            "name": "LASOG",
+            "lat": 2.5696388833333335,
+            "lon": 73.02613888333333
+        },
+        {
+            "name": "MU421",
+            "lat": 2.6740833333333334,
+            "lon": 72.79669443333333
+        },
+        {
+            "name": "MU422",
+            "lat": 2.6792222166666666,
+            "lon": 72.73861111666666
+        },
+        {
+            "name": "MU423",
+            "lat": 2.6582222166666667,
+            "lon": 72.97538888333334
+        },
+        {
+            "name": "MU424",
+            "lat": 2.6530555666666666,
+            "lon": 73.03344443333333
+        },
+        {
+            "name": "TOMEM",
+            "lat": 2.595805566666667,
+            "lon": 72.73130556666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "MU422": "MU422 AT OR ABOVE 1600",
+                "MU421": "MU421 1600 RNW 10 TRK 098 UNTIL 500 TURN RIGHT DIRECT",
+                "TOMEM": "OVERFLY TOMEM HOLD AT TOMEM RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGTIME 1 FAF MU421 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "BEKIM",
+                    "fixes": {
+                        "BEKIM": "BEKIM SPEED 180"
+                    }
+                },
+                {
+                    "name": "TOMEM",
+                    "fixes": {
+                        "TOMEM": "TOMEM SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "MU424": "MU424 AT OR ABOVE 1600",
+                "MU423": "MU423 1600 RNW 28 TRK 278 UNTIL 500 TURN LEFT DIRECT",
+                "LASOG": "OVERFLY LASOG HOLD AT LASOG RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGTIME 1 FAF MU423 MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "IGREB",
+                    "fixes": {
+                        "IGREB": "IGREB SPEED 180"
+                    }
+                },
+                {
+                    "name": "LASOG",
+                    "fixes": {
+                        "LASOG": "LASOG SPEED 180"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "BETHS",
+            "lat": 28.428469433333333,
+            "lon": 100.20211666666667
+        },
+        {
+            "name": "CEPLA",
+            "lat": 28.317244433333332,
+            "lon": 100.18760556666666
+        },
+        {
+            "name": "COT",
+            "lat": 28.462016666666667,
+            "lon": 99.11854443333333
+        },
+        {
+            "name": "EARLI",
+            "lat": 28.124897216666668,
+            "lon": 100.04148056666666
+        },
+        {
+            "name": "GIYYE",
+            "lat": 28.275161116666666,
+            "lon": 100.16880556666666
+        },
+        {
+            "name": "HANAG",
+            "lat": 28.214786116666666,
+            "lon": 100.13455
+        },
+        {
+            "name": "LRD",
+            "lat": 27.478736116666667,
+            "lon": 99.41767778333333
+        },
+        {
+            "name": "POCOS",
+            "lat": 28.396833333333333,
+            "lon": 99.830625
+        },
+        {
+            "name": "YICUD",
+            "lat": 28.482997216666668,
+            "lon": 99.99261388333333
+        },
+        {
+            "name": "ZUBIN",
+            "lat": 28.054,
+            "lon": 99.74493333333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVM15",
+            "fixes": {
+                "BETHS": "BETHS AT OR ABOVE 4000",
+                "CEPLA": "CEPLA 1900",
+                "GIYYE": "OVERFLY GIYYE 923 RNW 15 TRK 154 UNTIL 1300",
+                "EARLI": "EARLI",
+                "ZUBIN": "OVERFLY ZUBIN AT OR ABOVE 4000 HOLD AT ZUBIN RIGHT TURN INBOUNDCOURSE 262 LEGDIST 4 FAF CEPLA MAP GIYYE"
+            },
+            "transitions": [
+                {
+                    "name": "COT",
+                    "fixes": {
+                        "COT": "COT",
+                        "YICUD": "YICUD AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "LRD",
+                    "fixes": {
+                        "LRD": "LRD",
+                        "ZUBIN": "ZUBIN AT OR ABOVE 4000",
+                        "POCOS": "POCOS AT OR ABOVE 4000",
+                        "YICUD": "YICUD AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVM33",
+            "fixes": {
+                "EARLI": "EARLI AT OR ABOVE 4000",
+                "HANAG": "HANAG 1700 RNW 33 TRK 328 UNTIL 1300",
+                "YICUD": "OVERFLY YICUD AT OR ABOVE 4000 HOLD AT YICUD RIGHT TURN INBOUNDCOURSE 247 LEGDIST 4 FAF HANAG MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "COT",
+                    "fixes": {
+                        "COT": "COT",
+                        "ZUBIN": "ZUBIN AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "LRD",
+                    "fixes": {
+                        "LRD": "LRD",
+                        "ZUBIN": "ZUBIN AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

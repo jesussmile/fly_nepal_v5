@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "CI29",
+            "lat": 48.57636111666667,
+            "lon": 5.1040833333333335
+        },
+        {
+            "name": "D096J",
+            "lat": 48.61473611666667,
+            "lon": 5.125486116666667
+        },
+        {
+            "name": "D098I",
+            "lat": 48.609872216666666,
+            "lon": 5.119213883333333
+        },
+        {
+            "name": "D291G",
+            "lat": 48.680791666666664,
+            "lon": 4.739786116666666
+        },
+        {
+            "name": "FI29",
+            "lat": 48.590888883333335,
+            "lon": 5.058833333333333
+        },
+        {
+            "name": "FSI11",
+            "lat": 48.6995,
+            "lon": 4.672944433333333
+        },
+        {
+            "name": "FSI29",
+            "lat": 48.57036111666667,
+            "lon": 5.131555566666667
+        },
+        {
+            "name": "ISI11",
+            "lat": 48.72088888333333,
+            "lon": 4.596055566666667
+        },
+        {
+            "name": "ISI29",
+            "lat": 48.543444433333335,
+            "lon": 5.225888883333333
+        },
+        {
+            "name": "LOUPY",
+            "lat": 48.86988888333333,
+            "lon": 5.085
+        },
+        {
+            "name": "SDI",
+            "lat": 48.637,
+            "lon": 4.8891944333333335
+        },
+        {
+            "name": "SI400",
+            "lat": 48.663666666666664,
+            "lon": 5.30275
+        },
+        {
+            "name": "SI401",
+            "lat": 48.83027778333334,
+            "lon": 4.66625
+        },
+        {
+            "name": "SI406",
+            "lat": 48.692194433333334,
+            "lon": 4.699083333333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "LOUP1E",
+            "runway": "RNW 29",
+            "fixes": {
+                "LOUPY": "LOUPY TRK 207 UNTIL 8.8 FROM",
+                "SDI": "SDI SDI TRK 207 UNTIL 2.0 FROM SDI TURN RIGHT DIRECT SDI"
+            }
+        },
+        {
+            "name": "LOUP1W",
+            "runway": "RNW 11",
+            "fixes": {
+                "LOUPY": "LOUPY TRK 207 UNTIL 8.8 FROM",
+                "SDI": "SDI SDI TRK 207 UNTIL 2.0 FROM SDI TURN LEFT DIRECT SDI"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "ILS29",
+            "fixes": {
+                "CI29": "CI29 AT OR ABOVE 2500",
+                "FI29": "FI29 2500 RNW 29",
+                "D291G": "OVERFLY D291G TURN LEFT DIRECT",
+                "SDI": "SDI 3000 SPEED 185 FAF FI29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "SDI1",
+                    "fixes": {
+                        "SDI": "SDI AT OR ABOVE 3000",
+                        "D096J": "OVERFLY D096J AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "SDI2",
+                    "fixes": {
+                        "SDI": "SDI AT OR ABOVE 3000",
+                        "D098I": "OVERFLY D098I AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "ISI11": "ISI11 3400 SPEED 170",
+                "FSI11": "FSI11 3400 RNW 11",
+                "ISI29": "OVERFLY ISI29 AT OR ABOVE 2700 SPEED 185 HOLD AT ISI29 LEFT TURN INBOUNDCOURSE 111 ALT 2700 SPEED 185 LEGTIME 1 FAF FSI11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "LOUPY",
+                    "fixes": {
+                        "LOUPY": "LOUPY AT OR BELOW 12000 AT OR ABOVE 8000 SPEED 220",
+                        "SI401": "SI401 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "ISI29": "ISI29 3500 SPEED 185",
+                "FSI29": "FSI29 3500 RNW 29",
+                "SI406": "OVERFLY SI406 AT OR ABOVE 1900 SPEED 185 HOLD AT SI406 RIGHT TURN INBOUNDCOURSE 291 ALT 1900 SPEED 185 LEGTIME 1 FAF FSI29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "LOUPY",
+                    "fixes": {
+                        "LOUPY": "LOUPY AT OR BELOW 12000 AT OR ABOVE 8000 SPEED 220",
+                        "SI400": "SI400 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

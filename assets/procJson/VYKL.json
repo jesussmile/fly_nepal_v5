@@ -1,0 +1,49 @@
+{
+    "fixes": [
+        {
+            "name": "FF28",
+            "lat": 23.174047216666665,
+            "lon": 94.14842221666666
+        },
+        {
+            "name": "KLNB",
+            "lat": 23.18873333333333,
+            "lon": 94.05850278333334
+        },
+        {
+            "name": "MA28",
+            "lat": 23.185686116666666,
+            "lon": 94.07717221666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB28",
+            "fixes": {
+                "FF28": "FF28 1800",
+                "MA28": "MA28 825 RNW 28 TRK 281 UNTIL 940 HDG 350 UNTIL 3000 TURN RIGHT DIRECT",
+                "KLNB": "KLNB 6000 HOLD AT KLNB RIGHT TURN INBOUNDCOURSE 180 ALT 6000 LEGTIME 1 FAF FF28 MAP MA28"
+            },
+            "transitions": [
+                {
+                    "name": "KL1",
+                    "fixes": {
+                        "KLNB": "KLNB AT OR ABOVE 3000 TRK 158 UNTIL 5.1 FROM KLNB"
+                    }
+                },
+                {
+                    "name": "KL2",
+                    "fixes": {
+                        "KLNB": "KLNB AT OR ABOVE 3000 TRK 126 UNTIL 5.1 FROM KLNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

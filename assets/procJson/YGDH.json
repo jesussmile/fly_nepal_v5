@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "FF11",
+            "lat": 30.905605566666665,
+            "lon": 150.13298333333333
+        },
+        {
+            "name": "GDHNB",
+            "lat": 30.954127783333334,
+            "lon": 150.24823611666667
+        },
+        {
+            "name": "GU2ED",
+            "lat": 31.001305566666666,
+            "lon": 150.49544443333335
+        },
+        {
+            "name": "GU2EE",
+            "lat": 31.097027783333335,
+            "lon": 150.49991666666668
+        },
+        {
+            "name": "GU2EF",
+            "lat": 31.006777783333334,
+            "lon": 150.33666666666667
+        },
+        {
+            "name": "GU2EH",
+            "lat": 30.925472216666666,
+            "lon": 150.18988888333334
+        },
+        {
+            "name": "GU2EI",
+            "lat": 31.051888883333334,
+            "lon": 150.41827778333334
+        },
+        {
+            "name": "GU2EJ",
+            "lat": 31.14966666666667,
+            "lon": 150.39258333333333
+        },
+        {
+            "name": "GU2WA",
+            "lat": 30.906916666666667,
+            "lon": 149.98830556666667
+        },
+        {
+            "name": "GU2WB",
+            "lat": 30.811055566666667,
+            "lon": 149.98405556666665
+        },
+        {
+            "name": "GU2WC",
+            "lat": 30.774888883333333,
+            "lon": 150.08669443333332
+        },
+        {
+            "name": "GU2WF",
+            "lat": 30.901583333333335,
+            "lon": 150.14677778333333
+        },
+        {
+            "name": "GU2WH",
+            "lat": 31.070972216666668,
+            "lon": 150.14019443333333
+        },
+        {
+            "name": "GU2WI",
+            "lat": 30.856361116666665,
+            "lon": 150.06538888333333
+        },
+        {
+            "name": "GU2WM",
+            "lat": 30.94677778333333,
+            "lon": 150.22827778333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FF11": "FF11 2900 RNW 11",
+                "GDHNB": "OVERFLY GDHNB TRK 105 UNTIL 2100 TRK 285 UNTIL 4200 FAF FF11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "GDH1",
+                    "fixes": {
+                        "GDHNB": "GDHNB AT OR ABOVE 4200 SPEED 210 TRK 310 UNTIL 7.0 FROM GDHNB"
+                    }
+                },
+                {
+                    "name": "GDH2",
+                    "fixes": {
+                        "GDHNB": "GDHNB AT OR ABOVE 4200 TRK 297 UNTIL 9.0 FROM GDHNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "GU2WI": "GU2WI AT OR ABOVE 4200",
+                "GU2WF": "GU2WF 2740",
+                "GU2WM": "OVERFLY GU2WM 1152 RNW 11 TRK 112 UNTIL 2000 TURN RIGHT DIRECT",
+                "GU2WH": "GU2WH HDG 277 VECTORS FAF GU2WF MAP GU2WM"
+            },
+            "transitions": [
+                {
+                    "name": "GU2WA",
+                    "fixes": {
+                        "GU2WA": "GU2WA AT OR ABOVE 4200 SPEED 210"
+                    }
+                },
+                {
+                    "name": "GU2WB",
+                    "fixes": {
+                        "GU2WB": "GU2WB AT OR ABOVE 4200 SPEED 210"
+                    }
+                },
+                {
+                    "name": "GU2WC",
+                    "fixes": {
+                        "GU2WC": "GU2WC AT OR ABOVE 4200 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "GU2EI": "GU2EI AT OR ABOVE 4100",
+                "GU2EF": "GU2EF 2510 RNW 29",
+                "GU2EH": "GU2EH TRK 291 UNTIL 4200 FAF GU2EF MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "GU2ED",
+                    "fixes": {
+                        "GU2ED": "GU2ED AT OR ABOVE 4800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "GU2EE",
+                    "fixes": {
+                        "GU2EE": "GU2EE AT OR ABOVE 4800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "GU2EJ",
+                    "fixes": {
+                        "GU2EJ": "GU2EJ AT OR ABOVE 5900 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

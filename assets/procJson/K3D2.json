@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "AQECY",
+            "lat": 44.93102221666667,
+            "lon": 87.11575833333333
+        },
+        {
+            "name": "IDYID",
+            "lat": 45.00374443333333,
+            "lon": 87.00843888333333
+        },
+        {
+            "name": "JULRI",
+            "lat": 45.18649443333333,
+            "lon": 87.25511111666667
+        },
+        {
+            "name": "LOGIF",
+            "lat": 45.34245,
+            "lon": 87.48178333333334
+        },
+        {
+            "name": "MNM",
+            "lat": 45.180152783333334,
+            "lon": 87.64716666666666
+        },
+        {
+            "name": "OPHUN",
+            "lat": 45.26607778333333,
+            "lon": 87.36330278333334
+        },
+        {
+            "name": "UYOXE",
+            "lat": 45.07561666666667,
+            "lon": 87.10518333333333
+        },
+        {
+            "name": "WARWF",
+            "lat": 44.93029166666667,
+            "lon": 87.86778333333334
+        },
+        {
+            "name": "ZUXIN",
+            "lat": 44.606141666666666,
+            "lon": 87.16976111666666
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 14",
+        "RNW 19",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "OPHUN": "OPHUN AT OR ABOVE 2300",
+                "JULRI": "JULRI 2300 RNW 14 TRK 140 UNTIL 1163 TURN RIGHT DIRECT",
+                "MNM": "OVERFLY MNM AT OR ABOVE 3000 HOLD AT MNM RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF JULRI MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "LOGIF",
+                    "fixes": {
+                        "LOGIF": "LOGIF"
+                    }
+                },
+                {
+                    "name": "MNM",
+                    "fixes": {
+                        "MNM": "MNM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "IDYID": "IDYID AT OR ABOVE 2300",
+                "UYOXE": "UYOXE 2300 RNW 32 TRK 320 UNTIL 1120",
+                "JULRI": "JULRI",
+                "MNM": "OVERFLY MNM AT OR ABOVE 3000 HOLD AT MNM RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF UYOXE MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "MNM",
+                    "fixes": {
+                        "MNM": "MNM",
+                        "AQECY": "AQECY AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WARWF",
+                    "fixes": {
+                        "WARWF": "WARWF",
+                        "AQECY": "AQECY AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "ZUXIN",
+                    "fixes": {
+                        "ZUXIN": "ZUXIN",
+                        "AQECY": "AQECY AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

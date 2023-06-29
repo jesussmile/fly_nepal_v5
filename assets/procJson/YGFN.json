@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "FN18",
+            "lat": 29.67541943333333,
+            "lon": 153.0462
+        },
+        {
+            "name": "GFNNA",
+            "lat": 29.540672216666668,
+            "lon": 152.96346666666668
+        },
+        {
+            "name": "GFNNB",
+            "lat": 29.759722216666667,
+            "lon": 153.02743611666668
+        },
+        {
+            "name": "GFNNC",
+            "lat": 29.49309166666667,
+            "lon": 153.05859166666667
+        },
+        {
+            "name": "GFNND",
+            "lat": 29.554927783333333,
+            "lon": 153.14228333333332
+        },
+        {
+            "name": "GFNNF",
+            "lat": 29.659477783333333,
+            "lon": 153.04121943333334
+        },
+        {
+            "name": "GFNNH",
+            "lat": 29.868763883333333,
+            "lon": 152.99728888333334
+        },
+        {
+            "name": "GFNNI",
+            "lat": 29.576286116666665,
+            "lon": 153.04991111666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB18",
+            "fixes": {
+                "FN18": "FN18 1500 RNW 18",
+                "GFNNB": "OVERFLY GFNNB AT OR ABOVE 610 TRK 179 UNTIL 1500 TURN RIGHT DIRECT GFNNB AT OR ABOVE 2500 SPEED 210 FAF FN18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "GFN1",
+                    "fixes": {
+                        "GFNNB": "GFNNB AT OR ABOVE 2500 SPEED 210 TRK 335 UNTIL 7.0 FROM GFNNB"
+                    }
+                },
+                {
+                    "name": "GFN2",
+                    "fixes": {
+                        "GFNNB": "GFNNB AT OR ABOVE 2500 SPEED 140 TRK 347 UNTIL 7.0 FROM GFNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "GFNNI": "GFNNI AT OR ABOVE 2900",
+                "GFNNF": "GFNNF 1790 RNW 18",
+                "GFNNH": "OVERFLY GFNNH AT OR ABOVE 1500 HDG 340 VECTORS FAF GFNNF MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "GFNNA",
+                    "fixes": {
+                        "GFNNA": "GFNNA AT OR ABOVE 4000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "GFNNC",
+                    "fixes": {
+                        "GFNNC": "GFNNC AT OR ABOVE 2900 SPEED 210"
+                    }
+                },
+                {
+                    "name": "GFNND",
+                    "fixes": {
+                        "GFNND": "GFNND AT OR ABOVE 2900 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "ADSIV",
+            "lat": 45.17249721666666,
+            "lon": 74.873925
+        },
+        {
+            "name": "DASAT",
+            "lat": 45.055336116666666,
+            "lon": 74.891725
+        },
+        {
+            "name": "GOVAK",
+            "lat": 45.09852778333333,
+            "lon": 74.68315278333333
+        },
+        {
+            "name": "IGVIR",
+            "lat": 45.09092221666667,
+            "lon": 74.58613056666667
+        },
+        {
+            "name": "KAPIX",
+            "lat": 45.10758611666667,
+            "lon": 74.80011111666667
+        },
+        {
+            "name": "NOTIL",
+            "lat": 45.030380566666665,
+            "lon": 74.33634721666667
+        },
+        {
+            "name": "PUXAV",
+            "lat": 45.18290278333333,
+            "lon": 74.72810278333333
+        },
+        {
+            "name": "SEMTA",
+            "lat": 45.102069433333334,
+            "lon": 74.46831943333333
+        },
+        {
+            "name": "URLIB",
+            "lat": 45.112991666666666,
+            "lon": 74.35167221666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "KAPIX": "KAPIX AT OR ABOVE 1800 SPEED 180",
+                "GOVAK": "GOVAK 1700",
+                "IGVIR": "OVERFLY IGVIR 374 RNW 10 TURN LEFT DIRECT",
+                "ADSIV": "OVERFLY ADSIV 3000 HOLD AT ADSIV RIGHT TURN INBOUNDCOURSE 156 ALT 3000 SPEED 200 LEGTIME 1 FAF GOVAK MAP IGVIR"
+            },
+            "transitions": [
+                {
+                    "name": "ADSIV",
+                    "fixes": {
+                        "ADSIV": "ADSIV SPEED 210"
+                    }
+                },
+                {
+                    "name": "DASAT",
+                    "fixes": {
+                        "DASAT": "DASAT SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "URLIB": "URLIB AT OR ABOVE 2200 SPEED 180",
+                "SEMTA": "SEMTA 1500 RNW 28 TRK 277 UNTIL 580",
+                "PUXAV": "OVERFLY PUXAV 3000 HOLD AT PUXAV RIGHT TURN INBOUNDCOURSE 336 ALT 3000 SPEED 230 LEGTIME 1 FAF SEMTA MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "NOTIL",
+                    "fixes": {
+                        "NOTIL": "NOTIL SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "CAXIT",
+            "lat": 35.03471388333333,
+            "lon": 76.06371111666667
+        },
+        {
+            "name": "DEPNE",
+            "lat": 34.98146943333333,
+            "lon": 76.14183611666667
+        },
+        {
+            "name": "FILVO",
+            "lat": 35.109913883333334,
+            "lon": 76.27148888333333
+        },
+        {
+            "name": "JELIK",
+            "lat": 35.34943056666667,
+            "lon": 75.91912778333334
+        },
+        {
+            "name": "KASVE",
+            "lat": 35.22068888333333,
+            "lon": 75.78966111666666
+        },
+        {
+            "name": "LAMGE",
+            "lat": 35.167555566666664,
+            "lon": 75.86807778333333
+        },
+        {
+            "name": "MUTVE",
+            "lat": 35.31386666666667,
+            "lon": 75.620775
+        },
+        {
+            "name": "PUNGO",
+            "lat": 35.61055278333333,
+            "lon": 76.45091943333334
+        },
+        {
+            "name": "ZOLMN",
+            "lat": 35.64509721666667,
+            "lon": 75.40761388333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "DEPNE": "DEPNE AT OR ABOVE 3000",
+                "CAXIT": "CAXIT 2000 RNW 06 TRK 059 UNTIL 405 TURN LEFT DIRECT",
+                "PUNGO": "PUNGO AT OR ABOVE 6000 HOLD AT PUNGO RIGHT TURN INBOUNDCOURSE 130 LEGDIST 4 FAF CAXIT MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "PUNGO",
+                    "fixes": {
+                        "PUNGO": "PUNGO",
+                        "FILVO": "FILVO AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "KASVE": "KASVE AT OR ABOVE 3000",
+                "LAMGE": "LAMGE 2000 RNW 24 TRK 239 UNTIL 405 TURN RIGHT DIRECT",
+                "PUNGO": "PUNGO AT OR ABOVE 6000 HOLD AT PUNGO RIGHT TURN INBOUNDCOURSE 130 LEGDIST 4 FAF LAMGE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "PUNGO",
+                    "fixes": {
+                        "PUNGO": "PUNGO",
+                        "JELIK": "JELIK AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "ZOLMN",
+                    "fixes": {
+                        "ZOLMN": "ZOLMN",
+                        "MUTVE": "MUTVE AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

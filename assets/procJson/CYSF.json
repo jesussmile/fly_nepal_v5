@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "ESRIG",
+            "lat": 59.21945278333333,
+            "lon": 105.464825
+        },
+        {
+            "name": "FF280",
+            "lat": 59.22162221666667,
+            "lon": 105.66209443333334
+        },
+        {
+            "name": "METRA",
+            "lat": 59.121116666666666,
+            "lon": 106.12446666666666
+        },
+        {
+            "name": "MIBKI",
+            "lat": 59.28073333333333,
+            "lon": 106.215125
+        },
+        {
+            "name": "MIBKU",
+            "lat": 59.22898611666667,
+            "lon": 105.98418888333333
+        },
+        {
+            "name": "MIDLI",
+            "lat": 59.271736116666666,
+            "lon": 105.69749166666666
+        },
+        {
+            "name": "PEPDI",
+            "lat": 59.20093333333333,
+            "lon": 106.16969166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 59.23414893333333,
+            "lon": 105.72518743333333
+        },
+        {
+            "name": "PI002",
+            "lat": 59.2632355,
+            "lon": 105.59708825
+        },
+        {
+            "name": "PI003",
+            "lat": 59.19501473333333,
+            "lon": 105.52781891666666
+        },
+        {
+            "name": "PIBRI",
+            "lat": 59.299275,
+            "lon": 105.51011943333333
+        },
+        {
+            "name": "ROPLO",
+            "lat": 59.379083333333334,
+            "lon": 105.555625
+        },
+        {
+            "name": "XEXAK",
+            "lat": 59.271594433333334,
+            "lon": 105.69845556666667
+        },
+        {
+            "name": "XOMVI",
+            "lat": 59.22915278333333,
+            "lon": 105.98308888333334
+        },
+        {
+            "name": "YSFNB",
+            "lat": 59.25509721666667,
+            "lon": 105.83165
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA06",
+            "fixes": {
+                "FF280": "FF280 2600",
+                "YSFNB": "YSFNB 1780 RNW 06 TRK 280 UNTIL 2800 TURN LEFT DIRECT YSFNB 2800 HOLD AT YSFNB RIGHT TURN INBOUNDCOURSE 280 LEGTIME 1 FAF FF280 MAP YSF"
+            },
+            "transitions": [
+                {
+                    "name": "YSF",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA24",
+            "fixes": {
+                "FF280": "FF280 2600",
+                "YSFNB": "YSFNB 1780 RNW 24 TRK 280 UNTIL 2800 TURN LEFT DIRECT YSFNB 2800 HOLD AT YSFNB RIGHT TURN INBOUNDCOURSE 280 LEGTIME 1 FAF FF280 MAP YSF"
+            },
+            "transitions": [
+                {
+                    "name": "YSF",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "PEPDI": "PEPDI AT OR ABOVE 2300",
+                "XOMVI": "XOMVI 2200 RNW 06",
+                "XEXAK": "OVERFLY XEXAK 2900 HOLD AT XEXAK RIGHT TURN INBOUNDCOURSE 063 LEGTIME 1 FAF XOMVI MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "METRA",
+                    "fixes": {
+                        "METRA": "METRA"
+                    }
+                },
+                {
+                    "name": "MIBKI",
+                    "fixes": {
+                        "MIBKI": "MIBKI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "PIBRI": "PIBRI AT OR ABOVE 2700",
+                "MIDLI": "MIDLI 2200 RNW 24",
+                "MIBKU": "OVERFLY MIBKU 2900 HOLD AT MIBKU RIGHT TURN INBOUNDCOURSE 243 LEGTIME 1 FAF MIDLI MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "ESRIG",
+                    "fixes": {
+                        "ESRIG": "ESRIG"
+                    }
+                },
+                {
+                    "name": "ROPLO",
+                    "fixes": {
+                        "ROPLO": "ROPLO"
+                    }
+                }
+            ]
+        }
+    ]
+}

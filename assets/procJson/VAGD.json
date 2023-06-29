@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "D049I",
+            "lat": 21.632875,
+            "lon": 80.41305278333333
+        },
+        {
+            "name": "D222J",
+            "lat": 21.412227783333332,
+            "lon": 80.182075
+        },
+        {
+            "name": "FD04",
+            "lat": 21.460222216666665,
+            "lon": 80.22658611666667
+        },
+        {
+            "name": "FD22",
+            "lat": 21.601561116666666,
+            "lon": 80.37581111666667
+        },
+        {
+            "name": "FN315",
+            "lat": 21.4684,
+            "lon": 80.34664443333334
+        },
+        {
+            "name": "GDA",
+            "lat": 21.532194433333334,
+            "lon": 80.29341666666667
+        },
+        {
+            "name": "GNNB",
+            "lat": 21.520694433333333,
+            "lon": 80.28880556666667
+        },
+        {
+            "name": "MD04",
+            "lat": 21.513252783333332,
+            "lon": 80.27581388333333
+        },
+        {
+            "name": "MD22",
+            "lat": 21.543380566666666,
+            "lon": 80.30669166666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD04",
+            "fixes": {
+                "FD04": "FD04 2500",
+                "MD04": "MD04 1175 RNW 04 TRK 042 UNTIL 3000 TURN RIGHT DIRECT",
+                "GDA": "GDA 3900 HOLD AT GDA LEFT TURN INBOUNDCOURSE 237 ALT 3900 LEGTIME 1 FAF FD04 MAP MD04"
+            },
+            "transitions": [
+                {
+                    "name": "GDA1",
+                    "fixes": {
+                        "GDA": "GDA AT OR ABOVE 3900 SPEED 180 TRK 237 UNTIL 9.5 FROM GDA TURN LEFT DIRECT",
+                        "D222J": "D222J AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "GDA2",
+                    "fixes": {
+                        "GDA": "GDA AT OR ABOVE 3900 TRK 232 UNTIL 9.5 FROM GDA TURN LEFT DIRECT",
+                        "D222J": "D222J AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD22",
+            "fixes": {
+                "FD22": "FD22 3000",
+                "MD22": "MD22 1358 RNW 22 TRK 229 UNTIL 3000 TURN RIGHT DIRECT",
+                "GDA": "GDA 3900 HOLD AT GDA LEFT TURN INBOUNDCOURSE 065 ALT 3900 LEGTIME 1 FAF FD22 MAP MD22"
+            },
+            "transitions": [
+                {
+                    "name": "GDA1",
+                    "fixes": {
+                        "GDA": "GDA AT OR ABOVE 3900 SPEED 180 TRK 065 UNTIL 9.0 FROM GDA TURN LEFT DIRECT",
+                        "D049I": "D049I AT OR ABOVE 3300"
+                    }
+                },
+                {
+                    "name": "GDA2",
+                    "fixes": {
+                        "GDA": "GDA AT OR ABOVE 3900 TRK 060 UNTIL 9.0 FROM GDA TURN LEFT DIRECT",
+                        "D049I": "D049I AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB04",
+            "fixes": {
+                "FN315": "FN315 2600",
+                "GNNB": "GNNB 1620 RNW 04 HDG 315 UNTIL 2600 TURN LEFT DIRECT GNNB 3900 HOLD AT GNNB RIGHT TURN INBOUNDCOURSE 108 ALT 3900 LEGTIME 1 FAF FN315 MAP GN"
+            },
+            "transitions": [
+                {
+                    "name": "GN1",
+                    "fixes": {
+                        "GNNB": "GNNB AT OR ABOVE 3900 SPEED 180 TRK 108 UNTIL 4.5 FROM GNNB"
+                    }
+                },
+                {
+                    "name": "GN2",
+                    "fixes": {
+                        "GNNB": "GNNB AT OR ABOVE 3900 TRK 116 UNTIL 4.5 FROM GNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB22",
+            "fixes": {
+                "FN315": "FN315 2600",
+                "GNNB": "GNNB 1620 RNW 22 HDG 315 UNTIL 2600 TURN LEFT DIRECT GNNB 3900 HOLD AT GNNB RIGHT TURN INBOUNDCOURSE 108 ALT 3900 LEGTIME 1 FAF FN315 MAP GN"
+            },
+            "transitions": [
+                {
+                    "name": "GN1",
+                    "fixes": {
+                        "GNNB": "GNNB AT OR ABOVE 3900 SPEED 180 TRK 108 UNTIL 4.5 FROM GNNB"
+                    }
+                },
+                {
+                    "name": "GN2",
+                    "fixes": {
+                        "GNNB": "GNNB AT OR ABOVE 3900 TRK 116 UNTIL 4.5 FROM GNNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

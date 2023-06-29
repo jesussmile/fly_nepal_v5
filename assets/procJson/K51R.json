@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "CLL",
+            "lat": 30.605002783333333,
+            "lon": 96.42068056666666
+        },
+        {
+            "name": "HESST",
+            "lat": 31.075538883333333,
+            "lon": 95.91835833333333
+        },
+        {
+            "name": "LOA",
+            "lat": 31.124016666666666,
+            "lon": 95.96795556666666
+        },
+        {
+            "name": "NALSY",
+            "lat": 30.993313883333332,
+            "lon": 95.93537221666666
+        },
+        {
+            "name": "NAMIL",
+            "lat": 30.744033333333334,
+            "lon": 95.98677221666667
+        },
+        {
+            "name": "OWZUT",
+            "lat": 30.990711116666667,
+            "lon": 95.95708056666666
+        },
+        {
+            "name": "TELNY",
+            "lat": 30.826269433333334,
+            "lon": 95.96984443333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "LOA": "LOA AT OR ABOVE 2000 LOA AT OR ABOVE 2000 HOLD AT LOA RIGHT TURN INBOUNDCOURSE 168 LEGTIME 1 FAF OWZUT MAP RNW 18",
+                "OWZUT": "OWZUT 1800 RNW 18 TRK 168 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LOA",
+                    "fixes": {
+                        "LOA": "LOA RIGHT TURN INBOUNDCOURSE 168 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "HESST": "HESST AT OR ABOVE 2000",
+                "NALSY": "NALSY 1800 RNW 18 TRK 183 UNTIL 1500 TURN RIGHT DIRECT",
+                "LOA": "LOA AT OR ABOVE 2100 HOLD AT LOA RIGHT TURN INBOUNDCOURSE 132 LEGDIST 4 FAF NALSY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "LOA",
+                    "fixes": {
+                        "LOA": "LOA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "NAMIL": "NAMIL AT OR ABOVE 3000 NAMIL AT OR ABOVE 3000 HOLD AT NAMIL RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4 FAF TELNY MAP RNW 36",
+                "TELNY": "TELNY 1900 RNW 36 TRK 003 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CLL",
+                    "fixes": {
+                        "CLL": "CLL",
+                        "NAMIL": "NAMIL AT OR ABOVE 3000 HOLD AT NAMIL RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LOA",
+                    "fixes": {
+                        "LOA": "LOA",
+                        "NAMIL": "NAMIL AT OR ABOVE 3000 HOLD AT NAMIL RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

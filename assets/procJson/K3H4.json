@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "BEETZ",
+            "lat": 47.44902221666667,
+            "lon": 97.08200278333334
+        },
+        {
+            "name": "BYSON",
+            "lat": 47.26979721666667,
+            "lon": 97.03890556666667
+        },
+        {
+            "name": "GEMIH",
+            "lat": 47.56738611666667,
+            "lon": 97.11062778333333
+        },
+        {
+            "name": "IKLAJ",
+            "lat": 47.15271666666667,
+            "lon": 97.01090556666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "GEMIH": "GEMIH AT OR ABOVE 4000",
+                "BEETZ": "BEETZ 2600 RNW 16 TRK 166 UNTIL 1222",
+                "IKLAJ": "OVERFLY IKLAJ AT OR ABOVE 4000 HOLD AT IKLAJ RIGHT TURN INBOUNDCOURSE 346 ALT 4000 LEGDIST 4 FAF BEETZ MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "GEMIH",
+                    "fixes": {
+                        "GEMIH": "GEMIH RIGHT TURN INBOUNDCOURSE 166 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "IKLAJ": "IKLAJ AT OR ABOVE 4000",
+                "BYSON": "BYSON 2600 RNW 34 TRK 346 UNTIL 1222",
+                "GEMIH": "OVERFLY GEMIH AT OR ABOVE 4000 HOLD AT GEMIH RIGHT TURN INBOUNDCOURSE 166 LEGDIST 4 FAF BYSON MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "IKLAJ",
+                    "fixes": {
+                        "IKLAJ": "IKLAJ RIGHT TURN INBOUNDCOURSE 346 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

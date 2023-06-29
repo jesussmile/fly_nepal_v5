@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "ALKUS",
+            "lat": 20.563844433333333,
+            "lon": 74.6044
+        },
+        {
+            "name": "BA816",
+            "lat": 20.488055566666667,
+            "lon": 74.56684166666666
+        },
+        {
+            "name": "BA820",
+            "lat": 20.480541666666667,
+            "lon": 74.26692221666667
+        },
+        {
+            "name": "BA834",
+            "lat": 20.242861116666667,
+            "lon": 74.44561111666667
+        },
+        {
+            "name": "DULBU",
+            "lat": 20.167036116666665,
+            "lon": 74.40820833333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "ALKUS": "ALKUS AT OR ABOVE 4000",
+                "BA816": "BA816 2500 RNW 16 TRK 149 UNTIL 2000 TURN LEFT DIRECT",
+                "BA820": "OVERFLY BA820 AT OR ABOVE 5000 HOLD AT BA820 RIGHT TURN INBOUNDCOURSE 294 ALT 5000 SPEED 230 LEGDIST 4 FAF BA816 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "ALKUS",
+                    "fixes": {
+                        "ALKUS": "ALKUS RIGHT TURN INBOUNDCOURSE 164 ALT 5000 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "DULBU": "DULBU AT OR ABOVE 4000",
+                "BA834": "BA834 2500 RNW 34 TRK 344 UNTIL 2500 TURN RIGHT DIRECT",
+                "BA820": "OVERFLY BA820 AT OR ABOVE 6000 HOLD AT BA820 RIGHT TURN INBOUNDCOURSE 213 ALT 6000 SPEED 230 LEGDIST 4 FAF BA834 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "DULBU",
+                    "fixes": {
+                        "DULBU": "DULBU RIGHT TURN INBOUNDCOURSE 344 ALT 6000 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

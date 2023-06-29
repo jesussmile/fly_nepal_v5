@@ -1,0 +1,67 @@
+{
+    "fixes": [
+        {
+            "name": "AVAGA",
+            "lat": 19.41227221666667,
+            "lon": 33.406308333333335
+        },
+        {
+            "name": "AVIXU",
+            "lat": 19.335719433333335,
+            "lon": 33.50134443333334
+        },
+        {
+            "name": "CH500",
+            "lat": 19.245527783333333,
+            "lon": 33.42072221666667
+        },
+        {
+            "name": "CH600",
+            "lat": 19.078777783333333,
+            "lon": 33.43511388333334
+        },
+        {
+            "name": "CH601",
+            "lat": 19.085597216666667,
+            "lon": 33.52281111666667
+        },
+        {
+            "name": "IMVET",
+            "lat": 19.3289,
+            "lon": 33.413516666666666
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "CH500": "CH500 3800 RNW 01",
+                "CH600": "CH600 AT OR ABOVE 2680",
+                "CH601": "CH601",
+                "AVIXU": "AVIXU 4500 HOLD AT AVIXU LEFT TURN INBOUNDCOURSE 285 SPEED 200 LEGTIME 1 FAF CH500 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "AVAGA",
+                    "fixes": {
+                        "AVAGA": "AVAGA AT OR ABOVE 4500 SPEED 200",
+                        "IMVET": "IMVET"
+                    }
+                },
+                {
+                    "name": "AVIXU",
+                    "fixes": {
+                        "AVIXU": "AVIXU AT OR ABOVE 4500 SPEED 200",
+                        "IMVET": "IMVET"
+                    }
+                }
+            ]
+        }
+    ]
+}

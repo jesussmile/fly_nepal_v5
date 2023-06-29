@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "HEDRO",
+            "lat": 34.06371943333333,
+            "lon": 85.67178056666667
+        },
+        {
+            "name": "PACIR",
+            "lat": 33.99535278333333,
+            "lon": 85.832275
+        },
+        {
+            "name": "RIBOC",
+            "lat": 34.04176666666667,
+            "lon": 85.72339443333334
+        },
+        {
+            "name": "TENKE",
+            "lat": 34.13771943333333,
+            "lon": 85.49719443333333
+        },
+        {
+            "name": "WEBIL",
+            "lat": 34.18385,
+            "lon": 85.38791111666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "PACIR": "PACIR AT OR ABOVE 3500",
+                "RIBOC": "RIBOC 2500",
+                "HEDRO": "HEDRO AT OR ABOVE 1580 RNW 07 TRK 067 UNTIL 895",
+                "WEBIL": "OVERFLY WEBIL AT OR ABOVE 3600 HOLD AT WEBIL RIGHT TURN INBOUNDCOURSE 247 LEGDIST 4 FAF RIBOC MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "PACIR",
+                    "fixes": {
+                        "PACIR": "PACIR RIGHT TURN INBOUNDCOURSE 067 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "WEBIL": "WEBIL AT OR ABOVE 3600 OVERFLY WEBIL AT OR ABOVE 3600 HOLD AT WEBIL RIGHT TURN INBOUNDCOURSE 247 LEGDIST 4 FAF TENKE MAP RNW 25",
+                "TENKE": "TENKE 2500 RNW 25 TRK 247 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WEBIL",
+                    "fixes": {
+                        "WEBIL": "WEBIL RIGHT TURN INBOUNDCOURSE 247 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

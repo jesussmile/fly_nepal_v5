@@ -1,0 +1,182 @@
+{
+    "fixes": [
+        {
+            "name": "D137I",
+            "lat": 28.613966666666666,
+            "lon": 57.78765
+        },
+        {
+            "name": "FF31",
+            "lat": 28.599047216666666,
+            "lon": 57.80231943333333
+        },
+        {
+            "name": "FN31",
+            "lat": 28.617755566666666,
+            "lon": 57.78392778333333
+        },
+        {
+            "name": "JIRNB",
+            "lat": 28.731305566666666,
+            "lon": 57.67211111666667
+        },
+        {
+            "name": "KJ401",
+            "lat": 28.635,
+            "lon": 57.80047221666667
+        },
+        {
+            "name": "KJ402",
+            "lat": 28.582666666666668,
+            "lon": 57.87427778333333
+        },
+        {
+            "name": "KJ403",
+            "lat": 28.5175,
+            "lon": 57.815083333333334
+        },
+        {
+            "name": "KJ404",
+            "lat": 28.733249999999998,
+            "lon": 57.66144443333334
+        },
+        {
+            "name": "KJ405",
+            "lat": 28.649444433333333,
+            "lon": 57.62855556666667
+        },
+        {
+            "name": "PEDUK",
+            "lat": 28.988888883333335,
+            "lon": 57.913055566666664
+        },
+        {
+            "name": "RIGUT",
+            "lat": 28.526666666666667,
+            "lon": 57.373888883333336
+        },
+        {
+            "name": "THR31",
+            "lat": 28.71463333333333,
+            "lon": 57.68781666666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "PEDU1A",
+            "rnw": "13",
+            "fixes": {
+                "THR31": "THR31",
+                "KJ402": "KJ402 AT OR ABOVE 6000 SPEED 195",
+                "KJ403": "KJ403 AT OR ABOVE 7400 SPEED 200",
+                "KJ405": "KJ405 AT OR ABOVE 10500",
+                "PEDUK": "PEDUK AT OR ABOVE 18000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RIGU1A",
+            "rnw": "13",
+            "fixes": {
+                "THR31": "THR31",
+                "KJ402": "KJ402 AT OR ABOVE 6700 SPEED 195",
+                "RIGUT": "RIGUT 16000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "PEDU1N",
+            "runway": "RNW 13 RNW 31",
+            "fixes": {
+                "PEDUK": "PEDUK",
+                "THR31": "THR31 13000",
+                "KJ405": "KJ405 11500 SPEED 220",
+                "KJ403": "KJ403 8000 SPEED 210"
+            }
+        },
+        {
+            "name": "RIGU1N",
+            "runway": "RNW 13 RNW 31",
+            "fixes": {
+                "RIGUT": "RIGUT",
+                "KJ403": "KJ403 8000 SPEED 220"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDBA13",
+            "fixes": {
+                "FN31": "FN31 6800",
+                "JIRNB": "JIRNB 5000 RNW 13 TRK 300 UNTIL 8400 TURN LEFT DIRECT JIRNB 10000 SPEED 140 HOLD AT JIRNB RIGHT TURN INBOUNDCOURSE 137 LEGTIME 1 FAF FN31 MAP JIR"
+            },
+            "transitions": [
+                {
+                    "name": "JIR",
+                    "fixes": {
+                        "JIRNB": "JIRNB AT OR ABOVE 10000",
+                        "FN31": "FN31 TRK 182 UNTIL 3.0 FROM FN31"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB31",
+            "fixes": {
+                "FF31": "FF31 5500 RNW 31",
+                "JIRNB": "OVERFLY JIRNB TRK 300 UNTIL 8400 TURN LEFT DIRECT JIRNB 10000 SPEED 185 HOLD AT JIRNB RIGHT TURN INBOUNDCOURSE 137 SPEED 185 LEGTIME 1 FAF FF31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "JIR",
+                    "fixes": {
+                        "JIRNB": "JIRNB AT OR ABOVE 10000 SPEED 185",
+                        "D137I": "D137I TRK 182 UNTIL 3.9 FROM D137I"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA31",
+            "fixes": {
+                "FN31": "FN31 6800",
+                "JIRNB": "JIRNB 5000 RNW 31 TRK 300 UNTIL 8400 TURN LEFT DIRECT JIRNB 10000 SPEED 140 HOLD AT JIRNB RIGHT TURN INBOUNDCOURSE 137 LEGTIME 1 FAF FN31 MAP JIR"
+            },
+            "transitions": [
+                {
+                    "name": "JIR",
+                    "fixes": {
+                        "JIRNB": "JIRNB AT OR ABOVE 10000",
+                        "FN31": "FN31 TRK 182 UNTIL 3.0 FROM FN31"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "KJ402": "KJ402 AT OR ABOVE 6500",
+                "KJ401": "KJ401 5400 RNW 31",
+                "KJ404": "OVERFLY KJ404 AT OR ABOVE 2575 SPEED 185 TURN LEFT DIRECT",
+                "KJ405": "KJ405 AT OR ABOVE 5000",
+                "KJ403": "KJ403 8000 HOLD AT KJ403 RIGHT TURN INBOUNDCOURSE 036 ALT 8000 SPEED 210 LEGTIME 1 FAF KJ401 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "KJ403",
+                    "fixes": {
+                        "KJ403": "KJ403 AT OR ABOVE 8000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

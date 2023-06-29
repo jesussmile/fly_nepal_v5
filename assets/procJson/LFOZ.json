@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "ADATI",
+            "lat": 48.05311111666666,
+            "lon": 2.4743611166666666
+        },
+        {
+            "name": "CN23",
+            "lat": 47.957430566666666,
+            "lon": 2.2822472166666667
+        },
+        {
+            "name": "FOZ05",
+            "lat": 47.84197221666667,
+            "lon": 2.0540833333333333
+        },
+        {
+            "name": "FOZ23",
+            "lat": 47.95461111666667,
+            "lon": 2.2774722166666668
+        },
+        {
+            "name": "IOZ05",
+            "lat": 47.798194433333336,
+            "lon": 1.96775
+        },
+        {
+            "name": "IOZ23",
+            "lat": 48.003416666666666,
+            "lon": 2.3748055666666668
+        },
+        {
+            "name": "LIMTA",
+            "lat": 47.81813888333333,
+            "lon": 1.8475000000000001
+        },
+        {
+            "name": "ORSNB",
+            "lat": 47.937388883333334,
+            "lon": 2.2426388833333335
+        },
+        {
+            "name": "OZ411",
+            "lat": 47.87716666666667,
+            "lon": 2.123694433333333
+        },
+        {
+            "name": "OZ511",
+            "lat": 47.91861111666667,
+            "lon": 2.2058888833333334
+        },
+        {
+            "name": "RISNO",
+            "lat": 47.93658333333333,
+            "lon": 2.4488611166666665
+        },
+        {
+            "name": "TUPID",
+            "lat": 47.711416666666665,
+            "lon": 2.0637777833333333
+        },
+        {
+            "name": "UMOGI",
+            "lat": 48.070138883333335,
+            "lon": 2.300527783333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB23",
+            "fixes": {
+                "CN23": "CN23 AT OR ABOVE 2100",
+                "ORSNB": "ORSNB 1540 RNW 23 TRK 232 UNTIL 1200 TURN LEFT DIRECT ORSNB 2100 SPEED 220 FAF ORSNB MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "ORS",
+                    "fixes": {
+                        "ORSNB": "ORSNB RIGHT TURN INBOUNDCOURSE 232 ALT 2100 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "IOZ05": "IOZ05 AT OR ABOVE 2100 SPEED 210",
+                "FOZ05": "FOZ05 2100 RNW 05",
+                "OZ511": "OVERFLY OZ511 TURN RIGHT DIRECT",
+                "TUPID": "OVERFLY TUPID AT OR ABOVE 2100 SPEED 225 FAF FOZ05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "LIMTA",
+                    "fixes": {
+                        "LIMTA": "LIMTA"
+                    }
+                },
+                {
+                    "name": "TUPID",
+                    "fixes": {
+                        "TUPID": "TUPID"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "IOZ23": "IOZ23 AT OR ABOVE 2100 SPEED 210",
+                "FOZ23": "FOZ23 2100 RNW 23",
+                "OZ411": "OVERFLY OZ411 TURN LEFT DIRECT",
+                "RISNO": "RISNO AT OR ABOVE 2100 SPEED 220 FAF FOZ23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "ADATI",
+                    "fixes": {
+                        "ADATI": "ADATI"
+                    }
+                },
+                {
+                    "name": "RISNO",
+                    "fixes": {
+                        "RISNO": "RISNO SPEED 220"
+                    }
+                },
+                {
+                    "name": "UMOGI",
+                    "fixes": {
+                        "UMOGI": "UMOGI SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

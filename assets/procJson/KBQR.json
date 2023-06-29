@@ -1,0 +1,79 @@
+{
+    "fixes": [
+        {
+            "name": "DMRIO",
+            "lat": 42.962144433333336,
+            "lon": 78.37693611666667
+        },
+        {
+            "name": "HEBTO",
+            "lat": 42.94334166666667,
+            "lon": 78.48753333333333
+        },
+        {
+            "name": "JIDUP",
+            "lat": 42.901822216666666,
+            "lon": 78.72929721666667
+        },
+        {
+            "name": "PLICA",
+            "lat": 42.88268333333333,
+            "lon": 78.83963333333334
+        },
+        {
+            "name": "WOTGU",
+            "lat": 42.953966666666666,
+            "lon": 79.12869721666667
+        },
+        {
+            "name": "ZOBSO",
+            "lat": 42.7441,
+            "lon": 78.98596388333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "PLICA": "PLICA AT OR ABOVE 3400",
+                "JIDUP": "JIDUP 2400 RNW 09 TRK 087 UNTIL 1152",
+                "DMRIO": "OVERFLY DMRIO AT OR ABOVE 3400 HOLD AT DMRIO RIGHT TURN INBOUNDCOURSE 267 ALT 3400 LEGDIST 4 FAF JIDUP MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "WOTGU",
+                    "fixes": {
+                        "WOTGU": "WOTGU"
+                    }
+                },
+                {
+                    "name": "ZOBSO",
+                    "fixes": {
+                        "ZOBSO": "ZOBSO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "DMRIO": "DMRIO AT OR ABOVE 3400 OVERFLY DMRIO AT OR ABOVE 3400 HOLD AT DMRIO RIGHT TURN INBOUNDCOURSE 267 ALT 3400 LEGDIST 4 FAF HEBTO MAP RNW 27",
+                "HEBTO": "HEBTO 2500 RNW 27 TRK 267 UNTIL 1300 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DMRIO",
+                    "fixes": {
+                        "DMRIO": "DMRIO RIGHT TURN INBOUNDCOURSE 267 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

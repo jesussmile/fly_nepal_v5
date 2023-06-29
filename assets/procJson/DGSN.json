@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "APSEG",
+            "lat": 7.5140722166666665,
+            "lon": 2.2107805666666667
+        },
+        {
+            "name": "ARBOT",
+            "lat": 7.439122216666667,
+            "lon": 2.173377783333333
+        },
+        {
+            "name": "BIMUX",
+            "lat": 7.364169433333333,
+            "lon": 2.1359916666666665
+        },
+        {
+            "name": "ERLAV",
+            "lat": 7.209622216666666,
+            "lon": 2.4465777833333333
+        },
+        {
+            "name": "EVGAN",
+            "lat": 7.359472216666667,
+            "lon": 2.5214472166666666
+        },
+        {
+            "name": "FN25",
+            "lat": 7.406841666666667,
+            "lon": 2.2370222166666665
+        },
+        {
+            "name": "GAPSI",
+            "lat": 7.28455,
+            "lon": 2.4840083333333336
+        },
+        {
+            "name": "SN400",
+            "lat": 7.320725,
+            "lon": 2.411366666666667
+        },
+        {
+            "name": "SN499",
+            "lat": 7.373094433333334,
+            "lon": 2.3061472166666666
+        },
+        {
+            "name": "SN500",
+            "lat": 7.401041666666667,
+            "lon": 2.2499638833333333
+        },
+        {
+            "name": "SNNB",
+            "lat": 7.377483333333333,
+            "lon": 2.2973361166666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FN25": "FN25 2300",
+                "SNNB": "SNNB 1581 RNW 25 TRK 248 UNTIL 2000 TURN RIGHT DIRECT SNNB 3600 SPEED 210 HOLD AT SNNB LEFT TURN INBOUNDCOURSE 068 SPEED 210 LEGTIME 1 FAF FN25 MAP SN"
+            },
+            "transitions": [
+                {
+                    "name": "SN1",
+                    "fixes": {
+                        "SNNB": "SNNB AT OR ABOVE 3600 SPEED 210 TRK 044 UNTIL 7.0 FROM SNNB"
+                    }
+                },
+                {
+                    "name": "SN2",
+                    "fixes": {
+                        "SNNB": "SNNB AT OR ABOVE 3600 SPEED 140 TRK 050 UNTIL 7.0 FROM SNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "GAPSI": "GAPSI AT OR ABOVE 2700",
+                "SN400": "SN400 2700 RNW 07 TRK 068 UNTIL 1900 TURN LEFT DIRECT",
+                "EVGAN": "EVGAN AT OR ABOVE 4300 HOLD AT EVGAN LEFT TURN INBOUNDCOURSE 067 ALT 4300 LEGTIME 1 FAF SN400 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "ERLAV",
+                    "fixes": {
+                        "ERLAV": "ERLAV AT OR ABOVE 4300"
+                    }
+                },
+                {
+                    "name": "EVGAN",
+                    "fixes": {
+                        "EVGAN": "EVGAN AT OR ABOVE 4300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "ARBOT": "ARBOT AT OR ABOVE 2800",
+                "SN500": "SN500 2600",
+                "SN499": "OVERFLY SN499 1394 RNW 25 TRK 248 UNTIL 1900 TURN RIGHT DIRECT",
+                "APSEG": "APSEG AT OR ABOVE 4200 FAF SN500 MAP SN499"
+            },
+            "transitions": [
+                {
+                    "name": "APSEG",
+                    "fixes": {
+                        "APSEG": "APSEG AT OR ABOVE 4200"
+                    }
+                },
+                {
+                    "name": "BIMUX",
+                    "fixes": {
+                        "BIMUX": "BIMUX AT OR ABOVE 4200"
+                    }
+                }
+            ]
+        }
+    ]
+}

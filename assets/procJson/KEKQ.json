@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "FIBKE",
+            "lat": 37.039436116666664,
+            "lon": 84.69064721666666
+        },
+        {
+            "name": "OKACA",
+            "lat": 36.90034443333333,
+            "lon": 84.81571388333333
+        },
+        {
+            "name": "OREWO",
+            "lat": 36.772469433333335,
+            "lon": 84.9302
+        },
+        {
+            "name": "UNNOG",
+            "lat": 36.67761111666667,
+            "lon": 85.01482221666667
+        },
+        {
+            "name": "ZOBKU",
+            "lat": 36.81152221666667,
+            "lon": 84.89528611666667
+        },
+        {
+            "name": "ZUGTO",
+            "lat": 36.94039443333333,
+            "lon": 84.77976111666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "UNNOG": "UNNOG AT OR ABOVE 4000",
+                "OREWO": "OREWO 3000",
+                "ZOBKU": "ZOBKU AT OR ABOVE 2000 RNW 03 TRK 039 UNTIL 1231",
+                "FIBKE": "OVERFLY FIBKE AT OR ABOVE 4000 HOLD AT FIBKE RIGHT TURN INBOUNDCOURSE 219 LEGDIST 4 FAF OREWO MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "UNNOG",
+                    "fixes": {
+                        "UNNOG": "UNNOG RIGHT TURN INBOUNDCOURSE 039 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "FIBKE": "FIBKE AT OR ABOVE 4000",
+                "ZUGTO": "ZUGTO 2900",
+                "OKACA": "OKACA AT OR ABOVE 1940 RNW 21 TRK 219 UNTIL 1257",
+                "UNNOG": "OVERFLY UNNOG AT OR ABOVE 4000 HOLD AT UNNOG RIGHT TURN INBOUNDCOURSE 039 LEGDIST 4 FAF ZUGTO MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "FIBKE",
+                    "fixes": {
+                        "FIBKE": "FIBKE RIGHT TURN INBOUNDCOURSE 219 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

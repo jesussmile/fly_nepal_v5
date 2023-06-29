@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "BESPE",
+            "lat": 38.92281943333333,
+            "lon": 83.47441388333333
+        },
+        {
+            "name": "BOSTR",
+            "lat": 38.88559166666667,
+            "lon": 84.08278333333334
+        },
+        {
+            "name": "CAGSU",
+            "lat": 38.77959443333334,
+            "lon": 83.65853611666667
+        },
+        {
+            "name": "DETKE",
+            "lat": 38.898583333333335,
+            "lon": 83.29337221666667
+        },
+        {
+            "name": "DOMBE",
+            "lat": 38.77969443333333,
+            "lon": 83.80924166666667
+        },
+        {
+            "name": "EDINE",
+            "lat": 38.720683333333334,
+            "lon": 83.73395278333334
+        },
+        {
+            "name": "FENLA",
+            "lat": 38.981566666666666,
+            "lon": 83.39857778333334
+        },
+        {
+            "name": "FERAD",
+            "lat": 38.661622216666665,
+            "lon": 83.65878888333333
+        },
+        {
+            "name": "GATVE",
+            "lat": 39.06445278333333,
+            "lon": 83.50403056666667
+        },
+        {
+            "name": "MXQ",
+            "lat": 39.42969443333333,
+            "lon": 83.80123888333334
+        },
+        {
+            "name": "ZOZBO",
+            "lat": 38.43918611666667,
+            "lon": 83.43763888333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "EDINE": "EDINE AT OR ABOVE 2800",
+                "CAGSU": "CAGSU 2800 RNW 05 TRK 049 UNTIL 1296",
+                "FENLA": "OVERFLY FENLA AT OR ABOVE 2800 HOLD AT FENLA RIGHT TURN INBOUNDCOURSE 229 LEGDIST 4 FAF CAGSU MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "BOSTR",
+                    "fixes": {
+                        "BOSTR": "BOSTR",
+                        "DOMBE": "DOMBE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "ZOZBO",
+                    "fixes": {
+                        "ZOZBO": "ZOZBO",
+                        "FERAD": "FERAD AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "FENLA": "FENLA AT OR ABOVE 2800",
+                "BESPE": "BESPE 2800 RNW 23 TRK 229 UNTIL 1296",
+                "EDINE": "OVERFLY EDINE AT OR ABOVE 2800 HOLD AT EDINE RIGHT TURN INBOUNDCOURSE 049 LEGDIST 4 FAF BESPE MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "DETKE",
+                    "fixes": {
+                        "DETKE": "DETKE"
+                    }
+                },
+                {
+                    "name": "MXQ",
+                    "fixes": {
+                        "MXQ": "MXQ",
+                        "GATVE": "GATVE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

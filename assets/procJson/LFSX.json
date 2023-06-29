@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "CI11",
+            "lat": 47.8545,
+            "lon": 6.106527783333333
+        },
+        {
+            "name": "FI11",
+            "lat": 47.83225,
+            "lon": 6.192277783333333
+        },
+        {
+            "name": "FSX11",
+            "lat": 47.83236111666667,
+            "lon": 6.192111116666666
+        },
+        {
+            "name": "FSX29",
+            "lat": 47.74244443333333,
+            "lon": 6.478833333333333
+        },
+        {
+            "name": "ISX11",
+            "lat": 47.87127778333333,
+            "lon": 6.055361116666667
+        },
+        {
+            "name": "ISX29",
+            "lat": 47.71094443333333,
+            "lon": 6.565833333333334
+        },
+        {
+            "name": "LXI",
+            "lat": 47.783166666666666,
+            "lon": 6.357111116666666
+        },
+        {
+            "name": "MAP29",
+            "lat": 47.78026666666667,
+            "lon": 6.373955566666667
+        },
+        {
+            "name": "RW11",
+            "lat": 47.79159166666667,
+            "lon": 6.334533333333333
+        },
+        {
+            "name": "SX412",
+            "lat": 47.79811111666667,
+            "lon": 5.95425
+        },
+        {
+            "name": "SX413",
+            "lat": 47.91025,
+            "lon": 5.918527783333333
+        },
+        {
+            "name": "SX414",
+            "lat": 47.97108333333333,
+            "lon": 6.062777783333333
+        },
+        {
+            "name": "SX417",
+            "lat": 47.765444433333336,
+            "lon": 6.425444433333333
+        },
+        {
+            "name": "SX421",
+            "lat": 47.73163888333333,
+            "lon": 6.194388883333334
+        },
+        {
+            "name": "SX422",
+            "lat": 47.65291666666667,
+            "lon": 6.322333333333333
+        },
+        {
+            "name": "SX423",
+            "lat": 47.62744443333333,
+            "lon": 6.422194433333333
+        },
+        {
+            "name": "SX424",
+            "lat": 47.65230556666667,
+            "lon": 6.519027783333334
+        },
+        {
+            "name": "SX427",
+            "lat": 47.81944443333333,
+            "lon": 6.264888883333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS11",
+            "fixes": {
+                "CI11": "CI11 AT OR ABOVE 2900",
+                "FI11": "FI11 2900 RNW 11 TRK 111 UNTIL 3.0 FROM",
+                "LXI": "LXI TURN LEFT DIRECT LXI 3500 SPEED 195 FAF FI11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "LXI",
+                    "fixes": {
+                        "LXI": "LXI AT OR ABOVE 3500 TRK 306 UNTIL 11.0 FROM LXI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "ISX11": "ISX11 AT OR ABOVE 2900",
+                "FSX11": "FSX11 2900 RNW 11",
+                "SX417": "OVERFLY SX417 TURN LEFT DIRECT",
+                "SX414": "SX414 AT OR ABOVE 2900 SPEED 220 FAF FSX11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "SX412",
+                    "fixes": {
+                        "SX412": "SX412 AT OR ABOVE 4000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "SX413",
+                    "fixes": {
+                        "SX413": "SX413 AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "SX414",
+                    "fixes": {
+                        "SX414": "SX414 AT OR ABOVE 4500 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "ISX29": "ISX29 2600 SPEED 185",
+                "FSX29": "FSX29 2600",
+                "MAP29": "OVERFLY MAP29 1068 RNW 29",
+                "SX427": "SX427 AT OR BELOW 2600 SPEED 200",
+                "SX421": "SX421 AT OR BELOW 2600 SPEED 220 FAF FSX29 MAP MAP29"
+            },
+            "transitions": [
+                {
+                    "name": "SX421",
+                    "fixes": {
+                        "SX421": "SX421 AT OR ABOVE 4000 SPEED 220",
+                        "SX422": "SX422 AT OR ABOVE 2600",
+                        "SX423": "SX423 AT OR ABOVE 2600",
+                        "SX424": "SX424 AT OR BELOW 4000 AT OR ABOVE 2600 SPEED 185"
+                    }
+                }
+            ]
+        }
+    ]
+}

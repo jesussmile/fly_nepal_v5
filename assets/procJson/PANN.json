@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "EKUCO",
+            "lat": 64.50308888333333,
+            "lon": 149.25044721666666
+        },
+        {
+            "name": "ENN",
+            "lat": 64.59000556666666,
+            "lon": 149.07285833333333
+        },
+        {
+            "name": "FF04L",
+            "lat": 64.50696111666667,
+            "lon": 149.30989721666666
+        },
+        {
+            "name": "ICEBI",
+            "lat": 64.44913333333334,
+            "lon": 149.45606111666666
+        },
+        {
+            "name": "ICWNB",
+            "lat": 64.54569166666667,
+            "lon": 149.07687778333334
+        },
+        {
+            "name": "NENAS",
+            "lat": 64.80556943333333,
+            "lon": 149.71159166666666
+        },
+        {
+            "name": "PI001",
+            "lat": 64.52760928333333,
+            "lon": 149.20587433333333
+        },
+        {
+            "name": "PI002",
+            "lat": 64.46373448333334,
+            "lon": 149.28134945
+        },
+        {
+            "name": "PI003",
+            "lat": 64.49372913333333,
+            "lon": 149.44498426666667
+        },
+        {
+            "name": "ROYOY",
+            "lat": 64.51999443333334,
+            "lon": 149.55653056666668
+        }
+    ],
+    "rnws": [
+        "RNW 04L",
+        "RNW 04R",
+        "RNW 22L",
+        "RNW 22R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB04L",
+            "fixes": {
+                "FF04L": "FF04L 2400 RNW 04L",
+                "ICWNB": "OVERFLY ICWNB AT OR ABOVE 770 TRK 135 UNTIL 3200 TURN RIGHT DIRECT ICWNB HOLD AT ICWNB RIGHT TURN INBOUNDCOURSE 051 LEGTIME 1 FAF FF04L MAP RNW 04L"
+            },
+            "transitions": [
+                {
+                    "name": "ENN",
+                    "fixes": {
+                        "ENN": "ENN",
+                        "ICWNB": "ICWNB AT OR ABOVE 3400",
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                },
+                {
+                    "name": "NENAS",
+                    "fixes": {
+                        "NENAS": "NENAS",
+                        "ICWNB": "ICWNB AT OR ABOVE 3700",
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04L",
+            "fixes": {
+                "ICEBI": "ICEBI AT OR ABOVE 3000 OVERFLY ICEBI AT OR ABOVE 3000 HOLD AT ICEBI RIGHT TURN INBOUNDCOURSE 038 LEGDIST 4 FAF EKUCO MAP RNW 04L",
+                "EKUCO": "EKUCO 2000 RNW 04L TRK 038 UNTIL 770 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ICEBI",
+                    "fixes": {
+                        "ICEBI": "ICEBI RIGHT TURN INBOUNDCOURSE 038 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ROYOY",
+                    "fixes": {
+                        "ROYOY": "ROYOY AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

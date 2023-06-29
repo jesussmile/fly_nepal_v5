@@ -1,0 +1,217 @@
+{
+    "fixes": [
+        {
+            "name": "CUXUP",
+            "lat": 35.17607221666667,
+            "lon": 90.047725
+        },
+        {
+            "name": "FAXIP",
+            "lat": 35.39355833333333,
+            "lon": 90.11025556666667
+        },
+        {
+            "name": "GQE",
+            "lat": 35.34703056666667,
+            "lon": 90.47815833333334
+        },
+        {
+            "name": "MEM",
+            "lat": 35.01510556666667,
+            "lon": 89.98320278333334
+        },
+        {
+            "name": "MIOLA",
+            "lat": 35.48059443333333,
+            "lon": 89.3954
+        },
+        {
+            "name": "MNFRD",
+            "lat": 35.448644433333335,
+            "lon": 89.83296111666667
+        },
+        {
+            "name": "NEUME",
+            "lat": 35.39252221666667,
+            "lon": 89.83506943333333
+        },
+        {
+            "name": "OZSOM",
+            "lat": 35.41232221666667,
+            "lon": 89.95920556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 35.5049887,
+            "lon": 89.81441495
+        },
+        {
+            "name": "PI002",
+            "lat": 35.56704585,
+            "lon": 89.85846678333333
+        },
+        {
+            "name": "PI003",
+            "lat": 35.69009976666667,
+            "lon": 89.75329376666667
+        },
+        {
+            "name": "PIRGE",
+            "lat": 35.43135278333333,
+            "lon": 89.79676111666667
+        },
+        {
+            "name": "RYBRN",
+            "lat": 35.50930833333334,
+            "lon": 89.71970833333333
+        },
+        {
+            "name": "SHENT",
+            "lat": 35.39775278333333,
+            "lon": 89.85068888333333
+        },
+        {
+            "name": "URANY",
+            "lat": 35.280169433333334,
+            "lon": 89.94564166666666
+        },
+        {
+            "name": "WETOB",
+            "lat": 35.327297216666665,
+            "lon": 89.89931388333333
+        },
+        {
+            "name": "YEGUG",
+            "lat": 35.25966666666667,
+            "lon": 90.17463056666666
+        },
+        {
+            "name": "ZEDTU",
+            "lat": 35.11626388333333,
+            "lon": 90.08208888333333
+        },
+        {
+            "name": "ZIVNY",
+            "lat": 35.38608611666667,
+            "lon": 90.16988333333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD22",
+            "fixes": {
+                "MNFRD": "MNFRD 2000 MNFRD AT OR ABOVE 2000 HOLD AT MNFRD RIGHT TURN INBOUNDCOURSE 195 ALT 2000 LEGTIME 1 FAF MNFRD MAP RNW 22",
+                "SHENT": "SHENT AT OR ABOVE 1020 RNW 22 TRK 195 UNTIL 900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MEM",
+                    "fixes": {
+                        "MEM": "MEM",
+                        "MNFRD": "MNFRD AT OR ABOVE 2400",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS22",
+            "fixes": {
+                "RYBRN": "RYBRN AT OR ABOVE 2500",
+                "PIRGE": "PIRGE 2000 RNW 22 TRK 219 UNTIL 1000 TURN RIGHT DIRECT",
+                "OZSOM": "OZSOM AT OR ABOVE 3000 HOLD AT OZSOM RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGTIME 1 FAF PIRGE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "RYBRN",
+                    "fixes": {
+                        "RYBRN": "RYBRN RIGHT TURN INBOUNDCOURSE 219 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "CUXUP": "CUXUP AT OR ABOVE 3000",
+                "URANY": "URANY 2000",
+                "WETOB": "WETOB AT OR ABOVE 840 RNW 04 TRK 039 UNTIL 492",
+                "RYBRN": "OVERFLY RYBRN AT OR ABOVE 3000 HOLD AT RYBRN RIGHT TURN INBOUNDCOURSE 219 LEGDIST 7 FAF URANY MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "GQE",
+                    "fixes": {
+                        "GQE": "GQE",
+                        "YEGUG": "YEGUG AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "RYBRN",
+                    "fixes": {
+                        "RYBRN": "RYBRN",
+                        "FAXIP": "FAXIP AT OR ABOVE 3000 SPEED 250",
+                        "YEGUG": "YEGUG AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "ZEDTU",
+                    "fixes": {
+                        "ZEDTU": "ZEDTU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "RYBRN": "RYBRN AT OR ABOVE 2500",
+                "PIRGE": "PIRGE 2000",
+                "NEUME": "NEUME AT OR ABOVE 1040 RNW 22 TRK 219 UNTIL 840",
+                "ZIVNY": "OVERFLY ZIVNY AT OR ABOVE 2500 HOLD AT ZIVNY LEFT TURN INBOUNDCOURSE 081 LEGDIST 4 FAF PIRGE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "MIOLA",
+                    "fixes": {
+                        "MIOLA": "MIOLA"
+                    }
+                },
+                {
+                    "name": "ZIVNY",
+                    "fixes": {
+                        "ZIVNY": "ZIVNY",
+                        "RYBRN": "OVERFLY RYBRN AT OR ABOVE 2500 HOLD AT RYBRN RIGHT TURN INBOUNDCOURSE 219 ALT 2500 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR22",
+            "fixes": {
+                "MNFRD": "MNFRD 2000 MNFRD AT OR ABOVE 2000 HOLD AT MNFRD RIGHT TURN INBOUNDCOURSE 195 ALT 2000 LEGTIME 1 FAF MNFRD MAP RNW 22",
+                "SHENT": "SHENT AT OR ABOVE 1020 RNW 22 TRK 195 UNTIL 900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MEM",
+                    "fixes": {
+                        "MEM": "MEM",
+                        "MNFRD": "MNFRD AT OR ABOVE 2400",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

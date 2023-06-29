@@ -1,0 +1,179 @@
+{
+    "fixes": [
+        {
+            "name": "AMVED",
+            "lat": 6.260833333333333,
+            "lon": 6.493080566666666
+        },
+        {
+            "name": "AS200",
+            "lat": 6.2346861166666665,
+            "lon": 6.5725750000000005
+        },
+        {
+            "name": "AS300",
+            "lat": 6.172747216666667,
+            "lon": 6.760688883333334
+        },
+        {
+            "name": "BIRUD",
+            "lat": 6.3403777833333335,
+            "lon": 6.519219433333333
+        },
+        {
+            "name": "CI11",
+            "lat": 6.246402783333333,
+            "lon": 6.537169433333333
+        },
+        {
+            "name": "FD29",
+            "lat": 6.170194433333333,
+            "lon": 6.769363883333334
+        },
+        {
+            "name": "FF11",
+            "lat": 6.235394433333333,
+            "lon": 6.568830566666667
+        },
+        {
+            "name": "IKPIB",
+            "lat": 6.146586116666667,
+            "lon": 6.840163883333333
+        },
+        {
+            "name": "ISBUD",
+            "lat": 6.067041666666666,
+            "lon": 6.814038883333334
+        },
+        {
+            "name": "OXETA",
+            "lat": 6.226133333333333,
+            "lon": 6.8663
+        },
+        {
+            "name": "SAB",
+            "lat": 6.196077783333333,
+            "lon": 6.689794433333334
+        },
+        {
+            "name": "TUXOR",
+            "lat": 6.120427783333334,
+            "lon": 6.919636116666666
+        },
+        {
+            "name": "VIVKA",
+            "lat": 6.286980566666666,
+            "lon": 6.413583333333333
+        },
+        {
+            "name": "XUTKO",
+            "lat": 6.181286116666667,
+            "lon": 6.466947216666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD11",
+            "fixes": {
+                "FF11": "FF11 2000 RNW 11 HDG 109 UNTIL 2000 TURN RIGHT DIRECT",
+                "SAB": "SAB 2500 HOLD AT SAB LEFT TURN INBOUNDCOURSE 289 ALT 2500 LEGTIME 1 FAF FF11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "SAB",
+                    "fixes": {
+                        "SAB": "SAB 2500",
+                        "FF11": "FF11 AT OR ABOVE 2000 TRK 244 UNTIL 4.4 FROM FF11"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD29",
+            "fixes": {
+                "FD29": "FD29 2000 RNW 29 HDG 289 UNTIL 2000 TURN LEFT DIRECT",
+                "SAB": "SAB 2500 HOLD AT SAB LEFT TURN INBOUNDCOURSE 289 ALT 2500 LEGTIME 1 FAF FD29 MAP RNW 29"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILS11",
+            "fixes": {
+                "CI11": "CI11 AT OR ABOVE 2000",
+                "FF11": "FF11 2000 RNW 11 HDG 109 UNTIL 2000 TURN RIGHT DIRECT",
+                "SAB": "SAB 2500 HOLD AT SAB LEFT TURN INBOUNDCOURSE 289 ALT 2500 LEGTIME 1 FAF FF11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "SAB",
+                    "fixes": {
+                        "SAB": "SAB AT OR ABOVE 2500",
+                        "FF11": "FF11 AT OR ABOVE 2000 TRK 244 UNTIL 4.4 FROM FF11"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "AMVED": "AMVED AT OR ABOVE 1930 SPEED 250",
+                "AS200": "AS200 1930 SPEED 200 RNW 11 TURN RIGHT DIRECT",
+                "XUTKO": "XUTKO HOLD AT XUTKO RIGHT TURN INBOUNDCOURSE 019 ALT 3000 SPEED 230 LEGTIME 1 FAF AS200 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "BIRUD",
+                    "fixes": {
+                        "BIRUD": "BIRUD 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "VIVKA",
+                    "fixes": {
+                        "VIVKA": "VIVKA 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "XUTKO",
+                    "fixes": {
+                        "XUTKO": "XUTKO 3000 SPEED 250"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "IKPIB": "IKPIB AT OR ABOVE 1840 SPEED 250",
+                "AS300": "AS300 1840 SPEED 200 RNW 29 TURN RIGHT DIRECT",
+                "OXETA": "OXETA HOLD AT OXETA LEFT TURN INBOUNDCOURSE 199 ALT 3000 SPEED 230 LEGTIME 1 FAF AS300 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "ISBUD",
+                    "fixes": {
+                        "ISBUD": "ISBUD 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "OXETA",
+                    "fixes": {
+                        "OXETA": "OXETA 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "TUXOR",
+                    "fixes": {
+                        "TUXOR": "TUXOR 3000 SPEED 250"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "D053I",
+            "lat": 4.2969694333333335,
+            "lon": 74.75769166666667
+        },
+        {
+            "name": "D062D",
+            "lat": 4.234533333333333,
+            "lon": 74.805575
+        },
+        {
+            "name": "D242C",
+            "lat": 4.166330566666667,
+            "lon": 74.90259721666666
+        },
+        {
+            "name": "GIR",
+            "lat": 4.192222216666667,
+            "lon": 74.86555556666667
+        },
+        {
+            "name": "MA053",
+            "lat": 4.246947216666666,
+            "lon": 74.8093
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "GIR2C",
+            "rnw": "20",
+            "fixes": {
+                "D062D": "D062D AT OR ABOVE 1550",
+                "GIR": "GIR AT OR ABOVE 5000 SPEED 140",
+                "D242C": "OVERFLY D242C AT OR ABOVE 3500 TURN RIGHT DIRECT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORA02",
+            "fixes": {
+                "GIR": "GIR 3000 GIR AT OR ABOVE 5000 HOLD AT GIR LEFT TURN INBOUNDCOURSE 047 ALT 5000 SPEED 140 LEGTIME 1 FAF GIR MAP MA053",
+                "MA053": "MA053 1500 RNW 02",
+                "D053I": "OVERFLY D053I AT OR ABOVE 2500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GIR",
+                    "fixes": {
+                        "GIR": "GIR LEFT TURN INBOUNDCOURSE 047 ALT 4000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA20",
+            "fixes": {
+                "GIR": "GIR 3000 GIR AT OR ABOVE 5000 HOLD AT GIR LEFT TURN INBOUNDCOURSE 047 ALT 5000 SPEED 140 LEGTIME 1 FAF GIR MAP MA053",
+                "MA053": "MA053 1500 RNW 20",
+                "D053I": "OVERFLY D053I AT OR ABOVE 2500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GIR",
+                    "fixes": {
+                        "GIR": "GIR LEFT TURN INBOUNDCOURSE 047 ALT 4000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,179 @@
+{
+    "fixes": [
+        {
+            "name": "CLAPS",
+            "lat": 45.059583333333336,
+            "lon": 95.32315556666667
+        },
+        {
+            "name": "DAWSO",
+            "lat": 45.023505566666664,
+            "lon": 96.22774721666667
+        },
+        {
+            "name": "EBZAN",
+            "lat": 45.00195,
+            "lon": 95.75378611666666
+        },
+        {
+            "name": "FF14",
+            "lat": 45.02948333333333,
+            "lon": 95.79296666666667
+        },
+        {
+            "name": "FITAS",
+            "lat": 45.065,
+            "lon": 95.16948611666666
+        },
+        {
+            "name": "MOX",
+            "lat": 45.56541943333333,
+            "lon": 95.96933333333334
+        },
+        {
+            "name": "MVE",
+            "lat": 44.972675,
+            "lon": 95.71219166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 45.01169121666667,
+            "lon": 95.7735105
+        },
+        {
+            "name": "PI002",
+            "lat": 45.007895766666664,
+            "lon": 95.87473755
+        },
+        {
+            "name": "PI003",
+            "lat": 45.084062683333336,
+            "lon": 95.88761016666666
+        },
+        {
+            "name": "RISLE",
+            "lat": 44.67647778333333,
+            "lon": 95.92956111666666
+        },
+        {
+            "name": "RWF",
+            "lat": 44.467275,
+            "lon": 95.12823056666667
+        },
+        {
+            "name": "WUMIR",
+            "lat": 45.03597778333334,
+            "lon": 95.782375
+        },
+        {
+            "name": "WUMPI",
+            "lat": 44.93074721666667,
+            "lon": 95.66959443333333
+        },
+        {
+            "name": "YIBUG",
+            "lat": 44.820244433333336,
+            "lon": 95.55175
+        },
+        {
+            "name": "ZARTU",
+            "lat": 45.11813333333333,
+            "lon": 95.87080556666666
+        },
+        {
+            "name": "ZATVU",
+            "lat": 44.89993333333334,
+            "lon": 95.63667221666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 14",
+        "RNW 21",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ZARTU": "ZARTU AT OR ABOVE 3400",
+                "WUMIR": "WUMIR 2600 RNW 14 TRK 141 UNTIL 1284",
+                "YIBUG": "OVERFLY YIBUG AT OR ABOVE 3300 HOLD AT YIBUG RIGHT TURN INBOUNDCOURSE 321 LEGDIST 4 FAF WUMIR MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "CLAPS",
+                    "fixes": {
+                        "CLAPS": "CLAPS",
+                        "ZARTU": "OVERFLY ZARTU AT OR ABOVE 3400 HOLD AT ZARTU RIGHT TURN INBOUNDCOURSE 141 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DAWSO",
+                    "fixes": {
+                        "DAWSO": "DAWSO"
+                    }
+                },
+                {
+                    "name": "MOX",
+                    "fixes": {
+                        "MOX": "MOX"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "YIBUG": "YIBUG AT OR ABOVE 3300",
+                "ZATVU": "ZATVU 2600",
+                "WUMPI": "WUMPI AT OR ABOVE 1860 RNW 32 TRK 321 UNTIL 1226",
+                "ZARTU": "OVERFLY ZARTU AT OR ABOVE 3400 HOLD AT ZARTU RIGHT TURN INBOUNDCOURSE 141 LEGDIST 4 FAF ZATVU MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "FITAS",
+                    "fixes": {
+                        "FITAS": "FITAS",
+                        "YIBUG": "OVERFLY YIBUG AT OR ABOVE 3300 HOLD AT YIBUG RIGHT TURN INBOUNDCOURSE 321 ALT 3300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RISLE",
+                    "fixes": {
+                        "RISLE": "RISLE",
+                        "YIBUG": "OVERFLY YIBUG AT OR ABOVE 3300 HOLD AT YIBUG RIGHT TURN INBOUNDCOURSE 321 ALT 3300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RWF",
+                    "fixes": {
+                        "RWF": "RWF"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR14",
+            "fixes": {
+                "FF14": "FF14 2600",
+                "EBZAN": "EBZAN AT OR ABOVE 1840",
+                "MVE": "MVE 1044 RNW 14 TRK 130 UNTIL 2000 TURN RIGHT DIRECT MVE AT OR ABOVE 3400 HOLD AT MVE RIGHT TURN INBOUNDCOURSE 130 ALT 3400 LEGTIME 1 FAF FF14 MAP MVE"
+            },
+            "transitions": [
+                {
+                    "name": "FITAS",
+                    "fixes": {
+                        "FITAS": "FITAS",
+                        "MVE": "MVE AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

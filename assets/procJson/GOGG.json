@@ -1,0 +1,57 @@
+{
+    "fixes": [
+        {
+            "name": "FV10",
+            "lat": 12.548019433333334,
+            "lon": 16.382919433333335
+        },
+        {
+            "name": "FV28",
+            "lat": 12.549997216666666,
+            "lon": 16.185141666666667
+        },
+        {
+            "name": "ZG",
+            "lat": 12.557527783333333,
+            "lon": 16.272572216666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VOR10",
+            "fixes": {
+                "FV10": "FV10 1800 RNW 10",
+                "ZG": "OVERFLY ZG TRK 093 UNTIL 1800 TURN RIGHT DIRECT ZG 1800 FAF FV10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "ZG",
+                    "fixes": {
+                        "ZG": "ZG AT OR ABOVE 2800 TRK 288 UNTIL 7.5 FROM ZG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR28",
+            "fixes": {
+                "FV28": "FV28 1800",
+                "ZG": "ZG 180 RNW 28 TRK 276 UNTIL 1800 TURN LEFT DIRECT ZG 1800 FAF FV28 MAP ZG"
+            },
+            "transitions": [
+                {
+                    "name": "ZG",
+                    "fixes": {
+                        "ZG": "ZG AT OR ABOVE 2800 TRK 121 UNTIL 6.0 FROM ZG"
+                    }
+                }
+            ]
+        }
+    ]
+}

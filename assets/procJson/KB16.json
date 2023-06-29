@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "BEEPS",
+            "lat": 42.82035,
+            "lon": 76.98467778333334
+        },
+        {
+            "name": "CALUG",
+            "lat": 43.07618888333333,
+            "lon": 76.65421943333334
+        },
+        {
+            "name": "CAMVA",
+            "lat": 43.08522778333333,
+            "lon": 76.42394166666666
+        },
+        {
+            "name": "DETVE",
+            "lat": 43.089511116666664,
+            "lon": 76.31036666666667
+        },
+        {
+            "name": "EBALE",
+            "lat": 42.988338883333334,
+            "lon": 76.76136666666666
+        },
+        {
+            "name": "EBIRE",
+            "lat": 43.006272216666666,
+            "lon": 76.30442221666667
+        },
+        {
+            "name": "FALGI",
+            "lat": 43.154780566666666,
+            "lon": 76.77413888333334
+        },
+        {
+            "name": "FAMEP",
+            "lat": 43.172755566666666,
+            "lon": 76.31615
+        },
+        {
+            "name": "HOBKA",
+            "lat": 43.071558333333336,
+            "lon": 76.76774166666667
+        },
+        {
+            "name": "LYSAN",
+            "lat": 43.21241666666667,
+            "lon": 76.51431388333333
+        },
+        {
+            "name": "SCIPO",
+            "lat": 42.808075,
+            "lon": 76.47935556666667
+        },
+        {
+            "name": "VESPE",
+            "lat": 42.797677783333334,
+            "lon": 76.10881388333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "HOBKA": "HOBKA AT OR ABOVE 2700",
+                "CALUG": "CALUG 2000 RNW 10 TRK 099 UNTIL 800",
+                "DETVE": "DETVE AT OR ABOVE 3000 HOLD AT DETVE RIGHT TURN INBOUNDCOURSE 279 LEGDIST 4 FAF CALUG MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "BEEPS",
+                    "fixes": {
+                        "BEEPS": "BEEPS",
+                        "EBALE": "EBALE AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "LYSAN",
+                    "fixes": {
+                        "LYSAN": "LYSAN",
+                        "FALGI": "FALGI AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "DETVE": "DETVE AT OR ABOVE 2700",
+                "CAMVA": "CAMVA 2000 RNW 28 TRK 279 UNTIL 800",
+                "HOBKA": "HOBKA AT OR ABOVE 3000 HOLD AT HOBKA RIGHT TURN INBOUNDCOURSE 099 LEGDIST 4 FAF CAMVA MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "LYSAN",
+                    "fixes": {
+                        "LYSAN": "LYSAN",
+                        "FAMEP": "FAMEP AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "SCIPO",
+                    "fixes": {
+                        "SCIPO": "SCIPO",
+                        "EBIRE": "EBIRE AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "VESPE",
+                    "fixes": {
+                        "VESPE": "VESPE",
+                        "EBIRE": "EBIRE AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        }
+    ]
+}

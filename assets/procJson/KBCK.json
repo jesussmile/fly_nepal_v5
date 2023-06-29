@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "CAVKA",
+            "lat": 44.214875,
+            "lon": 91.14845556666667
+        },
+        {
+            "name": "CUGUG",
+            "lat": 44.25785833333333,
+            "lon": 90.79631666666667
+        },
+        {
+            "name": "DIVEN",
+            "lat": 44.234527783333334,
+            "lon": 90.98861111666666
+        },
+        {
+            "name": "HURST",
+            "lat": 43.936022216666665,
+            "lon": 90.20349166666666
+        },
+        {
+            "name": "TUVUY",
+            "lat": 44.2666,
+            "lon": 90.72353611666666
+        },
+        {
+            "name": "ZELED",
+            "lat": 44.28566943333333,
+            "lon": 90.56336943333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "CAVKA": "CAVKA AT OR ABOVE 3500",
+                "DIVEN": "DIVEN 2600 RNW 08 TRK 080 UNTIL 1073",
+                "ZELED": "OVERFLY ZELED AT OR ABOVE 3500 HOLD AT ZELED RIGHT TURN INBOUNDCOURSE 261 LEGDIST 4 FAF DIVEN MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "CAVKA",
+                    "fixes": {
+                        "CAVKA": "CAVKA LEFT TURN INBOUNDCOURSE 080 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "ZELED": "ZELED AT OR ABOVE 3500",
+                "TUVUY": "TUVUY 2600",
+                "CUGUG": "CUGUG AT OR ABOVE 1580 RNW 26 TRK 261 UNTIL 1087",
+                "CAVKA": "OVERFLY CAVKA AT OR ABOVE 3500 HOLD AT CAVKA LEFT TURN INBOUNDCOURSE 080 LEGDIST 4 FAF TUVUY MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "HURST",
+                    "fixes": {
+                        "HURST": "HURST"
+                    }
+                },
+                {
+                    "name": "ZELED",
+                    "fixes": {
+                        "ZELED": "ZELED RIGHT TURN INBOUNDCOURSE 261 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

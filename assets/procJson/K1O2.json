@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "CEVLA",
+            "lat": 39.04881666666667,
+            "lon": 122.77461666666666
+        },
+        {
+            "name": "ENI",
+            "lat": 39.053216666666664,
+            "lon": 123.27432778333333
+        },
+        {
+            "name": "HEBLU",
+            "lat": 39.144922216666664,
+            "lon": 122.87742221666667
+        },
+        {
+            "name": "MUFEL",
+            "lat": 38.99302221666667,
+            "lon": 122.90073056666667
+        },
+        {
+            "name": "NADIE",
+            "lat": 39.08789721666667,
+            "lon": 122.90138888333334
+        },
+        {
+            "name": "SAVPE",
+            "lat": 39.18748888333333,
+            "lon": 123.00926388333333
+        },
+        {
+            "name": "TAPNE",
+            "lat": 39.18798888333333,
+            "lon": 122.90208611666667
+        },
+        {
+            "name": "WEPLO",
+            "lat": 39.23775,
+            "lon": 123.09395
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "LAKPT3",
+            "rnw": "10",
+            "fixes": {
+                "CEVLA": "CEVLA",
+                "HEBLU": "HEBLU SPEED 175",
+                "ENI": "ENI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA10",
+            "fixes": {
+                "TAPNE": "TAPNE AT OR ABOVE 5800",
+                "NADIE": "NADIE 4700",
+                "MUFEL": "OVERFLY MUFEL 2580 RNW 10 TRK 164 UNTIL 2580 TURN LEFT DIRECT",
+                "WEPLO": "OVERFLY WEPLO AT OR ABOVE 8000 HOLD AT WEPLO RIGHT TURN INBOUNDCOURSE 021 LEGDIST 7 FAF NADIE MAP MUFEL"
+            },
+            "transitions": [
+                {
+                    "name": "ENI",
+                    "fixes": {
+                        "ENI": "ENI",
+                        "SAVPE": "SAVPE AT OR ABOVE 6700"
+                    }
+                },
+                {
+                    "name": "WEPLO",
+                    "fixes": {
+                        "WEPLO": "WEPLO",
+                        "SAVPE": "SAVPE AT OR ABOVE 6700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA28",
+            "fixes": {
+                "TAPNE": "TAPNE AT OR ABOVE 5800",
+                "NADIE": "NADIE 4700",
+                "MUFEL": "OVERFLY MUFEL 2580 RNW 28 TRK 164 UNTIL 2580 TURN LEFT DIRECT",
+                "WEPLO": "OVERFLY WEPLO AT OR ABOVE 8000 HOLD AT WEPLO RIGHT TURN INBOUNDCOURSE 021 LEGDIST 7 FAF NADIE MAP MUFEL"
+            },
+            "transitions": [
+                {
+                    "name": "ENI",
+                    "fixes": {
+                        "ENI": "ENI",
+                        "SAVPE": "SAVPE AT OR ABOVE 6700"
+                    }
+                },
+                {
+                    "name": "WEPLO",
+                    "fixes": {
+                        "WEPLO": "WEPLO",
+                        "SAVPE": "SAVPE AT OR ABOVE 6700"
+                    }
+                }
+            ]
+        }
+    ]
+}

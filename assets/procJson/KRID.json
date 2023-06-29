@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "JERMY",
+            "lat": 39.80554721666667,
+            "lon": 84.74965
+        },
+        {
+            "name": "OTJIW",
+            "lat": 39.777419433333336,
+            "lon": 84.80210278333334
+        },
+        {
+            "name": "OZROC",
+            "lat": 39.70425278333333,
+            "lon": 84.93817221666667
+        },
+        {
+            "name": "PEWEZ",
+            "lat": 39.864927783333336,
+            "lon": 84.63862221666666
+        },
+        {
+            "name": "PIGTE",
+            "lat": 39.686313883333334,
+            "lon": 84.78037221666666
+        },
+        {
+            "name": "SKYRA",
+            "lat": 39.599980566666666,
+            "lon": 84.70276666666666
+        },
+        {
+            "name": "SNACK",
+            "lat": 39.64474443333334,
+            "lon": 85.04841943333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 15",
+        "RNW 24",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "SNACK": "SNACK AT OR ABOVE 2800",
+                "OZROC": "OZROC 2800 RNW 06 TRK 058 UNTIL 1500",
+                "PEWEZ": "OVERFLY PEWEZ AT OR ABOVE 2700 HOLD AT PEWEZ RIGHT TURN INBOUNDCOURSE 238 LEGDIST 4 FAF OZROC MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "SNACK",
+                    "fixes": {
+                        "SNACK": "SNACK RIGHT TURN INBOUNDCOURSE 058 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "PEWEZ": "PEWEZ AT OR ABOVE 2800",
+                "JERMY": "JERMY 2700",
+                "OTJIW": "OTJIW AT OR ABOVE 1740 RNW 24 TRK 238 UNTIL 1339",
+                "SNACK": "OVERFLY SNACK AT OR ABOVE 2800 HOLD AT SNACK RIGHT TURN INBOUNDCOURSE 058 LEGDIST 4 FAF JERMY MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "PEWEZ",
+                    "fixes": {
+                        "PEWEZ": "PEWEZ RIGHT TURN INBOUNDCOURSE 238 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "SKYRA": "SKYRA AT OR ABOVE 3000 OVERFLY SKYRA AT OR ABOVE 3000 HOLD AT SKYRA RIGHT TURN INBOUNDCOURSE 328 LEGDIST 4 FAF PIGTE MAP RNW 33",
+                "PIGTE": "PIGTE 2700 RNW 33 TRK 328 UNTIL 1540 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SKYRA",
+                    "fixes": {
+                        "SKYRA": "SKYRA RIGHT TURN INBOUNDCOURSE 328 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

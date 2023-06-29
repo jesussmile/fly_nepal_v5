@@ -1,0 +1,225 @@
+{
+    "fixes": [
+        {
+            "name": "AKSEM",
+            "lat": 41.57494166666667,
+            "lon": 172.2172
+        },
+        {
+            "name": "ANSIS",
+            "lat": 41.540708333333335,
+            "lon": 171.69375556666665
+        },
+        {
+            "name": "AREDU",
+            "lat": 41.746008333333336,
+            "lon": 171.81674166666667
+        },
+        {
+            "name": "AVMAK",
+            "lat": 41.901611116666665,
+            "lon": 171.44768333333334
+        },
+        {
+            "name": "BURKI",
+            "lat": 41.83191111666667,
+            "lon": 171.38645
+        },
+        {
+            "name": "DAMIL",
+            "lat": 41.83087221666667,
+            "lon": 171.18926943333332
+        },
+        {
+            "name": "ESDAK",
+            "lat": 42.209091666666666,
+            "lon": 171.82223056666666
+        },
+        {
+            "name": "GUNOM",
+            "lat": 41.762177783333335,
+            "lon": 171.32535
+        },
+        {
+            "name": "KAKET",
+            "lat": 41.42455556666667,
+            "lon": 171.75889166666667
+        },
+        {
+            "name": "KAKOM",
+            "lat": 41.836241666666666,
+            "lon": 171.60329166666668
+        },
+        {
+            "name": "PILUP",
+            "lat": 41.58671388333333,
+            "lon": 171.88218888333333
+        },
+        {
+            "name": "WS401",
+            "lat": 41.99434721666667,
+            "lon": 171.56011666666666
+        },
+        {
+            "name": "WS404",
+            "lat": 41.78613333333333,
+            "lon": 171.47958333333332
+        },
+        {
+            "name": "WS406",
+            "lat": 41.95108333333334,
+            "lon": 171.50760833333334
+        },
+        {
+            "name": "WS408",
+            "lat": 41.64202221666667,
+            "lon": 171.77104721666666
+        },
+        {
+            "name": "WS411",
+            "lat": 41.68801666666667,
+            "lon": 171.67831111666666
+        },
+        {
+            "name": "WS501",
+            "lat": 41.582152783333335,
+            "lon": 172.01534721666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [
+        {
+            "name": "KAKE1P",
+            "rnw": "04",
+            "fixes": {
+                "KAKET": "KAKET"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KAKE1Q",
+            "rnw": "22",
+            "fixes": {
+                "KAKET": "KAKET"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "AKSE1E",
+            "runway": "RNW 04",
+            "fixes": {
+                "AKSEM": "AKSEM",
+                "AREDU": "AREDU",
+                "KAKOM": "KAKOM",
+                "AVMAK": "AVMAK SPEED 240"
+            }
+        },
+        {
+            "name": "AKSE1F",
+            "runway": "RNW 22",
+            "fixes": {
+                "AKSEM": "AKSEM",
+                "WS501": "WS501 SPEED 240",
+                "PILUP": "PILUP SPEED 200"
+            }
+        },
+        {
+            "name": "DAMI1E",
+            "runway": "RNW 04",
+            "fixes": {
+                "DAMIL": "DAMIL",
+                "BURKI": "BURKI AT OR ABOVE 2200"
+            }
+        },
+        {
+            "name": "DAMI1F",
+            "runway": "RNW 22",
+            "fixes": {
+                "DAMIL": "DAMIL",
+                "ANSIS": "ANSIS AT OR ABOVE 2400"
+            }
+        },
+        {
+            "name": "ESDA1E",
+            "runway": "RNW 04",
+            "fixes": {
+                "ESDAK": "ESDAK",
+                "WS401": "WS401",
+                "WS406": "WS406",
+                "AVMAK": "AVMAK SPEED 240"
+            }
+        },
+        {
+            "name": "ESDA1F",
+            "runway": "RNW 22",
+            "fixes": {
+                "ESDAK": "ESDAK",
+                "WS501": "WS501 SPEED 240",
+                "PILUP": "PILUP SPEED 200"
+            }
+        },
+        {
+            "name": "KAKE1E",
+            "runway": "RNW 04",
+            "fixes": {
+                "KAKET": "KAKET",
+                "GUNOM": "GUNOM AT OR ABOVE 2200"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "BURKI": "BURKI AT OR ABOVE 2200",
+                "WS404": "WS404 1660 RNW 04",
+                "WS411": "OVERFLY WS411 TURN LEFT DIRECT",
+                "GUNOM": "GUNOM AT OR ABOVE 2200 HOLD AT GUNOM RIGHT TURN INBOUNDCOURSE 124 ALT 2200 LEGTIME 1 FAF WS404 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "AVMAK",
+                    "fixes": {
+                        "AVMAK": "AVMAK"
+                    }
+                },
+                {
+                    "name": "GUNOM",
+                    "fixes": {
+                        "GUNOM": "GUNOM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "WS408": "WS408 AT OR ABOVE 2400",
+                "WS411": "WS411 1650 RNW 22",
+                "WS404": "OVERFLY WS404 TURN RIGHT DIRECT",
+                "ANSIS": "ANSIS AT OR ABOVE 3500 HOLD AT ANSIS RIGHT TURN INBOUNDCOURSE 128 ALT 3500 SPEED 200 LEGTIME 1 FAF WS411 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "ANSIS",
+                    "fixes": {
+                        "ANSIS": "ANSIS"
+                    }
+                },
+                {
+                    "name": "PILUP",
+                    "fixes": {
+                        "PILUP": "PILUP SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "ENVUR",
+            "lat": 4.0395916666666665,
+            "lon": 68.02346388333333
+        },
+        {
+            "name": "FD18",
+            "lat": 3.9331194333333332,
+            "lon": 67.92704721666667
+        },
+        {
+            "name": "MD18",
+            "lat": 3.8816277833333332,
+            "lon": 67.91224721666667
+        },
+        {
+            "name": "NIDKU",
+            "lat": 4.109138883333333,
+            "lon": 67.95830833333333
+        },
+        {
+            "name": "OPTON",
+            "lat": 3.8116694333333334,
+            "lon": 67.89784443333333
+        },
+        {
+            "name": "PANID",
+            "lat": 4.0438888833333335,
+            "lon": 68.50472221666666
+        },
+        {
+            "name": "PD901",
+            "lat": 3.8031972166666668,
+            "lon": 67.89621666666666
+        },
+        {
+            "name": "PD902",
+            "lat": 3.9204055666666666,
+            "lon": 67.91963333333334
+        },
+        {
+            "name": "PDA",
+            "lat": 3.8527777833333334,
+            "lon": 67.90388888333334
+        },
+        {
+            "name": "ROKIS",
+            "lat": 4.027047216666666,
+            "lon": 67.94101666666667
+        },
+        {
+            "name": "UMBET",
+            "lat": 4.798888883333333,
+            "lon": 68.33722221666666
+        },
+        {
+            "name": "USVIV",
+            "lat": 3.944952783333333,
+            "lon": 67.92456111666667
+        },
+        {
+            "name": "VUGED",
+            "lat": 5.047777783333333,
+            "lon": 71.69277778333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "PANI1A",
+            "rnw": "18",
+            "fixes": {
+                "PD901": "OVERFLY PD901 AT OR ABOVE 1000 TURN RIGHT DIRECT",
+                "PANID": "PANID AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PANI1B",
+            "rnw": "36",
+            "fixes": {
+                "PD902": "OVERFLY PD902 AT OR ABOVE 1000",
+                "PANID": "PANID AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UMBE1A",
+            "rnw": "18",
+            "fixes": {
+                "PD901": "OVERFLY PD901 AT OR ABOVE 1000 TURN RIGHT DIRECT",
+                "UMBET": "UMBET AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UMBE1B",
+            "rnw": "36",
+            "fixes": {
+                "PD902": "OVERFLY PD902 AT OR ABOVE 1000",
+                "UMBET": "UMBET AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "PANI1C",
+            "runway": "RNW 18",
+            "fixes": {
+                "VUGED": "VUGED",
+                "PANID": "PANID AT OR ABOVE 5000",
+                "ENVUR": "ENVUR AT OR ABOVE 5000"
+            }
+        },
+        {
+            "name": "UMBE1C",
+            "runway": "RNW 18",
+            "fixes": {
+                "UMBET": "UMBET AT OR ABOVE 5000",
+                "NIDKU": "NIDKU AT OR ABOVE 5000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "FD18": "FD18 1740",
+                "MD18": "MD18 736 RNW 18",
+                "PDA": "OVERFLY PDA TURN LEFT DIRECT PDA 3000 HOLD AT PDA LEFT TURN INBOUNDCOURSE 175 ALT 3000 LEGTIME 1 FAF FD18 MAP MD18"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ROKIS": "ROKIS AT OR ABOVE 3600",
+                "USVIV": "USVIV 2000 RNW 18",
+                "OPTON": "OVERFLY OPTON AT OR ABOVE 1200 TURN RIGHT DIRECT",
+                "ENVUR": "ENVUR AT OR ABOVE 5000 SPEED 185 HOLD AT ENVUR RIGHT TURN INBOUNDCOURSE 110 ALT 5000 SPEED 230 LEGTIME 1 FAF USVIV MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ENVUR",
+                    "fixes": {
+                        "ENVUR": "ENVUR AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "NIDKU",
+                    "fixes": {
+                        "NIDKU": "NIDKU AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

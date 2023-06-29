@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "BIBRE",
+            "lat": 29.670925,
+            "lon": 98.98090278333333
+        },
+        {
+            "name": "CSI",
+            "lat": 29.922355566666667,
+            "lon": 99.21448611666666
+        },
+        {
+            "name": "FIMUL",
+            "lat": 29.407738883333334,
+            "lon": 98.87693611666667
+        },
+        {
+            "name": "IBDOW",
+            "lat": 29.251683333333332,
+            "lon": 98.81555278333333
+        },
+        {
+            "name": "JEDOL",
+            "lat": 29.486638883333335,
+            "lon": 98.90804443333333
+        },
+        {
+            "name": "KICED",
+            "lat": 29.643936116666666,
+            "lon": 99.00265278333333
+        },
+        {
+            "name": "POCPO",
+            "lat": 29.385233333333332,
+            "lon": 98.86807221666666
+        },
+        {
+            "name": "SHEOL",
+            "lat": 29.156908333333334,
+            "lon": 98.77836943333334
+        },
+        {
+            "name": "SOMER",
+            "lat": 29.162430566666668,
+            "lon": 98.639575
+        },
+        {
+            "name": "TAAHD",
+            "lat": 29.310627783333334,
+            "lon": 98.83871666666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "JEDOL": "JEDOL AT OR ABOVE 3000",
+                "FIMUL": "FIMUL 2000",
+                "POCPO": "POCPO AT OR ABOVE 1540 RNW 16 TRK 157 UNTIL 1174",
+                "SHEOL": "OVERFLY SHEOL AT OR ABOVE 3000 HOLD AT SHEOL LEFT TURN INBOUNDCOURSE 337 LEGDIST 4 FAF FIMUL MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CSI",
+                    "fixes": {
+                        "CSI": "CSI",
+                        "BIBRE": "BIBRE AT OR ABOVE 4100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "SHEOL": "SHEOL AT OR ABOVE 3000 OVERFLY SHEOL AT OR ABOVE 3000 HOLD AT SHEOL LEFT TURN INBOUNDCOURSE 337 LEGDIST 4 FAF IBDOW MAP RNW 34",
+                "IBDOW": "IBDOW 2500",
+                "TAAHD": "TAAHD AT OR ABOVE 1300 RNW 34 TRK 337 UNTIL 1300 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KICED",
+                    "fixes": {
+                        "KICED": "KICED",
+                        "SHEOL": "OVERFLY SHEOL AT OR ABOVE 3200 HOLD AT SHEOL LEFT TURN INBOUNDCOURSE 337 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SOMER",
+                    "fixes": {
+                        "SOMER": "SOMER"
+                    }
+                }
+            ]
+        }
+    ]
+}

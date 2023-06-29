@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "NOMUR",
+            "lat": 5.611583333333334,
+            "lon": 132.60141666666667
+        },
+        {
+            "name": "PF401",
+            "lat": 5.6482222166666665,
+            "lon": 132.64047221666667
+        },
+        {
+            "name": "PF402",
+            "lat": 5.682527783333334,
+            "lon": 132.67708333333334
+        },
+        {
+            "name": "PF601",
+            "lat": 5.84425,
+            "lon": 132.84966666666668
+        },
+        {
+            "name": "PF602",
+            "lat": 5.8156388833333335,
+            "lon": 132.81913888333332
+        },
+        {
+            "name": "POPIV",
+            "lat": 5.921277783333333,
+            "lon": 132.81688888333332
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "PF401": "PF401 AT OR ABOVE 2500",
+                "PF402": "PF402 2000 RNW 13 TURN LEFT DIRECT",
+                "NOMUR": "NOMUR AT OR ABOVE 3000 HOLD AT NOMUR RIGHT TURN INBOUNDCOURSE 131 ALT 3000 LEGTIME 1 FAF PF402 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "NOMUR",
+                    "fixes": {
+                        "NOMUR": "NOMUR AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "PF601": "PF601 AT OR ABOVE 1500 SPEED 200",
+                "PF602": "PF602 1500 RNW 31 TURN LEFT DIRECT",
+                "POPIV": "POPIV AT OR ABOVE 3000 HOLD AT POPIV LEFT TURN INBOUNDCOURSE 021 ALT 3000 LEGTIME 1 FAF PF602 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "POPIV",
+                    "fixes": {
+                        "POPIV": "POPIV AT OR ABOVE 3000 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

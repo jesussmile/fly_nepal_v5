@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "ALR",
+            "lat": 2.3714861166666665,
+            "lon": 44.397097216666666
+        },
+        {
+            "name": "ALR01",
+            "lat": 2.375625,
+            "lon": 44.407902783333334
+        },
+        {
+            "name": "ALR02",
+            "lat": 2.3686138833333334,
+            "lon": 44.385519433333336
+        },
+        {
+            "name": "CW007",
+            "lat": 2.401319433333333,
+            "lon": 44.487116666666665
+        },
+        {
+            "name": "CW008",
+            "lat": 2.4261583333333334,
+            "lon": 44.56662778333333
+        },
+        {
+            "name": "CW009",
+            "lat": 2.4559694333333333,
+            "lon": 44.66204166666667
+        },
+        {
+            "name": "CW011",
+            "lat": 2.3461499999999997,
+            "lon": 44.627077783333334
+        },
+        {
+            "name": "CW012",
+            "lat": 2.5265361166666667,
+            "lon": 44.571375
+        },
+        {
+            "name": "CW013",
+            "lat": 2.34965,
+            "lon": 44.32166111666667
+        },
+        {
+            "name": "CW014",
+            "lat": 2.3297888833333333,
+            "lon": 44.25805278333333
+        },
+        {
+            "name": "CW016",
+            "lat": 2.229411116666667,
+            "lon": 44.253244433333336
+        },
+        {
+            "name": "CW017",
+            "lat": 2.3,
+            "lon": 44.162641666666666
+        },
+        {
+            "name": "FS09",
+            "lat": 2.4059305666666666,
+            "lon": 44.48631666666667
+        },
+        {
+            "name": "FS27",
+            "lat": 2.3481,
+            "lon": 44.30386943333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "31",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 09",
+                    "fixes": {
+                        "RNW 09": "RNW 09 TRK 094 UNTIL 1500 HDG 094 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 27",
+                    "fixes": {
+                        "RNW 27": "RNW 27 TRK 274 UNTIL 1500 HDG 274 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "CW008": "CW008 AT OR ABOVE 2000",
+                "CW007": "CW007 1790 RNW 09",
+                "CW017": "OVERFLY CW017 AT OR ABOVE 3000 HOLD AT CW017 RIGHT TURN INBOUNDCOURSE 274 ALT 3000 LEGTIME 1 FAF CW007 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "CW009",
+                    "fixes": {
+                        "CW009": "CW009 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "CW011",
+                    "fixes": {
+                        "CW011": "CW011 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "CW012",
+                    "fixes": {
+                        "CW012": "CW012 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "CW014": "CW014 AT OR ABOVE 2000",
+                "CW013": "CW013 1470 RNW 27",
+                "CW009": "OVERFLY CW009 AT OR ABOVE 3000 HOLD AT CW009 RIGHT TURN INBOUNDCOURSE 274 ALT 3000 LEGTIME 1 FAF CW013 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "CW016",
+                    "fixes": {
+                        "CW016": "CW016 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "CW017",
+                    "fixes": {
+                        "CW017": "CW017 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR09",
+            "fixes": {
+                "FS09": "FS09 1800",
+                "ALR01": "ALR01 194 RNW 09 HDG 090 UNTIL 1500 TURN RIGHT DIRECT",
+                "ALR": "ALR AT OR ABOVE 3000 HOLD AT ALR LEFT TURN INBOUNDCOURSE 305 ALT 3000 LEGTIME 1 FAF FS09 MAP ALR01"
+            },
+            "transitions": [
+                {
+                    "name": "ALR",
+                    "fixes": {
+                        "ALR": "ALR AT OR ABOVE 3000 TRK 305 UNTIL 7.0 FROM ALR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR27",
+            "fixes": {
+                "FS27": "FS27 1800",
+                "ALR02": "ALR02 191 RNW 27 HDG 277 UNTIL 1500 TURN RIGHT DIRECT",
+                "ALR": "ALR AT OR ABOVE 3000 HOLD AT ALR RIGHT TURN INBOUNDCOURSE 131 ALT 3000 LEGTIME 1 FAF FS27 MAP ALR02"
+            },
+            "transitions": [
+                {
+                    "name": "ALR",
+                    "fixes": {
+                        "ALR": "ALR AT OR ABOVE 3000 TRK 131 UNTIL 7.0 FROM ALR"
+                    }
+                }
+            ]
+        }
+    ]
+}

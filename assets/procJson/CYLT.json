@@ -1,0 +1,84 @@
+{
+    "fixes": [
+        {
+            "name": "AXEKO",
+            "lat": 82.57742221666666,
+            "lon": 61.76476111666667
+        },
+        {
+            "name": "CF23",
+            "lat": 82.57965278333333,
+            "lon": 61.746808333333334
+        },
+        {
+            "name": "DUVOB",
+            "lat": 82.63213611666667,
+            "lon": 61.28074443333333
+        },
+        {
+            "name": "IKBUR",
+            "lat": 82.50628056666666,
+            "lon": 60.44576943333333
+        },
+        {
+            "name": "LTNB",
+            "lat": 82.52583333333334,
+            "lon": 62.211666666666666
+        },
+        {
+            "name": "ODKUV",
+            "lat": 82.68632221666667,
+            "lon": 60.78956388333334
+        },
+        {
+            "name": "RAFPO",
+            "lat": 82.54865,
+            "lon": 62.01591943333333
+        },
+        {
+            "name": "XUDEG",
+            "lat": 82.48881111666667,
+            "lon": 62.524511116666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD23",
+            "fixes": {
+                "CF23": "CF23 AT OR ABOVE 1800",
+                "RAFPO": "RAFPO 910",
+                "LTNB": "LTNB 249 RNW 23 TRK 027 UNTIL 500 TRK 009 UNTIL 2000 TURN RIGHT DIRECT LTNB 2000 HOLD AT LTNB RIGHT TURN INBOUNDCOURSE 027 LEGTIME 1 FAF RAFPO MAP L"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "DUVOB": "DUVOB AT OR ABOVE 2600",
+                "AXEKO": "AXEKO 1740 RNW 23",
+                "XUDEG": "OVERFLY XUDEG TURN RIGHT DIRECT",
+                "ODKUV": "OVERFLY ODKUV AT OR ABOVE 3400 HOLD AT ODKUV RIGHT TURN INBOUNDCOURSE 027 ALT 6600 SPEED 200 LEGDIST 4 FAF AXEKO MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "IKBUR",
+                    "fixes": {
+                        "IKBUR": "IKBUR"
+                    }
+                },
+                {
+                    "name": "ODKUV",
+                    "fixes": {
+                        "ODKUV": "ODKUV"
+                    }
+                }
+            ]
+        }
+    ]
+}

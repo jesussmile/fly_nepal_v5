@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "CF10",
+            "lat": 9.379661116666666,
+            "lon": 119.06506111666667
+        },
+        {
+            "name": "FF10",
+            "lat": 9.392777783333333,
+            "lon": 119.14836111666666
+        },
+        {
+            "name": "FN10",
+            "lat": 9.386480566666666,
+            "lon": 119.13971666666667
+        },
+        {
+            "name": "IDMUS",
+            "lat": 9.366527783333334,
+            "lon": 118.98180556666667
+        },
+        {
+            "name": "MA10",
+            "lat": 9.403283333333333,
+            "lon": 119.21493888333333
+        },
+        {
+            "name": "TBK",
+            "lat": 9.4085,
+            "lon": 119.24827778333334
+        },
+        {
+            "name": "TK401",
+            "lat": 9.378694433333333,
+            "lon": 119.05686111666667
+        },
+        {
+            "name": "TK402",
+            "lat": 9.392305566666666,
+            "lon": 119.14005556666666
+        },
+        {
+            "name": "TK403",
+            "lat": 9.404027783333333,
+            "lon": 119.21197221666667
+        },
+        {
+            "name": "WKNB",
+            "lat": 9.413638883333334,
+            "lon": 119.24933333333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "CF10": "CF10 AT OR ABOVE 2900",
+                "FF10": "FF10 1800",
+                "MA10": "MA10 531 RNW 10",
+                "TBK": "TBK TRK 098 UNTIL 1.0 FROM TBK TURN LEFT HDG 248 INTERCEPT RADIAL 278 TO",
+                "IDMUS": "IDMUS IDMUS 4500 HOLD AT IDMUS LEFT TURN INBOUNDCOURSE 098 ALT 4500 LEGTIME 1 FAF FF10 MAP MA10"
+            },
+            "transitions": [
+                {
+                    "name": "IDMUS",
+                    "fixes": {
+                        "IDMUS": "IDMUS AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBY10",
+            "fixes": {
+                "FN10": "FN10 2000 RNW 10",
+                "WKNB": "OVERFLY WKNB TRK 015 INTERCEPT RADIAL 045 TO WKNB TRK 045 UNTIL 2000 TURN LEFT DIRECT WKNB AT OR ABOVE 4000 FAF FN10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "WK",
+                    "fixes": {
+                        "WKNB": "WKNB AT OR ABOVE 4000 SPEED 200 TRK 305 UNTIL 6.7 FROM WKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBZ10",
+            "fixes": {
+                "FN10": "FN10 2000 RNW 10",
+                "WKNB": "OVERFLY WKNB TRK 015 INTERCEPT RADIAL 045 TO WKNB TRK 045 UNTIL 2000 TURN LEFT DIRECT WKNB AT OR ABOVE 4000 FAF FN10 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "WK",
+                    "fixes": {
+                        "WKNB": "WKNB AT OR ABOVE 4000 TRK 295 UNTIL 7.0 FROM WKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "TK401": "TK401 AT OR ABOVE 2900",
+                "TK402": "TK402 1900",
+                "TK403": "OVERFLY TK403 571 RNW 10 TURN LEFT DIRECT",
+                "IDMUS": "IDMUS AT OR ABOVE 4500 HOLD AT IDMUS LEFT TURN INBOUNDCOURSE 098 ALT 4500 LEGTIME 1 FAF TK402 MAP TK403"
+            },
+            "transitions": [
+                {
+                    "name": "IDMUS",
+                    "fixes": {
+                        "IDMUS": "IDMUS AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        }
+    ]
+}

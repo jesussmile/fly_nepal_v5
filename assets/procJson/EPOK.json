@@ -1,0 +1,237 @@
+{
+    "fixes": [
+        {
+            "name": "CI31",
+            "lat": 54.481775,
+            "lon": 18.677519433333334
+        },
+        {
+            "name": "D100I",
+            "lat": 54.54304166666667,
+            "lon": 18.740258333333333
+        },
+        {
+            "name": "D103H",
+            "lat": 54.52449443333333,
+            "lon": 18.738966666666666
+        },
+        {
+            "name": "D112H",
+            "lat": 54.50744721666667,
+            "lon": 18.725002783333334
+        },
+        {
+            "name": "D118I",
+            "lat": 54.503,
+            "lon": 18.7079
+        },
+        {
+            "name": "FI31",
+            "lat": 54.502833333333335,
+            "lon": 18.642916666666668
+        },
+        {
+            "name": "FN13",
+            "lat": 54.640625,
+            "lon": 18.415916666666668
+        },
+        {
+            "name": "FN31",
+            "lat": 54.522055566666666,
+            "lon": 18.6124
+        },
+        {
+            "name": "FT13",
+            "lat": 54.659722216666665,
+            "lon": 18.398055566666667
+        },
+        {
+            "name": "FT26",
+            "lat": 54.59583333333333,
+            "lon": 18.611111116666667
+        },
+        {
+            "name": "FT31",
+            "lat": 54.5125,
+            "lon": 18.633333333333333
+        },
+        {
+            "name": "MT13",
+            "lat": 54.593888883333335,
+            "lon": 18.490194433333333
+        },
+        {
+            "name": "NONB",
+            "lat": 54.59522221666667,
+            "lon": 18.491555566666666
+        },
+        {
+            "name": "NWNB",
+            "lat": 54.563916666666664,
+            "lon": 18.542944433333332
+        },
+        {
+            "name": "TOW",
+            "lat": 54.58225,
+            "lon": 18.506444433333332
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 13",
+        "RNW 26",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY31",
+            "fixes": {
+                "CI31": "CI31 AT OR ABOVE 2000",
+                "FI31": "FI31 2000 RNW 31 TRK 310 UNTIL 1200 TURN RIGHT DIRECT",
+                "TOW": "TOW 2500 FAF FI31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "TOW1",
+                    "fixes": {
+                        "TOW": "TOW AT OR ABOVE 2500",
+                        "D100I": "OVERFLY D100I AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "TOW2",
+                    "fixes": {
+                        "TOW": "TOW AT OR ABOVE 2500",
+                        "D118I": "OVERFLY D118I AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ31",
+            "fixes": {
+                "CI31": "CI31 AT OR ABOVE 2000",
+                "FI31": "FI31 2000 RNW 31 TRK 310 UNTIL 1200 TURN RIGHT DIRECT",
+                "NWNB": "NWNB 2500 FAF FI31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "NW1",
+                    "fixes": {
+                        "NWNB": "NWNB AT OR ABOVE 2500",
+                        "D103H": "OVERFLY D103H AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "NW2",
+                    "fixes": {
+                        "NWNB": "NWNB AT OR ABOVE 2500",
+                        "D112H": "OVERFLY D112H AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB13",
+            "fixes": {
+                "FN13": "FN13 1600",
+                "NONB": "NONB 391 RNW 13 TRK 130 UNTIL 1200 TURN LEFT DIRECT NONB AT OR ABOVE 2500 FAF FN13 MAP NO"
+            },
+            "transitions": [
+                {
+                    "name": "NO1",
+                    "fixes": {
+                        "NONB": "NONB AT OR ABOVE 2500 TRK 338 UNTIL 8.8 FROM NONB"
+                    }
+                },
+                {
+                    "name": "NO2",
+                    "fixes": {
+                        "NONB": "NONB AT OR ABOVE 2500 TRK 328 UNTIL 9.0 FROM NONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB31",
+            "fixes": {
+                "FN31": "FN31 1500",
+                "NWNB": "NWNB 387 RNW 31 TRK 310 UNTIL 1200 TURN RIGHT DIRECT NWNB AT OR ABOVE 2500 FAF FN31 MAP NW"
+            },
+            "transitions": [
+                {
+                    "name": "NW1",
+                    "fixes": {
+                        "NWNB": "NWNB AT OR ABOVE 2500 TRK 103 UNTIL 8.8 FROM NWNB"
+                    }
+                },
+                {
+                    "name": "NW2",
+                    "fixes": {
+                        "NWNB": "NWNB AT OR ABOVE 2500 TRK 112 UNTIL 9.0 FROM NWNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR13",
+            "fixes": {
+                "FT13": "FT13 2000",
+                "MT13": "MT13 382 RNW 13",
+                "TOW": "TOW TRK 135 UNTIL 1200 TURN LEFT DIRECT TOW AT OR ABOVE 2500 FAF FT13 MAP MT13"
+            },
+            "transitions": [
+                {
+                    "name": "TOW1",
+                    "fixes": {
+                        "TOW": "TOW AT OR ABOVE 2500 TRK 335 UNTIL 8.0 FROM TOW"
+                    }
+                },
+                {
+                    "name": "TOW2",
+                    "fixes": {
+                        "TOW": "TOW AT OR ABOVE 2500 TRK 330 UNTIL 8.0 FROM TOW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26",
+            "fixes": {
+                "FT26": "FT26 1200 RNW 26",
+                "TOW": "TOW TRK 251 UNTIL 1000 TURN RIGHT DIRECT TOW AT OR ABOVE 2000 FAF FT26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "TOW",
+                    "fixes": {
+                        "TOW": "TOW AT OR ABOVE 2000 TRK 089 UNTIL 4.9 FROM TOW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR31",
+            "fixes": {
+                "FT31": "FT31 1800 RNW 31",
+                "TOW": "TOW TRK 307 UNTIL 1200 TURN RIGHT DIRECT TOW AT OR ABOVE 2500 FAF FT31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "TOW1",
+                    "fixes": {
+                        "TOW": "TOW AT OR ABOVE 2500 TRK 107 UNTIL 8.0 FROM TOW"
+                    }
+                },
+                {
+                    "name": "TOW2",
+                    "fixes": {
+                        "TOW": "TOW AT OR ABOVE 2500 TRK 112 UNTIL 8.0 FROM TOW"
+                    }
+                }
+            ]
+        }
+    ]
+}

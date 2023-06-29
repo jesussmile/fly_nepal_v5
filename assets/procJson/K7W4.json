@@ -1,0 +1,104 @@
+{
+    "fixes": [
+        {
+            "name": "BRV",
+            "lat": 38.33625833333333,
+            "lon": 77.35286666666667
+        },
+        {
+            "name": "BUDYY",
+            "lat": 37.91433611666667,
+            "lon": 77.40264443333334
+        },
+        {
+            "name": "BUMPP",
+            "lat": 37.94249166666667,
+            "lon": 77.852925
+        },
+        {
+            "name": "GVE",
+            "lat": 38.0136,
+            "lon": 78.15302778333333
+        },
+        {
+            "name": "HHANK",
+            "lat": 37.98903333333333,
+            "lon": 77.63891943333333
+        },
+        {
+            "name": "MILHI",
+            "lat": 38.145125,
+            "lon": 77.44036943333333
+        },
+        {
+            "name": "RIC",
+            "lat": 37.502347216666664,
+            "lon": 77.320275
+        },
+        {
+            "name": "SHLBE",
+            "lat": 38.019533333333335,
+            "lon": 77.49756666666667
+        },
+        {
+            "name": "STPBY",
+            "lat": 37.9116,
+            "lon": 77.99387778333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "STPBY": "STPBY AT OR ABOVE 3000",
+                "BUMPP": "BUMPP 2000 RNW 08 TRK 085 UNTIL 751",
+                "SHLBE": "OVERFLY SHLBE AT OR ABOVE 3000 HOLD AT SHLBE RIGHT TURN INBOUNDCOURSE 085 LEGDIST 4 FAF BUMPP MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "GVE",
+                    "fixes": {
+                        "GVE": "GVE"
+                    }
+                },
+                {
+                    "name": "RIC",
+                    "fixes": {
+                        "RIC": "RIC",
+                        "STPBY": "OVERFLY STPBY AT OR ABOVE 3000 HOLD AT STPBY RIGHT TURN INBOUNDCOURSE 084 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "SHLBE": "SHLBE AT OR ABOVE 3000",
+                "HHANK": "HHANK 2000 RNW 26 TRK 265 UNTIL 751",
+                "STPBY": "OVERFLY STPBY AT OR ABOVE 3000 HOLD AT STPBY RIGHT TURN INBOUNDCOURSE 084 LEGDIST 4 FAF HHANK MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BRV",
+                    "fixes": {
+                        "BRV": "BRV",
+                        "MILHI": "MILHI AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "RIC",
+                    "fixes": {
+                        "RIC": "RIC",
+                        "BUDYY": "BUDYY AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

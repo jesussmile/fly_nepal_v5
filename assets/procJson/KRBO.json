@@ -1,0 +1,176 @@
+{
+    "fixes": [
+        {
+            "name": "ATHIS",
+            "lat": 28.073461116666667,
+            "lon": 97.83881666666667
+        },
+        {
+            "name": "CRP",
+            "lat": 27.903766666666666,
+            "lon": 97.44488056666667
+        },
+        {
+            "name": "ELELY",
+            "lat": 27.9001,
+            "lon": 97.82775278333334
+        },
+        {
+            "name": "INBEW",
+            "lat": 27.840283333333332,
+            "lon": 97.76022221666666
+        },
+        {
+            "name": "JIGGL",
+            "lat": 27.7297,
+            "lon": 97.63551666666666
+        },
+        {
+            "name": "KIKRE",
+            "lat": 27.681269433333334,
+            "lon": 97.58101943333334
+        },
+        {
+            "name": "KITJU",
+            "lat": 27.69565,
+            "lon": 97.85228888333333
+        },
+        {
+            "name": "MA051",
+            "lat": 27.778205566666667,
+            "lon": 97.69114443333333
+        },
+        {
+            "name": "MATSS",
+            "lat": 27.804158333333334,
+            "lon": 97.71944166666667
+        },
+        {
+            "name": "MUMMS",
+            "lat": 27.737369433333335,
+            "lon": 97.77093056666666
+        },
+        {
+            "name": "NARRW",
+            "lat": 27.71586943333333,
+            "lon": 97.61994721666667
+        },
+        {
+            "name": "PI001",
+            "lat": 27.663868433333334,
+            "lon": 97.90752563333334
+        },
+        {
+            "name": "PI002",
+            "lat": 27.678746283333332,
+            "lon": 97.98668471666667
+        },
+        {
+            "name": "PI003",
+            "lat": 27.604787483333332,
+            "lon": 98.01002298333333
+        },
+        {
+            "name": "VAPPR",
+            "lat": 27.633186116666668,
+            "lon": 97.52698611666666
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA13",
+            "fixes": {
+                "KITJU": "KITJU AT OR ABOVE 1700 KITJU AT OR ABOVE 2000 HOLD AT KITJU RIGHT TURN INBOUNDCOURSE 051 LEGTIME 1 FAF MUMMS MAP MA051",
+                "MUMMS": "MUMMS 1700",
+                "MA051": "MA051 660 RNW 13 TRK 051 UNTIL 660 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP",
+                        "KITJU": "KITJU AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 1700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA31",
+            "fixes": {
+                "KITJU": "KITJU AT OR ABOVE 1700 KITJU AT OR ABOVE 2000 HOLD AT KITJU RIGHT TURN INBOUNDCOURSE 051 LEGTIME 1 FAF MUMMS MAP MA051",
+                "MUMMS": "MUMMS 1700",
+                "MA051": "MA051 660 RNW 31 TRK 051 UNTIL 660 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP",
+                        "KITJU": "KITJU AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 1700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "ELELY": "ELELY AT OR ABOVE 2000 OVERFLY ELELY AT OR ABOVE 2000 HOLD AT ELELY LEFT TURN INBOUNDCOURSE 129 LEGDIST 4 FAF INBEW MAP RNW 13",
+                "INBEW": "INBEW 1700",
+                "MATSS": "MATSS AT OR ABOVE 720 RNW 13 TRK 129 UNTIL 540 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ATHIS",
+                    "fixes": {
+                        "ATHIS": "ATHIS"
+                    }
+                },
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP",
+                        "ELELY": "OVERFLY ELELY AT OR ABOVE 2000 HOLD AT ELELY LEFT TURN INBOUNDCOURSE 129 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "VAPPR": "VAPPR AT OR ABOVE 2200",
+                "KIKRE": "KIKRE AT OR ABOVE 2200",
+                "NARRW": "NARRW 1700",
+                "JIGGL": "JIGGL AT OR ABOVE 1320 RNW 31 TRK 309 UNTIL 329",
+                "ELELY": "OVERFLY ELELY AT OR ABOVE 2000 HOLD AT ELELY LEFT TURN INBOUNDCOURSE 129 LEGDIST 4 FAF NARRW MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ATHIS",
+                    "fixes": {
+                        "ATHIS": "ATHIS",
+                        "VAPPR": "OVERFLY VAPPR AT OR ABOVE 2200 HOLD AT VAPPR RIGHT TURN INBOUNDCOURSE 309 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CRP",
+                    "fixes": {
+                        "CRP": "CRP",
+                        "VAPPR": "OVERFLY VAPPR AT OR ABOVE 2200 HOLD AT VAPPR RIGHT TURN INBOUNDCOURSE 309 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "APMAP",
+            "lat": 60.82347778333333,
+            "lon": 123.19718888333334
+        },
+        {
+            "name": "APRAT",
+            "lat": 60.88978611666667,
+            "lon": 123.02271111666667
+        },
+        {
+            "name": "BIMTO",
+            "lat": 60.919133333333335,
+            "lon": 123.37718333333333
+        },
+        {
+            "name": "DAXUK",
+            "lat": 60.736522216666664,
+            "lon": 123.35889443333333
+        },
+        {
+            "name": "DESBA",
+            "lat": 60.77503888333333,
+            "lon": 123.07475556666667
+        },
+        {
+            "name": "IKDOK",
+            "lat": 60.84506666666667,
+            "lon": 123.16636111666666
+        },
+        {
+            "name": "MATOM",
+            "lat": 60.819527783333335,
+            "lon": 123.36718333333333
+        },
+        {
+            "name": "OVEMU",
+            "lat": 60.920625,
+            "lon": 123.26574721666667
+        },
+        {
+            "name": "URPOL",
+            "lat": 61.02384443333333,
+            "lon": 123.40243611666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVX34",
+            "fixes": {
+                "MATOM": "MATOM AT OR ABOVE 4600",
+                "BIMTO": "BIMTO 2700 RNW 34 HDG 339 UNTIL 1500 TURN RIGHT DIRECT",
+                "APMAP": "OVERFLY APMAP 4600 HOLD AT APMAP RIGHT TURN INBOUNDCOURSE 249 SPEED 230 LEGTIME 1 FAF BIMTO MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "APMAP",
+                    "fixes": {
+                        "APMAP": "APMAP"
+                    }
+                },
+                {
+                    "name": "DAXUK",
+                    "fixes": {
+                        "DAXUK": "DAXUK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY34",
+            "fixes": {
+                "MATOM": "MATOM AT OR ABOVE 4600",
+                "BIMTO": "BIMTO 2700 RNW 34 HDG 339 UNTIL 1600 TURN RIGHT DIRECT",
+                "APMAP": "OVERFLY APMAP 4600 HOLD AT APMAP RIGHT TURN INBOUNDCOURSE 249 SPEED 230 LEGTIME 1 FAF BIMTO MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "APMAP",
+                    "fixes": {
+                        "APMAP": "APMAP"
+                    }
+                },
+                {
+                    "name": "DAXUK",
+                    "fixes": {
+                        "DAXUK": "DAXUK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ34",
+            "fixes": {
+                "IKDOK": "IKDOK AT OR ABOVE 4700",
+                "OVEMU": "OVEMU 3000",
+                "URPOL": "OVERFLY URPOL 648 RNW 34 TRK 309 UNTIL 1000 TURN LEFT DIRECT",
+                "DESBA": "OVERFLY DESBA 4700 HOLD AT DESBA RIGHT TURN INBOUNDCOURSE 309 SPEED 230 LEGTIME 1 FAF OVEMU MAP URPOL"
+            },
+            "transitions": [
+                {
+                    "name": "APRAT",
+                    "fixes": {
+                        "APRAT": "APRAT"
+                    }
+                },
+                {
+                    "name": "DESBA",
+                    "fixes": {
+                        "DESBA": "DESBA"
+                    }
+                }
+            ]
+        }
+    ]
+}

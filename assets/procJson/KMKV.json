@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "AEX",
+            "lat": 31.25673056666667,
+            "lon": 92.50097221666667
+        },
+        {
+            "name": "CEVNA",
+            "lat": 31.190077783333333,
+            "lon": 92.32274443333333
+        },
+        {
+            "name": "COKUT",
+            "lat": 30.961297216666665,
+            "lon": 92.22206111666667
+        },
+        {
+            "name": "ECAGA",
+            "lat": 31.095380566666666,
+            "lon": 92.07107221666666
+        },
+        {
+            "name": "HODEL",
+            "lat": 31.123180566666665,
+            "lon": 92.14476666666667
+        },
+        {
+            "name": "MIKLE",
+            "lat": 30.982872216666667,
+            "lon": 92.06826943333333
+        },
+        {
+            "name": "MUSHE",
+            "lat": 31.153175,
+            "lon": 92.155025
+        },
+        {
+            "name": "VODOY",
+            "lat": 31.032583333333335,
+            "lon": 92.14035556666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "COKUT": "COKUT AT OR ABOVE 2000 OVERFLY COKUT AT OR ABOVE 2000 HOLD AT COKUT RIGHT TURN INBOUNDCOURSE 043 LEGDIST 4 FAF VODOY MAP RNW 04",
+                "VODOY": "VODOY 1700 RNW 04 TRK 043 UNTIL 479 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MIKLE",
+                    "fixes": {
+                        "MIKLE": "MIKLE",
+                        "COKUT": "OVERFLY COKUT AT OR ABOVE 2000 HOLD AT COKUT RIGHT TURN INBOUNDCOURSE 043 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MUSHE",
+                    "fixes": {
+                        "MUSHE": "MUSHE",
+                        "COKUT": "OVERFLY COKUT AT OR ABOVE 2000 HOLD AT COKUT RIGHT TURN INBOUNDCOURSE 043 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA04",
+            "fixes": {
+                "CEVNA": "CEVNA AT OR ABOVE 2000",
+                "HODEL": "HODEL 2000",
+                "ECAGA": "ECAGA 820 RNW 04 TRK 110 UNTIL 820 TURN LEFT DIRECT",
+                "MUSHE": "MUSHE AT OR ABOVE 4000 HOLD AT MUSHE RIGHT TURN INBOUNDCOURSE 286 ALT 4000 LEGTIME 1 FAF HODEL MAP ECAGA"
+            },
+            "transitions": [
+                {
+                    "name": "AEX",
+                    "fixes": {
+                        "AEX": "AEX"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA22",
+            "fixes": {
+                "CEVNA": "CEVNA AT OR ABOVE 2000",
+                "HODEL": "HODEL 2000",
+                "ECAGA": "ECAGA 820 RNW 22 TRK 110 UNTIL 820 TURN LEFT DIRECT",
+                "MUSHE": "MUSHE AT OR ABOVE 4000 HOLD AT MUSHE RIGHT TURN INBOUNDCOURSE 286 ALT 4000 LEGTIME 1 FAF HODEL MAP ECAGA"
+            },
+            "transitions": [
+                {
+                    "name": "AEX",
+                    "fixes": {
+                        "AEX": "AEX"
+                    }
+                }
+            ]
+        }
+    ]
+}

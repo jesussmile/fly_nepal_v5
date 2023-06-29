@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "FIGER",
+            "lat": 28.750880566666666,
+            "lon": 96.28006666666667
+        },
+        {
+            "name": "GUDFY",
+            "lat": 28.792058333333333,
+            "lon": 96.32651111666667
+        },
+        {
+            "name": "LOLIT",
+            "lat": 28.874794433333335,
+            "lon": 96.46659166666667
+        },
+        {
+            "name": "NAPTE",
+            "lat": 28.886813883333332,
+            "lon": 96.4336
+        },
+        {
+            "name": "PI001",
+            "lat": 28.796178583333333,
+            "lon": 96.36200651666667
+        },
+        {
+            "name": "PI002",
+            "lat": 28.781254683333334,
+            "lon": 96.44198761666667
+        },
+        {
+            "name": "PI003",
+            "lat": 28.855098833333333,
+            "lon": 96.46577356666667
+        },
+        {
+            "name": "PSX",
+            "lat": 28.764419433333334,
+            "lon": 96.30618056666667
+        },
+        {
+            "name": "VCT",
+            "lat": 28.900319433333333,
+            "lon": 96.97893333333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 13",
+        "RNW 18",
+        "RNW 26",
+        "RNW 31",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "NAPTE": "NAPTE AT OR ABOVE 2100 OVERFLY NAPTE AT OR ABOVE 2100 HOLD AT NAPTE RIGHT TURN INBOUNDCOURSE 132 LEGDIST 4 FAF GUDFY MAP RNW 13",
+                "GUDFY": "GUDFY 1700",
+                "FIGER": "FIGER AT OR ABOVE 580 RNW 13 TRK 132 UNTIL 500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NAPTE",
+                    "fixes": {
+                        "NAPTE": "NAPTE RIGHT TURN INBOUNDCOURSE 132 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR13",
+            "fixes": {
+                "PSX": "PSX 1100 RNW 13 TRK 120 UNTIL 415 TURN RIGHT DIRECT PSX AT OR ABOVE 2000 HOLD AT PSX RIGHT TURN INBOUNDCOURSE 120 LEGTIME 1 FAF PSX MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "PSX",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "VCT",
+                    "fixes": {
+                        "VCT": "VCT",
+                        "LOLIT": "LOLIT AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

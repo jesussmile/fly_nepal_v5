@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "AKTOY",
+            "lat": 43.075372216666665,
+            "lon": 91.80636111666666
+        },
+        {
+            "name": "CADJU",
+            "lat": 43.17490278333333,
+            "lon": 91.82378056666667
+        },
+        {
+            "name": "GEZUM",
+            "lat": 42.893180566666665,
+            "lon": 91.77461388333333
+        },
+        {
+            "name": "KIRTS",
+            "lat": 42.79343333333333,
+            "lon": 91.75731388333334
+        },
+        {
+            "name": "KRECH",
+            "lat": 42.949813883333334,
+            "lon": 91.78446388333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "CADJU": "CADJU AT OR ABOVE 3000",
+                "AKTOY": "AKTOY 2900 RNW 17 TRK 174 UNTIL 1482",
+                "KIRTS": "OVERFLY KIRTS AT OR ABOVE 3200 HOLD AT KIRTS RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF AKTOY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CADJU",
+                    "fixes": {
+                        "CADJU": "CADJU RIGHT TURN INBOUNDCOURSE 174 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "KIRTS": "KIRTS AT OR ABOVE 3200",
+                "GEZUM": "GEZUM 2900",
+                "KRECH": "KRECH AT OR ABOVE 1800 RNW 35 TRK 354 UNTIL 1473",
+                "CADJU": "OVERFLY CADJU AT OR ABOVE 3000 HOLD AT CADJU RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF GEZUM MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "KIRTS",
+                    "fixes": {
+                        "KIRTS": "KIRTS RIGHT TURN INBOUNDCOURSE 354 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

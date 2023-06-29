@@ -1,0 +1,194 @@
+{
+    "fixes": [
+        {
+            "name": "CF07",
+            "lat": 8.3404,
+            "lon": 157.14770556666667
+        },
+        {
+            "name": "FF07",
+            "lat": 8.340011116666666,
+            "lon": 157.15218333333334
+        },
+        {
+            "name": "FQ07",
+            "lat": 8.338361116666666,
+            "lon": 157.17115556666667
+        },
+        {
+            "name": "GM823",
+            "lat": 8.304572216666667,
+            "lon": 157.38037221666667
+        },
+        {
+            "name": "GM868",
+            "lat": 8.340775,
+            "lon": 157.14746388333333
+        },
+        {
+            "name": "GOMEN",
+            "lat": 8.288788883333334,
+            "lon": 157.462925
+        },
+        {
+            "name": "KAKUS",
+            "lat": 8.360630566666666,
+            "lon": 157.5061
+        },
+        {
+            "name": "KILAM",
+            "lat": 8.348480566666666,
+            "lon": 157.06376388333334
+        },
+        {
+            "name": "LAKAS",
+            "lat": 8.272783333333333,
+            "lon": 157.02784166666666
+        },
+        {
+            "name": "LAVEM",
+            "lat": 8.206116666666667,
+            "lon": 157.47621666666666
+        },
+        {
+            "name": "MA07",
+            "lat": 8.333052783333333,
+            "lon": 157.23116388333332
+        },
+        {
+            "name": "MA25",
+            "lat": 8.320338883333333,
+            "lon": 157.29781666666668
+        },
+        {
+            "name": "MQ07",
+            "lat": 8.332533333333334,
+            "lon": 157.23815556666668
+        },
+        {
+            "name": "MUD",
+            "lat": 8.331075,
+            "lon": 157.25490556666668
+        },
+        {
+            "name": "MUDNB",
+            "lat": 8.331075,
+            "lon": 157.25490556666668
+        },
+        {
+            "name": "MUNOS",
+            "lat": 8.429466666666666,
+            "lon": 157.042425
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB07",
+            "fixes": {
+                "FF07": "FF07 2000",
+                "MUDNB": "MUDNB 48 RNW 07 TRK 077 UNTIL 2500 TURN LEFT DIRECT MUDNB AT OR ABOVE 3800 FAF FF07 MAP MUD"
+            },
+            "transitions": [
+                {
+                    "name": "MUD1",
+                    "fixes": {
+                        "MUDNB": "MUDNB AT OR ABOVE 3800 TRK 229 UNTIL 7.0 FROM MUDNB"
+                    }
+                },
+                {
+                    "name": "MUD2",
+                    "fixes": {
+                        "MUDNB": "MUDNB AT OR ABOVE 3800 TRK 240 UNTIL 7.5 FROM MUDNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD07",
+            "fixes": {
+                "CF07": "CF07 AT OR ABOVE 2000",
+                "FQ07": "FQ07 1550",
+                "MQ07": "MQ07 357 RNW 07 TRK 077 UNTIL 2500 TURN LEFT DIRECT",
+                "MUDNB": "MUDNB AT OR ABOVE 3800 FAF FQ07 MAP MQ07"
+            },
+            "transitions": [
+                {
+                    "name": "MUD1",
+                    "fixes": {
+                        "MUDNB": "MUDNB AT OR ABOVE 3800 TRK 227 UNTIL 8.0 FROM",
+                        "MUD": "MUD"
+                    }
+                },
+                {
+                    "name": "MUD2",
+                    "fixes": {
+                        "MUDNB": "MUDNB AT OR ABOVE 3800 TRK 240 UNTIL 8.0 FROM",
+                        "MUD": "MUD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "KILAM": "KILAM AT OR ABOVE 2500 KILAM AT OR ABOVE 2500 SPEED 220 FAF GM868 MAP MA07",
+                "GM868": "GM868 2000",
+                "MA07": "OVERFLY MA07 477 RNW 07 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KILAM",
+                    "fixes": {
+                        "KILAM": "KILAM RIGHT TURN INBOUNDCOURSE 077 ALT 2500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LAKAS",
+                    "fixes": {
+                        "LAKAS": "LAKAS"
+                    }
+                },
+                {
+                    "name": "MUNOS",
+                    "fixes": {
+                        "MUNOS": "MUNOS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "GOMEN": "GOMEN AT OR ABOVE 3000 GOMEN AT OR ABOVE 3600 FAF GM823 MAP MA25",
+                "GM823": "GM823 2420",
+                "MA25": "OVERFLY MA25 666 RNW 25 TRK 251 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GOMEN",
+                    "fixes": {
+                        "GOMEN": "GOMEN LEFT TURN INBOUNDCOURSE 251 ALT 3600 SPEED 220 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "KAKUS",
+                    "fixes": {
+                        "KAKUS": "KAKUS"
+                    }
+                },
+                {
+                    "name": "LAVEM",
+                    "fixes": {
+                        "LAVEM": "LAVEM"
+                    }
+                }
+            ]
+        }
+    ]
+}

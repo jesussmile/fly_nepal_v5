@@ -1,0 +1,175 @@
+{
+    "fixes": [
+        {
+            "name": "AWUNA",
+            "lat": 47.86208056666667,
+            "lon": 93.71619166666666
+        },
+        {
+            "name": "BOYKI",
+            "lat": 47.934613883333334,
+            "lon": 93.77691388333334
+        },
+        {
+            "name": "DUCDO",
+            "lat": 47.87932778333333,
+            "lon": 93.92251666666667
+        },
+        {
+            "name": "DUNEC",
+            "lat": 47.73116388333333,
+            "lon": 93.26406111666667
+        },
+        {
+            "name": "ENEPY",
+            "lat": 47.995641666666664,
+            "lon": 93.61525556666666
+        },
+        {
+            "name": "FF15",
+            "lat": 47.868380566666666,
+            "lon": 93.69424721666667
+        },
+        {
+            "name": "FOLIM",
+            "lat": 47.632813883333334,
+            "lon": 93.52557221666666
+        },
+        {
+            "name": "FOZNB",
+            "lat": 47.78346388333333,
+            "lon": 93.65323888333333
+        },
+        {
+            "name": "HOXAS",
+            "lat": 47.8134,
+            "lon": 93.67555
+        },
+        {
+            "name": "PI001",
+            "lat": 47.83893906666667,
+            "lon": 93.68009456666667
+        },
+        {
+            "name": "PI002",
+            "lat": 47.87143571666667,
+            "lon": 93.7752881
+        },
+        {
+            "name": "PI003",
+            "lat": 47.9419477,
+            "lon": 93.7301221
+        },
+        {
+            "name": "SQEAK",
+            "lat": 47.86971388333333,
+            "lon": 93.447375
+        },
+        {
+            "name": "WIMJY",
+            "lat": 47.392127783333336,
+            "lon": 93.47535278333334
+        },
+        {
+            "name": "WONOD",
+            "lat": 47.70551666666667,
+            "lon": 93.58580556666666
+        },
+        {
+            "name": "YOBRI",
+            "lat": 47.275788883333334,
+            "lon": 93.89671388333333
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB15",
+            "fixes": {
+                "FF15": "FF15 3000 RNW 15",
+                "FOZNB": "FOZNB AT OR ABOVE 1760 TRK 160 UNTIL 2200 TURN RIGHT DIRECT FOZNB AT OR ABOVE 3000 HOLD AT FOZNB RIGHT TURN INBOUNDCOURSE 160 LEGTIME 1 FAF FF15 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "SQEAK",
+                    "fixes": {
+                        "SQEAK": "SQEAK",
+                        "FOZNB": "FOZNB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "BOYKI": "BOYKI AT OR ABOVE 4000",
+                "AWUNA": "AWUNA 3000",
+                "HOXAS": "HOXAS AT OR ABOVE 1920 RNW 15 TRK 149 UNTIL 1720",
+                "FOLIM": "OVERFLY FOLIM AT OR ABOVE 4000 HOLD AT FOLIM RIGHT TURN INBOUNDCOURSE 329 ALT 4000 LEGDIST 4 FAF AWUNA MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "BOYKI",
+                    "fixes": {
+                        "BOYKI": "BOYKI RIGHT TURN INBOUNDCOURSE 149 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ENEPY",
+                    "fixes": {
+                        "ENEPY": "ENEPY"
+                    }
+                },
+                {
+                    "name": "YOBRI",
+                    "fixes": {
+                        "YOBRI": "YOBRI",
+                        "DUCDO": "DUCDO AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "FOLIM": "FOLIM AT OR ABOVE 4000",
+                "WONOD": "WONOD 3000 RNW 33 TRK 329 UNTIL 1751",
+                "BOYKI": "OVERFLY BOYKI AT OR ABOVE 4000 HOLD AT BOYKI RIGHT TURN INBOUNDCOURSE 149 ALT 4000 LEGDIST 4 FAF WONOD MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "DUNEC",
+                    "fixes": {
+                        "DUNEC": "DUNEC"
+                    }
+                },
+                {
+                    "name": "FOLIM",
+                    "fixes": {
+                        "FOLIM": "FOLIM RIGHT TURN INBOUNDCOURSE 329 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WIMJY",
+                    "fixes": {
+                        "WIMJY": "WIMJY"
+                    }
+                },
+                {
+                    "name": "YOBRI",
+                    "fixes": {
+                        "YOBRI": "YOBRI"
+                    }
+                }
+            ]
+        }
+    ]
+}

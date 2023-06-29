@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "BASUG",
+            "lat": 54.337355566666666,
+            "lon": 12.864088883333332
+        },
+        {
+            "name": "BH438",
+            "lat": 54.368463883333334,
+            "lon": 13.019075
+        },
+        {
+            "name": "BH439",
+            "lat": 54.33663056666666,
+            "lon": 12.977827783333334
+        },
+        {
+            "name": "BH440",
+            "lat": 54.33876943333333,
+            "lon": 12.566138883333334
+        },
+        {
+            "name": "BH450",
+            "lat": 54.268563883333336,
+            "lon": 12.511030566666667
+        },
+        {
+            "name": "BH721",
+            "lat": 54.33898056666666,
+            "lon": 12.501613883333333
+        },
+        {
+            "name": "BH722",
+            "lat": 54.40996388333333,
+            "lon": 12.493525
+        },
+        {
+            "name": "BH901",
+            "lat": 54.337025,
+            "lon": 12.917819433333333
+        },
+        {
+            "name": "BH902",
+            "lat": 54.26571666666667,
+            "lon": 12.915533333333334
+        },
+        {
+            "name": "GASBO",
+            "lat": 54.27481111666667,
+            "lon": 12.276536116666666
+        },
+        {
+            "name": "PEROM",
+            "lat": 54.45965556666667,
+            "lon": 13.137688883333333
+        },
+        {
+            "name": "TEPDU",
+            "lat": 54.253461116666664,
+            "lon": 12.976161116666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "GASB2G",
+            "rnw": "27",
+            "fixes": {
+                "BH721": "BH721",
+                "GASBO": "GASBO AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GASB3P",
+            "rnw": "09",
+            "fixes": {
+                "BH901": "OVERFLY BH901 TURN RIGHT DIRECT",
+                "BH902": "BH902",
+                "GASBO": "GASBO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PERO2G",
+            "rnw": "27",
+            "fixes": {
+                "BH721": "OVERFLY BH721 TURN RIGHT DIRECT",
+                "BH722": "BH722",
+                "PEROM": "PEROM"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PERO3P",
+            "rnw": "09",
+            "fixes": {
+                "BH901": "BH901",
+                "PEROM": "PEROM AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "BH439": "BH439 AT OR ABOVE 2300",
+                "BASUG": "BASUG 1700 RNW 27",
+                "BH440": "OVERFLY BH440 TRK 267 UNTIL 2000 TURN LEFT DIRECT",
+                "BH450": "BH450",
+                "TEPDU": "TEPDU 4000 FAF BASUG MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "GASBO",
+                    "fixes": {
+                        "GASBO": "GASBO AT OR ABOVE 4000",
+                        "BH450": "BH450",
+                        "TEPDU": "TEPDU AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "PEROM",
+                    "fixes": {
+                        "PEROM": "PEROM AT OR ABOVE 4000",
+                        "BH438": "BH438 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "TEPDU",
+                    "fixes": {
+                        "TEPDU": "TEPDU AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

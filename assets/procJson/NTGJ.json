@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "ESGAN",
+            "lat": 23.151694433333333,
+            "lon": 134.692
+        },
+        {
+            "name": "FF12",
+            "lat": 23.015863883333335,
+            "lon": 134.95483888333334
+        },
+        {
+            "name": "FF30",
+            "lat": 23.14528333333333,
+            "lon": 134.82441943333333
+        },
+        {
+            "name": "FGJ12",
+            "lat": 23.012416666666667,
+            "lon": 134.95925
+        },
+        {
+            "name": "FGJ30",
+            "lat": 23.148583333333335,
+            "lon": 134.81983333333332
+        },
+        {
+            "name": "GJ410",
+            "lat": 22.96875,
+            "lon": 134.88388888333333
+        },
+        {
+            "name": "GJ420",
+            "lat": 23.085833333333333,
+            "lon": 134.76361111666668
+        },
+        {
+            "name": "KAMVO",
+            "lat": 22.951666666666668,
+            "lon": 135.02130556666665
+        },
+        {
+            "name": "MANVU",
+            "lat": 23.20925,
+            "lon": 134.75761111666668
+        },
+        {
+            "name": "MGNB",
+            "lat": 23.094777783333335,
+            "lon": 134.87536111666665
+        },
+        {
+            "name": "REPAS",
+            "lat": 23.082777783333334,
+            "lon": 134.88722221666666
+        },
+        {
+            "name": "TONED",
+            "lat": 22.894194433333332,
+            "lon": 134.95572221666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FF12": "FF12 1600 RNW 12",
+                "MGNB": "OVERFLY MGNB TRK 123 UNTIL 2600 TURN RIGHT DIRECT MGNB FAF FF12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "MG",
+                    "fixes": {
+                        "MGNB": "MGNB AT OR ABOVE 2600 TRK 313 UNTIL 12.0 FROM MGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FF30": "FF30 1600",
+                "MGNB": "MGNB 285 RNW 30 TRK 303 UNTIL 2600 TURN RIGHT DIRECT MGNB FAF FF30 MAP MG"
+            },
+            "transitions": [
+                {
+                    "name": "MG",
+                    "fixes": {
+                        "MGNB": "MGNB AT OR ABOVE 2600 TRK 108 UNTIL 7.5 FROM MGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "KAMVO": "KAMVO AT OR ABOVE 1700",
+                "FGJ12": "FGJ12 1700 RNW 12 TRK 122 UNTIL 1000 TURN LEFT DIRECT",
+                "GJ410": "GJ410",
+                "TONED": "TONED AT OR ABOVE 1700 FAF FGJ12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "KAMVO",
+                    "fixes": {
+                        "KAMVO": "KAMVO RIGHT TURN INBOUNDCOURSE 122 ALT 1700 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TONED",
+                    "fixes": {
+                        "TONED": "TONED AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "MANVU": "MANVU AT OR ABOVE 1700",
+                "FGJ30": "FGJ30 1700 RNW 30 TRK 302 UNTIL 1000 TURN RIGHT DIRECT",
+                "GJ420": "GJ420",
+                "ESGAN": "ESGAN AT OR ABOVE 1700 FAF FGJ30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "ESGAN",
+                    "fixes": {
+                        "ESGAN": "ESGAN AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "REPAS",
+                    "fixes": {
+                        "REPAS": "REPAS AT OR ABOVE 2600",
+                        "GJ420": "GJ420 AT OR ABOVE 2600",
+                        "ESGAN": "ESGAN AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        }
+    ]
+}

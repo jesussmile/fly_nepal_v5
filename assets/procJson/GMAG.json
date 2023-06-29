@@ -1,0 +1,65 @@
+{
+    "fixes": [
+        {
+            "name": "CF05",
+            "lat": 28.905461116666668,
+            "lon": 10.19175
+        },
+        {
+            "name": "FF05",
+            "lat": 28.928891666666665,
+            "lon": 10.164616666666667
+        },
+        {
+            "name": "GLM",
+            "lat": 29.010469433333334,
+            "lon": 10.069294433333333
+        },
+        {
+            "name": "MA05",
+            "lat": 28.991827783333335,
+            "lon": 10.091097216666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "FF05": "FF05 3500 FF05 HOLD AT FF05 LEFT TURN INBOUNDCOURSE 048 ALT 3500 SPEED 220 LEGDIST 5 FAF FF05 MAP MA05",
+                "MA05": "MA05 1782 RNW 05 TURN LEFT HDG 217 INTERCEPT RADIAL 247 FROM",
+                "GLM": "GLM SPEED 185 TRK 247 UNTIL 12.0 FROM GLM TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FF05",
+                    "fixes": {
+                        "FF05": "FF05 LEFT TURN INBOUNDCOURSE 048 ALT 3500 SPEED 220 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC05",
+            "fixes": {
+                "CF05": "CF05 AT OR ABOVE 3500",
+                "FF05": "FF05 3500 FF05 HOLD AT FF05 LEFT TURN INBOUNDCOURSE 048 ALT 3500 SPEED 220 LEGDIST 5 FAF FF05 MAP MA05",
+                "MA05": "MA05 1782 RNW 05 TURN LEFT HDG 217 INTERCEPT RADIAL 247 FROM",
+                "GLM": "GLM SPEED 185 TRK 247 UNTIL 12.0 FROM GLM TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FF05",
+                    "fixes": {
+                        "FF05": "FF05 LEFT TURN INBOUNDCOURSE 048 ALT 3500 SPEED 220 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "D071I",
+            "lat": 21.347991666666665,
+            "lon": 47.23684721666667
+        },
+        {
+            "name": "D269I",
+            "lat": 21.492138883333332,
+            "lon": 46.95907221666667
+        },
+        {
+            "name": "FN08",
+            "lat": 21.518561116666667,
+            "lon": 46.97700556666667
+        },
+        {
+            "name": "FN26",
+            "lat": 21.383975,
+            "lon": 47.234341666666666
+        },
+        {
+            "name": "VSFNB",
+            "lat": 21.440722216666668,
+            "lon": 47.11022221666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FN08": "FN08 6400 RNW 08",
+                "VSFNB": "OVERFLY VSFNB TRK 077 UNTIL 6000 TURN RIGHT DIRECT VSFNB 7000 FAF FN08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "VSF",
+                    "fixes": {
+                        "VSFNB": "VSFNB AT OR ABOVE 7000",
+                        "D269I": "OVERFLY D269I AT OR ABOVE 6400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FN26": "FN26 6000 RNW 26",
+                "VSFNB": "OVERFLY VSFNB TRK 263 UNTIL 6000 TURN LEFT DIRECT VSFNB 7000 FAF FN26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "VSF",
+                    "fixes": {
+                        "VSFNB": "VSFNB AT OR ABOVE 7000",
+                        "D071I": "OVERFLY D071I AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

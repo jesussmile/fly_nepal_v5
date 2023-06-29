@@ -1,0 +1,115 @@
+{
+    "fixes": [
+        {
+            "name": "ARGUS",
+            "lat": 32.75363333333333,
+            "lon": 115.31103611666667
+        },
+        {
+            "name": "BAGSE",
+            "lat": 32.82916111666667,
+            "lon": 115.48983611666667
+        },
+        {
+            "name": "BEENY",
+            "lat": 32.752236116666666,
+            "lon": 115.37030556666667
+        },
+        {
+            "name": "CUNSA",
+            "lat": 32.82918611666667,
+            "lon": 115.58873888333333
+        },
+        {
+            "name": "IPL",
+            "lat": 32.748866666666665,
+            "lon": 115.50858333333333
+        },
+        {
+            "name": "LAMAW",
+            "lat": 32.776275,
+            "lon": 115.60908333333333
+        },
+        {
+            "name": "WAKOT",
+            "lat": 32.788638883333334,
+            "lon": 115.59548056666667
+        },
+        {
+            "name": "ZALIG",
+            "lat": 32.812475,
+            "lon": 115.64765556666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 12",
+        "RNW 26",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD30",
+            "fixes": {
+                "IPL": "IPL AT OR ABOVE 1500",
+                "WAKOT": "WAKOT 1100",
+                "ZALIG": "ZALIG 166 RNW 30 TRK 284 UNTIL 600 TURN LEFT HDG 104 INTERCEPT RADIAL 074 TO",
+                "BEENY": "BEENY BEENY AT OR ABOVE 2000 HOLD AT BEENY RIGHT TURN INBOUNDCOURSE 254 ALT 4000 SPEED 230 LEGDIST 4 FAF WAKOT MAP ZALIG"
+            },
+            "transitions": [
+                {
+                    "name": "BEENY",
+                    "fixes": {
+                        "BEENY": "BEENY AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "BEENY": "BEENY AT OR ABOVE 2100 OVERFLY BEENY AT OR ABOVE 2100 SPEED 250 HOLD AT BEENY RIGHT TURN INBOUNDCOURSE 257 ALT 4000 SPEED 230 LEGDIST 4 FAF CUNSA MAP RNW 26",
+                "BAGSE": "BAGSE AT OR ABOVE 1700",
+                "CUNSA": "CUNSA 1100 RNW 26 TRK 259 UNTIL 500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ARGUS",
+                    "fixes": {
+                        "ARGUS": "ARGUS AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "BEENY",
+                    "fixes": {
+                        "BEENY": "BEENY RIGHT TURN INBOUNDCOURSE 257 ALT 2100 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "BEENY": "BEENY AT OR ABOVE 2100 OVERFLY BEENY AT OR ABOVE 2100 SPEED 250 HOLD AT BEENY RIGHT TURN INBOUNDCOURSE 257 ALT 4000 SPEED 230 LEGDIST 4 FAF LAMAW MAP RNW 30",
+                "IPL": "IPL AT OR ABOVE 1500",
+                "LAMAW": "LAMAW 1100 RNW 30 TRK 304 UNTIL 500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ARGUS",
+                    "fixes": {
+                        "ARGUS": "ARGUS AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "BEENY",
+                    "fixes": {
+                        "BEENY": "BEENY RIGHT TURN INBOUNDCOURSE 257 ALT 2100 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "fixes": [
+        {
+            "name": "CIRBO",
+            "lat": 43.03412221666667,
+            "lon": 86.08552221666666
+        },
+        {
+            "name": "FIVLO",
+            "lat": 43.033936116666666,
+            "lon": 85.94904443333333
+        },
+        {
+            "name": "SIBEE",
+            "lat": 43.03408056666667,
+            "lon": 86.3064
+        },
+        {
+            "name": "WASOG",
+            "lat": 43.03335,
+            "lon": 86.60360833333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "WASOG": "WASOG AT OR ABOVE 3000",
+                "SIBEE": "SIBEE 2100 RNW 09 TRK 095 UNTIL 1004",
+                "FIVLO": "FIVLO AT OR ABOVE 2700 HOLD AT FIVLO LEFT TURN INBOUNDCOURSE 275 LEGDIST 4 FAF SIBEE MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "WASOG",
+                    "fixes": {
+                        "WASOG": "WASOG RIGHT TURN INBOUNDCOURSE 095 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "FIVLO": "FIVLO AT OR ABOVE 2700",
+                "CIRBO": "CIRBO 2100 RNW 27 TRK 275 UNTIL 1000",
+                "WASOG": "OVERFLY WASOG AT OR ABOVE 3000 HOLD AT WASOG RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4 FAF CIRBO MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "FIVLO",
+                    "fixes": {
+                        "FIVLO": "FIVLO LEFT TURN INBOUNDCOURSE 275 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

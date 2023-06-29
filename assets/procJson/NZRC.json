@@ -1,0 +1,59 @@
+{
+    "fixes": [
+        {
+            "name": "ANGEB",
+            "lat": 46.882813883333334,
+            "lon": 168.15035
+        },
+        {
+            "name": "LEDIP",
+            "lat": 46.868619433333336,
+            "lon": 168.19164721666667
+        },
+        {
+            "name": "RC401",
+            "lat": 46.8925,
+            "lon": 168.12221666666667
+        },
+        {
+            "name": "SEBSA",
+            "lat": 46.845272216666665,
+            "lon": 168.25917221666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [
+        {
+            "name": "SEBSA1",
+            "rnw": "04",
+            "fixes": {
+                "ANGEB": "ANGEB AT OR ABOVE 700",
+                "SEBSA": "SEBSA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "SEBSA": "SEBSA AT OR ABOVE 2000 SEBSA 2000 HOLD AT SEBSA LEFT TURN INBOUNDCOURSE 217 ALT 2000 LEGTIME 1 FAF LEDIP MAP RC401",
+                "LEDIP": "LEDIP 1600",
+                "RC401": "OVERFLY RC401 578 RNW 22 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SEBSA",
+                    "fixes": {
+                        "SEBSA": "SEBSA LEFT TURN INBOUNDCOURSE 217 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

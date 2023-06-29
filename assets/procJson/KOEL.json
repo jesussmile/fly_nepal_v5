@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "CUGGA",
+            "lat": 39.31766666666667,
+            "lon": 100.86866111666667
+        },
+        {
+            "name": "FF34",
+            "lat": 39.019669433333334,
+            "lon": 100.79216388333333
+        },
+        {
+            "name": "GLD",
+            "lat": 39.38786666666667,
+            "lon": 101.69229721666666
+        },
+        {
+            "name": "HLC",
+            "lat": 39.25874721666667,
+            "lon": 100.22585
+        },
+        {
+            "name": "HOLKO",
+            "lat": 39.02005833333333,
+            "lon": 100.79390556666667
+        },
+        {
+            "name": "LIBNE",
+            "lat": 38.918191666666665,
+            "lon": 100.76845
+        },
+        {
+            "name": "OELNB",
+            "lat": 39.11253056666666,
+            "lon": 100.81530278333334
+        },
+        {
+            "name": "PI001",
+            "lat": 39.0552681,
+            "lon": 100.80096926666667
+        },
+        {
+            "name": "PI002",
+            "lat": 39.015167633333334,
+            "lon": 100.72450088333333
+        },
+        {
+            "name": "PI003",
+            "lat": 38.948918883333334,
+            "lon": 100.77441146666666
+        },
+        {
+            "name": "PIYCI",
+            "lat": 38.93410278333333,
+            "lon": 100.663625
+        },
+        {
+            "name": "RUPYO",
+            "lat": 38.90218611666667,
+            "lon": 100.87322778333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 16",
+        "RNW 26",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB34",
+            "fixes": {
+                "FF34": "FF34 4700 RNW 34",
+                "OELNB": "OELNB AT OR ABOVE 3445 TRK 341 UNTIL 4200 TURN RIGHT DIRECT OELNB AT OR ABOVE 4700 HOLD AT OELNB RIGHT TURN INBOUNDCOURSE 341 LEGTIME 1 FAF FF34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GLD",
+                    "fixes": {
+                        "GLD": "GLD",
+                        "OELNB": "OELNB AT OR ABOVE 5500",
+                        "PI001": "PI001 AT OR ABOVE 4700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "HLC",
+                    "fixes": {
+                        "HLC": "HLC",
+                        "OELNB": "OELNB AT OR ABOVE 4700",
+                        "PI001": "PI001 AT OR ABOVE 4700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "LIBNE": "LIBNE AT OR ABOVE 4700",
+                "HOLKO": "HOLKO 4700 RNW 34 TRK 341 UNTIL 3285",
+                "CUGGA": "OVERFLY CUGGA AT OR ABOVE 4700 HOLD AT CUGGA RIGHT TURN INBOUNDCOURSE 269 LEGDIST 5 FAF HOLKO MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GLD",
+                    "fixes": {
+                        "GLD": "GLD",
+                        "RUPYO": "RUPYO AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "HLC",
+                    "fixes": {
+                        "HLC": "HLC",
+                        "PIYCI": "PIYCI AT OR ABOVE 4700"
+                    }
+                },
+                {
+                    "name": "LIBNE",
+                    "fixes": {
+                        "LIBNE": "LIBNE RIGHT TURN INBOUNDCOURSE 341 ALT 4700 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

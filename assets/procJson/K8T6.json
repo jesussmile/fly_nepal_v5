@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "CAMOK",
+            "lat": 28.367125,
+            "lon": 98.11750833333333
+        },
+        {
+            "name": "DORKY",
+            "lat": 28.427019433333335,
+            "lon": 98.18712221666667
+        },
+        {
+            "name": "FENAK",
+            "lat": 28.42325,
+            "lon": 98.13091388333333
+        },
+        {
+            "name": "HARTA",
+            "lat": 28.403502783333334,
+            "lon": 98.16123333333333
+        },
+        {
+            "name": "SELIE",
+            "lat": 28.486886116666668,
+            "lon": 98.25310833333333
+        },
+        {
+            "name": "THX",
+            "lat": 28.504997216666666,
+            "lon": 98.15046666666667
+        },
+        {
+            "name": "TINIE",
+            "lat": 28.548880566666668,
+            "lon": 98.18288056666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA13",
+            "fixes": {
+                "THX": "THX AT OR ABOVE 2000 THX AT OR ABOVE 2000 HOLD AT THX RIGHT TURN INBOUNDCOURSE 160 LEGTIME 1 FAF FENAK MAP CAMOK",
+                "FENAK": "FENAK 1300",
+                "CAMOK": "CAMOK 860 RNW 13 TRK 160 UNTIL 860 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "THX",
+                    "fixes": {
+                        "THX": "THX RIGHT TURN INBOUNDCOURSE 160 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA31",
+            "fixes": {
+                "THX": "THX AT OR ABOVE 2000 THX AT OR ABOVE 2000 HOLD AT THX RIGHT TURN INBOUNDCOURSE 160 LEGTIME 1 FAF FENAK MAP CAMOK",
+                "FENAK": "FENAK 1300",
+                "CAMOK": "CAMOK 860 RNW 31 TRK 160 UNTIL 860 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "THX",
+                    "fixes": {
+                        "THX": "THX RIGHT TURN INBOUNDCOURSE 160 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "SELIE": "SELIE AT OR ABOVE 2000",
+                "DORKY": "DORKY 1800",
+                "HARTA": "HARTA AT OR ABOVE 1160 RNW 13 TRK 130 UNTIL 529 TURN LEFT DIRECT",
+                "THX": "THX AT OR ABOVE 2000 HOLD AT THX RIGHT TURN INBOUNDCOURSE 162 LEGDIST 4 FAF DORKY MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "SELIE",
+                    "fixes": {
+                        "SELIE": "SELIE RIGHT TURN INBOUNDCOURSE 130 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TINIE",
+                    "fixes": {
+                        "TINIE": "TINIE"
+                    }
+                }
+            ]
+        }
+    ]
+}

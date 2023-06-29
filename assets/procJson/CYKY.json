@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "EMLIB",
+            "lat": 51.51837221666667,
+            "lon": 108.90605
+        },
+        {
+            "name": "EMORU",
+            "lat": 51.43439721666667,
+            "lon": 109.454275
+        },
+        {
+            "name": "FF26",
+            "lat": 51.523105566666665,
+            "lon": 109.06617221666667
+        },
+        {
+            "name": "IPTUP",
+            "lat": 51.51842778333334,
+            "lon": 109.03945556666666
+        },
+        {
+            "name": "KIXUN",
+            "lat": 51.43514166666667,
+            "lon": 108.90625833333333
+        },
+        {
+            "name": "M3NB",
+            "lat": 51.517066666666665,
+            "lon": 109.17781943333334
+        },
+        {
+            "name": "NOTEV",
+            "lat": 51.60085278333333,
+            "lon": 109.45585833333334
+        },
+        {
+            "name": "ODBEG",
+            "lat": 51.51804166666667,
+            "lon": 109.32166388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 51.523127216666666,
+            "lon": 109.08457946666667
+        },
+        {
+            "name": "PI002",
+            "lat": 51.5788003,
+            "lon": 109.01200373333333
+        },
+        {
+            "name": "PI003",
+            "lat": 51.53418633333333,
+            "lon": 108.91135426666666
+        },
+        {
+            "name": "SEDUB",
+            "lat": 51.518422216666664,
+            "lon": 109.05485556666666
+        },
+        {
+            "name": "TIKED",
+            "lat": 51.6016,
+            "lon": 108.90583888333333
+        },
+        {
+            "name": "URMUN",
+            "lat": 51.517625,
+            "lon": 109.45506666666667
+        },
+        {
+            "name": "VOBEP",
+            "lat": 51.51808056666667,
+            "lon": 109.30626388333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 17",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FF26": "FF26 3600 RNW 26",
+                "M3NB": "OVERFLY M3NB TRK 252 UNTIL 3700 TURN RIGHT DIRECT M3NB 3700 HOLD AT M3NB RIGHT TURN INBOUNDCOURSE 252 LEGTIME 1 FAF FF26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "M3",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "URMUN": "URMUN AT OR ABOVE 4000",
+                "ODBEG": "ODBEG 3900 RNW 08",
+                "SEDUB": "OVERFLY SEDUB 3900 HOLD AT SEDUB RIGHT TURN INBOUNDCOURSE 078 LEGTIME 1 FAF ODBEG MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "EMORU",
+                    "fixes": {
+                        "EMORU": "EMORU"
+                    }
+                },
+                {
+                    "name": "NOTEV",
+                    "fixes": {
+                        "NOTEV": "NOTEV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "EMLIB": "EMLIB AT OR ABOVE 4000",
+                "IPTUP": "IPTUP 3920 RNW 26",
+                "VOBEP": "OVERFLY VOBEP 3900 HOLD AT VOBEP RIGHT TURN INBOUNDCOURSE 258 LEGTIME 1 FAF IPTUP MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "KIXUN",
+                    "fixes": {
+                        "KIXUN": "KIXUN"
+                    }
+                },
+                {
+                    "name": "TIKED",
+                    "fixes": {
+                        "TIKED": "TIKED"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "KUSAN",
+            "lat": 3.4065277833333334,
+            "lon": 115.77063888333333
+        },
+        {
+            "name": "OC401",
+            "lat": 3.4078333333333335,
+            "lon": 115.82061111666667
+        },
+        {
+            "name": "OC402",
+            "lat": 3.4101111166666667,
+            "lon": 115.90391666666666
+        },
+        {
+            "name": "OC404",
+            "lat": 3.41425,
+            "lon": 116.05725
+        },
+        {
+            "name": "OC601",
+            "lat": 3.4381388833333335,
+            "lon": 116.1655
+        },
+        {
+            "name": "OC602",
+            "lat": 3.415,
+            "lon": 116.08538888333334
+        },
+        {
+            "name": "OC603",
+            "lat": 3.4134444333333334,
+            "lon": 116.02708333333334
+        },
+        {
+            "name": "OC604",
+            "lat": 3.4107777833333333,
+            "lon": 115.92872221666667
+        },
+        {
+            "name": "SUJUD",
+            "lat": 3.4520555666666666,
+            "lon": 116.21355556666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "OC401": "OC401 AT OR ABOVE 2700",
+                "OC402": "OC402 1600 RNW 09",
+                "OC404": "OVERFLY OC404 TURN RIGHT DIRECT",
+                "KUSAN": "KUSAN AT OR ABOVE 3500 SPEED 210 HOLD AT KUSAN RIGHT TURN INBOUNDCOURSE 091 ALT 3500 SPEED 210 LEGTIME 1 FAF OC402 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "KUSAN",
+                    "fixes": {
+                        "KUSAN": "KUSAN AT OR ABOVE 3500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "OC601": "OC601 AT OR ABOVE 2700",
+                "OC602": "OC602 1600",
+                "OC603": "OVERFLY OC603 537 RNW 27 TURN LEFT DIRECT",
+                "SUJUD": "SUJUD AT OR ABOVE 3500 HOLD AT SUJUD LEFT TURN INBOUNDCOURSE 285 ALT 3500 LEGTIME 1 FAF OC602 MAP OC603"
+            },
+            "transitions": [
+                {
+                    "name": "SUJUD",
+                    "fixes": {
+                        "SUJUD": "SUJUD AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "CUKTO",
+            "lat": 37.92022778333333,
+            "lon": 99.08451388333333
+        },
+        {
+            "name": "CULMI",
+            "lat": 38.424947216666666,
+            "lon": 99.08551943333333
+        },
+        {
+            "name": "DISKS",
+            "lat": 38.360486116666664,
+            "lon": 98.87200278333333
+        },
+        {
+            "name": "HUTAM",
+            "lat": 38.24642778333333,
+            "lon": 99.08516388333334
+        },
+        {
+            "name": "HYS",
+            "lat": 38.84765556666667,
+            "lon": 99.27679166666667
+        },
+        {
+            "name": "JIXIT",
+            "lat": 38.308225,
+            "lon": 99.08528611666667
+        },
+        {
+            "name": "OTEGE",
+            "lat": 38.17649443333333,
+            "lon": 99.085025
+        },
+        {
+            "name": "WENIL",
+            "lat": 38.11292221666667,
+            "lon": 99.08489721666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 12",
+        "RNW 17",
+        "RNW 22",
+        "RNW 30",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "CULMI": "CULMI AT OR ABOVE 4500",
+                "JIXIT": "JIXIT 3800",
+                "HUTAM": "HUTAM AT OR ABOVE 2620 RNW 17 TRK 172 UNTIL 2320",
+                "CUKTO": "OVERFLY CUKTO AT OR ABOVE 4300 HOLD AT CUKTO RIGHT TURN INBOUNDCOURSE 352 LEGDIST 5 FAF JIXIT MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "DISKS",
+                    "fixes": {
+                        "DISKS": "DISKS",
+                        "CULMI": "OVERFLY CULMI AT OR ABOVE 4500 HOLD AT CULMI RIGHT TURN INBOUNDCOURSE 172 ALT 4500 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "HYS",
+                    "fixes": {
+                        "HYS": "HYS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "CUKTO": "CUKTO AT OR ABOVE 4300",
+                "WENIL": "WENIL 3800",
+                "OTEGE": "OTEGE AT OR ABOVE 2580 RNW 35 TRK 352 UNTIL 2259",
+                "CULMI": "OVERFLY CULMI AT OR ABOVE 4500 HOLD AT CULMI RIGHT TURN INBOUNDCOURSE 172 LEGDIST 5 FAF WENIL MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CUKTO",
+                    "fixes": {
+                        "CUKTO": "CUKTO RIGHT TURN INBOUNDCOURSE 352 ALT 4300 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

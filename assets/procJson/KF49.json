@@ -1,0 +1,117 @@
+{
+    "fixes": [
+        {
+            "name": "CAGOX",
+            "lat": 33.398186116666665,
+            "lon": 101.67584166666667
+        },
+        {
+            "name": "CAPDU",
+            "lat": 33.569775,
+            "lon": 101.64618611666667
+        },
+        {
+            "name": "HAXEB",
+            "lat": 33.298155566666665,
+            "lon": 101.693075
+        },
+        {
+            "name": "JONON",
+            "lat": 33.670575,
+            "lon": 101.62871388333333
+        },
+        {
+            "name": "LBB",
+            "lat": 33.70495,
+            "lon": 101.91401111666667
+        },
+        {
+            "name": "RALLS",
+            "lat": 33.73407778333333,
+            "lon": 101.33928056666667
+        },
+        {
+            "name": "TAGAE",
+            "lat": 33.24813888333333,
+            "lon": 101.77266111666667
+        },
+        {
+            "name": "WAGEG",
+            "lat": 33.526372216666665,
+            "lon": 101.6537
+        },
+        {
+            "name": "WATUS",
+            "lat": 33.23126943333333,
+            "lon": 101.63359166666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 18",
+        "RNW 26",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "JONON": "JONON AT OR ABOVE 5300",
+                "CAPDU": "CAPDU 4700",
+                "WAGEG": "WAGEG AT OR ABOVE 3860 RNW 18 TRK 182 UNTIL 3427",
+                "HAXEB": "OVERFLY HAXEB AT OR ABOVE 5000 HOLD AT HAXEB RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF CAPDU MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "JONON",
+                    "fixes": {
+                        "JONON": "JONON RIGHT TURN INBOUNDCOURSE 182 ALT 5300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LBB",
+                    "fixes": {
+                        "LBB": "LBB"
+                    }
+                },
+                {
+                    "name": "RALLS",
+                    "fixes": {
+                        "RALLS": "RALLS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HAXEB": "HAXEB AT OR ABOVE 5000",
+                "CAGOX": "CAGOX 4700 RNW 36 TRK 002 UNTIL 3524",
+                "JONON": "OVERFLY JONON AT OR ABOVE 5300 HOLD AT JONON RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4 FAF CAGOX MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "LBB",
+                    "fixes": {
+                        "LBB": "LBB",
+                        "HAXEB": "OVERFLY HAXEB AT OR ABOVE 5100 HOLD AT HAXEB RIGHT TURN INBOUNDCOURSE 002 ALT 5000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TAGAE",
+                    "fixes": {
+                        "TAGAE": "TAGAE"
+                    }
+                },
+                {
+                    "name": "WATUS",
+                    "fixes": {
+                        "WATUS": "WATUS"
+                    }
+                }
+            ]
+        }
+    ]
+}

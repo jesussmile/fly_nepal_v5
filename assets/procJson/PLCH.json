@@ -1,0 +1,153 @@
+{
+    "fixes": [
+        {
+            "name": "AF08N",
+            "lat": 2.0696083333333335,
+            "lon": 157.52571388333334
+        },
+        {
+            "name": "AF08S",
+            "lat": 1.9021194333333333,
+            "lon": 157.52539721666668
+        },
+        {
+            "name": "AF26N",
+            "lat": 2.0702888833333333,
+            "lon": 157.17411666666666
+        },
+        {
+            "name": "AF26S",
+            "lat": 1.9028,
+            "lon": 157.17379443333334
+        },
+        {
+            "name": "FF08",
+            "lat": 1.9860305666666667,
+            "lon": 157.44232221666667
+        },
+        {
+            "name": "FF26",
+            "lat": 1.9863888833333334,
+            "lon": 157.25718888333333
+        },
+        {
+            "name": "FN08",
+            "lat": 1.9957416666666667,
+            "lon": 157.42499443333332
+        },
+        {
+            "name": "FN26",
+            "lat": 1.9918111166666668,
+            "lon": 157.27406388333333
+        },
+        {
+            "name": "IF08",
+            "lat": 1.9858638833333333,
+            "lon": 157.52555556666667
+        },
+        {
+            "name": "IF26",
+            "lat": 1.9865444333333335,
+            "lon": 157.17395556666668
+        },
+        {
+            "name": "XINB",
+            "lat": 1.9834166666666668,
+            "lon": 157.3548
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FN08": "FN08 1200",
+                "XINB": "XINB 470 RNW 08 TRK 091 UNTIL 1000 TURN RIGHT DIRECT XINB 1500 HOLD AT XINB RIGHT TURN INBOUNDCOURSE 300 LEGTIME 1 FAF FN08 MAP XI"
+            },
+            "transitions": [
+                {
+                    "name": "XI1",
+                    "fixes": {
+                        "XINB": "XINB AT OR ABOVE 1500 TRK 300 UNTIL 7.0 FROM XINB"
+                    }
+                },
+                {
+                    "name": "XI2",
+                    "fixes": {
+                        "XINB": "XINB AT OR ABOVE 1500 TRK 283 UNTIL 9.0 FROM XINB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FN26": "FN26 1200",
+                "XINB": "XINB 460 RNW 26 TRK 255 UNTIL 1000 TURN RIGHT DIRECT XINB 1500 HOLD AT XINB RIGHT TURN INBOUNDCOURSE 104 LEGTIME 1 FAF FN26 MAP XI"
+            },
+            "transitions": [
+                {
+                    "name": "XI1",
+                    "fixes": {
+                        "XINB": "XINB AT OR ABOVE 1500 TRK 104 UNTIL 7.0 FROM XINB"
+                    }
+                },
+                {
+                    "name": "XI2",
+                    "fixes": {
+                        "XINB": "XINB AT OR ABOVE 1500 TRK 087 UNTIL 9.0 FROM XINB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS08",
+            "fixes": {
+                "IF08": "IF08 AT OR ABOVE 1500",
+                "FF08": "FF08 700 RNW 08",
+                "IF26": "IF26 1500 HOLD AT IF26 RIGHT TURN INBOUNDCOURSE 261 ALT 1500 LEGTIME 1 FAF FF08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "AF08N",
+                    "fixes": {
+                        "AF08N": "AF08N"
+                    }
+                },
+                {
+                    "name": "AF08S",
+                    "fixes": {
+                        "AF08S": "AF08S"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS26",
+            "fixes": {
+                "IF26": "IF26 AT OR ABOVE 1500",
+                "FF26": "FF26 700 RNW 26",
+                "IF08": "IF08 1500 HOLD AT IF08 RIGHT TURN INBOUNDCOURSE 081 ALT 1500 LEGTIME 1 FAF FF26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "AF26N",
+                    "fixes": {
+                        "AF26N": "AF26N"
+                    }
+                },
+                {
+                    "name": "AF26S",
+                    "fixes": {
+                        "AF26S": "AF26S"
+                    }
+                }
+            ]
+        }
+    ]
+}

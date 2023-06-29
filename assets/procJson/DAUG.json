@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "CI30",
+            "lat": 32.297358333333335,
+            "lon": 3.9634416666666668
+        },
+        {
+            "name": "D121F",
+            "lat": 32.340144433333336,
+            "lon": 3.8779777833333333
+        },
+        {
+            "name": "D121G",
+            "lat": 32.33128056666666,
+            "lon": 3.89465
+        },
+        {
+            "name": "D301D",
+            "lat": 32.424247216666664,
+            "lon": 3.7194333333333334
+        },
+        {
+            "name": "FI30",
+            "lat": 32.325811116666664,
+            "lon": 3.9078583333333334
+        },
+        {
+            "name": "FN36",
+            "lat": 32.276144433333336,
+            "lon": 3.7880833333333332
+        },
+        {
+            "name": "FS30",
+            "lat": 32.326847216666664,
+            "lon": 3.902986116666667
+        },
+        {
+            "name": "GHA",
+            "lat": 32.393286116666665,
+            "lon": 3.7778805666666666
+        },
+        {
+            "name": "GHANB",
+            "lat": 32.37472221666667,
+            "lon": 3.7941666666666665
+        },
+        {
+            "name": "NIMIR",
+            "lat": 32.251944433333335,
+            "lon": 4.045277783333334
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 18",
+        "RNW 30",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS30",
+            "fixes": {
+                "CI30": "CI30 AT OR ABOVE 3070",
+                "FI30": "FI30 3070 RNW 30",
+                "GHA": "GHA TRK 301 UNTIL 3550 TURN LEFT DIRECT GHA 4530 FAF FI30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "NIMIR",
+                    "fixes": {
+                        "NIMIR": "NIMIR AT OR ABOVE 4270"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB36",
+            "fixes": {
+                "FN36": "FN36 3580",
+                "GHANB": "GHANB 1697 RNW 36 TRK 002 UNTIL 2960 TURN RIGHT DIRECT GHANB 4530 FAF FN36 MAP GHA"
+            },
+            "transitions": [
+                {
+                    "name": "GHA1",
+                    "fixes": {
+                        "GHANB": "GHANB AT OR ABOVE 4530 TRK 156 UNTIL 7.0 FROM GHANB"
+                    }
+                },
+                {
+                    "name": "GHA2",
+                    "fixes": {
+                        "GHANB": "GHANB AT OR ABOVE 4530 TRK 166 UNTIL 7.5 FROM GHANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR30",
+            "fixes": {
+                "FS30": "FS30 2990 RNW 30",
+                "GHA": "GHA GHA 4530 FAF FS30 MAP RNW 30",
+                "D301D": "OVERFLY D301D TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GHA1",
+                    "fixes": {
+                        "GHA": "GHA AT OR ABOVE 4530",
+                        "D121G": "D121G AT OR ABOVE 2990 TRK 076 UNTIL 4.4 FROM D121G"
+                    }
+                },
+                {
+                    "name": "GHA2",
+                    "fixes": {
+                        "GHA": "GHA AT OR ABOVE 4530",
+                        "D121F": "D121F AT OR ABOVE 2990 TRK 076 UNTIL 3.0 FROM D121F"
+                    }
+                }
+            ]
+        }
+    ]
+}

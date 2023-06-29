@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "EPTOM",
+            "lat": 42.942686116666664,
+            "lon": 82.23671943333333
+        },
+        {
+            "name": "KAXIV",
+            "lat": 42.874463883333334,
+            "lon": 82.15002221666667
+        },
+        {
+            "name": "ODGEG",
+            "lat": 42.931305566666666,
+            "lon": 82.06708888333333
+        },
+        {
+            "name": "SIGTU",
+            "lat": 43.170727783333334,
+            "lon": 82.37225833333333
+        },
+        {
+            "name": "UDKUR",
+            "lat": 43.11366666666667,
+            "lon": 82.45523333333334
+        },
+        {
+            "name": "VIXUN",
+            "lat": 43.052908333333335,
+            "lon": 82.37738333333333
+        },
+        {
+            "name": "XIGEK",
+            "lat": 42.94393888333333,
+            "lon": 82.23831666666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 15",
+        "RNW 24",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "UDKUR": "UDKUR AT OR ABOVE 1900",
+                "VIXUN": "VIXUN 1900 RNW 15",
+                "XIGEK": "OVERFLY XIGEK 2700 HOLD AT XIGEK LEFT TURN INBOUNDCOURSE 145 SPEED 250 LEGTIME 1 FAF VIXUN MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "SIGTU",
+                    "fixes": {
+                        "SIGTU": "SIGTU SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "KAXIV": "KAXIV AT OR ABOVE 2000",
+                "EPTOM": "EPTOM 2000 RNW 33 HDG 325 UNTIL 1100 TURN RIGHT DIRECT",
+                "ODGEG": "OVERFLY ODGEG 2700 SPEED 185 HOLD AT ODGEG LEFT TURN INBOUNDCOURSE 235 LEGTIME 1 FAF EPTOM MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "ODGEG",
+                    "fixes": {
+                        "ODGEG": "ODGEG SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

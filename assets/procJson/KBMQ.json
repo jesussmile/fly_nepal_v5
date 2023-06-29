@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "AGJ",
+            "lat": 31.185505566666667,
+            "lon": 98.14185833333333
+        },
+        {
+            "name": "AMUSE",
+            "lat": 30.456447216666668,
+            "lon": 98.29418888333333
+        },
+        {
+            "name": "BEPKY",
+            "lat": 30.716277783333332,
+            "lon": 98.24619721666667
+        },
+        {
+            "name": "DLORA",
+            "lat": 30.905502783333333,
+            "lon": 98.18270556666667
+        },
+        {
+            "name": "FINTI",
+            "lat": 30.66775,
+            "lon": 98.26243888333333
+        },
+        {
+            "name": "HONES",
+            "lat": 30.808875,
+            "lon": 98.21515833333333
+        },
+        {
+            "name": "HUKUD",
+            "lat": 30.700230566666665,
+            "lon": 98.25156943333333
+        },
+        {
+            "name": "IXANY",
+            "lat": 30.933366666666668,
+            "lon": 98.294375
+        },
+        {
+            "name": "JIBAJ",
+            "lat": 30.985719433333333,
+            "lon": 98.15571111666667
+        },
+        {
+            "name": "LEYIG",
+            "lat": 30.782436116666666,
+            "lon": 98.22402778333333
+        },
+        {
+            "name": "LLO",
+            "lat": 30.796341666666667,
+            "lon": 98.78738888333334
+        },
+        {
+            "name": "SUBIE",
+            "lat": 30.571363883333333,
+            "lon": 98.29465
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "SUBIE": "SUBIE AT OR ABOVE 3100",
+                "FINTI": "FINTI 2600",
+                "HUKUD": "HUKUD AT OR ABOVE 1940",
+                "BEPKY": "OVERFLY BEPKY 1626 RNW 01 TRK 013 UNTIL 1660",
+                "DLORA": "OVERFLY DLORA AT OR ABOVE 3500 HOLD AT DLORA RIGHT TURN INBOUNDCOURSE 193 LEGDIST 4 FAF FINTI MAP BEPKY"
+            },
+            "transitions": [
+                {
+                    "name": "AMUSE",
+                    "fixes": {
+                        "AMUSE": "AMUSE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "DLORA": "DLORA AT OR ABOVE 3500",
+                "HONES": "HONES 2600",
+                "LEYIG": "LEYIG AT OR ABOVE 2060 RNW 19 TRK 193 UNTIL 1683",
+                "FINTI": "FINTI",
+                "AMUSE": "OVERFLY AMUSE AT OR ABOVE 3100 FAF HONES MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "AGJ",
+                    "fixes": {
+                        "AGJ": "AGJ",
+                        "JIBAJ": "JIBAJ AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "LLO",
+                    "fixes": {
+                        "LLO": "LLO",
+                        "IXANY": "IXANY AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

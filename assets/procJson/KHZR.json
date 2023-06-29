@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "CEBGA",
+            "lat": 30.605941666666666,
+            "lon": 91.48844721666667
+        },
+        {
+            "name": "CIDLA",
+            "lat": 30.809430566666666,
+            "lon": 91.47071111666666
+        },
+        {
+            "name": "FENPU",
+            "lat": 30.912705566666666,
+            "lon": 91.46167778333333
+        },
+        {
+            "name": "HAZER",
+            "lat": 30.632094433333332,
+            "lon": 91.48615833333334
+        },
+        {
+            "name": "LSU",
+            "lat": 30.485133333333334,
+            "lon": 91.29406666666667
+        },
+        {
+            "name": "OVBAE",
+            "lat": 30.507891666666666,
+            "lon": 91.49696943333333
+        },
+        {
+            "name": "RONDA",
+            "lat": 30.530413883333335,
+            "lon": 91.49498333333334
+        },
+        {
+            "name": "ZOLOD",
+            "lat": 30.772813883333335,
+            "lon": 91.47390833333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC36",
+            "fixes": {
+                "RONDA": "RONDA AT OR ABOVE 2000",
+                "HAZER": "HAZER 1600 RNW 36 TRK 004 UNTIL 700 TURN RIGHT DIRECT",
+                "LSU": "LSU AT OR ABOVE 2000 HOLD AT LSU RIGHT TURN INBOUNDCOURSE 065 LEGTIME 1 FAF HAZER MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "LSU",
+                    "fixes": {
+                        "LSU": "LSU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "FENPU": "FENPU AT OR ABOVE 2300",
+                "CIDLA": "CIDLA 1700",
+                "ZOLOD": "ZOLOD AT OR ABOVE 1000 RNW 18 TRK 184 UNTIL 439",
+                "OVBAE": "OVERFLY OVBAE AT OR ABOVE 2100 HOLD AT OVBAE LEFT TURN INBOUNDCOURSE 004 LEGDIST 4 FAF CIDLA MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "FENPU",
+                    "fixes": {
+                        "FENPU": "FENPU RIGHT TURN INBOUNDCOURSE 184 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "OVBAE": "OVBAE AT OR ABOVE 2100",
+                "CEBGA": "CEBGA 2100 RNW 36 TRK 004 UNTIL 286",
+                "FENPU": "OVERFLY FENPU AT OR ABOVE 2300 HOLD AT FENPU RIGHT TURN INBOUNDCOURSE 184 LEGDIST 4 FAF CEBGA MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "OVBAE",
+                    "fixes": {
+                        "OVBAE": "OVBAE LEFT TURN INBOUNDCOURSE 004 ALT 2100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

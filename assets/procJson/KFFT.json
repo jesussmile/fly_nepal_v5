@@ -1,0 +1,157 @@
+{
+    "fixes": [
+        {
+            "name": "ACETO",
+            "lat": 38.14280278333333,
+            "lon": 85.00724166666667
+        },
+        {
+            "name": "CUKRI",
+            "lat": 38.272480566666665,
+            "lon": 84.67122221666666
+        },
+        {
+            "name": "DEXLO",
+            "lat": 38.09125,
+            "lon": 85.13980556666667
+        },
+        {
+            "name": "FF25",
+            "lat": 38.222338883333336,
+            "lon": 84.78317221666667
+        },
+        {
+            "name": "FFT",
+            "lat": 38.182422216666666,
+            "lon": 84.90862221666667
+        },
+        {
+            "name": "FINCH",
+            "lat": 38.149775,
+            "lon": 85.20237221666666
+        },
+        {
+            "name": "HYK",
+            "lat": 37.96635,
+            "lon": 84.47251666666666
+        },
+        {
+            "name": "JAPOL",
+            "lat": 38.160775,
+            "lon": 84.96089166666667
+        },
+        {
+            "name": "KICSE",
+            "lat": 38.2034,
+            "lon": 84.85068333333334
+        },
+        {
+            "name": "LAYIV",
+            "lat": 38.22124443333333,
+            "lon": 84.80442221666667
+        },
+        {
+            "name": "NEBIY",
+            "lat": 38.31917778333333,
+            "lon": 84.54933611666667
+        },
+        {
+            "name": "PI001",
+            "lat": 38.206129016666665,
+            "lon": 84.84080498333333
+        },
+        {
+            "name": "PI002",
+            "lat": 38.273031083333336,
+            "lon": 84.80809058333334
+        },
+        {
+            "name": "PI003",
+            "lat": 38.250052333333336,
+            "lon": 84.71474156666666
+        },
+        {
+            "name": "ZIFFL",
+            "lat": 38.266097216666665,
+            "lon": 84.68785833333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC25",
+            "fixes": {
+                "ZIFFL": "ZIFFL AT OR ABOVE 3000",
+                "LAYIV": "LAYIV 2400 RNW 25 TRK 249 UNTIL 3100 TURN LEFT DIRECT",
+                "HYK": "HYK HOLD AT HYK RIGHT TURN INBOUNDCOURSE 304 LEGTIME 1 FAF LAYIV MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "NEBIY",
+                    "fixes": {
+                        "NEBIY": "NEBIY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "DEXLO": "DEXLO AT OR ABOVE 3000",
+                "ACETO": "ACETO 2400",
+                "JAPOL": "JAPOL AT OR ABOVE 1620 RNW 07 TRK 069 UNTIL 1087",
+                "CUKRI": "OVERFLY CUKRI AT OR ABOVE 3000 HOLD AT CUKRI RIGHT TURN INBOUNDCOURSE 249 LEGDIST 4 FAF ACETO MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "DEXLO",
+                    "fixes": {
+                        "DEXLO": "DEXLO RIGHT TURN INBOUNDCOURSE 069 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "CUKRI": "CUKRI AT OR ABOVE 3000",
+                "LAYIV": "LAYIV 2400",
+                "KICSE": "KICSE AT OR ABOVE 1620 RNW 25 TRK 249 UNTIL 1098",
+                "DEXLO": "OVERFLY DEXLO AT OR ABOVE 3000 HOLD AT DEXLO RIGHT TURN INBOUNDCOURSE 069 LEGDIST 4 FAF LAYIV MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "CUKRI",
+                    "fixes": {
+                        "CUKRI": "CUKRI RIGHT TURN INBOUNDCOURSE 249 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR25",
+            "fixes": {
+                "FF25": "FF25 2700 RNW 25",
+                "FFT": "OVERFLY FFT TRK 251 UNTIL 3100 TURN LEFT DIRECT",
+                "HYK": "HYK HOLD AT HYK RIGHT TURN INBOUNDCOURSE 304 LEGTIME 1 FAF FF25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "FINCH",
+                    "fixes": {
+                        "FINCH": "FINCH",
+                        "FFT": "FFT AT OR ABOVE 6000",
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

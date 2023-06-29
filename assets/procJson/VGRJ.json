@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "FN17",
+            "lat": 24.511983333333333,
+            "lon": 88.60705833333333
+        },
+        {
+            "name": "FN35",
+            "lat": 24.36330278333333,
+            "lon": 88.63050278333333
+        },
+        {
+            "name": "FS17",
+            "lat": 24.511627783333335,
+            "lon": 88.60407221666667
+        },
+        {
+            "name": "FS35",
+            "lat": 24.362991666666666,
+            "lon": 88.62836943333333
+        },
+        {
+            "name": "RAJ",
+            "lat": 24.438988883333334,
+            "lon": 88.61523056666667
+        },
+        {
+            "name": "RJNB",
+            "lat": 24.442466666666668,
+            "lon": 88.61371388333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB17",
+            "fixes": {
+                "FN17": "FN17 1200 RNW 17",
+                "RJNB": "OVERFLY RJNB TRK 176 UNTIL 2000 HDG 356 VECTORS FAF FN17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "RJ",
+                    "fixes": {
+                        "RJNB": "RJNB AT OR ABOVE 2000 SPEED 150 TRK 338 UNTIL 5.0 FROM RJNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB35",
+            "fixes": {
+                "FN35": "FN35 1200 RNW 35",
+                "RJNB": "OVERFLY RJNB TRK 350 UNTIL 2000 HDG 350 VECTORS FAF FN35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "RJ1",
+                    "fixes": {
+                        "RJNB": "RJNB AT OR ABOVE 2000 TRK 194 UNTIL 4.5 FROM RJNB"
+                    }
+                },
+                {
+                    "name": "RJ2",
+                    "fixes": {
+                        "RJNB": "RJNB AT OR ABOVE 2000 TRK 188 UNTIL 4.5 FROM RJNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR17",
+            "fixes": {
+                "FS17": "FS17 1200 RNW 17",
+                "RAJ": "OVERFLY RAJ TRK 173 UNTIL 2000 HDG 353 VECTORS FAF FS17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "RAJ",
+                    "fixes": {
+                        "RAJ": "RAJ AT OR ABOVE 2000 SPEED 150 TRK 335 UNTIL 5.0 FROM RAJ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR35",
+            "fixes": {
+                "FS35": "FS35 1200 RNW 35",
+                "RAJ": "OVERFLY RAJ TRK 352 UNTIL 2000 HDG 352 VECTORS FAF FS35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "RAJ1",
+                    "fixes": {
+                        "RAJ": "RAJ AT OR ABOVE 2000 SPEED 150 TRK 196 UNTIL 3.8 FROM RAJ"
+                    }
+                },
+                {
+                    "name": "RAJ2",
+                    "fixes": {
+                        "RAJ": "RAJ AT OR ABOVE 2000 SPEED 150 TRK 190 UNTIL 3.8 FROM RAJ"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "ADM",
+            "lat": 34.211586116666666,
+            "lon": 97.16822778333334
+        },
+        {
+            "name": "BYP",
+            "lat": 33.53748611666666,
+            "lon": 96.23409443333334
+        },
+        {
+            "name": "CEYAR",
+            "lat": 33.810152783333336,
+            "lon": 96.6414
+        },
+        {
+            "name": "EMWUK",
+            "lat": 33.878897216666665,
+            "lon": 96.75468056666666
+        },
+        {
+            "name": "OMOGY",
+            "lat": 33.58476388333333,
+            "lon": 96.57446111666667
+        },
+        {
+            "name": "TEREY",
+            "lat": 33.599930566666664,
+            "lon": 96.48722221666667
+        },
+        {
+            "name": "URH",
+            "lat": 33.944183333333335,
+            "lon": 96.39183611666667
+        },
+        {
+            "name": "WAMGE",
+            "lat": 33.53517778333333,
+            "lon": 96.55978056666666
+        },
+        {
+            "name": "WILBR",
+            "lat": 33.42402778333334,
+            "lon": 96.28984443333333
+        },
+        {
+            "name": "WIVBI",
+            "lat": 33.91518611666667,
+            "lon": 96.57994721666667
+        },
+        {
+            "name": "YAYUN",
+            "lat": 33.4363,
+            "lon": 96.53056111666666
+        },
+        {
+            "name": "ZERIT",
+            "lat": 33.623386116666666,
+            "lon": 96.58294443333334
+        },
+        {
+            "name": "ZOKTO",
+            "lat": 33.71134443333333,
+            "lon": 96.61201111666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA16",
+            "fixes": {
+                "BYP": "BYP AT OR ABOVE 2300",
+                "TEREY": "TEREY 2300 TEREY AT OR ABOVE 2400 HOLD AT TEREY RIGHT TURN INBOUNDCOURSE 280 LEGTIME 1 FAF TEREY MAP ZERI",
+                "ZERIT": "ZERIT 1620 RNW 16 TRK 280 UNTIL 2300 TURN LEFT DIRECT"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORDA34",
+            "fixes": {
+                "BYP": "BYP AT OR ABOVE 2300",
+                "TEREY": "TEREY 2300 TEREY AT OR ABOVE 2400 HOLD AT TEREY RIGHT TURN INBOUNDCOURSE 280 LEGTIME 1 FAF TEREY MAP ZERI",
+                "ZERIT": "ZERIT 1620 RNW 34 TRK 280 UNTIL 2300 TURN LEFT DIRECT"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "CEYAR": "CEYAR AT OR ABOVE 3000",
+                "ZOKTO": "ZOKTO 2400 RNW 16 TRK 163 UNTIL 1146 TURN LEFT DIRECT",
+                "URH": "OVERFLY URH AT OR ABOVE 3000 HOLD AT URH RIGHT TURN INBOUNDCOURSE 257 LEGDIST 4 FAF ZOKTO MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "ADM",
+                    "fixes": {
+                        "ADM": "ADM",
+                        "EMWUK": "EMWUK AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "BYP",
+                    "fixes": {
+                        "BYP": "BYP",
+                        "CEYAR": "OVERFLY CEYAR AT OR ABOVE 3000 HOLD AT CEYAR RIGHT TURN INBOUNDCOURSE 163 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "URH",
+                    "fixes": {
+                        "URH": "URH",
+                        "WIVBI": "WIVBI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "YAYUN": "YAYUN AT OR ABOVE 3000",
+                "WAMGE": "WAMGE 2400",
+                "OMOGY": "OMOGY AT OR ABOVE 1420 RNW 34 TRK 343 UNTIL 1060",
+                "CEYAR": "OVERFLY CEYAR AT OR ABOVE 3000 HOLD AT CEYAR RIGHT TURN INBOUNDCOURSE 163 LEGDIST 4 FAF WAMGE MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "BYP",
+                    "fixes": {
+                        "BYP": "BYP",
+                        "YAYUN": "OVERFLY YAYUN AT OR ABOVE 3000 HOLD AT YAYUN RIGHT TURN INBOUNDCOURSE 343 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WILBR",
+                    "fixes": {
+                        "WILBR": "WILBR"
+                    }
+                }
+            ]
+        }
+    ]
+}

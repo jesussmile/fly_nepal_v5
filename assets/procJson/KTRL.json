@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "CEVGA",
+            "lat": 32.517716666666665,
+            "lon": 96.36521943333334
+        },
+        {
+            "name": "KUYPE",
+            "lat": 32.75295,
+            "lon": 96.26719721666667
+        },
+        {
+            "name": "LINIY",
+            "lat": 32.51803888333333,
+            "lon": 96.16810833333334
+        },
+        {
+            "name": "NACIR",
+            "lat": 32.624075,
+            "lon": 96.26690556666667
+        },
+        {
+            "name": "OLEGE",
+            "lat": 32.517916666666665,
+            "lon": 96.26666388333334
+        },
+        {
+            "name": "PIKOY",
+            "lat": 32.791994433333336,
+            "lon": 96.26728611666667
+        },
+        {
+            "name": "ROYOR",
+            "lat": 32.89919166666667,
+            "lon": 96.16855278333334
+        },
+        {
+            "name": "SENYO",
+            "lat": 32.89886943333333,
+            "lon": 96.36650278333333
+        },
+        {
+            "name": "TUCUN",
+            "lat": 32.89906943333333,
+            "lon": 96.26752778333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "TUCUN": "TUCUN AT OR ABOVE 3000",
+                "PIKOY": "PIKOY 2000",
+                "KUYPE": "KUYPE AT OR ABOVE 1240 RNW 18 TRK 176 UNTIL 756",
+                "OLEGE": "OVERFLY OLEGE AT OR ABOVE 3000 HOLD AT OLEGE RIGHT TURN INBOUNDCOURSE 356 LEGDIST 5 FAF PIKOY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ROYOR",
+                    "fixes": {
+                        "ROYOR": "ROYOR"
+                    }
+                },
+                {
+                    "name": "SENYO",
+                    "fixes": {
+                        "SENYO": "SENYO"
+                    }
+                },
+                {
+                    "name": "TUCUN",
+                    "fixes": {
+                        "TUCUN": "TUCUN RIGHT TURN INBOUNDCOURSE 176 ALT 3000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "OLEGE": "OLEGE AT OR ABOVE 3000",
+                "NACIR": "NACIR 2000 RNW 36 TRK 356 UNTIL 730",
+                "TUCUN": "OVERFLY TUCUN AT OR ABOVE 3000 HOLD AT TUCUN RIGHT TURN INBOUNDCOURSE 176 LEGDIST 5 FAF NACIR MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "CEVGA",
+                    "fixes": {
+                        "CEVGA": "CEVGA"
+                    }
+                },
+                {
+                    "name": "LINIY",
+                    "fixes": {
+                        "LINIY": "LINIY"
+                    }
+                },
+                {
+                    "name": "OLEGE",
+                    "fixes": {
+                        "OLEGE": "OLEGE RIGHT TURN INBOUNDCOURSE 356 ALT 3000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

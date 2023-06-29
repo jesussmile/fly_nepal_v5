@@ -1,0 +1,183 @@
+{
+    "fixes": [
+        {
+            "name": "ETRIK",
+            "lat": 37.23129721666667,
+            "lon": 77.38523056666666
+        },
+        {
+            "name": "FASOS",
+            "lat": 37.0528,
+            "lon": 77.65859721666666
+        },
+        {
+            "name": "HCM",
+            "lat": 37.44866111666666,
+            "lon": 76.71135278333334
+        },
+        {
+            "name": "HITAN",
+            "lat": 37.24956666666667,
+            "lon": 77.43023888333333
+        },
+        {
+            "name": "HPW",
+            "lat": 37.32886943333333,
+            "lon": 77.11594443333334
+        },
+        {
+            "name": "JOTIB",
+            "lat": 37.15726943333333,
+            "lon": 77.53756943333333
+        },
+        {
+            "name": "LVL",
+            "lat": 36.81803611666667,
+            "lon": 77.90296943333334
+        },
+        {
+            "name": "MATOX",
+            "lat": 37.27798333333333,
+            "lon": 77.51279166666667
+        },
+        {
+            "name": "MUVIE",
+            "lat": 37.205216666666665,
+            "lon": 77.48186111666666
+        },
+        {
+            "name": "NIYIP",
+            "lat": 37.15849166666667,
+            "lon": 77.53615278333334
+        },
+        {
+            "name": "ONIKE",
+            "lat": 37.32316111666667,
+            "lon": 77.34438056666667
+        },
+        {
+            "name": "RAGCO",
+            "lat": 37.300275,
+            "lon": 77.19511111666667
+        },
+        {
+            "name": "RALOC",
+            "lat": 37.12685833333333,
+            "lon": 77.57285
+        },
+        {
+            "name": "RIC",
+            "lat": 37.502347216666664,
+            "lon": 77.320275
+        },
+        {
+            "name": "YETUB",
+            "lat": 37.20251388333333,
+            "lon": 77.46421666666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC05",
+            "fixes": {
+                "FASOS": "FASOS AT OR ABOVE 2000",
+                "RALOC": "RALOC 1600",
+                "JOTIB": "JOTIB AT OR ABOVE 800 RNW 05 TRK 051 UNTIL 600 HDG 355 INTERCEPT RADIAL 043 TO",
+                "MATOX": "MATOX MATOX AT OR ABOVE 2000 HOLD AT MATOX RIGHT TURN INBOUNDCOURSE 043 LEGTIME 1 FAF RALOC MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "RIC",
+                    "fixes": {
+                        "RIC": "RIC",
+                        "FASOS": "FASOS AT OR ABOVE 2000 HOLD AT FASOS RIGHT TURN INBOUNDCOURSE 051 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "FASOS": "FASOS AT OR ABOVE 2000",
+                "RALOC": "RALOC 1600",
+                "NIYIP": "NIYIP AT OR ABOVE 760 RNW 05 TRK 051 UNTIL 497",
+                "ONIKE": "OVERFLY ONIKE AT OR ABOVE 2000 HOLD AT ONIKE LEFT TURN INBOUNDCOURSE 231 LEGDIST 4 FAF RALOC MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "LVL",
+                    "fixes": {
+                        "LVL": "LVL"
+                    }
+                },
+                {
+                    "name": "RIC",
+                    "fixes": {
+                        "RIC": "RIC",
+                        "FASOS": "OVERFLY FASOS AT OR ABOVE 2000 HOLD AT FASOS RIGHT TURN INBOUNDCOURSE 051 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "ONIKE": "ONIKE AT OR ABOVE 2000",
+                "HITAN": "HITAN 1800",
+                "MUVIE": "MUVIE AT OR ABOVE 640 RNW 23 TRK 231 UNTIL 441",
+                "FASOS": "OVERFLY FASOS AT OR ABOVE 2000 HOLD AT FASOS RIGHT TURN INBOUNDCOURSE 051 LEGDIST 4 FAF HITAN MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "HPW",
+                    "fixes": {
+                        "HPW": "HPW"
+                    }
+                },
+                {
+                    "name": "LVL",
+                    "fixes": {
+                        "LVL": "LVL",
+                        "ONIKE": "OVERFLY ONIKE AT OR ABOVE 2000 HOLD AT ONIKE LEFT TURN INBOUNDCOURSE 231 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RIC",
+                    "fixes": {
+                        "RIC": "RIC"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR23",
+            "fixes": {
+                "RAGCO": "RAGCO AT OR ABOVE 3000",
+                "ETRIK": "ETRIK 2200",
+                "YETUB": "YETUB AT OR ABOVE 740 RNW 23 TRK 252 UNTIL 600 HDG 214 INTERCEPT RADIAL 244 TO",
+                "FASOS": "FASOS FASOS AT OR ABOVE 2000 HOLD AT FASOS LEFT TURN INBOUNDCOURSE 244 LEGTIME 1 FAF ETRIK MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "HCM",
+                    "fixes": {
+                        "HCM": "HCM",
+                        "HPW": "HPW AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HPW",
+                    "fixes": {
+                        "HPW": "HPW LEFT TURN INBOUNDCOURSE 252 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

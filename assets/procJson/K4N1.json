@@ -1,0 +1,89 @@
+{
+    "fixes": [
+        {
+            "name": "HESIN",
+            "lat": 41.09718888333333,
+            "lon": 74.39204721666667
+        },
+        {
+            "name": "IMAME",
+            "lat": 41.193616666666664,
+            "lon": 74.25110556666667
+        },
+        {
+            "name": "VOLLU",
+            "lat": 41.19165,
+            "lon": 73.98461111666667
+        },
+        {
+            "name": "WAMUV",
+            "lat": 41.26126111666667,
+            "lon": 74.15183056666666
+        },
+        {
+            "name": "WAROG",
+            "lat": 41.065888883333336,
+            "lon": 74.43764443333333
+        },
+        {
+            "name": "WEKAS",
+            "lat": 41.002686116666666,
+            "lon": 74.52951666666667
+        },
+        {
+            "name": "YANUD",
+            "lat": 41.166263883333336,
+            "lon": 74.29115
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "WEKAS": "WEKAS AT OR ABOVE 3000",
+                "WAROG": "WAROG 2600",
+                "HESIN": "HESIN AT OR ABOVE 1660 RNW 06 TRK 061 UNTIL 1190",
+                "WAMUV": "OVERFLY WAMUV AT OR ABOVE 3000 HOLD AT WAMUV RIGHT TURN INBOUNDCOURSE 241 LEGDIST 4 FAF WAROG MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "WAMUV",
+                    "fixes": {
+                        "WAMUV": "WAMUV",
+                        "WEKAS": "OVERFLY WEKAS AT OR ABOVE 3000 HOLD AT WEKAS RIGHT TURN INBOUNDCOURSE 061 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "WAMUV": "WAMUV AT OR ABOVE 3000",
+                "IMAME": "IMAME 2600",
+                "YANUD": "YANUD AT OR ABOVE 1820 RNW 24 TRK 241 UNTIL 1160",
+                "WEKAS": "OVERFLY WEKAS AT OR ABOVE 3000 HOLD AT WEKAS RIGHT TURN INBOUNDCOURSE 061 LEGDIST 4 FAF IMAME MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "VOLLU",
+                    "fixes": {
+                        "VOLLU": "VOLLU"
+                    }
+                },
+                {
+                    "name": "WEKAS",
+                    "fixes": {
+                        "WEKAS": "WEKAS",
+                        "WAMUV": "OVERFLY WAMUV AT OR ABOVE 3000 HOLD AT WAMUV RIGHT TURN INBOUNDCOURSE 241 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

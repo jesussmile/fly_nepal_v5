@@ -1,0 +1,174 @@
+{
+    "fixes": [
+        {
+            "name": "BR07",
+            "lat": 4.800761116666667,
+            "lon": 114.83765833333334
+        },
+        {
+            "name": "BRNB",
+            "lat": 4.899166666666667,
+            "lon": 114.90138888333334
+        },
+        {
+            "name": "BRU",
+            "lat": 4.874722216666667,
+            "lon": 114.88555556666667
+        },
+        {
+            "name": "CD03",
+            "lat": 4.80435,
+            "lon": 114.84003056666667
+        },
+        {
+            "name": "CD21",
+            "lat": 5.073411116666667,
+            "lon": 115.00940556666667
+        },
+        {
+            "name": "CF03",
+            "lat": 4.803130566666667,
+            "lon": 114.841975
+        },
+        {
+            "name": "CF21",
+            "lat": 5.074080566666667,
+            "lon": 115.00846111666667
+        },
+        {
+            "name": "FD03",
+            "lat": 4.842275,
+            "lon": 114.86458056666666
+        },
+        {
+            "name": "FD21",
+            "lat": 5.0450083333333335,
+            "lon": 114.9917
+        },
+        {
+            "name": "FF03",
+            "lat": 4.847358333333333,
+            "lon": 114.869
+        },
+        {
+            "name": "FF21",
+            "lat": 5.045191666666667,
+            "lon": 114.99058611666666
+        },
+        {
+            "name": "MA03",
+            "lat": 4.916719433333333,
+            "lon": 114.91277778333334
+        },
+        {
+            "name": "MA21",
+            "lat": 4.9669,
+            "lon": 114.94301666666667
+        },
+        {
+            "name": "MN03",
+            "lat": 4.922963883333333,
+            "lon": 114.91676666666666
+        },
+        {
+            "name": "VOR10",
+            "lat": 5.016605566666667,
+            "lon": 114.97399443333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD03",
+            "fixes": {
+                "CD03": "CD03 AT OR ABOVE 2000",
+                "FD03": "FD03 2000",
+                "BRU": "BRU AT OR ABOVE 1260 BRU FAF FD03 MAP MA03",
+                "MA03": "MA03 365 RNW 03 TRK 032 UNTIL 3500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BRU",
+                    "fixes": {
+                        "BRU": "BRU AT OR ABOVE 3500",
+                        "CD03": "CD03 AT OR ABOVE 2000 TRK 257 UNTIL 4.0 FROM CD03"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD21",
+            "fixes": {
+                "CD21": "CD21 AT OR ABOVE 2000",
+                "FD21": "FD21 2000",
+                "VOR10": "VOR10 AT OR ABOVE 1380",
+                "MA21": "MA21 326 RNW 21 TRK 211 UNTIL 3500 TURN RIGHT DIRECT",
+                "BRU": "BRU FAF FD21 MAP MA21"
+            },
+            "transitions": [
+                {
+                    "name": "BRU",
+                    "fixes": {
+                        "BRU": "BRU AT OR ABOVE 3500",
+                        "CD21": "CD21 AT OR ABOVE 2000 TRK 346 UNTIL 4.0 FROM CD21"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS03",
+            "fixes": {
+                "CF03": "CF03 AT OR ABOVE 2000",
+                "FF03": "FF03 2000 RNW 03 TRK 031 UNTIL 3500 TURN LEFT DIRECT",
+                "BRU": "BRU FAF FF03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "BRU",
+                    "fixes": {
+                        "BRU": "BRU AT OR ABOVE 3500",
+                        "CF03": "CF03 AT OR ABOVE 2000 TRK 257 UNTIL 4.4 FROM CF03"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 2000",
+                "FF21": "FF21 2000 RNW 21 TRK 211 UNTIL 3500 TURN RIGHT DIRECT",
+                "BRU": "BRU FAF FF21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "BRU",
+                    "fixes": {
+                        "BRU": "BRU AT OR ABOVE 3500",
+                        "CF21": "CF21 AT OR ABOVE 2000 TRK 346 UNTIL 4.4 FROM CF21"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB03",
+            "fixes": {
+                "BRNB": "BRNB 820 BRNB FAF BRNB MAP MN03",
+                "MN03": "MN03 243 RNW 03 TRK 032 UNTIL 3500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BR",
+                    "fixes": {
+                        "BRNB": "BRNB AT OR ABOVE 3500",
+                        "BR07": "BR07 AT OR ABOVE 2000 TRK 257 UNTIL 3.5 FROM BR07 TURN LEFT DIRECT BR07 AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

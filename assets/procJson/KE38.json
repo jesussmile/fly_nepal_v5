@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "FST",
+            "lat": 30.952108333333335,
+            "lon": 102.97571111666667
+        },
+        {
+            "name": "JOLKU",
+            "lat": 30.438883333333333,
+            "lon": 103.56996388333333
+        },
+        {
+            "name": "MRF",
+            "lat": 30.298372216666667,
+            "lon": 103.95475556666666
+        },
+        {
+            "name": "ODKAE",
+            "lat": 30.494172216666666,
+            "lon": 103.45095278333334
+        },
+        {
+            "name": "RUWEL",
+            "lat": 30.487913883333334,
+            "lon": 103.63245556666666
+        },
+        {
+            "name": "TIFME",
+            "lat": 30.580338883333333,
+            "lon": 103.58775833333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 05",
+        "RNW 19",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "ODKAE1",
+            "rnw": "18",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 01",
+                    "fixes": {
+                        "RNW 01": "RNW 01 HDG 014 UNTIL 4920 HDG 085 INTERCEPT RADIAL 055 TO",
+                        "ODKAE": "ODKAE OVERFLY ODKAE HOLD AT ODKAE LEFT TURN INBOUNDCOURSE 235 ALT 8600 LEGTIME 1"
+                    }
+                },
+                {
+                    "rwy": "RNW 05",
+                    "fixes": {
+                        "RNW 05": "RNW 05 HDG 053 UNTIL 4920 HDG 048 INTERCEPT RADIAL 055 TO",
+                        "ODKAE": "ODKAE OVERFLY ODKAE HOLD AT ODKAE LEFT TURN INBOUNDCOURSE 235 ALT 8600 LEGTIME 1"
+                    }
+                },
+                {
+                    "rwy": "RNW 19",
+                    "fixes": {
+                        "RNW 19": "RNW 19 HDG 194 UNTIL 4920 TURN LEFT HDG 027 INTERCEPT RADIAL 055 TO",
+                        "ODKAE": "ODKAE OVERFLY ODKAE HOLD AT ODKAE LEFT TURN INBOUNDCOURSE 235 ALT 8600 LEGTIME 1"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "TIFME": "TIFME AT OR ABOVE 8000",
+                "RUWEL": "RUWEL 6500 RNW 19 TRK 194 UNTIL 5200 TURN LEFT DIRECT",
+                "ODKAE": "OVERFLY ODKAE AT OR ABOVE 9000 SPEED 165 HOLD AT ODKAE LEFT TURN INBOUNDCOURSE 233 ALT 9000 LEGDIST 7 FAF RUWEL MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "FST",
+                    "fixes": {
+                        "FST": "FST",
+                        "TIFME": "OVERFLY TIFME AT OR ABOVE 10000 HOLD AT TIFME RIGHT TURN INBOUNDCOURSE 194 ALT 8000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "MRF",
+                    "fixes": {
+                        "MRF": "MRF",
+                        "TIFME": "OVERFLY TIFME AT OR ABOVE 10000 HOLD AT TIFME RIGHT TURN INBOUNDCOURSE 194 ALT 8000 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "ODKAE": "ODKAE AT OR ABOVE 8000 OVERFLY ODKAE AT OR ABOVE 9000 SPEED 165 HOLD AT ODKAE LEFT TURN INBOUNDCOURSE 233 LEGDIST 7 FAF JOLKU MAP RNW 23",
+                "JOLKU": "JOLKU 6500 RNW 23 TRK 233 UNTIL 5400 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FST",
+                    "fixes": {
+                        "FST": "FST",
+                        "ODKAE": "OVERFLY ODKAE AT OR ABOVE 10000 HOLD AT ODKAE LEFT TURN INBOUNDCOURSE 233 ALT 8000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "MRF",
+                    "fixes": {
+                        "MRF": "MRF",
+                        "ODKAE": "OVERFLY ODKAE AT OR ABOVE 10000 HOLD AT ODKAE LEFT TURN INBOUNDCOURSE 233 ALT 8000 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

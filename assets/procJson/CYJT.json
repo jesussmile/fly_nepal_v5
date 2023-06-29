@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "EBDAX",
+            "lat": 48.540897216666664,
+            "lon": 58.17437221666667
+        },
+        {
+            "name": "EMBOL",
+            "lat": 48.48483888333333,
+            "lon": 58.811336116666666
+        },
+        {
+            "name": "ITPUS",
+            "lat": 48.406111116666665,
+            "lon": 58.77055
+        },
+        {
+            "name": "MEGVU",
+            "lat": 48.61983611666667,
+            "lon": 58.21433888333333
+        },
+        {
+            "name": "OBNAS",
+            "lat": 48.51733888333333,
+            "lon": 58.66914443333334
+        },
+        {
+            "name": "PEKLI",
+            "lat": 48.521925,
+            "lon": 58.649005566666666
+        },
+        {
+            "name": "SATIV",
+            "lat": 48.69875556666667,
+            "lon": 58.25443333333333
+        },
+        {
+            "name": "UKNUL",
+            "lat": 48.563552783333336,
+            "lon": 58.85225
+        },
+        {
+            "name": "VEVRI",
+            "lat": 48.583586116666666,
+            "lon": 58.37631666666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS27",
+            "fixes": {
+                "MEGVU": "MEGVU AT OR ABOVE 3000",
+                "VEVRI": "VEVRI 2230 RNW 27",
+                "PEKLI": "OVERFLY PEKLI 3000 HOLD AT PEKLI LEFT TURN INBOUNDCOURSE 271 LEGTIME 1 FAF VEVRI MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "EBDAX",
+                    "fixes": {
+                        "EBDAX": "EBDAX SPEED 210"
+                    }
+                },
+                {
+                    "name": "SATIV",
+                    "fixes": {
+                        "SATIV": "SATIV SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "EMBOL": "EMBOL AT OR ABOVE 1900",
+                "OBNAS": "OBNAS 1400 RNW 09 HDG 091 UNTIL 700 TURN RIGHT DIRECT",
+                "ITPUS": "OVERFLY ITPUS 3100 HOLD AT ITPUS RIGHT TURN INBOUNDCOURSE 000 SPEED 200 LEGTIME 1 FAF OBNAS MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "ITPUS",
+                    "fixes": {
+                        "ITPUS": "ITPUS SPEED 210"
+                    }
+                },
+                {
+                    "name": "UKNUL",
+                    "fixes": {
+                        "UKNUL": "UKNUL SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "MEGVU": "MEGVU AT OR ABOVE 2900",
+                "VEVRI": "VEVRI 2200 RNW 27",
+                "PEKLI": "OVERFLY PEKLI 3000 HOLD AT PEKLI LEFT TURN INBOUNDCOURSE 271 LEGTIME 1 FAF VEVRI MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "EBDAX",
+                    "fixes": {
+                        "EBDAX": "EBDAX SPEED 210"
+                    }
+                },
+                {
+                    "name": "SATIV",
+                    "fixes": {
+                        "SATIV": "SATIV SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

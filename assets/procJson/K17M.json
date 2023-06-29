@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "OKEYI",
+            "lat": 31.662258333333334,
+            "lon": 89.79783888333333
+        },
+        {
+            "name": "PUNOE",
+            "lat": 31.779102783333332,
+            "lon": 89.79945833333333
+        },
+        {
+            "name": "WIWFI",
+            "lat": 31.900444433333334,
+            "lon": 89.80114443333333
+        },
+        {
+            "name": "YECUB",
+            "lat": 32.06293888333333,
+            "lon": 89.80341111666667
+        },
+        {
+            "name": "ZETOS",
+            "lat": 31.946069433333335,
+            "lon": 89.80178056666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "YECUB": "YECUB AT OR ABOVE 3500 OVERFLY YECUB AT OR ABOVE 3500 HOLD AT YECUB RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF ZETOS MAP RNW 18",
+                "ZETOS": "ZETOS 2100",
+                "WIWFI": "WIWFI AT OR ABOVE 1220 RNW 18 TRK 180 UNTIL 955 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "YECUB",
+                    "fixes": {
+                        "YECUB": "YECUB RIGHT TURN INBOUNDCOURSE 180 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "OKEYI": "OKEYI AT OR ABOVE 3500",
+                "PUNOE": "PUNOE 2100 RNW 36 TRK 000 UNTIL 955",
+                "YECUB": "OVERFLY YECUB AT OR ABOVE 3500 HOLD AT YECUB RIGHT TURN INBOUNDCOURSE 180 LEGDIST 4 FAF PUNOE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "OKEYI",
+                    "fixes": {
+                        "OKEYI": "OKEYI RIGHT TURN INBOUNDCOURSE 000 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

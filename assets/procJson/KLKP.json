@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "CELVU",
+            "lat": 44.22148333333333,
+            "lon": 73.80554721666667
+        },
+        {
+            "name": "FAPIM",
+            "lat": 44.245333333333335,
+            "lon": 73.89213611666666
+        },
+        {
+            "name": "HEDUX",
+            "lat": 44.17473056666667,
+            "lon": 73.63444721666667
+        },
+        {
+            "name": "IRABE",
+            "lat": 44.318613883333335,
+            "lon": 74.1552
+        },
+        {
+            "name": "OPDIE",
+            "lat": 44.27945833333333,
+            "lon": 74.00400278333333
+        },
+        {
+            "name": "PUGRE",
+            "lat": 44.35540833333334,
+            "lon": 74.29449443333333
+        },
+        {
+            "name": "UHVEF",
+            "lat": 44.26356388333333,
+            "lon": 73.95853888333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "PUGRE": "PUGRE AT OR ABOVE 5000 OVERFLY PUGRE AT OR ABOVE 5000 HOLD AT PUGRE RIGHT TURN INBOUNDCOURSE 125 LEGDIST 5 FAF IRABE MAP OPDIE",
+                "IRABE": "IRABE 5000",
+                "OPDIE": "OVERFLY OPDIE 2420 RNW 14 TRK 125 UNTIL 2420 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PUGRE",
+                    "fixes": {
+                        "PUGRE": "PUGRE RIGHT TURN INBOUNDCOURSE 125 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA14",
+            "fixes": {
+                "HEDUX": "HEDUX AT OR ABOVE 6900",
+                "CELVU": "CELVU 6100",
+                "FAPIM": "FAPIM AT OR ABOVE 4500",
+                "UHVEF": "OVERFLY UHVEF 3160 RNW 14 TRK 306 UNTIL 3160",
+                "PUGRE": "OVERFLY PUGRE AT OR ABOVE 5000 HOLD AT PUGRE RIGHT TURN INBOUNDCOURSE 125 LEGDIST 5 FAF CELVU MAP UHVEF"
+            },
+            "transitions": [
+                {
+                    "name": "HEDUX",
+                    "fixes": {
+                        "HEDUX": "HEDUX RIGHT TURN INBOUNDCOURSE 306 ALT 6900 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA32",
+            "fixes": {
+                "HEDUX": "HEDUX AT OR ABOVE 6900",
+                "CELVU": "CELVU 6100",
+                "FAPIM": "FAPIM AT OR ABOVE 4500",
+                "UHVEF": "OVERFLY UHVEF 3160 RNW 32 TRK 306 UNTIL 3160",
+                "PUGRE": "OVERFLY PUGRE AT OR ABOVE 5000 HOLD AT PUGRE RIGHT TURN INBOUNDCOURSE 125 LEGDIST 5 FAF CELVU MAP UHVEF"
+            },
+            "transitions": [
+                {
+                    "name": "HEDUX",
+                    "fixes": {
+                        "HEDUX": "HEDUX RIGHT TURN INBOUNDCOURSE 306 ALT 6900 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,247 @@
+{
+    "fixes": [
+        {
+            "name": "ALANA",
+            "lat": 21.075327783333332,
+            "lon": 157.93908611666666
+        },
+        {
+            "name": "CKH",
+            "lat": 21.265111116666667,
+            "lon": 157.70298056666667
+        },
+        {
+            "name": "COPTA",
+            "lat": 21.394486116666666,
+            "lon": 158.04200278333334
+        },
+        {
+            "name": "FFLRS",
+            "lat": 21.292055566666665,
+            "lon": 158.04695556666667
+        },
+        {
+            "name": "GECKO",
+            "lat": 21.19225,
+            "lon": 158.30978056666666
+        },
+        {
+            "name": "HNL",
+            "lat": 21.308322216666667,
+            "lon": 157.93041111666668
+        },
+        {
+            "name": "IWOHI",
+            "lat": 21.365894433333334,
+            "lon": 157.85952221666668
+        },
+        {
+            "name": "LNY",
+            "lat": 20.764499999999998,
+            "lon": 156.96888888333334
+        },
+        {
+            "name": "MA319",
+            "lat": 21.474861116666666,
+            "lon": 158.033175
+        },
+        {
+            "name": "MARKK",
+            "lat": 21.478302783333334,
+            "lon": 158.03799443333332
+        },
+        {
+            "name": "MKK",
+            "lat": 21.138111116666668,
+            "lon": 157.16741666666667
+        },
+        {
+            "name": "OORRR",
+            "lat": 21.285313883333334,
+            "lon": 157.88937221666666
+        },
+        {
+            "name": "PALAY",
+            "lat": 21.105761116666667,
+            "lon": 157.57034443333333
+        },
+        {
+            "name": "SHIGI",
+            "lat": 21.304197216666665,
+            "lon": 158.17150278333332
+        },
+        {
+            "name": "TACHI",
+            "lat": 21.409577783333333,
+            "lon": 157.99319721666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "GECKO1",
+            "rnw": "06",
+            "fixes": {
+                "HNL": "HNL AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "GECKO",
+                    "fixes": [
+                        "GECKO"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "KOKOH1",
+            "rnw": "06",
+            "fixes": {
+                "IWOHI": "IWOHI AT OR ABOVE 4500",
+                "CKH": "CKH AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "LNY",
+                    "fixes": [
+                        "PALAY",
+                        "LNY"
+                    ]
+                },
+                {
+                    "name": "MKK",
+                    "fixes": [
+                        "PALAY",
+                        "MKK"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVC06",
+            "fixes": {
+                "FFLRS": "FFLRS AT OR ABOVE 4500",
+                "COPTA": "COPTA 3000",
+                "MARKK": "OVERFLY MARKK 2280 RNW 06 TURN RIGHT DIRECT",
+                "HNL": "HNL",
+                "ALANA": "OVERFLY ALANA AT OR ABOVE 6000 HOLD AT ALANA RIGHT TURN INBOUNDCOURSE 351 LEGDIST 4 FAF COPTA MAP MARKK"
+            },
+            "transitions": [
+                {
+                    "name": "ALANA",
+                    "fixes": {
+                        "ALANA": "ALANA"
+                    }
+                },
+                {
+                    "name": "OORRR",
+                    "fixes": {
+                        "OORRR": "OORRR"
+                    }
+                },
+                {
+                    "name": "SHIGI",
+                    "fixes": {
+                        "SHIGI": "SHIGI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVC24",
+            "fixes": {
+                "FFLRS": "FFLRS AT OR ABOVE 4500",
+                "COPTA": "COPTA 3000",
+                "MARKK": "OVERFLY MARKK 2280 RNW 24 TURN RIGHT DIRECT",
+                "HNL": "HNL",
+                "ALANA": "OVERFLY ALANA AT OR ABOVE 6000 HOLD AT ALANA RIGHT TURN INBOUNDCOURSE 351 LEGDIST 4 FAF COPTA MAP MARKK"
+            },
+            "transitions": [
+                {
+                    "name": "ALANA",
+                    "fixes": {
+                        "ALANA": "ALANA"
+                    }
+                },
+                {
+                    "name": "OORRR",
+                    "fixes": {
+                        "OORRR": "OORRR"
+                    }
+                },
+                {
+                    "name": "SHIGI",
+                    "fixes": {
+                        "SHIGI": "SHIGI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB06",
+            "fixes": {
+                "HNL": "HNL AT OR ABOVE 5000 HNL HOLD AT HNL LEFT TURN INBOUNDCOURSE 351 LEGTIME 1 FAF TACHI MAP MA319",
+                "TACHI": "TACHI 3000 TACHI TACHI 6000",
+                "MA319": "MA319 2280 RNW 06 TRK 319 UNTIL 3000 TURN RIGHT HDG 180 INTERCEPT RADIAL 139 TO"
+            },
+            "transitions": [
+                {
+                    "name": "ALANA",
+                    "fixes": {
+                        "ALANA": "ALANA"
+                    }
+                },
+                {
+                    "name": "CKH",
+                    "fixes": {
+                        "CKH": "CKH"
+                    }
+                },
+                {
+                    "name": "SHIGI",
+                    "fixes": {
+                        "SHIGI": "SHIGI",
+                        "HNL": "HNL AT OR ABOVE 5000 HOLD AT HNL LEFT TURN INBOUNDCOURSE 351 ALT 5000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB24",
+            "fixes": {
+                "HNL": "HNL AT OR ABOVE 5000 HNL HOLD AT HNL LEFT TURN INBOUNDCOURSE 351 LEGTIME 1 FAF TACHI MAP MA319",
+                "TACHI": "TACHI 3000 TACHI TACHI 6000",
+                "MA319": "MA319 2280 RNW 24 TRK 319 UNTIL 3000 TURN RIGHT HDG 180 INTERCEPT RADIAL 139 TO"
+            },
+            "transitions": [
+                {
+                    "name": "ALANA",
+                    "fixes": {
+                        "ALANA": "ALANA"
+                    }
+                },
+                {
+                    "name": "CKH",
+                    "fixes": {
+                        "CKH": "CKH"
+                    }
+                },
+                {
+                    "name": "SHIGI",
+                    "fixes": {
+                        "SHIGI": "SHIGI",
+                        "HNL": "HNL AT OR ABOVE 5000 HOLD AT HNL LEFT TURN INBOUNDCOURSE 351 ALT 5000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

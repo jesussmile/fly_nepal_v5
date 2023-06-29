@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "AKQNB",
+            "lat": 36.98281943333333,
+            "lon": 77.00097221666667
+        },
+        {
+            "name": "FF20",
+            "lat": 37.08590556666667,
+            "lon": 76.97126388333334
+        },
+        {
+            "name": "HPW",
+            "lat": 37.32886943333333,
+            "lon": 77.11594443333334
+        },
+        {
+            "name": "MILUE",
+            "lat": 37.071533333333335,
+            "lon": 76.96918056666667
+        },
+        {
+            "name": "NOXEE",
+            "lat": 37.167325,
+            "lon": 76.93279166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 37.039656566666665,
+            "lon": 76.98453293333333
+        },
+        {
+            "name": "PI002",
+            "lat": 37.07760976666667,
+            "lon": 76.90835433333334
+        },
+        {
+            "name": "PI003",
+            "lat": 37.14520518333333,
+            "lon": 76.95393743333334
+        },
+        {
+            "name": "SWING",
+            "lat": 37.080122216666666,
+            "lon": 76.81754443333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB20",
+            "fixes": {
+                "FF20": "FF20 2000 RNW 20",
+                "AKQNB": "AKQNB AT OR ABOVE 520 TRK 204 UNTIL 1500 TURN LEFT DIRECT AKQNB AT OR ABOVE 2000 HOLD AT AKQNB RIGHT TURN INBOUNDCOURSE 024 LEGTIME 1 FAF FF20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "HPW",
+                    "fixes": {
+                        "HPW": "HPW",
+                        "AKQNB": "AKQNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SWING",
+                    "fixes": {
+                        "SWING": "SWING",
+                        "AKQNB": "AKQNB AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "NOXEE": "NOXEE AT OR ABOVE 2600 OVERFLY NOXEE AT OR ABOVE 2600 HOLD AT NOXEE RIGHT TURN INBOUNDCOURSE 208 LEGDIST 4 FAF MILUE MAP RNW 20",
+                "MILUE": "MILUE 1700 RNW 20 TRK 208 UNTIL 511 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NOXEE",
+                    "fixes": {
+                        "NOXEE": "NOXEE RIGHT TURN INBOUNDCOURSE 208 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

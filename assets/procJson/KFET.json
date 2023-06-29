@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "AYUVI",
+            "lat": 41.616,
+            "lon": 96.70265833333333
+        },
+        {
+            "name": "BOCAK",
+            "lat": 41.484225,
+            "lon": 96.5595
+        },
+        {
+            "name": "CALLN",
+            "lat": 41.51456666666667,
+            "lon": 96.56815833333333
+        },
+        {
+            "name": "GRAIN",
+            "lat": 41.52709443333333,
+            "lon": 96.60598611666667
+        },
+        {
+            "name": "HUSIV",
+            "lat": 41.2854,
+            "lon": 96.34491111666667
+        },
+        {
+            "name": "IBHEN",
+            "lat": 41.63003056666667,
+            "lon": 96.68230833333334
+        },
+        {
+            "name": "KENAR",
+            "lat": 41.458961116666664,
+            "lon": 96.32938888333334
+        },
+        {
+            "name": "OLU",
+            "lat": 41.45003056666667,
+            "lon": 97.34081943333334
+        },
+        {
+            "name": "SCB",
+            "lat": 41.60475556666667,
+            "lon": 96.62883888333333
+        },
+        {
+            "name": "ZEMES",
+            "lat": 41.37452221666667,
+            "lon": 96.44088888333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD14",
+            "fixes": {
+                "SCB": "SCB AT OR ABOVE 3000 SCB HOLD AT SCB RIGHT TURN INBOUNDCOURSE 147 LEGTIME 1 FAF CALLN MAP RNW 14",
+                "CALLN": "CALLN 2500 RNW 14 TRK 147 UNTIL 3000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KENAR",
+                    "fixes": {
+                        "KENAR": "KENAR",
+                        "SCB": "SCB AT OR ABOVE 3000 HOLD AT SCB RIGHT TURN INBOUNDCOURSE 147 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "OLU",
+                    "fixes": {
+                        "OLU": "OLU",
+                        "IBHEN": "IBHEN AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "AYUVI": "AYUVI AT OR ABOVE 3300",
+                "GRAIN": "GRAIN 3000",
+                "BOCAK": "BOCAK AT OR ABOVE 1940 RNW 14 TRK 138 UNTIL 1453",
+                "HUSIV": "OVERFLY HUSIV AT OR ABOVE 3800 HOLD AT HUSIV RIGHT TURN INBOUNDCOURSE 318 LEGDIST 4 FAF GRAIN MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "AYUVI",
+                    "fixes": {
+                        "AYUVI": "AYUVI RIGHT TURN INBOUNDCOURSE 138 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "HUSIV": "HUSIV AT OR ABOVE 3800",
+                "ZEMES": "ZEMES 3000 RNW 32 TRK 318 UNTIL 1455",
+                "AYUVI": "OVERFLY AYUVI AT OR ABOVE 3300 HOLD AT AYUVI RIGHT TURN INBOUNDCOURSE 138 LEGDIST 4 FAF ZEMES MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "HUSIV",
+                    "fixes": {
+                        "HUSIV": "HUSIV RIGHT TURN INBOUNDCOURSE 318 ALT 3800 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

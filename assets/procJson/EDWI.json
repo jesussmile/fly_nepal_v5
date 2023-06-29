@@ -1,0 +1,162 @@
+{
+    "fixes": [
+        {
+            "name": "D317D",
+            "lat": 53.33085833333333,
+            "lon": 7.996072216666667
+        },
+        {
+            "name": "DOTOB",
+            "lat": 53.28573888333333,
+            "lon": 8.064905566666667
+        },
+        {
+            "name": "NOSNO",
+            "lat": 53.59980556666667,
+            "lon": 8.118625
+        },
+        {
+            "name": "WI100",
+            "lat": 53.357869433333335,
+            "lon": 7.954775
+        },
+        {
+            "name": "WI105",
+            "lat": 53.583388883333335,
+            "lon": 8.107441666666666
+        },
+        {
+            "name": "WI106",
+            "lat": 53.581066666666665,
+            "lon": 8.159669433333333
+        },
+        {
+            "name": "WI107",
+            "lat": 53.318438883333336,
+            "lon": 8.263438883333333
+        },
+        {
+            "name": "WI108",
+            "lat": 53.30008888333333,
+            "lon": 8.242430566666666
+        },
+        {
+            "name": "WI200",
+            "lat": 53.627277783333334,
+            "lon": 8.228019433333333
+        },
+        {
+            "name": "WI205",
+            "lat": 53.64607778333333,
+            "lon": 8.150188883333334
+        },
+        {
+            "name": "WI210",
+            "lat": 53.47225556666667,
+            "lon": 8.032172216666666
+        },
+        {
+            "name": "WI400",
+            "lat": 53.583388883333335,
+            "lon": 8.107441666666666
+        },
+        {
+            "name": "WI401",
+            "lat": 53.58275,
+            "lon": 8.167361116666667
+        },
+        {
+            "name": "WI402",
+            "lat": 53.490147216666664,
+            "lon": 8.223397216666667
+        },
+        {
+            "name": "WI500",
+            "lat": 53.436325,
+            "lon": 8.007688883333334
+        },
+        {
+            "name": "WI501",
+            "lat": 53.33573333333333,
+            "lon": 7.987788883333334
+        },
+        {
+            "name": "XETEL",
+            "lat": 53.40418888333333,
+            "lon": 7.9859888833333335
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 16",
+        "RNW 20",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "DOTO1N",
+            "rnw": "02",
+            "fixes": {
+                "WI400": "OVERFLY WI400 TURN RIGHT DIRECT",
+                "WI401": "WI401",
+                "WI402": "WI402",
+                "DOTOB": "DOTOB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DOTO1S",
+            "rnw": "20",
+            "fixes": {
+                "WI500": "WI500",
+                "WI501": "WI501",
+                "DOTOB": "DOTOB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "WI100": "WI100 AT OR ABOVE 2000",
+                "XETEL": "XETEL 2000 RNW 02",
+                "WI105": "OVERFLY WI105 TURN RIGHT DIRECT",
+                "WI106": "WI106",
+                "WI107": "OVERFLY WI107",
+                "WI108": "WI108",
+                "DOTOB": "DOTOB 4000 FAF XETEL MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "DOTOB",
+                    "fixes": {
+                        "DOTOB": "DOTOB AT OR ABOVE 4000",
+                        "D317D": "D317D AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "WI205": "WI205 AT OR ABOVE 2000",
+                "NOSNO": "NOSNO 2000 RNW 20",
+                "WI210": "WI210",
+                "DOTOB": "DOTOB 4000 FAF NOSNO MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "DOTOB",
+                    "fixes": {
+                        "DOTOB": "DOTOB AT OR ABOVE 4000",
+                        "WI200": "WI200 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

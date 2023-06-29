@@ -1,0 +1,180 @@
+{
+    "fixes": [
+        {
+            "name": "COSBY",
+            "lat": 41.502355566666665,
+            "lon": 75.57480278333334
+        },
+        {
+            "name": "HAZNN",
+            "lat": 41.201511116666666,
+            "lon": 75.83959721666666
+        },
+        {
+            "name": "HEAPP",
+            "lat": 41.09987778333333,
+            "lon": 75.93856388333333
+        },
+        {
+            "name": "JIDPU",
+            "lat": 41.5143,
+            "lon": 75.57291111666666
+        },
+        {
+            "name": "JISAG",
+            "lat": 41.20404443333334,
+            "lon": 75.84430833333333
+        },
+        {
+            "name": "JODIE",
+            "lat": 41.47505278333333,
+            "lon": 75.60654443333334
+        },
+        {
+            "name": "JULUT",
+            "lat": 41.45538333333333,
+            "lon": 75.61766388333334
+        },
+        {
+            "name": "KONAA",
+            "lat": 41.43137778333333,
+            "lon": 75.64391666666667
+        },
+        {
+            "name": "LOPEZ",
+            "lat": 41.443244433333334,
+            "lon": 75.9617
+        },
+        {
+            "name": "LVZ",
+            "lat": 41.2728,
+            "lon": 75.68946666666666
+        },
+        {
+            "name": "PISTE",
+            "lat": 41.28378611666667,
+            "lon": 75.76975
+        },
+        {
+            "name": "ROXXE",
+            "lat": 41.118063883333335,
+            "lon": 75.91022778333334
+        },
+        {
+            "name": "WEXIN",
+            "lat": 41.42578056666667,
+            "lon": 75.64466111666667
+        },
+        {
+            "name": "YEGXE",
+            "lat": 41.248691666666666,
+            "lon": 75.79956943333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 10",
+        "RNW 22",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "AVP8",
+            "rnw": "35",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 04",
+                    "fixes": {
+                        "RNW 04": "RNW 04 HDG 044 UNTIL 5000 HDG 044 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 22",
+                    "fixes": {
+                        "RNW 22": "RNW 22 HDG 224 UNTIL 5000 HDG 224 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 28",
+                    "fixes": {
+                        "RNW 28": "RNW 28 HDG 283 UNTIL 5000 HDG 283 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS04",
+            "fixes": {
+                "HEAPP": "HEAPP AT OR ABOVE 4000",
+                "JISAG": "JISAG 3900 RNW 04 TRK 045 UNTIL 3000 TURN RIGHT DIRECT",
+                "LVZ": "LVZ AT OR ABOVE 4000 HOLD AT LVZ RIGHT TURN INBOUNDCOURSE 010 LEGTIME 1 FAF JISAG MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "LVZ",
+                    "fixes": {
+                        "LVZ": "LVZ",
+                        "HEAPP": "HEAPP AT OR ABOVE 4000 HOLD AT HEAPP RIGHT TURN INBOUNDCOURSE 045 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS22",
+            "fixes": {
+                "JULUT": "JULUT AT OR ABOVE 3200",
+                "WEXIN": "WEXIN 2800 RNW 22 TRK 225 UNTIL 1900 TURN RIGHT HDG 330 INTERCEPT RADIAL 320 TO",
+                "LOPEZ": "LOPEZ LOPEZ AT OR ABOVE 4000 HOLD AT LOPEZ RIGHT TURN INBOUNDCOURSE 140 LEGTIME 1 FAF WEXIN MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "LVZ",
+                    "fixes": {
+                        "LVZ": "LVZ",
+                        "COSBY": "COSBY AT OR ABOVE 4000 HOLD AT COSBY RIGHT TURN INBOUNDCOURSE 225 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "ROXXE": "ROXXE AT OR ABOVE 4000",
+                "HAZNN": "HAZNN 3900",
+                "YEGXE": "YEGXE AT OR ABOVE 2820",
+                "PISTE": "PISTE AT OR ABOVE 2020 RNW 04 TRK 044 UNTIL 1162",
+                "JIDPU": "OVERFLY JIDPU AT OR ABOVE 4000 HOLD AT JIDPU RIGHT TURN INBOUNDCOURSE 224 LEGDIST 4 FAF HAZNN MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "ROXXE",
+                    "fixes": {
+                        "ROXXE": "ROXXE RIGHT TURN INBOUNDCOURSE 044 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "JIDPU": "JIDPU AT OR ABOVE 4000",
+                "JODIE": "JODIE AT OR ABOVE 3300",
+                "KONAA": "KONAA 2900 RNW 22 TRK 224 UNTIL 1900 TURN RIGHT DIRECT",
+                "LOPEZ": "OVERFLY LOPEZ AT OR ABOVE 4000 HOLD AT LOPEZ RIGHT TURN INBOUNDCOURSE 140 LEGDIST 4 FAF KONAA MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "JIDPU",
+                    "fixes": {
+                        "JIDPU": "JIDPU RIGHT TURN INBOUNDCOURSE 224 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

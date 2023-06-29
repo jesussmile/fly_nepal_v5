@@ -1,0 +1,244 @@
+{
+    "fixes": [
+        {
+            "name": "APRUV",
+            "lat": 70.99259721666667,
+            "lon": 29.434288883333334
+        },
+        {
+            "name": "ASMEL",
+            "lat": 70.91235833333333,
+            "lon": 29.499258333333334
+        },
+        {
+            "name": "BV",
+            "lat": 70.87346943333333,
+            "lon": 29.05605278333333
+        },
+        {
+            "name": "BV404",
+            "lat": 70.89246943333333,
+            "lon": 29.270827783333335
+        },
+        {
+            "name": "BV405",
+            "lat": 70.84603888333334,
+            "lon": 28.751375
+        },
+        {
+            "name": "BV503",
+            "lat": 70.80654166666666,
+            "lon": 28.323675
+        },
+        {
+            "name": "D046G",
+            "lat": 70.92775278333333,
+            "lon": 29.369797216666665
+        },
+        {
+            "name": "ENUMA",
+            "lat": 70.78365278333334,
+            "lon": 28.081327783333332
+        },
+        {
+            "name": "FF24",
+            "lat": 70.89501943333333,
+            "lon": 29.300852783333333
+        },
+        {
+            "name": "GIVOP",
+            "lat": 70.83209721666667,
+            "lon": 29.563716666666668
+        },
+        {
+            "name": "KUKIX",
+            "lat": 70.72670556666667,
+            "lon": 28.392475
+        },
+        {
+            "name": "MA24",
+            "lat": 70.87781388333333,
+            "lon": 29.105147216666666
+        },
+        {
+            "name": "OLPID",
+            "lat": 70.88635,
+            "lon": 28.254308333333334
+        },
+        {
+            "name": "UMPEP",
+            "lat": 70.82821666666666,
+            "lon": 28.556847216666668
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS06",
+            "fixes": {
+                "BV503": "BV503 AT OR ABOVE 5000",
+                "UMPEP": "UMPEP 4000 RNW 06",
+                "ASMEL": "ASMEL HOLD AT ASMEL RIGHT TURN INBOUNDCOURSE 239 ALT 4000 LEGTIME 1 FAF UMPEP MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ENUMA",
+                    "fixes": {
+                        "ENUMA": "ENUMA AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "KUKIX",
+                    "fixes": {
+                        "KUKIX": "KUKIX AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "OLPID",
+                    "fixes": {
+                        "OLPID": "OLPID AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS24",
+            "fixes": {
+                "ASMEL": "ASMEL AT OR ABOVE 2000",
+                "BV404": "BV404 2000 RNW 24 TRK 329 UNTIL 1500 TURN RIGHT DIRECT",
+                "GIVOP": "GIVOP HOLD AT GIVOP RIGHT TURN INBOUNDCOURSE 329 ALT 4000 LEGTIME 1 FAF BV404 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "APRUV",
+                    "fixes": {
+                        "APRUV": "APRUV AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "GIVOP",
+                    "fixes": {
+                        "GIVOP": "GIVOP AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC24",
+            "fixes": {
+                "ASMEL": "ASMEL AT OR ABOVE 2000",
+                "FF24": "FF24 2000",
+                "MA24": "MA24 542 RNW 24 TRK 239 UNTIL 543 TRK 059 UNTIL 1300 TURN RIGHT DIRECT",
+                "BV": "BV SPEED 130 HOLD AT BV RIGHT TURN INBOUNDCOURSE 239 ALT 3000 LEGTIME 1 FAF FF24 MAP MA24"
+            },
+            "transitions": [
+                {
+                    "name": "APRUV",
+                    "fixes": {
+                        "APRUV": "APRUV"
+                    }
+                },
+                {
+                    "name": "BV1",
+                    "fixes": {
+                        "BV": "BV AT OR ABOVE 3000",
+                        "D046G": "OVERFLY D046G AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "GIVOP",
+                    "fixes": {
+                        "GIVOP": "GIVOP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD24",
+            "fixes": {
+                "FF24": "FF24 2000",
+                "MA24": "MA24 542 RNW 24 TRK 239 UNTIL 543 TRK 059 UNTIL 1300 TURN RIGHT DIRECT",
+                "BV": "BV HOLD AT BV RIGHT TURN INBOUNDCOURSE 239 ALT 3000 LEGTIME 1 FAF FF24 MAP MA24"
+            },
+            "transitions": [
+                {
+                    "name": "APRUV",
+                    "fixes": {
+                        "APRUV": "APRUV",
+                        "ASMEL": "ASMEL AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "BV1",
+                    "fixes": {
+                        "BV": "BV AT OR ABOVE 3000",
+                        "D046G": "OVERFLY D046G AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "GIVOP",
+                    "fixes": {
+                        "GIVOP": "GIVOP",
+                        "ASMEL": "ASMEL AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "BV503": "BV503 AT OR ABOVE 5000",
+                "UMPEP": "UMPEP 4000 RNW 06",
+                "ASMEL": "ASMEL HOLD AT ASMEL RIGHT TURN INBOUNDCOURSE 239 ALT 4000 LEGTIME 1 FAF UMPEP MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ENUMA",
+                    "fixes": {
+                        "ENUMA": "ENUMA AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "KUKIX",
+                    "fixes": {
+                        "KUKIX": "KUKIX AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "OLPID",
+                    "fixes": {
+                        "OLPID": "OLPID AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "ASMEL": "ASMEL AT OR ABOVE 2000",
+                "BV404": "BV404 2000 RNW 24",
+                "BV405": "OVERFLY BV405 TURN LEFT DIRECT",
+                "GIVOP": "GIVOP HOLD AT GIVOP RIGHT TURN INBOUNDCOURSE 329 ALT 4000 LEGTIME 1 FAF BV404 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "APRUV",
+                    "fixes": {
+                        "APRUV": "APRUV AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "GIVOP",
+                    "fixes": {
+                        "GIVOP": "GIVOP AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

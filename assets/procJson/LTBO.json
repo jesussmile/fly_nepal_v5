@@ -1,0 +1,370 @@
+{
+    "fixes": [
+        {
+            "name": "45DME",
+            "lat": 38.677111116666666,
+            "lon": 29.570769433333332
+        },
+        {
+            "name": "D079J",
+            "lat": 38.703555566666665,
+            "lon": 29.686725
+        },
+        {
+            "name": "D255J",
+            "lat": 38.65306666666667,
+            "lon": 29.266172216666668
+        },
+        {
+            "name": "F0851",
+            "lat": 38.681561116666664,
+            "lon": 29.326391666666666
+        },
+        {
+            "name": "F0852",
+            "lat": 38.680588883333336,
+            "lon": 29.262552783333334
+        },
+        {
+            "name": "FF27",
+            "lat": 38.668961116666665,
+            "lon": 29.687355566666668
+        },
+        {
+            "name": "FF271",
+            "lat": 38.673419433333336,
+            "lon": 29.62376666666667
+        },
+        {
+            "name": "KINIK",
+            "lat": 38.73222221666666,
+            "lon": 29.999444433333334
+        },
+        {
+            "name": "MA27",
+            "lat": 38.679313883333336,
+            "lon": 29.538966666666667
+        },
+        {
+            "name": "NESET",
+            "lat": 38.63138888333334,
+            "lon": 29.119722216666666
+        },
+        {
+            "name": "USK",
+            "lat": 38.683694433333336,
+            "lon": 29.475361116666665
+        },
+        {
+            "name": "USKNB",
+            "lat": 38.683694433333336,
+            "lon": 29.475361116666665
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "KINI1A",
+            "rnw": "09",
+            "fixes": {
+                "USK": "USK TRK 079 UNTIL 10000",
+                "KINIK": "KINIK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KINI1B",
+            "rnw": "09",
+            "fixes": {
+                "USK": "USK AT OR ABOVE 5700 TURN RIGHT HDG 109 INTERCEPT RADIAL 079 TO",
+                "KINIK": "KINIK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KINI1C",
+            "rnw": "27",
+            "fixes": {
+                "USK": "OVERFLY USK AT OR ABOVE 5900 TRK 079 UNTIL 10000",
+                "KINIK": "KINIK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NESE1A",
+            "rnw": "09",
+            "fixes": {
+                "USK": "OVERFLY USK AT OR ABOVE 5700 TRK 255 UNTIL 10000",
+                "NESET": "NESET"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NESE1B",
+            "rnw": "27",
+            "fixes": {
+                "USK": "USK AT OR ABOVE 5900 TURN LEFT HDG 225 INTERCEPT RADIAL 255 TO",
+                "NESET": "NESET"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "KINI1D",
+            "runway": "RNW 09 RNW 27",
+            "fixes": {
+                "KINIK": "KINIK",
+                "D079J": "D079J",
+                "USK": "USK"
+            }
+        },
+        {
+            "name": "NESE1D",
+            "runway": "RNW 09 RNW 27",
+            "fixes": {
+                "NESET": "NESET",
+                "D255J": "D255J",
+                "USK": "USK"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORDZ27",
+            "fixes": {
+                "FF27": "FF27 6000",
+                "45DME": "45DME AT OR ABOVE 4200",
+                "MA27": "MA27 3722 RNW 27",
+                "USK": "USK AT OR ABOVE 3722 TRK 265 UNTIL 6000 TURN LEFT DIRECT USK 8000 HOLD AT USK RIGHT TURN INBOUNDCOURSE 091 LEGTIME 1 FAF FF27 MAP MA27"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USK": "USK AT OR ABOVE 8000",
+                        "FF27": "FF27 AT OR ABOVE 6000 TRK 046 UNTIL 3.9 FROM FF27"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA09",
+            "fixes": {
+                "F0851": "F0851 6000",
+                "USKNB": "USKNB 4600 RNW 09 TRK 091 UNTIL 6000 TURN RIGHT DIRECT USKNB 8000 HOLD AT USKNB LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF F0851 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USKNB": "USKNB AT OR ABOVE 8000",
+                        "F0851": "F0851 AT OR ABOVE 6000 SPEED 185 TRK 310 UNTIL 3.9 FROM F0851"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBB09",
+            "fixes": {
+                "FF271": "FF271 6300",
+                "USKNB": "USKNB 4600 RNW 09 TRK 265 UNTIL 6000 TURN LEFT DIRECT USKNB 8000 HOLD AT USKNB RIGHT TURN INBOUNDCOURSE 091 LEGTIME 1 FAF FF271 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USKNB": "USKNB AT OR ABOVE 8000",
+                        "FF271": "FF271 AT OR ABOVE 6300 TRK 046 UNTIL 3.9 FROM FF271"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA27",
+            "fixes": {
+                "F0851": "F0851 6000",
+                "USKNB": "USKNB 4600 RNW 27 TRK 091 UNTIL 6000 TURN RIGHT DIRECT USKNB 8000 HOLD AT USKNB LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF F0851 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USKNB": "USKNB AT OR ABOVE 8000",
+                        "F0851": "F0851 AT OR ABOVE 6000 SPEED 185 TRK 310 UNTIL 3.9 FROM F0851"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBB27",
+            "fixes": {
+                "FF271": "FF271 6300",
+                "USKNB": "USKNB 4600 RNW 27 TRK 265 UNTIL 6000 TURN LEFT DIRECT USKNB 8000 HOLD AT USKNB RIGHT TURN INBOUNDCOURSE 091 LEGTIME 1 FAF FF271 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USKNB": "USKNB AT OR ABOVE 8000",
+                        "FF271": "FF271 AT OR ABOVE 6300 TRK 046 UNTIL 3.9 FROM FF271"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDC09",
+            "fixes": {
+                "F0852": "F0852 6000",
+                "USKNB": "USKNB 4600 RNW 09 TRK 091 UNTIL 6000 TURN RIGHT DIRECT USKNB 8000 HOLD AT USKNB LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF F0852 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USKNB": "USKNB AT OR ABOVE 8000",
+                        "F0852": "F0852 AT OR ABOVE 6000 SPEED 185 TRK 310 UNTIL 3.9 FROM F0852"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDC27",
+            "fixes": {
+                "F0852": "F0852 6000",
+                "USKNB": "USKNB 4600 RNW 27 TRK 091 UNTIL 6000 TURN RIGHT DIRECT USKNB 8000 HOLD AT USKNB LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF F0852 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USKNB": "USKNB AT OR ABOVE 8000",
+                        "F0852": "F0852 AT OR ABOVE 6000 SPEED 185 TRK 310 UNTIL 3.9 FROM F0852"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDZ27",
+            "fixes": {
+                "FF27": "FF27 6000",
+                "45DME": "45DME AT OR ABOVE 4200",
+                "MA27": "MA27 3722 RNW 27",
+                "USKNB": "USKNB AT OR ABOVE 3722 TRK 265 UNTIL 6000 TURN LEFT DIRECT USKNB 8000 HOLD AT USKNB RIGHT TURN INBOUNDCOURSE 091 LEGTIME 1 FAF FF27 MAP MA27"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USKNB": "USKNB AT OR ABOVE 8000",
+                        "FF27": "FF27 AT OR ABOVE 6000 TRK 046 UNTIL 3.9 FROM FF27"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA09",
+            "fixes": {
+                "F0851": "F0851 6000",
+                "USK": "USK 4600 RNW 09 TRK 091 UNTIL 6000 TURN RIGHT DIRECT USK 8000 HOLD AT USK LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF F0851 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USK": "USK AT OR ABOVE 8000",
+                        "F0851": "F0851 AT OR ABOVE 6000 SPEED 185 TRK 310 UNTIL 3.9 FROM F0851"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB09",
+            "fixes": {
+                "FF271": "FF271 6300",
+                "USK": "USK 4600 RNW 09 TRK 265 UNTIL 6000 TURN LEFT DIRECT USK 8000 HOLD AT USK RIGHT TURN INBOUNDCOURSE 091 LEGTIME 1 FAF FF271 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USK": "USK AT OR ABOVE 8000",
+                        "FF271": "FF271 AT OR ABOVE 6300 TRK 046 UNTIL 3.9 FROM FF271"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORC09",
+            "fixes": {
+                "F0852": "F0852 6000",
+                "USK": "USK 4600 RNW 09 TRK 091 UNTIL 6000 TURN RIGHT DIRECT USK 8000 HOLD AT USK LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF F0852 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USK": "USK AT OR ABOVE 8000",
+                        "F0852": "F0852 AT OR ABOVE 6000 SPEED 185 TRK 310 UNTIL 3.9 FROM F0852"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA27",
+            "fixes": {
+                "F0851": "F0851 6000",
+                "USK": "USK 4600 RNW 27 TRK 091 UNTIL 6000 TURN RIGHT DIRECT USK 8000 HOLD AT USK LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF F0851 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USK": "USK AT OR ABOVE 8000",
+                        "F0851": "F0851 AT OR ABOVE 6000 SPEED 185 TRK 310 UNTIL 3.9 FROM F0851"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB27",
+            "fixes": {
+                "FF271": "FF271 6300",
+                "USK": "USK 4600 RNW 27 TRK 265 UNTIL 6000 TURN LEFT DIRECT USK 8000 HOLD AT USK RIGHT TURN INBOUNDCOURSE 091 LEGTIME 1 FAF FF271 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USK": "USK AT OR ABOVE 8000",
+                        "FF271": "FF271 AT OR ABOVE 6300 TRK 046 UNTIL 3.9 FROM FF271"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORC27",
+            "fixes": {
+                "F0852": "F0852 6000",
+                "USK": "USK 4600 RNW 27 TRK 091 UNTIL 6000 TURN RIGHT DIRECT USK 8000 HOLD AT USK LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF F0852 MAP USK"
+            },
+            "transitions": [
+                {
+                    "name": "USK",
+                    "fixes": {
+                        "USK": "USK AT OR ABOVE 8000",
+                        "F0852": "F0852 AT OR ABOVE 6000 SPEED 185 TRK 310 UNTIL 3.9 FROM F0852"
+                    }
+                }
+            ]
+        }
+    ]
+}

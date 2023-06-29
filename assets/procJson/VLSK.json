@@ -1,0 +1,208 @@
+{
+    "fixes": [
+        {
+            "name": "CF22",
+            "lat": 16.702469433333334,
+            "lon": 104.86124166666667
+        },
+        {
+            "name": "D057L",
+            "lat": 16.670352783333332,
+            "lon": 104.942125
+        },
+        {
+            "name": "D093L",
+            "lat": 16.55214721666667,
+            "lon": 104.97463056666666
+        },
+        {
+            "name": "D121L",
+            "lat": 16.460188883333334,
+            "lon": 104.94601943333333
+        },
+        {
+            "name": "ENBIL",
+            "lat": 16.855833333333333,
+            "lon": 105.24388888333333
+        },
+        {
+            "name": "FF22",
+            "lat": 16.632308333333334,
+            "lon": 104.81393611666667
+        },
+        {
+            "name": "ISGAK",
+            "lat": 16.529166666666665,
+            "lon": 105.4375
+        },
+        {
+            "name": "ISTOR",
+            "lat": 16.695,
+            "lon": 104.86166666666666
+        },
+        {
+            "name": "LASAP",
+            "lat": 16.0,
+            "lon": 105.75
+        },
+        {
+            "name": "MA22",
+            "lat": 16.584594433333333,
+            "lon": 104.78178888333333
+        },
+        {
+            "name": "PIDIB",
+            "lat": 17.425,
+            "lon": 104.905
+        },
+        {
+            "name": "SAV",
+            "lat": 16.562138883333333,
+            "lon": 104.76666666666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [
+        {
+            "name": "ENBI1A",
+            "rnw": "04",
+            "fixes": {
+                "ENBIL": "ENBIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ISGA1A",
+            "rnw": "04",
+            "fixes": {
+                "ISGAK": "ISGAK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LASA1C",
+            "rnw": "04",
+            "fixes": {
+                "LASAP": "LASAP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PIDI1B",
+            "rnw": "04",
+            "fixes": {
+                "ISTOR": "ISTOR",
+                "PIDIB": "PIDIB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SAV2A",
+            "rnw": "04",
+            "fixes": {
+                "SAV": "SAV AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ENBI1B",
+            "runway": "RNW 22",
+            "fixes": {
+                "ENBIL": "ENBIL",
+                "D057L": "D057L AT OR BELOW 7000 AT OR ABOVE 4000",
+                "SAV": "SAV AT OR ABOVE 7000"
+            }
+        },
+        {
+            "name": "ISGA1B",
+            "runway": "RNW 22",
+            "fixes": {
+                "ISGAK": "ISGAK",
+                "D093L": "D093L AT OR BELOW 7000 AT OR ABOVE 5000",
+                "SAV": "SAV AT OR ABOVE 7000"
+            }
+        },
+        {
+            "name": "LASA1D",
+            "runway": "RNW 22",
+            "fixes": {
+                "LASAP": "LASAP",
+                "D121L": "D121L AT OR BELOW 7000 AT OR ABOVE 6000",
+                "SAV": "SAV AT OR ABOVE 7000"
+            }
+        },
+        {
+            "name": "PIDI1C",
+            "runway": "RNW 22",
+            "fixes": {
+                "PIDIB": "PIDIB",
+                "CF22": "CF22 AT OR BELOW 7000 AT OR ABOVE 3400",
+                "SAV": "SAV AT OR ABOVE 7000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORDY22",
+            "fixes": {
+                "CF22": "CF22 AT OR ABOVE 3400",
+                "FF22": "FF22 2200",
+                "MA22": "MA22 1080 RNW 22 TURN LEFT DIRECT",
+                "D093L": "D093L AT OR ABOVE 5000 SPEED 230 HOLD AT D093L LEFT TURN INBOUNDCOURSE 273 ALT 5000 LEGTIME 1 FAF FF22 MAP MA22"
+            },
+            "transitions": [
+                {
+                    "name": "SAV1",
+                    "fixes": {
+                        "SAV": "SAV AT OR ABOVE 7000 TRK 059 UNTIL 10.0 FROM SAV"
+                    }
+                },
+                {
+                    "name": "SAV2",
+                    "fixes": {
+                        "SAV": "SAV AT OR ABOVE 7000 TRK 044 UNTIL 10.0 FROM SAV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ22",
+            "fixes": {
+                "CF22": "CF22 AT OR ABOVE 3400",
+                "FF22": "FF22 2200",
+                "MA22": "MA22 1080 RNW 22 TURN LEFT DIRECT",
+                "D093L": "D093L AT OR ABOVE 5000 SPEED 230 HOLD AT D093L LEFT TURN INBOUNDCOURSE 273 ALT 5000 LEGTIME 1 FAF FF22 MAP MA22"
+            },
+            "transitions": [
+                {
+                    "name": "D057L",
+                    "fixes": {
+                        "D057L": "D057L AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "D093L",
+                    "fixes": {
+                        "D093L": "D093L AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "D121L",
+                    "fixes": {
+                        "D121L": "D121L AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

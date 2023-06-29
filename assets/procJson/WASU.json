@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "LAGAG",
+            "lat": 1.4033055666666667,
+            "lon": 132.10088888333334
+        },
+        {
+            "name": "MOVTU",
+            "lat": 1.23075,
+            "lon": 132.47219443333333
+        },
+        {
+            "name": "SU402",
+            "lat": 1.38225,
+            "lon": 132.14616666666666
+        },
+        {
+            "name": "SU403",
+            "lat": 1.3547777833333334,
+            "lon": 132.20519443333333
+        },
+        {
+            "name": "SU404",
+            "lat": 1.2980555666666667,
+            "lon": 132.32733333333334
+        },
+        {
+            "name": "SU602",
+            "lat": 1.2517777833333334,
+            "lon": 132.42688888333333
+        },
+        {
+            "name": "SU603",
+            "lat": 1.2789722166666666,
+            "lon": 132.36841666666666
+        },
+        {
+            "name": "SU604",
+            "lat": 1.3359722166666668,
+            "lon": 132.24572221666668
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "SU402": "SU402 AT OR ABOVE 3800",
+                "SU403": "SU403 3000 RNW 06",
+                "SU404": "OVERFLY SU404 TURN LEFT DIRECT",
+                "LAGAG": "LAGAG AT OR ABOVE 4500 HOLD AT LAGAG RIGHT TURN INBOUNDCOURSE 064 ALT 4500 LEGTIME 1 FAF SU403 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "LAGAG",
+                    "fixes": {
+                        "LAGAG": "LAGAG AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "SU602": "SU602 AT OR ABOVE 3800",
+                "SU603": "SU603 3000 RNW 24",
+                "SU604": "OVERFLY SU604 TURN LEFT DIRECT",
+                "MOVTU": "MOVTU AT OR ABOVE 4500 HOLD AT MOVTU RIGHT TURN INBOUNDCOURSE 244 ALT 4500 LEGTIME 1 FAF SU603 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "MOVTU",
+                    "fixes": {
+                        "MOVTU": "MOVTU AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "AZLEC",
+            "lat": 37.23033888333333,
+            "lon": 84.41005
+        },
+        {
+            "name": "BABME",
+            "lat": 37.09060556666667,
+            "lon": 84.57270556666667
+        },
+        {
+            "name": "CDXNB",
+            "lat": 36.99625556666667,
+            "lon": 84.68120833333333
+        },
+        {
+            "name": "HIPOD",
+            "lat": 36.97225278333333,
+            "lon": 84.70978611666666
+        },
+        {
+            "name": "HITFO",
+            "lat": 37.13268333333333,
+            "lon": 84.52381666666666
+        },
+        {
+            "name": "JIBEX",
+            "lat": 36.97014443333333,
+            "lon": 84.70310556666666
+        },
+        {
+            "name": "LOZ",
+            "lat": 37.03315,
+            "lon": 84.110075
+        },
+        {
+            "name": "LVT",
+            "lat": 36.58450833333333,
+            "lon": 85.16662221666667
+        },
+        {
+            "name": "PI001",
+            "lat": 36.953582866666665,
+            "lon": 84.73099196666666
+        },
+        {
+            "name": "PI002",
+            "lat": 36.881959816666665,
+            "lon": 84.72786505
+        },
+        {
+            "name": "PI003",
+            "lat": 36.87427853333333,
+            "lon": 84.82329941666667
+        },
+        {
+            "name": "SITOW",
+            "lat": 36.89565,
+            "lon": 84.79818056666667
+        },
+        {
+            "name": "TOOLY",
+            "lat": 36.88938888333333,
+            "lon": 84.78696111666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS05",
+            "fixes": {
+                "SITOW": "SITOW AT OR ABOVE 3700",
+                "HIPOD": "HIPOD 3000 RNW 05 TRK 048 UNTIL 2000 TURN RIGHT DIRECT",
+                "CDXNB": "CDXNB AT OR ABOVE 3000 HOLD AT CDXNB RIGHT TURN INBOUNDCOURSE 048 LEGTIME 1 FAF HIPOD MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "LOZ",
+                    "fixes": {
+                        "LOZ": "LOZ",
+                        "CDXNB": "CDXNB AT OR BELOW 6000 AT OR ABOVE 3700",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "LVT",
+                    "fixes": {
+                        "LVT": "LVT AT OR ABOVE 3700 TRK 046 UNTIL 21.8 FROM LVT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "TOOLY": "TOOLY AT OR ABOVE 3600",
+                "JIBEX": "JIBEX 3000 RNW 05 TRK 045 UNTIL 1177",
+                "AZLEC": "OVERFLY AZLEC AT OR ABOVE 3600 HOLD AT AZLEC RIGHT TURN INBOUNDCOURSE 228 LEGDIST 4 FAF JIBEX MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "TOOLY",
+                    "fixes": {
+                        "TOOLY": "TOOLY RIGHT TURN INBOUNDCOURSE 045 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "AZLEC": "AZLEC AT OR ABOVE 3600",
+                "HITFO": "HITFO 2900",
+                "BABME": "BABME AT OR ABOVE 1820 RNW 23 TRK 228 UNTIL 1327",
+                "TOOLY": "OVERFLY TOOLY AT OR ABOVE 3600 HOLD AT TOOLY RIGHT TURN INBOUNDCOURSE 045 LEGDIST 4 FAF HITFO MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "AZLEC",
+                    "fixes": {
+                        "AZLEC": "AZLEC RIGHT TURN INBOUNDCOURSE 228 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

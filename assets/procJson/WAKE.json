@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "IPMOM",
+            "lat": 7.3486111166666666,
+            "lon": 139.51158333333333
+        },
+        {
+            "name": "KE401",
+            "lat": 7.302222216666666,
+            "lon": 139.53088888333335
+        },
+        {
+            "name": "KE402",
+            "lat": 7.255833333333333,
+            "lon": 139.55019443333333
+        },
+        {
+            "name": "KE403",
+            "lat": 7.132388883333333,
+            "lon": 139.60155556666666
+        },
+        {
+            "name": "KE601",
+            "lat": 7.050277783333334,
+            "lon": 139.63561111666667
+        },
+        {
+            "name": "KE602",
+            "lat": 7.096666666666667,
+            "lon": 139.61633333333333
+        },
+        {
+            "name": "KE603",
+            "lat": 7.220111116666667,
+            "lon": 139.56508333333332
+        },
+        {
+            "name": "UNVUN",
+            "lat": 7.003861116666667,
+            "lon": 139.65488888333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "KE401": "KE401 AT OR ABOVE 2200",
+                "KE402": "KE402 1600 RNW 02",
+                "KE403": "OVERFLY KE403 TURN LEFT DIRECT",
+                "IPMOM": "IPMOM AT OR ABOVE 3000 HOLD AT IPMOM RIGHT TURN INBOUNDCOURSE 019 ALT 3000 LEGTIME 1 FAF KE402 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "IPMOM",
+                    "fixes": {
+                        "IPMOM": "IPMOM AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "KE601": "KE601 AT OR ABOVE 2200",
+                "KE602": "KE602 1600 RNW 20",
+                "KE603": "OVERFLY KE603 TURN LEFT DIRECT",
+                "UNVUN": "UNVUN AT OR ABOVE 3000 HOLD AT UNVUN LEFT TURN INBOUNDCOURSE 199 ALT 3000 LEGTIME 1 FAF KE602 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "UNVUN",
+                    "fixes": {
+                        "UNVUN": "UNVUN AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

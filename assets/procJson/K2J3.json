@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "IRXEF",
+            "lat": 32.85953333333333,
+            "lon": 82.16039166666667
+        },
+        {
+            "name": "NOVME",
+            "lat": 33.110922216666665,
+            "lon": 82.60806943333333
+        },
+        {
+            "name": "UTENE",
+            "lat": 32.93377778333333,
+            "lon": 82.29204166666666
+        },
+        {
+            "name": "WEMXO",
+            "lat": 33.037016666666666,
+            "lon": 82.47588888333334
+        },
+        {
+            "name": "ZAMEP",
+            "lat": 32.95803611666667,
+            "lon": 82.33515556666667
+        },
+        {
+            "name": "ZONUD",
+            "lat": 33.01380556666667,
+            "lon": 82.43447221666666
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "NOVME": "NOVME AT OR ABOVE 3000 OVERFLY NOVME AT OR ABOVE 3000 HOLD AT NOVME RIGHT TURN INBOUNDCOURSE 127 LEGDIST 4 FAF WEMXO MAP RNW 13",
+                "WEMXO": "WEMXO 2000",
+                "ZONUD": "ZONUD AT OR ABOVE 1200 RNW 13 TRK 127 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NOVME",
+                    "fixes": {
+                        "NOVME": "NOVME RIGHT TURN INBOUNDCOURSE 127 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "IRXEF": "IRXEF AT OR ABOVE 3000 OVERFLY IRXEF AT OR ABOVE 3000 HOLD AT IRXEF RIGHT TURN INBOUNDCOURSE 307 LEGDIST 4 FAF UTENE MAP RNW 31",
+                "UTENE": "UTENE 2000",
+                "ZAMEP": "ZAMEP AT OR ABOVE 1160 RNW 31 TRK 307 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IRXEF",
+                    "fixes": {
+                        "IRXEF": "IRXEF RIGHT TURN INBOUNDCOURSE 307 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

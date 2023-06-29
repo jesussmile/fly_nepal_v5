@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "CYOTE",
+            "lat": 34.959913883333336,
+            "lon": 106.37911111666666
+        },
+        {
+            "name": "MEKUE",
+            "lat": 34.924830566666664,
+            "lon": 105.62653333333333
+        },
+        {
+            "name": "ORNEE",
+            "lat": 34.982338883333334,
+            "lon": 106.15517778333333
+        },
+        {
+            "name": "OTO",
+            "lat": 35.07226943333333,
+            "lon": 105.93608056666666
+        },
+        {
+            "name": "PIETA",
+            "lat": 34.98169721666667,
+            "lon": 105.77781666666667
+        },
+        {
+            "name": "RIDSE",
+            "lat": 34.982366666666664,
+            "lon": 106.26616943333333
+        },
+        {
+            "name": "SALGE",
+            "lat": 35.082991666666665,
+            "lon": 105.66861666666667
+        },
+        {
+            "name": "SOWAR",
+            "lat": 34.981994433333334,
+            "lon": 105.87286388333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 18",
+        "RNW 26",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "RIDSE": "RIDSE AT OR ABOVE 9700",
+                "ORNEE": "ORNEE 8400 RNW 08 TRK 079 UNTIL 6454",
+                "PIETA": "OVERFLY PIETA AT OR ABOVE 8700 HOLD AT PIETA RIGHT TURN INBOUNDCOURSE 259 LEGDIST 7 FAF ORNEE MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "CYOTE",
+                    "fixes": {
+                        "CYOTE": "CYOTE"
+                    }
+                },
+                {
+                    "name": "RIDSE",
+                    "fixes": {
+                        "RIDSE": "RIDSE RIGHT TURN INBOUNDCOURSE 079 ALT 9700 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "PIETA": "PIETA AT OR ABOVE 8900",
+                "SOWAR": "SOWAR 8100 RNW 26 TRK 259 UNTIL 6443",
+                "RIDSE": "OVERFLY RIDSE AT OR ABOVE 9700 HOLD AT RIDSE RIGHT TURN INBOUNDCOURSE 079 ALT 9700 LEGDIST 6 FAF SOWAR MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "MEKUE",
+                    "fixes": {
+                        "MEKUE": "MEKUE"
+                    }
+                },
+                {
+                    "name": "OTO",
+                    "fixes": {
+                        "OTO": "OTO",
+                        "PIETA": "OVERFLY PIETA AT OR ABOVE 8900 HOLD AT PIETA RIGHT TURN INBOUNDCOURSE 259 ALT 8900 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "SALGE",
+                    "fixes": {
+                        "SALGE": "SALGE"
+                    }
+                }
+            ]
+        }
+    ]
+}

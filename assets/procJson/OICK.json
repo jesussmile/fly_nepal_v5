@@ -1,0 +1,218 @@
+{
+    "fixes": [
+        {
+            "name": "CD105",
+            "lat": 33.51541666666667,
+            "lon": 48.00913611666667
+        },
+        {
+            "name": "CD11",
+            "lat": 33.499222216666666,
+            "lon": 48.065722216666664
+        },
+        {
+            "name": "CI29",
+            "lat": 33.381738883333334,
+            "lon": 48.43321111666667
+        },
+        {
+            "name": "D117I",
+            "lat": 33.35669721666667,
+            "lon": 48.445363883333336
+        },
+        {
+            "name": "D276I",
+            "lat": 33.382902783333336,
+            "lon": 48.449705566666665
+        },
+        {
+            "name": "D276K",
+            "lat": 33.37555,
+            "lon": 48.499291666666664
+        },
+        {
+            "name": "D276O",
+            "lat": 33.36376943333333,
+            "lon": 48.57845556666667
+        },
+        {
+            "name": "D276T",
+            "lat": 33.34906111666667,
+            "lon": 48.676794433333335
+        },
+        {
+            "name": "D285T",
+            "lat": 33.54234721666667,
+            "lon": 47.914777783333335
+        },
+        {
+            "name": "FD105",
+            "lat": 33.472177783333336,
+            "lon": 48.159986116666666
+        },
+        {
+            "name": "FD11",
+            "lat": 33.472177783333336,
+            "lon": 48.159986116666666
+        },
+        {
+            "name": "FI29",
+            "lat": 33.406602783333334,
+            "lon": 48.363616666666665
+        },
+        {
+            "name": "KRD",
+            "lat": 33.43419443333333,
+            "lon": 48.29186111666667
+        },
+        {
+            "name": "KRDNB",
+            "lat": 33.38516666666666,
+            "lon": 48.434416666666664
+        },
+        {
+            "name": "MD105",
+            "lat": 33.445061116666665,
+            "lon": 48.25419443333333
+        },
+        {
+            "name": "MD11",
+            "lat": 33.445061116666665,
+            "lon": 48.25419443333333
+        },
+        {
+            "name": "NOTSA",
+            "lat": 33.295833333333334,
+            "lon": 49.05416666666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "NOTS1A",
+            "rnw": "29",
+            "fixes": {
+                "KRD": "OVERFLY KRD AT OR ABOVE 8000",
+                "NOTSA": "NOTSA AT OR ABOVE 16000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NOTS1B",
+            "rnw": "11",
+            "fixes": {
+                "D117I": "D117I AT OR ABOVE 6500 HDG 068 INTERCEPT RADIAL 098 TO",
+                "NOTSA": "NOTSA AT OR ABOVE 16000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "NOTS1N",
+            "runway": "RNW 29",
+            "fixes": {
+                "NOTSA": "NOTSA",
+                "D276T": "D276T"
+            }
+        },
+        {
+            "name": "NOTS1P",
+            "runway": "RNW 11",
+            "fixes": {
+                "NOTSA": "NOTSA",
+                "KRD": "KRD",
+                "D285T": "D285T"
+            }
+        },
+        {
+            "name": "NOTS1Q",
+            "runway": "RNW 11 RNW 29",
+            "fixes": {
+                "NOTSA": "NOTSA",
+                "KRD": "KRD"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD11",
+            "fixes": {
+                "CD11": "CD11 AT OR ABOVE 6900",
+                "FD11": "FD11 5800",
+                "MD11": "MD11 4022 RNW 11",
+                "KRD": "OVERFLY KRD TRK 117 UNTIL 8.0 FROM KRD TURN LEFT DIRECT KRD AT OR ABOVE 8500",
+                "D285T": "D285T 10500 HOLD AT D285T RIGHT TURN INBOUNDCOURSE 105 SPEED 200 LEGTIME 1 FAF FD11 MAP MD11"
+            },
+            "transitions": [
+                {
+                    "name": "D285T",
+                    "fixes": {
+                        "D285T": "D285T AT OR ABOVE 10500 SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS129",
+            "fixes": {
+                "CI29": "CI29 AT OR ABOVE 6600",
+                "FI29": "FI29 5207 RNW 29",
+                "KRD": "OVERFLY KRD TRK 274 UNTIL 6000 TURN LEFT DIRECT KRD",
+                "KRDNB": "KRDNB",
+                "D276T": "D276T 10800 HOLD AT D276T RIGHT TURN INBOUNDCOURSE 276 SPEED 200 LEGTIME 1 FAF FI29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "D276T",
+                    "fixes": {
+                        "D276T": "D276T AT OR ABOVE 10800",
+                        "D276O": "D276O AT OR ABOVE 8600",
+                        "D276K": "D276K AT OR ABOVE 7700",
+                        "D276I": "D276I AT OR ABOVE 6900",
+                        "KRDNB": "KRDNB AT OR ABOVE 6600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM11",
+            "fixes": {
+                "CD105": "CD105 AT OR ABOVE 9200",
+                "FD105": "FD105 7600",
+                "MD105": "MD105 7600 RNW 11",
+                "KRD": "KRD TRK 117 UNTIL 8.0 FROM KRD TURN LEFT DIRECT KRD 11500 HOLD AT KRD RIGHT TURN INBOUNDCOURSE 265 SPEED 220 LEGTIME 1 FAF FD105 MAP MD105"
+            },
+            "transitions": [
+                {
+                    "name": "KRD",
+                    "fixes": {
+                        "KRD": "KRD AT OR ABOVE 11500 TRK 266 UNTIL 15.0 FROM KRD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM29",
+            "fixes": {
+                "CD105": "CD105 AT OR ABOVE 9200",
+                "FD105": "FD105 7600",
+                "MD105": "MD105 7600 RNW 29",
+                "KRD": "KRD TRK 117 UNTIL 8.0 FROM KRD TURN LEFT DIRECT KRD 11500 HOLD AT KRD RIGHT TURN INBOUNDCOURSE 265 SPEED 220 LEGTIME 1 FAF FD105 MAP MD105"
+            },
+            "transitions": [
+                {
+                    "name": "KRD",
+                    "fixes": {
+                        "KRD": "KRD AT OR ABOVE 11500 TRK 266 UNTIL 15.0 FROM KRD"
+                    }
+                }
+            ]
+        }
+    ]
+}

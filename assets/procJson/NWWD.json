@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "FF335",
+            "lat": 21.230894433333333,
+            "lon": 164.90328333333332
+        },
+        {
+            "name": "FWD27",
+            "lat": 21.071888883333333,
+            "lon": 164.97838888333334
+        },
+        {
+            "name": "IWD27",
+            "lat": 21.081388883333332,
+            "lon": 165.06155556666667
+        },
+        {
+            "name": "KQNB",
+            "lat": 21.104861116666665,
+            "lon": 164.87225
+        },
+        {
+            "name": "MWD27",
+            "lat": 21.061227783333333,
+            "lon": 164.88571943333332
+        },
+        {
+            "name": "WD354",
+            "lat": 21.0955,
+            "lon": 165.18541666666667
+        },
+        {
+            "name": "WD356",
+            "lat": 21.363666666666667,
+            "lon": 165.02491666666666
+        },
+        {
+            "name": "WD358",
+            "lat": 21.13952778333333,
+            "lon": 165.05402778333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA09",
+            "fixes": {
+                "FF335": "FF335 3600",
+                "KQNB": "KQNB 1920 RNW 09 TRK 193 UNTIL 3400 TURN LEFT DIRECT KQNB AT OR ABOVE 4800 FAF FF335 MAP KQ"
+            },
+            "transitions": [
+                {
+                    "name": "KQ",
+                    "fixes": {
+                        "KQNB": "KQNB AT OR ABOVE 4800 TRK 169 UNTIL 9.0 FROM KQNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA27",
+            "fixes": {
+                "FF335": "FF335 3600",
+                "KQNB": "KQNB 1920 RNW 27 TRK 193 UNTIL 3400 TURN LEFT DIRECT KQNB AT OR ABOVE 4800 FAF FF335 MAP KQ"
+            },
+            "transitions": [
+                {
+                    "name": "KQ",
+                    "fixes": {
+                        "KQNB": "KQNB AT OR ABOVE 4800 TRK 169 UNTIL 9.0 FROM KQNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "IWD27": "IWD27 3400",
+                "FWD27": "FWD27 2900",
+                "MWD27": "OVERFLY MWD27 967 RNW 27 TRK 186 UNTIL 4500",
+                "WD356": "WD356 SPEED 170 FAF FWD27 MAP MWD27"
+            },
+            "transitions": [
+                {
+                    "name": "WD354",
+                    "fixes": {
+                        "WD354": "WD354 AT OR ABOVE 5000 SPEED 170"
+                    }
+                },
+                {
+                    "name": "WD356",
+                    "fixes": {
+                        "WD356": "WD356 AT OR ABOVE 4500 SPEED 170",
+                        "WD358": "WD358 AT OR ABOVE 4500"
+                    }
+                }
+            ]
+        }
+    ]
+}

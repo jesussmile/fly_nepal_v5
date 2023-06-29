@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "COCOA",
+            "lat": 43.614958333333334,
+            "lon": 99.15314166666667
+        },
+        {
+            "name": "DAWSN",
+            "lat": 43.92325278333333,
+            "lon": 99.49812221666667
+        },
+        {
+            "name": "FAINS",
+            "lat": 43.69273056666667,
+            "lon": 99.23974721666667
+        },
+        {
+            "name": "FIDVI",
+            "lat": 43.83788333333333,
+            "lon": 99.40219721666666
+        },
+        {
+            "name": "JURSU",
+            "lat": 43.80523888333333,
+            "lon": 99.36554443333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 18",
+        "RNW 31",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "DAWSN": "DAWSN AT OR ABOVE 4400",
+                "FIDVI": "FIDVI 3400",
+                "JURSU": "JURSU AT OR ABOVE 2600 RNW 13 TRK 136 UNTIL 2080",
+                "COCOA": "OVERFLY COCOA AT OR ABOVE 3600 HOLD AT COCOA RIGHT TURN INBOUNDCOURSE 316 LEGDIST 4 FAF FIDVI MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "DAWSN",
+                    "fixes": {
+                        "DAWSN": "DAWSN RIGHT TURN INBOUNDCOURSE 136 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "COCOA": "COCOA AT OR ABOVE 3600",
+                "FAINS": "FAINS 3400 RNW 31 TRK 316 UNTIL 2040",
+                "DAWSN": "OVERFLY DAWSN AT OR ABOVE 4400 HOLD AT DAWSN RIGHT TURN INBOUNDCOURSE 136 LEGDIST 5 FAF FAINS MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "COCOA",
+                    "fixes": {
+                        "COCOA": "COCOA RIGHT TURN INBOUNDCOURSE 316 ALT 3600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

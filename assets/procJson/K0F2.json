@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "CEKEX",
+            "lat": 33.693175,
+            "lon": 97.78635833333334
+        },
+        {
+            "name": "CELPO",
+            "lat": 33.50921111666667,
+            "lon": 97.76468611666667
+        },
+        {
+            "name": "FENUP",
+            "lat": 33.40729721666667,
+            "lon": 97.75271943333334
+        },
+        {
+            "name": "HERAM",
+            "lat": 33.399086116666666,
+            "lon": 97.85177778333333
+        },
+        {
+            "name": "HIXEL",
+            "lat": 33.784413883333336,
+            "lon": 97.69668611666667
+        },
+        {
+            "name": "JABEV",
+            "lat": 33.77625,
+            "lon": 97.79618333333333
+        },
+        {
+            "name": "JIRSO",
+            "lat": 33.415430566666664,
+            "lon": 97.65364166666667
+        },
+        {
+            "name": "PEDUE",
+            "lat": 33.768005566666666,
+            "lon": 97.89565833333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "JABEV": "JABEV AT OR ABOVE 2800 SPEED 180",
+                "CEKEX": "CEKEX 2800 RNW 17 TRK 170 UNTIL 1351",
+                "FENUP": "OVERFLY FENUP AT OR ABOVE 3000 HOLD AT FENUP RIGHT TURN INBOUNDCOURSE 350 LEGDIST 4 FAF CEKEX MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "HIXEL",
+                    "fixes": {
+                        "HIXEL": "HIXEL SPEED 200"
+                    }
+                },
+                {
+                    "name": "JABEV",
+                    "fixes": {
+                        "JABEV": "JABEV RIGHT TURN INBOUNDCOURSE 170 ALT 2800 SPEED 180 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PEDUE",
+                    "fixes": {
+                        "PEDUE": "PEDUE SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FENUP": "FENUP AT OR ABOVE 2900 SPEED 180",
+                "CELPO": "CELPO 2800 RNW 35 TRK 350 UNTIL 1348",
+                "JABEV": "OVERFLY JABEV AT OR ABOVE 2800 HOLD AT JABEV RIGHT TURN INBOUNDCOURSE 170 LEGDIST 4 FAF CELPO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "FENUP",
+                    "fixes": {
+                        "FENUP": "FENUP RIGHT TURN INBOUNDCOURSE 350 ALT 2900 SPEED 180 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HERAM",
+                    "fixes": {
+                        "HERAM": "HERAM"
+                    }
+                },
+                {
+                    "name": "JIRSO",
+                    "fixes": {
+                        "JIRSO": "JIRSO"
+                    }
+                }
+            ]
+        }
+    ]
+}

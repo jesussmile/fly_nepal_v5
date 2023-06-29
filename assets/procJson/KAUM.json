@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "DACAB",
+            "lat": 43.570655566666666,
+            "lon": 92.91543888333334
+        },
+        {
+            "name": "FARUN",
+            "lat": 43.46981111666667,
+            "lon": 92.89633056666666
+        },
+        {
+            "name": "ICUNE",
+            "lat": 43.423038883333334,
+            "lon": 93.01766943333334
+        },
+        {
+            "name": "IGAME",
+            "lat": 43.75493611666667,
+            "lon": 92.95055
+        },
+        {
+            "name": "JELOG",
+            "lat": 43.700236116666666,
+            "lon": 92.9401
+        },
+        {
+            "name": "KASPR",
+            "lat": 43.965488883333336,
+            "lon": 93.24704166666666
+        },
+        {
+            "name": "MAROE",
+            "lat": 43.85609721666667,
+            "lon": 92.96988333333333
+        },
+        {
+            "name": "MCW",
+            "lat": 43.09475833333333,
+            "lon": 93.32987221666667
+        },
+        {
+            "name": "NABGE",
+            "lat": 43.87425556666667,
+            "lon": 92.78729443333333
+        },
+        {
+            "name": "PICIB",
+            "lat": 43.83764721666667,
+            "lon": 93.15236111666667
+        },
+        {
+            "name": "RST",
+            "lat": 43.782902783333334,
+            "lon": 92.59696111666666
+        },
+        {
+            "name": "ZEBOG",
+            "lat": 43.62833611666667,
+            "lon": 92.9264
+        },
+        {
+            "name": "ZONVO",
+            "lat": 43.43945278333333,
+            "lon": 92.70400833333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS35",
+            "fixes": {
+                "FARUN": "FARUN AT OR ABOVE 3800 FARUN FARUN AT OR ABOVE 3800 HOLD AT FARUN RIGHT TURN INBOUNDCOURSE 351 LEGTIME 1 FAF DACAB MAP RNW 35",
+                "DACAB": "DACAB 2900 RNW 35 TRK 351 UNTIL 1800 TURN RIGHT HDG 179 INTERCEPT RADIAL 214 TO"
+            },
+            "transitions": [
+                {
+                    "name": "MCW",
+                    "fixes": {
+                        "MCW": "MCW"
+                    }
+                },
+                {
+                    "name": "RST",
+                    "fixes": {
+                        "RST": "RST",
+                        "FARUN": "FARUN AT OR ABOVE 3800 HOLD AT FARUN RIGHT TURN INBOUNDCOURSE 351 ALT 3800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "MAROE": "MAROE AT OR ABOVE 2900",
+                "IGAME": "IGAME 2900",
+                "JELOG": "JELOG AT OR ABOVE 1840 RNW 17 TRK 172 UNTIL 1484",
+                "FARUN": "OVERFLY FARUN AT OR ABOVE 3800 HOLD AT FARUN RIGHT TURN INBOUNDCOURSE 352 LEGDIST 4 FAF IGAME MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "KASPR",
+                    "fixes": {
+                        "KASPR": "KASPR",
+                        "PICIB": "PICIB AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MAROE",
+                    "fixes": {
+                        "MAROE": "MAROE RIGHT TURN INBOUNDCOURSE 172 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MCW",
+                    "fixes": {
+                        "MCW": "MCW",
+                        "PICIB": "PICIB AT OR ABOVE 3400"
+                    }
+                },
+                {
+                    "name": "RST",
+                    "fixes": {
+                        "RST": "RST",
+                        "NABGE": "NABGE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FARUN": "FARUN AT OR ABOVE 3800",
+                "DACAB": "DACAB 2900",
+                "ZEBOG": "ZEBOG AT OR ABOVE 1780 RNW 35 TRK 352 UNTIL 1431",
+                "MAROE": "OVERFLY MAROE AT OR ABOVE 2900 HOLD AT MAROE RIGHT TURN INBOUNDCOURSE 172 LEGDIST 4 FAF DACAB MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "FARUN",
+                    "fixes": {
+                        "FARUN": "FARUN RIGHT TURN INBOUNDCOURSE 352 ALT 3800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MCW",
+                    "fixes": {
+                        "MCW": "MCW",
+                        "ICUNE": "ICUNE AT OR ABOVE 3800"
+                    }
+                },
+                {
+                    "name": "RST",
+                    "fixes": {
+                        "RST": "RST",
+                        "ZONVO": "ZONVO AT OR ABOVE 3900"
+                    }
+                }
+            ]
+        }
+    ]
+}

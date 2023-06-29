@@ -1,0 +1,85 @@
+{
+    "fixes": [
+        {
+            "name": "AHORE",
+            "lat": 26.868980566666668,
+            "lon": 81.20162778333334
+        },
+        {
+            "name": "BLEED",
+            "lat": 26.673055566666665,
+            "lon": 80.98133056666667
+        },
+        {
+            "name": "COXOK",
+            "lat": 26.797261116666668,
+            "lon": 81.12084721666666
+        },
+        {
+            "name": "GILBI",
+            "lat": 26.408825,
+            "lon": 80.72901666666667
+        },
+        {
+            "name": "NICHE",
+            "lat": 26.967302783333334,
+            "lon": 81.18673611666667
+        },
+        {
+            "name": "SIGNL",
+            "lat": 27.033444433333333,
+            "lon": 81.12381666666667
+        },
+        {
+            "name": "VIGGO",
+            "lat": 26.399091666666667,
+            "lon": 80.844525
+        },
+        {
+            "name": "WODIX",
+            "lat": 26.6012,
+            "lon": 80.90083611666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "AHORE": "AHORE AT OR ABOVE 3000",
+                "COXOK": "COXOK 1600 RNW 13 TRK 140 UNTIL 420 TURN LEFT DIRECT",
+                "SIGNL": "OVERFLY SIGNL AT OR ABOVE 5000 HOLD AT SIGNL RIGHT TURN INBOUNDCOURSE 225 ALT 5000 LEGDIST 4 FAF COXOK MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "SIGNL",
+                    "fixes": {
+                        "SIGNL": "SIGNL",
+                        "NICHE": "NICHE AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "WODIX": "WODIX AT OR ABOVE 1800 OVERFLY WODIX AT OR ABOVE 1600 HOLD AT WODIX RIGHT TURN INBOUNDCOURSE 320 LEGDIST 4 FAF BLEED MAP RNW 31",
+                "BLEED": "BLEED 1600 RNW 31 TRK 320 UNTIL 420 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GILBI",
+                    "fixes": {
+                        "GILBI": "GILBI",
+                        "VIGGO": "VIGGO AT OR ABOVE 2400"
+                    }
+                }
+            ]
+        }
+    ]
+}

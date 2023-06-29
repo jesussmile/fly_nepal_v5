@@ -1,0 +1,217 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 33.49123085,
+            "lon": 46.71772406666667
+        },
+        {
+            "name": "AF002",
+            "lat": 33.43680943333333,
+            "lon": 46.68638685
+        },
+        {
+            "name": "ALTET",
+            "lat": 33.535833333333336,
+            "lon": 47.013055566666665
+        },
+        {
+            "name": "CD327",
+            "lat": 33.342430566666664,
+            "lon": 46.564827783333335
+        },
+        {
+            "name": "CI32",
+            "lat": 33.366366666666664,
+            "lon": 46.60930556666667
+        },
+        {
+            "name": "D091R",
+            "lat": 33.546483333333335,
+            "lon": 46.77236666666667
+        },
+        {
+            "name": "D130P",
+            "lat": 33.38929443333333,
+            "lon": 46.640591666666666
+        },
+        {
+            "name": "D317L",
+            "lat": 33.73621943333333,
+            "lon": 46.26773888333334
+        },
+        {
+            "name": "FD137",
+            "lat": 33.67049166666666,
+            "lon": 46.329325
+        },
+        {
+            "name": "FD327",
+            "lat": 33.460447216666665,
+            "lon": 46.490208333333335
+        },
+        {
+            "name": "FI32",
+            "lat": 33.43532221666667,
+            "lon": 46.54541666666667
+        },
+        {
+            "name": "ILM",
+            "lat": 33.57841666666667,
+            "lon": 46.415388883333335
+        },
+        {
+            "name": "MD327",
+            "lat": 33.56072221666667,
+            "lon": 46.426625
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "ALTE1A",
+            "rnw": "32",
+            "fixes": {
+                "ILM": "ILM AT OR ABOVE 11000",
+                "ALTET": "ALTET"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ALTE1B",
+            "rnw": "14",
+            "fixes": {
+                "ILM": "ILM AT OR ABOVE 11000",
+                "ALTET": "ALTET"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ALTE1N",
+            "runway": "RNW 14 RNW 32",
+            "fixes": {
+                "ALTET": "ALTET",
+                "D091R": "D091R"
+            }
+        },
+        {
+            "name": "ALTE1P",
+            "runway": "RNW 14 RNW 32",
+            "fixes": {
+                "ALTET": "ALTET",
+                "ILM": "ILM"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "ILSY32",
+            "fixes": {
+                "CI32": "CI32 AT OR ABOVE 9800",
+                "FI32": "FI32 8500 RNW 32 TRK 318 UNTIL 4810 TRK 320 UNTIL 8000 TURN LEFT DIRECT",
+                "ILM": "ILM 11000 HOLD AT ILM RIGHT TURN INBOUNDCOURSE 139 ALT 14000 SPEED 230 LEGTIME 1 FAF FI32 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "D091R",
+                    "fixes": {
+                        "D091R": "D091R",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D130P": "D130P AT OR ABOVE 10000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ32",
+            "fixes": {
+                "CI32": "CI32 AT OR ABOVE 9800",
+                "FI32": "FI32 8500 RNW 32 TRK 318 UNTIL 4810 TRK 320 UNTIL 8000 TURN LEFT DIRECT",
+                "ILM": "ILM 11000 HOLD AT ILM RIGHT TURN INBOUNDCOURSE 139 ALT 14000 SPEED 230 LEGTIME 1 FAF FI32 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "ILM",
+                    "fixes": {
+                        "ILM": "ILM AT OR ABOVE 11000",
+                        "CI32": "CI32 9800 TRK 184 UNTIL 4.3 FROM CI32"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA14",
+            "fixes": {
+                "CD327": "CD327 8200",
+                "FD327": "FD327 7000",
+                "MD327": "MD327 6600 RNW 14",
+                "ILM": "ILM TRK 319 UNTIL 8000 TURN LEFT DIRECT ILM 11000 HOLD AT ILM RIGHT TURN INBOUNDCOURSE 147 ALT 11000 SPEED 230 LEGTIME 1 FAF FD327 MAP MD327"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORB14",
+            "fixes": {
+                "FD137": "FD137 7200",
+                "ILM": "ILM 6600 RNW 14 TRK 160 UNTIL 8000 TURN RIGHT DIRECT ILM 11000 HOLD AT ILM LEFT TURN INBOUNDCOURSE 314 ALT 11000 SPEED 230 LEGTIME 1 FAF FD137 MAP ILM"
+            },
+            "transitions": [
+                {
+                    "name": "ILM1",
+                    "fixes": {
+                        "ILM": "ILM AT OR ABOVE 11000 TRK 295 UNTIL 12.0 FROM ILM TURN RIGHT DIRECT",
+                        "D317L": "D317L AT OR ABOVE 7900"
+                    }
+                },
+                {
+                    "name": "ILM2",
+                    "fixes": {
+                        "ILM": "ILM AT OR ABOVE 11000 TRK 308 UNTIL 12.0 FROM ILM TURN RIGHT DIRECT",
+                        "D317L": "D317L AT OR ABOVE 7600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA32",
+            "fixes": {
+                "CD327": "CD327 8200",
+                "FD327": "FD327 7000",
+                "MD327": "MD327 6600 RNW 32",
+                "ILM": "ILM TRK 319 UNTIL 8000 TURN LEFT DIRECT ILM 11000 HOLD AT ILM RIGHT TURN INBOUNDCOURSE 147 ALT 11000 SPEED 230 LEGTIME 1 FAF FD327 MAP MD327"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORB32",
+            "fixes": {
+                "FD137": "FD137 7200",
+                "ILM": "ILM 6600 RNW 32 TRK 160 UNTIL 8000 TURN RIGHT DIRECT ILM 11000 HOLD AT ILM LEFT TURN INBOUNDCOURSE 314 ALT 11000 SPEED 230 LEGTIME 1 FAF FD137 MAP ILM"
+            },
+            "transitions": [
+                {
+                    "name": "ILM1",
+                    "fixes": {
+                        "ILM": "ILM AT OR ABOVE 11000 TRK 295 UNTIL 12.0 FROM ILM TURN RIGHT DIRECT",
+                        "D317L": "D317L AT OR ABOVE 7900"
+                    }
+                },
+                {
+                    "name": "ILM2",
+                    "fixes": {
+                        "ILM": "ILM AT OR ABOVE 11000 TRK 308 UNTIL 12.0 FROM ILM TURN RIGHT DIRECT",
+                        "D317L": "D317L AT OR ABOVE 7600"
+                    }
+                }
+            ]
+        }
+    ]
+}

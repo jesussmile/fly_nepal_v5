@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "ALEEN",
+            "lat": 45.67178056666667,
+            "lon": 92.22769166666667
+        },
+        {
+            "name": "CERCA",
+            "lat": 45.774197216666664,
+            "lon": 91.97741111666667
+        },
+        {
+            "name": "CONIG",
+            "lat": 45.68731111666666,
+            "lon": 91.86238611666667
+        },
+        {
+            "name": "HINUP",
+            "lat": 45.86888056666667,
+            "lon": 92.10335833333333
+        },
+        {
+            "name": "JIGNA",
+            "lat": 45.79541388333333,
+            "lon": 92.00558333333333
+        },
+        {
+            "name": "LAMPY",
+            "lat": 45.980691666666665,
+            "lon": 91.88411388333333
+        },
+        {
+            "name": "OHABI",
+            "lat": 45.66587221666666,
+            "lon": 91.83408333333334
+        },
+        {
+            "name": "QESCA",
+            "lat": 45.59181388333333,
+            "lon": 91.73655
+        },
+        {
+            "name": "RZN",
+            "lat": 45.820444433333336,
+            "lon": 92.37451666666666
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "HINUP": "HINUP AT OR ABOVE 4000",
+                "JIGNA": "JIGNA 2900",
+                "CERCA": "CERCA AT OR ABOVE 2320 RNW 14 TRK 136 UNTIL 1633",
+                "QESCA": "OVERFLY QESCA AT OR ABOVE 4000 HOLD AT QESCA RIGHT TURN INBOUNDCOURSE 316 LEGDIST 4 FAF JIGNA MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ALEEN",
+                    "fixes": {
+                        "ALEEN": "ALEEN",
+                        "HINUP": "OVERFLY HINUP AT OR ABOVE 4000 HOLD AT HINUP RIGHT TURN INBOUNDCOURSE 136 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LAMPY",
+                    "fixes": {
+                        "LAMPY": "LAMPY",
+                        "HINUP": "OVERFLY HINUP AT OR ABOVE 4000 HOLD AT HINUP RIGHT TURN INBOUNDCOURSE 136 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RZN",
+                    "fixes": {
+                        "RZN": "RZN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "QESCA": "QESCA AT OR ABOVE 4000",
+                "OHABI": "OHABI 2900",
+                "CONIG": "CONIG AT OR ABOVE 2320 RNW 32 TRK 316 UNTIL 1633",
+                "HINUP": "OVERFLY HINUP AT OR ABOVE 4000 HOLD AT HINUP RIGHT TURN INBOUNDCOURSE 136 LEGDIST 4 FAF OHABI MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "RZN",
+                    "fixes": {
+                        "RZN": "RZN",
+                        "QESCA": "OVERFLY QESCA AT OR ABOVE 4000 HOLD AT QESCA RIGHT TURN INBOUNDCOURSE 316 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

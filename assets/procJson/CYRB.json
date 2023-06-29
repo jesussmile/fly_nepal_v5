@@ -1,0 +1,156 @@
+{
+    "fixes": [
+        {
+            "name": "AVINO",
+            "lat": 74.48154166666667,
+            "lon": 94.76152778333334
+        },
+        {
+            "name": "DUPMA",
+            "lat": 74.88914166666666,
+            "lon": 95.12548611666666
+        },
+        {
+            "name": "ESTAP",
+            "lat": 74.52918611666666,
+            "lon": 95.12254721666666
+        },
+        {
+            "name": "IKNOP",
+            "lat": 74.86963333333334,
+            "lon": 95.43447221666666
+        },
+        {
+            "name": "IPTEK",
+            "lat": 74.56695,
+            "lon": 94.51638888333333
+        },
+        {
+            "name": "IRDUG",
+            "lat": 74.90822778333333,
+            "lon": 94.81573056666667
+        },
+        {
+            "name": "MUSAT",
+            "lat": 74.54827221666666,
+            "lon": 94.81982778333334
+        },
+        {
+            "name": "OTIGU",
+            "lat": 74.80844166666667,
+            "lon": 95.05188056666667
+        },
+        {
+            "name": "OTNEL",
+            "lat": 74.62905,
+            "lon": 94.89103056666667
+        },
+        {
+            "name": "PI001",
+            "lat": 74.6908593,
+            "lon": 94.77677563333333
+        },
+        {
+            "name": "PI002",
+            "lat": 74.7613658,
+            "lon": 94.82552835
+        },
+        {
+            "name": "PI003",
+            "lat": 74.77934346666666,
+            "lon": 94.53937396666667
+        },
+        {
+            "name": "POKAN",
+            "lat": 74.64311111666666,
+            "lon": 94.9035
+        },
+        {
+            "name": "RBNB",
+            "lat": 74.74686666666666,
+            "lon": 94.99503056666667
+        },
+        {
+            "name": "RUDPU",
+            "lat": 74.64480556666666,
+            "lon": 94.90500833333333
+        },
+        {
+            "name": "URMAT",
+            "lat": 74.78899443333333,
+            "lon": 95.03425833333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS35",
+            "fixes": {
+                "AVINO": "AVINO AT OR ABOVE 1800",
+                "POKAN": "POKAN 1540 RNW 35 TRK 037 UNTIL 2200 TURN RIGHT DIRECT",
+                "RBNB": "RBNB 2200 HOLD AT RBNB RIGHT TURN INBOUNDCOURSE 019 LEGTIME 1 FAF POKAN MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "RB",
+                    "fixes": {
+                        "RBNB": "RBNB",
+                        "POKAN": "POKAN AT OR ABOVE 1800",
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "DUPMA": "DUPMA AT OR ABOVE 1900",
+                "OTIGU": "OTIGU 1900 RNW 17",
+                "RUDPU": "OVERFLY RUDPU 2200 HOLD AT RUDPU RIGHT TURN INBOUNDCOURSE 019 LEGTIME 1 FAF OTIGU MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "IKNOP",
+                    "fixes": {
+                        "IKNOP": "IKNOP SPEED 210"
+                    }
+                },
+                {
+                    "name": "IRDUG",
+                    "fixes": {
+                        "IRDUG": "IRDUG SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "MUSAT": "MUSAT AT OR ABOVE 1800",
+                "OTNEL": "OTNEL 1800 RNW 35",
+                "URMAT": "OVERFLY URMAT 2200 HOLD AT URMAT RIGHT TURN INBOUNDCOURSE 037 LEGTIME 1 FAF OTNEL MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "ESTAP",
+                    "fixes": {
+                        "ESTAP": "ESTAP SPEED 210"
+                    }
+                },
+                {
+                    "name": "IPTEK",
+                    "fixes": {
+                        "IPTEK": "IPTEK SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

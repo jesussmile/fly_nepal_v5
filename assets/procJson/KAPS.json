@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "CHAPI",
+            "lat": 29.998325,
+            "lon": 90.56875556666667
+        },
+        {
+            "name": "EP35",
+            "lat": 30.080358333333333,
+            "lon": 90.58513888333333
+        },
+        {
+            "name": "FF35",
+            "lat": 29.986461116666668,
+            "lon": 90.53936111666667
+        },
+        {
+            "name": "GASNE",
+            "lat": 30.178002783333334,
+            "lon": 90.59713333333333
+        },
+        {
+            "name": "IRALE",
+            "lat": 29.899013883333332,
+            "lon": 90.55311388333334
+        },
+        {
+            "name": "KBOOS",
+            "lat": 30.277305566666666,
+            "lon": 90.61286111666666
+        },
+        {
+            "name": "NUDLE",
+            "lat": 30.11728056666667,
+            "lon": 90.58753056666667
+        },
+        {
+            "name": "PI001",
+            "lat": 30.035067033333334,
+            "lon": 90.55908696666667
+        },
+        {
+            "name": "PI002",
+            "lat": 30.0117115,
+            "lon": 90.48083271666667
+        },
+        {
+            "name": "PI003",
+            "lat": 29.937674083333334,
+            "lon": 90.50431341666666
+        },
+        {
+            "name": "RQR",
+            "lat": 30.0875,
+            "lon": 90.588625
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "KBOOS": "KBOOS AT OR ABOVE 1800",
+                "GASNE": "GASNE 1700",
+                "NUDLE": "NUDLE AT OR ABOVE 520 RNW 17 TRK 173 UNTIL 400",
+                "IRALE": "OVERFLY IRALE AT OR ABOVE 2000 HOLD AT IRALE RIGHT TURN INBOUNDCOURSE 353 LEGDIST 4 FAF GASNE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "KBOOS",
+                    "fixes": {
+                        "KBOOS": "KBOOS RIGHT TURN INBOUNDCOURSE 173 ALT 1800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "IRALE": "IRALE AT OR ABOVE 2000",
+                "CHAPI": "CHAPI 1800 RNW 35 TRK 353 UNTIL 276",
+                "KBOOS": "OVERFLY KBOOS AT OR ABOVE 1800 HOLD AT KBOOS RIGHT TURN INBOUNDCOURSE 173 LEGDIST 4 FAF CHAPI MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "IRALE",
+                    "fixes": {
+                        "IRALE": "IRALE RIGHT TURN INBOUNDCOURSE 353 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR35",
+            "fixes": {
+                "FF35": "FF35 2000",
+                "EP35": "OVERFLY EP35 62",
+                "RQR": "RQR AT OR ABOVE 407 RNW 35 TRK 335 UNTIL 1500 TURN RIGHT DIRECT RQR AT OR ABOVE 2000 HOLD AT RQR RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF FF35 MAP RQR"
+            },
+            "transitions": [
+                {
+                    "name": "RQR",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

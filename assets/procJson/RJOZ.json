@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "DGC",
+            "lat": 33.676208333333335,
+            "lon": 130.38962778333334
+        },
+        {
+            "name": "DGC38",
+            "lat": 33.869311116666665,
+            "lon": 131.10982221666666
+        },
+        {
+            "name": "IWT",
+            "lat": 34.0799,
+            "lon": 132.14730833333334
+        },
+        {
+            "name": "IWT53",
+            "lat": 33.920291666666664,
+            "lon": 131.092325
+        },
+        {
+            "name": "OCT",
+            "lat": 34.04416666666667,
+            "lon": 131.04972221666668
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 17",
+        "RNW 30",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "OCT3R",
+            "rnw": "02",
+            "fixes": {
+                "OCT": "OCT"
+            },
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 17",
+                    "fixes": {
+                        "RNW 17": "RNW 17 TRK 166 UNTIL 520 TRK 170 UNTIL 7.0 FROM",
+                        "OCT": "OCT"
+                    }
+                },
+                {
+                    "rwy": "RNW 35",
+                    "fixes": {
+                        "RNW 35": "RNW 35 TRK 346 UNTIL 520 TURN LEFT HDG 125 INTERCEPT RADIAL 170 FROM",
+                        "OCT": "OCT TRK 170 UNTIL 7.0 FROM OCT"
+                    }
+                }
+            ],
+            "transitions": [
+                {
+                    "name": "DGC",
+                    "fixes": [
+                        "DGC38",
+                        "DGC"
+                    ]
+                },
+                {
+                    "name": "IWT",
+                    "fixes": [
+                        "IWT53",
+                        "IWT"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": []
+}

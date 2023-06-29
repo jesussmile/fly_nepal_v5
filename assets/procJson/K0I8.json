@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "DATAC",
+            "lat": 38.31552778333333,
+            "lon": 84.05291666666666
+        },
+        {
+            "name": "HUCIX",
+            "lat": 38.39188611666667,
+            "lon": 84.40136666666666
+        },
+        {
+            "name": "UZXAM",
+            "lat": 38.377383333333334,
+            "lon": 84.33474443333333
+        },
+        {
+            "name": "WAKVU",
+            "lat": 38.35572221666666,
+            "lon": 84.23563611666667
+        },
+        {
+            "name": "ZIXEN",
+            "lat": 38.41708611666667,
+            "lon": 84.51759166666666
+        },
+        {
+            "name": "ZUTOM",
+            "lat": 38.34107778333333,
+            "lon": 84.16889721666666
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "ZIXEN": "ZIXEN AT OR ABOVE 3000",
+                "HUCIX": "HUCIX 2500",
+                "UZXAM": "UZXAM AT OR ABOVE 1460 RNW 11 TRK 111 UNTIL 1121",
+                "DATAC": "OVERFLY DATAC AT OR ABOVE 3000 HOLD AT DATAC RIGHT TURN INBOUNDCOURSE 292 LEGDIST 4 FAF HUCIX MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "ZIXEN",
+                    "fixes": {
+                        "ZIXEN": "ZIXEN RIGHT TURN INBOUNDCOURSE 111 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "DATAC": "DATAC AT OR ABOVE 3000",
+                "ZUTOM": "ZUTOM 2500",
+                "WAKVU": "WAKVU AT OR ABOVE 1440 RNW 29 TRK 292 UNTIL 1121",
+                "ZIXEN": "OVERFLY ZIXEN AT OR ABOVE 3000 HOLD AT ZIXEN RIGHT TURN INBOUNDCOURSE 111 LEGDIST 4 FAF ZUTOM MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "DATAC",
+                    "fixes": {
+                        "DATAC": "DATAC RIGHT TURN INBOUNDCOURSE 292 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

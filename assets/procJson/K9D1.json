@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "HAIRY",
+            "lat": 43.359091666666664,
+            "lon": 99.59529166666667
+        },
+        {
+            "name": "KIDKE",
+            "lat": 43.158875,
+            "lon": 99.31640833333333
+        },
+        {
+            "name": "LESNR",
+            "lat": 43.487913883333334,
+            "lon": 99.76138888333334
+        },
+        {
+            "name": "LKOTA",
+            "lat": 43.25777778333333,
+            "lon": 100.05388888333333
+        },
+        {
+            "name": "NUKIY",
+            "lat": 42.937533333333334,
+            "lon": 99.28779721666666
+        },
+        {
+            "name": "SOLOY",
+            "lat": 43.191913883333335,
+            "lon": 99.36223333333334
+        },
+        {
+            "name": "VECLU",
+            "lat": 43.28328056666667,
+            "lon": 99.48936388333334
+        },
+        {
+            "name": "WAPKU",
+            "lat": 43.140616666666666,
+            "lon": 99.013775
+        },
+        {
+            "name": "ZAMSU",
+            "lat": 43.075725,
+            "lon": 99.20142778333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "HAIRY": "HAIRY AT OR ABOVE 4100",
+                "VECLU": "VECLU 3800 RNW 13 TRK 127 UNTIL 2575",
+                "ZAMSU": "OVERFLY ZAMSU AT OR ABOVE 4000 HOLD AT ZAMSU RIGHT TURN INBOUNDCOURSE 308 LEGDIST 4 FAF VECLU MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "HAIRY",
+                    "fixes": {
+                        "HAIRY": "HAIRY RIGHT TURN INBOUNDCOURSE 127 ALT 4100 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "LESNR",
+                    "fixes": {
+                        "LESNR": "LESNR"
+                    }
+                },
+                {
+                    "name": "LKOTA",
+                    "fixes": {
+                        "LKOTA": "LKOTA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ZAMSU": "ZAMSU AT OR ABOVE 4000",
+                "KIDKE": "KIDKE 3800",
+                "SOLOY": "SOLOY AT OR ABOVE 2900 RNW 31 TRK 308 UNTIL 2480",
+                "HAIRY": "HAIRY AT OR ABOVE 4100 HOLD AT HAIRY RIGHT TURN INBOUNDCOURSE 127 LEGDIST 5 FAF KIDKE MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "NUKIY",
+                    "fixes": {
+                        "NUKIY": "NUKIY AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "WAPKU",
+                    "fixes": {
+                        "WAPKU": "WAPKU AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "ZAMSU",
+                    "fixes": {
+                        "ZAMSU": "ZAMSU RIGHT TURN INBOUNDCOURSE 308 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

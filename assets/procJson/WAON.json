@@ -1,0 +1,80 @@
+{
+    "fixes": [
+        {
+            "name": "DOLNO",
+            "lat": 2.2106666666666666,
+            "lon": 115.61436111666667
+        },
+        {
+            "name": "GOVLA",
+            "lat": 2.3337777833333333,
+            "lon": 115.23241666666667
+        },
+        {
+            "name": "GUPTO",
+            "lat": 2.25225,
+            "lon": 115.54208333333334
+        },
+        {
+            "name": "ON401",
+            "lat": 2.3005555666666666,
+            "lon": 115.29027778333334
+        },
+        {
+            "name": "ON402",
+            "lat": 2.267305566666667,
+            "lon": 115.34808333333334
+        },
+        {
+            "name": "ON601",
+            "lat": 2.138,
+            "lon": 115.573
+        },
+        {
+            "name": "ON602",
+            "lat": 2.17125,
+            "lon": 115.51516666666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "ON401": "ON401 AT OR ABOVE 2500",
+                "ON402": "ON402 2000 RNW 06 TRK 060 UNTIL 1000 TURN LEFT DIRECT",
+                "GOVLA": "GOVLA AT OR ABOVE 3000 HOLD AT GOVLA RIGHT TURN INBOUNDCOURSE 060 ALT 3000 LEGTIME 1 FAF ON402 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "GOVLA",
+                    "fixes": {
+                        "GOVLA": "GOVLA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "ON602": "ON602 1800 RNW 24 TRK 240 UNTIL 1000 TURN LEFT DIRECT",
+                "GUPTO": "GUPTO AT OR ABOVE 4000 HOLD AT GUPTO RIGHT TURN INBOUNDCOURSE 060 ALT 4000 LEGTIME 1 FAF ON602 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "GUPTO",
+                    "fixes": {
+                        "GUPTO": "GUPTO AT OR ABOVE 4000",
+                        "DOLNO": "DOLNO",
+                        "ON601": "ON601"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,228 @@
+{
+    "fixes": [
+        {
+            "name": "40LOC",
+            "lat": 26.164283333333334,
+            "lon": 119.97072778333333
+        },
+        {
+            "name": "ARMOS",
+            "lat": 26.056694433333334,
+            "lon": 119.91522221666666
+        },
+        {
+            "name": "FF03",
+            "lat": 26.133980566666665,
+            "lon": 119.95508333333333
+        },
+        {
+            "name": "FF21",
+            "lat": 26.275041666666667,
+            "lon": 120.03546666666666
+        },
+        {
+            "name": "FQ03",
+            "lat": 26.161861116666667,
+            "lon": 119.97330833333334
+        },
+        {
+            "name": "HOOPA",
+            "lat": 26.079722216666667,
+            "lon": 120.07611111666667
+        },
+        {
+            "name": "LOTAD",
+            "lat": 26.133611116666668,
+            "lon": 120.45555556666666
+        },
+        {
+            "name": "MA03",
+            "lat": 26.191558333333333,
+            "lon": 119.98481388333333
+        },
+        {
+            "name": "MA21",
+            "lat": 26.249255566666665,
+            "lon": 120.01827221666667
+        },
+        {
+            "name": "MATIS",
+            "lat": 26.076013883333335,
+            "lon": 119.93684166666667
+        },
+        {
+            "name": "MEDIT",
+            "lat": 26.148888883333335,
+            "lon": 120.105
+        },
+        {
+            "name": "MQ03",
+            "lat": 26.200877783333333,
+            "lon": 119.9899
+        },
+        {
+            "name": "MT031",
+            "lat": 26.146,
+            "lon": 119.95639721666667
+        },
+        {
+            "name": "MT032",
+            "lat": 26.072277783333334,
+            "lon": 119.912775
+        },
+        {
+            "name": "MT033",
+            "lat": 26.032836116666665,
+            "lon": 119.99435833333334
+        },
+        {
+            "name": "MT035",
+            "lat": 26.302552783333333,
+            "lon": 120.04923611666666
+        },
+        {
+            "name": "MT215",
+            "lat": 26.146,
+            "lon": 119.95639721666667
+        },
+        {
+            "name": "PIXEL",
+            "lat": 26.309425,
+            "lon": 120.05840278333334
+        },
+        {
+            "name": "RALTS",
+            "lat": 25.9075,
+            "lon": 120.35055556666667
+        },
+        {
+            "name": "RW03",
+            "lat": 26.219708333333333,
+            "lon": 120.00007221666667
+        },
+        {
+            "name": "SEDGA",
+            "lat": 26.146944433333335,
+            "lon": 120.15111111666667
+        },
+        {
+            "name": "ZIPPY",
+            "lat": 26.146944433333335,
+            "lon": 120.15361111666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "HOPA1B",
+            "rnw": "21",
+            "fixes": {
+                "HOOPA": "HOOPA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LOTA1A",
+            "rnw": "03",
+            "fixes": {
+                "MT035": "MT035",
+                "LOTAD": "LOTAD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LOTA1B",
+            "rnw": "21",
+            "fixes": {
+                "MT215": "MT215 TURN LEFT DIRECT",
+                "LOTAD": "LOTAD"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MEDI2B",
+            "rnw": "21",
+            "fixes": {
+                "MEDIT": "MEDIT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RALT1A",
+            "rnw": "03",
+            "fixes": {
+                "MT035": "MT035 TURN RIGHT DIRECT",
+                "RALTS": "RALTS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RALT1B",
+            "rnw": "21",
+            "fixes": {
+                "MT215": "MT215",
+                "RALTS": "RALTS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD03",
+            "fixes": {
+                "MATIS": "MATIS AT OR ABOVE 2000",
+                "FQ03": "FQ03 1300",
+                "MQ03": "MQ03 1300 RNW 03 TURN RIGHT DIRECT",
+                "ZIPPY": "ZIPPY 3000 HOLD AT ZIPPY LEFT TURN INBOUNDCOURSE 277 ALT 3000 LEGTIME 1 FAF FQ03 MAP MQ03"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MT032": "MT032 AT OR ABOVE 2000",
+                "MT031": "MT031 1400 RNW 03 TRK 033 UNTIL 1300 TURN RIGHT DIRECT",
+                "MT033": "MT033 3000 HOLD AT MT033 LEFT TURN INBOUNDCOURSE 303 ALT 3000 LEGDIST 5 FAF MT031 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "MT033",
+                    "fixes": {
+                        "MT033": "MT033 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LDA03",
+            "fixes": {
+                "ARMOS": "ARMOS AT OR ABOVE 2000",
+                "FF03": "FF03 1850",
+                "40LOC": "40LOC AT OR ABOVE 1200",
+                "MA03": "MA03 673 RNW 03 TRK 033 UNTIL 1400 TURN RIGHT HDG 169 INTERCEPT RADIAL 124 TO",
+                "ZIPPY": "ZIPPY ZIPPY 3000 HOLD AT ZIPPY LEFT TURN INBOUNDCOURSE 277 ALT 3000 LEGTIME 1 FAF FF03 MAP MA03"
+            },
+            "transitions": []
+        },
+        {
+            "name": "LDA21",
+            "fixes": {
+                "PIXEL": "PIXEL AT OR ABOVE 1400",
+                "FF21": "FF21 1200",
+                "MA21": "MA21 582 RNW 21 TRK 213 UNTIL 1200 HDG 130 INTERCEPT RADIAL 097 TO",
+                "SEDGA": "SEDGA SEDGA 3000 HOLD AT SEDGA LEFT TURN INBOUNDCOURSE 277 ALT 3000 LEGTIME 1 FAF FF21 MAP MA21"
+            },
+            "transitions": []
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "CI13",
+            "lat": 19.973827783333334,
+            "lon": 28.522027783333332
+        },
+        {
+            "name": "SZNB",
+            "lat": 20.299722216666666,
+            "lon": 28.943333333333335
+        },
+        {
+            "name": "VBU",
+            "lat": 20.029055566666667,
+            "lon": 28.643861116666667
+        },
+        {
+            "name": "WONB",
+            "lat": 19.988305566666668,
+            "lon": 28.553916666666666
+        },
+        {
+            "name": "YTNB",
+            "lat": 19.674444433333335,
+            "lon": 28.847777783333335
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 13",
+        "RNW 20",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS13",
+            "fixes": {
+                "CI13": "CI13 AT OR ABOVE 5800",
+                "WONB": "WONB 5640 RNW 13 TRK 127 UNTIL 5000 TURN LEFT DIRECT WONB 5800 FAF WONB MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "SZ",
+                    "fixes": {
+                        "SZNB": "SZNB",
+                        "WONB": "WONB AT OR ABOVE 5800 HOLD AT WONB RIGHT TURN INBOUNDCOURSE 127 ALT 5800 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "WO",
+                    "fixes": {
+                        "WONB": "WONB RIGHT TURN INBOUNDCOURSE 127 ALT 5800 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "YT",
+                    "fixes": {
+                        "YTNB": "YTNB",
+                        "WONB": "WONB AT OR ABOVE 5800 HOLD AT WONB RIGHT TURN INBOUNDCOURSE 127 ALT 5800 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR13",
+            "fixes": {
+                "WONB": "WONB 5400 RNW 13 TRK 127 UNTIL 6000 HDG 127 VECTORS FAF WONB MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "SZ",
+                    "fixes": {
+                        "SZNB": "SZNB",
+                        "WONB": "WONB AT OR ABOVE 6000 HOLD AT WONB RIGHT TURN INBOUNDCOURSE 127 ALT 5400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "VBU",
+                    "fixes": {
+                        "VBU": "VBU AT OR ABOVE 6000",
+                        "WONB": "WONB AT OR ABOVE 6000 HOLD AT WONB RIGHT TURN INBOUNDCOURSE 127 ALT 5400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "YT",
+                    "fixes": {
+                        "YTNB": "YTNB",
+                        "WONB": "WONB AT OR ABOVE 6000 HOLD AT WONB RIGHT TURN INBOUNDCOURSE 127 ALT 5400 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

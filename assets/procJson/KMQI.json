@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "ALGTR",
+            "lat": 35.93335278333333,
+            "lon": 76.06598611666666
+        },
+        {
+            "name": "BLEEK",
+            "lat": 35.98628333333333,
+            "lon": 75.63111666666667
+        },
+        {
+            "name": "EARNY",
+            "lat": 36.101494433333336,
+            "lon": 75.78516666666667
+        },
+        {
+            "name": "IWOSE",
+            "lat": 35.997875,
+            "lon": 75.73354166666667
+        },
+        {
+            "name": "JUMIT",
+            "lat": 36.177175,
+            "lon": 75.70815278333333
+        },
+        {
+            "name": "NORTN",
+            "lat": 36.04606943333334,
+            "lon": 75.87446388333333
+        },
+        {
+            "name": "OCSIP",
+            "lat": 36.137486116666665,
+            "lon": 76.00429166666666
+        },
+        {
+            "name": "OZUBE",
+            "lat": 35.87556943333333,
+            "lon": 75.73765
+        },
+        {
+            "name": "ROWZO",
+            "lat": 35.79006666666667,
+            "lon": 75.81966666666666
+        },
+        {
+            "name": "TALOW",
+            "lat": 36.074230566666664,
+            "lon": 75.54621666666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 17",
+        "RNW 23",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "ROWZO": "ROWZO AT OR ABOVE 1500",
+                "OZUBE": "OZUBE 1000 RNW 05 TRK 047 UNTIL 500 TURN LEFT DIRECT",
+                "ALGTR": "OVERFLY ALGTR AT OR ABOVE 3000 HOLD AT ALGTR RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4 FAF OZUBE MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "ALGTR",
+                    "fixes": {
+                        "ALGTR": "ALGTR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "EARNY": "EARNY AT OR ABOVE 2200 OVERFLY EARNY AT OR ABOVE 2200 HOLD AT EARNY RIGHT TURN INBOUNDCOURSE 167 LEGDIST 4 FAF IWOSE MAP RNW 17",
+                "IWOSE": "IWOSE 1600 RNW 17 TRK 167 UNTIL 413 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ALGTR",
+                    "fixes": {
+                        "ALGTR": "ALGTR",
+                        "EARNY": "OVERFLY EARNY AT OR ABOVE 2200 HOLD AT EARNY RIGHT TURN INBOUNDCOURSE 167 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "OCSIP",
+                    "fixes": {
+                        "OCSIP": "OCSIP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "TALOW": "TALOW AT OR ABOVE 2200",
+                "BLEEK": "BLEEK 1600 RNW 23 TRK 227 UNTIL 600 TURN RIGHT DIRECT",
+                "NORTN": "OVERFLY NORTN AT OR ABOVE 4000 HOLD AT NORTN RIGHT TURN INBOUNDCOURSE 319 ALT 4000 LEGDIST 4 FAF BLEEK MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "NORTN",
+                    "fixes": {
+                        "NORTN": "NORTN",
+                        "JUMIT": "JUMIT AT OR ABOVE 2200"
+                    }
+                },
+                {
+                    "name": "TALOW",
+                    "fixes": {
+                        "TALOW": "TALOW RIGHT TURN INBOUNDCOURSE 227 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

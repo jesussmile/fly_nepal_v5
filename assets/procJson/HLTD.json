@@ -1,0 +1,137 @@
+{
+    "fixes": [
+        {
+            "name": "50VOR",
+            "lat": 30.124366666666667,
+            "lon": 9.656541666666667
+        },
+        {
+            "name": "CD24",
+            "lat": 30.194963883333333,
+            "lon": 9.809311116666667
+        },
+        {
+            "name": "CN24",
+            "lat": 30.208758333333332,
+            "lon": 9.837511116666667
+        },
+        {
+            "name": "D241C",
+            "lat": 30.140069433333334,
+            "lon": 9.690472216666667
+        },
+        {
+            "name": "FD06",
+            "lat": 30.108652783333334,
+            "lon": 9.622622216666667
+        },
+        {
+            "name": "FD24",
+            "lat": 30.179291666666668,
+            "lon": 9.775344433333334
+        },
+        {
+            "name": "FN06",
+            "lat": 30.098113883333333,
+            "lon": 9.598211116666667
+        },
+        {
+            "name": "GAD",
+            "lat": 30.163611116666665,
+            "lon": 9.741388883333334
+        },
+        {
+            "name": "GADNB",
+            "lat": 30.167222216666666,
+            "lon": 9.7475
+        },
+        {
+            "name": "MD24",
+            "lat": 30.15576666666667,
+            "lon": 9.724413883333334
+        },
+        {
+            "name": "RW24",
+            "lat": 30.15426666666667,
+            "lon": 9.72075
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 06",
+        "RNW 19",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD06",
+            "fixes": {
+                "FD06": "FD06 2500",
+                "50VOR": "50VOR AT OR ABOVE 1800 RNW 06",
+                "D241C": "D241C AT OR ABOVE 1530",
+                "GAD": "GAD TRK 061 UNTIL 3000 TURN RIGHT DIRECT GAD 3000 HOLD AT GAD LEFT TURN INBOUNDCOURSE 241 LEGTIME 1 FAF FD06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "GAD",
+                    "fixes": {
+                        "GAD": "GAD AT OR ABOVE 3000 SPEED 210",
+                        "FD06": "FD06 AT OR ABOVE 3000 TRK 196 UNTIL 4.3 FROM FD06"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD24",
+            "fixes": {
+                "CD24": "CD24 AT OR ABOVE 2500",
+                "FD24": "FD24 1800",
+                "GAD": "GAD AT OR ABOVE 1800 GAD 3000 HOLD AT GAD RIGHT TURN INBOUNDCOURSE 061 LEGTIME 1 FAF FD24 MAP MD24",
+                "MD24": "MD24 1313 RNW 24 TRK 241 UNTIL 3000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GAD",
+                    "fixes": {
+                        "GAD": "GAD AT OR ABOVE 3000",
+                        "CD24": "CD24 AT OR ABOVE 3000 TRK 106 UNTIL 4.3 FROM CD24"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FN06": "FN06 3000 RNW 06",
+                "GADNB": "GADNB AT OR ABOVE 1530 TRK 061 UNTIL 3000 TURN RIGHT DIRECT GADNB 3000 HOLD AT GADNB LEFT TURN INBOUNDCOURSE 241 LEGTIME 1 FAF FN06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "GAD",
+                    "fixes": {
+                        "GADNB": "GADNB AT OR ABOVE 3000 SPEED 210",
+                        "FN06": "FN06 AT OR ABOVE 3000 TRK 196 UNTIL 4.3 FROM FN06"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB24",
+            "fixes": {
+                "CN24": "CN24 AT OR ABOVE 3000",
+                "GADNB": "GADNB 2000 RNW 24 TRK 241 UNTIL 3000 TURN LEFT DIRECT GADNB 3000 HOLD AT GADNB RIGHT TURN INBOUNDCOURSE 061 LEGTIME 1 FAF GADNB MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "GAD",
+                    "fixes": {
+                        "GADNB": "GADNB AT OR ABOVE 3000 SPEED 210",
+                        "CN24": "CN24 AT OR ABOVE 3000 TRK 106 UNTIL 4.3 FROM CN24"
+                    }
+                }
+            ]
+        }
+    ]
+}

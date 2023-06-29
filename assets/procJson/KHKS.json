@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "BRENZ",
+            "lat": 32.41371111666667,
+            "lon": 90.25923056666667
+        },
+        {
+            "name": "CFBMV",
+            "lat": 32.57131666666667,
+            "lon": 90.33176111666667
+        },
+        {
+            "name": "GUGWA",
+            "lat": 32.41634166666667,
+            "lon": 90.26043888333334
+        },
+        {
+            "name": "HIRSU",
+            "lat": 32.507055566666665,
+            "lon": 90.30215556666667
+        },
+        {
+            "name": "IBRAQ",
+            "lat": 32.25311666666666,
+            "lon": 90.18561943333333
+        },
+        {
+            "name": "JILHO",
+            "lat": 32.14839166666667,
+            "lon": 90.13777778333333
+        },
+        {
+            "name": "JOTEK",
+            "lat": 32.28018888333333,
+            "lon": 90.14529443333333
+        },
+        {
+            "name": "OCARO",
+            "lat": 32.524011116666664,
+            "lon": 90.30996666666667
+        },
+        {
+            "name": "PI001",
+            "lat": 32.468167533333336,
+            "lon": 90.28400838333333
+        },
+        {
+            "name": "PI002",
+            "lat": 32.49729318333333,
+            "lon": 90.36163401666667
+        },
+        {
+            "name": "PI003",
+            "lat": 32.56928801666667,
+            "lon": 90.33010396666667
+        },
+        {
+            "name": "UTUWI",
+            "lat": 32.366233333333334,
+            "lon": 90.23743611666667
+        },
+        {
+            "name": "WOSBU",
+            "lat": 32.655205566666666,
+            "lon": 90.27685278333334
+        },
+        {
+            "name": "WUWRE",
+            "lat": 32.296405566666664,
+            "lon": 90.20543056666666
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 16",
+        "RNW 29",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS16",
+            "fixes": {
+                "HIRSU": "HIRSU AT OR ABOVE 2000",
+                "BRENZ": "BRENZ 1866 RNW 16 TRK 159 UNTIL 2000 TURN RIGHT DIRECT BRENZ AT OR ABOVE 3500 HOLD AT BRENZ RIGHT TURN INBOUNDCOURSE 159 LEGTIME 1 FAF BRENZ MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "JOTEK",
+                    "fixes": {
+                        "JOTEK": "JOTEK",
+                        "BRENZ": "BRENZ AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "WOSBU",
+                    "fixes": {
+                        "WOSBU": "WOSBU",
+                        "CFBMV": "CFBMV AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "OCARO": "OCARO AT OR ABOVE 2000",
+                "GUGWA": "GUGWA 1900",
+                "UTUWI": "UTUWI AT OR ABOVE 860 RNW 16 TRK 159 UNTIL 542",
+                "JILHO": "OVERFLY JILHO AT OR ABOVE 2000 HOLD AT JILHO LEFT TURN INBOUNDCOURSE 339 LEGDIST 4 FAF GUGWA MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "OCARO",
+                    "fixes": {
+                        "OCARO": "OCARO RIGHT TURN INBOUNDCOURSE 159 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "JILHO": "JILHO AT OR ABOVE 2000",
+                "IBRAQ": "IBRAQ 1900",
+                "WUWRE": "WUWRE AT OR ABOVE 1000 RNW 34 TRK 339 UNTIL 572",
+                "OCARO": "OVERFLY OCARO AT OR ABOVE 2000 HOLD AT OCARO RIGHT TURN INBOUNDCOURSE 159 LEGDIST 4 FAF IBRAQ MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "JILHO",
+                    "fixes": {
+                        "JILHO": "JILHO LEFT TURN INBOUNDCOURSE 339 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

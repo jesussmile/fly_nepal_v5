@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "EGLUG",
+            "lat": 23.770797216666665,
+            "lon": 35.233041666666665
+        },
+        {
+            "name": "IMTON",
+            "lat": 23.727591666666665,
+            "lon": 35.310805566666666
+        },
+        {
+            "name": "IN500",
+            "lat": 23.799166666666668,
+            "lon": 35.35775556666667
+        },
+        {
+            "name": "IN600",
+            "lat": 23.942272216666666,
+            "lon": 35.45181111666667
+        },
+        {
+            "name": "IN601",
+            "lat": 23.899030566666667,
+            "lon": 35.52965
+        },
+        {
+            "name": "OKNOK",
+            "lat": 23.684272216666667,
+            "lon": 35.388466666666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 16",
+        "RNW 24",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "IN500": "IN500 1500 RNW 16",
+                "IN600": "IN600 AT OR ABOVE 430",
+                "IN601": "IN601",
+                "OKNOK": "OKNOK AT OR ABOVE 2000 HOLD AT OKNOK RIGHT TURN INBOUNDCOURSE 256 LEGTIME 1 FAF IN500 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "EGLUG",
+                    "fixes": {
+                        "EGLUG": "EGLUG AT OR ABOVE 2000 SPEED 200",
+                        "IMTON": "IMTON"
+                    }
+                },
+                {
+                    "name": "IMTON",
+                    "fixes": {
+                        "IMTON": "IMTON"
+                    }
+                },
+                {
+                    "name": "OKNOK",
+                    "fixes": {
+                        "OKNOK": "OKNOK AT OR ABOVE 2000 SPEED 200",
+                        "IMTON": "IMTON"
+                    }
+                }
+            ]
+        }
+    ]
+}

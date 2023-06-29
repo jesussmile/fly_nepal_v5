@@ -1,0 +1,129 @@
+{
+    "fixes": [
+        {
+            "name": "FRV04",
+            "lat": 47.652222216666665,
+            "lon": 2.8043055666666667
+        },
+        {
+            "name": "FRV22",
+            "lat": 47.78458333333333,
+            "lon": 2.644222216666667
+        },
+        {
+            "name": "IRV04",
+            "lat": 47.600555566666664,
+            "lon": 2.8665000000000003
+        },
+        {
+            "name": "IRV22",
+            "lat": 47.836138883333334,
+            "lon": 2.5815555666666667
+        },
+        {
+            "name": "RV202",
+            "lat": 47.78347221666667,
+            "lon": 2.4858055666666665
+        },
+        {
+            "name": "RV204",
+            "lat": 47.888972216666666,
+            "lon": 2.67725
+        },
+        {
+            "name": "RV210",
+            "lat": 47.70277778333333,
+            "lon": 2.743305566666667
+        },
+        {
+            "name": "RV402",
+            "lat": 47.642555566666665,
+            "lon": 2.943
+        },
+        {
+            "name": "RV404",
+            "lat": 47.5585,
+            "lon": 2.7901388833333334
+        },
+        {
+            "name": "RV410",
+            "lat": 47.79397221666667,
+            "lon": 2.632833333333333
+        },
+        {
+            "name": "VANEG",
+            "lat": 47.66761111666667,
+            "lon": 2.4347222166666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 08",
+        "RNW 22",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "IRV04": "IRV04 AT OR ABOVE 2100 SPEED 190",
+                "FRV04": "FRV04 2100 RNW 04",
+                "RV410": "RV410 TURN RIGHT DIRECT",
+                "VANEG": "VANEG AT OR ABOVE 2300 SPEED 220 HOLD AT VANEG LEFT TURN INBOUNDCOURSE 310 ALT 6000 SPEED 220 LEGTIME 1 FAF FRV04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "RV402",
+                    "fixes": {
+                        "RV402": "RV402 AT OR ABOVE 3500 SPEED 190"
+                    }
+                },
+                {
+                    "name": "RV404",
+                    "fixes": {
+                        "RV404": "RV404 SPEED 190"
+                    }
+                },
+                {
+                    "name": "VANEG",
+                    "fixes": {
+                        "VANEG": "VANEG AT OR ABOVE 2200",
+                        "RV404": "RV404 SPEED 190"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "IRV22": "IRV22 AT OR ABOVE 2100 SPEED 210",
+                "FRV22": "FRV22 2100 RNW 22",
+                "RV210": "OVERFLY RV210 TURN LEFT DIRECT",
+                "VANEG": "VANEG AT OR ABOVE 2300 SPEED 200 HOLD AT VANEG LEFT TURN INBOUNDCOURSE 310 ALT 6000 SPEED 220 LEGTIME 1 FAF FRV22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "RV202",
+                    "fixes": {
+                        "RV202": "RV202 SPEED 210"
+                    }
+                },
+                {
+                    "name": "RV204",
+                    "fixes": {
+                        "RV204": "RV204 AT OR ABOVE 2400 SPEED 210"
+                    }
+                },
+                {
+                    "name": "VANEG",
+                    "fixes": {
+                        "VANEG": "VANEG AT OR ABOVE 2200",
+                        "RV202": "RV202 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

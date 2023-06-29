@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "BLANG",
+            "lat": 33.18525556666667,
+            "lon": 88.03404721666666
+        },
+        {
+            "name": "DINNI",
+            "lat": 33.48875,
+            "lon": 87.992625
+        },
+        {
+            "name": "JUMKU",
+            "lat": 33.588408333333334,
+            "lon": 87.97895
+        },
+        {
+            "name": "ZIRBO",
+            "lat": 33.28479721666667,
+            "lon": 88.02049721666667
+        },
+        {
+            "name": "ZOKSI",
+            "lat": 33.433588883333336,
+            "lon": 88.000175
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "BLANG": "BLANG AT OR ABOVE 3000",
+                "ZIRBO": "ZIRBO 2100 RNW 01 TRK 008 UNTIL 637",
+                "JUMKU": "OVERFLY JUMKU AT OR ABOVE 3000 HOLD AT JUMKU RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF ZIRBO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "BLANG",
+                    "fixes": {
+                        "BLANG": "BLANG RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "JUMKU": "JUMKU AT OR ABOVE 3000",
+                "DINNI": "DINNI 2100",
+                "ZOKSI": "ZOKSI AT OR ABOVE 1040 RNW 19 TRK 188 UNTIL 640",
+                "BLANG": "OVERFLY BLANG AT OR ABOVE 3000 HOLD AT BLANG RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4 FAF DINNI MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "JUMKU",
+                    "fixes": {
+                        "JUMKU": "JUMKU RIGHT TURN INBOUNDCOURSE 188 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

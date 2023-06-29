@@ -1,0 +1,174 @@
+{
+    "fixes": [
+        {
+            "name": "CAMOB",
+            "lat": 36.487777783333335,
+            "lon": 95.47915833333333
+        },
+        {
+            "name": "CIGEM",
+            "lat": 36.24551111666667,
+            "lon": 95.47973611666667
+        },
+        {
+            "name": "COVEZ",
+            "lat": 36.199691666666666,
+            "lon": 95.47984443333333
+        },
+        {
+            "name": "CUMOL",
+            "lat": 36.38684443333333,
+            "lon": 95.4794
+        },
+        {
+            "name": "DAVLE",
+            "lat": 36.10109166666667,
+            "lon": 95.48006666666667
+        },
+        {
+            "name": "ELIRE",
+            "lat": 36.10121111666667,
+            "lon": 95.60346666666666
+        },
+        {
+            "name": "FAMPO",
+            "lat": 36.100844433333336,
+            "lon": 95.35666666666667
+        },
+        {
+            "name": "FOSVI",
+            "lat": 36.48790556666667,
+            "lon": 95.60316943333333
+        },
+        {
+            "name": "GAFWU",
+            "lat": 36.48751943333333,
+            "lon": 95.35514721666667
+        },
+        {
+            "name": "HEGLI",
+            "lat": 36.33823888333333,
+            "lon": 95.47951388333334
+        },
+        {
+            "name": "JORDO",
+            "lat": 36.27106943333333,
+            "lon": 95.55878333333334
+        },
+        {
+            "name": "KEKLE",
+            "lat": 36.295211116666664,
+            "lon": 95.48439721666666
+        },
+        {
+            "name": "TUL",
+            "lat": 36.196252783333335,
+            "lon": 95.78809166666667
+        },
+        {
+            "name": "WIHFU",
+            "lat": 36.233719433333334,
+            "lon": 95.6735
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDB18",
+            "fixes": {
+                "WIHFU": "WIHFU AT OR ABOVE 3000",
+                "JORDO": "JORDO 2500",
+                "KEKLE": "KEKLE 1380 RNW 18 TRK 060 UNTIL 2500 TURN RIGHT DIRECT",
+                "TUL": "TUL AT OR ABOVE 3000 HOLD AT TUL RIGHT TURN INBOUNDCOURSE 261 LEGTIME 1 FAF JORDO MAP KEKLE"
+            },
+            "transitions": [
+                {
+                    "name": "TUL",
+                    "fixes": {
+                        "TUL": "TUL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDB36",
+            "fixes": {
+                "WIHFU": "WIHFU AT OR ABOVE 3000",
+                "JORDO": "JORDO 2500",
+                "KEKLE": "KEKLE 1380 RNW 36 TRK 060 UNTIL 2500 TURN RIGHT DIRECT",
+                "TUL": "TUL AT OR ABOVE 3000 HOLD AT TUL RIGHT TURN INBOUNDCOURSE 261 LEGTIME 1 FAF JORDO MAP KEKLE"
+            },
+            "transitions": [
+                {
+                    "name": "TUL",
+                    "fixes": {
+                        "TUL": "TUL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "CAMOB": "CAMOB AT OR ABOVE 2500",
+                "CUMOL": "CUMOL 2400",
+                "HEGLI": "HEGLI AT OR ABOVE 1460 RNW 18 TRK 175 UNTIL 968",
+                "DAVLE": "OVERFLY DAVLE AT OR ABOVE 2400 HOLD AT DAVLE RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF CUMOL MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "CAMOB",
+                    "fixes": {
+                        "CAMOB": "CAMOB RIGHT TURN INBOUNDCOURSE 175 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FOSVI",
+                    "fixes": {
+                        "FOSVI": "FOSVI SPEED 210"
+                    }
+                },
+                {
+                    "name": "GAFWU",
+                    "fixes": {
+                        "GAFWU": "GAFWU SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DAVLE": "DAVLE AT OR ABOVE 2400",
+                "COVEZ": "COVEZ 2400",
+                "CIGEM": "CIGEM AT OR ABOVE 1520 RNW 36 TRK 355 UNTIL 983",
+                "CAMOB": "OVERFLY CAMOB AT OR ABOVE 2500 HOLD AT CAMOB RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF COVEZ MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "DAVLE",
+                    "fixes": {
+                        "DAVLE": "DAVLE RIGHT TURN INBOUNDCOURSE 355 ALT 2400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ELIRE",
+                    "fixes": {
+                        "ELIRE": "ELIRE SPEED 210"
+                    }
+                },
+                {
+                    "name": "FAMPO",
+                    "fixes": {
+                        "FAMPO": "FAMPO SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

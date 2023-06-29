@@ -1,0 +1,174 @@
+{
+    "fixes": [
+        {
+            "name": "FF03",
+            "lat": 3.7689944333333334,
+            "lon": 51.803297216666664
+        },
+        {
+            "name": "FF21",
+            "lat": 3.9328888833333333,
+            "lon": 51.76322221666667
+        },
+        {
+            "name": "OI008",
+            "lat": 3.9101055666666666,
+            "lon": 51.785811116666665
+        },
+        {
+            "name": "OI009",
+            "lat": 3.9850250000000003,
+            "lon": 51.74856388333333
+        },
+        {
+            "name": "OI012",
+            "lat": 3.9754888833333335,
+            "lon": 51.665722216666666
+        },
+        {
+            "name": "OI017",
+            "lat": 3.601425,
+            "lon": 51.848475
+        },
+        {
+            "name": "OI018",
+            "lat": 3.6711361166666667,
+            "lon": 51.91426666666667
+        },
+        {
+            "name": "OI019",
+            "lat": 3.6396861166666667,
+            "lon": 51.760775
+        },
+        {
+            "name": "OI021",
+            "lat": 3.7655305666666665,
+            "lon": 51.81516666666667
+        },
+        {
+            "name": "OI022",
+            "lat": 3.683477783333333,
+            "lon": 51.831822216666666
+        },
+        {
+            "name": "OIA01",
+            "lat": 3.8478305666666666,
+            "lon": 51.800572216666666
+        },
+        {
+            "name": "OIA09",
+            "lat": 3.8620611166666667,
+            "lon": 51.79913333333333
+        },
+        {
+            "name": "OIANB",
+            "lat": 3.8601444333333332,
+            "lon": 51.80013056666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "14",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 03",
+                    "fixes": {
+                        "RNW 03": "RNW 03 TRK 030 UNTIL 460 TRK 045 UNTIL 1500 HDG 045 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 21",
+                    "fixes": {
+                        "RNW 21": "RNW 21 TRK 210 UNTIL 1500 HDG 210 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBZ03",
+            "fixes": {
+                "FF03": "FF03 1600",
+                "OIA01": "OIA01 97 RNW 03 TRK 060 UNTIL 1500 TURN RIGHT DIRECT",
+                "OIANB": "OIANB AT OR ABOVE 3000 HOLD AT OIANB LEFT TURN INBOUNDCOURSE 220 LEGTIME 1 FAF FF03 MAP OIA01"
+            },
+            "transitions": [
+                {
+                    "name": "OIA",
+                    "fixes": {
+                        "OIANB": "OIANB AT OR ABOVE 3000 TRK 220 UNTIL 8.2 FROM OIANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBY21",
+            "fixes": {
+                "FF21": "FF21 1600",
+                "OIA09": "OIA09 91 RNW 21 TRK 226 UNTIL 1300 TURN LEFT DIRECT",
+                "OIANB": "OIANB AT OR ABOVE 3000 HOLD AT OIANB RIGHT TURN INBOUNDCOURSE 062 ALT 3000 LEGTIME 1 FAF FF21 MAP OIA09"
+            },
+            "transitions": [
+                {
+                    "name": "OIA",
+                    "fixes": {
+                        "OIANB": "OIANB AT OR ABOVE 3000 TRK 062 UNTIL 7.0 FROM OIANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ03",
+            "fixes": {
+                "OI022": "OI022 AT OR ABOVE 2500",
+                "OI021": "OI021 1700 RNW 03 HDG 050 UNTIL 1200 TURN RIGHT DIRECT",
+                "OI019": "OVERFLY OI019 AT OR ABOVE 3000 HOLD AT OI019 RIGHT TURN INBOUNDCOURSE 320 ALT 3000 LEGTIME 1 FAF OI021 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "OI017",
+                    "fixes": {
+                        "OI017": "OI017 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "OI018",
+                    "fixes": {
+                        "OI018": "OI018 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "OI019",
+                    "fixes": {
+                        "OI019": "OI019 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY21",
+            "fixes": {
+                "OI009": "OI009 AT OR ABOVE 1500",
+                "OI008": "OI008 1060 RNW 21 HDG 210 UNTIL 1500 TURN LEFT DIRECT",
+                "OI012": "OVERFLY OI012 AT OR ABOVE 3000 HOLD AT OI012 LEFT TURN INBOUNDCOURSE 295 ALT 3000 LEGTIME 1 FAF OI008 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "OI012",
+                    "fixes": {
+                        "OI012": "OI012 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

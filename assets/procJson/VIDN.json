@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "CF08",
+            "lat": 30.163919433333334,
+            "lon": 78.01714443333333
+        },
+        {
+            "name": "D254O",
+            "lat": 30.123758333333335,
+            "lon": 77.88836666666667
+        },
+        {
+            "name": "D258A",
+            "lat": 30.187777783333335,
+            "lon": 78.16707778333334
+        },
+        {
+            "name": "DABGO",
+            "lat": 30.145544433333335,
+            "lon": 77.98114443333333
+        },
+        {
+            "name": "DDN",
+            "lat": 30.188916666666668,
+            "lon": 78.16683333333333
+        },
+        {
+            "name": "DDN30",
+            "lat": 30.047133333333335,
+            "lon": 77.61384721666667
+        },
+        {
+            "name": "FD08",
+            "lat": 30.158583333333333,
+            "lon": 78.03683056666667
+        },
+        {
+            "name": "FF08",
+            "lat": 30.166938883333334,
+            "lon": 78.03605278333333
+        },
+        {
+            "name": "MD08",
+            "lat": 30.184588883333333,
+            "lon": 78.14824721666666
+        },
+        {
+            "name": "ML08",
+            "lat": 30.185888883333334,
+            "lon": 78.15521388333333
+        },
+        {
+            "name": "SPNB",
+            "lat": 29.999911116666667,
+            "lon": 77.43200833333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD08",
+            "fixes": {
+                "FD08": "FD08 4100",
+                "MD08": "MD08 2218 RNW 08 TURN RIGHT TRK 284 INTERCEPT RADIAL 254 TO",
+                "DABGO": "DABGO SPEED 185 DABGO 5600 HOLD AT DABGO RIGHT TURN INBOUNDCOURSE 074 ALT 5600 LEGDIST 5 FAF FD08 MAP MD08"
+            },
+            "transitions": [
+                {
+                    "name": "SP",
+                    "fixes": {
+                        "SPNB": "SPNB",
+                        "DDN30": "DDN30 SPEED 185",
+                        "D254O": "D254O AT OR ABOVE 5600",
+                        "DABGO": "DABGO AT OR ABOVE 4100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC08",
+            "fixes": {
+                "CF08": "CF08 AT OR ABOVE 4100",
+                "FF08": "FF08 4100",
+                "ML08": "ML08 2101 RNW 08",
+                "D258A": "OVERFLY D258A TURN RIGHT HDG 290 INTERCEPT RADIAL 254 TO",
+                "DABGO": "DABGO DABGO 5600 SPEED 160 HOLD AT DABGO RIGHT TURN INBOUNDCOURSE 074 ALT 5600 LEGDIST 5 FAF FF08 MAP ML08"
+            },
+            "transitions": [
+                {
+                    "name": "DABGO",
+                    "fixes": {}
+                },
+                {
+                    "name": "SP",
+                    "fixes": {
+                        "SPNB": "SPNB",
+                        "DDN30": "DDN30 SPEED 185",
+                        "D254O": "D254O AT OR ABOVE 5600",
+                        "DABGO": "OVERFLY DABGO AT OR ABOVE 4100"
+                    }
+                }
+            ]
+        }
+    ]
+}

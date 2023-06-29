@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "ADDIL",
+            "lat": 28.401916666666665,
+            "lon": 99.68268333333333
+        },
+        {
+            "name": "AVDUW",
+            "lat": 28.459988883333335,
+            "lon": 99.75064166666667
+        },
+        {
+            "name": "COT",
+            "lat": 28.462016666666667,
+            "lon": 99.11854443333333
+        },
+        {
+            "name": "ETIKY",
+            "lat": 28.495430566666666,
+            "lon": 99.792175
+        },
+        {
+            "name": "ETUYA",
+            "lat": 28.403813883333335,
+            "lon": 99.55040556666667
+        },
+        {
+            "name": "FIZVY",
+            "lat": 28.550233333333335,
+            "lon": 99.85648888333333
+        },
+        {
+            "name": "WEGID",
+            "lat": 28.664997216666666,
+            "lon": 99.99150833333333
+        },
+        {
+            "name": "WUNOX",
+            "lat": 28.785358333333335,
+            "lon": 99.86001111666667
+        },
+        {
+            "name": "YISBO",
+            "lat": 28.58391943333333,
+            "lon": 99.89607221666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "WEGID": "WEGID AT OR ABOVE 3000",
+                "YISBO": "YISBO 2200",
+                "FIZVY": "FIZVY AT OR ABOVE 1260 RNW 13 TRK 127 UNTIL 940",
+                "ADDIL": "OVERFLY ADDIL AT OR ABOVE 3000 HOLD AT ADDIL RIGHT TURN INBOUNDCOURSE 307 LEGDIST 4 FAF YISBO MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "COT",
+                    "fixes": {
+                        "COT": "COT",
+                        "WUNOX": "WUNOX AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WEGID",
+                    "fixes": {
+                        "WEGID": "WEGID RIGHT TURN INBOUNDCOURSE 127 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ADDIL": "ADDIL AT OR ABOVE 3000",
+                "AVDUW": "AVDUW 2200",
+                "ETIKY": "ETIKY AT OR ABOVE 1220 RNW 31 TRK 307 UNTIL 925",
+                "WEGID": "OVERFLY WEGID AT OR ABOVE 3000 HOLD AT WEGID RIGHT TURN INBOUNDCOURSE 127 LEGDIST 4 FAF AVDUW MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ADDIL",
+                    "fixes": {
+                        "ADDIL": "ADDIL RIGHT TURN INBOUNDCOURSE 307 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "COT",
+                    "fixes": {
+                        "COT": "COT",
+                        "ETUYA": "ETUYA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

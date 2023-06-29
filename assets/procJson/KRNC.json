@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "DUHAY",
+            "lat": 35.64485833333333,
+            "lon": 85.92398056666667
+        },
+        {
+            "name": "WILGU",
+            "lat": 35.81282778333333,
+            "lon": 85.67326388333333
+        },
+        {
+            "name": "YUCBA",
+            "lat": 35.76038333333333,
+            "lon": 85.75174443333333
+        },
+        {
+            "name": "ZOVRI",
+            "lat": 35.58366388333334,
+            "lon": 86.01485556666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "ZOVRI": "ZOVRI AT OR ABOVE 3900",
+                "DUHAY": "DUHAY 2800 RNW 05 TRK 053 UNTIL 1432",
+                "WILGU": "OVERFLY WILGU AT OR ABOVE 3900 HOLD AT WILGU RIGHT TURN INBOUNDCOURSE 233 ALT 3900 LEGDIST 4 FAF DUHAY MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "ZOVRI",
+                    "fixes": {
+                        "ZOVRI": "ZOVRI RIGHT TURN INBOUNDCOURSE 052 ALT 3900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "WILGU": "WILGU AT OR ABOVE 3900",
+                "YUCBA": "YUCBA 2800 RNW 23 TRK 233 UNTIL 1312",
+                "ZOVRI": "OVERFLY ZOVRI AT OR ABOVE 3900 HOLD AT ZOVRI RIGHT TURN INBOUNDCOURSE 052 ALT 3900 LEGDIST 4 FAF YUCBA MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "WILGU",
+                    "fixes": {
+                        "WILGU": "WILGU RIGHT TURN INBOUNDCOURSE 233 ALT 3900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

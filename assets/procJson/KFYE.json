@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "BLLIS",
+            "lat": 35.28861666666667,
+            "lon": 89.38094166666667
+        },
+        {
+            "name": "CIPOG",
+            "lat": 35.124008333333336,
+            "lon": 89.40841388333334
+        },
+        {
+            "name": "NYATE",
+            "lat": 34.996475,
+            "lon": 89.429625
+        },
+        {
+            "name": "RSTEE",
+            "lat": 35.42090278333333,
+            "lon": 89.35878333333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "NYATE": "NYATE AT OR ABOVE 3000",
+                "CIPOG": "CIPOG 2100 RNW 01 TRK 008 UNTIL 747",
+                "RSTEE": "OVERFLY RSTEE AT OR ABOVE 3000 HOLD AT RSTEE RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF CIPOG MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "NYATE",
+                    "fixes": {
+                        "NYATE": "NYATE RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "RSTEE": "RSTEE AT OR ABOVE 3000",
+                "BLLIS": "BLLIS 2000 RNW 19 TRK 188 UNTIL 683",
+                "NYATE": "OVERFLY NYATE AT OR ABOVE 3000 HOLD AT NYATE RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4 FAF BLLIS MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "RSTEE",
+                    "fixes": {
+                        "RSTEE": "RSTEE RIGHT TURN INBOUNDCOURSE 188 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "fixes": [
+        {
+            "name": "GEE",
+            "lat": 42.834397216666666,
+            "lon": 77.73275
+        },
+        {
+            "name": "HURTA",
+            "lat": 42.92220833333333,
+            "lon": 77.92543333333333
+        },
+        {
+            "name": "JUVKI",
+            "lat": 43.03054443333333,
+            "lon": 78.05836111666666
+        },
+        {
+            "name": "KABVE",
+            "lat": 43.03441111666667,
+            "lon": 78.44943056666666
+        },
+        {
+            "name": "LENER",
+            "lat": 42.99222221666667,
+            "lon": 78.079975
+        },
+        {
+            "name": "MAJGU",
+            "lat": 43.02907221666667,
+            "lon": 78.16164166666667
+        },
+        {
+            "name": "POCZI",
+            "lat": 43.02888333333333,
+            "lon": 77.91966666666667
+        },
+        {
+            "name": "ROC",
+            "lat": 43.117958333333334,
+            "lon": 77.67279443333334
+        },
+        {
+            "name": "TAVIA",
+            "lat": 43.02903333333333,
+            "lon": 78.06502221666666
+        },
+        {
+            "name": "UFBIL",
+            "lat": 43.03245278333333,
+            "lon": 78.23674443333333
+        },
+        {
+            "name": "WAVRU",
+            "lat": 43.033208333333334,
+            "lon": 78.31843056666666
+        },
+        {
+            "name": "WUPIT",
+            "lat": 42.86771388333333,
+            "lon": 78.45200278333333
+        },
+        {
+            "name": "YAVUD",
+            "lat": 42.87303611666667,
+            "lon": 78.19687221666666
+        },
+        {
+            "name": "ZIGMI",
+            "lat": 43.032983333333334,
+            "lon": 78.29039721666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA10",
+            "fixes": {
+                "HURTA": "HURTA AT OR ABOVE 3000",
+                "LENER": "LENER 2700 LENER AT OR ABOVE 3000 HOLD AT LENER RIGHT TURN INBOUNDCOURSE 311 LEGTIME 1 FAF LENER MAP MAJGU",
+                "MAJGU": "MAJGU 1720 RNW 10 TRK 311 UNTIL 1720 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GEE",
+                    "fixes": {
+                        "GEE": "GEE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA28",
+            "fixes": {
+                "HURTA": "HURTA AT OR ABOVE 3000",
+                "LENER": "LENER 2700 LENER AT OR ABOVE 3000 HOLD AT LENER RIGHT TURN INBOUNDCOURSE 311 LEGTIME 1 FAF LENER MAP MAJGU",
+                "MAJGU": "MAJGU 1720 RNW 28 TRK 311 UNTIL 1720 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GEE",
+                    "fixes": {
+                        "GEE": "GEE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS28",
+            "fixes": {
+                "POCZI": "POCZI AT OR ABOVE 3000 POCZI POCZI AT OR ABOVE 3000 HOLD AT POCZI RIGHT TURN INBOUNDCOURSE 256 LEGTIME 1 FAF TAVIA MAP RNW 28",
+                "TAVIA": "TAVIA 2307 RNW 28 TRK 282 UNTIL 1500 TURN RIGHT HDG 130 INTERCEPT RADIAL 102 TO"
+            },
+            "transitions": [
+                {
+                    "name": "GEE",
+                    "fixes": {
+                        "GEE": "GEE AT OR ABOVE 3000 TRK 334 UNTIL 10.3 FROM GEE"
+                    }
+                },
+                {
+                    "name": "POCZI",
+                    "fixes": {
+                        "POCZI": "POCZI RIGHT TURN INBOUNDCOURSE 282 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "ROC",
+                    "fixes": {
+                        "ROC": "ROC AT OR ABOVE 3000 TRK 256 UNTIL 8.1 FROM ROC"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "KABVE": "KABVE AT OR ABOVE 4000",
+                "ZIGMI": "ZIGMI 2500",
+                "UFBIL": "UFBIL AT OR ABOVE 1740 RNW 10 TRK 102 UNTIL 1114",
+                "POCZI": "OVERFLY POCZI AT OR ABOVE 3000 HOLD AT POCZI RIGHT TURN INBOUNDCOURSE 282 LEGDIST 4 FAF ZIGMI MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "GEE",
+                    "fixes": {
+                        "GEE": "GEE",
+                        "WUPIT": "WUPIT AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "POCZI": "POCZI AT OR ABOVE 3000 OVERFLY POCZI AT OR ABOVE 3300 HOLD AT POCZI RIGHT TURN INBOUNDCOURSE 282 LEGDIST 5 FAF JUVKI MAP RNW 28",
+                "JUVKI": "JUVKI 2400 RNW 28",
+                "WAVRU": "WAVRU TURN LEFT DIRECT",
+                "YAVUD": "YAVUD"
+            },
+            "transitions": [
+                {
+                    "name": "GEE",
+                    "fixes": {
+                        "GEE": "GEE"
+                    }
+                },
+                {
+                    "name": "POCZI",
+                    "fixes": {
+                        "POCZI": "POCZI RIGHT TURN INBOUNDCOURSE 282 ALT 3000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "ROC",
+                    "fixes": {
+                        "ROC": "ROC"
+                    }
+                }
+            ]
+        }
+    ]
+}

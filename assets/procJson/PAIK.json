@@ -1,0 +1,141 @@
+{
+    "fixes": [
+        {
+            "name": "CABON",
+            "lat": 66.97329721666667,
+            "lon": 160.44353611666668
+        },
+        {
+            "name": "CITEM",
+            "lat": 66.93579721666667,
+            "lon": 160.00305833333334
+        },
+        {
+            "name": "FARME",
+            "lat": 66.945075,
+            "lon": 161.53583611666667
+        },
+        {
+            "name": "GRASY",
+            "lat": 66.85415278333333,
+            "lon": 160.81977778333334
+        },
+        {
+            "name": "KOBXU",
+            "lat": 66.89895,
+            "lon": 160.93703888333334
+        },
+        {
+            "name": "RAYKO",
+            "lat": 66.86607778333334,
+            "lon": 159.72206666666668
+        },
+        {
+            "name": "RELOC",
+            "lat": 66.99853611666667,
+            "lon": 159.74811943333333
+        },
+        {
+            "name": "UCANE",
+            "lat": 66.98868333333333,
+            "lon": 160.06331943333333
+        },
+        {
+            "name": "WINNR",
+            "lat": 66.90714721666667,
+            "lon": 160.55654166666667
+        },
+        {
+            "name": "WLK",
+            "lat": 66.599475,
+            "lon": 159.99082778333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "WLK2",
+            "rnw": "07",
+            "fixes": {
+                "CITEM": "CITEM",
+                "WLK": "WLK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA07",
+            "fixes": {
+                "GRASY": "GRASY AT OR ABOVE 2500",
+                "WINNR": "WINNR 1600",
+                "CABON": "OVERFLY CABON 1220 RNW 07 TRK 022 UNTIL 1900 TURN LEFT DIRECT",
+                "FARME": "OVERFLY FARME AT OR ABOVE 4200 HOLD AT FARME RIGHT TURN INBOUNDCOURSE 096 LEGDIST 5 FAF WINNR MAP CABON"
+            },
+            "transitions": [
+                {
+                    "name": "FARME",
+                    "fixes": {
+                        "FARME": "FARME"
+                    }
+                },
+                {
+                    "name": "GRASY",
+                    "fixes": {
+                        "GRASY": "GRASY LEFT TURN INBOUNDCOURSE 051 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "RELOC": "RELOC AT OR ABOVE 4500",
+                "UCANE": "UCANE 2900 RNW 25 TRK 253 UNTIL 900",
+                "KOBXU": "OVERFLY KOBXU AT OR ABOVE 2900 HOLD AT KOBXU RIGHT TURN INBOUNDCOURSE 051 LEGDIST 4 FAF UCANE MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "RAYKO",
+                    "fixes": {
+                        "RAYKO": "RAYKO"
+                    }
+                },
+                {
+                    "name": "RELOC",
+                    "fixes": {
+                        "RELOC": "RELOC RIGHT TURN INBOUNDCOURSE 254 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA25",
+            "fixes": {
+                "GRASY": "GRASY AT OR ABOVE 2500",
+                "WINNR": "WINNR 1600",
+                "CABON": "OVERFLY CABON 1220 RNW 25 TRK 022 UNTIL 1900 TURN LEFT DIRECT",
+                "FARME": "OVERFLY FARME AT OR ABOVE 4200 HOLD AT FARME RIGHT TURN INBOUNDCOURSE 096 LEGDIST 5 FAF WINNR MAP CABON"
+            },
+            "transitions": [
+                {
+                    "name": "FARME",
+                    "fixes": {
+                        "FARME": "FARME"
+                    }
+                },
+                {
+                    "name": "GRASY",
+                    "fixes": {
+                        "GRASY": "GRASY LEFT TURN INBOUNDCOURSE 051 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,346 @@
+{
+    "fixes": [
+        {
+            "name": "30TAC",
+            "lat": 53.75519443333334,
+            "lon": 8.572580566666666
+        },
+        {
+            "name": "AF001",
+            "lat": 53.828419733333334,
+            "lon": 8.389920683333333
+        },
+        {
+            "name": "AF002",
+            "lat": 53.797600816666666,
+            "lon": 8.375658983333333
+        },
+        {
+            "name": "CI08",
+            "lat": 53.73365,
+            "lon": 8.379169433333333
+        },
+        {
+            "name": "CI26",
+            "lat": 53.79671943333334,
+            "lon": 8.902716666666667
+        },
+        {
+            "name": "CUXIE",
+            "lat": 53.883305566666664,
+            "lon": 8.917505566666666
+        },
+        {
+            "name": "D081H",
+            "lat": 53.781841666666665,
+            "lon": 8.863113883333334
+        },
+        {
+            "name": "D170E",
+            "lat": 53.6865,
+            "lon": 8.673166666666667
+        },
+        {
+            "name": "D251H",
+            "lat": 53.734411116666664,
+            "lon": 8.451222216666666
+        },
+        {
+            "name": "D266J",
+            "lat": 53.76574721666667,
+            "lon": 8.372741666666666
+        },
+        {
+            "name": "D299J",
+            "lat": 53.85733333333334,
+            "lon": 8.415333333333333
+        },
+        {
+            "name": "DER08",
+            "lat": 53.76979721666667,
+            "lon": 8.67665
+        },
+        {
+            "name": "DER26",
+            "lat": 53.76543611666666,
+            "lon": 8.640391666666666
+        },
+        {
+            "name": "FI08",
+            "lat": 53.74998333333333,
+            "lon": 8.512772216666667
+        },
+        {
+            "name": "FT08",
+            "lat": 53.745972216666665,
+            "lon": 8.518627783333333
+        },
+        {
+            "name": "FT26",
+            "lat": 53.777594433333334,
+            "lon": 8.793244433333333
+        },
+        {
+            "name": "IMOWE",
+            "lat": 53.78540278333333,
+            "lon": 8.807183333333333
+        },
+        {
+            "name": "KUXWA",
+            "lat": 53.6779,
+            "lon": 8.7603
+        },
+        {
+            "name": "MN411",
+            "lat": 53.703688883333335,
+            "lon": 8.977825
+        },
+        {
+            "name": "MN414",
+            "lat": 53.80171111666667,
+            "lon": 8.944975
+        },
+        {
+            "name": "MT08",
+            "lat": 53.76439166666667,
+            "lon": 8.626552783333333
+        },
+        {
+            "name": "MT26",
+            "lat": 53.770716666666665,
+            "lon": 8.681486116666667
+        },
+        {
+            "name": "NDO",
+            "lat": 53.76898056666667,
+            "lon": 8.653552783333334
+        },
+        {
+            "name": "NORNB",
+            "lat": 53.78515556666667,
+            "lon": 8.806219433333334
+        },
+        {
+            "name": "PAFOC",
+            "lat": 53.811419433333334,
+            "lon": 9.0277
+        },
+        {
+            "name": "RW08",
+            "lat": 53.76543611666666,
+            "lon": 8.640391666666666
+        },
+        {
+            "name": "SWG",
+            "lat": 54.463552783333334,
+            "lon": 9.516561116666667
+        },
+        {
+            "name": "WTM",
+            "lat": 53.55433333333333,
+            "lon": 7.725111116666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "MN108",
+            "rnw": "08",
+            "fixes": {
+                "DER08": "OVERFLY DER08 TRK 075 UNTIL 2000 HDG 075 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MN126",
+            "rnw": "26",
+            "fixes": {
+                "DER26": "OVERFLY DER26 TRK 255 UNTIL 2000 HDG 255 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS08",
+            "fixes": {
+                "CI08": "CI08 AT OR ABOVE 2000",
+                "FI08": "FI08 1600 RNW 08 TRK 075 UNTIL 1000 HDG 217 VECTORS FAF FI08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "D299J",
+                    "fixes": {
+                        "D299J": "D299J AT OR BELOW 7000 AT OR ABOVE 3000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D266J": "D266J AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS26",
+            "fixes": {
+                "CI26": "CI26 2000",
+                "NORNB": "NORNB 1600 RNW 26 TRK 255 UNTIL 1000 TURN LEFT DIRECT NORNB 2000 FAF NORNB MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "NOR",
+                    "fixes": {
+                        "NORNB": "NORNB RIGHT TURN INBOUNDCOURSE 255 ALT 2000 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SWG",
+                    "fixes": {
+                        "SWG": "SWG SPEED 230",
+                        "NORNB": "NORNB HOLD AT NORNB RIGHT TURN INBOUNDCOURSE 255 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "WTM",
+                    "fixes": {
+                        "WTM": "WTM SPEED 230",
+                        "NORNB": "NORNB HOLD AT NORNB RIGHT TURN INBOUNDCOURSE 255 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "NORNB": "NORNB 1600 RNW 26 TRK 255 UNTIL 1000 TURN LEFT DIRECT NORNB AT OR ABOVE 2000 FAF NORNB MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "NOR",
+                    "fixes": {
+                        "NORNB": "NORNB RIGHT TURN INBOUNDCOURSE 255 ALT 2000 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SWG",
+                    "fixes": {
+                        "SWG": "SWG",
+                        "NORNB": "NORNB HOLD AT NORNB RIGHT TURN INBOUNDCOURSE 255 ALT 2000 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "WTM",
+                    "fixes": {
+                        "WTM": "WTM",
+                        "NORNB": "NORNB HOLD AT NORNB RIGHT TURN INBOUNDCOURSE 255 ALT 2000 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "MN414": "MN414 AT OR ABOVE 2000",
+                "IMOWE": "IMOWE 1600 RNW 26 TRK 255 UNTIL 1000 TURN LEFT DIRECT",
+                "KUXWA": "KUXWA AT OR ABOVE 2000 SPEED 220 FAF IMOWE MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "CUXIE",
+                    "fixes": {
+                        "CUXIE": "CUXIE AT OR ABOVE 2000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "KUXWA",
+                    "fixes": {
+                        "KUXWA": "KUXWA AT OR ABOVE 2000 SPEED 220",
+                        "MN411": "MN411 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "PAFOC",
+                    "fixes": {
+                        "PAFOC": "PAFOC AT OR ABOVE 2000 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR08",
+            "fixes": {
+                "FT08": "FT08 1600",
+                "30TAC": "30TAC AT OR ABOVE 500",
+                "MT08": "MT08 282 RNW 08 TRK 071 UNTIL 1000 HDG 250 VECTORS FAF FT08 MAP MT08"
+            },
+            "transitions": [
+                {
+                    "name": "D170E",
+                    "fixes": {
+                        "D170E": "D170E AT OR ABOVE 4000",
+                        "NDO": "NDO 4000 TRK 286 UNTIL 7.5 FROM NDO TURN LEFT DIRECT",
+                        "D251H": "D251H AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "SWG",
+                    "fixes": {
+                        "SWG": "SWG",
+                        "D170E": "D170E AT OR ABOVE 4000 HOLD AT D170E RIGHT TURN INBOUNDCOURSE 350 LEGDIST 5",
+                        "NDO": "NDO 4000 TRK 286 UNTIL 7.5 FROM NDO TURN LEFT DIRECT",
+                        "D251H": "D251H AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "WTM",
+                    "fixes": {
+                        "WTM": "WTM",
+                        "D170E": "D170E AT OR ABOVE 4000",
+                        "NDO": "NDO 4000 TRK 286 UNTIL 7.5 FROM NDO TURN LEFT DIRECT",
+                        "D251H": "D251H AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR26",
+            "fixes": {
+                "FT26": "FT26 1600",
+                "MT26": "MT26 155 RNW 26 TRK 261 UNTIL 473 HDG 100 VECTORS FAF FT26 MAP MT26"
+            },
+            "transitions": [
+                {
+                    "name": "D170E",
+                    "fixes": {
+                        "D170E": "D170E AT OR ABOVE 4000",
+                        "NDO": "NDO 4000 TRK 046 UNTIL 7.5 FROM NDO HDG 152 INTERCEPT RADIAL 062 FROM NDO TURN RIGHT DIRECT",
+                        "D081H": "D081H AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "SWG",
+                    "fixes": {
+                        "SWG": "SWG",
+                        "D170E": "D170E AT OR ABOVE 4000 HOLD AT D170E RIGHT TURN INBOUNDCOURSE 350 LEGDIST 5",
+                        "NDO": "NDO 4000 TRK 046 UNTIL 7.5 FROM NDO HDG 152 INTERCEPT RADIAL 062 FROM NDO TURN RIGHT DIRECT",
+                        "D081H": "D081H AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "WTM",
+                    "fixes": {
+                        "WTM": "WTM",
+                        "D170E": "D170E AT OR ABOVE 4000",
+                        "NDO": "NDO 4000 TRK 046 UNTIL 7.5 FROM NDO HDG 152 INTERCEPT RADIAL 062 FROM NDO TURN RIGHT DIRECT",
+                        "D081H": "D081H AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

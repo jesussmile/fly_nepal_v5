@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CEVUN",
+            "lat": 31.496438883333333,
+            "lon": 88.28364721666667
+        },
+        {
+            "name": "JOVOK",
+            "lat": 31.538580566666667,
+            "lon": 88.36781388333333
+        },
+        {
+            "name": "UZJEP",
+            "lat": 31.4719,
+            "lon": 88.23471943333334
+        },
+        {
+            "name": "WIPAR",
+            "lat": 31.363222216666667,
+            "lon": 88.01875278333333
+        },
+        {
+            "name": "YOSLU",
+            "lat": 31.43030278333333,
+            "lon": 88.15191666666666
+        },
+        {
+            "name": "ZEDEG",
+            "lat": 31.405530566666666,
+            "lon": 88.10268888333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "JOVOK": "JOVOK AT OR ABOVE 2000",
+                "CEVUN": "CEVUN 1800",
+                "UZJEP": "UZJEP AT OR ABOVE 860 RNW 12 TRK 121 UNTIL 566",
+                "WIPAR": "OVERFLY WIPAR AT OR ABOVE 2000 HOLD AT WIPAR RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4 FAF CEVUN MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "JOVOK",
+                    "fixes": {
+                        "JOVOK": "JOVOK RIGHT TURN INBOUNDCOURSE 121 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "WIPAR": "WIPAR AT OR ABOVE 2000",
+                "ZEDEG": "ZEDEG 1800",
+                "YOSLU": "YOSLU AT OR ABOVE 860 RNW 30 TRK 301 UNTIL 566",
+                "JOVOK": "OVERFLY JOVOK AT OR ABOVE 2000 HOLD AT JOVOK RIGHT TURN INBOUNDCOURSE 121 LEGDIST 4 FAF ZEDEG MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "WIPAR",
+                    "fixes": {
+                        "WIPAR": "WIPAR RIGHT TURN INBOUNDCOURSE 301 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

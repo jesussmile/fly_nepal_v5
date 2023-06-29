@@ -1,0 +1,157 @@
+{
+    "fixes": [
+        {
+            "name": "BALVE",
+            "lat": 41.927725,
+            "lon": 93.56571388333333
+        },
+        {
+            "name": "CABOX",
+            "lat": 41.754497216666664,
+            "lon": 93.48481943333333
+        },
+        {
+            "name": "CINOR",
+            "lat": 41.75869443333333,
+            "lon": 93.33619721666666
+        },
+        {
+            "name": "COSED",
+            "lat": 41.826275,
+            "lon": 93.56571388333333
+        },
+        {
+            "name": "JOGPI",
+            "lat": 42.00967778333333,
+            "lon": 93.676375
+        },
+        {
+            "name": "JONRU",
+            "lat": 41.72651388333333,
+            "lon": 93.52224443333333
+        },
+        {
+            "name": "NEVAD",
+            "lat": 42.01614443333333,
+            "lon": 93.53901111666667
+        },
+        {
+            "name": "PARRI",
+            "lat": 41.63920278333333,
+            "lon": 93.56583888333333
+        },
+        {
+            "name": "RROBN",
+            "lat": 41.60084166666667,
+            "lon": 93.56584721666667
+        },
+        {
+            "name": "TNU",
+            "lat": 41.783883333333335,
+            "lon": 93.10903333333333
+        },
+        {
+            "name": "ZAGTU",
+            "lat": 41.49108888333333,
+            "lon": 93.56587221666666
+        },
+        {
+            "name": "ZEMET",
+            "lat": 41.93423056666666,
+            "lon": 93.91913056666667
+        },
+        {
+            "name": "ZUKUK",
+            "lat": 41.73933888333333,
+            "lon": 93.56580278333334
+        },
+        {
+            "name": "ZUNIP",
+            "lat": 41.81341388333333,
+            "lon": 93.40585833333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 18",
+        "RNW 22",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS36",
+            "fixes": {
+                "ZAGTU": "ZAGTU AT OR ABOVE 3000",
+                "RROBN": "RROBN 2500 RNW 36 TRK 357 UNTIL 2000",
+                "TNU": "TNU AT OR ABOVE 4000 HOLD AT TNU RIGHT TURN INBOUNDCOURSE 236 LEGTIME 1 FAF RROBN MAP RNW 36"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "BALVE": "BALVE AT OR ABOVE 4000",
+                "COSED": "COSED 3400",
+                "ZUKUK": "ZUKUK AT OR ABOVE 1740 RNW 18 TRK 177 UNTIL 1600 TURN LEFT DIRECT",
+                "TNU": "OVERFLY TNU AT OR ABOVE 4000 HOLD AT TNU RIGHT TURN INBOUNDCOURSE 227 LEGDIST 4 FAF COSED MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "NEVAD",
+                    "fixes": {
+                        "NEVAD": "NEVAD"
+                    }
+                },
+                {
+                    "name": "TNU",
+                    "fixes": {
+                        "TNU": "TNU",
+                        "BALVE": "OVERFLY BALVE AT OR ABOVE 4000 HOLD AT BALVE RIGHT TURN INBOUNDCOURSE 177 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZEMET",
+                    "fixes": {
+                        "ZEMET": "ZEMET",
+                        "JOGPI": "JOGPI AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "ZUNIP": "ZUNIP AT OR ABOVE 3200 OVERFLY ZUNIP AT OR ABOVE 3200 SPEED 240 HOLD AT ZUNIP RIGHT TURN INBOUNDCOURSE 222 LEGDIST 4 FAF CABOX MAP RNW 22",
+                "CABOX": "CABOX 2500",
+                "JONRU": "JONRU AT OR ABOVE 1740 RNW 22 TRK 222 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ZUNIP",
+                    "fixes": {
+                        "ZUNIP": "ZUNIP RIGHT TURN INBOUNDCOURSE 222 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ZAGTU": "ZAGTU AT OR ABOVE 3000",
+                "RROBN": "RROBN 2500",
+                "PARRI": "PARRI AT OR ABOVE 1760 RNW 36 TRK 357 UNTIL 1500",
+                "CINOR": "OVERFLY CINOR AT OR ABOVE 4000 HOLD AT CINOR RIGHT TURN INBOUNDCOURSE 259 LEGDIST 4 FAF RROBN MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ZAGTU",
+                    "fixes": {
+                        "ZAGTU": "ZAGTU RIGHT TURN INBOUNDCOURSE 357 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

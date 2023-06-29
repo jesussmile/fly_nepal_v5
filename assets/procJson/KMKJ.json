@@ -1,0 +1,89 @@
+{
+    "fixes": [
+        {
+            "name": "BAYYA",
+            "lat": 36.92631111666667,
+            "lon": 81.21973333333334
+        },
+        {
+            "name": "CICAG",
+            "lat": 36.858280566666664,
+            "lon": 81.50041666666667
+        },
+        {
+            "name": "DORFF",
+            "lat": 36.945138883333335,
+            "lon": 81.46587221666667
+        },
+        {
+            "name": "MINTS",
+            "lat": 36.944941666666665,
+            "lon": 81.14228888333334
+        },
+        {
+            "name": "PSK",
+            "lat": 37.08768611666667,
+            "lon": 80.71288333333334
+        },
+        {
+            "name": "WUZUR",
+            "lat": 36.96405278333334,
+            "lon": 81.06259721666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC26",
+            "fixes": {
+                "MINTS": "MINTS AT OR ABOVE 5100",
+                "BAYYA": "BAYYA 4500 RNW 26 TRK 259 UNTIL 4600 TURN LEFT HDG 070 INTERCEPT RADIAL 072 TO",
+                "WUZUR": "WUZUR WUZUR AT OR ABOVE 6000 HOLD AT WUZUR RIGHT TURN INBOUNDCOURSE 259 LEGTIME 1 FAF BAYYA MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "PSK",
+                    "fixes": {
+                        "PSK": "PSK",
+                        "WUZUR": "WUZUR AT OR ABOVE 5700"
+                    }
+                },
+                {
+                    "name": "WUZUR",
+                    "fixes": {
+                        "WUZUR": "WUZUR RIGHT TURN INBOUNDCOURSE 259 ALT 5700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "WUZUR": "WUZUR AT OR ABOVE 5700",
+                "MINTS": "MINTS AT OR ABOVE 5100",
+                "BAYYA": "BAYYA 4500 RNW 26 TRK 259 UNTIL 2958",
+                "CICAG": "OVERFLY CICAG AT OR ABOVE 6200 HOLD AT CICAG RIGHT TURN INBOUNDCOURSE 259 LEGDIST 5 FAF BAYYA MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "DORFF",
+                    "fixes": {
+                        "DORFF": "DORFF",
+                        "WUZUR": "OVERFLY WUZUR AT OR ABOVE 5700 HOLD AT WUZUR RIGHT TURN INBOUNDCOURSE 259 ALT 5700 LEGDIST 6"
+                    }
+                },
+                {
+                    "name": "PSK",
+                    "fixes": {
+                        "PSK": "PSK"
+                    }
+                }
+            ]
+        }
+    ]
+}

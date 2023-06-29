@@ -1,0 +1,156 @@
+{
+    "fixes": [
+        {
+            "name": "AVSAM",
+            "lat": 44.269191666666664,
+            "lon": 78.62456388333334
+        },
+        {
+            "name": "DASRO",
+            "lat": 44.2936,
+            "lon": 78.00892221666666
+        },
+        {
+            "name": "DAXUL",
+            "lat": 44.220111116666665,
+            "lon": 78.42111666666666
+        },
+        {
+            "name": "ETMUD",
+            "lat": 44.21261388333333,
+            "lon": 78.46265278333334
+        },
+        {
+            "name": "EXTRO",
+            "lat": 44.35458611666667,
+            "lon": 78.14940278333333
+        },
+        {
+            "name": "GABID",
+            "lat": 44.208788883333334,
+            "lon": 78.48379721666667
+        },
+        {
+            "name": "IGSOG",
+            "lat": 44.19277221666667,
+            "lon": 78.09380833333333
+        },
+        {
+            "name": "NALTU",
+            "lat": 44.18840556666667,
+            "lon": 78.59611666666666
+        },
+        {
+            "name": "PI001",
+            "lat": 44.19831348333334,
+            "lon": 78.54207343333333
+        },
+        {
+            "name": "PI002",
+            "lat": 44.13687161666667,
+            "lon": 78.59350463333334
+        },
+        {
+            "name": "PI003",
+            "lat": 44.184119833333334,
+            "lon": 78.62098391666666
+        },
+        {
+            "name": "SATIK",
+            "lat": 44.10761111666667,
+            "lon": 78.56775
+        },
+        {
+            "name": "URLIM",
+            "lat": 44.27368333333333,
+            "lon": 78.12156666666667
+        },
+        {
+            "name": "VIXAG",
+            "lat": 44.249636116666665,
+            "lon": 78.25663888333334
+        },
+        {
+            "name": "YPQNB",
+            "lat": 44.21245278333333,
+            "lon": 78.463125
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 13",
+        "RNW 27",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "YPQNB": "YPQNB 1910 RNW 09 TRK 088 UNTIL 2900 TURN RIGHT DIRECT YPQNB 2900 HOLD AT YPQNB LEFT TURN INBOUNDCOURSE 268 LEGTIME 1 FAF YPQNB MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "YPQ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "NALTU": "NALTU AT OR ABOVE 2700",
+                "GABID": "GABID 2200",
+                "DAXUL": "DAXUL AT OR ABOVE 1310 RNW 09 HDG 088 UNTIL 2900 TURN LEFT DIRECT",
+                "AVSAM": "OVERFLY AVSAM SPEED 250 HOLD AT AVSAM LEFT TURN INBOUNDCOURSE 268 SPEED 230 LEGTIME 1 FAF GABID MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "AVSAM",
+                    "fixes": {
+                        "AVSAM": "AVSAM SPEED 210"
+                    }
+                },
+                {
+                    "name": "SATIK",
+                    "fixes": {
+                        "SATIK": "SATIK SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "URLIM": "URLIM AT OR ABOVE 2200",
+                "VIXAG": "VIXAG 2000 RNW 27",
+                "ETMUD": "OVERFLY ETMUD 2900 HOLD AT ETMUD RIGHT TURN INBOUNDCOURSE 268 LEGTIME 1 FAF VIXAG MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "DASRO",
+                    "fixes": {
+                        "DASRO": "DASRO"
+                    }
+                },
+                {
+                    "name": "EXTRO",
+                    "fixes": {
+                        "EXTRO": "EXTRO SPEED 210"
+                    }
+                },
+                {
+                    "name": "IGSOG",
+                    "fixes": {
+                        "IGSOG": "IGSOG SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

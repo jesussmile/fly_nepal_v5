@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "BUCTA",
+            "lat": 40.98528056666667,
+            "lon": 80.45896388333334
+        },
+        {
+            "name": "FIVEG",
+            "lat": 40.878422216666664,
+            "lon": 80.57600556666667
+        },
+        {
+            "name": "MERCY",
+            "lat": 41.266052783333336,
+            "lon": 80.23614721666667
+        },
+        {
+            "name": "VOLAN",
+            "lat": 41.13430833333334,
+            "lon": 80.14453056666666
+        },
+        {
+            "name": "WOBUT",
+            "lat": 41.09173056666667,
+            "lon": 80.34185278333334
+        },
+        {
+            "name": "ZARTO",
+            "lat": 41.174072216666666,
+            "lon": 80.25090833333333
+        },
+        {
+            "name": "ZULAX",
+            "lat": 40.95799443333333,
+            "lon": 80.4889
+        },
+        {
+            "name": "ZUTIV",
+            "lat": 40.92312221666667,
+            "lon": 80.75540556666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 13",
+        "RNW 23",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "FIVEG": "FIVEG AT OR ABOVE 3600",
+                "ZULAX": "ZULAX 2700",
+                "BUCTA": "BUCTA AT OR ABOVE 2000 RNW 05 TRK 049 UNTIL 1307",
+                "ZARTO": "OVERFLY ZARTO AT OR ABOVE 3000 HOLD AT ZARTO RIGHT TURN INBOUNDCOURSE 229 LEGDIST 5 FAF ZULAX MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "FIVEG",
+                    "fixes": {
+                        "FIVEG": "FIVEG LEFT TURN INBOUNDCOURSE 049 ALT 3600 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "ZUTIV",
+                    "fixes": {
+                        "ZUTIV": "ZUTIV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "ZARTO": "ZARTO AT OR ABOVE 3000",
+                "WOBUT": "WOBUT 2600 RNW 23 TRK 229 UNTIL 1288",
+                "FIVEG": "OVERFLY FIVEG AT OR ABOVE 3600 HOLD AT FIVEG LEFT TURN INBOUNDCOURSE 049 LEGDIST 5 FAF WOBUT MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "MERCY",
+                    "fixes": {
+                        "MERCY": "MERCY"
+                    }
+                },
+                {
+                    "name": "VOLAN",
+                    "fixes": {
+                        "VOLAN": "VOLAN"
+                    }
+                },
+                {
+                    "name": "ZARTO",
+                    "fixes": {
+                        "ZARTO": "ZARTO RIGHT TURN INBOUNDCOURSE 229 ALT 3000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

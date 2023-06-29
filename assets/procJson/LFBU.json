@@ -1,0 +1,201 @@
+{
+    "fixes": [
+        {
+            "name": "AGONB",
+            "lat": 45.71072221666667,
+            "lon": 0.42688888333333336
+        },
+        {
+            "name": "ARPIL",
+            "lat": 45.68602778333333,
+            "lon": 0.6978611166666667
+        },
+        {
+            "name": "BU412",
+            "lat": 45.73291666666667,
+            "lon": 0.17825
+        },
+        {
+            "name": "CNA",
+            "lat": 45.65955556666667,
+            "lon": 0.31163888333333334
+        },
+        {
+            "name": "FF28",
+            "lat": 45.71358333333333,
+            "lon": 0.40341666666666665
+        },
+        {
+            "name": "FQ28",
+            "lat": 45.712888883333335,
+            "lon": 0.40338888333333334
+        },
+        {
+            "name": "FU28Z",
+            "lat": 45.71363888333333,
+            "lon": 0.40352778333333333
+        },
+        {
+            "name": "GONPO",
+            "lat": 45.70336111666667,
+            "lon": 0.5215277833333334
+        },
+        {
+            "name": "LMG",
+            "lat": 45.815916666666666,
+            "lon": 1.0255833333333333
+        },
+        {
+            "name": "MQ28",
+            "lat": 45.72845556666667,
+            "lon": 0.24523333333333333
+        },
+        {
+            "name": "NORON",
+            "lat": 45.48472221666667,
+            "lon": 0.6775
+        },
+        {
+            "name": "RW28",
+            "lat": 45.72853333333333,
+            "lon": 0.2302138833333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [
+        {
+            "name": "CNA2D",
+            "rnw": "28",
+            "fixes": {
+                "CNA": "CNA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "CNA2E",
+            "rnw": "10",
+            "fixes": {
+                "AGONB": "AGONB TURN LEFT HDG 299 INTERCEPT RADIAL 254 TO",
+                "CNA": "CNA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "CNA2W",
+            "rnw": "28",
+            "fixes": {
+                "AGONB": "AGONB TURN LEFT HDG 299 INTERCEPT RADIAL 254 TO",
+                "CNA": "CNA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LMG2E",
+            "rnw": "10",
+            "fixes": {
+                "AGONB": "AGONB",
+                "LMG": "LMG"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LMG2W",
+            "rnw": "28",
+            "fixes": {
+                "AGONB": "AGONB",
+                "LMG": "LMG"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NORO2E",
+            "rnw": "10",
+            "fixes": {
+                "AGONB": "AGONB",
+                "NORON": "NORON"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NORO2W",
+            "rnw": "28",
+            "fixes": {
+                "AGONB": "AGONB",
+                "NORON": "NORON"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS28",
+            "fixes": {
+                "AGONB": "AGONB AT OR ABOVE 2800 AGONB 2800 SPEED 180 FAF FF28 MAP RNW 28",
+                "FF28": "FF28 2800 RNW 28 TRK 276 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AGO",
+                    "fixes": {
+                        "AGONB": "AGONB LEFT TURN INBOUNDCOURSE 276 ALT 2800 SPEED 190 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "ARPIL",
+                    "fixes": {
+                        "ARPIL": "ARPIL AT OR ABOVE 2800 TRK 277 UNTIL 7.5 FROM ARPIL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD28",
+            "fixes": {
+                "AGONB": "AGONB AT OR ABOVE 2800 AGONB 2800 SPEED 180 FAF FQ28 MAP MQ28",
+                "FQ28": "FQ28 2800",
+                "MQ28": "MQ28 664 RNW 28 TRK 277 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AGO",
+                    "fixes": {
+                        "AGONB": "AGONB LEFT TURN INBOUNDCOURSE 276 ALT 2800 SPEED 190 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "ARPIL",
+                    "fixes": {
+                        "ARPIL": "ARPIL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ28",
+            "fixes": {
+                "FU28Z": "FU28Z 2800 RNW 28",
+                "BU412": "OVERFLY BU412 SPEED 180 TURN LEFT DIRECT",
+                "GONPO": "GONPO AT OR BELOW 2800 SPEED 180 HOLD AT GONPO LEFT TURN INBOUNDCOURSE 276 ALT 2800 SPEED 220 LEGTIME 1 FAF FU28Z MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "GONPO",
+                    "fixes": {
+                        "GONPO": "GONPO AT OR ABOVE 2800 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

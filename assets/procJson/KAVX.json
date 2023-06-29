@@ -1,0 +1,117 @@
+{
+    "fixes": [
+        {
+            "name": "MAFPI",
+            "lat": 33.42146111666667,
+            "lon": 118.41311388333334
+        },
+        {
+            "name": "MAJUZ",
+            "lat": 33.401572216666665,
+            "lon": 118.41603056666666
+        },
+        {
+            "name": "PI001",
+            "lat": 33.515812116666666,
+            "lon": 118.39924268333333
+        },
+        {
+            "name": "PI002",
+            "lat": 33.57227496666667,
+            "lon": 118.45219873333333
+        },
+        {
+            "name": "PI003",
+            "lat": 33.623335866666665,
+            "lon": 118.38337693333334
+        },
+        {
+            "name": "RIGLI",
+            "lat": 33.45791388333333,
+            "lon": 118.40776943333333
+        },
+        {
+            "name": "SXC",
+            "lat": 33.37505556666667,
+            "lon": 118.41991111666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDB04",
+            "fixes": {
+                "RIGLI": "RIGLI 2300",
+                "MAFPI": "OVERFLY MAFPI 2220 RNW 04",
+                "SXC": "SXC AT OR ABOVE 3400 HOLD AT SXC LEFT TURN INBOUNDCOURSE 015 LEGTIME 1 FAF RIGLI MAP MAFPI"
+            },
+            "transitions": [
+                {
+                    "name": "SXC",
+                    "fixes": {
+                        "SXC": "SXC",
+                        "RIGLI": "RIGLI AT OR ABOVE 3400",
+                        "PI001": "PI001 AT OR ABOVE 3400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDB22",
+            "fixes": {
+                "RIGLI": "RIGLI 2300",
+                "MAFPI": "OVERFLY MAFPI 2220 RNW 22",
+                "SXC": "SXC AT OR ABOVE 3400 HOLD AT SXC LEFT TURN INBOUNDCOURSE 015 LEGTIME 1 FAF RIGLI MAP MAFPI"
+            },
+            "transitions": [
+                {
+                    "name": "SXC",
+                    "fixes": {
+                        "SXC": "SXC",
+                        "RIGLI": "RIGLI AT OR ABOVE 3400",
+                        "PI001": "PI001 AT OR ABOVE 3400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA04",
+            "fixes": {
+                "SXC": "SXC 3100 SXC AT OR ABOVE 3400 HOLD AT SXC LEFT TURN INBOUNDCOURSE 015 LEGTIME 1 FAF SXC MAP MAJUZ",
+                "MAJUZ": "OVERFLY MAJUZ 2580 RNW 04 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SXC",
+                    "fixes": {
+                        "SXC": "SXC LEFT TURN INBOUNDCOURSE 015 ALT 3400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA22",
+            "fixes": {
+                "SXC": "SXC 3100 SXC AT OR ABOVE 3400 HOLD AT SXC LEFT TURN INBOUNDCOURSE 015 LEGTIME 1 FAF SXC MAP MAJUZ",
+                "MAJUZ": "OVERFLY MAJUZ 2580 RNW 22 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SXC",
+                    "fixes": {
+                        "SXC": "SXC LEFT TURN INBOUNDCOURSE 015 ALT 3400 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

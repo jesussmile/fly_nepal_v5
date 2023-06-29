@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "KIKTO",
+            "lat": 1.4553333333333334,
+            "lon": 15.911666666666667
+        },
+        {
+            "name": "MOLIS",
+            "lat": 1.4348888833333333,
+            "lon": 15.992361116666666
+        },
+        {
+            "name": "NAXAL",
+            "lat": 1.8578055666666666,
+            "lon": 16.098111116666665
+        },
+        {
+            "name": "OU501",
+            "lat": 1.5161111166666665,
+            "lon": 16.012666666666668
+        },
+        {
+            "name": "OU502",
+            "lat": 1.6885,
+            "lon": 16.055777783333333
+        },
+        {
+            "name": "OU503",
+            "lat": 1.7246111166666667,
+            "lon": 16.064805566666667
+        },
+        {
+            "name": "OU504",
+            "lat": 1.5523888833333332,
+            "lon": 16.02175
+        },
+        {
+            "name": "RUSMA",
+            "lat": 1.4144722166666668,
+            "lon": 16.073055566666667
+        },
+        {
+            "name": "TIXEP",
+            "lat": 1.8349166666666665,
+            "lon": 16.1885
+        },
+        {
+            "name": "VITRA",
+            "lat": 1.8806944333333333,
+            "lon": 16.007722216666668
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "MOLIS": "MOLIS AT OR ABOVE 3000",
+                "OU501": "OU501 3000 RNW 01",
+                "OU502": "OVERFLY OU502 TURN LEFT DIRECT",
+                "KIKTO": "KIKTO AT OR ABOVE 3000 FAF OU501 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "KIKTO",
+                    "fixes": {
+                        "KIKTO": "KIKTO AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "RUSMA",
+                    "fixes": {
+                        "RUSMA": "RUSMA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "NAXAL": "NAXAL AT OR ABOVE 5100",
+                "OU503": "OU503 3000 RNW 19",
+                "OU504": "OVERFLY OU504 TURN RIGHT DIRECT",
+                "VITRA": "VITRA AT OR ABOVE 5100 FAF OU503 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "TIXEP",
+                    "fixes": {
+                        "TIXEP": "TIXEP AT OR ABOVE 5100"
+                    }
+                },
+                {
+                    "name": "VITRA",
+                    "fixes": {
+                        "VITRA": "VITRA AT OR ABOVE 5100"
+                    }
+                }
+            ]
+        }
+    ]
+}

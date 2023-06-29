@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "EXILE",
+            "lat": 41.297969433333336,
+            "lon": 110.66716666666667
+        },
+        {
+            "name": "FBR",
+            "lat": 41.37843888333333,
+            "lon": 110.42406111666666
+        },
+        {
+            "name": "FF22",
+            "lat": 41.446255566666665,
+            "lon": 110.32030278333333
+        },
+        {
+            "name": "GRODI",
+            "lat": 41.206744433333334,
+            "lon": 110.66525
+        },
+        {
+            "name": "LESRE",
+            "lat": 41.447316666666666,
+            "lon": 110.30378333333333
+        },
+        {
+            "name": "PI001",
+            "lat": 41.418947083333336,
+            "lon": 110.36810443333333
+        },
+        {
+            "name": "PI002",
+            "lat": 41.4176568,
+            "lon": 110.27255158333334
+        },
+        {
+            "name": "PI003",
+            "lat": 41.4941045,
+            "lon": 110.26399951666667
+        },
+        {
+            "name": "SINGE",
+            "lat": 41.504416666666664,
+            "lon": 110.19718611666667
+        },
+        {
+            "name": "WEGEM",
+            "lat": 41.44565,
+            "lon": 109.99013611666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 07",
+        "RNW 22",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "SINGE": "SINGE AT OR ABOVE 10000",
+                "LESRE": "LESRE 8700 RNW 22 TRK 224 UNTIL 7500",
+                "EXILE": "OVERFLY EXILE AT OR ABOVE 12000 HOLD AT EXILE RIGHT TURN INBOUNDCOURSE 223 ALT 12000 LEGDIST 7 FAF LESRE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "FBR",
+                    "fixes": {
+                        "FBR": "FBR",
+                        "SINGE": "OVERFLY SINGE AT OR ABOVE 12000 HOLD AT SINGE RIGHT TURN INBOUNDCOURSE 224 ALT 10000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "WEGEM",
+                    "fixes": {
+                        "WEGEM": "WEGEM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR22",
+            "fixes": {
+                "FF22": "FF22 8500 RNW 22",
+                "FBR": "FBR AT OR ABOVE 7440 HOLD AT FBR RIGHT TURN INBOUNDCOURSE 215 LEGTIME 1 FAF FF22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "GRODI",
+                    "fixes": {
+                        "GRODI": "GRODI",
+                        "FBR": "FBR AT OR ABOVE 11000",
+                        "PI001": "PI001 AT OR ABOVE 8500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 8500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 8500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

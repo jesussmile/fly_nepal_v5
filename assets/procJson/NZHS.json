@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "FF01",
+            "lat": 39.72221666666667,
+            "lon": 176.71076943333333
+        },
+        {
+            "name": "FF19",
+            "lat": 39.58215833333333,
+            "lon": 176.81176111666667
+        },
+        {
+            "name": "MA01",
+            "lat": 39.649375,
+            "lon": 176.76334443333334
+        },
+        {
+            "name": "MA19",
+            "lat": 39.640447216666665,
+            "lon": 176.76978056666667
+        },
+        {
+            "name": "NR",
+            "lat": 39.45380278333333,
+            "lon": 176.868925
+        },
+        {
+            "name": "OPAPA",
+            "lat": 39.793722216666666,
+            "lon": 176.69010833333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 11",
+        "RNW 19",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "OPAPA": "OPAPA AT OR ABOVE 2600 OPAPA 2600 FAF FF01 MAP MA01",
+                "FF01": "FF01 1650",
+                "MA01": "OVERFLY MA01 127 RNW 01 TRK 007 UNTIL 900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "OPAPA",
+                    "fixes": {
+                        "OPAPA": "OPAPA RIGHT TURN INBOUNDCOURSE 001 ALT 2600 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "NR": "NR AT OR ABOVE 3000",
+                "FF19": "FF19 1350",
+                "MA19": "OVERFLY MA19 108 RNW 19",
+                "FF01": "FF01",
+                "OPAPA": "OPAPA 2600 FAF FF19 MAP MA19"
+            },
+            "transitions": [
+                {
+                    "name": "NR",
+                    "fixes": {
+                        "NR": "NR RIGHT TURN INBOUNDCOURSE 188 ALT 3000 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+    "fixes": [
+        {
+            "name": "ALTIK",
+            "lat": 47.64963888333333,
+            "lon": 7.130638883333333
+        },
+        {
+            "name": "DME19",
+            "lat": 48.21496943333333,
+            "lon": 7.410347216666667
+        },
+        {
+            "name": "FGA01",
+            "lat": 48.010722216666665,
+            "lon": 7.33025
+        },
+        {
+            "name": "FGA19",
+            "lat": 48.25233333333333,
+            "lon": 7.400555566666666
+        },
+        {
+            "name": "FQ19",
+            "lat": 48.243752783333335,
+            "lon": 7.426058333333334
+        },
+        {
+            "name": "GA405",
+            "lat": 48.29394443333333,
+            "lon": 7.571361116666667
+        },
+        {
+            "name": "GA409",
+            "lat": 48.035055566666664,
+            "lon": 7.3373333333333335
+        },
+        {
+            "name": "GA502",
+            "lat": 48.11780556666667,
+            "lon": 7.488194433333334
+        },
+        {
+            "name": "GA503",
+            "lat": 47.92936111666667,
+            "lon": 7.432972216666666
+        },
+        {
+            "name": "GA505",
+            "lat": 47.83086111666667,
+            "lon": 7.278305566666667
+        },
+        {
+            "name": "GA511",
+            "lat": 48.16983333333334,
+            "lon": 7.376444433333333
+        },
+        {
+            "name": "HONB",
+            "lat": 48.13375,
+            "lon": 7.366111116666667
+        },
+        {
+            "name": "IGA01",
+            "lat": 47.94533333333333,
+            "lon": 7.311333333333334
+        },
+        {
+            "name": "IGA19",
+            "lat": 48.312972216666665,
+            "lon": 7.418277783333333
+        },
+        {
+            "name": "STR",
+            "lat": 48.50538888333333,
+            "lon": 7.5719722166666665
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBDY19",
+            "fixes": {
+                "FQ19": "FQ19 3500",
+                "DME19": "DME19 AT OR ABOVE 2900",
+                "HONB": "HONB 1031 RNW 19 TRK 189 UNTIL 2000 TURN LEFT DIRECT HONB 4600 SPEED 200 FAF FQ19 MAP HO"
+            },
+            "transitions": [
+                {
+                    "name": "HO",
+                    "fixes": {
+                        "HONB": "HONB AT OR ABOVE 4600 TRK 355 UNTIL 17.5 FROM",
+                        "STR": "STR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDZ19",
+            "fixes": {
+                "FQ19": "FQ19 3500 SPEED 150",
+                "DME19": "DME19 AT OR ABOVE 2900",
+                "HONB": "HONB 1031 RNW 19 TRK 189 UNTIL 2000 TURN LEFT DIRECT HONB 4600 FAF FQ19 MAP HO"
+            },
+            "transitions": [
+                {
+                    "name": "HO",
+                    "fixes": {
+                        "HONB": "HONB AT OR ABOVE 4600 TRK 005 UNTIL 16.1 FROM",
+                        "STR": "STR SPEED 150"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "FGA01": "FGA01 2500 RNW 01",
+                "GA511": "OVERFLY GA511 SPEED 200 TURN RIGHT DIRECT",
+                "GA503": "GA503 2500 SPEED 200",
+                "IGA01": "IGA01 AT OR BELOW 3000 SPEED 200 FAF FGA01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ALTIK",
+                    "fixes": {
+                        "ALTIK": "ALTIK AT OR ABOVE 6500 SPEED 220",
+                        "GA505": "GA505 AT OR BELOW 5900 AT OR ABOVE 3500",
+                        "IGA01": "IGA01 AT OR BELOW 3000 AT OR ABOVE 2500 SPEED 200"
+                    }
+                },
+                {
+                    "name": "HO",
+                    "fixes": {
+                        "HONB": "HONB AT OR ABOVE 6000",
+                        "GA502": "GA502 AT OR ABOVE 2500 SPEED 200",
+                        "GA503": "GA503 2500 SPEED 200",
+                        "IGA01": "IGA01 AT OR ABOVE 2500 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "IGA19": "IGA19 AT OR ABOVE 3300 SPEED 180",
+                "FGA19": "FGA19 3300 RNW 19",
+                "GA409": "OVERFLY GA409 TURN LEFT DIRECT",
+                "HONB": "HONB 4700 SPEED 200 HOLD AT HONB RIGHT TURN INBOUNDCOURSE 009 ALT 4700 SPEED 180 LEGTIME 1 FAF FGA19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "GA405",
+                    "fixes": {
+                        "GA405": "GA405 SPEED 180"
+                    }
+                },
+                {
+                    "name": "HO",
+                    "fixes": {
+                        "HONB": "HONB",
+                        "GA405": "GA405 SPEED 180"
+                    }
+                }
+            ]
+        }
+    ]
+}

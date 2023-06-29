@@ -1,0 +1,247 @@
+{
+    "fixes": [
+        {
+            "name": "62DME",
+            "lat": 37.775625,
+            "lon": 30.244933333333332
+        },
+        {
+            "name": "83DME",
+            "lat": 37.75306943333333,
+            "lon": 30.211158333333334
+        },
+        {
+            "name": "AF001",
+            "lat": 37.914202583333335,
+            "lon": 30.535189166666665
+        },
+        {
+            "name": "AF002",
+            "lat": 37.89442091666667,
+            "lon": 30.545257316666667
+        },
+        {
+            "name": "BABSA",
+            "lat": 38.01555556666667,
+            "lon": 30.305
+        },
+        {
+            "name": "CL05",
+            "lat": 37.71818888333333,
+            "lon": 30.164505566666666
+        },
+        {
+            "name": "D052J",
+            "lat": 37.93290833333333,
+            "lon": 30.521455566666667
+        },
+        {
+            "name": "D074J",
+            "lat": 37.87382221666667,
+            "lon": 30.551408333333335
+        },
+        {
+            "name": "D214G",
+            "lat": 37.75135556666667,
+            "lon": 30.2522
+        },
+        {
+            "name": "EKSEN",
+            "lat": 37.89055556666667,
+            "lon": 30.670277783333333
+        },
+        {
+            "name": "FD05",
+            "lat": 37.71975,
+            "lon": 30.161330566666667
+        },
+        {
+            "name": "FF05",
+            "lat": 37.73985833333333,
+            "lon": 30.196461116666665
+        },
+        {
+            "name": "IPT",
+            "lat": 37.842166666666664,
+            "lon": 30.344777783333335
+        },
+        {
+            "name": "IPTNB",
+            "lat": 37.842166666666664,
+            "lon": 30.344777783333335
+        },
+        {
+            "name": "LOC11",
+            "lat": 37.751772216666666,
+            "lon": 30.214047216666668
+        },
+        {
+            "name": "MD05",
+            "lat": 37.82929443333333,
+            "lon": 30.325438883333334
+        },
+        {
+            "name": "ML05",
+            "lat": 37.828608333333335,
+            "lon": 30.327675
+        },
+        {
+            "name": "PELIL",
+            "lat": 37.839722216666665,
+            "lon": 30.232777783333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "EKSE1G",
+            "rnw": "05",
+            "fixes": {
+                "D052J": "D052J",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "D074J": "D074J",
+                "EKSEN": "EKSEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "EKSE1M",
+            "rnw": "23",
+            "fixes": {
+                "D214G": "OVERFLY D214G TURN LEFT DIRECT",
+                "IPT": "IPT SPEED 220",
+                "EKSEN": "EKSEN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PELI1G",
+            "rnw": "05",
+            "fixes": {
+                "D052J": "OVERFLY D052J TURN RIGHT DIRECT",
+                "IPT": "IPT",
+                "PELIL": "PELIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PELI1M",
+            "rnw": "23",
+            "fixes": {
+                "D214G": "OVERFLY D214G TURN LEFT DIRECT",
+                "IPT": "IPT SPEED 220",
+                "PELIL": "PELIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "BABS1N",
+            "runway": "RNW 05 RNW 23",
+            "fixes": {
+                "BABSA": "BABSA",
+                "IPT": "IPT"
+            }
+        },
+        {
+            "name": "EKSE1N",
+            "runway": "RNW 05 RNW 23",
+            "fixes": {
+                "EKSEN": "EKSEN",
+                "IPT": "IPT"
+            }
+        },
+        {
+            "name": "PELI1N",
+            "runway": "RNW 05 RNW 23",
+            "fixes": {
+                "PELIL": "PELIL",
+                "IPT": "IPT"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORDZ05",
+            "fixes": {
+                "FD05": "FD05 7000",
+                "83DME": "83DME AT OR ABOVE 6000",
+                "MD05": "MD05 3510 RNW 05",
+                "IPT": "IPT TRK 056 UNTIL 5200 TURN RIGHT DIRECT IPT 10000 HOLD AT IPT LEFT TURN INBOUNDCOURSE 225 SPEED 230 LEGTIME 1 FAF FD05 MAP MD05"
+            },
+            "transitions": [
+                {
+                    "name": "IPT",
+                    "fixes": {
+                        "IPT": "IPT AT OR ABOVE 10000",
+                        "FD05": "FD05 AT OR ABOVE 7000 TRK 180 UNTIL 3.9 FROM FD05"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOCZ05",
+            "fixes": {
+                "CL05": "CL05 AT OR ABOVE 7000",
+                "FF05": "FF05 6400",
+                "LOC11": "LOC11 AT OR ABOVE 6000",
+                "ML05": "ML05 3500 RNW 05",
+                "IPT": "IPT TRK 056 UNTIL 5200 TURN RIGHT DIRECT IPT 10000 HOLD AT IPT LEFT TURN INBOUNDCOURSE 225 SPEED 230 LEGTIME 1 FAF FF05 MAP ML05"
+            },
+            "transitions": [
+                {
+                    "name": "IPT",
+                    "fixes": {
+                        "IPT": "IPT AT OR ABOVE 10000",
+                        "CL05": "CL05 AT OR ABOVE 7000 TRK 180 UNTIL 3.9 FROM CL05"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDA05",
+            "fixes": {
+                "FD05": "FD05 7000",
+                "83DME": "83DME AT OR ABOVE 6000",
+                "62DME": "62DME AT OR ABOVE 5200",
+                "IPTNB": "IPTNB 3094 RNW 05 TRK 056 UNTIL 5200 TURN RIGHT DIRECT IPTNB 10000 SPEED 185 HOLD AT IPTNB LEFT TURN INBOUNDCOURSE 225 SPEED 230 LEGTIME 1 FAF FD05 MAP IP"
+            },
+            "transitions": [
+                {
+                    "name": "IPT",
+                    "fixes": {
+                        "IPTNB": "IPTNB AT OR ABOVE 10000",
+                        "FD05": "FD05 AT OR ABOVE 7000 TRK 180 UNTIL 3.9 FROM FD05"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDA23",
+            "fixes": {
+                "FD05": "FD05 7000",
+                "83DME": "83DME AT OR ABOVE 6000",
+                "62DME": "62DME AT OR ABOVE 5200",
+                "IPTNB": "IPTNB 3094 RNW 23 TRK 056 UNTIL 5200 TURN RIGHT DIRECT IPTNB 10000 SPEED 185 HOLD AT IPTNB LEFT TURN INBOUNDCOURSE 225 SPEED 230 LEGTIME 1 FAF FD05 MAP IP"
+            },
+            "transitions": [
+                {
+                    "name": "IPT",
+                    "fixes": {
+                        "IPTNB": "IPTNB AT OR ABOVE 10000",
+                        "FD05": "FD05 AT OR ABOVE 7000 TRK 180 UNTIL 3.9 FROM FD05"
+                    }
+                }
+            ]
+        }
+    ]
+}

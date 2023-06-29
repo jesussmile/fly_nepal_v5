@@ -1,0 +1,162 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 12.752556466666666,
+            "lon": 69.39295606666667
+        },
+        {
+            "name": "AF002",
+            "lat": 12.791041533333333,
+            "lon": 69.34659941666666
+        },
+        {
+            "name": "AF003",
+            "lat": 12.815799466666666,
+            "lon": 69.2912599
+        },
+        {
+            "name": "CI01B",
+            "lat": 12.742097216666666,
+            "lon": 69.23402221666667
+        },
+        {
+            "name": "D187M",
+            "lat": 12.825736116666667,
+            "lon": 69.23741943333333
+        },
+        {
+            "name": "D201O",
+            "lat": 12.848019433333333,
+            "lon": 69.30350278333333
+        },
+        {
+            "name": "D251O",
+            "lat": 12.711733333333333,
+            "lon": 69.46026666666667
+        },
+        {
+            "name": "FF01",
+            "lat": 12.6974,
+            "lon": 69.23038888333333
+        },
+        {
+            "name": "ISUMO",
+            "lat": 12.792280566666667,
+            "lon": 69.23605833333333
+        },
+        {
+            "name": "MA01",
+            "lat": 12.641772216666666,
+            "lon": 69.22894721666667
+        },
+        {
+            "name": "PDO",
+            "lat": 12.608333333333333,
+            "lon": 69.22722221666666
+        },
+        {
+            "name": "UGIKO",
+            "lat": 12.731944433333334,
+            "lon": 69.23361111666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD01",
+            "fixes": {
+                "ISUMO": "ISUMO AT OR ABOVE 3000 ISUMO FAF UGIKO MAP MA01",
+                "UGIKO": "UGIKO 2700",
+                "MA01": "MA01 946 RNW 01 TRK 007 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "D201O",
+                    "fixes": {
+                        "D201O": "D201O",
+                        "D187M": "D187M AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "D251O",
+                    "fixes": {
+                        "D251O": "D251O",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D187M": "D187M AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSA01",
+            "fixes": {
+                "ISUMO": "ISUMO AT OR ABOVE 3000 ISUMO FAF UGIKO MAP RNW 01",
+                "UGIKO": "UGIKO 2700 RNW 01 TRK 007 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "D201O",
+                    "fixes": {
+                        "D201O": "D201O",
+                        "D187M": "D187M AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "D251O",
+                    "fixes": {
+                        "D251O": "D251O",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D187M": "D187M AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSB01",
+            "fixes": {
+                "CI01B": "CI01B AT OR ABOVE 2700",
+                "UGIKO": "UGIKO 2700 RNW 01 TRK 007 UNTIL 1500 TURN LEFT DIRECT",
+                "PDO": "PDO HOLD AT PDO LEFT TURN INBOUNDCOURSE 160 ALT 3000 LEGTIME 1 FAF UGIKO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "PDO",
+                    "fixes": {
+                        "PDO": "PDO AT OR ABOVE 3000 TRK 160 UNTIL 8.0 FROM PDO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR01",
+            "fixes": {
+                "FF01": "FF01 2000 RNW 01",
+                "PDO": "OVERFLY PDO TRK 007 UNTIL 1500 TURN LEFT DIRECT PDO AT OR ABOVE 3000 HOLD AT PDO LEFT TURN INBOUNDCOURSE 160 ALT 3000 LEGTIME 1 FAF FF01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "PDO1",
+                    "fixes": {
+                        "PDO": "PDO AT OR ABOVE 3000 TRK 160 UNTIL 7.0 FROM PDO"
+                    }
+                },
+                {
+                    "name": "PDO2",
+                    "fixes": {
+                        "PDO": "PDO AT OR ABOVE 3000 TRK 160 UNTIL 7.5 FROM PDO"
+                    }
+                }
+            ]
+        }
+    ]
+}

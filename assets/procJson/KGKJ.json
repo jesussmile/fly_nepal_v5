@@ -1,0 +1,137 @@
+{
+    "fixes": [
+        {
+            "name": "ALLCO",
+            "lat": 41.7385,
+            "lon": 80.0815
+        },
+        {
+            "name": "BIBYA",
+            "lat": 41.32865278333333,
+            "lon": 80.38249166666667
+        },
+        {
+            "name": "CASSA",
+            "lat": 41.58409721666666,
+            "lon": 80.31749443333334
+        },
+        {
+            "name": "CELER",
+            "lat": 41.73386111666667,
+            "lon": 79.95284166666667
+        },
+        {
+            "name": "DUCAT",
+            "lat": 41.503791666666665,
+            "lon": 80.51107221666666
+        },
+        {
+            "name": "FKL",
+            "lat": 41.43849721666667,
+            "lon": 79.85670556666666
+        },
+        {
+            "name": "JIGIP",
+            "lat": 41.63504721666666,
+            "lon": 80.60796388333333
+        },
+        {
+            "name": "MEADI",
+            "lat": 41.675375,
+            "lon": 80.09591666666667
+        },
+        {
+            "name": "NERVA",
+            "lat": 41.72348888333333,
+            "lon": 79.97825
+        },
+        {
+            "name": "REICH",
+            "lat": 41.64797778333333,
+            "lon": 80.16258056666666
+        },
+        {
+            "name": "SASOC",
+            "lat": 41.6767,
+            "lon": 80.09269166666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC25",
+            "fixes": {
+                "NERVA": "NERVA AT OR ABOVE 3600",
+                "MEADI": "MEADI 3300",
+                "REICH": "REICH AT OR ABOVE 2140 RNW 25 TRK 249 UNTIL 2000 TURN LEFT HDG 125 INTERCEPT RADIAL 120 TO",
+                "FKL": "FKL FKL AT OR ABOVE 3600 HOLD AT FKL RIGHT TURN INBOUNDCOURSE 186 LEGTIME 1 FAF MEADI MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "FKL",
+                    "fixes": {
+                        "FKL": "FKL",
+                        "NERVA": "NERVA AT OR ABOVE 3600 HOLD AT NERVA LEFT TURN INBOUNDCOURSE 249 ALT 3600 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "DUCAT": "DUCAT AT OR ABOVE 3000 OVERFLY DUCAT AT OR ABOVE 3100 HOLD AT DUCAT RIGHT TURN INBOUNDCOURSE 069 LEGDIST 4 FAF CASSA MAP RNW 07",
+                "CASSA": "CASSA 3000 RNW 07 TRK 069 UNTIL 1900 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DUCAT",
+                    "fixes": {
+                        "DUCAT": "DUCAT RIGHT TURN INBOUNDCOURSE 069 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FKL",
+                    "fixes": {
+                        "FKL": "FKL",
+                        "BIBYA": "BIBYA AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "JIGIP",
+                    "fixes": {
+                        "JIGIP": "JIGIP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "CELER": "CELER AT OR ABOVE 3500",
+                "SASOC": "SASOC 3300 RNW 25 TRK 249 UNTIL 1799",
+                "DUCAT": "OVERFLY DUCAT AT OR ABOVE 3000 HOLD AT DUCAT RIGHT TURN INBOUNDCOURSE 069 LEGDIST 4 FAF SASOC MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "ALLCO",
+                    "fixes": {
+                        "ALLCO": "ALLCO",
+                        "CELER": "OVERFLY CELER AT OR ABOVE 3500 HOLD AT CELER LEFT TURN INBOUNDCOURSE 249 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FKL",
+                    "fixes": {
+                        "FKL": "FKL",
+                        "CELER": "OVERFLY CELER AT OR ABOVE 3500 HOLD AT CELER LEFT TURN INBOUNDCOURSE 249 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

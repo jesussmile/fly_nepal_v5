@@ -1,0 +1,138 @@
+{
+    "fixes": [
+        {
+            "name": "ATGIY",
+            "lat": 31.032005566666665,
+            "lon": 103.10249443333333
+        },
+        {
+            "name": "COQHU",
+            "lat": 30.7905,
+            "lon": 102.7242
+        },
+        {
+            "name": "EPIHU",
+            "lat": 30.971466666666668,
+            "lon": 103.00732221666667
+        },
+        {
+            "name": "FST",
+            "lat": 30.952108333333335,
+            "lon": 102.97571111666667
+        },
+        {
+            "name": "HUGBO",
+            "lat": 30.851275,
+            "lon": 102.81905278333333
+        },
+        {
+            "name": "INK",
+            "lat": 31.874763883333333,
+            "lon": 103.24377778333333
+        },
+        {
+            "name": "PEQ",
+            "lat": 31.469313883333335,
+            "lon": 103.57475556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 30.985555,
+            "lon": 103.03144893333334
+        },
+        {
+            "name": "PI002",
+            "lat": 30.973084116666666,
+            "lon": 103.11376423333333
+        },
+        {
+            "name": "PI003",
+            "lat": 31.047606666666667,
+            "lon": 103.13506573333333
+        },
+        {
+            "name": "TAPGE",
+            "lat": 30.882977783333335,
+            "lon": 102.868625
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 07",
+        "RNW 11",
+        "RNW 12",
+        "RNW 16",
+        "RNW 21",
+        "RNW 25",
+        "RNW 29",
+        "RNW 30",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "ATGIY": "ATGIY AT OR ABOVE 5100",
+                "EPIHU": "EPIHU 4700 RNW 12",
+                "COQHU": "OVERFLY COQHU AT OR ABOVE 5200 HOLD AT COQHU RIGHT TURN INBOUNDCOURSE 298 LEGDIST 6 FAF EPIHU MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "FST",
+                    "fixes": {
+                        "FST": "FST",
+                        "ATGIY": "OVERFLY ATGIY AT OR ABOVE 5100 HOLD AT ATGIY RIGHT TURN INBOUNDCOURSE 117 ALT 5100 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "COQHU": "COQHU AT OR ABOVE 5300",
+                "HUGBO": "HUGBO 4900",
+                "TAPGE": "TAPGE AT OR ABOVE 3860 RNW 30",
+                "ATGIY": "OVERFLY ATGIY AT OR ABOVE 5100 HOLD AT ATGIY RIGHT TURN INBOUNDCOURSE 117 LEGDIST 6 FAF HUGBO MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "FST",
+                    "fixes": {
+                        "FST": "FST",
+                        "COQHU": "OVERFLY COQHU AT OR ABOVE 5300 HOLD AT COQHU RIGHT TURN INBOUNDCOURSE 298 ALT 5300 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR12",
+            "fixes": {
+                "FST": "FST 4200 RNW 12 TRK 116 UNTIL 3411 TURN LEFT DIRECT FST AT OR ABOVE 5000 HOLD AT FST RIGHT TURN INBOUNDCOURSE 116 LEGTIME 1 FAF FST MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "INK",
+                    "fixes": {
+                        "INK": "INK",
+                        "FST": "FST AT OR ABOVE 5200",
+                        "PI001": "PI001 AT OR ABOVE 4800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "PEQ",
+                    "fixes": {
+                        "PEQ": "PEQ",
+                        "FST": "FST AT OR ABOVE 5000",
+                        "PI001": "PI001 AT OR ABOVE 4800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

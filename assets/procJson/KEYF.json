@@ -1,0 +1,138 @@
+{
+    "fixes": [
+        {
+            "name": "EBURY",
+            "lat": 34.6838,
+            "lon": 78.65094721666667
+        },
+        {
+            "name": "ESURE",
+            "lat": 34.450861116666665,
+            "lon": 78.44779721666667
+        },
+        {
+            "name": "EXBEL",
+            "lat": 34.764980566666665,
+            "lon": 78.72209166666667
+        },
+        {
+            "name": "EZBOX",
+            "lat": 34.53213611666666,
+            "lon": 78.51851388333333
+        },
+        {
+            "name": "FAY",
+            "lat": 34.98555,
+            "lon": 78.87506388333334
+        },
+        {
+            "name": "IBEKE",
+            "lat": 34.402063883333334,
+            "lon": 78.52953056666666
+        },
+        {
+            "name": "IFDOS",
+            "lat": 34.49960278333333,
+            "lon": 78.36596943333333
+        },
+        {
+            "name": "JUXOR",
+            "lat": 34.715994433333336,
+            "lon": 78.80396666666667
+        },
+        {
+            "name": "SLITT",
+            "lat": 34.6896,
+            "lon": 78.64712778333333
+        },
+        {
+            "name": "VIYUC",
+            "lat": 34.7742,
+            "lon": 78.71209166666667
+        },
+        {
+            "name": "WOBOM",
+            "lat": 34.81391111666667,
+            "lon": 78.64011943333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD15",
+            "fixes": {
+                "VIYUC": "VIYUC AT OR ABOVE 2200",
+                "SLITT": "SLITT 2200 RNW 15 TRK 152 UNTIL 1000 TURN RIGHT DIRECT SLITT AT OR ABOVE 2200 HOLD AT SLITT RIGHT TURN INBOUNDCOURSE 152 LEGTIME 1 FAF SLITT MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "FAY",
+                    "fixes": {
+                        "FAY": "FAY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "EXBEL": "EXBEL AT OR ABOVE 3100",
+                "EBURY": "EBURY 2000 RNW 15",
+                "ESURE": "OVERFLY ESURE AT OR ABOVE 3100 HOLD AT ESURE RIGHT TURN INBOUNDCOURSE 332 LEGDIST 4 FAF EBURY MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "EXBEL",
+                    "fixes": {
+                        "EXBEL": "EXBEL RIGHT TURN INBOUNDCOURSE 152 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JUXOR",
+                    "fixes": {
+                        "JUXOR": "JUXOR AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "WOBOM",
+                    "fixes": {
+                        "WOBOM": "WOBOM AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "ESURE": "ESURE AT OR ABOVE 3100",
+                "EZBOX": "EZBOX 1700 RNW 33",
+                "EXBEL": "OVERFLY EXBEL AT OR ABOVE 3100 HOLD AT EXBEL RIGHT TURN INBOUNDCOURSE 152 LEGDIST 4 FAF EZBOX MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "ESURE",
+                    "fixes": {
+                        "ESURE": "ESURE RIGHT TURN INBOUNDCOURSE 332 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "IBEKE",
+                    "fixes": {
+                        "IBEKE": "IBEKE AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "IFDOS",
+                    "fixes": {
+                        "IFDOS": "IFDOS AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        }
+    ]
+}

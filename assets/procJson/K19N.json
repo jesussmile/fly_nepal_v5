@@ -1,0 +1,161 @@
+{
+    "fixes": [
+        {
+            "name": "ACLIM",
+            "lat": 39.71089443333334,
+            "lon": 75.01598333333334
+        },
+        {
+            "name": "ARD",
+            "lat": 40.253341666666664,
+            "lon": 74.90761111666667
+        },
+        {
+            "name": "ATCOT",
+            "lat": 39.68759443333333,
+            "lon": 74.95707778333333
+        },
+        {
+            "name": "COBUS",
+            "lat": 40.05583333333333,
+            "lon": 74.80991388333334
+        },
+        {
+            "name": "HOLEY",
+            "lat": 39.971586116666664,
+            "lon": 74.82687778333333
+        },
+        {
+            "name": "LEEAH",
+            "lat": 39.26090833333333,
+            "lon": 74.95305833333333
+        },
+        {
+            "name": "MA013",
+            "lat": 39.77505,
+            "lon": 74.95118611666666
+        },
+        {
+            "name": "MOHEE",
+            "lat": 39.64507221666667,
+            "lon": 75.08226388333334
+        },
+        {
+            "name": "MUNGY",
+            "lat": 39.84699166666667,
+            "lon": 74.87837221666666
+        },
+        {
+            "name": "OOD",
+            "lat": 39.636077783333334,
+            "lon": 75.30305556666667
+        },
+        {
+            "name": "RBV",
+            "lat": 40.20240278333333,
+            "lon": 74.495025
+        },
+        {
+            "name": "VCN",
+            "lat": 39.537672216666664,
+            "lon": 74.96714443333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "MOHEE": "MOHEE AT OR ABOVE 2100",
+                "ACLIM": "ACLIM 1800 RNW 05 TRK 050 UNTIL 550",
+                "MUNGY": "OVERFLY MUNGY AT OR ABOVE 2000 HOLD AT MUNGY RIGHT TURN INBOUNDCOURSE 210 LEGDIST 4 FAF ACLIM MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "OOD",
+                    "fixes": {
+                        "OOD": "OOD"
+                    }
+                },
+                {
+                    "name": "VCN",
+                    "fixes": {
+                        "VCN": "VCN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "HOLEY": "HOLEY AT OR ABOVE 2000 OVERFLY HOLEY AT OR ABOVE 2000 HOLD AT HOLEY RIGHT TURN INBOUNDCOURSE 201 LEGDIST 4 FAF MUNGY MAP RNW 23",
+                "MUNGY": "MUNGY 1800 RNW 23 TRK 230 UNTIL 550 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ARD",
+                    "fixes": {
+                        "ARD": "ARD",
+                        "COBUS": "COBUS AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "RBV",
+                    "fixes": {
+                        "RBV": "RBV",
+                        "COBUS": "COBUS AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB05",
+            "fixes": {
+                "VCN": "VCN AT OR ABOVE 2100 VCN AT OR ABOVE 2100 HOLD AT VCN RIGHT TURN INBOUNDCOURSE 013 LEGTIME 1 FAF ATCOT MAP MA013",
+                "ATCOT": "ATCOT 1200",
+                "MA013": "OVERFLY MA013 900 RNW 05 TRK 013 UNTIL 900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LEEAH",
+                    "fixes": {
+                        "LEEAH": "LEEAH"
+                    }
+                },
+                {
+                    "name": "VCN",
+                    "fixes": {
+                        "VCN": "VCN RIGHT TURN INBOUNDCOURSE 013 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORB23",
+            "fixes": {
+                "VCN": "VCN AT OR ABOVE 2100 VCN AT OR ABOVE 2100 HOLD AT VCN RIGHT TURN INBOUNDCOURSE 013 LEGTIME 1 FAF ATCOT MAP MA013",
+                "ATCOT": "ATCOT 1200",
+                "MA013": "OVERFLY MA013 900 RNW 23 TRK 013 UNTIL 900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LEEAH",
+                    "fixes": {
+                        "LEEAH": "LEEAH"
+                    }
+                },
+                {
+                    "name": "VCN",
+                    "fixes": {
+                        "VCN": "VCN RIGHT TURN INBOUNDCOURSE 013 ALT 2100 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,156 @@
+{
+    "fixes": [
+        {
+            "name": "EGSUV",
+            "lat": 27.01715,
+            "lon": 22.311072216666666
+        },
+        {
+            "name": "GEVUX",
+            "lat": 26.962972216666667,
+            "lon": 22.475633333333334
+        },
+        {
+            "name": "IBMES",
+            "lat": 27.388558333333332,
+            "lon": 22.557466666666667
+        },
+        {
+            "name": "NEVUL",
+            "lat": 27.442538883333334,
+            "lon": 22.485983333333333
+        },
+        {
+            "name": "NEXUP",
+            "lat": 27.115141666666666,
+            "lon": 22.743405566666667
+        },
+        {
+            "name": "TIKIG",
+            "lat": 27.016913883333334,
+            "lon": 22.40438333333333
+        },
+        {
+            "name": "TW001",
+            "lat": 27.321133333333332,
+            "lon": 22.52961111666667
+        },
+        {
+            "name": "TW002",
+            "lat": 27.131425,
+            "lon": 22.451433333333334
+        },
+        {
+            "name": "TW1F1",
+            "lat": 27.111033333333335,
+            "lon": 22.443047216666667
+        },
+        {
+            "name": "TW1F2",
+            "lat": 27.1424,
+            "lon": 22.455947216666665
+        },
+        {
+            "name": "TW1MP",
+            "lat": 27.189458333333334,
+            "lon": 22.475319433333333
+        },
+        {
+            "name": "TW2F1",
+            "lat": 27.294475,
+            "lon": 22.518608333333333
+        },
+        {
+            "name": "TW2MP",
+            "lat": 27.216061116666665,
+            "lon": 22.486275
+        },
+        {
+            "name": "UTSIT",
+            "lat": 27.388158333333333,
+            "lon": 22.651083333333332
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "NEXU1A",
+            "rnw": "18",
+            "fixes": {
+                "TW001": "OVERFLY TW001 AT OR ABOVE 5400 TURN LEFT DIRECT",
+                "NEXUP": "NEXUP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "NEXU1B",
+            "rnw": "36",
+            "fixes": {
+                "TW002": "OVERFLY TW002 AT OR ABOVE 4800 TURN RIGHT DIRECT",
+                "NEXUP": "NEXUP"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "TIKIG": "TIKIG AT OR ABOVE 5600 SPEED 220",
+                "TW1F1": "TW1F1 5600",
+                "TW1F2": "TW1F2 AT OR ABOVE 4990",
+                "TW1MP": "OVERFLY TW1MP 4038 RNW 18",
+                "IBMES": "IBMES AT OR ABOVE 6300 HOLD AT IBMES RIGHT TURN INBOUNDCOURSE 358 ALT 6300 SPEED 220 LEGTIME 1 FAF TW1F1 MAP TW1MP"
+            },
+            "transitions": [
+                {
+                    "name": "EGSUV",
+                    "fixes": {
+                        "EGSUV": "EGSUV AT OR ABOVE 6300 SPEED 220"
+                    }
+                },
+                {
+                    "name": "GEVUX",
+                    "fixes": {
+                        "GEVUX": "GEVUX AT OR ABOVE 6300 SPEED 220"
+                    }
+                },
+                {
+                    "name": "TIKIG",
+                    "fixes": {
+                        "TIKIG": "TIKIG RIGHT TURN INBOUNDCOURSE 178 ALT 5600 SPEED 220 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "IBMES": "IBMES AT OR ABOVE 6300 SPEED 220",
+                "TW2F1": "TW2F1 5600",
+                "TW2MP": "OVERFLY TW2MP 4061 RNW 36",
+                "TIKIG": "TIKIG AT OR ABOVE 5600 HOLD AT TIKIG RIGHT TURN INBOUNDCOURSE 178 ALT 5600 SPEED 220 LEGTIME 1 FAF TW2F1 MAP TW2MP"
+            },
+            "transitions": [
+                {
+                    "name": "NEVUL",
+                    "fixes": {
+                        "NEVUL": "NEVUL AT OR ABOVE 6500 SPEED 220"
+                    }
+                },
+                {
+                    "name": "UTSIT",
+                    "fixes": {
+                        "UTSIT": "UTSIT AT OR ABOVE 6500 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

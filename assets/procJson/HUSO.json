@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "D224E",
+            "lat": 1.6657222166666668,
+            "lon": 33.56070833333333
+        },
+        {
+            "name": "D244G",
+            "lat": 1.6710111166666666,
+            "lon": 33.51829166666667
+        },
+        {
+            "name": "EN05",
+            "lat": 1.7197888833333335,
+            "lon": 33.617666666666665
+        },
+        {
+            "name": "FD05A",
+            "lat": 1.6295777833333334,
+            "lon": 33.526025
+        },
+        {
+            "name": "FD05B",
+            "lat": 1.653675,
+            "lon": 33.54914721666667
+        },
+        {
+            "name": "FD23",
+            "lat": 1.8028805666666667,
+            "lon": 33.70645278333333
+        },
+        {
+            "name": "FN05",
+            "lat": 1.6904166666666667,
+            "lon": 33.557825
+        },
+        {
+            "name": "SONB",
+            "lat": 1.7224111166666667,
+            "lon": 33.62300833333333
+        },
+        {
+            "name": "SV",
+            "lat": 1.7259666666666666,
+            "lon": 33.61851943333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 09",
+        "RNW 23",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA05",
+            "fixes": {
+                "FD05A": "FD05A 6000 RNW 05",
+                "SV": "OVERFLY SV TRK 044 UNTIL 5100 TURN LEFT DIRECT SV 6000 FAF FD05A MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORDB05",
+            "fixes": {
+                "FD05B": "FD05B 5500 RNW 05",
+                "SV": "OVERFLY SV TRK 044 UNTIL 5100 TURN RIGHT DIRECT SV 6000 FAF FD05B MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "SV",
+                    "fixes": {
+                        "SV": "SV AT OR ABOVE 7000",
+                        "D224E": "D224E AT OR ABOVE 5500 TRK 269 UNTIL 4.3 FROM D224E"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FD23": "FD23 5500 RNW 23",
+                "SV": "OVERFLY SV TRK 229 UNTIL 5500 TURN RIGHT DIRECT SV 6000 FAF FD23 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "SV",
+                    "fixes": {
+                        "SV": "SV AT OR ABOVE 7000",
+                        "FD23": "FD23 AT OR ABOVE 5500 TRK 094 UNTIL 4.3 FROM FD23"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA05",
+            "fixes": {
+                "FN05": "FN05 5000",
+                "EN05": "OVERFLY EN05 3729",
+                "SONB": "OVERFLY SONB AT OR ABOVE 4100 RNW 05 TRK 064 UNTIL 5100 TURN RIGHT DIRECT SONB 6000 FAF FN05 MAP SO"
+            },
+            "transitions": [
+                {
+                    "name": "SO",
+                    "fixes": {
+                        "SONB": "SONB AT OR ABOVE 7000",
+                        "D244G": "D244G AT OR ABOVE 5000 TRK 289 UNTIL 4.4 FROM D244G"
+                    }
+                }
+            ]
+        }
+    ]
+}

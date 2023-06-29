@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "CATAX",
+            "lat": 39.67828888333333,
+            "lon": 101.72285
+        },
+        {
+            "name": "DIPME",
+            "lat": 39.575730566666664,
+            "lon": 101.6302
+        },
+        {
+            "name": "GLD",
+            "lat": 39.38786666666667,
+            "lon": 101.69229721666666
+        },
+        {
+            "name": "HUDGO",
+            "lat": 39.71658333333333,
+            "lon": 101.75753056666667
+        },
+        {
+            "name": "MCJEF",
+            "lat": 40.086575,
+            "lon": 102.00568611666667
+        },
+        {
+            "name": "PI001",
+            "lat": 39.680948816666664,
+            "lon": 101.72227891666667
+        },
+        {
+            "name": "PI002",
+            "lat": 39.61016358333333,
+            "lon": 101.73683126666667
+        },
+        {
+            "name": "PI003",
+            "lat": 39.59324443333333,
+            "lon": 101.63970153333334
+        },
+        {
+            "name": "RAZED",
+            "lat": 39.47332778333333,
+            "lon": 101.72271943333334
+        },
+        {
+            "name": "SYFNB",
+            "lat": 39.72815,
+            "lon": 101.76683056666667
+        },
+        {
+            "name": "WITVO",
+            "lat": 39.936419433333334,
+            "lon": 101.95756943333333
+        },
+        {
+            "name": "ZAKEL",
+            "lat": 39.838791666666665,
+            "lon": 101.86854721666667
+        },
+        {
+            "name": "ZIRPO",
+            "lat": 39.607816666666665,
+            "lon": 101.47390833333333
+        },
+        {
+            "name": "ZUDIN",
+            "lat": 39.79849166666666,
+            "lon": 101.83188333333334
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 18",
+        "RNW 32",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA32",
+            "fixes": {
+                "SYFNB": "SYFNB 4400 RNW 32 TRK 318 UNTIL 3830 TURN LEFT DIRECT SYFNB AT OR ABOVE 5200 HOLD AT SYFNB LEFT TURN INBOUNDCOURSE 318 LEGTIME 1 FAF SYFNB MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "GLD",
+                    "fixes": {
+                        "GLD": "GLD",
+                        "SYFNB": "SYFNB AT OR ABOVE 5500",
+                        "PI001": "PI001 AT OR ABOVE 5200 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5200 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5200 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MCJEF",
+                    "fixes": {
+                        "MCJEF": "MCJEF",
+                        "SYFNB": "SYFNB AT OR ABOVE 5400",
+                        "PI001": "PI001 AT OR ABOVE 5200 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 5200 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 5200 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "WITVO": "WITVO AT OR ABOVE 6800",
+                "ZAKEL": "ZAKEL 5200",
+                "ZUDIN": "ZUDIN AT OR ABOVE 4240 RNW 14 TRK 139 UNTIL 3662",
+                "DIPME": "OVERFLY DIPME AT OR ABOVE 6800 HOLD AT DIPME RIGHT TURN INBOUNDCOURSE 319 ALT 6800 LEGDIST 7 FAF ZAKEL MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "WITVO",
+                    "fixes": {
+                        "WITVO": "WITVO RIGHT TURN INBOUNDCOURSE 139 ALT 6800 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "DIPME": "DIPME AT OR ABOVE 6800",
+                "CATAX": "CATAX 5200",
+                "HUDGO": "HUDGO AT OR ABOVE 4300 RNW 32 TRK 319 UNTIL 3680",
+                "WITVO": "OVERFLY WITVO AT OR ABOVE 6800 HOLD AT WITVO RIGHT TURN INBOUNDCOURSE 139 LEGDIST 7 FAF CATAX MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "DIPME",
+                    "fixes": {
+                        "DIPME": "DIPME RIGHT TURN INBOUNDCOURSE 319 ALT 6800 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "RAZED",
+                    "fixes": {
+                        "RAZED": "RAZED"
+                    }
+                },
+                {
+                    "name": "ZIRPO",
+                    "fixes": {
+                        "ZIRPO": "ZIRPO"
+                    }
+                }
+            ]
+        }
+    ]
+}

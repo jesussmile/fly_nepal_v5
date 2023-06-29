@@ -1,0 +1,155 @@
+{
+    "fixes": [
+        {
+            "name": "80VOR",
+            "lat": 1.2982361166666667,
+            "lon": 103.88555
+        },
+        {
+            "name": "ALBAV",
+            "lat": 1.1980138833333334,
+            "lon": 103.84045833333333
+        },
+        {
+            "name": "ALBUR",
+            "lat": 1.2746944333333334,
+            "lon": 103.87307778333333
+        },
+        {
+            "name": "ALDAM",
+            "lat": 1.4637694333333333,
+            "lon": 103.95351111666666
+        },
+        {
+            "name": "CI02",
+            "lat": 1.2453166666666666,
+            "lon": 103.86051111666667
+        },
+        {
+            "name": "CI20",
+            "lat": 1.4754472166666668,
+            "lon": 103.95854443333333
+        },
+        {
+            "name": "FF02",
+            "lat": 1.2356805666666666,
+            "lon": 103.8617
+        },
+        {
+            "name": "FI02",
+            "lat": 1.276,
+            "lon": 103.874
+        },
+        {
+            "name": "FI20",
+            "lat": 1.444,
+            "lon": 103.945
+        },
+        {
+            "name": "LAMA",
+            "lat": 1.5305555666666666,
+            "lon": 103.98055556666667
+        },
+        {
+            "name": "MA02",
+            "lat": 1.3295083333333333,
+            "lon": 103.89747778333333
+        },
+        {
+            "name": "PU",
+            "lat": 1.4233305666666667,
+            "lon": 103.93326111666667
+        },
+        {
+            "name": "REDEN",
+            "lat": 1.4451777833333335,
+            "lon": 103.94560278333333
+        },
+        {
+            "name": "ROBGU",
+            "lat": 1.5218611166666667,
+            "lon": 103.97822221666667
+        },
+        {
+            "name": "RUGVI",
+            "lat": 1.2793638833333334,
+            "lon": 103.87506388333334
+        },
+        {
+            "name": "SAMKO",
+            "lat": 1.0915277833333332,
+            "lon": 103.88191666666667
+        },
+        {
+            "name": "SJ",
+            "lat": 1.2225944333333334,
+            "lon": 103.85422778333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD02",
+            "fixes": {
+                "FF02": "FF02 2500",
+                "80VOR": "80VOR AT OR ABOVE 1130",
+                "MA02": "MA02 426 RNW 02",
+                "PU": "PU AT OR ABOVE 3000",
+                "LAMA": "LAMA HOLD AT LAMA RIGHT TURN INBOUNDCOURSE 204 LEGDIST 6 FAF FF02 MAP MA02"
+            },
+            "transitions": [
+                {
+                    "name": "SAMKO",
+                    "fixes": {
+                        "SAMKO": "SAMKO",
+                        "SJ": "SJ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS02",
+            "fixes": {
+                "CI02": "CI02 AT OR ABOVE 1500",
+                "FI02": "FI02 1500 RNW 02",
+                "PU": "PU AT OR ABOVE 3000",
+                "LAMA": "LAMA AT OR ABOVE 3000 HOLD AT LAMA RIGHT TURN INBOUNDCOURSE 204 LEGDIST 6 FAF FI02 MAP RNW 02"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILS20",
+            "fixes": {
+                "CI20": "CI20 AT OR ABOVE 1500",
+                "FI20": "FI20 1500 RNW 20",
+                "SJ": "SJ AT OR ABOVE 3000 HOLD AT SJ RIGHT TURN INBOUNDCOURSE 021 LEGDIST 8 FAF FI20 MAP RNW 20"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "ALBAV": "ALBAV AT OR ABOVE 1500",
+                "ALBUR": "ALBUR 1500 RNW 02",
+                "ALDAM": "ALDAM AT OR ABOVE 1250",
+                "LAMA": "OVERFLY LAMA AT OR ABOVE 3000 HOLD AT LAMA RIGHT TURN INBOUNDCOURSE 204 LEGTIME 1 FAF ALBUR MAP RNW 02"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "ROBGU": "ROBGU AT OR ABOVE 1500",
+                "REDEN": "REDEN 1500 RNW 20",
+                "RUGVI": "RUGVI AT OR ABOVE 1030",
+                "SJ": "OVERFLY SJ AT OR ABOVE 4500 HOLD AT SJ RIGHT TURN INBOUNDCOURSE 348 LEGTIME 1 FAF REDEN MAP RNW 20"
+            },
+            "transitions": []
+        }
+    ]
+}

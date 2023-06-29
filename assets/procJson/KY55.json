@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "HUKAS",
+            "lat": 45.540988883333334,
+            "lon": 88.99001388333333
+        },
+        {
+            "name": "WITKI",
+            "lat": 45.503497216666666,
+            "lon": 88.86112778333333
+        },
+        {
+            "name": "WOKOG",
+            "lat": 45.599838883333334,
+            "lon": 89.19371666666666
+        },
+        {
+            "name": "YITUB",
+            "lat": 45.446811116666666,
+            "lon": 88.66751388333333
+        },
+        {
+            "name": "ZIRVU",
+            "lat": 45.48526111666666,
+            "lon": 88.798675
+        },
+        {
+            "name": "ZOBEB",
+            "lat": 45.56184721666666,
+            "lon": 89.06201943333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 12",
+        "RNW 19",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "WOKOG": "WOKOG AT OR ABOVE 4400",
+                "ZOBEB": "ZOBEB 3500",
+                "HUKAS": "HUKAS AT OR ABOVE 2440 RNW 12 TRK 115 UNTIL 2050",
+                "YITUB": "OVERFLY YITUB AT OR ABOVE 4400 HOLD AT YITUB RIGHT TURN INBOUNDCOURSE 296 LEGDIST 5 FAF ZOBEB MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "WOKOG",
+                    "fixes": {
+                        "WOKOG": "WOKOG RIGHT TURN INBOUNDCOURSE 115 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "YITUB": "YITUB AT OR ABOVE 4400",
+                "ZIRVU": "ZIRVU 3500",
+                "WITKI": "WITKI AT OR ABOVE 2580 RNW 30 TRK 296 UNTIL 1936",
+                "WOKOG": "OVERFLY WOKOG AT OR ABOVE 4400 HOLD AT WOKOG RIGHT TURN INBOUNDCOURSE 115 LEGDIST 5 FAF ZIRVU MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "YITUB",
+                    "fixes": {
+                        "YITUB": "YITUB RIGHT TURN INBOUNDCOURSE 296 ALT 4400 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

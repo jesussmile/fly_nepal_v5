@@ -1,0 +1,156 @@
+{
+    "fixes": [
+        {
+            "name": "BHCNB",
+            "lat": 31.712025,
+            "lon": 82.39016943333333
+        },
+        {
+            "name": "BOCAC",
+            "lat": 31.763216666666665,
+            "lon": 82.17917778333333
+        },
+        {
+            "name": "CAVKO",
+            "lat": 31.734322216666666,
+            "lon": 82.30498333333334
+        },
+        {
+            "name": "FATEX",
+            "lat": 31.690925,
+            "lon": 82.49277221666667
+        },
+        {
+            "name": "FF08",
+            "lat": 31.699669433333334,
+            "lon": 82.507325
+        },
+        {
+            "name": "KIVEC",
+            "lat": 31.66085,
+            "lon": 82.62210833333333
+        },
+        {
+            "name": "KUSKE",
+            "lat": 31.701575,
+            "lon": 82.44681388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 31.704897883333334,
+            "lon": 82.45822401666666
+        },
+        {
+            "name": "PI002",
+            "lat": 31.648413283333333,
+            "lon": 82.51005443333334
+        },
+        {
+            "name": "PI003",
+            "lat": 31.691565933333333,
+            "lon": 82.58458321666667
+        },
+        {
+            "name": "REIDS",
+            "lat": 31.898513883333333,
+            "lon": 82.21440556666667
+        },
+        {
+            "name": "WABIT",
+            "lat": 31.671625,
+            "lon": 82.00711666666666
+        },
+        {
+            "name": "ZATKI",
+            "lat": 31.725213883333332,
+            "lon": 82.34451666666666
+        },
+        {
+            "name": "ZAVDA",
+            "lat": 31.821983333333332,
+            "lon": 82.67356111666666
+        },
+        {
+            "name": "ZOPMI",
+            "lat": 31.499691666666667,
+            "lon": 82.57083333333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FF08": "FF08 2000 RNW 08",
+                "BHCNB": "BHCNB TRK 089 UNTIL 1600 TURN RIGHT DIRECT BHCNB AT OR ABOVE 2000 HOLD AT BHCNB RIGHT TURN INBOUNDCOURSE 302 LEGTIME 1 FAF FF08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "BHC",
+                    "fixes": {
+                        "BHCNB": "BHCNB AT OR BELOW 6000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "KIVEC": "KIVEC AT OR ABOVE 2300 OVERFLY KIVEC AT OR ABOVE 2300 HOLD AT KIVEC LEFT TURN INBOUNDCOURSE 081 LEGDIST 4 FAF FATEX MAP RNW 08",
+                "FATEX": "FATEX 1800",
+                "KUSKE": "KUSKE AT OR ABOVE 1020 RNW 08 TRK 081 UNTIL 1200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KIVEC",
+                    "fixes": {
+                        "KIVEC": "KIVEC LEFT TURN INBOUNDCOURSE 081 ALT 2300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZAVDA",
+                    "fixes": {
+                        "ZAVDA": "ZAVDA AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "ZOPMI",
+                    "fixes": {
+                        "ZOPMI": "ZOPMI AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "BOCAC": "BOCAC AT OR ABOVE 2700",
+                "CAVKO": "CAVKO 1600",
+                "ZATKI": "ZATKI AT OR ABOVE 920 RNW 26 TRK 261 UNTIL 540",
+                "KIVEC": "OVERFLY KIVEC AT OR ABOVE 2300 HOLD AT KIVEC LEFT TURN INBOUNDCOURSE 081 LEGDIST 4 FAF CAVKO MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "REIDS",
+                    "fixes": {
+                        "REIDS": "REIDS"
+                    }
+                },
+                {
+                    "name": "WABIT",
+                    "fixes": {
+                        "WABIT": "WABIT"
+                    }
+                }
+            ]
+        }
+    ]
+}

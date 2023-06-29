@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "JEBOB",
+            "lat": 47.79954443333333,
+            "lon": 111.69908611666666
+        },
+        {
+            "name": "PENRY",
+            "lat": 48.081952783333335,
+            "lon": 112.24432778333333
+        },
+        {
+            "name": "UVUYO",
+            "lat": 48.19920556666667,
+            "lon": 111.84811943333334
+        },
+        {
+            "name": "WEBVO",
+            "lat": 48.562958333333334,
+            "lon": 111.45475278333333
+        },
+        {
+            "name": "WELUR",
+            "lat": 48.399938883333334,
+            "lon": 112.30926943333333
+        },
+        {
+            "name": "WONVI",
+            "lat": 48.15200278333333,
+            "lon": 112.04501388333334
+        },
+        {
+            "name": "YEYUL",
+            "lat": 48.13604721666667,
+            "lon": 112.11117221666667
+        },
+        {
+            "name": "ZOVUX",
+            "lat": 48.23268611666666,
+            "lon": 111.70737221666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 15",
+        "RNW 24",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "PENRY": "PENRY AT OR ABOVE 7000 OVERFLY PENRY AT OR ABOVE 7000 HOLD AT PENRY RIGHT TURN INBOUNDCOURSE 340 ALT 7000 LEGDIST 7 FAF YEYUL MAP RNW 06",
+                "YEYUL": "YEYUL 5300",
+                "WONVI": "WONVI AT OR ABOVE 4400 RNW 06 TRK 058 UNTIL 4500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "JEBOB",
+                    "fixes": {
+                        "JEBOB": "JEBOB",
+                        "PENRY": "OVERFLY PENRY AT OR ABOVE 7000 HOLD AT PENRY RIGHT TURN INBOUNDCOURSE 047 ALT 7000 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "ZOVUX": "ZOVUX AT OR ABOVE 7000",
+                "UVUYO": "UVUYO 5200 RNW 24 TRK 238 UNTIL 4120",
+                "PENRY": "OVERFLY PENRY AT OR ABOVE 7000 HOLD AT PENRY RIGHT TURN INBOUNDCOURSE 340 ALT 7000 LEGDIST 7 FAF UVUYO MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "JEBOB",
+                    "fixes": {
+                        "JEBOB": "JEBOB",
+                        "ZOVUX": "OVERFLY ZOVUX AT OR ABOVE 7000 HOLD AT ZOVUX RIGHT TURN INBOUNDCOURSE 238 ALT 7000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "WEBVO",
+                    "fixes": {
+                        "WEBVO": "WEBVO"
+                    }
+                },
+                {
+                    "name": "WELUR",
+                    "fixes": {
+                        "WELUR": "WELUR",
+                        "ZOVUX": "OVERFLY ZOVUX AT OR ABOVE 7000 HOLD AT ZOVUX RIGHT TURN INBOUNDCOURSE 238 ALT 7000 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

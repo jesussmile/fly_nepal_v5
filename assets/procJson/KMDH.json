@@ -1,0 +1,210 @@
+{
+    "fixes": [
+        {
+            "name": "CABBI",
+            "lat": 37.87011111666666,
+            "lon": 89.24554443333334
+        },
+        {
+            "name": "ELUME",
+            "lat": 37.97547221666667,
+            "lon": 89.348325
+        },
+        {
+            "name": "ENL",
+            "lat": 38.42,
+            "lon": 89.15899721666666
+        },
+        {
+            "name": "FOGBO",
+            "lat": 37.97192221666667,
+            "lon": 89.13759166666667
+        },
+        {
+            "name": "HEMPA",
+            "lat": 37.97374443333333,
+            "lon": 89.24295556666667
+        },
+        {
+            "name": "HENAN",
+            "lat": 37.583719433333336,
+            "lon": 89.14855833333333
+        },
+        {
+            "name": "JESHE",
+            "lat": 37.58727221666667,
+            "lon": 89.35819166666667
+        },
+        {
+            "name": "JOROB",
+            "lat": 37.873358333333336,
+            "lon": 89.24565833333334
+        },
+        {
+            "name": "MD",
+            "lat": 37.870238883333336,
+            "lon": 89.24554166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 37.92843555,
+            "lon": 89.24425376666667
+        },
+        {
+            "name": "PI002",
+            "lat": 37.97997136666667,
+            "lon": 89.30741313333333
+        },
+        {
+            "name": "PI003",
+            "lat": 38.03675233333333,
+            "lon": 89.24185136666667
+        },
+        {
+            "name": "PI004",
+            "lat": 37.92856333333334,
+            "lon": 89.24425098333333
+        },
+        {
+            "name": "PI005",
+            "lat": 37.98009913333333,
+            "lon": 89.30741046666667
+        },
+        {
+            "name": "PI006",
+            "lat": 38.036880116666666,
+            "lon": 89.24184858333334
+        },
+        {
+            "name": "RYMAN",
+            "lat": 37.685755566666664,
+            "lon": 89.25069443333334
+        },
+        {
+            "name": "SOPAW",
+            "lat": 37.585541666666664,
+            "lon": 89.25337221666666
+        },
+        {
+            "name": "ZAGDA",
+            "lat": 37.73068056666666,
+            "lon": 89.24948888333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 18L",
+        "RNW 18R",
+        "RNW 24",
+        "RNW 36L",
+        "RNW 36R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18L",
+            "fixes": {
+                "HEMPA": "HEMPA AT OR ABOVE 2400",
+                "CABBI": "CABBI 2037 RNW 18L TRK 182 UNTIL 2100 TURN RIGHT DIRECT",
+                "MD": "MD AT OR ABOVE 2400 HOLD AT MD RIGHT TURN INBOUNDCOURSE 182 LEGTIME 1 FAF CABBI MAP RNW 18L"
+            },
+            "transitions": [
+                {
+                    "name": "CABBI",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                },
+                {
+                    "name": "ENL",
+                    "fixes": {
+                        "ENL": "ENL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB18L",
+            "fixes": {
+                "HEMPA": "HEMPA AT OR ABOVE 2400",
+                "MD": "MD 2000 RNW 18L TRK 182 UNTIL 2100 TURN RIGHT DIRECT MD AT OR ABOVE 2400 HOLD AT MD RIGHT TURN INBOUNDCOURSE 182 LEGTIME 1 FAF MD MAP RNW 18L"
+            },
+            "transitions": [
+                {
+                    "name": "ENL",
+                    "fixes": {
+                        "ENL": "ENL"
+                    }
+                },
+                {
+                    "name": "MD",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2400 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2400 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18L",
+            "fixes": {
+                "HEMPA": "HEMPA AT OR ABOVE 2700",
+                "JOROB": "JOROB 2100 RNW 18L TRK 182 UNTIL 800",
+                "SOPAW": "OVERFLY SOPAW AT OR ABOVE 2700 HOLD AT SOPAW LEFT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF JOROB MAP RNW 18L"
+            },
+            "transitions": [
+                {
+                    "name": "ELUME",
+                    "fixes": {
+                        "ELUME": "ELUME"
+                    }
+                },
+                {
+                    "name": "FOGBO",
+                    "fixes": {
+                        "FOGBO": "FOGBO"
+                    }
+                },
+                {
+                    "name": "HEMPA",
+                    "fixes": {
+                        "HEMPA": "HEMPA RIGHT TURN INBOUNDCOURSE 182 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36R",
+            "fixes": {
+                "SOPAW": "SOPAW AT OR ABOVE 2700",
+                "RYMAN": "RYMAN 2100",
+                "ZAGDA": "ZAGDA AT OR ABOVE 1200 RNW 36R TRK 002 UNTIL 811",
+                "HEMPA": "OVERFLY HEMPA AT OR ABOVE 2700 HOLD AT HEMPA RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4 FAF RYMAN MAP RNW 36R"
+            },
+            "transitions": [
+                {
+                    "name": "HENAN",
+                    "fixes": {
+                        "HENAN": "HENAN"
+                    }
+                },
+                {
+                    "name": "JESHE",
+                    "fixes": {
+                        "JESHE": "JESHE"
+                    }
+                },
+                {
+                    "name": "SOPAW",
+                    "fixes": {
+                        "SOPAW": "SOPAW LEFT TURN INBOUNDCOURSE 002 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

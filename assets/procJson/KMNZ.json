@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "AGJ",
+            "lat": 31.185505566666667,
+            "lon": 98.14185833333333
+        },
+        {
+            "name": "BUILT",
+            "lat": 31.673458333333333,
+            "lon": 98.28711943333333
+        },
+        {
+            "name": "FENIV",
+            "lat": 31.732794433333332,
+            "lon": 98.13626388333333
+        },
+        {
+            "name": "KUYNU",
+            "lat": 31.709002783333332,
+            "lon": 98.14066943333333
+        },
+        {
+            "name": "MEZXI",
+            "lat": 31.832677783333335,
+            "lon": 98.01275
+        },
+        {
+            "name": "SONET",
+            "lat": 31.71251111666667,
+            "lon": 97.60484721666667
+        },
+        {
+            "name": "UDOBY",
+            "lat": 31.593855566666665,
+            "lon": 98.16196388333333
+        },
+        {
+            "name": "ULIGY",
+            "lat": 31.846583333333335,
+            "lon": 98.11515833333333
+        },
+        {
+            "name": "USXEL",
+            "lat": 31.493169433333332,
+            "lon": 98.18053888333333
+        },
+        {
+            "name": "ZUBVA",
+            "lat": 31.622844433333334,
+            "lon": 98.15660833333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ULIGY": "ULIGY AT OR ABOVE 3600",
+                "FENIV": "FENIV 2500",
+                "KUYNU": "KUYNU AT OR ABOVE 2040 RNW 18 TRK 182 UNTIL 1555",
+                "USXEL": "OVERFLY USXEL AT OR ABOVE 3100 HOLD AT USXEL RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF FENIV MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "BUILT",
+                    "fixes": {
+                        "BUILT": "BUILT",
+                        "ULIGY": "OVERFLY ULIGY AT OR ABOVE 3600 HOLD AT ULIGY RIGHT TURN INBOUNDCOURSE 182 ALT 3600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SONET",
+                    "fixes": {
+                        "SONET": "SONET",
+                        "MEZXI": "MEZXI AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "USXEL": "USXEL AT OR ABOVE 3100",
+                "UDOBY": "UDOBY 2600",
+                "ZUBVA": "ZUBVA AT OR ABOVE 2040 RNW 36 TRK 002 UNTIL 1554",
+                "ULIGY": "OVERFLY ULIGY AT OR ABOVE 3600 HOLD AT ULIGY RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4 FAF UDOBY MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "AGJ",
+                    "fixes": {
+                        "AGJ": "AGJ"
+                    }
+                },
+                {
+                    "name": "BUILT",
+                    "fixes": {
+                        "BUILT": "BUILT",
+                        "USXEL": "OVERFLY USXEL AT OR ABOVE 3100 HOLD AT USXEL RIGHT TURN INBOUNDCOURSE 002 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

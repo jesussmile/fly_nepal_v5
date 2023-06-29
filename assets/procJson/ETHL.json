@@ -1,0 +1,192 @@
+{
+    "fixes": [
+        {
+            "name": "DER09",
+            "lat": 48.21973611666667,
+            "lon": 9.921280566666667
+        },
+        {
+            "name": "DER27",
+            "lat": 48.22047778333334,
+            "lon": 9.899133333333333
+        },
+        {
+            "name": "HL402",
+            "lat": 48.29416388333333,
+            "lon": 10.179019433333334
+        },
+        {
+            "name": "HL403",
+            "lat": 48.211005566666664,
+            "lon": 10.172333333333333
+        },
+        {
+            "name": "HL502",
+            "lat": 48.311655566666666,
+            "lon": 9.654805566666667
+        },
+        {
+            "name": "HL503",
+            "lat": 48.22848056666667,
+            "lon": 9.649161116666667
+        },
+        {
+            "name": "INGEK",
+            "lat": 48.22462778333333,
+            "lon": 9.773658333333334
+        },
+        {
+            "name": "LANOK",
+            "lat": 48.427222216666664,
+            "lon": 9.9325
+        },
+        {
+            "name": "LUPNB",
+            "lat": 48.218238883333335,
+            "lon": 9.911380566666667
+        },
+        {
+            "name": "OLASO",
+            "lat": 48.208333333333336,
+            "lon": 10.232
+        },
+        {
+            "name": "PELOG",
+            "lat": 48.22805556666667,
+            "lon": 9.675
+        },
+        {
+            "name": "RISIS",
+            "lat": 48.32003888333333,
+            "lon": 9.910208333333333
+        },
+        {
+            "name": "TUVEX",
+            "lat": 48.215477783333334,
+            "lon": 10.046352783333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "HL11",
+            "rnw": "27",
+            "fixes": {
+                "PELOG": "PELOG AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HL12",
+            "rnw": "27",
+            "fixes": {
+                "DER27": "OVERFLY DER27 TRK 270 UNTIL 3000 TURN LEFT DIRECT",
+                "LUPNB": "OVERFLY LUPNB",
+                "LANOK": "LANOK AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HL13",
+            "rnw": "27",
+            "fixes": {
+                "DER27": "OVERFLY DER27 TRK 270 UNTIL 3000 TURN LEFT DIRECT",
+                "LUPNB": "OVERFLY LUPNB",
+                "OLASO": "OLASO AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HL31",
+            "rnw": "09",
+            "fixes": {
+                "DER09": "OVERFLY DER09 TRK 089 UNTIL 3000 TURN RIGHT DIRECT",
+                "LUPNB": "OVERFLY LUPNB",
+                "PELOG": "PELOG AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HL32",
+            "rnw": "09",
+            "fixes": {
+                "DER09": "OVERFLY DER09 TRK 089 UNTIL 3000 TURN RIGHT DIRECT",
+                "LUPNB": "OVERFLY LUPNB",
+                "LANOK": "LANOK AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HL33",
+            "rnw": "09",
+            "fixes": {
+                "OLASO": "OLASO AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OLAS1A",
+            "rnw": "09",
+            "fixes": {
+                "OLASO": "OLASO AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PELO1A",
+            "rnw": "27",
+            "fixes": {
+                "PELOG": "PELOG AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "HL503": "HL503 AT OR ABOVE 3600",
+                "INGEK": "INGEK 3400 RNW 09 TRK 090 UNTIL 3500 TURN LEFT DIRECT",
+                "RISIS": "RISIS AT OR ABOVE 5000 SPEED 220 FAF INGEK MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "RISIS",
+                    "fixes": {
+                        "RISIS": "RISIS AT OR ABOVE 5000 SPEED 220",
+                        "HL502": "HL502 AT OR ABOVE 4100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "HL403": "HL403 AT OR ABOVE 3400",
+                "TUVEX": "TUVEX 3400 RNW 27 TRK 269 UNTIL 3500 TURN RIGHT DIRECT",
+                "RISIS": "RISIS AT OR ABOVE 5000 SPEED 220 FAF TUVEX MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "RISIS",
+                    "fixes": {
+                        "RISIS": "RISIS AT OR ABOVE 5000 SPEED 220",
+                        "HL402": "HL402 AT OR ABOVE 3700"
+                    }
+                }
+            ]
+        }
+    ]
+}

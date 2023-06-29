@@ -1,0 +1,164 @@
+{
+    "fixes": [
+        {
+            "name": "CF16",
+            "lat": 19.961236116666665,
+            "lon": 90.53578333333333
+        },
+        {
+            "name": "CF34",
+            "lat": 19.700419433333334,
+            "lon": 90.47215278333333
+        },
+        {
+            "name": "CPE",
+            "lat": 19.830833333333334,
+            "lon": 90.50394443333333
+        },
+        {
+            "name": "FD16",
+            "lat": 19.912336116666665,
+            "lon": 90.52383888333334
+        },
+        {
+            "name": "FD34",
+            "lat": 19.749325,
+            "lon": 90.48406943333333
+        },
+        {
+            "name": "FF16",
+            "lat": 19.896036116666668,
+            "lon": 90.51980278333333
+        },
+        {
+            "name": "FF34",
+            "lat": 19.740563883333333,
+            "lon": 90.48187778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 19.887671033333334,
+            "lon": 90.5178988
+        },
+        {
+            "name": "PI002",
+            "lat": 19.948443266666665,
+            "lon": 90.47749716666667
+        },
+        {
+            "name": "PI003",
+            "lat": 19.9932239,
+            "lon": 90.54384066666667
+        },
+        {
+            "name": "PI004",
+            "lat": 19.773994533333333,
+            "lon": 90.49000006666667
+        },
+        {
+            "name": "PI005",
+            "lat": 19.736005416666668,
+            "lon": 90.42543036666666
+        },
+        {
+            "name": "PI006",
+            "lat": 19.668433916666668,
+            "lon": 90.4641297
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "CPE3A",
+            "rnw": "16",
+            "fixes": {
+                "CPE": "CPE AT OR ABOVE 2000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "CPE3B",
+            "rnw": "34",
+            "fixes": {
+                "CPE": "CPE AT OR ABOVE 2000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD16",
+            "fixes": {
+                "CF16": "CF16 AT OR ABOVE 2000",
+                "FD16": "FD16 1700",
+                "CPE": "CPE 142 RNW 16 TRK 166 UNTIL 7.0 FROM CPE TURN RIGHT DIRECT CPE AT OR ABOVE 2000 FAF FD16 MAP CPE"
+            },
+            "transitions": [
+                {
+                    "name": "CPE",
+                    "fixes": {
+                        "CPE": "CPE AT OR ABOVE 2000 TRK 006 UNTIL 8.0 FROM CPE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD34",
+            "fixes": {
+                "CF34": "CF34 AT OR ABOVE 2000",
+                "FD34": "FD34 1200 RNW 34",
+                "CPE": "CPE TRK 346 UNTIL 7.0 FROM CPE TURN RIGHT DIRECT CPE AT OR ABOVE 2000 FAF FD34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "CPE",
+                    "fixes": {
+                        "CPE": "CPE AT OR ABOVE 2000 TRK 186 UNTIL 8.0 FROM CPE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR16",
+            "fixes": {
+                "FF16": "FF16 1300",
+                "CPE": "CPE 144 RNW 16 TRK 166 UNTIL 7.0 FROM CPE TURN RIGHT DIRECT CPE AT OR ABOVE 2000 FAF FF16 MAP CPE"
+            },
+            "transitions": [
+                {
+                    "name": "CPE",
+                    "fixes": {
+                        "CPE": "CPE AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 1300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR34",
+            "fixes": {
+                "FF34": "FF34 1300 RNW 34",
+                "CPE": "CPE TRK 346 UNTIL 7.0 FROM CPE TURN RIGHT DIRECT CPE AT OR ABOVE 2000 FAF FF34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "CPE",
+                    "fixes": {
+                        "CPE": "CPE AT OR ABOVE 2000",
+                        "PI004": "PI004 AT OR ABOVE 1300 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1300 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

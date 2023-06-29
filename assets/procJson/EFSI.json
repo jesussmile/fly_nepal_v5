@@ -1,0 +1,209 @@
+{
+    "fixes": [
+        {
+            "name": "ASBOL",
+            "lat": 62.755688883333335,
+            "lon": 22.699161116666666
+        },
+        {
+            "name": "CI32Y",
+            "lat": 62.584386116666664,
+            "lon": 23.055919433333333
+        },
+        {
+            "name": "ELRUM",
+            "lat": 62.625313883333334,
+            "lon": 22.971377783333335
+        },
+        {
+            "name": "FN14",
+            "lat": 62.76679721666667,
+            "lon": 22.675047216666666
+        },
+        {
+            "name": "GUBNI",
+            "lat": 62.752994433333335,
+            "lon": 22.45275
+        },
+        {
+            "name": "LETBO",
+            "lat": 62.868488883333335,
+            "lon": 22.713816666666666
+        },
+        {
+            "name": "NESPU",
+            "lat": 62.516044433333334,
+            "lon": 22.948558333333335
+        },
+        {
+            "name": "O",
+            "lat": 62.70303611666667,
+            "lon": 22.809552783333334
+        },
+        {
+            "name": "OSPAG",
+            "lat": 62.57338611666667,
+            "lon": 23.078772216666668
+        },
+        {
+            "name": "PSJNB",
+            "lat": 62.642122216666664,
+            "lon": 22.936136116666667
+        },
+        {
+            "name": "RIRTO",
+            "lat": 62.630608333333335,
+            "lon": 23.209488883333332
+        },
+        {
+            "name": "ULRAT",
+            "lat": 62.81080278333334,
+            "lon": 22.583027783333332
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY32",
+            "fixes": {
+                "CI32Y": "CI32Y AT OR ABOVE 2000",
+                "PSJNB": "PSJNB 1470 RNW 32 TRK 307 UNTIL 1500 TURN LEFT DIRECT PSJNB 2500 SPEED 200 FAF PSJNB MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "PSJ1",
+                    "fixes": {
+                        "PSJNB": "PSJNB RIGHT TURN INBOUNDCOURSE 307 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "PSJ2",
+                    "fixes": {
+                        "PSJNB": "PSJNB RIGHT TURN INBOUNDCOURSE 307 ALT 2000 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ32",
+            "fixes": {
+                "OSPAG": "OSPAG AT OR ABOVE 2500",
+                "ELRUM": "ELRUM 1900 RNW 32 TRK 307 UNTIL 800",
+                "ULRAT": "ULRAT 2500 FAF ELRUM MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "NESPU",
+                    "fixes": {
+                        "NESPU": "NESPU AT OR ABOVE 2500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "RIRTO",
+                    "fixes": {
+                        "RIRTO": "RIRTO AT OR ABOVE 2500 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB14",
+            "fixes": {
+                "FN14": "FN14 2200",
+                "O": "O 501 RNW 14 TRK 127 UNTIL 710",
+                "PSJNB": "PSJNB 2500 FAF FN14 MAP O"
+            },
+            "transitions": [
+                {
+                    "name": "PSJ1",
+                    "fixes": {
+                        "PSJNB": "PSJNB AT OR ABOVE 2500",
+                        "O": "O AT OR ABOVE 2500 TRK 275 UNTIL 5.5 FROM O"
+                    }
+                },
+                {
+                    "name": "PSJ2",
+                    "fixes": {
+                        "PSJNB": "PSJNB AT OR ABOVE 2500",
+                        "O": "O AT OR ABOVE 2500 TRK 293 UNTIL 5.8 FROM O"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB32",
+            "fixes": {
+                "PSJNB": "PSJNB 1450 RNW 32 TRK 307 UNTIL 1500 TURN LEFT DIRECT PSJNB 2500 SPEED 200 FAF PSJNB MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "PSJ1",
+                    "fixes": {
+                        "PSJNB": "PSJNB RIGHT TURN INBOUNDCOURSE 307 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ULRAT": "ULRAT AT OR ABOVE 2500",
+                "ASBOL": "ASBOL 1900 RNW 14",
+                "OSPAG": "OSPAG 2500 FAF ASBOL MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "GUBNI",
+                    "fixes": {
+                        "GUBNI": "GUBNI AT OR ABOVE 2500 SPEED 240"
+                    }
+                },
+                {
+                    "name": "LETBO",
+                    "fixes": {
+                        "LETBO": "LETBO AT OR ABOVE 2500 SPEED 240"
+                    }
+                },
+                {
+                    "name": "ULRAT",
+                    "fixes": {
+                        "ULRAT": "ULRAT RIGHT TURN INBOUNDCOURSE 217 ALT 2500 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "OSPAG": "OSPAG AT OR ABOVE 2500",
+                "ELRUM": "ELRUM 1900 RNW 32",
+                "ULRAT": "ULRAT 2500 FAF ELRUM MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "NESPU",
+                    "fixes": {
+                        "NESPU": "NESPU AT OR ABOVE 2500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "OSPAG",
+                    "fixes": {
+                        "OSPAG": "OSPAG LEFT TURN INBOUNDCOURSE 307 ALT 2500 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "RIRTO",
+                    "fixes": {
+                        "RIRTO": "RIRTO AT OR ABOVE 2500 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,152 @@
+{
+    "fixes": [
+        {
+            "name": "BRDGE",
+            "lat": 27.452583333333333,
+            "lon": 82.13437221666666
+        },
+        {
+            "name": "CUVYA",
+            "lat": 27.904436116666666,
+            "lon": 82.44598611666666
+        },
+        {
+            "name": "DADES",
+            "lat": 28.362672216666667,
+            "lon": 82.25216666666667
+        },
+        {
+            "name": "HUMKI",
+            "lat": 27.736961116666667,
+            "lon": 82.37389166666667
+        },
+        {
+            "name": "JEVOD",
+            "lat": 27.831338883333334,
+            "lon": 82.41448888333333
+        },
+        {
+            "name": "JSTRM",
+            "lat": 27.691825,
+            "lon": 82.42251943333333
+        },
+        {
+            "name": "LAL",
+            "lat": 27.986197216666667,
+            "lon": 82.01390556666666
+        },
+        {
+            "name": "LBV",
+            "lat": 26.828186116666668,
+            "lon": 81.39143888333334
+        },
+        {
+            "name": "PHK",
+            "lat": 26.782741666666666,
+            "lon": 80.69143333333334
+        },
+        {
+            "name": "PIE",
+            "lat": 27.907763883333335,
+            "lon": 82.68430833333333
+        },
+        {
+            "name": "ROGAN",
+            "lat": 27.250794433333333,
+            "lon": 81.89285833333334
+        },
+        {
+            "name": "RSW",
+            "lat": 26.529886116666667,
+            "lon": 81.77576943333334
+        },
+        {
+            "name": "SRQ",
+            "lat": 27.407016666666667,
+            "lon": 82.56366111666667
+        },
+        {
+            "name": "TIYOB",
+            "lat": 28.0671,
+            "lon": 82.32156666666667
+        },
+        {
+            "name": "UTOBE",
+            "lat": 27.987705566666666,
+            "lon": 82.38897221666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 18",
+        "RNW 22",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "BRDGE9",
+            "runway": "RNW 04 RNW 18 RNW 22 RNW 36",
+            "fixes": {
+                "BRDGE": "BRDGE",
+                "JSTRM": "JSTRM",
+                "PIE": "PIE"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "TIYOB": "TIYOB AT OR ABOVE 2600",
+                "UTOBE": "UTOBE 1700 RNW 22 TRK 222 UNTIL 407 TURN LEFT DIRECT",
+                "LAL": "OVERFLY LAL AT OR ABOVE 2700 HOLD AT LAL RIGHT TURN INBOUNDCOURSE 077 LEGDIST 4 FAF UTOBE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "DADES",
+                    "fixes": {
+                        "DADES": "DADES"
+                    }
+                },
+                {
+                    "name": "LAL",
+                    "fixes": {
+                        "LAL": "LAL"
+                    }
+                },
+                {
+                    "name": "PIE",
+                    "fixes": {
+                        "PIE": "PIE",
+                        "TIYOB": "OVERFLY TIYOB AT OR ABOVE 2600 HOLD AT TIYOB RIGHT TURN INBOUNDCOURSE 222 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HUMKI": "HUMKI AT OR ABOVE 2700",
+                "JEVOD": "JEVOD 1700",
+                "CUVYA": "OVERFLY CUVYA 205 RNW 36 TRK 344 UNTIL 407 TURN RIGHT DIRECT",
+                "LAL": "OVERFLY LAL AT OR ABOVE 2700 HOLD AT LAL RIGHT TURN INBOUNDCOURSE 077 LEGDIST 4 FAF JEVOD MAP CUVYA"
+            },
+            "transitions": [
+                {
+                    "name": "LAL",
+                    "fixes": {
+                        "LAL": "LAL",
+                        "HUMKI": "OVERFLY HUMKI AT OR ABOVE 2700 HOLD AT HUMKI RIGHT TURN INBOUNDCOURSE 344 ALT 2700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SRQ",
+                    "fixes": {
+                        "SRQ": "SRQ"
+                    }
+                }
+            ]
+        }
+    ]
+}

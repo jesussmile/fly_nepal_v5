@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "BURTU",
+            "lat": 5.664,
+            "lon": 122.41502778333333
+        },
+        {
+            "name": "RUKLA",
+            "lat": 5.2905,
+            "lon": 122.73969443333333
+        },
+        {
+            "name": "WB401",
+            "lat": 5.6135,
+            "lon": 122.45897221666667
+        },
+        {
+            "name": "WB402",
+            "lat": 5.562972216666667,
+            "lon": 122.50288888333333
+        },
+        {
+            "name": "WB601",
+            "lat": 5.353638883333334,
+            "lon": 122.68483333333333
+        },
+        {
+            "name": "WB602",
+            "lat": 5.404166666666667,
+            "lon": 122.64094443333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "WB401": "WB401 AT OR ABOVE 2500",
+                "WB402": "WB402 2000 RNW 04 TURN LEFT DIRECT",
+                "BURTU": "BURTU AT OR ABOVE 3000 HOLD AT BURTU RIGHT TURN INBOUNDCOURSE 040 ALT 3000 LEGTIME 1 FAF WB402 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "BURTU",
+                    "fixes": {
+                        "BURTU": "BURTU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "WB601": "WB601 AT OR ABOVE 3000",
+                "WB602": "WB602 2000 RNW 22 TRK 220 UNTIL 1000 TURN RIGHT DIRECT",
+                "RUKLA": "RUKLA AT OR ABOVE 4000 HOLD AT RUKLA RIGHT TURN INBOUNDCOURSE 220 ALT 4000 LEGTIME 1 FAF WB602 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "RUKLA",
+                    "fixes": {
+                        "RUKLA": "RUKLA AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

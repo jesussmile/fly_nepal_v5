@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "BNA",
+            "lat": 36.13696111666667,
+            "lon": 86.68477221666667
+        },
+        {
+            "name": "CIRPI",
+            "lat": 36.61861111666666,
+            "lon": 86.85353333333333
+        },
+        {
+            "name": "CODCA",
+            "lat": 36.71435833333334,
+            "lon": 86.77426666666666
+        },
+        {
+            "name": "GRACI",
+            "lat": 36.719805566666665,
+            "lon": 86.86531388333333
+        },
+        {
+            "name": "HOGPA",
+            "lat": 36.291772216666665,
+            "lon": 86.95328888333333
+        },
+        {
+            "name": "INICA",
+            "lat": 36.35771943333334,
+            "lon": 87.06827778333333
+        },
+        {
+            "name": "JOGNA",
+            "lat": 36.45364721666667,
+            "lon": 86.98952778333333
+        },
+        {
+            "name": "NUDXY",
+            "lat": 36.501213883333335,
+            "lon": 86.95038888333333
+        },
+        {
+            "name": "WEVTO",
+            "lat": 36.577719433333336,
+            "lon": 86.88731111666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC04",
+            "fixes": {
+                "INICA": "INICA AT OR ABOVE 3000",
+                "JOGNA": "JOGNA 2500 RNW 04 HDG 037 INTERCEPT RADIAL 348 TO",
+                "GRACI": "GRACI GRACI AT OR ABOVE 3100 HOLD AT GRACI RIGHT TURN INBOUNDCOURSE 168 LEGTIME 1 FAF JOGNA MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "BNA",
+                    "fixes": {
+                        "BNA": "BNA",
+                        "HOGPA": "HOGPA AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "INICA",
+                    "fixes": {
+                        "INICA": "INICA RIGHT TURN INBOUNDCOURSE 037 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "INICA": "INICA AT OR ABOVE 3000",
+                "JOGNA": "JOGNA 2500",
+                "NUDXY": "NUDXY AT OR ABOVE 1400 RNW 04 TRK 037 UNTIL 1100",
+                "CODCA": "OVERFLY CODCA AT OR ABOVE 3000 HOLD AT CODCA RIGHT TURN INBOUNDCOURSE 217 LEGDIST 4 FAF JOGNA MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "INICA",
+                    "fixes": {
+                        "INICA": "INICA RIGHT TURN INBOUNDCOURSE 037 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "CODCA": "CODCA AT OR ABOVE 3000",
+                "CIRPI": "CIRPI 2500",
+                "WEVTO": "WEVTO AT OR ABOVE 1560 RNW 22 TRK 217 UNTIL 975",
+                "INICA": "OVERFLY INICA AT OR ABOVE 3000 HOLD AT INICA RIGHT TURN INBOUNDCOURSE 037 LEGDIST 4 FAF CIRPI MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "CODCA",
+                    "fixes": {
+                        "CODCA": "CODCA RIGHT TURN INBOUNDCOURSE 217 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

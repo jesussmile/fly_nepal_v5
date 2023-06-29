@@ -1,0 +1,234 @@
+{
+    "fixes": [
+        {
+            "name": "AGRAT",
+            "lat": 9.065786116666667,
+            "lon": 0.7586055666666667
+        },
+        {
+            "name": "AKMAK",
+            "lat": 9.7433,
+            "lon": 0.797475
+        },
+        {
+            "name": "BOMSI",
+            "lat": 9.626019433333333,
+            "lon": 0.6770277833333334
+        },
+        {
+            "name": "CD23Z",
+            "lat": 9.668202783333333,
+            "lon": 0.7516722166666666
+        },
+        {
+            "name": "D138H",
+            "lat": 9.478761116666666,
+            "lon": 0.751725
+        },
+        {
+            "name": "D318H",
+            "lat": 9.668202783333333,
+            "lon": 0.9425916666666667
+        },
+        {
+            "name": "DEKIN",
+            "lat": 9.684663883333334,
+            "lon": 0.7372388833333333
+        },
+        {
+            "name": "ENIDO",
+            "lat": 9.498644433333334,
+            "lon": 0.8029611166666667
+        },
+        {
+            "name": "FD23Z",
+            "lat": 9.6173,
+            "lon": 0.8029888833333333
+        },
+        {
+            "name": "FS23Y",
+            "lat": 9.6176,
+            "lon": 0.8026888833333333
+        },
+        {
+            "name": "GALVA",
+            "lat": 9.488413883333333,
+            "lon": 1.0492472166666666
+        },
+        {
+            "name": "GUGUT",
+            "lat": 9.429822216666667,
+            "lon": 0.9890138833333334
+        },
+        {
+            "name": "IKPOR",
+            "lat": 9.371219433333334,
+            "lon": 0.9288027833333333
+        },
+        {
+            "name": "LE499",
+            "lat": 9.576394433333334,
+            "lon": 0.8442777833333334
+        },
+        {
+            "name": "LE500",
+            "lat": 9.618058333333334,
+            "lon": 0.8030972166666667
+        },
+        {
+            "name": "LE600",
+            "lat": 9.498694433333334,
+            "lon": 0.9210277833333333
+        },
+        {
+            "name": "LE799",
+            "lat": 9.530991666666667,
+            "lon": 0.8891611166666666
+        },
+        {
+            "name": "LE800",
+            "lat": 9.480833333333333,
+            "lon": 0.9380555666666667
+        },
+        {
+            "name": "TLE",
+            "lat": 9.573497216666667,
+            "lon": 0.8471333333333334
+        },
+        {
+            "name": "VOPEN",
+            "lat": 9.055094433333334,
+            "lon": 0.8760333333333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "VOPE1D",
+            "rnw": "23",
+            "fixes": {
+                "LE600": "OVERFLY LE600 AT OR ABOVE 1400",
+                "VOPEN": "VOPEN AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "AGRA1B",
+            "runway": "RNW 23",
+            "fixes": {
+                "AGRAT": "AGRAT",
+                "ENIDO": "ENIDO AT OR ABOVE 7000",
+                "BOMSI": "BOMSI AT OR ABOVE 3600"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORDZ23",
+            "fixes": {
+                "CD23Z": "CD23Z AT OR ABOVE 2000",
+                "FD23Z": "FD23Z 2000 RNW 23 TRK 228 UNTIL 960 TRK 228 UNTIL 2000 TURN RIGHT DIRECT",
+                "TLE": "TLE 3000 SPEED 210 HOLD AT TLE RIGHT TURN INBOUNDCOURSE 048 ALT 3000 SPEED 210 LEGTIME 1 FAF FD23Z MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "D138H",
+                    "fixes": {
+                        "D138H": "D138H AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "D318H",
+                    "fixes": {
+                        "D318H": "D318H AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "TLE1",
+                    "fixes": {
+                        "TLE": "TLE AT OR ABOVE 3000 SPEED 210 TRK 070 UNTIL 8.0 FROM TLE"
+                    }
+                },
+                {
+                    "name": "TLE2",
+                    "fixes": {
+                        "TLE": "TLE AT OR ABOVE 3000 SPEED 140 TRK 060 UNTIL 8.0 FROM TLE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "GUGUT": "GUGUT AT OR ABOVE 2200",
+                "LE800": "LE800 2200",
+                "LE799": "OVERFLY LE799 879 RNW 05 HDG 047 UNTIL 1400 TURN LEFT DIRECT",
+                "GALVA": "GALVA AT OR ABOVE 3600 HOLD AT GALVA LEFT TURN INBOUNDCOURSE 047 ALT 3600 LEGTIME 1 FAF LE800 MAP LE799"
+            },
+            "transitions": [
+                {
+                    "name": "GALVA",
+                    "fixes": {
+                        "GALVA": "GALVA AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "IKPOR",
+                    "fixes": {
+                        "IKPOR": "IKPOR AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "DEKIN": "DEKIN AT OR ABOVE 2000",
+                "LE500": "LE500 2000",
+                "LE499": "OVERFLY LE499 891 RNW 23 HDG 227 UNTIL 1400 TURN RIGHT DIRECT",
+                "AKMAK": "AKMAK AT OR ABOVE 3600 HOLD AT AKMAK RIGHT TURN INBOUNDCOURSE 227 ALT 3600 LEGTIME 1 FAF LE500 MAP LE499"
+            },
+            "transitions": [
+                {
+                    "name": "AKMAK",
+                    "fixes": {
+                        "AKMAK": "AKMAK AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "BOMSI",
+                    "fixes": {
+                        "BOMSI": "BOMSI AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY23",
+            "fixes": {
+                "FS23Y": "FS23Y 2000",
+                "TLE": "TLE 814 RNW 23 TRK 228 UNTIL 2000 TURN RIGHT DIRECT TLE 3000 SPEED 210 HOLD AT TLE RIGHT TURN INBOUNDCOURSE 048 ALT 3000 SPEED 210 LEGTIME 1 FAF FS23Y MAP TLE"
+            },
+            "transitions": [
+                {
+                    "name": "TLE1",
+                    "fixes": {
+                        "TLE": "TLE AT OR ABOVE 3000 SPEED 210 TRK 071 UNTIL 7.0 FROM TLE"
+                    }
+                },
+                {
+                    "name": "TLE2",
+                    "fixes": {
+                        "TLE": "TLE AT OR ABOVE 3000 SPEED 140 TRK 060 UNTIL 7.0 FROM TLE"
+                    }
+                }
+            ]
+        }
+    ]
+}

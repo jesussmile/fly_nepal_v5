@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "30VOR",
+            "lat": 13.26765,
+            "lon": 48.356938883333335
+        },
+        {
+            "name": "50VOR",
+            "lat": 13.242377783333334,
+            "lon": 48.379358333333336
+        },
+        {
+            "name": "FD23",
+            "lat": 13.223422216666666,
+            "lon": 48.396169433333334
+        },
+        {
+            "name": "FN23",
+            "lat": 13.231608333333334,
+            "lon": 48.38857221666667
+        },
+        {
+            "name": "FS23",
+            "lat": 13.229108333333333,
+            "lon": 48.39112778333333
+        },
+        {
+            "name": "MD23",
+            "lat": 13.280286116666666,
+            "lon": 48.34573056666667
+        },
+        {
+            "name": "MN23",
+            "lat": 13.280508333333334,
+            "lon": 48.345205566666664
+        },
+        {
+            "name": "MS23",
+            "lat": 13.280663883333334,
+            "lon": 48.34539443333333
+        },
+        {
+            "name": "NSB",
+            "lat": 13.305544433333333,
+            "lon": 48.32331666666666
+        },
+        {
+            "name": "VSNNB",
+            "lat": 13.320061116666666,
+            "lon": 48.310102783333335
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FD23": "FD23 2000",
+                "50VOR": "50VOR AT OR ABOVE 1540",
+                "30VOR": "30VOR AT OR ABOVE 930",
+                "MD23": "MD23 683 RNW 23 TRK 230 UNTIL 683 TRK 050 UNTIL 3200 TURN LEFT DIRECT",
+                "NSB": "NSB 3200 FAF FD23 MAP MD23"
+            },
+            "transitions": [
+                {
+                    "name": "NSB1",
+                    "fixes": {
+                        "NSB": "NSB AT OR ABOVE 3200 SPEED 220 TRK 076 UNTIL 8.0 FROM NSB"
+                    }
+                },
+                {
+                    "name": "NSB2",
+                    "fixes": {
+                        "NSB": "NSB AT OR ABOVE 3200 SPEED 140 TRK 062 UNTIL 8.0 FROM NSB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB23",
+            "fixes": {
+                "FN23": "FN23 2000",
+                "MN23": "MN23 724 RNW 23 TRK 230 UNTIL 724 TRK 050 UNTIL 3200 TURN LEFT DIRECT",
+                "VSNNB": "VSNNB 3200 FAF FN23 MAP MN23"
+            },
+            "transitions": [
+                {
+                    "name": "VSN1",
+                    "fixes": {
+                        "VSNNB": "VSNNB AT OR ABOVE 3200 SPEED 220 TRK 076 UNTIL 7.3 FROM VSNNB"
+                    }
+                },
+                {
+                    "name": "VSN2",
+                    "fixes": {
+                        "VSNNB": "VSNNB AT OR ABOVE 3200 SPEED 140 TRK 062 UNTIL 7.0 FROM VSNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR23",
+            "fixes": {
+                "FS23": "FS23 2000",
+                "MS23": "MS23 703 RNW 23 TRK 230 UNTIL 703 TRK 050 UNTIL 3200 TURN LEFT DIRECT",
+                "NSB": "NSB 3200 FAF FS23 MAP MS23"
+            },
+            "transitions": [
+                {
+                    "name": "NSB",
+                    "fixes": {
+                        "NSB": "NSB AT OR ABOVE 3200 SPEED 220 TRK 076 UNTIL 7.3 FROM NSB"
+                    }
+                }
+            ]
+        }
+    ]
+}

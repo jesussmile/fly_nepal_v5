@@ -1,0 +1,138 @@
+{
+    "fixes": [
+        {
+            "name": "CE600",
+            "lat": 17.448594433333334,
+            "lon": 63.03988056666667
+        },
+        {
+            "name": "CE610",
+            "lat": 17.395222216666667,
+            "lon": 63.107072216666666
+        },
+        {
+            "name": "CE620",
+            "lat": 17.459663883333334,
+            "lon": 63.16266388333333
+        },
+        {
+            "name": "CE630",
+            "lat": 17.875752783333333,
+            "lon": 63.07600278333334
+        },
+        {
+            "name": "CE640",
+            "lat": 17.330763883333333,
+            "lon": 63.05151943333333
+        },
+        {
+            "name": "CE650",
+            "lat": 17.305297216666666,
+            "lon": 62.830361116666666
+        },
+        {
+            "name": "CE700",
+            "lat": 17.545580566666665,
+            "lon": 62.917597216666664
+        },
+        {
+            "name": "CE710",
+            "lat": 17.598847216666666,
+            "lon": 62.85033056666666
+        },
+        {
+            "name": "CE720",
+            "lat": 17.663372216666666,
+            "lon": 62.90587778333333
+        },
+        {
+            "name": "CE730",
+            "lat": 17.534308333333332,
+            "lon": 62.79482221666667
+        },
+        {
+            "name": "CMPJM",
+            "lat": 18.038116666666667,
+            "lon": 63.11827778333333
+        },
+        {
+            "name": "PKSKB",
+            "lat": 17.295277783333333,
+            "lon": 62.743888883333334
+        },
+        {
+            "name": "ZPATA",
+            "lat": 17.473055566666666,
+            "lon": 62.833055566666665
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "CE610": "CE610 AT OR ABOVE 2000",
+                "CE600": "CE600 1500 RNW 06 HDG 064 UNTIL 2000 TURN LEFT DIRECT",
+                "CMPJM": "CMPJM AT OR ABOVE 3000 FAF CE600 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "CE610",
+                    "fixes": {
+                        "CE610": "CE610 LEFT TURN INBOUNDCOURSE 064 ALT 2000 SPEED 230 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CE630",
+                    "fixes": {
+                        "CE630": "CE630 AT OR ABOVE 2000",
+                        "CE620": "CE620 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "PKSKB",
+                    "fixes": {
+                        "PKSKB": "PKSKB AT OR ABOVE 4000",
+                        "CE650": "CE650 AT OR ABOVE 4000",
+                        "CE640": "CE640 AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "CE710": "CE710 AT OR ABOVE 2000",
+                "CE700": "CE700 1500 RNW 24 HDG 244 UNTIL 2000 TURN RIGHT DIRECT",
+                "CMPJM": "CMPJM AT OR ABOVE 3000 FAF CE700 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "CE630",
+                    "fixes": {
+                        "CE630": "CE630 AT OR ABOVE 2000",
+                        "CE720": "CE720 AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "CE710",
+                    "fixes": {
+                        "CE710": "CE710 RIGHT TURN INBOUNDCOURSE 244 ALT 2000 SPEED 230 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZPATA",
+                    "fixes": {
+                        "ZPATA": "ZPATA AT OR ABOVE 2000",
+                        "CE730": "CE730 AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

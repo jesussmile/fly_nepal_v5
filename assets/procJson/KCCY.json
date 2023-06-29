@@ -1,0 +1,129 @@
+{
+    "fixes": [
+        {
+            "name": "ALO",
+            "lat": 42.55649721666666,
+            "lon": 92.398925
+        },
+        {
+            "name": "CFBWS",
+            "lat": 43.200808333333335,
+            "lon": 92.85876388333334
+        },
+        {
+            "name": "IJIBU",
+            "lat": 42.96495278333333,
+            "lon": 92.40268611666667
+        },
+        {
+            "name": "IY",
+            "lat": 43.133916666666664,
+            "lon": 92.72819166666666
+        },
+        {
+            "name": "JUKAG",
+            "lat": 43.18245556666667,
+            "lon": 92.82094166666667
+        },
+        {
+            "name": "NUPZI",
+            "lat": 43.023930566666664,
+            "lon": 92.51554166666666
+        },
+        {
+            "name": "PI001",
+            "lat": 43.167356616666666,
+            "lon": 92.7937066
+        },
+        {
+            "name": "PI002",
+            "lat": 43.154871066666665,
+            "lon": 92.89045391666667
+        },
+        {
+            "name": "PI003",
+            "lat": 43.22936001666667,
+            "lon": 92.91556755
+        },
+        {
+            "name": "WESBA",
+            "lat": 43.096333333333334,
+            "lon": 92.65468333333334
+        },
+        {
+            "name": "ZEDRA",
+            "lat": 43.12376388333333,
+            "lon": 92.70751943333333
+        },
+        {
+            "name": "ZUMAM",
+            "lat": 43.05141388333333,
+            "lon": 92.568275
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 12",
+        "RNW 18",
+        "RNW 22",
+        "RNW 30",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC12",
+            "fixes": {
+                "CFBWS": "CFBWS AT OR ABOVE 3000",
+                "IY": "IY 3000 RNW 12 HDG 125 UNTIL 1600 TURN LEFT DIRECT IY AT OR ABOVE 3000 HOLD AT IY RIGHT TURN INBOUNDCOURSE 125 LEGTIME 1 FAF IY MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "ALO",
+                    "fixes": {
+                        "ALO": "ALO",
+                        "IY": "IY AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "JUKAG": "JUKAG AT OR ABOVE 4000",
+                "ZEDRA": "ZEDRA 2700",
+                "WESBA": "WESBA AT OR ABOVE 1780 RNW 12 TRK 125 UNTIL 1371",
+                "IJIBU": "OVERFLY IJIBU AT OR ABOVE 4000 HOLD AT IJIBU RIGHT TURN INBOUNDCOURSE 305 LEGDIST 4 FAF ZEDRA MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "JUKAG",
+                    "fixes": {
+                        "JUKAG": "JUKAG RIGHT TURN INBOUNDCOURSE 125 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IJIBU": "IJIBU AT OR ABOVE 4000",
+                "NUPZI": "NUPZI 2700",
+                "ZUMAM": "ZUMAM AT OR ABOVE 1780 RNW 30 TRK 305 UNTIL 1371",
+                "JUKAG": "OVERFLY JUKAG AT OR ABOVE 4000 HOLD AT JUKAG RIGHT TURN INBOUNDCOURSE 125 LEGDIST 4 FAF NUPZI MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "IJIBU",
+                    "fixes": {
+                        "IJIBU": "IJIBU RIGHT TURN INBOUNDCOURSE 305 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

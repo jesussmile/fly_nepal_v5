@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "ALEFO",
+            "lat": 37.48149166666666,
+            "lon": 95.51390278333334
+        },
+        {
+            "name": "CNU",
+            "lat": 37.626158333333336,
+            "lon": 95.59346943333334
+        },
+        {
+            "name": "CUMTA",
+            "lat": 37.47184166666667,
+            "lon": 95.40991666666666
+        },
+        {
+            "name": "ERECI",
+            "lat": 37.85691943333333,
+            "lon": 95.58679721666667
+        },
+        {
+            "name": "FLOUR",
+            "lat": 37.62801388333333,
+            "lon": 95.49254166666667
+        },
+        {
+            "name": "HOTAP",
+            "lat": 37.490172216666664,
+            "lon": 95.61229166666666
+        },
+        {
+            "name": "IFAPY",
+            "lat": 37.70425556666667,
+            "lon": 95.48139443333334
+        },
+        {
+            "name": "MACEZ",
+            "lat": 37.666586116666664,
+            "lon": 95.49035556666666
+        },
+        {
+            "name": "MYYER",
+            "lat": 37.5826,
+            "lon": 95.49917221666666
+        },
+        {
+            "name": "NALLY",
+            "lat": 37.53599166666667,
+            "lon": 94.96342221666667
+        },
+        {
+            "name": "PI001",
+            "lat": 37.6005682,
+            "lon": 95.6596448
+        },
+        {
+            "name": "PI002",
+            "lat": 37.53280238333333,
+            "lon": 95.68906755
+        },
+        {
+            "name": "PI003",
+            "lat": 37.55294576666667,
+            "lon": 95.78242108333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ALEFO": "ALEFO AT OR ABOVE 2600",
+                "MYYER": "MYYER 2600",
+                "FLOUR": "FLOUR AT OR ABOVE 1700 RNW 36 TRK 002 UNTIL 1400",
+                "IFAPY": "IFAPY",
+                "ERECI": "OVERFLY ERECI AT OR ABOVE 2900 HOLD AT ERECI RIGHT TURN INBOUNDCOURSE 176 LEGDIST 4 FAF MYYER MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HOTAP",
+                    "fixes": {
+                        "HOTAP": "HOTAP"
+                    }
+                },
+                {
+                    "name": "NALLY",
+                    "fixes": {
+                        "NALLY": "NALLY",
+                        "CUMTA": "CUMTA AT OR ABOVE 2600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "CNU": "CNU 2600 CNU AT OR ABOVE 2800 HOLD AT CNU RIGHT TURN INBOUNDCOURSE 059 LEGTIME 1 FAF CNU MAP MACEZ",
+                "MACEZ": "OVERFLY MACEZ 1620 RNW 18 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CNU",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "CNU": "CNU 2600 CNU AT OR ABOVE 2800 HOLD AT CNU RIGHT TURN INBOUNDCOURSE 059 LEGTIME 1 FAF CNU MAP MACEZ",
+                "MACEZ": "OVERFLY MACEZ 1620 RNW 36 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CNU",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

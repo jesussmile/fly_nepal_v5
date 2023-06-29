@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "AVTIX",
+            "lat": 48.620425,
+            "lon": 78.35505833333333
+        },
+        {
+            "name": "DAPIG",
+            "lat": 48.682302783333334,
+            "lon": 78.47347778333334
+        },
+        {
+            "name": "EPSAS",
+            "lat": 48.51148611666667,
+            "lon": 77.94665278333333
+        },
+        {
+            "name": "GOTUD",
+            "lat": 48.38123611666666,
+            "lon": 78.10266943333333
+        },
+        {
+            "name": "IGSEK",
+            "lat": 48.66389721666667,
+            "lon": 78.4382
+        },
+        {
+            "name": "IKLAT",
+            "lat": 48.7477,
+            "lon": 78.39558333333333
+        },
+        {
+            "name": "KEPKI",
+            "lat": 48.61685,
+            "lon": 78.55116943333333
+        },
+        {
+            "name": "OTMUP",
+            "lat": 48.465572216666665,
+            "lon": 78.06096943333333
+        },
+        {
+            "name": "UKMUL",
+            "lat": 48.446388883333334,
+            "lon": 78.02476111666667
+        },
+        {
+            "name": "URSOP",
+            "lat": 48.50860556666667,
+            "lon": 78.14237221666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "DAPIG": "DAPIG AT OR ABOVE 2700",
+                "AVTIX": "AVTIX 2700 RNW 14",
+                "OTMUP": "OVERFLY OTMUP 2800 HOLD AT OTMUP RIGHT TURN INBOUNDCOURSE 141 LEGTIME 1 FAF AVTIX MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "IKLAT",
+                    "fixes": {
+                        "IKLAT": "IKLAT SPEED 210"
+                    }
+                },
+                {
+                    "name": "KEPKI",
+                    "fixes": {
+                        "KEPKI": "KEPKI SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "UKMUL": "UKMUL AT OR ABOVE 2700",
+                "URSOP": "URSOP 2700 RNW 32",
+                "IGSEK": "OVERFLY IGSEK 2700 HOLD AT IGSEK RIGHT TURN INBOUNDCOURSE 321 LEGTIME 1 FAF URSOP MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "EPSAS",
+                    "fixes": {
+                        "EPSAS": "EPSAS SPEED 210"
+                    }
+                },
+                {
+                    "name": "GOTUD",
+                    "fixes": {
+                        "GOTUD": "GOTUD SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

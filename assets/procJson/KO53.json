@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "FIRET",
+            "lat": 36.789602783333336,
+            "lon": 97.46665
+        },
+        {
+            "name": "INACE",
+            "lat": 36.97695,
+            "lon": 97.74835556666666
+        },
+        {
+            "name": "INERE",
+            "lat": 36.60388056666667,
+            "lon": 97.74965
+        },
+        {
+            "name": "LIBEY",
+            "lat": 36.976672216666664,
+            "lon": 97.64435556666666
+        },
+        {
+            "name": "PAKIY",
+            "lat": 36.87682221666667,
+            "lon": 97.74870278333333
+        },
+        {
+            "name": "PALOC",
+            "lat": 36.70401388333333,
+            "lon": 97.74930278333333
+        },
+        {
+            "name": "RANYO",
+            "lat": 36.603602783333336,
+            "lon": 97.64615278333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "INACE": "INACE AT OR ABOVE 2800",
+                "PAKIY": "PAKIY 2700 RNW 17 TRK 175 UNTIL 1492 TURN LEFT DIRECT",
+                "FIRET": "OVERFLY FIRET AT OR ABOVE 5000 HOLD AT FIRET RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4 FAF PAKIY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "FIRET",
+                    "fixes": {
+                        "FIRET": "FIRET",
+                        "LIBEY": "LIBEY AT OR ABOVE 2800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "INERE": "INERE AT OR ABOVE 2700",
+                "PALOC": "PALOC 2700 RNW 35 TRK 355 UNTIL 1492 TURN RIGHT DIRECT",
+                "FIRET": "OVERFLY FIRET AT OR ABOVE 5000 HOLD AT FIRET RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4 FAF PALOC MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "FIRET",
+                    "fixes": {
+                        "FIRET": "FIRET",
+                        "RANYO": "RANYO AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        }
+    ]
+}

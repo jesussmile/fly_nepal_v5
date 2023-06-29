@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CADER",
+            "lat": 33.81040556666667,
+            "lon": 82.86706943333333
+        },
+        {
+            "name": "HOXOD",
+            "lat": 33.835,
+            "lon": 82.907775
+        },
+        {
+            "name": "LUYIG",
+            "lat": 33.65506943333333,
+            "lon": 82.61103333333334
+        },
+        {
+            "name": "NICIY",
+            "lat": 33.725116666666665,
+            "lon": 82.72626666666666
+        },
+        {
+            "name": "ORAYO",
+            "lat": 33.74896111666666,
+            "lon": 82.76558056666667
+        },
+        {
+            "name": "PACIY",
+            "lat": 33.898755566666665,
+            "lon": 83.01350833333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "PACIY": "PACIY AT OR ABOVE 2400",
+                "HOXOD": "HOXOD 2400",
+                "CADER": "CADER AT OR ABOVE 1600 RNW 13 TRK 133 UNTIL 907",
+                "LUYIG": "OVERFLY LUYIG AT OR ABOVE 2400 HOLD AT LUYIG RIGHT TURN INBOUNDCOURSE 313 LEGDIST 4 FAF HOXOD MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "PACIY",
+                    "fixes": {
+                        "PACIY": "PACIY RIGHT TURN INBOUNDCOURSE 133 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "LUYIG": "LUYIG AT OR ABOVE 2400",
+                "NICIY": "NICIY 2400",
+                "ORAYO": "ORAYO AT OR ABOVE 1600 RNW 31 TRK 313 UNTIL 891",
+                "PACIY": "OVERFLY PACIY AT OR ABOVE 2400 HOLD AT PACIY RIGHT TURN INBOUNDCOURSE 133 LEGDIST 4 FAF NICIY MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "LUYIG",
+                    "fixes": {
+                        "LUYIG": "LUYIG RIGHT TURN INBOUNDCOURSE 313 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

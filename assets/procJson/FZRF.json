@@ -1,0 +1,234 @@
+{
+    "fixes": [
+        {
+            "name": "ADEMA",
+            "lat": 5.714069433333333,
+            "lon": 29.352580566666667
+        },
+        {
+            "name": "AGIBU",
+            "lat": 6.209441666666667,
+            "lon": 29.225077783333333
+        },
+        {
+            "name": "BEBAX",
+            "lat": 6.019269433333333,
+            "lon": 29.174547216666667
+        },
+        {
+            "name": "BIPGO",
+            "lat": 5.540808333333334,
+            "lon": 29.259038883333332
+        },
+        {
+            "name": "CANOK",
+            "lat": 5.906144433333333,
+            "lon": 29.200147216666668
+        },
+        {
+            "name": "EMDOT",
+            "lat": 5.747511116666667,
+            "lon": 29.454736116666666
+        },
+        {
+            "name": "IDIKU",
+            "lat": 5.866988883333334,
+            "lon": 29.159936116666668
+        },
+        {
+            "name": "LUMEV",
+            "lat": 5.854086116666666,
+            "lon": 29.439602783333335
+        },
+        {
+            "name": "LUXAL",
+            "lat": 5.985822216666667,
+            "lon": 29.072344433333335
+        },
+        {
+            "name": "NIGIM",
+            "lat": 5.822544433333333,
+            "lon": 29.449683333333333
+        },
+        {
+            "name": "OKDUK",
+            "lat": 5.87925,
+            "lon": 29.087505566666668
+        },
+        {
+            "name": "R06C1",
+            "lat": 5.941577783333333,
+            "lon": 29.14335
+        },
+        {
+            "name": "R06F1",
+            "lat": 5.9061805666666665,
+            "lon": 29.20015
+        },
+        {
+            "name": "R06M1",
+            "lat": 5.853105566666667,
+            "lon": 29.285330566666666
+        },
+        {
+            "name": "R24C1",
+            "lat": 5.791763883333333,
+            "lon": 29.383761116666665
+        },
+        {
+            "name": "R24F1",
+            "lat": 5.836016666666667,
+            "lon": 29.312780566666667
+        },
+        {
+            "name": "SUDOG",
+            "lat": 5.844905566666666,
+            "lon": 29.298583333333333
+        },
+        {
+            "name": "ULSOL",
+            "lat": 6.0041166666666665,
+            "lon": 29.042961116666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "AGIB2C",
+            "rnw": "24",
+            "fixes": {
+                "CANOK": "OVERFLY CANOK 6000",
+                "AGIBU": "AGIBU 8400"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "AGIB2D",
+            "rnw": "06",
+            "fixes": {
+                "SUDOG": "OVERFLY SUDOG 6000 TURN RIGHT DIRECT",
+                "AGIBU": "AGIBU 8400"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BIPG2C",
+            "rnw": "24",
+            "fixes": {
+                "CANOK": "OVERFLY CANOK 6000",
+                "IDIKU": "IDIKU",
+                "BIPGO": "BIPGO 9200"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BIPG2D",
+            "rnw": "06",
+            "fixes": {
+                "SUDOG": "OVERFLY SUDOG 6000",
+                "BIPGO": "BIPGO 9200"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "AGIB2A",
+            "runway": "RNW 24",
+            "fixes": {
+                "AGIBU": "AGIBU 8400",
+                "LUMEV": "LUMEV 7500"
+            }
+        },
+        {
+            "name": "AGIB2B",
+            "runway": "RNW 06",
+            "fixes": {
+                "AGIBU": "AGIBU 8400",
+                "BEBAX": "BEBAX 7000"
+            }
+        },
+        {
+            "name": "BIPG2A",
+            "runway": "RNW 24",
+            "fixes": {
+                "BIPGO": "BIPGO 9200",
+                "ADEMA": "ADEMA 7500"
+            }
+        },
+        {
+            "name": "BIPG2B",
+            "runway": "RNW 06",
+            "fixes": {
+                "BIPGO": "BIPGO AT OR ABOVE 9200",
+                "OKDUK": "OKDUK 7000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "R06C1": "R06C1 AT OR ABOVE 5200",
+                "R06F1": "R06F1 3700 RNW 06",
+                "R06M1": "R06M1",
+                "NIGIM": "OVERFLY NIGIM 6000 HOLD AT NIGIM LEFT TURN INBOUNDCOURSE 080 ALT 6000 LEGDIST 5 FAF R06F1 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "BEBAX",
+                    "fixes": {
+                        "BEBAX": "BEBAX AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "LUXAL",
+                    "fixes": {
+                        "LUXAL": "LUXAL AT OR ABOVE 7000"
+                    }
+                },
+                {
+                    "name": "OKDUK",
+                    "fixes": {
+                        "OKDUK": "OKDUK AT OR ABOVE 7000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "R24C1": "R24C1 AT OR ABOVE 5700",
+                "R24F1": "R24F1 4000 RNW 24",
+                "ULSOL": "OVERFLY ULSOL 6000 HOLD AT ULSOL LEFT TURN INBOUNDCOURSE 239 ALT 6000 LEGDIST 5 FAF R24F1 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "ADEMA",
+                    "fixes": {
+                        "ADEMA": "ADEMA AT OR ABOVE 7500"
+                    }
+                },
+                {
+                    "name": "EMDOT",
+                    "fixes": {
+                        "EMDOT": "EMDOT AT OR ABOVE 7500"
+                    }
+                },
+                {
+                    "name": "LUMEV",
+                    "fixes": {
+                        "LUMEV": "LUMEV AT OR ABOVE 7500"
+                    }
+                }
+            ]
+        }
+    ]
+}

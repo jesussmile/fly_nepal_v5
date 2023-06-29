@@ -1,0 +1,197 @@
+{
+    "fixes": [
+        {
+            "name": "AVFAL",
+            "lat": 40.764575,
+            "lon": 95.86429166666667
+        },
+        {
+            "name": "DAXZU",
+            "lat": 41.10282221666667,
+            "lon": 95.96216943333333
+        },
+        {
+            "name": "FN16",
+            "lat": 41.03325556666667,
+            "lon": 95.95431111666667
+        },
+        {
+            "name": "FN34",
+            "lat": 40.860044433333336,
+            "lon": 95.91631943333333
+        },
+        {
+            "name": "JINWU",
+            "lat": 40.782361116666664,
+            "lon": 95.75713056666666
+        },
+        {
+            "name": "LEYUF",
+            "lat": 40.74669166666666,
+            "lon": 95.97139721666667
+        },
+        {
+            "name": "MEPWE",
+            "lat": 41.085991666666665,
+            "lon": 96.07721943333334
+        },
+        {
+            "name": "OVR",
+            "lat": 41.16716666666667,
+            "lon": 95.73685278333333
+        },
+        {
+            "name": "OYEDI",
+            "lat": 41.00506111666667,
+            "lon": 95.93377778333334
+        },
+        {
+            "name": "PANNY",
+            "lat": 40.63313611666667,
+            "lon": 96.48494721666667
+        },
+        {
+            "name": "PI001",
+            "lat": 40.998601283333336,
+            "lon": 95.93890443333333
+        },
+        {
+            "name": "PI002",
+            "lat": 41.063546366666664,
+            "lon": 95.89873416666667
+        },
+        {
+            "name": "PI003",
+            "lat": 41.10037963333333,
+            "lon": 95.98811486666666
+        },
+        {
+            "name": "PI004",
+            "lat": 40.88549106666667,
+            "lon": 95.91516223333333
+        },
+        {
+            "name": "PI005",
+            "lat": 40.836593783333335,
+            "lon": 95.98443956666667
+        },
+        {
+            "name": "PI006",
+            "lat": 40.7772235,
+            "lon": 95.92015056666666
+        },
+        {
+            "name": "PMVNB",
+            "lat": 40.94378888333333,
+            "lon": 95.91246943333333
+        },
+        {
+            "name": "VESZE",
+            "lat": 40.86247778333333,
+            "lon": 95.89251943333333
+        },
+        {
+            "name": "VIKKI",
+            "lat": 40.69310278333333,
+            "lon": 95.41387221666666
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FN16": "FN16 2800 RNW 16",
+                "PMVNB": "PMVNB AT OR ABOVE 1604 TRK 155 UNTIL 2800 TURN LEFT DIRECT PMVNB HOLD AT PMVNB LEFT TURN INBOUNDCOURSE 155 LEGTIME 1 FAF FN16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "OVR",
+                    "fixes": {
+                        "OVR": "OVR",
+                        "PMVNB": "PMVNB AT OR ABOVE 2800",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB34",
+            "fixes": {
+                "FN34": "FN34 2800 RNW 34",
+                "PMVNB": "PMVNB AT OR ABOVE 1604 TRK 357 UNTIL 2800 TURN LEFT DIRECT PMVNB HOLD AT PMVNB LEFT TURN INBOUNDCOURSE 357 LEGTIME 1 FAF FN34 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "OVR",
+                    "fixes": {
+                        "OVR": "OVR",
+                        "PMVNB": "PMVNB AT OR ABOVE 2900",
+                        "PI004": "PI004 AT OR ABOVE 2800 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2800 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "DAXZU": "DAXZU AT OR ABOVE 2700",
+                "OYEDI": "OYEDI 2200 RNW 16",
+                "AVFAL": "OVERFLY AVFAL AT OR ABOVE 2800 HOLD AT AVFAL RIGHT TURN INBOUNDCOURSE 343 LEGDIST 4 FAF OYEDI MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "DAXZU",
+                    "fixes": {
+                        "DAXZU": "DAXZU RIGHT TURN INBOUNDCOURSE 163 ALT 2700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MEPWE",
+                    "fixes": {
+                        "MEPWE": "MEPWE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "AVFAL": "AVFAL AT OR ABOVE 2800",
+                "VESZE": "VESZE 2800 RNW 34",
+                "DAXZU": "OVERFLY DAXZU AT OR ABOVE 2800 HOLD AT DAXZU RIGHT TURN INBOUNDCOURSE 163 LEGDIST 4 FAF VESZE MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "AVFAL",
+                    "fixes": {
+                        "AVFAL": "AVFAL RIGHT TURN INBOUNDCOURSE 343 ALT 2800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PANNY",
+                    "fixes": {
+                        "PANNY": "PANNY",
+                        "LEYUF": "LEYUF AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "VIKKI",
+                    "fixes": {
+                        "VIKKI": "VIKKI",
+                        "JINWU": "JINWU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "ACIWA",
+            "lat": 37.09280833333333,
+            "lon": 90.31512778333334
+        },
+        {
+            "name": "CUFGO",
+            "lat": 36.880169433333336,
+            "lon": 90.321625
+        },
+        {
+            "name": "EKRUF",
+            "lat": 36.568175,
+            "lon": 90.33108888333334
+        },
+        {
+            "name": "ETBUW",
+            "lat": 36.98868611666666,
+            "lon": 90.31831388333333
+        },
+        {
+            "name": "MADZU",
+            "lat": 36.566091666666665,
+            "lon": 90.22767221666666
+        },
+        {
+            "name": "NUCIL",
+            "lat": 36.829194433333335,
+            "lon": 90.323175
+        },
+        {
+            "name": "UMWIX",
+            "lat": 36.34519443333333,
+            "lon": 90.84783333333333
+        },
+        {
+            "name": "ZEDIP",
+            "lat": 36.66839721666667,
+            "lon": 90.32805833333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ETBUW": "ETBUW AT OR ABOVE 2300",
+                "CUFGO": "CUFGO 2300",
+                "NUCIL": "NUCIL AT OR ABOVE 1300 RNW 18 TRK 181 UNTIL 634",
+                "EKRUF": "OVERFLY EKRUF AT OR ABOVE 2300 HOLD AT EKRUF RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF CUFGO MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ACIWA",
+                    "fixes": {
+                        "ACIWA": "ACIWA"
+                    }
+                },
+                {
+                    "name": "ETBUW",
+                    "fixes": {
+                        "ETBUW": "ETBUW RIGHT TURN INBOUNDCOURSE 181 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "EKRUF": "EKRUF AT OR ABOVE 2300",
+                "ZEDIP": "ZEDIP 2300 RNW 36 TRK 001 UNTIL 669",
+                "ETBUW": "OVERFLY ETBUW AT OR ABOVE 2300 HOLD AT ETBUW RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF ZEDIP MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "EKRUF",
+                    "fixes": {
+                        "EKRUF": "EKRUF RIGHT TURN INBOUNDCOURSE 001 ALT 2300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MADZU",
+                    "fixes": {
+                        "MADZU": "MADZU"
+                    }
+                },
+                {
+                    "name": "UMWIX",
+                    "fixes": {
+                        "UMWIX": "UMWIX"
+                    }
+                }
+            ]
+        }
+    ]
+}

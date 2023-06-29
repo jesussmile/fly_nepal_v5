@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "BABKE",
+            "lat": 68.42815,
+            "lon": 166.71083888333334
+        },
+        {
+            "name": "COPOX",
+            "lat": 68.51415278333333,
+            "lon": 166.24541388333333
+        },
+        {
+            "name": "EKERE",
+            "lat": 68.26931111666667,
+            "lon": 166.88711111666666
+        },
+        {
+            "name": "FENOM",
+            "lat": 68.1283,
+            "lon": 166.66856111666667
+        },
+        {
+            "name": "JENSU",
+            "lat": 68.52024443333333,
+            "lon": 166.60740278333333
+        },
+        {
+            "name": "LURNB",
+            "lat": 68.87125556666666,
+            "lon": 166.07600278333334
+        },
+        {
+            "name": "SUGRE",
+            "lat": 68.07155278333333,
+            "lon": 165.93417778333333
+        },
+        {
+            "name": "ULAVY",
+            "lat": 68.18440278333334,
+            "lon": 166.50424166666667
+        },
+        {
+            "name": "ZORNA",
+            "lat": 68.17704166666667,
+            "lon": 166.98829166666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "ZORNA": "ZORNA AT OR ABOVE 2300",
+                "EKERE": "EKERE 1600 RNW 01 TRK 011 UNTIL 800",
+                "COPOX": "OVERFLY COPOX AT OR ABOVE 3300 HOLD AT COPOX RIGHT TURN INBOUNDCOURSE 262 LEGDIST 4 FAF EKERE MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "LUR",
+                    "fixes": {
+                        "LURNB": "LURNB",
+                        "ULAVY": "ULAVY AT OR ABOVE 4100",
+                        "FENOM": "FENOM AT OR ABOVE 2800"
+                    }
+                },
+                {
+                    "name": "SUGRE",
+                    "fixes": {
+                        "SUGRE": "SUGRE",
+                        "FENOM": "FENOM AT OR ABOVE 2800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "JENSU": "JENSU AT OR ABOVE 2400",
+                "BABKE": "BABKE 1600 RNW 19 TRK 191 UNTIL 700",
+                "FENOM": "OVERFLY FENOM AT OR ABOVE 2800 HOLD AT FENOM RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4 FAF BABKE MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "LUR",
+                    "fixes": {
+                        "LURNB": "LURNB",
+                        "COPOX": "COPOX AT OR ABOVE 4100"
+                    }
+                },
+                {
+                    "name": "SUGRE",
+                    "fixes": {
+                        "SUGRE": "SUGRE",
+                        "COPOX": "COPOX AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

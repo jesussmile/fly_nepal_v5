@@ -1,0 +1,188 @@
+{
+    "fixes": [
+        {
+            "name": "APUSE",
+            "lat": 38.24203333333333,
+            "lon": 78.39952221666667
+        },
+        {
+            "name": "ECEUS",
+            "lat": 38.28785833333333,
+            "lon": 78.40508611666667
+        },
+        {
+            "name": "FOMIV",
+            "lat": 38.3394,
+            "lon": 78.34913888333334
+        },
+        {
+            "name": "GVE",
+            "lat": 38.0136,
+            "lon": 78.15302778333333
+        },
+        {
+            "name": "HOODE",
+            "lat": 38.45599721666667,
+            "lon": 78.18046388333333
+        },
+        {
+            "name": "JITIV",
+            "lat": 38.09235278333333,
+            "lon": 78.47668056666667
+        },
+        {
+            "name": "KENNI",
+            "lat": 37.863255566666666,
+            "lon": 78.59411943333333
+        },
+        {
+            "name": "MITER",
+            "lat": 38.21699443333333,
+            "lon": 78.58221388333334
+        },
+        {
+            "name": "MUSOJ",
+            "lat": 38.23650833333333,
+            "lon": 78.43028056666667
+        },
+        {
+            "name": "ORMEY",
+            "lat": 38.155925,
+            "lon": 78.44395833333333
+        },
+        {
+            "name": "ROMAN",
+            "lat": 37.803519433333335,
+            "lon": 78.76756666666667
+        },
+        {
+            "name": "SIPME",
+            "lat": 38.038438883333335,
+            "lon": 78.50438333333334
+        },
+        {
+            "name": "WIKNI",
+            "lat": 38.282530566666665,
+            "lon": 78.17275833333333
+        },
+        {
+            "name": "WITTO",
+            "lat": 38.33717778333333,
+            "lon": 78.38085278333334
+        },
+        {
+            "name": "WUBAK",
+            "lat": 38.18072778333333,
+            "lon": 78.43974721666666
+        },
+        {
+            "name": "WULDU",
+            "lat": 37.934497216666664,
+            "lon": 78.55768333333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS03",
+            "fixes": {
+                "WULDU": "WULDU AT OR ABOVE 3400",
+                "SIPME": "SIPME 2600 RNW 03 TRK 030 UNTIL 2000 TURN RIGHT DIRECT",
+                "GVE": "GVE AT OR ABOVE 4000 HOLD AT GVE RIGHT TURN INBOUNDCOURSE 033 LEGTIME 1 FAF SIPME MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "GVE",
+                    "fixes": {
+                        "GVE": "GVE",
+                        "WULDU": "WULDU AT OR ABOVE 3400 HOLD AT WULDU RIGHT TURN INBOUNDCOURSE 030 ALT 3400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "KENNI",
+                    "fixes": {
+                        "KENNI": "KENNI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "WULDU": "WULDU AT OR ABOVE 3400",
+                "SIPME": "SIPME 2600",
+                "JITIV": "JITIV AT OR ABOVE 1480 RNW 03 TRK 030 UNTIL 2000 TURN RIGHT DIRECT",
+                "GVE": "OVERFLY GVE AT OR ABOVE 4000 HOLD AT GVE RIGHT TURN INBOUNDCOURSE 033 LEGDIST 4 FAF SIPME MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "GVE",
+                    "fixes": {
+                        "GVE": "GVE",
+                        "WULDU": "OVERFLY WULDU AT OR ABOVE 3400 HOLD AT WULDU RIGHT TURN INBOUNDCOURSE 030 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MITER",
+                    "fixes": {
+                        "MITER": "MITER",
+                        "WULDU": "OVERFLY WULDU AT OR ABOVE 5000 HOLD AT WULDU RIGHT TURN INBOUNDCOURSE 030 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ROMAN",
+                    "fixes": {
+                        "ROMAN": "ROMAN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY21",
+            "fixes": {
+                "WITTO": "WITTO AT OR ABOVE 4300",
+                "ECEUS": "ECEUS AT OR ABOVE 3400",
+                "MUSOJ": "MUSOJ 2400",
+                "WUBAK": "WUBAK AT OR ABOVE 1300",
+                "ORMEY": "OVERFLY ORMEY 827 RNW 21 TRK 196 UNTIL 1100",
+                "GVE": "OVERFLY GVE AT OR ABOVE 4000 HOLD AT GVE RIGHT TURN INBOUNDCOURSE 033 LEGDIST 4 FAF MUSOJ MAP ORMEY"
+            },
+            "transitions": [
+                {
+                    "name": "WITTO",
+                    "fixes": {
+                        "WITTO": "WITTO LEFT TURN INBOUNDCOURSE 224 ALT 4300 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ21",
+            "fixes": {
+                "FOMIV": "FOMIV AT OR ABOVE 3500",
+                "APUSE": "APUSE 2600 RNW 21 TRK 210 UNTIL 1100 TURN LEFT DIRECT",
+                "GVE": "OVERFLY GVE AT OR ABOVE 4000 SPEED 250 HOLD AT GVE RIGHT TURN INBOUNDCOURSE 033 LEGDIST 5 FAF APUSE MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "GVE",
+                    "fixes": {
+                        "GVE": "GVE",
+                        "WIKNI": "WIKNI AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "HOODE",
+                    "fixes": {
+                        "HOODE": "HOODE"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,186 @@
+{
+    "fixes": [
+        {
+            "name": "BUBBA",
+            "lat": 34.336533333333335,
+            "lon": 81.40607221666667
+        },
+        {
+            "name": "DANYU",
+            "lat": 34.242075,
+            "lon": 81.701525
+        },
+        {
+            "name": "EOENB",
+            "lat": 34.31103888333333,
+            "lon": 81.63632778333333
+        },
+        {
+            "name": "FEMTE",
+            "lat": 34.37105,
+            "lon": 81.58466666666666
+        },
+        {
+            "name": "FF22",
+            "lat": 34.40106111666667,
+            "lon": 81.58335
+        },
+        {
+            "name": "HORUX",
+            "lat": 34.210672216666666,
+            "lon": 81.85549166666667
+        },
+        {
+            "name": "IBUNE",
+            "lat": 34.45243333333333,
+            "lon": 81.51069721666667
+        },
+        {
+            "name": "JOKZU",
+            "lat": 34.40215833333333,
+            "lon": 81.43027778333334
+        },
+        {
+            "name": "KORVE",
+            "lat": 34.50265556666667,
+            "lon": 81.59121388333334
+        },
+        {
+            "name": "PI001",
+            "lat": 34.36346463333334,
+            "lon": 81.60534963333333
+        },
+        {
+            "name": "PI002",
+            "lat": 34.38676961666667,
+            "lon": 81.52323793333333
+        },
+        {
+            "name": "PI003",
+            "lat": 34.460806016666666,
+            "lon": 81.54771578333333
+        },
+        {
+            "name": "SODKE",
+            "lat": 34.110497216666666,
+            "lon": 81.69481388333334
+        },
+        {
+            "name": "TAKTE",
+            "lat": 34.160611116666665,
+            "lon": 81.77510556666667
+        },
+        {
+            "name": "UNARM",
+            "lat": 34.65491111666667,
+            "lon": 81.64271388333333
+        },
+        {
+            "name": "WIDER",
+            "lat": 34.15751388333333,
+            "lon": 81.27399721666667
+        },
+        {
+            "name": "WILLS",
+            "lat": 34.495411116666666,
+            "lon": 81.52396388333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FF22": "FF22 2500",
+                "EOENB": "EOENB 572 RNW 22 TRK 213 UNTIL 1800 TURN LEFT DIRECT EOENB AT OR ABOVE 3000 HOLD AT EOENB LEFT TURN INBOUNDCOURSE 213 LEGTIME 1 FAF FF22 MAP EOE"
+            },
+            "transitions": [
+                {
+                    "name": "BUBBA",
+                    "fixes": {
+                        "BUBBA": "BUBBA",
+                        "EOENB": "EOENB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "WILLS",
+                    "fixes": {
+                        "WILLS": "WILLS",
+                        "EOENB": "EOENB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "TAKTE": "TAKTE AT OR ABOVE 3000",
+                "DANYU": "DANYU 2100 RNW 04",
+                "IBUNE": "OVERFLY IBUNE AT OR ABOVE 3000 HOLD AT IBUNE RIGHT TURN INBOUNDCOURSE 224 LEGDIST 4 FAF DANYU MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "TAKTE",
+                    "fixes": {
+                        "TAKTE": "TAKTE RIGHT TURN INBOUNDCOURSE 044 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UNARM",
+                    "fixes": {
+                        "UNARM": "UNARM",
+                        "HORUX": "HORUX AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WIDER",
+                    "fixes": {
+                        "WIDER": "WIDER",
+                        "SODKE": "SODKE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "IBUNE": "IBUNE AT OR ABOVE 3000",
+                "FEMTE": "FEMTE 2000 RNW 22",
+                "TAKTE": "OVERFLY TAKTE AT OR ABOVE 3000 HOLD AT TAKTE RIGHT TURN INBOUNDCOURSE 044 LEGDIST 4 FAF FEMTE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "IBUNE",
+                    "fixes": {
+                        "IBUNE": "IBUNE RIGHT TURN INBOUNDCOURSE 224 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UNARM",
+                    "fixes": {
+                        "UNARM": "UNARM",
+                        "KORVE": "KORVE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WIDER",
+                    "fixes": {
+                        "WIDER": "WIDER",
+                        "JOKZU": "JOKZU AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

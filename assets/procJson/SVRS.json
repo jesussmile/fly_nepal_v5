@@ -1,0 +1,174 @@
+{
+    "fixes": [
+        {
+            "name": "AKPAP",
+            "lat": 11.79895,
+            "lon": 66.839875
+        },
+        {
+            "name": "ANLEG",
+            "lat": 12.282611116666667,
+            "lon": 66.67361388333333
+        },
+        {
+            "name": "BITUN",
+            "lat": 11.903288883333333,
+            "lon": 66.892025
+        },
+        {
+            "name": "BUVUN",
+            "lat": 11.944336116666667,
+            "lon": 66.67368611666667
+        },
+        {
+            "name": "CF07",
+            "lat": 11.891441666666667,
+            "lon": 66.777275
+        },
+        {
+            "name": "DIBUT",
+            "lat": 11.982958333333332,
+            "lon": 66.59395
+        },
+        {
+            "name": "DORVI",
+            "lat": 11.947644433333334,
+            "lon": 66.66686388333333
+        },
+        {
+            "name": "EDGEL",
+            "lat": 11.5875,
+            "lon": 66.75722221666666
+        },
+        {
+            "name": "FF07",
+            "lat": 11.906652783333334,
+            "lon": 66.74698611666666
+        },
+        {
+            "name": "GAVAL",
+            "lat": 11.990277783333333,
+            "lon": 67.03888888333333
+        },
+        {
+            "name": "LRS",
+            "lat": 11.944666666666667,
+            "lon": 66.67125
+        },
+        {
+            "name": "MA07",
+            "lat": 11.939802783333333,
+            "lon": 66.68094443333334
+        },
+        {
+            "name": "OPSUM",
+            "lat": 11.909027783333332,
+            "lon": 66.74653333333333
+        },
+        {
+            "name": "OSUSO",
+            "lat": 12.014225,
+            "lon": 66.52934166666667
+        },
+        {
+            "name": "PAGOM",
+            "lat": 11.988625,
+            "lon": 66.44838611666667
+        },
+        {
+            "name": "ROQUE",
+            "lat": 11.827638883333334,
+            "lon": 66.54975
+        },
+        {
+            "name": "TOROP",
+            "lat": 11.463055566666666,
+            "lon": 66.17194443333334
+        },
+        {
+            "name": "VAMEL",
+            "lat": 12.092983333333333,
+            "lon": 66.50052778333334
+        },
+        {
+            "name": "VUMUK",
+            "lat": 11.877711116666667,
+            "lon": 66.81109443333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD07",
+            "fixes": {
+                "CF07": "CF07 AT OR ABOVE 1650",
+                "FF07": "FF07 1650",
+                "MA07": "MA07 226 RNW 07 TRK 075 UNTIL 410 TURN RIGHT HDG 175 INTERCEPT RADIAL 145 TO",
+                "ROQUE": "ROQUE ROQUE AT OR ABOVE 4000 FAF FF07 MAP MA07"
+            },
+            "transitions": [
+                {
+                    "name": "LRS",
+                    "fixes": {
+                        "LRS": "LRS AT OR ABOVE 4000 TRK 279 UNTIL 7.0 FROM LRS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "VUMUK": "VUMUK AT OR ABOVE 3000",
+                "OPSUM": "OPSUM 1600 RNW 07",
+                "DORVI": "OVERFLY DORVI TURN LEFT DIRECT",
+                "BITUN": "OVERFLY BITUN AT OR ABOVE 4000 HOLD AT BITUN RIGHT TURN INBOUNDCOURSE 120 LEGDIST 4 FAF OPSUM MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "EDGEL",
+                    "fixes": {
+                        "EDGEL": "EDGEL",
+                        "AKPAP": "AKPAP AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "GAVAL",
+                    "fixes": {
+                        "GAVAL": "GAVAL",
+                        "BITUN": "BITUN AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "OSUSO": "OSUSO AT OR ABOVE 3000",
+                "DIBUT": "DIBUT 1600 RNW 25",
+                "BUVUN": "OVERFLY BUVUN TURN RIGHT DIRECT",
+                "VAMEL": "OVERFLY VAMEL AT OR ABOVE 4000 HOLD AT VAMEL RIGHT TURN INBOUNDCOURSE 212 LEGDIST 4 FAF DIBUT MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "ANLEG",
+                    "fixes": {
+                        "ANLEG": "ANLEG",
+                        "VAMEL": "VAMEL AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "TOROP",
+                    "fixes": {
+                        "TOROP": "TOROP",
+                        "PAGOM": "PAGOM AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

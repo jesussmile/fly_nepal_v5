@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CIKIT",
+            "lat": 37.21614721666667,
+            "lon": 85.12368611666666
+        },
+        {
+            "name": "FIGLA",
+            "lat": 37.0598,
+            "lon": 85.10781111666667
+        },
+        {
+            "name": "GIYEL",
+            "lat": 36.956266666666664,
+            "lon": 85.09733056666667
+        },
+        {
+            "name": "JASUL",
+            "lat": 37.10287221666667,
+            "lon": 85.11217778333334
+        },
+        {
+            "name": "LAGNE",
+            "lat": 36.91390833333333,
+            "lon": 85.09305278333333
+        },
+        {
+            "name": "TEYOS",
+            "lat": 36.80323611666667,
+            "lon": 85.08189721666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "CIKIT": "CIKIT AT OR ABOVE 4000",
+                "JASUL": "JASUL 2700",
+                "FIGLA": "FIGLA AT OR ABOVE 1860 RNW 17 TRK 179 UNTIL 1346",
+                "TEYOS": "OVERFLY TEYOS AT OR ABOVE 4000 HOLD AT TEYOS RIGHT TURN INBOUNDCOURSE 359 LEGDIST 4 FAF JASUL MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CIKIT",
+                    "fixes": {
+                        "CIKIT": "CIKIT RIGHT TURN INBOUNDCOURSE 179 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "TEYOS": "TEYOS AT OR ABOVE 4000",
+                "LAGNE": "LAGNE 2700",
+                "GIYEL": "GIYEL AT OR ABOVE 1880 RNW 35 TRK 359 UNTIL 1240",
+                "CIKIT": "OVERFLY CIKIT AT OR ABOVE 4000 HOLD AT CIKIT RIGHT TURN INBOUNDCOURSE 179 LEGDIST 4 FAF LAGNE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "TEYOS",
+                    "fixes": {
+                        "TEYOS": "TEYOS RIGHT TURN INBOUNDCOURSE 359 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

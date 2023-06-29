@@ -1,0 +1,234 @@
+{
+    "fixes": [
+        {
+            "name": "CETMO",
+            "lat": 8.742791666666667,
+            "lon": 167.52107778333334
+        },
+        {
+            "name": "FASRU",
+            "lat": 8.582880566666667,
+            "lon": 167.57100556666666
+        },
+        {
+            "name": "FF06",
+            "lat": 8.68635,
+            "lon": 167.65336943333332
+        },
+        {
+            "name": "FF24",
+            "lat": 8.739283333333333,
+            "lon": 167.81483056666667
+        },
+        {
+            "name": "HOBLO",
+            "lat": 8.662802783333333,
+            "lon": 167.54605833333332
+        },
+        {
+            "name": "JELNU",
+            "lat": 8.62335,
+            "lon": 168.09318888333334
+        },
+        {
+            "name": "LOOIS",
+            "lat": 8.201666666666666,
+            "lon": 164.74833333333333
+        },
+        {
+            "name": "MAVTE",
+            "lat": 8.695208333333333,
+            "lon": 167.65094721666668
+        },
+        {
+            "name": "NDJNB",
+            "lat": 8.720875,
+            "lon": 167.72775556666667
+        },
+        {
+            "name": "OBSOE",
+            "lat": 8.857283333333333,
+            "lon": 167.89247221666668
+        },
+        {
+            "name": "OREEO",
+            "lat": 7.448055566666667,
+            "lon": 170.46916666666667
+        },
+        {
+            "name": "PAYPO",
+            "lat": 8.697311116666667,
+            "lon": 167.94221943333332
+        },
+        {
+            "name": "PI001",
+            "lat": 8.696218533333333,
+            "lon": 167.67427276666666
+        },
+        {
+            "name": "PI002",
+            "lat": 8.628873083333334,
+            "lon": 167.6494807
+        },
+        {
+            "name": "PI003",
+            "lat": 8.650408166666667,
+            "lon": 167.57496623333333
+        },
+        {
+            "name": "PI004",
+            "lat": 8.732998816666667,
+            "lon": 167.78548343333333
+        },
+        {
+            "name": "PI005",
+            "lat": 8.693961516666667,
+            "lon": 167.84628678333334
+        },
+        {
+            "name": "PI006",
+            "lat": 8.755491316666667,
+            "lon": 167.89270228333334
+        },
+        {
+            "name": "STEFF",
+            "lat": 6.986666666666666,
+            "lon": 165.255
+        },
+        {
+            "name": "TONBE",
+            "lat": 8.777330566666667,
+            "lon": 167.91734166666666
+        },
+        {
+            "name": "UTOCO",
+            "lat": 8.522186116666667,
+            "lon": 167.72779166666666
+        },
+        {
+            "name": "WADRU",
+            "lat": 8.745,
+            "lon": 167.81236388333335
+        },
+        {
+            "name": "ZAPUM",
+            "lat": 9.058527783333334,
+            "lon": 167.60138056666668
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FF06": "FF06 1500 RNW 06",
+                "NDJNB": "OVERFLY NDJNB TRK 056 UNTIL 420 TURN RIGHT DIRECT NDJNB AT OR ABOVE 1500 HOLD AT NDJNB RIGHT TURN INBOUNDCOURSE 056 ALT 1500 LEGTIME 1 FAF FF06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "NDJ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FF24": "FF24 1500 RNW 24",
+                "NDJNB": "OVERFLY NDJNB TRK 249 UNTIL 420 TURN LEFT DIRECT NDJNB AT OR ABOVE 1500 HOLD AT NDJNB LEFT TURN INBOUNDCOURSE 249 ALT 1500 LEGTIME 1 FAF FF24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "NDJ",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 1500 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1500 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "HOBLO": "HOBLO AT OR ABOVE 1500 OVERFLY HOBLO AT OR ABOVE 1500 HOLD AT HOBLO RIGHT TURN INBOUNDCOURSE 064 ALT 1500 LEGDIST 5 FAF MAVTE MAP RNW 06",
+                "MAVTE": "MAVTE 1500 RNW 06 TRK 064 UNTIL 420 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HOBLO",
+                    "fixes": {
+                        "HOBLO": "HOBLO RIGHT TURN INBOUNDCOURSE 064 ALT 1500 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "LOOIS",
+                    "fixes": {
+                        "LOOIS": "LOOIS"
+                    }
+                },
+                {
+                    "name": "OREEO",
+                    "fixes": {
+                        "OREEO": "OREEO",
+                        "UTOCO": "UTOCO AT OR ABOVE 5500",
+                        "FASRU": "FASRU AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "STEFF",
+                    "fixes": {
+                        "STEFF": "STEFF"
+                    }
+                },
+                {
+                    "name": "ZAPUM",
+                    "fixes": {
+                        "ZAPUM": "ZAPUM",
+                        "CETMO": "CETMO AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "TONBE": "TONBE AT OR ABOVE 1500 OVERFLY TONBE AT OR ABOVE 1500 HOLD AT TONBE LEFT TURN INBOUNDCOURSE 244 ALT 1500 LEGDIST 5 FAF WADRU MAP RNW 24",
+                "WADRU": "WADRU 1500 RNW 24 TRK 244 UNTIL 420 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NDJ",
+                    "fixes": {
+                        "NDJNB": "NDJNB",
+                        "TONBE": "TONBE AT OR ABOVE 1500 HOLD AT TONBE LEFT TURN INBOUNDCOURSE 244 ALT 1500 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "OREEO",
+                    "fixes": {
+                        "OREEO": "OREEO",
+                        "JELNU": "JELNU AT OR ABOVE 5500",
+                        "PAYPO": "PAYPO AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "ZAPUM",
+                    "fixes": {
+                        "ZAPUM": "ZAPUM",
+                        "OBSOE": "OBSOE AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "DIXGY",
+            "lat": 46.53487221666666,
+            "lon": 95.247775
+        },
+        {
+            "name": "ERLUY",
+            "lat": 46.36436943333333,
+            "lon": 95.17371943333333
+        },
+        {
+            "name": "JOLIT",
+            "lat": 46.236677783333334,
+            "lon": 95.11857221666666
+        },
+        {
+            "name": "OVIRE",
+            "lat": 46.415961116666665,
+            "lon": 95.19608056666667
+        },
+        {
+            "name": "WENVI",
+            "lat": 46.662497216666665,
+            "lon": 95.30351943333334
+        },
+        {
+            "name": "ZOBED",
+            "lat": 46.483927783333336,
+            "lon": 95.2256
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "WENVI": "WENVI AT OR ABOVE 3300",
+                "DIXGY": "DIXGY 3000",
+                "ZOBED": "ZOBED AT OR ABOVE 1980 RNW 16 TRK 159 UNTIL 1631",
+                "JOLIT": "OVERFLY JOLIT AT OR ABOVE 3300 HOLD AT JOLIT RIGHT TURN INBOUNDCOURSE 339 LEGDIST 4 FAF DIXGY MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "WENVI",
+                    "fixes": {
+                        "WENVI": "WENVI RIGHT TURN INBOUNDCOURSE 159 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "JOLIT": "JOLIT AT OR ABOVE 3300",
+                "ERLUY": "ERLUY 3000",
+                "OVIRE": "OVIRE AT OR ABOVE 1960 RNW 34 TRK 339 UNTIL 1605",
+                "WENVI": "OVERFLY WENVI AT OR ABOVE 3300 HOLD AT WENVI RIGHT TURN INBOUNDCOURSE 159 LEGDIST 4 FAF ERLUY MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "JOLIT",
+                    "fixes": {
+                        "JOLIT": "JOLIT RIGHT TURN INBOUNDCOURSE 339 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

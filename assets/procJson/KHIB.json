@@ -1,0 +1,226 @@
+{
+    "fixes": [
+        {
+            "name": "AYADO",
+            "lat": 47.312111116666664,
+            "lon": 92.71898333333333
+        },
+        {
+            "name": "CEKSA",
+            "lat": 47.233533333333334,
+            "lon": 92.59239721666667
+        },
+        {
+            "name": "CF13",
+            "lat": 47.50189721666667,
+            "lon": 93.02726388333333
+        },
+        {
+            "name": "CF31",
+            "lat": 47.246794433333335,
+            "lon": 92.61364166666667
+        },
+        {
+            "name": "DULEC",
+            "lat": 47.45834721666667,
+            "lon": 92.9562
+        },
+        {
+            "name": "FENOK",
+            "lat": 47.53651111666667,
+            "lon": 93.08387778333334
+        },
+        {
+            "name": "HIB",
+            "lat": 47.30153056666666,
+            "lon": 92.70404443333334
+        },
+        {
+            "name": "HIBDA",
+            "lat": 47.362411116666664,
+            "lon": 92.80033056666667
+        },
+        {
+            "name": "JUBIK",
+            "lat": 47.33205278333333,
+            "lon": 92.93956666666666
+        },
+        {
+            "name": "OLAYU",
+            "lat": 47.419641666666664,
+            "lon": 92.8932
+        },
+        {
+            "name": "PEKOY",
+            "lat": 47.45684443333333,
+            "lon": 92.72532778333333
+        },
+        {
+            "name": "PUPCI",
+            "lat": 47.45726666666667,
+            "lon": 92.95443611666667
+        },
+        {
+            "name": "RITOC",
+            "lat": 47.32986666666667,
+            "lon": 93.13090556666667
+        },
+        {
+            "name": "SAGOY",
+            "lat": 47.52176111666667,
+            "lon": 92.61321388333333
+        },
+        {
+            "name": "SEYOP",
+            "lat": 47.266825,
+            "lon": 93.05088888333333
+        },
+        {
+            "name": "WALDU",
+            "lat": 47.458363883333334,
+            "lon": 92.53352221666667
+        },
+        {
+            "name": "YIPUD",
+            "lat": 47.203727783333335,
+            "lon": 92.97106111666666
+        },
+        {
+            "name": "ZENAK",
+            "lat": 47.58510278333333,
+            "lon": 92.69309721666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 13",
+        "RNW 22",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS13",
+            "fixes": {
+                "CF13": "CF13 AT OR ABOVE 3500",
+                "PUPCI": "PUPCI 3300 RNW 13 TRK 130 UNTIL 1760",
+                "HIB": "HIB AT OR ABOVE 3600 HOLD AT HIB RIGHT TURN INBOUNDCOURSE 310 LEGTIME 1 FAF PUPCI MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "HIB",
+                    "fixes": {
+                        "HIB": "HIB",
+                        "PUPCI": "PUPCI AT OR ABOVE 3500 HOLD AT PUPCI RIGHT TURN INBOUNDCOURSE 130 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS31",
+            "fixes": {
+                "CF31": "CF31 AT OR ABOVE 3600",
+                "HIB": "HIB 3558 RNW 31 TRK 310 UNTIL 2500 TURN RIGHT DIRECT HIB AT OR ABOVE 3600 HOLD AT HIB RIGHT TURN INBOUNDCOURSE 310 LEGTIME 1 FAF HIB MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "HIB",
+                    "fixes": {
+                        "HIB": "HIB RIGHT TURN INBOUNDCOURSE 310 ALT 3600 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "SEYOP": "SEYOP AT OR ABOVE 3500",
+                "JUBIK": "JUBIK 3000 RNW 04 TRK 047 UNTIL 1780",
+                "SAGOY": "OVERFLY SAGOY AT OR ABOVE 3500 HOLD AT SAGOY RIGHT TURN INBOUNDCOURSE 228 LEGDIST 4 FAF JUBIK MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "RITOC",
+                    "fixes": {
+                        "RITOC": "RITOC AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "SEYOP",
+                    "fixes": {
+                        "SEYOP": "SEYOP RIGHT TURN INBOUNDCOURSE 047 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "YIPUD",
+                    "fixes": {
+                        "YIPUD": "YIPUD AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "FENOK": "FENOK AT OR ABOVE 3500",
+                "DULEC": "DULEC 3300",
+                "OLAYU": "OLAYU AT OR ABOVE 2180 RNW 13 TRK 130 UNTIL 1604",
+                "CEKSA": "OVERFLY CEKSA AT OR ABOVE 3500 HOLD AT CEKSA RIGHT TURN INBOUNDCOURSE 310 LEGDIST 6 FAF DULEC MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "FENOK",
+                    "fixes": {
+                        "FENOK": "FENOK RIGHT TURN INBOUNDCOURSE 130 ALT 3500 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "SAGOY": "SAGOY AT OR ABOVE 3500",
+                "PEKOY": "PEKOY 3300 RNW 22 TRK 227 UNTIL 1753",
+                "SEYOP": "OVERFLY SEYOP AT OR ABOVE 3500 HOLD AT SEYOP RIGHT TURN INBOUNDCOURSE 047 LEGDIST 4 FAF PEKOY MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "SAGOY",
+                    "fixes": {
+                        "SAGOY": "SAGOY RIGHT TURN INBOUNDCOURSE 228 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WALDU",
+                    "fixes": {
+                        "WALDU": "WALDU AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "ZENAK",
+                    "fixes": {
+                        "ZENAK": "ZENAK AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "CEKSA": "CEKSA AT OR ABOVE 3500",
+                "AYADO": "AYADO 3300",
+                "HIBDA": "HIBDA AT OR ABOVE 1860 RNW 31 TRK 310 UNTIL 1538",
+                "FENOK": "OVERFLY FENOK AT OR ABOVE 3500 HOLD AT FENOK RIGHT TURN INBOUNDCOURSE 130 LEGDIST 6 FAF AYADO MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "CEKSA",
+                    "fixes": {
+                        "CEKSA": "CEKSA RIGHT TURN INBOUNDCOURSE 310 ALT 3500 LEGDIST 6"
+                    }
+                }
+            ]
+        }
+    ]
+}

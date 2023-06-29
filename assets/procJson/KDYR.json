@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "AYECU",
+            "lat": 35.963794433333334,
+            "lon": 89.44191388333333
+        },
+        {
+            "name": "AYODO",
+            "lat": 36.15186943333333,
+            "lon": 89.24362221666667
+        },
+        {
+            "name": "CAGAC",
+            "lat": 36.06564443333333,
+            "lon": 89.33468888333333
+        },
+        {
+            "name": "DAKNE",
+            "lat": 36.030061116666666,
+            "lon": 89.37219166666667
+        },
+        {
+            "name": "RUQAW",
+            "lat": 35.83758888333333,
+            "lon": 89.57427778333333
+        },
+        {
+            "name": "ZOMXE",
+            "lat": 35.92395,
+            "lon": 89.48376388333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 16",
+        "RNW 22",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "RUQAW": "RUQAW AT OR ABOVE 2900",
+                "ZOMXE": "ZOMXE 2000",
+                "AYECU": "AYECU AT OR ABOVE 1000 RNW 04 TRK 041 UNTIL 588",
+                "AYODO": "OVERFLY AYODO AT OR ABOVE 2900 HOLD AT AYODO RIGHT TURN INBOUNDCOURSE 222 LEGDIST 4 FAF ZOMXE MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "RUQAW",
+                    "fixes": {
+                        "RUQAW": "RUQAW RIGHT TURN INBOUNDCOURSE 041 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "AYODO": "AYODO AT OR ABOVE 2900",
+                "CAGAC": "CAGAC 2000",
+                "DAKNE": "DAKNE AT OR ABOVE 1100 RNW 22 TRK 222 UNTIL 584",
+                "RUQAW": "OVERFLY RUQAW AT OR ABOVE 2900 HOLD AT RUQAW RIGHT TURN INBOUNDCOURSE 041 LEGDIST 4 FAF CAGAC MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "AYODO",
+                    "fixes": {
+                        "AYODO": "AYODO RIGHT TURN INBOUNDCOURSE 222 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

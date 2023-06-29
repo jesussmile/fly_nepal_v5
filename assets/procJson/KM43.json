@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "BISYA",
+            "lat": 31.549966666666666,
+            "lon": 89.82399721666667
+        },
+        {
+            "name": "CESMA",
+            "lat": 31.705277783333333,
+            "lon": 90.10706388333334
+        },
+        {
+            "name": "DADCA",
+            "lat": 31.487502783333333,
+            "lon": 89.7107
+        },
+        {
+            "name": "OVIGE",
+            "lat": 31.640608333333333,
+            "lon": 89.98894721666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "CESMA": "CESMA AT OR ABOVE 2000",
+                "OVIGE": "OVIGE 2000 RNW 12 TRK 124 UNTIL 770",
+                "DADCA": "OVERFLY DADCA AT OR ABOVE 2000 HOLD AT DADCA RIGHT TURN INBOUNDCOURSE 304 LEGDIST 4 FAF OVIGE MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "CESMA",
+                    "fixes": {
+                        "CESMA": "CESMA RIGHT TURN INBOUNDCOURSE 124 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "DADCA": "DADCA AT OR ABOVE 2000",
+                "BISYA": "BISYA 2000 RNW 30 TRK 304 UNTIL 769",
+                "CESMA": "OVERFLY CESMA AT OR ABOVE 2000 HOLD AT CESMA RIGHT TURN INBOUNDCOURSE 124 LEGDIST 4 FAF BISYA MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "DADCA",
+                    "fixes": {
+                        "DADCA": "DADCA RIGHT TURN INBOUNDCOURSE 304 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

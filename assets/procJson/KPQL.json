@@ -1,0 +1,130 @@
+{
+    "fixes": [
+        {
+            "name": "APIVE",
+            "lat": 30.428158333333332,
+            "lon": 88.51930278333333
+        },
+        {
+            "name": "BEZJU",
+            "lat": 30.647347216666667,
+            "lon": 88.58225
+        },
+        {
+            "name": "CLEAK",
+            "lat": 30.286069433333335,
+            "lon": 88.35308611666666
+        },
+        {
+            "name": "JOSIG",
+            "lat": 30.518463883333332,
+            "lon": 88.54520278333334
+        },
+        {
+            "name": "NUGTE",
+            "lat": 30.380622216666666,
+            "lon": 88.50568611666667
+        },
+        {
+            "name": "PORAN",
+            "lat": 30.559708333333333,
+            "lon": 88.55705
+        },
+        {
+            "name": "SJI",
+            "lat": 30.725980566666667,
+            "lon": 88.35929443333333
+        },
+        {
+            "name": "SUVOC",
+            "lat": 30.698502783333332,
+            "lon": 88.597
+        },
+        {
+            "name": "YEPBU",
+            "lat": 30.2845,
+            "lon": 88.47819721666667
+        },
+        {
+            "name": "ZUXNY",
+            "lat": 30.235147216666668,
+            "lon": 88.589625
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS17",
+            "fixes": {
+                "BEZJU": "BEZJU AT OR ABOVE 1800",
+                "PORAN": "PORAN 1800 RNW 17 TRK 168 UNTIL 900 TURN LEFT DIRECT",
+                "SJI": "SJI AT OR ABOVE 2000 HOLD AT SJI RIGHT TURN INBOUNDCOURSE 058 LEGTIME 1 FAF PORAN MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "SJI",
+                    "fixes": {
+                        "SJI": "SJI",
+                        "PORAN": "PORAN AT OR ABOVE 1800 HOLD AT PORAN LEFT TURN INBOUNDCOURSE 168 ALT 1800 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SUVOC",
+                    "fixes": {
+                        "SUVOC": "SUVOC"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "BEZJU": "BEZJU AT OR ABOVE 1800 OVERFLY BEZJU AT OR ABOVE 1800 HOLD AT BEZJU RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4 FAF PORAN MAP RNW 17",
+                "PORAN": "PORAN 1800",
+                "JOSIG": "JOSIG AT OR ABOVE 980 RNW 17 TRK 168 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BEZJU",
+                    "fixes": {
+                        "BEZJU": "BEZJU RIGHT TURN INBOUNDCOURSE 168 ALT 1800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "YEPBU": "YEPBU AT OR ABOVE 2100",
+                "NUGTE": "NUGTE 1500",
+                "APIVE": "APIVE AT OR ABOVE 560 RNW 35 TRK 348 UNTIL 267",
+                "BEZJU": "OVERFLY BEZJU AT OR ABOVE 1800 HOLD AT BEZJU RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4 FAF NUGTE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CLEAK",
+                    "fixes": {
+                        "CLEAK": "CLEAK"
+                    }
+                },
+                {
+                    "name": "YEPBU",
+                    "fixes": {
+                        "YEPBU": "YEPBU RIGHT TURN INBOUNDCOURSE 348 ALT 2100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZUXNY",
+                    "fixes": {
+                        "ZUXNY": "ZUXNY"
+                    }
+                }
+            ]
+        }
+    ]
+}

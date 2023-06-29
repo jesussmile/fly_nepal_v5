@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "AVUSO",
+            "lat": 29.950561116666666,
+            "lon": 30.554747216666666
+        },
+        {
+            "name": "DUDMA",
+            "lat": 29.355383333333332,
+            "lon": 30.175266666666666
+        },
+        {
+            "name": "ESTEX",
+            "lat": 29.398961116666666,
+            "lon": 30.418002783333332
+        },
+        {
+            "name": "NEXAB",
+            "lat": 29.68301943333333,
+            "lon": 30.672155566666667
+        },
+        {
+            "name": "NIBAL",
+            "lat": 29.501688883333333,
+            "lon": 30.267444433333335
+        },
+        {
+            "name": "NIGIL",
+            "lat": 29.786030566666668,
+            "lon": 30.521433333333334
+        },
+        {
+            "name": "PM1F1",
+            "lat": 29.55441666666667,
+            "lon": 30.3144
+        },
+        {
+            "name": "PM1F2",
+            "lat": 29.582088883333334,
+            "lon": 30.339075
+        },
+        {
+            "name": "PM1MP",
+            "lat": 29.634538883333335,
+            "lon": 30.385880566666668
+        },
+        {
+            "name": "PM2F1",
+            "lat": 29.720213883333333,
+            "lon": 30.462475
+        },
+        {
+            "name": "PM2MP",
+            "lat": 29.654369433333333,
+            "lon": 30.403594433333332
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "NIBAL": "NIBAL AT OR ABOVE 6400 SPEED 180",
+                "PM1F1": "PM1F1 4920",
+                "PM1F2": "PM1F2 AT OR ABOVE 4140",
+                "PM1MP": "OVERFLY PM1MP 2652 RNW 16 TRK 166 UNTIL 3000 TURN LEFT DIRECT",
+                "ESTEX": "ESTEX 6500 FAF PM1F1 MAP PM1MP"
+            },
+            "transitions": [
+                {
+                    "name": "DUDMA",
+                    "fixes": {
+                        "DUDMA": "DUDMA AT OR ABOVE 8600 SPEED 180"
+                    }
+                },
+                {
+                    "name": "ESTEX",
+                    "fixes": {
+                        "ESTEX": "ESTEX AT OR ABOVE 6500 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "NIGIL": "NIGIL AT OR ABOVE 5660 SPEED 180",
+                "PM2F1": "PM2F1 4070 SPEED 130",
+                "PM2MP": "OVERFLY PM2MP 2473 RNW 34 TRK 346 UNTIL 3400 TURN RIGHT DIRECT",
+                "NEXAB": "NEXAB 6000 FAF PM2F1 MAP PM2MP"
+            },
+            "transitions": [
+                {
+                    "name": "AVUSO",
+                    "fixes": {
+                        "AVUSO": "AVUSO AT OR ABOVE 6500 SPEED 180"
+                    }
+                },
+                {
+                    "name": "NEXAB",
+                    "fixes": {
+                        "NEXAB": "NEXAB AT OR ABOVE 6000 SPEED 180"
+                    }
+                }
+            ]
+        }
+    ]
+}

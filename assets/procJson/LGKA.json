@@ -1,0 +1,178 @@
+{
+    "fixes": [
+        {
+            "name": "D085J",
+            "lat": 40.453172216666665,
+            "lon": 21.493625
+        },
+        {
+            "name": "D147H",
+            "lat": 40.33318056666667,
+            "lon": 21.357172216666665
+        },
+        {
+            "name": "D185F",
+            "lat": 40.352466666666665,
+            "lon": 21.252605566666666
+        },
+        {
+            "name": "D258C",
+            "lat": 40.44490556666667,
+            "lon": 21.210316666666667
+        },
+        {
+            "name": "D296G",
+            "lat": 40.511075,
+            "lon": 21.144202783333334
+        },
+        {
+            "name": "FD326",
+            "lat": 40.31969443333333,
+            "lon": 21.370394433333335
+        },
+        {
+            "name": "GOVOK",
+            "lat": 40.36333333333334,
+            "lon": 21.575833333333332
+        },
+        {
+            "name": "KAS",
+            "lat": 40.451022216666665,
+            "lon": 21.275319433333333
+        },
+        {
+            "name": "KOZ",
+            "lat": 40.285133333333334,
+            "lon": 21.84044443333333
+        },
+        {
+            "name": "MD326",
+            "lat": 40.43643333333333,
+            "lon": 21.2859
+        },
+        {
+            "name": "TSL",
+            "lat": 40.456808333333335,
+            "lon": 22.991058333333335
+        },
+        {
+            "name": "YNN",
+            "lat": 39.70003333333333,
+            "lon": 20.821316666666668
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "GOVO1G",
+            "rnw": "12",
+            "fixes": {
+                "D147H": "OVERFLY D147H TURN RIGHT DIRECT",
+                "KAS": "OVERFLY KAS AT OR ABOVE 9000 SPEED 210 TURN RIGHT TRK 151 INTERCEPT RADIAL 106 TO",
+                "GOVOK": "GOVOK",
+                "KOZ": "KOZ"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GOVO1L",
+            "rnw": "30",
+            "fixes": {
+                "D296G": "OVERFLY D296G TURN LEFT DIRECT",
+                "KAS": "KAS AT OR ABOVE 9000 SPEED 210",
+                "GOVOK": "GOVOK",
+                "KOZ": "KOZ"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TSL1G",
+            "rnw": "12",
+            "fixes": {
+                "D147H": "OVERFLY D147H TURN RIGHT DIRECT",
+                "KAS": "OVERFLY KAS AT OR ABOVE 9000 SPEED 210 TURN RIGHT TRK 130 INTERCEPT RADIAL 085 TO",
+                "TSL": "TSL AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TSL1L",
+            "rnw": "30",
+            "fixes": {
+                "D296G": "OVERFLY D296G TURN LEFT DIRECT",
+                "KAS": "KAS AT OR ABOVE 9000 SPEED 210",
+                "D085J": "D085J AT OR ABOVE 12000",
+                "TSL": "TSL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "YNN1G",
+            "rnw": "12",
+            "fixes": {
+                "D147H": "OVERFLY D147H TURN RIGHT DIRECT",
+                "KAS": "OVERFLY KAS AT OR ABOVE 9000 SPEED 210 TURN RIGHT TRK 245 INTERCEPT RADIAL 200 TO",
+                "YNN": "YNN AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "YNN1L",
+            "rnw": "30",
+            "fixes": {
+                "D296G": "OVERFLY D296G TURN LEFT DIRECT",
+                "KAS": "OVERFLY KAS AT OR ABOVE 9000 SPEED 210 TURN RIGHT TRK 245 INTERCEPT RADIAL 200 TO",
+                "YNN": "YNN AT OR ABOVE 12000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORM12",
+            "fixes": {
+                "FD326": "FD326 6000",
+                "MD326": "MD326 3870 RNW 12 TRK 292 UNTIL 7.0 FROM",
+                "KAS": "KAS TURN LEFT DIRECT KAS SPEED 185 HOLD AT KAS LEFT TURN INBOUNDCOURSE 166 ALT 9000 LEGTIME 1 FAF FD326 MAP MD326",
+                "D258C": "OVERFLY D258C SPEED 185 TURN RIGHT DIRECT",
+                "D185F": "OVERFLY D185F SPEED 185 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KAS",
+                    "fixes": {
+                        "KAS": "KAS AT OR ABOVE 9000 TRK 166 UNTIL 9.0 FROM KAS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM30",
+            "fixes": {
+                "FD326": "FD326 6000",
+                "MD326": "MD326 3870 RNW 30 TRK 292 UNTIL 7.0 FROM",
+                "KAS": "KAS TURN LEFT DIRECT KAS SPEED 185 HOLD AT KAS LEFT TURN INBOUNDCOURSE 166 ALT 9000 LEGTIME 1 FAF FD326 MAP MD326",
+                "D258C": "OVERFLY D258C SPEED 185 TURN RIGHT DIRECT",
+                "D185F": "OVERFLY D185F SPEED 185 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KAS",
+                    "fixes": {
+                        "KAS": "KAS AT OR ABOVE 9000 TRK 166 UNTIL 9.0 FROM KAS"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "fixes": [
+        {
+            "name": "40VOR",
+            "lat": 21.489775,
+            "lon": 104.81370556666667
+        },
+        {
+            "name": "50VOR",
+            "lat": 21.351341666666666,
+            "lon": 104.87611388333333
+        },
+        {
+            "name": "CF02",
+            "lat": 21.261119433333334,
+            "lon": 104.923025
+        },
+        {
+            "name": "CF20",
+            "lat": 21.600469433333334,
+            "lon": 104.77292778333333
+        },
+        {
+            "name": "FF02",
+            "lat": 21.306233333333335,
+            "lon": 104.89957778333333
+        },
+        {
+            "name": "FF20",
+            "lat": 21.553030566666667,
+            "lon": 104.79041111666666
+        },
+        {
+            "name": "TNY",
+            "lat": 21.426516666666668,
+            "lon": 104.83698056666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "TNY3A",
+            "rnw": "02",
+            "fixes": {
+                "TNY": "TNY"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TNY3B",
+            "rnw": "20",
+            "fixes": {
+                "TNY": "TNY"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD02",
+            "fixes": {
+                "CF02": "CF02 AT OR ABOVE 6200",
+                "FF02": "FF02 5300",
+                "50VOR": "50VOR AT OR ABOVE 4300 RNW 02",
+                "TNY": "TNY TRK 011 UNTIL 7.0 FROM TNY TURN LEFT DIRECT TNY AT OR ABOVE 10000 FAF FF02 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "TNY",
+                    "fixes": {
+                        "TNY": "TNY AT OR ABOVE 10000 TRK 218 UNTIL 11.0 FROM TNY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD20",
+            "fixes": {
+                "CF20": "CF20 AT OR ABOVE 6900",
+                "FF20": "FF20 6000",
+                "40VOR": "40VOR AT OR ABOVE 4500",
+                "TNY": "TNY 3024 RNW 20 TRK 198 UNTIL 7.0 FROM TNY TURN RIGHT DIRECT TNY AT OR ABOVE 10000 FAF FF20 MAP TNY"
+            },
+            "transitions": [
+                {
+                    "name": "TNY",
+                    "fixes": {
+                        "TNY": "TNY AT OR ABOVE 10000 TRK 351 UNTIL 11.0 FROM TNY"
+                    }
+                }
+            ]
+        }
+    ]
+}

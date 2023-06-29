@@ -1,0 +1,157 @@
+{
+    "fixes": [
+        {
+            "name": "35VO1",
+            "lat": 7.609361116666666,
+            "lon": 108.98875
+        },
+        {
+            "name": "35VO2",
+            "lat": 7.68535,
+            "lon": 109.07792778333334
+        },
+        {
+            "name": "CLP",
+            "lat": 7.644638883333333,
+            "lon": 109.03566666666667
+        },
+        {
+            "name": "D148F",
+            "lat": 7.722741666666667,
+            "lon": 109.08459443333334
+        },
+        {
+            "name": "D291F",
+            "lat": 7.6116222166666665,
+            "lon": 108.94948611666666
+        },
+        {
+            "name": "FF13",
+            "lat": 7.5892027833333335,
+            "lon": 108.96194721666667
+        },
+        {
+            "name": "FF31",
+            "lat": 7.708613883333333,
+            "lon": 109.10208333333334
+        },
+        {
+            "name": "HL501",
+            "lat": 7.574527783333333,
+            "lon": 108.88255556666667
+        },
+        {
+            "name": "HL502",
+            "lat": 7.537472216666667,
+            "lon": 108.91786111666667
+        },
+        {
+            "name": "HL503",
+            "lat": 7.571666666666666,
+            "lon": 108.95475
+        },
+        {
+            "name": "HL504",
+            "lat": 7.604972216666667,
+            "lon": 108.99072221666667
+        },
+        {
+            "name": "HL701",
+            "lat": 7.789611116666666,
+            "lon": 109.11736111666667
+        },
+        {
+            "name": "HL702",
+            "lat": 7.753444433333334,
+            "lon": 109.15116666666667
+        },
+        {
+            "name": "HL703",
+            "lat": 7.719277783333333,
+            "lon": 109.11422221666666
+        },
+        {
+            "name": "HL704",
+            "lat": 7.685972216666666,
+            "lon": 109.07825
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD13",
+            "fixes": {
+                "FF13": "FF13 1700",
+                "35VO1": "35VO1 AT OR ABOVE 1100 RNW 13",
+                "CLP": "OVERFLY CLP TRK 127 UNTIL 3000 TURN RIGHT DIRECT CLP AT OR ABOVE 3000 HOLD AT CLP LEFT TURN INBOUNDCOURSE 291 ALT 3000 LEGTIME 1 FAF FF13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "CLP",
+                    "fixes": {
+                        "CLP": "CLP AT OR ABOVE 3000",
+                        "D291F": "OVERFLY D291F AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD31",
+            "fixes": {
+                "FF31": "FF31 1700",
+                "35VO2": "35VO2 AT OR ABOVE 1100 RNW 31",
+                "CLP": "OVERFLY CLP TRK 314 UNTIL 3000 TURN LEFT DIRECT CLP AT OR ABOVE 3000 HOLD AT CLP RIGHT TURN INBOUNDCOURSE 148 ALT 3000 LEGTIME 1 FAF FF31 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "CLP",
+                    "fixes": {
+                        "CLP": "CLP AT OR ABOVE 3000",
+                        "D148F": "OVERFLY D148F AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "HL502": "HL502 AT OR ABOVE 2000 SPEED 160",
+                "HL503": "HL503 2000",
+                "HL504": "HL504 AT OR ABOVE 1100 RNW 13 TRK 132 UNTIL 3000 TURN RIGHT DIRECT",
+                "CLP": "CLP AT OR ABOVE 3000 HOLD AT CLP LEFT TURN INBOUNDCOURSE 294 ALT 3000 LEGTIME 1 FAF HL503 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "CLP",
+                    "fixes": {
+                        "CLP": "CLP AT OR ABOVE 3000",
+                        "HL501": "HL501 AT OR ABOVE 2500 SPEED 160"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "HL702": "HL702 AT OR ABOVE 2000 SPEED 160",
+                "HL703": "HL703 2000",
+                "HL704": "HL704 AT OR ABOVE 1100 RNW 31 TRK 312 UNTIL 3000 TURN LEFT DIRECT",
+                "CLP": "CLP AT OR ABOVE 3000 HOLD AT CLP RIGHT TURN INBOUNDCOURSE 150 ALT 3000 LEGTIME 1 FAF HL703 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "CLP",
+                    "fixes": {
+                        "CLP": "CLP AT OR ABOVE 3000",
+                        "HL701": "HL701 AT OR ABOVE 2500 SPEED 160"
+                    }
+                }
+            ]
+        }
+    ]
+}

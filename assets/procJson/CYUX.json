@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "AGPEM",
+            "lat": 68.87741111666666,
+            "lon": 81.65687221666667
+        },
+        {
+            "name": "DEBEX",
+            "lat": 68.80850833333334,
+            "lon": 81.78504443333334
+        },
+        {
+            "name": "FS12",
+            "lat": 68.80726666666666,
+            "lon": 81.41965556666666
+        },
+        {
+            "name": "FS30",
+            "lat": 68.73213888333333,
+            "lon": 81.10781111666667
+        },
+        {
+            "name": "IMODO",
+            "lat": 68.82161111666667,
+            "lon": 81.42836666666666
+        },
+        {
+            "name": "IPVUR",
+            "lat": 68.94621666666667,
+            "lon": 81.52790278333333
+        },
+        {
+            "name": "IRLAT",
+            "lat": 68.67316666666666,
+            "lon": 80.83190833333333
+        },
+        {
+            "name": "MURAX",
+            "lat": 68.72976388333333,
+            "lon": 81.05740278333333
+        },
+        {
+            "name": "PENKA",
+            "lat": 68.73301666666667,
+            "lon": 81.07045278333334
+        },
+        {
+            "name": "PI001",
+            "lat": 68.82666156666667,
+            "lon": 81.32971128333334
+        },
+        {
+            "name": "PI002",
+            "lat": 68.89690978333333,
+            "lon": 81.29036798333334
+        },
+        {
+            "name": "PI003",
+            "lat": 68.91630143333333,
+            "lon": 81.49847945
+        },
+        {
+            "name": "PI004",
+            "lat": 68.82830608333333,
+            "lon": 81.15621368333333
+        },
+        {
+            "name": "PI005",
+            "lat": 68.89795688333334,
+            "lon": 81.20302046666667
+        },
+        {
+            "name": "PI006",
+            "lat": 68.9210195,
+            "lon": 81.00072705
+        },
+        {
+            "name": "TIGUN",
+            "lat": 68.60488611666666,
+            "lon": 80.96143056666666
+        },
+        {
+            "name": "VESGI",
+            "lat": 68.74134443333334,
+            "lon": 80.70159443333333
+        },
+        {
+            "name": "VODET",
+            "lat": 68.81864166666666,
+            "lon": 81.41629721666666
+        },
+        {
+            "name": "YUX",
+            "lat": 68.778325,
+            "lon": 81.2394
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "AGPEM": "AGPEM AT OR ABOVE 1500",
+                "IMODO": "IMODO 1500 RNW 12",
+                "PENKA": "OVERFLY PENKA 1200 HOLD AT PENKA RIGHT TURN INBOUNDCOURSE 015 SPEED 230 LEGTIME 1 FAF IMODO MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "DEBEX",
+                    "fixes": {
+                        "DEBEX": "DEBEX SPEED 210"
+                    }
+                },
+                {
+                    "name": "IPVUR",
+                    "fixes": {
+                        "IPVUR": "IPVUR SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IRLAT": "IRLAT AT OR ABOVE 1500",
+                "MURAX": "MURAX 1500 RNW 30",
+                "VODET": "OVERFLY VODET 1300 HOLD AT VODET RIGHT TURN INBOUNDCOURSE 033 SPEED 230 LEGTIME 1 FAF MURAX MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "TIGUN",
+                    "fixes": {
+                        "TIGUN": "TIGUN SPEED 210"
+                    }
+                },
+                {
+                    "name": "VESGI",
+                    "fixes": {
+                        "VESGI": "VESGI SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR12",
+            "fixes": {
+                "FS12": "FS12 1300 RNW 12",
+                "YUX": "YUX TRK 014 UNTIL 1500 TURN LEFT DIRECT YUX 1500 HOLD AT YUX LEFT TURN INBOUNDCOURSE 014 LEGTIME 1 FAF FS12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "YUX",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR30",
+            "fixes": {
+                "FS30": "FS30 1200 RNW 30",
+                "YUX": "OVERFLY YUX TRK 034 UNTIL 1500 TURN RIGHT DIRECT YUX 1500 HOLD AT YUX RIGHT TURN INBOUNDCOURSE 034 LEGTIME 1 FAF FS30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "YUX",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 1200 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1200 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1200 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

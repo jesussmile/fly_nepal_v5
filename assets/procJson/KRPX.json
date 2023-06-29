@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "BAYAM",
+            "lat": 46.455027783333335,
+            "lon": 108.67459443333334
+        },
+        {
+            "name": "KENPE",
+            "lat": 46.46474166666667,
+            "lon": 108.61026388333333
+        },
+        {
+            "name": "LUNNA",
+            "lat": 46.495638883333335,
+            "lon": 108.40394443333334
+        },
+        {
+            "name": "PULAE",
+            "lat": 46.52145278333333,
+            "lon": 108.22945
+        },
+        {
+            "name": "SWIVL",
+            "lat": 46.428136116666664,
+            "lon": 108.85132778333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 16",
+        "RNW 25",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "SWIVL": "SWIVL AT OR ABOVE 6600",
+                "BAYAM": "BAYAM 5200",
+                "KENPE": "KENPE AT OR ABOVE 4320 RNW 07 TRK 067 UNTIL 3890",
+                "PULAE": "OVERFLY PULAE AT OR ABOVE 6300 HOLD AT PULAE RIGHT TURN INBOUNDCOURSE 247 LEGDIST 7 FAF BAYAM MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "SWIVL",
+                    "fixes": {
+                        "SWIVL": "SWIVL RIGHT TURN INBOUNDCOURSE 067 ALT 6600 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "PULAE": "PULAE AT OR ABOVE 6300",
+                "LUNNA": "LUNNA 5200 RNW 25 TRK 247 UNTIL 3746",
+                "SWIVL": "OVERFLY SWIVL AT OR ABOVE 6600 HOLD AT SWIVL RIGHT TURN INBOUNDCOURSE 067 LEGDIST 7 FAF LUNNA MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "PULAE",
+                    "fixes": {
+                        "PULAE": "PULAE RIGHT TURN INBOUNDCOURSE 247 ALT 6300 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

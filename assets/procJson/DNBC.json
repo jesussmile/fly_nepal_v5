@@ -1,0 +1,145 @@
+{
+    "fixes": [
+        {
+            "name": "BA100",
+            "lat": 10.580516666666666,
+            "lon": 9.727041666666667
+        },
+        {
+            "name": "BA200",
+            "lat": 10.3852,
+            "lon": 9.760894433333334
+        },
+        {
+            "name": "BCH",
+            "lat": 10.456833333333334,
+            "lon": 9.748388883333334
+        },
+        {
+            "name": "CF35",
+            "lat": 10.351136116666666,
+            "lon": 9.766583333333333
+        },
+        {
+            "name": "EVDAS",
+            "lat": 10.745552783333334,
+            "lon": 9.698516666666666
+        },
+        {
+            "name": "FD17",
+            "lat": 10.582136116666666,
+            "lon": 9.726055566666666
+        },
+        {
+            "name": "FD35",
+            "lat": 10.384266666666667,
+            "lon": 9.761311116666667
+        },
+        {
+            "name": "FF35",
+            "lat": 10.384147216666667,
+            "lon": 9.7609
+        },
+        {
+            "name": "IPESO",
+            "lat": 10.302705566666667,
+            "lon": 9.775283333333334
+        },
+        {
+            "name": "ONOMI",
+            "lat": 10.677127783333333,
+            "lon": 9.796211116666667
+        },
+        {
+            "name": "RAKOK",
+            "lat": 10.316752783333333,
+            "lon": 9.858333333333333
+        },
+        {
+            "name": "TIBGO",
+            "lat": 10.663033333333333,
+            "lon": 9.712780566666666
+        },
+        {
+            "name": "XUTVA",
+            "lat": 10.648919433333333,
+            "lon": 9.629358333333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "FD17": "FD17 3600 RNW 17 TRK 171 UNTIL 2370 HDG 351 VECTORS FAF FD17 MAP RNW 17"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD35",
+            "fixes": {
+                "FD35": "FD35 3600 RNW 35 TRK 351 UNTIL 2370 TURN LEFT DIRECT",
+                "BCH": "BCH 5000 HOLD AT BCH LEFT TURN INBOUNDCOURSE 351 LEGTIME 1 FAF FD35 MAP RNW 35"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILS35",
+            "fixes": {
+                "CF35": "CF35 AT OR ABOVE 3600",
+                "FF35": "FF35 3600 RNW 35 TRK 351 UNTIL 2370 TURN LEFT DIRECT",
+                "BCH": "BCH 5000 HOLD AT BCH LEFT TURN INBOUNDCOURSE 351 LEGTIME 1 FAF FF35 MAP RNW 35"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "TIBGO": "TIBGO AT OR ABOVE 3600 SPEED 250",
+                "BA100": "BA100 3600 SPEED 250 RNW 17 TURN RIGHT DIRECT",
+                "XUTVA": "XUTVA HOLD AT XUTVA RIGHT TURN INBOUNDCOURSE 081 ALT 5000 SPEED 250 LEGTIME 1 FAF BA100 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "EVDAS",
+                    "fixes": {
+                        "EVDAS": "EVDAS AT OR ABOVE 4000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "ONOMI",
+                    "fixes": {
+                        "ONOMI": "ONOMI AT OR ABOVE 4000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "XUTVA",
+                    "fixes": {
+                        "XUTVA": "XUTVA AT OR ABOVE 4000 SPEED 250"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "IPESO": "IPESO AT OR ABOVE 3700 SPEED 250",
+                "BA200": "BA200 3600 SPEED 250 RNW 35 TURN RIGHT DIRECT",
+                "RAKOK": "RAKOK HOLD AT RAKOK RIGHT TURN INBOUNDCOURSE 261 ALT 6000 SPEED 250 LEGTIME 1 FAF BA200 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "RAKOK",
+                    "fixes": {
+                        "RAKOK": "RAKOK AT OR ABOVE 4500 SPEED 250"
+                    }
+                }
+            ]
+        }
+    ]
+}

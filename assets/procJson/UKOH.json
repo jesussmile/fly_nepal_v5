@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "CI03",
+            "lat": 46.581119433333335,
+            "lon": 32.416941666666666
+        },
+        {
+            "name": "D026E",
+            "lat": 46.707341666666665,
+            "lon": 32.53650556666667
+        },
+        {
+            "name": "FF03",
+            "lat": 46.609686116666666,
+            "lon": 32.44435
+        },
+        {
+            "name": "FF21",
+            "lat": 46.74182221666667,
+            "lon": 32.56914166666667
+        },
+        {
+            "name": "FI03",
+            "lat": 46.60908056666667,
+            "lon": 32.44323333333333
+        },
+        {
+            "name": "HE",
+            "lat": 46.6375,
+            "lon": 32.47055556666667
+        },
+        {
+            "name": "KOSAK",
+            "lat": 46.31666666666667,
+            "lon": 31.533333333333335
+        },
+        {
+            "name": "NITOK",
+            "lat": 46.125,
+            "lon": 32.90833333333333
+        },
+        {
+            "name": "RAPUL",
+            "lat": 46.61111111666666,
+            "lon": 32.00444443333333
+        },
+        {
+            "name": "RITED",
+            "lat": 46.733333333333334,
+            "lon": 32.88472221666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "KOSA2A",
+            "rnw": "03",
+            "fixes": {
+                "HE": "HE AT OR ABOVE 4930",
+                "KOSAK": "KOSAK AT OR ABOVE 10010"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KOSA3B",
+            "rnw": "21",
+            "fixes": {
+                "KOSAK": "KOSAK AT OR ABOVE 10010"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RAPU1A",
+            "rnw": "03",
+            "fixes": {
+                "HE": "HE AT OR ABOVE 4930",
+                "RAPUL": "RAPUL AT OR ABOVE 8040"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RAPU3B",
+            "rnw": "21",
+            "fixes": {
+                "RAPUL": "RAPUL AT OR ABOVE 8040"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RITE2A",
+            "rnw": "03",
+            "fixes": {
+                "RITED": "RITED AT OR ABOVE 9030"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RITE3B",
+            "rnw": "21",
+            "fixes": {
+                "RITED": "RITED AT OR ABOVE 9030"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "KOSA3C",
+            "runway": "RNW 03 RNW 21",
+            "fixes": {
+                "KOSAK": "KOSAK AT OR ABOVE 9030",
+                "HE": "HE AT OR ABOVE 3940"
+            }
+        },
+        {
+            "name": "NITO3C",
+            "runway": "RNW 03 RNW 21",
+            "fixes": {
+                "NITOK": "NITOK AT OR ABOVE 8040",
+                "HE": "HE AT OR ABOVE 3940"
+            }
+        },
+        {
+            "name": "RAPU3C",
+            "runway": "RNW 03 RNW 21",
+            "fixes": {
+                "RAPUL": "RAPUL AT OR ABOVE 7060",
+                "HE": "HE AT OR ABOVE 3940"
+            }
+        },
+        {
+            "name": "RITE3C",
+            "runway": "RNW 03 RNW 21",
+            "fixes": {
+                "RITED": "RITED AT OR ABOVE 10010",
+                "HE": "HE AT OR ABOVE 3940"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "ILS03",
+            "fixes": {
+                "CI03": "CI03 AT OR ABOVE 1480",
+                "FI03": "FI03 1480 RNW 03 TRK 026 UNTIL 1810 TURN RIGHT DIRECT",
+                "HE": "HE 1970 FAF FI03 MAP RNW 03"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FF03": "FF03 1480",
+                "HE": "HE 852 RNW 03 TRK 026 UNTIL 1810 TURN RIGHT DIRECT HE 1970 FAF FF03 MAP HE"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FF21": "FF21 1480 RNW 21",
+                "HE": "OVERFLY HE TRK 206 UNTIL 1480 TURN LEFT DIRECT HE 1970 FAF FF21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "HE",
+                    "fixes": {
+                        "HE": "HE AT OR ABOVE 3940 SPEED 200",
+                        "D026E": "D026E TRK 071 UNTIL 4.2 FROM D026E"
+                    }
+                }
+            ]
+        }
+    ]
+}

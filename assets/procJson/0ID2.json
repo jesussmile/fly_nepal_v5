@@ -1,0 +1,140 @@
+{
+    "fixes": [
+        {
+            "name": "ASTTN",
+            "lat": 44.06766666666667,
+            "lon": 113.89116943333333
+        },
+        {
+            "name": "FLNGJ",
+            "lat": 44.255927783333334,
+            "lon": 113.43925
+        },
+        {
+            "name": "HOSUN",
+            "lat": 44.771875,
+            "lon": 114.0611
+        },
+        {
+            "name": "LKT",
+            "lat": 45.021311116666666,
+            "lon": 114.08423611666667
+        },
+        {
+            "name": "LRJET",
+            "lat": 44.671827783333335,
+            "lon": 114.08476111666667
+        },
+        {
+            "name": "SMTAR",
+            "lat": 44.596780566666666,
+            "lon": 113.99955
+        },
+        {
+            "name": "TRCAT",
+            "lat": 43.917686116666665,
+            "lon": 113.46251666666667
+        },
+        {
+            "name": "VLCUN",
+            "lat": 44.627102783333335,
+            "lon": 114.255175
+        },
+        {
+            "name": "WFRDL",
+            "lat": 44.241111116666666,
+            "lon": 113.44718056666666
+        },
+        {
+            "name": "WNGLT",
+            "lat": 44.509225,
+            "lon": 113.90041111666666
+        },
+        {
+            "name": "YOWLS",
+            "lat": 44.458533333333335,
+            "lon": 114.27369166666666
+        },
+        {
+            "name": "YOYYU",
+            "lat": 43.94825,
+            "lon": 113.35536388333334
+        },
+        {
+            "name": "ZAROD",
+            "lat": 44.660994433333336,
+            "lon": 114.05088056666666
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "YOYYU1",
+            "rnw": "11",
+            "fixes": {
+                "FLNGJ": "FLNGJ",
+                "YOYYU": "YOYYU AT OR ABOVE 13500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ZAROD1",
+            "rnw": "29",
+            "fixes": {
+                "ZAROD": "ZAROD AT OR ABOVE 11460"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "LKT",
+                    "fixes": [
+                        "HOSUN",
+                        "LKT"
+                    ]
+                },
+                {
+                    "name": "YOWLS",
+                    "fixes": [
+                        "VLCUN",
+                        "YOWLS"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVM11",
+            "fixes": {
+                "SMTAR": "SMTAR AT OR ABOVE 9300 SPEED 210",
+                "WNGLT": "WNGLT 7600 RNW 11 TRK 113 UNTIL 6300",
+                "WFRDL": "WFRDL",
+                "TRCAT": "OVERFLY TRCAT AT OR ABOVE 13700 HOLD AT TRCAT LEFT TURN INBOUNDCOURSE 169 LEGDIST 7 FAF WNGLT MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "LKT",
+                    "fixes": {
+                        "LKT": "LKT",
+                        "HOSUN": "HOSUN AT OR ABOVE 11500 SPEED 250"
+                    }
+                },
+                {
+                    "name": "TRCAT",
+                    "fixes": {
+                        "TRCAT": "TRCAT",
+                        "ASTTN": "ASTTN AT OR ABOVE 13700",
+                        "YOWLS": "YOWLS AT OR ABOVE 12200 SPEED 250",
+                        "VLCUN": "VLCUN AT OR ABOVE 10100",
+                        "LRJET": "LRJET AT OR ABOVE 10000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "BOZAN",
+            "lat": 30.507083333333334,
+            "lon": 92.23408333333333
+        },
+        {
+            "name": "CEMIS",
+            "lat": 30.385716666666667,
+            "lon": 92.41741388333334
+        },
+        {
+            "name": "CIGOM",
+            "lat": 30.492988883333332,
+            "lon": 92.4239
+        },
+        {
+            "name": "CRISP",
+            "lat": 30.169758333333334,
+            "lon": 92.52985833333334
+        },
+        {
+            "name": "ELAYE",
+            "lat": 30.553630566666666,
+            "lon": 92.44914166666666
+        },
+        {
+            "name": "ETICA",
+            "lat": 30.63042778333333,
+            "lon": 92.57105833333334
+        },
+        {
+            "name": "FOLEN",
+            "lat": 30.288505566666668,
+            "lon": 92.44559166666667
+        },
+        {
+            "name": "HATHA",
+            "lat": 30.311641666666667,
+            "lon": 92.70261943333334
+        },
+        {
+            "name": "JEGIL",
+            "lat": 30.650838883333332,
+            "lon": 92.47738888333333
+        },
+        {
+            "name": "MIXER",
+            "lat": 30.671180566666667,
+            "lon": 92.38368056666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "JEGIL": "JEGIL AT OR ABOVE 1700 JEGIL AT OR ABOVE 1700 HOLD AT JEGIL RIGHT TURN INBOUNDCOURSE 164 LEGDIST 4 FAF ELAYE MAP RNW 16",
+                "ELAYE": "ELAYE 1700 RNW 16 TRK 164 UNTIL 580 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BOZAN",
+                    "fixes": {
+                        "BOZAN": "BOZAN",
+                        "MIXER": "MIXER AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "HATHA",
+                    "fixes": {
+                        "HATHA": "HATHA",
+                        "ETICA": "ETICA AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "JEGIL",
+                    "fixes": {
+                        "JEGIL": "JEGIL RIGHT TURN INBOUNDCOURSE 164 ALT 1700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "FOLEN": "FOLEN AT OR ABOVE 1800",
+                "CEMIS": "CEMIS 1500 RNW 34 TRK 355 UNTIL 442",
+                "CIGOM": "CIGOM",
+                "JEGIL": "OVERFLY JEGIL AT OR ABOVE 1700 HOLD AT JEGIL RIGHT TURN INBOUNDCOURSE 164 LEGDIST 4 FAF CEMIS MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "CRISP",
+                    "fixes": {
+                        "CRISP": "CRISP"
+                    }
+                }
+            ]
+        }
+    ]
+}

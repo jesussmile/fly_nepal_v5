@@ -1,0 +1,95 @@
+{
+    "fixes": [
+        {
+            "name": "HABEX",
+            "lat": 39.61695556666667,
+            "lon": 79.09533611666667
+        },
+        {
+            "name": "JAXUM",
+            "lat": 39.597941666666664,
+            "lon": 79.22236666666667
+        },
+        {
+            "name": "LEASE",
+            "lat": 39.57493611666666,
+            "lon": 79.45158888333333
+        },
+        {
+            "name": "MGW",
+            "lat": 39.55671388333333,
+            "lon": 79.86041111666667
+        },
+        {
+            "name": "MOHLR",
+            "lat": 39.56838333333334,
+            "lon": 79.602225
+        },
+        {
+            "name": "PINIC",
+            "lat": 39.53790278333334,
+            "lon": 79.61710278333334
+        },
+        {
+            "name": "ZABSO",
+            "lat": 39.563125,
+            "lon": 79.45241666666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "MOHLR": "MOHLR AT OR ABOVE 5000",
+                "LEASE": "LEASE 4600 RNW 09 TRK 092 UNTIL 3500 TURN RIGHT DIRECT",
+                "MGW": "MGW AT OR ABOVE 5000 HOLD AT MGW RIGHT TURN INBOUNDCOURSE 092 LEGTIME 1 FAF LEASE MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "MGW",
+                    "fixes": {
+                        "MGW": "MGW AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "PINIC": "PINIC AT OR ABOVE 5700",
+                "ZABSO": "ZABSO 4600 RNW 09 TRK 088 UNTIL 3183",
+                "HABEX": "OVERFLY HABEX 5600 HOLD AT HABEX RIGHT TURN INBOUNDCOURSE 268 LEGDIST 5 FAF ZABSO MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "PINIC",
+                    "fixes": {
+                        "PINIC": "PINIC RIGHT TURN INBOUNDCOURSE 088 ALT 5700 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "HABEX": "HABEX AT OR ABOVE 5600",
+                "JAXUM": "JAXUM 4500 RNW 27 TRK 268 UNTIL 3175",
+                "PINIC": "OVERFLY PINIC AT OR ABOVE 5700 HOLD AT PINIC RIGHT TURN INBOUNDCOURSE 088 LEGDIST 5 FAF JAXUM MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "HABEX",
+                    "fixes": {
+                        "HABEX": "HABEX RIGHT TURN INBOUNDCOURSE 268 ALT 5600 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

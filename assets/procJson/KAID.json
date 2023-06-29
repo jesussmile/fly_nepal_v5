@@ -1,0 +1,177 @@
+{
+    "fixes": [
+        {
+            "name": "CFVSB",
+            "lat": 40.02472778333333,
+            "lon": 85.38072221666667
+        },
+        {
+            "name": "HELAG",
+            "lat": 40.06786666666667,
+            "lon": 85.50025278333334
+        },
+        {
+            "name": "HIBOX",
+            "lat": 40.153444433333334,
+            "lon": 85.73890833333333
+        },
+        {
+            "name": "MIE",
+            "lat": 40.237291666666664,
+            "lon": 85.39403611666667
+        },
+        {
+            "name": "MOTTS",
+            "lat": 39.952005566666664,
+            "lon": 85.06426666666667
+        },
+        {
+            "name": "MZZ",
+            "lat": 40.493330566666664,
+            "lon": 85.67925
+        },
+        {
+            "name": "NEWTO",
+            "lat": 39.91098611666666,
+            "lon": 85.46898888333334
+        },
+        {
+            "name": "NOMUF",
+            "lat": 40.02508056666667,
+            "lon": 85.38165
+        },
+        {
+            "name": "OCOVE",
+            "lat": 40.15698056666667,
+            "lon": 85.30081666666666
+        },
+        {
+            "name": "PI001",
+            "lat": 40.042623983333336,
+            "lon": 85.42962598333334
+        },
+        {
+            "name": "PI002",
+            "lat": 39.97527493333333,
+            "lon": 85.39764016666666
+        },
+        {
+            "name": "PI003",
+            "lat": 39.99669361666667,
+            "lon": 85.3015093
+        },
+        {
+            "name": "STOWA",
+            "lat": 40.09165,
+            "lon": 85.56638611666666
+        },
+        {
+            "name": "WARMU",
+            "lat": 40.19112221666666,
+            "lon": 85.84463056666667
+        },
+        {
+            "name": "WELDO",
+            "lat": 40.104786116666666,
+            "lon": 86.07554166666667
+        },
+        {
+            "name": "ZAKAV",
+            "lat": 40.06729721666667,
+            "lon": 85.49868333333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 18",
+        "RNW 30",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS30",
+            "fixes": {
+                "CFVSB": "CFVSB AT OR ABOVE 2900",
+                "ZAKAV": "ZAKAV 2700 RNW 30 TRK 298 UNTIL 2000 TURN RIGHT HDG 069 INTERCEPT RADIAL 067 TO",
+                "MIE": "MIE MIE AT OR ABOVE 2900 HOLD AT MIE RIGHT TURN INBOUNDCOURSE 143 LEGTIME 1 FAF ZAKAV MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "MIE",
+                    "fixes": {
+                        "MIE": "MIE",
+                        "ZAKAV": "ZAKAV AT OR ABOVE 2900",
+                        "PI001": "PI001 AT OR ABOVE 2900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2900 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "WARMU": "WARMU AT OR ABOVE 2900",
+                "HIBOX": "HIBOX 2800 RNW 12 TRK 118 UNTIL 1157",
+                "NOMUF": "OVERFLY NOMUF AT OR ABOVE 3000 HOLD AT NOMUF RIGHT TURN INBOUNDCOURSE 298 LEGDIST 4 FAF HIBOX MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "MZZ",
+                    "fixes": {
+                        "MZZ": "MZZ"
+                    }
+                },
+                {
+                    "name": "WARMU",
+                    "fixes": {
+                        "WARMU": "WARMU RIGHT TURN INBOUNDCOURSE 118 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WELDO",
+                    "fixes": {
+                        "WELDO": "WELDO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "NOMUF": "NOMUF AT OR ABOVE 3000",
+                "HELAG": "HELAG 2700",
+                "STOWA": "STOWA AT OR ABOVE 1600 RNW 30",
+                "WARMU": "OVERFLY WARMU AT OR ABOVE 3000 HOLD AT WARMU RIGHT TURN INBOUNDCOURSE 118 LEGDIST 4 FAF HELAG MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "MOTTS",
+                    "fixes": {
+                        "MOTTS": "MOTTS"
+                    }
+                },
+                {
+                    "name": "NEWTO",
+                    "fixes": {
+                        "NEWTO": "NEWTO"
+                    }
+                },
+                {
+                    "name": "NOMUF",
+                    "fixes": {
+                        "NOMUF": "NOMUF RIGHT TURN INBOUNDCOURSE 298 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "OCOVE",
+                    "fixes": {
+                        "OCOVE": "OCOVE"
+                    }
+                }
+            ]
+        }
+    ]
+}

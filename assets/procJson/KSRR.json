@@ -1,0 +1,153 @@
+{
+    "fixes": [
+        {
+            "name": "BREDD",
+            "lat": 33.378405566666665,
+            "lon": 105.21619443333333
+        },
+        {
+            "name": "CEPNB",
+            "lat": 33.48988611666667,
+            "lon": 105.40433888333334
+        },
+        {
+            "name": "CEVBA",
+            "lat": 33.57760833333333,
+            "lon": 105.12513611666667
+        },
+        {
+            "name": "CME",
+            "lat": 33.337475,
+            "lon": 104.62124443333333
+        },
+        {
+            "name": "COOPS",
+            "lat": 33.28397221666667,
+            "lon": 105.28952778333333
+        },
+        {
+            "name": "FIBOX",
+            "lat": 33.531002783333335,
+            "lon": 105.29220278333334
+        },
+        {
+            "name": "HANTE",
+            "lat": 33.503086116666665,
+            "lon": 105.39180556666666
+        },
+        {
+            "name": "HUBOV",
+            "lat": 33.50078333333333,
+            "lon": 105.40000833333333
+        },
+        {
+            "name": "LOVER",
+            "lat": 33.439830566666664,
+            "lon": 104.95813056666667
+        },
+        {
+            "name": "OKUYU",
+            "lat": 33.51819166666667,
+            "lon": 105.33796111666666
+        },
+        {
+            "name": "PLATS",
+            "lat": 33.533225,
+            "lon": 105.28426111666667
+        },
+        {
+            "name": "REYOK",
+            "lat": 33.63392221666667,
+            "lon": 104.92193888333334
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 12",
+        "RNW 24",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "CAP2",
+            "rnw": "14",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 06",
+                    "fixes": {
+                        "RNW 06": "RNW 06 TRK 061 UNTIL 7220",
+                        "CEPNB": "CEPNB TRK 090 UNTIL 11000 TRK 090 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 12",
+                    "fixes": {
+                        "RNW 12": "RNW 12 TRK 122 UNTIL 7220 TRK 060 INTERCEPT RADIAL 015 TO",
+                        "CEPNB": "CEPNB CEPNB TRK 090 UNTIL 11000 TRK 090 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 24",
+                    "fixes": {
+                        "RNW 24": "RNW 24 TRK 241 UNTIL 7220 TURN LEFT TRK 073 INTERCEPT RADIAL 043 TO",
+                        "CEPNB": "CEPNB CEPNB TRK 090 UNTIL 11000 TRK 090 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 30",
+                    "fixes": {
+                        "RNW 30": "RNW 30 TRK 302 UNTIL 7220 TURN RIGHT TRK 074 INTERCEPT RADIAL 104 TO",
+                        "CEPNB": "CEPNB CEPNB TRK 090 UNTIL 11000 TRK 090 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS24",
+            "fixes": {
+                "FIBOX": "FIBOX AT OR ABOVE 10700",
+                "HUBOV": "HUBOV 8900 RNW 24 TRK 241 UNTIL 7500 TURN LEFT HDG 110 INTERCEPT RADIAL 083 TO",
+                "BREDD": "BREDD BREDD AT OR ABOVE 11000 HOLD AT BREDD LEFT TURN INBOUNDCOURSE 263 LEGDIST 5 FAF HUBOV MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "CME",
+                    "fixes": {
+                        "CME": "CME",
+                        "REYOK": "REYOK AT OR ABOVE 11000",
+                        "CEVBA": "CEVBA AT OR ABOVE 11000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "OKUYU": "OKUYU AT OR ABOVE 9900",
+                "HANTE": "HANTE 9000 RNW 24 TRK 241 UNTIL 7500 TURN LEFT DIRECT",
+                "COOPS": "OVERFLY COOPS AT OR ABOVE 10000 HOLD AT COOPS RIGHT TURN INBOUNDCOURSE 303 LEGDIST 7 FAF HANTE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "LOVER",
+                    "fixes": {
+                        "LOVER": "LOVER",
+                        "PLATS": "PLATS AT OR ABOVE 10700"
+                    }
+                },
+                {
+                    "name": "REYOK",
+                    "fixes": {
+                        "REYOK": "REYOK",
+                        "PLATS": "PLATS AT OR ABOVE 10700"
+                    }
+                }
+            ]
+        }
+    ]
+}

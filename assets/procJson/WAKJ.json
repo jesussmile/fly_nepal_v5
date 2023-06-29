@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "KJ502",
+            "lat": 7.876944433333334,
+            "lon": 138.73722221666668
+        },
+        {
+            "name": "KJ503",
+            "lat": 7.921305566666667,
+            "lon": 138.78755556666667
+        },
+        {
+            "name": "KJ602",
+            "lat": 8.080416666666666,
+            "lon": 138.96825
+        },
+        {
+            "name": "KJ603",
+            "lat": 8.036055566666667,
+            "lon": 138.91788888333335
+        },
+        {
+            "name": "OSREN",
+            "lat": 8.113666666666667,
+            "lon": 139.00602778333334
+        },
+        {
+            "name": "TURTA",
+            "lat": 7.843694433333333,
+            "lon": 138.69947221666666
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "KJ502": "KJ502 AT OR ABOVE 2500",
+                "KJ503": "KJ503 1650 RNW 13 TURN RIGHT DIRECT",
+                "TURTA": "TURTA AT OR ABOVE 2500 HOLD AT TURTA RIGHT TURN INBOUNDCOURSE 128 ALT 2500 LEGTIME 1 FAF KJ503 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "TURTA",
+                    "fixes": {
+                        "TURTA": "TURTA AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "KJ602": "KJ602 AT OR ABOVE 2500",
+                "KJ603": "KJ603 1650 RNW 31 TURN LEFT DIRECT",
+                "OSREN": "OSREN AT OR ABOVE 2500 HOLD AT OSREN RIGHT TURN INBOUNDCOURSE 308 ALT 2500 LEGTIME 1 FAF KJ603 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "OSREN",
+                    "fixes": {
+                        "OSREN": "OSREN AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "BOSPE",
+            "lat": 47.617544433333336,
+            "lon": 104.25314721666666
+        },
+        {
+            "name": "CATUM",
+            "lat": 47.530008333333335,
+            "lon": 104.30983056666666
+        },
+        {
+            "name": "EXADE",
+            "lat": 47.599105566666665,
+            "lon": 104.54461388333333
+        },
+        {
+            "name": "FANIX",
+            "lat": 47.791533333333334,
+            "lon": 104.13985833333334
+        },
+        {
+            "name": "GINBE",
+            "lat": 48.00985,
+            "lon": 103.91220278333333
+        },
+        {
+            "name": "HAKET",
+            "lat": 47.884202783333336,
+            "lon": 104.07917778333334
+        },
+        {
+            "name": "JUNEG",
+            "lat": 47.65645833333333,
+            "lon": 104.22788056666667
+        },
+        {
+            "name": "LAMBE",
+            "lat": 47.76136111666667,
+            "lon": 104.35021666666667
+        },
+        {
+            "name": "OKAGE",
+            "lat": 47.75006943333333,
+            "lon": 104.16693056666666
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 11",
+        "RNW 19",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "CATUM": "CATUM AT OR ABOVE 4600",
+                "BOSPE": "BOSPE 3700",
+                "JUNEG": "JUNEG AT OR ABOVE 2880 RNW 01 TRK 015 UNTIL 2238",
+                "HAKET": "OVERFLY HAKET AT OR ABOVE 4600 HOLD AT HAKET RIGHT TURN INBOUNDCOURSE 195 LEGDIST 5 FAF BOSPE MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "CATUM",
+                    "fixes": {
+                        "CATUM": "CATUM RIGHT TURN INBOUNDCOURSE 015 ALT 4600 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "EXADE",
+                    "fixes": {
+                        "EXADE": "EXADE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "HAKET": "HAKET AT OR ABOVE 4600",
+                "FANIX": "FANIX 3700",
+                "OKAGE": "OKAGE AT OR ABOVE 2800 RNW 19 TRK 195 UNTIL 2234",
+                "CATUM": "OVERFLY CATUM AT OR ABOVE 4600 HOLD AT CATUM RIGHT TURN INBOUNDCOURSE 015 LEGDIST 5 FAF FANIX MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "GINBE",
+                    "fixes": {
+                        "GINBE": "GINBE"
+                    }
+                },
+                {
+                    "name": "LAMBE",
+                    "fixes": {
+                        "LAMBE": "LAMBE",
+                        "HAKET": "OVERFLY HAKET AT OR ABOVE 4600 HOLD AT HAKET RIGHT TURN INBOUNDCOURSE 195 ALT 4600 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,216 @@
+{
+    "fixes": [
+        {
+            "name": "BALPA",
+            "lat": 38.9175,
+            "lon": 26.974166666666665
+        },
+        {
+            "name": "BL037",
+            "lat": 38.74268611666667,
+            "lon": 26.987133333333333
+        },
+        {
+            "name": "BL038",
+            "lat": 38.692788883333336,
+            "lon": 26.992125
+        },
+        {
+            "name": "BL039",
+            "lat": 38.58467778333333,
+            "lon": 27.002919433333332
+        },
+        {
+            "name": "BL235",
+            "lat": 38.46428611666666,
+            "lon": 27.015386116666665
+        },
+        {
+            "name": "BL260",
+            "lat": 38.42840278333333,
+            "lon": 26.910305566666665
+        },
+        {
+            "name": "CI17Y",
+            "lat": 38.73493333333333,
+            "lon": 26.987980566666668
+        },
+        {
+            "name": "CI17Z",
+            "lat": 38.72828056666667,
+            "lon": 26.988644433333334
+        },
+        {
+            "name": "CIG",
+            "lat": 38.49494443333333,
+            "lon": 27.009055566666667
+        },
+        {
+            "name": "CIGNB",
+            "lat": 38.524444433333336,
+            "lon": 27.017
+        },
+        {
+            "name": "D333S",
+            "lat": 38.78875,
+            "lon": 26.857336116666666
+        },
+        {
+            "name": "D351Q",
+            "lat": 38.81144166666667,
+            "lon": 26.980341666666668
+        },
+        {
+            "name": "D351R",
+            "lat": 38.818094433333336,
+            "lon": 26.979675
+        },
+        {
+            "name": "FI17Y",
+            "lat": 38.691686116666666,
+            "lon": 26.992291666666667
+        },
+        {
+            "name": "FI17Z",
+            "lat": 38.690025,
+            "lon": 26.99245833333333
+        },
+        {
+            "name": "FN161",
+            "lat": 38.6329,
+            "lon": 26.982522216666666
+        },
+        {
+            "name": "IMR",
+            "lat": 38.317444433333335,
+            "lon": 27.007222216666666
+        },
+        {
+            "name": "KULEL",
+            "lat": 38.792580566666665,
+            "lon": 26.982136116666666
+        },
+        {
+            "name": "ORFOZ",
+            "lat": 38.44206388333333,
+            "lon": 26.763444433333333
+        },
+        {
+            "name": "RODUL",
+            "lat": 38.664833333333334,
+            "lon": 26.9205
+        },
+        {
+            "name": "ULSAT",
+            "lat": 38.642891666666664,
+            "lon": 26.997111116666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY17",
+            "fixes": {
+                "CI17Y": "CI17Y AT OR ABOVE 3300",
+                "FI17Y": "FI17Y 3300 RNW 17 HDG 171 UNTIL 9.0 FROM",
+                "IMR": "IMR TURN RIGHT DIRECT",
+                "ORFOZ": "ORFOZ AT OR ABOVE 4000 SPEED 265 FAF FI17Y MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BALPA",
+                    "fixes": {
+                        "BALPA": "BALPA AT OR BELOW 8000 AT OR ABOVE 6000",
+                        "D351R": "D351R AT OR ABOVE 4800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ17",
+            "fixes": {
+                "CI17Z": "CI17Z AT OR ABOVE 3300",
+                "FI17Z": "FI17Z 3300 RNW 17",
+                "CIG": "CIG HDG 171 UNTIL 2.0 FROM CIG TURN RIGHT TRK 003 INTERCEPT RADIAL 333 TO",
+                "D333S": "D333S SPEED 300 D333S AT OR ABOVE 6000 FAF FI17Z MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "RODUL",
+                    "fixes": {
+                        "RODUL": "RODUL AT OR BELOW 20000 AT OR ABOVE 6000",
+                        "D333S": "OVERFLY D333S TURN RIGHT DIRECT",
+                        "D351Q": "D351Q AT OR ABOVE 4800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA17",
+            "fixes": {
+                "FN161": "FN161 2900",
+                "CIGNB": "CIGNB 1640 RNW 17 TRK 243 UNTIL 3000 TURN RIGHT DIRECT CIGNB AT OR ABOVE 5200 HOLD AT CIGNB LEFT TURN INBOUNDCOURSE 315 ALT 10000 SPEED 250 LEGTIME 1 FAF FN161 MAP CIG"
+            },
+            "transitions": [
+                {
+                    "name": "CIG1",
+                    "fixes": {
+                        "CIGNB": "CIGNB 5200 TRK 315 UNTIL 6.7 FROM CIGNB"
+                    }
+                },
+                {
+                    "name": "CIG2",
+                    "fixes": {
+                        "CIGNB": "CIGNB 5200 TRK 329 UNTIL 7.0 FROM CIGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA35",
+            "fixes": {
+                "FN161": "FN161 2900",
+                "CIGNB": "CIGNB 1640 RNW 35 TRK 243 UNTIL 3000 TURN RIGHT DIRECT CIGNB AT OR ABOVE 5200 HOLD AT CIGNB LEFT TURN INBOUNDCOURSE 315 ALT 10000 SPEED 250 LEGTIME 1 FAF FN161 MAP CIG"
+            },
+            "transitions": [
+                {
+                    "name": "CIG1",
+                    "fixes": {
+                        "CIGNB": "CIGNB 5200 TRK 315 UNTIL 6.7 FROM CIGNB"
+                    }
+                },
+                {
+                    "name": "CIG2",
+                    "fixes": {
+                        "CIGNB": "CIGNB 5200 TRK 329 UNTIL 7.0 FROM CIGNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "ULSAT": "ULSAT 2300",
+                "BL039": "BL039 AT OR ABOVE 1180 RNW 17",
+                "BL235": "BL235",
+                "BL260": "BL260",
+                "ORFOZ": "OVERFLY ORFOZ 4000 SPEED 230 HOLD AT ORFOZ RIGHT TURN INBOUNDCOURSE 272 ALT 4000 SPEED 230 LEGDIST 5 FAF ULSAT MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "KULEL",
+                    "fixes": {
+                        "KULEL": "KULEL AT OR BELOW 8000 AT OR ABOVE 5000 SPEED 250",
+                        "BL037": "BL037 AT OR ABOVE 4100",
+                        "BL038": "BL038 AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        }
+    ]
+}

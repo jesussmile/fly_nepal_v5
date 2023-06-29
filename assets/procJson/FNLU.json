@@ -1,0 +1,292 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 8.893602583333333,
+            "lon": 13.051184883333333
+        },
+        {
+            "name": "AF002",
+            "lat": 8.790091883333334,
+            "lon": 13.053068366666666
+        },
+        {
+            "name": "AF003",
+            "lat": 8.701375416666666,
+            "lon": 13.107056333333333
+        },
+        {
+            "name": "AF004",
+            "lat": 8.651207133333333,
+            "lon": 13.198664433333333
+        },
+        {
+            "name": "AF005",
+            "lat": 8.653013016666666,
+            "lon": 13.303367633333334
+        },
+        {
+            "name": "AF006",
+            "lat": 8.682766516666666,
+            "lon": 13.129640016666666
+        },
+        {
+            "name": "AF007",
+            "lat": 8.656541833333334,
+            "lon": 13.180630033333333
+        },
+        {
+            "name": "AF008",
+            "lat": 8.645543383333333,
+            "lon": 13.237018083333334
+        },
+        {
+            "name": "AF009",
+            "lat": 8.6506576,
+            "lon": 13.294259383333333
+        },
+        {
+            "name": "AF010",
+            "lat": 8.6714723,
+            "lon": 13.347740683333333
+        },
+        {
+            "name": "BIRUT",
+            "lat": 9.368611116666667,
+            "lon": 12.006944433333333
+        },
+        {
+            "name": "D053L",
+            "lat": 8.705652783333333,
+            "lon": 13.392877783333333
+        },
+        {
+            "name": "D233J",
+            "lat": 8.961569433333333,
+            "lon": 13.126458333333334
+        },
+        {
+            "name": "D315L",
+            "lat": 8.721522216666667,
+            "lon": 13.088455566666667
+        },
+        {
+            "name": "ETOSO",
+            "lat": 8.667761116666666,
+            "lon": 13.314580566666667
+        },
+        {
+            "name": "EVADA",
+            "lat": 8.659933333333333,
+            "lon": 13.445769433333334
+        },
+        {
+            "name": "FD05",
+            "lat": 8.938311116666666,
+            "lon": 13.150694433333333
+        },
+        {
+            "name": "FD23",
+            "lat": 8.787102783333333,
+            "lon": 13.308147216666667
+        },
+        {
+            "name": "FI23",
+            "lat": 8.760605566666667,
+            "lon": 13.338180566666667
+        },
+        {
+            "name": "G048F",
+            "lat": 8.797580566666667,
+            "lon": 13.298633333333333
+        },
+        {
+            "name": "G048L",
+            "lat": 8.728763883333333,
+            "lon": 13.372216666666667
+        },
+        {
+            "name": "G221G",
+            "lat": 8.949577783333334,
+            "lon": 13.162702783333334
+        },
+        {
+            "name": "G241V",
+            "lat": 9.04,
+            "lon": 12.901666666666667
+        },
+        {
+            "name": "IMKAK",
+            "lat": 8.789755566666667,
+            "lon": 13.429869433333334
+        },
+        {
+            "name": "LUNB",
+            "lat": 8.792641666666666,
+            "lon": 13.303936116666666
+        },
+        {
+            "name": "MANGO",
+            "lat": 8.729136116666666,
+            "lon": 13.36855
+        },
+        {
+            "name": "MD05",
+            "lat": 8.880163883333333,
+            "lon": 13.211269433333333
+        },
+        {
+            "name": "ONTAR",
+            "lat": 9.628333333333334,
+            "lon": 11.385
+        },
+        {
+            "name": "VNA",
+            "lat": 8.845269433333334,
+            "lon": 13.247605566666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 07",
+        "RNW 23",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "FD05": "FD05 1700",
+                "MD05": "MD05 352 RNW 05",
+                "VNA": "VNA TRK 053 UNTIL 2500 TURN LEFT DIRECT VNA 3000 HOLD AT VNA LEFT TURN INBOUNDCOURSE 233 ALT 3000 LEGTIME 1 FAF FD05 MAP MD05"
+            },
+            "transitions": [
+                {
+                    "name": "VNA",
+                    "fixes": {
+                        "VNA": "VNA AT OR ABOVE 3000",
+                        "FD05": "FD05 AT OR ABOVE 1700 TRK 188 UNTIL 4.4 FROM FD05"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "MANGO": "MANGO AT OR ABOVE 3000 MANGO HOLD AT MANGO RIGHT TURN INBOUNDCOURSE 233 ALT 3000 LEGTIME 1 FAF FD23 MAP VNA",
+                "FD23": "FD23 1800",
+                "VNA": "VNA 536 RNW 23",
+                "D233J": "D233J",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "AF003": "AF003",
+                "AF004": "AF004",
+                "AF005": "AF005",
+                "D053L": "D053L 3000"
+            },
+            "transitions": [
+                {
+                    "name": "MANGO",
+                    "fixes": {
+                        "MANGO": "MANGO RIGHT TURN INBOUNDCOURSE 233 ALT 4000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "ONTAR",
+                    "fixes": {
+                        "ONTAR": "ONTAR",
+                        "BIRUT": "BIRUT",
+                        "D315L": "D315L AT OR ABOVE 3000",
+                        "AF006": "AF006",
+                        "AF007": "AF007",
+                        "AF008": "AF008",
+                        "AF009": "AF009",
+                        "AF010": "AF010",
+                        "D053L": "D053L AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS23",
+            "fixes": {
+                "MANGO": "MANGO AT OR ABOVE 3000 MANGO HOLD AT MANGO RIGHT TURN INBOUNDCOURSE 233 ALT 3000 LEGTIME 1 FAF FI23 MAP RNW 23",
+                "FI23": "FI23 3000 RNW 23",
+                "D233J": "D233J",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "AF003": "AF003",
+                "AF004": "AF004",
+                "AF005": "AF005",
+                "D053L": "D053L 3000"
+            },
+            "transitions": [
+                {
+                    "name": "MANGO",
+                    "fixes": {
+                        "MANGO": "MANGO RIGHT TURN INBOUNDCOURSE 233 ALT 4000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "ONTAR",
+                    "fixes": {
+                        "ONTAR": "ONTAR",
+                        "BIRUT": "BIRUT",
+                        "D315L": "D315L AT OR ABOVE 3000",
+                        "AF006": "AF006",
+                        "AF007": "AF007",
+                        "AF008": "AF008",
+                        "AF009": "AF009",
+                        "AF010": "AF010",
+                        "D053L": "D053L AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB23",
+            "fixes": {
+                "LUNB": "LUNB 1700 RNW 23 HDG 233 UNTIL 2500 TURN RIGHT DIRECT LUNB 3000 HOLD AT LUNB RIGHT TURN INBOUNDCOURSE 233 LEGTIME 1 FAF LUNB MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "LU",
+                    "fixes": {
+                        "LUNB": "LUNB RIGHT TURN INBOUNDCOURSE 233 ALT 2300 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "G048L": "G048L AT OR ABOVE 1800",
+                "G048F": "G048F 1800 RNW 23",
+                "G221G": "OVERFLY G221G",
+                "G241V": "OVERFLY G241V 3000 FAF G048F MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "ETOSO",
+                    "fixes": {
+                        "ETOSO": "ETOSO AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "EVADA",
+                    "fixes": {
+                        "EVADA": "EVADA AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "IMKAK",
+                    "fixes": {
+                        "IMKAK": "IMKAK AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

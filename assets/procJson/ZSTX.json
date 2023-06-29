@@ -1,0 +1,205 @@
+{
+    "fixes": [
+        {
+            "name": "45VOR",
+            "lat": 29.778152783333333,
+            "lon": 118.18024166666666
+        },
+        {
+            "name": "ABVIL",
+            "lat": 29.641666666666666,
+            "lon": 119.315
+        },
+        {
+            "name": "CD13",
+            "lat": 29.844433333333335,
+            "lon": 118.0583
+        },
+        {
+            "name": "CI13",
+            "lat": 29.859094433333333,
+            "lon": 118.07116388333333
+        },
+        {
+            "name": "D100H",
+            "lat": 29.724991666666668,
+            "lon": 118.40571388333333
+        },
+        {
+            "name": "D100N",
+            "lat": 29.714872216666667,
+            "lon": 118.51048056666667
+        },
+        {
+            "name": "FD13",
+            "lat": 29.817933333333333,
+            "lon": 118.10709721666667
+        },
+        {
+            "name": "FI13",
+            "lat": 29.828366666666668,
+            "lon": 118.11658611666667
+        },
+        {
+            "name": "MD13",
+            "lat": 29.748955566666666,
+            "lon": 118.23384721666666
+        },
+        {
+            "name": "RW13",
+            "lat": 29.740905566666665,
+            "lon": 118.24560278333334
+        },
+        {
+            "name": "TX533",
+            "lat": 29.715,
+            "lon": 118.51166666666667
+        },
+        {
+            "name": "TX701",
+            "lat": 29.698611116666665,
+            "lon": 118.3075
+        },
+        {
+            "name": "TX801",
+            "lat": 29.768611116666666,
+            "lon": 118.20472221666667
+        },
+        {
+            "name": "TXN",
+            "lat": 29.738333333333333,
+            "lon": 118.25333333333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "ABV01D",
+            "rnw": "13",
+            "fixes": {
+                "TXN": "OVERFLY TXN AT OR ABOVE 2960 SPEED 190 TURN RIGHT TRK 130 INTERCEPT RADIAL 100 TO",
+                "ABVIL": "ABVIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ABV02D",
+            "rnw": "13",
+            "fixes": {
+                "TXN": "TXN",
+                "D100H": "D100H AT OR ABOVE 2960 SPEED 190",
+                "ABVIL": "ABVIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ABV08D",
+            "rnw": "13",
+            "fixes": {
+                "TX701": "OVERFLY TX701 AT OR ABOVE 1090 TURN RIGHT DIRECT",
+                "TXN": "OVERFLY TXN AT OR ABOVE 2960 SPEED 190 TURN RIGHT DIRECT",
+                "TX533": "TX533 AT OR ABOVE 5250",
+                "ABVIL": "ABVIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ABV09D",
+            "rnw": "13",
+            "fixes": {
+                "TX701": "OVERFLY TX701 AT OR ABOVE 1090 TURN LEFT DIRECT",
+                "TX533": "TX533 AT OR ABOVE 5250 SPEED 190",
+                "ABVIL": "ABVIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ABV11D",
+            "rnw": "31",
+            "fixes": {
+                "TXN": "TXN AT OR ABOVE 2960 SPEED 190",
+                "ABVIL": "ABVIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ABV19D",
+            "rnw": "31",
+            "fixes": {
+                "TX801": "OVERFLY TX801 AT OR ABOVE 1090 TURN LEFT DIRECT",
+                "TXN": "OVERFLY TXN AT OR ABOVE 2960 SPEED 190",
+                "TX533": "TX533 AT OR ABOVE 5250",
+                "ABVIL": "ABVIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ABV01A",
+            "runway": "RNW 13 RNW 31",
+            "fixes": {
+                "ABVIL": "ABVIL",
+                "D100N": "D100N 6570",
+                "TXN": "TXN 4930"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD13",
+            "fixes": {
+                "CD13": "CD13 AT OR ABOVE 3780",
+                "FD13": "FD13 3290",
+                "45VOR": "45VOR AT OR ABOVE 1810",
+                "MD13": "MD13 718 RNW 13 TRK 127 UNTIL 6.0 FROM",
+                "TXN": "TXN TURN LEFT DIRECT TXN 4930 SPEED 190 FAF FD13 MAP MD13"
+            },
+            "transitions": [
+                {
+                    "name": "TXN1",
+                    "fixes": {
+                        "TXN": "TXN AT OR ABOVE 4930 SPEED 190 TRK 292 UNTIL 12.0 FROM TXN"
+                    }
+                },
+                {
+                    "name": "TXN2",
+                    "fixes": {
+                        "TXN": "TXN AT OR ABOVE 4930 SPEED 190 TRK 296 UNTIL 12.0 FROM TXN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS13",
+            "fixes": {
+                "CI13": "CI13 AT OR ABOVE 3780",
+                "FI13": "FI13 3290 RNW 13 TRK 132 UNTIL 6.0 FROM",
+                "TXN": "TXN TURN LEFT DIRECT TXN 4930 SPEED 190 FAF FI13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "TXN1",
+                    "fixes": {
+                        "TXN": "TXN AT OR ABOVE 4930 SPEED 190 TRK 297 UNTIL 12.0 FROM TXN"
+                    }
+                },
+                {
+                    "name": "TXN2",
+                    "fixes": {
+                        "TXN": "TXN AT OR ABOVE 4930 SPEED 190 TRK 301 UNTIL 12.0 FROM TXN"
+                    }
+                }
+            ]
+        }
+    ]
+}

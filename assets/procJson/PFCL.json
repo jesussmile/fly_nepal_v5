@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "BUNUW",
+            "lat": 58.92859721666667,
+            "lon": 158.46985278333332
+        },
+        {
+            "name": "CENDU",
+            "lat": 59.02757221666667,
+            "lon": 158.40739721666668
+        },
+        {
+            "name": "DUHGO",
+            "lat": 59.053266666666666,
+            "lon": 158.56080278333334
+        },
+        {
+            "name": "EPOMY",
+            "lat": 59.00169721666666,
+            "lon": 158.25422221666668
+        },
+        {
+            "name": "GACCU",
+            "lat": 58.737605566666666,
+            "lon": 158.58929721666667
+        },
+        {
+            "name": "HEGPI",
+            "lat": 58.639675,
+            "lon": 158.64999721666666
+        },
+        {
+            "name": "IKULE",
+            "lat": 58.61408888333333,
+            "lon": 158.49834166666668
+        },
+        {
+            "name": "JEGVO",
+            "lat": 58.66508056666667,
+            "lon": 158.80187221666668
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "CENDU": "CENDU AT OR ABOVE 2900",
+                "BUNUW": "BUNUW 2000 RNW 18",
+                "HEGPI": "OVERFLY HEGPI AT OR ABOVE 2900 HOLD AT HEGPI RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4 FAF BUNUW MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "CENDU",
+                    "fixes": {
+                        "CENDU": "CENDU RIGHT TURN INBOUNDCOURSE 183 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DUHGO",
+                    "fixes": {
+                        "DUHGO": "DUHGO AT OR ABOVE 5100"
+                    }
+                },
+                {
+                    "name": "EPOMY",
+                    "fixes": {
+                        "EPOMY": "EPOMY AT OR ABOVE 2900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HEGPI": "HEGPI AT OR ABOVE 2900",
+                "GACCU": "GACCU 2000 RNW 36 TRK 003 UNTIL 480",
+                "CENDU": "OVERFLY CENDU AT OR ABOVE 2900 HOLD AT CENDU RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4 FAF GACCU MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HEGPI",
+                    "fixes": {
+                        "HEGPI": "HEGPI RIGHT TURN INBOUNDCOURSE 003 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "IKULE",
+                    "fixes": {
+                        "IKULE": "IKULE"
+                    }
+                },
+                {
+                    "name": "JEGVO",
+                    "fixes": {
+                        "JEGVO": "JEGVO"
+                    }
+                }
+            ]
+        }
+    ]
+}

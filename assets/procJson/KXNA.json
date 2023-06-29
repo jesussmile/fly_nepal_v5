@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "HUNTO",
+            "lat": 36.46774166666667,
+            "lon": 94.39180278333333
+        },
+        {
+            "name": "JADIR",
+            "lat": 36.37458888333333,
+            "lon": 94.34915278333334
+        },
+        {
+            "name": "LNDSY",
+            "lat": 36.09435833333333,
+            "lon": 94.22151388333333
+        },
+        {
+            "name": "ROGEY",
+            "lat": 36.18804443333333,
+            "lon": 94.26407778333333
+        },
+        {
+            "name": "RZC",
+            "lat": 36.24642778333333,
+            "lon": 94.12139166666667
+        },
+        {
+            "name": "SEYOD",
+            "lat": 36.332313883333335,
+            "lon": 94.32983611666667
+        },
+        {
+            "name": "WARAR",
+            "lat": 35.99406388333333,
+            "lon": 94.17614721666666
+        },
+        {
+            "name": "ZAKAN",
+            "lat": 36.247044433333336,
+            "lon": 94.29093888333334
+        }
+    ],
+    "rnws": [
+        "RNW 16L",
+        "RNW 16R",
+        "RNW 34L",
+        "RNW 34R"
+    ],
+    "sids": [
+        {
+            "name": "HIFIL9",
+            "rnw": "33",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 16L",
+                    "fixes": {
+                        "RNW 16L": "RNW 16L TRK 159 UNTIL 1690 HDG 180 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 34R",
+                    "fixes": {
+                        "RNW 34R": "RNW 34R HDG 339 UNTIL 1800 HDG 339 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS16L",
+            "fixes": {
+                "HUNTO": "HUNTO AT OR ABOVE 3400",
+                "JADIR": "JADIR 3000 RNW 16L TRK 159 UNTIL 1800 HDG 133 INTERCEPT RADIAL 204 TO",
+                "LNDSY": "LNDSY LNDSY AT OR ABOVE 3400 HOLD AT LNDSY LEFT TURN INBOUNDCOURSE 024 LEGTIME 1 FAF JADIR MAP RNW 16L"
+            },
+            "transitions": [
+                {
+                    "name": "RZC",
+                    "fixes": {
+                        "RZC": "RZC",
+                        "HUNTO": "HUNTO AT OR ABOVE 3400 HOLD AT HUNTO RIGHT TURN INBOUNDCOURSE 159 ALT 3400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS34R",
+            "fixes": {
+                "LNDSY": "LNDSY AT OR ABOVE 3400 LNDSY LNDSY AT OR ABOVE 3400 HOLD AT LNDSY LEFT TURN INBOUNDCOURSE 339 LEGTIME 1 FAF ROGEY MAP RNW 34R",
+                "ROGEY": "ROGEY 3000 RNW 34R TRK 339 UNTIL 1800 TURN RIGHT HDG 163 INTERCEPT RADIAL 204 TO"
+            },
+            "transitions": [
+                {
+                    "name": "LNDSY",
+                    "fixes": {
+                        "LNDSY": "LNDSY LEFT TURN INBOUNDCOURSE 339 ALT 3400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "WARAR",
+                    "fixes": {
+                        "WARAR": "WARAR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16L",
+            "fixes": {
+                "HUNTO": "HUNTO AT OR ABOVE 3400",
+                "JADIR": "JADIR 3000",
+                "SEYOD": "SEYOD AT OR ABOVE 2140 RNW 16L TRK 159 UNTIL 1487",
+                "LNDSY": "OVERFLY LNDSY AT OR ABOVE 3400 HOLD AT LNDSY LEFT TURN INBOUNDCOURSE 339 LEGDIST 4 FAF JADIR MAP RNW 16L"
+            },
+            "transitions": [
+                {
+                    "name": "HUNTO",
+                    "fixes": {
+                        "HUNTO": "HUNTO RIGHT TURN INBOUNDCOURSE 159 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34R",
+            "fixes": {
+                "LNDSY": "LNDSY AT OR ABOVE 3400",
+                "ROGEY": "ROGEY 3000",
+                "ZAKAN": "ZAKAN AT OR ABOVE 1800 RNW 34R TRK 339 UNTIL 1473",
+                "HUNTO": "OVERFLY HUNTO AT OR ABOVE 3400 HOLD AT HUNTO RIGHT TURN INBOUNDCOURSE 159 LEGDIST 4 FAF ROGEY MAP RNW 34R"
+            },
+            "transitions": [
+                {
+                    "name": "LNDSY",
+                    "fixes": {
+                        "LNDSY": "LNDSY LEFT TURN INBOUNDCOURSE 339 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

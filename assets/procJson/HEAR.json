@@ -1,0 +1,55 @@
+{
+    "fixes": [
+        {
+            "name": "ARH",
+            "lat": 31.073,
+            "lon": 33.831861116666666
+        },
+        {
+            "name": "CD34",
+            "lat": 30.929775,
+            "lon": 33.931663883333336
+        },
+        {
+            "name": "FD34",
+            "lat": 30.958425,
+            "lon": 33.911725
+        },
+        {
+            "name": "MD34",
+            "lat": 31.044361116666668,
+            "lon": 33.85184443333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD34",
+            "fixes": {
+                "CD34": "CD34 2000",
+                "FD34": "FD34 2000",
+                "MD34": "MD34 452 RNW 34",
+                "ARH": "ARH TRK 324 UNTIL 2000 TURN LEFT DIRECT ARH 3000 HOLD AT ARH RIGHT TURN INBOUNDCOURSE 167 LEGTIME 1 FAF FD34 MAP MD34"
+            },
+            "transitions": [
+                {
+                    "name": "ARH1",
+                    "fixes": {
+                        "ARH": "ARH AT OR ABOVE 4000 TRK 167 UNTIL 10.0 FROM ARH"
+                    }
+                },
+                {
+                    "name": "ARH2",
+                    "fixes": {
+                        "ARH": "ARH AT OR ABOVE 4000 TRK 154 UNTIL 10.0 FROM ARH"
+                    }
+                }
+            ]
+        }
+    ]
+}

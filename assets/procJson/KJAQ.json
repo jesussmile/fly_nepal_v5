@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "CF01",
+            "lat": 38.191583333333334,
+            "lon": 120.92250556666667
+        },
+        {
+            "name": "FF01",
+            "lat": 38.293905566666666,
+            "lon": 120.85110833333333
+        },
+        {
+            "name": "HNW",
+            "lat": 38.724725,
+            "lon": 120.74926388333333
+        },
+        {
+            "name": "HOYCO",
+            "lat": 38.24904721666667,
+            "lon": 120.97355556666666
+        },
+        {
+            "name": "LIN",
+            "lat": 38.07458056666667,
+            "lon": 121.00385833333333
+        },
+        {
+            "name": "LINWO",
+            "lat": 38.074588883333334,
+            "lon": 121.00385833333333
+        },
+        {
+            "name": "MOKPY",
+            "lat": 38.295130566666664,
+            "lon": 120.83586111666666
+        },
+        {
+            "name": "SUZSU",
+            "lat": 38.37246111666666,
+            "lon": 120.79613888333333
+        },
+        {
+            "name": "VASPE",
+            "lat": 38.21778333333334,
+            "lon": 120.8755
+        },
+        {
+            "name": "VOHBO",
+            "lat": 38.458438883333336,
+            "lon": 120.751875
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD01",
+            "fixes": {
+                "CF01": "CF01 AT OR ABOVE 3000",
+                "FF01": "FF01 3000 RNW 01 TRK 012 UNTIL 2100 TURN LEFT DIRECT",
+                "LIN": "LIN AT OR ABOVE 3000 FAF FF01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "LIN",
+                    "fixes": {
+                        "LIN": "LIN AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GPS01",
+            "fixes": {
+                "VASPE": "VASPE AT OR ABOVE 4000",
+                "MOKPY": "MOKPY 3000",
+                "SUZSU": "OVERFLY SUZSU 1741 RNW 01",
+                "VOHBO": "OVERFLY VOHBO AT OR ABOVE 4500 HOLD AT VOHBO RIGHT TURN INBOUNDCOURSE 166 LEGTIME 1 FAF MOKPY MAP SUZSU"
+            },
+            "transitions": [
+                {
+                    "name": "HNW",
+                    "fixes": {
+                        "HNW": "HNW",
+                        "HOYCO": "HOYCO AT OR ABOVE 5100"
+                    }
+                },
+                {
+                    "name": "LINWO",
+                    "fixes": {
+                        "LINWO": "LINWO"
+                    }
+                }
+            ]
+        }
+    ]
+}

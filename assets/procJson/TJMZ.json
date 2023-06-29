@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "FF09",
+            "lat": 18.218283333333332,
+            "lon": 67.26692778333333
+        },
+        {
+            "name": "MAZ",
+            "lat": 18.256452783333334,
+            "lon": 67.15104166666667
+        },
+        {
+            "name": "PI001",
+            "lat": 18.23745255,
+            "lon": 67.20911403333334
+        },
+        {
+            "name": "PI002",
+            "lat": 18.268857216666667,
+            "lon": 67.27694663333334
+        },
+        {
+            "name": "PI003",
+            "lat": 18.202120016666665,
+            "lon": 67.31692901666666
+        },
+        {
+            "name": "WEXIG",
+            "lat": 18.236341666666668,
+            "lon": 67.23272778333333
+        },
+        {
+            "name": "YADUB",
+            "lat": 18.214941666666668,
+            "lon": 67.32573056666666
+        },
+        {
+            "name": "ZADAV",
+            "lat": 18.23366388333333,
+            "lon": 67.50045556666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "YADUB": "YADUB AT OR ABOVE 3000 OVERFLY YADUB AT OR ABOVE 3000 HOLD AT YADUB RIGHT TURN INBOUNDCOURSE 086 LEGDIST 4 FAF WEXIG MAP RNW 09",
+                "WEXIG": "WEXIG 1500 RNW 09 TRK 086 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MAZ",
+                    "fixes": {
+                        "MAZ": "MAZ",
+                        "YADUB": "OVERFLY YADUB AT OR ABOVE 3000 HOLD AT YADUB RIGHT TURN INBOUNDCOURSE 086 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZADAV",
+                    "fixes": {
+                        "ZADAV": "ZADAV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR09",
+            "fixes": {
+                "FF09": "FF09 2600 RNW 09",
+                "MAZ": "MAZ TRK 081 UNTIL 2000 TURN LEFT DIRECT MAZ AT OR ABOVE 5000 HOLD AT MAZ RIGHT TURN INBOUNDCOURSE 081 LEGTIME 1 FAF FF09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "MAZ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

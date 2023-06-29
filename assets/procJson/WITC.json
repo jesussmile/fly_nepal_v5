@@ -1,0 +1,80 @@
+{
+    "fixes": [
+        {
+            "name": "PIPEB",
+            "lat": 4.157,
+            "lon": 96.07602778333333
+        },
+        {
+            "name": "TC501",
+            "lat": 4.138305566666666,
+            "lon": 96.15388888333334
+        },
+        {
+            "name": "TC502",
+            "lat": 4.094555566666667,
+            "lon": 96.19991666666667
+        },
+        {
+            "name": "TC503",
+            "lat": 4.0583888833333335,
+            "lon": 96.23797221666666
+        },
+        {
+            "name": "TC701",
+            "lat": 3.9093333333333335,
+            "lon": 96.36952778333334
+        },
+        {
+            "name": "TC702",
+            "lat": 3.972,
+            "lon": 96.31422221666666
+        },
+        {
+            "name": "ZUBER",
+            "lat": 3.8718055666666666,
+            "lon": 96.40269443333334
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "TC501": "TC501 AT OR ABOVE 2400",
+                "TC502": "TC502 1300",
+                "TC503": "OVERFLY TC503 334 RNW 14 TRK 134 UNTIL 1000 TURN RIGHT DIRECT",
+                "PIPEB": "PIPEB AT OR ABOVE 3500 HOLD AT PIPEB RIGHT TURN INBOUNDCOURSE 104 ALT 3500 LEGTIME 1 FAF TC502 MAP TC503"
+            },
+            "transitions": [
+                {
+                    "name": "PIPEB",
+                    "fixes": {
+                        "PIPEB": "PIPEB AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "TC701": "TC701 AT OR ABOVE 2700",
+                "TC702": "TC702 1600 RNW 32 TRK 319 UNTIL 1000 TURN LEFT DIRECT",
+                "ZUBER": "ZUBER AT OR ABOVE 3500 HOLD AT ZUBER LEFT TURN INBOUNDCOURSE 319 ALT 3500 LEGTIME 1 FAF TC702 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "ZUBER",
+                    "fixes": {
+                        "ZUBER": "ZUBER AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "fixes": [
+        {
+            "name": "FD06",
+            "lat": 16.74965,
+            "lon": 94.68523611666667
+        },
+        {
+            "name": "FD24",
+            "lat": 16.852683333333335,
+            "lon": 94.86326666666666
+        },
+        {
+            "name": "FN06",
+            "lat": 16.771441666666668,
+            "lon": 94.69840278333334
+        },
+        {
+            "name": "FN24",
+            "lat": 16.865219433333333,
+            "lon": 94.85421388333333
+        },
+        {
+            "name": "MD06",
+            "lat": 16.789997216666666,
+            "lon": 94.74284443333333
+        },
+        {
+            "name": "MD24",
+            "lat": 16.821158333333333,
+            "lon": 94.79609721666667
+        },
+        {
+            "name": "PTN",
+            "lat": 16.808688883333332,
+            "lon": 94.76955
+        },
+        {
+            "name": "PTNNB",
+            "lat": 16.8131,
+            "lon": 94.77969443333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD06",
+            "fixes": {
+                "FD06": "FD06 1750",
+                "MD06": "MD06 532 RNW 06 HDG 060 UNTIL 3000 TURN RIGHT DIRECT",
+                "PTN": "PTN AT OR ABOVE 3000 HOLD AT PTN RIGHT TURN INBOUNDCOURSE 265 ALT 3000 LEGTIME 1 FAF FD06 MAP MD06"
+            },
+            "transitions": [
+                {
+                    "name": "PTN1",
+                    "fixes": {
+                        "PTN": "PTN AT OR ABOVE 3000 TRK 265 UNTIL 6.0 FROM PTN"
+                    }
+                },
+                {
+                    "name": "PTN2",
+                    "fixes": {
+                        "PTN": "PTN AT OR ABOVE 3000 TRK 250 UNTIL 6.0 FROM PTN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD24",
+            "fixes": {
+                "FD24": "FD24 1720",
+                "MD24": "MD24 350 RNW 24 TRK 245 UNTIL 520 HDG 240 UNTIL 3000 TURN RIGHT DIRECT",
+                "PTN": "PTN AT OR ABOVE 3000 HOLD AT PTN RIGHT TURN INBOUNDCOURSE 095 LEGTIME 1 FAF FD24 MAP MD24"
+            },
+            "transitions": [
+                {
+                    "name": "PTN1",
+                    "fixes": {
+                        "PTN": "PTN AT OR ABOVE 3000 TRK 095 UNTIL 6.0 FROM PTN"
+                    }
+                },
+                {
+                    "name": "PTN2",
+                    "fixes": {
+                        "PTN": "PTN AT OR ABOVE 3000 TRK 080 UNTIL 6.0 FROM PTN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FN06": "FN06 1660 RNW 06",
+                "PTNNB": "PTNNB HDG 060 UNTIL 2000 TURN RIGHT DIRECT PTNNB 3000 HOLD AT PTNNB RIGHT TURN INBOUNDCOURSE 273 LEGTIME 1 FAF FN06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "PTN1",
+                    "fixes": {
+                        "PTNNB": "PTNNB AT OR ABOVE 3000 TRK 273 UNTIL 5.3 FROM PTNNB"
+                    }
+                },
+                {
+                    "name": "PTN2",
+                    "fixes": {
+                        "PTNNB": "PTNNB AT OR ABOVE 3000 TRK 258 UNTIL 7.5 FROM PTNNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FN24": "FN24 1660 RNW 24",
+                "PTNNB": "PTNNB HDG 240 UNTIL 2000 TURN RIGHT DIRECT PTNNB 3000 HOLD AT PTNNB RIGHT TURN INBOUNDCOURSE 085 LEGTIME 1 FAF FN24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "PTN1",
+                    "fixes": {
+                        "PTNNB": "PTNNB AT OR ABOVE 3000 TRK 085 UNTIL 5.3 FROM PTNNB"
+                    }
+                },
+                {
+                    "name": "PTN2",
+                    "fixes": {
+                        "PTNNB": "PTNNB AT OR ABOVE 3000 TRK 070 UNTIL 7.5 FROM PTNNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

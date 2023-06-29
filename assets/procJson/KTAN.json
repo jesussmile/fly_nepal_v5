@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "CAVDO",
+            "lat": 42.05863333333333,
+            "lon": 71.20776943333334
+        },
+        {
+            "name": "EKAYO",
+            "lat": 41.79721943333333,
+            "lon": 70.76918611666666
+        },
+        {
+            "name": "GAILS",
+            "lat": 41.869030566666666,
+            "lon": 70.40213611666667
+        },
+        {
+            "name": "GNSET",
+            "lat": 41.931441666666665,
+            "lon": 71.26164721666666
+        },
+        {
+            "name": "ICARA",
+            "lat": 41.847325,
+            "lon": 70.90755833333333
+        },
+        {
+            "name": "INNDY",
+            "lat": 41.77199721666667,
+            "lon": 71.09886943333333
+        },
+        {
+            "name": "KOHOG",
+            "lat": 41.893316666666664,
+            "lon": 71.100475
+        },
+        {
+            "name": "WOLAD",
+            "lat": 41.804225,
+            "lon": 71.31531388333333
+        },
+        {
+            "name": "ZUNUX",
+            "lat": 41.63195278333333,
+            "lon": 70.80763056666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 12",
+        "RNW 22",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "GNSET": "GNSET AT OR ABOVE 2200",
+                "KOHOG": "KOHOG 1300 RNW 12 TRK 124 UNTIL 500 TURN RIGHT DIRECT",
+                "INNDY": "OVERFLY INNDY AT OR ABOVE 3000 SPEED 210 HOLD AT INNDY LEFT TURN INBOUNDCOURSE 331 LEGDIST 4 FAF KOHOG MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "CAVDO",
+                    "fixes": {
+                        "CAVDO": "CAVDO"
+                    }
+                },
+                {
+                    "name": "WOLAD",
+                    "fixes": {
+                        "WOLAD": "WOLAD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "EKAYO": "EKAYO AT OR ABOVE 3000",
+                "ICARA": "ICARA 1900 RNW 30 TRK 304 UNTIL 600 TURN LEFT DIRECT",
+                "INNDY": "OVERFLY INNDY AT OR ABOVE 3000 SPEED 210 HOLD AT INNDY LEFT TURN INBOUNDCOURSE 331 ALT 3000 LEGDIST 4 FAF ICARA MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "EKAYO",
+                    "fixes": {
+                        "EKAYO": "EKAYO RIGHT TURN INBOUNDCOURSE 312 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GAILS",
+                    "fixes": {
+                        "GAILS": "GAILS"
+                    }
+                },
+                {
+                    "name": "ZUNUX",
+                    "fixes": {
+                        "ZUNUX": "ZUNUX"
+                    }
+                }
+            ]
+        }
+    ]
+}

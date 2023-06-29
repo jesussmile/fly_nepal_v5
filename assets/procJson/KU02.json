@@ -1,0 +1,154 @@
+{
+    "fixes": [
+        {
+            "name": "AMXOJ",
+            "lat": 43.388480566666665,
+            "lon": 112.24056111666667
+        },
+        {
+            "name": "AVIPE",
+            "lat": 43.20383888333333,
+            "lon": 112.35286111666667
+        },
+        {
+            "name": "CASAP",
+            "lat": 43.13429166666667,
+            "lon": 112.41562778333333
+        },
+        {
+            "name": "HORUM",
+            "lat": 42.995216666666664,
+            "lon": 112.54060556666667
+        },
+        {
+            "name": "IDA",
+            "lat": 43.519005566666664,
+            "lon": 112.06391666666667
+        },
+        {
+            "name": "JASKI",
+            "lat": 43.245136116666664,
+            "lon": 112.32781388333333
+        },
+        {
+            "name": "MILMK",
+            "lat": 43.032383333333335,
+            "lon": 112.49245278333333
+        },
+        {
+            "name": "NARBE",
+            "lat": 43.17336388333333,
+            "lon": 112.37133611666667
+        },
+        {
+            "name": "OHJOJ",
+            "lat": 43.12501388333333,
+            "lon": 112.40059443333334
+        },
+        {
+            "name": "PIH",
+            "lat": 42.870383333333336,
+            "lon": 112.65223056666666
+        },
+        {
+            "name": "YILKO",
+            "lat": 43.29411388333333,
+            "lon": 112.29805278333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [
+        {
+            "name": "IDA3",
+            "rnw": "01",
+            "fixes": {
+                "IDA": "IDA AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PIH4",
+            "rnw": "19",
+            "fixes": {
+                "PIH": "PIH AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDC01",
+            "fixes": {
+                "HORUM": "HORUM AT OR ABOVE 7000",
+                "CASAP": "CASAP 6100",
+                "AVIPE": "OVERFLY AVIPE 4521 RNW 01",
+                "IDA": "IDA AT OR ABOVE 7000 HOLD AT IDA LEFT TURN INBOUNDCOURSE 019 LEGTIME 1 FAF CASAP MAP AVIPE"
+            },
+            "transitions": [
+                {
+                    "name": "PIH",
+                    "fixes": {
+                        "PIH": "PIH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDC19",
+            "fixes": {
+                "HORUM": "HORUM AT OR ABOVE 7000",
+                "CASAP": "CASAP 6100",
+                "AVIPE": "OVERFLY AVIPE 4521 RNW 19",
+                "IDA": "IDA AT OR ABOVE 7000 HOLD AT IDA LEFT TURN INBOUNDCOURSE 019 LEGTIME 1 FAF CASAP MAP AVIPE"
+            },
+            "transitions": [
+                {
+                    "name": "PIH",
+                    "fixes": {
+                        "PIH": "PIH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB01",
+            "fixes": {
+                "MILMK": "MILMK AT OR ABOVE 7000",
+                "OHJOJ": "OHJOJ 6200 RNW 01 TRK 009 UNTIL 4888",
+                "JASKI": "JASKI",
+                "IDA": "OVERFLY IDA AT OR ABOVE 7000 HOLD AT IDA RIGHT TURN INBOUNDCOURSE 195 LEGDIST 7 FAF OHJOJ MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "PIH",
+                    "fixes": {
+                        "PIH": "PIH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA19",
+            "fixes": {
+                "AMXOJ": "AMXOJ AT OR ABOVE 7000",
+                "YILKO": "YILKO 6200 RNW 19 TRK 189 UNTIL 4888",
+                "NARBE": "NARBE",
+                "PIH": "OVERFLY PIH AT OR ABOVE 8500 HOLD AT PIH LEFT TURN INBOUNDCOURSE 021 LEGDIST 7 FAF YILKO MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "IDA",
+                    "fixes": {
+                        "IDA": "IDA"
+                    }
+                }
+            ]
+        }
+    ]
+}

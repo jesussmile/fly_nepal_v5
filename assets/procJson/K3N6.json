@@ -1,0 +1,99 @@
+{
+    "fixes": [
+        {
+            "name": "AMADE",
+            "lat": 40.39098056666667,
+            "lon": 74.26883611666666
+        },
+        {
+            "name": "ARIAN",
+            "lat": 40.26854721666667,
+            "lon": 74.42481111666666
+        },
+        {
+            "name": "COL",
+            "lat": 40.311630566666665,
+            "lon": 74.15972778333334
+        },
+        {
+            "name": "KUNVE",
+            "lat": 40.46385278333333,
+            "lon": 74.17558888333333
+        },
+        {
+            "name": "RBV",
+            "lat": 40.20240278333333,
+            "lon": 74.495025
+        },
+        {
+            "name": "STENY",
+            "lat": 40.40168611666667,
+            "lon": 74.26248056666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "RBV": "RBV AT OR ABOVE 1700",
+                "ARIAN": "ARIAN 1700 RNW 06 TRK 057 UNTIL 487",
+                "AMADE": "OVERFLY AMADE TURN RIGHT DIRECT",
+                "COL": "OVERFLY COL AT OR ABOVE 2000 HOLD AT COL RIGHT TURN INBOUNDCOURSE 190 LEGDIST 4 FAF ARIAN MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "RBV",
+                    "fixes": {
+                        "RBV": "RBV LEFT TURN INBOUNDCOURSE 052 ALT 1700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "KUNVE": "KUNVE AT OR ABOVE 1800",
+                "AMADE": "AMADE 1700 RNW 24 TRK 237 UNTIL 487 TURN LEFT DIRECT",
+                "COL": "OVERFLY COL AT OR ABOVE 2000 HOLD AT COL RIGHT TURN INBOUNDCOURSE 190 LEGDIST 4 FAF AMADE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "RBV",
+                    "fixes": {
+                        "RBV": "RBV",
+                        "KUNVE": "OVERFLY KUNVE AT OR ABOVE 1800 HOLD AT KUNVE RIGHT TURN INBOUNDCOURSE 237 ALT 1800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR24",
+            "fixes": {
+                "STENY": "STENY 1700 RNW 24 TRK 232 UNTIL 490 TURN LEFT DIRECT",
+                "COL": "COL AT OR ABOVE 2000 HOLD AT COL RIGHT TURN INBOUNDCOURSE 190 LEGTIME 1 FAF STENY MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "COL",
+                    "fixes": {
+                        "COL": "COL",
+                        "STENY": "STENY AT OR ABOVE 1700 HOLD AT STENY LEFT TURN INBOUNDCOURSE 232 ALT 1700 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "RBV",
+                    "fixes": {
+                        "RBV": "RBV",
+                        "STENY": "STENY AT OR ABOVE 1700 HOLD AT STENY LEFT TURN INBOUNDCOURSE 232 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

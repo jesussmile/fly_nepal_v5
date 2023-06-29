@@ -1,0 +1,94 @@
+{
+    "fixes": [
+        {
+            "name": "CAGOB",
+            "lat": 48.26053056666667,
+            "lon": 99.15514721666666
+        },
+        {
+            "name": "CAREW",
+            "lat": 48.15788056666667,
+            "lon": 99.531325
+        },
+        {
+            "name": "FANOB",
+            "lat": 48.621725,
+            "lon": 99.28918611666667
+        },
+        {
+            "name": "HOTOG",
+            "lat": 48.400058333333334,
+            "lon": 99.20669721666667
+        },
+        {
+            "name": "JIXER",
+            "lat": 48.44143056666667,
+            "lon": 99.22203888333334
+        },
+        {
+            "name": "KNOUT",
+            "lat": 48.56514443333333,
+            "lon": 99.26806111666667
+        },
+        {
+            "name": "NERDE",
+            "lat": 48.08314166666667,
+            "lon": 98.54263056666667
+        },
+        {
+            "name": "WODOT",
+            "lat": 48.525072216666665,
+            "lon": 99.25313056666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "FANOB": "FANOB AT OR ABOVE 3300",
+                "KNOUT": "KNOUT 3100",
+                "WODOT": "WODOT AT OR ABOVE 2300 RNW 16 TRK 160 UNTIL 1900",
+                "CAREW": "OVERFLY CAREW AT OR ABOVE 3600 HOLD AT CAREW RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4 FAF KNOUT MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CAREW",
+                    "fixes": {
+                        "CAREW": "CAREW",
+                        "FANOB": "OVERFLY FANOB AT OR ABOVE 3300 HOLD AT FANOB RIGHT TURN INBOUNDCOURSE 160 ALT 3300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NERDE",
+                    "fixes": {
+                        "NERDE": "NERDE",
+                        "FANOB": "OVERFLY FANOB AT OR ABOVE 3300 HOLD AT FANOB RIGHT TURN INBOUNDCOURSE 160 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "CAGOB": "CAGOB AT OR ABOVE 3400",
+                "HOTOG": "HOTOG 3000",
+                "JIXER": "JIXER AT OR ABOVE 2180 RNW 34 TRK 340 UNTIL 1900 TURN LEFT DIRECT",
+                "CAREW": "OVERFLY CAREW AT OR ABOVE 3600 HOLD AT CAREW RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4 FAF HOTOG MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "CAGOB",
+                    "fixes": {
+                        "CAGOB": "CAGOB RIGHT TURN INBOUNDCOURSE 340 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

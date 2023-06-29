@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 44.40161488333333,
+            "lon": 23.694111633333332
+        },
+        {
+            "name": "AF002",
+            "lat": 44.378042183333335,
+            "lon": 23.6802211
+        },
+        {
+            "name": "CI27",
+            "lat": 44.32,
+            "lon": 24.037861116666665
+        },
+        {
+            "name": "CRV",
+            "lat": 44.318611116666666,
+            "lon": 23.92275
+        },
+        {
+            "name": "D085P",
+            "lat": 44.322916666666664,
+            "lon": 24.294166666666666
+        },
+        {
+            "name": "D115H",
+            "lat": 44.25305556666667,
+            "lon": 24.086683333333333
+        },
+        {
+            "name": "D120G",
+            "lat": 44.25288056666667,
+            "lon": 24.058855566666665
+        },
+        {
+            "name": "D277K",
+            "lat": 44.353316666666665,
+            "lon": 23.671925
+        },
+        {
+            "name": "FD09",
+            "lat": 44.31608333333333,
+            "lon": 23.740083333333335
+        },
+        {
+            "name": "FD27",
+            "lat": 44.32002778333333,
+            "lon": 24.037861116666665
+        },
+        {
+            "name": "FI27",
+            "lat": 44.31918888333333,
+            "lon": 23.970061116666667
+        },
+        {
+            "name": "OLNET",
+            "lat": 44.442777783333334,
+            "lon": 23.675166666666666
+        },
+        {
+            "name": "PEMOK",
+            "lat": 44.364722216666664,
+            "lon": 24.348333333333333
+        },
+        {
+            "name": "RW27",
+            "lat": 44.31835278333333,
+            "lon": 23.904125
+        },
+        {
+            "name": "TITEK",
+            "lat": 44.49333333333333,
+            "lon": 23.573888883333332
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "FD09": "FD09 2500 RNW 09",
+                "CRV": "CRV AT OR ABOVE 1030 TRK 085 UNTIL 2000 TURN RIGHT DIRECT CRV 2500 HOLD AT CRV RIGHT TURN INBOUNDCOURSE 294 LEGTIME 1 FAF FD09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "CRV",
+                    "fixes": {
+                        "CRV": "CRV AT OR ABOVE 2500 TRK 294 UNTIL 9.0 FROM CRV"
+                    }
+                },
+                {
+                    "name": "PEMOK",
+                    "fixes": {
+                        "PEMOK": "PEMOK",
+                        "CRV": "CRV AT OR ABOVE 2500 TRK 294 UNTIL 9.0 FROM CRV"
+                    }
+                },
+                {
+                    "name": "TITEK",
+                    "fixes": {
+                        "TITEK": "TITEK",
+                        "OLNET": "OLNET AT OR ABOVE 4000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D277K": "D277K AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD27",
+            "fixes": {
+                "FD27": "FD27 2500",
+                "CRV": "CRV 923 RNW 27 TRK 265 UNTIL 2000 TURN RIGHT DIRECT CRV 2500 HOLD AT CRV LEFT TURN INBOUNDCOURSE 265 LEGTIME 1 FAF FD27 MAP CRV"
+            },
+            "transitions": [
+                {
+                    "name": "PEMOK",
+                    "fixes": {
+                        "PEMOK": "PEMOK",
+                        "D085P": "D085P"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS27",
+            "fixes": {
+                "CI27": "CI27 AT OR ABOVE 2500",
+                "FI27": "FI27 1570 RNW 27 TRK 265 UNTIL 2000 TURN RIGHT DIRECT",
+                "CRV": "CRV 2500 HOLD AT CRV LEFT TURN INBOUNDCOURSE 265 ALT 2500 LEGTIME 1 FAF FI27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "PEMOK",
+                    "fixes": {
+                        "PEMOK": "PEMOK",
+                        "D085P": "D085P TRK 265 UNTIL 7.0 FROM D085P"
+                    }
+                },
+                {
+                    "name": "TITE1",
+                    "fixes": {
+                        "TITEK": "TITEK",
+                        "CRV": "CRV AT OR ABOVE 4000",
+                        "D115H": "OVERFLY D115H AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "TITE2",
+                    "fixes": {
+                        "TITEK": "TITEK",
+                        "CRV": "CRV AT OR ABOVE 4000",
+                        "D120G": "OVERFLY D120G AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

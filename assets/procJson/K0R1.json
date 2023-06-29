@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "FEVIB",
+            "lat": 31.227275,
+            "lon": 87.44743333333334
+        },
+        {
+            "name": "GOKDE",
+            "lat": 30.823688883333332,
+            "lon": 87.44613888333333
+        },
+        {
+            "name": "HELUD",
+            "lat": 31.11035,
+            "lon": 87.44705833333333
+        },
+        {
+            "name": "HEVBU",
+            "lat": 30.923994433333334,
+            "lon": 87.44646111666667
+        },
+        {
+            "name": "JEDAM",
+            "lat": 31.066455566666665,
+            "lon": 87.44691666666667
+        },
+        {
+            "name": "OKVOE",
+            "lat": 30.969183333333334,
+            "lon": 87.44656111666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "FEVIB": "FEVIB AT OR ABOVE 2600",
+                "HELUD": "HELUD 2000",
+                "JEDAM": "JEDAM AT OR ABOVE 1160 RNW 18 TRK 183 UNTIL 613",
+                "GOKDE": "OVERFLY GOKDE AT OR ABOVE 2600 HOLD AT GOKDE RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4 FAF HELUD MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "FEVIB",
+                    "fixes": {
+                        "FEVIB": "FEVIB RIGHT TURN INBOUNDCOURSE 183 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "GOKDE": "GOKDE AT OR ABOVE 2600",
+                "HEVBU": "HEVBU 2000",
+                "OKVOE": "OKVOE AT OR ABOVE 1100 RNW 36 TRK 003 UNTIL 613",
+                "FEVIB": "OVERFLY FEVIB AT OR ABOVE 2600 HOLD AT FEVIB RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4 FAF HEVBU MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "GOKDE",
+                    "fixes": {
+                        "GOKDE": "GOKDE RIGHT TURN INBOUNDCOURSE 003 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

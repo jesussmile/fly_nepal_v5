@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "ASABE",
+            "lat": 46.266736116666664,
+            "lon": 97.66291943333333
+        },
+        {
+            "name": "BUMGE",
+            "lat": 46.178358333333335,
+            "lon": 97.626
+        },
+        {
+            "name": "CORWN",
+            "lat": 46.12971388333333,
+            "lon": 97.605725
+        },
+        {
+            "name": "FILON",
+            "lat": 46.39755,
+            "lon": 97.71779443333334
+        },
+        {
+            "name": "JIMOD",
+            "lat": 46.30155833333333,
+            "lon": 97.6775
+        },
+        {
+            "name": "WASWK",
+            "lat": 46.03368056666667,
+            "lon": 97.56581111666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 16",
+        "RNW 24",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "FILON": "FILON AT OR ABOVE 3500",
+                "JIMOD": "JIMOD 2900",
+                "ASABE": "ASABE AT OR ABOVE 2180 RNW 16 TRK 160 UNTIL 1507",
+                "WASWK": "OVERFLY WASWK AT OR ABOVE 3500 HOLD AT WASWK RIGHT TURN INBOUNDCOURSE 340 LEGDIST 4 FAF JIMOD MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "FILON",
+                    "fixes": {
+                        "FILON": "FILON RIGHT TURN INBOUNDCOURSE 160 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "WASWK": "WASWK AT OR ABOVE 3500",
+                "CORWN": "CORWN 2900",
+                "BUMGE": "BUMGE AT OR ABOVE 1920 RNW 34 TRK 340 UNTIL 1507",
+                "FILON": "OVERFLY FILON AT OR ABOVE 3500 HOLD AT FILON RIGHT TURN INBOUNDCOURSE 160 LEGDIST 4 FAF CORWN MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "WASWK",
+                    "fixes": {
+                        "WASWK": "WASWK RIGHT TURN INBOUNDCOURSE 340 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

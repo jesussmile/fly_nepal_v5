@@ -1,0 +1,205 @@
+{
+    "fixes": [
+        {
+            "name": "APDUL",
+            "lat": 46.273888883333335,
+            "lon": 73.04555556666666
+        },
+        {
+            "name": "AVSOG",
+            "lat": 46.402633333333334,
+            "lon": 72.80854166666667
+        },
+        {
+            "name": "BEXAN",
+            "lat": 46.51850278333333,
+            "lon": 72.53273888333334
+        },
+        {
+            "name": "FF23",
+            "lat": 46.418591666666664,
+            "lon": 72.57675
+        },
+        {
+            "name": "IKNIK",
+            "lat": 46.25639721666667,
+            "lon": 72.79331943333334
+        },
+        {
+            "name": "ILURO",
+            "lat": 46.474913883333336,
+            "lon": 72.42994443333333
+        },
+        {
+            "name": "KAXAT",
+            "lat": 46.3024,
+            "lon": 72.72377221666666
+        },
+        {
+            "name": "MUVGU",
+            "lat": 46.46665278333333,
+            "lon": 72.71144721666667
+        },
+        {
+            "name": "NOVAG",
+            "lat": 46.56199721666667,
+            "lon": 72.63569443333333
+        },
+        {
+            "name": "NOVID",
+            "lat": 46.25225,
+            "lon": 73.22251666666666
+        },
+        {
+            "name": "OLUXA",
+            "lat": 46.44036388333333,
+            "lon": 72.60202221666667
+        },
+        {
+            "name": "ONGOV",
+            "lat": 46.229872216666664,
+            "lon": 72.90713888333333
+        },
+        {
+            "name": "PESAC",
+            "lat": 46.548977783333335,
+            "lon": 72.18691943333333
+        },
+        {
+            "name": "PI001",
+            "lat": 46.40603875,
+            "lon": 72.59900016666667
+        },
+        {
+            "name": "PI002",
+            "lat": 46.398500983333335,
+            "lon": 72.49565023333334
+        },
+        {
+            "name": "PI003",
+            "lat": 46.47407998333333,
+            "lon": 72.47666888333333
+        },
+        {
+            "name": "URPEX",
+            "lat": 46.483175,
+            "lon": 72.56409166666667
+        },
+        {
+            "name": "YRQNB",
+            "lat": 46.36934721666667,
+            "lon": 72.66474443333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "NOVID1",
+            "rnw": "24R",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 05",
+                    "fixes": {
+                        "RNW 05": "RNW 05 HDG 047 UNTIL 700 TURN LEFT DIRECT",
+                        "AVSOG": "AVSOG SPEED 210",
+                        "NOVID": "NOVID AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "rwy": "RNW 23",
+                    "fixes": {
+                        "RNW 23": "RNW 23 HDG 227 UNTIL 700",
+                        "NOVID": "NOVID AT OR ABOVE 4000"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "PESAC2",
+            "rnw": "24R",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 05",
+                    "fixes": {
+                        "RNW 05": "RNW 05 HDG 047 UNTIL 700",
+                        "PESAC": "PESAC AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "rwy": "RNW 23",
+                    "fixes": {
+                        "RNW 23": "RNW 23 HDG 227 UNTIL 700 TURN RIGHT DIRECT",
+                        "MUVGU": "MUVGU SPEED 210",
+                        "PESAC": "PESAC AT OR ABOVE 4000"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB23",
+            "fixes": {
+                "FF23": "FF23 1900",
+                "YRQNB": "YRQNB 400 RNW 23 TRK 247 UNTIL 600 TRK 267 UNTIL 2700 TURN RIGHT DIRECT YRQNB 2700 HOLD AT YRQNB RIGHT TURN INBOUNDCOURSE 247 LEGTIME 1 FAF FF23 MAP YRQ"
+            },
+            "transitions": [
+                {
+                    "name": "YRQ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1900 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1900 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1900 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "IKNIK": "IKNIK AT OR ABOVE 1300",
+                "KAXAT": "KAXAT 1100 RNW 05",
+                "URPEX": "OVERFLY URPEX 2700 HOLD AT URPEX LEFT TURN INBOUNDCOURSE 047 SPEED 250 LEGTIME 1 FAF KAXAT MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "APDUL",
+                    "fixes": {
+                        "APDUL": "APDUL",
+                        "ONGOV": "ONGOV AT OR ABOVE 1400"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "BEXAN": "BEXAN AT OR ABOVE 2700",
+                "OLUXA": "OLUXA 2000 RNW 23 HDG 227 UNTIL 700 TURN RIGHT DIRECT",
+                "NOVAG": "OVERFLY NOVAG 3200 HOLD AT NOVAG RIGHT TURN INBOUNDCOURSE 137 ALT 3200 SPEED 210 LEGTIME 1 FAF OLUXA MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "ILURO",
+                    "fixes": {
+                        "ILURO": "ILURO SPEED 210"
+                    }
+                },
+                {
+                    "name": "NOVAG",
+                    "fixes": {
+                        "NOVAG": "NOVAG SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

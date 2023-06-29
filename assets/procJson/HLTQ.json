@@ -1,0 +1,83 @@
+{
+    "fixes": [
+        {
+            "name": "CD02",
+            "lat": 31.695736116666666,
+            "lon": 23.789819433333335
+        },
+        {
+            "name": "CD20",
+            "lat": 32.04708611666667,
+            "lon": 23.943561116666668
+        },
+        {
+            "name": "FD02",
+            "lat": 31.765813883333333,
+            "lon": 23.842966666666666
+        },
+        {
+            "name": "FD20",
+            "lat": 31.964391666666668,
+            "lon": 23.9299
+        },
+        {
+            "name": "MD02",
+            "lat": 31.821863883333332,
+            "lon": 23.88554166666667
+        },
+        {
+            "name": "MD20",
+            "lat": 31.889963883333333,
+            "lon": 23.917625
+        },
+        {
+            "name": "TBQ",
+            "lat": 31.856886116666665,
+            "lon": 23.912177783333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD02",
+            "fixes": {
+                "CD02": "CD02 AT OR ABOVE 3000",
+                "FD02": "FD02 2250",
+                "MD02": "MD02 1038 RNW 02",
+                "TBQ": "TBQ AT OR ABOVE 1039 TRK 030 UNTIL 2000 TURN LEFT DIRECT TBQ 3000 HOLD AT TBQ RIGHT TURN INBOUNDCOURSE 210 LEGTIME 1 FAF FD02 MAP MD02"
+            },
+            "transitions": [
+                {
+                    "name": "TBQ",
+                    "fixes": {
+                        "TBQ": "TBQ AT OR ABOVE 3000",
+                        "CD02": "CD02 AT OR ABOVE 3000 TRK 255 UNTIL 4.4 FROM CD02"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD20",
+            "fixes": {
+                "CD20": "CD20 AT OR ABOVE 3000",
+                "FD20": "FD20 2450",
+                "MD20": "MD20 931 RNW 20",
+                "TBQ": "TBQ AT OR ABOVE 932 TRK 185 UNTIL 2000 TURN RIGHT DIRECT TBQ 3000 HOLD AT TBQ LEFT TURN INBOUNDCOURSE 005 LEGTIME 1 FAF FD20 MAP MD20"
+            },
+            "transitions": [
+                {
+                    "name": "TBQ",
+                    "fixes": {
+                        "TBQ": "TBQ AT OR ABOVE 3000",
+                        "CD20": "CD20 AT OR ABOVE 3000 TRK 320 UNTIL 4.4 FROM CD20"
+                    }
+                }
+            ]
+        }
+    ]
+}

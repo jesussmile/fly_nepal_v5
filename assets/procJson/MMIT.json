@@ -1,0 +1,94 @@
+{
+    "fixes": [
+        {
+            "name": "35VOR",
+            "lat": 16.5223,
+            "lon": 95.090875
+        },
+        {
+            "name": "CF18",
+            "lat": 16.614119433333332,
+            "lon": 95.08421388333333
+        },
+        {
+            "name": "CF36",
+            "lat": 16.330063883333334,
+            "lon": 95.09027221666666
+        },
+        {
+            "name": "FF18",
+            "lat": 16.564036116666667,
+            "lon": 95.08785
+        },
+        {
+            "name": "FF36",
+            "lat": 16.380241666666667,
+            "lon": 95.09208611666666
+        },
+        {
+            "name": "IZT",
+            "lat": 16.463869433333333,
+            "lon": 95.09511388333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "IZT1A",
+            "rnw": "18",
+            "fixes": {
+                "IZT": "IZT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "IZT1B",
+            "rnw": "36",
+            "fixes": {
+                "IZT": "IZT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "CF18": "CF18 AT OR ABOVE 3000",
+                "FF18": "FF18 2100",
+                "35VOR": "35VOR AT OR ABOVE 1300",
+                "IZT": "IZT 229 RNW 18 TRK 174 UNTIL 7.0 FROM IZT TURN LEFT DIRECT IZT AT OR ABOVE 5000 FAF FF18 MAP IZ"
+            },
+            "transitions": [
+                {
+                    "name": "IZT",
+                    "fixes": {
+                        "IZT": "IZT AT OR ABOVE 5000 TRK 019 UNTIL 9.0 FROM IZT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD36",
+            "fixes": {
+                "CF36": "CF36 AT OR ABOVE 2200",
+                "FF36": "FF36 1300 RNW 36",
+                "IZT": "IZT TRK 000 UNTIL 7.0 FROM IZT TURN RIGHT DIRECT IZT AT OR ABOVE 5000 FAF FF36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "IZT",
+                    "fixes": {
+                        "IZT": "IZT AT OR ABOVE 5000 TRK 153 UNTIL 8.0 FROM IZT"
+                    }
+                }
+            ]
+        }
+    ]
+}

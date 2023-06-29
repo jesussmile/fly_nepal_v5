@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "CUNIV",
+            "lat": 33.95948611666667,
+            "lon": 93.847725
+        },
+        {
+            "name": "JURAV",
+            "lat": 33.908552783333334,
+            "lon": 93.86073888333334
+        },
+        {
+            "name": "KAPGE",
+            "lat": 34.09542221666667,
+            "lon": 93.81292221666666
+        },
+        {
+            "name": "NEPRE",
+            "lat": 34.267116666666666,
+            "lon": 93.63795278333333
+        },
+        {
+            "name": "OVOKY",
+            "lat": 34.21032221666667,
+            "lon": 93.78341388333334
+        },
+        {
+            "name": "SAGJU",
+            "lat": 34.04015,
+            "lon": 93.82708611666666
+        },
+        {
+            "name": "TOYOY",
+            "lat": 33.692258333333335,
+            "lon": 93.91234721666666
+        },
+        {
+            "name": "ULEHI",
+            "lat": 33.79423333333333,
+            "lon": 93.88989166666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "ULEHI": "ULEHI AT OR ABOVE 2500",
+                "JURAV": "JURAV 2200",
+                "CUNIV": "CUNIV AT OR ABOVE 1200 RNW 01 TRK 010 UNTIL 940",
+                "OVOKY": "OVERFLY OVOKY AT OR ABOVE 4000 HOLD AT OVOKY RIGHT TURN INBOUNDCOURSE 190 LEGDIST 4 FAF JURAV MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "TOYOY",
+                    "fixes": {
+                        "TOYOY": "TOYOY"
+                    }
+                },
+                {
+                    "name": "ULEHI",
+                    "fixes": {
+                        "ULEHI": "ULEHI LEFT TURN INBOUNDCOURSE 010 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "OVOKY": "OVOKY AT OR ABOVE 3300",
+                "KAPGE": "KAPGE 2400",
+                "SAGJU": "SAGJU AT OR ABOVE 1320 RNW 19 TRK 190 UNTIL 953",
+                "ULEHI": "OVERFLY ULEHI AT OR ABOVE 3500 HOLD AT ULEHI LEFT TURN INBOUNDCOURSE 010 LEGDIST 4 FAF KAPGE MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "NEPRE",
+                    "fixes": {
+                        "NEPRE": "NEPRE"
+                    }
+                },
+                {
+                    "name": "OVOKY",
+                    "fixes": {
+                        "OVOKY": "OVOKY RIGHT TURN INBOUNDCOURSE 190 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

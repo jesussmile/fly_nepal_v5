@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "CRNNB",
+            "lat": 61.10175,
+            "lon": 155.56864721666668
+        },
+        {
+            "name": "EDDEE",
+            "lat": 60.87148056666667,
+            "lon": 155.57472778333334
+        },
+        {
+            "name": "FN34",
+            "lat": 60.93763056666667,
+            "lon": 155.62273611666666
+        },
+        {
+            "name": "JIXIB",
+            "lat": 61.07475,
+            "lon": 155.5748
+        },
+        {
+            "name": "LIVME",
+            "lat": 60.871155566666665,
+            "lon": 155.26791388333334
+        },
+        {
+            "name": "NICLS",
+            "lat": 60.987825,
+            "lon": 155.57476943333333
+        },
+        {
+            "name": "TOLCI",
+            "lat": 60.871105566666664,
+            "lon": 155.88153888333332
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB34",
+            "fixes": {
+                "FN34": "FN34 4400",
+                "CRNNB": "CRNNB 3580 RNW 34 TRK 354 UNTIL 4200 TURN RIGHT DIRECT CRNNB AT OR ABOVE 5500 HOLD AT CRNNB LEFT TURN INBOUNDCOURSE 354 ALT 8000 SPEED 310 LEGTIME 1 FAF FN34 MAP CRN"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "EDDEE": "EDDEE AT OR ABOVE 4000",
+                "NICLS": "NICLS 3400",
+                "JIXIB": "OVERFLY JIXIB 1736 RNW 34 TRK 345 UNTIL 1965 TURN RIGHT DIRECT",
+                "LIVME": "OVERFLY LIVME 5500 HOLD AT LIVME RIGHT TURN INBOUNDCOURSE 255 LEGDIST 2 FAF NICLS MAP JIXIB"
+            },
+            "transitions": [
+                {
+                    "name": "LIVME",
+                    "fixes": {
+                        "LIVME": "LIVME AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "TOLCI",
+                    "fixes": {
+                        "TOLCI": "TOLCI AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

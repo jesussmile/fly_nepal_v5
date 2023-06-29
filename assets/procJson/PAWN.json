@@ -1,0 +1,95 @@
+{
+    "fixes": [
+        {
+            "name": "COTAD",
+            "lat": 67.47460278333334,
+            "lon": 163.07195556666667
+        },
+        {
+            "name": "FITSU",
+            "lat": 67.36918888333334,
+            "lon": 163.18243611666668
+        },
+        {
+            "name": "FIWWI",
+            "lat": 67.17171943333334,
+            "lon": 163.31022221666666
+        },
+        {
+            "name": "HIBLA",
+            "lat": 67.72124166666667,
+            "lon": 162.47541666666666
+        },
+        {
+            "name": "JENTO",
+            "lat": 67.64682778333334,
+            "lon": 162.88915556666666
+        },
+        {
+            "name": "WANLY",
+            "lat": 67.12752778333333,
+            "lon": 162.69255833333332
+        },
+        {
+            "name": "WEDET",
+            "lat": 67.75443888333334,
+            "lon": 162.77345833333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "FITSU": "FITSU AT OR ABOVE 3400 OVERFLY FITSU AT OR ABOVE 3400 HOLD AT FITSU RIGHT TURN INBOUNDCOURSE 011 LEGDIST 4 FAF COTAD MAP RNW 01",
+                "COTAD": "COTAD 1800 RNW 01 TRK 011 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FITSU",
+                    "fixes": {
+                        "FITSU": "FITSU RIGHT TURN INBOUNDCOURSE 011 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FIWWI",
+                    "fixes": {
+                        "FIWWI": "FIWWI"
+                    }
+                },
+                {
+                    "name": "WANLY",
+                    "fixes": {
+                        "WANLY": "WANLY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "WEDET": "WEDET AT OR ABOVE 4000 OVERFLY WEDET AT OR ABOVE 4000 HOLD AT WEDET RIGHT TURN INBOUNDCOURSE 191 LEGDIST 4 FAF JENTO MAP RNW 19",
+                "JENTO": "JENTO 1800 RNW 19 TRK 191 UNTIL 1700 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HIBLA",
+                    "fixes": {
+                        "HIBLA": "HIBLA"
+                    }
+                },
+                {
+                    "name": "WEDET",
+                    "fixes": {
+                        "WEDET": "WEDET RIGHT TURN INBOUNDCOURSE 191 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

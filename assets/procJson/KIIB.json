@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "BICAB",
+            "lat": 42.345627783333335,
+            "lon": 91.94616943333334
+        },
+        {
+            "name": "CEGNU",
+            "lat": 42.639305566666664,
+            "lon": 91.95012221666667
+        },
+        {
+            "name": "FARVI",
+            "lat": 42.26973056666667,
+            "lon": 91.94515833333334
+        },
+        {
+            "name": "GIVEC",
+            "lat": 42.56858056666667,
+            "lon": 91.94916943333334
+        },
+        {
+            "name": "NADVE",
+            "lat": 42.49276666666667,
+            "lon": 91.94814721666667
+        },
+        {
+            "name": "YENRU",
+            "lat": 42.42265833333333,
+            "lon": 91.94720556666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "CEGNU": "CEGNU AT OR ABOVE 4000",
+                "GIVEC": "GIVEC 3000",
+                "NADVE": "NADVE AT OR ABOVE 1540 RNW 18 TRK 179 UNTIL 1220",
+                "FARVI": "OVERFLY FARVI AT OR ABOVE 4000 HOLD AT FARVI RIGHT TURN INBOUNDCOURSE 359 ALT 4000 LEGDIST 4 FAF GIVEC MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "CEGNU",
+                    "fixes": {
+                        "CEGNU": "CEGNU RIGHT TURN INBOUNDCOURSE 179 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "FARVI": "FARVI AT OR ABOVE 4000",
+                "BICAB": "BICAB 3000",
+                "YENRU": "YENRU AT OR ABOVE 1520 RNW 36 TRK 359 UNTIL 1229",
+                "CEGNU": "OVERFLY CEGNU AT OR ABOVE 4000 HOLD AT CEGNU RIGHT TURN INBOUNDCOURSE 179 ALT 4000 LEGDIST 4 FAF BICAB MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "FARVI",
+                    "fixes": {
+                        "FARVI": "FARVI RIGHT TURN INBOUNDCOURSE 359 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,286 @@
+{
+    "fixes": [
+        {
+            "name": "ANDAD",
+            "lat": 7.494,
+            "lon": 34.727666666666664
+        },
+        {
+            "name": "FF16",
+            "lat": 7.092180566666666,
+            "lon": 35.02989443333333
+        },
+        {
+            "name": "FF34",
+            "lat": 7.217025,
+            "lon": 34.89682221666666
+        },
+        {
+            "name": "GELEP",
+            "lat": 7.250447216666666,
+            "lon": 34.84925556666666
+        },
+        {
+            "name": "JP002",
+            "lat": 7.2045805666666665,
+            "lon": 34.753058333333335
+        },
+        {
+            "name": "JP003",
+            "lat": 7.346186116666667,
+            "lon": 34.89585278333333
+        },
+        {
+            "name": "JP006",
+            "lat": 7.346666666666667,
+            "lon": 34.7535
+        },
+        {
+            "name": "JP009",
+            "lat": 7.275333333333333,
+            "lon": 34.8245
+        },
+        {
+            "name": "JP011",
+            "lat": 7.216,
+            "lon": 34.8835
+        },
+        {
+            "name": "JP362",
+            "lat": 6.962194433333333,
+            "lon": 35.13583333333333
+        },
+        {
+            "name": "JP364",
+            "lat": 7.021638883333333,
+            "lon": 35.076777783333334
+        },
+        {
+            "name": "JP366",
+            "lat": 7.081055566666667,
+            "lon": 35.01772221666667
+        },
+        {
+            "name": "JP369",
+            "lat": 7.092425,
+            "lon": 35.148158333333335
+        },
+        {
+            "name": "JP371",
+            "lat": 6.950841666666666,
+            "lon": 35.00541943333333
+        },
+        {
+            "name": "JP402",
+            "lat": 7.3090055666666665,
+            "lon": 34.909230566666665
+        },
+        {
+            "name": "JPS01",
+            "lat": 7.137980566666666,
+            "lon": 34.95671943333333
+        },
+        {
+            "name": "JPS02",
+            "lat": 7.15545,
+            "lon": 34.94128611666667
+        },
+        {
+            "name": "JPSNB",
+            "lat": 7.1405,
+            "lon": 34.9525
+        },
+        {
+            "name": "KOTIR",
+            "lat": 7.191491666666667,
+            "lon": 34.789686116666665
+        },
+        {
+            "name": "NTL",
+            "lat": 5.908333333333333,
+            "lon": 35.248666666666665
+        },
+        {
+            "name": "REC",
+            "lat": 8.136580566666666,
+            "lon": 34.9273
+        },
+        {
+            "name": "SAFUC",
+            "lat": 6.9030000000000005,
+            "lon": 35.1055
+        },
+        {
+            "name": "TOREM",
+            "lat": 6.6579999999999995,
+            "lon": 34.7755
+        },
+        {
+            "name": "UGETA",
+            "lat": 7.122336116666666,
+            "lon": 35.77283611666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "GELE1A",
+            "rnw": "16",
+            "fixes": {
+                "GELEP": "GELEP"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "NTL",
+                    "fixes": [
+                        "OVERFLY",
+                        "TOREM",
+                        "NTL"
+                    ]
+                },
+                {
+                    "name": "REC1A",
+                    "fixes": [
+                        "REC"
+                    ]
+                },
+                {
+                    "name": "REC1B",
+                    "fixes": [
+                        "ANDAD",
+                        "REC"
+                    ]
+                },
+                {
+                    "name": "SAFUC",
+                    "fixes": [
+                        "OVERFLY",
+                        "SAFUC"
+                    ]
+                },
+                {
+                    "name": "UGETA",
+                    "fixes": [
+                        "OVERFLY",
+                        "UGETA"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OMNI",
+            "rnw": "16",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 16",
+                    "fixes": {
+                        "RNW 16": "RNW 16 TRK 157 UNTIL 1500 HDG 157 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 34",
+                    "fixes": {
+                        "RNW 34": "RNW 34 TRK 337 UNTIL 1500 HDG 337 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBY16",
+            "fixes": {
+                "FF16": "FF16 1900",
+                "JPS01": "OVERFLY JPS01 265",
+                "JPSNB": "OVERFLY JPSNB AT OR ABOVE 620 RNW 16 HDG 143 UNTIL 2500 TURN LEFT DIRECT JPSNB AT OR ABOVE 3000 SPEED 230 HOLD AT JPSNB RIGHT TURN INBOUNDCOURSE 345 ALT 3000 LEGTIME 1 FAF FF16 MAP JPS"
+            },
+            "transitions": [
+                {
+                    "name": "JPS",
+                    "fixes": {
+                        "JPSNB": "JPSNB AT OR ABOVE 3000 SPEED 210 TRK 342 UNTIL 8.8 FROM JPSNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBZ34",
+            "fixes": {
+                "FF34": "FF34 1700",
+                "JPS02": "JPS02 259 RNW 34 HDG 345 UNTIL 2500 TURN RIGHT DIRECT",
+                "JPSNB": "JPSNB AT OR ABOVE 3000 SPEED 230 HOLD AT JPSNB RIGHT TURN INBOUNDCOURSE 183 ALT 3000 LEGTIME 1 FAF FF34 MAP JPS02"
+            },
+            "transitions": [
+                {
+                    "name": "JPS",
+                    "fixes": {
+                        "JPSNB": "JPSNB AT OR ABOVE 3000 SPEED 210 TRK 183 UNTIL 9.3 FROM JPSNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "JP364": "JP364 AT OR ABOVE 2000",
+                "JP366": "JP366 1860 RNW 16 HDG 156 UNTIL 2500 TURN LEFT DIRECT",
+                "JP371": "OVERFLY JP371 AT OR ABOVE 3100 HOLD AT JP371 RIGHT TURN INBOUNDCOURSE 246 ALT 3100 LEGTIME 1 FAF JP366 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "JP362",
+                    "fixes": {
+                        "JP362": "JP362 AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "JP369",
+                    "fixes": {
+                        "JP369": "JP369 AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "JP371",
+                    "fixes": {
+                        "JP371": "JP371 AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "JP009": "JP009 AT OR ABOVE 2000",
+                "JP011": "JP011 1850 RNW 34 HDG 336 UNTIL 2500 TURN RIGHT DIRECT",
+                "JP002": "OVERFLY JP002 AT OR ABOVE 3000 HOLD AT JP002 LEFT TURN INBOUNDCOURSE 246 ALT 3000 LEGTIME 1 FAF JP011 MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "JP002",
+                    "fixes": {
+                        "JP002": "JP002 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "JP003",
+                    "fixes": {
+                        "JP003": "JP003 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "JP006",
+                    "fixes": {
+                        "JP006": "JP006 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

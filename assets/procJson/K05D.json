@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CIPAR",
+            "lat": 48.03574166666667,
+            "lon": 102.58963056666667
+        },
+        {
+            "name": "FILIM",
+            "lat": 48.001227783333334,
+            "lon": 102.53288056666666
+        },
+        {
+            "name": "HOLGA",
+            "lat": 47.93949166666667,
+            "lon": 102.43163888333333
+        },
+        {
+            "name": "JAMTU",
+            "lat": 48.102572216666665,
+            "lon": 102.69997778333334
+        },
+        {
+            "name": "JOLBA",
+            "lat": 47.900477783333336,
+            "lon": 102.36784443333333
+        },
+        {
+            "name": "SUSUE",
+            "lat": 47.83351666666667,
+            "lon": 102.25861388333334
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "JAMTU": "JAMTU AT OR ABOVE 4500",
+                "CIPAR": "CIPAR 3800",
+                "FILIM": "FILIM AT OR ABOVE 2800 RNW 12 TRK 125 UNTIL 2324",
+                "SUSUE": "OVERFLY SUSUE AT OR ABOVE 4500 HOLD AT SUSUE RIGHT TURN INBOUNDCOURSE 305 LEGDIST 5 FAF CIPAR MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "JAMTU",
+                    "fixes": {
+                        "JAMTU": "JAMTU RIGHT TURN INBOUNDCOURSE 125 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "SUSUE": "SUSUE AT OR ABOVE 4500",
+                "JOLBA": "JOLBA 3800",
+                "HOLGA": "HOLGA AT OR ABOVE 2680 RNW 30 TRK 305 UNTIL 2324",
+                "JAMTU": "OVERFLY JAMTU AT OR ABOVE 4500 HOLD AT JAMTU RIGHT TURN INBOUNDCOURSE 125 LEGDIST 5 FAF JOLBA MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "SUSUE",
+                    "fixes": {
+                        "SUSUE": "SUSUE RIGHT TURN INBOUNDCOURSE 305 ALT 4500 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,238 @@
+{
+    "fixes": [
+        {
+            "name": "20DME",
+            "lat": 11.148286116666666,
+            "lon": 60.782327783333336
+        },
+        {
+            "name": "CI11",
+            "lat": 11.163169433333334,
+            "lon": 61.01915556666667
+        },
+        {
+            "name": "CQ11",
+            "lat": 11.170655566666667,
+            "lon": 60.967230566666665
+        },
+        {
+            "name": "CQ29",
+            "lat": 11.150002783333333,
+            "lon": 60.680613883333336
+        },
+        {
+            "name": "DEBOP",
+            "lat": 11.136316666666668,
+            "lon": 60.64860278333333
+        },
+        {
+            "name": "ERDID",
+            "lat": 11.062505566666667,
+            "lon": 61.02013611666667
+        },
+        {
+            "name": "FN11",
+            "lat": 11.163827783333334,
+            "lon": 60.927875
+        },
+        {
+            "name": "FN29",
+            "lat": 11.149502783333332,
+            "lon": 60.71088888333333
+        },
+        {
+            "name": "FQ11",
+            "lat": 11.161933333333334,
+            "lon": 60.91701388333333
+        },
+        {
+            "name": "FQ29",
+            "lat": 11.148861116666666,
+            "lon": 60.74842221666667
+        },
+        {
+            "name": "MQ29",
+            "lat": 11.147705566666666,
+            "lon": 60.816175
+        },
+        {
+            "name": "NOTEL",
+            "lat": 11.156605566666666,
+            "lon": 60.928147216666666
+        },
+        {
+            "name": "OTMIG",
+            "lat": 11.036130566666667,
+            "lon": 60.656047216666664
+        },
+        {
+            "name": "PIBNA",
+            "lat": 11.262877783333334,
+            "lon": 61.00525833333333
+        },
+        {
+            "name": "SASIM",
+            "lat": 11.162691666666667,
+            "lon": 61.0127
+        },
+        {
+            "name": "TABNB",
+            "lat": 11.147411116666667,
+            "lon": 60.833525
+        },
+        {
+            "name": "TASRU",
+            "lat": 11.236502783333334,
+            "lon": 60.64115556666667
+        },
+        {
+            "name": "VIDLI",
+            "lat": 11.128888883333333,
+            "lon": 60.547158333333336
+        },
+        {
+            "name": "VODAN",
+            "lat": 11.142480566666666,
+            "lon": 60.73314443333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY11",
+            "fixes": {
+                "CI11": "CI11 AT OR ABOVE 1700",
+                "NOTEL": "NOTEL 1700 RNW 11 TRK 109 UNTIL 2000 TURN RIGHT DIRECT",
+                "TABNB": "TABNB AT OR ABOVE 3000 FAF NOTEL MAP RNW 11"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILSZ11",
+            "fixes": {
+                "CI11": "CI11 AT OR ABOVE 1700",
+                "NOTEL": "NOTEL 1700 RNW 11 TRK 109 UNTIL 2000 TURN RIGHT DIRECT",
+                "TABNB": "TABNB AT OR ABOVE 3000 FAF NOTEL MAP RNW 11"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FN11": "FN11 1700 RNW 11",
+                "TABNB": "OVERFLY TABNB TRK 115 UNTIL 2000 TURN RIGHT DIRECT TABNB AT OR ABOVE 3000 FAF FN11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "TAB1",
+                    "fixes": {
+                        "TABNB": "TABNB RIGHT TURN INBOUNDCOURSE 115 ALT 1700 LEGTIME 2"
+                    }
+                },
+                {
+                    "name": "TAB2",
+                    "fixes": {
+                        "TABNB": "TABNB RIGHT TURN INBOUNDCOURSE 115 ALT 1700 LEGTIME 3"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FN29": "FN29 2100 RNW 29",
+                "TABNB": "OVERFLY TABNB TRK 284 UNTIL 2000 TURN RIGHT DIRECT TABNB AT OR ABOVE 3000 FAF FN29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "TAB",
+                    "fixes": {
+                        "TABNB": "TABNB AT OR ABOVE 3000 TRK 127 UNTIL 8.8 FROM TABNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD11",
+            "fixes": {
+                "CQ11": "CQ11 AT OR ABOVE 1700",
+                "FQ11": "FQ11 1500 RNW 11 TRK 115 UNTIL 2000 TURN RIGHT DIRECT",
+                "TABNB": "TABNB AT OR ABOVE 3000 FAF FQ11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "TAB",
+                    "fixes": {
+                        "TABNB": "TABNB RIGHT TURN INBOUNDCOURSE 115 ALT 1700 LEGDIST 9"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD29",
+            "fixes": {
+                "CQ29": "CQ29 AT OR ABOVE 2100",
+                "FQ29": "FQ29 1400",
+                "20DME": "20DME AT OR ABOVE 550",
+                "MQ29": "MQ29 140 RNW 29 TRK 284 UNTIL 2000 TURN RIGHT DIRECT",
+                "TABNB": "TABNB AT OR ABOVE 3000 FAF FQ29 MAP MQ29"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "SASIM": "SASIM AT OR ABOVE 2300",
+                "NOTEL": "NOTEL 1700 RNW 11 TRK 109 UNTIL 1000 TURN RIGHT DIRECT",
+                "ERDID": "ERDID AT OR ABOVE 3000 HOLD AT ERDID LEFT TURN INBOUNDCOURSE 019 ALT 3000 LEGTIME 1 FAF NOTEL MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "ERDID",
+                    "fixes": {
+                        "ERDID": "ERDID AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "PIBNA",
+                    "fixes": {
+                        "PIBNA": "PIBNA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "DEBOP": "DEBOP AT OR ABOVE 2300",
+                "VODAN": "VODAN 1700 RNW 29 TRK 289 UNTIL 1000 TURN LEFT DIRECT",
+                "OTMIG": "OTMIG AT OR ABOVE 3000 HOLD AT OTMIG RIGHT TURN INBOUNDCOURSE 019 ALT 3000 LEGTIME 1 FAF VODAN MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "OTMIG",
+                    "fixes": {
+                        "OTMIG": "OTMIG AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "TASRU",
+                    "fixes": {
+                        "TASRU": "TASRU AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "VIDLI",
+                    "fixes": {
+                        "VIDLI": "VIDLI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

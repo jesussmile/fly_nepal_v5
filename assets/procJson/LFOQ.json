@@ -1,0 +1,209 @@
+{
+    "fixes": [
+        {
+            "name": "AMBNB",
+            "lat": 47.418166666666664,
+            "lon": 1.041
+        },
+        {
+            "name": "BABOG",
+            "lat": 47.51416666666667,
+            "lon": 1.3694166666666667
+        },
+        {
+            "name": "BALIV",
+            "lat": 47.67013888333334,
+            "lon": 1.5115833333333333
+        },
+        {
+            "name": "BARAX",
+            "lat": 47.541333333333334,
+            "lon": 1.5386388833333333
+        },
+        {
+            "name": "BLBNB",
+            "lat": 47.67394443333333,
+            "lon": 1.2024722166666666
+        },
+        {
+            "name": "CAD",
+            "lat": 48.05916666666667,
+            "lon": 1.3870833333333334
+        },
+        {
+            "name": "EN30",
+            "lat": 47.67162221666667,
+            "lon": 1.2137083333333334
+        },
+        {
+            "name": "FN30",
+            "lat": 47.652125,
+            "lon": 1.3078527833333333
+        },
+        {
+            "name": "FOQ12",
+            "lat": 47.72655556666667,
+            "lon": 1.0926388833333334
+        },
+        {
+            "name": "FOQ30",
+            "lat": 47.63011111666667,
+            "lon": 1.3257777833333333
+        },
+        {
+            "name": "IOQ12",
+            "lat": 47.76986111666667,
+            "lon": 0.9871944333333332
+        },
+        {
+            "name": "IOQ30",
+            "lat": 47.58469443333333,
+            "lon": 1.4348611166666667
+        },
+        {
+            "name": "OQ403",
+            "lat": 47.624583333333334,
+            "lon": 1.4706388833333333
+        },
+        {
+            "name": "OQ420",
+            "lat": 47.69255556666667,
+            "lon": 1.1749722166666667
+        },
+        {
+            "name": "OQ421",
+            "lat": 47.56338888333333,
+            "lon": 1.2133333333333334
+        },
+        {
+            "name": "OQ502",
+            "lat": 47.82633333333333,
+            "lon": 0.8491944333333333
+        },
+        {
+            "name": "OQ503",
+            "lat": 47.88616666666667,
+            "lon": 0.9030555666666668
+        },
+        {
+            "name": "OQ504",
+            "lat": 47.7535,
+            "lon": 1.1721666666666666
+        },
+        {
+            "name": "OQ505",
+            "lat": 47.68027778333333,
+            "lon": 1.2945555666666666
+        },
+        {
+            "name": "OQ520",
+            "lat": 47.65530556666667,
+            "lon": 1.2650555666666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 12",
+        "RNW 20",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB30",
+            "fixes": {
+                "FN30": "FN30 1700",
+                "EN30": "OVERFLY EN30 431",
+                "BLBNB": "OVERFLY BLBNB AT OR ABOVE 800 RNW 30 TRK 286 UNTIL 1300 TURN RIGHT DIRECT BLBNB 1700 FAF FN30 MAP BLB"
+            },
+            "transitions": [
+                {
+                    "name": "AMB",
+                    "fixes": {
+                        "AMBNB": "AMBNB",
+                        "BLBNB": "BLBNB AT OR ABOVE 1700 TRK 121 UNTIL 6.3 FROM BLBNB"
+                    }
+                },
+                {
+                    "name": "BLB",
+                    "fixes": {
+                        "BLBNB": "BLBNB AT OR ABOVE 1700 TRK 121 UNTIL 6.3 FROM BLBNB"
+                    }
+                },
+                {
+                    "name": "CAD",
+                    "fixes": {
+                        "CAD": "CAD",
+                        "BLBNB": "BLBNB AT OR ABOVE 1700 TRK 121 UNTIL 6.3 FROM BLBNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "IOQ12": "IOQ12 AT OR ABOVE 2100",
+                "FOQ12": "FOQ12 2100 RNW 12",
+                "OQ520": "OQ520 SPEED 230",
+                "BABOG": "OVERFLY BABOG AT OR ABOVE 2500 SPEED 230 HOLD AT BABOG LEFT TURN INBOUNDCOURSE 031 ALT 2500 SPEED 230 LEGTIME 1 FAF FOQ12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "BABOG",
+                    "fixes": {
+                        "BABOG": "BABOG AT OR BELOW 4000 AT OR ABOVE 2500 SPEED 230",
+                        "OQ505": "OQ505",
+                        "OQ504": "OQ504 AT OR BELOW 3000 AT OR ABOVE 2100",
+                        "OQ503": "OQ503 AT OR BELOW 2500 AT OR ABOVE 2100 SPEED 200",
+                        "OQ502": "OQ502 SPEED 200"
+                    }
+                },
+                {
+                    "name": "OQ502",
+                    "fixes": {
+                        "OQ502": "OQ502 AT OR BELOW 2500 AT OR ABOVE 2100 SPEED 200"
+                    }
+                },
+                {
+                    "name": "OQ503",
+                    "fixes": {
+                        "OQ503": "OQ503 AT OR BELOW 2500 AT OR ABOVE 2100 SPEED 200",
+                        "OQ502": "OQ502 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "IOQ30": "IOQ30 AT OR ABOVE 2100",
+                "FOQ30": "FOQ30 2100 RNW 30",
+                "OQ420": "OVERFLY OQ420 TURN LEFT DIRECT",
+                "OQ421": "OQ421 SPEED 190",
+                "BABOG": "BABOG AT OR ABOVE 2500 SPEED 210 FAF FOQ30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "BABOG",
+                    "fixes": {
+                        "BABOG": "BABOG AT OR BELOW 4000 AT OR ABOVE 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "BALIV",
+                    "fixes": {
+                        "BALIV": "BALIV AT OR BELOW 5000 AT OR ABOVE 3800 SPEED 220",
+                        "OQ403": "OQ403 AT OR BELOW 4500 AT OR ABOVE 3100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "BARAX",
+                    "fixes": {
+                        "BARAX": "BARAX AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

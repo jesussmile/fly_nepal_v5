@@ -1,0 +1,184 @@
+{
+    "fixes": [
+        {
+            "name": "AMOSE",
+            "lat": 40.84487778333333,
+            "lon": 81.779075
+        },
+        {
+            "name": "BSV",
+            "lat": 40.74070556666667,
+            "lon": 81.43211666666667
+        },
+        {
+            "name": "COMWE",
+            "lat": 40.87475833333333,
+            "lon": 81.76867778333333
+        },
+        {
+            "name": "COPAK",
+            "lat": 40.874833333333335,
+            "lon": 81.94598333333333
+        },
+        {
+            "name": "DEHYY",
+            "lat": 40.87451943333333,
+            "lon": 81.63601388333333
+        },
+        {
+            "name": "EBEKY",
+            "lat": 40.791133333333335,
+            "lon": 81.63635833333333
+        },
+        {
+            "name": "FESEK",
+            "lat": 40.7912,
+            "lon": 82.14209443333333
+        },
+        {
+            "name": "GIMMU",
+            "lat": 40.95790278333333,
+            "lon": 81.63566943333333
+        },
+        {
+            "name": "HENKO",
+            "lat": 40.874822216666665,
+            "lon": 81.835725
+        },
+        {
+            "name": "JAVNE",
+            "lat": 40.87458611666667,
+            "lon": 82.1424
+        },
+        {
+            "name": "PI001",
+            "lat": 40.923974933333334,
+            "lon": 82.08046928333333
+        },
+        {
+            "name": "PI002",
+            "lat": 40.98782238333333,
+            "lon": 82.12357191666666
+        },
+        {
+            "name": "PI003",
+            "lat": 40.95728486666667,
+            "lon": 82.21693568333333
+        },
+        {
+            "name": "PONOC",
+            "lat": 40.95796943333333,
+            "lon": 82.14270833333333
+        },
+        {
+            "name": "PTATO",
+            "lat": 40.90597221666667,
+            "lon": 82.00704443333333
+        },
+        {
+            "name": "TONSR",
+            "lat": 40.87478888333333,
+            "lon": 82.00976388333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD10",
+            "fixes": {
+                "PTATO": "PTATO 2800 RNW 10",
+                "BSV": "BSV AT OR ABOVE 2800 HOLD AT BSV RIGHT TURN INBOUNDCOURSE 296 LEGTIME 1 FAF PTATO MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "BSV",
+                    "fixes": {
+                        "BSV": "BSV",
+                        "PTATO": "PTATO AT OR ABOVE 2800",
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD28",
+            "fixes": {
+                "BSV": "BSV AT OR ABOVE 2800 BSV HOLD AT BSV RIGHT TURN INBOUNDCOURSE 296 LEGTIME 1 FAF AMOSE MAP RNW 28",
+                "AMOSE": "AMOSE 2800 RNW 28 TRK 296 UNTIL 2800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BSV",
+                    "fixes": {
+                        "BSV": "BSV RIGHT TURN INBOUNDCOURSE 296 ALT 2800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "JAVNE": "JAVNE AT OR ABOVE 3000",
+                "TONSR": "TONSR 2800",
+                "COPAK": "COPAK AT OR ABOVE 1860 RNW 10",
+                "DEHYY": "OVERFLY DEHYY AT OR ABOVE 3000 HOLD AT DEHYY RIGHT TURN INBOUNDCOURSE 277 LEGDIST 6 FAF TONSR MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "FESEK",
+                    "fixes": {
+                        "FESEK": "FESEK AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "JAVNE",
+                    "fixes": {
+                        "JAVNE": "JAVNE RIGHT TURN INBOUNDCOURSE 097 ALT 3000 LEGDIST 6"
+                    }
+                },
+                {
+                    "name": "PONOC",
+                    "fixes": {
+                        "PONOC": "PONOC AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "DEHYY": "DEHYY AT OR ABOVE 3000",
+                "COMWE": "COMWE 2800",
+                "HENKO": "HENKO AT OR ABOVE 1800 RNW 28",
+                "JAVNE": "OVERFLY JAVNE AT OR ABOVE 3000 HOLD AT JAVNE RIGHT TURN INBOUNDCOURSE 097 LEGDIST 6 FAF COMWE MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "DEHYY",
+                    "fixes": {
+                        "DEHYY": "DEHYY RIGHT TURN INBOUNDCOURSE 277 ALT 3000 LEGDIST 6"
+                    }
+                },
+                {
+                    "name": "EBEKY",
+                    "fixes": {
+                        "EBEKY": "EBEKY AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "GIMMU",
+                    "fixes": {
+                        "GIMMU": "GIMMU AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        }
+    ]
+}

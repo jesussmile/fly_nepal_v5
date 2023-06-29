@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "ALARM",
+            "lat": 38.363391666666665,
+            "lon": 101.74972778333333
+        },
+        {
+            "name": "BLATS",
+            "lat": 38.41622778333333,
+            "lon": 101.74993888333333
+        },
+        {
+            "name": "CESTO",
+            "lat": 38.279972216666664,
+            "lon": 101.74939443333334
+        },
+        {
+            "name": "DAPKE",
+            "lat": 38.539858333333335,
+            "lon": 101.75043333333333
+        },
+        {
+            "name": "ELOSE",
+            "lat": 38.623275,
+            "lon": 101.75076943333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "ELOSE": "ELOSE AT OR ABOVE 6000",
+                "DAPKE": "DAPKE 5200 RNW 17 TRK 173 UNTIL 4010",
+                "CESTO": "OVERFLY CESTO AT OR ABOVE 6000 HOLD AT CESTO RIGHT TURN INBOUNDCOURSE 353 LEGDIST 5 FAF DAPKE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ELOSE",
+                    "fixes": {
+                        "ELOSE": "ELOSE RIGHT TURN INBOUNDCOURSE 173 ALT 6000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "CESTO": "CESTO AT OR ABOVE 6000",
+                "ALARM": "ALARM 5200",
+                "BLATS": "BLATS AT OR ABOVE 4180 RNW 35 TRK 353 UNTIL 3860",
+                "ELOSE": "OVERFLY ELOSE AT OR ABOVE 6000 HOLD AT ELOSE RIGHT TURN INBOUNDCOURSE 173 LEGDIST 5 FAF ALARM MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "CESTO",
+                    "fixes": {
+                        "CESTO": "CESTO RIGHT TURN INBOUNDCOURSE 353 ALT 6000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

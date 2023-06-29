@@ -1,0 +1,291 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 0.043657383333333334,
+            "lon": 77.06467286666667
+        },
+        {
+            "name": "AF002",
+            "lat": 0.0060545166666666666,
+            "lon": 77.05023831666666
+        },
+        {
+            "name": "AF003",
+            "lat": 0.06330156666666667,
+            "lon": 77.06920818333333
+        },
+        {
+            "name": "AF004",
+            "lat": 0.015192983333333333,
+            "lon": 77.05449968333333
+        },
+        {
+            "name": "BAQUI",
+            "lat": 0.052777783333333335,
+            "lon": 77.43722221666667
+        },
+        {
+            "name": "CF24",
+            "lat": 0.172725,
+            "lon": 76.76304443333333
+        },
+        {
+            "name": "CI06",
+            "lat": 0.007922216666666667,
+            "lon": 76.98217221666667
+        },
+        {
+            "name": "CS06",
+            "lat": 0.0013666666666666666,
+            "lon": 76.98892221666667
+        },
+        {
+            "name": "CS06Y",
+            "lat": 0.011447216666666668,
+            "lon": 76.97563611666666
+        },
+        {
+            "name": "D058E",
+            "lat": 0.15256388333333334,
+            "lon": 76.78961943333333
+        },
+        {
+            "name": "D238M",
+            "lat": 0.028869433333333337,
+            "lon": 77.02878333333334
+        },
+        {
+            "name": "D270O",
+            "lat": 0.08103333333333333,
+            "lon": 77.104725
+        },
+        {
+            "name": "D278O",
+            "lat": 0.11657221666666667,
+            "lon": 77.10519721666667
+        },
+        {
+            "name": "FI06",
+            "lat": 0.027897216666666665,
+            "lon": 76.95546111666667
+        },
+        {
+            "name": "FS06",
+            "lat": 0.02354166666666667,
+            "lon": 76.95969166666667
+        },
+        {
+            "name": "FS24",
+            "lat": 0.16163611666666666,
+            "lon": 76.77766111666666
+        },
+        {
+            "name": "LAV",
+            "lat": 0.10216666666666667,
+            "lon": 76.85605556666667
+        },
+        {
+            "name": "LAV06",
+            "lat": 0.12477221666666667,
+            "lon": 76.75879166666667
+        },
+        {
+            "name": "LAV07",
+            "lat": 0.12853888333333333,
+            "lon": 76.74258056666666
+        },
+        {
+            "name": "LAV09",
+            "lat": 0.06825556666666667,
+            "lon": 77.00195
+        },
+        {
+            "name": "LAV15",
+            "lat": 0.04903056666666667,
+            "lon": 77.05535833333333
+        },
+        {
+            "name": "LAV25",
+            "lat": 0.06566943333333333,
+            "lon": 77.27039721666667
+        },
+        {
+            "name": "MS06",
+            "lat": 0.07091666666666667,
+            "lon": 76.89724443333333
+        },
+        {
+            "name": "MS24",
+            "lat": 0.11325278333333334,
+            "lon": 76.84143888333334
+        },
+        {
+            "name": "NEVDO",
+            "lat": 0.13583333333333333,
+            "lon": 77.43833333333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "LAV2A",
+            "rnw": "24",
+            "fixes": {
+                "LAV15": "LAV15 AT OR ABOVE 5000",
+                "LAV25": "LAV25 AT OR ABOVE 10000",
+                "BAQUI": "BAQUI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LAV3",
+            "rnw": "06",
+            "fixes": {
+                "LAV": "LAV AT OR ABOVE 3000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDY06",
+            "fixes": {
+                "CS06Y": "CS06Y AT OR ABOVE 3000",
+                "FS06": "FS06 3000",
+                "MS06": "MS06 1507 RNW 06",
+                "D058E": "OVERFLY D058E AT OR ABOVE 2200 TURN RIGHT DIRECT",
+                "LAV": "LAV AT OR ABOVE 3000 HOLD AT LAV RIGHT TURN INBOUNDCOURSE 262 ALT 3000 LEGTIME 1 FAF FS06 MAP MS06"
+            },
+            "transitions": [
+                {
+                    "name": "LAV",
+                    "fixes": {
+                        "LAV": "LAV AT OR ABOVE 3000 SPEED 210",
+                        "LAV09": "OVERFLY LAV09 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ06",
+            "fixes": {
+                "CS06": "CS06 AT OR ABOVE 3000",
+                "FS06": "FS06 3000",
+                "MS06": "MS06 1507 RNW 06",
+                "D058E": "OVERFLY D058E AT OR ABOVE 2200 TURN RIGHT DIRECT",
+                "LAV": "LAV AT OR ABOVE 3000 HOLD AT LAV RIGHT TURN INBOUNDCOURSE 262 ALT 3000 LEGTIME 1 FAF FS06 MAP MS06"
+            },
+            "transitions": [
+                {
+                    "name": "BAQUI",
+                    "fixes": {
+                        "BAQUI": "BAQUI",
+                        "D270O": "D270O AT OR ABOVE 6000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D238M": "D238M"
+                    }
+                },
+                {
+                    "name": "NEVDO",
+                    "fixes": {
+                        "NEVDO": "NEVDO",
+                        "D278O": "D278O AT OR ABOVE 6000",
+                        "AF003": "AF003",
+                        "AF004": "AF004",
+                        "D238M": "D238M"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ24",
+            "fixes": {
+                "FS24": "FS24 3000",
+                "MS24": "MS24 1488 RNW 24",
+                "LAV": "LAV TRK 238 UNTIL 5.0 FROM LAV TURN RIGHT DIRECT LAV AT OR ABOVE 3000 HOLD AT LAV LEFT TURN INBOUNDCOURSE 082 ALT 3000 LEGTIME 1 FAF FS24 MAP MS24"
+            },
+            "transitions": [
+                {
+                    "name": "LAV",
+                    "fixes": {
+                        "LAV": "LAV AT OR ABOVE 3000 SPEED 210",
+                        "LAV06": "OVERFLY LAV06 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY06",
+            "fixes": {
+                "CI06": "CI06 AT OR ABOVE 2900",
+                "FI06": "FI06 2900 RNW 06",
+                "D058E": "OVERFLY D058E AT OR ABOVE 2200 TURN RIGHT DIRECT",
+                "LAV": "LAV AT OR ABOVE 3000 HOLD AT LAV RIGHT TURN INBOUNDCOURSE 262 ALT 3000 LEGTIME 1 FAF FI06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "LAV",
+                    "fixes": {
+                        "LAV": "LAV AT OR ABOVE 3000 SPEED 210 TRK 262 UNTIL 9.0 FROM LAV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ06",
+            "fixes": {
+                "CI06": "CI06 AT OR ABOVE 2900 SPEED 210",
+                "FI06": "FI06 2900 RNW 06",
+                "D058E": "OVERFLY D058E AT OR ABOVE 2200 TURN RIGHT DIRECT",
+                "LAV": "LAV AT OR ABOVE 3000 HOLD AT LAV RIGHT TURN INBOUNDCOURSE 262 ALT 3000 LEGTIME 1 FAF FI06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "BAQUI",
+                    "fixes": {
+                        "BAQUI": "BAQUI",
+                        "D270O": "D270O AT OR ABOVE 6000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D238M": "D238M"
+                    }
+                },
+                {
+                    "name": "NEVDO",
+                    "fixes": {
+                        "NEVDO": "NEVDO",
+                        "D278O": "D278O AT OR ABOVE 6000",
+                        "AF003": "AF003",
+                        "AF004": "AF004",
+                        "D238M": "D238M"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY24",
+            "fixes": {
+                "CF24": "CF24 AT OR ABOVE 3000",
+                "FS24": "FS24 3000",
+                "LAV": "LAV 1138 RNW 24 TRK 238 UNTIL 5.0 FROM LAV TURN RIGHT DIRECT LAV AT OR ABOVE 3000 HOLD AT LAV LEFT TURN INBOUNDCOURSE 082 ALT 3000 LEGTIME 1 FAF FS24 MAP LAV"
+            },
+            "transitions": [
+                {
+                    "name": "LAV",
+                    "fixes": {
+                        "LAV": "LAV AT OR ABOVE 3000 SPEED 210",
+                        "LAV07": "OVERFLY LAV07 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

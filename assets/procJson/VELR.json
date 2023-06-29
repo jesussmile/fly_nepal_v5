@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "40VOR",
+            "lat": 27.24799721666667,
+            "lon": 94.04321666666667
+        },
+        {
+            "name": "CD04",
+            "lat": 27.156719433333333,
+            "lon": 93.93393888333334
+        },
+        {
+            "name": "CD22",
+            "lat": 27.444891666666667,
+            "lon": 94.24540833333333
+        },
+        {
+            "name": "D077N",
+            "lat": 27.348058333333334,
+            "lon": 94.35270833333334
+        },
+        {
+            "name": "D175N",
+            "lat": 27.06088056666667,
+            "lon": 94.12518333333334
+        },
+        {
+            "name": "DRG",
+            "lat": 27.488388883333332,
+            "lon": 95.02066666666667
+        },
+        {
+            "name": "FD04",
+            "lat": 27.216061116666665,
+            "lon": 94.00495
+        },
+        {
+            "name": "FD22",
+            "lat": 27.381875,
+            "lon": 94.18390833333333
+        },
+        {
+            "name": "JJT",
+            "lat": 26.72355556666667,
+            "lon": 94.16449721666666
+        },
+        {
+            "name": "LBR",
+            "lat": 27.293602783333334,
+            "lon": 94.097925
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD04",
+            "fixes": {
+                "CD04": "CD04 AT OR ABOVE 3400",
+                "FD04": "FD04 2400",
+                "40VOR": "40VOR AT OR ABOVE 1500 RNW 04",
+                "LBR": "OVERFLY LBR TURN RIGHT HDG 205 INTERCEPT RADIAL 175 TO",
+                "D175N": "D175N D175N 3400 HOLD AT D175N RIGHT TURN INBOUNDCOURSE 355 ALT 3400 LEGTIME 1 FAF FD04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "DRG",
+                    "fixes": {
+                        "DRG": "DRG",
+                        "D077N": "D077N"
+                    }
+                },
+                {
+                    "name": "JJT",
+                    "fixes": {
+                        "JJT": "JJT",
+                        "D175N": "D175N"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD22",
+            "fixes": {
+                "CD22": "CD22 AT OR ABOVE 3400",
+                "FD22": "FD22 2400 RNW 22",
+                "LBR": "OVERFLY LBR",
+                "D175N": "D175N 3400 HOLD AT D175N RIGHT TURN INBOUNDCOURSE 355 ALT 3400 LEGTIME 1 FAF FD22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "DRG",
+                    "fixes": {
+                        "DRG": "DRG",
+                        "D077N": "D077N"
+                    }
+                },
+                {
+                    "name": "JJT",
+                    "fixes": {
+                        "JJT": "JJT",
+                        "D175N": "D175N"
+                    }
+                }
+            ]
+        }
+    ]
+}

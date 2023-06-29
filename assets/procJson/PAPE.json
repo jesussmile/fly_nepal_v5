@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "CILAC",
+            "lat": 55.666666666666664,
+            "lon": 159.5
+        },
+        {
+            "name": "ECALI",
+            "lat": 55.818305566666666,
+            "lon": 159.30762778333334
+        },
+        {
+            "name": "GESSE",
+            "lat": 55.538105566666665,
+            "lon": 159.87788333333333
+        },
+        {
+            "name": "GEYED",
+            "lat": 55.89967778333333,
+            "lon": 159.16968056666667
+        },
+        {
+            "name": "WAREX",
+            "lat": 55.750708333333336,
+            "lon": 159.39361666666667
+        },
+        {
+            "name": "ZOLOP",
+            "lat": 55.59637778333333,
+            "lon": 159.24174721666665
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "CILAC3",
+            "rnw": "20",
+            "fixes": {
+                "CILAC": "CILAC RIGHT TURN INBOUNDCOURSE 317 ALT 10000 LEGDIST 6"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "WAREX": "WAREX AT OR ABOVE 4100",
+                "ECALI": "ECALI 2600",
+                "GEYED": "OVERFLY GEYED 141 RNW 02 TRK 032 UNTIL 430 TURN RIGHT DIRECT",
+                "ZOLOP": "ZOLOP SPEED 230",
+                "GESSE": "GESSE AT OR ABOVE 9000 HOLD AT GESSE RIGHT TURN INBOUNDCOURSE 040 ALT 9000 LEGDIST 7 FAF ECALI MAP GEYED"
+            },
+            "transitions": [
+                {
+                    "name": "GESSE",
+                    "fixes": {
+                        "GESSE": "GESSE"
+                    }
+                }
+            ]
+        }
+    ]
+}

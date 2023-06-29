@@ -1,0 +1,135 @@
+{
+    "fixes": [
+        {
+            "name": "CFBSN",
+            "lat": 34.607027783333336,
+            "lon": 89.78323611666667
+        },
+        {
+            "name": "CICAL",
+            "lat": 34.88868888333333,
+            "lon": 89.78597221666666
+        },
+        {
+            "name": "DOCAP",
+            "lat": 34.771858333333334,
+            "lon": 89.78483611666667
+        },
+        {
+            "name": "EFPUB",
+            "lat": 35.16727778333333,
+            "lon": 89.78869443333333
+        },
+        {
+            "name": "FISUG",
+            "lat": 35.00869443333333,
+            "lon": 89.78714166666667
+        },
+        {
+            "name": "HLI",
+            "lat": 34.77024443333333,
+            "lon": 89.49651943333333
+        },
+        {
+            "name": "NUXAH",
+            "lat": 35.06810556666667,
+            "lon": 89.78772221666667
+        },
+        {
+            "name": "VOSFY",
+            "lat": 34.57053056666667,
+            "lon": 89.73908888333334
+        },
+        {
+            "name": "WIRGU",
+            "lat": 34.945472216666666,
+            "lon": 89.786525
+        },
+        {
+            "name": "ZAMXU",
+            "lat": 34.920316666666665,
+            "lon": 89.47530833333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "EFPUB": "EFPUB AT OR ABOVE 2500",
+                "NUXAH": "NUXAH 2000 RNW 18 TRK 181 UNTIL 1100 TURN LEFT HDG 074 INTERCEPT RADIAL 102 TO",
+                "ZAMXU": "ZAMXU ZAMXU AT OR ABOVE 2500 HOLD AT ZAMXU RIGHT TURN INBOUNDCOURSE 282 LEGTIME 1 FAF NUXAH MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "HLI",
+                    "fixes": {
+                        "HLI": "HLI",
+                        "EFPUB": "EFPUB AT OR ABOVE 2500 HOLD AT EFPUB LEFT TURN INBOUNDCOURSE 181 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC36",
+            "fixes": {
+                "DOCAP": "DOCAP AT OR ABOVE 2000",
+                "CICAL": "CICAL 2000",
+                "WIRGU": "WIRGU AT OR ABOVE 860 RNW 36 TRK 001 UNTIL 1100 TURN RIGHT HDG 134 INTERCEPT RADIAL 102 TO",
+                "ZAMXU": "ZAMXU ZAMXU AT OR ABOVE 2500 HOLD AT ZAMXU RIGHT TURN INBOUNDCOURSE 282 LEGTIME 1 FAF CICAL MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "DOCAP",
+                    "fixes": {
+                        "DOCAP": "DOCAP RIGHT TURN INBOUNDCOURSE 001 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VOSFY",
+                    "fixes": {
+                        "VOSFY": "VOSFY",
+                        "CFBSN": "CFBSN AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "EFPUB": "EFPUB AT OR ABOVE 2500",
+                "NUXAH": "NUXAH 2000",
+                "FISUG": "FISUG AT OR ABOVE 860 RNW 18 TRK 181 UNTIL 601",
+                "DOCAP": "OVERFLY DOCAP AT OR ABOVE 2000 HOLD AT DOCAP RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF NUXAH MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "EFPUB",
+                    "fixes": {
+                        "EFPUB": "EFPUB LEFT TURN INBOUNDCOURSE 181 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DOCAP": "DOCAP AT OR ABOVE 2000 OVERFLY DOCAP AT OR ABOVE 2000 HOLD AT DOCAP RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF CICAL MAP RNW 36",
+                "CICAL": "CICAL 2000 RNW 36 TRK 001 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DOCAP",
+                    "fixes": {
+                        "DOCAP": "DOCAP RIGHT TURN INBOUNDCOURSE 001 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

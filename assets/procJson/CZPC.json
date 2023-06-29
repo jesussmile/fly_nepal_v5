@@ -1,0 +1,171 @@
+{
+    "fixes": [
+        {
+            "name": "9YNB",
+            "lat": 49.52333333333333,
+            "lon": 113.99861111666667
+        },
+        {
+            "name": "APDEV",
+            "lat": 49.52035,
+            "lon": 113.85599443333334
+        },
+        {
+            "name": "APKUK",
+            "lat": 49.629986116666664,
+            "lon": 114.28891666666667
+        },
+        {
+            "name": "DURPU",
+            "lat": 49.52041943333333,
+            "lon": 114.05793056666667
+        },
+        {
+            "name": "DUTBA",
+            "lat": 49.52006943333333,
+            "lon": 113.70252778333334
+        },
+        {
+            "name": "FF26",
+            "lat": 49.50325,
+            "lon": 113.82486388333334
+        },
+        {
+            "name": "LEXAL",
+            "lat": 49.520330566666665,
+            "lon": 114.15783333333333
+        },
+        {
+            "name": "LORGU",
+            "lat": 49.38685556666667,
+            "lon": 113.70331111666667
+        },
+        {
+            "name": "NABAV",
+            "lat": 49.52008611666667,
+            "lon": 114.28828056666667
+        },
+        {
+            "name": "ODBOT",
+            "lat": 49.52036388333333,
+            "lon": 113.88144443333333
+        },
+        {
+            "name": "OTNUR",
+            "lat": 49.653280566666666,
+            "lon": 113.70174166666666
+        },
+        {
+            "name": "PEVBI",
+            "lat": 49.403522216666666,
+            "lon": 114.28760833333334
+        },
+        {
+            "name": "PI001",
+            "lat": 49.51417405,
+            "lon": 113.90987135
+        },
+        {
+            "name": "PI002",
+            "lat": 49.556264266666666,
+            "lon": 113.82049341666666
+        },
+        {
+            "name": "PI003",
+            "lat": 49.496984,
+            "lon": 113.74515761666666
+        },
+        {
+            "name": "RAGAB",
+            "lat": 49.51937778333333,
+            "lon": 113.49791111666667
+        },
+        {
+            "name": "RIDIM",
+            "lat": 49.520266666666664,
+            "lon": 114.20131666666667
+        },
+        {
+            "name": "YQL",
+            "lat": 49.6344,
+            "lon": 112.66778333333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FF26": "FF26 6000 RNW 26",
+                "9YNB": "OVERFLY 9YNB TRK 265 UNTIL 6100 TURN RIGHT DIRECT 9YNB 6100 HOLD AT 9YNB RIGHT TURN INBOUNDCOURSE 265 SPEED 250 LEGTIME 1 FAF FF26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "9Y",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 6000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "NABAV": "NABAV AT OR ABOVE 7300 SPEED 150",
+                "RIDIM": "RIDIM AT OR ABOVE 6700",
+                "LEXAL": "LEXAL 6200",
+                "DURPU": "DURPU AT OR ABOVE 4680 RNW 08",
+                "ODBOT": "OVERFLY ODBOT 8800 SPEED 150 HOLD AT ODBOT LEFT TURN INBOUNDCOURSE 076 LEGTIME 1 FAF LEXAL MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "APKUK",
+                    "fixes": {
+                        "APKUK": "APKUK SPEED 150"
+                    }
+                },
+                {
+                    "name": "PEVBI",
+                    "fixes": {
+                        "PEVBI": "PEVBI SPEED 150"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "DUTBA": "DUTBA AT OR ABOVE 7000 SPEED 200 OVERFLY DUTBA 7500 SPEED 185 HOLD AT DUTBA RIGHT TURN INBOUNDCOURSE 257 LEGTIME 1 FAF APDEV MAP RNW 26",
+                "APDEV": "APDEV 5600 RNW 26 HDG 256 UNTIL 5000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LORGU",
+                    "fixes": {
+                        "LORGU": "LORGU SPEED 210"
+                    }
+                },
+                {
+                    "name": "OTNUR",
+                    "fixes": {
+                        "OTNUR": "OTNUR SPEED 210"
+                    }
+                },
+                {
+                    "name": "YQL",
+                    "fixes": {
+                        "YQL": "YQL",
+                        "RAGAB": "RAGAB AT OR ABOVE 7000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

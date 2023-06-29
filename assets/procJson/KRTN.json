@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "ADOZO",
+            "lat": 36.40574443333333,
+            "lon": 104.89934166666667
+        },
+        {
+            "name": "CIM",
+            "lat": 36.49139721666667,
+            "lon": 104.872
+        },
+        {
+            "name": "DELEO",
+            "lat": 36.80695,
+            "lon": 104.12568333333333
+        },
+        {
+            "name": "ECDOL",
+            "lat": 37.02705556666667,
+            "lon": 103.98910833333333
+        },
+        {
+            "name": "FOGLE",
+            "lat": 36.83829443333333,
+            "lon": 104.30288056666667
+        },
+        {
+            "name": "GIBSO",
+            "lat": 36.76491111666667,
+            "lon": 104.36651388333334
+        },
+        {
+            "name": "HEXMU",
+            "lat": 36.663583333333335,
+            "lon": 104.57074443333333
+        },
+        {
+            "name": "ISSEP",
+            "lat": 36.580708333333334,
+            "lon": 104.64041666666667
+        },
+        {
+            "name": "KEFPO",
+            "lat": 36.778227783333335,
+            "lon": 104.29055833333334
+        },
+        {
+            "name": "SAYKA",
+            "lat": 36.59936388333333,
+            "lon": 104.6959
+        },
+        {
+            "name": "WATGU",
+            "lat": 36.89391388333333,
+            "lon": 104.21070833333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 07",
+        "RNW 20",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "ISSEP": "ISSEP AT OR ABOVE 9000",
+                "HEXMU": "HEXMU 8000 RNW 02 TRK 024 UNTIL 6752",
+                "WATGU": "OVERFLY WATGU AT OR ABOVE 11600 HOLD AT WATGU RIGHT TURN INBOUNDCOURSE 043 LEGDIST 7 FAF HEXMU MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "CIM",
+                    "fixes": {
+                        "CIM": "CIM"
+                    }
+                },
+                {
+                    "name": "FOGLE",
+                    "fixes": {
+                        "FOGLE": "FOGLE",
+                        "ISSEP": "OVERFLY ISSEP AT OR ABOVE 10000 HOLD AT ISSEP RIGHT TURN INBOUNDCOURSE 024 ALT 9000 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "DELEO": "DELEO AT OR ABOVE 10000",
+                "KEFPO": "KEFPO AT OR ABOVE 9500",
+                "GIBSO": "GIBSO 8300 RNW 25 TRK 248 UNTIL 6752",
+                "ADOZO": "OVERFLY ADOZO AT OR ABOVE 11000 HOLD AT ADOZO LEFT TURN INBOUNDCOURSE 184 LEGDIST 7 FAF GIBSO MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "ECDOL",
+                    "fixes": {
+                        "ECDOL": "ECDOL"
+                    }
+                },
+                {
+                    "name": "SAYKA",
+                    "fixes": {
+                        "SAYKA": "SAYKA",
+                        "DELEO": "OVERFLY DELEO AT OR ABOVE 10200 HOLD AT DELEO RIGHT TURN INBOUNDCOURSE 248 ALT 10000 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

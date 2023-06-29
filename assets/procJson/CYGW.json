@@ -1,0 +1,198 @@
+{
+    "fixes": [
+        {
+            "name": "EP03",
+            "lat": 55.27348333333333,
+            "lon": 77.76357778333333
+        },
+        {
+            "name": "FF03",
+            "lat": 55.19708611666667,
+            "lon": 77.84697221666667
+        },
+        {
+            "name": "FF21",
+            "lat": 55.39874721666666,
+            "lon": 77.7725
+        },
+        {
+            "name": "GWNB",
+            "lat": 55.28459443333333,
+            "lon": 77.75141943333334
+        },
+        {
+            "name": "ITKOK",
+            "lat": 55.35421388333334,
+            "lon": 77.72494721666666
+        },
+        {
+            "name": "KENRA",
+            "lat": 55.21013056666666,
+            "lon": 77.80525
+        },
+        {
+            "name": "KIVOL",
+            "lat": 55.4493,
+            "lon": 77.67161666666667
+        },
+        {
+            "name": "LOSBI",
+            "lat": 55.47453888333333,
+            "lon": 77.81110278333334
+        },
+        {
+            "name": "MOBIM",
+            "lat": 55.4239,
+            "lon": 77.53231111666666
+        },
+        {
+            "name": "PERBO",
+            "lat": 55.08979443333333,
+            "lon": 77.71968333333334
+        },
+        {
+            "name": "PESTU",
+            "lat": 55.235058333333335,
+            "lon": 77.7914
+        },
+        {
+            "name": "PETGA",
+            "lat": 55.14001388333333,
+            "lon": 77.996375
+        },
+        {
+            "name": "PI001",
+            "lat": 55.235659283333334,
+            "lon": 77.80713756666667
+        },
+        {
+            "name": "PI002",
+            "lat": 55.2206972,
+            "lon": 77.93003121666666
+        },
+        {
+            "name": "PI003",
+            "lat": 55.14471265,
+            "lon": 77.91025103333334
+        },
+        {
+            "name": "PI004",
+            "lat": 55.342705466666665,
+            "lon": 77.7603598
+        },
+        {
+            "name": "PI005",
+            "lat": 55.388733816666665,
+            "lon": 77.85701353333333
+        },
+        {
+            "name": "PI006",
+            "lat": 55.45062421666667,
+            "lon": 77.77703313333333
+        },
+        {
+            "name": "SATAP",
+            "lat": 55.433894433333336,
+            "lon": 77.680275
+        },
+        {
+            "name": "TOTAR",
+            "lat": 55.1301,
+            "lon": 77.84958611666667
+        },
+        {
+            "name": "VIMRU",
+            "lat": 55.114983333333335,
+            "lon": 77.85794166666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FF03": "FF03 1800",
+                "EP03": "OVERFLY EP03 89",
+                "GWNB": "OVERFLY GWNB AT OR ABOVE 440 RNW 03 TRK 043 UNTIL 2200 TURN LEFT DIRECT GWNB 2200 HOLD AT GWNB LEFT TURN INBOUNDCOURSE 050 LEGTIME 1 FAF FF03 MAP GW"
+            },
+            "transitions": [
+                {
+                    "name": "GW",
+                    "fixes": {
+                        "GWNB": "GWNB AT OR ABOVE 2200",
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FF21": "FF21 2200",
+                "GWNB": "GWNB 840 RNW 21 TRK 192 UNTIL 2200 TURN RIGHT DIRECT GWNB 2200 HOLD AT GWNB RIGHT TURN INBOUNDCOURSE 192 LEGTIME 1 FAF FF21 MAP GW"
+            },
+            "transitions": [
+                {
+                    "name": "GW",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2200 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2200 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2200 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "VIMRU": "VIMRU AT OR ABOVE 1800",
+                "KENRA": "KENRA 1400",
+                "PESTU": "PESTU AT OR ABOVE 900 RNW 03",
+                "SATAP": "OVERFLY SATAP 2200 HOLD AT SATAP RIGHT TURN INBOUNDCOURSE 035 LEGTIME 1 FAF KENRA MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "PERBO",
+                    "fixes": {
+                        "PERBO": "PERBO SPEED 210"
+                    }
+                },
+                {
+                    "name": "PETGA",
+                    "fixes": {
+                        "PETGA": "PETGA SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "KIVOL": "KIVOL AT OR ABOVE 1500",
+                "ITKOK": "ITKOK 1400 RNW 21",
+                "TOTAR": "OVERFLY TOTAR 2200 HOLD AT TOTAR RIGHT TURN INBOUNDCOURSE 215 LEGTIME 1 FAF ITKOK MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "LOSBI",
+                    "fixes": {
+                        "LOSBI": "LOSBI SPEED 210"
+                    }
+                },
+                {
+                    "name": "MOBIM",
+                    "fixes": {
+                        "MOBIM": "MOBIM SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

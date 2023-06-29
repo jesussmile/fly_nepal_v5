@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "ACKEC",
+            "lat": 51.64116666666666,
+            "lon": 2.3103416666666665
+        },
+        {
+            "name": "AXSOC",
+            "lat": 51.60912221666667,
+            "lon": 1.8122916666666666
+        },
+        {
+            "name": "BP08F",
+            "lat": 51.65355556666667,
+            "lon": 2.1943083333333333
+        },
+        {
+            "name": "BP26F",
+            "lat": 51.68085,
+            "lon": 1.9345277833333334
+        },
+        {
+            "name": "BPM01",
+            "lat": 51.68008056666667,
+            "lon": 1.9419166666666667
+        },
+        {
+            "name": "BPM02",
+            "lat": 51.597991666666665,
+            "lon": 1.9198722166666666
+        },
+        {
+            "name": "BPM03",
+            "lat": 51.559083333333334,
+            "lon": 2.2882444333333334
+        },
+        {
+            "name": "BPM04",
+            "lat": 51.648325,
+            "lon": 2.2434305666666665
+        },
+        {
+            "name": "BPM05",
+            "lat": 51.566291666666665,
+            "lon": 2.2208611166666667
+        },
+        {
+            "name": "BUSVE",
+            "lat": 51.77333611666667,
+            "lon": 1.8560777833333333
+        },
+        {
+            "name": "EDBIF",
+            "lat": 51.69123333333334,
+            "lon": 1.8341444333333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "ACKEC": "ACKEC AT OR ABOVE 2500 SPEED 200 ACKEC AT OR ABOVE 2500 SPEED 200 FAF BP08F MAP RNW 08",
+                "BP08F": "BP08F 2000 RNW 08",
+                "BPM01": "BPM01 SPEED 185",
+                "BPM02": "BPM02 SPEED 185",
+                "BPM03": "BPM03 SPEED 200"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "EDBIF": "EDBIF AT OR ABOVE 2400 SPEED 200",
+                "BP26F": "BP26F 1800 RNW 26",
+                "BPM04": "BPM04 SPEED 185",
+                "BPM05": "BPM05 SPEED 185",
+                "AXSOC": "AXSOC AT OR ABOVE 2500 SPEED 200 FAF BP26F MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "AXSOC",
+                    "fixes": {
+                        "AXSOC": "AXSOC AT OR ABOVE 2500 SPEED 200"
+                    }
+                },
+                {
+                    "name": "BUSVE",
+                    "fixes": {
+                        "BUSVE": "BUSVE AT OR ABOVE 2500 SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

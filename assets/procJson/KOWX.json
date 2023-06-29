@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "CIVRO",
+            "lat": 41.03626666666667,
+            "lon": 83.72205556666667
+        },
+        {
+            "name": "DUSKY",
+            "lat": 40.915430566666664,
+            "lon": 83.19966388333333
+        },
+        {
+            "name": "FBC",
+            "lat": 40.955333333333336,
+            "lon": 83.756025
+        },
+        {
+            "name": "GILBA",
+            "lat": 40.999116666666666,
+            "lon": 83.87473333333334
+        },
+        {
+            "name": "HEMIC",
+            "lat": 41.035980566666666,
+            "lon": 83.85866666666666
+        },
+        {
+            "name": "ILEDE",
+            "lat": 41.035325,
+            "lon": 84.04511388333333
+        },
+        {
+            "name": "TWERP",
+            "lat": 41.15205,
+            "lon": 84.51595
+        },
+        {
+            "name": "WIFES",
+            "lat": 41.03430278333333,
+            "lon": 84.24288333333334
+        },
+        {
+            "name": "XEBXO",
+            "lat": 41.03580278333333,
+            "lon": 83.91895278333334
+        },
+        {
+            "name": "ZEBIR",
+            "lat": 41.03504443333333,
+            "lon": 84.10635278333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "WIFES": "WIFES AT OR ABOVE 3000",
+                "ZEBIR": "ZEBIR 2500",
+                "ILEDE": "ILEDE AT OR ABOVE 1580 RNW 09 TRK 095 UNTIL 1048",
+                "CIVRO": "OVERFLY CIVRO AT OR ABOVE 3000 HOLD AT CIVRO RIGHT TURN INBOUNDCOURSE 275 LEGDIST 4 FAF ZEBIR MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "TWERP",
+                    "fixes": {
+                        "TWERP": "TWERP"
+                    }
+                },
+                {
+                    "name": "WIFES",
+                    "fixes": {
+                        "WIFES": "WIFES RIGHT TURN INBOUNDCOURSE 095 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "CIVRO": "CIVRO AT OR ABOVE 3000",
+                "HEMIC": "HEMIC 2500",
+                "XEBXO": "XEBXO AT OR ABOVE 1600 RNW 27 TRK 275 UNTIL 1048",
+                "WIFES": "OVERFLY WIFES AT OR ABOVE 3000 HOLD AT WIFES RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4 FAF HEMIC MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "CIVRO",
+                    "fixes": {
+                        "CIVRO": "CIVRO RIGHT TURN INBOUNDCOURSE 275 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DUSKY",
+                    "fixes": {
+                        "DUSKY": "DUSKY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR27",
+            "fixes": {
+                "FBC": "FBC AT OR ABOVE 2500 FBC HOLD AT FBC RIGHT TURN INBOUNDCOURSE 298 LEGTIME 1 FAF GILBA MAP RNW 27",
+                "GILBA": "GILBA 2500 RNW 27 TRK 298 UNTIL 2500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FBC",
+                    "fixes": {
+                        "FBC": "FBC RIGHT TURN INBOUNDCOURSE 298 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

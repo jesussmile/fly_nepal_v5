@@ -1,0 +1,59 @@
+{
+    "fixes": [
+        {
+            "name": "D017F",
+            "lat": 0.9523277833333333,
+            "lon": 77.65402778333333
+        },
+        {
+            "name": "FF24",
+            "lat": 0.8988555666666667,
+            "lon": 77.57685
+        },
+        {
+            "name": "IPI",
+            "lat": 0.8622222166666667,
+            "lon": 77.67305556666666
+        },
+        {
+            "name": "TLCNB",
+            "lat": 0.8239166666666667,
+            "lon": 77.68719443333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "IPI2",
+            "rnw": "06",
+            "fixes": {
+                "IPI": "IPI AT OR ABOVE 14800",
+                "D017F": "D017F AT OR ABOVE 13700"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FF24": "FF24 13500",
+                "TLCNB": "TLCNB 10032 RNW 24 TRK 254 UNTIL 5.0 FROM TLCNB TURN RIGHT DIRECT TLCNB AT OR ABOVE 17000 SPEED 160 HOLD AT TLCNB RIGHT TURN INBOUNDCOURSE 085 ALT 17000 SPEED 210 LEGTIME 1 FAF FF24 MAP TLC"
+            },
+            "transitions": [
+                {
+                    "name": "TLC",
+                    "fixes": {
+                        "TLCNB": "TLCNB AT OR ABOVE 17000 SPEED 180 TRK 085 UNTIL 7.1 FROM",
+                        "IPI": "IPI"
+                    }
+                }
+            ]
+        }
+    ]
+}

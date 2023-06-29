@@ -1,0 +1,116 @@
+{
+    "fixes": [
+        {
+            "name": "MABRD",
+            "lat": 39.3572,
+            "lon": 97.5002
+        },
+        {
+            "name": "NORAF",
+            "lat": 39.35577778333333,
+            "lon": 97.80101666666667
+        },
+        {
+            "name": "OBITE",
+            "lat": 39.35658611666667,
+            "lon": 97.65060833333334
+        },
+        {
+            "name": "ODUKE",
+            "lat": 39.643444433333336,
+            "lon": 97.65286943333334
+        },
+        {
+            "name": "PACRD",
+            "lat": 39.45667221666667,
+            "lon": 97.65139721666667
+        },
+        {
+            "name": "QULAH",
+            "lat": 39.509047216666666,
+            "lon": 97.65180833333334
+        },
+        {
+            "name": "REPTL",
+            "lat": 39.743527783333334,
+            "lon": 97.65366388333334
+        },
+        {
+            "name": "SLAMR",
+            "lat": 39.744141666666664,
+            "lon": 97.50241388333333
+        },
+        {
+            "name": "TRMBL",
+            "lat": 39.74271111666667,
+            "lon": 97.80490833333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 18",
+        "RNW 30",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "REPTL": "REPTL AT OR ABOVE 4000",
+                "ODUKE": "ODUKE 3200 RNW 18 TRK 174 UNTIL 1738",
+                "OBITE": "OVERFLY OBITE AT OR ABOVE 4000 HOLD AT OBITE RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF ODUKE MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "REPTL",
+                    "fixes": {
+                        "REPTL": "REPTL RIGHT TURN INBOUNDCOURSE 174 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SLAMR",
+                    "fixes": {
+                        "SLAMR": "SLAMR"
+                    }
+                },
+                {
+                    "name": "TRMBL",
+                    "fixes": {
+                        "TRMBL": "TRMBL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "OBITE": "OBITE AT OR ABOVE 4000",
+                "PACRD": "PACRD 3200",
+                "QULAH": "QULAH AT OR ABOVE 2180 RNW 36 TRK 354 UNTIL 1880",
+                "REPTL": "OVERFLY REPTL AT OR ABOVE 4000 HOLD AT REPTL RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF PACRD MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "MABRD",
+                    "fixes": {
+                        "MABRD": "MABRD"
+                    }
+                },
+                {
+                    "name": "NORAF",
+                    "fixes": {
+                        "NORAF": "NORAF"
+                    }
+                },
+                {
+                    "name": "OBITE",
+                    "fixes": {
+                        "OBITE": "OBITE RIGHT TURN INBOUNDCOURSE 354 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

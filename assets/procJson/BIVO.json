@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "043AT",
+            "lat": 65.50276111666666,
+            "lon": 15.214763883333333
+        },
+        {
+            "name": "334AT",
+            "lat": 65.50320556666667,
+            "lon": 15.077066666666667
+        },
+        {
+            "name": "HANB",
+            "lat": 65.62958333333333,
+            "lon": 15.041444433333334
+        },
+        {
+            "name": "NILAT",
+            "lat": 65.56868333333334,
+            "lon": 15.379644433333333
+        },
+        {
+            "name": "SIZIN",
+            "lat": 65.46256111666666,
+            "lon": 15.007663883333333
+        },
+        {
+            "name": "VICOM",
+            "lat": 65.47537221666667,
+            "lon": 15.260036116666667
+        },
+        {
+            "name": "VO604",
+            "lat": 65.79911666666666,
+            "lon": 14.717305566666667
+        },
+        {
+            "name": "VO704",
+            "lat": 65.84185278333334,
+            "lon": 14.866838883333333
+        },
+        {
+            "name": "VOF04",
+            "lat": 65.61611388333333,
+            "lon": 15.026147216666667
+        },
+        {
+            "name": "VOI04",
+            "lat": 65.54381666666667,
+            "lon": 15.146683333333334
+        },
+        {
+            "name": "VP",
+            "lat": 65.71638888333334,
+            "lon": 14.853777783333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB04",
+            "fixes": {
+                "HANB": "HANB 2600 HANB 4500 HOLD AT HANB LEFT TURN INBOUNDCOURSE 051 ALT 4500 LEGTIME 1 FAF HANB MAP VP",
+                "VP": "VP 63 RNW 04 TRK 051 UNTIL 3500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HA",
+                    "fixes": {
+                        "HANB": "HANB LEFT TURN INBOUNDCOURSE 051 ALT 3900 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "VOI04": "VOI04 AT OR ABOVE 3800",
+                "VOF04": "VOF04 2500 RNW 04",
+                "VO604": "VO604",
+                "VO704": "VO704",
+                "NILAT": "NILAT HOLD AT NILAT RIGHT TURN INBOUNDCOURSE 113 ALT 4700 LEGTIME 1 FAF VOF04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "NILAT",
+                    "fixes": {
+                        "NILAT": "NILAT AT OR ABOVE 5300"
+                    }
+                },
+                {
+                    "name": "SIZIN",
+                    "fixes": {
+                        "SIZIN": "SIZIN AT OR ABOVE 5700",
+                        "334AT": "334AT AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "VICOM",
+                    "fixes": {
+                        "VICOM": "VICOM AT OR ABOVE 5200",
+                        "043AT": "043AT AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

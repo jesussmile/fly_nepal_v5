@@ -1,0 +1,228 @@
+{
+    "fixes": [
+        {
+            "name": "ABIVA",
+            "lat": 55.543402783333335,
+            "lon": 9.483183333333333
+        },
+        {
+            "name": "D015V",
+            "lat": 55.57801666666667,
+            "lon": 9.407555566666666
+        },
+        {
+            "name": "D195D",
+            "lat": 55.29166111666667,
+            "lon": 9.253611116666667
+        },
+        {
+            "name": "EBURU",
+            "lat": 55.326325,
+            "lon": 9.178069433333333
+        },
+        {
+            "name": "FQ01",
+            "lat": 55.36486111666667,
+            "lon": 9.292738883333334
+        },
+        {
+            "name": "FQ19",
+            "lat": 55.50485556666667,
+            "lon": 9.368
+        },
+        {
+            "name": "GEMRO",
+            "lat": 55.296258333333334,
+            "lon": 9.345011116666667
+        },
+        {
+            "name": "GOVOV",
+            "lat": 55.57366666666667,
+            "lon": 9.31525
+        },
+        {
+            "name": "KDNB",
+            "lat": 55.443297216666664,
+            "lon": 9.334838883333333
+        },
+        {
+            "name": "LODBA",
+            "lat": 55.60611111666667,
+            "lon": 9.426111116666666
+        },
+        {
+            "name": "MQ01",
+            "lat": 55.43009166666667,
+            "lon": 9.327738883333334
+        },
+        {
+            "name": "ROSRA",
+            "lat": 55.263719433333335,
+            "lon": 9.235188883333333
+        },
+        {
+            "name": "SKR",
+            "lat": 55.228938883333335,
+            "lon": 9.214058333333334
+        },
+        {
+            "name": "VD012",
+            "lat": 55.36528611666667,
+            "lon": 9.291430566666667
+        },
+        {
+            "name": "VD013",
+            "lat": 55.31133056666667,
+            "lon": 9.261516666666667
+        },
+        {
+            "name": "VD014",
+            "lat": 55.4825,
+            "lon": 9.356719433333334
+        },
+        {
+            "name": "VD191",
+            "lat": 55.444063883333335,
+            "lon": 9.335263883333333
+        },
+        {
+            "name": "VD193",
+            "lat": 55.50463056666667,
+            "lon": 9.369072216666666
+        },
+        {
+            "name": "VD194",
+            "lat": 55.55855556666667,
+            "lon": 9.399275
+        },
+        {
+            "name": "VD195",
+            "lat": 55.40318056666667,
+            "lon": 9.312488883333334
+        },
+        {
+            "name": "VOR15",
+            "lat": 55.46668056666667,
+            "lon": 9.347422216666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 07",
+        "RNW 19",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD01",
+            "fixes": {
+                "FQ01": "FQ01 1500",
+                "MQ01": "MQ01 200 RNW 01",
+                "KDNB": "KDNB AT OR ABOVE 550 TRK 015 UNTIL 16.0 FROM KDNB AT OR ABOVE 2300 HOLD AT KDNB RIGHT TURN INBOUNDCOURSE 213 SPEED 150 LEGTIME 1 FAF FQ01 MAP MQ01",
+                "SKR": "SKR TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KD",
+                    "fixes": {
+                        "KDNB": "KDNB AT OR ABOVE 2300 TRK 211 UNTIL 8.5 FROM",
+                        "SKR": "SKR"
+                    }
+                },
+                {
+                    "name": "SKR",
+                    "fixes": {
+                        "SKR": "SKR AT OR ABOVE 2300",
+                        "D195D": "D195D AT OR ABOVE 1600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD19",
+            "fixes": {
+                "FQ19": "FQ19 1500",
+                "VOR15": "VOR15 AT OR ABOVE 735",
+                "KDNB": "KDNB 270 RNW 19 TRK 195 UNTIL 11.0 FROM KDNB AT OR ABOVE 2300 HOLD AT KDNB RIGHT TURN INBOUNDCOURSE 321 LEGTIME 1 FAF FQ19 MAP KD",
+                "SKR": "SKR TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KD",
+                    "fixes": {
+                        "KDNB": "KDNB AT OR ABOVE 2300 TRK 357 UNTIL 18.0 FROM",
+                        "SKR": "SKR"
+                    }
+                },
+                {
+                    "name": "LODBA",
+                    "fixes": {
+                        "LODBA": "LODBA AT OR ABOVE 2300",
+                        "D015V": "D015V AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "VD013": "VD013 AT OR ABOVE 1600",
+                "VD012": "VD012 1500 RNW 01",
+                "VD014": "OVERFLY VD014 TURN LEFT DIRECT",
+                "KDNB": "OVERFLY KDNB HOLD AT KDNB RIGHT TURN INBOUNDCOURSE 213 ALT 2300 SPEED 140 LEGTIME 1 FAF VD012 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "EBURU",
+                    "fixes": {
+                        "EBURU": "EBURU AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "GEMRO",
+                    "fixes": {
+                        "GEMRO": "GEMRO AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "ROSRA",
+                    "fixes": {
+                        "ROSRA": "ROSRA AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "VD194": "VD194 AT OR ABOVE 1700",
+                "VD193": "VD193 1500",
+                "VD191": "OVERFLY VD191 285 RNW 19",
+                "VD195": "OVERFLY VD195 TURN LEFT DIRECT",
+                "ABIVA": "OVERFLY ABIVA HOLD AT ABIVA RIGHT TURN INBOUNDCOURSE 285 ALT 2300 SPEED 140 LEGTIME 1 FAF VD193 MAP VD191"
+            },
+            "transitions": [
+                {
+                    "name": "ABIVA",
+                    "fixes": {
+                        "ABIVA": "ABIVA AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "GOVOV",
+                    "fixes": {
+                        "GOVOV": "GOVOV AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "LODBA",
+                    "fixes": {
+                        "LODBA": "LODBA AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        }
+    ]
+}

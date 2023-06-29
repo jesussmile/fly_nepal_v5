@@ -1,0 +1,93 @@
+{
+    "fixes": [
+        {
+            "name": "CI25",
+            "lat": 35.07346943333334,
+            "lon": 1.2559333333333333
+        },
+        {
+            "name": "D065J",
+            "lat": 35.081913883333335,
+            "lon": 1.2712944333333334
+        },
+        {
+            "name": "D065K",
+            "lat": 35.08894166666666,
+            "lon": 1.2528722166666666
+        },
+        {
+            "name": "D250E",
+            "lat": 34.98795556666666,
+            "lon": 1.5421861166666666
+        },
+        {
+            "name": "FD25",
+            "lat": 35.07347778333333,
+            "lon": 1.2933944333333334
+        },
+        {
+            "name": "FI25",
+            "lat": 35.05074166666667,
+            "lon": 1.3322972166666667
+        },
+        {
+            "name": "MD25",
+            "lat": 35.026302783333335,
+            "lon": 1.4167138833333333
+        },
+        {
+            "name": "TLM",
+            "lat": 35.015019433333336,
+            "lon": 1.4461444333333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD25",
+            "fixes": {
+                "FD25": "FD25 3450",
+                "MD25": "MD25 1321 RNW 25 TRK 245 UNTIL 3030 TURN LEFT DIRECT",
+                "TLM": "TLM 4600 SPEED 220 FAF FD25 MAP MD25"
+            },
+            "transitions": [
+                {
+                    "name": "TLM1",
+                    "fixes": {
+                        "TLM": "TLM AT OR ABOVE 4600 TRK 043 UNTIL 10.5 FROM TLM TURN RIGHT DIRECT",
+                        "D065K": "D065K AT OR ABOVE 3450"
+                    }
+                },
+                {
+                    "name": "TLM2",
+                    "fixes": {
+                        "TLM": "TLM AT OR ABOVE 4600 TRK 051 UNTIL 9.5 FROM TLM TURN RIGHT DIRECT",
+                        "D065J": "D065J AT OR ABOVE 3450"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS25",
+            "fixes": {
+                "CI25": "CI25 AT OR ABOVE 3300",
+                "FI25": "FI25 2730 RNW 25",
+                "D250E": "OVERFLY D250E TURN LEFT DIRECT",
+                "TLM": "TLM 5420 SPEED 230 FAF FI25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "TLM",
+                    "fixes": {
+                        "TLM": "TLM AT OR ABOVE 5420 TRK 047 UNTIL 10.0 FROM TLM"
+                    }
+                }
+            ]
+        }
+    ]
+}

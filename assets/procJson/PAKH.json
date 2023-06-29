@@ -1,0 +1,89 @@
+{
+    "fixes": [
+        {
+            "name": "BIYAN",
+            "lat": 56.86639721666667,
+            "lon": 154.14718888333334
+        },
+        {
+            "name": "CEREM",
+            "lat": 56.91225278333334,
+            "lon": 154.16960556666666
+        },
+        {
+            "name": "CODUR",
+            "lat": 56.83091111666667,
+            "lon": 154.51539721666666
+        },
+        {
+            "name": "FONUR",
+            "lat": 56.76121666666667,
+            "lon": 154.09598611666667
+        },
+        {
+            "name": "GUBEY",
+            "lat": 56.84075833333333,
+            "lon": 154.13468056666667
+        },
+        {
+            "name": "JOGMO",
+            "lat": 57.12425,
+            "lon": 154.78665833333332
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [
+        {
+            "name": "JOGMO1",
+            "rnw": "04",
+            "fixes": {
+                "CODUR": "CODUR",
+                "JOGMO": "JOGMO AT OR ABOVE 11000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA04",
+            "fixes": {
+                "GUBEY": "GUBEY AT OR ABOVE 2000",
+                "BIYAN": "BIYAN 1600",
+                "CEREM": "OVERFLY CEREM 1360 RNW 04 TRK 327 UNTIL 1360 TURN RIGHT DIRECT",
+                "FONUR": "OVERFLY FONUR AT OR ABOVE 3200 HOLD AT FONUR RIGHT TURN INBOUNDCOURSE 327 LEGDIST 4 FAF BIYAN MAP CEREM"
+            },
+            "transitions": [
+                {
+                    "name": "JOGMO",
+                    "fixes": {
+                        "JOGMO": "JOGMO",
+                        "FONUR": "FONUR AT OR ABOVE 3200 HOLD AT FONUR RIGHT TURN INBOUNDCOURSE 327 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA22",
+            "fixes": {
+                "GUBEY": "GUBEY AT OR ABOVE 2000",
+                "BIYAN": "BIYAN 1600",
+                "CEREM": "OVERFLY CEREM 1360 RNW 22 TRK 327 UNTIL 1360 TURN RIGHT DIRECT",
+                "FONUR": "OVERFLY FONUR AT OR ABOVE 3200 HOLD AT FONUR RIGHT TURN INBOUNDCOURSE 327 LEGDIST 4 FAF BIYAN MAP CEREM"
+            },
+            "transitions": [
+                {
+                    "name": "JOGMO",
+                    "fixes": {
+                        "JOGMO": "JOGMO",
+                        "FONUR": "FONUR AT OR ABOVE 3200 HOLD AT FONUR RIGHT TURN INBOUNDCOURSE 327 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

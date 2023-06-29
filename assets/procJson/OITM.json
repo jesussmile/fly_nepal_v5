@@ -1,0 +1,95 @@
+{
+    "fixes": [
+        {
+            "name": "D252H",
+            "lat": 37.37594443333333,
+            "lon": 46.30574166666667
+        },
+        {
+            "name": "D252J",
+            "lat": 37.38338888333333,
+            "lon": 46.34650833333333
+        },
+        {
+            "name": "D252M",
+            "lat": 37.39453056666667,
+            "lon": 46.407675
+        },
+        {
+            "name": "FN08",
+            "lat": 37.34988333333333,
+            "lon": 46.001325
+        },
+        {
+            "name": "FQ26",
+            "lat": 37.36475278333333,
+            "lon": 46.244602783333335
+        },
+        {
+            "name": "GETOB",
+            "lat": 37.2075,
+            "lon": 46.858055566666664
+        },
+        {
+            "name": "MQ26",
+            "lat": 37.353527783333334,
+            "lon": 46.183483333333335
+        },
+        {
+            "name": "SHDNB",
+            "lat": 37.346,
+            "lon": 46.14275
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [
+        {
+            "name": "GETO1D",
+            "runway": "RNW 08 RNW 26",
+            "fixes": {
+                "GETOB": "GETOB",
+                "SHDNB": "SHDNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FN08": "FN08 6100 RNW 08",
+                "SHDNB": "OVERFLY SHDNB AT OR ABOVE 4800 TRK 170 UNTIL 7000 TURN RIGHT DIRECT SHDNB 9000 HOLD AT SHDNB LEFT TURN INBOUNDCOURSE 285 ALT 9000 LEGTIME 1 FAF FN08 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "SHD",
+                    "fixes": {
+                        "SHDNB": "SHDNB AT OR ABOVE 9000 TRK 285 UNTIL 10.5 FROM SHDNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD26",
+            "fixes": {
+                "FQ26": "FQ26 6200",
+                "MQ26": "MQ26 5167 RNW 26",
+                "SHDNB": "SHDNB TRK 252 UNTIL 6000 TURN RIGHT DIRECT",
+                "D252M": "D252M 9000 HOLD AT D252M LEFT TURN INBOUNDCOURSE 252 ALT 9000 LEGTIME 1 FAF FQ26 MAP MQ26"
+            },
+            "transitions": [
+                {
+                    "name": "D252M",
+                    "fixes": {
+                        "D252M": "D252M AT OR ABOVE 9000",
+                        "D252J": "D252J AT OR ABOVE 7600",
+                        "D252H": "D252H AT OR ABOVE 7100"
+                    }
+                }
+            ]
+        }
+    ]
+}

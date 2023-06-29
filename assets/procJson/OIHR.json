@@ -1,0 +1,180 @@
+{
+    "fixes": [
+        {
+            "name": "ARK",
+            "lat": 34.137194433333335,
+            "lon": 49.853833333333334
+        },
+        {
+            "name": "ARKNB",
+            "lat": 34.134472216666666,
+            "lon": 49.84866666666667
+        },
+        {
+            "name": "CD26",
+            "lat": 34.18763333333333,
+            "lon": 50.06627221666667
+        },
+        {
+            "name": "D070P",
+            "lat": 34.21043611666666,
+            "lon": 50.162919433333336
+        },
+        {
+            "name": "D340N",
+            "lat": 34.36128333333333,
+            "lon": 49.773780566666666
+        },
+        {
+            "name": "DEKBA",
+            "lat": 34.3625,
+            "lon": 50.14222221666667
+        },
+        {
+            "name": "FD26",
+            "lat": 34.16475,
+            "lon": 49.96967778333333
+        },
+        {
+            "name": "FN233",
+            "lat": 34.214402783333334,
+            "lon": 49.996991666666666
+        },
+        {
+            "name": "MD26",
+            "lat": 34.14179443333333,
+            "lon": 49.873133333333335
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "DEKB1A",
+            "rnw": "26",
+            "fixes": {
+                "ARK": "ARK AT OR ABOVE 10500",
+                "DEKBA": "DEKBA AT OR ABOVE 17000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DEKB1B",
+            "rnw": "08",
+            "fixes": {
+                "ARK": "ARK AT OR ABOVE 12500 TURN RIGHT HDG 073 INTERCEPT RADIAL 043 TO",
+                "DEKBA": "DEKBA AT OR ABOVE 17000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DEKB1C",
+            "rnw": "26",
+            "fixes": {
+                "ARKNB": "ARKNB AT OR ABOVE 10500",
+                "DEKBA": "DEKBA AT OR ABOVE 17000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DEKB1D",
+            "rnw": "08",
+            "fixes": {
+                "ARKNB": "ARKNB AT OR ABOVE 12500 TURN RIGHT HDG 073 INTERCEPT RADIAL 043 TO",
+                "DEKBA": "DEKBA AT OR ABOVE 17000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "DEKB1N",
+            "runway": "RNW 08 RNW 26",
+            "fixes": {
+                "DEKBA": "DEKBA",
+                "ARK": "ARK"
+            }
+        },
+        {
+            "name": "DEKB1P",
+            "runway": "RNW 26",
+            "fixes": {
+                "DEKBA": "DEKBA",
+                "D070P": "D070P"
+            }
+        },
+        {
+            "name": "DEKB1Q",
+            "runway": "RNW 08 RNW 26",
+            "fixes": {
+                "DEKBA": "DEKBA",
+                "D340N": "D340N"
+            }
+        },
+        {
+            "name": "DEKB1T",
+            "runway": "RNW 08 RNW 26",
+            "fixes": {
+                "DEKBA": "DEKBA",
+                "ARKNB": "ARKNB"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD26",
+            "fixes": {
+                "CD26": "CD26 AT OR ABOVE 8300",
+                "FD26": "FD26 7200",
+                "MD26": "MD26 5600 RNW 26 TRK 290 UNTIL 6800 TURN RIGHT DIRECT",
+                "D070P": "D070P 10500 HOLD AT D070P RIGHT TURN INBOUNDCOURSE 250 SPEED 230 LEGTIME 1 FAF FD26 MAP MD26"
+            },
+            "transitions": [
+                {
+                    "name": "D070P",
+                    "fixes": {
+                        "D070P": "D070P AT OR ABOVE 10500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB08",
+            "fixes": {
+                "FN233": "FN233 7700",
+                "ARKNB": "ARKNB 6960 RNW 08 TRK 330 UNTIL 9000 TURN RIGHT DIRECT ARKNB 11500 HOLD AT ARKNB LEFT TURN INBOUNDCOURSE 065 SPEED 230 LEGTIME 1 FAF FN233 MAP ARK"
+            },
+            "transitions": [
+                {
+                    "name": "ARK",
+                    "fixes": {
+                        "ARKNB": "ARKNB AT OR ABOVE 11500",
+                        "FN233": "FN233 AT OR ABOVE 7700 TRK 098 UNTIL 4.3 FROM FN233"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB26",
+            "fixes": {
+                "FN233": "FN233 7700",
+                "ARKNB": "ARKNB 6960 RNW 26 TRK 330 UNTIL 9000 TURN RIGHT DIRECT ARKNB 11500 HOLD AT ARKNB LEFT TURN INBOUNDCOURSE 065 SPEED 230 LEGTIME 1 FAF FN233 MAP ARK"
+            },
+            "transitions": [
+                {
+                    "name": "ARK",
+                    "fixes": {
+                        "ARKNB": "ARKNB AT OR ABOVE 11500",
+                        "FN233": "FN233 AT OR ABOVE 7700 TRK 098 UNTIL 4.3 FROM FN233"
+                    }
+                }
+            ]
+        }
+    ]
+}

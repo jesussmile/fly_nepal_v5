@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "25VOR",
+            "lat": 14.472530566666666,
+            "lon": 11.464166666666667
+        },
+        {
+            "name": "BUPAS",
+            "lat": 14.452833333333333,
+            "lon": 11.591416666666667
+        },
+        {
+            "name": "D086G",
+            "lat": 14.497380566666667,
+            "lon": 11.302966666666666
+        },
+        {
+            "name": "D283O",
+            "lat": 14.513886116666667,
+            "lon": 11.676966666666667
+        },
+        {
+            "name": "FD09Z",
+            "lat": 14.464136116666667,
+            "lon": 11.518458333333333
+        },
+        {
+            "name": "FD27Z",
+            "lat": 14.495813883333334,
+            "lon": 11.313147216666668
+        },
+        {
+            "name": "FS09Y",
+            "lat": 14.468286116666667,
+            "lon": 11.491636116666667
+        },
+        {
+            "name": "FS27Y",
+            "lat": 14.495730566666667,
+            "lon": 11.313705566666666
+        },
+        {
+            "name": "KAY",
+            "lat": 14.479083333333334,
+            "lon": 11.42175
+        },
+        {
+            "name": "LIPEN",
+            "lat": 14.510388883333333,
+            "lon": 11.218111116666666
+        },
+        {
+            "name": "RW27",
+            "lat": 14.484352783333334,
+            "lon": 11.387405566666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ09",
+            "fixes": {
+                "FD09Z": "FD09Z 2200",
+                "25VOR": "25VOR AT OR ABOVE 1190",
+                "KAY": "KAY 389 RNW 09 TRK 086 UNTIL 1500 TURN LEFT TRK 253 INTERCEPT RADIAL 283 TO",
+                "D283O": "D283O OVERFLY D283O 2200 TURN LEFT DIRECT",
+                "BUPAS": "BUPAS FAF FD09Z MAP KAY"
+            },
+            "transitions": [
+                {
+                    "name": "BUPAS",
+                    "fixes": {
+                        "BUPAS": "BUPAS AT OR ABOVE 2200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ27",
+            "fixes": {
+                "FD27Z": "FD27Z 1600 RNW 27 TRK 266 UNTIL 1500 TURN RIGHT TRK 102 INTERCEPT RADIAL 072 FROM",
+                "KAY": "KAY TRK 072 UNTIL 17.0 FROM KAY TURN RIGHT DIRECT",
+                "LIPEN": "LIPEN FAF FD27Z MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "LIPEN",
+                    "fixes": {
+                        "LIPEN": "LIPEN AT OR ABOVE 2200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY09",
+            "fixes": {
+                "FS09Y": "FS09Y 1700",
+                "KAY": "KAY 389 RNW 09 TRK 086 UNTIL 1500 TURN LEFT DIRECT KAY 2200 FAF FS09Y MAP KAY"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORY27",
+            "fixes": {
+                "FS27Y": "FS27Y 1600 RNW 27 TRK 266 UNTIL 1500 TURN RIGHT DIRECT",
+                "KAY": "KAY 2200 FAF FS27Y MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "KAY",
+                    "fixes": {
+                        "KAY": "KAY AT OR ABOVE 2200",
+                        "D086G": "D086G AT OR ABOVE 1600 TRK 041 UNTIL 4.4 FROM D086G"
+                    }
+                }
+            ]
+        }
+    ]
+}

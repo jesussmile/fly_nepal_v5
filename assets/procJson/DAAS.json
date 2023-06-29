@@ -1,0 +1,126 @@
+{
+    "fixes": [
+        {
+            "name": "55LOC",
+            "lat": 36.181652783333334,
+            "lon": 5.401694433333334
+        },
+        {
+            "name": "57VOR",
+            "lat": 36.181841666666664,
+            "lon": 5.405783333333333
+        },
+        {
+            "name": "CF27",
+            "lat": 36.18813888333333,
+            "lon": 5.551777783333334
+        },
+        {
+            "name": "D266H",
+            "lat": 36.16956388333333,
+            "lon": 5.124158333333333
+        },
+        {
+            "name": "D266I",
+            "lat": 36.16911388333333,
+            "lon": 5.1138805666666665
+        },
+        {
+            "name": "FD09",
+            "lat": 36.172252783333334,
+            "lon": 5.185822216666667
+        },
+        {
+            "name": "FF27",
+            "lat": 36.18549721666667,
+            "lon": 5.490097216666666
+        },
+        {
+            "name": "MD27",
+            "lat": 36.18094166666667,
+            "lon": 5.385225
+        },
+        {
+            "name": "ML27",
+            "lat": 36.18056943333333,
+            "lon": 5.377025
+        },
+        {
+            "name": "RASMA",
+            "lat": 36.124927783333334,
+            "lon": 5.484272216666667
+        },
+        {
+            "name": "STF",
+            "lat": 36.17666666666667,
+            "lon": 5.288611116666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "FD09": "FD09 5390",
+                "STF": "STF 3775 RNW 09 TRK 086 UNTIL 4.0 FROM STF TURN RIGHT DIRECT STF 6700 FAF FD09 MAP STF"
+            },
+            "transitions": [
+                {
+                    "name": "STF1",
+                    "fixes": {
+                        "STF": "STF AT OR ABOVE 6700 TRK 239 UNTIL 8.5 FROM STF TURN RIGHT DIRECT",
+                        "D266I": "D266I AT OR ABOVE 5390"
+                    }
+                },
+                {
+                    "name": "STF2",
+                    "fixes": {
+                        "STF": "STF AT OR ABOVE 6700 TRK 249 UNTIL 8.0 FROM STF TURN RIGHT DIRECT",
+                        "D266H": "D266H AT OR ABOVE 5390"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD27",
+            "fixes": {
+                "CF27": "CF27 AT OR ABOVE 5910",
+                "FF27": "FF27 5600",
+                "57VOR": "57VOR AT OR ABOVE 4310",
+                "MD27": "MD27 3986 RNW 27 TRK 266 UNTIL 4600 TRK 107 VECTORS FAF FF27 MAP MD27"
+            },
+            "transitions": [
+                {
+                    "name": "STF",
+                    "fixes": {
+                        "STF": "STF",
+                        "RASMA": "RASMA TRK 107 UNTIL 3.0 FROM RASMA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC27",
+            "fixes": {
+                "CF27": "CF27 AT OR ABOVE 5910",
+                "FF27": "FF27 5600",
+                "55LOC": "55LOC AT OR ABOVE 4240",
+                "ML27": "ML27 3853 RNW 27 TRK 266 UNTIL 4600 TRK 107 VECTORS FAF FF27 MAP ML27"
+            },
+            "transitions": [
+                {
+                    "name": "STF",
+                    "fixes": {
+                        "STF": "STF STF",
+                        "RASMA": "RASMA TRK 107 UNTIL 13.0 FROM"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "fixes": [
+        {
+            "name": "CELGA",
+            "lat": 45.64186111666667,
+            "lon": 112.28638056666667
+        },
+        {
+            "name": "DISLE",
+            "lat": 45.725625,
+            "lon": 112.24361388333334
+        },
+        {
+            "name": "DLN",
+            "lat": 45.248575,
+            "lon": 112.54713056666667
+        },
+        {
+            "name": "DURPE",
+            "lat": 45.421219433333334,
+            "lon": 112.31502778333333
+        },
+        {
+            "name": "ELOIN",
+            "lat": 45.590825,
+            "lon": 112.29331388333334
+        },
+        {
+            "name": "ERUTE",
+            "lat": 45.47954721666667,
+            "lon": 112.30715556666667
+        },
+        {
+            "name": "FELIK",
+            "lat": 45.32321666666667,
+            "lon": 112.36439721666666
+        },
+        {
+            "name": "GNARS",
+            "lat": 45.38955,
+            "lon": 112.33108333333334
+        },
+        {
+            "name": "GNAWS",
+            "lat": 45.42132221666667,
+            "lon": 112.31735
+        },
+        {
+            "name": "HIA",
+            "lat": 45.86178888333333,
+            "lon": 112.16960833333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 17",
+        "RNW 25",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "DLN2",
+            "rnw": "17",
+            "fixes": {
+                "DLN": "DLN RIGHT TURN INBOUNDCOURSE 016 ALT 12000 LEGDIST 7"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RVF2",
+            "rnw": "35",
+            "fixes": {
+                "HIA": "HIA RIGHT TURN INBOUNDCOURSE 191 ALT 10600 LEGDIST 7"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "DISLE": "DISLE AT OR ABOVE 7500",
+                "CELGA": "CELGA 6700",
+                "ELOIN": "ELOIN AT OR ABOVE 5720 RNW 17 TRK 173 UNTIL 5064",
+                "GNAWS": "GNAWS",
+                "DLN": "OVERFLY DLN AT OR ABOVE 11100 HOLD AT DLN RIGHT TURN INBOUNDCOURSE 016 ALT 11100 LEGDIST 7 FAF CELGA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "HIA",
+                    "fixes": {
+                        "HIA": "HIA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FELIK": "FELIK AT OR ABOVE 7600",
+                "GNARS": "GNARS AT OR ABOVE 7500",
+                "DURPE": "DURPE 6860",
+                "ERUTE": "ERUTE AT OR ABOVE 5740 RNW 35 TRK 353 UNTIL 5500 TURN LEFT DIRECT",
+                "DLN": "OVERFLY DLN AT OR ABOVE 11100 SPEED 185 HOLD AT DLN RIGHT TURN INBOUNDCOURSE 016 ALT 11100 LEGDIST 7 FAF DURPE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "DLN",
+                    "fixes": {
+                        "DLN": "DLN"
+                    }
+                }
+            ]
+        }
+    ]
+}

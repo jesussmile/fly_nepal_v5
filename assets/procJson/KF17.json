@@ -1,0 +1,173 @@
+{
+    "fixes": [
+        {
+            "name": "AZGUF",
+            "lat": 31.739266666666666,
+            "lon": 94.1384
+        },
+        {
+            "name": "CARTH",
+            "lat": 32.12740556666667,
+            "lon": 94.17720833333334
+        },
+        {
+            "name": "COVEX",
+            "lat": 31.903305566666667,
+            "lon": 93.73874443333334
+        },
+        {
+            "name": "CZJNB",
+            "lat": 31.832877783333334,
+            "lon": 94.15378333333334
+        },
+        {
+            "name": "DEBKY",
+            "lat": 32.021580566666664,
+            "lon": 94.19361943333334
+        },
+        {
+            "name": "FF17",
+            "lat": 31.920594433333335,
+            "lon": 94.18919721666667
+        },
+        {
+            "name": "FIJEC",
+            "lat": 31.640272216666666,
+            "lon": 94.11911943333334
+        },
+        {
+            "name": "GGG",
+            "lat": 32.41775556666666,
+            "lon": 94.75319443333333
+        },
+        {
+            "name": "HUPHA",
+            "lat": 31.626525,
+            "lon": 94.21539721666667
+        },
+        {
+            "name": "LFK",
+            "lat": 31.162441666666666,
+            "lon": 94.71683333333333
+        },
+        {
+            "name": "PI001",
+            "lat": 31.888031066666667,
+            "lon": 94.17615038333334
+        },
+        {
+            "name": "PI002",
+            "lat": 31.919425133333334,
+            "lon": 94.25203886666667
+        },
+        {
+            "name": "PI003",
+            "lat": 31.990448216666667,
+            "lon": 94.21776041666666
+        },
+        {
+            "name": "SIYGO",
+            "lat": 31.922519433333335,
+            "lon": 94.17420556666667
+        },
+        {
+            "name": "SODVE",
+            "lat": 31.867055566666668,
+            "lon": 94.16335556666667
+        },
+        {
+            "name": "TECRO",
+            "lat": 31.653947216666666,
+            "lon": 94.02281388333333
+        },
+        {
+            "name": "WENDE",
+            "lat": 31.857086116666668,
+            "lon": 94.1614
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB17",
+            "fixes": {
+                "FF17": "FF17 2000 RNW 17",
+                "CZJNB": "OVERFLY CZJNB AT OR ABOVE 720 TRK 157 UNTIL 1500 TURN LEFT DIRECT CZJNB AT OR ABOVE 3000 HOLD AT CZJNB RIGHT TURN INBOUNDCOURSE 157 LEGTIME 1 FAF FF17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "GGG",
+                    "fixes": {
+                        "GGG": "GGG",
+                        "CZJNB": "CZJNB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "LFK",
+                    "fixes": {
+                        "LFK": "LFK",
+                        "CZJNB": "CZJNB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "DEBKY": "DEBKY AT OR ABOVE 3000 OVERFLY DEBKY AT OR ABOVE 3000 HOLD AT DEBKY RIGHT TURN INBOUNDCOURSE 167 ALT 3000 LEGDIST 4 FAF SIYGO MAP RNW 17",
+                "SIYGO": "SIYGO 2000",
+                "SODVE": "SODVE AT OR ABOVE 900 RNW 17 TRK 167 UNTIL 720 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CARTH",
+                    "fixes": {
+                        "CARTH": "CARTH"
+                    }
+                },
+                {
+                    "name": "DEBKY",
+                    "fixes": {
+                        "DEBKY": "DEBKY RIGHT TURN INBOUNDCOURSE 167 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FIJEC": "FIJEC AT OR ABOVE 3000",
+                "AZGUF": "AZGUF 2000 RNW 35 TRK 347 UNTIL 719",
+                "WENDE": "WENDE",
+                "CARTH": "OVERFLY CARTH AT OR ABOVE 3800 HOLD AT CARTH RIGHT TURN INBOUNDCOURSE 294 LEGDIST 4 FAF AZGUF MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "COVEX",
+                    "fixes": {
+                        "COVEX": "COVEX",
+                        "TECRO": "TECRO AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "LFK",
+                    "fixes": {
+                        "LFK": "LFK",
+                        "HUPHA": "HUPHA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

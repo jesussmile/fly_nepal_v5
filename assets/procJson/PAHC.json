@@ -1,0 +1,169 @@
+{
+    "fixes": [
+        {
+            "name": "ANIAK",
+            "lat": 61.61728333333333,
+            "lon": 159.63128056666667
+        },
+        {
+            "name": "CUNAN",
+            "lat": 61.950463883333335,
+            "lon": 159.79455556666667
+        },
+        {
+            "name": "HOKRI",
+            "lat": 62.31432221666667,
+            "lon": 159.61153888333334
+        },
+        {
+            "name": "IBBEB",
+            "lat": 62.39999721666667,
+            "lon": 159.70895556666667
+        },
+        {
+            "name": "KESKE",
+            "lat": 62.18005278333333,
+            "lon": 159.78558333333334
+        },
+        {
+            "name": "NEYBI",
+            "lat": 62.196494433333335,
+            "lon": 159.76436943333334
+        },
+        {
+            "name": "NUANC",
+            "lat": 62.356941666666664,
+            "lon": 159.55591111666666
+        },
+        {
+            "name": "PIYSO",
+            "lat": 62.04401943333333,
+            "lon": 159.96006388333333
+        },
+        {
+            "name": "PUTDU",
+            "lat": 62.04421943333333,
+            "lon": 160.16592221666667
+        },
+        {
+            "name": "SUMJE",
+            "lat": 62.271683333333335,
+            "lon": 159.66700833333334
+        },
+        {
+            "name": "SURFU",
+            "lat": 61.95895278333333,
+            "lon": 159.862525
+        },
+        {
+            "name": "TRUMN",
+            "lat": 62.00166943333333,
+            "lon": 160.01401111666667
+        },
+        {
+            "name": "WEJYY",
+            "lat": 62.31371943333333,
+            "lon": 159.40330556666666
+        },
+        {
+            "name": "YAXBY",
+            "lat": 62.08748333333333,
+            "lon": 159.90451943333332
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [
+        {
+            "name": "ANIAK2",
+            "rnw": "10",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 01",
+                    "fixes": {
+                        "RNW 01": "RNW 01 HDG 013 UNTIL 1000 TURN RIGHT DIRECT",
+                        "CUNAN": "CUNAN",
+                        "ANIAK": "ANIAK"
+                    }
+                },
+                {
+                    "rwy": "RNW 19",
+                    "fixes": {
+                        "RNW 19": "RNW 19 HDG 193 UNTIL 1000",
+                        "CUNAN": "CUNAN",
+                        "ANIAK": "ANIAK"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "PIYSO": "PIYSO AT OR ABOVE 2700",
+                "YAXBY": "YAXBY 2300",
+                "KESKE": "OVERFLY KESKE 204 RNW 01 TRK 013 UNTIL 475 TURN LEFT DIRECT",
+                "TRUMN": "OVERFLY TRUMN AT OR ABOVE 2700 HOLD AT TRUMN RIGHT TURN INBOUNDCOURSE 013 LEGDIST 4 FAF YAXBY MAP KESKE"
+            },
+            "transitions": [
+                {
+                    "name": "PUTDU",
+                    "fixes": {
+                        "PUTDU": "PUTDU",
+                        "TRUMN": "TRUMN AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "SURFU",
+                    "fixes": {
+                        "SURFU": "SURFU",
+                        "TRUMN": "TRUMN AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "TRUMN",
+                    "fixes": {
+                        "TRUMN": "TRUMN RIGHT TURN INBOUNDCOURSE 013 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "HOKRI": "HOKRI AT OR ABOVE 2400",
+                "SUMJE": "SUMJE 1900",
+                "NEYBI": "OVERFLY NEYBI 203 RNW 19 TRK 193 UNTIL 475 TURN LEFT DIRECT",
+                "NUANC": "OVERFLY NUANC AT OR ABOVE 2700 HOLD AT NUANC RIGHT TURN INBOUNDCOURSE 193 LEGDIST 4 FAF SUMJE MAP NEYBI"
+            },
+            "transitions": [
+                {
+                    "name": "IBBEB",
+                    "fixes": {
+                        "IBBEB": "IBBEB",
+                        "NUANC": "NUANC AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "NUANC",
+                    "fixes": {
+                        "NUANC": "NUANC RIGHT TURN INBOUNDCOURSE 193 ALT 2700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WEJYY",
+                    "fixes": {
+                        "WEJYY": "WEJYY",
+                        "NUANC": "NUANC AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        }
+    ]
+}

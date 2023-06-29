@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "COLBU",
+            "lat": 36.399738883333335,
+            "lon": 86.52374166666667
+        },
+        {
+            "name": "DABFA",
+            "lat": 36.5128,
+            "lon": 86.49635556666667
+        },
+        {
+            "name": "EBILY",
+            "lat": 36.55664721666667,
+            "lon": 86.48571111666666
+        },
+        {
+            "name": "EDROY",
+            "lat": 36.78923888333333,
+            "lon": 86.42901388333334
+        },
+        {
+            "name": "UPUNE",
+            "lat": 36.67622778333333,
+            "lon": 86.45660833333334
+        },
+        {
+            "name": "VIGKU",
+            "lat": 36.62744721666667,
+            "lon": 86.46849443333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "COLBU": "COLBU AT OR ABOVE 3000",
+                "DABFA": "DABFA 2300",
+                "EBILY": "EBILY AT OR ABOVE 1440 RNW 01 TRK 013 UNTIL 1090",
+                "EDROY": "OVERFLY EDROY AT OR ABOVE 3000 HOLD AT EDROY RIGHT TURN INBOUNDCOURSE 193 LEGDIST 4 FAF DABFA MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "COLBU",
+                    "fixes": {
+                        "COLBU": "COLBU RIGHT TURN INBOUNDCOURSE 013 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "EDROY": "EDROY AT OR ABOVE 3000",
+                "UPUNE": "UPUNE 2300",
+                "VIGKU": "VIGKU AT OR ABOVE 1340 RNW 19 TRK 193 UNTIL 1020",
+                "COLBU": "OVERFLY COLBU AT OR ABOVE 3000 HOLD AT COLBU RIGHT TURN INBOUNDCOURSE 013 LEGDIST 4 FAF UPUNE MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "EDROY",
+                    "fixes": {
+                        "EDROY": "EDROY RIGHT TURN INBOUNDCOURSE 193 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

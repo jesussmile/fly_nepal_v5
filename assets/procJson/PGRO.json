@@ -1,0 +1,197 @@
+{
+    "fixes": [
+        {
+            "name": "CEPOS",
+            "lat": 14.168827783333333,
+            "lon": 145.30222778333334
+        },
+        {
+            "name": "CULPS",
+            "lat": 13.997672216666667,
+            "lon": 144.95806111666667
+        },
+        {
+            "name": "EPCAX",
+            "lat": 14.229258333333334,
+            "lon": 145.05423056666666
+        },
+        {
+            "name": "ERTTS",
+            "lat": 14.168319433333334,
+            "lon": 145.02891666666667
+        },
+        {
+            "name": "FN09",
+            "lat": 14.203936116666666,
+            "lon": 145.12435
+        },
+        {
+            "name": "FN27",
+            "lat": 14.183063883333332,
+            "lon": 145.32303611666666
+        },
+        {
+            "name": "GRONB",
+            "lat": 14.171613883333332,
+            "lon": 145.24
+        },
+        {
+            "name": "JIRGI",
+            "lat": 14.189063883333333,
+            "lon": 145.05498611666667
+        },
+        {
+            "name": "KAQTU",
+            "lat": 13.761927783333334,
+            "lon": 144.97034721666665
+        },
+        {
+            "name": "MONIE",
+            "lat": 14.369963883333334,
+            "lon": 145.11278888333334
+        },
+        {
+            "name": "NUJCO",
+            "lat": 14.469305566666666,
+            "lon": 145.51896111666667
+        },
+        {
+            "name": "ONSUW",
+            "lat": 14.180686116666667,
+            "lon": 145.15773888333334
+        },
+        {
+            "name": "OPBUL",
+            "lat": 14.171452783333333,
+            "lon": 145.33434166666666
+        },
+        {
+            "name": "PI001",
+            "lat": 14.179724966666667,
+            "lon": 145.29958093333335
+        },
+        {
+            "name": "PI002",
+            "lat": 14.236956416666667,
+            "lon": 145.34407763333334
+        },
+        {
+            "name": "PI003",
+            "lat": 14.194749333333334,
+            "lon": 145.41024256666665
+        },
+        {
+            "name": "REWJU",
+            "lat": 14.001672216666666,
+            "lon": 145.47582221666667
+        },
+        {
+            "name": "TOXPA",
+            "lat": 14.167952783333334,
+            "lon": 145.44579443333333
+        },
+        {
+            "name": "ZOVIK",
+            "lat": 14.311580566666667,
+            "lon": 145.0269
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FN09": "FN09 2900 RNW 09",
+                "GRONB": "OVERFLY GRONB TRK 104 UNTIL 2200 TURN LEFT DIRECT GRONB AT OR ABOVE 3100 HOLD AT GRONB LEFT TURN INBOUNDCOURSE 104 LEGTIME 1 FAF FN09 MAP RNW 09"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FN27": "FN27 2000 RNW 27",
+                "GRONB": "OVERFLY GRONB TRK 260 UNTIL 1110 HDG 000 UNTIL 2000 TURN RIGHT DIRECT GRONB AT OR ABOVE 3100 HOLD AT GRONB RIGHT TURN INBOUNDCOURSE 260 LEGTIME 1 FAF FN27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "ERTTS",
+                    "fixes": {
+                        "ERTTS": "ERTTS",
+                        "GRONB": "GRONB AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "KAQTU",
+                    "fixes": {
+                        "KAQTU": "KAQTU",
+                        "GRONB": "GRONB AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "JIRGI": "JIRGI AT OR ABOVE 3000",
+                "ONSUW": "ONSUW 2000 RNW 09 TRK 093 UNTIL 1000",
+                "CEPOS": "CEPOS",
+                "TOXPA": "OVERFLY TOXPA AT OR ABOVE 3000 HOLD AT TOXPA RIGHT TURN INBOUNDCOURSE 270 LEGDIST 4 FAF ONSUW MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "CULPS",
+                    "fixes": {
+                        "CULPS": "CULPS"
+                    }
+                },
+                {
+                    "name": "MONIE",
+                    "fixes": {
+                        "MONIE": "MONIE",
+                        "ZOVIK": "ZOVIK AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "TOXPA": "TOXPA AT OR ABOVE 3000",
+                "OPBUL": "OPBUL 2200 RNW 27 TRK 270 UNTIL 1200",
+                "EPCAX": "OVERFLY EPCAX AT OR ABOVE 3000 HOLD AT EPCAX RIGHT TURN INBOUNDCOURSE 107 LEGDIST 4 FAF OPBUL MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "KAQTU",
+                    "fixes": {
+                        "KAQTU": "KAQTU",
+                        "REWJU": "REWJU AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "NUJCO",
+                    "fixes": {
+                        "NUJCO": "NUJCO"
+                    }
+                },
+                {
+                    "name": "TOXPA",
+                    "fixes": {
+                        "TOXPA": "TOXPA RIGHT TURN INBOUNDCOURSE 270 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

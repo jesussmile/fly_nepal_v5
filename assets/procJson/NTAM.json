@@ -1,0 +1,95 @@
+{
+    "fixes": [
+        {
+            "name": "ADKUP",
+            "lat": 22.641444433333334,
+            "lon": 152.99347221666667
+        },
+        {
+            "name": "AM410",
+            "lat": 22.720527783333335,
+            "lon": 152.89077778333333
+        },
+        {
+            "name": "AM412",
+            "lat": 22.725027783333335,
+            "lon": 152.99136111666667
+        },
+        {
+            "name": "AM420",
+            "lat": 22.716527783333333,
+            "lon": 152.71547221666665
+        },
+        {
+            "name": "AM422",
+            "lat": 22.716444433333333,
+            "lon": 152.61619443333333
+        },
+        {
+            "name": "FAM07",
+            "lat": 22.639444433333335,
+            "lon": 152.90341666666666
+        },
+        {
+            "name": "FAM25",
+            "lat": 22.635,
+            "lon": 152.70858333333334
+        },
+        {
+            "name": "MALYC",
+            "lat": 22.632833333333334,
+            "lon": 152.61852778333332
+        },
+        {
+            "name": "TARIR",
+            "lat": 22.63725,
+            "lon": 152.80530556666668
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA07",
+            "fixes": {
+                "ADKUP": "ADKUP AT OR ABOVE 1700 ADKUP AT OR ABOVE 1700 FAF FAM07 MAP RNW 07",
+                "FAM07": "FAM07 1700 RNW 07 TRK 074 UNTIL 1200 TURN RIGHT DIRECT",
+                "AM410": "AM410",
+                "AM412": "AM412 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TARIR",
+                    "fixes": {
+                        "TARIR": "TARIR AT OR ABOVE 1700",
+                        "AM410": "AM410",
+                        "AM412": "AM412"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB25",
+            "fixes": {
+                "MALYC": "MALYC AT OR ABOVE 1700 MALYC AT OR ABOVE 1700 FAF FAM25 MAP RNW 25",
+                "FAM25": "FAM25 1700 RNW 25 TRK 254 UNTIL 1200 TURN LEFT DIRECT",
+                "AM420": "AM420",
+                "AM422": "AM422 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TARIR",
+                    "fixes": {
+                        "TARIR": "TARIR AT OR ABOVE 1700",
+                        "AM420": "AM420",
+                        "AM422": "AM422"
+                    }
+                }
+            ]
+        }
+    ]
+}

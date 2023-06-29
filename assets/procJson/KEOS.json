@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "EDOGY",
+            "lat": 36.90162778333333,
+            "lon": 94.36762778333333
+        },
+        {
+            "name": "KIGEC",
+            "lat": 36.72133611666667,
+            "lon": 94.41536943333334
+        },
+        {
+            "name": "RUKOC",
+            "lat": 36.608358333333335,
+            "lon": 94.44517221666666
+        },
+        {
+            "name": "TOGAS",
+            "lat": 37.014513883333336,
+            "lon": 94.33761943333333
+        },
+        {
+            "name": "VUVVU",
+            "lat": 36.863216666666666,
+            "lon": 94.37781666666666
+        },
+        {
+            "name": "ZOVEG",
+            "lat": 36.77470278333333,
+            "lon": 94.40126111666666
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "RUKOC": "RUKOC AT OR ABOVE 3300",
+                "KIGEC": "KIGEC 2900",
+                "ZOVEG": "ZOVEG AT OR ABOVE 1840 RNW 01 TRK 010 UNTIL 1505",
+                "TOGAS": "OVERFLY TOGAS AT OR ABOVE 3200 HOLD AT TOGAS LEFT TURN INBOUNDCOURSE 190 LEGDIST 4 FAF KIGEC MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "RUKOC",
+                    "fixes": {
+                        "RUKOC": "RUKOC RIGHT TURN INBOUNDCOURSE 010 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "TOGAS": "TOGAS AT OR ABOVE 3200",
+                "EDOGY": "EDOGY 2900",
+                "VUVVU": "VUVVU AT OR ABOVE 2140 RNW 19 TRK 190 UNTIL 1469",
+                "RUKOC": "OVERFLY RUKOC AT OR ABOVE 3300 HOLD AT RUKOC RIGHT TURN INBOUNDCOURSE 010 LEGDIST 4 FAF EDOGY MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "TOGAS",
+                    "fixes": {
+                        "TOGAS": "TOGAS LEFT TURN INBOUNDCOURSE 190 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

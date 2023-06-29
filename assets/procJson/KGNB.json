@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "BKLMN",
+            "lat": 40.07476666666667,
+            "lon": 106.00733611666666
+        },
+        {
+            "name": "EMMLE",
+            "lat": 40.08759166666667,
+            "lon": 105.92431388333333
+        },
+        {
+            "name": "JANKE",
+            "lat": 40.17296111666667,
+            "lon": 106.42405556666667
+        },
+        {
+            "name": "PAACO",
+            "lat": 40.04073056666667,
+            "lon": 106.2152
+        },
+        {
+            "name": "PUZEN",
+            "lat": 40.084066666666665,
+            "lon": 106.36048056666667
+        },
+        {
+            "name": "VRCHK",
+            "lat": 40.06879443333333,
+            "lon": 106.04585278333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "JANKE1",
+            "rnw": "27",
+            "fixes": {
+                "PUZEN": "PUZEN",
+                "JANKE": "JANKE AT OR ABOVE 14000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVC09",
+            "fixes": {
+                "PAACO": "PAACO AT OR ABOVE 11100 PAACO SPEED 165",
+                "VRCHK": "VRCHK 11100",
+                "BKLMN": "BKLMN AT OR ABOVE 10500",
+                "EMMLE": "OVERFLY EMMLE 10180 RNW 09 TRK 071 UNTIL 10180 TURN RIGHT DIRECT",
+                "JANKE": "OVERFLY JANKE AT OR ABOVE 13000 HOLD AT JANKE RIGHT TURN INBOUNDCOURSE 143 LEGDIST 8 FAF VRCHK MAP EMMLE"
+            },
+            "transitions": [
+                {
+                    "name": "JANKE",
+                    "fixes": {
+                        "JANKE": "JANKE SPEED 210",
+                        "PUZEN": "PUZEN AT OR ABOVE 12000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVC27",
+            "fixes": {
+                "PAACO": "PAACO AT OR ABOVE 11100 PAACO SPEED 165",
+                "VRCHK": "VRCHK 11100",
+                "BKLMN": "BKLMN AT OR ABOVE 10500",
+                "EMMLE": "OVERFLY EMMLE 10180 RNW 27 TRK 071 UNTIL 10180 TURN RIGHT DIRECT",
+                "JANKE": "OVERFLY JANKE AT OR ABOVE 13000 HOLD AT JANKE RIGHT TURN INBOUNDCOURSE 143 LEGDIST 8 FAF VRCHK MAP EMMLE"
+            },
+            "transitions": [
+                {
+                    "name": "JANKE",
+                    "fixes": {
+                        "JANKE": "JANKE SPEED 210",
+                        "PUZEN": "PUZEN AT OR ABOVE 12000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "fixes": [
+        {
+            "name": "ACHES",
+            "lat": 37.43588333333334,
+            "lon": 105.43355556666667
+        },
+        {
+            "name": "ALS",
+            "lat": 37.349158333333335,
+            "lon": 105.81553333333333
+        },
+        {
+            "name": "DELTS",
+            "lat": 37.3177,
+            "lon": 105.54556111666666
+        },
+        {
+            "name": "HALSA",
+            "lat": 37.37631666666667,
+            "lon": 105.49006666666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "DELTS1",
+            "rnw": "21",
+            "fixes": {
+                "HALSA": "HALSA",
+                "DELTS": "OVERFLY DELTS"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ACHES",
+                    "fixes": [
+                        "ACHES"
+                    ]
+                },
+                {
+                    "name": "ALS",
+                    "fixes": [
+                        "ALS"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVM03",
+            "fixes": {
+                "DELTS": "DELTS AT OR ABOVE 10800 OVERFLY DELTS AT OR ABOVE 10800 SPEED 150 HOLD AT DELTS RIGHT TURN INBOUNDCOURSE 028 LEGDIST 7 FAF HALSA MAP ACHES",
+                "HALSA": "HALSA 10200",
+                "ACHES": "OVERFLY ACHES 8774 RNW 03 TRK 028 UNTIL 9100 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ACHES",
+                    "fixes": {
+                        "ACHES": "ACHES",
+                        "DELTS": "OVERFLY DELTS AT OR ABOVE 10800 HOLD AT DELTS RIGHT TURN INBOUNDCOURSE 028 ALT 10800 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "ALS",
+                    "fixes": {
+                        "ALS": "ALS"
+                    }
+                }
+            ]
+        }
+    ]
+}

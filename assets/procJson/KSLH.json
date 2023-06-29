@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "BETAY",
+            "lat": 45.67316388333333,
+            "lon": 84.84421111666667
+        },
+        {
+            "name": "CATAP",
+            "lat": 45.65397778333333,
+            "lon": 84.65563333333333
+        },
+        {
+            "name": "CUTUP",
+            "lat": 45.644558333333336,
+            "lon": 84.58338056666666
+        },
+        {
+            "name": "FELNO",
+            "lat": 45.654094433333334,
+            "lon": 84.59615556666667
+        },
+        {
+            "name": "FIDOG",
+            "lat": 45.654263883333336,
+            "lon": 84.39719166666667
+        },
+        {
+            "name": "FIKAM",
+            "lat": 45.654172216666666,
+            "lon": 84.25474166666666
+        },
+        {
+            "name": "FODAR",
+            "lat": 45.598225,
+            "lon": 84.84832778333333
+        },
+        {
+            "name": "JATRA",
+            "lat": 45.66227778333333,
+            "lon": 84.79802778333334
+        },
+        {
+            "name": "OTREE",
+            "lat": 45.50265,
+            "lon": 84.61093056666667
+        },
+        {
+            "name": "PI001",
+            "lat": 45.61552113333333,
+            "lon": 84.74466318333333
+        },
+        {
+            "name": "PI002",
+            "lat": 45.553444533333334,
+            "lon": 84.79583583333333
+        },
+        {
+            "name": "PI003",
+            "lat": 45.58727973333333,
+            "lon": 84.89414948333334
+        },
+        {
+            "name": "PINES",
+            "lat": 46.030447216666666,
+            "lon": 84.48673611666666
+        },
+        {
+            "name": "PLN",
+            "lat": 45.63064721666667,
+            "lon": 84.66410833333333
+        },
+        {
+            "name": "REEFY",
+            "lat": 45.789569433333334,
+            "lon": 83.95514443333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 17",
+        "RNW 28",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "JATRA": "JATRA AT OR ABOVE 2600",
+                "CATAP": "CATAP 2400",
+                "FELNO": "FELNO AT OR ABOVE 1620 RNW 10 TRK 097 UNTIL 1040",
+                "FIKAM": "OVERFLY FIKAM AT OR ABOVE 2600 HOLD AT FIKAM RIGHT TURN INBOUNDCOURSE 277 LEGDIST 4 FAF CATAP MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "PINES",
+                    "fixes": {
+                        "PINES": "PINES",
+                        "JATRA": "OVERFLY JATRA AT OR ABOVE 2600 HOLD AT JATRA RIGHT TURN INBOUNDCOURSE 102 ALT 2600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PLN": "PLN",
+                        "JATRA": "OVERFLY JATRA AT OR ABOVE 2600 HOLD AT JATRA RIGHT TURN INBOUNDCOURSE 102 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "FIKAM": "FIKAM AT OR ABOVE 2600",
+                "FIDOG": "FIDOG 2200 RNW 28 TRK 277 UNTIL 877",
+                "CATAP": "CATAP",
+                "JATRA": "OVERFLY JATRA AT OR ABOVE 2600 HOLD AT JATRA RIGHT TURN INBOUNDCOURSE 102 LEGDIST 4 FAF FIDOG MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PLN": "PLN",
+                        "FIKAM": "OVERFLY FIKAM AT OR ABOVE 2600 HOLD AT FIKAM RIGHT TURN INBOUNDCOURSE 277 ALT 2600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "REEFY",
+                    "fixes": {
+                        "REEFY": "REEFY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR10",
+            "fixes": {
+                "FODAR": "FODAR AT OR ABOVE 3000",
+                "PLN": "PLN 2600 PLN HOLD AT PLN RIGHT TURN INBOUNDCOURSE 082 LEGTIME 1 FAF PLN MAP RNW 10",
+                "CUTUP": "CUTUP AT OR ABOVE 1360 RNW 10 TRK 082 UNTIL 2800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BETAY",
+                    "fixes": {
+                        "BETAY": "BETAY"
+                    }
+                },
+                {
+                    "name": "OTREE",
+                    "fixes": {
+                        "OTREE": "OTREE"
+                    }
+                },
+                {
+                    "name": "PLN",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

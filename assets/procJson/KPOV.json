@@ -1,0 +1,129 @@
+{
+    "fixes": [
+        {
+            "name": "ACO",
+            "lat": 41.10790278333333,
+            "lon": 81.20151943333333
+        },
+        {
+            "name": "FRDOM",
+            "lat": 41.21755278333333,
+            "lon": 81.13724443333334
+        },
+        {
+            "name": "IWWEB",
+            "lat": 41.193761116666664,
+            "lon": 81.50028611666667
+        },
+        {
+            "name": "PI001",
+            "lat": 41.05460835,
+            "lon": 81.1700557
+        },
+        {
+            "name": "PI002",
+            "lat": 41.028891316666666,
+            "lon": 81.08136468333333
+        },
+        {
+            "name": "PI003",
+            "lat": 40.95561033333333,
+            "lon": 81.11175806666667
+        },
+        {
+            "name": "POVGE",
+            "lat": 41.209011116666666,
+            "lon": 81.25095556666666
+        },
+        {
+            "name": "WHINR",
+            "lat": 41.226055566666666,
+            "lon": 81.00298888333333
+        },
+        {
+            "name": "WUNIS",
+            "lat": 41.20268888333333,
+            "lon": 81.36612778333334
+        },
+        {
+            "name": "WYGLE",
+            "lat": 41.21415,
+            "lon": 81.19028611666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "IWWEB": "IWWEB AT OR ABOVE 4000",
+                "WUNIS": "WUNIS 2800 RNW 09 TRK 093 UNTIL 1444",
+                "WHINR": "OVERFLY WHINR AT OR ABOVE 4000 HOLD AT WHINR RIGHT TURN INBOUNDCOURSE 273 LEGDIST 4 FAF WUNIS MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "IWWEB",
+                    "fixes": {
+                        "IWWEB": "IWWEB RIGHT TURN INBOUNDCOURSE 093 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "WHINR": "WHINR AT OR ABOVE 4000",
+                "FRDOM": "FRDOM 2800",
+                "WYGLE": "WYGLE AT OR ABOVE 2020 RNW 27 TRK 273 UNTIL 1466",
+                "IWWEB": "OVERFLY IWWEB AT OR ABOVE 4000 HOLD AT IWWEB RIGHT TURN INBOUNDCOURSE 093 LEGDIST 4 FAF FRDOM MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "WHINR",
+                    "fixes": {
+                        "WHINR": "WHINR RIGHT TURN INBOUNDCOURSE 273 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA09",
+            "fixes": {
+                "ACO": "ACO 2800 ACO HOLD AT ACO RIGHT TURN INBOUNDCOURSE 344 LEGTIME 1 FAF ACO MAP POVGE",
+                "POVGE": "POVGE 1920 RNW 09 TRK 344 UNTIL 2900 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ACO",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA27",
+            "fixes": {
+                "ACO": "ACO 2800 ACO HOLD AT ACO RIGHT TURN INBOUNDCOURSE 344 LEGTIME 1 FAF ACO MAP POVGE",
+                "POVGE": "POVGE 1920 RNW 27 TRK 344 UNTIL 2900 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ACO",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

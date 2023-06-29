@@ -1,0 +1,162 @@
+{
+    "fixes": [
+        {
+            "name": "CFRST",
+            "lat": 39.467108333333336,
+            "lon": 84.25519166666666
+        },
+        {
+            "name": "ELIHO",
+            "lat": 39.68455278333333,
+            "lon": 84.35956388333334
+        },
+        {
+            "name": "LULOC",
+            "lat": 39.538183333333336,
+            "lon": 84.244675
+        },
+        {
+            "name": "MIZZA",
+            "lat": 39.497058333333335,
+            "lon": 84.45674166666667
+        },
+        {
+            "name": "MWNB",
+            "lat": 39.578186116666664,
+            "lon": 84.32353056666666
+        },
+        {
+            "name": "OSDIE",
+            "lat": 39.68684721666666,
+            "lon": 84.15405
+        },
+        {
+            "name": "PI001",
+            "lat": 39.63015643333333,
+            "lon": 84.35791583333334
+        },
+        {
+            "name": "PI002",
+            "lat": 39.65226906666667,
+            "lon": 84.44644198333333
+        },
+        {
+            "name": "PI003",
+            "lat": 39.726645766666664,
+            "lon": 84.42191148333333
+        },
+        {
+            "name": "SHIRT",
+            "lat": 39.63297778333333,
+            "lon": 83.57115
+        },
+        {
+            "name": "WUSPU",
+            "lat": 39.25396666666666,
+            "lon": 84.27141943333334
+        },
+        {
+            "name": "XODJI",
+            "lat": 39.491627783333335,
+            "lon": 84.24906943333333
+        },
+        {
+            "name": "YOVUC",
+            "lat": 39.633380566666666,
+            "lon": 84.23566666666666
+        },
+        {
+            "name": "ZAKIT",
+            "lat": 39.724505566666664,
+            "lon": 84.33885556666667
+        },
+        {
+            "name": "ZAMHO",
+            "lat": 39.38003333333333,
+            "lon": 84.25957221666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA01",
+            "fixes": {
+                "MWNB": "MWNB 3000 MWNB AT OR ABOVE 3000 HOLD AT MWNB RIGHT TURN INBOUNDCOURSE 158 LEGTIME 1 FAF MWNB MAP CFRS",
+                "CFRST": "CFRST 1680 RNW 01 TRK 158 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MW",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA19",
+            "fixes": {
+                "MWNB": "MWNB 3000 MWNB AT OR ABOVE 3000 HOLD AT MWNB RIGHT TURN INBOUNDCOURSE 158 LEGTIME 1 FAF MWNB MAP CFRS",
+                "CFRST": "CFRST 1680 RNW 19 TRK 158 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MW",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "WUSPU": "WUSPU AT OR ABOVE 2800",
+                "ZAMHO": "ZAMHO 2500 RNW 01 TRK 009 UNTIL 1400",
+                "ELIHO": "OVERFLY ELIHO AT OR ABOVE 3000 HOLD AT ELIHO RIGHT TURN INBOUNDCOURSE 114 LEGDIST 4 FAF ZAMHO MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "MIZZA",
+                    "fixes": {
+                        "MIZZA": "MIZZA",
+                        "WUSPU": "OVERFLY WUSPU AT OR ABOVE 2800 HOLD AT WUSPU RIGHT TURN INBOUNDCOURSE 009 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "YOVUC": "YOVUC AT OR ABOVE 3000",
+                "LULOC": "LULOC 2500",
+                "XODJI": "XODJI AT OR ABOVE 1460 RNW 19 TRK 189 UNTIL 1280",
+                "WUSPU": "OVERFLY WUSPU AT OR ABOVE 3000 HOLD AT WUSPU RIGHT TURN INBOUNDCOURSE 009 LEGDIST 4 FAF LULOC MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "SHIRT",
+                    "fixes": {
+                        "SHIRT": "SHIRT",
+                        "OSDIE": "OSDIE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "ZAKIT",
+                    "fixes": {
+                        "ZAKIT": "ZAKIT"
+                    }
+                }
+            ]
+        }
+    ]
+}

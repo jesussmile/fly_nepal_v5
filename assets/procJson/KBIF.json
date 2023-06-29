@@ -1,0 +1,92 @@
+{
+    "fixes": [
+        {
+            "name": "CULAC",
+            "lat": 31.923530566666667,
+            "lon": 106.29658056666666
+        },
+        {
+            "name": "EWM",
+            "lat": 31.951786116666668,
+            "lon": 106.27245833333333
+        },
+        {
+            "name": "HIMUP",
+            "lat": 31.994772216666668,
+            "lon": 106.21601388333333
+        },
+        {
+            "name": "JUVTO",
+            "lat": 31.902080566666665,
+            "lon": 106.3248
+        },
+        {
+            "name": "PIERS",
+            "lat": 31.948744433333335,
+            "lon": 106.08045
+        },
+        {
+            "name": "XOWMU",
+            "lat": 31.888230566666667,
+            "lon": 106.336425
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "HIMUP": "HIMUP AT OR ABOVE 6800",
+                "CULAC": "CULAC 5600",
+                "XOWMU": "XOWMU AT OR ABOVE 4660 RNW 22 TRK 216 UNTIL 4400 TURN LEFT DIRECT",
+                "PIERS": "OVERFLY PIERS AT OR ABOVE 8200 HOLD AT PIERS LEFT TURN INBOUNDCOURSE 259 ALT 8200 LEGDIST 7 FAF CULAC MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "PIERS",
+                    "fixes": {
+                        "PIERS": "PIERS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR22",
+            "fixes": {
+                "EWM": "EWM 6300 EWM AT OR ABOVE 8000 HOLD AT EWM RIGHT TURN INBOUNDCOURSE 210 ALT 10000 LEGTIME 1 FAF EWM MAP RNW 22",
+                "JUVTO": "JUVTO AT OR ABOVE 5000 RNW 22 TRK 210 UNTIL 4350 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PIERS",
+                    "fixes": {
+                        "PIERS": "PIERS",
+                        "EWM": "EWM AT OR ABOVE 7400 HOLD AT EWM RIGHT TURN INBOUNDCOURSE 210 ALT 6300 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR22",
+            "fixes": {
+                "EWM": "EWM 6300 EWM AT OR ABOVE 8000",
+                "JUVTO": "JUVTO AT OR ABOVE 5000 RNW 22 TRK 210 UNTIL 4350 TURN LEFT DIRECT",
+                "PIERS": "PIERS AT OR ABOVE 8200 HOLD AT PIERS LEFT TURN INBOUNDCOURSE 259 LEGTIME 1 FAF EWM MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "PIERS",
+                    "fixes": {
+                        "PIERS": "PIERS",
+                        "EWM": "EWM AT OR ABOVE 7400 HOLD AT EWM RIGHT TURN INBOUNDCOURSE 210 ALT 6300 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

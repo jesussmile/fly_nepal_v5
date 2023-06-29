@@ -1,0 +1,229 @@
+{
+    "fixes": [
+        {
+            "name": "ANTIG",
+            "lat": 17.436111116666666,
+            "lon": 121.62
+        },
+        {
+            "name": "CUY",
+            "lat": 16.931611116666666,
+            "lon": 121.74808333333333
+        },
+        {
+            "name": "KALIN",
+            "lat": 17.539444433333333,
+            "lon": 121.59638888333333
+        },
+        {
+            "name": "LAGAN",
+            "lat": 17.228055566666665,
+            "lon": 121.78361111666666
+        },
+        {
+            "name": "LAMUT",
+            "lat": 16.695833333333333,
+            "lon": 121.26916666666666
+        },
+        {
+            "name": "MULUN",
+            "lat": 17.838055566666668,
+            "lon": 121.61222221666667
+        },
+        {
+            "name": "PARCE",
+            "lat": 17.176388883333335,
+            "lon": 121.51083333333334
+        },
+        {
+            "name": "PIATI",
+            "lat": 17.811944433333334,
+            "lon": 121.54638888333334
+        },
+        {
+            "name": "PILLI",
+            "lat": 17.946944433333332,
+            "lon": 121.68944443333334
+        },
+        {
+            "name": "QIRIN",
+            "lat": 17.235833333333332,
+            "lon": 121.63583333333334
+        },
+        {
+            "name": "TAPAC",
+            "lat": 17.67,
+            "lon": 121.56694443333333
+        },
+        {
+            "name": "UT17A",
+            "lat": 17.833055566666665,
+            "lon": 121.70583333333333
+        },
+        {
+            "name": "UT17B",
+            "lat": 17.75,
+            "lon": 121.71777778333333
+        },
+        {
+            "name": "UT35A",
+            "lat": 17.454166666666666,
+            "lon": 121.76027778333334
+        },
+        {
+            "name": "UT35B",
+            "lat": 17.536944433333332,
+            "lon": 121.74833333333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "CUY2P",
+            "rnw": "17",
+            "fixes": {
+                "ANTIG": "ANTIG SPEED 240",
+                "QIRIN": "QIRIN",
+                "CUY": "CUY AT OR ABOVE 9000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "CUY2R",
+            "rnw": "35",
+            "fixes": {
+                "KALIN": "KALIN SPEED 240",
+                "ANTIG": "ANTIG",
+                "QIRIN": "QIRIN",
+                "CUY": "CUY AT OR ABOVE 9000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LAMU2P",
+            "rnw": "17",
+            "fixes": {
+                "ANTIG": "ANTIG SPEED 240",
+                "PARCE": "PARCE AT OR ABOVE 6000",
+                "LAMUT": "LAMUT AT OR ABOVE 9000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LAMU2R",
+            "rnw": "35",
+            "fixes": {
+                "KALIN": "KALIN SPEED 240",
+                "PARCE": "PARCE AT OR ABOVE 6000",
+                "LAMUT": "LAMUT AT OR ABOVE 9000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PILI2P",
+            "rnw": "17",
+            "fixes": {
+                "TAPAC": "TAPAC SPEED 240",
+                "MULUN": "MULUN",
+                "PILLI": "PILLI AT OR ABOVE 3500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PILI2R",
+            "rnw": "35",
+            "fixes": {
+                "UT17A": "UT17A",
+                "PILLI": "PILLI AT OR ABOVE 3500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "CUY1P",
+            "runway": "RNW 17",
+            "fixes": {
+                "CUY": "CUY AT OR ABOVE 9000",
+                "LAGAN": "LAGAN",
+                "ANTIG": "ANTIG",
+                "KALIN": "KALIN",
+                "TAPAC": "TAPAC AT OR ABOVE 3000 SPEED 250"
+            }
+        },
+        {
+            "name": "CUY1R",
+            "runway": "RNW 35",
+            "fixes": {
+                "CUY": "CUY AT OR ABOVE 9000",
+                "LAGAN": "LAGAN AT OR ABOVE 4000 SPEED 250"
+            }
+        },
+        {
+            "name": "PILI1R",
+            "runway": "RNW 35",
+            "fixes": {
+                "PILLI": "PILLI AT OR ABOVE 3500",
+                "MULUN": "MULUN",
+                "KALIN": "KALIN AT OR ABOVE 3000 SPEED 250"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "UT17A": "UT17A AT OR ABOVE 2000",
+                "UT17B": "UT17B 2000 RNW 17 TRK 175 UNTIL 1000 TURN RIGHT DIRECT",
+                "TAPAC": "TAPAC AT OR ABOVE 3000 SPEED 250 HOLD AT TAPAC RIGHT TURN INBOUNDCOURSE 355 ALT 3000 SPEED 230 LEGTIME 1 FAF UT17B MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "PILLI",
+                    "fixes": {
+                        "PILLI": "PILLI AT OR ABOVE 3500 SPEED 250"
+                    }
+                },
+                {
+                    "name": "TAPAC",
+                    "fixes": {
+                        "TAPAC": "TAPAC AT OR ABOVE 3000 SPEED 250",
+                        "PIATI": "PIATI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "UT35A": "UT35A AT OR ABOVE 2000",
+                "UT35B": "UT35B 2000 RNW 35 TRK 355 UNTIL 1000 TURN LEFT DIRECT",
+                "KALIN": "KALIN AT OR ABOVE 3000 SPEED 250 HOLD AT KALIN LEFT TURN INBOUNDCOURSE 171 ALT 3000 SPEED 230 LEGTIME 1 FAF UT35B MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "KALIN",
+                    "fixes": {
+                        "KALIN": "KALIN AT OR ABOVE 3000 SPEED 250",
+                        "ANTIG": "ANTIG"
+                    }
+                },
+                {
+                    "name": "LAGAN",
+                    "fixes": {
+                        "LAGAN": "LAGAN AT OR ABOVE 4000 SPEED 250"
+                    }
+                }
+            ]
+        }
+    ]
+}

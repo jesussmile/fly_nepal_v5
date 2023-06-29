@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "D159I",
+            "lat": 41.28643888333333,
+            "lon": 15.591688883333333
+        },
+        {
+            "name": "D216E",
+            "lat": 41.36585,
+            "lon": 15.459786116666667
+        },
+        {
+            "name": "D326E",
+            "lat": 41.50158888333333,
+            "lon": 15.475733333333334
+        },
+        {
+            "name": "D326K",
+            "lat": 41.58809443333333,
+            "lon": 15.408819433333333
+        },
+        {
+            "name": "DOGUS",
+            "lat": 41.02,
+            "lon": 15.703333333333333
+        },
+        {
+            "name": "EKTOL",
+            "lat": 41.10777778333333,
+            "lon": 15.171388883333334
+        },
+        {
+            "name": "FGG",
+            "lat": 41.42947221666667,
+            "lon": 15.531361116666666
+        },
+        {
+            "name": "FS33",
+            "lat": 41.34687221666667,
+            "lon": 15.613927783333333
+        },
+        {
+            "name": "MS33",
+            "lat": 41.41618056666667,
+            "lon": 15.544691666666667
+        },
+        {
+            "name": "URIPI",
+            "lat": 41.87583333333333,
+            "lon": 15.184722216666668
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "DOGU6A",
+            "rnw": "15",
+            "fixes": {
+                "DOGUS": "DOGUS AT OR ABOVE 11000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DOGU6B",
+            "rnw": "33",
+            "fixes": {
+                "DOGUS": "DOGUS AT OR ABOVE 11000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "EKTO6A",
+            "rnw": "15",
+            "fixes": {
+                "EKTOL": "EKTOL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "EKTO6B",
+            "rnw": "33",
+            "fixes": {
+                "EKTOL": "EKTOL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "URIP6A",
+            "rnw": "15",
+            "fixes": {
+                "URIPI": "URIPI AT OR ABOVE 11000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "URIP6B",
+            "rnw": "33",
+            "fixes": {
+                "URIPI": "URIPI AT OR ABOVE 11000 SPEED 210"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "DOGU1A",
+            "runway": "RNW 15 RNW 33",
+            "fixes": {
+                "DOGUS": "DOGUS",
+                "D159I": "D159I",
+                "FGG": "FGG"
+            }
+        },
+        {
+            "name": "EKTO1A",
+            "runway": "RNW 15 RNW 33",
+            "fixes": {
+                "EKTOL": "EKTOL",
+                "D216E": "D216E",
+                "FGG": "FGG"
+            }
+        },
+        {
+            "name": "URIP1A",
+            "runway": "RNW 15 RNW 33",
+            "fixes": {
+                "URIPI": "URIPI",
+                "D326K": "D326K",
+                "D326E": "D326E",
+                "FGG": "FGG"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD33",
+            "fixes": {
+                "FS33": "FS33 2200",
+                "MS33": "MS33 556 RNW 33 TRK 321 UNTIL 1800 TURN LEFT DIRECT",
+                "FGG": "FGG 3000 SPEED 240 HOLD AT FGG RIGHT TURN INBOUNDCOURSE 112 SPEED 210 LEGTIME 1 FAF FS33 MAP MS33"
+            },
+            "transitions": [
+                {
+                    "name": "FGG1",
+                    "fixes": {
+                        "FGG": "FGG AT OR ABOVE 3000 TRK 112 UNTIL 8.0 FROM FGG SPEED 240"
+                    }
+                },
+                {
+                    "name": "FGG2",
+                    "fixes": {
+                        "FGG": "FGG AT OR ABOVE 3000 TRK 126 UNTIL 8.0 FROM FGG"
+                    }
+                }
+            ]
+        }
+    ]
+}

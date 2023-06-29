@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "MZ808",
+            "lat": 20.258827783333334,
+            "lon": 77.19893333333333
+        },
+        {
+            "name": "MZ826",
+            "lat": 20.31792778333333,
+            "lon": 76.97774166666666
+        },
+        {
+            "name": "MZ830",
+            "lat": 20.486294433333335,
+            "lon": 77.15341943333334
+        },
+        {
+            "name": "PURUT",
+            "lat": 20.236005566666666,
+            "lon": 77.28419721666667
+        },
+        {
+            "name": "SINSO",
+            "lat": 20.342080566666667,
+            "lon": 76.88740833333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "PURUT": "PURUT AT OR ABOVE 3000",
+                "MZ808": "MZ808 2000 RNW 08 TRK 083 UNTIL 1500 TURN LEFT DIRECT",
+                "MZ830": "OVERFLY MZ830 AT OR ABOVE 3000 HOLD AT MZ830 RIGHT TURN INBOUNDCOURSE 214 ALT 3000 SPEED 230 LEGDIST 4 FAF MZ808 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "PURUT",
+                    "fixes": {
+                        "PURUT": "PURUT RIGHT TURN INBOUNDCOURSE 083 ALT 3000 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "SINSO": "SINSO AT OR ABOVE 3000",
+                "MZ826": "MZ826 2000 RNW 26 TRK 263 UNTIL 1500 TURN RIGHT DIRECT",
+                "MZ830": "OVERFLY MZ830 AT OR ABOVE 3000 HOLD AT MZ830 RIGHT TURN INBOUNDCOURSE 129 ALT 3000 SPEED 230 LEGDIST 4 FAF MZ826 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "SINSO",
+                    "fixes": {
+                        "SINSO": "SINSO RIGHT TURN INBOUNDCOURSE 263 ALT 3000 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

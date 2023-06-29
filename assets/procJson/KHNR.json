@@ -1,0 +1,117 @@
+{
+    "fixes": [
+        {
+            "name": "AXCED",
+            "lat": 41.504016666666665,
+            "lon": 95.29021111666667
+        },
+        {
+            "name": "BYIES",
+            "lat": 41.42831388333333,
+            "lon": 95.24376111666666
+        },
+        {
+            "name": "CHUUI",
+            "lat": 41.77625,
+            "lon": 95.33551666666666
+        },
+        {
+            "name": "DULAH",
+            "lat": 41.70607221666667,
+            "lon": 95.53747221666667
+        },
+        {
+            "name": "GIGAW",
+            "lat": 41.39335,
+            "lon": 95.34430556666666
+        },
+        {
+            "name": "GLENE",
+            "lat": 41.45134443333333,
+            "lon": 95.50498333333333
+        },
+        {
+            "name": "IJENE",
+            "lat": 41.741205566666665,
+            "lon": 95.43655
+        },
+        {
+            "name": "KALWE",
+            "lat": 41.665483333333334,
+            "lon": 95.38968888333333
+        },
+        {
+            "name": "MADUP",
+            "lat": 41.940625,
+            "lon": 95.10010278333333
+        },
+        {
+            "name": "PSFIC",
+            "lat": 41.267325,
+            "lon": 94.99785
+        },
+        {
+            "name": "ULEBE",
+            "lat": 41.46318888333333,
+            "lon": 95.14311111666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 15",
+        "RNW 21",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "GPS33",
+            "fixes": {
+                "BYIES": "BYIES AT OR ABOVE 3000",
+                "AXCED": "AXCED 2800 RNW 33 TRK 330 UNTIL 2000 TURN LEFT DIRECT",
+                "GLENE": "GLENE AT OR ABOVE 3600 HOLD AT GLENE RIGHT TURN INBOUNDCOURSE 024 LEGTIME 1 FAF AXCED MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "GLENE",
+                    "fixes": {
+                        "GLENE": "GLENE",
+                        "GIGAW": "GIGAW AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "PSFIC",
+                    "fixes": {
+                        "PSFIC": "PSFIC",
+                        "ULEBE": "ULEBE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "IJENE": "IJENE AT OR ABOVE 3000",
+                "KALWE": "KALWE 3000 RNW 15 TRK 150 UNTIL 2000",
+                "GLENE": "OVERFLY GLENE AT OR ABOVE 3600 HOLD AT GLENE RIGHT TURN INBOUNDCOURSE 024 LEGDIST 4 FAF KALWE MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "GLENE",
+                    "fixes": {
+                        "GLENE": "GLENE",
+                        "DULAH": "DULAH AT OR ABOVE 3500"
+                    }
+                },
+                {
+                    "name": "MADUP",
+                    "fixes": {
+                        "MADUP": "MADUP",
+                        "CHUUI": "CHUUI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+{
+    "fixes": [
+        {
+            "name": "AXAXA",
+            "lat": 55.35624721666667,
+            "lon": 110.76623888333333
+        },
+        {
+            "name": "KEVGU",
+            "lat": 55.57441943333333,
+            "lon": 111.30576666666667
+        },
+        {
+            "name": "METMO",
+            "lat": 55.42367778333333,
+            "lon": 111.85543056666667
+        },
+        {
+            "name": "MITEB",
+            "lat": 55.481577783333336,
+            "lon": 110.90274166666667
+        },
+        {
+            "name": "MUSLI",
+            "lat": 55.35833611666666,
+            "lon": 110.64896666666667
+        },
+        {
+            "name": "OKUVA",
+            "lat": 55.470294433333336,
+            "lon": 110.43830556666667
+        },
+        {
+            "name": "PENTA",
+            "lat": 55.45825833333333,
+            "lon": 111.33168888333333
+        },
+        {
+            "name": "SEKEX",
+            "lat": 55.42410556666667,
+            "lon": 110.27326388333333
+        },
+        {
+            "name": "TOXAK",
+            "lat": 55.41257778333333,
+            "lon": 111.04034443333333
+        },
+        {
+            "name": "UMIGI",
+            "lat": 55.35876666666667,
+            "lon": 110.50340833333334
+        },
+        {
+            "name": "URKOL",
+            "lat": 55.52507778333333,
+            "lon": 111.16592221666667
+        },
+        {
+            "name": "VITAP",
+            "lat": 55.357338883333334,
+            "lon": 110.590975
+        },
+        {
+            "name": "VIVOX",
+            "lat": 55.395944433333334,
+            "lon": 110.37273888333333
+        },
+        {
+            "name": "XIXIB",
+            "lat": 55.39021666666667,
+            "lon": 110.89956111666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "KIRBY5",
+            "rnw": "35",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 08",
+                    "fixes": {
+                        "RNW 08": "RNW 08 HDG 082 UNTIL 2800 TURN LEFT DIRECT",
+                        "MITEB": "MITEB"
+                    }
+                },
+                {
+                    "rwy": "RNW 26",
+                    "fixes": {
+                        "RNW 26": "RNW 26 HDG 262 UNTIL 2800",
+                        "MITEB": "MITEB"
+                    }
+                }
+            ],
+            "transitions": [
+                {
+                    "name": "METMO",
+                    "fixes": [
+                        "URKOL",
+                        "KEVGU",
+                        "METMO"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "XIXIB": "XIXIB AT OR ABOVE 3600 SPEED 180",
+                "AXAXA": "AXAXA 3600",
+                "MUSLI": "OVERFLY MUSLI 2306 RNW 08 TRK 074 UNTIL 2700",
+                "SEKEX": "OVERFLY SEKEX 3600 SPEED 185 HOLD AT SEKEX RIGHT TURN INBOUNDCOURSE 237 SPEED 200 LEGTIME 1 FAF AXAXA MAP MUSLI"
+            },
+            "transitions": [
+                {
+                    "name": "PENTA",
+                    "fixes": {
+                        "PENTA": "PENTA",
+                        "TOXAK": "TOXAK AT OR ABOVE 3600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA08",
+            "fixes": {
+                "VIVOX": "VIVOX AT OR ABOVE 3700",
+                "UMIGI": "UMIGI 3650",
+                "VITAP": "OVERFLY VITAP 2760 RNW 08 TURN RIGHT DIRECT",
+                "SEKEX": "OVERFLY SEKEX 3600 SPEED 130 HOLD AT SEKEX RIGHT TURN INBOUNDCOURSE 230 SPEED 200 LEGTIME 1 FAF UMIGI MAP VITAP"
+            },
+            "transitions": [
+                {
+                    "name": "OKUVA",
+                    "fixes": {
+                        "OKUVA": "OKUVA SPEED 210"
+                    }
+                },
+                {
+                    "name": "SEKEX",
+                    "fixes": {
+                        "SEKEX": "SEKEX"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA26",
+            "fixes": {
+                "VIVOX": "VIVOX AT OR ABOVE 3700",
+                "UMIGI": "UMIGI 3650",
+                "VITAP": "OVERFLY VITAP 2760 RNW 26 TURN RIGHT DIRECT",
+                "SEKEX": "OVERFLY SEKEX 3600 SPEED 130 HOLD AT SEKEX RIGHT TURN INBOUNDCOURSE 230 SPEED 200 LEGTIME 1 FAF UMIGI MAP VITAP"
+            },
+            "transitions": [
+                {
+                    "name": "OKUVA",
+                    "fixes": {
+                        "OKUVA": "OKUVA SPEED 210"
+                    }
+                },
+                {
+                    "name": "SEKEX",
+                    "fixes": {
+                        "SEKEX": "SEKEX"
+                    }
+                }
+            ]
+        }
+    ]
+}

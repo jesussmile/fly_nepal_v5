@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "OJURA",
+            "lat": 60.96208333333333,
+            "lon": 162.50411943333333
+        },
+        {
+            "name": "UNAWO",
+            "lat": 60.697777783333336,
+            "lon": 162.56390833333333
+        },
+        {
+            "name": "XIRNY",
+            "lat": 60.780433333333335,
+            "lon": 162.54531388333334
+        },
+        {
+            "name": "ZEREL",
+            "lat": 61.044597216666666,
+            "lon": 162.48525
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "ZEREL": "ZEREL AT OR ABOVE 2500",
+                "OJURA": "OJURA 1700 RNW 17 TRK 174 UNTIL 448",
+                "UNAWO": "OVERFLY UNAWO AT OR ABOVE 2600 HOLD AT UNAWO RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF OJURA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ZEREL",
+                    "fixes": {
+                        "ZEREL": "ZEREL RIGHT TURN INBOUNDCOURSE 174 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "UNAWO": "UNAWO AT OR ABOVE 2600",
+                "XIRNY": "XIRNY 1800 RNW 35 TRK 354 UNTIL 448",
+                "ZEREL": "OVERFLY ZEREL AT OR ABOVE 2500 HOLD AT ZEREL RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF XIRNY MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "UNAWO",
+                    "fixes": {
+                        "UNAWO": "UNAWO RIGHT TURN INBOUNDCOURSE 354 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

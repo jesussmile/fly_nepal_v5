@@ -1,0 +1,206 @@
+{
+    "fixes": [
+        {
+            "name": "AST",
+            "lat": 27.031222216666666,
+            "lon": 31.032416666666666
+        },
+        {
+            "name": "D002K",
+            "lat": 25.631275,
+            "lon": 30.612008333333332
+        },
+        {
+            "name": "D010M",
+            "lat": 25.659227783333332,
+            "lon": 30.648919433333333
+        },
+        {
+            "name": "D175J",
+            "lat": 25.281230566666668,
+            "lon": 30.594013883333332
+        },
+        {
+            "name": "FD18",
+            "lat": 25.582130566666667,
+            "lon": 30.590805566666667
+        },
+        {
+            "name": "FF36",
+            "lat": 25.364808333333333,
+            "lon": 30.592411116666668
+        },
+        {
+            "name": "KH611",
+            "lat": 25.488611116666668,
+            "lon": 30.464166666666667
+        },
+        {
+            "name": "KH612",
+            "lat": 25.639444433333335,
+            "lon": 30.461388883333335
+        },
+        {
+            "name": "KH613",
+            "lat": 25.639722216666666,
+            "lon": 30.590277783333335
+        },
+        {
+            "name": "KH614",
+            "lat": 25.571944433333332,
+            "lon": 30.590555566666666
+        },
+        {
+            "name": "KH615",
+            "lat": 25.489444433333333,
+            "lon": 30.590555566666666
+        },
+        {
+            "name": "KH616",
+            "lat": 25.401944433333334,
+            "lon": 30.478611116666666
+        },
+        {
+            "name": "KH617",
+            "lat": 25.2525,
+            "lon": 30.481111116666668
+        },
+        {
+            "name": "KH618",
+            "lat": 25.251944433333332,
+            "lon": 30.591388883333334
+        },
+        {
+            "name": "KH619",
+            "lat": 25.374166666666667,
+            "lon": 30.590833333333332
+        },
+        {
+            "name": "KHG",
+            "lat": 25.448388883333333,
+            "lon": 30.590805566666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "FD18": "FD18 2000 RNW 18 TRK 176 UNTIL 2000 TURN RIGHT DIRECT",
+                "KHG": "KHG 4000 HOLD AT KHG LEFT TURN INBOUNDCOURSE 332 ALT 6000 LEGTIME 1 FAF FD18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AST",
+                    "fixes": {
+                        "AST": "AST",
+                        "D010M": "D010M 4000",
+                        "D002K": "D002K"
+                    }
+                },
+                {
+                    "name": "KHG1",
+                    "fixes": {
+                        "KHG": "KHG 6000 TRK 332 UNTIL 10.0 FROM KHG"
+                    }
+                },
+                {
+                    "name": "KHG2",
+                    "fixes": {
+                        "KHG": "KHG 6000 TRK 344 UNTIL 10.0 FROM KHG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDY36",
+            "fixes": {
+                "FF36": "FF36 2000",
+                "KHG": "KHG 400 RNW 36 TRK 355 UNTIL 2000 TURN RIGHT DIRECT KHG 4000 HOLD AT KHG RIGHT TURN INBOUNDCOURSE 157 LEGTIME 1 FAF FF36 MAP KHG"
+            },
+            "transitions": [
+                {
+                    "name": "KHG1",
+                    "fixes": {
+                        "KHG": "KHG 6000 SPEED 230 TRK 151 UNTIL 10.0 FROM KHG TURN RIGHT DIRECT",
+                        "D175J": "D175J 2500"
+                    }
+                },
+                {
+                    "name": "KHG2",
+                    "fixes": {
+                        "KHG": "KHG 6000 TRK 165 UNTIL 10.0 FROM KHG TURN RIGHT DIRECT",
+                        "D175J": "D175J 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "KH614": "KH614 1800",
+                "KH615": "OVERFLY KH615 242 RNW 18 TRK 176 UNTIL 2000 HDG 176 VECTORS FAF KH614 MAP KH615"
+            },
+            "transitions": [
+                {
+                    "name": "KH611",
+                    "fixes": {
+                        "KH611": "KH611 6000",
+                        "KH612": "KH612 3300 SPEED 180 TURN RIGHT DIRECT",
+                        "KH613": "KH613 2100 SPEED 180"
+                    }
+                },
+                {
+                    "name": "KH612",
+                    "fixes": {
+                        "KH612": "KH612 3300 SPEED 180",
+                        "KH613": "KH613 2100 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "KH619": "KH619 1800",
+                "KHG": "OVERFLY KHG 395 RNW 36 TRK 356 UNTIL 2000 HDG 356 VECTORS FAF KH619 MAP KHG"
+            },
+            "transitions": [
+                {
+                    "name": "KH616",
+                    "fixes": {
+                        "KH616": "KH616 6000",
+                        "KH617": "KH617 AT OR ABOVE 3500",
+                        "KH618": "KH618 2500 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORZ36",
+            "fixes": {
+                "FF36": "FF36 2000",
+                "KHG": "KHG 400 RNW 36 TRK 355 UNTIL 2000 TURN RIGHT DIRECT KHG 3000 HOLD AT KHG RIGHT TURN INBOUNDCOURSE 157 LEGTIME 1 FAF FF36 MAP KHG"
+            },
+            "transitions": [
+                {
+                    "name": "KHG1",
+                    "fixes": {
+                        "KHG": "KHG 4000 SPEED 230 TRK 147 UNTIL 7.7 FROM KHG"
+                    }
+                },
+                {
+                    "name": "KHG2",
+                    "fixes": {
+                        "KHG": "KHG 4000 TRK 160 UNTIL 7.5 FROM KHG"
+                    }
+                }
+            ]
+        }
+    ]
+}

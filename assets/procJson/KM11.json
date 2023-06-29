@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "BIOGS",
+            "lat": 31.990827783333334,
+            "lon": 90.37525556666667
+        },
+        {
+            "name": "CALAL",
+            "lat": 31.851983333333333,
+            "lon": 90.36189721666666
+        },
+        {
+            "name": "KOULA",
+            "lat": 31.931416666666667,
+            "lon": 90.36953333333334
+        },
+        {
+            "name": "MALMY",
+            "lat": 31.810166666666667,
+            "lon": 90.35788333333333
+        },
+        {
+            "name": "PANTX",
+            "lat": 32.10938888333333,
+            "lon": 90.38669166666666
+        },
+        {
+            "name": "SALOE",
+            "lat": 31.693638883333332,
+            "lon": 90.34671666666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "PANTX": "PANTX AT OR ABOVE 3500 OVERFLY PANTX AT OR ABOVE 3500 HOLD AT PANTX RIGHT TURN INBOUNDCOURSE 176 ALT 3500 LEGDIST 4 FAF BIOGS MAP RNW 18",
+                "BIOGS": "BIOGS 2600",
+                "KOULA": "KOULA AT OR ABOVE 1080 RNW 18 TRK 176 UNTIL 835 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PANTX",
+                    "fixes": {
+                        "PANTX": "PANTX RIGHT TURN INBOUNDCOURSE 176 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "SALOE": "SALOE AT OR ABOVE 3000",
+                "MALMY": "MALMY 2100",
+                "CALAL": "CALAL AT OR ABOVE 1300 RNW 36 TRK 356 UNTIL 730",
+                "PANTX": "OVERFLY PANTX AT OR ABOVE 3500 HOLD AT PANTX RIGHT TURN INBOUNDCOURSE 176 ALT 3500 LEGDIST 4 FAF MALMY MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "SALOE",
+                    "fixes": {
+                        "SALOE": "SALOE RIGHT TURN INBOUNDCOURSE 356 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

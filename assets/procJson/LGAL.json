@@ -1,0 +1,212 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 40.68873981666667,
+            "lon": 25.739141766666666
+        },
+        {
+            "name": "AF002",
+            "lat": 40.73696206666666,
+            "lon": 25.690045766666668
+        },
+        {
+            "name": "ALPNB",
+            "lat": 40.85583333333334,
+            "lon": 25.940869433333333
+        },
+        {
+            "name": "ALX",
+            "lat": 40.85393611666667,
+            "lon": 25.956733333333332
+        },
+        {
+            "name": "CD07",
+            "lat": 40.79312221666667,
+            "lon": 25.659983333333333
+        },
+        {
+            "name": "D205P",
+            "lat": 40.624411116666664,
+            "lon": 25.7778
+        },
+        {
+            "name": "D205T",
+            "lat": 40.56698611666667,
+            "lon": 25.733258333333332
+        },
+        {
+            "name": "D256T",
+            "lat": 40.80098056666667,
+            "lon": 25.523194433333334
+        },
+        {
+            "name": "EN07",
+            "lat": 40.85505833333333,
+            "lon": 25.939238883333335
+        },
+        {
+            "name": "FD07",
+            "lat": 40.81493056666667,
+            "lon": 25.765902783333335
+        },
+        {
+            "name": "FN07",
+            "lat": 40.80115833333333,
+            "lon": 25.82585
+        },
+        {
+            "name": "GOLDO",
+            "lat": 40.88222221666667,
+            "lon": 26.249444433333334
+        },
+        {
+            "name": "IDILO",
+            "lat": 40.79055556666667,
+            "lon": 25.439444433333332
+        },
+        {
+            "name": "LMO",
+            "lat": 39.91953888333333,
+            "lon": 25.23718888333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "ALX1B",
+            "rnw": "07",
+            "fixes": {
+                "ALX": "ALX AT OR ABOVE 7500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ALX1C",
+            "rnw": "25",
+            "fixes": {
+                "ALX": "ALX AT OR ABOVE 7500"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "IDIL1B",
+            "rnw": "07",
+            "fixes": {
+                "D256T": "D256T",
+                "IDILO": "IDILO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "IDIL1C",
+            "rnw": "25",
+            "fixes": {
+                "ALX": "ALX SPEED 210 TRK 231 UNTIL 3000 HDG 286 INTERCEPT RADIAL 256 TO",
+                "D256T": "D256T",
+                "IDILO": "IDILO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LMO1B",
+            "rnw": "07",
+            "fixes": {
+                "D205T": "D205T",
+                "LMO": "LMO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LMO1C",
+            "rnw": "25",
+            "fixes": {
+                "ALX": "ALX SPEED 210 TRK 231 UNTIL 3000 HDG 175 INTERCEPT RADIAL 205 TO",
+                "D205T": "D205T",
+                "LMO": "LMO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "GOLD1A",
+            "runway": "RNW 07",
+            "fixes": {
+                "GOLDO": "GOLDO",
+                "ALX": "ALX",
+                "FD07": "FD07 AT OR ABOVE 3500"
+            }
+        },
+        {
+            "name": "IDIL1A",
+            "runway": "RNW 07",
+            "fixes": {
+                "IDILO": "IDILO",
+                "D256T": "D256T HDG 108 INTERCEPT RADIAL 070 TO",
+                "CD07": "CD07 CD07 AT OR ABOVE 3500"
+            }
+        },
+        {
+            "name": "LMO1A",
+            "runway": "RNW 07",
+            "fixes": {
+                "LMO": "LMO",
+                "D205T": "D205T",
+                "D205P": "D205P",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "CD07": "CD07 AT OR ABOVE 3500"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD07",
+            "fixes": {
+                "CD07": "CD07 AT OR ABOVE 3500",
+                "FD07": "FD07 3000 RNW 07 FD07 3500 HOLD AT FD07 LEFT TURN INBOUNDCOURSE 070 ALT 3500 LEGTIME 1 FAF FD07 MAP RNW 07",
+                "ALX": "OVERFLY ALX AT OR ABOVE 430 TRK 070 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FD07",
+                    "fixes": {
+                        "FD07": "FD07 LEFT TURN INBOUNDCOURSE 070 ALT 3500 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB07",
+            "fixes": {
+                "FN07": "FN07 2000",
+                "EN07": "OVERFLY EN07 60",
+                "ALPNB": "OVERFLY ALPNB AT OR ABOVE 430 RNW 07 TRK 233 UNTIL 2500 TURN RIGHT DIRECT ALPNB AT OR ABOVE 4000 HOLD AT ALPNB RIGHT TURN INBOUNDCOURSE 208 LEGTIME 1 FAF FN07 MAP ALP"
+            },
+            "transitions": [
+                {
+                    "name": "ALP1",
+                    "fixes": {
+                        "ALPNB": "ALPNB AT OR ABOVE 4000 TRK 218 UNTIL 10.5 FROM ALPNB"
+                    }
+                },
+                {
+                    "name": "ALP2",
+                    "fixes": {
+                        "ALPNB": "ALPNB AT OR ABOVE 4000 TRK 221 UNTIL 9.0 FROM ALPNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

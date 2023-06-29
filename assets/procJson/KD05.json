@@ -1,0 +1,77 @@
+{
+    "fixes": [
+        {
+            "name": "EDHUC",
+            "lat": 47.7326,
+            "lon": 101.53203888333333
+        },
+        {
+            "name": "EYMOV",
+            "lat": 47.584891666666664,
+            "lon": 101.3506
+        },
+        {
+            "name": "OGZEV",
+            "lat": 47.52031388333333,
+            "lon": 101.27170556666667
+        },
+        {
+            "name": "OLTIQ",
+            "lat": 47.797027783333334,
+            "lon": 101.61161666666666
+        },
+        {
+            "name": "SISOC",
+            "lat": 47.69256111666667,
+            "lon": 101.48271943333333
+        },
+        {
+            "name": "XOMYY",
+            "lat": 47.62066943333333,
+            "lon": 101.39441943333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 13",
+        "RNW 21",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "OLTIQ": "OLTIQ AT OR ABOVE 3900 OVERFLY OLTIQ AT OR ABOVE 3900 HOLD AT OLTIQ RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4 FAF EDHUC MAP RNW 13",
+                "EDHUC": "EDHUC 3800",
+                "SISOC": "SISOC AT OR ABOVE 2800 RNW 13 TRK 131 UNTIL 2500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "OLTIQ",
+                    "fixes": {
+                        "OLTIQ": "OLTIQ RIGHT TURN INBOUNDCOURSE 131 ALT 3900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "OGZEV": "OGZEV AT OR ABOVE 3700",
+                "EYMOV": "EYMOV 3600",
+                "XOMYY": "XOMYY AT OR ABOVE 2700 RNW 31 TRK 311 UNTIL 2250",
+                "OLTIQ": "OVERFLY OLTIQ AT OR ABOVE 3900 HOLD AT OLTIQ RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4 FAF EYMOV MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "OGZEV",
+                    "fixes": {
+                        "OGZEV": "OGZEV RIGHT TURN INBOUNDCOURSE 311 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

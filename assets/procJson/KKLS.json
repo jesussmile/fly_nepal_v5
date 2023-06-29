@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "AMAVE",
+            "lat": 46.16811943333333,
+            "lon": 123.18626111666667
+        },
+        {
+            "name": "ANIGE",
+            "lat": 46.17787778333334,
+            "lon": 122.96981388333333
+        },
+        {
+            "name": "COSRA",
+            "lat": 46.22499166666667,
+            "lon": 123.06454443333334
+        },
+        {
+            "name": "KELNG",
+            "lat": 46.178277783333336,
+            "lon": 123.07580833333333
+        },
+        {
+            "name": "KLCUP",
+            "lat": 46.367383333333336,
+            "lon": 123.10923888333333
+        },
+        {
+            "name": "LOATH",
+            "lat": 46.01165278333333,
+            "lon": 123.06084443333333
+        },
+        {
+            "name": "ONALS",
+            "lat": 46.63585,
+            "lon": 122.66424721666667
+        },
+        {
+            "name": "SOWAL",
+            "lat": 46.16368611666667,
+            "lon": 122.95286111666667
+        },
+        {
+            "name": "UXALE",
+            "lat": 46.210086116666666,
+            "lon": 123.00834443333333
+        },
+        {
+            "name": "WINLO",
+            "lat": 46.45757221666667,
+            "lon": 123.10108333333334
+        },
+        {
+            "name": "YAPEC",
+            "lat": 46.239838883333334,
+            "lon": 123.120625
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "KELSO2",
+            "rnw": "30",
+            "fixes": {
+                "KELNG": "KELNG RIGHT TURN INBOUNDCOURSE 073 ALT 4000 SPEED 230 LEGDIST 4"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "YAPEC": "YAPEC AT OR ABOVE 4000",
+                "COSRA": "COSRA AT OR ABOVE 3300",
+                "UXALE": "UXALE AT OR ABOVE 2700",
+                "ANIGE": "ANIGE 1900",
+                "SOWAL": "SOWAL AT OR ABOVE 1420 RNW 12 TRK 123 UNTIL 800 TURN RIGHT DIRECT",
+                "AMAVE": "OVERFLY AMAVE AT OR ABOVE 4000 HOLD AT AMAVE RIGHT TURN INBOUNDCOURSE 003 ALT 4000 LEGDIST 4 FAF ANIGE MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "LOATH",
+                    "fixes": {
+                        "LOATH": "LOATH",
+                        "AMAVE": "AMAVE AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "ONALS",
+                    "fixes": {
+                        "ONALS": "ONALS",
+                        "KLCUP": "KLCUP AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "WINLO",
+                    "fixes": {
+                        "WINLO": "WINLO",
+                        "KLCUP": "KLCUP AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

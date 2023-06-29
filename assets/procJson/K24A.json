@@ -1,0 +1,67 @@
+{
+    "fixes": [
+        {
+            "name": "HOGTA",
+            "lat": 35.06186666666667,
+            "lon": 83.02873056666667
+        },
+        {
+            "name": "KAKEC",
+            "lat": 35.307580566666665,
+            "lon": 83.20049443333333
+        },
+        {
+            "name": "OWEMU",
+            "lat": 35.229947216666666,
+            "lon": 83.06913888333334
+        },
+        {
+            "name": "SOT",
+            "lat": 35.7901,
+            "lon": 83.05236943333334
+        },
+        {
+            "name": "UYOSE",
+            "lat": 35.19375,
+            "lon": 83.00762221666666
+        },
+        {
+            "name": "YALUK",
+            "lat": 35.24947778333333,
+            "lon": 83.10214166666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "UYOSE": "UYOSE AT OR ABOVE 6700",
+                "OWEMU": "OWEMU 5700",
+                "YALUK": "YALUK AT OR ABOVE 5020",
+                "KAKEC": "OVERFLY KAKEC 3009 RNW 33 TRK 311 UNTIL 5000 TURN LEFT DIRECT",
+                "HOGTA": "OVERFLY HOGTA AT OR ABOVE 8000 HOLD AT HOGTA LEFT TURN INBOUNDCOURSE 012 LEGDIST 7 FAF OWEMU MAP KAKEC"
+            },
+            "transitions": [
+                {
+                    "name": "HOGTA",
+                    "fixes": {
+                        "HOGTA": "HOGTA"
+                    }
+                },
+                {
+                    "name": "SOT",
+                    "fixes": {
+                        "SOT": "SOT",
+                        "UYOSE": "OVERFLY UYOSE AT OR ABOVE 8600 HOLD AT UYOSE LEFT TURN INBOUNDCOURSE 311 ALT 6700 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

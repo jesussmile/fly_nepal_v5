@@ -1,0 +1,187 @@
+{
+    "fixes": [
+        {
+            "name": "AI420",
+            "lat": 4.971097216666667,
+            "lon": 8.14225
+        },
+        {
+            "name": "AI422",
+            "lat": 5.0461888833333335,
+            "lon": 8.179202783333333
+        },
+        {
+            "name": "AI444",
+            "lat": 5.048791666666666,
+            "lon": 8.061130566666666
+        },
+        {
+            "name": "AI900",
+            "lat": 4.772697216666667,
+            "lon": 8.044652783333333
+        },
+        {
+            "name": "AI901",
+            "lat": 4.697597216666667,
+            "lon": 8.007725
+        },
+        {
+            "name": "AI902",
+            "lat": 4.734647216666667,
+            "lon": 7.932875
+        },
+        {
+            "name": "AKW",
+            "lat": 4.895277783333333,
+            "lon": 8.104944433333333
+        },
+        {
+            "name": "CAL",
+            "lat": 4.921861116666666,
+            "lon": 8.320055566666667
+        },
+        {
+            "name": "CF21",
+            "lat": 5.015686116666667,
+            "lon": 8.163508333333333
+        },
+        {
+            "name": "D208F",
+            "lat": 4.8049444333333335,
+            "lon": 8.061027783333333
+        },
+        {
+            "name": "ETVEG",
+            "lat": 5.106688883333334,
+            "lon": 8.121463883333334
+        },
+        {
+            "name": "FD03",
+            "lat": 4.794408333333333,
+            "lon": 8.055905566666667
+        },
+        {
+            "name": "FF21",
+            "lat": 4.949455566666667,
+            "lon": 8.131291666666666
+        },
+        {
+            "name": "VOXEN",
+            "lat": 4.843791666666666,
+            "lon": 7.9000916666666665
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD03",
+            "fixes": {
+                "FD03": "FD03 1600 RNW 03",
+                "AKW": "OVERFLY AKW TRK 115 INTERCEPT RADIAL 085 TO",
+                "CAL": "CAL CAL 2500 FAF FD03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "AKW",
+                    "fixes": {
+                        "AKW": "AKW AT OR ABOVE 2500",
+                        "D208F": "D208F AT OR ABOVE 1600 TRK 163 UNTIL 4.3 FROM D208F"
+                    }
+                },
+                {
+                    "name": "CAL",
+                    "fixes": {
+                        "CAL": "CAL AT OR ABOVE 3500",
+                        "AKW": "AKW AT OR ABOVE 2500",
+                        "D208F": "D208F AT OR ABOVE 1600 TRK 163 UNTIL 4.3 FROM D208F"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 1500",
+                "FF21": "FF21 1500 RNW 21 TRK 208 UNTIL 2500 TURN LEFT DIRECT",
+                "CAL": "CAL 2500 FAF FF21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "AKW",
+                    "fixes": {
+                        "AKW": "AKW RIGHT TURN INBOUNDCOURSE 208 ALT 1500 LEGDIST 8"
+                    }
+                },
+                {
+                    "name": "CAL",
+                    "fixes": {
+                        "CAL": "CAL AT OR ABOVE 3500",
+                        "AKW": "AKW AT OR ABOVE 2500 HOLD AT AKW RIGHT TURN INBOUNDCOURSE 208 ALT 1500 LEGDIST 8"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS21",
+            "fixes": {
+                "CF21": "CF21 AT OR ABOVE 1500",
+                "FF21": "FF21 1500 RNW 21 TRK 208 UNTIL 2500 TURN LEFT DIRECT",
+                "CAL": "CAL 2500 FAF FF21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "AKW",
+                    "fixes": {
+                        "AKW": "AKW RIGHT TURN INBOUNDCOURSE 208 ALT 1500 LEGDIST 8"
+                    }
+                },
+                {
+                    "name": "CAL",
+                    "fixes": {
+                        "CAL": "CAL AT OR ABOVE 3500",
+                        "AKW": "AKW AT OR ABOVE 2500 HOLD AT AKW RIGHT TURN INBOUNDCOURSE 208 ALT 1500 LEGDIST 8"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "AI901": "AI901 AT OR ABOVE 3000",
+                "AI900": "AI900 2000 RNW 03 TRK 028 UNTIL 570 TURN LEFT DIRECT",
+                "ETVEG": "ETVEG HOLD AT ETVEG LEFT TURN INBOUNDCOURSE 138 ALT 2000 SPEED 230 LEGTIME 1 FAF AI900 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "VOXEN",
+                    "fixes": {
+                        "VOXEN": "VOXEN",
+                        "AI902": "AI902 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "AI422": "AI422 AT OR ABOVE 2500 SPEED 200",
+                "AI420": "AI420 2000 RNW 21 TRK 208 UNTIL 570 TURN RIGHT DIRECT",
+                "AI444": "AI444 AT OR BELOW 2000",
+                "ETVEG": "ETVEG AT OR ABOVE 2000 HOLD AT ETVEG LEFT TURN INBOUNDCOURSE 138 ALT 2000 SPEED 230 LEGTIME 1 FAF AI420 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "ETVEG",
+                    "fixes": {
+                        "ETVEG": "ETVEG"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "ANKLE",
+            "lat": 41.13063056666667,
+            "lon": 74.57846666666667
+        },
+        {
+            "name": "DINSY",
+            "lat": 41.09072221666667,
+            "lon": 74.66434166666667
+        },
+        {
+            "name": "MA345",
+            "lat": 41.197013883333334,
+            "lon": 74.62085556666666
+        },
+        {
+            "name": "OSUGE",
+            "lat": 40.992947216666664,
+            "lon": 74.70110833333334
+        },
+        {
+            "name": "SAX",
+            "lat": 41.06754166666666,
+            "lon": 74.53830833333333
+        },
+        {
+            "name": "STW",
+            "lat": 40.99581943333333,
+            "lon": 74.86903056666667
+        },
+        {
+            "name": "VOYLU",
+            "lat": 40.96694721666667,
+            "lon": 74.58081666666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "OSUGE": "OSUGE AT OR ABOVE 3000",
+                "DINSY": "DINSY 2600 RNW 03 TRK 029 UNTIL 821 TURN RIGHT DIRECT",
+                "SAX": "OVERFLY SAX AT OR ABOVE 3000 HOLD AT SAX LEFT TURN INBOUNDCOURSE 079 LEGDIST 4 FAF DINSY MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "STW",
+                    "fixes": {
+                        "STW": "STW"
+                    }
+                },
+                {
+                    "name": "VOYLU",
+                    "fixes": {
+                        "VOYLU": "VOYLU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA03",
+            "fixes": {
+                "SAX": "SAX 3000 SAX AT OR ABOVE 3000 HOLD AT SAX RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF SAX MAP MA345",
+                "ANKLE": "ANKLE AT OR ABOVE 1820",
+                "MA345": "OVERFLY MA345 1300 RNW 03 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SAX",
+                    "fixes": {
+                        "SAX": "SAX RIGHT TURN INBOUNDCOURSE 335 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA21",
+            "fixes": {
+                "SAX": "SAX 3000 SAX AT OR ABOVE 3000 HOLD AT SAX RIGHT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF SAX MAP MA345",
+                "ANKLE": "ANKLE AT OR ABOVE 1820",
+                "MA345": "OVERFLY MA345 1300 RNW 21 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SAX",
+                    "fixes": {
+                        "SAX": "SAX RIGHT TURN INBOUNDCOURSE 335 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

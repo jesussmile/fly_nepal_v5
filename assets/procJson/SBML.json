@@ -1,0 +1,145 @@
+{
+    "fixes": [
+        {
+            "name": "ML001",
+            "lat": 22.378833333333333,
+            "lon": 50.07666666666667
+        },
+        {
+            "name": "ML002",
+            "lat": 22.4485,
+            "lon": 49.99016666666667
+        },
+        {
+            "name": "ML003",
+            "lat": 22.422,
+            "lon": 49.87916666666667
+        },
+        {
+            "name": "ML004",
+            "lat": 22.367,
+            "lon": 49.9695
+        },
+        {
+            "name": "ML006",
+            "lat": 22.285666666666668,
+            "lon": 49.949
+        },
+        {
+            "name": "ML007",
+            "lat": 22.0265,
+            "lon": 49.8835
+        },
+        {
+            "name": "ML008",
+            "lat": 21.9715,
+            "lon": 49.9735
+        },
+        {
+            "name": "ML009",
+            "lat": 21.945166666666665,
+            "lon": 49.863
+        },
+        {
+            "name": "ML011",
+            "lat": 22.014833333333332,
+            "lon": 49.776666666666664
+        },
+        {
+            "name": "ML012",
+            "lat": 22.108,
+            "lon": 49.904
+        },
+        {
+            "name": "ML021",
+            "lat": 22.156755566666668,
+            "lon": 49.91633611666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "OMNI",
+            "rnw": "36",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 03",
+                    "fixes": {
+                        "RNW 03": "RNW 03 HDG 034 UNTIL 2700 HDG 034 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 21",
+                    "fixes": {
+                        "RNW 21": "RNW 21 HDG 214 UNTIL 2700 HDG 214 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "ML004": "ML004 AT OR ABOVE 4500",
+                "ML006": "ML006 3880 RNW 03",
+                "ML007": "OVERFLY ML007 AT OR ABOVE 5500 HOLD AT ML007 RIGHT TURN INBOUNDCOURSE 214 ALT 5500 SPEED 230 LEGTIME 1 FAF ML006 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "ML001",
+                    "fixes": {
+                        "ML001": "ML001 AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "ML002",
+                    "fixes": {
+                        "ML002": "ML002 AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "ML003",
+                    "fixes": {
+                        "ML003": "ML003 AT OR ABOVE 5500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "ML007": "ML007 AT OR ABOVE 4500",
+                "ML012": "ML012 3720",
+                "ML021": "ML021 AT OR ABOVE 2764 RNW 21",
+                "ML004": "OVERFLY ML004 AT OR ABOVE 5500 HOLD AT ML004 RIGHT TURN INBOUNDCOURSE 034 ALT 5500 SPEED 230 LEGTIME 1 FAF ML012 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "ML008",
+                    "fixes": {
+                        "ML008": "ML008 AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "ML009",
+                    "fixes": {
+                        "ML009": "ML009 AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "ML011",
+                    "fixes": {
+                        "ML011": "ML011 AT OR ABOVE 5500"
+                    }
+                }
+            ]
+        }
+    ]
+}

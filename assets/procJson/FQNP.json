@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "IMSUM",
+            "lat": 15.288180566666666,
+            "lon": 39.2108
+        },
+        {
+            "name": "ITPAB",
+            "lat": 14.983075,
+            "lon": 39.412416666666665
+        },
+        {
+            "name": "NERIT",
+            "lat": 15.167680566666666,
+            "lon": 39.09116111666667
+        },
+        {
+            "name": "NIBAX",
+            "lat": 15.043319433333334,
+            "lon": 39.472183333333334
+        },
+        {
+            "name": "NP500",
+            "lat": 15.169866666666667,
+            "lon": 39.21301666666667
+        },
+        {
+            "name": "NP600",
+            "lat": 15.065322216666667,
+            "lon": 39.32465833333333
+        },
+        {
+            "name": "NP601",
+            "lat": 15.125563883333333,
+            "lon": 39.38445
+        },
+        {
+            "name": "NP700",
+            "lat": 15.041166666666667,
+            "lon": 39.350436116666664
+        },
+        {
+            "name": "NP800",
+            "lat": 15.157330566666667,
+            "lon": 39.226405566666664
+        },
+        {
+            "name": "NP801",
+            "lat": 15.097072216666668,
+            "lon": 39.16662221666667
+        },
+        {
+            "name": "OKNEV",
+            "lat": 14.922816666666666,
+            "lon": 39.35268333333333
+        },
+        {
+            "name": "UTODO",
+            "lat": 15.227938883333334,
+            "lon": 39.15096388333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "NP500": "NP500 3000 RNW 05",
+                "NP600": "NP600 AT OR ABOVE 1850",
+                "NP601": "NP601",
+                "IMSUM": "IMSUM AT OR ABOVE 5000 HOLD AT IMSUM LEFT TURN INBOUNDCOURSE 324 ALT 5000 LEGTIME 1 FAF NP500 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "IMSUM",
+                    "fixes": {
+                        "IMSUM": "IMSUM AT OR ABOVE 5000 SPEED 200",
+                        "UTODO": "UTODO AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "NERIT",
+                    "fixes": {
+                        "NERIT": "NERIT AT OR ABOVE 5000 SPEED 200",
+                        "UTODO": "UTODO AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "NP700": "NP700 3000 RNW 23",
+                "NP800": "NP800 AT OR ABOVE 1850",
+                "NP801": "NP801",
+                "OKNEV": "OKNEV AT OR ABOVE 5000 HOLD AT OKNEV LEFT TURN INBOUNDCOURSE 144 ALT 5000 LEGTIME 1 FAF NP700 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "IMSUM",
+                    "fixes": {
+                        "IMSUM": "IMSUM",
+                        "NIBAX": "NIBAX AT OR ABOVE 5000 SPEED 200",
+                        "ITPAB": "ITPAB AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "OKNEV",
+                    "fixes": {
+                        "OKNEV": "OKNEV AT OR ABOVE 5000 SPEED 200",
+                        "ITPAB": "ITPAB AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

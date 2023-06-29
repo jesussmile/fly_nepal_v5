@@ -1,0 +1,200 @@
+{
+    "fixes": [
+        {
+            "name": "CQ03",
+            "lat": 26.004536116666667,
+            "lon": 119.88776666666666
+        },
+        {
+            "name": "CX03",
+            "lat": 26.007366666666666,
+            "lon": 119.8855
+        },
+        {
+            "name": "DAHAN",
+            "lat": 26.078433333333333,
+            "lon": 119.91400833333333
+        },
+        {
+            "name": "DF30",
+            "lat": 26.211133333333333,
+            "lon": 119.98656666666666
+        },
+        {
+            "name": "DONJU",
+            "lat": 25.966494433333335,
+            "lon": 119.95603888333333
+        },
+        {
+            "name": "FQ03",
+            "lat": 26.082044433333333,
+            "lon": 119.92239443333334
+        },
+        {
+            "name": "FX03",
+            "lat": 26.084316666666666,
+            "lon": 119.92161943333333
+        },
+        {
+            "name": "HAPPY",
+            "lat": 26.013055566666665,
+            "lon": 120.18277778333334
+        },
+        {
+            "name": "HIPPO",
+            "lat": 26.143333333333334,
+            "lon": 120.23444443333334
+        },
+        {
+            "name": "KUMMA",
+            "lat": 26.060791666666667,
+            "lon": 120.10659721666667
+        },
+        {
+            "name": "MQ03",
+            "lat": 26.120794433333334,
+            "lon": 119.939725
+        },
+        {
+            "name": "MX03",
+            "lat": 26.130483333333334,
+            "lon": 119.94331666666666
+        },
+        {
+            "name": "NACRE",
+            "lat": 26.278969433333334,
+            "lon": 120.12716666666667
+        },
+        {
+            "name": "NONCE",
+            "lat": 26.316036116666666,
+            "lon": 120.04405833333334
+        },
+        {
+            "name": "NUMEN",
+            "lat": 26.241108333333333,
+            "lon": 120.00298333333333
+        },
+        {
+            "name": "RW03",
+            "lat": 26.153388883333335,
+            "lon": 119.95496943333333
+        },
+        {
+            "name": "RW21",
+            "lat": 26.166166666666665,
+            "lon": 119.96195833333333
+        },
+        {
+            "name": "SIJYU",
+            "lat": 26.003463883333332,
+            "lon": 119.87309721666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [
+        {
+            "name": "HA1H",
+            "rnw": "05",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 03",
+                    "fixes": {
+                        "RNW 03": "RNW 03 TRK 031 UNTIL 740 TURN RIGHT HDG 155 INTERCEPT RADIAL 129 TO",
+                        "HAPPY": "HAPPY HAPPY"
+                    }
+                },
+                {
+                    "rwy": "RNW 21",
+                    "fixes": {
+                        "RNW 21": "RNW 21 TRK 211 UNTIL 740 TURN LEFT HDG 100 INTERCEPT RADIAL 129 TO",
+                        "HAPPY": "HAPPY HAPPY"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "HX1H",
+            "rnw": "05",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 03",
+                    "fixes": {
+                        "RNW 03": "RNW 03 TRK 031 UNTIL 740 TURN RIGHT HDG 125 INTERCEPT RADIAL 097 TO",
+                        "HIPPO": "HIPPO HIPPO"
+                    }
+                },
+                {
+                    "rwy": "RNW 21",
+                    "fixes": {
+                        "RNW 21": "RNW 21 TRK 211 UNTIL 740 TURN LEFT HDG 070 INTERCEPT RADIAL 097 TO",
+                        "HIPPO": "HIPPO HIPPO"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD03",
+            "fixes": {
+                "CQ03": "CQ03 AT OR ABOVE 2400",
+                "FQ03": "FQ03 1700",
+                "MQ03": "MQ03 947 RNW 03 TURN RIGHT DIRECT",
+                "KUMMA": "KUMMA 3000 HOLD AT KUMMA LEFT TURN INBOUNDCOURSE 309 LEGTIME 1 FAF FQ03 MAP MQ03"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "SIJYU": "SIJYU AT OR ABOVE 2400 SPEED 180",
+                "DAHAN": "DAHAN 1800 RNW 03 TRK 031 UNTIL 1000 TURN RIGHT DIRECT",
+                "DONJU": "DONJU 3000 HOLD AT DONJU RIGHT TURN INBOUNDCOURSE 301 ALT 3000 LEGDIST 5 FAF DAHAN MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "DONJU",
+                    "fixes": {
+                        "DONJU": "DONJU AT OR ABOVE 3000 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "NONCE": "NONCE AT OR ABOVE 1900 SPEED 180",
+                "NUMEN": "NUMEN 1900",
+                "DF30": "DF30 AT OR ABOVE 1248 RNW 21 TRK 210 UNTIL 1000 TURN LEFT DIRECT",
+                "NACRE": "NACRE 3000 HOLD AT NACRE LEFT TURN INBOUNDCOURSE 300 ALT 3000 LEGDIST 5 FAF NUMEN MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "NACRE",
+                    "fixes": {
+                        "NACRE": "NACRE AT OR ABOVE 3000 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LDA03",
+            "fixes": {
+                "CX03": "CX03 AT OR ABOVE 2400",
+                "FX03": "FX03 1700",
+                "MX03": "MX03 752 RNW 03 TURN RIGHT DIRECT",
+                "KUMMA": "KUMMA 3000 HOLD AT KUMMA LEFT TURN INBOUNDCOURSE 309 LEGTIME 1 FAF FX03 MAP MX03"
+            },
+            "transitions": []
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "AAF11",
+            "lat": 68.70425278333333,
+            "lon": 53.01549443333333
+        },
+        {
+            "name": "AAF29",
+            "lat": 68.74113333333334,
+            "lon": 52.526575
+        },
+        {
+            "name": "AANB",
+            "lat": 68.72314721666666,
+            "lon": 52.784825
+        },
+        {
+            "name": "ASSIW",
+            "lat": 68.69040278333334,
+            "lon": 53.19402778333333
+        },
+        {
+            "name": "CAGMO",
+            "lat": 68.60814166666667,
+            "lon": 53.22519166666667
+        },
+        {
+            "name": "CQ29",
+            "lat": 68.73661943333333,
+            "lon": 52.476205566666664
+        },
+        {
+            "name": "D099G",
+            "lat": 68.761275,
+            "lon": 52.493994433333334
+        },
+        {
+            "name": "D292E",
+            "lat": 68.71246943333334,
+            "lon": 53.02044721666667
+        },
+        {
+            "name": "DEVKA",
+            "lat": 68.75428888333333,
+            "lon": 52.34708056666667
+        },
+        {
+            "name": "EKTUD",
+            "lat": 68.68331388333333,
+            "lon": 52.228375
+        },
+        {
+            "name": "FQ29",
+            "lat": 68.73271111666666,
+            "lon": 52.5671
+        },
+        {
+            "name": "MQ29",
+            "lat": 68.72471943333333,
+            "lon": 52.749433333333336
+        },
+        {
+            "name": "USEPO",
+            "lat": 68.83638333333333,
+            "lon": 52.312469433333334
+        },
+        {
+            "name": "VIGZE",
+            "lat": 68.76068333333333,
+            "lon": 53.31581943333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD29",
+            "fixes": {
+                "CQ29": "CQ29 AT OR ABOVE 1600",
+                "FQ29": "FQ29 1600",
+                "MQ29": "MQ29 302 RNW 29 TURN LEFT DIRECT",
+                "AANB": "AANB HOLD AT AANB RIGHT TURN INBOUNDCOURSE 099 ALT 2000 LEGTIME 1 FAF FQ29 MAP MQ29"
+            },
+            "transitions": [
+                {
+                    "name": "AA",
+                    "fixes": {
+                        "AANB": "AANB AT OR ABOVE 1700",
+                        "D099G": "OVERFLY D099G AT OR ABOVE 1600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "ASSIW": "ASSIW AT OR ABOVE 2000 ASSIW HOLD AT ASSIW LEFT TURN INBOUNDCOURSE 107 ALT 2000 LEGTIME 1 FAF AAF11 MAP RNW 11",
+                "AAF11": "AAF11 1800 RNW 11 TRK 107 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CAGMO",
+                    "fixes": {
+                        "CAGMO": "CAGMO AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "VIGZE",
+                    "fixes": {
+                        "VIGZE": "VIGZE AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "AAF29": "AAF29 2000 RNW 29 TRK 288 UNTIL 1000 TURN RIGHT DIRECT",
+                "DEVKA": "DEVKA HOLD AT DEVKA RIGHT TURN INBOUNDCOURSE 288 ALT 2500 LEGTIME 1 FAF AAF29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "DEVKA",
+                    "fixes": {
+                        "DEVKA": "DEVKA AT OR ABOVE 2800"
+                    }
+                },
+                {
+                    "name": "EKTUD",
+                    "fixes": {
+                        "EKTUD": "EKTUD AT OR ABOVE 2500",
+                        "DEVKA": "DEVKA AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "USEPO",
+                    "fixes": {
+                        "USEPO": "USEPO AT OR ABOVE 2500",
+                        "DEVKA": "DEVKA AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

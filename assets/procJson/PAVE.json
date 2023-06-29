@@ -1,0 +1,125 @@
+{
+    "fixes": [
+        {
+            "name": "APORE",
+            "lat": 66.98402778333333,
+            "lon": 145.88877221666667
+        },
+        {
+            "name": "AVPOW",
+            "lat": 66.8611,
+            "lon": 145.48941666666667
+        },
+        {
+            "name": "COROM",
+            "lat": 66.95151943333333,
+            "lon": 146.53702221666666
+        },
+        {
+            "name": "CUBRA",
+            "lat": 66.856075,
+            "lon": 145.97700833333334
+        },
+        {
+            "name": "CURUP",
+            "lat": 66.67942778333334,
+            "lon": 146.73826388333333
+        },
+        {
+            "name": "FYU",
+            "lat": 66.57425278333334,
+            "lon": 145.27665833333333
+        },
+        {
+            "name": "MAHED",
+            "lat": 67.02499443333333,
+            "lon": 146.14639721666666
+        },
+        {
+            "name": "TANPE",
+            "lat": 67.0023,
+            "lon": 146.39726943333332
+        },
+        {
+            "name": "TODCO",
+            "lat": 67.01504166666666,
+            "lon": 146.33542778333333
+        },
+        {
+            "name": "VENAE",
+            "lat": 66.82667778333334,
+            "lon": 146.63894443333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [
+        {
+            "name": "FYU3",
+            "rnw": "06",
+            "fixes": {
+                "CUBRA": "CUBRA",
+                "FYU": "FYU"
+            },
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 04",
+                    "fixes": {
+                        "RNW 04": "RNW 04 HDG 044 UNTIL 1075"
+                    }
+                },
+                {
+                    "rwy": "RNW 22",
+                    "fixes": {
+                        "RNW 22": "RNW 22 HDG 224 UNTIL 1075"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "VENAE": "VENAE AT OR ABOVE 2200 OVERFLY VENAE AT OR ABOVE 2200 HOLD AT VENAE RIGHT TURN INBOUNDCOURSE 000 LEGDIST 4 FAF COROM MAP TANPE",
+                "COROM": "COROM 2200",
+                "TANPE": "OVERFLY TANPE 764 RNW 04 TRK 029 UNTIL 974 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CURUP",
+                    "fixes": {
+                        "CURUP": "CURUP"
+                    }
+                },
+                {
+                    "name": "VENAE",
+                    "fixes": {
+                        "VENAE": "VENAE RIGHT TURN INBOUNDCOURSE 000 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "APORE": "APORE AT OR ABOVE 2200",
+                "MAHED": "MAHED 2200",
+                "TODCO": "OVERFLY TODCO 763 RNW 22 TRK 244 UNTIL 974 TURN LEFT DIRECT",
+                "AVPOW": "OVERFLY AVPOW AT OR ABOVE 2200 HOLD AT AVPOW RIGHT TURN INBOUNDCOURSE 290 LEGDIST 4 FAF MAHED MAP TODCO"
+            },
+            "transitions": [
+                {
+                    "name": "AVPOW",
+                    "fixes": {
+                        "AVPOW": "AVPOW"
+                    }
+                }
+            ]
+        }
+    ]
+}

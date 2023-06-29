@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "EP36",
+            "lat": 30.3307,
+            "lon": 149.82650278333332
+        },
+        {
+            "name": "FF36",
+            "lat": 30.434441666666668,
+            "lon": 149.77812221666667
+        },
+        {
+            "name": "NBRNB",
+            "lat": 30.320744433333335,
+            "lon": 149.83114166666667
+        },
+        {
+            "name": "NBRSA",
+            "lat": 30.540225,
+            "lon": 149.85986388333333
+        },
+        {
+            "name": "NBRSB",
+            "lat": 30.575941666666665,
+            "lon": 149.75708888333332
+        },
+        {
+            "name": "NBRSC",
+            "lat": 30.504569433333334,
+            "lon": 149.68327778333332
+        },
+        {
+            "name": "NBRSF",
+            "lat": 30.413263883333332,
+            "lon": 149.80096666666665
+        },
+        {
+            "name": "NBRSH",
+            "lat": 30.283111116666667,
+            "lon": 149.83596388333333
+        },
+        {
+            "name": "NBRSI",
+            "lat": 30.494605566666667,
+            "lon": 149.77904721666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB36",
+            "fixes": {
+                "FF36": "FF36 2900",
+                "EP36": "OVERFLY EP36 767",
+                "NBRNB": "OVERFLY NBRNB AT OR ABOVE 1290 RNW 36 TRK 011 UNTIL 3300 TURN LEFT DIRECT NBRNB AT OR ABOVE 5500 FAF FF36 MAP NBR"
+            },
+            "transitions": [
+                {
+                    "name": "NBR1",
+                    "fixes": {
+                        "NBRNB": "NBRNB AT OR ABOVE 5500 SPEED 210 TRK 211 UNTIL 8.8 FROM NBRNB"
+                    }
+                },
+                {
+                    "name": "NBR2",
+                    "fixes": {
+                        "NBRNB": "NBRNB AT OR ABOVE 5500 TRK 201 UNTIL 10.5 FROM NBRNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "NBRSI": "NBRSI AT OR ABOVE 4000",
+                "NBRSF": "NBRSF 2400 RNW 36",
+                "NBRSH": "OVERFLY NBRSH HDG 197 VECTORS FAF NBRSF MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "NBRSA",
+                    "fixes": {
+                        "NBRSA": "NBRSA AT OR ABOVE 5500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "NBRSB",
+                    "fixes": {
+                        "NBRSB": "NBRSB AT OR ABOVE 5500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "NBRSC",
+                    "fixes": {
+                        "NBRSC": "NBRSC AT OR ABOVE 5500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

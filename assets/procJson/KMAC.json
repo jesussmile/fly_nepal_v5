@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "CROAM",
+            "lat": 32.83506666666667,
+            "lon": 83.66997778333334
+        },
+        {
+            "name": "DOBCE",
+            "lat": 32.82744443333333,
+            "lon": 83.62127221666667
+        },
+        {
+            "name": "HAVIM",
+            "lat": 32.84283611666667,
+            "lon": 83.796375
+        },
+        {
+            "name": "HONKA",
+            "lat": 32.81260556666667,
+            "lon": 83.455
+        },
+        {
+            "name": "JOBRA",
+            "lat": 32.80104443333333,
+            "lon": 83.32710278333333
+        },
+        {
+            "name": "KODRE",
+            "lat": 32.831916666666665,
+            "lon": 83.67186666666667
+        },
+        {
+            "name": "MOBSE",
+            "lat": 32.85020278333333,
+            "lon": 83.79131111666666
+        },
+        {
+            "name": "TRUKR",
+            "lat": 32.71970833333334,
+            "lon": 83.06146111666666
+        },
+        {
+            "name": "UZNOM",
+            "lat": 32.822527783333335,
+            "lon": 83.57018611666666
+        },
+        {
+            "name": "WURAS",
+            "lat": 32.81713056666667,
+            "lon": 83.50544721666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC10",
+            "fixes": {
+                "MOBSE": "MOBSE AT OR ABOVE 2100",
+                "CROAM": "CROAM 2100",
+                "UZNOM": "UZNOM 453 RNW 10 TRK 105 UNTIL 840 HDG 105 INTERCEPT RADIAL 134 TO",
+                "TRUKR": "TRUKR TRUKR AT OR ABOVE 3000 HOLD AT TRUKR LEFT TURN INBOUNDCOURSE 134 LEGTIME 1 FAF CROAM MAP UZNOM"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "HAVIM": "HAVIM AT OR ABOVE 3000",
+                "KODRE": "KODRE 2100",
+                "DOBCE": "DOBCE AT OR ABOVE 1280 RNW 10 TRK 102 UNTIL 712",
+                "JOBRA": "OVERFLY JOBRA AT OR ABOVE 3000 HOLD AT JOBRA RIGHT TURN INBOUNDCOURSE 282 LEGDIST 4 FAF KODRE MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "HAVIM",
+                    "fixes": {
+                        "HAVIM": "HAVIM RIGHT TURN INBOUNDCOURSE 102 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "JOBRA": "JOBRA AT OR ABOVE 3000",
+                "HONKA": "HONKA 2100",
+                "WURAS": "WURAS AT OR ABOVE 1280 RNW 28 TRK 282 UNTIL 712",
+                "HAVIM": "OVERFLY HAVIM AT OR ABOVE 3000 HOLD AT HAVIM RIGHT TURN INBOUNDCOURSE 102 LEGDIST 4 FAF HONKA MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "JOBRA",
+                    "fixes": {
+                        "JOBRA": "JOBRA RIGHT TURN INBOUNDCOURSE 282 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

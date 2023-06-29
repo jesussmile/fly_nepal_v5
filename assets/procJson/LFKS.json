@@ -1,0 +1,181 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 42.20697401666666,
+            "lon": 9.577099633333333
+        },
+        {
+            "name": "AF002",
+            "lat": 42.22579676666667,
+            "lon": 9.511224233333333
+        },
+        {
+            "name": "AF003",
+            "lat": 42.09916688333333,
+            "lon": 9.5579912
+        },
+        {
+            "name": "AF004",
+            "lat": 42.11399235,
+            "lon": 9.526129666666666
+        },
+        {
+            "name": "CI18",
+            "lat": 42.15425,
+            "lon": 9.399694433333334
+        },
+        {
+            "name": "D003R",
+            "lat": 42.23594443333333,
+            "lon": 9.441769433333333
+        },
+        {
+            "name": "D011G",
+            "lat": 42.042625,
+            "lon": 9.434727783333333
+        },
+        {
+            "name": "D011J",
+            "lat": 42.09924443333333,
+            "lon": 9.453716666666667
+        },
+        {
+            "name": "D017L",
+            "lat": 42.12545278333333,
+            "lon": 9.491480566666667
+        },
+        {
+            "name": "D033R",
+            "lat": 42.180033333333334,
+            "lon": 9.636727783333333
+        },
+        {
+            "name": "D041J",
+            "lat": 42.05730833333333,
+            "lon": 9.554975
+        },
+        {
+            "name": "D041L",
+            "lat": 42.08125,
+            "lon": 9.586130566666666
+        },
+        {
+            "name": "D117H",
+            "lat": 41.87066943333333,
+            "lon": 9.554111116666666
+        },
+        {
+            "name": "D146B",
+            "lat": 41.908883333333335,
+            "lon": 9.422547216666667
+        },
+        {
+            "name": "D357Q",
+            "lat": 42.220922216666665,
+            "lon": 9.399555566666667
+        },
+        {
+            "name": "FI18",
+            "lat": 42.094222216666665,
+            "lon": 9.401166666666667
+        },
+        {
+            "name": "FT18",
+            "lat": 42.010272216666664,
+            "lon": 9.423894433333333
+        },
+        {
+            "name": "KS600",
+            "lat": 42.13963888333333,
+            "lon": 9.597083333333334
+        },
+        {
+            "name": "RW18",
+            "lat": 41.936244433333336,
+            "lon": 9.405061116666667
+        },
+        {
+            "name": "SZA",
+            "lat": 41.93747221666667,
+            "lon": 9.399555566666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "CI18": "CI18 AT OR ABOVE 3700",
+                "FI18": "FI18 3100 RNW 18 TRK 176 UNTIL 3.0 FROM",
+                "SZA": "SZA TURN LEFT TRK 352 INTERCEPT RADIAL 033 FROM SZA SPEED 200 TRK 033 VECTORS FAF FI18 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "KS600",
+                    "fixes": {
+                        "KS600": "KS600 AT OR BELOW 11500 AT OR ABOVE 5100 SPEED 220",
+                        "D033R": "D033R",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D003R": "D003R 5100",
+                        "D357Q": "D357Q 5100"
+                    }
+                },
+                {
+                    "name": "SZA",
+                    "fixes": {
+                        "SZA": "SZA",
+                        "KS600": "KS600 AT OR BELOW 11500 AT OR ABOVE 5100 SPEED 220",
+                        "D033R": "D033R",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "D003R": "D003R 5100",
+                        "D357Q": "D357Q 5100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR18",
+            "fixes": {
+                "FT18": "FT18 1500",
+                "SZA": "SZA 85 RNW 18 TRK 191 UNTIL 430 TURN LEFT TRK 011 INTERCEPT RADIAL 041 FROM SZA SPEED 185 TRK 041 VECTORS FAF FT18 MAP SZA"
+            },
+            "transitions": [
+                {
+                    "name": "SZA1",
+                    "fixes": {
+                        "SZA": "SZA TRK 041 UNTIL 10.0 FROM SZA",
+                        "D041L": "D041L",
+                        "AF003": "AF003",
+                        "AF004": "AF004",
+                        "D017L": "D017L",
+                        "D011J": "D011J AT OR ABOVE 2900 SPEED 185",
+                        "D011G": "D011G AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "SZA2",
+                    "fixes": {
+                        "SZA": "SZA AT OR ABOVE 7600",
+                        "D117H": "OVERFLY D117H SPEED 220 TURN RIGHT DIRECT",
+                        "D146B": "OVERFLY D146B AT OR ABOVE 7600",
+                        "D041J": "OVERFLY D041J",
+                        "D041L": "D041L",
+                        "AF003": "AF003",
+                        "AF004": "AF004",
+                        "D017L": "D017L",
+                        "D011J": "D011J AT OR ABOVE 2900 SPEED 185",
+                        "D011G": "D011G AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        }
+    ]
+}

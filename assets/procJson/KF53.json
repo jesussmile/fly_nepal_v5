@@ -1,0 +1,126 @@
+{
+    "fixes": [
+        {
+            "name": "CIPNI",
+            "lat": 33.153472216666664,
+            "lon": 95.16746943333334
+        },
+        {
+            "name": "DUYAD",
+            "lat": 33.40997778333333,
+            "lon": 95.32049166666667
+        },
+        {
+            "name": "FOSMA",
+            "lat": 33.07829443333333,
+            "lon": 95.08277778333333
+        },
+        {
+            "name": "GEBCE",
+            "lat": 33.02085278333333,
+            "lon": 95.15473056666667
+        },
+        {
+            "name": "HEBIP",
+            "lat": 33.092,
+            "lon": 94.93973611666667
+        },
+        {
+            "name": "ICUKA",
+            "lat": 33.27801388333334,
+            "lon": 95.30822221666666
+        },
+        {
+            "name": "JAXAB",
+            "lat": 33.22801666666667,
+            "lon": 95.40942221666667
+        },
+        {
+            "name": "KEDEY",
+            "lat": 33.352411116666666,
+            "lon": 95.39257221666666
+        },
+        {
+            "name": "LENYI",
+            "lat": 33.535675,
+            "lon": 95.04958056666666
+        },
+        {
+            "name": "OSUYE",
+            "lat": 33.303927783333336,
+            "lon": 95.06180556666666
+        },
+        {
+            "name": "PRX",
+            "lat": 33.542377783333336,
+            "lon": 95.44829166666666
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "KEDEY": "KEDEY AT OR ABOVE 3000",
+                "ICUKA": "ICUKA 2000 RNW 13 TRK 130 UNTIL 812",
+                "FOSMA": "OVERFLY FOSMA AT OR ABOVE 3000 HOLD AT FOSMA RIGHT TURN INBOUNDCOURSE 311 LEGDIST 5 FAF ICUKA MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "JAXAB",
+                    "fixes": {
+                        "JAXAB": "JAXAB",
+                        "KEDEY": "KEDEY AT OR ABOVE 3000 HOLD AT KEDEY RIGHT TURN INBOUNDCOURSE 130 ALT 3000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "LENYI",
+                    "fixes": {
+                        "LENYI": "LENYI",
+                        "DUYAD": "DUYAD AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "OSUYE",
+                    "fixes": {
+                        "OSUYE": "OSUYE",
+                        "DUYAD": "DUYAD AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "PRX",
+                    "fixes": {
+                        "PRX": "PRX"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "FOSMA": "FOSMA AT OR ABOVE 3000 OVERFLY FOSMA AT OR ABOVE 3000 HOLD AT FOSMA RIGHT TURN INBOUNDCOURSE 311 LEGDIST 4 FAF CIPNI MAP RNW 31",
+                "CIPNI": "CIPNI 2000 RNW 31 TRK 311 UNTIL 812 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HEBIP",
+                    "fixes": {
+                        "HEBIP": "HEBIP"
+                    }
+                },
+                {
+                    "name": "JAXAB",
+                    "fixes": {
+                        "JAXAB": "JAXAB",
+                        "GEBCE": "GEBCE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

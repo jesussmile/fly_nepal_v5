@@ -1,0 +1,174 @@
+{
+    "fixes": [
+        {
+            "name": "BC",
+            "lat": 46.66488888333333,
+            "lon": 21.16508333333333
+        },
+        {
+            "name": "BC001",
+            "lat": 46.66488888333333,
+            "lon": 21.16508333333333
+        },
+        {
+            "name": "BC002",
+            "lat": 46.53508333333333,
+            "lon": 21.07922221666667
+        },
+        {
+            "name": "BC003",
+            "lat": 46.541888883333336,
+            "lon": 21.182138883333334
+        },
+        {
+            "name": "BC006",
+            "lat": 46.787722216666666,
+            "lon": 21.148
+        },
+        {
+            "name": "BC007",
+            "lat": 46.83272221666667,
+            "lon": 21.263638883333332
+        },
+        {
+            "name": "BC008",
+            "lat": 46.82483333333333,
+            "lon": 21.142805566666667
+        },
+        {
+            "name": "BC011",
+            "lat": 46.528138883333334,
+            "lon": 21.184027783333335
+        },
+        {
+            "name": "BC012",
+            "lat": 46.59447221666667,
+            "lon": 21.070888883333332
+        },
+        {
+            "name": "BC014",
+            "lat": 46.60130556666667,
+            "lon": 21.173916666666667
+        },
+        {
+            "name": "BC019",
+            "lat": 46.76558333333333,
+            "lon": 21.151055566666667
+        },
+        {
+            "name": "D009H",
+            "lat": 46.788719433333334,
+            "lon": 21.206708333333335
+        },
+        {
+            "name": "D171I",
+            "lat": 46.51976666666667,
+            "lon": 21.183177783333335
+        },
+        {
+            "name": "D191G",
+            "lat": 46.55771111666667,
+            "lon": 21.123455566666667
+        },
+        {
+            "name": "D351H",
+            "lat": 46.8026,
+            "lon": 21.147538883333333
+        },
+        {
+            "name": "FQ17L",
+            "lat": 46.764927783333334,
+            "lon": 21.152347216666666
+        },
+        {
+            "name": "FQ35R",
+            "lat": 46.60115556666667,
+            "lon": 21.173172216666668
+        },
+        {
+            "name": "VOR11",
+            "lat": 46.63418333333333,
+            "lon": 21.168977783333332
+        }
+    ],
+    "rnws": [
+        "RNW 17L",
+        "RNW 35R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD17L",
+            "fixes": {
+                "FQ17L": "FQ17L 1800 RNW 17L TRK 171 UNTIL 690",
+                "D171I": "OVERFLY D171I TURN RIGHT DIRECT",
+                "BC": "BC 4000 HOLD AT BC RIGHT TURN INBOUNDCOURSE 021 ALT 4000 LEGTIME 1 FAF FQ17L MAP RNW 17L"
+            },
+            "transitions": [
+                {
+                    "name": "BC",
+                    "fixes": {
+                        "BC": "BC AT OR ABOVE 4000",
+                        "D009H": "OVERFLY D009H AT OR ABOVE 1800 SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD35R",
+            "fixes": {
+                "FQ35R": "FQ35R 1800",
+                "VOR11": "VOR11 AT OR ABOVE 1150",
+                "BC": "BC 579 RNW 35R TRK 351 UNTIL 690 BC 4000 HOLD AT BC LEFT TURN INBOUNDCOURSE 196 ALT 4000 LEGTIME 1 FAF FQ35R MAP BC",
+                "D351H": "OVERFLY D351H TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BC",
+                    "fixes": {
+                        "BC": "BC AT OR ABOVE 4000",
+                        "D191G": "OVERFLY D191G AT OR ABOVE 1800 SPEED 185"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17L",
+            "fixes": {
+                "BC008": "BC008 AT OR ABOVE 1800 SPEED 185",
+                "BC019": "BC019 1800 RNW 17L",
+                "BC011": "OVERFLY BC011 AT OR ABOVE 1700 SPEED 230 TURN RIGHT DIRECT",
+                "BC001": "BC001 4000 SPEED 230 HOLD AT BC001 RIGHT TURN INBOUNDCOURSE 021 ALT 4000 SPEED 230 LEGTIME 1 FAF BC019 MAP RNW 17L"
+            },
+            "transitions": [
+                {
+                    "name": "BC001",
+                    "fixes": {
+                        "BC001": "BC001 4000",
+                        "BC007": "BC007 AT OR ABOVE 1800 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35R",
+            "fixes": {
+                "BC003": "BC003 AT OR ABOVE 1800 SPEED 185",
+                "BC014": "BC014 1800 RNW 35R",
+                "BC006": "OVERFLY BC006 AT OR ABOVE 1300 SPEED 230 TURN RIGHT DIRECT",
+                "BC001": "BC001 4000 SPEED 230 HOLD AT BC001 LEFT TURN INBOUNDCOURSE 196 ALT 4000 SPEED 230 LEGTIME 1 FAF BC014 MAP RNW 35R"
+            },
+            "transitions": [
+                {
+                    "name": "BC001",
+                    "fixes": {
+                        "BC001": "BC001 4000",
+                        "BC012": "BC012 AT OR ABOVE 2000 SPEED 220",
+                        "BC002": "BC002 AT OR ABOVE 1800 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

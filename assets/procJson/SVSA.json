@@ -1,0 +1,168 @@
+{
+    "fixes": [
+        {
+            "name": "ANKAB",
+            "lat": 7.931027783333334,
+            "lon": 72.46513333333333
+        },
+        {
+            "name": "BUTRU",
+            "lat": 7.992419433333334,
+            "lon": 72.48233333333333
+        },
+        {
+            "name": "CUC",
+            "lat": 7.933333333333334,
+            "lon": 72.51361111666667
+        },
+        {
+            "name": "D242L",
+            "lat": 8.120866666666666,
+            "lon": 72.43098888333333
+        },
+        {
+            "name": "D242U",
+            "lat": 8.029172216666666,
+            "lon": 72.55293611666667
+        },
+        {
+            "name": "D355E",
+            "lat": 8.003022216666666,
+            "lon": 72.56085833333333
+        },
+        {
+            "name": "KEVAK",
+            "lat": 8.116894433333334,
+            "lon": 72.37408056666666
+        },
+        {
+            "name": "LFA",
+            "lat": 8.241833333333334,
+            "lon": 72.26994443333334
+        },
+        {
+            "name": "LFA12",
+            "lat": 8.109969433333333,
+            "lon": 72.42212778333334
+        },
+        {
+            "name": "LFA22",
+            "lat": 7.9970194333333335,
+            "lon": 72.55235278333333
+        },
+        {
+            "name": "MA144",
+            "lat": 7.889794433333334,
+            "lon": 72.46994721666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "LFA1",
+            "rnw": "35",
+            "fixes": {
+                "BUTRU": "BUTRU AT OR ABOVE 4000",
+                "KEVAK": "KEVAK AT OR ABOVE 4300",
+                "LFA": "LFA AT OR ABOVE 4300"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LFA1C",
+            "rnw": "35",
+            "fixes": {
+                "CUC": "CUC AT OR ABOVE 3500",
+                "LFA22": "LFA22 5100",
+                "LFA12": "LFA12 8000",
+                "LFA": "LFA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "LFA1B",
+            "runway": "RNW 17",
+            "fixes": {
+                "LFA": "LFA",
+                "D242L": "D242L 8000",
+                "D242U": "OVERFLY D242U 5200",
+                "D355E": "D355E 4900"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAVY17",
+            "fixes": {
+                "BUTRU": "BUTRU AT OR ABOVE 4300 BUTRU",
+                "ANKAB": "ANKAB 3000 RNW 17 TRK 173 UNTIL 1720 TURN RIGHT DIRECT",
+                "KEVAK": "OVERFLY KEVAK 5700 HOLD AT KEVAK RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4 FAF ANKAB MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "LFA",
+                    "fixes": {
+                        "LFA": "LFA AT OR ABOVE 4700",
+                        "KEVAK": "KEVAK AT OR ABOVE 4700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ17",
+            "fixes": {
+                "BUTRU": "BUTRU AT OR ABOVE 4300 BUTRU",
+                "ANKAB": "ANKAB 3000 RNW 17 TRK 173 UNTIL 1720 TURN RIGHT DIRECT",
+                "KEVAK": "OVERFLY KEVAK 5700 HOLD AT KEVAK RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4 FAF ANKAB MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "LFA",
+                    "fixes": {
+                        "LFA": "LFA AT OR ABOVE 4700",
+                        "KEVAK": "KEVAK AT OR ABOVE 4700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM17",
+            "fixes": {
+                "CUC": "CUC 3400 CUC AT OR ABOVE 6000 SPEED 185 HOLD AT CUC LEFT TURN INBOUNDCOURSE 006 ALT 6000 SPEED 190 LEGTIME 1 FAF CUC MAP MA144",
+                "MA144": "OVERFLY MA144 2250 RNW 17 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CUC",
+                    "fixes": {
+                        "CUC": "CUC AT OR ABOVE 6000 TRK 355 UNTIL 6.0 FROM CUC SPEED 160 TURN LEFT DIRECT",
+                        "D355E": "D355E AT OR ABOVE 4900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM35",
+            "fixes": {
+                "CUC": "CUC 3400 CUC AT OR ABOVE 6000 SPEED 185 HOLD AT CUC LEFT TURN INBOUNDCOURSE 006 ALT 6000 SPEED 190 LEGTIME 1 FAF CUC MAP MA144",
+                "MA144": "OVERFLY MA144 2250 RNW 35 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CUC",
+                    "fixes": {
+                        "CUC": "CUC AT OR ABOVE 6000 TRK 355 UNTIL 6.0 FROM CUC SPEED 160 TURN LEFT DIRECT",
+                        "D355E": "D355E AT OR ABOVE 4900"
+                    }
+                }
+            ]
+        }
+    ]
+}

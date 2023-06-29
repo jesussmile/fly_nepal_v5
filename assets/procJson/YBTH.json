@@ -1,0 +1,161 @@
+{
+    "fixes": [
+        {
+            "name": "BTHNA",
+            "lat": 33.20636111666666,
+            "lon": 149.54177778333334
+        },
+        {
+            "name": "BTHNB",
+            "lat": 33.41404443333333,
+            "lon": 149.65698888333333
+        },
+        {
+            "name": "BTHNC",
+            "lat": 33.19594443333333,
+            "lon": 149.728
+        },
+        {
+            "name": "BTHND",
+            "lat": 33.14636111666667,
+            "lon": 149.63058333333333
+        },
+        {
+            "name": "BTHNF",
+            "lat": 33.312972216666665,
+            "lon": 149.64375
+        },
+        {
+            "name": "BTHNH",
+            "lat": 33.446277783333336,
+            "lon": 149.65433333333334
+        },
+        {
+            "name": "BTHNI",
+            "lat": 33.22966666666667,
+            "lon": 149.63716666666667
+        },
+        {
+            "name": "BTHSE",
+            "lat": 33.605944433333335,
+            "lon": 149.761
+        },
+        {
+            "name": "BTHSF",
+            "lat": 33.4995,
+            "lon": 149.6585
+        },
+        {
+            "name": "BTHSG",
+            "lat": 33.666,
+            "lon": 149.67183333333332
+        },
+        {
+            "name": "BTHSH",
+            "lat": 33.366138883333335,
+            "lon": 149.64797221666666
+        },
+        {
+            "name": "BTHSI",
+            "lat": 33.58266666666667,
+            "lon": 149.66516666666666
+        },
+        {
+            "name": "BTHSJ",
+            "lat": 33.61633333333333,
+            "lon": 149.57383333333334
+        },
+        {
+            "name": "FN17",
+            "lat": 33.28958333333333,
+            "lon": 149.62548888333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 17",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB17",
+            "fixes": {
+                "FN17": "FN17 4600 RNW 17",
+                "BTHNB": "OVERFLY BTHNB TRK 185 UNTIL 5200 FAF FN17 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BTH1",
+                    "fixes": {
+                        "BTHNB": "BTHNB AT OR ABOVE 5200 TRK 359 UNTIL 8.8 FROM BTHNB"
+                    }
+                },
+                {
+                    "name": "BTH2",
+                    "fixes": {
+                        "BTHNB": "BTHNB AT OR ABOVE 5200 TRK 346 UNTIL 8.8 FROM BTHNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "BTHNI": "BTHNI AT OR ABOVE 5200",
+                "BTHNF": "BTHNF 4120 RNW 17",
+                "BTHNH": "OVERFLY BTHNH HDG 185 VECTORS FAF BTHNF MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BTHNA",
+                    "fixes": {
+                        "BTHNA": "BTHNA AT OR ABOVE 5200 SPEED 220"
+                    }
+                },
+                {
+                    "name": "BTHNC",
+                    "fixes": {
+                        "BTHNC": "BTHNC AT OR ABOVE 5700 SPEED 220"
+                    }
+                },
+                {
+                    "name": "BTHND",
+                    "fixes": {
+                        "BTHND": "BTHND AT OR ABOVE 5200 SPEED 220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "BTHSI": "BTHSI AT OR ABOVE 5200",
+                "BTHSF": "BTHSF 4080 RNW 35",
+                "BTHSH": "BTHSH TRK 344 UNTIL 5700 FAF BTHSF MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BTHSE",
+                    "fixes": {
+                        "BTHSE": "BTHSE AT OR ABOVE 5700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "BTHSG",
+                    "fixes": {
+                        "BTHSG": "BTHSG AT OR ABOVE 5700 SPEED 210"
+                    }
+                },
+                {
+                    "name": "BTHSJ",
+                    "fixes": {
+                        "BTHSJ": "BTHSJ AT OR ABOVE 5200 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

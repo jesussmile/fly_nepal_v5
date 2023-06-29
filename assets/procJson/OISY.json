@@ -1,0 +1,221 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 30.5002967,
+            "lon": 51.3721373
+        },
+        {
+            "name": "AF002",
+            "lat": 30.56433655,
+            "lon": 51.30782428333333
+        },
+        {
+            "name": "AF003",
+            "lat": 30.643180766666667,
+            "lon": 51.27195091666667
+        },
+        {
+            "name": "CF13",
+            "lat": 30.8474,
+            "lon": 51.327838883333335
+        },
+        {
+            "name": "CF319",
+            "lat": 30.508927783333334,
+            "lon": 51.722991666666665
+        },
+        {
+            "name": "D197O",
+            "lat": 30.458225,
+            "lon": 51.456488883333336
+        },
+        {
+            "name": "D275O",
+            "lat": 30.727888883333332,
+            "lon": 51.269455566666664
+        },
+        {
+            "name": "FF13",
+            "lat": 30.785822216666666,
+            "lon": 51.41946943333333
+        },
+        {
+            "name": "FF319",
+            "lat": 30.587983333333334,
+            "lon": 51.651797216666665
+        },
+        {
+            "name": "FF333",
+            "lat": 30.533347216666666,
+            "lon": 51.635175
+        },
+        {
+            "name": "MA13",
+            "lat": 30.708758333333332,
+            "lon": 51.53384166666667
+        },
+        {
+            "name": "MIPUL",
+            "lat": 31.002777783333332,
+            "lon": 51.7025
+        },
+        {
+            "name": "RADID",
+            "lat": 30.412222216666667,
+            "lon": 51.43694443333333
+        },
+        {
+            "name": "YSJ",
+            "lat": 30.693333333333335,
+            "lon": 51.556694433333334
+        },
+        {
+            "name": "YSJNB",
+            "lat": 30.70125,
+            "lon": 51.548833333333334
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "MIPU1A",
+            "rnw": "31",
+            "fixes": {
+                "YSJ": "YSJ AT OR ABOVE 13000",
+                "MIPUL": "MIPUL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RADI1A",
+            "rnw": "31",
+            "fixes": {
+                "RADID": "RADID"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "MIPU1N",
+            "runway": "RNW 13",
+            "fixes": {
+                "MIPUL": "MIPUL",
+                "YSJ": "YSJ",
+                "D275O": "D275O"
+            }
+        },
+        {
+            "name": "RADI1N",
+            "runway": "RNW 13",
+            "fixes": {
+                "RADID": "RADID",
+                "D197O": "D197O",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "AF003": "AF003",
+                "D275O": "D275O"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD13",
+            "fixes": {
+                "CF13": "CF13 AT OR ABOVE 10100",
+                "FF13": "FF13 8500",
+                "MA13": "MA13 5891 RNW 13",
+                "YSJ": "YSJ TRK 180 UNTIL 9500 TURN RIGHT DIRECT",
+                "D275O": "D275O 12500 HOLD AT D275O LEFT TURN INBOUNDCOURSE 095 ALT 12500 SPEED 220 LEGTIME 1 FAF FF13 MAP MA13"
+            },
+            "transitions": [
+                {
+                    "name": "D275O",
+                    "fixes": {
+                        "D275O": "D275O"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB13",
+            "fixes": {
+                "FF333": "FF333 11400",
+                "YSJNB": "YSJNB 10100 RNW 13 TRK 310 UNTIL 12500 TURN LEFT DIRECT YSJNB 15000 HOLD AT YSJNB RIGHT TURN INBOUNDCOURSE 116 SPEED 230 LEGTIME 1 FAF FF333 MAP YSJ"
+            },
+            "transitions": [
+                {
+                    "name": "YSJ",
+                    "fixes": {
+                        "YSJNB": "YSJNB AT OR ABOVE 15000 TRK 133 UNTIL 11.0 FROM YSJNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB31",
+            "fixes": {
+                "FF333": "FF333 11400",
+                "YSJNB": "YSJNB 10100 RNW 31 TRK 310 UNTIL 12500 TURN LEFT DIRECT YSJNB 15000 HOLD AT YSJNB RIGHT TURN INBOUNDCOURSE 116 SPEED 230 LEGTIME 1 FAF FF333 MAP YSJ"
+            },
+            "transitions": [
+                {
+                    "name": "YSJ",
+                    "fixes": {
+                        "YSJNB": "YSJNB AT OR ABOVE 15000 TRK 133 UNTIL 11.0 FROM YSJNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM13",
+            "fixes": {
+                "CF319": "CF319 AT OR ABOVE 11500",
+                "FF319": "FF319 10500",
+                "YSJ": "YSJ 8500 RNW 13 TRK 309 UNTIL 12500 TURN LEFT DIRECT YSJ HOLD AT YSJ RIGHT TURN INBOUNDCOURSE 130 ALT 17000 SPEED 210 LEGTIME 1 FAF FF319 MAP YSJ"
+            },
+            "transitions": [
+                {
+                    "name": "YSJ1",
+                    "fixes": {
+                        "YSJ": "YSJ AT OR ABOVE 17000 TRK 156 UNTIL 14.0 FROM YSJ"
+                    }
+                },
+                {
+                    "name": "YSJ2",
+                    "fixes": {
+                        "YSJ": "YSJ AT OR ABOVE 17000 TRK 147 UNTIL 14.0 FROM YSJ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORM31",
+            "fixes": {
+                "CF319": "CF319 AT OR ABOVE 11500",
+                "FF319": "FF319 10500",
+                "YSJ": "YSJ 8500 RNW 31 TRK 309 UNTIL 12500 TURN LEFT DIRECT YSJ HOLD AT YSJ RIGHT TURN INBOUNDCOURSE 130 ALT 17000 SPEED 210 LEGTIME 1 FAF FF319 MAP YSJ"
+            },
+            "transitions": [
+                {
+                    "name": "YSJ1",
+                    "fixes": {
+                        "YSJ": "YSJ AT OR ABOVE 17000 TRK 156 UNTIL 14.0 FROM YSJ"
+                    }
+                },
+                {
+                    "name": "YSJ2",
+                    "fixes": {
+                        "YSJ": "YSJ AT OR ABOVE 17000 TRK 147 UNTIL 14.0 FROM YSJ"
+                    }
+                }
+            ]
+        }
+    ]
+}

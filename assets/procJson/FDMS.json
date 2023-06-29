@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "CI07",
+            "lat": 26.634577783333334,
+            "lon": 31.151144433333332
+        },
+        {
+            "name": "MM07",
+            "lat": 26.542777783333335,
+            "lon": 31.286666666666665
+        },
+        {
+            "name": "MSNB",
+            "lat": 26.510491666666667,
+            "lon": 31.33435
+        },
+        {
+            "name": "MWNB",
+            "lat": 26.624413883333332,
+            "lon": 31.165930566666667
+        },
+        {
+            "name": "OMNB",
+            "lat": 26.574319433333333,
+            "lon": 31.24
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS07",
+            "fixes": {
+                "CI07": "CI07 AT OR ABOVE 5300",
+                "MWNB": "MWNB 5300 RNW 07 TRK 073 UNTIL 3100 TURN RIGHT DIRECT MWNB 6000 HOLD AT MWNB RIGHT TURN INBOUNDCOURSE 073 LEGTIME 1 FAF MWNB MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "MW",
+                    "fixes": {
+                        "MWNB": "MWNB RIGHT TURN INBOUNDCOURSE 073 ALT 6000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB07",
+            "fixes": {
+                "MWNB": "MWNB AT OR ABOVE 5300 MWNB 6000 HOLD AT MWNB RIGHT TURN INBOUNDCOURSE 073 ALT 6000 LEGTIME 1 FAF OMNB MAP MM07",
+                "OMNB": "OMNB 3500",
+                "MM07": "MM07 2351 RNW 07",
+                "MSNB": "OVERFLY MSNB TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MW",
+                    "fixes": {
+                        "MWNB": "MWNB RIGHT TURN INBOUNDCOURSE 073 ALT 6000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "ANISY",
+            "lat": 41.691291666666665,
+            "lon": 96.12998888333334
+        },
+        {
+            "name": "BRAVA",
+            "lat": 41.601677783333336,
+            "lon": 96.07067778333334
+        },
+        {
+            "name": "GOCRE",
+            "lat": 41.94388611666667,
+            "lon": 96.29819721666667
+        },
+        {
+            "name": "HIGVA",
+            "lat": 41.854366666666664,
+            "lon": 96.23841111666667
+        },
+        {
+            "name": "OTEKE",
+            "lat": 41.713830566666665,
+            "lon": 96.14493333333333
+        },
+        {
+            "name": "ZAPLI",
+            "lat": 41.81323056666667,
+            "lon": 96.211
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "GOCRE": "GOCRE AT OR ABOVE 3400",
+                "HIGVA": "HIGVA 2900",
+                "ZAPLI": "ZAPLI AT OR ABOVE 2020 RNW 15 TRK 151 UNTIL 1277",
+                "BRAVA": "OVERFLY BRAVA AT OR ABOVE 3000 HOLD AT BRAVA RIGHT TURN INBOUNDCOURSE 331 LEGDIST 4 FAF HIGVA MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "GOCRE",
+                    "fixes": {
+                        "GOCRE": "GOCRE RIGHT TURN INBOUNDCOURSE 150 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "BRAVA": "BRAVA AT OR ABOVE 3000",
+                "ANISY": "ANISY 2500",
+                "OTEKE": "OTEKE AT OR ABOVE 2020 RNW 33 TRK 331 UNTIL 1276",
+                "GOCRE": "OVERFLY GOCRE AT OR ABOVE 3000 HOLD AT GOCRE RIGHT TURN INBOUNDCOURSE 150 LEGDIST 4 FAF ANISY MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "BRAVA",
+                    "fixes": {
+                        "BRAVA": "BRAVA RIGHT TURN INBOUNDCOURSE 331 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "fixes": [
+        {
+            "name": "GVE",
+            "lat": 38.0136,
+            "lon": 78.15302778333333
+        },
+        {
+            "name": "JODKA",
+            "lat": 38.03598888333333,
+            "lon": 77.7222
+        },
+        {
+            "name": "LIRKE",
+            "lat": 38.00279166666667,
+            "lon": 78.03596666666667
+        },
+        {
+            "name": "LUYIS",
+            "lat": 38.022897216666664,
+            "lon": 77.84677778333334
+        },
+        {
+            "name": "OVILY",
+            "lat": 38.01375278333333,
+            "lon": 77.93326111666667
+        },
+        {
+            "name": "PREAK",
+            "lat": 37.99715833333333,
+            "lon": 78.08845278333334
+        },
+        {
+            "name": "TURCO",
+            "lat": 37.90393888333333,
+            "lon": 78.31185556666667
+        },
+        {
+            "name": "WEBBR",
+            "lat": 37.985922216666665,
+            "lon": 78.19248056666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC27",
+            "fixes": {
+                "JODKA": "JODKA AT OR ABOVE 2900",
+                "LUYIS": "LUYIS 2300",
+                "OVILY": "OVILY AT OR ABOVE 980 RNW 27",
+                "GVE": "GVE AT OR ABOVE 2900 HOLD AT GVE RIGHT TURN INBOUNDCOURSE 002 LEGTIME 1 FAF LUYIS MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "GVE",
+                    "fixes": {
+                        "GVE": "GVE",
+                        "JODKA": "JODKA AT OR ABOVE 2900 HOLD AT JODKA RIGHT TURN INBOUNDCOURSE 272 ALT 2900 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "WEBBR": "WEBBR AT OR ABOVE 3300",
+                "PREAK": "PREAK 2200",
+                "LIRKE": "LIRKE AT OR ABOVE 1400 RNW 09 TRK 092 UNTIL 1000 TURN RIGHT DIRECT",
+                "TURCO": "OVERFLY TURCO AT OR ABOVE 3300 HOLD AT TURCO RIGHT TURN INBOUNDCOURSE 063 LEGDIST 4 FAF PREAK MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "WEBBR",
+                    "fixes": {
+                        "WEBBR": "WEBBR RIGHT TURN INBOUNDCOURSE 092 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "JODKA": "JODKA AT OR ABOVE 2900",
+                "LUYIS": "LUYIS 2300",
+                "OVILY": "OVILY AT OR ABOVE 980 RNW 27 TRK 272 UNTIL 1000",
+                "GVE": "OVERFLY GVE AT OR ABOVE 2900 HOLD AT GVE RIGHT TURN INBOUNDCOURSE 002 ALT 2900 LEGDIST 4 FAF LUYIS MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "JODKA",
+                    "fixes": {
+                        "JODKA": "JODKA RIGHT TURN INBOUNDCOURSE 272 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "fixes": [
+        {
+            "name": "AYDOV",
+            "lat": 40.769627783333334,
+            "lon": 92.944775
+        },
+        {
+            "name": "AYFAH",
+            "lat": 40.60029443333333,
+            "lon": 92.85789166666666
+        },
+        {
+            "name": "EJKAX",
+            "lat": 40.86330278333333,
+            "lon": 92.99305278333334
+        },
+        {
+            "name": "JODIV",
+            "lat": 40.50546943333333,
+            "lon": 92.80945278333333
+        },
+        {
+            "name": "NEMLE",
+            "lat": 40.535675,
+            "lon": 92.7076
+        },
+        {
+            "name": "UVODE",
+            "lat": 40.475175,
+            "lon": 92.91121388333333
+        },
+        {
+            "name": "ZUVKO",
+            "lat": 40.719180566666665,
+            "lon": 92.91883888333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "EJKAX": "EJKAX AT OR ABOVE 3000",
+                "AYDOV": "AYDOV 2700",
+                "ZUVKO": "ZUVKO AT OR ABOVE 1660 RNW 16 TRK 158 UNTIL 1273",
+                "JODIV": "OVERFLY JODIV AT OR ABOVE 3000 HOLD AT JODIV RIGHT TURN INBOUNDCOURSE 338 LEGDIST 4 FAF AYDOV MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "EJKAX",
+                    "fixes": {
+                        "EJKAX": "EJKAX RIGHT TURN INBOUNDCOURSE 158 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "JODIV": "JODIV AT OR ABOVE 3000",
+                "AYFAH": "AYFAH 2700 RNW 34 TRK 338 UNTIL 1273",
+                "EJKAX": "OVERFLY EJKAX AT OR ABOVE 3000 HOLD AT EJKAX RIGHT TURN INBOUNDCOURSE 158 LEGDIST 4 FAF AYFAH MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "JODIV",
+                    "fixes": {
+                        "JODIV": "JODIV RIGHT TURN INBOUNDCOURSE 338 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NEMLE",
+                    "fixes": {
+                        "NEMLE": "NEMLE"
+                    }
+                },
+                {
+                    "name": "UVODE",
+                    "fixes": {
+                        "UVODE": "UVODE"
+                    }
+                }
+            ]
+        }
+    ]
+}

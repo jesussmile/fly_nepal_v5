@@ -1,0 +1,172 @@
+{
+    "fixes": [
+        {
+            "name": "ARGEK",
+            "lat": 5.439577783333333,
+            "lon": 5.611958333333334
+        },
+        {
+            "name": "BONPU",
+            "lat": 5.423961116666667,
+            "lon": 5.729094433333334
+        },
+        {
+            "name": "CD06",
+            "lat": 5.532366666666666,
+            "lon": 5.743194433333334
+        },
+        {
+            "name": "CD24",
+            "lat": 5.654330566666666,
+            "lon": 5.901844433333333
+        },
+        {
+            "name": "FD06",
+            "lat": 5.566,
+            "lon": 5.7804416666666665
+        },
+        {
+            "name": "FD24",
+            "lat": 5.626069433333333,
+            "lon": 5.858366666666667
+        },
+        {
+            "name": "LUBLU",
+            "lat": 5.556966666666667,
+            "lon": 5.627533333333333
+        },
+        {
+            "name": "MD24",
+            "lat": 5.609652783333333,
+            "lon": 5.8331277833333335
+        },
+        {
+            "name": "NEGPA",
+            "lat": 5.756775,
+            "lon": 6.025716666666667
+        },
+        {
+            "name": "OSB",
+            "lat": 5.599611116666667,
+            "lon": 5.817722216666667
+        },
+        {
+            "name": "RUVDI",
+            "lat": 5.490466666666666,
+            "lon": 5.678319433333334
+        },
+        {
+            "name": "RW06",
+            "lat": 5.593238883333333,
+            "lon": 5.812352783333333
+        },
+        {
+            "name": "SU400",
+            "lat": 5.655008333333333,
+            "lon": 5.892933333333334
+        },
+        {
+            "name": "SU600",
+            "lat": 5.541355566666667,
+            "lon": 5.744686116666667
+        },
+        {
+            "name": "TUTIK",
+            "lat": 5.639388883333333,
+            "lon": 6.010116666666667
+        },
+        {
+            "name": "ULPIK",
+            "lat": 5.705891666666666,
+            "lon": 5.959322216666667
+        },
+        {
+            "name": "XULUM",
+            "lat": 5.772388883333333,
+            "lon": 5.908513883333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD06",
+            "fixes": {
+                "CD06": "CD06 AT OR ABOVE 1500",
+                "FD06": "FD06 880 RNW 06 TRK 055 UNTIL 1500 TURN LEFT DIRECT",
+                "OSB": "OSB 2000 HOLD AT OSB LEFT TURN INBOUNDCOURSE 050 ALT 2000 LEGTIME 1 FAF FD06 MAP RNW 06"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD24",
+            "fixes": {
+                "CD24": "CD24 AT OR ABOVE 1200",
+                "FD24": "FD24 840",
+                "MD24": "MD24 271 RNW 24 TRK 235 UNTIL 1500 TURN LEFT DIRECT",
+                "OSB": "OSB 2000 HOLD AT OSB RIGHT TURN INBOUNDCOURSE 239 ALT 2000 LEGTIME 1 FAF FD24 MAP MD24"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "RUVDI": "RUVDI AT OR ABOVE 2000 SPEED 200 RUVDI AT OR ABOVE 2000 HOLD AT RUVDI RIGHT TURN INBOUNDCOURSE 055 ALT 2000 SPEED 230 LEGTIME 1 FAF SU600 MAP RNW 06",
+                "SU600": "SU600 1700 RNW 06 TURN RIGHT DIRECT",
+                "BONPU": "BONPU TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ARGEK",
+                    "fixes": {
+                        "ARGEK": "ARGEK AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "BONPU",
+                    "fixes": {
+                        "BONPU": "BONPU AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "LUBLU",
+                    "fixes": {
+                        "LUBLU": "LUBLU AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "ULPIK": "ULPIK AT OR ABOVE 2000 SPEED 200 ULPIK AT OR ABOVE 2000 HOLD AT ULPIK RIGHT TURN INBOUNDCOURSE 235 ALT 2000 SPEED 230 LEGTIME 1 FAF SU400 MAP RNW 24",
+                "SU400": "SU400 1700 RNW 24 TURN LEFT DIRECT",
+                "TUTIK": "TUTIK TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NEGPA",
+                    "fixes": {
+                        "NEGPA": "NEGPA AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "TUTIK",
+                    "fixes": {
+                        "TUTIK": "TUTIK AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "XULUM",
+                    "fixes": {
+                        "XULUM": "XULUM AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

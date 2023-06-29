@@ -1,0 +1,92 @@
+{
+    "fixes": [
+        {
+            "name": "ARD",
+            "lat": 40.253341666666664,
+            "lon": 74.90761111666667
+        },
+        {
+            "name": "EVODY",
+            "lat": 39.9285,
+            "lon": 74.85554166666667
+        },
+        {
+            "name": "IPBEH",
+            "lat": 39.844527783333334,
+            "lon": 74.86925278333334
+        },
+        {
+            "name": "OBAHE",
+            "lat": 40.18641388333333,
+            "lon": 74.813275
+        },
+        {
+            "name": "RUUTH",
+            "lat": 39.85034443333333,
+            "lon": 74.99976943333333
+        },
+        {
+            "name": "TAHSU",
+            "lat": 40.10264721666667,
+            "lon": 74.82705
+        },
+        {
+            "name": "WUGVA",
+            "lat": 40.043522216666666,
+            "lon": 74.83673888333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "IPBEH": "IPBEH AT OR ABOVE 2100",
+                "EVODY": "EVODY 1700 RNW 02 TRK 020 UNTIL 472",
+                "OBAHE": "OVERFLY OBAHE AT OR ABOVE 2000 HOLD AT OBAHE RIGHT TURN INBOUNDCOURSE 200 LEGDIST 4 FAF EVODY MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "IPBEH",
+                    "fixes": {
+                        "IPBEH": "IPBEH RIGHT TURN INBOUNDCOURSE 020 ALT 2100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RUUTH",
+                    "fixes": {
+                        "RUUTH": "RUUTH"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "OBAHE": "OBAHE AT OR ABOVE 2000",
+                "TAHSU": "TAHSU 1700",
+                "WUGVA": "WUGVA AT OR ABOVE 560 RNW 20 TRK 200 UNTIL 472",
+                "IPBEH": "OVERFLY IPBEH AT OR ABOVE 2100 HOLD AT IPBEH RIGHT TURN INBOUNDCOURSE 020 LEGDIST 4 FAF TAHSU MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "ARD",
+                    "fixes": {
+                        "ARD": "ARD"
+                    }
+                },
+                {
+                    "name": "OBAHE",
+                    "fixes": {
+                        "OBAHE": "OBAHE RIGHT TURN INBOUNDCOURSE 200 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

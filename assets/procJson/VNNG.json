@@ -1,0 +1,196 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 28.301371716666665,
+            "lon": 81.64786
+        },
+        {
+            "name": "AF002",
+            "lat": 28.291034783333334,
+            "lon": 81.72290273333333
+        },
+        {
+            "name": "AF003",
+            "lat": 28.259456716666666,
+            "lon": 81.78984511666667
+        },
+        {
+            "name": "BABAI",
+            "lat": 28.258333333333333,
+            "lon": 81.58638888333333
+        },
+        {
+            "name": "CD26",
+            "lat": 28.132577783333332,
+            "lon": 81.87426666666667
+        },
+        {
+            "name": "D089E",
+            "lat": 28.102813883333333,
+            "lon": 81.74505
+        },
+        {
+            "name": "D340L",
+            "lat": 28.289811116666666,
+            "lon": 81.57334721666666
+        },
+        {
+            "name": "FD08",
+            "lat": 28.093533333333333,
+            "lon": 81.59499443333333
+        },
+        {
+            "name": "FD26",
+            "lat": 28.117027783333334,
+            "lon": 81.76253333333334
+        },
+        {
+            "name": "JUNGE",
+            "lat": 28.210555566666667,
+            "lon": 81.84055556666667
+        },
+        {
+            "name": "KHARI",
+            "lat": 28.106702783333333,
+            "lon": 82.02771943333333
+        },
+        {
+            "name": "NGJ",
+            "lat": 28.101388883333332,
+            "lon": 81.65083333333334
+        },
+        {
+            "name": "SIKTA",
+            "lat": 28.105555566666666,
+            "lon": 81.93361111666667
+        },
+        {
+            "name": "TULVI",
+            "lat": 28.111666666666668,
+            "lon": 82.29166666666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "BABA1A",
+            "rnw": "08",
+            "fixes": {
+                "NGJ": "NGJ AT OR ABOVE 2000 SPEED 180",
+                "BABAI": "BABAI AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BABA1B",
+            "rnw": "26",
+            "fixes": {
+                "NGJ": "NGJ AT OR ABOVE 2000 SPEED 180",
+                "BABAI": "BABAI AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SIKT1A",
+            "rnw": "08",
+            "fixes": {
+                "SIKTA": "SIKTA AT OR ABOVE 5000",
+                "TULVI": "TULVI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SIKT1B",
+            "rnw": "26",
+            "fixes": {
+                "D089E": "D089E",
+                "SIKTA": "SIKTA AT OR ABOVE 5000",
+                "TULVI": "TULVI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SIKT1C",
+            "rnw": "26",
+            "fixes": {
+                "D089E": "D089E",
+                "SIKTA": "SIKTA AT OR ABOVE 5000",
+                "TULVI": "TULVI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "TULVI",
+            "runway": "RNW 26",
+            "fixes": {
+                "TULVI": "TULVI",
+                "KHARI": "KHARI AT OR ABOVE 6000",
+                "SIKTA": "SIKTA AT OR ABOVE 5000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD08",
+            "fixes": {
+                "FD08": "FD08 1600",
+                "NGJ": "NGJ 712 RNW 08 TRK 081 UNTIL 1500 TURN RIGHT DIRECT NGJ AT OR ABOVE 2500 HOLD AT NGJ LEFT TURN INBOUNDCOURSE 297 ALT 2500 SPEED 170 LEGTIME 1 FAF FD08 MAP NGJ"
+            },
+            "transitions": [
+                {
+                    "name": "NGJ",
+                    "fixes": {
+                        "NGJ": "NGJ AT OR ABOVE 2500 TRK 297 UNTIL 3.0 FROM NGJ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDY26",
+            "fixes": {
+                "CD26": "CD26 AT OR ABOVE 4800",
+                "FD26": "FD26 2300 RNW 26 TRK 261 UNTIL 2000 TURN RIGHT TRK 025 INTERCEPT RADIAL 340 TO",
+                "BABAI": "BABAI BABAI AT OR ABOVE 5000 FAF FD26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "D340L",
+                    "fixes": {
+                        "D340L": "D340L AT OR ABOVE 5000",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "JUNGE": "JUNGE AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ26",
+            "fixes": {
+                "CD26": "CD26 AT OR ABOVE 4500",
+                "FD26": "FD26 2300 RNW 26 TRK 261 UNTIL 2000 TURN RIGHT TRK 025 INTERCEPT RADIAL 340 TO",
+                "BABAI": "BABAI BABAI AT OR ABOVE 5000 FAF FD26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "SIKTA",
+                    "fixes": {
+                        "SIKTA": "SIKTA AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

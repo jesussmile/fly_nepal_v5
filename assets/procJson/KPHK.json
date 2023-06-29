@@ -1,0 +1,94 @@
+{
+    "fixes": [
+        {
+            "name": "HEDLY",
+            "lat": 26.582669433333333,
+            "lon": 80.59701111666666
+        },
+        {
+            "name": "HOREP",
+            "lat": 26.704988883333332,
+            "lon": 80.68333333333334
+        },
+        {
+            "name": "PASAE",
+            "lat": 26.604638883333333,
+            "lon": 80.67080833333333
+        },
+        {
+            "name": "PHK",
+            "lat": 26.782741666666666,
+            "lon": 80.69143333333334
+        },
+        {
+            "name": "SETUE",
+            "lat": 26.864927783333332,
+            "lon": 80.70337221666666
+        },
+        {
+            "name": "THNDR",
+            "lat": 26.627322216666666,
+            "lon": 80.86658611666667
+        },
+        {
+            "name": "WIKIN",
+            "lat": 26.966452783333335,
+            "lon": 80.7161
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "WIKIN": "WIKIN AT OR ABOVE 1500",
+                "SETUE": "SETUE 1500 RNW 18 TRK 181 UNTIL 342",
+                "PASAE": "OVERFLY PASAE AT OR ABOVE 2000 HOLD AT PASAE RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4 FAF SETUE MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "PHK",
+                    "fixes": {
+                        "PHK": "PHK",
+                        "WIKIN": "OVERFLY WIKIN AT OR ABOVE 1500 HOLD AT WIKIN LEFT TURN INBOUNDCOURSE 181 ALT 1500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "PASAE": "PASAE AT OR ABOVE 1500",
+                "HOREP": "HOREP 1500 RNW 36 TRK 001 UNTIL 416",
+                "WIKIN": "OVERFLY WIKIN AT OR ABOVE 2000 HOLD AT WIKIN LEFT TURN INBOUNDCOURSE 181 LEGDIST 4 FAF HOREP MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HEDLY",
+                    "fixes": {
+                        "HEDLY": "HEDLY"
+                    }
+                },
+                {
+                    "name": "PHK",
+                    "fixes": {
+                        "PHK": "PHK",
+                        "PASAE": "OVERFLY PASAE AT OR ABOVE 1500 HOLD AT PASAE RIGHT TURN INBOUNDCOURSE 001 ALT 1500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "THNDR",
+                    "fixes": {
+                        "THNDR": "THNDR",
+                        "PASAE": "OVERFLY PASAE AT OR ABOVE 1500 HOLD AT PASAE RIGHT TURN INBOUNDCOURSE 001 ALT 1500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

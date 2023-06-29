@@ -1,0 +1,289 @@
+{
+    "fixes": [
+        {
+            "name": "AMROK",
+            "lat": 0.8673611166666666,
+            "lon": 8.600944433333334
+        },
+        {
+            "name": "BIGAT",
+            "lat": 0.8991944333333334,
+            "lon": 8.677888883333333
+        },
+        {
+            "name": "CI21",
+            "lat": 0.5778361166666667,
+            "lon": 8.809272216666667
+        },
+        {
+            "name": "D025E",
+            "lat": 0.62395,
+            "lon": 8.789766666666667
+        },
+        {
+            "name": "D025G",
+            "lat": 0.6200694333333333,
+            "lon": 8.7911
+        },
+        {
+            "name": "D205E",
+            "lat": 0.7986583333333334,
+            "lon": 8.719422216666667
+        },
+        {
+            "name": "D205G",
+            "lat": 0.8025388833333333,
+            "lon": 8.718091666666666
+        },
+        {
+            "name": "FI21",
+            "lat": 0.6088027833333334,
+            "lon": 8.796583333333333
+        },
+        {
+            "name": "FN03",
+            "lat": 0.8202138833333333,
+            "lon": 8.710994433333333
+        },
+        {
+            "name": "FN21",
+            "lat": 0.6091972166666667,
+            "lon": 8.795688883333334
+        },
+        {
+            "name": "FS03",
+            "lat": 0.8200888833333334,
+            "lon": 8.710822216666667
+        },
+        {
+            "name": "FS21",
+            "lat": 0.6092,
+            "lon": 8.795461116666667
+        },
+        {
+            "name": "GUSOL",
+            "lat": 0.5273888833333333,
+            "lon": 8.829694433333334
+        },
+        {
+            "name": "KELAX",
+            "lat": 0.9310277833333332,
+            "lon": 8.754833333333334
+        },
+        {
+            "name": "MOKEN",
+            "lat": 0.49555556666666667,
+            "lon": 8.75275
+        },
+        {
+            "name": "OG501",
+            "lat": 0.8199722166666666,
+            "lon": 8.7105
+        },
+        {
+            "name": "OG502",
+            "lat": 0.6481666666666667,
+            "lon": 8.780361116666667
+        },
+        {
+            "name": "OG503",
+            "lat": 0.6093888833333333,
+            "lon": 8.796222216666667
+        },
+        {
+            "name": "OG504",
+            "lat": 0.7813333333333333,
+            "lon": 8.726
+        },
+        {
+            "name": "PG",
+            "lat": 0.7287777833333333,
+            "lon": 8.747472216666667
+        },
+        {
+            "name": "PGNB",
+            "lat": 0.6938333333333334,
+            "lon": 8.761722216666668
+        },
+        {
+            "name": "RAMOT",
+            "lat": 0.5592222166666667,
+            "lon": 8.906638883333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSX21",
+            "fixes": {
+                "GUSOL": "GUSOL AT OR ABOVE 2000 SPEED 210",
+                "OG503": "OG503 2000 RNW 21",
+                "OG504": "OVERFLY OG504 SPEED 210 TURN RIGHT DIRECT",
+                "MOKEN": "MOKEN AT OR ABOVE 2000 SPEED 210 FAF OG503 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "MOKEN",
+                    "fixes": {
+                        "MOKEN": "MOKEN AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "RAMOT",
+                    "fixes": {
+                        "RAMOT": "RAMOT AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY21",
+            "fixes": {
+                "CI21": "CI21 AT OR ABOVE 2000",
+                "FI21": "FI21 2000 RNW 21 TRK 205 UNTIL 1600 TURN RIGHT DIRECT",
+                "PGNB": "PGNB 2000 FAF FI21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PGNB": "PGNB AT OR ABOVE 2000",
+                        "D025E": "D025E AT OR ABOVE 2000 TRK 070 UNTIL 4.4 FROM D025E"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ21",
+            "fixes": {
+                "CI21": "CI21 AT OR ABOVE 2000",
+                "FI21": "FI21 2000 RNW 21 TRK 205 UNTIL 1600 TURN RIGHT DIRECT",
+                "PG": "PG 2000 FAF FI21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PG": "PG AT OR ABOVE 2000",
+                        "D025G": "D025G AT OR ABOVE 2000 TRK 070 UNTIL 4.4 FROM D025G"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB03",
+            "fixes": {
+                "FN03": "FN03 2000 RNW 03",
+                "PGNB": "OVERFLY PGNB TRK 025 UNTIL 1600 TURN LEFT DIRECT PGNB 2000 FAF FN03 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PGNB": "PGNB AT OR ABOVE 2000",
+                        "D205G": "D205G AT OR ABOVE 2000 TRK 250 UNTIL 4.4 FROM D205G"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB21",
+            "fixes": {
+                "FN21": "FN21 2000",
+                "PGNB": "PGNB 266 RNW 21 TRK 205 UNTIL 1600 TURN RIGHT DIRECT PGNB 2000 FAF FN21 MAP PG"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PGNB": "PGNB AT OR ABOVE 2000",
+                        "D025E": "D025E AT OR ABOVE 2000 TRK 070 UNTIL 4.4 FROM D025E"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "BIGAT": "BIGAT AT OR ABOVE 2000 SPEED 210",
+                "OG501": "OG501 2000 RNW 03",
+                "OG502": "OVERFLY OG502 SPEED 210 TURN LEFT DIRECT",
+                "AMROK": "AMROK AT OR ABOVE 2000 SPEED 210 FAF OG501 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "AMROK",
+                    "fixes": {
+                        "AMROK": "AMROK AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "KELAX",
+                    "fixes": {
+                        "KELAX": "KELAX AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "GUSOL": "GUSOL AT OR ABOVE 2000 SPEED 210",
+                "OG503": "OG503 2000 RNW 21",
+                "OG504": "OVERFLY OG504 SPEED 210 TURN RIGHT DIRECT",
+                "MOKEN": "MOKEN AT OR ABOVE 2000 SPEED 210 FAF OG503 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "MOKEN",
+                    "fixes": {
+                        "MOKEN": "MOKEN AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "RAMOT",
+                    "fixes": {
+                        "RAMOT": "RAMOT AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR03",
+            "fixes": {
+                "FS03": "FS03 2000",
+                "PG": "PG 127 RNW 03 TRK 025 UNTIL 1600 TURN LEFT DIRECT PG 2000 FAF FS03 MAP PG"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PG": "PG AT OR ABOVE 2000",
+                        "D205E": "D205E AT OR ABOVE 2000 TRK 250 UNTIL 4.4 FROM D205E"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR21",
+            "fixes": {
+                "FS21": "FS21 2000 RNW 21",
+                "PG": "OVERFLY PG TRK 205 UNTIL 1600 TURN RIGHT DIRECT PG 2000 FAF FS21 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "PG",
+                    "fixes": {
+                        "PG": "PG AT OR ABOVE 2000",
+                        "D025G": "D025G AT OR ABOVE 2000 TRK 070 UNTIL 4.4 FROM D025G"
+                    }
+                }
+            ]
+        }
+    ]
+}

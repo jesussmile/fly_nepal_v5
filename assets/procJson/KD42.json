@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "APREF",
+            "lat": 44.28624443333333,
+            "lon": 95.08452778333333
+        },
+        {
+            "name": "BALEY",
+            "lat": 44.311658333333334,
+            "lon": 95.04500833333333
+        },
+        {
+            "name": "GOPEC",
+            "lat": 44.110813883333336,
+            "lon": 95.32705556666667
+        },
+        {
+            "name": "MADYA",
+            "lat": 44.24160833333333,
+            "lon": 95.0077
+        },
+        {
+            "name": "OCIVY",
+            "lat": 44.25198888333333,
+            "lon": 95.03135833333333
+        },
+        {
+            "name": "PILIY",
+            "lat": 44.32758056666667,
+            "lon": 95.41740833333333
+        },
+        {
+            "name": "RWF",
+            "lat": 44.467275,
+            "lon": 95.12823056666667
+        },
+        {
+            "name": "UWGAG",
+            "lat": 44.097569433333334,
+            "lon": 94.79295556666666
+        },
+        {
+            "name": "WAGIK",
+            "lat": 44.022483333333334,
+            "lon": 94.49938888333334
+        },
+        {
+            "name": "WOXIG",
+            "lat": 44.175702783333335,
+            "lon": 94.91332778333333
+        },
+        {
+            "name": "YOPBU",
+            "lat": 43.86428611666667,
+            "lon": 94.96065556666667
+        },
+        {
+            "name": "ZEKEX",
+            "lat": 44.20566388333334,
+            "lon": 94.95962778333333
+        },
+        {
+            "name": "ZIVLO",
+            "lat": 44.364055566666664,
+            "lon": 95.20566666666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD13",
+            "fixes": {
+                "RWF": "RWF AT OR ABOVE 2700",
+                "BALEY": "BALEY 2700 BALEY AT OR ABOVE 2700 HOLD AT BALEY RIGHT TURN INBOUNDCOURSE 152 LEGTIME 1 FAF BALEY MAP MADYA",
+                "MADYA": "MADYA 1264 RNW 13 TRK 152 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "ZIVLO": "ZIVLO AT OR ABOVE 2900",
+                "APREF": "APREF 2600",
+                "OCIVY": "OCIVY AT OR ABOVE 1620 RNW 13 TRK 130 UNTIL 1473",
+                "UWGAG": "OVERFLY UWGAG AT OR ABOVE 2900 HOLD AT UWGAG RIGHT TURN INBOUNDCOURSE 310 LEGDIST 4 FAF APREF MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "GOPEC",
+                    "fixes": {
+                        "GOPEC": "GOPEC",
+                        "ZIVLO": "OVERFLY ZIVLO AT OR ABOVE 2900 HOLD AT ZIVLO RIGHT TURN INBOUNDCOURSE 130 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PILIY",
+                    "fixes": {
+                        "PILIY": "PILIY"
+                    }
+                },
+                {
+                    "name": "RWF",
+                    "fixes": {
+                        "RWF": "RWF"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "UWGAG": "UWGAG AT OR ABOVE 2900",
+                "WOXIG": "WOXIG 2600",
+                "ZEKEX": "ZEKEX AT OR ABOVE 1740 RNW 31 TRK 310 UNTIL 1473",
+                "ZIVLO": "OVERFLY ZIVLO AT OR ABOVE 2900 HOLD AT ZIVLO RIGHT TURN INBOUNDCOURSE 130 LEGDIST 4 FAF WOXIG MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "RWF",
+                    "fixes": {
+                        "RWF": "RWF",
+                        "UWGAG": "OVERFLY UWGAG AT OR ABOVE 2900 HOLD AT UWGAG RIGHT TURN INBOUNDCOURSE 310 ALT 2900 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WAGIK",
+                    "fixes": {
+                        "WAGIK": "WAGIK"
+                    }
+                },
+                {
+                    "name": "YOPBU",
+                    "fixes": {
+                        "YOPBU": "YOPBU"
+                    }
+                }
+            ]
+        }
+    ]
+}

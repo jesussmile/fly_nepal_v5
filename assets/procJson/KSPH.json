@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "HARAT",
+            "lat": 32.78075556666667,
+            "lon": 93.40875556666667
+        },
+        {
+            "name": "HUVIL",
+            "lat": 32.892544433333335,
+            "lon": 93.40898333333334
+        },
+        {
+            "name": "WEVKI",
+            "lat": 33.07578888333333,
+            "lon": 93.40936388333333
+        },
+        {
+            "name": "YOTCI",
+            "lat": 32.944552783333336,
+            "lon": 93.40909166666667
+        },
+        {
+            "name": "ZESTU",
+            "lat": 33.190055566666665,
+            "lon": 93.40958333333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ZESTU": "ZESTU AT OR ABOVE 3000",
+                "WEVKI": "WEVKI 1900 RNW 18 TRK 178 UNTIL 496",
+                "HARAT": "OVERFLY HARAT AT OR ABOVE 3000 HOLD AT HARAT LEFT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF WEVKI MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ZESTU",
+                    "fixes": {
+                        "ZESTU": "ZESTU RIGHT TURN INBOUNDCOURSE 178 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HARAT": "HARAT AT OR ABOVE 3000",
+                "HUVIL": "HUVIL 1900",
+                "YOTCI": "YOTCI AT OR ABOVE 900 RNW 36 TRK 358 UNTIL 545",
+                "ZESTU": "OVERFLY ZESTU AT OR ABOVE 3000 HOLD AT ZESTU RIGHT TURN INBOUNDCOURSE 178 LEGDIST 4 FAF HUVIL MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HARAT",
+                    "fixes": {
+                        "HARAT": "HARAT LEFT TURN INBOUNDCOURSE 358 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

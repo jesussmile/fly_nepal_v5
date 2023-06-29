@@ -1,0 +1,261 @@
+{
+    "fixes": [
+        {
+            "name": "AURIS",
+            "lat": 26.43885,
+            "lon": 53.46590833333333
+        },
+        {
+            "name": "CA001",
+            "lat": 24.935369433333335,
+            "lon": 53.572288883333336
+        },
+        {
+            "name": "CA002",
+            "lat": 24.876183333333334,
+            "lon": 53.63701666666667
+        },
+        {
+            "name": "CA003",
+            "lat": 24.80534443333333,
+            "lon": 53.559175
+        },
+        {
+            "name": "CA004",
+            "lat": 24.946977783333335,
+            "lon": 53.714944433333336
+        },
+        {
+            "name": "CA007",
+            "lat": 25.194933333333335,
+            "lon": 53.28733056666667
+        },
+        {
+            "name": "CA008",
+            "lat": 25.064988883333335,
+            "lon": 53.43028056666667
+        },
+        {
+            "name": "CA009",
+            "lat": 25.124055566666666,
+            "lon": 53.36532221666667
+        },
+        {
+            "name": "CA011",
+            "lat": 25.053066666666666,
+            "lon": 53.287497216666665
+        },
+        {
+            "name": "CA012",
+            "lat": 25.195002783333333,
+            "lon": 53.443238883333336
+        },
+        {
+            "name": "CA013",
+            "lat": 25.041025,
+            "lon": 53.456594433333336
+        },
+        {
+            "name": "CA014",
+            "lat": 24.959358333333334,
+            "lon": 53.54602778333334
+        },
+        {
+            "name": "COANI",
+            "lat": 25.235166666666668,
+            "lon": 53.60733333333334
+        },
+        {
+            "name": "ROKIR",
+            "lat": 25.438030566666665,
+            "lon": 52.97351388333333
+        },
+        {
+            "name": "TEMED",
+            "lat": 24.235052783333334,
+            "lon": 52.39344166666667
+        },
+        {
+            "name": "UPORU",
+            "lat": 25.224055566666667,
+            "lon": 53.882055566666665
+        },
+        {
+            "name": "VUGLA",
+            "lat": 25.590616666666666,
+            "lon": 53.048
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "AURI1B",
+            "rnw": "15",
+            "fixes": {
+                "AURIS": "AURIS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "COAN2A",
+            "rnw": "33",
+            "fixes": {
+                "COANI": "COANI"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "AURIS",
+                    "fixes": [
+                        "AURIS"
+                    ]
+                },
+                {
+                    "name": "ROKIR",
+                    "fixes": [
+                        "ROKIR"
+                    ]
+                },
+                {
+                    "name": "VUGLA",
+                    "fixes": [
+                        "VUGLA"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OMNI",
+            "rnw": "33",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 15",
+                    "fixes": {
+                        "RNW 15": "RNW 15 TRK 153 UNTIL 4200 HDG 153 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 33",
+                    "fixes": {
+                        "RNW 33": "RNW 33 TRK 333 UNTIL 4200 HDG 333 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "ROKI1B",
+            "rnw": "15",
+            "fixes": {
+                "ROKIR": "ROKIR"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TEME1B",
+            "rnw": "15",
+            "fixes": {
+                "TEMED": "TEMED"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TEME2A",
+            "rnw": "33",
+            "fixes": {
+                "TEMED": "TEMED"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UPOR1B",
+            "rnw": "15",
+            "fixes": {
+                "UPORU": "UPORU"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "UPOR2A",
+            "rnw": "33",
+            "fixes": {
+                "UPORU": "UPORU"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VUGL1B",
+            "rnw": "15",
+            "fixes": {
+                "VUGLA": "VUGLA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "CA002": "CA002 AT OR ABOVE 4500",
+                "CA001": "CA001 4140",
+                "CA014": "CA014 AT OR ABOVE 3487 RNW 15 TRK 153 UNTIL 3300 TURN RIGHT DIRECT",
+                "CA004": "OVERFLY CA004 AT OR ABOVE 6000 HOLD AT CA004 LEFT TURN INBOUNDCOURSE 063 ALT 6000 LEGTIME 1 FAF CA001 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "CA003",
+                    "fixes": {
+                        "CA003": "CA003 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "CA004",
+                    "fixes": {
+                        "CA004": "CA004 AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "CA009": "CA009 AT OR ABOVE 4500",
+                "CA008": "CA008 4110",
+                "CA013": "CA013 AT OR ABOVE 3464 RNW 33 TRK 333 UNTIL 3300 TURN LEFT DIRECT",
+                "CA012": "OVERFLY CA012 AT OR ABOVE 6000 HOLD AT CA012 RIGHT TURN INBOUNDCOURSE 063 ALT 6000 LEGTIME 1 FAF CA008 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "CA007",
+                    "fixes": {
+                        "CA007": "CA007 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "CA011",
+                    "fixes": {
+                        "CA011": "CA011 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "CA012",
+                    "fixes": {
+                        "CA012": "CA012 AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

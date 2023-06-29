@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "BIRDI",
+            "lat": 68.88683333333333,
+            "lon": 165.99464721666666
+        },
+        {
+            "name": "DUKPE",
+            "lat": 68.873625,
+            "lon": 166.02498888333332
+        },
+        {
+            "name": "GRAAY",
+            "lat": 68.96409721666667,
+            "lon": 165.58632221666667
+        },
+        {
+            "name": "HULAS",
+            "lat": 68.77146666666667,
+            "lon": 165.45116943333332
+        },
+        {
+            "name": "JAPKI",
+            "lat": 68.50406666666666,
+            "lon": 164.25612221666665
+        },
+        {
+            "name": "RUTDO",
+            "lat": 68.88740278333333,
+            "lon": 165.47359443333335
+        },
+        {
+            "name": "SOLEE",
+            "lat": 68.87958611666667,
+            "lon": 165.79517778333334
+        },
+        {
+            "name": "TAKME",
+            "lat": 69.00337778333333,
+            "lon": 165.49450833333333
+        },
+        {
+            "name": "TUNND",
+            "lat": 68.91785556666666,
+            "lon": 165.83166111666668
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "GRAAY3",
+            "rnw": "09",
+            "fixes": {
+                "GRAAY": "GRAAY",
+                "JAPKI": "JAPKI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBDA09",
+            "fixes": {
+                "GRAAY": "GRAAY AT OR ABOVE 3200 GRAAY AT OR ABOVE 3200 HOLD AT GRAAY RIGHT TURN INBOUNDCOURSE 230 ALT 3200 SPEED 310 LEGTIME 1 FAF TUNND MAP BIRDI",
+                "TUNND": "TUNND 1800",
+                "BIRDI": "BIRDI 1320 RNW 09 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GRAAY",
+                    "fixes": {
+                        "GRAAY": "GRAAY RIGHT TURN INBOUNDCOURSE 230 ALT 3200 SPEED 310 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDA27",
+            "fixes": {
+                "GRAAY": "GRAAY AT OR ABOVE 3200 GRAAY AT OR ABOVE 3200 HOLD AT GRAAY RIGHT TURN INBOUNDCOURSE 230 ALT 3200 SPEED 310 LEGTIME 1 FAF TUNND MAP BIRDI",
+                "TUNND": "TUNND 1800",
+                "BIRDI": "BIRDI 1320 RNW 27 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GRAAY",
+                    "fixes": {
+                        "GRAAY": "GRAAY RIGHT TURN INBOUNDCOURSE 230 ALT 3200 SPEED 310 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "RUTDO": "RUTDO AT OR ABOVE 3200",
+                "SOLEE": "SOLEE 2000",
+                "DUKPE": "OVERFLY DUKPE 486 RNW 27 TRK 254 UNTIL 1220 TURN RIGHT DIRECT",
+                "TAKME": "TAKME 3200 HOLD AT TAKME RIGHT TURN INBOUNDCOURSE 164 SPEED 310 LEGDIST 2 FAF SOLEE MAP DUKPE"
+            },
+            "transitions": [
+                {
+                    "name": "HULAS",
+                    "fixes": {
+                        "HULAS": "HULAS AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "TAKME",
+                    "fixes": {
+                        "TAKME": "TAKME AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        }
+    ]
+}

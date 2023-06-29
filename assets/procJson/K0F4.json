@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "ASIRE",
+            "lat": 41.245544433333336,
+            "lon": 98.97598611666666
+        },
+        {
+            "name": "ASYLA",
+            "lat": 41.331891666666664,
+            "lon": 99.00499721666667
+        },
+        {
+            "name": "JOEYS",
+            "lat": 41.38219721666667,
+            "lon": 99.02193333333334
+        },
+        {
+            "name": "JOLDA",
+            "lat": 41.10628333333333,
+            "lon": 98.92935833333334
+        },
+        {
+            "name": "MENPE",
+            "lat": 41.195202783333336,
+            "lon": 98.95910556666666
+        },
+        {
+            "name": "UDEGE",
+            "lat": 41.471091666666666,
+            "lon": 99.05193056666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 16",
+        "RNW 22",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "UDEGE": "UDEGE AT OR ABOVE 4100",
+                "JOEYS": "JOEYS 3900",
+                "ASYLA": "ASYLA AT OR ABOVE 2900 RNW 16 TRK 161 UNTIL 2371",
+                "JOLDA": "OVERFLY JOLDA AT OR ABOVE 4000 HOLD AT JOLDA RIGHT TURN INBOUNDCOURSE 341 LEGDIST 4 FAF JOEYS MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "UDEGE",
+                    "fixes": {
+                        "UDEGE": "UDEGE RIGHT TURN INBOUNDCOURSE 161 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "JOLDA": "JOLDA AT OR ABOVE 4000",
+                "MENPE": "MENPE 3800",
+                "ASIRE": "ASIRE AT OR ABOVE 2800 RNW 34 TRK 341 UNTIL 2369",
+                "UDEGE": "OVERFLY UDEGE AT OR ABOVE 4100 HOLD AT UDEGE RIGHT TURN INBOUNDCOURSE 161 LEGDIST 5 FAF MENPE MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "JOLDA",
+                    "fixes": {
+                        "JOLDA": "JOLDA RIGHT TURN INBOUNDCOURSE 341 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "fixes": [
+        {
+            "name": "AVRIV",
+            "lat": 55.36938611666667,
+            "lon": 111.03287221666666
+        },
+        {
+            "name": "BOREB",
+            "lat": 55.37440278333333,
+            "lon": 110.88708333333334
+        },
+        {
+            "name": "DERGU",
+            "lat": 55.457430566666666,
+            "lon": 110.89575833333333
+        },
+        {
+            "name": "EPVAK",
+            "lat": 55.45247221666666,
+            "lon": 111.18466388333333
+        },
+        {
+            "name": "IKDAR",
+            "lat": 55.493183333333334,
+            "lon": 111.31235278333334
+        },
+        {
+            "name": "METMO",
+            "lat": 55.42367778333333,
+            "lon": 111.85543056666667
+        },
+        {
+            "name": "SUXEG",
+            "lat": 55.22977778333333,
+            "lon": 111.9665
+        },
+        {
+            "name": "VETPA",
+            "lat": 55.445433333333334,
+            "lon": 111.43223611666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "VETPA1",
+            "rnw": "23L",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 14",
+                    "fixes": {
+                        "RNW 14": "RNW 14 HDG 135 UNTIL 2820 TURN LEFT DIRECT",
+                        "VETPA": "VETPA SPEED 200",
+                        "METMO": "METMO"
+                    }
+                },
+                {
+                    "rwy": "RNW 32",
+                    "fixes": {
+                        "RNW 32": "RNW 32 HDG 315 UNTIL 2720",
+                        "VETPA": "VETPA",
+                        "METMO": "METMO"
+                    }
+                }
+            ],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "IKDAR": "IKDAR AT OR ABOVE 3700 SPEED 180",
+                "EPVAK": "EPVAK 3630 RNW 14 TRK 135 UNTIL 2710 TURN LEFT DIRECT",
+                "VETPA": "VETPA 3900 SPEED 165",
+                "METMO": "OVERFLY METMO HOLD AT METMO RIGHT TURN INBOUNDCOURSE 184 SPEED 200 LEGDIST 4 FAF EPVAK MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "SUXEG",
+                    "fixes": {
+                        "SUXEG": "SUXEG",
+                        "VETPA": "VETPA AT OR ABOVE 3700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA32",
+            "fixes": {
+                "BOREB": "BOREB AT OR ABOVE 3500",
+                "AVRIV": "AVRIV 3400 RNW 32",
+                "VETPA": "VETPA 3900",
+                "METMO": "OVERFLY METMO HOLD AT METMO RIGHT TURN INBOUNDCOURSE 184 SPEED 200 LEGDIST 4 FAF AVRIV MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "DERGU",
+                    "fixes": {
+                        "DERGU": "DERGU SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

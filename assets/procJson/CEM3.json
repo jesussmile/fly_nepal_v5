@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "BEPUN",
+            "lat": 63.095230566666665,
+            "lon": 117.09039166666666
+        },
+        {
+            "name": "DENBI",
+            "lat": 63.095416666666665,
+            "lon": 117.09126666666667
+        },
+        {
+            "name": "EPLOT",
+            "lat": 63.16833333333334,
+            "lon": 117.40253056666667
+        },
+        {
+            "name": "GOVEB",
+            "lat": 62.98298333333334,
+            "lon": 117.01188056666666
+        },
+        {
+            "name": "GOXAM",
+            "lat": 63.280008333333335,
+            "lon": 117.48134721666666
+        },
+        {
+            "name": "IMIVO",
+            "lat": 63.13055833333333,
+            "lon": 116.84361943333333
+        },
+        {
+            "name": "KEPDU",
+            "lat": 63.20625833333333,
+            "lon": 117.56616666666666
+        },
+        {
+            "name": "LOKVA",
+            "lat": 63.132455566666664,
+            "lon": 117.65055833333334
+        },
+        {
+            "name": "MUVNA",
+            "lat": 63.168019433333335,
+            "lon": 117.40128056666667
+        },
+        {
+            "name": "OVDOM",
+            "lat": 63.056797216666666,
+            "lon": 116.92796111666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "KEPDU": "KEPDU AT OR ABOVE 2500",
+                "EPLOT": "EPLOT 2400 RNW 10",
+                "DENBI": "OVERFLY DENBI 2400 HOLD AT DENBI RIGHT TURN INBOUNDCOURSE 100 LEGTIME 1 FAF EPLOT MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "GOXAM",
+                    "fixes": {
+                        "GOXAM": "GOXAM"
+                    }
+                },
+                {
+                    "name": "LOKVA",
+                    "fixes": {
+                        "LOKVA": "LOKVA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "OVDOM": "OVDOM AT OR ABOVE 2500",
+                "BEPUN": "BEPUN 2400 RNW 28",
+                "MUVNA": "OVERFLY MUVNA 2400 HOLD AT MUVNA RIGHT TURN INBOUNDCOURSE 280 LEGTIME 1 FAF BEPUN MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "GOVEB",
+                    "fixes": {
+                        "GOVEB": "GOVEB"
+                    }
+                },
+                {
+                    "name": "IMIVO",
+                    "fixes": {
+                        "IMIVO": "IMIVO"
+                    }
+                }
+            ]
+        }
+    ]
+}

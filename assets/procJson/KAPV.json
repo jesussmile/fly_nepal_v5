@@ -1,0 +1,142 @@
+{
+    "fixes": [
+        {
+            "name": "BASAL",
+            "lat": 34.757775,
+            "lon": 116.86183056666667
+        },
+        {
+            "name": "CFFCG",
+            "lat": 34.58745556666667,
+            "lon": 117.18212221666667
+        },
+        {
+            "name": "CUREL",
+            "lat": 34.81347221666667,
+            "lon": 117.28276943333333
+        },
+        {
+            "name": "CUVED",
+            "lat": 34.63016666666667,
+            "lon": 117.16964166666666
+        },
+        {
+            "name": "DAVAY",
+            "lat": 34.818775,
+            "lon": 117.0197
+        },
+        {
+            "name": "EXCON",
+            "lat": 34.72434166666667,
+            "lon": 117.19178611666666
+        },
+        {
+            "name": "FAPID",
+            "lat": 34.50660833333333,
+            "lon": 117.20616388333333
+        },
+        {
+            "name": "FEBAX",
+            "lat": 34.50063888333333,
+            "lon": 117.34663611666667
+        },
+        {
+            "name": "HEC",
+            "lat": 34.797016666666664,
+            "lon": 116.46292221666667
+        },
+        {
+            "name": "HEDRI",
+            "lat": 34.81619443333334,
+            "lon": 117.15123888333333
+        },
+        {
+            "name": "HUNEY",
+            "lat": 34.61180278333333,
+            "lon": 117.17477221666667
+        },
+        {
+            "name": "JUTGA",
+            "lat": 34.65286666666667,
+            "lon": 117.16300278333334
+        },
+        {
+            "name": "NASTE",
+            "lat": 34.694008333333336,
+            "lon": 117.48281388333334
+        },
+        {
+            "name": "PMD",
+            "lat": 34.63139721666667,
+            "lon": 118.06382221666667
+        },
+        {
+            "name": "VICVU",
+            "lat": 34.704377783333335,
+            "lon": 117.147925
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 18",
+        "RNW 26",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "EXCON1",
+            "rnw": "36",
+            "fixes": {
+                "HUNEY": "OVERFLY HUNEY AT OR ABOVE 3600",
+                "EXCON": "EXCON LEFT TURN INBOUNDCOURSE 339 ALT 7500 LEGTIME 1"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "HEC",
+                    "fixes": [
+                        "HEC"
+                    ]
+                },
+                {
+                    "name": "PMD",
+                    "fixes": [
+                        "PMD"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "HEDRI": "HEDRI AT OR ABOVE 6000 SPEED 180",
+                "VICVU": "VICVU 5800",
+                "JUTGA": "JUTGA AT OR ABOVE 4620",
+                "CUVED": "CUVED AT OR ABOVE 4100",
+                "CFFCG": "OVERFLY CFFCG 3122 RNW 18 TRK 180 UNTIL 3380",
+                "FAPID": "FAPID",
+                "FEBAX": "FEBAX",
+                "NASTE": "OVERFLY NASTE AT OR ABOVE 6000 HOLD AT NASTE LEFT TURN INBOUNDCOURSE 248 LEGDIST 5 FAF VICVU MAP CFFCG"
+            },
+            "transitions": [
+                {
+                    "name": "BASAL",
+                    "fixes": {
+                        "BASAL": "BASAL",
+                        "DAVAY": "DAVAY AT OR ABOVE 6800"
+                    }
+                },
+                {
+                    "name": "NASTE",
+                    "fixes": {
+                        "NASTE": "NASTE",
+                        "CUREL": "CUREL AT OR ABOVE 6300"
+                    }
+                }
+            ]
+        }
+    ]
+}

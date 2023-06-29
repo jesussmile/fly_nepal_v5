@@ -1,0 +1,159 @@
+{
+    "fixes": [
+        {
+            "name": "AHOBY",
+            "lat": 36.57670278333333,
+            "lon": 97.27838056666667
+        },
+        {
+            "name": "ANARE",
+            "lat": 36.63366943333333,
+            "lon": 97.19760556666667
+        },
+        {
+            "name": "BUGPY",
+            "lat": 36.47590278333333,
+            "lon": 97.27776666666666
+        },
+        {
+            "name": "CASUP",
+            "lat": 36.48854443333333,
+            "lon": 97.24561666666666
+        },
+        {
+            "name": "CUXOP",
+            "lat": 36.419322216666664,
+            "lon": 97.277425
+        },
+        {
+            "name": "GULLI",
+            "lat": 36.01195,
+            "lon": 97.14434166666666
+        },
+        {
+            "name": "HIGIY",
+            "lat": 36.30917221666667,
+            "lon": 97.27676111666666
+        },
+        {
+            "name": "HIRPO",
+            "lat": 36.29204721666667,
+            "lon": 97.27667778333333
+        },
+        {
+            "name": "JEKIT",
+            "lat": 36.19501388333333,
+            "lon": 97.27611388333334
+        },
+        {
+            "name": "LARKO",
+            "lat": 36.132030566666664,
+            "lon": 97.45075278333333
+        },
+        {
+            "name": "PER",
+            "lat": 36.746530566666664,
+            "lon": 97.16015556666666
+        },
+        {
+            "name": "PIZMU",
+            "lat": 36.33187221666667,
+            "lon": 97.27690833333334
+        },
+        {
+            "name": "WOPEK",
+            "lat": 36.62501388333333,
+            "lon": 97.446
+        },
+        {
+            "name": "YUPUD",
+            "lat": 36.13198611666667,
+            "lon": 97.34787778333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "ANARE": "ANARE AT OR ABOVE 3000",
+                "CASUP": "CASUP 2900 RNW 17 TRK 189 UNTIL 2000 TURN LEFT DIRECT",
+                "PER": "PER AT OR ABOVE 3000 HOLD AT PER RIGHT TURN INBOUNDCOURSE 009 LEGTIME 1 FAF CASUP MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PER": "PER"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "AHOBY": "AHOBY AT OR ABOVE 3000",
+                "BUGPY": "BUGPY 2600",
+                "CUXOP": "CUXOP AT OR ABOVE 1520 RNW 17 TRK 174 UNTIL 1224",
+                "HIGIY": "HIGIY",
+                "YUPUD": "OVERFLY YUPUD AT OR ABOVE 3000 HOLD AT YUPUD RIGHT TURN INBOUNDCOURSE 012 LEGDIST 4 FAF BUGPY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "GULLI",
+                    "fixes": {
+                        "GULLI": "GULLI",
+                        "AHOBY": "OVERFLY AHOBY AT OR ABOVE 3100 HOLD AT AHOBY LEFT TURN INBOUNDCOURSE 174 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PER": "PER"
+                    }
+                },
+                {
+                    "name": "WOPEK",
+                    "fixes": {
+                        "WOPEK": "WOPEK"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "JEKIT": "JEKIT AT OR ABOVE 3100",
+                "HIRPO": "HIRPO 2700",
+                "PIZMU": "PIZMU AT OR ABOVE 1940 RNW 35 TRK 354 UNTIL 1253",
+                "AHOBY": "OVERFLY AHOBY AT OR ABOVE 3000 HOLD AT AHOBY LEFT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF HIRPO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "GULLI",
+                    "fixes": {
+                        "GULLI": "GULLI"
+                    }
+                },
+                {
+                    "name": "LARKO",
+                    "fixes": {
+                        "LARKO": "LARKO"
+                    }
+                },
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PER": "PER",
+                        "JEKIT": "OVERFLY JEKIT AT OR ABOVE 3100 HOLD AT JEKIT RIGHT TURN INBOUNDCOURSE 354 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

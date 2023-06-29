@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "ASMAD",
+            "lat": 26.938444433333334,
+            "lon": 49.43080556666666
+        },
+        {
+            "name": "CF17",
+            "lat": 27.240083333333335,
+            "lon": 49.35366666666667
+        },
+        {
+            "name": "CF35",
+            "lat": 26.783861116666667,
+            "lon": 49.470138883333334
+        },
+        {
+            "name": "D164H",
+            "lat": 26.881705566666668,
+            "lon": 49.44556943333333
+        },
+        {
+            "name": "D344H",
+            "lat": 27.142280566666667,
+            "lon": 49.378405566666665
+        },
+        {
+            "name": "JBL",
+            "lat": 27.012,
+            "lon": 49.412027783333336
+        },
+        {
+            "name": "RASGU",
+            "lat": 27.140638883333335,
+            "lon": 49.37916666666667
+        },
+        {
+            "name": "RW35",
+            "lat": 27.021447216666665,
+            "lon": 49.409625
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "CF17": "CF17 AT OR ABOVE 1700",
+                "RASGU": "RASGU 1700 RNW 17",
+                "JBL": "JBL TRK 164 UNTIL 2000 TURN RIGHT DIRECT JBL 3000 SPEED 210 HOLD AT JBL LEFT TURN INBOUNDCOURSE 344 LEGTIME 1 FAF RASGU MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "JBL",
+                    "fixes": {
+                        "JBL": "JBL AT OR ABOVE 3000",
+                        "D344H": "D344H AT OR ABOVE 1700 TRK 299 UNTIL 6.0 FROM D344H"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD35",
+            "fixes": {
+                "CF35": "CF35 AT OR ABOVE 1700",
+                "ASMAD": "ASMAD 1700 RNW 35 TRK 344 UNTIL 2000 TURN RIGHT DIRECT",
+                "JBL": "JBL 3000 SPEED 210 HOLD AT JBL RIGHT TURN INBOUNDCOURSE 164 LEGTIME 1 FAF ASMAD MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "JBL",
+                    "fixes": {
+                        "JBL": "JBL AT OR ABOVE 3000",
+                        "D164H": "D164H AT OR ABOVE 1700 TRK 119 UNTIL 6.0 FROM D164H"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS35",
+            "fixes": {
+                "CF35": "CF35 AT OR ABOVE 1700",
+                "ASMAD": "ASMAD 1700 RNW 35 TRK 344 UNTIL 2000 TURN RIGHT DIRECT",
+                "JBL": "JBL 3000 SPEED 210 HOLD AT JBL RIGHT TURN INBOUNDCOURSE 164 LEGTIME 1 FAF ASMAD MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "JBL",
+                    "fixes": {
+                        "JBL": "JBL AT OR ABOVE 3000",
+                        "D164H": "D164H AT OR ABOVE 1700 TRK 119 UNTIL 6.0 FROM D164H"
+                    }
+                }
+            ]
+        }
+    ]
+}

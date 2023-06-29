@@ -1,0 +1,67 @@
+{
+    "fixes": [
+        {
+            "name": "KAGUN",
+            "lat": 3.0384722166666664,
+            "lon": 132.18466666666666
+        },
+        {
+            "name": "NOLAB",
+            "lat": 2.9846944333333334,
+            "lon": 132.05994443333333
+        },
+        {
+            "name": "SALIP",
+            "lat": 2.923555566666667,
+            "lon": 132.29247221666665
+        },
+        {
+            "name": "SF401",
+            "lat": 2.9191111166666666,
+            "lon": 132.07358333333335
+        },
+        {
+            "name": "SF402",
+            "lat": 2.9071944333333333,
+            "lon": 132.15613888333334
+        },
+        {
+            "name": "SF403",
+            "lat": 2.914138883333333,
+            "lon": 132.21405556666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "SF401": "SF401 AT OR ABOVE 3000",
+                "SF402": "SF402 3000",
+                "SF403": "SF403 AT OR ABOVE 1630 RNW 10",
+                "SALIP": "OVERFLY SALIP TURN RIGHT DIRECT",
+                "KAGUN": "KAGUN AT OR ABOVE 5000 SPEED 170 FAF SF402 MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "KAGUN",
+                    "fixes": {
+                        "KAGUN": "KAGUN AT OR ABOVE 5000 SPEED 170",
+                        "NOLAB": "NOLAB AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "NOLAB",
+                    "fixes": {
+                        "NOLAB": "NOLAB AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

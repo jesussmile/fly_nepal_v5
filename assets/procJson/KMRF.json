@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "FOXOK",
+            "lat": 30.2943,
+            "lon": 103.93004443333334
+        },
+        {
+            "name": "MRF",
+            "lat": 30.298372216666667,
+            "lon": 103.95475556666666
+        },
+        {
+            "name": "PI001",
+            "lat": 30.253031833333335,
+            "lon": 103.91225731666667
+        },
+        {
+            "name": "PI002",
+            "lat": 30.18175748333333,
+            "lon": 103.92092333333333
+        },
+        {
+            "name": "PI003",
+            "lat": 30.168791933333335,
+            "lon": 103.833436
+        },
+        {
+            "name": "TITFE",
+            "lat": 30.222927783333333,
+            "lon": 103.84891666666667
+        },
+        {
+            "name": "VUYUP",
+            "lat": 30.482886116666666,
+            "lon": 103.68086943333333
+        },
+        {
+            "name": "WULAL",
+            "lat": 30.335041666666665,
+            "lon": 103.97643333333333
+        },
+        {
+            "name": "ZADGI",
+            "lat": 30.347047216666667,
+            "lon": 103.99573333333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 09",
+        "RNW 13",
+        "RNW 22",
+        "RNW 27",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "TITFE": "TITFE AT OR ABOVE 8400 OVERFLY TITFE AT OR ABOVE 9000 HOLD AT TITFE RIGHT TURN INBOUNDCOURSE 307 LEGDIST 7 FAF FOXOK MAP RNW 31",
+                "FOXOK": "FOXOK 6800",
+                "WULAL": "WULAL AT OR ABOVE 5700 RNW 31 TRK 307 UNTIL 5300 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MRF",
+                    "fixes": {
+                        "MRF": "MRF",
+                        "TITFE": "OVERFLY TITFE AT OR ABOVE 8400 HOLD AT TITFE RIGHT TURN INBOUNDCOURSE 307 ALT 8400 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "VUYUP",
+                    "fixes": {
+                        "VUYUP": "VUYUP",
+                        "TITFE": "OVERFLY TITFE AT OR ABOVE 8500 HOLD AT TITFE RIGHT TURN INBOUNDCOURSE 307 ALT 8400 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR31",
+            "fixes": {
+                "MRF": "MRF 6700 MRF AT OR ABOVE 9000 HOLD AT MRF LEFT TURN INBOUNDCOURSE 313 LEGTIME 1 FAF MRF MAP RNW 31",
+                "ZADGI": "ZADGI AT OR ABOVE 5360 RNW 31 TRK 313 UNTIL 5250 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MRF",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 8100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 8100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 8100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

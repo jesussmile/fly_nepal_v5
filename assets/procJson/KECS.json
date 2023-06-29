@@ -1,0 +1,140 @@
+{
+    "fixes": [
+        {
+            "name": "AGARS",
+            "lat": 43.84467778333333,
+            "lon": 104.27465278333334
+        },
+        {
+            "name": "AKUPE",
+            "lat": 43.811363883333335,
+            "lon": 104.24115
+        },
+        {
+            "name": "ECS",
+            "lat": 43.88112778333333,
+            "lon": 104.30777221666666
+        },
+        {
+            "name": "FF32",
+            "lat": 43.77623333333333,
+            "lon": 104.23717778333334
+        },
+        {
+            "name": "KARAS",
+            "lat": 44.27302221666667,
+            "lon": 104.31378888333333
+        },
+        {
+            "name": "PI001",
+            "lat": 43.83010158333333,
+            "lon": 104.2685697
+        },
+        {
+            "name": "PI002",
+            "lat": 43.7612079,
+            "lon": 104.29592116666667
+        },
+        {
+            "name": "PI003",
+            "lat": 43.735303216666665,
+            "lon": 104.19594256666667
+        },
+        {
+            "name": "PULVE",
+            "lat": 44.06563611666667,
+            "lon": 104.49806111666666
+        },
+        {
+            "name": "WAMAK",
+            "lat": 43.70410833333333,
+            "lon": 104.13361943333334
+        },
+        {
+            "name": "WETVI",
+            "lat": 43.957425,
+            "lon": 104.38838333333334
+        },
+        {
+            "name": "WILDA",
+            "lat": 43.6758,
+            "lon": 104.16986111666667
+        },
+        {
+            "name": "ZIRAP",
+            "lat": 43.989772216666665,
+            "lon": 104.42111666666666
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "PULVE": "PULVE AT OR ABOVE 8000",
+                "ZIRAP": "ZIRAP AT OR ABOVE 6500",
+                "WETVI": "WETVI 5800 RNW 14 TRK 136 UNTIL 4418",
+                "WAMAK": "OVERFLY WAMAK AT OR ABOVE 9400 HOLD AT WAMAK RIGHT TURN INBOUNDCOURSE 316 LEGDIST 7 FAF WETVI MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "PULVE",
+                    "fixes": {
+                        "PULVE": "PULVE RIGHT TURN INBOUNDCOURSE 136 ALT 8000 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "WAMAK": "WAMAK AT OR ABOVE 8000",
+                "AKUPE": "AKUPE 5800",
+                "AGARS": "AGARS AT OR ABOVE 5000 RNW 32 TRK 316 UNTIL 4385",
+                "PULVE": "OVERFLY PULVE AT OR ABOVE 9500 HOLD AT PULVE RIGHT TURN INBOUNDCOURSE 136 LEGDIST 7 FAF AKUPE MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "WAMAK",
+                    "fixes": {
+                        "WAMAK": "WAMAK RIGHT TURN INBOUNDCOURSE 316 ALT 8000 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR32",
+            "fixes": {
+                "FF32": "FF32 6400 RNW 32",
+                "ECS": "OVERFLY ECS TRK 323 UNTIL 6700 TURN LEFT DIRECT ECS AT OR ABOVE 7500 HOLD AT ECS LEFT TURN INBOUNDCOURSE 323 LEGTIME 1 FAF FF32 MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "KARAS",
+                    "fixes": {
+                        "KARAS": "KARAS",
+                        "ECS": "ECS AT OR ABOVE 8600",
+                        "PI001": "PI001 AT OR ABOVE 6400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6400 SPEED 210"
+                    }
+                },
+                {
+                    "name": "WILDA",
+                    "fixes": {
+                        "WILDA": "WILDA",
+                        "ECS": "ECS AT OR ABOVE 7500",
+                        "PI001": "PI001 AT OR ABOVE 6400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6400 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

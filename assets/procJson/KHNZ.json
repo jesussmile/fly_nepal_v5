@@ -1,0 +1,163 @@
+{
+    "fixes": [
+        {
+            "name": "CFBDS",
+            "lat": 36.26067221666667,
+            "lon": 78.68400278333333
+        },
+        {
+            "name": "HAXEG",
+            "lat": 36.335486116666665,
+            "lon": 78.56925556666667
+        },
+        {
+            "name": "HXONB",
+            "lat": 36.301222216666666,
+            "lon": 78.61851111666667
+        },
+        {
+            "name": "KOVPE",
+            "lat": 36.23072221666666,
+            "lon": 78.72966943333333
+        },
+        {
+            "name": "OYISE",
+            "lat": 36.43001388333333,
+            "lon": 78.42373333333333
+        },
+        {
+            "name": "RDU",
+            "lat": 35.87252221666667,
+            "lon": 78.78334166666667
+        },
+        {
+            "name": "SBV",
+            "lat": 36.675038883333336,
+            "lon": 79.0145
+        },
+        {
+            "name": "TMAAC",
+            "lat": 36.404016666666664,
+            "lon": 78.265675
+        },
+        {
+            "name": "UCELU",
+            "lat": 36.293202783333335,
+            "lon": 78.63414721666666
+        },
+        {
+            "name": "VEKUC",
+            "lat": 36.48221388333333,
+            "lon": 78.34309443333333
+        },
+        {
+            "name": "WEGIT",
+            "lat": 36.113852783333336,
+            "lon": 78.61327778333333
+        },
+        {
+            "name": "XOJZY",
+            "lat": 36.386780566666665,
+            "lon": 78.49036943333333
+        },
+        {
+            "name": "YETVU",
+            "lat": 36.347475,
+            "lon": 78.84640833333333
+        },
+        {
+            "name": "ZEPLA",
+            "lat": 36.56036111666667,
+            "lon": 78.42066943333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC06",
+            "fixes": {
+                "CFBDS": "CFBDS AT OR ABOVE 2600",
+                "HXONB": "HXONB 2400 RNW 06 TRK 060 UNTIL 1200 TURN RIGHT DIRECT HXONB AT OR ABOVE 2600 HOLD AT HXONB RIGHT TURN INBOUNDCOURSE 060 LEGTIME 1 FAF HXONB MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "RDU",
+                    "fixes": {
+                        "RDU": "RDU",
+                        "HXONB": "HXONB AT OR ABOVE 3000 HOLD AT HXONB RIGHT TURN INBOUNDCOURSE 060 ALT 2600 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SBV",
+                    "fixes": {
+                        "SBV": "SBV",
+                        "HXONB": "HXONB AT OR ABOVE 3000 HOLD AT HXONB RIGHT TURN INBOUNDCOURSE 060 ALT 2600 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "KOVPE": "KOVPE AT OR ABOVE 3000",
+                "UCELU": "UCELU 2500",
+                "HAXEG": "HAXEG AT OR ABOVE 1200 RNW 06 TRK 060 UNTIL 810",
+                "VEKUC": "OVERFLY VEKUC AT OR ABOVE 3000 HOLD AT VEKUC RIGHT TURN INBOUNDCOURSE 240 LEGDIST 4 FAF UCELU MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "KOVPE",
+                    "fixes": {
+                        "KOVPE": "KOVPE RIGHT TURN INBOUNDCOURSE 060 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WEGIT",
+                    "fixes": {
+                        "WEGIT": "WEGIT"
+                    }
+                },
+                {
+                    "name": "YETVU",
+                    "fixes": {
+                        "YETVU": "YETVU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "VEKUC": "VEKUC AT OR ABOVE 3000",
+                "OYISE": "OYISE 2500",
+                "XOJZY": "XOJZY AT OR ABOVE 1180 RNW 24 TRK 240 UNTIL 773",
+                "KOVPE": "OVERFLY KOVPE AT OR ABOVE 3000 HOLD AT KOVPE RIGHT TURN INBOUNDCOURSE 060 LEGDIST 4 FAF OYISE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "TMAAC",
+                    "fixes": {
+                        "TMAAC": "TMAAC AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "VEKUC",
+                    "fixes": {
+                        "VEKUC": "VEKUC RIGHT TURN INBOUNDCOURSE 240 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZEPLA",
+                    "fixes": {
+                        "ZEPLA": "ZEPLA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

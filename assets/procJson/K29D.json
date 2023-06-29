@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "BIYAP",
+            "lat": 41.260588883333334,
+            "lon": 79.80318611666667
+        },
+        {
+            "name": "CIGBA",
+            "lat": 41.009472216666666,
+            "lon": 79.81741388333333
+        },
+        {
+            "name": "EPECI",
+            "lat": 41.15315278333333,
+            "lon": 80.42064443333334
+        },
+        {
+            "name": "FENRU",
+            "lat": 41.1381,
+            "lon": 79.9062
+        },
+        {
+            "name": "HEXIV",
+            "lat": 41.28127778333333,
+            "lon": 80.51078611666667
+        },
+        {
+            "name": "NIBET",
+            "lat": 41.149433333333334,
+            "lon": 80.28594721666667
+        },
+        {
+            "name": "TAPPS",
+            "lat": 41.14219443333333,
+            "lon": 80.03857778333334
+        },
+        {
+            "name": "YUVFA",
+            "lat": 41.030138883333336,
+            "lon": 80.52231388333334
+        },
+        {
+            "name": "ZEBOR",
+            "lat": 41.14463333333333,
+            "lon": 80.11991388333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "EPECI": "EPECI AT OR ABOVE 3000",
+                "NIBET": "NIBET 3000 RNW 10 TRK 101 UNTIL 1771",
+                "FENRU": "OVERFLY FENRU AT OR ABOVE 4000 HOLD AT FENRU RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4 FAF NIBET MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "EPECI",
+                    "fixes": {
+                        "EPECI": "EPECI RIGHT TURN INBOUNDCOURSE 101 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HEXIV",
+                    "fixes": {
+                        "HEXIV": "HEXIV AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "YUVFA",
+                    "fixes": {
+                        "YUVFA": "YUVFA AT OR ABOVE 3900"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "FENRU": "FENRU AT OR ABOVE 4000 OVERFLY FENRU AT OR ABOVE 4000 HOLD AT FENRU RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4 FAF TAPPS MAP RNW 28",
+                "TAPPS": "TAPPS 3100",
+                "ZEBOR": "ZEBOR AT OR ABOVE 1940 RNW 28 TRK 281 UNTIL 2300 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BIYAP",
+                    "fixes": {
+                        "BIYAP": "BIYAP"
+                    }
+                },
+                {
+                    "name": "CIGBA",
+                    "fixes": {
+                        "CIGBA": "CIGBA"
+                    }
+                },
+                {
+                    "name": "FENRU",
+                    "fixes": {
+                        "FENRU": "FENRU RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

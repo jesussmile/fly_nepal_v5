@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "MERRY",
+            "lat": 28.841097216666668,
+            "lon": 96.47560556666667
+        },
+        {
+            "name": "PLOTS",
+            "lat": 28.929080566666666,
+            "lon": 96.53407778333333
+        },
+        {
+            "name": "SHAVE",
+            "lat": 29.072883333333333,
+            "lon": 96.62989721666666
+        },
+        {
+            "name": "ZEDNA",
+            "lat": 29.1608,
+            "lon": 96.68862778333333
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA15",
+            "fixes": {
+                "ZEDNA": "ZEDNA AT OR ABOVE 2000",
+                "SHAVE": "SHAVE 1600 RNW 15 TRK 147 UNTIL 461",
+                "MERRY": "OVERFLY MERRY AT OR ABOVE 2200 HOLD AT MERRY RIGHT TURN INBOUNDCOURSE 327 LEGDIST 4 FAF SHAVE MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "ZEDNA",
+                    "fixes": {
+                        "ZEDNA": "ZEDNA RIGHT TURN INBOUNDCOURSE 147 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB33",
+            "fixes": {
+                "MERRY": "MERRY AT OR ABOVE 2200",
+                "PLOTS": "PLOTS 1600 RNW 33 TRK 327 UNTIL 461",
+                "ZEDNA": "OVERFLY ZEDNA AT OR ABOVE 2000 HOLD AT ZEDNA RIGHT TURN INBOUNDCOURSE 147 LEGDIST 4 FAF PLOTS MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "MERRY",
+                    "fixes": {
+                        "MERRY": "MERRY RIGHT TURN INBOUNDCOURSE 327 ALT 2200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

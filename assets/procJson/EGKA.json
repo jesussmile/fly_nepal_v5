@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "ADPOD",
+            "lat": 50.739544433333336,
+            "lon": 0.4559138833333333
+        },
+        {
+            "name": "ADURI",
+            "lat": 50.96287778333333,
+            "lon": 0.21744166666666667
+        },
+        {
+            "name": "BITLI",
+            "lat": 50.96540556666667,
+            "lon": 0.3096166666666667
+        },
+        {
+            "name": "GODOT",
+            "lat": 50.69675,
+            "lon": 0.28517499999999996
+        },
+        {
+            "name": "KA02F",
+            "lat": 50.77236943333333,
+            "lon": 0.3367583333333333
+        },
+        {
+            "name": "KA20F",
+            "lat": 50.908725,
+            "lon": 0.25146666666666667
+        },
+        {
+            "name": "MA02",
+            "lat": 50.81880833333334,
+            "lon": 0.30777221666666665
+        },
+        {
+            "name": "NITEN",
+            "lat": 50.94316943333333,
+            "lon": 0.13064166666666666
+        },
+        {
+            "name": "RIPIL",
+            "lat": 50.71817778333333,
+            "lon": 0.37050278333333336
+        },
+        {
+            "name": "SHMNB",
+            "lat": 50.835511116666666,
+            "lon": 0.29538611666666664
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 06",
+        "RNW 13",
+        "RNW 20",
+        "RNW 24",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "RIPIL": "RIPIL AT OR ABOVE 2200 SPEED 160",
+                "KA02F": "KA02F 1500",
+                "MA02": "OVERFLY MA02 386 RNW 02 TRK 011 UNTIL 1500 TURN LEFT DIRECT",
+                "SHMNB": "SHMNB 2200 HOLD AT SHMNB RIGHT TURN INBOUNDCOURSE 021 SPEED 160 LEGTIME 1 FAF KA02F MAP MA02"
+            },
+            "transitions": [
+                {
+                    "name": "ADPOD",
+                    "fixes": {
+                        "ADPOD": "ADPOD AT OR ABOVE 2200 SPEED 160"
+                    }
+                },
+                {
+                    "name": "GODOT",
+                    "fixes": {
+                        "GODOT": "GODOT AT OR ABOVE 2200 SPEED 160"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "ADURI": "ADURI AT OR ABOVE 2200 SPEED 160",
+                "KA20F": "KA20F 2200 RNW 20 TRK 201 UNTIL 1500 TURN LEFT DIRECT",
+                "SHMNB": "SHMNB 2200 HOLD AT SHMNB RIGHT TURN INBOUNDCOURSE 021 SPEED 160 LEGTIME 1 FAF KA20F MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "BITLI",
+                    "fixes": {
+                        "BITLI": "BITLI AT OR ABOVE 2200 SPEED 160"
+                    }
+                },
+                {
+                    "name": "NITEN",
+                    "fixes": {
+                        "NITEN": "NITEN AT OR ABOVE 2200 SPEED 160"
+                    }
+                }
+            ]
+        }
+    ]
+}

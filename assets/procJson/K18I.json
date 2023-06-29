@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "AGIGY",
+            "lat": 36.55059721666667,
+            "lon": 84.51785556666667
+        },
+        {
+            "name": "BEZIL",
+            "lat": 36.66472221666667,
+            "lon": 84.41830833333333
+        },
+        {
+            "name": "CRORE",
+            "lat": 36.84985,
+            "lon": 84.25606388333334
+        },
+        {
+            "name": "DELSY",
+            "lat": 36.63247221666666,
+            "lon": 84.44647778333334
+        },
+        {
+            "name": "OARED",
+            "lat": 36.768047216666666,
+            "lon": 84.327875
+        },
+        {
+            "name": "ZUVOL",
+            "lat": 36.719197216666664,
+            "lon": 84.37063056666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "AGIGY": "AGIGY AT OR ABOVE 4700",
+                "DELSY": "DELSY 2800",
+                "BEZIL": "BEZIL AT OR ABOVE 2040 RNW 04 TRK 040 UNTIL 1780",
+                "CRORE": "OVERFLY CRORE AT OR ABOVE 4000 HOLD AT CRORE RIGHT TURN INBOUNDCOURSE 220 LEGDIST 4 FAF DELSY MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "AGIGY",
+                    "fixes": {
+                        "AGIGY": "AGIGY RIGHT TURN INBOUNDCOURSE 040 ALT 4700 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "CRORE": "CRORE AT OR ABOVE 4000",
+                "OARED": "OARED 3000",
+                "ZUVOL": "ZUVOL AT OR ABOVE 1860 RNW 22 TRK 220 UNTIL 1780",
+                "AGIGY": "OVERFLY AGIGY AT OR ABOVE 4700 HOLD AT AGIGY RIGHT TURN INBOUNDCOURSE 040 LEGDIST 5 FAF OARED MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "CRORE",
+                    "fixes": {
+                        "CRORE": "CRORE RIGHT TURN INBOUNDCOURSE 220 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

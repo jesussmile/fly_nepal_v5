@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "AGZAF",
+            "lat": 47.32340833333333,
+            "lon": 68.42955278333334
+        },
+        {
+            "name": "AHHOT",
+            "lat": 47.247233333333334,
+            "lon": 68.19537221666667
+        },
+        {
+            "name": "BIROW",
+            "lat": 47.204116666666664,
+            "lon": 68.06379166666666
+        },
+        {
+            "name": "CESGE",
+            "lat": 47.36660833333333,
+            "lon": 68.56333888333333
+        },
+        {
+            "name": "FOMEP",
+            "lat": 47.291333333333334,
+            "lon": 68.61577221666667
+        },
+        {
+            "name": "JELUB",
+            "lat": 47.31118333333333,
+            "lon": 68.39181388333333
+        },
+        {
+            "name": "RAWNE",
+            "lat": 47.084038883333335,
+            "lon": 68.148525
+        },
+        {
+            "name": "YIGUC",
+            "lat": 47.32412778333333,
+            "lon": 67.978675
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "CESGE": "CESGE AT OR ABOVE 3100",
+                "AGZAF": "AGZAF 2600",
+                "JELUB": "JELUB AT OR ABOVE 2020 RNW 14 TRK 133 UNTIL 1270",
+                "BIROW": "OVERFLY BIROW AT OR ABOVE 3000 HOLD AT BIROW LEFT TURN INBOUNDCOURSE 314 LEGDIST 4 FAF AGZAF MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "CESGE",
+                    "fixes": {
+                        "CESGE": "CESGE RIGHT TURN INBOUNDCOURSE 133 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FOMEP",
+                    "fixes": {
+                        "FOMEP": "FOMEP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "BIROW": "BIROW AT OR ABOVE 3000",
+                "AHHOT": "AHHOT 2600 RNW 32 TRK 314 UNTIL 1187",
+                "CESGE": "OVERFLY CESGE AT OR ABOVE 3100 HOLD AT CESGE RIGHT TURN INBOUNDCOURSE 133 LEGDIST 4 FAF AHHOT MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "BIROW",
+                    "fixes": {
+                        "BIROW": "BIROW LEFT TURN INBOUNDCOURSE 314 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RAWNE",
+                    "fixes": {
+                        "RAWNE": "RAWNE"
+                    }
+                },
+                {
+                    "name": "YIGUC",
+                    "fixes": {
+                        "YIGUC": "YIGUC"
+                    }
+                }
+            ]
+        }
+    ]
+}

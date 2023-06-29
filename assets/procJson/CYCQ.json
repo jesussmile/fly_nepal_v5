@@ -1,0 +1,184 @@
+{
+    "fixes": [
+        {
+            "name": "DERSU",
+            "lat": 55.69156111666667,
+            "lon": 121.60245
+        },
+        {
+            "name": "EPINE",
+            "lat": 55.725088883333335,
+            "lon": 121.27871111666667
+        },
+        {
+            "name": "IKDIN",
+            "lat": 55.49475556666667,
+            "lon": 122.12006943333333
+        },
+        {
+            "name": "IMAKI",
+            "lat": 55.588394433333335,
+            "lon": 121.87596943333334
+        },
+        {
+            "name": "IRBAS",
+            "lat": 55.831944433333334,
+            "lon": 121.20626388333334
+        },
+        {
+            "name": "KEDKI",
+            "lat": 55.635730566666666,
+            "lon": 121.75686111666667
+        },
+        {
+            "name": "KEKDU",
+            "lat": 55.72146111666667,
+            "lon": 121.53965278333334
+        },
+        {
+            "name": "KENKA",
+            "lat": 55.739947216666664,
+            "lon": 121.47108611666667
+        },
+        {
+            "name": "KEPMA",
+            "lat": 55.540022216666664,
+            "lon": 121.99708888333333
+        },
+        {
+            "name": "ODGEL",
+            "lat": 55.66435,
+            "lon": 121.68456388333334
+        },
+        {
+            "name": "OLIPU",
+            "lat": 55.78366666666667,
+            "lon": 121.34560278333333
+        },
+        {
+            "name": "SPARD",
+            "lat": 55.44,
+            "lon": 122.26805556666666
+        },
+        {
+            "name": "TOVAV",
+            "lat": 55.738791666666664,
+            "lon": 121.47302778333334
+        },
+        {
+            "name": "ULOTA",
+            "lat": 55.783075,
+            "lon": 121.34469721666666
+        },
+        {
+            "name": "VISDO",
+            "lat": 55.683405566666664,
+            "lon": 121.63630833333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "IRBAS2",
+            "rnw": "05",
+            "fixes": {
+                "IRBAS": "IRBAS 6300"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA05",
+            "fixes": {
+                "KEPMA": "KEPMA AT OR ABOVE 6000",
+                "IMAKI": "IMAKI 5200",
+                "KEDKI": "KEDKI AT OR ABOVE 4400",
+                "ODGEL": "ODGEL AT OR ABOVE 3960",
+                "VISDO": "OVERFLY VISDO 3960 RNW 05",
+                "KEKDU": "KEKDU",
+                "EPINE": "OVERFLY EPINE 6300 HOLD AT EPINE RIGHT TURN INBOUNDCOURSE 182 SPEED 250 LEGTIME 1 FAF IMAKI MAP VISDO"
+            },
+            "transitions": [
+                {
+                    "name": "SPARD",
+                    "fixes": {
+                        "SPARD": "SPARD",
+                        "IKDIN": "IKDIN AT OR ABOVE 7500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA23",
+            "fixes": {
+                "KEPMA": "KEPMA AT OR ABOVE 6000",
+                "IMAKI": "IMAKI 5200",
+                "KEDKI": "KEDKI AT OR ABOVE 4400",
+                "ODGEL": "ODGEL AT OR ABOVE 3960",
+                "VISDO": "OVERFLY VISDO 3960 RNW 23",
+                "KEKDU": "KEKDU",
+                "EPINE": "OVERFLY EPINE 6300 HOLD AT EPINE RIGHT TURN INBOUNDCOURSE 182 SPEED 250 LEGTIME 1 FAF IMAKI MAP VISDO"
+            },
+            "transitions": [
+                {
+                    "name": "SPARD",
+                    "fixes": {
+                        "SPARD": "SPARD",
+                        "IKDIN": "IKDIN AT OR ABOVE 7500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY23",
+            "fixes": {
+                "OLIPU": "OLIPU AT OR ABOVE 5400 SPEED 200",
+                "KENKA": "KENKA 4200",
+                "DERSU": "OVERFLY DERSU 2227 RNW 23",
+                "SPARD": "OVERFLY SPARD 8900 HOLD AT SPARD RIGHT TURN INBOUNDCOURSE 218 SPEED 250 LEGTIME 1 FAF KENKA MAP DERSU"
+            },
+            "transitions": [
+                {
+                    "name": "EPINE",
+                    "fixes": {
+                        "EPINE": "EPINE"
+                    }
+                },
+                {
+                    "name": "IRBAS",
+                    "fixes": {
+                        "IRBAS": "IRBAS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ23",
+            "fixes": {
+                "ULOTA": "ULOTA AT OR ABOVE 5400",
+                "TOVAV": "TOVAV 4100 RNW 23",
+                "SPARD": "OVERFLY SPARD 8900 HOLD AT SPARD RIGHT TURN INBOUNDCOURSE 218 LEGTIME 1 FAF TOVAV MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "EPINE",
+                    "fixes": {
+                        "EPINE": "EPINE"
+                    }
+                },
+                {
+                    "name": "IRBAS",
+                    "fixes": {
+                        "IRBAS": "IRBAS"
+                    }
+                }
+            ]
+        }
+    ]
+}

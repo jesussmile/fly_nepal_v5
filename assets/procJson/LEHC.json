@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "CD30L",
+            "lat": 41.99497221666667,
+            "lon": 0.12163888333333334
+        },
+        {
+            "name": "FD30L",
+            "lat": 42.03425,
+            "lon": 0.22025
+        },
+        {
+            "name": "HUE",
+            "lat": 42.07336111666667,
+            "lon": 0.31880556666666665
+        },
+        {
+            "name": "MD30L",
+            "lat": 42.057777783333336,
+            "lon": 0.27947221666666666
+        }
+    ],
+    "rnws": [
+        "RNW 12L",
+        "RNW 12R",
+        "RNW 30L",
+        "RNW 30R"
+    ],
+    "sids": [
+        {
+            "name": "HUE1A",
+            "rnw": "12R",
+            "fixes": {
+                "HUE": "HUE AT OR ABOVE 8000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HUE1B",
+            "rnw": "30L",
+            "fixes": {
+                "HUE": "HUE AT OR ABOVE 8000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD30L",
+            "fixes": {
+                "CD30L": "CD30L AT OR ABOVE 3800",
+                "FD30L": "FD30L 3200",
+                "MD30L": "MD30L 2229 RNW 30L",
+                "HUE": "HUE TRK 310 UNTIL 3000 TURN LEFT DIRECT HUE 5000 HOLD AT HUE RIGHT TURN INBOUNDCOURSE 093 ALT 5000 LEGTIME 1 FAF FD30L MAP MD30L"
+            },
+            "transitions": [
+                {
+                    "name": "HUE",
+                    "fixes": {
+                        "HUE": "HUE AT OR ABOVE 5000 SPEED 200 TRK 136 UNTIL 10.0 FROM HUE"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "DADAX",
+            "lat": 14.444638883333333,
+            "lon": 144.85694443333333
+        },
+        {
+            "name": "FKR07",
+            "lat": 14.461333333333334,
+            "lon": 145.10655556666666
+        },
+        {
+            "name": "FKR25",
+            "lat": 14.450388883333334,
+            "lon": 144.94261111666665
+        },
+        {
+            "name": "IDIKA",
+            "lat": 14.467027783333334,
+            "lon": 145.19225
+        },
+        {
+            "name": "KAPTU",
+            "lat": 14.383527783333333,
+            "lon": 145.19805556666665
+        },
+        {
+            "name": "KR410",
+            "lat": 14.380194433333333,
+            "lon": 145.11541666666668
+        },
+        {
+            "name": "KR420",
+            "lat": 14.369138883333333,
+            "lon": 144.94855556666667
+        },
+        {
+            "name": "TAVOR",
+            "lat": 14.456,
+            "lon": 145.02625
+        },
+        {
+            "name": "TUPRO",
+            "lat": 14.361138883333334,
+            "lon": 144.86286111666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA07",
+            "fixes": {
+                "IDIKA": "IDIKA AT OR ABOVE 1500",
+                "FKR07": "FKR07 1500 RNW 07 TRK 074 UNTIL 1000 TURN LEFT DIRECT",
+                "KR410": "KR410",
+                "KAPTU": "KAPTU AT OR ABOVE 1500 FAF FKR07 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "KAPTU",
+                    "fixes": {
+                        "KAPTU": "KAPTU AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "TAVOR",
+                    "fixes": {
+                        "TAVOR": "TAVOR AT OR ABOVE 1500",
+                        "KR410": "KR410",
+                        "KAPTU": "KAPTU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB25",
+            "fixes": {
+                "DADAX": "DADAX AT OR ABOVE 1500",
+                "FKR25": "FKR25 1500 RNW 25 TRK 254 UNTIL 1000 TURN RIGHT DIRECT",
+                "KR420": "KR420",
+                "TUPRO": "TUPRO AT OR ABOVE 1500 FAF FKR25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "TAVOR",
+                    "fixes": {
+                        "TAVOR": "TAVOR AT OR ABOVE 1500",
+                        "KR420": "KR420",
+                        "TUPRO": "TUPRO"
+                    }
+                },
+                {
+                    "name": "TUPRO",
+                    "fixes": {
+                        "TUPRO": "TUPRO AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        }
+    ]
+}

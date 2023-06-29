@@ -1,0 +1,162 @@
+{
+    "fixes": [
+        {
+            "name": "AWYIR",
+            "lat": 40.90951666666667,
+            "lon": 76.90927778333334
+        },
+        {
+            "name": "EXLAV",
+            "lat": 41.012261116666664,
+            "lon": 76.96195833333333
+        },
+        {
+            "name": "GEPGE",
+            "lat": 40.77968611666667,
+            "lon": 76.842975
+        },
+        {
+            "name": "HUTOD",
+            "lat": 41.05328888333333,
+            "lon": 76.82234721666667
+        },
+        {
+            "name": "JASOG",
+            "lat": 40.97106111666667,
+            "lon": 77.10139443333334
+        },
+        {
+            "name": "KACGE",
+            "lat": 40.642886116666666,
+            "lon": 76.85294721666666
+        },
+        {
+            "name": "OJREY",
+            "lat": 40.80810833333334,
+            "lon": 76.85745556666667
+        },
+        {
+            "name": "PI001",
+            "lat": 40.737158316666665,
+            "lon": 76.91412258333334
+        },
+        {
+            "name": "PI002",
+            "lat": 40.67070471666667,
+            "lon": 76.87872648333334
+        },
+        {
+            "name": "PI003",
+            "lat": 40.637409033333334,
+            "lon": 76.96985851666666
+        },
+        {
+            "name": "SEG",
+            "lat": 40.79085833333333,
+            "lon": 76.88404166666666
+        },
+        {
+            "name": "WESIP",
+            "lat": 40.87919721666667,
+            "lon": 76.89376666666666
+        },
+        {
+            "name": "WUNOK",
+            "lat": 40.73459166666667,
+            "lon": 76.85544721666666
+        },
+        {
+            "name": "ZASIX",
+            "lat": 40.81758333333333,
+            "lon": 76.86658611666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "EXLAV": "EXLAV AT OR ABOVE 4300",
+                "AWYIR": "AWYIR 2200",
+                "WESIP": "WESIP AT OR ABOVE 1580 RNW 17 TRK 170 UNTIL 864",
+                "GEPGE": "GEPGE",
+                "KACGE": "OVERFLY KACGE AT OR ABOVE 3900 HOLD AT KACGE RIGHT TURN INBOUNDCOURSE 010 ALT 3900 LEGDIST 4 FAF AWYIR MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "EXLAV",
+                    "fixes": {
+                        "EXLAV": "EXLAV RIGHT TURN INBOUNDCOURSE 170 ALT 4300 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "HUTOD",
+                    "fixes": {
+                        "HUTOD": "HUTOD"
+                    }
+                },
+                {
+                    "name": "JASOG",
+                    "fixes": {
+                        "JASOG": "JASOG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "KACGE": "KACGE AT OR ABOVE 3900 OVERFLY KACGE AT OR ABOVE 3900 HOLD AT KACGE RIGHT TURN INBOUNDCOURSE 010 LEGDIST 4 FAF WUNOK MAP OJREY",
+                "WUNOK": "WUNOK 2300",
+                "OJREY": "OVERFLY OJREY 663 RNW 35 TRK 010 UNTIL 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KACGE",
+                    "fixes": {
+                        "KACGE": "KACGE RIGHT TURN INBOUNDCOURSE 010 ALT 3900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA17",
+            "fixes": {
+                "SEG": "SEG 1900 SEG AT OR ABOVE 3400 HOLD AT SEG RIGHT TURN INBOUNDCOURSE 034 ALT 3400 LEGTIME 1 FAF SEG MAP ZASIX",
+                "ZASIX": "OVERFLY ZASIX 1400 RNW 17 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SEG",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA35",
+            "fixes": {
+                "SEG": "SEG 1900 SEG AT OR ABOVE 3400 HOLD AT SEG RIGHT TURN INBOUNDCOURSE 034 ALT 3400 LEGTIME 1 FAF SEG MAP ZASIX",
+                "ZASIX": "OVERFLY ZASIX 1400 RNW 35 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SEG",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3400 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

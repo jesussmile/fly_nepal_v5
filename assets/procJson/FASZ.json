@@ -1,0 +1,92 @@
+{
+    "fixes": [
+        {
+            "name": "GETIM",
+            "lat": 25.092988883333334,
+            "lon": 31.555925
+        },
+        {
+            "name": "RW17",
+            "lat": 24.955302783333334,
+            "lon": 31.585827783333333
+        },
+        {
+            "name": "SZ1F1",
+            "lat": 24.91038611666667,
+            "lon": 31.563463883333334
+        },
+        {
+            "name": "SZ1M1",
+            "lat": 25.0154,
+            "lon": 31.427927783333335
+        },
+        {
+            "name": "SZ1N1",
+            "lat": 24.891830566666666,
+            "lon": 31.467063883333335
+        },
+        {
+            "name": "SZ1T1",
+            "lat": 24.863944433333334,
+            "lon": 31.540358333333334
+        },
+        {
+            "name": "SZ2F1",
+            "lat": 25.012252783333334,
+            "lon": 31.614208333333334
+        },
+        {
+            "name": "SZ2T1",
+            "lat": 25.058683333333335,
+            "lon": 31.637366666666665
+        },
+        {
+            "name": "UTREX",
+            "lat": 24.972222216666665,
+            "lon": 31.255027783333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "SZ1T1": "SZ1T1 AT OR ABOVE 3320 SPEED 160",
+                "SZ1F1": "SZ1F1 2250 SPEED 140 RNW 17 TRK 176 UNTIL 1820 TURN RIGHT DIRECT",
+                "SZ1M1": "SZ1M1 SPEED 180 TRK 304 UNTIL 4800 HDG 304 VECTORS FAF SZ1F1 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "UTREX",
+                    "fixes": {
+                        "UTREX": "UTREX AT OR ABOVE 10500 SPEED 180",
+                        "SZ1N1": "SZ1N1 AT OR ABOVE 4900 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "SZ2T1": "SZ2T1 AT OR ABOVE 3290 SPEED 160",
+                "SZ2F1": "SZ2F1 2210 SPEED 140 RNW 35",
+                "SZ1T1": "SZ1T1 SPEED 180",
+                "SZ1N1": "SZ1N1 SPEED 180 TRK 267 UNTIL 4800 HDG 267 VECTORS FAF SZ2F1 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "UTREX",
+                    "fixes": {
+                        "UTREX": "UTREX AT OR ABOVE 10500 SPEED 180",
+                        "GETIM": "GETIM AT OR ABOVE 4800 SPEED 180"
+                    }
+                }
+            ]
+        }
+    ]
+}

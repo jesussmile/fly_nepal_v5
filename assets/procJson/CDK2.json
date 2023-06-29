@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "KEPRU",
+            "lat": 64.39826388333333,
+            "lon": 109.88237221666667
+        },
+        {
+            "name": "MAXUS",
+            "lat": 64.48017778333333,
+            "lon": 109.850525
+        },
+        {
+            "name": "MIVIR",
+            "lat": 64.45908056666667,
+            "lon": 110.75859166666666
+        },
+        {
+            "name": "NOXAK",
+            "lat": 64.54117778333334,
+            "lon": 110.72930833333334
+        },
+        {
+            "name": "OVUVO",
+            "lat": 64.49653333333333,
+            "lon": 110.07852778333333
+        },
+        {
+            "name": "TESUD",
+            "lat": 63.02398611666667,
+            "lon": 113.09635
+        },
+        {
+            "name": "VOLOK",
+            "lat": 64.52582778333333,
+            "lon": 110.50055278333333
+        },
+        {
+            "name": "XIKEG",
+            "lat": 64.49378333333334,
+            "lon": 110.03983333333333
+        },
+        {
+            "name": "XUKTU",
+            "lat": 64.52849721666666,
+            "lon": 110.53993888333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "NOXAK": "NOXAK AT OR ABOVE 3100 SPEED 180",
+                "VOLOK": "VOLOK 3100 RNW 10",
+                "XIKEG": "OVERFLY XIKEG 3000 HOLD AT XIKEG RIGHT TURN INBOUNDCOURSE 009 ALT 3000 SPEED 200 LEGTIME 1 FAF VOLOK MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "TESUD",
+                    "fixes": {
+                        "TESUD": "TESUD",
+                        "MIVIR": "MIVIR AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "MAXUS": "MAXUS AT OR ABOVE 3100 SPEED 180",
+                "OVUVO": "OVUVO 3100 RNW 28",
+                "XUKTU": "OVERFLY XUKTU 3000 HOLD AT XUKTU RIGHT TURN INBOUNDCOURSE 027 ALT 3000 SPEED 200 LEGTIME 1 FAF OVUVO MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "TESUD",
+                    "fixes": {
+                        "TESUD": "TESUD",
+                        "KEPRU": "KEPRU AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

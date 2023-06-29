@@ -1,0 +1,220 @@
+{
+    "fixes": [
+        {
+            "name": "BATOL",
+            "lat": 42.361986116666664,
+            "lon": 85.18441388333333
+        },
+        {
+            "name": "ECKDO",
+            "lat": 42.240119433333334,
+            "lon": 84.74698888333333
+        },
+        {
+            "name": "GEEBE",
+            "lat": 41.98005833333333,
+            "lon": 85.21368888333333
+        },
+        {
+            "name": "HEBEL",
+            "lat": 42.454475,
+            "lon": 85.36038333333333
+        },
+        {
+            "name": "PI001",
+            "lat": 42.4046358,
+            "lon": 85.13053631666666
+        },
+        {
+            "name": "PI002",
+            "lat": 42.47625876666667,
+            "lon": 85.13392741666667
+        },
+        {
+            "name": "PI003",
+            "lat": 42.4837753,
+            "lon": 85.03028343333334
+        },
+        {
+            "name": "RESGY",
+            "lat": 42.113925,
+            "lon": 85.58528056666667
+        },
+        {
+            "name": "TEEDO",
+            "lat": 42.43655556666667,
+            "lon": 85.09103888333334
+        },
+        {
+            "name": "ULECO",
+            "lat": 42.188261116666666,
+            "lon": 85.02276666666667
+        },
+        {
+            "name": "UWPED",
+            "lat": 42.28866111666667,
+            "lon": 85.20748611666667
+        },
+        {
+            "name": "UYUNA",
+            "lat": 42.36301388333333,
+            "lon": 85.18253333333334
+        },
+        {
+            "name": "VIO",
+            "lat": 42.78671666666666,
+            "lon": 85.49707221666667
+        },
+        {
+            "name": "VVTEN",
+            "lat": 42.195936116666665,
+            "lon": 85.25659443333333
+        },
+        {
+            "name": "WAMOG",
+            "lat": 42.25910278333333,
+            "lon": 85.15298056666667
+        },
+        {
+            "name": "WEVSO",
+            "lat": 42.16365833333333,
+            "lon": 85.42901943333334
+        },
+        {
+            "name": "WIPIL",
+            "lat": 42.44638056666667,
+            "lon": 85.07878888333333
+        },
+        {
+            "name": "XILVY",
+            "lat": 42.34365833333333,
+            "lon": 85.30915
+        },
+        {
+            "name": "YOVUR",
+            "lat": 42.378472216666665,
+            "lon": 84.97966388333333
+        },
+        {
+            "name": "ZEMSA",
+            "lat": 42.237913883333334,
+            "lon": 85.33746943333334
+        },
+        {
+            "name": "ZULSI",
+            "lat": 42.53678888333334,
+            "lon": 85.21128888333334
+        }
+    ],
+    "rnws": [
+        "RNW 05L",
+        "RNW 05R",
+        "RNW 13",
+        "RNW 23L",
+        "RNW 23R",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS23R",
+            "fixes": {
+                "TEEDO": "TEEDO AT OR ABOVE 2600",
+                "BATOL": "BATOL 2172 RNW 23R TRK 227 UNTIL 1400",
+                "VVTEN": "VVTEN AT OR ABOVE 3000 HOLD AT VVTEN RIGHT TURN INBOUNDCOURSE 190 ALT 3000 LEGDIST 4 FAF BATOL MAP RNW 23R"
+            },
+            "transitions": [
+                {
+                    "name": "BATOL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2600 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2600 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2600 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05L",
+            "fixes": {
+                "WEVSO": "WEVSO AT OR ABOVE 2500",
+                "ZEMSA": "ZEMSA 2500 RNW 05L TRK 047 UNTIL 1253",
+                "WIPIL": "OVERFLY WIPIL AT OR ABOVE 2500 HOLD AT WIPIL RIGHT TURN INBOUNDCOURSE 227 LEGDIST 4 FAF ZEMSA MAP RNW 05L"
+            },
+            "transitions": [
+                {
+                    "name": "RESGY",
+                    "fixes": {
+                        "RESGY": "RESGY"
+                    }
+                },
+                {
+                    "name": "WEVSO",
+                    "fixes": {
+                        "WEVSO": "WEVSO RIGHT TURN INBOUNDCOURSE 046 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23R",
+            "fixes": {
+                "WIPIL": "WIPIL AT OR ABOVE 2500",
+                "UYUNA": "UYUNA 2200 RNW 23R TRK 227 UNTIL 1129",
+                "WEVSO": "OVERFLY WEVSO AT OR ABOVE 2500 HOLD AT WEVSO RIGHT TURN INBOUNDCOURSE 046 LEGDIST 4 FAF UYUNA MAP RNW 23R"
+            },
+            "transitions": [
+                {
+                    "name": "VIO",
+                    "fixes": {
+                        "VIO": "VIO",
+                        "ZULSI": "ZULSI AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "WIPIL",
+                    "fixes": {
+                        "WIPIL": "WIPIL RIGHT TURN INBOUNDCOURSE 227 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "YOVUR",
+                    "fixes": {
+                        "YOVUR": "YOVUR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "ULECO": "ULECO AT OR ABOVE 3000",
+                "WAMOG": "WAMOG 2500",
+                "UWPED": "UWPED AT OR ABOVE 1540 RNW 31 TRK 310 UNTIL 1320",
+                "XILVY": "XILVY",
+                "HEBEL": "OVERFLY HEBEL AT OR ABOVE 3000 HOLD AT HEBEL RIGHT TURN INBOUNDCOURSE 333 LEGDIST 4 FAF WAMOG MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "ECKDO",
+                    "fixes": {
+                        "ECKDO": "ECKDO"
+                    }
+                },
+                {
+                    "name": "GEEBE",
+                    "fixes": {
+                        "GEEBE": "GEEBE"
+                    }
+                },
+                {
+                    "name": "ULECO",
+                    "fixes": {
+                        "ULECO": "ULECO LEFT TURN INBOUNDCOURSE 310 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

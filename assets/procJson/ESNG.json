@@ -1,0 +1,237 @@
+{
+    "fixes": [
+        {
+            "name": "44DME",
+            "lat": 67.16238888333334,
+            "lon": 20.658605566666665
+        },
+        {
+            "name": "CL30",
+            "lat": 67.06731943333334,
+            "lon": 21.127972216666667
+        },
+        {
+            "name": "D109J",
+            "lat": 67.0516,
+            "lon": 21.202961116666668
+        },
+        {
+            "name": "D342J",
+            "lat": 66.91003056666666,
+            "lon": 21.248986116666668
+        },
+        {
+            "name": "FF30",
+            "lat": 67.08300278333333,
+            "lon": 21.052888883333335
+        },
+        {
+            "name": "FQ12",
+            "lat": 67.17978611666666,
+            "lon": 20.566258333333334
+        },
+        {
+            "name": "NG",
+            "lat": 67.12883333333333,
+            "lon": 20.825555566666665
+        },
+        {
+            "name": "NG550",
+            "lat": 67.08975,
+            "lon": 21.02025
+        },
+        {
+            "name": "NG551",
+            "lat": 67.02677778333333,
+            "lon": 21.320083333333333
+        },
+        {
+            "name": "NG552",
+            "lat": 67.10891666666667,
+            "lon": 21.288777783333334
+        },
+        {
+            "name": "NG553",
+            "lat": 66.99197221666667,
+            "lon": 21.127305566666667
+        },
+        {
+            "name": "NG850",
+            "lat": 67.21338888333334,
+            "lon": 20.418805566666666
+        },
+        {
+            "name": "NG851",
+            "lat": 67.17480556666666,
+            "lon": 20.608305566666665
+        },
+        {
+            "name": "NG852",
+            "lat": 67.18155556666666,
+            "lon": 20.575194433333333
+        },
+        {
+            "name": "NG853",
+            "lat": 67.23641666666667,
+            "lon": 20.304805566666666
+        },
+        {
+            "name": "NG854",
+            "lat": 67.1545,
+            "lon": 20.339611116666667
+        },
+        {
+            "name": "NG855",
+            "lat": 67.27222221666666,
+            "lon": 20.49836111666667
+        },
+        {
+            "name": "OG",
+            "lat": 67.10394443333334,
+            "lon": 20.951944433333335
+        },
+        {
+            "name": "TGNB",
+            "lat": 67.14627778333333,
+            "lon": 20.74375
+        },
+        {
+            "name": "XEBIB",
+            "lat": 67.05047221666666,
+            "lon": 21.207833333333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS30",
+            "fixes": {
+                "CL30": "CL30 AT OR ABOVE 2900",
+                "FF30": "FF30 2900 RNW 30 TRK 289 UNTIL 2500 TURN RIGHT DIRECT",
+                "OG": "OG 3400 FAF FF30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "D342J",
+                    "fixes": {
+                        "D342J": "D342J",
+                        "D109J": "D109J AT OR ABOVE 2900 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "OG": "OG 2110 RNW 30 TRK 289 UNTIL 2500 TURN RIGHT DIRECT OG 3400 FAF OG MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "OG1",
+                    "fixes": {
+                        "OG": "OG RIGHT TURN INBOUNDCOURSE 289 ALT 2900 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "OG2",
+                    "fixes": {
+                        "OG": "OG RIGHT TURN INBOUNDCOURSE 289 ALT 2900 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD12",
+            "fixes": {
+                "FQ12": "FQ12 3300",
+                "44DME": "44DME AT OR ABOVE 2400",
+                "TGNB": "TGNB 1596 RNW 12 TRK 107 UNTIL 3.0 FROM TGNB 4000 FAF FQ12 MAP TG",
+                "NG": "NG TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TG1",
+                    "fixes": {
+                        "TGNB": "TGNB AT OR ABOVE 3300 SPEED 200 TRK 311 UNTIL 9.0 FROM",
+                        "NG": "NG SPEED 200"
+                    }
+                },
+                {
+                    "name": "TG2",
+                    "fixes": {
+                        "TGNB": "TGNB AT OR ABOVE 3300 SPEED 200 TRK 301 UNTIL 9.0 FROM",
+                        "NG": "NG SPEED 200"
+                    }
+                },
+                {
+                    "name": "TG3",
+                    "fixes": {
+                        "TGNB": "TGNB AT OR ABOVE 3300 SPEED 200 TRK 298 UNTIL 9.0 FROM",
+                        "NG": "NG SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "NG850": "NG850 AT OR ABOVE 3300",
+                "NG851": "NG851 2670 RNW 12",
+                "XEBIB": "OVERFLY XEBIB HOLD AT XEBIB RIGHT TURN INBOUNDCOURSE 289 ALT 3100 SPEED 210 LEGTIME 1 FAF NG851 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "NG853",
+                    "fixes": {
+                        "NG853": "NG853 AT OR ABOVE 4100"
+                    }
+                },
+                {
+                    "name": "NG854",
+                    "fixes": {
+                        "NG854": "NG854 AT OR ABOVE 4000 SPEED 215"
+                    }
+                },
+                {
+                    "name": "NG855",
+                    "fixes": {
+                        "NG855": "NG855 AT OR ABOVE 4000 SPEED 215"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "XEBIB": "XEBIB AT OR ABOVE 3100 OVERFLY XEBIB AT OR ABOVE 3100 SPEED 200 HOLD AT XEBIB RIGHT TURN INBOUNDCOURSE 289 ALT 3100 SPEED 210 LEGTIME 1 FAF NG550 MAP RNW 30",
+                "NG550": "NG550 2620 RNW 30",
+                "NG852": "OVERFLY NG852 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NG551",
+                    "fixes": {
+                        "NG551": "NG551 AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "NG552",
+                    "fixes": {
+                        "NG552": "NG552 AT OR ABOVE 4000 SPEED 215"
+                    }
+                },
+                {
+                    "name": "NG553",
+                    "fixes": {
+                        "NG553": "NG553 AT OR ABOVE 4000 SPEED 215"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "fixes": [
+        {
+            "name": "GDM",
+            "lat": 42.54592221666667,
+            "lon": 72.05818888333333
+        },
+        {
+            "name": "MACXE",
+            "lat": 42.54981943333333,
+            "lon": 72.01678056666667
+        },
+        {
+            "name": "PI001",
+            "lat": 42.538786333333334,
+            "lon": 72.13676785
+        },
+        {
+            "name": "PI002",
+            "lat": 42.48229666666667,
+            "lon": 72.19659596666666
+        },
+        {
+            "name": "PI003",
+            "lat": 42.52539158333333,
+            "lon": 72.28265228333333
+        },
+        {
+            "name": "SAPTE",
+            "lat": 42.6532,
+            "lon": 72.05393888333333
+        },
+        {
+            "name": "TETAE",
+            "lat": 42.77240556666667,
+            "lon": 71.98056111666666
+        },
+        {
+            "name": "VISLY",
+            "lat": 42.750630566666665,
+            "lon": 72.08975833333334
+        },
+        {
+            "name": "WALAL",
+            "lat": 42.72875,
+            "lon": 72.19888056666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVB18",
+            "fixes": {
+                "VISLY": "VISLY AT OR ABOVE 4800 OVERFLY VISLY AT OR ABOVE 4800 HOLD AT VISLY RIGHT TURN INBOUNDCOURSE 179 LEGDIST 5 FAF SAPTE MAP RNW 18",
+                "SAPTE": "SAPTE 3000 RNW 18 TRK 179 UNTIL 1355 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "TETAE",
+                    "fixes": {
+                        "TETAE": "TETAE"
+                    }
+                },
+                {
+                    "name": "VISLY",
+                    "fixes": {
+                        "VISLY": "VISLY RIGHT TURN INBOUNDCOURSE 179 ALT 4800 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "WALAL",
+                    "fixes": {
+                        "WALAL": "WALAL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "GDM": "GDM 2400 GDM AT OR ABOVE 3000 HOLD AT GDM RIGHT TURN INBOUNDCOURSE 097 LEGTIME 1 FAF GDM MAP MACXE",
+                "MACXE": "OVERFLY MACXE 1860 RNW 18 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GDM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "GDM": "GDM 2400 GDM AT OR ABOVE 3000 HOLD AT GDM RIGHT TURN INBOUNDCOURSE 097 LEGTIME 1 FAF GDM MAP MACXE",
+                "MACXE": "OVERFLY MACXE 1860 RNW 36 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GDM",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

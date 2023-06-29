@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "BARHA",
+            "lat": 44.4883,
+            "lon": 68.32754443333333
+        },
+        {
+            "name": "CAXIX",
+            "lat": 44.936177783333335,
+            "lon": 67.06227221666667
+        },
+        {
+            "name": "FEGUD",
+            "lat": 44.861691666666665,
+            "lon": 66.92076388333334
+        },
+        {
+            "name": "JEXAT",
+            "lat": 44.88801111666667,
+            "lon": 66.97068333333333
+        },
+        {
+            "name": "KEAND",
+            "lat": 44.95891111666667,
+            "lon": 67.10560556666667
+        },
+        {
+            "name": "LUBCI",
+            "lat": 44.80458888333333,
+            "lon": 66.81265833333333
+        },
+        {
+            "name": "MOWND",
+            "lat": 45.376666666666665,
+            "lon": 66.65722221666667
+        },
+        {
+            "name": "OCESA",
+            "lat": 44.670777783333335,
+            "lon": 66.95203888333333
+        },
+        {
+            "name": "PIERR",
+            "lat": 45.01235833333333,
+            "lon": 67.20775556666666
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "PIERR": "PIERR AT OR ABOVE 3000 OVERFLY PIERR AT OR ABOVE 4000 HOLD AT PIERR RIGHT TURN INBOUNDCOURSE 145 ALT 4000 LEGDIST 4 FAF KEAND MAP RNW 15",
+                "KEAND": "KEAND 1600",
+                "CAXIX": "CAXIX AT OR ABOVE 840 RNW 15 TRK 145 UNTIL 500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BARHA",
+                    "fixes": {
+                        "BARHA": "BARHA"
+                    }
+                },
+                {
+                    "name": "MOWND",
+                    "fixes": {
+                        "MOWND": "MOWND",
+                        "PIERR": "PIERR AT OR ABOVE 3000 HOLD AT PIERR RIGHT TURN INBOUNDCOURSE 145 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "LUBCI": "LUBCI AT OR ABOVE 3000",
+                "FEGUD": "FEGUD 1600",
+                "JEXAT": "JEXAT AT OR ABOVE 720 RNW 33 TRK 326 UNTIL 378",
+                "PIERR": "OVERFLY PIERR AT OR ABOVE 4000 HOLD AT PIERR RIGHT TURN INBOUNDCOURSE 145 ALT 4000 LEGDIST 4 FAF FEGUD MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "BARHA",
+                    "fixes": {
+                        "BARHA": "BARHA",
+                        "OCESA": "OCESA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,156 @@
+{
+    "fixes": [
+        {
+            "name": "CIMLO",
+            "lat": 41.41239721666667,
+            "lon": 78.62408056666666
+        },
+        {
+            "name": "DETPE",
+            "lat": 41.489666666666665,
+            "lon": 79.01118611666666
+        },
+        {
+            "name": "ELOCI",
+            "lat": 41.412472216666664,
+            "lon": 78.41949166666667
+        },
+        {
+            "name": "EMPOR",
+            "lat": 41.437547216666665,
+            "lon": 78.36500556666667
+        },
+        {
+            "name": "ETG",
+            "lat": 41.21495,
+            "lon": 78.14275556666666
+        },
+        {
+            "name": "FETKU",
+            "lat": 41.412472216666664,
+            "lon": 78.42170833333333
+        },
+        {
+            "name": "LYCEE",
+            "lat": 41.41244721666666,
+            "lon": 78.38336388333333
+        },
+        {
+            "name": "MINSK",
+            "lat": 41.412258333333334,
+            "lon": 78.25045833333333
+        },
+        {
+            "name": "PUNKS",
+            "lat": 41.41215,
+            "lon": 78.75869166666666
+        },
+        {
+            "name": "SLT",
+            "lat": 41.51275833333333,
+            "lon": 77.97011111666667
+        },
+        {
+            "name": "TENIS",
+            "lat": 41.478130566666664,
+            "lon": 78.15292221666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC28",
+            "fixes": {
+                "MINSK": "MINSK AT OR ABOVE 4000 MINSK AT OR ABOVE 4000 HOLD AT MINSK RIGHT TURN INBOUNDCOURSE 281 LEGTIME 1 FAF LYCEE MAP RNW 28",
+                "LYCEE": "LYCEE 3600",
+                "FETKU": "FETKU AT OR ABOVE 3060 RNW 28 TRK 281 UNTIL 2340 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ETG",
+                    "fixes": {
+                        "ETG": "ETG"
+                    }
+                },
+                {
+                    "name": "MINSK",
+                    "fixes": {
+                        "MINSK": "MINSK RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SLT",
+                    "fixes": {
+                        "SLT": "SLT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "PUNKS": "PUNKS AT OR ABOVE 4000",
+                "CIMLO": "CIMLO 3600 RNW 10 TRK 101 UNTIL 2334",
+                "MINSK": "OVERFLY MINSK AT OR ABOVE 4000 HOLD AT MINSK RIGHT TURN INBOUNDCOURSE 281 LEGDIST 5 FAF CIMLO MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "DETPE",
+                    "fixes": {
+                        "DETPE": "DETPE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "MINSK": "MINSK AT OR ABOVE 4000",
+                "LYCEE": "LYCEE 3600",
+                "ELOCI": "ELOCI AT OR ABOVE 3040 RNW 28 TRK 281 UNTIL 2290",
+                "PUNKS": "OVERFLY PUNKS AT OR ABOVE 4000 HOLD AT PUNKS RIGHT TURN INBOUNDCOURSE 101 LEGDIST 4 FAF LYCEE MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "ETG",
+                    "fixes": {
+                        "ETG": "ETG"
+                    }
+                },
+                {
+                    "name": "SLT",
+                    "fixes": {
+                        "SLT": "SLT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR28",
+            "fixes": {
+                "EMPOR": "EMPOR 3900 RNW 28 TRK 264 UNTIL 2334 TURN RIGHT DIRECT EMPOR AT OR ABOVE 3900 HOLD AT EMPOR RIGHT TURN INBOUNDCOURSE 264 LEGTIME 1 FAF EMPOR MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "ETG",
+                    "fixes": {
+                        "ETG": "ETG",
+                        "EMPOR": "EMPOR AT OR ABOVE 3900 HOLD AT EMPOR RIGHT TURN INBOUNDCOURSE 264 ALT 3900 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SLT",
+                    "fixes": {
+                        "SLT": "SLT",
+                        "TENIS": "TENIS AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

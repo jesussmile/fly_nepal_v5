@@ -1,0 +1,178 @@
+{
+    "fixes": [
+        {
+            "name": "CF06",
+            "lat": 36.16708056666667,
+            "lon": 79.17076388333334
+        },
+        {
+            "name": "DAN",
+            "lat": 36.568880566666664,
+            "lon": 79.33665833333333
+        },
+        {
+            "name": "FIPIR",
+            "lat": 36.26159166666667,
+            "lon": 79.021125
+        },
+        {
+            "name": "HURNB",
+            "lat": 36.233291666666666,
+            "lon": 79.06590278333333
+        },
+        {
+            "name": "IFKIN",
+            "lat": 36.230175,
+            "lon": 79.07088888333334
+        },
+        {
+            "name": "JOTOB",
+            "lat": 36.34218333333333,
+            "lon": 78.89312778333333
+        },
+        {
+            "name": "LORSY",
+            "lat": 36.16755,
+            "lon": 79.16987221666666
+        },
+        {
+            "name": "MUPLY",
+            "lat": 36.233294433333334,
+            "lon": 79.23328888333333
+        },
+        {
+            "name": "NILKY",
+            "lat": 36.10177221666667,
+            "lon": 79.10656111666667
+        },
+        {
+            "name": "PI001",
+            "lat": 36.19736458333333,
+            "lon": 79.12286436666666
+        },
+        {
+            "name": "PI002",
+            "lat": 36.20606623333333,
+            "lon": 79.21101988333334
+        },
+        {
+            "name": "PI003",
+            "lat": 36.130571366666665,
+            "lon": 79.22851156666667
+        },
+        {
+            "name": "RDU",
+            "lat": 35.87252221666667,
+            "lon": 78.78334166666667
+        },
+        {
+            "name": "TACUV",
+            "lat": 36.404638883333334,
+            "lon": 78.79360556666667
+        },
+        {
+            "name": "UCORE",
+            "lat": 36.47057778333333,
+            "lon": 78.85690278333334
+        },
+        {
+            "name": "VIKUC",
+            "lat": 36.33866666666667,
+            "lon": 78.73041666666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS06",
+            "fixes": {
+                "CF06": "CF06 AT OR ABOVE 2500",
+                "HURNB": "HURNB 2101 RNW 06 TRK 060 UNTIL 1500 TURN LEFT DIRECT HURNB AT OR ABOVE 2500 HOLD AT HURNB LEFT TURN INBOUNDCOURSE 060 LEGTIME 1 FAF HURNB MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "DAN",
+                    "fixes": {
+                        "DAN": "DAN",
+                        "HURNB": "HURNB AT OR ABOVE 2700",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "RDU",
+                    "fixes": {
+                        "RDU": "RDU",
+                        "HURNB": "HURNB AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "LORSY": "LORSY AT OR ABOVE 3000",
+                "IFKIN": "IFKIN 2200",
+                "FIPIR": "FIPIR AT OR ABOVE 1200 RNW 06 TRK 060 UNTIL 854",
+                "TACUV": "OVERFLY TACUV AT OR ABOVE 3000 HOLD AT TACUV RIGHT TURN INBOUNDCOURSE 240 LEGDIST 4 FAF IFKIN MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "LORSY",
+                    "fixes": {
+                        "LORSY": "LORSY RIGHT TURN INBOUNDCOURSE 060 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MUPLY",
+                    "fixes": {
+                        "MUPLY": "MUPLY"
+                    }
+                },
+                {
+                    "name": "NILKY",
+                    "fixes": {
+                        "NILKY": "NILKY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "TACUV": "TACUV AT OR ABOVE 3000",
+                "JOTOB": "JOTOB 2300 RNW 24 TRK 240 UNTIL 920",
+                "LORSY": "OVERFLY LORSY AT OR ABOVE 3000 HOLD AT LORSY RIGHT TURN INBOUNDCOURSE 060 LEGDIST 4 FAF JOTOB MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "TACUV",
+                    "fixes": {
+                        "TACUV": "TACUV RIGHT TURN INBOUNDCOURSE 240 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UCORE",
+                    "fixes": {
+                        "UCORE": "UCORE"
+                    }
+                },
+                {
+                    "name": "VIKUC",
+                    "fixes": {
+                        "VIKUC": "VIKUC"
+                    }
+                }
+            ]
+        }
+    ]
+}

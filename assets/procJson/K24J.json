@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "EJSEV",
+            "lat": 30.231227783333335,
+            "lon": 83.23167221666667
+        },
+        {
+            "name": "PUYPO",
+            "lat": 30.333216666666665,
+            "lon": 82.92558888333333
+        },
+        {
+            "name": "WIRAT",
+            "lat": 30.282866666666667,
+            "lon": 83.07704721666667
+        },
+        {
+            "name": "YAGUD",
+            "lat": 30.369097216666667,
+            "lon": 82.81721943333334
+        },
+        {
+            "name": "YEVUR",
+            "lat": 30.267236116666666,
+            "lon": 83.12392221666667
+        },
+        {
+            "name": "ZUDVO",
+            "lat": 30.317311116666666,
+            "lon": 82.97351666666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "EJSEV": "EJSEV AT OR ABOVE 3000",
+                "YEVUR": "YEVUR 1800",
+                "WIRAT": "WIRAT AT OR ABOVE 960 RNW 07 TRK 074 UNTIL 460",
+                "YAGUD": "OVERFLY YAGUD AT OR ABOVE 3000 HOLD AT YAGUD RIGHT TURN INBOUNDCOURSE 254 LEGDIST 4 FAF YEVUR MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "EJSEV",
+                    "fixes": {
+                        "EJSEV": "EJSEV RIGHT TURN INBOUNDCOURSE 074 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "YAGUD": "YAGUD AT OR ABOVE 3000",
+                "PUYPO": "PUYPO 1800",
+                "ZUDVO": "ZUDVO AT OR ABOVE 940 RNW 25 TRK 254 UNTIL 353",
+                "EJSEV": "OVERFLY EJSEV AT OR ABOVE 3000 HOLD AT EJSEV RIGHT TURN INBOUNDCOURSE 074 LEGDIST 4 FAF PUYPO MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "YAGUD",
+                    "fixes": {
+                        "YAGUD": "YAGUD RIGHT TURN INBOUNDCOURSE 254 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

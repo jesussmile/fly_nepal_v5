@@ -1,0 +1,236 @@
+{
+    "fixes": [
+        {
+            "name": "CHO",
+            "lat": 36.71802778333333,
+            "lon": 127.49408333333334
+        },
+        {
+            "name": "CISLO",
+            "lat": 36.878475,
+            "lon": 127.29455556666667
+        },
+        {
+            "name": "CNDEE",
+            "lat": 36.704966666666664,
+            "lon": 127.21552778333333
+        },
+        {
+            "name": "CRAIK",
+            "lat": 36.93273333333333,
+            "lon": 127.07285278333333
+        },
+        {
+            "name": "CREBE",
+            "lat": 36.721063883333336,
+            "lon": 127.10328611666667
+        },
+        {
+            "name": "CROST",
+            "lat": 36.629252783333335,
+            "lon": 127.08613888333333
+        },
+        {
+            "name": "DOCES",
+            "lat": 36.84793056666667,
+            "lon": 127.332825
+        },
+        {
+            "name": "DUYEG",
+            "lat": 36.803463883333336,
+            "lon": 127.36665556666667
+        },
+        {
+            "name": "ENTEL",
+            "lat": 36.38638888333333,
+            "lon": 126.95138888333334
+        },
+        {
+            "name": "GOGVE",
+            "lat": 36.92823056666667,
+            "lon": 127.07920278333333
+        },
+        {
+            "name": "JOMBA",
+            "lat": 36.90368888333333,
+            "lon": 127.11364721666666
+        },
+        {
+            "name": "KRATT",
+            "lat": 36.836094433333336,
+            "lon": 127.20860278333333
+        },
+        {
+            "name": "MOKLI",
+            "lat": 37.08870833333334,
+            "lon": 127.34405278333334
+        },
+        {
+            "name": "MUGAR",
+            "lat": 37.29598333333333,
+            "lon": 127.31905833333333
+        },
+        {
+            "name": "NUKKE",
+            "lat": 37.167261116666666,
+            "lon": 126.87507221666667
+        },
+        {
+            "name": "OLMEN",
+            "lat": 36.73705556666667,
+            "lon": 126.991
+        },
+        {
+            "name": "POSAN",
+            "lat": 36.9375,
+            "lon": 127.22111111666666
+        },
+        {
+            "name": "SOT",
+            "lat": 37.09436111666667,
+            "lon": 127.03166388333334
+        },
+        {
+            "name": "SUZZZ",
+            "lat": 36.98903333333333,
+            "lon": 126.993525
+        },
+        {
+            "name": "TIKME",
+            "lat": 36.85824721666667,
+            "lon": 127.17753611666667
+        },
+        {
+            "name": "VASLI",
+            "lat": 36.714444433333334,
+            "lon": 127.50083333333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "OLMEN1",
+            "rnw": "32",
+            "fixes": {
+                "OLMEN": "OLMEN AT OR BELOW 6000 AT OR ABOVE 3300 SPEED 240"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ENTEL",
+                    "fixes": [
+                        "ENTEL"
+                    ]
+                },
+                {
+                    "name": "MUGAR",
+                    "fixes": [
+                        "CREBE",
+                        "CNDEE",
+                        "MOKLI",
+                        "MUGAR"
+                    ]
+                },
+                {
+                    "name": "VASLI",
+                    "fixes": [
+                        "CREBE",
+                        "CNDEE",
+                        "VASLI"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "POSAN1",
+            "rnw": "14",
+            "fixes": {
+                "POSAN": "POSAN AT OR BELOW 6000 AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "ENTEL",
+                    "fixes": [
+                        "CISLO",
+                        "CROST",
+                        "ENTEL"
+                    ]
+                },
+                {
+                    "name": "MUGAR",
+                    "fixes": [
+                        "MUGAR"
+                    ]
+                },
+                {
+                    "name": "VASLI",
+                    "fixes": [
+                        "CISLO",
+                        "DUYEG",
+                        "VASLI"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "POSAN2",
+            "rnw": "14",
+            "fixes": {
+                "CRAIK": "CRAIK HDG 064 INTERCEPT RADIAL 109 TO",
+                "POSAN": "POSAN AT OR BELOW 6000 AT OR ABOVE 4000"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "CHO",
+                    "fixes": [
+                        "DOCES",
+                        "CHO"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS32",
+            "fixes": {
+                "TIKME": "TIKME AT OR ABOVE 3000",
+                "JOMBA": "JOMBA 1900 RNW 32 TRK 318 UNTIL 1700",
+                "SOT": "SOT AT OR ABOVE 4000 HOLD AT SOT LEFT TURN INBOUNDCOURSE 160 ALT 7000 SPEED 310 LEGTIME 1 FAF JOMBA MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "KRATT",
+                    "fixes": {
+                        "KRATT": "KRATT LEFT TURN INBOUNDCOURSE 318 ALT 3200 SPEED 310 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "KRATT": "KRATT AT OR ABOVE 3200",
+                "TIKME": "TIKME AT OR ABOVE 3000",
+                "JOMBA": "JOMBA 1900",
+                "GOGVE": "GOGVE AT OR ABOVE 1060 RNW 32 TRK 319 UNTIL 453",
+                "SUZZZ": "SUZZZ",
+                "NUKKE": "OVERFLY NUKKE AT OR ABOVE 3500 HOLD AT NUKKE LEFT TURN INBOUNDCOURSE 158 ALT 13500 LEGTIME 1 FAF JOMBA MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "KRATT",
+                    "fixes": {
+                        "KRATT": "KRATT LEFT TURN INBOUNDCOURSE 319 ALT 3200 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

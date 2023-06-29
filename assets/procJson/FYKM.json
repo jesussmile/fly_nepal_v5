@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "KM09A",
+            "lat": 17.764733333333332,
+            "lon": 23.999861116666665
+        },
+        {
+            "name": "KM09B",
+            "lat": 17.68245556666667,
+            "lon": 23.87911666666667
+        },
+        {
+            "name": "KM09F",
+            "lat": 17.651805566666667,
+            "lon": 24.068438883333332
+        },
+        {
+            "name": "KM09I",
+            "lat": 17.665738883333333,
+            "lon": 23.982386116666667
+        },
+        {
+            "name": "KM27E",
+            "lat": 17.585313883333335,
+            "lon": 24.474919433333334
+        },
+        {
+            "name": "KM27F",
+            "lat": 17.616375,
+            "lon": 24.285738883333334
+        },
+        {
+            "name": "KM27G",
+            "lat": 17.701222216666668,
+            "lon": 24.389383333333335
+        },
+        {
+            "name": "KM27I",
+            "lat": 17.60225833333333,
+            "lon": 24.371733333333335
+        },
+        {
+            "name": "KMM01",
+            "lat": 17.627625,
+            "lon": 24.217661116666665
+        },
+        {
+            "name": "KMM02",
+            "lat": 17.641002783333334,
+            "lon": 24.135605566666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "KM09F": "KM09F 5000 RNW 09",
+                "KMM01": "OVERFLY KMM01 TURN RIGHT DIRECT",
+                "KM09A": "KM09A 7000 HOLD AT KM09A LEFT TURN INBOUNDCOURSE 357 ALT 7000 SPEED 240 LEGTIME 1 FAF KM09F MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "KM09A",
+                    "fixes": {
+                        "KM09A": "KM09A",
+                        "KM09I": "KM09I"
+                    }
+                },
+                {
+                    "name": "KM09B",
+                    "fixes": {
+                        "KM09B": "KM09B",
+                        "KM09I": "KM09I"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "KM27F": "KM27F 5000 RNW 27",
+                "KMM02": "OVERFLY KMM02 TURN LEFT DIRECT",
+                "KM27G": "KM27G 7000 HOLD AT KM27G RIGHT TURN INBOUNDCOURSE 357 ALT 7000 SPEED 240 LEGTIME 1 FAF KM27F MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "KM27E",
+                    "fixes": {
+                        "KM27E": "KM27E",
+                        "KM27I": "KM27I"
+                    }
+                },
+                {
+                    "name": "KM27G",
+                    "fixes": {
+                        "KM27G": "KM27G",
+                        "KM27I": "KM27I"
+                    }
+                }
+            ]
+        }
+    ]
+}

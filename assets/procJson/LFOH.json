@@ -1,0 +1,169 @@
+{
+    "fixes": [
+        {
+            "name": "ABAMU",
+            "lat": 49.39719443333333,
+            "lon": 0.25813888333333335
+        },
+        {
+            "name": "CN22",
+            "lat": 49.66588888333333,
+            "lon": 0.2791944333333333
+        },
+        {
+            "name": "DEMOM",
+            "lat": 49.54811111666667,
+            "lon": 0.13083333333333333
+        },
+        {
+            "name": "FOH04",
+            "lat": 49.43988888333333,
+            "lon": 0.046805566666666666
+        },
+        {
+            "name": "FOH22",
+            "lat": 49.642611116666664,
+            "lon": 0.2452222166666667
+        },
+        {
+            "name": "GANPU",
+            "lat": 49.318,
+            "lon": 0.22077778333333334
+        },
+        {
+            "name": "IOH04",
+            "lat": 49.379,
+            "lon": 0.13383333333333333
+        },
+        {
+            "name": "IXIVO",
+            "lat": 49.77772221666667,
+            "lon": 0.27538888333333333
+        },
+        {
+            "name": "LHONB",
+            "lat": 49.597527783333334,
+            "lon": 0.18105556666666667
+        },
+        {
+            "name": "LULIP",
+            "lat": 49.30475,
+            "lon": 0.07608333333333334
+        },
+        {
+            "name": "MN22",
+            "lat": 49.55001111666667,
+            "lon": 0.11298056666666666
+        },
+        {
+            "name": "OH410",
+            "lat": 49.55205556666667,
+            "lon": 0.11433333333333334
+        },
+        {
+            "name": "OH710",
+            "lat": 49.50516666666667,
+            "lon": 0.04683333333333333
+        },
+        {
+            "name": "OLONU",
+            "lat": 49.67013888333334,
+            "lon": 0.45119443333333337
+        },
+        {
+            "name": "USAPI",
+            "lat": 49.70322221666667,
+            "lon": 0.3331944333333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB22",
+            "fixes": {
+                "CN22": "CN22 AT OR ABOVE 3000",
+                "LHONB": "LHONB 1830 LHONB 3000 SPEED 220 FAF LHONB MAP MN22",
+                "MN22": "MN22 584 RNW 22 TRK 223 UNTIL 800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LHO1",
+                    "fixes": {
+                        "LHONB": "LHONB RIGHT TURN INBOUNDCOURSE 223 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LHO2",
+                    "fixes": {
+                        "LHONB": "LHONB RIGHT TURN INBOUNDCOURSE 223 ALT 3000 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "IOH04": "IOH04 AT OR ABOVE 3000",
+                "FOH04": "FOH04 3000 RNW 04",
+                "OH410": "OVERFLY OH410 TURN LEFT DIRECT",
+                "DEMOM": "DEMOM SPEED 200",
+                "ABAMU": "ABAMU AT OR ABOVE 3000 SPEED 200 HOLD AT ABAMU LEFT TURN INBOUNDCOURSE 047 ALT 3000 SPEED 200 LEGTIME 1 FAF FOH04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "ABAMU",
+                    "fixes": {
+                        "ABAMU": "ABAMU AT OR ABOVE 3000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "GANPU",
+                    "fixes": {
+                        "GANPU": "GANPU AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "LULIP",
+                    "fixes": {
+                        "LULIP": "LULIP AT OR ABOVE 3000 SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "FOH22": "FOH22 3000 RNW 22",
+                "OH710": "OVERFLY OH710 SPEED 200 TURN RIGHT DIRECT",
+                "USAPI": "USAPI AT OR ABOVE 3000 SPEED 200 FAF FOH22 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "IXIVO",
+                    "fixes": {
+                        "IXIVO": "IXIVO AT OR BELOW 4500 AT OR ABOVE 3000 SPEED 220",
+                        "USAPI": "USAPI AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "OLONU",
+                    "fixes": {
+                        "OLONU": "OLONU AT OR BELOW 4500 AT OR ABOVE 3000 SPEED 220",
+                        "USAPI": "USAPI AT OR ABOVE 3000 SPEED 220"
+                    }
+                },
+                {
+                    "name": "USAPI",
+                    "fixes": {
+                        "USAPI": "USAPI AT OR ABOVE 3000 SPEED 220"
+                    }
+                }
+            ]
+        }
+    ]
+}

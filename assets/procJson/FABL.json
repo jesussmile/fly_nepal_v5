@@ -1,0 +1,278 @@
+{
+    "fixes": [
+        {
+            "name": "BL001",
+            "lat": 29.003430566666665,
+            "lon": 26.303030566666667
+        },
+        {
+            "name": "BL1F1",
+            "lat": 29.190944433333332,
+            "lon": 26.301744433333333
+        },
+        {
+            "name": "BL1MP",
+            "lat": 29.105077783333332,
+            "lon": 26.302327783333332
+        },
+        {
+            "name": "BL1T1",
+            "lat": 29.274486116666665,
+            "lon": 26.30116943333333
+        },
+        {
+            "name": "BL2F1",
+            "lat": 29.001747216666665,
+            "lon": 26.303058333333333
+        },
+        {
+            "name": "BL2MP",
+            "lat": 29.081955566666668,
+            "lon": 26.30249166666667
+        },
+        {
+            "name": "BL2T1",
+            "lat": 28.9182,
+            "lon": 26.30365
+        },
+        {
+            "name": "BLV",
+            "lat": 29.100661116666668,
+            "lon": 26.300641666666667
+        },
+        {
+            "name": "CD02",
+            "lat": 29.2336,
+            "lon": 26.316569433333335
+        },
+        {
+            "name": "D112O",
+            "lat": 29.099372216666666,
+            "lon": 26.587505566666668
+        },
+        {
+            "name": "DUGSO",
+            "lat": 28.917627783333334,
+            "lon": 26.1897
+        },
+        {
+            "name": "EGPID",
+            "lat": 29.273833333333332,
+            "lon": 26.18682778333333
+        },
+        {
+            "name": "FD02",
+            "lat": 29.172116666666668,
+            "lon": 26.30919443333333
+        },
+        {
+            "name": "FD20",
+            "lat": 28.96730833333333,
+            "lon": 26.311244433333332
+        },
+        {
+            "name": "IBMAD",
+            "lat": 29.275041666666667,
+            "lon": 26.415513883333333
+        },
+        {
+            "name": "IMGUR",
+            "lat": 28.817944433333334,
+            "lon": 26.304358333333333
+        },
+        {
+            "name": "MD20",
+            "lat": 29.052319433333334,
+            "lon": 26.304483333333334
+        },
+        {
+            "name": "OKTIG",
+            "lat": 28.477411116666666,
+            "lon": 26.778011116666665
+        },
+        {
+            "name": "PI001",
+            "lat": 29.158674716666667,
+            "lon": 26.307624016666665
+        },
+        {
+            "name": "PI002",
+            "lat": 29.203760883333334,
+            "lon": 26.371429816666666
+        },
+        {
+            "name": "PI003",
+            "lat": 29.266413283333332,
+            "lon": 26.320612166666667
+        },
+        {
+            "name": "PI004",
+            "lat": 29.042469783333335,
+            "lon": 26.305296033333335
+        },
+        {
+            "name": "PI005",
+            "lat": 28.995438066666665,
+            "lon": 26.367134483333334
+        },
+        {
+            "name": "PI006",
+            "lat": 28.934399783333333,
+            "lon": 26.31392595
+        },
+        {
+            "name": "UNLOD",
+            "lat": 28.918152783333333,
+            "lon": 26.4176
+        },
+        {
+            "name": "UNRIM",
+            "lat": 29.374736116666668,
+            "lon": 26.300480566666668
+        },
+        {
+            "name": "UTONU",
+            "lat": 28.871163883333335,
+            "lon": 26.80974721666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 12",
+        "RNW 20",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "OKTI1B",
+            "rnw": "02",
+            "fixes": {
+                "BL001": "BL001",
+                "OKTIG": "OKTIG AT OR ABOVE 21000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "UTON1A",
+            "runway": "RNW 02",
+            "fixes": {
+                "UTONU": "UTONU AT OR ABOVE 15000",
+                "D112O": "D112O SPEED 250",
+                "IBMAD": "IBMAD AT OR ABOVE 8000 SPEED 230"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD02",
+            "fixes": {
+                "CD02": "CD02 AT OR ABOVE 6500",
+                "FD02": "FD02 5560 RNW 02",
+                "BLV": "BLV TRK 016 UNTIL 8000 TURN RIGHT DIRECT BLV 8000 FAF FD02 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "BLV1",
+                    "fixes": {
+                        "BLV": "BLV RIGHT TURN INBOUNDCOURSE 016 ALT 6500 LEGDIST 8"
+                    }
+                },
+                {
+                    "name": "BLV2",
+                    "fixes": {
+                        "BLV": "BLV AT OR ABOVE 8000",
+                        "PI001": "PI001 AT OR ABOVE 6500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 6500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 6500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD20",
+            "fixes": {
+                "FD20": "FD20 6500",
+                "MD20": "MD20 5000 RNW 20",
+                "BLV": "BLV TRK 206 UNTIL 4.0 FROM BLV TURN LEFT DIRECT BLV 8000 FAF FD20 MAP MD20"
+            },
+            "transitions": [
+                {
+                    "name": "BLV1",
+                    "fixes": {
+                        "BLV": "BLV LEFT TURN INBOUNDCOURSE 206 ALT 6500 LEGDIST 8"
+                    }
+                },
+                {
+                    "name": "BLV2",
+                    "fixes": {
+                        "BLV": "BLV AT OR ABOVE 8000",
+                        "PI004": "PI004 AT OR ABOVE 6500 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 6500 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 6500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "BL1T1": "BL1T1 AT OR ABOVE 6100",
+                "BL1F1": "BL1F1 6100 SPEED 230",
+                "BL1MP": "OVERFLY BL1MP 4463 SPEED 185 RNW 02 HDG 023 UNTIL 6500 TURN RIGHT DIRECT",
+                "IBMAD": "IBMAD 8000 SPEED 230 HOLD AT IBMAD LEFT TURN INBOUNDCOURSE 293 ALT 8000 SPEED 230 LEGTIME 1 FAF BL1F1 MAP BL1MP"
+            },
+            "transitions": [
+                {
+                    "name": "EGPID",
+                    "fixes": {
+                        "EGPID": "EGPID AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "name": "IBMAD",
+                    "fixes": {
+                        "IBMAD": "IBMAD AT OR ABOVE 8000 SPEED 230"
+                    }
+                },
+                {
+                    "name": "UNRIM",
+                    "fixes": {
+                        "UNRIM": "UNRIM AT OR ABOVE 8000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "BL2T1": "BL2T1 AT OR ABOVE 6500",
+                "BL2F1": "BL2F1 6000 SPEED 230",
+                "BL2MP": "OVERFLY BL2MP 4471 RNW 20 HDG 203 UNTIL 6500 TURN LEFT DIRECT",
+                "UNLOD": "UNLOD AT OR ABOVE 8000 SPEED 230 HOLD AT UNLOD RIGHT TURN INBOUNDCOURSE 292 ALT 8000 SPEED 230 LEGTIME 1 FAF BL2F1 MAP BL2MP"
+            },
+            "transitions": [
+                {
+                    "name": "DUGSO",
+                    "fixes": {
+                        "DUGSO": "DUGSO AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "name": "IMGUR",
+                    "fixes": {
+                        "IMGUR": "IMGUR AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "name": "UNLOD",
+                    "fixes": {
+                        "UNLOD": "UNLOD AT OR ABOVE 8000 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

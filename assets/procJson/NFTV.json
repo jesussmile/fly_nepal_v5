@@ -1,0 +1,153 @@
+{
+    "fixes": [
+        {
+            "name": "BIVAD",
+            "lat": 18.505677783333333,
+            "lon": 174.122375
+        },
+        {
+            "name": "DOXUS",
+            "lat": 18.600491666666667,
+            "lon": 173.81812221666667
+        },
+        {
+            "name": "EKVUK",
+            "lat": 18.570683333333335,
+            "lon": 174.10566943333333
+        },
+        {
+            "name": "FF08",
+            "lat": 18.578394433333333,
+            "lon": 174.05531666666667
+        },
+        {
+            "name": "FF26",
+            "lat": 18.593055566666667,
+            "lon": 173.87955278333334
+        },
+        {
+            "name": "GOGUL",
+            "lat": 18.665475,
+            "lon": 173.80134443333333
+        },
+        {
+            "name": "LAMIP",
+            "lat": 18.54042778333333,
+            "lon": 173.78716666666668
+        },
+        {
+            "name": "LIKVA",
+            "lat": 18.630722216666666,
+            "lon": 174.13668888333333
+        },
+        {
+            "name": "TV683",
+            "lat": 18.593275,
+            "lon": 173.88790278333335
+        },
+        {
+            "name": "TV843",
+            "lat": 18.577925,
+            "lon": 174.03590278333334
+        },
+        {
+            "name": "TVNB",
+            "lat": 18.585555566666667,
+            "lon": 173.96972221666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB08",
+            "fixes": {
+                "FF08": "FF08 1900",
+                "TVNB": "TVNB 340 RNW 08 TRK 082 UNTIL 1800 TURN RIGHT DIRECT TVNB AT OR ABOVE 2500 FAF FF08 MAP TV"
+            },
+            "transitions": [
+                {
+                    "name": "TV",
+                    "fixes": {
+                        "TVNB": "TVNB AT OR ABOVE 2500 TRK 276 UNTIL 7.0 FROM TVNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB26",
+            "fixes": {
+                "FF26": "FF26 1700 RNW 26",
+                "TVNB": "OVERFLY TVNB TRK 262 UNTIL 1800 TURN LEFT DIRECT TVNB AT OR ABOVE 2500 FAF FF26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "TV",
+                    "fixes": {
+                        "TVNB": "TVNB AT OR ABOVE 2500 TRK 067 UNTIL 7.0 FROM TVNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "EKVUK": "EKVUK AT OR ABOVE 2500",
+                "TV843": "TV843 1550 RNW 08",
+                "DOXUS": "DOXUS AT OR ABOVE 2500 FAF TV843 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "BIVAD",
+                    "fixes": {
+                        "BIVAD": "BIVAD"
+                    }
+                },
+                {
+                    "name": "EKVUK",
+                    "fixes": {
+                        "EKVUK": "EKVUK LEFT TURN INBOUNDCOURSE 083 ALT 2500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LIKVA",
+                    "fixes": {
+                        "LIKVA": "LIKVA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "DOXUS": "DOXUS AT OR ABOVE 2500",
+                "TV683": "TV683 1550 RNW 26",
+                "EKVUK": "EKVUK AT OR ABOVE 2500 FAF TV683 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "DOXUS",
+                    "fixes": {
+                        "DOXUS": "DOXUS RIGHT TURN INBOUNDCOURSE 263 ALT 2500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "GOGUL",
+                    "fixes": {
+                        "GOGUL": "GOGUL"
+                    }
+                },
+                {
+                    "name": "LAMIP",
+                    "fixes": {
+                        "LAMIP": "LAMIP"
+                    }
+                }
+            ]
+        }
+    ]
+}

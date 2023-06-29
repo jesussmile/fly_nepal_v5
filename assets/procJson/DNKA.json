@@ -1,0 +1,180 @@
+{
+    "fixes": [
+        {
+            "name": "AKLUR",
+            "lat": 10.758758333333333,
+            "lon": 7.5262361166666665
+        },
+        {
+            "name": "ARKUN",
+            "lat": 10.631783333333333,
+            "lon": 7.112791666666666
+        },
+        {
+            "name": "BIGUG",
+            "lat": 10.567911116666666,
+            "lon": 7.167494433333333
+        },
+        {
+            "name": "CI05",
+            "lat": 10.615222216666666,
+            "lon": 7.223955566666667
+        },
+        {
+            "name": "EVKAT",
+            "lat": 10.886508333333333,
+            "lon": 7.416763883333333
+        },
+        {
+            "name": "FD05",
+            "lat": 10.632816666666667,
+            "lon": 7.244375
+        },
+        {
+            "name": "FD23",
+            "lat": 10.738286116666666,
+            "lon": 7.371463883333333
+        },
+        {
+            "name": "FI05",
+            "lat": 10.632544433333333,
+            "lon": 7.2446111166666665
+        },
+        {
+            "name": "KA400",
+            "lat": 10.622030566666666,
+            "lon": 7.232052783333334
+        },
+        {
+            "name": "KA500",
+            "lat": 10.768533333333334,
+            "lon": 7.4069
+        },
+        {
+            "name": "KA600",
+            "lat": 10.686458333333333,
+            "lon": 7.177322216666667
+        },
+        {
+            "name": "KA700",
+            "lat": 10.832319433333334,
+            "lon": 7.352755566666667
+        },
+        {
+            "name": "KDA",
+            "lat": 10.680166666666667,
+            "lon": 7.301416666666666
+        },
+        {
+            "name": "RUSNA",
+            "lat": 10.876744433333334,
+            "lon": 7.536133333333334
+        },
+        {
+            "name": "VOMLU",
+            "lat": 10.504030566666668,
+            "lon": 7.222175
+        },
+        {
+            "name": "VOPVO",
+            "lat": 10.822638883333333,
+            "lon": 7.471511116666667
+        },
+        {
+            "name": "VOSUV",
+            "lat": 10.513791666666666,
+            "lon": 7.102947216666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "FD05": "FD05 3700",
+                "KDA": "KDA 2292 RNW 05 TRK 051 UNTIL 2480 TURN LEFT DIRECT KDA 4000 HOLD AT KDA RIGHT TURN INBOUNDCOURSE 051 ALT 4000 LEGTIME 1 FAF FD05 MAP KDA"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "FD23": "FD23 3100 RNW 23",
+                "KDA": "KDA AT OR ABOVE 2120 TRK 231 UNTIL 3000 TURN RIGHT DIRECT KDA 4000 HOLD AT KDA RIGHT TURN INBOUNDCOURSE 231 ALT 4000 LEGTIME 1 FAF FD23 MAP RNW 23"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILS05",
+            "fixes": {
+                "CI05": "CI05 AT OR ABOVE 3700",
+                "FI05": "FI05 3700 RNW 05 TRK 051 UNTIL 2480 TURN LEFT DIRECT",
+                "KDA": "KDA 4000 HOLD AT KDA RIGHT TURN INBOUNDCOURSE 051 ALT 4000 LEGTIME 1 FAF FI05 MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "BIGUG": "BIGUG AT OR ABOVE 5000 SPEED 200 BIGUG HOLD AT BIGUG LEFT TURN INBOUNDCOURSE 051 ALT 5000 SPEED 230 LEGTIME 1 FAF KA400 MAP RNW 05",
+                "KA400": "KA400 4000 RNW 05 TURN LEFT DIRECT",
+                "KA600": "KA600",
+                "ARKUN": "ARKUN SPEED 200 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ARKUN",
+                    "fixes": {
+                        "ARKUN": "ARKUN"
+                    }
+                },
+                {
+                    "name": "VOMLU",
+                    "fixes": {
+                        "VOMLU": "VOMLU"
+                    }
+                },
+                {
+                    "name": "VOSUV",
+                    "fixes": {
+                        "VOSUV": "VOSUV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "VOPVO": "VOPVO AT OR ABOVE 5000 SPEED 200 VOPVO HOLD AT VOPVO RIGHT TURN INBOUNDCOURSE 231 ALT 5000 SPEED 230 LEGTIME 1 FAF KA500 MAP RNW 23",
+                "KA500": "KA500 4000 RNW 23 TURN RIGHT DIRECT",
+                "KA700": "KA700",
+                "EVKAT": "EVKAT SPEED 200 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AKLUR",
+                    "fixes": {
+                        "AKLUR": "AKLUR"
+                    }
+                },
+                {
+                    "name": "EVKAT",
+                    "fixes": {
+                        "EVKAT": "EVKAT"
+                    }
+                },
+                {
+                    "name": "RUSNA",
+                    "fixes": {
+                        "RUSNA": "RUSNA"
+                    }
+                }
+            ]
+        }
+    ]
+}

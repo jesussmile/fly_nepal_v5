@@ -1,0 +1,85 @@
+{
+    "fixes": [
+        {
+            "name": "3NM",
+            "lat": 65.455625,
+            "lon": 16.892622216666666
+        },
+        {
+            "name": "EKSAL",
+            "lat": 65.50829443333333,
+            "lon": 17.186297216666667
+        },
+        {
+            "name": "GERDU",
+            "lat": 65.39915833333333,
+            "lon": 17.081458333333334
+        },
+        {
+            "name": "INDIN",
+            "lat": 65.44238056666667,
+            "lon": 16.81940833333333
+        },
+        {
+            "name": "RLF01",
+            "lat": 65.55169721666667,
+            "lon": 16.923294433333332
+        },
+        {
+            "name": "RLI01",
+            "lat": 65.47543333333333,
+            "lon": 17.002611116666667
+        },
+        {
+            "name": "RLM01",
+            "lat": 65.63518888333333,
+            "lon": 16.919133333333335
+        },
+        {
+            "name": "RLT01",
+            "lat": 65.70072778333333,
+            "lon": 17.151916666666665
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "RLF01": "RLF01 3000",
+                "RLM01": "OVERFLY RLM01 1400 RNW 01",
+                "RLT01": "RLT01 SPEED 130 TURN LEFT DIRECT",
+                "EKSAL": "EKSAL HOLD AT EKSAL LEFT TURN INBOUNDCOURSE 124 ALT 4300 LEGTIME 1 FAF RLF01 MAP RLM01"
+            },
+            "transitions": [
+                {
+                    "name": "EKSAL",
+                    "fixes": {
+                        "EKSAL": "EKSAL AT OR ABOVE 5500",
+                        "RLI01": "RLI01 AT OR ABOVE 4300"
+                    }
+                },
+                {
+                    "name": "GERDU",
+                    "fixes": {
+                        "GERDU": "GERDU AT OR ABOVE 5500",
+                        "RLI01": "RLI01 AT OR ABOVE 4300"
+                    }
+                },
+                {
+                    "name": "INDIN",
+                    "fixes": {
+                        "INDIN": "INDIN AT OR ABOVE 5500",
+                        "3NM": "3NM AT OR ABOVE 5000",
+                        "RLI01": "RLI01 AT OR ABOVE 4300"
+                    }
+                }
+            ]
+        }
+    ]
+}

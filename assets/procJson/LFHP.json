@@ -1,0 +1,171 @@
+{
+    "fixes": [
+        {
+            "name": "EMBUR",
+            "lat": 45.380555566666665,
+            "lon": 3.524166666666667
+        },
+        {
+            "name": "ERUDO",
+            "lat": 44.950583333333334,
+            "lon": 4.025027783333333
+        },
+        {
+            "name": "FHP15",
+            "lat": 45.18966666666667,
+            "lon": 3.6771388833333334
+        },
+        {
+            "name": "FHP33",
+            "lat": 44.976138883333334,
+            "lon": 3.844305566666667
+        },
+        {
+            "name": "FN33",
+            "lat": 44.981977783333335,
+            "lon": 3.8455777833333333
+        },
+        {
+            "name": "HP410",
+            "lat": 45.14066666666667,
+            "lon": 3.7156111166666665
+        },
+        {
+            "name": "HP520",
+            "lat": 45.03452778333333,
+            "lon": 3.7987222166666665
+        },
+        {
+            "name": "HP522",
+            "lat": 45.19377778333333,
+            "lon": 3.835527783333333
+        },
+        {
+            "name": "HP524",
+            "lat": 45.31041666666667,
+            "lon": 3.7441111166666667
+        },
+        {
+            "name": "IHP33",
+            "lat": 44.90233333333333,
+            "lon": 3.90175
+        },
+        {
+            "name": "LAPUB",
+            "lat": 45.261833333333335,
+            "lon": 3.6203055666666666
+        },
+        {
+            "name": "LEKSO",
+            "lat": 45.06577778333333,
+            "lon": 3.9995833333333333
+        },
+        {
+            "name": "MN33",
+            "lat": 45.05101666666667,
+            "lon": 3.7870944333333334
+        },
+        {
+            "name": "PYNB",
+            "lat": 45.018166666666666,
+            "lon": 3.8149444333333333
+        },
+        {
+            "name": "URUXI",
+            "lat": 44.85394443333333,
+            "lon": 3.7786944333333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB33",
+            "fixes": {
+                "FN33": "FN33 5200",
+                "PYNB": "PYNB AT OR ABOVE 4270 PYNB 5900 FAF FN33 MAP MN33",
+                "MN33": "MN33 3404 RNW 33 TRK 357 UNTIL 4800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EMB1",
+                    "fixes": {
+                        "EMBUR": "EMBUR",
+                        "PYNB": "PYNB AT OR ABOVE 5800 TRK 122 UNTIL 4.3 FROM PYNB"
+                    }
+                },
+                {
+                    "name": "EMB2",
+                    "fixes": {
+                        "EMBUR": "EMBUR",
+                        "PYNB": "PYNB AT OR ABOVE 5800 TRK 130 UNTIL 5.0 FROM PYNB"
+                    }
+                },
+                {
+                    "name": "PY1",
+                    "fixes": {
+                        "PYNB": "PYNB AT OR ABOVE 5900 TRK 122 UNTIL 4.3 FROM PYNB"
+                    }
+                },
+                {
+                    "name": "PY2",
+                    "fixes": {
+                        "PYNB": "PYNB AT OR ABOVE 5900 TRK 130 UNTIL 5.0 FROM PYNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "FHP15": "FHP15 5400 RNW 15",
+                "HP520": "OVERFLY HP520 TURN LEFT DIRECT",
+                "HP522": "HP522",
+                "HP524": "HP524",
+                "LAPUB": "LAPUB 5600 SPEED 210 HOLD AT LAPUB LEFT TURN INBOUNDCOURSE 150 ALT 5600 SPEED 230 LEGTIME 1 FAF FHP15 MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "LAPUB",
+                    "fixes": {
+                        "LAPUB": "LAPUB AT OR ABOVE 5600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "IHP33": "IHP33 AT OR ABOVE 6100",
+                "FHP33": "FHP33 5300 RNW 33",
+                "HP410": "OVERFLY HP410 TURN RIGHT DIRECT",
+                "LEKSO": "LEKSO 6400 SPEED 230 HOLD AT LEKSO LEFT TURN INBOUNDCOURSE 170 ALT 8000 SPEED 230 LEGTIME 1 FAF FHP33 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "ERUDO",
+                    "fixes": {
+                        "ERUDO": "ERUDO AT OR ABOVE 6400"
+                    }
+                },
+                {
+                    "name": "LEKSO",
+                    "fixes": {
+                        "LEKSO": "LEKSO",
+                        "ERUDO": "ERUDO AT OR ABOVE 6400"
+                    }
+                },
+                {
+                    "name": "URUXI",
+                    "fixes": {
+                        "URUXI": "URUXI"
+                    }
+                }
+            ]
+        }
+    ]
+}

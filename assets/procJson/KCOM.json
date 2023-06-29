@@ -1,0 +1,91 @@
+{
+    "fixes": [
+        {
+            "name": "CUKKU",
+            "lat": 31.644669433333334,
+            "lon": 99.29726388333333
+        },
+        {
+            "name": "EKGUZ",
+            "lat": 31.700616666666665,
+            "lon": 99.15537778333334
+        },
+        {
+            "name": "HOPIV",
+            "lat": 31.806727783333333,
+            "lon": 99.38494721666666
+        },
+        {
+            "name": "IREZO",
+            "lat": 31.930663883333334,
+            "lon": 99.45222778333333
+        },
+        {
+            "name": "OVHIL",
+            "lat": 31.750772216666668,
+            "lon": 99.35463333333334
+        },
+        {
+            "name": "PUYOK",
+            "lat": 32.10046943333333,
+            "lon": 99.37170278333333
+        },
+        {
+            "name": "WIBUG",
+            "lat": 32.044294433333334,
+            "lon": 99.51407778333333
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "WIBUG": "WIBUG AT OR ABOVE 4000 OVERFLY WIBUG AT OR ABOVE 4000 HOLD AT WIBUG RIGHT TURN INBOUNDCOURSE 148 LEGDIST 4 FAF IREZO MAP RNW 15",
+                "IREZO": "IREZO 3500 RNW 15 TRK 148 UNTIL 3000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PUYOK",
+                    "fixes": {
+                        "PUYOK": "PUYOK"
+                    }
+                },
+                {
+                    "name": "WIBUG",
+                    "fixes": {
+                        "WIBUG": "WIBUG RIGHT TURN INBOUNDCOURSE 148 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "CUKKU": "CUKKU AT OR ABOVE 4000",
+                "OVHIL": "OVHIL 3500",
+                "HOPIV": "HOPIV AT OR ABOVE 2320 RNW 33 TRK 328 UNTIL 1939",
+                "WIBUG": "OVERFLY WIBUG AT OR ABOVE 4000 HOLD AT WIBUG RIGHT TURN INBOUNDCOURSE 148 LEGDIST 4 FAF OVHIL MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "CUKKU",
+                    "fixes": {
+                        "CUKKU": "CUKKU LEFT TURN INBOUNDCOURSE 328 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "EKGUZ",
+                    "fixes": {
+                        "EKGUZ": "EKGUZ AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

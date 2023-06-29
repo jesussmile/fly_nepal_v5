@@ -1,0 +1,220 @@
+{
+    "fixes": [
+        {
+            "name": "CFBHB",
+            "lat": 29.857013883333334,
+            "lon": 98.92908333333334
+        },
+        {
+            "name": "CSI",
+            "lat": 29.922355566666667,
+            "lon": 99.21448611666666
+        },
+        {
+            "name": "DIYER",
+            "lat": 29.846513883333333,
+            "lon": 98.914925
+        },
+        {
+            "name": "FIMEL",
+            "lat": 29.909916666666668,
+            "lon": 98.85251111666666
+        },
+        {
+            "name": "HALOL",
+            "lat": 30.007661116666668,
+            "lon": 99.13109166666666
+        },
+        {
+            "name": "HODIS",
+            "lat": 29.95265,
+            "lon": 99.14613056666667
+        },
+        {
+            "name": "JAMPI",
+            "lat": 29.783080566666666,
+            "lon": 98.97725833333334
+        },
+        {
+            "name": "LAVIC",
+            "lat": 30.034658333333333,
+            "lon": 99.16741388333334
+        },
+        {
+            "name": "OBUCO",
+            "lat": 30.110552783333333,
+            "lon": 99.26971111666667
+        },
+        {
+            "name": "RITRE",
+            "lat": 29.911802783333332,
+            "lon": 99.00236943333333
+        },
+        {
+            "name": "STV",
+            "lat": 30.206758333333333,
+            "lon": 98.70575556666667
+        },
+        {
+            "name": "ZABOS",
+            "lat": 29.94285,
+            "lon": 99.04404443333334
+        },
+        {
+            "name": "ZEMOT",
+            "lat": 29.977033333333335,
+            "lon": 99.09105833333334
+        },
+        {
+            "name": "ZOTEP",
+            "lat": 29.900533333333332,
+            "lon": 98.98733056666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 12",
+        "RNW 21",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC30",
+            "fixes": {
+                "CFBHB": "CFBHB AT OR ABOVE 3600",
+                "ZOTEP": "ZOTEP 3600",
+                "ZABOS": "ZABOS AT OR ABOVE 2360 RNW 30 TRK 305 UNTIL 2100 TURN LEFT DIRECT",
+                "CSI": "CSI AT OR ABOVE 4100 HOLD AT CSI LEFT TURN INBOUNDCOURSE 088 LEGTIME 1 FAF ZOTEP MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "CSI",
+                    "fixes": {
+                        "CSI": "CSI",
+                        "ZOTEP": "ZOTEP AT OR ABOVE 3600 HOLD AT ZOTEP LEFT TURN INBOUNDCOURSE 305 ALT 3600 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "STV",
+                    "fixes": {
+                        "STV": "STV",
+                        "ZOTEP": "ZOTEP AT OR ABOVE 3600 HOLD AT ZOTEP LEFT TURN INBOUNDCOURSE 305 ALT 3600 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "OBUCO": "OBUCO AT OR ABOVE 4000",
+                "LAVIC": "LAVIC 3300",
+                "HALOL": "HALOL AT OR ABOVE 2500 RNW 12 TRK 124 UNTIL 1836",
+                "DIYER": "OVERFLY DIYER AT OR ABOVE 4100 HOLD AT DIYER RIGHT TURN INBOUNDCOURSE 305 LEGDIST 5 FAF LAVIC MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "OBUCO",
+                    "fixes": {
+                        "OBUCO": "OBUCO RIGHT TURN INBOUNDCOURSE 124 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "DIYER": "DIYER AT OR ABOVE 4100",
+                "RITRE": "RITRE 3300 RNW 30 TRK 305 UNTIL 1860",
+                "OBUCO": "OVERFLY OBUCO AT OR ABOVE 4000 HOLD AT OBUCO RIGHT TURN INBOUNDCOURSE 124 LEGDIST 4 FAF RITRE MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "CSI",
+                    "fixes": {
+                        "CSI": "CSI",
+                        "JAMPI": "JAMPI AT OR ABOVE 4100"
+                    }
+                },
+                {
+                    "name": "DIYER",
+                    "fixes": {
+                        "DIYER": "DIYER RIGHT TURN INBOUNDCOURSE 305 ALT 4100 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "STV",
+                    "fixes": {
+                        "STV": "STV",
+                        "FIMEL": "FIMEL AT OR ABOVE 4100"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA03",
+            "fixes": {
+                "CSI": "CSI 4000 CSI AT OR ABOVE 4000 FAF CSI MAP ZEMO",
+                "HODIS": "HODIS AT OR ABOVE 2440",
+                "ZEMOT": "ZEMOT 2380 RNW 03 TRK 055 UNTIL 2380 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CSI",
+                    "fixes": {
+                        "CSI": "CSI RIGHT TURN INBOUNDCOURSE 055 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA12",
+            "fixes": {
+                "CSI": "CSI 4000 CSI AT OR ABOVE 4000 FAF CSI MAP ZEMO",
+                "HODIS": "HODIS AT OR ABOVE 2440",
+                "ZEMOT": "ZEMOT 2380 RNW 12 TRK 055 UNTIL 2380 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CSI",
+                    "fixes": {
+                        "CSI": "CSI RIGHT TURN INBOUNDCOURSE 055 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA21",
+            "fixes": {
+                "CSI": "CSI 4000 CSI AT OR ABOVE 4000 FAF CSI MAP ZEMO",
+                "HODIS": "HODIS AT OR ABOVE 2440",
+                "ZEMOT": "ZEMOT 2380 RNW 21 TRK 055 UNTIL 2380 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CSI",
+                    "fixes": {
+                        "CSI": "CSI RIGHT TURN INBOUNDCOURSE 055 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA30",
+            "fixes": {
+                "CSI": "CSI 4000 CSI AT OR ABOVE 4000 FAF CSI MAP ZEMO",
+                "HODIS": "HODIS AT OR ABOVE 2440",
+                "ZEMOT": "ZEMOT 2380 RNW 30 TRK 055 UNTIL 2380 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CSI",
+                    "fixes": {
+                        "CSI": "CSI RIGHT TURN INBOUNDCOURSE 055 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "ABDUX",
+            "lat": 43.858333333333334,
+            "lon": 4.9875
+        },
+        {
+            "name": "CI16Z",
+            "lat": 43.76894166666666,
+            "lon": 5.0258666666666665
+        },
+        {
+            "name": "CMNB",
+            "lat": 43.90827778333333,
+            "lon": 4.905388883333333
+        },
+        {
+            "name": "D338O",
+            "lat": 43.83191111666667,
+            "lon": 4.995788883333333
+        },
+        {
+            "name": "FI16Z",
+            "lat": 43.736136116666664,
+            "lon": 5.042711116666666
+        },
+        {
+            "name": "FMY16",
+            "lat": 43.701805566666664,
+            "lon": 5.060333333333333
+        },
+        {
+            "name": "IMY16",
+            "lat": 43.748694433333334,
+            "lon": 5.036305566666667
+        },
+        {
+            "name": "MARNB",
+            "lat": 43.48980556666667,
+            "lon": 5.13725
+        },
+        {
+            "name": "MMY16",
+            "lat": 43.63127778333333,
+            "lon": 5.096416666666666
+        },
+        {
+            "name": "MY401",
+            "lat": 43.844,
+            "lon": 5.1146666666666665
+        },
+        {
+            "name": "MY402",
+            "lat": 43.78688888333333,
+            "lon": 5.0671388833333335
+        },
+        {
+            "name": "MY406",
+            "lat": 43.58441666666667,
+            "lon": 5.120388883333334
+        },
+        {
+            "name": "MY407",
+            "lat": 43.613416666666666,
+            "lon": 5.227916666666666
+        },
+        {
+            "name": "MY408",
+            "lat": 43.78002778333333,
+            "lon": 5.220805566666667
+        },
+        {
+            "name": "RW16",
+            "lat": 43.61565278333333,
+            "lon": 5.104402783333334
+        },
+        {
+            "name": "SAL",
+            "lat": 43.61183333333334,
+            "lon": 5.1028055666666665
+        },
+        {
+            "name": "SALNB",
+            "lat": 43.61063888333334,
+            "lon": 5.101083333333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 16",
+        "RNW 16L",
+        "RNW 16R",
+        "RNW 27",
+        "RNW 34",
+        "RNW 34L",
+        "RNW 34R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSZ16",
+            "fixes": {
+                "CI16Z": "CI16Z AT OR ABOVE 2700",
+                "FI16Z": "FI16Z 2700 RNW 16 TRK 158 UNTIL 2.0 FROM",
+                "SAL": "SAL HDG 316 VECTORS FAF FI16Z MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CM",
+                    "fixes": {
+                        "CMNB": "CMNB",
+                        "ABDUX": "ABDUX AT OR BELOW 5000",
+                        "D338O": "D338O AT OR ABOVE 4100"
+                    }
+                },
+                {
+                    "name": "MAR",
+                    "fixes": {
+                        "MARNB": "MARNB AT OR ABOVE 4000",
+                        "SALNB": "SALNB AT OR ABOVE 4000 TRK 350 UNTIL 10.0 FROM",
+                        "SAL": "SAL SPEED 160"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "IMY16": "IMY16 2300 SPEED 160",
+                "FMY16": "FMY16 2000",
+                "MMY16": "OVERFLY MMY16 563 RNW 16",
+                "MY406": "MY406 AT OR BELOW 4000 SPEED 160 TURN LEFT DIRECT",
+                "MY407": "MY407 AT OR BELOW 4000 SPEED 160",
+                "MY408": "MY408 AT OR BELOW 4000 SPEED 160",
+                "MY401": "MY401 4000 SPEED 160 HOLD AT MY401 LEFT TURN INBOUNDCOURSE 196 ALT 4000 SPEED 160 LEGTIME 1 FAF FMY16 MAP MMY16"
+            },
+            "transitions": [
+                {
+                    "name": "MY401",
+                    "fixes": {
+                        "MY401": "MY401 4000",
+                        "MY402": "MY402 3100 SPEED 160"
+                    }
+                }
+            ]
+        }
+    ]
+}

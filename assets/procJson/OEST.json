@@ -1,0 +1,83 @@
+{
+    "fixes": [
+        {
+            "name": "KUTRA",
+            "lat": 22.757361116666665,
+            "lon": 53.20772221666667
+        },
+        {
+            "name": "MD13",
+            "lat": 22.720780566666665,
+            "lon": 53.26594166666667
+        },
+        {
+            "name": "MD31",
+            "lat": 22.700283333333335,
+            "lon": 53.294322216666664
+        },
+        {
+            "name": "NABIT",
+            "lat": 22.656972216666666,
+            "lon": 53.346888883333335
+        },
+        {
+            "name": "SBT",
+            "lat": 22.712472216666665,
+            "lon": 53.27947221666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD13",
+            "fixes": {
+                "KUTRA": "KUTRA 1800",
+                "MD13": "MD13 566 RNW 13 TRK 122 UNTIL 2000 TURN RIGHT DIRECT",
+                "SBT": "SBT 2000 HOLD AT SBT LEFT TURN INBOUNDCOURSE 310 LEGTIME 1 FAF KUTRA MAP MD13"
+            },
+            "transitions": [
+                {
+                    "name": "KUTRA",
+                    "fixes": {
+                        "KUTRA": "KUTRA RIGHT TURN INBOUNDCOURSE 122 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SBT",
+                    "fixes": {
+                        "SBT": "SBT AT OR ABOVE 2000",
+                        "KUTRA": "KUTRA HOLD AT KUTRA RIGHT TURN INBOUNDCOURSE 122 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD31",
+            "fixes": {
+                "NABIT": "NABIT 1800",
+                "MD31": "MD31 569 RNW 31 TRK 310 UNTIL 2000 TURN LEFT DIRECT",
+                "SBT": "SBT HOLD AT SBT RIGHT TURN INBOUNDCOURSE 122 ALT 2000 LEGTIME 1 FAF NABIT MAP MD31"
+            },
+            "transitions": [
+                {
+                    "name": "NABIT",
+                    "fixes": {
+                        "NABIT": "NABIT LEFT TURN INBOUNDCOURSE 310 ALT 2000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SBT",
+                    "fixes": {
+                        "SBT": "SBT AT OR ABOVE 2000",
+                        "NABIT": "NABIT HOLD AT NABIT LEFT TURN INBOUNDCOURSE 310 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

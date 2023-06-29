@@ -1,0 +1,176 @@
+{
+    "fixes": [
+        {
+            "name": "AGTIN",
+            "lat": 11.921952783333333,
+            "lon": 13.153158333333334
+        },
+        {
+            "name": "BUBRU",
+            "lat": 11.660736116666667,
+            "lon": 12.99575
+        },
+        {
+            "name": "CI05",
+            "lat": 11.765497216666667,
+            "lon": 12.984761116666666
+        },
+        {
+            "name": "GAKMU",
+            "lat": 11.92825,
+            "lon": 13.283927783333333
+        },
+        {
+            "name": "GUPEX",
+            "lat": 11.721658333333334,
+            "lon": 12.9375
+        },
+        {
+            "name": "LUDSA",
+            "lat": 12.04655,
+            "lon": 13.287527783333333
+        },
+        {
+            "name": "MA460",
+            "lat": 11.931769433333333,
+            "lon": 13.163733333333333
+        },
+        {
+            "name": "MA500",
+            "lat": 11.779097216666667,
+            "lon": 12.999297216666667
+        },
+        {
+            "name": "NEBNO",
+            "lat": 11.989166666666666,
+            "lon": 13.225616666666667
+        },
+        {
+            "name": "SERIP",
+            "lat": 11.788525,
+            "lon": 13.009452783333334
+        },
+        {
+            "name": "UDSUS",
+            "lat": 12.050069433333332,
+            "lon": 13.167280566666667
+        },
+        {
+            "name": "XIXAG",
+            "lat": 11.782566666666666,
+            "lon": 12.879225
+        },
+        {
+            "name": "XUNUX",
+            "lat": 11.664205566666666,
+            "lon": 12.875727783333334
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "SERIP": "SERIP 2800 RNW 05 HDG 045 UNTIL 2000 TURN LEFT DIRECT SERIP HOLD AT SERIP LEFT TURN INBOUNDCOURSE 045 ALT 3000 LEGTIME 1 FAF SERIP MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "SERIP",
+                    "fixes": {
+                        "SERIP": "SERIP LEFT TURN INBOUNDCOURSE 045 ALT 2800 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "AGTIN": "AGTIN 2800 RNW 23 HDG 225 UNTIL 2000 TURN RIGHT DIRECT AGTIN HOLD AT AGTIN RIGHT TURN INBOUNDCOURSE 225 ALT 3000 LEGTIME 1 FAF AGTIN MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "AGTIN",
+                    "fixes": {
+                        "AGTIN": "AGTIN RIGHT TURN INBOUNDCOURSE 225 ALT 2800 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS05",
+            "fixes": {
+                "CI05": "CI05 AT OR ABOVE 2800",
+                "SERIP": "SERIP 2800 RNW 05 HDG 045 UNTIL 2000 TURN LEFT DIRECT SERIP HOLD AT SERIP LEFT TURN INBOUNDCOURSE 045 ALT 3000 LEGTIME 1 FAF SERIP MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "SERIP",
+                    "fixes": {
+                        "SERIP": "SERIP LEFT TURN INBOUNDCOURSE 045 ALT 2800 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "GUPEX": "GUPEX 3000 SPEED 200",
+                "MA500": "MA500 3000 RNW 05 TRK 045 UNTIL 2000 TURN LEFT DIRECT",
+                "XIXAG": "XIXAG AT OR ABOVE 3000 HOLD AT XIXAG RIGHT TURN INBOUNDCOURSE 135 ALT 3000 SPEED 230 LEGTIME 1 FAF MA500 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "BUBRU",
+                    "fixes": {
+                        "BUBRU": "BUBRU"
+                    }
+                },
+                {
+                    "name": "XIXAG",
+                    "fixes": {
+                        "XIXAG": "XIXAG"
+                    }
+                },
+                {
+                    "name": "XUNUX",
+                    "fixes": {
+                        "XUNUX": "XUNUX"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "NEBNO": "NEBNO 3000 SPEED 200",
+                "MA460": "MA460 3000 RNW 23 TRK 225 UNTIL 2000 TURN RIGHT DIRECT",
+                "UDSUS": "UDSUS AT OR ABOVE 3000 HOLD AT UDSUS LEFT TURN INBOUNDCOURSE 135 ALT 3000 SPEED 230 LEGTIME 1 FAF MA460 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "GAKMU",
+                    "fixes": {
+                        "GAKMU": "GAKMU"
+                    }
+                },
+                {
+                    "name": "LUDSA",
+                    "fixes": {
+                        "LUDSA": "LUDSA"
+                    }
+                },
+                {
+                    "name": "UDSUS",
+                    "fixes": {
+                        "UDSUS": "UDSUS"
+                    }
+                }
+            ]
+        }
+    ]
+}

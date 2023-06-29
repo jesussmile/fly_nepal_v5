@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "KOPUG",
+            "lat": 50.19532221666667,
+            "lon": 11.176522216666667
+        },
+        {
+            "name": "LASGA",
+            "lat": 50.36058611666667,
+            "lon": 11.228075
+        },
+        {
+            "name": "LONLI",
+            "lat": 50.07473888333333,
+            "lon": 11.226386116666667
+        },
+        {
+            "name": "QC001",
+            "lat": 50.200691666666664,
+            "lon": 11.162116666666666
+        },
+        {
+            "name": "QC002",
+            "lat": 50.217019433333334,
+            "lon": 11.210786116666666
+        },
+        {
+            "name": "QC003",
+            "lat": 50.17021943333334,
+            "lon": 11.243783333333333
+        },
+        {
+            "name": "QC010",
+            "lat": 50.31425556666667,
+            "lon": 10.855419433333333
+        },
+        {
+            "name": "QC011",
+            "lat": 50.293075,
+            "lon": 10.797280566666666
+        },
+        {
+            "name": "QC012",
+            "lat": 50.166925,
+            "lon": 10.795202783333334
+        },
+        {
+            "name": "QC013",
+            "lat": 50.36066666666667,
+            "lon": 10.874505566666667
+        },
+        {
+            "name": "QC020",
+            "lat": 50.227066666666666,
+            "lon": 11.364561116666668
+        },
+        {
+            "name": "QC021",
+            "lat": 50.150922216666665,
+            "lon": 11.295361116666667
+        },
+        {
+            "name": "QC023",
+            "lat": 50.30595556666667,
+            "lon": 10.877961116666667
+        },
+        {
+            "name": "QC024",
+            "lat": 50.28574166666667,
+            "lon": 10.823116666666667
+        },
+        {
+            "name": "QC025",
+            "lat": 50.16105556666667,
+            "lon": 10.822936116666666
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "LASG1W",
+            "rnw": "30",
+            "fixes": {
+                "QC010": "OVERFLY QC010 3000 TURN RIGHT DIRECT",
+                "QC013": "QC013",
+                "LASGA": "LASGA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LASG3E",
+            "rnw": "12",
+            "fixes": {
+                "QC001": "OVERFLY QC001 TURN LEFT DIRECT",
+                "QC002": "QC002",
+                "LASGA": "LASGA"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LONL3W",
+            "rnw": "30",
+            "fixes": {
+                "QC010": "OVERFLY QC010 3000 TURN LEFT DIRECT",
+                "QC011": "QC011",
+                "QC012": "QC012",
+                "LONLI": "LONLI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LONL4E",
+            "rnw": "12",
+            "fixes": {
+                "QC003": "QC003",
+                "LONLI": "LONLI 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "QC021": "QC021 AT OR ABOVE 5000",
+                "KOPUG": "KOPUG 4000 RNW 30",
+                "QC023": "OVERFLY QC023 TRK 298 UNTIL 3000 TURN LEFT DIRECT",
+                "QC024": "QC024",
+                "QC025": "QC025",
+                "LONLI": "LONLI 5000 FAF KOPUG MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "LASGA",
+                    "fixes": {
+                        "LASGA": "LASGA AT OR ABOVE 6000",
+                        "QC020": "QC020 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "LONLI",
+                    "fixes": {
+                        "LONLI": "LONLI AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

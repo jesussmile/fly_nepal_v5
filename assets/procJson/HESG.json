@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "CD15",
+            "lat": 26.504666666666665,
+            "lon": 31.634616666666666
+        },
+        {
+            "name": "CD33",
+            "lat": 26.187652783333334,
+            "lon": 31.841472216666666
+        },
+        {
+            "name": "FD15",
+            "lat": 26.427319433333334,
+            "lon": 31.686316666666666
+        },
+        {
+            "name": "FD33",
+            "lat": 26.254272216666667,
+            "lon": 31.798897216666667
+        },
+        {
+            "name": "RW33",
+            "lat": 26.331111116666666,
+            "lon": 31.750555566666666
+        },
+        {
+            "name": "SHG",
+            "lat": 26.361416666666667,
+            "lon": 31.730305566666665
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD15",
+            "fixes": {
+                "CD15": "CD15 2500",
+                "FD15": "FD15 2000",
+                "SHG": "SHG 500 RNW 15 TRK 145 UNTIL 1800 TURN LEFT DIRECT SHG 3000 HOLD AT SHG LEFT TURN INBOUNDCOURSE 325 LEGTIME 1 FAF FD15 MAP SHG"
+            },
+            "transitions": [
+                {
+                    "name": "SHG1",
+                    "fixes": {
+                        "SHG": "SHG AT OR ABOVE 4000 TRK 347 UNTIL 10.0 FROM SHG"
+                    }
+                },
+                {
+                    "name": "SHG2",
+                    "fixes": {
+                        "SHG": "SHG AT OR ABOVE 4000 TRK 337 UNTIL 10.0 FROM SHG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD33",
+            "fixes": {
+                "CD33": "CD33 2500",
+                "FD33": "FD33 2000 RNW 33 TRK 326 UNTIL 1800 TURN RIGHT DIRECT",
+                "SHG": "SHG 3000 HOLD AT SHG RIGHT TURN INBOUNDCOURSE 146 LEGTIME 1 FAF FD33 MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "SHG1",
+                    "fixes": {
+                        "SHG": "SHG AT OR ABOVE 4000 TRK 123 UNTIL 12.0 FROM SHG"
+                    }
+                },
+                {
+                    "name": "SHG2",
+                    "fixes": {
+                        "SHG": "SHG AT OR ABOVE 4000 TRK 133 UNTIL 12.0 FROM SHG"
+                    }
+                }
+            ]
+        }
+    ]
+}

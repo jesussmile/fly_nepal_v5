@@ -1,0 +1,106 @@
+{
+    "fixes": [
+        {
+            "name": "APODD",
+            "lat": 39.3941,
+            "lon": 85.58873611666667
+        },
+        {
+            "name": "HUMIG",
+            "lat": 39.2428,
+            "lon": 85.540575
+        },
+        {
+            "name": "JAREL",
+            "lat": 39.50013611666667,
+            "lon": 85.69323888333334
+        },
+        {
+            "name": "LOVEY",
+            "lat": 39.21354721666667,
+            "lon": 85.40862221666667
+        },
+        {
+            "name": "MA142",
+            "lat": 39.330427783333334,
+            "lon": 85.52618056666667
+        },
+        {
+            "name": "PULIC",
+            "lat": 39.146352783333334,
+            "lon": 85.7359
+        },
+        {
+            "name": "SHB",
+            "lat": 39.63254166666667,
+            "lon": 85.82431666666666
+        },
+        {
+            "name": "ZIGDO",
+            "lat": 39.159452783333336,
+            "lon": 85.61565556666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ZIGDO": "ZIGDO AT OR ABOVE 2500 OVERFLY ZIGDO AT OR ABOVE 2500 HOLD AT ZIGDO LEFT TURN INBOUNDCOURSE 039 LEGDIST 5 FAF HUMIG MAP RNW 36",
+                "HUMIG": "HUMIG 2500 RNW 36 TRK 014 UNTIL 1312 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LOVEY",
+                    "fixes": {
+                        "LOVEY": "LOVEY",
+                        "ZIGDO": "ZIGDO AT OR ABOVE 2500 HOLD AT ZIGDO LEFT TURN INBOUNDCOURSE 039 ALT 2500 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "PULIC",
+                    "fixes": {
+                        "PULIC": "PULIC"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "JAREL": "JAREL AT OR ABOVE 2700",
+                "APODD": "APODD 2700 APODD AT OR ABOVE 2700 HOLD AT APODD RIGHT TURN INBOUNDCOURSE 142 LEGTIME 1 FAF APODD MAP MA142",
+                "MA142": "MA142 1680 RNW 18 TRK 142 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SHB",
+                    "fixes": {
+                        "SHB": "SHB AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "JAREL": "JAREL AT OR ABOVE 2700",
+                "APODD": "APODD 2700 APODD AT OR ABOVE 2700 HOLD AT APODD RIGHT TURN INBOUNDCOURSE 142 LEGTIME 1 FAF APODD MAP MA142",
+                "MA142": "MA142 1680 RNW 36 TRK 142 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SHB",
+                    "fixes": {
+                        "SHB": "SHB AT OR ABOVE 2700"
+                    }
+                }
+            ]
+        }
+    ]
+}

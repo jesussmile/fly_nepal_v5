@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "BOYAS",
+            "lat": 32.25440556666667,
+            "lon": 90.32153888333333
+        },
+        {
+            "name": "CIGDA",
+            "lat": 32.433388883333336,
+            "lon": 90.64051111666667
+        },
+        {
+            "name": "DASLE",
+            "lat": 32.19073888333333,
+            "lon": 90.20869443333333
+        },
+        {
+            "name": "ECELE",
+            "lat": 32.35531388333333,
+            "lon": 90.50105
+        },
+        {
+            "name": "FIVSO",
+            "lat": 32.32431666666667,
+            "lon": 90.44583611666667
+        },
+        {
+            "name": "HEDUD",
+            "lat": 32.46261943333333,
+            "lon": 90.69285833333333
+        },
+        {
+            "name": "MHZ",
+            "lat": 32.434069433333335,
+            "lon": 90.09977221666666
+        },
+        {
+            "name": "RAYRO",
+            "lat": 32.27540833333333,
+            "lon": 90.35883611666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS12",
+            "fixes": {
+                "CIGDA": "CIGDA AT OR ABOVE 2900 CIGDA CIGDA AT OR ABOVE 2900 HOLD AT CIGDA RIGHT TURN INBOUNDCOURSE 124 LEGTIME 1 FAF ECELE MAP RNW 12",
+                "ECELE": "ECELE 1900 RNW 12 TRK 124 UNTIL 800 TURN LEFT HDG 316 INTERCEPT RADIAL 271 TO"
+            },
+            "transitions": [
+                {
+                    "name": "HEDUD",
+                    "fixes": {
+                        "HEDUD": "HEDUD"
+                    }
+                },
+                {
+                    "name": "MHZ",
+                    "fixes": {
+                        "MHZ": "MHZ",
+                        "CIGDA": "CIGDA AT OR ABOVE 2900 HOLD AT CIGDA RIGHT TURN INBOUNDCOURSE 124 ALT 2900 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "CIGDA": "CIGDA AT OR ABOVE 2900 OVERFLY CIGDA AT OR ABOVE 2900 HOLD AT CIGDA RIGHT TURN INBOUNDCOURSE 123 LEGDIST 4 FAF ECELE MAP RNW 12",
+                "ECELE": "ECELE 1900",
+                "FIVSO": "FIVSO AT OR ABOVE 820 RNW 12 TRK 123 UNTIL 800 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CIGDA",
+                    "fixes": {
+                        "CIGDA": "CIGDA RIGHT TURN INBOUNDCOURSE 123 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "DASLE": "DASLE AT OR ABOVE 3000",
+                "BOYAS": "BOYAS 1900",
+                "RAYRO": "RAYRO AT OR ABOVE 1140 RNW 30 TRK 304 UNTIL 513",
+                "CIGDA": "OVERFLY CIGDA AT OR ABOVE 2900 HOLD AT CIGDA RIGHT TURN INBOUNDCOURSE 123 LEGDIST 4 FAF BOYAS MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "DASLE",
+                    "fixes": {
+                        "DASLE": "DASLE RIGHT TURN INBOUNDCOURSE 304 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

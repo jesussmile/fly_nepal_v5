@@ -1,0 +1,93 @@
+{
+    "fixes": [
+        {
+            "name": "GOFER",
+            "lat": 38.418844433333334,
+            "lon": 76.27925
+        },
+        {
+            "name": "GRACO",
+            "lat": 38.94161388333333,
+            "lon": 76.19978333333333
+        },
+        {
+            "name": "OVAYO",
+            "lat": 38.695483333333335,
+            "lon": 76.17625
+        },
+        {
+            "name": "PROFS",
+            "lat": 38.38331388333334,
+            "lon": 75.88550556666667
+        },
+        {
+            "name": "SBY",
+            "lat": 38.345005566666664,
+            "lon": 75.510575
+        },
+        {
+            "name": "WUGUM",
+            "lat": 38.465527783333336,
+            "lon": 75.96176111666666
+        },
+        {
+            "name": "ZADEP",
+            "lat": 38.60352221666667,
+            "lon": 76.09026111666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA16",
+            "fixes": {
+                "OVAYO": "OVAYO AT OR ABOVE 2000",
+                "ZADEP": "ZADEP 1700 RNW 16 TRK 154 UNTIL 420",
+                "PROFS": "OVERFLY PROFS AT OR ABOVE 2000 HOLD AT PROFS RIGHT TURN INBOUNDCOURSE 334 LEGDIST 4 FAF ZADEP MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "GOFER",
+                    "fixes": {
+                        "GOFER": "GOFER",
+                        "OVAYO": "OVERFLY OVAYO AT OR ABOVE 2000 HOLD AT OVAYO RIGHT TURN INBOUNDCOURSE 154 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GRACO",
+                    "fixes": {
+                        "GRACO": "GRACO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "PROFS": "PROFS AT OR ABOVE 2000",
+                "WUGUM": "WUGUM 1700 RNW 34 TRK 334 UNTIL 286",
+                "OVAYO": "OVERFLY OVAYO AT OR ABOVE 2000 HOLD AT OVAYO RIGHT TURN INBOUNDCOURSE 154 LEGDIST 4 FAF WUGUM MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "GOFER",
+                    "fixes": {
+                        "GOFER": "GOFER",
+                        "PROFS": "OVERFLY PROFS AT OR ABOVE 2000 HOLD AT PROFS RIGHT TURN INBOUNDCOURSE 334 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SBY",
+                    "fixes": {
+                        "SBY": "SBY"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "fixes": [
+        {
+            "name": "BGQ",
+            "lat": 61.569433333333336,
+            "lon": 149.96715833333334
+        },
+        {
+            "name": "DIYAV",
+            "lat": 61.5345,
+            "lon": 149.60856111666666
+        },
+        {
+            "name": "HEVEB",
+            "lat": 61.548397216666665,
+            "lon": 150.33532778333333
+        },
+        {
+            "name": "ICARU",
+            "lat": 61.53585833333333,
+            "lon": 150.21653611666667
+        },
+        {
+            "name": "JEBIP",
+            "lat": 61.53457778333333,
+            "lon": 150.00531111666666
+        },
+        {
+            "name": "LEFFI",
+            "lat": 61.549644433333334,
+            "lon": 149.38895
+        },
+        {
+            "name": "MUDIE",
+            "lat": 61.42126111666666,
+            "lon": 150.38358888333335
+        },
+        {
+            "name": "PI001",
+            "lat": 61.59029028333333,
+            "lon": 150.08162226666667
+        },
+        {
+            "name": "PI002",
+            "lat": 61.561071749999996,
+            "lon": 150.21910193333332
+        },
+        {
+            "name": "PI003",
+            "lat": 61.62877025,
+            "lon": 150.29460596666667
+        },
+        {
+            "name": "TAGER",
+            "lat": 61.67294166666667,
+            "lon": 150.46040556666668
+        },
+        {
+            "name": "TED",
+            "lat": 61.16786666666667,
+            "lon": 149.96014443333334
+        },
+        {
+            "name": "WINTS",
+            "lat": 61.53563056666667,
+            "lon": 149.81878611666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "ICARU": "ICARU AT OR ABOVE 2000 OVERFLY ICARU AT OR ABOVE 2000 HOLD AT ICARU RIGHT TURN INBOUNDCOURSE 076 LEGDIST 4 FAF JEBIP MAP RNW 07",
+                "JEBIP": "JEBIP 1900 RNW 07 TRK 075 UNTIL 562 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BGQ",
+                    "fixes": {
+                        "BGQ": "BGQ",
+                        "ICARU": "OVERFLY ICARU AT OR ABOVE 2000 HOLD AT ICARU RIGHT TURN INBOUNDCOURSE 076 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TAGER",
+                    "fixes": {
+                        "TAGER": "TAGER"
+                    }
+                },
+                {
+                    "name": "TED",
+                    "fixes": {
+                        "TED": "TED",
+                        "MUDIE": "MUDIE AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "LEFFI": "LEFFI AT OR ABOVE 4000",
+                "DIYAV": "DIYAV 2000 RNW 25 TRK 255 UNTIL 562",
+                "JEBIP": "JEBIP",
+                "HEVEB": "OVERFLY HEVEB AT OR ABOVE 3000 HOLD AT HEVEB RIGHT TURN INBOUNDCOURSE 139 LEGDIST 4 FAF DIYAV MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "BGQ",
+                    "fixes": {
+                        "BGQ": "BGQ",
+                        "LEFFI": "OVERFLY LEFFI AT OR ABOVE 4000 HOLD AT LEFFI RIGHT TURN INBOUNDCOURSE 247 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR07",
+            "fixes": {
+                "BGQ": "BGQ 1700 BGQ AT OR ABOVE 2000 HOLD AT BGQ LEFT TURN INBOUNDCOURSE 356 ALT 2000 LEGTIME 1 FAF BGQ MAP WINTS",
+                "WINTS": "WINTS 203 RNW 07 TRK 096 UNTIL 570 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BGQ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

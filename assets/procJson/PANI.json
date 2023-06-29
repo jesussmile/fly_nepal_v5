@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "ANINB",
+            "lat": 61.59015556666667,
+            "lon": 159.59789166666667
+        },
+        {
+            "name": "ANORE",
+            "lat": 61.627513883333336,
+            "lon": 159.70570556666667
+        },
+        {
+            "name": "APWIS",
+            "lat": 61.48162778333333,
+            "lon": 159.20202221666668
+        },
+        {
+            "name": "CALIL",
+            "lat": 61.613577783333334,
+            "lon": 159.65710833333333
+        },
+        {
+            "name": "CERGU",
+            "lat": 61.32273611666667,
+            "lon": 159.19122221666666
+        },
+        {
+            "name": "CUKFA",
+            "lat": 61.68288056666667,
+            "lon": 160.26012778333333
+        },
+        {
+            "name": "EBSIH",
+            "lat": 61.50633333333333,
+            "lon": 158.85205
+        },
+        {
+            "name": "HAFRU",
+            "lat": 61.53557778333333,
+            "lon": 159.38699166666666
+        },
+        {
+            "name": "IKUFU",
+            "lat": 61.67625833333334,
+            "lon": 159.87650833333333
+        },
+        {
+            "name": "NUBDY",
+            "lat": 61.804513883333335,
+            "lon": 159.71423611666665
+        },
+        {
+            "name": "ZEVOD",
+            "lat": 61.547808333333336,
+            "lon": 160.03743888333332
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS11",
+            "fixes": {
+                "IKUFU": "IKUFU AT OR ABOVE 3500",
+                "ANORE": "ANORE 1700 RNW 11 TRK 109 UNTIL 1500 TURN RIGHT DIRECT",
+                "ANINB": "ANINB AT OR ABOVE 3500 HOLD AT ANINB RIGHT TURN INBOUNDCOURSE 039 ALT 3500 LEGTIME 1 FAF ANORE MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "ANI",
+                    "fixes": {
+                        "ANINB": "ANINB",
+                        "IKUFU": "IKUFU AT OR ABOVE 3500 HOLD AT IKUFU LEFT TURN INBOUNDCOURSE 109 ALT 3500 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "CUKFA",
+                    "fixes": {
+                        "CUKFA": "CUKFA HDG 064 INTERCEPT RADIAL 109 TO",
+                        "IKUFU": "IKUFU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "IKUFU": "IKUFU AT OR ABOVE 3500 OVERFLY IKUFU AT OR ABOVE 3500 HOLD AT IKUFU LEFT TURN INBOUNDCOURSE 109 ALT 3500 LEGDIST 4 FAF ANORE MAP RNW 11",
+                "ANORE": "ANORE 1700",
+                "CALIL": "CALIL AT OR ABOVE 1160 RNW 11 TRK 109 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "IKUFU",
+                    "fixes": {
+                        "IKUFU": "IKUFU LEFT TURN INBOUNDCOURSE 109 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NUBDY",
+                    "fixes": {
+                        "NUBDY": "NUBDY"
+                    }
+                },
+                {
+                    "name": "ZEVOD",
+                    "fixes": {
+                        "ZEVOD": "ZEVOD"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "APWIS": "APWIS AT OR ABOVE 3500 OVERFLY APWIS AT OR ABOVE 3500 HOLD AT APWIS RIGHT TURN INBOUNDCOURSE 289 LEGDIST 4 FAF HAFRU MAP RNW 29",
+                "HAFRU": "HAFRU 1700 RNW 29 TRK 289 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ANI",
+                    "fixes": {
+                        "ANINB": "ANINB",
+                        "APWIS": "OVERFLY APWIS AT OR ABOVE 3500 HOLD AT APWIS RIGHT TURN INBOUNDCOURSE 289 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CERGU",
+                    "fixes": {
+                        "CERGU": "CERGU"
+                    }
+                },
+                {
+                    "name": "EBSIH",
+                    "fixes": {
+                        "EBSIH": "EBSIH"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "BR420",
+            "lat": 43.37252778333333,
+            "lon": 1.2107777833333333
+        },
+        {
+            "name": "D227N",
+            "lat": 43.52219443333333,
+            "lon": 1.0680833333333333
+        },
+        {
+            "name": "FBR12",
+            "lat": 43.48938888333333,
+            "lon": 1.1538333333333333
+        },
+        {
+            "name": "FN12",
+            "lat": 43.490194433333336,
+            "lon": 1.1538055666666667
+        },
+        {
+            "name": "LMB",
+            "lat": 43.46666666666667,
+            "lon": 0.018416666666666668
+        },
+        {
+            "name": "MN12",
+            "lat": 43.45708333333334,
+            "lon": 1.2427222166666667
+        },
+        {
+            "name": "MUTNB",
+            "lat": 43.47980556666667,
+            "lon": 1.1815555666666666
+        },
+        {
+            "name": "SULIT",
+            "lat": 43.38369443333333,
+            "lon": 1.2525555666666666
+        },
+        {
+            "name": "SURAS",
+            "lat": 43.64244443333333,
+            "lon": 1.0628333333333333
+        },
+        {
+            "name": "SURUD",
+            "lat": 43.45430556666667,
+            "lon": 0.9792222166666666
+        },
+        {
+            "name": "TWNB",
+            "lat": 43.53061111666667,
+            "lon": 1.0252777833333333
+        },
+        {
+            "name": "XUREX",
+            "lat": 43.53511111666667,
+            "lon": 1.0284166666666668
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 12R",
+        "RNW 30",
+        "RNW 30L"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB12",
+            "fixes": {
+                "FN12": "FN12 2500",
+                "MUTNB": "MUTNB AT OR ABOVE 2000 MUTNB 2500 FAF FN12 MAP MN12",
+                "MN12": "MN12 932 RNW 12 TRK 116 UNTIL 1030 TRK 236 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LMB",
+                    "fixes": {
+                        "LMB": "LMB",
+                        "MUTNB": "MUTNB HOLD AT MUTNB RIGHT TURN INBOUNDCOURSE 116 ALT 2500 SPEED 150 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SULIT",
+                    "fixes": {
+                        "SULIT": "SULIT",
+                        "MUTNB": "MUTNB HOLD AT MUTNB RIGHT TURN INBOUNDCOURSE 116 ALT 2500 SPEED 150 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "SURAS",
+                    "fixes": {
+                        "SURAS": "SURAS",
+                        "MUTNB": "MUTNB HOLD AT MUTNB RIGHT TURN INBOUNDCOURSE 116 ALT 2500 SPEED 150 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TW",
+                    "fixes": {
+                        "TWNB": "TWNB AT OR ABOVE 2500",
+                        "D227N": "D227N AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "FBR12": "FBR12 2500 RNW 12 TURN RIGHT DIRECT",
+                "BR420": "BR420",
+                "SURUD": "SURUD AT OR ABOVE 2500",
+                "XUREX": "XUREX AT OR ABOVE 2500 FAF FBR12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "SURUD",
+                    "fixes": {
+                        "SURUD": "SURUD AT OR ABOVE 3500",
+                        "XUREX": "XUREX AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "XUREX",
+                    "fixes": {
+                        "XUREX": "XUREX AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "fixes": [
+        {
+            "name": "CC402",
+            "lat": 44.540166666666664,
+            "lon": 1.3304444333333334
+        },
+        {
+            "name": "CC404",
+            "lat": 44.409166666666664,
+            "lon": 1.1865555666666667
+        },
+        {
+            "name": "CC410",
+            "lat": 44.33563888333333,
+            "lon": 1.5049166666666667
+        },
+        {
+            "name": "CC412",
+            "lat": 44.46480556666667,
+            "lon": 1.4853333333333334
+        },
+        {
+            "name": "FCC13",
+            "lat": 44.423194433333336,
+            "lon": 1.3499444333333335
+        },
+        {
+            "name": "ICC13",
+            "lat": 44.474638883333334,
+            "lon": 1.2584444333333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "ICC13": "ICC13 AT OR ABOVE 3000 SPEED 200",
+                "FCC13": "FCC13 3000 RNW 13",
+                "CC410": "OVERFLY CC410 TURN LEFT DIRECT",
+                "CC412": "CC412 SPEED 180",
+                "CC402": "CC402 AT OR ABOVE 3000 SPEED 200 FAF FCC13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "CC402",
+                    "fixes": {
+                        "CC402": "CC402 AT OR ABOVE 3000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "CC404",
+                    "fixes": {
+                        "CC404": "CC404 AT OR ABOVE 3000 SPEED 200"
+                    }
+                },
+                {
+                    "name": "ICC13",
+                    "fixes": {
+                        "ICC13": "ICC13 LEFT TURN INBOUNDCOURSE 162 ALT 3000 SPEED 200 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

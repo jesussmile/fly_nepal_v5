@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "CETVI",
+            "lat": 42.81388056666667,
+            "lon": 93.82704721666667
+        },
+        {
+            "name": "EGIRE",
+            "lat": 42.6681,
+            "lon": 93.69222778333334
+        },
+        {
+            "name": "FEGNU",
+            "lat": 42.583975,
+            "lon": 93.61477778333334
+        },
+        {
+            "name": "HAKDU",
+            "lat": 42.897072216666665,
+            "lon": 93.90432221666667
+        },
+        {
+            "name": "HAXIP",
+            "lat": 42.630766666666666,
+            "lon": 93.52138611666666
+        },
+        {
+            "name": "JAMRU",
+            "lat": 42.76643056666666,
+            "lon": 93.78308333333334
+        },
+        {
+            "name": "JANEV",
+            "lat": 42.53710556666667,
+            "lon": 93.70802778333334
+        },
+        {
+            "name": "MOSGE",
+            "lat": 42.713138883333336,
+            "lon": 93.73379721666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "HAKDU": "HAKDU AT OR ABOVE 3000",
+                "CETVI": "CETVI 2800",
+                "JAMRU": "JAMRU AT OR ABOVE 1700 RNW 14 TRK 143 UNTIL 1405",
+                "FEGNU": "OVERFLY FEGNU AT OR ABOVE 3000 HOLD AT FEGNU RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4 FAF CETVI MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "HAKDU",
+                    "fixes": {
+                        "HAKDU": "HAKDU RIGHT TURN INBOUNDCOURSE 143 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "FEGNU": "FEGNU AT OR ABOVE 3000",
+                "EGIRE": "EGIRE 2800",
+                "MOSGE": "MOSGE AT OR ABOVE 1740 RNW 32",
+                "HAKDU": "OVERFLY HAKDU AT OR ABOVE 3000 HOLD AT HAKDU RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4 FAF EGIRE MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "FEGNU",
+                    "fixes": {
+                        "FEGNU": "FEGNU RIGHT TURN INBOUNDCOURSE 323 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "HAXIP",
+                    "fixes": {
+                        "HAXIP": "HAXIP AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "JANEV",
+                    "fixes": {
+                        "JANEV": "JANEV AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

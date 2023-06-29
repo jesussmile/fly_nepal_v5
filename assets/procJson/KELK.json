@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "ASAZE",
+            "lat": 35.2386,
+            "lon": 99.39480833333333
+        },
+        {
+            "name": "BFV",
+            "lat": 35.236944433333335,
+            "lon": 99.20616666666666
+        },
+        {
+            "name": "EHOMO",
+            "lat": 35.61880278333334,
+            "lon": 99.39375556666667
+        },
+        {
+            "name": "PETDO",
+            "lat": 35.34079166666667,
+            "lon": 99.39452778333333
+        },
+        {
+            "name": "ROLLS",
+            "lat": 35.72274443333333,
+            "lon": 99.47069721666666
+        },
+        {
+            "name": "VOLSE",
+            "lat": 35.51865,
+            "lon": 99.39403333333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "EHOMO": "EHOMO AT OR ABOVE 4000",
+                "VOLSE": "VOLSE 3600 RNW 17 TRK 174 UNTIL 2263",
+                "ASAZE": "OVERFLY ASAZE AT OR ABOVE 4000 HOLD AT ASAZE RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4 FAF VOLSE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BFV",
+                    "fixes": {
+                        "BFV": "BFV",
+                        "EHOMO": "OVERFLY EHOMO AT OR ABOVE 4000 HOLD AT EHOMO RIGHT TURN INBOUNDCOURSE 174 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ROLLS",
+                    "fixes": {
+                        "ROLLS": "ROLLS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ASAZE": "ASAZE AT OR ABOVE 4000",
+                "PETDO": "PETDO 3600 RNW 35 TRK 354 UNTIL 2234",
+                "EHOMO": "OVERFLY EHOMO AT OR ABOVE 4000 HOLD AT EHOMO RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4 FAF PETDO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "ASAZE",
+                    "fixes": {
+                        "ASAZE": "ASAZE RIGHT TURN INBOUNDCOURSE 354 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

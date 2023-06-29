@@ -1,0 +1,110 @@
+{
+    "fixes": [
+        {
+            "name": "CEMAP",
+            "lat": 39.88186388333333,
+            "lon": 102.68342778333333
+        },
+        {
+            "name": "GNARR",
+            "lat": 40.014541666666666,
+            "lon": 102.70190278333334
+        },
+        {
+            "name": "HUNCH",
+            "lat": 40.19498611666667,
+            "lon": 102.72714166666667
+        },
+        {
+            "name": "OUNCE",
+            "lat": 39.899419433333335,
+            "lon": 102.4681
+        },
+        {
+            "name": "PATNE",
+            "lat": 40.32765,
+            "lon": 102.74578333333334
+        },
+        {
+            "name": "RASPS",
+            "lat": 39.863911116666664,
+            "lon": 102.89864721666666
+        },
+        {
+            "name": "SYLIS",
+            "lat": 40.34531666666667,
+            "lon": 102.52905833333334
+        },
+        {
+            "name": "ZAROT",
+            "lat": 40.30957778333333,
+            "lon": 102.96239443333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 16",
+        "RNW 30",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "PATNE": "PATNE AT OR ABOVE 7000",
+                "HUNCH": "HUNCH 5800 RNW 16 TRK 167 UNTIL 4382",
+                "CEMAP": "OVERFLY CEMAP AT OR ABOVE 7000 HOLD AT CEMAP RIGHT TURN INBOUNDCOURSE 347 LEGDIST 7 FAF HUNCH MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "PATNE",
+                    "fixes": {
+                        "PATNE": "PATNE RIGHT TURN INBOUNDCOURSE 167 ALT 7000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "SYLIS",
+                    "fixes": {
+                        "SYLIS": "SYLIS"
+                    }
+                },
+                {
+                    "name": "ZAROT",
+                    "fixes": {
+                        "ZAROT": "ZAROT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "CEMAP": "CEMAP AT OR ABOVE 7000",
+                "GNARR": "GNARR 5800 RNW 34 TRK 347 UNTIL 4333",
+                "PATNE": "OVERFLY PATNE AT OR ABOVE 7000 HOLD AT PATNE RIGHT TURN INBOUNDCOURSE 167 LEGDIST 7 FAF GNARR MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "CEMAP",
+                    "fixes": {
+                        "CEMAP": "CEMAP RIGHT TURN INBOUNDCOURSE 347 ALT 7000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "OUNCE",
+                    "fixes": {
+                        "OUNCE": "OUNCE"
+                    }
+                },
+                {
+                    "name": "RASPS",
+                    "fixes": {
+                        "RASPS": "RASPS"
+                    }
+                }
+            ]
+        }
+    ]
+}

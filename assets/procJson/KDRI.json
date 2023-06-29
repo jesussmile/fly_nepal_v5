@@ -1,0 +1,195 @@
+{
+    "fixes": [
+        {
+            "name": "APPIN",
+            "lat": 31.211113883333333,
+            "lon": 93.68299443333333
+        },
+        {
+            "name": "CF36",
+            "lat": 30.68525,
+            "lon": 93.33600833333334
+        },
+        {
+            "name": "COCOS",
+            "lat": 31.228530566666667,
+            "lon": 93.26475278333334
+        },
+        {
+            "name": "CONON",
+            "lat": 30.643325,
+            "lon": 93.33552221666666
+        },
+        {
+            "name": "COSGO",
+            "lat": 31.220933333333335,
+            "lon": 93.45259721666666
+        },
+        {
+            "name": "DXBNB",
+            "lat": 30.752136116666666,
+            "lon": 93.33471943333333
+        },
+        {
+            "name": "FANIK",
+            "lat": 30.642444433333335,
+            "lon": 93.43211666666667
+        },
+        {
+            "name": "GLYND",
+            "lat": 31.020858333333333,
+            "lon": 93.43693888333334
+        },
+        {
+            "name": "HYPPS",
+            "lat": 30.7471,
+            "lon": 93.33673611666667
+        },
+        {
+            "name": "LCH",
+            "lat": 30.14151388333333,
+            "lon": 93.10556943333333
+        },
+        {
+            "name": "LOUDR",
+            "lat": 31.021738883333335,
+            "lon": 93.33996388333334
+        },
+        {
+            "name": "MOKLE",
+            "lat": 30.644133333333333,
+            "lon": 93.238925
+        },
+        {
+            "name": "OFERS",
+            "lat": 30.160597216666666,
+            "lon": 93.64930278333334
+        },
+        {
+            "name": "TRAEN",
+            "lat": 30.918680566666666,
+            "lon": 93.33875
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 18",
+        "RNW 32",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC36",
+            "fixes": {
+                "CF36": "CF36 AT OR ABOVE 1700",
+                "DXBNB": "DXBNB 1700 RNW 36 TRK 355 UNTIL 1000 TURN LEFT DIRECT DXBNB AT OR ABOVE 1700 HOLD AT DXBNB RIGHT TURN INBOUNDCOURSE 355 LEGTIME 1 FAF DXBNB MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "COSGO",
+                    "fixes": {
+                        "COSGO": "COSGO",
+                        "DXBNB": "DXBNB AT OR ABOVE 2000 HOLD AT DXBNB RIGHT TURN INBOUNDCOURSE 355 ALT 1700 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LCH",
+                    "fixes": {
+                        "LCH": "LCH",
+                        "DXBNB": "DXBNB AT OR ABOVE 1700 HOLD AT DXBNB RIGHT TURN INBOUNDCOURSE 355 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB36",
+            "fixes": {
+                "DXBNB": "DXBNB 1700 RNW 36 TRK 354 UNTIL 1000 TURN LEFT DIRECT DXBNB AT OR ABOVE 1700 HOLD AT DXBNB RIGHT TURN INBOUNDCOURSE 354 LEGTIME 1 FAF DXBNB MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "COSGO",
+                    "fixes": {
+                        "COSGO": "COSGO",
+                        "DXBNB": "DXBNB AT OR ABOVE 2000 HOLD AT DXBNB RIGHT TURN INBOUNDCOURSE 354 ALT 1700 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LCH",
+                    "fixes": {
+                        "LCH": "LCH",
+                        "DXBNB": "DXBNB AT OR ABOVE 1700 HOLD AT DXBNB RIGHT TURN INBOUNDCOURSE 354 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "LOUDR": "LOUDR AT OR ABOVE 1900",
+                "TRAEN": "TRAEN 1800 RNW 18",
+                "CONON": "OVERFLY CONON AT OR ABOVE 1700 HOLD AT CONON RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF TRAEN MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "APPIN",
+                    "fixes": {
+                        "APPIN": "APPIN",
+                        "GLYND": "GLYND AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "COCOS",
+                    "fixes": {
+                        "COCOS": "COCOS"
+                    }
+                },
+                {
+                    "name": "LOUDR",
+                    "fixes": {
+                        "LOUDR": "LOUDR RIGHT TURN INBOUNDCOURSE 175 ALT 1900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "CONON": "CONON AT OR ABOVE 1700",
+                "HYPPS": "HYPPS 1700 RNW 36",
+                "LOUDR": "OVERFLY LOUDR AT OR ABOVE 1900 HOLD AT LOUDR RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF HYPPS MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "CONON",
+                    "fixes": {
+                        "CONON": "CONON RIGHT TURN INBOUNDCOURSE 355 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "COSGO",
+                    "fixes": {
+                        "COSGO": "COSGO",
+                        "FANIK": "FANIK AT OR ABOVE 2400"
+                    }
+                },
+                {
+                    "name": "LCH",
+                    "fixes": {
+                        "LCH": "LCH",
+                        "MOKLE": "MOKLE AT OR ABOVE 1700"
+                    }
+                },
+                {
+                    "name": "OFERS",
+                    "fixes": {
+                        "OFERS": "OFERS",
+                        "FANIK": "FANIK AT OR ABOVE 2400"
+                    }
+                }
+            ]
+        }
+    ]
+}

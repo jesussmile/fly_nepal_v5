@@ -1,0 +1,131 @@
+{
+    "fixes": [
+        {
+            "name": "ADIBE",
+            "lat": 39.10306666666666,
+            "lon": 110.73063056666666
+        },
+        {
+            "name": "AF001",
+            "lat": 39.493331516666665,
+            "lon": 110.53678863333333
+        },
+        {
+            "name": "AF002",
+            "lat": 39.44875028333333,
+            "lon": 110.58878201666667
+        },
+        {
+            "name": "AF003",
+            "lat": 39.41804233333333,
+            "lon": 110.6555002
+        },
+        {
+            "name": "COPUK",
+            "lat": 39.53768888333333,
+            "lon": 110.50911666666667
+        },
+        {
+            "name": "D175L",
+            "lat": 39.405475,
+            "lon": 110.79389166666667
+        },
+        {
+            "name": "FOSOV",
+            "lat": 39.40314166666667,
+            "lon": 110.74432221666666
+        },
+        {
+            "name": "JESKI",
+            "lat": 39.523691666666664,
+            "lon": 110.79
+        },
+        {
+            "name": "PUC",
+            "lat": 39.60319166666667,
+            "lon": 110.75352778333334
+        },
+        {
+            "name": "SAROE",
+            "lat": 39.41380278333333,
+            "lon": 110.836925
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 08",
+        "RNW 15",
+        "RNW 19",
+        "RNW 26",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS01",
+            "fixes": {
+                "SAROE": "SAROE AT OR ABOVE 8700",
+                "JESKI": "JESKI 7500 RNW 01 TRK 007 UNTIL 6300 TURN RIGHT HDG 200 INTERCEPT RADIAL 164 TO",
+                "FOSOV": "FOSOV FOSOV AT OR ABOVE 10000 HOLD AT FOSOV RIGHT TURN INBOUNDCOURSE 344 ALT 10000 LEGTIME 1 FAF JESKI MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "COPUK",
+                    "fixes": {
+                        "COPUK": "COPUK",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "FOSOV": "FOSOV AT OR ABOVE 8700",
+                        "D175L": "D175L AT OR ABOVE 8700"
+                    }
+                },
+                {
+                    "name": "FOSOV",
+                    "fixes": {
+                        "FOSOV": "FOSOV",
+                        "D175L": "D175L AT OR ABOVE 8700"
+                    }
+                },
+                {
+                    "name": "PUC",
+                    "fixes": {
+                        "PUC": "PUC",
+                        "SAROE": "SAROE AT OR ABOVE 8700 HOLD AT SAROE RIGHT TURN INBOUNDCOURSE 007 ALT 8700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "SAROE": "SAROE AT OR ABOVE 8900",
+                "JESKI": "JESKI 7500 RNW 01 TRK 007 UNTIL 6300 TURN RIGHT DIRECT",
+                "FOSOV": "OVERFLY FOSOV AT OR ABOVE 10000 HOLD AT FOSOV RIGHT TURN INBOUNDCOURSE 344 ALT 10000 LEGDIST 7 FAF JESKI MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ADIBE",
+                    "fixes": {
+                        "ADIBE": "ADIBE"
+                    }
+                },
+                {
+                    "name": "COPUK",
+                    "fixes": {
+                        "COPUK": "COPUK",
+                        "SAROE": "OVERFLY SAROE AT OR ABOVE 8900 HOLD AT SAROE RIGHT TURN INBOUNDCOURSE 007 ALT 8900 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "PUC",
+                    "fixes": {
+                        "PUC": "PUC",
+                        "SAROE": "OVERFLY SAROE AT OR ABOVE 8900 HOLD AT SAROE RIGHT TURN INBOUNDCOURSE 007 ALT 8900 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "COPIK",
+            "lat": 37.31333888333333,
+            "lon": 86.29761943333334
+        },
+        {
+            "name": "HUPDI",
+            "lat": 37.57756666666667,
+            "lon": 86.18617221666666
+        },
+        {
+            "name": "REBBE",
+            "lat": 37.218411116666665,
+            "lon": 86.33745556666666
+        },
+        {
+            "name": "ZEBUG",
+            "lat": 37.482680566666666,
+            "lon": 86.22629166666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "REBBE": "REBBE AT OR ABOVE 4000",
+                "COPIK": "COPIK 2400 RNW 02 TRK 023 UNTIL 1140",
+                "HUPDI": "OVERFLY HUPDI AT OR ABOVE 4000 HOLD AT HUPDI RIGHT TURN INBOUNDCOURSE 203 ALT 4000 LEGDIST 4 FAF COPIK MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "REBBE",
+                    "fixes": {
+                        "REBBE": "REBBE RIGHT TURN INBOUNDCOURSE 023 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "HUPDI": "HUPDI AT OR ABOVE 4000",
+                "ZEBUG": "ZEBUG 2400 RNW 20 TRK 203 UNTIL 1088",
+                "REBBE": "OVERFLY REBBE AT OR ABOVE 4000 HOLD AT REBBE RIGHT TURN INBOUNDCOURSE 023 ALT 4000 LEGDIST 4 FAF ZEBUG MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "HUPDI",
+                    "fixes": {
+                        "HUPDI": "HUPDI RIGHT TURN INBOUNDCOURSE 203 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

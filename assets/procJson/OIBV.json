@@ -1,0 +1,176 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 27.061102133333332,
+            "lon": 53.380328633333335
+        },
+        {
+            "name": "AF002",
+            "lat": 27.03858305,
+            "lon": 53.47448043333333
+        },
+        {
+            "name": "AF003",
+            "lat": 26.988693933333334,
+            "lon": 53.55424206666667
+        },
+        {
+            "name": "CD29",
+            "lat": 26.727141666666668,
+            "lon": 53.55830556666667
+        },
+        {
+            "name": "D063O",
+            "lat": 26.917872216666666,
+            "lon": 53.609425
+        },
+        {
+            "name": "D343O",
+            "lat": 27.053938883333334,
+            "lon": 53.282
+        },
+        {
+            "name": "FD29",
+            "lat": 26.776708333333332,
+            "lon": 53.44025
+        },
+        {
+            "name": "FN29",
+            "lat": 26.781688883333334,
+            "lon": 53.436852783333336
+        },
+        {
+            "name": "KIS",
+            "lat": 26.525166666666667,
+            "lon": 53.96241666666667
+        },
+        {
+            "name": "LAM",
+            "lat": 27.372833333333332,
+            "lon": 53.18397221666667
+        },
+        {
+            "name": "LVA",
+            "lat": 26.81205556666667,
+            "lon": 53.35586111666667
+        },
+        {
+            "name": "LVANB",
+            "lat": 26.800027783333334,
+            "lon": 53.386305566666664
+        },
+        {
+            "name": "MD29",
+            "lat": 26.804988883333333,
+            "lon": 53.37274166666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "KIS1G",
+            "rnw": "29",
+            "fixes": {
+                "KIS": "KIS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KIS1H",
+            "rnw": "11",
+            "fixes": {
+                "KIS": "KIS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LAM2A",
+            "rnw": "29",
+            "fixes": {
+                "LVA": "LVA AT OR ABOVE 4000",
+                "LAM": "LAM"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LAM2B",
+            "rnw": "11",
+            "fixes": {
+                "LVA": "LVA AT OR ABOVE 4000",
+                "LAM": "LAM"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "KIS1V",
+            "runway": "RNW 29",
+            "fixes": {
+                "KIS": "KIS",
+                "D063O": "D063O"
+            }
+        },
+        {
+            "name": "LAM1P",
+            "runway": "RNW 29",
+            "fixes": {
+                "LAM": "LAM",
+                "D343O": "D343O",
+                "AF001": "AF001",
+                "AF002": "AF002",
+                "AF003": "AF003",
+                "D063O": "D063O"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORD29",
+            "fixes": {
+                "CD29": "CD29 AT OR ABOVE 2500",
+                "FD29": "FD29 1500",
+                "MD29": "MD29 217 RNW 29 TRK 289 UNTIL 2200 TURN LEFT DIRECT",
+                "LVA": "LVA",
+                "D063O": "D063O 6000 HOLD AT D063O RIGHT TURN INBOUNDCOURSE 243 SPEED 220 LEGTIME 1 FAF FD29 MAP MD29"
+            },
+            "transitions": [
+                {
+                    "name": "D063O",
+                    "fixes": {
+                        "D063O": "D063O AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FN29": "FN29 1400",
+                "LVANB": "LVANB 468 RNW 29 TRK 290 UNTIL 1500 TURN LEFT DIRECT LVANB 3000 HOLD AT LVANB LEFT TURN INBOUNDCOURSE 135 SPEED 210 LEGTIME 1 FAF FN29 MAP LVA"
+            },
+            "transitions": [
+                {
+                    "name": "LVA1",
+                    "fixes": {
+                        "LVANB": "LVANB AT OR ABOVE 3000 SPEED 185 TRK 135 UNTIL 6.2 FROM LVANB"
+                    }
+                },
+                {
+                    "name": "LVA2",
+                    "fixes": {
+                        "LVANB": "LVANB AT OR ABOVE 3000 TRK 125 UNTIL 7.5 FROM LVANB"
+                    }
+                }
+            ]
+        }
+    ]
+}

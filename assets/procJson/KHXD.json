@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "FUMMA",
+            "lat": 32.428519433333335,
+            "lon": 80.57976943333334
+        },
+        {
+            "name": "GORGE",
+            "lat": 32.01694166666667,
+            "lon": 80.81646388333333
+        },
+        {
+            "name": "HILTU",
+            "lat": 32.22394166666667,
+            "lon": 80.70203888333333
+        },
+        {
+            "name": "HUNDO",
+            "lat": 32.137025,
+            "lon": 80.74765278333334
+        },
+        {
+            "name": "JAAMM",
+            "lat": 32.30853333333334,
+            "lon": 80.64901943333334
+        },
+        {
+            "name": "NURAE",
+            "lat": 32.18261111666666,
+            "lon": 80.9674
+        },
+        {
+            "name": "SAV",
+            "lat": 32.14626666666667,
+            "lon": 81.19910556666666
+        },
+        {
+            "name": "SELER",
+            "lat": 32.210977783333334,
+            "lon": 80.78441111666666
+        },
+        {
+            "name": "WOVIN",
+            "lat": 32.262472216666666,
+            "lon": 80.67553333333333
+        },
+        {
+            "name": "ZEXUN",
+            "lat": 32.419944433333335,
+            "lon": 80.58464443333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC21",
+            "fixes": {
+                "ZEXUN": "ZEXUN AT OR ABOVE 1800",
+                "JAAMM": "JAAMM 1800",
+                "WOVIN": "WOVIN AT OR ABOVE 760 RNW 21 TRK 213 UNTIL 800",
+                "SELER": "SELER AT OR ABOVE 2000 HOLD AT SELER RIGHT TURN INBOUNDCOURSE 085 LEGTIME 1 FAF JAAMM MAP RNW 21"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "GORGE": "GORGE AT OR ABOVE 1900",
+                "HUNDO": "HUNDO 1800 RNW 03 TRK 033 UNTIL 321",
+                "FUMMA": "OVERFLY FUMMA AT OR ABOVE 1900 HOLD AT FUMMA RIGHT TURN INBOUNDCOURSE 213 LEGDIST 4 FAF HUNDO MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "GORGE",
+                    "fixes": {
+                        "GORGE": "GORGE RIGHT TURN INBOUNDCOURSE 033 ALT 1900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "FUMMA": "FUMMA AT OR ABOVE 1900",
+                "JAAMM": "JAAMM 1800 RNW 21 TRK 213 UNTIL 293",
+                "GORGE": "OVERFLY GORGE AT OR ABOVE 1900 HOLD AT GORGE RIGHT TURN INBOUNDCOURSE 033 LEGDIST 4 FAF JAAMM MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "FUMMA",
+                    "fixes": {
+                        "FUMMA": "FUMMA RIGHT TURN INBOUNDCOURSE 213 ALT 1900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA03",
+            "fixes": {
+                "NURAE": "NURAE AT OR ABOVE 2000",
+                "SELER": "SELER 2000 SELER AT OR ABOVE 2000 HOLD AT SELER RIGHT TURN INBOUNDCOURSE 085 LEGTIME 1 FAF SELER MAP HILTU",
+                "HILTU": "HILTU 800 RNW 03 TRK 085 UNTIL 800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SAV",
+                    "fixes": {
+                        "SAV": "SAV AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA21",
+            "fixes": {
+                "NURAE": "NURAE AT OR ABOVE 2000",
+                "SELER": "SELER 2000 SELER AT OR ABOVE 2000 HOLD AT SELER RIGHT TURN INBOUNDCOURSE 085 LEGTIME 1 FAF SELER MAP HILTU",
+                "HILTU": "HILTU 800 RNW 21 TRK 085 UNTIL 800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SAV",
+                    "fixes": {
+                        "SAV": "SAV AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "BADDI",
+            "lat": 40.157294433333334,
+            "lon": 77.41883611666667
+        },
+        {
+            "name": "BRBER",
+            "lat": 40.18607778333333,
+            "lon": 76.92524721666666
+        },
+        {
+            "name": "HUBDO",
+            "lat": 40.173025,
+            "lon": 77.298625
+        },
+        {
+            "name": "SCLNK",
+            "lat": 40.18775,
+            "lon": 77.16710278333333
+        },
+        {
+            "name": "WRSKI",
+            "lat": 40.188225,
+            "lon": 77.04827778333333
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA10",
+            "fixes": {
+                "BADDI": "BADDI AT OR ABOVE 4000 OVERFLY BADDI AT OR ABOVE 4000 HOLD AT BADDI RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4 FAF HUBDO MAP RNW 10",
+                "HUBDO": "HUBDO 2300 RNW 10 TRK 090 UNTIL 910 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BADDI",
+                    "fixes": {
+                        "BADDI": "BADDI RIGHT TURN INBOUNDCOURSE 090 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB10",
+            "fixes": {
+                "BRBER": "BRBER AT OR ABOVE 4000",
+                "WRSKI": "WRSKI 2300",
+                "SCLNK": "OVERFLY SCLNK 559 RNW 10 TRK 280 UNTIL 910",
+                "BADDI": "OVERFLY BADDI AT OR ABOVE 4000 HOLD AT BADDI RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4 FAF WRSKI MAP SCLNK"
+            },
+            "transitions": [
+                {
+                    "name": "BRBER",
+                    "fixes": {
+                        "BRBER": "BRBER RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB28",
+            "fixes": {
+                "BRBER": "BRBER AT OR ABOVE 4000",
+                "WRSKI": "WRSKI 2300",
+                "SCLNK": "OVERFLY SCLNK 559 RNW 28 TRK 280 UNTIL 910",
+                "BADDI": "OVERFLY BADDI AT OR ABOVE 4000 HOLD AT BADDI RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4 FAF WRSKI MAP SCLNK"
+            },
+            "transitions": [
+                {
+                    "name": "BRBER",
+                    "fixes": {
+                        "BRBER": "BRBER RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

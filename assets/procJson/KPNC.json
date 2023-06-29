@@ -1,0 +1,222 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 36.952017016666666,
+            "lon": 97.33809708333334
+        },
+        {
+            "name": "AF002",
+            "lat": 36.90920976666666,
+            "lon": 97.39731308333333
+        },
+        {
+            "name": "BIKCA",
+            "lat": 36.983727783333336,
+            "lon": 97.25969443333334
+        },
+        {
+            "name": "DOREC",
+            "lat": 36.860825,
+            "lon": 97.43709166666666
+        },
+        {
+            "name": "HUPLO",
+            "lat": 36.53873888333333,
+            "lon": 96.994825
+        },
+        {
+            "name": "JERAG",
+            "lat": 36.53766111666667,
+            "lon": 97.20163888333333
+        },
+        {
+            "name": "MA111",
+            "lat": 36.726188883333336,
+            "lon": 97.10971388333333
+        },
+        {
+            "name": "OKTAE",
+            "lat": 36.827533333333335,
+            "lon": 97.10055
+        },
+        {
+            "name": "PER",
+            "lat": 36.746530566666664,
+            "lon": 97.16015556666666
+        },
+        {
+            "name": "PI001",
+            "lat": 36.772084283333335,
+            "lon": 97.22560891666667
+        },
+        {
+            "name": "PI002",
+            "lat": 36.8398429,
+            "lon": 97.25476293333334
+        },
+        {
+            "name": "PI003",
+            "lat": 36.81944598333333,
+            "lon": 97.34728088333334
+        },
+        {
+            "name": "SEYOR",
+            "lat": 36.928747216666665,
+            "lon": 97.205325
+        },
+        {
+            "name": "TEDCO",
+            "lat": 36.929825,
+            "lon": 96.99741111666667
+        },
+        {
+            "name": "TOMHO",
+            "lat": 36.929330566666664,
+            "lon": 97.10136943333333
+        },
+        {
+            "name": "WURTO",
+            "lat": 36.65728888333334,
+            "lon": 97.09918333333333
+        },
+        {
+            "name": "ZULOT",
+            "lat": 36.53824443333333,
+            "lon": 97.09823333333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS17",
+            "fixes": {
+                "TOMHO": "TOMHO AT OR ABOVE 2800",
+                "OKTAE": "OKTAE 2700 RNW 17 TRK 175 UNTIL 2700 TURN RIGHT DIRECT",
+                "PER": "PER HOLD AT PER LEFT TURN INBOUNDCOURSE 111 LEGTIME 1 FAF OKTAE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PER": "PER",
+                        "TOMHO": "TOMHO AT OR ABOVE 2800 HOLD AT TOMHO RIGHT TURN INBOUNDCOURSE 175 ALT 2800 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "TOMHO": "TOMHO AT OR ABOVE 2900",
+                "OKTAE": "OKTAE 2700 RNW 17 TRK 175 UNTIL 1279",
+                "ZULOT": "OVERFLY ZULOT AT OR ABOVE 2700 HOLD AT ZULOT RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4 FAF OKTAE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "SEYOR",
+                    "fixes": {
+                        "SEYOR": "SEYOR"
+                    }
+                },
+                {
+                    "name": "TEDCO",
+                    "fixes": {
+                        "TEDCO": "TEDCO"
+                    }
+                },
+                {
+                    "name": "TOMHO",
+                    "fixes": {
+                        "TOMHO": "TOMHO RIGHT TURN INBOUNDCOURSE 175 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ZULOT": "ZULOT AT OR ABOVE 2700",
+                "WURTO": "WURTO 2300 RNW 35",
+                "TOMHO": "OVERFLY TOMHO AT OR ABOVE 2800 HOLD AT TOMHO RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4 FAF WURTO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "HUPLO",
+                    "fixes": {
+                        "HUPLO": "HUPLO AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "JERAG",
+                    "fixes": {
+                        "JERAG": "JERAG AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "ZULOT",
+                    "fixes": {
+                        "ZULOT": "ZULOT RIGHT TURN INBOUNDCOURSE 355 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA17",
+            "fixes": {
+                "PER": "PER 2300 PER HOLD AT PER LEFT TURN INBOUNDCOURSE 111 LEGTIME 1 FAF PER MAP MA111",
+                "MA111": "MA111 1880 RNW 17 TRK 111 UNTIL 2700 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BIKCA",
+                    "fixes": {
+                        "BIKCA": "BIKCA",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "DOREC": "DOREC AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA35",
+            "fixes": {
+                "PER": "PER 2300 PER HOLD AT PER LEFT TURN INBOUNDCOURSE 111 LEGTIME 1 FAF PER MAP MA111",
+                "MA111": "MA111 1880 RNW 35 TRK 111 UNTIL 2700 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BIKCA",
+                    "fixes": {
+                        "BIKCA": "BIKCA",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "DOREC": "DOREC AT OR ABOVE 2700"
+                    }
+                },
+                {
+                    "name": "PER",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2700 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2700 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2700 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "CARRB",
+            "lat": 18.102555566666666,
+            "lon": 62.87344443333333
+        },
+        {
+            "name": "CROOK",
+            "lat": 18.306972216666665,
+            "lon": 63.23427778333333
+        },
+        {
+            "name": "MA29",
+            "lat": 18.204555566666667,
+            "lon": 63.029888883333335
+        },
+        {
+            "name": "MODAN",
+            "lat": 18.201861116666667,
+            "lon": 62.767305566666664
+        },
+        {
+            "name": "OTMOT",
+            "lat": 18.11351111666667,
+            "lon": 63.31049443333333
+        },
+        {
+            "name": "PF11F",
+            "lat": 18.20575,
+            "lon": 63.14783333333333
+        },
+        {
+            "name": "PF11I",
+            "lat": 18.206583333333334,
+            "lon": 63.23536111666667
+        },
+        {
+            "name": "PF29F",
+            "lat": 18.203833333333332,
+            "lon": 62.959888883333335
+        },
+        {
+            "name": "PF29I",
+            "lat": 18.202944433333332,
+            "lon": 62.87233333333333
+        },
+        {
+            "name": "TECUP",
+            "lat": 18.303333333333335,
+            "lon": 62.87125
+        },
+        {
+            "name": "URMAD",
+            "lat": 18.207611116666666,
+            "lon": 63.34041666666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "PF11I": "PF11I AT OR ABOVE 1760",
+                "PF11F": "PF11F 1760 RNW 11 TRK 105 UNTIL 1000 TURN LEFT DIRECT",
+                "CROOK": "CROOK AT OR ABOVE 1300 HOLD AT CROOK RIGHT TURN INBOUNDCOURSE 195 ALT 1300 LEGTIME 1 FAF PF11F MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "CROOK",
+                    "fixes": {
+                        "CROOK": "CROOK AT OR ABOVE 1760"
+                    }
+                },
+                {
+                    "name": "OTMOT",
+                    "fixes": {
+                        "OTMOT": "OTMOT AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "URMAD",
+                    "fixes": {
+                        "URMAD": "URMAD AT OR ABOVE 1760"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "PF29I": "PF29I AT OR ABOVE 1720",
+                "PF29F": "PF29F 1720",
+                "MA29": "OVERFLY MA29 447 RNW 29 TRK 285 UNTIL 1000 TURN RIGHT DIRECT",
+                "TECUP": "TECUP AT OR ABOVE 1300 HOLD AT TECUP LEFT TURN INBOUNDCOURSE 195 ALT 1300 LEGTIME 1 FAF PF29F MAP MA29"
+            },
+            "transitions": [
+                {
+                    "name": "CARRB",
+                    "fixes": {
+                        "CARRB": "CARRB AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "MODAN",
+                    "fixes": {
+                        "MODAN": "MODAN AT OR ABOVE 1720"
+                    }
+                },
+                {
+                    "name": "TECUP",
+                    "fixes": {
+                        "TECUP": "TECUP AT OR ABOVE 1720"
+                    }
+                }
+            ]
+        }
+    ]
+}

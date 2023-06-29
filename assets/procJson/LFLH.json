@@ -1,0 +1,68 @@
+{
+    "fixes": [
+        {
+            "name": "FLH35",
+            "lat": 46.720666666666666,
+            "lon": 4.843
+        },
+        {
+            "name": "ILH35",
+            "lat": 46.65627778333333,
+            "lon": 4.919777783333333
+        },
+        {
+            "name": "LH401",
+            "lat": 46.69325,
+            "lon": 4.985277783333333
+        },
+        {
+            "name": "LH403",
+            "lat": 46.720666666666666,
+            "lon": 4.843
+        },
+        {
+            "name": "LH501",
+            "lat": 46.854055566666666,
+            "lon": 4.810833333333333
+        },
+        {
+            "name": "LH502",
+            "lat": 46.757666666666665,
+            "lon": 4.908555566666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "ILH35": "ILH35 AT OR ABOVE 3000 SPEED 190",
+                "FLH35": "FLH35 2800 SPEED 190 RNW 35",
+                "LH501": "OVERFLY LH501 SPEED 190 TURN RIGHT DIRECT",
+                "LH502": "LH502 AT OR ABOVE 3000 SPEED 190",
+                "LH401": "LH401 3000 SPEED 190 FAF FLH35 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "LH401",
+                    "fixes": {
+                        "LH401": "LH401 AT OR ABOVE 3000 SPEED 190"
+                    }
+                },
+                {
+                    "name": "LH403",
+                    "fixes": {
+                        "LH403": "LH403 AT OR ABOVE 3000 SPEED 190",
+                        "LH502": "LH502 AT OR ABOVE 3000 SPEED 190",
+                        "LH401": "LH401 AT OR ABOVE 3000 SPEED 190"
+                    }
+                }
+            ]
+        }
+    ]
+}

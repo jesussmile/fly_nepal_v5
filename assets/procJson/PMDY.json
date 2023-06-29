@@ -1,0 +1,153 @@
+{
+    "fixes": [
+        {
+            "name": "ADLEC",
+            "lat": 28.460022216666665,
+            "lon": 178.00259721666666
+        },
+        {
+            "name": "AVIKY",
+            "lat": 28.236666666666668,
+            "lon": 177.27972221666667
+        },
+        {
+            "name": "EKUZY",
+            "lat": 28.166191666666666,
+            "lon": 177.48297221666667
+        },
+        {
+            "name": "ESOVY",
+            "lat": 28.267027783333333,
+            "lon": 177.19180833333334
+        },
+        {
+            "name": "FN06",
+            "lat": 28.169677783333334,
+            "lon": 177.4615
+        },
+        {
+            "name": "FN24",
+            "lat": 28.225608333333334,
+            "lon": 177.29810833333335
+        },
+        {
+            "name": "IDOCA",
+            "lat": 29.916666666666668,
+            "lon": 180.0
+        },
+        {
+            "name": "IMAXE",
+            "lat": 28.026763883333334,
+            "lon": 177.52249166666667
+        },
+        {
+            "name": "MDYNB",
+            "lat": 28.204138883333332,
+            "lon": 177.37919443333334
+        },
+        {
+            "name": "OKEZO",
+            "lat": 28.244513883333333,
+            "lon": 176.62618333333333
+        },
+        {
+            "name": "OWODY",
+            "lat": 28.135644433333333,
+            "lon": 177.57072221666667
+        },
+        {
+            "name": "UJIXO",
+            "lat": 28.166666666666668,
+            "lon": 175.0
+        },
+        {
+            "name": "UVIHU",
+            "lat": 28.344877783333335,
+            "lon": 177.2261
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB06",
+            "fixes": {
+                "FN06": "FN06 1200",
+                "MDYNB": "MDYNB 560 RNW 06 TRK 055 UNTIL 2000 TURN LEFT DIRECT MDYNB HOLD AT MDYNB RIGHT TURN INBOUNDCOURSE 055 LEGTIME 1 FAF FN06 MAP MDY"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB24",
+            "fixes": {
+                "FN24": "FN24 1200",
+                "MDYNB": "MDYNB 560 RNW 24 TRK 243 UNTIL 2000 TURN LEFT DIRECT MDYNB HOLD AT MDYNB RIGHT TURN INBOUNDCOURSE 243 LEGTIME 1 FAF FN24 MAP MDY"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "OWODY": "OWODY AT OR ABOVE 1700",
+                "EKUZY": "EKUZY 1700 RNW 06",
+                "ESOVY": "OVERFLY ESOVY AT OR ABOVE 1700 HOLD AT ESOVY RIGHT TURN INBOUNDCOURSE 239 LEGDIST 4 FAF EKUZY MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "IDOCA",
+                    "fixes": {
+                        "IDOCA": "IDOCA",
+                        "ADLEC": "ADLEC AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "OWODY",
+                    "fixes": {
+                        "OWODY": "OWODY RIGHT TURN INBOUNDCOURSE 059 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "UJIXO",
+                    "fixes": {
+                        "UJIXO": "UJIXO",
+                        "IMAXE": "IMAXE AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "ESOVY": "ESOVY AT OR ABOVE 1700",
+                "AVIKY": "AVIKY 1700 RNW 24",
+                "OWODY": "OVERFLY OWODY AT OR ABOVE 1700 HOLD AT OWODY RIGHT TURN INBOUNDCOURSE 059 LEGDIST 4 FAF AVIKY MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "ESOVY",
+                    "fixes": {
+                        "ESOVY": "ESOVY RIGHT TURN INBOUNDCOURSE 239 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "IDOCA",
+                    "fixes": {
+                        "IDOCA": "IDOCA",
+                        "UVIHU": "UVIHU AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "UJIXO",
+                    "fixes": {
+                        "UJIXO": "UJIXO",
+                        "OKEZO": "OKEZO AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

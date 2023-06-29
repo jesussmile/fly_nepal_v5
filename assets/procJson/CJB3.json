@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "DURUS",
+            "lat": 49.649869433333336,
+            "lon": 96.91458333333334
+        },
+        {
+            "name": "DUSEV",
+            "lat": 49.529875,
+            "lon": 96.40586111666667
+        },
+        {
+            "name": "DUVUP",
+            "lat": 49.691091666666665,
+            "lon": 96.80313056666667
+        },
+        {
+            "name": "GORUV",
+            "lat": 49.61870833333333,
+            "lon": 96.73976388333334
+        },
+        {
+            "name": "KEPVO",
+            "lat": 49.732205566666664,
+            "lon": 96.69148611666667
+        },
+        {
+            "name": "KEVMU",
+            "lat": 49.5066,
+            "lon": 96.58314721666666
+        },
+        {
+            "name": "KISUG",
+            "lat": 49.3912,
+            "lon": 96.54728333333334
+        },
+        {
+            "name": "MUTVU",
+            "lat": 49.46055833333333,
+            "lon": 96.47667221666667
+        },
+        {
+            "name": "VOLEG",
+            "lat": 49.555936116666665,
+            "lon": 96.68499166666666
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "DUVUP": "DUVUP AT OR ABOVE 2500 SPEED 200",
+                "GORUV": "GORUV 2300",
+                "VOLEG": "OVERFLY VOLEG 926 RNW 15 TRK 148 UNTIL 1250",
+                "DUSEV": "OVERFLY DUSEV 2800 HOLD AT DUSEV LEFT TURN INBOUNDCOURSE 211 SPEED 200 LEGTIME 1 FAF GORUV MAP VOLEG"
+            },
+            "transitions": [
+                {
+                    "name": "DURUS",
+                    "fixes": {
+                        "DURUS": "DURUS SPEED 210"
+                    }
+                },
+                {
+                    "name": "KEPVO",
+                    "fixes": {
+                        "KEPVO": "KEPVO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA33",
+            "fixes": {
+                "MUTVU": "MUTVU AT OR ABOVE 2500 SPEED 200",
+                "KEVMU": "KEVMU 2300 RNW 33",
+                "DURUS": "OVERFLY DURUS 2800 HOLD AT DURUS LEFT TURN INBOUNDCOURSE 057 SPEED 200 LEGTIME 1 FAF KEVMU MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "DUSEV",
+                    "fixes": {
+                        "DUSEV": "DUSEV SPEED 210"
+                    }
+                },
+                {
+                    "name": "KISUG",
+                    "fixes": {
+                        "KISUG": "KISUG SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

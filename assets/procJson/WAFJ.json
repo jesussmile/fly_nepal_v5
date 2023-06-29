@@ -1,0 +1,210 @@
+{
+    "fixes": [
+        {
+            "name": "ALINA",
+            "lat": 2.625555566666667,
+            "lon": 118.86555556666667
+        },
+        {
+            "name": "CS070",
+            "lat": 2.654166666666667,
+            "lon": 118.84284443333334
+        },
+        {
+            "name": "DARUL",
+            "lat": 3.0547222166666668,
+            "lon": 118.84583333333333
+        },
+        {
+            "name": "DASIX",
+            "lat": 2.483611116666667,
+            "lon": 118.94361111666667
+        },
+        {
+            "name": "FJ401",
+            "lat": 2.7003333333333335,
+            "lon": 118.84861111666666
+        },
+        {
+            "name": "FJ402",
+            "lat": 2.6563333333333334,
+            "lon": 118.91947221666666
+        },
+        {
+            "name": "FJ403",
+            "lat": 2.6325833333333333,
+            "lon": 118.95775
+        },
+        {
+            "name": "FJ404",
+            "lat": 2.6079444333333335,
+            "lon": 118.99741666666667
+        },
+        {
+            "name": "FS070",
+            "lat": 2.6255444333333333,
+            "lon": 118.9211
+        },
+        {
+            "name": "GAMAL",
+            "lat": 2.8638888833333334,
+            "lon": 118.03888888333333
+        },
+        {
+            "name": "MISIL",
+            "lat": 2.5902777833333333,
+            "lon": 118.76
+        },
+        {
+            "name": "MJU",
+            "lat": 2.5866111166666665,
+            "lon": 119.02752778333333
+        },
+        {
+            "name": "MKS",
+            "lat": 5.037811116666667,
+            "lon": 119.52618888333333
+        },
+        {
+            "name": "NIVEK",
+            "lat": 2.6625,
+            "lon": 118.71194443333333
+        },
+        {
+            "name": "PAL",
+            "lat": 0.8850111166666667,
+            "lon": 119.89472221666666
+        },
+        {
+            "name": "PANAO",
+            "lat": 2.689638883333333,
+            "lon": 118.74583333333334
+        },
+        {
+            "name": "SIPKA",
+            "lat": 2.2677777833333335,
+            "lon": 118.97444443333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [
+        {
+            "name": "GAMA1E",
+            "rnw": "23",
+            "fixes": {
+                "ALINA": "ALINA",
+                "NIVEK": "NIVEK",
+                "GAMAL": "GAMAL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MKS1A",
+            "rnw": "23",
+            "fixes": {
+                "ALINA": "ALINA",
+                "DARUL": "DARUL",
+                "MKS": "MKS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PAL1D",
+            "rnw": "23",
+            "fixes": {
+                "DASIX": "DASIX",
+                "SIPKA": "SIPKA",
+                "PAL": "PAL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "GAMA1F",
+            "runway": "RNW 05",
+            "fixes": {
+                "GAMAL": "GAMAL",
+                "PANAO": "PANAO AT OR ABOVE 4000"
+            }
+        },
+        {
+            "name": "MKS1B",
+            "runway": "RNW 05",
+            "fixes": {
+                "MKS": "MKS",
+                "DARUL": "DARUL",
+                "PANAO": "PANAO AT OR ABOVE 4000"
+            }
+        },
+        {
+            "name": "PAL1E",
+            "runway": "RNW 05",
+            "fixes": {
+                "PAL": "PAL",
+                "MISIL": "MISIL",
+                "PANAO": "PANAO AT OR ABOVE 4000"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "FJ401": "FJ401 AT OR ABOVE 3000",
+                "FJ402": "FJ402 2250",
+                "FJ403": "FJ403 AT OR ABOVE 1420",
+                "FJ404": "OVERFLY FJ404 535 RNW 05 TURN LEFT DIRECT",
+                "PANAO": "PANAO AT OR ABOVE 4000 HOLD AT PANAO LEFT TURN INBOUNDCOURSE 070 ALT 4000 LEGTIME 1 FAF FJ402 MAP FJ404"
+            },
+            "transitions": [
+                {
+                    "name": "PANAO",
+                    "fixes": {
+                        "PANAO": "PANAO AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA05",
+            "fixes": {
+                "CS070": "CS070 AT OR ABOVE 3000",
+                "FS070": "FS070 2000",
+                "MJU": "MJU 1300 RNW 05 TURN LEFT TRK 220 INTERCEPT RADIAL 250 TO",
+                "PANAO": "PANAO PANAO AT OR ABOVE 4000 HOLD AT PANAO LEFT TURN INBOUNDCOURSE 070 ALT 4000 LEGTIME 1 FAF FS070 MAP MJU"
+            },
+            "transitions": [
+                {
+                    "name": "PANAO",
+                    "fixes": {
+                        "PANAO": "PANAO AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA23",
+            "fixes": {
+                "CS070": "CS070 AT OR ABOVE 3000",
+                "FS070": "FS070 2000",
+                "MJU": "MJU 1300 RNW 23 TURN LEFT TRK 220 INTERCEPT RADIAL 250 TO",
+                "PANAO": "PANAO PANAO AT OR ABOVE 4000 HOLD AT PANAO LEFT TURN INBOUNDCOURSE 070 ALT 4000 LEGTIME 1 FAF FS070 MAP MJU"
+            },
+            "transitions": [
+                {
+                    "name": "PANAO",
+                    "fixes": {
+                        "PANAO": "PANAO AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

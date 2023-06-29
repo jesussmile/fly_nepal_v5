@@ -1,0 +1,158 @@
+{
+    "fixes": [
+        {
+            "name": "BZ",
+            "lat": 32.41537221666667,
+            "lon": 81.66403333333334
+        },
+        {
+            "name": "CFBPB",
+            "lat": 32.368025,
+            "lon": 81.60528333333333
+        },
+        {
+            "name": "DOVER",
+            "lat": 32.73929166666667,
+            "lon": 81.52100833333333
+        },
+        {
+            "name": "EPEDE",
+            "lat": 32.62680833333334,
+            "lon": 81.91018333333334
+        },
+        {
+            "name": "FAXAL",
+            "lat": 32.504675,
+            "lon": 81.76595278333333
+        },
+        {
+            "name": "HENUT",
+            "lat": 32.336016666666666,
+            "lon": 81.56775556666666
+        },
+        {
+            "name": "JUDIT",
+            "lat": 32.41535278333333,
+            "lon": 81.66084721666667
+        },
+        {
+            "name": "LOTTS",
+            "lat": 32.33656666666667,
+            "lon": 81.85511666666666
+        },
+        {
+            "name": "MAYAR",
+            "lat": 32.244061116666664,
+            "lon": 81.53443333333334
+        },
+        {
+            "name": "PI001",
+            "lat": 32.3741149,
+            "lon": 81.61519440000001
+        },
+        {
+            "name": "PI002",
+            "lat": 32.374086483333336,
+            "lon": 81.5303386
+        },
+        {
+            "name": "PI003",
+            "lat": 32.29744431666666,
+            "lon": 81.52461173333333
+        },
+        {
+            "name": "ROOST",
+            "lat": 32.54770833333333,
+            "lon": 81.81670556666667
+        },
+        {
+            "name": "RUPSE",
+            "lat": 32.45696111666667,
+            "lon": 81.70976666666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 14",
+        "RNW 24",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS32",
+            "fixes": {
+                "CFBPB": "CFBPB AT OR ABOVE 2000",
+                "JUDIT": "JUDIT 1800 RNW 32 TRK 320 UNTIL 1300 TURN RIGHT DIRECT",
+                "BZ": "BZ AT OR ABOVE 2000 HOLD AT BZ RIGHT TURN INBOUNDCOURSE 320 LEGTIME 1 FAF JUDIT MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "DOVER",
+                    "fixes": {
+                        "DOVER": "DOVER",
+                        "BZ": "BZ AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "LOTTS",
+                    "fixes": {
+                        "LOTTS": "LOTTS",
+                        "BZ": "BZ AT OR ABOVE 3600",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MAYAR",
+                    "fixes": {
+                        "MAYAR": "MAYAR",
+                        "BZ": "BZ AT OR ABOVE 2000",
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "EPEDE": "EPEDE AT OR ABOVE 2600",
+                "ROOST": "ROOST 1900",
+                "FAXAL": "FAXAL AT OR ABOVE 740 RNW 14 TRK 140 UNTIL 496",
+                "HENUT": "OVERFLY HENUT AT OR ABOVE 2600 HOLD AT HENUT RIGHT TURN INBOUNDCOURSE 320 LEGDIST 4 FAF ROOST MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "EPEDE",
+                    "fixes": {
+                        "EPEDE": "EPEDE RIGHT TURN INBOUNDCOURSE 140 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "HENUT": "HENUT AT OR ABOVE 2600",
+                "JUDIT": "JUDIT 1800",
+                "RUPSE": "RUPSE AT OR ABOVE 680 RNW 32 TRK 320 UNTIL 379",
+                "EPEDE": "OVERFLY EPEDE AT OR ABOVE 2600 HOLD AT EPEDE RIGHT TURN INBOUNDCOURSE 140 LEGDIST 4 FAF JUDIT MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "HENUT",
+                    "fixes": {
+                        "HENUT": "HENUT RIGHT TURN INBOUNDCOURSE 320 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

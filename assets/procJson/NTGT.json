@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "FGT07",
+            "lat": 14.722916666666666,
+            "lon": 145.32638888333332
+        },
+        {
+            "name": "FGT25",
+            "lat": 14.696083333333334,
+            "lon": 145.16513888333333
+        },
+        {
+            "name": "GIVEG",
+            "lat": 14.599416666666666,
+            "lon": 145.09491666666668
+        },
+        {
+            "name": "GOMEM",
+            "lat": 14.819472216666666,
+            "lon": 145.39669443333332
+        },
+        {
+            "name": "GOSBU",
+            "lat": 14.681916666666666,
+            "lon": 145.08041666666668
+        },
+        {
+            "name": "GT401",
+            "lat": 14.804722216666667,
+            "lon": 145.31888888333333
+        },
+        {
+            "name": "GT402",
+            "lat": 14.775694433333333,
+            "lon": 145.14441666666667
+        },
+        {
+            "name": "GUDNA",
+            "lat": 14.736972216666667,
+            "lon": 145.41116666666667
+        },
+        {
+            "name": "GUKEV",
+            "lat": 14.764388883333334,
+            "lon": 145.06588888333334
+        },
+        {
+            "name": "GULKI",
+            "lat": 14.654472216666667,
+            "lon": 145.42561111666666
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "GUDNA": "GUDNA AT OR ABOVE 1500",
+                "FGT07": "FGT07 1500 RNW 07 TRK 068 UNTIL 1000 TURN RIGHT DIRECT",
+                "GT401": "GT401",
+                "GOMEM": "GOMEM AT OR ABOVE 1500 FAF FGT07 MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "GOMEM",
+                    "fixes": {
+                        "GOMEM": "GOMEM AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "GUDNA",
+                    "fixes": {
+                        "GUDNA": "GUDNA RIGHT TURN INBOUNDCOURSE 068 ALT 1500 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "GULKI",
+                    "fixes": {
+                        "GULKI": "GULKI AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "GOSBU": "GOSBU AT OR ABOVE 1500",
+                "FGT25": "FGT25 1500 RNW 25 TRK 248 UNTIL 1000 TURN LEFT DIRECT",
+                "GT402": "GT402",
+                "GUKEV": "GUKEV AT OR ABOVE 1500 FAF FGT25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "GIVEG",
+                    "fixes": {
+                        "GIVEG": "GIVEG AT OR ABOVE 1500"
+                    }
+                },
+                {
+                    "name": "GOSBU",
+                    "fixes": {
+                        "GOSBU": "GOSBU RIGHT TURN INBOUNDCOURSE 248 ALT 1500 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "GUKEV",
+                    "fixes": {
+                        "GUKEV": "GUKEV AT OR ABOVE 1500"
+                    }
+                }
+            ]
+        }
+    ]
+}

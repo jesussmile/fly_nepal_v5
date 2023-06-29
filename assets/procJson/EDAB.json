@@ -1,0 +1,127 @@
+{
+    "fixes": [
+        {
+            "name": "AB021",
+            "lat": 51.18589443333333,
+            "lon": 14.479294433333333
+        },
+        {
+            "name": "AB022",
+            "lat": 51.171483333333335,
+            "lon": 14.403177783333334
+        },
+        {
+            "name": "AB071",
+            "lat": 51.23445556666667,
+            "lon": 14.738108333333333
+        },
+        {
+            "name": "AB430",
+            "lat": 51.15943611666667,
+            "lon": 14.339786116666666
+        },
+        {
+            "name": "AB439",
+            "lat": 51.24695,
+            "lon": 14.805297216666666
+        },
+        {
+            "name": "AB458",
+            "lat": 51.143138883333336,
+            "lon": 14.714891666666666
+        },
+        {
+            "name": "AB459",
+            "lat": 51.16698888333333,
+            "lon": 14.843005566666667
+        },
+        {
+            "name": "ABLOX",
+            "lat": 51.38078888333333,
+            "lon": 14.520047216666667
+        },
+        {
+            "name": "BATIX",
+            "lat": 51.227997216666665,
+            "lon": 14.703472216666666
+        },
+        {
+            "name": "BUSIR",
+            "lat": 51.12078888333333,
+            "lon": 14.330883333333333
+        },
+        {
+            "name": "LOBMA",
+            "lat": 51.119625,
+            "lon": 14.559769433333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [
+        {
+            "name": "ABLO3G",
+            "rnw": "25",
+            "fixes": {
+                "AB022": "OVERFLY AB022 TURN RIGHT DIRECT",
+                "ABLOX": "ABLOX AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ABLO3S",
+            "rnw": "07",
+            "fixes": {
+                "AB071": "OVERFLY AB071 TURN LEFT DIRECT",
+                "ABLOX": "ABLOX AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BUSI3S",
+            "rnw": "07",
+            "fixes": {
+                "AB071": "OVERFLY AB071 TURN RIGHT DIRECT",
+                "BUSIR": "BUSIR AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BUSI4G",
+            "rnw": "25",
+            "fixes": {
+                "AB021": "AB021 AT OR ABOVE 1100",
+                "BUSIR": "BUSIR AT OR ABOVE 5000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "AB439": "AB439 AT OR ABOVE 3000 SPEED 200",
+                "BATIX": "BATIX 3000 RNW 25",
+                "AB430": "OVERFLY AB430 TRK 250 UNTIL 3000 TURN LEFT DIRECT",
+                "LOBMA": "LOBMA 5000 SPEED 160 FAF BATIX MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "LOBMA",
+                    "fixes": {
+                        "LOBMA": "LOBMA AT OR ABOVE 5000",
+                        "AB458": "AB458 AT OR ABOVE 4000",
+                        "AB459": "AB459 AT OR ABOVE 3700"
+                    }
+                }
+            ]
+        }
+    ]
+}

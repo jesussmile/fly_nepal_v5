@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "BARND",
+            "lat": 40.178161116666665,
+            "lon": 94.77556388333333
+        },
+        {
+            "name": "PWALK",
+            "lat": 40.52568611666667,
+            "lon": 95.05638056666666
+        },
+        {
+            "name": "RILGE",
+            "lat": 40.726602783333334,
+            "lon": 94.36028056666666
+        },
+        {
+            "name": "SIAMM",
+            "lat": 40.57926943333333,
+            "lon": 94.94300556666667
+        },
+        {
+            "name": "STJ",
+            "lat": 39.960577783333335,
+            "lon": 94.92521943333334
+        },
+        {
+            "name": "SUTVE",
+            "lat": 40.392702783333334,
+            "lon": 94.94850833333334
+        },
+        {
+            "name": "TOSAE",
+            "lat": 40.178744433333335,
+            "lon": 94.60022778333334
+        },
+        {
+            "name": "TRAIG",
+            "lat": 40.38344721666667,
+            "lon": 95.20584166666667
+        },
+        {
+            "name": "VIKKI",
+            "lat": 40.69310278333333,
+            "lon": 95.41387221666666
+        },
+        {
+            "name": "WILCX",
+            "lat": 40.426433333333335,
+            "lon": 94.97582221666667
+        },
+        {
+            "name": "ZAREX",
+            "lat": 40.28041666666667,
+            "lon": 94.85782778333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "PWALK": "PWALK AT OR ABOVE 3000",
+                "WILCX": "WILCX 2700",
+                "SUTVE": "SUTVE AT OR ABOVE 1940 RNW 14 TRK 143 UNTIL 1388",
+                "BARND": "OVERFLY BARND AT OR ABOVE 3000 HOLD AT BARND RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4 FAF WILCX MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "RILGE",
+                    "fixes": {
+                        "RILGE": "RILGE",
+                        "SIAMM": "SIAMM AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "STJ",
+                    "fixes": {
+                        "STJ": "STJ",
+                        "PWALK": "OVERFLY PWALK AT OR ABOVE 3000 HOLD AT PWALK RIGHT TURN INBOUNDCOURSE 143 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TRAIG",
+                    "fixes": {
+                        "TRAIG": "TRAIG",
+                        "PWALK": "OVERFLY PWALK AT OR ABOVE 3000 HOLD AT PWALK RIGHT TURN INBOUNDCOURSE 143 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VIKKI",
+                    "fixes": {
+                        "VIKKI": "VIKKI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "BARND": "BARND AT OR ABOVE 3000",
+                "ZAREX": "ZAREX 2700 RNW 32 TRK 323 UNTIL 1395",
+                "PWALK": "OVERFLY PWALK AT OR ABOVE 3000 HOLD AT PWALK RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4 FAF ZAREX MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "BARND",
+                    "fixes": {
+                        "BARND": "BARND RIGHT TURN INBOUNDCOURSE 323 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "STJ",
+                    "fixes": {
+                        "STJ": "STJ"
+                    }
+                },
+                {
+                    "name": "TOSAE",
+                    "fixes": {
+                        "TOSAE": "TOSAE"
+                    }
+                }
+            ]
+        }
+    ]
+}

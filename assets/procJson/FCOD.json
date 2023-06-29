@@ -1,0 +1,117 @@
+{
+    "fixes": [
+        {
+            "name": "CI04Z",
+            "lat": 1.3269694333333333,
+            "lon": 15.8392
+        },
+        {
+            "name": "D035E",
+            "lat": 1.1373111166666667,
+            "lon": 15.972230566666667
+        },
+        {
+            "name": "D215G",
+            "lat": 1.3060666666666667,
+            "lon": 15.854830566666667
+        },
+        {
+            "name": "FI04Z",
+            "lat": 1.3133111166666667,
+            "lon": 15.848830566666667
+        },
+        {
+            "name": "FN04",
+            "lat": 1.3113055666666666,
+            "lon": 15.851186116666666
+        },
+        {
+            "name": "FN22",
+            "lat": 1.1412611166666666,
+            "lon": 15.969486116666667
+        },
+        {
+            "name": "OTKNB",
+            "lat": 1.2100305666666666,
+            "lon": 15.921647216666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSZ04",
+            "fixes": {
+                "CI04Z": "CI04Z AT OR ABOVE 2800",
+                "FI04Z": "FI04Z 2800 RNW 04",
+                "OTKNB": "OTKNB TRK 035 UNTIL 2300 TURN LEFT DIRECT OTKNB 3000 SPEED 200 FAF FI04Z MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "OTK1",
+                    "fixes": {
+                        "OTKNB": "OTKNB AT OR ABOVE 3000",
+                        "D215G": "D215G AT OR ABOVE 2800 TRK 260 UNTIL 4.4 FROM D215G"
+                    }
+                },
+                {
+                    "name": "OTK2",
+                    "fixes": {
+                        "OTKNB": "OTKNB AT OR ABOVE 3000",
+                        "D215G": "D215G AT OR ABOVE 2800 TRK 260 UNTIL 2.3 FROM D215G"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB04",
+            "fixes": {
+                "FN04": "FN04 2800 RNW 04",
+                "OTKNB": "OVERFLY OTKNB TRK 035 UNTIL 2300 TURN LEFT DIRECT OTKNB 3000 SPEED 200 FAF FN04 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "OTK1",
+                    "fixes": {
+                        "OTKNB": "OTKNB AT OR ABOVE 3000",
+                        "D215G": "D215G AT OR ABOVE 2800 TRK 260 UNTIL 4.4 FROM D215G"
+                    }
+                },
+                {
+                    "name": "OTK2",
+                    "fixes": {
+                        "OTKNB": "OTKNB AT OR ABOVE 3000",
+                        "D215G": "D215G AT OR ABOVE 2800 TRK 260 UNTIL 2.3 FROM D215G"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB22",
+            "fixes": {
+                "FN22": "FN22 2800",
+                "OTKNB": "OTKNB 1204 RNW 22 TRK 215 UNTIL 2300 TURN RIGHT DIRECT OTKNB 3000 FAF FN22 MAP OTK"
+            },
+            "transitions": [
+                {
+                    "name": "OTK1",
+                    "fixes": {
+                        "OTKNB": "OTKNB AT OR ABOVE 3000",
+                        "D035E": "D035E AT OR ABOVE 2800 TRK 350 UNTIL 4.4 FROM D035E"
+                    }
+                },
+                {
+                    "name": "OTK2",
+                    "fixes": {
+                        "OTKNB": "OTKNB AT OR ABOVE 3000",
+                        "D035E": "D035E AT OR ABOVE 2800 TRK 350 UNTIL 2.3 FROM D035E"
+                    }
+                }
+            ]
+        }
+    ]
+}

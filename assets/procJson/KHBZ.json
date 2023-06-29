@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "COGIK",
+            "lat": 35.53754166666667,
+            "lon": 91.95915833333333
+        },
+        {
+            "name": "JEKMU",
+            "lat": 35.457247216666666,
+            "lon": 92.12615556666667
+        },
+        {
+            "name": "POYOG",
+            "lat": 35.61536388333333,
+            "lon": 91.79649443333334
+        },
+        {
+            "name": "RILVE",
+            "lat": 35.40724721666667,
+            "lon": 92.22973888333334
+        },
+        {
+            "name": "TYPIC",
+            "lat": 35.565641666666664,
+            "lon": 91.90051111666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "RILVE": "RILVE AT OR ABOVE 4000",
+                "JEKMU": "JEKMU 2600 RNW 06 TRK 060 UNTIL 1032",
+                "POYOG": "OVERFLY POYOG AT OR ABOVE 4000 HOLD AT POYOG RIGHT TURN INBOUNDCOURSE 240 ALT 4000 LEGDIST 4 FAF JEKMU MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "RILVE",
+                    "fixes": {
+                        "RILVE": "RILVE LEFT TURN INBOUNDCOURSE 059 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "POYOG": "POYOG AT OR ABOVE 4000",
+                "TYPIC": "TYPIC 2600",
+                "COGIK": "COGIK AT OR ABOVE 1540 RNW 24 TRK 240 UNTIL 1032",
+                "RILVE": "OVERFLY RILVE AT OR ABOVE 4000 HOLD AT RILVE LEFT TURN INBOUNDCOURSE 059 ALT 4000 LEGDIST 4 FAF TYPIC MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "POYOG",
+                    "fixes": {
+                        "POYOG": "POYOG RIGHT TURN INBOUNDCOURSE 240 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

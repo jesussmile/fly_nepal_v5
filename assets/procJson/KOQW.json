@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "ARYED",
+            "lat": 42.091872216666665,
+            "lon": 90.76527221666667
+        },
+        {
+            "name": "IXODY",
+            "lat": 42.13423611666666,
+            "lon": 90.79213611666667
+        },
+        {
+            "name": "NAZVI",
+            "lat": 41.88562221666667,
+            "lon": 90.63503333333334
+        },
+        {
+            "name": "UPGEF",
+            "lat": 42.22468056666666,
+            "lon": 90.849625
+        },
+        {
+            "name": "WETOK",
+            "lat": 42.011288883333336,
+            "lon": 90.714275
+        },
+        {
+            "name": "YOPGU",
+            "lat": 41.976097216666666,
+            "lon": 90.69205
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "UPGEF": "UPGEF AT OR ABOVE 3000",
+                "IXODY": "IXODY 2500",
+                "ARYED": "ARYED AT OR ABOVE 1600 RNW 15",
+                "NAZVI": "OVERFLY NAZVI AT OR ABOVE 3000 HOLD AT NAZVI RIGHT TURN INBOUNDCOURSE 335 LEGDIST 4 FAF IXODY MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "UPGEF",
+                    "fixes": {
+                        "UPGEF": "UPGEF RIGHT TURN INBOUNDCOURSE 155 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "NAZVI": "NAZVI AT OR ABOVE 3000",
+                "YOPGU": "YOPGU 2500",
+                "WETOK": "WETOK AT OR ABOVE 1620 RNW 33 TRK 335 UNTIL 1036",
+                "UPGEF": "OVERFLY UPGEF AT OR ABOVE 3000 HOLD AT UPGEF RIGHT TURN INBOUNDCOURSE 155 LEGDIST 4 FAF YOPGU MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "NAZVI",
+                    "fixes": {
+                        "NAZVI": "NAZVI RIGHT TURN INBOUNDCOURSE 335 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

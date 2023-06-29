@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "CONUZ",
+            "lat": 25.089775,
+            "lon": 76.51701943333333
+        },
+        {
+            "name": "FABLI",
+            "lat": 25.379722216666668,
+            "lon": 76.51777778333333
+        },
+        {
+            "name": "FIRSU",
+            "lat": 25.139166666666668,
+            "lon": 76.21805556666666
+        },
+        {
+            "name": "GUDVE",
+            "lat": 25.224786116666667,
+            "lon": 76.88005
+        },
+        {
+            "name": "HEKOP",
+            "lat": 25.237486116666666,
+            "lon": 77.551425
+        },
+        {
+            "name": "INURE",
+            "lat": 25.063786116666666,
+            "lon": 76.92318888333334
+        },
+        {
+            "name": "KALIC",
+            "lat": 25.234716666666667,
+            "lon": 76.29215556666666
+        },
+        {
+            "name": "NOSDE",
+            "lat": 25.090833333333332,
+            "lon": 76.29305556666667
+        },
+        {
+            "name": "RABNE",
+            "lat": 25.35972221666667,
+            "lon": 76.38944443333334
+        },
+        {
+            "name": "SIVEE",
+            "lat": 25.2075,
+            "lon": 76.27111111666666
+        },
+        {
+            "name": "ZARAR",
+            "lat": 25.227569433333333,
+            "lon": 77.28438888333334
+        },
+        {
+            "name": "ZESOK",
+            "lat": 25.428055566666668,
+            "lon": 76.4425
+        },
+        {
+            "name": "ZUTUN",
+            "lat": 24.963311116666667,
+            "lon": 77.24717221666667
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [
+        {
+            "name": "CONUZ1",
+            "rnw": "15",
+            "fixes": {
+                "KALIC": "OVERFLY KALIC AT OR ABOVE 640",
+                "CONUZ": "CONUZ AT OR ABOVE 3000 SPEED 210"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "HEKOP",
+                    "fixes": [
+                        "GUDVE",
+                        "ZARAR",
+                        "HEKOP"
+                    ]
+                },
+                {
+                    "name": "ZUTUN",
+                    "fixes": [
+                        "INURE",
+                        "ZUTUN"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "ZESOK": "ZESOK AT OR ABOVE 2300 SPEED 210",
+                "RABNE": "RABNE 1700 RNW 15 TRK 153 UNTIL 430 TURN RIGHT DIRECT",
+                "FABLI": "OVERFLY FABLI AT OR ABOVE 2300 HOLD AT FABLI RIGHT TURN INBOUNDCOURSE 063 LEGTIME 1 FAF RABNE MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "FABLI",
+                    "fixes": {
+                        "FABLI": "FABLI SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "FIRSU": "FIRSU AT OR ABOVE 2300 SPEED 210",
+                "SIVEE": "SIVEE 1700 RNW 33 TRK 333 UNTIL 430 TURN LEFT DIRECT",
+                "NOSDE": "OVERFLY NOSDE AT OR ABOVE 2300 HOLD AT NOSDE RIGHT TURN INBOUNDCOURSE 063 LEGTIME 1 FAF SIVEE MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "NOSDE",
+                    "fixes": {
+                        "NOSDE": "NOSDE SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

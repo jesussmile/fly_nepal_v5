@@ -1,0 +1,98 @@
+{
+    "fixes": [
+        {
+            "name": "FARLN",
+            "lat": 39.377063883333335,
+            "lon": 81.84849166666666
+        },
+        {
+            "name": "FEHOP",
+            "lat": 39.67216388333333,
+            "lon": 81.92250833333334
+        },
+        {
+            "name": "GOFAR",
+            "lat": 39.75906388333333,
+            "lon": 82.11246388333333
+        },
+        {
+            "name": "JEGUN",
+            "lat": 39.672611116666666,
+            "lon": 82.27394443333333
+        },
+        {
+            "name": "LARIC",
+            "lat": 39.56238333333334,
+            "lon": 82.34845556666667
+        },
+        {
+            "name": "OBKAE",
+            "lat": 39.75162221666667,
+            "lon": 81.95532221666667
+        },
+        {
+            "name": "QANGI",
+            "lat": 39.71864443333333,
+            "lon": 82.08882221666667
+        },
+        {
+            "name": "ZZV",
+            "lat": 39.94085833333333,
+            "lon": 81.89260278333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD26",
+            "fixes": {
+                "ZZV": "ZZV AT OR ABOVE 3000",
+                "GOFAR": "GOFAR 2700 RNW 26",
+                "LARIC": "LARIC AT OR ABOVE 3000 HOLD AT LARIC RIGHT TURN INBOUNDCOURSE 168 LEGTIME 1 FAF GOFAR MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "ZZV",
+                    "fixes": {
+                        "ZZV": "ZZV RIGHT TURN INBOUNDCOURSE 229 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "OBKAE": "OBKAE AT OR ABOVE 3000",
+                "QANGI": "QANGI 2700 RNW 26",
+                "JEGUN": "JEGUN",
+                "LARIC": "OVERFLY LARIC AT OR ABOVE 3000 HOLD AT LARIC RIGHT TURN INBOUNDCOURSE 169 LEGDIST 4 FAF QANGI MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "FARLN",
+                    "fixes": {
+                        "FARLN": "FARLN",
+                        "FEHOP": "FEHOP AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "OBKAE",
+                    "fixes": {
+                        "OBKAE": "OBKAE RIGHT TURN INBOUNDCOURSE 259 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZZV",
+                    "fixes": {
+                        "ZZV": "ZZV"
+                    }
+                }
+            ]
+        }
+    ]
+}

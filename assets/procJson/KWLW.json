@@ -1,0 +1,104 @@
+{
+    "fixes": [
+        {
+            "name": "DALON",
+            "lat": 39.06878888333333,
+            "lon": 122.26638611666667
+        },
+        {
+            "name": "ILA",
+            "lat": 39.071175,
+            "lon": 122.02726943333333
+        },
+        {
+            "name": "PAPAY",
+            "lat": 39.41481388333333,
+            "lon": 122.21561111666666
+        },
+        {
+            "name": "UVXUZ",
+            "lat": 39.50206943333333,
+            "lon": 122.21914721666667
+        },
+        {
+            "name": "WETEM",
+            "lat": 39.418775,
+            "lon": 122.18186943333333
+        },
+        {
+            "name": "WIMUL",
+            "lat": 39.31389166666666,
+            "lon": 122.21153333333334
+        },
+        {
+            "name": "WUNIP",
+            "lat": 39.31301388333333,
+            "lon": 122.13465278333334
+        },
+        {
+            "name": "YACUG",
+            "lat": 39.47695556666667,
+            "lon": 122.21812778333333
+        },
+        {
+            "name": "ZOKOP",
+            "lat": 39.76535,
+            "lon": 122.23002221666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 16",
+        "RNW 31",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD34",
+            "fixes": {
+                "WUNIP": "WUNIP AT OR ABOVE 3000 WUNIP WUNIP AT OR ABOVE 3000 HOLD AT WUNIP RIGHT TURN INBOUNDCOURSE 323 LEGTIME 1 FAF WETEM MAP UVXUZ",
+                "WETEM": "WETEM 2000",
+                "UVXUZ": "UVXUZ 317 RNW 34 TRK 323 UNTIL 550 TURN RIGHT HDG 200 INTERCEPT RADIAL 143 TO"
+            },
+            "transitions": [
+                {
+                    "name": "ILA",
+                    "fixes": {
+                        "ILA": "ILA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "WIMUL": "WIMUL AT OR ABOVE 2900",
+                "PAPAY": "PAPAY 2000",
+                "YACUG": "YACUG AT OR ABOVE 800 RNW 34 TRK 344 UNTIL 460",
+                "ZOKOP": "OVERFLY ZOKOP AT OR ABOVE 3000 HOLD AT ZOKOP RIGHT TURN INBOUNDCOURSE 344 LEGDIST 4 FAF PAPAY MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "DALON",
+                    "fixes": {
+                        "DALON": "DALON"
+                    }
+                },
+                {
+                    "name": "ILA",
+                    "fixes": {
+                        "ILA": "ILA"
+                    }
+                },
+                {
+                    "name": "WIMUL",
+                    "fixes": {
+                        "WIMUL": "WIMUL RIGHT TURN INBOUNDCOURSE 315 ALT 2900 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

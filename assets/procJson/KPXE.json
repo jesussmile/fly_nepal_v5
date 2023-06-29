@@ -1,0 +1,90 @@
+{
+    "fixes": [
+        {
+            "name": "ANICU",
+            "lat": 32.715438883333334,
+            "lon": 83.76955
+        },
+        {
+            "name": "FEPSI",
+            "lat": 32.603555566666664,
+            "lon": 83.76834443333334
+        },
+        {
+            "name": "GUVNR",
+            "lat": 32.172038883333336,
+            "lon": 83.76373333333333
+        },
+        {
+            "name": "PRDUE",
+            "lat": 32.417488883333334,
+            "lon": 83.76634721666667
+        },
+        {
+            "name": "SCTRY",
+            "lat": 32.30559721666667,
+            "lon": 83.76515
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS36",
+            "fixes": {
+                "SCTRY": "SCTRY AT OR ABOVE 2300 SCTRY SCTRY AT OR ABOVE 2300 HOLD AT SCTRY RIGHT TURN INBOUNDCOURSE 005 LEGTIME 1 FAF PRDUE MAP RNW 36",
+                "PRDUE": "PRDUE 2100 RNW 36 TRK 005 UNTIL 1100 TURN LEFT HDG 195 INTERCEPT RADIAL 111 TO"
+            },
+            "transitions": [
+                {
+                    "name": "GUVNR",
+                    "fixes": {
+                        "GUVNR": "GUVNR"
+                    }
+                },
+                {
+                    "name": "SCTRY",
+                    "fixes": {
+                        "SCTRY": "SCTRY RIGHT TURN INBOUNDCOURSE 005 ALT 2300 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ANICU": "ANICU AT OR ABOVE 2300",
+                "FEPSI": "FEPSI 2100 RNW 18 TRK 185 UNTIL 618",
+                "SCTRY": "OVERFLY SCTRY AT OR ABOVE 2300 HOLD AT SCTRY RIGHT TURN INBOUNDCOURSE 005 LEGDIST 4 FAF FEPSI MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "ANICU",
+                    "fixes": {
+                        "ANICU": "ANICU RIGHT TURN INBOUNDCOURSE 185 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "SCTRY": "SCTRY AT OR ABOVE 2300",
+                "PRDUE": "PRDUE 2100 RNW 36 TRK 005 UNTIL 667",
+                "ANICU": "OVERFLY ANICU AT OR ABOVE 2300 HOLD AT ANICU RIGHT TURN INBOUNDCOURSE 185 LEGDIST 4 FAF PRDUE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "SCTRY",
+                    "fixes": {
+                        "SCTRY": "SCTRY RIGHT TURN INBOUNDCOURSE 005 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

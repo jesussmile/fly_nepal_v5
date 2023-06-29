@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "AKEME",
+            "lat": 30.913508333333333,
+            "lon": 84.88228611666666
+        },
+        {
+            "name": "DEBTS",
+            "lat": 30.954325,
+            "lon": 84.93595278333333
+        },
+        {
+            "name": "DONAC",
+            "lat": 31.002738883333333,
+            "lon": 84.88146943333334
+        },
+        {
+            "name": "DUMOY",
+            "lat": 31.098297216666666,
+            "lon": 84.87303888333334
+        },
+        {
+            "name": "FAPEX",
+            "lat": 30.806213883333335,
+            "lon": 84.88765833333333
+        },
+        {
+            "name": "MAI",
+            "lat": 30.786194433333332,
+            "lon": 85.12446666666666
+        },
+        {
+            "name": "PASUE",
+            "lat": 31.053230566666667,
+            "lon": 84.87529721666667
+        },
+        {
+            "name": "TOLEE",
+            "lat": 31.206844433333334,
+            "lon": 84.86758056666666
+        },
+        {
+            "name": "WULUK",
+            "lat": 30.958883333333333,
+            "lon": 84.88001943333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "FAPEX": "FAPEX AT OR ABOVE 2500",
+                "AKEME": "AKEME 1800",
+                "WULUK": "WULUK AT OR ABOVE 920 RNW 01 TRK 007 UNTIL 394",
+                "TOLEE": "OVERFLY TOLEE AT OR ABOVE 2500 HOLD AT TOLEE RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4 FAF AKEME MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "FAPEX",
+                    "fixes": {
+                        "FAPEX": "FAPEX RIGHT TURN INBOUNDCOURSE 007 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "TOLEE": "TOLEE AT OR ABOVE 2500",
+                "DUMOY": "DUMOY 1800",
+                "PASUE": "PASUE AT OR ABOVE 940 RNW 19 TRK 187 UNTIL 397",
+                "FAPEX": "OVERFLY FAPEX AT OR ABOVE 2500 HOLD AT FAPEX RIGHT TURN INBOUNDCOURSE 007 LEGDIST 4 FAF DUMOY MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "TOLEE",
+                    "fixes": {
+                        "TOLEE": "TOLEE RIGHT TURN INBOUNDCOURSE 187 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA01",
+            "fixes": {
+                "MAI": "MAI AT OR ABOVE 2000",
+                "DEBTS": "DEBTS 1800 DEBTS AT OR ABOVE 1800 HOLD AT DEBTS RIGHT TURN INBOUNDCOURSE 044 LEGTIME 1 FAF DEBTS MAP DONAC",
+                "DONAC": "DONAC 1060 RNW 01 TRK 044 UNTIL 1060 TURN RIGHT DIRECT"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORA19",
+            "fixes": {
+                "MAI": "MAI AT OR ABOVE 2000",
+                "DEBTS": "DEBTS 1800 DEBTS AT OR ABOVE 1800 HOLD AT DEBTS RIGHT TURN INBOUNDCOURSE 044 LEGTIME 1 FAF DEBTS MAP DONAC",
+                "DONAC": "DONAC 1060 RNW 19 TRK 044 UNTIL 1060 TURN RIGHT DIRECT"
+            },
+            "transitions": []
+        }
+    ]
+}

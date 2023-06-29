@@ -1,0 +1,87 @@
+{
+    "fixes": [
+        {
+            "name": "COLTU",
+            "lat": 49.141825,
+            "lon": 96.098725
+        },
+        {
+            "name": "FEDPO",
+            "lat": 48.97296943333333,
+            "lon": 95.96093056666666
+        },
+        {
+            "name": "JIRMA",
+            "lat": 49.03671943333333,
+            "lon": 96.01283056666666
+        },
+        {
+            "name": "JURUN",
+            "lat": 48.916930566666665,
+            "lon": 95.91543056666667
+        },
+        {
+            "name": "OTBEE",
+            "lat": 48.87286111666667,
+            "lon": 95.87973333333333
+        },
+        {
+            "name": "RAROE",
+            "lat": 49.08027778333334,
+            "lon": 96.048375
+        },
+        {
+            "name": "TITUE",
+            "lat": 48.61927778333333,
+            "lon": 95.56888888333333
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "COLTU": "COLTU AT OR ABOVE 3700",
+                "RAROE": "RAROE 2800",
+                "JIRMA": "JIRMA AT OR ABOVE 1840 RNW 15 TRK 147 UNTIL 1460",
+                "OTBEE": "OVERFLY OTBEE AT OR ABOVE 3000 HOLD AT OTBEE RIGHT TURN INBOUNDCOURSE 327 LEGDIST 4 FAF RAROE MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "COLTU",
+                    "fixes": {
+                        "COLTU": "COLTU RIGHT TURN INBOUNDCOURSE 147 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "OTBEE": "OTBEE AT OR ABOVE 3000",
+                "JURUN": "JURUN 2800",
+                "FEDPO": "FEDPO AT OR ABOVE 1580 RNW 33 TRK 327 UNTIL 1440",
+                "COLTU": "OVERFLY COLTU AT OR ABOVE 3700 HOLD AT COLTU RIGHT TURN INBOUNDCOURSE 147 LEGDIST 4 FAF JURUN MAP RNW 33"
+            },
+            "transitions": [
+                {
+                    "name": "OTBEE",
+                    "fixes": {
+                        "OTBEE": "OTBEE RIGHT TURN INBOUNDCOURSE 327 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TITUE",
+                    "fixes": {
+                        "TITUE": "TITUE"
+                    }
+                }
+            ]
+        }
+    ]
+}

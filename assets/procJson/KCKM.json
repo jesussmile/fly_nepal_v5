@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "BANAY",
+            "lat": 34.50375556666667,
+            "lon": 90.50103888333334
+        },
+        {
+            "name": "FEBOP",
+            "lat": 34.209411116666665,
+            "lon": 90.51728888333334
+        },
+        {
+            "name": "HULON",
+            "lat": 34.097488883333334,
+            "lon": 90.52344166666667
+        },
+        {
+            "name": "LARYE",
+            "lat": 34.39031666666666,
+            "lon": 90.50731666666667
+        },
+        {
+            "name": "YEMJU",
+            "lat": 34.26393888333333,
+            "lon": 90.51428888333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "BANAY": "BANAY AT OR ABOVE 2000",
+                "LARYE": "LARYE 1800 RNW 18 TRK 183 UNTIL 423",
+                "HULON": "OVERFLY HULON AT OR ABOVE 2000 HOLD AT HULON RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4 FAF LARYE MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "BANAY",
+                    "fixes": {
+                        "BANAY": "BANAY RIGHT TURN INBOUNDCOURSE 183 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "HULON": "HULON AT OR ABOVE 2000",
+                "FEBOP": "FEBOP 1800",
+                "YEMJU": "YEMJU AT OR ABOVE 740 RNW 36 TRK 003 UNTIL 448",
+                "BANAY": "OVERFLY BANAY AT OR ABOVE 2000 HOLD AT BANAY RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4 FAF FEBOP MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "HULON",
+                    "fixes": {
+                        "HULON": "HULON RIGHT TURN INBOUNDCOURSE 003 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

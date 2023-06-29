@@ -1,0 +1,152 @@
+{
+    "fixes": [
+        {
+            "name": "ATNIB",
+            "lat": 2.2033055666666668,
+            "lon": 28.915336116666666
+        },
+        {
+            "name": "BAGTI",
+            "lat": 2.620825,
+            "lon": 28.755102783333335
+        },
+        {
+            "name": "DOPEM",
+            "lat": 2.548644433333333,
+            "lon": 28.841847216666668
+        },
+        {
+            "name": "EBNEL",
+            "lat": 2.5607194333333334,
+            "lon": 28.548583333333333
+        },
+        {
+            "name": "M35C1",
+            "lat": 2.4649083333333333,
+            "lon": 28.840683333333335
+        },
+        {
+            "name": "OSLON",
+            "lat": 2.4733694333333336,
+            "lon": 28.75785
+        },
+        {
+            "name": "TIPLI",
+            "lat": 2.925,
+            "lon": 28.733333333333334
+        },
+        {
+            "name": "VAKIB",
+            "lat": 2.2850777833333336,
+            "lon": 28.806313883333335
+        },
+        {
+            "name": "VOLTO",
+            "lat": 2.398258333333333,
+            "lon": 28.833952783333334
+        },
+        {
+            "name": "XARIR",
+            "lat": 2.2678611166666665,
+            "lon": 28.798122216666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "EBNE1B",
+            "rnw": "17",
+            "fixes": {
+                "VOLTO": "OVERFLY VOLTO AT OR ABOVE 7200 SPEED 250",
+                "BAGTI": "BAGTI AT OR ABOVE 10000",
+                "EBNEL": "EBNEL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "EBNE1C",
+            "rnw": "35",
+            "fixes": {
+                "XARIR": "OVERFLY XARIR AT OR ABOVE 6600 TURN RIGHT DIRECT",
+                "ATNIB": "ATNIB SPEED 160 TURN RIGHT DIRECT",
+                "VOLTO": "VOLTO SPEED 250",
+                "BAGTI": "BAGTI",
+                "EBNEL": "EBNEL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TIPL1B",
+            "rnw": "17",
+            "fixes": {
+                "VOLTO": "OVERFLY VOLTO AT OR ABOVE 7200 SPEED 250",
+                "BAGTI": "BAGTI AT OR ABOVE 10000",
+                "TIPLI": "TIPLI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TIPL1C",
+            "rnw": "35",
+            "fixes": {
+                "XARIR": "OVERFLY XARIR AT OR ABOVE 6600 TURN RIGHT DIRECT",
+                "ATNIB": "ATNIB SPEED 160 TURN RIGHT DIRECT",
+                "VOLTO": "VOLTO SPEED 250",
+                "BAGTI": "BAGTI",
+                "TIPLI": "TIPLI"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "EBNE1A",
+            "runway": "RNW 35",
+            "fixes": {
+                "EBNEL": "EBNEL SPEED 250",
+                "OSLON": "OSLON SPEED 210"
+            }
+        },
+        {
+            "name": "TIPL1A",
+            "runway": "RNW 35",
+            "fixes": {
+                "TIPLI": "TIPLI SPEED 250",
+                "DOPEM": "DOPEM SPEED 210"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "VOLTO": "VOLTO 7500 RNW 35",
+                "VAKIB": "OVERFLY VAKIB AT OR ABOVE 7200",
+                "ATNIB": "ATNIB 9000 HOLD AT ATNIB LEFT TURN INBOUNDCOURSE 246 ALT 9000 LEGTIME 1 FAF VOLTO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "DOPEM",
+                    "fixes": {
+                        "DOPEM": "DOPEM AT OR ABOVE 11000",
+                        "M35C1": "M35C1 AT OR ABOVE 8900"
+                    }
+                },
+                {
+                    "name": "OSLON",
+                    "fixes": {
+                        "OSLON": "OSLON AT OR ABOVE 11000",
+                        "M35C1": "M35C1 AT OR ABOVE 8900"
+                    }
+                }
+            ]
+        }
+    ]
+}

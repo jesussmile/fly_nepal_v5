@@ -1,0 +1,97 @@
+{
+    "fixes": [
+        {
+            "name": "BISOP",
+            "lat": 35.58224166666667,
+            "lon": 112.42392221666667
+        },
+        {
+            "name": "CAJLA",
+            "lat": 35.519336116666665,
+            "lon": 112.31932221666666
+        },
+        {
+            "name": "EHGUY",
+            "lat": 35.811669433333336,
+            "lon": 112.07184721666667
+        },
+        {
+            "name": "FLG",
+            "lat": 35.14719721666667,
+            "lon": 111.67416388333334
+        },
+        {
+            "name": "GCN",
+            "lat": 35.960341666666665,
+            "lon": 112.14604721666667
+        },
+        {
+            "name": "IVLEC",
+            "lat": 35.56730278333333,
+            "lon": 112.18737221666666
+        },
+        {
+            "name": "JOKUD",
+            "lat": 35.429025,
+            "lon": 112.12638056666667
+        },
+        {
+            "name": "JUDDU",
+            "lat": 35.489411116666666,
+            "lon": 112.22404166666666
+        },
+        {
+            "name": "VALEQ",
+            "lat": 35.73381388333333,
+            "lon": 112.10873333333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "JUDDU": "JUDDU AT OR ABOVE 7800",
+                "IVLEC": "IVLEC 7500 RNW 01 TRK 008 UNTIL 6399",
+                "GCN": "OVERFLY GCN AT OR ABOVE 10000 HOLD AT GCN LEFT TURN INBOUNDCOURSE 016 LEGDIST 7 FAF IVLEC MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "BISOP",
+                    "fixes": {
+                        "BISOP": "BISOP",
+                        "CAJLA": "CAJLA AT OR ABOVE 8800"
+                    }
+                },
+                {
+                    "name": "FLG",
+                    "fixes": {
+                        "FLG": "FLG",
+                        "JOKUD": "JOKUD AT OR ABOVE 11500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "EHGUY": "EHGUY AT OR ABOVE 8500",
+                "VALEQ": "VALEQ 7900 RNW 19 TRK 188 UNTIL 7000 TURN RIGHT DIRECT",
+                "GCN": "OVERFLY GCN AT OR ABOVE 10000 HOLD AT GCN LEFT TURN INBOUNDCOURSE 016 LEGDIST 7 FAF VALEQ MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "GCN",
+                    "fixes": {
+                        "GCN": "GCN"
+                    }
+                }
+            ]
+        }
+    ]
+}

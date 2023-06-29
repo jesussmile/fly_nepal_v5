@@ -1,0 +1,278 @@
+{
+    "fixes": [
+        {
+            "name": "BOLAR",
+            "lat": 0.08286666666666667,
+            "lon": 51.022191666666664
+        },
+        {
+            "name": "CF08",
+            "lat": 0.029413883333333335,
+            "lon": 51.17863333333333
+        },
+        {
+            "name": "CF26",
+            "lat": 0.114675,
+            "lon": 50.95534443333333
+        },
+        {
+            "name": "DADOS",
+            "lat": 0.004663883333333333,
+            "lon": 51.14665278333333
+        },
+        {
+            "name": "DIVRI",
+            "lat": 0.14433333333333334,
+            "lon": 50.8405
+        },
+        {
+            "name": "EPGOD",
+            "lat": 0.09569721666666667,
+            "lon": 50.99114721666667
+        },
+        {
+            "name": "INDOB",
+            "lat": 0.23033333333333333,
+            "lon": 50.563
+        },
+        {
+            "name": "MCP",
+            "lat": 0.052247216666666665,
+            "lon": 51.073113883333335
+        },
+        {
+            "name": "MQ001",
+            "lat": 0.046375000000000006,
+            "lon": 51.08070278333334
+        },
+        {
+            "name": "MQ002",
+            "lat": 0.05668056666666667,
+            "lon": 51.06475
+        },
+        {
+            "name": "MQ361",
+            "lat": 0.10133333333333333,
+            "lon": 50.99366666666667
+        },
+        {
+            "name": "MQ362",
+            "lat": 0.1465,
+            "lon": 50.92366666666667
+        },
+        {
+            "name": "MQ368",
+            "lat": 0.0003333333333333333,
+            "lon": 51.15
+        },
+        {
+            "name": "MQ369",
+            "lat": 0.04483333333333333,
+            "lon": 51.22
+        },
+        {
+            "name": "MQ374",
+            "lat": 0.09916666666666667,
+            "lon": 51.30416666666667
+        },
+        {
+            "name": "MQ376",
+            "lat": 0.016,
+            "lon": 51.29933333333334
+        },
+        {
+            "name": "MQ377",
+            "lat": 0.14283333333333334,
+            "lon": 51.198166666666665
+        },
+        {
+            "name": "MQ378",
+            "lat": 0.08566666666666665,
+            "lon": 50.84433333333333
+        },
+        {
+            "name": "MQ379",
+            "lat": 0.2445,
+            "lon": 50.9455
+        },
+        {
+            "name": "MQ381",
+            "lat": 0.20033333333333334,
+            "lon": 50.84
+        },
+        {
+            "name": "VUMBO",
+            "lat": 0.25244443333333333,
+            "lon": 51.57094443333333
+        },
+        {
+            "name": "XONET",
+            "lat": 0.009333333333333334,
+            "lon": 51.136
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "BOLA1B",
+            "rnw": "08",
+            "fixes": {
+                "BOLAR": "OVERFLY BOLAR"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "INDOB",
+                    "fixes": [
+                        "INDOB"
+                    ]
+                },
+                {
+                    "name": "VUMBO",
+                    "fixes": [
+                        "VUMBO"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OMNI",
+            "rnw": "08",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 08",
+                    "fixes": {
+                        "RNW 08": "RNW 08 HDG 077 UNTIL 1000 HDG 077 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 26",
+                    "fixes": {
+                        "RNW 26": "RNW 26 HDG 257 UNTIL 1000 HDG 257 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "XONE1B",
+            "rnw": "26",
+            "fixes": {
+                "XONET": "OVERFLY XONET"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "INDOB",
+                    "fixes": [
+                        "DIVRI",
+                        "INDOB"
+                    ]
+                },
+                {
+                    "name": "VUMBO",
+                    "fixes": [
+                        "VUMBO"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD08",
+            "fixes": {
+                "CF08": "CF08 AT OR ABOVE 1700",
+                "DADOS": "DADOS 1690",
+                "MQ001": "MQ001 99 RNW 08",
+                "MCP": "OVERFLY MCP TRK 072 UNTIL 2000 TURN RIGHT DIRECT MCP AT OR ABOVE 3000 HOLD AT MCP RIGHT TURN INBOUNDCOURSE 279 ALT 3000 LEGTIME 1 FAF DADOS MAP MQ001"
+            },
+            "transitions": [
+                {
+                    "name": "MCP",
+                    "fixes": {
+                        "MCP": "MCP AT OR ABOVE 3000 TRK 279 UNTIL 8.0 FROM MCP SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD26",
+            "fixes": {
+                "CF26": "CF26 AT OR ABOVE 1700",
+                "EPGOD": "EPGOD 1690",
+                "MQ002": "MQ002 98 RNW 26",
+                "MCP": "OVERFLY MCP TRK 262 UNTIL 2000 TURN RIGHT DIRECT MCP AT OR ABOVE 3000 HOLD AT MCP RIGHT TURN INBOUNDCOURSE 113 ALT 3000 LEGTIME 1 FAF EPGOD MAP MQ002"
+            },
+            "transitions": [
+                {
+                    "name": "MCP",
+                    "fixes": {
+                        "MCP": "MCP AT OR ABOVE 3000 TRK 113 UNTIL 8.0 FROM MCP SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "MQ369": "MQ369 AT OR ABOVE 2000",
+                "MQ368": "MQ368 1690 RNW 08",
+                "MQ381": "OVERFLY MQ381 AT OR ABOVE 3000 HOLD AT MQ381 RIGHT TURN INBOUNDCOURSE 257 ALT 3000 LEGTIME 1 FAF MQ368 MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "MQ374",
+                    "fixes": {
+                        "MQ374": "MQ374 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MQ376",
+                    "fixes": {
+                        "MQ376": "MQ376 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MQ377",
+                    "fixes": {
+                        "MQ377": "MQ377 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "MQ362": "MQ362 AT OR ABOVE 2000",
+                "MQ361": "MQ361 1710 RNW 26",
+                "MQ374": "OVERFLY MQ374 AT OR ABOVE 3000 SPEED 230 HOLD AT MQ374 RIGHT TURN INBOUNDCOURSE 077 ALT 3000 SPEED 230 LEGTIME 1 FAF MQ361 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "MQ378",
+                    "fixes": {
+                        "MQ378": "MQ378 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MQ379",
+                    "fixes": {
+                        "MQ379": "MQ379 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MQ381",
+                    "fixes": {
+                        "MQ381": "MQ381 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

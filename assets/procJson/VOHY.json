@@ -1,0 +1,207 @@
+{
+    "fixes": [
+        {
+            "name": "34VOR",
+            "lat": 17.448316666666667,
+            "lon": 78.39857778333334
+        },
+        {
+            "name": "46VOR",
+            "lat": 17.452913883333334,
+            "lon": 78.53771666666667
+        },
+        {
+            "name": "CI27",
+            "lat": 17.45591943333333,
+            "lon": 78.62246943333334
+        },
+        {
+            "name": "FD09",
+            "lat": 17.443224999999998,
+            "lon": 78.3483
+        },
+        {
+            "name": "FD27",
+            "lat": 17.452011116666668,
+            "lon": 78.59001111666667
+        },
+        {
+            "name": "FI27",
+            "lat": 17.455305566666667,
+            "lon": 78.58760556666667
+        },
+        {
+            "name": "HHY",
+            "lat": 17.454277783333332,
+            "lon": 78.45752778333333
+        },
+        {
+            "name": "HY401",
+            "lat": 17.450822216666666,
+            "lon": 78.34448056666666
+        },
+        {
+            "name": "HY402",
+            "lat": 17.448441666666668,
+            "lon": 78.22246666666666
+        },
+        {
+            "name": "HY403",
+            "lat": 17.44598888333333,
+            "lon": 78.10045556666667
+        },
+        {
+            "name": "HY404",
+            "lat": 17.331330566666665,
+            "lon": 78.22498333333333
+        },
+        {
+            "name": "HY405",
+            "lat": 17.454894433333333,
+            "lon": 78.56271111666666
+        },
+        {
+            "name": "HY406",
+            "lat": 17.337777783333333,
+            "lon": 78.56501388333334
+        },
+        {
+            "name": "HY410",
+            "lat": 17.455422216666665,
+            "lon": 78.59214166666666
+        },
+        {
+            "name": "HY411",
+            "lat": 17.457575,
+            "lon": 78.71416388333333
+        },
+        {
+            "name": "HY412",
+            "lat": 17.459652783333333,
+            "lon": 78.83618888333334
+        },
+        {
+            "name": "HY413",
+            "lat": 17.340455566666666,
+            "lon": 78.71636943333333
+        },
+        {
+            "name": "HY414",
+            "lat": 17.451352783333334,
+            "lon": 78.37249443333333
+        },
+        {
+            "name": "HY415",
+            "lat": 17.334238883333335,
+            "lon": 78.37491943333333
+        },
+        {
+            "name": "MD09",
+            "lat": 17.452525,
+            "lon": 78.44018888333333
+        },
+        {
+            "name": "MD27",
+            "lat": 17.453686116666667,
+            "lon": 78.49239443333333
+        },
+        {
+            "name": "RW27",
+            "lat": 17.453322216666667,
+            "lon": 78.47708056666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD09",
+            "fixes": {
+                "FD09": "FD09 3800",
+                "34VOR": "34VOR AT OR ABOVE 2880",
+                "MD09": "MD09 2118 RNW 09 TRK 085 UNTIL 3800 TURN RIGHT DIRECT",
+                "HHY": "HHY HOLD AT HHY RIGHT TURN INBOUNDCOURSE 085 ALT 3800 LEGTIME 1 FAF FD09 MAP MD09"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD27",
+            "fixes": {
+                "FD27": "FD27 3800",
+                "46VOR": "46VOR AT OR ABOVE 2880",
+                "MD27": "MD27 2046 RNW 27 TRK 272 UNTIL 3800 TURN LEFT DIRECT",
+                "HHY": "HHY HOLD AT HHY LEFT TURN INBOUNDCOURSE 272 ALT 3800 LEGTIME 1 FAF FD27 MAP MD27"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILSZ27",
+            "fixes": {
+                "CI27": "CI27 AT OR ABOVE 3800",
+                "FI27": "FI27 3800 RNW 27 TRK 270 UNTIL 3800 TURN LEFT DIRECT",
+                "HHY": "HHY HOLD AT HHY RIGHT TURN INBOUNDCOURSE 090 ALT 3800 LEGTIME 1 FAF FI27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "HHY",
+                    "fixes": {
+                        "HHY": "HHY AT OR ABOVE 3800",
+                        "FI27": "FI27 AT OR ABOVE 3800 TRK 135 UNTIL 4.4 FROM FI27"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY09",
+            "fixes": {
+                "HY402": "HY402 3800 SPEED 210 HY402 3800 HOLD AT HY402 RIGHT TURN INBOUNDCOURSE 090 ALT 3800 LEGTIME 1 FAF HY401 MAP RNW 09",
+                "HY401": "HY401 3800 RNW 09",
+                "HY405": "HY405 SPEED 210",
+                "HY406": "HY406 SPEED 210",
+                "HY404": "HY404 SPEED 210"
+            },
+            "transitions": [
+                {
+                    "name": "HY403",
+                    "fixes": {
+                        "HY403": "HY403 AT OR ABOVE 3800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "HY404",
+                    "fixes": {
+                        "HY404": "HY404 AT OR ABOVE 3800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY27",
+            "fixes": {
+                "HY411": "HY411 3800 SPEED 210 HY411 3800 HOLD AT HY411 LEFT TURN INBOUNDCOURSE 270 ALT 3800 LEGTIME 1 FAF HY410 MAP RNW 27",
+                "HY410": "HY410 3800 RNW 27",
+                "HY414": "HY414 SPEED 210",
+                "HY415": "HY415 SPEED 210",
+                "HY413": "HY413 SPEED 210"
+            },
+            "transitions": [
+                {
+                    "name": "HY412",
+                    "fixes": {
+                        "HY412": "HY412 AT OR ABOVE 3800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "HY413",
+                    "fixes": {
+                        "HY413": "HY413 AT OR ABOVE 3800 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

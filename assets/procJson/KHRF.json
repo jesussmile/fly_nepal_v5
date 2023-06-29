@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "ACAFI",
+            "lat": 46.36520556666667,
+            "lon": 114.12180556666667
+        },
+        {
+            "name": "BOPSE",
+            "lat": 46.25064166666667,
+            "lon": 114.1268
+        },
+        {
+            "name": "DIGEY",
+            "lat": 46.15153333333333,
+            "lon": 114.17162778333334
+        },
+        {
+            "name": "ECENE",
+            "lat": 46.10050833333333,
+            "lon": 114.18823888333333
+        },
+        {
+            "name": "GARPE",
+            "lat": 46.04947778333333,
+            "lon": 114.20481943333333
+        },
+        {
+            "name": "HAMEY",
+            "lat": 46.352211116666666,
+            "lon": 114.12366111666667
+        },
+        {
+            "name": "ILUGE",
+            "lat": 46.48739166666667,
+            "lon": 114.1006
+        },
+        {
+            "name": "MEXUE",
+            "lat": 46.67583333333333,
+            "lon": 113.99416666666667
+        },
+        {
+            "name": "MSO",
+            "lat": 46.90796666666667,
+            "lon": 114.08365278333333
+        },
+        {
+            "name": "OBLIE",
+            "lat": 45.96886943333333,
+            "lon": 114.14429443333333
+        },
+        {
+            "name": "WEDAK",
+            "lat": 45.888322216666666,
+            "lon": 114.08401666666667
+        },
+        {
+            "name": "YOGIN",
+            "lat": 46.201088883333334,
+            "lon": 114.14923333333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [
+        {
+            "name": "HAMEY2",
+            "rnw": "35",
+            "fixes": {
+                "HAMEY": "HAMEY",
+                "MEXUE": "MEXUE",
+                "MSO": "OVERFLY MSO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "ILUGE": "ILUGE AT OR ABOVE 7600 ILUGE",
+                "ACAFI": "ACAFI 5600 RNW 17 TRK 168 UNTIL 4100 TURN LEFT DIRECT ACAFI SPEED 130",
+                "MEXUE": "MEXUE",
+                "MSO": "OVERFLY MSO AT OR ABOVE 11200 HOLD AT MSO RIGHT TURN INBOUNDCOURSE 152 LEGDIST 7 FAF ACAFI MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "MSO",
+                    "fixes": {
+                        "MSO": "MSO",
+                        "MEXUE": "MEXUE AT OR ABOVE 9200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA17",
+            "fixes": {
+                "ECENE": "ECENE AT OR ABOVE 7300",
+                "DIGEY": "DIGEY 6800",
+                "YOGIN": "YOGIN AT OR ABOVE 5380",
+                "BOPSE": "OVERFLY BOPSE 4260 RNW 17 TRK 004 UNTIL 4260",
+                "ACAFI": "ACAFI",
+                "ILUGE": "ILUGE",
+                "MEXUE": "MEXUE",
+                "MSO": "OVERFLY MSO AT OR ABOVE 11200 HOLD AT MSO RIGHT TURN INBOUNDCOURSE 152 LEGDIST 7 FAF DIGEY MAP BOPSE"
+            },
+            "transitions": [
+                {
+                    "name": "WEDAK",
+                    "fixes": {
+                        "WEDAK": "WEDAK",
+                        "OBLIE": "OBLIE AT OR ABOVE 9900",
+                        "GARPE": "GARPE AT OR ABOVE 7800"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA35",
+            "fixes": {
+                "ECENE": "ECENE AT OR ABOVE 7300",
+                "DIGEY": "DIGEY 6800",
+                "YOGIN": "YOGIN AT OR ABOVE 5380",
+                "BOPSE": "OVERFLY BOPSE 4260 RNW 35 TRK 004 UNTIL 4260",
+                "ACAFI": "ACAFI",
+                "ILUGE": "ILUGE",
+                "MEXUE": "MEXUE",
+                "MSO": "OVERFLY MSO AT OR ABOVE 11200 HOLD AT MSO RIGHT TURN INBOUNDCOURSE 152 LEGDIST 7 FAF DIGEY MAP BOPSE"
+            },
+            "transitions": [
+                {
+                    "name": "WEDAK",
+                    "fixes": {
+                        "WEDAK": "WEDAK",
+                        "OBLIE": "OBLIE AT OR ABOVE 9900",
+                        "GARPE": "GARPE AT OR ABOVE 7800"
+                    }
+                }
+            ]
+        }
+    ]
+}

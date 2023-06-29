@@ -1,0 +1,77 @@
+{
+    "fixes": [
+        {
+            "name": "CUNLU",
+            "lat": 31.363122216666667,
+            "lon": 85.26608056666667
+        },
+        {
+            "name": "DEKKE",
+            "lat": 31.366408333333332,
+            "lon": 85.51761111666667
+        },
+        {
+            "name": "EMVUF",
+            "lat": 31.364355566666667,
+            "lon": 85.35605556666667
+        },
+        {
+            "name": "ERUCA",
+            "lat": 31.364919433333334,
+            "lon": 85.39891111666667
+        },
+        {
+            "name": "WAGKY",
+            "lat": 31.360747216666667,
+            "lon": 85.10453888333333
+        },
+        {
+            "name": "YUCUL",
+            "lat": 31.362511116666667,
+            "lon": 85.22330556666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 17",
+        "RNW 27",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "DEKKE": "DEKKE AT OR ABOVE 2000",
+                "ERUCA": "ERUCA 1700",
+                "EMVUF": "EMVUF AT OR ABOVE 980 RNW 09 TRK 094 UNTIL 631",
+                "WAGKY": "OVERFLY WAGKY AT OR ABOVE 2000 HOLD AT WAGKY RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4 FAF ERUCA MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DEKKE",
+                    "fixes": {
+                        "DEKKE": "DEKKE RIGHT TURN INBOUNDCOURSE 094 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "WAGKY": "WAGKY AT OR ABOVE 2000 OVERFLY WAGKY AT OR ABOVE 2000 HOLD AT WAGKY RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4 FAF YUCUL MAP RNW 27",
+                "YUCUL": "YUCUL 1700",
+                "CUNLU": "CUNLU AT OR ABOVE 1000 RNW 27 TRK 274 UNTIL 900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "WAGKY",
+                    "fixes": {
+                        "WAGKY": "WAGKY RIGHT TURN INBOUNDCOURSE 274 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

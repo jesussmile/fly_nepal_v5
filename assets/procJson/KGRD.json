@@ -1,0 +1,66 @@
+{
+    "fixes": [
+        {
+            "name": "COBOT",
+            "lat": 34.261952783333335,
+            "lon": 81.96712778333334
+        },
+        {
+            "name": "HILEM",
+            "lat": 34.24235556666667,
+            "lon": 82.25013888333334
+        },
+        {
+            "name": "HURTO",
+            "lat": 34.255088883333336,
+            "lon": 82.067325
+        },
+        {
+            "name": "MACER",
+            "lat": 34.23526666666667,
+            "lon": 82.35021111666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 09",
+        "RNW 23",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "MACER": "MACER AT OR ABOVE 2500",
+                "HILEM": "HILEM 2000 RNW 09 TRK 092 UNTIL 938",
+                "COBOT": "OVERFLY COBOT AT OR ABOVE 2500 HOLD AT COBOT RIGHT TURN INBOUNDCOURSE 272 LEGDIST 4 FAF HILEM MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "MACER",
+                    "fixes": {
+                        "MACER": "MACER LEFT TURN INBOUNDCOURSE 092 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "COBOT": "COBOT AT OR ABOVE 2500",
+                "HURTO": "HURTO 2000 RNW 27 TRK 272 UNTIL 879",
+                "MACER": "OVERFLY MACER AT OR ABOVE 2500 HOLD AT MACER LEFT TURN INBOUNDCOURSE 092 LEGDIST 4 FAF HURTO MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "COBOT",
+                    "fixes": {
+                        "COBOT": "COBOT RIGHT TURN INBOUNDCOURSE 272 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

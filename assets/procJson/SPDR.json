@@ -1,0 +1,104 @@
+{
+    "fixes": [
+        {
+            "name": "DALDO",
+            "lat": 3.8486111166666666,
+            "lon": 74.87
+        },
+        {
+            "name": "GELVO",
+            "lat": 3.8011,
+            "lon": 74.7175
+        },
+        {
+            "name": "PAMEK",
+            "lat": 3.8280555666666665,
+            "lon": 74.95083333333334
+        },
+        {
+            "name": "TRO",
+            "lat": 3.802777783333333,
+            "lon": 75.05083333333333
+        },
+        {
+            "name": "URIMU",
+            "lat": 3.6097,
+            "lon": 75.3233
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [
+        {
+            "name": "GELVO1",
+            "rnw": "11",
+            "fixes": {
+                "GELVO": "GELVO AT OR ABOVE 8000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "URIMU1",
+            "rnw": "11",
+            "fixes": {
+                "URIMU": "URIMU AT OR ABOVE 8000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "GELVO1",
+            "runway": "RNW 29",
+            "fixes": {
+                "GELVO": "GELVO AT OR ABOVE 8000",
+                "TRO": "TRO"
+            }
+        },
+        {
+            "name": "URIMU1",
+            "runway": "RNW 29",
+            "fixes": {
+                "URIMU": "URIMU AT OR ABOVE 8000",
+                "TRO": "TRO"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "VORDY29",
+            "fixes": {
+                "PAMEK": "PAMEK 2070 RNW 29",
+                "TRO": "TRO TRK 288 VECTORS FAF PAMEK MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "TRO",
+                    "fixes": {
+                        "TRO": "TRO AT OR ABOVE 4000 TRK 126 UNTIL 7.0 FROM TRO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDZ29",
+            "fixes": {
+                "DALDO": "DALDO AT OR ABOVE 3300",
+                "PAMEK": "PAMEK 2070 RNW 29",
+                "TRO": "TRO TRK 288 VECTORS FAF PAMEK MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "GELVO",
+                    "fixes": {
+                        "GELVO": "GELVO"
+                    }
+                }
+            ]
+        }
+    ]
+}

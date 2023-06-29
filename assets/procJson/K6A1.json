@@ -1,0 +1,66 @@
+{
+    "fixes": [
+        {
+            "name": "CUVDA",
+            "lat": 32.662613883333336,
+            "lon": 84.24513611666667
+        },
+        {
+            "name": "JUNKU",
+            "lat": 32.76285,
+            "lon": 84.24500833333333
+        },
+        {
+            "name": "PEYLI",
+            "lat": 32.489772216666665,
+            "lon": 84.24520833333334
+        },
+        {
+            "name": "VOTUC",
+            "lat": 32.38506111666667,
+            "lon": 84.24525278333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 06",
+        "RNW 19",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "VOTUC": "VOTUC AT OR ABOVE 3300",
+                "PEYLI": "PEYLI 2300 RNW 01 TRK 005 UNTIL 934",
+                "JUNKU": "OVERFLY JUNKU AT OR ABOVE 3000 HOLD AT JUNKU RIGHT TURN INBOUNDCOURSE 185 LEGDIST 4 FAF PEYLI MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "VOTUC",
+                    "fixes": {
+                        "VOTUC": "VOTUC RIGHT TURN INBOUNDCOURSE 005 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "JUNKU": "JUNKU AT OR ABOVE 3500",
+                "CUVDA": "CUVDA 2300 RNW 19 TRK 185 UNTIL 847",
+                "VOTUC": "OVERFLY VOTUC AT OR ABOVE 3000 HOLD AT VOTUC RIGHT TURN INBOUNDCOURSE 005 LEGDIST 4 FAF CUVDA MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "JUNKU",
+                    "fixes": {
+                        "JUNKU": "JUNKU RIGHT TURN INBOUNDCOURSE 185 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

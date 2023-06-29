@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "ALRUG",
+            "lat": 55.04515,
+            "lon": 85.07295556666666
+        },
+        {
+            "name": "AVIXI",
+            "lat": 54.978208333333335,
+            "lon": 85.31966666666666
+        },
+        {
+            "name": "BOXOK",
+            "lat": 54.874888883333334,
+            "lon": 85.11488333333334
+        },
+        {
+            "name": "DUMKU",
+            "lat": 54.99852778333333,
+            "lon": 85.57848888333334
+        },
+        {
+            "name": "FF11",
+            "lat": 54.98243611666667,
+            "lon": 85.56875278333334
+        },
+        {
+            "name": "FF29",
+            "lat": 54.965133333333334,
+            "lon": 85.32364166666666
+        },
+        {
+            "name": "KEBEV",
+            "lat": 54.92970278333333,
+            "lon": 85.81265
+        },
+        {
+            "name": "PI001",
+            "lat": 54.9842742,
+            "lon": 85.54332571666667
+        },
+        {
+            "name": "PI002",
+            "lat": 54.92777588333333,
+            "lon": 85.62011261666666
+        },
+        {
+            "name": "PI003",
+            "lat": 54.9707727,
+            "lon": 85.73062168333334
+        },
+        {
+            "name": "PI004",
+            "lat": 54.97048326666667,
+            "lon": 85.34754586666666
+        },
+        {
+            "name": "PI005",
+            "lat": 54.99957931666667,
+            "lon": 85.23340223333334
+        },
+        {
+            "name": "PI006",
+            "lat": 54.9313959,
+            "lon": 85.17160986666667
+        },
+        {
+            "name": "ROMVI",
+            "lat": 55.01085833333333,
+            "lon": 85.73919166666667
+        },
+        {
+            "name": "SENKO",
+            "lat": 55.100194433333336,
+            "lon": 85.77362778333334
+        },
+        {
+            "name": "TESUB",
+            "lat": 54.997644433333335,
+            "lon": 85.56706111666666
+        },
+        {
+            "name": "UDMAV",
+            "lat": 54.97731388333333,
+            "lon": 85.30843056666667
+        },
+        {
+            "name": "VIKVO",
+            "lat": 54.964402783333334,
+            "lon": 85.14781666666667
+        },
+        {
+            "name": "YPONB",
+            "lat": 54.991425,
+            "lon": 85.44242221666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FF11": "FF11 1500 RNW 11",
+                "YPONB": "OVERFLY YPONB TRK 093 UNTIL 1500 TURN RIGHT DIRECT YPONB 1500 HOLD AT YPONB RIGHT TURN INBOUNDCOURSE 093 LEGTIME 1 FAF FF11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "YPO",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FF29": "FF29 1500 RNW 29",
+                "YPONB": "OVERFLY YPONB TRK 301 UNTIL 1500 TURN LEFT DIRECT YPONB 1500 HOLD AT YPONB RIGHT TURN INBOUNDCOURSE 301 LEGTIME 1 FAF FF29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "YPO",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 1500 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 1500 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 1500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "ROMVI": "ROMVI AT OR ABOVE 1500",
+                "TESUB": "TESUB 1500 RNW 11",
+                "UDMAV": "OVERFLY UDMAV 1500 HOLD AT UDMAV RIGHT TURN INBOUNDCOURSE 108 LEGTIME 1 FAF TESUB MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "KEBEV",
+                    "fixes": {
+                        "KEBEV": "KEBEV"
+                    }
+                },
+                {
+                    "name": "SENKO",
+                    "fixes": {
+                        "SENKO": "SENKO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "VIKVO": "VIKVO AT OR ABOVE 1500",
+                "AVIXI": "AVIXI 1500 RNW 29",
+                "DUMKU": "OVERFLY DUMKU 1500 HOLD AT DUMKU RIGHT TURN INBOUNDCOURSE 288 LEGTIME 1 FAF AVIXI MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "ALRUG",
+                    "fixes": {
+                        "ALRUG": "ALRUG"
+                    }
+                },
+                {
+                    "name": "BOXOK",
+                    "fixes": {
+                        "BOXOK": "BOXOK"
+                    }
+                }
+            ]
+        }
+    ]
+}

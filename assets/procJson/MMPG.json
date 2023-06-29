@@ -1,0 +1,164 @@
+{
+    "fixes": [
+        {
+            "name": "CF12",
+            "lat": 28.710363883333333,
+            "lon": 100.66106111666667
+        },
+        {
+            "name": "CF30",
+            "lat": 28.545863883333332,
+            "lon": 100.42240556666667
+        },
+        {
+            "name": "FF12",
+            "lat": 28.680933333333332,
+            "lon": 100.61503611666667
+        },
+        {
+            "name": "FF30",
+            "lat": 28.578116666666666,
+            "lon": 100.465875
+        },
+        {
+            "name": "FS12",
+            "lat": 28.673291666666668,
+            "lon": 100.60309721666667
+        },
+        {
+            "name": "FS30",
+            "lat": 28.579994433333333,
+            "lon": 100.46841111666667
+        },
+        {
+            "name": "PI001",
+            "lat": 28.6661213,
+            "lon": 100.59217121666667
+        },
+        {
+            "name": "PI002",
+            "lat": 28.654886266666665,
+            "lon": 100.67283491666667
+        },
+        {
+            "name": "PI003",
+            "lat": 28.729721866666665,
+            "lon": 100.6921512
+        },
+        {
+            "name": "PI004",
+            "lat": 28.594338983333333,
+            "lon": 100.48749273333334
+        },
+        {
+            "name": "PI005",
+            "lat": 28.522944850000002,
+            "lon": 100.48038371666667
+        },
+        {
+            "name": "PI006",
+            "lat": 28.524635683333333,
+            "lon": 100.39307276666666
+        },
+        {
+            "name": "PNG",
+            "lat": 28.631844433333335,
+            "lon": 100.53838611666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [
+        {
+            "name": "PNG4A",
+            "rnw": "12",
+            "fixes": {
+                "PNG": "PNG"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PNG4B",
+            "rnw": "30",
+            "fixes": {
+                "PNG": "PNG"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD12",
+            "fixes": {
+                "CF12": "CF12 AT OR ABOVE 3000",
+                "FF12": "FF12 2500 RNW 12",
+                "PNG": "OVERFLY PNG TRK 129 UNTIL 7.0 FROM PNG TURN RIGHT DIRECT PNG AT OR ABOVE 3000 FAF FF12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "PNG",
+                    "fixes": {
+                        "PNG": "PNG AT OR ABOVE 3000 TRK 280 UNTIL 8.0 FROM PNG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD30",
+            "fixes": {
+                "CF30": "CF30 AT OR ABOVE 2500",
+                "FF30": "FF30 2300 RNW 30",
+                "PNG": "OVERFLY PNG TRK 301 UNTIL 7.0 FROM PNG TURN LEFT DIRECT PNG AT OR ABOVE 3000 FAF FF30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "PNG",
+                    "fixes": {
+                        "PNG": "PNG AT OR ABOVE 3000 TRK 145 UNTIL 8.0 FROM PNG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR12",
+            "fixes": {
+                "FS12": "FS12 2500 RNW 12",
+                "PNG": "OVERFLY PNG TRK 129 UNTIL 7.0 FROM PNG TURN RIGHT DIRECT PNG AT OR ABOVE 3000 FAF FS12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "PNG",
+                    "fixes": {
+                        "PNG": "PNG AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR30",
+            "fixes": {
+                "FS30": "FS30 2500 RNW 30",
+                "PNG": "OVERFLY PNG TRK 301 UNTIL 7.0 FROM PNG TURN LEFT DIRECT PNG AT OR ABOVE 3000 FAF FS30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "PNG",
+                    "fixes": {
+                        "PNG": "PNG AT OR ABOVE 3000",
+                        "PI004": "PI004 AT OR ABOVE 2500 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2500 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

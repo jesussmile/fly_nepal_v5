@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "CINEN",
+            "lat": 33.435713883333335,
+            "lon": 97.82325833333333
+        },
+        {
+            "name": "CONVI",
+            "lat": 33.267375,
+            "lon": 97.8261
+        },
+        {
+            "name": "FIPAL",
+            "lat": 33.114052783333335,
+            "lon": 97.82991943333333
+        },
+        {
+            "name": "HIBIS",
+            "lat": 33.37303611666667,
+            "lon": 98.14424166666667
+        },
+        {
+            "name": "SKYLA",
+            "lat": 33.26875556666667,
+            "lon": 97.82655
+        },
+        {
+            "name": "TIEON",
+            "lat": 33.08063333333333,
+            "lon": 97.92069721666667
+        },
+        {
+            "name": "UKW",
+            "lat": 33.53588611666667,
+            "lon": 97.82127778333333
+        },
+        {
+            "name": "WISLO",
+            "lat": 33.21600556666667,
+            "lon": 97.82738056666666
+        },
+        {
+            "name": "ZEDAX",
+            "lat": 33.36781388333333,
+            "lon": 97.82359166666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD18",
+            "fixes": {
+                "CINEN": "CINEN AT OR ABOVE 3000",
+                "SKYLA": "SKYLA 2500 RNW 18 TRK 175 UNTIL 1260 TURN RIGHT DIRECT SKYLA AT OR ABOVE 2800 HOLD AT SKYLA RIGHT TURN INBOUNDCOURSE 175 LEGTIME 1 FAF SKYLA MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "SKYLA",
+                    "fixes": {
+                        "SKYLA": "SKYLA RIGHT TURN INBOUNDCOURSE 175 ALT 2800 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "UKW",
+                    "fixes": {
+                        "UKW": "UKW"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "ZEDAX": "ZEDAX AT OR ABOVE 3000",
+                "CONVI": "CONVI 2500",
+                "WISLO": "WISLO AT OR ABOVE 1520 RNW 18 TRK 176 UNTIL 1264",
+                "FIPAL": "FIPAL",
+                "TIEON": "OVERFLY TIEON AT OR ABOVE 3600 HOLD AT TIEON LEFT TURN INBOUNDCOURSE 005 ALT 3600 LEGDIST 4 FAF CONVI MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "HIBIS",
+                    "fixes": {
+                        "HIBIS": "HIBIS"
+                    }
+                },
+                {
+                    "name": "ZEDAX",
+                    "fixes": {
+                        "ZEDAX": "ZEDAX RIGHT TURN INBOUNDCOURSE 176 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

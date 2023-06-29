@@ -1,0 +1,256 @@
+{
+    "fixes": [
+        {
+            "name": "ABA",
+            "lat": 34.94995556666667,
+            "lon": 117.80986666666666
+        },
+        {
+            "name": "ABANB",
+            "lat": 34.95216666666666,
+            "lon": 117.81052778333333
+        },
+        {
+            "name": "AL2ED",
+            "lat": 35.00966666666667,
+            "lon": 118.00430556666667
+        },
+        {
+            "name": "AL2EE",
+            "lat": 35.104083333333335,
+            "lon": 118.00508333333333
+        },
+        {
+            "name": "AL2EF",
+            "lat": 35.01025,
+            "lon": 117.88952778333334
+        },
+        {
+            "name": "AL2EG",
+            "lat": 35.10466666666667,
+            "lon": 117.89019443333333
+        },
+        {
+            "name": "AL2EH",
+            "lat": 34.916277783333335,
+            "lon": 117.77425
+        },
+        {
+            "name": "AL2EI",
+            "lat": 35.05716666666667,
+            "lon": 117.94727778333333
+        },
+        {
+            "name": "AL2WA",
+            "lat": 34.850555566666664,
+            "lon": 117.55677778333333
+        },
+        {
+            "name": "AL2WB",
+            "lat": 34.756111116666666,
+            "lon": 117.57586111666667
+        },
+        {
+            "name": "AL2WC",
+            "lat": 34.73852778333333,
+            "lon": 117.68991666666666
+        },
+        {
+            "name": "AL2WF",
+            "lat": 34.873,
+            "lon": 117.72038888333333
+        },
+        {
+            "name": "AL2WH",
+            "lat": 34.97533333333333,
+            "lon": 117.84666666666666
+        },
+        {
+            "name": "AL2WI",
+            "lat": 34.81455556666667,
+            "lon": 117.64811111666667
+        },
+        {
+            "name": "CQ14",
+            "lat": 34.84238611666667,
+            "lon": 117.71379721666666
+        },
+        {
+            "name": "CQ32",
+            "lat": 35.02959443333334,
+            "lon": 117.94013611666666
+        },
+        {
+            "name": "D128J",
+            "lat": 35.049180566666664,
+            "lon": 117.97301388333334
+        },
+        {
+            "name": "D326J",
+            "lat": 34.81535278333333,
+            "lon": 117.69003056666666
+        },
+        {
+            "name": "EP32",
+            "lat": 34.95468056666667,
+            "lon": 117.81466666666667
+        },
+        {
+            "name": "FN14",
+            "lat": 34.881125,
+            "lon": 117.74788611666666
+        },
+        {
+            "name": "FQ14",
+            "lat": 34.89643888333333,
+            "lon": 117.761375
+        },
+        {
+            "name": "FQ32",
+            "lat": 34.99039166666667,
+            "lon": 117.87442221666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 14",
+        "RNW 23",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBZ14",
+            "fixes": {
+                "FN14": "FN14 1700 RNW 14",
+                "ABANB": "OVERFLY ABANB TRK 146 UNTIL 3300 FAF FN14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ABA",
+                    "fixes": {
+                        "ABANB": "ABANB AT OR ABOVE 3300 SPEED 210 TRK 338 UNTIL 10.5 FROM ABANB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDY14",
+            "fixes": {
+                "CQ14": "CQ14 AT OR ABOVE 2690",
+                "FQ14": "FQ14 1370 RNW 14",
+                "ABANB": "OVERFLY ABANB TRK 146 UNTIL 3300 FAF FQ14 MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ABA1",
+                    "fixes": {
+                        "ABANB": "ABANB AT OR ABOVE 3300 SPEED 210 TRK 350 UNTIL 8.0 FROM",
+                        "ABA": "ABA"
+                    }
+                },
+                {
+                    "name": "ABA2",
+                    "fixes": {
+                        "ABANB": "ABANB AT OR ABOVE 3300 SPEED 210 TRK 338 UNTIL 8.0 FROM",
+                        "ABA": "ABA"
+                    }
+                },
+                {
+                    "name": "D326J",
+                    "fixes": {
+                        "D326J": "D326J AT OR ABOVE 3300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD32",
+            "fixes": {
+                "CQ32": "CQ32 AT OR ABOVE 2690",
+                "FQ32": "FQ32 1420",
+                "EP32": "OVERFLY EP32 267",
+                "ABANB": "OVERFLY ABANB AT OR ABOVE 740 RNW 32 TRK 308 UNTIL 3300 FAF FQ32 MAP ABA"
+            },
+            "transitions": [
+                {
+                    "name": "ABA1",
+                    "fixes": {
+                        "ABANB": "ABANB AT OR ABOVE 3300 SPEED 210 TRK 152 UNTIL 8.0 FROM",
+                        "ABA": "ABA"
+                    }
+                },
+                {
+                    "name": "ABA2",
+                    "fixes": {
+                        "ABANB": "ABANB AT OR ABOVE 3300 SPEED 140 TRK 140 UNTIL 8.0 FROM",
+                        "ABA": "ABA"
+                    }
+                },
+                {
+                    "name": "D128J",
+                    "fixes": {
+                        "D128J": "D128J AT OR ABOVE 3300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ14",
+            "fixes": {
+                "AL2WI": "AL2WI AT OR ABOVE 3300",
+                "AL2WF": "AL2WF 2100 RNW 14",
+                "AL2WH": "OVERFLY AL2WH TRK 137 UNTIL 3300 FAF AL2WF MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "AL2WA",
+                    "fixes": {
+                        "AL2WA": "AL2WA AT OR ABOVE 3300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "AL2WB",
+                    "fixes": {
+                        "AL2WB": "AL2WB AT OR ABOVE 3300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "AL2WC",
+                    "fixes": {
+                        "AL2WC": "AL2WC AT OR ABOVE 3300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ32",
+            "fixes": {
+                "AL2EI": "AL2EI AT OR ABOVE 3130",
+                "AL2EF": "AL2EF 1860 RNW 32",
+                "AL2EH": "OVERFLY AL2EH TRK 317 UNTIL 3300 FAF AL2EF MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "AL2ED",
+                    "fixes": {
+                        "AL2ED": "AL2ED AT OR ABOVE 3300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "AL2EE",
+                    "fixes": {
+                        "AL2EE": "AL2EE AT OR ABOVE 3300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "AL2EG",
+                    "fixes": {
+                        "AL2EG": "AL2EG AT OR ABOVE 3300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,282 @@
+{
+    "fixes": [
+        {
+            "name": "20DME",
+            "lat": 66.06633611666666,
+            "lon": 22.742638883333335
+        },
+        {
+            "name": "ABETU",
+            "lat": 66.31937778333334,
+            "lon": 23.160619433333334
+        },
+        {
+            "name": "AMKIN",
+            "lat": 65.95008056666667,
+            "lon": 22.660666666666668
+        },
+        {
+            "name": "BANLA",
+            "lat": 66.21135,
+            "lon": 23.4736
+        },
+        {
+            "name": "ELGUT",
+            "lat": 66.08647221666666,
+            "lon": 22.474261116666668
+        },
+        {
+            "name": "ELVOR",
+            "lat": 66.32843888333333,
+            "lon": 23.451825
+        },
+        {
+            "name": "IS401",
+            "lat": 66.11209166666667,
+            "lon": 23.059325
+        },
+        {
+            "name": "IS402",
+            "lat": 66.092725,
+            "lon": 22.823097216666667
+        },
+        {
+            "name": "ISACI",
+            "lat": 65.83058056666667,
+            "lon": 22.716486116666665
+        },
+        {
+            "name": "ISF42",
+            "lat": 66.20233056666666,
+            "lon": 23.183722216666666
+        },
+        {
+            "name": "ISF52",
+            "lat": 66.07244721666666,
+            "lon": 22.808358333333334
+        },
+        {
+            "name": "ISI41",
+            "lat": 66.26544166666666,
+            "lon": 23.317441666666667
+        },
+        {
+            "name": "ISI51",
+            "lat": 66.03209443333333,
+            "lon": 22.628736116666666
+        },
+        {
+            "name": "ISM43",
+            "lat": 66.13481388333334,
+            "lon": 23.041672216666665
+        },
+        {
+            "name": "ISM53",
+            "lat": 66.11259721666667,
+            "lon": 22.98855
+        },
+        {
+            "name": "KUMUX",
+            "lat": 65.99153056666667,
+            "lon": 22.449683333333333
+        },
+        {
+            "name": "MQ326",
+            "lat": 66.094075,
+            "lon": 22.818772216666666
+        },
+        {
+            "name": "OGNB",
+            "lat": 66.04397221666666,
+            "lon": 22.681444433333333
+        },
+        {
+            "name": "RENB",
+            "lat": 65.92647221666667,
+            "lon": 22.431527783333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "ISAC1A",
+            "rnw": "08",
+            "fixes": {
+                "IS401": "OVERFLY IS401 AT OR ABOVE 500 SPEED 150",
+                "IS402": "IS402 AT OR ABOVE 2000 SPEED 170",
+                "ISACI": "ISACI AT OR ABOVE 5300"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RE1A",
+            "rnw": "08",
+            "fixes": {
+                "IS401": "OVERFLY IS401 AT OR ABOVE 500 SPEED 150",
+                "IS402": "IS402 AT OR ABOVE 2000 SPEED 170",
+                "RENB": "RENB AT OR ABOVE 5300"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBDC08",
+            "fixes": {
+                "OGNB": "OGNB 1960",
+                "20DME": "20DME AT OR ABOVE 1310",
+                "MQ326": "MQ326 910 RNW 08 TRK 326 UNTIL 3500 TURN RIGHT DIRECT",
+                "RENB": "RENB HOLD AT RENB RIGHT TURN INBOUNDCOURSE 333 ALT 4500 LEGTIME 1 FAF OGNB MAP MQ326"
+            },
+            "transitions": [
+                {
+                    "name": "RE",
+                    "fixes": {
+                        "RENB": "RENB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDC26",
+            "fixes": {
+                "OGNB": "OGNB 1960",
+                "20DME": "20DME AT OR ABOVE 1310",
+                "MQ326": "MQ326 910 RNW 26 TRK 326 UNTIL 3500 TURN RIGHT DIRECT",
+                "RENB": "RENB HOLD AT RENB RIGHT TURN INBOUNDCOURSE 333 ALT 4500 LEGTIME 1 FAF OGNB MAP MQ326"
+            },
+            "transitions": [
+                {
+                    "name": "RE",
+                    "fixes": {
+                        "RENB": "RENB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVC08",
+            "fixes": {
+                "ISI41": "ISI41 AT OR ABOVE 3000",
+                "ISF42": "ISF42 2000",
+                "ISM43": "OVERFLY ISM43 1200 RNW 08",
+                "ISI51": "OVERFLY ISI51",
+                "KUMUX": "KUMUX HOLD AT KUMUX LEFT TURN INBOUNDCOURSE 313 ALT 4000 LEGTIME 1 FAF ISF42 MAP ISM43"
+            },
+            "transitions": [
+                {
+                    "name": "ABETU",
+                    "fixes": {
+                        "ABETU": "ABETU AT OR ABOVE 4600"
+                    }
+                },
+                {
+                    "name": "BANLA",
+                    "fixes": {
+                        "BANLA": "BANLA AT OR ABOVE 4400"
+                    }
+                },
+                {
+                    "name": "ELVOR",
+                    "fixes": {
+                        "ELVOR": "ELVOR AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVD08",
+            "fixes": {
+                "ISI51": "ISI51 AT OR ABOVE 3000",
+                "ISF52": "ISF52 1900",
+                "ISM53": "OVERFLY ISM53 500 RNW 08 TRK 343 UNTIL 3500 TURN RIGHT DIRECT",
+                "AMKIN": "AMKIN HOLD AT AMKIN RIGHT TURN INBOUNDCOURSE 023 ALT 4000 LEGTIME 1 FAF ISF52 MAP ISM53"
+            },
+            "transitions": [
+                {
+                    "name": "AMKIN",
+                    "fixes": {
+                        "AMKIN": "AMKIN AT OR ABOVE 4800"
+                    }
+                },
+                {
+                    "name": "ELGUT",
+                    "fixes": {
+                        "ELGUT": "ELGUT AT OR ABOVE 4600"
+                    }
+                },
+                {
+                    "name": "KUMUX",
+                    "fixes": {
+                        "KUMUX": "KUMUX AT OR ABOVE 4600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVC26",
+            "fixes": {
+                "ISI41": "ISI41 AT OR ABOVE 3000",
+                "ISF42": "ISF42 2000",
+                "ISM43": "OVERFLY ISM43 1200 RNW 26",
+                "ISI51": "OVERFLY ISI51",
+                "KUMUX": "KUMUX HOLD AT KUMUX LEFT TURN INBOUNDCOURSE 313 ALT 4000 LEGTIME 1 FAF ISF42 MAP ISM43"
+            },
+            "transitions": [
+                {
+                    "name": "ABETU",
+                    "fixes": {
+                        "ABETU": "ABETU AT OR ABOVE 4600"
+                    }
+                },
+                {
+                    "name": "BANLA",
+                    "fixes": {
+                        "BANLA": "BANLA AT OR ABOVE 4400"
+                    }
+                },
+                {
+                    "name": "ELVOR",
+                    "fixes": {
+                        "ELVOR": "ELVOR AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVD26",
+            "fixes": {
+                "ISI51": "ISI51 AT OR ABOVE 3000",
+                "ISF52": "ISF52 1900",
+                "ISM53": "OVERFLY ISM53 500 RNW 26 TRK 343 UNTIL 3500 TURN RIGHT DIRECT",
+                "AMKIN": "AMKIN HOLD AT AMKIN RIGHT TURN INBOUNDCOURSE 023 ALT 4000 LEGTIME 1 FAF ISF52 MAP ISM53"
+            },
+            "transitions": [
+                {
+                    "name": "AMKIN",
+                    "fixes": {
+                        "AMKIN": "AMKIN AT OR ABOVE 4800"
+                    }
+                },
+                {
+                    "name": "ELGUT",
+                    "fixes": {
+                        "ELGUT": "ELGUT AT OR ABOVE 4600"
+                    }
+                },
+                {
+                    "name": "KUMUX",
+                    "fixes": {
+                        "KUMUX": "KUMUX AT OR ABOVE 4600"
+                    }
+                }
+            ]
+        }
+    ]
+}

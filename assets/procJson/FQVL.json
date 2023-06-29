@@ -1,0 +1,136 @@
+{
+    "fixes": [
+        {
+            "name": "EGTOD",
+            "lat": 22.142119433333335,
+            "lon": 35.470416666666665
+        },
+        {
+            "name": "GETUK",
+            "lat": 22.210172216666667,
+            "lon": 35.306383333333336
+        },
+        {
+            "name": "ITKOP",
+            "lat": 21.858488883333333,
+            "lon": 35.236625
+        },
+        {
+            "name": "NESUB",
+            "lat": 21.892511116666668,
+            "lon": 35.15477778333333
+        },
+        {
+            "name": "NEXOM",
+            "lat": 22.176166666666667,
+            "lon": 35.38841943333333
+        },
+        {
+            "name": "UNPAT",
+            "lat": 21.824427783333334,
+            "lon": 35.31843333333333
+        },
+        {
+            "name": "VL500",
+            "lat": 21.934877783333334,
+            "lon": 35.273091666666666
+        },
+        {
+            "name": "VL600",
+            "lat": 22.087652783333333,
+            "lon": 35.34608888333333
+        },
+        {
+            "name": "VL601",
+            "lat": 22.053591666666666,
+            "lon": 35.428027783333334
+        },
+        {
+            "name": "VL700",
+            "lat": 22.099780566666666,
+            "lon": 35.35188611666667
+        },
+        {
+            "name": "VL800",
+            "lat": 21.947,
+            "lon": 35.278897216666664
+        },
+        {
+            "name": "VL801",
+            "lat": 21.91304166666667,
+            "lon": 35.360763883333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 17",
+        "RNW 28",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "VL500": "VL500 1600 RNW 17",
+                "VL600": "VL600",
+                "VL601": "VL601",
+                "UNPAT": "UNPAT AT OR ABOVE 2000 HOLD AT UNPAT RIGHT TURN INBOUNDCOURSE 261 ALT 2000 LEGTIME 1 FAF VL500 MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "ITKOP",
+                    "fixes": {
+                        "ITKOP": "ITKOP"
+                    }
+                },
+                {
+                    "name": "NESUB",
+                    "fixes": {
+                        "NESUB": "NESUB AT OR ABOVE 2600 SPEED 200",
+                        "ITKOP": "ITKOP"
+                    }
+                },
+                {
+                    "name": "UNPAT",
+                    "fixes": {
+                        "UNPAT": "UNPAT AT OR ABOVE 2600 SPEED 200",
+                        "ITKOP": "ITKOP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "VL700": "VL700 1600 RNW 35",
+                "VL800": "VL800",
+                "VL801": "VL801",
+                "EGTOD": "EGTOD AT OR ABOVE 2000 HOLD AT EGTOD LEFT TURN INBOUNDCOURSE 261 ALT 2000 LEGTIME 1 FAF VL700 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "EGTOD",
+                    "fixes": {
+                        "EGTOD": "EGTOD AT OR ABOVE 2600 SPEED 200",
+                        "NEXOM": "NEXOM"
+                    }
+                },
+                {
+                    "name": "GETUK",
+                    "fixes": {
+                        "GETUK": "GETUK AT OR ABOVE 2600 SPEED 200",
+                        "NEXOM": "NEXOM"
+                    }
+                },
+                {
+                    "name": "NEXOM",
+                    "fixes": {
+                        "NEXOM": "NEXOM"
+                    }
+                }
+            ]
+        }
+    ]
+}

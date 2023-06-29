@@ -1,0 +1,157 @@
+{
+    "fixes": [
+        {
+            "name": "DECEP",
+            "lat": 44.70113333333333,
+            "lon": 116.06425833333333
+        },
+        {
+            "name": "DNJ",
+            "lat": 44.76711388333333,
+            "lon": 116.20626666666666
+        },
+        {
+            "name": "EGNAJ",
+            "lat": 44.932775,
+            "lon": 116.09241388333334
+        },
+        {
+            "name": "FIKVO",
+            "lat": 44.97313056666667,
+            "lon": 116.07783333333333
+        },
+        {
+            "name": "HETSO",
+            "lat": 45.102786116666664,
+            "lon": 116.03171943333334
+        },
+        {
+            "name": "JALUL",
+            "lat": 45.20479721666667,
+            "lon": 115.99664721666667
+        },
+        {
+            "name": "KOVRY",
+            "lat": 45.22263611666666,
+            "lon": 116.38945833333334
+        },
+        {
+            "name": "LUHPY",
+            "lat": 45.05586666666667,
+            "lon": 116.04786943333333
+        },
+        {
+            "name": "PEPUC",
+            "lat": 44.59057778333333,
+            "lon": 116.06830833333333
+        },
+        {
+            "name": "SIDZY",
+            "lat": 44.5032,
+            "lon": 116.00031111666667
+        },
+        {
+            "name": "SUMOQ",
+            "lat": 44.930975,
+            "lon": 116.66719166666667
+        },
+        {
+            "name": "TATIE",
+            "lat": 44.84704443333333,
+            "lon": 116.10033056666667
+        },
+        {
+            "name": "UDABE",
+            "lat": 44.848683333333334,
+            "lon": 116.12273056666666
+        },
+        {
+            "name": "VACUA",
+            "lat": 44.77039166666667,
+            "lon": 116.09771943333334
+        },
+        {
+            "name": "WADPO",
+            "lat": 44.998336116666664,
+            "lon": 116.28988611666666
+        },
+        {
+            "name": "XOYTY",
+            "lat": 44.90533333333333,
+            "lon": 116.10231943333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "PEPUC2",
+            "rnw": "16",
+            "fixes": {
+                "TATIE": "TATIE",
+                "DECEP": "DECEP",
+                "PEPUC": "PEPUC AT OR ABOVE 11700"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "JALUL": "JALUL AT OR ABOVE 10800",
+                "HETSO": "HETSO AT OR ABOVE 9500",
+                "LUHPY": "LUHPY 9000",
+                "FIKVO": "FIKVO AT OR ABOVE 6940",
+                "EGNAJ": "EGNAJ AT OR ABOVE 5940",
+                "XOYTY": "OVERFLY XOYTY 5267 RNW 16 TRK 181 UNTIL 5424",
+                "UDABE": "UDABE",
+                "PEPUC": "OVERFLY PEPUC AT OR ABOVE 11700 HOLD AT PEPUC LEFT TURN INBOUNDCOURSE 340 LEGDIST 7 FAF LUHPY MAP XOYTY"
+            },
+            "transitions": [
+                {
+                    "name": "DNJ",
+                    "fixes": {
+                        "DNJ": "DNJ",
+                        "JALUL": "OVERFLY JALUL AT OR ABOVE 10800 HOLD AT JALUL RIGHT TURN INBOUNDCOURSE 181 ALT 10800 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "KOVRY",
+                    "fixes": {
+                        "KOVRY": "KOVRY",
+                        "JALUL": "OVERFLY JALUL AT OR ABOVE 10800 HOLD AT JALUL RIGHT TURN INBOUNDCOURSE 181 ALT 10800 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "PEPUC": "PEPUC AT OR ABOVE 10000",
+                "VACUA": "VACUA 7500 RNW 34 TRK 346 UNTIL 5600",
+                "WADPO": "WADPO",
+                "SUMOQ": "OVERFLY SUMOQ AT OR ABOVE 12000 HOLD AT SUMOQ RIGHT TURN INBOUNDCOURSE 104 ALT 12000 LEGDIST 7 FAF VACUA MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "DNJ",
+                    "fixes": {
+                        "DNJ": "DNJ",
+                        "PEPUC": "OVERFLY PEPUC AT OR ABOVE 10200 HOLD AT PEPUC LEFT TURN INBOUNDCOURSE 340 ALT 10000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "SIDZY",
+                    "fixes": {
+                        "SIDZY": "SIDZY"
+                    }
+                }
+            ]
+        }
+    ]
+}

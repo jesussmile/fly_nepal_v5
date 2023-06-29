@@ -1,0 +1,231 @@
+{
+    "fixes": [
+        {
+            "name": "ADKON",
+            "lat": 0.38333333333333336,
+            "lon": 111.12
+        },
+        {
+            "name": "EP09",
+            "lat": 0.042749999999999996,
+            "lon": 111.44823888333333
+        },
+        {
+            "name": "EPGEL",
+            "lat": 0.198,
+            "lon": 111.73394443333333
+        },
+        {
+            "name": "FN09",
+            "lat": 0.057433333333333336,
+            "lon": 111.37320556666667
+        },
+        {
+            "name": "FN27",
+            "lat": 0.055505566666666666,
+            "lon": 111.54026388333334
+        },
+        {
+            "name": "IDRAV",
+            "lat": 0.04516666666666667,
+            "lon": 111.67133333333334
+        },
+        {
+            "name": "IPGAP",
+            "lat": 0.1709166666666667,
+            "lon": 111.60166666666667
+        },
+        {
+            "name": "ISKOK",
+            "lat": 0.2545,
+            "lon": 111.35444443333333
+        },
+        {
+            "name": "KALOB",
+            "lat": 0.04519443333333333,
+            "lon": 111.24241666666667
+        },
+        {
+            "name": "LARAX",
+            "lat": 0.1285,
+            "lon": 111.25030556666667
+        },
+        {
+            "name": "ONOLU",
+            "lat": 0.47719443333333333,
+            "lon": 111.86091666666667
+        },
+        {
+            "name": "OS501",
+            "lat": 0.04519443333333333,
+            "lon": 111.34722221666667
+        },
+        {
+            "name": "OS701",
+            "lat": 0.04516666666666667,
+            "lon": 111.56652778333333
+        },
+        {
+            "name": "OSRUT",
+            "lat": 0.5308333333333334,
+            "lon": 112.28555556666667
+        },
+        {
+            "name": "PEDBU",
+            "lat": 0.14275,
+            "lon": 111.51994443333334
+        },
+        {
+            "name": "RUVBI",
+            "lat": 0.15330556666666664,
+            "lon": 111.86416666666666
+        },
+        {
+            "name": "SG",
+            "lat": 0.041694433333333336,
+            "lon": 111.45363888333333
+        },
+        {
+            "name": "SUPGI",
+            "lat": 0.07863888333333334,
+            "lon": 111.20016666666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "ADKO1E",
+            "rnw": "09",
+            "fixes": {
+                "PEDBU": "PEDBU",
+                "ISKOK": "ISKOK 3500",
+                "ADKON": "ADKON AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ADKO1F",
+            "rnw": "27",
+            "fixes": {
+                "SUPGI": "SUPGI AT OR ABOVE 3500",
+                "ADKON": "ADKON"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OSRU1A",
+            "rnw": "09",
+            "fixes": {
+                "PEDBU": "PEDBU",
+                "OSRUT": "OSRUT AT OR ABOVE 13000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OSRU1B",
+            "rnw": "27",
+            "fixes": {
+                "IPGAP": "IPGAP AT OR ABOVE 4000",
+                "RUVBI": "RUVBI AT OR ABOVE 9000",
+                "OSRUT": "OSRUT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ADKO1D",
+            "runway": "RNW 27",
+            "fixes": {
+                "ADKON": "ADKON",
+                "EPGEL": "EPGEL AT OR ABOVE 6500 TURN LEFT DIRECT",
+                "IDRAV": "IDRAV 3500"
+            }
+        },
+        {
+            "name": "ADKO1G",
+            "runway": "RNW 09",
+            "fixes": {
+                "ADKON": "ADKON",
+                "LARAX": "LARAX AT OR ABOVE 4500",
+                "KALOB": "KALOB 3500"
+            }
+        },
+        {
+            "name": "OSRU1C",
+            "runway": "RNW 09",
+            "fixes": {
+                "OSRUT": "OSRUT",
+                "ONOLU": "ONOLU",
+                "LARAX": "LARAX AT OR ABOVE 4500",
+                "KALOB": "KALOB 3500"
+            }
+        },
+        {
+            "name": "OSRU1D",
+            "runway": "RNW 27",
+            "fixes": {
+                "OSRUT": "OSRUT",
+                "ONOLU": "ONOLU",
+                "EPGEL": "EPGEL AT OR ABOVE 6500",
+                "IDRAV": "IDRAV 3500"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB09",
+            "fixes": {
+                "FN09": "FN09 1600",
+                "EP09": "OVERFLY EP09 137",
+                "SG": "OVERFLY SG AT OR ABOVE 600 RNW 09 TRK 079 UNTIL 2000 TURN RIGHT DIRECT SG AT OR ABOVE 3500 HOLD AT SG LEFT TURN INBOUNDCOURSE 244 ALT 3500 LEGTIME 1 FAF FN09 MAP SG"
+            },
+            "transitions": [
+                {
+                    "name": "SG",
+                    "fixes": {
+                        "SG": "SG AT OR ABOVE 3500 TRK 244 UNTIL 7.5 FROM SG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB27",
+            "fixes": {
+                "FN27": "FN27 1600 RNW 27",
+                "SG": "OVERFLY SG TRK 279 UNTIL 2000 TURN RIGHT DIRECT SG AT OR ABOVE 3500 HOLD AT SG LEFT TURN INBOUNDCOURSE 114 ALT 3500 LEGTIME 1 FAF FN27 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "SG",
+                    "fixes": {
+                        "SG": "SG AT OR ABOVE 3500 TRK 114 UNTIL 7.5 FROM SG"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "KALOB": "KALOB AT OR ABOVE 3500 KALOB AT OR ABOVE 3500 HOLD AT KALOB LEFT TURN INBOUNDCOURSE 090 ALT 3500 SPEED 210 LEGTIME 1 FAF OS501 MAP RNW 09",
+                "OS501": "OS501 2000 RNW 09 TRK 090 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "IDRAV": "IDRAV AT OR ABOVE 3500 IDRAV AT OR ABOVE 3500 HOLD AT IDRAV LEFT TURN INBOUNDCOURSE 270 ALT 3500 SPEED 210 LEGTIME 1 FAF OS701 MAP RNW 27",
+                "OS701": "OS701 2000 RNW 27 TRK 270 UNTIL 1000 TURN RIGHT DIRECT"
+            },
+            "transitions": []
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "fixes": [
+        {
+            "name": "AVIYE",
+            "lat": 41.91078888333333,
+            "lon": 84.36288333333333
+        },
+        {
+            "name": "EVRIW",
+            "lat": 41.93145556666666,
+            "lon": 84.81218056666667
+        },
+        {
+            "name": "GUCYE",
+            "lat": 41.91912778333333,
+            "lon": 84.53965
+        },
+        {
+            "name": "HIRED",
+            "lat": 41.8173,
+            "lon": 84.30804721666667
+        },
+        {
+            "name": "UFPUY",
+            "lat": 41.916075,
+            "lon": 84.474275
+        },
+        {
+            "name": "UZOHI",
+            "lat": 41.92649443333333,
+            "lon": 84.70073611666666
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "EVRIW": "EVRIW AT OR ABOVE 3000",
+                "UZOHI": "UZOHI 2700 RNW 10 TRK 100 UNTIL 1441",
+                "AVIYE": "OVERFLY AVIYE AT OR ABOVE 3100 HOLD AT AVIYE RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4 FAF UZOHI MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "EVRIW",
+                    "fixes": {
+                        "EVRIW": "EVRIW RIGHT TURN INBOUNDCOURSE 100 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "AVIYE": "AVIYE AT OR ABOVE 3100",
+                "UFPUY": "UFPUY 2700",
+                "GUCYE": "GUCYE AT OR ABOVE 1760 RNW 28 TRK 281 UNTIL 1700 TURN LEFT DIRECT",
+                "HIRED": "OVERFLY HIRED AT OR ABOVE 3100 HOLD AT HIRED RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4 FAF UFPUY MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "AVIYE",
+                    "fixes": {
+                        "AVIYE": "AVIYE RIGHT TURN INBOUNDCOURSE 281 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

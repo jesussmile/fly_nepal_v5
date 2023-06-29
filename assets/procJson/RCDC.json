@@ -1,0 +1,190 @@
+{
+    "fixes": [
+        {
+            "name": "23DME",
+            "lat": 22.670380566666665,
+            "lon": 120.41175833333334
+        },
+        {
+            "name": "40LOC",
+            "lat": 22.670816666666667,
+            "lon": 120.40634166666666
+        },
+        {
+            "name": "92DME",
+            "lat": 22.662269433333332,
+            "lon": 120.28769166666666
+        },
+        {
+            "name": "CI09",
+            "lat": 22.661019433333333,
+            "lon": 120.20485278333334
+        },
+        {
+            "name": "CL09",
+            "lat": 22.664063883333334,
+            "lon": 120.20463056666667
+        },
+        {
+            "name": "CQ09",
+            "lat": 22.656808333333334,
+            "lon": 120.20500556666667
+        },
+        {
+            "name": "D281L",
+            "lat": 22.700061116666667,
+            "lon": 120.20619443333334
+        },
+        {
+            "name": "D360J",
+            "lat": 22.504552783333335,
+            "lon": 120.43980556666666
+        },
+        {
+            "name": "DCNB",
+            "lat": 22.671388883333332,
+            "lon": 120.42725
+        },
+        {
+            "name": "FI09",
+            "lat": 22.664913883333334,
+            "lon": 120.29124721666666
+        },
+        {
+            "name": "FL09",
+            "lat": 22.669152783333335,
+            "lon": 120.35590833333333
+        },
+        {
+            "name": "FQ09",
+            "lat": 22.667219433333333,
+            "lon": 120.36319721666666
+        },
+        {
+            "name": "HCN",
+            "lat": 21.927777783333333,
+            "lon": 120.84358333333333
+        },
+        {
+            "name": "LOC10",
+            "lat": 22.66698888333333,
+            "lon": 120.29107221666666
+        },
+        {
+            "name": "TIMER",
+            "lat": 22.133736116666668,
+            "lon": 120.41513333333333
+        },
+        {
+            "name": "TNN",
+            "lat": 23.135305566666666,
+            "lon": 120.20619443333334
+        },
+        {
+            "name": "TNN28",
+            "lat": 22.660927783333335,
+            "lon": 120.21511388333333
+        },
+        {
+            "name": "YUNAN",
+            "lat": 22.83428333333333,
+            "lon": 120.20619443333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "KT2B",
+            "rnw": "27",
+            "fixes": {
+                "DCNB": "DCNB TRK 270 UNTIL 3000 TURN LEFT DIRECT",
+                "TIMER": "TIMER",
+                "HCN": "HCN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PT2B",
+            "rnw": "27",
+            "fixes": {
+                "DCNB": "DCNB",
+                "TNN28": "TNN28 TURN RIGHT DIRECT",
+                "TNN": "TNN"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "TNN",
+            "runway": "RNW 09",
+            "fixes": {
+                "TNN": "TNN",
+                "YUNAN": "YUNAN"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "ILS09",
+            "fixes": {
+                "CI09": "CI09 AT OR ABOVE 3000",
+                "FI09": "FI09 3000 RNW 09 TRK 092 UNTIL 700 TURN RIGHT HDG 225 INTERCEPT RADIAL 180 TO",
+                "D360J": "D360J D360J 3400 SPEED 185 HOLD AT D360J LEFT TURN INBOUNDCOURSE 180 ALT 3400 SPEED 210 LEGTIME 1 FAF FI09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "YUNAN",
+                    "fixes": {
+                        "YUNAN": "YUNAN AT OR ABOVE 3000",
+                        "D281L": "OVERFLY D281L"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC09",
+            "fixes": {
+                "CL09": "CL09 AT OR ABOVE 3000",
+                "LOC10": "LOC10 AT OR ABOVE 3000",
+                "FL09": "FL09 1830",
+                "40LOC": "40LOC AT OR ABOVE 900",
+                "DCNB": "DCNB 531 RNW 09 TRK 092 UNTIL 700 TURN RIGHT HDG 225 INTERCEPT RADIAL 180 TO",
+                "D360J": "D360J D360J 3400 SPEED 185 HOLD AT D360J LEFT TURN INBOUNDCOURSE 180 ALT 3400 SPEED 210 LEGTIME 1 FAF FL09 MAP DC"
+            },
+            "transitions": [
+                {
+                    "name": "YUNAN",
+                    "fixes": {
+                        "YUNAN": "YUNAN AT OR ABOVE 3000",
+                        "D281L": "OVERFLY D281L"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD09",
+            "fixes": {
+                "CQ09": "CQ09 AT OR ABOVE 3000",
+                "92DME": "92DME AT OR ABOVE 3000",
+                "FQ09": "FQ09 1670",
+                "23DME": "23DME AT OR ABOVE 800",
+                "DCNB": "DCNB 531 RNW 09 TRK 090 UNTIL 590 TURN RIGHT HDG 225 INTERCEPT RADIAL 180 TO",
+                "D360J": "D360J D360J 3400 SPEED 210 HOLD AT D360J LEFT TURN INBOUNDCOURSE 180 ALT 3400 SPEED 210 LEGTIME 1 FAF FQ09 MAP DC"
+            },
+            "transitions": [
+                {
+                    "name": "YUNAN",
+                    "fixes": {
+                        "YUNAN": "YUNAN AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

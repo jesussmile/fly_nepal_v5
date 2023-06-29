@@ -1,0 +1,117 @@
+{
+    "fixes": [
+        {
+            "name": "ACLIK",
+            "lat": 42.530483333333336,
+            "lon": 95.45569443333333
+        },
+        {
+            "name": "ATNUY",
+            "lat": 42.64986111666666,
+            "lon": 95.56088333333334
+        },
+        {
+            "name": "BAMDY",
+            "lat": 42.53836666666667,
+            "lon": 95.680875
+        },
+        {
+            "name": "CAPLO",
+            "lat": 42.69341943333333,
+            "lon": 95.558075
+        },
+        {
+            "name": "CISAC",
+            "lat": 42.89773056666667,
+            "lon": 95.53104166666667
+        },
+        {
+            "name": "CUSHO",
+            "lat": 42.420941666666664,
+            "lon": 95.77095
+        },
+        {
+            "name": "GOTTA",
+            "lat": 42.827694433333335,
+            "lon": 95.54939721666666
+        },
+        {
+            "name": "KALNE",
+            "lat": 42.771222216666665,
+            "lon": 95.55305
+        },
+        {
+            "name": "NEMAH",
+            "lat": 42.50477778333333,
+            "lon": 95.139625
+        },
+        {
+            "name": "WARAP",
+            "lat": 42.93403333333333,
+            "lon": 95.54249443333333
+        },
+        {
+            "name": "YACYU",
+            "lat": 42.534480566666666,
+            "lon": 95.56827778333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 18",
+        "RNW 19",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "WARAP": "WARAP AT OR ABOVE 3200",
+                "GOTTA": "GOTTA 3000",
+                "KALNE": "KALNE AT OR ABOVE 1920 RNW 18 TRK 178 UNTIL 1627",
+                "YACYU": "OVERFLY YACYU AT OR ABOVE 3000 HOLD AT YACYU RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF GOTTA MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "WARAP",
+                    "fixes": {
+                        "WARAP": "WARAP RIGHT TURN INBOUNDCOURSE 178 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "YACYU": "YACYU AT OR ABOVE 3000 OVERFLY YACYU AT OR ABOVE 3000 HOLD AT YACYU RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF ATNUY MAP RNW 36",
+                "ATNUY": "ATNUY 3000",
+                "CAPLO": "CAPLO AT OR ABOVE 2000 RNW 36 TRK 358 UNTIL 1800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CISAC",
+                    "fixes": {
+                        "CISAC": "CISAC",
+                        "YACYU": "OVERFLY YACYU AT OR ABOVE 3000 HOLD AT YACYU RIGHT TURN INBOUNDCOURSE 358 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CUSHO",
+                    "fixes": {
+                        "CUSHO": "CUSHO",
+                        "BAMDY": "BAMDY AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "NEMAH",
+                    "fixes": {
+                        "NEMAH": "NEMAH",
+                        "ACLIK": "ACLIK AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

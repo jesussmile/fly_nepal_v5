@@ -1,0 +1,182 @@
+{
+    "fixes": [
+        {
+            "name": "CI05",
+            "lat": 26.149694433333334,
+            "lon": 72.93611943333333
+        },
+        {
+            "name": "D225D",
+            "lat": 26.208991666666666,
+            "lon": 73.0014
+        },
+        {
+            "name": "FD05Z",
+            "lat": 26.168811116666667,
+            "lon": 72.96823888333333
+        },
+        {
+            "name": "FI05",
+            "lat": 26.173416666666668,
+            "lon": 72.962225
+        },
+        {
+            "name": "FS05Y",
+            "lat": 26.169077783333332,
+            "lon": 72.96848888333334
+        },
+        {
+            "name": "FU354",
+            "lat": 26.145311116666665,
+            "lon": 73.03871666666667
+        },
+        {
+            "name": "JDP",
+            "lat": 26.249505566666667,
+            "lon": 73.04325833333333
+        },
+        {
+            "name": "JONB",
+            "lat": 26.249444433333334,
+            "lon": 73.02611111666667
+        },
+        {
+            "name": "MD05Z",
+            "lat": 26.236697216666666,
+            "lon": 73.03134166666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDZ05",
+            "fixes": {
+                "FD05Z": "FD05Z 2600",
+                "MD05Z": "MD05Z 920 RNW 05 TRK 040 UNTIL 1500 TURN LEFT DIRECT",
+                "JDP": "JDP 3800 HOLD AT JDP RIGHT TURN INBOUNDCOURSE 192 ALT 3800 LEGTIME 1 FAF FD05Z MAP MD05Z"
+            },
+            "transitions": [
+                {
+                    "name": "JDP1",
+                    "fixes": {
+                        "JDP": "JDP AT OR ABOVE 3800 TRK 192 UNTIL 8.5 FROM JDP"
+                    }
+                },
+                {
+                    "name": "JDP2",
+                    "fixes": {
+                        "JDP": "JDP AT OR ABOVE 3800 TRK 208 UNTIL 8.5 FROM JDP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY05",
+            "fixes": {
+                "CI05": "CI05 AT OR ABOVE 2600",
+                "FI05": "FI05 2600 RNW 05 TRK 045 UNTIL 1500 TURN LEFT DIRECT",
+                "JONB": "JONB 3800 HOLD AT JONB RIGHT TURN INBOUNDCOURSE 207 ALT 3800 LEGTIME 1 FAF FI05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "JO",
+                    "fixes": {
+                        "JONB": "JONB AT OR ABOVE 3800",
+                        "D225D": "D225D",
+                        "CI05": "CI05 AT OR ABOVE 2600 TRK 180 UNTIL 4.4 FROM CI05"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ05",
+            "fixes": {
+                "CI05": "CI05 AT OR ABOVE 2600",
+                "FI05": "FI05 2600 RNW 05 TRK 045 UNTIL 1500 TURN LEFT DIRECT",
+                "JDP": "JDP 3800 HOLD AT JDP RIGHT TURN INBOUNDCOURSE 197 ALT 3800 LEGTIME 1 FAF FI05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "JDP1",
+                    "fixes": {
+                        "JDP": "JDP AT OR ABOVE 3800 TRK 197 UNTIL 8.5 FROM JDP"
+                    }
+                },
+                {
+                    "name": "JDP2",
+                    "fixes": {
+                        "JDP": "JDP AT OR ABOVE 3800 TRK 213 UNTIL 8.5 FROM JDP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB05",
+            "fixes": {
+                "FU354": "FU354 2600",
+                "JONB": "JONB 1940 RNW 05 TRK 354 UNTIL 1940 TURN LEFT DIRECT JONB 3800 HOLD AT JONB RIGHT TURN INBOUNDCOURSE 146 ALT 3800 LEGTIME 1 FAF FU354 MAP JO"
+            },
+            "transitions": [
+                {
+                    "name": "JO1",
+                    "fixes": {
+                        "JONB": "JONB AT OR ABOVE 3800 TRK 146 UNTIL 7.0 FROM JONB"
+                    }
+                },
+                {
+                    "name": "JO2",
+                    "fixes": {
+                        "JONB": "JONB AT OR ABOVE 3800 TRK 162 UNTIL 7.0 FROM JONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB23",
+            "fixes": {
+                "FU354": "FU354 2600",
+                "JONB": "JONB 1940 RNW 23 TRK 354 UNTIL 1940 TURN LEFT DIRECT JONB 3800 HOLD AT JONB RIGHT TURN INBOUNDCOURSE 146 ALT 3800 LEGTIME 1 FAF FU354 MAP JO"
+            },
+            "transitions": [
+                {
+                    "name": "JO1",
+                    "fixes": {
+                        "JONB": "JONB AT OR ABOVE 3800 TRK 146 UNTIL 7.0 FROM JONB"
+                    }
+                },
+                {
+                    "name": "JO2",
+                    "fixes": {
+                        "JONB": "JONB AT OR ABOVE 3800 TRK 162 UNTIL 7.0 FROM JONB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORY05",
+            "fixes": {
+                "FS05Y": "FS05Y 2600 RNW 05",
+                "JDP": "OVERFLY JDP TRK 040 UNTIL 1500 TURN LEFT DIRECT JDP 3800 HOLD AT JDP RIGHT TURN INBOUNDCOURSE 192 ALT 3800 LEGTIME 1 FAF FS05Y MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "JDP1",
+                    "fixes": {
+                        "JDP": "JDP AT OR ABOVE 3800 TRK 192 UNTIL 7.0 FROM JDP"
+                    }
+                },
+                {
+                    "name": "JDP2",
+                    "fixes": {
+                        "JDP": "JDP AT OR ABOVE 3800 TRK 208 UNTIL 7.0 FROM JDP"
+                    }
+                }
+            ]
+        }
+    ]
+}

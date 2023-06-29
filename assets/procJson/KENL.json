@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "ENL",
+            "lat": 38.42,
+            "lon": 89.15899721666666
+        },
+        {
+            "name": "HUTWI",
+            "lat": 38.71925278333333,
+            "lon": 89.08869166666666
+        },
+        {
+            "name": "PI001",
+            "lat": 38.367127833333335,
+            "lon": 89.19044003333333
+        },
+        {
+            "name": "PI002",
+            "lat": 38.299779066666666,
+            "lon": 89.15920646666666
+        },
+        {
+            "name": "PI003",
+            "lat": 38.268914466666665,
+            "lon": 89.24871213333333
+        },
+        {
+            "name": "QIMLA",
+            "lat": 38.60218056666667,
+            "lon": 89.09041666666667
+        },
+        {
+            "name": "WOKSO",
+            "lat": 38.31114443333333,
+            "lon": 89.094675
+        },
+        {
+            "name": "YEJUL",
+            "lat": 38.42832778333333,
+            "lon": 89.09296388333334
+        },
+        {
+            "name": "YIRBU",
+            "lat": 38.54675833333334,
+            "lon": 89.09123056666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "HUTWI": "HUTWI AT OR ABOVE 2600",
+                "QIMLA": "QIMLA 2100",
+                "YIRBU": "YIRBU AT OR ABOVE 1040 RNW 18 TRK 183 UNTIL 880",
+                "WOKSO": "OVERFLY WOKSO AT OR ABOVE 2600 HOLD AT WOKSO RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4 FAF QIMLA MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "HUTWI",
+                    "fixes": {
+                        "HUTWI": "HUTWI RIGHT TURN INBOUNDCOURSE 183 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "WOKSO": "WOKSO AT OR ABOVE 2600",
+                "YEJUL": "YEJUL 2100 RNW 36 TRK 003 UNTIL 784",
+                "HUTWI": "OVERFLY HUTWI AT OR ABOVE 2600 HOLD AT HUTWI RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4 FAF YEJUL MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "WOKSO",
+                    "fixes": {
+                        "WOKSO": "WOKSO RIGHT TURN INBOUNDCOURSE 003 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "ENL": "ENL 2100 RNW 36 TRK 027 UNTIL 1200 TURN RIGHT DIRECT ENL AT OR ABOVE 2100 HOLD AT ENL RIGHT TURN INBOUNDCOURSE 027 LEGTIME 1 FAF ENL MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ENL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

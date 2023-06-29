@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "CEKIS",
+            "lat": 39.01853611666667,
+            "lon": 96.75335833333334
+        },
+        {
+            "name": "EPAKY",
+            "lat": 38.92305,
+            "lon": 96.96308611666667
+        },
+        {
+            "name": "EVIYU",
+            "lat": 39.02836943333333,
+            "lon": 96.80177778333334
+        },
+        {
+            "name": "FRI",
+            "lat": 38.970163883333335,
+            "lon": 96.86117221666666
+        },
+        {
+            "name": "KAKEL",
+            "lat": 38.831861116666666,
+            "lon": 96.87719721666667
+        },
+        {
+            "name": "LORNY",
+            "lat": 38.99263056666667,
+            "lon": 96.85661111666667
+        },
+        {
+            "name": "PI001",
+            "lat": 38.926803033333336,
+            "lon": 96.91134595
+        },
+        {
+            "name": "PI002",
+            "lat": 38.855234483333334,
+            "lon": 96.90652948333333
+        },
+        {
+            "name": "PI003",
+            "lat": 38.84621885,
+            "lon": 97.00436316666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "EPAKY": "EPAKY AT OR ABOVE 3000 OVERFLY EPAKY AT OR ABOVE 3000 HOLD AT EPAKY RIGHT TURN INBOUNDCOURSE 044 LEGDIST 6 FAF LORNY MAP RNW 04",
+                "LORNY": "LORNY 2800",
+                "EVIYU": "EVIYU AT OR ABOVE 1700 RNW 04 TRK 044 UNTIL 1465 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CEKIS",
+                    "fixes": {
+                        "CEKIS": "CEKIS",
+                        "EPAKY": "EPAKY AT OR ABOVE 3000 HOLD AT EPAKY RIGHT TURN INBOUNDCOURSE 044 ALT 3000 LEGDIST 6"
+                    }
+                },
+                {
+                    "name": "KAKEL",
+                    "fixes": {
+                        "KAKEL": "KAKEL"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR04",
+            "fixes": {
+                "FRI": "FRI 3000 RNW 04 TRK 036 UNTIL 1465 TURN RIGHT DIRECT FRI AT OR ABOVE 3000 HOLD AT FRI RIGHT TURN INBOUNDCOURSE 036 LEGTIME 1 FAF FRI MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "CEKIS",
+                    "fixes": {
+                        "CEKIS": "CEKIS",
+                        "FRI": "FRI AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                },
+                {
+                    "name": "KAKEL",
+                    "fixes": {
+                        "KAKEL": "KAKEL",
+                        "FRI": "FRI AT OR ABOVE 3000",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

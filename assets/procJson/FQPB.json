@@ -1,0 +1,67 @@
+{
+    "fixes": [
+        {
+            "name": "IBGID",
+            "lat": 12.906563883333334,
+            "lon": 40.49393056666667
+        },
+        {
+            "name": "IBTIG",
+            "lat": 12.799922216666667,
+            "lon": 40.546311116666665
+        },
+        {
+            "name": "NIGUV",
+            "lat": 12.827544433333333,
+            "lon": 40.465794433333336
+        },
+        {
+            "name": "PB600",
+            "lat": 13.0646,
+            "lon": 40.550238883333336
+        },
+        {
+            "name": "PB601",
+            "lat": 13.036977783333333,
+            "lon": 40.630780566666665
+        },
+        {
+            "name": "XAKOS",
+            "lat": 12.855141666666666,
+            "lon": 40.38526111666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "IBGID": "IBGID 1900 RNW 17",
+                "PB600": "PB600",
+                "PB601": "PB601",
+                "IBTIG": "IBTIG AT OR ABOVE 2900 HOLD AT IBTIG RIGHT TURN INBOUNDCOURSE 257 ALT 2900 LEGTIME 1 FAF IBGID MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "IBTIG",
+                    "fixes": {
+                        "IBTIG": "IBTIG SPEED 200",
+                        "NIGUV": "NIGUV"
+                    }
+                },
+                {
+                    "name": "XAKOS",
+                    "fixes": {
+                        "XAKOS": "XAKOS SPEED 200",
+                        "NIGUV": "NIGUV"
+                    }
+                }
+            ]
+        }
+    ]
+}

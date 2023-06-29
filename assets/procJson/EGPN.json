@@ -1,0 +1,226 @@
+{
+    "fixes": [
+        {
+            "name": "20LOC",
+            "lat": 56.452758333333335,
+            "lon": 3.097413883333333
+        },
+        {
+            "name": "35LOC",
+            "lat": 56.45295556666667,
+            "lon": 3.1424666666666665
+        },
+        {
+            "name": "ABDED",
+            "lat": 56.38754721666667,
+            "lon": 3.3989527833333333
+        },
+        {
+            "name": "CI09",
+            "lat": 56.45344721666667,
+            "lon": 3.277625
+        },
+        {
+            "name": "DND",
+            "lat": 56.45506666666667,
+            "lon": 3.114925
+        },
+        {
+            "name": "FI09",
+            "lat": 56.45332221666666,
+            "lon": 3.238577783333333
+        },
+        {
+            "name": "IBVIM",
+            "lat": 56.38430556666667,
+            "lon": 2.6942277833333335
+        },
+        {
+            "name": "IVGEX",
+            "lat": 56.5206,
+            "lon": 3.3970138833333334
+        },
+        {
+            "name": "MA09",
+            "lat": 56.452616666666664,
+            "lon": 3.0672138833333333
+        },
+        {
+            "name": "MARIV",
+            "lat": 56.454075,
+            "lon": 3.397894433333333
+        },
+        {
+            "name": "ML09",
+            "lat": 56.452616666666664,
+            "lon": 3.0673805666666665
+        },
+        {
+            "name": "OSVIB",
+            "lat": 56.450375,
+            "lon": 2.572988883333333
+        },
+        {
+            "name": "PN09F",
+            "lat": 56.453477783333334,
+            "lon": 3.267544433333333
+        },
+        {
+            "name": "PN27F",
+            "lat": 56.45150278333333,
+            "lon": 2.816852783333333
+        },
+        {
+            "name": "PN27I",
+            "lat": 56.45093056666666,
+            "lon": 2.6931166666666666
+        },
+        {
+            "name": "PNM01",
+            "lat": 56.45188056666667,
+            "lon": 2.9326472166666666
+        },
+        {
+            "name": "PNM02",
+            "lat": 56.53913888333334,
+            "lon": 2.8046444333333334
+        },
+        {
+            "name": "PNM03",
+            "lat": 56.59156111666667,
+            "lon": 2.9215416666666667
+        },
+        {
+            "name": "PNM04",
+            "lat": 56.45326943333333,
+            "lon": 3.2307194333333333
+        },
+        {
+            "name": "PNM05",
+            "lat": 56.580469433333334,
+            "lon": 3.229844433333333
+        },
+        {
+            "name": "PNM06",
+            "lat": 56.580013883333336,
+            "lon": 3.0702472166666666
+        },
+        {
+            "name": "RW09",
+            "lat": 56.452469433333334,
+            "lon": 3.0371805666666667
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS09",
+            "fixes": {
+                "CI09": "CI09 AT OR ABOVE 2200",
+                "FI09": "FI09 2200 RNW 09 TRK 092 UNTIL 2000 TURN LEFT DIRECT",
+                "DND": "DND 3000 SPEED 210 FAF FI09 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DND1",
+                    "fixes": {
+                        "DND": "DND AT OR ABOVE 3000 SPEED 210 TRK 240 UNTIL 5.7 FROM DND"
+                    }
+                },
+                {
+                    "name": "DND2",
+                    "fixes": {
+                        "DND": "DND AT OR ABOVE 3000 SPEED 210 TRK 255 UNTIL 5.6 FROM DND"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC09",
+            "fixes": {
+                "CI09": "CI09 AT OR ABOVE 2200",
+                "FI09": "FI09 2200",
+                "35LOC": "35LOC AT OR ABOVE 1170",
+                "20LOC": "20LOC AT OR ABOVE 690",
+                "ML09": "ML09 379 RNW 09 TRK 092 UNTIL 2000 TURN LEFT DIRECT",
+                "DND": "DND 3000 SPEED 210 FAF FI09 MAP ML09"
+            },
+            "transitions": [
+                {
+                    "name": "DND1",
+                    "fixes": {
+                        "DND": "DND AT OR ABOVE 3000 SPEED 210 TRK 240 UNTIL 5.8 FROM DND"
+                    }
+                },
+                {
+                    "name": "DND2",
+                    "fixes": {
+                        "DND": "DND AT OR ABOVE 3000 SPEED 210 TRK 255 UNTIL 5.5 FROM DND"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "PN09F": "PN09F 2500 SPEED 210",
+                "MA09": "OVERFLY MA09 376 RNW 09",
+                "PNM02": "PNM02 SPEED 185",
+                "PNM03": "PNM03 SPEED 185 TURN LEFT DIRECT",
+                "DND": "DND 3000 SPEED 185 HOLD AT DND LEFT TURN INBOUNDCOURSE 254 ALT 3000 SPEED 210 LEGTIME 1 FAF PN09F MAP MA09"
+            },
+            "transitions": [
+                {
+                    "name": "ABDED",
+                    "fixes": {
+                        "ABDED": "ABDED AT OR ABOVE 3400 SPEED 210",
+                        "MARIV": "MARIV AT OR ABOVE 3400 SPEED 210"
+                    }
+                },
+                {
+                    "name": "IVGEX",
+                    "fixes": {
+                        "IVGEX": "IVGEX AT OR ABOVE 3600 SPEED 210",
+                        "MARIV": "MARIV AT OR ABOVE 3400 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MARIV",
+                    "fixes": {
+                        "MARIV": "MARIV AT OR ABOVE 3400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "PN27I": "PN27I AT OR ABOVE 2500 SPEED 210",
+                "PN27F": "PN27F 2500 SPEED 210 RNW 27",
+                "PNM04": "PNM04 SPEED 185",
+                "PNM05": "PNM05 SPEED 185",
+                "PNM06": "PNM06 SPEED 185 TURN RIGHT DIRECT",
+                "DND": "DND 3000 SPEED 185 HOLD AT DND LEFT TURN INBOUNDCOURSE 254 ALT 3000 SPEED 210 LEGTIME 1 FAF PN27F MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "IBVIM",
+                    "fixes": {
+                        "IBVIM": "IBVIM AT OR ABOVE 2800 SPEED 210"
+                    }
+                },
+                {
+                    "name": "OSVIB",
+                    "fixes": {
+                        "OSVIB": "OSVIB AT OR ABOVE 2500 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

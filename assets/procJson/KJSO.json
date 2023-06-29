@@ -1,0 +1,128 @@
+{
+    "fixes": [
+        {
+            "name": "CIVEG",
+            "lat": 31.983647216666668,
+            "lon": 95.39031388333333
+        },
+        {
+            "name": "FZT",
+            "lat": 32.07460556666667,
+            "lon": 95.53079166666667
+        },
+        {
+            "name": "NOPCI",
+            "lat": 31.725788883333333,
+            "lon": 95.07689443333334
+        },
+        {
+            "name": "OXAKY",
+            "lat": 31.934830566666665,
+            "lon": 95.59568056666667
+        },
+        {
+            "name": "RUGKO",
+            "lat": 31.934605566666665,
+            "lon": 95.28150556666667
+        },
+        {
+            "name": "SPWAY",
+            "lat": 31.922922216666667,
+            "lon": 95.29681666666667
+        },
+        {
+            "name": "WEDGA",
+            "lat": 32.11999443333333,
+            "lon": 95.20805
+        },
+        {
+            "name": "WOSUL",
+            "lat": 32.01270556666667,
+            "lon": 95.35836388333334
+        },
+        {
+            "name": "YIYUK",
+            "lat": 31.80322221666667,
+            "lon": 95.15261943333333
+        },
+        {
+            "name": "ZIBOG",
+            "lat": 31.832747216666668,
+            "lon": 94.92671943333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD14",
+            "fixes": {
+                "CIVEG": "CIVEG AT OR ABOVE 2500",
+                "SPWAY": "SPWAY 2200 RNW 14 TRK 121 UNTIL 1080 TURN RIGHT DIRECT",
+                "FZT": "FZT AT OR ABOVE 2500 HOLD AT FZT RIGHT TURN INBOUNDCOURSE 121 LEGTIME 1 FAF SPWAY MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "FZT",
+                    "fixes": {
+                        "FZT": "FZT"
+                    }
+                },
+                {
+                    "name": "OXAKY",
+                    "fixes": {
+                        "OXAKY": "OXAKY"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "WOSUL": "WOSUL AT OR ABOVE 3100",
+                "RUGKO": "RUGKO 2200 RNW 14 TRK 135 UNTIL 878",
+                "NOPCI": "OVERFLY NOPCI AT OR ABOVE 3100 HOLD AT NOPCI RIGHT TURN INBOUNDCOURSE 315 LEGDIST 4 FAF RUGKO MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "WEDGA",
+                    "fixes": {
+                        "WEDGA": "WEDGA AT OR ABOVE 3100"
+                    }
+                },
+                {
+                    "name": "WOSUL",
+                    "fixes": {
+                        "WOSUL": "WOSUL RIGHT TURN INBOUNDCOURSE 135 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "NOPCI": "NOPCI AT OR ABOVE 3100",
+                "YIYUK": "YIYUK 2200 RNW 32 TRK 315 UNTIL 908",
+                "WOSUL": "OVERFLY WOSUL AT OR ABOVE 3100 HOLD AT WOSUL RIGHT TURN INBOUNDCOURSE 135 LEGDIST 4 FAF YIYUK MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "NOPCI",
+                    "fixes": {
+                        "NOPCI": "NOPCI RIGHT TURN INBOUNDCOURSE 315 ALT 3100 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZIBOG",
+                    "fixes": {
+                        "ZIBOG": "ZIBOG AT OR ABOVE 3100"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    "fixes": [
+        {
+            "name": "FF17",
+            "lat": 27.414519433333332,
+            "lon": 97.422425
+        },
+        {
+            "name": "FF35",
+            "lat": 27.238497216666666,
+            "lon": 97.48298888333333
+        },
+        {
+            "name": "MA17",
+            "lat": 27.363891666666667,
+            "lon": 97.42341388333334
+        },
+        {
+            "name": "MA35",
+            "lat": 27.295769433333334,
+            "lon": 97.44451666666667
+        },
+        {
+            "name": "PI001",
+            "lat": 27.276044516666666,
+            "lon": 97.45795796666667
+        },
+        {
+            "name": "PI002",
+            "lat": 27.258685016666668,
+            "lon": 97.53618288333334
+        },
+        {
+            "name": "PI003",
+            "lat": 27.18315565,
+            "lon": 97.52065326666667
+        },
+        {
+            "name": "PTNB",
+            "lat": 27.32605,
+            "lon": 97.42415556666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB17",
+            "fixes": {
+                "FF17": "FF17 3090",
+                "MA17": "MA17 2010 RNW 17 HDG 150 UNTIL 3000 TURN LEFT DIRECT",
+                "PTNB": "PTNB 4000 HOLD AT PTNB LEFT TURN INBOUNDCOURSE 330 LEGTIME 1 FAF FF17 MAP MA17"
+            },
+            "transitions": [
+                {
+                    "name": "PT1",
+                    "fixes": {
+                        "PTNB": "PTNB AT OR ABOVE 4000 TRK 330 UNTIL 5.3 FROM PTNB"
+                    }
+                },
+                {
+                    "name": "PT2",
+                    "fixes": {
+                        "PTNB": "PTNB AT OR ABOVE 4000 TRK 345 UNTIL 7.5 FROM PTNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB35",
+            "fixes": {
+                "FF35": "FF35 2840",
+                "MA35": "MA35 2056 RNW 35 HDG 340 UNTIL 3500 TURN RIGHT DIRECT",
+                "PTNB": "PTNB 4000 HOLD AT PTNB LEFT TURN INBOUNDCOURSE 150 LEGTIME 1 FAF FF35 MAP MA35"
+            },
+            "transitions": [
+                {
+                    "name": "PT",
+                    "fixes": {
+                        "PTNB": "PTNB AT OR ABOVE 4000",
+                        "PI001": "PI001 AT OR ABOVE 2840 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2840 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2840 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

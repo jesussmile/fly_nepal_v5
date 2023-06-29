@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "AA006",
+            "lat": 34.592694433333335,
+            "lon": 56.373675
+        },
+        {
+            "name": "AA007",
+            "lat": 34.533380566666665,
+            "lon": 56.28280278333333
+        },
+        {
+            "name": "AA008",
+            "lat": 34.58366111666667,
+            "lon": 56.184297216666664
+        },
+        {
+            "name": "AA009",
+            "lat": 34.79129721666666,
+            "lon": 56.390686116666664
+        },
+        {
+            "name": "ASINB",
+            "lat": 34.789527783333334,
+            "lon": 56.263027783333335
+        },
+        {
+            "name": "FN19",
+            "lat": 34.71580556666667,
+            "lon": 56.27557221666667
+        },
+        {
+            "name": "ILMAS",
+            "lat": 34.61671666666667,
+            "lon": 56.27699166666667
+        },
+        {
+            "name": "IREDU",
+            "lat": 34.70005,
+            "lon": 56.271169433333334
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBZ19",
+            "fixes": {
+                "FN19": "FN19 1500 RNW 19",
+                "ASINB": "OVERFLY ASINB TRK 183 UNTIL 1500 TURN RIGHT DIRECT ASINB AT OR ABOVE 2500 HOLD AT ASINB LEFT TURN INBOUNDCOURSE 336 LEGTIME 1 FAF FN19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "ASI",
+                    "fixes": {
+                        "ASINB": "ASINB AT OR ABOVE 2500 TRK 336 UNTIL 7.0 FROM ASINB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ19",
+            "fixes": {
+                "ILMAS": "ILMAS AT OR ABOVE 3000",
+                "IREDU": "IREDU 1800 RNW 19 HDG 188 UNTIL 1000 TURN RIGHT DIRECT",
+                "AA009": "AA009 AT OR BELOW 2000",
+                "AA006": "OVERFLY AA006 AT OR ABOVE 3000 HOLD AT AA006 RIGHT TURN INBOUNDCOURSE 118 ALT 3000 LEGTIME 1 FAF IREDU MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "AA006",
+                    "fixes": {
+                        "AA006": "AA006 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "AA007",
+                    "fixes": {
+                        "AA007": "AA007 AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "AA008",
+                    "fixes": {
+                        "AA008": "AA008 AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

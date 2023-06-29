@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "ADIVE",
+            "lat": 32.047572216666666,
+            "lon": 90.95824443333333
+        },
+        {
+            "name": "CAVOD",
+            "lat": 32.20335278333334,
+            "lon": 90.93381666666667
+        },
+        {
+            "name": "DOGME",
+            "lat": 32.14691388333333,
+            "lon": 90.942675
+        },
+        {
+            "name": "USEZU",
+            "lat": 32.28440556666666,
+            "lon": 90.92108333333333
+        },
+        {
+            "name": "WIVNI",
+            "lat": 32.43003888333333,
+            "lon": 90.89815833333333
+        },
+        {
+            "name": "ZOKLU",
+            "lat": 32.33064443333333,
+            "lon": 90.91381388333333
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "ADIVE": "ADIVE AT OR ABOVE 2000",
+                "DOGME": "DOGME 1800",
+                "CAVOD": "CAVOD AT OR ABOVE 700 RNW 01 TRK 008 UNTIL 507",
+                "WIVNI": "OVERFLY WIVNI AT OR ABOVE 2000 HOLD AT WIVNI RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4 FAF DOGME MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ADIVE",
+                    "fixes": {
+                        "ADIVE": "ADIVE RIGHT TURN INBOUNDCOURSE 008 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "WIVNI": "WIVNI AT OR ABOVE 2000",
+                "ZOKLU": "ZOKLU 1800",
+                "USEZU": "USEZU AT OR ABOVE 900 RNW 19 TRK 188 UNTIL 507",
+                "ADIVE": "OVERFLY ADIVE AT OR ABOVE 2000 HOLD AT ADIVE RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4 FAF ZOKLU MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "WIVNI",
+                    "fixes": {
+                        "WIVNI": "WIVNI RIGHT TURN INBOUNDCOURSE 188 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

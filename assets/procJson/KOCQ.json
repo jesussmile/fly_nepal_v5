@@ -1,0 +1,66 @@
+{
+    "fixes": [
+        {
+            "name": "ANONE",
+            "lat": 44.90213056666666,
+            "lon": 88.02286943333333
+        },
+        {
+            "name": "WENEG",
+            "lat": 44.844869433333336,
+            "lon": 87.79515556666666
+        },
+        {
+            "name": "WOBEV",
+            "lat": 44.94075556666667,
+            "lon": 88.17780556666666
+        },
+        {
+            "name": "WUKIK",
+            "lat": 44.805708333333335,
+            "lon": 87.64074443333334
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 11",
+        "RNW 22",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "WOBEV": "WOBEV AT OR ABOVE 3200",
+                "ANONE": "ANONE 2200 RNW 11 TRK 112 UNTIL 1004",
+                "WUKIK": "OVERFLY WUKIK AT OR ABOVE 3200 HOLD AT WUKIK RIGHT TURN INBOUNDCOURSE 293 LEGDIST 4 FAF ANONE MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "WOBEV",
+                    "fixes": {
+                        "WOBEV": "WOBEV RIGHT TURN INBOUNDCOURSE 112 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "WUKIK": "WUKIK AT OR ABOVE 3200",
+                "WENEG": "WENEG 2200 RNW 29 TRK 293 UNTIL 1004",
+                "WOBEV": "OVERFLY WOBEV AT OR ABOVE 3200 HOLD AT WOBEV RIGHT TURN INBOUNDCOURSE 112 LEGDIST 4 FAF WENEG MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "WUKIK",
+                    "fixes": {
+                        "WUKIK": "WUKIK RIGHT TURN INBOUNDCOURSE 293 ALT 3200 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

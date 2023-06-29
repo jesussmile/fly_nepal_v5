@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "CIVOM",
+            "lat": 37.32924166666667,
+            "lon": 88.05966111666666
+        },
+        {
+            "name": "COVOS",
+            "lat": 37.60691943333333,
+            "lon": 87.94982778333333
+        },
+        {
+            "name": "FITIP",
+            "lat": 37.366961116666666,
+            "lon": 87.96644166666667
+        },
+        {
+            "name": "HETEP",
+            "lat": 37.754694433333334,
+            "lon": 87.84840278333333
+        },
+        {
+            "name": "IKELE",
+            "lat": 37.76268888333333,
+            "lon": 88.03013333333334
+        },
+        {
+            "name": "LOXFY",
+            "lat": 37.46784721666667,
+            "lon": 87.95946943333334
+        },
+        {
+            "name": "OLGEW",
+            "lat": 37.717075,
+            "lon": 87.94216943333333
+        },
+        {
+            "name": "WAKAK",
+            "lat": 37.49991943333333,
+            "lon": 87.95725
+        },
+        {
+            "name": "ZABUX",
+            "lat": 37.32130278333333,
+            "lon": 87.87897221666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "FITIP": "FITIP AT OR ABOVE 2500",
+                "LOXFY": "LOXFY 1700",
+                "WAKAK": "WAKAK AT OR ABOVE 1080 RNW 01 TRK 003 UNTIL 658",
+                "OLGEW": "OVERFLY OLGEW AT OR ABOVE 2500 HOLD AT OLGEW RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4 FAF LOXFY MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "CIVOM",
+                    "fixes": {
+                        "CIVOM": "CIVOM"
+                    }
+                },
+                {
+                    "name": "FITIP",
+                    "fixes": {
+                        "FITIP": "FITIP RIGHT TURN INBOUNDCOURSE 003 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZABUX",
+                    "fixes": {
+                        "ZABUX": "ZABUX"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "OLGEW": "OLGEW AT OR ABOVE 2500",
+                "COVOS": "COVOS 1700 RNW 19 TRK 183 UNTIL 772",
+                "FITIP": "OVERFLY FITIP AT OR ABOVE 2500 HOLD AT FITIP RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4 FAF COVOS MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "HETEP",
+                    "fixes": {
+                        "HETEP": "HETEP AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "IKELE",
+                    "fixes": {
+                        "IKELE": "IKELE AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "OLGEW",
+                    "fixes": {
+                        "OLGEW": "OLGEW RIGHT TURN INBOUNDCOURSE 183 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

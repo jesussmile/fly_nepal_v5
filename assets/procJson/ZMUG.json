@@ -1,0 +1,177 @@
+{
+    "fixes": [
+        {
+            "name": "MIBUT",
+            "lat": 49.479722216666666,
+            "lon": 91.92638888333333
+        },
+        {
+            "name": "MN31",
+            "lat": 50.04633056666667,
+            "lon": 91.97181111666667
+        },
+        {
+            "name": "RW13",
+            "lat": 50.07523333333334,
+            "lon": 91.923975
+        },
+        {
+            "name": "RW31",
+            "lat": 50.05866388333333,
+            "lon": 91.95148611666667
+        },
+        {
+            "name": "SADGO",
+            "lat": 49.77555556666667,
+            "lon": 93.25388888333333
+        },
+        {
+            "name": "TAVIM",
+            "lat": 49.685197216666666,
+            "lon": 92.07195278333333
+        },
+        {
+            "name": "TEKUR",
+            "lat": 49.89914721666667,
+            "lon": 92.60309443333334
+        },
+        {
+            "name": "UG001",
+            "lat": 49.998705566666665,
+            "lon": 92.05078333333333
+        },
+        {
+            "name": "UG002",
+            "lat": 49.900283333333334,
+            "lon": 92.21336666666667
+        },
+        {
+            "name": "UGUNA",
+            "lat": 49.99144166666667,
+            "lon": 92.34583888333333
+        },
+        {
+            "name": "URBUM",
+            "lat": 49.046111116666665,
+            "lon": 91.84444443333334
+        },
+        {
+            "name": "USNB",
+            "lat": 50.01197221666666,
+            "lon": 92.02905556666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "MIBU2A",
+            "rnw": "13",
+            "fixes": {
+                "RW13": "OVERFLY RW13 TRK 311 UNTIL 5250 TURN RIGHT DIRECT",
+                "USNB": "USNB",
+                "MIBUT": "MIBUT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SADG2A",
+            "rnw": "31",
+            "fixes": {
+                "SADGO": "SADGO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "SADG2B",
+            "rnw": "13",
+            "fixes": {
+                "SADGO": "SADGO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "URBU2B",
+            "rnw": "13",
+            "fixes": {
+                "URBUM": "URBUM"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "MIBUT2",
+            "runway": "RNW 31",
+            "fixes": {
+                "MIBUT": "MIBUT",
+                "TAVIM": "TAVIM AT OR ABOVE 11820"
+            }
+        },
+        {
+            "name": "SADGO2",
+            "runway": "RNW 31",
+            "fixes": {
+                "SADGO": "SADGO",
+                "TEKUR": "TEKUR AT OR ABOVE 11820"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB31",
+            "fixes": {
+                "USNB": "USNB 4520 USNB 7880 HOLD AT USNB RIGHT TURN INBOUNDCOURSE 311 ALT 7880 SPEED 180 LEGTIME 1 FAF USNB MAP MN31",
+                "MN31": "MN31 3412 RNW 31 TRK 311 UNTIL 5580 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "US1",
+                    "fixes": {
+                        "USNB": "USNB RIGHT TURN INBOUNDCOURSE 311 ALT 5910 SPEED 160 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "US2",
+                    "fixes": {
+                        "USNB": "USNB RIGHT TURN INBOUNDCOURSE 311 ALT 5910 SPEED 120 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "UG002": "UG002 AT OR ABOVE 6890",
+                "UG001": "UG001 4700 RNW 31 TRK 311 UNTIL 4270 TURN RIGHT DIRECT",
+                "UGUNA": "UGUNA AT OR ABOVE 7550 HOLD AT UGUNA RIGHT TURN INBOUNDCOURSE 221 ALT 7550 SPEED 230 LEGTIME 1 FAF UG001 MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "TAVIM",
+                    "fixes": {
+                        "TAVIM": "TAVIM AT OR ABOVE 11820"
+                    }
+                },
+                {
+                    "name": "TEKUR",
+                    "fixes": {
+                        "TEKUR": "TEKUR AT OR ABOVE 11820"
+                    }
+                },
+                {
+                    "name": "UGUNA",
+                    "fixes": {
+                        "UGUNA": "UGUNA AT OR ABOVE 7550"
+                    }
+                }
+            ]
+        }
+    ]
+}

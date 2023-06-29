@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "BUTGE",
+            "lat": 35.82993056666667,
+            "lon": 77.195625
+        },
+        {
+            "name": "FABDA",
+            "lat": 35.78439721666667,
+            "lon": 77.22019166666666
+        },
+        {
+            "name": "HOBVU",
+            "lat": 35.89350556666667,
+            "lon": 77.16127778333333
+        },
+        {
+            "name": "NASIE",
+            "lat": 35.939508333333336,
+            "lon": 77.13638888333334
+        },
+        {
+            "name": "TALOE",
+            "lat": 35.70874166666667,
+            "lon": 77.26094721666666
+        },
+        {
+            "name": "WOBGO",
+            "lat": 36.015127783333334,
+            "lon": 77.09540556666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "TALOE": "TALOE AT OR ABOVE 2400",
+                "FABDA": "FABDA 1600",
+                "BUTGE": "BUTGE AT OR ABOVE 640 RNW 03 TRK 033 UNTIL 336",
+                "WOBGO": "OVERFLY WOBGO AT OR ABOVE 3500 HOLD AT WOBGO RIGHT TURN INBOUNDCOURSE 213 ALT 3500 LEGDIST 4 FAF FABDA MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "TALOE",
+                    "fixes": {
+                        "TALOE": "TALOE RIGHT TURN INBOUNDCOURSE 033 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "WOBGO": "WOBGO AT OR ABOVE 2400",
+                "NASIE": "NASIE 1600",
+                "HOBVU": "HOBVU AT OR ABOVE 640 RNW 21 TRK 213 UNTIL 337",
+                "TALOE": "OVERFLY TALOE AT OR ABOVE 2400 HOLD AT TALOE RIGHT TURN INBOUNDCOURSE 033 ALT 2400 LEGDIST 4 FAF NASIE MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "WOBGO",
+                    "fixes": {
+                        "WOBGO": "WOBGO RIGHT TURN INBOUNDCOURSE 213 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

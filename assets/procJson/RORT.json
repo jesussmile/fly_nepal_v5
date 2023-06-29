@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "GAHRA",
+            "lat": 24.711980566666668,
+            "lon": 125.09731943333334
+        },
+        {
+            "name": "KROWA",
+            "lat": 24.779911116666668,
+            "lon": 124.73182221666667
+        },
+        {
+            "name": "MINNA",
+            "lat": 24.771522216666668,
+            "lon": 124.65914721666667
+        },
+        {
+            "name": "MJC",
+            "lat": 24.777391666666666,
+            "lon": 125.29340833333333
+        },
+        {
+            "name": "PANAP",
+            "lat": 24.544572216666666,
+            "lon": 124.76428888333334
+        },
+        {
+            "name": "RT650",
+            "lat": 24.59425278333333,
+            "lon": 124.68371666666667
+        },
+        {
+            "name": "RT651",
+            "lat": 24.696855566666667,
+            "lon": 124.66950556666667
+        },
+        {
+            "name": "RT851",
+            "lat": 24.713466666666665,
+            "lon": 124.6672
+        },
+        {
+            "name": "RT852",
+            "lat": 24.610761116666666,
+            "lon": 124.68143333333333
+        },
+        {
+            "name": "UMAKI",
+            "lat": 24.622694433333333,
+            "lon": 124.85416943333334
+        },
+        {
+            "name": "YUGAP",
+            "lat": 24.536194433333332,
+            "lon": 124.69175
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [
+        {
+            "name": "GAHRA3",
+            "rnw": "16",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 18",
+                    "fixes": {
+                        "RNW 18": "RNW 18 HDG 178 UNTIL 500 TURN LEFT DIRECT",
+                        "GAHRA": "GAHRA AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "rwy": "RNW 36",
+                    "fixes": {
+                        "RNW 36": "RNW 36 HDG 358 UNTIL 500 TURN RIGHT DIRECT",
+                        "GAHRA": "GAHRA AT OR ABOVE 3000"
+                    }
+                }
+            ],
+            "transitions": [
+                {
+                    "name": "MJC",
+                    "fixes": [
+                        "MJC"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "MINNA": "MINNA AT OR ABOVE 1200 SPEED 185",
+                "RT851": "RT851 1100 RNW 18",
+                "RT852": "RT852",
+                "UMAKI": "UMAKI 2000 HOLD AT UMAKI LEFT TURN INBOUNDCOURSE 254 ALT 2000 SPEED 230 LEGTIME 1 FAF RT851 MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "UMAKI",
+                    "fixes": {
+                        "UMAKI": "UMAKI AT OR ABOVE 2000",
+                        "KROWA": "KROWA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "YUGAP": "YUGAP AT OR ABOVE 1200 SPEED 185",
+                "RT650": "RT650 1100 RNW 36",
+                "RT651": "OVERFLY RT651 TURN RIGHT DIRECT",
+                "UMAKI": "UMAKI 2000 HOLD AT UMAKI LEFT TURN INBOUNDCOURSE 254 ALT 2000 SPEED 230 LEGTIME 1 FAF RT650 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "UMAKI",
+                    "fixes": {
+                        "UMAKI": "UMAKI AT OR ABOVE 2000",
+                        "PANAP": "PANAP"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "FF16",
+            "lat": 63.83165278333333,
+            "lon": 171.74763056666666
+        },
+        {
+            "name": "FF34",
+            "lat": 63.66665833333333,
+            "lon": 171.70389721666666
+        },
+        {
+            "name": "GAMNB",
+            "lat": 63.781875,
+            "lon": 171.73677778333334
+        },
+        {
+            "name": "JAYVE",
+            "lat": 63.56091111666667,
+            "lon": 171.66842221666667
+        },
+        {
+            "name": "KALIX",
+            "lat": 63.676147216666664,
+            "lon": 171.70436111666666
+        },
+        {
+            "name": "MA34",
+            "lat": 63.740836116666664,
+            "lon": 171.72496388333334
+        },
+        {
+            "name": "N16HP",
+            "lat": 63.834594433333336,
+            "lon": 171.84060556666665
+        },
+        {
+            "name": "PEZUM",
+            "lat": 63.97228333333334,
+            "lon": 171.79805833333333
+        },
+        {
+            "name": "PI001",
+            "lat": 63.839888116666664,
+            "lon": 171.75060801666666
+        },
+        {
+            "name": "PI002",
+            "lat": 63.884934216666664,
+            "lon": 171.87713826666666
+        },
+        {
+            "name": "PI003",
+            "lat": 63.94762323333333,
+            "lon": 171.77644463333334
+        },
+        {
+            "name": "PI004",
+            "lat": 63.608758916666666,
+            "lon": 171.68790381666668
+        },
+        {
+            "name": "PI005",
+            "lat": 63.55225065,
+            "lon": 171.78697038333334
+        },
+        {
+            "name": "PI006",
+            "lat": 63.50122673333333,
+            "lon": 171.65837391666668
+        },
+        {
+            "name": "ULL",
+            "lat": 63.69233056666667,
+            "lon": 170.46990278333334
+        },
+        {
+            "name": "VADUZ",
+            "lat": 63.857108333333336,
+            "lon": 171.76138611666667
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FF16": "FF16 980",
+                "GAMNB": "GAMNB 247 RNW 16 HDG 166 UNTIL 430 TURN RIGHT DIRECT GAMNB 3000 HOLD AT GAMNB RIGHT TURN INBOUNDCOURSE 166 LEGTIME 1 FAF FF16 MAP GAM",
+                "N16HP": "OVERFLY N16HP TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ULL",
+                    "fixes": {
+                        "ULL": "ULL",
+                        "GAMNB": "GAMNB AT OR ABOVE 3700",
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD34",
+            "fixes": {
+                "FF34": "FF34 1900",
+                "MA34": "MA34 453 RNW 34",
+                "GAMNB": "GAMNB AT OR ABOVE 860 HOLD AT GAMNB RIGHT TURN INBOUNDCOURSE 166 ALT 3000 LEGTIME 1 FAF FF34 MAP MA34"
+            },
+            "transitions": [
+                {
+                    "name": "ULL",
+                    "fixes": {
+                        "ULL": "ULL",
+                        "GAMNB": "GAMNB AT OR ABOVE 3700 TURN LEFT DIRECT",
+                        "FF34": "FF34 AT OR ABOVE 3000",
+                        "PI004": "PI004 AT OR ABOVE 2800 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2800 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "PEZUM": "PEZUM AT OR ABOVE 1700",
+                "VADUZ": "VADUZ 1700 RNW 16 TRK 160 UNTIL 279",
+                "JAYVE": "OVERFLY JAYVE AT OR ABOVE 3000 HOLD AT JAYVE RIGHT TURN INBOUNDCOURSE 344 LEGDIST 4 FAF VADUZ MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "PEZUM",
+                    "fixes": {
+                        "PEZUM": "PEZUM RIGHT TURN INBOUNDCOURSE 164 ALT 1700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "JAYVE": "JAYVE AT OR ABOVE 3000",
+                "KALIX": "KALIX 1700 RNW 34 TRK 344 UNTIL 278",
+                "PEZUM": "OVERFLY PEZUM AT OR ABOVE 3000 HOLD AT PEZUM RIGHT TURN INBOUNDCOURSE 164 LEGDIST 4 FAF KALIX MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "JAYVE",
+                    "fixes": {
+                        "JAYVE": "JAYVE RIGHT TURN INBOUNDCOURSE 344 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "AJBOY",
+            "lat": 43.549391666666665,
+            "lon": 96.19936943333333
+        },
+        {
+            "name": "BRAIN",
+            "lat": 43.65006666666667,
+            "lon": 96.43682778333333
+        },
+        {
+            "name": "CODDE",
+            "lat": 43.673022216666666,
+            "lon": 96.22443056666667
+        },
+        {
+            "name": "COPYE",
+            "lat": 42.982675,
+            "lon": 95.9645
+        },
+        {
+            "name": "ESXAZ",
+            "lat": 43.685125,
+            "lon": 96.11081388333334
+        },
+        {
+            "name": "GISHE",
+            "lat": 43.360111116666666,
+            "lon": 96.16127778333333
+        },
+        {
+            "name": "IGTIW",
+            "lat": 43.28388888333333,
+            "lon": 96.14600556666667
+        },
+        {
+            "name": "IKAKE",
+            "lat": 43.27177221666667,
+            "lon": 96.25887221666666
+        },
+        {
+            "name": "KEMIK",
+            "lat": 43.29589443333333,
+            "lon": 96.03309443333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "CODDE": "CODDE AT OR ABOVE 3700",
+                "AJBOY": "AJBOY 3200 RNW 16 TRK 167 UNTIL 2200 TURN RIGHT DIRECT",
+                "BRAIN": "OVERFLY BRAIN AT OR ABOVE 3700 HOLD AT BRAIN RIGHT TURN INBOUNDCOURSE 225 LEGDIST 4 FAF AJBOY MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "BRAIN",
+                    "fixes": {
+                        "BRAIN": "BRAIN"
+                    }
+                },
+                {
+                    "name": "ESXAZ",
+                    "fixes": {
+                        "ESXAZ": "ESXAZ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "IGTIW": "IGTIW AT OR ABOVE 3700",
+                "GISHE": "GISHE 3100 RNW 34 TRK 347 UNTIL 2200",
+                "BRAIN": "OVERFLY BRAIN AT OR ABOVE 3700 HOLD AT BRAIN RIGHT TURN INBOUNDCOURSE 225 LEGDIST 4 FAF GISHE MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "BRAIN",
+                    "fixes": {
+                        "BRAIN": "BRAIN",
+                        "IKAKE": "IKAKE AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "COPYE",
+                    "fixes": {
+                        "COPYE": "COPYE",
+                        "KEMIK": "KEMIK AT OR ABOVE 3700"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CELED",
+            "lat": 35.12065556666667,
+            "lon": 94.60050556666667
+        },
+        {
+            "name": "CLOMP",
+            "lat": 34.964894433333335,
+            "lon": 94.63311111666667
+        },
+        {
+            "name": "HANUK",
+            "lat": 35.272511116666664,
+            "lon": 94.56867778333333
+        },
+        {
+            "name": "HAPIK",
+            "lat": 34.919161116666665,
+            "lon": 94.64265556666666
+        },
+        {
+            "name": "JOBOK",
+            "lat": 34.826447216666665,
+            "lon": 94.66192778333334
+        },
+        {
+            "name": "WUMVO",
+            "lat": 35.07933056666667,
+            "lon": 94.60917221666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "HANUK": "HANUK AT OR ABOVE 4100",
+                "CELED": "CELED 2300",
+                "WUMVO": "WUMVO AT OR ABOVE 1500 RNW 18 TRK 187 UNTIL 700",
+                "JOBOK": "OVERFLY JOBOK AT OR ABOVE 4100 HOLD AT JOBOK RIGHT TURN INBOUNDCOURSE 007 ALT 4100 LEGDIST 5 FAF CELED MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "HANUK",
+                    "fixes": {
+                        "HANUK": "HANUK RIGHT TURN INBOUNDCOURSE 187 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "JOBOK": "JOBOK AT OR ABOVE 4100",
+                "HAPIK": "HAPIK 2400",
+                "CLOMP": "CLOMP AT OR ABOVE 1500 RNW 36 TRK 007 UNTIL 701",
+                "HANUK": "HANUK AT OR ABOVE 4100 HOLD AT HANUK RIGHT TURN INBOUNDCOURSE 187 ALT 4100 LEGDIST 5 FAF HAPIK MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "JOBOK",
+                    "fixes": {
+                        "JOBOK": "JOBOK RIGHT TURN INBOUNDCOURSE 007 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "BMN",
+            "lat": 53.04625278333334,
+            "lon": 8.760447216666666
+        },
+        {
+            "name": "DER08",
+            "lat": 52.586002783333335,
+            "lon": 8.350158333333333
+        },
+        {
+            "name": "DER26",
+            "lat": 52.58499166666667,
+            "lon": 8.3313
+        },
+        {
+            "name": "DPNB",
+            "lat": 52.591661116666664,
+            "lon": 8.453419433333334
+        },
+        {
+            "name": "NIE",
+            "lat": 52.62589166666667,
+            "lon": 9.371991666666666
+        },
+        {
+            "name": "OSN",
+            "lat": 52.20013611666667,
+            "lon": 8.285519433333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [
+        {
+            "name": "ND108",
+            "rnw": "08",
+            "fixes": {
+                "DER08": "DER08 TRK 082 UNTIL 2500 HDG 082 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ND126",
+            "rnw": "26",
+            "fixes": {
+                "DER26": "DER26 TRK 262 UNTIL 2500 HDG 262 VECTORS"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB26",
+            "fixes": {
+                "DPNB": "DPNB 1550 RNW 26 TRK 262 UNTIL 800 TURN LEFT DIRECT DPNB 2500 SPEED 160 FAF DPNB MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "BMN",
+                    "fixes": {
+                        "BMN": "BMN",
+                        "DPNB": "DPNB AT OR ABOVE 2500 HOLD AT DPNB LEFT TURN INBOUNDCOURSE 262 ALT 1800 SPEED 175 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "DP",
+                    "fixes": {
+                        "DPNB": "DPNB LEFT TURN INBOUNDCOURSE 262 ALT 1800 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "NIE",
+                    "fixes": {
+                        "NIE": "NIE",
+                        "DPNB": "DPNB AT OR ABOVE 2500 HOLD AT DPNB LEFT TURN INBOUNDCOURSE 262 ALT 1800 SPEED 175 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "OSN",
+                    "fixes": {
+                        "OSN": "OSN",
+                        "DPNB": "DPNB AT OR ABOVE 2500 HOLD AT DPNB LEFT TURN INBOUNDCOURSE 262 ALT 1800 SPEED 175 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

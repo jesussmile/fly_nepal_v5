@@ -1,0 +1,93 @@
+{
+    "fixes": [
+        {
+            "name": "CEPET",
+            "lat": 34.099494433333334,
+            "lon": 86.16193056666667
+        },
+        {
+            "name": "GAD",
+            "lat": 33.976402783333334,
+            "lon": 86.08355833333333
+        },
+        {
+            "name": "GESTS",
+            "lat": 34.292716666666664,
+            "lon": 86.06860278333333
+        },
+        {
+            "name": "HEVOG",
+            "lat": 33.842525,
+            "lon": 86.59850833333333
+        },
+        {
+            "name": "VUZ",
+            "lat": 33.67013333333333,
+            "lon": 86.89983611666666
+        },
+        {
+            "name": "ZINOG",
+            "lat": 33.912430566666664,
+            "lon": 86.48025
+        },
+        {
+            "name": "ZOPAR",
+            "lat": 34.029772216666665,
+            "lon": 86.28089443333333
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "HEVOG": "HEVOG AT OR ABOVE 4000",
+                "ZINOG": "ZINOG 3000 RNW 06 TRK 058 UNTIL 1525",
+                "CEPET": "OVERFLY CEPET AT OR ABOVE 4000 HOLD AT CEPET RIGHT TURN INBOUNDCOURSE 238 LEGDIST 4 FAF ZINOG MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "GAD",
+                    "fixes": {
+                        "GAD": "GAD",
+                        "HEVOG": "OVERFLY HEVOG AT OR ABOVE 4000 HOLD AT HEVOG RIGHT TURN INBOUNDCOURSE 058 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VUZ",
+                    "fixes": {
+                        "VUZ": "VUZ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "CEPET": "CEPET AT OR ABOVE 4000",
+                "ZOPAR": "ZOPAR 3000 RNW 24 TRK 238 UNTIL 1525",
+                "HEVOG": "OVERFLY HEVOG AT OR ABOVE 4000 HOLD AT HEVOG RIGHT TURN INBOUNDCOURSE 058 LEGDIST 4 FAF ZOPAR MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "GAD",
+                    "fixes": {
+                        "GAD": "GAD",
+                        "CEPET": "OVERFLY CEPET AT OR ABOVE 4000 HOLD AT CEPET RIGHT TURN INBOUNDCOURSE 238 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "GESTS",
+                    "fixes": {
+                        "GESTS": "GESTS"
+                    }
+                }
+            ]
+        }
+    ]
+}

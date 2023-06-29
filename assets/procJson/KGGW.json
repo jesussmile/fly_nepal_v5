@@ -1,0 +1,200 @@
+{
+    "fixes": [
+        {
+            "name": "ATCHY",
+            "lat": 48.347183333333334,
+            "lon": 106.82589721666666
+        },
+        {
+            "name": "CETAD",
+            "lat": 48.27734721666667,
+            "lon": 106.71671666666667
+        },
+        {
+            "name": "EZCUP",
+            "lat": 48.146591666666666,
+            "lon": 106.51353056666666
+        },
+        {
+            "name": "FF12",
+            "lat": 48.29303888333333,
+            "lon": 106.70109166666667
+        },
+        {
+            "name": "FF30",
+            "lat": 48.15703333333333,
+            "lon": 106.50996111666667
+        },
+        {
+            "name": "GGW",
+            "lat": 48.215305566666665,
+            "lon": 106.62541943333333
+        },
+        {
+            "name": "GOSSI",
+            "lat": 48.23647221666667,
+            "lon": 106.65302778333333
+        },
+        {
+            "name": "HUKAL",
+            "lat": 48.07544166666667,
+            "lon": 106.40363333333333
+        },
+        {
+            "name": "JITAG",
+            "lat": 47.892369433333336,
+            "lon": 106.50350833333333
+        },
+        {
+            "name": "KEEVR",
+            "lat": 48.28593888333333,
+            "lon": 107.23994443333333
+        },
+        {
+            "name": "NEGAE",
+            "lat": 48.156413883333336,
+            "lon": 106.13512778333333
+        },
+        {
+            "name": "PI001",
+            "lat": 48.26421813333333,
+            "lon": 106.6731448
+        },
+        {
+            "name": "PI002",
+            "lat": 48.279070383333334,
+            "lon": 106.77847955
+        },
+        {
+            "name": "PI003",
+            "lat": 48.355003233333335,
+            "lon": 106.76202036666666
+        },
+        {
+            "name": "PI004",
+            "lat": 48.180178516666665,
+            "lon": 106.55555178333333
+        },
+        {
+            "name": "PI005",
+            "lat": 48.19010345,
+            "lon": 106.44909706666667
+        },
+        {
+            "name": "PI006",
+            "lat": 48.11483046666667,
+            "lon": 106.42605148333334
+        },
+        {
+            "name": "WOKAL",
+            "lat": 48.27113056666666,
+            "lon": 106.67981388333334
+        },
+        {
+            "name": "ZEVIL",
+            "lat": 48.19023611666667,
+            "lon": 106.57568611666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 12",
+        "RNW 26",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "ATCHY": "ATCHY AT OR ABOVE 5000",
+                "CETAD": "CETAD 4000",
+                "GOSSI": "GOSSI AT OR ABOVE 2860 RNW 12 TRK 123 UNTIL 2544",
+                "EZCUP": "EZCUP",
+                "NEGAE": "OVERFLY NEGAE AT OR ABOVE 6000 HOLD AT NEGAE RIGHT TURN INBOUNDCOURSE 089 LEGDIST 5 FAF CETAD MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "GGW",
+                    "fixes": {
+                        "GGW": "GGW",
+                        "ATCHY": "OVERFLY ATCHY AT OR ABOVE 5000 HOLD AT ATCHY RIGHT TURN INBOUNDCOURSE 123 ALT 5000 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "KEEVR",
+                    "fixes": {
+                        "KEEVR": "KEEVR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "HUKAL": "HUKAL AT OR ABOVE 5700",
+                "EZCUP": "EZCUP 4000 RNW 30 TRK 303 UNTIL 2487",
+                "CETAD": "CETAD",
+                "KEEVR": "OVERFLY KEEVR AT OR ABOVE 6500 HOLD AT KEEVR RIGHT TURN INBOUNDCOURSE 089 LEGDIST 7 FAF EZCUP MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "GGW",
+                    "fixes": {
+                        "GGW": "GGW",
+                        "HUKAL": "OVERFLY HUKAL AT OR ABOVE 5700 HOLD AT HUKAL RIGHT TURN INBOUNDCOURSE 303 ALT 5700 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "JITAG",
+                    "fixes": {
+                        "JITAG": "JITAG"
+                    }
+                },
+                {
+                    "name": "NEGAE",
+                    "fixes": {
+                        "NEGAE": "NEGAE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR12",
+            "fixes": {
+                "FF12": "FF12 4100",
+                "WOKAL": "WOKAL AT OR ABOVE 3140",
+                "GGW": "GGW 2331 RNW 12 HOLD AT GGW RIGHT TURN INBOUNDCOURSE 133 ALT 4100 LEGTIME 1 FAF FF12 MAP GGW"
+            },
+            "transitions": [
+                {
+                    "name": "GGW",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 4100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR30",
+            "fixes": {
+                "FF30": "FF30 4000",
+                "ZEVIL": "ZEVIL AT OR ABOVE 2880 RNW 30",
+                "GGW": "GGW HOLD AT GGW RIGHT TURN INBOUNDCOURSE 293 ALT 4000 LEGTIME 1 FAF FF30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "GGW",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 4000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 4000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 4000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

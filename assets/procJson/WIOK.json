@@ -1,0 +1,69 @@
+{
+    "fixes": [
+        {
+            "name": "FF17",
+            "lat": 1.7287694333333334,
+            "lon": 109.94389443333333
+        },
+        {
+            "name": "MA17",
+            "lat": 1.787275,
+            "lon": 109.95838888333333
+        },
+        {
+            "name": "OK502",
+            "lat": 1.7261388833333333,
+            "lon": 109.95
+        },
+        {
+            "name": "OK503",
+            "lat": 1.7874444333333332,
+            "lon": 109.95905556666666
+        },
+        {
+            "name": "RAHOS",
+            "lat": 1.6547222166666666,
+            "lon": 109.92258333333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "RAHOS": "RAHOS AT OR ABOVE 2500 RAHOS RAHOS AT OR ABOVE 2500 HOLD AT RAHOS RIGHT TURN INBOUNDCOURSE 165 ALT 2500 LEGTIME 1 FAF FF17 MAP MA17",
+                "FF17": "FF17 1650",
+                "MA17": "MA17 516 RNW 17 TRK 165 UNTIL 520 TURN RIGHT HDG 015 INTERCEPT RADIAL 345 TO"
+            },
+            "transitions": [
+                {
+                    "name": "RAHOS",
+                    "fixes": {
+                        "RAHOS": "RAHOS RIGHT TURN INBOUNDCOURSE 165 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "RAHOS": "RAHOS AT OR ABOVE 2500 RAHOS AT OR ABOVE 2500 HOLD AT RAHOS RIGHT TURN INBOUNDCOURSE 165 ALT 2500 LEGTIME 1 FAF OK502 MAP OK503",
+                "OK502": "OK502 1650",
+                "OK503": "OVERFLY OK503 496 RNW 17 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "RAHOS",
+                    "fixes": {
+                        "RAHOS": "RAHOS RIGHT TURN INBOUNDCOURSE 165 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

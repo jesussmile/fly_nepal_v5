@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CAPUP",
+            "lat": 31.777463883333333,
+            "lon": 83.667325
+        },
+        {
+            "name": "CRAGS",
+            "lat": 31.856555566666668,
+            "lon": 83.69763888333334
+        },
+        {
+            "name": "FAMID",
+            "lat": 31.5977,
+            "lon": 83.59863056666667
+        },
+        {
+            "name": "LIPME",
+            "lat": 31.733841666666667,
+            "lon": 83.65063056666666
+        },
+        {
+            "name": "SEISE",
+            "lat": 31.518305566666665,
+            "lon": 83.56838056666666
+        },
+        {
+            "name": "TRANK",
+            "lat": 31.649319433333332,
+            "lon": 83.61832778333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "CRAGS": "CRAGS AT OR ABOVE 2500",
+                "CAPUP": "CAPUP 2100",
+                "LIPME": "LIPME AT OR ABOVE 1220 RNW 17 TRK 168 UNTIL 789",
+                "SEISE": "OVERFLY SEISE AT OR ABOVE 2500 HOLD AT SEISE RIGHT TURN INBOUNDCOURSE 348 LEGDIST 4 FAF CAPUP MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CRAGS",
+                    "fixes": {
+                        "CRAGS": "CRAGS RIGHT TURN INBOUNDCOURSE 168 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "SEISE": "SEISE AT OR ABOVE 2500",
+                "FAMID": "FAMID 2100",
+                "TRANK": "TRANK AT OR ABOVE 1060 RNW 35 TRK 348 UNTIL 780",
+                "CRAGS": "OVERFLY CRAGS AT OR ABOVE 2500 HOLD AT CRAGS RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4 FAF FAMID MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "SEISE",
+                    "fixes": {
+                        "SEISE": "SEISE RIGHT TURN INBOUNDCOURSE 348 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

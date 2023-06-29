@@ -1,0 +1,104 @@
+{
+    "fixes": [
+        {
+            "name": "CI29",
+            "lat": 53.74560556666667,
+            "lon": 16.025747216666666
+        },
+        {
+            "name": "FI29",
+            "lat": 53.75747221666666,
+            "lon": 15.973361116666666
+        },
+        {
+            "name": "FN29",
+            "lat": 53.755325,
+            "lon": 15.981472216666667
+        },
+        {
+            "name": "FT11",
+            "lat": 53.82833333333333,
+            "lon": 15.670833333333333
+        },
+        {
+            "name": "FT29",
+            "lat": 53.76,
+            "lon": 15.986944433333333
+        },
+        {
+            "name": "MT11",
+            "lat": 53.79591666666666,
+            "lon": 15.800222216666667
+        },
+        {
+            "name": "ND",
+            "lat": 53.78341666666667,
+            "lon": 15.858277783333333
+        },
+        {
+            "name": "RW29",
+            "lat": 53.78665278333333,
+            "lon": 15.843891666666666
+        },
+        {
+            "name": "TSN",
+            "lat": 53.782888883333335,
+            "lon": 15.852
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS29",
+            "fixes": {
+                "CI29": "CI29 AT OR ABOVE 2100",
+                "FI29": "FI29 2000 RNW 29 TRK 286 UNTIL 2000 TURN LEFT DIRECT",
+                "ND": "ND 3000 FAF FI29 MAP RNW 29"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB29",
+            "fixes": {
+                "FN29": "FN29 2100",
+                "ND": "ND 604 RNW 29 TRK 286 UNTIL 2000 TURN LEFT DIRECT ND 3000 FAF FN29 MAP ND"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VOR11",
+            "fixes": {
+                "FT11": "FT11 2140",
+                "MT11": "MT11 540 RNW 11",
+                "TSN": "TSN TRK 108 UNTIL 2000 TURN LEFT DIRECT TSN 3000 FAF FT11 MAP MT11"
+            },
+            "transitions": [
+                {
+                    "name": "TSN1",
+                    "fixes": {
+                        "TSN": "TSN AT OR ABOVE 3000 TRK 309 UNTIL 12.0 FROM TSN"
+                    }
+                },
+                {
+                    "name": "TSN2",
+                    "fixes": {
+                        "TSN": "TSN AT OR ABOVE 3000 TRK 298 UNTIL 12.0 FROM TSN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR29",
+            "fixes": {
+                "FT29": "FT29 2130",
+                "TSN": "TSN 540 RNW 29 TRK 281 UNTIL 2000 TURN RIGHT DIRECT TSN 3000 FAF FT29 MAP TSN"
+            },
+            "transitions": []
+        }
+    ]
+}

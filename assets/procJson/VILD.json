@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "40VOR",
+            "lat": 30.881838883333334,
+            "lon": 75.89595556666667
+        },
+        {
+            "name": "FD12",
+            "lat": 30.909330566666668,
+            "lon": 75.838325
+        },
+        {
+            "name": "FD30",
+            "lat": 30.800019433333333,
+            "lon": 76.06696111666666
+        },
+        {
+            "name": "LNA",
+            "lat": 30.849472216666666,
+            "lon": 75.96372221666667
+        },
+        {
+            "name": "MD30",
+            "lat": 30.845413883333332,
+            "lon": 75.97218333333333
+        },
+        {
+            "name": "RW12",
+            "lat": 30.85715,
+            "lon": 75.94698888333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD12",
+            "fixes": {
+                "FD12": "FD12 2900",
+                "40VOR": "40VOR AT OR ABOVE 1840 RNW 12 TRK 118 UNTIL 2000 TURN RIGHT DIRECT",
+                "LNA": "LNA 3000 HOLD AT LNA LEFT TURN INBOUNDCOURSE 287 ALT 3000 LEGTIME 1 FAF FD12 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "LNA",
+                    "fixes": {
+                        "LNA": "LNA AT OR ABOVE 3000 TRK 287 UNTIL 9.0 FROM LNA"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD30",
+            "fixes": {
+                "FD30": "FD30 2900",
+                "MD30": "MD30 1132 RNW 30 TRK 298 UNTIL 2000 TURN RIGHT DIRECT",
+                "LNA": "LNA 3000 HOLD AT LNA RIGHT TURN INBOUNDCOURSE 130 ALT 3000 LEGTIME 1 FAF FD30 MAP MD30"
+            },
+            "transitions": [
+                {
+                    "name": "LNA",
+                    "fixes": {
+                        "LNA": "LNA AT OR ABOVE 3000 TRK 130 UNTIL 8.0 FROM LNA"
+                    }
+                }
+            ]
+        }
+    ]
+}

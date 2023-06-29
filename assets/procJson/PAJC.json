@@ -1,0 +1,139 @@
+{
+    "fixes": [
+        {
+            "name": "COBIS",
+            "lat": 56.37398056666667,
+            "lon": 158.16029721666666
+        },
+        {
+            "name": "FIGAN",
+            "lat": 56.232525,
+            "lon": 157.78529443333332
+        },
+        {
+            "name": "GUCEN",
+            "lat": 56.34825,
+            "lon": 158.32778611666666
+        },
+        {
+            "name": "PDNNB",
+            "lat": 56.954283333333336,
+            "lon": 158.64756666666668
+        },
+        {
+            "name": "TULOC",
+            "lat": 56.404183333333336,
+            "lon": 157.96146943333332
+        },
+        {
+            "name": "YURUP",
+            "lat": 56.484419433333336,
+            "lon": 158.00095278333333
+        },
+        {
+            "name": "ZEVON",
+            "lat": 57.111727783333336,
+            "lon": 157.62121943333332
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "TULOC1",
+            "rnw": "02",
+            "fixes": {
+                "GUCEN": "OVERFLY GUCEN",
+                "TULOC": "TULOC"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "FIGAN",
+                    "fixes": [
+                        "FIGAN"
+                    ]
+                },
+                {
+                    "name": "PDN",
+                    "fixes": [
+                        "PDNNB"
+                    ]
+                },
+                {
+                    "name": "ZEVON",
+                    "fixes": [
+                        "ZEVON"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA02",
+            "fixes": {
+                "TULOC": "TULOC AT OR ABOVE 3400 OVERFLY TULOC AT OR ABOVE 3400 HOLD AT TULOC RIGHT TURN INBOUNDCOURSE 239 LEGDIST 4 FAF COBIS MAP GUCEN",
+                "COBIS": "COBIS 2300",
+                "GUCEN": "OVERFLY GUCEN 1320 RNW 02 TRK 239 UNTIL 1320 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FIGAN",
+                    "fixes": {
+                        "FIGAN": "FIGAN",
+                        "TULOC": "TULOC AT OR ABOVE 4100 HOLD AT TULOC RIGHT TURN INBOUNDCOURSE 239 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PDN",
+                    "fixes": {
+                        "PDNNB": "PDNNB",
+                        "YURUP": "YURUP AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "ZEVON",
+                    "fixes": {
+                        "ZEVON": "ZEVON",
+                        "YURUP": "YURUP AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA20",
+            "fixes": {
+                "TULOC": "TULOC AT OR ABOVE 3400 OVERFLY TULOC AT OR ABOVE 3400 HOLD AT TULOC RIGHT TURN INBOUNDCOURSE 239 LEGDIST 4 FAF COBIS MAP GUCEN",
+                "COBIS": "COBIS 2300",
+                "GUCEN": "OVERFLY GUCEN 1320 RNW 20 TRK 239 UNTIL 1320 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FIGAN",
+                    "fixes": {
+                        "FIGAN": "FIGAN",
+                        "TULOC": "TULOC AT OR ABOVE 4100 HOLD AT TULOC RIGHT TURN INBOUNDCOURSE 239 ALT 3400 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PDN",
+                    "fixes": {
+                        "PDNNB": "PDNNB",
+                        "YURUP": "YURUP AT OR ABOVE 5000"
+                    }
+                },
+                {
+                    "name": "ZEVON",
+                    "fixes": {
+                        "ZEVON": "ZEVON",
+                        "YURUP": "YURUP AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

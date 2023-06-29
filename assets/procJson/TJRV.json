@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "ADVLL",
+            "lat": 18.118113883333333,
+            "lon": 65.82841388333334
+        },
+        {
+            "name": "BUKLE",
+            "lat": 18.37438888333333,
+            "lon": 65.45453888333333
+        },
+        {
+            "name": "GOALL",
+            "lat": 18.181583333333332,
+            "lon": 65.73602778333333
+        },
+        {
+            "name": "LODZI",
+            "lat": 18.27207221666667,
+            "lon": 65.60408056666667
+        },
+        {
+            "name": "MILOH",
+            "lat": 18.311063883333333,
+            "lon": 65.54713333333333
+        },
+        {
+            "name": "PERRE",
+            "lat": 17.953858333333333,
+            "lon": 65.79505556666666
+        },
+        {
+            "name": "VEDAS",
+            "lat": 17.919344433333332,
+            "lon": 65.58658056666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "ADVLL": "ADVLL AT OR ABOVE 3300",
+                "GOALL": "GOALL 2000 RNW 07 TRK 066 UNTIL 438 TURN RIGHT DIRECT",
+                "VEDAS": "OVERFLY VEDAS 4000 HOLD AT VEDAS RIGHT TURN INBOUNDCOURSE 115 SPEED 230 LEGDIST 5 FAF GOALL MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "ADVLL",
+                    "fixes": {
+                        "ADVLL": "ADVLL RIGHT TURN INBOUNDCOURSE 066 ALT 3300 SPEED 230 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PERRE",
+                    "fixes": {
+                        "PERRE": "PERRE AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "BUKLE": "BUKLE AT OR ABOVE 3000",
+                "MILOH": "MILOH 2000",
+                "LODZI": "OVERFLY LODZI 709 RNW 25 TRK 246 UNTIL 760",
+                "VEDAS": "OVERFLY VEDAS 4000 HOLD AT VEDAS RIGHT TURN INBOUNDCOURSE 115 SPEED 230 LEGDIST 5 FAF MILOH MAP LODZI"
+            },
+            "transitions": [
+                {
+                    "name": "BUKLE",
+                    "fixes": {
+                        "BUKLE": "BUKLE RIGHT TURN INBOUNDCOURSE 246 ALT 3000 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

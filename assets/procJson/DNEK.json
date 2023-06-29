@@ -1,0 +1,124 @@
+{
+    "fixes": [
+        {
+            "name": "EDBIK",
+            "lat": 4.439772216666666,
+            "lon": 7.997780566666666
+        },
+        {
+            "name": "EK400",
+            "lat": 4.746647216666666,
+            "lon": 7.967602783333334
+        },
+        {
+            "name": "EK401",
+            "lat": 4.829083333333333,
+            "lon": 7.982272216666667
+        },
+        {
+            "name": "EK600",
+            "lat": 4.536925,
+            "lon": 7.9303
+        },
+        {
+            "name": "INELI",
+            "lat": 4.8143666666666665,
+            "lon": 8.06445
+        },
+        {
+            "name": "IRSOX",
+            "lat": 4.454488883333333,
+            "lon": 7.915644433333333
+        },
+        {
+            "name": "IVGOL",
+            "lat": 4.469197216666666,
+            "lon": 7.833505566666666
+        },
+        {
+            "name": "ODNIL",
+            "lat": 4.9115166666666665,
+            "lon": 7.996944433333333
+        },
+        {
+            "name": "POVES",
+            "lat": 4.37205,
+            "lon": 7.9009888833333335
+        },
+        {
+            "name": "VOXEN",
+            "lat": 4.843791666666666,
+            "lon": 7.9000916666666665
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "IRSOX": "IRSOX AT OR ABOVE 2500 SPEED 200 IRSOX AT OR ABOVE 2500 HOLD AT IRSOX RIGHT TURN INBOUNDCOURSE 012 ALT 2500 SPEED 230 LEGTIME 1 FAF EK600 MAP RNW 01",
+                "EK600": "EK600 2000 RNW 01 TRK 012 UNTIL 450 TURN LEFT DIRECT",
+                "IVGOL": "IVGOL AT OR BELOW 2000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "EDBIK",
+                    "fixes": {
+                        "EDBIK": "EDBIK"
+                    }
+                },
+                {
+                    "name": "IRSOX",
+                    "fixes": {
+                        "IRSOX": "IRSOX RIGHT TURN INBOUNDCOURSE 012 ALT 2500 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "IVGOL",
+                    "fixes": {
+                        "IVGOL": "IVGOL"
+                    }
+                },
+                {
+                    "name": "POVES",
+                    "fixes": {
+                        "POVES": "POVES"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "EK401": "EK401 AT OR ABOVE 3000 SPEED 200",
+                "EK400": "EK400 2000 RNW 19 TRK 192 UNTIL 450 TURN RIGHT DIRECT",
+                "VOXEN": "VOXEN AT OR ABOVE 3000 HOLD AT VOXEN LEFT TURN INBOUNDCOURSE 102 ALT 3000 SPEED 230 LEGTIME 1 FAF EK400 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "INELI",
+                    "fixes": {
+                        "INELI": "INELI"
+                    }
+                },
+                {
+                    "name": "ODNIL",
+                    "fixes": {
+                        "ODNIL": "ODNIL"
+                    }
+                },
+                {
+                    "name": "VOXEN",
+                    "fixes": {
+                        "VOXEN": "VOXEN"
+                    }
+                }
+            ]
+        }
+    ]
+}

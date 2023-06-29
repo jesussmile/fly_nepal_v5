@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "ADOKY",
+            "lat": 32.16108056666667,
+            "lon": 88.22976111666667
+        },
+        {
+            "name": "BRINS",
+            "lat": 32.137444433333336,
+            "lon": 88.17183611666667
+        },
+        {
+            "name": "CUTAV",
+            "lat": 32.079925,
+            "lon": 88.0312
+        },
+        {
+            "name": "JIGID",
+            "lat": 32.20476111666667,
+            "lon": 88.33706111666666
+        },
+        {
+            "name": "ZUNTI",
+            "lat": 32.033605566666665,
+            "lon": 87.91832778333334
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "JIGID": "JIGID AT OR ABOVE 2500",
+                "ADOKY": "ADOKY 1900",
+                "BRINS": "BRINS AT OR ABOVE 840 RNW 12 TRK 119 UNTIL 534",
+                "ZUNTI": "OVERFLY ZUNTI AT OR ABOVE 2500 HOLD AT ZUNTI RIGHT TURN INBOUNDCOURSE 299 LEGDIST 4 FAF ADOKY MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "JIGID",
+                    "fixes": {
+                        "JIGID": "JIGID RIGHT TURN INBOUNDCOURSE 119 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "ZUNTI": "ZUNTI AT OR ABOVE 2500",
+                "CUTAV": "CUTAV 2000 RNW 30 TRK 299 UNTIL 440",
+                "JIGID": "OVERFLY JIGID AT OR ABOVE 2500 HOLD AT JIGID RIGHT TURN INBOUNDCOURSE 119 LEGDIST 4 FAF CUTAV MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "ZUNTI",
+                    "fixes": {
+                        "ZUNTI": "ZUNTI RIGHT TURN INBOUNDCOURSE 299 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

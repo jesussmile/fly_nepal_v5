@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "ADUTE",
+            "lat": 48.28797221666667,
+            "lon": 99.83214721666667
+        },
+        {
+            "name": "AXMAN",
+            "lat": 48.430033333333334,
+            "lon": 100.09908611666667
+        },
+        {
+            "name": "BALTA",
+            "lat": 48.190747216666665,
+            "lon": 100.04755556666667
+        },
+        {
+            "name": "BANAW",
+            "lat": 48.35116943333333,
+            "lon": 99.95056943333333
+        },
+        {
+            "name": "CAREW",
+            "lat": 48.15788056666667,
+            "lon": 99.531325
+        },
+        {
+            "name": "CUYAK",
+            "lat": 48.325913883333335,
+            "lon": 99.90312778333333
+        },
+        {
+            "name": "IROSE",
+            "lat": 48.4971,
+            "lon": 100.22603611666666
+        },
+        {
+            "name": "MOT",
+            "lat": 48.260336116666664,
+            "lon": 101.28707221666667
+        },
+        {
+            "name": "OKDUC",
+            "lat": 48.44468333333333,
+            "lon": 100.35397778333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "IROSE": "IROSE AT OR ABOVE 3200",
+                "AXMAN": "AXMAN 2700 RNW 12 TRK 121 UNTIL 1900",
+                "CUYAK": "OVERFLY CUYAK",
+                "BALTA": "OVERFLY BALTA AT OR ABOVE 3600 HOLD AT BALTA RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4 FAF AXMAN MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "BALTA",
+                    "fixes": {
+                        "BALTA": "BALTA",
+                        "IROSE": "OVERFLY IROSE AT OR ABOVE 3200 HOLD AT IROSE RIGHT TURN INBOUNDCOURSE 120 ALT 3200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MOT",
+                    "fixes": {
+                        "MOT": "MOT",
+                        "OKDUC": "OKDUC AT OR ABOVE 3300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "ADUTE": "ADUTE AT OR ABOVE 3200",
+                "BANAW": "BANAW 2700 RNW 30 TRK 301 UNTIL 1948",
+                "IROSE": "OVERFLY IROSE AT OR ABOVE 3200 HOLD AT IROSE RIGHT TURN INBOUNDCOURSE 120 LEGDIST 4 FAF BANAW MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "BALTA",
+                    "fixes": {
+                        "BALTA": "BALTA",
+                        "ADUTE": "OVERFLY ADUTE AT OR ABOVE 3200 HOLD AT ADUTE RIGHT TURN INBOUNDCOURSE 301 ALT 3200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "CAREW",
+                    "fixes": {
+                        "CAREW": "CAREW"
+                    }
+                }
+            ]
+        }
+    ]
+}

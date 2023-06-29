@@ -1,0 +1,82 @@
+{
+    "fixes": [
+        {
+            "name": "ALD",
+            "lat": 33.01249443333333,
+            "lon": 81.29223333333333
+        },
+        {
+            "name": "BEANS",
+            "lat": 33.1849,
+            "lon": 81.80275278333333
+        },
+        {
+            "name": "CEVGU",
+            "lat": 33.07071388333333,
+            "lon": 81.90048611666667
+        },
+        {
+            "name": "EGECE",
+            "lat": 33.011527783333335,
+            "lon": 82.10567221666666
+        },
+        {
+            "name": "HEDIL",
+            "lat": 33.11285278333333,
+            "lon": 81.75350278333333
+        },
+        {
+            "name": "NEDPE",
+            "lat": 32.97891943333333,
+            "lon": 82.21809721666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "NEDPE": "NEDPE AT OR ABOVE 2000",
+                "EGECE": "EGECE 2000 RNW 08 TRK 075 UNTIL 800",
+                "HEDIL": "HEDIL AT OR ABOVE 2000 HOLD AT HEDIL LEFT TURN INBOUNDCOURSE 255 LEGDIST 4 FAF EGECE MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "ALD",
+                    "fixes": {
+                        "ALD": "ALD",
+                        "NEDPE": "NEDPE AT OR ABOVE 3000 HOLD AT NEDPE LEFT TURN INBOUNDCOURSE 075 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "BEANS",
+                    "fixes": {
+                        "BEANS": "BEANS",
+                        "NEDPE": "NEDPE AT OR ABOVE 3000 HOLD AT NEDPE LEFT TURN INBOUNDCOURSE 075 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "HEDIL": "HEDIL AT OR ABOVE 2000",
+                "CEVGU": "CEVGU 2000 RNW 26 TRK 255 UNTIL 702",
+                "NEDPE": "OVERFLY NEDPE AT OR ABOVE 2000 HOLD AT NEDPE LEFT TURN INBOUNDCOURSE 075 LEGDIST 4 FAF CEVGU MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "HEDIL",
+                    "fixes": {
+                        "HEDIL": "HEDIL LEFT TURN INBOUNDCOURSE 255 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

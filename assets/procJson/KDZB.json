@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "ALMOY",
+            "lat": 30.437736116666667,
+            "lon": 98.36073611666667
+        },
+        {
+            "name": "BANVE",
+            "lat": 30.467058333333334,
+            "lon": 98.36008611666666
+        },
+        {
+            "name": "BLATR",
+            "lat": 30.334136116666667,
+            "lon": 98.26671388333334
+        },
+        {
+            "name": "CHILO",
+            "lat": 30.33734443333333,
+            "lon": 98.45927221666666
+        },
+        {
+            "name": "HRSHO",
+            "lat": 30.720063883333335,
+            "lon": 98.45116111666667
+        },
+        {
+            "name": "JAFEE",
+            "lat": 30.616608333333332,
+            "lon": 98.35676666666667
+        },
+        {
+            "name": "JRDNN",
+            "lat": 30.335775,
+            "lon": 98.36299166666667
+        },
+        {
+            "name": "NIIKI",
+            "lat": 30.718497216666666,
+            "lon": 98.3545
+        },
+        {
+            "name": "RESRT",
+            "lat": 30.716858333333334,
+            "lon": 98.25784443333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "NIIKI": "NIIKI AT OR ABOVE 4100",
+                "JAFEE": "JAFEE 2700 RNW 17 TRK 174 UNTIL 1332",
+                "JRDNN": "OVERFLY JRDNN AT OR ABOVE 4100 HOLD AT JRDNN RIGHT TURN INBOUNDCOURSE 354 LEGDIST 5 FAF JAFEE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "HRSHO",
+                    "fixes": {
+                        "HRSHO": "HRSHO"
+                    }
+                },
+                {
+                    "name": "NIIKI",
+                    "fixes": {
+                        "NIIKI": "NIIKI RIGHT TURN INBOUNDCOURSE 174 ALT 4100 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "RESRT",
+                    "fixes": {
+                        "RESRT": "RESRT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "JRDNN": "JRDNN AT OR ABOVE 4100",
+                "ALMOY": "ALMOY 2700",
+                "BANVE": "BANVE AT OR ABOVE 2120 RNW 35 TRK 354 UNTIL 1493",
+                "NIIKI": "OVERFLY NIIKI AT OR ABOVE 4100 HOLD AT NIIKI RIGHT TURN INBOUNDCOURSE 174 LEGDIST 5 FAF ALMOY MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BLATR",
+                    "fixes": {
+                        "BLATR": "BLATR"
+                    }
+                },
+                {
+                    "name": "CHILO",
+                    "fixes": {
+                        "CHILO": "CHILO"
+                    }
+                },
+                {
+                    "name": "JRDNN",
+                    "fixes": {
+                        "JRDNN": "JRDNN RIGHT TURN INBOUNDCOURSE 354 ALT 4100 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

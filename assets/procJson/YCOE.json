@@ -1,0 +1,107 @@
+{
+    "fixes": [
+        {
+            "name": "COENB",
+            "lat": 13.76605,
+            "lon": 143.11726111666667
+        },
+        {
+            "name": "EE2WA",
+            "lat": 13.746861116666667,
+            "lon": 142.87386111666666
+        },
+        {
+            "name": "EE2WB",
+            "lat": 13.652888883333333,
+            "lon": 142.85363888333333
+        },
+        {
+            "name": "EE2WC",
+            "lat": 13.602194433333333,
+            "lon": 142.937
+        },
+        {
+            "name": "EE2WF",
+            "lat": 13.718611116666667,
+            "lon": 143.01111111666665
+        },
+        {
+            "name": "EE2WH",
+            "lat": 13.667777783333333,
+            "lon": 143.087
+        },
+        {
+            "name": "EE2WI",
+            "lat": 13.685777783333334,
+            "lon": 142.93236111666667
+        },
+        {
+            "name": "EE2WM",
+            "lat": 13.751416666666668,
+            "lon": 143.08986111666667
+        },
+        {
+            "name": "FF11",
+            "lat": 13.719641666666666,
+            "lon": 143.03506943333332
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FF11": "FF11 2200 RNW 11",
+                "COENB": "OVERFLY COENB HDG 309 VECTORS FAF FF11 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "COE1",
+                    "fixes": {
+                        "COENB": "COENB AT OR ABOVE 3900 SPEED 210 TRK 318 UNTIL 7.0 FROM COENB"
+                    }
+                },
+                {
+                    "name": "COE2",
+                    "fixes": {
+                        "COENB": "COENB AT OR ABOVE 3900 SPEED 210 TRK 308 UNTIL 7.5 FROM COENB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "EE2WI": "EE2WI AT OR ABOVE 3300",
+                "EE2WF": "EE2WF 2610",
+                "EE2WM": "OVERFLY EE2WM 985 RNW 11 TURN LEFT DIRECT",
+                "EE2WH": "EE2WH SPEED 180 TRK 305 VECTORS FAF EE2WF MAP EE2WM"
+            },
+            "transitions": [
+                {
+                    "name": "EE2WA",
+                    "fixes": {
+                        "EE2WA": "EE2WA AT OR ABOVE 3300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "EE2WB",
+                    "fixes": {
+                        "EE2WB": "EE2WB AT OR ABOVE 3300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "EE2WC",
+                    "fixes": {
+                        "EE2WC": "EE2WC AT OR ABOVE 3300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

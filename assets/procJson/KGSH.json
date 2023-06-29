@@ -1,0 +1,184 @@
+{
+    "fixes": [
+        {
+            "name": "ANWEY",
+            "lat": 41.524816666666666,
+            "lon": 85.84769166666666
+        },
+        {
+            "name": "BALLA",
+            "lat": 41.52639443333333,
+            "lon": 85.67227778333333
+        },
+        {
+            "name": "CUCZI",
+            "lat": 41.524088883333334,
+            "lon": 85.919475
+        },
+        {
+            "name": "D095W",
+            "lat": 41.490636116666664,
+            "lon": 85.51982221666667
+        },
+        {
+            "name": "ETUVE",
+            "lat": 41.52757221666667,
+            "lon": 85.51761666666667
+        },
+        {
+            "name": "GSH",
+            "lat": 41.52515556666667,
+            "lon": 86.02795278333333
+        },
+        {
+            "name": "IBUDE",
+            "lat": 41.61094443333333,
+            "lon": 85.51864443333334
+        },
+        {
+            "name": "JANUG",
+            "lat": 41.52501111666667,
+            "lon": 85.82781666666666
+        },
+        {
+            "name": "KODHY",
+            "lat": 41.408,
+            "lon": 85.54246111666667
+        },
+        {
+            "name": "LADIC",
+            "lat": 41.52576666666667,
+            "lon": 85.74572221666666
+        },
+        {
+            "name": "MARIS",
+            "lat": 41.52528611666666,
+            "lon": 85.87264721666666
+        },
+        {
+            "name": "PI001",
+            "lat": 41.52738621666666,
+            "lon": 85.59437045
+        },
+        {
+            "name": "PI002",
+            "lat": 41.47758183333333,
+            "lon": 85.52556151666667
+        },
+        {
+            "name": "PI003",
+            "lat": 41.529088566666665,
+            "lon": 85.44967933333334
+        },
+        {
+            "name": "RABBT",
+            "lat": 41.40344721666666,
+            "lon": 85.52379443333334
+        },
+        {
+            "name": "SEWTO",
+            "lat": 41.74778333333333,
+            "lon": 85.51130278333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 09",
+        "RNW 23",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS27",
+            "fixes": {
+                "ETUVE": "ETUVE AT OR ABOVE 2500",
+                "BALLA": "BALLA 2500 RNW 27 TRK 273 UNTIL 1230",
+                "GSH": "GSH AT OR ABOVE 2500 HOLD AT GSH RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4 FAF BALLA MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "GSH",
+                    "fixes": {
+                        "GSH": "GSH",
+                        "BALLA": "BALLA AT OR ABOVE 2500",
+                        "PI001": "PI001 AT OR ABOVE 2500 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2500 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2500 SPEED 210"
+                    }
+                },
+                {
+                    "name": "KODHY",
+                    "fixes": {
+                        "KODHY": "KODHY",
+                        "D095W": "D095W AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "GSH": "GSH AT OR ABOVE 2500 OVERFLY GSH AT OR ABOVE 2500 HOLD AT GSH RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4 FAF CUCZI MAP RNW 09",
+                "CUCZI": "CUCZI 2500",
+                "ANWEY": "ANWEY AT OR ABOVE 1460 RNW 09 TRK 093 UNTIL 1900 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GSH",
+                    "fixes": {
+                        "GSH": "GSH RIGHT TURN INBOUNDCOURSE 090 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "ETUVE": "ETUVE AT OR ABOVE 2500",
+                "BALLA": "BALLA 2500",
+                "LADIC": "LADIC AT OR ABOVE 1400 RNW 27",
+                "JANUG": "JANUG",
+                "GSH": "OVERFLY GSH AT OR ABOVE 2500 HOLD AT GSH RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4 FAF BALLA MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "GSH",
+                    "fixes": {
+                        "GSH": "GSH",
+                        "ETUVE": "ETUVE AT OR ABOVE 2500 HOLD AT ETUVE RIGHT TURN INBOUNDCOURSE 273 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RABBT",
+                    "fixes": {
+                        "RABBT": "RABBT"
+                    }
+                },
+                {
+                    "name": "SEWTO",
+                    "fixes": {
+                        "SEWTO": "SEWTO",
+                        "IBUDE": "IBUDE AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR09",
+            "fixes": {
+                "GSH": "GSH AT OR ABOVE 2500 GSH HOLD AT GSH RIGHT TURN INBOUNDCOURSE 090 LEGTIME 1 FAF MARIS MAP RNW 09",
+                "MARIS": "MARIS 1800 RNW 09 TRK 090 UNTIL 2500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GSH",
+                    "fixes": {
+                        "GSH": "GSH RIGHT TURN INBOUNDCOURSE 090 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

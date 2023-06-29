@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "ADVOV",
+            "lat": 49.100630566666666,
+            "lon": 126.09425
+        },
+        {
+            "name": "EPSIK",
+            "lat": 49.053441666666664,
+            "lon": 125.72166943333333
+        },
+        {
+            "name": "OMINI",
+            "lat": 48.914633333333335,
+            "lon": 125.64469721666667
+        },
+        {
+            "name": "OVDAD",
+            "lat": 49.140022216666665,
+            "lon": 125.90611666666666
+        },
+        {
+            "name": "ROLBU",
+            "lat": 48.88357778333334,
+            "lon": 125.36345278333333
+        },
+        {
+            "name": "SEGEX",
+            "lat": 48.91860556666666,
+            "lon": 124.98829166666667
+        },
+        {
+            "name": "TETEP",
+            "lat": 48.734711116666666,
+            "lon": 125.25042221666666
+        },
+        {
+            "name": "TEXEC",
+            "lat": 49.120427783333334,
+            "lon": 126.08305278333333
+        },
+        {
+            "name": "THANY",
+            "lat": 48.98104443333333,
+            "lon": 125.56840278333334
+        },
+        {
+            "name": "UDBIB",
+            "lat": 49.188313883333336,
+            "lon": 126.00955
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 11",
+        "RNW 16",
+        "RNW 25",
+        "RNW 29",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "UDBIB": "UDBIB AT OR ABOVE 2100",
+                "OVDAD": "OVDAD 2040 RNW 11 TRK 108 UNTIL 480",
+                "OMINI": "OVERFLY OMINI 3000 HOLD AT OMINI RIGHT TURN INBOUNDCOURSE 112 SPEED 250 LEGTIME 1 FAF OVDAD MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "TEXEC",
+                    "fixes": {
+                        "TEXEC": "TEXEC"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "ROLBU": "ROLBU AT OR ABOVE 5000",
+                "THANY": "THANY 3200",
+                "EPSIK": "EPSIK AT OR ABOVE 830 RNW 29",
+                "ADVOV": "OVERFLY ADVOV 2900 HOLD AT ADVOV LEFT TURN INBOUNDCOURSE 270 SPEED 250 LEGTIME 1 FAF THANY MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "SEGEX",
+                    "fixes": {
+                        "SEGEX": "SEGEX"
+                    }
+                },
+                {
+                    "name": "TETEP",
+                    "fixes": {
+                        "TETEP": "TETEP"
+                    }
+                }
+            ]
+        }
+    ]
+}

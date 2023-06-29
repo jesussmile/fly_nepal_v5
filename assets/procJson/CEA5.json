@@ -1,0 +1,90 @@
+{
+    "fixes": [
+        {
+            "name": "DEKVA",
+            "lat": 52.646177783333336,
+            "lon": 111.65243333333333
+        },
+        {
+            "name": "EBDIR",
+            "lat": 52.534669433333335,
+            "lon": 111.651575
+        },
+        {
+            "name": "IKNON",
+            "lat": 52.64665278333333,
+            "lon": 111.27144443333333
+        },
+        {
+            "name": "KENTU",
+            "lat": 52.64643888333333,
+            "lon": 111.54286388333334
+        },
+        {
+            "name": "MEVMI",
+            "lat": 52.64648888333333,
+            "lon": 111.51562221666667
+        },
+        {
+            "name": "PILBO",
+            "lat": 52.757680566666664,
+            "lon": 111.65329721666667
+        },
+        {
+            "name": "SAVIX",
+            "lat": 52.535016666666664,
+            "lon": 111.13508611666667
+        },
+        {
+            "name": "URVAM",
+            "lat": 52.646525,
+            "lon": 111.13463056666667
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV08",
+            "fixes": {
+                "DEKVA": "DEKVA AT OR ABOVE 3800 SPEED 180",
+                "MEVMI": "MEVMI 3800 RNW 08",
+                "SAVIX": "OVERFLY SAVIX 4100 HOLD AT SAVIX RIGHT TURN INBOUNDCOURSE 112 SPEED 200 LEGTIME 1 FAF MEVMI MAP RNW 08"
+            },
+            "transitions": [
+                {
+                    "name": "EBDIR",
+                    "fixes": {
+                        "EBDIR": "EBDIR SPEED 200"
+                    }
+                },
+                {
+                    "name": "PILBO",
+                    "fixes": {
+                        "PILBO": "PILBO SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "URVAM": "URVAM AT OR ABOVE 3700 SPEED 180",
+                "IKNON": "IKNON 3600 RNW 26",
+                "KENTU": "OVERFLY KENTU 4100 HOLD AT KENTU LEFT TURN INBOUNDCOURSE 257 SPEED 200 LEGTIME 1 FAF IKNON MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "SAVIX",
+                    "fixes": {
+                        "SAVIX": "SAVIX SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

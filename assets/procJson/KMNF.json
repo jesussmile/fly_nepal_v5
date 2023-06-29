@@ -1,0 +1,82 @@
+{
+    "fixes": [
+        {
+            "name": "CUNIM",
+            "lat": 37.00205833333333,
+            "lon": 91.78550833333334
+        },
+        {
+            "name": "JETOB",
+            "lat": 36.97811943333333,
+            "lon": 91.60212778333333
+        },
+        {
+            "name": "LEPER",
+            "lat": 37.09388333333333,
+            "lon": 90.504475
+        },
+        {
+            "name": "TIYUR",
+            "lat": 36.961875,
+            "lon": 91.47899166666667
+        },
+        {
+            "name": "WEPSA",
+            "lat": 36.98393611666667,
+            "lon": 91.64646943333334
+        },
+        {
+            "name": "YIGPU",
+            "lat": 37.006975,
+            "lon": 91.82348611666667
+        },
+        {
+            "name": "ZOLAK",
+            "lat": 37.02285833333333,
+            "lon": 91.94684443333334
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "ZOLAK": "ZOLAK AT OR ABOVE 3700",
+                "YIGPU": "YIGPU 2800",
+                "CUNIM": "CUNIM AT OR ABOVE 2200 RNW 10 TRK 099 UNTIL 1582",
+                "TIYUR": "OVERFLY TIYUR AT OR ABOVE 3700 HOLD AT TIYUR RIGHT TURN INBOUNDCOURSE 279 LEGDIST 4 FAF YIGPU MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "ZOLAK",
+                    "fixes": {
+                        "ZOLAK": "ZOLAK RIGHT TURN INBOUNDCOURSE 099 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "TIYUR": "TIYUR AT OR ABOVE 3700",
+                "JETOB": "JETOB 2800",
+                "WEPSA": "WEPSA AT OR ABOVE 2100 RNW 28 TRK 279 UNTIL 1560",
+                "ZOLAK": "OVERFLY ZOLAK AT OR ABOVE 3700 HOLD AT ZOLAK RIGHT TURN INBOUNDCOURSE 099 LEGDIST 4 FAF JETOB MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "LEPER",
+                    "fixes": {
+                        "LEPER": "LEPER",
+                        "TIYUR": "OVERFLY TIYUR AT OR ABOVE 3700 HOLD AT TIYUR RIGHT TURN INBOUNDCOURSE 279 ALT 3700 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

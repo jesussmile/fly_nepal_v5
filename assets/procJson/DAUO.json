@@ -1,0 +1,108 @@
+{
+    "fixes": [
+        {
+            "name": "CI13",
+            "lat": 33.61864166666667,
+            "lon": 6.631097216666666
+        },
+        {
+            "name": "D308E",
+            "lat": 33.56409721666667,
+            "lon": 6.7042166666666665
+        },
+        {
+            "name": "D308H",
+            "lat": 33.5909,
+            "lon": 6.665983333333333
+        },
+        {
+            "name": "DHIBA",
+            "lat": 33.66908611666667,
+            "lon": 6.562083333333334
+        },
+        {
+            "name": "ELO",
+            "lat": 33.510455566666664,
+            "lon": 6.780613883333333
+        },
+        {
+            "name": "FI13",
+            "lat": 33.586588883333334,
+            "lon": 6.6771
+        },
+        {
+            "name": "FS13",
+            "lat": 33.577425,
+            "lon": 6.694775
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 13",
+        "RNW 20",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILSY13",
+            "fixes": {
+                "CI13": "CI13 AT OR ABOVE 2000",
+                "FI13": "FI13 2000 RNW 13 TRK 128 UNTIL 610 TRK 128 VECTORS FAF FI13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "DHIBA",
+                    "fixes": {
+                        "DHIBA": "DHIBA AT OR ABOVE 3220"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ13",
+            "fixes": {
+                "CI13": "CI13 AT OR ABOVE 2000",
+                "FI13": "FI13 2000 RNW 13 TRK 128 UNTIL 610 TRK 128 VECTORS FAF FI13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "ELO1",
+                    "fixes": {
+                        "ELO": "ELO AT OR ABOVE 3220",
+                        "D308E": "D308E AT OR ABOVE 2000 TRK 265 UNTIL 4.4 FROM D308E"
+                    }
+                },
+                {
+                    "name": "ELO2",
+                    "fixes": {
+                        "ELO": "ELO AT OR ABOVE 3220",
+                        "D308H": "D308H AT OR ABOVE 2000 TRK 265 UNTIL 3.0 FROM D308H"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR13",
+            "fixes": {
+                "FS13": "FS13 1680 RNW 13",
+                "ELO": "OVERFLY ELO TRK 131 UNTIL 2270 HDG 131 VECTORS FAF FS13 MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "ELO1",
+                    "fixes": {
+                        "ELO": "ELO AT OR ABOVE 2270 TRK 291 UNTIL 8.8 FROM ELO"
+                    }
+                },
+                {
+                    "name": "ELO2",
+                    "fixes": {
+                        "ELO": "ELO AT OR ABOVE 2270 TRK 299 UNTIL 7.0 FROM ELO"
+                    }
+                }
+            ]
+        }
+    ]
+}

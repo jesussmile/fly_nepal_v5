@@ -1,0 +1,146 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 33.52284685,
+            "lon": 88.76953706666667
+        },
+        {
+            "name": "AF002",
+            "lat": 33.580247183333334,
+            "lon": 88.74733751666666
+        },
+        {
+            "name": "AF003",
+            "lat": 33.6303143,
+            "lon": 88.70697005
+        },
+        {
+            "name": "BAWMO",
+            "lat": 33.34789443333333,
+            "lon": 88.592375
+        },
+        {
+            "name": "D330M",
+            "lat": 33.68056111666667,
+            "lon": 88.62740833333334
+        },
+        {
+            "name": "DIXVU",
+            "lat": 33.243580566666665,
+            "lon": 88.59339166666666
+        },
+        {
+            "name": "HANOP",
+            "lat": 33.483866666666664,
+            "lon": 88.77265556666667
+        },
+        {
+            "name": "HUYKA",
+            "lat": 33.651780566666666,
+            "lon": 88.58939443333334
+        },
+        {
+            "name": "IGB",
+            "lat": 33.485486116666664,
+            "lon": 88.51358888333333
+        },
+        {
+            "name": "JAKVU",
+            "lat": 33.39218888333333,
+            "lon": 88.59194166666667
+        },
+        {
+            "name": "JOIST",
+            "lat": 33.693188883333335,
+            "lon": 88.58898888333333
+        },
+        {
+            "name": "KEKWO",
+            "lat": 33.54745556666666,
+            "lon": 88.59041943333334
+        },
+        {
+            "name": "MOOED",
+            "lat": 33.53370278333333,
+            "lon": 88.59055556666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS18",
+            "fixes": {
+                "JOIST": "JOIST AT OR ABOVE 2000",
+                "MOOED": "MOOED 1757 RNW 18 TRK 182 UNTIL 800 TURN LEFT HDG 090 INTERCEPT RADIAL 000 TO",
+                "IGB": "IGB TURN LEFT DIRECT IGB AT OR ABOVE 2100 HOLD AT IGB RIGHT TURN INBOUNDCOURSE 000 LEGTIME 1 FAF MOOED MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "HANOP",
+                    "fixes": {
+                        "HANOP": "HANOP",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D330M": "D330M AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS36",
+            "fixes": {
+                "DIXVU": "DIXVU AT OR ABOVE 3000",
+                "BAWMO": "BAWMO 2000 RNW 36 TRK 002 UNTIL 700 TURN LEFT DIRECT",
+                "HANOP": "HANOP AT OR ABOVE 2400 HOLD AT HANOP LEFT TURN INBOUNDCOURSE 266 LEGTIME 1 FAF BAWMO MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "IGB",
+                    "fixes": {
+                        "IGB": "IGB",
+                        "DIXVU": "DIXVU AT OR ABOVE 3000 HOLD AT DIXVU RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "HUYKA": "HUYKA AT OR ABOVE 3000 OVERFLY HUYKA AT OR ABOVE 3000 HOLD AT HUYKA RIGHT TURN INBOUNDCOURSE 182 ALT 3000 LEGDIST 7 FAF KEKWO MAP RNW 18",
+                "KEKWO": "KEKWO 2000 RNW 18 TRK 182 UNTIL 800 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HUYKA",
+                    "fixes": {
+                        "HUYKA": "HUYKA RIGHT TURN INBOUNDCOURSE 182 ALT 3000 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DIXVU": "DIXVU AT OR ABOVE 3000",
+                "BAWMO": "BAWMO 2000",
+                "JAKVU": "JAKVU AT OR ABOVE 1140 RNW 36 TRK 002 UNTIL 461",
+                "HUYKA": "OVERFLY HUYKA AT OR ABOVE 3000 HOLD AT HUYKA RIGHT TURN INBOUNDCOURSE 182 LEGDIST 7 FAF BAWMO MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "DIXVU",
+                    "fixes": {
+                        "DIXVU": "DIXVU RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

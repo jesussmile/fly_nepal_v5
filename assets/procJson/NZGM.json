@@ -1,0 +1,227 @@
+{
+    "fixes": [
+        {
+            "name": "AGRIP",
+            "lat": 42.560608333333334,
+            "lon": 171.14601111666667
+        },
+        {
+            "name": "APASA",
+            "lat": 42.78385,
+            "lon": 171.07003333333333
+        },
+        {
+            "name": "BELEE",
+            "lat": 42.992344433333336,
+            "lon": 171.50943056666668
+        },
+        {
+            "name": "DAMIL",
+            "lat": 41.83087221666667,
+            "lon": 171.18926943333332
+        },
+        {
+            "name": "DOPAX",
+            "lat": 42.48382221666667,
+            "lon": 171.02058056666667
+        },
+        {
+            "name": "ELPAM",
+            "lat": 42.56840833333333,
+            "lon": 170.986875
+        },
+        {
+            "name": "GM483",
+            "lat": 42.49020556666667,
+            "lon": 171.16753888333332
+        },
+        {
+            "name": "HKNB",
+            "lat": 42.729338883333334,
+            "lon": 170.95621943333333
+        },
+        {
+            "name": "MUDUT",
+            "lat": 42.36943333333333,
+            "lon": 171.16268611666666
+        },
+        {
+            "name": "OSOLO",
+            "lat": 42.91061388333333,
+            "lon": 171.33641388333334
+        },
+        {
+            "name": "PAKSA",
+            "lat": 42.67823611666667,
+            "lon": 171.15674721666667
+        },
+        {
+            "name": "PAROA",
+            "lat": 42.62335278333333,
+            "lon": 171.07173611666667
+        },
+        {
+            "name": "RILEY",
+            "lat": 42.51705,
+            "lon": 171.30438888333333
+        },
+        {
+            "name": "WSNB",
+            "lat": 41.742388883333334,
+            "lon": 171.58002778333332
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [
+        {
+            "name": "BEACH1",
+            "rnw": "19",
+            "fixes": {
+                "WSNB": "WSNB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BELEE1",
+            "rnw": "19",
+            "fixes": {
+                "HKNB": "HKNB",
+                "BELEE": "BELEE AT OR ABOVE 10000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DAMIL1",
+            "rnw": "19",
+            "fixes": {
+                "DAMIL": "DAMIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OCEAN1",
+            "rnw": "01",
+            "fixes": {
+                "DAMIL": "DAMIL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "OSOL1P",
+            "rnw": "19",
+            "fixes": {
+                "PAROA": "PAROA",
+                "APASA": "APASA",
+                "OSOLO": "OSOLO AT OR ABOVE 10000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "PORT1",
+            "rnw": "01",
+            "fixes": {
+                "HKNB": "HKNB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "RILE1Q",
+            "rnw": "01",
+            "fixes": {
+                "MUDUT": "OVERFLY MUDUT TRK 323 UNTIL 3400 TURN LEFT DIRECT",
+                "RILEY": "RILEY"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "OSOLO",
+                    "fixes": [
+                        "OSOLO"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SOUTH1",
+            "rnw": "19",
+            "fixes": {
+                "HKNB": "HKNB"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "APAS1A",
+            "runway": "RNW 01",
+            "fixes": {
+                "APASA": "APASA",
+                "PAROA": "PAROA"
+            }
+        },
+        {
+            "name": "DOPA1A",
+            "runway": "RNW 01",
+            "fixes": {
+                "DOPAX": "DOPAX",
+                "ELPAM": "ELPAM"
+            }
+        },
+        {
+            "name": "HK1A",
+            "runway": "RNW 01",
+            "fixes": {
+                "HKNB": "HKNB",
+                "PAROA": "PAROA"
+            }
+        },
+        {
+            "name": "RILE1A",
+            "runway": "RNW 01",
+            "fixes": {
+                "RILEY": "RILEY",
+                "PAKSA": "PAKSA"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "PAROA": "PAROA AT OR ABOVE 2300 PAROA 3400 SPEED 130 FAF AGRIP MAP GM483",
+                "AGRIP": "AGRIP 1980",
+                "GM483": "OVERFLY GM483 586 RNW 01 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "ELPAM",
+                    "fixes": {
+                        "ELPAM": "ELPAM"
+                    }
+                },
+                {
+                    "name": "PAKSA",
+                    "fixes": {
+                        "PAKSA": "PAKSA"
+                    }
+                },
+                {
+                    "name": "PAROA",
+                    "fixes": {
+                        "PAROA": "PAROA LEFT TURN INBOUNDCOURSE 028 ALT 3400 LEGTIME 1"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "AHOYE",
+            "lat": 36.75219443333334,
+            "lon": 88.96270833333334
+        },
+        {
+            "name": "ALING",
+            "lat": 37.399061116666665,
+            "lon": 89.51377778333334
+        },
+        {
+            "name": "CAGBI",
+            "lat": 36.98069443333333,
+            "lon": 89.13807221666667
+        },
+        {
+            "name": "CNG",
+            "lat": 37.008608333333335,
+            "lon": 88.83691388333334
+        },
+        {
+            "name": "HISRU",
+            "lat": 37.09487778333333,
+            "lon": 89.25167778333334
+        },
+        {
+            "name": "OYAKA",
+            "lat": 37.148488883333336,
+            "lon": 89.30516388333334
+        },
+        {
+            "name": "TAMMS",
+            "lat": 37.23846388333333,
+            "lon": 89.23370833333334
+        },
+        {
+            "name": "WIGNI",
+            "lat": 36.899005566666666,
+            "lon": 89.05707221666667
+        },
+        {
+            "name": "ZIDPA",
+            "lat": 37.22664721666667,
+            "lon": 89.38331943333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 14",
+        "RNW 20",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ZIDPA": "ZIDPA AT OR ABOVE 3000",
+                "OYAKA": "OYAKA 2300",
+                "HISRU": "HISRU AT OR ABOVE 980 RNW 14 TRK 141 UNTIL 680",
+                "WIGNI": "OVERFLY WIGNI AT OR ABOVE 3000 HOLD AT WIGNI RIGHT TURN INBOUNDCOURSE 322 LEGDIST 4 FAF OYAKA MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ALING",
+                    "fixes": {
+                        "ALING": "ALING"
+                    }
+                },
+                {
+                    "name": "TAMMS",
+                    "fixes": {
+                        "TAMMS": "TAMMS",
+                        "ZIDPA": "OVERFLY ZIDPA AT OR ABOVE 3000 HOLD AT ZIDPA RIGHT TURN INBOUNDCOURSE 141 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "WIGNI": "WIGNI AT OR ABOVE 3000",
+                "CAGBI": "CAGBI 2300 RNW 32 TRK 321 UNTIL 722",
+                "ZIDPA": "OVERFLY ZIDPA AT OR ABOVE 3000 HOLD AT ZIDPA RIGHT TURN INBOUNDCOURSE 141 LEGDIST 4 FAF CAGBI MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "AHOYE",
+                    "fixes": {
+                        "AHOYE": "AHOYE"
+                    }
+                },
+                {
+                    "name": "CNG",
+                    "fixes": {
+                        "CNG": "CNG"
+                    }
+                },
+                {
+                    "name": "WIGNI",
+                    "fixes": {
+                        "WIGNI": "WIGNI RIGHT TURN INBOUNDCOURSE 322 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

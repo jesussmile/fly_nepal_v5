@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "D120K",
+            "lat": 2.5351111166666667,
+            "lon": 33.09254443333333
+        },
+        {
+            "name": "DUTMO",
+            "lat": 2.567955566666667,
+            "lon": 33.18099721666667
+        },
+        {
+            "name": "EVUNO",
+            "lat": 2.319594433333333,
+            "lon": 32.68156388333333
+        },
+        {
+            "name": "FD12",
+            "lat": 2.4053527833333335,
+            "lon": 32.84126943333333
+        },
+        {
+            "name": "FD30",
+            "lat": 2.4932444333333335,
+            "lon": 33.02043333333334
+        },
+        {
+            "name": "FS30",
+            "lat": 2.5022527833333332,
+            "lon": 33.035944433333334
+        },
+        {
+            "name": "MV",
+            "lat": 2.443002783333333,
+            "lon": 32.93390278333333
+        },
+        {
+            "name": "MW601",
+            "lat": 2.3567111166666668,
+            "lon": 32.756191666666666
+        },
+        {
+            "name": "MW602",
+            "lat": 2.393836116666667,
+            "lon": 32.83081943333333
+        },
+        {
+            "name": "UBTUG",
+            "lat": 2.4467944333333334,
+            "lon": 32.711908333333334
+        },
+        {
+            "name": "UMVEN",
+            "lat": 2.2666305666666666,
+            "lon": 32.80046943333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD12",
+            "fixes": {
+                "FD12": "FD12 5420 RNW 12 TRK 112 UNTIL 6000 TURN LEFT DIRECT",
+                "MV": "MV 6000 HOLD AT MV LEFT TURN INBOUNDCOURSE 112 ALT 6000 LEGTIME 1 FAF FD12 MAP RNW 12"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD30",
+            "fixes": {
+                "FD30": "FD30 5500 RNW 30 TRK 300 UNTIL 6000 TURN RIGHT DIRECT",
+                "MV": "MV 6000 HOLD AT MV LEFT TURN INBOUNDCOURSE 112 ALT 6000 LEGTIME 1 FAF FD30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "MV1",
+                    "fixes": {
+                        "MV": "MV AT OR ABOVE 6000 TRK 095 UNTIL 11.0 FROM MV TURN RIGHT DIRECT",
+                        "D120K": "D120K AT OR ABOVE 5700"
+                    }
+                },
+                {
+                    "name": "MV2",
+                    "fixes": {
+                        "MV": "MV AT OR ABOVE 6000 TRK 105 UNTIL 11.0 FROM MV TURN RIGHT DIRECT",
+                        "D120K": "D120K AT OR ABOVE 5700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "MW601": "MW601 AT OR ABOVE 5700",
+                "MW602": "MW602 5700 RNW 12",
+                "DUTMO": "OVERFLY DUTMO AT OR ABOVE 6000 SPEED 230 HOLD AT DUTMO RIGHT TURN INBOUNDCOURSE 296 ALT 6000 SPEED 230 LEGTIME 1 FAF MW602 MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "EVUNO",
+                    "fixes": {
+                        "EVUNO": "EVUNO AT OR ABOVE 6000 SPEED 230"
+                    }
+                },
+                {
+                    "name": "UBTUG",
+                    "fixes": {
+                        "UBTUG": "UBTUG AT OR ABOVE 6000 SPEED 230"
+                    }
+                },
+                {
+                    "name": "UMVEN",
+                    "fixes": {
+                        "UMVEN": "UMVEN AT OR ABOVE 6000 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR30",
+            "fixes": {
+                "FS30": "FS30 5700 RNW 30",
+                "MV": "OVERFLY MV TRK 300 UNTIL 6000 TURN RIGHT DIRECT MV 6000 HOLD AT MV LEFT TURN INBOUNDCOURSE 112 ALT 6000 LEGTIME 1 FAF FS30 MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "MV1",
+                    "fixes": {
+                        "MV": "MV AT OR ABOVE 6000 TRK 095 UNTIL 8.8 FROM MV"
+                    }
+                },
+                {
+                    "name": "MV2",
+                    "fixes": {
+                        "MV": "MV AT OR ABOVE 6000 TRK 105 UNTIL 8.8 FROM MV"
+                    }
+                }
+            ]
+        }
+    ]
+}

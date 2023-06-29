@@ -1,0 +1,164 @@
+{
+    "fixes": [
+        {
+            "name": "CAE",
+            "lat": 33.85725,
+            "lon": 81.05390278333333
+        },
+        {
+            "name": "CORPO",
+            "lat": 33.820152783333334,
+            "lon": 81.165375
+        },
+        {
+            "name": "CUSUM",
+            "lat": 33.883783333333334,
+            "lon": 81.26338611666667
+        },
+        {
+            "name": "LEDAS",
+            "lat": 34.02925833333333,
+            "lon": 81.52929721666666
+        },
+        {
+            "name": "MAHIL",
+            "lat": 33.79395,
+            "lon": 81.24387221666667
+        },
+        {
+            "name": "NORMS",
+            "lat": 33.34507778333333,
+            "lon": 81.198975
+        },
+        {
+            "name": "ODUCO",
+            "lat": 33.75744721666667,
+            "lon": 81.23856388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 33.88371695,
+            "lon": 80.99129471666667
+        },
+        {
+            "name": "PI002",
+            "lat": 33.861543516666664,
+            "lon": 80.90921358333334
+        },
+        {
+            "name": "PI003",
+            "lat": 33.93278576666667,
+            "lon": 80.87491956666666
+        },
+        {
+            "name": "SOYOP",
+            "lat": 33.94943056666666,
+            "lon": 81.27629721666666
+        },
+        {
+            "name": "WUSOD",
+            "lat": 33.83510833333333,
+            "lon": 81.25381388333334
+        },
+        {
+            "name": "YORUT",
+            "lat": 33.70506666666667,
+            "lon": 81.22829443333333
+        },
+        {
+            "name": "ZASUT",
+            "lat": 33.80650833333333,
+            "lon": 81.20628056666666
+        },
+        {
+            "name": "ZIDBI",
+            "lat": 33.63913611666667,
+            "lon": 81.21538333333334
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "SOYOP": "SOYOP AT OR ABOVE 2700",
+                "CUSUM": "CUSUM 2100",
+                "WUSOD": "WUSOD AT OR ABOVE 1140 RNW 18 TRK 178 UNTIL 756",
+                "ZIDBI": "OVERFLY ZIDBI AT OR ABOVE 2700 HOLD AT ZIDBI RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF CUSUM MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "LEDAS",
+                    "fixes": {
+                        "LEDAS": "LEDAS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ZIDBI": "ZIDBI AT OR ABOVE 2700 OVERFLY ZIDBI AT OR ABOVE 2700 HOLD AT ZIDBI RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF YORUT MAP RNW 36",
+                "YORUT": "YORUT 2100",
+                "ODUCO": "ODUCO AT OR ABOVE 1080 RNW 36 TRK 358 UNTIL 756 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NORMS",
+                    "fixes": {
+                        "NORMS": "NORMS"
+                    }
+                },
+                {
+                    "name": "ZIDBI",
+                    "fixes": {
+                        "ZIDBI": "ZIDBI RIGHT TURN INBOUNDCOURSE 358 ALT 2700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA18",
+            "fixes": {
+                "CAE": "CAE AT OR ABOVE 2100 CAE AT OR ABOVE 2100 HOLD AT CAE LEFT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF CORPO MAP MAHIL",
+                "CORPO": "CORPO 1500",
+                "ZASUT": "ZASUT AT OR ABOVE 1060",
+                "MAHIL": "OVERFLY MAHIL 1060 RNW 18 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CAE",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA36",
+            "fixes": {
+                "CAE": "CAE AT OR ABOVE 2100 CAE AT OR ABOVE 2100 HOLD AT CAE LEFT TURN INBOUNDCOURSE 335 LEGTIME 1 FAF CORPO MAP MAHIL",
+                "CORPO": "CORPO 1500",
+                "ZASUT": "ZASUT AT OR ABOVE 1060",
+                "MAHIL": "OVERFLY MAHIL 1060 RNW 36 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CAE",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

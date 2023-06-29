@@ -1,0 +1,105 @@
+{
+    "fixes": [
+        {
+            "name": "ALGTR",
+            "lat": 35.93335278333333,
+            "lon": 76.06598611666666
+        },
+        {
+            "name": "OCSIP",
+            "lat": 36.137486116666665,
+            "lon": 76.00429166666666
+        },
+        {
+            "name": "OYOCE",
+            "lat": 36.03352221666667,
+            "lon": 75.66633611666667
+        },
+        {
+            "name": "OYUDI",
+            "lat": 35.927936116666665,
+            "lon": 75.65854166666666
+        },
+        {
+            "name": "UHAWO",
+            "lat": 36.08566666666667,
+            "lon": 75.6836
+        },
+        {
+            "name": "UXUXY",
+            "lat": 36.00565278333333,
+            "lon": 75.67549166666667
+        },
+        {
+            "name": "YELUS",
+            "lat": 36.19985833333333,
+            "lon": 75.81425833333333
+        },
+        {
+            "name": "ZINEP",
+            "lat": 35.79872221666667,
+            "lon": 75.52552778333333
+        },
+        {
+            "name": "ZOLMN",
+            "lat": 35.64509721666667,
+            "lon": 75.40761388333334
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "ZINEP": "ZINEP AT OR ABOVE 2200",
+                "OYUDI": "OYUDI 1700",
+                "UXUXY": "OVERFLY UXUXY 198 RNW 03 TRK 001 UNTIL 412",
+                "OCSIP": "OVERFLY OCSIP AT OR ABOVE 3000 HOLD AT OCSIP RIGHT TURN INBOUNDCOURSE 318 LEGDIST 4 FAF OYUDI MAP UXUXY"
+            },
+            "transitions": [
+                {
+                    "name": "OCSIP",
+                    "fixes": {
+                        "OCSIP": "OCSIP",
+                        "ZINEP": "OVERFLY ZINEP AT OR ABOVE 2200 HOLD AT ZINEP RIGHT TURN INBOUNDCOURSE 330 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZOLMN",
+                    "fixes": {
+                        "ZOLMN": "ZOLMN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "YELUS": "YELUS AT OR ABOVE 2200",
+                "UHAWO": "UHAWO 1600",
+                "OYOCE": "OVERFLY OYOCE 317 RNW 21 TRK 176 UNTIL 412 TURN RIGHT DIRECT",
+                "OCSIP": "OVERFLY OCSIP AT OR ABOVE 3000 HOLD AT OCSIP RIGHT TURN INBOUNDCOURSE 318 LEGDIST 4 FAF UHAWO MAP OYOCE"
+            },
+            "transitions": [
+                {
+                    "name": "ALGTR",
+                    "fixes": {
+                        "ALGTR": "ALGTR",
+                        "YELUS": "OVERFLY YELUS AT OR ABOVE 2200 HOLD AT YELUS RIGHT TURN INBOUNDCOURSE 148 ALT 2200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "OCSIP",
+                    "fixes": {
+                        "OCSIP": "OCSIP"
+                    }
+                }
+            ]
+        }
+    ]
+}

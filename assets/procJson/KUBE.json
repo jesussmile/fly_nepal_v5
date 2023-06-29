@@ -1,0 +1,78 @@
+{
+    "fixes": [
+        {
+            "name": "ASOCU",
+            "lat": 45.50646666666667,
+            "lon": 92.07965
+        },
+        {
+            "name": "BURPS",
+            "lat": 45.50403333333333,
+            "lon": 91.69243611666667
+        },
+        {
+            "name": "CAGNO",
+            "lat": 45.506258333333335,
+            "lon": 92.03646943333334
+        },
+        {
+            "name": "DESTE",
+            "lat": 45.50718333333333,
+            "lon": 92.26923333333333
+        },
+        {
+            "name": "ELONE",
+            "lat": 45.50567221666667,
+            "lon": 91.92828333333334
+        },
+        {
+            "name": "ZEBPA",
+            "lat": 45.50538888333333,
+            "lon": 91.88200833333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 18",
+        "RNW 27",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "DESTE": "DESTE AT OR ABOVE 3400",
+                "ASOCU": "ASOCU 2500",
+                "CAGNO": "CAGNO AT OR ABOVE 1920 RNW 09 TRK 089 UNTIL 1493",
+                "BURPS": "OVERFLY BURPS AT OR ABOVE 3400 HOLD AT BURPS RIGHT TURN INBOUNDCOURSE 270 LEGDIST 4 FAF ASOCU MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "DESTE",
+                    "fixes": {
+                        "DESTE": "DESTE RIGHT TURN INBOUNDCOURSE 089 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "BURPS": "BURPS AT OR ABOVE 3400",
+                "ZEBPA": "ZEBPA 2500",
+                "ELONE": "ELONE AT OR ABOVE 1860 RNW 27 TRK 270 UNTIL 1490",
+                "DESTE": "OVERFLY DESTE AT OR ABOVE 3400 HOLD AT DESTE RIGHT TURN INBOUNDCOURSE 089 LEGDIST 4 FAF ZEBPA MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "BURPS",
+                    "fixes": {
+                        "BURPS": "BURPS RIGHT TURN INBOUNDCOURSE 270 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

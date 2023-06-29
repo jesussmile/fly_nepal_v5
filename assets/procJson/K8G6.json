@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CUHSU",
+            "lat": 40.34919443333333,
+            "lon": 81.210075
+        },
+        {
+            "name": "EBBEP",
+            "lat": 40.28991943333333,
+            "lon": 81.10444443333333
+        },
+        {
+            "name": "JOLMU",
+            "lat": 40.211175,
+            "lon": 80.96469443333334
+        },
+        {
+            "name": "PUYCO",
+            "lat": 40.18456666666667,
+            "lon": 80.91761943333333
+        },
+        {
+            "name": "RUVRE",
+            "lat": 40.265025,
+            "lon": 81.06019443333334
+        },
+        {
+            "name": "SUXPU",
+            "lat": 40.12488056666667,
+            "lon": 80.81228056666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "CUHSU": "CUHSU AT OR ABOVE 3000",
+                "EBBEP": "EBBEP 2800",
+                "RUVRE": "RUVRE AT OR ABOVE 1980 RNW 13 TRK 134 UNTIL 1574",
+                "SUXPU": "OVERFLY SUXPU AT OR ABOVE 3100 HOLD AT SUXPU RIGHT TURN INBOUNDCOURSE 314 LEGDIST 4 FAF EBBEP MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "CUHSU",
+                    "fixes": {
+                        "CUHSU": "CUHSU RIGHT TURN INBOUNDCOURSE 134 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "SUXPU": "SUXPU AT OR ABOVE 3100",
+                "PUYCO": "PUYCO 2800",
+                "JOLMU": "JOLMU AT OR ABOVE 1940 RNW 31 TRK 314 UNTIL 1574",
+                "CUHSU": "OVERFLY CUHSU AT OR ABOVE 3000 HOLD AT CUHSU RIGHT TURN INBOUNDCOURSE 134 LEGDIST 4 FAF PUYCO MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "SUXPU",
+                    "fixes": {
+                        "SUXPU": "SUXPU RIGHT TURN INBOUNDCOURSE 314 ALT 3100 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

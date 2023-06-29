@@ -1,0 +1,134 @@
+{
+    "fixes": [
+        {
+            "name": "ABGIS",
+            "lat": 35.44611388333333,
+            "lon": 3.7466527833333334
+        },
+        {
+            "name": "ALM",
+            "lat": 35.19108611666667,
+            "lon": 3.8417250000000003
+        },
+        {
+            "name": "CD17",
+            "lat": 35.31534443333334,
+            "lon": 3.8603361166666668
+        },
+        {
+            "name": "D336M",
+            "lat": 35.380147216666664,
+            "lon": 3.9493944333333335
+        },
+        {
+            "name": "FD17",
+            "lat": 35.29380556666667,
+            "lon": 3.8571055666666667
+        },
+        {
+            "name": "FS17",
+            "lat": 35.340861116666666,
+            "lon": 3.864163883333333
+        },
+        {
+            "name": "IDMEB",
+            "lat": 35.475180566666666,
+            "lon": 3.8865166666666666
+        },
+        {
+            "name": "MD17",
+            "lat": 35.22421943333333,
+            "lon": 3.8466805666666666
+        },
+        {
+            "name": "TA102",
+            "lat": 35.392408333333336,
+            "lon": 3.873425
+        },
+        {
+            "name": "TA104",
+            "lat": 35.30963333333333,
+            "lon": 3.860363883333333
+        },
+        {
+            "name": "TA106",
+            "lat": 35.205002783333335,
+            "lon": 3.8438888833333333
+        },
+        {
+            "name": "TA708",
+            "lat": 35.27408333333333,
+            "lon": 3.9222027833333333
+        },
+        {
+            "name": "UVMOL",
+            "lat": 35.42878056666667,
+            "lon": 4.072425
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "CD17": "CD17 AT OR ABOVE 2100 CD17 HOLD AT CD17 RIGHT TURN INBOUNDCOURSE 174 ALT 3000 SPEED 200 LEGDIST 5 FAF FD17 MAP MD17",
+                "FD17": "FD17 2100",
+                "MD17": "MD17 757 RNW 17 TRK 174 UNTIL 1130 TURN RIGHT HDG 021 INTERCEPT RADIAL 336 TO",
+                "D336M": "D336M SPEED 160 OVERFLY D336M 3000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "CD17",
+                    "fixes": {
+                        "CD17": "CD17 RIGHT TURN INBOUNDCOURSE 174 ALT 2100 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "TA104": "TA104 2400 SPEED 160",
+                "TA106": "OVERFLY TA106 389 SPEED 160 RNW 17 TRK 174 UNTIL 1200 TURN RIGHT DIRECT",
+                "TA708": "OVERFLY TA708 AT OR ABOVE 2400 SPEED 210",
+                "UVMOL": "UVMOL AT OR ABOVE 4000 SPEED 210 HOLD AT UVMOL RIGHT TURN INBOUNDCOURSE 143 ALT 4000 SPEED 210 LEGTIME 1 FAF TA104 MAP TA106"
+            },
+            "transitions": [
+                {
+                    "name": "ABGIS",
+                    "fixes": {
+                        "ABGIS": "ABGIS AT OR ABOVE 3300 SPEED 210",
+                        "TA102": "TA102 AT OR ABOVE 2400 SPEED 180"
+                    }
+                },
+                {
+                    "name": "IDMEB",
+                    "fixes": {
+                        "IDMEB": "IDMEB AT OR ABOVE 2400 SPEED 210",
+                        "TA102": "TA102 AT OR ABOVE 2400 SPEED 180"
+                    }
+                },
+                {
+                    "name": "UVMOL",
+                    "fixes": {
+                        "UVMOL": "UVMOL AT OR ABOVE 4000 SPEED 210",
+                        "TA102": "TA102 AT OR ABOVE 2400 SPEED 180"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR17",
+            "fixes": {
+                "FS17": "FS17 3000",
+                "ALM": "ALM 120 RNW 17 TRK 174 UNTIL 500 TURN LEFT HDG 298 INTERCEPT RADIAL 343 FROM ALM SPEED 160 TRK 343 VECTORS FAF FS17 MAP ALM"
+            },
+            "transitions": []
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "fixes": [
+        {
+            "name": "AGTUB",
+            "lat": 11.700525,
+            "lon": 9.144661116666667
+        },
+        {
+            "name": "BIKEV",
+            "lat": 11.888827783333333,
+            "lon": 9.458411116666667
+        },
+        {
+            "name": "CF06",
+            "lat": 11.736211116666666,
+            "lon": 9.201405566666667
+        },
+        {
+            "name": "DUT01",
+            "lat": 11.845472216666666,
+            "lon": 9.385708333333334
+        },
+        {
+            "name": "DUT02",
+            "lat": 11.744272216666667,
+            "lon": 9.217080566666667
+        },
+        {
+            "name": "EBVIS",
+            "lat": 11.960425,
+            "lon": 9.414369433333333
+        },
+        {
+            "name": "EDKIR",
+            "lat": 11.932180566666666,
+            "lon": 9.531125
+        },
+        {
+            "name": "FD24",
+            "lat": 11.837941666666667,
+            "lon": 9.373227783333334
+        },
+        {
+            "name": "FF06",
+            "lat": 11.753430566666667,
+            "lon": 9.230486116666667
+        },
+        {
+            "name": "GAVNA",
+            "lat": 11.629147216666667,
+            "lon": 9.189027783333334
+        },
+        {
+            "name": "IRNIV",
+            "lat": 11.656777783333334,
+            "lon": 9.07225
+        },
+        {
+            "name": "MOBTO",
+            "lat": 11.771894433333333,
+            "lon": 9.100269433333333
+        },
+        {
+            "name": "SIBAP",
+            "lat": 11.817222216666666,
+            "lon": 9.502430566666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD06",
+            "fixes": {
+                "FF06": "FF06 2700 RNW 06 TRK 060 UNTIL 2000 TURN LEFT DIRECT FF06 4000 HOLD AT FF06 LEFT TURN INBOUNDCOURSE 060 LEGTIME 1 FAF FF06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "FF06",
+                    "fixes": {
+                        "FF06": "FF06 LEFT TURN INBOUNDCOURSE 060 ALT 2700 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD24",
+            "fixes": {
+                "FD24": "FD24 2700 RNW 24 TRK 240 UNTIL 2000 TURN RIGHT DIRECT FD24 4000 HOLD AT FD24 RIGHT TURN INBOUNDCOURSE 240 LEGTIME 1 FAF FD24 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "FD24",
+                    "fixes": {
+                        "FD24": "FD24 RIGHT TURN INBOUNDCOURSE 240 ALT 2700 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS06",
+            "fixes": {
+                "CF06": "CF06 AT OR ABOVE 2700",
+                "FF06": "FF06 2700 RNW 06 TRK 060 UNTIL 4000 TURN LEFT DIRECT FF06 4000 HOLD AT FF06 LEFT TURN INBOUNDCOURSE 060 LEGTIME 1 FAF FF06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "FF06",
+                    "fixes": {
+                        "FF06": "FF06 LEFT TURN INBOUNDCOURSE 060 ALT 2700 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "AGTUB": "AGTUB AT OR ABOVE 3000 AGTUB SPEED 250 HOLD AT AGTUB LEFT TURN INBOUNDCOURSE 060 ALT 4000 SPEED 250 LEGTIME 1 FAF DUT02 MAP RNW 06",
+                "DUT02": "DUT02 3000 SPEED 250 RNW 06 TURN LEFT DIRECT",
+                "MOBTO": "OVERFLY MOBTO TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GAVNA",
+                    "fixes": {
+                        "GAVNA": "GAVNA AT OR ABOVE 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "IRNIV",
+                    "fixes": {
+                        "IRNIV": "IRNIV AT OR ABOVE 3000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "MOBTO",
+                    "fixes": {
+                        "MOBTO": "MOBTO AT OR ABOVE 3000 SPEED 250"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "BIKEV": "BIKEV AT OR ABOVE 3000",
+                "DUT01": "DUT01 3000 RNW 24 TURN RIGHT DIRECT",
+                "EBVIS": "EBVIS HOLD AT EBVIS LEFT TURN INBOUNDCOURSE 150 ALT 4000 SPEED 250 LEGTIME 1 FAF DUT01 MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "EBVIS",
+                    "fixes": {
+                        "EBVIS": "EBVIS AT OR ABOVE 4000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "EDKIR",
+                    "fixes": {
+                        "EDKIR": "EDKIR AT OR ABOVE 4000 SPEED 250"
+                    }
+                },
+                {
+                    "name": "SIBAP",
+                    "fixes": {
+                        "SIBAP": "SIBAP AT OR ABOVE 4000 SPEED 250"
+                    }
+                }
+            ]
+        }
+    ]
+}

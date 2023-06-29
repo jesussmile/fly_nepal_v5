@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "AZCUF",
+            "lat": 36.720536116666665,
+            "lon": 88.29023888333333
+        },
+        {
+            "name": "EKACY",
+            "lat": 36.532516666666666,
+            "lon": 88.56677221666666
+        },
+        {
+            "name": "GELME",
+            "lat": 36.793469433333335,
+            "lon": 88.18234166666667
+        },
+        {
+            "name": "OXURE",
+            "lat": 36.605586116666665,
+            "lon": 88.459575
+        },
+        {
+            "name": "ZAKOP",
+            "lat": 36.639730566666664,
+            "lon": 88.40936666666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "EKACY": "EKACY AT OR ABOVE 3000",
+                "OXURE": "OXURE 2200",
+                "ZAKOP": "ZAKOP AT OR ABOVE 1180 RNW 05 TRK 052 UNTIL 827",
+                "GELME": "OVERFLY GELME AT OR ABOVE 3000 HOLD AT GELME RIGHT TURN INBOUNDCOURSE 232 LEGDIST 4 FAF OXURE MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "EKACY",
+                    "fixes": {
+                        "EKACY": "EKACY RIGHT TURN INBOUNDCOURSE 052 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "GELME": "GELME AT OR ABOVE 3000",
+                "AZCUF": "AZCUF 2100 RNW 23 TRK 232 UNTIL 859",
+                "EKACY": "OVERFLY EKACY AT OR ABOVE 3000 HOLD AT EKACY RIGHT TURN INBOUNDCOURSE 052 LEGDIST 4 FAF AZCUF MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "GELME",
+                    "fixes": {
+                        "GELME": "GELME RIGHT TURN INBOUNDCOURSE 232 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

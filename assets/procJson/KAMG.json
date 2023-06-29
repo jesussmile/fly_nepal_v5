@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CUYAT",
+            "lat": 31.715158333333335,
+            "lon": 82.62322778333333
+        },
+        {
+            "name": "HISEB",
+            "lat": 31.458105566666667,
+            "lon": 82.45593056666667
+        },
+        {
+            "name": "HOREB",
+            "lat": 31.610575,
+            "lon": 82.55503888333334
+        },
+        {
+            "name": "HOXOX",
+            "lat": 31.50302221666667,
+            "lon": 82.48508888333333
+        },
+        {
+            "name": "JEKEK",
+            "lat": 31.356769433333334,
+            "lon": 82.39027778333333
+        },
+        {
+            "name": "ULIRY",
+            "lat": 31.572638883333333,
+            "lon": 82.53034443333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "CUYAT": "CUYAT AT OR ABOVE 2300",
+                "HOREB": "HOREB 1800",
+                "ULIRY": "ULIRY AT OR ABOVE 940 RNW 16 TRK 157 UNTIL 461",
+                "JEKEK": "OVERFLY JEKEK AT OR ABOVE 2300 HOLD AT JEKEK RIGHT TURN INBOUNDCOURSE 337 LEGDIST 4 FAF HOREB MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "CUYAT",
+                    "fixes": {
+                        "CUYAT": "CUYAT RIGHT TURN INBOUNDCOURSE 157 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "JEKEK": "JEKEK AT OR ABOVE 2300",
+                "HISEB": "HISEB 1800",
+                "HOXOX": "HOXOX AT OR ABOVE 820 RNW 34 TRK 337 UNTIL 452",
+                "CUYAT": "OVERFLY CUYAT AT OR ABOVE 2300 HOLD AT CUYAT RIGHT TURN INBOUNDCOURSE 157 LEGDIST 4 FAF HISEB MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "JEKEK",
+                    "fixes": {
+                        "JEKEK": "JEKEK RIGHT TURN INBOUNDCOURSE 337 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

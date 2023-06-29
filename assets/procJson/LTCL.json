@@ -1,0 +1,280 @@
+{
+    "fixes": [
+        {
+            "name": "57LOC",
+            "lat": 37.947075,
+            "lon": 41.74092778333333
+        },
+        {
+            "name": "ABKAL",
+            "lat": 38.019444433333334,
+            "lon": 41.53194443333334
+        },
+        {
+            "name": "BAZUZ",
+            "lat": 37.92118333333333,
+            "lon": 41.66248611666666
+        },
+        {
+            "name": "CF06",
+            "lat": 37.89066388333333,
+            "lon": 41.56524721666667
+        },
+        {
+            "name": "D130K",
+            "lat": 37.844580566666664,
+            "lon": 41.99750278333333
+        },
+        {
+            "name": "D142H",
+            "lat": 37.79742778333333,
+            "lon": 41.97111666666667
+        },
+        {
+            "name": "D144K",
+            "lat": 37.817711116666665,
+            "lon": 41.95240556666667
+        },
+        {
+            "name": "D146H",
+            "lat": 37.792777783333335,
+            "lon": 41.96094166666666
+        },
+        {
+            "name": "D149K",
+            "lat": 37.81033333333333,
+            "lon": 41.934494433333334
+        },
+        {
+            "name": "FF06",
+            "lat": 37.92203611666667,
+            "lon": 41.662813883333335
+        },
+        {
+            "name": "FQ310",
+            "lat": 37.88064166666667,
+            "lon": 41.95371111666667
+        },
+        {
+            "name": "LEZKA",
+            "lat": 37.889436116666666,
+            "lon": 41.56514166666667
+        },
+        {
+            "name": "MA331",
+            "lat": 37.97209721666667,
+            "lon": 41.849027783333334
+        },
+        {
+            "name": "SIRNB",
+            "lat": 37.976722216666666,
+            "lon": 41.836722216666665
+        },
+        {
+            "name": "SRT",
+            "lat": 37.910666666666664,
+            "lon": 41.88197221666667
+        },
+        {
+            "name": "ULSAB",
+            "lat": 38.1425,
+            "lon": 41.13138888333334
+        },
+        {
+            "name": "VAKUL",
+            "lat": 37.89416666666666,
+            "lon": 42.141666666666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [
+        {
+            "name": "ABKA1M",
+            "rnw": "24",
+            "fixes": {
+                "SIRNB": "SIRNB AT OR ABOVE 6200",
+                "SRT": "SRT TURN RIGHT DIRECT",
+                "ABKAL": "ABKAL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "ABKA1N",
+            "rnw": "24",
+            "fixes": {
+                "SIRNB": "SIRNB AT OR ABOVE 6200 TURN RIGHT DIRECT",
+                "ABKAL": "ABKAL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VAKU1M",
+            "rnw": "24",
+            "fixes": {
+                "SIRNB": "SIRNB AT OR ABOVE 9800",
+                "SRT": "SRT",
+                "VAKUL": "VAKUL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "VAKU1N",
+            "rnw": "24",
+            "fixes": {
+                "SIRNB": "SIRNB AT OR ABOVE 9800",
+                "VAKUL": "VAKUL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "ABKA1A",
+            "runway": "RNW 06 RNW 24",
+            "fixes": {
+                "ABKAL": "ABKAL",
+                "SRT": "SRT"
+            }
+        },
+        {
+            "name": "ABKA1B",
+            "runway": "RNW 06 RNW 24",
+            "fixes": {
+                "ABKAL": "ABKAL",
+                "SIRNB": "SIRNB"
+            }
+        },
+        {
+            "name": "ULSA1R",
+            "runway": "RNW 06",
+            "fixes": {
+                "ULSAB": "ULSAB AT OR ABOVE 10500",
+                "LEZKA": "LEZKA 6700 SPEED 210",
+                "BAZUZ": "BAZUZ 5770 SPEED 185"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "LOCZ06",
+            "fixes": {
+                "CF06": "CF06 AT OR ABOVE 6700",
+                "FF06": "FF06 5770",
+                "57LOC": "57LOC AT OR ABOVE 3990 RNW 06 TRK 062 UNTIL 5480 TURN RIGHT DIRECT",
+                "SIRNB": "SIRNB 11000 SPEED 185 HOLD AT SIRNB LEFT TURN INBOUNDCOURSE 242 ALT 11000 LEGTIME 1 FAF FF06 MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "SIR",
+                    "fixes": {
+                        "SIRNB": "SIRNB AT OR ABOVE 11000",
+                        "CF06": "CF06 AT OR ABOVE 6700 SPEED 185 TRK 287 UNTIL 4.4 FROM CF06"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDA06",
+            "fixes": {
+                "FQ310": "FQ310 4950",
+                "SIRNB": "SIRNB 4500 RNW 06 TRK 310 UNTIL 4500 TURN LEFT HDG 119 INTERCEPT RADIAL 149 TO SIRNB TRK 149 UNTIL 9000 TURN LEFT DIRECT SIRNB 11000 HOLD AT SIRNB LEFT TURN INBOUNDCOURSE 128 ALT 11000 SPEED 230 LEGTIME 1 FAF FQ310 MAP SIR"
+            },
+            "transitions": [
+                {
+                    "name": "SIR1",
+                    "fixes": {
+                        "SIRNB": "SIRNB AT OR ABOVE 11000",
+                        "D149K": "OVERFLY D149K AT OR ABOVE 8000 SPEED 185 TURN LEFT DIRECT",
+                        "D130K": "D130K AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "name": "SIR2",
+                    "fixes": {
+                        "SIRNB": "SIRNB AT OR ABOVE 11000",
+                        "D144K": "OVERFLY D144K AT OR ABOVE 8000 SPEED 150 TURN LEFT DIRECT",
+                        "D130K": "D130K AT OR ABOVE 8000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDA24",
+            "fixes": {
+                "FQ310": "FQ310 4950",
+                "SIRNB": "SIRNB 4500 RNW 24 TRK 310 UNTIL 4500 TURN LEFT HDG 119 INTERCEPT RADIAL 149 TO SIRNB TRK 149 UNTIL 9000 TURN LEFT DIRECT SIRNB 11000 HOLD AT SIRNB LEFT TURN INBOUNDCOURSE 128 ALT 11000 SPEED 230 LEGTIME 1 FAF FQ310 MAP SIR"
+            },
+            "transitions": [
+                {
+                    "name": "SIR1",
+                    "fixes": {
+                        "SIRNB": "SIRNB AT OR ABOVE 11000",
+                        "D149K": "OVERFLY D149K AT OR ABOVE 8000 SPEED 185 TURN LEFT DIRECT",
+                        "D130K": "D130K AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "name": "SIR2",
+                    "fixes": {
+                        "SIRNB": "SIRNB AT OR ABOVE 11000",
+                        "D144K": "OVERFLY D144K AT OR ABOVE 8000 SPEED 150 TURN LEFT DIRECT",
+                        "D130K": "D130K AT OR ABOVE 8000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA06",
+            "fixes": {
+                "SRT": "SRT 6000 SRT AT OR ABOVE 8000 TRK 132 UNTIL 11000 TURN LEFT DIRECT SRT 11000 HOLD AT SRT LEFT TURN INBOUNDCOURSE 106 ALT 11000 LEGTIME 1 FAF SRT MAP MA331",
+                "MA331": "MA331 4500 RNW 06 TRK 331 UNTIL 4500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SRT1",
+                    "fixes": {
+                        "SRT": "SRT AT OR ABOVE 11000 TRK 132 UNTIL 8.0 FROM SRT SPEED 185 TURN RIGHT DIRECT",
+                        "D146H": "D146H AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "name": "SRT2",
+                    "fixes": {
+                        "SRT": "SRT AT OR ABOVE 11000 TRK 132 UNTIL 8.0 FROM SRT SPEED 150 TURN RIGHT DIRECT",
+                        "D142H": "D142H AT OR ABOVE 8000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA24",
+            "fixes": {
+                "SRT": "SRT 6000 SRT AT OR ABOVE 8000 TRK 132 UNTIL 11000 TURN LEFT DIRECT SRT 11000 HOLD AT SRT LEFT TURN INBOUNDCOURSE 106 ALT 11000 LEGTIME 1 FAF SRT MAP MA331",
+                "MA331": "MA331 4500 RNW 24 TRK 331 UNTIL 4500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "SRT1",
+                    "fixes": {
+                        "SRT": "SRT AT OR ABOVE 11000 TRK 132 UNTIL 8.0 FROM SRT SPEED 185 TURN RIGHT DIRECT",
+                        "D146H": "D146H AT OR ABOVE 8000"
+                    }
+                },
+                {
+                    "name": "SRT2",
+                    "fixes": {
+                        "SRT": "SRT AT OR ABOVE 11000 TRK 132 UNTIL 8.0 FROM SRT SPEED 150 TURN RIGHT DIRECT",
+                        "D142H": "D142H AT OR ABOVE 8000"
+                    }
+                }
+            ]
+        }
+    ]
+}

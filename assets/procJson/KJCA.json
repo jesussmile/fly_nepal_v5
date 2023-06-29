@@ -1,0 +1,88 @@
+{
+    "fixes": [
+        {
+            "name": "AHN",
+            "lat": 33.947594433333336,
+            "lon": 83.32475833333334
+        },
+        {
+            "name": "CERTA",
+            "lat": 34.35673056666667,
+            "lon": 83.62665
+        },
+        {
+            "name": "DUCUT",
+            "lat": 34.11061111666667,
+            "lon": 83.49688056666666
+        },
+        {
+            "name": "JIRWI",
+            "lat": 34.09441388333333,
+            "lon": 83.53239166666667
+        },
+        {
+            "name": "KAWAS",
+            "lat": 34.22911943333333,
+            "lon": 83.58072221666667
+        },
+        {
+            "name": "KEKTE",
+            "lat": 33.99779721666667,
+            "lon": 83.49782221666666
+        },
+        {
+            "name": "KUKRE",
+            "lat": 34.260588883333334,
+            "lon": 83.59203611666666
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD35",
+            "fixes": {
+                "AHN": "AHN AT OR ABOVE 2500",
+                "DUCUT": "DUCUT 2500 RNW 35 TRK 319 UNTIL 1360 TURN RIGHT HDG 210 INTERCEPT RADIAL 139 TO DUCUT DUCUT AT OR ABOVE 2500 HOLD AT DUCUT RIGHT TURN INBOUNDCOURSE 319 LEGTIME 1 FAF DUCUT MAP RNW 35"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "CERTA": "CERTA AT OR ABOVE 3800",
+                "KUKRE": "KUKRE 2800",
+                "KAWAS": "KAWAS AT OR ABOVE 2060 RNW 17 TRK 168 UNTIL 1279",
+                "KEKTE": "OVERFLY KEKTE AT OR ABOVE 3800 HOLD AT KEKTE RIGHT TURN INBOUNDCOURSE 348 LEGDIST 4 FAF KUKRE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "CERTA",
+                    "fixes": {
+                        "CERTA": "CERTA RIGHT TURN INBOUNDCOURSE 168 ALT 3800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "KEKTE": "KEKTE AT OR ABOVE 2500",
+                "JIRWI": "JIRWI 2500 RNW 35 TRK 348 UNTIL 1201",
+                "CERTA": "OVERFLY CERTA AT OR ABOVE 3700 HOLD AT CERTA RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4 FAF JIRWI MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "KEKTE",
+                    "fixes": {
+                        "KEKTE": "KEKTE RIGHT TURN INBOUNDCOURSE 348 ALT 2500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

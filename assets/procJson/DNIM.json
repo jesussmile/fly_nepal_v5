@@ -1,0 +1,179 @@
+{
+    "fixes": [
+        {
+            "name": "18VOR",
+            "lat": 5.477291666666667,
+            "lon": 7.19505
+        },
+        {
+            "name": "CI17",
+            "lat": 5.541913883333334,
+            "lon": 7.179819433333333
+        },
+        {
+            "name": "EMVUP",
+            "lat": 5.622147216666667,
+            "lon": 7.161491666666667
+        },
+        {
+            "name": "FD17",
+            "lat": 5.510052783333333,
+            "lon": 7.1881
+        },
+        {
+            "name": "FD35",
+            "lat": 5.357705566666667,
+            "lon": 7.220411116666667
+        },
+        {
+            "name": "FI17",
+            "lat": 5.509261116666667,
+            "lon": 7.187275
+        },
+        {
+            "name": "GAGAB",
+            "lat": 5.703772216666667,
+            "lon": 7.1428416666666665
+        },
+        {
+            "name": "GUNUN",
+            "lat": 5.250877783333333,
+            "lon": 7.33195
+        },
+        {
+            "name": "IKVEP",
+            "lat": 5.150580566666667,
+            "lon": 7.2691444333333335
+        },
+        {
+            "name": "IM400",
+            "lat": 5.540522216666667,
+            "lon": 7.180138883333333
+        },
+        {
+            "name": "IM500",
+            "lat": 5.313838883333333,
+            "lon": 7.231894433333333
+        },
+        {
+            "name": "IM501",
+            "lat": 5.232211116666667,
+            "lon": 7.250522216666667
+        },
+        {
+            "name": "KEGUR",
+            "lat": 5.213533333333333,
+            "lon": 7.169097216666667
+        },
+        {
+            "name": "OVSES",
+            "lat": 5.6408249999999995,
+            "lon": 7.242972216666667
+        },
+        {
+            "name": "OWR",
+            "lat": 5.447777783333334,
+            "lon": 7.201305566666667
+        },
+        {
+            "name": "RW17",
+            "lat": 5.4390583333333336,
+            "lon": 7.203308333333333
+        },
+        {
+            "name": "XULOX",
+            "lat": 5.603458333333333,
+            "lon": 7.080019433333334
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "FD17": "FD17 1800",
+                "18VOR": "18VOR AT OR ABOVE 1000",
+                "OWR": "OWR 591 RNW 17 TRK 170 UNTIL 1000 TURN LEFT DIRECT OWR 2400 HOLD AT OWR LEFT TURN INBOUNDCOURSE 170 LEGTIME 1 FAF FD17 MAP OWR"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VORD35",
+            "fixes": {
+                "FD35": "FD35 1800 RNW 35",
+                "OWR": "OVERFLY OWR AT OR ABOVE 780 TURN RIGHT DIRECT OWR 2400 HOLD AT OWR RIGHT TURN INBOUNDCOURSE 350 LEGTIME 1 FAF FD35 MAP RNW 35"
+            },
+            "transitions": []
+        },
+        {
+            "name": "ILS17",
+            "fixes": {
+                "CI17": "CI17 AT OR ABOVE 1800",
+                "FI17": "FI17 1800 RNW 17 TRK 170 UNTIL 1000 TURN LEFT DIRECT",
+                "OWR": "OWR 2400 HOLD AT OWR LEFT TURN INBOUNDCOURSE 170 LEGTIME 1 FAF FI17 MAP RNW 17"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "EMVUP": "EMVUP AT OR ABOVE 2400 EMVUP HOLD AT EMVUP LEFT TURN INBOUNDCOURSE 169 ALT 2400 SPEED 230 LEGTIME 1 FAF IM400 MAP RNW 17",
+                "IM400": "IM400 2400 RNW 17 TRK 169 UNTIL 780 TURN LEFT DIRECT",
+                "OVSES": "OVSES TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GAGAB",
+                    "fixes": {
+                        "GAGAB": "GAGAB"
+                    }
+                },
+                {
+                    "name": "OVSES",
+                    "fixes": {
+                        "OVSES": "OVSES"
+                    }
+                },
+                {
+                    "name": "XULOX",
+                    "fixes": {
+                        "XULOX": "XULOX"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "IM501": "IM501 AT OR ABOVE 2400",
+                "IM500": "IM500 2400 RNW 35 TRK 349 UNTIL 780 TURN RIGHT DIRECT",
+                "GUNUN": "GUNUN HOLD AT GUNUN LEFT TURN INBOUNDCOURSE 259 ALT 2400 SPEED 230 LEGTIME 1 FAF IM500 MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "GUNUN",
+                    "fixes": {
+                        "GUNUN": "GUNUN"
+                    }
+                },
+                {
+                    "name": "IKVEP",
+                    "fixes": {
+                        "IKVEP": "IKVEP"
+                    }
+                },
+                {
+                    "name": "KEGUR",
+                    "fixes": {
+                        "KEGUR": "KEGUR"
+                    }
+                }
+            ]
+        }
+    ]
+}

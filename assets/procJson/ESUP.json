@@ -1,0 +1,185 @@
+{
+    "fixes": [
+        {
+            "name": "CI11",
+            "lat": 67.31070278333334,
+            "lon": 22.753758333333334
+        },
+        {
+            "name": "CQ11",
+            "lat": 67.30004166666667,
+            "lon": 22.744863883333334
+        },
+        {
+            "name": "D116L",
+            "lat": 67.15722221666667,
+            "lon": 23.362194433333332
+        },
+        {
+            "name": "D126L",
+            "lat": 67.13292778333333,
+            "lon": 23.300488883333333
+        },
+        {
+            "name": "FI11",
+            "lat": 67.29677221666667,
+            "lon": 22.822455566666665
+        },
+        {
+            "name": "FQ29",
+            "lat": 67.19438888333333,
+            "lon": 23.327791666666666
+        },
+        {
+            "name": "PAJ",
+            "lat": 67.26772221666667,
+            "lon": 22.94275
+        },
+        {
+            "name": "UP550",
+            "lat": 67.19261111666667,
+            "lon": 23.323861116666667
+        },
+        {
+            "name": "UP551",
+            "lat": 67.16252778333333,
+            "lon": 23.466444433333333
+        },
+        {
+            "name": "UP552",
+            "lat": 67.08958333333334,
+            "lon": 23.364555566666667
+        },
+        {
+            "name": "UP850",
+            "lat": 67.29636111666667,
+            "lon": 22.824277783333333
+        },
+        {
+            "name": "UP851",
+            "lat": 67.33522221666666,
+            "lon": 22.634166666666665
+        },
+        {
+            "name": "UP852",
+            "lat": 67.42330556666667,
+            "lon": 22.755138883333334
+        },
+        {
+            "name": "UP853",
+            "lat": 67.36613888333333,
+            "lon": 22.481666666666666
+        },
+        {
+            "name": "UP854",
+            "lat": 67.24702778333334,
+            "lon": 22.514111116666665
+        },
+        {
+            "name": "USAXO",
+            "lat": 67.27105556666666,
+            "lon": 22.947277783333334
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS11",
+            "fixes": {
+                "CI11": "CI11 2500",
+                "FI11": "FI11 1820 RNW 11 TRK 110 UNTIL 2000 TURN RIGHT DIRECT",
+                "PAJ": "PAJ 2500 FAF FI11 MAP RNW 11"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDBD11",
+            "fixes": {
+                "CQ11": "CQ11 AT OR ABOVE 2500",
+                "PAJ": "PAJ 1470 RNW 11 TRK 105 UNTIL 2000 TURN RIGHT DIRECT PAJ 2500 FAF PAJ MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "PAJ",
+                    "fixes": {
+                        "PAJ": "PAJ RIGHT TURN INBOUNDCOURSE 105 ALT 2500 SPEED 240 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD29",
+            "fixes": {
+                "FQ29": "FQ29 2500 RNW 29",
+                "PAJ": "PAJ AT OR ABOVE 950 TRK 288 UNTIL 2500 TURN RIGHT DIRECT PAJ 2500 FAF FQ29 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "PAJ1",
+                    "fixes": {
+                        "PAJ": "PAJ SPEED 220",
+                        "D126L": "OVERFLY D126L AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "PAJ2",
+                    "fixes": {
+                        "PAJ": "PAJ SPEED 220",
+                        "D116L": "OVERFLY D116L AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "UP851": "UP851 AT OR ABOVE 2500",
+                "UP850": "UP850 2500 RNW 11",
+                "UP550": "OVERFLY UP550 SPEED 240 TURN RIGHT DIRECT",
+                "USAXO": "OVERFLY USAXO HOLD AT USAXO RIGHT TURN INBOUNDCOURSE 108 ALT 2900 SPEED 240 LEGTIME 1 FAF UP850 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "UP852",
+                    "fixes": {
+                        "UP852": "UP852 AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "UP853",
+                    "fixes": {
+                        "UP853": "UP853 AT OR ABOVE 3700"
+                    }
+                },
+                {
+                    "name": "UP854",
+                    "fixes": {
+                        "UP854": "UP854 AT OR ABOVE 3700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "UP551": "UP551 AT OR ABOVE 2500",
+                "UP550": "UP550 2500 RNW 29",
+                "UP850": "OVERFLY UP850 SPEED 200 TURN RIGHT DIRECT",
+                "USAXO": "OVERFLY USAXO HOLD AT USAXO RIGHT TURN INBOUNDCOURSE 108 ALT 2900 SPEED 240 LEGTIME 1 FAF UP550 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "UP552",
+                    "fixes": {
+                        "UP552": "UP552 AT OR ABOVE 3700"
+                    }
+                }
+            ]
+        }
+    ]
+}

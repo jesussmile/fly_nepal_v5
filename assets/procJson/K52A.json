@@ -1,0 +1,129 @@
+{
+    "fixes": [
+        {
+            "name": "AHN",
+            "lat": 33.947594433333336,
+            "lon": 83.32475833333334
+        },
+        {
+            "name": "MAVPL",
+            "lat": 33.616002783333336,
+            "lon": 83.46126388333333
+        },
+        {
+            "name": "MEGIC",
+            "lat": 33.68204166666666,
+            "lon": 83.52890833333333
+        },
+        {
+            "name": "MIBUR",
+            "lat": 33.771125,
+            "lon": 83.61635556666667
+        },
+        {
+            "name": "PUMPR",
+            "lat": 33.69495833333333,
+            "lon": 83.42885556666667
+        },
+        {
+            "name": "TOXOZ",
+            "lat": 34.00686666666667,
+            "lon": 83.51210278333333
+        },
+        {
+            "name": "TUDAY",
+            "lat": 33.789713883333334,
+            "lon": 83.38989166666667
+        },
+        {
+            "name": "TUGOC",
+            "lat": 33.941302783333335,
+            "lon": 83.12455556666667
+        },
+        {
+            "name": "WEVOL",
+            "lat": 33.64588056666667,
+            "lon": 83.49348056666666
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA14",
+            "fixes": {
+                "TUDAY": "TUDAY AT OR ABOVE 2800",
+                "PUMPR": "PUMPR 2800 PUMPR AT OR ABOVE 2800 HOLD AT PUMPR LEFT TURN INBOUNDCOURSE 199 LEGTIME 1 FAF PUMPR MAP MAVPL",
+                "MAVPL": "MAVPL 1380 RNW 14 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AHN",
+                    "fixes": {
+                        "AHN": "AHN"
+                    }
+                },
+                {
+                    "name": "TOXOZ",
+                    "fixes": {
+                        "TOXOZ": "TOXOZ"
+                    }
+                },
+                {
+                    "name": "TUGOC",
+                    "fixes": {
+                        "TUGOC": "TUGOC"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA32",
+            "fixes": {
+                "TUDAY": "TUDAY AT OR ABOVE 2800",
+                "PUMPR": "PUMPR 2800 PUMPR AT OR ABOVE 2800 HOLD AT PUMPR LEFT TURN INBOUNDCOURSE 199 LEGTIME 1 FAF PUMPR MAP MAVPL",
+                "MAVPL": "MAVPL 1380 RNW 32 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AHN",
+                    "fixes": {
+                        "AHN": "AHN"
+                    }
+                },
+                {
+                    "name": "TOXOZ",
+                    "fixes": {
+                        "TOXOZ": "TOXOZ"
+                    }
+                },
+                {
+                    "name": "TUGOC",
+                    "fixes": {
+                        "TUGOC": "TUGOC"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "MIBUR": "MIBUR AT OR ABOVE 3000 OVERFLY MIBUR AT OR ABOVE 3000 HOLD AT MIBUR RIGHT TURN INBOUNDCOURSE 145 LEGDIST 4 FAF MEGIC MAP RNW 14",
+                "MEGIC": "MEGIC 2300",
+                "WEVOL": "WEVOL AT OR ABOVE 1400 RNW 14 TRK 145 UNTIL 1100 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MIBUR",
+                    "fixes": {
+                        "MIBUR": "MIBUR RIGHT TURN INBOUNDCOURSE 145 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+{
+    "fixes": [
+        {
+            "name": "BESLE",
+            "lat": 33.83014721666667,
+            "lon": 98.49058888333333
+        },
+        {
+            "name": "FITMO",
+            "lat": 33.69522778333334,
+            "lon": 98.49143333333333
+        },
+        {
+            "name": "HUNKI",
+            "lat": 33.77725,
+            "lon": 98.23216388333333
+        },
+        {
+            "name": "HUXZE",
+            "lat": 33.77871388333333,
+            "lon": 98.49091111666667
+        },
+        {
+            "name": "KARYN",
+            "lat": 33.59704166666667,
+            "lon": 98.40705833333334
+        },
+        {
+            "name": "PI001",
+            "lat": 33.72395055,
+            "lon": 98.48938513333333
+        },
+        {
+            "name": "PI002",
+            "lat": 33.67415123333333,
+            "lon": 98.55133228333334
+        },
+        {
+            "name": "PI003",
+            "lat": 33.61563366666667,
+            "lon": 98.49165395
+        },
+        {
+            "name": "POSTE",
+            "lat": 33.63459443333333,
+            "lon": 98.78115
+        },
+        {
+            "name": "SATYR",
+            "lat": 33.62473056666666,
+            "lon": 98.57655556666667
+        },
+        {
+            "name": "SKBNB",
+            "lat": 33.782275,
+            "lon": 98.48816111666666
+        },
+        {
+            "name": "SPS",
+            "lat": 33.98728611666667,
+            "lon": 98.59347221666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB35",
+            "fixes": {
+                "SKBNB": "SKBNB 2600 RNW 35 TRK 353 UNTIL 1403 TURN RIGHT DIRECT SKBNB AT OR ABOVE 3100 HOLD AT SKBNB LEFT TURN INBOUNDCOURSE 353 LEGTIME 1 FAF SKBNB MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "HUNKI",
+                    "fixes": {
+                        "HUNKI": "HUNKI",
+                        "SKBNB": "SKBNB AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 3100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3100 SPEED 210"
+                    }
+                },
+                {
+                    "name": "SPS",
+                    "fixes": {
+                        "SPS": "SPS",
+                        "SKBNB": "SKBNB AT OR ABOVE 3100",
+                        "PI001": "PI001 AT OR ABOVE 3100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FITMO": "FITMO AT OR ABOVE 3000 OVERFLY FITMO AT OR ABOVE 3000 HOLD AT FITMO RIGHT TURN INBOUNDCOURSE 356 LEGDIST 4 FAF HUXZE MAP RNW 35",
+                "HUXZE": "HUXZE 2500",
+                "BESLE": "BESLE AT OR ABOVE 1500 RNW 35 TRK 356 UNTIL 1500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "KARYN",
+                    "fixes": {
+                        "KARYN": "KARYN"
+                    }
+                },
+                {
+                    "name": "POSTE",
+                    "fixes": {
+                        "POSTE": "POSTE",
+                        "SATYR": "SATYR AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SPS",
+                    "fixes": {
+                        "SPS": "SPS",
+                        "FITMO": "OVERFLY FITMO AT OR ABOVE 3100 HOLD AT FITMO RIGHT TURN INBOUNDCOURSE 356 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

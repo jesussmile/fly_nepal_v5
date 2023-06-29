@@ -1,0 +1,141 @@
+{
+    "fixes": [
+        {
+            "name": "EWADA",
+            "lat": 34.79961943333333,
+            "lon": 84.95556388333333
+        },
+        {
+            "name": "HIXOT",
+            "lat": 34.64667778333333,
+            "lon": 84.78559166666666
+        },
+        {
+            "name": "HRVEY",
+            "lat": 34.75433056666667,
+            "lon": 84.90514443333333
+        },
+        {
+            "name": "JEGTI",
+            "lat": 34.694,
+            "lon": 84.83809443333334
+        },
+        {
+            "name": "JETAL",
+            "lat": 34.8,
+            "lon": 85.14030833333334
+        },
+        {
+            "name": "JILIS",
+            "lat": 34.956661116666666,
+            "lon": 85.13429443333334
+        },
+        {
+            "name": "ONUTE",
+            "lat": 34.56965278333333,
+            "lon": 84.70031388333334
+        },
+        {
+            "name": "ROLTE",
+            "lat": 34.87579721666667,
+            "lon": 85.04055
+        },
+        {
+            "name": "RUNIC",
+            "lat": 34.49366943333333,
+            "lon": 84.80059721666666
+        },
+        {
+            "name": "UTAZO",
+            "lat": 34.645552783333336,
+            "lon": 84.59984721666666
+        },
+        {
+            "name": "ZULIP",
+            "lat": 34.951511116666666,
+            "lon": 84.94060833333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS14",
+            "fixes": {
+                "ROLTE": "ROLTE AT OR ABOVE 2900",
+                "EWADA": "EWADA 2600 RNW 14 TRK 140 UNTIL 1700 TURN RIGHT DIRECT",
+                "JILIS": "JILIS AT OR ABOVE 3000 HOLD AT JILIS RIGHT TURN INBOUNDCOURSE 140 LEGTIME 1 FAF EWADA MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "JILIS",
+                    "fixes": {
+                        "JILIS": "JILIS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "ROLTE": "ROLTE AT OR ABOVE 3800",
+                "EWADA": "EWADA 2600",
+                "HRVEY": "HRVEY AT OR ABOVE 1420 RNW 14 TRK 140 UNTIL 959",
+                "ONUTE": "OVERFLY ONUTE AT OR ABOVE 4500 HOLD AT ONUTE LEFT TURN INBOUNDCOURSE 321 LEGDIST 5 FAF EWADA MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "JETAL",
+                    "fixes": {
+                        "JETAL": "JETAL"
+                    }
+                },
+                {
+                    "name": "ROLTE",
+                    "fixes": {
+                        "ROLTE": "ROLTE RIGHT TURN INBOUNDCOURSE 140 ALT 3800 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZULIP",
+                    "fixes": {
+                        "ZULIP": "ZULIP"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "ONUTE": "ONUTE AT OR ABOVE 4500",
+                "HIXOT": "HIXOT 2600",
+                "JEGTI": "JEGTI AT OR ABOVE 1340 RNW 32 TRK 321 UNTIL 1109",
+                "ROLTE": "OVERFLY ROLTE AT OR ABOVE 3800 HOLD AT ROLTE RIGHT TURN INBOUNDCOURSE 140 ALT 3800 LEGDIST 4 FAF HIXOT MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "ONUTE",
+                    "fixes": {
+                        "ONUTE": "ONUTE LEFT TURN INBOUNDCOURSE 321 ALT 4500 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "RUNIC",
+                    "fixes": {
+                        "RUNIC": "RUNIC"
+                    }
+                },
+                {
+                    "name": "UTAZO",
+                    "fixes": {
+                        "UTAZO": "UTAZO"
+                    }
+                }
+            ]
+        }
+    ]
+}

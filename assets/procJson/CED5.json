@@ -1,0 +1,103 @@
+{
+    "fixes": [
+        {
+            "name": "AGDAS",
+            "lat": 49.79716943333333,
+            "lon": 112.28465
+        },
+        {
+            "name": "BEXUB",
+            "lat": 49.85796388333333,
+            "lon": 112.07291666666667
+        },
+        {
+            "name": "DERVO",
+            "lat": 49.979591666666664,
+            "lon": 112.02942778333333
+        },
+        {
+            "name": "IGSUN",
+            "lat": 49.763225,
+            "lon": 112.40205
+        },
+        {
+            "name": "KAPOG",
+            "lat": 49.854561116666666,
+            "lon": 112.08481943333334
+        },
+        {
+            "name": "NOPUB",
+            "lat": 49.8544,
+            "lon": 112.46516111666666
+        },
+        {
+            "name": "ODGAM",
+            "lat": 49.88818056666667,
+            "lon": 111.96697778333333
+        },
+        {
+            "name": "TAPRU",
+            "lat": 49.672013883333335,
+            "lon": 112.33917778333333
+        },
+        {
+            "name": "VEVNA",
+            "lat": 49.796736116666665,
+            "lon": 111.90476111666666
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 13",
+        "RNW 23",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "IGSUN": "IGSUN AT OR ABOVE 4600 SPEED 180",
+                "AGDAS": "AGDAS 3970 RNW 05",
+                "BEXUB": "OVERFLY BEXUB 4600 HOLD AT BEXUB RIGHT TURN INBOUNDCOURSE 052 SPEED 200 LEGTIME 1 FAF AGDAS MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "NOPUB",
+                    "fixes": {
+                        "NOPUB": "NOPUB SPEED 200"
+                    }
+                },
+                {
+                    "name": "TAPRU",
+                    "fixes": {
+                        "TAPRU": "TAPRU SPEED 200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "ODGAM": "ODGAM AT OR ABOVE 4000 SPEED 180",
+                "KAPOG": "KAPOG 3960 RNW 23 TURN RIGHT DIRECT",
+                "DERVO": "OVERFLY DERVO 4000 HOLD AT DERVO RIGHT TURN INBOUNDCOURSE 143 ALT 4000 SPEED 230 LEGTIME 1 FAF KAPOG MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "DERVO",
+                    "fixes": {
+                        "DERVO": "DERVO SPEED 200"
+                    }
+                },
+                {
+                    "name": "VEVNA",
+                    "fixes": {
+                        "VEVNA": "VEVNA SPEED 200"
+                    }
+                }
+            ]
+        }
+    ]
+}

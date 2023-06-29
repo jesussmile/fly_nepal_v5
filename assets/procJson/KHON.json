@@ -1,0 +1,251 @@
+{
+    "fixes": [
+        {
+            "name": "BEADY",
+            "lat": 44.445138883333335,
+            "lon": 98.335475
+        },
+        {
+            "name": "CAGUX",
+            "lat": 44.59523888333333,
+            "lon": 97.97973888333334
+        },
+        {
+            "name": "CAVOR",
+            "lat": 44.32719721666667,
+            "lon": 98.12552221666667
+        },
+        {
+            "name": "CELKU",
+            "lat": 44.51666388333334,
+            "lon": 98.46352221666666
+        },
+        {
+            "name": "COGAC",
+            "lat": 44.40591943333333,
+            "lon": 98.26549443333333
+        },
+        {
+            "name": "DAKPE",
+            "lat": 44.43288056666667,
+            "lon": 98.70640278333333
+        },
+        {
+            "name": "FARVA",
+            "lat": 44.25986388333333,
+            "lon": 98.00633333333333
+        },
+        {
+            "name": "HEMES",
+            "lat": 44.441575,
+            "lon": 98.518275
+        },
+        {
+            "name": "HO",
+            "lat": 44.44386943333333,
+            "lon": 98.33678888333333
+        },
+        {
+            "name": "HON",
+            "lat": 44.440083333333334,
+            "lon": 98.31108611666667
+        },
+        {
+            "name": "HUBOB",
+            "lat": 44.181275,
+            "lon": 98.09233056666666
+        },
+        {
+            "name": "HUDIS",
+            "lat": 44.33838611666667,
+            "lon": 97.92010833333333
+        },
+        {
+            "name": "HUMSO",
+            "lat": 44.610947216666666,
+            "lon": 98.36152778333333
+        },
+        {
+            "name": "KAATS",
+            "lat": 43.9459,
+            "lon": 98.60117778333333
+        },
+        {
+            "name": "MIMFA",
+            "lat": 44.50732778333333,
+            "lon": 98.446775
+        },
+        {
+            "name": "PI001",
+            "lat": 44.29126563333333,
+            "lon": 98.06130408333334
+        },
+        {
+            "name": "PI002",
+            "lat": 44.29995651666667,
+            "lon": 97.96191445
+        },
+        {
+            "name": "PI003",
+            "lat": 44.22444028333334,
+            "lon": 97.94225016666667
+        },
+        {
+            "name": "PUMMI",
+            "lat": 44.445230566666666,
+            "lon": 98.335625
+        },
+        {
+            "name": "TESHE",
+            "lat": 44.573033333333335,
+            "lon": 98.37511388333333
+        },
+        {
+            "name": "TULLA",
+            "lat": 44.789752783333334,
+            "lon": 98.33148056666667
+        },
+        {
+            "name": "WEDEM",
+            "lat": 44.42285556666667,
+            "lon": 98.56630278333333
+        },
+        {
+            "name": "ZAKTA",
+            "lat": 44.37321111666667,
+            "lon": 98.20725278333333
+        },
+        {
+            "name": "ZOTBY",
+            "lat": 44.45558056666667,
+            "lon": 97.49061666666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 18",
+        "RNW 30",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOCB30",
+            "fixes": {
+                "FARVA": "FARVA AT OR ABOVE 3100",
+                "CAVOR": "CAVOR 3000",
+                "ZAKTA": "ZAKTA 1554 RNW 30 TRK 301 UNTIL 1690",
+                "HO": "HO AT OR ABOVE 3000 HOLD AT HO RIGHT TURN INBOUNDCOURSE 121 LEGTIME 1 FAF CAVOR MAP ZAKTA"
+            },
+            "transitions": [
+                {
+                    "name": "CAVOR",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS12",
+            "fixes": {
+                "CELKU": "CELKU AT OR ABOVE 3000",
+                "BEADY": "BEADY 2997 RNW 12 TRK 121 UNTIL 3000 TURN LEFT DIRECT",
+                "HO": "HO HOLD AT HO RIGHT TURN INBOUNDCOURSE 121 LEGTIME 1 FAF BEADY MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "BEADY",
+                    "fixes": {
+                        "BEADY": "BEADY RIGHT TURN INBOUNDCOURSE 121 ALT 3000 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "HUMSO",
+                    "fixes": {
+                        "HUMSO": "HUMSO"
+                    }
+                },
+                {
+                    "name": "WEDEM",
+                    "fixes": {
+                        "WEDEM": "WEDEM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "MIMFA": "MIMFA AT OR ABOVE 3000",
+                "PUMMI": "PUMMI 3000 RNW 12 TRK 121 UNTIL 1489",
+                "CAVOR": "CAVOR",
+                "FARVA": "OVERFLY FARVA AT OR ABOVE 3000 HOLD AT FARVA RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4 FAF PUMMI MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "CAGUX",
+                    "fixes": {
+                        "CAGUX": "CAGUX",
+                        "TESHE": "TESHE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "DAKPE",
+                    "fixes": {
+                        "DAKPE": "DAKPE",
+                        "HEMES": "HEMES AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "MIMFA",
+                    "fixes": {
+                        "MIMFA": "MIMFA RIGHT TURN INBOUNDCOURSE 121 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TULLA",
+                    "fixes": {
+                        "TULLA": "TULLA",
+                        "TESHE": "TESHE AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "FARVA": "FARVA AT OR ABOVE 3000",
+                "CAVOR": "CAVOR 3000 RNW 30 TRK 301 UNTIL 1559",
+                "COGAC": "COGAC",
+                "HON": "OVERFLY HON AT OR ABOVE 3000 HOLD AT HON RIGHT TURN INBOUNDCOURSE 124 LEGDIST 4 FAF CAVOR MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "HON",
+                    "fixes": {
+                        "HON": "HON",
+                        "FARVA": "OVERFLY FARVA AT OR ABOVE 3000 HOLD AT FARVA RIGHT TURN INBOUNDCOURSE 301 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "KAATS",
+                    "fixes": {
+                        "KAATS": "KAATS",
+                        "HUBOB": "HUBOB AT OR ABOVE 3900"
+                    }
+                },
+                {
+                    "name": "ZOTBY",
+                    "fixes": {
+                        "ZOTBY": "ZOTBY",
+                        "HUDIS": "HUDIS AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

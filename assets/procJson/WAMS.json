@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "GULSA",
+            "lat": 5.400444433333333,
+            "lon": 126.49144443333333
+        },
+        {
+            "name": "MS401",
+            "lat": 5.448,
+            "lon": 126.51777778333333
+        },
+        {
+            "name": "MS402",
+            "lat": 5.486083333333333,
+            "lon": 126.53886111666667
+        },
+        {
+            "name": "MS601",
+            "lat": 5.672388883333333,
+            "lon": 126.642
+        },
+        {
+            "name": "MS602",
+            "lat": 5.634305566666667,
+            "lon": 126.62091666666667
+        },
+        {
+            "name": "NOBIV",
+            "lat": 5.7194722166666665,
+            "lon": 126.66811111666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MS401": "MS401 AT OR ABOVE 2000",
+                "MS402": "MS402 1500 RNW 03 TRK 030 UNTIL 1000 TURN RIGHT DIRECT",
+                "GULSA": "GULSA AT OR ABOVE 3000 HOLD AT GULSA RIGHT TURN INBOUNDCOURSE 030 ALT 3000 LEGTIME 1 FAF MS402 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "GULSA",
+                    "fixes": {
+                        "GULSA": "GULSA AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "MS601": "MS601 AT OR ABOVE 2000",
+                "MS602": "MS602 1500 RNW 21 TRK 210 UNTIL 1000 TURN LEFT DIRECT",
+                "NOBIV": "NOBIV AT OR ABOVE 3000 HOLD AT NOBIV LEFT TURN INBOUNDCOURSE 210 ALT 3000 LEGTIME 1 FAF MS602 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "NOBIV",
+                    "fixes": {
+                        "NOBIV": "NOBIV AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

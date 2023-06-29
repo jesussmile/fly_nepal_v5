@@ -1,0 +1,156 @@
+{
+    "fixes": [
+        {
+            "name": "ATTER",
+            "lat": 33.699866666666665,
+            "lon": 96.13155
+        },
+        {
+            "name": "BOSTE",
+            "lat": 33.52621943333333,
+            "lon": 96.18233056666666
+        },
+        {
+            "name": "BYP",
+            "lat": 33.53748611666666,
+            "lon": 96.23409443333334
+        },
+        {
+            "name": "CANBA",
+            "lat": 33.438066666666664,
+            "lon": 96.08575
+        },
+        {
+            "name": "EMJEV",
+            "lat": 33.78302778333333,
+            "lon": 96.07340278333334
+        },
+        {
+            "name": "FARIN",
+            "lat": 33.440525,
+            "lon": 96.18528888333333
+        },
+        {
+            "name": "JAXEB",
+            "lat": 33.56851111666667,
+            "lon": 96.18086666666666
+        },
+        {
+            "name": "JEVAL",
+            "lat": 33.619897216666665,
+            "lon": 96.18210833333333
+        },
+        {
+            "name": "NETFE",
+            "lat": 33.699666666666666,
+            "lon": 96.17632221666666
+        },
+        {
+            "name": "OVICI",
+            "lat": 33.78786388333333,
+            "lon": 96.27328611666667
+        },
+        {
+            "name": "PRX",
+            "lat": 33.542377783333336,
+            "lon": 95.44829166666666
+        },
+        {
+            "name": "UDOCE",
+            "lat": 33.78548611666667,
+            "lon": 96.17334166666667
+        },
+        {
+            "name": "YOGVA",
+            "lat": 33.7847,
+            "lon": 96.57386943333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD17",
+            "fixes": {
+                "ATTER": "ATTER 2400 ATTER HOLD AT ATTER RIGHT TURN INBOUNDCOURSE 202 LEGTIME 1 FAF ATTER MAP JEVAL",
+                "JEVAL": "JEVAL 653 RNW 17 TRK 202 UNTIL 2400 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BYP",
+                    "fixes": {
+                        "BYP": "BYP",
+                        "ATTER": "ATTER AT OR ABOVE 2400 HOLD AT ATTER RIGHT TURN INBOUNDCOURSE 202 ALT 2400 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "PRX",
+                    "fixes": {
+                        "PRX": "PRX",
+                        "ATTER": "ATTER AT OR ABOVE 2400 HOLD AT ATTER RIGHT TURN INBOUNDCOURSE 202 ALT 2400 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "UDOCE": "UDOCE AT OR ABOVE 2500",
+                "NETFE": "NETFE 2200 RNW 17 TRK 176 UNTIL 906",
+                "JAXEB": "JAXEB",
+                "BYP": "OVERFLY BYP AT OR ABOVE 2500 HOLD AT BYP LEFT TURN INBOUNDCOURSE 204 LEGDIST 4 FAF NETFE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BYP",
+                    "fixes": {
+                        "BYP": "BYP",
+                        "UDOCE": "OVERFLY UDOCE AT OR ABOVE 2500 HOLD AT UDOCE RIGHT TURN INBOUNDCOURSE 176 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PRX",
+                    "fixes": {
+                        "PRX": "PRX",
+                        "EMJEV": "EMJEV AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "YOGVA",
+                    "fixes": {
+                        "YOGVA": "YOGVA",
+                        "OVICI": "OVICI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "FARIN": "FARIN AT OR ABOVE 2300",
+                "BOSTE": "BOSTE 2200 RNW 35 TRK 356 UNTIL 950",
+                "UDOCE": "OVERFLY UDOCE AT OR ABOVE 2500 HOLD AT UDOCE RIGHT TURN INBOUNDCOURSE 176 LEGDIST 4 FAF BOSTE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BYP",
+                    "fixes": {
+                        "BYP": "BYP",
+                        "FARIN": "OVERFLY FARIN AT OR ABOVE 2300 HOLD AT FARIN RIGHT TURN INBOUNDCOURSE 356 ALT 2300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PRX",
+                    "fixes": {
+                        "PRX": "PRX",
+                        "CANBA": "CANBA AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        }
+    ]
+}

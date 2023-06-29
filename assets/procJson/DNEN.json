@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "AGVUL",
+            "lat": 6.587141666666667,
+            "lon": 7.722836116666667
+        },
+        {
+            "name": "AKLOV",
+            "lat": 6.519044433333333,
+            "lon": 7.819708333333333
+        },
+        {
+            "name": "AKMIB",
+            "lat": 6.422166666666667,
+            "lon": 7.751625
+        },
+        {
+            "name": "BUKLI",
+            "lat": 6.504655566666667,
+            "lon": 7.737233333333333
+        },
+        {
+            "name": "CI26",
+            "lat": 6.496947216666666,
+            "lon": 7.693930566666666
+        },
+        {
+            "name": "EN400",
+            "lat": 6.490263883333333,
+            "lon": 7.654761116666666
+        },
+        {
+            "name": "ENG",
+            "lat": 6.480888883333333,
+            "lon": 7.601222216666667
+        },
+        {
+            "name": "FD26",
+            "lat": 6.491402783333333,
+            "lon": 7.660911116666667
+        },
+        {
+            "name": "FI26",
+            "lat": 6.491236116666666,
+            "lon": 7.660933333333333
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD26",
+            "fixes": {
+                "FD26": "FD26 2200",
+                "ENG": "ENG 1056 RNW 26 TRK 262 UNTIL 7.0 FROM ENG TURN RIGHT DIRECT ENG 3500 HOLD AT ENG RIGHT TURN INBOUNDCOURSE 262 LEGTIME 1 FAF FD26 MAP ENG"
+            },
+            "transitions": [
+                {
+                    "name": "ENG",
+                    "fixes": {
+                        "ENG": "ENG RIGHT TURN INBOUNDCOURSE 262 ALT 2200 LEGDIST 6"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS26",
+            "fixes": {
+                "CI26": "CI26 AT OR ABOVE 2200",
+                "FI26": "FI26 2200 RNW 26 TRK 262 UNTIL 920 TURN RIGHT DIRECT",
+                "ENG": "ENG 3500 HOLD AT ENG RIGHT TURN INBOUNDCOURSE 262 ALT 3500 LEGTIME 1 FAF FI26 MAP RNW 26"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV26",
+            "fixes": {
+                "BUKLI": "BUKLI AT OR ABOVE 3500 SPEED 230",
+                "EN400": "EN400 2090 SPEED 200 RNW 26 TURN RIGHT DIRECT",
+                "AGVUL": "AGVUL HOLD AT AGVUL RIGHT TURN INBOUNDCOURSE 172 ALT 3500 SPEED 230 LEGTIME 1 FAF EN400 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "AGVUL",
+                    "fixes": {
+                        "AGVUL": "AGVUL AT OR ABOVE 3500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "AKLOV",
+                    "fixes": {
+                        "AKLOV": "AKLOV AT OR ABOVE 3500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "AKMIB",
+                    "fixes": {
+                        "AKMIB": "AKMIB AT OR ABOVE 3500 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,248 @@
+{
+    "fixes": [
+        {
+            "name": "BR301",
+            "lat": 24.21469443333333,
+            "lon": 35.485388883333336
+        },
+        {
+            "name": "BR302",
+            "lat": 24.261722216666666,
+            "lon": 35.288555566666666
+        },
+        {
+            "name": "BR303",
+            "lat": 24.057722216666665,
+            "lon": 35.18452778333333
+        },
+        {
+            "name": "BR304",
+            "lat": 24.148666666666667,
+            "lon": 35.358638883333334
+        },
+        {
+            "name": "BR305",
+            "lat": 24.076,
+            "lon": 35.40361111666667
+        },
+        {
+            "name": "BR306",
+            "lat": 23.930638883333334,
+            "lon": 35.49341666666667
+        },
+        {
+            "name": "BR307",
+            "lat": 23.996555566666668,
+            "lon": 35.620027783333335
+        },
+        {
+            "name": "BR401",
+            "lat": 23.707833333333333,
+            "lon": 35.63066666666667
+        },
+        {
+            "name": "BR403",
+            "lat": 23.890055566666668,
+            "lon": 35.685583333333334
+        },
+        {
+            "name": "BR404",
+            "lat": 23.824194433333332,
+            "lon": 35.559055566666665
+        },
+        {
+            "name": "BR405",
+            "lat": 23.896888883333332,
+            "lon": 35.51425
+        },
+        {
+            "name": "BR406",
+            "lat": 24.047361116666668,
+            "lon": 35.42133333333334
+        },
+        {
+            "name": "BR407",
+            "lat": 24.113333333333333,
+            "lon": 35.54802778333333
+        },
+        {
+            "name": "BRC",
+            "lat": 24.012722216666667,
+            "lon": 35.44272221666667
+        },
+        {
+            "name": "CD15L",
+            "lat": 24.180027783333333,
+            "lon": 35.33883333333333
+        },
+        {
+            "name": "CF33R",
+            "lat": 23.822916666666668,
+            "lon": 35.559916666666666
+        },
+        {
+            "name": "D124M",
+            "lat": 23.878027783333334,
+            "lon": 35.629583333333336
+        },
+        {
+            "name": "D135M",
+            "lat": 23.84775,
+            "lon": 35.59819443333333
+        },
+        {
+            "name": "D341L",
+            "lat": 24.198472216666666,
+            "lon": 35.387472216666666
+        },
+        {
+            "name": "D350L",
+            "lat": 24.20425,
+            "lon": 35.421138883333334
+        },
+        {
+            "name": "FD15L",
+            "lat": 24.062888883333333,
+            "lon": 35.41161111666667
+        },
+        {
+            "name": "FF33R",
+            "lat": 23.901416666666666,
+            "lon": 35.5115
+        }
+    ],
+    "rnws": [
+        "RNW 15L",
+        "RNW 33R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD15L",
+            "fixes": {
+                "CD15L": "CD15L AT OR ABOVE 2300",
+                "FD15L": "FD15L 1500 RNW 15L TRK 146 UNTIL 2300 TURN LEFT DIRECT",
+                "BRC": "BRC 5000 HOLD AT BRC RIGHT TURN INBOUNDCOURSE 350 ALT 5000 LEGTIME 1 FAF FD15L MAP RNW 15L"
+            },
+            "transitions": [
+                {
+                    "name": "BRC1",
+                    "fixes": {
+                        "BRC": "BRC AT OR ABOVE 5000",
+                        "D350L": "OVERFLY D350L AT OR ABOVE 2300"
+                    }
+                },
+                {
+                    "name": "BRC2",
+                    "fixes": {
+                        "BRC": "BRC AT OR ABOVE 5000",
+                        "D341L": "OVERFLY D341L AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD33R",
+            "fixes": {
+                "CF33R": "CF33R AT OR ABOVE 2200",
+                "FF33R": "FF33R 1700 RNW 33R TRK 326 UNTIL 2000 TURN RIGHT DIRECT",
+                "BRC": "BRC 4000 HOLD AT BRC RIGHT TURN INBOUNDCOURSE 124 ALT 4000 LEGTIME 1 FAF FF33R MAP RNW 33R"
+            },
+            "transitions": [
+                {
+                    "name": "BRC1",
+                    "fixes": {
+                        "BRC": "BRC AT OR ABOVE 4000",
+                        "D124M": "OVERFLY D124M AT OR ABOVE 2200"
+                    }
+                },
+                {
+                    "name": "BRC2",
+                    "fixes": {
+                        "BRC": "BRC AT OR ABOVE 4000",
+                        "D135M": "OVERFLY D135M AT OR ABOVE 2200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS33R",
+            "fixes": {
+                "CF33R": "CF33R AT OR ABOVE 2200",
+                "FF33R": "FF33R 1700 RNW 33R TRK 326 UNTIL 2000 TURN RIGHT DIRECT",
+                "BRC": "BRC 4000 HOLD AT BRC RIGHT TURN INBOUNDCOURSE 124 ALT 4000 LEGTIME 1 FAF FF33R MAP RNW 33R"
+            },
+            "transitions": [
+                {
+                    "name": "BRC1",
+                    "fixes": {
+                        "BRC": "BRC AT OR ABOVE 4000",
+                        "D124M": "OVERFLY D124M AT OR ABOVE 2200"
+                    }
+                },
+                {
+                    "name": "BRC2",
+                    "fixes": {
+                        "BRC": "BRC AT OR ABOVE 4000",
+                        "D135M": "OVERFLY D135M AT OR ABOVE 2200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV15L",
+            "fixes": {
+                "BR304": "BR304 2900",
+                "BR305": "BR305 1800 RNW 15L",
+                "BR306": "BR306 SPEED 240",
+                "BR307": "BR307 SPEED 240",
+                "BR301": "BR301 AT OR ABOVE 5000 HOLD AT BR301 RIGHT TURN INBOUNDCOURSE 236 ALT 5000 LEGTIME 1 FAF BR305 MAP RNW 15L"
+            },
+            "transitions": [
+                {
+                    "name": "BR301",
+                    "fixes": {
+                        "BR301": "BR301 5000"
+                    }
+                },
+                {
+                    "name": "BR302",
+                    "fixes": {
+                        "BR302": "BR302 AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "BR303",
+                    "fixes": {
+                        "BR303": "BR303 AT OR ABOVE 6700"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33R",
+            "fixes": {
+                "BR404": "BR404 2900",
+                "BR405": "BR405 1800 RNW 33R",
+                "BR406": "BR406 SPEED 240",
+                "BR407": "BR407 SPEED 240",
+                "BR403": "BR403 5000 HOLD AT BR403 RIGHT TURN INBOUNDCOURSE 236 ALT 5000 LEGTIME 1 FAF BR405 MAP RNW 33R"
+            },
+            "transitions": [
+                {
+                    "name": "BR401",
+                    "fixes": {
+                        "BR401": "BR401 AT OR ABOVE 5500"
+                    }
+                },
+                {
+                    "name": "BR403",
+                    "fixes": {
+                        "BR403": "BR403 AT OR ABOVE 5000"
+                    }
+                }
+            ]
+        }
+    ]
+}

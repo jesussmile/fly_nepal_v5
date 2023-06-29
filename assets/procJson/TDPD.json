@@ -1,0 +1,206 @@
+{
+    "fixes": [
+        {
+            "name": "ADVUR",
+            "lat": 15.702375,
+            "lon": 61.16293056666667
+        },
+        {
+            "name": "BENOR",
+            "lat": 15.574919433333333,
+            "lon": 61.209147216666665
+        },
+        {
+            "name": "FOF",
+            "lat": 14.590747216666667,
+            "lon": 61.02280833333333
+        },
+        {
+            "name": "IGROP",
+            "lat": 15.453627783333333,
+            "lon": 61.06943888333333
+        },
+        {
+            "name": "KAROT",
+            "lat": 15.578758333333333,
+            "lon": 61.210433333333334
+        },
+        {
+            "name": "MIVAS",
+            "lat": 15.559325,
+            "lon": 61.26538333333333
+        },
+        {
+            "name": "NM30",
+            "lat": 14.9522,
+            "lon": 61.04231943333333
+        },
+        {
+            "name": "NOSAM",
+            "lat": 15.615316666666667,
+            "lon": 61.063186116666664
+        },
+        {
+            "name": "PD100",
+            "lat": 15.565030566666668,
+            "lon": 61.24925278333333
+        },
+        {
+            "name": "PD300",
+            "lat": 14.9522,
+            "lon": 61.04231943333333
+        },
+        {
+            "name": "PPR",
+            "lat": 16.265194433333335,
+            "lon": 61.540138883333334
+        },
+        {
+            "name": "VOLAB",
+            "lat": 15.608072216666667,
+            "lon": 61.12745833333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "KAROT1",
+            "rnw": "09",
+            "fixes": {
+                "KAROT": "KAROT"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "FOF",
+                    "fixes": [
+                        "IGROP",
+                        "FOF"
+                    ]
+                },
+                {
+                    "name": "PPR",
+                    "fixes": [
+                        "ADVUR",
+                        "PPR"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBD27",
+            "fixes": {
+                "NOSAM": "NOSAM AT OR ABOVE 2500 NOSAM AT OR ABOVE 2500 HOLD AT NOSAM RIGHT TURN INBOUNDCOURSE 269 ALT 2500 SPEED 230 LEGTIME 1 FAF BENOR MAP MIVAS",
+                "BENOR": "BENOR 1700",
+                "MIVAS": "MIVAS 624 RNW 27 TRK 269 UNTIL 624 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "NOSAM",
+                    "fixes": {
+                        "NOSAM": "NOSAM RIGHT TURN INBOUNDCOURSE 269 ALT 2500 SPEED 230 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "VOLAB": "VOLAB AT OR ABOVE 1700 VOLAB AT OR ABOVE 1700 HOLD AT VOLAB LEFT TURN INBOUNDCOURSE 265 ALT 1700 SPEED 230 LEGDIST 4 FAF KAROT MAP MIVAS",
+                "KAROT": "KAROT 1700",
+                "MIVAS": "OVERFLY MIVAS 624 RNW 27 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FOF",
+                    "fixes": {
+                        "FOF": "FOF",
+                        "NM30": "NM30 AT OR ABOVE 6000",
+                        "IGROP": "IGROP AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "PPR",
+                    "fixes": {
+                        "PPR": "PPR",
+                        "ADVUR": "ADVUR AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "VOLAB",
+                    "fixes": {
+                        "VOLAB": "VOLAB LEFT TURN INBOUNDCOURSE 265 ALT 1700 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY27",
+            "fixes": {
+                "VOLAB": "VOLAB AT OR ABOVE 1700 VOLAB AT OR ABOVE 1700 SPEED 160 HOLD AT VOLAB LEFT TURN INBOUNDCOURSE 265 ALT 1700 SPEED 230 LEGDIST 4 FAF KAROT MAP PD100",
+                "KAROT": "KAROT 1700",
+                "PD100": "OVERFLY PD100 940 RNW 27 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FOF",
+                    "fixes": {
+                        "FOF": "FOF",
+                        "PD300": "PD300 AT OR ABOVE 6000",
+                        "IGROP": "IGROP AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "PPR",
+                    "fixes": {
+                        "PPR": "PPR",
+                        "ADVUR": "ADVUR AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "VOLAB",
+                    "fixes": {
+                        "VOLAB": "VOLAB LEFT TURN INBOUNDCOURSE 265 ALT 1700 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVZ27",
+            "fixes": {
+                "VOLAB": "VOLAB AT OR ABOVE 1700 VOLAB AT OR ABOVE 1700 HOLD AT VOLAB LEFT TURN INBOUNDCOURSE 265 ALT 1700 SPEED 230 LEGDIST 4 FAF KAROT MAP MIVAS",
+                "KAROT": "KAROT 1700",
+                "MIVAS": "OVERFLY MIVAS 624 RNW 27 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "FOF",
+                    "fixes": {
+                        "FOF": "FOF",
+                        "PD300": "PD300 AT OR ABOVE 6000",
+                        "IGROP": "IGROP AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "PPR",
+                    "fixes": {
+                        "PPR": "PPR",
+                        "ADVUR": "ADVUR AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "VOLAB",
+                    "fixes": {
+                        "VOLAB": "VOLAB LEFT TURN INBOUNDCOURSE 265 ALT 1700 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

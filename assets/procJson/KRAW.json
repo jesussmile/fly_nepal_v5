@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "LOYEB",
+            "lat": 38.30071388333333,
+            "lon": 93.34859721666666
+        },
+        {
+            "name": "NUVSE",
+            "lat": 38.25701111666667,
+            "lon": 93.35156666666667
+        },
+        {
+            "name": "OUTTA",
+            "lat": 38.155430566666666,
+            "lon": 93.35845833333333
+        },
+        {
+            "name": "UCMOZ",
+            "lat": 38.39498056666667,
+            "lon": 93.342175
+        },
+        {
+            "name": "VUHMY",
+            "lat": 38.43846666666666,
+            "lon": 93.33920833333333
+        },
+        {
+            "name": "WOCAZ",
+            "lat": 38.54008888333333,
+            "lon": 93.33226111666667
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "WOCAZ": "WOCAZ AT OR ABOVE 2600",
+                "VUHMY": "VUHMY 2600",
+                "UCMOZ": "UCMOZ AT OR ABOVE 1760 RNW 18 TRK 182 UNTIL 1320",
+                "OUTTA": "OVERFLY OUTTA AT OR ABOVE 2600 HOLD AT OUTTA RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF VUHMY MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "WOCAZ",
+                    "fixes": {
+                        "WOCAZ": "WOCAZ RIGHT TURN INBOUNDCOURSE 182 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "OUTTA": "OUTTA AT OR ABOVE 2600",
+                "NUVSE": "NUVSE 2600",
+                "LOYEB": "LOYEB AT OR ABOVE 1760 RNW 36 TRK 002 UNTIL 1129",
+                "WOCAZ": "OVERFLY WOCAZ AT OR ABOVE 2600 HOLD AT WOCAZ RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4 FAF NUVSE MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "OUTTA",
+                    "fixes": {
+                        "OUTTA": "OUTTA RIGHT TURN INBOUNDCOURSE 002 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

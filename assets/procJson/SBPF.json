@@ -1,0 +1,250 @@
+{
+    "fixes": [
+        {
+            "name": "EAGLE",
+            "lat": 29.202833333333334,
+            "lon": 51.7905
+        },
+        {
+            "name": "EVTIK",
+            "lat": 28.222727783333333,
+            "lon": 52.26702778333333
+        },
+        {
+            "name": "KIMUV",
+            "lat": 27.67415,
+            "lon": 50.4781
+        },
+        {
+            "name": "MADBO",
+            "lat": 27.695055566666667,
+            "lon": 52.94688888333334
+        },
+        {
+            "name": "PF001",
+            "lat": 28.21043888333333,
+            "lon": 52.231938883333335
+        },
+        {
+            "name": "PF002",
+            "lat": 28.179675,
+            "lon": 52.144252783333336
+        },
+        {
+            "name": "PF003",
+            "lat": 28.254605566666665,
+            "lon": 52.06903333333333
+        },
+        {
+            "name": "PF004",
+            "lat": 28.079444433333332,
+            "lon": 52.14745
+        },
+        {
+            "name": "PF006",
+            "lat": 28.148852783333332,
+            "lon": 52.056613883333334
+        },
+        {
+            "name": "PF007",
+            "lat": 28.277416666666667,
+            "lon": 52.42358611666667
+        },
+        {
+            "name": "PF008",
+            "lat": 28.308,
+            "lon": 52.51143056666667
+        },
+        {
+            "name": "PF009",
+            "lat": 28.40823333333333,
+            "lon": 52.50855833333333
+        },
+        {
+            "name": "PF011",
+            "lat": 28.232825,
+            "lon": 52.58637221666667
+        },
+        {
+            "name": "PF012",
+            "lat": 28.338527783333333,
+            "lon": 52.599330566666666
+        },
+        {
+            "name": "PF013",
+            "lat": 28.099966666666667,
+            "lon": 52.36000833333333
+        },
+        {
+            "name": "PF014",
+            "lat": 28.545013883333333,
+            "lon": 52.14054443333333
+        },
+        {
+            "name": "SILEP",
+            "lat": 28.265166666666666,
+            "lon": 52.38846111666667
+        },
+        {
+            "name": "SMA",
+            "lat": 29.709761116666666,
+            "lon": 53.712744433333334
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [
+        {
+            "name": "EVTI1A",
+            "rnw": "09",
+            "fixes": {
+                "EVTIK": "OVERFLY EVTIK"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "EAGLE",
+                    "fixes": [
+                        "PF014",
+                        "EAGLE"
+                    ]
+                },
+                {
+                    "name": "KIMUV",
+                    "fixes": [
+                        "KIMUV"
+                    ]
+                },
+                {
+                    "name": "MADBO",
+                    "fixes": [
+                        "MADBO"
+                    ]
+                },
+                {
+                    "name": "SMA",
+                    "fixes": [
+                        "PF014",
+                        "SMA"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OMNI",
+            "rnw": "09",
+            "fixes": {},
+            "sub_fixes": [
+                {
+                    "rwy": "RNW 09",
+                    "fixes": {
+                        "RNW 09": "RNW 09 TRK 086 UNTIL 3000 HDG 086 VECTORS"
+                    }
+                },
+                {
+                    "rwy": "RNW 27",
+                    "fixes": {
+                        "RNW 27": "RNW 27 TRK 266 UNTIL 3000 HDG 266 VECTORS"
+                    }
+                }
+            ],
+            "transitions": []
+        },
+        {
+            "name": "SILE1A",
+            "rnw": "27",
+            "fixes": {
+                "SILEP": "OVERFLY SILEP"
+            },
+            "sub_fixes": [],
+            "transitions": [
+                {
+                    "name": "EAGLE",
+                    "fixes": [
+                        "EAGLE"
+                    ]
+                },
+                {
+                    "name": "KIMUV",
+                    "fixes": [
+                        "PF013",
+                        "KIMUV"
+                    ]
+                },
+                {
+                    "name": "MADBO",
+                    "fixes": [
+                        "MADBO"
+                    ]
+                },
+                {
+                    "name": "SMA",
+                    "fixes": [
+                        "SMA"
+                    ]
+                }
+            ]
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "PF008": "PF008 AT OR ABOVE 4000",
+                "PF007": "PF007 3990 RNW 09",
+                "PF002": "OVERFLY PF002 AT OR ABOVE 4000 HOLD AT PF002 RIGHT TURN INBOUNDCOURSE 086 ALT 4000 LEGTIME 1 FAF PF007 MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "PF009",
+                    "fixes": {
+                        "PF009": "PF009 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "PF011",
+                    "fixes": {
+                        "PF011": "PF011 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "PF012",
+                    "fixes": {
+                        "PF012": "PF012 AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "PF002": "PF002 AT OR ABOVE 4100",
+                "PF001": "PF001 4030 RNW 27",
+                "PF008": "OVERFLY PF008 AT OR ABOVE 4000 HOLD AT PF008 LEFT TURN INBOUNDCOURSE 266 ALT 4000 LEGTIME 1 FAF PF001 MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "PF003",
+                    "fixes": {
+                        "PF003": "PF003 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "PF004",
+                    "fixes": {
+                        "PF004": "PF004 AT OR ABOVE 6000"
+                    }
+                },
+                {
+                    "name": "PF006",
+                    "fixes": {
+                        "PF006": "PF006 AT OR ABOVE 6000"
+                    }
+                }
+            ]
+        }
+    ]
+}

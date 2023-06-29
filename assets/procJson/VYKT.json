@@ -1,0 +1,49 @@
+{
+    "fixes": [
+        {
+            "name": "FF02",
+            "lat": 9.974744433333333,
+            "lon": 98.49263056666666
+        },
+        {
+            "name": "KTNB",
+            "lat": 10.050008333333333,
+            "lon": 98.54006943333333
+        },
+        {
+            "name": "MA02",
+            "lat": 10.021044433333334,
+            "lon": 98.52181111666667
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB02",
+            "fixes": {
+                "FF02": "FF02 1700",
+                "MA02": "MA02 590 RNW 02 HDG 330 UNTIL 2000 TURN LEFT DIRECT",
+                "KTNB": "KTNB 3500 HOLD AT KTNB RIGHT TURN INBOUNDCOURSE 240 LEGTIME 1 FAF FF02 MAP MA02"
+            },
+            "transitions": [
+                {
+                    "name": "KT1",
+                    "fixes": {
+                        "KTNB": "KTNB AT OR ABOVE 3500 TRK 240 UNTIL 5.3 FROM KTNB"
+                    }
+                },
+                {
+                    "name": "KT2",
+                    "fixes": {
+                        "KTNB": "KTNB AT OR ABOVE 3500 TRK 240 UNTIL 7.5 FROM KTNB"
+                    }
+                }
+            ]
+        }
+    ]
+}

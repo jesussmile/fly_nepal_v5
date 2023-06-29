@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "IGLUV",
+            "lat": 3.7253333333333334,
+            "lon": 116.77280556666666
+        },
+        {
+            "name": "OLVOS",
+            "lat": 3.404305566666667,
+            "lon": 116.54094443333334
+        },
+        {
+            "name": "QM401",
+            "lat": 3.4522500000000003,
+            "lon": 116.49436111666667
+        },
+        {
+            "name": "QM402",
+            "lat": 3.4966944333333334,
+            "lon": 116.53966666666666
+        },
+        {
+            "name": "QM403",
+            "lat": 3.5309166666666667,
+            "lon": 116.57455556666666
+        },
+        {
+            "name": "QM601",
+            "lat": 3.6875833333333334,
+            "lon": 116.73430556666666
+        },
+        {
+            "name": "QM602",
+            "lat": 3.6524722166666668,
+            "lon": 116.6985
+        },
+        {
+            "name": "QM603",
+            "lat": 3.610666666666667,
+            "lon": 116.65586111666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "QM401": "QM401 AT OR ABOVE 2000 SPEED 210",
+                "QM402": "QM402 2000",
+                "QM403": "QM403 AT OR ABOVE 1100 RNW 04 TRK 046 UNTIL 1500 TURN RIGHT DIRECT",
+                "OLVOS": "OLVOS AT OR ABOVE 3000 HOLD AT OLVOS RIGHT TURN INBOUNDCOURSE 316 ALT 3000 SPEED 210 LEGTIME 1 FAF QM402 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "OLVOS",
+                    "fixes": {
+                        "OLVOS": "OLVOS AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "QM601": "QM601 AT OR ABOVE 2000",
+                "QM602": "QM602 2000",
+                "QM603": "QM603 AT OR ABOVE 900 RNW 22 TRK 226 UNTIL 1000 TURN LEFT DIRECT",
+                "IGLUV": "IGLUV AT OR ABOVE 3000 HOLD AT IGLUV LEFT TURN INBOUNDCOURSE 226 ALT 3000 LEGTIME 1 FAF QM602 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "IGLUV",
+                    "fixes": {
+                        "IGLUV": "IGLUV AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

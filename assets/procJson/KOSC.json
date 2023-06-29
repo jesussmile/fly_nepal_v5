@@ -1,0 +1,165 @@
+{
+    "fixes": [
+        {
+            "name": "AILES",
+            "lat": 44.807538883333336,
+            "lon": 83.651425
+        },
+        {
+            "name": "APN",
+            "lat": 45.082777783333334,
+            "lon": 83.55700278333333
+        },
+        {
+            "name": "CEDPA",
+            "lat": 44.33982221666667,
+            "lon": 83.64413056666666
+        },
+        {
+            "name": "CFRLD",
+            "lat": 44.52716111666667,
+            "lon": 83.22364721666666
+        },
+        {
+            "name": "JAVOD",
+            "lat": 44.49172778333333,
+            "lon": 83.08211388333334
+        },
+        {
+            "name": "KOWKU",
+            "lat": 44.562666666666665,
+            "lon": 83.14323611666667
+        },
+        {
+            "name": "LEGOR",
+            "lat": 44.83825,
+            "lon": 83.48395833333333
+        },
+        {
+            "name": "MUBIE",
+            "lat": 44.39363888333333,
+            "lon": 83.52397778333334
+        },
+        {
+            "name": "ODAXY",
+            "lat": 44.633572216666664,
+            "lon": 83.20450833333334
+        },
+        {
+            "name": "PEROY",
+            "lat": 44.423625,
+            "lon": 83.45680833333333
+        },
+        {
+            "name": "SALTR",
+            "lat": 44.50958333333333,
+            "lon": 83.26336111666667
+        },
+        {
+            "name": "SNOWW",
+            "lat": 44.099075,
+            "lon": 83.89026666666666
+        },
+        {
+            "name": "TUSYU",
+            "lat": 44.477119433333336,
+            "lon": 83.76363888333333
+        },
+        {
+            "name": "ZABLE",
+            "lat": 44.68031943333333,
+            "lon": 84.27501388333333
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS25",
+            "fixes": {
+                "CFRLD": "CFRLD AT OR ABOVE 2500",
+                "SALTR": "SALTR 2500 RNW 25 TRK 245 UNTIL 1300 TURN RIGHT HDG 030 INTERCEPT RADIAL 355 TO",
+                "LEGOR": "LEGOR LEGOR AT OR ABOVE 3000 HOLD AT LEGOR RIGHT TURN INBOUNDCOURSE 355 LEGTIME 1 FAF SALTR MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "APN",
+                    "fixes": {
+                        "APN": "APN",
+                        "SALTR": "SALTR AT OR ABOVE 2500 HOLD AT SALTR RIGHT TURN INBOUNDCOURSE 245 ALT 2500 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "CEDPA": "CEDPA AT OR ABOVE 3000",
+                "MUBIE": "MUBIE 2500",
+                "PEROY": "PEROY AT OR ABOVE 1380 RNW 07 TRK 065 UNTIL 892",
+                "KOWKU": "OVERFLY KOWKU AT OR ABOVE 2500 HOLD AT KOWKU RIGHT TURN INBOUNDCOURSE 245 LEGDIST 4 FAF MUBIE MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "CEDPA",
+                    "fixes": {
+                        "CEDPA": "CEDPA RIGHT TURN INBOUNDCOURSE 065 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SNOWW",
+                    "fixes": {
+                        "SNOWW": "SNOWW"
+                    }
+                },
+                {
+                    "name": "TUSYU",
+                    "fixes": {
+                        "TUSYU": "TUSYU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "KOWKU": "KOWKU AT OR ABOVE 2500",
+                "SALTR": "SALTR 2500 RNW 25 TRK 245 UNTIL 824",
+                "CEDPA": "OVERFLY CEDPA AT OR ABOVE 3000 HOLD AT CEDPA RIGHT TURN INBOUNDCOURSE 065 LEGDIST 4 FAF SALTR MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "AILES",
+                    "fixes": {
+                        "AILES": "AILES",
+                        "ODAXY": "ODAXY AT OR ABOVE 2600"
+                    }
+                },
+                {
+                    "name": "KOWKU",
+                    "fixes": {
+                        "KOWKU": "KOWKU RIGHT TURN INBOUNDCOURSE 245 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SNOWW",
+                    "fixes": {
+                        "SNOWW": "SNOWW",
+                        "JAVOD": "JAVOD AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "ZABLE",
+                    "fixes": {
+                        "ZABLE": "ZABLE",
+                        "ODAXY": "ODAXY AT OR ABOVE 2900"
+                    }
+                }
+            ]
+        }
+    ]
+}

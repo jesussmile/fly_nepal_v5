@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "HOBUV",
+            "lat": 35.15524443333333,
+            "lon": 92.39160556666667
+        },
+        {
+            "name": "OGAME",
+            "lat": 35.053694433333334,
+            "lon": 92.51433888333334
+        },
+        {
+            "name": "UYASI",
+            "lat": 35.00672221666667,
+            "lon": 92.57095278333334
+        },
+        {
+            "name": "VAKUY",
+            "lat": 34.88366943333333,
+            "lon": 92.73511388333333
+        },
+        {
+            "name": "YUDUT",
+            "lat": 34.951125,
+            "lon": 92.64522221666667
+        },
+        {
+            "name": "ZISOL",
+            "lat": 35.08419443333333,
+            "lon": 92.477525
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "VAKUY": "VAKUY AT OR ABOVE 3000",
+                "YUDUT": "YUDUT 2100",
+                "UYASI": "OVERFLY UYASI 526 RNW 04 TRK 047 UNTIL 583",
+                "HOBUV": "OVERFLY HOBUV AT OR ABOVE 2600 HOLD AT HOBUV RIGHT TURN INBOUNDCOURSE 224 LEGDIST 4 FAF YUDUT MAP UYASI"
+            },
+            "transitions": [
+                {
+                    "name": "VAKUY",
+                    "fixes": {
+                        "VAKUY": "VAKUY RIGHT TURN INBOUNDCOURSE 047 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "HOBUV": "HOBUV AT OR ABOVE 2600",
+                "ZISOL": "ZISOL 1900",
+                "OGAME": "OGAME AT OR ABOVE 1080 RNW 22 TRK 224 UNTIL 533",
+                "VAKUY": "OVERFLY VAKUY AT OR ABOVE 3000 HOLD AT VAKUY RIGHT TURN INBOUNDCOURSE 047 LEGDIST 4 FAF ZISOL MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "HOBUV",
+                    "fixes": {
+                        "HOBUV": "HOBUV RIGHT TURN INBOUNDCOURSE 224 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

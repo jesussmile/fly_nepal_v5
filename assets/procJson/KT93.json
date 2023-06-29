@@ -1,0 +1,119 @@
+{
+    "fixes": [
+        {
+            "name": "CISVU",
+            "lat": 36.35458056666667,
+            "lon": 100.12351666666666
+        },
+        {
+            "name": "CUTKU",
+            "lat": 36.53535,
+            "lon": 100.12414166666667
+        },
+        {
+            "name": "EKEWU",
+            "lat": 36.577069433333335,
+            "lon": 100.00295556666667
+        },
+        {
+            "name": "EROHI",
+            "lat": 36.252794433333335,
+            "lon": 100.12316666666666
+        },
+        {
+            "name": "FILEL",
+            "lat": 36.23623333333333,
+            "lon": 100.22421388333333
+        },
+        {
+            "name": "JITMI",
+            "lat": 36.25298333333333,
+            "lon": 100.02013611666666
+        },
+        {
+            "name": "MAHYY",
+            "lat": 36.439708333333336,
+            "lon": 100.12106388333333
+        },
+        {
+            "name": "MMB",
+            "lat": 36.34373333333333,
+            "lon": 99.88012221666666
+        },
+        {
+            "name": "PICKY",
+            "lat": 36.4028,
+            "lon": 100.02819166666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA17",
+            "fixes": {
+                "MMB": "MMB AT OR ABOVE 4000 MMB AT OR ABOVE 4000 HOLD AT MMB RIGHT TURN INBOUNDCOURSE 287 LEGTIME 1 FAF PICKY MAP MAHYY",
+                "PICKY": "PICKY 4000",
+                "MAHYY": "MAHYY 3160 RNW 17 TRK 286 UNTIL 3160 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MMB",
+                    "fixes": {
+                        "MMB": "MMB RIGHT TURN INBOUNDCOURSE 287 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA35",
+            "fixes": {
+                "MMB": "MMB AT OR ABOVE 4000 MMB AT OR ABOVE 4000 HOLD AT MMB RIGHT TURN INBOUNDCOURSE 287 LEGTIME 1 FAF PICKY MAP MAHYY",
+                "PICKY": "PICKY 4000",
+                "MAHYY": "MAHYY 3160 RNW 35 TRK 286 UNTIL 3160 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "MMB",
+                    "fixes": {
+                        "MMB": "MMB RIGHT TURN INBOUNDCOURSE 287 ALT 4000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "EROHI": "EROHI AT OR ABOVE 4200",
+                "CISVU": "CISVU 4200 RNW 35",
+                "CUTKU": "CUTKU",
+                "EKEWU": "OVERFLY EKEWU AT OR ABOVE 6000 HOLD AT EKEWU RIGHT TURN INBOUNDCOURSE 151 LEGDIST 5 FAF CISVU MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "EROHI",
+                    "fixes": {
+                        "EROHI": "EROHI RIGHT TURN INBOUNDCOURSE 354 ALT 4200 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "FILEL",
+                    "fixes": {
+                        "FILEL": "FILEL"
+                    }
+                },
+                {
+                    "name": "MMB",
+                    "fixes": {
+                        "MMB": "MMB",
+                        "JITMI": "JITMI AT OR ABOVE 4200"
+                    }
+                }
+            ]
+        }
+    ]
+}

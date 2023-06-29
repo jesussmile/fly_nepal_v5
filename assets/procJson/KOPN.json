@@ -1,0 +1,148 @@
+{
+    "fixes": [
+        {
+            "name": "CFFVV",
+            "lat": 32.95187778333333,
+            "lon": 84.25691666666667
+        },
+        {
+            "name": "FIDLO",
+            "lat": 32.98388333333333,
+            "lon": 84.32924166666666
+        },
+        {
+            "name": "FOGES",
+            "lat": 33.00394443333333,
+            "lon": 84.37457221666666
+        },
+        {
+            "name": "GUNHO",
+            "lat": 32.932288883333335,
+            "lon": 84.21295
+        },
+        {
+            "name": "JOTER",
+            "lat": 33.05588611666667,
+            "lon": 84.49221388333333
+        },
+        {
+            "name": "OP",
+            "lat": 32.9193,
+            "lon": 84.18713888333333
+        },
+        {
+            "name": "OPNB",
+            "lat": 32.9193,
+            "lon": 84.18713888333333
+        },
+        {
+            "name": "PI001",
+            "lat": 32.89100473333333,
+            "lon": 84.12638008333333
+        },
+        {
+            "name": "PI002",
+            "lat": 32.91073196666667,
+            "lon": 84.04432058333333
+        },
+        {
+            "name": "PI003",
+            "lat": 32.838378533333334,
+            "lon": 84.01364526666667
+        },
+        {
+            "name": "PRATZ",
+            "lat": 32.64180278333333,
+            "lon": 84.36315278333333
+        },
+        {
+            "name": "PUMOE",
+            "lat": 32.911397216666664,
+            "lon": 84.16597778333333
+        },
+        {
+            "name": "SINFO",
+            "lat": 32.859127783333335,
+            "lon": 84.04873333333333
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS30",
+            "fixes": {
+                "SINFO": "SINFO AT OR ABOVE 2600 SINFO AT OR ABOVE 2600 HOLD AT SINFO RIGHT TURN INBOUNDCOURSE 301 LEGTIME 1 FAF PUMOE MAP RNW 30",
+                "PUMOE": "PUMOE 2127 RNW 30 TRK 301 UNTIL 1500 TURN LEFT DIRECT",
+                "OP": "OP"
+            },
+            "transitions": [
+                {
+                    "name": "PRATZ",
+                    "fixes": {
+                        "PRATZ": "PRATZ",
+                        "OP": "OP AT OR ABOVE 2600",
+                        "SINFO": "SINFO AT OR ABOVE 2600 HOLD AT SINFO RIGHT TURN INBOUNDCOURSE 301 ALT 2600 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB30",
+            "fixes": {
+                "OPNB": "OPNB 2200 OPNB AT OR ABOVE 2600 HOLD AT OPNB RIGHT TURN INBOUNDCOURSE 302 ALT 2600 LEGTIME 1 FAF OPNB MAP CFFVV",
+                "CFFVV": "CFFVV 836 RNW 30 TRK 302 UNTIL 1500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "PRATZ",
+                    "fixes": {
+                        "PRATZ": "PRATZ",
+                        "OPNB": "OPNB AT OR ABOVE 2600",
+                        "PI001": "PI001 AT OR ABOVE 2400 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2400 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2400 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV12",
+            "fixes": {
+                "JOTER": "JOTER AT OR ABOVE 2800",
+                "FOGES": "FOGES 2700",
+                "FIDLO": "FIDLO AT OR ABOVE 1860 RNW 12 TRK 121 UNTIL 1041",
+                "SINFO": "OVERFLY SINFO AT OR ABOVE 2600 HOLD AT SINFO RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4 FAF FOGES MAP RNW 12"
+            },
+            "transitions": [
+                {
+                    "name": "JOTER",
+                    "fixes": {
+                        "JOTER": "JOTER RIGHT TURN INBOUNDCOURSE 121 ALT 2800 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV30",
+            "fixes": {
+                "SINFO": "SINFO AT OR ABOVE 2600",
+                "PUMOE": "PUMOE 2500",
+                "GUNHO": "GUNHO AT OR ABOVE 1640 RNW 30 TRK 301 UNTIL 996",
+                "JOTER": "OVERFLY JOTER AT OR ABOVE 2800 HOLD AT JOTER RIGHT TURN INBOUNDCOURSE 121 LEGDIST 4 FAF PUMOE MAP RNW 30"
+            },
+            "transitions": [
+                {
+                    "name": "SINFO",
+                    "fixes": {
+                        "SINFO": "SINFO RIGHT TURN INBOUNDCOURSE 301 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

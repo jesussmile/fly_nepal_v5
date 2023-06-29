@@ -1,0 +1,239 @@
+{
+    "fixes": [
+        {
+            "name": "ADGAT",
+            "lat": 39.99372221666667,
+            "lon": 175.22168056666666
+        },
+        {
+            "name": "AVLOR",
+            "lat": 39.93615556666666,
+            "lon": 174.79704166666667
+        },
+        {
+            "name": "BASEP",
+            "lat": 40.04716388333333,
+            "lon": 175.16973611666666
+        },
+        {
+            "name": "BELVO",
+            "lat": 40.10058333333333,
+            "lon": 175.11770833333333
+        },
+        {
+            "name": "BUPKA",
+            "lat": 39.802922216666666,
+            "lon": 174.92727778333332
+        },
+        {
+            "name": "BUSBI",
+            "lat": 40.007188883333335,
+            "lon": 175.10025278333333
+        },
+        {
+            "name": "CQ11",
+            "lat": 39.91223333333333,
+            "lon": 174.91615
+        },
+        {
+            "name": "DUDED",
+            "lat": 39.86955833333333,
+            "lon": 174.86222221666668
+        },
+        {
+            "name": "EN11",
+            "lat": 39.956716666666665,
+            "lon": 175.02023888333332
+        },
+        {
+            "name": "FF11",
+            "lat": 39.91469166666667,
+            "lon": 174.94008056666667
+        },
+        {
+            "name": "FN11",
+            "lat": 39.91247778333333,
+            "lon": 174.916725
+        },
+        {
+            "name": "FQ11",
+            "lat": 39.91871388333333,
+            "lon": 174.93129721666668
+        },
+        {
+            "name": "MQ11",
+            "lat": 39.94705833333333,
+            "lon": 174.99760556666666
+        },
+        {
+            "name": "TENUR",
+            "lat": 39.63245833333333,
+            "lon": 175.11784721666666
+        },
+        {
+            "name": "VIROL",
+            "lat": 40.14882778333333,
+            "lon": 175.07063333333335
+        },
+        {
+            "name": "WU",
+            "lat": 39.95852778333333,
+            "lon": 175.0265
+        },
+        {
+            "name": "WUNB",
+            "lat": 39.95938888333333,
+            "lon": 175.0265
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 11",
+        "RNW 14",
+        "RNW 26",
+        "RNW 29",
+        "RNW 32"
+    ],
+    "sids": [
+        {
+            "name": "DEP11",
+            "rnw": "11",
+            "fixes": {},
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DEP29",
+            "rnw": "29",
+            "fixes": {},
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "TENU1L",
+            "runway": "RNW 29",
+            "fixes": {
+                "TENUR": "TENUR AT OR BELOW 12000",
+                "ADGAT": "ADGAT"
+            }
+        },
+        {
+            "name": "TENU1M",
+            "runway": "RNW 11",
+            "fixes": {
+                "TENUR": "TENUR AT OR BELOW 12000",
+                "BUPKA": "BUPKA"
+            }
+        },
+        {
+            "name": "VIRO1L",
+            "runway": "RNW 29",
+            "fixes": {
+                "VIROL": "VIROL",
+                "BELVO": "BELVO AT OR ABOVE 2000"
+            }
+        },
+        {
+            "name": "VIRO2M",
+            "runway": "RNW 11",
+            "fixes": {
+                "VIROL": "VIROL",
+                "AVLOR": "AVLOR AT OR ABOVE 2200"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDB11",
+            "fixes": {
+                "FN11": "FN11 1800",
+                "EN11": "OVERFLY EN11 60",
+                "WUNB": "OVERFLY WUNB AT OR ABOVE 530 RNW 11 TURN LEFT DIRECT WUNB AT OR ABOVE 2700 HOLD AT WUNB RIGHT TURN INBOUNDCOURSE 259 ALT 2700 LEGTIME 1 FAF FN11 MAP WU"
+            },
+            "transitions": [
+                {
+                    "name": "WU",
+                    "fixes": {
+                        "WUNB": "WUNB AT OR ABOVE 2200 TRK 258 UNTIL 10.5 FROM WUNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD11",
+            "fixes": {
+                "CQ11": "CQ11 AT OR ABOVE 1800",
+                "FQ11": "FQ11 1540",
+                "MQ11": "MQ11 443 RNW 11 TRK 097 UNTIL 1000 TURN LEFT DIRECT",
+                "WUNB": "WUNB AT OR ABOVE 2700 HOLD AT WUNB RIGHT TURN INBOUNDCOURSE 259 ALT 2700 LEGTIME 1 FAF FQ11 MAP MQ11"
+            },
+            "transitions": [
+                {
+                    "name": "WU1",
+                    "fixes": {
+                        "WUNB": "WUNB AT OR ABOVE 2200 TRK 248 UNTIL 8.0 FROM",
+                        "WU": "WU"
+                    }
+                },
+                {
+                    "name": "WU2",
+                    "fixes": {
+                        "WUNB": "WUNB AT OR ABOVE 2200 TRK 265 UNTIL 8.0 FROM",
+                        "WU": "WU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "DUDED": "DUDED AT OR ABOVE 2200 DUDED AT OR ABOVE 2700 SPEED 220 HOLD AT DUDED RIGHT TURN INBOUNDCOURSE 105 ALT 2700 LEGTIME 1 FAF FF11 MAP RNW 11",
+                "FF11": "FF11 1490 RNW 11 TRK 105 UNTIL 1000 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AVLOR",
+                    "fixes": {
+                        "AVLOR": "AVLOR"
+                    }
+                },
+                {
+                    "name": "BUPKA",
+                    "fixes": {
+                        "BUPKA": "BUPKA"
+                    }
+                },
+                {
+                    "name": "DUDED",
+                    "fixes": {
+                        "DUDED": "DUDED RIGHT TURN INBOUNDCOURSE 105 ALT 2700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "BASEP": "BASEP AT OR ABOVE 2000 SPEED 210",
+                "BUSBI": "BUSBI 1350 RNW 29",
+                "DUDED": "DUDED AT OR ABOVE 2700 HOLD AT DUDED RIGHT TURN INBOUNDCOURSE 105 ALT 2700 LEGTIME 1 FAF BUSBI MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "ADGAT",
+                    "fixes": {
+                        "ADGAT": "ADGAT"
+                    }
+                },
+                {
+                    "name": "BELVO",
+                    "fixes": {
+                        "BELVO": "BELVO"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "fixes": [
+        {
+            "name": "FLV01",
+            "lat": 46.02347221666667,
+            "lon": 3.3738333333333332
+        },
+        {
+            "name": "FN01",
+            "lat": 46.023491666666665,
+            "lon": 3.374016666666667
+        },
+        {
+            "name": "LV402",
+            "lat": 46.068083333333334,
+            "lon": 3.2620555666666666
+        },
+        {
+            "name": "LV404",
+            "lat": 45.96905556666667,
+            "lon": 3.242166666666667
+        },
+        {
+            "name": "LV410",
+            "lat": 46.22588888333333,
+            "lon": 3.4150833333333335
+        },
+        {
+            "name": "VIBUG",
+            "lat": 45.957472216666666,
+            "lon": 3.3604444333333334
+        },
+        {
+            "name": "VZNB",
+            "lat": 46.1275,
+            "lon": 3.395
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB01",
+            "fixes": {
+                "FN01": "FN01 3500",
+                "VZNB": "VZNB 1493 RNW 01 TRK 007 UNTIL 2500 TURN LEFT DIRECT VZNB 3500 SPEED 170 HOLD AT VZNB RIGHT TURN INBOUNDCOURSE 187 ALT 3500 LEGTIME 1 FAF FN01 MAP VZ"
+            },
+            "transitions": [
+                {
+                    "name": "VZ1",
+                    "fixes": {
+                        "VZNB": "VZNB AT OR ABOVE 3500 TRK 206 UNTIL 7.0 FROM VZNB"
+                    }
+                },
+                {
+                    "name": "VZ2",
+                    "fixes": {
+                        "VZNB": "VZNB AT OR ABOVE 3500 TRK 202 UNTIL 7.0 FROM VZNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "VIBUG": "VIBUG 3500 SPEED 210",
+                "FLV01": "FLV01 3500 RNW 01",
+                "LV410": "OVERFLY LV410 SPEED 200 TURN LEFT DIRECT",
+                "VZNB": "VZNB SPEED 200 HOLD AT VZNB RIGHT TURN INBOUNDCOURSE 187 ALT 3500 SPEED 205 LEGTIME 1 FAF FLV01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "VZ",
+                    "fixes": {
+                        "VZNB": "VZNB 3500",
+                        "LV402": "LV402 3500 SPEED 230",
+                        "LV404": "LV404 3500 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

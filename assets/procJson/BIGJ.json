@@ -1,0 +1,147 @@
+{
+    "fixes": [
+        {
+            "name": "ABTAR",
+            "lat": 65.85493056666667,
+            "lon": 20.932388883333335
+        },
+        {
+            "name": "D033I",
+            "lat": 66.13513333333333,
+            "lon": 21.203775
+        },
+        {
+            "name": "FN201",
+            "lat": 66.07695556666667,
+            "lon": 21.301527783333334
+        },
+        {
+            "name": "GJF42",
+            "lat": 65.91368056666667,
+            "lon": 21.196058333333333
+        },
+        {
+            "name": "GJI41",
+            "lat": 65.84245556666667,
+            "lon": 21.091694433333334
+        },
+        {
+            "name": "GJM43",
+            "lat": 65.98483056666667,
+            "lon": 21.300997216666666
+        },
+        {
+            "name": "GJNB",
+            "lat": 65.99472221666667,
+            "lon": 21.33
+        },
+        {
+            "name": "HAKOF",
+            "lat": 65.785425,
+            "lon": 21.008616666666665
+        },
+        {
+            "name": "VIGAZ",
+            "lat": 65.79086666666667,
+            "lon": 21.193763883333332
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA04",
+            "fixes": {
+                "FN201": "FN201 2400",
+                "GJNB": "GJNB 1840 RNW 04 TRK 021 UNTIL 3500 TURN LEFT DIRECT GJNB 3500 HOLD AT GJNB LEFT TURN INBOUNDCOURSE 201 LEGTIME 1 FAF FN201 MAP GJ"
+            },
+            "transitions": [
+                {
+                    "name": "GJ",
+                    "fixes": {
+                        "GJNB": "GJNB AT OR ABOVE 3500",
+                        "D033I": "OVERFLY D033I AT OR ABOVE 2400 SPEED 110"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA22",
+            "fixes": {
+                "FN201": "FN201 2400",
+                "GJNB": "GJNB 1840 RNW 22 TRK 021 UNTIL 3500 TURN LEFT DIRECT GJNB 3500 HOLD AT GJNB LEFT TURN INBOUNDCOURSE 201 LEGTIME 1 FAF FN201 MAP GJ"
+            },
+            "transitions": [
+                {
+                    "name": "GJ",
+                    "fixes": {
+                        "GJNB": "GJNB AT OR ABOVE 3500",
+                        "D033I": "OVERFLY D033I AT OR ABOVE 2400 SPEED 110"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA04",
+            "fixes": {
+                "GJI41": "GJI41 AT OR ABOVE 3000",
+                "GJF42": "GJF42 2100",
+                "GJM43": "OVERFLY GJM43 1840 RNW 04 TURN RIGHT DIRECT",
+                "ABTAR": "ABTAR HOLD AT ABTAR LEFT TURN INBOUNDCOURSE 272 ALT 3000 LEGTIME 1 FAF GJF42 MAP GJM43"
+            },
+            "transitions": [
+                {
+                    "name": "ABTAR",
+                    "fixes": {
+                        "ABTAR": "ABTAR AT OR ABOVE 3400"
+                    }
+                },
+                {
+                    "name": "HAKOF",
+                    "fixes": {
+                        "HAKOF": "HAKOF AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "VIGAZ",
+                    "fixes": {
+                        "VIGAZ": "VIGAZ AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA22",
+            "fixes": {
+                "GJI41": "GJI41 AT OR ABOVE 3000",
+                "GJF42": "GJF42 2100",
+                "GJM43": "OVERFLY GJM43 1840 RNW 22 TURN RIGHT DIRECT",
+                "ABTAR": "ABTAR HOLD AT ABTAR LEFT TURN INBOUNDCOURSE 272 ALT 3000 LEGTIME 1 FAF GJF42 MAP GJM43"
+            },
+            "transitions": [
+                {
+                    "name": "ABTAR",
+                    "fixes": {
+                        "ABTAR": "ABTAR AT OR ABOVE 3400"
+                    }
+                },
+                {
+                    "name": "HAKOF",
+                    "fixes": {
+                        "HAKOF": "HAKOF AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "VIGAZ",
+                    "fixes": {
+                        "VIGAZ": "VIGAZ AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        }
+    ]
+}

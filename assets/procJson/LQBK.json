@@ -1,0 +1,312 @@
+{
+    "fixes": [
+        {
+            "name": "BK403",
+            "lat": 44.987686116666666,
+            "lon": 17.285402783333332
+        },
+        {
+            "name": "BK404",
+            "lat": 44.963408333333334,
+            "lon": 17.554258333333333
+        },
+        {
+            "name": "BKI34",
+            "lat": 44.732627783333335,
+            "lon": 17.351683333333334
+        },
+        {
+            "name": "BLKNB",
+            "lat": 45.09526666666667,
+            "lon": 17.257933333333334
+        },
+        {
+            "name": "BOSNA",
+            "lat": 44.37055556666667,
+            "lon": 17.759722216666667
+        },
+        {
+            "name": "D133J",
+            "lat": 44.817313883333334,
+            "lon": 17.452058333333333
+        },
+        {
+            "name": "D136J",
+            "lat": 44.812930566666665,
+            "lon": 17.444805566666666
+        },
+        {
+            "name": "D288J",
+            "lat": 45.00619721666666,
+            "lon": 17.079280566666668
+        },
+        {
+            "name": "D308J",
+            "lat": 45.054938883333335,
+            "lon": 17.123722216666668
+        },
+        {
+            "name": "DER",
+            "lat": 44.984127783333335,
+            "lon": 17.96946111666667
+        },
+        {
+            "name": "DUBHE",
+            "lat": 44.81456943333333,
+            "lon": 17.33045278333333
+        },
+        {
+            "name": "FD16",
+            "lat": 45.04066388333333,
+            "lon": 17.276352783333333
+        },
+        {
+            "name": "FF16",
+            "lat": 45.03188333333333,
+            "lon": 17.273861116666666
+        },
+        {
+            "name": "IKEWO",
+            "lat": 44.71318333333333,
+            "lon": 17.51302778333333
+        },
+        {
+            "name": "KOMAR",
+            "lat": 44.958055566666665,
+            "lon": 16.804166666666667
+        },
+        {
+            "name": "LAK",
+            "lat": 44.94165,
+            "lon": 17.295983333333332
+        },
+        {
+            "name": "LU",
+            "lat": 44.96103888333333,
+            "lon": 17.292347216666666
+        },
+        {
+            "name": "MD16",
+            "lat": 44.97465556666667,
+            "lon": 17.289447216666666
+        },
+        {
+            "name": "RW16",
+            "lat": 44.95246111666667,
+            "lon": 17.294591666666665
+        },
+        {
+            "name": "TEBLI",
+            "lat": 45.20138888333334,
+            "lon": 16.675833333333333
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "BOSN1E",
+            "rnw": "16",
+            "fixes": {
+                "BOSNA": "BOSNA AT OR ABOVE 9000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "BOSN3C",
+            "rnw": "34",
+            "fixes": {
+                "BOSNA": "BOSNA AT OR ABOVE 9000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DER1C",
+            "rnw": "16",
+            "fixes": {
+                "DER": "DER AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DER1D",
+            "rnw": "34",
+            "fixes": {
+                "DER": "DER AT OR ABOVE 7000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KOMA1A",
+            "rnw": "16",
+            "fixes": {
+                "LAK": "LAK",
+                "KOMAR": "KOMAR AT OR ABOVE 10000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "KOMA1B",
+            "rnw": "34",
+            "fixes": {
+                "KOMAR": "KOMAR AT OR ABOVE 10000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TEBL1D",
+            "rnw": "16",
+            "fixes": {
+                "LAK": "LAK",
+                "TEBLI": "TEBLI AT OR ABOVE 8000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TEBL1E",
+            "rnw": "34",
+            "fixes": {
+                "TEBLI": "TEBLI AT OR ABOVE 8000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD16",
+            "fixes": {
+                "FD16": "FD16 2000 FD16 4500 HOLD AT FD16 LEFT TURN INBOUNDCOURSE 167 SPEED 230 LEGDIST 4 FAF FD16 MAP MD16",
+                "MD16": "MD16 856 RNW 16",
+                "LAK": "LAK TRK 167 UNTIL 1.0 FROM LAK TRK 037 UNTIL 4500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BOSNA",
+                    "fixes": {
+                        "BOSNA": "BOSNA",
+                        "D136J": "D136J AT OR ABOVE 5500",
+                        "FD16": "FD16 AT OR ABOVE 3500 HOLD AT FD16 LEFT TURN INBOUNDCOURSE 167 ALT 2000 SPEED 230 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "DER",
+                    "fixes": {
+                        "DER": "DER",
+                        "FD16": "FD16 AT OR ABOVE 3500 HOLD AT FD16 LEFT TURN INBOUNDCOURSE 167 ALT 2000 SPEED 230 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "FD16",
+                    "fixes": {
+                        "FD16": "FD16 LEFT TURN INBOUNDCOURSE 167 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "KOMAR",
+                    "fixes": {
+                        "KOMAR": "KOMAR",
+                        "D288J": "D288J AT OR ABOVE 4300",
+                        "FD16": "FD16 AT OR ABOVE 3500 HOLD AT FD16 LEFT TURN INBOUNDCOURSE 167 ALT 2000 SPEED 230 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "TEBLI",
+                    "fixes": {
+                        "TEBLI": "TEBLI",
+                        "FD16": "FD16 AT OR ABOVE 3500 HOLD AT FD16 LEFT TURN INBOUNDCOURSE 167 ALT 2000 SPEED 230 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSY16",
+            "fixes": {
+                "BLKNB": "BLKNB AT OR ABOVE 2500 BLKNB 4500 HOLD AT BLKNB RIGHT TURN INBOUNDCOURSE 297 SPEED 230 LEGTIME 1 FAF FF16 MAP RNW 16",
+                "FF16": "FF16 2000 RNW 16 TRK 165 UNTIL 1500 TRK 037 UNTIL 4500 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BLK",
+                    "fixes": {
+                        "BLKNB": "BLKNB AT OR ABOVE 3500 SPEED 180 TRK 297 UNTIL 3.0 FROM BLKNB"
+                    }
+                },
+                {
+                    "name": "BOSNA",
+                    "fixes": {
+                        "BOSNA": "BOSNA",
+                        "D133J": "D133J AT OR ABOVE 5500",
+                        "BLKNB": "BLKNB AT OR ABOVE 3500 TRK 297 UNTIL 3.0 FROM BLKNB"
+                    }
+                },
+                {
+                    "name": "DER",
+                    "fixes": {
+                        "DER": "DER",
+                        "BLKNB": "BLKNB AT OR ABOVE 3500 TRK 297 UNTIL 3.0 FROM BLKNB"
+                    }
+                },
+                {
+                    "name": "KOMAR",
+                    "fixes": {
+                        "KOMAR": "KOMAR",
+                        "D308J": "D308J AT OR ABOVE 4300",
+                        "BLKNB": "BLKNB AT OR ABOVE 3500 HOLD AT BLKNB RIGHT TURN INBOUNDCOURSE 297 ALT 3500 SPEED 230 LEGTIME 1 BLKNB SPEED 180 TRK 297 UNTIL 3.0 FROM BLKNB"
+                    }
+                },
+                {
+                    "name": "TEBLI",
+                    "fixes": {
+                        "TEBLI": "TEBLI",
+                        "BLKNB": "BLKNB AT OR ABOVE 3500 HOLD AT BLKNB RIGHT TURN INBOUNDCOURSE 297 ALT 3500 SPEED 230 LEGTIME 1 BLKNB SPEED 180 TRK 297 UNTIL 3.0 FROM BLKNB"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILSZ16",
+            "fixes": {
+                "BLKNB": "BLKNB AT OR ABOVE 3000",
+                "FF16": "FF16 2000 RNW 16 TRK 165 UNTIL 1500 TRK 037 UNTIL 4500 TURN LEFT DIRECT",
+                "LU": "LU 4500 HOLD AT LU LEFT TURN INBOUNDCOURSE 325 SPEED 230 LEGTIME 1 FAF FF16 MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "LU",
+                    "fixes": {
+                        "LU": "LU AT OR ABOVE 3500 TRK 327 UNTIL 8.5 FROM LU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "BKI34": "BKI34 AT OR ABOVE 3500",
+                "DUBHE": "DUBHE 2700 RNW 34",
+                "BK403": "OVERFLY BK403 TURN RIGHT DIRECT",
+                "BK404": "BK404",
+                "IKEWO": "IKEWO 5300 SPEED 230 FAF DUBHE MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "IKEWO",
+                    "fixes": {
+                        "IKEWO": "IKEWO AT OR ABOVE 5300 SPEED 230"
+                    }
+                }
+            ]
+        }
+    ]
+}

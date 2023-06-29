@@ -1,0 +1,101 @@
+{
+    "fixes": [
+        {
+            "name": "BUSHI",
+            "lat": 37.78347221666667,
+            "lon": 80.47052221666667
+        },
+        {
+            "name": "DENLE",
+            "lat": 37.940927783333336,
+            "lon": 80.32561111666666
+        },
+        {
+            "name": "EBALY",
+            "lat": 38.008013883333334,
+            "lon": 80.32569166666667
+        },
+        {
+            "name": "ERAHI",
+            "lat": 37.98860833333333,
+            "lon": 80.28288056666666
+        },
+        {
+            "name": "HODFU",
+            "lat": 38.036275,
+            "lon": 80.24009443333334
+        },
+        {
+            "name": "LORTY",
+            "lat": 37.7751,
+            "lon": 80.47365833333333
+        },
+        {
+            "name": "RUFYO",
+            "lat": 37.69308888333333,
+            "lon": 80.54663611666666
+        },
+        {
+            "name": "YAMEN",
+            "lat": 37.69733611666667,
+            "lon": 80.55321666666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS04",
+            "fixes": {
+                "YAMEN": "YAMEN AT OR ABOVE 5000",
+                "BUSHI": "BUSHI 3996 RNW 04 TRK 045 UNTIL 4000",
+                "EBALY": "EBALY AT OR ABOVE 6000 HOLD AT EBALY RIGHT TURN INBOUNDCOURSE 028 ALT 6000 LEGDIST 5 FAF BUSHI MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "YAMEN",
+                    "fixes": {
+                        "YAMEN": "YAMEN RIGHT TURN INBOUNDCOURSE 045 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "RUFYO": "RUFYO AT OR ABOVE 5000",
+                "LORTY": "LORTY 4100 RNW 04 TRK 043 UNTIL 2559",
+                "HODFU": "OVERFLY HODFU AT OR ABOVE 6300 HOLD AT HODFU RIGHT TURN INBOUNDCOURSE 223 ALT 6300 LEGDIST 7 FAF LORTY MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "RUFYO",
+                    "fixes": {
+                        "RUFYO": "RUFYO RIGHT TURN INBOUNDCOURSE 043 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "HODFU": "HODFU AT OR ABOVE 6300",
+                "ERAHI": "ERAHI AT OR ABOVE 5200",
+                "DENLE": "DENLE 4100 RNW 22 TRK 223 UNTIL 2614",
+                "RUFYO": "OVERFLY RUFYO AT OR ABOVE 5000 HOLD AT RUFYO RIGHT TURN INBOUNDCOURSE 043 LEGDIST 5 FAF DENLE MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "HODFU",
+                    "fixes": {
+                        "HODFU": "HODFU RIGHT TURN INBOUNDCOURSE 223 ALT 6300 LEGDIST 7"
+                    }
+                }
+            ]
+        }
+    ]
+}

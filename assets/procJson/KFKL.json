@@ -1,0 +1,133 @@
+{
+    "fixes": [
+        {
+            "name": "AYIGE",
+            "lat": 41.28898611666666,
+            "lon": 79.89675278333333
+        },
+        {
+            "name": "AYUSU",
+            "lat": 41.4623,
+            "lon": 79.82521943333333
+        },
+        {
+            "name": "BUVCA",
+            "lat": 41.19311388333333,
+            "lon": 79.93615278333333
+        },
+        {
+            "name": "DACCA",
+            "lat": 41.571361116666665,
+            "lon": 79.78000556666667
+        },
+        {
+            "name": "FKL",
+            "lat": 41.43849721666667,
+            "lon": 79.85670556666666
+        },
+        {
+            "name": "PEREA",
+            "lat": 41.1393,
+            "lon": 79.88633888333334
+        },
+        {
+            "name": "PI001",
+            "lat": 41.49675053333333,
+            "lon": 79.8607816
+        },
+        {
+            "name": "PI002",
+            "lat": 41.54468298333333,
+            "lon": 79.93194135
+        },
+        {
+            "name": "PI003",
+            "lat": 41.604934883333335,
+            "lon": 79.86837088333333
+        },
+        {
+            "name": "VOLAN",
+            "lat": 41.13430833333334,
+            "lon": 80.14453056666666
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 12",
+        "RNW 21",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS21",
+            "fixes": {
+                "DACCA": "DACCA AT OR ABOVE 3400",
+                "AYUSU": "AYUSU 3200 RNW 21 TRK 207 UNTIL 2200 TURN RIGHT DIRECT",
+                "FKL": "FKL AT OR ABOVE 3400 HOLD AT FKL RIGHT TURN INBOUNDCOURSE 186 ALT 3400 LEGTIME 1 FAF AYUSU MAP RNW 21"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "BUVCA": "BUVCA AT OR ABOVE 3200 OVERFLY BUVCA AT OR ABOVE 3200 HOLD AT BUVCA RIGHT TURN INBOUNDCOURSE 027 LEGDIST 4 FAF AYIGE MAP RNW 03",
+                "AYIGE": "AYIGE 3200 RNW 03 TRK 027 UNTIL 1940 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BUVCA",
+                    "fixes": {
+                        "BUVCA": "BUVCA RIGHT TURN INBOUNDCOURSE 027 ALT 3200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PEREA",
+                    "fixes": {
+                        "PEREA": "PEREA"
+                    }
+                },
+                {
+                    "name": "VOLAN",
+                    "fixes": {
+                        "VOLAN": "VOLAN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "DACCA": "DACCA AT OR ABOVE 3400",
+                "AYUSU": "AYUSU 3200 RNW 21 TRK 207 UNTIL 1803",
+                "BUVCA": "OVERFLY BUVCA AT OR ABOVE 3400 HOLD AT BUVCA RIGHT TURN INBOUNDCOURSE 027 LEGDIST 4 FAF AYUSU MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "FKL",
+                    "fixes": {
+                        "FKL": "FKL",
+                        "DACCA": "OVERFLY DACCA AT OR ABOVE 3400 HOLD AT DACCA RIGHT TURN INBOUNDCOURSE 207 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR21",
+            "fixes": {
+                "FKL": "FKL 2700 RNW 21 TRK 187 UNTIL 2200 TURN RIGHT DIRECT FKL AT OR ABOVE 3300 HOLD AT FKL RIGHT TURN INBOUNDCOURSE 186 LEGTIME 1 FAF FKL MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "FKL",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3200 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3200 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3200 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "fixes": [
+        {
+            "name": "BINET",
+            "lat": 9.336255566666667,
+            "lon": 18.409427783333335
+        },
+        {
+            "name": "DEDOT",
+            "lat": 9.05095,
+            "lon": 18.203269433333332
+        },
+        {
+            "name": "GAGES",
+            "lat": 8.953316666666666,
+            "lon": 18.340105566666665
+        },
+        {
+            "name": "PIPLA",
+            "lat": 9.287391666666666,
+            "lon": 18.477883333333335
+        },
+        {
+            "name": "RAMET",
+            "lat": 9.002138883333334,
+            "lon": 18.271694433333334
+        },
+        {
+            "name": "TA501",
+            "lat": 9.067444433333334,
+            "lon": 18.318833333333334
+        },
+        {
+            "name": "TA502",
+            "lat": 9.206138883333333,
+            "lon": 18.419111116666667
+        },
+        {
+            "name": "TA503",
+            "lat": 9.226222216666667,
+            "lon": 18.43361111666667
+        },
+        {
+            "name": "TA504",
+            "lat": 9.083444433333334,
+            "lon": 18.330361116666666
+        },
+        {
+            "name": "TAPUT",
+            "lat": 9.238530566666666,
+            "lon": 18.546316666666666
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 22"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "RAMET": "RAMET AT OR ABOVE 2900",
+                "TA501": "TA501 2900 RNW 04",
+                "TA502": "OVERFLY TA502 TURN RIGHT DIRECT",
+                "GAGES": "GAGES 2900 FAF TA501 MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "DEDOT",
+                    "fixes": {
+                        "DEDOT": "DEDOT"
+                    }
+                },
+                {
+                    "name": "GAGES",
+                    "fixes": {
+                        "GAGES": "GAGES"
+                    }
+                },
+                {
+                    "name": "RAMET",
+                    "fixes": {
+                        "RAMET": "RAMET RIGHT TURN INBOUNDCOURSE 035 ALT 2900 SPEED 170 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "PIPLA": "PIPLA AT OR ABOVE 3000",
+                "TA503": "TA503 3000 RNW 22",
+                "TA504": "OVERFLY TA504 TURN LEFT DIRECT",
+                "TAPUT": "TAPUT 3000 FAF TA503 MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "BINET",
+                    "fixes": {
+                        "BINET": "BINET"
+                    }
+                },
+                {
+                    "name": "PIPLA",
+                    "fixes": {
+                        "PIPLA": "PIPLA RIGHT TURN INBOUNDCOURSE 215 ALT 3000 SPEED 170 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "TAPUT",
+                    "fixes": {
+                        "TAPUT": "TAPUT"
+                    }
+                }
+            ]
+        }
+    ]
+}

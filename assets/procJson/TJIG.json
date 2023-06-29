@@ -1,0 +1,55 @@
+{
+    "fixes": [
+        {
+            "name": "CORAF",
+            "lat": 18.646638883333335,
+            "lon": 66.38998333333333
+        },
+        {
+            "name": "FIRPE",
+            "lat": 18.445755566666666,
+            "lon": 66.18993611666667
+        },
+        {
+            "name": "MALCU",
+            "lat": 18.435163883333335,
+            "lon": 66.27741943333334
+        },
+        {
+            "name": "SJU",
+            "lat": 18.446280566666665,
+            "lon": 65.98950833333333
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "MALCU": "MALCU AT OR ABOVE 2300",
+                "FIRPE": "FIRPE 1600 RNW 09 TRK 095 UNTIL 410 TURN LEFT DIRECT",
+                "CORAF": "OVERFLY CORAF AT OR ABOVE 3000 HOLD AT CORAF RIGHT TURN INBOUNDCOURSE 129 LEGDIST 4 FAF FIRPE MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "CORAF",
+                    "fixes": {
+                        "CORAF": "CORAF"
+                    }
+                },
+                {
+                    "name": "SJU",
+                    "fixes": {
+                        "SJU": "SJU",
+                        "MALCU": "MALCU AT OR ABOVE 3000 HOLD AT MALCU LEFT TURN INBOUNDCOURSE 095 ALT 2300 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

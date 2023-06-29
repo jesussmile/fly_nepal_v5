@@ -1,0 +1,123 @@
+{
+    "fixes": [
+        {
+            "name": "ADTOQ",
+            "lat": 70.39980833333334,
+            "lon": 150.72744166666666
+        },
+        {
+            "name": "CECGU",
+            "lat": 70.28847778333333,
+            "lon": 151.16088056666666
+        },
+        {
+            "name": "FIRAV",
+            "lat": 70.31491666666666,
+            "lon": 151.05874443333335
+        },
+        {
+            "name": "OFVIZ",
+            "lat": 70.40441111666667,
+            "lon": 150.23738611666667
+        },
+        {
+            "name": "OMOME",
+            "lat": 70.29966388333334,
+            "lon": 151.41811666666666
+        },
+        {
+            "name": "OOSIK",
+            "lat": 70.43943056666667,
+            "lon": 149.98583056666666
+        },
+        {
+            "name": "ORDDY",
+            "lat": 70.45882778333333,
+            "lon": 150.49405833333333
+        },
+        {
+            "name": "OWWIY",
+            "lat": 70.49327778333334,
+            "lon": 150.35619721666666
+        },
+        {
+            "name": "WAKIP",
+            "lat": 70.37456388333334,
+            "lon": 150.82649721666667
+        },
+        {
+            "name": "YADME",
+            "lat": 70.22861111666667,
+            "lon": 151.39038333333335
+        },
+        {
+            "name": "ZADRO",
+            "lat": 70.21938056666667,
+            "lon": 150.20105
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "YADME": "YADME AT OR ABOVE 1700",
+                "CECGU": "CECGU 1700",
+                "FIRAV": "FIRAV AT OR ABOVE 860 RNW 03 TRK 035 UNTIL 271",
+                "OWWIY": "OVERFLY OWWIY AT OR ABOVE 2000 HOLD AT OWWIY LEFT TURN INBOUNDCOURSE 278 LEGDIST 4 FAF CECGU MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "OOSIK",
+                    "fixes": {
+                        "OOSIK": "OOSIK",
+                        "YADME": "OVERFLY YADME AT OR ABOVE 1700 HOLD AT YADME RIGHT TURN INBOUNDCOURSE 035 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZADRO",
+                    "fixes": {
+                        "ZADRO": "ZADRO",
+                        "YADME": "OVERFLY YADME AT OR ABOVE 1700 HOLD AT YADME RIGHT TURN INBOUNDCOURSE 035 ALT 1700 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "ORDDY": "ORDDY AT OR ABOVE 1700",
+                "ADTOQ": "ADTOQ 1700",
+                "WAKIP": "WAKIP AT OR ABOVE 880 RNW 21 TRK 216 UNTIL 271",
+                "CECGU": "CECGU",
+                "OMOME": "OVERFLY OMOME AT OR ABOVE 1700 HOLD AT OMOME RIGHT TURN INBOUNDCOURSE 285 LEGDIST 4 FAF ADTOQ MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "OOSIK",
+                    "fixes": {
+                        "OOSIK": "OOSIK"
+                    }
+                },
+                {
+                    "name": "ORDDY",
+                    "fixes": {
+                        "ORDDY": "ORDDY RIGHT TURN INBOUNDCOURSE 216 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZADRO",
+                    "fixes": {
+                        "ZADRO": "ZADRO",
+                        "OFVIZ": "OFVIZ AT OR ABOVE 1700"
+                    }
+                }
+            ]
+        }
+    ]
+}

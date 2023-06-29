@@ -1,0 +1,162 @@
+{
+    "fixes": [
+        {
+            "name": "CD01",
+            "lat": 17.97556111666667,
+            "lon": 94.62551388333333
+        },
+        {
+            "name": "CD19",
+            "lat": 18.230183333333333,
+            "lon": 94.539
+        },
+        {
+            "name": "FD01",
+            "lat": 18.023308333333333,
+            "lon": 94.60931111666666
+        },
+        {
+            "name": "FD19",
+            "lat": 18.182447216666667,
+            "lon": 94.55523888333333
+        },
+        {
+            "name": "FF01",
+            "lat": 17.998947216666668,
+            "lon": 94.61757778333333
+        },
+        {
+            "name": "FF19",
+            "lat": 18.209080566666668,
+            "lon": 94.54618056666666
+        },
+        {
+            "name": "MTT",
+            "lat": 18.102880566666666,
+            "lon": 94.58228888333333
+        },
+        {
+            "name": "PI001",
+            "lat": 18.047401333333333,
+            "lon": 94.60124763333333
+        },
+        {
+            "name": "PI002",
+            "lat": 17.983542866666667,
+            "lon": 94.56704048333333
+        },
+        {
+            "name": "PI003",
+            "lat": 17.9443636,
+            "lon": 94.63642505
+        },
+        {
+            "name": "PI004",
+            "lat": 18.158357933333335,
+            "lon": 94.56331813333334
+        },
+        {
+            "name": "PI005",
+            "lat": 18.190882233333333,
+            "lon": 94.4961034
+        },
+        {
+            "name": "PI006",
+            "lat": 18.261382383333334,
+            "lon": 94.52805471666667
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [
+        {
+            "name": "MTT3A",
+            "rnw": "01",
+            "fixes": {
+                "MTT": "MTT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "MTT3B",
+            "rnw": "19",
+            "fixes": {
+                "MTT": "MTT"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD01",
+            "fixes": {
+                "CD01": "CD01 AT OR ABOVE 2000",
+                "FD01": "FD01 1500 RNW 01",
+                "MTT": "OVERFLY MTT TRK 014 UNTIL 7.0 FROM MTT TURN RIGHT DIRECT MTT AT OR ABOVE 2000 FAF FD01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "MTT",
+                    "fixes": {
+                        "MTT": "MTT AT OR ABOVE 2000 TRK 214 UNTIL 8.0 FROM MTT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD19",
+            "fixes": {
+                "CD19": "CD19 AT OR ABOVE 2000",
+                "FD19": "FD19 1500 RNW 19",
+                "MTT": "OVERFLY MTT TRK 194 UNTIL 7.0 FROM MTT TURN RIGHT DIRECT MTT AT OR ABOVE 2000 FAF FD19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "MTT",
+                    "fixes": {
+                        "MTT": "MTT AT OR ABOVE 2000 TRK 034 UNTIL 8.0 FROM MTT"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR01",
+            "fixes": {
+                "FF01": "FF01 2000 RNW 01",
+                "MTT": "OVERFLY MTT TRK 014 UNTIL 7.0 FROM MTT TURN RIGHT DIRECT MTT AT OR ABOVE 2000 FAF FF01 MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "MTT",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR19",
+            "fixes": {
+                "FF19": "FF19 2000 RNW 19",
+                "MTT": "OVERFLY MTT TRK 194 UNTIL 7.0 FROM MTT TURN RIGHT DIRECT MTT AT OR ABOVE 2000 FAF FF19 MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "MTT",
+                    "fixes": {
+                        "PI004": "PI004 AT OR ABOVE 2000 SPEED 210",
+                        "PI005": "OVERFLY PI005 AT OR ABOVE 2000 SPEED 210",
+                        "PI006": "PI006 AT OR ABOVE 2000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "fixes": [
+        {
+            "name": "ADYTA",
+            "lat": 28.420633333333335,
+            "lon": 99.17689443333333
+        },
+        {
+            "name": "AKEES",
+            "lat": 28.480275,
+            "lon": 99.24546388333333
+        },
+        {
+            "name": "BUYAT",
+            "lat": 28.519683333333333,
+            "lon": 99.29083056666667
+        },
+        {
+            "name": "CISKU",
+            "lat": 28.589944433333333,
+            "lon": 99.37184166666667
+        },
+        {
+            "name": "COT",
+            "lat": 28.462016666666667,
+            "lon": 99.11854443333333
+        },
+        {
+            "name": "FOSIM",
+            "lat": 28.320497216666666,
+            "lon": 99.06202221666666
+        },
+        {
+            "name": "MAHLA",
+            "lat": 28.458522216666665,
+            "lon": 99.21300556666667
+        },
+        {
+            "name": "NESBE",
+            "lat": 28.390888883333332,
+            "lon": 99.14273888333334
+        },
+        {
+            "name": "PI001",
+            "lat": 28.467084783333334,
+            "lon": 99.05244053333334
+        },
+        {
+            "name": "PI002",
+            "lat": 28.521974583333332,
+            "lon": 99.00001091666667
+        },
+        {
+            "name": "PI003",
+            "lat": 28.476412183333334,
+            "lon": 98.92965938333333
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV13",
+            "fixes": {
+                "CISKU": "CISKU AT OR ABOVE 2600",
+                "BUYAT": "BUYAT 2100",
+                "AKEES": "AKEES AT OR ABOVE 1020 RNW 13 TRK 129 UNTIL 724",
+                "FOSIM": "OVERFLY FOSIM AT OR ABOVE 2600 HOLD AT FOSIM LEFT TURN INBOUNDCOURSE 309 LEGDIST 4 FAF BUYAT MAP RNW 13"
+            },
+            "transitions": [
+                {
+                    "name": "CISKU",
+                    "fixes": {
+                        "CISKU": "CISKU RIGHT TURN INBOUNDCOURSE 128 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV31",
+            "fixes": {
+                "FOSIM": "FOSIM AT OR ABOVE 2600",
+                "NESBE": "NESBE 2100",
+                "ADYTA": "ADYTA AT OR ABOVE 1280 RNW 31 TRK 309 UNTIL 714",
+                "CISKU": "OVERFLY CISKU AT OR ABOVE 2600 HOLD AT CISKU RIGHT TURN INBOUNDCOURSE 128 LEGDIST 4 FAF NESBE MAP RNW 31"
+            },
+            "transitions": [
+                {
+                    "name": "FOSIM",
+                    "fixes": {
+                        "FOSIM": "FOSIM LEFT TURN INBOUNDCOURSE 309 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA13",
+            "fixes": {
+                "COT": "COT 1500 COT AT OR ABOVE 2100 HOLD AT COT RIGHT TURN INBOUNDCOURSE 259 LEGTIME 1 FAF COT MAP MAHLA",
+                "MAHLA": "MAHLA 1120 RNW 13 TRK 259 UNTIL 1120 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "COT",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA31",
+            "fixes": {
+                "COT": "COT 1500 COT AT OR ABOVE 2100 HOLD AT COT RIGHT TURN INBOUNDCOURSE 259 LEGTIME 1 FAF COT MAP MAHLA",
+                "MAHLA": "MAHLA 1120 RNW 31 TRK 259 UNTIL 1120 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "COT",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 2100 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2100 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2100 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

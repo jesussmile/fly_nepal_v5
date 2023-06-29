@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "AHQNB",
+            "lat": 41.23916943333333,
+            "lon": 96.59836111666667
+        },
+        {
+            "name": "CEGOP",
+            "lat": 41.190986116666664,
+            "lon": 96.62368888333333
+        },
+        {
+            "name": "EFAGU",
+            "lat": 41.32361388333333,
+            "lon": 96.54541943333334
+        },
+        {
+            "name": "FAPJU",
+            "lat": 41.416505566666665,
+            "lon": 96.49039166666667
+        },
+        {
+            "name": "FF20",
+            "lat": 41.32399721666667,
+            "lon": 96.52802221666667
+        },
+        {
+            "name": "FOLIC",
+            "lat": 41.27743888333333,
+            "lon": 96.57270833333334
+        },
+        {
+            "name": "IBHEN",
+            "lat": 41.63003056666667,
+            "lon": 96.68230833333334
+        },
+        {
+            "name": "KENAR",
+            "lat": 41.458961116666664,
+            "lon": 96.32938888333334
+        },
+        {
+            "name": "OLU",
+            "lat": 41.45003056666667,
+            "lon": 97.34081943333334
+        },
+        {
+            "name": "PI001",
+            "lat": 41.28916395,
+            "lon": 96.55837663333334
+        },
+        {
+            "name": "PI002",
+            "lat": 41.3586995,
+            "lon": 96.58147551666667
+        },
+        {
+            "name": "PI003",
+            "lat": 41.38197411666667,
+            "lon": 96.48395696666667
+        },
+        {
+            "name": "YUTAN",
+            "lat": 41.117333333333335,
+            "lon": 96.52704443333333
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 13",
+        "RNW 20",
+        "RNW 31"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB20",
+            "fixes": {
+                "FF20": "FF20 3000 RNW 20",
+                "AHQNB": "AHQNB AT OR ABOVE 1624 HOLD AT AHQNB RIGHT TURN INBOUNDCOURSE 205 ALT 3500 LEGTIME 1 FAF FF20 MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "OLU",
+                    "fixes": {
+                        "OLU": "OLU",
+                        "AHQNB": "AHQNB AT OR ABOVE 3500",
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "FAPJU": "FAPJU AT OR ABOVE 2900",
+                "EFAGU": "EFAGU 2900",
+                "FOLIC": "FOLIC AT OR ABOVE 1900 RNW 20",
+                "CEGOP": "CEGOP",
+                "YUTAN": "OVERFLY YUTAN AT OR ABOVE 4000 HOLD AT YUTAN RIGHT TURN INBOUNDCOURSE 129 ALT 4000 LEGDIST 4 FAF EFAGU MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "IBHEN",
+                    "fixes": {
+                        "IBHEN": "IBHEN"
+                    }
+                },
+                {
+                    "name": "KENAR",
+                    "fixes": {
+                        "KENAR": "KENAR"
+                    }
+                }
+            ]
+        }
+    ]
+}

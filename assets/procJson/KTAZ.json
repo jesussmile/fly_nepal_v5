@@ -1,0 +1,113 @@
+{
+    "fixes": [
+        {
+            "name": "ALQOV",
+            "lat": 39.72507221666667,
+            "lon": 89.222325
+        },
+        {
+            "name": "AXC",
+            "lat": 39.73752221666667,
+            "lon": 88.85643056666666
+        },
+        {
+            "name": "AXFIC",
+            "lat": 39.757280566666665,
+            "lon": 89.42946388333333
+        },
+        {
+            "name": "CEBHY",
+            "lat": 39.724147216666665,
+            "lon": 89.330325
+        },
+        {
+            "name": "DAYRE",
+            "lat": 39.302708333333335,
+            "lon": 89.32396666666666
+        },
+        {
+            "name": "EHAXO",
+            "lat": 39.62274443333333,
+            "lon": 89.32878611666666
+        },
+        {
+            "name": "JEPUB",
+            "lat": 39.44190556666667,
+            "lon": 89.32605833333334
+        },
+        {
+            "name": "SPI",
+            "lat": 39.839733333333335,
+            "lon": 89.67773611666667
+        },
+        {
+            "name": "VLA",
+            "lat": 39.09383888333333,
+            "lon": 89.16224443333333
+        }
+    ],
+    "rnws": [
+        "RNW 09L",
+        "RNW 09R",
+        "RNW 18",
+        "RNW 27L",
+        "RNW 27R",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "CEBHY": "CEBHY AT OR ABOVE 2300",
+                "EHAXO": "EHAXO 2300 RNW 18 TRK 179 UNTIL 1022",
+                "DAYRE": "OVERFLY DAYRE AT OR ABOVE 2500 HOLD AT DAYRE RIGHT TURN INBOUNDCOURSE 359 LEGDIST 4 FAF EHAXO MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "AXC",
+                    "fixes": {
+                        "AXC": "AXC",
+                        "ALQOV": "ALQOV AT OR ABOVE 4000"
+                    }
+                },
+                {
+                    "name": "CEBHY",
+                    "fixes": {
+                        "CEBHY": "CEBHY LEFT TURN INBOUNDCOURSE 179 ALT 2300 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SPI",
+                    "fixes": {
+                        "SPI": "SPI",
+                        "AXFIC": "AXFIC AT OR ABOVE 4000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "DAYRE": "DAYRE AT OR ABOVE 2500",
+                "JEPUB": "JEPUB 2300 RNW 36 TRK 359 UNTIL 1022",
+                "CEBHY": "OVERFLY CEBHY AT OR ABOVE 2300 HOLD AT CEBHY LEFT TURN INBOUNDCOURSE 179 LEGDIST 4 FAF JEPUB MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "DAYRE",
+                    "fixes": {
+                        "DAYRE": "DAYRE RIGHT TURN INBOUNDCOURSE 359 ALT 2500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "VLA",
+                    "fixes": {
+                        "VLA": "VLA"
+                    }
+                }
+            ]
+        }
+    ]
+}

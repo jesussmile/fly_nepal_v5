@@ -1,0 +1,102 @@
+{
+    "fixes": [
+        {
+            "name": "AFLAT",
+            "lat": 38.025413883333336,
+            "lon": 78.29445
+        },
+        {
+            "name": "BUTAY",
+            "lat": 38.285863883333334,
+            "lon": 78.03720556666667
+        },
+        {
+            "name": "DROPN",
+            "lat": 38.050958333333334,
+            "lon": 78.39481666666667
+        },
+        {
+            "name": "HAKON",
+            "lat": 38.220136116666666,
+            "lon": 78.10234721666667
+        },
+        {
+            "name": "HOODE",
+            "lat": 38.45599721666667,
+            "lon": 78.18046388333333
+        },
+        {
+            "name": "KALEC",
+            "lat": 38.35655833333333,
+            "lon": 78.093425
+        },
+        {
+            "name": "MAZKO",
+            "lat": 38.261997216666664,
+            "lon": 77.94028611666667
+        },
+        {
+            "name": "OSABE",
+            "lat": 38.091219433333336,
+            "lon": 78.229675
+        },
+        {
+            "name": "TURCO",
+            "lat": 37.90393888333333,
+            "lon": 78.31185556666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA05",
+            "fixes": {
+                "AFLAT": "AFLAT AT OR ABOVE 3000",
+                "OSABE": "OSABE 2000 RNW 05 TRK 048 UNTIL 854 TURN RIGHT DIRECT",
+                "TURCO": "OVERFLY TURCO AT OR ABOVE 3300 HOLD AT TURCO RIGHT TURN INBOUNDCOURSE 016 LEGDIST 4 FAF OSABE MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "DROPN",
+                    "fixes": {
+                        "DROPN": "DROPN"
+                    }
+                },
+                {
+                    "name": "TURCO",
+                    "fixes": {
+                        "TURCO": "TURCO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB23",
+            "fixes": {
+                "BUTAY": "BUTAY AT OR ABOVE 2600",
+                "HAKON": "HAKON 2000 RNW 23 TRK 228 UNTIL 854 TURN LEFT DIRECT",
+                "MAZKO": "OVERFLY MAZKO AT OR ABOVE 3000 HOLD AT MAZKO RIGHT TURN INBOUNDCOURSE 297 LEGDIST 4 FAF HAKON MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "HOODE",
+                    "fixes": {
+                        "HOODE": "HOODE",
+                        "KALEC": "KALEC AT OR ABOVE 3200"
+                    }
+                },
+                {
+                    "name": "MAZKO",
+                    "fixes": {
+                        "MAZKO": "MAZKO"
+                    }
+                }
+            ]
+        }
+    ]
+}

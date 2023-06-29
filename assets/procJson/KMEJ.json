@@ -1,0 +1,84 @@
+{
+    "fixes": [
+        {
+            "name": "DIZTY",
+            "lat": 37.36979721666667,
+            "lon": 100.363125
+        },
+        {
+            "name": "FLACK",
+            "lat": 37.24477778333333,
+            "lon": 100.35866943333333
+        },
+        {
+            "name": "INDOW",
+            "lat": 37.45090278333333,
+            "lon": 100.36960278333333
+        },
+        {
+            "name": "KASBE",
+            "lat": 37.4602,
+            "lon": 100.47491388333333
+        },
+        {
+            "name": "LATOC",
+            "lat": 37.076025,
+            "lon": 100.33976943333333
+        },
+        {
+            "name": "MOCSY",
+            "lat": 37.18926666666667,
+            "lon": 100.34875278333334
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 17",
+        "RNW 26",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "INDOW": "INDOW AT OR ABOVE 4300",
+                "DIZTY": "DIZTY 4200 RNW 17 TRK 168 UNTIL 2927",
+                "LATOC": "OVERFLY LATOC AT OR ABOVE 4300 HOLD AT LATOC RIGHT TURN INBOUNDCOURSE 348 LEGDIST 5 FAF DIZTY MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "FLACK",
+                    "fixes": {
+                        "FLACK": "FLACK",
+                        "INDOW": "OVERFLY INDOW AT OR ABOVE 4300 HOLD AT INDOW RIGHT TURN INBOUNDCOURSE 168 ALT 4300 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "KASBE",
+                    "fixes": {
+                        "KASBE": "KASBE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "LATOC": "LATOC AT OR ABOVE 4300",
+                "MOCSY": "MOCSY 4100 RNW 35 TRK 348 UNTIL 2927",
+                "INDOW": "OVERFLY INDOW AT OR ABOVE 4300 HOLD AT INDOW RIGHT TURN INBOUNDCOURSE 168 LEGDIST 5 FAF MOCSY MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "FLACK",
+                    "fixes": {
+                        "FLACK": "FLACK",
+                        "LATOC": "OVERFLY LATOC AT OR ABOVE 4300 HOLD AT LATOC RIGHT TURN INBOUNDCOURSE 348 ALT 4300 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,171 @@
+{
+    "fixes": [
+        {
+            "name": "BOCOS",
+            "lat": 39.174402783333335,
+            "lon": 91.71176388333333
+        },
+        {
+            "name": "FOVUR",
+            "lat": 39.31321388333333,
+            "lon": 91.63303056666666
+        },
+        {
+            "name": "HAPTO",
+            "lat": 39.23711943333333,
+            "lon": 91.58908611666666
+        },
+        {
+            "name": "HLV",
+            "lat": 39.11354166666667,
+            "lon": 92.12823333333333
+        },
+        {
+            "name": "JEROB",
+            "lat": 39.161008333333335,
+            "lon": 91.54523611666667
+        },
+        {
+            "name": "MIRIE",
+            "lat": 39.1951,
+            "lon": 91.70927778333333
+        },
+        {
+            "name": "OGULE",
+            "lat": 39.018975,
+            "lon": 92.08616388333333
+        },
+        {
+            "name": "PI001",
+            "lat": 39.189477966666665,
+            "lon": 91.63906546666666
+        },
+        {
+            "name": "PI002",
+            "lat": 39.25153398333333,
+            "lon": 91.59279163333333
+        },
+        {
+            "name": "PI003",
+            "lat": 39.21735483333333,
+            "lon": 91.50397151666667
+        },
+        {
+            "name": "SERRO",
+            "lat": 39.13772221666667,
+            "lon": 91.87259166666666
+        },
+        {
+            "name": "TABCO",
+            "lat": 39.07758333333334,
+            "lon": 92.04281666666667
+        },
+        {
+            "name": "WOPES",
+            "lat": 39.119138883333335,
+            "lon": 91.92528056666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 18",
+        "RNW 24",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD24",
+            "fixes": {
+                "BOCOS": "BOCOS 2300 RNW 24 TRK 253 UNTIL 1223 TURN LEFT DIRECT BOCOS AT OR ABOVE 2300 HOLD AT BOCOS RIGHT TURN INBOUNDCOURSE 253 LEGTIME 1 FAF BOCOS MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "HLV",
+                    "fixes": {
+                        "HLV": "HLV",
+                        "BOCOS": "BOCOS AT OR ABOVE 2900",
+                        "PI001": "PI001 AT OR ABOVE 2300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 2300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 2300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC24",
+            "fixes": {
+                "HAPTO": "HAPTO AT OR ABOVE 3000",
+                "MIRIE": "MIRIE 2500 RNW 24 TRK 244 UNTIL 1300",
+                "HLV": "HLV AT OR ABOVE 3000 HOLD AT HLV RIGHT TURN INBOUNDCOURSE 067 LEGTIME 1 FAF MIRIE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "HLV",
+                    "fixes": {
+                        "HLV": "HLV",
+                        "HAPTO": "HAPTO AT OR ABOVE 3000 HOLD AT HAPTO RIGHT TURN INBOUNDCOURSE 244 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "TABCO": "TABCO AT OR ABOVE 3000",
+                "WOPES": "WOPES 2500",
+                "SERRO": "SERRO AT OR ABOVE 1640 RNW 06 TRK 064 UNTIL 1072",
+                "HAPTO": "OVERFLY HAPTO AT OR ABOVE 3000 HOLD AT HAPTO RIGHT TURN INBOUNDCOURSE 244 LEGDIST 4 FAF WOPES MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "HLV",
+                    "fixes": {
+                        "HLV": "HLV SPEED 230"
+                    }
+                },
+                {
+                    "name": "OGULE",
+                    "fixes": {
+                        "OGULE": "OGULE SPEED 220"
+                    }
+                },
+                {
+                    "name": "TABCO",
+                    "fixes": {
+                        "TABCO": "TABCO RIGHT TURN INBOUNDCOURSE 064 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "HAPTO": "HAPTO AT OR ABOVE 3000",
+                "MIRIE": "MIRIE 2500 RNW 24 TRK 244 UNTIL 1126",
+                "TABCO": "OVERFLY TABCO AT OR ABOVE 3000 HOLD AT TABCO RIGHT TURN INBOUNDCOURSE 064 LEGDIST 5 FAF MIRIE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "FOVUR",
+                    "fixes": {
+                        "FOVUR": "FOVUR AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "HAPTO",
+                    "fixes": {
+                        "HAPTO": "HAPTO RIGHT TURN INBOUNDCOURSE 244 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JEROB",
+                    "fixes": {
+                        "JEROB": "JEROB AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

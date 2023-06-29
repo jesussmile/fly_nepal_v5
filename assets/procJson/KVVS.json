@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "CFFGW",
+            "lat": 39.806722216666664,
+            "lon": 79.82911388333333
+        },
+        {
+            "name": "IHD",
+            "lat": 39.974241666666664,
+            "lon": 79.35836666666667
+        },
+        {
+            "name": "MGW",
+            "lat": 39.55671388333333,
+            "lon": 79.86041111666667
+        },
+        {
+            "name": "PI001",
+            "lat": 39.83873403333333,
+            "lon": 79.79455166666666
+        },
+        {
+            "name": "PI002",
+            "lat": 39.83369761666667,
+            "lon": 79.88765163333333
+        },
+        {
+            "name": "PI003",
+            "lat": 39.756897566666666,
+            "lon": 79.88694333333333
+        },
+        {
+            "name": "VVNB",
+            "lat": 39.88276943333334,
+            "lon": 79.74471111666666
+        },
+        {
+            "name": "WIGEX",
+            "lat": 39.88363056666667,
+            "lon": 79.74374721666666
+        },
+        {
+            "name": "WITUV",
+            "lat": 39.93678056666667,
+            "lon": 79.79284721666667
+        },
+        {
+            "name": "ZETGA",
+            "lat": 39.83615833333333,
+            "lon": 79.796475
+        },
+        {
+            "name": "ZOLDI",
+            "lat": 39.92004443333333,
+            "lon": 79.70323888333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 14",
+        "RNW 23",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC05",
+            "fixes": {
+                "CFFGW": "CFFGW AT OR ABOVE 4300",
+                "VVNB": "VVNB 3100 RNW 05 TRK 049 UNTIL 2600 TURN LEFT DIRECT VVNB AT OR ABOVE 4300 HOLD AT VVNB LEFT TURN INBOUNDCOURSE 049 LEGTIME 1 FAF VVNB MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "IHD",
+                    "fixes": {
+                        "IHD": "IHD",
+                        "VVNB": "VVNB AT OR ABOVE 4600",
+                        "PI001": "PI001 AT OR ABOVE 4300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "MGW",
+                    "fixes": {
+                        "MGW": "MGW",
+                        "VVNB": "VVNB AT OR ABOVE 4400",
+                        "PI001": "PI001 AT OR ABOVE 4300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 4300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 4300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "ZETGA": "ZETGA AT OR ABOVE 4000 OVERFLY ZETGA AT OR ABOVE 4000 HOLD AT ZETGA LEFT TURN INBOUNDCOURSE 049 LEGDIST 4 FAF WIGEX MAP RNW 05",
+                "WIGEX": "WIGEX 3100",
+                "ZOLDI": "ZOLDI AT OR ABOVE 2180 RNW 05 TRK 049 UNTIL 2500 TURN LEFT DIRECT",
+                "WITUV": "WITUV"
+            },
+            "transitions": [
+                {
+                    "name": "IHD",
+                    "fixes": {
+                        "IHD": "IHD",
+                        "ZETGA": "OVERFLY ZETGA AT OR ABOVE 4600 HOLD AT ZETGA LEFT TURN INBOUNDCOURSE 049 ALT 4000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "MGW",
+                    "fixes": {
+                        "MGW": "MGW"
+                    }
+                }
+            ]
+        }
+    ]
+}

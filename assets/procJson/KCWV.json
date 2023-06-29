@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "AHIDO",
+            "lat": 32.199122216666666,
+            "lon": 81.6292
+        },
+        {
+            "name": "BUPAW",
+            "lat": 32.19691666666667,
+            "lon": 81.76273888333333
+        },
+        {
+            "name": "HIDRU",
+            "lat": 32.193927783333336,
+            "lon": 81.93163333333334
+        },
+        {
+            "name": "JURSA",
+            "lat": 32.196241666666666,
+            "lon": 81.80201388333333
+        },
+        {
+            "name": "LUHQY",
+            "lat": 32.19048333333333,
+            "lon": 82.11201666666666
+        },
+        {
+            "name": "OCPOV",
+            "lat": 32.19305833333333,
+            "lon": 81.97849721666667
+        }
+    ],
+    "rnws": [
+        "RNW 10",
+        "RNW 28"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV10",
+            "fixes": {
+                "LUHQY": "LUHQY AT OR ABOVE 2600",
+                "OCPOV": "OCPOV 1800",
+                "HIDRU": "HIDRU AT OR ABOVE 1040 RNW 10 TRK 096 UNTIL 500",
+                "AHIDO": "OVERFLY AHIDO AT OR ABOVE 2600 HOLD AT AHIDO RIGHT TURN INBOUNDCOURSE 276 LEGDIST 4 FAF OCPOV MAP RNW 10"
+            },
+            "transitions": [
+                {
+                    "name": "LUHQY",
+                    "fixes": {
+                        "LUHQY": "LUHQY LEFT TURN INBOUNDCOURSE 096 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV28",
+            "fixes": {
+                "AHIDO": "AHIDO AT OR ABOVE 2600",
+                "BUPAW": "BUPAW 1800",
+                "JURSA": "JURSA AT OR ABOVE 1140 RNW 28 TRK 276 UNTIL 386",
+                "LUHQY": "OVERFLY LUHQY AT OR ABOVE 2600 HOLD AT LUHQY LEFT TURN INBOUNDCOURSE 096 LEGDIST 4 FAF BUPAW MAP RNW 28"
+            },
+            "transitions": [
+                {
+                    "name": "AHIDO",
+                    "fixes": {
+                        "AHIDO": "AHIDO RIGHT TURN INBOUNDCOURSE 276 ALT 2600 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

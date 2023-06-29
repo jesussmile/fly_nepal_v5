@@ -1,0 +1,81 @@
+{
+    "fixes": [
+        {
+            "name": "ALQAZ",
+            "lat": 40.525283333333334,
+            "lon": 86.76141388333333
+        },
+        {
+            "name": "CIFAY",
+            "lat": 40.620055566666665,
+            "lon": 86.76416666666667
+        },
+        {
+            "name": "DENAM",
+            "lat": 41.15962221666667,
+            "lon": 86.73926388333334
+        },
+        {
+            "name": "UNFAV",
+            "lat": 40.799852783333336,
+            "lon": 86.76941388333333
+        },
+        {
+            "name": "UVOKY",
+            "lat": 40.89728611666666,
+            "lon": 86.77221666666667
+        },
+        {
+            "name": "ZILIX",
+            "lat": 40.65670278333333,
+            "lon": 86.76523333333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "UVOKY": "UVOKY AT OR ABOVE 3000",
+                "UNFAV": "UNFAV 2300 RNW 18 TRK 182 UNTIL 1079",
+                "ALQAZ": "OVERFLY ALQAZ AT OR ABOVE 3000 HOLD AT ALQAZ RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4 FAF UNFAV MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "DENAM",
+                    "fixes": {
+                        "DENAM": "DENAM"
+                    }
+                },
+                {
+                    "name": "UVOKY",
+                    "fixes": {
+                        "UVOKY": "UVOKY RIGHT TURN INBOUNDCOURSE 182 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ALQAZ": "ALQAZ AT OR ABOVE 3000",
+                "CIFAY": "CIFAY 2300",
+                "ZILIX": "ZILIX AT OR ABOVE 1600 RNW 36 TRK 002 UNTIL 1040",
+                "UVOKY": "OVERFLY UVOKY AT OR ABOVE 3000 HOLD AT UVOKY RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4 FAF CIFAY MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ALQAZ",
+                    "fixes": {
+                        "ALQAZ": "ALQAZ RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

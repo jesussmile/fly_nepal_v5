@@ -1,0 +1,131 @@
+{
+    "fixes": [
+        {
+            "name": "AGJ",
+            "lat": 31.185505566666667,
+            "lon": 98.14185833333333
+        },
+        {
+            "name": "CUDEG",
+            "lat": 31.01864721666667,
+            "lon": 98.17928333333333
+        },
+        {
+            "name": "GUBVE",
+            "lat": 31.166358333333335,
+            "lon": 98.20732221666667
+        },
+        {
+            "name": "HUGOD",
+            "lat": 30.903158333333334,
+            "lon": 98.15741666666666
+        },
+        {
+            "name": "JODEB",
+            "lat": 30.916563883333332,
+            "lon": 98.06180556666666
+        },
+        {
+            "name": "LLO",
+            "lat": 30.796341666666667,
+            "lon": 98.78738888333334
+        },
+        {
+            "name": "MAGHY",
+            "lat": 31.110027783333333,
+            "lon": 98.19328056666667
+        },
+        {
+            "name": "NOTAW",
+            "lat": 30.889683333333334,
+            "lon": 98.25300278333333
+        },
+        {
+            "name": "PI001",
+            "lat": 31.234422666666667,
+            "lon": 98.10470201666666
+        },
+        {
+            "name": "PI002",
+            "lat": 31.304522066666667,
+            "lon": 98.12214118333333
+        },
+        {
+            "name": "PI003",
+            "lat": 31.325240333333333,
+            "lon": 98.03559525
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "HUGOD": "HUGOD AT OR ABOVE 3200",
+                "CUDEG": "CUDEG 2800 RNW 34 TRK 343 UNTIL 1614",
+                "GUBVE": "GUBVE",
+                "AGJ": "OVERFLY AGJ AT OR ABOVE 3000 HOLD AT AGJ RIGHT TURN INBOUNDCOURSE 190 LEGDIST 4 FAF CUDEG MAP RNW 34"
+            },
+            "transitions": [
+                {
+                    "name": "HUGOD",
+                    "fixes": {
+                        "HUGOD": "HUGOD RIGHT TURN INBOUNDCOURSE 343 ALT 3200 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "JODEB",
+                    "fixes": {
+                        "JODEB": "JODEB"
+                    }
+                },
+                {
+                    "name": "LLO",
+                    "fixes": {
+                        "LLO": "LLO",
+                        "NOTAW": "NOTAW AT OR ABOVE 3200"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA16",
+            "fixes": {
+                "AGJ": "AGJ 3000 AGJ AT OR ABOVE 3000 HOLD AT AGJ RIGHT TURN INBOUNDCOURSE 194 LEGTIME 1 FAF AGJ MAP MAGHY",
+                "MAGHY": "MAGHY 1880 RNW 16 TRK 205 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AGJ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORA34",
+            "fixes": {
+                "AGJ": "AGJ 3000 AGJ AT OR ABOVE 3000 HOLD AT AGJ RIGHT TURN INBOUNDCOURSE 194 LEGTIME 1 FAF AGJ MAP MAGHY",
+                "MAGHY": "MAGHY 1880 RNW 34 TRK 205 UNTIL 2000 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "AGJ",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 3000 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 3000 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 3000 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

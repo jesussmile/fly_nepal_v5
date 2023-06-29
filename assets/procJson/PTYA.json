@@ -1,0 +1,222 @@
+{
+    "fixes": [
+        {
+            "name": "ADABE",
+            "lat": 9.596925,
+            "lon": 138.24730833333334
+        },
+        {
+            "name": "CABRI",
+            "lat": 9.474941666666666,
+            "lon": 137.995575
+        },
+        {
+            "name": "CECAC",
+            "lat": 9.544105566666667,
+            "lon": 138.16120556666667
+        },
+        {
+            "name": "FF25",
+            "lat": 9.552236116666666,
+            "lon": 138.17458333333335
+        },
+        {
+            "name": "HASEN",
+            "lat": 9.523044433333334,
+            "lon": 137.88793888333333
+        },
+        {
+            "name": "ITIFO",
+            "lat": 9.443588883333334,
+            "lon": 137.91451943333334
+        },
+        {
+            "name": "IYADY",
+            "lat": 9.392069433333333,
+            "lon": 137.84806111666666
+        },
+        {
+            "name": "KEENG",
+            "lat": 9.527322216666667,
+            "lon": 138.16885556666668
+        },
+        {
+            "name": "KULVY",
+            "lat": 9.470486116666667,
+            "lon": 137.99615
+        },
+        {
+            "name": "NIVZY",
+            "lat": 9.760055566666667,
+            "lon": 138.52120833333333
+        },
+        {
+            "name": "OLGEE",
+            "lat": 9.493786116666667,
+            "lon": 138.06696666666667
+        },
+        {
+            "name": "OMOCO",
+            "lat": 9.554163883333333,
+            "lon": 138.250525
+        },
+        {
+            "name": "PI001",
+            "lat": 9.530372266666667,
+            "lon": 138.13864513333334
+        },
+        {
+            "name": "PI002",
+            "lat": 9.514243633333333,
+            "lon": 138.20944891666667
+        },
+        {
+            "name": "PI003",
+            "lat": 9.5877545,
+            "lon": 138.2318269
+        },
+        {
+            "name": "RAZEL",
+            "lat": 9.447725,
+            "lon": 137.892575
+        },
+        {
+            "name": "UGEVY",
+            "lat": 9.605116666666667,
+            "lon": 138.31745556666667
+        },
+        {
+            "name": "USODY",
+            "lat": 9.241713883333333,
+            "lon": 137.65431111666666
+        },
+        {
+            "name": "YPNB",
+            "lat": 9.499463883333334,
+            "lon": 138.08848333333333
+        },
+        {
+            "name": "ZOFZO",
+            "lat": 9.474680566666667,
+            "lon": 138.27701666666667
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 25"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB25",
+            "fixes": {
+                "FF25": "FF25 1800 RNW 25",
+                "YPNB": "OVERFLY YPNB TRK 237 UNTIL 1800 TURN LEFT DIRECT YPNB HOLD AT YPNB RIGHT TURN INBOUNDCOURSE 057 LEGTIME 1 FAF FF25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "YP",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD07",
+            "fixes": {
+                "RAZEL": "RAZEL AT OR ABOVE 1700 RAZEL RAZEL AT OR ABOVE 1700 HOLD AT RAZEL RIGHT TURN INBOUNDCOURSE 074 LEGTIME 1 FAF CABRI MAP OLGEE",
+                "CABRI": "CABRI 1700",
+                "OLGEE": "OLGEE 301 RNW 07 TRK 074 UNTIL 600 TURN RIGHT HDG 284 INTERCEPT RADIAL 254 TO"
+            },
+            "transitions": [
+                {
+                    "name": "YP",
+                    "fixes": {
+                        "YPNB": "YPNB",
+                        "RAZEL": "RAZEL AT OR ABOVE 1700 HOLD AT RAZEL RIGHT TURN INBOUNDCOURSE 074 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBD25",
+            "fixes": {
+                "ADABE": "ADABE AT OR ABOVE 1700 ADABE ADABE AT OR ABOVE 1800 HOLD AT ADABE RIGHT TURN INBOUNDCOURSE 237 LEGTIME 1 FAF CECAC MAP RNW 25",
+                "CECAC": "CECAC 1700 RNW 25",
+                "YPNB": "OVERFLY YPNB TURN LEFT HDG 027 INTERCEPT RADIAL 057 TO"
+            },
+            "transitions": [
+                {
+                    "name": "ADABE",
+                    "fixes": {
+                        "ADABE": "ADABE RIGHT TURN INBOUNDCOURSE 237 ALT 1700 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV07",
+            "fixes": {
+                "ITIFO": "ITIFO AT OR ABOVE 1700",
+                "KULVY": "KULVY 1700 RNW 07",
+                "OMOCO": "OVERFLY OMOCO AT OR ABOVE 1700 HOLD AT OMOCO LEFT TURN INBOUNDCOURSE 251 LEGDIST 4 FAF KULVY MAP RNW 07"
+            },
+            "transitions": [
+                {
+                    "name": "ITIFO",
+                    "fixes": {
+                        "ITIFO": "ITIFO RIGHT TURN INBOUNDCOURSE 071 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NIVZY",
+                    "fixes": {
+                        "NIVZY": "NIVZY",
+                        "HASEN": "HASEN AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "USODY",
+                    "fixes": {
+                        "USODY": "USODY",
+                        "IYADY": "IYADY AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "OMOCO": "OMOCO AT OR ABOVE 1700",
+                "KEENG": "KEENG 1700 RNW 25",
+                "ITIFO": "OVERFLY ITIFO AT OR ABOVE 1700 HOLD AT ITIFO RIGHT TURN INBOUNDCOURSE 071 LEGDIST 4 FAF KEENG MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "NIVZY",
+                    "fixes": {
+                        "NIVZY": "NIVZY",
+                        "UGEVY": "UGEVY AT OR ABOVE 2000"
+                    }
+                },
+                {
+                    "name": "OMOCO",
+                    "fixes": {
+                        "OMOCO": "OMOCO LEFT TURN INBOUNDCOURSE 251 ALT 1700 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "USODY",
+                    "fixes": {
+                        "USODY": "USODY",
+                        "ZOFZO": "ZOFZO AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

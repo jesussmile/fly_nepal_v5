@@ -1,0 +1,70 @@
+{
+    "fixes": [
+        {
+            "name": "GYPSI",
+            "lat": 34.842413883333336,
+            "lon": 88.16087221666666
+        },
+        {
+            "name": "HAAIL",
+            "lat": 34.724980566666666,
+            "lon": 88.16974443333334
+        },
+        {
+            "name": "MAJIN",
+            "lat": 34.99236666666667,
+            "lon": 88.14950833333333
+        },
+        {
+            "name": "RATSY",
+            "lat": 34.682158333333334,
+            "lon": 88.17297221666666
+        },
+        {
+            "name": "ZZAPP",
+            "lat": 34.53219721666667,
+            "lon": 88.18425
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "ZZAPP": "ZZAPP AT OR ABOVE 3000",
+                "RATSY": "RATSY 2300",
+                "HAAIL": "HAAIL AT OR ABOVE 1480 RNW 01 TRK 007 UNTIL 1026",
+                "MAJIN": "OVERFLY MAJIN AT OR ABOVE 3000 HOLD AT MAJIN RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4 FAF RATSY MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "ZZAPP",
+                    "fixes": {
+                        "ZZAPP": "ZZAPP RIGHT TURN INBOUNDCOURSE 007 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "MAJIN": "MAJIN AT OR ABOVE 3000",
+                "GYPSI": "GYPSI 2300 RNW 19 TRK 187 UNTIL 1026",
+                "ZZAPP": "OVERFLY ZZAPP AT OR ABOVE 3000 HOLD AT ZZAPP RIGHT TURN INBOUNDCOURSE 007 LEGDIST 4 FAF GYPSI MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "MAJIN",
+                    "fixes": {
+                        "MAJIN": "MAJIN RIGHT TURN INBOUNDCOURSE 187 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

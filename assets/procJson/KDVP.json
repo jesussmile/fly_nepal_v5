@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "APEWO",
+            "lat": 43.89699721666667,
+            "lon": 95.78261111666667
+        },
+        {
+            "name": "IZAWE",
+            "lat": 44.077030566666664,
+            "lon": 95.78261111666667
+        },
+        {
+            "name": "JEYZO",
+            "lat": 43.815997216666666,
+            "lon": 95.78261111666667
+        },
+        {
+            "name": "OMEHI",
+            "lat": 44.16043056666667,
+            "lon": 95.78261111666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "OMEHI": "OMEHI AT OR ABOVE 3300",
+                "IZAWE": "IZAWE 3300 RNW 17 TRK 176 UNTIL 2023",
+                "JEYZO": "OVERFLY JEYZO AT OR ABOVE 3400 HOLD AT JEYZO RIGHT TURN INBOUNDCOURSE 356 LEGDIST 4 FAF IZAWE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "OMEHI",
+                    "fixes": {
+                        "OMEHI": "OMEHI RIGHT TURN INBOUNDCOURSE 176 ALT 3300 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "JEYZO": "JEYZO AT OR ABOVE 3400",
+                "APEWO": "APEWO 3300 RNW 35 TRK 356 UNTIL 2023",
+                "OMEHI": "OVERFLY OMEHI AT OR ABOVE 3300 HOLD AT OMEHI RIGHT TURN INBOUNDCOURSE 176 LEGDIST 4 FAF APEWO MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "JEYZO",
+                    "fixes": {
+                        "JEYZO": "JEYZO RIGHT TURN INBOUNDCOURSE 356 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

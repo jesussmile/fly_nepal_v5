@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "CF319",
+            "lat": 27.272088883333332,
+            "lon": 62.454897216666666
+        },
+        {
+            "name": "D139P",
+            "lat": 27.207075,
+            "lon": 62.513641666666665
+        },
+        {
+            "name": "FF319",
+            "lat": 27.337075,
+            "lon": 62.39608333333334
+        },
+        {
+            "name": "LOXOL",
+            "lat": 27.765555566666666,
+            "lon": 60.76055556666667
+        },
+        {
+            "name": "MA319",
+            "lat": 27.402036116666668,
+            "lon": 62.3372
+        },
+        {
+            "name": "SRN35",
+            "lat": 27.559780566666667,
+            "lon": 61.68989166666667
+        },
+        {
+            "name": "SRNNB",
+            "lat": 27.415027783333333,
+            "lon": 62.32541666666667
+        }
+    ],
+    "rnws": [
+        "RNW 13",
+        "RNW 31"
+    ],
+    "sids": [
+        {
+            "name": "LOXO1E",
+            "rnw": "31",
+            "fixes": {
+                "LOXOL": "LOXOL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "LOXO1F",
+            "rnw": "13",
+            "fixes": {
+                "SRNNB": "SRNNB AT OR ABOVE 8000",
+                "LOXOL": "LOXOL"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "LOXO1E",
+            "runway": "RNW 13 RNW 31",
+            "fixes": {
+                "LOXOL": "LOXOL",
+                "SRN35": "SRN35",
+                "SRNNB": "SRNNB"
+            }
+        },
+        {
+            "name": "LOXO1F",
+            "runway": "RNW 31",
+            "fixes": {
+                "LOXOL": "LOXOL",
+                "SRN35": "SRN35",
+                "SRNNB": "SRNNB",
+                "D139P": "D139P"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "NDBDM13",
+            "fixes": {
+                "CF319": "CF319 AT OR ABOVE 6500",
+                "FF319": "FF319 5600",
+                "MA319": "MA319 5080 RNW 13 TRK 300 UNTIL 5200 TURN LEFT TRK 094 INTERCEPT RADIAL 139 TO",
+                "D139P": "D139P D139P 7500 HOLD AT D139P LEFT TURN INBOUNDCOURSE 319 ALT 7500 SPEED 230 LEGTIME 1 FAF FF319 MAP MA319"
+            },
+            "transitions": [
+                {
+                    "name": "D139P",
+                    "fixes": {
+                        "D139P": "D139P AT OR ABOVE 7500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDM31",
+            "fixes": {
+                "CF319": "CF319 AT OR ABOVE 6500",
+                "FF319": "FF319 5600",
+                "MA319": "MA319 5080 RNW 31 TRK 300 UNTIL 5200 TURN LEFT TRK 094 INTERCEPT RADIAL 139 TO",
+                "D139P": "D139P D139P 7500 HOLD AT D139P LEFT TURN INBOUNDCOURSE 319 ALT 7500 SPEED 230 LEGTIME 1 FAF FF319 MAP MA319"
+            },
+            "transitions": [
+                {
+                    "name": "D139P",
+                    "fixes": {
+                        "D139P": "D139P AT OR ABOVE 7500"
+                    }
+                }
+            ]
+        }
+    ]
+}

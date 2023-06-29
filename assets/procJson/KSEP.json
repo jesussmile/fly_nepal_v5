@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "COVON",
+            "lat": 32.092588883333335,
+            "lon": 97.97753888333334
+        },
+        {
+            "name": "CUGOR",
+            "lat": 32.136225,
+            "lon": 98.12222221666667
+        },
+        {
+            "name": "FOLON",
+            "lat": 32.2504,
+            "lon": 98.20231111666666
+        },
+        {
+            "name": "HAVUS",
+            "lat": 32.293022216666664,
+            "lon": 98.232275
+        },
+        {
+            "name": "HOVIR",
+            "lat": 32.04996943333333,
+            "lon": 98.06187778333333
+        },
+        {
+            "name": "ORBEE",
+            "lat": 32.421975,
+            "lon": 98.20843056666666
+        },
+        {
+            "name": "WINIT",
+            "lat": 32.007230566666664,
+            "lon": 98.14609443333333
+        },
+        {
+            "name": "WOGAN",
+            "lat": 32.379133333333336,
+            "lon": 98.29291666666667
+        },
+        {
+            "name": "ZEBUN",
+            "lat": 32.33623611666667,
+            "lon": 98.37732221666667
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV14",
+            "fixes": {
+                "WOGAN": "WOGAN AT OR ABOVE 3600",
+                "HAVUS": "HAVUS 3000",
+                "FOLON": "FOLON AT OR ABOVE 1960 RNW 14 TRK 142 UNTIL 1721",
+                "HOVIR": "OVERFLY HOVIR AT OR ABOVE 3600 HOLD AT HOVIR RIGHT TURN INBOUNDCOURSE 322 LEGDIST 4 FAF HAVUS MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "ORBEE",
+                    "fixes": {
+                        "ORBEE": "ORBEE AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "WOGAN",
+                    "fixes": {
+                        "WOGAN": "WOGAN RIGHT TURN INBOUNDCOURSE 142 ALT 3600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "ZEBUN",
+                    "fixes": {
+                        "ZEBUN": "ZEBUN AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "HOVIR": "HOVIR AT OR ABOVE 3600",
+                "CUGOR": "CUGOR 3000 RNW 32 TRK 322 UNTIL 1721",
+                "WOGAN": "OVERFLY WOGAN AT OR ABOVE 3600 HOLD AT WOGAN RIGHT TURN INBOUNDCOURSE 142 LEGDIST 4 FAF CUGOR MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "COVON",
+                    "fixes": {
+                        "COVON": "COVON AT OR ABOVE 3600"
+                    }
+                },
+                {
+                    "name": "HOVIR",
+                    "fixes": {
+                        "HOVIR": "HOVIR RIGHT TURN INBOUNDCOURSE 322 ALT 3600 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "WINIT",
+                    "fixes": {
+                        "WINIT": "WINIT AT OR ABOVE 3600"
+                    }
+                }
+            ]
+        }
+    ]
+}

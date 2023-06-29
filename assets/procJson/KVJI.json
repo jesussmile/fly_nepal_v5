@@ -1,0 +1,151 @@
+{
+    "fixes": [
+        {
+            "name": "AKQON",
+            "lat": 36.74479443333333,
+            "lon": 81.92685556666666
+        },
+        {
+            "name": "BUNTE",
+            "lat": 36.71401111666667,
+            "lon": 81.98370833333334
+        },
+        {
+            "name": "CFBGR",
+            "lat": 36.781986116666666,
+            "lon": 81.85803888333334
+        },
+        {
+            "name": "FOSEK",
+            "lat": 36.631138883333335,
+            "lon": 82.13628333333334
+        },
+        {
+            "name": "GZG",
+            "lat": 36.825105566666664,
+            "lon": 82.07897778333333
+        },
+        {
+            "name": "HILTO",
+            "lat": 36.69679443333333,
+            "lon": 82.4354
+        },
+        {
+            "name": "HMV",
+            "lat": 36.437055566666665,
+            "lon": 82.1296
+        },
+        {
+            "name": "HOSED",
+            "lat": 36.57436943333333,
+            "lon": 82.24039721666666
+        },
+        {
+            "name": "KURRU",
+            "lat": 36.80104443333333,
+            "lon": 81.82271666666666
+        },
+        {
+            "name": "MIFJU",
+            "lat": 36.88129166666667,
+            "lon": 81.79421388333333
+        },
+        {
+            "name": "STOVE",
+            "lat": 36.763097216666665,
+            "lon": 81.42730556666666
+        },
+        {
+            "name": "TAKEN",
+            "lat": 36.33688333333333,
+            "lon": 82.47033888333333
+        },
+        {
+            "name": "VIMIW",
+            "lat": 36.71849721666667,
+            "lon": 81.97543056666666
+        },
+        {
+            "name": "ZOLUB",
+            "lat": 36.75093056666667,
+            "lon": 81.71495556666666
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC24",
+            "fixes": {
+                "CFBGR": "CFBGR AT OR ABOVE 4300",
+                "AKQON": "AKQON 4000 AKQON AT OR ABOVE 4300 SPEED 210 HOLD AT AKQON LEFT TURN INBOUNDCOURSE 241 LEGTIME 1 FAF AKQON MAP RNW 24",
+                "BUNTE": "BUNTE AT OR ABOVE 2940 RNW 24 TRK 241 UNTIL 3200 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GZG",
+                    "fixes": {
+                        "GZG": "GZG",
+                        "AKQON": "AKQON AT OR ABOVE 6500 HOLD AT AKQON LEFT TURN INBOUNDCOURSE 241 ALT 4300 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "HOSED": "HOSED AT OR ABOVE 4600",
+                "FOSEK": "FOSEK 3900 RNW 06 TRK 061 UNTIL 2443",
+                "KURRU": "OVERFLY KURRU AT OR ABOVE 7300 HOLD AT KURRU LEFT TURN INBOUNDCOURSE 265 ALT 7300 LEGDIST 5 FAF FOSEK MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "HILTO",
+                    "fixes": {
+                        "HILTO": "HILTO"
+                    }
+                },
+                {
+                    "name": "TAKEN",
+                    "fixes": {
+                        "TAKEN": "TAKEN"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "KURRU": "KURRU AT OR ABOVE 5100 OVERFLY KURRU AT OR ABOVE 5100 HOLD AT KURRU LEFT TURN INBOUNDCOURSE 265 LEGDIST 5 FAF AKQON MAP RNW 24",
+                "AKQON": "AKQON 4000",
+                "VIMIW": "VIMIW AT OR ABOVE 3100 RNW 24 TRK 241 UNTIL 2900 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "HMV",
+                    "fixes": {
+                        "HMV": "HMV",
+                        "KURRU": "OVERFLY KURRU AT OR ABOVE 6700 HOLD AT KURRU LEFT TURN INBOUNDCOURSE 265 ALT 5100 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "MIFJU",
+                    "fixes": {
+                        "MIFJU": "MIFJU"
+                    }
+                },
+                {
+                    "name": "STOVE",
+                    "fixes": {
+                        "STOVE": "STOVE",
+                        "ZOLUB": "ZOLUB AT OR ABOVE 6600"
+                    }
+                }
+            ]
+        }
+    ]
+}

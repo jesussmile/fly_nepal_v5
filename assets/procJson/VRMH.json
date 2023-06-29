@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "AKLUT",
+            "lat": 6.572944433333333,
+            "lon": 73.17469443333333
+        },
+        {
+            "name": "DOSNI",
+            "lat": 6.918444433333333,
+            "lon": 73.16363888333333
+        },
+        {
+            "name": "ISTOV",
+            "lat": 6.649333333333333,
+            "lon": 73.02566666666667
+        },
+        {
+            "name": "MH403",
+            "lat": 6.88025,
+            "lon": 73.23819443333333
+        },
+        {
+            "name": "MH404",
+            "lat": 6.828111116666666,
+            "lon": 73.21144443333333
+        },
+        {
+            "name": "MH405",
+            "lat": 6.611138883333333,
+            "lon": 73.10016666666667
+        },
+        {
+            "name": "MH406",
+            "lat": 6.663305566666667,
+            "lon": 73.12691666666667
+        },
+        {
+            "name": "VIREM",
+            "lat": 6.842027783333333,
+            "lon": 73.31275
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "MH405": "MH405 AT OR ABOVE 1700",
+                "MH406": "MH406 1700 RNW 03 TRK 029 UNTIL 1000 TURN RIGHT DIRECT",
+                "AKLUT": "OVERFLY AKLUT HOLD AT AKLUT RIGHT TURN INBOUNDCOURSE 299 ALT 3000 LEGTIME 1 FAF MH406 MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "AKLUT",
+                    "fixes": {
+                        "AKLUT": "AKLUT"
+                    }
+                },
+                {
+                    "name": "ISTOV",
+                    "fixes": {
+                        "ISTOV": "ISTOV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "MH403": "MH403 AT OR ABOVE 1700",
+                "MH404": "MH404 1700 RNW 21 TRK 209 UNTIL 1000 TURN LEFT DIRECT",
+                "VIREM": "OVERFLY VIREM HOLD AT VIREM RIGHT TURN INBOUNDCOURSE 299 ALT 3000 LEGTIME 1 FAF MH404 MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "DOSNI",
+                    "fixes": {
+                        "DOSNI": "DOSNI"
+                    }
+                },
+                {
+                    "name": "VIREM",
+                    "fixes": {
+                        "VIREM": "VIREM"
+                    }
+                }
+            ]
+        }
+    ]
+}

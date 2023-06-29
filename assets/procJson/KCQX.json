@@ -1,0 +1,114 @@
+{
+    "fixes": [
+        {
+            "name": "ACK",
+            "lat": 41.28188611666667,
+            "lon": 70.02671111666666
+        },
+        {
+            "name": "CEPUL",
+            "lat": 41.77723056666667,
+            "lon": 69.72016666666667
+        },
+        {
+            "name": "LFV",
+            "lat": 42.01718888333333,
+            "lon": 70.03723333333333
+        },
+        {
+            "name": "MA114",
+            "lat": 41.69487221666667,
+            "lon": 70.01556943333334
+        },
+        {
+            "name": "NUNKE",
+            "lat": 41.761675,
+            "lon": 69.89520833333333
+        },
+        {
+            "name": "PPICE",
+            "lat": 41.89316388333334,
+            "lon": 69.88041666666666
+        },
+        {
+            "name": "UMANE",
+            "lat": 41.835225,
+            "lon": 69.80021943333334
+        },
+        {
+            "name": "WHIPS",
+            "lat": 41.70433056666667,
+            "lon": 70.10591666666667
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA06",
+            "fixes": {
+                "WHIPS": "WHIPS 2000 WHIPS WHIPS AT OR ABOVE 2000 HOLD AT WHIPS LEFT TURN INBOUNDCOURSE 114 LEGTIME 1 FAF WHIPS MAP MA114",
+                "MA114": "MA114 780 RNW 06 TRK 114 UNTIL 800 TURN LEFT HDG 220 INTERCEPT RADIAL 294 TO"
+            },
+            "transitions": [
+                {
+                    "name": "ACK",
+                    "fixes": {
+                        "ACK": "ACK",
+                        "WHIPS": "WHIPS AT OR ABOVE 2000 HOLD AT WHIPS LEFT TURN INBOUNDCOURSE 114 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA24",
+            "fixes": {
+                "WHIPS": "WHIPS 2000 WHIPS WHIPS AT OR ABOVE 2000 HOLD AT WHIPS LEFT TURN INBOUNDCOURSE 114 LEGTIME 1 FAF WHIPS MAP MA114",
+                "MA114": "MA114 780 RNW 24 TRK 114 UNTIL 800 TURN LEFT HDG 220 INTERCEPT RADIAL 294 TO"
+            },
+            "transitions": [
+                {
+                    "name": "ACK",
+                    "fixes": {
+                        "ACK": "ACK",
+                        "WHIPS": "WHIPS AT OR ABOVE 2000 HOLD AT WHIPS LEFT TURN INBOUNDCOURSE 114 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVB24",
+            "fixes": {
+                "UMANE": "UMANE AT OR ABOVE 2000",
+                "NUNKE": "NUNKE 2000 RNW 24 TRK 240 UNTIL 470 TURN LEFT DIRECT",
+                "CEPUL": "OVERFLY CEPUL AT OR ABOVE 3000 HOLD AT CEPUL RIGHT TURN INBOUNDCOURSE 041 LEGDIST 4 FAF NUNKE MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "ACK",
+                    "fixes": {
+                        "ACK": "ACK",
+                        "CEPUL": "CEPUL AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "LFV",
+                    "fixes": {
+                        "LFV": "LFV",
+                        "PPICE": "PPICE AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "UMANE",
+                    "fixes": {
+                        "UMANE": "UMANE RIGHT TURN INBOUNDCOURSE 240 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

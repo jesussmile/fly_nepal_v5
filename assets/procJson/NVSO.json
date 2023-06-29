@@ -1,0 +1,66 @@
+{
+    "fixes": [
+        {
+            "name": "MOLSI",
+            "lat": 15.660938883333333,
+            "lon": 168.02276943333334
+        },
+        {
+            "name": "SO912",
+            "lat": 15.827405566666666,
+            "lon": 168.12685
+        },
+        {
+            "name": "SO934",
+            "lat": 15.765086116666666,
+            "lon": 168.10174443333332
+        },
+        {
+            "name": "SO956",
+            "lat": 15.702763883333333,
+            "lon": 168.07665278333334
+        }
+    ],
+    "rnws": [
+        "RNW 15",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVA15",
+            "fixes": {
+                "SO956": "SO956 AT OR ABOVE 3000",
+                "SO934": "SO934 1750",
+                "SO912": "OVERFLY SO912 540 RNW 15 TURN RIGHT DIRECT",
+                "MOLSI": "MOLSI 3000 FAF SO934 MAP SO912"
+            },
+            "transitions": [
+                {
+                    "name": "MOLSI",
+                    "fixes": {
+                        "MOLSI": "MOLSI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVA33",
+            "fixes": {
+                "SO956": "SO956 AT OR ABOVE 3000",
+                "SO934": "SO934 1750",
+                "SO912": "OVERFLY SO912 540 RNW 33 TURN RIGHT DIRECT",
+                "MOLSI": "MOLSI 3000 FAF SO934 MAP SO912"
+            },
+            "transitions": [
+                {
+                    "name": "MOLSI",
+                    "fixes": {
+                        "MOLSI": "MOLSI AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        }
+    ]
+}

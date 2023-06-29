@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "APUNE",
+            "lat": 40.210419433333335,
+            "lon": 99.34924166666667
+        },
+        {
+            "name": "FOXEM",
+            "lat": 40.15186666666666,
+            "lon": 99.34754721666667
+        },
+        {
+            "name": "HUSTO",
+            "lat": 40.07138333333333,
+            "lon": 99.345225
+        },
+        {
+            "name": "JESOB",
+            "lat": 40.019191666666664,
+            "lon": 99.34371943333333
+        },
+        {
+            "name": "PERDY",
+            "lat": 40.31380278333334,
+            "lon": 99.35223611666666
+        },
+        {
+            "name": "SHEND",
+            "lat": 39.907463883333335,
+            "lon": 99.34050278333333
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "PERDY": "PERDY AT OR ABOVE 5000",
+                "APUNE": "APUNE 3900",
+                "FOXEM": "FOXEM AT OR ABOVE 2780 RNW 17 TRK 174 UNTIL 2404",
+                "SHEND": "OVERFLY SHEND AT OR ABOVE 5000 HOLD AT SHEND RIGHT TURN INBOUNDCOURSE 354 LEGDIST 5 FAF APUNE MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "PERDY",
+                    "fixes": {
+                        "PERDY": "PERDY LEFT TURN INBOUNDCOURSE 174 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "SHEND": "SHEND AT OR ABOVE 5000",
+                "JESOB": "JESOB 3800",
+                "HUSTO": "HUSTO AT OR ABOVE 2800 RNW 35 TRK 354 UNTIL 2403",
+                "PERDY": "OVERFLY PERDY AT OR ABOVE 5000 HOLD AT PERDY LEFT TURN INBOUNDCOURSE 174 LEGDIST 5 FAF JESOB MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "SHEND",
+                    "fixes": {
+                        "SHEND": "SHEND RIGHT TURN INBOUNDCOURSE 354 ALT 5000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+{
+    "fixes": [
+        {
+            "name": "AVRUX",
+            "lat": 52.40658333333333,
+            "lon": 56.18224443333333
+        },
+        {
+            "name": "EPNOL",
+            "lat": 52.25895,
+            "lon": 55.47743333333333
+        },
+        {
+            "name": "EPSAX",
+            "lat": 52.204625,
+            "lon": 55.64128611666667
+        },
+        {
+            "name": "FF242",
+            "lat": 52.372325000000004,
+            "lon": 55.74941666666667
+        },
+        {
+            "name": "ITPAN",
+            "lat": 52.31799443333333,
+            "lon": 56.144586116666666
+        },
+        {
+            "name": "ITSAR",
+            "lat": 52.33733611666667,
+            "lon": 55.55455
+        },
+        {
+            "name": "KESDI",
+            "lat": 52.30559443333333,
+            "lon": 55.934902783333335
+        },
+        {
+            "name": "MIDSO",
+            "lat": 52.23530556666667,
+            "lon": 56.20860556666667
+        },
+        {
+            "name": "NAGLA",
+            "lat": 52.30843611666667,
+            "lon": 55.98239443333333
+        },
+        {
+            "name": "PI001",
+            "lat": 52.35858038333333,
+            "lon": 55.76881641666667
+        },
+        {
+            "name": "PI002",
+            "lat": 52.43007218333333,
+            "lon": 55.77701548333334
+        },
+        {
+            "name": "PI003",
+            "lat": 52.44022161666667,
+            "lon": 55.652108516666665
+        },
+        {
+            "name": "SEPKI",
+            "lat": 52.31795556666667,
+            "lon": 55.714441666666666
+        },
+        {
+            "name": "TALNI",
+            "lat": 52.30233056666667,
+            "lon": 55.84195833333333
+        },
+        {
+            "name": "UDBUP",
+            "lat": 52.42777778333333,
+            "lon": 55.531452783333336
+        },
+        {
+            "name": "VIGMU",
+            "lat": 52.3007,
+            "lon": 55.853844433333336
+        },
+        {
+            "name": "YMHNB",
+            "lat": 52.31457221666667,
+            "lon": 55.83148056666667
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDBA11",
+            "fixes": {
+                "FF242": "FF242 1800",
+                "YMHNB": "YMHNB 1120 RNW 11 TRK 242 UNTIL 1900 TURN LEFT DIRECT YMHNB 1900 HOLD AT YMHNB RIGHT TURN INBOUNDCOURSE 242 LEGTIME 1 FAF FF242 MAP YMH"
+            },
+            "transitions": [
+                {
+                    "name": "YMH",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBA29",
+            "fixes": {
+                "FF242": "FF242 1800",
+                "YMHNB": "YMHNB 1120 RNW 29 TRK 242 UNTIL 1900 TURN LEFT DIRECT YMHNB 1900 HOLD AT YMHNB RIGHT TURN INBOUNDCOURSE 242 LEGTIME 1 FAF FF242 MAP YMH"
+            },
+            "transitions": [
+                {
+                    "name": "YMH",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1800 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1800 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1800 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "ITPAN": "ITPAN AT OR ABOVE 2100",
+                "NAGLA": "NAGLA 1600",
+                "KESDI": "KESDI AT OR ABOVE 940",
+                "VIGMU": "OVERFLY VIGMU 85 RNW 11",
+                "EPSAX": "OVERFLY EPSAX 2700 HOLD AT EPSAX RIGHT TURN INBOUNDCOURSE 155 LEGTIME 1 FAF NAGLA MAP VIGMU"
+            },
+            "transitions": [
+                {
+                    "name": "AVRUX",
+                    "fixes": {
+                        "AVRUX": "AVRUX"
+                    }
+                },
+                {
+                    "name": "MIDSO",
+                    "fixes": {
+                        "MIDSO": "MIDSO"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "ITSAR": "ITSAR AT OR ABOVE 1600",
+                "SEPKI": "SEPKI 1600",
+                "TALNI": "OVERFLY TALNI 75 RNW 29 TRK 280 UNTIL 700 TURN LEFT DIRECT",
+                "EPSAX": "OVERFLY EPSAX 2700 HOLD AT EPSAX RIGHT TURN INBOUNDCOURSE 155 LEGTIME 1 FAF SEPKI MAP TALNI"
+            },
+            "transitions": [
+                {
+                    "name": "EPNOL",
+                    "fixes": {
+                        "EPNOL": "EPNOL"
+                    }
+                },
+                {
+                    "name": "UDBUP",
+                    "fixes": {
+                        "UDBUP": "UDBUP"
+                    }
+                }
+            ]
+        }
+    ]
+}

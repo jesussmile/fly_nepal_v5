@@ -1,0 +1,87 @@
+{
+    "fixes": [
+        {
+            "name": "EANEY",
+            "lat": 42.31190556666667,
+            "lon": 78.31082221666666
+        },
+        {
+            "name": "UGASE",
+            "lat": 42.404516666666666,
+            "lon": 78.23196943333333
+        },
+        {
+            "name": "UHZOS",
+            "lat": 42.291727783333336,
+            "lon": 78.32795278333333
+        },
+        {
+            "name": "VAKTY",
+            "lat": 42.072,
+            "lon": 78.51375833333333
+        },
+        {
+            "name": "WOCDO",
+            "lat": 42.184947216666664,
+            "lon": 78.41844166666667
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 16",
+        "RNW 22",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "LOC22",
+            "fixes": {
+                "UGASE": "UGASE AT OR ABOVE 4500",
+                "EANEY": "EANEY 3700 RNW 22",
+                "VAKTY": "VAKTY AT OR ABOVE 4900 HOLD AT VAKTY RIGHT TURN INBOUNDCOURSE 043 LEGDIST 4 FAF EANEY MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "UGASE",
+                    "fixes": {
+                        "UGASE": "UGASE RIGHT TURN INBOUNDCOURSE 223 ALT 4500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "VAKTY": "VAKTY AT OR ABOVE 4900",
+                "WOCDO": "WOCDO 3300 RNW 04 TRK 043 UNTIL 2382",
+                "UGASE": "OVERFLY UGASE AT OR ABOVE 4500 HOLD AT UGASE RIGHT TURN INBOUNDCOURSE 223 LEGDIST 4 FAF WOCDO MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "VAKTY",
+                    "fixes": {
+                        "VAKTY": "VAKTY RIGHT TURN INBOUNDCOURSE 043 ALT 4900 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV22",
+            "fixes": {
+                "UGASE": "UGASE AT OR ABOVE 4500",
+                "UHZOS": "UHZOS 3200 RNW 22 TRK 223 UNTIL 2382",
+                "VAKTY": "OVERFLY VAKTY AT OR ABOVE 4900 HOLD AT VAKTY RIGHT TURN INBOUNDCOURSE 043 LEGDIST 4 FAF UHZOS MAP RNW 22"
+            },
+            "transitions": [
+                {
+                    "name": "UGASE",
+                    "fixes": {
+                        "UGASE": "UGASE RIGHT TURN INBOUNDCOURSE 223 ALT 4500 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

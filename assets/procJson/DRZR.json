@@ -1,0 +1,172 @@
+{
+    "fixes": [
+        {
+            "name": "AMPAT",
+            "lat": 13.725536116666667,
+            "lon": 8.770727783333333
+        },
+        {
+            "name": "FF05",
+            "lat": 13.72725,
+            "lon": 8.913586116666666
+        },
+        {
+            "name": "FF23",
+            "lat": 13.847002783333334,
+            "lon": 9.076216666666667
+        },
+        {
+            "name": "GALVO",
+            "lat": 13.658986116666666,
+            "lon": 8.822641666666666
+        },
+        {
+            "name": "INNB",
+            "lat": 13.789494433333333,
+            "lon": 8.997836116666667
+        },
+        {
+            "name": "LIMOD",
+            "lat": 13.592425,
+            "lon": 8.874525
+        },
+        {
+            "name": "MOPAV",
+            "lat": 13.902222216666667,
+            "lon": 9.149461116666666
+        },
+        {
+            "name": "PONAK",
+            "lat": 13.835591666666666,
+            "lon": 9.201305566666667
+        },
+        {
+            "name": "SETOG",
+            "lat": 13.968838883333333,
+            "lon": 9.097586116666667
+        },
+        {
+            "name": "ZR",
+            "lat": 13.770577783333334,
+            "lon": 8.972388883333334
+        },
+        {
+            "name": "ZR501",
+            "lat": 13.710944433333333,
+            "lon": 8.89235
+        },
+        {
+            "name": "ZR502",
+            "lat": 13.824744433333333,
+            "lon": 9.045222216666666
+        },
+        {
+            "name": "ZR503",
+            "lat": 13.847497216666667,
+            "lon": 9.075822216666667
+        },
+        {
+            "name": "ZR504",
+            "lat": 13.734769433333334,
+            "lon": 8.924333333333333
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB05",
+            "fixes": {
+                "FF05": "FF05 3000 RNW 05",
+                "INNB": "OVERFLY INNB TRK 052 UNTIL 3000 TURN RIGHT DIRECT INNB 3500 SPEED 230 FAF FF05 MAP RNW 05"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDB23",
+            "fixes": {
+                "FF23": "FF23 3500",
+                "INNB": "INNB 1678 RNW 23 TRK 232 UNTIL 3000 TURN LEFT DIRECT INNB 3500 SPEED 230 FAF FF23 MAP IN"
+            },
+            "transitions": []
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "GALVO": "GALVO AT OR ABOVE 3500 SPEED 230",
+                "ZR501": "ZR501 3500 RNW 05",
+                "ZR502": "OVERFLY ZR502 SPEED 230 TURN RIGHT DIRECT",
+                "LIMOD": "LIMOD AT OR ABOVE 3500 SPEED 230 FAF ZR501 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "AMPAT",
+                    "fixes": {
+                        "AMPAT": "AMPAT AT OR ABOVE 3500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "GALVO",
+                    "fixes": {
+                        "GALVO": "GALVO RIGHT TURN INBOUNDCOURSE 052 ALT 3500 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "LIMOD",
+                    "fixes": {
+                        "LIMOD": "LIMOD AT OR ABOVE 3500 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "MOPAV": "MOPAV AT OR ABOVE 3500 SPEED 230",
+                "ZR503": "ZR503 3500 RNW 23",
+                "ZR504": "OVERFLY ZR504 SPEED 230 TURN LEFT DIRECT",
+                "PONAK": "PONAK AT OR ABOVE 3500 SPEED 230 FAF ZR503 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "MOPAV",
+                    "fixes": {
+                        "MOPAV": "MOPAV LEFT TURN INBOUNDCOURSE 232 ALT 3500 SPEED 230 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "PONAK",
+                    "fixes": {
+                        "PONAK": "PONAK AT OR ABOVE 3500 SPEED 230"
+                    }
+                },
+                {
+                    "name": "SETOG",
+                    "fixes": {
+                        "SETOG": "SETOG AT OR ABOVE 3500 SPEED 230"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VOR05",
+            "fixes": {
+                "FF05": "FF05 3000",
+                "ZR": "ZR 1629 RNW 05 TRK 052 UNTIL 3000 TURN RIGHT DIRECT ZR 3500 SPEED 230 FAF FF05 MAP ZR"
+            },
+            "transitions": []
+        },
+        {
+            "name": "VOR23",
+            "fixes": {
+                "FF23": "FF23 3500 RNW 23",
+                "ZR": "OVERFLY ZR TRK 232 UNTIL 3000 TURN LEFT DIRECT ZR 3500 SPEED 230 FAF FF23 MAP RNW 23"
+            },
+            "transitions": []
+        }
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "fixes": [
+        {
+            "name": "GUCGE",
+            "lat": 36.69255833333333,
+            "lon": 84.24048056666666
+        },
+        {
+            "name": "HINOR",
+            "lat": 36.89881666666667,
+            "lon": 84.163975
+        },
+        {
+            "name": "HOLLO",
+            "lat": 36.84218611666667,
+            "lon": 84.18166666666667
+        },
+        {
+            "name": "ICIKO",
+            "lat": 36.567763883333335,
+            "lon": 84.29023056666666
+        },
+        {
+            "name": "ITOZE",
+            "lat": 36.80208888333333,
+            "lon": 84.19618056666667
+        },
+        {
+            "name": "JUBKA",
+            "lat": 36.89581943333334,
+            "lon": 84.15909443333334
+        },
+        {
+            "name": "KICEK",
+            "lat": 36.72108888333333,
+            "lon": 84.22908333333334
+        },
+        {
+            "name": "LIKCI",
+            "lat": 37.00691388333333,
+            "lon": 84.11442221666667
+        },
+        {
+            "name": "LOZ",
+            "lat": 37.03315,
+            "lon": 84.110075
+        },
+        {
+            "name": "NUYIV",
+            "lat": 36.846663883333335,
+            "lon": 84.17881666666666
+        },
+        {
+            "name": "SHADD",
+            "lat": 36.898122216666664,
+            "lon": 84.16073611666667
+        },
+        {
+            "name": "WENIP",
+            "lat": 36.83916943333333,
+            "lon": 84.18384443333333
+        },
+        {
+            "name": "ZELUM",
+            "lat": 36.99553611666666,
+            "lon": 84.13168888333334
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD20",
+            "fixes": {
+                "LOZ": "LOZ AT OR ABOVE 3300 LOZ AT OR ABOVE 4000 HOLD AT LOZ RIGHT TURN INBOUNDCOURSE 200 LEGTIME 1 FAF SHADD MAP RNW 20",
+                "SHADD": "SHADD 3100",
+                "HOLLO": "HOLLO AT OR ABOVE 2000 RNW 20 TRK 200 UNTIL 1580 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "LOZ",
+                    "fixes": {
+                        "LOZ": "LOZ RIGHT TURN INBOUNDCOURSE 200 ALT 3300 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC20",
+            "fixes": {
+                "ZELUM": "ZELUM AT OR ABOVE 4000",
+                "HINOR": "HINOR 3100",
+                "WENIP": "WENIP AT OR ABOVE 1940",
+                "ITOZE": "ITOZE 1223 RNW 20 TRK 200 UNTIL 1800 TURN LEFT DIRECT",
+                "LOZ": "LOZ AT OR ABOVE 4000 HOLD AT LOZ RIGHT TURN INBOUNDCOURSE 200 LEGTIME 1 FAF HINOR MAP ITOZE"
+            },
+            "transitions": [
+                {
+                    "name": "LOZ",
+                    "fixes": {
+                        "LOZ": "LOZ"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "ICIKO": "ICIKO AT OR ABOVE 4600",
+                "GUCGE": "GUCGE 3100",
+                "KICEK": "KICEK AT OR ABOVE 2520 RNW 02 TRK 023 UNTIL 1406",
+                "LIKCI": "OVERFLY LIKCI AT OR ABOVE 4000 HOLD AT LIKCI RIGHT TURN INBOUNDCOURSE 203 LEGDIST 4 FAF GUCGE MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "ICIKO",
+                    "fixes": {
+                        "ICIKO": "ICIKO RIGHT TURN INBOUNDCOURSE 023 ALT 4600 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV20",
+            "fixes": {
+                "LIKCI": "LIKCI AT OR ABOVE 4000",
+                "JUBKA": "JUBKA 3100",
+                "NUYIV": "NUYIV AT OR ABOVE 2100 RNW 20 TRK 203 UNTIL 1578",
+                "ICIKO": "OVERFLY ICIKO AT OR ABOVE 4900 HOLD AT ICIKO RIGHT TURN INBOUNDCOURSE 023 ALT 4900 LEGDIST 5 FAF JUBKA MAP RNW 20"
+            },
+            "transitions": [
+                {
+                    "name": "LIKCI",
+                    "fixes": {
+                        "LIKCI": "LIKCI RIGHT TURN INBOUNDCOURSE 203 ALT 4000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "fixes": [
+        {
+            "name": "BAVDE",
+            "lat": 44.540061116666664,
+            "lon": 73.40383333333334
+        },
+        {
+            "name": "BTV",
+            "lat": 44.39710556666667,
+            "lon": 73.18263611666667
+        },
+        {
+            "name": "CAPNU",
+            "lat": 44.447702783333334,
+            "lon": 73.35048888333333
+        },
+        {
+            "name": "JUKBA",
+            "lat": 44.77065278333333,
+            "lon": 73.53783056666667
+        },
+        {
+            "name": "JUTEK",
+            "lat": 44.732044433333336,
+            "lon": 73.19083333333333
+        },
+        {
+            "name": "LEAFY",
+            "lat": 44.30086943333333,
+            "lon": 73.54856388333333
+        },
+        {
+            "name": "NUPIY",
+            "lat": 44.712011116666666,
+            "lon": 73.50364721666666
+        },
+        {
+            "name": "OTGOE",
+            "lat": 44.86466111666667,
+            "lon": 73.59278888333333
+        },
+        {
+            "name": "REVLE",
+            "lat": 44.374330566666664,
+            "lon": 73.44965
+        },
+        {
+            "name": "RIGID",
+            "lat": 44.58875833333333,
+            "lon": 73.74279721666667
+        }
+    ],
+    "rnws": [
+        "RNW 17",
+        "RNW 35"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS35",
+            "fixes": {
+                "CAPNU": "CAPNU AT OR ABOVE 3000",
+                "BAVDE": "BAVDE 2200 RNW 35 TRK 352 UNTIL 700 TURN RIGHT DIRECT",
+                "JUTEK": "JUTEK AT OR ABOVE 3000 HOLD AT JUTEK RIGHT TURN INBOUNDCOURSE 095 LEGTIME 1 FAF BAVDE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BTV",
+                    "fixes": {
+                        "BTV": "BTV"
+                    }
+                },
+                {
+                    "name": "CAPNU",
+                    "fixes": {
+                        "CAPNU": "CAPNU RIGHT TURN INBOUNDCOURSE 352 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV17",
+            "fixes": {
+                "OTGOE": "OTGOE AT OR ABOVE 3500",
+                "JUKBA": "JUKBA 2500",
+                "NUPIY": "NUPIY AT OR ABOVE 1240 RNW 17",
+                "CAPNU": "OVERFLY CAPNU AT OR ABOVE 3100 HOLD AT CAPNU RIGHT TURN INBOUNDCOURSE 353 LEGDIST 4 FAF JUKBA MAP RNW 17"
+            },
+            "transitions": [
+                {
+                    "name": "BTV",
+                    "fixes": {
+                        "BTV": "BTV",
+                        "OTGOE": "OTGOE AT OR ABOVE 3800 HOLD AT OTGOE RIGHT TURN INBOUNDCOURSE 172 ALT 3500 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "RIGID",
+                    "fixes": {
+                        "RIGID": "RIGID",
+                        "OTGOE": "OTGOE AT OR ABOVE 4000 HOLD AT OTGOE RIGHT TURN INBOUNDCOURSE 172 ALT 3500 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV35",
+            "fixes": {
+                "CAPNU": "CAPNU AT OR ABOVE 3000",
+                "BAVDE": "BAVDE 2200 RNW 35 TRK 353 UNTIL 427",
+                "OTGOE": "OVERFLY OTGOE AT OR ABOVE 3500 HOLD AT OTGOE RIGHT TURN INBOUNDCOURSE 172 LEGDIST 4 FAF BAVDE MAP RNW 35"
+            },
+            "transitions": [
+                {
+                    "name": "BTV",
+                    "fixes": {
+                        "BTV": "BTV"
+                    }
+                },
+                {
+                    "name": "CAPNU",
+                    "fixes": {
+                        "CAPNU": "CAPNU RIGHT TURN INBOUNDCOURSE 353 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LEAFY",
+                    "fixes": {
+                        "LEAFY": "LEAFY",
+                        "REVLE": "REVLE AT OR ABOVE 5500"
+                    }
+                }
+            ]
+        }
+    ]
+}

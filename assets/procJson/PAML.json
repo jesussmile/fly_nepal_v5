@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "DAFTY",
+            "lat": 64.9453,
+            "lon": 150.71435
+        },
+        {
+            "name": "ENEBE",
+            "lat": 65.05183333333333,
+            "lon": 150.53656943333334
+        },
+        {
+            "name": "FIRBI",
+            "lat": 64.97207778333333,
+            "lon": 150.6616
+        },
+        {
+            "name": "HIKAT",
+            "lat": 64.90917778333333,
+            "lon": 150.78527221666667
+        },
+        {
+            "name": "HOBOM",
+            "lat": 65.10635556666666,
+            "lon": 149.58146111666667
+        },
+        {
+            "name": "JODOG",
+            "lat": 65.06786388333333,
+            "lon": 150.50408888333334
+        },
+        {
+            "name": "MOKIE",
+            "lat": 65.003825,
+            "lon": 150.633525
+        },
+        {
+            "name": "OLSEE",
+            "lat": 64.648,
+            "lon": 150.50232221666667
+        },
+        {
+            "name": "SHUNT",
+            "lat": 65.10874166666666,
+            "lon": 150.24998888333334
+        },
+        {
+            "name": "SPLAY",
+            "lat": 64.83082778333333,
+            "lon": 150.94022778333334
+        },
+        {
+            "name": "TADUE",
+            "lat": 64.88713056666667,
+            "lon": 151.55085556666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "SHUNT": "SHUNT AT OR ABOVE 3000",
+                "JODOG": "JODOG 2600",
+                "ENEBE": "ENEBE AT OR ABOVE 2100",
+                "MOKIE": "OVERFLY MOKIE 593 RNW 18 TRK 203 UNTIL 675",
+                "OLSEE": "OVERFLY OLSEE AT OR ABOVE 4400 HOLD AT OLSEE RIGHT TURN INBOUNDCOURSE 297 LEGDIST 4 FAF JODOG MAP MOKIE"
+            },
+            "transitions": [
+                {
+                    "name": "HOBOM",
+                    "fixes": {
+                        "HOBOM": "HOBOM"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "SPLAY": "SPLAY AT OR ABOVE 2800",
+                "HIKAT": "HIKAT 2100",
+                "DAFTY": "DAFTY AT OR ABOVE 1200",
+                "FIRBI": "OVERFLY FIRBI 537 RNW 36 TRK 022 UNTIL 675 TURN RIGHT DIRECT",
+                "OLSEE": "OVERFLY OLSEE AT OR ABOVE 4400 HOLD AT OLSEE RIGHT TURN INBOUNDCOURSE 297 LEGDIST 4 FAF HIKAT MAP FIRBI"
+            },
+            "transitions": [
+                {
+                    "name": "OLSEE",
+                    "fixes": {
+                        "OLSEE": "OLSEE"
+                    }
+                },
+                {
+                    "name": "TADUE",
+                    "fixes": {
+                        "TADUE": "TADUE"
+                    }
+                }
+            ]
+        }
+    ]
+}

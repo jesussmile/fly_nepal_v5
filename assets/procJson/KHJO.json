@@ -1,0 +1,117 @@
+{
+    "fixes": [
+        {
+            "name": "EXTRA",
+            "lat": 36.32751666666667,
+            "lon": 119.21856666666666
+        },
+        {
+            "name": "FRAME",
+            "lat": 36.61298333333333,
+            "lon": 119.67375833333334
+        },
+        {
+            "name": "LATON",
+            "lat": 36.376280566666665,
+            "lon": 119.55131666666666
+        },
+        {
+            "name": "MAXKA",
+            "lat": 36.23616943333333,
+            "lon": 119.57372221666667
+        },
+        {
+            "name": "NOVIC",
+            "lat": 36.14845278333333,
+            "lon": 119.51513056666667
+        },
+        {
+            "name": "OYUGO",
+            "lat": 36.43625556666667,
+            "lon": 119.63214721666667
+        },
+        {
+            "name": "PIXEY",
+            "lat": 36.093491666666665,
+            "lon": 119.40639443333333
+        },
+        {
+            "name": "QEGCU",
+            "lat": 36.27085,
+            "lon": 119.59693056666667
+        },
+        {
+            "name": "WANUS",
+            "lat": 36.42500833333333,
+            "lon": 119.70035833333333
+        },
+        {
+            "name": "YEKUT",
+            "lat": 36.511408333333335,
+            "lon": 119.75853333333333
+        }
+    ],
+    "rnws": [
+        "RNW 14",
+        "RNW 32"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAVB14",
+            "fixes": {
+                "YEKUT": "YEKUT AT OR ABOVE 3400",
+                "WANUS": "WANUS 2500 RNW 14 TRK 137 UNTIL 640",
+                "MAXKA": "MAXKA",
+                "PIXEY": "OVERFLY PIXEY AT OR ABOVE 3100 HOLD AT PIXEY LEFT TURN INBOUNDCOURSE 122 LEGDIST 4 FAF WANUS MAP RNW 14"
+            },
+            "transitions": [
+                {
+                    "name": "FRAME",
+                    "fixes": {
+                        "FRAME": "FRAME"
+                    }
+                },
+                {
+                    "name": "LATON",
+                    "fixes": {
+                        "LATON": "LATON",
+                        "YEKUT": "OVERFLY YEKUT AT OR ABOVE 3400 HOLD AT YEKUT RIGHT TURN INBOUNDCOURSE 137 ALT 3400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV32",
+            "fixes": {
+                "NOVIC": "NOVIC AT OR ABOVE 2000",
+                "MAXKA": "MAXKA 1900",
+                "QEGCU": "QEGCU AT OR ABOVE 1140 RNW 32 TRK 318 UNTIL 700",
+                "OYUGO": "OVERFLY OYUGO AT OR ABOVE 2000 HOLD AT OYUGO RIGHT TURN INBOUNDCOURSE 358 ALT 2000 LEGDIST 4 FAF MAXKA MAP RNW 32"
+            },
+            "transitions": [
+                {
+                    "name": "EXTRA",
+                    "fixes": {
+                        "EXTRA": "EXTRA",
+                        "NOVIC": "OVERFLY NOVIC AT OR ABOVE 2700 HOLD AT NOVIC RIGHT TURN INBOUNDCOURSE 318 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "LATON",
+                    "fixes": {
+                        "LATON": "LATON",
+                        "NOVIC": "OVERFLY NOVIC AT OR ABOVE 2000 HOLD AT NOVIC RIGHT TURN INBOUNDCOURSE 318 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "PIXEY",
+                    "fixes": {
+                        "PIXEY": "PIXEY"
+                    }
+                }
+            ]
+        }
+    ]
+}

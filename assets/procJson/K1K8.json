@@ -1,0 +1,64 @@
+{
+    "fixes": [
+        {
+            "name": "FEXUT",
+            "lat": 36.73984166666666,
+            "lon": 95.01217778333333
+        },
+        {
+            "name": "JONAB",
+            "lat": 36.452947216666665,
+            "lon": 95.01416666666667
+        },
+        {
+            "name": "OMBAE",
+            "lat": 36.352811116666665,
+            "lon": 95.01485556666667
+        },
+        {
+            "name": "OXOSE",
+            "lat": 36.63971111666667,
+            "lon": 95.01287221666666
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "FEXUT": "FEXUT AT OR ABOVE 3000",
+                "OXOSE": "OXOSE 2500 RNW 18 TRK 178 UNTIL 1183",
+                "OMBAE": "OVERFLY OMBAE AT OR ABOVE 3000 HOLD AT OMBAE RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF OXOSE MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "FEXUT",
+                    "fixes": {
+                        "FEXUT": "FEXUT RIGHT TURN INBOUNDCOURSE 178 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "OMBAE": "OMBAE AT OR ABOVE 3000",
+                "JONAB": "JONAB 2500 RNW 36 TRK 358 UNTIL 1068",
+                "FEXUT": "OVERFLY FEXUT AT OR ABOVE 3000 HOLD AT FEXUT RIGHT TURN INBOUNDCOURSE 178 LEGDIST 4 FAF JONAB MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "OMBAE",
+                    "fixes": {
+                        "OMBAE": "OMBAE RIGHT TURN INBOUNDCOURSE 358 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,234 @@
+{
+    "fixes": [
+        {
+            "name": "AGTID",
+            "lat": 38.844925,
+            "lon": 177.30585556666668
+        },
+        {
+            "name": "AVMEB",
+            "lat": 38.84088333333333,
+            "lon": 177.39102778333333
+        },
+        {
+            "name": "BURLY",
+            "lat": 39.16963056666667,
+            "lon": 177.33089166666667
+        },
+        {
+            "name": "DER16",
+            "lat": 39.01575,
+            "lon": 177.40471388333333
+        },
+        {
+            "name": "DOMON",
+            "lat": 39.22704721666667,
+            "lon": 177.18408333333332
+        },
+        {
+            "name": "GOTNO",
+            "lat": 39.06130556666667,
+            "lon": 177.41241666666667
+        },
+        {
+            "name": "GOVDU",
+            "lat": 38.782294433333334,
+            "lon": 177.2887
+        },
+        {
+            "name": "GURSU",
+            "lat": 38.90960833333333,
+            "lon": 177.285325
+        },
+        {
+            "name": "HAWKE",
+            "lat": 38.88501943333333,
+            "lon": 177.66225556666666
+        },
+        {
+            "name": "IGMEK",
+            "lat": 38.66408333333333,
+            "lon": 176.94942221666668
+        },
+        {
+            "name": "IGPED",
+            "lat": 39.09899166666667,
+            "lon": 177.41122778333335
+        },
+        {
+            "name": "IKIMU",
+            "lat": 38.774275,
+            "lon": 177.38582221666667
+        },
+        {
+            "name": "IRMUV",
+            "lat": 38.98543888333333,
+            "lon": 177.08617221666665
+        },
+        {
+            "name": "MARKS",
+            "lat": 39.16559443333333,
+            "lon": 177.41645278333334
+        },
+        {
+            "name": "OPOHO",
+            "lat": 39.16149721666667,
+            "lon": 177.50200556666667
+        },
+        {
+            "name": "RITPU",
+            "lat": 38.91247778333333,
+            "lon": 177.39662778333334
+        },
+        {
+            "name": "UPSUV",
+            "lat": 38.83677778333333,
+            "lon": 177.47618888333332
+        },
+        {
+            "name": "WO412",
+            "lat": 39.045713883333335,
+            "lon": 177.40705833333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [
+        {
+            "name": "DOMO1P",
+            "rnw": "16",
+            "fixes": {
+                "DOMON": "DOMON"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "DOMO1Q",
+            "rnw": "34",
+            "fixes": {
+                "DOMON": "DOMON"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GOTN2Q",
+            "rnw": "34",
+            "fixes": {
+                "GOTNO": "GOTNO"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "GOVD1P",
+            "rnw": "16",
+            "fixes": {
+                "DER16": "OVERFLY DER16 TRK 155 UNTIL 1000 TURN RIGHT DIRECT",
+                "GOVDU": "GOVDU"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "HAWK1P",
+            "rnw": "16",
+            "fixes": {
+                "HAWKE": "HAWKE"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "IGME1P",
+            "rnw": "16",
+            "fixes": {
+                "DER16": "OVERFLY DER16 TRK 155 UNTIL 1000 TURN RIGHT DIRECT",
+                "IRMUV": "IRMUV",
+                "IGMEK": "IGMEK"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "IRMU1P",
+            "rnw": "16",
+            "fixes": {
+                "IRMUV": "IRMUV"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [
+        {
+            "name": "GURS2A",
+            "runway": "RNW 16",
+            "fixes": {
+                "GURSU": "GURSU AT OR BELOW 6500",
+                "AGTID": "AGTID"
+            }
+        }
+    ],
+    "approaches": [
+        {
+            "name": "RNAV16",
+            "fixes": {
+                "AVMEB": "AVMEB AT OR ABOVE 3000",
+                "RITPU": "RITPU 2030 RNW 16",
+                "MARKS": "MARKS AT OR ABOVE 2800 HOLD AT MARKS RIGHT TURN INBOUNDCOURSE 335 ALT 2800 LEGTIME 1 FAF RITPU MAP RNW 16"
+            },
+            "transitions": [
+                {
+                    "name": "AGTID",
+                    "fixes": {
+                        "AGTID": "AGTID"
+                    }
+                },
+                {
+                    "name": "IKIMU",
+                    "fixes": {
+                        "IKIMU": "IKIMU"
+                    }
+                },
+                {
+                    "name": "UPSUV",
+                    "fixes": {
+                        "UPSUV": "UPSUV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV34",
+            "fixes": {
+                "MARKS": "MARKS AT OR ABOVE 2800 MARKS AT OR ABOVE 2800 HOLD AT MARKS RIGHT TURN INBOUNDCOURSE 335 ALT 2800 LEGTIME 1 FAF IGPED MAP WO412",
+                "IGPED": "IGPED 1680",
+                "WO412": "OVERFLY WO412 656 RNW 34 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "BURLY",
+                    "fixes": {
+                        "BURLY": "BURLY"
+                    }
+                },
+                {
+                    "name": "MARKS",
+                    "fixes": {
+                        "MARKS": "MARKS RIGHT TURN INBOUNDCOURSE 335 ALT 2800 LEGTIME 1"
+                    }
+                },
+                {
+                    "name": "OPOHO",
+                    "fixes": {
+                        "OPOHO": "OPOHO"
+                    }
+                }
+            ]
+        }
+    ]
+}

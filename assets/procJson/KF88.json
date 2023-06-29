@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CIGED",
+            "lat": 32.17255,
+            "lon": 92.73243888333333
+        },
+        {
+            "name": "EYLEJ",
+            "lat": 32.23980278333333,
+            "lon": 92.73355833333333
+        },
+        {
+            "name": "FIMUG",
+            "lat": 32.379072216666664,
+            "lon": 92.73588056666667
+        },
+        {
+            "name": "PUYOC",
+            "lat": 32.10876666666667,
+            "lon": 92.73138056666667
+        },
+        {
+            "name": "UPSUW",
+            "lat": 32.2956,
+            "lon": 92.73448888333333
+        },
+        {
+            "name": "ZOBTA",
+            "lat": 32.02525833333333,
+            "lon": 92.72999443333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "FIMUG": "FIMUG AT OR ABOVE 2400",
+                "UPSUW": "UPSUW 2000",
+                "EYLEJ": "EYLEJ AT OR ABOVE 920 RNW 18 TRK 178 UNTIL 620",
+                "ZOBTA": "OVERFLY ZOBTA AT OR ABOVE 2000 HOLD AT ZOBTA RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4 FAF UPSUW MAP RNW 18"
+            },
+            "transitions": [
+                {
+                    "name": "FIMUG",
+                    "fixes": {
+                        "FIMUG": "FIMUG RIGHT TURN INBOUNDCOURSE 178 ALT 2400 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "ZOBTA": "ZOBTA AT OR ABOVE 2000",
+                "PUYOC": "PUYOC 2000",
+                "CIGED": "CIGED AT OR ABOVE 760 RNW 36 TRK 358 UNTIL 620",
+                "FIMUG": "OVERFLY FIMUG AT OR ABOVE 2400 HOLD AT FIMUG RIGHT TURN INBOUNDCOURSE 178 LEGDIST 4 FAF PUYOC MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "ZOBTA",
+                    "fixes": {
+                        "ZOBTA": "ZOBTA RIGHT TURN INBOUNDCOURSE 358 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,214 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 19.336135933333335,
+            "lon": 50.00481696666667
+        },
+        {
+            "name": "AF002",
+            "lat": 19.286934416666668,
+            "lon": 49.943353916666666
+        },
+        {
+            "name": "AF003",
+            "lat": 19.222555633333332,
+            "lon": 49.90044803333333
+        },
+        {
+            "name": "AF004",
+            "lat": 19.148972733333334,
+            "lon": 49.88005666666667
+        },
+        {
+            "name": "AF005",
+            "lat": 19.073004416666667,
+            "lon": 49.88403885
+        },
+        {
+            "name": "CD23",
+            "lat": 19.273138883333335,
+            "lon": 50.35494443333333
+        },
+        {
+            "name": "CF05",
+            "lat": 18.972555566666667,
+            "lon": 49.93202778333333
+        },
+        {
+            "name": "D240O",
+            "lat": 19.00225,
+            "lon": 49.91194443333333
+        },
+        {
+            "name": "EGSER",
+            "lat": 19.366555566666666,
+            "lon": 50.07938888333333
+        },
+        {
+            "name": "FD23",
+            "lat": 19.1745,
+            "lon": 50.21575
+        },
+        {
+            "name": "FF05",
+            "lat": 19.049527783333332,
+            "lon": 50.039777783333335
+        },
+        {
+            "name": "GEXIX",
+            "lat": 19.080055566666665,
+            "lon": 49.904361116666664
+        },
+        {
+            "name": "LONIV",
+            "lat": 19.0425,
+            "lon": 49.893
+        },
+        {
+            "name": "LUDIR",
+            "lat": 19.306194433333335,
+            "lon": 50.224027783333334
+        },
+        {
+            "name": "OM401",
+            "lat": 18.998916666666666,
+            "lon": 49.96802778333333
+        },
+        {
+            "name": "OM402",
+            "lat": 19.049583333333334,
+            "lon": 50.0395
+        },
+        {
+            "name": "OM500",
+            "lat": 19.224944433333334,
+            "lon": 50.28763888333334
+        },
+        {
+            "name": "OM501",
+            "lat": 19.174333333333333,
+            "lon": 50.215888883333335
+        },
+        {
+            "name": "UME",
+            "lat": 19.123027783333335,
+            "lon": 50.14325
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 23"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD05",
+            "fixes": {
+                "CF05": "CF05 AT OR ABOVE 2500",
+                "FF05": "FF05 2500 RNW 05",
+                "UME": "OVERFLY UME AT OR ABOVE 1180 TURN LEFT HDG 220 INTERCEPT RADIAL 250 TO",
+                "LONIV": "LONIV LONIV 3500 SPEED 230 HOLD AT LONIV LEFT TURN INBOUNDCOURSE 070 SPEED 230 LEGDIST 4 FAF FF05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "EGSER",
+                    "fixes": {
+                        "EGSER": "EGSER"
+                    }
+                },
+                {
+                    "name": "LONIV",
+                    "fixes": {
+                        "LONIV": "LONIV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORD23",
+            "fixes": {
+                "CD23": "CD23 AT OR ABOVE 2500",
+                "FD23": "FD23 2500",
+                "UME": "UME 912 RNW 23 TRK 232 UNTIL 1180 TURN RIGHT HDG 020 INTERCEPT RADIAL 344 TO",
+                "EGSER": "EGSER EGSER 3500 SPEED 230 HOLD AT EGSER LEFT TURN INBOUNDCOURSE 164 SPEED 230 LEGDIST 4 FAF FD23 MAP UME"
+            },
+            "transitions": [
+                {
+                    "name": "EGSER",
+                    "fixes": {
+                        "EGSER": "EGSER"
+                    }
+                },
+                {
+                    "name": "LONIV",
+                    "fixes": {
+                        "LONIV": "LONIV"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ILS05",
+            "fixes": {
+                "CF05": "CF05 AT OR ABOVE 2500",
+                "FF05": "FF05 2500 RNW 05 TRK 052 UNTIL 1500 TURN LEFT HDG 220 INTERCEPT RADIAL 250 TO",
+                "LONIV": "LONIV LONIV 3500 SPEED 230 HOLD AT LONIV LEFT TURN INBOUNDCOURSE 070 SPEED 230 LEGTIME 1 FAF FF05 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "EGSER",
+                    "fixes": {
+                        "EGSER": "EGSER",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "D240O": "D240O AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "LONIV",
+                    "fixes": {
+                        "LONIV": "LONIV",
+                        "D240O": "D240O"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV05",
+            "fixes": {
+                "OM401": "OM401 AT OR ABOVE 2500",
+                "OM402": "OM402 2500 RNW 05 TRK 052 UNTIL 2000 TURN LEFT DIRECT",
+                "GEXIX": "GEXIX AT OR ABOVE 3500 HOLD AT GEXIX RIGHT TURN INBOUNDCOURSE 142 ALT 3500 SPEED 230 LEGTIME 1 FAF OM402 MAP RNW 05"
+            },
+            "transitions": [
+                {
+                    "name": "GEXIX",
+                    "fixes": {
+                        "GEXIX": "GEXIX AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV23",
+            "fixes": {
+                "OM500": "OM500 AT OR ABOVE 2500",
+                "OM501": "OM501 2500 RNW 23 TRK 232 UNTIL 2000 TURN RIGHT DIRECT",
+                "LUDIR": "LUDIR AT OR ABOVE 3500 HOLD AT LUDIR LEFT TURN INBOUNDCOURSE 142 ALT 3500 SPEED 230 LEGTIME 1 FAF OM501 MAP RNW 23"
+            },
+            "transitions": [
+                {
+                    "name": "LUDIR",
+                    "fixes": {
+                        "LUDIR": "LUDIR AT OR ABOVE 3500"
+                    }
+                }
+            ]
+        }
+    ]
+}

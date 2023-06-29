@@ -1,0 +1,144 @@
+{
+    "fixes": [
+        {
+            "name": "40THR",
+            "lat": 65.88036111666666,
+            "lon": 17.46215
+        },
+        {
+            "name": "DER02",
+            "lat": 65.95953333333334,
+            "lon": 17.422394433333334
+        },
+        {
+            "name": "GANB",
+            "lat": 65.87783333333333,
+            "lon": 17.463277783333332
+        },
+        {
+            "name": "GUGSI",
+            "lat": 65.63406111666667,
+            "lon": 17.583836116666667
+        },
+        {
+            "name": "HS",
+            "lat": 65.92702778333333,
+            "lon": 17.43875
+        },
+        {
+            "name": "HUF02",
+            "lat": 65.83805556666667,
+            "lon": 17.4833
+        },
+        {
+            "name": "HUI02",
+            "lat": 65.71545556666666,
+            "lon": 17.54385278333333
+        },
+        {
+            "name": "HUT02",
+            "lat": 66.18118888333333,
+            "lon": 17.309863883333332
+        },
+        {
+            "name": "LEBGO",
+            "lat": 65.68077778333333,
+            "lon": 17.557611116666667
+        },
+        {
+            "name": "MAMEP",
+            "lat": 65.69881388333333,
+            "lon": 17.346308333333333
+        },
+        {
+            "name": "RETUR",
+            "lat": 65.53861111666667,
+            "lon": 17.624722216666665
+        },
+        {
+            "name": "SUXOT",
+            "lat": 65.73184166666667,
+            "lon": 17.74165
+        },
+        {
+            "name": "TESSE",
+            "lat": 66.33410556666666,
+            "lon": 18.030511116666666
+        }
+    ],
+    "rnws": [
+        "RNW 02",
+        "RNW 20"
+    ],
+    "sids": [
+        {
+            "name": "RETU1A",
+            "rnw": "20",
+            "fixes": {
+                "GANB": "GANB",
+                "LEBGO": "LEBGO AT OR BELOW 5500 AT OR ABOVE 5000",
+                "RETUR": "RETUR AT OR ABOVE 6600"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        },
+        {
+            "name": "TESE1A",
+            "rnw": "02",
+            "fixes": {
+                "DER02": "OVERFLY DER02 TRK 008 UNTIL 1500",
+                "TESSE": "TESSE AT OR ABOVE 6000"
+            },
+            "sub_fixes": [],
+            "transitions": []
+        }
+    ],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB02",
+            "fixes": {
+                "GANB": "GANB 1700 GANB 4200 HOLD AT GANB RIGHT TURN INBOUNDCOURSE 008 ALT 4200 LEGTIME 1 FAF GANB MAP HS",
+                "HS": "HS 534 RNW 02 TRK 022 UNTIL 3100 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "GA",
+                    "fixes": {
+                        "GANB": "GANB RIGHT TURN INBOUNDCOURSE 008 ALT 3300 LEGTIME 2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV02",
+            "fixes": {
+                "HUI02": "HUI02 AT OR ABOVE 4000",
+                "HUF02": "HUF02 2500",
+                "40THR": "40THR AT OR ABOVE 1560 RNW 02",
+                "HUT02": "OVERFLY HUT02 TURN RIGHT DIRECT",
+                "MAMEP": "OVERFLY MAMEP 4000 HOLD AT MAMEP RIGHT TURN INBOUNDCOURSE 293 ALT 4000 LEGTIME 1 FAF HUF02 MAP RNW 02"
+            },
+            "transitions": [
+                {
+                    "name": "GUGSI",
+                    "fixes": {
+                        "GUGSI": "GUGSI AT OR ABOVE 5200"
+                    }
+                },
+                {
+                    "name": "MAMEP",
+                    "fixes": {
+                        "MAMEP": "MAMEP AT OR ABOVE 4800"
+                    }
+                },
+                {
+                    "name": "SUXOT",
+                    "fixes": {
+                        "SUXOT": "SUXOT AT OR ABOVE 5500"
+                    }
+                }
+            ]
+        }
+    ]
+}

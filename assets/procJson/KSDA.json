@@ -1,0 +1,122 @@
+{
+    "fixes": [
+        {
+            "name": "COVUT",
+            "lat": 40.284269433333336,
+            "lon": 95.754175
+        },
+        {
+            "name": "CUVEM",
+            "lat": 40.55468056666667,
+            "lon": 95.5037
+        },
+        {
+            "name": "HUVNO",
+            "lat": 40.98004443333333,
+            "lon": 95.59231388333333
+        },
+        {
+            "name": "MADTE",
+            "lat": 40.76955,
+            "lon": 95.43109443333333
+        },
+        {
+            "name": "OBREC",
+            "lat": 40.974688883333336,
+            "lon": 95.12659721666667
+        },
+        {
+            "name": "OVR",
+            "lat": 41.16716666666667,
+            "lon": 95.73685278333333
+        },
+        {
+            "name": "PICAM",
+            "lat": 40.83589443333334,
+            "lon": 95.48177778333333
+        },
+        {
+            "name": "TRAIG",
+            "lat": 40.38344721666667,
+            "lon": 95.20584166666667
+        },
+        {
+            "name": "VIKKI",
+            "lat": 40.69310278333333,
+            "lon": 95.41387221666666
+        },
+        {
+            "name": "WUVIS",
+            "lat": 40.61175,
+            "lon": 95.58345
+        },
+        {
+            "name": "YUBPU",
+            "lat": 40.67789166666667,
+            "lon": 95.50193888333334
+        },
+        {
+            "name": "ZILSO",
+            "lat": 40.8789,
+            "lon": 95.25278333333333
+        }
+    ],
+    "rnws": [
+        "RNW 04",
+        "RNW 12",
+        "RNW 22",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD12",
+            "fixes": {
+                "HUVNO": "HUVNO AT OR ABOVE 2900",
+                "PICAM": "PICAM 2800 PICAM AT OR ABOVE 2800 HOLD AT PICAM RIGHT TURN INBOUNDCOURSE 142 LEGTIME 1 FAF PICAM MAP MADTE",
+                "MADTE": "MADTE 1312 RNW 12 TRK 142 UNTIL 1380 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "OVR",
+                    "fixes": {
+                        "OVR": "OVR"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV04",
+            "fixes": {
+                "WUVIS": "WUVIS AT OR ABOVE 3000",
+                "YUBPU": "YUBPU 2800 RNW 04 TRK 038 UNTIL 1230",
+                "ZILSO": "ZILSO",
+                "OBREC": "OVERFLY OBREC AT OR ABOVE 3000 HOLD AT OBREC RIGHT TURN INBOUNDCOURSE 234 LEGDIST 4 FAF YUBPU MAP RNW 04"
+            },
+            "transitions": [
+                {
+                    "name": "COVUT",
+                    "fixes": {
+                        "COVUT": "COVUT",
+                        "CUVEM": "CUVEM AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "TRAIG",
+                    "fixes": {
+                        "TRAIG": "TRAIG",
+                        "CUVEM": "CUVEM AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "VIKKI",
+                    "fixes": {
+                        "VIKKI": "VIKKI",
+                        "WUVIS": "OVERFLY WUVIS AT OR ABOVE 3000 HOLD AT WUVIS RIGHT TURN INBOUNDCOURSE 038 ALT 3000 LEGDIST 5"
+                    }
+                }
+            ]
+        }
+    ]
+}

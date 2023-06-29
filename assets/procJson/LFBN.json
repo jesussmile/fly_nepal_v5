@@ -1,0 +1,74 @@
+{
+    "fixes": [
+        {
+            "name": "BN410",
+            "lat": 46.29527778333333,
+            "lon": 0.45733333333333337
+        },
+        {
+            "name": "FBN25",
+            "lat": 46.35905556666667,
+            "lon": 0.23547221666666665
+        },
+        {
+            "name": "IBN25",
+            "lat": 46.39083333333333,
+            "lon": 0.12419443333333334
+        },
+        {
+            "name": "NIGAG",
+            "lat": 46.25638888333334,
+            "lon": 0.27875
+        },
+        {
+            "name": "NIPLO",
+            "lat": 46.313805566666666,
+            "lon": 0.07841666666666666
+        },
+        {
+            "name": "NIRAP",
+            "lat": 46.46786111666667,
+            "lon": 0.17008333333333334
+        }
+    ],
+    "rnws": [
+        "RNW 07",
+        "RNW 07L",
+        "RNW 25",
+        "RNW 25R"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV25",
+            "fixes": {
+                "IBN25": "IBN25 AT OR ABOVE 2500 SPEED 190",
+                "FBN25": "FBN25 2500 RNW 25",
+                "BN410": "OVERFLY BN410 TURN LEFT DIRECT",
+                "NIGAG": "NIGAG AT OR ABOVE 2500 SPEED 225 FAF FBN25 MAP RNW 25"
+            },
+            "transitions": [
+                {
+                    "name": "NIGAG",
+                    "fixes": {
+                        "NIGAG": "NIGAG AT OR ABOVE 2500 SPEED 225",
+                        "NIPLO": "NIPLO SPEED 210"
+                    }
+                },
+                {
+                    "name": "NIPLO",
+                    "fixes": {
+                        "NIPLO": "NIPLO SPEED 210"
+                    }
+                },
+                {
+                    "name": "NIRAP",
+                    "fixes": {
+                        "NIRAP": "NIRAP SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

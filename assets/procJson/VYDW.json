@@ -1,0 +1,86 @@
+{
+    "fixes": [
+        {
+            "name": "D177H",
+            "lat": 13.966972216666667,
+            "lon": 98.21636943333333
+        },
+        {
+            "name": "DWI",
+            "lat": 14.100561116666666,
+            "lon": 98.20680278333333
+        },
+        {
+            "name": "DWINB",
+            "lat": 14.099613883333333,
+            "lon": 98.20046111666667
+        },
+        {
+            "name": "EP16",
+            "lat": 14.108372216666666,
+            "lon": 98.19839166666667
+        },
+        {
+            "name": "FF16",
+            "lat": 14.191580566666667,
+            "lon": 98.16329443333333
+        },
+        {
+            "name": "FN16",
+            "lat": 14.186052783333333,
+            "lon": 98.18000278333334
+        }
+    ],
+    "rnws": [
+        "RNW 16",
+        "RNW 34"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD16",
+            "fixes": {
+                "FF16": "FF16 1850 RNW 16",
+                "DWI": "OVERFLY DWI DWI 4000 HOLD AT DWI RIGHT TURN INBOUNDCOURSE 009 ALT 4000 LEGTIME 1 FAF FF16 MAP RNW 16",
+                "D177H": "OVERFLY D177H TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "DWI1",
+                    "fixes": {
+                        "DWI": "DWI AT OR ABOVE 4000 TRK 009 UNTIL 7.5 FROM DWI"
+                    }
+                },
+                {
+                    "name": "DWI2",
+                    "fixes": {
+                        "DWI": "DWI AT OR ABOVE 4000 TRK 348 UNTIL 7.5 FROM DWI"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDB16",
+            "fixes": {
+                "FN16": "FN16 1720",
+                "EP16": "OVERFLY EP16 123",
+                "DWINB": "OVERFLY DWINB AT OR ABOVE 490 RNW 16 HDG 180 UNTIL 2000 TURN RIGHT DIRECT DWINB 3000 HOLD AT DWINB RIGHT TURN INBOUNDCOURSE 018 LEGTIME 1 FAF FN16 MAP DWI"
+            },
+            "transitions": [
+                {
+                    "name": "DWI1",
+                    "fixes": {
+                        "DWINB": "DWINB AT OR ABOVE 3000 TRK 018 UNTIL 5.3 FROM DWINB"
+                    }
+                },
+                {
+                    "name": "DWI2",
+                    "fixes": {
+                        "DWINB": "DWINB AT OR ABOVE 3000 TRK 003 UNTIL 7.5 FROM DWINB"
+                    }
+                }
+            ]
+        }
+    ]
+}

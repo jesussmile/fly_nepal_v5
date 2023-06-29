@@ -1,0 +1,96 @@
+{
+    "fixes": [
+        {
+            "name": "ASPEE",
+            "lat": 0.18531943333333334,
+            "lon": 73.31513888333333
+        },
+        {
+            "name": "BILIF",
+            "lat": 0.265325,
+            "lon": 73.29055833333334
+        },
+        {
+            "name": "DODEY",
+            "lat": 0.2739277833333333,
+            "lon": 73.59987778333333
+        },
+        {
+            "name": "GEMIS",
+            "lat": 0.4339388833333333,
+            "lon": 73.55071666666667
+        },
+        {
+            "name": "MALEG",
+            "lat": 0.3539333333333333,
+            "lon": 73.57529721666667
+        },
+        {
+            "name": "MF110",
+            "lat": 0.28264721666666665,
+            "lon": 73.34618888333333
+        },
+        {
+            "name": "MF290",
+            "lat": 0.3366111166666667,
+            "lon": 73.51966943333333
+        },
+        {
+            "name": "TOODU",
+            "lat": 0.34533056666666667,
+            "lon": 73.26597778333333
+        }
+    ],
+    "rnws": [
+        "RNW 11",
+        "RNW 29"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV11",
+            "fixes": {
+                "BILIF": "BILIF AT OR ABOVE 1700",
+                "MF110": "MF110 1700 RNW 11 TRK 111 UNTIL 3000 TURN LEFT DIRECT",
+                "ASPEE": "OVERFLY ASPEE 3000 HOLD AT ASPEE RIGHT TURN INBOUNDCOURSE 201 ALT 3000 LEGTIME 1 FAF MF110 MAP RNW 11"
+            },
+            "transitions": [
+                {
+                    "name": "ASPEE",
+                    "fixes": {
+                        "ASPEE": "ASPEE"
+                    }
+                },
+                {
+                    "name": "TOODU",
+                    "fixes": {
+                        "TOODU": "TOODU"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV29",
+            "fixes": {
+                "MALEG": "MALEG AT OR ABOVE 1700",
+                "MF290": "MF290 1700 RNW 29 TRK 291 UNTIL 3000 TURN RIGHT DIRECT",
+                "DODEY": "OVERFLY DODEY 3000 HOLD AT DODEY RIGHT TURN INBOUNDCOURSE 201 ALT 3000 LEGTIME 1 FAF MF290 MAP RNW 29"
+            },
+            "transitions": [
+                {
+                    "name": "DODEY",
+                    "fixes": {
+                        "DODEY": "DODEY"
+                    }
+                },
+                {
+                    "name": "GEMIS",
+                    "fixes": {
+                        "GEMIS": "GEMIS"
+                    }
+                }
+            ]
+        }
+    ]
+}

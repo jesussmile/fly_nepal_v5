@@ -1,0 +1,111 @@
+{
+    "fixes": [
+        {
+            "name": "AMURE",
+            "lat": 48.028561116666665,
+            "lon": 112.27879166666666
+        },
+        {
+            "name": "BEDEW",
+            "lat": 47.9162,
+            "lon": 112.21697778333333
+        },
+        {
+            "name": "CALAD",
+            "lat": 47.62935556666667,
+            "lon": 112.06044721666666
+        },
+        {
+            "name": "CHOTE",
+            "lat": 47.66574443333333,
+            "lon": 112.16059166666666
+        },
+        {
+            "name": "CTB",
+            "lat": 48.56494721666667,
+            "lon": 112.34325556666667
+        },
+        {
+            "name": "DOZRE",
+            "lat": 47.74131388333333,
+            "lon": 112.14335556666667
+        },
+        {
+            "name": "EMUTE",
+            "lat": 47.77219443333333,
+            "lon": 112.15159443333333
+        },
+        {
+            "name": "FAMOT",
+            "lat": 47.820283333333336,
+            "lon": 112.16444166666666
+        },
+        {
+            "name": "GTF",
+            "lat": 47.44998056666667,
+            "lon": 111.41216388333333
+        },
+        {
+            "name": "SHIMY",
+            "lat": 47.46203333333333,
+            "lon": 112.12009166666667
+        }
+    ],
+    "rnws": [
+        "RNW 05",
+        "RNW 15",
+        "RNW 23",
+        "RNW 33"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV15",
+            "fixes": {
+                "AMURE": "AMURE AT OR ABOVE 6600",
+                "BEDEW": "BEDEW 5600 RNW 15 TRK 148 UNTIL 4143",
+                "CALAD": "OVERFLY CALAD AT OR ABOVE 6200 HOLD AT CALAD RIGHT TURN INBOUNDCOURSE 148 LEGDIST 7 FAF BEDEW MAP RNW 15"
+            },
+            "transitions": [
+                {
+                    "name": "CTB",
+                    "fixes": {
+                        "CTB": "CTB"
+                    }
+                },
+                {
+                    "name": "GTF",
+                    "fixes": {
+                        "GTF": "GTF",
+                        "AMURE": "OVERFLY AMURE AT OR ABOVE 6600 HOLD AT AMURE RIGHT TURN INBOUNDCOURSE 148 ALT 6600 LEGDIST 7"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV33",
+            "fixes": {
+                "CHOTE": "CHOTE AT OR ABOVE 7000",
+                "DOZRE": "DOZRE 5600",
+                "EMUTE": "EMUTE AT OR ABOVE 5000",
+                "FAMOT": "OVERFLY FAMOT 4065 RNW 33 TRK 338 UNTIL 4347",
+                "AMURE": "OVERFLY AMURE AT OR ABOVE 6600 HOLD AT AMURE RIGHT TURN INBOUNDCOURSE 148 LEGDIST 7 FAF DOZRE MAP FAMO"
+            },
+            "transitions": [
+                {
+                    "name": "CHOTE",
+                    "fixes": {
+                        "CHOTE": "CHOTE LEFT TURN INBOUNDCOURSE 357 ALT 7000 LEGDIST 7"
+                    }
+                },
+                {
+                    "name": "SHIMY",
+                    "fixes": {
+                        "SHIMY": "SHIMY"
+                    }
+                }
+            ]
+        }
+    ]
+}

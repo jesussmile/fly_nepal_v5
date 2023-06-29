@@ -1,0 +1,174 @@
+{
+    "fixes": [
+        {
+            "name": "CATVU",
+            "lat": 34.93203056666667,
+            "lon": 88.976675
+        },
+        {
+            "name": "CEDAS",
+            "lat": 34.56013888333333,
+            "lon": 89.13619166666666
+        },
+        {
+            "name": "FIGEK",
+            "lat": 34.646088883333334,
+            "lon": 89.07203611666667
+        },
+        {
+            "name": "HADAG",
+            "lat": 34.88806388333333,
+            "lon": 88.89054443333333
+        },
+        {
+            "name": "HLI",
+            "lat": 34.77024443333333,
+            "lon": 89.49651943333333
+        },
+        {
+            "name": "HONSA",
+            "lat": 34.51629166666667,
+            "lon": 89.05034721666667
+        },
+        {
+            "name": "HOPSO",
+            "lat": 34.60392221666667,
+            "lon": 89.22211943333333
+        },
+        {
+            "name": "HOTGO",
+            "lat": 34.844036116666665,
+            "lon": 88.80450556666666
+        },
+        {
+            "name": "HOXOS",
+            "lat": 34.686352783333334,
+            "lon": 89.04192778333334
+        },
+        {
+            "name": "JIDAD",
+            "lat": 34.76053056666667,
+            "lon": 88.98636666666667
+        },
+        {
+            "name": "JUSNO",
+            "lat": 34.802216666666666,
+            "lon": 88.95508333333333
+        },
+        {
+            "name": "MACVE",
+            "lat": 34.723025,
+            "lon": 89.01773611666667
+        },
+        {
+            "name": "NUTTE",
+            "lat": 34.73076111666666,
+            "lon": 89.09481388333333
+        },
+        {
+            "name": "TIRED",
+            "lat": 34.75067778333333,
+            "lon": 89.29560833333333
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORDA03",
+            "fixes": {
+                "TIRED": "TIRED AT OR ABOVE 2300",
+                "NUTTE": "NUTTE 2300",
+                "MACVE": "MACVE 1100 RNW 03 TRK 094 UNTIL 1100 TURN LEFT HDG 251 INTERCEPT RADIAL 274 TO",
+                "HLI": "HLI HLI AT OR ABOVE 3000 HOLD AT HLI RIGHT TURN INBOUNDCOURSE 292 LEGTIME 1 FAF NUTTE MAP MACVE"
+            },
+            "transitions": [
+                {
+                    "name": "HLI",
+                    "fixes": {
+                        "HLI": "HLI AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "VORDA21",
+            "fixes": {
+                "TIRED": "TIRED AT OR ABOVE 2300",
+                "NUTTE": "NUTTE 2300",
+                "MACVE": "MACVE 1100 RNW 21 TRK 094 UNTIL 1100 TURN LEFT HDG 251 INTERCEPT RADIAL 274 TO",
+                "HLI": "HLI HLI AT OR ABOVE 3000 HOLD AT HLI RIGHT TURN INBOUNDCOURSE 292 LEGTIME 1 FAF NUTTE MAP MACVE"
+            },
+            "transitions": [
+                {
+                    "name": "HLI",
+                    "fixes": {
+                        "HLI": "HLI AT OR ABOVE 2300"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "CEDAS": "CEDAS AT OR ABOVE 2500",
+                "FIGEK": "FIGEK 2400",
+                "HOXOS": "HOXOS AT OR ABOVE 1300 RNW 03 TRK 033 UNTIL 867",
+                "HADAG": "OVERFLY HADAG AT OR ABOVE 2400 HOLD AT HADAG RIGHT TURN INBOUNDCOURSE 213 LEGDIST 5 FAF FIGEK MAP RNW 03"
+            },
+            "transitions": [
+                {
+                    "name": "CEDAS",
+                    "fixes": {
+                        "CEDAS": "CEDAS RIGHT TURN INBOUNDCOURSE 033 ALT 2500 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "HONSA",
+                    "fixes": {
+                        "HONSA": "HONSA AT OR ABOVE 2500"
+                    }
+                },
+                {
+                    "name": "HOPSO",
+                    "fixes": {
+                        "HOPSO": "HOPSO AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "HADAG": "HADAG AT OR ABOVE 2400",
+                "JUSNO": "JUSNO 2200",
+                "JIDAD": "JIDAD AT OR ABOVE 1220 RNW 21 TRK 213 UNTIL 867",
+                "CEDAS": "OVERFLY CEDAS AT OR ABOVE 2500 HOLD AT CEDAS RIGHT TURN INBOUNDCOURSE 033 LEGDIST 5 FAF JUSNO MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "CATVU",
+                    "fixes": {
+                        "CATVU": "CATVU AT OR ABOVE 2400"
+                    }
+                },
+                {
+                    "name": "HADAG",
+                    "fixes": {
+                        "HADAG": "HADAG RIGHT TURN INBOUNDCOURSE 213 ALT 2400 LEGDIST 5"
+                    }
+                },
+                {
+                    "name": "HOTGO",
+                    "fixes": {
+                        "HOTGO": "HOTGO AT OR ABOVE 2500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "fixes": [
+        {
+            "name": "CIKOB",
+            "lat": 33.20498611666667,
+            "lon": 87.98021666666666
+        },
+        {
+            "name": "FEPON",
+            "lat": 33.1322,
+            "lon": 88.14108333333333
+        },
+        {
+            "name": "JOGAM",
+            "lat": 33.058675,
+            "lon": 88.30284443333333
+        },
+        {
+            "name": "UDLEQ",
+            "lat": 33.08285,
+            "lon": 88.24974443333333
+        },
+        {
+            "name": "ZESLO",
+            "lat": 33.008119433333334,
+            "lon": 88.41364721666666
+        },
+        {
+            "name": "ZOLUG",
+            "lat": 33.154544433333335,
+            "lon": 88.091775
+        }
+    ],
+    "rnws": [
+        "RNW 06",
+        "RNW 24"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "RNAV06",
+            "fixes": {
+                "ZESLO": "ZESLO AT OR ABOVE 3000",
+                "JOGAM": "JOGAM 2000",
+                "UDLEQ": "UDLEQ AT OR ABOVE 1020 RNW 06 TRK 064 UNTIL 550",
+                "CIKOB": "OVERFLY CIKOB AT OR ABOVE 3000 HOLD AT CIKOB RIGHT TURN INBOUNDCOURSE 244 LEGDIST 4 FAF JOGAM MAP RNW 06"
+            },
+            "transitions": [
+                {
+                    "name": "ZESLO",
+                    "fixes": {
+                        "ZESLO": "ZESLO RIGHT TURN INBOUNDCOURSE 064 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV24",
+            "fixes": {
+                "CIKOB": "CIKOB AT OR ABOVE 3000",
+                "ZOLUG": "ZOLUG 2000",
+                "FEPON": "FEPON AT OR ABOVE 1100 RNW 24 TRK 244 UNTIL 550",
+                "ZESLO": "OVERFLY ZESLO AT OR ABOVE 3000 HOLD AT ZESLO RIGHT TURN INBOUNDCOURSE 064 LEGDIST 4 FAF ZOLUG MAP RNW 24"
+            },
+            "transitions": [
+                {
+                    "name": "CIKOB",
+                    "fixes": {
+                        "CIKOB": "CIKOB RIGHT TURN INBOUNDCOURSE 244 ALT 3000 LEGDIST 4"
+                    }
+                }
+            ]
+        }
+    ]
+}

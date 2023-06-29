@@ -1,0 +1,121 @@
+{
+    "fixes": [
+        {
+            "name": "CI12",
+            "lat": 25.957430566666666,
+            "lon": 93.61916388333333
+        },
+        {
+            "name": "D119B",
+            "lat": 25.870947216666668,
+            "lon": 93.79843888333333
+        },
+        {
+            "name": "DMR",
+            "lat": 25.880916666666668,
+            "lon": 93.78202778333333
+        },
+        {
+            "name": "FI12",
+            "lat": 25.935405566666667,
+            "lon": 93.66485556666666
+        },
+        {
+            "name": "FN210",
+            "lat": 25.974675,
+            "lon": 93.82375
+        },
+        {
+            "name": "FS205",
+            "lat": 25.987805566666665,
+            "lon": 93.8347
+        },
+        {
+            "name": "MRNB",
+            "lat": 25.884027783333334,
+            "lon": 93.76816666666667
+        }
+    ],
+    "rnws": [
+        "RNW 12",
+        "RNW 30"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS12",
+            "fixes": {
+                "CI12": "CI12 AT OR ABOVE 2700",
+                "FI12": "FI12 2600 RNW 12",
+                "D119B": "OVERFLY D119B TURN LEFT DIRECT",
+                "DMR": "DMR 6100 SPEED 170 HOLD AT DMR RIGHT TURN INBOUNDCOURSE 119 ALT 6100 LEGTIME 1 FAF FI12 MAP RNW 12"
+            },
+            "transitions": []
+        },
+        {
+            "name": "NDBDB12",
+            "fixes": {
+                "FN210": "FN210 3000",
+                "MRNB": "MRNB 1500 RNW 12 TRK 225 UNTIL 3400 TURN RIGHT DIRECT MRNB 6000 HOLD AT MRNB LEFT TURN INBOUNDCOURSE 045 ALT 6000 SPEED 220 LEGTIME 1 FAF FN210 MAP MR"
+            },
+            "transitions": [
+                {
+                    "name": "MR",
+                    "fixes": {
+                        "MRNB": "MRNB AT OR ABOVE 6000 SPEED 185",
+                        "FN210": "FN210 AT OR ABOVE 4000 TRK 345 UNTIL 3.9 FROM FN210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NDBDB30",
+            "fixes": {
+                "FN210": "FN210 3000",
+                "MRNB": "MRNB 1500 RNW 30 TRK 225 UNTIL 3400 TURN RIGHT DIRECT MRNB 6000 HOLD AT MRNB LEFT TURN INBOUNDCOURSE 045 ALT 6000 SPEED 220 LEGTIME 1 FAF FN210 MAP MR"
+            },
+            "transitions": [
+                {
+                    "name": "MR",
+                    "fixes": {
+                        "MRNB": "MRNB AT OR ABOVE 6000 SPEED 185",
+                        "FN210": "FN210 AT OR ABOVE 4000 TRK 345 UNTIL 3.9 FROM FN210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVR12",
+            "fixes": {
+                "FS205": "FS205 3000",
+                "DMR": "DMR 1500 RNW 12 TRK 225 UNTIL 3400 TURN RIGHT DIRECT DMR 6000 HOLD AT DMR LEFT TURN INBOUNDCOURSE 040 ALT 6000 SPEED 220 LEGTIME 1 FAF FS205 MAP DMR"
+            },
+            "transitions": [
+                {
+                    "name": "DMR",
+                    "fixes": {
+                        "DMR": "DMR AT OR ABOVE 6000 SPEED 185",
+                        "FS205": "FS205 AT OR ABOVE 3800 TRK 340 UNTIL 3.9 FROM FS205"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVR30",
+            "fixes": {
+                "FS205": "FS205 3000",
+                "DMR": "DMR 1500 RNW 30 TRK 225 UNTIL 3400 TURN RIGHT DIRECT DMR 6000 HOLD AT DMR LEFT TURN INBOUNDCOURSE 040 ALT 6000 SPEED 220 LEGTIME 1 FAF FS205 MAP DMR"
+            },
+            "transitions": [
+                {
+                    "name": "DMR",
+                    "fixes": {
+                        "DMR": "DMR AT OR ABOVE 6000 SPEED 185",
+                        "FS205": "FS205 AT OR ABOVE 3800 TRK 340 UNTIL 3.9 FROM FS205"
+                    }
+                }
+            ]
+        }
+    ]
+}

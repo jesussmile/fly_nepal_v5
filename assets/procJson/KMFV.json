@@ -1,0 +1,150 @@
+{
+    "fixes": [
+        {
+            "name": "CAGXY",
+            "lat": 37.60122221666666,
+            "lon": 75.795875
+        },
+        {
+            "name": "CCV",
+            "lat": 37.347538883333335,
+            "lon": 75.99765278333334
+        },
+        {
+            "name": "EXMOR",
+            "lat": 37.55896666666666,
+            "lon": 75.8296
+        },
+        {
+            "name": "JAGNO",
+            "lat": 37.64056943333333,
+            "lon": 75.76443333333333
+        },
+        {
+            "name": "MELFA",
+            "lat": 37.572375,
+            "lon": 75.80074166666667
+        },
+        {
+            "name": "PACIV",
+            "lat": 37.89567221666667,
+            "lon": 75.62781943333333
+        },
+        {
+            "name": "RERSE",
+            "lat": 37.72523056666667,
+            "lon": 75.71919443333333
+        },
+        {
+            "name": "SWL",
+            "lat": 38.05659443333333,
+            "lon": 75.4639
+        },
+        {
+            "name": "UCGEL",
+            "lat": 37.479405566666664,
+            "lon": 75.85015278333333
+        },
+        {
+            "name": "ZIXER",
+            "lat": 37.81890833333333,
+            "lon": 75.66903056666666
+        },
+        {
+            "name": "ZUXIG",
+            "lat": 37.41804166666667,
+            "lon": 75.94174166666667
+        }
+    ],
+    "rnws": [
+        "RNW 03",
+        "RNW 21"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD03",
+            "fixes": {
+                "ZUXIG": "ZUXIG AT OR ABOVE 1900",
+                "EXMOR": "EXMOR 1900 EXMOR EXMOR AT OR ABOVE 1900 HOLD AT EXMOR RIGHT TURN INBOUNDCOURSE 042 LEGTIME 1 FAF EXMOR MAP JAGNO",
+                "CAGXY": "CAGXY AT OR ABOVE 960",
+                "JAGNO": "JAGNO 87 RNW 03 TRK 042 UNTIL 460 TURN RIGHT HDG 240 INTERCEPT RADIAL 222 TO"
+            },
+            "transitions": [
+                {
+                    "name": "CCV",
+                    "fixes": {
+                        "CCV": "CCV"
+                    }
+                },
+                {
+                    "name": "EXMOR",
+                    "fixes": {
+                        "EXMOR": "EXMOR RIGHT TURN INBOUNDCOURSE 042 ALT 1900 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "LOC03",
+            "fixes": {
+                "UCGEL": "UCGEL AT OR ABOVE 2000 UCGEL UCGEL AT OR ABOVE 2000 HOLD AT UCGEL RIGHT TURN INBOUNDCOURSE 034 LEGTIME 1 FAF MELFA MAP RNW 03",
+                "MELFA": "MELFA 1500 RNW 03 TRK 034 UNTIL 450 TURN RIGHT HDG 220 INTERCEPT RADIAL 232 TO"
+            },
+            "transitions": [
+                {
+                    "name": "CCV",
+                    "fixes": {
+                        "CCV": "CCV AT OR ABOVE 2000 TRK 052 UNTIL 6.6 FROM CCV"
+                    }
+                },
+                {
+                    "name": "UCGEL",
+                    "fixes": {
+                        "UCGEL": "UCGEL RIGHT TURN INBOUNDCOURSE 034 ALT 2000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV03",
+            "fixes": {
+                "UCGEL": "UCGEL AT OR ABOVE 2000 OVERFLY UCGEL AT OR ABOVE 2000 HOLD AT UCGEL RIGHT TURN INBOUNDCOURSE 034 LEGDIST 4 FAF MELFA MAP RNW 03",
+                "MELFA": "MELFA 1500 RNW 03 TRK 034 UNTIL 500 TURN RIGHT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "UCGEL",
+                    "fixes": {
+                        "UCGEL": "UCGEL RIGHT TURN INBOUNDCOURSE 034 ALT 2000 LEGDIST 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV21",
+            "fixes": {
+                "ZIXER": "ZIXER AT OR ABOVE 2000",
+                "RERSE": "RERSE 1600 RNW 21 TRK 214 UNTIL 448",
+                "UCGEL": "OVERFLY UCGEL AT OR ABOVE 2000 HOLD AT UCGEL RIGHT TURN INBOUNDCOURSE 034 LEGDIST 4 FAF RERSE MAP RNW 21"
+            },
+            "transitions": [
+                {
+                    "name": "CCV",
+                    "fixes": {
+                        "CCV": "CCV",
+                        "ZIXER": "OVERFLY ZIXER AT OR ABOVE 2000 HOLD AT ZIXER RIGHT TURN INBOUNDCOURSE 214 ALT 2000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "SWL",
+                    "fixes": {
+                        "SWL": "SWL",
+                        "PACIV": "PACIV AT OR ABOVE 2000"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "fixes": [
+        {
+            "name": "AF001",
+            "lat": 26.78189515,
+            "lon": 93.75121211666666
+        },
+        {
+            "name": "AF002",
+            "lat": 26.835171383333332,
+            "lon": 93.8165212
+        },
+        {
+            "name": "AF003",
+            "lat": 26.905783433333333,
+            "lon": 93.85615538333333
+        },
+        {
+            "name": "AF004",
+            "lat": 26.90457341666667,
+            "lon": 93.85575931666666
+        },
+        {
+            "name": "AF005",
+            "lat": 26.944097066666668,
+            "lon": 93.86446236666667
+        },
+        {
+            "name": "CI26",
+            "lat": 27.017352783333333,
+            "lon": 93.85906666666666
+        },
+        {
+            "name": "D085M",
+            "lat": 26.984427783333334,
+            "lon": 93.86421111666667
+        },
+        {
+            "name": "D117O",
+            "lat": 26.854163883333335,
+            "lon": 93.87306943333333
+        },
+        {
+            "name": "D169O",
+            "lat": 26.720055566666666,
+            "lon": 93.67858333333334
+        },
+        {
+            "name": "FI26",
+            "lat": 26.990627783333334,
+            "lon": 93.74150556666666
+        },
+        {
+            "name": "HO401",
+            "lat": 26.990694433333335,
+            "lon": 93.74185
+        },
+        {
+            "name": "HO402",
+            "lat": 27.019452783333332,
+            "lon": 93.86846111666667
+        },
+        {
+            "name": "HO403",
+            "lat": 27.048094433333333,
+            "lon": 93.99513611666667
+        },
+        {
+            "name": "HO404",
+            "lat": 26.906025,
+            "lon": 93.90047221666667
+        },
+        {
+            "name": "HO405",
+            "lat": 26.949211116666667,
+            "lon": 93.56056111666666
+        },
+        {
+            "name": "HO406",
+            "lat": 26.835888883333332,
+            "lon": 93.59302221666667
+        },
+        {
+            "name": "JJT",
+            "lat": 26.72355556666667,
+            "lon": 94.16449721666666
+        }
+    ],
+    "rnws": [
+        "RNW 08",
+        "RNW 26"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS26",
+            "fixes": {
+                "CI26": "CI26 AT OR ABOVE 3000",
+                "FI26": "FI26 2000 RNW 26 TRK 256 UNTIL 1200 TURN LEFT HDG 087 INTERCEPT RADIAL 117 TO",
+                "D117O": "D117O D117O 4300 SPEED 180 HOLD AT D117O RIGHT TURN INBOUNDCOURSE 297 ALT 4300 LEGTIME 1 FAF FI26 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "D169O",
+                    "fixes": {
+                        "D169O": "D169O AT OR ABOVE 4300",
+                        "AF001": "AF001",
+                        "AF002": "AF002",
+                        "AF003": "AF003",
+                        "D085M": "D085M AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "JJT",
+                    "fixes": {
+                        "JJT": "JJT",
+                        "D117O": "D117O",
+                        "AF004": "AF004",
+                        "AF005": "AF005",
+                        "D085M": "D085M AT OR ABOVE 3000"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAVY26",
+            "fixes": {
+                "HO402": "HO402 AT OR ABOVE 2500",
+                "HO401": "HO401 2000 RNW 26",
+                "HO405": "HO405 SPEED 180",
+                "HO406": "HO406 SPEED 180",
+                "HO404": "HO404 AT OR ABOVE 4300 SPEED 180 HOLD AT HO404 LEFT TURN INBOUNDCOURSE 346 ALT 4300 SPEED 230 LEGTIME 1 FAF HO401 MAP RNW 26"
+            },
+            "transitions": [
+                {
+                    "name": "HO403",
+                    "fixes": {
+                        "HO403": "HO403 AT OR ABOVE 4300 SPEED 210"
+                    }
+                },
+                {
+                    "name": "HO404",
+                    "fixes": {
+                        "HO404": "HO404 AT OR ABOVE 4300 SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}

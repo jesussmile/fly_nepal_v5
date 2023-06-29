@@ -1,0 +1,140 @@
+{
+    "fixes": [
+        {
+            "name": "CF36",
+            "lat": 37.42563611666667,
+            "lon": 93.33813611666666
+        },
+        {
+            "name": "CHIKE",
+            "lat": 37.68745833333333,
+            "lon": 93.34361111666666
+        },
+        {
+            "name": "CITSI",
+            "lat": 37.55533333333333,
+            "lon": 93.34999443333334
+        },
+        {
+            "name": "FF36",
+            "lat": 37.508980566666665,
+            "lon": 93.34302778333333
+        },
+        {
+            "name": "JIBOG",
+            "lat": 37.785902783333334,
+            "lon": 93.23363888333333
+        },
+        {
+            "name": "OLLII",
+            "lat": 37.79489721666667,
+            "lon": 93.53085556666667
+        },
+        {
+            "name": "OSOYE",
+            "lat": 37.78916666666667,
+            "lon": 93.33868333333334
+        },
+        {
+            "name": "RUZSU",
+            "lat": 37.75754166666667,
+            "lon": 93.06438056666667
+        },
+        {
+            "name": "SGF",
+            "lat": 37.355947216666664,
+            "lon": 93.33404166666666
+        },
+        {
+            "name": "SIVYA",
+            "lat": 37.76826388333333,
+            "lon": 93.33731943333333
+        },
+        {
+            "name": "UNHIC",
+            "lat": 37.404277783333335,
+            "lon": 93.35726666666666
+        },
+        {
+            "name": "YUPUN",
+            "lat": 37.634675,
+            "lon": 93.34616388333333
+        },
+        {
+            "name": "ZOXBY",
+            "lat": 37.504325,
+            "lon": 93.35245278333333
+        }
+    ],
+    "rnws": [
+        "RNW 18",
+        "RNW 36"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "VORD36",
+            "fixes": {
+                "CF36": "CF36 AT OR ABOVE 3000",
+                "FF36": "FF36 2800 RNW 36 TRK 353 UNTIL 1492",
+                "SIVYA": "SIVYA AT OR ABOVE 3000 HOLD AT SIVYA RIGHT TURN INBOUNDCOURSE 176 LEGTIME 1 FAF FF36 MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "SGF",
+                    "fixes": {
+                        "SGF": "SGF"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV18",
+            "fixes": {
+                "OSOYE": "OSOYE AT OR ABOVE 3000 OVERFLY OSOYE AT OR ABOVE 3000 HOLD AT OSOYE RIGHT TURN INBOUNDCOURSE 179 LEGDIST 5 FAF CHIKE MAP RNW 18",
+                "CHIKE": "CHIKE 2800",
+                "YUPUN": "YUPUN AT OR ABOVE 1760 RNW 18 TRK 179 UNTIL 1492 TURN LEFT DIRECT"
+            },
+            "transitions": [
+                {
+                    "name": "OLLII",
+                    "fixes": {
+                        "OLLII": "OLLII"
+                    }
+                },
+                {
+                    "name": "RUZSU",
+                    "fixes": {
+                        "RUZSU": "RUZSU",
+                        "JIBOG": "JIBOG AT OR ABOVE 3000"
+                    }
+                },
+                {
+                    "name": "SGF",
+                    "fixes": {
+                        "SGF": "SGF",
+                        "OSOYE": "OSOYE AT OR ABOVE 3000 HOLD AT OSOYE RIGHT TURN INBOUNDCOURSE 179 ALT 3000 LEGDIST 5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV36",
+            "fixes": {
+                "UNHIC": "UNHIC AT OR ABOVE 3000",
+                "ZOXBY": "ZOXBY 2800",
+                "CITSI": "CITSI AT OR ABOVE 1800 RNW 36",
+                "OSOYE": "OVERFLY OSOYE AT OR ABOVE 3000 HOLD AT OSOYE RIGHT TURN INBOUNDCOURSE 179 LEGDIST 5 FAF ZOXBY MAP RNW 36"
+            },
+            "transitions": [
+                {
+                    "name": "SGF",
+                    "fixes": {
+                        "SGF": "SGF"
+                    }
+                }
+            ]
+        }
+    ]
+}

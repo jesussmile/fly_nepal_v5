@@ -1,0 +1,109 @@
+{
+    "fixes": [
+        {
+            "name": "ANUYE",
+            "lat": 40.144825,
+            "lon": 80.16403888333333
+        },
+        {
+            "name": "HLG",
+            "lat": 40.25990278333333,
+            "lon": 80.568625
+        },
+        {
+            "name": "KEYRE",
+            "lat": 40.153363883333334,
+            "lon": 80.03267778333333
+        },
+        {
+            "name": "NESTO",
+            "lat": 40.19445833333333,
+            "lon": 79.71374721666666
+        },
+        {
+            "name": "WAVVO",
+            "lat": 40.12824166666667,
+            "lon": 80.412775
+        },
+        {
+            "name": "WISKE",
+            "lat": 40.129136116666665,
+            "lon": 80.67609443333333
+        },
+        {
+            "name": "WUZGO",
+            "lat": 40.11935833333333,
+            "lon": 80.54281666666667
+        },
+        {
+            "name": "ZIXEL",
+            "lat": 40.132697216666664,
+            "lon": 80.34673056666666
+        }
+    ],
+    "rnws": [
+        "RNW 09",
+        "RNW 27"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "ILS27",
+            "fixes": {
+                "KEYRE": "KEYRE AT OR ABOVE 3000",
+                "ANUYE": "ANUYE 3000 RNW 27 TRK 273 UNTIL 1700",
+                "HLG": "HLG AT OR ABOVE 3300 HOLD AT HLG LEFT TURN INBOUNDCOURSE 223 LEGTIME 1 FAF ANUYE MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "HLG",
+                    "fixes": {
+                        "HLG": "HLG",
+                        "KEYRE": "KEYRE AT OR ABOVE 3100 HOLD AT KEYRE RIGHT TURN INBOUNDCOURSE 273 ALT 3000 LEGTIME 1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV09",
+            "fixes": {
+                "WUZGO": "WUZGO AT OR ABOVE 3000",
+                "WAVVO": "WAVVO 2900",
+                "ZIXEL": "ZIXEL AT OR ABOVE 1920 RNW 09 TRK 093 UNTIL 1584",
+                "KEYRE": "OVERFLY KEYRE AT OR ABOVE 3000 HOLD AT KEYRE RIGHT TURN INBOUNDCOURSE 273 LEGDIST 4 FAF WAVVO MAP RNW 09"
+            },
+            "transitions": [
+                {
+                    "name": "WISKE",
+                    "fixes": {
+                        "WISKE": "WISKE"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV27",
+            "fixes": {
+                "KEYRE": "KEYRE AT OR ABOVE 3000",
+                "ANUYE": "ANUYE 3000 RNW 27 TRK 273 UNTIL 1700",
+                "HLG": "OVERFLY HLG AT OR ABOVE 3300 HOLD AT HLG LEFT TURN INBOUNDCOURSE 223 LEGDIST 4 FAF ANUYE MAP RNW 27"
+            },
+            "transitions": [
+                {
+                    "name": "HLG",
+                    "fixes": {
+                        "HLG": "HLG",
+                        "KEYRE": "OVERFLY KEYRE AT OR ABOVE 3100 HOLD AT KEYRE RIGHT TURN INBOUNDCOURSE 273 ALT 3000 LEGDIST 4"
+                    }
+                },
+                {
+                    "name": "NESTO",
+                    "fixes": {
+                        "NESTO": "NESTO"
+                    }
+                }
+            ]
+        }
+    ]
+}

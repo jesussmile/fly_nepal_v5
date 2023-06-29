@@ -1,0 +1,154 @@
+{
+    "fixes": [
+        {
+            "name": "EP19",
+            "lat": 60.06050833333333,
+            "lon": 77.29743333333333
+        },
+        {
+            "name": "FF19",
+            "lat": 60.12143888333333,
+            "lon": 77.29743333333333
+        },
+        {
+            "name": "KEGSO",
+            "lat": 60.240755566666664,
+            "lon": 77.20328056666666
+        },
+        {
+            "name": "KIPEG",
+            "lat": 60.124713883333335,
+            "lon": 77.32104166666667
+        },
+        {
+            "name": "MURTU",
+            "lat": 60.222144433333334,
+            "lon": 77.36615556666666
+        },
+        {
+            "name": "OVITI",
+            "lat": 59.99304166666667,
+            "lon": 77.26051111666666
+        },
+        {
+            "name": "PI001",
+            "lat": 60.11656996666667,
+            "lon": 77.2933501
+        },
+        {
+            "name": "PI002",
+            "lat": 60.1689473,
+            "lon": 77.39160546666666
+        },
+        {
+            "name": "PI003",
+            "lat": 60.224836833333335,
+            "lon": 77.28572326666666
+        },
+        {
+            "name": "TAVBA",
+            "lat": 59.97950278333333,
+            "lon": 77.25431388333334
+        },
+        {
+            "name": "URNAB",
+            "lat": 60.124963883333336,
+            "lon": 77.32115833333333
+        },
+        {
+            "name": "URPOP",
+            "lat": 59.88085,
+            "lon": 77.20932221666666
+        },
+        {
+            "name": "XEVAD",
+            "lat": 60.20333611666667,
+            "lon": 77.52884443333333
+        },
+        {
+            "name": "XEVUM",
+            "lat": 59.862233333333336,
+            "lon": 77.37043333333334
+        },
+        {
+            "name": "XOSTO",
+            "lat": 59.89926943333333,
+            "lon": 77.04803333333334
+        },
+        {
+            "name": "YPXNB",
+            "lat": 60.058272216666666,
+            "lon": 77.29743611666666
+        }
+    ],
+    "rnws": [
+        "RNW 01",
+        "RNW 19"
+    ],
+    "sids": [],
+    "stars": [],
+    "approaches": [
+        {
+            "name": "NDB19",
+            "fixes": {
+                "FF19": "FF19 1300",
+                "EP19": "OVERFLY EP19 133",
+                "YPXNB": "OVERFLY YPXNB AT OR ABOVE 490 RNW 19 TRK 201 UNTIL 1600 TURN RIGHT DIRECT YPXNB 1600 HOLD AT YPXNB RIGHT TURN INBOUNDCOURSE 021 LEGTIME 1 FAF FF19 MAP YPX"
+            },
+            "transitions": [
+                {
+                    "name": "YPX",
+                    "fixes": {
+                        "PI001": "PI001 AT OR ABOVE 1300 SPEED 210",
+                        "PI002": "OVERFLY PI002 AT OR ABOVE 1300 SPEED 210",
+                        "PI003": "PI003 AT OR ABOVE 1300 SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV01",
+            "fixes": {
+                "URPOP": "URPOP AT OR ABOVE 1300",
+                "OVITI": "OVITI 1100 RNW 01",
+                "KIPEG": "OVERFLY KIPEG 1600 HOLD AT KIPEG RIGHT TURN INBOUNDCOURSE 006 LEGTIME 1 FAF OVITI MAP RNW 01"
+            },
+            "transitions": [
+                {
+                    "name": "XEVUM",
+                    "fixes": {
+                        "XEVUM": "XEVUM SPEED 210"
+                    }
+                },
+                {
+                    "name": "XOSTO",
+                    "fixes": {
+                        "XOSTO": "XOSTO SPEED 210"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "RNAV19",
+            "fixes": {
+                "MURTU": "MURTU AT OR ABOVE 1400",
+                "URNAB": "URNAB 1400 RNW 19",
+                "TAVBA": "OVERFLY TAVBA 1600 HOLD AT TAVBA RIGHT TURN INBOUNDCOURSE 186 LEGTIME 1 FAF URNAB MAP RNW 19"
+            },
+            "transitions": [
+                {
+                    "name": "KEGSO",
+                    "fixes": {
+                        "KEGSO": "KEGSO SPEED 210"
+                    }
+                },
+                {
+                    "name": "XEVAD",
+                    "fixes": {
+                        "XEVAD": "XEVAD SPEED 210"
+                    }
+                }
+            ]
+        }
+    ]
+}
