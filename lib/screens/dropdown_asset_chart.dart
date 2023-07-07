@@ -54,15 +54,13 @@ class FolderDropdown extends StatelessWidget {
     final folderPath =
         parentPath.isEmpty ? folder.name : '$parentPath/${folder.name}';
     // print(folderPath);
-
     if (folder.type == "file") {
       return ListTile(
         onTap: () {
-          print('assets/charts/$folderPath');
+          // print('assets/charts/$folderPath');
           getImageSize(folderPath, folder.name, context);
           // Provider.of<ProviderService>(context, listen: false)
-          //     .addRotatedOverLayImageX(folderPath);
-          // Navigator.pop(context);
+          //     .addRotatedOverLayImageX(folderPath, folder.name);
         },
         textColor: Colors.green,
         title: Text(_removeExtensionIfPNG(folder.name)),
@@ -82,16 +80,14 @@ class FolderDropdown extends StatelessWidget {
   void getImageSize(String folderPath, String fileName, BuildContext context) {
     final imageProvider = AssetImage('assets/charts/$folderPath');
     print(imageProvider);
-    //assets/charts/VNKT/approach/RNAV20_ IGRIS.png
-    //assets/charts/VNKT/approach/RNAV20_ IGRIS.png
     final imageStream = imageProvider.resolve(const ImageConfiguration());
     int width = 0;
     int height = 0;
+
     imageStream.addListener(ImageStreamListener((ImageInfo info, bool _) {
       width = info.image.width;
       height = info.image.height;
       print('Overlay image width: $width, height: $height');
-      // print('folderPath $folderPath');
       calculateImageCorners(flutterMapC.center, width, height,
           flutterMapC.zoom + 3.14159265, folderPath, fileName, context);
     }));
@@ -128,15 +124,14 @@ class FolderDropdown extends StatelessWidget {
     // Calculate bottom right corner coordinates
     final bottomRightLatitude = center.latitude - halfHeight;
     final bottomRightLongitude = center.longitude + halfWidth;
-    // Print the results
-    print(chartName);
     LatLng topC = LatLng(topLeftLatitude, topLeftLongitude);
     LatLng botC = LatLng(bottomLeftLatitude, topLeftLongitude);
     LatLng rightC = LatLng(bottomLeftLatitude, bottomRightLongitude);
     Provider.of<ProviderService>(context, listen: false)
         .addTestRotatedOverLayImageX(chartName, folderPath, topC, botC, rightC);
-    print('Top Left: $topLeftLatitude, $topLeftLongitude');
-    print('Bottom Left: $bottomLeftLatitude, $bottomLeftLongitude');
-    print('Bottom Right: $bottomRightLatitude, $bottomRightLongitude');
+    // print('Top Left: $topLeftLatitude, $topLeftLongitude');
+    // print('Bottom Left: $bottomLeftLatitude, $bottomLeftLongitude');
+    // print('Bottom Right: $bottomRightLatitude, $bottomRightLongitude');
+    // Navigator.pop(context);
   }
 }

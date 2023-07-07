@@ -21,6 +21,10 @@ class ProviderService extends ChangeNotifier {
   LatLng editPlateTL = const LatLng(0, 0);
   LatLng editPlateBL = const LatLng(0, 0);
   LatLng editPlateBR = const LatLng(0, 0);
+
+  LatLng previousPlateTL = const LatLng(0, 0);
+  LatLng previousPlateBL = const LatLng(0, 0);
+  LatLng previousPlateBR = const LatLng(0, 0);
   bool mapInteraction = false;
   bool showMapResizeWidget = false;
 
@@ -48,6 +52,12 @@ class ProviderService extends ChangeNotifier {
   List<BaseOverlayImageX> overlayImagesX = [];
   void setOverlayImagesX(List<BaseOverlayImageX> images) {
     overlayImagesX = images;
+
+    notifyListeners();
+  }
+
+  void clear() {
+    overlayImagesX.clear();
     notifyListeners();
   }
 
@@ -103,8 +113,9 @@ class ProviderService extends ChangeNotifier {
     // }
   }
 
-  Future<void> addRotatedOverLayImageX(dynamic chartName) async {
-    initializeChartValues(); // Initialize chart values before usage
+  Future<void> addRotatedOverLayImageX(
+      String? chartPath, dynamic chartName) async {
+    initializeChartValues(); // Initialize chart values before usageflut
     dynamic chart = chartName.toString().replaceAll(RegExp(r'.png'), "");
     final topLeft = topL[chart];
     final botLeft = botL[chart];
@@ -118,7 +129,7 @@ class ProviderService extends ChangeNotifier {
         bottomLeftCorner: botLeft,
         bottomRightCorner: botRight,
         opacity: 1,
-        imageProvider: AssetImage('assets/$chartName'),
+        imageProvider: AssetImage('assets/charts/$chartPath'),
       );
       overlayImagesX.add(newImage);
       notifyListeners();
@@ -130,27 +141,13 @@ class ProviderService extends ChangeNotifier {
     initializeChartValues(); // Reset values for all charts
   }
 
-  // moveLeft() {
-  //   topL[chosenPlate]!.longitude -= tolerance;
-  //   botL[chosenPlate]!.longitude -= tolerance;
-  //   botR[chosenPlate]!.longitude -= tolerance;
-  //   notifyListeners();
-  // }
-
-  // overlayImagesX = overlayImagesX.map((image) {
-  //     return RotatedOverlayImageX(
-  //       chartName: chosenPlate,
-  //       topLeftCorner: updatedLatLng,
-  //       bottomLeftCorner: botLUpdated,
-  //       bottomRightCorner: botRUpdated,
-  //       opacity: image.opacity,
-  //       imageProvider: image.imageProvider,
-  //     );
-  //   }).toList();
   void updateOverlayImagesX(
       String chartName, LatLng topLeft, LatLng bottomLeft, LatLng bottomRight) {
     overlayImagesX = overlayImagesX.map((image) {
-      // if (image.chartName == chartName) {
+      previousPlateTL = topLeft;
+      previousPlateBL = bottomLeft;
+      previousPlateBR = bottomRight;
+
       return RotatedOverlayImageX(
         chartName: chartName,
         topLeftCorner: topLeft,
@@ -162,8 +159,17 @@ class ProviderService extends ChangeNotifier {
     }).toList();
   }
 
+  void setPreviousChatPosition() {
+    topL[chosenPlate] = previousPlateTL;
+    botL[chosenPlate] = previousPlateBL;
+    botR[chosenPlate] = previousPlateBR;
+    updateOverlayImagesX(chosenPlate, topL[chosenPlate]!, botL[chosenPlate]!,
+        botR[chosenPlate]!);
+
+    notifyListeners();
+  }
+
   void moveLeft() {
-    print('moveleft');
     final currentLatLng = topL[chosenPlate]!;
     final updatedLongitude = currentLatLng.longitude - tolerance;
     final updatedLatLng = LatLng(currentLatLng.latitude, updatedLongitude);

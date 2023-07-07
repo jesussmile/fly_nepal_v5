@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_map/plugin_api.dart';
 import 'package:flutter_map_location_marker/flutter_map_location_marker.dart';
 import 'package:flutter_map_tile_caching/flutter_map_tile_caching.dart';
@@ -83,6 +84,10 @@ class _MyHomePageState extends State<MyHomePage> {
   TextEditingController controller3 = TextEditingController();
   TextEditingController controller4 = TextEditingController();
   TextEditingController textFieldController = TextEditingController();
+  // landScapeFontSize
+  //                                 : screenHeight * portraitFontSize)
+  double landScapeFontSize = 0.015;
+  double portraitFontSize = 0.010;
   bool _downloading = false;
   late StreamSubscription<DownloadProgress> _progressListener;
   double _downloadProgress = 0;
@@ -203,6 +208,7 @@ class _MyHomePageState extends State<MyHomePage> {
     //     'screenHeight ${ScreenHeight.toString()} screenWidth ${ScreenWidth.toString()}}');
     return OrientationBuilder(builder: (ctxx, orientation) {
       final isLandscape = orientation == Orientation.landscape;
+      final isPortraint = orientation == Orientation.portrait;
       return Scaffold(
           // appBar: AppBar,
           body: Column(
@@ -210,17 +216,19 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             decoration:
                 const BoxDecoration(color: Color.fromARGB(255, 62, 84, 122)),
-            height: screenHeight * 0.1,
+            height: isLandscape ? screenHeight * 0.15 : screenHeight * 0.07,
             width: screenWidth,
             child: Padding(
               padding: const EdgeInsets.fromLTRB(8, 40, 0, 0),
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  // ignore: prefer_const_literals_to_create_immutables
-                  children: [
-                    // ignore: prefer_const_constructors
-                    ElevatedButton(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  // ignore: prefer_const_constructors
+                  Flexible(
+                    flex: 2,
+                    fit: FlexFit.loose,
+                    child: ElevatedButton(
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 const Color.fromARGB(255, 62, 84, 122))),
@@ -233,9 +241,17 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Text(
                           'Flight Plan',
                           // ignore: prefer_const_constructors
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: isLandscape
+                                  ? screenHeight * landScapeFontSize
+                                  : screenHeight * portraitFontSize),
                         )),
-                    ElevatedButton(
+                  ),
+                  Flexible(
+                    flex: 2,
+                    fit: FlexFit.loose,
+                    child: ElevatedButton(
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 const Color.fromARGB(255, 62, 84, 122))),
@@ -248,9 +264,17 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Text(
                           'Info',
                           // ignore: prefer_const_constructors
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: isLandscape
+                                  ? screenHeight * landScapeFontSize
+                                  : screenHeight * portraitFontSize),
                         )),
-                    ElevatedButton(
+                  ),
+                  Flexible(
+                    flex: 3,
+                    fit: FlexFit.loose,
+                    child: ElevatedButton(
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 const Color.fromARGB(255, 62, 84, 122))),
@@ -264,9 +288,17 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Text(
                           'Show WayPoints',
                           // ignore: prefer_const_constructors
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: isLandscape
+                                  ? screenHeight * landScapeFontSize
+                                  : screenHeight * portraitFontSize),
                         )),
-                    ElevatedButton(
+                  ),
+                  Flexible(
+                    flex: 2,
+                    fit: FlexFit.tight,
+                    child: ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
                           const Color.fromARGB(255, 62, 84, 122),
@@ -297,12 +329,20 @@ class _MyHomePageState extends State<MyHomePage> {
                           },
                         );
                       },
-                      child: const Text(
+                      child: Text(
                         'Asset Files',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: isLandscape
+                                ? screenHeight * landScapeFontSize
+                                : screenHeight * portraitFontSize),
                       ),
                     ),
-                    ElevatedButton(
+                  ),
+                  Flexible(
+                    flex: 2,
+                    fit: FlexFit.loose,
+                    child: ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
                           const Color.fromARGB(255, 62, 84, 122),
@@ -310,15 +350,22 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       onPressed: () {
                         Provider.of<ProviderService>(context, listen: false)
-                            .overlayImagesX
                             .clear();
                       },
-                      child: const Text(
+                      child: Text(
                         'Clear Chart',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: isLandscape
+                                ? screenHeight * landScapeFontSize
+                                : screenHeight * portraitFontSize),
                       ),
                     ),
-                    ElevatedButton(
+                  ),
+                  Flexible(
+                    flex: 3,
+                    fit: FlexFit.loose,
+                    child: ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
                           const Color.fromARGB(255, 62, 84, 122),
@@ -327,42 +374,56 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         getImageSize('VORD02_J.png', context);
                       },
-                      child: const Text(
+                      child: Text(
                         'Load Chart Experimental',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: isLandscape
+                                ? screenHeight * landScapeFontSize
+                                : screenHeight * portraitFontSize),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: SizedBox(
-                        height: 20,
-                        width: 200,
-                        child: Slider(
-                          max: 0.020,
-                          min: 0.001,
-                          value: _value,
-                          onChanged: (value) {
-                            setState(() {
-                              _value = value;
-                            });
-                            // print(value);
-                            Provider.of<ProviderService>(context, listen: false)
-                                .setTolerance(value);
-                          },
-                        ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: SizedBox(
+                      height: screenHeight * 0.1,
+                      width: screenWidth * 0.15,
+                      child: Slider(
+                        max: 0.020,
+                        min: 0.001,
+                        value: _value,
+                        onChanged: (value) {
+                          setState(() {
+                            _value = value;
+                          });
+                          // print(value);
+                          Provider.of<ProviderService>(context, listen: false)
+                              .setTolerance(value);
+                        },
                       ),
                     ),
-                    Text(
-                      '  Map Download  ${_downloadProgress.toStringAsFixed(0)}%',
-                      style: const TextStyle(color: Colors.white),
-                    ),
-                    const SizedBox(
-                      width: 5,
-                    ),
-                    ElevatedButton(
-                        onPressed: _startDownload, child: Text('Dowload Map'))
-                  ],
-                ),
+                  ),
+                  Text(
+                    '  Map Download  ${_downloadProgress.toStringAsFixed(0)}%',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: isLandscape
+                            ? screenHeight * landScapeFontSize
+                            : screenHeight * portraitFontSize),
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  ElevatedButton(
+                      onPressed: _startDownload,
+                      child: Text('Dowload Map',
+                          style: TextStyle(
+                            fontSize: isLandscape
+                                ? screenHeight * landScapeFontSize
+                                : screenHeight * portraitFontSize,
+                          )))
+                ],
               ),
             ),
           ),
@@ -711,8 +772,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 markerSize: const Size.square(55),
                                 marker: AvatarGlow(
                                     //showTwoGlows: true,
-                                    glowColor:
-                                        Color.fromARGB(255, 107, 107, 195),
+                                    glowColor: const Color.fromARGB(
+                                        255, 107, 107, 195),
                                     endRadius: 500,
                                     child: SvgPicture.asset(
                                       "assets/plane2.svg",
@@ -762,6 +823,10 @@ class _MyHomePageState extends State<MyHomePage> {
                               Positioned(
                                   top: 65, right: 0, child: printChartPos()),
                               Positioned(
+                                  top: 180,
+                                  right: 0,
+                                  child: LoadpreviousChartPos()),
+                              Positioned(
                                 top: 0,
                                 child: zoomIn(chosenPlate),
                               ),
@@ -805,24 +870,18 @@ class _MyHomePageState extends State<MyHomePage> {
                           onScaleUpdate: (details) {
                             double scaleFactor = details.scale;
                             if (scaleFactor > 1) {
-                              print("zoom in");
                               provider.zoomIn();
                             } else if (scaleFactor < 1) {
                               provider.zoomOut();
-                              print("zoom out");
                             }
                             if (details.focalPointDelta.dx < 0) {
                               provider.moveLeft();
-                              print("move left");
                             } else if (details.focalPointDelta.dx > 0) {
                               provider.moveRight();
-                              print("move right ");
                             } else if (details.focalPointDelta.dy < 0) {
                               provider.moveUp();
-                              print("zoom up");
                             } else if (details.focalPointDelta.dy > 0) {
                               provider.moveDown();
-                              print("zoom down");
                             }
                           },
                           onScaleEnd: (details) {
@@ -847,22 +906,33 @@ class _MyHomePageState extends State<MyHomePage> {
                     builder: (BuildContext context, value, Widget? child) {
                   if (value.showMapResizeWidget) {
                     return Positioned(
-                        top: 470,
-                        right: 0,
-                        child: Container(
-                          color: Colors.white,
-                          height: 15.h,
-                          width: 30.w,
-                          child: TextFormField(
-                            maxLines: 8,
-                            controller: controller1,
-                            decoration: const InputDecoration(
-                              isDense: true,
-                              contentPadding: EdgeInsets.all(8.0),
-                              border: OutlineInputBorder(),
-                            ),
+                      top: 470,
+                      right: 0,
+                      child: Container(
+                        color: Colors.white,
+                        height: 15.h,
+                        width: 30.w,
+                        child: TextFormField(
+                          onTap: () {
+                            Clipboard.setData(
+                                ClipboardData(text: controller1.text));
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                  content: Text('Text copied to clipboard')),
+                            );
+                            // print("copied");
+                          },
+                          keyboardType: TextInputType.none,
+                          maxLines: 8,
+                          controller: controller1,
+                          decoration: const InputDecoration(
+                            isDense: true,
+                            contentPadding: EdgeInsets.all(8.0),
+                            border: OutlineInputBorder(),
                           ),
-                        ));
+                        ),
+                      ),
+                    );
                   } else {
                     return Container();
                   }
@@ -1121,15 +1191,24 @@ class _MyHomePageState extends State<MyHomePage> {
         //setState(() {
         Provider.of<ProviderService>(context, listen: false).clearChar();
         Provider.of<ProviderService>(context, listen: false)
-            .addRotatedOverLayImageX(tempChart);
+            .addRotatedOverLayImageX(null, chartName);
       },
       child: const Text('Reset'),
     );
   }
 
-  ElevatedButton printChartPos() {
+  printChartPos() {
     return ElevatedButton(
         onPressed: printChartPosition, child: const Text('Print'));
+  }
+
+  ElevatedButton LoadpreviousChartPos() {
+    return ElevatedButton(
+        onPressed: () {
+          Provider.of<ProviderService>(context, listen: false)
+              .setPreviousChatPosition();
+        },
+        child: const Text('prev Chart pos'));
   }
 
   LatLng getCenterLatLng(
